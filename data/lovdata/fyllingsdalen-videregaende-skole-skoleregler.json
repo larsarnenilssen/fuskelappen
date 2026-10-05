@@ -4,6 +4,7 @@
  "type": "forskrift",
  "tittel": "Forskrift om lokale tilleggsreglar for Fyllingsdalen videregående skole vedkomande skolereglar, Vestland fylkeskommune",
  "korttittel": "Skoleregler ved Fyllingsdalen videregående skole",
+ "korttittelNn": "Skulereglar ved Fyllingsdalen videregående skole",
  "malform": "nb",
  "refid": "forskrift/2025-07-01-1409",
  "sistEndret": null,
@@ -124,7 +125,7 @@
      "fotnoter": []
     },
     {
-     "nr": "5",
+     "nr": "5b",
      "visNr": "5.",
      "tittel": "Mobil-hotell",
      "ledd": [

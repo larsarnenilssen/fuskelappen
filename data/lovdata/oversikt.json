@@ -651,6 +651,82 @@
    ]
   },
   {
+   "id": "arkivlova",
+   "kilde": "arkivlova",
+   "type": "lov",
+   "tittel": "Lov om dokumentasjon og arkiv (arkivlova)",
+   "korttittel": "Arkivlova",
+   "malform": "nn",
+   "refid": "lov/2025-06-20-96",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": [
+    "1",
+    "2",
+    "4"
+   ],
+   "sistEndret": null,
+   "iKraft": "2026-01-01",
+   "antallKapitler": 3,
+   "antallParagrafer": 20,
+   "paragrafer": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "21",
+    "22",
+    "23"
+   ]
+  },
+  {
+   "id": "offentlegforskrifta",
+   "kilde": "offentlegforskrifta",
+   "type": "forskrift",
+   "tittel": "Forskrift til offentleglova (offentlegforskrifta)",
+   "korttittel": "Offentlegforskrifta",
+   "malform": "nb",
+   "refid": "forskrift/2008-10-17-1119",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": null,
+   "sistEndret": "2022-12-09",
+   "iKraft": "2009-01-01",
+   "antallKapitler": 0,
+   "antallParagrafer": 14,
+   "paragrafer": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ]
+  },
+  {
    "id": "arkivforskrifta",
    "kilde": "arkivforskrifta",
    "type": "forskrift",
@@ -849,6 +925,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Oslo kommune, Oslo",
    "korttittel": "Inntak og formidling i Oslo",
+   "korttittelNn": "Inntak og formidling i Oslo",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-147",
    "gyldighet": {
@@ -903,6 +980,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo",
    "korttittel": "Skoleregler i Oslo",
+   "korttittelNn": "Skulereglar i Oslo",
    "malform": "nb",
    "refid": "forskrift/2025-06-27-1353",
    "gyldighet": {
@@ -942,6 +1020,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse i videregående opplæring, skoleåret 2026–2027, Oslo kommune, Oslo",
    "korttittel": "Skyss og rabattordning i Oslo",
+   "korttittelNn": "Skyss og rabattordning i Oslo",
    "malform": "nb",
    "refid": "forskrift/2026-06-09-1044",
    "gyldighet": {
@@ -968,6 +1047,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse innen utdanningsprogrammet helse- og oppvekstfag med Barne- og ungdomsarbeiderfag på vg2 ved Bergeland videregående skole, Rogaland fylkeskommune",
    "korttittel": "Fag- og timefordeling, Bergeland videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bergeland videregående skole",
    "malform": "nb",
    "refid": "forskrift/2026-06-16-1107",
    "gyldighet": {
@@ -1003,6 +1083,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse innen utdanningsprogrammet helse- og oppvekstfag med Helsearbeiderfag på vg2 ved Bergeland videregående skole, Rogaland fylkeskommune",
    "korttittel": "Fag- og timefordeling, Bergeland videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bergeland videregående skole",
    "malform": "nb",
    "refid": "forskrift/2026-06-16-1108",
    "gyldighet": {
@@ -1038,6 +1119,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Rogaland fylkeskommune",
    "korttittel": "Inntak og formidling i Rogaland",
+   "korttittelNn": "Inntak og formidling i Rogaland",
    "malform": "nb",
    "refid": "forskrift/2024-12-11-3099",
    "gyldighet": {
@@ -1098,6 +1180,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler og skoledemokrati for elever, Rogaland",
    "korttittel": "Skoleregler i Rogaland",
+   "korttittelNn": "Skulereglar i Rogaland",
    "malform": "nb",
    "refid": "forskrift/2026-04-28-681",
    "gyldighet": {
@@ -1139,6 +1222,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om ordensregler for deltakere i videregående opplæring for voksne, Rogaland fylkeskommune",
    "korttittel": "Regler for voksne i Rogaland",
+   "korttittelNn": "Reglar for vaksne i Rogaland",
    "malform": "nb",
    "refid": "forskrift/2025-06-17-1164",
    "gyldighet": {
@@ -1170,7 +1254,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om skole- og feriedagar (skolerute) (2025–2028), Rogaland fylkeskommune",
-   "korttittel": "Skulerute 2025–2028 i Rogaland",
+   "korttittel": "Skolerute 2025–2028 i Rogaland",
+   "korttittelNn": "Skulerute 2025–2028 i Rogaland",
    "malform": "nn",
    "refid": "forskrift/2025-06-17-1080",
    "gyldighet": {
@@ -1200,6 +1285,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om rabattordning som alternativ til gratis skoleskyss eller full skyssgodtgjørelse for elever ved videregående opplæring, Rogaland fylke",
    "korttittel": "Skyss og rabattordning i Rogaland",
+   "korttittelNn": "Skyss og rabattordning i Rogaland",
    "malform": "nb",
    "refid": "forskrift/2026-06-16-1432",
    "gyldighet": {
@@ -1226,6 +1312,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i vidaregåande opplæring, Møre og Romsdal fylkeskommune",
    "korttittel": "Fag- og timefordeling, Møre og Romsdal",
+   "korttittelNn": "Fag- og timefordeling, Møre og Romsdal",
    "malform": "nn",
    "refid": "forskrift/2026-06-30-1493",
    "gyldighet": {
@@ -1261,6 +1348,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til vidaregåande opplæring og formidling av læreplassar, Møre og Romsdal fylkeskommune",
    "korttittel": "Inntak og formidling i Møre og Romsdal",
+   "korttittelNn": "Inntak og formidling i Møre og Romsdal",
    "malform": "nb",
    "refid": "forskrift/2024-12-09-3160",
    "gyldighet": {
@@ -1317,7 +1405,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om skolereglar for dei vidaregåande skolane, Møre og Romsdal fylkeskommune",
-   "korttittel": "Skulereglar i Møre og Romsdal",
+   "korttittel": "Skoleregler i Møre og Romsdal",
+   "korttittelNn": "Skulereglar i Møre og Romsdal",
    "malform": "nn",
    "refid": "forskrift/2024-06-10-1765",
    "gyldighet": {
@@ -1350,7 +1439,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om ordensreglar for vidaregåande opplæring for vaksne, Møre og Romsdal fylkeskommune",
-   "korttittel": "Reglar for vaksne i Møre og Romsdal",
+   "korttittel": "Regler for voksne i Møre og Romsdal",
+   "korttittelNn": "Reglar for vaksne i Møre og Romsdal",
    "malform": "nn",
    "refid": "forskrift/2024-12-09-3161",
    "gyldighet": {
@@ -1380,6 +1470,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, treårig opplæringsløp til generell studiekompetanse gjennom utdanningsprogram for helse- og oppvekstfag, Nordland fylkeskommune",
    "korttittel": "Fag- og timefordeling, Nordland",
+   "korttittelNn": "Fag- og timefordeling, Nordland",
    "malform": "nb",
    "refid": "forskrift/2020-04-14-3359",
    "gyldighet": {
@@ -1413,6 +1504,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling av læreplass, Nordland fylkeskommune",
    "korttittel": "Inntak og formidling i Nordland",
+   "korttittelNn": "Inntak og formidling i Nordland",
    "malform": "nb",
    "refid": "forskrift/2025-12-01-2474",
    "gyldighet": {
@@ -1462,6 +1554,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler og deltakere i voksenopplæringen, Nordland",
    "korttittel": "Skoleregler i Nordland",
+   "korttittelNn": "Skulereglar i Nordland",
    "malform": "nb",
    "refid": "forskrift/2024-06-10-1451",
    "gyldighet": {
@@ -1493,6 +1586,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, Naturbruk, marine fag med yrkes- og studiekompetanse (YSK Marin) ved Sandnessjøen videregående skole, Nordland fylkeskommune",
    "korttittel": "Fag- og timefordeling, Sandnessjøen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Sandnessjøen videregående skole",
    "malform": "nb",
    "refid": "forskrift/2022-05-31-1310",
    "gyldighet": {
@@ -1528,6 +1622,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omdisponering i fag- og timefordeling, 3-årig opplæringsløp til spesiell studiekompetanse innen utdanningsprogrammet Elektro og datateknologi ved Askim videregående skole, Østfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Askim videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Askim videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-08-15-2183",
    "gyldighet": {
@@ -1562,6 +1657,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag og timefordeling i videregående opplæring, studiespesialisering med toppidrett ved Frederik II videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Frederik Ii videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frederik Ii videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-982",
    "gyldighet": {
@@ -1596,6 +1692,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag og timefordeling i videregående opplæring, studiespesialisering forskerlinje realfag ved Frederik II videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Frederik Ii videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frederik Ii videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-983",
    "gyldighet": {
@@ -1630,6 +1727,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omdisponering av fag- og timefordeling, 3-årig opplæringsløp, helse- og oppvekst ved Glemmen videregående skole, Østfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Glemmen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Glemmen videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-08-15-2184",
    "gyldighet": {
@@ -1664,6 +1762,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omdisponering av fag, 3-årig opplæringsløp til spesiell studiekompetanse innen utdanningsprogrammet elektro og datateknologi ved Glemmen videregående skole, Østfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Glemmen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Glemmen videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-08-15-2186",
    "gyldighet": {
@@ -1699,6 +1798,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling i fag- og timefordeling, 3-årig opplæringsløp i barne- og ungdomsarbeiderfaget til generell studiekompetanse innen utdanningsprogrammet helse- og oppvekstfag ved Greåker videregående skole, Østfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-08-15-2185",
    "gyldighet": {
@@ -1733,6 +1833,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag og timefordelingen i videregående opplæring, studiespesialisering ved Greåker videregående skole, studiespesialisering med business, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-881",
    "gyldighet": {
@@ -1767,6 +1868,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp innen utdanningsprogrammet studiespesialisering med samfunnsvitenskap ved Greåker videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-882",
    "gyldighet": {
@@ -1801,6 +1903,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, studiespesialisering med samfunnsvitenskap ved Greåker videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-883",
    "gyldighet": {
@@ -1835,6 +1938,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag og timefordeling for videregående opplæring, studiespesialisering med IT og innovasjon ved Greåker videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-981",
    "gyldighet": {
@@ -1869,6 +1973,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omdisponering av fag- og timefordeling, 3-årig opplæringsløp med studiekompetanse innen utdanningsprogrammet helse- og oppvekst ved Mysen videregående skole, helsearbeiderfag mot studiekompetanse, Østfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Mysen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Mysen videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-08-15-2181",
    "gyldighet": {
@@ -1903,6 +2008,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omdisponering av fag- og timefordeling, 4-årig yrkes- og studiekompetanse (YSK) innen utdanningsprogrammet salg-, service- og reiselivsfag ved Fredrik II videregående skole, Østfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Østfold",
+   "korttittelNn": "Fag- og timefordeling, Østfold",
    "malform": "nb",
    "refid": "forskrift/2025-08-15-2115",
    "gyldighet": {
@@ -1934,6 +2040,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Østfold fylkeskommune",
    "korttittel": "Inntak og formidling i Østfold",
+   "korttittelNn": "Inntak og formidling i Østfold",
    "malform": "nb",
    "refid": "forskrift/2024-12-04-3020",
    "gyldighet": {
@@ -1984,6 +2091,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler for de offentlige videregående skolene, Østfold",
    "korttittel": "Skoleregler i Østfold",
+   "korttittelNn": "Skulereglar i Østfold",
    "malform": "nb",
    "refid": "forskrift/2024-06-19-1404",
    "gyldighet": {
@@ -2019,6 +2127,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om ordensregler for voksne deltakere i fylkeskommunale videregående skoler, Østfold",
    "korttittel": "Regler for voksne i Østfold",
+   "korttittelNn": "Reglar for vaksne i Østfold",
    "malform": "nb",
    "refid": "forskrift/2024-06-19-1405",
    "gyldighet": {
@@ -2052,6 +2161,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass i Akershus fylkeskommune",
    "korttittel": "Inntak og formidling i Akershus",
+   "korttittelNn": "Inntak og formidling i Akershus",
    "malform": "nb",
    "refid": "forskrift/2025-02-13-354",
    "gyldighet": {
@@ -2108,6 +2218,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune",
    "korttittel": "Skoleregler i Akershus",
+   "korttittelNn": "Skulereglar i Akershus",
    "malform": "nb",
    "refid": "forskrift/2024-06-20-1886",
    "gyldighet": {
@@ -2143,6 +2254,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse i videregående opplæring, Akershus",
    "korttittel": "Skyss og rabattordning i Akershus",
+   "korttittelNn": "Skyss og rabattordning i Akershus",
    "malform": "nb",
    "refid": "forskrift/2026-02-26-364",
    "gyldighet": {
@@ -2170,6 +2282,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 4-årig YSK-løp innen utdanningsprogrammet service og samferdsel ved Bleiker videregående skole",
    "korttittel": "Fag- og timefordeling, Bleiker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bleiker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2016-06-13-801",
    "gyldighet": {
@@ -2204,6 +2317,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 4-årig YSK/TAF-løp innen utdanningsprogrammet service og samferdsel ved Bleiker videregående skole, Asker kommune, Akershus",
    "korttittel": "Fag- og timefordeling, Bleiker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bleiker videregående skole",
    "malform": "nb",
    "refid": "forskrift/2017-06-12-920",
    "gyldighet": {
@@ -2238,6 +2352,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse Salg og reiseliv – Business innen utdanningsprogrammet Salg, service og reiseliv ved Frogn videregående skole, Akershus fylkeskommune",
    "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-10-20-3081",
    "gyldighet": {
@@ -2272,6 +2387,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 3-årig opplæringsløp til generell studiekompetanse innen utdanningsprogrammet service og samferdsel ved Frogn videregående skole",
    "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
    "malform": "nb",
    "refid": "forskrift/2016-06-13-800",
    "gyldighet": {
@@ -2306,6 +2422,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 3-årig opplæringsløp til generell studiekompetanse innen utdanningsprogrammet service og samferdsel ved Frogn videregående skole, Akershus",
    "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
    "malform": "nb",
    "refid": "forskrift/2019-06-17-885",
    "gyldighet": {
@@ -2340,6 +2457,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig yrkes- og studiekompetanseløp (YSK) innen utdanningsprogrammet bygg- og anleggsteknikk ved Nesbru videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Nesbru videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Nesbru videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-868",
    "gyldighet": {
@@ -2374,6 +2492,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse Datateknologi og elektronikk innen utdanningsprogrammet Elektro og datateknologi ved Rud videregående skole, Akershus fylkeskommune",
    "korttittel": "Fag- og timefordeling, Rud videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Rud videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-10-20-3082",
    "gyldighet": {
@@ -2408,6 +2527,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse Helsearbeiderfag innen utdanningsprogrammet Helse- og oppvekst ved Rud videregående skole, Akershus fylkeskommune",
    "korttittel": "Fag- og timefordeling, Rud videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Rud videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-10-20-3083",
    "gyldighet": {
@@ -2442,6 +2562,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 4-årig YSK/TAF-løp innen utdanningsprogrammene elektrofag, bygg- og anleggsteknikk og design og håndverk ved Skedsmo videregående skole, Skedsmo kommune, Akershus",
    "korttittel": "Fag- og timefordeling, Skedsmo videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Skedsmo videregående skole",
    "malform": "nb",
    "refid": "forskrift/2017-06-12-922",
    "gyldighet": {
@@ -2476,6 +2597,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 4-årig yrkes- og studiekompetanseløp (YSK) innen utdanningsprogrammet restaurant- og matfag ved Vestby videregående skole, Akershus fylkeskommune",
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-10-20-3076",
    "gyldighet": {
@@ -2510,6 +2632,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig yrkes- og studiekompetanseløp (YSK) innen utdanningsprogrammet bygg- og anleggsteknikk ved Vestby videregående skole, Akershus fylkeskommune",
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-10-20-3084",
    "gyldighet": {
@@ -2544,6 +2667,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig yrkes- og studiekompetanseløp (YSK) innen utdanningsprogrammet bygg- og anleggsteknikk ved Vestby videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-886",
    "gyldighet": {
@@ -2578,6 +2702,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig yrkes- og studiekompetanseløp (YSK) innen utdanningsprogrammet restaurant- og matfag ved Vestby videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-887",
    "gyldighet": {
@@ -2612,6 +2737,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 4-årig YSK/TAF løp innen utdanningsprogrammet service og samferdsel ved Vestby videregående skole, Vestby kommune, Akershus",
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "refid": "forskrift/2017-06-12-921",
    "gyldighet": {
@@ -2646,6 +2772,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 2-årig ambulansefag med studiekompetanse, Ål vidaregåande skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Buskerud",
+   "korttittelNn": "Fag- og timefordeling, Buskerud",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-265",
    "gyldighet": {
@@ -2672,6 +2799,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Buskerud fylkeskommune",
    "korttittel": "Inntak og formidling i Buskerud",
+   "korttittelNn": "Inntak og formidling i Buskerud",
    "malform": "nb",
    "refid": "forskrift/2025-11-27-2983",
    "gyldighet": {
@@ -2725,6 +2853,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler, Buskerud fylkeskommune",
    "korttittel": "Skoleregler i Buskerud",
+   "korttittelNn": "Skulereglar i Buskerud",
    "malform": "nb",
    "refid": "forskrift/2026-06-03-1031",
    "gyldighet": {
@@ -2760,6 +2889,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om ordensregler for deltakere i opplæring for voksne, Buskerud fylkeskommune",
    "korttittel": "Regler for voksne i Buskerud",
+   "korttittelNn": "Reglar for vaksne i Buskerud",
    "malform": "nb",
    "refid": "forskrift/2025-03-27-554",
    "gyldighet": {
@@ -2794,6 +2924,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse for elever ved videregående opplæring, Drammen, Kongsberg, Ringerike, Hole, Modum, Øvre Eiker og Lier kommuner, Buskerud",
    "korttittel": "Skyss og rabattordning i Buskerud",
+   "korttittelNn": "Skyss og rabattordning i Buskerud",
    "malform": "nb",
    "refid": "forskrift/2026-06-02-1001",
    "gyldighet": {
@@ -2820,6 +2951,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, studiespesialisering med entreprenørskap, Drammen videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Drammen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Drammen videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-271",
    "gyldighet": {
@@ -2849,6 +2981,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 3-årig datateknologi og elektronikk med realfaglig studiekompetanse, Hønefoss videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Hønefoss videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-267",
    "gyldighet": {
@@ -2878,6 +3011,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 4-årig helsearbeiderfag med studiekompetanse (YSK), Hønefoss videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Hønefoss videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-268",
    "gyldighet": {
@@ -2907,6 +3041,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig yrkes- og studiekompetanseløp innen utdanningsprogrammet helse og oppvekst ved Hønefoss videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Hønefoss videregående skole",
    "malform": "nb",
    "refid": "forskrift/2021-05-05-3929",
    "gyldighet": {
@@ -2941,6 +3076,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 2-årig ambulansefag med studiekompetanse, Lier videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-264",
    "gyldighet": {
@@ -2970,6 +3106,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 3-årig elektro og datateknologi, med helse- og miljøteknologi til realfaglig studiekompetanse, Lier videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-266",
    "gyldighet": {
@@ -2999,6 +3136,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 4-årig helsearbeiderfag med studiekompetanse (YSK), Lier videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-269",
    "gyldighet": {
@@ -3028,6 +3166,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 4-årig løp med yrkeskompetanse innen salg, service og reiseliv og studiekompetanse (YSK), Lier videregående skole, Buskerud fylkeskommune",
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-01-29-270",
    "gyldighet": {
@@ -3057,6 +3196,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse barne- og ungdomsarbeiderfaget innen utdanningsprogrammet helse- og oppvekstfag ved Lier videregående skole, Viken fylkeskommune",
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "refid": "forskrift/2023-02-09-872",
    "gyldighet": {
@@ -3091,6 +3231,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig opplæringsløp (YSK) med yrkes- og studiekompetanse gjennom programområdet salg, service og reiseliv, Innlandet fylkeskommune",
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "refid": "forskrift/2024-12-05-3681",
    "gyldighet": {
@@ -3123,6 +3264,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse gjennom programområdene barne- og ungdomsarbeiderfag og helsearbeiderfag, Innlandet fylkeskommune",
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "refid": "forskrift/2024-12-05-3685",
    "gyldighet": {
@@ -3156,6 +3298,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse gjennom programområdet søm og tekstil, Innlandet fylkeskommune",
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "refid": "forskrift/2024-12-05-3688",
    "gyldighet": {
@@ -3188,6 +3331,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig opplæringsløp (YSK) med yrkes- og studiekompetanse gjennom programområdet industriteknologi, Innlandet fylkeskommune",
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "refid": "forskrift/2024-12-05-3699",
    "gyldighet": {
@@ -3220,6 +3364,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående skole og formidling til læreplass, Innlandet fylkeskommune",
    "korttittel": "Inntak og formidling i Innlandet",
+   "korttittelNn": "Inntak og formidling i Innlandet",
    "malform": "nb",
    "refid": "forskrift/2024-12-17-3529",
    "gyldighet": {
@@ -3261,6 +3406,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler, Innlandet fylkeskommune",
    "korttittel": "Skoleregler i Innlandet",
+   "korttittelNn": "Skulereglar i Innlandet",
    "malform": "nb",
    "refid": "forskrift/2024-10-23-3801",
    "gyldighet": {
@@ -3296,6 +3442,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fag på avvikende trinn, Vestfold fylkeskommune",
    "korttittel": "Fag- og timefordeling, Vestfold",
+   "korttittelNn": "Fag- og timefordeling, Vestfold",
    "malform": "nb",
    "refid": "forskrift/2025-02-11-622",
    "gyldighet": {
@@ -3326,6 +3473,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak og formidling til videregående opplæring, Vestfold fylkeskommune",
    "korttittel": "Inntak og formidling i Vestfold",
+   "korttittelNn": "Inntak og formidling i Vestfold",
    "malform": "nb",
    "refid": "forskrift/2024-11-12-2832",
    "gyldighet": {
@@ -3374,6 +3522,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Vestfold",
    "korttittel": "Skoleregler i Vestfold",
+   "korttittelNn": "Skulereglar i Vestfold",
    "malform": "nb",
    "refid": "forskrift/2025-06-17-1270",
    "gyldighet": {
@@ -3414,6 +3563,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om ordensregler for voksne i videregående opplæring, Vestfold fylkeskommune",
    "korttittel": "Regler for voksne i Vestfold",
+   "korttittelNn": "Reglar for vaksne i Vestfold",
    "malform": "nb",
    "refid": "forskrift/2025-08-19-1699",
    "gyldighet": {
@@ -3448,6 +3598,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fag på avvikende trinn i videregående opplæring i Telemark fylkeskommune",
    "korttittel": "Fag- og timefordeling, Telemark",
+   "korttittelNn": "Fag- og timefordeling, Telemark",
    "malform": "nb",
    "refid": "forskrift/2023-12-12-2186",
    "gyldighet": {
@@ -3477,6 +3628,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fag på avvikende trinn i videregående opplæring, Telemark fylkeskommune",
    "korttittel": "Fag- og timefordeling, Telemark",
+   "korttittelNn": "Fag- og timefordeling, Telemark",
    "malform": "nb",
    "refid": "forskrift/2016-06-07-645",
    "gyldighet": {
@@ -3505,6 +3657,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak og formidling til videregående opplæring, Telemark fylkeskommune",
    "korttittel": "Inntak og formidling i Telemark",
+   "korttittelNn": "Inntak og formidling i Telemark",
    "malform": "nb",
    "refid": "forskrift/2024-12-10-3455",
    "gyldighet": {
@@ -3560,6 +3713,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler for videregående skoler, Telemark fylkeskommune",
    "korttittel": "Skoleregler i Telemark",
+   "korttittelNn": "Skulereglar i Telemark",
    "malform": "nb",
    "refid": "forskrift/2024-12-10-3620",
    "gyldighet": {
@@ -3602,6 +3756,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om ordensregler for voksne deltakere i fylkeskommunale videregående skoler, Telemark",
    "korttittel": "Regler for voksne i Telemark",
+   "korttittelNn": "Reglar for vaksne i Telemark",
    "malform": "nb",
    "refid": "forskrift/2026-02-25-383",
    "gyldighet": {
@@ -3643,6 +3798,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Agder fylkeskommune",
    "korttittel": "Inntak og formidling i Agder",
+   "korttittelNn": "Inntak og formidling i Agder",
    "malform": "nb",
    "refid": "forskrift/2024-11-19-3677",
    "gyldighet": {
@@ -3692,6 +3848,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler for elever ved fylkeskommunale videregående skoler i Agder og deltakere i voksenopplæringen",
    "korttittel": "Skoleregler i Agder",
+   "korttittelNn": "Skulereglar i Agder",
    "malform": "nb",
    "refid": "forskrift/2024-06-18-1248",
    "gyldighet": {
@@ -3724,6 +3881,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om rabattordning for skoleskyss, Agder fylke",
    "korttittel": "Skyss og rabattordning i Agder",
+   "korttittelNn": "Skyss og rabattordning i Agder",
    "malform": "nb",
    "refid": "forskrift/2026-06-16-1422",
    "gyldighet": {
@@ -3750,7 +3908,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Arna vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Arna vidaregåande skule",
+   "korttittel": "Skoleregler ved Arna vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Arna vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2024-10-04-3683",
    "gyldighet": {
@@ -3779,7 +3938,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar – mobilreglar for Askøy videregående skole, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Askøy videregående skole",
+   "korttittel": "Skoleregler ved Askøy videregående skole",
+   "korttittelNn": "Skulereglar ved Askøy videregående skole",
    "malform": "nn",
    "refid": "forskrift/2024-08-01-2484",
    "gyldighet": {
@@ -3808,7 +3968,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om tilleggsreglar for Austevoll vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Austevoll vidaregåande skule",
+   "korttittel": "Skoleregler ved Austevoll vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Austevoll vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-03-03-477",
    "gyldighet": {
@@ -3842,7 +4003,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar til skulereglementet for Dale vgs, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Dale vidaregåande skule",
+   "korttittel": "Skoleregler ved Dale vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Dale vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-01-03-818",
    "gyldighet": {
@@ -3871,7 +4033,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om skulereglar, Eid vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Eid vidaregåande skule",
+   "korttittel": "Skoleregler ved Eid vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Eid vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-08-18-2220",
    "gyldighet": {
@@ -3901,7 +4064,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Skulereglar for Fitjar vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Fitjar vidaregåande skule",
+   "korttittel": "Skoleregler ved Fitjar vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Fitjar vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2024-08-01-3712",
    "gyldighet": {
@@ -3928,7 +4092,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Førde vgs. og Høyanger vgs., Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Førde vidaregåande skule",
+   "korttittel": "Skoleregler ved Førde vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Førde vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-01-02-5",
    "gyldighet": {
@@ -3954,7 +4119,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift til skulereglar, Fusa vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Fusa vidaregåande skule",
+   "korttittel": "Skoleregler ved Fusa vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Fusa vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-05-01-833",
    "gyldighet": {
@@ -3988,6 +4154,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Fyllingsdalen videregående skole vedkomande skolereglar, Vestland fylkeskommune",
    "korttittel": "Skoleregler ved Fyllingsdalen videregående skole",
+   "korttittelNn": "Skulereglar ved Fyllingsdalen videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-07-01-1409",
    "gyldighet": {
@@ -4008,7 +4175,7 @@
     "5",
     "3",
     "4",
-    "5",
+    "5b",
     "6",
     "7",
     "8",
@@ -4020,7 +4187,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Kvam vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Kvam vidaregåande skule",
+   "korttittel": "Skoleregler ved Kvam vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Kvam vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-01-08-100",
    "gyldighet": {
@@ -4056,7 +4224,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Kvinnherad vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Kvinnherad vidaregåande skule",
+   "korttittel": "Skoleregler ved Kvinnherad vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Kvinnherad vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2024-12-10-3082",
    "gyldighet": {
@@ -4091,6 +4260,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Laksevåg og Bergen maritime vidaregåande skule vedkomande skulereglar, Vestland fylkeskommune",
    "korttittel": "Skoleregler ved Laksevåg og Bergen Maritime videregående skole",
+   "korttittelNn": "Skulereglar ved Laksevåg og Bergen Maritime videregående skole",
    "malform": "nb",
    "refid": "forskrift/2024-11-18-3718",
    "gyldighet": {
@@ -4116,7 +4286,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om tillegg til skulereglar for Måløy vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Måløy vidaregåande skule",
+   "korttittel": "Skoleregler ved Måløy vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Måløy vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-01-28-120",
    "gyldighet": {
@@ -4151,7 +4322,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om skolereglar for Nordahl Grieg videregående skole, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Nordahl Grieg videregående skole",
+   "korttittel": "Skoleregler ved Nordahl Grieg videregående skole",
+   "korttittelNn": "Skulereglar ved Nordahl Grieg videregående skole",
    "malform": "nn",
    "refid": "forskrift/2025-07-29-1573",
    "gyldighet": {
@@ -4180,7 +4352,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om tillegg til skulereglar for Odda vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Odda vidaregåande skule",
+   "korttittel": "Skoleregler ved Odda vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Odda vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-08-01-1608",
    "gyldighet": {
@@ -4214,7 +4387,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Osterøy vidaregåande skule, Vestland",
-   "korttittel": "Skulereglar ved Osterøy vidaregåande skule",
+   "korttittel": "Skoleregler ved Osterøy vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Osterøy vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2024-08-01-3757",
    "gyldighet": {
@@ -4243,7 +4417,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Sandsli videregående skole, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Sandsli videregående skole",
+   "korttittel": "Skoleregler ved Sandsli videregående skole",
+   "korttittelNn": "Skulereglar ved Sandsli videregående skole",
    "malform": "nn",
    "refid": "forskrift/2025-01-15-808",
    "gyldighet": {
@@ -4273,7 +4448,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Sogndal vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Sogndal vidaregåande skule",
+   "korttittel": "Skoleregler ved Sogndal vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Sogndal vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2024-08-01-1921",
    "gyldighet": {
@@ -4303,7 +4479,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar til skulereglementet for Sotra vgs., Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Sotra vidaregåande skule",
+   "korttittel": "Skoleregler ved Sotra vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Sotra vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-03-20-582",
    "gyldighet": {
@@ -4332,7 +4509,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om tillegg til skulereglar for Stryn vidaregåande skule, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Stryn vidaregåande skule",
+   "korttittel": "Skoleregler ved Stryn vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Stryn vidaregåande skule",
    "malform": "nn",
    "refid": "forskrift/2025-06-11-1075",
    "gyldighet": {
@@ -4359,6 +4537,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune",
    "korttittel": "Inntak og formidling i Vestland",
+   "korttittelNn": "Inntak og formidling i Vestland",
    "malform": "nb",
    "refid": "forskrift/2020-09-29-3380",
    "gyldighet": {
@@ -4416,7 +4595,8 @@
    "kilde": "vestland-forskrift-skulereglar",
    "type": "forskrift",
    "tittel": "Forskrift om skulereglar, Vestland fylkeskommune",
-   "korttittel": "Skulereglar i Vestland",
+   "korttittel": "Skoleregler i Vestland",
+   "korttittelNn": "Skulereglar i Vestland",
    "malform": "nn",
    "refid": "forskrift/2026-06-16-1587",
    "gyldighet": {
@@ -4456,7 +4636,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om skulerute for skuleåret 2026/2027, Vestland fylkeskommune",
-   "korttittel": "Skulerute 2026–2027 i Vestland",
+   "korttittel": "Skolerute 2026–2027 i Vestland",
+   "korttittelNn": "Skulerute 2026–2027 i Vestland",
    "malform": "nn",
    "refid": "forskrift/2026-08-06-1634",
    "gyldighet": {
@@ -4481,6 +4662,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om rabattordning som alternativ til gratis skyss, eller full skyssgodtgjersle i vidaregåande opplæring, Vestland fylkeskommune",
    "korttittel": "Skyss og rabattordning i Vestland",
+   "korttittelNn": "Skyss og rabattordning i Vestland",
    "malform": "nn",
    "refid": "forskrift/2025-12-09-3018",
    "gyldighet": {
@@ -4506,7 +4688,8 @@
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar for Voss gymnas, Vestland fylkeskommune",
-   "korttittel": "Skulereglar ved Voss gymnas",
+   "korttittel": "Skoleregler ved Voss gymnas",
+   "korttittelNn": "Skulereglar ved Voss gymnas",
    "malform": "nn",
    "refid": "forskrift/2024-08-01-1933",
    "gyldighet": {
@@ -4532,6 +4715,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring – opplæringsløp fram mot helsefag med studiekompetanse ved Strinda videregående skole, Trøndelag fylkeskommune",
    "korttittel": "Fag- og timefordeling, Strinda videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Strinda videregående skole",
    "malform": "nb",
    "refid": "forskrift/2022-12-14-2590",
    "gyldighet": {
@@ -4566,6 +4750,7 @@
    "type": "forskrift",
    "tittel": "Forskrift for inntak og formidling, Trøndelag fylkeskommune",
    "korttittel": "Inntak og formidling i Trøndelag",
+   "korttittelNn": "Inntak og formidling i Trøndelag",
    "malform": "nb",
    "refid": "forskrift/2025-10-16-2497",
    "gyldighet": {
@@ -4624,6 +4809,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Trøndelag",
    "korttittel": "Skoleregler i Trøndelag",
+   "korttittelNn": "Skulereglar i Trøndelag",
    "malform": "nb",
    "refid": "forskrift/2024-06-11-1087",
    "gyldighet": {
@@ -4653,6 +4839,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om felles ordensregler for opplæringa for voksne deltakere, Trøndelag",
    "korttittel": "Regler for voksne i Trøndelag",
+   "korttittelNn": "Reglar for vaksne i Trøndelag",
    "malform": "nb",
    "refid": "forskrift/2025-06-13-1031",
    "gyldighet": {
@@ -4681,6 +4868,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Troms fylkeskommune",
    "korttittel": "Inntak og formidling i Troms",
+   "korttittelNn": "Inntak og formidling i Troms",
    "malform": "nb",
    "refid": "forskrift/2024-11-21-3061",
    "gyldighet": {
@@ -4741,6 +4929,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Troms",
    "korttittel": "Skoleregler i Troms",
+   "korttittelNn": "Skulereglar i Troms",
    "malform": "nb",
    "refid": "forskrift/2025-05-28-1527",
    "gyldighet": {
@@ -4779,6 +4968,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skolerute for skoleåret 2026–2027, Troms fylkeskommune",
    "korttittel": "Skolerute 2026–2027 i Troms",
+   "korttittelNn": "Skulerute 2026–2027 i Troms",
    "malform": "nb",
    "refid": "forskrift/2024-05-13-3673",
    "gyldighet": {
@@ -4803,6 +4993,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skolerute for skoleåret 2027–2028, Troms fylkeskommune",
    "korttittel": "Skolerute 2027–2028 i Troms",
+   "korttittelNn": "Skulerute 2027–2028 i Troms",
    "malform": "nb",
    "refid": "forskrift/2026-05-13-1638",
    "gyldighet": {
@@ -4828,6 +5019,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skolerute for skoleåret 2028–2029, Troms fylkeskommune",
    "korttittel": "Skolerute 2028–2029 i Troms",
+   "korttittelNn": "Skulerute 2028–2029 i Troms",
    "malform": "nb",
    "refid": "forskrift/2026-05-13-1639",
    "gyldighet": {
@@ -4853,6 +5045,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Finnmark fylkeskommune",
    "korttittel": "Inntak og formidling i Finnmark",
+   "korttittelNn": "Inntak og formidling i Finnmark",
    "malform": "nb",
    "refid": "forskrift/2025-12-02-2791",
    "gyldighet": {
@@ -4901,6 +5094,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skoleregler for fylkeskommunale videregående skoler, Finnmark",
    "korttittel": "Skoleregler i Finnmark",
+   "korttittelNn": "Skulereglar i Finnmark",
    "malform": "nb",
    "refid": "forskrift/2026-06-02-1081",
    "gyldighet": {
@@ -4935,6 +5129,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om ordensregler for videregående opplæring for voksne, Finnmark fylkeskommune",
    "korttittel": "Regler for voksne i Finnmark",
+   "korttittelNn": "Reglar for vaksne i Finnmark",
    "malform": "nb",
    "refid": "forskrift/2026-02-10-286",
    "gyldighet": {
@@ -4966,6 +5161,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skolerute for de fylkeskommunale videregående skolene i skoleåret 2026–2027, Finnmark fylkeskommune",
    "korttittel": "Skolerute 2026–2027 i Finnmark",
+   "korttittelNn": "Skulerute 2026–2027 i Finnmark",
    "malform": "nb",
    "refid": "forskrift/2025-12-02-2397",
    "gyldighet": {
@@ -4990,6 +5186,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om skolerute for de fylkeskommunale videregående skolene, skoleåret 2027–2028, Finnmark fylkeskommune",
    "korttittel": "Skolerute 2027–2028 i Finnmark",
+   "korttittelNn": "Skulerute 2027–2028 i Finnmark",
    "malform": "nb",
    "refid": "forskrift/2025-12-02-2398",
    "gyldighet": {
@@ -5014,6 +5211,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibel fag- og timefordeling for vg1 elektro- og datateknologi, vg1 helse- og oppvekstfag, vg1 teknologi- og industrifag, vg1 naturbruk, og vekslingsmodellene vg2 helsearbeiderfag, vg2 barne- og ungdomsarbeiderfag og vg2 akvakultur ved Nordkapp videregående skole og underliggende Veksling LOSA-enheter, Finnmark fylkeskommune",
    "korttittel": "Fag- og timefordeling, Nordkapp videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Nordkapp videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-12-02-2547",
    "gyldighet": {
@@ -5048,6 +5246,7 @@
    "type": "forskrift",
    "tittel": "Forskrift om fleksibel fag- og timefordeling for vg1 Restaurant- og matfag med sjømat, vg2 Matproduksjon med sjømat og vg3 påbygging til generell studiekompetanse med sjømat (Nasjonal sjømatlinje) ved Vardø videregående skole, Finnmark fylkeskommune",
    "korttittel": "Fag- og timefordeling, Vardø videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vardø videregående skole",
    "malform": "nb",
    "refid": "forskrift/2025-12-02-2546",
    "gyldighet": {

@@ -12,6 +12,7 @@
    "fylke": "03",
    "skoler": [],
    "korttittel": "Inntak og formidling i Oslo",
+   "korttittelNn": "Inntak og formidling i Oslo",
    "malform": "nb",
    "iKraft": "2025-02-01",
    "iKraftTil": null
@@ -23,6 +24,7 @@
    "fylke": "03",
    "skoler": [],
    "korttittel": "Skoleregler i Oslo",
+   "korttittelNn": "Skulereglar i Oslo",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -34,6 +36,7 @@
    "fylke": "03",
    "skoler": [],
    "korttittel": "Skyss og rabattordning i Oslo",
+   "korttittelNn": "Skyss og rabattordning i Oslo",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -47,6 +50,7 @@
     "974624532"
    ],
    "korttittel": "Fag- og timefordeling, Bergeland videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bergeland videregående skole",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-08-01"
@@ -60,6 +64,7 @@
     "974624532"
    ],
    "korttittel": "Fag- og timefordeling, Bergeland videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bergeland videregående skole",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-08-01"
@@ -71,6 +76,7 @@
    "fylke": "11",
    "skoler": [],
    "korttittel": "Inntak og formidling i Rogaland",
+   "korttittelNn": "Inntak og formidling i Rogaland",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -82,6 +88,7 @@
    "fylke": "11",
    "skoler": [],
    "korttittel": "Skoleregler i Rogaland",
+   "korttittelNn": "Skulereglar i Rogaland",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": null
@@ -93,6 +100,7 @@
    "fylke": "11",
    "skoler": [],
    "korttittel": "Regler for voksne i Rogaland",
+   "korttittelNn": "Reglar for vaksne i Rogaland",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -103,7 +111,8 @@
    "type": "skolerute",
    "fylke": "11",
    "skoler": [],
-   "korttittel": "Skulerute 2025–2028 i Rogaland",
+   "korttittel": "Skolerute 2025–2028 i Rogaland",
+   "korttittelNn": "Skulerute 2025–2028 i Rogaland",
    "malform": "nn",
    "iKraft": "2025-08-01",
    "iKraftTil": "2028-07-31"
@@ -115,6 +124,7 @@
    "fylke": "11",
    "skoler": [],
    "korttittel": "Skyss og rabattordning i Rogaland",
+   "korttittelNn": "Skyss og rabattordning i Rogaland",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -126,6 +136,7 @@
    "fylke": "15",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Møre og Romsdal",
+   "korttittelNn": "Fag- og timefordeling, Møre og Romsdal",
    "malform": "nn",
    "iKraft": "2026-08-01",
    "iKraftTil": null
@@ -137,6 +148,7 @@
    "fylke": "15",
    "skoler": [],
    "korttittel": "Inntak og formidling i Møre og Romsdal",
+   "korttittelNn": "Inntak og formidling i Møre og Romsdal",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -147,7 +159,8 @@
    "type": "skoleregler",
    "fylke": "15",
    "skoler": [],
-   "korttittel": "Skulereglar i Møre og Romsdal",
+   "korttittel": "Skoleregler i Møre og Romsdal",
+   "korttittelNn": "Skulereglar i Møre og Romsdal",
    "malform": "nn",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -158,7 +171,8 @@
    "type": "skoleregler-voksne",
    "fylke": "15",
    "skoler": [],
-   "korttittel": "Reglar for vaksne i Møre og Romsdal",
+   "korttittel": "Regler for voksne i Møre og Romsdal",
+   "korttittelNn": "Reglar for vaksne i Møre og Romsdal",
    "malform": "nn",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -170,6 +184,7 @@
    "fylke": "18",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Nordland",
+   "korttittelNn": "Fag- og timefordeling, Nordland",
    "malform": "nb",
    "iKraft": "2021-08-01",
    "iKraftTil": null
@@ -181,6 +196,7 @@
    "fylke": "18",
    "skoler": [],
    "korttittel": "Inntak og formidling i Nordland",
+   "korttittelNn": "Inntak og formidling i Nordland",
    "malform": "nb",
    "iKraft": "2025-12-09",
    "iKraftTil": null
@@ -192,6 +208,7 @@
    "fylke": "18",
    "skoler": [],
    "korttittel": "Skoleregler i Nordland",
+   "korttittelNn": "Skulereglar i Nordland",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -205,6 +222,7 @@
     "874621382"
    ],
    "korttittel": "Fag- og timefordeling, Sandnessjøen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Sandnessjøen videregående skole",
    "malform": "nb",
    "iKraft": null,
    "iKraftTil": null
@@ -218,6 +236,7 @@
     "974544504"
    ],
    "korttittel": "Fag- og timefordeling, Askim videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Askim videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-15",
    "iKraftTil": null
@@ -231,6 +250,7 @@
     "974544466"
    ],
    "korttittel": "Fag- og timefordeling, Frederik Ii videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frederik Ii videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -244,6 +264,7 @@
     "974544466"
    ],
    "korttittel": "Fag- og timefordeling, Frederik Ii videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frederik Ii videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -257,6 +278,7 @@
     "974544482"
    ],
    "korttittel": "Fag- og timefordeling, Glemmen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Glemmen videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-15",
    "iKraftTil": null
@@ -270,6 +292,7 @@
     "974544482"
    ],
    "korttittel": "Fag- og timefordeling, Glemmen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Glemmen videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-15",
    "iKraftTil": "2027-08-01"
@@ -283,6 +306,7 @@
     "974544490"
    ],
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-15",
    "iKraftTil": null
@@ -296,6 +320,7 @@
     "974544490"
    ],
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -309,6 +334,7 @@
     "974544490"
    ],
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -322,6 +348,7 @@
     "974544490"
    ],
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -335,6 +362,7 @@
     "974544490"
    ],
    "korttittel": "Fag- og timefordeling, Greåker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Greåker videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -348,6 +376,7 @@
     "974544512"
    ],
    "korttittel": "Fag- og timefordeling, Mysen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Mysen videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-15",
    "iKraftTil": null
@@ -359,6 +388,7 @@
    "fylke": "31",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Østfold",
+   "korttittelNn": "Fag- og timefordeling, Østfold",
    "malform": "nb",
    "iKraft": "2025-08-15",
    "iKraftTil": null
@@ -370,6 +400,7 @@
    "fylke": "31",
    "skoler": [],
    "korttittel": "Inntak og formidling i Østfold",
+   "korttittelNn": "Inntak og formidling i Østfold",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -381,6 +412,7 @@
    "fylke": "31",
    "skoler": [],
    "korttittel": "Skoleregler i Østfold",
+   "korttittelNn": "Skulereglar i Østfold",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -392,6 +424,7 @@
    "fylke": "31",
    "skoler": [],
    "korttittel": "Regler for voksne i Østfold",
+   "korttittelNn": "Reglar for vaksne i Østfold",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -403,6 +436,7 @@
    "fylke": "32",
    "skoler": [],
    "korttittel": "Inntak og formidling i Akershus",
+   "korttittelNn": "Inntak og formidling i Akershus",
    "malform": "nb",
    "iKraft": "2025-02-01",
    "iKraftTil": null
@@ -414,6 +448,7 @@
    "fylke": "32",
    "skoler": [],
    "korttittel": "Skoleregler i Akershus",
+   "korttittelNn": "Skulereglar i Akershus",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -425,6 +460,7 @@
    "fylke": "32",
    "skoler": [],
    "korttittel": "Skyss og rabattordning i Akershus",
+   "korttittelNn": "Skyss og rabattordning i Akershus",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-08-01"
@@ -438,6 +474,7 @@
     "974587831"
    ],
    "korttittel": "Fag- og timefordeling, Bleiker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bleiker videregående skole",
    "malform": "nb",
    "iKraft": "2016-08-01",
    "iKraftTil": null
@@ -451,6 +488,7 @@
     "974587831"
    ],
    "korttittel": "Fag- og timefordeling, Bleiker videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Bleiker videregående skole",
    "malform": "nb",
    "iKraft": "2017-08-01",
    "iKraftTil": null
@@ -464,6 +502,7 @@
     "988843709"
    ],
    "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -477,6 +516,7 @@
     "988843709"
    ],
    "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
    "malform": "nb",
    "iKraft": "2016-08-01",
    "iKraftTil": null
@@ -490,6 +530,7 @@
     "988843709"
    ],
    "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
    "malform": "nb",
    "iKraft": "2019-08-01",
    "iKraftTil": null
@@ -503,6 +544,7 @@
     "974587599"
    ],
    "korttittel": "Fag- og timefordeling, Nesbru videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Nesbru videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -516,6 +558,7 @@
     "974587823"
    ],
    "korttittel": "Fag- og timefordeling, Rud videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Rud videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -529,6 +572,7 @@
     "974587823"
    ],
    "korttittel": "Fag- og timefordeling, Rud videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Rud videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -542,6 +586,7 @@
     "974587629"
    ],
    "korttittel": "Fag- og timefordeling, Skedsmo videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Skedsmo videregående skole",
    "malform": "nb",
    "iKraft": "2017-08-01",
    "iKraftTil": null
@@ -555,6 +600,7 @@
     "974587815"
    ],
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -568,6 +614,7 @@
     "974587815"
    ],
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -581,6 +628,7 @@
     "974587815"
    ],
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -594,6 +642,7 @@
     "974587815"
    ],
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -607,6 +656,7 @@
     "974587815"
    ],
    "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
    "malform": "nb",
    "iKraft": "2017-08-01",
    "iKraftTil": null
@@ -618,6 +668,7 @@
    "fylke": "33",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Buskerud",
+   "korttittelNn": "Fag- og timefordeling, Buskerud",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -629,6 +680,7 @@
    "fylke": "33",
    "skoler": [],
    "korttittel": "Inntak og formidling i Buskerud",
+   "korttittelNn": "Inntak og formidling i Buskerud",
    "malform": "nb",
    "iKraft": "2026-01-01",
    "iKraftTil": null
@@ -640,6 +692,7 @@
    "fylke": "33",
    "skoler": [],
    "korttittel": "Skoleregler i Buskerud",
+   "korttittelNn": "Skulereglar i Buskerud",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": null
@@ -651,6 +704,7 @@
    "fylke": "33",
    "skoler": [],
    "korttittel": "Regler for voksne i Buskerud",
+   "korttittelNn": "Reglar for vaksne i Buskerud",
    "malform": "nb",
    "iKraft": "2025-05-05",
    "iKraftTil": null
@@ -662,6 +716,7 @@
    "fylke": "33",
    "skoler": [],
    "korttittel": "Skyss og rabattordning i Buskerud",
+   "korttittelNn": "Skyss og rabattordning i Buskerud",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -675,6 +730,7 @@
     "874605972"
    ],
    "korttittel": "Fag- og timefordeling, Drammen videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Drammen videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -688,6 +744,7 @@
     "974605929"
    ],
    "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Hønefoss videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -701,6 +758,7 @@
     "974605929"
    ],
    "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Hønefoss videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -714,6 +772,7 @@
     "974605929"
    ],
    "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Hønefoss videregående skole",
    "malform": "nb",
    "iKraft": "2021-08-01",
    "iKraftTil": null
@@ -727,6 +786,7 @@
     "974606135"
    ],
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -740,6 +800,7 @@
     "974606135"
    ],
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -753,6 +814,7 @@
     "974606135"
    ],
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -766,6 +828,7 @@
     "974606135"
    ],
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -779,6 +842,7 @@
     "974606135"
    ],
    "korttittel": "Fag- og timefordeling, Lier videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Lier videregående skole",
    "malform": "nb",
    "iKraft": "2023-08-01",
    "iKraftTil": null
@@ -790,6 +854,7 @@
    "fylke": "34",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -801,6 +866,7 @@
    "fylke": "34",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -812,6 +878,7 @@
    "fylke": "34",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -823,6 +890,7 @@
    "fylke": "34",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Innlandet",
+   "korttittelNn": "Fag- og timefordeling, Innlandet",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -834,6 +902,7 @@
    "fylke": "34",
    "skoler": [],
    "korttittel": "Inntak og formidling i Innlandet",
+   "korttittelNn": "Inntak og formidling i Innlandet",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -845,6 +914,7 @@
    "fylke": "34",
    "skoler": [],
    "korttittel": "Skoleregler i Innlandet",
+   "korttittelNn": "Skulereglar i Innlandet",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -856,6 +926,7 @@
    "fylke": "39",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Vestfold",
+   "korttittelNn": "Fag- og timefordeling, Vestfold",
    "malform": "nb",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -867,6 +938,7 @@
    "fylke": "39",
    "skoler": [],
    "korttittel": "Inntak og formidling i Vestfold",
+   "korttittelNn": "Inntak og formidling i Vestfold",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -878,6 +950,7 @@
    "fylke": "39",
    "skoler": [],
    "korttittel": "Skoleregler i Vestfold",
+   "korttittelNn": "Skulereglar i Vestfold",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -889,6 +962,7 @@
    "fylke": "39",
    "skoler": [],
    "korttittel": "Regler for voksne i Vestfold",
+   "korttittelNn": "Reglar for vaksne i Vestfold",
    "malform": "nb",
    "iKraft": "2025-09-01",
    "iKraftTil": null
@@ -900,6 +974,7 @@
    "fylke": "40",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Telemark",
+   "korttittelNn": "Fag- og timefordeling, Telemark",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -911,6 +986,7 @@
    "fylke": "40",
    "skoler": [],
    "korttittel": "Fag- og timefordeling, Telemark",
+   "korttittelNn": "Fag- og timefordeling, Telemark",
    "malform": "nb",
    "iKraft": "2016-08-01",
    "iKraftTil": null
@@ -922,6 +998,7 @@
    "fylke": "40",
    "skoler": [],
    "korttittel": "Inntak og formidling i Telemark",
+   "korttittelNn": "Inntak og formidling i Telemark",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -933,6 +1010,7 @@
    "fylke": "40",
    "skoler": [],
    "korttittel": "Skoleregler i Telemark",
+   "korttittelNn": "Skulereglar i Telemark",
    "malform": "nb",
    "iKraft": "2025-01-20",
    "iKraftTil": null
@@ -944,6 +1022,7 @@
    "fylke": "40",
    "skoler": [],
    "korttittel": "Regler for voksne i Telemark",
+   "korttittelNn": "Reglar for vaksne i Telemark",
    "malform": "nb",
    "iKraft": "2026-02-25",
    "iKraftTil": null
@@ -955,6 +1034,7 @@
    "fylke": "42",
    "skoler": [],
    "korttittel": "Inntak og formidling i Agder",
+   "korttittelNn": "Inntak og formidling i Agder",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -966,6 +1046,7 @@
    "fylke": "42",
    "skoler": [],
    "korttittel": "Skoleregler i Agder",
+   "korttittelNn": "Skulereglar i Agder",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -977,6 +1058,7 @@
    "fylke": "42",
    "skoler": [],
    "korttittel": "Skyss og rabattordning i Agder",
+   "korttittelNn": "Skyss og rabattordning i Agder",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -989,7 +1071,8 @@
    "skoler": [
     "974557444"
    ],
-   "korttittel": "Skulereglar ved Arna vidaregåande skule",
+   "korttittel": "Skoleregler ved Arna vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Arna vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -1002,7 +1085,8 @@
    "skoler": [
     "974557533"
    ],
-   "korttittel": "Skulereglar ved Askøy videregående skole",
+   "korttittel": "Skoleregler ved Askøy videregående skole",
+   "korttittelNn": "Skulereglar ved Askøy videregående skole",
    "malform": "nn",
    "iKraft": "2024-08-15",
    "iKraftTil": null
@@ -1015,7 +1099,8 @@
    "skoler": [
     "974557592"
    ],
-   "korttittel": "Skulereglar ved Austevoll vidaregåande skule",
+   "korttittel": "Skoleregler ved Austevoll vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Austevoll vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-04-01",
    "iKraftTil": null
@@ -1028,7 +1113,8 @@
    "skoler": [
     "974571137"
    ],
-   "korttittel": "Skulereglar ved Dale vidaregåande skule",
+   "korttittel": "Skoleregler ved Dale vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Dale vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-01-03",
    "iKraftTil": null
@@ -1041,7 +1127,8 @@
    "skoler": [
     "874571172"
    ],
-   "korttittel": "Skulereglar ved Eid vidaregåande skule",
+   "korttittel": "Skoleregler ved Eid vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Eid vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-08-18",
    "iKraftTil": null
@@ -1054,7 +1141,8 @@
    "skoler": [
     "974557630"
    ],
-   "korttittel": "Skulereglar ved Fitjar vidaregåande skule",
+   "korttittel": "Skoleregler ved Fitjar vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Fitjar vidaregåande skule",
    "malform": "nn",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -1067,7 +1155,8 @@
    "skoler": [
     "974571110"
    ],
-   "korttittel": "Skulereglar ved Førde vidaregåande skule",
+   "korttittel": "Skoleregler ved Førde vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Førde vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-02-08",
    "iKraftTil": null
@@ -1080,7 +1169,8 @@
    "skoler": [
     "874557552"
    ],
-   "korttittel": "Skulereglar ved Fusa vidaregåande skule",
+   "korttittel": "Skoleregler ved Fusa vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Fusa vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1094,6 +1184,7 @@
     "974557584"
    ],
    "korttittel": "Skoleregler ved Fyllingsdalen videregående skole",
+   "korttittelNn": "Skulereglar ved Fyllingsdalen videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1106,7 +1197,8 @@
    "skoler": [
     "974557045"
    ],
-   "korttittel": "Skulereglar ved Kvam vidaregåande skule",
+   "korttittel": "Skoleregler ved Kvam vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Kvam vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-02-28",
    "iKraftTil": null
@@ -1119,7 +1211,8 @@
    "skoler": [
     "974557282"
    ],
-   "korttittel": "Skulereglar ved Kvinnherad vidaregåande skule",
+   "korttittel": "Skoleregler ved Kvinnherad vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Kvinnherad vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -1133,6 +1226,7 @@
     "974557355"
    ],
    "korttittel": "Skoleregler ved Laksevåg og Bergen Maritime videregående skole",
+   "korttittelNn": "Skulereglar ved Laksevåg og Bergen Maritime videregående skole",
    "malform": "nb",
    "iKraft": "2024-11-18",
    "iKraftTil": null
@@ -1145,7 +1239,8 @@
    "skoler": [
     "974571188"
    ],
-   "korttittel": "Skulereglar ved Måløy vidaregåande skule",
+   "korttittel": "Skoleregler ved Måløy vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Måløy vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-03-01",
    "iKraftTil": null
@@ -1158,7 +1253,8 @@
    "skoler": [
     "993527084"
    ],
-   "korttittel": "Skulereglar ved Nordahl Grieg videregående skole",
+   "korttittel": "Skoleregler ved Nordahl Grieg videregående skole",
+   "korttittelNn": "Skulereglar ved Nordahl Grieg videregående skole",
    "malform": "nn",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1171,7 +1267,8 @@
    "skoler": [
     "974557290"
    ],
-   "korttittel": "Skulereglar ved Odda vidaregåande skule",
+   "korttittel": "Skoleregler ved Odda vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Odda vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1184,7 +1281,8 @@
    "skoler": [
     "974557150"
    ],
-   "korttittel": "Skulereglar ved Osterøy vidaregåande skule",
+   "korttittel": "Skoleregler ved Osterøy vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Osterøy vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-08-03",
    "iKraftTil": null
@@ -1197,7 +1295,8 @@
    "skoler": [
     "974557142"
    ],
-   "korttittel": "Skulereglar ved Sandsli videregående skole",
+   "korttittel": "Skoleregler ved Sandsli videregående skole",
+   "korttittelNn": "Skulereglar ved Sandsli videregående skole",
    "malform": "nn",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -1210,7 +1309,8 @@
    "skoler": [
     "974571056"
    ],
-   "korttittel": "Skulereglar ved Sogndal vidaregåande skule",
+   "korttittel": "Skoleregler ved Sogndal vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Sogndal vidaregåande skule",
    "malform": "nn",
    "iKraft": "2024-08-19",
    "iKraftTil": null
@@ -1223,7 +1323,8 @@
    "skoler": [
     "974557568"
    ],
-   "korttittel": "Skulereglar ved Sotra vidaregåande skule",
+   "korttittel": "Skoleregler ved Sotra vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Sotra vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-04-10",
    "iKraftTil": null
@@ -1236,7 +1337,8 @@
    "skoler": [
     "974571153"
    ],
-   "korttittel": "Skulereglar ved Stryn vidaregåande skule",
+   "korttittel": "Skoleregler ved Stryn vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Stryn vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-07-21",
    "iKraftTil": null
@@ -1248,6 +1350,7 @@
    "fylke": "46",
    "skoler": [],
    "korttittel": "Inntak og formidling i Vestland",
+   "korttittelNn": "Inntak og formidling i Vestland",
    "malform": "nb",
    "iKraft": "2021-01-01",
    "iKraftTil": null
@@ -1258,7 +1361,8 @@
    "type": "skoleregler",
    "fylke": "46",
    "skoler": [],
-   "korttittel": "Skulereglar i Vestland",
+   "korttittel": "Skoleregler i Vestland",
+   "korttittelNn": "Skulereglar i Vestland",
    "malform": "nn",
    "iKraft": "2026-08-01",
    "iKraftTil": null
@@ -1269,7 +1373,8 @@
    "type": "skolerute",
    "fylke": "46",
    "skoler": [],
-   "korttittel": "Skulerute 2026–2027 i Vestland",
+   "korttittel": "Skolerute 2026–2027 i Vestland",
+   "korttittelNn": "Skulerute 2026–2027 i Vestland",
    "malform": "nn",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -1281,6 +1386,7 @@
    "fylke": "46",
    "skoler": [],
    "korttittel": "Skyss og rabattordning i Vestland",
+   "korttittelNn": "Skyss og rabattordning i Vestland",
    "malform": "nn",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -1293,7 +1399,8 @@
    "skoler": [
     "816031982"
    ],
-   "korttittel": "Skulereglar ved Voss gymnas",
+   "korttittel": "Skoleregler ved Voss gymnas",
+   "korttittelNn": "Skulereglar ved Voss gymnas",
    "malform": "nn",
    "iKraft": "2024-09-13",
    "iKraftTil": null
@@ -1307,6 +1414,7 @@
     "996772810"
    ],
    "korttittel": "Fag- og timefordeling, Strinda videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Strinda videregående skole",
    "malform": "nb",
    "iKraft": "2023-01-01",
    "iKraftTil": null
@@ -1318,6 +1426,7 @@
    "fylke": "50",
    "skoler": [],
    "korttittel": "Inntak og formidling i Trøndelag",
+   "korttittelNn": "Inntak og formidling i Trøndelag",
    "malform": "nb",
    "iKraft": "2026-01-01",
    "iKraftTil": null
@@ -1329,6 +1438,7 @@
    "fylke": "50",
    "skoler": [],
    "korttittel": "Skoleregler i Trøndelag",
+   "korttittelNn": "Skulereglar i Trøndelag",
    "malform": "nb",
    "iKraft": "2024-08-01",
    "iKraftTil": null
@@ -1340,6 +1450,7 @@
    "fylke": "50",
    "skoler": [],
    "korttittel": "Regler for voksne i Trøndelag",
+   "korttittelNn": "Reglar for vaksne i Trøndelag",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1351,6 +1462,7 @@
    "fylke": "55",
    "skoler": [],
    "korttittel": "Inntak og formidling i Troms",
+   "korttittelNn": "Inntak og formidling i Troms",
    "malform": "nb",
    "iKraft": "2025-01-01",
    "iKraftTil": null
@@ -1362,6 +1474,7 @@
    "fylke": "55",
    "skoler": [],
    "korttittel": "Skoleregler i Troms",
+   "korttittelNn": "Skulereglar i Troms",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1373,6 +1486,7 @@
    "fylke": "55",
    "skoler": [],
    "korttittel": "Skolerute 2026–2027 i Troms",
+   "korttittelNn": "Skulerute 2026–2027 i Troms",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -1384,6 +1498,7 @@
    "fylke": "55",
    "skoler": [],
    "korttittel": "Skolerute 2027–2028 i Troms",
+   "korttittelNn": "Skulerute 2027–2028 i Troms",
    "malform": "nb",
    "iKraft": "2027-08-01",
    "iKraftTil": "2028-07-31"
@@ -1395,6 +1510,7 @@
    "fylke": "55",
    "skoler": [],
    "korttittel": "Skolerute 2028–2029 i Troms",
+   "korttittelNn": "Skulerute 2028–2029 i Troms",
    "malform": "nb",
    "iKraft": "2028-08-01",
    "iKraftTil": "2029-07-31"
@@ -1406,6 +1522,7 @@
    "fylke": "56",
    "skoler": [],
    "korttittel": "Inntak og formidling i Finnmark",
+   "korttittelNn": "Inntak og formidling i Finnmark",
    "malform": "nb",
    "iKraft": "2026-01-01",
    "iKraftTil": null
@@ -1417,6 +1534,7 @@
    "fylke": "56",
    "skoler": [],
    "korttittel": "Skoleregler i Finnmark",
+   "korttittelNn": "Skulereglar i Finnmark",
    "malform": "nb",
    "iKraft": "2026-06-02",
    "iKraftTil": null
@@ -1428,6 +1546,7 @@
    "fylke": "56",
    "skoler": [],
    "korttittel": "Regler for voksne i Finnmark",
+   "korttittelNn": "Reglar for vaksne i Finnmark",
    "malform": "nb",
    "iKraft": null,
    "iKraftTil": null
@@ -1439,6 +1558,7 @@
    "fylke": "56",
    "skoler": [],
    "korttittel": "Skolerute 2026–2027 i Finnmark",
+   "korttittelNn": "Skulerute 2026–2027 i Finnmark",
    "malform": "nb",
    "iKraft": "2026-08-01",
    "iKraftTil": "2027-07-31"
@@ -1450,6 +1570,7 @@
    "fylke": "56",
    "skoler": [],
    "korttittel": "Skolerute 2027–2028 i Finnmark",
+   "korttittelNn": "Skulerute 2027–2028 i Finnmark",
    "malform": "nb",
    "iKraft": "2027-08-01",
    "iKraftTil": "2028-07-30"
@@ -1463,6 +1584,7 @@
     "974622734"
    ],
    "korttittel": "Fag- og timefordeling, Nordkapp videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Nordkapp videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null
@@ -1476,6 +1598,7 @@
     "974622777"
    ],
    "korttittel": "Fag- og timefordeling, Vardø videregående skole",
+   "korttittelNn": "Fag- og timefordeling, Vardø videregående skole",
    "malform": "nb",
    "iKraft": "2025-08-01",
    "iKraftTil": null

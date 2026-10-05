@@ -36,7 +36,8 @@
         "Når eit organ skal avgjere kva dokumentasjon det skal forvalte som arkiv etter ",
         {
          "t": "arkivlova § 5",
-         "l": "lov/2025-06-20-96/§5"
+         "l": "lov/2025-06-20-96/§5",
+         "a": "arkivlova/5"
         },
         ", skal det særleg ta omsyn til om dokumentasjonen"
        ],
@@ -93,7 +94,8 @@
         "Når Nasjonalarkivet gir forskrift med heimel i ",
         {
          "t": "arkivlova § 12 andre ledd andre punktum",
-         "l": "lov/2025-06-20-96/§12/ledd/2/setning/2"
+         "l": "lov/2025-06-20-96/§12/ledd/2/setning/2",
+         "a": "arkivlova/12"
         },
         " om kva dokumentasjon som organa skal ta vare på for ettertida, skal Nasjonalarkivet leggje desse kriteria til grunn:"
        ],
@@ -141,7 +143,8 @@
             ", forvaltar oppgåvene sine, jf. ",
             {
              "t": "arkivlova § 3",
-             "l": "lov/2025-06-20-96/§3"
+             "l": "lov/2025-06-20-96/§3",
+             "a": "arkivlova/3"
             }
            ]
           }
@@ -173,7 +176,8 @@
         "Eit organ skal sjølv fastsetje oppbevaringstider for dokumentasjon som ikkje er omfatta av forskrifta gitt av Nasjonalarkivet med heimel i ",
         {
          "t": "arkivlova § 12 andre ledd andre punktum",
-         "l": "lov/2025-06-20-96/§12/ledd/2/setning/2"
+         "l": "lov/2025-06-20-96/§12/ledd/2/setning/2",
+         "a": "arkivlova/12"
         },
         " om kva dokumentasjon som organa skal ta vare på for ettertida."
        ]
@@ -249,7 +253,8 @@
         "Eit utval som er oppretta ved kongeleg resolusjon eller lov og som skal ha eige arkiv, er ikkje omfatta av ",
         {
          "t": "arkivlova § 14 første ledd",
-         "l": "lov/2025-06-20-96/§14/ledd/1"
+         "l": "lov/2025-06-20-96/§14/ledd/1",
+         "a": "arkivlova/14"
         },
         ". Når utvalet blir lagt ned, skal ansvaret for arkivet overførast til vedkomande departement eller anna overordna organ."
        ]
@@ -259,12 +264,14 @@
         "Organa som er nemnde i ",
         {
          "t": "arkivlova § 14 fjerde ledd bokstav b",
-         "l": "lov/2025-06-20-96/§14/ledd/4/bokstav/b"
+         "l": "lov/2025-06-20-96/§14/ledd/4/bokstav/b",
+         "a": "arkivlova/14"
         },
         " og ",
         {
          "t": "c",
-         "l": "lov/2025-06-20-96/§14/ledd/4/bokstav/c"
+         "l": "lov/2025-06-20-96/§14/ledd/4/bokstav/c",
+         "a": "arkivlova/14"
         },
         ", skal avtale med den bevaringsinstitusjonen som Nasjonalarkivet fastset, når og korleis arkiva skal avleverast."
        ]
@@ -283,7 +290,8 @@
         "Informasjonssystem som inneheld dokumentasjon som skal forvaltast som arkiv, skal ha funksjonar som gjer at informasjonen blir sikra og forvalta i tråd med ",
         {
          "t": "arkivlova § 5 første ledd",
-         "l": "lov/2025-06-20-96/§5/ledd/1"
+         "l": "lov/2025-06-20-96/§5/ledd/1",
+         "a": "arkivlova/5"
         },
         "."
        ]
@@ -450,7 +458,8 @@
         "Eit organ skal halde dokumentasjonen i digitale arkiv ved like, slik at informasjonen er sikra og forvalta i tråd med ",
         {
          "t": "arkivlova § 5",
-         "l": "lov/2025-06-20-96/§5"
+         "l": "lov/2025-06-20-96/§5",
+         "a": "arkivlova/5"
         },
         "."
        ]
@@ -721,12 +730,14 @@
         "Dokumentasjonsplanen til eit organ skal oppfylle krava i ",
         {
          "t": "arkivlova § 8 første",
-         "l": "lov/2025-06-20-96/§8/ledd/1"
+         "l": "lov/2025-06-20-96/§8/ledd/1",
+         "a": "arkivlova/8"
         },
         " og ",
         {
          "t": "andre ledd",
-         "l": "lov/2025-06-20-96/§8/ledd/2"
+         "l": "lov/2025-06-20-96/§8/ledd/2",
+         "a": "arkivlova/8"
         },
         " og i tillegg innehalde"
        ],
@@ -764,7 +775,8 @@
             "opplysningar om kva delar av organet sin dokumentasjon som skal takast vare på for ettertida etter forskrift fastsett av Nasjonalarkivet med heimel i ",
             {
              "t": "arkivlova § 12 andre ledd andre punktum",
-             "l": "lov/2025-06-20-96/§12/ledd/2/setning/2"
+             "l": "lov/2025-06-20-96/§12/ledd/2/setning/2",
+             "a": "arkivlova/12"
             }
            ]
           }
@@ -923,12 +935,14 @@
             "opplysningar om kva som er avtalt med andre som løyser lovpålagde oppgåver på vegner av organet om korleis pliktene etter lova skal følgjast opp, jf. ",
             {
              "t": "arkivlova § 7 første ledd",
-             "l": "lov/2025-06-20-96/§7/ledd/1"
+             "l": "lov/2025-06-20-96/§7/ledd/1",
+             "a": "arkivlova/7"
             },
             ", og kva som skal gjelde for dokumentasjon som organet har plikt til å ta imot etter ",
             {
              "t": "arkivlova § 7 andre ledd",
-             "l": "lov/2025-06-20-96/§7/ledd/2"
+             "l": "lov/2025-06-20-96/§7/ledd/2",
+             "a": "arkivlova/7"
             },
             "."
            ]
@@ -1074,7 +1088,8 @@
             "dokument som er omtalte i ",
             {
              "t": "offentlegforskrifta § 8",
-             "l": "forskrift/2008-10-17-1119/§8"
+             "l": "forskrift/2008-10-17-1119/§8",
+             "a": "offentlegforskrifta/8"
             },
             "."
            ]
@@ -1204,7 +1219,8 @@
         "Nasjonalarkivet kan etter søknad gjere vedtak om kassasjon av enkeltopplysningar i særlege høve, jf. ",
         {
          "t": "arkivlova § 13 tredje ledd første punktum",
-         "l": "lov/2025-06-20-96/§13/ledd/3/setning/1"
+         "l": "lov/2025-06-20-96/§13/ledd/3/setning/1",
+         "a": "arkivlova/13"
         },
         "."
        ]
