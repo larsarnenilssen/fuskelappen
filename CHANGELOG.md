@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.36.0] – 2026-10-05
+
 ### Lagt til
 
 - **Fylkene** under «Oppslag» på forsiden: én side per fylke med lenker til fylkets egne sider om inntak, klage, eksamen, særskilt språkopplæring, tilrettelegging, privatister og fagprøver, de lokale forskriftene, skolene, opplæringskontorene og kalenderne. Med valgt fylke går inngangen rett til fylket. Skolenes egne regler står i en egen gruppe, med skolen din øverst.
