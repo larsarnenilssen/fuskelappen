@@ -46,9 +46,11 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
    - Hvem det gjelder: elever, privatister, lærlinger, voksne og fortrinnsrett.
    
    Gruppene i modulene har ulike navn i dag (`ungdom` i Inntak, `elever` i Vurdering), og må få felles navn. Filtrene står i adressen.
-4. **Lenker** fra hver dato til veivisere, begreper og sider (nytt felt på fristene). Datoer uten fast dag («Udir fastsetter datoen») vises bare når det er filtrert på tema.
-5. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
-6. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
+4. **Skoleruta** (eier 05.10.2026): kalenderen viser skoleruta fra fylkets lokale forskrift (pakke 4, `lokaltype: skolerute`), med skolestart, ferier og fridager.
+   - Der skoleruta brukes, står en merknad om at skoleruta ved den enkelte skolen kan avvike. Vestlands skolerute sier for eksempel at skolene følger vertskommunen.
+5. **Lenker** fra hver dato til veivisere, begreper og sider (nytt felt på fristene). Datoer uten fast dag («Udir fastsetter datoen») vises bare når det er filtrert på tema.
+6. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
+7. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 

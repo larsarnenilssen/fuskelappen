@@ -22,8 +22,13 @@ Pakken erstatter Vestland-arbeidet. Vi kopierer ikke fylkenes tekster. Appen len
   - kalenderne for inntak og eksamen
   - klageinstansen
 - **Skolenes nettside** står på skolekortene. Den hentes fra skoleregisteret (NSR).
-- **Lenkesjekk:** Alle lenker sjekkes så ofte det er gratis, det vil si hver natt. Massegenererte lenker (utdanning.no, Vilbli, NDLA og lignende) sjekkes med stikkprøver.
-- **Skolerute** tas med. Skyss og fagfordeling for enkeltskoler venter.
+- **Skolerute, skyss og fagfordeling:** Alle tre tas med (eier 05.10.2026). Skyss eller rabattordning og fleksibel fag- og timefordeling for enkeltskoler kommer i tillegg til skoleregler og inntak, så lenge datamengden er rimelig.
+- **Boksen** står åpen på PC og lukket på mobil (eier 05.10.2026).
+- **«I kraft» og «sist endret»** står på alle lover og forskrifter (eier 05.10.2026).
+- **Lenkesjekk:** Hver natt er for ofte (eier 05.10.2026). Forslaget er én gang i uken, med kildesjekken:
+  - alle faste lenker
+  - omtrent 200 massegenererte lenker per uke, på omgang
+  - varsel når en lenke har feilet to uker på rad
 
 ## Kartleggingen (05.10.2026)
 
@@ -60,10 +65,10 @@ Pakken erstatter Vestland-arbeidet. Vi kopierer ikke fylkenes tekster. Appen len
    - Stegene som ventet på Vestland, skrives generelt: Språk 2–3 og 5, Tilrettelegging 0b, 5b og 6, klagenemnda og inntaksområdepoengene.
 5. **Fylkessiden** `#/fylker/<nr>` under Oppslag. Uten fylke valgt: `#/fylker`.
 6. **Skolenes nettside** fra NSR. Detaljene hentes én og én, bare for skoler med ny `DatoEndret`, med lager som for Grep (avgjørelse 060).
-7. **Nattlig lenkesjekk** (`lenker.yml`):
-   - Faste lenker sjekkes hver natt, høyst én forespørsel i sekundet per nettsted.
-   - Massegenererte lenker sjekkes med stikkprøver, omtrent 100 per natt.
-   - Det varsles etter to netter på rad med feil.
+7. **Ukentlig lenkesjekk** (med kildesjekken, forslag til eier):
+   - Faste lenker sjekkes alle, høyst én forespørsel i sekundet per nettsted.
+   - Massegenererte lenker sjekkes med stikkprøver, omtrent 200 per uke.
+   - Det varsles etter to uker på rad med feil.
    - Nettsteder som stenger, merkes og kommer i kontrollrunden.
    - Kildene `vlfk-*` blir lenker i registeret, så kildesjekken slutter å lese dem.
 8. **Avgjørelser:** 061 (fylkene og lokale forskrifter) og 062 (lenkesjekken). I tillegg CHANGELOG og `OPPDRAG.md`.
