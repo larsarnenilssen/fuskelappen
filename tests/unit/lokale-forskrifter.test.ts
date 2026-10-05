@@ -103,6 +103,14 @@ describe('dokumentsiden', () => {
     const arna = lesLovdataside(side('lf-arna'), { ...oppsett, refid: 'forskrift/2024-10-04-3683' });
     expect(arna.seksjoner[0]?.merknader[0]).toEqual(['Reglane er utarbeidd på grunnlag av lokal høyringsprosess hausten 2024.']);
   });
+
+  it('gir et nummer som går igjen i kilden, en bokstav i adressen (to punkt 5 hos Fyllingsdalen)', () => {
+    const oppsett = { id: 'x', kilde: 'lovdata-lokale', kapitler: null, refid: 'forskrift/2025-07-01-1409', gyldighet: { niva: 'skole' as const, fylke: '46', skoler: [] }, hentet: '2026-10-05' };
+    const d = lesLovdataside(side('lf-fyllingsdalen'), oppsett);
+    const p = d.seksjoner.flatMap((s) => s.paragrafer);
+    expect(new Set(p.map((x) => x.nr)).size).toBe(p.length);
+    expect(p.filter((x) => x.visNr === '5.').map((x) => x.nr)).toEqual(['5', '5b']);
+  });
 });
 
 const vestland = { gjelderFor: 'Vestland', malform: 'nn' as const };

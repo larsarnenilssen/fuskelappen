@@ -195,6 +195,7 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
     // Teksten i det ytterste kapitlet, før kapitlene inni, står som innledning når det har kapitler inni. Har
     // forskriften verken kapitler eller paragrafer, blir hele teksten én paragraf.
     const innledning = alle.length > 1 ? alle.filter((s) => s.seksjoner.length > 0).flatMap((s) => s.merknader) : [];
+    const brukt = new Set<string>();
     seksjoner = [
       {
         id: 'dokument',
@@ -207,8 +208,13 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
           .filter((s) => s.seksjoner.length === 0 && s.merknader.length > 0)
           .map((s, i) => {
             const m = /^(\d+)\.?\s*(.*)$/.exec(s.overskrift);
-            const nr = s.nr ?? m?.[1] ?? String(i + 1);
-            return { nr, visNr: `${nr}.`, tittel: m ? (m[2] ?? '') : s.overskrift, ledd: s.merknader.map((t) => ({ tekst: t })), endringer: [], fotnoter: [] };
+            const kilde = s.nr ?? m?.[1] ?? String(i + 1);
+            // Har kilden samme nummer to ganger (05.10.2026: to punkt 5 i tilleggsreglane for Fyllingsdalen), får
+            // det neste en bokstav i adressen («5b»). Nummeret vises som i kilden.
+            let nr = kilde;
+            for (let n = 1; brukt.has(nr); n++) nr = `${kilde}${String.fromCharCode(97 + n)}`;
+            brukt.add(nr);
+            return { nr, visNr: `${kilde}.`, tittel: m ? (m[2] ?? '') : s.overskrift, ledd: s.merknader.map((t) => ({ tekst: t })), endringer: [], fotnoter: [] };
           }),
       },
     ];
