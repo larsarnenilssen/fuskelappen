@@ -1,0 +1,126 @@
+# Begreper om forvaltning og saksbehandling: statsforvalteren, tilsyn, begrunnelse, veiledningsplikt, delegering og
+# hjemmel. Bygger på opplæringslova, opplæringsforskrifta, forvaltningsloven, offentleglova, arkivlova og Udirs sider.
+# Egne ord. Alle er ukontrollerte (kontrollert: null) til eier har sett på dem.
+- id: statsforvalteren
+  type: begrep
+  tittel: { nb: Statsforvalteren, nn: Statsforvaltaren }
+  lenkeord: { nb: ["statsforvalter"], nn: ["statsforvaltar"] }
+  tekst:
+    nb: >-
+      Statsforvalteren har flere roller etter opplæringslova. [Opplæringslova § 29-1](#/lov/opplaeringslova/29-1) sier at departementet er klageinstans for enkeltvedtak etter loven, og Udir skriver at klagen sendes til statsforvalteren, som er klageinstans. For klage på standpunktkarakter i fag står det direkte i [opplæringsforskrifta § 10-4](#/lov/opplaeringsforskrifta/10-4). Vedtak om hvilket utdanningsprogram, programområde og skole en søker tas inn på, og vedtak som ikke gjelder opplæring eller skyss, klages likevel til et organ i fylkeskommunen etter [forvaltningsloven § 28](#/lov/forvaltningsloven/28). Statsforvalteren behandler også skolemiljøsaker som eleven eller foreldrene melder etter å ha tatt saken opp med rektor ([§ 12-6](#/lov/opplaeringslova/12-6)), fører statlig tilsyn med fylkeskommunen ([§ 29-2](#/lov/opplaeringslova/29-2)), og er klageinstans når fylkeskommunen avslår et krav om innsyn ([offentleglova § 32](#/lov/offentleglova/32)).
+    nn: >-
+      Statsforvaltaren har fleire roller etter opplæringslova. [Opplæringslova § 29-1](#/lov/opplaeringslova/29-1) seier at departementet er klageinstans for enkeltvedtak etter lova, og Udir skriv at klaga blir send til statsforvaltaren, som er klageinstans. For klage på standpunktkarakter i fag står det direkte i [opplæringsforskrifta § 10-4](#/lov/opplaeringsforskrifta/10-4). Vedtak om kva utdanningsprogram, programområde og skole ein søkjar blir teken inn på, og vedtak som ikkje gjeld opplæring eller skyss, blir likevel klaga til eit organ i fylkeskommunen etter [forvaltningsloven § 28](#/lov/forvaltningsloven/28). Statsforvaltaren behandlar også skulemiljøsaker som eleven eller foreldra melder etter å ha teke saka opp med rektor ([§ 12-6](#/lov/opplaeringslova/12-6)), fører statleg tilsyn med fylkeskommunen ([§ 29-2](#/lov/opplaeringslova/29-2)), og er klageinstans når fylkeskommunen avslår eit krav om innsyn ([offentleglova § 32](#/lov/offentleglova/32)).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 29-1 Klageinstans for enkeltvedtak", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "7.9 Klage på vedtaket", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#klage-vedtaket" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-4 Klage på fastsetjing av standpunktkarakter i fag", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-4" }
+    - { id: opplaeringslova, punkt: "§ 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker", url: "https://lovdata.no/lov/2023-06-09-30/§12-6" }
+    - { id: opplaeringslova, punkt: "§ 29-2 Statleg tilsyn", url: "https://lovdata.no/lov/2023-06-09-30/§29-2" }
+    - { id: offentleglova, punkt: "§ 32 Klage (første ledd)", url: "https://lovdata.no/lov/2006-05-19-16/§32" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Opplæringslova § 29-1 sier at departementet er klageinstans, mens Udir skriver at statsforvalteren er klageinstans og viser til § 29-1. Er det greit å gjengi det slik, uten å forklare at myndigheten er delegert fra departementet?"
+    - "Er det riktig og dekkende at klager på inntak til utdanningsprogram, programområde og skole går til et organ i fylkeskommunen (§ 29-1 andre ledd og forvaltningsloven § 28), og ikke til statsforvalteren?"
+    - "Bør begrepet si hva statsforvalteren er (statens regionale organ, og at ett embete kan dekke flere fylker), selv om det ikke står i kildene som er brukt?"
+  stikkord: [statsforvalter, statsforvaltaren, fylkesmannen, klageinstans, klage, tilsyn, skolemiljø, innsyn]
+  relatert: [tilsyn, klage, enkeltvedtak, aktivitetsplikt]
+
+- id: tilsyn
+  type: begrep
+  tittel: { nb: Tilsyn, nn: Tilsyn }
+  lenkeord: { nb: ["statlig tilsyn"], nn: ["statleg tilsyn"] }
+  tekst:
+    nb: >-
+      Tilsyn betyr at en statlig myndighet kontrollerer at fylkeskommunen oppfyller pliktene sine. Statsforvalteren kan føre tilsyn med mange av pliktene i opplæringslova og forskriftene som er gitt med hjemmel i dem, blant annet om tilpasset opplæring og individuell tilrettelegging, skolemiljø, bortvisning og kompetansekrav, og med plikten til internkontroll etter kommuneloven § 25-1. Reglene om tilsyn i kommuneloven kapittel 30 gjelder. Se [opplæringslova § 29-2](#/lov/opplaeringslova/29-2). Tilsynet retter seg mot fylkeskommunen, som har ansvaret for at pliktene loven legger på skolen og de ansatte, blir oppfylt ([§ 28-2](#/lov/opplaeringslova/28-2)). Nasjonalarkivet fører tilsyn med at fylkeskommunen følger reglene om arkiv i arkivlova ([arkivlova § 21](#/lov/arkivlova/21)).
+    nn: >-
+      Tilsyn tyder at ei statleg styresmakt kontrollerer at fylkeskommunen oppfyller pliktene sine. Statsforvaltaren kan føre tilsyn med mange av pliktene i opplæringslova og forskriftene som er gitt med heimel i dei, mellom anna om tilpassa opplæring og individuell tilrettelegging, skulemiljø, bortvising og kompetansekrav, og med plikta til internkontroll etter kommuneloven § 25-1. Reglane om tilsyn i kommuneloven kapittel 30 gjeld. Sjå [opplæringslova § 29-2](#/lov/opplaeringslova/29-2). Tilsynet rettar seg mot fylkeskommunen, som har ansvaret for at pliktene lova legg på skulen og dei tilsette, blir oppfylte ([§ 28-2](#/lov/opplaeringslova/28-2)). Nasjonalarkivet fører tilsyn med at fylkeskommunen følgjer reglane om arkiv i arkivlova ([arkivlova § 21](#/lov/arkivlova/21)).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 29-2 Statleg tilsyn", url: "https://lovdata.no/lov/2023-06-09-30/§29-2" }
+    - { id: opplaeringslova, punkt: "§ 28-2 Fylkeskommunen sitt juridiske og økonomiske ansvar (første ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§28-2" }
+    - { id: arkivlova, punkt: "§ 21 Tilsyn", url: "https://lovdata.no/lov/2025-06-20-96/§21" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "§ 29-2 lister opp paragrafene og kapitlene statsforvalteren kan føre tilsyn med. Er eksemplene (tilpasset opplæring og individuell tilrettelegging, skolemiljø, bortvisning og kompetansekrav) godt valgt for videregående?"
+    - "Begrepet lenkes bare fra «statlig tilsyn» i andre tekster, fordi «tilsyn» også brukes om tilsyn med elever (f.eks. reisefølge og tilsyn ved skyss). Er det et godt valg?"
+    - "Arkivlova § 21 sier at Nasjonalarkivet fører tilsyn med §§ 5–15 og med kommuneloven § 25-1. Er «reglene om arkiv i arkivlova» en dekkende forenkling?"
+  stikkord: [tilsyn, statlig tilsyn, statleg tilsyn, statsforvalteren, Nasjonalarkivet, internkontroll, kommuneloven]
+  relatert: [statsforvalteren, lov, forskrift]
+
+- id: begrunnelse
+  type: begrep
+  tittel: { nb: Begrunnelse, nn: Grunngiving }
+  lenkeord: { nb: [], nn: [] }
+  tekst:
+    nb: >-
+      Et enkeltvedtak skal begrunnes, og begrunnelsen skal gis samtidig med vedtaket ([forvaltningsloven § 24](#/lov/forvaltningsloven/24)). Begrunnelsen skal vise til reglene vedtaket bygger på, og gjengi innholdet i dem når det trengs for å forstå vedtaket. Den skal også nevne de faktiske forholdene vedtaket bygger på, og bør nevne hovedhensynene som var avgjørende når det er brukt skjønn ([§ 25](#/lov/forvaltningsloven/25)). Utenom klagesaker kan begrunnelsen vente når en søknad innvilges og det ikke er grunn til å tro at noen part blir misfornøyd, men parten kan da kreve begrunnelse innen klagefristen. For karakterer har opplæringsforskrifta egne regler: eleven kan kreve skriftlig begrunnelse for standpunktkarakteren innen klagefristen, mens karakteren på skriftlig eksamen ikke begrunnes ([§ 10-3](#/lov/opplaeringsforskrifta/10-3)).
+    nn: >-
+      Eit enkeltvedtak skal grunngivast, og grunngivinga skal givast samtidig med vedtaket ([forvaltningsloven § 24](#/lov/forvaltningsloven/24)). Grunngivinga skal vise til reglane vedtaket byggjer på, og gjengi innhaldet i dei når det trengst for å forstå vedtaket. Ho skal også nemne dei faktiske forholda vedtaket byggjer på, og bør nemne hovudomsyna som var avgjerande når det er brukt skjønn ([§ 25](#/lov/forvaltningsloven/25)). Utanom klagesaker kan grunngivinga vente når ein søknad blir innvilga og det ikkje er grunn til å tru at nokon part blir misnøgd, men parten kan då krevje grunngiving innan klagefristen. For karakterar har opplæringsforskrifta eigne reglar: eleven kan krevje skriftleg grunngiving for standpunktkarakteren innan klagefristen, medan karakteren på skriftleg eksamen ikkje blir grunngitt ([§ 10-3](#/lov/opplaeringsforskrifta/10-3)).
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 24 Når enkeltvedtak skal grunngis", url: "https://lovdata.no/lov/1967-02-10/§24" }
+    - { id: forvaltningsloven, punkt: "§ 25 Begrunnelsens innhold", url: "https://lovdata.no/lov/1967-02-10/§25" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-3 Rett til grunngiving for karakteren", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «Utenom klagesaker kan begrunnelsen vente når en søknad innvilges …» en riktig og forståelig forenkling av forvaltningsloven § 24 andre ledd, som også gjelder fordeling av fordeler mellom flere parter?"
+    - "Begrepet lenkes ikke automatisk fra «begrunnelse» i andre tekster, fordi ordet der oftest gjelder begrunnelse for karakter etter opplæringsforskrifta § 10-3. Er det et godt valg?"
+  stikkord: [begrunnelse, grunngiving, grunngjeving, grunngi, enkeltvedtak, forvaltningsloven, begrunnelse for karakter]
+  relatert: [enkeltvedtak, klage, hjemmel, veiledningsplikt]
+
+- id: veiledningsplikt
+  type: begrep
+  tittel: { nb: Veiledningsplikt, nn: Rettleiingsplikt }
+  tekst:
+    nb: >-
+      Forvaltningsorganer har en alminnelig veiledningsplikt innenfor sitt saksområde, slik at parter og andre kan ivareta interessene sine best mulig. I en sak med private parter skal organet av eget tiltak vurdere om parten trenger veiledning, og ved behov veilede om lover, forskrifter og vanlig praksis på området, og om saksbehandlingen, særlig partens rettigheter og plikter. Også den som spør om sine rettigheter og plikter i et konkret forhold, skal få veiledning, selv om det ikke er noen sak. Kommer en henvendelse til feil sted, skal den som mottar den, om mulig vise til rett organ, og gi beskjed om feil eller mangler som bør rettes. Omfanget tilpasses organets kapasitet. Se [forvaltningsloven § 11](#/lov/forvaltningsloven/11).
+    nn: >-
+      Forvaltningsorgan har ei alminneleg rettleiingsplikt innanfor saksområdet sitt, slik at partar og andre kan ta vare på interessene sine best mogleg. I ei sak med private partar skal organet av eige tiltak vurdere om parten treng rettleiing, og ved behov rettleie om lover, forskrifter og vanleg praksis på området, og om saksbehandlinga, særleg rettane og pliktene til parten. Også den som spør om rettane og pliktene sine i eit konkret forhold, skal få rettleiing, sjølv om det ikkje er noka sak. Kjem ein førespurnad til feil stad, skal den som tek imot han, om mogleg vise til rett organ, og gi beskjed om feil eller manglar som bør rettast. Omfanget blir tilpassa kapasiteten til organet. Sjå [forvaltningsloven § 11](#/lov/forvaltningsloven/11).
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 11 Veiledningsplikt", url: "https://lovdata.no/lov/1967-02-10/§11" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Teksten sier «forvaltningsorganer» og ikke «skolen». Bør det stå at veiledningsplikten også gjelder for skolen som en del av fylkeskommunen, for eksempel når en elev spør hvordan man klager?"
+    - "Er «Omfanget tilpasses organets kapasitet» en dekkende gjengivelse av § 11 første ledd siste punktum, eller kan den misforstås som at plikten er svak?"
+  stikkord: [veiledningsplikt, veiledning, rettleiingsplikt, rettleiing, forvaltningsloven, partsrettigheter]
+  relatert: [enkeltvedtak, begrunnelse, forhandsvarsel]
+
+- id: delegering
+  type: begrep
+  tittel: { nb: Delegering, nn: Delegering }
+  tekst:
+    nb: >-
+      Delegering betyr at den som har myndighet til å treffe et vedtak, overlater oppgaven til andre. Fylkeskommunen har ansvaret for at reglene i opplæringslova blir oppfylt ([§ 28-2](#/lov/opplaeringslova/28-2)). Udir skriver at fylkeskommunen kan treffe vedtak om individuell tilrettelegging selv eller delegere oppgaven til rektor eller andre ved skolen, men at ansvaret for å oppfylle elevenes rettigheter ikke kan delegeres. En skole kan også få delegert myndighet til å gi forskrift om skoleregler. Noen vedtak kan ikke delegeres til skolen: bortvisning av en elev i videregående for resten av skoleåret ([§ 13-1](#/lov/opplaeringslova/13-1)) og pålagt skolebytte ([§ 13-2](#/lov/opplaeringslova/13-2)). Annen bortvisning vedtar rektor selv, men rektor kan la lærere vise bort elever fra en økt de selv har ansvaret for, i høyst to klokketimer, hvis fylkeskommunen ikke har bestemt noe annet.
+    nn: >-
+      Delegering tyder at den som har mynde til å gjere eit vedtak, overlèt oppgåva til andre. Fylkeskommunen har ansvaret for at reglane i opplæringslova blir oppfylte ([§ 28-2](#/lov/opplaeringslova/28-2)). Udir skriv at fylkeskommunen kan gjere vedtak om individuell tilrettelegging sjølv eller delegere oppgåva til rektor eller andre ved skulen, men at ansvaret for å oppfylle rettane til elevane ikkje kan delegerast. Ein skule kan også få delegert mynde til å gi forskrift om skulereglar. Nokre vedtak kan ikkje delegerast til skulen: bortvising av ein elev i vidaregåande for resten av skuleåret ([§ 13-1](#/lov/opplaeringslova/13-1)) og pålagt skulebyte ([§ 13-2](#/lov/opplaeringslova/13-2)). Anna bortvising vedtek rektor sjølv, men rektor kan la lærarar vise bort elevar frå ei økt dei sjølve har ansvaret for, i høgst to klokketimar, dersom fylkeskommunen ikkje har bestemt noko anna.
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "7.2 Delegere oppgaven med å fatte vedtak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak" }
+    - { id: udir-lokale-forskrifter, punkt: "Nytt kunngjøringskrav (skoler med delegert myndighet til å fastsette skoleregler)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+    - { id: opplaeringslova, punkt: "§ 28-2 Fylkeskommunen sitt juridiske og økonomiske ansvar (første ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§28-2" }
+    - { id: opplaeringslova, punkt: "§ 13-1 Bortvising (fjerde ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§13-1" }
+    - { id: opplaeringslova, punkt: "§ 13-2 Pålagt skolebyte (tredje ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§13-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Den generelle regelen om delegering i fylkeskommunen står i kommuneloven, som ikke er blant kildene. Bør begrepet nevne kommuneloven, og i så fall hvilken paragraf?"
+    - "Er det riktig å omtale det som delegering når rektor gir lærere «høve» til å vise bort elever fra en økt (§ 13-1 fjerde ledd)?"
+    - "Er individuell tilrettelegging et godt eksempel på vedtak som ofte delegeres til rektor i videregående, eller finnes det bedre eksempler (f.eks. fritak, særskilt tilrettelegging av eksamen)?"
+  stikkord: [delegering, delegere, delegert, delegasjon, myndighet, mynde, rektor, fylkeskommunen]
+  relatert: [enkeltvedtak, bortvising, skoleregler, individuell-tilrettelegging]
+
+- id: hjemmel
+  type: begrep
+  tittel: { nb: Hjemmel, nn: Heimel }
+  tekst:
+    nb: >-
+      Hjemmel er grunnlaget i en lov for en forskrift eller et vedtak. En forskrift gis med hjemmel i en lov, og det er lovhjemmelen som avgjør hva forskriften kan handle om, og hvem som har myndighet til å gi den. Når en lov sier at departementet «kan gi forskrift» om noe, er det en hjemmel. For eksempel gir [opplæringslova § 14-1](#/lov/opplaeringslova/14-1) kommunen og fylkeskommunen hjemmel til å gi forskrift om skolerute, og [§ 9-1](#/lov/opplaeringslova/9-1) femte ledd gir departementet hjemmel til å gi forskrift om rabattordninger for skyss. Et enkeltvedtak skal begrunnes med en henvisning til reglene vedtaket bygger på ([forvaltningsloven § 25](#/lov/forvaltningsloven/25)).
+    nn: >-
+      Heimel er grunnlaget i ei lov for ei forskrift eller eit vedtak. Ei forskrift blir gitt med heimel i ei lov, og det er lovheimelen som avgjer kva forskrifta kan handle om, og kven som har mynde til å gi henne. Når ei lov seier at departementet «kan gi forskrift» om noko, er det ein heimel. Til dømes gir [opplæringslova § 14-1](#/lov/opplaeringslova/14-1) kommunen og fylkeskommunen heimel til å gi forskrift om skulerute, og [§ 9-1](#/lov/opplaeringslova/9-1) femte ledd gir departementet heimel til å gi forskrift om rabattordningar for skyss. Eit enkeltvedtak skal grunngivast med ei tilvising til reglane vedtaket byggjer på ([forvaltningsloven § 25](#/lov/forvaltningsloven/25)).
+  kilder:
+    - { id: udir-lokale-forskrifter, punkt: "Hva er en lokal forskrift? («Det er lovhjemmelen for forskriften som avgjør …»)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+    - { id: opplaeringslova, punkt: "§ 14-1 Skolerute og lengda på skoleåret (andre ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§14-1" }
+    - { id: opplaeringslova, punkt: "§ 9-1 Rett til skyss til og frå skolen for elevar i den vidaregåande opplæringa (femte ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§9-1" }
+    - { id: forvaltningsloven, punkt: "§ 25 Begrunnelsens innhold (første ledd)", url: "https://lovdata.no/lov/1967-02-10/§25" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet nevne legalitetsprinsippet (at inngrep overfor enkeltpersoner må ha hjemmel i lov, Grunnloven § 113), selv om Grunnloven ikke er blant kildene?"
+    - "Er det riktig å si at hjemmel er grunnlaget for «et vedtak», når forvaltningsloven § 25 bare sier at begrunnelsen skal vise til reglene vedtaket bygger på?"
+  stikkord: [hjemmel, heimel, lovhjemmel, forskriftshjemmel, kan gi forskrift, legalitetsprinsippet]
+  relatert: [lov, forskrift, lokal-forskrift, begrunnelse]

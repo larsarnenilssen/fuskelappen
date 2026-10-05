@@ -1,0 +1,159 @@
+# Begreper om innsyn, taushetsplikt og arkiv: innsyn, partsinnsyn, taushetsplikt, organinternt dokument,
+# journalføring, arkivplikt og bevaring og kassasjon. Bygger på offentleglova, forvaltningsloven, den nye arkivlova
+# og arkivforskrifta (i kraft 1.1.2026). Egne ord. Alle er ukontrollerte (kontrollert: null) til eier har sett på dem.
+- id: innsyn
+  type: begrep
+  tittel: { nb: Innsyn, nn: Innsyn }
+  lenkeord: { nb: ["innsyn", "innsynsrett", "innsynskrav"], nn: ["innsyn", "innsynsrett", "innsynskrav"] }
+  tekst:
+    nb: >-
+      Etter offentleglova kan alle kreve innsyn i saksdokumenter, journaler og lignende registre hos fylkeskommunen og skolen. Hovedregelen er at dokumentene er åpne, med mindre lov eller forskrift sier noe annet. Kravet kan være skriftlig eller muntlig og må gjelde en bestemt sak. Organet skal vurdere kravet konkret og avgjøre det uten ugrunnet opphold. Opplysninger med taushetsplikt er unntatt, og organet kan blant annet unnta organinterne dokumenter, eksamensbesvarelser, karakterer og vitnemål. Selv om noe kan unntas, skal organet vurdere å gi innsyn likevel (merinnsyn). Avslag kan påklages til statsforvalteren, og et krav som ikke er besvart innen fem arbeidsdager, regnes som avslag. Se [offentleglova § 3](#/lov/offentleglova/3) og [§ 26](#/lov/offentleglova/26).
+    nn: >-
+      Etter offentleglova kan alle krevje innsyn i saksdokument, journalar og liknande register hos fylkeskommunen og skulen. Hovudregelen er at dokumenta er opne, med mindre lov eller forskrift seier noko anna. Kravet kan vere skriftleg eller munnleg og må gjelde ei bestemt sak. Organet skal vurdere kravet konkret og avgjere det utan ugrunna opphald. Opplysningar med teieplikt er unnatekne, og organet kan mellom anna unnta organinterne dokument, eksamenssvar, karakterar og vitnemål. Sjølv om noko kan unntakast, skal organet vurdere å gi innsyn likevel (meirinnsyn). Avslag kan klagast på til statsforvaltaren, og eit krav som ikkje er svara på innan fem arbeidsdagar, blir rekna som avslag. Sjå [offentleglova § 3](#/lov/offentleglova/3) og [§ 26](#/lov/offentleglova/26).
+  kilder:
+    - { id: offentleglova, punkt: "§ 3 Hovudregel", url: "https://lovdata.no/lov/2006-05-19-16/§3" }
+    - { id: offentleglova, punkt: "§ 11 Meirinnsyn", url: "https://lovdata.no/lov/2006-05-19-16/§11" }
+    - { id: offentleglova, punkt: "§ 26 første ledd (eksamenssvar, karakterar og vitnemål)", url: "https://lovdata.no/lov/2006-05-19-16/§26" }
+    - { id: offentleglova, punkt: "§ 28 Innsynskravet og § 29 (konkret vurdering, utan ugrunna opphald)", url: "https://lovdata.no/lov/2006-05-19-16/§29" }
+    - { id: offentleglova, punkt: "§ 32 Klage (statsforvaltaren, fem arbeidsdagar)", url: "https://lovdata.no/lov/2006-05-19-16/§32" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig og nyttig å skrive «hos fylkeskommunen og skolen», eller er det fylkeskommunen (for eksempel postmottak eller arkiv) som i praksis avgjør innsynskrav som gjelder skolen?"
+    - "Offentleglova § 26 sier at organet «kan» unnta eksamenssvar, karakterer og vitnemål. Kan forklaringen misforstås slik at slike dokumenter alltid er unntatt?"
+    - "Det står ikke uttrykkelig i § 3 eller § 28 at den som krever innsyn, ikke trenger å begrunne kravet. Bør forklaringen likevel si det?"
+  stikkord: [innsyn, offentleglova, offentlighet, åpenhet, innsynskrav, meirinnsyn, merinnsyn, meroffentlighet, journal, statsforvalteren]
+  relatert: [partsinnsyn, taushetsplikt, organinternt-dokument, journalforing, klage]
+
+- id: partsinnsyn
+  type: begrep
+  tittel: { nb: Partsinnsyn, nn: Partsinnsyn }
+  tekst:
+    nb: >-
+      Partsinnsyn er retten en part har til å se dokumentene i sin egen sak etter forvaltningsloven, for eksempel eleven og foreldrene i en sak om et enkeltvedtak. Retten gjelder også etter at vedtaket er truffet, og en mindreårig part har den selv, ikke bare foreldrene. Forskjellen fra innsyn etter offentleglova er at bare parten har partsinnsyn, men parten kan få se mer: taushetsplikten er ikke til hinder for at parten får opplysningene i saken. Parten har ikke krav på å se organinterne dokumenter, men har rett til de faktiske opplysningene i dem som har betydning for avgjørelsen. Noen opplysninger kan holdes tilbake, for eksempel om en annen persons helse. En part under 15 år skal ikke få opplysninger med lovbestemt taushetsplikt, og eksamensbesvarelser kan holdes tilbake til bedømmelsen er ferdig. Avslag skal være skriftlig og kan påklages. Se [forvaltningsloven § 18](#/lov/forvaltningsloven/18) til [§ 19](#/lov/forvaltningsloven/19).
+    nn: >-
+      Partsinnsyn er retten ein part har til å sjå dokumenta i si eiga sak etter forvaltningsloven, til dømes eleven og foreldra i ei sak om eit enkeltvedtak. Retten gjeld også etter at vedtaket er gjort, og ein mindreårig part har han sjølv, ikkje berre foreldra. Skilnaden frå innsyn etter offentleglova er at berre parten har partsinnsyn, men parten kan få sjå meir: teieplikta er ikkje til hinder for at parten får opplysningane i saka. Parten har ikkje krav på å sjå organinterne dokument, men har rett til dei faktiske opplysningane i dei som har betydning for avgjerda. Nokre opplysningar kan haldast tilbake, til dømes om helsa til ein annan person. Ein part under 15 år skal ikkje få opplysningar med lovfesta teieplikt, og eksamenssvar kan haldast tilbake til vurderinga er ferdig. Avslag skal vere skriftleg og kan klagast på. Sjå [forvaltningsloven § 18](#/lov/forvaltningsloven/18) til [§ 19](#/lov/forvaltningsloven/19).
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 18 Partenes adgang til å gjøre seg kjent med sakens dokumenter", url: "https://lovdata.no/lov/1967-02-10/§18" }
+    - { id: forvaltningsloven, punkt: "§ 18 a og § 18 c (organinterne dokumenter og faktiske opplysninger)", url: "https://lovdata.no/lov/1967-02-10/§18c" }
+    - { id: forvaltningsloven, punkt: "§ 19 Innskrenket adgang til visse slags opplysninger", url: "https://lovdata.no/lov/1967-02-10/§19" }
+    - { id: forvaltningsloven, punkt: "§ 13 b første ledd nr. 1 (opplysninger til sakens parter)", url: "https://lovdata.no/lov/1967-02-10/§13b" }
+    - { id: forvaltningsloven, punkt: "§ 20 første ledd og § 21 (eksamensbesvarelser, avslag og klage)", url: "https://lovdata.no/lov/1967-02-10/§21" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Oppdraget antydet at parten kan få se organinterne dokumenter. Etter forvaltningsloven § 18 a har parten ikke krav på dem, bare på faktiske opplysninger i dem (§ 18 c). Er dette riktig forstått, og bør unntakene i § 18 d (for eksempel dokumenter mellom fylkeskommunale enheter med selvstendig avgjørelsesmyndighet) nevnes for skolen?"
+    - "Er «taushetsplikten er ikke til hinder for at parten får opplysningene i saken» en riktig forenkling av § 13 b nr. 1, når § 19 likevel begrenser innsyn i for eksempel andres helseforhold?"
+    - "Er eksemplet «eleven og foreldrene» riktig for elever over 18 år, der foreldrene ikke er part?"
+    - "Loven sier «sakens dokumenter» og står i kapittelet om saksforberedelse ved enkeltvedtak. Er det riktig å knytte partsinnsyn til saker om enkeltvedtak, eller gjelder det videre for skolen?"
+  stikkord: [partsinnsyn, part, partsrettigheter, sakens dokumenter, forvaltningsloven, innsyn i egen sak]
+  relatert: [innsyn, taushetsplikt, organinternt-dokument, enkeltvedtak, forhandsvarsel, klage]
+
+- id: taushetsplikt
+  type: begrep
+  tittel: { nb: Taushetsplikt, nn: Teieplikt }
+  tekst:
+    nb: >-
+      Alle som arbeider for fylkeskommunen og skolen, har taushetsplikt om det de får vite om noens personlige forhold i arbeidet, for eksempel om helse eller forhold i familien. De skal hindre at andre får tilgang til eller kjennskap til opplysningene, og plikten gjelder også etter at arbeidsforholdet er slutt. Fødselsdato, adresse, yrke og lignende er som hovedregel ikke personlige forhold, med mindre de røper noe mer. Taushetsplikten hindrer ikke at opplysningene gis til den de gjelder, eller til andre med samtykke, at de brukes i saken de er innhentet for, eller at kolleger får dem så langt det trengs i arbeidet. Opplysninger med taushetsplikt er unntatt fra innsyn etter offentleglova. Opplæringslova har egne regler i tillegg, blant annet om plikten til å melde fra til barnevernet uten hinder av taushetsplikten. Se [forvaltningsloven § 13](#/lov/forvaltningsloven/13) til [§ 13 b](#/lov/forvaltningsloven/13b) og [opplæringslova § 24-3](#/lov/opplaeringslova/24-3).
+    nn: >-
+      Alle som arbeider for fylkeskommunen og skulen, har teieplikt om det dei får vite om personlege forhold til nokon i arbeidet, til dømes om helse eller forhold i familien. Dei skal hindre at andre får tilgang til eller kjennskap til opplysningane, og plikta gjeld også etter at arbeidsforholdet er slutt. Fødselsdato, adresse, yrke og liknande er som hovudregel ikkje personlege forhold, med mindre dei røper noko meir. Teieplikta hindrar ikkje at opplysningane blir gitt til den dei gjeld, eller til andre med samtykke, at dei blir brukte i saka dei er henta inn for, eller at kollegaer får dei så langt det trengst i arbeidet. Opplysningar med teieplikt er unnatekne frå innsyn etter offentleglova. Opplæringslova har eigne reglar i tillegg, mellom anna om plikta til å melde frå til barnevernet utan hinder av teieplikta. Sjå [forvaltningsloven § 13](#/lov/forvaltningsloven/13) til [§ 13 b](#/lov/forvaltningsloven/13b) og [opplæringslova § 24-3](#/lov/opplaeringslova/24-3).
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 13 Taushetsplikt", url: "https://lovdata.no/lov/1967-02-10/§13" }
+    - { id: forvaltningsloven, punkt: "§ 13 a Begrensninger i taushetsplikten når det ikke er behov for beskyttelse", url: "https://lovdata.no/lov/1967-02-10/§13a" }
+    - { id: forvaltningsloven, punkt: "§ 13 b Begrensninger av taushetsplikten ut fra private eller offentlige interesser", url: "https://lovdata.no/lov/1967-02-10/§13b" }
+    - { id: offentleglova, punkt: "§ 13 Opplysningar som er underlagde teieplikt", url: "https://lovdata.no/lov/2006-05-19-16/§13" }
+    - { id: opplaeringslova, punkt: "§ 24-3 Plikt til å melde frå til barnevernet", url: "https://lovdata.no/lov/2023-06-09-30/§24-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «helse eller forhold i familien» gode og riktige eksempler på personlige forhold i skolen? Bør det også stå at for eksempel opplysninger om tilrettelegging eller vedtak om en elev kan være taushetsbelagt?"
+    - "Loven nevner «bopel», ikke adresse. Er «fødselsdato, adresse, yrke og lignende» en riktig forenkling av § 13 andre ledd?"
+    - "Er «at kolleger får dem så langt det trengs i arbeidet» en riktig og ikke for vid gjengivelse av § 13 b nr. 3 («hensiktsmessig arbeids- og arkivordning»)?"
+    - "Bør begrepet nevne flere særregler i opplæringslova, for eksempel § 10-4 (elever deltar ikke i saker med lovfestet taushetsplikt) og § 25-1 (deling av opplysninger ved skolebytte)?"
+  stikkord: [taushetsplikt, teieplikt, personlige forhold, samtykke, barnevernet, meldeplikt, forvaltningsloven]
+  relatert: [innsyn, partsinnsyn, enkeltvedtak]
+
+- id: organinternt-dokument
+  type: begrep
+  tittel: { nb: Organinternt dokument, nn: Organinternt dokument }
+  lenkeord: { nb: ["organinternt dokument", "organinterne dokument"], nn: ["organinternt dokument", "organinterne dokument"] }
+  tekst:
+    nb: >-
+      Et organinternt dokument er et dokument som organet har laget for sin egen interne saksforberedelse, for eksempel et utkast, et internt notat eller en intern vurdering før saken avgjøres. Etter offentleglova kan organet unnta slike dokumenter fra innsyn, men ikke dokumenter med den endelige avgjørelsen eller generelle retningslinjer for saksbehandlingen. Organet skal likevel vurdere å gi innsyn (merinnsyn). For kommuner og fylkeskommuner gjelder egne regler, så dokumenter mellom enheter kan være åpne. En part har heller ikke krav på å se organinterne dokumenter, men har rett til faktiske opplysninger i dem. Organinterne dokumenter journalføres så langt organet finner det tjenlig, men noen skal alltid journalføres. Se [offentleglova § 14](#/lov/offentleglova/14) og [§ 16](#/lov/offentleglova/16).
+    nn: >-
+      Eit organinternt dokument er eit dokument som organet har laga for si eiga interne saksførebuing, til dømes eit utkast, eit internt notat eller ei intern vurdering før saka blir avgjord. Etter offentleglova kan organet unnta slike dokument frå innsyn, men ikkje dokument med den endelege avgjerda eller generelle retningslinjer for saksbehandlinga. Organet skal likevel vurdere å gi innsyn (meirinnsyn). For kommunar og fylkeskommunar gjeld eigne reglar, så dokument mellom einingar kan vere opne. Ein part har heller ikkje krav på å sjå organinterne dokument, men har rett til faktiske opplysningar i dei. Organinterne dokument blir journalførte så langt organet finn det tenleg, men nokre skal alltid journalførast. Sjå [offentleglova § 14](#/lov/offentleglova/14) og [§ 16](#/lov/offentleglova/16).
+  kilder:
+    - { id: offentleglova, punkt: "§ 14 Dokument utarbeidde for eiga saksførebuing (organinterne dokument)", url: "https://lovdata.no/lov/2006-05-19-16/§14" }
+    - { id: offentleglova, punkt: "§ 16 Innsyn i interne dokument hos kommunane og fylkeskommunane", url: "https://lovdata.no/lov/2006-05-19-16/§16" }
+    - { id: forvaltningsloven, punkt: "§ 18 a og § 18 c (partsinnsyn i organinterne dokumenter)", url: "https://lovdata.no/lov/1967-02-10/§18a" }
+    - { id: arkivforskrifta, punkt: "§ 14 andre ledd (journalføring av organinterne dokument)", url: "https://lovdata.no/forskrift/2025-12-17-2647/§14" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er en skole en fylkeskommunal enhet med «sjølvstendig avgjerdsrett» etter offentleglova § 16 tredje ledd, slik at dokumenter mellom skolen og fylkeskommunens administrasjon ikke kan unntas som organinterne? Hvordan bør det i så fall forklares?"
+    - "Er eksemplene (utkast, internt notat, intern vurdering før saken avgjøres) riktige og nyttige for skolen, eller kan de misforstås, for eksempel når et notat sendes ut av skolen?"
+    - "Er «faktiske opplysninger i dem» en dekkende forenkling av forvaltningsloven § 18 c, som bare gjelder opplysninger av betydning for avgjørelsen og ikke når de finnes i et annet dokument parten har tilgang til?"
+  stikkord: [organinternt dokument, organinterne dokumenter, intern saksforberedelse, internt notat, utkast, unntak fra innsyn, merinnsyn, meirinnsyn]
+  relatert: [innsyn, partsinnsyn, journalforing]
+
+- id: journalforing
+  type: begrep
+  tittel: { nb: Journalføring, nn: Journalføring }
+  lenkeord:
+    nb: ["journalføring", "journalføre", "journalført", "journalføringsplikt"]
+    nn: ["journalføring", "journalføre", "journalført", "journalførast", "journalføringsplikt"]
+  tekst:
+    nb: >-
+      Journalføring betyr å registrere dokumenter i en journal, en løpende oversikt over saksdokumentene. Offentleglova sier at organet skal føre journal etter arkivlova med forskrifter, og journalen skal legge til rette for offentlig innsyn. Alle inngående og utgående saksdokumenter skal journalføres hvis de blir saksbehandlet og har verdi som dokumentasjon av det de gjelder. Organinterne dokumenter journalføres så langt organet finner det tjenlig, men noen skal alltid journalføres. For hvert dokument registreres blant annet en identifikator, hvilken sak det hører til, hva det gjelder, avsender eller mottaker, datoen og når det ble registrert. Journalen er åpen for innsyn, men opplysninger med taushetsplikt kan holdes utenfor. Se [offentleglova § 10](#/lov/offentleglova/10) og [arkivforskrifta § 14](#/lov/arkivforskrifta/14) og [§ 15](#/lov/arkivforskrifta/15).
+    nn: >-
+      Journalføring tyder å registrere dokument i ein journal, ei løpande oversikt over saksdokumenta. Offentleglova seier at organet skal føre journal etter arkivlova med forskrifter, og journalen skal leggje til rette for offentleg innsyn. Alle inngåande og utgåande saksdokument skal journalførast dersom dei blir sakshandsama og har verdi som dokumentasjon av det dei gjeld. Organinterne dokument blir journalførte så langt organet finn det tenleg, men nokre skal alltid journalførast. For kvart dokument blir mellom anna ein identifikator registrert, kva sak det høyrer til, kva det gjeld, avsendar eller mottakar, datoen og når det blei registrert. Journalen er open for innsyn, men opplysningar med teieplikt kan haldast utanfor. Sjå [offentleglova § 10](#/lov/offentleglova/10) og [arkivforskrifta § 14](#/lov/arkivforskrifta/14) og [§ 15](#/lov/arkivforskrifta/15).
+  kilder:
+    - { id: offentleglova, punkt: "§ 10 Plikt til å føre journal", url: "https://lovdata.no/lov/2006-05-19-16/§10" }
+    - { id: arkivforskrifta, punkt: "§ 14 Kva dokument som skal registrerast i journal", url: "https://lovdata.no/forskrift/2025-12-17-2647/§14" }
+    - { id: arkivforskrifta, punkt: "§ 15 Kva metadata som skal registrerast om eit saksdokument i ein journal", url: "https://lovdata.no/forskrift/2025-12-17-2647/§15" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Saksdokument er definert i offentleglova § 4, og et dokument kan være lagret på ethvert medium. Bør forklaringen si at også e-post og meldinger til og fra skolen kan være journalføringspliktige?"
+    - "Er «har verdi som dokumentasjon av det de gjelder» en riktig omskriving av «har verdi som stadfesting av dei tilhøva dei gjeld» i arkivforskrifta § 14?"
+    - "Er det i praksis skolen selv eller fylkeskommunens arkivtjeneste som journalfører dokumentene i saker på skolen?"
+  stikkord: [journalføring, journal, offentlig journal, postjournal, saksdokument, arkivforskrifta, metadata, registrering]
+  relatert: [innsyn, arkivplikt, organinternt-dokument, taushetsplikt]
+
+- id: arkivplikt
+  type: begrep
+  tittel: { nb: Arkivplikt, nn: Arkivplikt }
+  tekst:
+    nb: >-
+      Arkivplikten etter den nye arkivlova (i kraft 1.1.2026) betyr at fylkeskommunen skal forvalte dokumentasjon som blir til i virksomheten, som arkiv. Dokumentasjonen skal sikres så den ikke går tapt, og forvaltes slik at det alltid er kjent hvor den kommer fra og hvilken sammenheng den hører til, at den ikke blir endret, og at den er tilgjengelig. Når organet avgjør hva som skal forvaltes som arkiv, skal det særlig vurdere om dokumentasjonen viser hvordan saker er behandlet og oppgaver løst, og om den kan bevise noens rettigheter og plikter. Organet skal ha en dokumentasjonsplan, og fylkeskommunen skal ha internkontroll med dokumentasjonsforvaltningen. Se [arkivlova § 5](#/lov/arkivlova/5) og [arkivforskrifta § 1](#/lov/arkivforskrifta/1).
+    nn: >-
+      Arkivplikta etter den nye arkivlova (i kraft 1.1.2026) tyder at fylkeskommunen skal forvalte dokumentasjon som blir til i verksemda, som arkiv. Dokumentasjonen skal sikrast så han ikkje går tapt, og forvaltast slik at det alltid er kjent kvar han kjem frå og kva samanheng han høyrer til, at han ikkje blir endra, og at han er tilgjengeleg. Når organet avgjer kva som skal forvaltast som arkiv, skal det særleg vurdere om dokumentasjonen viser korleis saker er handsama og oppgåver løyste, og om han kan prove rettane og pliktene til nokon. Organet skal ha ein dokumentasjonsplan, og fylkeskommunen skal ha internkontroll med dokumentasjonsforvaltninga. Sjå [arkivlova § 5](#/lov/arkivlova/5) og [arkivforskrifta § 1](#/lov/arkivforskrifta/1).
+  kilder:
+    - { id: arkivlova, punkt: "§ 5 Arkivplikta", url: "https://lovdata.no/lov/2025-06-20-96/§5" }
+    - { id: arkivlova, punkt: "§ 2 bokstav e (dokumentasjon) og § 8 Dokumentasjonsplan og internkontroll", url: "https://lovdata.no/lov/2025-06-20-96/§8" }
+    - { id: arkivforskrifta, punkt: "§ 1 Kva eit organ skal ta omsyn til når det skal avgjere kva dokumentasjon det skal forvalte som arkiv", url: "https://lovdata.no/forskrift/2025-12-17-2647/§1" }
+    - { id: arkivforskrifta, punkt: "§ 13 Internkontroll med dokumentasjonsforvaltninga", url: "https://lovdata.no/forskrift/2025-12-17-2647/§13" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Arkivlova legger plikten på «organa», og fylkeskommunen er organet. Er det riktig å skrive at plikten ligger på fylkeskommunen, og bør det stå hva den betyr for skolen og den enkelte lærer, for eksempel at saksdokumenter ikke bare skal ligge i egen e-post?"
+    - "Er «kan bevise noens rettigheter og plikter» en forståelig og riktig omskriving av «kan tene som prov på privatpersonar eller andre private rettssubjekt sine rettar og plikter»?"
+    - "Bør begrepet nevne at den gamle arkivlova fra 1992 er opphevet, slik det står i kilderegisteret?"
+  stikkord: [arkivplikt, arkivlova, arkivloven, arkiv, dokumentasjon, dokumentasjonsplan, internkontroll, arkivforskrifta]
+  relatert: [journalforing, bevaring-og-kassasjon, innsyn]
+
+- id: bevaring-og-kassasjon
+  type: begrep
+  tittel: { nb: Bevaring og kassasjon, nn: Bevaring og kassasjon }
+  lenkeord: { nb: ["kassasjon"], nn: ["kassasjon"] }
+  tekst:
+    nb: >-
+      Bevaring betyr at dokumentasjon tas vare på for ettertiden. Det gjelder dokumentasjon med stor kulturell eller vitenskapelig verdi og viktig dokumentasjon om rettslige forhold eller om hvordan forvaltningen har arbeidet. Nasjonalarkivet kan gi forskrift om hva som skal bevares, og fylkeskommunen skal ha ordninger for langtidsbevaring. Kassasjon betyr at dokumentasjon blir slettet eller ødelagt, så den ikke lenger finnes. Organet kan bare kassere dokumentasjon som ikke skal bevares etter Nasjonalarkivets forskrift, eller som Nasjonalarkivet har gitt tillatelse til å kassere. For dokumentasjon som ikke skal bevares, fastsetter organet selv hvor lenge den skal oppbevares. Regler om sletting i andre lover gir bare grunnlag for kassasjon når det er klart at opplysningene ikke skal finnes i arkivet for ettertiden. Se [arkivlova § 12](#/lov/arkivlova/12) og [§ 13](#/lov/arkivlova/13).
+    nn: >-
+      Bevaring tyder at dokumentasjon blir teken vare på for ettertida. Det gjeld dokumentasjon med stor kulturell eller vitskapleg verdi og viktig dokumentasjon om rettslege tilhøve eller om korleis forvaltninga har arbeidd. Nasjonalarkivet kan gi forskrift om kva som skal takast vare på, og fylkeskommunen skal ha ordningar for langtidsbevaring. Kassasjon tyder at dokumentasjon blir sletta eller øydelagd, så han ikkje lenger finst. Organet kan berre kassere dokumentasjon som ikkje skal takast vare på etter forskrifta frå Nasjonalarkivet, eller som Nasjonalarkivet har gitt løyve til å kassere. For dokumentasjon som ikkje skal takast vare på, fastset organet sjølv kor lenge han skal oppbevarast. Reglar om sletting i andre lover gir berre grunnlag for kassasjon når det er klart at opplysningane ikkje skal finnast i arkivet for ettertida. Sjå [arkivlova § 12](#/lov/arkivlova/12) og [§ 13](#/lov/arkivlova/13).
+  kilder:
+    - { id: arkivlova, punkt: "§ 12 Dokumentasjon som skal takast vare på for ettertida", url: "https://lovdata.no/lov/2025-06-20-96/§12" }
+    - { id: arkivlova, punkt: "§ 13 Kassasjon av dokumentasjon som ikkje skal takast vare på", url: "https://lovdata.no/lov/2025-06-20-96/§13" }
+    - { id: arkivlova, punkt: "§ 2 bokstav g (kassere) og § 14 andre ledd (langtidsbevaring i fylkeskommunar)", url: "https://lovdata.no/lov/2025-06-20-96/§14" }
+    - { id: arkivforskrifta, punkt: "§ 3 Oppbevaringstider for dokumentasjon", url: "https://lovdata.no/forskrift/2025-12-17-2647/§3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Har Nasjonalarkivet gitt forskrift etter arkivlova § 12 andre ledd om hva fylkeskommuner skal bevare (for eksempel elevmapper og vitnemålsprotokoller), og bør begrepet vise til den?"
+    - "Er «slettet eller ødelagt, så den ikke lenger finnes» en riktig omskriving av definisjonen «å gjere til inkjes dokumentasjon slik at han ikkje lenger finst» i arkivlova § 2 bokstav g?"
+    - "Bør begrepet nevne særregler i opplæringsforskrifta om oppbevaring, for eksempel § 9-65 om prøvearbeid på fag- og svenneprøver som ikke er bestått?"
+  stikkord: [bevaring, kassasjon, kassere, sletting, langtidsbevaring, oppbevaringstid, Nasjonalarkivet, arkivlova]
+  relatert: [arkivplikt, journalforing]

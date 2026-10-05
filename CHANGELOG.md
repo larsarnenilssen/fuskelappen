@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Skolekortet** har knappene «Nettsiden» og «Skolens regler» øverst, og en strek før opplæringstilbudene.
 - **Dato for ikrafttredelse** og siste endring på alle lover og forskrifter i Regelverk.
 - **Tabeller** i lov- og forskriftsteksten.
+- **27 nye begreper** i begrepsbanken: innsyn, partsinnsyn, taushetsplikt, organinternt dokument, journalføring, arkivplikt, bevaring og kassasjon, statsforvalteren, tilsyn, begrunnelse, veiledningsplikt, delegering, hjemmel, skolerute, skoleskyss, fleksibilitet i fag- og timefordelingen, ikrafttredelse og kunngjøring, oppmelding, sensur, annullering, hurtigklage, praksisbrev, lærekandidat, praksiskandidat, fagbrev på jobb, Vg3 i skole og formidling til læreplass.
 
 ### Endret
 

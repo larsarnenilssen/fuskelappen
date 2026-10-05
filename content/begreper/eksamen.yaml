@@ -180,3 +180,127 @@
     - "«Fylkeskommunen for lærlinger og privatister» er en forenkling av § 9-54. Er den god nok?"
   stikkord: [vitnemål, kompetansebevis, dokumentasjon]
   relatert: [vitnemalsmerknader, fagmerknader]
+
+# Oppmelding, sensur, annullering og hurtigklage (fase 6). Egne ord, bygger på opplæringsforskrifta kapittel 9 og
+# fristene i content/vurdering/frister-eksamen.yaml. Hurtigklage står ikke i forskriften.
+- id: oppmelding
+  type: begrep
+  tittel: { nb: "Oppmelding", nn: "Oppmelding" }
+  tekst:
+    nb: >-
+      Oppmelding er å melde en kandidat til eksamen eller prøve. Udir fastsetter fristene for oppmelding til eksamen.
+      Skolen melder opp elevene, men til ny, utsatt og særskilt eksamen melder eleven seg selv, til skolen.
+      Privatister melder seg selv der fylkeskommunen bestemmer, og betaler prøveavgift. Lærebedriften melder opp
+      lærlinger og kandidater for fagbrev på jobb til eksamen, og alle med læretid i bedrift til fag- eller
+      svenneprøven, praksisbrevprøven eller kompetanseprøven, senest to måneder før kontraktstiden er ute. Skolen
+      melder opp elever til fag- eller svenneprøven, og praksiskandidater melder seg selv og betaler prøveavgift.
+    nn: >-
+      Oppmelding er å melde ein kandidat til eksamen eller prøve. Udir fastset fristane for oppmelding til eksamen.
+      Skolen melder opp elevane, men til ny, utsett og særskild eksamen melder eleven seg sjølv, til skolen.
+      Privatistar melder seg sjølve der fylkeskommunen bestemmer, og betaler prøveavgift. Lærebedrifta melder opp
+      lærlingar og kandidatar for fagbrev på jobb til eksamen, og alle med læretid i bedrift til fag- eller
+      sveineprøva, praksisbrevprøva eller kompetanseprøva, seinast to månader før kontraktstida er ute. Skolen
+      melder opp elevar til fag- eller sveineprøva, og praksiskandidatar melder seg sjølve og betaler prøveavgift.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: udir-administrere-eksamen, punkt: "Påmelding av eksamenskandidater" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å samle oppmelding til eksamen og til fag- og svenneprøven, praksisbrevprøven og kompetanseprøven i ett begrep?"
+    - "§ 9-56 andre ledd setter fristen på to måneder for «dei som har læretid i bedrift». Er det riktig at den gjelder alle fire gruppene, også kandidater for fagbrev på jobb?"
+    - "Bare ordet «oppmelding» (med bøyning) lenker til begrepet, ikke «melder opp». Er det greit?"
+  stikkord: [påmelding, melde opp, prøveavgift, eksamen, fagprøve, svenneprøve]
+  relatert: [privatist, fag-og-svenneprove, utsatt-eksamen, ny-eksamen, sarskilt-eksamen]
+
+- id: sensur
+  type: begrep
+  tittel: { nb: "Sensur", nn: "Sensur" }
+  lenkeord: { nb: ["sensur", "sensor"], nn: ["sensur", "sensor"] }
+  tekst:
+    nb: >-
+      Sensur er vurderingen av eksamenssvarene. Alle svar vurderes av to sensorer. Ved sentralt gitt eksamen
+      fastsetter Udir sensurordningen, begge sensorene er eksterne, og blir de ikke enige, avgjør en oppmann eller
+      oppkvinne karakteren. Ved lokalt gitt eksamen gjennomfører fylkeskommunen sensuren, og minst én sensor er
+      ekstern. Faglæreren kan ikke være sensor ved lokalt gitt skriftlig eksamen, men er sensor ved muntlig og
+      praktisk eksamen hvis fylkeskommunen ønsker det. Standpunktkarakteren settes senest dagen før sensur. Fag- og
+      svenneprøven vurderes av prøvenemnda.
+    nn: >-
+      Sensur er vurderinga av eksamenssvara. Alle svar blir vurderte av to sensorar. Ved sentralt gitt eksamen
+      fastset Udir sensurordninga, begge sensorane er eksterne, og blir dei ikkje samde, avgjer ein oppmann eller ei
+      oppkvinne karakteren. Ved lokalt gitt eksamen gjennomfører fylkeskommunen sensuren, og minst éin sensor er
+      ekstern. Faglæraren kan ikkje vere sensor ved lokalt gitt skriftleg eksamen, men er sensor ved munnleg og
+      praktisk eksamen dersom fylkeskommunen ønskjer det. Standpunktkarakteren blir sett seinast dagen før sensur.
+      Fag- og sveineprøva blir vurdert av prøvenemnda.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-33", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-33" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Både «sensur» og «sensor» lenker til begrepet. Er det greit?"
+    - "Er det nyttig å ta med at standpunktkarakteren settes senest dagen før sensur (§ 9-16 fjerde ledd), eller hører det bare hjemme under standpunktkarakter?"
+  stikkord: [sensor, sensorer, oppmann, sensurfrist, eksamen, ekstern sensor]
+  relatert: [sentralt-gitt-eksamen, lokalt-gitt-eksamen, klagenemnd, standpunktkarakter, provenemnd]
+
+- id: annullering
+  type: begrep
+  tittel: { nb: "Annullering", nn: "Annullering" }
+  tekst:
+    nb: >-
+      Annullering betyr at en eksamen eller prøve ikke gjelder. Rektor selv annullerer eksamen for en elev som jukser
+      eller prøver å jukse, og standpunktkarakteren i faget faller bort. For privatister og dem med læretid i bedrift
+      er det fylkeskommunen som annullerer. Kandidaten får fullføre eksamensdagen, skal få uttale seg før det
+      avgjøres, og kan ta eksamen på nytt tidligst ett år etter. Udir kan annullere eksamen ved feil i
+      gjennomføringen, og da har kandidaten rett til ny eksamen. Får eleven ikke standpunktkarakter i faget,
+      annulleres eksamen. Ved juks på fag- og svenneprøven annullerer prøvenemnda prøven. Det er noe annet enn å bli
+      vist bort fra eksamen.
+    nn: >-
+      Annullering tyder at ein eksamen eller ei prøve ikkje gjeld. Rektor sjølv annullerer eksamen for ein elev som
+      jukser eller prøver å jukse, og standpunktkarakteren i faget fell bort. For privatistar og dei med læretid i
+      bedrift er det fylkeskommunen som annullerer. Kandidaten får fullføre eksamensdagen, skal få uttale seg før det
+      blir avgjort, og kan ta eksamen på nytt tidlegast eitt år etter. Udir kan annullere eksamen ved feil i
+      gjennomføringa, og då har kandidaten rett til ny eksamen. Får ikkje eleven standpunktkarakter i faget, blir
+      eksamen annullert. Ved juks på fag- og sveineprøva annullerer prøvenemnda prøva. Det er noko anna enn å bli
+      vist bort frå eksamen.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-42", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-42" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-40 og § 9-41", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-40" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-69", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-69" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Vedtak om annullering kan påklages etter forvaltningsloven (klageveiviseren, «Andre vedtak om vurdering og eksamen»). Bør begrepet si det?"
+    - "Praksisbrevprøven og kompetanseprøven annulleres av fylkeskommunen (§ 9-69 andre ledd). Bør det stå, eller er begrepet langt nok?"
+    - "Ordet «bortvisning» er unngått, fordi begrepet Bortvisning gjelder bortvisning fra opplæringen etter skolereglene. Er det greit?"
+  stikkord: [juks, fusk, annullert, eksamen, fag- og svenneprøve]
+  relatert: [ny-eksamen, tverrfaglig-eksamen, standpunktkarakter, fag-og-svenneprove]
+
+- id: hurtigklage
+  type: begrep
+  tittel: { nb: "Hurtigklage", nn: "Hurtigklage" }
+  tekst:
+    nb: >-
+      Hurtigklage er en raskere behandling av klager for kandidater som trenger karakteren for å søke høyere
+      utdanning samme år. Ordningen står ikke i forskriften. Udir setter en egen frist for å registrere hurtigklager
+      på våreksamen i noen fag, og den er kortere enn den vanlige klagefristen. Noen fylkeskommuner har også
+      hurtigklage på standpunktkarakter for avgangselever, med en kortere klagefrist, så klagen kan behandles før
+      fristen for vitnemålet. Datoene står i [kalenderen](#/vurdering/eksamen-og-klage).
+    nn: >-
+      Hurtigklage er ei raskare behandling av klager for kandidatar som treng karakteren for å søkje høgare utdanning
+      same år. Ordninga står ikkje i forskrifta. Udir set ein eigen frist for å registrere hurtigklager på
+      våreksamen i nokre fag, og han er kortare enn den vanlege klagefristen. Nokre fylkeskommunar har også
+      hurtigklage på standpunktkarakter for avgangselevar, med ein kortare klagefrist, så klaga kan behandlast før
+      fristen for vitnemålet. Datoane står i [kalenderen](#/vurdering/eksamen-og-klage).
+  kilder:
+    - { id: eksamensdatoer, punkt: "Hurtigklage og hurtigklage på standpunkt (fylkenes sider)" }
+    - { id: udir-administrere-eksamen, punkt: "Hurtigklage" }
+    - { id: udir-klage-standpunkt, punkt: "4. Hvordan skal eleven eller foreldrene klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2 (den vanlige klagefristen)", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Hurtigklage er ikke en regel i forskriften, og begrepet bygger bare på fristene i kalenderen og fylkenes sider (f.eks. Innlandet: «Hurtigklagefristen for avgangselever»). Er det riktig at hurtigklage på standpunkt er en ordning hver fylkeskommune velger selv?"
+    - "Er det riktig at hurtigklage er for kandidater som trenger karakteren til opptak til høyere utdanning samme år, og at det gjelder både eksamen og standpunkt?"
+    - "Begrepet sier «i noen fag», som fristen i kalenderen. Gjelder Udirs hurtigklage på våreksamen bare skriftlig eksamen, og bare noen fag?"
+    - "Kildene appen har, sier ikke hvem som behandler hurtigklagen på standpunkt. Er det skolen og statsforvalteren som ved vanlig klage, bare raskere, og bør det stå?"
+  stikkord: [hurtigklage, klage, avgangselev, standpunkt, høyere utdanning, vitnemål]
+  relatert: [standpunktkarakter, klagenemnd, klage, vitnemal-og-kompetansebevis]
