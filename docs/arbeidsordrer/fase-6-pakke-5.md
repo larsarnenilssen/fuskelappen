@@ -1,6 +1,6 @@
 # Fase 6, pakke 5: Kalenderen – overlevering (04.10.2026, etter 0.35.0; flyttet til pakke 5 av eier 05.10.2026)
 
-Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene) og de nye begrepene er levert i 0.36.0, og endringene fra pausen i 0.36.1. Les også «Domenet» under før du starter.
+Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene) og de nye begrepene er levert i 0.36.0, og endringene fra pausen i 0.36.1. Appen ligger nå på https://jukselappen.no (se «Domenet»).
 
 ## Levert så langt
 
@@ -45,15 +45,13 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
 
 ## Domenet (jukselappen.no)
 
-Eier følger `docs/EIER.md` punkt 16: DNS hos Webhuset, bekreftelse hos GitHub, så **Custom domain** under Settings → Pages og ny publisering. Spør eier først i samtalen hvor langt det har kommet.
+**Tatt i bruk 05.10.2026**, med HTTPS (eier, `docs/EIER.md` punkt 16). «Publiser» bygget for `https://jukselappen.no/` (loggen: «Appen publiseres på https://jukselappen.no/»). Adressene i README, EIER.md og arbeidsordrene er byttet.
 
-- **Er domenet tatt i bruk** (Settings → Pages viser `jukselappen.no`, og https://jukselappen.no svarer): gjør dette først, i en egen liten PR:
-  - Bytt adressene i `README.md`, `docs/EIER.md` (øverst og punkt 7) og arbeidsordrene til `https://jukselappen.no/`, og testversjonen til `https://jukselappen.no/test/`. Fjern «når domenet er tatt i bruk».
-  - Sjekk at «Publiser» skrev «Appen publiseres på https://jukselappen.no/», og at forsiden, et fagark og kildestatusen laster.
-  - Push `test` på nytt, så testversjonen bygges for den nye adressen.
-- **Er det ikke tatt i bruk ennå:** ingenting å gjøre i koden. Hjelp eier med stegene når eier ber om det. Fra eier trykker Save til publiseringen er ferdig, virker ikke appen. Kjør «Publiser» (Actions → Publiser → Run workflow) med en gang, eller be eier gjøre det.
-- **Eldre versjoner enn 0.36.1 kan ikke publiseres på nytt** etter at domenet er tatt i bruk, fordi de bygges under `/jukselappen/`.
+- Den gamle adressen sender videre. Installerte kopier fra den kjører videre uten oppdateringer og viser flyttevarselet. Det kan ikke endres fra vår side.
+- **Grenen `test` har kode fra før domenebyttet**, så `https://jukselappen.no/test/` virker ikke før grenen overskrives. Push arbeidsgrenen til `test` første gang eier skal teste noe.
+- **Eldre versjoner enn 0.36.1 kan ikke publiseres på nytt**, fordi de bygges under `/jukselappen/`.
 - Lokalt og i ende-til-ende-testene ligger appen fortsatt under `/jukselappen/` (`app.base`). Det skal ikke endres.
+- Skymiljøet når ikke jukselappen.no eller github.io. Be eier sjekke siden, eller les loggen til «Publiser».
 
 ## Pakke 5: kalenderen (godkjent av eier 04.10.2026, runde 6)
 
