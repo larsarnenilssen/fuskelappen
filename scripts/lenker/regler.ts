@@ -81,6 +81,20 @@ export const LENKEBYGGERE: readonly Lenkebygger[] = [
     lenker: (rot) => Object.values(lesJson<{ fag: Record<string, { sti: string }[]> }>(rot, 'data/ndla/fag.json')?.fag ?? {}).flatMap((l) => l.map((f) => `https://ndla.no${f.sti}`)),
   },
   {
+    fil: 'src/modules/kalender/datakilder.ts',
+    navn: 'Skoleruta og kommende endringer hos Lovdata (kalenderen)',
+    lenker: (rot) => {
+      const skolerute = lesJson<{ fylker: Record<string, { dokumenter: { refid: string }[] }> }>(rot, 'data/skolerute/skolerute.json')?.fylker ?? {};
+      const kommende = lesJson<{ endringer: { endretVed: { refid: string }; kunngjoring: string | null }[] }>(rot, 'data/lovdata/kommende.json')?.endringer ?? [];
+      return [
+        ...new Set([
+          ...Object.values(skolerute).flatMap((f) => f.dokumenter.map((d) => `https://lovdata.no/${d.refid}`)),
+          ...kommende.map((e) => e.kunngjoring ?? `https://lovdata.no/${e.endretVed.refid}`),
+        ]),
+      ];
+    },
+  },
+  {
     fil: 'src/modules/opplaeringslop/sider/Tilbud.tsx',
     navn: 'Utdanningene og yrkene på utdanning.no',
     lenker: (rot) => {
