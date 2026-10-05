@@ -1,4 +1,4 @@
-# Midlertidig (05.10.2026, siste henting, runde 2): prøver hentingen av lokale forskrifter fra grenen claude/fylkene i tre runder: hele
+# Midlertidig (05.10.2026, siste henting, runde 3): prøver hentingen av lokale forskrifter fra grenen claude/fylkene i tre runder: hele
 # registeret, så Lovtidend avdeling II siden 1. juni 2026, så siden 1. desember 2025 (årsskiftet, med registeret for
 # årene i tillegg). Resultatet legges på grenen utforsk-data. Slettes når fylkesarbeidet er bygget.
 name: Utforsk
@@ -36,5 +36,5 @@ jobs:
           export GIT_INDEX_FILE=$(mktemp -u)
           (cd ut && find . -type f | sed 's#^\./##' | while read f; do git update-index --add --cacheinfo 100644,$(git hash-object -w "$f"),"$f"; done)
           tree=$(git write-tree)
-          commit=$(git commit-tree "$tree" -m "Utforsk $(date -u +%F)")
+          commit=$(git commit-tree "$tree" -m "Utforsk $(date -u +%F) fra $(git rev-parse HEAD)")
           git push --force origin "$commit:refs/heads/utforsk-data"
