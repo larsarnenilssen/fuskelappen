@@ -7412,8 +7412,13 @@ a.knapp {
   gap: var(--rom-1);
 }
 
-.kal-stripe-passert {
+/* Passerte måneder i stripen: prikkene dempes, og navnet får den dempede tekstfargen, så kontrasten holder. */
+.kal-stripe-passert > .frist-stripe-prikker {
   opacity: 0.55;
+}
+
+.kal-stripe-passert > .frist-stripe-navn {
+  color: var(--farge-tekst-dempet);
 }
 
 /* Lavere celler i stripen, så tidslinjen kommer raskere på mobil. */
