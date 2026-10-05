@@ -60,7 +60,13 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
 9. **Kontrollsakene** (eier 05.10.2026):
    - **Kildesjekken (sak #92):** En kilde uten godkjent fingeravtrykk merkes «Ny kilde, ikke godkjent ennå», ikke «Endret siden …». Alle 26 punktene i #92 er nye kilder fra fase 6, ikke endringer.
    - **Lenkesjekken (sak #98):** Saken opprettes bare når en lenke er borte eller flyttet. Nettstedene som stenger for automatisk sjekk, står i kontrolloversikten (`docs/KONTROLL.md`), ikke i saken. Lukk #98 når endringen er flettet.
-10. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
+10. **CI etter hva som er endret** (eier 05.10.2026): CI ser først hvilke filer PR-en eller pushen endrer.
+    - Bare dokumentasjon (`docs/`, `*.md` utenom innhold): ingen tester.
+    - Bare versjonsnummer og CHANGELOG (`package.json`, `package-lock.json` og `CHANGELOG.md`, der bare versjonen er endret): bare den raske jobben (lint, typesjekk, enhetstester), ikke ende-til-ende.
+    - Alt annet: som nå.
+
+    Jobbene kjører, men hopper over arbeidet, så sjekker GitHub krever før fletting, fortsatt rapporterer. Kjøringen på `main` beholdes, fordi kildesjekken skriver data rett dit. Skriv en avgjørelse.
+11. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 
