@@ -18,7 +18,7 @@ export function heleAret(f: Frist): boolean {
 /** Måneden fristen står i, eller null når den gjelder hele året. Frister med en dato står i måneden for datoen. */
 export function maned(f: Frist): number | null {
   if (f.dato) return Number(f.dato.slice(5, 7));
-  if (f.regel) return f.regel.type === 'lopende' ? null : f.regel.maned;
+  if (f.regel) return f.regel.type === 'lopende' ? null : f.regel.type === 'perioden' ? f.regel.fra : f.regel.maned;
   return null;
 }
 
@@ -30,7 +30,7 @@ export function dag(f: Frist): number | null {
 
 /** En frist gjelder et filter når den har gruppen, eller når den ikke har noen grupper (gjelder alle). */
 export function gjelder(f: Frist, filter: string): boolean {
-  return filter === 'alle' || f.grupper.length === 0 || f.grupper.includes(filter);
+  return filter === 'alle' || f.grupper.length === 0 || (f.grupper as readonly string[]).includes(filter);
 }
 
 /**

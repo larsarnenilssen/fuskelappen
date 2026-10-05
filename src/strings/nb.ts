@@ -4,6 +4,7 @@ import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 import { fagNb } from './moduler/fag.nb.ts';
 import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
 import { fylkerNb } from './moduler/fylker.nb.ts';
+import { kalenderNb } from './moduler/kalender.nb.ts';
 import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 import { inntakNb } from './moduler/inntak.nb.ts';
@@ -27,6 +28,8 @@ export const nb = {
     innstillinger: 'Innstillinger',
   },
   forside: {
+    sidekolonne: 'Sidekolonne',
+    visISidekolonne: 'Vis {gruppe} i sidekolonnen',
     tittel: 'Forside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, begrep eller fag',
@@ -56,6 +59,9 @@ export const nb = {
       tittel: 'Tilpass forsiden',
       hjelp: 'Dra i håndtaket for å flytte en gruppe, eller bruk pilene. Trykk på overskriften til en gruppe på forsiden for å lukke eller åpne den. Favorittene sorteres med «Endre rekkefølge» der de står.',
       grupper: 'Gruppene',
+      sidekolonne: 'Sidekolonnen',
+      sidekolonneHjelp: 'På stor skjerm står «Neste datoer» og favorittene i en egen kolonne til høyre.',
+      visNeste: 'Vis «Neste datoer» på forsiden',
       nullstill: 'Standard rekkefølge, alle grupper åpne',
     },
   },
@@ -389,6 +395,10 @@ export const nb = {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper.',
     },
+    kalender: {
+      navn: 'Kalender',
+      beskrivelse: 'Frister og datoer fra hele appen, med skoleruta.',
+    },
     fylker: {
       navn: 'Fylkene',
       beskrivelse: 'Fylkets sider, lokale forskrifter, skoler og opplæringskontor.',
@@ -411,6 +421,7 @@ export const nb = {
   opplaeringslop: opplaeringslopNb,
   laereplanverket: laereplanverketNb,
   fylker: fylkerNb,
+  kalender: kalenderNb,
   lov: lovNb,
   tilrettelegging: tilretteleggingNb,
   vurdering: vurderingNb,

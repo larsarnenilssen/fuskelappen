@@ -26,11 +26,15 @@ export const innstillingerSkjema = z.strictObject({
 /**
  * Forsiden slik brukeren har tilpasset den (avgjørelse 056): rekkefølgen på gruppene (favorittene og kategoriene),
  * gruppene som er lukket, og om forsiden bare viser favorittene under hver kategori. Tom rekkefølge er standard.
+ * `apnet` er grupper som er lukket fra start på mobil, men som brukeren har åpnet, og `skjult` grupper brukeren har
+ * slått av (gruppen «Neste datoer», avgjørelse 066). Begge kan mangle i data lagret før 0.37.0.
  */
 export const forsideSkjema = z.strictObject({
   rekkefolge: z.array(z.string()),
   lukket: z.array(z.string()),
   bareFavoritter: z.boolean(),
+  apnet: z.optional(z.array(z.string())),
+  skjult: z.optional(z.array(z.string())),
 });
 
 export const lagretSkjema = z.strictObject({

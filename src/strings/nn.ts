@@ -4,6 +4,7 @@ import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
 import { fagNn } from './moduler/fag.nn.ts';
 import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
 import { fylkerNn } from './moduler/fylker.nn.ts';
+import { kalenderNn } from './moduler/kalender.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
@@ -27,6 +28,8 @@ export const nn: Tekster = {
     innstillinger: 'Innstillingar',
   },
   forside: {
+    sidekolonne: 'Sidekolonne',
+    visISidekolonne: 'Vis {gruppe} i sidekolonna',
     tittel: 'Framside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, omgrep eller fag',
@@ -56,6 +59,9 @@ export const nn: Tekster = {
       tittel: 'Tilpass framsida',
       hjelp: 'Dra i handtaket for å flytte ei gruppe, eller bruk pilene. Trykk på overskrifta til ei gruppe på framsida for å lukke eller opne ho. Favorittane blir sorterte med «Endre rekkjefølgje» der dei står.',
       grupper: 'Gruppene',
+      sidekolonne: 'Sidekolonna',
+      sidekolonneHjelp: 'På stor skjerm står «Neste datoar» og favorittane i ei eiga kolonne til høgre.',
+      visNeste: 'Vis «Neste datoar» på framsida',
       nullstill: 'Standard rekkjefølgje, alle grupper opne',
     },
   },
@@ -389,6 +395,10 @@ export const nn: Tekster = {
       navn: 'Omgrep',
       beskrivelse: 'Forklaringar av sentrale omgrep.',
     },
+    kalender: {
+      navn: 'Kalender',
+      beskrivelse: 'Fristar og datoar frå heile appen, med skuleruta.',
+    },
     fylker: {
       navn: 'Fylka',
       beskrivelse: 'Sidene til fylket, lokale forskrifter, skular og opplæringskontor.',
@@ -411,6 +421,7 @@ export const nn: Tekster = {
   opplaeringslop: opplaeringslopNn,
   laereplanverket: laereplanverketNn,
   fylker: fylkerNn,
+  kalender: kalenderNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
   vurdering: vurderingNn,

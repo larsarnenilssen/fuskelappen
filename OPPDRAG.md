@@ -204,7 +204,7 @@ Skjemaet defineres med zod og valideres i testene.
   - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
   - **Skolemiljø:** Skolemiljø (fase 7).
-  - **Oppslag:** Begreper, Regelverk. Om Frister og årshjul (fase 8) står her eller øverst på forsiden, avgjøres i fase 8.
+  - **Oppslag:** Kalender, Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen står her, og forsiden har gruppen «Neste datoer» med de tre neste datoene (avgjørelse 066).
   - Lokale profiler (fase 9) hører hjemme i Innstillinger.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
@@ -540,7 +540,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Pakke 3 er levert i 0.35.0: **Eksamen**, veiviseren «Klage på karakter», fag- og svenneprøven og kalender for eksamen (avgjørelse 059). Grep hentes nå bare når noe er endret (avgjørelse 060).
 - Pakke 4 (**Fylkene**, eier 05.10.2026) er levert i 0.36.0: lenker til fylkenes egne sider per tema, fylkessiden, og lokale forskrifter fra Lovdata for alle fylker og skoler, oppdatert fra Norsk Lovtidend hver uke (avgjørelse 061). Alle lenker i appen sjekkes hver uke (avgjørelse 062). Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-4-fylkene.md`. Samme versjon har søket i toppfeltet over siden, med knapp for fylket, og sti på alle sider.
 - 0.36.1 (05.10.2026, pausen før pakke 5): temafilter i begrepsbanken, lukket fylkesboks, tilbakemelding på e-post (avgjørelse 064) og forberedelse til eget domene, jukselappen.no (avgjørelse 065).
-- Pakke 5 (kalenderen) kommer etter, med skoleruta fra fylkets forskrift. Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-5.md`.
+- Pakke 5 er levert i 0.37.0 (05.10.2026): **Kalenderen** med skoleruta, fylkenes inntaksdatoer og kommende endringer i regelverket (avgjørelse 066), «Neste datoer» og sidekolonnen på forsiden (avgjørelse 068), og CI etter hva som er endret (avgjørelse 067).
+- Pakke 6 (fag- og svennebrev i Opplæringstilbud) kommer etter. Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`.
 - 27 nye begreper (eier 05.10.2026) er levert i 0.36.0: `docs/arbeidsordrer/fase-6-begreper.md`.
 - Pakke 6 er «Fag- og svennebrev» i Opplæringstilbud, avtalt med eier 04.10.2026 men ikke lagt i noen pakke før (plukket opp igjen 05.10.2026). Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`.
 
@@ -559,11 +560,12 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 ### Fase 8 – Frister og årshjul
 
+*(Fase 6, pakke 5, 05.10.2026:)* Den samlede oversikten over fristene er bygget som **Kalenderen** (`#/kalender`, avgjørelse 066): fristene fra alle manifestene, skoleruta fra fylkenes forskrifter, fylkenes datoer for inntak og vedtatte endringer i regelverket, med filter på tema og hvem det gjelder, de neste tolv månedene eller et skoleår. Fase 8 bygger videre på den og på datafilene (`data/skolerute/`, `data/inntak/`, `data/lovdata/kommende.json`).
+
 **Leveranser**
 
-- Samlet oversikt over frister fra alle moduler, filtrert på modul, målgruppe og nivå.
-- Visning som årshjul og som liste.
-- Eksport til kalender (.ics), generert i nettleseren.
+- Visning som årshjul, ved siden av listen i kalenderen.
+- Eksport til kalender (.ics), generert i nettleseren, fra postene i kalenderen med det filteret brukeren har valgt.
 - *(Ønske fra eier 04.10.2026)* **Dagens jukselapp** (navnet endret fra «Dagens fuskelapp», eier 04.10.2026)**:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den tas i denne fasen fordi den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet. Da finnes det også innhold fra de fleste modulene.
   - Dagens jukselapp skrus av og på fra forsiden (eier 04.10.2026), og gjerne også under Innstillinger. Den er av fra start, og valget lagres lokalt som de andre valgene.
   - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.

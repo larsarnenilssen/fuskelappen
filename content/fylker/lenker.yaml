@@ -35,7 +35,7 @@ fylker:
   - fylke: "15"
     navn: Møre og Romsdal fylkeskommune
     lenker:
-      inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/overgang-og-innsoking-til-vidaregaande/sok-vidaregaande-opplaring/", bekreftet: null }
+      inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/innsoking-til-vidaregaande-opplaring/sok-vidaregaande-opplaring/", bekreftet: null }
       klage-inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage/", bekreftet: null }
       tilrettelegging: { url: "https://mrfylke.no/tenester/skole-og-opplaring/ppt-og-oppfolgingstenesta/ppt-i-skolen/", bekreftet: null }
       eksamen: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: null }

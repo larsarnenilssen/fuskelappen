@@ -8,6 +8,7 @@ const MODULSPEKER: Record<string, readonly string[]> = {
   fag: ['fag', 'kalkulator-fag'],
   fylker: ['fylker'],
   inntak: ['inntak'],
+  kalender: ['kalender'],
   laereplanverket: ['laereplanverket'],
   lov: ['regelverk'],
   opplaeringslop: ['opplaeringslop'],
@@ -25,8 +26,10 @@ const DATAMODULER: Record<string, readonly string[]> = {
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
   udir: ['inntak', 'vurdering'],
+  skolerute: ['kalender'],
   skolear: ['inntak', 'arbeidstid', 'vurdering'],
-  eksamen: ['vurdering'],
+  eksamen: ['vurdering', 'kalender'],
+  inntaksdatoer: ['kalender'],
 };
 
 /** Regelsettene i rules/ og modulene som bruker dem. */

@@ -96,8 +96,9 @@ export function startRuting(): void {
   );
 }
 
-// Søket fra toppfeltet (eier 05.10.2026): åpnes over siden brukeren står på, som en egen oppføring i historikken på
-// samme adresse. Tilbake (også sveip tilbake i nettleseren) og «Lukk» lukker søket og viser siden der brukeren var.
+// Søket fra toppfeltet (eier 05.10.2026): legges over siden brukeren står på, som en egen oppføring i historikken på
+// samme adresse. Siden står synlig bak. Tilbake (også sveip tilbake i nettleseren), «Lukk» og et trykk utenfor søket
+// lukker det.
 // Følges en lenke i søket, kommer brukeren tilbake til søket med tilbake.
 const toppsokLyttere = new Set<() => void>();
 const varsleToppsok = () => {
@@ -110,18 +111,13 @@ export function toppsok(): string | null {
   return typeof s?.sok === 'string' ? s.sok : null;
 }
 
-/**
- * Rullingen på siden da søket ble åpnet, per oppføring. Egen tabell, fordi rullingen endres når siden skjules bak
- * søket, og WebKit kan melde den endringen etter at søket har fått sin egen oppføring (05.10.2026).
- */
-const rullingVedSok = new Map<string, number>();
-
 export function apneToppsok(): void {
   if (toppsok() !== null) return;
-  const side = gjeldende();
-  if (side) rullingVedSok.set(side.appId, window.scrollY);
   dybde += 1;
-  history.pushState({ appId: nyId(), dybde, sok: '' }, '');
+  const id = nyId();
+  // Siden står synlig bak søket. Kommer brukeren tilbake til søket fra et treff, står siden bak der den var.
+  scrollPosisjoner.set(id, window.scrollY);
+  history.pushState({ appId: id, dybde, sok: '' }, '');
   varsleToppsok();
 }
 
@@ -140,19 +136,7 @@ export function useToppsok(): string | null {
     const oppdater = () => {
       const naa = gjeldende();
       if (naa) dybde = naa.dybde;
-      const ny = toppsok();
-      settSok((forrige) => {
-        // Søket lukkes: siden får tilbake rullingen den hadde da søket ble åpnet.
-        if (forrige !== null && ny === null && naa) {
-          const y = rullingVedSok.get(naa.appId) ?? scrollPosisjoner.get(naa.appId) ?? 0;
-          // Etter at siden er tegnet igjen, og en gang til litt etter, i tilfelle høyden ikke var på plass ennå.
-          requestAnimationFrame(() => window.scrollTo(0, y));
-          setTimeout(() => {
-            if (toppsok() === null && Math.abs(window.scrollY - y) > 1) window.scrollTo(0, y);
-          }, 100);
-        }
-        return ny;
-      });
+      settSok(toppsok());
     };
     toppsokLyttere.add(oppdater);
     window.addEventListener('popstate', oppdater);

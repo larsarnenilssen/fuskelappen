@@ -4,7 +4,7 @@
 // i rules/vurdering/ og eksamensdatoene i data/eksamen/.
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { eksamenRute, fravaerRute, fristerRute, hentInnhold, ordenRute, proveneRute, underveisSluttRute, UNDERSIDER, veiviserRute } from './innhold.ts';
+import { eksamenRute, fravaerRute, fristerRute, gammelFristerRute, hentInnhold, ordenRute, proveneRute, underveisSluttRute, UNDERSIDER, veiviserRute } from './innhold.ts';
 import { oversiktsfavoritt } from '../favoritter.ts';
 
 export const manifest: Modulmanifest = {
@@ -22,7 +22,8 @@ export const manifest: Modulmanifest = {
     { sti: fravaerRute, tittel: 'vurdering.fravaer.tittel', side: () => import('./sider/Fravaer.tsx') },
     { sti: eksamenRute, tittel: 'vurdering.eksamen.tittel', side: () => import('./sider/Eksamen.tsx') },
     { sti: proveneRute, tittel: 'vurdering.provene.tittel', side: () => import('./sider/Provene.tsx') },
-    { sti: fristerRute, tittel: 'vurdering.frister.tittel', side: () => import('./sider/Frister.tsx') },
+    // Den gamle adressen sender videre til kalenderen, filtrert på eksamen (avgjørelse 066).
+    { sti: gammelFristerRute, tittel: 'kalender.tittel', side: () => import('../kalender/sider/TilKalender.tsx') },
     { sti: '/vurdering/:veiviser', tittel: 'vurdering.tittel', side: () => import('./sider/Veiviserside.tsx') },
   ],
   async sokeoppforinger() {

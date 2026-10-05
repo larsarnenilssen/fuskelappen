@@ -218,6 +218,54 @@ function sjekkEksamen(): Sjekkresultat {
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endrede eksamensdatoer.` : null };
 }
 
+/**
+ * Skoleruta fra de lokale forskriftene (npm run hent:skolerute, fase 6, pakke 5) og lesingen av Lovtidend avdeling I
+ * (kommende endringer). Rader i skoleruta som ikke kan leses sikkert, står i rapporten så lenge de finnes, og gir en
+ * kontrollsak når de er nye. Gir meldingen til kontrollsaken, eller null.
+ */
+function sjekkSkoleruteOgAvd1(avd1feil: string | null, avd1linjer: readonly string[]): string | null {
+  const sti = join(generert, 'skolerute-endringer.json');
+  const e = existsSync(sti) ? (JSON.parse(readFileSync(sti, 'utf8')) as { forste: boolean; endringer: string[]; ulest: string[]; nyeUlest: string[] }) : null;
+  rapport.push(
+    '#### Skoleruta',
+    !e ? 'Skoleruta ble ikke lest (npm run hent:skolerute kjørte ikke).' : e.forste ? 'Første lesing.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`,
+    ...(e?.endringer ?? []).slice(0, 60).map((l) => `- ${l}`),
+    ...(e && e.ulest.length > 0 ? ['', 'Kunne ikke leses sikkert, og er ikke tatt med:', ...e.ulest.map((l) => `- ${l}${e.nyeUlest.includes(l) ? ' (ny)' : ''}`)] : []),
+    ...(avd1feil || avd1linjer.length > 0 ? ['', '#### Lovtidend avdeling I (kommende endringer)', ...(avd1feil ? [avd1feil] : []), ...avd1linjer.map((l) => `- ${l}`)] : []),
+    '',
+  );
+  const meldinger = [
+    ...(!e ? ['Skoleruta ble ikke lest.'] : e.nyeUlest.length > 0 ? [`Skoleruta: ${e.nyeUlest.length} nye rader som ikke kunne leses sikkert.`] : []),
+    ...(avd1feil ? ['Lovtidend avdeling I kunne ikke leses.'] : []),
+  ];
+  return meldinger.length > 0 ? `${meldinger.join(' ')} Se rapporten.` : null;
+}
+
+/**
+ * Inntaksdatoene fra fylkenes sider (npm run hent:inntak, fase 6, pakke 5), hentet hver uke. Endrede datoer tas inn
+ * automatisk. Finner ikke et mønster datoen lenger (siden kan være endret), kan en side ikke hentes, eller er to sider
+ * i samme fylke uenige, blir det en kontrollsak. Regelen om at to fylker må ha samme dato, gjelder ikke her.
+ */
+function sjekkInntak(): Sjekkresultat {
+  const sti = join(generert, 'inntak-endringer.json');
+  if (!existsSync(sti)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av inntaksdatoene kjørte ikke. Se loggen for steget «Hent Grep, fag- og timefordeling, overordnet del og lovtekst».' };
+  const e = JSON.parse(readFileSync(sti, 'utf8')) as { forste: boolean; endringer: string[]; uenige: string[]; mangler: string[] };
+  const fil = join(rot, 'data/inntak/datoer.json');
+  const fingeravtrykk = existsSync(fil) ? lagFingeravtrykk(readFileSync(fil, 'utf8').replace(/"hentet": "[^"]*"/, '')) : null;
+  rapport.push(
+    '### Inntaksdatoer',
+    e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`,
+    ...e.endringer.map((l) => `- ${l}`),
+    ...(e.uenige.length > 0 ? ['', 'Sidene i samme fylke er uenige (datoen fra den første siden er brukt):', ...e.uenige.map((l) => `- ${l}`)] : []),
+    ...(e.mangler.length > 0 ? ['', 'Fant ikke datoen (siden kan være endret):', ...e.mangler.map((l) => `- ${l}`)] : []),
+    '',
+  );
+  if (e.uenige.length > 0 || e.mangler.length > 0) {
+    return { status: 'endret', fingeravtrykk, melding: `Inntaksdatoene: ${e.uenige.length} uenige og ${e.mangler.length} som ikke ble funnet. Se rapporten.` };
+  }
+  return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endrede inntaksdatoer.` : null };
+}
+
 /** Resultatet av npm run hent:lovdata for hvert dokument (.generert/lovdata-endringer.json). */
 interface Lovdataresultat {
   id: string;
@@ -234,21 +282,29 @@ interface Lovdataresultat {
 function sjekkLovtekst(kilde: Kilde): Sjekkresultat {
   const endringsfil = join(generert, 'lovdata-endringer.json');
   if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av lov- og forskriftstekst kjørte ikke. Se loggen for steget «Hent Grep, fag- og timefordeling og overordnet del».' };
-  const mine = (JSON.parse(readFileSync(endringsfil, 'utf8')) as { dokumenter: Lovdataresultat[] }).dokumenter.filter((d) => d.kilde === kilde.id);
+  const lest = JSON.parse(readFileSync(endringsfil, 'utf8')) as { dokumenter: Lovdataresultat[]; kommende?: { linjer: { dokument: string; tekst: string }[]; feil: string | null } };
+  const mine = lest.dokumenter.filter((d) => d.kilde === kilde.id);
   if (mine.length === 0) return { status: 'feilet', fingeravtrykk: null, melding: 'Kilden er ikke med i content/lovverk.yaml.' };
   const filer = mine.map((d) => join(rot, 'data/lovdata', `${d.id}.json`)).filter((f) => existsSync(f));
   const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8')).join('\n')) : null;
   // Teksten i dokumentene, så verdisjekken kan se etter sitatene (f.eks. tallene for poengberegningen i rules/inntak).
   if (filer.length > 0) tekster[kilde.id] = { tekst: filer.map((f) => dokumenttekst(JSON.parse(readFileSync(f, 'utf8')) as Lovdokument)).join('\n') };
   const endringer = mine.flatMap((d) => d.endringer);
+  // Kommende endringer i dokumentene (data/lovdata/kommende.json, fase 6, pakke 5) står til orientering.
+  const kommende = (lest.kommende?.linjer ?? []).filter((k) => mine.some((d) => d.id === k.dokument)).map((k) => k.tekst);
   rapport.push(
     `### ${kilde.navn}`,
     ...mine.map((d) => (d.feil ? `- ${d.id}: ${d.feil}` : d.forste ? `- ${d.id}: første henting.` : `- ${d.id}: ${d.endringer.length === 0 ? 'ingen endringer' : `${d.endringer.length} endringer`}.`)),
     ...endringer.slice(0, 60).map((l) => `  - ${l}`),
+    ...(kommende.length > 0 ? ['', 'Kommende endringer (Lovtidend avd. I og notatene i datasettet):', ...kommende.map((l) => `- ${l}`)] : []),
     '',
   );
   const feil = mine.find((d) => d.feil);
   if (feil) return { status: 'feilet', fingeravtrykk, melding: `${feil.feil} Appen viser forrige henting.` };
+  if (kilde.id === 'lovdata-lokale') {
+    const r = sjekkSkoleruteOgAvd1(lest.kommende?.feil ?? null, (lest.kommende?.linjer ?? []).filter((l) => !l.dokument).map((l) => l.tekst));
+    if (r) return { status: 'endret', fingeravtrykk, melding: r };
+  }
   return { status: 'ok', fingeravtrykk, melding: endringer.length > 0 ? `Tatt inn automatisk: ${endringer.length === 1 ? 'én endring' : `${endringer.length} endringer`} i teksten.` : null };
 }
 
@@ -283,6 +339,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkHentet('NOR', 'nor-endringer.json', [{ navn: 'Opplæringskontorene', fil: 'data/udir/opplaeringskontor.json', hent: del(null) }]);
       case 'eksamen':
         return sjekkEksamen();
+      case 'inntak':
+        return sjekkInntak();
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };

@@ -4,7 +4,7 @@
 // Vestland er valgt.
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { fristerRute, hentInnhold, poengRute, UNDERSIDER, veiviserRute } from './innhold.ts';
+import { fristerRute, gammelFristerRute, hentInnhold, poengRute, UNDERSIDER, veiviserRute } from './innhold.ts';
 import { oversiktsfavoritt } from '../favoritter.ts';
 
 export const manifest: Modulmanifest = {
@@ -16,8 +16,9 @@ export const manifest: Modulmanifest = {
   rekkefolge: 5,
   ruter: [
     { sti: '/inntak', tittel: 'inntak.tittel', side: () => import('./sider/Oversikt.tsx') },
-    // Tidslinjen og poengberegningen må stå før veiviserne, fordi rutene prøves i rekkefølge.
-    { sti: fristerRute, tittel: 'inntak.frister.tittel', side: () => import('./sider/Frister.tsx') },
+    // Den gamle kalenderen og poengberegningen må stå før veiviserne, fordi rutene prøves i rekkefølge. Den gamle
+    // adressen sender videre til kalenderen, filtrert på inntak (avgjørelse 066).
+    { sti: gammelFristerRute, tittel: 'kalender.tittel', side: () => import('../kalender/sider/TilKalender.tsx') },
     { sti: poengRute, tittel: 'inntak.poeng.tittel', side: () => import('./sider/Poeng.tsx') },
     { sti: '/inntak/:veiviser', tittel: 'inntak.tittel', side: () => import('./sider/Veiviserside.tsx') },
   ],

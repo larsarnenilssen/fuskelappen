@@ -1,6 +1,7 @@
 // Laster veiviseren, stegene, fristene og reglene for poengberegningen fra content/inntak/ ved behov.
 import type { Frist, Innholdselement, Stegelement, Veiviserelement } from '../../core/innhold/skjema.ts';
 import type { Underside } from '../typer.ts';
+import { kalenderLenke } from '../kalender/adresse.ts';
 
 const filer = import.meta.glob<Innholdselement[]>('/content/inntak/*.yaml', { import: 'default' });
 
@@ -31,7 +32,10 @@ export function hentInnhold(): Promise<Inntaksinnhold> {
 }
 
 export const veiviserRute = (id: string) => `/inntak/${id}`;
-export const fristerRute = '/inntak/frister';
+/** Den gamle adressen til Kalender for inntak. Sender videre til kalenderen (avgjørelse 066). */
+export const gammelFristerRute = '/inntak/frister';
+/** Kalenderen filtrert på inntak (fase 6, pakke 5). */
+export const fristerRute = kalenderLenke('inntak');
 export const poengRute = '/inntak/poeng';
 
 /** Kortene med ikon på oversikten. Oversikten og favorittene henter ikonet herfra (`undersider`, avgjørelse 058). */

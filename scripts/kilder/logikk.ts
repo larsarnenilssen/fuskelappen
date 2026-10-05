@@ -15,14 +15,25 @@ export function lagFingeravtrykk(tekst: string): string {
   return `sha256:${createHash('sha256').update(tekst, 'utf8').digest('hex')}`;
 }
 
-/** Sammenligner med fingeravtrykket eier har godkjent. Uten godkjent avtrykk regnes kilden som endret. */
+/**
+ * Sammenligner med fingeravtrykket eier har godkjent. Uten godkjent avtrykk får kilden status «endret», så den
+ * kommer med i kontrollsaken og kan godkjennes. Saken og kontrolloversikten viser den som ny (erNyKilde).
+ */
 export function vurderMotGodkjent(fingeravtrykk: string, godkjent: string | null): Sjekkresultat {
   if (godkjent === fingeravtrykk) return { status: 'ok', fingeravtrykk, melding: null };
   return {
     status: 'endret',
     fingeravtrykk,
-    melding: godkjent === null ? 'Ingen godkjent fingeravtrykk ennå.' : 'Innholdet er endret siden forrige godkjenning.',
+    melding: godkjent === null ? 'Ny kilde, ikke godkjent ennå.' : 'Innholdet er endret siden forrige godkjenning.',
   };
+}
+
+/**
+ * En kilde uten godkjent fingeravtrykk i kilderegisteret er ny. Det finnes ingen godkjent tekst å sammenligne
+ * med, så den merkes «Ny kilde, ikke godkjent ennå» og ikke «Endret siden …» (sak #92).
+ */
+export function erNyKilde(kilde: { godkjent_fingeravtrykk?: string | null } | undefined): boolean {
+  return kilde !== undefined && !kilde.godkjent_fingeravtrykk;
 }
 
 /** Lager ny statuspost og tar vare på når en endring først ble oppdaget. */

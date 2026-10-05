@@ -58,21 +58,70 @@ test.describe('favoritter og forsiden', () => {
     await expect(page.locator('[data-gruppe="skolemiljo"]').getByRole('link', { name: 'Testfunksjon' })).toBeVisible();
     await expect(page.locator('[data-gruppe="felles"]').getByRole('link', { name: 'Skolemiljø (testbegrep)' })).toBeVisible();
     await expect(page.locator('.favorittmerke')).toHaveCount(0);
+    // Uten kalenderen som favoritt står ikke «Neste datoer» i favorittvisningen.
+    await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(0);
   });
 
   test('«Tilpass» flytter gruppene, og standard rekkefølge setter dem tilbake', async ({ page }) => {
+    // Én kolonne, som på mobil. På skrivebord står favorittene i sidekolonnen (testen under).
+    await page.setViewportSize({ width: 390, height: 800 });
     await page.goto('./');
+    // «Neste datoer» står først og favorittene som nummer to (avgjørelse 066).
     const grupper = page.locator('.forsidegruppe');
-    await expect(grupper.first()).toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(0)).toHaveAttribute('data-gruppe', 'neste');
+    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await page.getByRole('button', { name: 'Flytt «Favoritter» ned' }).click();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(grupper.first()).not.toHaveAttribute('data-gruppe', 'favoritter');
-    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(1)).not.toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(2)).toHaveAttribute('data-gruppe', 'favoritter');
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await page.getByRole('button', { name: /Standard rekkefølge/ }).click();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(grupper.first()).toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
+  });
+
+  test('skrivebord: «Neste datoer» og favorittene i sidekolonnen, som står fast og kan slås av (eier 05.10.2026)', async ({ page }) => {
+    await settLagret(page, { favoritter: TO });
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto('./');
+    const kolonne = page.locator('.forside-sidekolonne');
+    await expect(kolonne.locator('[data-gruppe="favoritter"]')).toBeVisible();
+    await expect(kolonne.locator('[data-gruppe="neste"]')).toBeVisible();
+    await expect(page.locator('.forside-oppsett > .forsidegrupper [data-gruppe="favoritter"]')).toHaveCount(0);
+    // Kolonnen står fast under toppfeltet når siden rulles.
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    const topp = await kolonne.evaluate((e) => Math.round(e.getBoundingClientRect().top));
+    const fast = await kolonne.evaluate((e) => Math.round(parseFloat(getComputedStyle(e).top)));
+    expect(topp).toBe(fast);
+    // Slått av står en smal skinne med antall favoritter, og valget huskes.
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await kolonne.getByRole('switch', { name: 'Sidekolonne' }).click();
+    const skinne = page.locator('.forside-skinnen');
+    await expect(skinne.locator('.skinne-tall')).toHaveText('2');
+    await expect(page.locator('[data-gruppe="favoritter"]')).toHaveCount(0);
+    await page.reload();
+    await expect(skinne).toBeVisible();
+    await skinne.getByRole('button', { name: /Vis Favoritter i sidekolonnen/ }).click();
+    await expect(kolonne.locator('[data-gruppe="favoritter"]')).toBeVisible();
+    // I «Tilpass» har kolonnen en egen del.
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    await expect(page.getByRole('heading', { name: 'Sidekolonnen' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Flytt «Favoritter» opp' })).toBeVisible();
+    await page.getByRole('button', { name: 'Ferdig' }).click();
+    // Smalt vindu: alt i én kolonne, uten bryter.
+    await page.setViewportSize({ width: 600, height: 800 });
+    await expect(page.locator('.forside-sidekolonne')).toHaveCount(0);
+    await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'neste');
+    await expect(page.getByRole('switch', { name: 'Sidekolonne' })).toHaveCount(0);
+  });
+
+  test('«Bare favoritter»: kalenderen som favoritt står øverst som «Neste datoer», ikke som kort (eier 05.10.2026)', async ({ page }) => {
+    await settLagret(page, { favoritter: ['kalender:oversikt', ...TO] });
+    await page.goto('./');
+    await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
+    await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'neste');
+    await expect(page.locator('.forsidegruppe:not([data-gruppe="neste"])').getByRole('link', { name: 'Kalender', exact: true })).toHaveCount(0);
   });
 
   test('søkeknappen kommer i toppfeltet når søket er rullet bort, og fører tilbake til søkefeltet', async ({ page }) => {

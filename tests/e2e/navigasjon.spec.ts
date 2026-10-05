@@ -22,7 +22,8 @@ test.describe('navigasjon', () => {
     // Søket åpnes over siden (eier 05.10.2026). Tilbake lukker det og viser siden igjen.
     await meny.getByRole('button', { name: 'Søk' }).click();
     await expect(page.getByRole('searchbox')).toBeFocused();
-    await expect(page.locator('main')).toBeHidden();
+    // Siden står bak søket, men kan ikke brukes mens søket er åpent.
+    await expect(page.locator('main')).toHaveAttribute('inert', '');
     await expect(page).toHaveURL(/#\/innstillinger$/);
     await page.goBack();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
@@ -151,6 +152,22 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
     await page.keyboard.press('Escape');
     await expect(page.getByRole('searchbox')).toHaveCount(0);
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+  });
+
+  test('siden står synlig bak søket, og et trykk utenfor lukker det der brukeren var', async ({ page }) => {
+    await page.goto('./#/fylker/46');
+    await page.evaluate(() => window.scrollTo(0, 300));
+    const y = await page.evaluate(() => window.scrollY);
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).dispatchEvent('click');
+    await expect(page.getByRole('searchbox')).toBeFocused();
+    await expect(page.locator('main h1')).toBeVisible();
+    // Siden bak kan ikke nås med tastatur mens søket er åpent.
+    await expect(page.locator('main')).toHaveAttribute('inert', '');
+    const vindu = page.viewportSize();
+    await page.mouse.click((vindu?.width ?? 400) / 2, (vindu?.height ?? 800) - 10);
+    await expect(page.getByRole('searchbox')).toHaveCount(0);
+    await expect(page.locator('main')).not.toHaveAttribute('inert', '');
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
   });
 
   test('tilbake fra et treff viser søket igjen, og tilbake en gang til viser siden', async ({ page }) => {

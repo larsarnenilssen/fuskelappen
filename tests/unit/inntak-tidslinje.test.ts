@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { Frist } from '../../src/core/innhold/skjema.ts';
 import { gjelder, heleAret, lesFilter, nesteFrist, perManed, sorter, tidspunkt } from '../../src/modules/inntak/tidslinje.ts';
 
-const frist = (id: string, regel: Frist['regel'], grupper: string[] = [], naar?: string): Frist =>
+const frist = (id: string, regel: Frist['regel'], grupper: Frist['grupper'] = [], naar?: string): Frist =>
   ({
     id,
     type: 'frist',
@@ -10,6 +10,7 @@ const frist = (id: string, regel: Frist['regel'], grupper: string[] = [], naar?:
     malgruppe: ['skoleleder'],
     regel,
     grupper,
+    lenker: [],
     paragrafer: [],
     tittel: { nb: id, nn: id },
     tekst: { nb: id, nn: id },
@@ -21,12 +22,12 @@ const frist = (id: string, regel: Frist['regel'], grupper: string[] = [], naar?:
     ...(naar ? { naar: { nb: naar, nn: naar } } : {}),
   }) as Frist;
 
-const okt = frist('okt', { type: 'arlig', dag: 1, maned: 10 }, ['fortrinn']);
-const feb = frist('feb', { type: 'arlig', dag: 1, maned: 2 }, ['fortrinn']);
-const mars = frist('mars', { type: 'arlig', dag: 1, maned: 3 }, ['ungdom']);
-const juli = frist('juli', { type: 'maned', maned: 7 }, ['ungdom'], 'Juli – se Vilbli');
+const okt = frist('okt', { type: 'arlig', dag: 1, maned: 10 }, ['fortrinnsrett']);
+const feb = frist('feb', { type: 'arlig', dag: 1, maned: 2 }, ['fortrinnsrett']);
+const mars = frist('mars', { type: 'arlig', dag: 1, maned: 3 }, ['elever']);
+const juli = frist('juli', { type: 'maned', maned: 7 }, ['elever'], 'Juli – se Vilbli');
 const klage = frist('klage', { type: 'maned', maned: 7 }, [], 'Tre uker etter svaret');
-const nov = frist('nov', { type: 'arlig', dag: 1, maned: 11 }, ['ungdom']);
+const nov = frist('nov', { type: 'arlig', dag: 1, maned: 11 }, ['elever']);
 const voksne = frist('voksne', { type: 'lopende' }, ['voksne'], 'Hele året');
 
 describe('tidslinjen for inntak', () => {
@@ -43,7 +44,7 @@ describe('tidslinjen for inntak', () => {
   });
 
   it('filtrerer på grupper, og frister uten grupper gjelder alle', () => {
-    expect([okt, mars, klage].filter((f) => gjelder(f, 'ungdom')).map((f) => f.id)).toEqual(['mars', 'klage']);
+    expect([okt, mars, klage].filter((f) => gjelder(f, 'elever')).map((f) => f.id)).toEqual(['mars', 'klage']);
     expect([okt, mars, klage].filter((f) => gjelder(f, 'alle'))).toHaveLength(3);
     expect(lesFilter('voksne')).toBe('voksne');
     expect(lesFilter('ukjent')).toBe('alle');

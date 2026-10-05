@@ -1,6 +1,9 @@
 // Skjema for innhold under content/ og for kilderegisteret.
 // Beskrevet i docs/INNHOLDSMODELL.md. Valideres ved bygg og i innholdstestene.
 import { z } from 'zod';
+import { FRISTGRUPPER, KALENDERTEMAER } from './kalendertema.ts';
+
+export { FRISTGRUPPER, KALENDERTEMAER, type Fristgruppe, type Kalendertema } from './kalendertema.ts';
 
 export const isoDato = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Dato må skrives ÅÅÅÅ-MM-DD');
 
@@ -240,8 +243,8 @@ export const veiviserElement = z
 /**
  * En frist (fase 5, avgjørelse 046). `regel` er enten en fast dato hvert år (`arlig`), eller en måned når fristen ikke
  * har en fast dato, f.eks. svar på søknaden i juli (`maned`), eller hele året (`lopende`), f.eks. søknad fra voksne. `naar` er tidspunktet med ord når det ikke er en dato
- * («Etter sensur», «Minst fire uker før fristen»). `grupper` er hvem fristen gjelder, med id-er modulen bestemmer
- * (f.eks. `ungdom`, `voksne`, `fortrinn` i Inntak), og brukes til filter.
+ * («Etter sensur», «Minst fire uker før fristen»). `grupper` er hvem fristen gjelder (FRISTGRUPPER), og brukes til
+ * filter.
  */
 export const fristElement = z
   .object({
@@ -252,6 +255,9 @@ export const fristElement = z
       .discriminatedUnion('type', [
         z.object({ type: z.literal('arlig'), dag: z.number().int().min(1).max(31), maned: z.number().int().min(1).max(12) }).strict(),
         z.object({ type: z.literal('maned'), maned: z.number().int().min(1).max(12) }).strict(),
+        // Fristen faller i løpet av flere måneder, f.eks. svar på søknaden i juli–august (eier 05.10.2026). Står i hver
+        // av månedene i kalenderen.
+        z.object({ type: z.literal('perioden'), fra: z.number().int().min(1).max(12), til: z.number().int().min(1).max(12) }).strict(),
         z.object({ type: z.literal('lopende') }).strict(),
       ])
       .optional(),
@@ -263,8 +269,15 @@ export const fristElement = z
      */
     eksamensdato: z.object({ felt: idSkjema, periode: z.enum(['host', 'var']), fylke: z.boolean().default(false) }).strict().optional(),
     modul: z.string().min(1),
+    /**
+     * Temaene i kalenderen (fase 6, pakke 5, avgjørelse 066). Uten tema gjelder modulen. En frist kan ha flere, f.eks.
+     * klage på standpunkt og eksamen.
+     */
+    tema: z.array(z.enum(KALENDERTEMAER)).optional(),
     malgruppe: z.array(malgruppe).min(1),
-    grupper: z.array(idSkjema).default([]),
+    grupper: z.array(z.enum(FRISTGRUPPER)).default([]),
+    /** Sider, veivisere og begreper i appen som fristen lenker til, f.eks. `/vurdering/klage-pa-karakter`. */
+    lenker: z.array(z.string().regex(/^\/[a-z]/)).default([]),
     /** Paragrafer i Regelverk, som i stegene i veiviserne. */
     paragrafer: z.array(paragrafRef).default([]),
   })
@@ -292,7 +305,7 @@ export const kildeSkjema = z
     niva: nivaSkjema,
     fylke: z.string().regex(/^\d{2}$/).optional(),
     lisens: z.string().min(1),
-    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'ingen']),
+    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'inntak', 'ingen']),
     aktiv: z.boolean(),
     uttrekk: z
       .object({

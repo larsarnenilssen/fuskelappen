@@ -1,6 +1,37 @@
 # Fase 6, pakke 6: «Fag- og svennebrev» i Opplæringstilbud (plukket opp igjen 05.10.2026)
 
-**Før start:** Pakke 5 (kalenderen) skal være levert. Les «Levert så langt» og «Domenet» i `fase-6-pakke-5.md`, og pakke 5-avgjørelsene, så siden kan lenke til kalenderen. Nye begreper i en ny fil under `content/begreper/` føres opp i `src/modules/begreper/tema.ts`.
+Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md og start pakke 6.» Les også `AGENTS.md`, «Levert så langt», «Domenet» og «Åpent» i `fase-6-pakke-5.md`, og avgjørelsene 066–068. Nye begreper i en ny fil under `content/begreper/` føres opp i `src/modules/begreper/tema.ts`.
+
+## Levert i pakke 5 (0.37.0, 05.10.2026)
+
+- **Kalenderen** (`#/kalender`, avgjørelse 066): fristene fra alle modulene, skoleruta fra fylkenes forskrifter (`data/skolerute/`), fylkenes datoer for svar og inntak (`data/inntak/`) og vedtatte endringer i regelverket (`data/lovdata/kommende.json`).
+  - Visning: de neste tolv månedene eller et skoleår (inneværende eller neste).
+  - Filter på tema og hvem det gjelder står i adressen, f.eks. `#/kalender?tema=eksamen&vis=privatister`.
+  - Kalender for inntak og Kalender for eksamen sender videre til kalenderen, ferdig filtrert.
+  - Fristene har feltet `lenker`. En ny side kan lenkes fra en dato ved å legge adressen dit.
+  - Siden om prøvene og den nye siden om fag- og svennebrev kan lenke til `#/kalender?tema=eksamen&vis=laerlinger`.
+- **Forsiden:**
+  - gruppen «Neste datoer»
+  - på skrivebord en sidekolonne med «Neste datoer» og favorittene (avgjørelse 068)
+- **Kontrollsakene og CI** (avgjørelse 067):
+  - En kilde uten godkjent fingeravtrykk merkes «Ny kilde, ikke godkjent ennå».
+  - Lenkesjekken lager sak bare for borte og flyttede lenker.
+  - CI kjører etter hva som er endret: ingen tester for bare dokumentasjon, den raske jobben for bare versjonsnummer.
+- **Søket** legger seg over siden og lukkes med et trykk utenfor.
+
+## Åpent etter pakke 5
+
+- **Vestland:**
+  - vestlandfylke.no svarer verken skymiljøet eller GitHub Actions (tidsavbrudd også med Chromium). Vestlands egne eksamens- og inntaksdatoer mangler derfor.
+  - Forslag til eier: spør fylket om tilgang eller data, og bygg en «lim inn siden»-kontrollsak som leser datoene med de samme mønstrene.
+- **Skoleruta** finnes som forskrift i Lovdata bare for Rogaland, Vestland, Troms og Finnmark. Eier avgjør om de andre fylkenes skolerute skal hentes fra nettsidene deres.
+- **Inntaksdatoene** fra Østfold, Buskerud, Rogaland og Møre og Romsdal (sider uten årstall) kommer først når sidene hentes fra januar.
+- **Lovtidend avdeling I** kan ikke leses fra skymiljøet. Første ukentlige kjøring i Actions viser om lesingen av kunngjøringene virker.
+- **Kontrollspørsmål og godkjenninger** venter på eier:
+  - svar og klage på inntak som perioder i juli og august
+  - kildene fra fase 6, der 26 er nye og ikke godkjent
+- **Orddeling på mobil:** På 320 px deler telefonen lange ord med sin egen ordbok (`hyphens: auto`). Eier kontrollerer det på en liten telefon.
+- Resten av «Åpent» i `fase-6-pakke-5.md` står fortsatt, bortsett fra punktene om kalenderen.
 
 Eier avtalte innhold og plassering 04.10.2026 i fase 6-forslaget (runde 3 og 4, mockup 3 og 4), men oppgaven kom ikke inn i noen pakke. Den står bare som «ikke bygget» under «Åpent» i arbeidsordrene for pakke 3 og 5. Eier ba 05.10.2026 om at den plukkes opp igjen. Den kommer etter kalenderen (pakke 5), med mindre eier vil ha den før.
 

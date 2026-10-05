@@ -277,8 +277,8 @@
     nb: "Klagenemnda avgjør"
     nn: "Klagenemnda avgjer"
   tekst:
-    nb: "En klagenemnd oppnevnt av statsforvalteren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikke klagen. Den kan avvise klagen, stadfeste karakteren eller sette den opp eller ned, og trenger ikke begrunne avgjørelsen. Datoen klagene er behandlet, står i [kalenderen](#/vurdering/eksamen-og-klage)."
-    nn: "Ei klagenemnd oppnemnd av statsforvaltaren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikkje klaga. Ho kan avvise klaga, stadfeste karakteren eller setje han opp eller ned, og treng ikkje grunngi avgjerda. Datoen klagene er behandla, står i [kalenderen](#/vurdering/eksamen-og-klage)."
+    nb: "En klagenemnd oppnevnt av statsforvalteren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikke klagen. Den kan avvise klagen, stadfeste karakteren eller sette den opp eller ned, og trenger ikke begrunne avgjørelsen. Datoen klagene er behandlet, står i [kalenderen](#/kalender?tema=eksamen)."
+    nn: "Ei klagenemnd oppnemnd av statsforvaltaren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikkje klaga. Ho kan avvise klaga, stadfeste karakteren eller setje han opp eller ned, og treng ikkje grunngi avgjerda. Datoen klagene er behandla, står i [kalenderen](#/kalender?tema=eksamen)."
   ansvar:
     nb: "Klagenemnda."
     nn: "Klagenemnda."

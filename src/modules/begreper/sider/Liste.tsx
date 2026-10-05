@@ -60,7 +60,7 @@ export default function Liste({ sporring }: SideProps) {
           {/* Temaene står i en boks som er lukket til brukeren åpner den. Overskriften viser temaet som er valgt (eier 05.10.2026). */}
           <details class="veiviser-kilder begrepsfilter">
             <summary class="forklaring-knapp">
-              <Ikon navn="kategori" />
+              <Ikon navn="filter" />
               <span>{t('begreper.tema.vis', { tema: t(`begreper.tema.${tema ?? 'alle'}`) })}</span>
               <Ikon navn="ned" class="forklaring-pil" />
             </summary>

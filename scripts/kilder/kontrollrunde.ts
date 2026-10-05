@@ -4,6 +4,8 @@
 import type { Kilderegister, Praksis } from '../../src/core/innhold/skjema.ts';
 import type { Kildekontroll, Kontrollinnhold, Kontrollkilde, Kontrollverdi } from '../../src/core/kontroll/indeks.ts';
 import { tellKontroll } from '../../src/core/kontroll/indeks.ts';
+import { ENDRINGER_REGJERINGEN, NYTT_UDIR } from '../../src/modules/kalender/oversikter.ts';
+import { INNTAKSKILDER } from '../inntak/kilder.ts';
 import { kildelenker, praksiskilder } from '../kontroll/kildelenker.ts';
 
 export const RUNDEETIKETT = 'kontrollrunde';
@@ -36,6 +38,35 @@ function dato(iso: string): string {
 export interface Kontrollrunde {
   tittel: string;
   tekst: string;
+}
+
+/**
+ * Påminnelsen i mai om inntaksdatoene for inntaket samme sommer (fase 6, pakke 5, eier 05.10.2026). Datoene hentes
+ * hver uke fra fylkenes sider (scripts/inntak/kilder.ts), men bare når siden har årstallet og en dato.
+ */
+export function inntakspaminnelse(aar: string): string[] {
+  const sider = [...new Map(INNTAKSKILDER.map((k) => [k.url, k])).values()];
+  return [
+    '## Inntaksdatoene for neste inntak',
+    '',
+    `- [ ] Fylkene har lagt ut datoene for svar, svarfrist og andre inntak i ${aar}, og kalenderen viser dem for fylkene under. Står et fylke med datoene for i fjor, eller mangler noe, skriv det til Claude. <!-- inntak:${aar} -->`,
+    ...sider.map((k) => `  - [${k.navn}](${k.url})`),
+    '  - Fylkene som ikke står her, har ikke årstall eller dato på siden sin, eller stenger for henting (se scripts/inntak/kilder.ts). Har et av dem fått datoene, kan siden legges inn.',
+    '',
+  ];
+}
+
+/**
+ * Påminnelsen i august om oversiktene over endringer i regelverket som kalenderen lenker til (fase 6, pakke 5, eier
+ * 05.10.2026). De har ny adresse for hver utgave og kan ikke sjekkes automatisk (regjeringen.no stenger).
+ */
+export function oversiktspaminnelse(aar: string): string[] {
+  return [
+    '## Oversiktene over endringer i kalenderen',
+    '',
+    `- [ ] Kalenderen lenker til nyeste utgave av «Endringer i lover og regler» på regjeringen.no (nå: [fra ${ENDRINGER_REGJERINGEN.utgave}](${ENDRINGER_REGJERINGEN.url})) og «Nytt til barnehage- og skolestart» fra Udir (nå: [${NYTT_UDIR.utgave}](${NYTT_UDIR.url})). Finnes det nyere utgaver, skriv adressene til Claude (\`src/modules/kalender/oversikter.ts\`). <!-- oversikter:${aar} -->`,
+    '',
+  ];
 }
 
 /**
@@ -92,6 +123,8 @@ export function lagKontrollrunde(
           return [`- [ ] ${hva}: ${hvorfor} (${p.kontrollert ? dato(p.kontrollert) : '–'}). <!-- kontroll:${p.type}:${p.id} -->`, ...kildelinje(kilder)].join('\n');
         })),
     '',
+    ...(nr === 5 ? inntakspaminnelse(aar ?? '') : []),
+    ...(nr === 8 ? oversiktspaminnelse(aar ?? '') : []),
     ...(lenker.length > 0
       ? [
           '## Lenker til Vilbli',
@@ -108,6 +141,6 @@ export function lagKontrollrunde(
     '',
     rundemerke(periode),
   ].join('\n');
-  const antall = praksis.length + gamle.length + lenker.length;
+  const antall = praksis.length + gamle.length + lenker.length + (nr === 5 ? 1 : 0);
   return { tittel: `Kontrollrunde ${navn} ${aar ?? ''}: ${antall} ${antall === 1 ? 'punkt' : 'punkter'}`, tekst };
 }

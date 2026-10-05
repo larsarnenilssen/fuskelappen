@@ -119,7 +119,7 @@ describe('utvalget i content/lovverk.yaml', () => {
 
 describe('dataene i data/lovdata', () => {
   const mappe = join(rot, 'data/lovdata');
-  const filer = existsSync(mappe) ? readdirSync(mappe).filter((f) => f.endsWith('.json') && f !== 'oversikt.json' && f !== 'lokale.json') : [];
+  const filer = existsSync(mappe) ? readdirSync(mappe).filter((f) => f.endsWith('.json') && !['oversikt.json', 'lokale.json', 'kommende.json'].includes(f)) : [];
 
   it.runIf(filer.length > 0)('følger skjemaet, og oversikten stemmer med dokumentene', () => {
     const oversikt = lovoversiktSkjema.parse(JSON.parse(readFileSync(join(mappe, 'oversikt.json'), 'utf8')));

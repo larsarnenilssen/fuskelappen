@@ -9,7 +9,7 @@ export { dag, gjelder, heleAret, kortManed, maned, manedsnavn, manedsoverskrift,
 export const MANEDER: readonly number[] = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 /** Filtrene på tidslinjen. `alle` viser alt. De andre er id-er i `grupper` på fristene. */
-export const FILTRE = ['alle', 'ungdom', 'voksne', 'fortrinn'] as const;
+export const FILTRE = ['alle', 'elever', 'voksne', 'fortrinnsrett'] as const;
 export type Filter = (typeof FILTRE)[number];
 
 export function lesFilter(verdi: string | null): Filter {

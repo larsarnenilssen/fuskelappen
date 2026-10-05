@@ -113,6 +113,8 @@
   --skygge-flytende: 0 2px 8px rgb(0 0 0 / 25%);
   /* Svak skygge under knapper som ligger på flaten, f.eks. svarene i en veiviser. */
   --skygge-knapp: 0 1px 2px rgb(0 0 0 / 8%);
+  /* Sløret over siden bak søket fra toppfeltet: siden synes, men trer tilbake (eier 05.10.2026). */
+  --farge-slor: rgb(0 0 0 / 35%);
 
   /* Bevegelse */
   --varighet: 160ms;

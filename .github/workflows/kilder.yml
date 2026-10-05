@@ -1,5 +1,6 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
-# Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md og docs/KOBLING.md på nytt,
+# Skriver data/status/kildestatus.json, verdistatus.json (verdisjekken) og stengte-lenker.json (lenkesjekken) og lager
+# docs/KONTROLL.md og docs/KOBLING.md på nytt,
 # committer dem ved hver kjøring (holder den planlagte jobben i live),
 # oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
 # fersk status og registerdata (Grep, skoleregisteret).
@@ -85,8 +86,8 @@ jobs:
         id: grep
         continue-on-error: true
         # Fag- og timefordelingen (Udir-1), VIGO Kodeverksbase, løpene fra utdanning.no og lov- og forskriftstekst fra
-        # Lovdata, fagene på NDLA, opplæringskontorene i NOR og eksamensdatoene (hvert halvår) hentes selv om Grep feiler,
-        # og omvendt (avgjørelse 024, 026, 039, 052, 053 og 059).
+        # Lovdata, fagene på NDLA, opplæringskontorene i NOR, eksamensdatoene og inntaksdatoene hentes selv om Grep
+        # feiler, og omvendt (avgjørelse 024, 026, 039, 052, 053 og 059).
         run: |
           status=0
           # Grep får høyst 20 minutter. Blir den ikke ferdig, beholdes forrige henting, og de andre kildene hentes likevel.
@@ -94,11 +95,14 @@ jobs:
           npm run hent:udir || status=1
           npm run hent:overordnet || status=1
           npm run hent:lovdata || status=1
+          # Skoleruta leses fra forskriftene hentet over (fase 6, pakke 5), også når noen av dem ikke kunne hentes.
+          npm run hent:skolerute || status=1
           npm run hent:vigo || status=1
           npm run hent:utdanning || status=1
           npm run hent:ndla || status=1
           npm run hent:nor || status=1
           npm run hent:eksamen || status=1
+          npm run hent:inntak || status=1
           exit $status
       # Lageret lagres også når Grep ble stoppet, så neste kjøring fortsetter der denne slapp. Grenen har bare én
       # commit, som skrives over.
@@ -122,7 +126,7 @@ jobs:
       - name: Test de nye dataene fra Grep, Udir-1, VIGO, utdanning.no, NDLA og NOR
         run: |
           mkdir -p .generert
-          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen)" ]; then
+          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak)" ]; then
             echo uendret > .generert/grep-tester.txt
             npm run kobling:rapport
             npm run tilbud:rapport
@@ -137,7 +141,8 @@ jobs:
             mkdir -p .generert/utdanning-ny && cp -r data/utdanning/. .generert/utdanning-ny/
             mkdir -p .generert/ndla-ny && cp -r data/ndla/. .generert/ndla-ny/
             mkdir -p .generert/eksamen-ny && cp -r data/eksamen/. .generert/eksamen-ny/
-            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen
+            mkdir -p .generert/inntak-ny && cp -r data/inntak/. .generert/inntak-ny/
+            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak
             npm run kobling:rapport
             npm run tilbud:rapport
           fi
@@ -160,26 +165,17 @@ jobs:
           path: .generert/kildetekster/
           retention-days: 14
           if-no-files-found: ignore
-      - name: Kontrolloversikt
-        run: npm run kontroll:rapport
-      - name: Sammendrag
-        run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
-      - name: Lagre kildestatus
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/eksamen docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
-          git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
-          git push
-      # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
       # Lenkesjekken (avgjørelse 062): alle faste lenker og et utvalg av de massegenererte, hver uke. Statusen fra
       # forrige gang ligger på grenen lenkesjekk (én commit, som skrives over), så lenker som har feilet to ganger på
-      # rad, kommer i kontrollsaken for lenkene (etikett «lenker»).
+      # rad, kommer i kontrollsaken for lenkene (etikett «lenker»). Nettstedene som stenger for automatisk sjekk, skrives
+      # til data/status/stengte-lenker.json og står i kontrolloversikten, så lenkesjekken går før den lages (sak #98).
       - name: Hent lenkestatus
+        # Feiler hentingen, begynner lenkesjekken på nytt, og kontrolloversikten lages likevel.
+        continue-on-error: true
         run: |
           mkdir -p .generert
           if git fetch --depth=1 origin lenkesjekk; then
-            git show FETCH_HEAD:lenkestatus.json > .generert/lenkestatus.json
+            git show FETCH_HEAD:lenkestatus.json > .generert/lenkestatus.tmp && mv .generert/lenkestatus.tmp .generert/lenkestatus.json
           else
             echo "Ingen lenkestatus ennå."
           fi
@@ -191,6 +187,8 @@ jobs:
         run: npm run lenker:sjekk
       - name: Lagre lenkestatus
         if: always()
+        # Feiler lagringen, skal kildestatusen og kontrolloversikten likevel lagres.
+        continue-on-error: true
         run: |
           f=.generert/lenkestatus.json
           if [ ! -f "$f" ]; then echo "Ingen lenkestatus å lagre."; exit 0; fi
@@ -200,6 +198,18 @@ jobs:
           tree=$(printf '100644 blob %s\tlenkestatus.json\n' "$blob" | git mktree)
           commit=$(git commit-tree "$tree" -m "Lenkestatus $(date -u +%F)")
           git push --force origin "$commit:refs/heads/lenkesjekk"
+      - name: Kontrolloversikt
+        run: npm run kontroll:rapport
+      - name: Sammendrag
+        run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Lagre kildestatus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
+          git push
+      # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
       - name: Endringsforslag (PR)
         # Feiler forslagene, skal kontrollsaken likevel komme.
         continue-on-error: true

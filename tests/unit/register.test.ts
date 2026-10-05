@@ -129,8 +129,8 @@ describe('modulregisteret', () => {
       if (treff) truffet.add(treff.rute.sti);
     }
     // Ruter uten egen side: /arbeidstid sender til forsiden, og /laereplanverket/overordnet-del er samme side som
-    // /laereplanverket.
-    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del'];
+    // /laereplanverket. De gamle kalenderne sender videre til kalenderen, ferdig filtrert (avgjørelse 066).
+    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del', '/inntak/frister', '/vurdering/eksamen-og-klage'];
     const mangler = alleRuter()
       .map(({ rute }) => rute.sti)
       .filter((sti) => !truffet.has(sti) && !utenEgenSide.includes(sti));

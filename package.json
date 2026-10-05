@@ -56,10 +56,12 @@
     "hent:udir": "tsx scripts/hent-udir.ts",
     "hent:overordnet": "tsx scripts/hent-overordnet-del.ts",
     "hent:lovdata": "tsx scripts/hent-lovdata.ts",
+    "hent:skolerute": "tsx scripts/hent-skolerute.ts",
     "hent:vigo": "tsx scripts/hent-vigo.ts",
     "hent:utdanning": "tsx scripts/hent-utdanning.ts",
     "hent:ndla": "tsx scripts/hent-ndla.ts",
     "hent:nor": "tsx scripts/hent-nor.ts",
-    "hent:eksamen": "tsx scripts/hent-eksamen.ts"
+    "hent:eksamen": "tsx scripts/hent-eksamen.ts",
+    "hent:inntak": "tsx scripts/hent-inntak.ts"
   }
 }

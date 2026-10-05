@@ -75,13 +75,13 @@
     nn: "Oppmelding"
   tekst:
     nb: |-
-      Udir fastsetter fristene for oppmelding. Datoene står i [kalenderen](#/vurdering/eksamen-og-klage).
+      Udir fastsetter fristene for oppmelding. Datoene står i [kalenderen](#/kalender?tema=eksamen).
 
       - **Elever:** Skolen melder opp alle elever i fag som avsluttes med eksamen. Til ny, utsatt og særskilt eksamen melder eleven seg selv, til skolen.
       - **Lærlinger og kandidater for fagbrev på jobb:** Lærebedriften melder opp.
       - **Privatister:** Melder seg selv, der fylkeskommunen bestemmer, og betaler prøveavgift. Ny og utsatt eksamen er gratis.
     nn: |-
-      Udir fastset fristane for oppmelding. Datoane står i [kalenderen](#/vurdering/eksamen-og-klage).
+      Udir fastset fristane for oppmelding. Datoane står i [kalenderen](#/kalender?tema=eksamen).
 
       - **Elevar:** Skolen melder opp alle elevar i fag som blir avslutta med eksamen. Til ny, utsett og særskild eksamen melder eleven seg sjølv, til skolen.
       - **Lærlingar og kandidatar for fagbrev på jobb:** Lærebedrifta melder opp.
@@ -101,8 +101,8 @@
     nb: "Trekket blir kjent"
     nn: "Trekket blir kjent"
   tekst:
-    nb: "Elevene får vite hvilke fag de er trukket ut til, på datoen Udir fastsetter. Det gjelder både skriftlig, muntlig og praktisk eksamen. Datoene står i [kalenderen](#/vurdering/eksamen-og-klage)."
-    nn: "Elevane får vite kva fag dei er trekte ut til, på datoen Udir fastset. Det gjeld både skriftleg, munnleg og praktisk eksamen. Datoane står i [kalenderen](#/vurdering/eksamen-og-klage)."
+    nb: "Elevene får vite hvilke fag de er trukket ut til, på datoen Udir fastsetter. Det gjelder både skriftlig, muntlig og praktisk eksamen. Datoene står i [kalenderen](#/kalender?tema=eksamen)."
+    nn: "Elevane får vite kva fag dei er trekte ut til, på datoen Udir fastset. Det gjeld både skriftleg, munnleg og praktisk eksamen. Datoane står i [kalenderen](#/kalender?tema=eksamen)."
   paragrafer: [opplaeringsforskrifta/9-28]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }

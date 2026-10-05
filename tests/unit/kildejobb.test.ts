@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { lagFingeravtrykk, normaliserTekst, nyPost, vurderMotGodkjent } from '../../scripts/kilder/logikk.ts';
+import { erNyKilde, lagFingeravtrykk, normaliserTekst, nyPost, vurderMotGodkjent } from '../../scripts/kilder/logikk.ts';
 import { kfTekst } from '../../scripts/kilder/kf-infoserie.ts';
 import { ventetid } from '../../scripts/hent-grep.ts';
 import { feilmelding, filtrerSkoler, lovdataFilnavn, skoleendringer, strukturhint, trekkUt } from '../../scripts/kilder/metoder.ts';
@@ -16,7 +16,14 @@ describe('fingeravtrykk og status', () => {
   it('sammenligner med godkjent fingeravtrykk', () => {
     expect(vurderMotGodkjent(A, A).status).toBe('ok');
     expect(vurderMotGodkjent(A, B).status).toBe('endret');
-    expect(vurderMotGodkjent(A, null)).toMatchObject({ status: 'endret', melding: 'Ingen godkjent fingeravtrykk ennå.' });
+    expect(vurderMotGodkjent(A, null)).toMatchObject({ status: 'endret', melding: 'Ny kilde, ikke godkjent ennå.' });
+  });
+
+  it('kjenner igjen en ny kilde: uten godkjent fingeravtrykk i registeret (sak #92)', () => {
+    expect(erNyKilde({ godkjent_fingeravtrykk: null })).toBe(true);
+    expect(erNyKilde({})).toBe(true);
+    expect(erNyKilde({ godkjent_fingeravtrykk: A })).toBe(false);
+    expect(erNyKilde(undefined)).toBe(false);
   });
 
   it('husker når en endring først ble oppdaget', () => {

@@ -1,0 +1,55 @@
+{
+ "lest": "2026-10-05",
+ "lovtidendAvd1": null,
+ "endringer": [
+  {
+   "id": "opplaeringslova-lov-2026-06-12-22",
+   "dokument": "opplaeringslova",
+   "paragrafer": [
+    "6-6"
+   ],
+   "endretVed": {
+    "refid": "lov/2026-06-12-22",
+    "tittel": "lov 12. juni 2026 nr. 22"
+   },
+   "iKraft": "2028-07-01",
+   "iKraftTekst": "i kraft 1 juli 2028",
+   "kunngjoring": "https://lovdata.no/dokument/LTI/lov/2026-06-12-22",
+   "kilde": "datasett"
+  },
+  {
+   "id": "arbeidsmiljoloven-lov-2026-06-19-48",
+   "dokument": "arbeidsmiljoloven",
+   "paragrafer": [
+    "14-2"
+   ],
+   "endretVed": {
+    "refid": "lov/2026-06-19-48",
+    "tittel": "lov 19. juni 2026 nr. 48"
+   },
+   "iKraft": null,
+   "iKraftTekst": "i kraft fra den tid Kongen bestemmer",
+   "kunngjoring": "https://lovdata.no/dokument/LTI/lov/2026-06-19-48",
+   "kilde": "datasett"
+  },
+  {
+   "id": "offentleglova-lov-2026-06-19-36",
+   "dokument": "offentleglova",
+   "paragrafer": [
+    "2",
+    "6",
+    "7",
+    "8",
+    "30"
+   ],
+   "endretVed": {
+    "refid": "lov/2026-06-19-36",
+    "tittel": "lov 19. juni 2026 nr. 36"
+   },
+   "iKraft": null,
+   "iKraftTekst": "i kraft frå den tid Kongen bestemmer",
+   "kunngjoring": "https://lovdata.no/dokument/LTI/lov/2026-06-19-36",
+   "kilde": "datasett"
+  }
+ ]
+}

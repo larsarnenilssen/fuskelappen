@@ -1,9 +1,10 @@
 # Fristene ved inntak gjennom året (fase 5, pakke 2, avgjørelse 046). Egne ord. Godkjent i forslaget av eier
 # 03.10.2026 (docs/arbeidsordrer/fase-5-forslag.md). Vestland-fristene står i frister-vestland.yaml.
-# grupper: ungdom (søkere med ungdomsrett), voksne, fortrinn (fortrinnsrett og individuell behandling).
+# grupper: elever (søkere med ungdomsrett), voksne, fortrinnsrett (fortrinnsrett og individuell behandling).
 - id: fr-voksne-lopende
   type: frist
   modul: inntak
+  lenker: [/inntak/rett-inntak-soknad]
   malgruppe: [skoleleder, laerer]
   regel: { type: lopende }
   grupper: [voksne]
@@ -23,9 +24,10 @@
 - id: fr-melding-fortrinn
   type: frist
   modul: inntak
+  lenker: [/begreper/fortrinnsrett]
   malgruppe: [skoleleder]
   regel: { type: arlig, dag: 1, maned: 10 }
-  grupper: [fortrinn]
+  grupper: [fortrinnsrett]
   tittel:
     nb: Kommunen melder elever som kan ha fortrinnsrett
     nn: Kommunen melder elevar som kan ha fortrinnsrett
@@ -42,9 +44,10 @@
 - id: fr-kunngjoring
   type: frist
   modul: inntak
+  lenker: [/inntak/rett-inntak-soknad]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 1 }
-  grupper: [ungdom, fortrinn]
+  grupper: [elever, fortrinnsrett]
   naar:
     nb: Minst fire uker før fristen
     nn: Minst fire veker før fristen
@@ -64,9 +67,10 @@
 - id: fr-soknad-februar
   type: frist
   modul: inntak
+  lenker: [/begreper/fortrinnsrett, /inntak/rett-inntak-soknad]
   malgruppe: [skoleleder, laerer]
   regel: { type: arlig, dag: 1, maned: 2 }
-  grupper: [fortrinn]
+  grupper: [fortrinnsrett]
   tittel:
     nb: Søknadsfrist for noen grupper
     nn: Søknadsfrist for nokre grupper
@@ -101,9 +105,10 @@
 - id: fr-soknad-mars
   type: frist
   modul: inntak
+  lenker: [/inntak/rett-inntak-soknad, /inntak/poeng]
   malgruppe: [skoleleder, laerer]
   regel: { type: arlig, dag: 1, maned: 3 }
-  grupper: [ungdom]
+  grupper: [elever]
   tittel:
     nb: Søknadsfrist
     nn: Søknadsfrist
@@ -133,7 +138,7 @@
   modul: inntak
   malgruppe: [skoleleder]
   regel: { type: arlig, dag: 15, maned: 3 }
-  grupper: [fortrinn]
+  grupper: [fortrinnsrett]
   tittel:
     nb: Søknader til skoler med tegnspråk sendes videre
     nn: Søknader til skular med teiknspråk blir sende vidare
@@ -152,7 +157,7 @@
   modul: inntak
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
-  grupper: [ungdom]
+  grupper: [elever]
   naar:
     nb: Etter standpunkt og sensur
     nn: Etter standpunkt og sensur
@@ -173,11 +178,11 @@
   type: frist
   modul: inntak
   malgruppe: [skoleleder, laerer]
-  regel: { type: maned, maned: 7 }
-  grupper: [ungdom, fortrinn]
+  regel: { type: perioden, fra: 7, til: 8 }
+  grupper: [elever, fortrinnsrett]
   naar:
-    nb: Juli – datoene står på Vilbli
-    nn: Juli – datoane står på Vilbli
+    nb: Juli–august – fylket bestemmer datoene
+    nn: Juli–august – fylket bestemmer datoane
   tittel:
     nb: Svar, svarfrist og andre inntak
     nn: Svar, svarfrist og andre inntak
@@ -190,12 +195,14 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er «andre inntak» og «venteliste» riktige ord for det som skjer etter det første svaret?"
+    - "Kalenderen viser svaret og andre inntak i både juli og august. Første inntak er 8. juli og sisteinntak 5. august 2026 i Telemark. Er juli–august riktig for alle fylkene?"
 
 - id: fr-klage
   type: frist
   modul: inntak
+  lenker: [/begreper/klage]
   malgruppe: [skoleleder, laerer]
-  regel: { type: maned, maned: 7 }
+  regel: { type: perioden, fra: 7, til: 8 }
   naar:
     nb: Tre uker etter svaret
     nn: Tre veker etter svaret
@@ -224,3 +231,4 @@
   kontrollert: null
   kontrollsporsmal:
     - "Klagefristen gjelder alle søkere, også voksne. Er det riktig å vise den i alle filtrene?"
+    - "Kalenderen viser klagefristen i juli og august, fordi svaret kan komme i begge månedene. Stemmer det?"

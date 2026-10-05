@@ -14,6 +14,7 @@ import { Sti } from '../../../components/Sti.tsx';
 import { Tabell } from '../../../components/Tabell.tsx';
 import { type Forklaringselement, hentInnhold, klageRute, UDIR_PROVER, UNDERSIDER } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
+import { kalenderLenke } from '../../kalender/adresse.ts';
 
 const STI = ['pr-krav', 'pr-oppmelding', 'pr-provenemnda', 'pr-vurdering', 'pr-klage'];
 const HELE_VEIEN = ['pr-tilrettelegging', 'pr-bortvisning'];
@@ -74,7 +75,7 @@ export default function Provene() {
                 <Inngang rute={`${klageRute}?steg=kl-prove&svar=prove`} ikon="veiviser" tittel={t('vurdering.klage.kort')} tekst={t('vurdering.provene.klageTekst')} />
               </li>
               <li>
-                <Inngang {...UNDERSIDER.frister} tittel={t('vurdering.frister.tittel')} tekst={t('vurdering.frister.beskrivelse')} />
+                <Inngang {...UNDERSIDER.frister} rute={kalenderLenke('eksamen', 'laerlinger')} tittel={t('vurdering.frister.tittel')} tekst={t('vurdering.frister.beskrivelse')} />
               </li>
               <li>
                 <Inngang {...UNDERSIDER.eksamen} tittel={t('vurdering.eksamen.kort')} tekst={t('vurdering.eksamen.beskrivelse')} />

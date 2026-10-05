@@ -84,6 +84,13 @@ describe('slaSammen (eier 04.10.2026)', () => {
     expect(s.uenige).toHaveLength(1);
   });
 
+  it('en side uten klokkeslett er enig med sidene som har samme dato med klokkeslett', () => {
+    const medKl = (kilde: string, fylke: string): Kandidat => ({ ...kand(kilde, fylke, '2027-04-28', 'trekk'), periode: 'var-2027', kl: '09.00' });
+    const s = slaSammen([medKl('a', '50'), medKl('b', '56'), { ...kand('c', '31', '2027-04-28', 'trekk'), periode: 'var-2027' }]);
+    expect(s.nasjonal['var-2027']?.['trekk']).toEqual({ fra: '2027-04-28', kl: '09.00', kilder: ['a', 'b', 'c'] });
+    expect(s.uenige).toEqual([]);
+  });
+
   it('fylkets egne datoer lagres for fylket', () => {
     const s = slaSammen([{ kilde: 'a', fylke: '32', egen: true, periode: 'var-2027', felt: 'privatister-datoer', fra: '2027-03-24' }]);
     expect(s.fylker['32']?.['var-2027']?.['privatister-datoer']).toEqual({ fra: '2027-03-24', kilder: ['a'] });
@@ -113,6 +120,90 @@ describe('hentingen', () => {
   });
 });
 
+const fylkeskilde = (id: string): Eksamenskilde => {
+  const k = EKSAMENSKILDER.find((x) => x.id === id);
+  if (!k) throw new Error(`Fant ikke kilden ${id}`);
+  return k;
+};
+const lest = (id: string, tekst: string) => {
+  const r = lesKilde(fylkeskilde(id), tekst, '2026-10-05');
+  return { mangler: r.mangler, datoer: Object.fromEntries(r.kandidater.map((k) => [`${k.felt} ${k.periode}`, [k.fra ?? null, k.til ?? null]])) };
+};
+
+describe('fylkene som kom med 05.10.2026 (fase 6, pakke 5)', () => {
+  it('Troms: søknadsfristen for tilrettelegging', () => {
+    expect(lest('troms-privatist-tilrettelegging', 'Søknaden må være oss i hende senest 15. september for høsteksamen og 1. februar for våreksamen.')).toEqual({
+      mangler: [],
+      datoer: { 'tilrettelegging-privatister host-2026': ['2026-09-15', null], 'tilrettelegging-privatister var-2027': ['2027-02-01', null] },
+    });
+  });
+
+  it('Østfold: trekket, oppmeldingen, datoene, tilretteleggingen og karakterene', () => {
+    expect(lest('ostfold-elev-trekk', 'Våren 2027 offentliggjøres eksamenstrekket for alle elever 28. april.').datoer).toEqual({ 'trekk var-2027': ['2027-04-28', null] });
+    expect(lest('ostfold-privatist-oppmelding', 'Høsteksamen: 1. september–15. september\nVåreksamen: 15. januar–1. februar').datoer).toEqual({
+      'privatister-oppmelding host-2026': ['2026-09-01', '2026-09-15'],
+      'privatister-oppmelding var-2027': ['2027-01-15', '2027-02-01'],
+    });
+    expect(lest('ostfold-privatist-dato', 'Høsteksamen: Fra 25. oktober kan du sjekke eksamensdato.\nVåreksamen: Fra 25. mars kan du sjekke eksamensdato.').datoer).toEqual({
+      'privatister-datoer host-2026': ['2026-10-25', null],
+      'privatister-datoer var-2027': ['2027-03-25', null],
+    });
+    expect(lest('ostfold-privatist-tilrettelegging', 'Søknadsfrist: 15. mars for våreksamen og 15. oktober for høsteksamen.').datoer).toEqual({
+      'tilrettelegging-privatister var-2027': ['2027-03-15', null],
+      'tilrettelegging-privatister host-2026': ['2026-10-15', null],
+    });
+    expect(lest('ostfold-privatist-karakter', 'Karakter etter høsteksamen settes 5. januar 2027. Karakteren blir tilgjengelig.\nKarakter etter våreksamen settes 18. juni 2027.').datoer).toEqual({
+      'sensur host-2026': ['2027-01-05', null],
+      'sensur var-2027': ['2027-06-18', null],
+    });
+  });
+
+  it('Buskerud: oppmeldingen, datoene og tilretteleggingen', () => {
+    expect(lest('buskerud-privatist-oppmelding', 'Høsteksamen: 1. september–15. september\nVåreksamen: 15. januar–1. februar').mangler).toEqual([]);
+    expect(lest('buskerud-privatist-dato', 'Høsteksamen: Fra 24. oktober kan du sjekke.\nVåreksamen: Fra 24. mars kan du sjekke.').datoer).toEqual({
+      'privatister-datoer host-2026': ['2026-10-24', null],
+      'privatister-datoer var-2027': ['2027-03-24', null],
+    });
+    expect(lest('buskerud-privatist-tilrettelegging', 'Søknadsfrist: 8. februar for våreksamen og 22. september for høsteksamen.').datoer).toEqual({
+      'tilrettelegging-privatister var-2027': ['2027-02-08', null],
+      'tilrettelegging-privatister host-2026': ['2026-09-22', null],
+    });
+  });
+
+  it('Vestfold: oppmeldingen uten mellomrom, datoene og tilretteleggingen', () => {
+    expect(lest('vestfold-privatist-oppmelding', 'Høsteksamen: 1.september - 15.september (stenger klokken 23.55)\nVåreksamen: 15.januar - 1.februar (stenger klokken 23.55)').datoer).toEqual({
+      'privatister-oppmelding host-2026': ['2026-09-01', '2026-09-15'],
+      'privatister-oppmelding var-2027': ['2027-01-15', '2027-02-01'],
+    });
+    expect(lest('vestfold-privatist-eksamensperiode', 'Eksamensdato for muntlig eksamen publiseres innen 1. november for høsteksamen og innen 15. mars for våreksamen.').datoer).toEqual({
+      'privatister-datoer host-2026': ['2026-11-01', null],
+      'privatister-datoer var-2027': ['2027-03-15', null],
+    });
+    expect(lest('vestfold-privatist-tilrettelegging', 'Frist for å søke om tilrettelegging er:\n15. september for høsteksamen\n1. februar for våreksamen').datoer).toEqual({
+      'tilrettelegging-privatister host-2026': ['2026-09-15', null],
+      'tilrettelegging-privatister var-2027': ['2027-02-01', null],
+    });
+  });
+
+  it('Agder: oppmeldingen', () => {
+    expect(lest('agder-privatist', 'Oppmelding til våreksamen: Fra og med 15. januar til og med 1. februar.\nOppmelding til høsteksamen: Fra og med 1. september til og med 15. september.').datoer).toEqual({
+      'privatister-oppmelding host-2026': ['2026-09-01', '2026-09-15'],
+      'privatister-oppmelding var-2027': ['2027-01-15', '2027-02-01'],
+    });
+  });
+
+  it('Møre og Romsdal: oppmeldingen og tilretteleggingen på nynorsk', () => {
+    expect(lest('more-og-romsdal-privatist-oppmelding', 'Frist for oppmelding til våreksamen: frå og med 15. januar til og med 1. februar\nFrist for oppmelding til hausteksamen: frå og med 1. september til og med 15. september').datoer).toEqual({
+      'privatister-oppmelding host-2026': ['2026-09-01', '2026-09-15'],
+      'privatister-oppmelding var-2027': ['2027-01-15', '2027-02-01'],
+    });
+    expect(lest('more-og-romsdal-privatist-tilrettelegging', '30. september for hausteksamen\n\u200b\u200b15. februar for våreksamen').datoer).toEqual({
+      'tilrettelegging-privatister host-2026': ['2026-09-30', null],
+      'tilrettelegging-privatister var-2027': ['2027-02-15', null],
+    });
+  });
+});
+
 const frist = (id: string, eksamensdato: Frist['eksamensdato']): Frist =>
   ({
     id,
@@ -121,6 +212,7 @@ const frist = (id: string, eksamensdato: Frist['eksamensdato']): Frist =>
     malgruppe: ['skoleleder'],
     regel: { type: 'maned', maned: 11 },
     grupper: [],
+    lenker: [],
     paragrafer: [],
     tittel: { nb: id, nn: id },
     tekst: { nb: id, nn: id },

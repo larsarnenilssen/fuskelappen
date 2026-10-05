@@ -17,6 +17,8 @@ export interface Resultat {
 }
 
 const sti = (u: URL) => u.pathname.replace(/\/+$/, '').toLowerCase();
+/** Nettstedet for en lenke, uten www. */
+const vert = (url: string) => new URL(url).hostname.replace(/^www\./, '');
 
 /**
  * Vurderer svaret: 404 og 410 er borte. En videresending til forsiden fra en dypere side er trolig en side som er
@@ -54,7 +56,7 @@ export async function sjekkAlle(urler: readonly string[], valg: { parallelt?: nu
   const { parallelt = 6, pauseMs = 1000, sjekk = sjekkUrl } = valg;
   const perVert = new Map<string, string[]>();
   for (const u of urler) {
-    const v = new URL(u).hostname.replace(/^www\./, '');
+    const v = vert(u);
     perVert.set(v, [...(perVert.get(v) ?? []), u]);
   }
   const koer = [...perVert.values()].sort((a, b) => b.length - a.length);
@@ -112,7 +114,7 @@ export function velgStikkprove(lenker: readonly Lenke[], status: Lenkestatus | n
 export function stengteNettsteder(resultater: readonly Resultat[]): string[] {
   const perVert = new Map<string, Resultat[]>();
   for (const r of resultater) {
-    const v = new URL(r.url).hostname.replace(/^www\./, '');
+    const v = vert(r.url);
     perVert.set(v, [...(perVert.get(v) ?? []), r]);
   }
   return [...perVert].filter(([, rs]) => rs.every((r) => r.svar === 'feil')).map(([v]) => v).sort();
@@ -121,11 +123,14 @@ export function stengteNettsteder(resultater: readonly Resultat[]): string[] {
 /** Grensen for varsel: lenker som har vært borte eller flyttet så mange sjekker på rad (eier: to uker på rad). */
 export const VARSEL_ETTER = 2;
 
-/** Rapporten i Markdown, til kontrollsaken for lenkene. Tom når ingen lenker trenger tilsyn. */
-export function lagRapport(status: Lenkestatus, lenker: readonly Lenke[], stengte: readonly string[]): string {
+/**
+ * Rapporten i Markdown, til kontrollsaken for lenkene. Tom når ingen lenker er borte eller flyttet. Nettstedene som
+ * stenger for automatisk sjekk, står i kontrolloversikten (stengteLenker), ikke i saken (sak #98).
+ */
+export function lagRapport(status: Lenkestatus, lenker: readonly Lenke[]): string {
   const brukt = new Map(lenker.map((l) => [l.url, l.brukt]));
   const varsle = Object.entries(status.lenker).filter(([, s]) => (s.svar === 'borte' || s.svar === 'flyttet') && s.ganger >= VARSEL_ETTER);
-  if (varsle.length === 0 && stengte.length === 0) return '';
+  if (varsle.length === 0) return '';
   const linje = ([url, s]: [string, Lenkestatus['lenker'][string]]) =>
     `- [ ] ${url}${s.til ? ` → ${s.til}` : ''} (${s.ganger} ganger på rad). Står i: ${(brukt.get(url) ?? []).join(', ')}`;
   return [
@@ -133,6 +138,37 @@ export function lagRapport(status: Lenkestatus, lenker: readonly Lenke[], stengt
     '',
     ...(varsle.some(([, s]) => s.svar === 'borte') ? ['## Borte', '', ...varsle.filter(([, s]) => s.svar === 'borte').map(linje), ''] : []),
     ...(varsle.some(([, s]) => s.svar === 'flyttet') ? ['## Flyttet', '', ...varsle.filter(([, s]) => s.svar === 'flyttet').map(linje), ''] : []),
-    ...(stengte.length > 0 ? ['## Kan ikke sjekkes automatisk', '', 'Nettstedene svarte ikke på noen av lenkene. De stenger trolig for automatiske forespørsler. Lenkene dit sjekkes i kontrollrunden.', '', ...stengte.map((v) => `- ${v}`), ''] : []),
   ].join('\n');
+}
+
+/**
+ * Nettstedene som stenger for automatisk sjekk, med lenkene dit og hvor de står. Lagres i
+ * data/status/stengte-lenker.json og vises i kontrolloversikten (docs/KONTROLL.md, sak #98).
+ */
+export interface StengteLenker {
+  /** Datoen for lenkesjekken (ÅÅÅÅ-MM-DD), eller null før første sjekk. */
+  sjekket: string | null;
+  nettsteder: {
+    vert: string;
+    /** Lenkene i innholdet, kilderegisteret og koden, som sjekkes hver gang. */
+    lenker: { url: string; brukt: string[] }[];
+    /** Antall massegenererte lenker til nettstedet (stikkprøver). */
+    stikkprover: number;
+  }[];
+}
+
+
+/** Lenkene i appen til de stengte nettstedene: de faste lenkene med hvor de står, og antallet stikkprøver. */
+export function stengteLenker(stengte: readonly string[], lenker: readonly Lenke[], sjekket: string): StengteLenker {
+  return {
+    sjekket,
+    nettsteder: stengte.map((v) => {
+      const dit = lenker.filter((l) => vert(l.url) === v);
+      return {
+        vert: v,
+        lenker: dit.filter((l) => l.type === 'fast').map((l) => ({ url: l.url, brukt: [...l.brukt] })),
+        stikkprover: dit.filter((l) => l.type === 'stikkprove').length,
+      };
+    }),
+  };
 }

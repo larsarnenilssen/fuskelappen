@@ -8,6 +8,7 @@ import type { Kildekontroll } from '../../src/core/kontroll/indeks.ts';
 import type { Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Tekstendring } from './avsnitt.ts';
 import type { Grependringer } from './grep.ts';
+import { erNyKilde } from './logikk.ts';
 
 export const KONTROLLETIKETT = 'kontroll';
 /** Etiketten de gamle sakene per kilde hadde. De lukkes og erstattes av kontrollsaken. */
@@ -108,11 +109,15 @@ export function punktTreff(endret: string, punkt: string): boolean {
   return e.some((a) => p.some((b) => a === b || b.startsWith(`${a}.`) || a.startsWith(`${b}.`)));
 }
 
-function kildeseksjon(g: Ukesgrunnlag, id: string, navn: string, url: string, endretSiden: string | null, fingeravtrykk: string | null): string[] {
-  const linjer = [`### ${navn}`, '', `Endret siden ${endretSiden ? dato(endretSiden) : 'ukjent dato'}. [Åpne kilden](${url})`, ''];
+function kildeseksjon(g: Ukesgrunnlag, id: string, navn: string, url: string, endretSiden: string | null, fingeravtrykk: string | null, ny: boolean): string[] {
+  // En ny kilde er ikke godkjent før, så den har ingen dato for endring og ingen tekst å sammenligne med (sak #92).
+  const status = ny ? 'Ny kilde, ikke godkjent ennå.' : `Endret siden ${endretSiden ? dato(endretSiden) : 'ukjent dato'}.`;
+  const linjer = [`### ${navn}`, '', `${status} [Åpne kilden](${url})`, ''];
   const liste = g.endringer[id];
   const kontroll = g.indeks.find((k) => k.kilde === id);
-  if (liste === undefined || liste === null) {
+  if ((liste === undefined || liste === null) && ny) {
+    linjer.push('Det finnes ingen godkjent tekst å sammenligne med, så det er ingen endringer å vise. Åpne kilden og se at den er riktig kilde for innholdet som viser til den.', '');
+  } else if (liste === undefined || liste === null) {
     linjer.push('Endringene kan ikke vises, fordi det ikke finnes lagret tekst fra forrige godkjenning. Åpne kilden og se etter selv.', '');
   } else if (liste.length === 0) {
     linjer.push('Teksten er den samme som ved forrige godkjenning. Det er bare formatering eller filen som er endret.', '');
@@ -132,7 +137,9 @@ function kildeseksjon(g: Ukesgrunnlag, id: string, navn: string, url: string, en
       }
     }
   }
-  linjer.push(`- [ ] Jeg har sett på endringene i ${navn}, og det nye fingeravtrykket kan godkjennes. <!-- godkjenn-kilde:${id}:${fingeravtrykk ?? '-'} -->`, '');
+  // Merket bak avkrysningen leses av godkjenning.ts og må være likt for nye og endrede kilder.
+  const hva = ny ? `Jeg har sett på den nye kilden ${navn}, og fingeravtrykket kan godkjennes.` : `Jeg har sett på endringene i ${navn}, og det nye fingeravtrykket kan godkjennes.`;
+  linjer.push(`- [ ] ${hva} <!-- godkjenn-kilde:${id}:${fingeravtrykk ?? '-'} -->`, '');
   return linjer;
 }
 
@@ -185,17 +192,23 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
   let orientering = 0;
 
   // Registerdata (Grep og fag- og timefordelingen) har egne deler lenger ned.
-  const endrede = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'endret' && !['grep', 'udir-fagfordeling'].includes(kilder.get(id)?.sjekkmetode ?? ''));
-  if (endrede.length > 0) {
+  // Kilder uten godkjent fingeravtrykk står for seg, før de endrede (sak #92).
+  const alleEndrede = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'endret' && !['grep', 'udir-fagfordeling'].includes(kilder.get(id)?.sjekkmetode ?? ''));
+  for (const [overskrift, ny] of [
+    ['## Nye kilder, ikke godkjent ennå', true],
+    ['## Endret i kildene', false],
+  ] as const) {
+    const utvalg = alleEndrede.filter(([id]) => erNyKilde(kilder.get(id)) === ny);
+    if (utvalg.length === 0) continue;
     deler.push([
-      '## Endret i kildene',
+      overskrift,
       '',
-      ...endrede.flatMap(([id, p]) => {
+      ...utvalg.flatMap(([id, p]) => {
         const k = kilder.get(id);
-        return kildeseksjon(g, id, k?.navn ?? id, k?.url ?? '', p.endret_siden, p.fingeravtrykk);
+        return kildeseksjon(g, id, k?.navn ?? id, k?.url ?? '', p.endret_siden, p.fingeravtrykk, ny);
       }),
     ]);
-    punkter += endrede.length;
+    punkter += utvalg.length;
   }
 
   const avvik = Object.entries(g.verdistatus?.verdier ?? {}).filter(([, p]) => p.status === 'avvik');

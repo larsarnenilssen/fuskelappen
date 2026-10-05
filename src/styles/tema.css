@@ -32,6 +32,8 @@
   --farge-feil: var(--p-roed-700);
   --farge-feil-flate: var(--p-roed-100);
   --farge-info-flate: var(--p-blaa-100);
+  /* Sidekolonnen på forsiden på skrivebord: en lys nyanse av temafargen (eier 05.10.2026). */
+  --farge-sidekolonne: color-mix(in srgb, var(--farge-flate-2) 55%, var(--farge-bakgrunn));
   --farge-fokus: var(--p-fokus-lys);
   --farge-temafarge: var(--meta-temafarge-lys);
   --diagram-undervisning: var(--p-blaa-700);
@@ -57,6 +59,12 @@
   --vurdering-underveis: var(--p-blaa-100);
   --vurdering-halvaar: var(--p-blaa-700);
   --vurdering-eksamen: var(--p-lilla-700);
+  /* Temaene i kalenderen (fase 6, pakke 5). Peker på diagramfargene, så lyst og mørkt tema følger med. */
+  --kalender-inntak: var(--diagram-tekst-undervisning);
+  --kalender-vurdering: var(--diagram-tekst-motetid);
+  --kalender-eksamen: var(--diagram-tekst-funksjon);
+  --kalender-skolerute: var(--diagram-tekst-annen);
+  --kalender-regelverk: var(--diagram-tekst-selv);
   --vurdering-standpunkt: var(--p-rav-700);
 }
 

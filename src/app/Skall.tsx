@@ -195,9 +195,15 @@ export function Skall() {
       </header>
       {__TESTVERSJON__ && <p class="testversjon">{t('app.testversjon')}</p>}
       {sok !== null && (
-        // Søkefeltet som på forsiden, over siden. «Lukk», Esc og tilbake lukker det og viser siden igjen.
-        <div class="toppsok">
-          <div class="forside-topp">
+        // Søkefeltet som på forsiden, lagt over siden (eier 05.10.2026). Siden står synlig bak. Et trykk utenfor feltet
+        // og treffene, «Lukk», Esc og tilbake lukker søket.
+        <div
+          class="toppsok-lag"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) lukkToppsok();
+          }}
+        >
+          <div class="toppsok forside-topp" role="dialog" aria-modal="true" aria-label={t('nav.sok')}>
             <div class="toppsok-rad">
               <button type="button" class="toppsok-lukk" onClick={lukkToppsok}>
                 <Ikon navn="lukk" class="ikon-liten" />
@@ -208,7 +214,8 @@ export function Skall() {
           </div>
         </div>
       )}
-      <main id="innhold" tabIndex={-1} hidden={sok !== null}>
+      {/* Siden står bak søket, men kan ikke nås med tastatur eller skjermleser mens søket er åpent. */}
+      <main id="innhold" tabIndex={-1} inert={sok !== null}>
         {treff ? (
           <Side
             key={`${treff.rute.sti}|${plassering.sti}`}

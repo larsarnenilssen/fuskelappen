@@ -9,6 +9,12 @@ export type Fylkeoppforing = Fylkeslenker['fylker'][number];
 
 export const fylkeRute = (fylke: string) => `/fylker/${fylke}`;
 
+/** Med dette i adressen står «Hos fylkeskommunen» åpen på fylkessiden, f.eks. når brukeren kommer fra kalenderen. */
+export const APNE_HOS_FYLKET = 'apne=fylket';
+
+/** Adressen til en side i appen, med «Hos fylkeskommunen» åpen når det er en fylkesside (eier 05.10.2026). */
+export const medFylketApent = (rute: string) => (/^\/fylker\/\d{2}$/.test(rute) ? `${rute}?${APNE_HOS_FYLKET}` : rute);
+
 export function fylkeFor(fylke: string | null): Fylkeoppforing | null {
   return fylkeslenker.fylker.find((f) => f.fylke === fylke) ?? null;
 }

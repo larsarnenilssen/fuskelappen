@@ -58,16 +58,17 @@ export function sidetekst(html: string, selektor: string): string {
     .join('\n');
 }
 
-async function hentSide(url: string): Promise<string> {
+/** Siden som tekst, med inntil `antall` forsøk og lengre pause for hvert (Telemark svarer ustabilt). */
+export async function hentSide(url: string, antall = 3, pause = 2000): Promise<string> {
   let feil: unknown;
-  for (let forsok = 1; forsok <= 3; forsok++) {
+  for (let forsok = 1; forsok <= antall; forsok++) {
     try {
       const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(60_000) });
       if (!r.ok) throw new Error(`${url} svarte ${r.status}`);
       return await r.text();
     } catch (e) {
       feil = e;
-      await new Promise((v) => setTimeout(v, 2000 * forsok));
+      await new Promise((v) => setTimeout(v, pause * forsok));
     }
   }
   throw feil;

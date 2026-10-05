@@ -123,16 +123,6 @@ test.describe('vurdering', () => {
     await expect(page).toHaveURL(/steg=kl-prove&svar=prove$/);
   });
 
-  test('tidslinjen: filteret står i adressen, og fylkets datoer vises når fylket er valgt', async ({ page }) => {
-    await page.goto('./#/vurdering/eksamen-og-klage');
-    await page.getByRole('link', { name: 'Privatister', exact: true }).click();
-    await expect(page).toHaveURL(/vis=privatister$/);
-    await expect(page.locator('.frist-kort .merke-fylke')).toHaveCount(0);
-    await settLagret(page, { fylke: '32' });
-    await page.reload();
-    await expect(page.locator('.frist-kort .merke-fylke').first()).toBeVisible();
-  });
-
   test('fagarket lenker til eksamen', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
     await page.getByText('Vurderingsordning', { exact: true }).first().click();

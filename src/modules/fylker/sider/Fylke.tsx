@@ -14,6 +14,7 @@ import type { Lokaltype, Lovoversikt } from '../../lov/typer.ts';
 import { useLast } from '../../lov/sider/felles.tsx';
 import type { SideProps } from '../../typer.ts';
 import { fylkeFor, nettsted } from '../innhold.ts';
+import { kalenderLenke } from '../../kalender/adresse.ts';
 
 const REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'inntak', 'skolerute', 'skyss'];
 
@@ -35,7 +36,7 @@ function Lenkerad({ href, tittel, under, ikon, ekstern = false, merke }: { href:
   );
 }
 
-export default function Fylke({ parametre }: SideProps) {
+export default function Fylke({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
   const nr = parametre.fylke ?? '';
@@ -68,7 +69,8 @@ export default function Fylke({ parametre }: SideProps) {
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
-      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket>
+      {/* Lukket fra start, men åpen når brukeren kommer fra kalenderen for å lese mer hos fylket (eier 05.10.2026). */}
+      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket={sporring.get('apne') !== 'fylket'}>
         {temaer.length === 0 ? (
           <p class="dempet">{t('fylker.ingenLenker')}</p>
         ) : (
@@ -120,8 +122,8 @@ export default function Fylke({ parametre }: SideProps) {
       </Rubrikk>
       <Rubrikk nokkel="fylke-datoer" tittel={t('fylker.datoer')}>
         <ul class="liste">
-          <Lenkerad href="#/inntak/frister" ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
-          <Lenkerad href="#/vurdering/eksamen-og-klage" ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
+          <Lenkerad href={`#${kalenderLenke('inntak')}`} ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
+          <Lenkerad href={`#${kalenderLenke('eksamen')}`} ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
           <Lenkerad href="#/vurdering/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
         </ul>
       </Rubrikk>
