@@ -1,5 +1,7 @@
 # Fase 6, pakke 6: «Fag- og svennebrev» i Opplæringstilbud (plukket opp igjen 05.10.2026)
 
+**Før start:** Pakke 5 (kalenderen) skal være levert. Les «Levert så langt» og «Domenet» i `fase-6-pakke-5.md`, og pakke 5-avgjørelsene, så siden kan lenke til kalenderen. Nye begreper i en ny fil under `content/begreper/` føres opp i `src/modules/begreper/tema.ts`.
+
 Eier avtalte innhold og plassering 04.10.2026 i fase 6-forslaget (runde 3 og 4, mockup 3 og 4), men oppgaven kom ikke inn i noen pakke. Den står bare som «ikke bygget» under «Åpent» i arbeidsordrene for pakke 3 og 5. Eier ba 05.10.2026 om at den plukkes opp igjen. Den kommer etter kalenderen (pakke 5), med mindre eier vil ha den før.
 
 Alt som er avtalt, står i `docs/arbeidsordrer/fase-6-forslag.md`:

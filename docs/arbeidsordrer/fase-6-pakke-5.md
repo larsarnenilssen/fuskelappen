@@ -1,6 +1,6 @@
 # Fase 6, pakke 5: Kalenderen – overlevering (04.10.2026, etter 0.35.0; flyttet til pakke 5 av eier 05.10.2026)
 
-Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene) og de nye begrepene er levert i 0.36.0.
+Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene) og de nye begrepene er levert i 0.36.0, og endringene fra pausen i 0.36.1. Les også «Domenet» under før du starter.
 
 ## Levert så langt
 
@@ -31,12 +31,29 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
   - **Sti** øverst på alle sider unntatt forsiden og sidene rett under den. Regelen står i AGENTS.md og testes.
   - **27 nye begreper** (`fase-6-begreper.md`), blant dem skolerute, ikrafttredelse og kunngjøring, oppmelding, sensur og hurtigklage, som kalenderen kan lenke til.
   - Offentleglova, offentlegforskrifta, arkivlova og arkivforskrifta i Regelverk.
+- **0.36.1** (05.10.2026, pausen mellom pakke 4 og 5, PR #101):
+  - **Temafilter i begrepsbanken** (`#/begreper?tema=vurdering&q=…`). Temaet følger filen i `content/begreper/` (`src/modules/begreper/tema.ts`). En ny fil der må føres opp i `TEMA_FOR_FIL` (testes). Begrepene om ansettelse og lønn står nå i `ansettelse.yaml`. Kalenderens filtre kan bruke samme knapper (`sokefilter`, `aria-pressed`).
+  - **«Hos fylkeskommunen»** på fylkessiden er lukket fra start.
+  - **Tilbakemelding på e-post** (avgjørelse 064) under Innstillinger og i Om appen (`src/app/Tilbakemelding.tsx`): mailto til jukselappen.app@gmail.com med versjon, siden brukeren kom fra og fylket, og «Vis adressen» med Kopier.
+  - **Eget domene** (avgjørelse 065): «Publiser» bygger under stien fra innstillingene for GitHub Pages (`PAGES_BASE`), og appen på github.io viser et flyttevarsel med lenke som tar med innstillingene og favorittene (`src/app/flytting.ts`).
 - **Kildesjekken (pakke 3):**
   - Vestland-sidene på vestlandfylke.no er lagt inn (#88).
   - Teksten fra kildene lastes opp som artefaktet «kildetekster».
   - Jobben har 50 minutter, og Grep-hentingen høyst 20 (#91).
   - Sider som ikke svarer på fetch, prøves med Chromium. Feilmeldingen viser årsaken bak «fetch failed». Grep venter ved 429 (#93).
   - Begge de forhåndsgodkjente endringene av kildesjekken er brukt (eier 04.10.2026). Nye endringer krever eiers avgjørelse.
+
+## Domenet (jukselappen.no)
+
+Eier følger `docs/EIER.md` punkt 16: DNS hos Webhuset, bekreftelse hos GitHub, så **Custom domain** under Settings → Pages og ny publisering. Spør eier først i samtalen hvor langt det har kommet.
+
+- **Er domenet tatt i bruk** (Settings → Pages viser `jukselappen.no`, og https://jukselappen.no svarer): gjør dette først, i en egen liten PR:
+  - Bytt adressene i `README.md`, `docs/EIER.md` (øverst og punkt 7) og arbeidsordrene til `https://jukselappen.no/`, og testversjonen til `https://jukselappen.no/test/`. Fjern «når domenet er tatt i bruk».
+  - Sjekk at «Publiser» skrev «Appen publiseres på https://jukselappen.no/», og at forsiden, et fagark og kildestatusen laster.
+  - Push `test` på nytt, så testversjonen bygges for den nye adressen.
+- **Er det ikke tatt i bruk ennå:** ingenting å gjøre i koden. Hjelp eier med stegene når eier ber om det. Fra eier trykker Save til publiseringen er ferdig, virker ikke appen. Kjør «Publiser» (Actions → Publiser → Run workflow) med en gang, eller be eier gjøre det.
+- **Eldre versjoner enn 0.36.1 kan ikke publiseres på nytt** etter at domenet er tatt i bruk, fordi de bygges under `/jukselappen/`.
+- Lokalt og i ende-til-ende-testene ligger appen fortsatt under `/jukselappen/` (`app.base`). Det skal ikke endres.
 
 ## Pakke 5: kalenderen (godkjent av eier 04.10.2026, runde 6)
 
@@ -88,6 +105,7 @@ Grep henter bare det som er endret (avgjørelse 060). Kildene på vestlandfylke.
 - Fylker som stenger skymiljøet (Østfold, Buskerud, Vestfold, Agder, Møre og Romsdal og Troms), legges inn i `scripts/eksamen/kilder.ts` når sidene kan leses. Med Agder får høsttrekket (12. november) to kilder.
 - «Fag- og svennebrev» i Opplæringstilbud er pakke 6, etter kalenderen: `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`. Siden om prøvene får «Veiene hit» da.
 - «Dagens jukselapp» kommer i fase 8.
+- **Grener:** Denne økten fikk ikke slette grener (git-proxyen avviser sletting). Eier sletter de flettede grenene i GitHub (Code → Branches) og kan slå på «Automatically delete head branches» under Settings → General. Beholdes: `main`, `test`, `grep-lager` og `lenkesjekk` (kildesjekken skriver dit), og `utforsk-lovtidend`, `utforsk-data` og `utforsk/lovdata` til punkt 5 (kommende endringer) er bygget. `claude/lovdata-utforsk-data` (02.10.2026, midlertidig utdrag) kan slettes når eier vil.
 - **Parkert uten fase eller pakke** (funnet i gjennomgangen 05.10.2026):
   - VIGO og Grep er uenige om «bygger på» for noen tilbud (`docs/TILBUDSSTRUKTUR.md`). Eier: «Ta dem opp med meg når det passer». Passer i pakke 6.
   - InSchool-data som ekstra kontroll av koblingen fra fagkode til årsramme (fase 2, avgjørelse 023).
@@ -97,7 +115,7 @@ Grep henter bare det som er endret (avgjørelse 060). Kildene på vestlandfylke.
 
 ## Arbeidsmåte
 
-Som i `fase-6-pakke-3.md`:
+Som i `fase-6-pakke-3.md` (føringene der er oppdatert etter 0.36.1):
 - Først et forslag.
 - Ingen tester før eier har sagt at designet er ferdig.
 - Push til `test` etter hver designrunde.
