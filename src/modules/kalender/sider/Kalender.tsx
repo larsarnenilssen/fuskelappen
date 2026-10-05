@@ -130,48 +130,59 @@ export default function Kalender({ sporring }: SideProps) {
           <span class="kal-valgt">{valgtekst}</span>
           <Ikon navn="ned" class="forklaring-pil" />
         </summary>
-        <p class="liten-overskrift">{t('kalender.visning.etikett')}</p>
-        <div class="kal-visning">
-          <Bryter
-            legend={t('kalender.visning.etikett')}
-            skjultLegend
-            kompakt
-            verdi={valg.visning}
-            valg={[
-              { verdi: 'rullende', tekst: t('kalender.visning.rullende'), tekstKort: t('kalender.visning.rullendeKort') },
-              { verdi: 'skolear', tekst: t('kalender.visning.skolear') },
-            ]}
-            onEndring={(v) => endre({ visning: v })}
-          />
-          {valg.visning === 'skolear' && (
-            <div class="sokefilter kal-skolear" role="group" aria-label={t('kalender.skolearEtikett')}>
-              {[iAar, iAar + 1].map((s) => (
-                <button key={s} type="button" class="sokefilter-valg" aria-pressed={skolear === s} onClick={() => endre({ aar: s === iAar ? null : s })}>
-                  {s}–{s + 1}
+        {/* Tre grupper med overskrift og like avstander. På stor skjerm står de side om side (eier 05.10.2026). */}
+        <div class="kal-filter-innhold">
+          <div class="kal-filtergruppe">
+            <h2 class="kal-filtertittel" id="kal-filter-vis">
+              {t('kalender.visning.etikett')}
+            </h2>
+            <div class="kal-filtervalg">
+              <Bryter
+                legend={t('kalender.visning.etikett')}
+                skjultLegend
+                kompakt
+                verdi={valg.visning}
+                valg={[
+                  { verdi: 'rullende', tekst: t('kalender.visning.rullende'), tekstKort: t('kalender.visning.rullendeKort') },
+                  { verdi: 'skolear', tekst: t('kalender.visning.skolear') },
+                ]}
+                onEndring={(v) => endre({ visning: v })}
+              />
+              {valg.visning === 'skolear' && (
+                <div class="sokefilter" role="group" aria-label={t('kalender.skolearEtikett')}>
+                  {[iAar, iAar + 1].map((s) => (
+                    <button key={s} type="button" class="sokefilter-valg" aria-pressed={skolear === s} onClick={() => endre({ aar: s === iAar ? null : s })}>
+                      {s}–{s + 1}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+          <div class="kal-filtergruppe">
+            <h2 class="kal-filtertittel" id="kal-filter-tema">
+              {t('kalender.filter.tema')}
+            </h2>
+            <div class="sokefilter" role="group" aria-labelledby="kal-filter-tema">
+              {[null, ...KALENDERTEMAER].map((tema: Kalendertema | null) => (
+                <button key={tema ?? 'alle'} type="button" class="sokefilter-valg" aria-pressed={valg.tema === tema} onClick={() => endre({ tema })}>
+                  {tema ? t(`kalender.temaer.${tema}`) : t('kalender.filter.alle')}
                 </button>
               ))}
             </div>
-          )}
-        </div>
-        <p class="liten-overskrift" id="kal-filter-tema">
-          {t('kalender.filter.tema')}
-        </p>
-        <div class="sokefilter" role="group" aria-labelledby="kal-filter-tema">
-          {[null, ...KALENDERTEMAER].map((tema: Kalendertema | null) => (
-            <button key={tema ?? 'alle'} type="button" class="sokefilter-valg" aria-pressed={valg.tema === tema} onClick={() => endre({ tema })}>
-              {tema ? t(`kalender.temaer.${tema}`) : t('kalender.filter.alle')}
-            </button>
-          ))}
-        </div>
-        <p class="liten-overskrift" id="kal-filter-hvem">
-          {t('kalender.filter.hvem')}
-        </p>
-        <div class="sokefilter" role="group" aria-labelledby="kal-filter-hvem">
-          {[null, ...FRISTGRUPPER].map((g: Fristgruppe | null) => (
-            <button key={g ?? 'alle'} type="button" class="sokefilter-valg" aria-pressed={valg.gruppe === g} onClick={() => endre({ gruppe: g })}>
-              {g ? t(`kalender.grupper.${g}`) : t('kalender.filter.alle')}
-            </button>
-          ))}
+          </div>
+          <div class="kal-filtergruppe">
+            <h2 class="kal-filtertittel" id="kal-filter-hvem">
+              {t('kalender.filter.hvem')}
+            </h2>
+            <div class="sokefilter" role="group" aria-labelledby="kal-filter-hvem">
+              {[null, ...FRISTGRUPPER].map((g: Fristgruppe | null) => (
+                <button key={g ?? 'alle'} type="button" class="sokefilter-valg" aria-pressed={valg.gruppe === g} onClick={() => endre({ gruppe: g })}>
+                  {g ? t(`kalender.grupper.${g}`) : t('kalender.filter.alle')}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </details>
 

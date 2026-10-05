@@ -7017,25 +7017,45 @@ a.knapp {
   background: var(--kal-farge);
 }
 
-.kal-visning {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--rom-2) var(--rom-3);
-  margin: 0 var(--rom-4) var(--rom-2);
-}
-
-.kal-visning .bryter,
-.kal-skolear {
-  margin: 0;
-}
-
 .kal-filter {
   margin: 0 0 var(--rom-3);
 }
 
 .kal-valgt {
   font-weight: 600;
+}
+
+/* Innholdet i filterboksen: tre grupper med overskrift, samme venstrekant og like avstander. */
+.kal-filter-innhold {
+  display: grid;
+  gap: var(--rom-4);
+  padding: var(--rom-2) var(--rom-4) var(--rom-4);
+}
+
+@media (min-width: 56rem) {
+  .kal-filter-innhold {
+    grid-template-columns: max-content minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--rom-6);
+  }
+}
+
+.kal-filtertittel {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+  font-weight: 700;
+  color: var(--farge-tekst);
+}
+
+.kal-filtervalg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.kal-filter-innhold .sokefilter,
+.kal-filter-innhold .bryter {
+  margin: 0;
 }
 
 .kal-filter > summary {
@@ -7046,18 +7066,6 @@ a.knapp {
 
 .kal-filter > summary > span {
   flex: 1;
-}
-
-.kal-filter .liten-overskrift {
-  margin: var(--rom-3) var(--rom-4) var(--rom-1);
-}
-
-.kal-filter .sokefilter {
-  margin: 0 var(--rom-4) var(--rom-3);
-}
-
-.kal-filter .kal-visning .sokefilter {
-  margin: 0;
 }
 
 .kal-tegn {
