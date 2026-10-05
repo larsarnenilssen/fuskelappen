@@ -472,6 +472,7 @@ export default function Fagside({ parametre }: SideProps) {
     if (rel && nye.length > 0) {
       return (
         <div class="side">
+          <Brodsmuler ledd={[{ tekst: t('fag.tittel'), href: '#/fag' }]} />
           <h1 tabIndex={-1}>{t('fag.side.utgattKode', { kode })}</h1>
           <p>
             {rel.erstatninger[kode]?.navn}{' '}
@@ -491,6 +492,7 @@ export default function Fagside({ parametre }: SideProps) {
     }
     return (
       <div class="side">
+        <Brodsmuler ledd={[{ tekst: t('fag.tittel'), href: '#/fag' }]} />
         <h1 tabIndex={-1}>{t('fag.side.ikkeFunnet')}</h1>
         <p>
           <a href="#/fag">{t('fag.side.tilbakeTilListen')}</a>

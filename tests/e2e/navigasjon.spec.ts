@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { settLagret, venterPaaSide } from './hjelp.ts';
+import { ruter, settLagret, venterPaaSide } from './hjelp.ts';
 
 test.describe('navigasjon', () => {
   test('forsiden har søk, favoritter og moduler', async ({ page }) => {
@@ -14,17 +14,19 @@ test.describe('navigasjon', () => {
     await page.goto('./');
     const meny = page.getByRole('navigation', { name: 'Hovedmeny' });
     // Søket står på forsiden, så toppfeltet har ikke søkeknappen der.
-    await expect(meny.getByRole('link', { name: 'Søk' })).toHaveCount(0);
+    await expect(meny.getByRole('button', { name: 'Søk' })).toHaveCount(0);
     await meny.getByRole('link', { name: 'Innstillinger' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
     await expect(meny.getByRole('link', { name: 'Innstillinger' })).toHaveAttribute('aria-current', 'page');
     await expect(page).toHaveTitle('Innstillinger – Jukselappen');
-    await meny.getByRole('link', { name: 'Søk' }).click();
-    await expect(page.getByRole('heading', { level: 1, name: 'Søk' })).toBeVisible();
-    // Søkefeltet får fokus, så brukeren kan skrive med en gang.
+    // Søket åpnes over siden (eier 05.10.2026). Tilbake lukker det og viser siden igjen.
+    await meny.getByRole('button', { name: 'Søk' }).click();
     await expect(page.getByRole('searchbox')).toBeFocused();
+    await expect(page.locator('main')).toBeHidden();
+    await expect(page).toHaveURL(/#\/innstillinger$/);
     await page.goBack();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
+    await expect(page.getByRole('searchbox')).toHaveCount(0);
     await page.locator('.topplinje .appnavn').click();
     await expect(page).toHaveURL(/#\/$/);
     await expect(page.locator('.bunnmeny')).toHaveCount(0);
@@ -116,3 +118,67 @@ test.describe('navigasjon', () => {
     });
   }
 });
+
+// Alle sider har stien øverst, unntatt forsiden og sidene rett under den: oversiktene i modulene, kategoriene, søket,
+// innstillingene og Om appen (eier 05.10.2026). Overordnet del åpnes på oversikten i Læreplanverket, og testsidene og
+// siden som ikke finnes, står utenfor. Nye sider kommer med av seg selv, fordi hver rute har en adresse i hjelp.ts.
+const UTEN_STI = /^#\/[^/?]*(\?.*)?$|^#\/(kategori|utvikling|laereplanverket\/overordnet-del)\//;
+test.describe('alle sider under en modul har sti øverst', () => {
+  for (const rute of ruter.filter((r) => !UTEN_STI.test(r))) {
+    test(rute, async ({ page }) => {
+      await page.goto(`./${rute}`);
+      await venterPaaSide(page);
+      await expect(page.locator('main nav.brodsmuler').first()).toBeVisible();
+    });
+  }
+});
+
+test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
+  test('åpnes over siden, og «Lukk søket» og Esc viser siden der brukeren var', async ({ page }) => {
+    await page.goto('./#/fylker/46');
+    await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+    await page.evaluate(() => window.scrollTo(0, 400));
+    const y = await page.evaluate(() => window.scrollY);
+    // Et vanlig trykk i Playwright ruller først knappen inn i bildet. En person som trykker, ruller ikke siden.
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).dispatchEvent('click');
+    await expect(page.getByRole('searchbox')).toBeFocused();
+    await page.getByRole('button', { name: 'Lukk søket' }).click();
+    await expect(page.locator('main h1')).toBeVisible();
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
+    // Esc lyttes etter når søket er åpnet, ikke i samme øyeblikk som trykket.
+    await expect(page.getByRole('searchbox')).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(page.getByRole('searchbox')).toHaveCount(0);
+    await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+  });
+
+  test('tilbake fra et treff viser søket igjen, og tilbake en gang til viser siden', async ({ page }) => {
+    await page.goto('./#/om');
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
+    await page.getByRole('searchbox').fill('årsramme');
+    await page.locator('.sokeresultater a').first().click();
+    await expect(page).not.toHaveURL(/#\/om$/);
+    await page.goBack();
+    await expect(page.getByRole('searchbox')).toHaveValue('årsramme');
+    await page.goBack();
+    await expect(page.getByRole('searchbox')).toHaveCount(0);
+    await expect(page.locator('main h1')).toHaveText('Om appen');
+  });
+
+  test('med valgt fylke viser søket bare skolene i fylket, til knappen med fylket slås av', async ({ page }) => {
+    await settLagret(page, { fylke: '46' });
+    await page.goto('./#/om');
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
+    await page.getByRole('searchbox').fill('videregående skole');
+    const fylke = page.locator('.sokefilter-fylke');
+    await expect(fylke).toHaveText('Vestland');
+    await expect(fylke).toHaveAttribute('aria-pressed', 'true');
+    const status = page.locator('.toppsok .sokestatus');
+    const iFylket = Number((await status.textContent())?.match(/\d+/)?.[0]);
+    await fylke.click();
+    await expect(fylke).toHaveAttribute('aria-pressed', 'false');
+    await expect.poll(async () => Number((await status.textContent())?.match(/\d+/)?.[0])).toBeGreaterThan(iFylket);
+  });
+});
+

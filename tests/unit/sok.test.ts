@@ -86,6 +86,25 @@ describe('fylkesinnhold i søket', () => {
   });
 });
 
+describe('knappen med det valgte fylket (eier 05.10.2026)', () => {
+  it('viser skoler, kontor og lokale forskrifter i fylket, og alle når knappen er av', async () => {
+    const { harAndreFylker, treffIFylket } = await import('../../src/core/sok/synlige.ts');
+    const steder: Sokeoppforing[] = [
+      { id: 's1', type: 'skole', tittel: { nb: 'Arna skole', nn: 'Arna skule' }, rute: '/s1', modul: 'opplaeringslop', sted: ['46'] },
+      { id: 's2', type: 'skole', tittel: { nb: 'Askim skole', nn: 'Askim skule' }, rute: '/s2', modul: 'opplaeringslop', sted: ['31'] },
+      { id: 'k1', type: 'kontor', tittel: { nb: 'Felles skolekontor', nn: 'Felles skulekontor' }, rute: '/k1', modul: 'opplaeringslop', sted: ['31', '46'] },
+      { id: 'n', type: 'begrep', tittel: { nb: 'Skole', nn: 'Skule' }, rute: '/n', modul: 'begreper' },
+    ];
+    const indeks = lastIndeks(serialiser(byggIndeks(steder, synonymer)), synonymer);
+    const treff = sok(indeks, 'skole');
+    expect(treff.find((t) => t.id === 'k1')?.sted).toEqual(['31', '46']);
+    expect(treff.find((t) => t.id === 'n')?.sted).toBeNull();
+    expect(treffIFylket(treff, '46').map((t) => t.id).sort()).toEqual(['k1', 'n', 's1']);
+    expect(harAndreFylker(treff, '46')).toBe(true);
+    expect(harAndreFylker(treffIFylket(treff, '46'), '46')).toBe(false);
+  });
+});
+
 describe('filtrene i søket (avgjørelse 058)', () => {
   it('teller treffene i hver gruppe, i fast rekkefølge, og filtrerer på gruppe', async () => {
     const { filtrerTreff, tellGrupper } = await import('../../src/core/sok/grupper.ts');

@@ -3,7 +3,8 @@ import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
 import { filtrerTreff, tellGrupper, type Sokegruppe } from '../core/sok/grupper.ts';
 import type { Sokeresultat } from '../core/sok/sok.ts';
-import { synligeTreff } from '../core/sok/synlige.ts';
+import { harAndreFylker, synligeTreff, treffIFylket } from '../core/sok/synlige.ts';
+import { fylker } from './Stedmerknad.tsx';
 import { hentSok } from './sokeklient.ts';
 import { useTekst, useTilstand } from './tilstand.ts';
 
@@ -31,6 +32,9 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
   // Filteret på gruppe (avgjørelse 058). Det står til brukeren velger et annet, også når søket endres.
   const [filter, settFilter] = useState<Sokegruppe | 'alle'>('alle');
   const [antall, settAntall] = useState(PER_SIDE);
+  // Med valgt fylke viser søket bare skoler, kontor, lokale forskrifter og fylkessider i fylket, til brukeren slår av
+  // knappen med fylket (eier 05.10.2026). Valget huskes ikke: søket starter alltid med fylket.
+  const [bareFylket, settBareFylket] = useState(true);
   const sokRef = useRef<((s: string) => Sokeresultat[]) | null>(null);
 
   const lastIndeks = () => {
@@ -55,10 +59,14 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
     settAntall(PER_SIDE);
   }, [sporring, indeks, innstillinger.fylke]);
 
-  const grupper = tellGrupper(treff);
+  const fylke = innstillinger.fylke;
+  const fylkesnavn = fylker.find((f) => f.nummer === fylke)?.navn ?? null;
+  const visFylkeknapp = fylke !== null && fylkesnavn !== null && harAndreFylker(treff, fylke);
+  const iSoket = fylke !== null && bareFylket ? treffIFylket(treff, fylke) : treff;
+  const grupper = tellGrupper(iSoket);
   // Har ikke den valgte gruppen treff i dette søket, vises alle.
   const gjeldende = filter !== 'alle' && grupper.some((g) => g.gruppe === filter) ? filter : 'alle';
-  const filtrert = filtrerTreff(treff, gjeldende);
+  const filtrert = filtrerTreff(iSoket, gjeldende);
 
   const aktiv = sporring.trim().length >= 2;
   const status = !aktiv
@@ -67,11 +75,11 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
       ? t('sok.indeksFeil')
       : indeks !== 'klar'
         ? t('sok.lasterIndeks')
-        : treff.length === 0
+        : iSoket.length === 0
           ? t('sok.ingenTreff', { sok: sporring.trim() })
-          : treff.length === 1
+          : iSoket.length === 1
             ? t('sok.etTreff')
-            : t('sok.antallTreff', { antall: treff.length });
+            : t('sok.antallTreff', { antall: iSoket.length });
 
   return (
     <div class="sokeboks">
@@ -126,9 +134,25 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
         {status}
       </p>
       {/* Filtrene vises når treffene er fra minst to grupper (eier 04.10.2026, avgjørelse 058). */}
-      {aktiv && indeks === 'klar' && grupper.length > 1 && (
+      {aktiv && indeks === 'klar' && (grupper.length > 1 || visFylkeknapp) && (
         <div class="sokefilter" role="group" aria-label={t('sok.filter.etikett')}>
-          {[{ gruppe: 'alle' as const, antall: treff.length }, ...grupper].map((g) => (
+          {visFylkeknapp && (
+            <button
+              type="button"
+              class="sokefilter-valg sokefilter-fylke"
+              aria-pressed={bareFylket}
+              title={t('sok.filter.fylkeForklaring', { fylke: fylkesnavn })}
+              onClick={() => {
+                settBareFylket(!bareFylket);
+                settAntall(PER_SIDE);
+              }}
+            >
+              <Ikon navn="kontor" class="ikon-liten" />
+              {fylkesnavn}
+            </button>
+          )}
+          {grupper.length > 1 &&
+            [{ gruppe: 'alle' as const, antall: iSoket.length }, ...grupper].map((g) => (
             <button
               key={g.gruppe}
               type="button"
