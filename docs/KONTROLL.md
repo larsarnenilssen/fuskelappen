@@ -55,15 +55,6 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 - **Fag- og svenneprøver:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, oversikt over alle feltene:** ⚠️ endret siden 04.10.2026, venter på godkjenning
-- **vestlandfylke.no – søknad og inntak:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – inntaksreglar og opplæringsrett:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – minoritetsspråklege:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – innføringskurs:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – tilrettelegging ved læringsutfordringar:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – eksamen og standpunkt:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – tid og stad for privatisteksamen:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – fagprøven:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
 
 ## Praksis og tolkninger
 
@@ -1875,6 +1866,7 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Er klageinstansene riktig og forståelig beskrevet, etter Udirs oversikt «Hvem er klageinstanser etter enkeltvedtak?»?
 - Er «vanligvis inntakskontoret i fylkeskommunen» et godt navn på den som fatter vedtaket om inntak?
 - Er den korte oppsummeringen av hvem som har frist 1. februar riktig nok, når detaljene står i stegene over (§ 4-9 andre ledd)?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 Fristar for å søkje om inntak; [Hvem er klageinstanser etter enkeltvedtak?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen): Kapittel 4 Inntak til vidaregåande opplæring; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§29-1): § 29-1 Klageinstans for enkeltvedtak; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 Klagefrist og § 32 Klagens adressat, form og innhold; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak](https://kodeverk.vigo.no/): Status på søkerønsker (wish-statuses)
 
@@ -1915,6 +1907,7 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 - Er det riktig at klage på praksisbrevprøven og kompetanseprøven, både karakter og formelle feil, avgjøres av fylkestinget (§ 10-10 første ledd)?
 - Bør steget si at klagenemnda kan oppheve prøven og vise til ny prøve (§ 10-9 fjerde ledd)?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-9): § 10-9 og § 10-10; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-9-klage-pa-fag--og-sveineprove/): Merknad til § 10-9; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2, andre avsnitt; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§8-3): § 8-3 Klagenemnd for fag- og sveineprøver; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 første ledd
 
@@ -2240,6 +2233,7 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 - § 4-9 andre ledd bokstav a gir 1. februar bare for søkere med vedtak om individuell tilrettelegging som i tillegg faller inn under bestemte paragrafer. Er fristteksten her for enkel?
 - Er «Søkeren har fortsatt rett til ett av tre utdanningsprogram» riktig for alle som behandles individuelt?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-20): § 4-20 andre ledd og § 4-26 andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 andre ledd bokstav a og e
 
@@ -2247,12 +2241,14 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 - Er den korte beskrivelsen av poengsummen riktig nok her, når detaljene kommer i poengberegningen (pakke 3)?
 - Er de to gruppene med frist 1. februar (særskilt språkopplæring og nylig kommet til Norge) de eneste som kan gjelde søkere som konkurrerer på poeng (§ 4-9 andre ledd)?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 andre ledd bokstav b og c; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-19): § 4-18 og § 4-19; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-24 og § 4-25; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-6): § 4-6 Inntak til einskilde utdanningsprogram; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-19-poengutrekning-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/): Merknader til § 4-19
 
 **Hvor søknaden sendes** (`sk-bosted`, steg, ikke kontrollert)
 
 - Bør steget nevne at søkere fra andre fylker med særlige pedagogiske eller sosiale grunner, eller rett til samisk, tas inn først blant dem (§ 4-14 tredje ledd)?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-8): § 4-8 Kvar søknaden om inntak skal sendast; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-14): § 4-14 første og tredje ledd
 
@@ -2673,6 +2669,7 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 **Klagefristen** (`kl-frist`, steg, ikke kontrollert)
 
 - Klageveiledningen punkt 4 sier at fristen regnes fra begrunnelsen når den ikke gis samme dag. Gjelder det også for IV og orden og oppførsel?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/): punkt 4. Hvordan skal eleven eller foreldrene klage
 
@@ -2693,6 +2690,7 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 **Skriftlig eksamen** (`kl-skriftlig`, steg, ikke kontrollert)
 
 - Er «sensorveiledningen» et godt nok ord for «retningslinjer som er utarbeidde for sensorane» i § 10-3 fjerde ledd?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-3 fjerde ledd og § 10-7 andre ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/): Merknad til § 10-7
 
@@ -3157,6 +3155,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 - Er det riktig at et vedtak fra grunnskolen aldri gjelder i videregående, og at fylkeskommunen alltid må fatte nytt vedtak?
 - Er «midlertidig vedtak som bygger på den sakkyndige vurderingen fra grunnskolen» en riktig gjengivelse av veilederen punkt 7.5?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#overgang-nytt-trinn-ny-skole): punkt 7.5 Overgang til nytt trinn og ny skole
 
@@ -3177,6 +3176,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 **Samtykke og henvisning til PP-tjenesten** (`ti-samtykke`, steg, ikke kontrollert)
 
 - Er det riktig at det er skolen som innhenter samtykke og henviser til PP-tjenesten i videregående, eller gjør fylkeskommunen det på annen måte?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring): punkt 5.4 Individuelt tilrettelagt opplæring; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-om-sakkyndig-vurdering-individuelt-tilrettelagt-opplaring): punkt 6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring
 
@@ -3184,6 +3184,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 - Er «den må fylkeskommunen ta med i vurderingen» en riktig gjengivelse av hva en alternativ sakkyndig vurdering betyr (veilederen 6.3)?
 - Er de fem punktene i § 11-8 gjengitt riktig med egne ord?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-innhold-sakkyndig-vurdering): punkt 6.2.1 Krav til innholdet i den sakkyndige vurderingen; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#varighet-sakkyndig-vurdering): punkt 6.2.3 Varigheten av den sakkyndige vurderingen; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#saksbehandlingstid): punkt 6.2.4 Saksbehandlingstid; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#foreldrene-hente-alternativ-sakkyndig-vurdering): punkt 6.3 Foreldrene kan hente inn en alternativ sakkyndig vurdering
 
@@ -3192,6 +3193,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 - Er det riktig at måneden for foreløpig svar regnes fra henvendelsen når det ikke kreves sakkyndig vurdering (personlig assistanse og fysisk tilrettelegging)?
 - Er det riktig at fritak fra vurdering med karakter i videregående bare gjelder sidemålet for elever med individuelt tilrettelagt opplæring?
 - Er «Oppgaven kan delegeres til rektor, men ansvaret ligger hos fylkeskommunen» dekkende for hvordan det gjøres i fylkene?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging): punkt 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak): punkt 7.2 Delegere oppgaven med å fatte vedtak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#vedtakets-varighet): punkt 7.4 Vedtakets varighet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/): punkt 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter
 
@@ -3242,6 +3244,7 @@ Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk
 
 - Er «I praksis gjør skolen vurderingen» riktig for videregående, eller gjør fylkeskommunen den sentralt noen steder?
 - Er det riktig å nevne at en oppstartsamtale kan være nok når eleven ikke kan noe norsk?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk): Vurdere elevens ferdigheter i norsk; [Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#vurdere-elevens-norskferdigheter): Vurdere elevens norskferdigheter
 
@@ -3255,6 +3258,7 @@ Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk
 
 - Er «på norsk og morsmålet eller et annet språk eleven kan godt» en riktig gjengivelse av tospråklig opplæring i fag?
 - Er det riktig at morsmålsopplæring kommer i tillegg til det vanlige timetallet i videregående?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#krav-til-vedtak): Krav til vedtak; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk): Forsterket opplæring i norsk; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag): Tospråklig opplæring i fag; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#morsmaalsopplaering): Morsmålsopplæring; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#fjernundervisning): Fjernundervisning
 
@@ -3275,6 +3279,7 @@ Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-t
 
 - Er «fritak fra vurdering med karakter, men ikke fra standpunktkarakter» en riktig og forståelig gjengivelse av opplæringsforskrifta § 9-20 andre ledd for videregående?
 - Er «Eleven samtykker selv når eleven er i stand til det, ellers foreldrene» en god gjengivelse av at eleven samtykker selv så lenge eleven er samtykkekompetent?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
 
 Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke): Eleven eller foreldrene må samtykke; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen): Avvik fra læreplaner i fag og fra fag- og timefordelingen; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring): Fritak fra vurdering for elever i innføringsopplæring
 
