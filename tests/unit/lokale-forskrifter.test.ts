@@ -27,7 +27,7 @@ const titler: Titler = {
   inntak: { nb: 'Inntak og formidling i {sted}', nn: 'Inntak og formidling i {sted}' },
   skolerute: { nb: 'Skolerute {skolear} i {sted}', nn: 'Skulerute {skolear} i {sted}' },
   skyss: { nb: 'Skyss og rabattordning i {sted}', nn: 'Skyss og rabattordning i {sted}' },
-  fagfordeling: { nb: 'Fag- og timefordeling ved {sted}', nn: 'Fag- og timefordeling ved {sted}' },
+  fagfordeling: { nb: 'Fag- og timefordeling, {sted}', nn: 'Fag- og timefordeling, {sted}' },
 };
 
 describe('registeret hos Lovdata', () => {
@@ -176,6 +176,8 @@ describe('forskriftene i appen', () => {
     expect(klassifiser({ tittel: 'Forskrift om omfordeling av timar ved Eid vidaregåande skule', hjemmel: ['forskrift/2024-06-03-900/§1-3'] }, ['1'])).toBe('fagfordeling');
     expect(klassifiser({ tittel: 'Forskrift om inntak, Troms fylkeskommune', hjemmel: ['lov/2023-06-09-30/§5-3'] }, [])).toBe('inntak');
     expect(klassifiser({ tittel: 'Forskrift om skulereglar', hjemmel: ['lov/2005-06-17-62'] }, [])).toBeNull();
+    // Forskrifter etter den gamle opplæringslova som Lovdata har som gjeldende, tas med.
+    expect(klassifiser({ tittel: 'Forskrift om fleksibilitet i fag- og timefordeling ved Greåker videregående skole', hjemmel: ['lov/1998-07-17-61', 'forskrift/2006-06-23-724/§1-3'] }, ['x'])).toBe('fagfordeling');
   });
 
   it('metadataene fra dokumentsiden lagres, og typen avgjøres for hver henting', () => {

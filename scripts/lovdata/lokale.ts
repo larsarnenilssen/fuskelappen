@@ -1,8 +1,8 @@
 // Registeret over lokale forskrifter for videregående i alle fylker (avgjørelse 061), i data/lovdata/lokale.json.
 // Lesingen av sidene hos Lovdata står i register.ts. Her er oppdateringen av registeret:
-// - Hele registeret hos Lovdata leses første gang, med --alle, og hver 13. uke. Forskrifter som ikke står der lenger
-//   (opphevet), fjernes da.
-// - Hver 4. uke leses bare inneværende og forrige år (en forskrift kan kunngjøres måneder etter datoen den har).
+// - Hele registeret hos Lovdata leses første gang, med --alle, og hver 13. uke, fylke for fylke. En forskrift som ikke
+//   står der lenger, fjernes når siden hos Lovdata viser at den ikke er gjeldende (opphevet).
+// - Hver 4. uke leses bare inneværende og forrige år per fylke (en forskrift kan kunngjøres måneder etter datoen den har).
 // - Nye kandidater vurderes ut fra dokumentsiden. Vurderingen lagres, så siden hentes bare én gang.
 // - Høyst én forespørsel i sekundet, av hensyn til Lovdata.
 // velgForskrifter og tittelFor er rene funksjoner, testet i tests/unit/lokale-forskrifter.test.ts.
@@ -85,7 +85,7 @@ export function klassifiserVurdering(v: Vurdering, fylker: readonly Fylke[], sko
  * <fylke>-skyss, <fylke>-skolerute-<skoleår>, <skole>-skoleregler og <skole>-fagfordeling-<nr>. Har flere forskrifter
  * samme id, får den som gjelder i dag id-en, og en som tar til å gjelde senere, får «-fra-<dato>». Eldre forskrifter
  * og skoleruter for skoleår som er over, tas ikke med. Fag- og timefordeling gjelder én skole og ett løp, så hver
- * forskrift står for seg, og den tas bare med når skolen finnes i skoleregisteret.
+ * forskrift står for seg. Finnes ikke skolen i skoleregisteret, gjelder den fylket.
  */
 export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly Fylke[], skoler: readonly Skole[], titler: Titler, idag: string): LokalForskrift[] {
   const fylkesnavn = new Map(fylker.map((f) => [f.nummer, f.navn]));
@@ -100,16 +100,17 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
     const skolear = k.type === 'skolerute' ? skolearFor(v.iKraft, v.iKraftTil) : null;
     if (k.type === 'skolerute' && (!skolear || Number(skolear.slice(5)) <= iAar)) continue;
     const navn = k.skoler.map((s) => skolenavn.get(s)).filter((n): n is string => !!n);
-    if ((k.type === 'skoleregler-skole' || k.type === 'fagfordeling') && navn.length === 0) continue;
+    // Skolens egne regler tas bare med når skolen finnes. Fag- og timefordeling uten skole gjelder hele fylket.
+    if (k.type === 'skoleregler-skole' && navn.length === 0) continue;
     const grunn =
       k.type === 'skoleregler-skole'
         ? `${navn.map(slug).join('-og-')}-skoleregler`
         : k.type === 'fagfordeling'
-          ? `${navn.map(slug).join('-og-')}-fagfordeling-${v.refid.split('-').at(-1)}`
+          ? `${(navn.length > 0 ? navn : [fylke]).map(slug).join('-og-')}-fagfordeling-${v.refid.split('-').at(-1)}`
           : k.type === 'skolerute'
             ? `${slug(fylke)}-skolerute-${skolear}`
             : `${slug(fylke)}-${k.type}`;
-    const sted = k.type === 'skoleregler-skole' || k.type === 'fagfordeling' ? navn.join(' og ') : fylke;
+    const sted = navn.length > 0 && (k.type === 'skoleregler-skole' || k.type === 'fagfordeling') ? navn.join(' og ') : fylke;
     grupper.set(grunn, [...(grupper.get(grunn) ?? []), { v, type: k.type, fylke: k.fylke, skoler: k.skoler, sted, skolear }]);
   }
   const ut: LokalForskrift[] = [];
@@ -186,7 +187,14 @@ export function vurder(refid: string, meta: Metadata, idag: string): Vurdering {
 export async function oppdaterLokale(forrige: Lokale | null, valg: { full: boolean; fylker: readonly Fylke[]; skoler: readonly Skole[]; titler: Titler; idag: string }): Promise<{ lokale: Lokale; sider: Map<string, string>; rapport: string[] }> {
   const { full, fylker, skoler, titler, idag } = valg;
   const aar = Number(idag.slice(0, 4));
-  const treff = full ? await lesRegister('') : [...(await lesRegister(`year=${aar}`)), ...(await lesRegister(`year=${aar - 1}`))];
+  // Registeret leses fylke for fylke. Kommer det en ny forskrift mens registeret leses, forskyves sidene, og en
+  // forskrift kan falle mellom to sider. Med ett fylke om gangen er det kort tid til det skjer (05.10.2026).
+  const treff: { refid: string; tittel: string }[] = [];
+  for (const f of fylker) {
+    const fylke = `county=${encodeURIComponent(f.navn)}`;
+    if (full) treff.push(...(await lesRegister(fylke)));
+    else for (const a of [aar, aar - 1]) treff.push(...(await lesRegister(`${fylke}&year=${a}`)));
+  }
   const kandidater = new Map(treff.filter((t) => erKandidat(t.tittel)).map((t) => [t.refid, t]));
   const tidligere = new Map((forrige?.vurdert ?? []).map((v) => [v.refid, v]));
   const sider = new Map<string, string>();
@@ -200,19 +208,24 @@ export async function oppdaterLokale(forrige: Lokale | null, valg: { full: boole
     tidligere.set(k.refid, v);
     rapport.push(`Ny: ${v.tittel} (${klassifiserVurdering(v, fylker, skoler).type ?? 'ikke tatt med'})`);
   }
-  // Etter en full lesing er det som ikke står i registeret lenger, opphevet.
+  // Etter en full lesing er en forskrift som ikke står i registeret, trolig opphevet. Siden hos Lovdata avgjør: finnes
+  // den ikke som gjeldende lokal forskrift (LF), fjernes den.
   if (full) {
     for (const refid of [...tidligere.keys()]) {
-      if (!kandidater.has(refid)) {
-        rapport.push(`Ikke lenger i registeret: ${tidligere.get(refid)?.tittel}`);
-        tidligere.delete(refid);
-      }
+      if (kandidater.has(refid)) continue;
+      const finnes = await fetch(`${LOVDATA}/dokument/LF/${refid}`, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(60_000) })
+        .then(async (svar) => svar.ok && /\/dokument\/LF\//.test(svar.url) && (await svar.text()).includes('id="documentMeta"'))
+        .catch(() => true);
+      await pause();
+      if (finnes) continue;
+      rapport.push(`Ikke lenger i registeret: ${tidligere.get(refid)?.tittel}`);
+      tidligere.delete(refid);
     }
   }
   const vurdert = [...tidligere.values()].sort((a, b) => a.refid.localeCompare(b.refid));
   for (const v of vurdert) {
     const k = klassifiserVurdering(v, fylker, skoler);
-    if ((k.type === 'skoleregler-skole' || k.type === 'fagfordeling') && k.skoler.length === 0) rapport.push(`Fant ikke skolen i skoleregisteret: ${v.tittel}`);
+    if (k.type === 'skoleregler-skole' && k.skoler.length === 0) rapport.push(`Fant ikke skolen i skoleregisteret: ${v.tittel}`);
     if (k.type && !k.fylke) rapport.push(`Fant ikke ett fylke for: ${v.tittel} (${v.gjelderFor})`);
     if (!k.type) rapport.push(`Ikke tatt med (typen passer ikke): ${v.tittel} (${v.hjemmel.join(', ') || 'uten hjemmel'})`);
   }

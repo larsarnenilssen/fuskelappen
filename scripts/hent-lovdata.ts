@@ -150,7 +150,16 @@ export function validerLovdokument(ny: Lovdokument, forrige: Lovdokument | null)
   const antall = alleParagrafer(ny.seksjoner).length;
   if (antall === 0) feil.push('Ingen paragrafer.');
   if (!ny.refid) feil.push('Mangler adressen hos Lovdata (refid).');
-  const tomme = alleParagrafer(ny.seksjoner).filter(({ paragraf: p }) => p.ledd.length === 0 && p.endringer.length === 0 && !/oppheva|opphevet/i.test(p.tittel));
+  // En paragraf uten tekst er en feil, med to unntak: en opphevet paragraf, og en paragraf som er overskrift for
+  // paragrafene etter (§ 3 med § 3-1, § 3-2 …, eller § 4 med § 4a, § 4b …), som i noen lokale forskrifter.
+  const alle = alleParagrafer(ny.seksjoner).map(({ paragraf }) => paragraf);
+  const erOverskrift = (p: Paragraf, i: number) => {
+    const neste = alle[i + 1]?.nr ?? '';
+    return neste.startsWith(`${p.nr}-`) || new RegExp(`^${p.nr.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[a-z]$`).test(neste);
+  };
+  const tomme = alle
+    .map((p, i) => ({ paragraf: p, i }))
+    .filter(({ paragraf: p, i }) => p.ledd.length === 0 && p.endringer.length === 0 && !/oppheva|opphevet/i.test(p.tittel) && !erOverskrift(p, i));
   if (tomme.length > 0) feil.push(`Paragrafer uten tekst: ${tomme.map(({ paragraf: p }) => p.visNr).join(', ')}.`);
   if (forrige) {
     const fra = alleParagrafer(forrige.seksjoner).length;
@@ -258,7 +267,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const kildeForUrl = new Map(register.kilder.map((k) => [k.url.replace(/\/$/, ''), k.id]));
   const lokaleDokumenter = (lokale?.forskrifter ?? []).map((f) => {
     const url = `https://lovdata.no/dokument/LF/${f.refid}`;
-    const gyldighet: Lovdokument['gyldighet'] = f.type === 'skoleregler-skole' || f.type === 'fagfordeling' ? { niva: 'skole', fylke: f.fylke, skoler: f.skoler } : { niva: 'fylke', fylke: f.fylke };
+    const gyldighet: Lovdokument['gyldighet'] = f.skoler.length > 0 ? { niva: 'skole', fylke: f.fylke, skoler: f.skoler } : { niva: 'fylke', fylke: f.fylke };
     return { id: f.id, kilde: kildeForUrl.get(url) ?? 'lovdata-lokale', korttittel: f.korttittel, malform: f.malform, gyldighet, url, lokaltype: f.type };
   });
 

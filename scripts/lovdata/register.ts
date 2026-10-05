@@ -88,6 +88,12 @@ export type Lokaltype = 'skoleregler' | 'skoleregler-voksne' | 'skoleregler-skol
 
 const OPPLAERINGSLOVA = 'lov/2023-06-09-30';
 const OPPLAERINGSFORSKRIFTA = 'forskrift/2024-06-03-900';
+/**
+ * Opplæringslova og -forskrifta fra før 1.8.2024. Forskrifter med hjemmel i dem som Lovdata fortsatt har som
+ * gjeldende, tas med (eier 05.10.2026: det som står i Lovdata, regnes som gjeldende). Finnes det en nyere forskrift av
+ * samme type for fylket, går den foran (velgForskrifter).
+ */
+const GAMLE = ['lov/1998-07-17-61', 'forskrift/2006-06-23-724'];
 
 /**
  * Typen ut fra hjemmelen og tittelen (eier 05.10.2026). Hjemmelen må være opplæringslova eller opplæringsforskrifta.
@@ -103,7 +109,7 @@ export function klassifiser(meta: Pick<Metadata, 'tittel' | 'hjemmel'>, skoler: 
   const h = meta.hjemmel;
   const t = meta.tittel.toLowerCase();
   const voksne = /vaksne|voksne/.test(t);
-  if (!h.some((x) => x.startsWith(OPPLAERINGSLOVA) || x.startsWith(OPPLAERINGSFORSKRIFTA))) return null;
+  if (!h.some((x) => [OPPLAERINGSLOVA, OPPLAERINGSFORSKRIFTA, ...GAMLE].some((lov) => x.startsWith(lov)))) return null;
   if (h.some((x) => x === `${OPPLAERINGSLOVA}/§10-7`)) {
     // Skolens egne regler er fastsatt med heimel også i fylkets skoleregler (en annen forskrift enn opplæringsforskrifta).
     const underFylket = h.some((x) => x.startsWith('forskrift/') && !x.startsWith(OPPLAERINGSFORSKRIFTA));

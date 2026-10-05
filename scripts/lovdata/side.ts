@@ -16,7 +16,7 @@
 //
 // Står det noe annet i teksten, kastes en feil, så ingen tekst blir borte uten at det merkes.
 import { type HTMLElement, parse } from 'node-html-parser';
-import type { Ledd, Lovdokument, Paragraf, Punkt, Seksjon, Segment } from '../../src/modules/lov/typer.ts';
+import { alleParagrafer, alleSeksjoner, type Ledd, type Lovdokument, type Paragraf, type Punkt, type Seksjon, type Segment } from '../../src/modules/lov/typer.ts';
 import { beskriv, erElement, klasse, type Leseoppsett, rydd, ryddOverskrift, ryddTittel, segmenter, tag, tolkOverskrift, Ukjent } from './les.ts';
 
 /** Elementer som ikke er tekst: ankere og knappen «Del paragraf». */
@@ -102,7 +102,8 @@ function lesParagraf(el: HTMLElement): Paragraf {
 function lesKapittel(el: HTMLElement): Seksjon {
   const hode = el.childNodes.filter(erElement).find((e) => /^h[1-6]$/.test(tag(e)));
   const tekst = ryddOverskrift(hode?.text ?? '');
-  const id = el.getAttribute('data-refID') ?? el.getAttribute('id') ?? tekst;
+  // Lovdata gir noen kapitler tom id; da brukes overskriften.
+  const id = el.getAttribute('data-refID') || el.getAttribute('id') || tekst || 'kapittel';
   const { type, nr } = tolkOverskrift(id, tekst);
   const s: Seksjon = { id, type, nr, overskrift: tekst || id, merknader: [], seksjoner: [], paragrafer: [] };
   for (const barn of el.childNodes.filter(erElement)) {
@@ -110,7 +111,13 @@ function lesKapittel(el: HTMLElement): Seksjon {
     if (tag(barn) === 'div' && klasse(barn, 'paragraf')) s.paragrafer.push(lesParagraf(barn));
     else if (tag(barn) === 'div' && klasse(barn, 'kapittel')) s.seksjoner.push(lesKapittel(barn));
     else if (tag(barn) === 'table' && klasse(barn, 'fotnote')) s.merknader.push(fotnote(barn));
-    else throw new Ukjent(`${beskriv(barn)} i «${s.overskrift}»`);
+    // Tekst rett under kapitteloverskriften (f.eks. en innledning eller et vedlegg) blir merknader til kapitlet.
+    else if (tag(barn) === 'p' && klasse(barn, 'avsnitt')) {
+      if (barn.text.trim()) s.merknader.push(rydd(segmenter(barn, hoppOver)));
+    } else if (tag(barn) === 'table' && klasse(barn, 'listeItem')) {
+      const { punkt: pk } = punkt(barn);
+      s.merknader.push(rydd([`${pk.merke} `, ...pk.ledd.flatMap((l) => l.tekst)]));
+    } else throw new Ukjent(`${beskriv(barn)} i «${s.overskrift}»`);
   }
   return s;
 }
@@ -150,8 +157,9 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
       if (tag(e) === 'div' && klasse(e, 'paragraf')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [], seksjoner: [], paragrafer: [lesParagraf(e)] }];
       // Heimelen og kunngjøringen øverst står på siden hos Lovdata.
       if (tag(e) === 'p' && klasse(e, 'morTag_mf')) return [];
-      // Annen tekst før første paragraf blir en merknad øverst.
+      // Annen tekst før første paragraf, også en fotnote, blir en merknad øverst.
       if (tag(e) === 'p' && klasse(e, 'avsnitt')) return e.text.trim() ? [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [rydd(segmenter(e, hoppOver))], seksjoner: [], paragrafer: [] }] : [];
+      if (tag(e) === 'table' && klasse(e, 'fotnote')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [fotnote(e)], seksjoner: [], paragrafer: [] }];
       throw new Ukjent(`${beskriv(e)} i dokumentet`);
     });
   } catch (e) {
@@ -167,6 +175,30 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
     else acc.push(s);
     return acc;
   }, []);
+  // Noen skoler skriver reglene som kapitler med tekst, uten paragrafer. Da blir hvert kapittel en paragraf, så
+  // teksten kan vises, søkes i og lenkes til som i de andre forskriftene.
+  if (alleParagrafer(seksjoner).length === 0) {
+    const alle = alleSeksjoner(seksjoner);
+    // Teksten i det ytterste kapitlet, før kapitlene inni, står som innledning når det har kapitler inni.
+    const innledning = alle.filter((s) => s.seksjoner.length > 0).flatMap((s) => s.merknader);
+    seksjoner = [
+      {
+        id: 'dokument',
+        type: 'avsnitt',
+        nr: null,
+        overskrift: tittel,
+        merknader: innledning,
+        seksjoner: [],
+        paragrafer: alle
+          .filter((s) => s.seksjoner.length === 0 && s.merknader.length > 0)
+          .map((s, i) => {
+            const m = /^(\d+)\.?\s*(.*)$/.exec(s.overskrift);
+            const nr = s.nr ?? m?.[1] ?? String(i + 1);
+            return { nr, visNr: `${nr}.`, tittel: m ? (m[2] ?? '') : s.overskrift, ledd: s.merknader.map((t) => ({ tekst: t })), endringer: [], fotnoter: [] };
+          }),
+      },
+    ];
+  }
   return {
     id: oppsett.id,
     kilde: oppsett.kilde,
