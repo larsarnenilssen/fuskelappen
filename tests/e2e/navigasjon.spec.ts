@@ -139,7 +139,8 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
     await page.evaluate(() => window.scrollTo(0, 400));
     const y = await page.evaluate(() => window.scrollY);
-    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
+    // Et vanlig trykk i Playwright ruller først knappen inn i bildet. En person som trykker, ruller ikke siden.
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).dispatchEvent('click');
     await expect(page.getByRole('searchbox')).toBeFocused();
     await page.getByRole('button', { name: 'Lukk søket' }).click();
     await expect(page.locator('main h1')).toBeVisible();

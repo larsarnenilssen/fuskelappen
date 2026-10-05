@@ -110,8 +110,16 @@ export function toppsok(): string | null {
   return typeof s?.sok === 'string' ? s.sok : null;
 }
 
+/**
+ * Rullingen på siden da søket ble åpnet, per oppføring. Egen tabell, fordi rullingen endres når siden skjules bak
+ * søket, og WebKit kan melde den endringen etter at søket har fått sin egen oppføring (05.10.2026).
+ */
+const rullingVedSok = new Map<string, number>();
+
 export function apneToppsok(): void {
   if (toppsok() !== null) return;
+  const side = gjeldende();
+  if (side) rullingVedSok.set(side.appId, window.scrollY);
   dybde += 1;
   history.pushState({ appId: nyId(), dybde, sok: '' }, '');
   varsleToppsok();
@@ -136,8 +144,12 @@ export function useToppsok(): string | null {
       settSok((forrige) => {
         // Søket lukkes: siden får tilbake rullingen den hadde da søket ble åpnet.
         if (forrige !== null && ny === null && naa) {
-          const y = scrollPosisjoner.get(naa.appId) ?? 0;
+          const y = rullingVedSok.get(naa.appId) ?? scrollPosisjoner.get(naa.appId) ?? 0;
+          // Etter at siden er tegnet igjen, og en gang til litt etter, i tilfelle høyden ikke var på plass ennå.
           requestAnimationFrame(() => window.scrollTo(0, y));
+          setTimeout(() => {
+            if (toppsok() === null && Math.abs(window.scrollY - y) > 1) window.scrollTo(0, y);
+          }, 100);
         }
         return ny;
       });
