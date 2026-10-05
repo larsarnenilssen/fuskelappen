@@ -2,7 +2,7 @@
 
 <!-- Generert av `npm run kontroll:rapport`. Kildesjekken lager den på nytt hver uke. Ikke rediger for hånd. -->
 
-Oppdatert 04.10.2026. Kildesjekken kjørte sist 04.10.2026, verdisjekken 04.10.2026.
+Oppdatert 05.10.2026. Kildesjekken kjørte sist 05.10.2026, verdisjekken 05.10.2026.
 
 Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10–12.
 
@@ -29,7 +29,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 ## Må ses på
 
-- **Grep – fag, læreplaner, vurderingsordninger og årstimetall:** ⚠️ sjekken feilet (04.10.2026): Hentingen fra Grep feilet. Se loggen for steget «Hent Grep».
+- **Grep – fag, læreplaner, vurderingsordninger og årstimetall:** ⚠️ sjekken feilet (05.10.2026): Hentingen fra Grep feilet. Se loggen for steget «Hent Grep».
 - **Udir-1-2026, teksten øverst i rundskrivet:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, A03 Programområdekode:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020:** ⚠️ endret siden 04.10.2026, venter på godkjenning
@@ -56,15 +56,15 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 - **Fag- og svenneprøver:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, oversikt over alle feltene:** ⚠️ endret siden 04.10.2026, venter på godkjenning
-- **vestlandfylke.no – søknad og inntak:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – inntaksreglar og opplæringsrett:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – minoritetsspråklege:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – innføringskurs:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – tilrettelegging ved læringsutfordringar:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – eksamen og standpunkt:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – tid og stad for privatisteksamen:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
-- **vestlandfylke.no – fagprøven:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – søknad og inntak:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – inntaksreglar og opplæringsrett:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – minoritetsspråklege:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – innføringskurs:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – tilrettelegging ved læringsutfordringar:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – eksamen og standpunkt:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – tid og stad for privatisteksamen:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – fagprøven:** ⚠️ sjekken feilet (05.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
 
 ## Praksis og tolkninger
 
@@ -100,32 +100,32 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)
 
-`ks-sfs2213-avtaletekst` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e)
+`ks-sfs2213-avtaletekst` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e)
 
 **Regelverdier**
 
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
-| `arsverk_timer` (sfs2213-2026-2027) | 4 | 1687,5 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `arsverk_timer_60_ar` (sfs2213-2026-2027) | 4 | 1650 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `arbeidsaar_tillegg_dager` (sfs2213-2026-2027) | 4 a | 6 dager | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `timer_per_dag` (sfs2213-2026-2027) | 4 a | 7,5 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
+| `arsverk_timer` (sfs2213-2026-2027) | 4 | 1687,5 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `arsverk_timer_60_ar` (sfs2213-2026-2027) | 4 | 1650 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `arbeidsaar_tillegg_dager` (sfs2213-2026-2027) | 4 a | 6 dager | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `timer_per_dag` (sfs2213-2026-2027) | 4 a | 7,5 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
 | `arbeidsdager_per_uke` (sfs2213-2026-2027) | 5.1 | 5 dager | avledet av andre verdier | ikke kontrollert |
-| `planfestet_timer` (sfs2213-2026-2027) | 5.1 | 1150 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `planfestet_maks_dag` (sfs2213-2026-2027) | 5.1 | 9 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `planfestet_maks_uke` (sfs2213-2026-2027) | 5.1 | 37,5 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `arsramme_funksjon` (sfs2213-2026-2027) | Vedlegg 1 | 607,5 årsrammetimer (60 min) | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `arsramme_funksjon_45` (sfs2213-2026-2027) | Vedlegg 1 | 810 årsrammetimer (45 min) | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `stjernetillegg` (sfs2213-2026-2027) | Vedlegg 1 | 52,5 årsrammetimer (60 min) | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `stjernetillegg_45` (sfs2213-2026-2027) | Vedlegg 1 | 70 årsrammetimer (45 min) | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `stjerne_maks_elever` (sfs2213-2026-2027) | Vedlegg 1 | 15 elever | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `kontaktlaerer_reduksjon` (sfs2213-2026-2027) | 7.3 b | 28,5 årsrammetimer (60 min) | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `livsfase_nyutdannet_prosent` (sfs2213-2026-2027) | 6 | 6 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `livsfase_57_prosent` (sfs2213-2026-2027) | 6 | 6 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `livsfase_60_prosent` (sfs2213-2026-2027) | 6 | 12,5 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `godtgjoring_kontaktlaerer` (sfs2213-2026-2027) | 9.1 | 12000 kroner per år | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `godtgjoring_radgiver` (sfs2213-2026-2027) | 9.1 | 12000 kroner per år | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `arsrammer` (sfs2213-2026-2027) | Vedlegg 1 | tabell, 151 rader | ✅ samsvarer (04.10.2026). Alle 151 radene stemmer. | ikke kontrollert |
+| `planfestet_timer` (sfs2213-2026-2027) | 5.1 | 1150 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `planfestet_maks_dag` (sfs2213-2026-2027) | 5.1 | 9 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `planfestet_maks_uke` (sfs2213-2026-2027) | 5.1 | 37,5 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `arsramme_funksjon` (sfs2213-2026-2027) | Vedlegg 1 | 607,5 årsrammetimer (60 min) | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `arsramme_funksjon_45` (sfs2213-2026-2027) | Vedlegg 1 | 810 årsrammetimer (45 min) | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `stjernetillegg` (sfs2213-2026-2027) | Vedlegg 1 | 52,5 årsrammetimer (60 min) | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `stjernetillegg_45` (sfs2213-2026-2027) | Vedlegg 1 | 70 årsrammetimer (45 min) | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `stjerne_maks_elever` (sfs2213-2026-2027) | Vedlegg 1 | 15 elever | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `kontaktlaerer_reduksjon` (sfs2213-2026-2027) | 7.3 b | 28,5 årsrammetimer (60 min) | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `livsfase_nyutdannet_prosent` (sfs2213-2026-2027) | 6 | 6 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `livsfase_57_prosent` (sfs2213-2026-2027) | 6 | 6 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `livsfase_60_prosent` (sfs2213-2026-2027) | 6 | 12,5 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `godtgjoring_kontaktlaerer` (sfs2213-2026-2027) | 9.1 | 12000 kroner per år | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `godtgjoring_radgiver` (sfs2213-2026-2027) | 9.1 | 12000 kroner per år | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `arsrammer` (sfs2213-2026-2027) | Vedlegg 1 | tabell, 151 rader | ✅ samsvarer (05.10.2026). Alle 151 radene stemmer. | ikke kontrollert |
 
 **Innhold som bygger på kilden**
 
@@ -180,20 +180,20 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Hovedtariffavtalen 1.5.2026–30.4.2028
 
-`ks-hovedtariffavtalen` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf)
+`ks-hovedtariffavtalen` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf)
 
 **Regelverdier**
 
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
-| `timelonn_konstant` (hta-2026-2028) | Kap. 1 § 12.4 | 1400 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `timelonn_arsverk_timer` (hta-2026-2028) | Kap. 1 § 12.4 | 1687,5 timer | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `timelonn_ferie_teller` (hta-2026-2028) | Kap. 1 § 12.4 | 100 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `timelonn_ferie_nevner` (hta-2026-2028) | Kap. 1 § 12.4 | 112 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `feriepenger_prosent` (hta-2026-2028) | Kap. 1 § 7.4.2 | 12 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `feriepenger_prosent_over_60` (hta-2026-2028) | Kap. 1 § 7.4.2 | 14,3 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `overtidstillegg_prosent` (hta-2026-2028) | Kap. 1 § 6.5.3 | 50 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `garantilonn` (hta-2026-2028) | Kap. 4 punkt 4.1 | tabell, 5 rader | ✅ samsvarer (04.10.2026). Alle 5 radene stemmer. | ikke kontrollert |
+| `timelonn_konstant` (hta-2026-2028) | Kap. 1 § 12.4 | 1400 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `timelonn_arsverk_timer` (hta-2026-2028) | Kap. 1 § 12.4 | 1687,5 timer | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `timelonn_ferie_teller` (hta-2026-2028) | Kap. 1 § 12.4 | 100 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `timelonn_ferie_nevner` (hta-2026-2028) | Kap. 1 § 12.4 | 112 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `feriepenger_prosent` (hta-2026-2028) | Kap. 1 § 7.4.2 | 12 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `feriepenger_prosent_over_60` (hta-2026-2028) | Kap. 1 § 7.4.2 | 14,3 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `overtidstillegg_prosent` (hta-2026-2028) | Kap. 1 § 6.5.3 | 50 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `garantilonn` (hta-2026-2028) | Kap. 4 punkt 4.1 | tabell, 5 rader | ✅ samsvarer (05.10.2026). Alle 5 radene stemmer. | ikke kontrollert |
 | `garantilonn_ansiennitet` (hta-2026-2028) | Kap. 4 punkt 4.1 | liste: 0, 6, 8, 10, 16 | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 
 **Innhold som bygger på kilden**
@@ -233,7 +233,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)
 
-`arbeidsmiljoloven` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://lovdata.no/lov/2005-06-17-62)
+`arbeidsmiljoloven` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://lovdata.no/lov/2005-06-17-62)
 
 **Innhold som bygger på kilden**
 
@@ -245,13 +245,13 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)
 
-`opplaeringslova` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://lovdata.no/lov/2023-06-09-30)
+`opplaeringslova` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://lovdata.no/lov/2023-06-09-30)
 
 **Regelverdier**
 
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
-| `skolear_uker` (sfs2213-2026-2027) | § 14-1 første ledd | 38 uker | ✅ samsvarer (04.10.2026) | ikke kontrollert |
+| `skolear_uker` (sfs2213-2026-2027) | § 14-1 første ledd | 38 uker | ✅ samsvarer (05.10.2026) | ikke kontrollert |
 | `skolear_dager` (sfs2213-2026-2027) | § 14-1 første ledd | 190 dager | avledet av andre verdier | ikke kontrollert |
 
 **Innhold som bygger på kilden**
@@ -312,18 +312,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
 
-`opplaeringsforskrifta` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://lovdata.no/forskrift/2024-06-03-900)
+`opplaeringsforskrifta` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://lovdata.no/forskrift/2024-06-03-900)
 
 **Regelverdier**
 
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
-| `snitt_desimaler` (inntak-2024) | § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a | 2 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `poeng_faktor` (inntak-2024) | § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a | 10 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `valgfag_desimaler` (inntak-2024) | § 4-19 første ledd bokstav b | 2 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `iv_im_verdi` (inntak-2024) | § 4-19 første ledd bokstav e og § 4-25 første ledd bokstav d | 0 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `fravaer_grense_prosent` (vurdering-2025) | § 9-8 første ledd | 10 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `fravaer_skjonn_prosent` (vurdering-2025) | § 9-8 fjerde ledd | 15 prosent | ✅ samsvarer (04.10.2026) | ikke kontrollert |
+| `snitt_desimaler` (inntak-2024) | § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a | 2 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `poeng_faktor` (inntak-2024) | § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a | 10 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `valgfag_desimaler` (inntak-2024) | § 4-19 første ledd bokstav b | 2 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `iv_im_verdi` (inntak-2024) | § 4-19 første ledd bokstav e og § 4-25 første ledd bokstav d | 0 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `fravaer_grense_prosent` (vurdering-2025) | § 9-8 første ledd | 10 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `fravaer_skjonn_prosent` (vurdering-2025) | § 9-8 fjerde ledd | 15 prosent | ✅ samsvarer (05.10.2026) | ikke kontrollert |
 
 **Innhold som bygger på kilden**
 
@@ -503,7 +503,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
 
-`forvaltningsloven` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://lovdata.no/lov/1967-02-10)
+`forvaltningsloven` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://lovdata.no/lov/1967-02-10)
 
 **Innhold som bygger på kilden**
 
@@ -523,7 +523,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
-`udir-grep` · Kildesjekk: ⚠️ sjekken feilet (04.10.2026): Hentingen fra Grep feilet. Se loggen for steget «Hent Grep». · [Åpne kilden](https://data.udir.no/kl06/v201906/)
+`udir-grep` · Kildesjekk: ⚠️ sjekken feilet (05.10.2026): Hentingen fra Grep feilet. Se loggen for steget «Hent Grep». · [Åpne kilden](https://data.udir.no/kl06/v201906/)
 
 **Regelverdier**
 
@@ -552,7 +552,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)
 
-`udir-fag-og-timefordeling` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
+`udir-fag-og-timefordeling` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
 
 **Innhold som bygger på kilden**
 
@@ -639,7 +639,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak
 
-`vigo-kodeverk` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://kodeverk.vigo.no/)
+`vigo-kodeverk` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://kodeverk.vigo.no/)
 
 **Innhold som bygger på kilden**
 
@@ -653,7 +653,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Nasjonalt organisasjonsregister for fag- og yrkesopplæring (NOR) – opplæringskontorene
 
-`udir-nor` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://data-nor.udir.no/swagger/index.html)
+`udir-nor` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://data-nor.udir.no/swagger/index.html)
 
 **Innhold som bygger på kilden**
 
@@ -684,18 +684,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
 
-`vestland-forskrift-inntak` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380)
+`vestland-forskrift-inntak` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380)
 
 **Regelverdier**
 
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
-| `tilleggspoeng_mdd_1` (inntak-vestland-2024) | § 2-7 andre ledd | 3 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `tilleggspoeng_mdd_2` (inntak-vestland-2024) | § 2-7 andre ledd | 6 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `tilleggspoeng_mdd_3` (inntak-vestland-2024) | § 2-7 andre ledd | 9 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `tilleggspoeng_idrett_1` (inntak-vestland-2024) | § 2-8 andre ledd | 3 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `tilleggspoeng_idrett_2` (inntak-vestland-2024) | § 2-8 andre ledd | 6 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
-| `tilleggspoeng_idrett_3` (inntak-vestland-2024) | § 2-8 andre ledd | 9 | ✅ samsvarer (04.10.2026) | ikke kontrollert |
+| `tilleggspoeng_mdd_1` (inntak-vestland-2024) | § 2-7 andre ledd | 3 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `tilleggspoeng_mdd_2` (inntak-vestland-2024) | § 2-7 andre ledd | 6 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `tilleggspoeng_mdd_3` (inntak-vestland-2024) | § 2-7 andre ledd | 9 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `tilleggspoeng_idrett_1` (inntak-vestland-2024) | § 2-8 andre ledd | 3 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `tilleggspoeng_idrett_2` (inntak-vestland-2024) | § 2-8 andre ledd | 6 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
+| `tilleggspoeng_idrett_3` (inntak-vestland-2024) | § 2-8 andre ledd | 9 | ✅ samsvarer (05.10.2026) | ikke kontrollert |
 
 **Innhold som bygger på kilden**
 
@@ -722,7 +722,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Forskrift om skulereglar, Vestland fylkeskommune
 
-`vestland-forskrift-skulereglar` · Kildesjekk: i orden (04.10.2026) · [Åpne kilden](https://lovdata.no/dokument/LF/forskrift/2026-06-16-1587)
+`vestland-forskrift-skulereglar` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://lovdata.no/dokument/LF/forskrift/2026-06-16-1587)
 
 **Innhold som bygger på kilden**
 
