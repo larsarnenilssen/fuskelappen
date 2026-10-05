@@ -2,7 +2,7 @@
 
 Denne veiledningen er for deg som eier appen. Den forutsetter ingen tekniske kunnskaper. Alt gjøres i nettleseren på github.com eller på telefonen. Du trenger aldri redigere filer selv: si fra til Claude med vanlige ord, så gjør Claude endringen og ber deg godkjenne den.
 
-Repoet ligger på **https://github.com/larsarnenilssen/jukselappen**, og appen på **https://larsarnenilssen.github.io/jukselappen/**. Den flytter til **https://jukselappen.no/** når domenet er tatt i bruk (punkt 16).
+Repoet ligger på **https://github.com/larsarnenilssen/jukselappen**, og appen på **https://jukselappen.no/** (fra 05.10.2026, punkt 16). Den gamle adressen på github.io sender videre dit.
 
 Står en knapp ikke der veiledningen sier, eller GitHub spør om noe som ikke står her: stopp og spør Claude.
 
@@ -84,7 +84,7 @@ Innholdet i appen endres aldri automatisk. Unntaket er registerdataene fra Grep 
 
 ## 7. Installere appen
 
-- **iPhone og iPad:** Åpne https://larsarnenilssen.github.io/jukselappen/ i **Safari** → trykk **Del**-knappen (firkant med pil opp) → **Legg til på Hjem-skjerm** → **Legg til**.
+- **iPhone og iPad:** Åpne https://jukselappen.no i **Safari** → trykk **Del**-knappen (firkant med pil opp) → **Legg til på Hjem-skjerm** → **Legg til**.
 - **Android:** Åpne adressen i **Chrome** → trykk menyen **⋮** → **Installer app** (eller **Legg til på startsiden**).
 - **Mac og PC:** I Chrome eller Edge vises et installer-ikon i adressefeltet.
 
@@ -333,6 +333,8 @@ Slutter en lenke å virke senere, si fra hvordan adressen ser ut når du finner 
 
 
 ## 16. Eget domene: jukselappen.no
+
+**Gjort 05.10.2026:** Domenet er tatt i bruk, med HTTPS. Stegene står igjen her i tilfelle domenet må settes opp på nytt. Den gamle adressen sender videre, men en app som er lagt på hjemskjermen fra den, kjører videre fra lageret på enheten uten oppdateringer, med flyttevarselet. Slett det gamle ikonet og legg til appen på nytt fra jukselappen.no.
 
 Appen flyttes fra `https://larsarnenilssen.github.io/jukselappen/` til **https://jukselappen.no/** (avgjørelse 065). Gjør stegene i denne rekkefølgen. Navnene på knappene hos Webhuset kan avvike litt fra det som står her. Spør Claude hvis du er i tvil.
 

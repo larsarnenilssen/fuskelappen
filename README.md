@@ -2,7 +2,7 @@
 
 Installerbar nettapp (PWA) for skoleledere og lærere i videregående opplæring. Den regner ut, forklarer og viser kildene for regelverket rundt lærerstillinger og skolens drift: arbeidstid etter SFS 2213, fag og læreplaner, inntak, tilpasset opplæring, vurdering, skolemiljø og frister.
 
-Appen er en statisk side på GitHub Pages: **https://larsarnenilssen.github.io/jukselappen/**, og **https://jukselappen.no/** når domenet er tatt i bruk (avgjørelse 065). Den har ingen server, ingen innlogging og ingen sporing. All brukerdata lagres på enheten.
+Appen er en statisk side på GitHub Pages: **https://jukselappen.no/** (avgjørelse 065). Den gamle adressen på github.io sender videre dit. Den har ingen server, ingen innlogging og ingen sporing. All brukerdata lagres på enheten.
 
 Appnavnet er definert i `src/config/app.ts` og hentes derfra til manifest og sidetittel.
 
