@@ -656,6 +656,27 @@ main {
   border: 2px solid var(--farge-merke);
 }
 
+/* Nettsiden og skolens regler som knapper øverst i skolekortet, og en strek før tilbudene (eier 05.10.2026). */
+.skolekort-snarveier {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+}
+
+.skolekort-snarveier .knapp {
+  text-decoration: none;
+}
+
+.skolekort-skille {
+  margin: 0;
+  padding-top: var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+  font-size: var(--str-s);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
 .skolekort-alle {
   margin: var(--rom-3) 0 0;
 }

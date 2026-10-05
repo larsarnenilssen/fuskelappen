@@ -1,7 +1,8 @@
 // Skoleregisteret: skolene i videregående og tilbudene de har, etter utdanning.no (avgjørelse 053). Søk og filter
 // (fylke, utdanningsprogram, tilbud) står i adressen (#/opplaeringslop/skoler?fylke=46&tilbud=HSHEA2), så lenkene
 // fra tilbudene gir et ferdig utvalg. Uten fylke i adressen brukes fylket brukeren har valgt.
-import { dokumentnavn, dokumentRute, lastOversikt } from '../../lov/data.ts';
+import { dokumentRute, lastOversikt } from '../../lov/data.ts';
+import type { Lokaltype } from '../../lov/typer.ts';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -122,12 +123,19 @@ function Skolekort({
   valgt: string;
   program: string;
   /** Skolens egne regler fra Lovdata (avgjørelse 061). */
-  regler: readonly { id: string; korttittel: string; korttittelNn?: string }[];
+  regler: readonly Skoleregel[];
 }) {
   const { t, malform } = useTekst();
   const [vist, settVist] = useState(apen);
   const [alle, settAlle] = useState(false);
   const id = useId();
+  // Korte navn, så knappen får plass på én linje på mobil. Flere av samme type får nummer.
+  const regelnavn = (r: Skoleregel) => {
+    const type = r.lokaltype === 'fagfordeling' ? 'fagfordeling' : 'skoleregler';
+    const like = regler.filter((x) => (x.lokaltype === 'fagfordeling' ? 'fagfordeling' : 'skoleregler') === type);
+    const navn = t(`opplaeringslop.skoler.${type === 'fagfordeling' ? 'fagfordelingKort' : 'skolereglerKort'}`);
+    return like.length > 1 ? `${navn} ${like.indexOf(r) + 1}` : navn;
+  };
   const vedSkolen = skole.tilbud.filter((k) => indeks.programomrader[k]);
   const antall = vedSkolen.length;
   // Knappen for alle tilbudene trengs bare når utvalget etter filteret er en del av dem.
@@ -155,21 +163,26 @@ function Skolekort({
         {skole.nr && <FavorittKnapp id={skolefavoritt(skole.nr)} navn={skole.navn} liten />}
       </div>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
-        {/* Nettsiden og skolens egne regler øverst, før tilbudene (eier 05.10.2026). */}
-        {vist && skole.nettside && (
-          <p>
-            <a class="ekstern-lenke" href={skole.nettside} target="_blank" rel="noopener noreferrer">
-              {t('opplaeringslop.skoler.nettside')}
-              <Ikon navn="ekstern" class="ikon-liten" />
-            </a>
-          </p>
-        )}
-        {vist &&
-          regler.map((r) => (
-            <p key={r.id}>
-              <a href={`#${dokumentRute(r.id)}`}>{dokumentnavn(r, malform)}</a>
+        {/* Nettsiden og skolens egne regler som knapper øverst, og en strek før tilbudene (eier 05.10.2026). */}
+        {vist && (skole.nettside || regler.length > 0) && (
+          <>
+            <p class="skolekort-snarveier">
+              {skole.nettside && (
+                <a class="knapp knapp-sekundaer knapp-liten" href={skole.nettside} target="_blank" rel="noopener noreferrer">
+                  {t('opplaeringslop.skoler.nettsideKort')}
+                  <Ikon navn="ekstern" class="ikon-liten" />
+                </a>
+              )}
+              {regler.map((r) => (
+                <a key={r.id} class="knapp knapp-sekundaer knapp-liten" href={`#${dokumentRute(r.id)}`}>
+                  <Ikon navn="paragraf" class="ikon-liten" />
+                  {regelnavn(r)}
+                </a>
+              ))}
             </p>
-          ))}
+            <p class="skolekort-skille">{t('opplaeringslop.skoler.tilbudVedSkolen', { antall: formaterTall(antall) })}</p>
+          </>
+        )}
         {vist && delvis && (
           <p class="skolekort-alle">
             <button type="button" class="lenkeknapp liten" onClick={() => settAlle(!alle)}>
@@ -225,15 +238,21 @@ function TilbudSok({ id, sok, settSok, treff, indeks, velg }: { id: string; sok:
   );
 }
 
+/** En lokal forskrift som gjelder skolen: skolens egne regler eller fag- og timefordeling (avgjørelse 061). */
+interface Skoleregel {
+  id: string;
+  lokaltype?: Lokaltype;
+}
+
 /** Skolenes egne regler fra Lovdata per organisasjonsnummer (avgjørelse 061). */
-function useSkoleregler(): Map<string, { id: string; korttittel: string; korttittelNn?: string }[]> {
-  const [regler, settRegler] = useState(new Map<string, { id: string; korttittel: string; korttittelNn?: string }[]>());
+function useSkoleregler(): Map<string, Skoleregel[]> {
+  const [regler, settRegler] = useState(new Map<string, Skoleregel[]>());
   useEffect(() => {
     lastOversikt().then((o) => {
-      const m = new Map<string, { id: string; korttittel: string; korttittelNn?: string }[]>();
+      const m = new Map<string, Skoleregel[]>();
       for (const d of o.dokumenter) {
         if (d.gyldighet.niva !== 'skole') continue;
-        for (const s of d.gyldighet.skoler) m.set(s, [...(m.get(s) ?? []), { id: d.id, korttittel: d.korttittel, ...(d.korttittelNn ? { korttittelNn: d.korttittelNn } : {}) }]);
+        for (const s of d.gyldighet.skoler) m.set(s, [...(m.get(s) ?? []), { id: d.id, ...(d.lokaltype ? { lokaltype: d.lokaltype } : {}) }]);
       }
       settRegler(m);
     }, () => undefined);
