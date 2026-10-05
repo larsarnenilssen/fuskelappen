@@ -3779,8 +3779,8 @@ p.fagkort-tittel {
 
 /*
  * Skrivebord (eier 05.10.2026): «Neste datoer» og favorittene står i en egen kolonne til høyre, med en lys flate i
- * temafargen. En skyvebryter slår kolonnen av og på. Bredden passer en 15" laptop: to kolonner (gruppene og
- * sidekolonnen) på halv skjerm fra 43rem, og tre på hel skjerm fra 76rem. Da blir siden bredere.
+ * temafargen, og en skyvebryter slår kolonnen av og på. Kolonnene er like brede: to (gruppene og sidekolonnen) fra
+ * 44rem, som er halv skjerm på en 15" laptop, og tre fra 68rem. Smalere står alt i én kolonne, som på mobil.
  */
 .forside-verktoy-hoyre {
   display: flex;
@@ -3789,68 +3789,43 @@ p.fagkort-tittel {
   gap: var(--rom-2) var(--rom-4);
 }
 
-/* Skyvebryteren i det blå feltet: lyse kanter, og lys med mørk knott når den er på. */
 .forside-vippe {
   margin: 0;
   column-gap: var(--rom-2);
 }
 
-.forside-topp .forside-vippe input {
-  border-color: var(--farge-topplinje-tekst);
-  background: transparent;
-}
-
-.forside-topp .forside-vippe input::after {
-  background: var(--farge-topplinje-tekst);
-}
-
-.forside-topp .forside-vippe input:checked {
-  border-color: var(--farge-topplinje-tekst);
-  background: var(--farge-topplinje-tekst);
-}
-
-.forside-topp .forside-vippe input:checked::after {
-  background: var(--farge-topplinje);
-}
-
-.forside-topp .forside-vippe label {
-  color: var(--farge-topplinje-tekst);
+.forside-vippe label {
+  font-weight: 400;
 }
 
 .forside-vippe.uten-etikett {
   display: block;
 }
 
-/* MOCKUP (eier 05.10.2026): valget mellom de tre forslagene. Fjernes når eier har valgt. */
-.forside-mockup {
-  align-items: center;
-  margin: 0 0 var(--rom-4);
+.tilpass-del {
+  margin: var(--rom-5) 0 var(--rom-1);
+  font-size: var(--str-m);
 }
 
-@media (min-width: 43rem) {
+.tilpasning .forside-vippe {
+  margin: var(--rom-3) 0;
+}
+
+@media (min-width: 44rem) {
   main:has(> .forside-bred),
   .skall:has(main > .forside-bred) .topplinje-innhold {
-    max-width: 72rem;
+    max-width: 92rem;
   }
 
   .forside-oppsett {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
-    column-gap: var(--rom-5);
+    column-gap: var(--rom-6);
   }
 
   .forside-oppsett > .forsidegrupper {
     display: block;
-  }
-
-  /* Uten sidekolonne bruker gruppene hele bredden: to kolonner, og tre på hel skjerm. */
-  .forside-oppsett > .forsidegrupper-bred,
-  .forsidegrupper-bred {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start;
-    column-gap: var(--rom-6);
   }
 
   .forside-bred .forsidegruppe {
@@ -3861,165 +3836,177 @@ p.fagkort-tittel {
     margin-top: 0;
   }
 
-  /* Flaten går litt opp over overskriften, så overskriftene i kolonnene står i samme høyde. */
+  /*
+   * Kolonnen står fast under toppfeltet mens siden rulles, og ruller selv når den er høyere enn skjermen. Flaten går
+   * litt opp over overskriften, så overskriftene i kolonnene står i samme høyde.
+   */
   .forside-sidekolonne {
+    --kolonne-topp: calc(var(--topplinje-hoyde) + env(safe-area-inset-top) + var(--rom-3));
+    position: sticky;
+    top: var(--kolonne-topp);
+    display: flex;
+    flex-direction: column;
     min-width: 0;
+    max-height: var(--kolonne-hoyde, calc(100dvh - var(--kolonne-topp) - var(--rom-3)));
     margin-top: calc(-1 * var(--rom-4));
-    padding: var(--rom-4) var(--rom-3) 0;
+    padding: var(--rom-3) var(--rom-3) 0;
     border-radius: var(--radius-l);
     background: var(--farge-sidekolonne);
+    container: sidekolonne / inline-size;
   }
 
-  /* Forslag 2: bryteren øverst i kolonnen. */
   .sidekolonne-topp {
     display: flex;
+    flex: none;
     justify-content: flex-end;
     margin: 0 0 var(--rom-2);
   }
 
-  .sidekolonne-topp .vippe label {
-    font-weight: 400;
+  .sidekolonne-ramme {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
   }
 
-  /* Forslag 2, lukket: en smal skinne med bryteren og knapper som åpner kolonnen igjen. */
-  .forside-skinne {
+  /* Uten synlig rullefelt (eier 05.10.2026). Rullingen stopper i kolonnen, så siden bak ikke ruller videre. */
+  .sidekolonne-rull {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+  }
+
+  .sidekolonne-rull::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Toningen øverst og nederst når det er mer å se over eller under. */
+  .sidekolonne-ramme::before,
+  .sidekolonne-ramme::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 2.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--varighet) ease;
+  }
+
+  .sidekolonne-ramme::before {
+    top: 0;
+    background: linear-gradient(to top, transparent, var(--farge-sidekolonne));
+  }
+
+  .sidekolonne-ramme::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, var(--farge-sidekolonne));
+  }
+
+  .sidekolonne-ramme.mer-over::before,
+  .sidekolonne-ramme.mer-under::after {
+    opacity: 1;
+  }
+
+  /* Slått av: en smal skinne med bryteren og knapper som åpner kolonnen igjen. */
+  .forside-oppsett.forside-skinne {
     grid-template-columns: minmax(0, 1fr) 3.75rem;
   }
 
   .forside-skinnen {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: var(--rom-3);
     padding: var(--rom-4) 0;
+    container-type: normal;
   }
 
-  .forside-skinnen .ikonknapp {
+  .skinne-knapp {
+    position: relative;
     color: var(--farge-lenke);
   }
 
-  /* Forslag 3, lukket: «Neste datoer» og favorittene i et bånd over gruppene, med boksene side om side. */
-  .forside-band {
-    margin: calc(-1 * var(--rom-4)) 0 var(--rom-5);
-    padding: var(--rom-4) var(--rom-4) 0;
-    border-radius: var(--radius-l);
-    background: var(--farge-sidekolonne);
-  }
-
-  .forside-band .liste {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  }
-
-  /* De neste datoene fyller bredden, med datoen over tittelen. */
-  .forside-band .kal-neste {
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  }
-
-  /* Strekene mellom boksene: hver boks får en strek rundt, og kanten på listen skjærer bort den ytterste. */
-  .forside-band .liste > li {
-    outline: var(--strek) solid var(--farge-linje);
-  }
-
-  .forside-band .liste > li + li {
-    border-top: 0;
+  /* Antall favoritter ved stjernen. */
+  .skinne-tall {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    min-width: 1.15rem;
+    padding: 0 0.25rem;
+    border-radius: 999px;
+    background: var(--farge-merke);
+    color: var(--farge-merke-tekst);
+    font-size: var(--str-xs);
+    font-weight: 700;
+    line-height: 1.15rem;
+    text-align: center;
   }
 }
 
-/* Datoen over tittelen i «Neste datoer»: i båndet, og i sidekolonnen på halv skjerm, der kolonnen er smal. */
-@media (min-width: 43rem) {
-  .forside-band .kal-neste .listelenke:not(.kal-neste-alle) {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-content: start;
-    row-gap: 0.15rem;
-  }
-
-  .forside-band .kal-neste .listelenke:not(.kal-neste-alle) > .kal-neste-dato {
-    grid-column: 1;
-    width: auto;
-  }
-
-  .forside-band .kal-neste .listelenke:not(.kal-neste-alle) > .listelenke-tekst {
-    grid-column: 1;
-  }
-
-  .forside-band .kal-neste .listelenke:not(.kal-neste-alle) > .ikon:last-child {
-    grid-row: 1 / span 2;
-    grid-column: 2;
-  }
-}
-
-@media (min-width: 43rem) and (max-width: 63.99rem) {
-  /* Med skinnen er det plass til én kolonne med grupper på halv skjerm. */
-  .forside-skinne > .forsidegrupper-bred {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .forside-sidekolonne .kal-neste-alle .kal-neste-dato {
-    width: auto;
-  }
-
-  .forside-sidekolonne .kal-neste .listelenke:not(.kal-neste-alle) {
+/* Smal sidekolonne: datoen står over tittelen i «Neste datoer», så tittelen får hele bredden. */
+@container sidekolonne (max-width: 24rem) {
+  .kal-neste .listelenke:not(.kal-neste-alle) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     row-gap: 0.15rem;
   }
 
-  .forside-sidekolonne .kal-neste .listelenke:not(.kal-neste-alle) > .kal-neste-dato {
+  .kal-neste .listelenke:not(.kal-neste-alle) > .kal-neste-dato {
     grid-column: 1;
     width: auto;
   }
 
-  .forside-sidekolonne .kal-neste .listelenke:not(.kal-neste-alle) > .listelenke-tekst {
+  .kal-neste .listelenke:not(.kal-neste-alle) > .listelenke-tekst {
     grid-column: 1;
   }
 
-  .forside-sidekolonne .kal-neste .listelenke:not(.kal-neste-alle) > .ikon:last-child {
+  .kal-neste .listelenke:not(.kal-neste-alle) > .ikon:last-child {
     grid-row: 1 / span 2;
     grid-column: 2;
   }
-}
 
-@media (min-width: 64rem) {
-  .forside-oppsett {
-    grid-template-columns: minmax(0, 1fr) 22rem;
-    column-gap: var(--rom-6);
-  }
-
-  .forside-sidekolonne {
-    padding-inline: var(--rom-4);
-  }
-
-  .forside-skinne {
-    grid-template-columns: minmax(0, 1fr) 3.75rem;
+  .kal-neste-alle .kal-neste-dato {
+    width: auto;
   }
 }
 
-@media (min-width: 76rem) {
-  main:has(> .forside-bred),
-  .skall:has(main > .forside-bred) .topplinje-innhold {
-    max-width: 92rem;
-  }
-
-  .forside-oppsett {
-    grid-template-columns: minmax(0, 1fr) 24rem;
-  }
-
-  .forside-oppsett > .forsidegrupper {
+/* Med skinnen får gruppene så mange kolonner som får plass med samme minstebredde. */
+@media (min-width: 52rem) {
+  .forside-skinne > .forsidegrupper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
     column-gap: var(--rom-6);
   }
+}
 
-  .forside-oppsett > .forsidegrupper-bred,
-  .forsidegrupper-bred {
+@media (min-width: 68rem) {
+  .forside-oppsett {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .forside-skinne {
+  .forside-oppsett > .forsidegrupper {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    column-gap: var(--rom-6);
+  }
+
+  .forside-oppsett.forside-skinne {
     grid-template-columns: minmax(0, 1fr) 3.75rem;
+  }
+
+  .forside-skinne > .forsidegrupper {
+    grid-column: auto;
+  }
+}
+
+@media (min-width: 74rem) {
+  .forside-skinne > .forsidegrupper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

@@ -30,7 +30,6 @@ export const nb = {
   forside: {
     sidekolonne: 'Sidekolonne',
     visISidekolonne: 'Vis {gruppe} i sidekolonnen',
-    mockup: { tittel: 'Mockup:', m1: '1 Bryter i toppen, gruppene tilbake', m2: '2 Bryter i kolonnen, smal skinne', m3: '3 Bryter i toppen, bånd øverst' },
     tittel: 'Forside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, begrep eller fag',
@@ -60,6 +59,8 @@ export const nb = {
       tittel: 'Tilpass forsiden',
       hjelp: 'Dra i håndtaket for å flytte en gruppe, eller bruk pilene. Trykk på overskriften til en gruppe på forsiden for å lukke eller åpne den. Favorittene sorteres med «Endre rekkefølge» der de står.',
       grupper: 'Gruppene',
+      sidekolonne: 'Sidekolonnen',
+      sidekolonneHjelp: 'På stor skjerm står «Neste datoer» og favorittene i en egen kolonne til høyre.',
       visNeste: 'Vis «Neste datoer» på forsiden',
       nullstill: 'Standard rekkefølge, alle grupper åpne',
     },

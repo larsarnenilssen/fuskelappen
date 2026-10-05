@@ -29,48 +29,11 @@ const NESTE = 'neste';
 
 /** Sidekolonnen på skrivebord kan slås av. Valget lagres i `skjult`, som gruppene (eier 05.10.2026). */
 const SIDEKOLONNE = 'sidekolonne';
-/** Fra denne bredden (rem) står «Neste datoer» og favorittene i en sidekolonne: halv skjerm på en 15" laptop. */
-const SIDEKOLONNE_FRA = 43;
-
 /**
- * MOCKUP (eier 05.10.2026), fjernes når eier har valgt: tre måter å slå av sidekolonnen på. Velges i testversjonen
- * eller med ?mockup=1|2|3 i adressen, og huskes i fanen.
- * 1: bryteren i toppbåndet, og gruppene går tilbake i rutenettet. 2: bryteren i sidekolonnen, som blir en smal skinne.
- * 3: bryteren i toppbåndet, og «Neste datoer» og favorittene står i et bånd over gruppene.
+ * Fra denne bredden (rem) står «Neste datoer» og favorittene i en sidekolonne like bred som hovedkolonnen: halv skjerm
+ * på en 15" laptop med 1440 px eller mer (eier 05.10.2026). Smalere står alt i én kolonne, som på mobil.
  */
-type Mockup = '1' | '2' | '3';
-const MOCKUPER: readonly Mockup[] = ['1', '2', '3'];
-function lesMockup(): Mockup {
-  try {
-    const fraAdressen = new URLSearchParams(location.hash.split('?')[1] ?? '').get('mockup');
-    if (fraAdressen && (MOCKUPER as readonly string[]).includes(fraAdressen)) sessionStorage.setItem('forside-mockup', fraAdressen);
-    const lagret = sessionStorage.getItem('forside-mockup');
-    return lagret && (MOCKUPER as readonly string[]).includes(lagret) ? (lagret as Mockup) : '1';
-  } catch {
-    return '1';
-  }
-}
-const visMockupvalg = () => {
-  try {
-    return __TESTVERSJON__ || sessionStorage.getItem('forside-mockup') !== null;
-  } catch {
-    return __TESTVERSJON__;
-  }
-};
-
-function Mockupvalg({ valgt, onValg }: { valgt: Mockup; onValg: (m: Mockup) => void }) {
-  const { t } = useTekst();
-  return (
-    <div class="sokefilter forside-mockup" role="group" aria-label={t('forside.mockup.tittel')}>
-      <strong>{t('forside.mockup.tittel')}</strong>
-      {MOCKUPER.map((m) => (
-        <button key={m} type="button" class="sokefilter-valg" aria-pressed={valgt === m} onClick={() => onValg(m)}>
-          {t(`forside.mockup.m${m}`)}
-        </button>
-      ))}
-    </div>
-  );
-}
+const SIDEKOLONNE_FRA = 44;
 
 /** Den grafiske skyvebryteren som slår sidekolonnen av og på. `kort`: uten synlig etikett (i den smale skinnen). */
 function Sidekolonnebryter({ pa, kort = false }: { pa: boolean; kort?: boolean }) {
@@ -82,6 +45,72 @@ function Sidekolonnebryter({ pa, kort = false }: { pa: boolean; kort?: boolean }
       <label for={id} class={kort ? 'skjult-visuelt' : undefined}>
         {t('forside.sidekolonne')}
       </label>
+    </div>
+  );
+}
+
+/**
+ * Sidekolonnen (eier 05.10.2026): står fast mens siden rulles og ruller selv når den er for lang, uten synlig
+ * rullefelt. En toning øverst og nederst viser at det er mer over eller under. Bryteren står fast øverst.
+ */
+function Sidekolonne({ children }: { children: ComponentChildren }) {
+  const kolonne = useRef<HTMLDivElement>(null);
+  const rull = useRef<HTMLDivElement>(null);
+  const [mer, settMer] = useState({ over: false, under: false });
+  // Kolonnen er aldri høyere enn den synlige delen av skjermen under toppen sin, også før den har festet seg øverst.
+  // Da synes toningen nederst med en gang.
+  useEffect(() => {
+    const el = kolonne.current;
+    if (!el) return;
+    let ramme = 0;
+    const mal = () => {
+      ramme = 0;
+      const fast = parseFloat(getComputedStyle(el).top) || 0;
+      const luft = parseFloat(getComputedStyle(document.documentElement).fontSize) * 0.75;
+      const topp = Math.max(el.getBoundingClientRect().top, fast);
+      el.style.setProperty('--kolonne-hoyde', `${Math.max(200, window.innerHeight - topp - luft)}px`);
+    };
+    const planlegg = () => {
+      if (!ramme) ramme = requestAnimationFrame(mal);
+    };
+    mal();
+    window.addEventListener('scroll', planlegg, { passive: true });
+    window.addEventListener('resize', planlegg);
+    return () => {
+      cancelAnimationFrame(ramme);
+      window.removeEventListener('scroll', planlegg);
+      window.removeEventListener('resize', planlegg);
+    };
+  }, []);
+  useEffect(() => {
+    const el = rull.current;
+    if (!el) return;
+    const sjekk = () => {
+      const over = el.scrollTop > 1;
+      const under = el.scrollTop + el.clientHeight < el.scrollHeight - 1;
+      settMer((m) => (m.over === over && m.under === under ? m : { over, under }));
+    };
+    sjekk();
+    el.addEventListener('scroll', sjekk, { passive: true });
+    // Høyden endres når grupper åpnes og lukkes, og når vinduet endres.
+    const observator = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(sjekk);
+    observator?.observe(el);
+    if (el.firstElementChild) observator?.observe(el.firstElementChild);
+    return () => {
+      el.removeEventListener('scroll', sjekk);
+      observator?.disconnect();
+    };
+  }, []);
+  return (
+    <div class="forside-sidekolonne" ref={kolonne}>
+      <div class="sidekolonne-topp">
+        <Sidekolonnebryter pa />
+      </div>
+      <div class={`sidekolonne-ramme${mer.over ? ' mer-over' : ''}${mer.under ? ' mer-under' : ''}`}>
+        <div class="sidekolonne-rull" ref={rull}>
+          <div class="sidekolonne-innhold">{children}</div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -222,22 +251,50 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
 }
 
 /** Rekkefølgen på gruppene, med dra og slipp og piler. */
-function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) => string }) {
+/**
+ * «Tilpass»: rekkefølgen på gruppene. Når sidekolonnen brukes (skrivebord), står «Neste datoer» og favorittene i en egen
+ * del med bryteren for kolonnen, og hopper ut av rekkefølgen for de andre gruppene. Plassen deres i den felles
+ * rekkefølgen beholdes, så de står der brukeren satte dem når vinduet blir smalt (eier 05.10.2026).
+ */
+function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; kolonnePa: boolean }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
+  const iKolonnen = (id: string) => id === NESTE || id === FAVORITTER;
+  const sorterbar = (utvalg: string[], etikett: string) => (
+    <Sorterbar
+      etikett={etikett}
+      elementer={utvalg.map((id) => ({ id, navn: navn(id), innhold: <span class="sorterbar-navn">{navn(id)}</span> }))}
+      onFlytt={(fra, til) => settGrupperekkefolge(utvalg.length === grupper.length ? flytt(grupper, fra, til) : flyttInnenfor(grupper, utvalg, fra, til))}
+    />
+  );
+  const visNeste = (
+    <label class="avkrysning tilpass-neste">
+      <input type="checkbox" checked={!(forside.skjult ?? []).includes(NESTE)} onChange={() => vekslSkjultGruppe(NESTE)} />
+      {t('forside.tilpass.visNeste')}
+    </label>
+  );
   return (
     <section class="tilpasning" aria-labelledby="tilpass-tittel">
       <h2 id="tilpass-tittel">{t('forside.tilpass.tittel')}</h2>
       <p class="dempet liten">{t('forside.tilpass.hjelp')}</p>
-      <Sorterbar
-        etikett={t('forside.tilpass.grupper')}
-        elementer={grupper.map((id) => ({ id, navn: navn(id), innhold: <span class="sorterbar-navn">{navn(id)}</span> }))}
-        onFlytt={(fra, til) => settGrupperekkefolge(flytt(grupper, fra, til))}
-      />
-      <label class="avkrysning tilpass-neste">
-        <input type="checkbox" checked={!(forside.skjult ?? []).includes(NESTE)} onChange={() => vekslSkjultGruppe(NESTE)} />
-        {t('forside.tilpass.visNeste')}
-      </label>
+      {sidekolonne ? (
+        <>
+          {sorterbar(
+            grupper.filter((id) => !iKolonnen(id)),
+            t('forside.tilpass.grupper'),
+          )}
+          <h3 class="tilpass-del">{t('forside.tilpass.sidekolonne')}</h3>
+          <p class="dempet liten">{t('forside.tilpass.sidekolonneHjelp')}</p>
+          <Sidekolonnebryter pa={kolonnePa} />
+          {sorterbar(grupper.filter(iKolonnen), t('forside.tilpass.sidekolonne'))}
+          {visNeste}
+        </>
+      ) : (
+        <>
+          {sorterbar(grupper, t('forside.tilpass.grupper'))}
+          {visNeste}
+        </>
+      )}
       <button type="button" class="knapp knapp-sekundaer" onClick={nullstillForside}>
         {t('forside.tilpass.nullstill')}
       </button>
@@ -267,15 +324,7 @@ export default function Forside() {
   const [endrer, settEndrer] = useState<string | null>(null);
   const topp = useRef<HTMLDivElement>(null);
   const skrivebord = useMinstBredde(SIDEKOLONNE_FRA);
-  const [mockup, settMockup] = useState<Mockup>(lesMockup);
-  const velgMockup = (m: Mockup) => {
-    try {
-      sessionStorage.setItem('forside-mockup', m);
-    } catch {
-      // Valget gjelder bare til siden lastes på nytt.
-    }
-    settMockup(m);
-  };
+
 
   // Toppfeltet viser en søkeknapp når søkefeltet er rullet ut av syne (avgjørelse 056).
   useEffect(() => {
@@ -367,7 +416,6 @@ export default function Forside() {
               onEndring={(v) => settBareFavoritter(v === 'favoritter')}
             />
             <div class="forside-verktoy-hoyre">
-              {medKolonne && !tilpass && mockup !== '2' && <Sidekolonnebryter pa={kolonnePa} />}
               <button type="button" class="knapp knapp-sekundaer knapp-liten" aria-pressed={tilpass} onClick={() => settTilpass(!tilpass)}>
                 <Ikon navn={tilpass ? 'hake' : 'kategori'} />
                 {tilpass ? t('forside.tilpass.ferdig') : t('forside.tilpass.knapp')}
@@ -382,51 +430,49 @@ export default function Forside() {
           <Stedmerknad />
 
           {tilpass ? (
-            <Tilpasning grupper={grupper} navn={navn} />
+            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} kolonnePa={kolonnePa} />
           ) : (
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
-              {medKolonne && visMockupvalg() && <Mockupvalg valgt={mockup} onValg={velgMockup} />}
               {!medKolonne ? (
                 // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026).
                 <div class="forsidegrupper">{grupper.map(gruppe)}</div>
               ) : kolonnePa ? (
                 // Skrivebord (eier 05.10.2026): «Neste datoer» og favorittene står i en egen kolonne til høyre, i
-                // rekkefølgen fra «Tilpass». Temagruppene står i én kolonne ved siden av, og i to når det er plass.
+                // rekkefølgen fra «Tilpass». Kolonnene er like brede: gruppene i én kolonne ved siden av, og i to når
+                // det er plass til tre.
                 <div class="forside-oppsett">
                   <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
-                  <div class="forside-sidekolonne">
-                    {mockup === '2' && (
-                      <div class="sidekolonne-topp">
-                        <Sidekolonnebryter pa={kolonnePa} />
-                      </div>
-                    )}
-                    {sidegrupper.map(gruppe)}
-                  </div>
+                  <Sidekolonne>{sidegrupper.map(gruppe)}</Sidekolonne>
                 </div>
-              ) : mockup === '2' ? (
-                // Lukket som en smal skinne med bryteren. Knappene under åpner kolonnen igjen.
-                <div class="forside-oppsett forside-skinne">
-                  <div class="forsidegrupper forsidegrupper-bred">{hovedgrupper.map(gruppe)}</div>
-                  <div class="forside-sidekolonne forside-skinnen">
-                    <Sidekolonnebryter pa={kolonnePa} kort />
-                    {sidegrupper.map((id) => (
-                      <button key={id} type="button" class="ikonknapp" aria-label={t('forside.visISidekolonne', { gruppe: navn(id) })} title={navn(id)} onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}>
-                        <Ikon navn={id === NESTE ? 'kalender' : 'stjerne'} />
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              ) : mockup === '3' ? (
-                // «Neste datoer» og favorittene i et bånd over gruppene, med boksene side om side.
-                <>
-                  <div class="forside-band">{sidegrupper.map(gruppe)}</div>
-                  <div class="forsidegrupper forsidegrupper-bred">{hovedgrupper.map(gruppe)}</div>
-                </>
               ) : (
-                // Gruppene går tilbake i rutenettet, som før, og bruker hele bredden.
-                <div class="forsidegrupper forsidegrupper-bred">{grupper.map(gruppe)}</div>
+                // Slått av: en smal skinne med bryteren, og knapper som åpner kolonnen igjen. Gruppene får bredden.
+                <div class="forside-oppsett forside-skinne">
+                  <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
+                  <div class="forside-sidekolonne forside-skinnen">
+                    <Sidekolonnebryter pa={false} kort />
+                    {sidegrupper
+                      .filter((id) => id !== NESTE || !(forside.skjult ?? []).includes(NESTE))
+                      .map((id) => (
+                        <button
+                          key={id}
+                          type="button"
+                          class="ikonknapp skinne-knapp"
+                          aria-label={id === NESTE ? t('forside.visISidekolonne', { gruppe: navn(id) }) : `${t('forside.visISidekolonne', { gruppe: navn(id) })}, ${antallFavoritter(favoritter.length)}`}
+                          title={navn(id)}
+                          onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}
+                        >
+                          <Ikon navn={id === NESTE ? 'kalender' : 'stjerne'} />
+                          {id === FAVORITTER && favoritter.length > 0 && (
+                            <span class="skinne-tall tall" aria-hidden="true">
+                              {favoritter.length}
+                            </span>
+                          )}
+                        </button>
+                      ))}
+                  </div>
+                </div>
               )}
             </>
           )}

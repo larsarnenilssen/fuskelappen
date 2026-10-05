@@ -30,7 +30,6 @@ export const nn: Tekster = {
   forside: {
     sidekolonne: 'Sidekolonne',
     visISidekolonne: 'Vis {gruppe} i sidekolonna',
-    mockup: { tittel: 'Mockup:', m1: '1 Brytar i toppen, gruppene tilbake', m2: '2 Brytar i kolonna, smal skinne', m3: '3 Brytar i toppen, band øvst' },
     tittel: 'Framside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, omgrep eller fag',
@@ -60,6 +59,8 @@ export const nn: Tekster = {
       tittel: 'Tilpass framsida',
       hjelp: 'Dra i handtaket for å flytte ei gruppe, eller bruk pilene. Trykk på overskrifta til ei gruppe på framsida for å lukke eller opne ho. Favorittane blir sorterte med «Endre rekkjefølgje» der dei står.',
       grupper: 'Gruppene',
+      sidekolonne: 'Sidekolonna',
+      sidekolonneHjelp: 'På stor skjerm står «Neste datoar» og favorittane i ei eiga kolonne til høgre.',
       visNeste: 'Vis «Neste datoar» på framsida',
       nullstill: 'Standard rekkjefølgje, alle grupper opne',
     },
