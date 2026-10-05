@@ -905,12 +905,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4, 5]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Inntak i Vestland: klage og klagenemnd. Adressen er flyttet fra vlfk.no til vestlandfylke.no (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -923,12 +925,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Inntaksområdepoeng, som venter på sidene (fase 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -941,12 +945,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Søknad, kartlegging og frist i Vestland for særskild språkopplæring (fase 4, Språk steg 2–3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -959,12 +965,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Innføringskurs i Vestland (fase 4, Språk steg 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -977,12 +985,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Rettleiingstenesta og midlertidig vedtak ved inntak (fase 4, Tilrettelegging steg 0b, 5b og 6). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -995,12 +1005,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Eksamen for elever i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -1013,12 +1025,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Hurtigklage og klage på standpunkt i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -1031,12 +1045,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Når datoene for muntleg eksamen for privatistar kjem (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -1049,12 +1065,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Fag- og sveineprøva i Vestland, klagenemnda for fagprøver (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 

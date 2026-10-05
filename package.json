@@ -43,6 +43,7 @@
     "test:e2e": "playwright test",
     "test:e2e:berorte": "tsx scripts/e2e/berorte.ts",
     "kilder:sjekk": "tsx scripts/kilder/sjekk.ts",
+    "lenker:sjekk": "tsx scripts/lenkesjekk.ts",
     "kilder:varsle": "tsx scripts/kilder/varsle.ts",
     "kilder:forslag": "tsx scripts/kilder/lag-forslag.ts",
     "kilder:dokumenter": "tsx scripts/lag-kilder-md.ts",
