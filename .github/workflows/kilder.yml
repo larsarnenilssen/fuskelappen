@@ -51,6 +51,16 @@ jobs:
         run: npx playwright install chromium
       # Grep (avgjørelse 018): hentes hver uke. Stemmer testene med de nye dataene, tas de inn og publiseres.
       # Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra.
+      # Lageret for Grep (avgjørelse 060) ligger på grenen grep-lager, så hentingen bare tar det som er nytt eller endret.
+      - name: Hent Grep-lageret
+        run: |
+          mkdir -p .generert
+          if git fetch --depth=1 origin grep-lager; then
+            git show FETCH_HEAD:grep-lager.json.gz > .generert/grep-lager.json.gz
+            sha256sum .generert/grep-lager.json.gz > .generert/grep-lager.sha
+          else
+            echo "Ingen Grep-lager ennå. Alt hentes."
+          fi
       - name: Hent Grep, fag- og timefordeling, overordnet del og lovtekst
         id: grep
         continue-on-error: true
@@ -70,6 +80,22 @@ jobs:
           npm run hent:nor || status=1
           npm run hent:eksamen || status=1
           exit $status
+      # Lageret lagres også når Grep ble stoppet, så neste kjøring fortsetter der denne slapp. Grenen har bare én
+      # commit, som skrives over.
+      - name: Lagre Grep-lageret
+        if: always()
+        run: |
+          f=.generert/grep-lager.json.gz
+          if [ ! -f "$f" ] || { [ -f .generert/grep-lager.sha ] && sha256sum -c --status .generert/grep-lager.sha; }; then
+            echo "Lageret er uendret."
+            exit 0
+          fi
+          export GIT_AUTHOR_NAME="github-actions[bot]" GIT_AUTHOR_EMAIL="41898282+github-actions[bot]@users.noreply.github.com"
+          export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME" GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+          blob=$(git hash-object -w "$f")
+          tree=$(printf '100644 blob %s\tgrep-lager.json.gz\n' "$blob" | git mktree)
+          commit=$(git commit-tree "$tree" -m "Grep-lager $(date -u +%F)")
+          git push --force origin "$commit:refs/heads/grep-lager"
       # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) og oversikten over tilbudsstrukturen
       # (avgjørelse 024) lages på nytt med de nye dataene, så nye fag og endrede tilbud står der før testene kjøres.
       # Begge lages også når dataene er uendret, fordi skoleåret og regelperioden følger datoen.
