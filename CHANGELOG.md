@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.37.0] – 2026-10-05
+
 ### Lagt til
 
 - **Kalenderen** under «Oppslag»: fristene og datoene fra hele appen på én side, de neste tolv månedene eller et skoleår. Filter på tema (inntak, vurdering, eksamen, skolerute, regelverk) og hvem det gjelder (elever, privatister, lærlinger, voksne, fortrinnsrett). Passerte datoer er dempet, og en strek viser i dag. Trykk på en dato for å lese mer og gå videre til veivisere, begreper og sider. På stor skjerm står to eller tre deler av året side om side.

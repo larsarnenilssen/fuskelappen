@@ -1,6 +1,6 @@
 {
   "name": "jukselappen",
-  "version": "0.36.1",
+  "version": "0.37.0",
   "private": true,
   "type": "module",
   "description": "Installerbar nettapp for skoleledere og lærere i videregående opplæring.",
