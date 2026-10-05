@@ -60,6 +60,13 @@ function tabell(div: HTMLElement): Ledd {
   return { tekst: [], tabell: { hode: hode ? rad(hode) : null, rader: rader.map(rad) } };
 }
 
+/** En tabell som tekst, én linje per rad med cellene skilt med «·», der tabellen ikke kan stå som tabell. */
+function tabellSomTekst(div: HTMLElement): Segment[][] {
+  const t = tabell(div).tabell;
+  if (!t) return [];
+  return [...(t.hode ? [t.hode] : []), ...t.rader].map((rad) => rydd(rad.flatMap((c, i) => (i === 0 ? c : [' · ', ...c])))).filter((r) => r.length > 0);
+}
+
 /** Legger et listepunkt til siste ledd, eller inni siste punkt når det står dypere. */
 function leggTilPunkt(ledd: Ledd[], niva: number, p: Punkt) {
   let mal: Ledd | undefined = ledd[ledd.length - 1];
@@ -160,6 +167,12 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
       // Annen tekst før første paragraf, også en fotnote, blir en merknad øverst.
       if (tag(e) === 'p' && klasse(e, 'avsnitt')) return e.text.trim() ? [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [rydd(segmenter(e, hoppOver))], seksjoner: [], paragrafer: [] }] : [];
       if (tag(e) === 'table' && klasse(e, 'fotnote')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [fotnote(e)], seksjoner: [], paragrafer: [] }];
+      // Lister og tabeller utenfor paragrafene (i forskrifter uten paragrafer) blir tekst, én linje per punkt eller rad.
+      if (tag(e) === 'table' && klasse(e, 'listeItem')) {
+        const { punkt: pk } = punkt(e);
+        return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [rydd([`${pk.merke} `, ...pk.ledd.flatMap((l) => l.tekst)])], seksjoner: [], paragrafer: [] }];
+      }
+      if (tag(e) === 'div' && klasse(e, 'tabell')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: tabellSomTekst(e), seksjoner: [], paragrafer: [] }];
       throw new Ukjent(`${beskriv(e)} i dokumentet`);
     });
   } catch (e) {
@@ -179,8 +192,9 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
   // teksten kan vises, søkes i og lenkes til som i de andre forskriftene.
   if (alleParagrafer(seksjoner).length === 0) {
     const alle = alleSeksjoner(seksjoner);
-    // Teksten i det ytterste kapitlet, før kapitlene inni, står som innledning når det har kapitler inni.
-    const innledning = alle.filter((s) => s.seksjoner.length > 0).flatMap((s) => s.merknader);
+    // Teksten i det ytterste kapitlet, før kapitlene inni, står som innledning når det har kapitler inni. Har
+    // forskriften verken kapitler eller paragrafer, blir hele teksten én paragraf.
+    const innledning = alle.length > 1 ? alle.filter((s) => s.seksjoner.length > 0).flatMap((s) => s.merknader) : [];
     seksjoner = [
       {
         id: 'dokument',

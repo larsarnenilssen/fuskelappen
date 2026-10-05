@@ -47,6 +47,8 @@ describe('registeret hos Lovdata', () => {
     expect(erKandidat('Forskrift om ordensreglement for Lia skole, Sandnes kommune, Rogaland')).toBe(false);
     expect(erKandidat('Forskrift om skolerute for grunnskolen, Oslo kommune, Oslo')).toBe(false);
     expect(erKandidat('Forskrift om felles skoleregler for de videregående skolene i Nordland')).toBe(true);
+    expect(erKandidat('Forskrift om skoleregler og skoledemokrati for elever, Rogaland')).toBe(true);
+    expect(erKandidat('Forskrift om skoleregler og skoledemokrati i Sola-skolen, Sola kommune, Rogaland')).toBe(false);
     expect(erKandidat('Forskrift om rabattordning for elever i videregående opplæring, Rogaland fylkeskommune')).toBe(true);
     expect(erKandidat('Forskrift om omdisponering av timar ved Sveio skule og Vikse skule, Sveio kommune, Vestland')).toBe(false);
     expect(erKandidat('Forskrift om opning av jakt på hjort, Øygarden kommune, Vestland')).toBe(false);

@@ -38,7 +38,8 @@ const VGS = /vidaregåande|videregående|vgs\b|gymnas/;
  */
 export function erKandidat(tittel: string): boolean {
   const t = tittel.toLowerCase();
-  if (!/fylkeskommune|oslo kommune/.test(t) && !VGS.test(t)) return false;
+  // Fylkets forskrifter har «fylkeskommune» i tittelen, eller bare fylket («…, Rogaland»). Kommunenes har «kommune».
+  if (!/fylkeskommune|oslo kommune/.test(t) && !VGS.test(t) && /\bkommune\b/.test(t)) return false;
   if (/grunnskule|grunnskole|barneskule|barneskole|ungdomsskule|ungdomsskole/.test(t) && !VGS.test(t)) return false;
   return /(skule|skole)reg|ordensreg|tilleggsreg|mobilreg|inntak|(skule|skole)rute|skyss|rabattordning|timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t);
 }
