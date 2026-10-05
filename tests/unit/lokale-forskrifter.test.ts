@@ -2,7 +2,7 @@
 // fylket og skolen, og id-ene i appen. Eksempelsidene er hentet fra Lovdata 05.10.2026.
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { type Titler, velgForskrifter, vurder, type Vurdering } from '../../scripts/lovdata/lokale.ts';
+import { klassifiserVurdering, type Titler, velgForskrifter, vurder, type Vurdering } from '../../scripts/lovdata/lokale.ts';
 import { erKandidat, finnFylke, finnSkoler, klassifiser, lesMetadata, lesRegisterside, normaliserSkolenavn, skolearFor, slug } from '../../scripts/lovdata/register.ts';
 import { lesLovdataside } from '../../scripts/lovdata/side.ts';
 
@@ -26,6 +26,8 @@ const titler: Titler = {
   'skoleregler-skole': { nb: 'Skoleregler ved {sted}', nn: 'Skulereglar ved {sted}' },
   inntak: { nb: 'Inntak og formidling i {sted}', nn: 'Inntak og formidling i {sted}' },
   skolerute: { nb: 'Skolerute {skolear} i {sted}', nn: 'Skulerute {skolear} i {sted}' },
+  skyss: { nb: 'Skyss og rabattordning i {sted}', nn: 'Skyss og rabattordning i {sted}' },
+  fagfordeling: { nb: 'Fag- og timefordeling ved {sted}', nn: 'Fag- og timefordeling ved {sted}' },
 };
 
 describe('registeret hos Lovdata', () => {
@@ -44,6 +46,9 @@ describe('registeret hos Lovdata', () => {
     expect(erKandidat('Forskrift om skulerute for skuleåret 2026/2027, Vestland fylkeskommune')).toBe(true);
     expect(erKandidat('Forskrift om ordensreglement for Lia skole, Sandnes kommune, Rogaland')).toBe(false);
     expect(erKandidat('Forskrift om skolerute for grunnskolen, Oslo kommune, Oslo')).toBe(false);
+    expect(erKandidat('Forskrift om felles skoleregler for de videregående skolene i Nordland')).toBe(true);
+    expect(erKandidat('Forskrift om rabattordning for elever i videregående opplæring, Rogaland fylkeskommune')).toBe(true);
+    expect(erKandidat('Forskrift om omdisponering av timar ved Sveio skule og Vikse skule, Sveio kommune, Vestland')).toBe(false);
     expect(erKandidat('Forskrift om opning av jakt på hjort, Øygarden kommune, Vestland')).toBe(false);
   });
 });
@@ -64,7 +69,7 @@ describe('dokumentsiden', () => {
     expect(klassifiser(fylket, [])).toBe('skoleregler');
     expect(klassifiser({ ...fylket, tittel: 'Forskrift om ordensreglement for vaksne, Rogaland fylkeskommune' }, [])).toBe('skoleregler-voksne');
     expect(klassifiser({ ...fylket, tittel: 'Forskrift om inntak, Oslo kommune', hjemmel: ['forskrift/2024-06-03-900/§4-5'] }, [])).toBe('inntak');
-    expect(klassifiser({ ...fylket, hjemmel: ['lov/2023-06-09-30/§13-4'] }, [])).toBeNull();
+    expect(klassifiser({ ...fylket, tittel: 'Forskrift om tilskot, Vestland fylkeskommune', hjemmel: ['lov/2023-06-09-30/§13-4'] }, [])).toBeNull();
   });
 
   it('fylket fra «Gjelder for», og skolene ved navn i fylket', () => {
@@ -81,6 +86,7 @@ describe('dokumentsiden', () => {
   it('skoleåret til en skolerute, og navnene i adressene', () => {
     expect(skolearFor('2026-08-01', '2027-07-31')).toBe('2026-2027');
     expect(skolearFor('2027-01-01', null)).toBe('2026-2027');
+    expect(skolearFor('2025-08-01', '2028-07-31')).toBe('2025-2028');
     expect(slug('Møre og Romsdal')).toBe('more-og-romsdal');
     expect(slug('Eid vidaregåande skule')).toBe('eid-vidaregaande-skule');
   });
@@ -97,24 +103,29 @@ describe('dokumentsiden', () => {
   });
 });
 
-const v = (refid: string, type: Vurdering['type'], iKraft: string | null, ekstra: Partial<Vurdering> = {}): Vurdering => ({
+const vestland = { gjelderFor: 'Vestland', malform: 'nn' as const };
+const v = (refid: string, tittel: string, hjemmel: string[], iKraft: string | null, ekstra: Partial<Vurdering> = {}): Vurdering => ({
   refid,
-  tittel: refid,
-  type,
-  fylke: '46',
-  skoler: [],
-  malform: 'nn',
+  tittel,
+  hjemmel,
   iKraft,
   iKraftTil: null,
   sistEndret: null,
   vurdert: '2026-10-05',
+  ...vestland,
   ...ekstra,
 });
+const SKOLEREGLER = ['lov/2023-06-09-30/§10-7'];
+const UNDER_FYLKET = ['lov/2023-06-09-30/§10-7', 'forskrift/2024-06-18-1455/§15'];
 
 describe('forskriftene i appen', () => {
   it('får faste id-er og titler på forskriftens målform', () => {
     const ut = velgForskrifter(
-      [v('forskrift/2026-06-16-1587', 'skoleregler', '2026-08-01'), v('forskrift/2025-08-18-2220', 'skoleregler-skole', '2025-08-18', { skoler: ['1'] }), v('forskrift/2025-01-29-147', 'inntak', '2025-02-01', { fylke: '03', malform: 'nb' })],
+      [
+        v('forskrift/2026-06-16-1587', 'Forskrift om skulereglar, Vestland fylkeskommune', SKOLEREGLER, '2026-08-01'),
+        v('forskrift/2025-08-18-2220', 'Forskrift om skulereglar, Eid vidaregåande skule, Vestland fylkeskommune', UNDER_FYLKET, '2025-08-18'),
+        v('forskrift/2025-01-29-147', 'Forskrift om inntak til videregående opplæring, Oslo kommune, Oslo', ['forskrift/2024-06-03-900/§4-5'], '2025-02-01', { gjelderFor: 'Oslo kommune, Oslo', malform: 'nb' }),
+      ],
       fylker,
       skoler,
       titler,
@@ -128,31 +139,48 @@ describe('forskriftene i appen', () => {
   });
 
   it('den som gjelder i dag får id-en, en senere får «-fra-», og en eldre tas ikke med', () => {
-    const ut = velgForskrifter([v('a', 'skoleregler', '2024-08-01'), v('b', 'skoleregler', '2026-08-01'), v('c', 'skoleregler', '2027-08-01')], fylker, skoler, titler, '2026-10-05');
+    const t = 'Forskrift om skulereglar, Vestland fylkeskommune';
+    const ut = velgForskrifter([v('a', t, SKOLEREGLER, '2024-08-01'), v('b', t, SKOLEREGLER, '2026-08-01'), v('c', t, SKOLEREGLER, '2027-08-01')], fylker, skoler, titler, '2026-10-05');
     expect(ut.map((f) => [f.id, f.refid])).toEqual([
       ['vestland-skoleregler', 'b'],
       ['vestland-skoleregler-fra-2027-08-01', 'c'],
     ]);
   });
 
-  it('skoleruter for skoleår som er over, tas ikke med, og forskrifter uten fylke eller skole heller ikke', () => {
+  it('skoleruter for skoleår som er over, tas ikke med, og en rute for flere skoleår står med alle', () => {
+    const t = 'Forskrift om skulerute, Vestland fylkeskommune';
+    const rute = ['lov/2023-06-09-30/§14-1'];
     const ut = velgForskrifter(
       [
-        v('a', 'skolerute', '2025-08-01', { iKraftTil: '2026-07-31' }),
-        v('b', 'skolerute', '2026-08-01', { iKraftTil: '2027-07-31' }),
-        v('c', 'skoleregler', '2025-01-01', { fylke: null }),
-        v('d', 'skoleregler-skole', '2025-01-01'),
+        v('a', t, rute, '2025-08-01', { iKraftTil: '2026-07-31' }),
+        v('b', t, rute, '2026-08-01', { iKraftTil: '2027-07-31' }),
+        v('c', 'Forskrift om skole- og feriedagar (skolerute) (2025–2028), Møre og Romsdal fylkeskommune', [], '2025-08-01', { iKraftTil: '2028-07-31', gjelderFor: 'Møre og Romsdal', hjemmel: ['lov/2023-06-09-30'] }),
+        v('d', 'Forskrift om skulereglar', SKOLEREGLER, '2025-01-01', { gjelderFor: 'Troms, Finnmark' }),
+        v('e', 'Forskrift om lokale tilleggsreglar for Ukjent vidaregåande skule', UNDER_FYLKET, '2025-01-01'),
       ],
       fylker,
       skoler,
       titler,
       '2026-10-05',
     );
-    expect(ut.map((f) => [f.id, f.korttittel])).toEqual([['vestland-skolerute-2026-2027', 'Skulerute 2026–2027 i Vestland']]);
+    expect(ut.map((f) => [f.id, f.korttittel])).toEqual([
+      ['more-og-romsdal-skolerute-2025-2028', 'Skulerute 2025–2028 i Møre og Romsdal'],
+      ['vestland-skolerute-2026-2027', 'Skulerute 2026–2027 i Vestland'],
+    ]);
   });
 
-  it('vurderingen samler fylke, skoler og type fra dokumentsiden', () => {
-    const r = vurder('forskrift/2025-08-18-2220', lesMetadata(side('lf-eid')), fylker, skoler, '2026-10-05');
-    expect(r).toMatchObject({ type: 'skoleregler-skole', fylke: '46', skoler: ['1'], malform: 'nn', iKraft: '2025-08-18' });
+  it('typen ut fra tittelen når hjemmelen er en annen enn § 10-7 og § 14-1', () => {
+    const m = (tittel: string) => klassifiser({ tittel, hjemmel: ['lov/2023-06-09-30/§20-3'] }, []);
+    expect(m('Forskrift om ordensreglar for vidaregåande opplæring for vaksne, Møre og Romsdal fylkeskommune')).toBe('skoleregler-voksne');
+    expect(m('Forskrift om rabattordning i stedet for gratis skyss, Rogaland fylkeskommune')).toBe('skyss');
+    expect(klassifiser({ tittel: 'Forskrift om omfordeling av timar ved Eid vidaregåande skule', hjemmel: ['forskrift/2024-06-03-900/§1-3'] }, ['1'])).toBe('fagfordeling');
+    expect(klassifiser({ tittel: 'Forskrift om inntak, Troms fylkeskommune', hjemmel: ['lov/2023-06-09-30/§5-3'] }, [])).toBe('inntak');
+    expect(klassifiser({ tittel: 'Forskrift om skulereglar', hjemmel: ['lov/2005-06-17-62'] }, [])).toBeNull();
+  });
+
+  it('metadataene fra dokumentsiden lagres, og typen avgjøres for hver henting', () => {
+    const r = vurder('forskrift/2025-08-18-2220', lesMetadata(side('lf-eid')), '2026-10-05');
+    expect(r).toMatchObject({ gjelderFor: 'Vestland', malform: 'nn', iKraft: '2025-08-18' });
+    expect(klassifiserVurdering(r, fylker, skoler)).toEqual({ type: 'skoleregler-skole', fylke: '46', skoler: ['1'] });
   });
 });

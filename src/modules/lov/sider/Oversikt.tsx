@@ -27,7 +27,7 @@ interface Rad {
 }
 
 /** Rekkefølgen på de lokale forskriftene: fylkets regler først, så skolens, inntak og skolerute. */
-const LOKAL_REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute'];
+const LOKAL_REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute', 'skyss', 'fagfordeling'];
 
 /** En gruppe dokumenter i en rubrikk som kan legges sammen, med antallet til høyre. Åpen fra start. */
 function Gruppe({ nokkel, tittel, rader, children }: { nokkel: string; tittel: string; rader: readonly Rad[]; children?: preact.ComponentChildren }) {

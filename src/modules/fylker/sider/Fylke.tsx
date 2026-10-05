@@ -14,7 +14,7 @@ import { useLast } from '../../lov/sider/felles.tsx';
 import type { SideProps } from '../../typer.ts';
 import { fylkeFor, nettsted } from '../innhold.ts';
 
-const REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'inntak', 'skolerute'];
+const REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'inntak', 'skolerute', 'skyss'];
 
 function Lenkerad({ href, tittel, under, ikon, ekstern = false, merke }: { href: string; tittel: string; under?: string; ikon?: Ikonnavn; ekstern?: boolean; merke?: string }) {
   return (

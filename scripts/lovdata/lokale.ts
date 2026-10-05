@@ -15,16 +15,18 @@ const PAUSE_MS = 1000;
 /** Øvre grense for sider i registeret, i tilfelle siden endrer seg og «neste side» aldri tar slutt. */
 const MAKS_SIDER = 1500;
 
-const lokaltype = z.enum(['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute']);
+const lokaltype = z.enum(['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute', 'skyss', 'fagfordeling']);
 
-/** En kandidat fra registeret, vurdert ut fra dokumentsiden. */
+/**
+ * En kandidat fra registeret med metadataene fra dokumentsiden. Typen, fylket og skolen avgjøres på nytt ved hver
+ * henting (velgForskrifter), så endrede regler gjelder uten at sidene hentes igjen.
+ */
 const vurderingSkjema = z
   .object({
     refid: z.string().regex(/^forskrift\/\d{4}-\d{2}-\d{2}-\d+$/),
     tittel: z.string().min(1),
-    type: lokaltype.nullable(),
-    fylke: z.string().regex(/^\d{2}$/).nullable(),
-    skoler: z.array(z.string()),
+    gjelderFor: z.string(),
+    hjemmel: z.array(z.string()),
     malform: z.enum(['nb', 'nn']),
     iKraft: z.string().nullable(),
     iKraftTil: z.string().nullable(),
@@ -70,33 +72,45 @@ export function tittelFor(titler: Titler, type: Lokaltype, malform: 'nb' | 'nn',
   return titler[type][malform].replace('{sted}', sted).replace('{skolear}', skolear?.replace('-', '–') ?? '');
 }
 
+/** Typen, fylket og skolene for en kandidat, med reglene i register.ts. */
+export function klassifiserVurdering(v: Vurdering, fylker: readonly Fylke[], skoler: readonly Skole[]): { type: Lokaltype | null; fylke: string | null; skoler: string[] } {
+  const fylke = finnFylke(v.gjelderFor, fylker);
+  const treff = fylke ? finnSkoler(v.tittel, fylke, skoler).map((s) => s.id) : [];
+  const type = klassifiser(v, treff);
+  return { type, fylke, skoler: type === 'skoleregler-skole' || type === 'fagfordeling' ? treff : [] };
+}
+
 /**
  * Forskriftene appen viser, med faste id-er: <fylke>-skoleregler, <fylke>-skoleregler-voksne, <fylke>-inntak,
- * <fylke>-skolerute-<skoleår> og <skole>-skoleregler. Har flere forskrifter samme id, får den som gjelder i dag id-en,
- * og en som tar til å gjelde senere, får «-fra-<dato>». Eldre forskrifter og skoleruter for skoleår som er over,
- * tas ikke med.
+ * <fylke>-skyss, <fylke>-skolerute-<skoleår>, <skole>-skoleregler og <skole>-fagfordeling-<nr>. Har flere forskrifter
+ * samme id, får den som gjelder i dag id-en, og en som tar til å gjelde senere, får «-fra-<dato>». Eldre forskrifter
+ * og skoleruter for skoleår som er over, tas ikke med. Fag- og timefordeling gjelder én skole og ett løp, så hver
+ * forskrift står for seg, og den tas bare med når skolen finnes i skoleregisteret.
  */
 export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly Fylke[], skoler: readonly Skole[], titler: Titler, idag: string): LokalForskrift[] {
   const fylkesnavn = new Map(fylker.map((f) => [f.nummer, f.navn]));
   const skolenavn = new Map(skoler.map((s) => [s.id, s.navn]));
   const iAar = Number(idag.slice(0, 4)) - (Number(idag.slice(5, 7)) < 8 ? 1 : 0);
-  const grupper = new Map<string, { v: Vurdering; sted: string; skolear: string | null }[]>();
+  const grupper = new Map<string, { v: Vurdering; type: Lokaltype; fylke: string; skoler: string[]; sted: string; skolear: string | null }[]>();
   for (const v of vurdert) {
-    if (!v.type || !v.fylke) continue;
-    const fylke = fylkesnavn.get(v.fylke);
+    const k = klassifiserVurdering(v, fylker, skoler);
+    if (!k.type || !k.fylke) continue;
+    const fylke = fylkesnavn.get(k.fylke);
     if (!fylke) continue;
-    const skolear = v.type === 'skolerute' ? skolearFor(v.iKraft, v.iKraftTil) : null;
-    if (v.type === 'skolerute' && (!skolear || Number(skolear.slice(0, 4)) < iAar)) continue;
-    const navn = v.skoler.map((s) => skolenavn.get(s)).filter((n): n is string => !!n);
-    if (v.type === 'skoleregler-skole' && navn.length === 0) continue;
+    const skolear = k.type === 'skolerute' ? skolearFor(v.iKraft, v.iKraftTil) : null;
+    if (k.type === 'skolerute' && (!skolear || Number(skolear.slice(5)) <= iAar)) continue;
+    const navn = k.skoler.map((s) => skolenavn.get(s)).filter((n): n is string => !!n);
+    if ((k.type === 'skoleregler-skole' || k.type === 'fagfordeling') && navn.length === 0) continue;
     const grunn =
-      v.type === 'skoleregler-skole'
+      k.type === 'skoleregler-skole'
         ? `${navn.map(slug).join('-og-')}-skoleregler`
-        : v.type === 'skolerute'
-          ? `${slug(fylke)}-skolerute-${skolear}`
-          : `${slug(fylke)}-${v.type}`;
-    const sted = v.type === 'skoleregler-skole' ? navn.join(' og ') : fylke;
-    grupper.set(grunn, [...(grupper.get(grunn) ?? []), { v, sted, skolear }]);
+        : k.type === 'fagfordeling'
+          ? `${navn.map(slug).join('-og-')}-fagfordeling-${v.refid.split('-').at(-1)}`
+          : k.type === 'skolerute'
+            ? `${slug(fylke)}-skolerute-${skolear}`
+            : `${slug(fylke)}-${k.type}`;
+    const sted = k.type === 'skoleregler-skole' || k.type === 'fagfordeling' ? navn.join(' og ') : fylke;
+    grupper.set(grunn, [...(grupper.get(grunn) ?? []), { v, type: k.type, fylke: k.fylke, skoler: k.skoler, sted, skolear }]);
   }
   const ut: LokalForskrift[] = [];
   for (const [grunn, liste] of grupper) {
@@ -107,10 +121,10 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
       ut.push({
         id: x === gjeldende ? grunn : `${grunn}-fra-${x.v.iKraft}`,
         refid: x.v.refid,
-        type: x.v.type as Lokaltype,
-        fylke: x.v.fylke as string,
-        skoler: x.v.skoler,
-        korttittel: tittelFor(titler, x.v.type as Lokaltype, x.v.malform, x.sted, x.skolear),
+        type: x.type,
+        fylke: x.fylke,
+        skoler: x.skoler,
+        korttittel: tittelFor(titler, x.type, x.v.malform, x.sted, x.skolear),
         malform: x.v.malform,
         iKraft: x.v.iKraft,
         iKraftTil: x.v.iKraftTil,
@@ -151,16 +165,12 @@ async function lesRegister(filter: string): Promise<{ refid: string; tittel: str
   return treff;
 }
 
-export function vurder(refid: string, meta: Metadata, fylker: readonly Fylke[], skoler: readonly Skole[], idag: string): Vurdering {
-  const fylke = finnFylke(meta.gjelderFor, fylker);
-  const treff = fylke ? finnSkoler(meta.tittel, fylke, skoler) : [];
-  const type = klassifiser(meta, treff.map((s) => s.id));
+export function vurder(refid: string, meta: Metadata, idag: string): Vurdering {
   return {
     refid,
     tittel: meta.tittel,
-    type,
-    fylke,
-    skoler: type === 'skoleregler-skole' ? treff.map((s) => s.id) : [],
+    gjelderFor: meta.gjelderFor,
+    hjemmel: meta.hjemmel,
     malform: meta.malform,
     iKraft: meta.iKraft,
     iKraftTil: meta.iKraftTil,
@@ -186,9 +196,9 @@ export async function oppdaterLokale(forrige: Lokale | null, valg: { full: boole
     const html = await hentTekst(`${LOVDATA}/dokument/LF/${k.refid}`);
     await pause();
     sider.set(k.refid, html);
-    const v = vurder(k.refid, lesMetadata(html), fylker, skoler, idag);
+    const v = vurder(k.refid, lesMetadata(html), idag);
     tidligere.set(k.refid, v);
-    rapport.push(`Ny: ${v.tittel} (${v.type ?? 'ikke tatt med'})`);
+    rapport.push(`Ny: ${v.tittel} (${klassifiserVurdering(v, fylker, skoler).type ?? 'ikke tatt med'})`);
   }
   // Etter en full lesing er det som ikke står i registeret lenger, opphevet.
   if (full) {
@@ -201,8 +211,10 @@ export async function oppdaterLokale(forrige: Lokale | null, valg: { full: boole
   }
   const vurdert = [...tidligere.values()].sort((a, b) => a.refid.localeCompare(b.refid));
   for (const v of vurdert) {
-    if (v.type === 'skoleregler-skole' && v.skoler.length === 0) rapport.push(`Fant ikke skolen i skoleregisteret: ${v.tittel}`);
-    if (v.type && !v.fylke) rapport.push(`Fant ikke ett fylke for: ${v.tittel}`);
+    const k = klassifiserVurdering(v, fylker, skoler);
+    if ((k.type === 'skoleregler-skole' || k.type === 'fagfordeling') && k.skoler.length === 0) rapport.push(`Fant ikke skolen i skoleregisteret: ${v.tittel}`);
+    if (k.type && !k.fylke) rapport.push(`Fant ikke ett fylke for: ${v.tittel} (${v.gjelderFor})`);
+    if (!k.type) rapport.push(`Ikke tatt med (typen passer ikke): ${v.tittel} (${v.hjemmel.join(', ') || 'uten hjemmel'})`);
   }
   console.log(`Lokale forskrifter: ${treff.length} i registeret${full ? '' : ` (${aar - 1}–${aar})`}, ${kandidater.size} kandidater, ${sider.size} nye.`);
   return {

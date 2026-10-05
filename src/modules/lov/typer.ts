@@ -55,7 +55,7 @@ export interface Seksjon {
 export type Gyldighet = { niva: 'nasjonal' } | { niva: 'fylke'; fylke: string } | { niva: 'skole'; fylke: string; skoler: string[] };
 
 /** Typene lokale forskrifter appen henter for alle fylker (avgjørelse 061). */
-export type Lokaltype = 'skoleregler' | 'skoleregler-voksne' | 'skoleregler-skole' | 'inntak' | 'skolerute';
+export type Lokaltype = 'skoleregler' | 'skoleregler-voksne' | 'skoleregler-skole' | 'inntak' | 'skolerute' | 'skyss' | 'fagfordeling';
 
 /** Et dokument (lov eller forskrift) slik det vises i appen: utvalget av kapitler fra Lovdata. */
 export interface Lovdokument {

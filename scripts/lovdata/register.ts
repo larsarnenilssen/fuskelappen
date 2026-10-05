@@ -29,12 +29,18 @@ export function lesRegisterside(html: string): { treff: Registertreff[]; antall:
   return { treff, antall: antall ? Number(antall[1]) : null, neste: rot.querySelector('.pager .next a') !== null };
 }
 
-/** Om tittelen kan være skoleregler, inntak eller skolerute for videregående. Dokumentsiden avgjør. */
+const VGS = /vidaregåande|videregående|vgs\b|gymnas/;
+
+/**
+ * Om tittelen kan være en lokal forskrift for videregående appen viser: skoleregler (også for voksne og for en skole),
+ * inntak, skolerute, skyss og fag- og timefordeling. Forskriften må være fra en fylkeskommune (eller Oslo kommune)
+ * eller nevne videregående. Dokumentsiden avgjør.
+ */
 export function erKandidat(tittel: string): boolean {
   const t = tittel.toLowerCase();
-  if (!/fylkeskommune|oslo kommune/.test(t)) return false;
-  if (/grunnskule|grunnskole/.test(t) && !/vidaregåande|videregående/.test(t)) return false;
-  return /(skule|skole)reg|ordensreg|tilleggsreg|inntak|(skule|skole)rute/.test(t);
+  if (!/fylkeskommune|oslo kommune/.test(t) && !VGS.test(t)) return false;
+  if (/grunnskule|grunnskole|barneskule|barneskole|ungdomsskule|ungdomsskole/.test(t) && !VGS.test(t)) return false;
+  return /(skule|skole)reg|ordensreg|tilleggsreg|mobilreg|inntak|(skule|skole)rute|skyss|rabattordning|timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t);
 }
 
 export interface Metadata {
@@ -78,27 +84,37 @@ export function lesMetadata(html: string): Metadata {
   };
 }
 
-export type Lokaltype = 'skoleregler' | 'skoleregler-voksne' | 'skoleregler-skole' | 'inntak' | 'skolerute';
+export type Lokaltype = 'skoleregler' | 'skoleregler-voksne' | 'skoleregler-skole' | 'inntak' | 'skolerute' | 'skyss' | 'fagfordeling';
 
 const OPPLAERINGSLOVA = 'lov/2023-06-09-30';
 const OPPLAERINGSFORSKRIFTA = 'forskrift/2024-06-03-900';
 
 /**
- * Typen ut fra hjemmelen. Skoleregler er for en skole når tittelen har navnet på en skole (`skoler` er treffene i
- * skoleregisteret, se finnSkoler) eller hjemmelen også er fylkets skoleregler, og for voksne når tittelen nevner
- * voksne. Null når forskriften ikke er en av typene.
+ * Typen ut fra hjemmelen og tittelen (eier 05.10.2026). Hjemmelen må være opplæringslova eller opplæringsforskrifta.
+ * - Opplæringslova § 10-7 er skoleregler: for voksne når tittelen nevner voksne, og for en skole når tittelen har
+ *   navnet på en skole (`skoler` er treffene i skoleregisteret, se finnSkoler) eller hjemmelen også er fylkets
+ *   skoleregler.
+ * - Opplæringslova § 14-1 er skolerute.
+ * - Ellers avgjør tittelen: inntak, ordens- og skoleregler (for voksne har de ofte en annen hjemmel), skolerute, skyss
+ *   og rabattordning, og fag- og timefordeling.
+ * Null når forskriften ikke er en av typene.
  */
-export function klassifiser(meta: Metadata, skoler: readonly string[]): Lokaltype | null {
+export function klassifiser(meta: Pick<Metadata, 'tittel' | 'hjemmel'>, skoler: readonly string[]): Lokaltype | null {
   const h = meta.hjemmel;
   const t = meta.tittel.toLowerCase();
+  const voksne = /vaksne|voksne/.test(t);
+  if (!h.some((x) => x.startsWith(OPPLAERINGSLOVA) || x.startsWith(OPPLAERINGSFORSKRIFTA))) return null;
   if (h.some((x) => x === `${OPPLAERINGSLOVA}/§10-7`)) {
     // Skolens egne regler er fastsatt med heimel også i fylkets skoleregler (en annen forskrift enn opplæringsforskrifta).
     const underFylket = h.some((x) => x.startsWith('forskrift/') && !x.startsWith(OPPLAERINGSFORSKRIFTA));
     if (skoler.length > 0 || underFylket) return 'skoleregler-skole';
-    return /vaksne|voksne/.test(t) ? 'skoleregler-voksne' : 'skoleregler';
+    return voksne ? 'skoleregler-voksne' : 'skoleregler';
   }
-  if (h.some((x) => x === `${OPPLAERINGSLOVA}/§14-1`)) return 'skolerute';
-  if (h.some((x) => x.startsWith(`${OPPLAERINGSFORSKRIFTA}/§4-`) || x === `${OPPLAERINGSFORSKRIFTA}/§7-2`) || (h.some((x) => x.startsWith(OPPLAERINGSFORSKRIFTA)) && /inntak/.test(t))) return 'inntak';
+  if (h.some((x) => x === `${OPPLAERINGSLOVA}/§14-1`) || /(skule|skole)rute/.test(t)) return 'skolerute';
+  if (/inntak/.test(t)) return 'inntak';
+  if (/timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t)) return 'fagfordeling';
+  if (/skyss|rabattordning/.test(t)) return 'skyss';
+  if (/(skule|skole|ordens)reg/.test(t)) return voksne ? 'skoleregler-voksne' : skoler.length > 0 ? 'skoleregler-skole' : 'skoleregler';
   return null;
 }
 
@@ -167,9 +183,13 @@ export function slug(navn: string): string {
     .replace(/^-|-$/g, '');
 }
 
-/** Skoleåret en skolerute gjelder for, ut fra perioden: «2026-08-01–2027-07-31» → «2026-2027». */
+/**
+ * Skoleårene en skolerute gjelder for, ut fra perioden: «2026-08-01–2027-07-31» → «2026-2027», og for flere skoleår
+ * «2025-08-01–2028-07-31» → «2025-2028».
+ */
 export function skolearFor(fra: string | null, til: string | null): string | null {
   if (!fra) return null;
   const start = Number(fra.slice(0, 4)) - (Number(fra.slice(5, 7)) < 7 ? 1 : 0);
-  return til && Number(til.slice(0, 4)) > start + 1 ? null : `${start}-${start + 1}`;
+  const slutt = til ? Number(til.slice(0, 4)) + (Number(til.slice(5, 7)) >= 8 ? 1 : 0) : start + 1;
+  return `${start}-${Math.max(slutt, start + 1)}`;
 }

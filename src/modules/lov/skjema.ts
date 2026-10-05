@@ -14,7 +14,7 @@ const gyldighet: z.ZodType<Gyldighet> = z.union([
   z.object({ niva: z.literal('fylke'), fylke: z.string().regex(/^\d{2}$/) }).strict(),
   z.object({ niva: z.literal('skole'), fylke: z.string().regex(/^\d{2}$/), skoler: z.array(z.string().min(1)).min(1) }).strict(),
 ]);
-const lokaltype = z.enum(['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute']);
+const lokaltype = z.enum(['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute', 'skyss', 'fagfordeling']);
 const dato = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
 /**

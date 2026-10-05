@@ -97,3 +97,5 @@ lokale:
     skoleregler-skole: { nb: "Skoleregler ved {sted}", nn: "Skulereglar ved {sted}" }
     inntak: { nb: "Inntak og formidling i {sted}", nn: "Inntak og formidling i {sted}" }
     skolerute: { nb: "Skolerute {skolear} i {sted}", nn: "Skulerute {skolear} i {sted}" }
+    skyss: { nb: "Skyss og rabattordning i {sted}", nn: "Skyss og rabattordning i {sted}" }
+    fagfordeling: { nb: "Fag- og timefordeling ved {sted}", nn: "Fag- og timefordeling ved {sted}" }
