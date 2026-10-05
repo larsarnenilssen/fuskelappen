@@ -1,5 +1,7 @@
 # Fase 6, pakke 6: «Fag- og svennebrev» i Opplæringstilbud (plukket opp igjen 05.10.2026)
 
+**Før start:** Pakke 5 (kalenderen) skal være levert. Les «Levert så langt» og «Domenet» i `fase-6-pakke-5.md`, og pakke 5-avgjørelsene, så siden kan lenke til kalenderen. Nye begreper i en ny fil under `content/begreper/` føres opp i `src/modules/begreper/tema.ts`.
+
 Eier avtalte innhold og plassering 04.10.2026 i fase 6-forslaget (runde 3 og 4, mockup 3 og 4), men oppgaven kom ikke inn i noen pakke. Den står bare som «ikke bygget» under «Åpent» i arbeidsordrene for pakke 3 og 5. Eier ba 05.10.2026 om at den plukkes opp igjen. Den kommer etter kalenderen (pakke 5), med mindre eier vil ha den før.
 
 Alt som er avtalt, står i `docs/arbeidsordrer/fase-6-forslag.md`:
@@ -59,7 +61,7 @@ Skjermbildene av mockupene ble ikke lagt i repoet. Lag mockupen på nytt ut fra 
   - § 9-64 viser til ol. § 7-4 sjette ledd
   - merknadene til § 9-46 og § 9-48 nevner et unntak for fremmedspråk som ikke står i paragrafen
 - **Gammel hjemmel:** nasjonale rammer for yrkesfaglig opphenting (2018) har hjemmel i den gamle loven.
-- **Begrepene** praksisbrev, lærekandidat, praksiskandidat, fagbrev på jobb, Vg3 i skole og formidling til læreplass skrives før denne pakken (`docs/arbeidsordrer/fase-6-begreper.md`), så siden kan lenke til dem.
+- **Begrepene** praksisbrev, lærekandidat, praksiskandidat, fagbrev på jobb, Vg3 i skole og formidling til læreplass er levert i 0.36.0 (`docs/arbeidsordrer/fase-6-begreper.md`), så siden kan lenke til dem. Kontrollspørsmålene til dem tas med når veiene skrives.
 
 ## Arbeidsmåte
 

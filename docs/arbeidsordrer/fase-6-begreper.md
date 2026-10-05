@@ -2,6 +2,8 @@
 
 Eier ba 05.10.2026 om en gjennomgang av nye begreper, etter at offentleglova og arkivlova kom inn i Regelverk. Claude foreslo om lag 30 begreper i fem grupper, og eier svarte «Ta med alle». Begrepene skrives i en egen PR rett etter pakke 4 (fylkene) og før pakke 5 (kalenderen), så kalenderen og pakke 6 kan lenke til dem.
 
+**Levert i 0.36.0 (PR #99, 05.10.2026).** Alle 27 har `kontrollert: null` og kontrollspørsmål til eier.
+
 ## Begrepene
 
 1. **Innsyn og arkiv** (offentleglova, offentlegforskrifta, arkivlova og arkivforskrifta):
