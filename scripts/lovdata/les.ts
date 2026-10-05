@@ -257,6 +257,7 @@ export interface Leseoppsett {
   /** Kapitlene som tas med (utskrevet, uten spenn), eller null for hele dokumentet. */
   kapitler: readonly string[] | null;
   korttittel?: string | undefined;
+  korttittelNn?: string | undefined;
   /** Målformen, når filen ikke oppgir den (sidene for lokale forskrifter). */
   malform?: 'nb' | 'nn' | undefined;
   /** Adressen hos Lovdata («forskrift/2020-09-29-3380»), når filen ikke oppgir den. */

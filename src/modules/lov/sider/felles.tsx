@@ -167,6 +167,7 @@ export const paragrafnavn = (p: Paragraf) => `${p.visNr} ${p.tittel}`.trim();
 
 /** En paragraf som en boks som er lukket til brukeren åpner den. Adressen til paragrafen åpner den. */
 export function Paragrafboks({ dokument, paragraf, apen }: { dokument: Lovdokument; paragraf: Paragraf; apen: boolean }) {
+  const { malform } = useTekst();
   const [lukket, veksle] = useSammenlagt(`lov-${dokument.id}-${paragraf.nr}`, !apen);
   const id = useId();
   return (
@@ -180,7 +181,7 @@ export function Paragrafboks({ dokument, paragraf, apen }: { dokument: Lovdokume
             <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
           </button>
         </h3>
-        <FavorittKnapp id={paragraffavoritt(dokument.id, paragraf.nr)} navn={paragraffavorittnavn(dokument, paragraf)} liten />
+        <FavorittKnapp id={paragraffavoritt(dokument.id, paragraf.nr)} navn={paragraffavorittnavn(dokument, paragraf, malform)} liten />
       </div>
       <div id={id} class="od-underdel-innhold" hidden={lukket}>
         <Paragraftekst dokument={dokument} paragraf={paragraf} />

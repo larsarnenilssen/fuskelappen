@@ -879,6 +879,7 @@ main {
 
 .felt input,
 .felt select,
+.hos-fylket select,
 .sokefelt input {
   width: 100%;
   min-height: var(--trykkflate);

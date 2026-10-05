@@ -11,7 +11,7 @@ import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import { avtaler, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
-import { dokumentRute, kildeFor, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
+import { dokumentnavn, dokumentRute, kildeFor, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
 import type { Lokaltype, Lovdokument, Lovoversikt } from '../typer.ts';
 import { Lasting, Sok, useLast } from './felles.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -77,8 +77,8 @@ export default function Oversikt() {
   const dato = (iso: string) => formaterDato(iso, malform);
   const rad = (d: Dokumentinfo): Rad => ({
     id: d.id,
-    tittel: d.korttittel,
-    lang: d.malform,
+    tittel: dokumentnavn(d, malform),
+    ...(d.korttittelNn ? {} : { lang: d.malform }),
     ...(d.gyldighet.niva === 'skole' ? { merke: t('lov.skolenDin') } : {}),
     under: [
       ...(d.iKraft && d.iKraftTil ? [t('lov.iKraftPeriode', { fra: dato(d.iKraft), til: dato(d.iKraftTil) })] : d.iKraft ? [t('lov.iKraft', { dato: dato(d.iKraft) })] : []),

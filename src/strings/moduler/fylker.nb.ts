@@ -24,7 +24,7 @@ export const fylkerNb = {
   kalenderEksamenTekst: 'Eksamensdatoene, også fylkets egne.',
   klage: 'Klage på karakter',
   klageTekst: 'Hvem som behandler klagen, og fristene.',
-  sjekket: 'Lenkene til fylkenes sider sjekkes hver natt.',
+  sjekket: 'Lenkene til fylkenes sider sjekkes hver uke.',
   forside: 'Videregående opplæring',
   temaer: {
     forside: 'Videregående opplæring',

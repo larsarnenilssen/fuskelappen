@@ -225,6 +225,7 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
     type: 'forskrift',
     tittel,
     korttittel: oppsett.korttittel ?? tittel,
+    ...(oppsett.korttittelNn ? { korttittelNn: oppsett.korttittelNn } : {}),
     malform: oppsett.malform ?? 'nb',
     refid: oppsett.refid,
     sistEndret: sisteEndring(rot),

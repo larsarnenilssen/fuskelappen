@@ -129,7 +129,7 @@ const SKOLEREGLER = ['lov/2023-06-09-30/§10-7'];
 const UNDER_FYLKET = ['lov/2023-06-09-30/§10-7', 'forskrift/2024-06-18-1455/§15'];
 
 describe('forskriftene i appen', () => {
-  it('får faste id-er og titler på forskriftens målform', () => {
+  it('får faste id-er og titler på bokmål og nynorsk', () => {
     const ut = velgForskrifter(
       [
         v('forskrift/2026-06-16-1587', 'Forskrift om skulereglar, Vestland fylkeskommune', SKOLEREGLER, '2026-08-01'),
@@ -143,9 +143,11 @@ describe('forskriftene i appen', () => {
     );
     expect(ut.map((f) => [f.id, f.korttittel])).toEqual([
       ['oslo-inntak', 'Inntak og formidling i Oslo'],
-      ['eid-vidaregaande-skule-skoleregler', 'Skulereglar ved Eid vidaregåande skule'],
-      ['vestland-skoleregler', 'Skulereglar i Vestland'],
+      ['eid-vidaregaande-skule-skoleregler', 'Skoleregler ved Eid vidaregåande skule'],
+      ['vestland-skoleregler', 'Skoleregler i Vestland'],
     ]);
+    // Navnet er appens egen tekst og følger brukerens målform, ikke forskriftens (egne tekster står på begge målformer).
+    expect(ut.map((f) => f.korttittelNn)).toEqual(['Inntak og formidling i Oslo', 'Skulereglar ved Eid vidaregåande skule', 'Skulereglar i Vestland']);
   });
 
   it('den som gjelder i dag får id-en, en senere får «-fra-», og en eldre tas ikke med', () => {
@@ -174,8 +176,8 @@ describe('forskriftene i appen', () => {
       '2026-10-05',
     );
     expect(ut.map((f) => [f.id, f.korttittel])).toEqual([
-      ['more-og-romsdal-skolerute-2025-2028', 'Skulerute 2025–2028 i Møre og Romsdal'],
-      ['vestland-skolerute-2026-2027', 'Skulerute 2026–2027 i Vestland'],
+      ['more-og-romsdal-skolerute-2025-2028', 'Skolerute 2025–2028 i Møre og Romsdal'],
+      ['vestland-skolerute-2026-2027', 'Skolerute 2026–2027 i Vestland'],
     ]);
   });
 

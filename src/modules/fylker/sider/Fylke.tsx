@@ -8,7 +8,7 @@ import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { fylketemaer } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
-import { dokumentRute, lastOversikt } from '../../lov/data.ts';
+import { dokumentnavn, dokumentRute, lastOversikt } from '../../lov/data.ts';
 import type { Lokaltype, Lovoversikt } from '../../lov/typer.ts';
 import { useLast } from '../../lov/sider/felles.tsx';
 import type { SideProps } from '../../typer.ts';
@@ -56,7 +56,7 @@ export default function Fylke({ parametre }: SideProps) {
   const fylkets = dokumenter
     .filter((d) => d.gyldighet.niva === 'fylke' && d.gyldighet.fylke === nr)
     .sort((a, b) => (a.lokaltype ? REKKEFOLGE.indexOf(a.lokaltype) : 9) - (b.lokaltype ? REKKEFOLGE.indexOf(b.lokaltype) : 9));
-  const skolenes = dokumenter.filter((d) => d.gyldighet.niva === 'skole' && d.gyldighet.fylke === nr).sort((a, b) => a.korttittel.localeCompare(b.korttittel, 'nb'));
+  const skolenes = dokumenter.filter((d) => d.gyldighet.niva === 'skole' && d.gyldighet.fylke === nr).sort((a, b) => dokumentnavn(a, malform).localeCompare(dokumentnavn(b, malform), 'nb'));
   const minSkole = innstillinger.skole?.id ?? null;
   return (
     <div class="side">
@@ -81,13 +81,13 @@ export default function Fylke({ parametre }: SideProps) {
         ) : (
           <ul class="liste">
             {fylkets.map((d) => (
-              <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={d.korttittel} under={iKraft(d)} />
+              <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
             ))}
             {skolenes.map((d) => (
               <Lenkerad
                 key={d.id}
                 href={`#${dokumentRute(d.id)}`}
-                tittel={d.korttittel}
+                tittel={dokumentnavn(d, malform)}
                 under={iKraft(d)}
                 {...(minSkole && d.gyldighet.niva === 'skole' && d.gyldighet.skoler.includes(minSkole) ? { merke: t('lov.skolenDin') } : {})}
               />

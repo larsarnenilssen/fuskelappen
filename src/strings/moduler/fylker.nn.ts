@@ -24,7 +24,7 @@ export const fylkerNn = {
   kalenderEksamenTekst: 'Eksamensdatoane, også dei fylket har sjølv.',
   klage: 'Klage på karakter',
   klageTekst: 'Kven som behandlar klaga, og fristane.',
-  sjekket: 'Lenkjene til sidene til fylka blir sjekka kvar natt.',
+  sjekket: 'Lenkjene til sidene til fylka blir sjekka kvar veke.',
   forside: 'Vidaregåande opplæring',
   temaer: {
     forside: 'Vidaregåande opplæring',

@@ -1,7 +1,7 @@
 // Skoleregisteret: skolene i videregående og tilbudene de har, etter utdanning.no (avgjørelse 053). Søk og filter
 // (fylke, utdanningsprogram, tilbud) står i adressen (#/opplaeringslop/skoler?fylke=46&tilbud=HSHEA2), så lenkene
 // fra tilbudene gir et ferdig utvalg. Uten fylke i adressen brukes fylket brukeren har valgt.
-import { dokumentRute, lastOversikt } from '../../lov/data.ts';
+import { dokumentnavn, dokumentRute, lastOversikt } from '../../lov/data.ts';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -122,7 +122,7 @@ function Skolekort({
   valgt: string;
   program: string;
   /** Skolens egne regler fra Lovdata (avgjørelse 061). */
-  regler: readonly { id: string; korttittel: string; malform: 'nb' | 'nn' }[];
+  regler: readonly { id: string; korttittel: string; korttittelNn?: string }[];
 }) {
   const { t, malform } = useTekst();
   const [vist, settVist] = useState(apen);
@@ -174,9 +174,7 @@ function Skolekort({
         {vist &&
           regler.map((r) => (
             <p key={r.id}>
-              <a href={`#${dokumentRute(r.id)}`} lang={r.malform}>
-                {r.korttittel}
-              </a>
+              <a href={`#${dokumentRute(r.id)}`}>{dokumentnavn(r, malform)}</a>
             </p>
           ))}
       </div>
@@ -227,14 +225,14 @@ function TilbudSok({ id, sok, settSok, treff, indeks, velg }: { id: string; sok:
 }
 
 /** Skolenes egne regler fra Lovdata per organisasjonsnummer (avgjørelse 061). */
-function useSkoleregler(): Map<string, { id: string; korttittel: string; malform: 'nb' | 'nn' }[]> {
-  const [regler, settRegler] = useState(new Map<string, { id: string; korttittel: string; malform: 'nb' | 'nn' }[]>());
+function useSkoleregler(): Map<string, { id: string; korttittel: string; korttittelNn?: string }[]> {
+  const [regler, settRegler] = useState(new Map<string, { id: string; korttittel: string; korttittelNn?: string }[]>());
   useEffect(() => {
     lastOversikt().then((o) => {
-      const m = new Map<string, { id: string; korttittel: string; malform: 'nb' | 'nn' }[]>();
+      const m = new Map<string, { id: string; korttittel: string; korttittelNn?: string }[]>();
       for (const d of o.dokumenter) {
         if (d.gyldighet.niva !== 'skole') continue;
-        for (const s of d.gyldighet.skoler) m.set(s, [...(m.get(s) ?? []), { id: d.id, korttittel: d.korttittel, malform: d.malform }]);
+        for (const s of d.gyldighet.skoler) m.set(s, [...(m.get(s) ?? []), { id: d.id, korttittel: d.korttittel, ...(d.korttittelNn ? { korttittelNn: d.korttittelNn } : {}) }]);
       }
       settRegler(m);
     }, () => undefined);

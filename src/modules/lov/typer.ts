@@ -67,6 +67,8 @@ export interface Lovdokument {
   type: 'lov' | 'forskrift' | 'avtale';
   tittel: string;
   korttittel: string;
+  /** Navnet på nynorsk, når appen gir dokumentet navn (de lokale forskriftene). korttittel er da på bokmål. */
+  korttittelNn?: string;
   /** Målformen dokumentet er fastsatt på. Teksten vises uoversatt. */
   malform: 'nb' | 'nn';
   /** Dokumentet hos Lovdata, f.eks. «lov/2023-06-09-30». */
@@ -94,6 +96,7 @@ export interface Lovoversikt {
     type: Lovdokument['type'];
     tittel: string;
     korttittel: string;
+    korttittelNn?: string;
     malform: Lovdokument['malform'];
     refid: string;
     gyldighet: Gyldighet;

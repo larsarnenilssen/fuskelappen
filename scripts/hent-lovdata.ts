@@ -209,6 +209,7 @@ export function lagOversikt(dokumenter: readonly Lovdokument[]): Lovoversikt {
       type: d.type,
       tittel: d.tittel,
       korttittel: d.korttittel,
+      ...(d.korttittelNn ? { korttittelNn: d.korttittelNn } : {}),
       malform: d.malform,
       refid: d.refid,
       gyldighet: d.gyldighet,
@@ -272,7 +273,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const lokaleDokumenter = (lokale?.forskrifter ?? []).map((f) => {
     const url = `https://lovdata.no/dokument/LF/${f.refid}`;
     const gyldighet: Lovdokument['gyldighet'] = f.skoler.length > 0 ? { niva: 'skole', fylke: f.fylke, skoler: f.skoler } : { niva: 'fylke', fylke: f.fylke };
-    return { id: f.id, kilde: kildeForUrl.get(url) ?? 'lovdata-lokale', korttittel: f.korttittel, malform: f.malform, gyldighet, url, lokaltype: f.type };
+    return { id: f.id, kilde: kildeForUrl.get(url) ?? 'lovdata-lokale', korttittel: f.korttittel, korttittelNn: f.korttittelNn, malform: f.malform, gyldighet, url, lokaltype: f.type };
   });
 
   const oppgaver = [
@@ -310,7 +311,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     const forskyvning = createHash('sha1').update(d.id).digest().readUInt16BE(0);
     const fraRegisteret = lokal ? sider.get(lokal.refid) : undefined;
     if (lokal && forrige && !alle && !fra && !fraRegisteret && (uke + forskyvning) % (d.intervall_uker ?? INTERVALL_UKER) !== 0) {
-      dokumenter.push(forrige);
+      // Navnet, gyldigheten og typen kommer fra registeret og kan endres uten at teksten hentes på nytt.
+      dokumenter.push({ ...forrige, ...('korttittelNn' in d ? { korttittel: d.korttittel, korttittelNn: d.korttittelNn, gyldighet: d.gyldighet, lokaltype: d.lokaltype } : {}) });
       resultater.push({ id: d.id, kilde: d.kilde, endringer: [], feil: null, forste: false });
       console.log(`${d.id}: hentes ikke denne uken (uke ${uke}). Forrige henting beholdes.`);
       continue;
@@ -344,6 +346,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
           kilde: d.kilde,
           kapitler: d.kapitler ? kapittelliste(d.kapitler) : null,
           korttittel: d.korttittel,
+          korttittelNn: 'korttittelNn' in d ? d.korttittelNn : undefined,
           malform: d.malform,
           refid: lokal?.refid,
           gyldighet: d.gyldighet,
