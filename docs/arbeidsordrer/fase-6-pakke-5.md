@@ -1,6 +1,6 @@
-# Fase 6, pakke 4: Kalenderen – overlevering (04.10.2026, etter 0.35.0)
+# Fase 6, pakke 5: Kalenderen – overlevering (04.10.2026, etter 0.35.0; flyttet til pakke 5 av eier 05.10.2026)
 
-Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-4.md og start pakke 4.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6).
+Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene, `fase-6-pakke-4-fylkene.md`) må være levert først.
 
 ## Levert så langt
 
@@ -30,7 +30,7 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-4.md og start pak
   - Sider som ikke svarer på fetch, prøves med Chromium. Feilmeldingen viser årsaken bak «fetch failed». Grep venter ved 429 (#93).
   - Begge de forhåndsgodkjente endringene av kildesjekken er brukt (eier 04.10.2026). Nye endringer krever eiers avgjørelse.
 
-## Pakke 4: kalenderen (godkjent av eier 04.10.2026, runde 6)
+## Pakke 5: kalenderen (godkjent av eier 04.10.2026, runde 6)
 
 Én samlet kalender for fristene og datoene i alle modulene. Den er grunnlaget for årshjulet og eksporten til kalender (.ics) i fase 8 (`OPPDRAG.md`).
 
