@@ -135,4 +135,40 @@ describe('oppdatering fra Lovtidend', () => {
     expect(hentet).toContain('https://lovdata.no/dokument/LTII/forskrift/2026-09-29-1985');
     expect(svar.lokale.vurdert).toEqual([]);
   });
+
+  // Eier 05.10.2026 (pakke 5): uten dato for ikrafttredelse («Byrådet bestemmer») er datoen ukjent, ikke i dag.
+  describe('endringer og opphevinger uten dato', () => {
+    const tittel = 'Forskrift om skulereglar, Vestland fylkeskommune';
+    const medEndret: Lokale = { ...forrige, vurdert: [{ ...(forrige.vurdert[0] as Lokale['vurdert'][number]), refid: 'forskrift/2022-05-25-1784', tittel }] };
+    const stub = (listetittel: string, dokumentside: string, hentet: string[]) =>
+      vi.stubGlobal('fetch', async (url: string) => {
+        const u = decodeURIComponent(url);
+        hentet.push(u);
+        const liste = side('lovtidend-side').replaceAll('Forskrift om oppheving av forskrift om skulereglar, Vestland fylkeskommune', listetittel);
+        const html = u.endsWith('avdeling=LTII') ? side('lovtidend-meny') : u.includes('kunngjortDato=02.10.2026 kl. 15.00') ? liste : u.includes('kunngjortDato=') ? '<html></html>' : u.includes('/dokument/LTII/') ? side(dokumentside) : u.includes('/dokument/LF/') ? side('lf-skulerute') : null;
+        return html === null ? new Response('', { status: 404 }) : new Response(html, { status: 200 });
+      });
+
+    it('venter med en endring til datoen er kjent, og henter forskriften når ikrafttredelsen har gitt datoen', async () => {
+      const hentet: string[] = [];
+      stub('Forskrift om endringar i forskrift om skulereglar, Vestland fylkeskommune', 'ltii-endring', hentet);
+      const svar = await oppdaterLokale(medEndret, { full: false, fylker: [{ nummer: '46', navn: 'Vestland' }], skoler: [], titler, idag: '2026-10-05', pauseMs: 0 });
+      expect(svar.lokale.endringer).toEqual({ 'forskrift/2022-05-25-1784': null });
+      expect(hentet.some((u) => u.includes('/dokument/LF/'))).toBe(false);
+      expect(svar.rapport).toContain(`Endret fra en dato som ikke er satt ennå: ${tittel} (Forskrift om endringar i forskrift om skulereglar, Vestland fylkeskommune)`);
+
+      const igjen: string[] = [];
+      stub('Ikrafttredelse av forskrift om endringar i forskrift om skulereglar, Vestland fylkeskommune', 'ltii-ikraft', igjen);
+      const neste = await oppdaterLokale({ ...svar.lokale, lovtidend: '2026-10-02T09:15' }, { full: false, fylker: [{ nummer: '46', navn: 'Vestland' }], skoler: [], titler, idag: '2026-10-05', pauseMs: 0 });
+      expect(igjen).toContain('https://lovdata.no/dokument/LF/forskrift/2022-05-25-1784');
+      expect(neste.lokale.endringer).toEqual({});
+    });
+
+    it('venter med en oppheving til datoen er kjent', async () => {
+      stub('Forskrift om oppheving av forskrift om skulereglar, Vestland fylkeskommune', 'ltii-endring', []);
+      const svar = await oppdaterLokale(medEndret, { full: false, fylker: [{ nummer: '46', navn: 'Vestland' }], skoler: [], titler, idag: '2026-10-05', pauseMs: 0 });
+      expect(svar.lokale.opphevinger).toEqual({ 'forskrift/2022-05-25-1784': null });
+      expect(svar.lokale.vurdert.map((v) => v.refid)).toEqual(['forskrift/2022-05-25-1784']);
+    });
+  });
 });

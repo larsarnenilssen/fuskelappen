@@ -36,10 +36,12 @@ export function lesRegisterside(html: string): { treff: Registertreff[]; antall:
  * alle 124 forskriftene i registeret som appen vurderte, er kunngjort i avdeling II).
  */
 export interface Kunngjoring {
-  /** «forskrift/2026-09-29-1985». */
+  /** «forskrift/2026-09-29-1985», eller «lov/2026-06-19-36» i avdeling I. */
   refid: string;
   avdeling: 'LTI' | 'LTII';
   tittel: string;
+  /** Departementet som står under tittelen i avdeling I («Kunnskapsdepartementet»). Mangler i avdeling II. */
+  departement?: string;
 }
 
 /** Tidspunktene for kunngjøringene i menyen på siden, nyeste først: «02.10.2026 kl. 15.00». */
@@ -58,13 +60,18 @@ export function tidspunkt(tekst: string): string {
   return `${m[3]}-${m[2]}-${m[1]}T${m[4] ?? '00'}:${m[5] ?? '00'}`;
 }
 
-/** Én side med kunngjøringer: treffene og om det finnes en side til. */
+/**
+ * Én side med kunngjøringer: treffene og om det finnes en side til. Avdeling I har lover og forskrifter
+ * (/dokument/LTI/lov/… og /dokument/LTI/forskrift/…) og departementet under tittelen (<span class="blueLight">).
+ */
 export function lesLovtidendside(html: string): { treff: Kunngjoring[]; neste: boolean } {
   const rot = parse(html);
-  const treff = rot.querySelectorAll('article').flatMap((a) => {
+  const treff = rot.querySelectorAll('article').flatMap((a): Kunngjoring[] => {
     const lenke = a.querySelector('h3 a');
-    const m = /\/dokument\/(LTII?)\/(forskrift\/\d{4}-\d{2}-\d{2}-\d+)/.exec(lenke?.getAttribute('href') ?? '');
-    return m && lenke ? [{ refid: m[2] as string, avdeling: m[1] as 'LTI' | 'LTII', tittel: lenke.text.replace(/\s+/g, ' ').trim() }] : [];
+    const m = /\/dokument\/(LTII?)\/((?:lov|forskrift)\/\d{4}-\d{2}-\d{2}-\d+)/.exec(lenke?.getAttribute('href') ?? '');
+    if (!m || !lenke) return [];
+    const departement = a.querySelector('span.blueLight')?.text.replace(/\s+/g, ' ').trim();
+    return [{ refid: m[2] as string, avdeling: m[1] as 'LTI' | 'LTII', tittel: lenke.text.replace(/\s+/g, ' ').trim(), ...(departement ? { departement } : {}) }];
   });
   return { treff, neste: rot.querySelector('.pager .next a') !== null };
 }

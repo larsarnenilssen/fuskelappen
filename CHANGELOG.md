@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Tabeller i lokale forskrifter** (f.eks. skoleruta) viser linjeskiftene i cellene, så datoene og hendingene står på hver sin linje. Gjelder forskriftene etter neste henting fra Lovdata.
+
 ## [0.36.1] – 2026-10-05
 
 ### Lagt til

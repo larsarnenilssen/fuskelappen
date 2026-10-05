@@ -19,3 +19,10 @@
 - **Teksten** hentes fra siden hos Lovdata, én forskrift om gangen på omgang over 13 uker (eier 02.10.2026), og med en gang når forskriften er ny eller endret.
 
 **Konsekvens:** En uke gir om lag 15–20 forespørsler til Lovtidend og noen få sider med tekst. Nye fylker, skoler og forskrifter kommer med uten kodeendringer. Kildene om Vestland (`vlfk-*`) er ikke aktive lenger. Skoleruta fra fylkets forskrift brukes i kalenderen (pakke 5), med merknad om at skolens rute kan avvike.
+
+**Tillegg (fase 6, pakke 5, 05.10.2026):**
+- **Datoer uten dag:** En endring eller oppheving uten dato for ikrafttredelse («Fylkestinget bestemmer») venter til en kunngjøring om ikrafttredelse gir datoen. Før ble den satt til samme dag.
+- **Linjeskift i tabellceller** (<br>) beholdes som linjeskift. Skoleruta i Vestland har dato og hending på hver sin linje i to kolonner.
+- **Skoleruta** leses fra tabellene av `npm run hent:skolerute` (`scripts/skolerute/tolk.ts`) til `data/skolerute/skolerute.json`, etter `hent:lovdata`. Ukedagen må stemme med kalenderen, datoen må ligge i skoleåret og et spenn må gå framover. Det som ikke kan leses sikkert, står i `ulest` og i kontrollsaken. Ingenting gjettes.
+- **Kommende endringer** i dokumentene i `content/lovverk.yaml` står i `data/lovdata/kommende.json` (`scripts/lovdata/kommende.ts`). Kildene er notatene i datasettene («Vert endra ved lov …») fra hele dokumentet, før utvalget av kapitler, og Norsk Lovtidend avdeling I. Avdeling I leses hver uke som avdeling II: bare kunngjøringer fra departementene som eier dokumentene (fra `ministry` i datasettet), eller med dokumentet eller en endringslov som venter i tittelen, hentes. En kunngjøring tas med når «Endrer» har et av dokumentene, eller en endringslov som venter på dato («Ikrafttredelse av …»). Endringer som har tatt til å gjelde, fjernes.
+
