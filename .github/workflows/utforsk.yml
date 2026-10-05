@@ -1,4 +1,4 @@
-# Midlertidig (05.10.2026, runde 2): prøver hentingen av lokale forskrifter fra grenen claude/fylkene i tre runder: hele
+# Midlertidig (05.10.2026, siste henting): prøver hentingen av lokale forskrifter fra grenen claude/fylkene i tre runder: hele
 # registeret, så Lovtidend avdeling II siden 1. juni 2026, så siden 1. desember 2025 (årsskiftet, med registeret for
 # årene i tillegg). Resultatet legges på grenen utforsk-data. Slettes når fylkesarbeidet er bygget.
 name: Utforsk
@@ -22,19 +22,13 @@ jobs:
       - run: npm ci
       - name: Hele registeret
         run: |
-          mkdir -p ut/a ut/b ut/c
+          mkdir -p ut/a ut/b
           (time npm run hent:lovdata -- --alle) > ut/a/logg.txt 2>&1 || echo "feilet" >> ut/a/logg.txt
           cp -r data/lovdata ut/a/ ; cp .generert/lovdata-endringer.json ut/a/ || true
-      - name: Lovtidend siden 1. juni
+      - name: Lovtidend (ingen endring ventet)
         run: |
-          node -e "const f='data/lovdata/lokale.json';const fs=require('fs');const d=JSON.parse(fs.readFileSync(f));d.lovtidend='2026-06-01T00:00';fs.writeFileSync(f,JSON.stringify(d,null,1)+'\n')"
           (time npm run hent:lovdata) > ut/b/logg.txt 2>&1 || echo "feilet" >> ut/b/logg.txt
-          cp data/lovdata/lokale.json ut/b/ ; cp .generert/lovdata-endringer.json ut/b/ || true
-      - name: Lovtidend siden 1. desember 2025
-        run: |
-          node -e "const f='data/lovdata/lokale.json';const fs=require('fs');const d=JSON.parse(fs.readFileSync(f));d.lovtidend='2025-12-01T00:00';fs.writeFileSync(f,JSON.stringify(d,null,1)+'\n')"
-          (time npm run hent:lovdata) > ut/c/logg.txt 2>&1 || echo "feilet" >> ut/c/logg.txt
-          cp data/lovdata/lokale.json ut/c/ ; cp .generert/lovdata-endringer.json ut/c/ || true
+          git status --porcelain data/lovdata > ut/b/endret.txt
       - if: always()
         run: |
           git config user.name "github-actions[bot]"
