@@ -48,9 +48,14 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
    Gruppene i modulene har ulike navn i dag (`ungdom` i Inntak, `elever` i Vurdering), og må få felles navn. Filtrene står i adressen.
 4. **Skoleruta** (eier 05.10.2026): kalenderen viser skoleruta fra fylkets lokale forskrift (pakke 4, `lokaltype: skolerute`), med skolestart, ferier og fridager.
    - Der skoleruta brukes, står en merknad om at skoleruta ved den enkelte skolen kan avvike. Vestlands skolerute sier for eksempel at skolene følger vertskommunen.
-5. **Lenker** fra hver dato til veivisere, begreper og sider (nytt felt på fristene). Datoer uten fast dag («Udir fastsetter datoen») vises bare når det er filtrert på tema.
-6. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
-7. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
+5. **Kommende endringer i regelverket** (eier 05.10.2026): kalenderen viser når en vedtatt endring i en lov eller forskrift appen har, tar til å gjelde, f.eks. «Endring i opplæringslova § 10-7 gjelder fra 1. august».
+   - Kilde: kunngjøringene i Norsk Lovtidend avdeling I, lest hver uke som avdeling II for de lokale forskriftene (avgjørelse 061). «Endrer» (metaField_endrer) viser hvilke lover og forskrifter som endres, og «Ikrafttredelse» når. Bare endringer i dokumentene i `content/lovverk.yaml` tas med.
+   - Datoen lenker til kunngjøringen hos Lovdata og til paragrafen i Regelverk. Teksten i appen endres først når endringen gjelder (datasettene har bare gjeldende tekst).
+   - Undersøk først om ikrafttredelsen alltid står i metadataene, eller om den kommer i en egen kunngjøring senere («Ikrafttredelse av …»). Da må datoen kunne komme etter endringen.
+   - Kontroll: Kunnskapsdepartementets oversikt «Endringer i lover og forskrifter fra 1. januar / 1. juli» på regjeringen.no og Udirs «Nytt til barnehage- og skolestart» kan brukes til å sjekke at ingenting mangler. De lenkes fra kalenderen, men kopieres ikke.
+6. **Lenker** fra hver dato til veivisere, begreper og sider (nytt felt på fristene). Datoer uten fast dag («Udir fastsetter datoen») vises bare når det er filtrert på tema.
+7. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
+8. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 
