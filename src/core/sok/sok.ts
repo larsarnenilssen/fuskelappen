@@ -6,7 +6,7 @@ import type { Flerspraak, Synonymer } from '../innhold/skjema.ts';
  * Hva treffet er, vist under tittelen i søkeresultatene. Typen skal være det treffet kalles ellers i appen: en veiviser,
  * en kalkulator, en tidslinje eller en side, ikke noe generelt (eier 04.10.2026).
  */
-export type Sokeoppforingstype = 'modul' | 'veiviser' | 'kalkulator' | 'tidslinje' | 'side' | 'begrep' | 'fagmerknad' | 'vitnemalsmerknad' | 'sokerstatus' | 'kode' | 'regel' | 'fag' | 'tilbud' | 'laereplanverk' | 'lov' | 'skole';
+export type Sokeoppforingstype = 'modul' | 'veiviser' | 'kalkulator' | 'tidslinje' | 'side' | 'begrep' | 'fagmerknad' | 'vitnemalsmerknad' | 'sokerstatus' | 'kode' | 'regel' | 'fag' | 'tilbud' | 'laereplanverk' | 'lov' | 'skole' | 'kontor';
 
 export interface Sokeoppforing {
   id: string;
@@ -21,6 +21,12 @@ export interface Sokeoppforing {
   vekt?: number;
   /** Fylket oppføringen bare gjelder for (fylkesinnhold uten nasjonal versjon). Vises bare med det fylket valgt. */
   fylke?: string;
+  /**
+   * Fylkene oppføringen hører til, når den hører til et sted: en skole, et opplæringskontor (fylkene det er godkjent
+   * i), en lokal forskrift eller en fylkesside. Med valgt fylke vises de bare for det fylket, til brukeren slår av
+   * knappen med fylket i søket (eier 05.10.2026).
+   */
+  sted?: readonly string[];
 }
 
 interface Dokument {
@@ -35,6 +41,7 @@ interface Dokument {
   modul: string;
   vekt: number;
   fylke: string;
+  sted: string;
 }
 
 export interface Sokeresultat {
@@ -46,6 +53,8 @@ export interface Sokeresultat {
   score: number;
   /** Fylket treffet bare gjelder for, eller null. */
   fylke: string | null;
+  /** Fylkene treffet hører til, eller null når det ikke hører til et sted. */
+  sted?: string[] | null;
 }
 
 /**
@@ -87,6 +96,7 @@ function tilDokument(o: Sokeoppforing): Dokument {
     modul: o.modul,
     vekt: o.vekt ?? 1,
     fylke: o.fylke ?? '',
+    sted: (o.sted ?? []).join(','),
   };
 }
 
@@ -96,7 +106,7 @@ function valg(synonymer: Synonymer): Options<Dokument> {
   const normaliser = lagNormaliserer(synonymer);
   return {
     fields: ['tittel', 'stikkord', 'tekst'],
-    storeFields: ['type', 'tittelNb', 'tittelNn', 'rute', 'modul', 'vekt', 'fylke'],
+    storeFields: ['type', 'tittelNb', 'tittelNn', 'rute', 'modul', 'vekt', 'fylke', 'sted'],
     tokenize: (tekst) => tekst.split(TEGN).filter(Boolean),
     processTerm: (term) => {
       const t = normaliser(term);
@@ -140,5 +150,6 @@ export function sok(indeks: MiniSearch<Dokument>, sporring: string, grense = 50)
     modul: t.modul as string,
     score: t.score,
     fylke: typeof t.fylke === 'string' && t.fylke !== '' ? t.fylke : null,
+    sted: typeof t.sted === 'string' && t.sted !== '' ? t.sted.split(',') : null,
   }));
 }

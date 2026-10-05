@@ -36,7 +36,7 @@ export const manifest: Modulmanifest = {
       { id: 'fylker:oversikt', type: 'modul' as const, tittel: { nb: 'Fylkene', nn: 'Fylka' }, stikkord: ['fylkeskommune', 'fylke', 'lokale forskrifter'], rute: '/fylker', modul: 'fylker' },
       ...fylker.flatMap((f) => {
         const o = fylkeFor(f.nummer);
-        return o ? [{ id: `fylker:${f.nummer}`, type: 'side' as const, tittel: { nb: o.navn, nn: o.navn }, stikkord: [f.navn, 'fylkeskommune'], rute: fylkeRute(f.nummer), modul: 'fylker' }] : [];
+        return o ? [{ id: `fylker:${f.nummer}`, type: 'side' as const, tittel: { nb: o.navn, nn: o.navn }, stikkord: [f.navn, 'fylkeskommune'], rute: fylkeRute(f.nummer), modul: 'fylker', sted: [f.nummer] }] : [];
       }),
     ];
   },

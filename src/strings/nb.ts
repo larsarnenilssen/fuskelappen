@@ -79,6 +79,7 @@ export const nb = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
+    lukk: 'Lukk søket',
     visFlere: 'Vis flere treff ({antall} til)',
     filter: {
       etikett: 'Vis treff fra',
@@ -88,6 +89,7 @@ export const nb = {
       fag: 'Fag',
       begreper: 'Begreper',
       tilbud: 'Tilbud og skoler',
+      fylkeForklaring: 'Viser bare skoler, kontor og lokale forskrifter i {fylke}. Trykk for å se alle fylkene.',
     },
     typer: {
       modul: 'Del av appen',
@@ -106,6 +108,7 @@ export const nb = {
       lov: 'Regelverk',
       side: 'Side',
       skole: 'Skole',
+      kontor: 'Opplæringskontor',
     },
   },
   sorterbar: {

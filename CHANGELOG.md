@@ -10,6 +10,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Boksen «Hos fylkeskommunen»** i veiviserne for inntak, tilrettelegging, språkopplæring og klage: lenker til temaet hos fylket ditt. Uten valgt fylke velger du fylke i boksen. Boksen er lukket på mobil og åpen på større skjermer.
 - **Lokale forskrifter for alle fylker og skoler** i Regelverk, hentet fra Lovdata: skoleregler for fylket og for den enkelte skole, regler for voksne, inntak, skolerute, skyss og fag- og timefordeling. Skolens egne regler merkes «Skolen din». Navnene følger målformen du har valgt.
 - **Offentleglova, offentlegforskrifta, arkivlova og arkivforskrifta** i Regelverk: innsyn, journalføring, unntak og klage, og den nye arkivlova og arkivforskrifta fra 1.1.2026.
+- **Søket i toppfeltet** åpnes over siden du står på, i stedet for på en egen side. «Lukk søket», Esc og tilbake (også sveip tilbake) viser siden igjen der du var. Tilbake fra et treff viser søket slik du forlot det.
+- **Knappen med fylket ditt i søket:** Med valgt fylke viser søket bare skoler, opplæringskontor, lokale forskrifter og fylkessider i fylket. Trykk på knappen for å se alle fylkene. Lokale forskrifter og opplæringskontorene kan nå søkes fram fra søket.
+- **Sti øverst på alle sider** under en modul, også kalkulatorene i Arbeidstid, kildeoversikten under Om appen og fagarket for utgåtte fagkoder.
 - **Skolekortet** har knappene «Nettsiden» og «Skolens regler» øverst, og en strek før opplæringstilbudene.
 - **Dato for ikrafttredelse** og siste endring på alle lover og forskrifter i Regelverk.
 - **Tabeller** i lov- og forskriftsteksten.

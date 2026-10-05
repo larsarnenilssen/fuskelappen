@@ -9,7 +9,8 @@ import { TilToppen } from '../components/TilToppen.tsx';
 import { gaaTilForsidesok, useForsidesokSynlig } from './forsidesok.ts';
 import type { SideProps } from '../modules/typer.ts';
 import { Oppdateringsvarsel } from './Oppdateringsvarsel.tsx';
-import { gaaTilbake, matchRute, usePlassering, utforScroll, type Navigasjonstype } from './ruter.ts';
+import { apneToppsok, gaaTilbake, lukkToppsok, matchRute, settToppsok, usePlassering, useToppsok, utforScroll, type Navigasjonstype } from './ruter.ts';
+import { Sokeboks } from './Sokeboks.tsx';
 import { ruter, type Rute } from './ruteliste.ts';
 import { useTekst } from './tilstand.ts';
 
@@ -129,6 +130,17 @@ export function Skall() {
   }, [treff?.rute, malform, erForside]);
 
   const paaSok = plassering.sti === '/sok';
+  // Søket fra toppfeltet åpnes over siden brukeren står på (eier 05.10.2026).
+  const sok = useToppsok();
+  const sokApent = sok !== null;
+  useEffect(() => {
+    if (!sokApent) return;
+    const tast = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') lukkToppsok();
+    };
+    window.addEventListener('keydown', tast);
+    return () => window.removeEventListener('keydown', tast);
+  }, [sokApent]);
   const forsidesok = useForsidesokSynlig();
   const paaInnstillinger = plassering.sti === '/innstillinger';
 
@@ -158,7 +170,7 @@ export function Skall() {
           </a>
           {/* Søket står på forsiden, så knappen trengs bare på de andre sidene. Plassen holdes, så appnavnet står midt på. */}
           <nav class="topplinje-meny" aria-label={t('app.hovedmeny')}>
-            {paaSok || (erForside && forsidesok) ? (
+            {paaSok || sok !== null || (erForside && forsidesok) ? (
               <span class="topplinje-plass" aria-hidden="true" />
             ) : erForside ? (
               // På forsiden fører knappen tilbake til søkefeltet når brukeren har rullet forbi det.
@@ -166,9 +178,9 @@ export function Skall() {
                 <Ikon navn="sok" />
               </button>
             ) : (
-              <a class="ikonknapp" href="#/sok" aria-label={t('nav.sok')} title={t('nav.sok')}>
+              <button type="button" class="ikonknapp" aria-label={t('nav.sok')} title={t('nav.sok')} onClick={apneToppsok}>
                 <Ikon navn="sok" />
-              </a>
+              </button>
             )}
             <a class="ikonknapp" href="#/innstillinger" aria-label={t('nav.innstillinger')} title={t('nav.innstillinger')} aria-current={paaInnstillinger ? 'page' : undefined}>
               <Ikon navn="innstillinger" />
@@ -177,7 +189,21 @@ export function Skall() {
         </div>
       </header>
       {__TESTVERSJON__ && <p class="testversjon">{t('app.testversjon')}</p>}
-      <main id="innhold" tabIndex={-1}>
+      {sok !== null && (
+        // Søkefeltet som på forsiden, over siden. «Lukk», Esc og tilbake lukker det og viser siden igjen.
+        <div class="toppsok">
+          <div class="forside-topp">
+            <div class="toppsok-rad">
+              <button type="button" class="toppsok-lukk" onClick={lukkToppsok}>
+                <Ikon navn="lukk" class="ikon-liten" />
+                {t('sok.lukk')}
+              </button>
+            </div>
+            <Sokeboks etikett={t('sok.etikett')} plassholder={t('sok.plassholder')} startverdi={sok} autofokus onEndring={settToppsok} />
+          </div>
+        </div>
+      )}
+      <main id="innhold" tabIndex={-1} hidden={sok !== null}>
         {treff ? (
           <Side
             key={`${treff.rute.sti}|${plassering.sti}`}

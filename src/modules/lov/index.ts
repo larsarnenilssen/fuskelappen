@@ -53,8 +53,26 @@ export const manifest: Modulmanifest = {
   ],
   async sokeoppforinger() {
     const { dokumenter } = await lastOversikt();
-    // Lokale forskrifter vises bare for dem som har valgt fylket, og tas derfor ikke med i søket på forsiden.
     const nasjonale = dokumenter.filter((d) => d.gyldighet.niva === 'nasjonal');
+    // De lokale forskriftene søkes på navn, med fylket de hører til. Med valgt fylke vises bare fylkets, til brukeren
+    // slår av knappen med fylket (eier 05.10.2026). Teksten søkes det i inne i Regelverk.
+    const lokale = dokumenter.flatMap((d) =>
+      d.gyldighet.niva === 'nasjonal'
+        ? []
+        : [
+            {
+              vekt: 0.8,
+              id: `lov:${d.id}`,
+              type: 'lov' as const,
+              tittel: { nb: dokumentnavn(d, 'nb'), nn: dokumentnavn(d, 'nn') },
+              tekst: { nb: d.tittel, nn: d.tittel },
+              stikkord: ['lokal forskrift'],
+              rute: dokumentRute(d.id),
+              modul: 'lov',
+              sted: [d.gyldighet.fylke],
+            },
+          ],
+    );
     const lastet = (await Promise.all(nasjonale.map((d) => lastDokument(d.id)))).filter((d) => d !== null);
     // Søket på forsiden finner dokumentene på navn og paragrafene på nummer («§ 11-1», «11-1») og tittel.
     // Teksten i paragrafene søkes det i inne i modulen, så søkeindeksen blir ikke stor.
@@ -79,7 +97,7 @@ export const manifest: Modulmanifest = {
           modul: 'lov',
         };
       }),
-    ]).concat(await avtaleoppforinger());
+    ]).concat(lokale, await avtaleoppforinger());
   },
   async favorittbare(ider) {
     // Oversikten, dokumentene og avtalene, og paragrafene og bestemmelsene med den diskré stjernen (avgjørelse 058).

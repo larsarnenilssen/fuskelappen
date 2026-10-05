@@ -31,7 +31,7 @@ export const manifest: Modulmanifest = {
     // Søket trenger bare navnene, som står i fagindeksen. Tilbudene lastes først når et tilbud åpnes.
     const indeks = await lastFagindeks();
     // Skolene kan søkes på navn, sted og fylke, og åpnes i skoleoppslaget (eier 03.10.2026).
-    const skoler = (await lastSkoler()).skoler;
+    const [skoler, kontor] = await Promise.all([lastSkoler().then((s) => s.skoler), lastOpplaeringskontor().then((k) => k.kontor)]);
     const fylkenavn = (nr: string) => fylker.find((f) => f.nummer === nr)?.navn ?? '';
     return [
       {
@@ -52,6 +52,19 @@ export const manifest: Modulmanifest = {
         stikkord: [s.sted ?? '', fylkenavn(s.fylke)].filter(Boolean),
         rute: s.nr ? skolerute(s.nr) : `/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(s.navn)}`,
         modul: 'opplaeringslop',
+        // Med valgt fylke vises bare skolene i fylket, til brukeren slår av knappen med fylket (eier 05.10.2026).
+        sted: [s.fylke],
+      })),
+      // Opplæringskontorene, med fylkene de er godkjent i (eier 05.10.2026).
+      ...kontor.map((k) => ({
+        vekt: 0.6,
+        id: kontorfavoritt(k.orgnr),
+        type: 'kontor' as const,
+        tittel: { nb: k.navn, nn: k.navn },
+        tekst: { nb: k.kommune ?? '', nn: k.kommune ?? '' },
+        rute: kontorrute(k.orgnr),
+        modul: 'opplaeringslop',
+        sted: k.godkjentI,
       })),
       ...Object.entries(indeks.utdanningsprogram).map(([program, navn]) => ({
         id: `opplaeringslop:${program}`,

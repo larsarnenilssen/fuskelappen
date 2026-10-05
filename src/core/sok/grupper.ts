@@ -23,6 +23,7 @@ export const GRUPPE_FOR_TYPE: Record<Sokeoppforingstype, Sokegruppe> = {
   sokerstatus: 'begreper',
   tilbud: 'tilbud',
   skole: 'tilbud',
+  kontor: 'tilbud',
 };
 
 /** Antall treff i hver gruppe, i fast rekkefølge, bare gruppene som har treff. */

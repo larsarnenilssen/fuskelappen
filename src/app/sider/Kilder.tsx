@@ -13,6 +13,7 @@ import {
 } from '../../core/kildestatus/kildestatus.ts';
 import { useKildestatus } from '../kildestatus.ts';
 import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
+import { Brodsmuler } from '../../components/Brodsmuler.tsx';
 
 const register = kilderegister as Kilderegister;
 
@@ -29,6 +30,7 @@ export default function Kilder() {
 
   return (
     <div class="side">
+      <Brodsmuler ledd={[{ tekst: t('om.tittel'), href: '#/om' }]} />
       <h1 tabIndex={-1}>{t('kildestatus.tittel')}</h1>
       <p>{t('kildestatus.forklaring')}</p>
       {samlet && (

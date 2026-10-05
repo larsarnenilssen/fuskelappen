@@ -2,6 +2,7 @@
 import type { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
+import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -33,6 +34,8 @@ export function Kalkulatorside({
   const tittel = t(`arbeidstid.kalkulatorer.${id}.tittel` as Tekstnokkel);
   return (
     <div class="side kalkulator" data-kalkulator={id}>
+      {/* Arbeidstid har ingen egen oversikt; stien går til kategorien med kalkulatorene (eier 05.10.2026). */}
+      <Brodsmuler ledd={[{ tekst: t('kategorier.arbeidstid'), href: '#/kategori/arbeidstid' }]} />
       <div class="tittelrad med-hjelp">
         <h1 tabIndex={-1}>{tittel}</h1>
         <Hjelp tema={tittel}>

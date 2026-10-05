@@ -3511,6 +3511,34 @@ p.fagkort-tittel {
   color: var(--farge-topplinje-tekst);
 }
 
+/* Søket fra toppfeltet over siden (eier 05.10.2026): samme bredde og felt som på forsiden, med «Lukk søket» øverst. */
+.toppsok {
+  width: 100%;
+  max-width: var(--maks-bredde);
+  margin: 0 auto;
+  padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) var(--rom-6) calc(var(--rom-4) + env(safe-area-inset-left));
+}
+
+.toppsok-rad {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--rom-1);
+}
+
+.toppsok-lukk {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-2);
+  border: 0;
+  background: transparent;
+  color: var(--farge-topplinje-tekst);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .forside-topp .sokeboks {
   margin: 0;
 }
@@ -6822,6 +6850,11 @@ button.frist-stripe-celle:hover {
   border-color: var(--farge-merke);
   background: var(--farge-merke);
   color: var(--farge-merke-tekst);
+}
+
+/* Knappen med det valgte fylket står først, litt for seg (eier 05.10.2026). */
+.sokefilter-fylke {
+  margin-right: var(--rom-2);
 }
 
 .sokefilter-antall {
