@@ -1,0 +1,40 @@
+# Midlertidig (05.10.2026): henter eksempelsider fra Lovdata og NSR til grenen utforsk-data, så strukturen kan
+# leses i utviklingsmiljøet, som Lovdata stenger. Slettes når fylkesarbeidet er bygget.
+name: Utforsk
+on:
+  push:
+    branches: [utforsk/lovdata]
+permissions:
+  contents: write
+jobs:
+  hent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - run: |
+          mkdir -p ut
+          ua='Jukselappen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/jukselappen)'
+          hent() { curl -sSL -A "$ua" --max-time 60 -o "ut/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" "$2" >> ut/logg.txt || echo "$1 feilet" >> ut/logg.txt; sleep 2; }
+          hent register-vestland.html 'https://lovdata.no/register/lokaleForskrifter?county=Vestland'
+          hent register-vestland-20.html 'https://lovdata.no/register/lokaleForskrifter?county=Vestland&offset=20'
+          hent register-finnmark.html 'https://lovdata.no/register/lokaleForskrifter?county=Finnmark'
+          hent register-alle.html 'https://lovdata.no/register/lokaleForskrifter'
+          hent lf-skulereglar.html 'https://lovdata.no/dokument/LF/forskrift/2026-06-16-1587'
+          hent lf-eid.html 'https://lovdata.no/dokument/LF/forskrift/2025-08-18-2220'
+          hent lf-skulerute.html 'https://lovdata.no/dokument/LF/forskrift/2026-08-06-1634'
+          hent lf-inntak-oslo.html 'https://lovdata.no/dokument/LF/forskrift/2025-01-29-147'
+          hent ltii-arna.html 'https://lovdata.no/dokument/LTII/forskrift/2024-10-04-3683'
+          hent lf-arna.html 'https://lovdata.no/dokument/LF/forskrift/2024-10-04-3683'
+          hent nl-opplaeringslova.html 'https://lovdata.no/dokument/NL/lov/2023-06-09-30'
+          hent sok.html 'https://lovdata.no/sok?q=skulereglar&filter=LF'
+          curl -sSL -A "$ua" --max-time 300 -o lover.tar.bz2 https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2
+          f=$(tar -tjf lover.tar.bz2 | grep 'nl-20230609-030') && tar -xjf lover.tar.bz2 -O "$f" | head -c 20000 > ut/nl-opplaeringslova-datasett-hode.xml
+          curl -sS --max-time 60 'https://data-nsr.udir.no/v4/enhet/974624354' -o ut/nsr-enhet.json
+          ls -la ut
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          blob_tree=$(cd ut && for f in *; do printf '100644 blob %s\t%s\n' "$(git hash-object -w "$f")" "$f"; done | git mktree)
+          commit=$(git commit-tree "$blob_tree" -m "Utforsk $(date -u +%F)")
+          git push --force origin "$commit:refs/heads/utforsk-data"
