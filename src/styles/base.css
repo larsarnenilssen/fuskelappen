@@ -668,6 +668,11 @@ main {
   text-decoration: none;
 }
 
+.skolekort-paragraf {
+  margin-right: calc(var(--rom-1) * -1);
+  font-weight: 700;
+}
+
 .skolekort-skille {
   margin: 0;
   padding-top: var(--rom-3);

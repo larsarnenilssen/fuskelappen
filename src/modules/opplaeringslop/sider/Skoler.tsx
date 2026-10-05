@@ -175,7 +175,10 @@ function Skolekort({
               )}
               {regler.map((r) => (
                 <a key={r.id} class="knapp knapp-sekundaer knapp-liten" href={`#${dokumentRute(r.id)}`}>
-                  <Ikon navn="paragraf" class="ikon-liten" />
+                  {/* Tegnet i samme skrift som teksten står på grunnlinjen. Ikonet ble smalt og skjevt (eier 05.10.2026). */}
+                  <span class="skolekort-paragraf" aria-hidden="true">
+                    §
+                  </span>
                   {regelnavn(r)}
                 </a>
               ))}
