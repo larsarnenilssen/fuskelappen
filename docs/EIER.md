@@ -2,7 +2,7 @@
 
 Denne veiledningen er for deg som eier appen. Den forutsetter ingen tekniske kunnskaper. Alt gjøres i nettleseren på github.com eller på telefonen. Du trenger aldri redigere filer selv: si fra til Claude med vanlige ord, så gjør Claude endringen og ber deg godkjenne den.
 
-Repoet ligger på **https://github.com/larsarnenilssen/jukselappen**, og appen på **https://larsarnenilssen.github.io/jukselappen/**.
+Repoet ligger på **https://github.com/larsarnenilssen/jukselappen**, og appen på **https://larsarnenilssen.github.io/jukselappen/**. Den flytter til **https://jukselappen.no/** når domenet er tatt i bruk (punkt 16).
 
 Står en knapp ikke der veiledningen sier, eller GitHub spør om noe som ikke står her: stopp og spør Claude.
 
@@ -331,3 +331,59 @@ Eier 01.10.2026, etter rettingen: Alle seks lenkene virker.
 
 Slutter en lenke å virke senere, si fra hvordan adressen ser ut når du finner siden selv på Vilbli.
 
+
+## 16. Eget domene: jukselappen.no
+
+Appen flyttes fra `https://larsarnenilssen.github.io/jukselappen/` til **https://jukselappen.no/** (avgjørelse 065). Gjør stegene i denne rekkefølgen. Navnene på knappene hos Webhuset kan avvike litt fra det som står her. Spør Claude hvis du er i tvil.
+
+**A. Først: versjon 0.37.0 (Claude)**
+
+Versjonen har varselet som sender brukerne av den gamle adressen til den nye, med innstillingene og favorittene. Åpne appen på telefonen og PC-en og trykk «Oppdater» når den spør, så du har 0.37.0 (Innstillinger → Om appen).
+
+**B. Bekreft domenet hos GitHub (anbefalt, gjøres én gang)**
+
+Det hindrer at noen andre kan bruke domenet på GitHub.
+
+1. På github.com: trykk profilbildet øverst til høyre → **Settings** → **Pages** (i menyen til venstre, under «Code, planning, and automation»).
+2. Trykk **Add a domain**, skriv `jukselappen.no` og trykk **Add domain**.
+3. GitHub viser en **TXT-post** med et navn (`_github-pages-challenge-larsarnenilssen`) og en lang verdi. La siden stå åpen. Legg posten inn hos Webhuset i steg C, og trykk **Verify** når den er lagt inn. Det kan ta litt tid før GitHub ser den.
+
+**C. DNS hos Webhuset**
+
+1. Logg inn hos Webhuset og åpne domenet `jukselappen.no`. Velg DNS-innstillingene (heter for eksempel «DNS», «DNS-oppføringer» eller «Avansert DNS»). Domenet skal bruke Webhusets navnetjenere, som er standard.
+2. **Slett** oppføringer av type A, AAAA og CNAME for selve domenet (navn `@` eller tomt) og for `www`. Ofte peker de til en parkeringsside. **Ikke slett** NS (navnetjenere) eller MX (e-post).
+3. **Legg til** disse oppføringene. Lar du TTL stå som Webhuset foreslår, går det greit.
+
+   | Type | Navn | Verdi |
+   |---|---|---|
+   | A | `@` (eller tomt) | `185.199.108.153` |
+   | A | `@` | `185.199.109.153` |
+   | A | `@` | `185.199.110.153` |
+   | A | `@` | `185.199.111.153` |
+   | AAAA | `@` | `2606:50c0:8000::153` |
+   | AAAA | `@` | `2606:50c0:8001::153` |
+   | AAAA | `@` | `2606:50c0:8002::153` |
+   | AAAA | `@` | `2606:50c0:8003::153` |
+   | CNAME | `www` | `larsarnenilssen.github.io` |
+   | TXT | `_github-pages-challenge-larsarnenilssen` | verdien fra GitHub (steg B) |
+
+   Vil Webhuset ha hele navnet, skriver du `www.jukselappen.no` og `_github-pages-challenge-larsarnenilssen.jukselappen.no`. Verdien for CNAME er bare `larsarnenilssen.github.io` (noen skjemaer vil ha et punktum til slutt).
+4. Vent til endringen er ute. Det tar som regel under en time, men kan ta opptil et døgn. Du kan sjekke på https://dnschecker.org: velg A og skriv `jukselappen.no`. Alle stedene skal vise `185.199.10x.153`.
+5. Trykk **Verify** på GitHub-siden fra steg B.
+
+**D. Ta domenet i bruk (helst sammen med Claude)**
+
+Fra du trykker Save til publiseringen er ferdig, virker ikke appen. Det tar et par minutter.
+
+1. Åpne repoet → **Settings** → **Pages**. Under **Custom domain** skriver du `jukselappen.no` og trykker **Save**. Vent til det står «DNS check successful».
+2. Publiser på nytt: **Actions** → **Publiser** → **Run workflow** (la feltet stå tomt) → **Run workflow**. Da bygges appen for den nye adressen. Eller si fra til Claude.
+3. Når GitHub har laget sertifikatet (det står på Pages-siden og kan ta opptil en time), krysser du av for **Enforce HTTPS**.
+4. Test:
+   - https://jukselappen.no viser appen.
+   - https://www.jukselappen.no og den gamle adressen sender deg dit.
+   - Åpne appen fra hjemskjermen (den gamle). Den viser «Jukselappen har fått ny adresse». Trykk **Åpne den nye adressen**, og svar ja til å ta med innstillingene og favorittene.
+   - Legg appen til på hjemskjermen fra den nye adressen (punkt 7), og slett den gamle. Mangler favorittene i den nye appen, kan du bruke «Last ned kopi» og «Hent inn kopi» under Innstillinger.
+
+**E. Etterpå (Claude):** adressene i README, i denne veiledningen og i arbeidsordrene oppdateres.
+
+Ingenting av dette endrer e-postadressen for tilbakemeldinger (jukselappen.app@gmail.com).

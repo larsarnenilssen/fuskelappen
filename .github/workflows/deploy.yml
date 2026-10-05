@@ -12,6 +12,9 @@
 # brukes taggens egne registerdata.
 # Selve publiseringen kjører fra main, fordi GitHub Pages som standard bare tillater publisering derfra.
 #
+# Adressen (avgjørelse 065): Bygget legges under stien GitHub Pages oppgir, så appen følger domenet som er satt under
+# Settings → Pages. Endres domenet, må appen publiseres på nytt (Actions → Publiser → Run workflow).
+#
 # Testversjonen (avgjørelse 045): Finnes grenen «test», bygges den også, og legges under test/ ved siden av appen.
 # Arbeidsflyten «Testversjon» starter publiseringen når noen pusher til grenen. Feiler bygget av testversjonen,
 # publiseres appen likevel, uten testversjon. Slett grenen og publiser på nytt for å fjerne testversjonen.
@@ -55,6 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      pages: read
     outputs:
       tag: ${{ steps.versjon.outputs.tag }}
     steps:
@@ -62,6 +66,20 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      # Stien appen skal ligge under, fra innstillingene for GitHub Pages: tom med eget domene (jukselappen.no),
+      # /jukselappen på github.io. Bygget leser den fra PAGES_BASE (avgjørelse 065).
+      - name: Finn adressen i innstillingene for GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Sjekk adressen
+        env:
+          VERT: ${{ steps.pages.outputs.host }}
+          STI: ${{ steps.pages.outputs.base_path }}
+        run: |
+          echo "Appen publiseres på https://$VERT$STI/"
+          case "$VERT" in
+            *.github.io) [ -n "$STI" ] || { echo "::error::GitHub Pages oppga ingen sti for $VERT."; exit 1; } ;;
+          esac
       - name: Finn versjon
         id: versjon
         env:
@@ -117,8 +135,12 @@ jobs:
           fi
       - if: steps.versjon.outputs.tag != ''
         run: npm run build
+        env:
+          PAGES_BASE: ${{ steps.pages.outputs.base_path }}
       - name: Bygg testversjonen fra grenen test, hvis den finnes
         if: steps.versjon.outputs.tag != ''
+        env:
+          PAGES_BASE: ${{ steps.pages.outputs.base_path }}
         run: |
           if ! git fetch --quiet origin test 2>/dev/null; then
             echo "Ingen gren som heter test. Publiserer uten testversjon."

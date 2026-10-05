@@ -1,6 +1,7 @@
 import { app } from '../../config/app.ts';
 import { Forklaring } from '../../components/Forklaring.tsx';
 import { TekniskInfo } from '../TekniskInfo.tsx';
+import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { useTekst } from '../tilstand.ts';
 
 export default function Om() {
@@ -27,6 +28,8 @@ export default function Om() {
           </a>
         </p>
       </section>
+
+      <Tilbakemelding />
 
       <section aria-labelledby="om-kilder">
         <h2 id="om-kilder">{t('om.kilder.tittel')}</h2>

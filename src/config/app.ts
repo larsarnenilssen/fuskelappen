@@ -11,6 +11,11 @@ export const app = {
     nn: 'Regelverk for lærarstillingar og drifta av skulen i vidaregåande opplæring – rekna ut, forklart og med kjelder.',
   },
   repo: 'https://github.com/larsarnenilssen/jukselappen',
+  // Adressen for tilbakemeldinger fra brukerne (eier 05.10.2026, avgjørelse 064). Kontoen er laget for appen.
+  tilbakemelding: 'jukselappen.app@gmail.com',
+  // Den nye adressen med eget domene (eier 05.10.2026, avgjørelse 065). Appen på den gamle adressen på github.io
+  // lenker hit når GitHub sender den gamle adressen videre.
+  adresse: 'https://jukselappen.no/',
   // Stien appen publiseres under på GitHub Pages. I GitHub Actions brukes navnet på repoet (avgjørelse 058).
   base: '/jukselappen/',
   // Når kildesjekken kjører (UTC). Må stemme med cron i .github/workflows/kilder.yml; det sjekkes av en test.

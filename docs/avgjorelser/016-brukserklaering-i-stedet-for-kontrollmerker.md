@@ -9,3 +9,5 @@
 - Datamodellen er uendret. Nytt innhold får fortsatt `kontrollert: null`, og bare eier setter en dato (AGENTS.md).
 
 **Konsekvens:** Brukeren ser ikke lenger hvilke enkeltverdier eier har gått gjennom, men får et samlet forbehold. Når eier kontrollerer innhold, får det merket «Kontrollert» med dato.
+
+**Endret 05.10.2026:** Appen har nå en e-postadresse for tilbakemeldinger, som er en konto for appen (avgjørelse 064).

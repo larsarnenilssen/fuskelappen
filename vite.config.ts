@@ -12,12 +12,15 @@ const test = process.env.TESTVERSJON === '1';
 const navn = test ? app.testnavn : app.navn;
 
 /**
- * På GitHub Pages ligger appen under navnet på repoet. I GitHub Actions brukes det navnet, så appen virker både før
- * og etter at repoet får nytt navn (avgjørelse 058). Lokalt og i ende-til-ende-testene brukes `app.base`.
+ * Stien appen ligger under. Publiseringen gir stien fra innstillingene for GitHub Pages i `PAGES_BASE` (avgjørelse
+ * 065): tom med eget domene (jukselappen.no), `/jukselappen` på github.io. Slik følger bygget domenet som er satt i
+ * GitHub, og appen virker både før og etter at domenet tas i bruk. Ellers i GitHub Actions brukes navnet på repoet
+ * (avgjørelse 058). Lokalt og i ende-til-ende-testene brukes `app.base`.
  */
 function rotsti(mode: string): string {
+  const pages = process.env.PAGES_BASE;
   const repo = process.env.GITHUB_REPOSITORY?.split('/')[1];
-  const rot = repo && mode !== 'e2e' ? `/${repo}/` : app.base;
+  const rot = mode === 'e2e' ? app.base : pages !== undefined ? `${pages.replace(/\/+$/, '')}/` : repo ? `/${repo}/` : app.base;
   return test ? `${rot}test/` : rot;
 }
 

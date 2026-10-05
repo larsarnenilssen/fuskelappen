@@ -7089,3 +7089,24 @@ button.frist-stripe-celle:hover {
 .samleboks .tabell-kort-rad {
   background: var(--farge-bakgrunn);
 }
+
+/* ---------- Tilbakemelding på e-post (avgjørelse 064) ---------- */
+/* Lenker som ser ut som knapper (e-post, ny adresse), uten strek under. */
+a.knapp {
+  text-decoration: none;
+}
+
+.tilbakemelding-adresse {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+/* Adressen merkes med ett trykk, så den er lett å kopiere selv. */
+.tilbakemelding-epost {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  user-select: all;
+  -webkit-user-select: all;
+}

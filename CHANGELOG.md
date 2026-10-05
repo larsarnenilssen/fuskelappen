@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Tilbakemelding på e-post** under Innstillinger og i Om appen: «Skriv e-post» åpner e-postprogrammet med emne, versjonen og siden du kom fra. «Vis adressen» viser adressen (jukselappen.app@gmail.com) med en knapp for å kopiere den.
+- **Temafilter i begrepsbanken:** Begrepene kan filtreres på inntak og tilbud, læreplanverket, tilrettelegging, vurdering og eksamen, arbeidstid og regelverk, med antall på hvert tema. Temaet og teksten i filteret står i adressen.
+- **Varsel om ny adresse:** Når appen har flyttet til jukselappen.no, viser appen på den gamle adressen et varsel med lenke til den nye. Innstillingene og favorittene blir med.
+
+### Endret
+
+- **Fylkessiden:** Boksen «Hos fylkeskommunen» er lukket til du åpner den.
+
 ## [0.36.0] – 2026-10-05
 
 ### Lagt til
