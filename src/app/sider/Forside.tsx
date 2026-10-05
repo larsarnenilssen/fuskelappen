@@ -2,7 +2,7 @@
 // Avgjørelse 056: favorittene og kategoriene er grupper som kan lukkes og sorteres («Tilpass forsiden»), favorittene
 // sorteres der de står, og forsiden kan vise bare favorittene, fordelt under kategoriene sine. Valgene lagres på enheten.
 import type { ComponentChildren } from 'preact';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Bryter } from '../../components/Bryter.tsx';
 import { Ikon } from '../../components/Ikon.tsx';
@@ -26,6 +26,65 @@ import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupp
 const FAVORITTER = 'favoritter';
 /** Gruppen med de tre neste datoene fra kalenderen (forslag D, eier 05.10.2026, avgjørelse 066). */
 const NESTE = 'neste';
+
+/** Sidekolonnen på skrivebord kan slås av. Valget lagres i `skjult`, som gruppene (eier 05.10.2026). */
+const SIDEKOLONNE = 'sidekolonne';
+/** Fra denne bredden (rem) står «Neste datoer» og favorittene i en sidekolonne: halv skjerm på en 15" laptop. */
+const SIDEKOLONNE_FRA = 43;
+
+/**
+ * MOCKUP (eier 05.10.2026), fjernes når eier har valgt: tre måter å slå av sidekolonnen på. Velges i testversjonen
+ * eller med ?mockup=1|2|3 i adressen, og huskes i fanen.
+ * 1: bryteren i toppbåndet, og gruppene går tilbake i rutenettet. 2: bryteren i sidekolonnen, som blir en smal skinne.
+ * 3: bryteren i toppbåndet, og «Neste datoer» og favorittene står i et bånd over gruppene.
+ */
+type Mockup = '1' | '2' | '3';
+const MOCKUPER: readonly Mockup[] = ['1', '2', '3'];
+function lesMockup(): Mockup {
+  try {
+    const fraAdressen = new URLSearchParams(location.hash.split('?')[1] ?? '').get('mockup');
+    if (fraAdressen && (MOCKUPER as readonly string[]).includes(fraAdressen)) sessionStorage.setItem('forside-mockup', fraAdressen);
+    const lagret = sessionStorage.getItem('forside-mockup');
+    return lagret && (MOCKUPER as readonly string[]).includes(lagret) ? (lagret as Mockup) : '1';
+  } catch {
+    return '1';
+  }
+}
+const visMockupvalg = () => {
+  try {
+    return __TESTVERSJON__ || sessionStorage.getItem('forside-mockup') !== null;
+  } catch {
+    return __TESTVERSJON__;
+  }
+};
+
+function Mockupvalg({ valgt, onValg }: { valgt: Mockup; onValg: (m: Mockup) => void }) {
+  const { t } = useTekst();
+  return (
+    <div class="sokefilter forside-mockup" role="group" aria-label={t('forside.mockup.tittel')}>
+      <strong>{t('forside.mockup.tittel')}</strong>
+      {MOCKUPER.map((m) => (
+        <button key={m} type="button" class="sokefilter-valg" aria-pressed={valgt === m} onClick={() => onValg(m)}>
+          {t(`forside.mockup.m${m}`)}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+/** Den grafiske skyvebryteren som slår sidekolonnen av og på. `kort`: uten synlig etikett (i den smale skinnen). */
+function Sidekolonnebryter({ pa, kort = false }: { pa: boolean; kort?: boolean }) {
+  const { t } = useTekst();
+  const id = useId();
+  return (
+    <div class={`vippe forside-vippe${kort ? ' uten-etikett' : ''}`} title={kort ? t('forside.sidekolonne') : undefined}>
+      <input id={id} type="checkbox" role="switch" checked={pa} onChange={() => vekslSkjultGruppe(SIDEKOLONNE)} />
+      <label for={id} class={kort ? 'skjult-visuelt' : undefined}>
+        {t('forside.sidekolonne')}
+      </label>
+    </div>
+  );
+}
 
 /** Hvor lenge åpning og lukking tar. Samme som --varighet-lang i tokens.css. */
 const ANIMASJON_MS = 220;
@@ -207,7 +266,16 @@ export default function Forside() {
   const [tilpass, settTilpass] = useState(false);
   const [endrer, settEndrer] = useState<string | null>(null);
   const topp = useRef<HTMLDivElement>(null);
-  const skrivebord = useMinstBredde(64);
+  const skrivebord = useMinstBredde(SIDEKOLONNE_FRA);
+  const [mockup, settMockup] = useState<Mockup>(lesMockup);
+  const velgMockup = (m: Mockup) => {
+    try {
+      sessionStorage.setItem('forside-mockup', m);
+    } catch {
+      // Valget gjelder bare til siden lastes på nytt.
+    }
+    settMockup(m);
+  };
 
   // Toppfeltet viser en søkeknapp når søkefeltet er rullet ut av syne (avgjørelse 056).
   useEffect(() => {
@@ -230,11 +298,17 @@ export default function Forside() {
     return k ? t(k.navn) : t('forside.favoritter');
   };
   const bare = forside.bareFavoritter;
+  // Sidekolonnen brukes på skrivebord, med alt innhold. Med «Bare favoritter» står favorittene under gruppene.
+  const medKolonne = skrivebord && !bare;
+  const kolonnePa = !(forside.skjult ?? []).includes(SIDEKOLONNE);
 
   const antallFavoritter = (n: number) => (n === 1 ? t('forside.enFavoritt') : t('forside.antallFavoritter', { antall: String(n) }));
   // Blyanten trengs bare når det er minst to favoritter å sortere.
   const endreknapp = (id: string, antall: number) =>
     antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
+
+  const sidegrupper = grupper.filter((id) => id === NESTE || id === FAVORITTER);
+  const hovedgrupper = grupper.filter((id) => id !== NESTE && id !== FAVORITTER);
 
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
@@ -272,7 +346,7 @@ export default function Forside() {
   };
 
   return (
-    <div class="side forside">
+    <div class={`side forside${medKolonne ? ' forside-bred' : ''}`}>
       <h1 class="skjult-visuelt" tabIndex={-1}>
         {t('forside.tittel')}
       </h1>
@@ -292,10 +366,13 @@ export default function Forside() {
               ]}
               onEndring={(v) => settBareFavoritter(v === 'favoritter')}
             />
-            <button type="button" class="knapp knapp-sekundaer knapp-liten" aria-pressed={tilpass} onClick={() => settTilpass(!tilpass)}>
-              <Ikon navn={tilpass ? 'hake' : 'kategori'} />
-              {tilpass ? t('forside.tilpass.ferdig') : t('forside.tilpass.knapp')}
-            </button>
+            <div class="forside-verktoy-hoyre">
+              {medKolonne && !tilpass && mockup !== '2' && <Sidekolonnebryter pa={kolonnePa} />}
+              <button type="button" class="knapp knapp-sekundaer knapp-liten" aria-pressed={tilpass} onClick={() => settTilpass(!tilpass)}>
+                <Ikon navn={tilpass ? 'hake' : 'kategori'} />
+                {tilpass ? t('forside.tilpass.ferdig') : t('forside.tilpass.knapp')}
+              </button>
+            </div>
           </div>
         )}
       </div>
@@ -310,16 +387,46 @@ export default function Forside() {
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
-              {skrivebord && !bare ? (
+              {medKolonne && visMockupvalg() && <Mockupvalg valgt={mockup} onValg={velgMockup} />}
+              {!medKolonne ? (
+                // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026).
+                <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+              ) : kolonnePa ? (
                 // Skrivebord (eier 05.10.2026): «Neste datoer» og favorittene står i en egen kolonne til høyre, i
                 // rekkefølgen fra «Tilpass». Temagruppene står i én kolonne ved siden av, og i to når det er plass.
                 <div class="forside-oppsett">
-                  <div class="forsidegrupper">{grupper.filter((id) => id !== NESTE && id !== FAVORITTER).map(gruppe)}</div>
-                  <div class="forside-sidekolonne">{grupper.filter((id) => id === NESTE || id === FAVORITTER).map(gruppe)}</div>
+                  <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
+                  <div class="forside-sidekolonne">
+                    {mockup === '2' && (
+                      <div class="sidekolonne-topp">
+                        <Sidekolonnebryter pa={kolonnePa} />
+                      </div>
+                    )}
+                    {sidegrupper.map(gruppe)}
+                  </div>
                 </div>
+              ) : mockup === '2' ? (
+                // Lukket som en smal skinne med bryteren. Knappene under åpner kolonnen igjen.
+                <div class="forside-oppsett forside-skinne">
+                  <div class="forsidegrupper forsidegrupper-bred">{hovedgrupper.map(gruppe)}</div>
+                  <div class="forside-sidekolonne forside-skinnen">
+                    <Sidekolonnebryter pa={kolonnePa} kort />
+                    {sidegrupper.map((id) => (
+                      <button key={id} type="button" class="ikonknapp" aria-label={t('forside.visISidekolonne', { gruppe: navn(id) })} title={navn(id)} onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}>
+                        <Ikon navn={id === NESTE ? 'kalender' : 'stjerne'} />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : mockup === '3' ? (
+                // «Neste datoer» og favorittene i et bånd over gruppene, med boksene side om side.
+                <>
+                  <div class="forside-band">{sidegrupper.map(gruppe)}</div>
+                  <div class="forsidegrupper forsidegrupper-bred">{hovedgrupper.map(gruppe)}</div>
+                </>
               ) : (
-                // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026).
-                <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+                // Gruppene går tilbake i rutenettet, som før, og bruker hele bredden.
+                <div class="forsidegrupper forsidegrupper-bred">{grupper.map(gruppe)}</div>
               )}
             </>
           )}
@@ -344,7 +451,7 @@ function NesteDatoer() {
   const { t, malform } = useTekst();
   const { innstillinger, forside } = useTilstand();
   const [poster, settPoster] = useState<Kalenderpost[] | null>(null);
-  const [stor, settStor] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia('(min-width: 64rem)').matches);
+  const [stor, settStor] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia(`(min-width: ${SIDEKOLONNE_FRA}rem)`).matches);
   const fylke = innstillinger.fylke;
   const skole = innstillinger.skole?.id ?? null;
   useEffect(() => {
@@ -359,7 +466,7 @@ function NesteDatoer() {
   }, [fylke, skole]);
   useEffect(() => {
     if (!window.matchMedia) return;
-    const mq = window.matchMedia('(min-width: 64rem)');
+    const mq = window.matchMedia(`(min-width: ${SIDEKOLONNE_FRA}rem)`);
     const lytt = () => settStor(mq.matches);
     mq.addEventListener('change', lytt);
     return () => mq.removeEventListener('change', lytt);

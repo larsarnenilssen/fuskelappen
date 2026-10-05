@@ -28,6 +28,9 @@ export const nn: Tekster = {
     innstillinger: 'Innstillingar',
   },
   forside: {
+    sidekolonne: 'Sidekolonne',
+    visISidekolonne: 'Vis {gruppe} i sidekolonna',
+    mockup: { tittel: 'Mockup:', m1: '1 Brytar i toppen, gruppene tilbake', m2: '2 Brytar i kolonna, smal skinne', m3: '3 Brytar i toppen, band øvst' },
     tittel: 'Framside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, omgrep eller fag',

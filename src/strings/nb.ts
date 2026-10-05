@@ -28,6 +28,9 @@ export const nb = {
     innstillinger: 'Innstillinger',
   },
   forside: {
+    sidekolonne: 'Sidekolonne',
+    visISidekolonne: 'Vis {gruppe} i sidekolonnen',
+    mockup: { tittel: 'Mockup:', m1: '1 Bryter i toppen, gruppene tilbake', m2: '2 Bryter i kolonnen, smal skinne', m3: '3 Bryter i toppen, bånd øverst' },
     tittel: 'Forside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, begrep eller fag',
