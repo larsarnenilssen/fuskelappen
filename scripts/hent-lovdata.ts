@@ -12,11 +12,14 @@
 //   og de andre hentes som vanlig. Skriptet avslutter da med feil, så kildesjekken sier fra.
 // - Endrede, nye og fjernede paragrafer lagres i .generert/lovdata-endringer.json, som kildesjekken tar med i
 //   kontrollsaken. Teksten er lov- og forskriftstekst og vises uendret i appen.
+// - Kommende endringer i dokumentene (data/lovdata/kommende.json, fase 6, pakke 5) leses fra notatene i hele
+//   dokumentet i datasettet, før utvalget av kapitler, og fra Norsk Lovtidend avdeling I (scripts/lovdata/kommende.ts).
 //
-// Bruk: npm run hent:lovdata [-- --fra=<mappe>] [-- --alle]
+// Bruk: npm run hent:lovdata [-- --fra=<mappe>] [-- --alle] [-- --kommende]
 //   --fra leser filene fra en mappe i stedet for å laste ned (filnavn som i datasettet, f.eks. nl-20230609-030.xml,
 //         og for lokale forskrifter lf-20200929-3380.html).
 //   --alle leser hele registeret over lokale forskrifter og henter alle de lokale forskriftene.
+//   --kommende lager bare data/lovdata/kommende.json på nytt fra filene i data/lovdata, uten å spørre Lovdata.
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -41,6 +44,19 @@ import { lesFil } from './innhold/last.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 import { datasettnavn, lesLovdokument } from './lovdata/les.ts';
 import { type Lokale, lokaleSkjema, oppdaterLokale, type Titler } from './lovdata/lokale.ts';
+import {
+  type Avd1kunngjoring,
+  endringerFraNotater,
+  type KommendeEndringer,
+  kommendeSkjema,
+  lesDepartementer,
+  lesLovtidendAvd1,
+  lesNotaterFraXml,
+  type Lovverkdokument,
+  navnestamme,
+  notaterIDokument,
+  oppdaterKommende,
+} from './lovdata/kommende.ts';
 import type { Fylke, Skole } from './lovdata/register.ts';
 import { createHash } from 'node:crypto';
 import { lesLovdataside } from './lovdata/side.ts';
@@ -235,7 +251,58 @@ function lesForrige(id: string): Lovdokument | null {
   }
 }
 
-if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+const KOMMENDE = join(MAPPE, 'kommende.json');
+
+/**
+ * Lager data/lovdata/kommende.json: notatene i dokumentene i lovverk.yaml (fra hele dokumentet når det er lest, ellers
+ * fra filen i data/lovdata) og, når `lovtidend` er sann, kunngjøringene i Lovtidend avdeling I siden forrige gang.
+ * Feiler lesingen av Lovtidend, beholdes tidspunktet for forrige lesing, så kunngjøringene leses neste gang.
+ */
+async function lagKommende(
+  dokumenter: readonly Lovdokument[],
+  ider: readonly string[],
+  fraXml: ReadonlyMap<string, { notater: Lovverkdokument['paragrafer']; departementer: string[] }>,
+  valg: { idag: string; lovtidend: boolean },
+): Promise<{ linjer: { dokument: string; tekst: string }[]; feil: string | null }> {
+  const forrige: KommendeEndringer | null = existsSync(KOMMENDE) ? kommendeSkjema.parse(JSON.parse(readFileSync(KOMMENDE, 'utf8'))) : null;
+  const lovverk: Lovverkdokument[] = dokumenter
+    .filter((d) => ider.includes(d.id))
+    .map((d) => ({ id: d.id, refid: d.refid, korttittel: d.korttittel, tittel: d.tittel, paragrafer: fraXml.get(d.id)?.notater ?? notaterIDokument(d) }));
+  const fraNotater = endringerFraNotater(lovverk, valg.idag);
+  let kunngjoringer: Avd1kunngjoring[] = [];
+  let avd1 = forrige?.lovtidendAvd1 ?? null;
+  let feil: string | null = null;
+  const rapport: string[] = [];
+  if (valg.lovtidend) {
+    const departementer = new Set([...fraXml.values()].flatMap((x) => x.departementer));
+    if (departementer.size === 0) rapport.push('Fant ikke departementene i datasettene (dd.ministry). Lovtidend avdeling I leses bare etter navnet på dokumentene.');
+    const navn = [...new Set(lovverk.flatMap((d) => [navnestamme(d.korttittel), ...(/\(([^()]+)\)\s*$/.exec(d.tittel)?.slice(1).map(navnestamme) ?? [])]))];
+    const venter = [...fraNotater, ...(forrige?.endringer ?? [])].filter((e) => e.iKraft === null).map((e) => e.endretVed.refid);
+    try {
+      const lt = await lesLovtidendAvd1(avd1, { departementer, navn, venter, idag: valg.idag });
+      kunngjoringer = lt.kunngjoringer;
+      avd1 = lt.nyeste;
+      rapport.push(...lt.rapport);
+    } catch (e) {
+      feil = `Lovtidend avdeling I kunne ikke leses: ${e instanceof Error ? e.message : String(e)}. Leses på nytt neste gang.`;
+      console.error(feil);
+    }
+  }
+  const { kommende, rapport: endringer } = oppdaterKommende(forrige, fraNotater, kunngjoringer, lovverk, { idag: valg.idag, lovtidendAvd1: avd1 });
+  writeFileSync(KOMMENDE, `${JSON.stringify(kommendeSkjema.parse(kommende), null, 1)}\n`);
+  for (const l of [...rapport, ...endringer.map((e) => e.tekst)]) console.log(`Kommende endringer: ${l}`);
+  console.log(`Kommende endringer: ${kommende.endringer.length} (${kommende.endringer.filter((e) => e.iKraft === null).length} uten dato).`);
+  // Linjene om Lovtidend som helhet står under de lokale forskriftene i kontrollsaken (sjekkLovtekst).
+  return { linjer: [...rapport.map((tekst) => ({ dokument: '', tekst })), ...endringer], feil };
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1] && process.argv.includes('--kommende')) {
+  // Bare kommende.json, fra filene i data/lovdata (uten Lovdata).
+  const utvalg = lesFil(rot, join(rot, 'content/lovverk.yaml')) as Lovutvalg;
+  const ider = utvalg.dokumenter.map((d) => d.id);
+  const dokumenter = ider.flatMap((id) => lesForrige(id) ?? []);
+  await lagKommende(dokumenter, ider, new Map(), { idag: new Date().toISOString().slice(0, 10), lovtidend: false });
+} else if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const fra = process.argv.find((a) => a.startsWith('--fra='))?.slice('--fra='.length) ?? null;
   const alle = process.argv.includes('--alle');
   const uke = ukenummer(new Date());
@@ -304,6 +371,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
 
   const resultater: { id: string; kilde: string; endringer: string[]; feil: string | null; forste: boolean }[] = [];
   const dokumenter: Lovdokument[] = [];
+  // Notatene om endringer og departementet fra hele dokumentet i datasettet, til kommende endringer.
+  const fraXml = new Map<string, { notater: Lovverkdokument['paragrafer']; departementer: string[] }>();
   for (const { d, url, lokal, navn, type, lokaltype } of oppgaver) {
     const forrige = lesForrige(d.id);
     // Lokale forskrifter hentes på omgang, hver intervall_uker, spredt over ukene etter id-en. Uken imellom beholdes
@@ -339,6 +408,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
         const fil = finnFil(mappe, navn);
         if (!fil) throw new Error(`Fant ikke ${navn} i datasettet. Er adressen i kilderegisteret riktig?`);
         html = readFileSync(fil, 'utf8');
+        fraXml.set(d.id, { notater: lesNotaterFraXml(html), departementer: lesDepartementer(html) });
       }
       const ny = lovdokumentSkjema.parse(
         (lokal ? lesLovdataside : lesLovdokument)(html, {
@@ -375,10 +445,11 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   // Dokumenter som er tatt ut av utvalget, fjernes.
   const ider = new Set([...utvalg.dokumenter.map((d) => d.id), ...lokaleDokumenter.map((d) => d.id)]);
   for (const f of readdirSync(MAPPE)) {
-    if (f.endsWith('.json') && f !== 'oversikt.json' && f !== 'lokale.json' && !ider.has(f.replace(/\.json$/, ''))) rmSync(join(MAPPE, f));
+    if (f.endsWith('.json') && !['oversikt.json', 'lokale.json', 'kommende.json'].includes(f) && !ider.has(f.replace(/\.json$/, ''))) rmSync(join(MAPPE, f));
   }
   writeFileSync(join(MAPPE, 'oversikt.json'), `${JSON.stringify(lovoversiktSkjema.parse(lagOversikt(dokumenter)), null, 1)}\n`);
+  const kommende = await lagKommende(dokumenter, utvalg.dokumenter.map((d) => d.id), fraXml, { idag, lovtidend: !fra });
   mkdirSync(join(rot, '.generert'), { recursive: true });
-  writeFileSync(join(rot, '.generert/lovdata-endringer.json'), `${JSON.stringify({ dokumenter: resultater, lokale: lokalrapport }, null, 2)}\n`);
+  writeFileSync(join(rot, '.generert/lovdata-endringer.json'), `${JSON.stringify({ dokumenter: resultater, lokale: lokalrapport, kommende }, null, 2)}\n`);
   if (resultater.some((r) => r.feil)) process.exit(1);
 }

@@ -14,6 +14,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Søket i toppfeltet** legger seg over siden, og siden står synlig bak. Trykk utenfor søket for å komme tilbake til siden.
 - **Kalender for inntak og Kalender for eksamen** åpner kalenderen, ferdig filtrert. Lagrede favoritter og lenker til de gamle sidene virker fortsatt.
 - **Svar, svarfrist og andre inntak** og klagen på inntak står i juli og august.
+- **Tabeller i lokale forskrifter** (f.eks. skoleruta) viser linjeskiftene i cellene, så datoene og hendingene står på hver sin linje. Gjelder forskriftene etter neste henting fra Lovdata.
 
 ## [0.36.1] – 2026-10-05
 

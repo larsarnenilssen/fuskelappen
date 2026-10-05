@@ -4573,6 +4573,8 @@ p.fagkort-tittel {
   padding: var(--rom-1) var(--rom-2);
   text-align: left;
   vertical-align: top;
+  /* Linjeskiftene i cellene («\n» fra <br> hos Lovdata) vises som linjer, f.eks. dato og hending i skoleruta. */
+  white-space: pre-line;
 }
 
 .lov-tabell th {

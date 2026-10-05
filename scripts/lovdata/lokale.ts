@@ -82,10 +82,13 @@ export const lokaleSkjema = z
     lest: z.string().nullable(),
     /** Tidspunktet for den nyeste kunngjøringen i Lovtidend avdeling II som er lest («2026-10-02T15:00»). */
     lovtidend: z.string().nullable().default(null),
-    /** Forskrifter som er opphevet fra en dato som ikke er kommet ennå (refid → dato). */
-    opphevinger: z.record(z.string(), z.string()).default({}),
-    /** Forskrifter med en kunngjort endring som tar til å gjelde fra en dato som ikke er kommet ennå (refid → dato). */
-    endringer: z.record(z.string(), z.string()).default({}),
+    /**
+     * Forskrifter som er opphevet fra en dato som ikke er kommet ennå (refid → dato). Null når datoen ikke er satt ennå
+     * («Fylkestinget bestemmer»). Da venter opphevingen til en kunngjøring om ikrafttredelse gir datoen.
+     */
+    opphevinger: z.record(z.string(), z.string().nullable()).default({}),
+    /** Forskrifter med en kunngjort endring som tar til å gjelde fra en dato som ikke er kommet ennå (refid → dato), eller null. */
+    endringer: z.record(z.string(), z.string().nullable()).default({}),
     forskrifter: z.array(lokalForskriftSkjema),
     /** Alle kandidatene med vurderingen, også dem som ikke vises (type null eller uten fylke). */
     vurdert: z.array(vurderingSkjema),
@@ -165,12 +168,14 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
 }
 
 let pauseMs = PAUSE_MS;
-const pause = () => new Promise((r) => setTimeout(r, pauseMs));
+/** Pausen mellom forespørslene til Lovdata. Kan settes kortere i testene. */
+export const pause = (ms: number = pauseMs) => new Promise((r) => setTimeout(r, ms));
 
 /** Siden finnes ikke (404 eller 410). Prøves ikke igjen. */
-class IkkeFunnet extends Error {}
+export class IkkeFunnet extends Error {}
 
-async function hentTekst(url: string): Promise<string> {
+/** Teksten på en side hos Lovdata, med inntil tre forsøk. */
+export async function hentTekst(url: string): Promise<string> {
   let feil: unknown;
   for (let forsok = 1; forsok <= 3; forsok++) {
     try {
@@ -224,12 +229,12 @@ async function vurderNye(
   refider: Iterable<string>,
   tidligere: Map<string, Vurdering>,
   sider: Map<string, string>,
-  opphevinger: Map<string, string>,
+  opphevinger: Map<string, string | null>,
   rapport: string[],
   valg: { fylker: readonly Fylke[]; skoler: readonly Skole[]; idag: string },
 ): Promise<string[]> {
   const ikkeFunnet: string[] = [];
-  const erstatter: { refid: string; endrer: string[]; fra: string }[] = [];
+  const erstatter: { refid: string; endrer: string[]; fra: string | null }[] = [];
   for (const refid of refider) {
     if (tidligere.has(refid)) continue;
     let html: string;
@@ -247,13 +252,14 @@ async function vurderNye(
     const v = vurder(refid, meta, valg.idag);
     tidligere.set(refid, v);
     rapport.push(`Ny: ${v.tittel} (${klassifiserVurdering(v, valg.fylker, valg.skoler).type ?? 'ikke tatt med'})`);
-    erstatter.push({ refid, endrer: meta.endrer, fra: meta.iKraft ?? valg.idag });
+    // Uten dato for ikrafttredelse («Fylkestinget bestemmer») er datoen ukjent, ikke i dag.
+    erstatter.push({ refid, endrer: meta.endrer, fra: meta.iKraft });
   }
   // Etter at alle er lest, så rekkefølgen ikke betyr noe.
   for (const n of erstatter) {
     for (const e of n.endrer.filter((x) => tidligere.has(x) && x !== n.refid)) {
       opphevinger.set(e, n.fra);
-      rapport.push(`Erstattes fra ${n.fra}: ${tidligere.get(e)?.tittel}`);
+      rapport.push(`Erstattes fra ${n.fra ?? 'en dato som ikke er satt ennå'}: ${tidligere.get(e)?.tittel}`);
     }
   }
   return ikkeFunnet;
@@ -363,13 +369,18 @@ export async function oppdaterLokale(
         await pause();
       }
       const oppheving = kunngjoringstype(k.tittel) === 'oppheving' || /opphev/i.test(meta.tittel);
+      // Uten dato for ikrafttredelse er datoen ukjent (null), ikke i dag. En senere kunngjøring om ikrafttredelse
+      // («Ikrafttredelse av …») har forskriften i «Endrer» og gir datoen.
+      const fra = meta.iKraft;
+      const naar = fra ?? 'en dato som ikke er satt ennå';
+      const ikraft = /^ikraft/i.test(k.tittel);
       for (const e of meta.endrer.filter((x) => tidligere.has(x))) {
-        if (oppheving) {
-          opphevinger.set(e, meta.iKraft ?? idag);
-          rapport.push(`Oppheves fra ${meta.iKraft ?? idag}: ${tidligere.get(e)?.tittel}`);
+        if (oppheving || (ikraft && opphevinger.has(e) && opphevinger.get(e) === null)) {
+          opphevinger.set(e, fra);
+          rapport.push(`Oppheves fra ${naar}: ${tidligere.get(e)?.tittel}`);
         } else {
-          endringer.set(e, meta.iKraft && meta.iKraft > idag ? meta.iKraft : idag);
-          rapport.push(`Endret fra ${meta.iKraft ?? idag}: ${tidligere.get(e)?.tittel} (${k.tittel})`);
+          endringer.set(e, fra === null ? null : fra > idag ? fra : idag);
+          rapport.push(`Endret fra ${naar}: ${tidligere.get(e)?.tittel} (${k.tittel})`);
         }
       }
     }
@@ -383,7 +394,7 @@ export async function oppdaterLokale(
   }
   // Endringer som har tatt til å gjelde: siden hentes på nytt, så teksten og datoene blir oppdatert.
   for (const [refid, dato] of endringer) {
-    if (dato > idag) continue;
+    if (dato === null || dato > idag) continue;
     endringer.delete(refid);
     if (!tidligere.has(refid) || sider.has(refid)) continue;
     const html = await hentTekst(`${LOVDATA}/dokument/LF/${refid}`);
@@ -393,7 +404,7 @@ export async function oppdaterLokale(
   }
   // Opphevinger som har tatt til å gjelde.
   for (const [refid, dato] of opphevinger) {
-    if (dato > idag) continue;
+    if (dato === null || dato > idag) continue;
     if (tidligere.has(refid)) rapport.push(`Opphevet: ${tidligere.get(refid)?.tittel}`);
     tidligere.delete(refid);
     opphevinger.delete(refid);

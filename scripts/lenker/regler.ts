@@ -34,7 +34,7 @@ function lovdatalenker(rot: string): string[] {
   if (!existsSync(mappe)) return [];
   const ut = new Set<string>();
   for (const f of readdirSync(mappe)) {
-    if (!f.endsWith('.json') || f === 'oversikt.json' || f === 'lokale.json') continue;
+    if (!f.endsWith('.json') || ['oversikt.json', 'lokale.json', 'kommende.json'].includes(f)) continue;
     for (const m of readFileSync(join(mappe, f), 'utf8').matchAll(/"l":\s*"([^"]+)"/g)) ut.add(`https://lovdata.no/${m[1]}`);
   }
   return [...ut];

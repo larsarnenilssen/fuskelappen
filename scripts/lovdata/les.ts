@@ -27,21 +27,25 @@ export function beskriv(el: HTMLElement): string {
 
 export class Ukjent extends Error {}
 
-/** Slår sammen tekst ved siden av hverandre og fjerner overflødige mellomrom. */
-export function rydd(segmenter: Segment[]): Segment[] {
+/**
+ * Slår sammen tekst ved siden av hverandre og fjerner overflødige mellomrom. Med `linjeskift` beholdes linjeskiftene
+ * («\n», fra <br> i tabellceller), uten mellomrom rundt. Ellers blir de mellomrom.
+ */
+export function rydd(segmenter: Segment[], valg: { linjeskift?: boolean } = {}): Segment[] {
   const ut: Segment[] = [];
   for (const s of segmenter) {
     const forrige = ut[ut.length - 1];
     if (typeof s === 'string' && typeof forrige === 'string') ut[ut.length - 1] = forrige + s;
     else ut.push(s);
   }
+  const mellomrom = (t: string) => (valg.linjeskift ? t.replace(/[^\S\n]+/g, ' ').replace(/ ?\n ?/g, '\n') : t.replace(/\s+/g, ' '));
   const renset = ut
-    .map((s) => (typeof s === 'string' ? s.replace(/\s+/g, ' ') : 't' in s ? { ...s, t: s.t.replace(/\s+/g, ' ').trim() } : s))
+    .map((s) => (typeof s === 'string' ? mellomrom(s) : 't' in s ? { ...s, t: s.t.replace(/\s+/g, ' ').trim() } : s))
     .filter((s) => s !== '');
   const forste = renset[0];
-  if (typeof forste === 'string') renset[0] = forste.trimStart();
+  if (typeof forste === 'string') renset[0] = forste.replace(/^\s+/, '');
   const siste = renset[renset.length - 1];
-  if (typeof siste === 'string') renset[renset.length - 1] = siste.trimEnd();
+  if (typeof siste === 'string') renset[renset.length - 1] = siste.replace(/\s+$/, '');
   return renset.filter((s) => s !== '');
 }
 
@@ -64,13 +68,15 @@ export function lovdatalenke(href: string): string {
 
 /**
  * Teksten i et element som segmenter: tekst, lenker og fotnotehenvisninger. Elementene i `hopp` (lister og tekst
- * etter lister) leses for seg og hoppes over her.
+ * etter lister) leses for seg og hoppes over her. Med `linjeskift` blir <br> et linjeskift («\n»), og andre
+ * linjeskift i kilden blir mellomrom. Det brukes i tabellceller, der linjene hører sammen med linjene i cellen ved
+ * siden av (skoleruta i Vestland). Ellers blir <br> et mellomrom.
  */
-export function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = () => false): Segment[] {
+export function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = () => false, valg: { linjeskift?: boolean } = {}): Segment[] {
   const ut: Segment[] = [];
   for (const n of el.childNodes) {
     if (n.nodeType === NodeType.TEXT_NODE) {
-      ut.push(n.text);
+      ut.push(valg.linjeskift ? n.text.replace(/\s+/g, ' ') : n.text);
       continue;
     }
     if (!erElement(n) || hopp(n)) continue;
@@ -85,9 +91,9 @@ export function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = (
     } else if (t === 'sup' && klasse(n, 'footnotereference')) {
       ut.push({ f: n.text.trim() });
     } else if (t === 'i' || t === 'em' || t === 'strong' || t === 'b' || t === 'span' || t === 'sub' || t === 'sup') {
-      ut.push(...segmenter(n));
+      ut.push(...segmenter(n, () => false, valg));
     } else if (t === 'br') {
-      ut.push(' ');
+      ut.push(valg.linjeskift ? '\n' : ' ');
     } else {
       throw new Ukjent(beskriv(n));
     }

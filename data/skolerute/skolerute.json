@@ -1,0 +1,143 @@
+{
+ "lest": "2026-10-05",
+ "fylker": {
+  "11": {
+   "dokumenter": [
+    {"id":"rogaland-skolerute-2025-2028","refid":"forskrift/2025-06-17-1080","skolear":"2025-2026","malform":"nn","vertskommune":false},
+    {"id":"rogaland-skolerute-2025-2028","refid":"forskrift/2025-06-17-1080","skolear":"2026-2027","malform":"nn","vertskommune":false},
+    {"id":"rogaland-skolerute-2025-2028","refid":"forskrift/2025-06-17-1080","skolear":"2027-2028","malform":"nn","vertskommune":false}
+   ],
+   "hendelser": [
+    {"type":"forste-skoledag","fra":"2025-08-19","tekst":"Første skoledag tysdag 19. august.","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"hostferie","fra":"2025-10-06","til":"2025-10-10","tekst":"Haustferie 6. til 10. oktober (veke 41)","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"planlegging","fra":"2025-11-04","tekst":"Felles planleggingsdag tysdag 4. november (fri for elevar).","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"planlegging","fra":"2026-02-12","tekst":"Felles planleggingsdag torsdag 12. februar (fri for elevar).","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"vinterferie","fra":"2026-02-23","til":"2026-02-27","tekst":"Vinterferie 23. til 27. februar (veke 9).","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"paskeferie","fra":"2026-03-30","til":"2026-04-06","tekst":"Påskeferie 30. mars til 6. april.","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"helligdag","fra":"2026-05-01","tekst":"Arbeidaranes dag fredag 1. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"helligdag","fra":"2026-05-14","tekst":"Kristi himmelfartsdag torsdag 14. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"helligdag","fra":"2026-05-25","tekst":"Andre pinsedag måndag 25. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2025-2026"},
+    {"type":"forste-skoledag","fra":"2026-08-17","tekst":"Første skoledag måndag 17. august.","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"hostferie","fra":"2026-10-05","til":"2026-10-09","tekst":"Haustferie 5. til 9. oktober (veke 41)","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"planlegging","fra":"2026-11-03","tekst":"Felles planleggingsdag tysdag 3. november (fri for elevar).","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"planlegging","fra":"2027-02-10","tekst":"Felles planleggingsdag onsdag 10. februar (fri for elevar).","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"vinterferie","fra":"2027-02-15","til":"2027-02-19","tekst":"Vinterferie 15. til 19. februar (veke 7).","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"paskeferie","fra":"2027-03-22","til":"2027-03-29","tekst":"Påskeferie 22. til 29. mars","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"helligdag","fra":"2027-05-06","tekst":"Kristi himmelfartsdag torsdag 6. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"helligdag","fra":"2027-05-17","tekst":"Andre pinsedag måndag 17. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2026-2027"},
+    {"type":"forste-skoledag","fra":"2027-08-16","tekst":"Første skoledag måndag 16. august.","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"hostferie","fra":"2027-10-11","til":"2027-10-15","tekst":"Haustferie 11. til 15. oktober (veke 41)","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"planlegging","fra":"2027-11-10","tekst":"Felles planleggingsdag onsdag 10. november (fri for elevar).","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"planlegging","fra":"2028-02-17","tekst":"Felles planleggingsdag torsdag 17. februar (fri for elevar).","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"vinterferie","fra":"2028-02-28","til":"2028-03-03","tekst":"Vinterferie 28. februar til 3. mars (veke 9).","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"paskeferie","fra":"2028-04-10","til":"2028-04-17","tekst":"Påskeferie 10. til 17. april.","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-01","tekst":"Arbeidaranes dag måndag 1. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-17","tekst":"Grunnlovsdag onsdag 17. mai","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-25","tekst":"Kristi himmelfartsdag torsdag 25. mai.","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-06-05","tekst":"Andre pinsedag måndag 5. juni.","dokument":"rogaland-skolerute-2025-2028","skolear":"2027-2028"}
+   ]
+  },
+  "46": {
+   "dokumenter": [
+    {"id":"vestland-skolerute-2026-2027","refid":"forskrift/2026-08-06-1634","skolear":"2026-2027","malform":"nn","vertskommune":true}
+   ],
+   "hendelser": [
+    {"type":"forste-skoledag","fra":"2026-08-17","tekst":"Første skuledag: måndag 17. august","dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"hostferie","fra":"2026-10-05","til":"2026-10-09","tekst":"Haustferie: Veke 41, måndag 5.–fredag 9. oktober","dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"elevfri","fra":"2026-11-06","tekst":"Felles elevfri dag vgs.: Fredag 6. november","dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"juleferie","fra":"2026-12-23","til":"2027-01-01","tekst":"Juleferie: Onsdag 23. desember–fredag 1. januar","dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"vinterferie","fra":"2027-02-22","til":"2027-02-26","tekst":"Vinterferie: Veke 8 måndag 22.–fredag 26. februar","dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"siste-skoledag","fra":"2027-06-18","tekst":"Siste skuledag: Fredag 18. juni","dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027"}
+   ]
+  },
+  "55": {
+   "dokumenter": [
+    {"id":"troms-skolerute-2026-2027","refid":"forskrift/2024-05-13-3673","skolear":"2026-2027","malform":"nb","vertskommune":false},
+    {"id":"troms-skolerute-2027-2028-fra-2027-08-01","refid":"forskrift/2026-05-13-1638","skolear":"2027-2028","malform":"nb","vertskommune":false},
+    {"id":"troms-skolerute-2028-2029-fra-2028-08-01","refid":"forskrift/2026-05-13-1639","skolear":"2028-2029","malform":"nb","vertskommune":false}
+   ],
+   "hendelser": [
+    {"type":"forste-skoledag","fra":"2026-08-17","tekst":"Første skoledag – mandag 17. august.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"hostferie","fra":"2026-09-30","til":"2026-10-02","tekst":"Høstferie – fri fra og med onsdag 30. september til og med fredag 2. oktober.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"planlegging","fra":"2026-11-16","til":"2026-11-17","tekst":"Mandag 16. og tirsdag 17. november – Felles planleggingsdager VGS. Fri for elevene.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"annet","fra":"2026-12-18","tekst":"Siste skoledag før jul – fredag 18. desember.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"forste-etter-jul","fra":"2027-01-04","tekst":"Første skoledag – mandag 4. januar.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"vinterferie","fra":"2027-02-22","til":"2027-02-26","tekst":"Vinterferie – fri fra og med mandag 22. til og med fredag 26. februar.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"paskeferie","fra":"2027-03-22","til":"2027-03-29","tekst":"Påskeferie – fri fra og med mandag 22. mars til og med mandag 29. mars.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"forste-etter-paske","fra":"2027-03-30","tekst":"Oppstart etter påske – tirsdag 30. mars.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"elevfri","fra":"2027-04-30","tekst":"Fredag 30. april – fridag skole.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"helligdag","fra":"2027-05-06","tekst":"Torsdag 6. mai – Kristi himmelfartsdag.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"elevfri","fra":"2027-05-07","tekst":"Fredag 7. mai – Fri for elevene.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"helligdag","fra":"2027-05-17","tekst":"Mandag 17. mai – Grunnlovsdag / Andre pinsedag.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"siste-skoledag","fra":"2027-06-18","tekst":"Siste skoledag – fredag 18. juni.","dokument":"troms-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"forste-skoledag","fra":"2027-08-18","tekst":"Første skoledag – onsdag 18. august","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"hostferie","fra":"2027-10-06","til":"2027-10-08","tekst":"Høstferie – fri fra og med onsdag 6. oktober til og med fredag 8. oktober","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"planlegging","fra":"2027-11-15","til":"2027-11-16","tekst":"Mandag 15. og tirsdag 16. november – Felles planleggingsdager VGS. Fridager for elevene.","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"annet","fra":"2027-12-17","tekst":"Siste skoledag før jul – fredag 17. desember","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"forste-etter-jul","fra":"2028-01-03","tekst":"Første skoledag – mandag 3. januar","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"vinterferie","fra":"2028-03-06","til":"2028-03-10","tekst":"Vinterferie – fri fra og med mandag 6. mars til og med fredag 10. mars","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"paskeferie","fra":"2028-04-10","til":"2028-04-17","tekst":"Påskeferie – fri fra og med mandag 10. april – til og med mandag 17. april","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"forste-etter-paske","fra":"2028-04-18","tekst":"Oppstart etter påske – tirsdag 18. april","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-01","tekst":"Mandag 1. mai – Offentlig høytidsdag","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-17","tekst":"Onsdag 17. mai – Grunnlovsdag","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-25","tekst":"Torsdag 25. mai – Kristi himmelfartsdag","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"elevfri","fra":"2028-05-26","tekst":"Fredag 26. mai – Fridag for elevene","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-06-05","tekst":"Mandag 5. juni – andre pinsedag","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"siste-skoledag","fra":"2028-06-21","tekst":"Siste skoledag – onsdag 21. juni","dokument":"troms-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"forste-skoledag","fra":"2028-08-21","tekst":"Første skoledag – mandag 21. august","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"hostferie","fra":"2028-10-04","til":"2028-10-06","tekst":"Høstferie – fri fra og med onsdag 4. oktober til og med fredag 6. oktober","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"planlegging","fra":"2028-11-20","til":"2028-11-21","tekst":"Mandag 20. og tirsdag 21. november – felles planleggingsdager vgs. Fridag for elevene.","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"annet","fra":"2028-12-21","tekst":"Siste skoledag før jul – torsdag 21. desember","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"forste-etter-jul","fra":"2029-01-03","tekst":"Første skoledag – onsdag 3. januar","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"vinterferie","fra":"2029-02-19","til":"2029-02-23","tekst":"Vinterferie – fri fra og med mandag 19. februar – til og med fredag 23. februar","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"paskeferie","fra":"2029-03-26","til":"2029-04-02","tekst":"Påskeferie – fri fra og med mandag 26. mars – til og med mandag 2. april","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"forste-etter-paske","fra":"2029-04-03","tekst":"Oppstart etter påske – tirsdag 3. april","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"helligdag","fra":"2029-05-01","tekst":"Tirsdag 1. mai – offentlig høytidsdag","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"helligdag","fra":"2029-05-10","tekst":"Torsdag 10. mai – Kristi himmelfartsdag","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"elevfri","fra":"2029-05-11","tekst":"Fredag 11. mai – fridag for elevene","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"helligdag","fra":"2029-05-17","tekst":"Torsdag 17. mai – grunnlovsdag","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"elevfri","fra":"2029-05-18","tekst":"Fredag 18. mai – fridag for elevene","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"helligdag","fra":"2029-05-21","tekst":"Mandag 21. mai – 2. pinsedag","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"},
+    {"type":"siste-skoledag","fra":"2029-06-22","tekst":"Siste skoledag – fredag 22. juni","dokument":"troms-skolerute-2028-2029-fra-2028-08-01","skolear":"2028-2029"}
+   ]
+  },
+  "56": {
+   "dokumenter": [
+    {"id":"finnmark-skolerute-2026-2027","refid":"forskrift/2025-12-02-2397","skolear":"2026-2027","malform":"nb","vertskommune":false},
+    {"id":"finnmark-skolerute-2027-2028-fra-2027-08-01","refid":"forskrift/2025-12-02-2398","skolear":"2027-2028","malform":"nb","vertskommune":false}
+   ],
+   "hendelser": [
+    {"type":"forste-skoledag","fra":"2026-08-17","tekst":"Første skoledag mandag 17. august","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"hostferie","fra":"2026-09-28","til":"2026-10-02","tekst":"Høstferie – fri fra og med mandag 28. september – til og med fredag 2. oktober","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"planlegging","fra":"2026-11-16","til":"2026-11-17","tekst":"Mandag 16. november og tirsdag 17. november – Felles planleggingsdager VGS. Fri for elevene.","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"annet","fra":"2026-12-18","tekst":"Fredag 18. desember – Siste skoledag før jul","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"forste-etter-jul","fra":"2027-01-05","tekst":"Første skoledag tirsdag 5. januar","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"vinterferie","fra":"2027-02-24","til":"2027-02-26","tekst":"Vinterferie onsdag 24. februar–fredag 26.","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"paskeferie","fra":"2027-03-22","til":"2027-03-29","tekst":"Påskeferie mandag 22. mars–mandag 29. mars","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"forste-etter-paske","fra":"2027-03-30","tekst":"Første skoledag etter påske er tirsdag 30. mars","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"elevfri","fra":"2027-04-30","tekst":"Fredag 30. april – Fri for elevene","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"helligdag","fra":"2027-05-06","tekst":"Torsdag 6. mai – Kristi himmelfartsdag","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"helligdag","fra":"2027-05-17","tekst":"Mandag 17. mai – Grunnlovsdag / Andre pinsedag","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"siste-skoledag","fra":"2027-06-18","tekst":"Fredag 18. juni – Siste skoledag","dokument":"finnmark-skolerute-2026-2027","skolear":"2026-2027"},
+    {"type":"forste-skoledag","fra":"2027-08-16","tekst":"Mandag 16 august – første skoledag","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"hostferie","fra":"2027-10-04","til":"2027-10-08","tekst":"Høstferie – fri fra og med mandag 4. til og med fredag 8. oktober","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"planlegging","fra":"2027-11-15","til":"2027-11-16","tekst":"Mandag 15. og tirsdag 16. november. Felles planleggingsdager. Fri for elevene.","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"annet","fra":"2027-12-17","tekst":"Fredag 17. desember – siste skoledag før jul.","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"forste-etter-jul","fra":"2028-01-03","tekst":"Første skoledag mandag 3. januar","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"vinterferie","fra":"2028-03-08","til":"2028-03-10","tekst":"Vinterferie – fri fra og med onsdag 8. til og med fredag 10. mars.","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"paskeferie","fra":"2028-04-10","til":"2028-04-17","tekst":"Påskeferie mandag 10. april – mandag 17. april","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"forste-etter-paske","fra":"2028-04-18","tekst":"Første skoledag etter påske er tirsdag 18. april","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-01","tekst":"Mandag 1. mai – Offentlig høytidsdag","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-17","tekst":"Onsdag 17. mai – Grunnlovsdag","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-05-25","tekst":"Torsdag 25. mai – Kristi himmelfartsdag","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"helligdag","fra":"2028-06-05","tekst":"Mandag 5. juni – Andre pinsedag","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"},
+    {"type":"siste-skoledag","fra":"2028-06-16","tekst":"Siste skoledag fredag 16. juni","dokument":"finnmark-skolerute-2027-2028-fra-2027-08-01","skolear":"2027-2028"}
+   ]
+  }
+ },
+ "ulest": [
+  {"dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027","tekst":"Første skuledag måndag 4. januar Elevfri dag: Fredag 29. januar","grunn":"Hendingen ser ut til å ha flere hendelser, men cellen har ikke linjeskift."},
+  {"dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027","tekst":"Påskeferie: Veke 9 måndag 1.–fredag 5. mars Siste skuledag før påske fredag 19. mars Første skuledag etter påske tysdag 30. mars","grunn":"Datoene og hendingene i cellene kan ikke pares sikkert."},
+  {"dokument":"vestland-skolerute-2026-2027","skolear":"2026-2027","tekst":"Elevfri dag Elevfri dag: Fredag 7. mai Fredag 28. mai","grunn":"Hendingen ser ut til å ha flere hendelser, men cellen har ikke linjeskift."}
+ ]
+}

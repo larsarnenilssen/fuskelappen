@@ -10,6 +10,7 @@
 //   foran. data-level sier hvor dypt punktet står.
 // - Endringer står som fotnoter (<table class="fotnote">), under kapitteloverskriften eller i paragrafen.
 // - Tabeller (f.eks. skoleruta) er <div class="… tabell"> med <table>, overskriftsraden i <thead> (avgjørelse 061).
+//   Linjeskift (<br>) i cellene beholdes som «\n».
 // - Tekst før første paragraf (<p class="morTag_am …">) blir en merknad øverst i dokumentet.
 // - Ikrafttredelsen står i <td id="metaField_ikraft">, for en skolerute som en periode («01.08.2026 – 31.07.2027»).
 // - Ankere, «Del paragraf» og heimelen øverst hoppes over.
@@ -50,11 +51,14 @@ function punkt(tabell: HTMLElement): { niva: number; punkt: Punkt } {
   };
 }
 
-/** En tabell i teksten: overskriftsraden (th i thead) for seg, og hver celle som tekst. */
+/**
+ * En tabell i teksten: overskriftsraden (th i thead) for seg, og hver celle som tekst. Linjeskift (<br>) i cellene
+ * beholdes som «\n», fordi linjene i to celler kan høre sammen (skoleruta i Vestland: dato og hending).
+ */
 function tabell(div: HTMLElement): Ledd {
   const t = div.querySelector('table');
   if (!t) throw new Ukjent(`${beskriv(div)} uten <table>`);
-  const rad = (tr: HTMLElement) => tr.querySelectorAll('th, td').map((c) => rydd(segmenter(c, hoppOver)));
+  const rad = (tr: HTMLElement) => tr.querySelectorAll('th, td').map((c) => rydd(segmenter(c, hoppOver, { linjeskift: true }), { linjeskift: true }));
   const hode = t.querySelector('thead tr');
   const rader = t.querySelectorAll('tr').filter((tr) => tr !== hode);
   return { tekst: [], tabell: { hode: hode ? rad(hode) : null, rader: rader.map(rad) } };
