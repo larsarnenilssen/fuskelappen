@@ -19,10 +19,10 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - run: npm run hent:lovdata -- --alle || echo "hent:lovdata feilet" > hent-feilet.txt
+      - run: LOVDATA_SIDER=ut/sider npm run hent:lovdata -- --alle || echo "hent:lovdata feilet" > hent-feilet.txt
       - if: always()
         run: |
-          mkdir -p ut
+          mkdir -p ut ut/sider
           cp -r data/lovdata ut/ || true
           cp .generert/lovdata-endringer.json ut/ || true
           cp hent-feilet.txt ut/ 2>/dev/null || true
