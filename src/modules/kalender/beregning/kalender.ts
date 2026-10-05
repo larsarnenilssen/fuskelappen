@@ -6,6 +6,7 @@
 //   måneden, og en frist over en periode (juli–august) en post i hver måned. Frister som gjelder hele året, står for seg.
 // - Poster uten fast dag vises bare når kalenderen er filtrert på tema (eier 04.10.2026).
 import type { Flerspraak, Fristgruppe, Kalendertema, KildeRef } from '../../../core/innhold/skjema.ts';
+import type { Sokeoppforingstype } from '../../../core/sok/sok.ts';
 
 export interface Kalenderoppforing {
   /** Unik blant oppføringene. */
@@ -17,8 +18,10 @@ export interface Kalenderoppforing {
   naar?: Flerspraak;
   tema: readonly Kalendertema[];
   grupper: readonly Fristgruppe[];
-  /** Adresser i appen, f.eks. `/vurdering/klage-pa-karakter`. */
+  /** Adresser i appen, f.eks. `/vurdering/klage-pa-karakter`. Tittelen hentes fra søkeoppføringene. */
   lenker: readonly string[];
+  /** Lenker i appen med tittel og type, når de ikke skal slås opp (f.eks. en paragraf i Regelverk). */
+  ferdigeLenker?: readonly { rute: string; tittel: Flerspraak; type: Sokeoppforingstype }[];
   paragrafer: readonly string[];
   kilder: readonly KildeRef[];
   /** Fylket når oppføringen bare gjelder ett fylke. */

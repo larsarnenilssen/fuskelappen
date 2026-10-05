@@ -21,7 +21,8 @@ export function fraFrist(f: Tidslinjefrist): Kalenderoppforing {
     id: g.niva === 'nasjonal' ? f.id : `${f.id}@${g.fylke}`,
     tittel: f.tittel,
     tekst: f.tekst,
-    ...(f.naar ? { naar: f.naar } : {}),
+    // Med dato fra dataene (eksamensdatoene) gjelder ikke tidspunktet med ord («Udir fastsetter datoen»).
+    ...(f.naar && !f.dato ? { naar: f.naar } : {}),
     tema: temaFor(f),
     grupper: f.grupper,
     lenker: f.lenker,

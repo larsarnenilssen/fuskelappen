@@ -313,9 +313,7 @@ function Rad({ post: p, idag, malform }: { post: Kalenderpost; idag: string; mal
   const { t } = useTekst();
   const celle = p.fra ? datocelle(p.fra, p.til, p.maned, malform) : null;
   const tid = p.fra
-    ? p.kl
-      ? `kl. ${p.kl}`
-      : ''
+    ? [p.kl ? `kl. ${p.kl}` : '', p.oppforing.naar?.[malform] ?? ''].filter(Boolean).join(', ')
     : p.periode
       ? periodeTekst(p.periode.fra, p.periode.til, malform)
       : t('kalender.iLopetAv', { maned: manedsnavn(Number(p.maned.slice(5, 7)), malform) });
@@ -339,10 +337,12 @@ function Rad({ post: p, idag, malform }: { post: Kalenderpost; idag: string; mal
 /** Kortet: tittelen, temaet, fylket og hvem det gjelder. Teksten, lenkene, regelverket og kildene står inni, lukket. */
 function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing; tid: string; dato?: string | null }) {
   const { t, malform } = useTekst();
-  const [lenker, settLenker] = useState<Kalenderlenke[] | null>(null);
+  const [funnet, settFunnet] = useState<Kalenderlenke[] | null>(null);
+  const ferdige = o.ferdigeLenker ?? [];
+  const lenker = o.lenker.length > 0 ? (funnet === null ? null : [...ferdige, ...funnet]) : ferdige;
   const sted = o.fylke ? (fylkesnavn(o.fylke) ?? o.fylke) : null;
   const apnet = (e: Event) => {
-    if ((e.currentTarget as HTMLDetailsElement).open && lenker === null && o.lenker.length > 0) void finnLenker(o.lenker).then(settLenker);
+    if ((e.currentTarget as HTMLDetailsElement).open && funnet === null && o.lenker.length > 0) void finnLenker(o.lenker).then(settFunnet);
   };
   return (
     <details class={`kal-kort${sted ? ' kal-kort-lokal' : ''}`} onToggle={apnet}>
@@ -374,7 +374,7 @@ function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing
       </summary>
       <div class="kal-innhold">
         {o.tekst && <div class="brodtekst" dangerouslySetInnerHTML={{ __html: o.tekst[malform] }} />}
-        {o.lenker.length > 0 && (
+        {(o.lenker.length > 0 || ferdige.length > 0) && (
           <>
             <p class="liten-overskrift">{t('kalender.lesMer')}</p>
             {lenker === null ? (

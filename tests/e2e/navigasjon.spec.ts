@@ -153,6 +153,22 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
   });
 
+  test('siden står synlig bak søket, og et trykk utenfor lukker det der brukeren var', async ({ page }) => {
+    await page.goto('./#/fylker/46');
+    await page.evaluate(() => window.scrollTo(0, 300));
+    const y = await page.evaluate(() => window.scrollY);
+    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).dispatchEvent('click');
+    await expect(page.getByRole('searchbox')).toBeFocused();
+    await expect(page.locator('main h1')).toBeVisible();
+    // Siden bak kan ikke nås med tastatur mens søket er åpent.
+    await expect(page.locator('main')).toHaveAttribute('inert', '');
+    const vindu = page.viewportSize();
+    await page.mouse.click((vindu?.width ?? 400) / 2, (vindu?.height ?? 800) - 10);
+    await expect(page.getByRole('searchbox')).toHaveCount(0);
+    await expect(page.locator('main')).not.toHaveAttribute('inert', '');
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
+  });
+
   test('tilbake fra et treff viser søket igjen, og tilbake en gang til viser siden', async ({ page }) => {
     await page.goto('./#/om');
     await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
