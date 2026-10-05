@@ -7514,3 +7514,39 @@ a.knapp {
   margin: 0;
   padding-left: var(--rom-4);
 }
+
+/* Gruppen «Neste datoer» på forsiden (forslag D, avgjørelse 066): datoen står der ikonet står i de andre boksene. */
+.kal-neste .kal-neste-dato {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  width: 3.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--farge-tekst);
+}
+
+.kal-neste .kal-neste-dato small {
+  font-weight: 400;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.kal-neste-alle .kal-neste-dato {
+  color: var(--farge-lenke);
+}
+
+.kal-neste > li.dempet {
+  padding: var(--rom-3) var(--rom-4);
+}
+
+.tilpass-neste {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
+  margin: var(--rom-3) 0;
+}

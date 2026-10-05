@@ -15,10 +15,17 @@ import { Favorittliste, useFavorittbare } from '../Favorittliste.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
-import { Stedmerknad } from '../Stedmerknad.tsx';
-import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe } from '../tilstand.ts';
+import { fylkesnavn, Stedmerknad } from '../Stedmerknad.tsx';
+import { iDag } from '../../data/skolear.ts';
+import { kortManed } from '../../core/tidslinje.ts';
+import { kalenderRute } from '../../modules/kalender/adresse.ts';
+import type { Kalenderpost } from '../../modules/kalender/beregning/kalender.ts';
+import { datoKort } from '../../modules/kalender/visning.ts';
+import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
+/** Gruppen med de tre neste datoene fra kalenderen (forslag D, eier 05.10.2026, avgjørelse 066). */
+const NESTE = 'neste';
 
 /** Hvor lenge åpning og lukking tar. Samme som --varighet-lang i tokens.css. */
 const ANIMASJON_MS = 220;
@@ -35,6 +42,7 @@ function Gruppe({
   kategori,
   lukket,
   verktoy,
+  onVeksle,
   children,
 }: {
   id: string;
@@ -43,6 +51,8 @@ function Gruppe({
   kategori?: string;
   lukket: boolean;
   verktoy?: ComponentChildren;
+  /** Uten: gruppen åpnes og lukkes med vekslGruppe. */
+  onVeksle?: () => void;
   children: ComponentChildren;
 }) {
   const innhold = `forside-gruppe-${id}`;
@@ -76,7 +86,7 @@ function Gruppe({
   return (
     <section class="kategori forsidegruppe" data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
       <h2 id={`${innhold}-tittel`} class={verktoy && !lukket ? 'med-verktoy' : undefined}>
-        <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={() => vekslGruppe(id)}>
+        <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={onVeksle ?? (() => vekslGruppe(id))}>
           <span class="gruppeknapp-tekst">
             <span>{tittel}</span>
             {lukket && <span class="gruppe-sammendrag">{sammendrag}</span>}
@@ -155,6 +165,7 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
 /** Rekkefølgen på gruppene, med dra og slipp og piler. */
 function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) => string }) {
   const { t } = useTekst();
+  const { forside } = useTilstand();
   return (
     <section class="tilpasning" aria-labelledby="tilpass-tittel">
       <h2 id="tilpass-tittel">{t('forside.tilpass.tittel')}</h2>
@@ -164,6 +175,10 @@ function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) =
         elementer={grupper.map((id) => ({ id, navn: navn(id), innhold: <span class="sorterbar-navn">{navn(id)}</span> }))}
         onFlytt={(fra, til) => settGrupperekkefolge(flytt(grupper, fra, til))}
       />
+      <label class="avkrysning tilpass-neste">
+        <input type="checkbox" checked={!(forside.skjult ?? []).includes(NESTE)} onChange={() => vekslSkjultGruppe(NESTE)} />
+        {t('forside.tilpass.visNeste')}
+      </label>
       <button type="button" class="knapp knapp-sekundaer" onClick={nullstillForside}>
         {t('forside.tilpass.nullstill')}
       </button>
@@ -192,10 +207,11 @@ export default function Forside() {
     };
   }, []);
   const kategorier = kategorierMedModuler();
-  const grupper = ordneGrupper([FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
+  const grupper = ordneGrupper([NESTE, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
   const kategoriForModul = new Map(kategorier.flatMap((k) => k.moduler.map((m) => [m.id, k.id] as const)));
   const navn = (id: string) => {
     const k = kategorier.find((x) => x.id === id);
+    if (id === NESTE) return t('kalender.neste');
     return k ? t(k.navn) : t('forside.favoritter');
   };
   const bare = forside.bareFavoritter;
@@ -207,6 +223,7 @@ export default function Forside() {
 
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
+    if (id === NESTE) return bare || (forside.skjult ?? []).includes(NESTE) ? null : <NesteDatoer key={id} />;
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
@@ -292,5 +309,78 @@ export default function Forside() {
         </>
       )}
     </div>
+  );
+}
+
+/**
+ * Gruppen «Neste datoer»: de tre neste datoene fra kalenderen. Lukket fra start på mobil, der overskriften viser den
+ * neste datoen, og åpen på stor skjerm (forslag D, avgjørelse 066). Datoene lastes etter at forsiden er tegnet.
+ */
+function NesteDatoer() {
+  const { t, malform } = useTekst();
+  const { innstillinger, forside } = useTilstand();
+  const [poster, settPoster] = useState<Kalenderpost[] | null>(null);
+  const [stor, settStor] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia('(min-width: 64rem)').matches);
+  const fylke = innstillinger.fylke;
+  const skole = innstillinger.skole?.id ?? null;
+  useEffect(() => {
+    let aktiv = true;
+    void import('../../modules/kalender/neste.ts')
+      .then((m) => m.hentNeste({ fylke, skole }, iDag()))
+      .then((p) => aktiv && settPoster(p))
+      .catch(() => aktiv && settPoster([]));
+    return () => {
+      aktiv = false;
+    };
+  }, [fylke, skole]);
+  useEffect(() => {
+    if (!window.matchMedia) return;
+    const mq = window.matchMedia('(min-width: 64rem)');
+    const lytt = () => settStor(mq.matches);
+    mq.addEventListener('change', lytt);
+    return () => mq.removeEventListener('change', lytt);
+  }, []);
+  const lukket = forside.lukket.includes(NESTE) || (!stor && !(forside.apnet ?? []).includes(NESTE));
+  const forste = poster?.[0];
+  const sammendrag = forste?.fra ? t('kalender.nesteSammendrag', { dato: datoKort(forste.fra, forste.til, malform), tittel: forste.oppforing.tittel[malform] }) : poster ? t('kalender.ingenNeste') : t('app.lasterInn');
+  return (
+    <Gruppe id={NESTE} tittel={t('kalender.neste')} sammendrag={sammendrag} lukket={lukket} onVeksle={() => vekslGruppe(NESTE, lukket)}>
+      <ul class="liste kal-neste">
+        {poster === null && <li class="dempet">{t('app.lasterInn')}</li>}
+        {poster?.length === 0 && <li class="dempet">{t('kalender.ingenNeste')}</li>}
+        {poster?.map((p) => {
+          const fra = p.fra as string;
+          const til = p.til && p.til !== fra ? p.til : undefined;
+          const sted = p.oppforing.fylke ? fylkesnavn(p.oppforing.fylke) : null;
+          return (
+            <li key={p.nokkel}>
+              <a class="listelenke" href={`#${kalenderRute}`}>
+                <span class="kal-neste-dato" aria-hidden="true">
+                  {til && fra.slice(0, 7) === til.slice(0, 7) ? `${Number(fra.slice(8, 10))}.–${Number(til.slice(8, 10))}.` : `${Number(fra.slice(8, 10))}.`}
+                  <small>{kortManed(Number(fra.slice(5, 7)), malform)}</small>
+                </span>
+                <span class="listelenke-tekst">
+                  <span class="skjult-visuelt">{datoKort(fra, til, malform)}: </span>
+                  <span class="listelenke-tittel">{p.oppforing.tittel[malform]}</span>
+                  <span class="listelenke-under">{[...p.oppforing.tema.map((tema) => t(`kalender.temaer.${tema}`)), sted].filter(Boolean).join(' · ')}</span>
+                </span>
+                <Ikon navn="hoyre" class="ikon-liten" />
+              </a>
+            </li>
+          );
+        })}
+        <li>
+          <a class="listelenke kal-neste-alle" href={`#${kalenderRute}`}>
+            <span class="kal-neste-dato" aria-hidden="true">
+              <Ikon navn="kalender" />
+            </span>
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">{t('kalender.heleKalenderen')}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
+    </Gruppe>
   );
 }

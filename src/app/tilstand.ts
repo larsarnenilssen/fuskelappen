@@ -144,11 +144,25 @@ export function settGrupperekkefolge(rekkefolge: string[]): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge } }));
 }
 
-/** Åpner eller lukker en gruppe på forsiden. */
-export function vekslGruppe(id: string): void {
+/**
+ * Åpner eller lukker en gruppe på forsiden. `erLukket` er om gruppen er lukket nå. En gruppe som er lukket fra start på
+ * mobil («Neste datoer»), huskes som åpnet i `apnet` (avgjørelse 066).
+ */
+export function vekslGruppe(id: string, erLukket?: boolean): void {
   tilstand.oppdater((d) => {
-    const lukket = d.forside.lukket.includes(id) ? d.forside.lukket.filter((g) => g !== id) : [...d.forside.lukket, id];
-    return { ...d, forside: { ...d.forside, lukket } };
+    const f = d.forside;
+    const lukkes = erLukket === undefined ? !f.lukket.includes(id) : !erLukket;
+    const lukket = lukkes ? [...f.lukket.filter((g) => g !== id), id] : f.lukket.filter((g) => g !== id);
+    const apnet = (f.apnet ?? []).filter((g) => g !== id);
+    return { ...d, forside: { ...f, lukket, ...(erLukket === undefined ? {} : { apnet: lukkes ? apnet : [...apnet, id] }) } };
+  });
+}
+
+/** Slår en gruppe på forsiden av eller på (avgjørelse 066). */
+export function vekslSkjultGruppe(id: string): void {
+  tilstand.oppdater((d) => {
+    const skjult = d.forside.skjult ?? [];
+    return { ...d, forside: { ...d.forside, skjult: skjult.includes(id) ? skjult.filter((g) => g !== id) : [...skjult, id] } };
   });
 }
 
@@ -159,5 +173,5 @@ export function settBareFavoritter(bareFavoritter: boolean): void {
 
 /** Standard rekkefølge, og alle gruppene åpne. */
 export function nullstillForside(): void {
-  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge: [], lukket: [] } }));
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge: [], lukket: [], apnet: [], skjult: [] } }));
 }

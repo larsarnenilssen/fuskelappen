@@ -57,6 +57,7 @@ export const nn: Tekster = {
       tittel: 'Tilpass framsida',
       hjelp: 'Dra i handtaket for å flytte ei gruppe, eller bruk pilene. Trykk på overskrifta til ei gruppe på framsida for å lukke eller opne ho. Favorittane blir sorterte med «Endre rekkjefølgje» der dei står.',
       grupper: 'Gruppene',
+      visNeste: 'Vis «Neste datoar» på framsida',
       nullstill: 'Standard rekkjefølgje, alle grupper opne',
     },
   },

@@ -57,6 +57,7 @@ export const nb = {
       tittel: 'Tilpass forsiden',
       hjelp: 'Dra i håndtaket for å flytte en gruppe, eller bruk pilene. Trykk på overskriften til en gruppe på forsiden for å lukke eller åpne den. Favorittene sorteres med «Endre rekkefølge» der de står.',
       grupper: 'Gruppene',
+      visNeste: 'Vis «Neste datoer» på forsiden',
       nullstill: 'Standard rekkefølge, alle grupper åpne',
     },
   },
