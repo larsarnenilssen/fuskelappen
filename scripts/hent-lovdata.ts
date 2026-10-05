@@ -258,7 +258,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const kildeForUrl = new Map(register.kilder.map((k) => [k.url.replace(/\/$/, ''), k.id]));
   const lokaleDokumenter = (lokale?.forskrifter ?? []).map((f) => {
     const url = `https://lovdata.no/dokument/LF/${f.refid}`;
-    const gyldighet: Lovdokument['gyldighet'] = f.type === 'skoleregler-skole' ? { niva: 'skole', fylke: f.fylke, skoler: f.skoler } : { niva: 'fylke', fylke: f.fylke };
+    const gyldighet: Lovdokument['gyldighet'] = f.type === 'skoleregler-skole' || f.type === 'fagfordeling' ? { niva: 'skole', fylke: f.fylke, skoler: f.skoler } : { niva: 'fylke', fylke: f.fylke };
     return { id: f.id, kilde: kildeForUrl.get(url) ?? 'lovdata-lokale', korttittel: f.korttittel, malform: f.malform, gyldighet, url, lokaltype: f.type };
   });
 
