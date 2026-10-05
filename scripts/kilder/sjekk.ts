@@ -241,6 +241,31 @@ function sjekkSkoleruteOgAvd1(avd1feil: string | null, avd1linjer: readonly stri
   return meldinger.length > 0 ? `${meldinger.join(' ')} Se rapporten.` : null;
 }
 
+/**
+ * Inntaksdatoene fra fylkenes sider (npm run hent:inntak, fase 6, pakke 5), hentet hver uke. Endrede datoer tas inn
+ * automatisk. Finner ikke et mønster datoen lenger (siden kan være endret), kan en side ikke hentes, eller er to sider
+ * i samme fylke uenige, blir det en kontrollsak. Regelen om at to fylker må ha samme dato, gjelder ikke her.
+ */
+function sjekkInntak(): Sjekkresultat {
+  const sti = join(generert, 'inntak-endringer.json');
+  if (!existsSync(sti)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av inntaksdatoene kjørte ikke. Se loggen for steget «Hent Grep, fag- og timefordeling, overordnet del og lovtekst».' };
+  const e = JSON.parse(readFileSync(sti, 'utf8')) as { forste: boolean; endringer: string[]; uenige: string[]; mangler: string[] };
+  const fil = join(rot, 'data/inntak/datoer.json');
+  const fingeravtrykk = existsSync(fil) ? lagFingeravtrykk(readFileSync(fil, 'utf8').replace(/"hentet": "[^"]*"/, '')) : null;
+  rapport.push(
+    '### Inntaksdatoer',
+    e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`,
+    ...e.endringer.map((l) => `- ${l}`),
+    ...(e.uenige.length > 0 ? ['', 'Sidene i samme fylke er uenige (datoen fra den første siden er brukt):', ...e.uenige.map((l) => `- ${l}`)] : []),
+    ...(e.mangler.length > 0 ? ['', 'Fant ikke datoen (siden kan være endret):', ...e.mangler.map((l) => `- ${l}`)] : []),
+    '',
+  );
+  if (e.uenige.length > 0 || e.mangler.length > 0) {
+    return { status: 'endret', fingeravtrykk, melding: `Inntaksdatoene: ${e.uenige.length} uenige og ${e.mangler.length} som ikke ble funnet. Se rapporten.` };
+  }
+  return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endrede inntaksdatoer.` : null };
+}
+
 /** Resultatet av npm run hent:lovdata for hvert dokument (.generert/lovdata-endringer.json). */
 interface Lovdataresultat {
   id: string;
@@ -314,6 +339,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkHentet('NOR', 'nor-endringer.json', [{ navn: 'Opplæringskontorene', fil: 'data/udir/opplaeringskontor.json', hent: del(null) }]);
       case 'eksamen':
         return sjekkEksamen();
+      case 'inntak':
+        return sjekkInntak();
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };

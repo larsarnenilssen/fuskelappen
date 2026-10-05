@@ -8,6 +8,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Kalenderen** under «Oppslag»: fristene og datoene fra hele appen på én side, de neste tolv månedene eller et skoleår. Filter på tema (inntak, vurdering, eksamen, skolerute, regelverk) og hvem det gjelder (elever, privatister, lærlinger, voksne, fortrinnsrett). Passerte datoer er dempet, og en strek viser i dag. Trykk på en dato for å lese mer og gå videre til veivisere, begreper og sider. På stor skjerm står tre eller fire deler av året side om side.
 - **«Neste datoer» på forsiden:** de tre neste datoene fra kalenderen. På mobil står neste dato under overskriften til du åpner gruppen. Gruppen kan flyttes og slås av under «Tilpass».
+- **Eksamensdatoer fra seks fylker til:** Østfold, Buskerud, Vestfold, Agder, Møre og Romsdal og Troms. Med et av dem valgt viser fristene når datoene for muntlig eksamen for privatister kommer, og søknadsfristen for tilrettelegging, der fylket har dem. Datoene teller også med når fylkene sammenlignes.
 
 ### Endret
 

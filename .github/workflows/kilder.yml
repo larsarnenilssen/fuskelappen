@@ -86,8 +86,8 @@ jobs:
         id: grep
         continue-on-error: true
         # Fag- og timefordelingen (Udir-1), VIGO Kodeverksbase, løpene fra utdanning.no og lov- og forskriftstekst fra
-        # Lovdata, fagene på NDLA, opplæringskontorene i NOR og eksamensdatoene (hvert halvår) hentes selv om Grep feiler,
-        # og omvendt (avgjørelse 024, 026, 039, 052, 053 og 059).
+        # Lovdata, fagene på NDLA, opplæringskontorene i NOR, eksamensdatoene og inntaksdatoene hentes selv om Grep
+        # feiler, og omvendt (avgjørelse 024, 026, 039, 052, 053 og 059).
         run: |
           status=0
           # Grep får høyst 20 minutter. Blir den ikke ferdig, beholdes forrige henting, og de andre kildene hentes likevel.
@@ -102,6 +102,7 @@ jobs:
           npm run hent:ndla || status=1
           npm run hent:nor || status=1
           npm run hent:eksamen || status=1
+          npm run hent:inntak || status=1
           exit $status
       # Lageret lagres også når Grep ble stoppet, så neste kjøring fortsetter der denne slapp. Grenen har bare én
       # commit, som skrives over.
@@ -125,7 +126,7 @@ jobs:
       - name: Test de nye dataene fra Grep, Udir-1, VIGO, utdanning.no, NDLA og NOR
         run: |
           mkdir -p .generert
-          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen)" ]; then
+          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak)" ]; then
             echo uendret > .generert/grep-tester.txt
             npm run kobling:rapport
             npm run tilbud:rapport
@@ -140,7 +141,8 @@ jobs:
             mkdir -p .generert/utdanning-ny && cp -r data/utdanning/. .generert/utdanning-ny/
             mkdir -p .generert/ndla-ny && cp -r data/ndla/. .generert/ndla-ny/
             mkdir -p .generert/eksamen-ny && cp -r data/eksamen/. .generert/eksamen-ny/
-            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen
+            mkdir -p .generert/inntak-ny && cp -r data/inntak/. .generert/inntak-ny/
+            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak
             npm run kobling:rapport
             npm run tilbud:rapport
           fi
@@ -204,7 +206,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.

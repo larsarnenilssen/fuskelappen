@@ -32,7 +32,8 @@ describe('kontrollrunder', () => {
     ];
     const register = { kilder: [{ id: 'k', navn: 'SFS 2213', url: 'https://ks.no/sfs2213' }] } as unknown as Kilderegister;
     const r = lagKontrollrunde('2027-05', praksisTilBekreftelse(praksis, '2027-05-03'), indeks, 'eier/repo', [], register);
-    expect(r.tittel).toBe('Kontrollrunde mai 2027: 3 punkter');
+    // To praksiser, én verdi og påminnelsen om inntaksdatoene.
+    expect(r.tittel).toBe('Kontrollrunde mai 2027: 4 punkter');
     expect(r.tekst).toContain('Når hovedtariffavtalen endres 1. mai');
     expect(r.tekst).toContain('- [ ] **Lønn i brutte måneder:** Stemmer 21,67? <!-- praksis:a -->');
     expect(r.tekst).toContain('Sist bekreftet: 01.05.2025.');
@@ -42,6 +43,16 @@ describe('kontrollrunder', () => {
     expect(r.tekst).toContain('1 begrep, forklaring eller verdi er ikke kontrollert.');
     expect(r.tekst).toContain(rundemerke('2027-05'));
     expect(r.tekst).not.toContain('Lenker til Vilbli');
+  });
+
+  it('minner i mai om inntaksdatoene for sommeren, med sidene de hentes fra', () => {
+    const r = lagKontrollrunde('2027-05', [], [], 'eier/repo');
+    expect(r.tittel).toBe('Kontrollrunde mai 2027: 1 punkt');
+    expect(r.tekst).toContain('## Inntaksdatoene for neste inntak');
+    expect(r.tekst).toContain('andre inntak i 2027');
+    expect(r.tekst).toContain('<!-- inntak:2027 -->');
+    expect(r.tekst).toContain('](https://www.tromsfylke.no/');
+    expect(lagKontrollrunde('2027-08', [], [], 'eier/repo').tekst).not.toContain('Inntaksdatoene');
   });
 
   it('tar med lenkene til Vilbli som skal sjekkes for hånd', () => {

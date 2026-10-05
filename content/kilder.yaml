@@ -862,6 +862,23 @@ kilder:
       npm run hent:eksamen fra sidene i scripts/eksamen/kilder.ts (avgjørelse 059). Udirs dato går foran. Ellers må
       minst to fylker ha samme dato (eier 04.10.2026). eksamensplan.udir.no brukes ikke, fordi robots.txt stenger.
 
+  - id: inntaksdatoer
+    navn: Inntaksdatoer fra fylkeskommunene
+    utgiver: Fylkeskommunene
+    url: https://www.trondelagfylke.no/vare-tjenester/utdanning/elev/inntak-videregaende-opplaring/ofte-stilte-sporsmal-om-inntak2/
+    type: data
+    niva: nasjonal
+    lisens: Fylkenes sider er lest for datoene, som er fakta. Teksten kopieres ikke, bare korte utdrag med datoen.
+    sjekkmetode: inntak
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Datoene for svar, svarfrist og andre inntak per fylke og inntaksår, hentet hver uke av npm run hent:inntak fra
+      sidene i scripts/inntak/kilder.ts (Trøndelag, Telemark, Vestfold, Akershus, Agder, Troms og Finnmark, fase 6,
+      pakke 5). Datoene er fylkets egne og vises bare når fylket er valgt. Regelen om at to fylker må ha samme dato,
+      gjelder ikke (eier 05.10.2026). Finner et mønster ikke datoen, blir det en kontrollsak.
+
   - id: udir-regbok-karakterer
     navn: Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk
     utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe

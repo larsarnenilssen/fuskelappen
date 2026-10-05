@@ -61,6 +61,7 @@
     "hent:utdanning": "tsx scripts/hent-utdanning.ts",
     "hent:ndla": "tsx scripts/hent-ndla.ts",
     "hent:nor": "tsx scripts/hent-nor.ts",
-    "hent:eksamen": "tsx scripts/hent-eksamen.ts"
+    "hent:eksamen": "tsx scripts/hent-eksamen.ts",
+    "hent:inntak": "tsx scripts/hent-inntak.ts"
   }
 }
