@@ -24,16 +24,14 @@ jobs:
           hent ltii-endring.html 'https://lovdata.no/dokument/LTII/forskrift/2026-06-10-1971'
           hent ltii-ikraft.html 'https://lovdata.no/dokument/LTII/forskrift/2026-09-03-1972'
           hent ltii-ny.html 'https://lovdata.no/dokument/LTII/forskrift/2026-10-01-1986'
-          # Er hver lokale forskrift i registeret også kunngjort i Lovtidend avdeling II?
-          git fetch --depth=1 origin utforsk-data
-          git show FETCH_HEAD:lovdata/lokale.json > lokale.json
-          python3 -c "import json;[print(v['refid']) for v in json.load(open('lokale.json'))['vurdert']]" > refider.txt
-          while read r; do
-            k=$(curl -sSL -A "$ua" --max-time 60 -o /tmp/s.html -w "%{http_code} %{url_effective}" "https://lovdata.no/dokument/LTII/$r")
-            kunngjort=$(grep -o 'metaField_kunngjort">[^<]*' /tmp/s.html | head -1 | sed 's/.*">//')
-            echo "$r $k | $kunngjort" >> ut/ltii-sjekk.txt
-            sleep 1
-          done < refider.txt
+          for ts in '02.10.2026 kl. 15.00' '30.09.2026 kl. 14.25' '29.09.2026 kl. 15.45' '01.10.2026 kl. 14.30'; do
+            q=$(python3 -c "import urllib.parse,sys;print(urllib.parse.quote(sys.argv[1]))" "$ts")
+            n=$(echo "$ts" | tr -cd '0-9')
+            hent "lt-$n.html" "https://lovdata.no/register/lovtidend?avdeling=LTII&kunngjortDato=$q"
+            hent "lt-$n-20.html" "https://lovdata.no/register/lovtidend?avdeling=LTII&kunngjortDato=$q&offset=20"
+          done
+          hent lt-avd2-20.html 'https://lovdata.no/register/lovtidend?avdeling=LTII&offset=20'
+          hent lt-avd2.html 'https://lovdata.no/register/lovtidend?avdeling=LTII'
       - if: always()
         run: |
           git config user.name "github-actions[bot]"
