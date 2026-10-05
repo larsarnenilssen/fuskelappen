@@ -210,3 +210,11 @@ praksis:
       for fravær over det.
     berorer: [fr-teller]
     bekreftet: null
+
+  - id: skolerute-ved-skolen
+    tittel: Skoleruta ved den enkelte skolen
+    sporsmal: Kan skoleruta ved en videregående skole avvike fra fylkets skolerute, og hva er i så fall grunnlaget?
+    appen: Begrepet «skolerute» sier at skoleruta ved den enkelte skolen kan avvike fra fylkets skolerute.
+    grunnlag: Eier 05.10.2026 (avgjørelse 061). Opplæringslova § 14-1 sier bare at fylkeskommunen gir forskrift om skolerute.
+    berorer: [skolerute]
+    bekreftet: null
