@@ -290,3 +290,199 @@
     - "Gjelder yrkesfaglig opphenting alle vg2 yrkesfag eleven kan tas inn til fra vg1 studiespesialisering etter tilbudsstrukturen?"
   stikkord: [opphenting, opphentingsfag, YFO2002, studiespesialisering, vg2, kryssløp]
   relatert: [krysslop, felles-programfag, programomrade]
+
+# Veiene til fag- og svennebrev, praksisbrev og kompetansebevis, og formidling til læreplass (fase 6). Bygger på
+# opplæringslova kapittel 5, 7 og § 23-2 og opplæringsforskrifta kapittel 6, 7 og 9, og på oversikten over veiene i
+# docs/arbeidsordrer/fase-6-forslag.md. Egne ord, ikke kopiert.
+- id: praksisbrev
+  type: begrep
+  tittel: { nb: Praksisbrev, nn: Praksisbrev }
+  lenkeord: { nb: [praksisbrev, praksisbrevkandidat], nn: [praksisbrev, praksisbrevkandidat] }
+  tekst:
+    nb: >-
+      Praksisbrev er dokumentasjonen på bestått praksisbrevprøve. En praksisbrevkandidat har skrevet en
+      opplæringskontrakt med sikte på praksisbrevprøven, og opplæringen følger en lokal læreplan i faget.
+      Fylkeskommunen kan godkjenne en slik kontrakt som avviker fra det fastsatte opplæringsløpet. Fylkeskommunen
+      lager praksisbrevprøven og sørger for at den blir vurdert, ut fra kompetansemålene i den lokale læreplanen.
+      Lærebedriften melder opp kandidaten. Kandidaten må ha bestått alle relevante fag og eksamener, men kan ta prøven
+      selv om ett fellesfag ikke er bestått, og må da bestå det etterpå for å få praksisbrevet.
+    nn: >-
+      Praksisbrev er dokumentasjonen på bestått praksisbrevprøve. Ein praksisbrevkandidat har skrive ein
+      opplæringskontrakt med sikte på praksisbrevprøva, og opplæringa følgjer ein lokal læreplan i faget.
+      Fylkeskommunen kan godkjenne ein slik kontrakt som vik av frå det fastsette opplæringsløpet. Fylkeskommunen
+      lagar praksisbrevprøva og sørgjer for at ho blir vurdert, ut frå kompetansemåla i den lokale læreplanen.
+      Lærebedrifta melder opp kandidaten. Kandidaten må ha bestått alle relevante fag og eksamenar, men kan ta prøva
+      sjølv om eitt fellesfag ikkje er bestått, og må då bestå det etterpå for å få praksisbrevet.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav e", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-64", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-64" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 første ledd, § 9-56 første ledd og § 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften sier at praksisbrevprøven bygger på en lokal læreplan (§ 9-64 andre ledd), ikke direkte at opplæringen gjør det. Er det riktig å si at opplæringen følger en lokal læreplan?"
+    - "Paragrafene begrepet bygger på, sier ikke hvor lang opplæringen vanligvis er, eller at praksisbrevet kan bygges videre til fag- eller svennebrev. Bør begrepet si det, med en annen kilde?"
+    - "Både «praksisbrev» og «praksisbrevkandidat» lenker til begrepet. Er det greit, eller bør praksisbrevkandidat få eget begrep?"
+  stikkord: [praksisbrevkandidat, praksisbrevprøve, opplæringskontrakt, lokal læreplan]
+  relatert: [kontrakt-om-opplaering, laerling, sluttkompetanse, fag-og-svenneprove, formidling-til-laereplass]
+
+- id: laerekandidat
+  type: begrep
+  tittel: { nb: Lærekandidat, nn: Lærekandidat }
+  tekst:
+    nb: >-
+      En lærekandidat har skrevet en opplæringskontrakt med sikte på en mindre omfattende prøve enn fag- eller
+      svenneprøven. Prøven heter kompetanseprøve, og kandidaten prøves i de målene som er fastsatt for opplæringen
+      hans eller hennes. Fylkeskommunen lager prøven og gir kompetansebevis. En elev kan bli lærekandidat etter
+      grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten med samtykke fra fylkeskommunen. For å bli
+      formidlet som lærekandidat til neste trinn må søkeren ha bestått sitt individuelle opplæringsløp, men også den
+      som har gjennomført Vg1 og Vg2 uten å bestå fagene, kan søke. Lærekandidater har rett til individuell
+      tilrettelegging.
+    nn: >-
+      Ein lærekandidat har skrive ein opplæringskontrakt med sikte på ei mindre omfattande prøve enn fag- eller
+      sveineprøva. Prøva heiter kompetanseprøve, og kandidaten blir prøvd i dei måla som er fastsette for opplæringa
+      hans eller hennar. Fylkeskommunen lagar prøva og gir kompetansebevis. Ein elev kan bli lærekandidat etter
+      grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten med samtykke frå fylkeskommunen. For å bli
+      formidla som lærekandidat til neste trinn må søkjaren ha bestått sitt individuelle opplæringsløp, men også den
+      som har gjennomført Vg1 og Vg2 utan å bestå faga, kan søkje. Lærekandidatar har rett til individuell
+      tilrettelegging.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringslova, punkt: "§ 7-2 andre og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringslova, punkt: "§ 7-4 sjette ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-4" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c og § 7-3 tredje og fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-64 og § 9-51 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-64" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Eier har sagt at en elev «når som helst» kan bli lærekandidat. Det står ikke ordrett i kildene, så begrepet sier «etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten» (ol. § 7-2, ofo. § 6-3 bokstav c og § 7-3). Er det dekkende?"
+    - "§ 9-64 andre ledd viser til opplæringslova § 7-4 sjette ledd for målene, men det leddet handler om individuell tilrettelegging. Er det greit å si bare at målene er fastsatt for kandidaten?"
+    - "Er det riktig at lærekandidaten får kompetansebevis (§ 9-51 tredje ledd), og ikke et eget kompetansebrev?"
+    - "Tidligere læretid eller praksis godskrives for lærekandidater etter en konkret vurdering (§ 6-9 tredje ledd). Bør det stå?"
+  stikkord: [lærekandidater, kompetanseprøve, kompetansebevis, opplæringskontrakt, opplæringsmål]
+  relatert: [kontrakt-om-opplaering, laerling, vitnemal-og-kompetansebevis, individuell-tilrettelegging, formidling-til-laereplass]
+
+- id: praksiskandidat
+  type: begrep
+  tittel: { nb: Praksiskandidat, nn: Praksiskandidat }
+  tekst:
+    nb: >-
+      En praksiskandidat tar fag- eller svenneprøven på grunnlag av allsidig praksis i lærefaget, uten opplæring i
+      skole eller bedrift. Praksisen må være 25 prosent lengre enn det fastsatte opplæringsløpet i faget.
+      Fylkeskommunen avgjør om praksisen kan godkjennes, og kan i særlige tilfeller godkjenne kortere praksis.
+      Praksis kan også godkjennes etter en samlet vurdering når den dekker de viktigste delene av læreplanen for
+      opplæring i bedrift. Kandidaten melder seg selv til fylkeskommunen innen fristen den setter, og betaler
+      prøveavgift. Skal kandidaten ha eksamen etter læreplanverket, gjelder reglene for eksamen. Praksiskandidater
+      trenger ikke fellesfag for å få fag- eller svennebrev.
+    nn: >-
+      Ein praksiskandidat tek fag- eller sveineprøva på grunnlag av allsidig praksis i lærefaget, utan opplæring i
+      skule eller bedrift. Praksisen må vere 25 prosent lengre enn det fastsette opplæringsløpet i faget.
+      Fylkeskommunen avgjer om praksisen kan godkjennast, og kan i særlege tilfelle godkjenne kortare praksis.
+      Praksis kan også godkjennast etter ei samla vurdering når han dekkjer dei viktigaste delane av læreplanen for
+      opplæring i bedrift. Kandidaten melder seg sjølv til fylkeskommunen innan fristen han set, og betaler
+      prøveavgift. Skal kandidaten ha eksamen etter læreplanverket, gjeld reglane for eksamen. Praksiskandidatar
+      treng ikkje fellesfag for å få fag- eller sveinebrev.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 23-2", url: "https://lovdata.no/lov/2023-06-09-30/§23-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-9 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-25 tredje ledd og § 9-56 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "§ 9-25 tredje ledd sier at eksamensreglene gjelder for praksiskandidater som etter læreplanverket skal ha eksamen. Har praksiskandidater vanligvis en skriftlig eksamen før fag- eller svenneprøven, og bør begrepet si det rett ut?"
+    - "Er det riktig å forklare § 6-9 andre ledd (samlet vurdering av praksisen) som en egen vei til godkjenning ved siden av «25 prosent lengre» i loven?"
+    - "Bør begrepet nevne forskjellen fra fagbrev på jobb (der kandidaten har kontrakt og opplæring i en lærebedrift)?"
+  stikkord: [praksiskandidater, allsidig praksis, praksiskandidatordningen, prøveavgift, fagprøve, svenneprøve]
+  relatert: [fagbrev-pa-jobb, fag-og-svenneprove, privatist, realkompetansevurdering]
+
+- id: fagbrev-pa-jobb
+  type: begrep
+  tittel: { nb: Fagbrev på jobb, nn: Fagbrev på jobb }
+  lenkeord: { nb: [fagbrev på jobb], nn: [fagbrev på jobb] }
+  tekst:
+    nb: >-
+      En kandidat for fagbrev på jobb har skrevet en kontrakt om opplæring på grunnlag av allsidig praksis og
+      realkompetanse, med sikte på fag- eller svenneprøve. Før kontrakten skrives, må kandidaten ha minst ett års
+      allsidig praksis i lærefaget i heltidsstilling. Deltid regnes om til full stilling, og 80 prosent kan godkjennes
+      som heltid. Hvor lang praksis kandidaten må ha før prøven, avhenger av lengden på lærefaget, for de fleste fag
+      fire år i heltid. Fylkeskommunen trekker fra året med praksis og eventuell realkompetanse, men kontraktstiden må
+      være minst ett år. Lærebedriften melder opp kandidaten, og kandidaten trenger ikke fellesfag for å få fag- eller
+      svennebrev. Se [opplæringsforskrifta § 9-58](#/lov/opplaeringsforskrifta/9-58).
+    nn: >-
+      Ein kandidat for fagbrev på jobb har skrive ein kontrakt om opplæring på grunnlag av allsidig praksis og
+      realkompetanse, med sikte på fag- eller sveineprøve. Før kontrakten blir skriven, må kandidaten ha minst eitt års
+      allsidig praksis i lærefaget i heiltidsstilling. Deltid blir rekna om til full stilling, og 80 prosent kan
+      godkjennast som heiltid. Kor lang praksis kandidaten må ha før prøva, avheng av lengda på lærefaget, for dei
+      fleste fag fire år i heiltid. Fylkeskommunen trekkjer frå året med praksis og eventuell realkompetanse, men
+      kontraktstida må vere minst eitt år. Lærebedrifta melder opp kandidaten, og kandidaten treng ikkje fellesfag for
+      å få fag- eller sveinebrev. Sjå [opplæringsforskrifta § 9-58](#/lov/opplaeringsforskrifta/9-58).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-58", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-58" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 tredje ledd og § 9-56 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "§ 9-58 tredje ledd sier «lærekontrakten», mens loven kaller det kontrakt om opplæring (§ 7-1). Er det greit å bruke «kontrakt om opplæring»?"
+    - "Opplæringslova § 7-1 tredje ledd nevner ikke kandidater for fagbrev på jobb blant dem reglene for elever gjelder for. Bør begrepet si det?"
+    - "Ordningen er i praksis for voksne i arbeid, men det står ikke i loven eller forskriften. Bør det stå?"
+  stikkord: [fagbrev på jobb, allsidig praksis, realkompetanse, voksne, kontrakt om opplæring, fagprøve]
+  relatert: [praksiskandidat, laerling, kontrakt-om-opplaering, fag-og-svenneprove, realkompetansevurdering]
+
+- id: vg3-i-skole
+  type: begrep
+  tittel: { nb: Vg3 i skole, nn: Vg3 i skule }
+  lenkeord: { nb: [vg3 i skole], nn: [vg3 i skule, vg3 i skole] }
+  tekst:
+    nb: >-
+      Vg3 i skole er opplæring på videregående trinn 3 som elev, ikke som læretid i bedrift. Søkere som oppfyller
+      vilkårene for å bli formidlet til læretid, men ikke får læreplass, har rett til et annet opplæringstilbud på
+      vg3, bygd på programområdet de har fullført på vg2. Tilbudet skal starte så snart som mulig og senest 1.
+      oktober, og fylkeskommunen skal fortsatt prøve å formidle til læreplass dem som ønsker det. Skolen melder opp
+      eleven til fag- eller svenneprøven. Noen lærefag har også vg3 i skole som en fast del av opplæringsløpet.
+    nn: >-
+      Vg3 i skule er opplæring på vidaregåande trinn 3 som elev, ikkje som læretid i bedrift. Søkjarar som oppfyller
+      vilkåra for å bli formidla til læretid, men ikkje får læreplass, har rett til eit anna opplæringstilbod på
+      vg3, bygd på programområdet dei har fullført på vg2. Tilbodet skal starte så snart som mogleg og seinast 1.
+      oktober, og fylkeskommunen skal framleis prøve å formidle til læreplass dei som ønskjer det. Skulen melder opp
+      eleven til fag- eller sveineprøva. Nokre lærefag har også vg3 i skule som ein fast del av opplæringsløpet.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4 og 3.4.3", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Loven og forskriften sier «eit anna opplæringstilbod på vidaregåande trinn 3», ikke at det er i skole. Er det riktig å kalle det vg3 i skole, og at det fører til fag- eller svenneprøve som elev (§ 9-56 første ledd)?"
+    - "«Vg3 i skole» lenker til begrepet også der det står om lærefag som har vg3 i skole i det vanlige løpet. Er det greit at begrepet dekker begge, eller bør det bare gjelde tilbudet til dem uten læreplass?"
+  stikkord: [vg3, alternativ vg3, uten læreplass, læreplass, fagopplæring i skole, fagprøve]
+  relatert: [formidling-til-laereplass, opplaering-i-bedrift, trinn-vg, fag-og-svenneprove]
+
+- id: formidling-til-laereplass
+  type: begrep
+  tittel: { nb: Formidling til læreplass, nn: Formidling til læreplass }
+  lenkeord: { nb: [formidling til læreplass, formidling], nn: [formidling til læreplass, formidling] }
+  tekst:
+    nb: >-
+      Formidling til læreplass er fylkeskommunens arbeid med å skaffe søkere en læreplass i bedrift. Den som vil bli
+      lærling, lærekandidat eller praksisbrevkandidat, kan søke om formidling på fylkeskommunens skjema og må oppgi
+      hvilken av dem. For å bli formidlet som lærling må søkeren oppfylle vilkårene for inntak til neste trinn. De
+      som blir formidlet, tas inn til videregående opplæring på trinnet. Fylkeskommunen gir en lokal forskrift om
+      formidling, som også sier hvordan søknader etter fristen behandles. Får søkeren ikke læreplass, har søkeren
+      rett til et annet tilbud på vg3.
+    nn: >-
+      Formidling til læreplass er arbeidet fylkeskommunen gjer for å skaffe søkjarar ein læreplass i bedrift. Den som
+      vil bli lærling, lærekandidat eller praksisbrevkandidat, kan søkje om formidling på skjemaet til
+      fylkeskommunen og må oppgi kva for ein av dei. For å bli formidla som lærling må søkjaren oppfylle vilkåra for
+      inntak til neste trinn. Dei som blir formidla, blir tekne inn til vidaregåande opplæring på trinnet.
+      Fylkeskommunen gir ei lokal forskrift om formidling, som også seier korleis søknader etter fristen blir
+      behandla. Får ikkje søkjaren læreplass, har søkjaren rett til eit anna tilbod på vg3.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 7-1 til § 7-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+    - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften definerer ikke formidling. Er «fylkeskommunens arbeid med å skaffe søkere en læreplass i bedrift» en god forklaring?"
+    - "Både «formidling til læreplass» og «formidling» alene lenker til begrepet. Brukes «formidling» om noe annet i appen, så bare den lange formen bør lenke?"
+    - "Bør begrepet si at fylkeskommunen skal fortsette å prøve å formidle søkere som har begynt på et annet tilbud (§ 6-2 andre ledd)?"
+  stikkord: [formidling, læreplass, søke læreplass, lærling, lærekandidat, praksisbrevkandidat]
+  relatert: [laerling, laerekandidat, praksisbrev, laerebedrift, vg3-i-skole]

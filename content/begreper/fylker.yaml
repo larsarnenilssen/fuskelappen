@@ -1,0 +1,90 @@
+# Begreper om det fylkeskommunen fastsetter lokalt: skolerute, skoleskyss og endret fag- og timefordeling, og om når
+# lover og forskrifter gjelder fra og kunngjøres. Bygger på opplæringslova, opplæringsforskrifta og Udirs side om
+# lokale forskrifter. At skoleruta ved den enkelte skolen kan avvike fra fylkets, er sagt av eier 05.10.2026.
+# Egne ord. Alle er ukontrollerte (kontrollert: null) til eier har sett på dem.
+- id: skolerute
+  type: begrep
+  tittel: { nb: Skolerute, nn: Skulerute }
+  lenkeord: { nb: ["skolerute", "skoleruta"], nn: ["skulerute", "skuleruta", "skolerute", "skoleruta"] }
+  tekst:
+    nb: >-
+      Skoleruta viser hvilke dager som er skoledager og feriedager for elevene. Fylkeskommunen gir den som en lokal forskrift for de videregående skolene ([opplæringslova § 14-1](#/lov/opplaeringslova/14-1)). Opplæringen skal strekke seg over minst 38 skoleuker innenfor en ramme på 45 sammenhengende uker i skoleåret, og skole- og feriedagene skal planlegges slik at eksamen og nasjonale prøver kan gjennomføres. Skoleruta ved den enkelte skolen kan avvike fra fylkets skolerute. Forskriftene om skolerute står under [Regelverk](#/lov) for dem som har valgt fylket, og på [fylkessiden](#/fylker).
+    nn: >-
+      Skuleruta viser kva dagar som er skuledagar og feriedagar for elevane. Fylkeskommunen gir henne som ei lokal forskrift for dei vidaregåande skulane ([opplæringslova § 14-1](#/lov/opplaeringslova/14-1)). Opplæringa skal strekkje seg over minst 38 skuleveker innanfor ei ramme på 45 samanhengande veker i skuleåret, og skule- og feriedagane skal planleggjast slik at eksamen og nasjonale prøver kan gjennomførast. Skuleruta ved den enkelte skulen kan avvike frå skuleruta til fylket. Forskriftene om skulerute står under [Regelverk](#/lov) for dei som har valt fylket, og på [fylkessida](#/fylker).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 14-1 Skolerute og lengda på skoleåret", url: "https://lovdata.no/lov/2023-06-09-30/§14-1" }
+    - { id: udir-lokale-forskrifter, punkt: "På hvilke områder må kommunene og fylkeskommunene fastsette forskrift? (Skolerute)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+    - { id: lovdata-lokale, punkt: "Lokale forskrifter om skolerute for de videregående skolene", url: "https://lovdata.no/register/lokaleForskrifter" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Eier sa 05.10.2026 at skoleruta ved den enkelte skolen kan avvike. Hva er grunnlaget (for eksempel at fylkets forskrift åpner for det, eller egne planleggingsdager), og bør teksten si noe om det?"
+    - "Opplæringslova § 14-1 nevner både kommunen og fylkeskommunen. Er det riktig at det alltid er fylkeskommunen som gir skoleruta for de videregående skolene?"
+    - "Appen har forskrifter om skolerute bare for noen fylker. Er det fordi de andre fylkene ikke har kunngjort skoleruta som forskrift, og bør teksten si noe om det?"
+  stikkord: [skolerute, skulerute, skoledager, feriedager, skoleår, 38 uker, ferie]
+  relatert: [lokal-forskrift, planleggingsdager, ikrafttredelse]
+
+- id: skoleskyss
+  type: begrep
+  tittel: { nb: Skoleskyss, nn: Skuleskyss }
+  lenkeord: { nb: ["skoleskyss", "skyss"], nn: ["skuleskyss", "skoleskyss", "skyss"] }
+  tekst:
+    nb: >-
+      Elever i videregående har rett til gratis skyss eller full skyssgodtgjørelse når de bor mer enn seks kilometer fra skolen. Elever som trenger båt, har rett til gratis båttransport, og elever som trenger skyss på grunn av nedsatt funksjonsevne, skade eller sykdom, har rett til gratis skyss til og fra skolen. Elever med flere hjem har rett til skyss fra hvert hjem som oppfyller vilkårene. Se [opplæringslova § 9-1](#/lov/opplaeringslova/9-1). Fylkeskommunen har ansvaret ([§ 28-7](#/lov/opplaeringslova/28-7)). I områder med godt utbygd kollektivtilbud kan fylkeskommunen i stedet gi en lokal forskrift om en rabattordning med subsidierte reisekort for ungdom. Prisen skal være under halvparten av et vanlig månedskort for voksne, og kortet skal gjelde reiser til skole, arbeid og fritid hele skoleåret. Forskriften kan gjelde for opptil ett år om gangen ([opplæringsforskrifta § 8-2](#/lov/opplaeringsforskrifta/8-2)). Forskriftene står under [Regelverk](#/lov) for dem som har valgt fylket.
+    nn: >-
+      Elevar i vidaregåande har rett til gratis skyss eller full skyssgodtgjersle når dei bur meir enn seks kilometer frå skulen. Elevar som treng båt, har rett til gratis båttransport, og elevar som treng skyss på grunn av nedsett funksjonsevne, skade eller sjukdom, har rett til gratis skyss til og frå skulen. Elevar med fleire heimar har rett til skyss frå kvar heim som oppfyller vilkåra. Sjå [opplæringslova § 9-1](#/lov/opplaeringslova/9-1). Fylkeskommunen har ansvaret ([§ 28-7](#/lov/opplaeringslova/28-7)). I område med godt utbygd kollektivtilbod kan fylkeskommunen i staden gi ei lokal forskrift om ei rabattordning med subsidierte reisekort for ungdom. Prisen skal vere under halvparten av eit vanleg månadskort for vaksne, og kortet skal gjelde reiser til skule, arbeid og fritid heile skuleåret. Forskrifta kan gjelde for opptil eitt år om gongen ([opplæringsforskrifta § 8-2](#/lov/opplaeringsforskrifta/8-2)). Forskriftene står under [Regelverk](#/lov) for dei som har valt fylket.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 9-1 Rett til skyss til og frå skolen for elevar i den vidaregåande opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§9-1" }
+    - { id: opplaeringslova, punkt: "§ 28-7 Ansvar for skyss, reisefølgje, tilsyn og losji (første ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§28-7" }
+    - { id: opplaeringsforskrifta, punkt: "§ 8-1 Gratis skyss eller full skyssgodtgjersle i vidaregåande opplæring", url: "https://lovdata.no/forskrift/2024-06-03-900/§8-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 8-2 Rabattordning som alternativ til gratis skyss, eller full skyssgodtgjersle i vidaregåande opplæring", url: "https://lovdata.no/forskrift/2024-06-03-900/§8-2" }
+    - { id: udir-lokale-forskrifter, punkt: "På hvilke områder kan kommunene og fylkeskommunene fastsette forskrift? (Rabattordning med subsidierte reisekort for ungdom)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Opplæringsforskrifta § 8-2 sier at rabattordningen kan tilbys «framfor» skyss etter § 9-1 første og andre ledd (avstand og båt). Bør teksten si tydelig at den ikke erstatter retten til skyss ved nedsatt funksjonsevne, skade eller sykdom?"
+    - "Bør begrepet nevne retten til reisefølge og tilsyn (§ 9-2) og at fylkeskommunen skal gi full skyssgodtgjørelse når den ikke tilbyr gratis skyss (opplæringsforskrifta § 8-1)?"
+    - "Begrepet lenkes også fra ordet «skyss» i andre tekster. Er det greit, eller brukes «skyss» også om annet enn skoleskyss for elever (f.eks. for voksne deltakere etter kapittel 21)?"
+  stikkord: [skoleskyss, skuleskyss, skyss, skyssgodtgjørelse, skyssgodtgjersle, rabattordning, reisekort, ungdomskort, seks kilometer]
+  relatert: [lokal-forskrift, hjemmel]
+
+- id: fag-og-timefordeling-fleksibilitet
+  type: begrep
+  tittel: { nb: Fleksibilitet i fag- og timefordelingen, nn: Fleksibilitet i fag- og timefordelinga }
+  lenkeord: { nb: ["endret fag- og timefordeling", "omfordeling av fag", "fag på avvikende trinn"], nn: ["endra fag- og timefordeling", "omfordeling av fag", "fag på avvikande trinn"] }
+  tekst:
+    nb: >-
+      Fylkeskommunen kan gi en lokal forskrift om at fag skal ligge på andre trinn enn i den nasjonale fag- og timefordelingen, for eksempel i et opplæringsløp ved én skole ([opplæringsforskrifta § 5-1](#/lov/opplaeringsforskrifta/5-1) andre ledd). Den nye fordelingen skal vise hvilket trinn hvert fag ligger på, til sammen følge ordinær opplæringstid og sikre progresjon i fagene. Fylkeskommunen må også tilby den ordinære fag- og timefordelingen. Slike forskrifter heter for eksempel «omfordeling av fag», «omdisponering i fag- og timefordeling» eller «fag på avvikende trinn». Fylkeskommunen kan også gi forskrift om opplæring utover minstetimetallet ([opplæringslova § 1-6](#/lov/opplaeringslova/1-6) sjette ledd), og kan tilby en enkelt elev å ta opplæringen på lengre eller kortere tid, med fagene fordelt annerledes mellom trinnene (§ 5-1 tredje ledd). Regelen om å flytte opptil ti prosent av timene i et fag gjelder bare grunnskolen. Forskriftene står under [Regelverk](#/lov) for dem som har valgt fylket eller skolen.
+    nn: >-
+      Fylkeskommunen kan gi ei lokal forskrift om at fag skal liggje på andre trinn enn i den nasjonale fag- og timefordelinga, til dømes i eit opplæringsløp ved éin skule ([opplæringsforskrifta § 5-1](#/lov/opplaeringsforskrifta/5-1) andre ledd). Den nye fordelinga skal vise kva trinn kvart fag ligg på, samla sett følgje ordinær opplæringstid og sikre progresjon i faga. Fylkeskommunen må også tilby den ordinære fag- og timefordelinga. Slike forskrifter heiter til dømes «omfordeling av fag», «omdisponering i fag- og timefordeling» eller «fag på avvikande trinn». Fylkeskommunen kan også gi forskrift om opplæring utover minstetimetalet ([opplæringslova § 1-6](#/lov/opplaeringslova/1-6) sjette ledd), og kan tilby ein enkelt elev å ta opplæringa på lengre eller kortare tid, med faga fordelte annleis mellom trinna (§ 5-1 tredje ledd). Regelen om å flytte opptil ti prosent av timane i eit fag gjeld berre grunnskulen. Forskriftene står under [Regelverk](#/lov) for dei som har valt fylket eller skulen.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-1 Læreplanverket og tilbodsstrukturen (andre og tredje ledd)", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-1" }
+    - { id: opplaeringslova, punkt: "§ 1-6 Fag- og timefordeling og tilbodsstruktur (andre og sjette ledd)", url: "https://lovdata.no/lov/2023-06-09-30/§1-6" }
+    - { id: udir-lokale-forskrifter, punkt: "På hvilke områder kan kommunene og fylkeskommunene fastsette forskrift? (Endret fag- og timefordeling, opplæring utover det samlede minstetimetallet)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+    - { id: lovdata-lokale, punkt: "Lokale forskrifter om omfordeling av fag og fag på avvikende trinn", url: "https://lovdata.no/register/lokaleForskrifter" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at hjemmelen for de lokale forskriftene om omfordeling og omdisponering av fag i videregående er opplæringsforskrifta § 5-1 andre ledd (Udirs oversikt), også når forskriften heter «omdisponering i fag- og timefordeling»?"
+    - "Er det riktig at et tilbud til en enkelt elev om lengre eller kortere tid (§ 5-1 tredje ledd) ikke krever forskrift, men avgjøres for eleven?"
+    - "Er det nyttig å si at regelen om å flytte opptil ti prosent av timene (opplæringslova § 1-6 andre ledd) bare gjelder grunnskolen, eller er det unødvendig for brukerne?"
+  stikkord: [omfordeling, omdisponering, fag på avvikende trinn, endret fag- og timefordeling, minstetimetall, timefordeling, lokal forskrift]
+  relatert: [fag-og-timefordeling, lokal-forskrift, trinn-vg]
+
+- id: ikrafttredelse
+  type: begrep
+  tittel: { nb: Ikrafttredelse og kunngjøring, nn: Ikrafttreding og kunngjering }
+  lenkeord: { nb: ["ikrafttredelse", "kunngjøring"], nn: ["ikrafttreding", "kunngjering"] }
+  tekst:
+    nb: >-
+      En lov eller forskrift gjelder fra en bestemt dato, ikrafttredelsen. Opplæringslova gjelder fra den tiden Kongen bestemmer, og Kongen kan sette ulike deler av loven i kraft til ulik tid ([§ 30-1](#/lov/opplaeringslova/30-1)). Opplæringslova og opplæringsforskrifta trådte i kraft 1. august 2024. Forskrifter kunngjøres i Norsk Lovtidend hos Lovdata: sentrale forskrifter i avdeling I og lokale forskrifter i avdeling II. Udir skriver at alle lokale forskrifter etter opplæringslova skal kunngjøres, også skoleregler som en skole har fått myndighet til å gi, og at en forskrift som endres etter den nye loven, må fastsettes og kunngjøres på nytt i sin helhet. Regelverk i appen viser datoen hver lov og forskrift tok til å gjelde, og sluttdatoen for forskrifter som gjelder for en periode, som skolerute.
+    nn: >-
+      Ei lov eller forskrift gjeld frå ein bestemt dato, ikrafttredinga. Opplæringslova gjeld frå den tida Kongen fastset, og Kongen kan setje ulike delar av lova i verk til ulik tid ([§ 30-1](#/lov/opplaeringslova/30-1)). Opplæringslova og opplæringsforskrifta tok til å gjelde 1. august 2024. Forskrifter blir kunngjorde i Norsk Lovtidend hos Lovdata: sentrale forskrifter i avdeling I og lokale forskrifter i avdeling II. Udir skriv at alle lokale forskrifter etter opplæringslova skal kunngjerast, også skulereglar som ein skule har fått mynde til å gi, og at ei forskrift som blir endra etter den nye lova, må fastsetjast og kunngjerast på nytt i si heilskap. Regelverk i appen viser datoen kvar lov og forskrift tok til å gjelde, og sluttdatoen for forskrifter som gjeld for ein periode, som skulerute.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 30-1 Iverksetjing og oppheving", url: "https://lovdata.no/lov/2023-06-09-30/§30-1" }
+    - { id: udir-lokale-forskrifter, punkt: "Nytt kunngjøringskrav", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+    - { id: lovdata-lokale, punkt: "Registeret over lokale forskrifter (dato for ikrafttredelse)", url: "https://lovdata.no/register/lokaleForskrifter" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir skriver at lokale forskrifter etter opplæringslova kunngjøres i avdeling II. At sentrale forskrifter kunngjøres i avdeling I, står ikke i kildene som er brukt. Stemmer det, og bør det stå?"
+    - "Datoen 1. august 2024 for opplæringslova og opplæringsforskrifta er hentet fra Lovdatas datasett, ikke fra lovteksten. Er det greit, eller bør det vises til kongelig resolusjon om ikrafttredelse?"
+    - "Kunngjøringskravet for forskrifter står i forvaltningsloven § 38, som ikke er med i Regelverk (bare kapittel II–VI). Bør kapittel VII tas med, så begrepet kan lenke til paragrafen?"
+  stikkord: [ikrafttredelse, ikrafttreding, i kraft, iverksetting, kunngjøring, kunngjering, Norsk Lovtidend, Lovtidend, avdeling II, oppheving]
+  relatert: [lov, forskrift, lokal-forskrift, skolerute]
