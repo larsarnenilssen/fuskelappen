@@ -9,6 +9,7 @@ import { Ikon } from '../../components/Ikon.tsx';
 import { Sorterbar } from '../../components/Sorterbar.tsx';
 import { visTekst } from '../../core/i18n/tekst.ts';
 import { flytt, flyttInnenfor, modulForFavoritt, ordneGrupper } from '../../core/forside/ordning.ts';
+import { oversiktsid } from '../../modules/favoritter.ts';
 import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
 import { Favorittliste, useFavorittbare } from '../Favorittliste.tsx';
@@ -26,6 +27,8 @@ import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupp
 const FAVORITTER = 'favoritter';
 /** Gruppen med de tre neste datoene fra kalenderen (forslag D, eier 05.10.2026, avgjørelse 066). */
 const NESTE = 'neste';
+/** Kalenderen som favoritt. Med «Bare favoritter» vises den som «Neste datoer», ikke som et kort (eier 05.10.2026). */
+const KALENDER_FAVORITT = oversiktsid('kalender');
 
 /** Sidekolonnen på skrivebord kan slås av. Valget lagres i `skjult`, som gruppene (eier 05.10.2026). */
 const SIDEKOLONNE = 'sidekolonne';
@@ -68,7 +71,9 @@ function Sidekolonne({ children }: { children: ComponentChildren }) {
       const fast = parseFloat(getComputedStyle(el).top) || 0;
       const luft = parseFloat(getComputedStyle(document.documentElement).fontSize) * 0.75;
       const topp = Math.max(el.getBoundingClientRect().top, fast);
-      el.style.setProperty('--kolonne-hoyde', `${Math.max(200, window.innerHeight - topp - luft)}px`);
+      // Nederst på siden slutter kolonnen der gruppene slutter, så den blir stående øverst i stedet for å skyves opp.
+      const bunn = Math.min(window.innerHeight - luft, el.parentElement?.getBoundingClientRect().bottom ?? Infinity);
+      el.style.setProperty('--kolonne-hoyde', `${Math.max(160, bunn - topp)}px`);
     };
     const planlegg = () => {
       if (!ramme) ramme = requestAnimationFrame(mal);
@@ -76,10 +81,14 @@ function Sidekolonne({ children }: { children: ComponentChildren }) {
     mal();
     window.addEventListener('scroll', planlegg, { passive: true });
     window.addEventListener('resize', planlegg);
+    // Gruppene ved siden av blir høyere og lavere når de åpnes og lukkes.
+    const observator = typeof ResizeObserver === 'undefined' || !el.parentElement ? null : new ResizeObserver(planlegg);
+    if (el.parentElement) observator?.observe(el.parentElement);
     return () => {
       cancelAnimationFrame(ramme);
       window.removeEventListener('scroll', planlegg);
       window.removeEventListener('resize', planlegg);
+      observator?.disconnect();
     };
   }, []);
   useEffect(() => {
@@ -356,12 +365,16 @@ export default function Forside() {
   const endreknapp = (id: string, antall: number) =>
     antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
 
+  const kalenderFavoritt = favoritter.includes(KALENDER_FAVORITT);
+  const visNesteSomFavoritt = kalenderFavoritt && !(forside.skjult ?? []).includes(NESTE);
   const sidegrupper = grupper.filter((id) => id === NESTE || id === FAVORITTER);
   const hovedgrupper = grupper.filter((id) => id !== NESTE && id !== FAVORITTER);
 
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
-    if (id === NESTE) return bare || (forside.skjult ?? []).includes(NESTE) ? null : <NesteDatoer key={id} />;
+    // Med «Bare favoritter» står «Neste datoer» bare når kalenderen er favoritt, og da i stedet for kalenderens eget kort
+    // (eier 05.10.2026).
+    if (id === NESTE) return (bare && !kalenderFavoritt) || (forside.skjult ?? []).includes(NESTE) ? null : <NesteDatoer key={id} />;
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
@@ -373,7 +386,7 @@ export default function Forside() {
     const k = kategorier.find((x) => x.id === id);
     if (!k) return null;
     if (bare) {
-      const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id);
+      const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id && !(f === KALENDER_FAVORITT && visNesteSomFavoritt));
       if (ider.length === 0) return null;
       return (
         <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} sammendrag={antallFavoritter(ider.length)} lukket={lukket} verktoy={endreknapp(id, ider.length)}>

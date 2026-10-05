@@ -3817,11 +3817,13 @@ p.fagkort-tittel {
     max-width: 92rem;
   }
 
+  /* Minst like høy som skjermen under toppfeltet, så sidekolonnen kan stå fast helt til bunnen av siden. */
   .forside-oppsett {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
     column-gap: var(--rom-6);
+    min-height: calc(100dvh - var(--topplinje-hoyde) - env(safe-area-inset-top) - 2 * var(--rom-3));
   }
 
   .forside-oppsett > .forsidegrupper {
