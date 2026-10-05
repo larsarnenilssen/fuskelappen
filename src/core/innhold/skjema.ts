@@ -319,6 +319,41 @@ export const fylkerSkjema = z
   })
   .strict();
 
+/** Temaene fylkene har egne sider om (avgjørelse 061). «forside» er fylkets side for videregående. */
+export const fylketemaer = ['forside', 'inntak', 'klage-inntak', 'sprak', 'tilrettelegging', 'eksamen', 'klage-standpunkt', 'privatist', 'fagprove'] as const;
+export const fylketemaSkjema = z.enum(fylketemaer);
+export type Fylketema = z.infer<typeof fylketemaSkjema>;
+
+const fylkeslenke = z
+  .object({
+    url: z.url(),
+    /** Datoen siden svarte med riktig innhold, eller null når adressen bare er sett i søk (nettstedet stenger skyen). */
+    bekreftet: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable(),
+  })
+  .strict();
+
+/** Lenkene til fylkeskommunenes egne sider per tema (content/fylker/lenker.yaml, eier 05.10.2026). */
+export const fylkeslenkerSkjema = z
+  .object({
+    temaer: z.array(fylketemaSkjema).min(1),
+    kontrollert: z.string().nullable(),
+    kontrollsporsmal: z.array(z.string().min(1)).max(5).optional(),
+    fylker: z
+      .array(
+        z
+          .object({
+            fylke: z.string().regex(/^\d{2}$/),
+            navn: z.string().min(1),
+            lenker: z.object(Object.fromEntries(fylketemaer.map((t) => [t, fylkeslenke.optional()])) as Record<Fylketema, z.ZodOptional<typeof fylkeslenke>>).strict(),
+          })
+          .strict(),
+      )
+      .min(1),
+  })
+  .strict()
+  .refine((f) => new Set(f.fylker.map((x) => x.fylke)).size === f.fylker.length, { message: 'Hvert fylke står én gang' });
+export type Fylkeslenker = z.infer<typeof fylkeslenkerSkjema>;
+
 export const synonymSkjema = z
   .object({
     grupper: z.array(

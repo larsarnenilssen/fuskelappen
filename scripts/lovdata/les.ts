@@ -251,6 +251,8 @@ export interface Leseoppsett {
   refid?: string | undefined;
   gyldighet: Lovdokument['gyldighet'];
   hentet: string;
+  /** Typen, for lokale forskrifter som hentes for alle fylker (avgjørelse 061). */
+  lokaltype?: Lovdokument['lokaltype'];
 }
 
 /** Leser et dokument fra Lovdata. Kaster en feil når noe ikke kan leses, eller når et kapittel i utvalget mangler. */
@@ -309,6 +311,7 @@ export function lesLovdokument(html: string, oppsett: Leseoppsett): Lovdokument 
     malform: oppsett.malform ?? (lang === 'nn' ? 'nn' : 'nb'),
     refid,
     sistEndret: hodefelt(rot, 'lastChangeInForce'),
+    iKraft: hodefelt(rot, 'dateInForce'),
     hentet: oppsett.hentet,
     gyldighet: oppsett.gyldighet,
     utvalg: oppsett.kapitler ? [...oppsett.kapitler] : null,

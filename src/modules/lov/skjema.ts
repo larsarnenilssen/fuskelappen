@@ -12,7 +12,10 @@ const kapittel = z.string().regex(/^(\d+[A-Z]?(-\d+)?|[IVXLC]+)$/);
 const gyldighet: z.ZodType<Gyldighet> = z.union([
   z.object({ niva: z.literal('nasjonal') }).strict(),
   z.object({ niva: z.literal('fylke'), fylke: z.string().regex(/^\d{2}$/) }).strict(),
+  z.object({ niva: z.literal('skole'), fylke: z.string().regex(/^\d{2}$/), skoler: z.array(z.string().min(1)).min(1) }).strict(),
 ]);
+const lokaltype = z.enum(['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute']);
+const dato = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
 /**
  * Utvalget: dokumentene appen viser, i rekkefølgen på oversikten. En ny lov eller forskrift legges til med en ny
@@ -67,6 +70,16 @@ export const lovutvalgSkjema = z
           .strict(),
       )
       .default([]),
+    /**
+     * Lokale forskrifter for alle fylker og skoler (avgjørelse 061): hentes fra registeret hos Lovdata, ikke listet
+     * her. Titlene i appen per type, på forskriftens målform. {sted} er fylket eller skolen, {skolear} skoleåret.
+     */
+    lokale: z
+      .object({
+        titler: z.object(Object.fromEntries(lokaltype.options.map((t) => [t, z.object({ nb: z.string().min(1), nn: z.string().min(1) }).strict()])) as Record<z.infer<typeof lokaltype>, z.ZodObject<{ nb: z.ZodString; nn: z.ZodString }>>).strict(),
+      })
+      .strict()
+      .optional(),
   })
   .strict()
   .refine((u) => new Set([...u.dokumenter, ...u.avtaler].map((d) => d.id)).size === u.dokumenter.length + u.avtaler.length, {
@@ -99,6 +112,7 @@ const ledd: z.ZodType<Ledd> = z.lazy(() =>
       tekst,
       liste: z.array(punkt).min(1).optional(),
       etter: z.array(tekst).min(1).optional(),
+      tabell: z.object({ hode: z.array(tekst).nullable(), rader: z.array(z.array(tekst)) }).strict().optional(),
     })
     .strict(),
 );
@@ -139,6 +153,9 @@ export const lovdokumentSkjema: z.ZodType<Lovdokument> = z
     malform: z.enum(['nb', 'nn']),
     refid: z.string().regex(/^(lov|forskrift)\/\d{4}-\d{2}-\d{2}(-\d+)?$/),
     sistEndret: z.string().nullable(),
+    iKraft: dato.nullable().optional(),
+    iKraftTil: dato.nullable().optional(),
+    lokaltype: lokaltype.optional(),
     hentet: z.string().min(10),
     gyldighet,
     utvalg: z.array(z.string()).nullable(),
@@ -160,6 +177,10 @@ export const lovoversiktSkjema: z.ZodType<Lovoversikt> = z
           refid: z.string().min(1),
           gyldighet,
           utvalg: z.array(z.string()).nullable(),
+          sistEndret: z.string().nullable().optional(),
+          iKraft: dato.nullable().optional(),
+          iKraftTil: dato.nullable().optional(),
+          lokaltype: lokaltype.optional(),
           antallKapitler: z.number().int().min(0),
           antallParagrafer: z.number().int().min(1),
           paragrafer: z.array(z.string().min(1)),

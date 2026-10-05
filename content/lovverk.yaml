@@ -8,11 +8,12 @@
 #   3. Kjør kildesjekken (eller hent:lovdata i Actions). Det trengs ingen kodeendring.
 # Kapitler skrives som i teksten: «11», «IV», eller et spenn med arabiske tall: «5-21».
 #
-# Lokale forskrifter (f.eks. fra fylkeskommunen) er ikke med i Lovdatas gratis datasett. De legges til på samme måte,
-# men kilden får type side, niva fylke, fylkesnummer og adressen til siden hos Lovdata
-# (https://lovdata.no/dokument/LF/forskrift/ÅÅÅÅ-MM-DD-nr). Her får oppføringen gyldighet med fylket og malform.
-# Siden hentes bare hver 13. uke (intervall_uker), av hensyn til Lovdata (eier 02.10.2026). Dokumentet vises bare
-# for dem som har valgt fylket.
+# Lokale forskrifter (skoleregler, skoleregler for voksne og for den enkelte skole, inntak og skolerute) hentes for
+# alle fylker og skoler fra registeret hos Lovdata, og står ikke her (avgjørelse 061, eier 05.10.2026). Titlene i appen
+# står under lokale nederst. En annen lokal forskrift kan fortsatt legges til her: kilden får type side, niva fylke,
+# fylkesnummer og adressen til siden hos Lovdata (https://lovdata.no/dokument/LF/forskrift/ÅÅÅÅ-MM-DD-nr), og
+# oppføringen får gyldighet med fylket og malform. Lokale forskrifter vises bare for dem som har valgt fylket (eller
+# skolen), og sidene hentes på omgang, hver 13. uke (intervall_uker), av hensyn til Lovdata (eier 02.10.2026).
 dokumenter:
   - id: opplaeringslova
     kilde: opplaeringslova
@@ -48,22 +49,6 @@ dokumenter:
     merknad: >-
       Godkjent av eier 02.10.2026: krav til arbeidsmiljøet (kap. 4), arbeidstid (kap. 10, som SFS 2213 bygger på),
       permisjoner (kap. 12), ansettelse (kap. 14) og opphør av arbeidsforhold (kap. 15).
-
-  - id: vestland-inntak
-    kilde: vestland-forskrift-inntak
-    korttittel: Inntak og formidling i Vestland
-    malform: nn
-    gyldighet: { niva: fylke, fylke: "46" }
-    merknad: >-
-      Lokal forskrift om inntak og formidling til læreplass i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
-
-  - id: vestland-skulereglar
-    kilde: vestland-forskrift-skulereglar
-    korttittel: Skulereglar i Vestland
-    malform: nn
-    gyldighet: { niva: fylke, fylke: "46" }
-    merknad: >-
-      Skulereglane for dei vidaregåande skolane i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
 
 # Avtaler (eier 02.10.2026): bestemmelsene er skrevet med egne ord i content/lov/, fordi rettighetene til
 # avtaleteksten ikke er avklart. Her står hvilke elementer som hører til hvilket kapittel. Kildejobben sjekker
@@ -102,3 +87,13 @@ avtaler:
         elementer: [sfs-arsrammer]
     merknad: >-
       Valgt av eier 02.10.2026. Bestemmelsene for videregående opplæring.
+
+# Lokale forskrifter for alle fylker og skoler (avgjørelse 061): titlene i appen per type, på forskriftens målform.
+# {sted} er fylket eller skolen, {skolear} skoleåret (f.eks. 2026–2027).
+lokale:
+  titler:
+    skoleregler: { nb: "Skoleregler i {sted}", nn: "Skulereglar i {sted}" }
+    skoleregler-voksne: { nb: "Regler for voksne i {sted}", nn: "Reglar for vaksne i {sted}" }
+    skoleregler-skole: { nb: "Skoleregler ved {sted}", nn: "Skulereglar ved {sted}" }
+    inntak: { nb: "Inntak og formidling i {sted}", nn: "Inntak og formidling i {sted}" }
+    skolerute: { nb: "Skolerute {skolear} i {sted}", nn: "Skulerute {skolear} i {sted}" }

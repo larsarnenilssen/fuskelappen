@@ -432,6 +432,23 @@ kilder:
       Kilde for at læreplanverket består av tre deler: overordnet del, fag- og timefordelingen og læreplanene for
       fag (eier 02.10.2026). Sjekken følger med på ingressen på siden. Endres den, står det i kontrollsaken.
 
+  - id: lovdata-lokale
+    navn: Lokale forskrifter hos Lovdata
+    kortnavn: Lokale forskrifter
+    utgiver: Lovdata
+    url: https://lovdata.no/register/lokaleForskrifter
+    type: side
+    niva: nasjonal
+    lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Skoleregler, skoleregler for voksne og for den enkelte skole, inntak og skolerute for alle fylker, fra
+      registeret over lokale forskrifter (avgjørelse 061, eier 05.10.2026). Hentes av npm run hent:lovdata. En
+      forskrift som også har egen kilde her (fordi innhold viser til den), står under den kilden.
+
   - id: vestland-forskrift-inntak
     navn: Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
     kortnavn: Inntaksforskrifta i Vestland

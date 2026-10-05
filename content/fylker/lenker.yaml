@@ -4,6 +4,10 @@
 # adressen bare er sett i søk, fordi nettstedet stenger skymiljøet. Lenkesjekken holder dette oppdatert.
 # Mangler et tema, vises fylkets side for videregående (forside).
 temaer: [forside, inntak, klage-inntak, sprak, tilrettelegging, eksamen, klage-standpunkt, privatist, fagprove]
+kontrollert: null
+kontrollsporsmal:
+  - "Er temaene (inntak, klage på inntak, særskilt språkopplæring, tilrettelegging og PPT, eksamen, klage på standpunkt, privatist og fag- og svenneprøven) de riktige å lenke til hos fylkene?"
+  - "Er det riktig å lenke til søknadssiden for klage på inntak der fylket ikke har egen side om klage (Østfold, Akershus og Buskerud)?"
 fylker:
   - fylke: "03"
     navn: Oslo kommune
