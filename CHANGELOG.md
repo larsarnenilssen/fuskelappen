@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Fylkene** under «Oppslag» på forsiden: én side per fylke med lenker til fylkets egne sider om inntak, klage, eksamen, særskilt språkopplæring, tilrettelegging, privatister og fagprøver, de lokale forskriftene, skolene, opplæringskontorene og kalenderne.
+- **Boksen «Hos fylkeskommunen»** i veiviserne for inntak, tilrettelegging, språkopplæring og klage: lenker til temaet hos fylket ditt. Uten valgt fylke velger du fylke i boksen. Boksen er lukket på mobil og åpen på større skjermer.
+- **Lokale forskrifter for alle fylker og skoler** i Regelverk, hentet fra Lovdata: skoleregler for fylket og for den enkelte skole, regler for voksne, inntak, skolerute, skyss og fag- og timefordeling. Skolens egne regler merkes «Skolen din», og skolekortet lenker til dem.
+- **Dato for ikrafttredelse** og siste endring på alle lover og forskrifter i Regelverk.
+- **Tabeller** i lov- og forskriftsteksten.
+
+### Endret
+
+- **Vestland:** Skulereglane og inntaksforskrifta hentes nå på samme måte som de lokale forskriftene for de andre fylkene.
+
 ## [0.35.0] – 2026-10-04
 
 ### Lagt til

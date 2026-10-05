@@ -537,6 +537,9 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - 0.32.0: forsiden kan tilpasses (grupper som lukkes og sorteres, favoritter som sorteres der de står, «Bare favoritter»), og toppfeltet med søk og innstillinger erstatter bunnmenyen (avgjørelse 056).
 - Pakke 2 er levert i 0.33.0: **Fraværsgrensen** i Vurdering med fasittestene FR1–FR8, VIGO som kontroll av fagene i Grep, boksen «Fravær og eksamen» på fagarket, og søketreff som sier hva treffet er (avgjørelse 057).
 - Pakke 3 (eksamen og klage), og «Fag- og svennebrev» i Opplæringstilbud, kommer etter. Overleveringen til pakke 3 står i `docs/arbeidsordrer/fase-6-pakke-3.md`.
+- Pakke 3 er levert i 0.35.0: **Eksamen**, veiviseren «Klage på karakter», fag- og svenneprøven og kalender for eksamen (avgjørelse 059). Grep hentes nå bare når noe er endret (avgjørelse 060).
+- Pakke 4 (**Fylkene**, eier 05.10.2026) er under arbeid: lenker til fylkenes egne sider per tema, fylkessiden, og lokale forskrifter fra Lovdata for alle fylker og skoler, oppdatert fra Norsk Lovtidend hver uke (avgjørelse 061). Alle lenker i appen sjekkes hver uke (avgjørelse 062). Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-4-fylkene.md`.
+- Pakke 5 (kalenderen) kommer etter, med skoleruta fra fylkets forskrift. Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-5.md`.
 
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
 
