@@ -2,7 +2,7 @@
 // fylket og skolen, og id-ene i appen. Eksempelsidene er hentet fra Lovdata 05.10.2026.
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { klassifiserVurdering, type Titler, velgForskrifter, vurder, type Vurdering } from '../../scripts/lovdata/lokale.ts';
+import { klassifiserVurdering, lokaleSkjema, type Titler, velgForskrifter, vurder, type Vurdering } from '../../scripts/lovdata/lokale.ts';
 import { erKandidat, finnFylke, finnSkoler, klassifiser, lesMetadata, lesRegisterside, normaliserSkolenavn, skolearFor, slug } from '../../scripts/lovdata/register.ts';
 import { lesLovdataside } from '../../scripts/lovdata/side.ts';
 
@@ -210,3 +210,16 @@ describe('kommunenes forskrifter', () => {
     expect(erKommunal('Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo', 'Oslo kommune, Oslo')).toBe(false);
   });
 });
+
+describe('registeret fra forrige gang', () => {
+  it('kan leses også når det er fra før navnet fikk nynorsk og Lovtidend kom med', () => {
+    const gammelt = {
+      fullstendig: '2026-10-05',
+      lest: '2026-10-05',
+      forskrifter: [{ id: 'vestland-skoleregler', refid: 'forskrift/2026-06-16-1587', type: 'skoleregler', fylke: '46', skoler: [], korttittel: 'Skulereglar i Vestland', malform: 'nn', iKraft: '2026-08-01', iKraftTil: null }],
+      vurdert: [],
+    };
+    expect(lokaleSkjema.parse(gammelt)).toMatchObject({ lovtidend: null, opphevinger: {}, endringer: {} });
+  });
+});
+

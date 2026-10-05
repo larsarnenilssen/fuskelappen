@@ -65,7 +65,8 @@ const lokalForskriftSkjema = z
     skoler: z.array(z.string()),
     /** Navnet i appen på bokmål og nynorsk (titlene i content/lovverk.yaml). */
     korttittel: z.string().min(1),
-    korttittelNn: z.string().min(1),
+    // Mangler i registre fra før 05.10.2026. Navnene lages på nytt hver gang registeret oppdateres.
+    korttittelNn: z.string().min(1).optional(),
     malform: z.enum(['nb', 'nn']),
     iKraft: z.string().nullable(),
     iKraftTil: z.string().nullable(),
