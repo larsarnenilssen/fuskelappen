@@ -1,0 +1,137 @@
+# Begreper om ansettelse og lønn fra kildene i Regelverk (fase 3, avgjørelse 039): Hovedtariffavtalen, SFS 2213,
+# arbeidsmiljøloven og forvaltningsloven. Flyttet hit fra regelverk.yaml så begrepsbanken kan filtreres på tema
+# (eier 05.10.2026). Alle er ukontrollerte (kontrollert: null) til eier har sett på dem.
+- id: tariffavtale
+  type: begrep
+  tittel: { nb: Tariffavtale og særavtale, nn: Tariffavtale og særavtale }
+  lenkeord: { nb: ["tariffavtale", "særavtale"], nn: ["tariffavtale", "særavtale"] }
+  tekst:
+    nb: >-
+      En tariffavtale er en avtale mellom en arbeidsgiverorganisasjon og arbeidstakerorganisasjoner om lønn og arbeidsvilkår. For fylkeskommunene er KS arbeidsgiverorganisasjon, og [Hovedtariffavtalen](#/lov/hovedtariffavtalen) gjelder i hele KS-området. En særavtale regulerer et avgrenset tema mer i detalj. [SFS 2213](#/lov/sfs2213) er særavtalen om arbeidstid for undervisningspersonalet. Hovedtariffavtalen gjelder så langt særavtalen ikke sier noe annet.
+    nn: >-
+      Ein tariffavtale er ein avtale mellom ein arbeidsgivarorganisasjon og arbeidstakarorganisasjonar om lønn og arbeidsvilkår. For fylkeskommunane er KS arbeidsgivarorganisasjon, og [Hovudtariffavtalen](#/lov/hovedtariffavtalen) gjeld i heile KS-området. Ein særavtale regulerer eit avgrensa tema meir i detalj. [SFS 2213](#/lov/sfs2213) er særavtalen om arbeidstid for undervisningspersonalet. Hovudtariffavtalen gjeld så langt særavtalen ikkje seier noko anna.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 1", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=8" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig og presist nok å si at Hovedtariffavtalen gjelder «i hele KS-området» for fylkeskommunene?"
+    - "Er det riktig at hovedtariffavtalen gjelder så langt særavtalen ikke sier noe annet (SFS 2213 punkt 1)?"
+  stikkord: [tariffavtale, særavtale, hovedtariffavtale, KS, HTA]
+  relatert: [lokale-forhandlinger, arbeidstid]
+
+- id: garantilonn
+  type: begrep
+  tittel: { nb: Garantilønn, nn: Garantiløn }
+  tekst:
+    nb: >-
+      Garantilønn er den laveste årslønnen en stillingsgruppe kan ha etter Hovedtariffavtalen kapittel 4. Lønnen øker med faste tillegg etter 6, 8, 10 og 16 års lønnsansiennitet. Lønnen fastsettes lokalt ved ansettelse og kan være høyere. For lærere følger stillingsgruppen av stillingskoden, som følger av utdanningen.
+    nn: >-
+      Garantiløn er den lågaste årsløna ei stillingsgruppe kan ha etter Hovudtariffavtalen kapittel 4. Løna aukar med faste tillegg etter 6, 8, 10 og 16 års lønnsansiennitet. Løna blir fastsett lokalt ved tilsetjing og kan vere høgare. For lærarar følgjer stillingsgruppa av stillingskoden, som følgjer av utdanninga.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 4 punkt 4.1", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=49" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at tilleggene gis ved 6, 8, 10 og 16 års ansiennitet i tabellen per 1.5.2026?"
+  stikkord: [garantilønn, minstelønn, lønnstabell, kapittel 4]
+  relatert: [stillingskode, lonnsansiennitet]
+
+- id: stillingskode
+  type: begrep
+  tittel: { nb: Stillingskode, nn: Stillingskode }
+  tekst:
+    nb: >-
+      Stillingskoden er et nummer som viser stillingen og hvilken lønnsgruppe den hører til. For undervisningsstillinger følger koden av den godkjente utdanningen, regnet i normert studietid: 7961 lærer, 7962 adjunkt, 7963 adjunkt med tilleggsutdanning, 7965 lektor og 7966 lektor med tilleggsutdanning. Den som underviser uten godkjent utdanning, har kode 7960. Reglene står i vedlegg 2 til Hovedtariffavtalen.
+    nn: >-
+      Stillingskoden er eit nummer som viser stillinga og kva lønnsgruppe ho høyrer til. For undervisningsstillingar følgjer koden av den godkjende utdanninga, rekna i normert studietid: 7961 lærar, 7962 adjunkt, 7963 adjunkt med tilleggsutdanning, 7965 lektor og 7966 lektor med tilleggsutdanning. Den som underviser utan godkjend utdanning, har kode 7960. Reglane står i vedlegg 2 til Hovudtariffavtalen.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Vedlegg 2", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=64" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er listen over stillingskoder for undervisningsstillinger fullstendig for videregående?"
+  stikkord: [stillingskode, lektor, adjunkt, lærer, "7965", kompetanselønn]
+  relatert: [garantilonn]
+
+- id: lonnsansiennitet
+  type: begrep
+  tittel: { nb: Lønnsansiennitet, nn: Lønnsansiennitet }
+  tekst:
+    nb: >-
+      Lønnsansiennitet er antall år med tjeneste som gir rett til lønnstillegg etter Hovedtariffavtalen. Den fastsettes ved ansettelse og regnes tidligst fra fylte 18 år. All tidligere tjeneste, privat og offentlig, teller med, og omsorg for barn eller syke og eldre teller med inntil tre år. Ansienniteten beholdes ved overgang til ny stilling hos samme arbeidsgiver.
+    nn: >-
+      Lønnsansiennitet er talet på år med teneste som gir rett til lønnstillegg etter Hovudtariffavtalen. Han blir fastsett ved tilsetjing og blir rekna tidlegast frå fylte 18 år. All tidlegare teneste, privat og offentleg, tel med, og omsorg for born eller sjuke og eldre tel med inntil tre år. Ansienniteten blir halden ved overgang til ny stilling hos same arbeidsgivar.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 12 og kap. 4 punkt 4.0", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=32" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at ansienniteten beholdes ved ny stilling hos samme arbeidsgiver «med mindre det er enighet om annet». Bør forbeholdet stå?"
+  stikkord: [ansiennitet, lønnsansiennitet, tjenestetid]
+  relatert: [garantilonn]
+
+- id: konstituering
+  type: begrep
+  tittel: { nb: Konstituering, nn: Konstituering }
+  tekst:
+    nb: >-
+      Konstituering er en midlertidig ansettelse i en annen, ofte høyere, stilling, for eksempel som rektor mens rektor har permisjon. Den konstituerte får lønnen for stillingen fra første dag. Står en stilling ledig i mer enn en måned, skal det som hovedregel konstitueres. Kortere vikariater kalles stedfortredertjeneste. Se [§ 13 Stedfortreder og konstituering](#/lov/hovedtariffavtalen/hta-stedfortreder).
+    nn: >-
+      Konstituering er ei mellombels tilsetjing i ei anna, ofte høgare, stilling, til dømes som rektor medan rektor har permisjon. Den konstituerte får lønna for stillinga frå første dag. Står ei stilling ledig i meir enn ein månad, skal det som hovudregel konstituerast. Kortare vikariat blir kalla stedfortredarteneste. Sjå [§ 13 Stedfortredar og konstituering](#/lov/hovedtariffavtalen/hta-stedfortreder).
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 13 (13.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=34" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skille konstituering fra stedfortredertjeneste på denne måten, eller kan det misforstås?"
+  stikkord: [konstituering, konstituert, fungerende, stedfortreder]
+  relatert: [midlertidig-ansettelse]
+
+- id: tidsressurspott
+  type: begrep
+  tittel: { nb: Tidsressurspott, nn: Tidsressurspott }
+  tekst:
+    nb: >-
+      Tidsressurspotten er en ressurs i SFS 2213 til lærere og skoleledere med en byrdefull undervisningssituasjon. Den er et fast antall årsrammetimer per elev på skolen. Fordelingen drøftes på skolen, og ressursen brukes som hovedregel til å redusere undervisningen, eller til å øke lærertettheten. Se [punkt 7.3](#/lov/sfs2213/sfs-tidsressurser).
+    nn: >-
+      Tidsressurspotten er ein ressurs i SFS 2213 til lærarar og skuleleiarar med ein byrdefull undervisningssituasjon. Han er eit fast tal årsrammetimar per elev på skulen. Fordelinga blir drøfta på skulen, og ressursen blir som hovudregel brukt til å redusere undervisninga, eller til å auke lærartettleiken. Sjå [punkt 7.3](#/lov/sfs2213/sfs-tidsressurser).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "7.3 a" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det dekkende å si at potten også kan brukes til å øke lærertettheten?"
+  stikkord: [tidsressurspott, byrdefull, årsrammetimer]
+  relatert: [arsramme, drofting]
+
+- id: midlertidig-ansettelse
+  type: begrep
+  tittel: { nb: Midlertidig ansettelse, nn: Mellombels tilsetjing }
+  tekst:
+    nb: >-
+      Hovedregelen etter arbeidsmiljøloven er fast ansettelse. Midlertidig ansettelse kan bare avtales i bestemte tilfeller, blant annet når arbeidet er av midlertidig karakter og ved vikariat for en eller flere andre. Hovedtariffavtalen krever at arbeidsgiveren drøfter bruken av midlertidige ansettelser med de tillitsvalgte. Se [arbeidsmiljøloven § 14-9](#/lov/arbeidsmiljoloven/14-9).
+    nn: >-
+      Hovudregelen etter arbeidsmiljøloven er fast tilsetjing. Mellombels tilsetjing kan berre avtalast i bestemte tilfelle, mellom anna når arbeidet er av mellombels karakter og ved vikariat for ein eller fleire andre. Hovudtariffavtalen krev at arbeidsgivaren drøftar bruken av mellombels tilsetjingar med dei tillitsvalde. Sjå [arbeidsmiljøloven § 14-9](#/lov/arbeidsmiljoloven/14-9).
+  kilder:
+    - { id: arbeidsmiljoloven, punkt: "§ 14-9 Fast og midlertidig ansettelse", url: "https://lovdata.no/lov/2005-06-17-62/§14-9" }
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 2 (2.3.2)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=9" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder det særregler for midlertidig ansettelse av lærere uten godkjent utdanning i opplæringslova, som bør nevnes her?"
+  stikkord: [midlertidig ansettelse, vikariat, fast ansettelse, vikar]
+  relatert: [konstituering, oppsigelse-og-avskjed]
+
+- id: oppsigelse-og-avskjed
+  type: begrep
+  tittel: { nb: Oppsigelse og avskjed, nn: Oppseiing og avskil }
+  lenkeord: { nb: ["oppsigelse", "avskjed"], nn: ["oppseiing", "avskil"] }
+  tekst:
+    nb: >-
+      Ved oppsigelse slutter arbeidsforholdet etter en oppsigelsesfrist, og oppsigelsen må være saklig begrunnet i virksomhetens, arbeidsgiverens eller arbeidstakerens forhold. Avskjed betyr at arbeidstakeren må gå med en gang, og krever grovt pliktbrudd eller annet vesentlig mislighold av arbeidsavtalen. Begge deler skal være skriftlig. Se [arbeidsmiljøloven § 15-7](#/lov/arbeidsmiljoloven/15-7) og [§ 15-14](#/lov/arbeidsmiljoloven/15-14).
+    nn: >-
+      Ved oppseiing sluttar arbeidsforholdet etter ein oppseiingsfrist, og oppseiinga må vere sakleg grunngitt i tilhøva til verksemda, arbeidsgivaren eller arbeidstakaren. Avskil tyder at arbeidstakaren må gå med ein gong, og krev grovt pliktbrot eller anna vesentleg misleghald av arbeidsavtalen. Begge delar skal vere skriftleg. Sjå [arbeidsmiljøloven § 15-7](#/lov/arbeidsmiljoloven/15-7) og [§ 15-14](#/lov/arbeidsmiljoloven/15-14).
+  kilder:
+    - { id: arbeidsmiljoloven, punkt: "§ 15-7 Vern mot usaklig oppsigelse", url: "https://lovdata.no/lov/2005-06-17-62/§15-7" }
+    - { id: arbeidsmiljoloven, punkt: "§ 15-14 Avskjed", url: "https://lovdata.no/lov/2005-06-17-62/§15-14" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «avskil» riktig nynorsk for avskjed i denne sammenhengen?"
+    - "Bør forklaringen nevne at oppsigelsesfristen etter Hovedtariffavtalen som hovedregel er tre måneder?"
+  stikkord: [oppsigelse, avskjed, saklig grunn, oppsigelsesfrist]
+  relatert: [midlertidig-ansettelse]

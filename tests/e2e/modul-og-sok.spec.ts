@@ -109,3 +109,32 @@ test.describe('modulregister og søk', () => {
   });
 });
 
+test.describe('begrepsbanken', () => {
+  test('begrepene kan filtreres på tema, og temaet står i adressen (eier 05.10.2026)', async ({ page }) => {
+    await page.goto('./#/begreper');
+    // Temaene står lukket til de åpnes, og overskriften viser temaet som er valgt.
+    const boks = page.locator('details.begrepsfilter');
+    await expect(boks).not.toHaveAttribute('open', '');
+    await boks.locator('summary').click();
+    const filter = page.getByRole('group', { name: 'Vis begreper om' });
+    await expect(filter.getByRole('button', { name: /^Alle/ })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('link', { name: 'Årsramme', exact: true })).toBeVisible();
+    await filter.getByRole('button', { name: /^Vurdering og eksamen/ }).click();
+    await expect(page).toHaveURL(/#\/begreper\?tema=vurdering$/);
+    await expect(boks.locator('summary')).toHaveText('Tema: Vurdering og eksamen');
+    await expect(page.getByRole('link', { name: 'Standpunktkarakter', exact: true })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Årsramme', exact: true })).toHaveCount(0);
+    // Tekstfilteret virker sammen med temaet, og tallene følger teksten.
+    await page.getByLabel('Filtrer begreper').fill('eksamen');
+    await expect(page).toHaveURL(/tema=vurdering&q=eksamen$/);
+    await expect(page.getByRole('link', { name: 'Standpunktkarakter', exact: true })).toHaveCount(0);
+    await expect(page.getByRole('link', { name: 'Sentralt gitt eksamen', exact: true })).toBeVisible();
+    // Adressen gir samme utvalg når siden åpnes på nytt.
+    await page.reload();
+    await expect(boks.locator('summary')).toHaveText('Tema: Vurdering og eksamen');
+    await boks.locator('summary').click();
+    await expect(filter.getByRole('button', { name: /^Vurdering og eksamen/ })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByLabel('Filtrer begreper')).toHaveValue('eksamen');
+  });
+});
+

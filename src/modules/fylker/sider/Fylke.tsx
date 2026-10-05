@@ -1,6 +1,7 @@
 // Siden for ett fylke (avgjørelse 061, eier 05.10.2026): lenkene til fylkets egne sider per tema, de lokale
 // forskriftene fra Lovdata (fylkets og skolenes egne), skolene og opplæringskontorene i fylket, og kalenderne og
-// klagen. Skolenes regler merkes «Skolen din» når brukeren har valgt skolen.
+// klagen. Skolenes regler merkes «Skolen din» når brukeren har valgt skolen. Lenkene til fylkets sider står lukket til
+// brukeren åpner dem (eier 05.10.2026).
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
@@ -67,7 +68,7 @@ export default function Fylke({ parametre }: SideProps) {
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
-      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)}>
+      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket>
         {temaer.length === 0 ? (
           <p class="dempet">{t('fylker.ingenLenker')}</p>
         ) : (

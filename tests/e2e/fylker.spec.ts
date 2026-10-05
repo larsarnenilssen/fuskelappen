@@ -31,8 +31,11 @@ test.describe('fylker', () => {
     await settLagret(page, { fylke: '46', skole: SKOLE });
     await page.goto('./#/fylker/46');
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
-    // Lenkene til fylkets egne sider åpnes i en ny fane.
+    // Lenkene til fylkets egne sider står lukket til brukeren åpner dem (eier 05.10.2026), og åpnes i en ny fane.
     const hos = page.locator('[data-rubrikk="fylke-lenker"]');
+    const hosKnapp = hos.getByRole('button', { name: /Hos fylkeskommunen/ });
+    await expect(hosKnapp).toHaveAttribute('aria-expanded', 'false');
+    await hosKnapp.click();
     await expect(hos.getByRole('link', { name: /Søknad og inntak/ })).toHaveAttribute('target', '_blank');
     await expect(hos.getByRole('link', { name: /Søknad og inntak/ })).toHaveAttribute('href', /^https:\/\//);
     // Fylkets forskrifter og skolen din står åpent, de andre skolenes regler i en lukket gruppe.

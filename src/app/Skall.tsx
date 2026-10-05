@@ -8,9 +8,11 @@ import { Ikon } from '../components/Ikon.tsx';
 import { TilToppen } from '../components/TilToppen.tsx';
 import { gaaTilForsidesok, useForsidesokSynlig } from './forsidesok.ts';
 import type { SideProps } from '../modules/typer.ts';
+import { Flyttevarsel } from './Flyttevarsel.tsx';
 import { Oppdateringsvarsel } from './Oppdateringsvarsel.tsx';
 import { apneToppsok, gaaTilbake, lukkToppsok, matchRute, settToppsok, usePlassering, useToppsok, utforScroll, type Navigasjonstype } from './ruter.ts';
 import { Sokeboks } from './Sokeboks.tsx';
+import { merkSide } from './tilbakemelding.ts';
 import { ruter, type Rute } from './ruteliste.ts';
 import { useTekst } from './tilstand.ts';
 
@@ -129,6 +131,9 @@ export function Skall() {
     document.title = erForside ? app.navn : t('app.tittelMal', { side, app: app.navn });
   }, [treff?.rute, malform, erForside]);
 
+  // Tilbakemeldingen tar med siden brukeren var på (eier 05.10.2026).
+  useEffect(() => merkSide(plassering.sti, window.location.href), [plassering]);
+
   const paaSok = plassering.sti === '/sok';
   // Søket fra toppfeltet åpnes over siden brukeren står på (eier 05.10.2026).
   const sok = useToppsok();
@@ -218,6 +223,7 @@ export function Skall() {
       {/* «Til toppen» på alle sider, når siden er lang nok og brukeren har rullet ned (avgjørelse 056). */}
       <TilToppen key={plassering.sti} />
       <Oppdateringsvarsel />
+      <Flyttevarsel />
     </div>
   );
 }

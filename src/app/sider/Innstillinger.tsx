@@ -5,6 +5,10 @@ import { eksportfilnavn, lagEksport, lesEksport, velgFylke, type Innstillinger a
 import { KildestatusIndikator } from '../Kildestatusindikator.tsx';
 import { fylker } from '../Stedmerknad.tsx';
 import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
+import { Tilbakemelding } from '../Tilbakemelding.tsx';
+import { FLYTTEPARAMETER, lesFlytting } from '../flytting.ts';
+import { erstattAdresse } from '../ruter.ts';
+import type { SideProps } from '../../modules/typer.ts';
 
 interface Skole {
   id: string;
@@ -51,12 +55,27 @@ function Valg<V extends string>({
   );
 }
 
-export default function Innstillinger() {
+export default function Innstillinger({ sporring }: SideProps) {
   const { t } = useTekst();
   const data = useTilstand();
   const inn = data.innstillinger;
   const [skoler, settSkoler] = useState<Skoleliste>({ tilstand: 'laster' });
   const [melding, settMelding] = useState<string | null>(null);
+
+  // Innstillingene og favorittene fra den gamle adressen (avgjørelse 065). Adressen ryddes, så de ikke hentes inn på nytt.
+  useEffect(() => {
+    const verdi = sporring.get(FLYTTEPARAMETER);
+    if (verdi === null) return;
+    erstattAdresse('/innstillinger');
+    const lest = lesFlytting(verdi);
+    if (!lest) {
+      settMelding(t('flytting.feil'));
+      return;
+    }
+    if (!window.confirm(t('flytting.bekreft'))) return;
+    tilstand.sett(lest);
+    settMelding(t('flytting.ok'));
+  }, []);
 
   useEffect(() => {
     void hentSkoler().then((s) => settSkoler(s ? { tilstand: 'ok', skoler: s } : { tilstand: 'feil' }));
@@ -230,6 +249,8 @@ export default function Innstillinger() {
           {melding}
         </p>
       </fieldset>
+
+      <Tilbakemelding overskrift="legend" />
 
       {/* Kildestatusen sto i toppfeltet. Den står her, nederst, sammen med «Om» (avgjørelse 056). */}
       <p class="innstillinger-kildestatus">

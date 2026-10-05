@@ -7089,3 +7089,9 @@ button.frist-stripe-celle:hover {
 .samleboks .tabell-kort-rad {
   background: var(--farge-bakgrunn);
 }
+
+/* ---------- Tilbakemelding på e-post (avgjørelse 064) ---------- */
+/* Lenker som ser ut som knapper (e-post, ny adresse), uten strek under. */
+a.knapp {
+  text-decoration: none;
+}
