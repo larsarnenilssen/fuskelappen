@@ -5,10 +5,10 @@
 // Sidene er lest 05.10.2026, og robots.txt tillater henting på alle:
 // - Med: Trøndelag, Telemark, Vestfold, Akershus, Agder, Troms og Finnmark. Telemark svarer ustabilt, så hentingen
 //   prøver igjen med pauser.
-// - Ikke med, fordi siden ikke sier hvilket år datoene gjelder: Østfold («Cirka 6. juli er første inntak klart») og
-//   Buskerud («Senest 6. juli er førsteinntaket klart»). De legges inn når siden har årstallet.
-// - Ikke med, fordi siden bare har omtrentlige tider uten dato: Rogaland («i begynnelsen av juli», «i midten av juli»,
-//   svarfrist 6 dager) og Møre og Romsdal («i starten av juli», «i slutten av juli»).
+// - Med, men uten årstall på siden (`aarAntas`, eier 05.10.2026): Østfold («Cirka 6. juli er første inntak klart»),
+//   Buskerud («Senest 6. juli er førsteinntaket klart»), Rogaland («i begynnelsen av juli», «i midten av juli»,
+//   svarfrist 6 dager) og Møre og Romsdal («i starten av juli», «i slutten av juli»). Datoene tas bare med når siden
+//   hentes fra januar til august, og gjelder da inntaket samme år.
 // - Ikke med, fordi sidene bare lenker til Vilbli: Oslo, Innlandet og Nordland.
 // - Ikke med, fordi nettstedet stenger skymiljøet: Vestland (vestlandfylke.no) og Vilbli (robotsjekk).
 import type { Inntakskilde } from './les.ts';
@@ -141,6 +141,60 @@ export const INNTAKSKILDER: readonly Inntakskilde[] = [
       { felt: 'andre-inntak', moenster: new RegExp(`(?<dato>${UKE}) Søkere på venteliste[^\\n]*?får svar`, 'i') },
       { felt: 'svarfrist-andre', moenster: new RegExp(`(?<dato>${UKE}) Siste frist for å svare på andre inntak er (?<relativ>\\d+ (?:virke)?dager etter mottatt tilbud)`, 'i') },
       { felt: 'skolene-overtar', moenster: new RegExp(`(?<dato>${UKE}) Skolene overtar`, 'i') },
+    ],
+  },
+  {
+    id: 'ostfold-inntak',
+    navn: 'Østfold fylkeskommune: Søke skoleplass',
+    url: 'https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/',
+    fylke: '31',
+    selektor: 'main',
+    aar: [],
+    aarAntas: true,
+    regler: [
+      { felt: 'forste-inntak', moenster: new RegExp(`Cirka (?<dato>${D}) er første inntak klart`, 'i') },
+      { felt: 'andre-inntak', moenster: new RegExp(`Cirka (?<dato>${D}) er andre inntak klart`, 'i') },
+    ],
+  },
+  {
+    id: 'buskerud-inntak',
+    navn: 'Buskerud fylkeskommune: Søke skoleplass',
+    url: 'https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/',
+    fylke: '33',
+    selektor: 'main',
+    aar: [],
+    aarAntas: true,
+    regler: [
+      { felt: 'forste-inntak', moenster: new RegExp(`Senest (?<dato>${D}) er førsteinntaket klart`, 'i') },
+      { felt: 'andre-inntak', moenster: /Andreinntaket er klart i (?<dato>(?:begynnelsen|midten|slutten) av [a-zæøå]+)/i },
+    ],
+  },
+  {
+    id: 'rogaland-inntak',
+    navn: 'Rogaland fylkeskommune: Søke skoleplass',
+    url: 'https://www.rogfk.no/vare-tjenester/skole-og-utdanning/opplaring-i-skole/soke-skoleplass/',
+    fylke: '11',
+    selektor: 'main',
+    aar: [],
+    aarAntas: true,
+    regler: [
+      { felt: 'forste-inntak', moenster: /1\. inntak til skoleplass vil være klart i (?<dato>(?:begynnelsen|midten|slutten) av [a-zæøå]+)/i },
+      { felt: 'andre-inntak', moenster: /2\. inntak vil være klart i (?<dato>(?:begynnelsen|midten|slutten) av [a-zæøå]+)/i },
+      { felt: 'svarfrist-forste', moenster: /svarfrist på (?<relativ>\d+ (?:virke)?dager)/i, relativTillegg: 'etter inntaket' },
+      { felt: 'svarfrist-andre', moenster: /svarfrist på (?<relativ>\d+ (?:virke)?dager)/i, relativTillegg: 'etter inntaket' },
+    ],
+  },
+  {
+    id: 'more-og-romsdal-inntak',
+    navn: 'Møre og Romsdal fylkeskommune: Søk vidaregåande opplæring',
+    url: 'https://mrfylke.no/tenester/skole-og-opplaring/innsoking-til-vidaregaande-opplaring/sok-vidaregaande-opplaring/',
+    fylke: '15',
+    selektor: 'main',
+    aar: [],
+    aarAntas: true,
+    regler: [
+      { felt: 'forste-inntak', moenster: /første i (?<dato>(?:starten|midten|slutten) av [a-zæøå]+)/i },
+      { felt: 'andre-inntak', moenster: /andre i (?<dato>(?:starten|midten|slutten) av [a-zæøå]+)/i },
     ],
   },
 ];

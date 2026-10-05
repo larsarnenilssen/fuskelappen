@@ -18,7 +18,7 @@
 - **Forsiden** har gruppen «Neste datoer» med de tre neste datoene (forslag D). Den er lukket på mobil med neste dato under overskriften, og åpen på stor skjerm. Den flyttes og slås av under «Tilpass» (`forside.apnet` og `forside.skjult` i lagringen, uten ny skjemaversjon).
 - **Skoleruta, fylkenes inntaksdatoer og kommende endringer i regelverket** kommer fra datafiler som hentes hver uke (`data/skolerute/`, `data/inntak/`, `data/lovdata/kommende.json`). Fylkets datoer vises bare når fylket er valgt.
 
-- **Omtrentlige inntaksdatoer** står på datoen med ordet fra siden («ca.», «senest»). «Begynnelsen», «midten» og «slutten» av en måned blir de to første ukene, uken med den 15. og de to siste ukene (eier 05.10.2026). Uten årstall på siden lagres ingenting.
+- **Omtrentlige inntaksdatoer** står på datoen med ordet fra siden («ca.», «senest»). «Begynnelsen», «midten» og «slutten» av en måned blir de to første ukene, uken med den 15. og de to siste ukene (eier 05.10.2026). En side uten årstall gjelder inntaket samme år når den hentes fra januar til august, og datoen får en merknad om det. Fra september til desember brukes siden ikke (eier 05.10.2026).
 - **Oversiktene over endringer** (regjeringen.no og Udir) står i `src/modules/kalender/oversikter.ts`. De har ny adresse for hver utgave, og kontrollrunden i august minner om å bytte dem. regjeringen.no stenger for automatisk henting.
 - **Skoleårene** regnes fra dagens dato: inneværende og neste skoleår, og de neste tolv månedene. Datoene kommer fra filene som hentes hver uke, så kalenderen trenger ingen endring når et nytt skoleår begynner.
 

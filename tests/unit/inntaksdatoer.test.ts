@@ -202,3 +202,47 @@ describe('delene av måneden (eier 05.10.2026)', () => {
     expect(periodeForManedsdel(2027, 7, 'slutten')).toEqual({ fra: '2027-07-18', til: '2027-07-31' });
   });
 });
+
+describe('sider uten årstall (eier 05.10.2026)', () => {
+  const vaar = (id: string, tekst: string) =>
+    Object.fromEntries(
+      lesInntakskilde(kilde(id), tekst, '2027-03-01').kandidater.map((k) => {
+        const v: Partial<typeof k.verdi> = { ...k.verdi };
+        delete v.tekst;
+        return [`${k.aar} ${k.felt}`, v];
+      }),
+    );
+
+  it('fra januar til august gjelder datoene inntaket samme år, og året er merket som antatt', () => {
+    expect(vaar('ostfold-inntak', 'Cirka 6. juli er første inntak klart.\nCirka 4. august er andre inntak klart.')).toEqual({
+      '2027 forste-inntak': { fra: '2027-07-06', omtrent: true, forbehold: 'ca', aarAntatt: true },
+      '2027 andre-inntak': { fra: '2027-08-04', omtrent: true, forbehold: 'ca', aarAntatt: true },
+    });
+    expect(vaar('buskerud-inntak', 'Senest 6. juli er førsteinntaket klart. Andreinntaket er klart i begynnelsen av august.')).toEqual({
+      '2027 forste-inntak': { fra: '2027-07-06', omtrent: true, forbehold: 'senest', aarAntatt: true },
+      '2027 andre-inntak': { fra: '2027-08-01', til: '2027-08-14', omtrent: true, forbehold: 'begynnelsen', aarAntatt: true },
+    });
+    expect(
+      vaar('rogaland-inntak', '1. inntak til skoleplass vil være klart i begynnelsen av juli, mens 2. inntak vil være klart i midten av juli. Søkerne i Rogaland har en svarfrist på 6 dager.'),
+    ).toEqual({
+      '2027 forste-inntak': { fra: '2027-07-01', til: '2027-07-14', omtrent: true, forbehold: 'begynnelsen', aarAntatt: true },
+      '2027 andre-inntak': { fra: '2027-07-12', til: '2027-07-16', omtrent: true, forbehold: 'midten', aarAntatt: true },
+      '2027 svarfrist-forste': { relativ: '6 dager etter inntaket', aarAntatt: true },
+      '2027 svarfrist-andre': { relativ: '6 dager etter inntaket', aarAntatt: true },
+    });
+    expect(vaar('more-og-romsdal-inntak', 'Inntaket skjer i to omgangar. Det første i starten av juli, det andre i slutten av juli.')).toEqual({
+      '2027 forste-inntak': { fra: '2027-07-01', til: '2027-07-14', omtrent: true, forbehold: 'begynnelsen', aarAntatt: true },
+      '2027 andre-inntak': { fra: '2027-07-18', til: '2027-07-31', omtrent: true, forbehold: 'slutten', aarAntatt: true },
+    });
+  });
+
+  it('fra september til desember tas siden ikke med, og ingenting meldes som manglende', () => {
+    expect(les('ostfold-inntak', 'Cirka 6. juli er første inntak klart.')).toEqual({ kandidater: [], mangler: [] });
+  });
+
+  it('i august gjelder datoene fortsatt inntaket samme år', () => {
+    const r = lesInntakskilde(kilde('ostfold-inntak'), 'Cirka 4. august er andre inntak klart.', '2027-08-31');
+    expect(r.kandidater.map((k) => [k.aar, k.verdi.fra])).toEqual([['2027', '2027-08-04']]);
+    expect(r.mangler).toEqual(['forste-inntak']);
+  });
+});

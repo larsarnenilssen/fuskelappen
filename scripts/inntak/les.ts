@@ -8,7 +8,10 @@
 //   den første uken og fredagen i den siste.
 // - Året: står det i datoen, brukes det. Ellers brukes året i mønsteret (gruppen `aar`), og ellers året kilden finner
 //   på siden (`aar` i kilden: et årstall, eller en ukedag med dato, som «Mandag 2. februar»). Uten år lagres ingenting,
-//   og det står i rapporten. Året gjettes aldri ut fra datoen hentingen ble gjort.
+//   og det står i rapporten.
+// - Unntak (eier 05.10.2026): En kilde med `aarAntas` har ikke årstall på siden. Hentes den fra januar til august,
+//   gjelder datoene inntaket samme år, og de merkes med `aarAntatt`. Fra september til desember viser siden trolig
+//   fjorårets datoer, og den tas ikke med (heller ikke som mangel).
 // - «ca.», «cirka», «omtrent» og «senest» rett foran datoen gir `omtrent`, og ordet lagres i `forbehold` («ca» eller
 //   «senest»), så det kan vises ved datoen (eier 05.10.2026). En svarfrist som regnes fra svaret («5 dager etter at 1.
 //   inntak er klart»), lagres i `relativ`, med eller uten dato.
@@ -48,6 +51,8 @@ export interface Inntakskilde {
    * `dato` («Mandag 2. februar»), som gir året der datoen er den ukedagen.
    */
   aar: RegExp[];
+  /** Siden har ikke årstall. Hentet fra januar til august gjelder datoene inntaket samme år (eier 05.10.2026). */
+  aarAntas?: boolean;
   regler: Inntaksregel[];
 }
 
@@ -60,6 +65,8 @@ export interface Inntaksdato {
   uke?: string;
   omtrent?: boolean;
   forbehold?: Forbehold;
+  /** Året står ikke på siden, og er regnet ut fra datoen siden ble hentet (`aarAntas`). */
+  aarAntatt?: true;
   relativ?: string;
   tekst: string;
   kilder: string[];
@@ -199,7 +206,12 @@ const medIndekser = (r: RegExp) => (r.flags.includes('d') ? r : new RegExp(r.sou
 export function lesInntakskilde(kilde: Inntakskilde, tekst: string, hentet: string): { kandidater: Inntakskandidat[]; mangler: string[] } {
   const kandidater: Inntakskandidat[] = [];
   const mangler: string[] = [];
-  const sideaar = finnAar(kilde, tekst, hentet);
+  const funnet = finnAar(kilde, tekst, hentet);
+  const hentetManed = Number(hentet.slice(5, 7));
+  // Uten årstall på siden: inntaket samme år fra januar til august, ellers tas siden ikke med (eier 05.10.2026).
+  if (funnet === null && kilde.aarAntas && hentetManed > 8) return { kandidater, mangler };
+  const antatt = funnet === null && kilde.aarAntas === true;
+  const sideaar = antatt ? Number(hentet.slice(0, 4)) : funnet;
   for (const r of kilde.regler) {
     const m = medIndekser(r.moenster).exec(tekst);
     // Datoen står i gruppen `dato`, eller i gruppe 1 når mønsteret ikke har navngitte grupper.
@@ -224,6 +236,7 @@ export function lesInntakskilde(kilde: Inntakskilde, tekst: string, hentet: stri
     const datopos = datotekst ? (gruppe === 'dato' ? indekser?.groups?.['dato'] : indekser?.[gruppe])?.[0] : undefined;
     const pos = datopos ?? indekser?.groups?.['relativ']?.[0] ?? m.index;
     const verdi: Inntakskandidat['verdi'] = { tekst: utdrag(tekst, pos, r.nesteLinje) };
+    if (antatt && !forste?.aar && !m.groups?.['aar']) verdi.aarAntatt = true;
     const somIso = (d: Datotreff) => `${d.aar ?? aar}-${String(d.maned).padStart(2, '0')}-${String(d.dag).padStart(2, '0')}`;
     if (manedsdel) {
       Object.assign(verdi, periodeForManedsdel(aar, manedsdel.maned, manedsdel.del), { omtrent: true, forbehold: manedsdel.del });

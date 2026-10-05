@@ -7031,8 +7031,23 @@ a.knapp {
   margin: 0 0 var(--rom-3);
 }
 
+/* Navnet på boksen, og valgene på en linje under når den er lukket, som gruppene på forsiden (eier 05.10.2026). */
+.kal-filternavn {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
 .kal-valgt {
-  font-weight: 600;
+  overflow: hidden;
+  font-size: var(--str-xs);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kal-filter[open] .kal-valgt {
+  display: none;
 }
 
 /* Innholdet i filterboksen: tre grupper med overskrift, samme venstrekant og like avstander. */
@@ -7043,10 +7058,20 @@ a.knapp {
   padding: var(--rom-2) var(--rom-4) var(--rom-4);
 }
 
-@media (min-width: 56rem) {
+/* På stor skjerm står gruppene side om side. Hver gruppe er så bred som knappene, og knappene for tema og hvem det
+   gjelder står tre og tre, så avstanden fra knappene i én gruppe til overskriften i den neste er den samme
+   (eier 05.10.2026). Luften over og under gruppene er den samme. */
+@media (min-width: 64rem) {
   .kal-filter-innhold {
-    grid-template-columns: max-content minmax(0, 1fr) minmax(0, 1fr);
-    gap: var(--rom-6);
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: var(--rom-7);
+    padding-block: var(--rom-3) var(--rom-5);
+  }
+
+  .kal-filtergruppe > .sokefilter {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
   }
 }
 
@@ -7074,7 +7099,7 @@ a.knapp {
   flex: 1 1 0;
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 64rem) {
   .kal-filtervalg {
     align-items: flex-start;
   }
@@ -7096,7 +7121,7 @@ a.knapp {
   gap: var(--rom-2);
 }
 
-.kal-filter > summary > span {
+.kal-filter > summary > .kal-filternavn {
   flex: 1;
 }
 

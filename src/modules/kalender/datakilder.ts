@@ -121,7 +121,7 @@ export function inntakOppforinger(data: Inntaksdatoer | null, fylke: string | nu
             (m) =>
               `<p>${escape(hentTekst(m, 'kalender.inntak.fraFylket'))}</p><blockquote><p>${escape(d.tekst)}</p>${medRelativ ? `<p>${escape(medRelativ.tekst)}</p>` : ''}</blockquote>${
                 medRelativ ? `<p>${escape(hentTekst(m, 'kalender.inntak.svarfrist', { frist: medRelativ.relativ ?? '' }))}</p>` : ''
-              }`,
+              }${d.aarAntatt ? `<p>${escape(hentTekst(m, 'kalender.inntak.aarAntatt', { aar: inntaksaar }))}</p>` : ''}`,
           ),
           ...(naar ? { naar } : {}),
           tema: ['inntak'],

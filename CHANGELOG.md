@@ -15,6 +15,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Søket i toppfeltet** legger seg over siden, og siden står synlig bak. Trykk utenfor søket for å komme tilbake til siden.
 - **Kalender for inntak og Kalender for eksamen** åpner kalenderen, ferdig filtrert. Lagrede favoritter og lenker til de gamle sidene virker fortsatt.
 - **Svar, svarfrist og andre inntak** og klagen på inntak står i juli og august.
+- **Inntaksdatoer fra Østfold, Buskerud, Rogaland og Møre og Romsdal** kommer med fra neste inntak. Sidene deres har ikke årstall, så datoene hentes fra januar til august.
+- **Filterboksen i kalenderen** heter «Filtrer kalenderen». Når den er lukket, står valgene på en linje under. På stor skjerm står de tre filtrene like langt fra hverandre.
 - **Tabeller i lokale forskrifter** (f.eks. skoleruta) viser linjeskiftene i cellene, så datoene og hendingene står på hver sin linje. Gjelder forskriftene etter neste henting fra Lovdata.
 
 ## [0.36.1] – 2026-10-05

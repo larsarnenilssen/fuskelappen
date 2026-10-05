@@ -124,15 +124,20 @@ export default function Kalender({ sporring }: SideProps) {
         <Begrepstekst tekst={t('kalender.innledning')} />
       </p>
 
-      {/* Visningen, skoleåret og filtrene står i én boks som er lukket fra start. Overskriften viser alle valgene, så
-          brukeren ser hva som er aktivt uten å åpne den, og kalenderen begynner høyt oppe på siden (eier 05.10.2026). */}
+      {/* Visningen, skoleåret og filtrene står i én boks som er lukket fra start, så kalenderen begynner høyt oppe på
+          siden. Boksen har fast navn, og når den er lukket, står valgene på en linje under, som gruppene på forsiden.
+          Slik ser brukeren hva som er aktivt uten å åpne den (eier 05.10.2026). */}
       <details class="veiviser-kilder kal-filter">
         <summary class="forklaring-knapp">
           <Ikon navn="filter" />
-          <span class="kal-valgt">{valgtekst}</span>
+          <span class="kal-filternavn">
+            <span>{t('kalender.filter.tittel')}</span>
+            <span class="kal-valgt">{valgtekst}</span>
+          </span>
           <Ikon navn="ned" class="forklaring-pil" />
         </summary>
-        {/* Tre grupper med overskrift og like avstander. På stor skjerm står de side om side (eier 05.10.2026). */}
+        {/* Tre grupper med overskrift og like avstander. På stor skjerm står de side om side, like langt fra hverandre
+            (eier 05.10.2026). */}
         <div class="kal-filter-innhold">
           <div class="kal-filtergruppe">
             <h2 class="kal-filtertittel" id="kal-filter-vis">

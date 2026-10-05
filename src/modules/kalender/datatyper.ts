@@ -56,6 +56,7 @@ export interface Inntaksdato {
   uke?: string;
   omtrent?: boolean;
   forbehold?: 'ca' | 'senest' | 'begynnelsen' | 'midten' | 'slutten';
+  aarAntatt?: true;
   relativ?: string;
   tekst: string;
   kilder: string[];

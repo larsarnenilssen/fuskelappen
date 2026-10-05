@@ -31,6 +31,8 @@ export const inntaksdatoSkjema = z
     omtrent: z.boolean().optional(),
     /** Ordet foran datoen («ca», «senest»), eller delen av måneden («begynnelsen», «midten», «slutten»). */
     forbehold: z.enum(['ca', 'senest', 'begynnelsen', 'midten', 'slutten']).optional(),
+    /** Året står ikke på siden, og er regnet ut fra datoen siden ble hentet (eier 05.10.2026). */
+    aarAntatt: z.literal(true).optional(),
     /** En frist som regnes fra noe annet, f.eks. «5 dager etter at 1. inntak er klart». */
     relativ: z.string().min(1).optional(),
     /** Et kort utdrag fra siden. */

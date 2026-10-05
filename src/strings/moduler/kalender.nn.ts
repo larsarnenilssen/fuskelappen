@@ -5,6 +5,7 @@ export const kalenderNn = {
   visning: { etikett: 'Vis', rullende: 'Neste tolv månader', rullendeKort: 'Tolv månader', skolear: 'Skuleåret', skolearAar: 'Skuleåret {aar}' },
   skolearEtikett: 'Vel skuleår',
   filter: {
+    tittel: 'Filtrer kalenderen',
     alleTemaer: 'Alle tema',
     alleGrupper: 'Alle grupper',
     tema: 'Tema',
@@ -64,6 +65,7 @@ export const kalenderNn = {
     uke: 'veke {uke}',
     forbehold: { ca: 'ca.', senest: 'seinast', begynnelsen: 'byrjinga av {maned}', midten: 'midten av {maned}', slutten: 'slutten av {maned}' },
     svarfrist: 'Svarfristen er {frist}.',
+    aarAntatt: 'Sida seier ikkje kva år datoen gjeld. Appen reknar med at han gjeld inntaket i {aar}.',
     felt: {
       fortrinnsinntak: 'Svar på søknad om fortrinnsrett',
       'svarfrist-fortrinn': 'Svarfrist etter fortrinnsinntaket',
