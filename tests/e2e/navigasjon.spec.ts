@@ -22,7 +22,8 @@ test.describe('navigasjon', () => {
     // Søket åpnes over siden (eier 05.10.2026). Tilbake lukker det og viser siden igjen.
     await meny.getByRole('button', { name: 'Søk' }).click();
     await expect(page.getByRole('searchbox')).toBeFocused();
-    await expect(page.locator('main')).toBeHidden();
+    // Siden står bak søket, men kan ikke brukes mens søket er åpent.
+    await expect(page.locator('main')).toHaveAttribute('inert', '');
     await expect(page).toHaveURL(/#\/innstillinger$/);
     await page.goBack();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();

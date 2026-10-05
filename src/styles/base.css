@@ -3947,6 +3947,41 @@ p.fagkort-tittel {
   }
 }
 
+/* Lange ord i titlene skyver aldri siden ut. De deles bare når de ikke får plass på en linje. */
+.kal-neste .listelenke-tekst {
+  min-width: 0;
+}
+
+.kal-neste .listelenke-tittel {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 12 5 5;
+}
+
+/* Smale mobiler: datoen står over tittelen, som i den smale sidekolonnen under. */
+@media (max-width: 23.5rem) {
+  .kal-neste .listelenke:not(.kal-neste-alle) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 0.15rem;
+  }
+
+  .kal-neste .listelenke:not(.kal-neste-alle) > .kal-neste-dato {
+    grid-column: 1;
+    width: auto;
+  }
+
+  .kal-neste .listelenke:not(.kal-neste-alle) > .listelenke-tekst {
+    grid-column: 1;
+  }
+
+  .kal-neste .listelenke:not(.kal-neste-alle) > .ikon:last-child {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+  }
+}
+
 /* Smal sidekolonne: datoen står over tittelen i «Neste datoer», så tittelen får hele bredden. */
 @container sidekolonne (max-width: 24rem) {
   .kal-neste .listelenke:not(.kal-neste-alle) {

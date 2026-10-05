@@ -15,7 +15,11 @@ test.describe('kalenderen', () => {
     // Uten valgt fylke er det ingen datoer for fylket.
     await expect(page.locator('.kal-kort-lokal')).toHaveCount(0);
     // Søknadsfristen 1. mars er lukket til den åpnes, og lenker til veiviseren.
-    const mars = page.locator('.kal-kort', { hasText: 'Søknadsfrist' }).filter({ hasNotText: 'noen grupper' }).first();
+    const mars = page
+      .locator('.kal-kort')
+      .filter({ has: page.locator('.kal-tittel', { hasText: /(^|: )Søknadsfrist(\s|$)/ }) })
+      .filter({ hasNotText: 'noen grupper' })
+      .first();
     await expect(mars.locator('.kal-innhold')).toBeHidden();
     await mars.locator('.kal-topp').click();
     await expect(mars.locator('.kal-innhold')).toContainText('første virkedag');
@@ -55,9 +59,11 @@ test.describe('kalenderen', () => {
 
   test('neste skoleår kan velges', async ({ page }) => {
     await page.goto('./#/kalender');
-    await page.getByText('Skoleåret', { exact: true }).click();
+    // Valgene står i filterboksen, som er lukket fra start.
+    await page.locator('.kal-filter summary').click();
+    await page.locator('.kal-filter').getByRole('radio', { name: 'Skoleåret' }).check();
     await expect(page).toHaveURL(/visning=skolear/);
-    await page.locator('.kal-skolear button').nth(1).click();
+    await page.locator('.kal-filtervalg .sokefilter-valg').nth(1).click();
     await expect(page).toHaveURL(/aar=\d{4}/);
     await expect(page.locator('.kal-maned')).toHaveCount(12);
   });
