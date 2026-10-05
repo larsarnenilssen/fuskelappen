@@ -57,14 +57,22 @@ export default function Liste({ sporring }: SideProps) {
             <label for={id}>{t('begreper.filtrer')}</label>
             <input id={id} type="search" autoComplete="off" value={filter} onInput={(e) => skrivFilter(e.currentTarget.value)} />
           </div>
-          <div class="sokefilter begrepsfilter" role="group" aria-label={t('begreper.tema.etikett')}>
-            {[null, ...begrepstemaer].map((valg) => (
-              <button key={valg ?? 'alle'} type="button" class="sokefilter-valg" aria-pressed={tema === valg} onClick={() => velgTema(valg)}>
-                {t(`begreper.tema.${valg ?? 'alle'}`)}{' '}
-                <span class="sokefilter-antall tall">{formaterTall(valg ? iTeksten.filter((b) => temaFor(b) === valg).length : iTeksten.length)}</span>
-              </button>
-            ))}
-          </div>
+          {/* Temaene står i en boks som er lukket til brukeren åpner den. Overskriften viser temaet som er valgt (eier 05.10.2026). */}
+          <details class="veiviser-kilder begrepsfilter">
+            <summary class="forklaring-knapp">
+              <Ikon navn="kategori" />
+              <span>{t('begreper.tema.vis', { tema: t(`begreper.tema.${tema ?? 'alle'}`) })}</span>
+              <Ikon navn="ned" class="forklaring-pil" />
+            </summary>
+            <div class="sokefilter" role="group" aria-label={t('begreper.tema.etikett')}>
+              {[null, ...begrepstemaer].map((valg) => (
+                <button key={valg ?? 'alle'} type="button" class="sokefilter-valg" aria-pressed={tema === valg} onClick={() => velgTema(valg)}>
+                  {t(`begreper.tema.${valg ?? 'alle'}`)}{' '}
+                  <span class="sokefilter-antall tall">{formaterTall(valg ? iTeksten.filter((b) => temaFor(b) === valg).length : iTeksten.length)}</span>
+                </button>
+              ))}
+            </div>
+          </details>
           {filtrert.length === 0 && (
             <p role="status">{f ? t('begreper.ingenTreff', { filter }) : t('begreper.tema.ingen')}</p>
           )}

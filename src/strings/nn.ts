@@ -176,10 +176,9 @@ export const nn: Tekster = {
     tittel: 'Tilbakemelding',
     tekst: 'Har du eit spørsmål, eit innspel eller funne ein feil? Send ein e-post. Skriv ikkje namn eller andre personopplysningar om elevar eller tilsette.',
     skriv: 'Skriv e-post',
-    visAdressen: 'Vis adressa',
-    kopier: 'Kopier',
-    kopiert: 'Adressa er kopiert.',
-    kopierSelv: 'Adressa kunne ikkje kopierast. Merk ho og kopier ho sjølv.',
+    kopier: 'Kopier adressa',
+    kopiert: 'E-postadressa er kopiert. Lim ho inn i e-postprogrammet ditt.',
+    kopierFeil: 'Adressa kunne ikkje kopierast. Bruk «Skriv e-post».',
     emne: 'Tilbakemelding på {app} {versjon}',
     mal: 'Skriv tilbakemeldinga her:',
     versjon: 'Versjon: {versjon}',
@@ -201,8 +200,7 @@ export const nn: Tekster = {
       grunnlag:
         'Samtidig er appen laga i god tru, som ein reiskap og eit hjelpemiddel. Utrekningane og forklaringane byggjer på kjelder: lover og forskrifter, tariffavtalar, læreplanar og data frå Utdanningsdirektoratet. Kvar utrekning kan visast steg for steg med kjelda til kvar verdi, slik at du kan kontrollere ho sjølv. Utrekningane blir testa mot reknedøma før kvar ny versjon, og kjeldene blir sjekka automatisk for endringar kvar veke.',
       innspill:
-        'Innspel til funksjonaliteten og melding om feil blir tekne imot med takk, på e-post under «Tilbakemelding» nedanfor. Har du ein GitHub-konto, kan du også melde frå der.',
-      innspillLenke: 'Meld frå på GitHub',
+        'Innspel til funksjonaliteten og melding om feil blir tekne imot med takk, på e-post under «Tilbakemelding» nedanfor.',
     },
     personvern: {
       tittel: 'Personvern',
@@ -424,6 +422,7 @@ export const nn: Tekster = {
     ingenTreff: 'Ingen omgrep passar med «{filter}».',
     tema: {
       etikett: 'Vis omgrep om',
+      vis: 'Tema: {tema}',
       alle: 'Alle',
       inntak: 'Inntak og tilbod',
       fag: 'Læreplanverket',
