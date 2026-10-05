@@ -159,7 +159,9 @@ export function slaSammen(kandidater: readonly Kandidat[]): Sammenslatt {
     const p = (mal[periode] ??= {});
     const d = (p[felt] ??= { kilder: [] });
     d[del] = forste[del];
-    if (del === 'fra' && forste.kl) d.kl = forste.kl;
+    // Klokkeslettet fra den første kilden som har det (en side uten klokkeslett kan telle med, se under).
+    const kl = k.find((x) => x.kl)?.kl;
+    if (del === 'fra' && kl) d.kl = kl;
     for (const x of k) if (!d.kilder.includes(x.kilde)) d.kilder.push(x.kilde);
   };
 
@@ -185,6 +187,16 @@ export function slaSammen(kandidater: readonly Kandidat[]): Sammenslatt {
     for (const k of alle) {
       const v = verdi(k, del) as string;
       grupper.set(v, [...(grupper.get(v) ?? []), k]);
+    }
+    // En side uten klokkeslett (f.eks. «28. april») er enig med sidene som har samme dato med klokkeslett, når de
+    // har ett klokkeslett.
+    for (const [v, g] of [...grupper]) {
+      if (del !== 'fra' || v.includes(' kl. ')) continue;
+      const medKl = [...grupper.keys()].filter((n) => n.startsWith(`${v} kl. `));
+      if (medKl.length !== 1) continue;
+      const mal = medKl[0] as string;
+      grupper.set(mal, [...(grupper.get(mal) ?? []), ...g]);
+      grupper.delete(v);
     }
     const fylker = (g: Kandidat[]) => new Set(g.map((k) => k.fylke)).size;
     const sortert = [...grupper.entries()].sort((a, b) => fylker(b[1]) - fylker(a[1]));

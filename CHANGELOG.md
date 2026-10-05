@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Eksamensdatoer fra seks fylker til:** Østfold, Buskerud, Vestfold, Agder, Møre og Romsdal og Troms. Med et av dem valgt viser fristene når datoene for muntlig eksamen for privatister kommer, og søknadsfristen for tilrettelegging, der fylket har dem. Datoene teller også med når fylkene sammenlignes.
+
 ## [0.36.1] – 2026-10-05
 
 ### Lagt til
