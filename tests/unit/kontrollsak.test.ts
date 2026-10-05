@@ -2,6 +2,7 @@
 // kontrollsaken (avgjørelse 018).
 import { describe, expect, it } from 'vitest';
 import { delIBiter, finnEndringer, naermestePunkt } from '../../scripts/kilder/avsnitt.ts';
+import { avkryssede } from '../../scripts/kilder/godkjenning.ts';
 import { grepsammendrag, sammenlignGrep, type Grepdata } from '../../scripts/kilder/grep.ts';
 import { grepLaereplanlinjer } from '../../scripts/kilder/ukesrapport.ts';
 import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn } from '../../scripts/kilder/tabeller.ts';
@@ -118,9 +119,10 @@ describe('Grep-endringer', () => {
 describe('den ukentlige kontrollsaken', () => {
   const register = {
     kilder: [
-      { id: 'avtale', navn: 'SFS 2213', url: 'https://example.org/sfs', sjekkmetode: 'kf-infoserie', aktiv: true },
-      { id: 'lov', navn: 'Arbeidsmiljøloven', url: 'https://example.org/aml', sjekkmetode: 'lovdata', aktiv: true },
-      { id: 'grep', navn: 'Grep', url: 'https://example.org/grep', sjekkmetode: 'grep', aktiv: true },
+      { id: 'avtale', navn: 'SFS 2213', url: 'https://example.org/sfs', sjekkmetode: 'kf-infoserie', aktiv: true, godkjent_fingeravtrykk: 'sha256:a' },
+      { id: 'lov', navn: 'Arbeidsmiljøloven', url: 'https://example.org/aml', sjekkmetode: 'lovdata', aktiv: true, godkjent_fingeravtrykk: 'sha256:a' },
+      { id: 'grep', navn: 'Grep', url: 'https://example.org/grep', sjekkmetode: 'grep', aktiv: true, godkjent_fingeravtrykk: 'sha256:a' },
+      { id: 'ny', navn: 'Ny kilde', url: 'https://example.org/ny', sjekkmetode: 'side', aktiv: true, godkjent_fingeravtrykk: null },
     ],
   } as unknown as Kilderegister;
   const indeks: Kildekontroll[] = [
@@ -216,6 +218,39 @@ describe('den ukentlige kontrollsaken', () => {
     expect(r.tekst).toContain('- Arbeidsmiljøloven: Tidsavbrudd (siden 05.10.2026)');
     expect(r.tekst).toContain('- Tatt inn automatisk: 1 ny fagkode.');
     expect(lesTilstand(r.tekst)).toBe(r.tilstand);
+  });
+
+  it('viser kilder uten godkjent fingeravtrykk som nye, under egen overskrift før de endrede (sak #92)', () => {
+    const r = lagUkesrapport(
+      grunnlag({
+        kildestatus: {
+          skjema: 1,
+          kjort: '2026-10-05T04:17:00Z',
+          kilder: {
+            avtale: { ...ok, status: 'endret', fingeravtrykk: 'sha256:b', endret_siden: '2026-10-05T04:17:00Z' },
+            ny: { ...ok, status: 'endret', fingeravtrykk: 'sha256:c', endret_siden: '2026-10-05T04:17:00Z', melding: 'Ny kilde, ikke godkjent ennå.' },
+          },
+        },
+        endringer: { avtale: null, ny: null },
+      }),
+    );
+    expect(r.punkter).toBe(2);
+    const nye = r.tekst.indexOf('## Nye kilder, ikke godkjent ennå');
+    const endret = r.tekst.indexOf('## Endret i kildene');
+    expect(nye).toBeGreaterThan(-1);
+    expect(endret).toBeGreaterThan(nye);
+    const nySeksjon = r.tekst.slice(nye, endret);
+    expect(nySeksjon).toContain('### Ny kilde\n\nNy kilde, ikke godkjent ennå. [Åpne kilden](https://example.org/ny)');
+    expect(nySeksjon).toContain('Det finnes ingen godkjent tekst å sammenligne med');
+    expect(nySeksjon).not.toContain('Endret siden');
+    expect(nySeksjon).toContain('- [ ] Jeg har sett på den nye kilden Ny kilde, og fingeravtrykket kan godkjennes. <!-- godkjenn-kilde:ny:sha256:c -->');
+    expect(r.tekst.slice(endret)).toContain('Endret siden 05.10.2026.');
+    expect(r.tekst.slice(endret)).not.toContain('### Ny kilde');
+    // Avkrysningen for godkjenning virker som før.
+    expect(avkryssede(r.tekst.replaceAll('- [ ]', '- [x]'))).toEqual([
+      { type: 'kilde', id: 'ny', fingeravtrykk: 'sha256:c' },
+      { type: 'kilde', id: 'avtale', fingeravtrykk: 'sha256:b' },
+    ]);
   });
 
   it('punkter treffer samme punkt, underpunkt og overordnet punkt', () => {

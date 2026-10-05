@@ -1,4 +1,6 @@
-# Lint, typesjekk, tester, bygg og ende-til-ende-tester på hver PR og hver push til main.
+# Lint, typesjekk, tester, bygg og ende-til-ende-tester på hver PR og hver push til main. På en PR ser den første jobben
+# hvilke filer som er endret, og hopper over det som ikke trengs (avgjørelse 067): bare dokumentasjon gir ingen tester,
+# bare versjonsnummeret gir bare den raske jobben. På main og ved manuell start kjøres alt.
 name: CI
 
 on:
@@ -16,8 +18,39 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Nivået: ingen, rask eller alt (scripts/ci/endringer.ts). Skriptet kjøres med Node uten npm ci, så jobben er rask.
+  endringer:
+    name: Hva er endret
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      nivaa: ${{ steps.nivaa.outputs.nivaa }}
+    steps:
+      - uses: actions/checkout@v5
+        if: github.event_name == 'pull_request'
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        if: github.event_name == 'pull_request'
+        with:
+          node-version-file: .nvmrc
+      - id: nivaa
+        env:
+          HENDELSE: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ "$HENDELSE" = pull_request ]; then
+            node --experimental-strip-types scripts/ci/endringer.ts "$BASE"
+          else
+            echo "Nivå: alt ($HENDELSE)"
+            echo nivaa=alt >> "$GITHUB_OUTPUT"
+          fi
+
+  # Hoppes over på jobbnivå når PR-en bare endrer dokumentasjon.
   sjekk:
     name: Lint, typesjekk, tester og bygg
+    needs: endringer
+    if: needs.endringer.outputs.nivaa != 'ingen'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -33,9 +66,13 @@ jobs:
       - name: Bygg (med sjekk av startpakkens størrelse)
         run: npm run build
 
-  # Appen bygges én gang for ende-til-ende-testene, og delene under henter bygget (avgjørelse 055).
+  # Appen bygges én gang for ende-til-ende-testene, og delene under henter bygget (avgjørelse 055). Hoppes over på
+  # jobbnivå når PR-en bare endrer dokumentasjon eller versjonsnummeret. Da hoppes også e2e over, så de åtte jobbene
+  # ikke henter Playwright-bildet bare for å rapportere.
   bygg-e2e:
     name: Bygg for ende-til-ende
+    needs: endringer
+    if: needs.endringer.outputs.nivaa == 'alt'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -100,15 +137,38 @@ jobs:
           path: playwright-report/
           retention-days: 14
 
-  # Samlet resultat med samme navn som før, så en regel om påkrevd sjekk på main fortsatt virker.
+  # Samlet resultat med samme navn som før, så en regel om påkrevd sjekk på main fortsatt virker. Den er grønn når
+  # jobbene er grønne, eller hoppet over fordi nivået tillater det (avgjørelse 067).
   test:
     name: Test og bygg
-    needs: [sjekk, bygg-e2e, e2e]
+    needs: [endringer, sjekk, bygg-e2e, e2e]
     if: always()
     runs-on: ubuntu-latest
     steps:
-      - name: Alle jobbene må være grønne
+      - name: Alle jobbene må være grønne eller hoppet over etter nivået
+        env:
+          NIVAA: ${{ needs.endringer.outputs.nivaa }}
+          ENDRINGER: ${{ needs.endringer.result }}
+          SJEKK: ${{ needs.sjekk.result }}
+          BYGG_E2E: ${{ needs.bygg-e2e.result }}
+          E2E: ${{ needs.e2e.result }}
         run: |
-          test "${{ needs.sjekk.result }}" = success
-          test "${{ needs.bygg-e2e.result }}" = success
-          test "${{ needs.e2e.result }}" = success
+          # krev <jobb> <resultat> <lov å hoppe over: ja eller nei>
+          krev() {
+            if [ "$2" = success ] || { [ "$2" = skipped ] && [ "$3" = ja ]; }; then
+              echo "$1: $2"
+            else
+              echo "::error::$1: $2"
+              exit 1
+            fi
+          }
+          krev endringer "$ENDRINGER" nei
+          echo "Nivå: $NIVAA"
+          case "$NIVAA" in ingen|rask|alt) ;; *) echo "::error::Ukjent nivå: '$NIVAA'"; exit 1 ;; esac
+          hopp_sjekk=nei
+          hopp_e2e=nei
+          if [ "$NIVAA" = ingen ]; then hopp_sjekk=ja; hopp_e2e=ja; fi
+          if [ "$NIVAA" = rask ]; then hopp_e2e=ja; fi
+          krev sjekk "$SJEKK" "$hopp_sjekk"
+          krev bygg-e2e "$BYGG_E2E" "$hopp_e2e"
+          krev e2e "$E2E" "$hopp_e2e"

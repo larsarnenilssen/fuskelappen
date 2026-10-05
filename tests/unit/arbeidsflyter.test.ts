@@ -33,4 +33,17 @@ describe('arbeidsflyter', () => {
     expect(deploy.jobs.videresend.if).toContain("github.ref_type == 'tag'");
     expect(deploy.jobs.bygg.if).toContain("github.ref_type != 'tag'");
   });
+
+  it('CI hopper over jobbene på jobbnivå etter nivået, og «Test og bygg» samler alle (avgjørelse 067)', () => {
+    type Jobb = { name?: string; needs?: string | string[]; if?: string; outputs?: Record<string, string>; steps?: { run?: string }[] };
+    const ci = parse(readFileSync(join(rot, '.github/workflows/ci.yml'), 'utf8')) as { on: Record<string, unknown>; jobs: Record<string, Jobb> };
+    expect(Object.keys(ci.on).sort()).toEqual(['pull_request', 'push', 'workflow_dispatch']);
+    const { endringer, sjekk, 'bygg-e2e': bygg, e2e, test } = ci.jobs;
+    expect(endringer?.outputs?.nivaa).toContain('steps.nivaa.outputs.nivaa');
+    expect(endringer?.steps?.some((s) => s.run?.includes('scripts/ci/endringer.ts'))).toBe(true);
+    expect(sjekk).toMatchObject({ needs: 'endringer', if: "needs.endringer.outputs.nivaa != 'ingen'" });
+    expect(bygg).toMatchObject({ needs: 'endringer', if: "needs.endringer.outputs.nivaa == 'alt'" });
+    expect(e2e?.needs).toBe('bygg-e2e');
+    expect(test).toMatchObject({ name: 'Test og bygg', if: 'always()', needs: ['endringer', 'sjekk', 'bygg-e2e', 'e2e'] });
+  });
 });

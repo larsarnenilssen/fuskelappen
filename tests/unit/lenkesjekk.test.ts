@@ -3,7 +3,8 @@
 import { describe, expect, it } from 'vitest';
 import { DATAFILER, LENKEBYGGERE } from '../../scripts/lenker/regler.ts';
 import { finnDatafiler, finnLenkebyggere, finnUrler, samleLenker } from '../../scripts/lenker/samle.ts';
-import { lagRapport, type Lenkestatus, oppdaterStatus, type Resultat, sjekkAlle, stengteNettsteder, velgStikkprove, vurderSvar } from '../../scripts/lenker/sjekk.ts';
+import { lagKontrollrapport } from '../../scripts/kontroll/rapport.ts';
+import { lagRapport, type Lenkestatus, oppdaterStatus, type Resultat, sjekkAlle, stengteLenker, stengteNettsteder, velgStikkprove, vurderSvar } from '../../scripts/lenker/sjekk.ts';
 
 const rot = process.cwd();
 
@@ -73,10 +74,33 @@ describe('status fra gang til gang', () => {
         'https://a.no/2': { svar: 'flyttet', ganger: 1, sist: '2026-10-12', til: 'https://a.no/3', melding: null },
       },
     };
-    const rapport = lagRapport(status, [{ url: 'https://a.no/1', type: 'fast', brukt: ['content/x.yaml'] }], []);
+    const rapport = lagRapport(status, [{ url: 'https://a.no/1', type: 'fast', brukt: ['content/x.yaml'] }]);
     expect(rapport).toContain('- [ ] https://a.no/1 (2 ganger på rad). Står i: content/x.yaml');
     expect(rapport).not.toContain('https://a.no/2');
-    expect(lagRapport({ ...status, lenker: { 'https://a.no/2': status.lenker['https://a.no/2'] as Lenkestatus['lenker'][string] } }, [], [])).toBe('');
+    expect(lagRapport({ ...status, lenker: { 'https://a.no/2': status.lenker['https://a.no/2'] as Lenkestatus['lenker'][string] } }, [])).toBe('');
+  });
+
+  it('stengte nettsteder gir ingen sak, men står i kontrolloversikten med lenkene og hvor de står (sak #98)', () => {
+    const lenker = [
+      { url: 'https://www.stengt.no/a', type: 'fast' as const, brukt: ['content/x.yaml', 'src/y.ts'] },
+      { url: 'https://stengt.no/b', type: 'stikkprove' as const, brukt: ['data/z.json'] },
+      { url: 'https://stengt.no/c', type: 'stikkprove' as const, brukt: ['data/z.json'] },
+      { url: 'https://apen.no/', type: 'fast' as const, brukt: ['content/x.yaml'] },
+    ];
+    const resultater = [r('https://www.stengt.no/a', 'feil'), r('https://stengt.no/b', 'feil'), r('https://apen.no/', 'ok')];
+    const status = oppdaterStatus(null, resultater, new Set(lenker.map((l) => l.url)), '2026-10-12');
+    // Bare stengte nettsteder: ingen sak (en åpen sak lukkes).
+    expect(lagRapport(status, lenker)).toBe('');
+    const stengte = stengteLenker(stengteNettsteder(resultater), lenker, '2026-10-12');
+    expect(stengte).toEqual({ sjekket: '2026-10-12', nettsteder: [{ vert: 'stengt.no', lenker: [{ url: 'https://www.stengt.no/a', brukt: ['content/x.yaml', 'src/y.ts'] }], stikkprover: 2 }] });
+    const md = lagKontrollrapport([], { kilder: [] } as unknown as Parameters<typeof lagKontrollrapport>[1], null, null, '2026-10-12', [], null, stengte);
+    expect(md).toContain('## Nettsteder som ikke kan sjekkes automatisk');
+    expect(md).toContain('Lenkesjekken 12.10.2026 fikk ikke svar fra noen av lenkene');
+    expect(md).not.toContain('kontrollrunden');
+    expect(md).toContain('- **stengt.no** (3 lenker)\n  - https://www.stengt.no/a (står i `content/x.yaml`, `src/y.ts`)\n  - 2 lenker fra dataene, som sjekkes med stikkprøver.');
+    expect(md.indexOf('## Nettsteder som ikke kan sjekkes automatisk')).toBeLessThan(md.indexOf('## Per kilde'));
+    // Før første lenkesjekk er det ingen del om nettstedene.
+    expect(lagKontrollrapport([], { kilder: [] } as unknown as Parameters<typeof lagKontrollrapport>[1], null, null, '2026-10-12', [], null, { sjekket: null, nettsteder: [] })).not.toContain('Nettsteder som ikke');
   });
 
   it('sjekker nettstedene parallelt og lenkene til samme nettsted etter hverandre', async () => {
