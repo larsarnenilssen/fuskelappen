@@ -152,3 +152,107 @@ Grunnlaget er `fase-6-pakke-5.md`. Mockupene er laget med ekte datoer: fristene 
 4. **Fagarket:** lenke til kalenderen, til Eksamen, eller begge?
 5. **Regelverk:** Skal vedtatte endringer uten dato vises (under «Uten fast dato»), eller bare endringer med dato?
 6. **Rekkefølgen:** Jeg foreslår å bygge siden, filtrene og lenkene først, så skoleruta og regelverket (de trenger nye hentinger i Actions), og til slutt forsiden, kontrollsakene og CI. Passer det?
+
+## Svar fra eier (05.10.2026, runde 1) og endringer i forslaget
+
+### 1. Neste skoleår
+
+Eier sa ja, men var usikker på om spørsmålet var forstått rett. Eksempelet med «Skoleåret» valgt i oktober 2026 viser hva som menes:
+
+- **2026–2027:** alle datoene, som i mockup 6.
+- **2027–2028:**
+  - Eksamensdatoene er ikke kjent ennå. Eksamen står med måneden, som «Uten fast dato» (punkt 4).
+  - Faste årlige frister (1. mars, 1. oktober …) står med riktig dato i 2027 og 2028.
+  - Skoleruta står bare der fylket har vedtatt den (Troms, Finnmark og Rogaland har 2027–2028, Vestland ikke).
+  - Øverst står «Datoene for eksamen i 2027–2028 er ikke kjent ennå».
+- **Knappen for neste skoleår** står alltid. Alternativet er å vise den bare når Udir har lagt ut datoene, og ellers vise ett «generisk» skoleår uten årstall. Det ville skjule de faste fristene, som er like sikre i 2028 som i 2027.
+
+### 2. Uten fast dag
+
+**Eier:** Fristen står i måneden sin når måneden er pålitelig, ellers i alle månedene som trengs for å dekke perioden.
+
+- **Pålitelig måned:** Fristen står nederst i måneden som «I løpet av november», med stiplet kant. Det gjelder f.eks. trekket til høsteksamen og standpunkt i juni.
+- **Periode:** Regelen får en ny type for perioder (`perioden` med fra- og til-måned). Fristen står da i hver av månedene, merket «juli–august». Det gjelder to frister:
+  - «Svar, svarfrist og andre inntak»: juli–august. Første inntak er 8. juli og sisteinntak 5. august i Telemark og Trøndelag.
+  - «Klage på vedtaket om inntak»: juli–august.
+- **Uten måned:** Frister som gjelder hele året eller regnes fra noe annet («Ti dager», «Hvert halvår»), står i boksen «Gjelder hele året» øverst, slik som i dag.
+- **Når de vises:** Fremdeles bare når kalenderen er filtrert på tema.
+- **Avgrensning:** Hvilke måneder som er pålitelige, er en faglig vurdering. Endringene får `kontrollert: null` og kontrollspørsmål.
+
+### 3. Forsiden: forslag D
+
+**Eiers innvending:**
+- Under toppbåndet blir det to elementer uten overskrift og med ulike funksjoner (stedlinjen og kalenderen).
+- I toppbåndet blir det voldsomt når kalenderen åpnes, og bryterne og «Tilpass» står med andre bredder.
+
+**Forslag D** (mockup 12–15): «Neste datoer» blir en vanlig gruppe på forsiden, på linje med Favoritter og kategoriene.
+
+- Den har overskrift og pil som de andre gruppene.
+- Lukket står neste dato under overskriften, slik lukkede grupper viser innholdet i dag («5.–9. okt: Haustferie»).
+- Åpen står de tre neste datoene som rader i et kort, med lenken «Hele kalenderen» nederst.
+- Den flyttes, lukkes og slås av under «Tilpass», som de andre gruppene. Valget huskes.
+- Den står først, lukket på mobil og åpen på stor skjerm. På stor skjerm står den ved siden av Favoritter.
+- Toppbåndet er uendret og styrer fortsatt bare innholdet under.
+
+**Hvorfor D:** D bruker et mønster brukeren kjenner fra før, og tar ingen ny plass på mobil utover én gruppeoverskrift (ca. 70 px). Variantene A, B og C utgår.
+
+### 4. Fagarket
+
+Fagarket lenker fortsatt til siden Eksamen. Ingen endring.
+
+### 5. Endringer uten dato
+
+Med offentleglova som eksempel:
+
+1. **Vedtatt:** Lov 19. juni 2026 nr. 36 endrer offentleglova §§ 2, 6, 7, 8 og 30 «frå den tid Kongen bestemmer». Den ukentlige hentingen finner notatet i datasettet og kunngjøringen i Lovtidend avd. I.
+2. **Uten dato:** Endringen står i boksen «Vedtatt, ikke satt i kraft ennå» øverst når kalenderen er filtrert på Regelverk. Raden er «Offentleglova §§ 2, 6, 7, 8 og 30 – endret ved lov 19. juni 2026 nr. 36. Gjelder fra den dagen Kongen bestemmer». Den lenker til paragrafene i Regelverk og til endringsloven hos Lovdata. Uten filter vises den ikke, som andre frister uten fast dag.
+3. **Satt i kraft:** Når resolusjonen om ikrafttredelse kunngjøres, finner hentingen den neste mandag. Endringen flyttes da inn i tidslinjen på datoen («Endring i offentleglova gjelder fra 1. januar 2027»). Den vises da også uten filter, og på forsiden når den er blant de tre neste.
+4. **Gjelder:** Etter datoen forsvinner raden. Teksten i Regelverk oppdateres når datasettet fra Lovdata har den nye teksten.
+
+**Forslag:** Ta med endringer uten dato. For skoleledere er det nyttig å vite hva som er vedtatt før datoen er satt.
+
+### 6. Rekkefølgen
+
+Eier lar Claude velge. Rekkefølgen er:
+
+1. Siden, filtrene, lenkene og flyttingen fra de gamle kalenderne.
+2. Forsiden.
+3. Skoleruta, inntaksdatoene og regelverket.
+4. Kontrollsakene og CI.
+
+### De gamle kalenderne
+
+- **Boksene:** Boksene i Inntak og Vurdering som lenker til Kalender for inntak og Kalender for eksamen, beholder tekst, ikon og plass. De lenker til kalenderen, ferdig filtrert:
+  - `#/kalender?tema=inntak`
+  - `#/kalender?tema=eksamen` (i dag `?vis=…` når boksen har en gruppe)
+- **Sidene:** De gamle sidene fjernes når kalenderen kan erstatte dem.
+- **Gamle adresser:** Adressene, favorittene og søketreffene til dem åpner den filtrerte kalenderen.
+
+### Fylkene som svarer (oppklaring)
+
+**De åtte fylkene** i arbeidsordren er fylkene eksamensdatoene hentes fra (`scripts/eksamen/kilder.ts`): Oslo, Rogaland, Nordland, Akershus, Innlandet, Telemark, Trøndelag og Finnmark.
+
+- **Tallet fem** i forslaget gjaldt fylker med datoer for inntak på sidene sine.
+- **Oslo, Innlandet og Nordland** svarer, men lenker bare til Vilbli.
+- **Telemark** ble lest på feil adresse. Miljøet slipper inn telemarkfylke.no, men ikke www.telemarkfylke.no.
+  - Telemark har datoene (hovedinntak 8. juli og sisteinntak 5. august 2026).
+  - Det blir seks fylker med datoer: Trøndelag, Telemark, Akershus, Troms, Finnmark og Rogaland.
+
+**Sjekket på nytt 05.10.2026:**
+
+| | Fylker |
+|---|---|
+| Svarer | Oslo, Rogaland (undersidene), Nordland, Akershus, Innlandet, Telemark (uten www, ustabilt), Trøndelag, Troms (tregt), Finnmark |
+| Stengt av miljøet (ikke åpnet) | Østfold (ofk.no), Buskerud (bfk.no), Vestfold (vestfoldfylke.no), Agder (agderfk.no), Møre og Romsdal (mrfylke.no), www.telemarkfylke.no |
+| Stengt av nettstedet selv | Vestland (vestlandfylke.no bryter forbindelsen), Vilbli (robotsjekk), Lovdata |
+
+- **Troms** svarer nå. 04.10.2026 sto Troms blant fylkene som stengte. Troms kan da legges inn i eksamenskildene i denne pakken.
+
+**Inntaksdatoene, endret forslag:** Med seks fylker hentes datoene automatisk, som eksamensdatoene.
+
+- Et mønster per fylke skriver til `data/inntak/datoer.json`, med `grunnlag: praksis`.
+- Både eksakte datoer («8. juli») og uker («uke 28/29») leses.
+- Datoene er fylkets egne og vises bare når fylket er valgt. Regelen om at to fylker må ha samme dato, brukes ikke.
+- Finner mønsteret ikke datoen, gir det en kontrollsak.
+- Uten valgt fylke står den nasjonale oppføringen «juli–august».
+- Påminnelsen i kontrollrunden i mai beholdes.
