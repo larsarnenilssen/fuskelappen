@@ -204,7 +204,7 @@ Skjemaet defineres med zod og valideres i testene.
   - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
   - **Skolemiljø:** Skolemiljø (fase 7).
-  - **Oppslag:** Begreper, Regelverk. Om Frister og årshjul (fase 8) står her eller øverst på forsiden, avgjøres i fase 8.
+  - **Oppslag:** Kalender, Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen står her, og forsiden har gruppen «Neste datoer» med de tre neste datoene (avgjørelse 066).
   - Lokale profiler (fase 9) hører hjemme i Innstillinger.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
@@ -559,11 +559,12 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 ### Fase 8 – Frister og årshjul
 
+*(Fase 6, pakke 5, 05.10.2026:)* Den samlede oversikten over fristene er bygget som **Kalenderen** (`#/kalender`, avgjørelse 066): fristene fra alle manifestene, skoleruta fra fylkenes forskrifter, fylkenes datoer for inntak og vedtatte endringer i regelverket, med filter på tema og hvem det gjelder, de neste tolv månedene eller et skoleår. Fase 8 bygger videre på den og på datafilene (`data/skolerute/`, `data/inntak/`, `data/lovdata/kommende.json`).
+
 **Leveranser**
 
-- Samlet oversikt over frister fra alle moduler, filtrert på modul, målgruppe og nivå.
-- Visning som årshjul og som liste.
-- Eksport til kalender (.ics), generert i nettleseren.
+- Visning som årshjul, ved siden av listen i kalenderen.
+- Eksport til kalender (.ics), generert i nettleseren, fra postene i kalenderen med det filteret brukeren har valgt.
 - *(Ønske fra eier 04.10.2026)* **Dagens jukselapp** (navnet endret fra «Dagens fuskelapp», eier 04.10.2026)**:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den tas i denne fasen fordi den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet. Da finnes det også innhold fra de fleste modulene.
   - Dagens jukselapp skrus av og på fra forsiden (eier 04.10.2026), og gjerne også under Innstillinger. Den er av fra start, og valget lagres lokalt som de andre valgene.
   - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.
