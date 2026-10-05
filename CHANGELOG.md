@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Kalender for inntak og Kalender for eksamen** åpner kalenderen, ferdig filtrert. Lagrede favoritter og lenker til de gamle sidene virker fortsatt.
 - **Svar, svarfrist og andre inntak** og klagen på inntak står i juli og august.
 - **Inntaksdatoer fra Østfold, Buskerud, Rogaland og Møre og Romsdal** kommer med fra neste inntak. Sidene deres har ikke årstall, så datoene hentes fra januar til august.
+- **Forsiden på skrivebord:** «Neste datoer» og favorittene står i en egen kolonne til høyre, med en lys flate i temafargen. Temagruppene står ved siden av, i to kolonner når skjermen er bred nok.
 - **Kalenderen på stor skjerm** står i to eller tre deler side om side, ikke fire, så kortene har plass til lange ord.
 - **Fra kalenderen til fylkessiden:** «Hos fylkeskommunen» er åpen når du kommer fra en dato i kalenderen.
 - **Filterboksen i kalenderen** heter «Filtrer kalenderen». Når den er lukket, står valgene på en linje under. På stor skjerm står de tre filtrene like langt fra hverandre.

@@ -186,6 +186,20 @@ function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) =
   );
 }
 
+/** Sant når skjermen er minst så bred, og oppdateres når bredden endres. */
+function useMinstBredde(rem: number): boolean {
+  const sporring = `(min-width: ${rem}rem)`;
+  const [treff, settTreff] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia(sporring).matches);
+  useEffect(() => {
+    if (!window.matchMedia) return;
+    const mq = window.matchMedia(sporring);
+    const lytt = () => settTreff(mq.matches);
+    mq.addEventListener('change', lytt);
+    return () => mq.removeEventListener('change', lytt);
+  }, [sporring]);
+  return treff;
+}
+
 export default function Forside() {
   const { t, malform } = useTekst();
   const { favoritter, forside } = useTilstand();
@@ -193,6 +207,7 @@ export default function Forside() {
   const [tilpass, settTilpass] = useState(false);
   const [endrer, settEndrer] = useState<string | null>(null);
   const topp = useRef<HTMLDivElement>(null);
+  const skrivebord = useMinstBredde(64);
 
   // Toppfeltet viser en søkeknapp når søkefeltet er rullet ut av syne (avgjørelse 056).
   useEffect(() => {
@@ -295,8 +310,17 @@ export default function Forside() {
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
-              {/* To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026). */}
-              <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+              {skrivebord && !bare ? (
+                // Skrivebord (eier 05.10.2026): «Neste datoer» og favorittene står i en egen kolonne til høyre, i
+                // rekkefølgen fra «Tilpass». Temagruppene står i én kolonne ved siden av, og i to når det er plass.
+                <div class="forside-oppsett">
+                  <div class="forsidegrupper">{grupper.filter((id) => id !== NESTE && id !== FAVORITTER).map(gruppe)}</div>
+                  <div class="forside-sidekolonne">{grupper.filter((id) => id === NESTE || id === FAVORITTER).map(gruppe)}</div>
+                </div>
+              ) : (
+                // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026).
+                <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+              )}
             </>
           )}
 
