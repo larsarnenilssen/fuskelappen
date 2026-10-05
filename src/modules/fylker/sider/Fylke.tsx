@@ -36,7 +36,7 @@ function Lenkerad({ href, tittel, under, ikon, ekstern = false, merke }: { href:
   );
 }
 
-export default function Fylke({ parametre }: SideProps) {
+export default function Fylke({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
   const nr = parametre.fylke ?? '';
@@ -69,7 +69,8 @@ export default function Fylke({ parametre }: SideProps) {
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
-      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket>
+      {/* Lukket fra start, men åpen når brukeren kommer fra kalenderen for å lese mer hos fylket (eier 05.10.2026). */}
+      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket={sporring.get('apne') !== 'fylket'}>
         {temaer.length === 0 ? (
           <p class="dempet">{t('fylker.ingenLenker')}</p>
         ) : (

@@ -6,7 +6,7 @@
 - **Ny modul Kalender** (`#/kalender`) under Oppslag. Den samler `frister()` fra alle manifestene. Beregningen er rene funksjoner i `src/modules/kalender/beregning/`.
 - **Visning:** de neste tolv månedene (standard) eller et skoleår (august–juli), inneværende eller neste. Neste skoleår står alltid. Uten eksamensdatoer står eksamen med måneden, med en merknad.
   - Loddrett tidslinje, med en rød strek for i dag og passerte datoer dempet.
-  - På stor skjerm står tre (fra 56rem) eller fire (fra 80rem) deler av året side om side.
+  - På stor skjerm står to (fra 64rem) eller tre (fra 72rem) deler av året side om side. Fire deler ga kortene mindre plass til teksten enn på mobil, og lange ord ble delt (eier 05.10.2026). Lange ord på smale mobiler deles med bindestrek (`hyphens: auto`).
 - **Filter i adressen:** `tema` (inntak, vurdering, eksamen, skolerute, regelverk) og `vis` (elever, privatister, lærlinger, voksne, fortrinnsrett), og `visning=skolear&aar=…`.
   - Fristene har fått feltet `tema` (uten feltet gjelder modulen) og felles gruppenavn (`ungdom` ble `elever`, `fortrinn` ble `fortrinnsrett`). Gamle adresser med de gamle navnene virker.
 - **Frister uten fast dag** vises bare med tema i filteret:

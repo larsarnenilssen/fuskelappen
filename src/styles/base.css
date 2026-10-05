@@ -6994,8 +6994,8 @@ a.knapp {
 
 /*
  * Kalenderen (fase 6, pakke 5, avgjørelse 066). Loddrett tidslinje med datoen til venstre, et punkt i temafargen og et
- * kort som åpnes. Passerte datoer er dempet, og en rød strek viser i dag. På stor skjerm er siden bredere, og tre eller
- * fire deler av året står side om side (`data-deler`).
+ * kort som åpnes. Passerte datoer er dempet, og en rød strek viser i dag. På stor skjerm er siden bredere, og to eller
+ * tre deler av året står side om side (`data-deler`).
  */
 @media (min-width: 64rem) {
   main:has(.kalender) {
@@ -7187,8 +7187,8 @@ a.knapp {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.kal-kolonner[data-deler='4'] {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.kal-kolonner[data-deler='2'] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .kal-kolonne {
@@ -7299,6 +7299,11 @@ a.knapp {
 
 .kal-kort {
   min-width: 0;
+  /* Lange ord som ikke får plass på smale mobiler, deles der ordboken for målformen tillater det, med bindestrek.
+     Bare ord på minst 12 tegn deles, så vanlige ord flyttes til neste linje (eier 05.10.2026). */
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 12 5 5;
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-s);
   background: var(--farge-flate);

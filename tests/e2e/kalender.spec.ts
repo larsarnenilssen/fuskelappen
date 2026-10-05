@@ -46,6 +46,11 @@ test.describe('kalenderen', () => {
     await page.goto('./#/kalender?visning=skolear&tema=inntak&vis=voksne');
     await expect(page.locator('.kal-kort-lokal').first()).toBeVisible();
     await expect(page.locator('.kal-kort-lokal .merke-fylke').first()).toHaveText('Vestland');
+    // Lenken til fylkessiden åpner «Hos fylkeskommunen», som ellers er lukket (eier 05.10.2026).
+    const kort = page.locator('.kal-kort-lokal').first();
+    await kort.locator('.kal-topp').click();
+    await kort.locator('.kal-lenker a[href^="#/fylker/46"]').click();
+    await expect(page.locator('[data-rubrikk=fylke-lenker] .kortknapp')).toHaveAttribute('aria-expanded', 'true');
   });
 
   test('neste skoleår kan velges', async ({ page }) => {

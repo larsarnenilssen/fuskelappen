@@ -6,7 +6,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Lagt til
 
-- **Kalenderen** under «Oppslag»: fristene og datoene fra hele appen på én side, de neste tolv månedene eller et skoleår. Filter på tema (inntak, vurdering, eksamen, skolerute, regelverk) og hvem det gjelder (elever, privatister, lærlinger, voksne, fortrinnsrett). Passerte datoer er dempet, og en strek viser i dag. Trykk på en dato for å lese mer og gå videre til veivisere, begreper og sider. På stor skjerm står tre eller fire deler av året side om side.
+- **Kalenderen** under «Oppslag»: fristene og datoene fra hele appen på én side, de neste tolv månedene eller et skoleår. Filter på tema (inntak, vurdering, eksamen, skolerute, regelverk) og hvem det gjelder (elever, privatister, lærlinger, voksne, fortrinnsrett). Passerte datoer er dempet, og en strek viser i dag. Trykk på en dato for å lese mer og gå videre til veivisere, begreper og sider. På stor skjerm står to eller tre deler av året side om side.
 - **«Neste datoer» på forsiden:** de tre neste datoene fra kalenderen. På mobil står neste dato under overskriften til du åpner gruppen. Gruppen kan flyttes og slås av under «Tilpass».
 - **Eksamensdatoer fra seks fylker til:** Østfold, Buskerud, Vestfold, Agder, Møre og Romsdal og Troms. Med et av dem valgt viser fristene når datoene for muntlig eksamen for privatister kommer, og søknadsfristen for tilrettelegging, der fylket har dem. Datoene teller også med når fylkene sammenlignes.
 
@@ -16,6 +16,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Kalender for inntak og Kalender for eksamen** åpner kalenderen, ferdig filtrert. Lagrede favoritter og lenker til de gamle sidene virker fortsatt.
 - **Svar, svarfrist og andre inntak** og klagen på inntak står i juli og august.
 - **Inntaksdatoer fra Østfold, Buskerud, Rogaland og Møre og Romsdal** kommer med fra neste inntak. Sidene deres har ikke årstall, så datoene hentes fra januar til august.
+- **Kalenderen på stor skjerm** står i to eller tre deler side om side, ikke fire, så kortene har plass til lange ord.
+- **Fra kalenderen til fylkessiden:** «Hos fylkeskommunen» er åpen når du kommer fra en dato i kalenderen.
 - **Filterboksen i kalenderen** heter «Filtrer kalenderen». Når den er lukket, står valgene på en linje under. På stor skjerm står de tre filtrene like langt fra hverandre.
 - **Tabeller i lokale forskrifter** (f.eks. skoleruta) viser linjeskiftene i cellene, så datoene og hendingene står på hver sin linje. Gjelder forskriftene etter neste henting fra Lovdata.
 

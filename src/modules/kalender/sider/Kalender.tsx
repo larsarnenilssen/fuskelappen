@@ -1,6 +1,6 @@
 // Kalenderen (fase 6, pakke 5, avgjørelse 066): fristene og datoene fra alle modulene på en loddrett tidslinje, de neste
 // tolv månedene eller et skoleår. Filteret på tema og hvem det gjelder står i en boks som er lukket fra start, og alle
-// valgene står i adressen. Passerte datoer er dempet, og en strek viser i dag. På stor skjerm står tre eller fire
+// valgene står i adressen. Passerte datoer er dempet, og en strek viser i dag. På stor skjerm står to eller tre
 // deler av året side om side.
 import { Fragment } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
@@ -20,6 +20,7 @@ import { oversiktsid } from '../../favoritter.ts';
 import type { SideProps } from '../../typer.ts';
 import { EKSAMENSPLAN } from '../../vurdering/innhold.ts';
 import { kalenderRute, lesValg, sporringFor, type Kalendervalg } from '../adresse.ts';
+import { medFylketApent } from '../../fylker/innhold.ts';
 import {
   delInn,
   idagIndeks,
@@ -41,12 +42,16 @@ import { hentKalenderdata, samle, type Kalenderdata } from '../samle.ts';
 import { finnLenker, type Kalenderlenke } from '../lenker.ts';
 import { datocelle, datoLang, manedTittel, periodeTekst } from '../visning.ts';
 
-/** Hvor mange deler av året som står side om side: tre fra 56rem, fire fra 80rem (eier 04.10.2026). */
+/**
+ * Hvor mange deler av året som står side om side: to fra 64rem, der siden blir bredere, og tre fra 72rem. Grensene gir
+ * kortene minst like mye plass til teksten som på en vanlig mobil, så lange ord ikke deles. Fire deler ga for smale
+ * kort (eier 05.10.2026).
+ */
 function useDeler(): number {
   const beregn = () => {
     if (typeof window === 'undefined' || !window.matchMedia) return 1;
-    if (window.matchMedia('(min-width: 80rem)').matches) return 4;
-    return window.matchMedia('(min-width: 56rem)').matches ? 3 : 1;
+    if (window.matchMedia('(min-width: 72rem)').matches) return 3;
+    return window.matchMedia('(min-width: 64rem)').matches ? 2 : 1;
   };
   const [deler, settDeler] = useState(beregn);
   useEffect(() => {
@@ -430,7 +435,7 @@ function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing
               <ul class="kal-lenker">
                 {lenker.map((l) => (
                   <li key={l.rute}>
-                    <a href={`#${l.rute}`}>
+                    <a href={`#${medFylketApent(l.rute)}`}>
                       <span>
                         {l.tittel[malform]}
                         <small>{t(`sok.typer.${l.type}`)}</small>
