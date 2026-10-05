@@ -1,5 +1,5 @@
 # Vestland i veiviseren «Klage på karakter» (fase 6, pakke 3). Fylkesinnhold som supplerer det nasjonale steget med
-# samme id, og vises bare når Vestland er valgt. Bygger på skulereglane i Vestland (vestland-skulereglar).
+# samme id, og vises bare når Vestland er valgt. Bygger på skulereglane i Vestland (vestland-skoleregler).
 - id: kl-andre
   type: steg
   veiviser: klage-pa-karakter
@@ -10,7 +10,7 @@
   tekst:
     nb: "I skulereglane er bortvisning fra og annullering av eksamen en sanksjon med klagerett, etter vedtak av rektor selv. Klagen sendes til rektor innen tre uker. Tar ikke rektor klagen til følge, sendes den til avdelingsdirektøren for opplæring og kompetanse, og så til statsforvalteren."
     nn: "I skulereglane er bortvising frå og annullering av eksamen ein sanksjon med klagerett, etter vedtak av rektor sjølv. Klaga blir send til rektor innan tre veker. Tek ikkje rektor klaga til følgje, blir ho send til avdelingsdirektøren for opplæring og kompetanse, og så til statsforvaltaren."
-  paragrafer: [vestland-skulereglar/8, vestland-skulereglar/13]
+  paragrafer: [vestland-skoleregler/8, vestland-skoleregler/13]
   kilder:
     - { id: vestland-forskrift-skulereglar, punkt: "§ 8 tredje ledd nr. 6" }
     - { id: vestland-forskrift-skulereglar, punkt: "§ 13 første til tredje ledd" }

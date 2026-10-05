@@ -1,0 +1,860 @@
+{
+ "id": "telemark-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak og formidling til videregående opplæring, Telemark fylkeskommune",
+ "korttittel": "Inntak og formidling i Telemark",
+ "korttittelNn": "Inntak og formidling i Telemark",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-10-3455",
+ "sistEndret": "2026-01-01",
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "40"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å fastsette rettigheter og plikter for søkere til videregående opplæring i Telemark fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for inntak til videregående opplæring i Telemark fylkeskommune. Forskriften gjelder ikke for private skoler."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Inntak til videregående opplæring for unge",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntaksprinsipp",
+     "ledd": [
+      {
+       "tekst": [
+        "I Telemark fylkeskommune gjelder nærskoleprinsippet. Nærskolen vil variere med hvilket utdanningstilbud søkerne ønsker. I noen kommuner vil flere skoler regnes som nærskole. Det innebærer at søkere har en prioritet til skolen nærmest sitt bosted som har det utdanningsprogrammet eller programområdet de ønsker. Fylkeskommunens nærskoleoversikt viser hvilke skoler som er nærskole for hver kommune."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Opphevet",
+     "ledd": [],
+     "endringer": [
+      [
+       "Opphevet ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Søknad og frister",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad om videregående opplæring skal registreres på ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/"
+        },
+        ". Søknadsfristen er 1. februar for elever som søker fortrinn eller individuell behandling etter ",
+        {
+         "t": "forskrift om grunnskoleopplæringa og den vidaregåande opplæringa § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " og for lærekandidater. For andre elever og for lærlinger er søknadsfristen 1. mars."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Endring av søknaden",
+     "ledd": [
+      {
+       "tekst": [
+        "Frist for å gjøre endringer på søknaden er 30. april. Etter fristen kan søknaden kun endres ved særlig tungtveiende grunner som må dokumenteres. Muligheten for endring gjelder ikke søkere med rett til fortrinn."
+       ]
+      },
+      {
+       "tekst": [
+        "De som endrer søknaden etter 1. mars til å gjelde tilbud omtalt i § 13 i denne forskriften (Inntak til spesielle tilbud), vil bare bli innkalt til ferdighetsprøver, intervju eller tester dersom skolen har kapasitet."
+       ]
+      },
+      {
+       "tekst": [
+        "Ønsker til landslinjer og landsdekkende linjer på søknaden kan ikke endres etter 1. mars."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Behandling av søknader som kommer etter søknadsfristene",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan fram til 1. juli ta imot søknader fra søkere bosatt i Telemark. Elever som har søkt etter søknadsfristen 1. mars, blir prioritert etter de som søkte innen fristen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader som kommer via oppfølgingstjeneste og barnevern, behandles fortløpende uavhengig av frister."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader med rett til fortrinn etter ",
+        {
+         "t": "opplæringsforskrifta § 4-21",
+         "l": "forskrift/2024-06-03-900/§4-21",
+         "a": "opplaeringsforskrifta/4-21"
+        },
+        " og ",
+        {
+         "t": "§ 4-22",
+         "l": "forskrift/2024-06-03-900/§4-22",
+         "a": "opplaeringsforskrifta/4-22"
+        },
+        " omfattes ikke av denne paragrafen, men skal avtales mellom fylkene. Det økonomiske ansvaret er hjemlet i ",
+        {
+         "t": "§ 22-1",
+         "l": "forskrift/2024-06-03-900/§22-1",
+         "a": "opplaeringsforskrifta/22-1"
+        },
+        " og ",
+        {
+         "t": "§ 22-2 i forskrift til opplæringslova",
+         "l": "forskrift/2024-06-03-900/§22-2",
+         "a": "opplaeringsforskrifta/22-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Søknad om fortrinn",
+     "ledd": [
+      {
+       "tekst": [
+        "Når fylkeskommunen vurderer søknader om fortrinn for elever med sterkt nedsatt funksjonsevne, skal det legges særlig vekt på"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "nærhet til skolen, belastningen ved lang reisevei skal begrenses"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "kompetanse på skolene, hvilke skoler har kompetansen søkeren trenger"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "kapasitet på skolen, hvilke skoler har nødvendige rom og utstyr"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "sosial tilhørighet, hvor kan søkeren bli del av en gruppe."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til Vg1 fører opp minst tre ulike utdanningsprogram i prioritert rekkefølge i søknaden. Søkere som ikke fører opp tre ulike utdanningsprogram på søknaden og ikke konkurrerer seg inn, kan bli tatt inn til et annet utdanningsprogram med ledig kapasitet. Søkeren får stå på venteliste til sine opprinnelige ønsker."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Inntak til Vg2 og Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til Vg2 og Vg3 som ikke konkurrerer seg inn på sine ønsker, kan bli plassert på andre programområder de er kvalifisert til. Søkerne får stå på venteliste til sine opprinnelige ønsker."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til Vg2 og Vg3 studieforberedende utdanningsprogram som søker samme program på samme skole de gikk på lavere trinn, prioriteres foran søkere fra andre skoler og andre utdanningsprogram."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Søkere til Vg2 og Vg3, som ikke har bestått i alle fag",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til Vg2 og Vg3 som ikke har bestått i alle fag, kan tas inn på neste nivå dersom skolen etter en helhetsvurdering mener søkeren har nødvendig kompetanse til å følge opplæringen. Som hovedregel kan ikke søkeren ha karakter 1 eller mangle vurdering i mer enn to fellesfag. Skolen skal utarbeide en plan som viser hvordan eleven kan fullføre fag som ikke er bestått. Fylkeskommunen tar endelig avgjørelse om inntak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak til spesielle tilbud",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til Vg1 musikk, dans og drama"
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med dette som førsteønske per 1. mars får tilbud om å delta i en ferdighetsprøve som kan gi individuelle tilleggspoeng. Tilleggspoengene legges sammen med karakterpoeng og danner konkurransegrunnlaget for søkerne. Det er skolen som innkaller til, og gjennomfører, prøven. Inntil 50 prosent av plassene kan tildeles på grunnlag av ferdighetsprøven i kombinasjon med karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til Vg1 idrettsfag"
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med dette som førsteønske kan få tilleggspoeng ved å dokumentere aktivitet eller prestasjoner. Tilleggspoengene legges sammen med karakterpoeng og danner konkurransegrunnlaget for søker. Det er skolen som vurderer dokumentasjonen. Inntil 50 prosent av plassene kan tildeles på grunnlag av dokumentasjon i kombinasjon med karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til Vg2 International Baccalaureate Diploma Programme (IB)"
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen som har IB vurderer søkere individuelt på grunnlag av karakterer, intervju og anbefaling fra avgiverskolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til Vg2 ambulansefag"
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med dette som førsteønske innkalles til intervju og fysiske tester i styrke og utholdenhet. Testene gjennomføres av ambulansetjenesten og skolen og skal synliggjøre kravene som stilles for å få læreplass i ambulansefaget."
+       ]
+      },
+      {
+       "tekst": [
+        "Noen av plassene til Vg2 ambulanse kan settes av til søkere uten rett til videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Plikten til grunnskoleopplæring for nyankomne",
+     "ledd": [
+      {
+       "tekst": [
+        "Så lenge unge fortsatt er i opplæringspliktig alder (6–16 år), gjelder retten og plikten til grunnskoleopplæring. Dette gjelder selv om vedkommende har dokumentert fullført grunnskoleopplæring fra et annet land. Fylkeskommunen kan derfor ikke ta inn søkere under 16 år til videregående opplæring. Dette inkluderer også inntak til kombiløpet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Søknad til landslinjer og landsdekkende tilbud",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknader til landslinjer og landsdekkende tilbud registreres i søkerens eget fylke på ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Skoleplass i andre fylker",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan kjøpe skoleplass i andre fylker for søkere med rett, dersom ønsket utdanningsprogram eller programområde ikke tilbys i Telemark."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere bosatt i Nissedal og Fyresdal kommune konkurrerer på lik linje med søkere fra Agder om skoleplass ved Tvedestrand videregående skole. Telemark fylkeskommune har økonomisk ansvar for skyss for disse elevene."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Flytting til Telemark",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra andre fylker som skal flytte til Telemark, må søke om videregående opplæring innen gjeldende frist og krysse av for flytting i søknaden. Søkere som ikke har folkeregistrert adresse i fylket innen 1. juli, vil bli behandlet som gjesteelev og konkurrerer om ledige plasser. Søkere med rett til fortrinn omhandles ikke av denne paragrafen, jf. ",
+        {
+         "t": "§ 7",
+         "l": "forskrift/2024-12-10-3455/§7",
+         "a": "telemark-inntak/7"
+        },
+        " siste avsnitt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Skoleplass til utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan etter søknad prioritere skoleplass til norske utvekslingselever som kommer tilbake etter å ha tatt deler av opplæringen i utlandet. Prioritert plass innvilges bare dersom eleven har forhåndsavtale med skolen hvor de var elev før utenlandsoppholdet. Det er en forutsetning at opplæringen de har fått i utlandet er bestått og dokumenteres som tilstrekkelig grunnlag for inntak på det programområdet eleven søker."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen kan prioritere skoleplass til utvekslingselever fra utlandet som blir formidlet via godkjente organisasjoner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Elever som ikke møter til skolestart",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som ikke møter til skolestart og ikke har avtale om seinere oppstart, har ikke rett til å beholde plassen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Ventelister",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen sentralt gjennomfører siste inntak før skolestart i august. Deretter overtar skolene ansvaret for videre inntak og følger ventelistene kronologisk frem til 15. september. Unntak kan være dersom det har skjedd en feil i inntaket. Tilbud om skoleplass fra ventelisten må aksepteres innen 24 timer, etter dette kan skolen tilby skoleplassen til neste søker på ventelisten."
+       ]
+      },
+      {
+       "tekst": [
+        "Etter 15. september skal ikke skolene tilby ledige plasser til elever. Skoler kan slutte å ta inn fra visse ventelister også før denne datoen dersom obligatorisk elementer i undervisningen ikke kan tilbys til nye elever."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026, endringsforskriftens ledetekster er tolket etter regelgivers antatte ønske)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Inntak til kombinasjonsløp i videregående opplæring",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknader som kommer inn i løpet av skoleåret skal vurderes i forhold til kapasiteten ute ved skolene før vi kan tilby plass. Dette gjelder kun søkere mellom 16 og 18 år. Søkere som kommer til Norge etter fylke 18 år har frist for å søke kombinasjonsklasse innen 1. februar."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som går i kombinasjonsklasse har, uavhengig av fagsammensetning, oppmøteplikt til undervisning, og skolen kan avslutte en elev dersom ikke pliktene blir oppfylt."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Alternativ organisering av opplæringstilbud",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan benytte alternative opplæringsarenaer ved individuelle behov."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Mer opplæring i fag som er gjennomført, men ikke bestått",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som ikke har bestått fag, må søke fylkeskommunen om å ta faget på nytt innen en fastsatt dato som er minst en uke etter at standpunktkarakter og/eller eksamenskarakter foreligger. Eget søknadsskjema benyttes."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2935",
+        "l": "forskrift/2025-12-10-2935"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Inntak til videregående opplæring for voksne",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Søknad og frister",
+     "ledd": [
+      {
+       "tekst": [
+        "Voksne søker videregående opplæring, veiledning og/eller realkompetansevurdering på ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/"
+        },
+        ". Søkere må ha folkeregistrert adresse i Telemark. Voksne kan søke hele året, men veiledende søknadsfrist er 1. mars. Fylkeskommunen vurderer hvilke rettigheter søkeren har før det fattes vedtak om tilbud."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Inntaksrekkefølge",
+     "ledd": [
+      {
+       "tekst": [
+        "Når det er flere søkere enn plasser til et tilbud, rangeres søkerne ut fra ",
+        {
+         "t": "§ 13-4 i forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900/§13-4",
+         "a": "opplaeringsforskrifta/13-4"
+        },
+        ". Innenfor hver gruppe som er nevnt i forskriften, rangeres søkerne ut fra tidspunktet fylkeskommunen mottok søknaden i ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Tilbud i andre fylker",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan tilby opplæring i andre fylker hvis ønsket tilbud ikke finnes i Telemark eller hvis det mangler plasser i voksenopplæringstilbudet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Formidling av lærlinger, praksisbrevkandidater og lærekandidater",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Ansvar for formidling til læreplass og opplæringsplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen formidler søkere bosatt i Telemark til læreplass eller opplæringsplass til samarbeidsorgan for lærebedrifter (opplæringskontor) og godkjente lærebedrifter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Søknad og frister",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad om læreplass og opplæringsplass registreres på ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/"
+        },
+        ". Søknadsfristen er 1. februar for praksisbrevkandidater og lærekandidater. For lærlinger er søknadsfristen 1. mars. Formidling i samarbeid med oppfølgingstjenesten kan skje uavhengig av disse fristene."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra andre fylker som skal flytte til Telemark, må søke læreplass/opplæringsplass innen gjeldende frister, og krysse av for flytting i søknaden. Når søkere har ny folkeregistrert adresse i fylket innen 1. juli, formidles de til samarbeidsorgan for lærebedrifter (opplæringskontor) og godkjente lærebedrifter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "28",
+     "visNr": "§ 28",
+     "tittel": "Endring av søknaden",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere kan endre søknaden innen 30. april, men etter 1. mars må søkere kontakte fylkeskommunen. Etter 30. april kan søknaden endres bare ved særlig tungtveiende grunner som må dokumenteres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "29",
+     "visNr": "§ 29",
+     "tittel": "Søkere som ønsker hele opplæringen i bedrift",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever i ungdomsskole og de som mangler rett skolebakgrunn, kan søke full opplæring i bedrift."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle søkere til full opplæring i bedrift oppfordres til å søke skoleplass i tillegg."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "30",
+     "visNr": "§ 30",
+     "tittel": "Opplæringsløp med tre år i skole og læretid som bare inneholder verdiskaping",
+     "ledd": [
+      {
+       "tekst": [
+        "Automatiseringsfaget, dataelektronikerfaget og anleggsmaskinmekanikerfaget har tre års opplæring i skole og læretid som bare inneholder verdiskaping. Dersom søkere til slik læretid ikke har fått læreplass innen 1. september, har avgiverskolen ansvar – etter eventuell mer opplæring – for å melde dem opp til fagprøve."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "31",
+     "visNr": "§ 31",
+     "tittel": "Vg3 fagopplæring",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som er kvalifiserte, men som ikke får tilbud om læreplass, har rett til alternativ opplæring i et fag som bygger på det programområdet de har gjennomført på Vg2. Rett til Vg3 fagopplæring i skole forutsetter at søker"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "har søkt læreplass på ",
+            {
+             "t": "www.vigo.no",
+             "l": "https://www.vigo.no/"
+            },
+            " innen gjeldende frister"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Har rett etter ",
+            {
+             "t": "opplæringsloven",
+             "l": "lov/2023-06-09-30"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "har bestått i alle programfag, men kan ha karakteren 1 i inntil to fellesfag."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "For lærekandidatsøkere gjelder ikke kravet om bestått i fagene, men at Vg1 og Vg2 er fullført."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Felles bestemmelser",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "32",
+     "visNr": "§ 32",
+     "tittel": "Unntak",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan gjøre unntak fra bestemmelsene i inntaks- og ",
+        {
+         "t": "formidlingsforskriften",
+         "l": "forskrift/2008-12-19-1491"
+        },
+        " hvis det foreligger særlig tungtveiende grunner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "33",
+     "visNr": "§ 33",
+     "tittel": "Mindre endringer i forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektøren kan foreta mindre endringer i forskriften. Dersom endringene påvirker den enkelte søkers rett til inntak eller formidling, skal de behandles politisk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "34",
+     "visNr": "§ 34",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fra 1. januar 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

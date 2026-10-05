@@ -1,0 +1,121 @@
+{
+ "id": "vestland-skyss",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om rabattordning som alternativ til gratis skyss, eller full skyssgodtgjersle i vidaregåande opplæring, Vestland fylkeskommune",
+ "korttittel": "Skyss og rabattordning i Vestland",
+ "korttittelNn": "Skyss og rabattordning i Vestland",
+ "malform": "nn",
+ "refid": "forskrift/2025-12-09-3018",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-07-31",
+ "lokaltype": "skyss",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "46"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om rabattordning som alternativ til gratis skyss, eller full skyssgodtgjersle i vidaregåande opplæring, Vestland fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Verkeområde og varigheit",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gjeld elevar under 21 år busett i Vestland fylke som går på vidaregåande skole i fylket."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskrifta gjeld for skoleåret 2026/2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Rabattordning i staden for gratis skoleskyss eller full skyssgodtgjersle",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar som etter ",
+        {
+         "t": "opplæringslova § 9-1",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        " og etter ",
+        {
+         "t": "opplæringslova § 21-1",
+         "l": "lov/2023-06-09-30/§21-1",
+         "a": "opplaeringslova/21-1"
+        },
+        " jf. ",
+        {
+         "t": "§ 9-1",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        " har rett til gratis skoleskyss, skal i staden få tilbod om rabattert 30-dagarsbillett for ungdom (ungdomsbillett)."
+       ]
+      },
+      {
+       "tekst": [
+        "Prisen på den rabatterte 30-dagarsbilletten for ungdom skal vere under 50 prosent av prisen på ein ordinær 30-dagarsbillett for vaksne, og skal gjelde reiser til skole, arbeid og fritidsaktivitetar heile skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Ordninga gjeld berre for elevar som bur i eit område med godt utbygd kollektivtilbod. I Vestland fylke er dette omtalt som «ungdomsbillettområdet»."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Særtilfelle",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar som bur i ungdomsbillettområdet og som ikkje kan få forsvarleg skoleskyss med kollektivmiddel kan likevel søkje om gratis skoleskyss. Søknad vert formidla av eleven sin skole til Vestland fylkeskommune ved Skyss."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta trår i kraft 1. august 2026."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

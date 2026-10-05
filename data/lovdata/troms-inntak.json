@@ -1,0 +1,1288 @@
+{
+ "id": "troms-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Troms fylkeskommune",
+ "korttittel": "Inntak og formidling i Troms",
+ "korttittelNn": "Inntak og formidling i Troms",
+ "malform": "nb",
+ "refid": "forskrift/2024-11-21-3061",
+ "sistEndret": null,
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "55"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den lokale forskriften er å regulere rettigheter og plikter for søkere til videregående opplæring i Troms, og sikre en rettferdig og forutsigbar inntaksprosess. Inntaksforskriften skal sikre et miljømessig, sosialt og økonomisk bærekraftig utdanningstilbud for ungdom og voksne i Troms. Den skal også bidra til økt gjennomføring av videregående opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Den lokale forskriften fastsetter hvordan Troms fylkeskommune skal gjennomføre inntak og formidling ved å utfylle ",
+        {
+         "t": "opplæringslovens",
+         "l": "lov/2023-06-09-30"
+        },
+        " (heretter kalt oppll.) ",
+        {
+         "t": "kapittel 5",
+         "l": "lov/2023-06-09-30/kap5"
+        },
+        ", ",
+        {
+         "t": "7",
+         "l": "lov/2023-06-09-30/kap7"
+        },
+        ", ",
+        {
+         "t": "18",
+         "l": "lov/2023-06-09-30/kap18"
+        },
+        " og ",
+        {
+         "t": "19",
+         "l": "lov/2023-06-09-30/kap19"
+        },
+        ", samt ",
+        {
+         "t": "opplæringsforskrifta kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        ", ",
+        {
+         "t": "5",
+         "l": "forskrift/2024-06-03-900/kap5"
+        },
+        ", ",
+        {
+         "t": "6",
+         "l": "forskrift/2024-06-03-900/kap6"
+        },
+        ", ",
+        {
+         "t": "7",
+         "l": "forskrift/2024-06-03-900/kap7"
+        },
+        ", ",
+        {
+         "t": "13",
+         "l": "forskrift/2024-06-03-900/kap13"
+        },
+        " og ",
+        {
+         "t": "14",
+         "l": "forskrift/2024-06-03-900/kap14"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for inntak til videregående opplæring og formidling til opplæring i bedrift i Troms. Virkeområdet omfatter fylkeskommunale skoler, landslinjer, landsdekkende linjer og regionale tilbud."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Rett til videregående opplæring",
+     "ledd": [
+      {
+       "tekst": [
+        "Fullføringsreformen medfører utvidet rett til å fullføre videregående opplæring. Retten er delt i ulike kategorier:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ungdomsrett, jf. ",
+            {
+             "t": "oppll. § 5-1",
+             "l": "lov/2023-06-09-30/§5-1",
+             "a": "opplaeringslova/5-1"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Voksenrett, jf. ",
+            {
+             "t": "oppll. § 18-3",
+             "l": "lov/2023-06-09-30/§18-3",
+             "a": "opplaeringslova/18-3"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Rett til yrkesfaglig rekvalifisering, jf. ",
+            {
+             "t": "oppll. § 18-4",
+             "l": "lov/2023-06-09-30/§18-4",
+             "a": "opplaeringslova/18-4"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Rett til påbygg etter bestått fag- og yrkesopplæring, jf. ",
+            {
+             "t": "oppll. §§ 5-7",
+             "l": "lov/2023-06-09-30/§5-7",
+             "a": "opplaeringslova/5-7"
+            },
+            " og ",
+            {
+             "t": "18-7",
+             "l": "lov/2023-06-09-30/§18-7",
+             "a": "opplaeringslova/18-7"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med voksenrett skal normalt tas inn til et tilbud som er organisert for voksne, men kan søke om et tilbud etter § 5-1 og skal da tas inn etter søkere med ungdomsrett."
+       ]
+      },
+      {
+       "tekst": [
+        "Kun personer som har rett til videregående opplæring kan gis tilbud om videregående skole eller kontrakt om opplæring i bedrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Vilkår for inntak av elever til videregående skole",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Inntaksregioner ved inntak til videregående skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med ungdomsrett har rett til skoleplass i den inntaksregionen der de er folkeregistrert per 1. mars det året det søkes inntak. Søkere med ungdomsrett har også rett til å stå som søker til tilbud i andre inntaksregioner dersom utdanningsprogrammet/programområdet ikke tilbys i søkerens egen inntaksregion."
+       ]
+      },
+      {
+       "tekst": [
+        "Troms er delt inn i fire inntaksregioner: Sør-Troms, Midt-Troms, Tromsø og omegn og Nord-Troms."
+       ]
+      },
+      {
+       "tekst": [
+        "Sør-Troms"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Videregående skoler: Heggen videregående skole og Stangnes Rå videregående skole."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Kommuner: Harstad, Kvæfjord, Tjeldsund og Ibestad."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Midt-Troms"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Videregående skoler: Sjøvegan videregående skole, Bardufoss videregående skole og Senja videregående skole."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Kommuner: Gratangen, Lavangen, Bardu, Salangen, Målselv, Sørreisa, Dyrøy og Senja."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Tromsø og omegn"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Videregående skoler: Nordkjosbotn videregående skole, Breivang videregående skole, Kongsbakken videregående skole, Tromsdalen videregående skole, Ishavsbyen videregående skole og Kvaløya videregående skole."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Kommuner: Tromsø, Karlsøy, Balsfjord, Lyngen og Storfjord."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Nord-Troms"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Videregående skoler: Nord-Troms videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Kommuner: Gáivuotna Kåfjord, Skjervøy, Nordreisa og Kvænangen."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra Ibestad kommune kan søke skoleplass ved Sjøvegan videregående skole."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra Lyngen og Storfjord kommune kan søke skoleplass ved Nord-Troms videregående skole."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra Balsfjord kommune kan søke skoleplass ved Bardufoss videregående skole og Senja videregående skole på tilbud som ikke gis ved Nordkjosbotn videregående skole."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere bosatt på Svalbard kan søke opplæring i Troms fylkeskommune. Rettighetene til disse søkerne bestemmes av Samarbeidsavtale mellom Troms fylkeskommune og Longyearbyen lokalstyre."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen kan sikre at søkere blir tatt inn i en annen inntaksregion dersom det er ledig plass eller forhold for at søkeren har et behov for skoleplass i en annen inntaksregion. Dette kan blant annet være korte reisevei, at elevene kan bo hjemme eller økonomiske forhold."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Flytting innen og til Troms fylke",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med ungdomsrett som flytter mellom inntaksregioner etter 1. mars må dokumentere planlagt flytting innen 15. juni for å ha rett til skoleplass i den aktuelle inntaksregionen. Ny adresse må være registrert i folkeregisteret innen 10. august."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med ungdomsrett som flytter til Troms etter 1. mars må dokumentere planlagt flytting innen 15. juni for å ha rett til skoleplass i den aktuelle inntaksregionen. De vil da få ungdomsrett og være registrert som søker på lik linje med andre søkere med ungdomsrett i fylket. Ny adresse må være registrert i folkeregisteret innen 10. august."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Grenseavtale",
+     "ledd": [
+      {
+       "tekst": [
+        "For søkere med ungdomsrett gjelder egne grenseavtaler med Nordland fylkeskommune og Finnmark fylkeskommune. Avtalene er tilgjengelig på Troms fylkeskommunes nettside."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Inntak av elever som har vært på utveksling i utlandet",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som reiser til utlandet i forbindelse med elevutveksling kan få forhåndsgodkjent året i utlandet som videregående trinn 1 eller trinn 2 i Norge. De må selv søke skoleplass innen frist i Vigo på neste trinn ved den skolen som har forhåndsgodkjent året i utlandet."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen ved rektor godkjenner enkeltfag og hele opplæringsår fra utlandet som videregående trinn 1 eller trinn 2 i Norge."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som får godkjent et opplæringsår i utlandet blir tatt inn på neste trinn. Elever som ikke får, eller ikke ønsker å få, året i utlandet godkjent som videregående trinn 1 eller trinn 2 i Norge må søke om inntak til videregående trinn 1 eller trinn 2 og konkurrere om skoleplass etter poeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som ønsker å få godkjent ett opplæringsår fra utlandet, som ikke er forhåndsgodkjent, må kontakte fylkeskommunen innen 1. mars."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Behandling av søknad om skoleplass mottatt etter frist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere bosatt i Troms fylke som søker etter søknadsfrist i henhold til ",
+        {
+         "t": "opplæringsforskrifta § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        ", behandles så langt det er mulig, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-5",
+         "l": "forskrift/2024-06-03-900/§4-5",
+         "a": "opplaeringsforskrifta/4-5"
+        },
+        ". Søkere skal varsles dersom søknaden ikke kan behandles."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med ungdomsrett fra andre fylker som søker etter søknadsfrist blir normalt ikke behandlet i inntaket. Unntaket er søkere som må vurderes individuelt eller som flytter til Troms fylke, jf. ",
+        {
+         "t": "§ 5",
+         "l": "forskrift/2024-11-21-3061/§5",
+         "a": "troms-inntak/5"
+        },
+        " i denne forskriften."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Endring av søknad om skoleplass etter frist",
+     "ledd": [
+      {
+       "tekst": [
+        "Endring av ønsket skoleplass kan gjøres én gang etter søknadsfrist dersom forespørsel kommer via rådgiver på skolen eller oppfølgingstjenesten (OT). Søkere med frist 1. februar kan endre ønsket skoleplass innen 15. mars. Søkere med frist 1. mars kan endre ønsket skoleplass innen 15. april."
+       ]
+      },
+      {
+       "tekst": [
+        "Etter nevnte frister kan endring av søknad kun gjøres dersom det foreligger tungtveiende grunner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Pliktig oppmøte første skoledag",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever plikter å møte første skoledag. Elever som uteblir fra skolen første skoledag uten gyldig grunn, kan miste retten til den aktuelle skoleplassen."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som er forhindret fra å møte plikter å opplyse skolen om dette snarest mulig og senest i løpet av første skoledag. Gyldig grunn må dokumenteres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Inntak til videregående trinn 1, trinn 2 og trinn 3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Inntak til videregående trinn 1 for søkere som ikke konkurrerer seg inn på tilbud de har søkt",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til videregående trinn 1 som har ført opp tre prioriterte utdanningsprogram og som ikke konkurrerer seg inn på sine prioriterte utdanningsprogram og skoler, vil få tilbud om skoleplass på et av sine prioriterte utdanningsprogram ved en annen skole i egen region der det er ledig plass."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til videregående trinn 1 som har ført opp færre enn tre ulike utdanningsprogram og som ikke konkurrerer seg inn på noen av de oppførte utdanningsprogram, vil få tilbud om et utdanningsprogram ved en skole som har ledig plass."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak til trinn 1 Musikk, dans og drama",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har videregående trinn 1 Musikk, dans og drama som sitt første ønske, kan fremstille seg til en ferdighetsprøve. Prøven avholdes i den fordypning og ved den skolen som er satt opp som første ønske."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som fremstiller seg til en ferdighetsprøve kan få tilleggspoeng etter retningslinjer fastsatt av fylkeskommunen. Maksimalt antall tilleggspoeng som kan gis er 12."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntil 50 % av plassene kan tildeles på grunnlag av en ferdighetsprøve (inntaksprøve) i tillegg til en poengsum basert på karakterer."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen avgjør hvilke skoler som tilbyr denne ordningen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Inntak til trinn 1 Idrettsfag",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har videregående trinn 1 Idrettsfag som førsteønske kan få tilleggspoeng for dokumenterte idrettslige ferdigheter etter retningslinjer fastsatt av fylkeskommunen. Maksimalt antall tilleggspoeng som kan gis er 12."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntil 50 % av plassene kan tildeles på grunnlag av dokumenterte idrettslige ferdigheter i tillegg til en poengsum basert på karakterer."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen avgjør hvilke skoler som tilbyr denne ordningen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Inntak til videregående trinn 2 for søkere som ikke konkurrerer seg inn på tilbud de har søkt",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som ikke konkurrerer seg inn på sine prioriterte programområder og skoler, vil kunne få tilbud om skoleplass på et annet programområde som de er kvalifisert til, men som de selv ikke har prioritert i søknaden. Søkerne vil fortrinnsvis få et tilbud i egen region, men kan få tilbud om skoleplass i en annen region dersom det ikke er ledige skoleplasser i egen region."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Inntak til videregående trinn 2 eller trinn 3 for søkere som ikke har bestått i alle fag",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som ikke oppfyller vilkårene for inntak til videregående trinn 2 eller trinn 3 fordi de ikke har bestått ett eller flere fag, kan likevel tas inn som fulltidselev til neste trinn, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-13 andre ledd, bokstav c",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor skal i disse tilfellene gjøre en samlet vurdering av om det er forsvarlig ut fra de faglige forutsetningene å ta eleven inn til neste trinn. Rektor fatter enkeltvedtak."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke er kvalifisert for inntak til neste trinn kan endre sin søknad innen 1. juli til et tilbud de er kvalifisert for."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Inntak til trinn 2 og trinn 3 International Baccalaureate (IB Diploma Programme)",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til IB Diploma Programme, må ha rett til videregående opplæring etter ",
+        {
+         "t": "oppll. § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " for å få tilbud om plass. Rett til videregående opplæring betinger lovlig opphold i landet."
+       ]
+      },
+      {
+       "tekst": [
+        "Vilkår for inntak til International Baccalaureate DP er at søker har fullført og bestått vg1 Studiespesialisering, vg1 Studiespesialisering med forberedende IB (pre-IB), Middle years Programme (MYP) 5 eller tilsvarende. Søkeren må ha minimum 10 års skolegang."
+       ]
+      },
+      {
+       "tekst": [
+        "For å kvalifisere til inntak til IB Diploma Programme må søkeren ha minst karakteren 4 i matematikk og 5 i engelsk, i tillegg til gjennomsnittskarakter på minst 4,5."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til trinn 2 og trinn 3 IB Diploma Programme gjøres i samarbeid med skolene som har tilbudet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Inntak til trinn 3 Påbygg",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til trinn 3 Påbygg må ha bestått videregående trinn 1 og trinn 2 for å være kvalifisert til inntak. Inntak til trinn 3 Påbygg kan også gjøres på bakgrunn av en samlet vurdering, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-13 andre ledd, bokstav c",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Rektor fatter enkeltvedtak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Inntak til trinn 4 Påbygg etter bestått fag- og yrkesopplæring",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til trinn 4 Påbygg etter bestått fag- og yrkesopplæring må ha bestått yrkeskompetanse for å være kvalifisert til inntak. De som søker trinn 4 påbygg før læretiden er over, må ha bestått fag-/svenneprøven innen andre inntak og må ha fullført læretiden innen skolestart."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Inntak til landslinjer og landsdekkende linjer",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra hele landet stiller likt ved inntak til landslinjer og landsdekkende linjer i Troms fylkeskommune. Inntaket skjer på grunnlag av karakterpoeng."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Inntak til vekslingsmodellen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som ønsker opplæring i vekslingsmodellen, skal søke både læreplass og skoleplass innen søknadsfristen. Det er en forutsetning for inntak til skolen at man har fått læreplass."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Inntak til yrkesfaglig opphenting",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som har fullført trinn 1 studiespesialisering kan søke yrkesfaglige programområder på videregående trinn 2 med yrkesfaglig opphenting, i de programområdene fylkeskommunen har bestemt. De søkbare programområdene vil være tilgjengelig i Vigo søkeportal."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Tilpassede løp og endring av elevstatus",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Reservasjon av skoleplass ved avbrutt skolegang",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som må avbryte skolegangen på grunn av sykdom eller andre tungtveiende grunner, kan søke om reservasjon av skoleplass på samme utdanningsprogram/programområde på samme skole påfølgende skoleår. Søknaden sendes til Kompetanseetaten, ved avdeling Inntak."
+       ]
+      },
+      {
+       "tekst": [
+        "Det må foreligge skriftlig sluttmelding dersom eleven slutter etter 1. september."
+       ]
+      },
+      {
+       "tekst": [
+        "Reservasjon gjøres under forutsetning av at tilbudet fortsatt eksisterer."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom elev med reservert plass søker et annet utdanningsprogram/programområde i Vigo Søkeportal vil reservasjonen falle bort."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Opplæringsløp som avviker fra fag- og timefordelinga",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom hensynet til eleven tilsier det, kan skolen planlegge et opplæringsløp som tar lengre eller kortere tid enn det som følger av fag- og timefordelingen. Rektor kan fatte enkeltvedtak om godkjente opplæringsløp som fraviker fag- og timefordeling. Vedtak om et lengre opplæringsløp kan fattes dersom det vil bidra til at eleven kan gjennomføre opplæringen."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor lager oversikt over elever som skal fortsette på samme trinn og samme programområde påfølgende skoleår etter denne paragrafen. Elevene beholder skoleplassen under forutsetning av at tilbudet fortsatt eksisterer."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom elever i et tilpasset løp etter denne paragrafen søker seg til et annet utdanningsprogram/programområde i Vigo søkeportal vil skoleplassen ikke lengre beholdes."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som har fått vedtak om endring i fag- og timefordelingen og som skal tas inn på neste trinn skal søke om individuell saksbehandling 1. februar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Endring av en elevs status fra fullstendig til mindre fullstendig utdanningsprogram eller programområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere skal tas inn til et fullstendig utdanningsprogram på videregående trinn 1 eller et fullstendig programområde på videregående trinn 2 eller videregående trinn 3, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor fatter enkeltvedtak når en elev søker om å ikke delta i opplæringen i ett eller flere fag for å ta eksamen som privatist. Søknaden kan innvilges dersom det foreligger dokumenterte tungtveiende grunner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Formidling til læreplass for lærlinger og lærekandidater",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Vilkår for formidling til læreplass som lærling eller lærekandidat",
+     "ledd": [
+      {
+       "tekst": [
+        "Alle kvalifiserte søkere til læreplass som ved søknadsfrist er bosatt i Troms fylkeskommune formidles til godkjente lærebedrifter i fylket etter søknadsfristens utløp. Søkere som hører hjemme i andre fylker kan også formidles."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Formidling til læreplass som lærling",
+     "ledd": [
+      {
+       "tekst": [
+        "For å bli formidlet som lærling må søkere som hovedregel oppfylle vilkårene for inntak til videregående trinn 3 jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med karakteren 1 i inntil to fellesfag kan likevel formidles til ordinær læreplass dersom fylkeskommunen etter en samlet vurdering finner at det er forsvarlig ut fra de faglige forutsetningene, jf. ",
+        {
+         "t": "opplæringsforskrifta § 7-3",
+         "l": "forskrift/2024-06-03-900/§7-3",
+         "a": "opplaeringsforskrifta/7-3"
+        },
+        " og ",
+        {
+         "t": "§ 4-13 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Rektor fatter enkeltvedtak."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke oppfyller vilkårene for formidling til ordinær læreplass kan endre sin søknad til en annen opplæringsordning de er kvalifisert til, eksempelvis lærekandidatordningen eller full opplæring i bedrift."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til læreplass som ikke er kvalifisert for den opplæringsordningen de har søkt, og ikke har endret sin søknad, tas ut av søkerlista 1. august."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Endring av søknad til læreplass etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad til læreplass kan endres etter fristen så langt det er mulig. Det er mulig å legge til ønsker i nye lærefag eller nye opplæringsordninger, fjerne ønsker eller bytte rekkefølge på ønsker."
+       ]
+      },
+      {
+       "tekst": [
+        "For elever som går på skole skal en rådgiver på skolen sende inn endringsønsket for eleven til Troms fylkeskommune, ved Kompetanseetaten. Etter skoleslutt, og for søkere som ikke går på skole, kan ønsker endres ved å sende kontaktskjema via fylkeskommunens nettside."
+       ]
+      },
+      {
+       "tekst": [
+        "Oppfølgingstjenesten (OT) kan også sende inn endringer på vegne av søker."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "28",
+     "visNr": "§ 28",
+     "tittel": "Behandling av søknader som mottas etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad om læreplass som mottas etter søknadsfrist, vil bli behandlet i den utstrekning det er mulig, jf. ",
+        {
+         "t": "opplæringsforskrifta § 7-5 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        ". Søkere skal varsles dersom søknaden ikke kan behandles."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "29",
+     "visNr": "§ 29",
+     "tittel": "Opplæringstilbud til de som ikke er formidlet til læreplass – trinn 3 fagopplæring i skole",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som oppfyller vilkårene til å bli formidlet, men som ikke får tilbud om læreplass, har rett til tilbud om et annet opplæringstilbud. Søkerne vil få tilbud om vg3 fagopplæring i skole i et lærefag som bygger på det videregående trinn 2 de har gjennomført."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som har takket ja til trinn 3 fagopplæring i skole skal som hovedregel få tilbud om dette på sin avgiverskole."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen fastsetter retningslinjer for gjennomføring av trinn 3 fagopplæring i skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "30",
+     "visNr": "§ 30",
+     "tittel": "Opplæringsløp med tre år i skole og læretid som bare inneholder verdiskaping",
+     "ledd": [
+      {
+       "tekst": [
+        "Automatiseringsfaget, dataelektronikerfaget og anleggsmaskinmekanikerfaget har tre års opplæring i skole og læretid som bare inneholder verdiskaping. Søkere til disse tre lærefagene som ikke har fått læreplass innen 1. september, vil få tilbud om å avlegge fagprøve. Fagprøven skal så langt det er mulig avholdes på avgiverskolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap6",
+   "type": "kapittel",
+   "nr": "6",
+   "overskrift": "Kapittel 6 Videregående opplæring for voksne",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "31",
+     "visNr": "§ 31",
+     "tittel": "Søknad",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med rett kan, fra og med det skoleåret som tar til det året man fyller 19 år, velge å søke på videregående opplæring som elev eller videregående opplæring for voksne. Søkere over 25 år skal søke videregående opplæring for voksne."
+       ]
+      },
+      {
+       "tekst": [
+        "Innenfor de sluttkompetanser fylkeskommunen tilbyr, skal søker prioritere inntil tre sluttkompetanser. Det er åpent for å søke videregående opplæring for voksne hele året."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til generell studiekompetanse skjer hovedsakelig to ganger per år med oppstart august og januar."
+       ]
+      },
+      {
+       "tekst": [
+        "Informasjon om tidspunkt for oppstart av alle tilbud annonseres på Troms fylkeskommunes nettside."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "32",
+     "visNr": "§ 32",
+     "tittel": "Vilkår for å søke",
+     "ledd": [
+      {
+       "tekst": [
+        "Søker må være folkeregistrert i Troms fylkeskommune på søketidspunktet. Søkere tilhørende andre fylker vil ikke bli søknadsbehandlet i Troms med mindre spesifikk avtale med hjemfylket foreligger."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved planlagt flytting til Troms må søker ta kontakt med Troms fylkeskommune for mer informasjon og for å dokumentere planlagt flytting."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "33",
+     "visNr": "§ 33",
+     "tittel": "Utdanningstilbud",
+     "ledd": [
+      {
+       "tekst": [
+        "Tilbud til voksne tilpasses lokalt og regionalt arbeids- og næringsliv. Nettundervisning gis uavhengig av bosted i Troms."
+       ]
+      },
+      {
+       "tekst": [
+        "Informasjon om tilbudene annonseres på fylkeskommunens nettside."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "34",
+     "visNr": "§ 34",
+     "tittel": "Inntaksrekkefølge for videregående opplæring for voksne",
+     "ledd": [
+      {
+       "tekst": [
+        {
+         "t": "Opplæringsforskrifta § 13-4",
+         "l": "forskrift/2024-06-03-900/§13-4",
+         "a": "opplaeringsforskrifta/13-4"
+        },
+        " gir inntaksrekkefølge for voksne søkere. Dersom fylkeskommunen skal ta inn søkere til videregående opplæring for voksne uten inntaksrett, skal disse tas inn etter alle med inntaksrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "35",
+     "visNr": "§ 35",
+     "tittel": "Plikt til oppmøte og aktiv deltaking i opplæring",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakere plikter å møte første undervisningsdag. Deltakere som uteblir fra første undervisningsdag uten gyldig grunn kan miste tilbudet. Deltakere som er forhindret fra å møte plikter å opplyse om dette så snart som mulig og senest i løpet av første undervisningsdag."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere i voksenopplæring forventes å ha en aktiv deltakelse med bl.a. tilstedeværelse og eget bidrag for å tilegne seg kunnskap."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "36",
+     "visNr": "§ 36",
+     "tittel": "Yrkesfaglig rekvalifisering",
+     "ledd": [
+      {
+       "tekst": [
+        "De som har oppnådd studiekompetanse eller yrkeskompetanse har rett til videregående opplæring frem til én ny sluttkompetanse innenfor et yrkesfaglig utdanningsprogram. De som ønsker yrkesfaglig rekvalifisering søker om dette via Vigo søkeportal."
+       ]
+      },
+      {
+       "tekst": [
+        "Troms fylkeskommune tilbyr ikke opplæring utover to oppnådde sluttkompetanser."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap7",
+   "type": "kapittel",
+   "nr": "7",
+   "overskrift": "Kapittel 7 Mer opplæring",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "37",
+     "visNr": "§ 37",
+     "tittel": "Mer opplæring i fag som ikke er bestått",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som ikke har bestått ett eller flere fag og som har rett til mer opplæring i faget etter ",
+        {
+         "t": "opplæringsforskrifta § 5-2",
+         "l": "forskrift/2024-06-03-900/§5-2",
+         "a": "opplaeringsforskrifta/5-2"
+        },
+        ", må melde fra til skolen der opplæringen er gitt innen 15. august dersom de ønsker mer opplæring i faget. De skal ikke søke om inntak etter ",
+        {
+         "t": "opplæringsforskrifta § 4-7",
+         "l": "forskrift/2024-06-03-900/§4-7",
+         "a": "opplaeringsforskrifta/4-7"
+        },
+        " til ",
+        {
+         "t": "§ 4-11",
+         "l": "forskrift/2024-06-03-900/§4-11",
+         "a": "opplaeringsforskrifta/4-11"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Voksne deltakere i videregående opplæring som ikke har bestått et fag og har rett til mer opplæring i faget (etter ",
+        {
+         "t": "opplæringsforskrifta § 14-2",
+         "l": "forskrift/2024-06-03-900/§14-2",
+         "a": "opplaeringsforskrifta/14-2"
+        },
+        "), må melde fra til Troms fylkeskommune ved Kompetanseetaten."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "38",
+     "visNr": "§ 38",
+     "tittel": "Mer opplæring ved stryk på fag-/svenneprøve eller stryk på nødvendig eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "De som har kontrakt om opplæring i bedrift og som ikke består fag-/svenneprøven har rett til mer opplæring i lærefaget. Det samme gjelder de som ikke har bestått nødvendig eksamen i løpet av læretiden. De som ønsker å benytte sin rett til mer opplæring melder fra til fylkeskommunen ved bruk av skjema på Troms fylkeskommunes nettside innen utgangen av kontraktstiden."
+       ]
+      },
+      {
+       "tekst": [
+        "Mer opplæring kan ha følgende former, i prioritert rekkefølge:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "forlengelse av læretiden i samme lærebedrift"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "ny lærekontrakt i annen lærebedrift"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "tilbud om tinn 3 fagopplæring i skole i det samme lærefaget"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "opplæring i et nytt lærefag som bygger på samme trinn 2."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "For voksne deltakere gjelder ikke siste kulepunkt. Voksne deltakere skal få opplæring i samme lærefag, jf. ",
+        {
+         "t": "opplæringsforskrifta § 14-2 annet ledd",
+         "l": "forskrift/2024-06-03-900/§14-2",
+         "a": "opplaeringsforskrifta/14-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap8",
+   "type": "kapittel",
+   "nr": "8",
+   "overskrift": "Kapittel 8 Felles bestemmelser",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "39",
+     "visNr": "§ 39",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. januar 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Samtidig oppheves ",
+        {
+         "t": "forskrift 5. desember 2023 nr. 2212 om inntak til videregående opplæring og formidling til læreplass i Troms fylkeskommune",
+         "l": "forskrift/2023-12-05-2212"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

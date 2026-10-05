@@ -1,0 +1,220 @@
+{
+ "id": "eid-vidaregaande-skule-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skulereglar, Eid vidaregåande skule, Vestland fylkeskommune",
+ "korttittel": "Skoleregler ved Eid vidaregåande skule",
+ "korttittelNn": "Skulereglar ved Eid vidaregåande skule",
+ "malform": "nn",
+ "refid": "forskrift/2025-08-18-2220",
+ "sistEndret": null,
+ "iKraft": "2025-08-18",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-skole",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "46",
+  "skoler": [
+   "874571172"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skulereglar, Eid vidaregåande skule, Vestland fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Eid vidaregåande skule har som mål å sikre at elevane har eit trygt og godt skulemiljø som fremjar helse, trivsel, inkludering og læring, jf. ",
+        {
+         "t": "opplæringslova § 12-2",
+         "l": "lov/2023-06-09-30/§12-2",
+         "a": "opplaeringslova/12-2"
+        },
+        ". Lokale tilleggsreglar skal vere eit verkemiddel til å nå målet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Bruk av mobiltelefon og smartklokker",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevane ved Eid vgs skal før undervisningstimen startar leggje mobiltelefonen på anvist stad i klasserommet/verkstad. Unntaket er når lærar vurderer at mobiltelefonen er naudsynt som fagleg verktøy."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "I vurderingssituasjonar skal mobiltelefonen og smartklokke vere i flymodus eller slått av, og leggjast på anvist stad i klasserom/verkstad. Unntaket er når lærar vurderer at mobiltelefonen er naudsynt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Reglar for mobiltelefonen gjeld også YFF i bedrift, i praksisperiodar og i arbeidstrening."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevar med særlege behov kan gjere individuelle avtalar med faglærar/kontaktlærar."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Bildetaking, bildedeling og IKT",
+     "ledd": [
+      {
+       "tekst": [
+        "Det er ikkje lov å ta bilde eller dele bilde frå undervisningsøkter, ekskursjonar og liknande utan løyve frå lærar, jamfør ",
+        {
+         "t": "personopplysningslova",
+         "l": "lov/2018-06-15-38"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved bruk av IKT ved skulen skal elevane ta omsyn til personvern ",
+        {
+         "t": "(personopplysningslova)",
+         "l": "lov/2018-06-15-38"
+        },
+        ", opphavsrett ",
+        {
+         "t": "(åndsverklova)",
+         "l": "lov/2018-06-15-40"
+        },
+        " og bruke nettvett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Bruk av kunstig intelligens (KI) og praterobotar",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Avklar med faglærar kva tid og korleis det er tillat å nytta KI i dei ulike faga."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Med mindre oppgåva eksplisitt tillèt det, er all bruk av KI i vurderingssituasjonar (t.d. eksamen, prøvar og innleveringar) rekna som fusk. Oppgåva vert ikkje vurdert og kan føre til åtferdsmerknad (jf. skulereglementet). Ved tvil om fusk i skriftlege vurderingssituasjonar, kan muntleg høyring eller ny skriftleg vurdering bli vurdert for å sikre rett vurdering."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ikkje del personleg informasjon i KI-tenestene. Dette gjeld både sensitiv informasjon og anna informasjon unnateke offentlegheit, multimedia (bilete, lyd, video) der vi kan identifisere personar, og anna informasjon som kan knytast til deg som elev, medelevar, tilsette og andre."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Sanksjonar",
+     "ledd": [
+      {
+       "tekst": [
+        "Brot på dei lokale reglane kan føre til sanksjonar etter ",
+        {
+         "t": "§ 8 i forskrift 18. juni 2024 nr. 1455 om skulereglar, Vestland fylkeskommune",
+         "l": "forskrift/2024-06-18-1455/§8"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta trer i kraft 18. august 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

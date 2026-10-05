@@ -1,0 +1,651 @@
+{
+ "id": "vestby-videregaende-skole-fagfordeling-886",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig yrkes- og studiekompetanseløp (YSK) innen utdanningsprogrammet bygg- og anleggsteknikk ved Vestby videregående skole, Viken fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+ "korttittelNn": "Fag- og timefordeling, Vestby videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2023-02-09-886",
+ "sistEndret": null,
+ "iKraft": "2023-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "32",
+  "skoler": [
+   "974587815"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for utdanningsprogrammet bygg- og anleggsteknikk, 4-årig YSK-løp ved Vestby videregående skole, og inngåtte avtaler med lærebedrifter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften vil bli revidert ved endring i opplæringstilbudet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordeling",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Fag- og timefordeling:",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Vg4"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "112"
+          ]
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [],
+          [
+           "112"
+          ],
+          [],
+          [
+           "281"
+          ],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Valgfrie programfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Matematikk R1"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk R2"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Fysikk 1"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Fysikk 2"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag vg1:"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Arbeidsmiljø og dokumentasjon"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Praktisk yrkesutøvelse"
+          ],
+          [
+           "337"
+          ],
+          [],
+          [],
+          [],
+          [
+           "337"
+          ]
+         ],
+         [
+          [
+           "Felles programfag vg2 betong og mur:"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Betong og mur"
+          ],
+          [],
+          [
+           "337"
+          ],
+          [],
+          [],
+          [
+           "337"
+          ]
+         ],
+         [
+          [
+           "Dokumentasjon og kommunikasjon"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag vg2 tømrer:"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Konstruksjoner og klimaskall"
+          ],
+          [],
+          [
+           "197"
+          ],
+          [],
+          [],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Materialegenskaper, varmeisolering og tetting"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Vinduer, dører og innvendig arbeid"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "168"
+          ],
+          [
+           "253"
+          ],
+          [],
+          [],
+          [
+           "421"
+          ]
+         ],
+         [
+          [
+           "Sum, inkluderer ikke læretid"
+          ],
+          [
+           "1121"
+          ],
+          [
+           "1122"
+          ],
+          [
+           "420"
+          ],
+          [
+           "421"
+          ],
+          [
+           "3084"
+          ]
+         ],
+         [
+          [
+           "Læretid i bedrift"
+          ],
+          [
+           "2 årsverk"
+          ],
+          [
+           "3900​*"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet har følgende flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag og matematikk følger den studieforberedende modellen med 140 timer matematikk 1T i vg1 og 140 timer matematikk R1 i vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene har ett ekstra valgfritt programfag i vg2, to i vg3 og ett i vg4."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Utdanningstilbudet skal gi eleven/lærlingen mulighet til å oppnå både yrkeskompetanse og generell studiekompetanse etter endt løp. Det er inngått samarbeid med lærebedrifter som gjør det mulig med læretid i tømrerfaget, betongfaget og murerfaget. Lærebedriften har ansvar for opplæringen av lærlingen etter læreplanen i vg3 opplæring i bedrift, og det tegnes lærekontrakt mellom lærebedrift og lærling som godkjennes av fylkeskommunen. Detaljert fordeling av læretidens 3900 timer skal beskrives i skolens retningslinjer for gjeldende YSK-løp."
+       ]
+      },
+      {
+       "tekst": [
+        "Lærekontrakten inneholder ett år opplæring og ett år verdiskaping. Dette omfanget fordeles over 2 år slik at lærekontrakten starter fra andre halvår år 2 og løper til skoleslutt år 4."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Beregningen tar utgangspunkt i to arbeidsår for lærling som utgjør 3900 timer inkludert ferie."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for vg1, vg2, vg3 og vg4 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke seg over til et ordinært tilbud. Ved et slikt bytte må eleven ta eventuelle fag som eleven mangler for å få vitnemål. Ved bytte av skole i Viken fylkeskommune har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at vedkommende tar faget/fagene som privatist."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger en alternativ fag- og timefordeling. Yrkesfaglig opplæringsløp skal være en del av trekket i vg1 og vg2 hvor inntil 20 % av elevene trekkes ut til eksamen i ett fag, sett over to år. Elevene skal opp til den obligatoriske tverrfaglige eksamen i programfag på vg2. Alle elevene skal opp til obligatorisk eksamen i norsk hovedmål vg4. I tillegg skal elevene trekkes ut til én skriftlig eksamen, og én muntlig eller muntlig-praktisk eksamen på vg3/vg4."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til vg1 og opptak til vg2/vg3/vg4",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til vg1 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "§ 6-13",
+         "l": "forskrift/2006-06-23-724/§6-13"
+        },
+        ", ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2006-06-23-724"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til vg2/vg3/vg4",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til vg2, vg3 og vg4 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. ",
+        {
+         "t": "§ 6-28 i forskrift til opplæringsloven",
+         "l": "forskrift/2006-06-23-724/§6-28"
+        },
+        ". Elever som ikke har bestått alle fagene på vg1, vg2 eller vg3, kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering finner det forsvarlig jf. ",
+        {
+         "t": "§ 6-37",
+         "l": "forskrift/2006-06-23-724/§6-37"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 1. august 2023."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

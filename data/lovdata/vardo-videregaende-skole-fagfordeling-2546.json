@@ -1,0 +1,397 @@
+{
+ "id": "vardo-videregaende-skole-fagfordeling-2546",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibel fag- og timefordeling for vg1 Restaurant- og matfag med sjømat, vg2 Matproduksjon med sjømat og vg3 påbygging til generell studiekompetanse med sjømat (Nasjonal sjømatlinje) ved Vardø videregående skole, Finnmark fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Vardø videregående skole",
+ "korttittelNn": "Fag- og timefordeling, Vardø videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2025-12-02-2546",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "56",
+  "skoler": [
+   "974622777"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med denne forskriften er å tilby et mer tilpasset opplæringstilbud til en gruppe. Forskriften skal sikre progresjon i fagene og at den videregående opplæringen samlet sett følger ordinær opplæringstid."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for det 3-årige utdanningsløpet Nasjonal sjømatlinje, bestående av vg1 Restaurant og matfag med sjømat, vg2 Matfag med sjømat og vg3 Påbygging til generell studiekompetanse med sjømat, på Vardø videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordeling",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Fag- og timefordelingen gjelder fra skolestart i 2024 og innebærer implementering av fagfornyelsen på alle trinn. Fellesfag og programfag er knyttet til vg1 Restaurant- og matfag, vg2 Matproduksjon og vg3 Påbygging til generell studiekompetanse med lokalt tilpasset læreplan for sjømat."
+       ]
+      },
+      {
+       "tekst": [
+        "Etter vg3 vil elevene kunne gå videre som lærling innen sjømatproduksjon eller ferskvarehandlerfaget, eller videre til høyere utdanning."
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fellesfag:"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Matte 1P/1T"
+          ],
+          [
+           "140"
+          ],
+          [
+           "84 (2P)"
+          ],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Historie påbygg"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Valgfritt programfag fra ST – Biologi"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Programfag:"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [],
+          [
+           "168"
+          ],
+          [
+           "253"
+          ]
+         ],
+         [
+          [
+           "Råstoff, kvalitet og produksjon"
+          ],
+          [
+           "337"
+          ],
+          [
+           "337"
+          ],
+          []
+         ],
+         [
+          [
+           "Bransje og arbeidsliv"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Totalt antall timer:"
+          ],
+          [
+           "926"
+          ],
+          [
+           "981"
+          ],
+          [
+           "897"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for vg1, vg2 og vg3 er lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke inntak til et tilbud som følger ordinær fag- og timefordeling. Ved et slikt bytte må eleven gjennomføre eventuelle manglende fag for å få utstedt vitnemål."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved bytte av skole i Finnmark fylke, har mottakerskolen ansvaret for at eleven får gjennomført fagene som eleven mangler. Eleven kan etter eget ønske, etter avtale med mottakerskolen, gjennomføre manglende fag som privatist."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Trekkordning til eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger alternativ fag- og timefordeling. Yrkesfaglige opplæringsløp skal være en del av trekket i vg1 og vg2 hvor inntil 20 % av elevene trekkes ut til eksamen i et fag, sett over to år. Elevene skal opp til den obligatoriske tverrfaglige eksamenen i programfag på vg2. Alle elever skal opp til obligatorisk eksamen i norsk hovedmål vg3. I tillegg skal elevene trekkrs ut til en skriftlig eksamen, og en muntlig-praktisk eksamen på vg3."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til vg1 og opptak til vg2/vg3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Inntak til vg1 i opplæring med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i ",
+        {
+         "t": "kapittel 4 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til vg2/vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til vg2 og vg3 må søkeren ha bestått alle fag på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. ",
+        {
+         "t": "§ 4-13 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Elever som ikke har bestått alle fag på vg1 eller vg2, kan likevel flyttes opp til neste nivå dersom fylkeskommunen, etter en helhetlig vurdering, finner det forsvarlig, jf. ",
+        {
+         "t": "§ 4-13 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 1. august 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Fra samme tid oppheves ",
+        {
+         "t": "forskrift 12. juni 2020 nr. 1504 om fleksibilitet i fag- og timefordeling i videregående opplæring innenfor programområdet Restaurant og matfag, Landslinje for sjømatutdanning ved Vardø videregående skole, Vg2, 2020–2021, Troms og Finnmark",
+         "l": "forskrift/2020-06-12-1504"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

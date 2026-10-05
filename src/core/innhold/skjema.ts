@@ -26,6 +26,11 @@ export const kontrollertSkjema = z.object({ dato: isoDato }).strict().nullable()
 export const nivaSkjema = z.enum(['nasjonal', 'fylke', 'skole']);
 export const forholdSkjema = z.enum(['erstatter', 'supplerer']);
 
+/** Temaene fylkene har egne sider om (avgjørelse 061). «forside» er fylkets side for videregående. */
+export const fylketemaer = ['forside', 'inntak', 'klage-inntak', 'sprak', 'tilrettelegging', 'eksamen', 'klage-standpunkt', 'privatist', 'fagprove'] as const;
+export const fylketemaSkjema = z.enum(fylketemaer);
+export type Fylketema = z.infer<typeof fylketemaSkjema>;
+
 export const gyldighetSkjema = z.discriminatedUnion('niva', [
   z.object({ niva: z.literal('nasjonal') }).strict(),
   z
@@ -171,6 +176,11 @@ export const stegElement = z
     forklaring: flerspraak.optional(),
     /** Paragrafer i Regelverk som steget bygger på. Vises som lenker til paragrafen i appen. */
     paragrafer: z.array(paragrafRef).default([]),
+    /**
+     * Det fylket bestemmer selv i steget (avgjørelse 061): boksen «Hos fylkeskommunen» lenker til fylkets side om
+     * temaet, med en kort tekst med egne ord om hva fylket bestemmer.
+     */
+    fylke: z.object({ tema: fylketemaSkjema, tekst: flerspraak }).strict().optional(),
     /**
      * Læreplaner fra Grep som steget viser i en egen boks med fagkodene, og om læreplanen er kompetansegivende
      * (eier 03.10.2026). `merknad` er en kort setning med egne ord om hva læreplanen brukes til. Uten
@@ -318,6 +328,36 @@ export const fylkerSkjema = z
     fylker: z.array(z.object({ nummer: z.string().regex(/^\d{2}$/), navn: z.string().min(1) }).strict()).min(1),
   })
   .strict();
+
+const fylkeslenke = z
+  .object({
+    url: z.url(),
+    /** Datoen siden svarte med riktig innhold, eller null når adressen bare er sett i søk (nettstedet stenger skyen). */
+    bekreftet: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable(),
+  })
+  .strict();
+
+/** Lenkene til fylkeskommunenes egne sider per tema (content/fylker/lenker.yaml, eier 05.10.2026). */
+export const fylkeslenkerSkjema = z
+  .object({
+    temaer: z.array(fylketemaSkjema).min(1),
+    kontrollert: z.string().nullable(),
+    kontrollsporsmal: z.array(z.string().min(1)).max(5).optional(),
+    fylker: z
+      .array(
+        z
+          .object({
+            fylke: z.string().regex(/^\d{2}$/),
+            navn: z.string().min(1),
+            lenker: z.object(Object.fromEntries(fylketemaer.map((t) => [t, fylkeslenke.optional()])) as Record<Fylketema, z.ZodOptional<typeof fylkeslenke>>).strict(),
+          })
+          .strict(),
+      )
+      .min(1),
+  })
+  .strict()
+  .refine((f) => new Set(f.fylker.map((x) => x.fylke)).size === f.fylker.length, { message: 'Hvert fylke står én gang' });
+export type Fylkeslenker = z.infer<typeof fylkeslenkerSkjema>;
 
 export const synonymSkjema = z
   .object({

@@ -1,0 +1,1370 @@
+{
+ "id": "more-og-romsdal-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skolereglar for dei vidaregåande skolane, Møre og Romsdal fylkeskommune",
+ "korttittel": "Skoleregler i Møre og Romsdal",
+ "korttittelNn": "Skulereglar i Møre og Romsdal",
+ "malform": "nn",
+ "refid": "forskrift/2024-06-10-1765",
+ "sistEndret": null,
+ "iKraft": "2024-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "15"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skolereglar for dei vidaregåande skolane, Møre og Romsdal fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolereglane har som mål å:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til eit trygt og godt skolemiljø som fremjar helse, inkludering, trivsel og læring."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til eit godt fysisk og psykososialt miljø som er fritt for rus, mobbing, vald, diskriminering og trakassering."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til å skape samarbeid, trivsel, respekt og medansvar for alle i skolesamfunnet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Skolereglane skal gi:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "reglar om rettar og pliktar for deltakarene der desse ikkje er fastsette i lov på annan måte."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "reglar om kva tiltak som kan bli brukte der reglane blir brotne."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "reglar korleis ein skal gå fram i behandlinga av saker om brot av reglementet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "reglar om organiseringa av skoledemokratiet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "grunnlaget for vurdering i orden og oppførsel."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglementet gjeld:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "alle elevar ved skolen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "i timane, i friminutta, og på veg til og frå skolen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "ved opplæring og aktivitetar i regi av skolen utanfor skolen sitt område, så langt dette ikkje er i strid med lokalgitte påbod eller forbod."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "i bruken av den digitale infrastrukturen til skolen, også utanfor skoletida."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Organisering av skoledemokratiet",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevmedverknad"
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal legge til rette for at kvar enkelt elev skal kunne ytre meiningane sine fritt og oppmuntre til å delta i skoledemokratiet. Skolen skal hjelpe elevane i arbeidet med skoledemokratiet. Skolen skal sørge for at elevane får vere med på å planlegge, gjennomføre og vurdere verksemda til skolen, blant anna arbeidet med skolemiljøet, kvalitetsutvikling i opplæringa og fastsetting av skolereglar."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal oppfordre elevane til å varsle om mobbing, vald, hærverk, rasistiske utsegner og handlingar, seksuell trakassering, sjikane på grunn av seksuell legning, religion eller livssyn og anna krenkjande oppførsel som dei observerer."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevråd"
+       ]
+      },
+      {
+       "tekst": [
+        "Alle skolane skal ha elevråd som er valt av elevane ved skolen. Det er elevar og tilsette ved skolen som avgjer kor mange som skal veljast inn i elevrådet."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevane kan velje å organisere seg på annan måte. Da må det kvart skoleår takast stilling til organiseringa. Ved mindre skolar kan det for eksempel vere aktuelt å erstatte elevrådet med eit allmøte."
+       ]
+      },
+      {
+       "tekst": [
+        "Oppgåvene til elevrådet omhandlar å få vere med på å planlegge, gjennomføre og vurdere verksemda til skolen, blant anna arbeidet med skolemiljøet, kvalitetsutvikling i opplæringa og fastsetting av skolereglar. Det skal vere minst ein representant frå kvar klasse i elevrådet."
+       ]
+      },
+      {
+       "tekst": [
+        "Skoleutval"
+       ]
+      },
+      {
+       "tekst": [
+        "Alle skolane skal ha skoleutval. Elevane skal vere representerte i utvalet. Det er utarbeidd ei eit eige reglement for samansetting og oppnemning av medlemmer, og kva oppgåver utvalet skal arbeide med."
+       ]
+      },
+      {
+       "tekst": [
+        "Trykk her for å kome til reglement for skoleutvalet: ",
+        {
+         "t": "Reglement for skoleutvalet",
+         "l": "https://x10c.ksx.no/system.php?item=30309&ok=nb48fymkx72v3zt"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevar skal ikkje delta i behandling av saker som er omfatta av teieplikt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevane skal ha god orden."
+       ]
+      },
+      {
+       "tekst": [
+        "Eksempel på god orden er å:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Møte presis på skolen og til undervisninga"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ha med nødvendige læremiddel og utstyr til undervisningsøktene, og å halde det i orden"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Gjere arbeid ein blir pålagt så godt ein kan og til rett tid"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Halde det ryddig på arbeidsplass og skoleområdet elles."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Oppførsel",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevane skal ha god oppførsel."
+       ]
+      },
+      {
+       "tekst": [
+        "Eksempel på god oppførsel er å:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Vere på skolen og delta i undervisninga heile skoledagen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Vise respekt og vere høflege mot kvarandre"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Vise respekt for eigedelane til skolen og andre."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Eksempel på kva som ikkje er god oppførsel er å:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Forstyrre undervisninga"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Banne eller bruke anna grovt språk"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Mobbe eller på andre måtar krenke andre fysisk, verbalt eller digitalt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Vere valdeleg eller kome med truslar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Røyke, snuse eller vere påverka av rusmiddel"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ha med farlege gjenstandar eller våpen på skolen sitt område"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Fuske eller forsøke å fuske i vurderingssituasjonar."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Tiltak ved brot på skolereglane",
+     "ledd": [
+      {
+       "tekst": [
+        "Det kan bli gitt reaksjonar ved brot på reglane i ",
+        {
+         "t": "§§ 4",
+         "l": "forskrift/2024-06-10-1765/§4",
+         "a": "more-og-romsdal-skoleregler/4"
+        },
+        ", ",
+        {
+         "t": "5",
+         "l": "forskrift/2024-06-10-1765/§5",
+         "a": "more-og-romsdal-skoleregler/5"
+        },
+        ", ",
+        {
+         "t": "7",
+         "l": "forskrift/2024-06-10-1765/§7",
+         "a": "more-og-romsdal-skoleregler/7"
+        },
+        " og ",
+        {
+         "t": "8",
+         "l": "forskrift/2024-06-10-1765/§8",
+         "a": "more-og-romsdal-skoleregler/8"
+        },
+        ". Andre konsekvensar enn det som går fram av paragrafen her, kan ikkje nyttast."
+       ]
+      },
+      {
+       "tekst": [
+        "Når ein elev blir vurdert i orden og oppførsel, skal det gjerast ei heilskapleg vurdering av korleis eleven etterlever skolereglane gjennom opplæringstida. Gjentakande brot på skolereglane kan føre til nedsett karakter, jf. ",
+        {
+         "t": "opplæringsforskrifta § 9-17",
+         "l": "forskrift/2024-06-03-900/§9-17",
+         "a": "opplaeringsforskrifta/9-17"
+        },
+        ". Unntaket er ved særleg kritikkverdige eller grove enkelthendingar, jf. ",
+        {
+         "t": "opplæringsforskrifta § 9-2",
+         "l": "forskrift/2024-06-03-900/§9-2",
+         "a": "opplaeringsforskrifta/9-2"
+        },
+        ". I slike tilfelle kan vedtak om nedsett karakter i orden eller oppførsel også brukast som sanksjon, jf. ",
+        {
+         "t": "opplæringsforskrifta §§ 9-2",
+         "l": "forskrift/2024-06-03-900/§9-2",
+         "a": "opplaeringsforskrifta/9-2"
+        },
+        ", ",
+        {
+         "t": "9-17",
+         "l": "forskrift/2024-06-03-900/§9-17",
+         "a": "opplaeringsforskrifta/9-17"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Fysisk refsing eller anna krenkande behandling kan ikkje brukast som sanksjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Det følgjer av ",
+        {
+         "t": "opplæringslova § 13-4",
+         "l": "lov/2023-06-09-30/§13-4",
+         "a": "opplaeringslova/13-4"
+        },
+        " at skolen sine tilsette kan nytte fysiske inngrep i desse tilfella:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "For å avverje at eleven krenker en person fysisk eller psykisk. Dette er tilfelle som omfattast av ",
+            {
+             "t": "straffelova §§ 271",
+             "l": "lov/2005-05-20-28/§271"
+            },
+            " til ",
+            {
+             "t": "273",
+             "l": "lov/2005-05-20-28/§273"
+            },
+            " om kroppskrenkingar og kroppsskadar og seksuell handling utan samtykke, jf. ",
+            {
+             "t": "straffelova § 297",
+             "l": "lov/2005-05-20-28/§297"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Der eleven utsett seg sjølv for fysisk fare."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "For å avverje skade på eigedom."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "For å stoppe ein oppførsel som er sterkt fornedrande for eleven sjølv."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Det fysisk inngrepet skal ikkje gå lenger enn nødvendig, og stå eit rimeleg forhold til dei interessene som skal varetakast."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen sine tilsette har plikt til å ha omsorg for elevane, og å hindre krenkingar. I enkelte situasjonar vil tilsette difor ikkje berre ha rett, men også plikt, til å gripe inn i situasjonar der elevar er truga. Dette følgjer av ",
+        {
+         "t": "opplæringslova § 12-4, første ledd",
+         "l": "lov/2023-06-09-30/§12-4",
+         "a": "opplaeringslova/12-4"
+        },
+        ". Ei slik plikt til å gripe inn oppstår ikkje dersom det å gripe inn medfører fare for helsa til den tilsette."
+       ]
+      },
+      {
+       "tekst": [
+        "Det kan ikkje givast kollektive reaksjonar for noko enkeltelevar har gjort seg skuldige i."
+       ]
+      },
+      {
+       "tekst": [
+        "I tillegg til reaksjonane kan det bli nødvendig å sette inn tilleggstiltak som for eksempel:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved vesentleg forstyrring av opplæringa til andre elevar."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved skade eller tilgrising på skolen sin eigedom kan fylkeskommunen krevje istandsetting."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevane kan få anledning til å utbetre skadane sjølve dersom dette er hensiktsmessig."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevane som har gjort hærverk, kan påleggast å rydde opp etter seg / utbetre skadar som er gjort når oppryddinga er arbeid eleven har føresetnad for å klare, og arbeidet står i rimeleg forhold til brotet på regelverket (rydde søppel, vaske golv, fjerne tagging og liknande)."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevane kan bli erstatningsansvarlege etter dei vanlege erstatningsrettslege reglane."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjonar utan klagerett:"
+       ]
+      },
+      {
+       "tekst": [
+        "6.1."
+       ]
+      },
+      {
+       "tekst": [
+        "6.2."
+       ]
+      },
+      {
+       "tekst": [
+        "6.3."
+       ]
+      },
+      {
+       "tekst": [
+        "6.4"
+       ]
+      },
+      {
+       "tekst": [
+        "6.5."
+       ]
+      },
+      {
+       "tekst": [
+        "6.6."
+       ]
+      },
+      {
+       "tekst": [
+        "6.7."
+       ]
+      },
+      {
+       "tekst": [
+        "Følgjande reaksjonar er enkeltvedtak og skal handsamast etter ",
+        {
+         "t": "forvaltningslova",
+         "l": "lov/1967-02-10"
+        },
+        ":"
+       ]
+      },
+      {
+       "tekst": [
+        "6.8."
+       ]
+      },
+      {
+       "tekst": [
+        "6.9."
+       ]
+      },
+      {
+       "tekst": [
+        "6.10."
+       ]
+      },
+      {
+       "tekst": [
+        "6.11."
+       ]
+      },
+      {
+       "tekst": [
+        "6.12."
+       ]
+      },
+      {
+       "tekst": [
+        "6.13"
+       ]
+      },
+      {
+       "tekst": [
+        "6.14."
+       ]
+      },
+      {
+       "tekst": [
+        "6.15."
+       ]
+      },
+      {
+       "tekst": [
+        "6.16."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "19 aug 2024 nr. 1998",
+        "l": "forskrift/2024-08-19-1998"
+       },
+       ", ",
+       {
+        "t": "9 juli 2025 nr. 1543",
+        "l": "forskrift/2025-07-09-1543"
+       },
+       " (i kraft 1 aug 2025)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Rettane til elevane",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevens beste skal vere eit grunnleggjande omsyn ved handlingar og avgjersler som gjeld eleven."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevane og foreldra har rett til medverknad i saker som gjeld miljøet på skolen:"
+       ]
+      },
+      {
+       "tekst": [
+        "HMS-kartlegging"
+       ]
+      },
+      {
+       "tekst": [
+        "Skolane skal kvart år legge fram hovudresultata frå den årlege HMS-kartlegginga til behandling både i elevråd og skoleutval."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevundersøkinga"
+       ]
+      },
+      {
+       "tekst": [
+        "Skolane skal kvart år gjennomføre elevundersøkinga og legge fram resultata til behandling både i elevråd og skoleutval."
+       ]
+      },
+      {
+       "tekst": [
+        "Undervisningsevaluering"
+       ]
+      },
+      {
+       "tekst": [
+        "Skolane skal kvart år gjennomføre minst ei undervisningsevaluering og leiinga skal legge fram hovudresultata til skolen til behandling både i elevråd og skoleutval. Evalueringa skal vere anonym. Med hovudresultat legg ein til grunn ei samla vurdering av skolen. Gjennomføring av undervisningsevalueringa skal drøftast med elevrådet."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæring i skolemiljøarbeid"
+       ]
+      },
+      {
+       "tekst": [
+        "Elevane skal ha opplæring i skolemiljøarbeid. Opplæringa skal handle om rettane i ",
+        {
+         "t": "opplæringslova kapittel 10",
+         "l": "lov/2023-06-09-30/kap10"
+        },
+        " og ",
+        {
+         "t": "12",
+         "l": "lov/2023-06-09-30/kap12"
+        },
+        ", og skolen si organisering av dette. Elevane har også rett til nødvendig fritak frå undervisningstimar for å utføre oppgåvene slikt arbeid medfører."
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": null,
+        "rader": [
+         [
+          [
+           "7.1"
+          ],
+          [
+           "Elevane har rett på eit godt og trygt skolemiljø som fremjar helse, inkludering, trivsel og læring. Elevane har rett på eit skolemiljø fritt for mobbing, vald, hærverk, rasistiske utsegner og handlingar, seksuell trakassering, sjikane pga. seksuell legning, religion eller livssyn og anna krenkjande oppførsel."
+          ]
+         ],
+         [
+          [
+           "7.1.b"
+          ],
+          [
+           "Skolen og elevar skal samarbeide for å sikre at avgangsmarkeringa ved skolen er i tråd med prinsippa i 7.1."
+          ]
+         ],
+         [
+          [
+           "7.2"
+          ],
+          [
+           "Det er forbode å ha farlege gjenstandar og våpen på skolen sitt område, eller ved aktivitet i regi av skolen."
+          ]
+         ],
+         [
+          [
+           "7.3"
+          ],
+          [
+           "Elevane har rett på eit rusfritt skolemiljø. Det er ikkje tillate å vere påverka av, bruke eller oppbevare noka form for rusmiddel på skolen sitt område eller ved aktivitet i regi av skolen."
+          ]
+         ],
+         [
+          [
+           "7.4"
+          ],
+          [
+           "Elevane har rett på eit tobakksfritt skolemiljø. Det er ikkje tillate å bruke tobakk, snus og e-sigarettar i skoletida eller ved aktivitet i regi av skolen."
+          ]
+         ],
+         [
+          [
+           "7.5"
+          ],
+          [
+           "Elevane skal ikkje bruke klesplagg som heilt eller delvis dekkjer ansiktet."
+          ]
+         ],
+         [
+          [
+           "7.6"
+          ],
+          [
+           "Elevane har rett til å bli følgde opp ved fråvær."
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Pliktene til elevane",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": null,
+        "rader": [
+         [
+          [
+           "8.1"
+          ],
+          [
+           "Elevane skal ikkje forstyrre undervisninga og/eller vurderingssituasjonar."
+          ]
+         ],
+         [
+          [
+           "8.2"
+          ],
+          [
+           "Elevane har plikt til å rette seg etter lover, reglement og instruksar som gjeld."
+          ]
+         ],
+         [
+          [
+           "8.3"
+          ],
+          [
+           "Elevane skal møte dei tilsette og medelevane sine med respekt."
+          ]
+         ],
+         [
+          [
+           "8.4"
+          ],
+          [
+           "Elevane er pliktig til å møte presis til opplæringa og delta aktivt."
+          ]
+         ],
+         [
+          [
+           "8.5"
+          ],
+          [
+           "Elevane skal snarast mogleg ta kontakt med faglærar for å avtale korleis læringsarbeidet kan følgast opp dersom dei ikkje kan følgje opp arbeid til avtalt tid."
+          ]
+         ],
+         [
+          [
+           "8.6"
+          ],
+          [
+           "Elevane må oppdatere seg om læringsarbeidet som er gjennomført i periodar hen ikkje har vore på skolen."
+          ]
+         ],
+         [
+          [
+           "8.7"
+          ],
+          [
+           "Elevane skal melde frå om fråvær frå første fråværsdag. Likeins dersom dei må forlate opplæringa i løpet av skoledagen. (Sjå fråværsreglement)."
+          ]
+         ],
+         [
+          [
+           "8.8"
+          ],
+          [
+           "Det er læraren som bestemmer kva, korleis og når utstyr skal brukast i opplæringa. Som hovudregel skal det vere mobilforbod i alle undervisningstimar."
+          ]
+         ],
+         [
+          [
+           "8.9"
+          ],
+          [
+           "Læremiddel og utstyr som tilhøyrer skolen og skolen sin eigedom elles skal brukast med omtanke. Hærverk og skade fører mellom anna til erstatningsansvar. ",
+           {
+            "t": "Skadeerstatningslova",
+            "l": "lov/1969-06-13-26"
+           },
+           " (Sjå utlånsreglement)."
+          ]
+         ],
+         [
+          [
+           "8.10"
+          ],
+          [
+           "Elevane skal som brukarar av skolebiblioteket følgje utlånsreglane (Sjå utlånsreglementet)."
+          ]
+         ],
+         [
+          [
+           "8.11"
+          ],
+          [
+           "Elevane har sjølve ansvaret for sine personlege eigedelar."
+          ]
+         ],
+         [
+          [
+           "8.12"
+          ],
+          [
+           "Elevane skal følgje verne- og tryggleiksreglar og bruke dei arbeidskleda og verneutstyret som det vert sett krav om og/eller som er påbode av Arbeidstilsynet, departementet eller skolen."
+          ]
+         ],
+         [
+          [
+           "8.13"
+          ],
+          [
+           "Fusk eller forsøk på fusk i vurderingssituasjonar kan få konsekvensar for karakteren i oppførsel. Elevane skal ha høve til å uttale seg til rektor før det vert teke avgjer i saka. Ein annan konsekvens av å fuske er at arbeidet ikkje blir vurdert. Elevane skal ha høve til å uttale seg til faglærar før det vert teke avgjer i saka. Det skal skiljast mellom fusk og plagiat. Plagiat kan føre til låg måloppnåing på den konkrete vurderingssituasjonen."
+          ]
+         ],
+         [
+          [
+           "8.14"
+          ],
+          [
+           "For eksamen gjeld reglane i forskrifta § 9-42 om fusk/forsøk på fusk."
+          ]
+         ],
+         [
+          [
+           "8.15"
+          ],
+          [
+           "Alle som deltek på ekskursjonar og reiser i regi av skolen, skal vise omsorg og respekt for dei andre deltakarane. Tidsrommet mellom avreise og heimkomst er å sjå på som skoletid, og skolereglane gjeld. Deltakaren skal følgje instruksar frå reiseleiarar og skal ta del i det oppsette programmet for turen."
+          ]
+         ],
+         [
+          [
+           "8.16"
+          ],
+          [
+           "Elevar og føresette skal gjerast kjende med læraren sitt særskilde vern mot vald og truslar i ",
+           {
+            "t": "straffelova § 265",
+            "l": "lov/2005-05-20-28/§265"
+           },
+           " og ",
+           {
+            "t": "§ 286",
+            "l": "lov/2005-05-20-28/§286"
+           },
+           "."
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Brot på skolereglane"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved brot på skolereglane bør føresette til elevar under 18 år kontaktast. Brot på skolereglane ved ekskursjonar og reiser i regi av skolen kan i grove enkelttilfelle føre til heimsending. Før det blir gjort vedtak om heimsending skal rektor og foreldra kontaktast. Eventuelle lokalgitte reglar kjem i tillegg, og sanksjonar må vere heimla i dei overordna skolereglane."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Før det blir sett i verk reaksjonar skal elevane få høve til å forklare seg munnleg direkte for den som skal ta avgjerda."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det skal gjerast ei elevens-beste-vurdering"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Reaksjonar som det ikkje kan klagast på skal skriftleggjerast i tråd med krava til forsvarleg system."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Som hovudregel skal rektor melde straffbare forhold til politiet. For mindre alvorlege tilfelle skal skolen gjere ei konkret vurdering av om melding til politiet er føremålstenleg."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "9 des 2025 nr. 2930",
+        "l": "forskrift/2025-12-09-2930"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Saksbehandling ved reaksjonar på brot på skolereglane der eleven har klagerett",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Før det blir sett i verk reaksjonar skal elevane få høve til å forklare seg munnleg direkte for den som skal ta avgjerda."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det skal gjerast ei elevens-beste-vurdering"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Avgjerd som gjeld konsekvensar etter 6.8–6.16 skal vere skriftleg og innehalde grunngiving for vedtaket. I grunngivinga skal det gjerast greie for dei faktiske forholda som vedtaket bygger på, og kva reglar som er nytta. I vedtaket skal det opplysast om klagerett, klagefrist, klageinstans og om retten til å sjå dokumenta i saka."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Klage kan vere munnleg. Skolen skal i tilfelle skrive ned klaga så snart som mogleg."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Klage fører ikkje automatisk til at vedtaket ikkje kan setjast i verk med ein gong. Elevane skal informerast om at det er mogleg å be om å få utsett iverksetting av vedtaket inntil klaga er avgjort. Dette er aktuelt for vedtak om utvisning, flytting til anna skole."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Føresette til umyndige elevar skal informerast om at skolen har bestemt iverksetting av reaksjon og om hendinga som ligg til grunn for reaksjonen."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Klagebehandlinga"
+       ]
+      },
+      {
+       "tekst": [
+        "Klaga skal leverast til den som har fatta vedtaket som det blir klaga på. Den som har fatta vedtaket vurderer klaga og tek stilling til utsett iverksetting dersom det er bede om dette i klaga. Den som har fatta vedtaket kan ta klaga til følge. Dersom klaga ikkje blir teke til følge, skal saka sendast til klageinstansen til endeleg avgjerd."
+       ]
+      },
+      {
+       "tekst": [
+        "Vedtak om nedsett standpunktkarakter i orden eller oppførsel kan klagast på etter reglane i ",
+        {
+         "t": "forskrift til opplæringslova kap. 10",
+         "l": "forskrift/2006-06-23-724/kap10"
+        },
+        ". Ved oversending av klagesaka til klageinstansen, skal eleven har kopi av saksdokumenta og oversendingsbrevet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Delegering av myndigheit til skolane",
+     "ledd": [
+      {
+       "tekst": [
+        "For spesielle forhold, som ikkje er dekte av skolereglane eller andre felles reglar som alt er gitt av departementet eller fylkeskommunen, kan rektor fastsette tilleggsreglar etter behandling i skoleutval og elevrådet. Desse kan ikkje vere i staden for eller i strid med reglementet."
+       ]
+      },
+      {
+       "tekst": [
+        "Dette kan for eksempel gjelde:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ekskursjonsreglement"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Reglar for kantina"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Internatreglement"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Reglar for skolekjøkken og verkstader"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ordensteneste"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Reglar for skoleavisa."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Tillegg til skolereglane",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til skolereglane er det fastsett:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "IKT-reglement"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Utlånsreglement"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Fråværsreglement."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta trer i kraft 1. august 2024."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskrift om ordensreglement for dei vidaregåande skolane T-44/20 er oppheva."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

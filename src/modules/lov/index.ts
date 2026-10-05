@@ -6,7 +6,7 @@ import utvalgFil from '../../../content/lovverk.yaml';
 import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
 import type { Favorittbar, Modulmanifest } from '../typer.ts';
 import { avtaler, lastBestemmelser } from './avtaler.ts';
-import { dokumentRute, lastDokument, lastOversikt, paragraffavoritt, paragraffavorittnavn, paragrafRute } from './data.ts';
+import { dokumentnavn, dokumentRute, lastDokument, lastOversikt, paragraffavoritt, paragraffavorittnavn, paragrafRute } from './data.ts';
 import { alleParagrafer } from './typer.ts';
 
 /** Kildene følger utvalget i content/lovverk.yaml, så et nytt dokument ikke krever kodeendring. */
@@ -73,7 +73,7 @@ export const manifest: Modulmanifest = {
         return {
           id: paragraffavoritt(d.id, p.nr),
           type: 'lov' as const,
-          tittel: { nb: tittel, nn: tittel },
+          tittel: { nb: tittel, nn: paragraffavorittnavn(d, p, 'nn') },
           stikkord: [p.nr, p.visNr, `§${p.nr}`, d.korttittel],
           rute: paragrafRute(d.id, p.nr),
           modul: 'lov',
@@ -88,10 +88,10 @@ export const manifest: Modulmanifest = {
     const trengs = (dok: string) => !ider || ider.some((id) => id === `lov:${dok}` || id.startsWith(`lov:${dok}:`));
     const lastet = (await Promise.all(dokumenter.filter((d) => trengs(d.id)).map((d) => lastDokument(d.id)))).filter((d) => d !== null);
     const lov: Favorittbar[] = lastet.flatMap((d) => [
-      { id: `lov:${d.id}`, type: 'side' as const, tittel: { nb: d.korttittel, nn: d.korttittel }, rute: dokumentRute(d.id) },
+      { id: `lov:${d.id}`, type: 'side' as const, tittel: { nb: dokumentnavn(d, 'nb'), nn: dokumentnavn(d, 'nn') }, rute: dokumentRute(d.id) },
       ...alleParagrafer(d.seksjoner).map(({ paragraf: p }) => {
-        const tittel = paragraffavorittnavn(d, p);
-        return { id: paragraffavoritt(d.id, p.nr), type: 'element' as const, tittel: { nb: tittel, nn: tittel }, rute: paragrafRute(d.id, p.nr) };
+        const tittel = { nb: paragraffavorittnavn(d, p), nn: paragraffavorittnavn(d, p, 'nn') };
+        return { id: paragraffavoritt(d.id, p.nr), type: 'element' as const, tittel, rute: paragrafRute(d.id, p.nr) };
       }),
     ]);
     const bestemmelser = avtaler.some((a) => trengs(a.id)) ? await lastBestemmelser() : new Map();

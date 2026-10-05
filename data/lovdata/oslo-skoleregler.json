@@ -1,0 +1,852 @@
+{
+ "id": "oslo-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo",
+ "korttittel": "Skoleregler i Oslo",
+ "korttittelNn": "Skulereglar i Oslo",
+ "malform": "nb",
+ "refid": "forskrift/2025-06-27-1353",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "03"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Målet med skolereglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolereglene skal bidra til at alle elever har et trygt og godt skolemiljø som skaper trivsel og inkludering, og som gir elevene et godt grunnlag for læring."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglene skal også bidra til at elever og foreldre får være med på å planlegge, gjennomføre og vurdere skolehverdagen til elevene og virksomheten til skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Hvem gjelder reglene for",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene gjelder for alle grunnskoler og videregående skoler i Oslo kommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglene gjelder ikke for voksenopplæringen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Når og hvor gjelder reglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene gjelder i skoletiden på skolen. De gjelder på vei til og fra skolen, på skolearrangement og skoleturer."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis en handling har en klar tilknytning til skolen og får konsekvenser for skolemiljøet, gjelder reglene også"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "utenfor skoletiden"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "utenfor skolens område"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "på nettet og sosiale medier."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Reglene i ",
+        {
+         "t": "§§ 1",
+         "l": "forskrift/2025-06-27-1353/§1",
+         "a": "oslo-skoleregler/1"
+        },
+        " til ",
+        {
+         "t": "7",
+         "l": "forskrift/2025-06-27-1353/§7",
+         "a": "oslo-skoleregler/7"
+        },
+        " og ",
+        {
+         "t": "§§ 9",
+         "l": "forskrift/2025-06-27-1353/§9",
+         "a": "oslo-skoleregler/9"
+        },
+        ", ",
+        {
+         "t": "10",
+         "l": "forskrift/2025-06-27-1353/§10",
+         "a": "oslo-skoleregler/10"
+        },
+        " og ",
+        {
+         "t": "17",
+         "l": "forskrift/2025-06-27-1353/§17",
+         "a": "oslo-skoleregler/17"
+        },
+        " gjelder for tiden i Aktivitetsskolen (AKS)."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Dine rettigheter som elev",
+     "ledd": [
+      {
+       "tekst": [
+        "Du har rett til å bli behandlet med høflighet, respekt og omtanke. Skolen skal ivareta din rett til å bli hørt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Regler for god orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Du skal følge reglene for god orden. God orden er blant annet å"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte presist"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "melde fra om fravær"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte forberedt til timen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha med nødvendige læremidler og utstyr du trenger"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjøre oppgaver innen frister du får"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "rydde opp etter deg."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Regler for god oppførsel",
+     "ledd": [
+      {
+       "tekst": [
+        "Du skal vise god oppførsel. God oppførsel er blant annet å"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "vise respekt for andre, også på digitale medier"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "være på skolen og delta i undervisningen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge beskjeder fra lærere og andre ansatte på skolen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge skolens regler for bruk av mobiltelefon og annet digitalt utstyr"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "ta vare på ditt eget og skolens utstyr."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Dette er ikke tillatt",
+     "ledd": [
+      {
+       "tekst": [
+        "Det er ikke tillatt å"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "plage, utestenge eller mobbe andre"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "krenke, true eller bruke vold mot andre"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke grovt eller nedsettende språk"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "jukse eller prøve å jukse"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "ta eller bruke bilder, film eller lydopptak av medelever, lærer, ansatte eller andre uten deres samtykke"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "oppbevare, bruke, selge eller kjøpe tobakk, snus, e-sigaretter, alkohol, narkotika, andre rusmidler eller dopingmidler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha med eller bruke farlige gjenstander eller våpen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke plagg som helt eller delvis dekker ansiktet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Som juks regnes blant annet å bruke andres arbeid som ditt eget i vurderingssituasjoner, eller å bruke tekster og løsninger som er lastet ned fra internett, eller materiell laget av kunstig intelligens, som ditt eget i vurderingssituasjoner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Fravær",
+     "ledd": [
+      {
+       "tekst": [
+        "Du skal være til stede under opplæringen hvis ikke annet er avtalt med skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Du eller dine foreldre må gi beskjed hvis du er syk eller borte fra skolen av andre grunner. Dette gjelder også hvis du må forlate undervisningen. Hvis fraværet varer over flere dager, må du gi ny beskjed til skolen om dette."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis du går på videregående skole, skal det føres fravær hvis du kommer for sent. Fraværet blir registrert som timefravær hvis du kommer 10 minutter eller mer for sent til en undervisningsøkt som varer i 45 minutter, og 15 minutter eller mer for sent til en undervisningsøkt som varer i 60 minutter. Hvis årsaken til fraværet ligger utenfor din kontroll, for eksempel stans eller forsinkelser i kollektivtrafikken, kan lærer bestemme at det ikke skal føres timefravær."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Bruk av mobil, smartklokke eller liknende",
+     "ledd": [
+      {
+       "tekst": [
+        "Er du elev på 1. til 7. trinn, kan du ikke bruke mobil, smartklokke eller liknende i skoletiden, med mindre annet er avtalt med lærer eller skolens ledelse. Med skoletiden menes både undervisningstid og friminutt."
+       ]
+      },
+      {
+       "tekst": [
+        "Er du elev på 8. til 10. trinn, kan du ikke bruke mobil, smartklokke eller liknende i undervisningstiden, med mindre annet er avtalt med lærer eller skolens ledelse. Du skal heller ikke bruke den i friminuttene. Skolen kan gjøre unntak for storefri i sine egne regler."
+       ]
+      },
+      {
+       "tekst": [
+        "Er du elev på videregående skole, kan du ikke bruke mobil, smartklokke eller liknende i undervisningstiden, med mindre annet er avtalt med lærer eller skolens ledelse."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen kan lage egne regler om oppbevaring av mobil, smartklokke eller liknende."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis du bruker mobil, smartklokke eller liknende i strid med skolereglene, kan skolen midlertidig ta den fra deg. Skolen kan fastsette i sine lokale regler hvor lenge den kan oppbevares av skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Inndragning",
+     "ledd": [
+      {
+       "tekst": [
+        "Hvis du har med deg noe som er ulovlig til skolen, kan skolen ta dette fra deg. Skolen skal gi dette videre til politiet."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis du har med deg noe som etter denne forskriften eller skolens lokale regler ikke er lov å ha med på skolen, kan skolen ta dette fra deg."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis skolen tar fra deg tobakk, e-sigaretter, snus eller alkohol, og du er under 18 år, skal dette som hovedregel leveres til foreldrene dine."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Tiltak hvis du bryter skolereglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Tiltak som kan brukes hvis du bryter skolereglene er"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "anmerkning"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "skriftlig advarsel til deg som elev"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "skriftlig melding til dine foreldre eller foresatte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "pålegg om å gjøre oppgaver før eller etter skoletid for å rette opp skader som du er ansvarlig for"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "nedsatt karakter i orden eller oppførsel"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning fra undervisningen for en opplæringsøkt, men ikke mer enn to klokketimer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning for resten av dagen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning fra undervisningen for lengre tid enn resten av dagen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "midlertidig eller permanent skolebytte."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Disse periodene gjelder for bortvisning for lengre tid enn resten av dagen:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "8. til 10. trinn: inntil tre dager"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "videregående skole: inntil fem dager, eller resten av skoleåret."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Du må overholde de tiltakene som skolen har bestemt. Hvis du ikke overholder tiltakene, kan skolen bestemme nye tiltak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Hvem kan bestemme hvilke tiltak",
+     "ledd": [
+      {
+       "tekst": [
+        "Rektor, eller den rektor delegerer myndighet til, kan gi anmerkning, skriftlig advarsel, skriftlig melding, nedsatt karakter i orden eller oppførsel eller vise bort inntil to klokketimer, jf. ",
+        {
+         "t": "§ 11 første ledd bokstav a",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        ", ",
+        {
+         "t": "b",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        ", ",
+        {
+         "t": "c",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        ", ",
+        {
+         "t": "e",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        " og ",
+        {
+         "t": "f",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor kan gi pålegg om å gjøre oppgaver før eller etter skoletid og vise bort for resten av dagen, jf. ",
+        {
+         "t": "§ 11 første ledd bokstav d",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        " og ",
+        {
+         "t": "g",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        ". Rektor kan også vise bort elever på 8. til ",
+        {
+         "t": "10",
+         "l": "forskrift/2025-06-27-1353/§10",
+         "a": "oslo-skoleregler/10"
+        },
+        ". trinn inntil tre dager, jf. ",
+        {
+         "t": "§ 11 andre ledd bokstav a",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Direktøren for Utdanningsetaten kan bestemme midlertidig eller permanent skolebytte, jf. ",
+        {
+         "t": "§ 11 bokstav i",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        ". Direktøren kan også vise bort elever på videregående skole resten av skoleåret, jf. ",
+        {
+         "t": "§ 11 andre ledd bokstav b",
+         "l": "forskrift/2025-06-27-1353/§11",
+         "a": "oslo-skoleregler/11"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Saksbehandling av tiltak",
+     "ledd": [
+      {
+       "tekst": [
+        "Tiltakene skal stå i rimelig forhold til dine brudd på reglene. Alvorlighetsgrad og gjentakelse skal ha betydning for valg av tiltak."
+       ]
+      },
+      {
+       "tekst": [
+        "Du har rett til å forklare deg muntlig for den som skal ta avgjørelsen. Skolen skal begrunne avgjørelsen. Avgjørelser av særlig betydning skal begrunnes skriftlig."
+       ]
+      },
+      {
+       "tekst": [
+        "Foreldre eller foresatte til elever på 1. til 7. trinn skal varsles før det blir satt i verk bortvisning for resten av dagen."
+       ]
+      },
+      {
+       "tekst": [
+        "Før avgjørelse om bortvisning blir tatt skal skolen ha vurdert om det er mulig å bruke andre tiltak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Uvedkommende på skolen",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen kan vise bort uvedkommende fra skolens område."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Anmeldelse av straffbare forhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal normalt anmelde straffbare forhold til politiet. For mindre alvorlige forhold skal skolen gjøre en konkret vurdering av om anmeldelse er hensiktsmessig."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Skoledemokratiet",
+     "ledd": [
+      {
+       "tekst": [
+        "Det skal være elevråd som er valgt av elevene, på alle grunnskoler og videregående skoler. Elevene kan velge å organisere seg på annen måte."
+       ]
+      },
+      {
+       "tekst": [
+        "Det skal være et arbeidsutvalg som er valgt av foreldrene (FAU), på alle grunnskoler. Foreldrene kan velge å organisere seg på annen måte."
+       ]
+      },
+      {
+       "tekst": [
+        "Det skal være et driftsstyre på alle skoler. Sammensetningen av driftsstyret er regulert i reglement for driftsstyrene i Oslo-skolen. Elevene skal være representert i driftsstyrets møter også på barnetrinnet når det er saker som omhandler elevenes skolemiljø, herunder møter der elevundersøkelsen eller trivselsundersøkelsen er tema."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen kan velge å ha flere organer for brukermedvirkning. Driftsstyret kan fastsette utfyllende regler om hvilke organer som skal opprettes, og hvordan disse skal organiseres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Lokale regler på skolen",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen kan fastsette lokale regler som utdyper, utfyller og konkretiserer denne forskriften. Skolens lokale regler kan ikke være i strid med denne forskriften."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal involvere elevene i arbeidet med å lage lokale regler. Lokale regler skal publiseres på skolens hjemmeside sammen med reglene i denne forskriften."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolens lokale regler skal godkjennes av driftsstyret ved skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Når reglene trer i kraft",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. august 2025. Samtidig oppheves ",
+        {
+         "t": "forskrift 28. juni 2024 nr. 1692 om skoleregler og skoledemokrati, Oslo kommune, Oslo",
+         "l": "forskrift/2024-06-28-1692"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1277 @@
+{
+ "id": "arkivlova",
+ "kilde": "arkivlova",
+ "type": "lov",
+ "tittel": "Lov om dokumentasjon og arkiv (arkivlova)",
+ "korttittel": "Arkivlova",
+ "malform": "nn",
+ "refid": "lov/2025-06-20-96",
+ "sistEndret": null,
+ "iKraft": "2026-01-01",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "nasjonal"
+ },
+ "utvalg": [
+  "1",
+  "2",
+  "4"
+ ],
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Innleiande føresegner",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formålet med lova",
+     "ledd": [
+      {
+       "tekst": [
+        "Lova skal medverke til ei forsvarleg og etterretteleg offentleg forvaltning ved at"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokumentasjonen i offentlege organ skal bli forvalta som arkiv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokumentasjonen skal vere tilgjengeleg, for å kunne føre kontroll med forvaltninga, styrkje rettstryggleiken og fremje ein open og opplyst offentleg samtale."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Lova skal leggje til rette for at arkiva kan tene som kulturarv, kjelde til historisk kunnskap og grunnlag for forsking, og at allmenta kan ta arkiva i bruk."
+       ]
+      },
+      {
+       "tekst": [
+        "Lova skal òg leggje til rette for bevaring og tilgjengeleggjering av privatarkiv med rettsleg, historisk, kulturell eller vitskapleg verdi."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Definisjonar",
+     "ledd": [
+      {
+       "tekst": [
+        "I lova her gjeld følgjande definisjonar:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "arkiv: dokumentasjon som skal takast vare på i eit avgrensa tidsrom eller for ettertida"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "avlevere: overføre arkiv til langtidsbevaring i ein bevaringsinstitusjon, med den følgja at råderetten går over til bevaringsinstitusjonen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "bevaringsinstitusjon: institusjon eller organisatorisk eining som tek imot og har ansvar for å langtidsbevare arkiva og gjere dei tilgjengelege for bruk"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "deponere: overføre arkiv mellombels til ein bevaringsinstitusjon, der organ held fram med å ha råderetten over arkiva sine og arkiveigarar held fram med å ha eigedomsretten til privatarkiva sine"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokumentasjon: dokument som nemnt i ",
+            {
+             "t": "offentleglova § 4 første ledd",
+             "l": "lov/2006-05-19-16/§4/ledd/1",
+             "a": "offentleglova/4"
+            },
+            " og annan informasjon som organet sjølv har lagra i informasjonssystema sine, og som gjeld sakshandsaminga, oppgåveløysinga eller andre vesentlege tilhøve ved verksemda"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "informasjonssystem: eit system for å organisere og handtere informasjon"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "kassere: å gjere til inkjes dokumentasjon slik at han ikkje lenger finst"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "organ: verksemder som lova gjeld for, utanom rettssubjekt som berre er omfatta av ",
+            {
+             "t": "kapittel 3",
+             "l": "lov/2025-06-20-96/kap3"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "privatarkiv: arkiv som er skapt av andre enn eit organ."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Lova gjeld for"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "staten, fylkeskommunane og kommunane"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "andre rettssubjekt i saker der dei gjer enkeltvedtak eller utferdar forskrift."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Lova gjeld ikkje for Stortinget, Riksrevisjonen, Sivilombodet og andre organ for Stortinget."
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om at lova skal gjelde heilt eller delvis for sjølvstendige rettssubjekt som er omfatta av ",
+        {
+         "t": "offentleglova § 2 første ledd første punktum bokstav c",
+         "l": "lov/2006-05-19-16/§2/ledd/1/setning/1/bokstav/c",
+         "a": "offentleglova/2"
+        },
+        " eller ",
+        {
+         "t": "d",
+         "l": "lov/2006-05-19-16/§2/ledd/1/setning/1/bokstav/d",
+         "a": "offentleglova/2"
+        },
+        ", og som ikkje hovudsakleg driv næring i direkte konkurranse med og på same vilkår som private."
+       ]
+      },
+      {
+       "tekst": [
+        {
+         "t": "Kapittel 3",
+         "l": "lov/2025-06-20-96/kap3"
+        },
+        " gjeld for dei som eig eller forvaltar privatarkiv."
+       ]
+      },
+      {
+       "tekst": [
+        "Lova gjeld i Noreg, medrekna på Svalbard og Jan Mayen. Kongen kan gi forskrift om at lova også skal gjelde på dei norske bilanda i Antarktis."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Nasjonalarkivet",
+     "ledd": [
+      {
+       "tekst": [
+        "Nasjonalarkivet er den nasjonale arkivstyresmakta og bevaringsinstitusjon for statlege arkiv. Samisk arkiv og Norsk helsearkiv er òg delar av Nasjonalarkivet."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet skal rettleie organ om pliktene deira etter lova her."
+       ]
+      },
+      {
+       "tekst": [
+        "Når Nasjonalarkivet ber om det, skal organa uhindra av teieplikt gi opplysningar som gjeld oppfyllinga av plikter etter lova her."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet kan uhindra av teieplikt hente inn opplysningar frå Folkeregisteret som er naudsynte for å løyse oppgåver etter lova her."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet kan krevje at personar som skal tilsetjast der, legg fram ordinær politiattest."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Forvaltninga av dokumentasjon og arkiv",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Arkivplikta",
+     "ledd": [
+      {
+       "tekst": [
+        "Organa skal forvalte dokumentasjon som blir til som ledd i verksemda, som arkiv. Dokumentasjonen skal sikrast slik at informasjonen ikkje går tapt, og forvaltast slik at"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "opphavet til informasjonen alltid er kjent"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "det går fram i kva samanheng informasjonen er skapt, og kva samanheng han inngår i"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "informasjonen ikkje blir endra"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "informasjonen er tilgjengeleg på ein måte som ikkje avgrensar framtidig nytte."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om kva organa skal ta omsyn til når dei skal avgjere kva dei skal forvalte som arkiv etter første ledd."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Forskrift om forvaltninga av dokumentasjon og arkiv",
+     "ledd": [
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om kva som skal inngå i arkivplikta etter ",
+        {
+         "t": "§ 5 første ledd",
+         "l": "lov/2025-06-20-96/§5/ledd/1",
+         "a": "arkivlova/5"
+        },
+        ". Dette kan omfatte:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "føring av journal og anna registrering av metadata"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "retting av feil opplysningar i arkiv og vilkåra for dette"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "handsaming av naudsynte personopplysningar, også personopplysningar som er nemnde i personvernforordninga artikkel 9, og krava til slik handsaming"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "ansvar for pliktene etter lova her knytt til dokumentasjon som blir til når organ samarbeider om å løyse oppgåver i eit felles system"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "krav til informasjonssystem"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "krav til skildringar av informasjonssystem"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "vedlikehald av digitale arkiv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "fysisk sikring av arkiv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "konvertering av analoge arkiv til digitalt format"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "overføring av arkiv mellom organ i samband med oppgåveoverføring eller endringar i den administrative inndelinga av Noreg."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Dokumentasjon av lovpålagde oppgåver som er løyste på vegner av organet",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ som inngår avtale om at eit rettssubjekt som ikkje er omfatta av lova, skal løyse lovpålagde oppgåver på organet sine vegner, skal sørgje for at dei pliktene organet har etter lova, blir følgde opp i oppgåveløysinga."
+       ]
+      },
+      {
+       "tekst": [
+        "Organet har plikt til å ta imot dokumentasjon som gjeld oppgåveløysinga, når rettssubjektet som har løyst oppgåvene, ikkje lenger treng eller har rettmessig krav til dokumentasjonen."
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om unntak frå føresegner gitt i eller i medhald av lova for rettssubjekt som løyser oppgåver på vegner av eit organ."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Dokumentasjonsplan og internkontroll",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ skal ha ein oppdatert dokumentasjonsplan som viser korleis organet har organisert arbeidet med å etterleve pliktene etter lova her."
+       ]
+      },
+      {
+       "tekst": [
+        "Planen skal"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "vere utforma slik at han kan tene som ein reiskap i internkontrollen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "gi oversyn over kva slags dokumentasjon som blir til som ledd i verksemda"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "gi oversyn over kva dokumentasjon organet forvaltar som arkiv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjere greie for korleis dokumentasjon etter bokstav b og c blir lagra."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om innhaldet i dokumentasjonsplanen, internkontroll med dokumentasjons- og arkivforvaltninga og offentleggjering av informasjon frå dokumentasjonsplanen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Unntak for særskilde organ",
+     "ledd": [
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om unntak frå føresegnene gitt i eller i medhald av ",
+        {
+         "t": "§§ 5",
+         "l": "lov/2025-06-20-96/§5",
+         "a": "arkivlova/5"
+        },
+        ", ",
+        {
+         "t": "6",
+         "l": "lov/2025-06-20-96/§6",
+         "a": "arkivlova/6"
+        },
+        ", ",
+        {
+         "t": "8",
+         "l": "lov/2025-06-20-96/§8",
+         "a": "arkivlova/8"
+        },
+        ", ",
+        {
+         "t": "14",
+         "l": "lov/2025-06-20-96/§14",
+         "a": "arkivlova/14"
+        },
+        " og ",
+        {
+         "t": "15",
+         "l": "lov/2025-06-20-96/§15",
+         "a": "arkivlova/15"
+        },
+        " for"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "offentlege utval som er oppretta ved lov eller kongeleg resolusjon"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "organ som er omfatta av lova her etter ",
+            {
+             "t": "§ 3 første ledd bokstav b",
+             "l": "lov/2025-06-20-96/§3/ledd/1/bokstav/b",
+             "a": "arkivlova/3"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Forbod mot å overdra eigedomsrett til eller råderett over arkiv",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ kan ikkje overdra eigedomsretten til eller råderetten over arkiv som er omfatta av lova her. Dette gjeld ikkje overføring til eit anna organ som ledd i overføring av oppgåver og ansvar eller ved endringar i den administrative inndelinga av Noreg."
+       ]
+      },
+      {
+       "tekst": [
+        "Private kan berre få eigedomsrett til arkiv skapt av organa nemnde i ",
+        {
+         "t": "§ 3 første ledd",
+         "l": "lov/2025-06-20-96/§3/ledd/1",
+         "a": "arkivlova/3"
+        },
+        " ved overføring av oppgåver og ansvar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Vilkår for utførsle og lagring av arkiv utanfor Noreg",
+     "ledd": [
+      {
+       "tekst": [
+        "Det er forbode å føre ut av landet dokumentasjon i arkiv som er lagra på fysiske medium."
+       ]
+      },
+      {
+       "tekst": [
+        "Forbodet gjeld ikkje"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "for arkivfagleg forsvarleg mellombels bruk til forvaltningsformål eller rettslege formål"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "for arkivfagleg forsvarleg mediekonvertering, konservering eller sikring innanfor EØS-området i avgrensa tidsrom"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "i andre særlege tilfelle når Nasjonalarkivet gir løyve."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om kva vilkår som skal gjelde ved lagring av digitale arkiv utanfor Noreg."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": [
+      {
+       "nr": "1",
+       "tekst": [
+        "Paragrafen gjeld frå den tida Kongen fastset. ",
+        {
+         "t": "Lov 4. desember 1992 nr. 126 om arkiv § 9",
+         "l": "lov/1992-12-04-126/§9"
+        },
+        " innleiingsteksten og bokstav b held fram å gjelde fram til § 11 i denne lova tek til å gjelde iflg. ",
+        {
+         "t": "res. 12 des 2025 nr. 2510",
+         "l": "forskrift/2025-12-12-2510"
+        },
+        "."
+       ]
+      }
+     ]
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Dokumentasjon som skal takast vare på for ettertida",
+     "ledd": [
+      {
+       "tekst": [
+        "Dokumentasjon med stor kulturell eller vitskapleg verdi og viktig dokumentasjon om rettslege tilhøve eller om forvaltninga si verksemd skal takast vare på og gjerast tilgjengeleg for ettertida."
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om overordna prinsipp, metodar og kriterium som skal leggjast til grunn for Nasjonalarkivet sine vurderingar om kva som skal takast vare på etter første ledd. Nasjonalarkivet kan gi forskrift om kva dokumentasjon som skal takast vare på."
+       ]
+      },
+      {
+       "tekst": [
+        "Dokumentasjon som skal takast vare på, skal avleverast eller overførast til langtidsbevaring i tråd med ",
+        {
+         "t": "§ 14",
+         "l": "lov/2025-06-20-96/§14",
+         "a": "arkivlova/14"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Kassasjon av dokumentasjon som ikkje skal takast vare på",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ kan berre kassere dokumentasjon som"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikkje skal takast vare på i medhald av forskrift gitt av Nasjonalarkivet med heimel i ",
+            {
+             "t": "§ 12 andre ledd",
+             "l": "lov/2025-06-20-96/§12/ledd/2",
+             "a": "arkivlova/12"
+            },
+            ", eller"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "det er gitt løyve frå Nasjonalarkivet til å kassere."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Føresegner i andre lover om plikt til å slette opplysningar gir berre grunnlag for kassasjon når det er klart fastsett eller føresett at opplysningane ikkje skal finnast i arkiva for ettertida. Plikta til å slette opplysningar skal elles oppfyllast på andre måtar enn ved kassasjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet kan gjere vedtak om kassasjon av enkeltopplysningar i særlege høve. Departementet kan gi forskrift om slik kassasjon."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Avlevering, overføring og deponering av arkiv til langtidsbevaring",
+     "ledd": [
+      {
+       "tekst": [
+        "Statlege organ skal avlevere arkiva sine til Nasjonalarkivet."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunar og kommunar skal ha ordningar for langtidsbevaring av arkiva sine. Fylkeskommunar og kommunar held fram med å ha råderetten over arkiva etter overføring til ein bevaringsinstitusjon. Bevaringsinstitusjonane skal følgje arkivlova når dei løyser oppgåver i samband med langtidsbevaringa."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet kan fastsetje i enkelttilfelle at fylkeskommunale eller kommunale arkiv skal overførast til Nasjonalarkivet eller ein annan bevaringsinstitusjon dersom det må til for å sikre arkivet, eller dersom det er andre særlege grunnar til det."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet fastset i enkelttilfelle kvar følgjande arkiv skal avleverast:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "arkiv med opphav i både statleg og kommunal sektor"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "arkiva til organ omfatta av ",
+            {
+             "t": "§ 3 første ledd bokstav b",
+             "l": "lov/2025-06-20-96/§3/ledd/1/bokstav/b",
+             "a": "arkivlova/3"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "arkiva til andre organ som er omfatta av lova, om dette ikkje følgjer av anna lov."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Når eit arkiv blir avlevert til Nasjonalarkivet, skal berre dokumentasjonen som skal takast vare på for ettertida, følgje med. Når arkivet har blitt avlevert, får Nasjonalarkivet råderetten over det om ikkje noko anna er avtalt. Det avleverande organet skal dekkje kostnadene for avleveringa."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet kan samtykke til at eit organ som skal avlevere arkiva sine til Nasjonalarkivet, i staden kan avlevere dei til andre bevaringsinstitusjonar, eller at arkiva blir verande hos organet sjølv. Det skal då setjast krav til langtidsbevaringa. Nasjonalarkivet kan når som helst trekkje samtykket attende."
+       ]
+      },
+      {
+       "tekst": [
+        "Eit organ kan avtale å deponere eit arkiv for teknisk sikring hos bevaringsinstitusjonen før avleveringa."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Forskrift om avlevering mv.",
+     "ledd": [
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "tidspunktet for avleveringa av arkiv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "kva for opplysningar som skal følgje arkivet ved avleveringa"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "korleis avleveringa til Nasjonalarkivet skal skje"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "krav til kva for format arkiva til statlege organ skal avleverast i"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nasjonalarkivet sitt høve til å inngå avtaler med eit organ om forvaltninga av og råderetten over avleverte og deponerte arkiv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "krav til handsaminga av personopplysningar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "refusjon av kostnader Nasjonalarkivet har når dei gjer oppgåver som etter lova her eller forskrift med heimel i lova skal løysast av andre organ."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Tilgjengeleggjering av arkiv som er avleverte eller overførte til langtidsbevaring",
+     "ledd": [
+      {
+       "tekst": [
+        "Arkiv som er avleverte til Nasjonalarkivet eller overførte til fylkeskommunale eller kommunale bevaringsinstitusjonar, og arkiva som er nemnde i ",
+        {
+         "t": "§ 14 sjette ledd",
+         "l": "lov/2025-06-20-96/§14/ledd/6",
+         "a": "arkivlova/14"
+        },
+        ", skal vere offentleg tilgjengelege dersom ikkje anna lovgiving eller rettane til tredjepersonar er til hinder for det."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle bevaringsinstitusjonar skal leggje til rette for bruk av arkiva."
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om tilgjengeleggjering av arkiv og om at bevaringsinstitusjonane kan krevje betaling for tenester som ligg utanfor innsynsretten etter ",
+        {
+         "t": "offentleglova",
+         "l": "lov/2006-05-19-16"
+        },
+        ", ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        " eller anna lov."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Teieplikt og innsynsrett hos Nasjonalarkivet",
+     "ledd": [
+      {
+       "tekst": [
+        "Når råderetten over eit arkiv har gått over til Nasjonalarkivet etter ",
+        {
+         "t": "§ 14",
+         "l": "lov/2025-06-20-96/§14",
+         "a": "arkivlova/14"
+        },
+        ", gjeld teieplikta etter ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        " dersom det ikkje er fastsett i eller i medhald av lov at ei anna teieplikt skal gjelde. Dersom organet som har avlevert arkivet, var omfatta av ei mindre omfattande teieplikt enn det som gjeld etter ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        ", skal Nasjonalarkivet ha same høve til å gi innsyn."
+       ]
+      },
+      {
+       "tekst": [
+        "Retten til partsinnsyn, retten til innsyn etter ",
+        {
+         "t": "offentleglova",
+         "l": "lov/2006-05-19-16"
+        },
+        " og andre særskilde lovfesta innsynsrettar gjeld òg etter at råderetten over eit arkiv går over til Nasjonalarkivet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Handheving og straff",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Tilsyn",
+     "ledd": [
+      {
+       "tekst": [
+        "Nasjonalarkivet fører tilsyn med at organa rettar seg etter føresegnene i ",
+        {
+         "t": "§§ 5",
+         "l": "lov/2025-06-20-96/§5",
+         "a": "arkivlova/5"
+        },
+        " til ",
+        {
+         "t": "15",
+         "l": "lov/2025-06-20-96/§15",
+         "a": "arkivlova/15"
+        },
+        " og forskrifter gitt med heimel i desse føresegnene. Når tilsynet krev det, har Nasjonalarkivet rett til innsyn i dokumentasjon uavhengig av teieplikt."
+       ]
+      },
+      {
+       "tekst": [
+        "Nasjonalarkivet fører tilsyn med at fylkeskommunane og kommunane rettar seg etter føresegnene i ",
+        {
+         "t": "kommuneloven § 25-1",
+         "l": "lov/2018-06-22-83/§25-1"
+        },
+        ". Tilsynet med fylkeskommunar og kommunar skal førast i samsvar med ",
+        {
+         "t": "kommuneloven kapittel 30",
+         "l": "lov/2018-06-22-83/kap30"
+        },
+        ". Nasjonalarkivet fører også tilsyn med bevaringsinstitusjonar som løyser oppgåver i samband med langtidsbevaring på vegner av fylkeskommunar eller kommunar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Pålegg om retting og tvangsmulkt",
+     "ledd": [
+      {
+       "tekst": [
+        "Nasjonalarkivet kan gi eit organ pålegg om å rette på tilhøve som er i strid med ",
+        {
+         "t": "§§ 5",
+         "l": "lov/2025-06-20-96/§5",
+         "a": "arkivlova/5"
+        },
+        " til ",
+        {
+         "t": "15",
+         "l": "lov/2025-06-20-96/§15",
+         "a": "arkivlova/15"
+        },
+        " eller forskrift gitt med heimel i desse føresegnene."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom dokumentasjon har gått tapt som følgje av brot på føresegner nemnde i første ledd, kan Nasjonalarkivet påleggje organet å rekonstruere dokumentasjonen. Rekonstruksjonen skal vere eigna til å kompensere for skaden ved tapet, og kostnadene med rekonstruksjonen skal stå i eit rimeleg høve til den informasjonsverdien dokumentasjonen har."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom eit organ ikkje rettar seg etter eit pålegg som er gitt på grunn av alvorlege brot på føresegnene nemnde i første ledd, kan Nasjonalarkivet påleggje organet tvangsmulkt til det har retta seg etter pålegget. ",
+        {
+         "t": "Forvaltningsloven § 51",
+         "l": "lov/1967-02-10/§51"
+        },
+        " gjeld tilsvarande."
+       ]
+      },
+      {
+       "tekst": [
+        "Første til tredje ledd gjeld ikkje overfor domstolane og forliksråda."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Straff",
+     "ledd": [
+      {
+       "tekst": [
+        "Den som forsettleg eller grovt aktlaust handlar i strid med ",
+        {
+         "t": "§ 5 første ledd",
+         "l": "lov/2025-06-20-96/§5/ledd/1",
+         "a": "arkivlova/5"
+        },
+        ", ",
+        {
+         "t": "§ 10 første ledd",
+         "l": "lov/2025-06-20-96/§10/ledd/1",
+         "a": "arkivlova/10"
+        },
+        ", ",
+        {
+         "t": "§ 11 første ledd",
+         "l": "lov/2025-06-20-96/§11/ledd/1",
+         "a": "arkivlova/11"
+        },
+        ", ",
+        {
+         "t": "§ 12 første ledd",
+         "l": "lov/2025-06-20-96/§12/ledd/1",
+         "a": "arkivlova/12"
+        },
+        ", ",
+        {
+         "t": "§ 13 første ledd",
+         "l": "lov/2025-06-20-96/§13/ledd/1",
+         "a": "arkivlova/13"
+        },
+        ", ",
+        {
+         "t": "§ 14 første ledd",
+         "l": "lov/2025-06-20-96/§14/ledd/1",
+         "a": "arkivlova/14"
+        },
+        " eller ",
+        {
+         "t": "§ 14 andre ledd tredje punktum",
+         "l": "lov/2025-06-20-96/§14/ledd/2/setning/3",
+         "a": "arkivlova/14"
+        },
+        ", eller i strid med føresegner i forskrift gitt med heimel i ",
+        {
+         "t": "§ 6 bokstav a",
+         "l": "lov/2025-06-20-96/§6/bokstav/a",
+         "a": "arkivlova/6"
+        },
+        ", ",
+        {
+         "t": "b",
+         "l": "lov/2025-06-20-96/§6/bokstav/b",
+         "a": "arkivlova/6"
+        },
+        ", ",
+        {
+         "t": "e",
+         "l": "lov/2025-06-20-96/§6/bokstav/e",
+         "a": "arkivlova/6"
+        },
+        ", ",
+        {
+         "t": "f",
+         "l": "lov/2025-06-20-96/§6/bokstav/f",
+         "a": "arkivlova/6"
+        },
+        ", ",
+        {
+         "t": "g",
+         "l": "lov/2025-06-20-96/§6/bokstav/g",
+         "a": "arkivlova/6"
+        },
+        " eller ",
+        {
+         "t": "h",
+         "l": "lov/2025-06-20-96/§6/bokstav/h",
+         "a": "arkivlova/6"
+        },
+        " eller ",
+        {
+         "t": "§ 11 andre ledd",
+         "l": "lov/2025-06-20-96/§11/ledd/2",
+         "a": "arkivlova/11"
+        },
+        ", kan straffast med bot."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

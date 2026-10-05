@@ -1,0 +1,500 @@
+{
+ "id": "mysen-videregaende-skole-fagfordeling-2181",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om omdisponering av fag- og timefordeling, 3-årig opplæringsløp med studiekompetanse innen utdanningsprogrammet helse- og oppvekst ved Mysen videregående skole, helsearbeiderfag mot studiekompetanse, Østfold fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Mysen videregående skole",
+ "korttittelNn": "Fag- og timefordeling, Mysen videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2025-08-15-2181",
+ "sistEndret": null,
+ "iKraft": "2025-08-15",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "31",
+  "skoler": [
+   "974544512"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for utdanningsprogrammet helse- og oppvekstfag med studiekompetanse ved Mysen videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften vil bli revidert ved endring i opplæringstilbudet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "140"
+          ],
+          [
+           "84"
+          ],
+          [
+           "–"
+          ],
+          [
+           "224"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "112"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ],
+          [
+           "392"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [
+           "–"
+          ],
+          [
+           "84"
+          ],
+          [
+           "–"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [
+           "–"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Helsefremmende arbeid"
+          ],
+          [
+           "197"
+          ],
+          [
+           "197"
+          ],
+          [
+           "–"
+          ],
+          [
+           "394"
+          ]
+         ],
+         [
+          [
+           "Kommunikasjon og samhandling"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "–"
+          ],
+          [
+           "280"
+          ]
+         ],
+         [
+          [
+           "Yrkesutøvelse"
+          ],
+          [
+           "140"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ],
+          [
+           "280"
+          ]
+         ],
+         [
+          [
+           "Programfag fra studiespesialisering"
+          ],
+          [
+           "–"
+          ],
+          [
+           "–"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "YFF"
+          ],
+          [
+           "168"
+          ],
+          [
+           "–"
+          ],
+          [
+           "253"
+          ],
+          [
+           "421"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "953"
+          ],
+          [
+           "953"
+          ],
+          [
+           "897"
+          ],
+          [
+           "2803"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende flytting av fag: Yrkesfaglig fordypning (9 timer) flyttes fra vg2 til vg3. Faget Yrkesutøvelse på vg2 (5 timer) flyttes til vg3. Matematikk fellesfag (5 timer) gis på vg1, mens matematikk fellesfag (3 timer) gis på vg2. Faget engelsk flyttes fra vg1 til vg2. Faget Norsk blir fordelt gjennom de 3 årene med henholdsvis 4 timer på vg1, 4 timer på vg2 og 6 timer på vg3."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for vg1, vg2 og vg3 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke seg til et ordinært tilbud. Ved et slikt bytte må eleven ta eventuelle fag som eleven mangler for å få vitnemål. Ved bytte av skole i Østfold fylkeskommune har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at vedkommende tar faget/fagene som privatist. Ordinære løp innen utdanningsprogrammet helse- og oppvekstfag tilbys ved en eller flere videregående skoler i fylket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger en alternativ fag- og timefordeling. Hovedregelen for eksamenstrekket for yrkesfaglig opplæringsløp er at alle elever på vg2 skal opp til en obligatorisk tverrfaglig eksamen i programfag. Fordi ett av programfagene er flyttet til vg3 er også den obligatoriske tverrfaglige eksamen flyttet til vg3. I tillegg skal omlag 20 prosent av elevene på vg1 og vg2 trekkes ut til eksamen i ett fag. Andelen på 20 prosent skal ses over en to-årsperiode."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle elevene skal opp til obligatorisk eksamen i norsk hovedmål vg3. I tillegg skal elevene trekkes ut til én skriftlig eksamen, og én muntlig eller muntlig praktisk eksamen på vg3."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til vg2/vg3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til vg2 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i ",
+        {
+         "t": "opplæringslovens § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", ",
+        {
+         "t": "opplæringsforskriften andre del",
+         "l": "forskrift/2024-06-03-900/del2"
+        },
+        " ",
+        {
+         "t": "kapittel 4",
+         "l": "lov/2023-06-09-30/kap4"
+        },
+        ". Tilbudet er ikke fylkesdekkende og omfattes av postnummerordningen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til vg2 og vg3 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. ",
+        {
+         "t": "§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskriften",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Elever som ikke har bestått alle fagene på vg1 eller vg2, kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering, finner det forsvarlig."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 15. august 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

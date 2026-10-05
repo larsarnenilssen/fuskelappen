@@ -190,7 +190,7 @@ export const vurderingNb = {
     neste: 'Neste dato',
     alle: 'Kalender for eksamen',
     tomt: 'Ingen datoer for dette valget.',
-    kilde: 'Datoene fra Udir og fylkeskommunene hentes hvert halvår. Udirs dato gjelder når kildene er uenige.',
+    kilde: 'Datoene fra Udir og fylkeskommunene hentes hver uke. Udirs dato gjelder når kildene er uenige.',
     eksamensplan: 'Eksamensplanen hos Udir',
     hentet: 'Hentet {dato}.',
     fraKilder: 'Datoen er hentet fra {kilder}.',

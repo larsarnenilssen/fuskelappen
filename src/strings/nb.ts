@@ -3,6 +3,7 @@
 import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 import { fagNb } from './moduler/fag.nb.ts';
 import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
+import { fylkerNb } from './moduler/fylker.nb.ts';
 import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 import { inntakNb } from './moduler/inntak.nb.ts';
@@ -366,6 +367,10 @@ export const nb = {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper.',
     },
+    fylker: {
+      navn: 'Fylkene',
+      beskrivelse: 'Fylkets sider, lokale forskrifter, skoler og opplæringskontor.',
+    },
     lov: {
       navn: 'Regelverk',
       beskrivelse: 'Lov, forskrift og avtaler.',
@@ -383,6 +388,7 @@ export const nb = {
   fag: fagNb,
   opplaeringslop: opplaeringslopNb,
   laereplanverket: laereplanverketNb,
+  fylker: fylkerNb,
   lov: lovNb,
   tilrettelegging: tilretteleggingNb,
   vurdering: vurderingNb,

@@ -39,12 +39,23 @@ export const paragrafRute = (id: string, nr: string) => `/lov/${id}/${encodeURIC
 /** Favoritt-id-en til en paragraf eller bestemmelse, den samme som i søket (avgjørelse 058). */
 export const paragraffavoritt = (dokument: string, nr: string) => `lov:${dokument}:${nr}`;
 
+/** Navnet på dokumentet i appen, på målformen brukeren har valgt når appen gir navnet (de lokale forskriftene). */
+export const dokumentnavn = (d: Pick<Lovdokument, 'korttittel' | 'korttittelNn'>, malform: 'nb' | 'nn') => (malform === 'nn' && d.korttittelNn ? d.korttittelNn : d.korttittel);
+
 /** Navnet på en paragraf i søket og favorittene: «§ 11-1 Tilpassa opplæring (opplæringslova)». */
-export const paragraffavorittnavn = (dokument: Pick<Lovdokument, 'korttittel'>, paragraf: Pick<Paragraf, 'visNr' | 'tittel'>) =>
-  `${paragraf.visNr} ${paragraf.tittel} (${dokument.korttittel.toLowerCase()})`;
+export const paragraffavorittnavn = (dokument: Pick<Lovdokument, 'korttittel' | 'korttittelNn'>, paragraf: Pick<Paragraf, 'visNr' | 'tittel'>, malform: 'nb' | 'nn' = 'nb') =>
+  `${paragraf.visNr} ${paragraf.tittel} (${dokumentnavn(dokument, malform).toLowerCase()})`;
 
 /** Adressen hos Lovdata til et dokument eller en paragraf. */
 export const lovdataUrl = (refid: string, nr?: string) => `https://lovdata.no/${refid}${nr ? `/§${nr}` : ''}`;
+
+/**
+ * Kilden til et dokument i kildelisten. De lokale forskriftene for alle fylker har én felles kilde i kilderegisteret
+ * (lovdata-lokale), så kildelisten viser forskriftens tittel og lenker til den hos Lovdata (avgjørelse 061).
+ */
+export function kildeFor(d: { kilde: string; tittel: string; refid: string }): { id: string; punkt?: string; url?: string } {
+  return d.kilde === 'lovdata-lokale' ? { id: d.kilde, punkt: d.tittel, url: lovdataUrl(d.refid) } : { id: d.kilde };
+}
 
 /** Paragrafen en adresse peker på: «11-1», «§11-1» eller «§ 11-1». */
 export function finnParagraf(dok: Lovdokument, nokkel: string): { paragraf: Paragraf; seksjoner: Seksjon[] } | null {

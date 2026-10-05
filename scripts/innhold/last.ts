@@ -7,6 +7,7 @@ import { parse } from 'yaml';
 import type { ZodType } from 'zod';
 import {
   fylkerSkjema,
+  fylkeslenkerSkjema,
   innholdsfil,
   kilderegisterSkjema,
   praksisfilSkjema,
@@ -17,11 +18,12 @@ import { regelsettSkjema } from '../../src/core/regler/skjema.ts';
 import { lovutvalgSkjema } from '../../src/modules/lov/skjema.ts';
 import { byggBegrepsord, type Begrepsord, lenkBegreper } from '../../src/core/innhold/begrepslenker.ts';
 
-type Filtype = 'kilderegister' | 'fylker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'innhold' | 'regelsett';
+type Filtype = 'kilderegister' | 'fylker' | 'fylkeslenker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'innhold' | 'regelsett';
 
 const skjemaer: Record<Filtype, ZodType> = {
   kilderegister: kilderegisterSkjema,
   fylker: fylkerSkjema,
+  fylkeslenker: fylkeslenkerSkjema,
   synonymer: synonymSkjema,
   praksis: praksisfilSkjema,
   lovutvalg: lovutvalgSkjema,
@@ -33,6 +35,7 @@ export function filtype(relSti: string): Filtype | null {
   const sti = relSti.split(sep).join('/');
   if (sti === 'content/kilder.yaml') return 'kilderegister';
   if (sti === 'content/fylker.yaml') return 'fylker';
+  if (sti === 'content/fylker/lenker.yaml') return 'fylkeslenker';
   if (sti === 'content/sok/synonymer.yaml') return 'synonymer';
   if (sti === 'content/kontroll/praksis.yaml') return 'praksis';
   if (sti === 'content/lovverk.yaml') return 'lovutvalg';

@@ -533,6 +533,11 @@
   fristKort: { nb: "1. feb. eller 1. mars", nn: "1. feb. eller 1. mars" }
   paragrafer: [opplaeringsforskrifta/4-20, opplaeringsforskrifta/4-26, opplaeringsforskrifta/4-9]
   neste: sk-bosted
+  fylke:
+    tema: inntak
+    tekst:
+      nb: Fylkeskommunen bestemmer hvordan søknaden om individuell behandling sendes, og hvilken dokumentasjon som trengs.
+      nn: Fylkeskommunen avgjer korleis søknaden om individuell handsaming blir send, og kva dokumentasjon som trengst.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-20 andre ledd og § 4-26 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-9 andre ledd bokstav a og e", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
@@ -540,6 +545,7 @@
   kontrollsporsmal:
     - "§ 4-9 andre ledd bokstav a gir 1. februar bare for søkere med vedtak om individuell tilrettelegging som i tillegg faller inn under bestemte paragrafer. Er fristteksten her for enkel?"
     - "Er «Søkeren har fortsatt rett til ett av tre utdanningsprogram» riktig for alle som behandles individuelt?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sk-poeng
   type: steg
@@ -563,6 +569,11 @@
   fristKort: { nb: "1. mars eller 1. feb.", nn: "1. mars eller 1. feb." }
   paragrafer: [opplaeringsforskrifta/4-9, opplaeringsforskrifta/4-18, opplaeringsforskrifta/4-19, opplaeringsforskrifta/4-24, opplaeringsforskrifta/4-25, opplaeringsforskrifta/4-6]
   neste: sk-bosted
+  fylke:
+    tema: inntak
+    tekst:
+      nb: Fylkeskommunen kan ha inntaksområder og egne regler i inntaksforskriften sin. Forskriften står under Regelverk når du har valgt fylket.
+      nn: Fylkeskommunen kan ha inntaksområde og eigne reglar i inntaksforskrifta si. Forskrifta står under Regelverk når du har valt fylket.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-9 andre ledd bokstav b og c", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-18 og § 4-19", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-19" }
@@ -573,6 +584,7 @@
   kontrollsporsmal:
     - "Er den korte beskrivelsen av poengsummen riktig nok her, når detaljene kommer i poengberegningen (pakke 3)?"
     - "Er de to gruppene med frist 1. februar (særskilt språkopplæring og nylig kommet til Norge) de eneste som kan gjelde søkere som konkurrerer på poeng (§ 4-9 andre ledd)?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sk-bosted
   type: steg
@@ -592,12 +604,18 @@
       Fylkeskommunen tek først inn søkjarar som er folkeregistrerte i fylket. Er det ledig plass, blir søkjarar frå andre fylke tekne inn etterpå.
   paragrafer: [opplaeringsforskrifta/4-8, opplaeringsforskrifta/4-14]
   neste: sk-soknad
+  fylke:
+    tema: inntak
+    tekst:
+      nb: Fylkeskommunen forteller på sine sider hvordan søkeren søker, og om fristene.
+      nn: Fylkeskommunen fortel på sidene sine korleis søkjaren søkjer, og om fristane.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-8 Kvar søknaden om inntak skal sendast", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-8" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-14 første og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
   kontrollert: null
   kontrollsporsmal:
     - "Bør steget nevne at søkere fra andre fylker med særlige pedagogiske eller sosiale grunner, eller rett til samisk, tas inn først blant dem (§ 4-14 tredje ledd)?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sk-soknad
   type: steg
@@ -620,6 +638,11 @@
     nn: Klage innan tre veker etter svaret.
   fristKort: { nb: "Klage: 3 uker", nn: "Klage: 3 veker" }
   paragrafer: [opplaeringsforskrifta/4-9, opplaeringslova/29-1, forvaltningsloven/28, forvaltningsloven/29, forvaltningsloven/32]
+  fylke:
+    tema: klage-inntak
+    tekst:
+      nb: Fylkeskommunen behandler klagen på inntak først, og forteller på sine sider hvordan søkeren klager.
+      nn: Fylkeskommunen handsamar klaga på inntak først, og fortel på sidene sine korleis søkjaren klagar.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-9 Fristar for å søkje om inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
     - { id: udir-klageinstanser, punkt: "Kapittel 4 Inntak til vidaregåande opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen" }
@@ -631,6 +654,7 @@
     - "Er klageinstansene riktig og forståelig beskrevet, etter Udirs oversikt «Hvem er klageinstanser etter enkeltvedtak?»?"
     - "Er «vanligvis inntakskontoret i fylkeskommunen» et godt navn på den som fatter vedtaket om inntak?"
     - "Er den korte oppsummeringen av hvem som har frist 1. februar riktig nok, når detaljene står i stegene over (§ 4-9 andre ledd)?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sk-voksenrett
   type: steg

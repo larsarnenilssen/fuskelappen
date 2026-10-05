@@ -7,7 +7,7 @@ import type { Eksamensdatoer } from '../../src/modules/vurdering/eksamen/skjema.
 import { eksamensdatoerSkjema } from '../../src/modules/vurdering/eksamen/skjema.ts';
 import { EKSAMENSKILDER } from '../../scripts/eksamen/kilder.ts';
 import { type Eksamenskilde, type Kandidat, lesDatoer, lesKilde, slaSammen } from '../../scripts/eksamen/les.ts';
-import { sammenlign, sidetekst, skalHente } from '../../scripts/hent-eksamen.ts';
+import { sammenlign, sidetekst } from '../../scripts/hent-eksamen.ts';
 import data from '../../data/eksamen/datoer.json';
 
 describe('lesDatoer', () => {
@@ -92,13 +92,6 @@ describe('slaSammen (eier 04.10.2026)', () => {
 });
 
 describe('hentingen', () => {
-  it('henter bare i januar og august, når forrige henting er mer enn 45 dager gammel', () => {
-    expect(skalHente('2026-10-05', null)).toBe(true);
-    expect(skalHente('2026-10-05', '2026-08-03T04:00:00Z')).toBe(false);
-    expect(skalHente('2027-01-04', '2026-08-03T04:00:00Z')).toBe(true);
-    expect(skalHente('2027-01-11', '2027-01-04T04:00:00Z')).toBe(false);
-  });
-
   it('teksten har én linje per avsnitt', () => {
     expect(sidetekst('<main><h2>Fellessensur</h2><p>Høsten 2026:  4. januar 2027</p><script>x</script></main>', 'main')).toBe('Fellessensur\nHøsten 2026: 4. januar 2027');
   });

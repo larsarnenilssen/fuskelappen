@@ -8,9 +8,12 @@ const bredder = [320, 360, 390, 414, 430];
 test.describe('ingen horisontal overflyt i 320–430 px', { tag: '@mobil' }, () => {
   for (const rute of ruter) {
     test(rute, async ({ page }) => {
-      // Fagsøket, tilbudene i Opplæringsløp, overordnet del og dokumentene i Regelverk åpner mange grupper og lister i fem bredder (opptil 100 trykk). Det tar
-      // nær 30 sekunder i WebKit i CI, så testen får mer tid.
-      test.slow(rute === '#/fag' || rute.startsWith('#/opplaeringslop/') || rute.startsWith('#/laereplanverket') || rute.startsWith('#/lov/'), 'Siden åpner mange grupper i fem bredder');
+      // Fagsøket, tilbudene i Opplæringsløp, overordnet del, dokumentene i Regelverk og Arbeidsplan åpner mange grupper og lister i fem bredder (opptil 100
+      // trykk). Det tar nær 30 sekunder i WebKit i CI, så testen får mer tid. Arbeidsplan (12 deler, 60 trykk) gikk over 30 sekunder 05.10.2026.
+      test.slow(
+        rute === '#/fag' || rute === '#/arbeidstid/arbeidsplan' || rute.startsWith('#/opplaeringslop/') || rute.startsWith('#/laereplanverket') || rute.startsWith('#/lov/'),
+        'Siden åpner mange grupper i fem bredder',
+      );
       await settLagret(page, { tema: 'lys', fylke: '46', favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'] });
       for (const bredde of bredder) {
         await page.setViewportSize({ width: bredde, height: 740 });

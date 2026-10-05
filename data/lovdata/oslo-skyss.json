@@ -1,0 +1,109 @@
+{
+ "id": "oslo-skyss",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse i videregående opplæring, skoleåret 2026–2027, Oslo kommune, Oslo",
+ "korttittel": "Skyss og rabattordning i Oslo",
+ "korttittelNn": "Skyss og rabattordning i Oslo",
+ "malform": "nb",
+ "refid": "forskrift/2026-06-09-1044",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-07-31",
+ "lokaltype": "skyss",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "03"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse i videregående opplæring, skoleåret 2026–2027, Oslo kommune, Oslo",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever eller deltagere som Oslo kommune har skyssansvar for, og som har rett til gratis skyss til skolen eller full skyssgodtgjørelse etter ",
+        {
+         "t": "opplæringsloven § 9-1",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        ", skal få tilbud om rabattert billett i stedet for gratis skoleskyss eller full skyssgodtgjørelse. Billetten skal koste mindre enn halvparten av vanlig månedskort for voksne."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Skyss ved nedsatt funksjonsevne, skade eller sykdom",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever har rett til skyss med taxi til og fra skolen hvis de ikke kan benytte kollektivtransport grunnet nedsatt funksjonsevne, skade eller sykdom."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som har behov for taxi til og fra skolen grunnet varig nedsatt funksjonsevne, sykdom eller skade, skal sende søknad om TT-kort til bydelen hvor eleven bor, jf. ",
+        {
+         "t": "forskrift om tilrettelagt transport, Oslo",
+         "l": "forskrift/2015-08-26-1007"
+        },
+        ". I påvente av svar på søknad fra bydelen, sendes søknad om midlertidig taxiskyss til skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis eleven ikke har rett til TT-kort, men trenger taxiskyss grunnet midlertidig nedsatt funksjonsevne, sykdom eller skade, skal eleven sende søknad til skolen eleven går på."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Unntak for enkeltelever i område som ikke har et godt utbygd kollektivtilbud",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som har minst 6 km reiseavstand mellom bosted og opplæringssted, og som bor i et område som ikke har et godt utbygd kollektivtilbud, skal etter søknad til skolen innvilges gratis skyss eller full skyssgodtgjørelse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Ikrafttredelse og varighet",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. august 2026 og gjelder for skoleåret 2026/2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

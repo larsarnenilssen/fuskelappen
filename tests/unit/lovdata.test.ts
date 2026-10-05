@@ -119,7 +119,7 @@ describe('utvalget i content/lovverk.yaml', () => {
 
 describe('dataene i data/lovdata', () => {
   const mappe = join(rot, 'data/lovdata');
-  const filer = existsSync(mappe) ? readdirSync(mappe).filter((f) => f.endsWith('.json') && f !== 'oversikt.json') : [];
+  const filer = existsSync(mappe) ? readdirSync(mappe).filter((f) => f.endsWith('.json') && f !== 'oversikt.json' && f !== 'lokale.json') : [];
 
   it.runIf(filer.length > 0)('følger skjemaet, og oversikten stemmer med dokumentene', () => {
     const oversikt = lovoversiktSkjema.parse(JSON.parse(readFileSync(join(mappe, 'oversikt.json'), 'utf8')));
@@ -208,3 +208,15 @@ describe('hentingen', () => {
     expect(rapport.punkter).toBeGreaterThan(0);
   });
 });
+
+describe('datoen for ikrafttredelse', () => {
+  it('tar den første datoen, også når feltet har flere datoer eller tekst', async () => {
+    const { forsteDato } = await import('../../scripts/lovdata/les.ts');
+    expect(forsteDato('2026-01-01')).toBe('2026-01-01');
+    expect(forsteDato('2009-01-01, 2010-07-01')).toBe('2009-01-01');
+    expect(forsteDato('01.01.2026 (delvis)')).toBe('2026-01-01');
+    expect(forsteDato('Kongen bestemmer')).toBeNull();
+    expect(forsteDato(null)).toBeNull();
+  });
+});
+

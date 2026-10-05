@@ -167,7 +167,7 @@ describe('lenkene i innholdet', () => {
   const lovdokumenter = existsSync(mappe)
     ? new Map(
         readdirSync(mappe)
-          .filter((f) => f.endsWith('.json') && f !== 'oversikt.json')
+          .filter((f) => f.endsWith('.json') && f !== 'oversikt.json' && f !== 'lokale.json')
           .map((f) => {
             const d = JSON.parse(readFileSync(join(mappe, f), 'utf8')) as Lovdokument;
             return [d.id, new Set(alleParagrafer(d.seksjoner).map(({ paragraf }) => paragraf.nr))] as const;

@@ -15,6 +15,8 @@ export interface Ledd {
   liste?: Punkt[];
   /** Tekst etter listen i samme ledd («leddfortsettelse»). */
   etter?: Segment[][];
+  /** En tabell i teksten (f.eks. skoleruta), med overskriftsraden for seg. Hver celle er en tekst. */
+  tabell?: { hode: Segment[][] | null; rader: Segment[][][] };
 }
 
 /** Et punkt i en liste, f.eks. «a.», med ett eller flere ledd. */
@@ -49,7 +51,11 @@ export interface Seksjon {
   paragrafer: Paragraf[];
 }
 
-export type Gyldighet = { niva: 'nasjonal' } | { niva: 'fylke'; fylke: string };
+/** Hvem et dokument gjelder for. Skolenes egne regler gjelder én eller flere skoler (id i skoleregisteret). */
+export type Gyldighet = { niva: 'nasjonal' } | { niva: 'fylke'; fylke: string } | { niva: 'skole'; fylke: string; skoler: string[] };
+
+/** Typene lokale forskrifter appen henter for alle fylker (avgjørelse 061). */
+export type Lokaltype = 'skoleregler' | 'skoleregler-voksne' | 'skoleregler-skole' | 'inntak' | 'skolerute' | 'skyss' | 'fagfordeling';
 
 /** Et dokument (lov eller forskrift) slik det vises i appen: utvalget av kapitler fra Lovdata. */
 export interface Lovdokument {
@@ -61,12 +67,19 @@ export interface Lovdokument {
   type: 'lov' | 'forskrift' | 'avtale';
   tittel: string;
   korttittel: string;
+  /** Navnet på nynorsk, når appen gir dokumentet navn (de lokale forskriftene). korttittel er da på bokmål. */
+  korttittelNn?: string;
   /** Målformen dokumentet er fastsatt på. Teksten vises uoversatt. */
   malform: 'nb' | 'nn';
   /** Dokumentet hos Lovdata, f.eks. «lov/2023-06-09-30». */
   refid: string;
   /** Datoen siste endring tok til å gjelde, eller null. */
   sistEndret: string | null;
+  /** Datoen dokumentet tok til å gjelde, og for en skolerute når den slutter å gjelde (avgjørelse 061). */
+  iKraft?: string | null;
+  iKraftTil?: string | null;
+  /** Typen lokal forskrift, for de lokale forskriftene som hentes for alle fylker. */
+  lokaltype?: Lokaltype;
   /** Datoen teksten sist ble endret i appen (hentingen setter den bare når teksten er ny). */
   hentet: string;
   gyldighet: Gyldighet;
@@ -83,10 +96,15 @@ export interface Lovoversikt {
     type: Lovdokument['type'];
     tittel: string;
     korttittel: string;
+    korttittelNn?: string;
     malform: Lovdokument['malform'];
     refid: string;
     gyldighet: Gyldighet;
     utvalg: string[] | null;
+    sistEndret?: string | null;
+    iKraft?: string | null;
+    iKraftTil?: string | null;
+    lokaltype?: Lokaltype;
     antallKapitler: number;
     antallParagrafer: number;
     /** Numrene på paragrafene, så lenker til Lovdata andre steder i appen kan få en lenke til paragrafen i appen. */
@@ -110,7 +128,12 @@ export const rentekst = (segmenter: readonly Segment[]) => segmenter.map((s) => 
 /** Hele teksten i en paragraf som ren tekst, til søket og sitatsjekken. */
 export function paragraftekst(p: Paragraf): string {
   const ledd = (l: Paragraf['ledd'][number]): string =>
-    [rentekst(l.tekst), ...(l.liste ?? []).flatMap((x) => [x.merke, ...x.ledd.map(ledd)]), ...(l.etter ?? []).map(rentekst)].join(' ');
+    [
+      rentekst(l.tekst),
+      ...(l.liste ?? []).flatMap((x) => [x.merke, ...x.ledd.map(ledd)]),
+      ...(l.etter ?? []).map(rentekst),
+      ...(l.tabell ? [...(l.tabell.hode ? [l.tabell.hode] : []), ...l.tabell.rader].map((r) => r.map(rentekst).join(' ')) : []),
+    ].join(' ');
   return p.ledd.map(ledd).join(' ');
 }
 

@@ -1,0 +1,1224 @@
+{
+ "id": "nordland-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående opplæring og formidling av læreplass, Nordland fylkeskommune",
+ "korttittel": "Inntak og formidling i Nordland",
+ "korttittelNn": "Inntak og formidling i Nordland",
+ "malform": "nb",
+ "refid": "forskrift/2025-12-01-2474",
+ "sistEndret": null,
+ "iKraft": "2025-12-09",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "18"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å fastsette rettigheter og plikter for søkere til videregående opplæring i Nordland fylkeskommune. Forskriften må leses i sammenheng med ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        " og ",
+        {
+         "t": "forskrift til opplæringsloven (opplæringsforskriften)",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for inntak og formidling til videregående opplæring i Nordland etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Vilkår for inntak til videregående opplæring",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Avbrutte fag og omvalg",
+     "ledd": [
+      {
+       "tekst": [
+        "Alle søkere tas inn til et fullstendig utdanningsprogram på videregående trinn 1, 2 eller 3, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        ". Dette gjelder også inntak til restplasser."
+       ]
+      },
+      {
+       "tekst": [
+        "En elev som ønsker å gjøre omvalg jf. ",
+        {
+         "t": "opplæringsloven § 5-5",
+         "l": "lov/2023-06-09-30/§5-5",
+         "a": "opplaeringslova/5-5"
+        },
+        ", må gjøre dette i forbindelse med søknad til videregående opplæring. En elev har ikke rett til å foreta omvalg midt i et skoleår. I Nordland har vi utvidet fristen for å gjøre omvalg senest 30. september. Omvalgselever som har fag med sluttvurdering i fra før, må bestemme seg senest 30. september om de ønsker å ta faget på nytt."
+       ]
+      },
+      {
+       "tekst": [
+        "En elev kan søke til fylkeskommunen om å ikke delta i opplæringen i ett eller flere fag, for å bli privatist i enkeltfag, dersom det foreligger tungtveiende grunner, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Med tungtveiende grunner menes beståtte fag, omsorgsansvar, fysisk og psykisk sykdom eller lignende."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevens søknad skal registreres i opplæringsmappen sammen med vedtak og plan for hvordan manglende opplæring skal fullføres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Ett trinn over to skoleår",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen kan, når hensynet til eleven tilsier det, legge opp til at ett trinn gjennomføres over to sammenhengende skoleår, jf. ",
+        {
+         "t": "opplæringsforskriften § 5-1 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§5-1",
+         "a": "opplaeringsforskrifta/5-1"
+        },
+        ". Det skal utarbeides en plan som sikrer at alle fag fullføres innen utgangen av det andre skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor kan, etter søknad, treffe enkeltvedtak om et slikt forlenget løp. Eleven må dokumentere fysisk eller psykisk sykdom, omsorg for barn, betydelige lærevansker, eller ha vedtak om særskilt språkopplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Et vedtak etter denne bestemmelsen gir eleven rett til å beholde skoleplassen på samme trinn og programområde det påfølgende skoleåret, forutsatt at"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "vedtaket er fattet innen 1. mars,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "tilbudet fortsatt eksisterer det påfølgende skoleåret,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "eleven ikke søker inntak til et annet utdanningsprogram eller programområde – en slik søknad opphever reservasjonen og"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "eleven har rett til videregående opplæring etter ",
+            {
+             "t": "opplæringsloven § 5-1",
+             "l": "lov/2023-06-09-30/§5-1",
+             "a": "opplaeringslova/5-1"
+            },
+            " begge skoleårene."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Voksne søkere til videregående skole",
+     "ledd": [
+      {
+       "tekst": [
+        "Rett til videregående opplæring for voksne er regulert i ",
+        {
+         "t": "opplæringsloven § 18-3",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        ". Det søkes videregående opplæring, veiledning og/eller realkompetansevurdering på søknadsskjema for voksne på ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/nyvigo/vigo"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom fylkeskommunen ikke kan tilby søkere som har rett etter ",
+        {
+         "t": "opplæringslovens § 18-3",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        " et tilbud innen rimelig tid, kan det gjøres unntak fra bestemmelsen. Forutsetningen er at alle elever med ungdomsrett har fått tilbud om skoleplass, og det er ledig kapasitet i ordinære klasser."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er skoleeier ved avdeling for utdanning og kompetanse som behandler ovennevnte tilfeller, og gjelder kun søkere med voksenrett jf. ",
+        {
+         "t": "opplæringslovens § 18-3",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        ". Disse vil da få samme rettigheter og plikter som de med rett til videregående opplæring etter ",
+        {
+         "t": "opplæringslovens § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Fritt skolevalg – hvor kan en søke",
+     "ledd": [
+      {
+       "tekst": [
+        "I Nordland er det fritt skolevalg. Dette betyr at en søker står fritt til å søke seg inn på fylkeskommunale videregående skoler i hele Nordland, uavhengig av bosted."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Grenseavtaler",
+     "ledd": [
+      {
+       "tekst": [
+        "Nordland fylkeskommune har grenseavtaler med nabofylkene Troms og Trøndelag."
+       ]
+      },
+      {
+       "tekst": [
+        "Se ",
+        {
+         "t": "www.vilbli.no",
+         "l": "https://www.vilbli.no/nb/no"
+        },
+        " for informasjon om avtalene."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Søknader etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "For informasjon om søknadsfrister inntak og formidling, se ",
+        {
+         "t": "opplæringsforskriften §§ 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " og ",
+        {
+         "t": "7-5",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader i samarbeid med oppfølgingstjenesten (OT), behandles fram til 1. mai. Alle som søker etter ordinær søknadsfrist 1. mars behandles som ordinære søkere. Ved behov for individuell tilrettelegging må dokumentasjon sendes til skolen søker har som førsteønske."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader fra søkere, som blir plassert i fosterhjem eller barnevernsinstitusjon etter søknadsfrist, kan behandles etter fristen. Dette gjelder så lenge det er forsvarlig, og er ledig plass. Siste frist er 1. oktober."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader til restplasser behandles etter de offisielle ventelistene fra det ordinære inntaket. En søker restplass direkte til ønsket skole via skjema på ",
+        {
+         "t": "www.nfk.no",
+         "l": "https://www.nfk.no"
+        },
+        ". Siste frist for inntak til restplasser er 1. oktober."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere uten opplæringsrett kan ikke søke til ordinær videregående opplæring etter 1. mars, men må søke restplasser til ønsket skole via skjema på ",
+        {
+         "t": "www.nfk.no",
+         "l": "https://www.nfk.no"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle søkere har anledning til å endre søknad én gang før 1. april – fortrinnssøkere har frist 1. mars. Søker kan endre både program og rekkefølge. Skjema for dette finnes på ",
+        {
+         "t": "www.nfk.no",
+         "l": "https://www.nfk.no"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Flytting til Nordland",
+     "ledd": [
+      {
+       "tekst": [
+        "Folkeregistrert adresse per 1. mars avgjør hvilket fylke som er søkers hjemfylke, og dermed hvilket fylke retten til videregående opplæring knyttes til."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som flytter til Nordland fylkeskommune mellom 2. mars og 30. juni, kan regnes som hjemmehørende i Nordland ved å oppfylle disse kriteriene:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søker til Nordland fylkeskommune i Vigo innen 1. mars og krysser av for flytting på Vigo-søknaden."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ny adresse må være oppdatert i Folkeregisteret innen 30. juni."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Se ",
+        {
+         "t": "www.vilbli.no",
+         "l": "https://www.vilbli.no/nb/no"
+        },
+        " for mer informasjon."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Skoleplass i annet fylke",
+     "ledd": [
+      {
+       "tekst": [
+        "Det er anledning å søke skoleplass i alle fylker, men rett til videregående opplæring gjelder kun i hjemfylket. Uten søknad i eget fylke, kan en risikere å stå uten skoleplass."
+       ]
+      },
+      {
+       "tekst": [
+        "Nordland fylkeskommune kjøper bare skoleplass i andre fylker dersom utdanningsprogram ikke tilbys i Nordland. For at dette skal være aktuelt, må det være søkers førsteønske. Ønske om spesielle programfag gir ikke grunnlag for å kjøpe skoleplass i andre fylker."
+       ]
+      },
+      {
+       "tekst": [
+        "Nordland fylkeskommune har samarbeidsavtaler med andre fylker om flere utdanningsprogram som ikke tilbys i Nordland. Disse skal søkes på ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no/nyvigo/vigo"
+        },
+        " via Nordland. Landslinjer og landsdekkende linjer må også søkes via eget fylke."
+       ]
+      },
+      {
+       "tekst": [
+        "Se ",
+        {
+         "t": "www.vilbli.no",
+         "l": "https://www.vilbli.no/nb/no"
+        },
+        " for nærmere informasjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Ønske om kjøp av plass må meldes inn til Inntakskontoret innen 1. mars."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Særlige regler om inntak",
+     "ledd": [
+      {
+       "tekst": [
+        "Vg1 idrettsfag og vg1 musikk, dans og drama, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-6",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        ":"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Inntil 50 prosent av plassene kan tildeles på grunnlag av dokumenterte ferdigheter og ekstrapoeng i tillegg til karakterer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere kan gis 8 ekstrapoeng. Enkelte skoler avholder opptaksprøve i forbindelse med tildeling av ekstrapoeng"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ekstrapoeng tildeles kun når det er flere søkere enn skoleplasser"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Dokumentasjon sendes til skolen innen 1. mars."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Yrkesfag med toppidrett:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere må være på høyt nasjonalt nivå innen sin idrett"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Dokumentasjon sendes til skolen innen 1. mars"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Se ",
+            {
+             "t": "www.vilbli.no",
+             "l": "https://www.vilbli.no/nb/no"
+            },
+            " for oversikt over skoler som har dette tilbudet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Yrkes- og studieforberedende kompetanse – YSK Sandnessjøen Marine fag, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-6",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        ":"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Intervju kan benyttes som kriterium ved inntak, i tillegg til karakterer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere kan gis fra 1–15 ekstrapoeng. Bedriftene fastsetter antall ekstrapoeng i samarbeid med skolen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ekstrapoeng tildeles kun når det er flere søkere enn skoleplasser."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "International Baccalaureate Diploma Programme (IB):"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere må ha gjennomført enten vg1 studiespesialisering, Middle Year Programme (MYP5) eller et program tilsvarende vg1 studiespesialisering i et annet land"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Karakterkrav som stilles for inntak er karakteren 4 eller bedre i engelsk og matematikk, og en gjennomsnittskarakter på minst 4. Hvis kravet ikke er oppfylt, er søkere ukvalifiserte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søknad og dokumentasjon sendes til skolen før 1. mars på eget søknadsskjema. Norske søkere må også søke IB via vigo.no"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Detaljerte regler for inntak finnes på skolens hjemmeside"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved tvil om en søker er kvalifisert, så vil inntakskontoret gjøre en endelig vurdering."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Samisk ressursskole i Nordland:"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Elever som har hatt samisk i grunnskolen, vil ha fortrinnsrett til inntak ved samisk ressursskole i Nordland, jf. ",
+            {
+             "t": "opplæringsloven § 6-2",
+             "l": "lov/2023-06-09-30/§6-2",
+             "a": "opplaeringslova/6-2"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Se ellers ",
+        {
+         "t": "www.vilbli.no",
+         "l": "https://www.vilbli.no/nb/no"
+        },
+        " for mer informasjon om disse utdanningsløpene."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak av utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til Vg3 etter utvekslingsår i utlandet, tas søker inn på grunnlag av karakterer fra Vg1."
+       ]
+      },
+      {
+       "tekst": [
+        "Utvekslingselever fra andre land, må sende søknad direkte til aktuelle skole. Bare utvekslingselever formidlet fra godkjente utvekslingsorganisasjoner kan tas inn. Direktoratet for høyere utdanning og kompetanse har oversikt over disse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Søknad og inntak til statlige skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til statlige skoler ivaretas av skolefylket, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-15",
+         "l": "forskrift/2024-06-03-900/§4-15",
+         "a": "opplaeringsforskrifta/4-15"
+        },
+        ". Det søkes direkte til skolefylket i ",
+        {
+         "t": "www.vigo.no",
+         "l": "https://www.vigo.no"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Inntak til vg1, vg2 og vg3 (kvalifikasjoner)",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Inntak til vg1, vg2, vg3 etter ordinært inntak",
+     "ledd": [
+      {
+       "tekst": [
+        "Etter at hovedinntaket er avsluttet via vigo.no, har alle med rett fått tilbud. Det er da mulig for skolene å supplere klasser med flere elever."
+       ]
+      },
+      {
+       "tekst": [
+        "Rekkefølgen på dette skal være:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ventelister fra inntakskontoret"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere med rett til mer opplæring"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere til restplasser."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak skal bare skje til vedtatte igangsatte utdanningsprogram/programområder med tilhørende fag."
+       ]
+      },
+      {
+       "tekst": [
+        "Siste frist for inntak til videregående opplæring i Nordland er 1. oktober. Etter 1. oktober kan det ikke foretas inntak med mindre det er avtalt med avdeling for utdanning og kompetanse. Unntak her er ved bytte av skole til samme utdanningsprogram/programområde."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen ved rektor, kan velge å avslutte inntak til restplasser tidligere enn 1. oktober."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Inntak på individuelt grunnlag for søkere som ikke har bestått i alle fag",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har ett eller flere fag som ikke er bestått ved skoleslutt, eller som var elev fram til 1. mars jf. ",
+        {
+         "t": "opplæringsforskriften § 5-2",
+         "l": "forskrift/2024-06-03-900/§5-2",
+         "a": "opplaeringsforskrifta/5-2"
+        },
+        ", kan tas inn på neste nivå dersom fylkeskommunen etter en helhetlig vurdering mener søkeren har nødvendig kompetanse til å følge opplæringen, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For å kunne sikre et best mulig beslutningsgrunnlag, innhentes det et rådgivende skjema fra skolen. Det må foreligge en plan for hvordan manglende fag skal bestås påfølgende skoleår, slik at videregående opplæring fullføres på normert tid. Dette gjøres enten via rett til mer opplæring jf. ",
+        {
+         "t": "opplæringsforskriften § 4-3",
+         "l": "forskrift/2024-06-03-900/§4-3",
+         "a": "opplaeringsforskrifta/4-3"
+        },
+        ", ny og utsatt eksamen jf. ",
+        {
+         "t": "opplæringsforskrifta § 9-37",
+         "l": "forskrift/2024-06-03-900/§9-37",
+         "a": "opplaeringsforskrifta/9-37"
+        },
+        " eller privatist jf. ",
+        {
+         "t": "opplæringsforskriften § 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Videresøking av elever i inntaket",
+     "ledd": [
+      {
+       "tekst": [
+        "Nordland fylkeskommune praktiserer videresøking for søkere som ikke konkurrerer seg til ønskede skolesteder på søknaden. Det betyr at søkere får tilbud om skoleplass ved en annen skole som har det aktuelle utdanningsprogrammet eller programområdet. Dette gjelder søkere til alle nivå i videregående opplæring. Dette er i tråd med søkerens rettigheter jf. ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "En elev som tas inn på en skole som ikke tilbyr påbegynte programfag, må fullføre disse som privatist, eller velge nye fag som fører fram til vitnemål."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Formidling av lærlinger og lærekandidater",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Virkeområde og vilkår for formidling til læreplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Lærlinger som skal formidles til læreplass må ha bestått alle programfag på vg1 og vg2 innenfor det aktuelle fagområdet. For elever som søker om formidling til læreplass, og som har vurderingen ikke bestått i mer enn to fellesfag, innhentes det et rådgivende skjema fra skolen. Det må foreligge en plan for hvordan manglende fag skal bestås før oppmelding til fagprøve."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Formidling av lærlinger og lærekandidater",
+     "ledd": [
+      {
+       "tekst": [
+        "Nordland fylkeskommune formidler søkere til godkjente lærebedrifter jf. ",
+        {
+         "t": "opplæringsloven § 7-7",
+         "l": "lov/2023-06-09-30/§7-7",
+         "a": "opplaeringslova/7-7"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Avtale om annen organisering av opplæringen",
+     "ledd": [
+      {
+       "tekst": [
+        "Lærlinger og lærekandidater med rett til videregående opplæring som har inngått lærekontrakt/opplæringskontrakt etter ",
+        {
+         "t": "opplæringsloven § 7-2, fjerde ledd",
+         "l": "lov/2023-06-09-30/§7-2",
+         "a": "opplaeringslova/7-2"
+        },
+        ", er sikret inntak til aktuelt skoletilbud i henhold til inngått opplæringsplan, jf. ",
+        {
+         "t": "opplæringsforskriften § 6-3",
+         "l": "forskrift/2024-06-03-900/§6-3",
+         "a": "opplaeringsforskrifta/6-3"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til læreplass i særløpsfag, må også søke et vg2-tilbud i skole, for å være sikret opplæringstilbud etter fullført vg1."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til full opplæring i bedrift etter grunnskole, eller full opplæring i bedrift etter vg1, må ha en læreplass klar senest 1. mai. For å være sikret et opplæringstilbud, må det også søkes om skoleplass senest 1. mars, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til ordinær læreplass: Har søker selv ordnet læreplass, så kan søknad aksepteres etter søknadsfrist."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Rett til annet opplæringstilbud på videregående trinn 3",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med ungdomsrett som ikke har fått læreplass innen 15. august, vil få tilbud om annet opplæringstilbud med oppstart senest 1. oktober, jf. ",
+        {
+         "t": "opplæringsforskriften § 6-2",
+         "l": "forskrift/2024-06-03-900/§6-2",
+         "a": "opplaeringsforskrifta/6-2"
+        },
+        ". Tilbudet skal gis i et fag som bygger på programområdet eleven har gjennomført på vg2."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som har takket nei til læreplass, har ikke rett til annet opplæringstilbud."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Læreplassgarantien i Nordland fylkeskommune",
+     "ledd": [
+      {
+       "tekst": [
+        "Kun søkere med rett til videregående opplæring, jf. ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", kan vise til læreplassgaranti, og dette må gjøres høsten etter at søker har fullført vg2."
+       ]
+      },
+      {
+       "tekst": [
+        "Se ",
+        {
+         "t": "www.nfk.no",
+         "l": "https://www.nfk.no"
+        },
+        " for oversikt over hvilke utdanningsprogram som har læreplassgaranti, og hvilke kriterier som gjelder."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Rett til påbygging til generell studiekompetanse etter yrkeskompetanse, fagbrev og svennebrev",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har fullført og bestått fag- og yrkesopplæring og fått yrkeskompetanse (med eller uten fag-/svennebrev), har rett til inntak til vg3 påbygging til generell studiekompetanse, jf. ",
+        {
+         "t": "opplæringsloven § 5-7",
+         "l": "lov/2023-06-09-30/§5-7",
+         "a": "opplaeringslova/5-7"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Forutsetningen for å kunne søke dette tilbudet (og bli inntatt), er at søker har avlagt og bestått fagprøve innen andre gangs inntak kjøres i juli/august."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Voksne søkere til læreplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Voksne søkere som oppfyller vilkårene i ",
+        {
+         "t": "opplæringsforskriften § 7-3 andre ledd",
+         "l": "forskrift/2024-06-03-900/§7-3",
+         "a": "opplaeringsforskrifta/7-3"
+        },
+        ", men som ikke lenger har rett til videregående opplæring etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", kan velge å gjennomføre læretid i bedrift etter reglene i ",
+        {
+         "t": "opplæringsloven kapittel 5",
+         "l": "lov/2023-06-09-30/kap5"
+        },
+        ". De får da de samme rettighetene og pliktene som de med rett etter ",
+        {
+         "t": "§ 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", jf. ",
+        {
+         "t": "opplæringsloven § 18-3 tredje ledd",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap6",
+   "type": "kapittel",
+   "nr": "6",
+   "overskrift": "Kapittel 6 Felles bestemmelser",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Klage på vedtak om inntak",
+     "ledd": [
+      {
+       "tekst": [
+        "Avgjørelse om inntak til videregående opplæring er enkeltvedtak. Klageretten reguleres i henhold til ",
+        {
+         "t": "forvaltningsloven § 28",
+         "l": "lov/1967-02-10/§28",
+         "a": "forvaltningsloven/28"
+        },
+        ". Alle søkere blir opplyst om klageretten på søknadsskjema på vigo.no, og på vilbli.no."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Informasjonsplikt",
+     "ledd": [
+      {
+       "tekst": [
+        "Nettstedet ",
+        {
+         "t": "www.vilbli.no",
+         "l": "https://www.vilbli.no/nb/no"
+        },
+        " er informasjonskanalen til Nordland fylkeskommune. Her vil de gjeldende regler for inntak og formidling til videregående opplæring være oppdatert."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Oppheving av tidligere vedtak",
+     "ledd": [
+      {
+       "tekst": [
+        "Denne forskriften opphever tidligere fylkestingsvedtak og fylkesrådsvedtak som omhandler inntak og formidling til videregående opplæring i Nordland."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Godkjenning av forskrift",
+     "ledd": [
+      {
+       "tekst": [
+        "Vedtak om forskrift om inntak til videregående opplæring og formidling av læreplass, Nordland fylkeskommune, er delegert til fylkesdirektør for utdanning og kompetanse i Nordland."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom endringene er av en slik art at de endrer elevenes muligheter for inntak til bestemte tilbud, må dette behandles og godkjennes av fylkesrådet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "28",
+     "visNr": "§ 28",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft ved kunngjøring i Norsk Lovtidend. Samtidig oppheves ",
+        {
+         "t": "forskrift 20. desember 2024 nr. 3468 om inntak til videregående opplæring og formidling av læreplass, Nordland fylkeskommune",
+         "l": "forskrift/2024-12-20-3468"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

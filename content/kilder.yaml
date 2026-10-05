@@ -145,6 +145,73 @@ kilder:
       Kapittel II–VI: habilitet, alminnelige regler, saksforberedelse ved enkeltvedtak, vedtaket og klage. Valgt ut
       fra Udirs regelverkssider (eier 02.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
 
+  - id: offentleglova
+    navn: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
+    kortnavn: Offentleglova
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2006-05-19-16
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3]
+    merknad: >-
+      Kapittel 1–4: formål og verkeområde, hovudreglane om innsyn og journalføring, unntaka frå innsynsretten og
+      saksbehandling og klage (eier 05.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
+
+  - id: arkivlova
+    navn: Lov om dokumentasjon og arkiv (arkivlova)
+    kortnavn: Arkivlova
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2025-06-20-96
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3]
+    merknad: >-
+      Den nye arkivlova, i kraft 1.1.2026 (den gamle fra 1992 er opphevet). Kapittel 1, 2 og 4: verkeområde,
+      arkivplikta, dokumentasjonsplan, bevaring og kassasjon, og tilsyn (eier 05.10.2026). Teksten hentes som for
+      opplæringslova (avgjørelse 039).
+
+  - id: offentlegforskrifta
+    navn: Forskrift til offentleglova (offentlegforskrifta)
+    kortnavn: Offentlegforskrifta
+    utgiver: Lovdata
+    url: https://lovdata.no/forskrift/2008-10-17-1119
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3]
+    merknad: >-
+      Hele forskriften (eier 05.10.2026): blant annet betaling for innsyn, journal og dokumenter på Internett,
+      organinterne dokumenter og klageinstans. Teksten hentes som for opplæringslova (avgjørelse 039).
+
+  - id: arkivforskrifta
+    navn: Forskrift om dokumentasjon og arkiv (arkivforskrifta)
+    kortnavn: Arkivforskrifta
+    utgiver: Lovdata
+    url: https://lovdata.no/forskrift/2025-12-17-2647
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3]
+    merknad: >-
+      Den nye arkivforskrifta, i kraft 1.1.2026. Kapittel 1, 2 og 8: forvaltning av dokumentasjon som arkiv,
+      journalføring og personopplysninger i arkiv (eier ba om forskriften 05.10.2026, kapitlene til eiers kontroll).
+      Teksten hentes som for opplæringslova
+      (avgjørelse 039).
+
   - id: forskrift-helse-miljo-skoler
     navn: Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger
     utgiver: Lovdata
@@ -431,6 +498,23 @@ kilder:
     merknad: >-
       Kilde for at læreplanverket består av tre deler: overordnet del, fag- og timefordelingen og læreplanene for
       fag (eier 02.10.2026). Sjekken følger med på ingressen på siden. Endres den, står det i kontrollsaken.
+
+  - id: lovdata-lokale
+    navn: Lokale forskrifter hos Lovdata
+    kortnavn: Lokale forskrifter
+    utgiver: Lovdata
+    url: https://lovdata.no/register/lokaleForskrifter
+    type: side
+    niva: nasjonal
+    lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Skoleregler, skoleregler for voksne og for den enkelte skole, inntak og skolerute for alle fylker, fra
+      registeret over lokale forskrifter (avgjørelse 061, eier 05.10.2026). Hentes av npm run hent:lovdata. En
+      forskrift som også har egen kilde her (fordi innhold viser til den), står under den kilden.
 
   - id: vestland-forskrift-inntak
     navn: Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
@@ -774,7 +858,7 @@ kilder:
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
-      Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet i januar og august av
+      Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet hver uke av
       npm run hent:eksamen fra sidene i scripts/eksamen/kilder.ts (avgjørelse 059). Udirs dato går foran. Ellers må
       minst to fylker ha samme dato (eier 04.10.2026). eksamensplan.udir.no brukes ikke, fordi robots.txt stenger.
 
@@ -888,12 +972,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4, 5]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Inntak i Vestland: klage og klagenemnd. Adressen er flyttet fra vlfk.no til vestlandfylke.no (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -906,12 +992,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Inntaksområdepoeng, som venter på sidene (fase 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -924,12 +1012,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Søknad, kartlegging og frist i Vestland for særskild språkopplæring (fase 4, Språk steg 2–3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -942,12 +1032,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Innføringskurs i Vestland (fase 4, Språk steg 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -960,12 +1052,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Rettleiingstenesta og midlertidig vedtak ved inntak (fase 4, Tilrettelegging steg 0b, 5b og 6). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -978,12 +1072,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Eksamen for elever i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -996,12 +1092,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Hurtigklage og klage på standpunkt i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -1014,12 +1112,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Når datoene for muntleg eksamen for privatistar kjem (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
@@ -1032,12 +1132,14 @@ kilder:
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    aktiv: false
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
+      Ikke aktiv fra 05.10.2026: vestlandfylke.no stenger skyen, og fylkenes sider lenkes i stedet fra
+      content/fylker/lenker.yaml (avgjørelse 061). Lenkesjekken sjekker adressen.
       Fag- og sveineprøva i Vestland, klagenemnda for fagprøver (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
       (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 

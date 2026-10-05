@@ -1,0 +1,249 @@
+{
+ "id": "finnmark-skolerute-2027-2028-fra-2027-08-01",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skolerute for de fylkeskommunale videregående skolene, skoleåret 2027–2028, Finnmark fylkeskommune",
+ "korttittel": "Skolerute 2027–2028 i Finnmark",
+ "korttittelNn": "Skulerute 2027–2028 i Finnmark",
+ "malform": "nb",
+ "refid": "forskrift/2025-12-02-2398",
+ "sistEndret": null,
+ "iKraft": "2027-08-01",
+ "iKraftTil": "2028-07-30",
+ "lokaltype": "skolerute",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "56"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skolerute for de fylkeskommunale videregående skolene, skoleåret 2027–2028, Finnmark fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gir informasjon om hvilke skole- og feriedager elevene har skoleåret 2027–2028. Elevene har rett og plikt til å møte på skolen på de fastsatte skoledagene. Forskriften gjelder for elever ved alle videregående skoler i Finnmark fylkeskommune skoleåret 2027–2028."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Skole- og feriedager skoleåret 2027–2028",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Måned"
+         ],
+         [
+          "Merknader"
+         ],
+         [
+          "Skoledager"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "August"
+          ],
+          [
+           "Mandag 16 august – første skoledag"
+          ],
+          [
+           "12"
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          [],
+          [
+           "22"
+          ]
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Høstferie – fri fra og med mandag 4. til og med fredag 8. oktober"
+          ],
+          [
+           "16"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Mandag 15. og tirsdag 16. november. Felles planleggingsdager. Fri for elevene."
+          ],
+          [
+           "20"
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Fredag 17. desember – siste skoledag før jul."
+          ],
+          [
+           "13"
+          ]
+         ],
+         [
+          [
+           "Antall dager høst 2027"
+          ],
+          [
+           "83"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Måned"
+         ],
+         [
+          "Merknader"
+         ],
+         [
+          "Skoledager"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Første skoledag mandag 3. januar"
+          ],
+          [
+           "21"
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [],
+          [
+           "21"
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Vinterferie – fri fra og med onsdag 8. til og med fredag 10. mars."
+          ],
+          [
+           "20"
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          [
+           "Påskeferie mandag 10. april – mandag 17. april Første skoledag etter påske er tirsdag 18. april"
+          ],
+          [
+           "14"
+          ]
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Mandag 1. mai – Offentlig høytidsdag Onsdag 17. mai – Grunnlovsdag Torsdag 25. mai – Kristi himmelfartsdag"
+          ],
+          [
+           "20"
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Mandag 5. juni – Andre pinsedag Siste skoledag fredag 16. juni"
+          ],
+          [
+           "11"
+          ]
+         ],
+         [
+          [
+           "Antall dager vår 2028"
+          ],
+          [
+           "107"
+          ]
+         ],
+         [
+          [
+           "Antall dager hele skoleåret"
+          ],
+          [
+           "190"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen kan, med hjemmel i ",
+        {
+         "t": "opplæringsloven § 14-1",
+         "l": "lov/2023-06-09-30/§14-1",
+         "a": "opplaeringslova/14-1"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskriften § 4-3",
+         "l": "forskrift/2024-06-03-900/§4-3",
+         "a": "opplaeringsforskrifta/4-3"
+        },
+        ", fatte enkeltvedtak om mer opplæring i perioder utenfor ordinær skolerute. Slike vedtak skal angi fag, varighet og organisering, og det skal tas hensyn til gjeldende avtaleverk for undervisningspersonell."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -12,7 +12,7 @@ import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
-import { finnParagraf, lastDokument, lovdataUrl, utvalgstekst } from '../data.ts';
+import { dokumentnavn, finnParagraf, kildeFor, lastDokument, lovdataUrl, utvalgstekst } from '../data.ts';
 import { alleParagrafer, type Lovdokument, type Seksjon } from '../typer.ts';
 import { finnAvtale } from '../avtaler.ts';
 import { Avtale } from './Avtale.tsx';
@@ -96,22 +96,24 @@ function Lovside({ parametre }: SideProps) {
         </>
       ) : (
         <>
-          <Sidetopp tittel={data.korttittel} lang={data.malform} favoritt={`lov:${data.id}`} />
+          <Sidetopp tittel={dokumentnavn(data, malform)} {...(data.korttittelNn ? {} : { lang: data.malform })} favoritt={`lov:${data.id}`} />
           <p class="dempet">
             <span lang={data.malform}>{data.tittel}</span>. {t('lov.fastsatt', { malform: t(`lov.malform.${data.malform}`) })}.{' '}
             {data.utvalg ? t('lov.utvalgEnkel', { liste: t('lov.kapitler', { liste: utvalgstekst(data.utvalg, t('lov.og')) }) }) : t('lov.heleDokumentet')}
             {data.gyldighet.niva === 'fylke' && ` ${t('lov.gjelderFylke', { fylke: fylkesnavn(data.gyldighet.fylke) ?? data.gyldighet.fylke })}`}
+            {data.gyldighet.niva === 'skole' && ` ${t('lov.gjelderSkole')}`}
+            {data.iKraft && ` ${data.iKraftTil ? `${t('lov.iKraftPeriode', { fra: formaterDato(data.iKraft, malform), til: formaterDato(data.iKraftTil, malform) })}.` : t('lov.iKraftSetning', { dato: formaterDato(data.iKraft, malform) })}`}
           </p>
           {nokkel && !mal && (
             <p class="merknad" role="alert">
-              {t('lov.paragrafIkkeFunnet', { paragraf: `§ ${nokkel}`, navn: data.korttittel })}{' '}
+              {t('lov.paragrafIkkeFunnet', { paragraf: `§ ${nokkel}`, navn: dokumentnavn(data, malform) })}{' '}
               <a class="ekstern-lenke" href={lovdataUrl(data.refid, nokkel.replace(/^§\s*/, ''))} target="_blank" rel="noopener noreferrer">
                 {t('lov.lovdata')}
                 <Ikon navn="ekstern" class="ikon-liten" />
               </a>
             </p>
           )}
-          <Sok etikett={t('lov.sok', { navn: data.korttittel })} dokumenter={() => Promise.resolve([data])} visDokument={false}>
+          <Sok etikett={t('lov.sok', { navn: dokumentnavn(data, malform) })} dokumenter={() => Promise.resolve([data])} visDokument={false}>
             <Seksjoner dokument={data} seksjoner={data.seksjoner} apne={apne} />
           </Sok>
           <p class="liten dempet">
@@ -122,7 +124,7 @@ function Lovside({ parametre }: SideProps) {
               <Ikon navn="ekstern" class="ikon-liten" />
             </a>
           </p>
-          <Kildeliste kilder={[{ id: data.kilde }]} />
+          <Kildeliste kilder={[kildeFor(data)]} />
         </>
       )}
     </div>

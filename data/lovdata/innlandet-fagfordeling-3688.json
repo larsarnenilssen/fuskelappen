@@ -1,0 +1,583 @@
+{
+ "id": "innlandet-fagfordeling-3688",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse gjennom programområdet søm og tekstil, Innlandet fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Innlandet",
+ "korttittelNn": "Fag- og timefordeling, Innlandet",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-05-3688",
+ "sistEndret": null,
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "34"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse gjennom programområdet søm og tekstil, Innlandet fylkeskommune",
+   "merknader": [
+    [
+     "Utdanningsprogram Håndverk, design og produktutvikling, søm og tekstil"
+    ],
+    [
+     "Opplæringsløpet tilbys ved følgende skole: Hamar katedralskole"
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": []
+  },
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å rekruttere søkere/elever som ellers ville valgt et studieforberedende framfor et yrkesfaglig utdanningsprogram og som har et mål om videre utdanning i høyskole eller universitet. Den fleksible fag- og timefordelingen tilrettelegger for et mer tilpasset opplæringsløp, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fleksibel fag- og timefordeling for utdanningsprogrammet håndverk, design og produktutvikling."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for elev som tas inn til det fleksible opplæringsløpet innenfor utdanningsprogrammet håndverk, design og produktutvikling, søm og tekstilhåndverk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Forskyvning i fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven skal ha følgende fag- og timefordeling innenfor håndverk, design og produktutvikling, søm og tekstilhåndverk:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Naturfag (fra studieforberedende modell)"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk (fra studieforberedende modell)"
+          ],
+          [
+           "140"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [
+           "224"
+          ]
+         ],
+         [
+          [
+           "Norsk (fra studieforberedende modell)"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag* *Felles programfag er fordelt på to ulike fag per nivå. Informasjon om fagene finnes på nettstedet: ",
+           {
+            "t": "www.vilbli.no",
+            "l": "https://www.vilbli.no/nb/no"
+           },
+           " – detaljert informasjon om felles programfag"
+          ],
+          [
+           "477"
+          ],
+          [
+           "477"
+          ],
+          [],
+          [
+           "954"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [],
+          [
+           "168"
+          ],
+          [
+           "253"
+          ],
+          [
+           "421"
+          ]
+         ],
+         [
+          [
+           "Valgfritt programfag fra studieforberedende utdanningsprogram"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "926"
+          ],
+          [
+           "981"
+          ],
+          [
+           "897"
+          ],
+          [
+           "2804"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Norsk følger den studieforberedende modellen og er lagt til Vg1, Vg2 og Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Matematikk følger den studieforberedende modellen og er lagt til er lagt til Vg1 og Vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag følger den studieforberedende modellen og er lagt til Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "YFF programfag er lagt til Vg2 og Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Valgfritt programfag fra studieforberedende løp er lagt til Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Tverrfaglig eksamen i programfagene skal gjennomføres på Vg2."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for Vg1, Vg2 og Vg3 skal være lik den nasjonale fag- og timefordelingen for det gitte utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølge som framgår av læreplanen, i tråd med progresjonen i faget og det er ikke anledning til å dele et fag opp i andre enheter enn det som framgår av læreplanen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordinære løp innen utdanningsprogrammet håndverk, design og produktutvikling og programområde Vg2 søm og tekstilhåndverk tilbys ikke i Innlandet fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Elev som velger å avbryte det fleksible opplæringsløpet må ta eventuelle fag som mangler som privatist for å få vitnemål eller fagbrev eller gjøre omvalg i henhold til bestemmelsene i ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "For å oppfylle kravene til vitnemål må elevene ha samme antall obligatoriske eksamener som elever med nasjonal fag- og timefordeling. Eksamen og trekkordning følger kravene i det enkelte fag og trinn."
+       ]
+      },
+      {
+       "tekst": [
+        "Vg1 og Vg2: Over en toårsperiode skal ca. 20 % av elevene på Vg1 og Vg2 trekkes ut til eksamen i fellesfag. (Vg1: Mulig med en trekkeksamen. Vg2: Mulig med en trekkeksamen.)"
+       ]
+      },
+      {
+       "tekst": [
+        "Alle elever skal opp til den obligatoriske tverrfaglige eksamen i programfag på Vg2."
+       ]
+      },
+      {
+       "tekst": [
+        "Vg3: Alle elevene skal opp til obligatorisk eksamen i norsk hovedmål Vg3. I tillegg skal elevene trekkes ut til én skriftlig eksamen, og én muntlig eller muntlig praktisk eksamen (en av trekkeksamenene kan eventuelt gjennomføres på Vg2 avhengig av fagsammensetning)."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til Vg1 og opptak til Vg2 og Vg3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Søknad om inntak til Vg1 med fleksibel fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i ",
+        {
+         "t": "opplæringslovens § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", ",
+        {
+         "t": "opplæringsforskriften andre del",
+         "l": "forskrift/2024-06-03-900/del2"
+        },
+        " kapittel 4 og kapittel 2 i forskrift om inntak til videregående skole og formidling til læreplass i Innlandet fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknad til Vg1: Det benyttes egen innsøkingskode til Vg1 som indikerer at søker prioriterer dette fleksible opplæringsløpet over tre år."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg2 og Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Elev som følger fleksibel fag- og timefordeling, har de de samme rettighetene til inntak til Vg2 og Vg3 som elev som følger den nasjonale fag- og timefordelingen. Eleven har rett til to års videregående opplæring innen et programområde som bygger på det valgte fleksible opplæringsløpet eleven har valgt, jf. ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For inntak til Vg2 og Vg3 må eleven ha bestått alle fagene på lavere nivå i tråd med den fastsatte fleksible fag- og timefordelingen, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Elev som ikke har bestått alle fagene på Vg1, kan likevel flyttes opp til neste nivå dersom skolen etter en helhetlig vurdering finner det forsvarlig, jf. ",
+        {
+         "t": "opplæringsforskriftens § 4-13 bokstav c",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen har ansvar for å gi inntakskontoret informasjon om elev som skolen ikke skal flytte opp til neste nivå på grunn av fag som ikke er bestått innen 25. juni."
+       ]
+      },
+      {
+       "tekst": [
+        "Elev som er kvalifisert til Vg2 og Vg3 preutfylles og flyttes automatisk opp til neste nivå ved den skolen eleven har vært elev."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Mindre endringer i den lokale forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Avdelingssjef for Kompetanse og tannhelse kan gjøre redaksjonelle endringer i den lokale forskriften. Dersom endringen er av en slik art at de påvirker søkeren sin mulighet for inntak til bestemte tilbud, skal endringen behandles politisk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. januar 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Samtidig oppheves ",
+        {
+         "t": "forskrift 10. november 2020 nr. 2362 om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse gjennom programområdet søm og tekstil, Innlandet fylkeskommune",
+         "l": "forskrift/2020-11-10-2362"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

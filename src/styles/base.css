@@ -656,6 +656,32 @@ main {
   border: 2px solid var(--farge-merke);
 }
 
+/* Nettsiden og skolens regler som knapper øverst i skolekortet, og en strek før tilbudene (eier 05.10.2026). */
+.skolekort-snarveier {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+}
+
+.skolekort-snarveier .knapp {
+  text-decoration: none;
+}
+
+.skolekort-paragraf {
+  margin-right: calc(var(--rom-1) * -1);
+  font-weight: 700;
+}
+
+.skolekort-skille {
+  margin: 0;
+  padding-top: var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+  font-size: var(--str-s);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
 .skolekort-alle {
   margin: var(--rom-3) 0 0;
 }
@@ -879,6 +905,7 @@ main {
 
 .felt input,
 .felt select,
+.hos-fylket select,
 .sokefelt input {
   width: 100%;
   min-height: var(--trykkflate);
@@ -4477,6 +4504,34 @@ p.fagkort-tittel {
   margin-bottom: var(--rom-3);
 }
 
+/* Tabeller i lovteksten (f.eks. skoleruta, avgjørelse 061). Rulles for seg når de er bredere enn skjermen. */
+.lov-tabell {
+  overflow-x: auto;
+  margin: var(--rom-2) 0;
+}
+
+.lov-tabell table {
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+.lov-tabell th,
+.lov-tabell td {
+  border: var(--strek) solid var(--farge-linje);
+  padding: var(--rom-1) var(--rom-2);
+  text-align: left;
+  vertical-align: top;
+}
+
+.lov-tabell th {
+  background: var(--farge-flate-2);
+}
+
+.listelenke-tittel .merke-skole {
+  margin-left: var(--rom-1);
+  vertical-align: middle;
+}
+
 /* Listepunktene med bokstaven eller tallet fra lovteksten («a)», «1.») i en egen kolonne. */
 .lov-liste {
   margin: 0 0 var(--rom-2);
@@ -4800,6 +4855,83 @@ p.fagkort-tittel {
 
 /* Fylkes- eller skoleinnhold som supplerer et steg: en egen boks med stiplet kant, merket med stedet. Den er lukket
    til brukeren åpner den, så siden ikke blir lang (eier 03.10.2026). */
+/* Boksen «Hos fylkeskommunen» i veiviserstegene (avgjørelse 061). Lukket på mobil, åpen på stor skjerm. */
+.hos-fylket {
+  margin: var(--rom-3) 0 var(--rom-2);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 4px solid var(--farge-lenke);
+  border-radius: var(--radius-s);
+  background: var(--farge-info-flate);
+}
+
+.hos-fylket-topp {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+}
+
+.hos-fylket-topp::-webkit-details-marker {
+  display: none;
+}
+
+.hos-fylket-tittel {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.hos-fylket-tittel .ikon,
+.hos-fylket-topp .forklaring-pil {
+  color: var(--farge-lenke);
+}
+
+.hos-fylket[open] .forklaring-pil {
+  transform: rotate(180deg);
+}
+
+.hos-fylket-innhold {
+  padding: 0 var(--rom-3) var(--rom-2);
+}
+
+.hos-fylket-innhold p {
+  margin: 0 0 var(--rom-2);
+}
+
+.hos-fylket-nettsted {
+  display: block;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.hos-fylket-fot {
+  font-size: var(--str-s);
+}
+
+.hos-fylket label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--rom-1);
+}
+
+/* Skolenes egne regler på fylkessiden: en lukket gruppe under fylkets forskrifter. */
+.fylke-skolegruppe {
+  margin-top: var(--rom-2);
+}
+
+.fylke-skolegruppe > .liste {
+  margin-top: var(--rom-2);
+}
+
+.hos-fylket select {
+  width: 100%;
+  margin-bottom: var(--rom-2);
+}
+
 .veiviser-tillegg {
   margin: var(--rom-3) 0 var(--rom-2);
   border: var(--strek) dashed var(--farge-merke);

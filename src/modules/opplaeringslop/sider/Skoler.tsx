@@ -1,6 +1,8 @@
 // Skoleregisteret: skolene i videregående og tilbudene de har, etter utdanning.no (avgjørelse 053). Søk og filter
 // (fylke, utdanningsprogram, tilbud) står i adressen (#/opplaeringslop/skoler?fylke=46&tilbud=HSHEA2), så lenkene
 // fra tilbudene gir et ferdig utvalg. Uten fylke i adressen brukes fylket brukeren har valgt.
+import { dokumentRute, lastOversikt } from '../../lov/data.ts';
+import type { Lokaltype } from '../../lov/typer.ts';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -103,11 +105,37 @@ function Skoletilbud({ koder, indeks, tilbud, valgt }: { koder: readonly string[
 }
 
 /** Én skole: navnet og stedet, og tilbudene når den er åpnet. */
-function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene; dinSkole: boolean; apen: boolean; valgt: string; program: string }) {
+function Skolekort({
+  skole,
+  indeks,
+  tilbud,
+  dinSkole,
+  apen,
+  valgt,
+  program,
+  regler,
+}: {
+  skole: Skoleoppforing;
+  indeks: Fagindeks;
+  tilbud: Tilbudene;
+  dinSkole: boolean;
+  apen: boolean;
+  valgt: string;
+  program: string;
+  /** Skolens egne regler fra Lovdata (avgjørelse 061). */
+  regler: readonly Skoleregel[];
+}) {
   const { t, malform } = useTekst();
   const [vist, settVist] = useState(apen);
   const [alle, settAlle] = useState(false);
   const id = useId();
+  // Korte navn, så knappen får plass på én linje på mobil. Flere av samme type får nummer.
+  const regelnavn = (r: Skoleregel) => {
+    const type = r.lokaltype === 'fagfordeling' ? 'fagfordeling' : 'skoleregler';
+    const like = regler.filter((x) => (x.lokaltype === 'fagfordeling' ? 'fagfordeling' : 'skoleregler') === type);
+    const navn = t(`opplaeringslop.skoler.${type === 'fagfordeling' ? 'fagfordelingKort' : 'skolereglerKort'}`);
+    return like.length > 1 ? `${navn} ${like.indexOf(r) + 1}` : navn;
+  };
   const vedSkolen = skole.tilbud.filter((k) => indeks.programomrader[k]);
   const antall = vedSkolen.length;
   // Knappen for alle tilbudene trengs bare når utvalget etter filteret er en del av dem.
@@ -135,6 +163,29 @@ function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { 
         {skole.nr && <FavorittKnapp id={skolefavoritt(skole.nr)} navn={skole.navn} liten />}
       </div>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
+        {/* Nettsiden og skolens egne regler som knapper øverst, og en strek før tilbudene (eier 05.10.2026). */}
+        {vist && (skole.nettside || regler.length > 0) && (
+          <>
+            <p class="skolekort-snarveier">
+              {skole.nettside && (
+                <a class="knapp knapp-sekundaer knapp-liten" href={skole.nettside} target="_blank" rel="noopener noreferrer">
+                  {t('opplaeringslop.skoler.nettsideKort')}
+                  <Ikon navn="ekstern" class="ikon-liten" />
+                </a>
+              )}
+              {regler.map((r) => (
+                <a key={r.id} class="knapp knapp-sekundaer knapp-liten" href={`#${dokumentRute(r.id)}`}>
+                  {/* Tegnet i samme skrift som teksten står på grunnlinjen. Ikonet ble smalt og skjevt (eier 05.10.2026). */}
+                  <span class="skolekort-paragraf" aria-hidden="true">
+                    §
+                  </span>
+                  {regelnavn(r)}
+                </a>
+              ))}
+            </p>
+            <p class="skolekort-skille">{t('opplaeringslop.skoler.tilbudVedSkolen', { antall: formaterTall(antall) })}</p>
+          </>
+        )}
         {vist && delvis && (
           <p class="skolekort-alle">
             <button type="button" class="lenkeknapp liten" onClick={() => settAlle(!alle)}>
@@ -143,14 +194,6 @@ function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { 
           </p>
         )}
         {vist && (antall === 0 ? <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p> : <Skoletilbud koder={alle ? vedSkolen : utvalg} indeks={indeks} tilbud={tilbud} valgt={valgt} />)}
-        {vist && skole.nettside && (
-          <p>
-            <a class="ekstern-lenke" href={skole.nettside} target="_blank" rel="noopener noreferrer">
-              {t('opplaeringslop.skoler.nettside')}
-              <Ikon navn="ekstern" class="ikon-liten" />
-            </a>
-          </p>
-        )}
       </div>
     </li>
   );
@@ -198,7 +241,30 @@ function TilbudSok({ id, sok, settSok, treff, indeks, velg }: { id: string; sok:
   );
 }
 
+/** En lokal forskrift som gjelder skolen: skolens egne regler eller fag- og timefordeling (avgjørelse 061). */
+interface Skoleregel {
+  id: string;
+  lokaltype?: Lokaltype;
+}
+
+/** Skolenes egne regler fra Lovdata per organisasjonsnummer (avgjørelse 061). */
+function useSkoleregler(): Map<string, Skoleregel[]> {
+  const [regler, settRegler] = useState(new Map<string, Skoleregel[]>());
+  useEffect(() => {
+    lastOversikt().then((o) => {
+      const m = new Map<string, Skoleregel[]>();
+      for (const d of o.dokumenter) {
+        if (d.gyldighet.niva !== 'skole') continue;
+        for (const s of d.gyldighet.skoler) m.set(s, [...(m.get(s) ?? []), { id: d.id, ...(d.lokaltype ? { lokaltype: d.lokaltype } : {}) }]);
+      }
+      settRegler(m);
+    }, () => undefined);
+  }, []);
+  return regler;
+}
+
 export default function Skoler({ sporring }: SideProps) {
+  const skoleregler = useSkoleregler();
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
   const [data, provIgjen] = useTilbudsdata();
@@ -320,7 +386,17 @@ export default function Skoler({ sporring }: SideProps) {
           </p>
           <ul class="skoleliste">
             {treff.slice(0, antall).map((s) => (
-              <Skolekort key={`${s.nr ?? s.navn}-${filter.tilbud}-${filter.program}`} skole={s} indeks={data.indeks} tilbud={data.tilbud} dinSkole={!!minSkole && s.orgnr === minSkole} apen={treff.length === 1} valgt={filter.tilbud} program={filter.program} />
+              <Skolekort
+                key={`${s.nr ?? s.navn}-${filter.tilbud}-${filter.program}`}
+                skole={s}
+                indeks={data.indeks}
+                tilbud={data.tilbud}
+                dinSkole={!!minSkole && s.orgnr === minSkole}
+                apen={treff.length === 1}
+                valgt={filter.tilbud}
+                program={filter.program}
+                regler={s.orgnr ? (skoleregler.get(s.orgnr) ?? []) : []}
+              />
             ))}
           </ul>
           {treff.length > antall && (

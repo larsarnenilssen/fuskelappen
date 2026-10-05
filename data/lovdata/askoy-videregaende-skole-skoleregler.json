@@ -1,0 +1,183 @@
+{
+ "id": "askoy-videregaende-skole-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om lokale tilleggsreglar – mobilreglar for Askøy videregående skole, Vestland fylkeskommune",
+ "korttittel": "Skoleregler ved Askøy videregående skole",
+ "korttittelNn": "Skulereglar ved Askøy videregående skole",
+ "malform": "nn",
+ "refid": "forskrift/2024-08-01-2484",
+ "sistEndret": "2026-02-09",
+ "iKraft": "2024-08-15",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-skole",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "46",
+  "skoler": [
+   "974557533"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om lokale tilleggsreglar – mobilreglar for Askøy videregående skole, Vestland fylkeskommune",
+   "merknader": [
+    [
+     "Reglane er utarbeidd på grunnlag av prosess i partsamansatt utval våren 2024. Elevane var representert i utvalet."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Det lokale tillegget om mobilbruk skal sikre ein føreseieleg og god handheving av skulereglane, med mål om å sikre at alle elevane ved skulen har eit trygt og godt skulemiljø som fremjar helse, inkludering, trivsel og læring, jf. ",
+        {
+         "t": "opplæringslova § 12-2",
+         "l": "lov/2023-06-09-30/§12-2",
+         "a": "opplaeringslova/12-2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Formålet med mobilreglar er å bidra til eit godt læringsmiljø, med arbeidsro og fokus på dei opplæringsaktivitetane som lærar og elevar til ein kvar tid planlegg og gjennomfører. Dei skal på same tid bidra til eit tryggare klasserom, der ein unngår negativ bruk av bilete, sosiale media og anna."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Det lokale tillegget gjeld alle elevar ved skulen. Tillegget regulerer korleis elevane skal/kan bruke mobiltelefon i opplæringssituasjonar, uavhengig av om det er i klasserom, verkstad eller andre stader."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Gjennomføring",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Eleven skal leggje mobiltelefonen i mobilhotellet ved starten av alle undervisningsøkter. Telefonen skal vere satt i flymodus."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Lærar avgjer når mobiltelefonen skal brukast i opplæringsaktiviteter, og når den skal leggjast tilbake i mobilhotell."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Dersom eleven ikkje har med seg datamaskin får dei ikkje bruke mobiltelefonen som erstatning."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved ",
+       {
+        "t": "forskrift 14 jan 2026 nr. 134",
+        "l": "forskrift/2026-01-14-134"
+       },
+       " (i kraft 9 feb 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Sanksjonar",
+     "ledd": [
+      {
+       "tekst": [
+        "Brot på reglane i denne forskrifta, som t.d. bruk av mobil i timen utan avtale med lærar kan føre til sanksjonar, jamfør ",
+        {
+         "t": "§§ 5",
+         "l": "forskrift/2024-06-18-1455/§5"
+        },
+        " og ",
+        {
+         "t": "8",
+         "l": "forskrift/2024-06-18-1455/§"
+        },
+        " i ",
+        {
+         "t": "forskrift om skulereglar, Vestland fylkeskommune",
+         "l": "forskrift/2024-06-18-1455"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved ",
+       {
+        "t": "forskrift 14 jan 2026 nr. 134",
+        "l": "forskrift/2026-01-14-134"
+       },
+       " (i kraft 9 feb 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Det lokale tillegget trer i kraft 15. august 2024."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

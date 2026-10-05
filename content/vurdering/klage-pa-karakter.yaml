@@ -126,6 +126,11 @@
     nn: "10 dagar"
   neste: kl-skolen
   paragrafer: [opplaeringsforskrifta/10-2]
+  fylke:
+    tema: klage-standpunkt
+    tekst:
+      nb: Fylkeskommunen forteller på sine sider hvordan eleven klager på standpunktkarakter, og hvilket skjema som brukes.
+      nn: Fylkeskommunen fortel på sidene sine korleis eleven klagar på standpunktkarakter, og kva skjema som blir brukt.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
     - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
@@ -133,6 +138,7 @@
   kontrollert: null
   kontrollsporsmal:
     - "Klageveiledningen punkt 4 sier at fristen regnes fra begrunnelsen når den ikke gis samme dag. Gjelder det også for IV og orden og oppførsel?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: kl-skolen
   type: steg
@@ -250,12 +256,18 @@
     nn: "10 dagar"
   neste: kl-klagenemnd
   paragrafer: [opplaeringsforskrifta/10-2, opplaeringsforskrifta/10-3, opplaeringsforskrifta/10-7]
+  fylke:
+    tema: eksamen
+    tekst:
+      nb: Fylkeskommunen organiserer eksamen og forteller på sine sider om klage på eksamenskarakter.
+      nn: Fylkeskommunen organiserer eksamen og fortel på sidene sine om klage på eksamenskarakter.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-3 fjerde ledd og § 10-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
     - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/" }
   kontrollert: null
   kontrollsporsmal:
     - "Er «sensorveiledningen» et godt nok ord for «retningslinjer som er utarbeidde for sensorane» i § 10-3 fjerde ledd?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: kl-klagenemnd
   type: steg
@@ -344,6 +356,11 @@
     nb: "3 uker"
     nn: "3 veker"
   paragrafer: [opplaeringsforskrifta/10-3, opplaeringsforskrifta/10-9, opplaeringsforskrifta/10-10, opplaeringslova/8-3, forvaltningsloven/29]
+  fylke:
+    tema: fagprove
+    tekst:
+      nb: Fylkeskommunen organiserer fag- og svenneprøven og prøvenemndene, og sender klagen videre til klagenemnda.
+      nn: Fylkeskommunen organiserer fag- og sveineprøva og prøvenemndene, og sender klaga vidare til klagenemnda.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-9 og § 10-10", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-9" }
     - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-9", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-9-klage-pa-fag--og-sveineprove/" }
@@ -354,6 +371,7 @@
   kontrollsporsmal:
     - "Er det riktig at klage på praksisbrevprøven og kompetanseprøven, både karakter og formelle feil, avgjøres av fylkestinget (§ 10-10 første ledd)?"
     - "Bør steget si at klagenemnda kan oppheve prøven og vise til ny prøve (§ 10-9 fjerde ledd)?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: kl-andre
   type: steg

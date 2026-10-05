@@ -43,12 +43,16 @@ test.describe('regelverk', () => {
     await expect(page.getByRole('button', { name: /^Kapittel II Om ugildhet/ })).toBeVisible();
   });
 
-  test('lokale forskrifter vises når fylket er valgt', async ({ page }) => {
-    await settLagret(page, { fylke: '46' });
+  test('lokale forskrifter vises når fylket er valgt, og skolens regler når skolen er valgt', async ({ page }) => {
+    await settLagret(page, { fylke: '46', skole: { id: '974557584', navn: 'Fyllingsdalen videregående skole' } });
     await page.goto('./#/lov');
-    await expect(page.getByRole('button', { name: /^Lokale forskrifter i Vestland 2$/ })).toBeVisible();
-    await page.getByRole('link', { name: /Skulereglar i Vestland/ }).click();
-    await expect(page.locator('main h1')).toHaveText('Skulereglar i Vestland');
+    await expect(page.getByRole('button', { name: /^Lokale forskrifter i Vestland \d+$/ })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Fyllingsdalen videregående skole.*Skolen din/ })).toBeVisible();
+    // Navnet på de lokale forskriftene følger brukerens målform, og datoen forskriften tok til å gjelde står under.
+    const regler = page.getByRole('link', { name: /^Skoleregler i Vestland/ });
+    await expect(regler).toContainText('I kraft');
+    await regler.click();
+    await expect(page.locator('main h1')).toHaveText('Skoleregler i Vestland');
     await expect(page.getByText('Gjelder bare Vestland.', { exact: false })).toBeVisible();
   });
 

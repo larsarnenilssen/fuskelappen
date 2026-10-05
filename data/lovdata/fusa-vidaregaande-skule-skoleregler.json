@@ -1,0 +1,368 @@
+{
+ "id": "fusa-vidaregaande-skule-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift til skulereglar, Fusa vidaregåande skule, Vestland fylkeskommune",
+ "korttittel": "Skoleregler ved Fusa vidaregåande skule",
+ "korttittelNn": "Skulereglar ved Fusa vidaregåande skule",
+ "malform": "nn",
+ "refid": "forskrift/2025-05-01-833",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-skole",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "46",
+  "skoler": [
+   "874557552"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift til skulereglar, Fusa vidaregåande skule, Vestland fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Fusa vidaregåande skule har som mål å sikre at alle elvane ved skulen har eit trygt og godt skulemiljø som fremjar helse, trivsel, inkludering og læring, jf. ",
+        {
+         "t": "opplæringslova § 12-2",
+         "l": "lov/2023-06-09-30/§12-2",
+         "a": "opplaeringslova/12-2"
+        },
+        ". Lokale tilleggsreglar skal vere eit verkemiddel til å nå målet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Dei lokale tilleggsreglane gjeld alt som har med skuletida å gjere, også på ekskursjonar og skuleturar. Dei gjeld og utanfor skuletida ved bruk av skulen sine digitale løysingar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Trygt, godt og inkluderande skulemiljø",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Alle elevar ved FUV har ansvar for å skape eit trygt, godt og inkluderande skulemiljø for alle medelevar ved skulen. Alle elevar skal melde frå til kontaktlærar om dei ser at nokon vert mobba, trakassert, utestengt eller på andre måtar vert krenka fysisk, verbalt eller digitalt, jf. ",
+            {
+             "t": "oppll. § 12-2",
+             "l": "lov/2023-06-09-30/§12-2",
+             "a": "opplaeringslova/12-2"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Russedress er ikkje tillate ved skulen før fastsett tid for start på russetida. Russekleda skal vere heilt frie for diskriminerande print og tekst. (Gjeldande frå 1. august 2025.)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Skulen tillet kun aktivitet på skulen med opne og inkluderande russegrupper."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Mobil/smartklokke",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevane kan nytte mobilen i friminutt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Alle elevar ved FUV skal før timen startar skru mobiltelefonen i flymodus og leggje den i mobilhotellet i klasserommet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Smartklokker skal vere i flymodus. I vurderingssituasjonar og eksamen skal dei leverast inn saman med mobil"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "Når eleven må på toalettet er det ikkje høve til å ta med mobilen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved fellesarrangement skal mobilen låsast inn i mobilskap"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "Reglar for smartklokker og mobil gjeld både i fellesfag, programfag, YFF, i praksisperiodar og i arbeidstrening."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevar med heilt særlege behov kan gjere individuelle avtalar med lærar."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Eit reint og ryddig skulemiljø",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Hald klasserommet og fellesarealet ryddig."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Kast søppel på tilvist stad/miljøstasjonar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ta vare på skulen sitt utstyr som du lånar, og lever det tilbake."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Skulemiljø/Undervisning",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Alle elevar skal vere kjent med og følge skulereglar for Vestland fylkeskommune. ",
+            {
+             "t": "Skulereglar Vlfk",
+             "l": "forskrift/2024-06-18-1455"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Skulen er lovbestemt tobakks- og rusfri. Dette gjeld alt som har med skuletida å gjere, også ekskursjonar og skuleturar."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Bruk av av kunstig intelligens (KI) og praterobotar",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Avklar med faglærar kva tid og korleis det er tillat å nytta KI i dei ulike faga."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Med mindre oppgåva eksplisitt tillèt det, er all bruk av KI i vurderingssituasjonar (t.d. eksamen, prøvar og innleveringar) rekna som fusk. Oppgåva vert ikkje vurdert og kan føre til åtferdsmerknad (jf. skulereglementet). Ved tvil om fusk i skriftlege vurderingssituasjonar, kan muntleg høyring eller ny skriftleg vurdering bli vurdert for å sikre rett vurdering."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ikkje del personleg informasjon i KI-tenestene. Dette gjeld både sensitiv informasjon og anna informasjon unnateke offentlegheit, multimedia (bilete, lyd, video) der vi kan identifisere personar, og anna informasjon som kan knytast til deg som elev, medelevar, tilsette og andre."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta trer i kraft 1. august 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Sanksjonar",
+     "ledd": [
+      {
+       "tekst": [
+        "Brot på dei lokale reglane kan føre til sanksjonar etter ",
+        {
+         "t": "§ 8",
+         "l": "forskrift/2024-06-18-1455/§8"
+        },
+        " i ",
+        {
+         "t": "forskrift 18. juni 2024 nr. 1455 om skulereglar i Vestland fylke",
+         "l": "forskrift/2024-06-18-1455"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

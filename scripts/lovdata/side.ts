@@ -9,11 +9,14 @@
 // - Listepunkter er hver sin <table class="listeItem"> med nummeret i <td class="listeitemNummer">, og hører til leddet
 //   foran. data-level sier hvor dypt punktet står.
 // - Endringer står som fotnoter (<table class="fotnote">), under kapitteloverskriften eller i paragrafen.
+// - Tabeller (f.eks. skoleruta) er <div class="… tabell"> med <table>, overskriftsraden i <thead> (avgjørelse 061).
+// - Tekst før første paragraf (<p class="morTag_am …">) blir en merknad øverst i dokumentet.
+// - Ikrafttredelsen står i <td id="metaField_ikraft">, for en skolerute som en periode («01.08.2026 – 31.07.2027»).
 // - Ankere, «Del paragraf» og heimelen øverst hoppes over.
 //
 // Står det noe annet i teksten, kastes en feil, så ingen tekst blir borte uten at det merkes.
 import { type HTMLElement, parse } from 'node-html-parser';
-import type { Ledd, Lovdokument, Paragraf, Punkt, Seksjon, Segment } from '../../src/modules/lov/typer.ts';
+import { alleParagrafer, alleSeksjoner, type Ledd, type Lovdokument, type Paragraf, type Punkt, type Seksjon, type Segment } from '../../src/modules/lov/typer.ts';
 import { beskriv, erElement, klasse, type Leseoppsett, rydd, ryddOverskrift, ryddTittel, segmenter, tag, tolkOverskrift, Ukjent } from './les.ts';
 
 /** Elementer som ikke er tekst: ankere og knappen «Del paragraf». */
@@ -47,6 +50,23 @@ function punkt(tabell: HTMLElement): { niva: number; punkt: Punkt } {
   };
 }
 
+/** En tabell i teksten: overskriftsraden (th i thead) for seg, og hver celle som tekst. */
+function tabell(div: HTMLElement): Ledd {
+  const t = div.querySelector('table');
+  if (!t) throw new Ukjent(`${beskriv(div)} uten <table>`);
+  const rad = (tr: HTMLElement) => tr.querySelectorAll('th, td').map((c) => rydd(segmenter(c, hoppOver)));
+  const hode = t.querySelector('thead tr');
+  const rader = t.querySelectorAll('tr').filter((tr) => tr !== hode);
+  return { tekst: [], tabell: { hode: hode ? rad(hode) : null, rader: rader.map(rad) } };
+}
+
+/** En tabell som tekst, én linje per rad med cellene skilt med «·», der tabellen ikke kan stå som tabell. */
+function tabellSomTekst(div: HTMLElement): Segment[][] {
+  const t = tabell(div).tabell;
+  if (!t) return [];
+  return [...(t.hode ? [t.hode] : []), ...t.rader].map((rad) => rydd(rad.flatMap((c, i) => (i === 0 ? c : [' · ', ...c])))).filter((r) => r.length > 0);
+}
+
 /** Legger et listepunkt til siste ledd, eller inni siste punkt når det står dypere. */
 function leggTilPunkt(ledd: Ledd[], niva: number, p: Punkt) {
   let mal: Ledd | undefined = ledd[ledd.length - 1];
@@ -71,7 +91,10 @@ function lesParagraf(el: HTMLElement): Paragraf {
   const p: Paragraf = { nr, visNr: verdi, tittel: ryddTittel(hode?.querySelector('.paragrafTittel')?.text ?? ''), ledd: [], endringer: [], fotnoter: [] };
   for (const barn of el.childNodes.filter(erElement)) {
     if (barn === hode || hoppOver(barn)) continue;
-    if (tag(barn) === 'p' && klasse(barn, 'avsnitt')) p.ledd.push({ tekst: rydd(segmenter(barn, hoppOver)) });
+    if (tag(barn) === 'p' && klasse(barn, 'avsnitt')) {
+      // Tomme avsnitt (Lovdata setter dem f.eks. foran en tabell) er ikke ledd.
+      if (barn.text.trim()) p.ledd.push({ tekst: rydd(segmenter(barn, hoppOver)) });
+    } else if (tag(barn) === 'div' && klasse(barn, 'tabell')) p.ledd.push(tabell(barn));
     else if (tag(barn) === 'table' && klasse(barn, 'fotnote')) p.endringer.push(fotnote(barn));
     else if (tag(barn) === 'table' && klasse(barn, 'listeItem')) {
       const { niva, punkt: pk } = punkt(barn);
@@ -86,7 +109,8 @@ function lesParagraf(el: HTMLElement): Paragraf {
 function lesKapittel(el: HTMLElement): Seksjon {
   const hode = el.childNodes.filter(erElement).find((e) => /^h[1-6]$/.test(tag(e)));
   const tekst = ryddOverskrift(hode?.text ?? '');
-  const id = el.getAttribute('data-refID') ?? el.getAttribute('id') ?? tekst;
+  // Lovdata gir noen kapitler tom id; da brukes overskriften.
+  const id = el.getAttribute('data-refID') || el.getAttribute('id') || tekst || 'kapittel';
   const { type, nr } = tolkOverskrift(id, tekst);
   const s: Seksjon = { id, type, nr, overskrift: tekst || id, merknader: [], seksjoner: [], paragrafer: [] };
   for (const barn of el.childNodes.filter(erElement)) {
@@ -94,15 +118,32 @@ function lesKapittel(el: HTMLElement): Seksjon {
     if (tag(barn) === 'div' && klasse(barn, 'paragraf')) s.paragrafer.push(lesParagraf(barn));
     else if (tag(barn) === 'div' && klasse(barn, 'kapittel')) s.seksjoner.push(lesKapittel(barn));
     else if (tag(barn) === 'table' && klasse(barn, 'fotnote')) s.merknader.push(fotnote(barn));
-    else throw new Ukjent(`${beskriv(barn)} i «${s.overskrift}»`);
+    // Tekst rett under kapitteloverskriften (f.eks. en innledning eller et vedlegg) blir merknader til kapitlet.
+    else if (tag(barn) === 'p' && klasse(barn, 'avsnitt')) {
+      if (barn.text.trim()) s.merknader.push(rydd(segmenter(barn, hoppOver)));
+    } else if (tag(barn) === 'table' && klasse(barn, 'listeItem')) {
+      const { punkt: pk } = punkt(barn);
+      s.merknader.push(rydd([`${pk.merke} `, ...pk.ledd.flatMap((l) => l.tekst)]));
+    } else throw new Ukjent(`${beskriv(barn)} i «${s.overskrift}»`);
   }
   return s;
 }
 
+/** Første dato i teksten, «01.08.2026» gir «2026-08-01». */
+function dato(tekst: string): string | null {
+  const m = /(\d{2})\.(\d{2})\.(\d{4})/.exec(tekst);
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : null;
+}
+
 /** «FOR-2026-06-16-1344 fra 01.08.2026» gir «2026-08-01». */
 function sisteEndring(rot: HTMLElement): string | null {
-  const m = /(\d{2})\.(\d{2})\.(\d{4})/.exec(rot.querySelector('#metaField_endret')?.text ?? '');
-  return m ? `${m[3]}-${m[2]}-${m[1]}` : null;
+  return dato(rot.querySelector('#metaField_endret')?.text ?? '');
+}
+
+/** Ikrafttredelsen, og for en periode («01.08.2026 – 31.07.2027») når den slutter. */
+function ikraft(rot: HTMLElement): { iKraft: string | null; iKraftTil: string | null } {
+  const [fra, til] = (rot.querySelector('#metaField_ikraft')?.text ?? '').split(/\s+[–-]\s+/);
+  return { iKraft: fra ? dato(fra) : null, iKraftTil: til ? dato(til) : null };
 }
 
 /** Leser en lokal forskrift fra siden hos Lovdata. Kaster en feil når noe ikke kan leses. */
@@ -123,6 +164,15 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
       if (tag(e) === 'div' && klasse(e, 'paragraf')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [], seksjoner: [], paragrafer: [lesParagraf(e)] }];
       // Heimelen og kunngjøringen øverst står på siden hos Lovdata.
       if (tag(e) === 'p' && klasse(e, 'morTag_mf')) return [];
+      // Annen tekst før første paragraf, også en fotnote, blir en merknad øverst.
+      if (tag(e) === 'p' && klasse(e, 'avsnitt')) return e.text.trim() ? [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [rydd(segmenter(e, hoppOver))], seksjoner: [], paragrafer: [] }] : [];
+      if (tag(e) === 'table' && klasse(e, 'fotnote')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [fotnote(e)], seksjoner: [], paragrafer: [] }];
+      // Lister og tabeller utenfor paragrafene (i forskrifter uten paragrafer) blir tekst, én linje per punkt eller rad.
+      if (tag(e) === 'table' && klasse(e, 'listeItem')) {
+        const { punkt: pk } = punkt(e);
+        return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: [rydd([`${pk.merke} `, ...pk.ledd.flatMap((l) => l.tekst)])], seksjoner: [], paragrafer: [] }];
+      }
+      if (tag(e) === 'div' && klasse(e, 'tabell')) return [{ id: 'dokument', type: 'avsnitt' as const, nr: null, overskrift: tittel, merknader: tabellSomTekst(e), seksjoner: [], paragrafer: [] }];
       throw new Ukjent(`${beskriv(e)} i dokumentet`);
     });
   } catch (e) {
@@ -131,19 +181,56 @@ export function lesLovdataside(html: string, oppsett: Leseoppsett): Lovdokument 
   }
   seksjoner = seksjoner.reduce<Seksjon[]>((acc, s) => {
     const forrige = acc[acc.length - 1];
-    if (s.id === 'dokument' && forrige?.id === 'dokument') forrige.paragrafer.push(...s.paragrafer);
+    if (s.id === 'dokument' && forrige?.id === 'dokument') {
+      forrige.merknader.push(...s.merknader);
+      forrige.paragrafer.push(...s.paragrafer);
+    }
     else acc.push(s);
     return acc;
   }, []);
+  // Noen skoler skriver reglene som kapitler med tekst, uten paragrafer. Da blir hvert kapittel en paragraf, så
+  // teksten kan vises, søkes i og lenkes til som i de andre forskriftene.
+  if (alleParagrafer(seksjoner).length === 0) {
+    const alle = alleSeksjoner(seksjoner);
+    // Teksten i det ytterste kapitlet, før kapitlene inni, står som innledning når det har kapitler inni. Har
+    // forskriften verken kapitler eller paragrafer, blir hele teksten én paragraf.
+    const innledning = alle.length > 1 ? alle.filter((s) => s.seksjoner.length > 0).flatMap((s) => s.merknader) : [];
+    const brukt = new Set<string>();
+    seksjoner = [
+      {
+        id: 'dokument',
+        type: 'avsnitt',
+        nr: null,
+        overskrift: tittel,
+        merknader: innledning,
+        seksjoner: [],
+        paragrafer: alle
+          .filter((s) => s.seksjoner.length === 0 && s.merknader.length > 0)
+          .map((s, i) => {
+            const m = /^(\d+)\.?\s*(.*)$/.exec(s.overskrift);
+            const kilde = s.nr ?? m?.[1] ?? String(i + 1);
+            // Har kilden samme nummer to ganger (05.10.2026: to punkt 5 i tilleggsreglane for Fyllingsdalen), får
+            // det neste en bokstav i adressen («5b»). Nummeret vises som i kilden.
+            let nr = kilde;
+            for (let n = 1; brukt.has(nr); n++) nr = `${kilde}${String.fromCharCode(97 + n)}`;
+            brukt.add(nr);
+            return { nr, visNr: `${kilde}.`, tittel: m ? (m[2] ?? '') : s.overskrift, ledd: s.merknader.map((t) => ({ tekst: t })), endringer: [], fotnoter: [] };
+          }),
+      },
+    ];
+  }
   return {
     id: oppsett.id,
     kilde: oppsett.kilde,
     type: 'forskrift',
     tittel,
     korttittel: oppsett.korttittel ?? tittel,
+    ...(oppsett.korttittelNn ? { korttittelNn: oppsett.korttittelNn } : {}),
     malform: oppsett.malform ?? 'nb',
     refid: oppsett.refid,
     sistEndret: sisteEndring(rot),
+    ...ikraft(rot),
+    ...(oppsett.lokaltype ? { lokaltype: oppsett.lokaltype } : {}),
     hentet: oppsett.hentet,
     gyldighet: oppsett.gyldighet,
     utvalg: null,

@@ -1,0 +1,823 @@
+{
+ "id": "finnmark-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Finnmark fylkeskommune",
+ "korttittel": "Inntak og formidling i Finnmark",
+ "korttittelNn": "Inntak og formidling i Finnmark",
+ "malform": "nb",
+ "refid": "forskrift/2025-12-02-2791",
+ "sistEndret": null,
+ "iKraft": "2026-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "56"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kapI",
+   "type": "kapittel",
+   "nr": "I",
+   "overskrift": "Kapittel I Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den lokale forskriften er å fastsette rettigheter og plikter for søkere til videregående opplæring. Forskriften utfyller ",
+        {
+         "t": "kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        ", ",
+        {
+         "t": "kapittel 7",
+         "l": "forskrift/2024-06-03-900/kap7"
+        },
+        " og ",
+        {
+         "t": "kapittel 13",
+         "l": "forskrift/2024-06-03-900/kap13"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        " og fastsetter hvordan Finnmark fylkeskommune skal gjennomføre inntak og formidling."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Denne forskriften gjelder for inntak til fylkeskommunale og statlige videregående skoler, videregående opplæring for voksne og for formidling av lærlinger, lærekandidater og praksisbrevkandidater i Finnmark fylke."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapII",
+   "type": "kapittel",
+   "nr": "II",
+   "overskrift": "Kapittel II Videregående opplæring for elever",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntaksregioner med regionpoeng",
+     "ledd": [
+      {
+       "tekst": [
+        "Finnmark er delt inn i tre inntaksregioner. Søkeren har rett til inntak på en skole i den inntaksregionen søkeren er bostedsregistrert per 1. mars i inntaksåret. Søkere tildeles regionpoeng i sin inntaksregion og prioriteres foran søkere fra andre inntaksregioner. Inntaksregionene er som følger:"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Vest-Finnmark"
+           ],
+           "liste": [
+            {
+             "merke": "",
+             "ledd": [
+              {
+               "tekst": [
+                "Videregående skoler: Alta"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "",
+             "ledd": [
+              {
+               "tekst": [
+                "Kommuner: Alta, Hasvik, Kautokeino og Loppa"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Midt-Finnmark"
+           ],
+           "liste": [
+            {
+             "merke": "",
+             "ledd": [
+              {
+               "tekst": [
+                "Videregående skoler: Hammerfest, Lakselv og Nordkapp"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "",
+             "ledd": [
+              {
+               "tekst": [
+                "Kommuner: Gamvik, Hammerfest, Karasjok, Lebesby, Måsøy, Nordkapp og Porsanger"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Øst-Finnmark"
+           ],
+           "liste": [
+            {
+             "merke": "",
+             "ledd": [
+              {
+               "tekst": [
+                "Videregående skoler: Kirkenes, Tana, Vadsø og Vardø"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "",
+             "ledd": [
+              {
+               "tekst": [
+                "Kommuner: Berlevåg, Båtsfjord, Nesseby, Sør-Varanger, Tana, Vadsø og Vardø."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som flytter mellom inntaksregioner må dokumentere planlagt flytting innen 15. juni for å ha rett til skoleplass i den aktuelle regionen. Ny adresse må være registrert i folkeregisteret innen skolestart."
+       ]
+      },
+      {
+       "tekst": [
+        "Det gjøres unntak for søkere fra Hasvik kommune, som kan søke inntak til Hammerfest videregående skole med regionpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom et utdanningsprogram eller et programområde ikke tilbys i søkers inntaksregion, kan aktuelt tilbud søkes i andre inntaksregioner. Søkeren vil tildeles regionpoeng til aktuelt utdanningsprogram/programområde og konkurrere om inntak på like vilkår som søkere med rett til skoleplass i inntaksregionen."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen kan sikre at en søker blir tatt inn i en annen inntaksregion dersom det foreligger dokumenterte tungtveiende grunner og at søkeren har et særlig behov for skoleplass i en annen inntaksregion."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Flytting til Finnmark fylke",
+     "ledd": [
+      {
+       "tekst": [
+        "For å ha rett til inntak må søker være folkeregistrert i Finnmark per 1. mars i inntaksåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke er folkeregistrert i Finnmark innen 1. mars, men som planlegger flytting til en kommune i Finnmark fylke, har rett til inntak til en skole i sin inntaksregion dersom søkeren dokumenterer flytting innen 15. juni."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Inntak til vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere må føre opp tre ulike utdanningsprogram på vg1 i prioritert rekkefølge. Det kan prioriteres inntil tre skoler per utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket til vg1 gjennomføres på bakgrunn av karakterpoeng fra grunnskolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke har tilstrekkelige karakterpoeng til å konkurrere seg inn på sine prioriterte utdanningsprogram og skoler, kan tilbys plass på en skole med ledig kapasitet."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke fører opp tre ulike utdanningsprogram, kan bli tatt inn til et utdanningsprogram og/eller en skole de ikke har søkt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Inntak til vg2/vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere kan søke på programområder på vg2/vg3 som man kvalifiserer for inntak til."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket til vg2 gjennomføres på bakgrunn av karakterpoeng fra vg1. Inntaket til vg3 gjennomføres på bakgrunn av karakterpoeng fra vg2."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke har tilstrekkelige karakterpoeng til å konkurrere seg inn på sine prioriterte programområder og skoler, kan tilbys plass på en skole med ledig kapasitet eller på et annet programområde som søkeren er kvalifisert til."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Inntak til vg2/vg3 for søkere som ikke har bestått alle fag",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever har etter ",
+        {
+         "t": "§ 5-2",
+         "l": "forskrift/2024-06-03-900/§5-2",
+         "a": "opplaeringsforskrifta/5-2"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        " rett til mer opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som etter opplæring ikke har bestått i ett eller flere fag kan, etter en helhetlig vurdering fra avgiverskolen og under forutsetning av at det utarbeides en plan i samarbeid med eventuell mottakerskole, regnes som kvalifisert til neste nivå."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til vg4 påbygging til generell studiekompetanse",
+     "ledd": [
+      {
+       "tekst": [
+        "En søker til vg4 påbygging til generell studiekompetanse etter yrkeskompetanse må være oppmeldt til fag-/svenneprøve eller ha bestått vg3 yrkesfag innen 1. juli i inntaksåret for å kvalifisere til inntak. Det forutsettes at alle fag på alle nivåer er bestått."
+       ]
+      },
+      {
+       "tekst": [
+        "En elev som har fått tilbud om skoleplass og som ikke består fagprøven, skal overføres til vg3 påbygging til generell studiekompetanse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Pliktig oppmøte første skoledag",
+     "ledd": [
+      {
+       "tekst": [
+        "En elev plikter å møte første skoledag. Dersom en elev uteblir fra skolen første skoledag uten gyldig grunn, bortfaller retten til den aktuelle skoleplassen."
+       ]
+      },
+      {
+       "tekst": [
+        "En elev som er forhindret fra å møte, plikter å opplyse skolen om dette snarest mulig og senest innen utgangen av første skoledag. Forholdet må dokumenteres for å beholde skoleplassen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Inntak til landslinjer og landsdekkende linjer",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til landslinjer og landsdekkende linjer skal registrere søknaden i hjemfylket."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra hele landet stiller likt ved inntak til landslinjer og landsdekkende tilbud i Finnmark fylke. Inntaket gjennomføres på bakgrunn av karakterpoeng."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Inntak til statlige samiske videregående skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til Samisk videregående skole Karasjok og Samisk videregående skole og reindriftsskole Kautokeino gjennomføres i samsvar med ",
+        {
+         "t": "opplæringsforskriftas § 14-5",
+         "l": "forskrift/2024-06-03-900/§14-5",
+         "a": "opplaeringsforskrifta/14-5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med samisk tilhørighet kan tildeles ekstrapoeng etter retningslinjene for fordeling av ekstrapoeng fattet av styret for Samiske videregående skoler, Karasjok og Kautokeino. Søker er selv ansvarlig for å velge aktuelle ekstrapoeng ved registrering av søknad i Vigo, eller ved å ta direkte kontakt med inntakskontoret i Finnmark fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak av utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som reiser til utlandet i forbindelse med elevutveksling, kan få forhåndsgodkjent skoleåret i utlandet som tilsvarende vg1 eller vg2 i Norge, jf. ",
+        {
+         "t": "§ 5-11",
+         "l": "forskrift/2024-06-03-900/§5-11",
+         "a": "opplaeringsforskrifta/5-11"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen ved rektor mottar og behandler søknad om forhåndsgodkjenning og endelig godkjenning. Elever med forhåndsgodkjenning kan få reservert skoleplass på neste nivå ved skolen som har forhåndsgodkjent året i utlandet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Godkjenning av utdanning fra utlandet",
+     "ledd": [
+      {
+       "tekst": [
+        "Godkjenning av utdanning fra utlandet, jf. ",
+        {
+         "t": "§ 5-11",
+         "l": "forskrift/2024-06-03-900/§5-11",
+         "a": "opplaeringsforskrifta/5-11"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ", er delegert til rektor. Skolen ved rektor mottar og behandler søknader om godkjenning av enkeltfag og hele opplæringsår fra utlandet som tilsvarende vg1 eller vg2 i Norge."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Grense- og inntaksavtaler",
+     "ledd": [
+      {
+       "tekst": [
+        "For søkere med ungdomsrett fra Kvænangen kommune gjelder egen grenseavtale for inntak til Alta videregående skole. Grenseavtalen er tilgjengelig på fylkeskommunens nettsider."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapIII",
+   "type": "kapittel",
+   "nr": "III",
+   "overskrift": "Kapittel III Felles bestemmelser for videregående opplæring for elever",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Endring av status fra elev til privatist",
+     "ledd": [
+      {
+       "tekst": [
+        "Endring av status fra elev til privatist i et fag delegeres til rektor, jf. ",
+        {
+         "t": "§ 4-2 andre ledd",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Inntak av deltidselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Etter at det sentrale inntaket er avsluttet og ansvaret for inntaket er delegert til rektor, kan skolen ta inn søkere som ønsker å være elev i ett eller flere enkeltfag. Søkeren må være folkeregistrert i Finnmark fylke for å tas inn etter denne paragrafen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Behandling av søknader mottatt etter frist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknader mottatt etter søknadsfrist behandles i den grad det er mulig og kun dersom søker har opplæringsrett for ungdom i Finnmark fylke. Fylkeskommunen gjør unntak etter ",
+        {
+         "t": "§ 4-9 femte ledd",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " og ",
+        {
+         "t": "sjette ledd",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Inntak av gjesteelever",
+     "ledd": [
+      {
+       "tekst": [
+        "Kun søkere med opplæringsrett etter ",
+        {
+         "t": "opplæringslovas § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " kan tas inn som gjesteelever i Finnmark."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapIV",
+   "type": "kapittel",
+   "nr": "IV",
+   "overskrift": "Kapittel IV Videregående opplæring for voksne deltakere",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Inntak til videregående opplæring for voksne",
+     "ledd": [
+      {
+       "tekst": [
+        "Voksne søkere må ha folkeregistrert adresse i Finnmark fylke. Voksne kan søke hele året, men veiledende søknadsfrist er 1. mars. Fylkeskommunen vurderer hvilke rettigheter søkeren har før det fattes vedtak om tilbud."
+       ]
+      },
+      {
+       "tekst": [
+        "Voksne skal søke inntak etter ",
+        {
+         "t": "kapittel 18",
+         "l": "lov/2023-06-09-30/kap18"
+        },
+        " i ",
+        {
+         "t": "opplæringslova",
+         "l": "lov/2023-06-09-30"
+        },
+        ". Dersom ønsket sluttkompetanse ikke kan tilbys av fylkeskommunen etter ",
+        {
+         "t": "§ 18-3",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        ", kan fylkeskommunen gjøre unntak fra bestemmelsen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Rekkefølge ved inntak til videregående opplæring for voksne",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkerne rangeres etter ",
+        {
+         "t": "§ 13-4",
+         "l": "forskrift/2024-06-03-900/§13-4",
+         "a": "opplaeringsforskrifta/13-4"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Innenfor hver gruppe som er nevnt i forskriften, rangeres søkerne ut fra tidspunktet fylkeskommunen mottok søknaden."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapV",
+   "type": "kapittel",
+   "nr": "V",
+   "overskrift": "Kapittel V Formidling til læreplass",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Vilkår for formidling til læreplass som lærling eller lærekandidat",
+     "ledd": [
+      {
+       "tekst": [
+        "Alle kvalifiserte søkere til læreplass som ved søknadsfrist er folkeregistrert i Finnmark fylkeskommune formidles til godkjente lærebedrifter og samarbeidsorgan for lærebedrifter i fylket etter søknadsfristens utløp. Søkere som hører hjemme i andre fylker kan også formidles."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Søkere fra Finnmark til læreplass i andre fylker",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med rett etter ",
+        {
+         "t": "opplæringslovas § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " i Finnmark fylkeskommune som ønsker læreplass i et annet fylke, må søke i Finnmark for å ha rett til et opplæringstilbud. Søkere som ønsker læreplass i et annet fylke, må søke direkte til aktuelle lærebedrifter. Hvis det søkes direkte til andre fylkeskommuner, vil det reguleres av fylkets lokale forskrift hvordan søknaden behandles."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Behandling av søknader som mottas etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad om læreplass som mottas etter søknadsfrist, vil bli behandlet i den utstrekning det er mulig, jf. ",
+        {
+         "t": "§ 7-5 andre ledd",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Fylkeskommunen gjør unntak etter ",
+        {
+         "t": "§ 7-5 fjerde ledd",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        " i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Lærebedrifter som søker godkjenning av lærekontrakter med full opplæring i bedrift",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan godkjenne kontrakter om opplæring som fraviker fra det fastsatte opplæringsløpet. Kontrakter om full opplæring i bedrift kan godkjennes dersom det foreligger et organisert opplæringsløp for gjennomføring av fellesfagene."
+       ]
+      },
+      {
+       "tekst": [
+        "Lærebedrifter som søker godkjenning av kontrakt med full opplæring i bedrift etter ",
+        {
+         "t": "§ 7-2",
+         "l": "lov/2023-06-09-30/§7-2",
+         "a": "opplaeringslova/7-2"
+        },
+        " i ",
+        {
+         "t": "opplæringslova",
+         "l": "lov/2023-06-09-30"
+        },
+        " og dennes forskrift ",
+        {
+         "t": "§ 6-3 bokstav a",
+         "l": "forskrift/2024-06-03-900/§6-3",
+         "a": "opplaeringsforskrifta/6-3"
+        },
+        " (FOB-kontrakt), må legge ved intern plan for opplæringen som sikrer at bedriftsopplæringen dekker aktuelle kompetansemål fra alle trinn i læreplanverket for lærefaget (vg1–vg3)."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Opplæringstilbud til de som ikke er formidlet til læreplass – vg3 fagopplæring i skole",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har søkt innen frist og oppfyller vilkårene til å bli formidlet, men som ikke får tilbud om læreplass, har rett til tilbud om et annet opplæringstilbud. Søkerne vil få tilbud om vg3 fagopplæring i skole i et lærefag som bygger på det vg2 de har gått. Avgiverskolen er ansvarlig for at søkerne som returneres får tilbud om vg3 fagopplæring i skole."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som takker nei til et tilbud om læreplass eller skoleplass på høyere ønske, har ikke rett til tilbud om vg3 fagopplæring i skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapVI",
+   "type": "kapittel",
+   "nr": "VI",
+   "overskrift": "Kapittel VI Ikrafttredelse og endringer i forskriften",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Endringer i forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen har rett til å gjøre mindre endringer i forskriften. Dersom en endring er av slik art at den påvirker en søkers vilkår for inntak, skal den behandles av hovedutvalget for kompetanse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. januar 2026. Samtidig oppheves ",
+        {
+         "t": "forskrift 3. desember 2024 nr. 3018 om inntak til videregående opplæring og formidling til læreplass, Finnmark fylkeskommune",
+         "l": "forskrift/2024-12-03-3018"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}
