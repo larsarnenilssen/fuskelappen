@@ -88,6 +88,7 @@ export const nb = {
       fag: 'Fag',
       begreper: 'Begreper',
       tilbud: 'Tilbud og skoler',
+      fylkeForklaring: 'Viser bare skoler, kontor og lokale forskrifter i {fylke}. Trykk for å se alle fylkene.',
     },
     typer: {
       modul: 'Del av appen',
@@ -106,6 +107,7 @@ export const nb = {
       lov: 'Regelverk',
       side: 'Side',
       skole: 'Skole',
+      kontor: 'Opplæringskontor',
     },
   },
   sorterbar: {

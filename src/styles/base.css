@@ -6824,6 +6824,11 @@ button.frist-stripe-celle:hover {
   color: var(--farge-merke-tekst);
 }
 
+/* Knappen med det valgte fylket står først, litt for seg (eier 05.10.2026). */
+.sokefilter-fylke {
+  margin-right: var(--rom-2);
+}
+
 .sokefilter-antall {
   opacity: 0.8;
 }

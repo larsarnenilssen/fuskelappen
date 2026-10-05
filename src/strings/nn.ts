@@ -88,6 +88,7 @@ export const nn: Tekster = {
       fag: 'Fag',
       begreper: 'Omgrep',
       tilbud: 'Tilbod og skular',
+      fylkeForklaring: 'Viser berre skular, kontor og lokale forskrifter i {fylke}. Trykk for å sjå alle fylka.',
     },
     typer: {
       modul: 'Del av appen',
@@ -106,6 +107,7 @@ export const nn: Tekster = {
       lov: 'Regelverk',
       side: 'Side',
       skole: 'Skule',
+      kontor: 'Opplæringskontor',
     },
   },
   sorterbar: {
