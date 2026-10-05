@@ -581,6 +581,8 @@ main {
  */
 .skoleliste {
   display: grid;
+  /* Kolonnen kan bli smalere enn innholdets minstebredde, så et åpent skolekort ikke gir overflyt i 320 px. */
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--rom-2);
   list-style: none;
   margin: 0 0 var(--rom-4);
