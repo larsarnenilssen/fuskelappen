@@ -3511,12 +3511,36 @@ p.fagkort-tittel {
   color: var(--farge-topplinje-tekst);
 }
 
-/* Søket fra toppfeltet over siden (eier 05.10.2026): samme bredde og felt som på forsiden, med «Lukk søket» øverst. */
-.toppsok {
+/*
+ * Søket fra toppfeltet legges over siden (eier 05.10.2026): samme felt som på forsiden, med «Lukk søket» øverst. Siden
+ * står synlig bak sløret, og et trykk på sløret lukker søket. Treffene ruller inne i feltet når de er flere enn det er
+ * plass til, så siden bak står stille. Nederst står alltid en stripe av siden igjen, som kan trykkes på.
+ */
+.toppsok-lag {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  padding-top: calc(env(safe-area-inset-top) + var(--topplinje-luft, 0px) + var(--topplinje-hoyde));
+  background: var(--farge-slor);
+  overscroll-behavior: contain;
+}
+
+@media (display-mode: standalone) and (pointer: coarse) {
+  .toppsok-lag {
+    --topplinje-luft: var(--topplinje-luft-installert);
+  }
+}
+
+.toppsok.forside-topp {
   width: 100%;
   max-width: var(--maks-bredde);
+  max-height: calc(100% - var(--trykkflate));
   margin: 0 auto;
-  padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) var(--rom-6) calc(var(--rom-4) + env(safe-area-inset-left));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-shadow: var(--skygge-flytende);
 }
 
 .toppsok-rad {
