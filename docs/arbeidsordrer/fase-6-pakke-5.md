@@ -54,22 +54,16 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
    - Undersøk først om ikrafttredelsen alltid står i metadataene, eller om den kommer i en egen kunngjøring senere («Ikrafttredelse av …»). Da må datoen kunne komme etter endringen.
    - Kontroll: Kunnskapsdepartementets oversikt «Endringer i lover og forskrifter fra 1. januar / 1. juli» på regjeringen.no og Udirs «Nytt til barnehage- og skolestart» kan brukes til å sjekke at ingenting mangler. De lenkes fra kalenderen, men kopieres ikke.
 6. **Lenker** fra hver dato til veivisere, begreper og sider (nytt felt på fristene). Datoer uten fast dag («Udir fastsetter datoen») vises bare når det er filtrert på tema.
-7. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
-8. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
+   - **Fra fagarket** (eier 04.10.2026, fase 6-forslaget runde 5): lenke til kalenderen filtrert på eksamen, siden datoene per fag ikke kunne hentes. I dag lenker fagarket til siden Eksamen.
+7. **Svar, svarfrist og andre inntak** (eier 03.10.2026, `fase-5-forslag.md`, «Svar fra eier, runde 2»): en fil per inntaksår med datoene, `grunnlag: praksis`, og en påminnelse i kontrollrunden i mai. Ikke bygget i fase 5 (avgjørelse 046 lenker bare til Vilbli). Prøv først å hente datoene fra fylkenes sider, som eksamensdatoene (avgjørelse 059). Funnet igjen i gjennomgangen 05.10.2026.
+8. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
+9. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 
-## Vestland og Grep (venter på eiers avgjørelse)
+## Vestland og Grep (avklart)
 
-Kjøringen 37233727798 (04.10.2026, etter #93) viste:
-- **vestlandfylke.no** svarer ikke fra GitHub Actions. TCP-tilkoblingen får tidsavbrudd (`ETIMEDOUT`), også i Chromium etter 60 s. Nettstedet ser altså ut til å stenge IP-adressene i skyen. Hypotesen om at nettleseren kommer gjennom, holdt ikke. Chromium-forsøket koster nå 9 minutter per kjøring.
-- **Grep** svarer 429 og slipper bare gjennom om lag to forespørsler i sekundet. Ventingen fungerer (ingen forespørsel trengte mer enn ett nytt forsøk), men hentingen når ikke gjennom på 20 minutter. Appen beholder forrige henting.
-
-Når eier har valgt vei og sidene på vestlandfylke.no kan leses, hentes teksten fra artefaktet «kildetekster» (eller fra eier). Selektoren `main` må kanskje rettes. Deretter legges innholdet fram for eier før det bygges:
-- antall inntaksområdepoeng (`vlfk-inntaksreglar`, VL § 2-1)
-- klagenemnda i Vestland: inntak og fag- og svenneprøven (`vlfk-sider`, `vlfk-fagproven`)
-- stegene som venter fra fase 4: Språk steg 2–3 og 5 og Tilrettelegging steg 0b, 5b og 6 (`vlfk-minoritetsspraklege`, `vlfk-innforingskurs`, `vlfk-tilrettelegging`)
-- Vestlands eksamensdatoer i `scripts/eksamen/kilder.ts` (`vlfk-eksamen`, `vlfk-klage-standpunkt`, `vlfk-privatist`). De hentes bare fra GitHub Actions, fordi vestlandfylke.no bryter tilkoblingen fra skymiljøet.
+Grep henter bare det som er endret (avgjørelse 060). Kildene på vestlandfylke.no (`vlfk-*`) er ikke i bruk lenger: fylkenes sider lenkes per tema, og de lokale forskriftene hentes fra Lovdata for alle fylker (avgjørelse 061). Inntaksområdepoeng, klagenemnd og stegene fra fase 4 er dekket av boksen «Hos fylkeskommunen». Vestlands egne eksamensdatoer venter fortsatt på at sidene kan leses (se «Åpent»).
 
 ## Åpent
 
@@ -77,6 +71,12 @@ Når eier har valgt vei og sidene på vestlandfylke.no kan leses, hentes teksten
 - Fylker som stenger skymiljøet (Østfold, Buskerud, Vestfold, Agder, Møre og Romsdal og Troms), legges inn i `scripts/eksamen/kilder.ts` når sidene kan leses. Med Agder får høsttrekket (12. november) to kilder.
 - «Fag- og svennebrev» i Opplæringstilbud er pakke 6, etter kalenderen: `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`. Siden om prøvene får «Veiene hit» da.
 - «Dagens jukselapp» kommer i fase 8.
+- **Parkert uten fase eller pakke** (funnet i gjennomgangen 05.10.2026):
+  - VIGO og Grep er uenige om «bygger på» for noen tilbud (`docs/TILBUDSSTRUKTUR.md`). Eier: «Ta dem opp med meg når det passer». Passer i pakke 6.
+  - InSchool-data som ekstra kontroll av koblingen fra fagkode til årsramme (fase 2, avgjørelse 023).
+  - Fordelingstabellen i Arbeidsplan ved skrift på 150 % eller mer venter etter eiers ønske (`OPPDRAG.md` kapittel 7).
+  - Diskré stjerne på rader uten egen side, f.eks. en eksamensfrist (`fase-6-pakke-3.md`): eier er ikke spurt ennå.
+  - KS-prosjektet SAMT-BU kartlegger kommunenes plikter på opplæringsområdet (github.com/samt-x, 05.10.2026). Følg med på om det blir en regeloversikt appen kan bruke.
 
 ## Arbeidsmåte
 
