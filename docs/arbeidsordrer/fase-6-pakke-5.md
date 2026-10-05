@@ -32,7 +32,7 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
   - **27 nye begreper** (`fase-6-begreper.md`), blant dem skolerute, ikrafttredelse og kunngjøring, oppmelding, sensur og hurtigklage, som kalenderen kan lenke til.
   - Offentleglova, offentlegforskrifta, arkivlova og arkivforskrifta i Regelverk.
 - **0.36.1** (05.10.2026, pausen mellom pakke 4 og 5, PR #101):
-  - **Temafilter i begrepsbanken** (`#/begreper?tema=vurdering&q=…`). Temaet følger filen i `content/begreper/` (`src/modules/begreper/tema.ts`). En ny fil der må føres opp i `TEMA_FOR_FIL` (testes). Begrepene om ansettelse og lønn står nå i `ansettelse.yaml`. Kalenderens filtre kan bruke samme knapper (`sokefilter`, `aria-pressed`).
+  - **Temafilter i begrepsbanken** (`#/begreper?tema=vurdering&q=…`), i en boks som kan lukkes. Temaet følger filen i `content/begreper/` (`src/modules/begreper/tema.ts`). En ny fil der må føres opp i `TEMA_FOR_FIL` (testes). Begrepene om ansettelse og lønn står nå i `ansettelse.yaml`. Kalenderens filtre kan bruke samme knapper (`sokefilter`, `aria-pressed`).
   - **«Hos fylkeskommunen»** på fylkessiden er lukket fra start.
   - **Tilbakemelding på e-post** (avgjørelse 064) under Innstillinger og i Om appen (`src/app/Tilbakemelding.tsx`): mailto til jukselappen.app@gmail.com med versjon, siden brukeren kom fra og fylket, og «Kopier adressen». Adressen vises ikke på siden, og lenken til GitHub-saker er tatt bort (eier 05.10.2026).
   - **Eget domene** (avgjørelse 065): «Publiser» bygger under stien fra innstillingene for GitHub Pages (`PAGES_BASE`), og appen på github.io viser et flyttevarsel med lenke som tar med innstillingene og favorittene (`src/app/flytting.ts`).
