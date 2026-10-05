@@ -1,6 +1,6 @@
 # Fase 6, pakke 5: Kalenderen – overlevering (04.10.2026, etter 0.35.0; flyttet til pakke 5 av eier 05.10.2026)
 
-Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene, `fase-6-pakke-4-fylkene.md`) må være levert først.
+Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene) og de nye begrepene er levert i 0.36.0.
 
 ## Levert så langt
 
@@ -16,14 +16,22 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
     Tabeller i innholdet står i `tabell` (rutenett, kort eller bokser). Tidspunktet over et steg står i `naar`.
   - **Veiviseren «Klage på karakter»** har fargen bær.
   - **Kalender for eksamen** (`#/vurdering/eksamen-og-klage`) og **Kalender for inntak** (`#/inntak/frister`) bruker samme tidslinje (`src/core/tidslinje.ts`, `src/components/Tidslinje.tsx`).
-  - **Eksamensdatoene** hentes i januar og august av `npm run hent:eksamen` fra udir.no og åtte fylker (`scripts/eksamen/`) til `data/eksamen/datoer.json`:
+  - **Eksamensdatoene** hentes (nå hver uke, avgjørelse 063) av `npm run hent:eksamen` fra udir.no og åtte fylker (`scripts/eksamen/`) til `data/eksamen/datoer.json`:
     - Udirs dato går foran.
     - Ellers må minst to fylker ha samme dato.
     - Uenighet og mønstre som ikke finner datoen, gir kontrollsak.
     - Fylkenes egne datoer vises bare når fylket er valgt.
     - Høstsensuren er 4. januar 2027 fra fylkene (eier: mest mulig automatikk).
   - Fagarket lenker til Eksamen («Eksamen og klage»).
-- **Kildesjekken:**
+- **0.36.0** (05.10.2026): pakke 4 og begrepene:
+  - **Fylkene** (`#/fylker`, avgjørelse 061): lenker til fylkenes egne sider per tema, boksen «Hos fylkeskommunen» i veiviserne, og lokale forskrifter fra Lovdata for alle fylker og skoler (`data/lovdata/lokale.json`, med `lokaltype` som `skolerute`). Forskriftene holdes oppdatert fra Norsk Lovtidend avd. II hver uke.
+  - **Lenkesjekken** går hver uke (avgjørelse 062).
+  - **Kildesjekken** går hver uke, med ekstra kjøringer 2. januar, 2. juli og 2. august (avgjørelse 063). Eksamensdatoene hentes hver uke.
+  - **Søket** i toppfeltet åpnes over siden og lukkes med tilbake. Knappen med fylket avgrenser treffene til fylket.
+  - **Sti** øverst på alle sider unntatt forsiden og sidene rett under den. Regelen står i AGENTS.md og testes.
+  - **27 nye begreper** (`fase-6-begreper.md`), blant dem skolerute, ikrafttredelse og kunngjøring, oppmelding, sensur og hurtigklage, som kalenderen kan lenke til.
+  - Offentleglova, offentlegforskrifta, arkivlova og arkivforskrifta i Regelverk.
+- **Kildesjekken (pakke 3):**
   - Vestland-sidene på vestlandfylke.no er lagt inn (#88).
   - Teksten fra kildene lastes opp som artefaktet «kildetekster».
   - Jobben har 50 minutter, og Grep-hentingen høyst 20 (#91).
@@ -57,7 +65,16 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
    - **Fra fagarket** (eier 04.10.2026, fase 6-forslaget runde 5): lenke til kalenderen filtrert på eksamen, siden datoene per fag ikke kunne hentes. I dag lenker fagarket til siden Eksamen.
 7. **Svar, svarfrist og andre inntak** (eier 03.10.2026, `fase-5-forslag.md`, «Svar fra eier, runde 2»): en fil per inntaksår med datoene, `grunnlag: praksis`, og en påminnelse i kontrollrunden i mai. Ikke bygget i fase 5 (avgjørelse 046 lenker bare til Vilbli). Prøv først å hente datoene fra fylkenes sider, som eksamensdatoene (avgjørelse 059). Funnet igjen i gjennomgangen 05.10.2026.
 8. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
-9. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
+9. **Kontrollsakene** (eier 05.10.2026):
+   - **Kildesjekken (sak #92):** En kilde uten godkjent fingeravtrykk merkes «Ny kilde, ikke godkjent ennå», ikke «Endret siden …». Alle 26 punktene i #92 er nye kilder fra fase 6, ikke endringer.
+   - **Lenkesjekken (sak #98):** Saken opprettes bare når en lenke er borte eller flyttet. Nettstedene som stenger for automatisk sjekk, står i kontrolloversikten (`docs/KONTROLL.md`), ikke i saken. Lukk #98 når endringen er flettet.
+10. **CI etter hva som er endret** (eier 05.10.2026): CI ser først hvilke filer PR-en eller pushen endrer.
+    - Bare dokumentasjon (`docs/`, `*.md` utenom innhold): ingen tester.
+    - Bare versjonsnummer og CHANGELOG (`package.json`, `package-lock.json` og `CHANGELOG.md`, der bare versjonen er endret): bare den raske jobben (lint, typesjekk, enhetstester), ikke ende-til-ende.
+    - Alt annet: som nå.
+
+    Jobbene kjører, men hopper over arbeidet, så sjekker GitHub krever før fletting, fortsatt rapporterer. Kjøringen på `main` beholdes, fordi kildesjekken skriver data rett dit. Skriv en avgjørelse.
+11. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 

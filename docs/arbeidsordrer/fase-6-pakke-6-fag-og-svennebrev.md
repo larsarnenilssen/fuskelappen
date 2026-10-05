@@ -59,7 +59,7 @@ Skjermbildene av mockupene ble ikke lagt i repoet. Lag mockupen på nytt ut fra 
   - § 9-64 viser til ol. § 7-4 sjette ledd
   - merknadene til § 9-46 og § 9-48 nevner et unntak for fremmedspråk som ikke står i paragrafen
 - **Gammel hjemmel:** nasjonale rammer for yrkesfaglig opphenting (2018) har hjemmel i den gamle loven.
-- **Begrepene** praksisbrev, lærekandidat, praksiskandidat, fagbrev på jobb, Vg3 i skole og formidling til læreplass skrives før denne pakken (`docs/arbeidsordrer/fase-6-begreper.md`), så siden kan lenke til dem.
+- **Begrepene** praksisbrev, lærekandidat, praksiskandidat, fagbrev på jobb, Vg3 i skole og formidling til læreplass er levert i 0.36.0 (`docs/arbeidsordrer/fase-6-begreper.md`), så siden kan lenke til dem. Kontrollspørsmålene til dem tas med når veiene skrives.
 
 ## Arbeidsmåte
 
