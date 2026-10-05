@@ -29,7 +29,6 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 ## Må ses på
 
-- **Grep – fag, læreplaner, vurderingsordninger og årstimetall:** ⚠️ sjekken feilet (05.10.2026): Hentingen fra Grep feilet. Se loggen for steget «Hent Grep».
 - **Udir-1-2026, teksten øverst i rundskrivet:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, A03 Programområdekode:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020:** ⚠️ endret siden 04.10.2026, venter på godkjenning
@@ -523,7 +522,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
-`udir-grep` · Kildesjekk: ⚠️ sjekken feilet (05.10.2026): Hentingen fra Grep feilet. Se loggen for steget «Hent Grep». · [Åpne kilden](https://data.udir.no/kl06/v201906/)
+`udir-grep` · Kildesjekk: i orden (05.10.2026) · [Åpne kilden](https://data.udir.no/kl06/v201906/)
 
 **Regelverdier**
 
