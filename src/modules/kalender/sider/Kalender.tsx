@@ -36,13 +36,10 @@ import {
 } from '../beregning/kalender.ts';
 import { harEksamensdatoer } from '../beregning/oppforinger.ts';
 import { folgerVertskommunen, harSkolerute } from '../datakilder.ts';
+import { ENDRINGER_REGJERINGEN, NYTT_UDIR } from '../oversikter.ts';
 import { hentKalenderdata, samle, type Kalenderdata } from '../samle.ts';
 import { finnLenker, type Kalenderlenke } from '../lenker.ts';
 import { datocelle, datoLang, manedTittel, periodeTekst } from '../visning.ts';
-
-/** Kontrollen av kommende endringer (eier 05.10.2026): oversiktene fra regjeringen.no og Udir. Nye utgaver hvert halvår. */
-const ENDRINGER_REGJERINGEN = 'https://www.regjeringen.no/no/dokument/lover_regler/endringer-i-lover-og-regler/endringer-i-lover-og-regler-fra-1.-juli-2026/id3162751/';
-const NYTT_UDIR = 'https://www.udir.no/om-udir/nytt-til-barnehage--og-skolestart-2026/';
 
 /** Hvor mange deler av året som står side om side: tre fra 56rem, fire fra 80rem (eier 04.10.2026). */
 function useDeler(): number {
@@ -300,13 +297,13 @@ export default function Kalender({ sporring }: SideProps) {
               </a>
             </li>
             <li>
-              <a class="ekstern-lenke" href={ENDRINGER_REGJERINGEN} target="_blank" rel="noopener noreferrer">
+              <a class="ekstern-lenke" href={ENDRINGER_REGJERINGEN.url} target="_blank" rel="noopener noreferrer">
                 {t('kalender.endringerRegjeringen')}
                 <Ikon navn="ekstern" class="ikon-liten" />
               </a>
             </li>
             <li>
-              <a class="ekstern-lenke" href={NYTT_UDIR} target="_blank" rel="noopener noreferrer">
+              <a class="ekstern-lenke" href={NYTT_UDIR.url} target="_blank" rel="noopener noreferrer">
                 {t('kalender.nyttUdir')}
                 <Ikon navn="ekstern" class="ikon-liten" />
               </a>
@@ -395,7 +392,7 @@ function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing
         </span>
         <span class="kal-merker">
           {o.tema.map((tema) => (
-            <span key={tema} class="kal-tema" data-tema={tema}>
+            <span key={tema} class="merke kal-tema" data-tema={tema}>
               {t(`kalender.temaer.${tema}`)}
             </span>
           ))}

@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { inntaksdatoerSkjema } from '../../src/modules/inntak/datoer-skjema.ts';
 import { behold, sorter } from '../../scripts/hent-inntak.ts';
 import { INNTAKSKILDER } from '../../scripts/inntak/kilder.ts';
-import { aarFraUkedag, finnAar, fredagIUke, type Inntakskilde, lesInntakskilde, lesUker, mandagIUke, samleInntak, sammenlignInntak, utdrag } from '../../scripts/inntak/les.ts';
+import { lesManedsdel, periodeForManedsdel, aarFraUkedag, finnAar, fredagIUke, type Inntakskilde, lesInntakskilde, lesUker, mandagIUke, samleInntak, sammenlignInntak, utdrag } from '../../scripts/inntak/les.ts';
 import data from '../../data/inntak/datoer.json';
 
 const kilde = (id: string): Inntakskilde => {
@@ -49,7 +49,7 @@ describe('uker og år', () => {
 describe('fylkenes sider', () => {
   it('Trøndelag: eksakte svarfrister og omtrentlige inntak', () => {
     const f = felt('trondelag-inntak-sporsmal', 'Dato for inntak skoleåret 2026/2027:\nFortrinnsinntak ca. 1. april - svarfrist 23. april\nFørste inntak ca. 8. juli - svarfrist 15. juli\nAndre inntak ca. 5.august - svarfrist 10. august\nTredje inntak ca. 13. august - svarfrist 16. august');
-    expect(f['2026 forste-inntak']).toEqual({ fra: '2026-07-08', omtrent: true, tekst: 'Første inntak ca. 8. juli - svarfrist 15. juli' });
+    expect(f['2026 forste-inntak']).toEqual({ fra: '2026-07-08', omtrent: true, forbehold: 'ca', tekst: 'Første inntak ca. 8. juli - svarfrist 15. juli' });
     expect(f['2026 svarfrist-forste']).toEqual({ fra: '2026-07-15', tekst: 'Første inntak ca. 8. juli - svarfrist 15. juli' });
     expect(f['2026 andre-inntak']?.fra).toBe('2026-08-05');
     expect(f['2026 svarfrist-tredje']?.fra).toBe('2026-08-16');
@@ -83,7 +83,7 @@ describe('fylkenes sider', () => {
 
   it('Akershus: «senest» er omtrentlig, og året kommer fra ukedagen til søknadsfristen', () => {
     const f = felt('akershus-inntak', 'Mandag 2. februar er frist for lærekandidater\nSenest 10. juli er førsteinntaket klart.\nSenest 25. juli er andreinntaket klart.');
-    expect(f['2026 forste-inntak']).toEqual({ fra: '2026-07-10', omtrent: true, tekst: 'Senest 10. juli er førsteinntaket klart.' });
+    expect(f['2026 forste-inntak']).toEqual({ fra: '2026-07-10', omtrent: true, forbehold: 'senest', tekst: 'Senest 10. juli er førsteinntaket klart.' });
     expect(f['2026 andre-inntak']?.fra).toBe('2026-07-25');
   });
 
@@ -188,5 +188,17 @@ describe('kildene og datafilen', () => {
     const d = inntaksdatoerSkjema.parse(data);
     for (const aarene of Object.values(d.fylker))
       for (const felter of Object.values(aarene)) for (const v of Object.values(felter)) for (const id of v?.kilder ?? []) expect(d.kilder[id], id).toBeDefined();
+  });
+});
+
+describe('delene av måneden (eier 05.10.2026)', () => {
+  it('begynnelsen, midten og slutten av en måned blir perioder', () => {
+    expect(lesManedsdel('Svar kommer i begynnelsen av juli')).toEqual({ del: 'begynnelsen', maned: 7 });
+    expect(lesManedsdel('i starten av juli')).toEqual({ del: 'begynnelsen', maned: 7 });
+    expect(lesManedsdel('i slutten av juli')).toEqual({ del: 'slutten', maned: 7 });
+    expect(lesManedsdel('8. juli')).toBeNull();
+    expect(periodeForManedsdel(2027, 7, 'begynnelsen')).toEqual({ fra: '2027-07-01', til: '2027-07-14' });
+    expect(periodeForManedsdel(2027, 7, 'midten')).toEqual({ fra: '2027-07-12', til: '2027-07-16' });
+    expect(periodeForManedsdel(2027, 7, 'slutten')).toEqual({ fra: '2027-07-18', til: '2027-07-31' });
   });
 });

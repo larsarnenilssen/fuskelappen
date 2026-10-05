@@ -29,6 +29,8 @@ export const inntaksdatoSkjema = z
     uke: z.string().regex(/^\d{1,2}(–\d{1,2})?$/).optional(),
     /** Datoen er omtrentlig («ca. 8. juli», «senest 10. juli»). */
     omtrent: z.boolean().optional(),
+    /** Ordet foran datoen («ca», «senest»), eller delen av måneden («begynnelsen», «midten», «slutten»). */
+    forbehold: z.enum(['ca', 'senest', 'begynnelsen', 'midten', 'slutten']).optional(),
     /** En frist som regnes fra noe annet, f.eks. «5 dager etter at 1. inntak er klart». */
     relativ: z.string().min(1).optional(),
     /** Et kort utdrag fra siden. */

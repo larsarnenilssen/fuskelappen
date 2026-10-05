@@ -2,6 +2,7 @@
 // datoer for inntak og vedtatte endringer i regelverket. Rene funksjoner. Titlene står i src/strings.
 import { hentTekst, type Malform } from '../../core/i18n/tekst.ts';
 import type { Flerspraak } from '../../core/innhold/skjema.ts';
+import { manedsnavn } from '../../core/tidslinje.ts';
 import { datoLang } from './visning.ts';
 import type { Kalenderoppforing } from './beregning/kalender.ts';
 import type { Inntaksdatoer, Inntaksfelt, KommendeEndringer, Skoleruter, Skolerutetype } from './datatyper.ts';
@@ -105,7 +106,13 @@ export function inntakOppforinger(data: Inntaksdatoer | null, fylke: string | nu
         const kilde = data.kilder[k];
         return kilde ? [{ id: 'inntaksdatoer', punkt: kilde.navn, url: kilde.url }] : [];
       });
-      const naar = d.uke ? begge((m) => hentTekst(m, 'kalender.inntak.uke', { uke: d.uke ?? '' })) : d.omtrent ? begge((m) => hentTekst(m, 'kalender.inntak.omtrent')) : undefined;
+      // Ordet fra siden står ved datoen: «ca.», «senest», «begynnelsen av juli» eller uken (eier 05.10.2026).
+      const forbehold = d.forbehold ?? (d.omtrent ? 'ca' : undefined);
+      const naar = d.uke
+        ? begge((m) => hentTekst(m, 'kalender.inntak.uke', { uke: d.uke ?? '' }))
+        : forbehold
+          ? begge((m) => hentTekst(m, `kalender.inntak.forbehold.${forbehold}`, { maned: manedsnavn(Number(d.fra?.slice(5, 7)), m) }))
+          : undefined;
       return [
         {
           id: `inntak-${fylke}-${inntaksaar}-${felt}`,

@@ -829,14 +829,24 @@ main {
 }
 
 .merke {
-  display: inline-block;
+  /* inline-flex, så et ikon i merket står midt på linjen med teksten (eier 05.10.2026). */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  vertical-align: middle;
   padding: 0.1rem 0.5rem;
   border-radius: 999px;
   border: var(--strek) solid var(--farge-linje);
   font-size: var(--str-xs);
   font-weight: 600;
+  line-height: 1.4;
   background: var(--farge-flate);
   color: var(--farge-tekst);
+}
+
+.merke > .ikon {
+  width: 1.1em;
+  height: 1.1em;
 }
 
 .merke-fylke,
@@ -7048,9 +7058,30 @@ a.knapp {
 
 .kal-filtervalg {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: var(--rom-2);
+}
+
+/* Skoleårene står under bryteren, så Tema og Hvem det gjelder ikke flytter seg når bryteren endres (eier 05.10.2026).
+   På smal skjerm fyller bryteren bredden, som «Min skole / Alle» i Opplæringstilbud. */
+.kal-filtervalg .bryter-valg {
+  flex: 1 1 auto;
+}
+
+.kal-filtervalg .bryter-valg label {
+  flex: 1 1 0;
+}
+
+@media (min-width: 56rem) {
+  .kal-filtervalg {
+    align-items: flex-start;
+  }
+
+  .kal-filtervalg .bryter-valg label {
+    flex: 1 1 auto;
+    white-space: nowrap;
+  }
 }
 
 .kal-filter-innhold .sokefilter,
@@ -7295,17 +7326,10 @@ a.knapp {
   gap: var(--rom-1);
 }
 
-.kal-merker .merke {
-  font-size: var(--str-xs);
-}
-
-.kal-tema {
-  padding: 0 var(--rom-2);
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  font-size: var(--str-xs);
-  font-weight: 600;
-  line-height: 1.6;
+/* Temaet er et vanlig merke med temafargen, så høyden og teksten er som i de andre merkene. */
+.merke.kal-tema {
+  border-color: currentColor;
+  background: transparent;
   color: var(--kal-farge);
 }
 

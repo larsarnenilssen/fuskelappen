@@ -9,8 +9,11 @@
 // - Året: står det i datoen, brukes det. Ellers brukes året i mønsteret (gruppen `aar`), og ellers året kilden finner
 //   på siden (`aar` i kilden: et årstall, eller en ukedag med dato, som «Mandag 2. februar»). Uten år lagres ingenting,
 //   og det står i rapporten. Året gjettes aldri ut fra datoen hentingen ble gjort.
-// - «ca.», «cirka», «omtrent» og «senest» rett foran datoen gir `omtrent`. En svarfrist som regnes fra svaret («5 dager
-//   etter at 1. inntak er klart»), lagres i `relativ`, med eller uten dato.
+// - «ca.», «cirka», «omtrent» og «senest» rett foran datoen gir `omtrent`, og ordet lagres i `forbehold` («ca» eller
+//   «senest»), så det kan vises ved datoen (eier 05.10.2026). En svarfrist som regnes fra svaret («5 dager etter at 1.
+//   inntak er klart»), lagres i `relativ`, med eller uten dato.
+// - «begynnelsen av juli» blir de to første ukene (1.–14.), «midten av juli» uken med den 15. (mandag–fredag) og
+//   «slutten av juli» de to siste ukene, med `forbehold` «begynnelsen», «midten» eller «slutten» (eier 05.10.2026).
 import type { inntaksfelt } from '../../src/modules/inntak/datoer-skjema.ts';
 import { type Datotreff, lesDatoer } from '../eksamen/les.ts';
 
@@ -48,11 +51,15 @@ export interface Inntakskilde {
   regler: Inntaksregel[];
 }
 
+/** Ordet som gjør datoen omtrentlig, eller delen av måneden. */
+export type Forbehold = 'ca' | 'senest' | 'begynnelsen' | 'midten' | 'slutten';
+
 export interface Inntaksdato {
   fra?: string;
   til?: string;
   uke?: string;
   omtrent?: boolean;
+  forbehold?: Forbehold;
   relativ?: string;
   tekst: string;
   kilder: string[];
@@ -124,7 +131,37 @@ export function finnAar(kilde: Pick<Inntakskilde, 'aar'>, tekst: string, hentet:
   return null;
 }
 
-const OMTRENT = /\b(?:ca\.?|cirka|omtrent|senest|seinast)\s*$/i;
+const OMTRENT = /\b(ca\.?|cirka|omtrent|senest|seinast)\s*$/i;
+
+/** «senest» og «seinast» gir «senest», de andre ordene «ca». */
+const forbeholdFor = (ord: string): Forbehold => (/^se/i.test(ord) ? 'senest' : 'ca');
+
+const MANEDSNAVN = ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'];
+const MANEDSDEL = new RegExp(`\\b(begynnelsen|starten|midten|slutten|enden)\\s+av\\s+(${MANEDSNAVN.join('|')})`, 'i');
+
+/** «begynnelsen av juli», «i midten av juli», «slutten av juli»: delen og måneden (1–12), eller null. */
+export function lesManedsdel(tekst: string): { del: 'begynnelsen' | 'midten' | 'slutten'; maned: number } | null {
+  const m = MANEDSDEL.exec(tekst);
+  if (!m?.[1] || !m[2]) return null;
+  const ord = m[1].toLowerCase();
+  const del = ord === 'starten' ? 'begynnelsen' : ord === 'enden' ? 'slutten' : (ord as 'begynnelsen' | 'midten' | 'slutten');
+  return { del, maned: MANEDSNAVN.indexOf(m[2].toLowerCase()) + 1 };
+}
+
+/**
+ * Perioden for en del av måneden: de to første ukene (1.–14.), uken med den 15. (mandag–fredag) eller de to siste
+ * ukene (de 14 siste dagene).
+ */
+export function periodeForManedsdel(aar: number, maned: number, del: 'begynnelsen' | 'midten' | 'slutten'): { fra: string; til: string } {
+  const dag = (d: number) => `${aar}-${String(maned).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+  if (del === 'begynnelsen') return { fra: dag(1), til: dag(14) };
+  const sisteDag = new Date(Date.UTC(aar, maned, 0)).getUTCDate();
+  if (del === 'slutten') return { fra: dag(sisteDag - 13), til: dag(sisteDag) };
+  const ukedag = new Date(Date.UTC(aar, maned - 1, 15)).getUTCDay() || 7;
+  const mandag = new Date(Date.UTC(aar, maned - 1, 15 - (ukedag - 1)));
+  const fredag = new Date(mandag.getTime() + 4 * 86_400_000);
+  return { fra: iso(mandag), til: iso(fredag) };
+}
 
 const kort = (t: string) => (t.length > 200 ? `${t.slice(0, 199)}…` : t);
 
@@ -171,7 +208,8 @@ export function lesInntakskilde(kilde: Inntakskilde, tekst: string, hentet: stri
     const relativ = m?.groups?.['relativ']?.replace(/\s+/g, ' ').trim();
     const uker = datotekst ? lesUker(datotekst) : null;
     const datoer = datotekst && !uker ? lesDatoer(datotekst) : [];
-    if (!m || (!uker && datoer.length === 0 && !relativ)) {
+    const manedsdel = datotekst && !uker && datoer.length === 0 ? lesManedsdel(datotekst) : null;
+    if (!m || (!uker && datoer.length === 0 && !manedsdel && !relativ)) {
       if (!r.valgfri) mangler.push(r.felt);
       continue;
     }
@@ -187,7 +225,9 @@ export function lesInntakskilde(kilde: Inntakskilde, tekst: string, hentet: stri
     const pos = datopos ?? indekser?.groups?.['relativ']?.[0] ?? m.index;
     const verdi: Inntakskandidat['verdi'] = { tekst: utdrag(tekst, pos, r.nesteLinje) };
     const somIso = (d: Datotreff) => `${d.aar ?? aar}-${String(d.maned).padStart(2, '0')}-${String(d.dag).padStart(2, '0')}`;
-    if (uker) {
+    if (manedsdel) {
+      Object.assign(verdi, periodeForManedsdel(aar, manedsdel.maned, manedsdel.del), { omtrent: true, forbehold: manedsdel.del });
+    } else if (uker) {
       verdi.fra = mandagIUke(aar, uker.fra);
       verdi.til = fredagIUke(aar, uker.til);
       verdi.uke = uker.fra === uker.til ? String(uker.fra) : `${uker.fra}–${uker.til}`;
@@ -196,7 +236,11 @@ export function lesInntakskilde(kilde: Inntakskilde, tekst: string, hentet: stri
       const siste = datoer[1];
       if (siste) verdi.til = somIso(siste);
     }
-    if (verdi.fra && (r.omtrent || OMTRENT.test(tekst.slice(Math.max(0, pos - 12), pos)))) verdi.omtrent = true;
+    const ord = OMTRENT.exec(tekst.slice(Math.max(0, pos - 12), pos))?.[1];
+    if (verdi.fra && !manedsdel && (r.omtrent || ord)) {
+      verdi.omtrent = true;
+      verdi.forbehold = ord ? forbeholdFor(ord) : 'ca';
+    }
     if (relativ) verdi.relativ = r.relativTillegg ? `${relativ} ${r.relativTillegg}` : relativ;
     kandidater.push({ kilde: kilde.id, fylke: kilde.fylke, aar: String(aar), felt: r.felt, verdi });
   }

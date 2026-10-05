@@ -62,7 +62,7 @@ export const kalenderNn = {
   inntak: {
     fraFylket: 'Frå sida til fylkeskommunen:',
     uke: 'veke {uke}',
-    omtrent: 'omtrent',
+    forbehold: { ca: 'ca.', senest: 'seinast', begynnelsen: 'byrjinga av {maned}', midten: 'midten av {maned}', slutten: 'slutten av {maned}' },
     svarfrist: 'Svarfristen er {frist}.',
     felt: {
       fortrinnsinntak: 'Svar på søknad om fortrinnsrett',
