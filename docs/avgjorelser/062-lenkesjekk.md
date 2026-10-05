@@ -16,8 +16,9 @@
   - 404 og 410 er borte.
   - En videresending til forsiden er borte, en videresending til en annen side er flyttet.
   - 401, 403, 429, 5xx og feil i nettverket er usikre, fordi nettstedet kan stenge for automatiske forespørsler.
-  - Svarte ingen av lenkene til et nettsted, regnes nettstedet som stengt. Det står i saken, og lenkene sjekkes i kontrollrunden.
-- **Varsel:** Når en lenke har vært borte eller flyttet to uker på rad, kommer den i kontrollsaken for lenkene (etikett «lenker»), med hvor den står. Saken lukkes når alt er i orden.
+  - Svarte ingen av lenkene til et nettsted, regnes nettstedet som stengt. Nettstedene skrives til `data/status/stengte-lenker.json`, med lenkene og hvor de står, og vises i kontrolloversikten (`docs/KONTROLL.md`), ikke i saken. Lenkene dit sjekkes ikke av noen jobb. Kontrollrunden har bare lenkene til Vilbli (avgjørelse 027). Endret etter sak #98 (eier 05.10.2026).
+- **Varsel:** Når en lenke har vært borte eller flyttet to uker på rad, kommer den i kontrollsaken for lenkene (etikett «lenker»), med hvor den står. Saken opprettes bare da, og lukkes når ingen lenker er borte eller flyttet, også når det fortsatt finnes stengte nettsteder.
+- **Rekkefølgen:** Lenkesjekken går før kontrolloversikten lages i kildesjekken, så de stengte nettstedene kommer med samme uke.
 - **Statusen** fra gang til gang ligger på grenen `lenkesjekk`, med én commit som skrives over, som Grep-lageret (avgjørelse 060).
 - **Kildene om Vestland** (`vlfk-*`) er ikke aktive lenger. Sidene lenkes fra `content/fylker/lenker.yaml` (avgjørelse 061), og lenkesjekken sjekker adressene.
 

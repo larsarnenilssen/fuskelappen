@@ -1,5 +1,6 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
-# Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md og docs/KOBLING.md på nytt,
+# Skriver data/status/kildestatus.json, verdistatus.json (verdisjekken) og stengte-lenker.json (lenkesjekken) og lager
+# docs/KONTROLL.md og docs/KOBLING.md på nytt,
 # committer dem ved hver kjøring (holder den planlagte jobben i live),
 # oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
 # fersk status og registerdata (Grep, skoleregisteret).
@@ -160,26 +161,17 @@ jobs:
           path: .generert/kildetekster/
           retention-days: 14
           if-no-files-found: ignore
-      - name: Kontrolloversikt
-        run: npm run kontroll:rapport
-      - name: Sammendrag
-        run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
-      - name: Lagre kildestatus
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/eksamen docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
-          git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
-          git push
-      # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
       # Lenkesjekken (avgjørelse 062): alle faste lenker og et utvalg av de massegenererte, hver uke. Statusen fra
       # forrige gang ligger på grenen lenkesjekk (én commit, som skrives over), så lenker som har feilet to ganger på
-      # rad, kommer i kontrollsaken for lenkene (etikett «lenker»).
+      # rad, kommer i kontrollsaken for lenkene (etikett «lenker»). Nettstedene som stenger for automatisk sjekk, skrives
+      # til data/status/stengte-lenker.json og står i kontrolloversikten, så lenkesjekken går før den lages (sak #98).
       - name: Hent lenkestatus
+        # Feiler hentingen, begynner lenkesjekken på nytt, og kontrolloversikten lages likevel.
+        continue-on-error: true
         run: |
           mkdir -p .generert
           if git fetch --depth=1 origin lenkesjekk; then
-            git show FETCH_HEAD:lenkestatus.json > .generert/lenkestatus.json
+            git show FETCH_HEAD:lenkestatus.json > .generert/lenkestatus.tmp && mv .generert/lenkestatus.tmp .generert/lenkestatus.json
           else
             echo "Ingen lenkestatus ennå."
           fi
@@ -191,6 +183,8 @@ jobs:
         run: npm run lenker:sjekk
       - name: Lagre lenkestatus
         if: always()
+        # Feiler lagringen, skal kildestatusen og kontrolloversikten likevel lagres.
+        continue-on-error: true
         run: |
           f=.generert/lenkestatus.json
           if [ ! -f "$f" ]; then echo "Ingen lenkestatus å lagre."; exit 0; fi
@@ -200,6 +194,18 @@ jobs:
           tree=$(printf '100644 blob %s\tlenkestatus.json\n' "$blob" | git mktree)
           commit=$(git commit-tree "$tree" -m "Lenkestatus $(date -u +%F)")
           git push --force origin "$commit:refs/heads/lenkesjekk"
+      - name: Kontrolloversikt
+        run: npm run kontroll:rapport
+      - name: Sammendrag
+        run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Lagre kildestatus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/eksamen docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
+          git push
+      # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
       - name: Endringsforslag (PR)
         # Feiler forslagene, skal kontrollsaken likevel komme.
         continue-on-error: true

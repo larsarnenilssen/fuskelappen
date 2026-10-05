@@ -1,16 +1,19 @@
 // Lenkesjekken (avgjørelse 062): sjekker alle faste lenker i appen og en del av de massegenererte (stikkprøver), fører
 // status per lenke i .generert/lenkestatus.json (kildesjekken lagrer den på grenen lenkesjekk), og holder
-// kontrollsaken for lenkene (etikett «lenker») oppdatert. Kjøres hver uke av kildesjekken.
+// kontrollsaken for lenkene (etikett «lenker») oppdatert. Saken gjelder bare lenker som er borte eller flyttet.
+// Nettstedene som stenger for automatisk sjekk, skrives til data/status/stengte-lenker.json og står i
+// kontrolloversikten (sak #98). Kjøres hver uke av kildesjekken, før kontrolloversikten lages.
 // Reglene for hvilke lenker som sjekkes, står i scripts/lenker/regler.ts.
 // Bruk: npm run lenker:sjekk [-- --antall=<stikkprøver>]
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { samleLenker } from './lenker/samle.ts';
-import { type Lenkestatus, lagRapport, oppdaterStatus, sjekkAlle, stengteNettsteder, velgStikkprove } from './lenker/sjekk.ts';
+import { type Lenkestatus, lagRapport, oppdaterStatus, sjekkAlle, stengteLenker, stengteNettsteder, velgStikkprove } from './lenker/sjekk.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const statusfil = join(rot, '.generert/lenkestatus.json');
+const stengtfil = join(rot, 'data/status/stengte-lenker.json');
 /** Stikkprøver per sjekk: med om lag 2 500 massegenererte lenker er alle sjekket i løpet av et par måneder. */
 const STIKKPROVER = Number(process.argv.find((a) => a.startsWith('--antall='))?.split('=')[1] ?? 300);
 const ETIKETT = 'lenker';
@@ -26,7 +29,8 @@ const status = oppdaterStatus(forrige, resultater, new Set(lenker.map((l) => l.u
 mkdirSync(join(rot, '.generert'), { recursive: true });
 writeFileSync(statusfil, `${JSON.stringify(status, null, 1)}\n`);
 const stengte = stengteNettsteder(resultater);
-const rapport = lagRapport(status, lenker, stengte);
+writeFileSync(stengtfil, `${JSON.stringify(stengteLenker(stengte, lenker, idag), null, 2)}\n`);
+const rapport = lagRapport(status, lenker);
 writeFileSync(join(rot, '.generert/lenkerapport.md'), rapport);
 const antall = (svar: string) => resultater.filter((r) => r.svar === svar).length;
 console.log(
@@ -39,7 +43,7 @@ const token = process.env.GITHUB_TOKEN;
 const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/jukselappen';
 const api = process.env.GITHUB_API_URL ?? 'https://api.github.com';
 if (!token) {
-  console.log(rapport || 'Ingen lenker trenger tilsyn.');
+  console.log(rapport || 'Ingen lenker er borte eller flyttet.');
 } else {
   const kall = async (sti: string, metode = 'GET', kropp?: unknown) => {
     const svar = await fetch(`${api}/repos/${repo}${sti}`, {
@@ -55,7 +59,7 @@ if (!token) {
   if (!rapport) {
     if (sak) {
       await kall(`/issues/${sak.number}`, 'PATCH', { state: 'closed', state_reason: 'completed' });
-      console.log(`Lukket sak #${sak.number}: ingen lenker trenger tilsyn.`);
+      console.log(`Lukket sak #${sak.number}: ingen lenker er borte eller flyttet.`);
     }
   } else if (sak) {
     await kall(`/issues/${sak.number}`, 'PATCH', { body: rapport });

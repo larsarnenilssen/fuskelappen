@@ -11,7 +11,9 @@ import { lesVerdistatus, type Verdistatusfil } from '../../src/core/kontroll/ver
 import type { Innholdsstatus } from '../../src/core/innhold/status.ts';
 import { lesInnhold, lesRegelsett } from '../innhold/alt.ts';
 import { praksisTilBekreftelse } from '../kilder/kontrollrunde.ts';
+import { erNyKilde } from '../kilder/logikk.ts';
 import { lesFil } from '../innhold/last.ts';
+import type { StengteLenker } from '../lenker/sjekk.ts';
 import { kildelenker, praksiskilder } from './kildelenker.ts';
 
 function dato(iso: string): string {
@@ -64,6 +66,7 @@ function visKildestatus(kilde: Kilde | undefined, status: Kildestatusfil | null)
   const post = status?.kilder[kilde.id];
   if (!kilde.aktiv || kilde.sjekkmetode === 'ingen' || !post) return 'sjekkes ikke automatisk';
   if (post.status === 'ok') return `i orden (${dato(post.sjekket)})`;
+  if (post.status === 'endret' && erNyKilde(kilde)) return '⚠️ ny kilde, ikke godkjent ennå';
   if (post.status === 'endret') return `⚠️ endret siden ${dato(post.endret_siden ?? post.sjekket)}, venter på godkjenning`;
   return `⚠️ sjekken feilet (${dato(post.sjekket)}): ${post.melding ?? ''}`;
 }
@@ -165,6 +168,35 @@ function sporsmalsdel(indeks: readonly Kildekontroll[], register: Kilderegister)
   ];
 }
 
+/** Lenker per nettsted i kontrolloversikten. Resten telles. */
+const MAKS_STENGTE_LENKER = 10;
+
+/**
+ * Nettstedene som stenger for automatisk sjekk, fra lenkesjekken (data/status/stengte-lenker.json, sak #98). Lenkene
+ * dit sjekkes ikke av noen jobb, så eier ser dem her i stedet for i kontrollsaken for lenkene.
+ */
+function stengtdel(stengte: StengteLenker | null): string[] {
+  if (!stengte?.sjekket) return [];
+  const innledning = `Lenkesjekken ${dato(stengte.sjekket)} fikk ikke svar fra noen av lenkene til nettstedene under. De stenger trolig for automatiske forespørsler, så lenkene dit blir ikke sjekket. Åpne noen av dem av og til. Virker en lenke ikke, si fra til Claude.`;
+  if (stengte.nettsteder.length === 0) return ['## Nettsteder som ikke kan sjekkes automatisk', '', `Alle nettstedene svarte ved lenkesjekken ${dato(stengte.sjekket)}.`, ''];
+  return [
+    '## Nettsteder som ikke kan sjekkes automatisk',
+    '',
+    innledning,
+    '',
+    ...stengte.nettsteder.flatMap((n) => {
+      const antall = n.lenker.length + n.stikkprover;
+      return [
+        `- **${n.vert}** (${antall === 1 ? 'én lenke' : `${antall} lenker`})`,
+        ...n.lenker.slice(0, MAKS_STENGTE_LENKER).map((l) => `  - ${l.url} (står i ${l.brukt.map((b) => `\`${b}\``).join(', ')})`),
+        ...(n.lenker.length > MAKS_STENGTE_LENKER ? [`  - … og ${n.lenker.length - MAKS_STENGTE_LENKER} til.`] : []),
+        ...(n.stikkprover > 0 ? [`  - ${n.stikkprover === 1 ? 'Én lenke' : `${n.stikkprover} lenker`} fra dataene, som sjekkes med stikkprøver.`] : []),
+      ];
+    }),
+    '',
+  ];
+}
+
 export function lagKontrollrapport(
   indeks: readonly Kildekontroll[],
   register: Kilderegister,
@@ -173,6 +205,7 @@ export function lagKontrollrapport(
   idag: string,
   praksis: readonly Praksis[] = [],
   kobling: KoblingsstatusKort | null = null,
+  stengte: StengteLenker | null = null,
 ): string {
   const t = tellKontroll(indeks);
   const sesPaa = maaSesPaa(indeks, register, kildestatus);
@@ -228,6 +261,7 @@ export function lagKontrollrapport(
     ...(sesPaa.length > 0 ? sesPaa : ['Ingenting akkurat nå.']),
     '',
     ...praksisdel(praksis, indeks, register),
+    ...stengtdel(stengte),
     '## Per kilde',
     '',
     ...deler,
@@ -254,6 +288,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const indeks = lagKontrollindeks(register.kilder, lesRegelsett(rot), lesInnhold(rot), kildestatus?.kilder ?? {}, verdistatus, idag);
   const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
   const kobling = lesJson(join(rot, 'data/status/kobling.json')) as KoblingsstatusKort | null;
-  writeFileSync(join(rot, 'docs/KONTROLL.md'), `${lagKontrollrapport(indeks, register, kildestatus, verdistatus, idag, praksis, kobling)}\n`);
+  const stengte = lesJson(join(rot, 'data/status/stengte-lenker.json')) as StengteLenker | null;
+  writeFileSync(join(rot, 'docs/KONTROLL.md'), `${lagKontrollrapport(indeks, register, kildestatus, verdistatus, idag, praksis, kobling, stengte)}\n`);
   console.log('Skrev docs/KONTROLL.md');
 }
