@@ -12,6 +12,9 @@
 // Validering og tilbakefall: Feiler en henting, eller er dataene for små eller i feil form, kastes en feil før
 // noe skrives, og forrige snapshot blir stående. Filene skrives bare når innholdet er endret. Endringene lagres
 // i .generert/grep-endringer.json, som kildesjekken tar med i rapporten.
+//
+// Lager (avgjørelse 060): detaljene hentes bare for elementer som er nye eller endret siden forrige henting
+// (scripts/grep/lager.ts). Grep slipper bare gjennom om lag 1,7 forespørsler i sekundet.
 // Bruk: npm run hent:grep
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
@@ -23,6 +26,7 @@ import { byggFagsokdata, fagsokgrunnlag } from '../src/modules/arbeidstid/fagsok
 import { lesRegelsett } from './innhold/alt.ts';
 import { antallEndringer, grepsammendrag, sammenlignGrep, type Fagspor, type Grepdata, type Programomradespor } from './kilder/grep.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
+import { beskjaer, type Lager, lesLager, maaHentes, sistEndretFra, skrivLager } from './grep/lager.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const GREP = 'https://data.udir.no/kl06/v201906';
@@ -67,18 +71,44 @@ async function hentJson<T>(sti: string): Promise<T> {
 
 const hent = (sti: string) => hentJson<Grepelement[]>(sti);
 
-/** Henter detaljene for mange koder, noen om gangen. */
-async function hentAlle(type: string, koder: readonly string[]): Promise<Map<string, Grepelement>> {
+// Lageret (scripts/grep/lager.ts, avgjørelse 060). GREP_LAGER kan peke på en annen fil.
+const lagerfil = process.env.GREP_LAGER ?? join(rot, '.generert/grep-lager.json.gz');
+let lager: Lager = {};
+const brukt = new Set<string>();
+let ulagret = 0;
+const idag = new Date().toISOString().slice(0, 10);
+
+function lagreLager(): void {
+  if (ulagret === 0) return;
+  skrivLager(lagerfil, lager);
+  ulagret = 0;
+}
+
+/**
+ * Detaljene for mange koder: fra lageret når elementet er uendret, ellers fra Grep, noen om gangen. Lageret skrives
+ * underveis, så en henting som blir avbrutt (grensen på 20 minutter), kan fortsette neste gang.
+ */
+async function hentAlle(type: string, koder: readonly string[], sistEndret: ReadonlyMap<string, string>): Promise<Map<string, Grepelement>> {
   const ut = new Map<string, Grepelement>();
   const start = Date.now();
-  for (let i = 0; i < koder.length; i += SAMTIDIGE) {
-    const bolk = koder.slice(i, i + SAMTIDIGE);
+  const nye = koder.filter((k) => maaHentes(lager[`${type}/${k}`], `${type}/${k}`, sistEndret.get(k) ?? null, idag));
+  for (let i = 0; i < nye.length; i += SAMTIDIGE) {
+    const bolk = nye.slice(i, i + SAMTIDIGE);
     const svar = await Promise.all(bolk.map((k) => hentJson<Grepelement>(`${type}/${k}`)));
-    bolk.forEach((k, j) => ut.set(k, svar[j] as Grepelement));
+    bolk.forEach((k, j) => {
+      lager[`${type}/${k}`] = { sistEndret: sistEndret.get(k) ?? null, hentet: idag, data: svar[j] as Grepelement };
+    });
+    ulagret += bolk.length;
+    if (ulagret >= 300) lagreLager();
     // Fremdrift i loggen, så en treg henting kan skilles fra en som står (kildesjekken 04.10.2026).
-    if ((i / SAMTIDIGE) % 50 === 49) console.log(`Grep ${type}: ${ut.size} av ${koder.length} (${Math.round((Date.now() - start) / 1000)} s)`);
+    if ((i / SAMTIDIGE) % 50 === 49) console.log(`Grep ${type}: ${i + bolk.length} av ${nye.length} hentet (${Math.round((Date.now() - start) / 1000)} s)`);
   }
-  console.log(`Grep ${type}: ${ut.size} hentet på ${Math.round((Date.now() - start) / 1000)} s`);
+  for (const k of koder) {
+    brukt.add(`${type}/${k}`);
+    ut.set(k, (lager[`${type}/${k}`] as { data: Grepelement }).data);
+  }
+  lagreLager();
+  console.log(`Grep ${type}: ${koder.length} elementer, ${nye.length} hentet på ${Math.round((Date.now() - start) / 1000)} s`);
   return ut;
 }
 
@@ -193,7 +223,15 @@ export function validerFagdata(indeks: Fagindeks, planer: ReadonlyMap<string, La
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const start = Date.now();
-  const [utdanningsprogram, programliste, fagliste, oppliste, planliste, ferdighetsliste, temaliste] = await Promise.all([
+  lager = lesLager(lagerfil);
+  console.log(`Grep-lageret har ${Object.keys(lager).length} elementer.`);
+  // Blir hentingen stoppet (timeout sender SIGTERM), lagres det som er hentet, så neste kjøring kan fortsette.
+  process.on('SIGTERM', () => {
+    lagreLager();
+    console.log('Grep-hentingen ble stoppet. Det som er hentet, er lagret.');
+    process.exit(1);
+  });
+  const [utdanningsprogram, programliste, fagliste, oppliste, planliste, ferdighetsliste, temaliste, maalsettliste] = await Promise.all([
     hent('utdanningsprogram'),
     hent('programomraader'),
     hent('fagkoder'),
@@ -201,6 +239,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     hent('laereplaner-lk20'),
     hent('grunnleggende-ferdigheter-lk20'),
     hent('tverrfaglige-temaer-lk20'),
+    hent('kompetansemaalsett-lk20'),
   ]);
   // Grunnleggende ferdigheter og tverrfaglige temaer (pakke 6, avgjørelse 037).
   const laereplanverket = byggLaereplanverket(ferdighetsliste, temaliste);
@@ -219,15 +258,15 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
 
   // Detaljer: programområder, opplæringsfag, fagkoder, læreplaner og kompetansemålsett.
   const publisert = (l: readonly Grepelement[]) => l.filter(erPublisert).map((e) => e.kode);
-  const programdetaljer = await hentAlle('programomraader', publisert(programliste));
-  const oppdetaljer = await hentAlle('opplaeringsfag', publisert(oppliste));
+  const programdetaljer = await hentAlle('programomraader', publisert(programliste), sistEndretFra(programliste));
+  const oppdetaljer = await hentAlle('opplaeringsfag', publisert(oppliste), sistEndretFra(oppliste));
   const vgs = [...oppdetaljer.values()].filter((o) => (o.opplaeringsnivaa as { kode?: string } | null)?.kode === 'opplaeringsnivaa_videregaaende');
   const referanser = (o: Grepelement, felt: string) => ((o[felt] ?? []) as { kode: string; status: string }[]).filter(erPublisert).map((r) => r.kode);
   const planerIBruk = [...new Set(vgs.flatMap((o) => ((o['laereplan-referanse'] ?? []) as { kode: string; 'url-data'?: string }[]).filter((l) => l['url-data']?.includes('/laereplaner-lk20/')).map((l) => l.kode)))];
   const kjentePlaner = new Set(planliste.map((p) => p.kode));
   const fagkodeliste = [...new Set([...vgs.flatMap((o) => referanser(o, 'fagkode-referanser')), ...grunnlag().arstimeKoder, ...Object.values(fagkoder).flatMap((l) => l.map(([k]) => k))])].sort();
-  const fagdetaljer = await hentAlle('fagkoder', fagkodeliste);
-  const planer = await hentAlle('laereplaner-lk20', planerIBruk.filter((k) => kjentePlaner.has(k)).sort());
+  const fagdetaljer = await hentAlle('fagkoder', fagkodeliste, sistEndretFra(fagliste));
+  const planer = await hentAlle('laereplaner-lk20', planerIBruk.filter((k) => kjentePlaner.has(k)).sort(), sistEndretFra(planliste));
 
   const raa: Raadata = {
     utdanningsprogram,
@@ -239,9 +278,14 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   };
   const hentet = new Date().toISOString();
   const indeks = byggFagindeks(raa, hentet);
-  raa.kompetansemaalsett = await hentAlle('kompetansemaalsett-lk20', laereplankoder(indeks).kompetansemaalsett);
+  raa.kompetansemaalsett = await hentAlle('kompetansemaalsett-lk20', laereplankoder(indeks).kompetansemaalsett, sistEndretFra(maalsettliste));
   const laereplaner = new Map(laereplankoder(indeks).laereplaner.map((k) => [k, byggLaereplan(planer.get(k) as Grepelement, raa.kompetansemaalsett)]));
   validerFagdata(indeks, laereplaner);
+  // Hentingen er fullført: elementer som ikke lenger er i bruk, fjernes fra lageret.
+  const forBeskjaering = Object.keys(lager).length;
+  lager = beskjaer(lager, brukt);
+  if (Object.keys(lager).length !== forBeskjaering) ulagret += 1;
+  lagreLager();
 
   // Fagsøket i kalkulatorene bygges fra fagindeksen (virtual:fagsok). Årstimene sjekkes her, så en henting uten
   // tall ikke tas inn. Eksamenskoder og fag i læretiden har ikke årstimer i Grep, så omtrent halvparten mangler tall.
