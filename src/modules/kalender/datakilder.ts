@@ -76,6 +76,14 @@ export function harSkolerute(data: Skoleruter | null, fylke: string | null): boo
 
 const INNTAKSGRUPPE: Partial<Record<Inntaksfelt, 'fortrinnsrett'>> = { fortrinnsinntak: 'fortrinnsrett', 'svarfrist-fortrinn': 'fortrinnsrett' };
 
+/** Svarfristen som hører til hvert inntak. */
+const SVARFRIST_FOR: Partial<Record<Inntaksfelt, Inntaksfelt>> = {
+  fortrinnsinntak: 'svarfrist-fortrinn',
+  'forste-inntak': 'svarfrist-forste',
+  'andre-inntak': 'svarfrist-andre',
+  'tredje-inntak': 'svarfrist-tredje',
+};
+
 /**
  * Fylkets datoer for svar og inntak (grunnlag: praksis). Bare når fylket er valgt. En dato som er omtrentlig eller
  * bare gitt som uke, står med «ca.» eller uken ved tittelen. Frister som bare er gitt relativt («5 dager etter
@@ -87,7 +95,13 @@ export function inntakOppforinger(data: Inntaksdatoer | null, fylke: string | nu
   return Object.entries(aar).flatMap(([inntaksaar, felter]) =>
     (Object.entries(felter) as [Inntaksfelt, NonNullable<(typeof felter)[Inntaksfelt]>][]).flatMap(([felt, d]) => {
       if (!d.fra) return [];
-      const kilder = d.kilder.flatMap((k) => {
+      const kildeIder = [...d.kilder];
+      // En svarfrist som bare er gitt relativt («ca. 1 uke etter inntaket»), står i teksten til inntaket den hører til.
+      const svarfrist = SVARFRIST_FOR[felt];
+      const relativ = svarfrist ? felter[svarfrist] : undefined;
+      const medRelativ = relativ && !relativ.fra && relativ.relativ ? relativ : null;
+      if (medRelativ) kildeIder.push(...medRelativ.kilder.filter((k) => !kildeIder.includes(k)));
+      const kilder = kildeIder.flatMap((k) => {
         const kilde = data.kilder[k];
         return kilde ? [{ id: 'inntaksdatoer', punkt: kilde.navn, url: kilde.url }] : [];
       });
@@ -96,7 +110,12 @@ export function inntakOppforinger(data: Inntaksdatoer | null, fylke: string | nu
         {
           id: `inntak-${fylke}-${inntaksaar}-${felt}`,
           tittel: begge((m) => hentTekst(m, `kalender.inntak.felt.${felt}`)),
-          tekst: begge((m) => `<p>${escape(hentTekst(m, 'kalender.inntak.fraFylket'))}</p><blockquote><p>${escape(d.tekst)}</p></blockquote>`),
+          tekst: begge(
+            (m) =>
+              `<p>${escape(hentTekst(m, 'kalender.inntak.fraFylket'))}</p><blockquote><p>${escape(d.tekst)}</p>${medRelativ ? `<p>${escape(medRelativ.tekst)}</p>` : ''}</blockquote>${
+                medRelativ ? `<p>${escape(hentTekst(m, 'kalender.inntak.svarfrist', { frist: medRelativ.relativ ?? '' }))}</p>` : ''
+              }`,
+          ),
           ...(naar ? { naar } : {}),
           tema: ['inntak'],
           grupper: [INNTAKSGRUPPE[felt] ?? 'elever'],

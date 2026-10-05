@@ -4,7 +4,7 @@
 import type { Malform } from '../../core/i18n/tekst.ts';
 import type { Frist } from '../../core/innhold/skjema.ts';
 import { velgSynlige, type Sted } from '../../core/innhold/status.ts';
-import { lastKommende, lastSkoleruter } from '../../data/kalender.ts';
+import { lastInntaksdatoer, lastKommende, lastSkoleruter } from '../../data/kalender.ts';
 import { lastEksamensdatoer } from '../../data/eksamen.ts';
 import { lastOversikt } from '../lov/data.ts';
 import type { Eksamensdatoer } from '../vurdering/eksamen/skjema.ts';
@@ -28,10 +28,11 @@ const ellerNull = <T>(p: Promise<T>): Promise<T | null> => p.catch(() => null);
 
 /** Alle dataene. En datafil som ikke kan lastes, gir null, og resten vises likevel. */
 export async function hentKalenderdata(): Promise<Kalenderdata> {
-  const [frister, eksamen, skolerute, kommende, oversikt] = await Promise.all([
+  const [frister, eksamen, skolerute, inntak, kommende, oversikt] = await Promise.all([
     hentAlleFrister(),
     ellerNull(lastEksamensdatoer()),
     ellerNull(lastSkoleruter()),
+    ellerNull(lastInntaksdatoer()),
     ellerNull(lastKommende()),
     ellerNull(lastOversikt()),
   ]);
@@ -42,7 +43,7 @@ export async function hentKalenderdata(): Promise<Kalenderdata> {
     const tittel = m === 'nn' && d.korttittelNn ? d.korttittelNn : d.korttittel;
     return tittel.charAt(0).toLowerCase() + tittel.slice(1);
   };
-  return { frister, eksamen, skolerute, inntak: null, kommende, navn };
+  return { frister, eksamen, skolerute, inntak, kommende, navn };
 }
 
 export interface Kalenderinnhold {

@@ -63,6 +63,7 @@ export const kalenderNb = {
     fraFylket: 'Fra fylkeskommunens side:',
     uke: 'uke {uke}',
     omtrent: 'omtrent',
+    svarfrist: 'Svarfristen er {frist}.',
     felt: {
       fortrinnsinntak: 'Svar på søknad om fortrinnsrett',
       'svarfrist-fortrinn': 'Svarfrist etter fortrinnsinntaket',
