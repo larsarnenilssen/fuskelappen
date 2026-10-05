@@ -1,0 +1,1620 @@
+{
+ "id": "trondelag-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift for inntak og formidling, Trøndelag fylkeskommune",
+ "korttittel": "Inntak og formidling i Trøndelag",
+ "malform": "nb",
+ "refid": "forskrift/2025-10-16-2497",
+ "sistEndret": null,
+ "iKraft": "2026-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "50"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift for inntak og formidling, Trøndelag fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "0",
+     "visNr": "§ 0",
+     "tittel": "Formål og hjemmel",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med lokal forskrift er å ivareta rettssikkerheten for elever, deltakere, lærlinger, lærekandidater og praksisbrevkandidater i Trøndelag."
+       ]
+      },
+      {
+       "tekst": [
+        "Fastsatt av fylkestinget i Trøndelag 16. oktober 2025 i henhold til ",
+        {
+         "t": "forskrift 3. juni 2024 nr. 900 om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta) § 4-5",
+         "l": "forskrift/2024-06-03-900/§4-5",
+         "a": "opplaeringsforskrifta/4-5"
+        },
+        " og ",
+        {
+         "t": "lov 9. juni 2023 nr. 30 om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)",
+         "l": "lov/2023-06-09-30"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Inntak av ungdom",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-1",
+     "visNr": "§ 1-1",
+     "tittel": "Karakterbasert inntak i regioner",
+     "ledd": [
+      {
+       "tekst": [
+        "Trøndelag fylkeskommune har en ordning med karakterbasert inntak i regioner."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaksregionene er region Trøndelag sør, region Fosen, region Innherred-Værnes, region Namdal, og region Trondheim."
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Region Trøndelag sør omfatter kommunene Frøya, Hitra, Heim, Rindal, Orkland, Skaun, Melhus, Midtre Gauldal, Rennebu, Oppdal, Holtålen, og Røros."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Region Fosen omfatter kommunene Indre Fosen, Ørland, Åfjord og Osen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Region Innherred-Værnes omfatter kommunene Steinkjer, Inderøy, Verdal, Levanger, Frosta, Meråker, Stjørdal, Selbu, Malvik og Tydal."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Region Namdal omfatter kommunene Snåsa, Grong, Lierne, Røyrvik, Namsskogan, Høylandet, Overhalla, Namsos, Flatanger, Nærøysund og Leka."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Region Trondheim omfatter Trondheim kommune."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Alle søkere konkurrerer på utdanningsprogram/programområde på bakgrunn av standpunkt- og eksamenskarakterer. Deretter blir det tatt hensyn til karakterbasert inntak i regioner. Søkere tilhørende regionen tas inn til skolen før søkere tilhørende andre regioner. Dersom tilbudet søkeren søker ikke finnes i regionen søkeren tilhører, så vil søkeren bli behandlet som tilhørende i den regionen/de regionene som har tilbudet søkeren har søkt."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som søker skoler i sin region og ikke konkurrerer seg inn der, vil få et tilbud fortrinnsvis på en annen skole i regionen deretter på en annen skole i Trøndelag."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket til International Baccalaureate (IB) som gir generell studiekompetanse og grunnlag for inntak til universiteter og høyskoler over hele verden foretas av Trondheim Katedralskole."
+       ]
+      },
+      {
+       "tekst": [
+        "Utfyllende informasjon knyttet til karakterbasert inntak i regioner, herunder unntaksbestemmelser og definisjoner av regiontilhørighet, finnes i eget rundskriv som utarbeides av Fylkesdirektøren i forkant av hvert inntak."
+       ]
+      },
+      {
+       "tekst": [
+        "Unntak fra prinsippet om karakterbasert inntak i regioner:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det er karakterbasert inntak i hele fylket til følgende utdanningsprogrammer og programområder:"
+           ],
+           "liste": [
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Entreprenørskapslinja"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Frisør, blomster, interiør og eksponeringsdesign"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Informasjonsteknologi og medieproduksjon"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Idrettsfag"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Kunst, design og arkitektur"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Medier og kommunikasjon"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Naturbruk"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Restaurant- og matfag"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere med behov for plassering på spesielt tilrettelagte skoler, vil få et tilbud uavhengig av reglene om karakterbasert inntak i regioner."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkesdirektøren gir utfyllende bestemmelser i eget rundskriv."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-2",
+     "visNr": "§ 1-2",
+     "tittel": "Krav til søknader om inntak",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søknad til videregående trinn 1:"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til videregående trinn 1 må føre opp tre alternative utdanningsprogram på videregående trinn 1 i prioritert rekkefølge, jf. ",
+        {
+         "t": "§ 4-7",
+         "l": "forskrift/2024-06-03-900/§4-7",
+         "a": "opplaeringsforskrifta/4-7"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Søkere som ikke fører opp tre alternative utdanningsprogram kan få tilbud på et utdanningsprogram de ikke har søkt."
+       ],
+       "liste": [
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søknad til videregående trinn 2 og 3:"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til videregående trinn 2 og trinn 3 må føre opp ett eller flere programområder som bygger på et utdanningsprogram eller programområde de har gjennomført, jf. ",
+        {
+         "t": "§ 4-7",
+         "l": "forskrift/2024-06-03-900/§4-7",
+         "a": "opplaeringsforskrifta/4-7"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Søkere kan få tilbud på et programområde de ikke har søkt, som bygger på gjennomført videregående trinn 1 eller trinn 2."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-3",
+     "visNr": "§ 1-3",
+     "tittel": "Inntak til videregående trinn 1",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har vitnemål for fullført norsk grunnskole eller dokumentasjon på tilsvarende opplæring, jf. ",
+        {
+         "t": "§ 4-1",
+         "l": "forskrift/2024-06-03-900/§4-1",
+         "a": "opplaeringsforskrifta/4-1"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ", skal tas inn til videregående trinn 1, jf. ",
+        {
+         "t": "§ 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Inntaket foretas på bakgrunn av standpunkt- og eksamenskarakterer fra grunnskolen (heretter kalt utregnet poengsum), jf. ",
+        {
+         "t": "§§ 4-18",
+         "l": "forskrift/2024-06-03-900/§4-18",
+         "a": "opplaeringsforskrifta/4-18"
+        },
+        " og ",
+        {
+         "t": "4-19",
+         "l": "forskrift/2024-06-03-900/§4-19",
+         "a": "opplaeringsforskrifta/4-19"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ", og geografisk tilhørighet."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere har ikke rett til inntak på en bestemt skole, retten er på ett av tre søkte utdanningsprogram, jf. ",
+        {
+         "t": "§ 1-2",
+         "l": "forskrift/2025-10-16-2497/§1-2",
+         "a": "trondelag-inntak/1-2"
+        },
+        ", forskrift om inntak og formidling, Trøndelag."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-4",
+     "visNr": "§ 1-4",
+     "tittel": "Inntak til videregående trinn 2 og trinn 3",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har bestått alle fag som er fastsatt i læreplanverket for utdanningsprogrammet/ programområdet, skal tas inn til videregående trinn 2 eller trinn 3, jf. ",
+        {
+         "t": "§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Utregning av poengsum for inntaket foretas på bakgrunn av standpunktkarakterer, eksamenskarakterer og halvårsvurderinger med karakter i fagene på videregående trinn 1 og eventuelt videregående trinn 2, jf. ",
+        {
+         "t": "§§ 4-24",
+         "l": "forskrift/2024-06-03-900/§4-24",
+         "a": "opplaeringsforskrifta/4-24"
+        },
+        " og ",
+        {
+         "t": "4-25",
+         "l": "forskrift/2024-06-03-900/§4-25",
+         "a": "opplaeringsforskrifta/4-25"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ", og geografisk tilhørighet."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom søker ikke kommer inn på noen av sine søkte programområder og skoler, vil søkeren få tilbud om et annet programområde og eventuelt skole søker er kvalifisert for, jf. ",
+        {
+         "t": "§ 1-2",
+         "l": "forskrift/2025-10-16-2497/§1-2",
+         "a": "trondelag-inntak/1-2"
+        },
+        ", forskrift om inntak og formidling, Trøndelag."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-5",
+     "visNr": "§ 1-5",
+     "tittel": "Inntak til videregående trinn 2: idrettsfag / kunst, arkitektur og design / medier og kommunikasjon / musikk, dans og drama / studiespesialisering",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom søkeren er kvalifisert etter ",
+        {
+         "t": "forskrift til opplæringsloven §§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ", ",
+        {
+         "t": "4-25",
+         "l": "forskrift/2024-06-03-900/§4-25",
+         "a": "opplaeringsforskrifta/4-25"
+        },
+        " og ",
+        {
+         "t": "4-26",
+         "l": "forskrift/2024-06-03-900/§4-26",
+         "a": "opplaeringsforskrifta/4-26"
+        },
+        ", har søkeren rett til å fortsette på samme skole hvor videregående trinn 1 er gjennomført."
+       ]
+      },
+      {
+       "tekst": [
+        "Forutsetningen er at det søkes om inntak påfølgende skoleår, og at den skolen videregående trinn 1 ble gjennomført ved, er søkerens førsteønske."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-6",
+     "visNr": "§ 1-6",
+     "tittel": "Inntak til videregående trinn 3: idrettsfag / kunst, arkitektur og design / medier og kommunikasjon / musikk, dans og drama / studiespesialisering",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom søkeren er kvalifisert som fulltidselev etter ",
+        {
+         "t": "forskrift til opplæringsloven §§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ", ",
+        {
+         "t": "4-25",
+         "l": "forskrift/2024-06-03-900/§4-25",
+         "a": "opplaeringsforskrifta/4-25"
+        },
+        " og ",
+        {
+         "t": "4-26",
+         "l": "forskrift/2024-06-03-900/§4-26",
+         "a": "opplaeringsforskrifta/4-26"
+        },
+        ", har søkeren rett til å fortsette på samme skole hvor videregående trinn 2 er fullført. Forutsetningen er at det søkes om inntak påfølgende år, og at den skolen videregående trinn 2 ble fullført på, er søkerens førsteønske."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-7",
+     "visNr": "§ 1-7",
+     "tittel": "Vurdering av om søker er kvalifisert for inntak til neste trinn",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere skal i henhold til ",
+        {
+         "t": "§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        " ha bestått i alle fag som er fastsatt i læreplanverket også i fag hvor det ikke settes standpunktkarakter, eksamenskarakterer og halvårsvurderinger."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med tre eller flere fag med karakteren 1 / ikke-vurdering fra videregående trinn 1 deltar ikke i inntaket til videregående trinn 2."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med tre eller flere fag med karakteren 1 / ikke-vurdering fra videregående trinn 2 deltar ikke i inntaket til videregående trinn 3."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis søker har tre eller flere fag med karakteren 1 / ikke-vurdering kan rektor ved avgiverskolen gi tilrådning om at søkeren skal delta i inntaket. En slik tilråding fra rektor vil kun gjelde på samme skole. Det er fylkesdirektøren som fatter vedtak om søker er kvalifisert for neste trinn, jf. ",
+        {
+         "t": "§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringslova",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med tre eller flere fag med karakteren 1 / ikke-vurdering, og som ikke kan tas inn til fullstendig programområde på neste videregående trinn, returneres til avgiverskolen. Det er rektor ved avgiverskolen som står ansvarlig for at søkeren får et tilbud om opplæring knyttet til et programområde/utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "En søker som har vært elev i videregående opplæring i utlandet, må dokumentere at fagene som tilsvarer det elever på samme videregående trinn har fulgt i Norge, er bestått. Det må gå fram av dokumentasjonen hvilken vurderings- eller karakterskala som benyttes og hva som er beståttkravet i henhold til gjeldende vurderingsordning. Søkeren har ansvar for å dokumenter innholdet i faga. Dette gjøres ved at læreplanen i faga må framvises til rektor ved skolen det søkes til. Læreplanen må være oversatt til norsk eller engelsk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-8",
+     "visNr": "§ 1-8",
+     "tittel": "Inntak til videregående trinn 1 musikk, dans og drama",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntil 50 % av plassene på Cissi Klein videregående skole, Heimdal videregående skole, Trondheim katedralskole, Ole Vig videregående skole og Olav Duun videregående skole, kan tildeles på grunnlag av inntaksprøve, i tillegg til karakterpoeng, jf. ",
+        {
+         "t": "§ 4-6",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som har videregående trinn 1 musikk, dans og drama som første utdanningsprogram kan få vurdert inntak på grunnlag av inntaksprøve, i tillegg til karakterpoeng, på første skoleønske. Det gis 0, 7 eller 15 tilleggspoeng etter inntaksprøven med en vurdering av søkerens ferdigheter og/eller forutsetninger."
+       ]
+      },
+      {
+       "tekst": [
+        "Under inntaksprøve må søkeren vise sine ferdigheter og forutsetninger individuelt. Det gjennomføres en samtale om ferdigheter og forutsetninger. Søkeren kan få beskjed om å forberede noe konkret i forkant av inntaksprøven."
+       ]
+      },
+      {
+       "tekst": [
+        "Vurdering av ferdigheter og forutsetninger er delegert til rektor ved den aktuelle skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-9",
+     "visNr": "§ 1-9",
+     "tittel": "Inntak til videregående trinn 1 idrettsfag",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntil 50 % av plassene på alle fylkeskommunale videregående skoler som tilbyr vg1 idrettsfag, kan tildeles på grunnlag av dokumenterte ferdigheter, i tillegg til karakterpoeng, jf. ",
+        {
+         "t": "§ 4-6",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som har videregående trinn 1 idrettsfag som første utdanningsprogram kan få vurdert inntak på dokumenterte ferdigheter, i tillegg til karakterpoeng, på første skoleønske."
+       ]
+      },
+      {
+       "tekst": [
+        "Det gis 0, 7 eller 15 poeng til de som søker om vurdering av ferdigheter i tillegg til karakterpoeng. 7 poeng gis til søkere på kretsnivå og 15 poeng gis til søkere på nasjonalt nivå. Søker må ha bekreftelse fra forbund/krets på enten landslagsnivå eller kretsnivå."
+       ]
+      },
+      {
+       "tekst": [
+        "For idretter som ikke er organisert med landslag/krets må søker legge med dokumentasjon fra særforbund, nasjonalt eller regionalt, som beskriver hvilket nivå søker er på."
+       ]
+      },
+      {
+       "tekst": [
+        "Resultat fra konkurranse på nasjonalt eller regionalt nivå kan vektlegges for søkere som ikke er på kretslag eller landslag."
+       ]
+      },
+      {
+       "tekst": [
+        "Vurdering av dokumenterte ferdigheter er delegert til rektor ved den aktuelle skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-10",
+     "visNr": "§ 1-10",
+     "tittel": "Inntak til yrkesfaglig studiekompetanse (YSK)",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til søkere til YSK foretas på bakgrunn av karakterer og intervju, jamfør ",
+        {
+         "t": "§§ 4-5",
+         "l": "forskrift/2024-06-03-900/§4-5",
+         "a": "opplaeringsforskrifta/4-5"
+        },
+        " c og ",
+        {
+         "t": "4-6",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        " andre ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "Det vil bli lagt avgjørende vekt på intervjuet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-11",
+     "visNr": "§ 1-11",
+     "tittel": "Søknad og rekkefølge ved inntak til statlige skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra hele landet konkurrerer likt ved inntaket for søkere til statlige skoler, jf. ",
+        {
+         "t": "§ 4-15",
+         "l": "forskrift/2024-06-03-900/§4-15",
+         "a": "opplaeringsforskrifta/4-15"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Dette gjelder to statlige samiske skoler og statens skoler med utdanningsprogram for naturbruk."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknad om skoleplass ved statlige videregående skoler skal sendes fylket hvor skolen ligger."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-12",
+     "visNr": "§ 1-12",
+     "tittel": "Søknad og rekkefølge ved inntak til landslinjer",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra hele landet konkurrerer likt ved inntaket til landslinjer, jf. ",
+        {
+         "t": "§ 4-16",
+         "l": "forskrift/2024-06-03-900/§4-16",
+         "a": "opplaeringsforskrifta/4-16"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket til landslinjer skjer på grunnlag av poengsum utregna etter ",
+        {
+         "t": "§§ 4-18",
+         "l": "forskrift/2024-06-03-900/§4-18",
+         "a": "opplaeringsforskrifta/4-18"
+        },
+        ", ",
+        {
+         "t": "4-19",
+         "l": "forskrift/2024-06-03-900/§4-19",
+         "a": "opplaeringsforskrifta/4-19"
+        },
+        ", ",
+        {
+         "t": "4-24",
+         "l": "forskrift/2024-06-03-900/§4-24",
+         "a": "opplaeringsforskrifta/4-24"
+        },
+        " og ",
+        {
+         "t": "4-25",
+         "l": "forskrift/2024-06-03-900/§4-25",
+         "a": "opplaeringsforskrifta/4-25"
+        },
+        ". Søknad om skoleplass ved landslinjer skal sendes fylket der søker er folkeregistrert, jf. ",
+        {
+         "t": "§ 4-8",
+         "l": "forskrift/2024-06-03-900/§4-8",
+         "a": "opplaeringsforskrifta/4-8"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-13",
+     "visNr": "§ 1-13",
+     "tittel": "Søknad og rekkefølge ved inntak til landsdekkende",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra hele landet konkurrerer likt ved inntaket til landsdekkende, jf. ",
+        {
+         "t": "§ 4-5",
+         "l": "forskrift/2024-06-03-900/§4-5",
+         "a": "opplaeringsforskrifta/4-5"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket til landsdekkende skjer på grunnlag av poengsum utregna etter ",
+        {
+         "t": "§§ 4-18",
+         "l": "forskrift/2024-06-03-900/§4-18",
+         "a": "opplaeringsforskrifta/4-18"
+        },
+        ", ",
+        {
+         "t": "4-19",
+         "l": "forskrift/2024-06-03-900/§4-19",
+         "a": "opplaeringsforskrifta/4-19"
+        },
+        ", ",
+        {
+         "t": "4-24",
+         "l": "forskrift/2024-06-03-900/§4-24",
+         "a": "opplaeringsforskrifta/4-24"
+        },
+        " og ",
+        {
+         "t": "4-25",
+         "l": "forskrift/2024-06-03-900/§4-25",
+         "a": "opplaeringsforskrifta/4-25"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknad om skoleplass ved landsdekkende skal sendes fylket der søker er folkeregistrert."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-14",
+     "visNr": "§ 1-14",
+     "tittel": "Plasser til utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Utvekslingselever fra andre land"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Utvekslingselever fra andre land er elever som tar videregående opplæring i Norge, som ledd i elevutveksling, gjennom en godkjent utvekslingsorganisasjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen skal reservere plasser til utvekslingselever fra andre land, jf. ",
+        {
+         "t": "§ 4-4",
+         "l": "forskrift/2024-06-03-900/§4-4",
+         "a": "opplaeringsforskrifta/4-4"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Utvekslingselever fra andre land skal ikke trenge å konkurrere seg inn, men de har ikke rett til inntak på en bestemt skole."
+       ],
+       "liste": [
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere fra Norden"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra andre nordiske land kan søke på samme vilkår som norske søkere (nordisk samarbeid)."
+       ],
+       "liste": [
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Utvekslingselever fra Norge"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Utvekslingselever fra Norge er elever som tar utdanning på trinn med norsk videregående opplæring i utlandet, som ledd i elevutveksling, gjennom en godkjent utvekslingsorganisasjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen skal reservere plasser til utvekslingselever fra Norge, som har tatt videregående trinn 1 eller videregående trinn 2 i utlandet, jf. ",
+        {
+         "t": "§ 4-4",
+         "l": "forskrift/2024-06-03-900/§4-4",
+         "a": "opplaeringsforskrifta/4-4"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Utvekslingselever fra Norge har rett til plass på samme skole som eleven gikk videregående trinn 1 eller videregående trinn 2."
+       ],
+       "liste": [
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Utvekslingselever fra Norge som følger avvikende skoleår"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen reserverer normalt ikke plasser i inntaket til utvekslingselever fra Norge, som har tatt videregående trinn 1 eller videregående trinn 2 i et land med avvikende skoleår, jf. ",
+        {
+         "t": "§ 4-4",
+         "l": "forskrift/2024-06-03-900/§4-4",
+         "a": "opplaeringsforskrifta/4-4"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Rektor ved elevens avgiverskole avgjør om skolen har kapasitet og om det er forsvarlig at utvekslingseleven kan starte når utvekslingsperioden er gjennomført."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-15",
+     "visNr": "§ 1-15",
+     "tittel": "Søkere til et mindre fullstendig utdanningsprogram eller programområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkeren skal tas inn til et fullstendig utdanningsprogram på videregående trinn 1 eller et fullstendig programområde på videregående trinn 2 eller videregående trinn 3. En elev kan søke skolen om å ikke delta i opplæringen i ett eller flere fag for å ta eksamen som privatist. Rektor avgjør om søknad skal innvilges. Søknad kan bare innvilges når det foreligger dokumenterte tungtveiende grunner, jf. ",
+        {
+         "t": "§ 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved omvalg tas eleven inn til et fullstendig utdanningsprogram på videregående trinn 1, eller fullstendig programområde på videregående trinn 2 eller videregående trinn 3 jf. ",
+        {
+         "t": "§ 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        ". Hvis eleven har fått innvilget søknad om omvalg kan eleven velge å ta ett eller flere fellesfag på nytt, eller å søke om godkjenning av faget etter ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". I Trøndelag skal eleven gjøre dette innen 15. september."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-16",
+     "visNr": "§ 1-16",
+     "tittel": "Søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknadsfrist 1. februar for søkere, jf. ",
+        {
+         "t": "§ 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknadsfrist 1. mars for alle andre søkere, jf. ",
+        {
+         "t": "§ 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader som er mottatt etter søknadsfrist, blir tatt med så langt råd er, jf. ",
+        {
+         "t": "§ 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-17",
+     "visNr": "§ 1-17",
+     "tittel": "Flytting og hvor søknaden om inntak skal sendes",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkers hjemfylke er det fylket der søker er registrert som bosatt per 1. januar det året opplæringa tar til, jf. ",
+        {
+         "t": "§ 22-1",
+         "l": "forskrift/2024-06-03-900/§22-1",
+         "a": "opplaeringsforskrifta/22-1"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For å ha rett til videregående opplæring i Trøndelag fylkeskommune må søkeren være folkeregistret i Trøndelag pr. 1. mars det året opplæringa tar til."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som flytter sammen med foresatte, må ha godkjent flyttemelding fra folkeregisteret senest 1. juni i det året opplæringa tar til, dersom søkeren skal ha rett til videregående opplæring i Trøndelag. Dokumentasjon på at foresatte har inngått arbeidskontrakt eller leie-/kjøpekontrakt av bolig for søker og foresatte i Trøndelag, kan vurderes som tilsvarende godkjent flyttemelding."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved flytting mellom foresatte når minst en av de foresatte er bosatt i Trøndelag, kan det benyttes eget skjema for flytting."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-18",
+     "visNr": "§ 1-18",
+     "tittel": "Søknad om overgang mellom studieforberedende utdanningsprogram",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad om inntak til studieforberedende utdanningsprogram som normalt ikke omfattes av ",
+        {
+         "t": "opplæringsloven § 5-4",
+         "l": "lov/2023-06-09-30/§5-4",
+         "a": "opplaeringslova/5-4"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Det kan åpnes for å ta søkere fra et studieforberedende utdanningsprogram til neste videregående trinn i et annet studieforberedende utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "Disse søkerne tas inn dersom det er ledige plasser på det søkte utdanningsprogrammet. Dersom søkeren tar nødvendige fag som privatist og består fagene før inntaket, konkurrerer søker på like vilkår med søkere som følger ordinært opplæringsløp."
+       ]
+      },
+      {
+       "tekst": [
+        "Bytte mellom studieforberedende utdanningsprogrammer må skje innenfor rammen av ",
+        {
+         "t": "opplæringslovens § 5-4",
+         "l": "lov/2023-06-09-30/§5-4",
+         "a": "opplaeringslova/5-4"
+        },
+        " om innhold, vurdering og dokumentasjon i den videregående opplæringen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-19",
+     "visNr": "§ 1-19",
+     "tittel": "Søkere som har som har fullført og bestått opplæring etter § 5-1 og § 5-2",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere mellom 19 og 24 år som har fullført og bestått opplæring etter ",
+        {
+         "t": "§ 5-2",
+         "l": "lov/2023-06-09-30/§5-2",
+         "a": "opplaeringslova/5-2"
+        },
+        " i ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        ", tas ikke inn etter ",
+        {
+         "t": "§ 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " til ny sluttkompetanse."
+       ]
+      },
+      {
+       "tekst": [
+        "Dette gjelder ikke søkere som har rett til påbygging til generell studiekompetanse etter ",
+        {
+         "t": "§ 5-7",
+         "l": "lov/2023-06-09-30/§5-7",
+         "a": "opplaeringslova/5-7"
+        },
+        " i ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-20",
+     "visNr": "§ 1-20",
+     "tittel": "Søkere med ungdomsrett og samarbeidsavtaler med andre fylkeskommuner",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkerne søker i samsvar med samarbeidsavtalene med andre fylkeskommuner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Inntak av voksne",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere skal sende søknaden til fylkeskommunen i fylket de er folkeregistrerte. Søkere som kan dokumentere at de planlegger å flytte, sender søknaden til det fylket de skal flytte til."
+       ]
+      },
+      {
+       "tekst": [
+        "Voksne kan ikke søke opplæring etter ",
+        {
+         "t": "opplæringsloven kapittel 5",
+         "l": "lov/2023-06-09-30/kap5"
+        },
+        " Inntak til videregående opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere mellom 19 og 24 år som har fullført og bestått opplæring etter ",
+        {
+         "t": "§ 5-2",
+         "l": "lov/2023-06-09-30/§5-2",
+         "a": "opplaeringslova/5-2"
+        },
+        " i ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        ", tas ikke inn etter ",
+        {
+         "t": "§ 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " til ny sluttkompetanse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-1",
+     "visNr": "§ 2-1",
+     "tittel": "Retten til videregående opplæring for voksen",
+     "ledd": [
+      {
+       "tekst": [
+        "Etter ",
+        {
+         "t": "opplæringsloven § 18-3",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        " har voksne rett til å komme inn på én av tre søkte sluttkompetanser innenfor det fylkeskommunen tilbyr i videregående opplæring for voksne. Du kan søke videregående opplæring for voksne fra og med det året du fyller 19 år."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-2",
+     "visNr": "§ 2-2",
+     "tittel": "Rangering av søkere",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntaksrekkefølge framgår av forskrift til ",
+        {
+         "t": "opplæringslov § 13-4",
+         "l": "lov/2023-06-09-30/§13-4",
+         "a": "opplaeringslova/13-4"
+        },
+        ". Dersom det melder seg flere søkere enn det er plass til, rangeres søkerne etter søknadsdato, slik at tidlig søknadsdato rangeres først."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-3",
+     "visNr": "§ 2-3",
+     "tittel": "Yrkesfaglig rekvalifisering",
+     "ledd": [
+      {
+       "tekst": [
+        "Rett til yrkesfaglig rekvalifisering gjelder for de som allerede har en fullført sluttkompetanse, og ikke lenger har rett etter § 5-1 eller § 18-3."
+       ]
+      },
+      {
+       "tekst": [
+        "Trøndelag fylkeskommune gir ikke opplæring utover to oppnådde sluttkompetanser. Søkere med yrkesfaglig rekvalifiseringsrett, som har avtale med en godkjent lærebedrift, må søke i søknadsportalen for voksne."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-4",
+     "visNr": "§ 2-4",
+     "tittel": "Oppflytting til neste nivå",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med tre eller flere fag med karakteren 1 / ikke-vurdering fra videregående trinn 1 deltar ikke i inntaket til videregående trinn 2."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med tre eller flere fag med karakteren 1 / ikke-vurdering fra videregående trinn 2 deltar ikke i inntaket til videregående trinn 3."
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis søker har tre eller flere fag med karakteren 1 / ikke-vurdering kan rektor gi tilrådning om at søkeren skal delta i inntaket. En slik tilråding fra rektor vil kun gjelde på samme skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-5",
+     "visNr": "§ 2-5",
+     "tittel": "Kjøp/salg av plasser",
+     "ledd": [
+      {
+       "tekst": [
+        "Aktuell søker må søke opplæring via sitt bostedsfylke. Bostedsfylket avgjør om de ønsker å kjøpe opplæringsplass i Trøndelag fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Trøndelag fylkeskommune har ikke plikt til å tilby opplæring til søkere fra andre fylkeskommuner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-6",
+     "visNr": "§ 2-6",
+     "tittel": "Oppholdstillatelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som kan dokumentere at de har gyldig opphold i landet, kan gis rett til videregående opplæring for voksne og tilbud om skoleplass."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som venter på svar på søknad om fornyelse av oppholdstillatelse, kan også gis rett til videregående opplæring for voksne og tilbud om inntak. Disse søkerne må dokumentere at de har sendt inn søknad om fornyelse av opphold."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Formidling",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-1",
+     "visNr": "§ 3-1",
+     "tittel": "Søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknadsfristen er 1. februar for søkere etter ",
+        {
+         "t": "forskrift til opplæringsloven § 7-5, bokstav a",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        " og 1. mars for søkere etter ",
+        {
+         "t": "forskrift til opplæringsloven § 7-5 bokstav b",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        ". Dersom søknadsfristen faller på en lørdag eller søndag er fristen første arbeidsdag."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader som er mottatt etter søknadsfrist blir tatt med så langt råd er, hvis ikke varsles søkeren jf. ",
+        {
+         "t": "§ 7-5 andre ledd",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        ". Dette gjelder også ønske om endring av tidligere levert søknad. For søkere som ikke har bestått fag-/svenneprøven eller er formidlet gjennom oppfølgingstjenesten gjelder ikke fristen i denne paragrafen."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkesdirektøren kan gi utfyllende bestemmelser i eget rundskriv."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-2",
+     "visNr": "§ 3-2",
+     "tittel": "Formidling",
+     "ledd": [
+      {
+       "tekst": [
+        "Formidling søkes etter ",
+        {
+         "t": "forskrift til opplæringsloven § 7-1",
+         "l": "forskrift/2024-06-03-900/§7-1",
+         "a": "opplaeringsforskrifta/7-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkeren må oppfylle vilkåra for inntak på videregående trinn 3 jamfør ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        " eller ",
+        {
+         "t": "forskrift til opplæringsloven § 13-6",
+         "l": "forskrift/2024-06-03-900/§13-6",
+         "a": "opplaeringsforskrifta/13-6"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med inntil to fag med karakteren 1 / ikke-vurdering samlet for videregående trinn 1 og 2 deltar i formidlingen, dersom de samlet sett har faglige forutsetninger jamfør ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13 sjette ledd",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Etter tilråding fra rektor ved avgiverskolen er det fylkesdirektøren som fatter vedtak om søker er kvalifisert for neste nivå, jamfør ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Skolen sender inn skjema underskrevet av søkeren og skolen hvor skolens tilrådning kommer frem."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til læreplass som ikke kan formidles returneres til avgiverskolen. Det er avgiverskolen som står ansvarlig for at søkeren får et tilbud om opplæring knyttet til et programområde/utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som hører hjemme i andre fylker tas ut av formidlingen ved søknadsfristens utløp, med mindre de kan dokumentere flytting jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 7-4",
+         "l": "forskrift/2024-06-03-900/§7-4",
+         "a": "opplaeringsforskrifta/7-4"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Lærekandidater følger formidlingsprosessen for lærlinger."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-3",
+     "visNr": "§ 3-3",
+     "tittel": "Inntak og formidling til praksisbrev",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad til praksisbrev er regulert i ",
+        {
+         "t": "forskrift til opplæringsloven § 7-1",
+         "l": "forskrift/2024-06-03-900/§7-1",
+         "a": "opplaeringsforskrifta/7-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak av søkere til praksisbrev foretas på bakgrunn av karakterer og intervju. Det vil bli lagt avgjørende vekt på intervjuet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Felles bestemmelser",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-1",
+     "visNr": "§ 4-1",
+     "tittel": "Rundskriv",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektøren kan gi utfyllende bestemmelser til forskriftens paragrafer i egne rundskriv."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-2",
+     "visNr": "§ 4-2",
+     "tittel": "Avvik fra bestemmelse i lokal forskrift om inntak og formidling",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektøren kan i særlige tilfeller gi dispensasjon fra bestemmelsene i lokal forskrift."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkesdirektøren gis fullmakt til å kunne korrigere for utilsiktede effekter grunnet omlegging av inntaksordningen. Fylkesdirektøren gir utfyllende bestemmelser i eget rundskriv."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-3",
+     "visNr": "§ 4-3",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i krav 1. januar 2026. Samtidig oppheves ",
+        {
+         "t": "forskrift 16. oktober 2024 nr. 3521 for inntak og formidling, Trøndelag fylkeskommune",
+         "l": "forskrift/2024-10-16-3521"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

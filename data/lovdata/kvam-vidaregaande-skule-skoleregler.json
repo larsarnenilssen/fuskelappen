@@ -1,0 +1,208 @@
+{
+ "id": "kvam-vidaregaande-skule-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om lokale tilleggsreglar for Kvam vidaregåande skule, Vestland fylkeskommune",
+ "korttittel": "Skulereglar ved Kvam vidaregåande skule",
+ "malform": "nn",
+ "refid": "forskrift/2025-01-08-100",
+ "sistEndret": null,
+ "iKraft": "2025-02-28",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-skole",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "46",
+  "skoler": [
+   "974557045"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "KAPITTEL_1",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Skulereglar om bruk av mobiltelefonar og smartklokker for elevar ved Kvam vidaregåande skule",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Dei lokale tilleggsreglane gjeld i det som til ei kvar tid er definert som skuletid, på og utanfor skulen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar har ikkje lov å nytta mobiltelefon i opplæringsøkter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2a",
+     "visNr": "§ 2a",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevane pliktar å ha mobiltelefonen innstilt på lydlaus, ingen varslingar eller flymodus i opplæringsøkter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2b",
+     "visNr": "§ 2b",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevane pliktar å ha mobiltelefonen skjult i sekk, veske, bag eller ytterjakke i opplæringsøkter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2c",
+     "visNr": "§ 2c",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Den tilsette ved skulen som leier opplæringsøkta, kan gjera unntak frå ",
+        {
+         "t": "§ 2a",
+         "l": "forskrift/2025-01-08-100/§2a",
+         "a": "kvam-vidaregaande-skule-skoleregler/2a"
+        },
+        "–",
+        {
+         "t": "§ 2b",
+         "l": "forskrift/2025-01-08-100/§2b",
+         "a": "kvam-vidaregaande-skule-skoleregler/2b"
+        },
+        ", dersom det blir vurdert som tenleg for opplæringa eller i særtilfelle etter dialog med einskildelevar. Elevane pliktar i slike tilfelle å retta seg etter den tilsette sine føringar for aktuell bruk av mobiltelefon."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar har ikkje lov å nytta smartklokker til kommunikasjon i opplæringsøkter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Sanksjonar ved regelbrot",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4a",
+     "visNr": "§ 4a",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Munnleg åtvaring frå tilsett ved skulen. (Denne regelen fell bort frå 1. august 2025.)"
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4b",
+     "visNr": "§ 4b",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Elev får åtferdsmerknad, den tilsette som gjev merknaden skal opplysa eleven om dette innan utgangen av opplæringsøkta der merknad vart gitt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4c",
+     "visNr": "§ 4c",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved gjentatt brot i same opplæringsøkt der dette forstyrrar medelevar si læring, kan den tilsette som leiar opplæringsøkta bortvisa eleven for resten av aktuell opplæringsøkt. Ei bortvising skal følgjast opp av innkalling til ei lærande samtale mellom elev og kontaktlærar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4d",
+     "visNr": "§ 4d",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Etter fem åtferdsmerknader skal eleven få skriftleg varsel om fare for nedsett åtferdskarakter og kallast inn til ei lærande samtale med kontaktlærar. Dersom eleven er mindreårig skal kontaktlærar informera føresette."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4e",
+     "visNr": "§ 4e",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom regelbrot held fram skal eleven kallast inn til ei lærande samtale med kontaktlærar og avdelingsleiar. Dersom eleven er mindreårig skal føresette også kallast inn. Skulen vurderer og avgjer vidare tiltak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

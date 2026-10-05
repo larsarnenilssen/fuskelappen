@@ -1,0 +1,894 @@
+{
+ "id": "agder-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Agder fylkeskommune",
+ "korttittel": "Inntak og formidling i Agder",
+ "malform": "nb",
+ "refid": "forskrift/2024-11-19-3677",
+ "sistEndret": null,
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "42"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Agder fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntaksforskriften skal primært supplere forskrift til ",
+        {
+         "t": "opplæringslovens kapittel 4",
+         "l": "lov/2023-06-09-30/kap4"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaksforskriften skal regulere rettigheter og plikter for søkere til videregående opplæring i Agder, og sikre en rettferdig og forutsigbar inntaksprosess."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaksforskriften skal sikre et miljømessig, sosialt og økonomisk bærekraftig utdanningstilbud for ungdom i Agder. Den skal bidra til bedre levekår og økt gjennomføring av videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Denne forskriften gjelder inntak til offentlige videregående skoler og formidling av lærlinger, lærekandidater og praksisbrevkandidater i Agder etter ",
+        {
+         "t": "opplæringslovens § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ". Inntak og formidling av voksne inngår ikke i virkeområdet for denne forskrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Agder fylkeskommune har inntak etter nærskoleprinsippet",
+     "ledd": [
+      {
+       "tekst": [
+        "I Agder er inntak til videregående skoler karakterbasert, men søkere til Vg1 får i tillegg nærskolepoeng når de søker sin(e) nærskole(r). Dersom en søker et tilbud som ikke finnes på nærskolen, konkurrerer en med nærskolepoeng på alle skoler i Agder som har det aktuelle utdanningsprogrammet."
+       ]
+      },
+      {
+       "tekst": [
+        "Nærskolepoeng blir som hovedregel fordelt ut fra kommunetilhørighet. Matrisen som følger denne forskriften, definerer hva som regnes som nærskole."
+       ]
+      },
+      {
+       "tekst": [
+        "For Vg2 og Vg3 er det som hovedregel karakterbasert inntak i hele fylkeskommunen. Unntak beskrives i egne paragrafer."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren gir utfyllende bestemmelser som kunngjøres på nettstedet www.vilbli.no og fylkeskommunens hjemmeside."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Inntak til Vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Søker må prioritere minst tre utdanningsprogram ved innsøking til Vg1. Søker kan prioritere ulike skoler for hvert utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "Søker som ikke fører opp minst tre forskjellige utdanningsprogram, vil få tilbud om plass på et utdanningsprogram på Vg1 med ledig kapasitet, dersom søker ikke har tilstrekkelige konkurransepoeng til å komme inn på sine prioriterte ønsker."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket foretas på bakgrunn av poengsum (konkurransepoeng) basert på karakterer fra grunnskolen og poeng etter geografisk tilhørighet."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom søker ikke har tilstrekkelige konkurransepoeng til å komme inn på noen av sine prioriterte skoler, vil søker bli søkt videre til andre skoler som tilbyr de prioriterte utdanningsprogrammene."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Inntak av søkere etter § 4-22",
+     "ledd": [
+      {
+       "tekst": [
+        "Flertallet av de videregående skolene i Agder er særskilt tilrettelagt for at elever med sterkt nedsatt funksjonsevne og behov for å gå på en skole som er særskilt tilrettelagt, skal få et individuelt tilpasset opplæringstilbud."
+       ]
+      },
+      {
+       "tekst": [
+        "Nærskoleprinsippet gjelder for alle elever i Agder, også for søkere som får inntak etter ",
+        {
+         "t": "§ 4-22 i forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900/§4-22",
+         "a": "opplaeringsforskrifta/4-22"
+        },
+        ". Den nærmeste skolen som er særskilt tilrettelagt, vil være deres nærskole."
+       ]
+      },
+      {
+       "tekst": [
+        "Agder fylkeskommune gjør individuell vurdering utfra søkers behov og skolenes kapasitet."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere etter ",
+        {
+         "t": "§ 4-22",
+         "l": "forskrift/2024-06-03-900/§4-22",
+         "a": "opplaeringsforskrifta/4-22"
+        },
+        " som har sitt 1. ønske på en skole som ikke kan legge til rette for elever med sterkt nedsatt funksjonsevne, og behov for å gå på en skole som er særskilt tilrettelagt, vil få fortrinn på en skole som kan legge til rette for søkeren på ett av de tre valgte utdanningsprogrammene."
+       ]
+      },
+      {
+       "tekst": [
+        "Har søkeren ikke søkt tre ulike utdanningsprogram står fylkeskommunedirektøren fritt til å plassere søkeren på en særskilt tilrettelagt skole med ledig kapasitet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Individuell søknadsbehandling",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har fått innvilget individuell behandling etter ",
+        {
+         "t": "forskrift til opplæringslovens kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        " har, etter ",
+        {
+         "t": "opplæringsforskriften § 4-20",
+         "l": "forskrift/2024-06-03-900/§4-20",
+         "a": "opplaeringsforskrifta/4-20"
+        },
+        ", rett på skoleplass ved ett av tre søkte utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom søker behandles inn på et lavere prioritert ønske, skal det vurderes individuelt om de skal kunne konkurrere med konkurransepoeng til høyere ønsker enn det ønsket de behandles inn på."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Inntak til Vg1 musikk, dans og drama",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har Vg1 musikk, dans og drama som sitt første ønske, kan fremstille seg til en ferdighetsprøve. Prøven avholdes i den fordypning, og ved den skole, som er satt opp som første ønske."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntil 50 % av plassene kan tildeles søkere som får tilleggspoeng etter ferdighetsprøve. Tilleggspoengene legges til søkers karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som oppfyller kriteriene for tilleggspoeng, men som har folkeregistrert adresse utenfor nærskoleområdet til førsteønskeskolen, vil også få nærskolepoeng på dette ønsket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til Vg1 idrettsfag",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har Vg1 idrettsfag som sitt første ønske, kan på grunnlag av dokumenterte idrettslige ferdigheter, få tilleggspoeng. Søkere som ønsker å bli vurdert for tilleggspoeng, må sende inn eget skjema og dokumentasjon fra idrettskretsen til den skolen som er satt opp som førsteønske."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntil 50 % av plassene kan tildeles søkere som får tilleggspoeng. Tilleggspoengene legges til søkers karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som oppfyller kriteriene for tilleggspoeng, men som har folkeregistrert adresse utenfor nærskoleområdet til førsteønskeskolen, vil også få nærskolepoeng på dette ønsket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til International Baccalaureate Diploma Programme (IB)",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til elektronisk søknad, må det sendes inn en individuell søknad til skolene som har tilbudet innen 1. mars."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolene som har tilbudet, vurderer hvilke søkere som er kvalifiserte og anbefaler hvem som får tilbud. Fylkeskommunedirektøren gir inntak etter innstilling fra skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Overgang fra studieforberedende utdanningsprogram Vg1 til studiespesialisering Vg2",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra Vg1 idrettsfag, Vg1 kunst, design og arkitektur, Vg1 musikk, dans og drama og Vg1 medier og kommunikasjon kan søke overgang til Vg2 studiespesialisering."
+       ]
+      },
+      {
+       "tekst": [
+        "Forutsetningen for dette er at søker har sluttvurdering i fagene geografi og samfunnsfag før inntaket kjøres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Inntak til Vg2 og Vg3 yrkesfaglige programområder",
+     "ledd": [
+      {
+       "tekst": [
+        "Søker kan prioritere samtlige programområder som han/hun er kvalifisert til ved innsøking til Vg2 eller Vg3."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntaket foretas på bakgrunn av konkurransepoeng. Ved innsøking til Vg2 legges karakterer fra Vg1 til grunn, og ved innsøking til Vg3 legges karakterer fra Vg2 til grunn."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom søker ikke har tilstrekkelige konkurransepoeng til å komme inn på søkers prioriterte ønsker, vil søker bli videresøkt. Det gis da et tilbud innenfor valgt utdanningsprogram som søker er kvalifisert til, men som søker selv ikke har prioritert i søknaden."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak til Vg2 og Vg3 studieforberedende programområder",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere prioriteres ved inntak til neste nivå på samme skole, når følgende forutsetninger er oppfylt."
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søker må være kvalifisert for neste nivå jf. § 16 i denne forskriften."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det søkes om inntak til neste nivå på samme programområde."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det søkes om inntak til neste nivå påfølgende skoleår."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Skolen hvor foregående nivå er gjennomført, er søkerens førsteønske."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som har gjennomført Vg1 eller Vg2 ved en skole som ikke tilbyr aktuelt tilbud på neste nivå, gis tilleggspoeng ved nærliggende videregående skole påfølgende skoleår."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som har vært utvekslingselever i Vg2, prioriteres til Vg3 på skolen der de gjennomførte Vg1 når følgende forutsetninger er oppfylt."
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søker må være kvalifisert for neste nivå jf. § 16 i denne forskriften."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det søkes om inntak på samme utdanningsprogram."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Det søkes om inntak påfølgende skoleår."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Avgiverskole før utveksling er den samme som søkers førsteønske."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søker har standpunktkarakterer fra Vg1 ved avgiverskole før utveksling."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Inntak til landslinjer, landsdekkende tilbud og statlige videregående skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra Agder til landslinjer og landsdekkende tilbud skal registrere sin søknad i Agder."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader til statlige videregående skoler registreres i det fylket hvor skolen ligger."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra hele landet deltar i inntaket på like vilkår."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Søknader etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som leverer søknad etter fristen, i samarbeid med Oppfølgingstjenesten (OT), må gjøre dette innen 15. mai for å bli med i årets inntak. De søker på lik linje med de som har søkt innen fristen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknad om å endre en søknad etter fastsatt søknadsfrist, vil kun bli behandlet ved tungtveiende årsaker. Tungtveiende årsak må dokumenteres skriftlig av sakkyndig instans. Slike endringer registreres frem til 15. juni. Søkere som får endret sin søknad, søker på lik linje med de som har søkt innen fristen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Vurdering av om søker er kvalifisert for inntak til neste nivå",
+     "ledd": [
+      {
+       "tekst": [
+        "Agder fylkeskommune har følgende tillegg til ",
+        {
+         "t": "§ 4-13 i forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ":"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere med ett eller to ikke bestått / ikke vurdert fra Vg1 deltar i inntaket til Vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere med ett eller to ikke bestått / ikke vurdert fra Vg2 deltar i inntaket til Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere med flere ikke bestått / ikke vurdert kan etter individuell vurdering av rektor ved avgiverskolen, anbefales for fylkeskommunedirektøren, å løftes til neste nivå."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere som ikke omfattes av kulepunktene over, kan likevel gis tilbud på et nivå de er kvalifisert for."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Flytting",
+     "ledd": [
+      {
+       "tekst": [
+        "Folkeregistrert adresse per 1. mars avgjør hvilket fylke som er søkers hjemfylke og dermed hvilket fylke retten til videregående opplæring knyttes til."
+       ]
+      },
+      {
+       "tekst": [
+        "Gjelder det søkere til Vg1, avgjør adressen per 1.mars også hvilken skole søker får nærskolepoeng og postnummerpoeng til."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som flytter til eller innenfor Agder fylkeskommune mellom 2. mars og 30. juni, kan regnes som hjemmehørende i Agder, eller få endret nærskoleområde, ved å oppfylle begge disse kriteriene:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søker til Agder fylkeskommune i Vigo innen 1. mars og huker av for flytting i vigo-søknaden"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ny adresse må være oppdatert i Folkeregisteret innen 30. juni."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Grenseavtaler med Telemark og Rogaland fylkeskommuner",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra Telemark fylkeskommune bosatt i Nissedal kommune og Fyresdal kommune konkurrerer på lik linje med søkere fra Agder om skoleplass ved Tvedestrand videregående skole."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere fra Rogaland fylkeskommune bosatt i Sokndal kommune og Lund kommune konkurrerer på lik linje med søkere fra Agder om skoleplass ved Flekkefjord og Sirdal videregående skole."
+       ]
+      },
+      {
+       "tekst": [
+        "Hjemfylket har ansvar for skyss for ungdommer som omfattes av denne paragrafen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Fremmøte første skoledag",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever må møte på skolen første skoledag."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom en elev uteblir fra skolen første skoledag uten dokumentert grunn, kan vedkommende miste skoleplassen."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved uteblivelse plikter eleven å gi beskjed til skolen snarest mulig, og senest innen skoletidens slutt første skoledag, om at vedkommende ikke kan møte. Forholdet må dokumenteres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Delegering av inntaksarbeidet til rektor",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntaksperioden avsluttes 31. august."
+       ]
+      },
+      {
+       "tekst": [
+        "Etter at fylkeskommunedirektøren har avsluttet inntaksarbeidet, delegeres ansvaret for videre inntak til rektor. Rektor skal følge ventelistene ut inntaksperioden."
+       ]
+      },
+      {
+       "tekst": [
+        "Når alle søkere med ungdomsrett på venteliste har fått tilbud om skoleplass, kan rektor gi tilbud til søkere med ungdomsrett fra Agder som ikke står på venteliste."
+       ]
+      },
+      {
+       "tekst": [
+        "Deretter skjer inntak av søkere etter følgende prioritering:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere fra andre fylker med ungdomsrett som står på venteliste."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere fra Agder med voksenrett som står på venteliste."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere fra Agder med voksenrett som ikke står på venteliste"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Voksne med fullføringsrett fra Agder som står på venteliste"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Voksne med fullføringsrett fra Agder som ikke står på venteliste."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere uten rett som er bosatt i Agder fylkeskommune, tas inn etter at alle søkere med rett til utdanning har fått tilbud, og det fortsatt er ledige plasser."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke har ungdomsrett tas ikke inn til videregående skoler i Agder uten at dette er klarert med fylkeskommunedirektøren."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Hvem formidlingen omfatter",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med opplæringsrett i Agder, som oppfyller vilkårene for formidling til læreplass, skal formidles. Andre kan også formidles."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader om formidling til læreplass som kommer etter søknadsfristene, behandles så langt det er mulig innen 30. juni."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Formidlingsprosessen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere i henhold til ",
+        {
+         "t": "§ 21",
+         "l": "forskrift/2024-11-19-3677/§21",
+         "a": "agder-inntak/21"
+        },
+        ", formidles til læreplass så snart som mulig etter søknadsfristene."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til læreplass som lærling, som ikke har bestått i programfag og/eller mer enn to fellesfag, tas ut av formidlingsprosessen 1. august og returneres som hovedregel til avgiverskole."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med annet hjemfylke enn Agder, og søkere fra Agder uten rett til videregående opplæring, tas ut av formidlingen 1. august."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Praksisbrevordningen",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til utdanningsløp som fører fram til praksisbrevprøve fordeles plassene etter poeng og intervju. Det vil bli lagt avgjørende vekt på intervjuet. Denne ordningen er avhengig av at det etableres en opplæringskontrakt med en godkjent lærebedrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Fagprøve for fag som har et 3-årig yrkesfaglig skoleløp",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til læreplass i automatiseringsfaget, dataelektronikerfaget og anleggsmaskinmekanikerfaget, og som ikke har fått tilbud om læreplass innen 1. september, har rett til å gå opp til fagprøve."
+       ]
+      },
+      {
+       "tekst": [
+        "Avgiverskolen skal melde søkeren opp til fagprøve."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Søknadsskjema",
+     "ledd": [
+      {
+       "tekst": [
+        "Digitalt søknadsskjema via Vigo.no skal benyttes for alle søkere til videregående opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved søknader etter fristen skal eget søknadsskjema benyttes. Dette skjema fås ved å kontakte Agder fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Mindre endringer i forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren har rett til å foreta mindre endringer i forskriften, så lenge dette ikke begrenser søkernes rettigheter."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved endring av overordnet lovverk som påvirker innholdet i denne forskriften, skal fylkeskommunedirektøren foreta nødvendige endringer."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Nærmere retningslinjer",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren utarbeider nærmere retningslinjer og rutinebeskrivelser som kunngjøres på fylkeskommunens hjemmeside og www.vilbli.no."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "28",
+     "visNr": "§ 28",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. januar 2025. Fra samme tid oppheves ",
+        {
+         "t": "forskrift 12. desember 2023 nr. 2446 om inntak til videregående opplæring og formidling til læreplass, Agder fylkeskommune",
+         "l": "forskrift/2023-12-12-2446"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

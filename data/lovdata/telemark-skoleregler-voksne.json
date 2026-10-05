@@ -1,0 +1,915 @@
+{
+ "id": "telemark-skoleregler-voksne",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om ordensregler for voksne deltakere i fylkeskommunale videregående skoler, Telemark",
+ "korttittel": "Regler for voksne i Telemark",
+ "malform": "nb",
+ "refid": "forskrift/2026-02-25-383",
+ "sistEndret": null,
+ "iKraft": "2026-02-25",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-voksne",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "40"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om ordensregler for voksne deltakere i fylkeskommunale videregående skoler, Telemark",
+   "merknader": [
+    [
+     {
+      "t": "Forskrift 11. desember 2024 nr. 3589 om ordensregler for voksne deltakere i fylkeskommunale videregående skoler, Telemark",
+      "l": "forskrift/2024-12-11-3589"
+     },
+     " oppheves."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med ordensreglene i Telemark fylkeskommune er:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "å bidra til at alle deltakere utvikler kunnskap, ferdigheter og holdninger for å mestre livene sine og delta i arbeid og fellesskap i samfunnet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "å gi tydelige rammer som fremmer god orden og atferd, og et trygt og godt læringsmiljø"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "å gi informasjon om deltakernes rettigheter og plikter, og hvilke sanksjoner og saksbehandlingsregler som gjelder når deltakeren bryter reglementet."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene gjelder for alle deltakere i offentlige videregående skoler i Telemark fylkeskommune, i skoletiden, på skolens område, på skolevei, i skolens nærområde, på ekskursjoner, skoleturer, ved aktiviteter og arrangementer i skolens regi, samt under praksis eller YFF i bedrifter."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglementet gjelder også for mobbing og andre krenkelser utenfor skolens område og skoletiden når handlingen har klar tilknytning til skolemiljøet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren skal møte presis, vise gode arbeidsvaner og god arbeidsinnsats. God orden er å:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte forberedt og delta aktivt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "utføre pålagt arbeid til rett tid og etter beste evne"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "melde fra ved fravær så raskt som mulig"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha med og holde orden på nødvendige læremidler og utstyr"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha mobil på lydløs og ute av syne med mindre annet er avtalt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge verne- og sikkerhetsregler, bruke påbudt arbeidstøy/verneutstyr"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "rydde opp etter seg på skolens/bedriftens arealer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "8.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge skolens rutiner og eventuelle regler ved praksis/YFF."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Oppførsel",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakerne skal bidra til å skape et godt skolemiljø ved å opptre hensynsfullt og høflig overfor hverandre og vise alminnelig god folkeskikk."
+       ]
+      },
+      {
+       "tekst": [
+        "God oppførsel er å:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til arbeidsro"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge ansattes anvisninger"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "behandle skolens og andres eiendeler forsvarlig."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikke tillatt å:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke grovt språk, mobbe, krenke, være voldelig eller true"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke elektronisk utstyr uten avtale"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "ta eller bruke bilder eller lydopptak uten samtykke"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "laste ned eller spre pornografi, rasistisk eller ulovlig materiale"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "drive pengespill på skolen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke rusmidler eller dopingmidler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha farlige gjenstander eller våpen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "8.",
+         "ledd": [
+          {
+           "tekst": [
+            "fuske eller levere andres arbeid som eget"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "9.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke plagg som hindrer identifisering eller kommunikasjon i undervisningen."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakere som bryter reglene, kan ilegges sanksjoner. Sanksjoner skal stå i rimelig forhold til bruddets alvor og gjentakelse. Deltakeren plikter å følge vedtatte sanksjoner. Det er ikke tillatt med kollektive sanksjoner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-1",
+     "visNr": "§ 5-1",
+     "tittel": "Alminnelige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved brudd på reglementet kan deltakeren ilegges én eller flere av følgende reaksjoner."
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "muntlig tilsnakk, normalt første reaksjon ved mindre brudd på reglementet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "skriftlig varsel, gitt dersom brudd gjentas eller ved fravær / ikke-aktiv deltakelse"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "utføring av pålagte oppgaver eller utbedring av skader som deltakeren har forårsaket, for eksempel ved rydding eller vask"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "begrenset adgang til utstyr/verksted/spesialrom"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning fra klasse/gruppe for resten av dagen."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-2",
+     "visNr": "§ 5-2",
+     "tittel": "Særlige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved alvorlige brudd på reglementet kan det fattes enkeltvedtak om bortvisning fra modul eller kurs. Vedtak fattes av fylkessjefen. Deltakeren skal normalt få anledning til å forklare seg, og det skal vurderes om alminnelige sanksjoner er tilstrekkelige. Dersom deltakeren ikke er tilgjengelig eller ikke gir tilbakemelding innen rimelig tid, kan vedtak fattes uten at deltakeren har fått forklare seg."
+       ]
+      },
+      {
+       "tekst": [
+        "Alvorlige brudd kan være:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruk eller oppbevaring av rusmidler på skolens område eller i praksis/YFF"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "besittelse av våpen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "grove krenkelser mot andre deltakere eller ansatte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "alvorlige trusler eller vold"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjentatte brudd på reglementet til tross for tidligere reaksjoner."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-3",
+     "visNr": "§ 5-3",
+     "tittel": "Manglende oppmøte og deltakelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren skal møte til avtalt tid og være til stede gjennom hele økten. Alt fravær registreres. Fravær kan også omfatte:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "å komme for sent til oppstart eller etter pauser"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "å gå tidlig fra opplæringen."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "For å beholde en plass må deltakerne møte opp og delta aktivt i opplæringen, i tråd med ",
+        {
+         "t": "opplæringsloven § 18-11",
+         "l": "lov/2023-06-09-30/§18-11",
+         "a": "opplaeringslova/18-11"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Aktiv deltakelse innebærer også å medvirke i den opplæringen som er fastsatt i vedtak om sluttkompetanse og i den organiseringen av opplæringen som følger av dette, herunder praksis eller opplæring i bedrift der dette er en del av opplæringstilbudet."
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "dersom deltakeren ikke møter til fastsatt oppstart og ikke har gitt beskjed, kan opplæringsplassen avsluttes innen 3 dager."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "dersom deltakeren uteblir fra opplæringen over tid uten å gi beskjed, kan opplæringsplassen avsluttes etter 2 uker."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "dersom fravær eller vedvarende manglende aktiv deltakelse fortsetter til tross for to skriftlige varsler, regnes dette som brudd på plikten til oppmøte og aktiv deltakelse, og deltakeren kan avsluttes."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Dette innebærer ikke at deltakeren mister retten til opplæring, men deltakeren mister plassen på grunn av manglende oppfyllelse av plikten."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom deltakeren ønsker å starte opplæring på nytt, kan vedkommende søke seg inn til videregående opplæring for voksne på et senere tidspunkt. Ny søknad vil normalt ikke bli vurdert før minst seks måneder etter avslutningsvedtaket, og det kan ikke gis garanti for at deltakeren får plass på samme sluttkompetanse."
+       ]
+      },
+      {
+       "tekst": [
+        "Avslutning av plass skjer ved enkeltvedtak i samsvar med gjeldende regelverk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Permisjon fra opplæringen",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-1",
+     "visNr": "§ 6-1",
+     "tittel": "Søknad om permisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom fraværet vurderes å være så langt at det vanskeliggjør karaktersetting eller fullføring av opplæringen, vil deltakeren bli informert om muligheten for å søke permisjon. Søknaden sendes skriftlig til inntakskontoret for voksne (e-post eller brev) og skal oppgi:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "om permisjonen gjelder hele opplæringsløpet eller enkelte fag/moduler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "tidsrom (fra–til)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "begrunnelse for permisjon."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen kan kreve dokumentasjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere som har lærekontrakt, må forholde seg til de reglene som gjelder for lærlinger."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-2",
+     "visNr": "§ 6-2",
+     "tittel": "Vurdering av søknad",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen vurderer søknaden individuelt med hensyn til:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "type opplæring og praktiske utfordringer (f.eks. modul- / yrkesfag med bedriftssamarbeid)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "mulighet for gjennomføring ved senere oppstart"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "organisering, kapasitet og tilgjengelige tilbud, siden tilbud kan endres eller legges ned."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-3",
+     "visNr": "§ 6-3",
+     "tittel": "Vedtak og konsekvenser",
+     "ledd": [
+      {
+       "tekst": [
+        "Innvilget permisjon gir vedtak med periode og vilkår."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere som ikke får innvilget permisjon eller avslutter opplæringen, må søke på nytt når de er klare til å delta i opplæringen. Retten til opplæring opprettholdes, men plass på samme sluttkompetanse kan ikke garanteres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Deltakerens rettigheter",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-1",
+     "visNr": "§ 7-1",
+     "tittel": "Trygt og godt læringsmiljø",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren har rett til arbeidsro, trygghet og sosial tilhørighet. Skolen skal ha nulltoleranse for mobbing, vold, diskriminering og trakassering."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-2",
+     "visNr": "§ 7-2",
+     "tittel": "Øvrige rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren har rett til:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "høflig og respektfull behandling"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "opplæring i samsvar med lov, forskrifter, læreplaner og fylkeskommunale vedtak"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "kjennskap til mål og vurdering"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "aktiv deltakelse i vurdering av egen kompetanse"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "underveis- og sluttvurdering i fag og moduler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "rådgivning om utdanning og yrkesvalg"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "medvirkning i alt som gjelder dem selv, med rett til å bli hørt og at deres meninger skal vektlegges (jf. ",
+            {
+             "t": "opplæringsloven § 20-1",
+             "l": "lov/2023-06-09-30/§20-1",
+             "a": "opplaeringslova/20-1"
+            },
+            ")."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Diverse bestemmelser",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8-1",
+     "visNr": "§ 8-1",
+     "tittel": "Erstatningsansvar",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren kan bli erstatningsansvarlig for skader på skolens eller andres eiendeler."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8-2",
+     "visNr": "§ 8-2",
+     "tittel": "Straffbare forhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Straffbare forhold innen ordensreglenes virkeområde meldes til politiet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8-3",
+     "visNr": "§ 8-3",
+     "tittel": "Rutinebeskrivelser",
+     "ledd": [
+      {
+       "tekst": [
+        "Skoleeier fastsetter egne rutiner for eksamen, bruk av rusmidler, fusk og plagiering, som alle deltakere plikter å følge."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen kan i tillegg fastsette lokale rutiner for kantine, parkering, bruk av utstyr/verksted og helse-, miljø- og sikkerhetstiltak (HMS), som også skal følges."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere som er ute i praksis eller YFF, skal følge de reglene som gjelder for praksisstedet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Ikraftsetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft straks."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

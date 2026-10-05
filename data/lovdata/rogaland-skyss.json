@@ -1,0 +1,115 @@
+{
+ "id": "rogaland-skyss",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om rabattordning som alternativ til gratis skoleskyss eller full skyssgodtgjørelse for elever ved videregående opplæring, Rogaland fylke",
+ "korttittel": "Skyss og rabattordning i Rogaland",
+ "malform": "nb",
+ "refid": "forskrift/2026-06-16-1432",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-07-31",
+ "lokaltype": "skyss",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "11"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om rabattordning som alternativ til gratis skoleskyss eller full skyssgodtgjørelse for elever ved videregående opplæring, Rogaland fylke",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder elever bosatt i Rogaland og som går på videregående skole i fylket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som har rett til gratis skyss til skolen eller full skyssgodtgjørelse etter ",
+        {
+         "t": "opplæringsloven § 9-1",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        ", skal i stedet få tilbud om rabattert reisekort for ungdom (U-23 billett)."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Unntak for enkeltelever som rabattordningen slår urimelig hardt ut for",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som har minst 6 km reiseavstand mellom bosted og opplæringssted, og som bor i et område som ikke har et godt utbygd kollektivtilbud, skal etter søknad innvilges skoleskyss. Søknad sendes Kolumbus."
+       ]
+      },
+      {
+       "tekst": [
+        "Hva som regnes som et område med et godt utbygd kollektivtilbud, er fastsatt i ",
+        {
+         "t": "opplæringsforskriften § 8-2",
+         "l": "forskrift/2024-06-03-900/§8-2",
+         "a": "opplaeringsforskrifta/8-2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Full skyssgodtgjørelse innebærer at eleven skal få dekket nødvendige kostnader til skyss til og fra skolen i tråd med ",
+        {
+         "t": "opplæringsforskriften § 8-2",
+         "l": "forskrift/2024-06-03-900/§8-2",
+         "a": "opplaeringsforskrifta/8-2"
+        },
+        ". Fylkeskommunen kan henvise den skyssberettigede eleven til den enhver tid billigste transportordningen, herunder rutegående transportmidler."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. august 2026."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

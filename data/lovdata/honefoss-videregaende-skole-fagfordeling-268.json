@@ -1,0 +1,487 @@
+{
+ "id": "honefoss-videregaende-skole-fagfordeling-268",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 4-årig helsearbeiderfag med studiekompetanse (YSK), Hønefoss videregående skole, Buskerud fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2025-01-29-268",
+ "sistEndret": null,
+ "iKraft": "2025-03-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "33",
+  "skoler": [
+   "974605929"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om omfordeling av fag i videregående opplæring, 4-årig helsearbeiderfag med studiekompetanse (YSK), Hønefoss videregående skole, Buskerud fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å fastsette fag- og timefordelingen for opplæringstilbudet «4-årig helsearbeiderfag med studiekompetanse (YSK)» ved Hønefoss videregående skole, og vise på hvilket trinn de ulike fagene skal ligge."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringstilbudet omfatter yrkesfaglig utdanningsprogram vg1 helse- og oppvekstfag, programområdet vg2 helsearbeiderfag, vg3 helsearbeiderfaget, og fag fra studieforeberedende program og vg3 påbygging til generell studiekompetanse. Fullført og bestått opplæringsløp i skole gir generell studiekompetanse, og fullført læretid og bestått fagprøve i tillegg gir fagbrev som helsefagarbeider."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringstilbudet skal gi eleven/lærlingen mulighet til å oppnå både yrkeskompetanse og generell studiekompetanse etter endt løp. Det er inngått samarbeid med lærebedrifter som gjør det mulig med læretid i helsearbeiderfaget. Lærebedriften har ansvar for opplæringen av lærlingen etter læreplan for vg3 helsearbeiderfaget, og det tegnes lærekontrakt mellom lærebedrift og lærling som godkjennes av fylkeskommunen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "De ulike fagene for opplæringstilbudet legges slik:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Vg4"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Engelsk vg1 yrkesfaglige program"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "112"
+          ]
+         ],
+         [
+          [
+           "Naturfag vg1 HO"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Naturfag vg3 påbygging til generell studiekompetanse"
+          ],
+          [],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Matematikk 1P-Y"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Matematikk 2P-Y"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Norsk for studieforberedende utdanningsprogram"
+          ],
+          [],
+          [
+           "224"
+          ],
+          [
+           "168"
+          ],
+          [],
+          [
+           "392"
+          ]
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie vg3 påbygging til generell studiekompetanse"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Helsefremmende arbeid vg1"
+          ],
+          [
+           "197"
+          ],
+          [],
+          [],
+          [],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Kommunikasjon og samhandling vg1"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesliv i helse- og oppvekstfag vg1"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Helsefremmende arbeid vg2"
+          ],
+          [],
+          [
+           "197"
+          ],
+          [],
+          [],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Kommunikasjon og samhandling vg2"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesliv i helsearbeiderfag vg2"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "168"
+          ],
+          [
+           "253"
+          ],
+          [],
+          [],
+          [
+           "421"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole (ikke inkludert læretid):"
+          ],
+          [
+           "981"
+          ],
+          [
+           "1010"
+          ],
+          [
+           "392"
+          ],
+          [
+           "224"
+          ],
+          [
+           "2607"
+          ]
+         ],
+         [
+          [
+           "Sum læretid i bedrift:"
+          ],
+          [
+           "3692"
+          ],
+          [
+           "3692"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende omfordeling av fag på de ulike trinnene:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Norsk vg1 er flyttet til vg2. Norsk vg1 og norsk vg2 undervises periodisert på vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag vg3 er flyttet fra vg3 til vg4."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Historie er flyttet fra vg3 til vg4."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Samfunnsfag er flyttet fra Vg2 til Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "For læretiden i bedrift tar fag- og timefordelingen utgangspunkt i normalordningen for yrkesfaglige utdanningsprogram, hvor læretiden omfatter ett år opplæring og ett år verdiskaping. Dette omfanget fordeles over 4 år, slik at lærekontrakten starter fra første halvår første opplæringsår og løper til skoleslutt i fjerde opplæringsår. Lærlingens stillingsprosent vil variere i perioden, og reguleres av arbeidsavtalen som inngås i forbindelse med tegning av lærekontrakt. Læretiden registreres med 40 % for de to første årene og 60 % for de to neste, med utløpsdato ved skoleslutt det fjerde året. Samlet læretid er beregnet til å omfatte 3 692 timer, som tilsvarer 2 årsverk i turnus i helsearbeiderfaget."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntak til vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av av ",
+        {
+         "t": "forskrift til opplæringsloven § 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        " og inntaksreglene for dette opplæringstilbudet i lokal forskrift for inntak og formidling for Buskerud fylkeskommune, jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-6 annet ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Inntak til vg2/vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. mars 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Fra samme tidspunkt blir lokal ",
+        {
+         "t": "forskrift av 9. februar 2023 nr. 888",
+         "l": "forskrift/2023-02-09-888"
+        },
+        " i Viken fylkeskommune opphevet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

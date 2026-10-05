@@ -102,7 +102,7 @@
   tekst:
     nb: "Skulereglane i Vestland sier at det skal gjøres en helhetlig vurdering av eleven opp mot skulereglane over en lengre periode, og at eleven og foreldrene til elever under 18 har rett på skriftlig varsel når eleven kan få Ng eller Lg."
     nn: "Skulereglane i Vestland seier at det skal gjerast ei heilskapleg vurdering av eleven opp mot skulereglane over ein lengre periode, og at eleven og foreldra til elevar under 18 har rett på skriftleg varsel når eleven kan få Ng eller Lg."
-  paragrafer: [vestland-skulereglar/11]
+  paragrafer: [vestland-skoleregler/11]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   kilder:
     - { id: vestland-forskrift-skulereglar, punkt: "§ 11 Vurdering i orden og oppførsel" }

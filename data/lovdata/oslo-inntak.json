@@ -1,0 +1,897 @@
+{
+ "id": "oslo-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Oslo kommune, Oslo",
+ "korttittel": "Inntak og formidling i Oslo",
+ "malform": "nb",
+ "refid": "forskrift/2025-01-29-147",
+ "sistEndret": null,
+ "iKraft": "2025-02-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "03"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Fellesbestemmelser",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å gi utfyllende regler om rettigheter og plikter for søkere til videregående opplæring i Oslo kommune og informasjon om hvordan inntak og formidling foretas."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder inntak til alle ordinære kommunale videregående skoler i Oslo kommune og formidling til læreplass. Forskriften gir utfyllende regler til ",
+        {
+         "t": "opplæringslova",
+         "l": "lov/2023-06-09-30"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntaksområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Oslo er ett inntaksområde. Dette gjelder alle utdanningsprogram og programområder, med mindre noe annet fremgår av andre bestemmelser i denne forskriften."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Inntak til videregående skole",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Plassering på skoler: Utdanningsprogrammene på videregående trinn 1 (Vg1)",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til utdanningsprogram på Vg1 skjer på grunnlag av poengsum basert på karakterer fra grunnskolen, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-18",
+         "l": "forskrift/2024-06-03-900/§4-18",
+         "a": "opplaeringsforskrifta/4-18"
+        },
+        ". Plassering på skoler skjer etter samme prinsipp."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Plassering på skoler: Enkelte utdanningsprogram på videregående trinn 1 (Vg1)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til Vg1 musikk, dans og drama fordeles 50 prosent av plassene på grunnlag av inntaksprøve/intervju/dokumentasjon på ferdighet og 50 prosent av plassene på grunnlag av karakterpoeng fra grunnskolen, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-6 første ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved inntak til Vg1 studiespesialisering med toppidrett fordeles 50 prosent av plassene på grunnlag av inntaksprøve/intervju/dokumentasjon på ferdighet og 50 prosent av plassene på grunnlag av karakterpoeng fra grunnskolen, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-6 første ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Plassering på skoler: Utdanningsprogram for studiespesialisering på videregående trinn 2 (Vg2)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdene Vg2 realfag og Vg2 språk, samfunnsfag og økonomi har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg1 studiespesialisering som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg2 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Plassering på skoler: Utdanningsprogram for studiespesialisering på videregående trinn 3 (Vg3)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdene Vg3 realfag og Vg3 språk, samfunnsfag og økonomi har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på henholdsvis Vg2 realfag og Vg2 språk, samfunnsfag og økonomi som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg3 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Plassering på skoler: Utdanningsprogram for musikk, dans og drama på videregående trinn 2 (Vg2)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdene Vg2 musikk, Vg2 dans og Vg2 drama har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på henholdsvis Vg1 musikk, Vg1 dans og Vg1 drama som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg2 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Plassering på skoler: Utdanningsprogram for musikk, dans og drama på videregående trinn 3 (Vg3)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdene Vg3 musikk, Vg3 dans og Vg3 drama har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på henholdsvis Vg2 musikk, Vg2 dans og Vg2 drama som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til opprykk til Vg3 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Plassering på skoler: Utdanningsprogram for idrettsfag på videregående trinn 2 (Vg2)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdet Vg2 idrettsfag har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg1 idrettsfag som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg2 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Plassering på skoler: Utdanningsprogram for idrettsfag på videregående trinn 3 (Vg3)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdet Vg3 idrettsfag har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg2 idrettsfag som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg3 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Plassering på skoler: Utdanningsprogram for medier og kommunikasjon på videregående trinn 2 (Vg2)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdet Vg2 medier og kommunikasjon har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg1 medier og kommunikasjon som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg2 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Plassering på skoler: Utdanningsprogram for medier og kommunikasjon på videregående trinn 3 (Vg3)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdet Vg3 medier og kommunikasjon har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg2 medier og kommunikasjon som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg3 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Plassering på skoler: Utdanningsprogram for kunst, design og arkitektur på videregående trinn 2 (Vg2)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdet Vg2 kunst, design og arkitektur har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg1 kunst, design og arkitektur som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg2 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Plassering på skoler: Utdanningsprogram for kunst, design og arkitektur på videregående trinn 3 (Vg3)",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til programområdet Vg3 kunst, design og arkitektur har elever og utvekslingselever fra egen skole fortrinnsrett. De to gruppene behandles likt. Fortrinnsretten omfatter elever på Vg2 kunst, design og arkitektur som søker påfølgende programområde det påfølgende skoleåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er flere søkere med fortrinnsrett til Vg3 på egen skole enn det er elevplasser ved den aktuelle skolen og programområdet, avgjøres inntaket etter vanlig poengkonkurranse mellom søkere med fortrinnsrett."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Plassering på skoler: Øvrige utdanningsprogram på videregående trinn 2 og 3 (Vg2 og Vg3)",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til programområde på Vg2 og Vg3 skjer på grunnlag av poengsum basert på karakterer fra det programområdet som gir inntaksgrunnlag, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-24",
+         "l": "forskrift/2024-06-03-900/§4-24",
+         "a": "opplaeringsforskrifta/4-24"
+        },
+        ". Plassering på skoler skjer etter samme prinsipp."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Inntak til særskilte yrkesfaglige utdanningsløp",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til fireårig yrkes- og studiekompetanse (YSK) skjer etter ordinær poengkonkurranse blant søkere som er vurdert som egnet for denne opplæringsmodellen på bakgrunn av vurdering av faglige forutsetninger og eventuelt intervju, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-6 andre ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkeren må ha faglig grunnlag og forutsetninger for å kunne tilegne seg studiekompetanse parallelt med yrkeskompetanse, og det må finnes samarbeidende lærebedrifter som vil tegne lærekontrakt med søkeren."
+       ]
+      },
+      {
+       "tekst": [
+        "Fireårig yrkes- og studiekompetanse (YSK) og treårige yrkesfaglig løp med studiekompetanse kan ha en struktur der fag legges på andre trinn enn det som er fastsatt i fag- og timefordelingen, men skal samlet sett følge ordinær opplæringstid for fagene, jf. ",
+        {
+         "t": "opplæringsforskrifta § 5-1 andre ledd",
+         "l": "forskrift/2024-06-03-900/§5-1",
+         "a": "opplaeringsforskrifta/5-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Individuelt inntak av minoritetsspråklige søkere",
+     "ledd": [
+      {
+       "tekst": [
+        "Individuelt inntak av minoritetsspråklige søkere omfatter søkere som oppfyller følgende kumulative vilkår:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren har kort botid i Norge."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren er i alderen 16–19 år."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren har rett til videregående opplæring etter ",
+            {
+             "t": "opplæringslova § 5-1",
+             "l": "lov/2023-06-09-30/§5-1",
+             "a": "opplaeringslova/5-1"
+            },
+            " eller rett til forberedende opplæring for voksne etter ",
+            {
+             "t": "opplæringslova § 18-2",
+             "l": "lov/2023-06-09-30/§18-2",
+             "a": "opplaeringslova/18-2"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren søker egne tilbud for minoritetsspråklige søkere, eller søker ordinært Vg1 uten å ha norsk grunnskolevitnemål."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren møter til kartleggingsprøver/intervjuer som søkeren innkalles til."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren har fullført grunnleggende norskopplæring dersom søkeren har fått tilbud om det."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak av minoritetsspråklige søkere til tilbud spesielt organisert for denne målgruppen eller ordinære Vg1 skjer etter individuell behandling for minoritetsspråklige søkere, basert på uttalelser fra innsøkende instans, dokumentasjon som følger søknaden, og eventuelle kartleggingsprøver og intervjuer."
+       ]
+      },
+      {
+       "tekst": [
+        "Minoritetsspråklige søkere som ikke tilhører målgruppen for individuelt inntak må konkurrere om plass gjennom ordinær søknadsbehandling."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Antall ønsker på søknaden",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med lovfestet rett til videregående opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " må føre opp tre alternative utdanningsprogram på Vg1 i prioritert rekkefølge, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-7 andre ledd",
+         "l": "forskrift/2024-06-03-900/§4-7",
+         "a": "opplaeringsforskrifta/4-7"
+        },
+        ". Søkere som ikke fører opp tre alternative utdanningsprogram kan bli plassert vilkårlig på utdanningsprogram på Vg1 med ledig kapasitet."
+       ]
+      },
+      {
+       "tekst": [
+        "Øvrige søkere til Vg1 kan føre opp inntil tre utdanningsprogram på søknaden."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til Vg2 og Vg3 må føre opp ett eller flere programområder som bygger på et utdanningsprogram eller programområde de har gjennomført, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-7 andre ledd",
+         "l": "forskrift/2024-06-03-900/§4-7",
+         "a": "opplaeringsforskrifta/4-7"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle søkere kan føre opp inntil seks skoler per utdanningsprogram eller programområde."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Videresøking på Vg1, Vg2 og Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom søkeren ikke klarer å konkurrere seg inn til noen av de valgte utdanningsprogram/programområder på de ønskede skolene, kan kommunen videresøke søkeren til skoler med ledig plass innen de valgte utdanningsprogram/programområder."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Omfanget av inntak utenom poengkonkurranse",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntil 10 prosent av plassene i fellesinntaket kan avsettes til søkere som ber om individuell søknadsbehandling utenom ordinær poengkonkurranse. Dette gjelder individuelt inntak av minoritetsspråklige søkere med kort botid i Norge og inntak i medhold av fortrinnsretten etter ",
+        {
+         "t": "opplæringsforskrifta kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        " for søkere med omfattende behov for individuelt tilrettelagt opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Innplassering av elever ved sterke medisinske eller sosiale grunner",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved sterke medisinske eller sosiale grunner kan søkere unntaksvis innplasseres på bestemte skoler, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-20 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§4-20",
+         "a": "opplaeringsforskrifta/4-20"
+        },
+        " og ",
+        {
+         "t": "§ 4-26 første ledd bokstav c",
+         "l": "forskrift/2024-06-03-900/§4-26",
+         "a": "opplaeringsforskrifta/4-26"
+        },
+        ". Forholdet må dokumenteres."
+       ]
+      },
+      {
+       "tekst": [
+        "Skoleeier kan i særlige tilfeller plassere en søker på en annen skole og/eller utdanningsprogram/programområde enn den skolen / det utdanningsprogrammet eller programområdet søkeren skulle fått tilbud på etter ",
+        {
+         "t": "opplæringsforskrifta kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        " og/eller denne forskriften. I vurderingen skal det legges vekt på medelevers og ansattes rett til et trygt og godt skole- og arbeidsmiljø. Ved slik innplassering må søkerens opplæringsrett etter ",
+        {
+         "t": "opplæringslova § 5-1 sjette ledd",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " ivaretas."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Søknader som mottas etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknader fra ungdom med opplæringsrett, som mottas etter søknadsfrist, skal behandles i den utstrekning det er mulig, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-9 tredje ledd andre punktum",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Svar på tilbud om plass eller ventelisteplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som ikke svarer på tilbud om plass eller ventelisteplass innen svarfristen mister plassen og strykes fra alle ventelister."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Fravær første skoledag",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som ikke møter på skolen første skoledag mister plassen, med mindre skolen har godkjent fraværsgrunnen. Fravær første skoledag må også være avtalt med skolen på forhånd, med mindre det skyldes plutselig oppstått alvorlig sykdom/skade eller lignende forhold som skolen godkjenner som gyldig fraværsgrunn."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Landslinjer, landsdekkende tilbud og statlige videregående skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra hele landet konkurrerer på like vilkår ved inntak til landslinjer og statlige videregående skoler, jf. ",
+        {
+         "t": "opplæringsforskrifta §§ 4-15",
+         "l": "forskrift/2024-06-03-900/§4-15",
+         "a": "opplaeringsforskrifta/4-15"
+        },
+        " og ",
+        {
+         "t": "4-16",
+         "l": "forskrift/2024-06-03-900/§4-16",
+         "a": "opplaeringsforskrifta/4-16"
+        },
+        ". Det samme gjelder tilbud som er klassifisert som landsdekkende tilbud etter avtale mellom Oslo kommune og de øvrige fylkeskommunene."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til enkelte statlige videregående skoler og landslinjer foretas av skolefylket i samsvar med reglene i ",
+        {
+         "t": "opplæringsforskrifta §§ 4-15",
+         "l": "forskrift/2024-06-03-900/§4-15",
+         "a": "opplaeringsforskrifta/4-15"
+        },
+        " og ",
+        {
+         "t": "4-16",
+         "l": "forskrift/2024-06-03-900/§4-16",
+         "a": "opplaeringsforskrifta/4-16"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Formidling til læreplass",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Hvem formidlingen omfatter",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til læreplass som har rett til videregående opplæring etter ",
+        {
+         "t": "opplæringslova",
+         "l": "lov/2023-06-09-30"
+        },
+        " og tilhører Oslo, skal formidles til godkjente lærebedrifter/samarbeidsorganer for lærebedrifter (opplæringskontorer), jf. ",
+        {
+         "t": "opplæringslova § 7-7",
+         "l": "lov/2023-06-09-30/§7-7",
+         "a": "opplaeringslova/7-7"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskrifta § 7-1",
+         "l": "forskrift/2024-06-03-900/§7-1",
+         "a": "opplaeringsforskrifta/7-1"
+        },
+        ". Søkere fra Oslo uten rett til videregående opplæring skal også formidles, jf. ",
+        {
+         "t": "opplæringslova § 7-7",
+         "l": "lov/2023-06-09-30/§7-7",
+         "a": "opplaeringslova/7-7"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskrifta § 7-1",
+         "l": "forskrift/2024-06-03-900/§7-1",
+         "a": "opplaeringsforskrifta/7-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Formidlingen omfatter søkere som søker læreplass i henhold til lærefagets plassering i tilbudsstrukturen, det vil si i samsvar med hovedmodellen for det aktuelle opplæringsløpet med hensyn til hvilken del av opplæringen som skal skje i skole og hvilken del som skal skje i lærebedrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "28",
+     "visNr": "§ 28",
+     "tittel": "Formidlingsprosessen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til læreplass formidles til godkjente lærebedrifter og samarbeidsorganer for lærebedrifter (opplæringskontorer) innen utgangen av mars, eventuelt før hvis mulig."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkerne må oppfylle vilkår for inntak til Vg3 etter ",
+        {
+         "t": "opplæringsforskrifta § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Søkere som ikke oppfyller vilkårene for inntak til Vg3 lærefag tas ut av formidlingsprosessen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "29",
+     "visNr": "§ 29",
+     "tittel": "Søknader som mottas etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknader om formidling til læreplass som mottas etter søknadsfrist, vil bli behandlet i den utstrekning det er mulig, jf. ",
+        {
+         "t": "opplæringsforskrifta § 7-5 andre ledd",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "30",
+     "visNr": "§ 30",
+     "tittel": "Forpliktelser for søkere til læreplass",
+     "ledd": [
+      {
+       "tekst": [
+        "For å delta i formidlingsprosessen og/eller få tilbud om Vg3 fagopplæring i skole, må søkere til læreplass svare på henvendelser fra Utdanningsetaten, lærebedrifter og samarbeidsorganer for lærebedrifter (opplæringskontorer). Søkere til læreplass som ennå ikke har fått tilbud om læreplass, må delta på obligatoriske arrangementer for denne målgruppen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til læreplass som ikke overholder forpliktelsene etter første ledd tas ut av formidlingsprosessen og tilbys heller ikke Vg3 fagopplæring i skole i stedet for opplæring i bedrift. Det samme gjelder søkere som takker nei til tilbud om læreplass eller til intervju med lærebedrift/samarbeidsorgan for lærebedrifter (opplæringskontor). Dette gjelder ikke dersom søkeren har gyldig forfall."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "31",
+     "visNr": "§ 31",
+     "tittel": "Vg3 fagopplæring i skole i stedet for opplæring i bedrift",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til læreplass med rett til videregående opplæring som verken har fått tilbud om læreplass eller er tatt inn til skoletilbud de har søkt på, gis tilbud om Vg3 fagopplæring i skole i stedet for opplæring i bedrift, dersom de selv ønsker det, jf. ",
+        {
+         "t": "opplæringslova §§ 5-6",
+         "l": "lov/2023-06-09-30/§5-6",
+         "a": "opplaeringslova/5-6"
+        },
+        " og ",
+        {
+         "t": "18-6",
+         "l": "lov/2023-06-09-30/§18-6",
+         "a": "opplaeringslova/18-6"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er tilstrekkelig antall plasser, kan Vg3 fagopplæring i skole også tilbys søkere til læreplass uten rett til videregående opplæring som verken har fått tilbud om læreplass eller er tatt inn til skoletilbud de har søkt på."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Myndighet og ikrafttredelse",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "32",
+     "visNr": "§ 32",
+     "tittel": "Fullmakt til å vedta endringer",
+     "ledd": [
+      {
+       "tekst": [
+        "Byrådet har myndighet til å vedta endringer som ikke er av prinsipiell betydning."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "33",
+     "visNr": "§ 33",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. februar 2025. Fra samme tid oppheves ",
+        {
+         "t": "forskrift 26. oktober 2016 nr. 1270 om inntak til videregående opplæring og formidling til læreplass, Oslo kommune, Oslo",
+         "l": "forskrift/2016-10-26-1270"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

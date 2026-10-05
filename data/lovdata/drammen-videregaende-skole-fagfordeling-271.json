@@ -1,0 +1,420 @@
+{
+ "id": "drammen-videregaende-skole-fagfordeling-271",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om omfordeling av fag i videregående opplæring, studiespesialisering med entreprenørskap, Drammen videregående skole, Buskerud fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Drammen videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2025-01-29-271",
+ "sistEndret": null,
+ "iKraft": "2025-03-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "33",
+  "skoler": [
+   "874605972"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om omfordeling av fag i videregående opplæring, studiespesialisering med entreprenørskap, Drammen videregående skole, Buskerud fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å fastsette fag- og timefordelingen for opplæringstilbudet «Studiespesialisering med entreprenørskap» ved Drammen videregående skole, og vise på hvilket trinn de ulike fagene skal ligge."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringstilbudet omfatter studiespesialiserende utdanningsprogram og programområdet språk, samfunnsfag og økonomi, og hvor Entreprenørskap og bedriftsutvikling og Markedsføring og ledelse inngår som programfag. Fullført opplæringsløp gir generell studiekompetanse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "De ulike fagene for opplæringstilbudet legges slik:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk 1P/1T"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk 2P"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Samfunnsfagskunnskap"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Geografi"
+          ],
+          [],
+          [
+           "56"
+          ],
+          [],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [
+           "56"
+          ],
+          [
+           "113"
+          ],
+          [
+           "169"
+          ]
+         ],
+         [
+          [
+           "Religion og etikk"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Fremmedspråk nivå I eller II"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [],
+          [
+           "225"
+          ]
+         ],
+         [
+          [
+           "Valgfritt programfag vg1"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Valgfritt programfag vg3 (alternativt Fremmedspråk nivå II)"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Markedsføring og ledelse"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "280"
+          ]
+         ],
+         [
+          [
+           "Entreprenørskap og bedriftsutvikling"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "280"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring:"
+          ],
+          [
+           "982"
+          ],
+          [
+           "840"
+          ],
+          [
+           "701"
+          ],
+          [
+           "2523"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende omfordeling av fag på de ulike trinnene:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Samfunnsfag og geografi flyttes fra vg1 til vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Programfaget Markedsføring og ledelse legges til vg1."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ett valgfritt programfag (140 timer) legges til vg1."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntak til vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "forskrift til opplæringsloven § 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Inntak til vg2/vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. mars 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Fra samme tidspunkt blir lokal ",
+        {
+         "t": "forskrift 9. februar 2023 nr. 885",
+         "l": "forskrift/2023-02-09-885"
+        },
+        " i Viken fylkeskommune opphevet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

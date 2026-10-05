@@ -1,0 +1,699 @@
+{
+ "id": "buskerud-skoleregler-voksne",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om ordensregler for deltakere i opplæring for voksne, Buskerud fylkeskommune",
+ "korttittel": "Regler for voksne i Buskerud",
+ "malform": "nb",
+ "refid": "forskrift/2025-03-27-554",
+ "sistEndret": null,
+ "iKraft": "2025-05-05",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-voksne",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "33"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om ordensregler for deltakere i opplæring for voksne, Buskerud fylkeskommune",
+   "merknader": [
+    [
+     "Forskriften trer i kraft 5. mai 2025."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordensreglene skal legge grunnlaget for et trygt og godt læringsmiljø for alle og bidra til læring, trivsel, inkludering og god helse. Ordensreglene beskriver rettigheter og plikter, regler om orden og oppførsel og regler om hvordan fylkeskommunen kan reagere dersom reglene brytes."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Hvem reglene gjelder for",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene gjelder for alle deltakere i opplæring for voksne gitt av Buskerud fylkeskommune etter ",
+        {
+         "t": "kapittel 18 i opplæringsloven",
+         "l": "lov/2023-06-09-30/kap18"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Hvor og når reglene gjelder",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene gjelder der opplæringen foregår, i opplæringstiden og i pauser."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglene for oppførsel gjelder også utenom opplæringsstedet og opplæringstiden, dersom den har nær sammenheng med opplæringsstedet eller opplæringssituasjonen og retten til et trygt og læringsmiljø, for eksempel ved digital kommunikasjon mellom deltakerne."
+       ]
+      },
+      {
+       "tekst": [
+        "For deltakere som har avtale eller kontrakt om opplæring i bedrift, vil arbeidsavtale og ",
+        {
+         "t": "arbeidsmiljøloven",
+         "l": "lov/2005-06-17-62"
+        },
+        " være gjeldende når deltakeren er på arbeidsplassen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen skal gi alle deltakere et opplæringstilbud som følger ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        " med forskrifter, styringsdokumenter, politiske vedtak og øvrige forskrifter og regler som gjelder for fylkeskommunen."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere har rett til medvirkning i alt som gjelder dem selv, og har rett til å ytre meningene sine fritt. Deltakerne skal bli hørt, og det skal legges vekt på meningene deres."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere skal i henhold til ",
+        {
+         "t": "opplæringsloven § 20-2",
+         "l": "lov/2023-06-09-30/§20-2",
+         "a": "opplaeringslova/20-2"
+        },
+        " ha et trygt og godt læringsmiljø og ikke utsettes for krenking."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Plikter",
+     "ledd": [
+      {
+       "tekst": [
+        "Alle deltakere skal bidra til et trygt og godt læringsmiljø, som fremmer helse, inkludering, trivsel og læring. Alle skal være hensynsfulle og høflige og rette seg etter de lover og regler som gjelder under opplæring, på arbeidsplassen og i samfunnet ellers."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Nærvær, fravær og permisjon",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "deltakere skal være til stede på opplæringsstedet dersom ikke annet er avtalt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "deltakere som har opplæring i bedrift skal følge bedriftens regler for fravær"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "stort fravær kan føre til at deltakere ikke får halvårsvurdering med karakter, standpunktvurdering eller godkjent modul, se ",
+            {
+             "t": "forskrift til opplæringsloven § 9-1 fjerde ledd",
+             "l": "forskrift/2024-06-03-900/§9-1",
+             "a": "opplaeringsforskrifta/9-1"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "deltakere kan søke om permisjon fra opplæringen. Permisjon skal kun gis etter tungtveiende grunner og i særlige tilfeller. Eksempler er førstegangstjeneste, vesentlige endringer i livssituasjon, fødsel og langvarig sykdom."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakere skal:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte presis, forberedt og delta aktivt i opplæringen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "oppdatere seg på arbeid som foregår og oppgaver som er gitt når deltaker har vært borte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha med nødvendige læremidler og utstyr som er pålagt deltaker"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "holde orden og bidra til å holde det rent og ryddig der man oppholder seg"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "levere lånt utstyr tilbake."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Oppførsel",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakere skal:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge vanlige regler for god oppførsel"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til arbeidsro, ta hensyn og vise respekt for andre"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke krenke andre, gjennom for eksempel mobbing, vold, trusler, diskriminering, trakassering eller grovt språk"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "behandle opplæringsstedets, lærebedriftens og andres undervisningsmateriell, utstyr og eiendeler forsvarlig"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge verneregler, bruke påbudt verneutstyr og særskilte arbeidsklær som kreves"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjøre seg kjent med opplæringsstedets og arbeidsstedets brannregler og delta i brannøvelser"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "delta i helse-, miljø- og sikkerhetsarbeid"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke oppgi eller gi inntrykk av at tekst, oppgavesvar, produkt og lignende er eget hvis det helt eller delvis er laget av andre (plagiat)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke jukse eller forsøke å jukse (fuske). Kommunikasjon eller bruk av hjelpemidler – deriblant kunstig intelligens – når dette ikke er tillatt, regnes som juks. Juks eller forsøk på juks til eksamen, fag-/svenneprøve og kompetanseprøve blir behandlet etter ",
+            {
+             "t": "forskrift til opplæringsloven § 9-42",
+             "l": "forskrift/2024-06-03-900/§9-42",
+             "a": "opplaeringsforskrifta/9-42"
+            },
+            " og ",
+            {
+             "t": "§ 9-62",
+             "l": "forskrift/2024-06-03-900/§9-62",
+             "a": "opplaeringsforskrifta/9-62"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke bruke elektronisk utstyr, som for eksempel mobiltelefon, mens opplæringen foregår, hvis dette ikke er avtalt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "k.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke bruke plagg som helt eller delvis dekker ansiktet, se ",
+            {
+             "t": "opplæringsloven § 27-2",
+             "l": "lov/2023-06-09-30/§27-2",
+             "a": "opplaeringslova/27-2"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "l.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke ta eller dele bilder eller lyd- eller filmopptak av andre uten deres tillatelse"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "m.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke ha med, laste ned, lese eller spre noen form for pornografisk, rasistisk eller annet krenkende eller ulovlig materiale"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "n.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke ha med, gi, selge, ta imot, kjøpe eller bruke rus- eller dopingmidler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "o.",
+         "ledd": [
+          {
+           "tekst": [
+            "ikke ha med våpen eller farlige gjenstander eller etterligninger av dem"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "p.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge opplæringsstedets regler for bruk av tobakk, snus eller elektroniske sigaretter."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Reaksjoner og tiltak",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan bestemme reaksjoner og tiltak for deltakere som har brutt reglene. Statsforvalteren kan også vedta reaksjoner og tiltak etter reglene."
+       ]
+      },
+      {
+       "tekst": [
+        "Følgende reaksjoner og tiltak kan tas i bruk ved brudd på reglene:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "lærer, instruktør, praksisveileder eller fylkeskommunen kan gi deltaker muntlig eller skriftlig tilrettevisning eller advarsel"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "fylkeskommunen, lærer, instruktør eller praksisveileder kan inndra ulovlige gjenstander"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "fylkeskommunen kan avgjøre at deltaker skal bytte klasse eller gruppe"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "lærer, instruktør, praksisveileder eller arbeidsgiver kan vise deltaker bort fra opplæringen/arbeidet for økten vedkommende har ansvaret for"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "fylkeskommunen kan vedta at deltaker skal bytte opplæringssted eller lærebedrift"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "fylkeskommunen, lærer, instruktør, praksisveileder eller arbeidsgiver kan bortvise deltaker for resten av dagen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "fylkeskommunen kan ved gjentatte eller grove regelbrudd vise bort deltaker for flere dager av et kurs eller modul"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "fylkesdirektøren kan ved særlig alvorlige regelbrudd vise bort deltaker fra resten av kurset eller modulen, se ",
+            {
+             "t": "opplæringsloven § 20-4",
+             "l": "lov/2023-06-09-30/§20-4",
+             "a": "opplaeringslova/20-4"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Rettigheter og plikter ved bruk av reaksjoner og tiltak",
+     "ledd": [
+      {
+       "tekst": [
+        "Reaksjoner og tiltak som benyttes må være nevnt i reglene og stå i rimelig forhold til regelbruddet. En deltaker skal ikke vises bort dersom en mindre inngripende reaksjon er tilstrekkelig."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen skal ikke legge avgjørende vekt på enkelthendelser, med unntak av særlig uakseptable eller alvorlige hendelser. Gjentatte, mindre alvorlige brudd kan føre til mer inngripende reaksjoner eller tiltak enn enkelthendelser."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringsstedet skal på forhånd ha gjort deltakerne kjent med reaksjoner og tiltak som kan brukes hvis de bryter reglene. Reaksjonene skal komme så raskt som mulig etter at regelbruddet har skjedd."
+       ]
+      },
+      {
+       "tekst": [
+        "Før det bestemmes reaksjoner eller tiltak, skal deltakeren det gjelder ha mulighet til å forklare seg for den som skal ta avgjørelsen så langt det er mulig. Hvis deltaker ikke retter seg etter det som blir bestemt, kan det bestemmes nye reaksjoner eller tiltak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Enkeltvedtak",
+     "ledd": [
+      {
+       "tekst": [
+        "Hvis fylkeskommunen skal bruke en av reaksjonene som er nevnt i ",
+        {
+         "t": "§ 9 bokstav g",
+         "l": "forskrift/2025-03-27-554/§9",
+         "a": "buskerud-skoleregler-voksne/9"
+        },
+        " og ",
+        {
+         "t": "h",
+         "l": "forskrift/2025-03-27-554/§9",
+         "a": "buskerud-skoleregler-voksne/9"
+        },
+        ", vil dette være et enkeltvedtak, se ",
+        {
+         "t": "forvaltningsloven kapittel V",
+         "l": "lov/1967-02-10/kapV"
+        },
+        ". Dette betyr blant annet at fylkeskommunen skal varsle deltakeren på forhånd."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere som får vedtak om bortvisning for en hel dag eller mer, skal få informasjon om klageretten og rett til innsyn i dokumentene. Vedtaket skal inneholde informasjon om at deltaker kan søke om å få reaksjonen utsatt til klagesaken er avgjort."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Forsikring, erstatning og politianmeldelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakere er forsikret i opplæringstiden gjennom Buskerud fylkeskommune. Denne dekker ulykker eller skader på deltakeren selv. Lærlinger og lærekandidater skal være dekket av bedriftens yrkesskadeforsikring."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakerne har selv ansvar for egne verdigjenstander, og fylkeskommunen eller opplæringsstedet kan ikke holdes erstatningsansvarlig for deltakerens personlige gjenstander."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom en deltaker gjør skade med vilje eller ved å være grovt uforsiktig, kan den bli erstatningsansvarlig etter erstatningsrettslige regler. Dette kan skje i tillegg til reaksjoner for brudd på ordensreglene."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen vil som en hovedregel anmelde straffbare forhold til politiet. I saker som er av alvorlig eller prinsipiell betydning skal fylkesdirektøren rådføres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Lokale og utfyllende regler",
+     "ledd": [
+      {
+       "tekst": [
+        "Disse reglene gjelder alle steder der det gis opplæring for voksne deltakere."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringsstedene kan ut over dette ha behov for lokale regler, som for eksempel regler for bruk av kantine, bibliotek og parkeringsplass. Den enkelte gruppe eller klasse kan utarbeide egne regler."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom fylkeskommunen, opplæringsstedet eller gruppen/klassen innfører utfyllende eller lokale regler, må de ikke være i strid med de felles ordensreglene eller andre regler, forskrifter eller lover."
+       ]
+      },
+      {
+       "tekst": [
+        "I tillegg skal alle deltakere som får hele eller deler av opplæringen i bedrift, følge reglene i ",
+        {
+         "t": "arbeidsmiljøloven",
+         "l": "lov/2005-06-17-62"
+        },
+        " og lokale regler som gjelder for den arbeidsplassen der opplæringen foregår."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

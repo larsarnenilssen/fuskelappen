@@ -1,0 +1,841 @@
+{
+ "id": "agder-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skoleregler for elever ved fylkeskommunale videregående skoler i Agder og deltakere i voksenopplæringen",
+ "korttittel": "Skoleregler i Agder",
+ "malform": "nb",
+ "refid": "forskrift/2024-06-18-1248",
+ "sistEndret": null,
+ "iKraft": "2024-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "42"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skoleregler for elever ved fylkeskommunale videregående skoler i Agder og deltakere i voksenopplæringen",
+   "merknader": [
+    [
+     "Forskriften trer i kraft 1. august 2024."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med skolereglene er at elevene skal få kjennskap til hvordan de kan medvirke i sin skolehverdag. De skal bli kjent med sine plikter og rettigheter. Skolereglene skal bidra til et trygt og godt lærings- og arbeidsmiljø, godt samarbeid, god trivsel, respekt og medansvar. Reglene skal fremme god orden, oppførsel og gode arbeidsvaner og slik legge til rette for god læring."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglene skal gi informasjon om:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Organisering av skoledemokratiet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Rettigheter og plikter for elevene (blant annet orden og oppførsel)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Tiltak når elevene bryter skolereglene og hvordan slike saker skal behandles."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene gjelder for alle elever ved de fylkeskommunale videregående skolene i Agder, og så langt det passer for deltakere i voksenopplæringen, kurselever, elever ved SMI-skolen (sosial, medisinsk institusjon) og andre deltakere i opplæring i skolenes regi."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolereglene gjelder for alle elever ved skolen i skoletiden og på skolens digitale og sosiale medier/plattformer. Reglene gjelder også opplæringsformer og aktiviteter som gis under skolens ansvar og regi utenfor skolens område, som for eksempel på studieturer, ekskursjoner og praksis i bedrift. I tillegg gjelder reglene på skoleveien."
+       ]
+      },
+      {
+       "tekst": [
+        "Utvidelsen gjelder også når mobbing og andre krenkelser som skjer utenfor skoletiden og utenfor skolens område har en klar tilknytning til skolemiljøet ved at handlingen er knyttet til skolesituasjonen eller setter sitt preg på den."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolereglene gjelder ikke på internat. Regler for internat reguleres i eget regelverk eller som en del av beboerkontrakten."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Organisering av skoledemokratiet",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal legge til rette for at hver enkelt elev skal kunne ytre meningene sine fritt og oppmuntre til å delta i skoledemokratiet. Skolen skal hjelpe elevene i arbeidet med skoledemokratiet. Skolen skal sørge for at elevene får være med på å planlegge, gjennomføre og vurdere virksomheten til skolen, blant annet arbeidet med skolemiljøet, kvalitetsutvikling i opplæringen og fastsetting av skoleregler."
+       ]
+      },
+      {
+       "tekst": [
+        "Hver skole skal som hovedregel ha et elevråd som er valgt av elevene ved skolen. Det er elever og ansatte ved skolen som avgjør hvor mange som skal velges inn i elevrådet. Elevene kan velge å organisere seg på en annen måte. Annen organisering kan for eksempel være allmøter, digitale debatter, avstemminger osv. Elevrådets oppgaver omhandler å få være med på å planlegge, gjennomføre og vurdere virksomheten til skolen, blant annet arbeidet med skolemiljøet, kvalitetsutvikling i opplæringen og fastsetting av skoleregler."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen skal fastsette hvilke brukerorgan skolene skal ha. Elevene skal være representert i disse brukerorganene."
+       ]
+      },
+      {
+       "tekst": [
+        "På hver skole skal det være et skoleutvalg. I utvalget er elever, de ansatte og skoleledelsen representert. Skoleutvalget har rett til å uttale seg om alle saker som gjelder skolen. Skolen kan velge å organisere seg på annen måte enn skoleutvalg om enighet mellom skole og elevene. Organiseringsform må da avklares årlig og elevenes medbestemmelse være ivaretatt."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever skal ikke delta i behandling av saker som er omfattet av lovfestet taushetsplikt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal gi elevene et opplæringstilbud som følger ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        ", styringsdokumenter og vedtak som gjelder for fylkeskommunen."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevens beste skal være et grunnleggende hensyn ved handlinger og avgjørelser som gjelder eleven."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle elever har rett til et trygt og godt skolemiljø, som fremmer helse, inkludering, trivsel og læring. Skolemiljøet omfatter både det fysiske og det psykososiale miljøet. Det er nulltoleranse for krenkelser, mobbing, trakassering og diskriminering. Skolen skal jobbe aktivt og systematisk for å fremme et godt skolemiljø, der den enkelte elev skal kunne oppleve arbeidsro, trygghet og sosial tilhørighet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Elevens plikter",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene skal bidra til et inkluderende, trygt og godt skolemiljø, og til at alle i skolesamfunnet har et godt lærings- og arbeidsmiljø. Elevene skal delta aktivt i opplæringen og følge skolereglene."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevene skal ha god orden. Det innebærer å:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte presis til timene og være til stede i hele opplæringstiden. Dersom eleven uten gyldig grunn har mer enn 15 minutter fravær i løpet av en 45 minutters time, skal det føres fravær for en hel time. Likeledes om fraværet overskrider 20 minutter for en time som varer 60 minutter eller mer."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "gi beskjed til kontaktlærer/faglærer dersom de er forhindret fra å møte til opplæringen, planlagt fravær skal varsles på forhånd"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "være til stede i opplæringen med mindre det er nødvendig med fravær på grunn av sykdom eller spesielle forhold. Ferieturer regnes ikke som nødvendig fravær."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "være forberedt og ha med seg nødvendige læremidler og utstyr og utføre avtalte gjøremål"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til å holde det rent og ryddig på skolens område."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Elevene skal ha god oppførsel. Det innebærer å:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "opptre ærlig og høflig"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "behandle medelever, lærere og andre ansatte med respekt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "være oppmerksomme i timene og delta aktivt i opplæringen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "vise respekt for skolens og andres eiendeler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke utstyr i henhold til gjennomført opplæring, retningslinjer og sikkerhetsregler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "straks gi beskjed til en ansatt på skolen om du er vitne til plaging, trusler, mobbing, vold eller annen krenkende adferd, også dersom dette skjer på digitale plattformer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "vise godt nettvett"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "kun bruke mobil, smartklokker og annet elektronisk utstyr etter avtale med lærer i opplærings- eller vurderingssituasjoner"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "delta aktivt i skolens arbeid for inkludering. Dette innebærer også arbeid i forhold til en trygg og inkluderende russetid."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Elevene skal ha god oppførsel. Det innebærer å ikke:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "forstyrre opplæringen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "mobbe eller krenke andre"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "røyke, snuse, innta, være påvirket av eller oppbevare rusmidler på skolens område, eller på andre opplæringsarenaer i skoletida. Elektroniske sigaretter er ikke tillatt. Forbudet mot bruk av tobakk og/eller e-sigaretter, samt alkohol og andre rusmidler, gjelder i skoletiden, uavhengig av sted."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha med seg våpen eller gjenstander som er egnet til å skade, skremme eller true andre. Egne regler kan gjelde på skoler som i opplæringen bruker våpen og annet utstyr som kan medføre skade – jamfør ",
+            {
+             "t": "§ 10",
+             "l": "forskrift/2024-06-18-1248/§10",
+             "a": "agder-skoleregler/10"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke skolens nettressurser til å laste ned, lese eller spre pornografisk, rasistisk eller annet materiale som virker krenkende eller diskriminerende på medelever eller skolens personale"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke mobiltelefoner, PC-er og annet elektronisk utstyr på en slik måte at det virker forstyrrende på opplæringen eller kan virke krenkende overfor medmennesker"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "dele film, lydfiler eller bilder av ansatte eller medelever uten først å ha fått gyldig samtykke fra den eller de som er filmet eller avbildet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke klesplagg som helt eller delvis dekker ansiktet, med mindre dette er nødvendig på grunn av pedagogiske, helsemessige, klimatiske eller sikkerhetsmessige forhold. Dette forbudet gjelder i opplærings- og vurderingssituasjoner og på turer og arrangement i regi av skolen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "endre eller forsøke å endre elev-PC-ens grunninnstilling (hverken maskinvare eller programvare), uten avtale med lærer/IKT-personell"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke skolen til å fremme kommersielle, livssynsmessige, ideologiske eller politiske interesser, uten at det er avtalt med rektor."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Fusk, forsøk på fusk og plagiat",
+     "ledd": [
+      {
+       "tekst": [
+        "Fusk (juks) eller forsøk på fusk er ikke tillatt, og kan føre til nedsatt oppførselskarakter. Fusk eller forsøk på fusk ved eksamen behandles etter reglene i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Fusk eller forsøk på fusk på elevarbeider fører til at eleven ikke får vurdering av arbeidet."
+       ]
+      },
+      {
+       "tekst": [
+        "Eksempler på fusk er:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruk eller besittelse av hjelpemidler som ikke er tillat brukt ved eksamen eller annen vurderingssituasjon"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "kommunikasjon med andre elever eller eksterne under eksamen eller andre vurderingssituasjoner med mindre det er avtalt med lærer/eksaminator"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "alle handlinger som gir eller forsøker å gi urettferdig fordel i en vurderingssituasjon."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Plagiat er å presentere andres ideer, tekster, forskning eller arbeider som sine egne, uten å oppgi korrekt kildehenvisning. Plagiat kan føre til at arbeidet blir vurdert til lav måloppnåelse. Plagiat kan være:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "kopiering av materiale fra bøker, artikler, internett eller andre kilder uten å oppgi kilden."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "å parafrasere (omskrive uten å endre betydningen) andres arbeid, men unnlate å kreditere originalforfatteren."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "å i eget navn levere inn arbeid utført av en annen. Bruk av kunstig intelligens i oppgaver skal godkjennes av faglærer og dokumenteres i henhold til referansestil."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Bruk av kunstig intelligens uten dokumentasjon gir inntrykk av at besvarelsen er mer selvstendig enn den faktisk er og vil betraktes som fusk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Konsekvenser av brudd på skolereglene (orden og oppførsel)",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolereglene gir grunnlag for vurdering i orden og oppførsel. Når en elev vurderes i orden og i oppførsel, skal det foretas en helhetlig vurdering av elevens overholdelse av skolereglene over en lengre tidsperiode."
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjonen på et regelbrudd må stå i et rimelig forhold til hvor alvorlig bruddet er."
+       ]
+      },
+      {
+       "tekst": [
+        "Brudd på skolereglene kan medføre følgende konsekvenser:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Advarsel: Kan gis både som muntlig og skriftlig advarsel"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Inndragning: Midlertidig inndragning av gjenstander som forstyrrer opplæringen eller som kan virke truende eller ødeleggende i skolemiljøet eller bryter med skolereglementet (eks. bruk av snus, tobakk, e-sigaretter, rusmidler e.l.). Midlertidig inndragning vil si at skolen oppbevarer den aktuelle gjenstanden på en forsvarlig måte inntil skoledagens slutt. Ulovlige gjenstander og ulovlige rusmidler, som f.eks. våpen og narkotika, vil bli inndratt og overlates til politiet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nedsatt karakter i orden eller oppførsel: Vanligvis skal ikke læreren ved fastsettelse av karakter i orden eller oppførsel legge avgjørende vekt på enkelthendelser. Unntaket er ved særlig klanderverdige eller grove enkelthendelser, f.eks. grov vold. I slike tilfeller kan nedsatt karakter i orden eller oppførsel også benyttes som en sanksjon."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning:"
+           ],
+           "liste": [
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Faglærer kan vise bort en elev fra en opplæringsøkt på inntil 2 klokketimer."
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Rektor kan vedta at en elev vise bort fra skolen/skoletur i inntil fem dager."
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Fylkeskommunen kan vedta at en elev vises bort for resten av skoleåret."
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Fylkeskommunen kan vedta at en voksen deltaker vises bort fra kurs eller modul."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Skolebytte: Dersom oppførselen til en elev går alvorlig ut over tryggheten eller læringen til en eller flere medelever, kan fylkeskommunen fatte vedtak om at eleven skal flyttes til en annen skole enn den eleven er tatt inn på. Skolebytte skal ikke skje dersom mindre inngripende tiltak vil kunne avhjelpe situasjonen."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Ved bortvisning for mer enn to klokketimer og skolebytte skal det fattes enkeltvedtak. Før det fattes enkeltvedtak skal eleven/deltakeren, og elevens foresatte når eleven er umyndig, varsles og få anledning til å uttale seg innen en rimelig frist. Skolen skal også først vurdere om det er mulig å bruke andre og mer hensiktsmessige reaksjoner. Regler for saksbehandling, enkeltvedtak, rett til varsling, til å forklare seg og til å klage framgår av ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        ", ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        " og ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved mobbing eller annen krenkende atferd skal skolen alltid iverksette forebyggende tiltak."
+       ]
+      },
+      {
+       "tekst": [
+        "Skoleeier vil politianmelde straffbare forhold."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever eller foreldre/foresatte må regne med å bli gjort erstatningsansvarlige for hærverk e.l., jamfør. ",
+        {
+         "t": "skadeserstatningsloven",
+         "l": "lov/1969-06-13-26"
+        },
+        ". Det kan gjøres avtale med skolen om at eleven gis anledning til å utbedre skadene selv. Eleven eller foreldre/foresatte er selv økonomisk ansvarlig for privat utstyr."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Saksbehandling ved brudd på skolereglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Før det blir tatt avgjørelser om konsekvenser ved brudd på skolereglene, skal eleven få mulighet til å forklare seg for den som skal ta avgjørelsen."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal sørge for at saken er så godt opplyst som mulig. Avgjørelser skal treffes på et grunnlag som er forsvarlig ut fra regelbruddets art og alvorlighetsgrad. Skolen skal alltid vurdere mulighetene for alternative tiltak."
+       ]
+      },
+      {
+       "tekst": [
+        "Vedtak om bortvisning for mer enn to klokketimer og vedtak om midlertidig eller permanent skolebytte er enkeltvedtak, og saksbehandlingsreglene i ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        " skal følges (",
+        {
+         "t": "forvaltningsloven kap. III",
+         "l": "lov/1967-02-10/kapIII"
+        },
+        ", ",
+        {
+         "t": "IV",
+         "l": "lov/1967-02-10/kapIV"
+        },
+        " og ",
+        {
+         "t": "V",
+         "l": "lov/1967-02-10/kapV"
+        },
+        "). Før vedtaket fattes skal eleven få mulighet til å legge fram sin side av saken. Rektor skal tilby eleven å ha med en person i denne samtalen. Foresatte til elever under 18 år skal alltid varsles."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven skal få beskjed om muligheten til å klage på vedtaket (",
+        {
+         "t": "forvaltningsloven kap. VI",
+         "l": "lov/1967-02-10/kapVI"
+        },
+        "). Dersom eleven vil klage på et enkeltvedtak, kan eleven be om at tiltaket (f.eks. bortvisning) ikke settes i verk før klagen har vært behandlet, og eleven har fått et endelig vedtak i saken (",
+        {
+         "t": "forvaltningsloven § 42",
+         "l": "lov/1967-02-10/§42"
+        },
+        "). Eleven har også rett til veiledning om hvilke rettigheter eleven har som part i saken, og hvordan gå frem om eleven vil klage. Skolen og elevombudet kan hjelpe eleven med dette."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle klager skal sendes til skolen v/rektor."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Klageinstans",
+     "ledd": [
+      {
+       "tekst": [
+        "Statsforvalteren er klageinstans for klager på enkeltvedtak om bortvisning og skolebytte."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Lokale regler ved skolene",
+     "ledd": [
+      {
+       "tekst": [
+        "Innenfor rammen av de felles reglene kan skolene fastsette egne lokale forskrifter eller retningslinjer. Disse kan ikke være i strid med de felles reglene."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolens lokale regler kan for eksempel knyttes til skoleregler for egne lokaler, spesialrom og utstyr, samt for håndtering av våpen og annet utstyr som brukes i opplæringen og som kan volde skade ved feil bruk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Prosedyre ved usikkerhet om elev har sluttet ved skolen",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal gjøre hva den kan for å legge forholdene til rette for at eleven skal fullføre opplæringen."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det på tross av skolens tiltak oppstår usikkerhet om hvorvidt en elev har sluttet ved skolen, for eksempel på grunn av fraværet, skal skolen uten ugrunnet opphold sende et skriftlig forhåndsvarsel med svarfrist (på minst 2 uker) til elev og foresatte om eleven er under 18 år, om at skolen vil fatte enkeltvedtak om utskriving fra skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom eleven (og/eller foresatte til elever under 18 år) ikke har besvart henvendelsen innen fristen, skal eleven ansees som sluttet, og en sluttmelding i form av enkeltvedtak skrives, med 3 ukers klageadgang. Dersom det ikke fremsettes klage innenfor klagefristen, gjelder enkeltvedtaket."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven skrives ut fra skolen, og oppfølgingstjenesten får informasjon umiddelbart."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

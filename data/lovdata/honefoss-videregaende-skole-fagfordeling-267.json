@@ -1,0 +1,466 @@
+{
+ "id": "honefoss-videregaende-skole-fagfordeling-267",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om omfordeling av fag i videregående opplæring, 3-årig datateknologi og elektronikk med realfaglig studiekompetanse, Hønefoss videregående skole, Buskerud fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Hønefoss videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2025-01-29-267",
+ "sistEndret": null,
+ "iKraft": "2025-03-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "33",
+  "skoler": [
+   "974605929"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om omfordeling av fag i videregående opplæring, 3-årig datateknologi og elektronikk med realfaglig studiekompetanse, Hønefoss videregående skole, Buskerud fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å fastsette fag- og timefordelingen for opplæringstilbudet «Datateknologi og elektronikk med realfaglig studiekompetanse» ved Hønefoss videregående skole, og vise på hvilket trinn de ulike fagene skal ligge."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringstilbudet omfatter yrkesfaglig utdanningsprogram vg1 elektro og datateknologi og programområde for vg2 datateknologi og elektronikk, og hvor fagene Matematikk R1, Matematikk R2 og Fysikk 1 inngår som programfag. Det omfatter også fag fra studieforeberedende program og vg3 påbygging til generell studiekompetanse. Fullført opplæringsløp kvalifiserer for læretid i bedrift som lærling i dataelektronikerfaget og gir studiekompetanse med realfagsfordypning."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "De ulike fagene for opplæringstilbudet legges slik:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Engelsk vg1 yrkesfaglige utdanningsprogram"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Naturfag vg1 EL"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Naturfag vg3 påbygging til generell studiekompetanse"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Matematikk 1T"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk R1"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk R2"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Norsk vg1 og vg2, studieforberedende utdanningsprogram"
+          ],
+          [],
+          [
+           "224"
+          ],
+          [],
+          [
+           "224"
+          ]
+         ],
+         [
+          [
+           "Norsk vg3 studieforberedende utdanningsprogram"
+          ],
+          [],
+          [],
+          [
+           "168"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Fysikk 1"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Energi og styresystemer"
+          ],
+          [
+           "280"
+          ],
+          [],
+          [],
+          [
+           "280"
+          ]
+         ],
+         [
+          [
+           "Elektroniske kretser og nettverk"
+          ],
+          [
+           "197"
+          ],
+          [],
+          [],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "112"
+          ],
+          [],
+          [
+           "112"
+          ],
+          [
+           "224"
+          ]
+         ],
+         [
+          [
+           "Elektroniske kretser og utstyr"
+          ],
+          [],
+          [
+           "280"
+          ],
+          [],
+          [
+           "280"
+          ]
+         ],
+         [
+          [
+           "Data- og informasjonsteknologi"
+          ],
+          [],
+          [],
+          [
+           "197"
+          ],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring"
+          ],
+          [
+           "981"
+          ],
+          [
+           "868"
+          ],
+          [
+           "953"
+          ],
+          [
+           "2802"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende omfordeling av fag på de ulike trinnene:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Matematikk følger den studieforberedende modellen med 140 timer på vg1."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag fra påbygging til generell studiekompetanse er flyttet fra vg3 til vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Norskfaget følger læreplan for studieforberedende utdanningsprogram. Norsk for vg1 er flyttet til vg2. Norsk for vg1 og norsk for vg2 gjennomføres periodisert på vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "112 av timene til yrkesfaglig fordypning på vg2 flyttes til vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "56 timer til yrkesfaglig fordypning på vg1 og 140 av timene på vg2 er flyttet til vg3 og brukes til programfagene Matematikk R2 og Fysikk 1 fra studieforberedende program."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "Programfag Elektronikksystemer er flyttet fra vg2 til vg3."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntak til vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "forskrift til opplæringsloven § 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Inntak til vg2/vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "forskrift til opplæringsloven § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. mars 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Fra samme tidspunkt blir lokal ",
+        {
+         "t": "forskrift 9. februar 2023 nr. 880 om fleksibilitet i fag- og timefordeling for videregående opplæring, 2-årig opplæringsløp til generell studiekompetanse Datateknologi og elektronikk innen utdanningsprogrammet Elektro og datateknologi ved Hønefoss videregående skole, Viken fylkeskommune",
+         "l": "forskrift/2023-02-09-880"
+        },
+        " opphevet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

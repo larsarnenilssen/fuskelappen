@@ -1,0 +1,893 @@
+{
+ "id": "nordkapp-videregaende-skole-fagfordeling-2547",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibel fag- og timefordeling for vg1 elektro- og datateknologi, vg1 helse- og oppvekstfag, vg1 teknologi- og industrifag, vg1 naturbruk, og vekslingsmodellene vg2 helsearbeiderfag, vg2 barne- og ungdomsarbeiderfag og vg2 akvakultur ved Nordkapp videregående skole og underliggende Veksling LOSA-enheter, Finnmark fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Nordkapp videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2025-12-02-2547",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "56",
+  "skoler": [
+   "974622734"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med denne forskriften er å tilby et mer tilpasset opplæringstilbud til en gruppe. Forskriften skal sikre progresjon i fagene og at opplæringen samlet sett følger ordinær opplæringstid."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for vg1 elektro- og datateknologi, vg1 helse- og oppvekstfag, vg1 teknologi- og industrifag, vg1 naturbruk, og vekslingsmodellene vg2 helsearbeiderfag, vg2 barne- og ungdomsarbeiderfag og vg2 akvakultur ved Nordkapp videregående skole og underliggende Veksling LOSA-enheter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordeling",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Fag- og timefordeling vg1 elektro- og datateknologi, vg1 helse- og oppvekstfag, vg1 teknologi- og industrifag og vg1 naturbruk",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Tabellen viser opplæringstimer fordelt på stedlig samling med faglærer og praksis i bedrift."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Veksling LOSA skal ha fem samlinger per skoleår stedlig på Nordkapp videregående skole. Hver samling skal foregå inntil fire dager."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "I tabellen framgår alle opplæringsarenaer som benyttes i Veksling LOSA."
+           ]
+          }
+         ]
+        }
+       ],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Årstimetall"
+         ],
+         [
+          "Samling med faglærer"
+         ],
+         [
+          "Praksis i bedrift med godkjent instruktør"
+         ],
+         [
+          "Totalt"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Engelsk (ENG1009)"
+          ],
+          [
+           "140"
+          ],
+          [
+           "48"
+          ],
+          [
+           "0"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Naturfag (NAT1009)"
+          ],
+          [
+           "56"
+          ],
+          [
+           "24"
+          ],
+          [
+           "0"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Matematikk (MAT1113)"
+          ],
+          [
+           "84"
+          ],
+          [
+           "28"
+          ],
+          [
+           "0"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [
+           "0"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "YFF"
+          ],
+          [
+           "168"
+          ],
+          [
+           "18"
+          ],
+          [
+           "80"
+          ],
+          [
+           "178"
+          ]
+         ],
+         [
+          [
+           "Programfag 1"
+          ],
+          [
+           "197"
+          ],
+          [
+           "20"
+          ],
+          [
+           "60"
+          ],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Programfag 2"
+          ],
+          [
+           "140"
+          ],
+          [
+           "15"
+          ],
+          [
+           "40"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Programfag 3"
+          ],
+          [
+           "140"
+          ],
+          [
+           "15"
+          ],
+          [
+           "40"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [],
+          [
+           "981"
+          ],
+          [],
+          [],
+          []
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Fag- og timefordeling vg2 akvakulturfaget, vekslingsmodell",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Undervisning i fellesfagene og programfagene alterneres mellom år 2 og 3. Sluttvurdering settes i år 3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene starter opplæring i vg3 bedrift i år 2. Dette er et år tidligere enn et ordinært løp."
+           ]
+          }
+         ]
+        }
+       ],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [],
+         [
+          "År 2 (Vg2)"
+         ],
+         [
+          "År 3 (Vg2)"
+         ],
+         [
+          "År 4"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [],
+          [
+           "Norsk"
+          ],
+          [
+           "112 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Samfunnsfag"
+          ],
+          [
+           "84 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag"
+          ],
+          [
+           "Akvakultur"
+          ],
+          [
+           "Veksler mellom år 2 og 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Drift og produksjon"
+          ],
+          [
+           "197 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Anlegg og teknikk"
+          ],
+          [
+           "140 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Biologi og miljø"
+          ],
+          [
+           "140 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "253 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [
+           "Timetall per år"
+          ],
+          [],
+          [
+           "982"
+          ],
+          [
+           "112"
+          ],
+          []
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Fag- og timefordeling vg2 helsearbeiderfaget, vekslingsmodell",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Undervisning i fellesfagene og programfagene alterneres mellom år 2 og 3. Sluttvurdering settes i år 3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene starter opplæring i vg3 bedrift i år 2. Dette er et år tidligere enn et ordinært løp."
+           ]
+          }
+         ]
+        }
+       ],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [],
+         [
+          "År 2 (Vg2)"
+         ],
+         [
+          "År 3 (Vg2)"
+         ],
+         [
+          "År 4"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [],
+          [
+           "Norsk"
+          ],
+          [
+           "112 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Samfunnsfag"
+          ],
+          [
+           "84 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [],
+          [
+           "Helsefremmende arbeid"
+          ],
+          [
+           "197 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Kommunikasjon og samhandling"
+          ],
+          [
+           "140 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Yrkesutøvelse"
+          ],
+          [
+           "140 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "253"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [
+           "Timetall per år"
+          ],
+          [],
+          [
+           "982"
+          ],
+          [
+           "112"
+          ],
+          []
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Fag- og timefordeling vg2 barne- og ungdomsarbeiderfaget, vekslingsmodell",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Undervisning i fellesfagene og programfagene alterneres mellom år 2 og 3. Sluttvurdering settes i år 3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene starter opplæring i vg3 bedrift i år 2. Dette er et år tidligere enn et ordinært løp."
+           ]
+          }
+         ]
+        }
+       ],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [],
+         [
+          "År 2 (Vg2)"
+         ],
+         [
+          "År 3 (Vg2)"
+         ],
+         [
+          "År 4"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [],
+          [
+           "Norsk"
+          ],
+          [
+           "112 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Samfunnsfag"
+          ],
+          [
+           "84 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [],
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56 Veksler/alterner mellom år 2 og år 3"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [],
+          [
+           "Helsefremmende arbeid"
+          ],
+          [
+           "140 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Kommunikasjon og samhandling"
+          ],
+          [
+           "140 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Yrkesutøvelse"
+          ],
+          [
+           "197 (Vg2) + Vg3"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [],
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "253"
+          ],
+          [
+           "Vg3"
+          ]
+         ],
+         [
+          [
+           "Timetall per år"
+          ],
+          [],
+          [
+           "982"
+          ],
+          [
+           "112"
+          ],
+          []
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Trekkordning til eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger alternativ fag- og timefordeling. Yrkesfaglige opplæringsløp skal være en del av trekket i vg1 og vg2 hvor inntil 20 % av elevene trekkes ut til eksamen i et fag, sett over to år. Elevene skal opp til den obligatoriske tverrfaglige eksamenen i programfag på vg2."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til vg1 og vg2",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til vg1 i opplæring med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i ",
+        {
+         "t": "kapittel 4 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til vg2 vekslingsmodell",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til vg2 akvakultur vekslingsmodell må søkeren ha inngått lærekontrakt (vekslingsmodell) med lærebedrift i vg3 akvakulturfaget. Søkeren må ha bestått alle fag på nivå 1, jf. ",
+        {
+         "t": "§ 4-13 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For inntak til vg2 helsearbeiderfaget vekslingsmodell må søkeren ha inngått lærekontrakt (vekslingsmodell) med lærebedrift i vg3 helsearbeiderfaget. Søkeren må ha bestått alle fag på nivå 1, jf. ",
+        {
+         "t": "§ 4-13 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For inntak til vg2 barne- og ungdomsarbeiderfag vekslingsmodell må søkeren ha inngått lærekontrakt med lærebedrift i vg3 barne- og ungdomsarbeiderfaget. Søkeren må ha bestått alle fag på nivå 1, jf. ",
+        {
+         "t": "§ 4-13 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 1. august 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Samtidig oppheves ",
+        {
+         "t": "forskrift 7. juni 2017 nr. 795 om fleksibilitet i fag- og timefordeling i videregående opplæring, Helse- og oppvekstfag ved Nordkapp videregående skole, Finnmark",
+         "l": "forskrift/2017-06-07-795"
+        },
+        " og ",
+        {
+         "t": "forskrift 25. september 2023 nr. 1507 om fleksibilitet i fag- og timefordeling i videregående opplæring, Helse- og oppvekstfag ved Nordkapp videregående skole, Finnmark",
+         "l": "forskrift/2023-09-25-1507"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

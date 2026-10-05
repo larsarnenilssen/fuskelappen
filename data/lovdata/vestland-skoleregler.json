@@ -1,5 +1,5 @@
 {
- "id": "vestland-skulereglar",
+ "id": "vestland-skoleregler",
  "kilde": "vestland-forskrift-skulereglar",
  "type": "forskrift",
  "tittel": "Forskrift om skulereglar, Vestland fylkeskommune",
@@ -7,7 +7,10 @@
  "malform": "nn",
  "refid": "forskrift/2026-06-16-1587",
  "sistEndret": null,
- "hentet": "2026-10-02",
+ "iKraft": "2026-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler",
+ "hentet": "2026-10-05",
  "gyldighet": {
   "niva": "fylke",
   "fylke": "46"

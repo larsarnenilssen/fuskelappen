@@ -1,0 +1,435 @@
+{
+ "id": "rogaland-skolerute-2025-2028",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skole- og feriedagar (skolerute) (2025–2028), Rogaland fylkeskommune",
+ "korttittel": "Skulerute 2025–2028 i Rogaland",
+ "malform": "nn",
+ "refid": "forskrift/2025-06-17-1080",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": "2028-07-31",
+ "lokaltype": "skolerute",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "11"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skole- og feriedagar (skolerute) (2025–2028), Rogaland fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gir informasjon om kva for skole- og feriedagar elevane har i skoleåra 2025–2026, 2026–2027 og 2027–2028. Elevane har rett og plikt til å møte på skolen på dei fastsette skoledagane."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskrifta gjeld for elevar ved alle vidaregåande skolar i Rogaland fylkeskommune skoleåra 2025–2026, 2026–2027 og 2027–2028. Vidaregåande opplæring for vaksne etter ",
+        {
+         "t": "opplæringslova kap. 18",
+         "l": "lov/2023-06-09-30/kap18"
+        },
+        " er ikkje omfatta."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Felles datoar",
+     "ledd": [
+      {
+       "tekst": [
+        "Det er fastsett i ",
+        {
+         "t": "opplæringslova",
+         "l": "lov/2023-06-09-30"
+        },
+        " at opplæringa skal strekke seg over minst 38 skoleveker innafor ei ramme på 45 samanhengande veker."
+       ]
+      },
+      {
+       "tekst": [
+        "Datoar for oppstart av skoleåret, samt haustferie, vinterferie og påskeferie er felles for alle skolar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Heimel for unntak frå skoleruta",
+     "ledd": [
+      {
+       "tekst": [
+        "Den enkelte skolen kan gjere unntak frå skoleruta i enkeltvedtak dersom det skal gjennomførast opplæring på andre dagar enn det som er fastsett i skoleruta. Skolen kan likevel ikkje gjere unntak som medfører at det ikkje er skoledagar på dagar der det skal gjennomførast nasjonale prøvar eller eksamen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Tabell for skoleruta for skoleåret 2025–2026",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Månad"
+         ],
+         [
+          "Merknad, ferie, fri"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "August"
+          ],
+          [
+           "Første skoledag tysdag 19. august."
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          []
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Haustferie 6. til 10. oktober (veke 41)"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Felles planleggingsdag tysdag 4. november (fri for elevar)."
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Siste skoledag før jul blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ],
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Første skoledag etter jul blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [
+           "Felles planleggingsdag torsdag 12. februar (fri for elevar). Vinterferie 23. til 27. februar (veke 9)."
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Påskeferie 30. mars til 6. april."
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          [
+           "Påskeferie 30. mars til 6. april."
+          ]
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Arbeidaranes dag fredag 1. mai. Kristi himmelfartsdag torsdag 14. mai. Andre pinsedag måndag 25. mai."
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Siste skoledag før ferien blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Tabell for skoleruta for skoleåret 2026–2027",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Månad"
+         ],
+         [
+          "Merknad, ferie, fri"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "August"
+          ],
+          [
+           "Første skoledag måndag 17. august."
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          []
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Haustferie 5. til 9. oktober (veke 41)"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Felles planleggingsdag tysdag 3. november (fri for elevar)."
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Siste skoledag før jul blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ],
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Første skoledag etter jul blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [
+           "Felles planleggingsdag onsdag 10. februar (fri for elevar). Vinterferie 15. til 19. februar (veke 7)."
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Påskeferie 22. til 29. mars"
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          []
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Kristi himmelfartsdag torsdag 6. mai. Andre pinsedag måndag 17. mai."
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Siste skoledag før ferien blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Tabell for skoleruta for skoleåret 2027–2028",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Månad"
+         ],
+         [
+          "Merknad, ferie, fri"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "August"
+          ],
+          [
+           "Første skoledag måndag 16. august."
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          []
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Haustferie 11. til 15. oktober (veke 41)"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Felles planleggingsdag onsdag 10. november (fri for elevar)."
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Siste skoledag før jul blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ],
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Første skoledag etter jul blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [
+           "Felles planleggingsdag torsdag 17. februar (fri for elevar). Vinterferie 28. februar til 3. mars (veke 9)."
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Vinterferie 28. februar til 3. mars (veke 9)."
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          [
+           "Påskeferie 10. til 17. april."
+          ]
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Arbeidaranes dag måndag 1. mai. Grunnlovsdag onsdag 17. mai Kristi himmelfartsdag torsdag 25. mai."
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Andre pinsedag måndag 5. juni. Siste skoledag før ferien blir fastsett lokalt på skolen og publiserast på skolens heimesider."
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Iverksetting og opphøyr",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta trer i kraft 1. august 2025 og opphøyrer 31. juli 2028."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

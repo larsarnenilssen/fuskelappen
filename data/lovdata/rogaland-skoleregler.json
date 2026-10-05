@@ -1,0 +1,922 @@
+{
+ "id": "rogaland-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skoleregler og skoledemokrati for elever, Rogaland",
+ "korttittel": "Skoleregler i Rogaland",
+ "malform": "nb",
+ "refid": "forskrift/2026-04-28-681",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "11"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skoleregler og skoledemokrati for elever, Rogaland",
+   "merknader": [
+    [
+     {
+      "t": "Forskrift 11. juni 2024 nr. 1396 om skoleregler og skoledemokrati for elever, Rogaland",
+      "l": "forskrift/2024-06-11-1396"
+     },
+     " oppheves med virkning fra 1. august 2026."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": []
+  },
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål, virkeområde og saksbehandlingsregler",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med skolereglene er at elevene skal få kjennskap til hvilke forventninger som stilles til dem og at de kan medvirke i sin skolehverdag. De skal bli kjent med sine plikter og rettigheter. Skolereglene skal bidra til et trygt og godt læringsmiljø, godt samarbeid, god trivsel, respekt og medansvar. Reglementet skal fremme god orden, oppførsel og gode arbeidsvaner og slik legge til rette for god læring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolereglene gjelder for elevene ved alle de fylkeskommunale videregående skolene i Rogaland og for de grunnskoleelevene Rogaland fylkeskommune har ansvar for. Reglene gjelder for alle elever i skoletiden. Reglementet gjelder også opplæringsformer og aktiviteter i skolens regi utenfor skolens områder, som for eksempel på ekskursjoner/turer og i praksis. I tillegg gjelder skolereglene for skoleveien."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglementet gjelder også utenfor skoletiden hvis elevenes oppførsel har tilstrekkelig tilknytning til eller setter sitt preg på skolen, blant annet situasjoner der elevers oppførsel på fritiden fører til at andre ikke har det trygt og godt på skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Saksbehandlingsregler",
+     "ledd": [
+      {
+       "tekst": [
+        {
+         "t": "Forvaltningslovens",
+         "l": "lov/1967-02-10"
+        },
+        " regler gjelder, med mindre annet er spesifisert."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Regler om orden og atferd",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Regler for orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven skal ha god orden. Det innebærer blant annet å:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Møte forberedt og presist."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Følge skolens regler for melding om fravær."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Holde orden på egne ting og ha med nødvendige læremidler og utstyr."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bidra til å holde det rent og ryddig på skolens område."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Overholde frister og følge instrukser gitt av de som arbeider på skolen."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4a",
+     "visNr": "§ 4a",
+     "tittel": "Særlig om forsentkomming",
+     "ledd": [
+      {
+       "tekst": [
+        "Hvis en elev kommer til første undervisningstime for dagen etter at det har gått mer enn 20 prosent av timens lengde, regnes det som fravær for hele undervisningstimen. Med «undervisningstime» menes den enheten som benyttes for føring av oppmøte i Visma InSchool (VIS)."
+       ]
+      },
+      {
+       "tekst": [
+        "For alle andre undervisningstimer enn skolens første undervisningstime for dagen, regnes all forsentkomming som fravær for hele økten."
+       ]
+      },
+      {
+       "tekst": [
+        "Lærer kan vise skjønn med hensyn til grunnen til forsentkomming dersom forholdene tilsier det."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Regler for atferd",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene skal vise alminnelig god oppførsel. Dette innebærer blant annet å:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Ta vare på hverandre, være høflige og vise respekt for hverandre og hverandres ulikheter."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Vise respekt for skolens og andres eiendeler."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Følge lærers og øvrige ansattes anvisninger."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Be om lov før man fotograferer eller filmer elever eller ansatte, eller før man deler bilder, video- eller lydklipp eller liknende."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke utstyr i henhold til gjennomført opplæring og retningslinjer, herunder bruke nødvendig verneutstyr hvor dette er påbudt og overholde gjeldende regler for helse, miljø og sikkerhet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Elevene skal blant annet ikke:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Mobbe eller på andre måter krenke andre fysisk, verbalt eller digitalt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Være voldelig eller komme med trusler."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke eller ha befatning med tobakk, snus, e-sigaretter, alkohol, narkotika, andre rusmidler eller dopingmidler."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Ha med seg farlige gjenstander eller våpen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Fuske eller forsøke å fuske på prøver, innleveringer eller andre vurderingssituasjoner ved å benytte hjelpemidler som ikke er tillatt. Det er heller ikke tillatt å levere eller presentere andres produkt som sitt eget, heller ikke hvis det fremskaffet ved bruk av kunstig intelligens (KI)."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke mobiltelefoner, elektronisk eller annet digitalt utstyr i undervisningstiden uten at dette er avtalt med læreren."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke klesplagg som helt eller delvis dekker ansiktet i undervisningstiden, med mindre dette er nødvendig på grunn av pedagogiske, helsemessige, klimatiske eller sikkerhetsmessige forhold."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Laste ned eller spre fysisk eller elektronisk; pornografisk, rasistisk eller annet krenkende eller ulovlig materiale."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Forfalske eller forsøke å forfalske dokumenter, som legeerklæringer eller liknende."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Drive fysisk eller digitalt med pengespill eller annen tilsvarende aktivitet som bidrar til å skape dårlig skolemiljø."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5a",
+     "visNr": "§ 5a",
+     "tittel": "Særlig om bruk av mobiltelefoner, smartklokker og liknende",
+     "ledd": [
+      {
+       "tekst": [
+        "Mobiltelefoner, smartklokker og liknende skal i løpet av undervisningstiden ikke forstyrre elever eller lærere."
+       ]
+      },
+      {
+       "tekst": [
+        "Mobiltelefoner, smartklokker og liknende skal ikke ha varsler påskrudd i løpet av undervisningstiden, og de skal oppbevares på en måte som gjør at de ikke kan tiltrekke seg oppmerksomhet. Hovedregelen er at disse gjenstandene skal oppbevares i sekk eller liknende i undervisningstiden."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor har unntaksvis anledning til å legge midlertidige restriksjoner på bruk av disse gjenstandene i pauser hvis det etter en konkret vurdering anses som et nødvendig og forholdsmessig tiltak for å sikre et trygt og godt skolemiljø. Dersom rektor begrenser elevenes bruk av mobiltelefoner i pauser, skal vurderingen begrunnes og arkiveres i skolens arkivsystem. Rektors mulighet til å begrense elevers bruk av mobiltelefoner, smartklokker og liknende i pauser er svært begrenset og kan vare i maksimalt to uker om gangen."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom elever har en god grunn til at de må ha mobiltelefon, smartklokke eller liknende tilgjengelig og med påskrudde varsler i løpet av undervisningstiden, skal læreren tillate dette."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5b",
+     "visNr": "§ 5b",
+     "tittel": "Særlig om bruk av hodetelefoner og øretelefoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Hodetelefoner og øretelefoner skal ikke benyttes i opplæringen uten at faglærer har gitt særskilt tillatelse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Regler om organisering av skoledemokratiet",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevråd",
+     "ledd": [
+      {
+       "tekst": [
+        "Hver skole skal ha et elevråd som er valgt av elevene."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevene ved skolen skal hvert år få muligheten til å velge å organisere seg på annen måte enn elevråd. Dette kan for eksempel være avdelingselevråd, allmøter eller annet. Skolen skal legge til rette for at denne muligheten er reell."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Elevmedvirkning",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene har rett til å medvirke i alt som gjelder de selv. Skolen skal legge til rette for at alle elevene får mulighet til å få sin mening hørt."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen kan ikke kreve at all elevmedvirkning må skje gjennom elevrådet eller andre formelle kanaler, som for eksempel arbeidsutvalg, skolemiljøutvalg eller annet. Også enkeltelever skal ha rett til å medvirke."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Samarbeid med foresatte",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal samarbeide med elevenes foresatte om elevenes opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen kan selv velge hvordan den velger å samarbeide med de foresatte, innenfor de rammene som følger av ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        " med forskrifter. Samarbeidet kan for eksempel foregå ved at det utvikles et lokalt foreldreutvalg for den enkelte skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Sanksjoner og saksbehandling ved brudd på reglene om orden og atferd",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Generelt om saksbehandling ved brudd på reglene om orden og atferd",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som bryter reglene for orden og adferd i forskriftens ",
+        {
+         "t": "kapittel 2",
+         "l": "forskrift/2026-04-28-681/kap2"
+        },
+        ", kan gis sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Det kan kun benyttes sanksjoner som angitt i dette kapittelet."
+       ]
+      },
+      {
+       "tekst": [
+        "Sanksjonen skal stå i rimelig forhold til elevens brudd på reglementet, hvor alvorlighetsgrad og gjentakelse har betydning for valg av sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Kollektiv avstraffelse er ikke tillatt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Alminnelige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Alminnelige sanksjoner kan bestemmes av rektor, avdelingsleder og skolens lærere ved ett eller flere brudd på skolereglene. Alminnelige sanksjoner er ikke enkeltvedtak. Sanksjonen med begrunnelse skal formidles til eleven."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven kan gis en eller flere av følgende alminnelige sanksjoner:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Skriftlig anmerkning(er)."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Muntlig og/eller skriftlig oppfølgning."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Begrenset adgang til utstyr/verksted/spesialrom."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Inndragning av rusmidler, gjenstander som brukes til å bryte skolereglene for atferd (",
+            {
+             "t": "§§ 5",
+             "l": "forskrift/2026-04-28-681/§5",
+             "a": "rogaland-skoleregler/5"
+            },
+            ", ",
+            {
+             "t": "5a",
+             "l": "forskrift/2026-04-28-681/§5a",
+             "a": "rogaland-skoleregler/5a"
+            },
+            " og ",
+            {
+             "t": "5b",
+             "l": "forskrift/2026-04-28-681/§5b",
+             "a": "rogaland-skoleregler/5b"
+            },
+            ") og andre gjenstander som ellers er ulovlige. Dette gjelder også elektronisk utstyr som mobil, kamera, smartklokke og øretelefoner."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra klasse/gruppe for resten av undervisningsøkten, avgrenset til to klokketimer."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Ved inndragning skal gjenstanden leveres tilbake til eleven eller elevens foresatte (dersom eleven er under 18 år) etter endt skoletid. Ulovlige gjenstander skal leveres til politiet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10a",
+     "visNr": "§ 10a",
+     "tittel": "Direkte nedsatt halvårskarakter i orden eller atferd",
+     "ledd": [
+      {
+       "tekst": [
+        "En elev kan bli satt direkte ned i halvårskarakter som sanksjon ved særlig klanderverdige eller alvorlige enkelthendelser."
+       ]
+      },
+      {
+       "tekst": [
+        "En slik avgjørelse er ikke et enkeltvedtak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Særlige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Særlige sanksjoner kan bestemmes ved særlig klanderverdige eller alvorlige enkelthendelser eller ved gjentatte brudd på skolereglene."
+       ]
+      },
+      {
+       "tekst": [
+        "Før en særlig sanksjon blir vurdert og besluttet, skal eleven få mulighet til å forklare seg muntlig. Rektor skal tilby eleven å ha med seg en person til denne samtalen. Foresatte til elever under 18 år skal også varsles."
+       ]
+      },
+      {
+       "tekst": [
+        "Særlige sanksjoner er enkeltvedtak etter ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        " og skal være skriftlig, begrunnet samt opplyse om elevens rett til å klage. Eleven har rett til veiledning om sine rettigheter som part i saken, og hvordan man går frem ved en klage."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven kan gis en eller flere slike særlige sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Følgende sanksjoner kan vedtas av rektor:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Direkte nedsatt standpunktkarakter i orden eller atferd."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra skolen/bedriften for resten av skoledagen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Klassebytte."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra og med en hel skoledag og inntil fem skoledager, herunder bortvisning fra pågående skoletur eller annen aktivitet i skolens regi."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Følgende sanksjoner kan bare vedtas av fylkesopplæringssjefen:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Skolebytte, jf. ",
+            {
+             "t": "oppll. § 13-2",
+             "l": "lov/2023-06-09-30/§13-2",
+             "a": "opplaeringslova/13-2"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning for resten av skoleåret, jf. ",
+            {
+             "t": "oppll. § 13-1",
+             "l": "lov/2023-06-09-30/§13-1",
+             "a": "opplaeringslova/13-1"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Før det blir gjort vedtak om bortvisning, skal hjelpetiltak og mildere sanksjoner vurderes, jf. ",
+        {
+         "t": "oppll. § 13-1 annet ledd",
+         "l": "lov/2023-06-09-30/§13-1",
+         "a": "opplaeringslova/13-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen har ikke anledning til å bortvise en elev fra en planlagt skoletur av preventive hensyn. Det vil si at en elev ikke kan risikere å gå glipp av aktiviteter som skolen arrangerer på bakgrunn av noe eleven har gjort i forkant av, og uavhengig av, aktiviteten."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkestinget, eller den fylkestinget har gitt myndighet, er klageinstans for enkeltvedtak om klassebytte og skolebytte. For andre særlige sanksjoner etter skolereglene, er Statsforvalteren i Rogaland klageinstans."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11b",
+     "visNr": "§ 11b",
+     "tittel": "Særlige sanksjoner for elever i grunnskoleopplæringen",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene for særlige sanksjoner gjelder tilsvarende for elever i grunnskoleopplæringen som for elever i de videregående skolene, med følgende unntak:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elever på 1. til 7. trinn kan bortvises for enkelttimer eller for resten av dagen. Elever på 1. til 7. trinn kan ikke bortvises lenger enn for resten av dagen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elever på 8. til 10. trinn kan ikke bortvises i mer enn tre dager."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Straffbare forhold og spørsmål om erstatning på grunn av regelbrudd",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Straffbare forhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom en elev begår et mulig straffbart forhold i skoletiden, skal rektor ta kontakt med fylkesadvokaten for å vurdere om skolen skal anmelde saken."
+       ]
+      },
+      {
+       "tekst": [
+        "En elev som er utsatt for straffbare forhold, har alltid rett til å anmelde disse selv."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Erstatning",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved brudd på skolereglene som medfører skade på skolens eiendom eller eiendeler, kan eleven bli holdt erstatningspliktig. Reglene for erstatning er regulert i ",
+        {
+         "t": "skadeerstatningsloven",
+         "l": "lov/1969-06-13-26"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom skaden(e) eleven har påført skolens eiendom eller eiendeler kan rettes opp av eleven selv, vil eleven få tilbud om å gjøre dette før skolen eventuelt fremmer et erstatningskrav. Dette er aktuelt når eleven kan rette opp skaden(e) ved å rydde opp, vaske opp, fjerne påført tagging eller lignende."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap6",
+   "type": "kapittel",
+   "nr": "6",
+   "overskrift": "Kapittel 6 Endringer i forskriften",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Språklige og redaksjonelle endringer i forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektøren har rett til å gjennomføre språklige og redaksjonelle endringer i forskriften, så lenge disse ikke påvirker elever eller ansattes rettigheter eller plikter. Dersom endringene er av en slik art at de påvirker elever eller ansattes rettigheter eller plikter, skal imidlertid endringene behandles politisk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap7",
+   "type": "kapittel",
+   "nr": "7",
+   "overskrift": "Kapittel 7 Ikrafttredelse",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fra og med 1. august 2026."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

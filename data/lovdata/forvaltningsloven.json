@@ -7,7 +7,8 @@
  "malform": "nb",
  "refid": "lov/1967-02-10",
  "sistEndret": "2026-01-01",
- "hentet": "2026-10-02",
+ "iKraft": "1970-01-01",
+ "hentet": "2026-10-05",
  "gyldighet": {
   "niva": "nasjonal"
  },
@@ -2052,12 +2053,14 @@
             "som er av betydning for Norges utenrikspolitiske interesser eller nasjonale forsvars- og sikkerhetsinteresser, når slike opplysninger kan unntas etter ",
             {
              "t": "offentleglova §§ 20",
-             "l": "lov/2006-05-19-16/§20"
+             "l": "lov/2006-05-19-16/§20",
+             "a": "offentleglova/20"
             },
             " og ",
             {
              "t": "21",
-             "l": "lov/2006-05-19-16/§21"
+             "l": "lov/2006-05-19-16/§21",
+             "a": "offentleglova/21"
             },
             ","
            ]

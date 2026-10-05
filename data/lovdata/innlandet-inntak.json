@@ -1,0 +1,603 @@
+{
+ "id": "innlandet-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående skole og formidling til læreplass, Innlandet fylkeskommune",
+ "korttittel": "Inntak og formidling i Innlandet",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-17-3529",
+ "sistEndret": null,
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "34"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1-1",
+     "visNr": "§ 1-1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formål med denne forskriften er å regulere forhold rundt inntak til videregående skole og formidling til læreplass i Innlandet fylkeskommune. Forskriften supplerer ",
+        {
+         "t": "opplæringslova",
+         "l": "lov/2023-06-09-30"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        " og skal sikre likebehandling av søkere til videregående opplæring i fylket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-2",
+     "visNr": "§ 1-2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til videregående opplæring er regulert i ",
+        {
+         "t": "lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)",
+         "l": "lov/2023-06-09-30"
+        },
+        " og ",
+        {
+         "t": "forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ". Denne forskriften gjelder for inntak til offentlig videregående opplæring og formidling av lærlinger og lærekandidater i Innlandet fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Rettigheter og vilkår for inntak til videregående opplæring",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "2-1",
+     "visNr": "§ 2-1",
+     "tittel": "Søknad etter fristen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere bosatt i Innlandet fylke som søker etter søknadsfrist i henhold til ",
+        {
+         "t": "forskrift til opplæringslova § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        ", behandles så langt det er mulig, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 4-5",
+         "l": "forskrift/2024-06-03-900/§4-5",
+         "a": "opplaeringsforskrifta/4-5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere med ungdomsrett fra andre fylker som søker etter søknadsfrist blir normalt ikke behandlet i inntaket. Unntaket er for søkere som må vurderes individuelt eller som flytter til Innlandet fylke, jf. § 2-2 i denne forskrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-2",
+     "visNr": "§ 2-2",
+     "tittel": "Flytting til Innlandet fylke",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med rettighet etter ",
+        {
+         "t": "opplæringslovens § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " som har søkt videregående opplæring innen søknadsfristen i et annet fylke og som flytter til Innlandet etter 1. mars, blir likestilt med søkere fra Innlandet dersom søker sender skriftlig dokumentasjon på dette til Innlandet fylkeskommune innen 1. juli."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke kan dokumentere flytting innen fristen, kan likevel gis tilbud dersom det er ledig kapasitet jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-14",
+         "l": "forskrift/2024-06-03-900/§4-14",
+         "a": "opplaeringsforskrifta/4-14"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Ungdom fra andre fylker som blir plassert i fosterhjem eller institusjon i Innlandet i løpet av skoleåret, vil få tilbud om skoleplass så langt det er forsvarlig, og hvis fylkeskommunen har ledig kapasitet etter reglene i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-3",
+     "visNr": "§ 2-3",
+     "tittel": "Endring av søknad etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Etter søknadsfrist, kan søknad om inntak til videregående opplæring endres en gang dersom søkeren legger frem dokumentasjon om at det foreligger tungtveiende grunner som underbygger behovet for endring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-4",
+     "visNr": "§ 2-4",
+     "tittel": "Inntaksområde – nærskole",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere må på sitt første ønske sette opp nærmeste skole som har programområdet/utdanningsprogrammet de ønsker å søke til."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren er gitt delegert myndighet til å fastsette utfyllende bestemmelser, herunder unntaksbestemmelser og definisjoner av geografisk tilhørighet."
+       ]
+      },
+      {
+       "tekst": [
+        "Fordeling av plassene foretas på bakgrunn av karakterer og poeng, eller etter individuell vurdering / fortrinnsrett, jf. ",
+        {
+         "t": "forskrift til opplæringslova §§ 4-18",
+         "l": "forskrift/2024-06-03-900/§4-18",
+         "a": "opplaeringsforskrifta/4-18"
+        },
+        " til ",
+        {
+         "t": "4-26",
+         "l": "forskrift/2024-06-03-900/§4-26",
+         "a": "opplaeringsforskrifta/4-26"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-5",
+     "visNr": "§ 2-5",
+     "tittel": "Særlige regler om inntak til enkelte utdanningsprogram",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til Vg1 idrettsfag og Vg1 musikk, dans og drama kan søkere som har dette som sitt førsteønske enten bli invitert til poenggivende prøve, eller få tilleggspoeng ved å dokumentere sine ferdigheter. Tilleggspoeng legges til søkers karakterpoengsum, slik at søker får en høyere poengsum å konkurrere med. Dette begrenses til inntil 50 % av plassene."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved inntak til yrkesfaglige utdanningsløp som leder fram til yrkes- og studiekompetanse, er det kun førsteønskesøkere med rettighet i Innlandet fylkeskommune som blir kalt inn til intervju med skole og bedrift. Plassene fordeles etter intervju og tilleggspoeng. Tilleggspoeng legges til søkers karakterpoengsum."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren gir utfyllende bestemmelser."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-6",
+     "visNr": "§ 2-6",
+     "tittel": "Inntak til Vg2 og Vg3 International Baccalaureate (IB Diploma Programme)",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til IB Diploma Programme i Innlandet fylke, må ha rett til videregående opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " for å få tilbud om plass. Rett til videregående opplæring betinger lovlig opphold i landet. Øvrige vilkår og prosedyrer for inntak går fram av skolenes retningslinjer (Policy for Admission)."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak til Vg2 og Vg3 IB gjøres i samarbeid med skolene som tilbyr IB Diploma Programme."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-7",
+     "visNr": "§ 2-7",
+     "tittel": "Søknad og inntak til landslinjer, landsdekkende tilbud og statlige videregående skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved søknad om inntak til landslinje eller landsdekkende tilbud stiller søkere fra hele landet likt i konkurransen om plasser, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-16",
+         "l": "forskrift/2024-06-03-900/§4-16",
+         "a": "opplaeringsforskrifta/4-16"
+        },
+        ". Landslinjer og landsdekkende tilbud skal søke til fylkeskommunen der skolen ligger, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-8",
+         "l": "forskrift/2024-06-03-900/§4-8",
+         "a": "opplaeringsforskrifta/4-8"
+        },
+        ". Inntaket skjer på grunnlag av karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved søknad om inntak til samiske videregående skoler og de statlige skolene med utdanningsprogram for naturbruk stiller søkere fra hele landet likt, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-15",
+         "l": "forskrift/2024-06-03-900/§4-15",
+         "a": "opplaeringsforskrifta/4-15"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-8",
+     "visNr": "§ 2-8",
+     "tittel": "Praktisering av videresøk i inntaket",
+     "ledd": [
+      {
+       "tekst": [
+        "Innlandet fylkeskommune praktiserer videresøk for søkere som ikke konkurrerer seg inn på sine oppgitte ønsker. Dette innebærer at søkeren kan få tilbud om skoleplass ved en annen skole som har det søkte utdanningsprogrammet/programområdet. Søkere til Vg2 og Vg3 kan også bli videresøkt til andre programområder innenfor utdanningsprogrammet de har startet på."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-9",
+     "visNr": "§ 2-9",
+     "tittel": "Søknad og inntak av utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Innlandet fylkeskommune gir tilbud til utenlandske søkere som blir formidlet via organisasjoner som har utveksling av unge elever som sitt virkefelt, jf. ",
+        {
+         "t": "opplæringsforskriften § 4-4",
+         "l": "forskrift/2024-06-03-900/§4-4",
+         "a": "opplaeringsforskrifta/4-4"
+        },
+        ". Ønsket skole, utdanningsprogram eller programområde vektlegges, men tilbud gis ut fra skolenes kapasitet."
+       ]
+      },
+      {
+       "tekst": [
+        "For at fylkeskommunen skal kunne gi garanti for skoleplass, er søknadsfristen 1. juli. Søknader etter denne dato behandles så langt det er mulig."
+       ]
+      },
+      {
+       "tekst": [
+        "Norske elever som har fått godkjent Vg2 som utvekslingselev i utlandet i henhold til ",
+        {
+         "t": "opplæringsforskrifta § 5-11",
+         "l": "forskrift/2024-06-03-900/§5-11",
+         "a": "opplaeringsforskrifta/5-11"
+        },
+        ", vil etter søknad få tilbud om inntak til Vg3 på skolen hvor de har gått Vg1."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren gir utfyllende bestemmelser."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-10",
+     "visNr": "§ 2-10",
+     "tittel": "Forrang for søkere fra studieforberedende utdanningsprogram",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til Vg2/Vg3 på studieforberedende utdanningsprogram gis elever forrang til skolen og utdanningsprogrammet hvor de har gått Vg1/Vg2. Dette omfatter elever som søker neste nivå det påfølgende skoleåret. Dersom det er flere søkere med forrang til skolen enn det er elevplasser ved det aktuelle programområdet, avgjøres inntaket etter poengsum jf. ",
+        {
+         "t": "opplæringsforskrifta kapittel 5",
+         "l": "forskrift/2024-06-03-900/kap5"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-11",
+     "visNr": "§ 2-11",
+     "tittel": "Inntak på tvers av tilbudsstrukturen innen studieforberedende utdanningsprogram",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak på tvers av tilbudsstrukturen innen studieforberedende utdanningsprogram, må alle fag på aktuelt utdanningsprogram/programområde være bestått."
+       ]
+      },
+      {
+       "tekst": [
+        "Søker konkurrerer uten karakterpoeng og får tilbud dersom ledig plass."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-12",
+     "visNr": "§ 2-12",
+     "tittel": "Endring fra et fullstendig til et mindre fullstendig opplæringsløp",
+     "ledd": [
+      {
+       "tekst": [
+        "Hovedregelen er at søkeren tas inn til et fullstendig utdanningsprogram eller programområde på Vg1, Vg2 og Vg3, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For elever som har behov for opplæring på mer enn normert tid, kan opplæringsløpet tilpasses. Skolen og eleven samarbeider om hvordan opplæringstilbudet kan tilrettelegges og dokumenterer dette, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-2",
+         "l": "forskrift/2024-06-03-900/§4-2",
+         "a": "opplaeringsforskrifta/4-2"
+        },
+        ". Det er delegert til rektor å fatte vedtak om endring fra et fullstendig til et mindre fullstendig opplæringsløp."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som får innvilget et slikt tilrettelagt opplæringsløp, vil etter søknad få tilbud om skoleplass innenfor det planlagte løpet ved samme skole påfølgende skoleår."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren gir utfyllende bestemmelser."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-13",
+     "visNr": "§ 2-13",
+     "tittel": "Frammøte første skoledag",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som ikke møter på skolen første skoledag uten gyldig grunn, kan miste skoleplassen."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved sykdom eller andre tvingende grunner plikter eleven å gi beskjed til skolen første skoledag om at vedkommende ikke kan møte. Forholdet må dokumenteres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Formidling til læreplass",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3-1",
+     "visNr": "§ 3-1",
+     "tittel": "Formidling til læreplass etter søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknader som kommer inn etter fristen vil bli tatt hensyn til så langt som mulig, men søker kan ikke påregne å få tilbud om alternativt opplæringstilbud i skole samme år dersom vedkommende ikke får en lærekontrakt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-2",
+     "visNr": "§ 3-2",
+     "tittel": "Fleksible opplæringsløp",
+     "ledd": [
+      {
+       "tekst": [
+        "Gjelder formidling av voksne og ungdom som søker lærekontrakt som fraviker fra det fastsatte opplæringsløpet jf. ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som ikke har fulgt normalt opplæringsløp kan formidles forutsatt at lærebedriften legger ved intern opplæringsplan som sikrer at bedriftsopplæringen dekker aktuelle kompetansemål fra alle trinn i læreplanverket for lærefaget."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til utlyste alternative opplæringsmodeller som fraviker fra det fastsatte opplæringsløpet må også fylle betingelsene i andre ledd, samt ha alternativ opplæringsmodell som førsteønske på søknaden. I tillegg må søknaden inneholde supplerende ønsker innenfor det ordinære opplæringsløpet."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunedirektøren kan gi utfyllende retningslinjer."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Rettigheter og vilkår for inntak til videregående opplæring for voksne",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4-1",
+     "visNr": "§ 4-1",
+     "tittel": "Rett til å komme inn på en av tre sluttkompetanser",
+     "ledd": [
+      {
+       "tekst": [
+        "Rett til videregående opplæring for voksne er regulert i ",
+        {
+         "t": "opplæringslova § 18-3",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        ". Retten til å komme inn på en av tre sluttkompetanser er knyttet til de opplæringstilbud som Innlandet fylkeskommune tilbyr."
+       ]
+      },
+      {
+       "tekst": [
+        "Unntak er for søkere med betydelig realkompetanse. Disse vil ha rett til formalisering av kompetansen sin uavhengig av hva Innlandet fylkeskommune tilbyr, jf. ",
+        {
+         "t": "opplæringslova § 18-3, fjerde ledd",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-2",
+     "visNr": "§ 4-2",
+     "tittel": "Formidling av voksne søkere til læreplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Voksne har etter ",
+        {
+         "t": "opplæringslova § 18-6",
+         "l": "lov/2023-06-09-30/§18-6",
+         "a": "opplaeringslova/18-6"
+        },
+        " rett til formidling til læreplass."
+       ]
+      },
+      {
+       "tekst": [
+        "Voksne som er tatt inn i lærefag med modulstrukturert opplæring formidles til læreplass på det tidspunkt en aktuell lærebedrift ønsker å inngå lærekontrakt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Ikrafttredelse",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "5-1",
+     "visNr": "§ 5-1",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. januar 2025. Samtidig oppheves ",
+        {
+         "t": "forskrift 19. juni 2019 nr. 1270 om inntak til videregående skole og formidling til læreplass i Innlandet fylkeskommune",
+         "l": "forskrift/2019-06-19-1270"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

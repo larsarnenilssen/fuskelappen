@@ -1,0 +1,909 @@
+{
+ "id": "ostfold-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til videregående opplæring og formidling til læreplass, Østfold fylkeskommune",
+ "korttittel": "Inntak og formidling i Østfold",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-04-3020",
+ "sistEndret": null,
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "31"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kapI",
+   "type": "kapittel",
+   "nr": "I",
+   "overskrift": "Kapittel I Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1-1",
+     "visNr": "§ 1-1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den lokale forskriften er å regulere inntak til videregående opplæring i Østfold fylkeskommune. Den lokale forskriften utfyller ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        " og fastsetter hvordan Østfold fylkeskommune skal gjennomføre inntak og formidling."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "1-2",
+     "visNr": "§ 1-2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for inntak til offentlig videregående opplæring og formidling av søkere til læreplass i Østfold fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapII",
+   "type": "kapittel",
+   "nr": "II",
+   "overskrift": "Kapittel II Felles bestemmelser",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "2-1",
+     "visNr": "§ 2-1",
+     "tittel": "Søkere med registrert bosted i Østfold",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som er folkeregistrert i en kommune i Østfold per 1. mars eller tidligere det året de søker videregående opplæring, har rett til å bli vurdert for inntak til skole og/eller formidling til læreplass i Østfold fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-2",
+     "visNr": "§ 2-2",
+     "tittel": "Søkere som flytter til Østfold",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med rett til videregående opplæring etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", som ikke er folkeregistrert i Østfold ved søknadsfrist, kan vurderes til inntak i videregående opplæring eller formidling til læreplass i Østfold fylkeskommune dersom følgende vilkår er oppfylt:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren skal flytte til Østfold og har til hensikt å bosette seg fast i fylket."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Det fremlegges dokumentasjon innen 1. juni som viser at flytting skal finne sted."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Følgende dokumenter anses som tilstrekkelig:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "kopi av folkeregistrert adresse eller bekreftelse på innsendt adresseendring til Folkeregisteret,"
+           ],
+           "liste": [
+            {
+             "merke": "b.",
+             "ledd": [
+              {
+               "tekst": [
+                "leie- eller kjøpekontrakt på bolig i Østfold,"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "c.",
+             "ledd": [
+              {
+               "tekst": [
+                "arbeidskontrakt med arbeidssted i fylket, eller"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "d.",
+             "ledd": [
+              {
+               "tekst": [
+                "annen relevant dokumentasjon som sannsynliggjør varig flytting til Østfold."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkeren må være folkeregistrert i Østfold innen skolestart eller oppstart av lærekontrakt."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkeren vil kun ha rett til inntak i ett fylke."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "10 des 2025 nr. 2596",
+        "l": "forskrift/2025-12-10-2596"
+       },
+       " (i kraft 1 jan 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-3",
+     "visNr": "§ 2-3",
+     "tittel": "Søknadsfrister",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknadsfristen til videregående skoler er 1. februar for søkere som faller inn under ",
+        {
+         "t": "forskrift til opplæringsloven § 4-9 annet ledd",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        ", og 1. mars for elever som søker seg inn i det ordinære inntaket jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-9 første ledd",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Fristen for å søke om formidling til læreplass er 1. februar for de som ønsker læreplass som lærekandidat og 1. mars for de som ønsker læreplass som lærling, jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 7-5",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader fra søkere med opplæringsrett som mottas etter søknadsfristens utløp, tas hensyn til så langt rå er. Hvis en søknad kommer for sent, skal fylkeskommunen informere søkeren om det og om konsekvensene av det."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapIII",
+   "type": "kapittel",
+   "nr": "III",
+   "overskrift": "Kapittel III Søknad til videregående skoler",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3-1",
+     "visNr": "§ 3-1",
+     "tittel": "Søkere fra Østfold til tilbud i andre fylker",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med opplæringsrett i Østfold fylkeskommune etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " som ønsker videregående opplæring i et annet fylke, må søke direkte til det fylket som har tilbudet jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-14 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§4-14",
+         "a": "opplaeringsforskrifta/4-14"
+        },
+        ". Det er vertsfylket som behandler søknaden."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-2",
+     "visNr": "§ 3-2",
+     "tittel": "Søknad og inntak til landslinjer, landsdekkende tilbud og statlige skoler",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med opplæringsrett i Østfold til landslinjer og landsdekkende tilbud skal registrere søknaden i Østfold. Hvor søkeren er folkeregistrert har ingenting å si for rekkefølgen ved inntaket til landslinjer jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-16",
+         "l": "forskrift/2024-06-03-900/§4-16",
+         "a": "opplaeringsforskrifta/4-16"
+        },
+        ". Søknader til statlige videregående skoler registreres i det fylket hvor skolen ligger."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-3",
+     "visNr": "§ 3-3",
+     "tittel": "Endring av søknaden",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til videregående opplæring kan endre og/eller supplere sine ønsker om utdanningsprogram, programområder, lærefag og skoler én gang frem til 1. mai. Dersom søker er elev inneværende år, må rådgiver ved skolen bistå søker ved endringen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere som søker om fortrinnsrett eller individuell behandling, kan ikke endre søknaden etter søknadsfristen med mindre det foreligger dokumenterte tungtveiende årsaker."
+       ]
+      },
+      {
+       "tekst": [
+        "Frist for å endre søknad om inntak til tilbud med ferdighetsbasert inntak til musikk/dans/drama og idrettsfag med toppidrett er 1. april."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapIV",
+   "type": "kapittel",
+   "nr": "IV",
+   "overskrift": "Kapittel IV Inntak til videregående skoler",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4-1",
+     "visNr": "§ 4-1",
+     "tittel": "Inntaksordning",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til Vg1 kan føre opp så mange skoler de ønsker på søknaden i prioritert rekkefølge, men i Østfold fylkeskommune er det en hovedregel om geografisk styrt inntak basert på et nærskoleprinsipp til Vg1. Søkere til Vg2 og Vg3 kan føre opp så mange programområder de er kvalifisert til og så mange skoler de ønsker i prioritert rekkefølge."
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nærskoleprinsippet"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Nærskolen er nærmeste skole som tilbyr ønsket utdanningsprogram. Nærskolene defineres på grunnlag av søkernes folkeregistrerte postnummer per 1. mars i søknadsåret."
+       ]
+      },
+      {
+       "tekst": [
+        "Skoler innenfor samme geografiske område med samme utdanningsprogram i sitt opplæringstilbud, regnes som en del av samme nærskoleområde. Søkere bosatt innenfor dette området kan søke samme utdanningsprogram på alle skolene i området."
+       ],
+       "liste": [
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Unntak fra nærskoleprinsippet"
+           ],
+           "liste": [
+            {
+             "merke": "a.",
+             "ledd": [
+              {
+               "tekst": [
+                "Ledig kapasitet"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er ledig kapasitet etter at nærskolesøkere er tatt inn kan ordinære søkere tilbys plass på andre skoler enn nærskolen. For ordinære søkere tilbys de ledige plassene på grunnlag av poengsum, jf. ",
+        {
+         "t": "§ 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        " og ",
+        {
+         "t": "§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        " i forskrift til opplæringsloven."
+       ],
+       "liste": [
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Begrenset tilbud"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Noen tilbud finnes kun på et begrenset antall skoler i Østfold fylkeskommune. Søkere til disse tilbudene søker på lik linje og ordinære søkere tas inn på grunnlag av poengsum, jf. ",
+        {
+         "t": "§ 4-19",
+         "l": "forskrift/2024-06-03-900/§4-19",
+         "a": "opplaeringsforskrifta/4-19"
+        },
+        " og ",
+        {
+         "t": "§ 4-25",
+         "l": "forskrift/2024-06-03-900/§4-25",
+         "a": "opplaeringsforskrifta/4-25"
+        },
+        " i forskrift til opplæringsloven. Hvilke utdanningsprogram som er omfattet av unntaket fastsettes av fylkestinget."
+       ],
+       "liste": [
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkere uten tilbud"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Etter andre inntak kan søkere til Vg1 om nødvendig bli tilbudt plass ved skoler de ikke har søkt, for å oppfylle retten til inntak på ett av tre søkte utdanningsprogram. Søkere til Vg2 og Vg3 kan om nødvendig bli tilbudt plass både på et programområde og en skole de ikke har søkt."
+       ],
+       "liste": [
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Særlige grunner"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere til Vg1 kan av særlige grunner prioriteres til en annen skole enn nærskolen i følgende tilfeller: tungtveiende grunner for bytte av skolemiljø, deltakelse i idrett eller kulturaktiviteter på høyt nivå innenfor sin aktivitet i skolens nærområde eller svært uegnet reisevei."
+       ]
+      },
+      {
+       "tekst": [
+        "Forholdet som utgjør en særlig grunn, må dokumenteres og dokumentasjonen må følge søknaden innen søknadsfristen 1. mars. Etter godkjenning må søkeren konkurrere med øvrige søkere som har skolen som sin nærskole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-2",
+     "visNr": "§ 4-2",
+     "tittel": "Forrang til egen skole for søkere fra studieforberedende utdanningsprogram",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til Vg2 og Vg3 på studieforberedende utdanningsprogram gis elever og utvekslingselever fra egen skole forrang. Dette omfatter elever som søker neste nivå det påfølgende skoleåret. Dersom det er flere søkere med forrang til skolen enn det er elevplasser ved det aktuelle programområdet, avgjøres inntaket etter poengsum jf. ",
+        {
+         "t": "§ 4-14",
+         "l": "forskrift/2024-06-03-900/§4-14",
+         "a": "opplaeringsforskrifta/4-14"
+        },
+        " i forskrift til opplæringsloven."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-3",
+     "visNr": "§ 4-3",
+     "tittel": "Overgang til Vg2 studiespesialisering fra andre studieforberedende utdanningsprogram på Vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra Vg1 idrettsfag, Vg1 kunst, design og arkitektur, Vg1 musikk, dans og drama og Vg1 medier og kommunikasjon kan søke overgang til Vg2 studiespesialisering. Disse søkerne rangeres bak søkere fra Vg1 studiespesialisering og har ikke forrang ved egen skole. Søkere fra studieforberedende utdanningsprogram til Vg2 studiespesialisering må ha bestått fagene geografi og samfunnsfag for å være kvalifisert."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-4",
+     "visNr": "§ 4-4",
+     "tittel": "Utvekslingselever",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen gir tilbud om skoleplass til utvekslingselever som blir formidlet via godkjente organisasjoner. Ønsket skole, utdanningsprogram eller programområde vektlegges, men tilbud gis ut fra kapasitet."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak av elever som har en avtale om å bruke utvekslingsåret som kompetansegivende, skjer med forbehold om at eleven ved skolestart kan dokumentere at året i utlandet er gjennomført i henhold til den inngåtte avtalen."
+       ]
+      },
+      {
+       "tekst": [
+        "For elever hvor utvekslingsåret følger kalenderår, delegeres det til skolen å reservere plass. Dette forutsetter at det er tilstrekkelig grunnlag for vurdering etter ",
+        {
+         "t": "forskrift til opplæringsloven § 9-1",
+         "l": "forskrift/2024-06-03-900/§9-1",
+         "a": "opplaeringsforskrifta/9-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-5",
+     "visNr": "§ 4-5",
+     "tittel": "Ferdighetsbasert inntak til Vg1 musikk, dans og drama",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til inntil halvparten av plassene på Vg1 musikk, dans og drama skjer på bakgrunn av en kombinasjon av karakterpoengsum fra grunnskolen og fremviste ferdigheter i en opptaksprøve. Søkerne har kun rett til å delta på en opptaksprøve, som må avholdes i den fordypningen og ved den skolen de har satt opp som sitt første ønske jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-6 første ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        ". Ved inntak til fagdisiplinen musikk kan det også tas hensyn til instrumentsammensetning."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-6",
+     "visNr": "§ 4-6",
+     "tittel": "Ferdighetsbasert inntak til Vg1 idrettsfag med toppidrett",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til inntil halvparten av plassene på Vg1 idrettsfag med toppidrett skjer på bakgrunn av en kombinasjon av karakterpoengsum fra grunnskolen og dokumenterte ferdigheter jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-6 første ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        ". Det er kun søkere som har satt opp det aktuelle tilbudet som sitt første ønske på søknaden, som vurderes for inntak."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-7",
+     "visNr": "§ 4-7",
+     "tittel": "Inntak til særskilte yrkesfaglige utdanningsløp",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak til 4-årig yrkes- og studiekompetanse (YSK) skjer etter ordinær poengkonkurranse blant søkere som er vurdert som egnet på bakgrunn av intervju og vurdering av faglige forutsetninger, jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-6 annet ledd",
+         "l": "forskrift/2024-06-03-900/§4-6",
+         "a": "opplaeringsforskrifta/4-6"
+        },
+        ". Søkere må ha faglig grunnlag og forutsetninger for å kunne tilegne seg studiekompetanse parallelt med yrkeskompetanse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-8",
+     "visNr": "§ 4-8",
+     "tittel": "Endring i fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolens rektor vedtar om en elev kan endre fag- og timefordeling etter at eleven er tatt inn til et fullstendig utdanningsprogram eller programområde. Søknaden kan bare innvilges når det foreligger dokumenterte tungtveiende grunner eller når eleven har fullført fag tidligere og foretatt omvalg."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-9",
+     "visNr": "§ 4-9",
+     "tittel": "Inntak til påbyggingsår etter fullført yrkeskompetanse",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til påbyggingsår etter fullført yrkeskompetanse må fagprøve være bestått innen 1. oktober det året man søker skoleplass. Det forutsettes at alle fag på alle nivåer er bestått."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapV",
+   "type": "kapittel",
+   "nr": "V",
+   "overskrift": "Kapittel V Svar på tilbud og aksept av skoleplass",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "5-1",
+     "visNr": "§ 5-1",
+     "tittel": "Svar på tilbud om skoleplass/ventelisteplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere som ikke svarer på tilbud om skoleplass og/eller ventelisteplass innen den svarfristen som oppgis i forbindelse med inntaket, mister den tilbudte plassen. Det kan registreres forhåndssvar fra søknaden registreres og til og med 1. juli."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-2",
+     "visNr": "§ 5-2",
+     "tittel": "Aksept av skoleplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Tilbudet om skoleplass anses som akseptert når søkeren har bekreftet plassen og har møtt opp på skolen den første uken etter skolestart. Dersom en søker uteblir fra skolen en eller flere dager den første uken, uten gyldig grunn, kan vedkommende miste skoleplassen. Det må gis melding til skolen om fraværet fra første dag."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-3",
+     "visNr": "§ 5-3",
+     "tittel": "Utsettelse av tildelt skoleplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad om utsettelse av skoleplass fra ett skoleår til det neste kan innvilges dersom søkeren fikk tilbud om skoleplass før skolestart eller har vært elev ved en videregående skole i minst to uker før opplæringen måtte avbrytes. Utsettelsen gjelder samme utdanningsprogram/programområde og skole som søkeren ble tatt inn på. Søknaden innvilges dersom ett av følgende forhold kan dokumenteres: utenlandsopphold i følge med foresatte, skolegang i land med avvikende skoleår, graviditet, verneplikt, sykdom eller særlig vanskelige psykososiale forhold."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-4",
+     "visNr": "§ 5-4",
+     "tittel": "Avslutning av inntaket",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntaket avsluttes 1. september. Etter at inntaket er avsluttet, kan rektor ved den enkelte skole ta inn elever til ledige plasser i samsvar med gjeldende lov og forskrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapVI",
+   "type": "kapittel",
+   "nr": "VI",
+   "overskrift": "Kapittel VI Formidling til læreplass",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "6-1",
+     "visNr": "§ 6-1",
+     "tittel": "Formidling av søkere til læreplass som lærling eller lærekandidat",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med opplæringsrett i Østfold etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " som søker læreplass og har registrert læreplassønsker på vigo.no, formidles til alle godkjente opplæringskontorer og lærebedrifter etter 1. mars."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkeren formidles ved at informasjon om søker gjøres tilgjengelig for godkjente opplæringskontor og lærebedrifter."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkeren må selv følge opp søknaden underveis i formidlingsperioden. Dette innebærer blant annet at søkeren må besvare henvendelser fra bedrifter og fra fylkeskommunen og være aktiv for å skaffe seg læreplass i en aktuell bedrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-2",
+     "visNr": "§ 6-2",
+     "tittel": "Søker som ikke oppfyller vilkårene for formidling til lærekontrakt",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere til læreplass som lærling, men som ikke har oppfylt vilkårene for formidling til lærekontrakt jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 7-3 2. ledd",
+         "l": "forskrift/2024-06-03-900/§7-3",
+         "a": "opplaeringsforskrifta/7-3"
+        },
+        ", kan formidles som søker til læreplass, men som lærekandidat inntil vilkårene er oppfylt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-3",
+     "visNr": "§ 6-3",
+     "tittel": "Søkere fra Østfold til læreplass i andre fylker",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere med opplæringsrett i Østfold fylkeskommune etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " som ønsker læreplass i et annet fylke, må søke Vigo.no i Østfold for å ha rett til et opplæringstilbud. Søkeren som ønsker læreplass i et annet fylke, må i tillegg søke direkte til aktuelle lærebedrifter. Hvis det søkes direkte til andre fylkeskommuner, vil det reguleres av dette fylkets lokale forskrift."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-4",
+     "visNr": "§ 6-4",
+     "tittel": "Søkere til læreplass i Østfold fra andre fylker",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkere fra andre fylker vil stoppes i Vigo frem til de har fått læreplass i Østfold på egenhånd ved å søke direkte til lærebedriften/opplæringskontor."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-5",
+     "visNr": "§ 6-5",
+     "tittel": "Tilbud om læreplass eller annet opplæringstilbud på Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "Søker med opplæringsrett i Østfold fylkeskommune etter ",
+        {
+         "t": "opplæringsloven § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " har rett på et tilbud i et lærefag som bygger på det Vg2 søkeren har fullført. Dette kan også være læreplass i et annet lærefag enn det som er søkt, jf. ",
+        {
+         "t": "opplæringsloven § 5-6",
+         "l": "lov/2023-06-09-30/§5-6",
+         "a": "opplaeringslova/5-6"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For å få opplæringstilbud på Vg3 må det være søkt formidling til læreplass innen søknadsfristene jf. ",
+        {
+         "t": "forskrift til opplæringsloven § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        ". Søker med opplæringsrett som ikke har bestått fag fra underliggende programområde på Vg1 og Vg2, får normalt tilbud om opplæring på Vg3 mot kompetanseprøve."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-6",
+     "visNr": "§ 6-6",
+     "tittel": "Avslutning av formidlingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Basen i det tekniske søkersystemet Vigo slettes i november for klargjøring til nytt år, men formidlingen for søkere samme år vil fortsette."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "16 april 2026 nr. 923",
+        "l": "forskrift/2026-04-16-923"
+       },
+       " (tidligere § 6-7)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapVII",
+   "type": "kapittel",
+   "nr": "VII",
+   "overskrift": "Kapittel VII Ikrafttredelse og endringer av forskriften",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "7-1",
+     "visNr": "§ 7-1",
+     "tittel": "Endringer av forskrift",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen har rett til å gjøre mindre endringer i den lokale forskriften. Dersom endringen er av en slik art at den påvirker den enkelte søkers rett til inntak, må den vedtas av fylkestinget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-2",
+     "visNr": "§ 7-2",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften skal gjelde fra 1. januar 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Samtidig oppheves ",
+        {
+         "t": "forskrift 17. desember 2020 nr. 3270​1 om inntak til videregående opplæring og formidling til læreplass i Viken fylkeskommune",
+         "l": "forskrift/2020-12-17-3270"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Skal vel være ",
+       {
+        "t": "forskrift 13. desember 2019 nr. 2195",
+        "l": "forskrift/2019-12-13-2195"
+       },
+       ", Lovtidend-redaksjonens anmerkning."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

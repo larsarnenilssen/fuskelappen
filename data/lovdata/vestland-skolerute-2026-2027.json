@@ -1,0 +1,200 @@
+{
+ "id": "vestland-skolerute-2026-2027",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skulerute for skuleåret 2026/2027, Vestland fylkeskommune",
+ "korttittel": "Skulerute 2026–2027 i Vestland",
+ "malform": "nn",
+ "refid": "forskrift/2026-08-06-1634",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-07-31",
+ "lokaltype": "skolerute",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "46"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skulerute for skuleåret 2026/2027, Vestland fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Føremål og verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gjev informasjon om skule- og feriedagar elevane har i skuleåret 2026–2027."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskrifta gjeld for dei vidaregåande skulane i Vestland fylkeskommune i skuleåret 2026–2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Skule- og feriedagar skuleåret 2026/2027",
+     "ledd": [
+      {
+       "tekst": [
+        "Dei vidaregåande skulane følgjer som hovudregel skuleruta for vertskommunen. Oppstart og avslutning av skuleåret skal følgje vertskommunen. Skulane skal følgje vertskommunen sin vinterferie. Skulane skal så langt råd leggje elevfrie dagar parallelt med kommunen dei høyrer til."
+       ]
+      },
+      {
+       "tekst": [
+        "6. november 2026 er felles elevfri dag ved alle dei vidaregåande skulane i Vestland fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Månad"
+         ],
+         [
+          "Veke/dato"
+         ],
+         [
+          "Hending"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "August"
+          ],
+          [
+           "måndag 17. august"
+          ],
+          [
+           "Første skuledag"
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Veke 41, måndag 5.–fredag 9. oktober"
+          ],
+          [
+           "Haustferie"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Fredag 6. november"
+          ],
+          [
+           "Felles elevfri dag vgs."
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Onsdag 23. desember–fredag 1. januar"
+          ],
+          [
+           "Juleferie"
+          ]
+         ],
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Fredag 29. januar"
+          ],
+          [
+           "Første skuledag måndag 4. januar Elevfri dag"
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [
+           "Veke 8 måndag 22.–fredag 26. februar"
+          ],
+          [
+           "Vinterferie"
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Veke 9 måndag 1.–fredag 5. mars Siste skuledag før påske fredag 19. mars Første skuledag etter påske tysdag 30. mars"
+          ],
+          [
+           "Påskeferie"
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Fredag 7. mai Fredag 28. mai"
+          ],
+          [
+           "Elevfri dag Elevfri dag"
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Fredag 18. juni"
+          ],
+          [
+           "Siste skuledag"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

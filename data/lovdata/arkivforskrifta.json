@@ -1,0 +1,1329 @@
+{
+ "id": "arkivforskrifta",
+ "kilde": "arkivforskrifta",
+ "type": "forskrift",
+ "tittel": "Forskrift om dokumentasjon og arkiv (arkivforskrifta)",
+ "korttittel": "Arkivforskrifta",
+ "malform": "nn",
+ "refid": "forskrift/2025-12-17-2647",
+ "sistEndret": null,
+ "iKraft": "2026-01-01",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "nasjonal"
+ },
+ "utvalg": [
+  "1",
+  "2",
+  "8"
+ ],
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Forvaltning av dokumentasjon som arkiv",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Kva eit organ skal ta omsyn til når det skal avgjere kva dokumentasjon det skal forvalte som arkiv",
+     "ledd": [
+      {
+       "tekst": [
+        "Når eit organ skal avgjere kva dokumentasjon det skal forvalte som arkiv etter ",
+        {
+         "t": "arkivlova § 5",
+         "l": "lov/2025-06-20-96/§5"
+        },
+        ", skal det særleg ta omsyn til om dokumentasjonen"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "er relevant for å stadfeste korleis organet har handsama saker, løyst oppgåvene sine og handtert andre vesentlege tilhøve ved verksemda"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "kan tene som prov på privatpersonar eller andre private rettssubjekt sine rettar og plikter"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "allereie blir sikra og forvalta som arkiv i eit anna informasjonssystem i organet eller av eit anna organ i eit system for felles oppgåveløysing som avtalt etter ",
+            {
+             "t": "§ 8",
+             "l": "forskrift/2025-12-17-2647/§8",
+             "a": "arkivforskrifta/8"
+            },
+            " i denne forskrifta."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Forskrift om kva dokumentasjon som skal takast vare på for ettertida",
+     "ledd": [
+      {
+       "tekst": [
+        "Når Nasjonalarkivet gir forskrift med heimel i ",
+        {
+         "t": "arkivlova § 12 andre ledd andre punktum",
+         "l": "lov/2025-06-20-96/§12/ledd/2/setning/2"
+        },
+        " om kva dokumentasjon som organa skal ta vare på for ettertida, skal Nasjonalarkivet leggje desse kriteria til grunn:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "i kva grad dokumentasjonen viser endringar i samfunnet, medrekna korleis ulike grupper, organisasjonar og verksemder har påverka og har blitt påverka av utviklinga over tid"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "i kva grad dokumentasjonen viser endringar i naturen og klimaet over tid"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "i kva grad dokumentasjonen viser korleis offentlege organ forvaltar oppgåvene sine og ansvaret sitt, medrekna korleis dei utøver mynde og samhandlar med kvarandre"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "i kva grad dokumentasjonen viser korleis dei private rettssubjekta som er omfatta av ",
+            {
+             "t": "arkivlova",
+             "l": "lov/2025-06-20-96"
+            },
+            ", forvaltar oppgåvene sine, jf. ",
+            {
+             "t": "arkivlova § 3",
+             "l": "lov/2025-06-20-96/§3"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "om dokumentasjonen kan tene som prov på privatpersonar eller andre private rettssubjekt sine rettar eller plikter i framtida."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Oppbevaringstider for dokumentasjon",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ skal sjølv fastsetje oppbevaringstider for dokumentasjon som ikkje er omfatta av forskrifta gitt av Nasjonalarkivet med heimel i ",
+        {
+         "t": "arkivlova § 12 andre ledd andre punktum",
+         "l": "lov/2025-06-20-96/§12/ledd/2/setning/2"
+        },
+        " om kva dokumentasjon som organa skal ta vare på for ettertida."
+       ]
+      },
+      {
+       "tekst": [
+        "Når organet fastset oppbevaringstider, skal det vurdere kor lenge det er naudsynt å oppbevare dokumentasjon av omsyn til"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "reglar om tidsavgrensa oppbevaring i anna regelverk"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "dei administrative og juridiske dokumentasjonsbehova til organet sjølv"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "dei juridiske dokumentasjonsbehova til andre offentlege og private verksemder"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokumentasjonsbehova til borgarane."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Særlege reglar for visse organ",
+     "ledd": [
+      {
+       "tekst": [
+        "Utval som er oppretta ved kongeleg resolusjon eller lov, skal reknast som eigne organ etter ",
+        {
+         "t": "arkivlova",
+         "l": "lov/2025-06-20-96"
+        },
+        " og ha eigne arkiv dersom det ikkje er fastsett noko anna i resolusjonen eller lova som gav heimel for oppretting av utvalet."
+       ]
+      },
+      {
+       "tekst": [
+        "Eit utval som er oppretta ved kongeleg resolusjon eller lov og som skal ha eige arkiv, er ikkje omfatta av ",
+        {
+         "t": "arkivlova § 14 første ledd",
+         "l": "lov/2025-06-20-96/§14/ledd/1"
+        },
+        ". Når utvalet blir lagt ned, skal ansvaret for arkivet overførast til vedkomande departement eller anna overordna organ."
+       ]
+      },
+      {
+       "tekst": [
+        "Organa som er nemnde i ",
+        {
+         "t": "arkivlova § 14 fjerde ledd bokstav b",
+         "l": "lov/2025-06-20-96/§14/ledd/4/bokstav/b"
+        },
+        " og ",
+        {
+         "t": "c",
+         "l": "lov/2025-06-20-96/§14/ledd/4/bokstav/c"
+        },
+        ", skal avtale med den bevaringsinstitusjonen som Nasjonalarkivet fastset, når og korleis arkiva skal avleverast."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Krav til informasjonssystem",
+     "ledd": [
+      {
+       "tekst": [
+        "Informasjonssystem som inneheld dokumentasjon som skal forvaltast som arkiv, skal ha funksjonar som gjer at informasjonen blir sikra og forvalta i tråd med ",
+        {
+         "t": "arkivlova § 5 første ledd",
+         "l": "lov/2025-06-20-96/§5/ledd/1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Eit organ som bruker system som er nemnde i første ledd, skal syte for at systema har funksjonar som"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjer at informasjonen har naudsynte metadata om opphavet til informasjonen og samanhengen han inngår i"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "vernar informasjonen mot ikkje-autoriserte endringar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "sporar endringar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjer at dokumentasjonen kan bli eksportert på ein kontrollert, systematisk og etterprøvbar måte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjer at dokumentasjon som ikkje skal takast vare på for ettertida, kan bli kassert på ein kontrollert, systematisk og etterprøvbar måte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjer det mogleg for organ, med enkle framgangsmåtar, å finne fram til og hente ut dokumentasjon for eigne behov og for å gi innsyn etter ",
+            {
+             "t": "offentleglova",
+             "l": "lov/2006-05-19-16"
+            },
+            ", ",
+            {
+             "t": "forvaltningsloven",
+             "l": "lov/1967-02-10"
+            },
+            " eller anna lov"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjer at metadata som skal registrerast saman med saksdokument etter § 15, kan hentast ut til ein journal."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Krav til skildringar av informasjonssystem",
+     "ledd": [
+      {
+       "tekst": [
+        "Organ skal ha skildringar av informasjonssystem som inneheld dokumentasjon som skal forvaltast som arkiv. Skildringane skal vise"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "kva slags typar dokumentasjon som er lagra i systemet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "kva som er opphavet og historikken til dokumentasjonen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "korleis systemet er sikra mot utilsikta eller ikkje dokumenterte endringar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "kva prosedyrar som er etablerte for å registrere og forvalte dokumentasjon i delvis analoge informasjonssystem."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom eit informasjonssystem inneheld dokumentasjon som skal takast vare på for ettertida, skal skildringane òg innehalde ei oversikt over informasjonsstrukturen i systemet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Vedlikehald av digitale arkiv",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ skal halde dokumentasjonen i digitale arkiv ved like, slik at informasjonen er sikra og forvalta i tråd med ",
+        {
+         "t": "arkivlova § 5",
+         "l": "lov/2025-06-20-96/§5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det er påkravd å flytte dokumentasjon til nye lagringsmedium, konvertere dokumentasjon til nye digitale format, ta i bruk nye applikasjonar og standardar for strukturering og utveksling av informasjon eller liknande, skal organet syte for at informasjonen ikkje tapar seg. Organet skal mellom anna sikre at"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "informasjon som i utgangspunktet var leseleg for menneske, framleis er leseleg for menneske etter vedlikehaldet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "informasjon som i utgangspunktet var maskinleseleg, framleis er maskinleseleg etter vedlikehaldet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "metadata som viser opphavet til informasjonen, og korleis sakshandsaminga og oppgåveløysinga har foregått, ikkje blir borte eller forringa"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "eigenskapar ved dokumentasjonen som gjer søk, kopling og samanstilling mogleg, blir oppretthaldne."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Avtale om ansvaret for dokumentasjon i system for felles oppgåveløysing",
+     "ledd": [
+      {
+       "tekst": [
+        "Når fleire organ samarbeider om å løyse oppgåver i eit system for felles oppgåveløysing, skal dokumentasjonen som blir skapt i systemet forvaltast samla. Organa skal avtale kven som skal ha ansvaret for at dokumentasjonen i systemet blir forvalta i tråd med krava i ",
+        {
+         "t": "arkivlova",
+         "l": "lov/2025-06-20-96"
+        },
+        " og forskrift gitt med heimel i lova. Dersom organa avtalar at ansvaret for at krava i ",
+        {
+         "t": "arkivlova",
+         "l": "lov/2025-06-20-96"
+        },
+        " og forskrift gitt med heimel i lova blir oppfylte ikkje skal liggje hos eitt organ åleine, skal det gå fram av avtala korleis ansvaret er fordelt mellom dei."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Konvertering av analog dokumentasjon til digitalt format i den daglege oppgåveløysinga",
+     "ledd": [
+      {
+       "tekst": [
+        "Når eit organ skal konvertere analog dokumentasjon som det har oppretta eller motteke i den daglege oppgåveløysinga, til digitalt format, skal organet følgje reglane i ",
+        {
+         "t": "§ 16 første",
+         "l": "forskrift/2025-12-17-2647/§16/ledd/1"
+        },
+        " og ",
+        {
+         "t": "andre ledd",
+         "l": "forskrift/2025-12-17-2647/§16/ledd/2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Den analoge dokumentasjonen kan destruerast etter at han er konvertert i tråd med første ledd. Dette gjeld ikkje dokumentasjon som er omfatta av ",
+        {
+         "t": "§ 19",
+         "l": "forskrift/2025-12-17-2647/§19"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Krav til sikring av lagringsmedium for arkiv",
+     "ledd": [
+      {
+       "tekst": [
+        "Lagringsmedium for arkiv skal oppbevarast slik at dei alltid er verna mot"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "vatn og fukt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "brann, spreiing av brann og skadeleg varme"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "skadeleg klima- og miljøpåverknad som mugg, skadedyr og liknande"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "skadeverk, innbrot og ikkje-autorisert tilgang."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "For analoge arkiv som skal takast vare på for ettertida, gjeld i tillegg desse krava:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Lysnivå, temperaturar og verdiar for luftfukt i lokalet skal vere såleis tilpassa at lagringsmedium og dokumentasjon held seg best mogleg."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Lokalet skal ikkje ha vindauge dersom det kan setje tryggleiken til arkiva i fare."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Lokalet skal vere særleg utrusta for å hindre at brann oppstår og spreier seg der inne, og for å hindre at brann på utsida spreier seg til lokalet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Arkiva skal plasserast på reolar, minimum 10 cm frå golv og yttervegg."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Golv og reolar skal vere laga for å tole vekta av arkiva."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "Lokalet skal ha fast tilsyn og reinhald."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Det skal setjast i verk tiltak med det same dersom det oppstår risiko for at arkiv kan bli skadde. Oppståtte skadar på arkiv skal utbetrast så langt det er mogleg."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Retting av feil i registrerte opplysningar",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ som oppdagar at det er feil i registrerte opplysningar, kan leggje til korrekt informasjon for å rette feila. Organet skal dokumentere kva feil som blei retta, og når og korleis dei blei retta. Feil må ikkje rettast på måtar som gjer at den opphavlege informasjonen går tapt."
+       ]
+      },
+      {
+       "tekst": [
+        "Organet skal fastsetje rutinar for retting av feil i registrerte opplysningar i arkiv."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Kva dokumentasjonsplanen skal innehalde",
+     "ledd": [
+      {
+       "tekst": [
+        "Dokumentasjonsplanen til eit organ skal oppfylle krava i ",
+        {
+         "t": "arkivlova § 8 første",
+         "l": "lov/2025-06-20-96/§8/ledd/1"
+        },
+        " og ",
+        {
+         "t": "andre ledd",
+         "l": "lov/2025-06-20-96/§8/ledd/2"
+        },
+        " og i tillegg innehalde"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om eventuelle tenesteavtaler om arkiv som organet har inngått med andre organ eller private rettssubjekt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "vurderingane som ligg til grunn for avgjerda om kva dokumentasjon organet skal forvalte som arkiv, jf. ",
+            {
+             "t": "§ 1",
+             "l": "forskrift/2025-12-17-2647/§1",
+             "a": "arkivforskrifta/1"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om kva delar av organet sin dokumentasjon som skal takast vare på for ettertida etter forskrift fastsett av Nasjonalarkivet med heimel i ",
+            {
+             "t": "arkivlova § 12 andre ledd andre punktum",
+             "l": "lov/2025-06-20-96/§12/ledd/2/setning/2"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om oppbevaringstid for dokumentasjon som det ikkje er krav om at skal takast vare på for ettertida, jf. ",
+            {
+             "t": "§ 3",
+             "l": "forskrift/2025-12-17-2647/§3",
+             "a": "arkivforskrifta/3"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om reglar om teieplikt og informasjonstryggleik for dei ulike delane av dokumentasjonen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om eventuelle avtaler som er inngått etter ",
+            {
+             "t": "§ 8",
+             "l": "forskrift/2025-12-17-2647/§8",
+             "a": "arkivforskrifta/8"
+            },
+            " om ansvaret for dokumentasjon i system for felles oppgåveløysing"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om kva informasjonssystem organet nyttar til å lagre dokumentasjon som skal forvaltast som arkiv, og om systema oppfyller krava til informasjonssystem i ",
+            {
+             "t": "§ 5",
+             "l": "forskrift/2025-12-17-2647/§5",
+             "a": "arkivforskrifta/5"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "organet sine skildringar av informasjonssystem, jf. ",
+            {
+             "t": "§ 6",
+             "l": "forskrift/2025-12-17-2647/§6",
+             "a": "arkivforskrifta/6"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "organet sine rutinar for retting av feil i registrerte opplysningar, jf. ",
+            {
+             "t": "§ 11",
+             "l": "forskrift/2025-12-17-2647/§11",
+             "a": "arkivforskrifta/11"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "organet sine rutinar for avlevering eller overføring av arkiv til langtidsbevaring"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "k.",
+         "ledd": [
+          {
+           "tekst": [
+            "organet sine rutinar for å kontrollere at dokumentasjon blir konvertert på rett måte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "l.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om kva avslutta analoge arkiv som er konverterte etter ",
+            {
+             "t": "kapittel 3",
+             "l": "forskrift/2025-12-17-2647/kap3"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "m.",
+         "ledd": [
+          {
+           "tekst": [
+            "oversikter som er utarbeidde etter ",
+            {
+             "t": "§ 49",
+             "l": "forskrift/2025-12-17-2647/§49"
+            },
+            " når ansvaret for dokumentasjon er blitt flytta mellom organ i samband med omorganisering av offentleg sektor"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "n.",
+         "ledd": [
+          {
+           "tekst": [
+            "oversikt over korleis eventuelle analoge arkiv er ordna"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "o.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysningar om kva som er avtalt med andre som løyser lovpålagde oppgåver på vegner av organet om korleis pliktene etter lova skal følgjast opp, jf. ",
+            {
+             "t": "arkivlova § 7 første ledd",
+             "l": "lov/2025-06-20-96/§7/ledd/1"
+            },
+            ", og kva som skal gjelde for dokumentasjon som organet har plikt til å ta imot etter ",
+            {
+             "t": "arkivlova § 7 andre ledd",
+             "l": "lov/2025-06-20-96/§7/ledd/2"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Internkontroll med dokumentasjonsforvaltninga",
+     "ledd": [
+      {
+       "tekst": [
+        "Kommunar og fylkeskommunar skal ha internkontroll med dokumentasjonsforvaltninga etter reglane i ",
+        {
+         "t": "kommuneloven § 25-1",
+         "l": "lov/2018-06-22-83/§25-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Den øvste leiinga i andre organ som er omfatta av lova har ansvar for at det blir ført internkontroll med at dokumentasjon som blir til som ledd i verksemda, blir forvalta etter ",
+        {
+         "t": "arkivlova",
+         "l": "lov/2025-06-20-96"
+        },
+        " med forskrifter. Organet skal løpande vurdere om det er risiko for brot på reglane og setje i verk dei tiltaka som trengst for å redusere risikoen til eit forsvarleg nivå. Organet skal særleg vurdere risiko ved vedlikehald av digitale arkiv, jf. ",
+        {
+         "t": "§ 7",
+         "l": "forskrift/2025-12-17-2647/§7",
+         "a": "arkivforskrifta/7"
+        },
+        " og risiko ved destruksjon av analoge arkiv etter konvertering, jf. ",
+        {
+         "t": "§ 18",
+         "l": "forskrift/2025-12-17-2647/§18"
+        },
+        ". Dokumentasjonsplanen skal leggjast fram for den øvste leiinga i organet som ein del av internkontrollen minst éin gong i året."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Journalføring",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Kva dokument som skal registrerast i journal",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ skal føre journal for å leggje til rette for offentleg innsyn. I journalen skal organet registrere alle inngåande og utgåande dokument som etter ",
+        {
+         "t": "offentleglova § 4",
+         "l": "lov/2006-05-19-16/§4",
+         "a": "offentleglova/4"
+        },
+        " må reknast som saksdokument for organet, dersom dei er eller blir sakshandsama og har verdi som stadfesting av dei tilhøva dei gjeld."
+       ]
+      },
+      {
+       "tekst": [
+        "Organinterne dokument etter ",
+        {
+         "t": "offentleglova § 14",
+         "l": "lov/2006-05-19-16/§14",
+         "a": "offentleglova/14"
+        },
+        " skal organet registrere i journalen så langt organet finn det tenleg. Desse organinterne dokumenta skal likevel alltid journalførast:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokument som er omtalte i ",
+            {
+             "t": "offentleglova § 14 andre ledd",
+             "l": "lov/2006-05-19-16/§14/ledd/2",
+             "a": "offentleglova/14"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokument som er omtalte i ",
+            {
+             "t": "offentleglova § 16 første ledd bokstav a",
+             "l": "lov/2006-05-19-16/§16/ledd/1/bokstav/a",
+             "a": "offentleglova/16"
+            },
+            " til ",
+            {
+             "t": "d",
+             "l": "lov/2006-05-19-16/§16/ledd/1/bokstav/d",
+             "a": "offentleglova/16"
+            },
+            ", ",
+            {
+             "t": "§ 16 andre ledd",
+             "l": "lov/2006-05-19-16/§16/ledd/2",
+             "a": "offentleglova/16"
+            },
+            " og ",
+            {
+             "t": "§ 16 tredje ledd første punktum",
+             "l": "lov/2006-05-19-16/§16/ledd/3/setning/1",
+             "a": "offentleglova/16"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokument som er omtalte i ",
+            {
+             "t": "offentlegforskrifta § 8",
+             "l": "forskrift/2008-10-17-1119/§8"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Dokument i saker om innsyn er ikkje omfatta av journalføringsplikta med mindre dokumenta gjeld eller inneheld ei nærare grunngjeving, ein klage, eit krav om betaling for innsyn eller eit spørsmål om korleis innsyn skal givast."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Kva metadata som skal registrerast om eit saksdokument i ein journal",
+     "ledd": [
+      {
+       "tekst": [
+        "Eit organ som skal føre journal etter ",
+        {
+         "t": "§ 14 første ledd første punktum",
+         "l": "forskrift/2025-12-17-2647/§14/ledd/1/setning/1",
+         "a": "arkivforskrifta/14"
+        },
+        ", skal løpande registrere følgjande metadata om alle saksdokument som er journalføringspliktige:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "identifikator som gir dokumentet eit unikt kjenneteikn som kan lesast av menneske"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "informasjon om konteksten dokumentet blir brukt i, og kva andre dokument det høyrer saman med"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "ein tittel eller andre metadata som viser kva dokumentet gjeld"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "namnet på sendaren eller mottakaren av dokumentet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "datoen på dokumentet eller datoen som viser når dokumentet blei sendt eller motteke"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "tidspunktet for registreringa."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Organet skal gjere journalen tilgjengeleg for offentleg innsyn etter reglane i ",
+        {
+         "t": "offentleglova",
+         "l": "lov/2006-05-19-16"
+        },
+        ". Organet kan gjere unntak frå innsyn i opplysningar i journalen dersom det ikkje er mogleg å registrere eit dokument utan at det kjem fram opplysningar som er omfatta av lovfesta teieplikt, eller som allmenta elles ikkje kan krevje innsyn i. Organet kan gjere unntak for ei heil journalregistrering berre når det trengst for ikkje å røpe opplysningar som er omfatta av lovfesta teieplikt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap8",
+   "type": "kapittel",
+   "nr": "8",
+   "overskrift": "Kapittel 8 Handsaming av personopplysningar i arkiv",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "43",
+     "visNr": "§ 43",
+     "tittel": "Handsaming av søknader om kassasjon av enkeltopplysningar",
+     "ledd": [
+      {
+       "tekst": [
+        "Nasjonalarkivet kan etter søknad gjere vedtak om kassasjon av enkeltopplysningar i særlege høve, jf. ",
+        {
+         "t": "arkivlova § 13 tredje ledd første punktum",
+         "l": "lov/2025-06-20-96/§13/ledd/3/setning/1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Når Nasjonalarkivet handsamar ein søknad om kassasjon av enkeltopplysningar, skal det gjere ei samla vurdering av"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "kor belastande lagringa av opplysninga er for den registrerte"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "om den registrerte eller andre vil ha behov for opplysninga no eller i framtida"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "om kassasjonen vil føre til tap av annan viktig informasjon enn dei opplysningane som søknaden gjeld"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "kor mykje arbeid kassasjonen krev."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Den registrerte og det handsamingsansvarlege organet har rett til å klage på avgjerda frå Nasjonalarkivet om kassasjon av enkeltopplysningar. Departementet er klageorgan."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "44",
+     "visNr": "§ 44",
+     "tittel": "Søknad om kassasjon av enkeltopplysningar",
+     "ledd": [
+      {
+       "tekst": [
+        "Ein søknad om kassasjon av enkeltopplysningar må gjelde ei eller fleire konkrete personopplysningar. Søkjaren skal gi informasjon om kva organ som har registrert opplysninga eller opplysningane, og kva samanheng opplysninga eller opplysningane blei gitt eller innhenta i."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknaden skal sendast til det handsamingsansvarlege organet. Etter at organet har gjort dei undersøkingane som må til for å handsame søknaden, skal saka sendast til Nasjonalarkivet. I oversendinga til Nasjonalarkivet skal det gå fram om det handsamingsansvarlege organet meiner at opplysninga eller opplysningane bør kasserast etter ",
+        {
+         "t": "§ 43",
+         "l": "forskrift/2025-12-17-2647/§43",
+         "a": "arkivforskrifta/43"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom dokumentasjonen som inneheld opplysningane, er avlevert til Nasjonalarkivet, skal søknaden sendast dit."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "45",
+     "visNr": "§ 45",
+     "tittel": "Nasjonalarkivets rett til å handsame personopplysningar som ikkje skal takast vare på for ettertida",
+     "ledd": [
+      {
+       "tekst": [
+        "Nasjonalarkivet kan ta imot personopplysningar som ikkje skal takast vare på for ettertida, dersom det er umogleg eller urimeleg arbeids- eller kostnadskrevjande for organet som skal avlevere dokumentasjon, å skilje ut slike personopplysningar frå dokumentasjonen. Personopplysningane skal ikkje gjerast tilgjengelege."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "46",
+     "visNr": "§ 46",
+     "tittel": "Nasjonalarkivets rett til å handsame personopplysningar i samband med utvikling og testing av ny teknologi",
+     "ledd": [
+      {
+       "tekst": [
+        "Nasjonalarkivet kan handsame personopplysningar i avleverte arkiv for å utvikle og teste ny teknologi som skal bidra til å ivareta samfunnsoppdraget til Nasjonalarkivet. Vilkåret for slik handsaming er at det må vere uråd eller uforholdsmessig vanskeleg å utvikle og teste teknologien ved å bruke anonyme eller fiktive opplysningar."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

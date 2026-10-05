@@ -1,0 +1,698 @@
+{
+ "id": "finnmark-skoleregler-voksne",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om ordensregler for videregående opplæring for voksne, Finnmark fylkeskommune",
+ "korttittel": "Regler for voksne i Finnmark",
+ "malform": "nb",
+ "refid": "forskrift/2026-02-10-286",
+ "sistEndret": null,
+ "iKraft": null,
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-voksne",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "56"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om ordensregler for videregående opplæring for voksne, Finnmark fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordensreglene"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "skal legge til rette for et godt lærings- og arbeidsmiljø, og sikre rettighetene og pliktene til alle som følger videregående opplæring for voksne i Finnmark"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "skal bidra til godt samarbeid, trivsel, respekt og medansvar for alle deltakerne"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "skal gjelde på opplæringsstedet sitt område, i opplæringsstedet sitt nærområde i skoletida, ved ekskursjoner, utenlandsopphold og andre aktiviteter i regi av opplæringsstedet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "overstyres av arbeidsavtale og ",
+            {
+             "t": "arbeidsmiljøloven",
+             "l": "lov/2005-06-17-62"
+            },
+            " for deltakere som har avtale eller kontrakt om opplæring i bedrift, når deltakerne er på arbeidsplassen."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Rettighetene til deltakeren",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakere har rett til opplæring og veiledning i samsvar med reglene for videregående opplæring for voksne."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakere har rett til et skolemiljø som fremmer helse, inkludering, trivsel og læring."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakere har rett til et skolemiljø som er fritt for mobbing, vold, hærverk, rasistiske utsagn og holdninger, seksuell trakassering, sjikane på grunn av seksuell legning, religion eller livssyn og annen krenkende oppførsel."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Permisjon og fravær fra opplæringen",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltaker som på grunn av fødsel, sykdom eller andre tungtveiende grunner trenger et avbrudd i opplæringen, kan søke om permisjon, jf. ",
+        {
+         "t": "opplæringsloven § 18-11",
+         "l": "lov/2023-06-09-30/§18-11",
+         "a": "opplaeringslova/18-11"
+        },
+        ". Søknad om permisjon skal sendes til opplæringsstedet, og det må legges ved dokumentasjon på årsaken til søknaden."
+       ]
+      },
+      {
+       "tekst": [
+        "Kortere fravær avklares med lærer eller arbeidssted så fort som mulig, helst før arbeidsdagens begynnelse, for:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "egen sykdom eller sykt barn i henhold til ",
+            {
+             "t": "arbeidsmiljøloven",
+             "l": "lov/2005-06-17-62"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "amming"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "tilvenning av barn i barnehage / førskole / hos barnepasser (inntil 3 dager)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "å følge barn på første skoledag (1 dag)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "eget giftemål (1 dag)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "dødsfall i nær familie eller vennekrets. Samboer og samboers familie likestilles med ektefelle og ektefelles familie (3 dager + rimelig reisetid)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "jobbintervju eller opptak ved skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "oppkjøring til førerkort klasse B og kurs som må tas i forkant av oppkjøringen (langkjøring, glattkjøring, sikkerhetskurs på bane, sikkerhetskurs på vei og teoriprøven)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "avtalt time hos lege, psykolog eller tannlege"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "å pleie en nær pårørende i hjemmet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "k.",
+         "ledd": [
+          {
+           "tekst": [
+            "religiøse høytidsdager (inntil 2 dager pr. år)."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Prosedyre ved usikkerhet om deltakeren har sluttet",
+     "ledd": [
+      {
+       "tekst": [
+        "Opplæringsstedet plikter å legge til rette for at deltakeren skal fullføre opplæringen."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det oppstår usikkerhet om hvorvidt en deltaker har sluttet, for eksempel på grunn av fravær, kan en sluttmelding i form av enkeltvedtak skrives. Sluttmeldingen har tre ukers klageadgang. Dersom deltakeren ennå ikke har fylt 25 år, varsles oppfølgingstjenesten senest når sluttmelding sendes."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det ikke fremsettes klage innenfor klagefristen, bortfaller opplæringsplassen i henhold til enkeltvedtaket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Pliktene til deltakeren",
+     "ledd": [
+      {
+       "tekst": [],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakeren har plikt til å rette seg etter de lover, regler og instrukser som gjelder."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakeren er pliktig til å møte presis til opplæringa og delta aktivt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakeren er pliktig til å møte andre deltakere og ansatte med respekt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakeren skal melde fra om fravær fra første fraværsdag, også om en må forlate opplæringsstedet i løpet av dagen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved ekskursjoner eller reiser i regi av opplæringsinstitusjonen gjelder ordensreglene. Deltakeren skal følge instrukser fra reiseleder, og delta i det oppsatte programmet for turen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakeren må følge verne- og sikkerhetsregler, og bruke verneutstyr og arbeidsklær som det er krav om på arbeidsplassen, eller som er påbudt av arbeidstilsynet, departementet eller opplæringsinstitusjonen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "Det er ikke tillatt å bruke klesplagg som helt eller delvis dekker ansiktet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ved fusk eller forsøk på fusk til eksamen, gjelder reglene i ",
+            {
+             "t": "opplæringsforskriften § 15-25",
+             "l": "forskrift/2024-06-03-900/§15-25",
+             "a": "opplaeringsforskrifta/15-25"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "Hærverk på læremiddel og utstyr som tilhører opplæringsinstitusjonen eller arbeidsplassen kan medføre erstatningsansvar."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "Deltakeren har selv ansvar for sine personlige eiendeler."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "k.",
+         "ledd": [
+          {
+           "tekst": [
+            "Det er ikke lov til å være påvirket av, bruke eller oppbevare noen former for rusmidler på skolens område, eller ved aktivitet i regi av skolen. Dette gjelder også tobakk, snus og e-sigaretter."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "l.",
+         "ledd": [
+          {
+           "tekst": [
+            "Det er ikke anledning til å ha med barn i undervisninga med mindre annet er avtalt med lærer."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "m.",
+         "ledd": [
+          {
+           "tekst": [
+            "Brudd på reglene kan føre til bortvisning."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Tillegg til ordensreglene",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordensreglene er det fastsatt IKT-reglement og utlånsreglement. Deltakeren må gjøre seg kjent med disse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Sanksjoner ved brudd på ordensreglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren kan få sanksjoner med og uten klagerett."
+       ]
+      },
+      {
+       "tekst": [
+        "Sanksjoner uten klagerett:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Muntlig eller skriftlig påtale fra en av de ansatte ved opplæringsstedet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ulovlige og/eller farlige gjenstander blir beslaglagt og kan bli levert til politiet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Lærer eller andre ansatte ved skolen kan i enkelte tilfeller gripe inn fysisk mot deltakeren etter reglene i ",
+            {
+             "t": "opplæringslova § 13-4",
+             "l": "lov/2023-06-09-30/§13-4",
+             "a": "opplaeringslova/13-4"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Rusmidler blir beslaglagt, og narkotika blir levert til politiet."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Faglærer kan utvise deltakeren i inntil 2 klokketimer."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjoner det ikke kan klages på, skal skriftliggjøres."
+       ]
+      },
+      {
+       "tekst": [
+        "Sanksjoner med klagerett:"
+       ]
+      },
+      {
+       "tekst": [
+        "Hvis rektor eller fylkeskommunen skal benytte sanksjoner og tiltak som er nevnt i skolereglene krever dette at det fattes et enkeltvedtak etter ",
+        {
+         "t": "forvaltningsloven kapittel V",
+         "l": "lov/1967-02-10/kapV"
+        },
+        ". Sanksjoner med klagerett inkluderer:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Annullering av eksamen – etter vedtak fattet av rektor"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra eksamen – etter vedtak fattet av rektor"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra en hel skoledag, og inntil fem skoledager etter vedtak fattet av rektor, jf. ",
+            {
+             "t": "opplæringslova § 13-1",
+             "l": "lov/2023-06-09-30/§13-1",
+             "a": "opplaeringslova/13-1"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere som bryter skolereglene i alvorlig grad eller flere ganger, kan vises bort for resten av skoleåret dersom bruddene er særlig alvorlige. Vedtak om bortvising for resten av skoleåret blir fattet av opplæringssjefen jf. ",
+        {
+         "t": "opplæringslova § 13-1 fjerde ledd",
+         "l": "lov/2023-06-09-30/§13-1",
+         "a": "opplaeringslova/13-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Saksbehandling av sanksjoner med klagerett",
+     "ledd": [
+      {
+       "tekst": [
+        "Før det blir satt i verk en reaksjon, skal deltakeren få mulighet til å forklare seg muntlig direkte for den som skal ta avgjørelsen."
+       ]
+      },
+      {
+       "tekst": [
+        "Avgjørelser som gjelder sanksjoner med klagerett, skal være skriftlige og inneholde begrunnelse for vedtaket. I begrunnelsen skal det redegjøres for de faktiske forholdene vedtaket bygger på, og hvilke regler som er brutt. I vedtaket skal det opplyses om klagerett, klagefrist, klageinstans og om retten til å se dokumentene i saken."
+       ]
+      },
+      {
+       "tekst": [
+        "Klagen kan være muntlig. Ansvarlig på opplæringsstedet skal i slike tilfeller skrive ned klagen så fort som mulig."
+       ]
+      },
+      {
+       "tekst": [
+        "Klage fører ikke automatisk til utsettelse av reaksjon. Deltakeren skal informeres om at det er mulig å be om å få utsatt iverksetting av vedtaket inntil klagen er avgjort. Dette er aktuelt ved vedtak om utvisning."
+       ]
+      },
+      {
+       "tekst": [
+        "Klagebehandling:"
+       ]
+      },
+      {
+       "tekst": [
+        "Klagen skal leveres til den som har fattet vedtaket."
+       ]
+      },
+      {
+       "tekst": [
+        "Den som har fattet vedtaket vurderer klagen og tar stilling til utsatt iverksetting dersom det er bedt om det i klagen."
+       ]
+      },
+      {
+       "tekst": [
+        "Den som har fattet vedtaket kan ta klagen til følge."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom klagen ikke blir tatt til følge, skal saken sendes til klageinstansen for endelig avgjørelse."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved oversending av klagen til klageinstansen, skal deltakeren ha kopi av saksdokumentene og oversendingsbrevet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Erstatning og politianmeldelse",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til reaksjoner for brudd på ordensreglene, kan en deltaker bli erstatningsansvarlig etter erstatningsrettslige regler. Rektor anmelder straffbare forhold til politiet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordensreglene for videregående opplæring for voksne gjelder fra skoleåret 2025/2026."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1561 @@
+{
+ "id": "vestfold-fagfordeling-622",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fag på avvikende trinn, Vestfold fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Vestfold",
+ "malform": "nb",
+ "refid": "forskrift/2025-02-11-622",
+ "sistEndret": null,
+ "iKraft": "2025-03-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "39"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om fag på avvikende trinn, Vestfold fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for den videregående opplæringa i Vestfold fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å tydeliggjøre hvilke fag som er på andre trinn enn det som framgår av den nasjonale fag- og timefordelingen innen videregående opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, styrke fagopplæringen i de beskrevne fagene, og være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Skoler med tilbud om fag på avvikende trinn",
+     "ledd": [
+      {
+       "tekst": [
+        "I Vestfold fylkeskommune er det fag på avvikende trinn innen følgende tilbud og skoler:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Helse- og oppvekstfag, studiekompetanse 3 år: Thor Heyerdahl, Sandefjord, Nøtterøy, Horten, Re og Sande videregående skoler (Vg1 Helse- og oppvekstfag, Vg2 Helsearbeiderfag og Vg2 Barne- og ungdomsarbeiderfaget)."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Elektro og datateknologi, studiekompetanse 3 år: Færder og Thor Heyerdahl (Vg1 Elektro- og datateknologi og Vg2 Datateknologi og elektronikk)."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Salg, service og reiseliv, yrkes- og studiekompetanse (YSK) 4 år: Sandefjord videregående skole og Thor Heyerdahl videregående skole."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Helse- og oppvekstfag, yrkeskompetanse 4 år: Thor Heyerdahl (Vg1 Helse- og oppvekstfag, Vg2 Helsearbeiderfaget og Vg3 Helsearbeiderfaget)."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for elever som tas inn på utdanningsprogram fra høsten 2024."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Avvikende fag innen helse- og oppvekstfag",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordinært løp innen programområdet helse- og oppvekstfag, tilbyr skolene helse- og oppvekstfag med studiekompetanse. Timefordeling og plasseringen på trinn for helse- og oppvekstfag med studiekompetanse er slik:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "112"
+          ],
+          [
+           "113"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "84"
+          ],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag"
+          ],
+          [
+           "476"
+          ],
+          [
+           "476"
+          ],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "56"
+          ],
+          [
+           "112"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag fra ST"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Programfag fra ST eller YFF"
+          ],
+          [],
+          [],
+          [
+           "253"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "980"
+          ],
+          [
+           "981"
+          ],
+          [
+           "841"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Avvikende fag innen Elektro- og datateknologi",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved Færder og Thor Heyerdahl videregående skoler gis det tilbud om 3-årig løp innenfor Vg1 Elektro- og datateknologi og vg2 Datateknologi og elektronikk. Det er ulik fag- og timefordeling på de to skolene."
+       ]
+      },
+      {
+       "tekst": [
+        "Fag- og timefordeling på Færder videregående skole:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Fagkode"
+         ],
+         [
+          "Sum"
+         ],
+         [
+          "År 1"
+         ],
+         [
+          "År 2"
+         ],
+         [
+          "År 3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Matematikk 1T"
+          ],
+          [
+           "MAT 1021"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Naturfag YF EL + PB"
+          ],
+          [
+           "NAT1009, NAT1018"
+          ],
+          [
+           "140"
+          ],
+          [
+           "56"
+          ],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Norsk YF + PB"
+          ],
+          [
+           "NOR1262, NOR1270"
+          ],
+          [
+           "393"
+          ],
+          [],
+          [
+           "112"
+          ],
+          [
+           "281"
+          ]
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "ENG1009"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Historie PB"
+          ],
+          [
+           "HIS1011"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [
+           "SAK1001"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "KRO1017,1018,1019"
+          ],
+          [
+           "168"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Programfag Elektrofag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Elektroniske kretser og nettverk"
+          ],
+          [
+           "ELE1006"
+          ],
+          [
+           "197"
+          ],
+          [
+           "197"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Energi og styresystemer"
+          ],
+          [
+           "ELE1007"
+          ],
+          [
+           "280"
+          ],
+          [
+           "280"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Elektroniske kretser og utstyr"
+          ],
+          [
+           "DEL2004"
+          ],
+          [
+           "280"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [
+           "196"
+          ]
+         ],
+         [
+          [
+           "Data- og informasjonsteknologi"
+          ],
+          [
+           "DEL2005"
+          ],
+          [
+           "197"
+          ],
+          [],
+          [
+           "57"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning (YFF)"
+          ],
+          [
+           "YFF4106, YFF4203, YFF4201"
+          ],
+          [
+           "280"
+          ],
+          [
+           "168"
+          ],
+          [
+           "84"
+          ],
+          [
+           "28"
+          ]
+         ],
+         [
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Programfag realfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Matematikk R1"
+          ],
+          [
+           "REA3056"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Matematikk R2"
+          ],
+          [
+           "REA3058"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Fysikk 1"
+          ],
+          [
+           "REA3038"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum klokketimer 60 minutter)"
+          ],
+          [],
+          [
+           "2859"
+          ],
+          [
+           "1037"
+          ],
+          [
+           "981"
+          ],
+          [
+           "841"
+          ]
+         ],
+         [
+          [
+           "Uketimer underv. (45 minutter)"
+          ],
+          [],
+          [],
+          [
+           "37"
+          ],
+          [
+           "35"
+          ],
+          [
+           "30"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Fag- og timefordeling på Thor Heyerdahl videregående skole:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Fagkode"
+         ],
+         [
+          "Sum"
+         ],
+         [
+          "År 1"
+         ],
+         [
+          "År 2"
+         ],
+         [
+          "År 3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Matematikk 1T"
+          ],
+          [
+           "MAT 1021"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Naturfag YF EL + PB"
+          ],
+          [
+           "NAT1009, NAT1018"
+          ],
+          [
+           "140"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Norsk YF + PB"
+          ],
+          [
+           "NOR1262, NOR1270"
+          ],
+          [
+           "393"
+          ],
+          [
+           "112"
+          ],
+          [
+           "113"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "ENG1009"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Historie PB"
+          ],
+          [
+           "HIS1011"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [
+           "SAK1001"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "KRO1017,1018,1019"
+          ],
+          [
+           "168"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Programfag Elektrofag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Elektroniske kretser og nettverk"
+          ],
+          [
+           "ELE1006"
+          ],
+          [
+           "197"
+          ],
+          [
+           "197"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Energi og styresystemer"
+          ],
+          [
+           "ELE1007"
+          ],
+          [
+           "280"
+          ],
+          [
+           "280"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Elektroniske kretser og utstyr"
+          ],
+          [
+           "DEL2004"
+          ],
+          [
+           "280"
+          ],
+          [],
+          [
+           "280"
+          ],
+          []
+         ],
+         [
+          [
+           "Data- og informasjonsteknologi"
+          ],
+          [
+           "DEL2005"
+          ],
+          [
+           "197"
+          ],
+          [],
+          [
+           "197"
+          ],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning (YFF)"
+          ],
+          [
+           "YFF4106, YFF4209,"
+          ],
+          [
+           "-"
+          ],
+          [
+           "0"
+          ],
+          [
+           "0"
+          ],
+          [
+           "0"
+          ]
+         ],
+         [
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Programfag realfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Matematikk R1"
+          ],
+          [
+           "REA3056"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Matematikk R2"
+          ],
+          [
+           "REA3058"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Fysikk 1"
+          ],
+          [
+           "REA3038"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Teknologi og forskningslære 1"
+          ],
+          [
+           "REA3052"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Programmering og modellering X"
+          ],
+          [
+           "REA3064"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Sum klokketimer 60 minutter)"
+          ],
+          [],
+          [
+           "2803"
+          ],
+          [
+           "981"
+          ],
+          [
+           "1010"
+          ],
+          [
+           "812"
+          ]
+         ],
+         [
+          [
+           "Uketimer undervisning (45 minutter)"
+          ],
+          [],
+          [],
+          [
+           "35"
+          ],
+          [
+           "36"
+          ],
+          [
+           "29"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Avvikende fag innen salg, service og reiseliv",
+     "ledd": [
+      {
+       "tekst": [
+        "På Sandefjord videregående og Thor Heyerdahl videregående skole gis det tilbud om 4-årig YSK-løp innenfor:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Salg- og reiselivsfaget"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Timefordeling og plasseringen på trinn er som følger:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "År 1"
+         ],
+         [
+          "År 2"
+         ],
+         [
+          "År 3"
+         ],
+         [
+          "År 4"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Matematikk 1P/T"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "56"
+          ],
+          [
+           "84"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "112"
+          ],
+          [
+           "113"
+          ],
+          [
+           "168"
+          ],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Matematikk 2P/S1"
+          ],
+          [],
+          [
+           "84/140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Programfag fra Studieforberedende"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Felles programfag"
+          ],
+          [
+           "477"
+          ],
+          [
+           "476"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglige programfag vg3 (Praksis og læretid i bedrift)"
+          ],
+          [
+           "277,5"
+          ],
+          [
+           "795"
+          ],
+          [
+           "795"
+          ],
+          [
+           "1455"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "1202,5"
+          ],
+          [
+           "1552/1607"
+          ],
+          [
+           "1327"
+          ],
+          [
+           "1455"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Oversikt over fag elevene er fritatt i:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning YFF"
+          ],
+          [
+           "168"
+          ],
+          [
+           "253"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "224"
+          ],
+          [
+           "309"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Lærekontrakt tegnes ved starten av 2. semester på Vg1. Elevene får etter fullført løp både yrkeskompetanse med fagbrev i salgsfaget eller reiselivsfaget, og generell studiekompetanse."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved et ev. feilvalg kan elevene:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "etter to år kan eleven velge å fullføre et tradisjonelt 2 + 2 løp og gå mot fagbrev."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "etter tre år kan eleven ved å ta privatist eksamen i kroppsøving fullføre med generell studiekompetanse. Læretiden blir godkjent som YFF tilsvarende ordinær YFF på vg1 og vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Eleven kan når som helst fortsette et 0–4 læreløp (FOB), med mulighet til å ta manglende fellesfag på Lærlingeskolen, eventuelt som privatist eller eventuelt påbygg 4."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Helsefagarbeider – vekslingsmodell",
+     "ledd": [
+      {
+       "tekst": [
+        "Thor Heyerdahl videregående har et praktisk opplæringsløp (vekslingsmodell) for vg1 helse- og oppvekstfag og vg2 helsearbeiderfaget til fagbrev i helsearbeiderfaget"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "År 1"
+         ],
+         [
+          "År 2"
+         ],
+         [
+          "År 3"
+         ],
+         [
+          "År 4"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Matematikk 1PY"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Naturfag for yrkesfag"
+          ],
+          [],
+          [
+           "56"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "112"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          []
+         ],
+         [
+          [
+           "Felles programfag og Yrkesfaglig fordypning vg1"
+          ],
+          [
+           "430"
+          ],
+          [
+           "215"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Felles programfag og Yrkesfaglig fordypning vg2"
+          ],
+          [],
+          [
+           "243"
+          ],
+          [
+           "487"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum yrkesopplæring vg1 og vg2 er 1963 timer, fordelt på:"
+          ],
+          [
+           "626"
+          ],
+          [
+           "710"
+          ],
+          [
+           "627"
+          ],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglige programfag vg3 (Læretid i bedrift tilsvarer 200 % fordelt over fire år)"
+          ],
+          [
+           "10 %"
+          ],
+          [
+           "40 %"
+          ],
+          [
+           "50 %"
+          ],
+          [
+           "100 %"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. mars 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

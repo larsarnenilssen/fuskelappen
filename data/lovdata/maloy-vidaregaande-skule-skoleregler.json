@@ -1,0 +1,415 @@
+{
+ "id": "maloy-vidaregaande-skule-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om tillegg til skulereglar for Måløy vidaregåande skule, Vestland fylkeskommune",
+ "korttittel": "Skulereglar ved Måløy vidaregåande skule",
+ "malform": "nn",
+ "refid": "forskrift/2025-01-28-120",
+ "sistEndret": null,
+ "iKraft": "2025-03-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-skole",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "46",
+  "skoler": [
+   "974571188"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om tillegg til skulereglar for Måløy vidaregåande skule, Vestland fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Dette er eit tillegg til ",
+        {
+         "t": "forskrift om skulereglar for Vestland fylkeskommune",
+         "l": "forskrift/2024-06-18-1455"
+        },
+        ", og har heimel i ",
+        {
+         "t": "§ 15",
+         "l": "forskrift/2024-06-18-1455/§15"
+        },
+        " Tillegg til skulereglane."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta har same verkeområde som ",
+        {
+         "t": "forskrift for skulereglar for Vestland fylkeskommune",
+         "l": "forskrift/2024-06-18-1455"
+        },
+        ", men er avgrensa til Måløy vidaregåande skule, og opplæring i regi av skulen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Trivsel og skulemiljø",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-1",
+     "visNr": "§ 3-1",
+     "tittel": "Forventningar til skulen",
+     "ledd": [
+      {
+       "tekst": [
+        {
+         "t": "Opplæringslova kapittel 12",
+         "l": "lov/2023-06-09-30/kap12"
+        },
+        " set krav til skulen om at skulemiljøet skal fremje helse, inkludering, trivsel og læring. Skulen skal også ha nulltoleranse for krenkande åtferd og jobbe forbyggjande med skulemiljøet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-2",
+     "visNr": "§ 3-2",
+     "tittel": "Forventningar til eleven",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven skal etter beste evne, i samarbeid med dei andre medlemmene i skulesamfunnet, streve etter å gå inn for å skape eit godt arbeidsmiljø og gode samarbeidsformer."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven skal snarast mogleg ta kontakt med faglærar dersom han/ho ikkje kan følgje opp skulearbeid til avtalt tid."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven skal følgje gjeldande verne- og sikringsreglar og bruke det arbeidstøyet og verneutstyret som blir kravd i læreplanar, eller som er påbode av arbeidstilsynet, departementet eller skulen. Dersom eleven ikkje brukar påbode verneutstyr, skal han/ho nektast tilgjenge til farlege maskiner og undervisningsutstyr."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven skal skaffe seg læremiddel, materiell og utstyr til eige bruk som skulen ikkje held. Pålagt materiell/utstyr eller betaling for dette må ikkje vere i strid med forskrifter frå departementet og vedtak i fylkeskommunale organ."
+       ]
+      },
+      {
+       "tekst": [
+        "Skulen sin eigedom og utstyr skal behandlast med varsemd og omtanke. Hærverk og skade kan medføre erstatningsansvar; jf. ",
+        {
+         "t": "skadeserstatningslova",
+         "l": "lov/1969-06-13-26"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevar som gjennom arbeidet sitt, oppdrag eller verv i samband med opplæring i vidaregåande skule blir kjende med opplysningar som er underlagt teieplikt, har teieplikt etter reglane i ",
+        {
+         "t": "§ 13 i forvaltningslova",
+         "l": "lov/1967-02-10/§13",
+         "a": "forvaltningsloven/13"
+        },
+        ". Teieplikta gjeld også etter at eleven har avslutta vidaregåande skule."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-3",
+     "visNr": "§ 3-3",
+     "tittel": "Fusk",
+     "ledd": [
+      {
+       "tekst": [
+        "Fusk blir rekna som brot på forskrift om skulereglar § 7, 3. avsnitt, punkt 6."
+       ]
+      },
+      {
+       "tekst": [
+        "Som fusk blir rekna:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Å bruke hjelpemiddel som ikkje er tillatne."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Å kommunisere med andre, skriftleg, munnleg eller elektronisk når dette ikkje er tillate (inkludert mobiltelefon, eksternt nettverk, samskriving, chat eller liknande). Å publisere tekst på internett vert rekna som kommunikasjon."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Å kopiere eller skrive av litteratur eller andre kjelder utan tilvisingar."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruk av KI (t.d. bruke automatisk tekstgenerator som chatbot eller tilsvarande teknologi) når det ikkje er tillate."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ikkje slå av og ikkje levere inn mobil og/eller smartklokke under skriftlege prøver."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "Vere på anna nettverk enn VLFK sitt i vurderingssituasjonar."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "Vere pålogga med ein annan sin brukar enn eigen brukar."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det oppstår mistanke om fusk eller forsøk på fusk, skal eleven straks gjerast merksam på at dette vil bli rapportert. Det gjeld også viss ein elev yter hjelp og medverkar til fusk."
+       ]
+      },
+      {
+       "tekst": [
+        "Om lærar mistenker fusk, kan eleven bli beden om å gjenta vurdering. Dette bør skje så raskt som mogleg etter vurderingssituasjonen, lærar bestemmer tidspunkt og vurderingsform. Lærar treng ikkje gje melding til elev om dette."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det vert oppdaga fusk ved ei prøve/innlevering vert prøva/innleveringa annullert, og faglærar skal straks gje melding til rektor for vidare handsaming og evt. sanksjonar."
+       ]
+      },
+      {
+       "tekst": [
+        "Blir ein elev tatt i fusk på ei heildagsprøve, vert det rekna som så alvorleg etter ",
+        {
+         "t": "§ 9-17",
+         "l": "forskrift/2024-06-03-900/§9-17",
+         "a": "opplaeringsforskrifta/9-17"
+        },
+        ", siste setning i ",
+        {
+         "t": "opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900"
+        },
+        ", at eleven blir sett ned i oppførsel."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "IKT-utstyr, inkludert smartklokkar og mobiltelefonar",
+     "ledd": [
+      {
+       "tekst": [
+        "Bruk av elektronisk utstyr i timane skal avtalast med lærar. Dette gjeld t.d. mobiltelefon, pc, hovudtelefonar og liknande. I situasjonar der slikt utstyr ikkje skal vere tilgjengeleg (undervisning, prøver, eksamen og liknande), må elevane leggje frå seg slikt utstyr på tilvist plass."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikkje lov å ta bilde eller dele bilde frå undervisningsøkter (eks verkstad/kjøkken mv) utan tillating frå lærar med tanke på personvern for brukarar, kundar, medelevar, tilsette osv."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle elevar skal i starten av undervisningsøkta legge mobilen sin(utan lyd og vibrasjon) uoppfordra i sitt mobilhotell. Eleven er ansvarleg for eigen PC og ladar, og skal ha denne med kvar dag. Unnatak skal avtalast med faglærar/kontaktlærar."
+       ]
+      },
+      {
+       "tekst": [
+        "I all bruk av IKT ved skulen skal elevane ta omsyn til personvern ",
+        {
+         "t": "(personopplysningslova)",
+         "l": "lov/2018-06-15-38"
+        },
+        ", opphavsrett ",
+        {
+         "t": "(åndsverklova)",
+         "l": "lov/2018-06-15-40"
+        },
+        " og bruke nettvett."
+       ]
+      },
+      {
+       "tekst": [
+        "På prøvar og liknande skal mobiltelefon og smartklokke slåast av og leverast inn."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Reiser og skuleekskursjonar",
+     "ledd": [
+      {
+       "tekst": [
+        "For alle turar som er arrangert av skulen, gjeld det vanlege skulereglementet også under turen. Elevane må i tillegg rette seg etter det reiseleiarane bestemmer."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle faglege arrangement er obligatoriske, og elevane pliktar å vise merksemd og god folkeskikk i møte med foredragshaldarar og omvisarar. Det skal takast notat for seinare bruk."
+       ]
+      },
+      {
+       "tekst": [
+        "Bruk av rusmiddel er strengt forbode. Det blir forventa at elevane oppfører seg på ein slik måte at dei ikkje støyter andre, og at dei har i tankane at dei representerer skulen."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved utflukter og reise skal elevane alltid vere tilgjengelege på telefon og er pliktige til å svare når ansvarleg lærer tar kontakt."
+       ]
+      },
+      {
+       "tekst": [
+        "På kveldstid er det eit absolutt krav at minst 3 elevar skal vere i lag når ein går ut, og at dei ulike gruppene seier ifrå til reiseleiarane kvar dei går. På dagtid kan ein vere i mindre grupper enn 3, t.d. dersom ein skal på handletur."
+       ]
+      },
+      {
+       "tekst": [
+        "Når det gjeld innkomsttidene om kvelden, vil dei vere avhengige av den faglege aktiviteten dagen etterpå og når denne startar. Innkomsttida blir bestemt av reiseleiarane, gjerne i samarbeid med elevrepresentantar."
+       ]
+      },
+      {
+       "tekst": [
+        "Brot på avtalar og reglement vil bli tekne med i vurderinga av orden og åtferd. Særleg grove brot kan føre til heimsending på elevens rekning og andre refsingstiltak / særskilde tiltak fastsett av rektor."
+       ]
+      },
+      {
+       "tekst": [
+        "I tillegg til desse reglane pliktar ein å rette seg etter reglementa til turoperatørar og overnattingsstader."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Reglar for bruk av spesialrom",
+     "ledd": [
+      {
+       "tekst": [
+        "Spesialrom (t.d. verkstader, laboratorium, kjøkken og liknande) skal vere låst når dei ikkje brukast."
+       ]
+      },
+      {
+       "tekst": [
+        "Som hovudregel skal aldri elevar opphalde seg i eit spesialrom utan lærar til stades."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Andre særskilte forhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevane må følgje opp dei reglane og rutinane skulen har i e-handboka/kvalitetssystemet, t.d. når det gjeld parkering, rydding av uteområde, orden i kantina, orden på klasserom og liknande."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta trer i kraft 1. mars 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

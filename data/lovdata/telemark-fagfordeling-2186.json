@@ -1,0 +1,779 @@
+{
+ "id": "telemark-fagfordeling-2186",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fag på avvikende trinn i videregående opplæring i Telemark fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Telemark",
+ "malform": "nb",
+ "refid": "forskrift/2023-12-12-2186",
+ "sistEndret": null,
+ "iKraft": "2024-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "40"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om fag på avvikende trinn i videregående opplæring i Telemark fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for videregående skoler som eies av Telemark fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften skal tydeliggjøre hvilke fag som ligger på andre trinn enn det som går fram av den nasjonale fag- og timefordelingen for videregående opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Endringene i fag- og timefordelingen skal legge til rette for at elever kan få tilpassede opplæringsløp som gir generell studiekompetanse, eller spesiell studiekompetanse, på enkelte yrkesfaglige utdanningsprogrammer."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Tilbud med fag på avvikende trinn",
+     "ledd": [
+      {
+       "tekst": [
+        "I Telemark fylkeskommune får elevene fag på avvikende trinn innen følgende tilbud og skoler:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Helse- og oppvekstfag"
+           ],
+           "liste": [
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Skole: Skogmo videregående skole"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Tilbud: Helse- og oppvekstfag med studiekompetanse 3 år"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturbruk"
+           ],
+           "liste": [
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Skole: Nome videregående skole"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "-",
+             "ledd": [
+              {
+               "tekst": [
+                "Tilbud: Naturbruk med spesiell studiekompetanse 3 år."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Fordeling av fag og timer på helse- og oppvekstfag med studiekompetanse 3 år",
+     "ledd": [
+      {
+       "tekst": [
+        "Tallene i kolonnene «Ordinær plan» viser antall timer fagene har i den nasjonale fag- og timefordelingen for ordinært helse- og oppvekstfag med yrkeskompetanse. Tallene i kolonnene «Plan HS-YSK» viser antall timer fagene har i det lokale tilbudet."
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [],
+          [
+           "Ordinær plan"
+          ],
+          [
+           "Plan HS-YSK"
+          ],
+          [
+           "Ordinær plan"
+          ],
+          [
+           "Plan HS-YSK"
+          ],
+          [
+           "Ordinær plan"
+          ],
+          [
+           "Plan HS-YSK"
+          ]
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "Lære"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "Lære"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [],
+          [
+           "112"
+          ],
+          [
+           "112"
+          ],
+          [
+           "113"
+          ],
+          [
+           "Lære"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "Lære"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [
+           "Lære"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ],
+          [
+           "Lære"
+          ],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+           "Lære"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag"
+          ],
+          [
+           "477"
+          ],
+          [
+           "476"
+          ],
+          [
+           "477"
+          ],
+          [
+           "476"
+          ],
+          [
+           "Lære"
+          ],
+          []
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "168"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [
+           "112"
+          ],
+          [
+           "Lære"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag fra ST"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+           "Lære"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Programfag fra ST eller YFF"
+          ],
+          [],
+          [],
+          [
+           "253"
+          ],
+          [],
+          [
+           "Lære"
+          ],
+          [
+           "253"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "981"
+          ],
+          [
+           "980"
+          ],
+          [
+           "982"
+          ],
+          [
+           "981"
+          ],
+          [
+           "0"
+          ],
+          [
+           "841"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Fordeling av fag og timer på naturbruk med studiekompetanse 3 år",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordinært løp innen naturbruk, har Nome videregående skole et tilbud med spesiell studiekompetanse. Totalt timetall er økt til 1010 på Vg2 og, ved spesielt valg, til 1037 på Vg3. Ordinær plan har 983 timer på Vg2 og 981 timer på Vg3. Tallene i kolonnene «Ordinær plan» viser antall timer fagene har i den nasjonale fag- og timefordelingen for ordinært naturbruk med studiekompetanse. Tallene i kolonnene «Plan NA-spes. ST» viser antall timer fagene har i det lokale tilbudet."
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [],
+          [
+           "Ordinær plan"
+          ],
+          [
+           "Plan NA spes. ST"
+          ],
+          [
+           "Ordinær plan"
+          ],
+          [
+           "Plan NA spes. ST"
+          ],
+          [
+           "Ordinær plan"
+          ],
+          [
+           "Plan NA spes. ST"
+          ]
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "56"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Kjemi"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140 (KJ1)"
+          ],
+          [],
+          [
+           "Enten 140 (KJ2)"
+          ]
+         ],
+         [
+          [
+           "Biologi 1"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140 (BI1)"
+          ],
+          [],
+          [
+           "Eller 140 (BI1)"
+          ]
+         ],
+         [
+          [
+           "Biologi 2"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+           "Enten 140 (BI2)"
+          ]
+         ],
+         [
+          [
+           "Geofag X"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+           "Eller 84 (GEOX)"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [],
+          [],
+          [
+           "112"
+          ],
+          [
+           "112"
+          ],
+          [
+           "281"
+          ],
+          [
+           "281"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "84"
+          ],
+          [
+           "140 (1T)"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140 (R1)"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag"
+          ],
+          [
+           "478"
+          ],
+          [
+           "478"
+          ],
+          [
+           "478"
+          ],
+          [
+           "478"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "168"
+          ],
+          [
+           "28"
+          ],
+          [
+           "253"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Valgfrie programfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "982"
+          ],
+          [
+           "982"
+          ],
+          [
+           "983"
+          ],
+          [
+           "1010"
+          ],
+          [
+           "981"
+          ],
+          [
+           "981/1037"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Unntak",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkeskommunen kan gjøre unntak fra bestemmelsene i forskriften hvis det foreligger tungtveiende grunner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Mindre endringer i forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektøren kan foreta mindre endringer i forskriften dersom endringene ikke påvirker elevenes rettigheter og plikter."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fra 1. august 2024."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

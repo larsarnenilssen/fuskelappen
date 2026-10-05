@@ -4,10 +4,13 @@
  "type": "forskrift",
  "tittel": "Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune",
  "korttittel": "Inntak og formidling i Vestland",
- "malform": "nn",
+ "malform": "nb",
  "refid": "forskrift/2020-09-29-3380",
  "sistEndret": "2026-08-01",
- "hentet": "2026-10-02",
+ "iKraft": "2021-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
  "gyldighet": {
   "niva": "fylke",
   "fylke": "46"

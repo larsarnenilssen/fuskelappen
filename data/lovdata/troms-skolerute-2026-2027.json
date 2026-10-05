@@ -1,0 +1,251 @@
+{
+ "id": "troms-skolerute-2026-2027",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skolerute for skoleåret 2026–2027, Troms fylkeskommune",
+ "korttittel": "Skolerute 2026–2027 i Troms",
+ "malform": "nb",
+ "refid": "forskrift/2024-05-13-3673",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-07-31",
+ "lokaltype": "skolerute",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "55"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skolerute for skoleåret 2026–2027, Troms fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gir informasjon om hvilke skole- og feriedager elevene har skoleåret 2026–2027. Elevene har rett og plikt til å møte på skolen på de fastsatte skoledagene."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskriften gjelder for elever ved alle videregående skoler i Troms fylkeskommune skoleåret 2026–2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Skole- og feriedager skoleåret 2026–2027:",
+     "ledd": [
+      {
+       "tekst": [
+        "Høst 2026"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Måned"
+         ],
+         [
+          "Merknader"
+         ],
+         [
+          "Skoledager"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "August"
+          ],
+          [
+           "Første skoledag – mandag 17. august."
+          ],
+          [
+           "11"
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          [],
+          [
+           "21"
+          ]
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Høstferie – fri fra og med onsdag 30. september til og med fredag 2. oktober."
+          ],
+          [
+           "20"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Mandag 16. og tirsdag 17. november – Felles planleggingsdager VGS. Fri for elevene."
+          ],
+          [
+           "19"
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Siste skoledag før jul – fredag 18. desember."
+          ],
+          [
+           "14"
+          ]
+         ],
+         [
+          [
+           "Antall skoledager høst 2026"
+          ],
+          [],
+          [
+           "85"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Vår 2027"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Måned"
+         ],
+         [
+          "Merknader"
+         ],
+         [
+          "Skoledager"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Første skoledag – mandag 4. januar."
+          ],
+          [
+           "20"
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [
+           "Vinterferie – fri fra og med mandag 22. til og med fredag 26. februar."
+          ],
+          [
+           "15"
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Påskeferie – fri fra og med mandag 22. mars til og med mandag 29. mars. Oppstart etter påske – tirsdag 30. mars."
+          ],
+          [
+           "17"
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          [
+           "Fredag 30. april – fridag skole."
+          ],
+          [
+           "21"
+          ]
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Torsdag 6. mai – Kristi himmelfartsdag. Fredag 7. mai – Fri for elevene. Mandag 17. mai – Grunnlovsdag / Andre pinsedag."
+          ],
+          [
+           "18"
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Siste skoledag – fredag 18. juni."
+          ],
+          [
+           "14"
+          ]
+         ],
+         [
+          [
+           "Antall skoledager vår 2027"
+          ],
+          [],
+          [
+           "105"
+          ]
+         ],
+         [
+          [
+           "Totalt antall skoledager hele skoleåret"
+          ],
+          [],
+          [
+           "190"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

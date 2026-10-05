@@ -1,0 +1,3200 @@
+{
+ "id": "more-og-romsdal-fagfordeling-1493",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i vidaregåande opplæring, Møre og Romsdal fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Møre og Romsdal",
+ "malform": "nn",
+ "refid": "forskrift/2026-06-30-1493",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "15"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og verkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med fleksibilitet i fag- og timefordeling er å legge til rette for tilpassa tilbod i utdanningsprogram for ulike elevgrupper. Ordninga med fleksibilitet i fag- og timefordeling kan og vere eit verkemiddel for å auke talet på elevar som gjennomfører og består vidaregåande opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gjeld fag- og timefordeling for fleksible utdanningsprogram i Møre og Romsdal fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Verketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gjeld for elevar som er tatt inn på dei fleksible utdanningsprogramma under kapittel 2. Forskrifta vil bli revidert ved endring i opplæringstilboda som er omfatta av lov og forskrift, jf. ",
+        {
+         "t": "opplæringslova § 1-6 sjette ledd",
+         "l": "lov/2023-06-09-30/§1-6",
+         "a": "opplaeringslova/1-6"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskrifta § 5-1 andre ledd",
+         "l": "forskrift/2024-06-03-900/§5-1",
+         "a": "opplaeringsforskrifta/5-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordeling for fleksible utdanningsprogram",
+   "merknader": [],
+   "seksjoner": [
+    {
+     "id": "kapA",
+     "type": "avsnitt",
+     "nr": null,
+     "overskrift": "A. Yrkes- og studiekompetanse (YSK)",
+     "merknader": [],
+     "seksjoner": [],
+     "paragrafer": [
+      {
+       "nr": "4",
+       "visNr": "§ 4",
+       "tittel": "Industrimekanikar, CNC-maskineringsfaget, industrirørleggjarfaget, platearbeidarfaget eller sveisefaget med fordjuping i fysikk og matematikk ved Haram vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for teknologi- og industrifag"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1"
+            ],
+            [
+             "Vg2 Programområde for industriteknologi"
+            ],
+            [
+             "Industrimekanikarfaget Vg3 / opplæring i bedrift, eller CNC-maskineringsfaget Vg3 / opplæring i bedrift, eller Industrirøyrleggjarfaget Vg3 / opplæring i bedrift, eller Platearbeidarfaget Vg3 / opplæring i bedrift, eller Sveisefaget Vg3 / opplæring i bedrift"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Fagbrev som industrimekanikar, eller eit av dei andre faga nemnt ovanfor."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Lærekontrakt blir teikna ved overgang frå Vg2 til Vg3. Bindingsavtale med bedrift ved inntak til Vg1."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse med fordjuping i matematikk og fysikk. Kvalifiserer for opptak til høgare utdanning og tilfredsstiller spesielle opptakskrav til m.a. ingeniørutdanningar (spesiell studiekompetanse)."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Matematikk følger studieførebuande modell."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Norsk følger studieførebuande modell, med opplæring over 3 år (start på Vg2)."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Historie er lagt til Vg4."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Naturfag er lagt til Vg2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Samfunnskunnskap er lagt til Vg3."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Yrkesfagleg fordjuping skjer i bedrift gjennom heile opplæringsløpet."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Opplæring i programfag skjer i skole og bedrift. Elevane følgjer ferieordninga til lærebedrifta."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tverrfagleg eksamen på Vg2. Eksamen i norsk hovudmål på Vg4. Følgjer trekkordning for eksamen etter modell for yrkesfagleg utdanningsprogram og Vg4 påbygging til generell studiekompetanse."
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1 (1. år) / timar"
+           ],
+           [
+            "Vg2 (2. år) / timar"
+           ],
+           [
+            "Vg3 (3. år) / timar"
+           ],
+           [
+            "Vg4 (4. år) / timar"
+           ]
+          ],
+          "rader": [
+           [
+            [],
+            [
+             "Bedrift og skole"
+            ]
+           ],
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "140 (1T)"
+            ],
+            [
+             "140 (R1)"
+            ],
+            [
+             "140 (R2)"
+            ],
+            []
+           ],
+           [
+            [
+             "Fysikk"
+            ],
+            [],
+            [],
+            [
+             "140 (Fysikk1)"
+            ],
+            [
+             "140 (Fysikk2)"
+            ]
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [],
+            [
+             "113"
+            ],
+            [
+             "112"
+            ],
+            [
+             "168"
+            ]
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [
+             "56"
+            ],
+            [
+             "84"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Konstruksjon- og styringsteknikk (TIP1007)"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Produksjon og tenester (TIP1006)"
+            ],
+            [
+             "197"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Produktivitet og kvalitetsstyring (TIP1008)"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Teknologi (PIN2005)"
+            ],
+            [],
+            [
+             "337"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Vedlikehald (PIN2006)"
+            ],
+            [],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Yrkesfagleg fordjuping"
+            ],
+            [
+             "168"
+            ],
+            [
+             "253"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "1037"
+            ],
+            [
+             "1123"
+            ],
+            [
+             "476"
+            ],
+            [
+             "448"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "3084"
+            ]
+           ],
+           [
+            [
+             "Timar i bedrift"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "1155 timar"
+            ]
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [],
+       "fotnoter": []
+      },
+      {
+       "nr": "5",
+       "visNr": "§ 5",
+       "tittel": "Elektrikar, energimontør eller tavlemontør med fordjuping i fysikk og matematikk ved Haram vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for elektro og datateknologi"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1"
+            ],
+            [
+             "Vg2 Programområde for elenergi og ekom"
+            ],
+            [
+             "Elektrikarfaget Vg3 / opplæring i bedrift, eller Energimontørfaget Vg3 / opplæring i bedrift, eller Tavlemontørfaget Vg3 / opplæring i bedrift"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Fagbrev som elektrikar, energimontør eller tavlemontør."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Lærekontrakt blir teikna ved overgang frå Vg2 til Vg3. Bindingsavtale med bedrift ved inntak til Vg1."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse med fordjuping i matematikk og fysikk. Kvalifiserer for opptak til høgare utdanning og tilfredsstiller spesielle opptakskrav til m.a. ingeniørutdanningar (spesiell studiekompetanse)."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Matematikk følger studieførebuande modell."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Norsk følger studieførebuande modell, med opplæring over 3 år (start på Vg2)."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Historie er lagt til Vg4."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Naturfag er lagt til Vg2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Samfunnskunnskap er lagt til Vg3."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Yrkesfagleg fordjuping skjer i bedrift gjennom heile opplæringsløpet."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Opplæring i programfag skjer i skole og bedrift. Elevane følgjer ferieordninga til lærebedrifta."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tverrfagleg eksamen på Vg2. Eksamen i norsk hovudmål på Vg4. Følgjer trekkordning for eksamen etter modell for yrkesfagleg utdanningsprogram og Vg4 påbygging til generell studiekompetanse."
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1 (1. år) / timar"
+           ],
+           [
+            "Vg2 (2. år) / timar"
+           ],
+           [
+            "Vg3 (3. år) / timar"
+           ],
+           [
+            "Vg4 (4. år) / timar"
+           ]
+          ],
+          "rader": [
+           [
+            [],
+            [
+             "Bedrift og skole"
+            ]
+           ],
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "140 (1T)"
+            ],
+            [
+             "140 (R1)"
+            ],
+            [
+             "140 (R2)"
+            ],
+            []
+           ],
+           [
+            [
+             "Fysikk"
+            ],
+            [],
+            [],
+            [
+             "140 (Fysikk1)"
+            ],
+            [
+             "140 (Fysikk2)"
+            ]
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [],
+            [
+             "113"
+            ],
+            [
+             "112"
+            ],
+            [
+             "168"
+            ]
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [
+             "56"
+            ],
+            [
+             "84"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Elektroniske kretsar og nettverk (ELE1006)"
+            ],
+            [
+             "197"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Energi- og styresystem (ELE1007)"
+            ],
+            [
+             "280"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Elenergi og styresystem (ELE2005)"
+            ],
+            [],
+            [
+             "337"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Elektronisk kommunikasjon (ELE2006)"
+            ],
+            [],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Yrkesfagleg fordjuping"
+            ],
+            [
+             "168"
+            ],
+            [
+             "253"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "1037"
+            ],
+            [
+             "1123"
+            ],
+            [
+             "476"
+            ],
+            [
+             "448"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "3084"
+            ]
+           ],
+           [
+            [
+             "Timar i bedrift"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "1905 timar"
+            ]
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [],
+       "fotnoter": []
+      },
+      {
+       "nr": "6",
+       "visNr": "§ 6",
+       "tittel": "Automatiseringsfaget med fordjuping i fysikk og matematikk ved Haram vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for elektro og datateknologi"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1"
+            ],
+            [
+             "Vg2 Automatisering"
+            ],
+            [
+             "Vg3 Automatiseringsfaget"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Fagbrev i automatiseringsfaget."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Lærekontrakt blir teikna ved overgang frå Vg2 til Vg3. Bindingsavtale med bedrift ved inntak til Vg1."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse med fordjuping i matematikk og fysikk. Kvalifiserer for opptak til høgare utdanning og tilfredsstiller spesielle opptakskrav til m.a. ingeniørutdanningar (spesiell studiekompetanse)."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Matematikk følger studieførebuande modell."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Norsk følger studieførebuande modell, med opplæring over 3 år (start på Vg2)."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Historie er lagt til Vg4."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Naturfag er lagt til Vg2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Samfunnskunnskap er lagt til Vg3."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Yrkesfagleg fordjuping skjer i bedrift gjennom heile opplæringsløpet."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Opplæring i programfag skjer i skole og bedrift. Elevane følgjer ferieordninga til lærebedrifta."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tverrfagleg eksamen på Vg2. Eksamen i norsk hovudmål på Vg4. Følgjer trekkordning for eksamen etter modell for yrkesfagleg utdanningsprogram og Vg4 påbygging til generell studiekompetanse."
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1 (1. år) / timar"
+           ],
+           [
+            "Vg2 (2. år) / timar"
+           ],
+           [
+            "Vg3 (3. år) / timar"
+           ],
+           [
+            "Vg4 (4. år) / timar"
+           ]
+          ],
+          "rader": [
+           [
+            [],
+            [
+             "Bedrift og skole"
+            ]
+           ],
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "140 (1T)"
+            ],
+            [
+             "140 (R1)"
+            ],
+            [
+             "140 (R2)"
+            ],
+            []
+           ],
+           [
+            [
+             "Fysikk"
+            ],
+            [],
+            [],
+            [
+             "140 (Fysikk1)"
+            ],
+            [
+             "140 (Fysikk2)"
+            ]
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [],
+            [
+             "113"
+            ],
+            [
+             "112"
+            ],
+            [
+             "168"
+            ]
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [
+             "56"
+            ],
+            [
+             "84"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Elektroniske kretsar og nettverk (ELE1006)"
+            ],
+            [
+             "197"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Energi- og styresystem (ELE1007)"
+            ],
+            [
+             "280"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Automatiseringssystem (AUT2004)"
+            ],
+            [],
+            [
+             "337"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Elenergisystem (AUT2005)"
+            ],
+            [],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Automatiseringssystem (AUT3005)"
+            ],
+            [],
+            [],
+            [
+             "645"
+            ],
+            []
+           ],
+           [
+            [
+             "Elenergisystem (AUT3006)"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ],
+            []
+           ],
+           [
+            [
+             "Mekanisk arbeid (AUT3007)"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ],
+            []
+           ],
+           [
+            [
+             "Yrkesfagleg fordjuping"
+            ],
+            [
+             "168"
+            ],
+            [
+             "253"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "1037"
+            ],
+            [
+             "1123"
+            ],
+            [
+             "1401"
+            ],
+            [
+             "448"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "4009"
+            ]
+           ],
+           [
+            [
+             "Timar i bedrift"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "870 timar"
+            ],
+            [
+             "1905 timar"
+            ]
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [],
+       "fotnoter": []
+      }
+     ]
+    },
+    {
+     "id": "kapB",
+     "type": "avsnitt",
+     "nr": null,
+     "overskrift": "B. Treårig løp til studiekompetanse på yrkesfaglege utdanningsprogram",
+     "merknader": [],
+     "seksjoner": [],
+     "paragrafer": [
+      {
+       "nr": "7",
+       "visNr": "§ 7",
+       "tittel": "Utdanningsprogram for helse- og oppvekstfag – programområde helsearbeidarfag med studiekompetanse ved Romsdal vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for helse- og oppvekstfag"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1"
+            ],
+            [
+             "Vg2 Programområde for helsearbeidarfag"
+            ],
+            [
+             "Vg3 påbygging til generell studiekompetanse"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse"
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Matematikk følger studieførebuande modell."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Naturfag følger studieførebuande modell og er lagt til Vg3."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Norsk følger studieførebuande modell."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Yrkesfagleg fordjuping flyttast til vg2 og vg3."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tverrfagleg eksamen på Vg2. Eksamen i norsk hovudmål på Vg3. Følgjer trekkordning for eksamen etter modell for yrkesfagleg utdanningsprogram og Vg3 påbygging til generell studiekompetanse."
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1/timar"
+           ],
+           [
+            "Vg2/timar"
+           ],
+           [
+            "Vg3/timar"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "140"
+            ],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [
+             "113"
+            ],
+            [
+             "112"
+            ],
+            [
+             "168"
+            ]
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ]
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Kommunikasjon og samhandling"
+            ],
+            [
+             "140"
+            ],
+            [
+             "140"
+            ],
+            []
+           ],
+           [
+            [
+             "Helsefremmande arbeid"
+            ],
+            [
+             "197"
+            ],
+            [
+             "197"
+            ],
+            []
+           ],
+           [
+            [
+             "Yrkesliv i helse- og oppvekstfag/helsearbeiderfag"
+            ],
+            [
+             "140"
+            ],
+            [
+             "140"
+            ],
+            []
+           ],
+           [
+            [
+             "Yrkesfagleg fordjuping"
+            ],
+            [],
+            [
+             "168"
+            ],
+            [
+             "253"
+            ]
+           ],
+           [
+            [
+             "Valfritt programfag frå studiespesialisering"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "1123"
+            ],
+            [
+             "981"
+            ],
+            [
+             "897"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "3001"
+            ],
+            [],
+            []
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [],
+       "fotnoter": []
+      },
+      {
+       "nr": "8",
+       "visNr": "§ 8",
+       "tittel": "Utdanningsprogram for elektro og datateknologi – programområde for datateknologi og elektronikk med fordjuping i realfag ved Romsdal vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for elektrofag"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1"
+            ],
+            [
+             "Vg2 datateknologi og elektronikk"
+            ],
+            [
+             "Vg3 påbygging til generell studiekompetanse"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse med fysikk og fordjuping i matematikk. Kvalifiserer for opptak til høgare utdanning og tilfredsstiller spesielle opptakskrav til m.a. ingeniørutdanningar (spesiell studiekompetanse)."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Matematikk følger studieførebuande modell."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Naturfag følger studieførebuande modell og er lagt til Vg1."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tverrfagleg eksamen på Vg2. Eksamen i norsk hovudmål på Vg3. Følgjer trekkordning for eksamen etter modell for yrkesfagleg utdanningsprogram og Vg3 påbygging til generell studiekompetanse."
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1/timar"
+           ],
+           [
+            "Vg2/timar"
+           ],
+           [
+            "Vg3/timar"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "140 (1T)"
+            ],
+            [
+             "140 (R1)"
+            ],
+            [
+             "140 (R2)"
+            ]
+           ],
+           [
+            [
+             "Fysikk"
+            ],
+            [],
+            [
+             "140 (Fysikk1)"
+            ],
+            []
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [],
+            [
+             "112"
+            ],
+            [
+             "281"
+            ]
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ]
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Elektroniske kretsar og nettverk"
+            ],
+            [
+             "197"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Elenergi og styresystem"
+            ],
+            [
+             "280"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Data- og informasjonsteknologi"
+            ],
+            [],
+            [
+             "197"
+            ],
+            []
+           ],
+           [
+            [
+             "Elektronisk kretsar og utstyr"
+            ],
+            [],
+            [
+             "280"
+            ],
+            []
+           ],
+           [
+            [
+             "Yrkesfagleg fordjuping (YFF4101)"
+            ],
+            [
+             "28"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Programfag (Elevane må velje to av faga: Fysikk 2, Informasjonsteknologi 2, Teknologi og forskingslære)"
+            ],
+            [],
+            [],
+            [
+             "280"
+            ]
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "981"
+            ],
+            [
+             "1009"
+            ],
+            [
+             "897"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "2887"
+            ],
+            [],
+            []
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [],
+       "fotnoter": []
+      },
+      {
+       "nr": "9",
+       "visNr": "§ 9",
+       "tittel": "Utdanningsprogram for innovasjon og leiing – programområde for sal og reiseliv med påbygging til generell studiekompetanse ved Molde vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1 sal, service og reiseliv"
+            ],
+            [
+             "Vg2 sal og reiseliv"
+            ],
+            [
+             "Vg3 påbygging til generell studiekompetanse"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Elevane får fordjuping i entreprenørskap og bedriftsutvikling 1 og 2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Elevane får bedriftserfaring i 21 dagar på Vg1."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Elevane får følgje ungdomsbedrift som pedagogisk metode på Vg2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Elevane får moglegheit til å ta 15 studiepoeng ved Høgskolen i Molde på Vg3."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Entreprenørskap og bedriftsutvikling 1 flyttast frå Vg2 til Vg1 og Entreprenørskap og bedriftsutvikling 2 flyttast frå Vg3 til Vg2."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tverrfagleg eksamen på Vg2. Eksamen i norsk hovudmål på Vg3. Følgjer trekkordning for eksamen etter modell for yrkesfagleg utdanningsprogram og Vg3 påbygging til generell studiekompetanse."
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1/timar"
+           ],
+           [
+            "Vg2/timar"
+           ],
+           [
+            "Vg3/timar"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "84"
+            ],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [],
+            [
+             "112"
+            ],
+            [
+             "281"
+            ]
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [
+             "56"
+            ],
+            [],
+            [
+             "84"
+            ]
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [
+             "84"
+            ],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ]
+           ],
+           [
+            [
+             "Forretningsdrift"
+            ],
+            [
+             "169"
+            ],
+            [
+             "159"
+            ],
+            []
+           ],
+           [
+            [
+             "Markedsføring og innovasjon / Innovasjon og markedsføring"
+            ],
+            [
+             "168"
+            ],
+            [
+             "159"
+            ],
+            []
+           ],
+           [
+            [
+             "Kultur- og samhandling / Kommunikasjon"
+            ],
+            [
+             "140"
+            ],
+            [
+             "159"
+            ],
+            []
+           ],
+           [
+            [
+             "Entreprenørskap og bedriftsutvikling 1 og 2"
+            ],
+            [
+             "140"
+            ],
+            [
+             "140"
+            ],
+            []
+           ],
+           [
+            [
+             "YFF"
+            ],
+            [
+             "28"
+            ],
+            [
+             "113"
+            ],
+            []
+           ],
+           [
+            [
+             "Programfag frå studiespesialisering (SAM3045)"
+            ],
+            [],
+            [],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "981"
+            ],
+            [
+             "982"
+            ],
+            [
+             "841"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "2804"
+            ]
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [],
+       "fotnoter": []
+      }
+     ]
+    },
+    {
+     "id": "kapC",
+     "type": "avsnitt",
+     "nr": null,
+     "overskrift": "C. Alternative modellar på studieførebuande utdanningsprogram",
+     "merknader": [],
+     "seksjoner": [],
+     "paragrafer": [
+      {
+       "nr": "10",
+       "visNr": "§ 10",
+       "tittel": "Toppidrett ved Molde vidaregåande skole",
+       "ledd": [
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Utdanningsprogram for studiespesialisering"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Vg1"
+            ],
+            [
+             "Vg2,Vg3 og Vg4 Programområde for realfag, eller programområde for språk, samfunnsfag og økonomi"
+            ]
+           ]
+          ]
+         }
+        },
+        {
+         "tekst": [
+          "Opplæringa har følgande kjenneteikn:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Generell studiekompetanse. Kvalifiserer for opptak til høgare utdanning. Elevane kan velje fordjuping i programfag for å tilfredsstille spesielle opptakskrav (spesiell studiekompetanse)."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Flytting av fag:"
+         ],
+         "liste": [
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Samfunnskunnskap er lagt til Vg2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Geografi er lagt til Vg2."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Kroppsøving er lagt til Vg1, Vg2 og Vg4."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Historie er lagt til Vg3 og Vg4."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Religion og etikk er lagt til Vg4."
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "•",
+           "ledd": [
+            {
+             "tekst": [
+              "Programfaga er lagt til Vg2, Vg3 og Vg4."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [],
+         "tabell": {
+          "hode": [
+           [
+            "Fag"
+           ],
+           [
+            "Vg1 (1. år) / timar"
+           ],
+           [
+            "Vg2 (2. år) / timar"
+           ],
+           [
+            "Vg3 (3. år) / timar"
+           ],
+           [
+            "Vg4 (4. år) / timar"
+           ]
+          ],
+          "rader": [
+           [
+            [
+             "Matematikk"
+            ],
+            [
+             "140"
+            ],
+            [
+             "84"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Norsk"
+            ],
+            [
+             "113"
+            ],
+            [
+             "112"
+            ],
+            [
+             "168"
+            ],
+            []
+           ],
+           [
+            [
+             "Naturfag"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Engelsk"
+            ],
+            [
+             "140"
+            ],
+            [],
+            [],
+            []
+           ],
+           [
+            [
+             "Samfunnskunnskap"
+            ],
+            [],
+            [
+             "84"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Geografi"
+            ],
+            [],
+            [
+             "56"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Framandspråk"
+            ],
+            [
+             "113"
+            ],
+            [
+             "112"
+            ],
+            [],
+            []
+           ],
+           [
+            [
+             "Kroppsøving"
+            ],
+            [
+             "56"
+            ],
+            [
+             "56"
+            ],
+            [],
+            [
+             "56"
+            ]
+           ],
+           [
+            [
+             "Historie"
+            ],
+            [],
+            [],
+            [
+             "56"
+            ],
+            [
+             "113"
+            ]
+           ],
+           [
+            [
+             "Religion og etikk"
+            ],
+            [],
+            [],
+            [],
+            [
+             "84"
+            ]
+           ],
+           [
+            [
+             "Programfag frå eige programområde"
+            ],
+            [],
+            [
+             "140"
+            ],
+            [
+             "280"
+            ],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Valfrie programfag ​*"
+            ],
+            [],
+            [],
+            [
+             "140​**"
+            ],
+            [
+             "140"
+            ]
+           ],
+           [
+            [
+             "Timar på vitnemål"
+            ],
+            [
+             "702"
+            ],
+            [
+             "644"
+            ],
+            [
+             "644"
+            ],
+            [
+             "533"
+            ]
+           ],
+           [
+            [
+             "Sum timar på vitnemål"
+            ],
+            [
+             "2523"
+            ]
+           ]
+          ]
+         }
+        }
+       ],
+       "endringer": [
+        [
+         "Valfrie programfag frå studieførebuande utdanningsprogram."
+        ]
+       ],
+       "fotnoter": []
+      }
+     ]
+    }
+   ],
+   "paragrafer": []
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til Vg1 og opptak til Vg2/Vg3/Vg4",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Inntak til Vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkåra for inntak følger av ",
+        {
+         "t": "opplæringsforskrifta kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        ", jf. ",
+        {
+         "t": "§ 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        ", og forskrift om inntak til vidaregåande opplæring og formidling av læreplassar i Møre og Romsdal fylkeskommune av 1. januar 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak til Vg2/Vg3/Vg4",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkåra for inntak til Vg2, Vg3 og vg4 er at søkjaren har bestått alle fag på lågare nivå i tråd med den fastsette fag- og timefordelinga for det fleksible utdanningsprogrammet. Søkjarar som ikkje har bestått i alle fag på Vg1 eller Vg2, kan likevel takast inn til neste nivå om skolen etter ei heilskapleg vurdering finn at det er forsvarleg, jf. ",
+        {
+         "t": "§ 4-13 i forskrift til opplæringslova",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Elevar som bytter utdanningsprogram og/eller skole",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar i dei fleksible utdanningsprogramma kan søkje seg til eit ordinært tilbod. Ved eit slikt byte må eleven ta eventuelle fag som han/ho manglar for å få vitnemål. Ved byte av skole i Møre og Romsdal fylkeskommune har mottakarskolen ansvaret for at eleven får faga han/ho manglar. Dersom eleven ønskjer det, kan mottakarskolen inngå ein avtale med eleven om at han/ho tar fag som privatist."
+       ]
+      },
+      {
+       "tekst": [
+        "I Møre og Romsdal fylkeskommune er det tilbod om ordinære yrkesfaglege løp innan utdanningsprogram for teknologi- og industrifag ved:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Borgund vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Hustadvika vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Gjermundnes vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Haram vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Herøy vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kristiansund videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Rauma videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Romsdal videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sunndal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Surnadal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sykkylven vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ørsta vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ålesund videregående skole."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "I Møre og Romsdal fylkeskommune er det tilbod om ordinære yrkesfaglege løp innan utdanningsprogram for elektro- og datateknologi ved:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Borgund vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Haram vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kristiansund videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Rauma videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Romsdal videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sunndal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Surnadal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sykkylven vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ulstein vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ørsta vidaregåande skule."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "I Møre og Romsdal fylkeskommune er det tilbod om ordinære yrkesfaglege løp innan utdanningsprogram for helse- og oppvekstfag ved:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Borgund vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Haram vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Herøy vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Hustadvika vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kristiansund videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Rauma videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Romsdal videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Stranda vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sunndal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Surnadal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sykkylven vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ørsta vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ålesund videregående skole."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "I Møre og Romsdal fylkeskommune er det tilbod om ordinære yrkesfaglege løp innan utdanningsprogram for Sal, service og reiseliv ved:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Romsdal videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ulstein vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ålesund videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kristiansund videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Molde videregående skole."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Møre og Romsdal fylkeskommune er det tilbod om studieførebuande utdanningsprogram ved:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Atlanten videregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Haram vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Hustadvika vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kristiansund videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Molde videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Rauma videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Romsdal videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Spjelkavik videregående skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Stranda vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sunndal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Surnadal vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Sykkylven vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Tingvoll vidaregåande skole"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ulstein vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Volda vidaregåande skule"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ålesund videregående skole."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskrifta trer i kraft frå 1. august 2026. Frå same tidspunkt blir ",
+        {
+         "t": "forskrift 4. juli 2025 nr. 1497 om fleksibilitet i fag- og timefordeling i vidaregåande opplæring, Møre og Romsdal oppheva",
+         "l": "forskrift/2025-07-04-1497"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

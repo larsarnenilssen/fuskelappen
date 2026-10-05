@@ -1,0 +1,456 @@
+{
+ "id": "more-og-romsdal-skoleregler-voksne",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om ordensreglar for vidaregåande opplæring for vaksne, Møre og Romsdal fylkeskommune",
+ "korttittel": "Reglar for vaksne i Møre og Romsdal",
+ "malform": "nn",
+ "refid": "forskrift/2024-12-09-3161",
+ "sistEndret": "2026-08-01",
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-voksne",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "15"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om ordensreglar for vidaregåande opplæring for vaksne, Møre og Romsdal fylkeskommune",
+   "merknader": [
+    [
+     "I kraft frå 1. januar 2025."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordensreglane skal"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "legge til rette for eit godt lærings- og arbeidsmiljø, og sikre rettane og pliktene til alle som følgjer vidaregåande opplæring for vaksne i Møre og Romsdal"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til godt samarbeid, trivsel, respekt og medansvar for alle deltakarane"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "gjelde for vaksne som har søkt inntak til vidaregåande opplæring for vaksne, og som har fått eit opplæringstilbod"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "gjelde på skolen sitt område, i skolen sitt nærområde i skoletida, ved ekskursjonar, utanlandsopphald og andre aktivitetar i skolen sin regi"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "gjelde for deltakarar som har opplæring utanfor skolen sitt område så langt dei ikkje er i konflikt med reglane i arbeidslivet eller arbeidsstaden."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Skolemiljø",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakarar har rett til opplæring og rettleiing i samsvar med reglane for vidaregåande opplæring for vaksne."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakarar har rett til eit skolemiljø som fremmer helse, inkludering, trivsel og læring."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakarar har rett til eit skolemiljø som er fritt for mobbing, vald, hærverk, rasistiske utsegn og haldningar, seksuell trakassering, sjikane på grunn av seksuell legning, religion eller livssyn og anna krenkjande oppførsel."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er forbode å ha farlege gjenstandar og/eller våpen på skolen sitt område, eller i aktivitet i regi av skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikkje lov til å vere påverka av, bruke eller oppbevare noko form for rusmiddel på skolen sitt område, eller ved aktivitet i regi av skolen. Dette gjeld og tobakk, snus og e-sigarettar."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikkje lov å bruke klesplagg som heilt eller delvis dekkjer ansiktet."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikkje anledning til å ha med barn i undervisninga."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolane i Møre og Romsdal fylkeskommune er livssynsnøytrale, og det vert ikkje lagt til rette for bøn i skoletida."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Permisjon frå opplæringa",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakar som på grunn av sjukdom eller andre tungtvegande grunner ikkje greier å delta i opplæringa, kan søke om permisjon jf. ",
+        {
+         "t": "opplæringslova § 18-11",
+         "l": "lov/2023-06-09-30/§18-11",
+         "a": "opplaeringslova/18-11"
+        },
+        ". Søknad om permisjon skal sendast til opplæringsstaden og det må ligge ved dokumentasjon på årsaka til søknaden."
+       ]
+      },
+      {
+       "tekst": [
+        "Det kan innvilgast permisjon ved langvarig sjukefråvær frå 14 dagar inntil 1 år. Langvarig sjukefråvær må dokumenterast av lege eller anna helsepersonell."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakar som ikkje kan starte på planlagd opplæringsløp kan søke om permisjon."
+       ]
+      },
+      {
+       "tekst": [
+        "Permisjonen gjeld frå det tidspunktet faget/modulen skulle starte, og fram til neste oppstart av opplæringa. Du kan få permisjon éin gong for kvart fag eller kvar modul. Viss deltakar vil utsetje meir, må opplæringa avsluttast, og deltakar må søke om plass på nytt seinare."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "10 juni 2026 nr. 1045",
+        "l": "forskrift/2026-06-10-1045"
+       },
+       " (i kraft 1 aug 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Deltakaren sine pliktar",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakaren har plikt til å rette seg etter lover, reglar og instruksar som gjeld. Deltakaren er pliktig til å møte presis til opplæringa og delta aktivt, og møte andre deltakarar og tilsette med respekt."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakaren skal melde frå om fråvær frå første fråværsdag, likeins om ein må forlate opplæringsstaden i løpet av skoledagen. Stort fråvær kan føre til at deltakaren ikkje får halvårsvurdering med karakter, standpunktvurdering eller godkjent modul, jf. ",
+        {
+         "t": "opplæringsforskrifta § 9-1 fjerde ledd",
+         "l": "forskrift/2024-06-03-900/§9-1",
+         "a": "opplaeringsforskrifta/9-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakaren må følgje verne- og tryggleiksreglar og bruke verneutstyr og arbeidsklede som det vert sett krav om, eller som er påbode av Arbeidstilsynet, departementet eller skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Hærverk på læremiddel og utstyr som er skolen sin eigedom kan medføre erstatningsansvar jf. utlånsreglementet til skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakaren har sjølv ansvar for sine personlege eigedelar."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved fusk eller forsøk på fusk til eksamen, gjeld reglane i ",
+        {
+         "t": "opplæringsforskrifta § 15-25",
+         "l": "forskrift/2024-06-03-900/§15-25",
+         "a": "opplaeringsforskrifta/15-25"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved ekskursjonar eller reiser i regi av skolen gjeld ordensreglane. Deltakaren skal følgje instruksar frå reiseleiar, og delta i det oppsett programmet for turen. Brot på reglane kan i dette høvet føre til bortvising."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "10 juni 2026 nr. 1045",
+        "l": "forskrift/2026-06-10-1045"
+       },
+       " (i kraft 1 aug 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Tillegg til ordensreglane",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordensreglane er det fastsett IKT-reglement og utlånsreglement. Deltakaren må gjere seg kjent med desse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Sanksjonar ved brot på ordensreglane",
+     "ledd": [
+      {
+       "tekst": [
+        "Reaksjonar utan klagerett:"
+       ]
+      },
+      {
+       "tekst": [
+        "Munnleg eller skriftleg påtale frå ein av dei tilsette ved skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Ulovlege og/eller farlege gjenstandar vert beslaglagt og kan bli levert til politiet."
+       ]
+      },
+      {
+       "tekst": [
+        "Rusmiddel vert beslaglagt og narkotika blir levert til politiet."
+       ]
+      },
+      {
+       "tekst": [
+        "Faglærar kan utvise deltakaren i inntil 2 klokketimar."
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjonar med klagerett:"
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjonar med klagerett er enkeltvedtak og skal handsamast etter ",
+        {
+         "t": "forvaltningslova",
+         "l": "lov/1967-02-10"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Annullering av eksamen – etter vedtak fatta av rektor sjølv"
+       ]
+      },
+      {
+       "tekst": [
+        "Bortvising frå eksamen – etter vedtak fatta av rektor sjølv"
+       ]
+      },
+      {
+       "tekst": [
+        "Bortvising frå ein heil skoledag – og inntil fem skoledagar etter vedtak fatta frå rektor sjølv jf. ",
+        {
+         "t": "opplæringslova § 13-1",
+         "l": "lov/2023-06-09-30/§13-1",
+         "a": "opplaeringslova/13-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakarar som bryt skolereglane i alvorleg grad eller fleire gonger, kan visst bort for resten av skoleåret dersom brota er særleg alvorlege. Vedtak om bortvising for resten skoleåret blir fatta av kompetansesjefen jf. ",
+        {
+         "t": "opplæringslova § 13-1, 4. ledd",
+         "l": "lov/2023-06-09-30/§13-1",
+         "a": "opplaeringslova/13-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Saksbehandling av reaksjonar med klagerett",
+     "ledd": [
+      {
+       "tekst": [
+        "Før det blir sett i verk reaksjon skal deltakaren få høve til å forklare seg munnleg direkte for den som skal ta avgjerda."
+       ]
+      },
+      {
+       "tekst": [
+        "Avgjerd som gjeld reaksjonar med klagerett skal vere skriftleg og innehalde grunngjeving for vedtaket. I grunngjevinga skal det gjerast greie for dei faktiske forholda som vedtaket byggjer på, og kva reglar som er nytta. I vedtaket skal det opplysast om klagerett, klagefrist, klageinstans og om retten til å sjå dokumenta i saka."
+       ]
+      },
+      {
+       "tekst": [
+        "Klage kan vere munnleg. Skolen skal i slike tilfelle skrive ned klaga så fort som mogleg."
+       ]
+      },
+      {
+       "tekst": [
+        "Klage fører ikkje automatisk til at vedtaket ikkje kan setjast i verk med ein gong. Deltakaren skal informerast om at det er mogleg å be om å få utsett iverksetting av vedtaket inntil klaga er avgjort. Dette er aktuelt ved vedtak om utvisning."
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjonar som ikkje kan klagast på, skal skriftleggjerast i tråd med krav til forsvarleg system."
+       ]
+      },
+      {
+       "tekst": [
+        "Klagebehandling:"
+       ]
+      },
+      {
+       "tekst": [
+        "Klaga skal leverast til den som har fatta vedtaket som det blir klaga på."
+       ]
+      },
+      {
+       "tekst": [
+        "Den som har fatta vedtaket vurderer klaga og tek stilling til utsett iverksetting dersom det er bede om det i klaga."
+       ]
+      },
+      {
+       "tekst": [
+        "Den som har fatta vedtaket kan ta klaga til følgje."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom klaga ikkje blir teke til følgje, skal saka sendast til klageinstansen til endeleg avgjerd."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved oversending av klaga til klageinstansen, skal deltakaren ha kopi av saksdokumenta og oversendingsbrevet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Forsikring, erstatning og politimelding",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakarar er forsikra i opplæringstida gjennom Møre og Romsdal fylkeskommune. Denne forsikringa dekkjer ulukker eller skadar på sjølve deltakaren. Lærlingar og lærekandidatar skal vere dekte av yrkesskadeforsikringa til bedrifta."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakar har sjølv ansvar for eigne verdisaker."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom ein deltakar gjer skade med vilje eller ved grov aktløyse, kan han eller ho bli erstatningsansvarleg etter reglane i erstatningsretten. Dette kan kome i tillegg til reaksjonar for brot på ordensreglane."
+       ]
+      },
+      {
+       "tekst": [
+        "Som hovudregel skal rektor melde straffbare forhold til politiet. For mindre alvorlege tilfelle skal skolen gjere ei konkret vurdering av om melding til politiet er føremålstenleg."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "10 juni 2026 nr. 1045",
+        "l": "forskrift/2026-06-10-1045"
+       },
+       " (i kraft 1 aug 2026)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

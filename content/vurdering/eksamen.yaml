@@ -292,7 +292,7 @@
   tekst:
     nb: "Skulereglane i Vestland regner bortvisning fra og annullering av eksamen som en sanksjon med klagerett, etter vedtak av rektor selv. Klagen sendes til rektor, og fristen er vanligvis tre uker. Statsforvalteren er klageinstans."
     nn: "Skulereglane i Vestland reknar bortvising frå og annullering av eksamen som ein sanksjon med klagerett, etter vedtak av rektor sjølv. Klaga blir send til rektor, og fristen er vanlegvis tre veker. Statsforvaltaren er klageinstans."
-  paragrafer: [vestland-skulereglar/8, vestland-skulereglar/13]
+  paragrafer: [vestland-skoleregler/8, vestland-skoleregler/13]
   kilder:
     - { id: vestland-forskrift-skulereglar, punkt: "§ 8 tredje ledd nr. 6" }
     - { id: vestland-forskrift-skulereglar, punkt: "§ 13 første og tredje ledd" }

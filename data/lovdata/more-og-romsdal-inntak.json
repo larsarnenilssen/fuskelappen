@@ -1,0 +1,1392 @@
+{
+ "id": "more-og-romsdal-inntak",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til vidaregåande opplæring og formidling av læreplassar, Møre og Romsdal fylkeskommune",
+ "korttittel": "Inntak og formidling i Møre og Romsdal",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-09-3160",
+ "sistEndret": "2026-08-01",
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "inntak",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "15"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kapI",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "I. Formål og verkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den lokale forskrifta er å fastsetje rettar og plikter for søkarar til vidaregåande opplæring i Møre og Romsdal. Den lokale forskrifta utfyller ",
+        {
+         "t": "kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        " og ",
+        {
+         "t": "kapittel 7 i opplæringsforskrifta",
+         "l": "forskrift/2024-06-03-900/kap7"
+        },
+        " og informerer om korleis Møre og Romsdal skal gjennomføre inntak og formidling."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gjeld for inntak til offentlege vidaregåande skular, landslinjer og landsdekkande linjer, regionale tilbod og formidling til opplæring i bedrift i Møre og Romsdal fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapII",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "II. Inntak til videregående opplæring",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Inntaket i Møre og Romsdal",
+     "ledd": [
+      {
+       "tekst": [
+        "Møre og Romsdal fylkeskommune gir tilbod til søkarar som bur i Møre og Romsdal som har rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som ikkje får tilbod om plass på sitt første ønske, får stå på venteliste til høgare ønske."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Fritt skuleval",
+     "ledd": [
+      {
+       "tekst": [
+        "Møre og Romsdal har fritt skoleval. Dette vart vedtatt i fylkestinget i sak T 6/00 (U-93/00A) A – Omstilling 2000-Strukturgjennomgangen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Gjesteelevar",
+     "ledd": [
+      {
+       "tekst": [
+        "Møre og Romsdal tar inn gjesteelevar i samsvar med ",
+        {
+         "t": "opplæringslova § 28-2 tredje ledd",
+         "l": "lov/2023-06-09-30/§28-2",
+         "a": "opplaeringslova/28-2"
+        },
+        " og ",
+        {
+         "t": "opplæringsforskrifta §§ 4-8 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§4-8",
+         "a": "opplaeringsforskrifta/4-8"
+        },
+        " og ",
+        {
+         "t": "4-14 tredje ledd",
+         "l": "forskrift/2024-06-03-900/§4-14",
+         "a": "opplaeringsforskrifta/4-14"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Møre og Romsdal har avtale med Opplæringsregion Nord om regionale opplæringstilbod."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar med rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " som bur i enkelte grenseområde kan ta ut retten sin i nabofylket. Søknaden behandlast etter eigne avtalar mellom fylkeskommunane."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Flytting",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar med rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " som er busett i andre fylke, kan søke i Møre og Romsdal. Dei må innan 15. juni dokumentere flytting dersom dei skal få rett til vidaregåande opplæring i Møre og Romsdal."
+       ]
+      },
+      {
+       "tekst": [
+        "Vaksne søkarar frå andre fylke vil bli avvist som søkarar til tilbod i Møre og Romsdal gitt etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Søknadsfrist og behandling av søknader som kjem inn etter fristen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknadsfrist er 1. mars for elevar som søker seg inn i det ordinære inntaket, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-9 første ledd",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknadsfristen er 1. februar for søkarar som fell under ",
+        {
+         "t": "opplæringsforskrifta § 4-9 andre ledd",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader som kjem etter 1. juni blir som hovudregel ikkje behandla. Søkaren kan sette seg opp på intern venteliste ved ein eller fleire skolar, men vil ikkje ha krav på tilbod om skoleplass sjølv om dei har rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dei som søker i samarbeid med oppfølgingstenesta vil bli registrert fortløpande og så langt som råd, men ikkje etter 1. juni. Desse stiller ikkje bak dei som har søkt innan fristen. Etter 1. juni må søkar sjølv kontakte skolane og be om å bli sett opp på intern venteliste. Dei har rett til inntak dersom det blir ledig skoleplass."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknad til landslinjer kan ikkje registrerast etter søknadsfristen 1. mars."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Endring av søknaden etter fristen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar med fortrinnsrett etter ",
+        {
+         "t": "opplæringsforskrifta §§ 4-21",
+         "l": "forskrift/2024-06-03-900/§4-21",
+         "a": "opplaeringsforskrifta/4-21"
+        },
+        ", ",
+        {
+         "t": "4-22",
+         "l": "forskrift/2024-06-03-900/§4-22",
+         "a": "opplaeringsforskrifta/4-22"
+        },
+        ", ",
+        {
+         "t": "4-23",
+         "l": "forskrift/2024-06-03-900/§4-23",
+         "a": "opplaeringsforskrifta/4-23"
+        },
+        ", ",
+        {
+         "t": "4-27",
+         "l": "forskrift/2024-06-03-900/§4-27",
+         "a": "opplaeringsforskrifta/4-27"
+        },
+        " og ",
+        {
+         "t": "4-28",
+         "l": "forskrift/2024-06-03-900/§4-28",
+         "a": "opplaeringsforskrifta/4-28"
+        },
+        ", kan ikkje endre søknaden etter fristen 1. februar."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar med søknadsfrist 1. mars kan ikkje endre søknaden etter 1. mars med mindre dei kan dokumentere tungtvegande grunnar."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som søker om individuell behandling med søknadsfrist 1. februar etter ",
+        {
+         "t": "opplæringsforskrifta § 4-20",
+         "l": "forskrift/2024-06-03-900/§4-20",
+         "a": "opplaeringsforskrifta/4-20"
+        },
+        " og ",
+        {
+         "t": "§ 4-26",
+         "l": "forskrift/2024-06-03-900/§4-26",
+         "a": "opplaeringsforskrifta/4-26"
+        },
+        " kan ikkje endre søknaden etter 1. februar med mindre dei kan dokumentere tungtvegande grunnar."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som har vedtak om særskild språkopplæring etter ",
+        {
+         "t": "opplæringslova § 3-6",
+         "l": "lov/2023-06-09-30/§3-6"
+        },
+        " eller ",
+        {
+         "t": "§ 6-5",
+         "l": "lov/2023-06-09-30/§6-5",
+         "a": "opplaeringslova/6-5"
+        },
+        ", har søknadsfrist 1. februar og kan ikkje endre søknaden sin etter 1. februar med mindre dei kan dokumentere tungtvegande grunnar."
+       ]
+      },
+      {
+       "tekst": [
+        "Søknader til landslinjer kan ikkje endrast etter fristen 1. mars."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       ", ",
+       {
+        "t": "11 mars 2026 nr. 376",
+        "l": "forskrift/2026-03-11-376"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til landslinjer og landsdekkande linjer",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknad til landslinjer sendast til det fylket søkaren er folkeregistrert i. For inntak til landslinje for jazz ved Molde vidaregåande skole gjeld særlege inntakskrav. Søkaren blir kalla inn til prøvespel. Skolen vurderer om søkar er kvalifisert og gir melding til fylkeskommunen."
+       ]
+      },
+      {
+       "tekst": [
+        "For inntak til Idrettsfag – bratt friluftsliv- landslinje ved Rauma vidaregåande skole kan inntil 50 prosent av plassane settast av til inntak på grunnlag skal søkaren sin motivasjon. Søkaren skal sende inn motivasjonsbrev. Skolen vurdera om søkar er kvalifisert og godkjent vurdering gjer 15 tilleggspoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er skolefylke som gjer inntaket til landslinjer."
+       ]
+      },
+      {
+       "tekst": [
+        "Retningslinjer for inntak til vidaregåande trinn 3 yrkessjåfør, landslinje, er gitt av Utdanningsdirektoratet i brev datert 18. mai 2022. Det er delegert til skolen å gjere inntak til tilbodet."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Inntak til vidaregåande trinn 1 musikk, dans og drama, idrettsfag og yrkes- og studiekompetanse (YSK)",
+     "ledd": [
+      {
+       "tekst": [
+        "Vidaregåande trinn 1 musikk, dans og drama:"
+       ]
+      },
+      {
+       "tekst": [
+        "Inntil 50 prosent av søkarane til vidaregåande trinn 1 musikk, dans og drama kan bli tatt inn på grunnlag av opptaksprøver i tillegg til karakterar. Det er berre søkarar som har vidaregåande trinn 1 musikk, dans og drama som sitt første ønske som blir innkalla til opptaksprøve av skolen dei har som første ønske. Dei som har vidaregåande trinn 1 musikk, dans og drama som lågare ønske konkurrerer med karakterar. Søkarar som etter vurdering får anbefaling frå skolen, får 15 tilleggspoeng å konkurrere med i inntaket."
+       ]
+      },
+      {
+       "tekst": [
+        "Vidaregåande trinn 1 idrettsfag:"
+       ]
+      },
+      {
+       "tekst": [
+        "Inntil 50 prosent av plassane kan settast av til inntak på grunnlag av dokumenterte idrettslege ferdigheiter, i tillegg til karakterpoeng frå grunnskolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar til vidaregåande trinn 1 idrettsfag som ønsker tilleggspoeng, må sende inn vedleggsskjema og dokumentasjon frå klubb eller idrettslag til den skolen som er satt opp som første ønske innan 1. mars."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som har vidaregåande trinn 1 idrettsfag som sitt 1. ønske, og etter vurdering får anbefaling frå skolen, får 15 tilleggspoeng å konkurrere med i inntaket."
+       ]
+      },
+      {
+       "tekst": [
+        "Vidaregåande trinn 1 yrkes- og studiekompetanse (YSK):"
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar til vidaregåande trinn 1 yrkes- og studiekompetansetilboda (YSK) må ha minimum karakter 4 i standpunktkarakter frå grunnskolen i faga matematikk og naturfag for å vere kvalifisert til inntak på tilbodet."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som blir tatt inn til vidaregåande trinn 1 YSK, har rett til inntak på dei neste trinna i opplæringsløpet ved same skole, dersom dei fyller krava til inntak jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Inntak til studiespesialiserande med toppidrett",
+     "ledd": [
+      {
+       "tekst": [
+        "Studiespesialiserande med toppidrett er eit tilbod for søkarar som kan vise til idrettslege prestasjonar på regionalt, nasjonalt eller internasjonalt nivå. Det blir lagt vekt på søkar sine idrettslege ferdigheiter, haldningar og utviklingspotensiale. Søkar må ha tilbodet som første ønske for å bli vurdert som søkar."
+       ]
+      },
+      {
+       "tekst": [
+        "Dei idrettslege prestasjonane må dokumenterast. Dokumentasjonen kan vere ein kombinasjon av attestar og dokumentasjon på resultat."
+       ]
+      },
+      {
+       "tekst": [
+        "I tillegg til elektronisk søknad, må det sendes inn vedleggsskjema til fylkeskommunen innan 1. mars."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen vurderer dokumentasjonen i dialog med søkaren sin idrettskrins."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen fattar vedtak om inntak. Søkarar som ikkje fyller kriteria for inntak til tilbodet blir kontakta av fylkeskommunen og får anledning til å endre søknaden sin."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Inntak av utvekslingselevar og elevar med utanlandsk utdanning",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar som reiser til utlandet i forbindelse med elevutveksling kan få førehandsgodkjent året i utlandet som eit vidaregåande trinn 1 eller trinn 2 i Norge. Dei kan søke om sikring av skoleplass på neste trinn ved skolen som har førehandsgodkjent året i utlandet. Dei er ikkje kvalifisert til inntak ved andre skolar enn den som har førehandsgodkjent året i utlandet."
+       ]
+      },
+      {
+       "tekst": [
+        "Det blir delegert til skolane ved rektor å godkjenne heile opplæringsår frå utlandet som eit vidaregåande trinn 1 eller trinn 2 i Norge jf. ",
+        {
+         "t": "forskrift til opplæringslova § 5-11",
+         "l": "forskrift/2024-06-03-900/§5-11",
+         "a": "opplaeringsforskrifta/5-11"
+        },
+        ". Søkarar som får godkjent eit vidaregåande trinn 1 eller trinn 2 frå utlandet, blir tatt inn etter individuell vurdering jf. ",
+        {
+         "t": "forskrift til opplæringslova § 4-26",
+         "l": "lov/1997-02-28-19/§4-26"
+        },
+        " a."
+       ]
+      },
+      {
+       "tekst": [
+        "Møre og Romsdal fylkeskommune gir retningslinjer for korleis dette skal gjerast, og saksbehandlar søknadane (søkarar som søker gjennom fellesinntaket.)"
+       ]
+      },
+      {
+       "tekst": [
+        "Utvekslingselevar som ikkje skal ha året i utlandet godkjent som eit vidaregåande trinn 1 eller trinn 2 i Norge skal søke om inntak til vidaregåande trinn 2 eller trinn 3 og konkurrere om skoleplass etter poeng, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 4-24",
+         "l": "lov/1997-02-28-19/§4-24"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Vidaresøking for dei som ikkje konkurrerer seg inn på tilbod dei har sett opp på søknaden",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar til vidaregåande trinn 1 som har rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", men ikkje har sett opp 3 alternative utdanningsprogram på søknaden sin, blir vidaresøkt til andre vidaregåande trinn 1 dersom dei ikkje får tilbod om utdanningsprogrammet eller utdanningsprogramma dei har sett opp på søknaden sin."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som har sett opp 3 alternative utdanningsprogram blir vidaresøkt til andre skolar i fylket med same utdanningsprogram, dersom dei ikkje greier å konkurrere seg inn på nokon av skolane dei har sett opp på søknaden sin."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar med rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", som søker vidaregåande trinn 2 og trinn 3 blir vidaresøkt til andre skolar, eller andre programområde dei er kvalifisert til ut frå det trinnet dei har fullført og bestått."
+       ]
+      },
+      {
+       "tekst": [
+        "Alle som blir vidaresøkt til utdanningsprogram/programområde eller skolar dei ikkje har sett opp på søknaden sin, får stå på venteliste til alle tilbod dei har søkt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Kryssløp på tvers av strukturen",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak på tvers av tilbodsstrukturen, frå vidaregåande trinn 1 til trinn 2, innan dei studieførebuande utdanningsprogramma må søkar ha tatt manglande fag som privatist eller legge fram ein plan for gjennomføring av manglande fag. Manglande fag må vere tatt før inntak til vidaregåande trinn 3. Planen må vere signert av elev og skole og leggast ved skolesøknad. Søkarar til slike kryssløp vert prioritert bak søkarar som følger tilbodsstrukturen."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som går vidaregåande trinn 1 studiespesialisering og som ønsker overgang til trinn 2 studiespesialisering med ei anna fordjuping utanom hovudkoden, kan søke om det. Søkaren må ta fag som manglar som privatist. Søkarar til slike kryssløp vert prioritert bak søkarar som har rett bakgrunn."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som får ei skriftleg godkjenning frå ein skole om at dei er kvalifisert til inntak på eit vidaregåande trinn 2 med bakgrunn i eit trinn 1 utan kryssløp i strukturen, kan søke om det. Søkaren er i slike tilfelle berre godkjent for inntak til den skolen som har gitt skriftleg godkjenning. Søkaren må ta fag som manglar som privatist."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som ønsker kryssløp utanom strukturen må sende skriftleg søknad til Kompetansesjefen innan dei fastsette fristane i ",
+        {
+         "t": "opplæringsforskrifta § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        ". Søkarar som søker slike kryssløp vert prioritert bak søkarar med rett bakgrunn."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Opprykk til vidaregåande trinn 2 og vidaregåande trinn 3",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkar til vidaregåande trinn 2 og vidaregåande trinn 3 studieførebuande utdanningsprogram kan ha rett til å fortsette på same skole der vidaregåande trinn 1 og trinn 2 er fullført. Føresetnaden er at det blir søkt om inntak påfølgande år og at søkar har skolen som sitt første ønske."
+       ]
+      },
+      {
+       "tekst": [
+        "Der det er fleire søkarar enn skolen har elevplassar på det aktuelle programområdet blir inntaket avgjort etter poengsum, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-24",
+         "l": "forskrift/2024-06-03-900/§4-24",
+         "a": "opplaeringsforskrifta/4-24"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Inntak til vidaregåande trinn 2 og vidaregåande trinn 3 for søkar som ikkje har bestått i alle fag",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkar til vidaregåande trinn 2 og vidaregåande trinn 3 som ikkje har bestått i alle fag, kan tas inn på neste trinn om skolen etter en samla vurdering kjem til at søkaren har nødvendig kompetanse til å følge opplæringa. Rektor fattar enkeltvedtak om utfallet av denne vurderinga."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar som ikkje kan tas inn på neste trinn etter en samla vurdering, kan gjere omval innan 1. juli eller søke om meiropplæring i samsvar med ",
+        {
+         "t": "opplæringsforskrifta § 5-2",
+         "l": "forskrift/2024-06-03-900/§5-2",
+         "a": "opplaeringsforskrifta/5-2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen tar endeleg avgjersle om inntak."
+       ]
+      },
+      {
+       "tekst": [
+        "For søknad til påbygging til generell studiekompetanse (PB3) må alle fag frå vidaregåande trinn 1 og vidaregåande trinn 2 være bestått for å vere kvalifisert."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "11 mars 2026 nr. 376",
+        "l": "forskrift/2026-03-11-376"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Frammøte første skuledag",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar må møte på skulen første skuledag."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom ein elev blir borte frå skulen første skuledag utan gyldig grunn, mister eleven skuleplassen. Ved sjukdom eller andre tvingande grunnar pliktar eleven å gi beskjed til skulen snarast mogleg og seinast innan oppmøtetidspunkt første skuledag om at vedkommande ikkje kan møte. Fråværet må dokumenterast."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapIII",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "III. Inntak av søkarar med fortrinnsrett og individuell behandling",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Inntak av søkarar med fortrinnsrett og individuell behandling",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntak av søkar med fortrinnsrett etter ",
+        {
+         "t": "opplæringsforskrifta § 4-21",
+         "l": "forskrift/2024-06-03-900/§4-21",
+         "a": "opplaeringsforskrifta/4-21"
+        },
+        " til ",
+        {
+         "t": "§ 4-23",
+         "l": "forskrift/2024-06-03-900/§4-23",
+         "a": "opplaeringsforskrifta/4-23"
+        },
+        " og ",
+        {
+         "t": "§ 4-27",
+         "l": "forskrift/2024-06-03-900/§4-27",
+         "a": "opplaeringsforskrifta/4-27"
+        },
+        " blir gjennomført seinast medio april."
+       ]
+      },
+      {
+       "tekst": [
+        "Inntak av søkarar etter ",
+        {
+         "t": "opplæringsforskrifta § 4-20 bokstav a",
+         "l": "forskrift/2024-06-03-900/§4-20",
+         "a": "opplaeringsforskrifta/4-20"
+        },
+        ", som gjeld elevar som har enkeltvedtak om individuelt tilrettelagt opplæring og fritak frå vurdering i over halvparten av faga, blir gjennomført i mai."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 17)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Inntak av søkarar med sterkt nedsett funksjonsevne",
+     "ledd": [
+      {
+       "tekst": [
+        "Møre og Romsdal fylkeskommune skal sikre at elevar med store tilretteleggingsbehov og sterkt nedsett funksjonsevne som blir tatt inn ved skolen, skal få eit individuelt tilpassa opplæringstilbod."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen vurderer på individuelt grunnlag om det er tungtvegande grunnar til å godkjenne søknad om inntak på ein bestemt skole. I den individuelle vurderinga skal det bli gjort ei vurdering av barnet sitt beste"
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 18)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Søkarar som av andre særlege grunnar må behandlast individuelt jf. opplæringsforskrifta § 4-20 tredje ledd og § 4-26 bokstav c",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkar med rett til opplæring etter ",
+        {
+         "t": "opplæringslova § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", som bor i institusjon eller i fosterheim og som barnevernet har ansvaret for, vil ha behov for inntak på ein skole nær bustaden. Dette gjeld også mindreårige som er busett på mottak og flyktningar som vert busett Norge kalenderåret før inntak."
+       ]
+      },
+      {
+       "tekst": [
+        "Det same gjeld søkarar som på grunn av medisinske årsaker er inne i eit planlagd behandlingsopplegg over tid."
+       ]
+      },
+      {
+       "tekst": [
+        "Frist for å søke inntak er 1. februar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 19)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapIV",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "IV. Ta fag som privatist, reservasjon av skoleplass",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Søknad om å ta fag som privatist",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar som har tatt i mot skoleplass, men som på grunn av tungtvegande grunnar ikkje ønsker å følge opplæringa i eit eller fleire fag som er ein del av opplæringstilbodet eleven er tatt inn til, kan søke til skolen om å ta fag som privatist."
+       ]
+      },
+      {
+       "tekst": [
+        "Tungtvegande grunnar kan til dømes vere i dei tilfelle eleven har opplevd noko traumatisk, blir sjuk, har omsorgsansvar eller liknande."
+       ]
+      },
+      {
+       "tekst": [
+        "Der skolen ikkje tilbyr opplæring i et framandspråk eleven har språkbakgrunn i, kan eleven søke skolen om å ta faget som privatist."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 20)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Reservasjon av skoleplass",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevar som må avbryte opplæringa på grunn av sjukdom eller andre tungtvegande grunnar, kan søke fylkeskommunen om reservasjon av skoleplass på same utdanningsprogram/ programområde på same skole påfølgande skoleår."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven må søke om inntak for påfølgande skoleår."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen må ha avbrotsskjema med eleven si underskrift."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 21)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapV",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "V. Formidling",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Vilkår for formidling til læreplass som lærling eller lærekandidat",
+     "ledd": [
+      {
+       "tekst": [
+        "Dei som søker om formidling til læreplass som lærling, må oppfylle vilkåra for inntak til neste vidaregåande trinn for å kunne bli formidla til opplæring i bedrift jf. ",
+        {
+         "t": "opplæringsforskrifta kapittel 7",
+         "l": "forskrift/2024-06-03-900/kap7"
+        },
+        " og ",
+        {
+         "t": "§ 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar som ønsker formidling som lærekandidat må ha bestått sitt individuelle opplæringsløp for å bli formidla til opplæring i bedrift på neste trinn."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved søknad om formidling som lærekandidat må hjelpeinstansen ha forslag til lærebedrift."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 22)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Behandling av søknadar som kjem etter fristen",
+     "ledd": [
+      {
+       "tekst": [
+        "Søknadar til opplæringskontrakt, og søknadar til læreplass som kjem etter fristen 1. februar og 1. mars, skal takast omsyn til så langt som råd."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkaren kan teikne lærekontrakt kva tid som helst, dersom søkaren har skaffa bedrift sjølv."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 23)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "25",
+     "visNr": "§ 25",
+     "tittel": "Rett til eit anna opplæringstilbod",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar frå Møre og Romsdal som oppfyller vilkåra for å bli formidla til læretid i bedrift og som ikkje har blitt formidla til læreplass, har rett til eit anna opplæringstilbod med oppstart seinast 1. oktober."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar til læreplass som får eit tilbod frå fylkeskommunen med fysisk eller digitalt oppmøte, må møte opp til oppsett tid og stad. Søkar som ikkje møter utan å gi beskjed, kan miste retten til anna opplæringstilbod."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar til læreplass må svare på førespurnader og tilbod frå fylkeskommunen i formidlingsprosessen. Søkar som ikkje er mogleg å nå, kan miste retten til anna opplæringstilbod."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar utan rett til vidaregåande opplæring kan få tilbod om eit anna opplæringstilbod dersom det blir ledig plass."
+       ]
+      },
+      {
+       "tekst": [
+        "Møre og Romsdal kan samarbeide med andre fylke om anna opplæringstilbod."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 24), ",
+       {
+        "t": "25 juni 2026 nr. 1410",
+        "l": "forskrift/2026-06-25-1410"
+       },
+       " (i kraft 1 aug 2026)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapVI",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "VI. Vidaregåande opplæring for vaksne",
+   "merknader": [
+    [
+     "Rett til vidaregåande opplæring for vaksne går fram av ",
+     {
+      "t": "opplæringslova § 18-3",
+      "l": "lov/2023-06-09-30/§18-3",
+      "a": "opplaeringslova/18-3"
+     },
+     "."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "26",
+     "visNr": "§ 26",
+     "tittel": "Søknad",
+     "ledd": [
+      {
+       "tekst": [
+        "Vaksne søker vidaregåande opplæring og realkompetansevurdering på www.vigo.no."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som fyller 19 år det året skoleåret tar til, kan velje å søke ordinær vidaregåande opplæring eller vidaregåande opplæring for vaksne. Vaksne søkarar skal søke vidaregåande opplæring for vaksne."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikkje søknadsfrist for inntak til vidaregåande opplæring for vaksne. Søkaren bør likevel registrere søknaden innan 1. mars for tilbod med oppstart i august, og innan 15. september for tilbod med oppstart i januar. Søkaren må føre opp tre sluttkompetansar og prioritere desse."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar må ha folkeregistrert adresse i Møre og Romsdal eller dokumentere planlagt flytting til fylket."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 25)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "27",
+     "visNr": "§ 27",
+     "tittel": "Rettar og vilkår for inntak til vidaregåande opplæring for vaksne",
+     "ledd": [
+      {
+       "tekst": [
+        "Retten til å komme inn på ein av tre sluttkompetansar er knytt til dei opplæringstilboda som Møre og Romsdal fylkeskommune tilbyr."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar med betydeleg realkompetanse knytt til ein viss yrkeskompetanse får høve til å formalisere denne kompetansen gjennom fag- eller sveinebrev, jf. ",
+        {
+         "t": "opplæringslova § 18-3 andre ledd",
+         "l": "lov/2023-06-09-30/§18-3",
+         "a": "opplaeringslova/18-3"
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 26)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "28",
+     "visNr": "§ 28",
+     "tittel": "Inntaksrekkefølge",
+     "ledd": [
+      {
+       "tekst": [
+        "Om det er knapt om plassar følger inntaksrekkefølga ",
+        {
+         "t": "opplæringsforskrifta § 13-4",
+         "l": "forskrift/2024-06-03-900/§13-4",
+         "a": "opplaeringsforskrifta/13-4"
+        },
+        ". Søkaren blir prioritert etter det kartlagde opplæringsbehovet og datoen søknaden var klar til endeleg behandling."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar som har takka ja til eit opplæringstilbod, eller allereie er i opplæring for vaksne, har ikkje rett til fleire opplæringstilbod i same periode. Om opplæringa er avslutta utan at søkaren har oppnådd sluttkompetanse, har ein rett til å søke på nytt opplæringstilbod."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "29",
+     "visNr": "§ 29",
+     "tittel": "Tilbod til søkar utan rett",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkar med godkjend studiekompetanse frå utlandet (GSU) eller høgare utdanning frå utlandet som er godkjend som studiepoeng eller høgare utdanning i Norge, kan få tilbod om opplæring i norsk og engelsk for å dekke språkkrav til inntak til høgare utdanning i Norge. Søkar må ha grunnleggande kompetanse i engelsk for å få tilbod om opplæring i faget."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkar utan rett som ønsker eit anna opplæringstilbod, må registrere tre opplæringsønske i VIGO. Søkar har då rett til inntak til éin av tre ønskte sluttkompetansar blant tilboda fylkeskommunen har. Søkar stiller etter dei som har vaksenrett og fullføringsrett i inntaket."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "30",
+     "visNr": "§ 30",
+     "tittel": "Frammøte ved oppstart",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakar må møte til avtalt tid og stad ved oppstart. Deltakarar som ikkje møter utan gyldig grunn, mistar tilbodet. Ved sjukdom pliktar deltakar å gi beskjed til skolen/læringsstaden så snart som mogleg om at han eller ho ikkje kan møte, og seinast innan oppmøtetidspunktet ved oppstart. Forholdet må dokumenterast med legeerklæring."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "31",
+     "visNr": "§ 31",
+     "tittel": "Flytting til Møre og Romsdal",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar som ikkje har folkeregistrert adresse i Møre og Romsdal, men planlegg å flytte, må dokumentere at dei skal flytte til Møre og Romsdal i nær framtid. Dersom flyttinga ikkje er registrert i Folkeregisteret ved oppstart av opplæringstilbodet, mistar søkaren tilbodet. Vidaregåande opplæring for vaksne kan etter avtale med andre fylkeskommunar gi opplæring til enkeltpersonar frå andre fylke."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "32",
+     "visNr": "§ 32",
+     "tittel": "Godkjenning av fag og vurdering av realkompetanse",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakarar som truleg får godkjend tidlegare utdanning, må søke om å få godkjent fag."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakarar med relevant utdanning og eller praksis må få vurdert realkompetansen for å fastsette opplæringsbehovet."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "33",
+     "visNr": "§ 33",
+     "tittel": "Fritak frå fellesfaga",
+     "ledd": [
+      {
+       "tekst": [
+        "Privatistar og vaksne som følgjer vidaregåande opplæring som er særskilt organisert for dei, er fritekne frå kravet om fellesfag for å få vitnemål som gir yrkeskompetanse. Eit vilkår er mellom anna at dei har minst fem år allsidig yrkespraksis, eventuelt inkludert opplæring i faget. Dei yrkesfaglege utdanningsprogramma dette gjeld, er dei som fører til yrkeskompetanse i eit skuleløp utan opplæring i bedrift (til dømes helsesekretær, tannhelsesekretær og apotekteknikar). Jf. Utdanningsdirektoratets retningslinjer 9. april 2025 ",
+        {
+         "t": "Føring av vitnemål og kompetansebevis for videregående opplæring i Kunnskapsløftet – 2025 punkt 7.",
+         "l": "https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/7-fritak/"
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "34",
+     "visNr": "§ 34",
+     "tittel": "Halde tilbake viktig informasjon eller gje feil informasjon",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkar som held tilbake viktig informasjon, eller medvite gir feil informasjon i søknaden, kan få søknaden avvist eller miste eit tilbod dei allereie har fått."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kapVII",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "VII. Felles føresegner",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "35",
+     "visNr": "§ 35",
+     "tittel": "Mindre endringar i den lokale forskrifta",
+     "ledd": [
+      {
+       "tekst": [
+        "Kompetansesjefen har rett til å gjere mindre endringar i den lokale forskrifta."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom endringa er av slik art at den kan medføre en avgrensing av rettane til den enkelte søkar, skal endringa behandlast politisk."
+       ]
+      },
+      {
+       "tekst": [
+        "Det same om endringa fører til auka kostnadar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 27)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "36",
+     "visNr": "§ 36",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta gjeld frå 1. januar 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Samtidig opphevast forskrift 12. desember 2022 nr. 2625​1 om inntak til vidaregåande opplæring og formidling av læreplassar, Møre og Romsdal fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrift ",
+       {
+        "t": "8 des 2025 nr. 2564",
+        "l": "forskrift/2025-12-08-2564"
+       },
+       " (tidlegare § 28)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,867 @@
+{
+ "id": "vestby-videregaende-skole-fagfordeling-921",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 4-årig YSK/TAF løp innen utdanningsprogrammet service og samferdsel ved Vestby videregående skole, Vestby kommune, Akershus",
+ "korttittel": "Fag- og timefordeling, Vestby videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2017-06-12-921",
+ "sistEndret": null,
+ "iKraft": "2017-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "32",
+  "skoler": [
+   "974587815"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, og være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling i videregående opplæring for utdanningsprogrammet service og samferdsel ved Vestby videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for elever som tas inn på utdanningsprogrammet service og samferdsel ved Vestby videregående skole høsten 2017."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Elevene skal ha følgende fag- og timefordelingen (tabell 1):",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Vg4"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "84"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "112"
+          ]
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk 1P/1T + 2P"
+          ],
+          [
+           "140"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "281"
+          ],
+          [],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Valgfrie programfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Markedsføring og ledelse 1"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Internasjonal engelsk, skriftlig og muntlig"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Felles programfag:"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Administrasjon og økonomi"
+          ],
+          [
+           "169"
+          ],
+          [],
+          [],
+          [],
+          [
+           "169"
+          ]
+         ],
+         [
+          [
+           "Markedsføring og salg"
+          ],
+          [
+           "168"
+          ],
+          [],
+          [],
+          [],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Sikkerhet og transport"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Markedsføring og salg"
+          ],
+          [],
+          [
+           "169"
+          ],
+          [],
+          [],
+          [
+           "169"
+          ]
+         ],
+         [
+          [
+           "Sikkerhet"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Økonomi og administrasjon"
+          ],
+          [],
+          [
+           "168"
+          ],
+          [],
+          [],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning i bedrift/skole Skolen har opplærings- og vurderingsansvar"
+          ],
+          [
+           "168​*"
+          ],
+          [
+           "169​**"
+          ],
+          [],
+          [],
+          [
+           "336"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "1121"
+          ],
+          [
+           "1122"
+          ],
+          [
+           "421"
+          ],
+          [
+           "140"
+          ],
+          [
+           "2804"
+          ]
+         ],
+         [
+          [
+           "Læretid i bedrift (for organisering, se tabell 2-4)"
+          ],
+          [
+           "0"
+          ],
+          [
+           "277,5"
+          ],
+          [
+           "1125"
+          ],
+          [
+           "1417,5"
+          ],
+          [
+           "2820"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole og bedrift"
+          ],
+          [
+           "1121"
+          ],
+          [
+           "1399,5"
+          ],
+          [
+           "1546"
+          ],
+          [
+           "1557,5"
+          ],
+          [
+           "5624"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Organisering av læretid:"
+       ]
+      },
+      {
+       "tekst": [
+        "Tabell 2"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Læretid Vg2"
+         ],
+         [
+          "Timer"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Vinterferie"
+          ],
+          [
+           "37,5"
+          ]
+         ],
+         [
+          [
+           "To uker juni etter siste skoledag"
+          ],
+          [
+           "75,0"
+          ]
+         ],
+         [
+          [
+           "En dag pr. uke termin 2, 22 dager"
+          ],
+          [
+           "165"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "277,5"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Tabell 3"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Læretid Vg3"
+         ],
+         [
+          "Timer"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Læretid Vg3"
+          ],
+          [
+           "Timer"
+          ]
+         ],
+         [
+          [
+           "Juli (tre dager)"
+          ],
+          [
+           "22,5"
+          ]
+         ],
+         [
+          [
+           "To uker i august før skolestart"
+          ],
+          [
+           "75,0"
+          ]
+         ],
+         [
+          [
+           "Høstferie"
+          ],
+          [
+           "37,5"
+          ]
+         ],
+         [
+          [
+           "Vinterferie"
+          ],
+          [
+           "37,5"
+          ]
+         ],
+         [
+          [
+           "To uker i juni etter siste skoledag"
+          ],
+          [
+           "75,0"
+          ]
+         ],
+         [
+          [
+           "Tre dager pr. uke i 39 skoleuker"
+          ],
+          [
+           "877,5"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "1125,0"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Tabell 4"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Læretid Vg4"
+         ],
+         [
+          "Timer"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Juli (tre dager)"
+          ],
+          [
+           "22,5"
+          ]
+         ],
+         [
+          [
+           "To uker i august før skolestart"
+          ],
+          [
+           "75,0"
+          ]
+         ],
+         [
+          [
+           "Høstferie"
+          ],
+          [
+           "37,5"
+          ]
+         ],
+         [
+          [
+           "Vinterferie"
+          ],
+          [
+           "37,5"
+          ]
+         ],
+         [
+          [
+           "To uker i juni etter siste skoledag"
+          ],
+          [
+           "75,0"
+          ]
+         ],
+         [
+          [
+           "Fire dager pr. uke i 39 skoleuker"
+          ],
+          [
+           "1170"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "1417,5"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet har følgende kjennetegn:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene får etter endt løp både yrkeskompetanse og generell studiekompetanse."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Lærekontrakt tegnes etter Vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Fagbrev i kontor- og administrasjonsfaget, salgsfaget eller sikkerhetsfaget."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet har følgende flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag og matematikk følger den studieforberedende modellen med 140 timer i begge fag på Vg1 og 84 timer matematikk på Vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene benytter 84 årstimer fra faget yrkesfaglig fordypning på Vg2 for å ta fellesfaget matematikk 2P."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene har faget historie i opplæringsår 4."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene har ett ekstra valgfritt programfag på Vg2."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "I Vg1 vil deler av årstimene i yrkesfaglig fordypning foregå i høst og vinterferie."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for Vg1, Vg2, Vg3 og Vg4 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke seg til et ordinært tilbud. Ved et slikt bytte må eleven ta eventuelle fag som eleven mangler for å få vitnemål. Ved bytte av skole i Akershus fylkeskommune har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det kan mottaker skolen inngå avtale med eleven om at vedkommende tar faget som privatist."
+       ]
+      },
+      {
+       "tekst": [
+        "Ordinære løp innen utdanningsprogrammet service og samferdsel tilbys ved en eller flere videregående skoler i regionen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen"
+       ]
+      },
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger en alternativ fag- og timefordeling. Yrkesfaglig opplæringsløp skal være en del av trekket i Vg1 og Vg2 hvor inntil 20 % av elevene trekkes ut til eksamen i ett fag, sett over to år. Elevene skal opp til den obligatoriske tverrfaglige eksamen i programfag på Vg2. Alle elevene skal opp til obligatorisk eksamen i norsk hovedmål Vg3. I tillegg skal elevene trekkes ut til én skriftlig eksamen, og én muntlig eller muntlig praktisk eksamen på Vg3/Vg4."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til Vg1 og opptak til Vg2/Vg3/Vg4",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til Vg1 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i Kap. 6, jf. forskrift § 6-13"
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg2/Vg3/Vg4",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til Vg2, Vg3 og Vg4 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. § 6-28 i forskrift til opplæringsloven. Elever som ikke har bestått alle fagene på Vg1, Vg2 eller Vg3, kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering finner det forsvarlig jf. § 6-37, se forskriften kapittel 6."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. august 2017."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,513 @@
+{
+ "id": "frederik-ii-videregaende-skole-fagfordeling-983",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag og timefordeling i videregående opplæring, studiespesialisering forskerlinje realfag ved Frederik II videregående skole, Viken fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Frederik Ii videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2023-02-09-983",
+ "sistEndret": null,
+ "iKraft": "2023-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "31",
+  "skoler": [
+   "974544466"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for utdanningsprogrammet Studiespesialisering Forskerlinje programområde realfag ved Frederik II videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften vil bli revidert ved endringer i opplæringstilbudet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Elevene skal ha følgende fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag og felles programfag realfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk 1T"
+          ],
+          [
+           "140"
+          ],
+          [
+           "84*"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [
+           "56"
+          ],
+          [
+           "113"
+          ],
+          [
+           "225"
+          ]
+         ],
+         [
+          [
+           "Religion og etikk"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Geografi"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [],
+          [
+           "56"
+          ]
+         ],
+         [
+          [
+           "Fremmedspråk"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [],
+          [
+           "225"
+          ]
+         ],
+         [
+          [
+           "Programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Teknologi og forskningslære 1"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Valgfrie programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Valgfrie programfag fra realfag/språk/samfunnsfag/økonomi"
+          ],
+          [],
+          [
+           "140​*"
+          ],
+          [
+           "140​*"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Valgfrie programfag fra realfag/språk/samfunnsfag/økonomi"
+          ],
+          [],
+          [
+           "140​*"
+          ],
+          [
+           "140​*"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Valgfrie programfag fra realfag/språk/samfunnsfag/økonomi"
+          ],
+          [],
+          [
+           "140​*"
+          ],
+          [
+           "140*"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "982"
+          ],
+          [
+           "842"
+          ],
+          [
+           "702"
+          ],
+          [
+           "2526"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "",
+         "ledd": [
+          {
+           "tekst": [
+            "Ett valgfritt programfag er flyttet fra Vg2/Vg3 til Vg1."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Valgfrie programfag. 3 fag på Vg2 og 2 fag på Vg3. Elever som velger 2P må ha ytterligere ett programfag på Vg2."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for Vg1, Vg2 og Vg3 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke seg til et ordinært tilbud. Ved et slikt bytte må eleven ta eventuelle fag som eleven mangler for å få vitnemål. Ved bytte av skole i Viken fylkeskommune har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at vedkommende tar faget/fagene som privatist. Frederik II videregående skole har ordinært tilbud innen Studiespesialisering. Det har også flere andre skoler i Viken fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger en alternativ fag- og timefordeling. Om lag 20 % av elevene skal trekkes ut til eksamen i ett fag, skriftlig, praktisk, muntlig eller muntlig-praktisk på vg1. Alle elever skal trekkes ut til eksamen i ett fag på vg2. På vg3 skal alle elever opp til obligatorisk skriftlig eksamen i hovedmålet sitt. I programfag for realfag og i programområde for språk, samfunnsfag og økonomi skal elevene trekkes ut til skriftlig eksamen i to fag. I tillegg skal elevene trekkes ut til en muntlig, praktisk eller muntlig-praktisk eksamen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til Vg1 og opptak til Vg2/Vg3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til Vg1 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "§ 6-13",
+         "l": "forskrift/2006-06-23-724/§6-13"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2006-06-23-724"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg2/Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til Vg2 og Vg3 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. ",
+        {
+         "t": "§ 6-28",
+         "l": "forskrift/2006-06-23-724/§6-28"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2006-06-23-724"
+        },
+        ". Elever som ikke har bestått alle fagene på Vg1 eller Vg2, kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering, finner det forsvarlig jf. ",
+        {
+         "t": "§ 6-37",
+         "l": "forskrift/2006-06-23-724/§6-37"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 1. august 2023."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

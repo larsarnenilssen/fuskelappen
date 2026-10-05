@@ -1,0 +1,828 @@
+{
+ "id": "sandnessjoen-videregaende-skole-fagfordeling-1310",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, Naturbruk, marine fag med yrkes- og studiekompetanse (YSK Marin) ved Sandnessjøen videregående skole, Nordland fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Sandnessjøen videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2022-05-31-1310",
+ "sistEndret": null,
+ "iKraft": null,
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "18",
+  "skoler": [
+   "874621382"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede opplæringsløp, og kan være et virkemiddel for å øke andelen som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for utdanningsprogrammet YSK Marin ved Sandnessjøen videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for elever som tas inn på utdanningsprogrammet YSK Marin ved Sandnessjøen videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Elevene skal ha følgende fag- og timefordeling:",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag år 1"
+         ],
+         [
+          "Fagkode"
+         ],
+         [
+          "1. år/årstimer"
+         ],
+         [
+          "Opplæring i skole"
+         ],
+         [
+          "Opplæring i bedrift"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Matematikk 1T"
+          ],
+          [
+           "MAT1021"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "To dager i bedrift per uke. Programfagene og prosjekt til fordypning må min. være 12,8 t/uke i skoleåret"
+          ]
+         ],
+         [
+          [
+           "Naturfag – yrkesfag"
+          ],
+          [
+           "NAT1014"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [
+           "SAK1001"
+          ],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "ENG1007"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturbasert produksjon og tjeneste"
+          ],
+          [
+           "NAB1005"
+          ],
+          [
+           "337"
+          ],
+          [
+           "112"
+          ],
+          [
+           "225"
+          ]
+         ],
+         [
+          [
+           "Naturbasert næringsaktivitet"
+          ],
+          [
+           "NAB1006"
+          ],
+          [
+           "140"
+          ],
+          [
+           "56"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "YFF4106"
+          ],
+          [
+           "168"
+          ],
+          [
+           "0"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Sum timer"
+          ],
+          [],
+          [
+           "1065"
+          ],
+          [
+           "588"
+          ],
+          [
+           "477"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag år 2"
+         ],
+         [
+          "Fagkode"
+         ],
+         [
+          "2. år/årstimer"
+         ],
+         [
+          "Opplæring i skole"
+         ],
+         [
+          "Opplæring i bedrift"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Matematikk R1"
+          ],
+          [
+           "REA3056"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "To dager i bedrift per uke. Programfagene og prosjekt til fordypning må min. være 12,8 t/uke i skoleåret"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "NOR1260/1261"
+          ],
+          [
+           "113"
+          ],
+          [
+           "113"
+          ],
+          []
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "KRO1017"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          []
+         ],
+         [
+          [
+           "Drift og produksjon"
+          ],
+          [
+           "AKV2005"
+          ],
+          [
+           "197"
+          ],
+          [
+           "83"
+          ],
+          [
+           "114"
+          ]
+         ],
+         [
+          [
+           "Biologi og miljø"
+          ],
+          [
+           "AKV2006"
+          ],
+          [
+           "140"
+          ],
+          [
+           "112"
+          ],
+          [
+           "28"
+          ]
+         ],
+         [
+          [
+           "Anlegg og teknikk"
+          ],
+          [
+           "AKV2007"
+          ],
+          [
+           "140"
+          ],
+          [
+           "56"
+          ],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "YFF4209"
+          ],
+          [
+           "253"
+          ],
+          [
+           "0"
+          ],
+          [
+           "253"
+          ]
+         ],
+         [
+          [
+           "Sum timer"
+          ],
+          [],
+          [
+           "1039"
+          ],
+          [
+           "560"
+          ],
+          [
+           "479"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag år 3"
+         ],
+         [
+          "Fagkode"
+         ],
+         [
+          "3. år/årstimer"
+         ],
+         [
+          "Opplæring i skole"
+         ],
+         [
+          "Opplæring i bedrift"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Matematikk R2 eller Kjemi 1"
+          ],
+          [
+           "REA3024 REA3045"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "To dager i bedrift pr. uke når elevene følger skoleruten. 5 dager i bedrifter utenom skoleruten, men med fratrekk for 5 ukers ferie."
+          ]
+         ],
+         [
+          [
+           "Fysikk 1"
+          ],
+          [
+           "REA3038"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "NOR1264/1265"
+          ],
+          [
+           "112"
+          ],
+          [
+           "112"
+          ],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [
+           "HIS1011"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "KRO1018"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum timer"
+          ],
+          [],
+          [
+           "588"
+          ],
+          [
+           "588"
+          ],
+          []
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag år 4"
+         ],
+         [
+          "Fagkode"
+         ],
+         [
+          "4. år/årstimer"
+         ],
+         [
+          "Opplæring i skole"
+         ],
+         [
+          "Opplæring i bedrift"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Kjemi 2 eller Biologi 1"
+          ],
+          [
+           "REA3046 REA3035"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "Tre dager i bedrift pr. uke når elevene følger skoleruten. 5 dager i bedrifter utenom skoleruten, men med fratrekk for 5 ukers ferie."
+          ]
+         ],
+         [
+          [
+           "Naturfag – påbygg"
+          ],
+          [
+           "NAT1018"
+          ],
+          [
+           "84"
+          ],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "NOR1267/1268/1269"
+          ],
+          [
+           "168"
+          ],
+          [
+           "168"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum timer"
+          ],
+          [],
+          [
+           "392"
+          ],
+          [
+           "392"
+          ],
+          []
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet følger Norsk for studieforberedende opplæringsløp."
+       ]
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet følger Matematikk for studieforberedende opplæringsløp."
+       ]
+      },
+      {
+       "tekst": [
+        "Under forutsetning om bestått i alle fag og fagprøve i løpet av YSK-Marine, vil et fullstendig opplæringsløp gi elevene fagbrev og studiekompetanse ved skoleslutt Vg4."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for Vg1, Vg2 og Vg3 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fag- og timefordelingen må sikre progresjonen i fagene og tilbudet må samlet sett følge ordinær opplæringstid."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "En elev som bytter fra et alternativt løp til et ordinært løp, må regne med å ta fag som eleven mangler for å få vitnemål. Ved bytte av skole i Nordland fylkeskommune har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at vedkommende tar faget som privatist."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger et alternativt fag- og timefordeling."
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "På Vg1 skal 20 % av elevene trekkes opp til eksamen i ett fag."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "På Vg2 skal elevene opp til den obligatoriske tverrfaglige eksamen i programfag og trekkes opp til ett fag fra studieforberedende program."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "På Vg3 skal elevene trekkes opp i ett fag fra studieforberedende program."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "På Vg4 skal elevene opp til obligatorisk eksamen i norsk hovedmål og trekkes opp i ett fag fra studieforberedende program."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Trekket på Vg3 og Vg4 skal sees under ett, og en av trekkene skal være skriftlig."
+       ]
+      },
+      {
+       "tekst": [
+        "I de tilfeller der det er umulig å tilfredsstille krav til antall skriftlige eksamen på Vg3/Vg4, kan disse erstattes med muntlig eller muntlig-praktisk eksamen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til Vg1/Vg2/Vg3/Vg4",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til Vg1 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved inntak til yrkes- og studieforberedende kompetanse – YSK Sandnessjøen Marine fag, kan intervju benyttes som kriterium ved inntak, i tillegg til karakterer."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkere kan gis fra 1–15 ekstrapoeng. Bedriftene fastsetter antall ekstrapoeng i samarbeid med skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg2/Vg3/Vg4",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til Vg2, Vg3 og Vg4 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. ",
+        {
+         "t": "§ 6-28",
+         "l": "forskrift/2006-06-23-724/§6-28"
+        },
+        " i ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2006-06-23-724"
+        },
+        ". Elever som ikke har bestått alle fagene på Vg1, Vg2 eller Vg3 kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering, finner det forsvarlig, jf. ",
+        {
+         "t": "§ 6-37",
+         "l": "forskrift/2006-06-23-724/§6-37"
+        },
+        ", se forskriften ",
+        {
+         "t": "kapittel 6",
+         "l": "forskrift/2006-06-23-724/kap6"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Mindre endringer i den lokale forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektør for utdanning og kompetanse kan gjøre redaksjonelle endringer i den lokale forskriften."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom endringene er av en slik art at de påvirker søkeren sin mulighet for inntak til bestemte tilbud, skal endringene behandles politisk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft fra og med skoleåret 2022–2023. Fra samme tid oppheves ",
+        {
+         "t": "forskrift 31. mai 2021 nr. 1770 om fleksibilitet i fag- og timefordeling i videregående opplæring, Marine fag med yrkes- og studiekompetanse (YSK Marin) ved Sandnessjøen videregående skole, Nordland fylkeskommune",
+         "l": "forskrift/2021-05-31-1770"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        {
+         "t": "Forskrift 31. mai 2021 nr. 1770",
+         "l": "forskrift/2021-05-31-1770"
+        },
+        " skal fortsatt gjelde for YSK-marine elever som er tatt inn på utdanningsprogrammet fra skoleåret 2021–2022, og til de får vitnemål og fagbrev skoleåret 2024–2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}
