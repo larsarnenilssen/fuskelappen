@@ -10,6 +10,7 @@ import { z } from 'zod';
 import { USER_AGENT } from '../kilder/metoder.ts';
 import {
   erKandidat,
+  erKommunal,
   finnFylke,
   finnSkoler,
   type Fylke,
@@ -100,7 +101,7 @@ export function tittelFor(titler: Titler, type: Lokaltype, malform: 'nb' | 'nn',
 export function klassifiserVurdering(v: Vurdering, fylker: readonly Fylke[], skoler: readonly Skole[]): { type: Lokaltype | null; fylke: string | null; skoler: string[] } {
   const fylke = finnFylke(v.gjelderFor, fylker);
   const treff = fylke ? finnSkoler(v.tittel, fylke, skoler).map((s) => s.id) : [];
-  const type = klassifiser(v, treff);
+  const type = erKommunal(v.tittel, v.gjelderFor) ? null : klassifiser(v, treff);
   return { type, fylke, skoler: type === 'skoleregler-skole' || type === 'fagfordeling' ? treff : [] };
 }
 

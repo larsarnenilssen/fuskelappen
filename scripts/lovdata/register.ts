@@ -80,6 +80,16 @@ export function kunngjoringstype(tittel: string): 'ny' | 'endring' | 'oppheving'
 const VGS = /vidaregåande|videregående|vgs\b|gymnas/;
 
 /**
+ * Om forskriften er fra en kommune (et herad) og ikke gjelder videregående: «Gjelder for» nevner kommunen, og tittelen
+ * nevner verken fylkeskommunen, Oslo kommune eller videregående (05.10.2026: skulerute i Kvam, Ulvik og Voss herad).
+ */
+export function erKommunal(tittel: string, gjelderFor: string): boolean {
+  const t = tittel.toLowerCase();
+  if (/fylkeskommune|oslo kommune/.test(t) || VGS.test(t)) return false;
+  return /\b(kommune|herad)\b/i.test(gjelderFor) && !/^oslo kommune/i.test(gjelderFor);
+}
+
+/**
  * Om tittelen kan være en lokal forskrift for videregående appen viser: skoleregler (også for voksne og for en skole),
  * inntak, skolerute, skyss og fag- og timefordeling. Forskriften må være fra en fylkeskommune (eller Oslo kommune)
  * eller nevne videregående. Dokumentsiden avgjør.
@@ -87,8 +97,9 @@ const VGS = /vidaregåande|videregående|vgs\b|gymnas/;
 export function erKandidat(tittel: string): boolean {
   const t = tittel.toLowerCase();
   // Fylkets forskrifter har «fylkeskommune» i tittelen, eller bare fylket («…, Rogaland»). Kommunenes har «kommune».
-  if (!/fylkeskommune|oslo kommune/.test(t) && !VGS.test(t) && /\bkommune\b/.test(t)) return false;
-  if (/grunnskule|grunnskole|barneskule|barneskole|ungdomsskule|ungdomsskole/.test(t) && !VGS.test(t)) return false;
+  // Kommunenes har «kommune» eller «herad» (05.10.2026: skulereglar og skulerute i Kvam, Ulvik og Voss herad).
+  if (!/fylkeskommune|oslo kommune/.test(t) && !VGS.test(t) && /\b(kommune|herad)\b/.test(t)) return false;
+  if (/grunnsk[uo]l|barnesk[uo]l|ungdomssk[uo]l/.test(t) && !VGS.test(t)) return false;
   return /(skule|skole)reg|ordensreg|tilleggsreg|mobilreg|inntak|(skule|skole)rute|skyss|rabattordning|timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t);
 }
 

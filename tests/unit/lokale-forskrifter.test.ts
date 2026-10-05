@@ -188,3 +188,15 @@ describe('forskriftene i appen', () => {
     expect(klassifiserVurdering(r, fylker, skoler)).toEqual({ type: 'skoleregler-skole', fylke: '46', skoler: ['1'] });
   });
 });
+
+describe('kommunenes forskrifter', () => {
+  it('tar ikke med skoleregler og skolerute fra en kommune eller et herad', async () => {
+    const { erKommunal } = await import('../../scripts/lovdata/register.ts');
+    expect(erKandidat('Forskrift om skulereglar for offentlege grunnskular, Kvam herad, Vestland')).toBe(false);
+    expect(erKandidat('Forskrift om skulerute 2026–2027, Ulvik herad, Vestland')).toBe(false);
+    expect(erKommunal('Forskrift om skulereglar, Ulvik herad, Vestland', 'Ulvik herad, Vestland')).toBe(true);
+    // Fylkets forskrift for én skole kan ha kommunen i «Gjelder for».
+    expect(erKommunal('Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune', 'Vestby kommune, Akershus')).toBe(false);
+    expect(erKommunal('Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo', 'Oslo kommune, Oslo')).toBe(false);
+  });
+});
