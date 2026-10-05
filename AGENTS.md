@@ -84,6 +84,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Native scroll og tilbakenavigasjon. Ingen egne sveipebevegelser for navigasjon.
 - Pinch-zoom slås ikke av globalt.
 - Forklaringer er skjult til brukeren åpner dem.
+- Alle sider har sti øverst (`Brodsmuler`), unntatt forsiden og sidene rett under den: oversiktene i modulene, kategoriene, søket, innstillingene og Om appen (eier 05.10.2026). Testes for rutene i `tests/e2e/hjelp.ts`, så nye sider kommer med av seg selv.
 - WCAG 2.1 AA. Test i WebKit, ikke bare Chromium.
 - Ende-til-ende-tester som bare gjelder mobil (overflyt, axe), merkes `@mobil`. Overflyt testes i lys visning, axe i lys og mørk. En ny modul får en spesifikasjon i `tests/e2e/` og en linje i `MODULSPEKER` i `scripts/e2e/velg.ts`.
 
