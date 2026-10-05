@@ -3,6 +3,7 @@ import type { Tekster } from './typer.ts';
 import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
 import { fagNn } from './moduler/fag.nn.ts';
 import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
+import { fylkerNn } from './moduler/fylker.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
@@ -366,6 +367,10 @@ export const nn: Tekster = {
       navn: 'Omgrep',
       beskrivelse: 'Forklaringar av sentrale omgrep.',
     },
+    fylker: {
+      navn: 'Fylka',
+      beskrivelse: 'Sidene til fylket, lokale forskrifter, skular og opplæringskontor.',
+    },
     lov: {
       navn: 'Regelverk',
       beskrivelse: 'Lov, forskrift og avtalar.',
@@ -383,6 +388,7 @@ export const nn: Tekster = {
   fag: fagNn,
   opplaeringslop: opplaeringslopNn,
   laereplanverket: laereplanverketNn,
+  fylker: fylkerNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
   vurdering: vurderingNn,

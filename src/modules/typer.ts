@@ -45,6 +45,11 @@ export interface Inngang {
   ikon: Ikonnavn;
   /** Står i den sammenleggbare boksen under hovedboksene (`flereTittel`), lukket til brukeren åpner den. */
   flere?: boolean;
+  /**
+   * Tittel og adresse etter fylket brukeren har valgt, f.eks. «Vestland fylkeskommune» og #/fylker/46 (avgjørelse
+   * 061). Gir null når inngangen skal stå som den er.
+   */
+  etterFylke?: (fylke: string | null) => { tittel: string; rute: string } | null;
 }
 
 /** En lenke med ikon på en av modulens oversiktssider (`undersider`). */

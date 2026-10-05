@@ -77,6 +77,8 @@ export const ruter = [
   '#/laereplanverket',
   '#/laereplanverket/overordnet-del/2.5.1',
   '#/lov',
+  '#/fylker',
+  '#/fylker/46',
   '#/lov/vestland-skulereglar/8',
   '#/lov/forvaltningsloven',
   '#/lov/hovedtariffavtalen/hta-ansettelse',

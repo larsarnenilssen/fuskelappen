@@ -93,6 +93,11 @@
     svar:
       - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: sp-vedtak }
       - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: sp-vanlig }
+  fylke:
+    tema: sprak
+    tekst:
+      nb: Fylkeskommunen bestemmer hvordan norskferdighetene vurderes, og om skolen eller fylket gjør vurderingen.
+      nn: Fylkeskommunen avgjer korleis norskdugleiken blir vurdert, og om skulen eller fylket gjer vurderinga.
   kilder:
     - { id: udir-sarskilt-sprakopplaring, punkt: "Vurdere elevens ferdigheter i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk" }
     - { id: udir-minoritetsspraklige, punkt: "Vurdere elevens norskferdigheter", url: "https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#vurdere-elevens-norskferdigheter" }
@@ -100,6 +105,7 @@
   kontrollsporsmal:
     - "Er «I praksis gjør skolen vurderingen» riktig for videregående, eller gjør fylkeskommunen den sentralt noen steder?"
     - "Er det riktig å nevne at en oppstartsamtale kan være nok når eleven ikke kan noe norsk?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sp-vanlig
   type: steg
@@ -153,6 +159,11 @@
     nn: Morsmålsopplæring kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skole. Tospråkleg opplæring i fag blir gitt ved skolen eleven går på. Har ikkje skolen eigna lærarar, kan begge delar givast som fjernundervisning.
   paragrafer: [opplaeringslova/6-5, opplaeringslova/10-1, opplaeringslova/10-2, forvaltningsloven/17]
   neste: sp-kort-botid
+  fylke:
+    tema: sprak
+    tekst:
+      nb: Fylkeskommunen fatter vedtaket og bestemmer hvordan søknaden og saksgangen skal være.
+      nn: Fylkeskommunen gjer vedtaket og avgjer korleis søknaden og sakshandsaminga skal vere.
   kilder:
     - { id: udir-sarskilt-sprakopplaring, punkt: "Krav til vedtak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#krav-til-vedtak" }
     - { id: udir-sarskilt-sprakopplaring, punkt: "Forsterket opplæring i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk" }
@@ -163,6 +174,7 @@
   kontrollsporsmal:
     - "Er «på norsk og morsmålet eller et annet språk eleven kan godt» en riktig gjengivelse av tospråklig opplæring i fag?"
     - "Er det riktig at morsmålsopplæring kommer i tillegg til det vanlige timetallet i videregående?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sp-kort-botid
   type: steg
@@ -224,6 +236,11 @@
     svar:
       - { id: ja, tekst: { nb: "Ja, eleven samtykker", nn: "Ja, eleven samtykkjer" }, neste: sp-laereplan }
       - { id: nei, tekst: { nb: "Nei, eleven går i vanlig klasse", nn: "Nei, eleven går i vanleg klasse" }, neste: sp-laereplan }
+  fylke:
+    tema: sprak
+    tekst:
+      nb: Fylkeskommunen bestemmer hvilke innføringstilbud som finnes, og ved hvilke skoler.
+      nn: Fylkeskommunen avgjer kva innføringstilbod som finst, og ved kva skular.
   kilder:
     - { id: udir-innforingsopplaring, punkt: "Varighet på inntil to år", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r" }
     - { id: udir-innforingsopplaring, punkt: "Eleven eller foreldrene må samtykke", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke" }
@@ -233,6 +250,7 @@
   kontrollsporsmal:
     - "Er «fritak fra vurdering med karakter, men ikke fra standpunktkarakter» en riktig og forståelig gjengivelse av opplæringsforskrifta § 9-20 andre ledd for videregående?"
     - "Er «Eleven samtykker selv når eleven er i stand til det, ellers foreldrene» en god gjengivelse av at eleven samtykker selv så lenge eleven er samtykkekompetent?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: sp-laereplan
   type: steg

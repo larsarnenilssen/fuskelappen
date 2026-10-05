@@ -26,6 +26,11 @@ export const kontrollertSkjema = z.object({ dato: isoDato }).strict().nullable()
 export const nivaSkjema = z.enum(['nasjonal', 'fylke', 'skole']);
 export const forholdSkjema = z.enum(['erstatter', 'supplerer']);
 
+/** Temaene fylkene har egne sider om (avgjørelse 061). «forside» er fylkets side for videregående. */
+export const fylketemaer = ['forside', 'inntak', 'klage-inntak', 'sprak', 'tilrettelegging', 'eksamen', 'klage-standpunkt', 'privatist', 'fagprove'] as const;
+export const fylketemaSkjema = z.enum(fylketemaer);
+export type Fylketema = z.infer<typeof fylketemaSkjema>;
+
 export const gyldighetSkjema = z.discriminatedUnion('niva', [
   z.object({ niva: z.literal('nasjonal') }).strict(),
   z
@@ -171,6 +176,11 @@ export const stegElement = z
     forklaring: flerspraak.optional(),
     /** Paragrafer i Regelverk som steget bygger på. Vises som lenker til paragrafen i appen. */
     paragrafer: z.array(paragrafRef).default([]),
+    /**
+     * Det fylket bestemmer selv i steget (avgjørelse 061): boksen «Hos fylkeskommunen» lenker til fylkets side om
+     * temaet, med en kort tekst med egne ord om hva fylket bestemmer.
+     */
+    fylke: z.object({ tema: fylketemaSkjema, tekst: flerspraak }).strict().optional(),
     /**
      * Læreplaner fra Grep som steget viser i en egen boks med fagkodene, og om læreplanen er kompetansegivende
      * (eier 03.10.2026). `merknad` er en kort setning med egne ord om hva læreplanen brukes til. Uten
@@ -318,11 +328,6 @@ export const fylkerSkjema = z
     fylker: z.array(z.object({ nummer: z.string().regex(/^\d{2}$/), navn: z.string().min(1) }).strict()).min(1),
   })
   .strict();
-
-/** Temaene fylkene har egne sider om (avgjørelse 061). «forside» er fylkets side for videregående. */
-export const fylketemaer = ['forside', 'inntak', 'klage-inntak', 'sprak', 'tilrettelegging', 'eksamen', 'klage-standpunkt', 'privatist', 'fagprove'] as const;
-export const fylketemaSkjema = z.enum(fylketemaer);
-export type Fylketema = z.infer<typeof fylketemaSkjema>;
 
 const fylkeslenke = z
   .object({

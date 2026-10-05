@@ -12,7 +12,7 @@ import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
-import { finnParagraf, lastDokument, lovdataUrl, utvalgstekst } from '../data.ts';
+import { finnParagraf, kildeFor, lastDokument, lovdataUrl, utvalgstekst } from '../data.ts';
 import { alleParagrafer, type Lovdokument, type Seksjon } from '../typer.ts';
 import { finnAvtale } from '../avtaler.ts';
 import { Avtale } from './Avtale.tsx';
@@ -101,6 +101,8 @@ function Lovside({ parametre }: SideProps) {
             <span lang={data.malform}>{data.tittel}</span>. {t('lov.fastsatt', { malform: t(`lov.malform.${data.malform}`) })}.{' '}
             {data.utvalg ? t('lov.utvalgEnkel', { liste: t('lov.kapitler', { liste: utvalgstekst(data.utvalg, t('lov.og')) }) }) : t('lov.heleDokumentet')}
             {data.gyldighet.niva === 'fylke' && ` ${t('lov.gjelderFylke', { fylke: fylkesnavn(data.gyldighet.fylke) ?? data.gyldighet.fylke })}`}
+            {data.gyldighet.niva === 'skole' && ` ${t('lov.gjelderSkole')}`}
+            {data.iKraft && ` ${data.iKraftTil ? `${t('lov.iKraftPeriode', { fra: formaterDato(data.iKraft, malform), til: formaterDato(data.iKraftTil, malform) })}.` : t('lov.iKraftSetning', { dato: formaterDato(data.iKraft, malform) })}`}
           </p>
           {nokkel && !mal && (
             <p class="merknad" role="alert">
@@ -122,7 +124,7 @@ function Lovside({ parametre }: SideProps) {
               <Ikon navn="ekstern" class="ikon-liten" />
             </a>
           </p>
-          <Kildeliste kilder={[{ id: data.kilde }]} />
+          <Kildeliste kilder={[kildeFor(data)]} />
         </>
       )}
     </div>

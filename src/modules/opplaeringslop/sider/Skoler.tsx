@@ -1,6 +1,7 @@
 // Skoleregisteret: skolene i videregående og tilbudene de har, etter utdanning.no (avgjørelse 053). Søk og filter
 // (fylke, utdanningsprogram, tilbud) står i adressen (#/opplaeringslop/skoler?fylke=46&tilbud=HSHEA2), så lenkene
 // fra tilbudene gir et ferdig utvalg. Uten fylke i adressen brukes fylket brukeren har valgt.
+import { dokumentRute, lastOversikt } from '../../lov/data.ts';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -103,7 +104,26 @@ function Skoletilbud({ koder, indeks, tilbud, valgt }: { koder: readonly string[
 }
 
 /** Én skole: navnet og stedet, og tilbudene når den er åpnet. */
-function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene; dinSkole: boolean; apen: boolean; valgt: string; program: string }) {
+function Skolekort({
+  skole,
+  indeks,
+  tilbud,
+  dinSkole,
+  apen,
+  valgt,
+  program,
+  regler,
+}: {
+  skole: Skoleoppforing;
+  indeks: Fagindeks;
+  tilbud: Tilbudene;
+  dinSkole: boolean;
+  apen: boolean;
+  valgt: string;
+  program: string;
+  /** Skolens egne regler fra Lovdata (avgjørelse 061). */
+  regler: readonly { id: string; korttittel: string; malform: 'nb' | 'nn' }[];
+}) {
   const { t, malform } = useTekst();
   const [vist, settVist] = useState(apen);
   const [alle, settAlle] = useState(false);
@@ -151,6 +171,14 @@ function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { 
             </a>
           </p>
         )}
+        {vist &&
+          regler.map((r) => (
+            <p key={r.id}>
+              <a href={`#${dokumentRute(r.id)}`} lang={r.malform}>
+                {r.korttittel}
+              </a>
+            </p>
+          ))}
       </div>
     </li>
   );
@@ -198,7 +226,24 @@ function TilbudSok({ id, sok, settSok, treff, indeks, velg }: { id: string; sok:
   );
 }
 
+/** Skolenes egne regler fra Lovdata per organisasjonsnummer (avgjørelse 061). */
+function useSkoleregler(): Map<string, { id: string; korttittel: string; malform: 'nb' | 'nn' }[]> {
+  const [regler, settRegler] = useState(new Map<string, { id: string; korttittel: string; malform: 'nb' | 'nn' }[]>());
+  useEffect(() => {
+    lastOversikt().then((o) => {
+      const m = new Map<string, { id: string; korttittel: string; malform: 'nb' | 'nn' }[]>();
+      for (const d of o.dokumenter) {
+        if (d.gyldighet.niva !== 'skole') continue;
+        for (const s of d.gyldighet.skoler) m.set(s, [...(m.get(s) ?? []), { id: d.id, korttittel: d.korttittel, malform: d.malform }]);
+      }
+      settRegler(m);
+    }, () => undefined);
+  }, []);
+  return regler;
+}
+
 export default function Skoler({ sporring }: SideProps) {
+  const skoleregler = useSkoleregler();
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
   const [data, provIgjen] = useTilbudsdata();
@@ -320,7 +365,17 @@ export default function Skoler({ sporring }: SideProps) {
           </p>
           <ul class="skoleliste">
             {treff.slice(0, antall).map((s) => (
-              <Skolekort key={`${s.nr ?? s.navn}-${filter.tilbud}-${filter.program}`} skole={s} indeks={data.indeks} tilbud={data.tilbud} dinSkole={!!minSkole && s.orgnr === minSkole} apen={treff.length === 1} valgt={filter.tilbud} program={filter.program} />
+              <Skolekort
+                key={`${s.nr ?? s.navn}-${filter.tilbud}-${filter.program}`}
+                skole={s}
+                indeks={data.indeks}
+                tilbud={data.tilbud}
+                dinSkole={!!minSkole && s.orgnr === minSkole}
+                apen={treff.length === 1}
+                valgt={filter.tilbud}
+                program={filter.program}
+                regler={s.orgnr ? (skoleregler.get(s.orgnr) ?? []) : []}
+              />
             ))}
           </ul>
           {treff.length > antall && (

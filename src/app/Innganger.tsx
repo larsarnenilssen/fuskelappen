@@ -6,15 +6,17 @@ import { useSammenlagt } from '../components/Sammenlegg.tsx';
 import { visTekst } from '../core/i18n/tekst.ts';
 import { innganger } from '../modules/register.ts';
 import type { Inngang, Modulmanifest } from '../modules/typer.ts';
-import { useTekst } from './tilstand.ts';
+import { useTekst, useTilstand } from './tilstand.ts';
 
 function Lenke({ inngang, modul }: { inngang: Inngang; modul: string }) {
   const { malform } = useTekst();
+  const { innstillinger } = useTilstand();
+  const valgt = inngang.etterFylke?.(innstillinger.fylke) ?? null;
   return (
-    <a class="listelenke" href={`#${inngang.rute}`} data-modul={modul}>
+    <a class="listelenke" href={`#${valgt?.rute ?? inngang.rute}`} data-modul={modul}>
       <Ikon navn={inngang.ikon} />
       <span class="listelenke-tekst">
-        <span class="listelenke-tittel">{visTekst(inngang.tittel, malform)}</span>
+        <span class="listelenke-tittel">{valgt?.tittel ?? visTekst(inngang.tittel, malform)}</span>
         {inngang.beskrivelse && <span class="listelenke-under">{visTekst(inngang.beskrivelse, malform)}</span>}
       </span>
       <Ikon navn="hoyre" class="ikon-liten" />

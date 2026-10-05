@@ -95,6 +95,35 @@ function Leddtekst({ ledd }: { ledd: Ledd }) {
           <Tekst tekst={e} />
         </p>
       ))}
+      {ledd.tabell && (
+        // Tabeller (f.eks. skoleruta) kan være bredere enn skjermen og rulles for seg, så siden ikke flyter over.
+        <div class="lov-tabell" tabIndex={0}>
+          <table>
+            {ledd.tabell.hode && (
+              <thead>
+                <tr>
+                  {ledd.tabell.hode.map((c, i) => (
+                    <th key={i} scope="col">
+                      <Tekst tekst={c} />
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+            )}
+            <tbody>
+              {ledd.tabell.rader.map((r, i) => (
+                <tr key={i}>
+                  {r.map((c, j) => (
+                    <td key={j}>
+                      <Tekst tekst={c} />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </>
   );
 }

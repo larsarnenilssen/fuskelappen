@@ -46,6 +46,14 @@ export const paragraffavorittnavn = (dokument: Pick<Lovdokument, 'korttittel'>, 
 /** Adressen hos Lovdata til et dokument eller en paragraf. */
 export const lovdataUrl = (refid: string, nr?: string) => `https://lovdata.no/${refid}${nr ? `/§${nr}` : ''}`;
 
+/**
+ * Kilden til et dokument i kildelisten. De lokale forskriftene for alle fylker har én felles kilde i kilderegisteret
+ * (lovdata-lokale), så kildelisten viser forskriftens tittel og lenker til den hos Lovdata (avgjørelse 061).
+ */
+export function kildeFor(d: { kilde: string; tittel: string; refid: string }): { id: string; punkt?: string; url?: string } {
+  return d.kilde === 'lovdata-lokale' ? { id: d.kilde, punkt: d.tittel, url: lovdataUrl(d.refid) } : { id: d.kilde };
+}
+
 /** Paragrafen en adresse peker på: «11-1», «§11-1» eller «§ 11-1». */
 export function finnParagraf(dok: Lovdokument, nokkel: string): { paragraf: Paragraf; seksjoner: Seksjon[] } | null {
   const nr = nokkel.replace(/^§\s*/, '').replace(/\s+/g, '').toLowerCase();

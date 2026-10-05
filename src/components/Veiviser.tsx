@@ -12,6 +12,7 @@ import type { Malform } from '../core/i18n/tekst.ts';
 import { formaterDato } from '../core/i18n/tekst.ts';
 import type { Stegelement, Veiviserelement } from '../core/innhold/skjema.ts';
 import { erUtfall, fasestatus, finnSide, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Vei, type Veiviserkart } from '../core/veiviser/veiviser.ts';
+import { HosFylket } from './HosFylket.tsx';
 import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 import { Kortfot, KortfotRader } from './Kortfot.tsx';
@@ -437,6 +438,7 @@ function Stegdel({
       )}
       <div id={innholdId} hidden={!aapen}>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
+        {node.fylke && <HosFylket tema={node.fylke.tema} tekst={node.fylke.tekst} />}
         {(node.ansvar || node.dokumentasjon || node.frist) && (
           <dl class="veiviser-fakta">
             {node.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={node.ansvar[malform]} />}

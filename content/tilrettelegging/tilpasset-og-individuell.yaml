@@ -215,12 +215,18 @@
   fristKort: { nb: "Så raskt som mulig", nn: "Så raskt som mogleg" }
   paragrafer: [opplaeringslova/11-7]
   neste: ti-samtykke
+  fylke:
+    tema: tilrettelegging
+    tekst:
+      nb: Fylkeskommunen bestemmer hvordan overgangen fra grunnskolen og samarbeidet med PP-tjenesten er organisert.
+      nn: Fylkeskommunen avgjer korleis overgangen frå grunnskulen og samarbeidet med PP-tenesta er organisert.
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "7.5 Overgang til nytt trinn og ny skole", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#overgang-nytt-trinn-ny-skole" }
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig at et vedtak fra grunnskolen aldri gjelder i videregående, og at fylkeskommunen alltid må fatte nytt vedtak?"
     - "Er «midlertidig vedtak som bygger på den sakkyndige vurderingen fra grunnskolen» en riktig gjengivelse av veilederen punkt 7.5?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: ti-behov
   type: steg
@@ -316,12 +322,18 @@
     nn: Samtykket og tilvisinga.
   paragrafer: [opplaeringslova/11-7, opplaeringslova/24-5]
   neste: ti-sakkyndig
+  fylke:
+    tema: tilrettelegging
+    tekst:
+      nb: Fylkeskommunen bestemmer hvordan skolen henviser til PP-tjenesten, og hvilke skjemaer som brukes.
+      nn: Fylkeskommunen avgjer korleis skulen viser vidare til PP-tenesta, og kva skjema som blir brukte.
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "5.4 Individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-om-sakkyndig-vurdering-individuelt-tilrettelagt-opplaring" }
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig at det er skolen som innhenter samtykke og henviser til PP-tjenesten i videregående, eller gjør fylkeskommunen det på annen måte?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: ti-sakkyndig
   type: steg
@@ -362,6 +374,11 @@
     nn: Vurderinga er ikkje bindande, men fylkeskommunen kan berre fråvike ho dersom eleven kan få tilfredsstillande utbytte på ein annan måte, og det må grunngivast i vedtaket. Foreldra kan hente inn ei alternativ sakkunnig vurdering, og den må fylkeskommunen ta med i vurderinga.
   paragrafer: [opplaeringslova/11-7, opplaeringslova/11-8, opplaeringslova/11-13, forvaltningsloven/11a]
   neste: ti-vedtak
+  fylke:
+    tema: tilrettelegging
+    tekst:
+      nb: PP-tjenesten i videregående hører til fylkeskommunen. Fylket bestemmer hvordan tjenesten er organisert.
+      nn: PP-tenesta i vidaregåande høyrer til fylkeskommunen. Fylket avgjer korleis tenesta er organisert.
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "6.2.1 Krav til innholdet i den sakkyndige vurderingen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-innhold-sakkyndig-vurdering" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "6.2.3 Varigheten av den sakkyndige vurderingen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#varighet-sakkyndig-vurdering" }
@@ -371,6 +388,7 @@
   kontrollsporsmal:
     - "Er «den må fylkeskommunen ta med i vurderingen» en riktig gjengivelse av hva en alternativ sakkyndig vurdering betyr (veilederen 6.3)?"
     - "Er de fem punktene i § 11-8 gjengitt riktig med egne ord?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: ti-vedtak
   type: steg
@@ -405,6 +423,11 @@
       - { id: praktisk, tekst: { nb: "Bare personlig assistanse eller fysisk tilrettelegging", nn: "Berre personleg assistanse eller fysisk tilrettelegging" }, neste: ti-gjennomforing }
       - { id: avslag, tekst: { nb: "Avslag", nn: "Avslag" }, neste: ti-avslag }
       - { id: uenig, tekst: { nb: "Eleven eller foreldrene er uenige i vedtaket", nn: "Eleven eller foreldra er usamde i vedtaket" }, neste: ti-klage }
+  fylke:
+    tema: tilrettelegging
+    tekst:
+      nb: Fylkeskommunen bestemmer om rektor fatter vedtaket, og hvordan saksgangen er.
+      nn: Fylkeskommunen avgjer om rektor gjer vedtaket, og korleis sakshandsaminga er.
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "7.2 Delegere oppgaven med å fatte vedtak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak" }
@@ -416,6 +439,7 @@
     - "Er det riktig at måneden for foreløpig svar regnes fra henvendelsen når det ikke kreves sakkyndig vurdering (personlig assistanse og fysisk tilrettelegging)?"
     - "Er det riktig at fritak fra vurdering med karakter i videregående bare gjelder sidemålet for elever med individuelt tilrettelagt opplæring?"
     - "Er «Oppgaven kan delegeres til rektor, men ansvaret ligger hos fylkeskommunen» dekkende for hvordan det gjøres i fylkene?"
+    - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
 
 - id: ti-iop
   type: steg
