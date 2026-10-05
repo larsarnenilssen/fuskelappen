@@ -79,6 +79,7 @@ export const nn: Tekster = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
+    lukk: 'Lukk søket',
     visFlere: 'Vis fleire treff ({antall} til)',
     filter: {
       etikett: 'Vis treff frå',

@@ -96,6 +96,64 @@ export function startRuting(): void {
   );
 }
 
+// Søket fra toppfeltet (eier 05.10.2026): åpnes over siden brukeren står på, som en egen oppføring i historikken på
+// samme adresse. Tilbake (også sveip tilbake i nettleseren) og «Lukk» lukker søket og viser siden der brukeren var.
+// Følges en lenke i søket, kommer brukeren tilbake til søket med tilbake.
+const toppsokLyttere = new Set<() => void>();
+const varsleToppsok = () => {
+  for (const l of toppsokLyttere) l();
+};
+
+/** Søket i toppfeltet, eller null når det er lukket. */
+export function toppsok(): string | null {
+  const s = history.state as { sok?: unknown } | null;
+  return typeof s?.sok === 'string' ? s.sok : null;
+}
+
+export function apneToppsok(): void {
+  if (toppsok() !== null) return;
+  dybde += 1;
+  history.pushState({ appId: nyId(), dybde, sok: '' }, '');
+  varsleToppsok();
+}
+
+export function lukkToppsok(): void {
+  if (toppsok() !== null) history.back();
+}
+
+/** Lagrer søket i historikken, så tilbake fra et treff viser søket slik det var. */
+export function settToppsok(sok: string): void {
+  if (toppsok() !== null) history.replaceState({ ...(history.state as object), sok }, '');
+}
+
+export function useToppsok(): string | null {
+  const [sok, settSok] = useState(toppsok);
+  useEffect(() => {
+    const oppdater = () => {
+      const naa = gjeldende();
+      if (naa) dybde = naa.dybde;
+      const ny = toppsok();
+      settSok((forrige) => {
+        // Søket lukkes: siden får tilbake rullingen den hadde da søket ble åpnet.
+        if (forrige !== null && ny === null && naa) {
+          const y = scrollPosisjoner.get(naa.appId) ?? 0;
+          requestAnimationFrame(() => window.scrollTo(0, y));
+        }
+        return ny;
+      });
+    };
+    toppsokLyttere.add(oppdater);
+    window.addEventListener('popstate', oppdater);
+    window.addEventListener('hashchange', oppdater);
+    return () => {
+      toppsokLyttere.delete(oppdater);
+      window.removeEventListener('popstate', oppdater);
+      window.removeEventListener('hashchange', oppdater);
+    };
+  }, []);
+  return sok;
+}
+
 let oensketScroll: number | null = null;
 /** Neste navigasjon skal ikke rulle til toppen, fordi siden ruller selv (f.eks. til neste steg i en veiviser). */
 let beholdRulling = false;
