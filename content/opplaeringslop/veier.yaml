@@ -570,14 +570,24 @@
         - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
         - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
         - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - side: { tittel: { nb: "Mer opplæring på Vg3", nn: "Meir opplæring på Vg3" }, rute: /inntak/mer-opplaering }
+      vilkar:
+        nb: "Når fag- eller svenneprøven ikke er bestått, eller en eksamen som må være bestått før prøven. Tilbudet på Vg3 bygger på Vg2, så langt det er mulig i samme lærefag. Søk når som helst."
+        nn: "Når fag- eller sveineprøva ikkje er bestått, eller ein eksamen som må vere bestått før prøva. Tilbodet på Vg3 byggjer på Vg2, så langt det er mogleg i same lærefag. Søk når som helst."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+        - { id: opplaeringsforskrifta, punkt: "§ 4-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
   kilder:
     - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
     - { id: opplaeringslova, punkt: "§ 7-3", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
     - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
     - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
     - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
   kontrollert: null
   kontrollsporsmal:
+    - "Overgangen «Mer opplæring på Vg3» står under «Lærling» og går til siden om mer opplæring. Bør «Fag- eller svenneprøven ikke bestått» heller være et eget utgangspunkt?"
     - "Oppsigelse og heving står under «Om veien», ikke som overgang (eier 06.10.2026). Er endring til lærekandidat og Vg3 i skole de overgangene som bør vises for lærlinger?"
     - "Gjelder retten til et annet tilbud på Vg3 (ol. § 5-6 og ofo. § 6-2) også for en lærling som har mistet læreplassen fordi kontrakten er sagt opp eller hevet, når kildene ikke sier det direkte?"
 

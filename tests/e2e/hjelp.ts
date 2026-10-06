@@ -110,6 +110,7 @@ export const ruter = [
   '#/vurdering/klage-pa-karakter?steg=kl-statsforvalteren&svar=standpunkt.nei',
   '#/begreper/karakterer-og-vurderingsuttrykk?q=IV',
   '#/inntak',
+  '#/inntak/mer-opplaering',
   '#/inntak/poeng',
   '#/inntak/poeng?trinn=vg3',
   '#/inntak/rett-inntak-soknad',

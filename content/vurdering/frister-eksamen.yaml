@@ -139,6 +139,7 @@
 
 - id: fe-mer-opplaering-mars
   type: frist
+  lenker: [/inntak/mer-opplaering]
   modul: vurdering
   tema: [vurdering]
   malgruppe: [skoleleder, laerer]
@@ -203,6 +204,7 @@
 
 - id: fe-mer-opplaering-melding
   type: frist
+  lenker: [/inntak/mer-opplaering]
   modul: vurdering
   tema: [vurdering]
   malgruppe: [skoleleder]

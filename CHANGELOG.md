@@ -4,6 +4,12 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Mer opplæring** i Inntak: hvem som har rett til mer opplæring i fag som ikke er bestått, hva retten gir, fristen og vedtaket, fag- eller svenneprøven som ikke er bestått, de egne reglene for vurdering, voksne og elever med individuelt tilrettelagt opplæring. På stor skjerm står siden i to kolonner.
+- **Begrepet «Mer opplæring»**, som teksten i appen lenker til.
+- **Lenker til siden** fra Eksamen og prøvesiden i Vurdering, «Bytte vei» for lærlinger, steget om IOP i Tilrettelegging, Kalenderen og et nytt svar i veiviseren «Rett, inntak og søknad».
+
 ## [0.38.3] – 2026-10-06
 
 ### Lagt til

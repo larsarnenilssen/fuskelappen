@@ -66,6 +66,8 @@ const baner = {
   vei: 'M12 21v-8.5L6 6.5V3M12 12.5l6-6V3',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
   lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
+  // Igjen: en pil i ring, for mer opplæring i fag som ikke er bestått.
+  igjen: 'M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4v4.5H9',
 } as const;
 
 export type Ikonnavn = keyof typeof baner;

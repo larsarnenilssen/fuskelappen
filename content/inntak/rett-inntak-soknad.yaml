@@ -341,6 +341,7 @@
     svar:
       - { id: vg1, tekst: { nb: "Vg1", nn: "Vg1" }, neste: sk-inntaksmate }
       - { id: vg2vg3, tekst: { nb: "Vg2 eller Vg3", nn: "Vg2 eller Vg3" }, neste: sk-vilkar-vg23 }
+      - { id: mer, tekst: { nb: "Mer opplæring i fag som ikke er bestått", nn: "Meir opplæring i fag som ikkje er bestått" }, neste: sk-mer-opplaering }
   kilder:
     - { id: opplaeringslova, punkt: "§ 5-1 femte og sjette ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
     - { id: opplaeringslova, punkt: "§ 5-5 Rett til omval", url: "https://lovdata.no/lov/2023-06-09-30/§5-5" }
@@ -695,3 +696,34 @@
     - "Er «innenfor det fylkeskommunen tilbyr» (Udirs side) riktig å ta med her?"
     - "Er rekkefølgen i § 13-4 andre og tredje ledd riktig gjengitt?"
     - "Udirs oversikt over klageinstanser er ikke lest for kapittel 13. Skal veiviseren si hvem som er klageinstans for voksne?"
+
+- id: sk-mer-opplaering
+  type: steg
+  veiviser: rett-inntak-soknad
+  fase: soknad
+  tittel:
+    nb: Mer opplæring
+    nn: Meir opplæring
+  tekst:
+    nb: |-
+      Har søkeren fulgt opplæringen i et fag fram til 1. mars, men ikke bestått faget, har søkeren rett til mer opplæring i faget. Søkeren melder fra til fylkeskommunen innen fristen fylket setter. Skal søkeren også begynne på neste trinn, må søkeren i tillegg søke inntak innen de vanlige fristene.
+
+      Lærlinger og kandidater som ikke har bestått fag- eller svenneprøven, har rett til mer opplæring på et tilbud på Vg3 som bygger på Vg2. For dem gjelder ikke søknadsfristene. Alt om retten står på siden [Mer opplæring](#/inntak/mer-opplaering).
+    nn: |-
+      Har søkjaren følgt opplæringa i eit fag fram til 1. mars, men ikkje bestått faget, har søkjaren rett til meir opplæring i faget. Søkjaren melder frå til fylkeskommunen innan fristen fylket set. Skal søkjaren også byrje på neste trinn, må søkjaren i tillegg søkje inntak innan dei vanlege fristane.
+
+      Lærlingar og kandidatar som ikkje har bestått fag- eller sveineprøva, har rett til meir opplæring på eit tilbod på Vg3 som byggjer på Vg2. For dei gjeld ikkje søknadsfristane. Alt om retten står på sida [Meir opplæring](#/inntak/mer-opplaering).
+  frist:
+    nb: Fylket setter fristen, minst én uke etter standpunkt og sensur. Ingen frist etter fag- eller svenneprøven.
+    nn: Fylket set fristen, minst éi veke etter standpunkt og sensur. Inga frist etter fag- eller sveineprøva.
+  fristKort: { nb: "Fylkets frist", nn: "Fristen til fylket" }
+  paragrafer: [opplaeringsforskrifta/5-2, opplaeringsforskrifta/4-3, opplaeringsforskrifta/4-9]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+    - { id: udir-mer-opplaering, punkt: "4. Søknadsfrist", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/soknadsfrist/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Svaret «Mer opplæring i fag som ikke er bestått» står under «Hvilket trinn søker søkeren til?». Er det et naturlig sted, eller bør det være et eget spørsmål?"
+    - "Er det greit at veiviseren ender her, og viser til siden om mer opplæring for resten?"

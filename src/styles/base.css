@@ -8275,3 +8275,24 @@ a.knapp {
 .fb-merknad > p {
   margin: 0;
 }
+
+/* ---------- Mer opplæring: to kolonner på skrivebord (fase 6, pakke 7) ----------
+   Fra 64rem står retten, gangen og fag- eller svenneprøven til venstre, og vurderingen, voksne, individuelt
+   tilrettelagt opplæring og «Videre» til høyre, som på sidene for lærlinger og kandidater. Én kolonne under 64rem. */
+@media (min-width: 64rem) {
+  main:has(.mo-bred) {
+    max-width: 72rem;
+  }
+
+  .mo-to {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: var(--rom-6);
+    align-items: start;
+  }
+
+  .mo-to-hoved > section:first-child > h2,
+  .mo-to-side > section:first-child > h2 {
+    margin-top: 0;
+  }
+}

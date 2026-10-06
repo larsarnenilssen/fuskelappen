@@ -449,8 +449,8 @@
     nb: Individuell opplæringsplan (IOP)
     nn: Individuell opplæringsplan (IOP)
   tekst:
-    nb: Skolen lager en individuell opplæringsplan for elever som får individuelt tilrettelagt opplæring. Planen bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den kan ikke gi eleven andre rettigheter enn vedtaket. Planen skal være nyttig i hverdagen, ikke et stort dokument. Hvordan eleven vurderes, står i veiviseren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-iop&svar=elev.iop).
-    nn: Skolen lagar ein individuell opplæringsplan for elevar som får individuelt tilrettelagd opplæring. Planen byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han kan ikkje gi eleven andre rettar enn vedtaket. Planen skal vere nyttig i kvardagen, ikkje eit stort dokument. Korleis eleven blir vurdert, står i vegvisaren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-iop&svar=elev.iop).
+    nb: Skolen lager en individuell opplæringsplan for elever som får individuelt tilrettelagt opplæring. Planen bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den kan ikke gi eleven andre rettigheter enn vedtaket. Planen skal være nyttig i hverdagen, ikke et stort dokument. Hvordan eleven vurderes, står i veiviseren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-iop&svar=elev.iop). I videregående har eleven rett til å fullføre sluttkompetansen ut fra målene i IOP-en, uansett hvor lang tid det tar (se [Mer opplæring](#/inntak/mer-opplaering?del=mo-iop-fullforing)).
+    nn: Skolen lagar ein individuell opplæringsplan for elevar som får individuelt tilrettelagd opplæring. Planen byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han kan ikkje gi eleven andre rettar enn vedtaket. Planen skal vere nyttig i kvardagen, ikkje eit stort dokument. Korleis eleven blir vurdert, står i vegvisaren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-iop&svar=elev.iop). I vidaregåande har eleven rett til å fullføre sluttkompetansen ut frå måla i IOP-en, same kor lang tid det tek (sjå [Meir opplæring](#/inntak/mer-opplaering?del=mo-iop-fullforing)).
   ansvar:
     nb: Skolen, i samarbeid med eleven og foreldrene. Kontaktlæreren og faglærerne bruker planen.
     nn: Skolen, i samarbeid med eleven og foreldra. Kontaktlæraren og faglærarane brukar planen.
@@ -466,8 +466,10 @@
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "8.1 Skolen skal utarbeide en individuell opplæringsplan", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#skolen-skal-utarbeide-individuell-opplaringsplan" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "8.3 Innholdet i en individuell opplæringsplan", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#innholdet-individuell-opplaringsplan" }
+    - { id: udir-fullforingsretten-iop, punkt: "Regelverket", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/#regelverket" }
   kontrollert: null
   kontrollsporsmal:
+    - "Er setningen om fullføringsretten i videregående riktig her, i et steg som gjelder både grunnskolen og videregående?"
     - "Er det riktig å nevne kontaktlæreren og faglærerne under ansvar, eller bør ansvaret bare stå som «skolen»?"
 
 - id: ti-gjennomforing

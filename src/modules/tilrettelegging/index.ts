@@ -36,6 +36,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: ['udir-veileder-tilpasset-opplaering', 'opplaeringslova'],
+  kilder: ['udir-veileder-tilpasset-opplaering', 'opplaeringslova', 'udir-fullforingsretten-iop'],
   status: 'aktiv',
 };

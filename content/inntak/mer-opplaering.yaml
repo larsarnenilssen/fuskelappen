@@ -1,0 +1,339 @@
+# Mer opplæring (fase 6, pakke 7). Siden «Mer opplæring» i Inntak (#/inntak/mer-opplaering). Egne ord.
+# Bygger på opplæringsforskrifta §§ 4-3, 4-9, 5-1, 5-2, 9-16, 9-28, 9-36–9-38 og 14-2, og Udirs veiledninger «Rett til
+# mer opplæring», «Rett til mer opplæring for voksne» og «Fullføringsretten for elever med individuelt tilrettelagt
+# opplæring». Klage på vedtaket står ikke i kildene og er ikke med (eier 06.10.2026).
+# Prefiksene sier hvor kortet står på siden: mo-rad- (hvem har rett), mo-sti- (gangen), mo-vurdering-, mo-voksne- og
+# mo-iop-.
+
+# Hvem har rett: rad for rad, med og uten rett.
+- id: mo-rad-opplaeringen
+  type: forklaring
+  tittel:
+    nb: "Opplæringen i faget"
+    nn: "Opplæringa i faget"
+  tekst:
+    nb: "Med rett: Opplæringen er fulgt fram til 1. mars. Uten rett: Eleven sluttet i faget eller gikk over fraværsgrensen før 1. mars."
+    nn: "Med rett: Opplæringa er følgd fram til 1. mars. Utan rett: Eleven slutta i faget eller gjekk over fråværsgrensa før 1. mars."
+  sammenligning:
+    venstre:
+      nb: "Fulgt fram til 1. mars. Er opplæringen organisert på en annen måte enn et vanlig skoleår, må eleven ha fulgt en like stor del av den."
+      nn: "Følgd fram til 1. mars. Er opplæringa organisert på ein annan måte enn eit vanleg skoleår, må eleven ha følgt ein like stor del av henne."
+    hoyre:
+      nb: "Eleven sluttet i faget eller gikk over fraværsgrensen før 1. mars."
+      nn: "Eleven slutta i faget eller gjekk over fråværsgrensa før 1. mars."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: udir-mer-opplaering, punkt: "1. Mer opplæring når fag ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring-nar-fag-ikke-er-bestatt/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «gikk over fraværsgrensen før 1. mars» en riktig gjengivelse av Udirs eksempel på elever som ikke har gjennomført opplæringen?"
+
+- id: mo-rad-karakteren
+  type: forklaring
+  tittel:
+    nb: "Karakteren"
+    nn: "Karakteren"
+  tekst:
+    nb: "Med rett: 1 eller IV i standpunkt, eller 1 på eksamen, også IV etter 1. mars. Uten rett: Faget er bestått."
+    nn: "Med rett: 1 eller IV i standpunkt, eller 1 på eksamen, også IV etter 1. mars. Utan rett: Faget er bestått."
+  sammenligning:
+    venstre:
+      nb: "1 eller IV i standpunkt, eller 1 på eksamen. IV etter 1. mars gir også rett, f.eks. ved fravær over grensen. Det samme gjelder fravær på eksamen, med eller uten gyldig grunn."
+      nn: "1 eller IV i standpunkt, eller 1 på eksamen. IV etter 1. mars gir også rett, til dømes ved fråvær over grensa. Det same gjeld fråvær på eksamen, med eller utan gyldig grunn."
+    hoyre:
+      nb: "Faget er bestått. Retten gjelder bare fag som ikke er bestått."
+      nn: "Faget er bestått. Retten gjeld berre fag som ikkje er bestått."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: udir-mer-opplaering, punkt: "1. Mer opplæring når fag ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring-nar-fag-ikke-er-bestatt/" }
+    - { id: udir-mer-opplaering, punkt: "5. Egne regler om vurdering, Ny og utsatt eksamen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir sier i kapittel 5 at også elever som ikke møter til eksamen uten gyldig fravær, har rett til mer opplæring. Er «med eller uten gyldig grunn» en riktig kort gjengivelse?"
+
+- id: mo-rad-veien
+  type: forklaring
+  tittel:
+    nb: "Veien videre"
+    nn: "Vegen vidare"
+  tekst:
+    nb: "Med rett: Meld fra til fylkeskommunen innen fristen fylket setter. Uten rett: Søk inntak på vanlig måte."
+    nn: "Med rett: Meld frå til fylkeskommunen innan fristen fylket set. Utan rett: Søk inntak på vanleg måte."
+  sammenligning:
+    venstre:
+      nb: "Meld fra til fylkeskommunen innen fristen fylket setter. Det går også an flere år etter at eleven fikk 1 eller IV."
+      nn: "Meld frå til fylkeskommunen innan fristen fylket set. Det går også an fleire år etter at eleven fekk 1 eller IV."
+    hoyre:
+      nb: "Søk inntak på vanlig måte, innen 1. mars. Retten til videregående opplæring fram mot studie- eller yrkeskompetanse gjelder fortsatt."
+      nn: "Søk inntak på vanleg måte, innan 1. mars. Retten til vidaregåande opplæring fram mot studie- eller yrkeskompetanse gjeld framleis."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+    - { id: udir-mer-opplaering, punkt: "1. Mer opplæring når fag ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring-nar-fag-ikke-er-bestatt/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive «innen 1. mars» for dem uten rett, når noen søkere har frist 1. februar (§ 4-9 andre ledd)?"
+
+# Hva retten gir.
+- id: mo-innhold
+  type: forklaring
+  tittel:
+    nb: "Opplæring fram mot ny standpunktkarakter"
+    nn: "Opplæring fram mot ny standpunktkarakter"
+  tekst:
+    nb: "Eleven får opplæring i faget fram mot en ny standpunktkarakter. Opplæringen skal følge læreplanen og dekke alle kompetansemålene, men fylkeskommunen kan gjøre unntak fra timetallet ut fra hva eleven kan fra før. Timetallet settes på forhånd, blant annet for å regne ut fraværsgrensen. Eleven skal få underveisvurdering og vite hva standpunktkarakteren bygger på."
+    nn: "Eleven får opplæring i faget fram mot ein ny standpunktkarakter. Opplæringa skal følgje læreplanen og dekkje alle kompetansemåla, men fylkeskommunen kan gjere unntak frå timetalet ut frå kva eleven kan frå før. Timetalet blir sett på førehand, mellom anna for å rekne ut fråværsgrensa. Eleven skal få undervegsvurdering og vite kva standpunktkarakteren byggjer på."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: udir-mer-opplaering, punkt: "2. Organisering av mer opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/organisering-av-mer-opplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «ut fra hva eleven kan fra før» en riktig forklaring av unntaket fra timetallet i § 5-2 første ledd?"
+
+# Gangen: fra melding til ny standpunktkarakter.
+- id: mo-sti-melding
+  type: forklaring
+  tittel:
+    nb: "Melde fra"
+    nn: "Melde frå"
+  naar:
+    nb: "Fylkets frist"
+    nn: "Fristen til fylket"
+  tekst:
+    nb: "Eleven melder fra til fylkeskommunen hvis eleven vil ha mer opplæring i faget. Fylkeskommunen setter fristen. Den må være minst én uke etter at standpunktkarakteren er satt og sensuren for ordinær eksamen i faget er klar, det som kommer sist. Vil eleven også begynne på neste trinn, må eleven i tillegg søke inntak innen de vanlige fristene."
+    nn: "Eleven melder frå til fylkeskommunen dersom eleven vil ha meir opplæring i faget. Fylkeskommunen set fristen. Han må vere minst éi veke etter at standpunktkarakteren er sett og sensuren for ordinær eksamen i faget er klar, det som kjem sist. Vil eleven også byrje på neste trinn, må eleven i tillegg søkje inntak innan dei vanlege fristane."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-3" }
+    - { id: udir-mer-opplaering, punkt: "4. Søknadsfrist", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/soknadsfrist/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften sier «melde frå», Udir sier «søknadsfrist». Er «melde fra» riktig ord på siden?"
+
+- id: mo-sti-vedtak
+  type: forklaring
+  tittel:
+    nb: "Vedtak"
+    nn: "Vedtak"
+  naar:
+    nb: "Etter fristen"
+    nn: "Etter fristen"
+  tekst:
+    nb: "Fylkeskommunen fatter vedtak om mer opplæring. Vedtaket sier hvilke fag eleven skal ha opplæring i, hvor lenge, hvor mange timer og hvor opplæringen gis."
+    nn: "Fylkeskommunen gjer vedtak om meir opplæring. Vedtaket seier kva fag eleven skal ha opplæring i, kor lenge, kor mange timar og kvar opplæringa blir gitt."
+  kilder:
+    - { id: udir-mer-opplaering, punkt: "4. Søknadsfrist", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/soknadsfrist/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Merket over steget er «Etter fristen». Udir sier ikke når vedtaket kommer. Er merket greit, eller bør steget stå uten?"
+
+- id: mo-sti-opplaeringen
+  type: forklaring
+  tittel:
+    nb: "Opplæringen"
+    nn: "Opplæringa"
+  tekst:
+    nb: "Fylkeskommunen bestemmer hvordan og når opplæringen gis: i en vanlig klasse gjennom et skoleår, eller i et kortere løp med færre timer. Den kan ikke gis som ekstra timer på slutten av skoleåret. I utgangspunktet gis den i vanlig skoletid. Undervisning i helger må være noe eleven ønsker og til det beste for eleven. Deler av opplæringen kan gis som fjernundervisning når det er gode grunner for det, og det er trygt og pedagogisk forsvarlig."
+    nn: "Fylkeskommunen bestemmer korleis og når opplæringa blir gitt: i ein vanleg klasse gjennom eit skoleår, eller i eit kortare løp med færre timar. Ho kan ikkje givast som ekstra timar på slutten av skoleåret. I utgangspunktet blir ho gitt i vanleg skoletid. Undervisning i helgar må vere noko eleven ønskjer og til det beste for eleven. Delar av opplæringa kan givast som fjernundervisning når det er gode grunnar for det, og det er trygt og pedagogisk forsvarleg."
+  kilder:
+    - { id: udir-mer-opplaering, punkt: "2. Organisering av mer opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/organisering-av-mer-opplaring/" }
+    - { id: opplaeringslova, punkt: "§ 14-4", url: "https://lovdata.no/lov/2023-06-09-30/§14-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir skriver at retten «i utgangspunktet bør» brukes i vanlig skoletid (08.30–15.30). Er «I utgangspunktet gis den i vanlig skoletid» for sterkt?"
+    - "Bør kortet si at opplæring utenfor skoleruta krever endret forskrift eller enkeltvedtak med hjemmel i skoleruta, slik Udir skriver?"
+
+- id: mo-sti-standpunkt
+  type: forklaring
+  tittel:
+    nb: "Ny standpunktkarakter"
+    nn: "Ny standpunktkarakter"
+  tekst:
+    nb: "Opplæringen ender med en ny standpunktkarakter i faget. Reglene om vurdering i forskriften kapittel 9 gjelder, med noen egne regler for mer opplæring (se «Vurdering» under)."
+    nn: "Opplæringa endar med ein ny standpunktkarakter i faget. Reglane om vurdering i forskrifta kapittel 9 gjeld, med nokre eigne reglar for meir opplæring (sjå «Vurdering» under)."
+  kilder:
+    - { id: udir-mer-opplaering, punkt: "2. Organisering av mer opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/organisering-av-mer-opplaring/" }
+    - { id: udir-mer-opplaering, punkt: "5. Egne regler om vurdering", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at mer opplæring alltid ender med en ny standpunktkarakter, unntatt når eleven består ny, utsatt eller særskilt eksamen?"
+
+# Fag- eller svenneprøven ikke bestått.
+- id: mo-fagprove
+  type: forklaring
+  tittel:
+    nb: "Fag- eller svenneprøven ikke bestått"
+    nn: "Fag- eller sveineprøva ikkje bestått"
+  tekst:
+    nb: |-
+      Kandidater som ikke har bestått fag- eller svenneprøven, har rett til mer opplæring på et tilbud på Vg3 som bygger på programområdet de har gjennomført på Vg2. Det samme gjelder kandidater som ikke har bestått en eksamen de må bestå før prøven. Fylkeskommunen skal så langt det er mulig gi opplæringen i samme lærefag. Opplæringen er ment å skje i bedrift der det er mulig, men fylkeskommunen kan også gi den selv.
+
+      Fristene for å søke inntak gjelder ikke: Kandidaten kan søke når som helst. Retten til ny eller utsatt prøve gjelder i tillegg. Lengre eller ny kontrakt med lærebedriften er også mulig, men er ikke en rett.
+    nn: |-
+      Kandidatar som ikkje har bestått fag- eller sveineprøva, har rett til meir opplæring på eit tilbod på Vg3 som byggjer på programområdet dei har gjennomført på Vg2. Det same gjeld kandidatar som ikkje har bestått ein eksamen dei må bestå før prøva. Fylkeskommunen skal så langt det er mogleg gi opplæringa i same lærefag. Opplæringa er meint å skje i bedrift der det er mogleg, men fylkeskommunen kan også gi henne sjølv.
+
+      Fristane for å søkje inntak gjeld ikkje: Kandidaten kan søkje når som helst. Retten til ny eller utsett prøve gjeld i tillegg. Lengre eller ny kontrakt med lærebedrifta er også mogleg, men er ikkje ein rett.
+  tabell:
+    form: kort
+    kolonner:
+      - { nb: "Rett til mer opplæring", nn: "Rett til meir opplæring" }
+      - { nb: "Hva det betyr", nn: "Kva det tyder" }
+    rader:
+      - tittel: { nb: "Hovedmodellen (2+2)", nn: "Hovudmodellen (2+2)" }
+        celler:
+          - { tekst: { nb: "Ja", nn: "Ja" } }
+          - { tekst: { nb: "Vg3 som bygger på Vg2. Fylket kan tilby et annet lærefag på samme Vg2, men skal strekke seg langt for samme lærefag.", nn: "Vg3 som byggjer på Vg2. Fylket kan tilby eit anna lærefag på same Vg2, men skal strekkje seg langt for same lærefag." } }
+      - tittel: { nb: "Avviksfag (Vg3 i skole)", nn: "Avviksfag (Vg3 i skole)" }
+        celler:
+          - { tekst: { nb: "Ja", nn: "Ja" } }
+          - { tekst: { nb: "Bygger på Vg2, også når kandidaten har tatt Vg3 som elev.", nn: "Byggjer på Vg2, også når kandidaten har teke Vg3 som elev." } }
+      - tittel: { nb: "Særløp (1+3)", nn: "Særløp (1+3)" }
+        celler:
+          - { tekst: { nb: "Nei", nn: "Nei" } }
+          - { tekst: { nb: "Kandidaten har ikke gjennomført Vg2. Fylket skal likevel strekke seg langt for mer opplæring i samme lærefag.", nn: "Kandidaten har ikkje gjennomført Vg2. Fylket skal likevel strekkje seg langt for meir opplæring i same lærefag." } }
+      - tittel: { nb: "Kontrakt som avviker fra løpet", nn: "Kontrakt som vik av frå løpet" }
+        celler:
+          - { tekst: { nb: "Ja", nn: "Ja" } }
+          - { tekst: { nb: "Som for dem som følger det fastsatte løpet.", nn: "Som for dei som følgjer det fastsette løpet." } }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-66", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-66" }
+    - { id: udir-mer-opplaering, punkt: "3. Mer opplæring når fag- eller svenneprøven ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring--nar-fag--eller-svenneproven-ikke-er-bestatt/" }
+    - { id: udir-mer-opplaering, punkt: "4. Søknadsfrist", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/soknadsfrist/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Arbeidsordren sier «Vg3 i skole». Forskriften sier «opplæringstilbod på vidaregåande trinn 3», og Udir sier at opplæringen er ment å skje i bedrift der det er mulig. Er «et tilbud på Vg3» riktig, og ikke «Vg3 i skole»?"
+    - "Er «kan søke når som helst» en riktig forklaring av at fristene i § 4-9 ikke gjelder (Udir: «løpende inntak»)?"
+    - "Er de fire løpene i tabellen gjengitt riktig etter Udirs kapittel 3?"
+
+# Vurdering: de egne reglene for mer opplæring.
+- id: mo-vurdering-eksamen
+  type: forklaring
+  tittel:
+    nb: "Ny, utsatt eller særskilt eksamen samtidig"
+    nn: "Ny, utsett eller særskild eksamen samtidig"
+  tekst:
+    nb: "Eleven kan få mer opplæring og samtidig gå opp til ny, utsatt eller særskilt eksamen i faget. Består eleven eksamenen, faller retten til mer opplæring i faget bort. Standpunktkarakteren settes derfor først etter endelig sensur, så bare de som ikke består eksamenen, får ny standpunktkarakter."
+    nn: "Eleven kan få meir opplæring og samtidig gå opp til ny, utsett eller særskild eksamen i faget. Består eleven eksamenen, fell retten til meir opplæring i faget bort. Standpunktkarakteren blir difor først sett etter endeleg sensur, så berre dei som ikkje består eksamenen, får ny standpunktkarakter."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-36 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-36" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-37 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-37" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-38 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-38" }
+    - { id: udir-mer-opplaering, punkt: "5. Egne regler om vurdering, Ny og utsatt eksamen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammenhengen mellom § 9-16 fjerde ledd og §§ 9-36–9-38 gjengitt riktig?"
+
+- id: mo-vurdering-trekk
+  type: forklaring
+  tittel:
+    nb: "Trekket til eksamen"
+    nn: "Trekket til eksamen"
+  tekst:
+    nb: "Eleven trekkes ikke ut til eksamen i faget eleven får mer opplæring i, når eleven har bestått alle eksamenene læreplanverket krever."
+    nn: "Eleven blir ikkje trekt ut til eksamen i faget eleven får meir opplæring i, når eleven har bestått alle eksamenane læreplanverket krev."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: udir-mer-opplaering, punkt: "5. Egne regler om vurdering, Eksamenstrekk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er § 9-28 tredje ledd gjengitt riktig og kort nok?"
+
+- id: mo-vurdering-fravaer
+  type: forklaring
+  tittel:
+    nb: "Fraværsgrensen"
+    nn: "Fråværsgrensa"
+  tekst:
+    nb: "Fraværsgrensen og reglene om å føre fravær gjelder også ved mer opplæring. Har opplæringen færre timer enn vanlig, regnes grensen av timetallet eleven skal ha. Går eleven over grensen, bør rektor legge vekt på at timetallet er redusert, når rektor vurderer om eleven likevel skal få karakter (inntil 15 prosent)."
+    nn: "Fråværsgrensa og reglane om å føre fråvær gjeld også ved meir opplæring. Har opplæringa færre timar enn vanleg, blir grensa rekna av timetalet eleven skal ha. Går eleven over grensa, bør rektor leggje vekt på at timetalet er redusert, når rektor vurderer om eleven likevel skal få karakter (inntil 15 prosent)."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-mer-opplaering, punkt: "5. Egne regler om vurdering, Fraværsregler", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er Udirs råd om at rektor «bør» vektlegge redusert timetall, gjengitt riktig?"
+
+- id: mo-vurdering-vitnemal
+  type: forklaring
+  tittel:
+    nb: "Førstegangsvitnemål"
+    nn: "Førstegongsvitnemål"
+  tekst:
+    nb: "Førstegangsvitnemål gis til elever som består videregående opplæring med generell studiekompetanse innen fem år etter at de begynte. Elever som bruker inntil to år ekstra, for eksempel fordi de får mer opplæring, får derfor også førstegangsvitnemål."
+    nn: "Førstegongsvitnemål blir gitt til elevar som består vidaregåande opplæring med generell studiekompetanse innan fem år etter at dei byrja. Elevar som bruker inntil to år ekstra, til dømes fordi dei får meir opplæring, får difor også førstegongsvitnemål."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-47", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-47" }
+    - { id: udir-mer-opplaering, punkt: "5. Egne regler om vurdering, Førstegangsvitnemål", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Arbeidsordren nevner ikke førstegangsvitnemål, men Udir har det i kapittel 5. Skal kortet være med?"
+
+# Voksne.
+- id: mo-voksne-fag
+  type: forklaring
+  tittel:
+    nb: "Voksne: fag som ikke er bestått"
+    nn: "Vaksne: fag som ikkje er bestått"
+  tekst:
+    nb: "Voksne som er tatt inn til videregående opplæring for voksne og ikke har bestått standpunkt eller eksamen i ett eller flere fag, har rett til mer opplæring i faget. Den som ikke har vært tatt inn som voksen før, melder seg til mer opplæring etter reglene for elever, eller søker vanlig inntak som voksen etter fylte 24. Fylkeskommunen skal ikke vurdere realkompetansen på nytt. Opplæringen skal tilpasses livssituasjonen, for eksempel med kortere tid, kveldsundervisning eller fjernundervisning. Voksne har ingen fraværsgrense."
+    nn: "Vaksne som er tekne inn til vidaregåande opplæring for vaksne og ikkje har bestått standpunkt eller eksamen i eitt eller fleire fag, har rett til meir opplæring i faget. Den som ikkje har vore teken inn som vaksen før, melder seg til meir opplæring etter reglane for elevar, eller søkjer vanleg inntak som vaksen etter fylte 24. Fylkeskommunen skal ikkje vurdere realkompetansen på nytt. Opplæringa skal tilpassast livssituasjonen, til dømes med kortare tid, kveldsundervisning eller fjernundervisning. Vaksne har inga fråværsgrense."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 14-2 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§14-2" }
+    - { id: udir-mer-opplaering-voksne, punkt: "1. Mer opplæring når fag ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/1.-mer-opplaring-nar-fag-ikke-er-bestatt/" }
+    - { id: udir-mer-opplaering-voksne, punkt: "3. Organisering av mer opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/organisering-av-mer-opplaring/" }
+    - { id: udir-mer-opplaering-voksne, punkt: "4. Egne regler om vurdering", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/egne-regler-om-vurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir skriver «dersom de er over 24 år». Er «etter fylte 24» riktig, når retten som ungdom varer ut skoleåret man fyller 24?"
+    - "Er det riktig å si «ingen fraværsgrense» for voksne, slik Udirs kapittel 4 gjør?"
+
+- id: mo-voksne-fagprove
+  type: forklaring
+  tittel:
+    nb: "Voksne: fag- eller svenneprøven ikke bestått"
+    nn: "Vaksne: fag- eller sveineprøva ikkje bestått"
+  tekst:
+    nb: "Voksne som ikke har bestått fag- eller svenneprøven, eller en eksamen de må bestå før prøven, har rett til mer opplæring fram mot sluttkompetansen de er tatt inn på. Det gjelder også kandidater for fagbrev på jobb. Retten til ny eller utsatt prøve gjelder i tillegg."
+    nn: "Vaksne som ikkje har bestått fag- eller sveineprøva, eller ein eksamen dei må bestå før prøva, har rett til meir opplæring fram mot sluttkompetansen dei er tekne inn på. Det gjeld også kandidatar for fagbrev på jobb. Retten til ny eller utsett prøve gjeld i tillegg."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 14-2 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§14-2" }
+    - { id: udir-mer-opplaering-voksne, punkt: "2. Mer opplæring når fag- eller svenneprøven ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/mer-opplaring-nar-fag--eller-svenneproven-ikke-er-bestatt/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at kandidater for fagbrev på jobb har rett til mer opplæring etter § 14-2, slik Udirs kapittel 2 sier?"
+
+# Individuelt tilrettelagt opplæring.
+- id: mo-iop-fullforing
+  type: forklaring
+  tittel:
+    nb: "Elever med individuelt tilrettelagt opplæring"
+    nn: "Elevar med individuelt tilrettelagd opplæring"
+  tekst:
+    nb: "For elever med individuell opplæringsplan (IOP) er retten ikke begrenset til tre år. Eleven har rett til å fullføre sluttkompetansen ut fra målene i IOP-en, uansett hvor lang tid eleven trenger. Når målene er nådd, er retten ikke brukt opp, og eleven kan få mer opplæring fram mot studie- eller yrkeskompetanse. Fylkeskommunen kan ikke kreve at det er sannsynlig at eleven når studie- eller yrkeskompetanse. Trenger eleven fortsatt individuelt tilrettelagt opplæring, kreves en sakkyndig vurdering."
+    nn: "For elevar med individuell opplæringsplan (IOP) er retten ikkje avgrensa til tre år. Eleven har rett til å fullføre sluttkompetansen ut frå måla i IOP-en, same kor lang tid eleven treng. Når måla er nådde, er retten ikkje brukt opp, og eleven kan få meir opplæring fram mot studie- eller yrkeskompetanse. Fylkeskommunen kan ikkje krevje at det er sannsynleg at eleven når studie- eller yrkeskompetanse. Treng eleven framleis individuelt tilrettelagd opplæring, krevst det ei sakkunnig vurdering."
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: udir-fullforingsretten-iop, punkt: "Regelverket", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/#regelverket" }
+    - { id: udir-fullforingsretten-iop, punkt: "PP-tjenesten sin rolle", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/#pp-tjenesten-sin-rolle" }
+    - { id: udir-fullforingsretten-iop, punkt: "Inntak til videregående opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/#inntak-til-videregaaende-opplaering" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«Mer opplæring» betyr her opplæring etter fullføringsretten (ol. § 5-1), ikke § 5-2. Kan det misforstås at kortet står på siden om § 5-2?"
+    - "Udir sier at retten ikke er tidsbegrenset, mens ol. § 5-1 andre ledd har grensen ut skoleåret man fyller 24. Bør kortet nevne grensen?"
+
+- id: mo-iop-tilpasset-lop
+  type: forklaring
+  tittel:
+    nb: "Tilpassede løp"
+    nn: "Tilpassa løp"
+  tekst:
+    nb: "Fylkeskommunen kan tilby en elev å ta videregående opplæring på lengre eller kortere tid enn fag- og timefordelingen sier, når det er til det beste for eleven, og eleven samtykker. Det er ikke en rett. Det krever ikke sakkyndig vurdering, og kan passe for elever som trenger lavere tempo i fagene."
+    nn: "Fylkeskommunen kan tilby ein elev å ta vidaregåande opplæring på lengre eller kortare tid enn fag- og timefordelinga seier, når det er til det beste for eleven, og eleven samtykkjer. Det er ikkje ein rett. Det krev ikkje sakkunnig vurdering, og kan passe for elevar som treng lågare tempo i faga."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-1 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-1" }
+    - { id: udir-fullforingsretten-iop, punkt: "Tilpassede løp i videregående opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/#tilpassede-loep-i-videregaaende-opplaering" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er tilpassede løp riktig plassert på siden om mer opplæring, eller hører de bedre hjemme i Tilrettelegging?"

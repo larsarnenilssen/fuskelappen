@@ -4,7 +4,7 @@
 // Vestland er valgt.
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { fristerRute, gammelFristerRute, hentInnhold, poengRute, UNDERSIDER, veiviserRute } from './innhold.ts';
+import { fristerRute, gammelFristerRute, hentInnhold, merOpplaeringRute, poengRute, UNDERSIDER, veiviserRute } from './innhold.ts';
 import { oversiktsfavoritt } from '../favoritter.ts';
 
 export const manifest: Modulmanifest = {
@@ -20,6 +20,7 @@ export const manifest: Modulmanifest = {
     // adressen sender videre til kalenderen, filtrert på inntak (avgjørelse 066).
     { sti: gammelFristerRute, tittel: 'kalender.tittel', side: () => import('../kalender/sider/TilKalender.tsx') },
     { sti: poengRute, tittel: 'inntak.poeng.tittel', side: () => import('./sider/Poeng.tsx') },
+    { sti: merOpplaeringRute, tittel: 'inntak.merOpplaering.tittel', side: () => import('./sider/MerOpplaering.tsx') },
     { sti: '/inntak/:veiviser', tittel: 'inntak.tittel', side: () => import('./sider/Veiviserside.tsx') },
   ],
   async sokeoppforinger() {
@@ -33,7 +34,16 @@ export const manifest: Modulmanifest = {
       rute: poengRute,
       modul: 'inntak',
     };
-    return [poeng, ...veivisere
+    const merOpplaering = {
+      id: 'inntak:mer-opplaering',
+      type: 'side' as const,
+      tittel: begge('inntak.merOpplaering.tittel'),
+      tekst: begge('inntak.merOpplaering.beskrivelse'),
+      stikkord: ['mer opplæring', 'meir opplæring', 'ikke bestått', 'ikkje bestått', 'stryk', 'IV', 'fag- eller svenneprøve', 'gjennomført', '1. mars', 'fullføringsretten'],
+      rute: merOpplaeringRute,
+      modul: 'inntak',
+    };
+    return [poeng, merOpplaering, ...veivisere
       .filter((v) => v.gyldighet.niva === 'nasjonal')
       .map((v) => ({
         id: `inntak:${v.id}`,
@@ -53,12 +63,13 @@ export const manifest: Modulmanifest = {
       oversiktsfavoritt(manifest),
       { id: 'inntak:frister', type: 'funksjon' as const, tittel: begge('inntak.frister.tittel'), rute: fristerRute },
       { id: 'inntak:poeng', type: 'funksjon' as const, tittel: begge('inntak.poeng.tittel'), rute: poengRute },
+      { id: 'inntak:mer-opplaering', type: 'funksjon' as const, tittel: begge('inntak.merOpplaering.tittel'), rute: merOpplaeringRute },
       ...veivisere.map((v) => ({ id: `inntak:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },
   async frister() {
     return (await hentInnhold()).frister;
   },
-  kilder: ['opplaeringslova', 'opplaeringsforskrifta', 'udir-retten-til-vgo', 'udir-merknader-ofo', 'udir-klageinstanser', 'vestland-forskrift-inntak', 'udir-fag-og-timefordeling-grunnskole', 'vilbli'],
+  kilder: ['opplaeringslova', 'opplaeringsforskrifta', 'udir-retten-til-vgo', 'udir-merknader-ofo', 'udir-mer-opplaering', 'udir-mer-opplaering-voksne', 'udir-fullforingsretten-iop', 'udir-klageinstanser', 'vestland-forskrift-inntak', 'udir-fag-og-timefordeling-grunnskole', 'vilbli'],
   status: 'aktiv',
 };

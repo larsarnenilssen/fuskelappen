@@ -652,6 +652,57 @@ kilder:
       yrkesfaglig rekvalifisering. Kildesjekken leser oversiktssiden. Stegene i veiviseren «Rett, inntak og søknad»
       viser til undersidene.
 
+  - id: udir-mer-opplaering
+    navn: Rett til mer opplæring
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs veiledning om retten til mer opplæring for elever og de som har læretid i bedrift, i seks kapitler med
+      egne adresser. Kildesjekken leser innholdsfortegnelsen. Siden «Mer opplæring» i Inntak viser til kapitlene.
+
+  - id: udir-mer-opplaering-voksne
+    navn: Rett til mer opplæring for voksne
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs veiledning om retten til mer opplæring for voksne (opplæringsforskrifta § 14-2), i fire kapitler. Siden
+      «Mer opplæring» i Inntak viser til kapitlene.
+
+  - id: udir-fullforingsretten-iop
+    navn: Fullføringsretten for elever med individuelt tilrettelagt opplæring
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side om fullføringsretten for elever med individuell opplæringsplan (IOP), PP-tjenestens rolle, inntak
+      og tilpassede løp. Siden «Mer opplæring» i Inntak og Tilrettelegging viser til den.
+
   - id: udir-fag-og-timefordeling-grunnskole
     navn: Fag- og timefordeling i grunnskolen (Udir-1-2026, vedlegg 1, punkt 2.2)
     kortnavn: Udir-1-2026, grunnskolen
