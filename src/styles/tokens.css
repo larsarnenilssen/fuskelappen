@@ -26,6 +26,13 @@
   /* Bær (dyp rosa) for veiviseren «Klage på karakter» (fase 6, pakke 3). */
   --p-baer-700: #8a1f5c;
   --p-baer-100: #f7e3ee;
+  /* Seriene i diagrammene for Elevundersøkelsen (avgjørelse 077): tre kategoriske farger, validert for fargesvakt syn
+     og kontrast mot flaten i lyst og mørkt tema (dataviz-validatoren, alle par). */
+  --p-serie-blaa: #2a78d6;
+  --p-serie-blaa-mork: #3987e5;
+  --p-serie-oransje: #d95926;
+  --p-serie-gronn: #13936a;
+  --p-serie-gronn-mork: #199e70;
   /* Indigo: veiviseren for aktivitetsplikten (fase 7, avgjørelse 076). */
   --p-indigo-700: #3b3d9a;
   --p-indigo-100: #e7e8f8;

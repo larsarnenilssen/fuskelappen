@@ -918,6 +918,7 @@ main {
 .felt input,
 .felt select,
 .hos-fylket select,
+.eu-seriesvalg select,
 .sokefelt input {
   width: 100%;
   min-height: var(--trykkflate);
@@ -8442,4 +8443,371 @@ a.knapp {
 
 .sr-lenker li {
   padding: 0.125rem 0;
+}
+
+/* ---------- Elevundersøkelsen (fase 7, avgjørelse 077) ----------
+   Tre serier med hver sin farge og form (sirkel, firkant, rute), så fargen aldri står alene. Tallene står som tekst.
+   Mobbing er liggende stolper fra null med en strek for året før. Indeksene er punkter på én akse fra 1 til 5, med en
+   ring for året før og en tynn strek mellom. */
+[data-serie='1'] {
+  --eu-farge: var(--serie-1);
+}
+
+[data-serie='2'] {
+  --eu-farge: var(--serie-2);
+}
+
+[data-serie='3'] {
+  --eu-farge: var(--serie-3);
+}
+
+.eu-merke {
+  display: inline-block;
+  flex: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: var(--rom-1);
+  border: 2px solid var(--eu-farge);
+  background: var(--eu-farge);
+  vertical-align: -0.05em;
+}
+
+.eu-merke-sirkel {
+  border-radius: 50%;
+}
+
+.eu-merke-firkant {
+  border-radius: 2px;
+}
+
+.eu-merke-rute {
+  transform: rotate(45deg) scale(0.85);
+  border-radius: 1px;
+}
+
+.eu-merke-hul {
+  background: var(--farge-flate);
+}
+
+.eu-valg {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.eu-valg > h2 {
+  margin-top: 0;
+}
+
+.eu-serievalg {
+  display: grid;
+  gap: var(--rom-2) var(--rom-4);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 48rem) {
+  .eu-serievalg {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.eu-seriesvalg {
+  display: grid;
+  gap: var(--rom-1);
+}
+
+.eu-seriesvalg-etikett {
+  display: flex;
+  align-items: center;
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.eu-seriesvalg select {
+  width: 100%;
+  min-width: 0;
+}
+
+.eu-valgrad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2) var(--rom-5);
+  margin-top: var(--rom-3);
+}
+
+.eu-valg > p {
+  margin: var(--rom-2) 0 0;
+}
+
+.eu-fliser {
+  display: grid;
+  gap: var(--rom-2);
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .eu-fliser {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.eu-flis {
+  display: grid;
+  gap: 0.125rem;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.eu-flis-navn {
+  display: flex;
+  align-items: center;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-flis-tall {
+  font-size: var(--str-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.eu-flis-tall .eu-skjermet,
+.eu-flis-tall .eu-ingen {
+  font-size: var(--str-m);
+}
+
+.eu-flis-under,
+.eu-fjor-tekst,
+.eu-antall,
+.eu-endring {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-skjermet,
+.eu-ingen {
+  font-style: italic;
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-figur {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.eu-figur-tittel {
+  margin: 0 0 var(--rom-2);
+  font-weight: 700;
+}
+
+.eu-stolper {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Navnet over stolpen på smal skjerm, ved siden av når det er plass. */
+.eu-stolperad {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: 'navn tall' 'spor spor';
+  gap: 0.125rem var(--rom-2);
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .eu-stolperad {
+    grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) 7rem;
+    grid-template-areas: 'navn spor tall';
+  }
+}
+
+.eu-stolpe-navn {
+  grid-area: navn;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: var(--str-s);
+}
+
+.eu-stolpe-navn-tekst {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.eu-spor {
+  grid-area: spor;
+  position: relative;
+  height: 0.875rem;
+  border-left: var(--strek) solid var(--farge-linje);
+}
+
+.eu-stolpe {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 0 4px 4px 0;
+  background: var(--eu-farge);
+}
+
+/* Året før: en loddrett strek over stolpen, med en ring av flaten rundt så den synes på fargen. */
+.eu-fjor {
+  position: absolute;
+  top: -0.25rem;
+  bottom: -0.25rem;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--farge-tekst);
+  box-shadow: 0 0 0 1px var(--farge-flate);
+}
+
+.eu-stolpe-tall {
+  grid-area: tall;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: var(--str-s);
+  font-weight: 700;
+  text-align: right;
+}
+
+.eu-stolpe-tall .eu-fjor-tekst {
+  font-weight: 400;
+}
+
+.eu-indekser {
+  padding-top: var(--rom-2);
+}
+
+/* En rad per indeks: navnet og tallene over aksen på smal skjerm, til venstre for den når det er plass. */
+.eu-indeksrad {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--rom-1) var(--rom-4);
+  padding: var(--rom-2) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.eu-indeksrad-akse {
+  padding: 0;
+  border-top: 0;
+}
+
+.eu-indeksrad-akse > span:first-child {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .eu-indeksrad {
+    grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .eu-indeksrad-akse > span:first-child {
+    display: block;
+  }
+}
+
+.eu-indeks-tekst .eu-figur-tittel {
+  margin: 0;
+}
+
+.eu-beskrivelse {
+  margin: 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-akse {
+  position: relative;
+  height: 1.25rem;
+  margin: 0 var(--rom-2);
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-akse > span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.eu-punktspor {
+  position: relative;
+  height: 2.25rem;
+  margin: 0 var(--rom-2);
+}
+
+.eu-gitter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--farge-linje);
+}
+
+.eu-punkt {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  line-height: 0;
+}
+
+.eu-punkt .eu-merke {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0;
+  box-shadow: 0 0 0 2px var(--farge-flate);
+}
+
+.eu-strek {
+  position: absolute;
+  height: 2px;
+  margin-top: -1px;
+  background: var(--eu-farge);
+  opacity: 0.6;
+}
+
+.eu-punktverdier {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem var(--rom-3);
+  margin: 0.125rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-s);
+}
+
+.eu-punktverdier li {
+  display: flex;
+  align-items: center;
+}
+
+.eu-tabell th,
+.eu-tabell td {
+  vertical-align: top;
+}
+
+.eu-tabell td .eu-antall {
+  display: block;
+}
+
+.eu-om {
+  margin: 0 0 var(--rom-3);
+  padding-left: var(--rom-4);
+  font-size: var(--str-s);
+}
+
+.eu-om li + li {
+  margin-top: var(--rom-1);
 }

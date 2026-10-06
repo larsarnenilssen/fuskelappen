@@ -56,6 +56,7 @@
     "hent:udir": "tsx scripts/hent-udir.ts",
     "hent:overordnet": "tsx scripts/hent-overordnet-del.ts",
     "hent:lovdata": "tsx scripts/hent-lovdata.ts",
+    "hent:elevundersokelsen": "tsx scripts/hent-elevundersokelsen.ts",
     "hent:skolerute": "tsx scripts/hent-skolerute.ts",
     "hent:vigo": "tsx scripts/hent-vigo.ts",
     "hent:utdanning": "tsx scripts/hent-utdanning.ts",

@@ -282,3 +282,37 @@ Ny del av appen, «Skolemiljø», i kategorien med samme navn på forsiden (avgj
 2. Skal enkeltspørsmålene om mobbing (av elever, digitalt, av voksne) med, eller bare indeksen?
 3. Skal forrige skoleår vises?
 4. Privatskoler: Sammenlignes de med landet for alle eierformer eller med privatskolene?
+
+## Svar fra eier 06.10.2026 (runde 3)
+
+- **Forsiden:** Skal «Skolemiljø» ha egen overskrift, eller stå under «Elever og opplæring»? Skal «Eksamen og klage» løftes fram? Eier spurte hva Claude tenker.
+- **Veiviseren** er satt sammen feil: seks innganger som møtes, alle går gjennom «melde til rektor», og alt vises på én gang med felles utfall.
+- **Skoleregler:** Lenker til paragrafene er greit. Forskriften om mobil og smartklokker for Slåtthaug vgs mangler. Søket i Lovdata skal utvides, også til ordens- og atferdsreglement.
+- **Elevundersøkelsen:** Alt skal med, også mobbing. Visuelt og oversiktlig, med skole mot skole, fylke mot fylke og begge mot landet, og fjoråret. Privatskoler skal kunne sammenlignes med andre grupper og sin egen. Standard er eget fylke og egen skole, og det skal være enkelt å bytte.
+- **Tiltaksplan (aktivitetsplan i parentes):** Ja, det er greit.
+
+## Runde 4 (gjort 06.10.2026, avgjørelse 061, 076 og 077)
+
+**F1. Forsiden.** Claudes vurdering: «Skolemiljø» beholder egen overskrift, fordi kategorien nå har tre bokser: Aktivitetsplikten, Skoleregler og Elevundersøkelsen. «Eksamen og klage» blir en egen boks under «Elever og opplæring», ved siden av «Vurdering», og ikke en egen modul. Adressene og favorittene er de samme som før.
+
+**F2. Aktivitetsplikten etter rolle.** Veiviseren spør først «Hvem er du i saken?»:
+
+| Rolle | Veien |
+|---|---|
+| Den som arbeider på skolen | Hva har skjedd? Du ser en krenkelse → gripe inn → melde fra. Mistanke → melde fra. En ansatt krenker → skjerpet plikt. Veien slutter når saken er meldt, med lenke til rektors del |
+| Rektor | Undersøke → tiltak og tiltaksplan → dokumentere → følge opp og evaluere. Er eleven ikke trygg ennå, tilbake til tiltak, eller saken til statsforvalteren |
+| Eleven eller foreldrene | Har det gått en uke etter at saken ble tatt opp med rektor? Ja → statsforvalteren. Nei → ta saken opp med skolen |
+
+**F3. Flere skoleregler fra Lovdata.** Forskrifter fra fylkeskommunene, Oslo kommune og de videregående skolene med mobil, smartklokke, reglement, atferd, oppførsel eller ordens i tittelen kommer med. Regler for mobil står for seg ved siden av skolereglene. Hele registeret leses på nytt neste gang kildesjekken går på `main`, så forskriften for Slåtthaug kommer først etter fletting.
+
+**F4. Elevundersøkelsen** (`#/skolemiljo/elevundersokelsen`):
+- **Tallene:** Alle 15 spørsmål og indekser i Udirs tabeller: «Mobbing på skolen» og mobbet av elever, digitalt og av voksne, og alle de elleve indeksene. Skoleårene 2024–25 og 2025–26, for 412 skoler, alle fylker og landet.
+- **Sammenligning:** Opptil tre serier, valgt i tre menyer: landet, et fylke eller en skole. Landet og fylkene finnes for alle, offentlige og private skoler.
+  - Standard er egen skole, eget fylke og landet.
+  - Med «Privatskole» er standard egen skole, eget fylke og private skoler i hele landet.
+- **Visning:**
+  - Nøkkeltall for mobbing
+  - Mobbing som søyler og indeksene som punkter på skalaen 1–5, med fjoråret som hult merke og endringen i tekst
+  - Trinnvalg (Vg1, Vg2 og Vg3) og bryter mellom diagram og tabell
+  - Valgene står i adressen, så en sammenligning kan lagres som favoritt
+- **Om tallene:** Hvem som svarer, når tallene kommer, hva skjermet betyr, og kreditering under «Om» (NLOD).

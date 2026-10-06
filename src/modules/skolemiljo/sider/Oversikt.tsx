@@ -37,6 +37,9 @@ export default function Oversikt() {
           <li>
             <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
           </li>
+          <li>
+            <Inngang {...UNDERSIDER.elevundersokelsen} tittel={t('skolemiljo.elevundersokelsen.kort')} tekst={t('skolemiljo.elevundersokelsen.beskrivelse')} />
+          </li>
         </ul>
       </section>
     </div>

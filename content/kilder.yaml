@@ -722,6 +722,25 @@ kilder:
       Håndhevingsordningen (opplæringslova § 12-6). Kildesjekken følger kapittel 7 for seg, fordi det står på en egen
       side.
 
+  - id: udir-elevundersokelsen
+    navn: Elevundersøkelsen i videregående, Udirs statistikkbank
+    kortnavn: Elevundersøkelsen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: elevundersokelsen
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Indeksene (tabell 152) og mobbing (tabell 154) fra API-et til statistikkbanken
+      (api.statistikkbanken.udir.no), de to siste skoleårene, for landet, fylkene og skolene. Hentes hver uke med npm
+      run hent:elevundersokelsen til data/elevundersokelsen/ (avgjørelse 077). Udir skriver at API-et ikke er ment for
+      ekstern bruk ennå og kan endres uten varsel. Kreditering: «Inneholder data under NLOD, tilgjengeliggjort på
+      data.udir.no».
+
   - id: udir-mer-opplaering
     navn: Rett til mer opplæring
     utgiver: Utdanningsdirektoratet

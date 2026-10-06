@@ -7,6 +7,8 @@ export const vurderingNn = {
   delFravaer: 'Fråvær',
   delOrden: 'Orden og oppførsel',
   delEksamen: 'Eksamen og klage',
+  // Boksen på forsiden (eier 06.10.2026).
+  eksamenOgKlage: { tittel: 'Eksamen og klage', beskrivelse: 'Trekk, oppmelding, sensur og tilrettelegging, og klage på karakter.' },
   ikkeFunnet: 'Fann ikkje vegvisaren.',
   underveisSlutt: {
     tittel: 'Undervegs- og sluttvurdering',

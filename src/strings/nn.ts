@@ -222,6 +222,7 @@ export const nn: Tekster = {
       tittel: 'Kreditering',
       tekst:
         'Appen inneheld data frå Utdanningsdirektoratet og Lovdata, gjorde tilgjengelege under Norsk lisens for offentlege data (NLOD) 2.0.',
+      elevundersokelsen: 'Resultata frå Elevundersøkinga i Skulemiljø: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
       utdanning: 'Yrka og utdanningsbeskrivingane i Opplæringstilbod er baserte på opne data frå utdanning.no og er underlagde Norsk lisens for offentlege data (NLOD). Teksten blir halden ved like på utdanning.no.',
       ndla: 'Namna på faga på NDLA er frå Nasjonal digital læringsarena (NDLA), lisensierte under Creative Commons Namngjeving 4.0 (CC BY 4.0).',
       ccby: 'Les CC BY 4.0',

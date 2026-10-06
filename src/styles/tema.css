@@ -45,6 +45,9 @@
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-700);
   --diagram-over: var(--p-roed-700);
+  --serie-1: var(--p-serie-blaa);
+  --serie-2: var(--p-serie-oransje);
+  --serie-3: var(--p-serie-gronn);
   --diagram-tekst-undervisning: var(--p-blaa-700);
   --diagram-tekst-annen: var(--p-groenn-700);
   --diagram-tekst-motetid: var(--p-rav-700);
@@ -113,6 +116,9 @@
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-500);
   --diagram-over: var(--p-roed-500);
+  --serie-1: var(--p-serie-blaa-mork);
+  --serie-2: var(--p-serie-oransje);
+  --serie-3: var(--p-serie-gronn-mork);
   --diagram-tekst-undervisning: var(--p-blaa-300);
   --diagram-tekst-annen: var(--p-groenn-300);
   --diagram-tekst-motetid: var(--p-rav-300);
@@ -171,6 +177,9 @@
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-500);
     --diagram-over: var(--p-roed-500);
+    --serie-1: var(--p-serie-blaa-mork);
+    --serie-2: var(--p-serie-oransje);
+    --serie-3: var(--p-serie-gronn-mork);
     --diagram-tekst-undervisning: var(--p-blaa-300);
     --diagram-tekst-annen: var(--p-groenn-300);
     --diagram-tekst-motetid: var(--p-rav-300);
@@ -233,6 +242,9 @@
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-700);
     --diagram-over: var(--p-roed-700);
+    --serie-1: var(--p-serie-blaa);
+    --serie-2: var(--p-serie-oransje);
+    --serie-3: var(--p-serie-gronn);
     --diagram-tekst-undervisning: var(--p-blaa-700);
     --diagram-tekst-annen: var(--p-groenn-700);
     --diagram-tekst-motetid: var(--p-rav-700);

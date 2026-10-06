@@ -79,6 +79,11 @@ export const manifest: Modulmanifest = {
         .map((v) => ({ id: `vurdering:${v.id}`, type: 'veiviser' as const, tittel: v.tittel, tekst: v.tekst, stikkord: v.stikkord, rute: veiviserRute(v.id), modul: 'vurdering' })),
     ];
   },
+  // To bokser på forsiden (eier 06.10.2026): modulen og «Eksamen og klage», som mange leter etter for seg.
+  innganger: [
+    { id: 'modul:vurdering', tittel: 'moduler.vurdering.navn', beskrivelse: 'moduler.vurdering.beskrivelse', rute: '/vurdering', ikon: 'vurdering' },
+    { id: 'vurdering:eksamen', tittel: 'vurdering.eksamenOgKlage.tittel', beskrivelse: 'vurdering.eksamenOgKlage.beskrivelse', rute: eksamenRute, ikon: UNDERSIDER.eksamen.ikon },
+  ],
   undersider: Object.values(UNDERSIDER),
   async favorittbare() {
     const { veivisere } = await hentInnhold();

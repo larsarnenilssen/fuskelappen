@@ -7,9 +7,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til
 
 - **Skolemiljø** (ny del av appen, mockup til eier):
-  - **Veiviseren «Aktivitetsplikten»:** følge med, gripe inn, melde fra, skjerpet plikt når en ansatt krenker en elev, undersøke, tiltak og tiltaksplan, dokumentere, følge opp og melde saken til statsforvalteren. Hvert steg har ansvar, dokumentasjon, frist og paragrafene.
+  - **Veiviseren «Aktivitetsplikten»:** starter med hvem du er i saken. Den som arbeider på skolen, får følge med, gripe inn og melde fra, og skjerpet plikt når en ansatt krenker en elev. Rektor får undersøke, tiltak og tiltaksplan, dokumentere og følge opp. Eleven og foreldrene får ta saken opp med skolen og melde den til statsforvalteren. Hvert steg har ansvar, dokumentasjon, frist og paragrafene.
   - **Skoleregler:** reglene i loven om skoleregler, bortvisning og pålagt skolebytte. For valgt fylke kommer paragrafene om reaksjoner, saksbehandling og klage i fylkets skoleregler, og for valgt skole skolens egne regler når de står i Lovdata.
   - **Privatskoler:** egne merknader når «Privatskole» er valgt.
+  - **Elevundersøkelsen:** mobbing og alle indeksene for skolen, fylket og landet, med fjoråret. Sammenlign opptil tre skoler, fylker eller landet, også offentlige og private skoler hver for seg, per trinn, som diagram eller tabell.
+  - **Forsiden:** tre bokser under «Skolemiljø»: Aktivitetsplikten, Skoleregler og Elevundersøkelsen.
+- **«Eksamen og klage»** har egen boks på forsiden under «Elever og opplæring».
+- **Regler for mobil og ordensreglement** fra skolene og fylkene i Lovdata kommer med i Lov og forskrift og på siden «Skoleregler».
 - **Privatskole:** En ny bryter under «Fylke og skole» i innstillingene. Velger du en privat skole, slås den på av seg selv. Når den er på:
   - kort og steg der privatskolene har egne regler, har en boks «For privatskoler»: inntaket, klage på karakter, individuell tilrettelegging, skoleregler og bortvisning
   - kildene og «I regelverket» viser paragrafen i forskriften til privatskolelova i stedet for den samme regelen i opplæringsforskrifta, f.eks. fraværsgrensen, eksamen og klage

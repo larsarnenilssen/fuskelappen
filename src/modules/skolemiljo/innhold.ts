@@ -32,10 +32,12 @@ export function hentInnhold(): Promise<Skolemiljoinnhold> {
 
 export const veiviserRute = (id: string) => `/skolemiljo/${id}`;
 export const skolereglerRute = '/skolemiljo/skoleregler';
+export const elevundersokelsenRute = '/skolemiljo/elevundersokelsen';
 
 /** Lenkene med ikon på oversikten (avgjørelse 058). */
 export const UNDERSIDER = {
   skoleregler: { rute: skolereglerRute, ikon: 'paragraf' },
+  elevundersokelsen: { rute: elevundersokelsenRute, ikon: 'vurdering' },
 } as const satisfies Record<string, Underside>;
 
 /** Elementene på en side, i rekkefølgen de står i filen: id-er som starter med prefikset. */
