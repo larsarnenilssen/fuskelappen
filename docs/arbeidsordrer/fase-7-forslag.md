@@ -316,3 +316,25 @@ Ny del av appen, «Skolemiljø», i kategorien med samme navn på forsiden (avgj
   - Trinnvalg (Vg1, Vg2 og Vg3) og bryter mellom diagram og tabell
   - Valgene står i adressen, så en sammenligning kan lagres som favoritt
 - **Om tallene:** Hvem som svarer, når tallene kommer, hva skjermet betyr, og kreditering under «Om» (NLOD).
+
+## Svar fra eier 06.10.2026 (runde 4)
+
+- De fire boksene under «Eksamen og klage» i Vurdering skal være en egen modul, «Eksamen og klage», under Vurdering på forsiden. Ekstraboksen på forsiden fjernes.
+- Skolemiljø skal være én boks på forsiden igjen, med Aktivitetsplikten, Skoleregler og Elevundersøkelsen på oversikten. Overskriften «Skolemiljø» står inntil videre.
+- Elevundersøkelsen: kvikke fakta om egen skole (ellers fylket), overskrifter som kan lukkes, boksene om mobbing lukket fra start, bedre bruk av to kolonner, like brede kolonner i tabellen, ledelinjer og grønt og rødt for bedre og svakere enn året før.
+
+## Runde 5 (gjort 06.10.2026, avgjørelse 077 og 078)
+
+**G1. Eksamen og klage** (`#/eksamen`): egen modul med Eksamen, Fag- og svenneprøven, Klage på karakter og Kalender for eksamen. De gamle adressene i Vurdering sender videre, og lagrede favoritter flyttes med.
+
+**G2. Forsiden:** Skolemiljø er én boks igjen. «Elever og opplæring» har Tilrettelegging, Vurdering og Eksamen og klage.
+
+**G3. Elevundersøkelsen:**
+- «Kort om» skolen: mobbing på skolen mot landet og året før, og de tre sterkeste og svakeste indeksene mot landet. Uten valgt skole brukes fylket.
+- «Kort om», «Mobbing», «Læringsmiljøet» og «Om tallene» kan lukkes. Boksene om mobbing er lukket fra start og viser tallene i overskriften.
+- På skrivebord: «Kort om» over hele bredden, mobbingen og «Om tallene» til venstre, og læringsmiljøet og kildene til høyre.
+- Tabellen har like brede kolonner, ledelinjer og pil for bedre (grønn) og svakere (rød) enn året før.
+
+**Spørsmål G:**
+1. «Kort om» sammenligner med landet. Skal skolen heller sammenlignes med fylket?
+2. Skal «Om tallene» være åpen fra start?

@@ -18,7 +18,7 @@ export interface Kalenderoppforing {
   naar?: Flerspraak;
   tema: readonly Kalendertema[];
   grupper: readonly Fristgruppe[];
-  /** Adresser i appen, f.eks. `/vurdering/klage-pa-karakter`. Tittelen hentes fra søkeoppføringene. */
+  /** Adresser i appen, f.eks. `/eksamen/klage-pa-karakter`. Tittelen hentes fra søkeoppføringene. */
   lenker: readonly string[];
   /** Lenker i appen med tittel og type, når de ikke skal slås opp (f.eks. en paragraf i Regelverk). */
   ferdigeLenker?: readonly { rute: string; tittel: Flerspraak; type: Sokeoppforingstype }[];

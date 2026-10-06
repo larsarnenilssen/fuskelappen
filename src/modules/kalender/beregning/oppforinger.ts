@@ -2,8 +2,8 @@
 // Eksamensdatoene settes inn per skoleår, så et vindu over to skoleår får datoene for begge.
 import { KALENDERTEMAER, type Frist, type Kalendertema } from '../../../core/innhold/skjema.ts';
 import type { Tidslinjefrist } from '../../../core/tidslinje.ts';
-import { finnDato, medEksamensdatoer } from '../../vurdering/eksamen/datoer.ts';
-import type { Eksamensdatoer } from '../../vurdering/eksamen/skjema.ts';
+import { finnDato, medEksamensdatoer } from '../../eksamen/eksamensdatoer/datoer.ts';
+import type { Eksamensdatoer } from '../../eksamen/eksamensdatoer/skjema.ts';
 import { skolearIVindu, skolearVindu, utvid, type Kalenderoppforing, type Kalenderpost, type Vindu } from './kalender.ts';
 
 const erTema = (t: string): t is Kalendertema => (KALENDERTEMAER as readonly string[]).includes(t);

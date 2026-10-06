@@ -258,7 +258,7 @@ function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; 
           </a>
         </li>
         <li>
-          <a class="lenke-pil" href="#/vurdering/eksamen">
+          <a class="lenke-pil" href="#/eksamen/regler">
             {t('fag.side.tilEksamen')}
             <Ikon navn="hoyre" class="ikon-liten" />
           </a>

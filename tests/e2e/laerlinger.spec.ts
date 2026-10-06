@@ -32,7 +32,7 @@ test.describe('lærlinger og kandidater på mobil', () => {
     // Prøven i Vurdering er første kort, merket «I Vurdering».
     await expect(page.locator('.fag-ifaget-i').first()).toHaveText(/I Vurdering/i);
     await page.locator('.fb-prove').click();
-    await expect(page).toHaveURL(/#\/vurdering\/fag-og-svenneproven$/);
+    await expect(page).toHaveURL(/#\/eksamen\/fag-og-svenneproven$/);
     // «Veiene hit» er et lukket kort under prøvene, og lenker tilbake til hver vei.
     const hit = page.locator('.fb-hit');
     await expect(hit.getByRole('button')).toHaveAttribute('aria-expanded', 'false');

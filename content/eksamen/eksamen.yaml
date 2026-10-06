@@ -178,8 +178,8 @@
     nb: "Karakteren og klage"
     nn: "Karakteren og klage"
   tekst:
-    nb: "Kandidaten kan klage innen ti dager. På skriftlig eksamen kan kandidaten klage på selve karakteren, og en klagenemnd avgjør. På muntlig og praktisk eksamen kan kandidaten bare klage på formelle feil, og statsforvalteren avgjør. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
-    nn: "Kandidaten kan klage innan ti dagar. På skriftleg eksamen kan kandidaten klage på sjølve karakteren, og ei klagenemnd avgjer. På munnleg og praktisk eksamen kan kandidaten berre klage på formelle feil, og statsforvaltaren avgjer. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
+    nb: "Kandidaten kan klage innen ti dager. På skriftlig eksamen kan kandidaten klage på selve karakteren, og en klagenemnd avgjør. På muntlig og praktisk eksamen kan kandidaten bare klage på formelle feil, og statsforvalteren avgjør. Se veiviseren [Klage på karakter](#/eksamen/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
+    nn: "Kandidaten kan klage innan ti dagar. På skriftleg eksamen kan kandidaten klage på sjølve karakteren, og ei klagenemnd avgjer. På munnleg og praktisk eksamen kan kandidaten berre klage på formelle feil, og statsforvaltaren avgjer. Sjå vegvisaren [Klage på karakter](#/eksamen/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
   paragrafer: [opplaeringsforskrifta/10-2, opplaeringsforskrifta/10-7, opplaeringsforskrifta/10-8, opplaeringsforskrifta/9-37]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-2, § 10-7 og § 10-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }

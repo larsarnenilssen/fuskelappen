@@ -7,7 +7,7 @@ import { velgSynlige, type Sted } from '../../core/innhold/status.ts';
 import { lastInntaksdatoer, lastKommende, lastSkoleruter } from '../../data/kalender.ts';
 import { lastEksamensdatoer } from '../../data/eksamen.ts';
 import { lastOversikt } from '../lov/data.ts';
-import type { Eksamensdatoer } from '../vurdering/eksamen/skjema.ts';
+import type { Eksamensdatoer } from '../eksamen/eksamensdatoer/skjema.ts';
 import { skolearIVindu, skolearVindu, utvid, type Kalenderoppforing, type Kalenderpost, type Vindu } from './beregning/kalender.ts';
 import { fraFrist, fristposter } from './beregning/oppforinger.ts';
 import { hentAlleFrister } from './data.ts';

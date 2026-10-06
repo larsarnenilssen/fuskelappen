@@ -14,3 +14,10 @@
   - «Om tallene» forklarer hvem som svarer, når og hva skjermingen betyr. To kolonner på skrivebord (avgjørelse 074).
 
 **Konsekvens:** Et nytt skoleår kommer med av seg selv i desember. Endrer Udir tabellene eller kodene, stopper hentingen og kildesjekken melder fra. Tolkningen av tallene er Udirs. Appen forklarer skalaene, men rangerer ikke skoler.
+
+**Tillegg (runde 5, eier 06.10.2026):**
+- **«Kort om»** skolen brukeren har valgt, ellers fylket, øverst: mobbing på skolen mot landet og året før, og de tre indeksene der tallene ligger mest over og mest under landet (privatskolene i landet når «Privatskole» er valgt og skolen er privat). Uten valgt skole og fylke står en lenke til innstillingene.
+- **Overskrifter som kan lukkes** (`Seksjon`): «Kort om», «Mobbing», «Læringsmiljøet» og «Om tallene». Boksene under «Mobbing» er lukket fra start og har tallene for seriene i overskriften. Nøkkeltallene over boksene er tatt bort, fordi tallene står i overskriften.
+- **To kolonner på skrivebord** i et rutenett: «Kort om» over hele bredden, mobbingen og «Om tallene» til venstre, og læringsmiljøet og kildene til høyre. På mobil står delene i samme rekkefølge under hverandre. Tabellen står over hele bredden.
+- **Tabellen** har fast oppsett med like brede kolonner for seriene, ledelinjer og tallene til høyre.
+- **Bedre og svakere** enn året før (og enn landet i «Kort om») er grønt og rødt (`--farge-ok` og `--farge-feil`), alltid med pil (▲ ▼) og tekst for skjermlesere. For mobbing er lavere bedre. En endring som rundes til 0, får ingen pil.

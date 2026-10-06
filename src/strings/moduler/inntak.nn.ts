@@ -138,7 +138,7 @@ export const inntakNn: typeof inntakNb = {
     veiviser: 'Rett, inntak og søknad',
     veiviserTekst: 'Vegvisaren for rett til vidaregåande opplæring, inntak og søknadsfrist.',
     eksamen: 'Utsett, ny og særskild eksamen',
-    eksamenTekst: 'Eksamen i Vurdering: kven som har rett, og når standpunkt fell bort.',
+    eksamenTekst: 'Utsett, ny og særskild eksamen: kven som har rett, og når standpunkt fell bort.',
     laerlinger: 'Lærlingar og kandidatar',
     laerlingerTekst: 'Vegane til fag- og sveinebrev, og overgangane mellom dei.',
   },

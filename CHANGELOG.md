@@ -11,8 +11,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - **Skoleregler:** reglene i loven om skoleregler, bortvisning og pålagt skolebytte. For valgt fylke kommer paragrafene om reaksjoner, saksbehandling og klage i fylkets skoleregler, og for valgt skole skolens egne regler når de står i Lovdata.
   - **Privatskoler:** egne merknader når «Privatskole» er valgt.
   - **Elevundersøkelsen:** mobbing og alle indeksene for skolen, fylket og landet, med fjoråret. Sammenlign opptil tre skoler, fylker eller landet, også offentlige og private skoler hver for seg, per trinn, som diagram eller tabell.
-  - **Forsiden:** tre bokser under «Skolemiljø»: Aktivitetsplikten, Skoleregler og Elevundersøkelsen.
-- **«Eksamen og klage»** har egen boks på forsiden under «Elever og opplæring».
+    - «Kort om» skolen (eller fylket): mobbing og de tre sterkeste og svakeste indeksene mot landet.
+    - Overskriftene kan lukkes, og boksene om mobbing er lukket til du åpner dem.
+    - Bedre og svakere enn året før er markert med grønn og rød pil.
+    - På stor skjerm står mobbingen og læringsmiljøet side om side.
 - **Regler for mobil og ordensreglement** fra skolene og fylkene i Lovdata kommer med i Lov og forskrift og på siden «Skoleregler».
 - **Privatskole:** En ny bryter under «Fylke og skole» i innstillingene. Velger du en privat skole, slås den på av seg selv. Når den er på:
   - kort og steg der privatskolene har egne regler, har en boks «For privatskoler»: inntaket, klage på karakter, individuell tilrettelegging, skoleregler og bortvisning
@@ -23,6 +25,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Eksamen og klage** er en egen del av appen under «Elever og opplæring» på forsiden, med eksamen, fag- og svenneprøven, klage på karakter og kalenderen for eksamen. Sidene stod før i Vurdering. Gamle lenker og favoritter virker fortsatt.
 - **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene», fagarket, tilbudene i Opplæringstilbud og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
 - **Kildene på fagarket og tilbudene** står i en lukket boks («Kilder»), nederst i høyre kolonne på stor skjerm og nederst på siden på mobil.
 - **Regelverk:** Gruppene på oversikten (lover, forskrifter, lokale forskrifter og avtaler) er lukket når du kommer til siden. Det du åpner, er fortsatt åpent når du går tilbake.

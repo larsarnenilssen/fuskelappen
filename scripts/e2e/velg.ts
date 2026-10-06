@@ -5,6 +5,7 @@
 const MODULSPEKER: Record<string, readonly string[]> = {
   arbeidstid: ['arbeidstid', 'kalkulator-fag'],
   begreper: ['kodelister', 'modul-og-sok'],
+  eksamen: ['eksamen', 'laerlinger', 'kalender'],
   fag: ['fag', 'kalkulator-fag'],
   fylker: ['fylker'],
   inntak: ['inntak'],
@@ -28,7 +29,7 @@ const DATAMODULER: Record<string, readonly string[]> = {
   udir: ['inntak', 'vurdering'],
   skolerute: ['kalender'],
   skolear: ['inntak', 'arbeidstid', 'vurdering'],
-  eksamen: ['vurdering', 'kalender'],
+  eksamen: ['eksamen', 'kalender'],
   inntaksdatoer: ['kalender'],
 };
 

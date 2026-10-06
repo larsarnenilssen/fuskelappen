@@ -59,10 +59,11 @@ describe('modulregisteret', () => {
       'inntak:rett-inntak-soknad',
       'tilrettelegging:tilpasset-og-individuell',
       'vurdering:grunnlag-for-vurdering',
+      'eksamen:klage-pa-karakter',
       'arbeidstid:beskjeftigelse',
       'begreper:standpunktkarakter',
       // Oversiktssidene, dokumentene, programmene og tilbudene, og elementene uten egen side (avgjørelse 058).
-      ...['begreper', 'fag', 'inntak', 'lov', 'opplaeringslop', 'tilrettelegging', 'vurdering'].map((m) => `${m}:oversikt`),
+      ...['begreper', 'eksamen', 'fag', 'inntak', 'lov', 'opplaeringslop', 'tilrettelegging', 'vurdering'].map((m) => `${m}:oversikt`),
       'lov:opplaeringslova',
       'lov:opplaeringslova:11-1',
       'lov:hovedtariffavtalen',
@@ -131,8 +132,9 @@ describe('modulregisteret', () => {
       if (treff) truffet.add(treff.rute.sti);
     }
     // Ruter uten egen side: /arbeidstid sender til forsiden, og /laereplanverket/overordnet-del er samme side som
-    // /laereplanverket. De gamle kalenderne sender videre til kalenderen, ferdig filtrert (avgjørelse 066).
-    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del', '/inntak/frister', '/vurdering/eksamen-og-klage'];
+    // /laereplanverket. De gamle kalenderne sender videre til kalenderen, ferdig filtrert (avgjørelse 066), og de gamle
+    // adressene i Vurdering til Eksamen og klage (avgjørelse 078).
+    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del', '/inntak/frister', '/vurdering/eksamen-og-klage', '/vurdering/eksamen', '/vurdering/fag-og-svenneproven', '/vurdering/klage-pa-karakter'];
     const mangler = alleRuter()
       .map(({ rute }) => rute.sti)
       .filter((sti) => !truffet.has(sti) && !utenEgenSide.includes(sti));

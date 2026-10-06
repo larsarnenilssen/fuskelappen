@@ -154,8 +154,8 @@
   type: begrep
   tittel: { nb: "Klagenemnd", nn: "Klagenemnd" }
   tekst:
-    nb: "Det finnes to slags klagenemnder for karakterer. Ved skriftlig eksamen oppnevner statsforvalteren en klagenemnd som vurderer svaret på nytt, kan sette karakteren opp eller ned og ikke trenger å begrunne avgjørelsen. Ved «ikke bestått» på fag- og svenneprøven avgjør en klagenemnd oppnevnt av departementet. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
-    nn: "Det finst to slag klagenemnder for karakterar. Ved skriftleg eksamen nemner statsforvaltaren opp ei klagenemnd som vurderer svaret på nytt, kan setje karakteren opp eller ned og ikkje treng å grunngi avgjerda. Ved «ikkje bestått» på fag- og sveineprøva avgjer ei klagenemnd oppnemnd av departementet. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
+    nb: "Det finnes to slags klagenemnder for karakterer. Ved skriftlig eksamen oppnevner statsforvalteren en klagenemnd som vurderer svaret på nytt, kan sette karakteren opp eller ned og ikke trenger å begrunne avgjørelsen. Ved «ikke bestått» på fag- og svenneprøven avgjør en klagenemnd oppnevnt av departementet. Se veiviseren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
+    nn: "Det finst to slag klagenemnder for karakterar. Ved skriftleg eksamen nemner statsforvaltaren opp ei klagenemnd som vurderer svaret på nytt, kan setje karakteren opp eller ned og ikkje treng å grunngi avgjerda. Ved «ikkje bestått» på fag- og sveineprøva avgjer ei klagenemnd oppnemnd av departementet. Sjå vegvisaren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-7 og § 10-9 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
     - { id: opplaeringslova, punkt: "§ 8-3", url: "https://lovdata.no/lov/2023-06-09-30/§8-3" }

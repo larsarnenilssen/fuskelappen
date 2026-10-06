@@ -151,8 +151,8 @@
     nb: "Resultatet og klage"
     nn: "Resultatet og klage"
   tekst:
-    nb: "Består kandidaten, gir fylkeskommunen fag- eller svennebrev, praksisbrev eller kompetansebevis. Er karakteren «ikke bestått», kan kandidaten klage innen tre uker, både på karakteren og på formelle feil. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove)."
-    nn: "Består kandidaten, gir fylkeskommunen fag- eller sveinebrev, praksisbrev eller kompetansebevis. Er karakteren «ikkje bestått», kan kandidaten klage innan tre veker, både på karakteren og på formelle feil. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove)."
+    nb: "Består kandidaten, gir fylkeskommunen fag- eller svennebrev, praksisbrev eller kompetansebevis. Er karakteren «ikke bestått», kan kandidaten klage innen tre uker, både på karakteren og på formelle feil. Se veiviseren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-prove&svar=prove)."
+    nn: "Består kandidaten, gir fylkeskommunen fag- eller sveinebrev, praksisbrev eller kompetansebevis. Er karakteren «ikkje bestått», kan kandidaten klage innan tre veker, både på karakteren og på formelle feil. Sjå vegvisaren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-prove&svar=prove)."
   paragrafer: [opplaeringsforskrifta/9-54, opplaeringsforskrifta/10-9, opplaeringsforskrifta/10-10]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-54 fjerde ledd, § 10-9 og § 10-10", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-9" }

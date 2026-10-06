@@ -1,7 +1,7 @@
 // Oversikten «Eksamen» (fase 6, pakke 3, godkjent av eier 04.10.2026). Samme oppsett som siden om prøvene: blå bokser
 // øverst (antall eksamener per trinn), stien fra oppmelding til karakter med datoene fra eksamensdatoene, det som
 // gjelder hele veien, og utsatt, ny og særskilt eksamen samlet i én boks. Kortene står i
-// content/vurdering/eksamen.yaml. Vestland vises bare når Vestland er valgt.
+// content/eksamen/eksamen.yaml. Vestland vises bare når Vestland er valgt.
 // `?del=<id>` åpner et kort og ruller dit, så veiviserne og Tilrettelegging kan lenke rett til det.
 import { useEffect, useState } from 'preact/hooks';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
@@ -18,10 +18,10 @@ import { velgSynlige } from '../../../core/innhold/status.ts';
 import { lastEksamensdatoer } from '../../../data/eksamen.ts';
 import { iDag, skolearFor } from '../../../data/skolear.ts';
 import type { SideProps } from '../../typer.ts';
-import { stidatoer } from '../eksamen/datoer.ts';
-import type { Eksamensdatoer } from '../eksamen/skjema.ts';
+import { stidatoer } from '../eksamensdatoer/datoer.ts';
+import type { Eksamensdatoer } from '../eksamensdatoer/skjema.ts';
 import { type Forklaringselement, hentInnhold, klageRute, medPrefiks, UNDERSIDER } from '../innhold.ts';
-import { Inngang } from './Inngang.tsx';
+import { Inngang } from '../../vurdering/sider/Inngang.tsx';
 
 /** Stegene fra oppmelding til karakter, med feltet i eksamensdatoene som gir datoene til steget. */
 const STI: readonly { id: string; felt?: string }[] = [
@@ -54,7 +54,7 @@ export default function Eksamen({ sporring }: SideProps) {
   const trekk = finn('ek-trekk');
   const utsatt = finn('ek-utsatt-ny-sarskilt');
   const lokale = alle.filter((e) => e.gyldighet.niva !== 'nasjonal');
-  const etiketter = { host: t('vurdering.eksamen.host'), var: t('vurdering.eksamen.var') };
+  const etiketter = { host: t('eksamen.eksamen.host'), var: t('eksamen.eksamen.var') };
   const steg = STI.flatMap(({ id, felt }) => {
     const e = finn(id);
     if (!e) return [];
@@ -64,12 +64,12 @@ export default function Eksamen({ sporring }: SideProps) {
 
   return (
     <div class="side side-bred">
-      <Brodsmuler ledd={[{ tekst: t('vurdering.tittel'), href: '#/vurdering' }]} />
+      <Brodsmuler ledd={[{ tekst: t('eksamen.tittel'), href: '#/eksamen' }]} />
       <div class="tittelrad">
-        <h1 tabIndex={-1}>{t('vurdering.eksamen.tittel')}</h1>
-        <FavorittKnapp id="vurdering:eksamen" navn={t('vurdering.eksamen.tittel')} />
+        <h1 tabIndex={-1}>{t('eksamen.eksamen.tittel')}</h1>
+        <FavorittKnapp id="eksamen:eksamen" navn={t('eksamen.eksamen.tittel')} />
       </div>
-      <p class="ingress">{t('vurdering.eksamen.innledning')}</p>
+      <p class="ingress">{t('eksamen.eksamen.innledning')}</p>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (
@@ -80,58 +80,58 @@ export default function Eksamen({ sporring }: SideProps) {
             <>
               {trekk && (
                 <section>
-                  <h2 class="liten-overskrift">{t('vurdering.eksamen.antall')}</h2>
+                  <h2 class="liten-overskrift">{t('eksamen.eksamen.antall')}</h2>
                   {trekk.tabell && <Tabell tabell={trekk.tabell} tittel={trekk.tittel} />}
                   <Innholdskort element={trekk} aapen={del === trekk.id} />
                 </section>
               )}
               <section>
-                <h2 class="liten-overskrift">{t('vurdering.eksamen.gangen')}</h2>
-                <Sti steg={steg} etikett={t('vurdering.eksamen.gangen')} />
+                <h2 class="liten-overskrift">{t('eksamen.eksamen.gangen')}</h2>
+                <Sti steg={steg} etikett={t('eksamen.eksamen.gangen')} />
               </section>
             </>
           }
           side={
             <>
               <section>
-                <h2 class="liten-overskrift">{t('vurdering.eksamen.heleVeien')}</h2>
+                <h2 class="liten-overskrift">{t('eksamen.eksamen.heleVeien')}</h2>
                 {HELE_VEIEN.map((id) => {
                   const e = finn(id);
                   return e ? <Innholdskort key={id} element={e} aapen={del === id} /> : null;
                 })}
                 {lokale.map((k) => (
                   <div key={k.id} class="lokalkort">
-                    {k.gyldighet.niva !== 'nasjonal' && <p class="lokalkort-sted">{t('vurdering.eksamen.iFylket', { fylke: fylkesnavn(k.gyldighet.fylke) ?? k.gyldighet.fylke })}</p>}
+                    {k.gyldighet.niva !== 'nasjonal' && <p class="lokalkort-sted">{t('eksamen.eksamen.iFylket', { fylke: fylkesnavn(k.gyldighet.fylke) ?? k.gyldighet.fylke })}</p>}
                     <Innholdskort element={k} aapen={del === k.id} />
                   </div>
                 ))}
               </section>
               {utsatt && (
                 <section>
-                  <h2 class="liten-overskrift">{t('vurdering.eksamen.ikkeBestatt')}</h2>
+                  <h2 class="liten-overskrift">{t('eksamen.eksamen.ikkeBestatt')}</h2>
                   <Samleboks element={utsatt} tabell={utsatt.tabell} aapen={del === utsatt.id} />
                   <ul class="vu-videre">
                     <li>
-                      <Inngang rute="/inntak/mer-opplaering" ikon="igjen" tittel={t('vurdering.eksamen.merOpplaering')} tekst={t('vurdering.eksamen.merOpplaeringTekst')} />
+                      <Inngang rute="/inntak/mer-opplaering" ikon="igjen" tittel={t('eksamen.eksamen.merOpplaering')} tekst={t('eksamen.eksamen.merOpplaeringTekst')} />
                     </li>
                   </ul>
                 </section>
               )}
               <section>
-                <h2 class="liten-overskrift">{t('vurdering.eksamen.videre')}</h2>
+                <h2 class="liten-overskrift">{t('eksamen.eksamen.videre')}</h2>
                 <ul class="vu-videre">
                   <li>
-                    <Inngang rute={klageRute} ikon="veiviser" tittel={t('vurdering.klage.kort')} tekst={t('vurdering.klage.beskrivelse')} />
+                    <Inngang rute={klageRute} ikon="veiviser" tittel={t('eksamen.klage.kort')} tekst={t('eksamen.klage.beskrivelse')} />
                   </li>
                   <li>
-                    <Inngang {...UNDERSIDER.frister} tittel={t('vurdering.frister.tittel')} tekst={t('vurdering.frister.beskrivelse')} />
+                    <Inngang {...UNDERSIDER.frister} tittel={t('eksamen.frister.tittel')} tekst={t('eksamen.frister.beskrivelse')} />
                   </li>
                   <li>
-                    <Inngang {...UNDERSIDER.provene} tittel={t('vurdering.provene.kort')} tekst={t('vurdering.provene.beskrivelse')} />
+                    <Inngang {...UNDERSIDER.provene} tittel={t('eksamen.provene.kort')} tekst={t('eksamen.provene.beskrivelse')} />
                   </li>
                 </ul>
                 <p class="dempet liten">
-                  <Ikon navn="info" class="ikon-liten" /> {t('vurdering.eksamen.fagarket')}
+                  <Ikon navn="info" class="ikon-liten" /> {t('eksamen.eksamen.fagarket')}
                 </p>
               </section>
             </>

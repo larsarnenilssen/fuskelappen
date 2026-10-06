@@ -7,6 +7,11 @@
 // prosent) og punkter på én akse fra 1 til 5 for indeksene. Hver serie har sin farge og sin form (sirkel, firkant,
 // rute), så fargen aldri står alene, og tallene står som tekst ved siden av. Året før er en strek (mobbing) eller en
 // ring (indeksene). Skjermede tall vises som «Skjermet», aldri som et tall. Tabellen viser alle tallene.
+//
+// Runde 5 (eier 06.10.2026): «Kort om» skolen (ellers fylket) øverst, med mobbing og de tre sterkeste og svakeste
+// indeksene mot landet. Delene har overskrifter som kan lukkes, og boksene under «Mobbing» er lukket fra start. På
+// skrivebord står mobbingen og «Om tallene» til venstre og læringsmiljøet til høyre. Bedre og svakere enn året før er
+// grønt og rødt, med pil og tekst, så fargen aldri står alene.
 import { useEffect, useId, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { fylker as alleFylker, fylkesnavn } from '../../../app/Stedmerknad.tsx';
@@ -14,14 +19,31 @@ import { type T, usePrivatskole, useTekst, useTilstand } from '../../../app/tils
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { useHusketApen } from '../../../components/husket.ts';
 import { Kildeboks } from '../../../components/Kildeboks.tsx';
+import { Seksjon } from '../../../components/Seksjon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { lastElevundersokelsen } from '../../../data/elevundersokelsen.ts';
 import type { Eierform, Elevundersokelsen as Data, Verdi } from '../elevundersokelsen/skjema.ts';
-import { antall, endring, MAKS_SERIER, mobbeskala, type Serie, serieFra, serieTekst, skolerIFylket, standardSerier, standardTrinn, verdi } from '../elevundersokelsen/visning.ts';
+import {
+  antall,
+  egenSerie,
+  endring,
+  type Fakta,
+  MAKS_SERIER,
+  mobbeskala,
+  retning,
+  type Serie,
+  serieFra,
+  serieTekst,
+  skolerIFylket,
+  standardSerier,
+  standardTrinn,
+  sterkestOgSvakest,
+  verdi,
+} from '../elevundersokelsen/visning.ts';
 import { elevundersokelsenRute } from '../innhold.ts';
 
 const UDIR_SKJERMING = 'https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/visning-av-resultater-og-skjermingsregler/';
@@ -101,89 +123,211 @@ function Verditekst({ v, prosent = false }: { v: Verdi; prosent?: boolean }) {
   return <span class="tall">{prosent ? t('skolemiljo.elevundersokelsen.prosent', { verdi: tallTekst(v) }) : tallTekst(v)}</span>;
 }
 
-/** «+0,4 fra året før» eller «som året før». For mobbing er nedgang bra, men endringen står uten farge. */
-function Endring({ naa, foer, prosent = false }: { naa: Verdi; foer: Verdi; prosent?: boolean }) {
+/** Pil opp eller ned, grønn for bedre og rød for svakere, med teksten for skjermlesere. Ingen pil uten endring. */
+function Pil({ r, tekst }: { r: 'bedre' | 'svakere' | null; tekst: string }) {
+  if (!r) return null;
+  return (
+    <span class={`eu-pil eu-${r}`}>
+      <span aria-hidden="true">{r === 'bedre' ? '▲' : '▼'}</span>
+      <span class="skjult-visuelt"> {tekst}</span>
+    </span>
+  );
+}
+
+/** «▲ +0,4 fra året før» eller «som året før». Bedre er grønt og svakere rødt; for mobbing er nedgang bedre. */
+function Endring({ naa, foer, type, kort = false }: { naa: Verdi; foer: Verdi; type: 'mobbing' | 'indeks'; kort?: boolean }) {
   const { t } = useTekst();
   const e = endring(naa, foer);
   if (e === null) return null;
   if (e === 0) return <span class="eu-endring">{t('skolemiljo.elevundersokelsen.uendret')}</span>;
+  const r = retning(type, e);
+  // Kort under stolpene: bare pilen og tallet («▲ −0,6»). Pilen har teksten for skjermlesere.
+  if (kort) {
+    return (
+      <span class={`eu-endring eu-${r ?? 'lik'}`}>
+        <Pil r={r} tekst={t(r === 'bedre' ? 'skolemiljo.elevundersokelsen.bedreFjor' : 'skolemiljo.elevundersokelsen.svakereFjor')} /> {`${e > 0 ? '+' : '−'}${tallTekst(Math.abs(e))}`}
+      </span>
+    );
+  }
   // Endringen i en andel er prosentpoeng, ikke prosent.
-  const verdiTekst = prosent ? t('skolemiljo.elevundersokelsen.prosentpoeng', { verdi: tallTekst(Math.abs(e)) }) : tallTekst(Math.abs(e));
-  return <span class="eu-endring">{t('skolemiljo.elevundersokelsen.endring', { tegn: e > 0 ? '+' : '−', verdi: verdiTekst })}</span>;
+  const verdiTekst = type === 'mobbing' ? t('skolemiljo.elevundersokelsen.prosentpoeng', { verdi: tallTekst(Math.abs(e)) }) : tallTekst(Math.abs(e));
+  return (
+    <span class={`eu-endring eu-${r ?? 'lik'}`}>
+      <Pil r={r} tekst={t(r === 'bedre' ? 'skolemiljo.elevundersokelsen.bedreFjor' : 'skolemiljo.elevundersokelsen.svakereFjor')} />{' '}
+      {t('skolemiljo.elevundersokelsen.endring', { tegn: e > 0 ? '+' : '−', verdi: verdiTekst })}
+    </span>
+  );
 }
 
-/** Nøkkeltallene: «Mobbing på skolen» for hver serie, med endringen fra året før. */
-function Nokkeltall({ d, serier, trinn, kode, navn }: { d: Data; serier: readonly Serie[]; trinn: number; kode: string; navn: string }) {
+/** Forskjellen mot det serien sammenlignes med: «▲ +0,2», grønn når den er bedre, rød når den er svakere. */
+function Forskjell({ forskjell, type, mot }: { forskjell: number; type: 'mobbing' | 'indeks'; mot: string }) {
   const { t } = useTekst();
-  const naa = d.skolear.length - 1;
+  const r = retning(type, forskjell);
+  const tall = `${forskjell > 0 ? '+' : forskjell < 0 ? '−' : '±'}${tallTekst(Math.abs(forskjell))}`;
   return (
-    <section class="eu-nokkeltall" aria-label={navn}>
-      <h2 class="liten-overskrift">{navn}</h2>
-      <ul class="eu-fliser">
-        {serier.map((s, i) => {
-          const v = verdi(d, s, kode, naa, trinn);
-          const f = verdi(d, s, kode, naa - 1, trinn);
-          return (
-            <li key={nokkelFor(s)} class="eu-flis">
-              <span class="eu-flis-navn">
-                <Merke nr={i} />
-                {seriensNavn(d, s, t)}
-              </span>
-              <span class="eu-flis-tall">
-                <Verditekst v={v} prosent />
-              </span>
-              <span class="eu-flis-under">
-                {typeof f === 'number' && <>{t('skolemiljo.elevundersokelsen.iFjor', { verdi: t('skolemiljo.elevundersokelsen.prosent', { verdi: tallTekst(f) }) })} · </>}
-                <Endring naa={v} foer={f} prosent />
-              </span>
-            </li>
-          );
-        })}
-      </ul>
-    </section>
+    <span class={`eu-forskjell eu-${r ?? 'lik'}`}>
+      <Pil r={r} tekst={t(r === 'bedre' ? 'skolemiljo.elevundersokelsen.bedreEnn' : 'skolemiljo.elevundersokelsen.svakereEnn', { mot })} />{' '}
+      {type === 'mobbing' ? t('skolemiljo.elevundersokelsen.prosentpoeng', { verdi: tall }) : tall}
+    </span>
   );
 }
 
 const nokkelFor = (s: Serie) => `${s.enhet}|${s.eierform}`;
 
-/** Mobbing: liggende stolper fra null, en per serie, med en strek for året før og tallet ved siden av. */
-function Mobbing({ d, serier, trinn, koder }: { d: Data; serier: readonly Serie[]; trinn: number; koder: readonly string[] }) {
+/**
+ * Én boks under «Mobbing»: tittelen og tallene for seriene står i knappen, og stolpene vises når boksen åpnes. Boksene
+ * er lukket fra start (eier 06.10.2026) og husker om de er åpne (avgjørelse 072).
+ */
+function Mobbeboks({ d, serier, trinn, kode, maks }: { d: Data; serier: readonly Serie[]; trinn: number; kode: string; maks: number }) {
   const { t } = useTekst();
+  const [apen, settApen] = useHusketApen(`eu-mobbing:${kode}`, false);
+  const id = useId();
   const naa = d.skolear.length - 1;
-  const maks = mobbeskala(d, serier, koder, trinn);
   const pst = (v: number) => `${(v / maks) * 100}%`;
   return (
-    <section>
-      <h2 class="liten-overskrift">{t('skolemiljo.elevundersokelsen.mobbing')}</h2>
+    <div class="eu-figur eu-mobbeboks">
+      <h3 class="eu-boks-overskrift">
+        <button type="button" class="eu-boks-knapp" aria-expanded={apen} aria-controls={id} onClick={() => settApen(!apen)}>
+          <span class="eu-figur-tittel">{kortnavn(d, kode, t)}</span>
+          <span class="eu-sammendrag">
+            {serier.map((s, i) => (
+              <span key={nokkelFor(s)} class="eu-sammendrag-verdi">
+                <Merke nr={i} />
+                <span class="skjult-visuelt">{seriensNavn(d, s, t)}: </span>
+                <Verditekst v={verdi(d, s, kode, naa, trinn)} prosent />
+              </span>
+            ))}
+          </span>
+          <Ikon navn={apen ? 'opp' : 'ned'} class="ikon-liten eu-boks-pil" />
+        </button>
+      </h3>
+      <ul id={id} class="eu-stolper" hidden={!apen}>
+        {serier.map((s, i) => {
+          const v = verdi(d, s, kode, naa, trinn);
+          const f = verdi(d, s, kode, naa - 1, trinn);
+          return (
+            <li key={nokkelFor(s)} class="eu-stolperad">
+              <span class="eu-stolpe-navn">
+                <Merke nr={i} />
+                <span class="eu-stolpe-navn-tekst">{seriensNavn(d, s, t)}</span>
+              </span>
+              <span class="eu-spor" aria-hidden="true" title={`${seriensNavn(d, s, t)}: ${typeof v === 'number' ? tallTekst(v) : ''}`}>
+                {typeof v === 'number' && <span class="eu-stolpe" data-serie={i + 1} style={{ width: pst(v) }} />}
+                {typeof f === 'number' && <span class="eu-fjor" style={{ left: pst(f) }} />}
+              </span>
+              <span class="eu-stolpe-tall">
+                <Verditekst v={v} prosent />
+                {typeof f === 'number' && <span class="eu-fjor-tekst">{t('skolemiljo.elevundersokelsen.iFjor', { verdi: tallTekst(f) })}</span>}
+                <Endring naa={v} foer={f} type="mobbing" kort />
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+/** Mobbing: en boks per spørsmål med tallene i overskriften og liggende stolper fra null når den åpnes. */
+function Mobbing({ d, serier, trinn, koder }: { d: Data; serier: readonly Serie[]; trinn: number; koder: readonly string[] }) {
+  const { t } = useTekst();
+  const maks = mobbeskala(d, serier, koder, trinn);
+  return (
+    <Seksjon id="eu-mobbing" tittel={t('skolemiljo.elevundersokelsen.mobbing')} apen>
       <p class="dempet liten">{t('skolemiljo.elevundersokelsen.mobbingTekst')}</p>
       {koder.map((kode) => (
-        <figure key={kode} class="eu-figur">
-          <figcaption class="eu-figur-tittel">{kortnavn(d, kode, t)}</figcaption>
-          <ul class="eu-stolper">
-            {serier.map((s, i) => {
-              const v = verdi(d, s, kode, naa, trinn);
-              const f = verdi(d, s, kode, naa - 1, trinn);
-              return (
-                <li key={nokkelFor(s)} class="eu-stolperad">
-                  <span class="eu-stolpe-navn">
-                    <Merke nr={i} />
-                    <span class="eu-stolpe-navn-tekst">{seriensNavn(d, s, t)}</span>
-                  </span>
-                  <span class="eu-spor" aria-hidden="true" title={`${seriensNavn(d, s, t)}: ${typeof v === 'number' ? tallTekst(v) : ''}`}>
-                    {typeof v === 'number' && <span class="eu-stolpe" data-serie={i + 1} style={{ width: pst(v) }} />}
-                    {typeof f === 'number' && <span class="eu-fjor" style={{ left: pst(f) }} />}
-                  </span>
-                  <span class="eu-stolpe-tall">
-                    <Verditekst v={v} prosent />
-                    {typeof f === 'number' && <span class="eu-fjor-tekst">{t('skolemiljo.elevundersokelsen.iFjor', { verdi: tallTekst(f) })}</span>}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
-        </figure>
+        <Mobbeboks key={kode} d={d} serier={serier} trinn={trinn} kode={kode} maks={maks} />
       ))}
-    </section>
+    </Seksjon>
+  );
+}
+
+/** Navnet på det serien sammenlignes med, midt i en setning: «hele landet», men «Vestland». */
+const iSetning = (navn: string, s: Serie) => (s.enhet === 'L' ? navn.charAt(0).toLowerCase() + navn.slice(1) : navn);
+
+/** En indeks i «Kort om»: navnet, tallet, tallet for landet og forskjellen. */
+function Faktarad({ d, f, mot }: { d: Data; f: Fakta; mot: string }) {
+  const { t } = useTekst();
+  return (
+    <li class="eu-faktarad">
+      <span class="eu-faktarad-navn">{kortnavn(d, f.kode, t)}</span>
+      <span class="eu-faktarad-tall">
+        <span class="tall">{tallTekst(f.verdi)}</span> <Forskjell forskjell={f.forskjell} type="indeks" mot={mot} />
+      </span>
+      <span class="eu-faktarad-mot">{t('skolemiljo.elevundersokelsen.sammenlignetMed', { mot, verdi: tallTekst(f.mot) })}</span>
+    </li>
+  );
+}
+
+/**
+ * «Kort om» skolen brukeren har valgt, ellers fylket (eier 06.10.2026): mobbing på skolen og de tre indeksene der
+ * tallene ligger mest over og mest under landet (privatskolene i landet med «Privatskole» valgt), for trinnet.
+ */
+function KortOm({ d, egen, mot, trinn, mobbekode, indekskoder }: { d: Data; egen: Serie | null; mot: Serie; trinn: number; mobbekode: string | undefined; indekskoder: readonly string[] }) {
+  const { t } = useTekst();
+  if (!egen) {
+    return (
+      <p class="eu-kort-tom">
+        {t('skolemiljo.elevundersokelsen.velgSkole')} <a href="#/innstillinger">{t('skolemiljo.elevundersokelsen.tilInnstillinger')}</a>
+      </p>
+    );
+  }
+  const naa = d.skolear.length - 1;
+  const navn = seriensNavn(d, egen, t);
+  const motNavn = seriensNavn(d, mot, t);
+  const trinnTekst = t(`skolemiljo.elevundersokelsen.trinnValg.t${trinn}` as Tekstnokkel);
+  const { sterkest, svakest } = sterkestOgSvakest(d, egen, mot, indekskoder, trinn);
+  const mobbing = mobbekode ? verdi(d, egen, mobbekode, naa, trinn) : null;
+  const mobbingMot = mobbekode ? verdi(d, mot, mobbekode, naa, trinn) : null;
+  const mobbingFoer = mobbekode ? verdi(d, egen, mobbekode, naa - 1, trinn) : null;
+  const tom = sterkest.length === 0 && typeof mobbing !== 'number';
+  return (
+    <Seksjon id="eu-kort" tittel={t('skolemiljo.elevundersokelsen.kortOm', { navn })} apen>
+      <p class="dempet liten">{t('skolemiljo.elevundersokelsen.kortOmTekst', { trinn: trinnTekst, naa: d.skolear[naa]?.replace('-', '–') ?? '', mot: iSetning(motNavn, mot) })}</p>
+      {tom ? (
+        <p>{t('skolemiljo.elevundersokelsen.ingenFakta', { navn, trinn: trinnTekst })}</p>
+      ) : (
+        <div class="eu-kort">
+          {mobbekode && (
+            <div class="eu-kort-del eu-kort-mobbing">
+              <h3 class="eu-undertittel">{kortnavn(d, mobbekode, t)}</h3>
+              <p class="eu-flis-tall">
+                <Verditekst v={mobbing} prosent />
+              </p>
+              {typeof mobbing === 'number' && typeof mobbingMot === 'number' && (
+                <p class="eu-flis-under">
+                  {t('skolemiljo.elevundersokelsen.sammenlignetMed', { mot: motNavn, verdi: t('skolemiljo.elevundersokelsen.prosent', { verdi: tallTekst(mobbingMot) }) })} ·{' '}
+                  <Forskjell forskjell={Math.round((mobbing - mobbingMot) * 10) / 10} type="mobbing" mot={iSetning(motNavn, mot)} />
+                </p>
+              )}
+              <p class="eu-flis-under">
+                <Endring naa={mobbing} foer={mobbingFoer} type="mobbing" />
+              </p>
+            </div>
+          )}
+          {sterkest.length > 0 && (
+            <div class="eu-kort-del">
+              <h3 class="eu-undertittel">{t('skolemiljo.elevundersokelsen.sterkest')}</h3>
+              <ol class="eu-faktaliste">
+                {sterkest.map((f) => (
+                  <Faktarad key={f.kode} d={d} f={f} mot={motNavn} />
+                ))}
+              </ol>
+            </div>
+          )}
+          {svakest.length > 0 && (
+            <div class="eu-kort-del">
+              <h3 class="eu-undertittel">{t('skolemiljo.elevundersokelsen.svakest')}</h3>
+              <ol class="eu-faktaliste">
+                {svakest.map((f) => (
+                  <Faktarad key={f.kode} d={d} f={f} mot={motNavn} />
+                ))}
+              </ol>
+            </div>
+          )}
+        </div>
+      )}
+    </Seksjon>
   );
 }
 
@@ -206,8 +350,7 @@ function Indekser({ d, serier, trinn, koder }: { d: Data; serier: readonly Serie
     </div>
   );
   return (
-    <section>
-      <h2 class="liten-overskrift">{t('skolemiljo.elevundersokelsen.indekser')}</h2>
+    <Seksjon id="eu-indekser" tittel={t('skolemiljo.elevundersokelsen.indekser')} apen>
       <p class="dempet liten">{t('skolemiljo.elevundersokelsen.indekserTekst')}</p>
       <figure class="eu-figur eu-indekser">
         <div class="eu-indeksrad eu-indeksrad-akse">
@@ -264,7 +407,7 @@ function Indekser({ d, serier, trinn, koder }: { d: Data; serier: readonly Serie
           </div>
         ))}
       </figure>
-    </section>
+    </Seksjon>
   );
 }
 
@@ -282,7 +425,10 @@ function beskrivelse(kode: string, t: T): string | null {
   return tekst !== nokkel ? tekst : null;
 }
 
-/** Alle tallene i en tabell: en rad per spørsmål og en kolonne per serie, med året før i parentes. */
+/**
+ * Alle tallene i en tabell: en rad per spørsmål og en kolonne per serie, med året før i parentes og en pil for bedre
+ * eller svakere. Kolonnene for seriene er like brede (eier 06.10.2026), og radene har ledelinjer.
+ */
 function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]; trinn: number }) {
   const { t } = useTekst();
   const naa = d.skolear.length - 1;
@@ -292,6 +438,12 @@ function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]
         <caption>
           {t('skolemiljo.elevundersokelsen.tabellTittel', { trinn: t(`skolemiljo.elevundersokelsen.trinnValg.t${trinn}` as Tekstnokkel), naa: d.skolear[naa]?.replace('-', '–') ?? '' })}
         </caption>
+        <colgroup>
+          <col class="eu-tabell-forste" />
+          {serier.map((s) => (
+            <col key={nokkelFor(s)} />
+          ))}
+        </colgroup>
         <thead>
           <tr>
             <th scope="col">{t('skolemiljo.elevundersokelsen.sporsmal')}</th>
@@ -310,9 +462,11 @@ function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]
                 const v = verdi(d, s, q.kode, naa, trinn);
                 const f = verdi(d, s, q.kode, naa - 1, trinn);
                 const n = antall(d, s, q.kode, naa, trinn);
+                const r = retning(q.type, endring(v, f));
                 return (
-                  <td key={nokkelFor(s)} class="tall">
+                  <td key={nokkelFor(s)} class={`tall${r ? ` eu-${r}` : ''}`}>
                     <Verditekst v={v} prosent={q.type === 'mobbing'} />
+                    <Pil r={r} tekst={t(r === 'bedre' ? 'skolemiljo.elevundersokelsen.bedreFjor' : 'skolemiljo.elevundersokelsen.svakereFjor')} />
                     {typeof f === 'number' && <span class="eu-fjor-tekst"> ({tallTekst(f)})</span>}
                     {typeof n === 'number' && <span class="eu-antall">{t('skolemiljo.elevundersokelsen.antall', { antall: formaterTall(n, 0) })}</span>}
                   </td>
@@ -322,6 +476,7 @@ function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]
           ))}
         </tbody>
       </table>
+      <p class="dempet liten eu-tabell-forklaring">{t('skolemiljo.elevundersokelsen.tabellForklaring')}</p>
     </div>
   );
 }
@@ -366,6 +521,9 @@ export default function Elevundersokelsen({ sporring }: { sporring: URLSearchPar
   const mobbekoder = data?.sporsmal.filter((q) => q.type === 'mobbing').map((q) => q.kode) ?? [];
   const indekskoder = data?.sporsmal.filter((q) => q.type === 'indeks').map((q) => q.kode) ?? [];
   const naa = data ? data.skolear.length - 1 : 0;
+  // «Kort om»: skolen brukeren har valgt, ellers fylket, mot landet (privatskolene i landet med «Privatskole» valgt).
+  const egen = data ? egenSerie(data, { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null }) : null;
+  const mot: Serie = { enhet: 'L', eierform: privatskole && egen?.enhet.startsWith('S') ? 'p' : 'a' };
 
   return (
     <div class="side side-bred">
@@ -415,46 +573,56 @@ export default function Elevundersokelsen({ sporring }: { sporring: URLSearchPar
               {t('skolemiljo.elevundersokelsen.skolear', { naa: data.skolear[naa]?.replace('-', '–') ?? '', foer: data.skolear[naa - 1]?.replace('-', '–') ?? '' })}
             </p>
           </section>
-          {mobbekoder[0] && <Nokkeltall d={data} serier={serier} trinn={trinn} kode={mobbekoder[0]} navn={kortnavn(data, mobbekoder[0], t)} />}
-          <ToKolonner
-            hoved={
-              vis === 'tabell' ? (
+          {/*
+            Delene i et rutenett (eier 06.10.2026): på mobil under hverandre i rekkefølgen her, på skrivebord «Kort om»
+            over hele bredden, mobbingen og «Om tallene» til venstre, og læringsmiljøet og kildene til høyre. Tabellen
+            står over hele bredden.
+          */}
+          <div class={`eu-oppsett${vis === 'tabell' ? ' eu-oppsett-tabell' : ''}`}>
+            <div class="eu-del eu-del-kort">
+              <KortOm d={data} egen={egen} mot={mot} trinn={trinn} mobbekode={mobbekoder[0]} indekskoder={indekskoder} />
+            </div>
+            {vis === 'tabell' ? (
+              <div class="eu-del eu-del-tabell">
                 <Tabellvisning d={data} serier={serier} trinn={trinn} />
-              ) : (
-                <>
-                  <Mobbing d={data} serier={serier} trinn={trinn} koder={mobbekoder} />
-                  <Indekser d={data} serier={serier} trinn={trinn} koder={indekskoder} />
-                </>
-              )
-            }
-            side={
+              </div>
+            ) : (
               <>
-                <section>
-                  <h2 class="liten-overskrift">{t('skolemiljo.elevundersokelsen.omTallene')}</h2>
-                  <ul class="eu-om">
-                    <li>{t('skolemiljo.elevundersokelsen.om.kilde')}</li>
-                    <li>{t('skolemiljo.elevundersokelsen.om.trinn')}</li>
-                    <li>{t('skolemiljo.elevundersokelsen.om.skjermet')}</li>
-                    <li>{t('skolemiljo.elevundersokelsen.om.eierform')}</li>
-                    <li>{t('skolemiljo.elevundersokelsen.om.ingenEnkeltelever')}</li>
-                  </ul>
-                  <p>
-                    <a class="ekstern-lenke" href={UDIR_SKJERMING} target="_blank" rel="noopener noreferrer">
-                      {t('skolemiljo.elevundersokelsen.skjermingsregler')}
-                      <Ikon navn="ekstern" class="ikon-liten" />
-                    </a>
-                  </p>
-                  <p>
-                    <a class="ekstern-lenke" href={UDIR_STATISTIKK} target="_blank" rel="noopener noreferrer">
-                      {t('skolemiljo.elevundersokelsen.statistikkbanken')}
-                      <Ikon navn="ekstern" class="ikon-liten" />
-                    </a>
-                  </p>
-                </section>
-                <Kildeboks kilder={[{ id: 'udir-elevundersokelsen', punkt: `${data.skolear.map((a) => a.replace('-', '–')).join(' og ')}` }]} nokkel="elevundersokelsen" />
+                <div class="eu-del eu-del-mobbing">
+                  <Mobbing d={data} serier={serier} trinn={trinn} koder={mobbekoder} />
+                </div>
+                <div class="eu-del eu-del-indekser">
+                  <Indekser d={data} serier={serier} trinn={trinn} koder={indekskoder} />
+                </div>
               </>
-            }
-          />
+            )}
+            <div class="eu-del eu-del-om">
+              <Seksjon id="eu-om" tittel={t('skolemiljo.elevundersokelsen.omTallene')}>
+                <ul class="eu-om">
+                  <li>{t('skolemiljo.elevundersokelsen.om.kilde')}</li>
+                  <li>{t('skolemiljo.elevundersokelsen.om.trinn')}</li>
+                  <li>{t('skolemiljo.elevundersokelsen.om.skjermet')}</li>
+                  <li>{t('skolemiljo.elevundersokelsen.om.eierform')}</li>
+                  <li>{t('skolemiljo.elevundersokelsen.om.ingenEnkeltelever')}</li>
+                </ul>
+                <p>
+                  <a class="ekstern-lenke" href={UDIR_SKJERMING} target="_blank" rel="noopener noreferrer">
+                    {t('skolemiljo.elevundersokelsen.skjermingsregler')}
+                    <Ikon navn="ekstern" class="ikon-liten" />
+                  </a>
+                </p>
+                <p>
+                  <a class="ekstern-lenke" href={UDIR_STATISTIKK} target="_blank" rel="noopener noreferrer">
+                    {t('skolemiljo.elevundersokelsen.statistikkbanken')}
+                    <Ikon navn="ekstern" class="ikon-liten" />
+                  </a>
+                </p>
+              </Seksjon>
+            </div>
+            <div class="eu-del eu-del-kilder">
+              <Kildeboks kilder={[{ id: 'udir-elevundersokelsen', punkt: `${data.skolear.map((a) => a.replace('-', '–')).join(' og ')}` }]} nokkel="elevundersokelsen" />
+            </div>
+          </div>
         </>
       )}
     </div>

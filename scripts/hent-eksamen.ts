@@ -13,7 +13,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { type Eksamensdatoer, eksamensdatoerSkjema } from '../src/modules/vurdering/eksamen/skjema.ts';
+import { type Eksamensdatoer, eksamensdatoerSkjema } from '../src/modules/eksamen/eksamensdatoer/skjema.ts';
 import { lesForrige, skrivEndringer, skrivHvisEndret } from './data/hent.ts';
 import { EKSAMENSKILDER } from './eksamen/kilder.ts';
 import { type Kandidat, lesKilde, slaSammen } from './eksamen/les.ts';

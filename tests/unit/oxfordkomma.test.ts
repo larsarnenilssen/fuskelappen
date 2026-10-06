@@ -41,8 +41,8 @@ const unntak: { fil: string; utdrag: string }[] = [
   { fil: 'src/strings/moduler/opplaeringslop.nb.ts', utdrag: ', et fremmedspråk, eller' },
   { fil: 'src/strings/moduler/opplaeringslop.nn.ts', utdrag: ', eit framandspråk, eller' },
   // Siste ledd er selv en oppramsing («utsatt, ny og særskilt eksamen»).
-  { fil: 'src/strings/moduler/vurdering.nb.ts', utdrag: ', særskilt tilrettelegging, og' },
-  { fil: 'src/strings/moduler/vurdering.nn.ts', utdrag: ', særskild tilrettelegging, og' },
+  { fil: 'src/strings/moduler/eksamen.nb.ts', utdrag: ', særskilt tilrettelegging, og' },
+  { fil: 'src/strings/moduler/eksamen.nn.ts', utdrag: ', særskild tilrettelegging, og' },
 ];
 
 /** Utdragene i en tekst som ser ut som en oppramsing med komma foran siste «og»/«eller». */

@@ -2,9 +2,9 @@
 // (Udir går foran, ellers minst to fylker), når datoene hentes, og hvordan de settes inn i fristene for skoleåret.
 import { describe, expect, it } from 'vitest';
 import type { Frist } from '../../src/core/innhold/skjema.ts';
-import { finnDato, medEksamensdatoer, stidatoer } from '../../src/modules/vurdering/eksamen/datoer.ts';
-import type { Eksamensdatoer } from '../../src/modules/vurdering/eksamen/skjema.ts';
-import { eksamensdatoerSkjema } from '../../src/modules/vurdering/eksamen/skjema.ts';
+import { finnDato, medEksamensdatoer, stidatoer } from '../../src/modules/eksamen/eksamensdatoer/datoer.ts';
+import type { Eksamensdatoer } from '../../src/modules/eksamen/eksamensdatoer/skjema.ts';
+import { eksamensdatoerSkjema } from '../../src/modules/eksamen/eksamensdatoer/skjema.ts';
 import { EKSAMENSKILDER } from '../../scripts/eksamen/kilder.ts';
 import { type Eksamenskilde, type Kandidat, lesDatoer, lesKilde, slaSammen } from '../../scripts/eksamen/les.ts';
 import { sammenlign, sidetekst } from '../../scripts/hent-eksamen.ts';

@@ -87,3 +87,46 @@ export function skolerIFylket(d: Elevundersokelsen, fylke: string): { enhet: str
     .map(([enhet, e]) => ({ enhet, navn: e.navn }))
     .sort((a, b) => a.navn.localeCompare(b.navn, 'nb'));
 }
+
+/**
+ * Om endringen er bedre eller svakere (eier 06.10.2026). For mobbing er lavere bedre, for indeksene høyere. En endring
+ * som rundes til 0, er ingen av delene.
+ */
+export function retning(type: 'mobbing' | 'indeks', forskjell: number | null): 'bedre' | 'svakere' | null {
+  if (forskjell === null || forskjell === 0) return null;
+  return (type === 'mobbing' ? forskjell < 0 : forskjell > 0) ? 'bedre' : 'svakere';
+}
+
+/** Skolen brukeren har valgt, ellers fylket, når dataene har tall for den (kvikke fakta, eier 06.10.2026). */
+export function egenSerie(d: Elevundersokelsen, valg: { fylke: string | null; skole: string | null }): Serie | null {
+  const skole: Serie | null = valg.skole ? { enhet: `S${valg.skole}`, eierform: 'a' } : null;
+  if (skole && finnes(d, skole)) return skole;
+  const fylke: Serie | null = valg.fylke ? { enhet: `F${valg.fylke}`, eierform: 'a' } : null;
+  return fylke && finnes(d, fylke) ? fylke : null;
+}
+
+export interface Fakta {
+  kode: string;
+  verdi: number;
+  /** Verdien for det serien sammenlignes med. */
+  mot: number;
+  /** Verdien minus det den sammenlignes med, avrundet til én desimal. */
+  forskjell: number;
+}
+
+/**
+ * De tre indeksene der serien ligger mest over og mest under den den sammenlignes med (normalt landet), siste skoleår
+ * og for trinnet. Med færre enn seks indekser med tall deles de i to. Skjermede tall og tall som mangler, er ikke med.
+ */
+export function sterkestOgSvakest(d: Elevundersokelsen, serie: Serie, mot: Serie, koder: readonly string[], trinn: number): { sterkest: Fakta[]; svakest: Fakta[] } {
+  const siste = d.skolear.length - 1;
+  const alle: Fakta[] = [];
+  for (const kode of koder) {
+    const v = verdi(d, serie, kode, siste, trinn);
+    const m = verdi(d, mot, kode, siste, trinn);
+    if (typeof v === 'number' && typeof m === 'number') alle.push({ kode, verdi: v, mot: m, forskjell: Math.round((v - m) * 10) / 10 });
+  }
+  alle.sort((a, b) => b.forskjell - a.forskjell || b.verdi - a.verdi || a.kode.localeCompare(b.kode));
+  const antallHver = Math.min(3, Math.floor(alle.length / 2));
+  return { sterkest: alle.slice(0, antallHver), svakest: antallHver === 0 ? [] : alle.slice(-antallHver).reverse() };
+}

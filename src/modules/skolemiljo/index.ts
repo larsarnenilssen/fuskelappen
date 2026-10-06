@@ -46,12 +46,6 @@ export const manifest: Modulmanifest = {
         .map((v) => ({ id: `skolemiljo:${v.id}`, type: 'veiviser' as const, tittel: v.tittel, tekst: v.tekst, stikkord: v.stikkord, rute: veiviserRute(v.id), modul: 'skolemiljo' })),
     ];
   },
-  // Tre bokser på forsiden under Skolemiljø (eier 06.10.2026): veiviseren, skolereglene og Elevundersøkelsen.
-  innganger: [
-    { id: 'skolemiljo:aktivitetsplikten', tittel: 'skolemiljo.aktivitetsplikten.tittel', beskrivelse: 'skolemiljo.aktivitetsplikten.beskrivelse', rute: veiviserRute('aktivitetsplikten'), ikon: 'veiviser' },
-    { id: 'skolemiljo:skoleregler', tittel: 'skolemiljo.skoleregler.kort', beskrivelse: 'skolemiljo.skoleregler.beskrivelse', rute: skolereglerRute, ikon: UNDERSIDER.skoleregler.ikon },
-    { id: 'skolemiljo:elevundersokelsen', tittel: 'skolemiljo.elevundersokelsen.kort', beskrivelse: 'skolemiljo.elevundersokelsen.beskrivelse', rute: elevundersokelsenRute, ikon: UNDERSIDER.elevundersokelsen.ikon },
-  ],
   undersider: Object.values(UNDERSIDER),
   async favorittbare() {
     const { veivisere } = await hentInnhold();

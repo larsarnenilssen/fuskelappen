@@ -111,6 +111,11 @@ describe('lagring', () => {
     expect(lesValg(lager, 'lopvisning')).toBeNull();
   });
 
+  it('gir favoritter til sider som er flyttet, den nye id-en, én gang (avgjørelse 078)', () => {
+    const data = migrer({ ...standard(), favoritter: ['vurdering:eksamen', 'eksamen:eksamen', 'vurdering:klage-pa-karakter', 'vurdering:fravaer'] });
+    expect(data?.favoritter).toEqual(['eksamen:eksamen', 'eksamen:klage-pa-karakter', 'vurdering:fravaer']);
+  });
+
   it('avviser data fra en nyere skjemaversjon', () => {
     expect(migrer({ ...standard(), skjemaversjon: 99 })).toBeNull();
     expect(migrer({ ...standard(), skjemaversjon: 0 })).toBeNull();

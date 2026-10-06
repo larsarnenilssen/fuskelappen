@@ -8,6 +8,7 @@ import { kalenderNn } from './moduler/kalender.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
+import { eksamenNn } from './moduler/eksamen.nn.ts';
 import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
@@ -388,7 +389,7 @@ export const nn: Tekster = {
     },
     skolemiljo: {
       navn: 'Skulemiljø',
-      beskrivelse: 'Aktivitetsplikta, skulereglar og reaksjonar.',
+      beskrivelse: 'Aktivitetsplikta, skulereglar og Elevundersøkinga.',
     },
     tilrettelegging: {
       navn: 'Tilrettelegging',
@@ -396,7 +397,11 @@ export const nn: Tekster = {
     },
     vurdering: {
       navn: 'Vurdering',
-      beskrivelse: 'Undervegs- og sluttvurdering, grunnlag, fråvær og eksamen.',
+      beskrivelse: 'Undervegs- og sluttvurdering, grunnlag, fråvær og orden.',
+    },
+    eksamen: {
+      navn: 'Eksamen og klage',
+      beskrivelse: 'Eksamen, fag- og sveineprøva, klage på karakter og datoane.',
     },
     laereplanverket: {
       navn: 'Overordna del',
@@ -441,6 +446,7 @@ export const nn: Tekster = {
   tilrettelegging: tilretteleggingNn,
   skolemiljo: skolemiljoNn,
   vurdering: vurderingNn,
+  eksamen: eksamenNn,
   inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',

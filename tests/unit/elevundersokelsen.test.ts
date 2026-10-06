@@ -5,7 +5,8 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { byggResultater, type Rad, tall, validerResultater } from '../../scripts/elevundersokelsen/bygg.ts';
 import { elevundersokelsenSkjema } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
-import { endring, mobbeskala, serieFra, serieTekst, standardSerier, standardTrinn, verdi } from '../../src/modules/skolemiljo/elevundersokelsen/visning.ts';
+import { type Elevundersokelsen } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
+import { egenSerie, endring, mobbeskala, retning, serieFra, serieTekst, standardSerier, standardTrinn, sterkestOgSvakest, verdi } from '../../src/modules/skolemiljo/elevundersokelsen/visning.ts';
 
 const rot = join(__dirname, '../..');
 const fylker = new Set(['42', '46']);
@@ -87,6 +88,40 @@ describe('sammenligningen', () => {
   it('endringen fra året før er rundet til én desimal, og bare når begge er tall', () => {
     expect(endring(4.3, 4.1)).toBe(0.2);
     expect(endring('*', 4.1)).toBeNull();
+  });
+
+  it('bedre er lavere for mobbing og høyere for indeksene, og 0 er ingen av delene (eier 06.10.2026)', () => {
+    expect(retning('mobbing', -0.6)).toBe('bedre');
+    expect(retning('mobbing', 0.6)).toBe('svakere');
+    expect(retning('indeks', 0.1)).toBe('bedre');
+    expect(retning('indeks', -0.1)).toBe('svakere');
+    expect(retning('indeks', 0)).toBeNull();
+    expect(retning('indeks', null)).toBeNull();
+  });
+
+  it('«Kort om»: de tre mest over og mest under landet, uten skjermede tall, og skolen før fylket', () => {
+    const koder = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+    const skole = [4.4, 3.9, 4.0, 3.5, 4.1, '*', 3.8] as const;
+    const landet = [4.1, 4.0, 4.0, 3.7, 4.0, 4.0, 3.6] as const;
+    const data: Elevundersokelsen = {
+      kilde: 'test',
+      hentet: '2026-10-06',
+      skolear: ['2025-26'],
+      sporsmal: koder.map((kode) => ({ kode, navn: kode, type: 'indeks' as const })),
+      enheter: { L: { navn: 'Hele landet' }, S1: { navn: 'Skolen', fylke: '46' }, F46: { navn: 'Vestland' } },
+      verdier: {
+        'S1|a': Object.fromEntries(koder.map((k, i) => [k, [[skole[i] ?? null, null, null]]])),
+        'L|a': Object.fromEntries(koder.map((k, i) => [k, [[landet[i] ?? null, null, null]]])),
+        'F46|a': {},
+      },
+      antall: {},
+    };
+    const { sterkest, svakest } = sterkestOgSvakest(data, { enhet: 'S1', eierform: 'a' }, { enhet: 'L', eierform: 'a' }, koder, 0);
+    expect(sterkest.map((f) => [f.kode, f.forskjell])).toEqual([['A', 0.3], ['G', 0.2], ['E', 0.1]]);
+    expect(svakest.map((f) => [f.kode, f.forskjell])).toEqual([['D', -0.2], ['B', -0.1], ['C', 0]]);
+    expect(egenSerie(data, { fylke: '46', skole: '1' })).toEqual({ enhet: 'S1', eierform: 'a' });
+    expect(egenSerie(data, { fylke: '46', skole: '9' })).toEqual({ enhet: 'F46', eierform: 'a' });
+    expect(egenSerie(data, { fylke: null, skole: null })).toBeNull();
   });
 
   it.runIf(d !== null)('starter med skolen, fylket og landet, og privatskoler mot privatskolene i landet (eier 06.10.2026)', () => {
