@@ -8296,3 +8296,71 @@ a.knapp {
     margin-top: 0;
   }
 }
+
+/* ---------- Sammenligning med kilder (eier 06.10.2026) ----------
+   Tabellen og regelverket og kildene står i samme hvite boks, som i kortene, ikke rett på bakgrunnen. */
+.tosidig-boks {
+  margin: 0 0 var(--rom-5);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  background: var(--farge-flate);
+}
+
+.tosidig-boks > .tosidig {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.tosidig-fot {
+  padding: 0 var(--rom-4) var(--rom-3);
+}
+
+.tosidig-fot .kortfot {
+  margin-top: 0;
+}
+
+/* ---------- Deler av en side som kan lukkes (Seksjon, fase 6, pakke 7) ----------
+   Overskriften er en knapp over hele bredden med pil til høyre og en tynn strek under, så den leses som noe som kan
+   åpnes. En lukket del viser innholdet på én dempet linje. */
+.seksjon-overskrift {
+  margin-bottom: 0;
+}
+
+.seksjon-knapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-1) 0;
+  border: 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.seksjon-knapp:hover .seksjon-tittel {
+  text-decoration: underline;
+}
+
+.seksjon-pil {
+  flex: none;
+  color: var(--farge-lenke);
+}
+
+.seksjon-innhold {
+  margin: var(--rom-2) 0 0;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+  cursor: pointer;
+}
+
+.seksjon > [id] {
+  padding-top: var(--rom-3);
+}

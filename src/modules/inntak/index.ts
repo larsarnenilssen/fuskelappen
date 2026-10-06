@@ -39,7 +39,7 @@ export const manifest: Modulmanifest = {
       type: 'side' as const,
       tittel: begge('inntak.merOpplaering.tittel'),
       tekst: begge('inntak.merOpplaering.beskrivelse'),
-      stikkord: ['mer opplæring', 'meir opplæring', 'ikke bestått', 'ikkje bestått', 'stryk', 'IV', 'fag- eller svenneprøve', 'gjennomført', '1. mars', 'fullføringsretten'],
+      stikkord: ['mer opplæring', 'meir opplæring', 'meropplæring', 'meiropplæring', 'ikke bestått', 'ikkje bestått', 'stryk', 'IV', 'fag- eller svenneprøve', 'gjennomført', '1. mars', 'fullføringsretten'],
       rute: merOpplaeringRute,
       modul: 'inntak',
     };

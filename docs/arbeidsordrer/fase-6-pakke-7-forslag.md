@@ -54,3 +54,15 @@ Hver kilde i kortene har `punkt` og `url` til kapitlet eller avsnittet.
 5. **Privatskoler:** Udirs kapittel 6 sier at privatskoler kan tilby mer opplæring, men ikke har plikt til det og ikke kan gjøre unntak fra timetallet. Skal det med?
 
 De andre kontrollspørsmålene står ved hvert kort i YAML-filen og kommer i kontrolloversikten.
+
+## Eiers svar og runde 2 (06.10.2026)
+
+**Svar:** 1 ja («Mer opplæring på Vg3»). 4 ja (førstegangsvitnemål og tilpassede løp er med). 5 ja, som et lukket kort. 2 og 3: eier ba om en fyldigere forklaring (se under).
+
+**Endret i runde 2:**
+- **Overskriftene kan lukkes** (ny felles komponent `Seksjon`). «Hvem har rett?» og «Fra melding til ny karakter» er åpne. De andre er lukket og viser titlene på kortene under overskriften. Hva som er åpent, huskes for siden (avgjørelse 072). `?del=` åpner delen.
+- **Matrisen:** Regelverket og kildene står nederst i samme hvite boks som tabellen, som i kortene. Det samme er gjort på de to andre sidene med slike matriser: «Sammenlign» i Lærlinger og kandidater (der radene sto på bakgrunnen) og «Underveis- og sluttvurdering» (der kildene manglet).
+- **Søket:** «meropplæring» og «meiropplæring» i ett ord finner siden og begrepet.
+- **Privatskoler:** et lukket kort under «Hva retten gir», med fem punkter fra Udirs kapittel 6 (omtrent 70 ord): kan tilby, ingen plikt, plass innenfor godkjent elevtall og krav til inntak, skolens læreplan og fast timetall uten unntak, og at elevene også kan melde seg hos fylkeskommunen.
+
+**Spørsmål 2 og 3, utdypet:** står i svaret til eier i chatten og tas inn her når eier har bestemt seg.

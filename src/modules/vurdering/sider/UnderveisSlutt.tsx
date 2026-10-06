@@ -217,6 +217,8 @@ export default function UnderveisSlutt({ sporring }: SideProps) {
               venstre={t('vurdering.underveisSlutt.venstre')}
               hoyre={t('vurdering.underveisSlutt.hoyre')}
               rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
+              kilder={rader.flatMap((r) => r.kilder)}
+              nokkel="us-rad"
             />
           </section>
           <section>
