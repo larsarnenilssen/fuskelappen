@@ -4,6 +4,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Løpene i Opplæringstilbud** viser alle løp som Grep, VIGO eller utdanning.no har. Et løp som bare én kilde har, er merket «Står bare i …». Når en kilde mangler et løp de andre har, står det «Står ikke i …». Realfag på den tyske skolen nås nå fra inngangen, og seks lærefag fører videre til Vg4 påbygging.
+- **Forsiden:** Knappene er like høye, med plass til tittel og to linjer. Arbeidsplan og «Flere kalkulatorer» står sammen, og knappene under «Oppslag» er lavere. Sidekolonnen på stor skjerm har luft over seg når siden rulles.
+- **Kalenderen:** Klokkeslettet står på linjen under tittelen og vises når kortet er åpent.
+- **Søk på «kalender»** gir kalenderen og hvert tema i den, uten doble treff og uten de gamle fristlistene.
+- **Oversiktssidene** i Lov og forskrift og Opplæringstilbud har ikke lenger kildeliste. Kildene står på sidene under.
+- **Tekstene:** Ikke lenger komma foran siste «og» eller «eller» i oppramsinger.
+
 ## [0.38.0] – 2026-10-06
 
 ### Lagt til
