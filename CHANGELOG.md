@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.38.3] – 2026-10-06
+
 ### Lagt til
 
 - **Tilbake til samme sted:** Følger du en lenke under «I regelverket» eller «Kilder» og går tilbake, er kortene og radene du hadde åpne, fortsatt åpne, og siden står der du var. Det gjelder kortene i Vurdering, Lærlinger og kandidater og Kalenderen, forklaringene, veiviserne og fylkesboksen.

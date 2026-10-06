@@ -21,7 +21,7 @@ Vi starter fase 6, pakke 7 i Jukselappen: **Mer opplæring** (repo `larsarnenils
   - om lærlinger og kandidater, med elementtypene `vei` og `utgangspunkt` (069)
 
 **Status:**
-- Siste versjon er 0.38.2 (06.10.2026).
+- Siste versjon er 0.38.3 (06.10.2026).
 - Pakken tas før fase 7.
 
 **Pakken:**
