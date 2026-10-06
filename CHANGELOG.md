@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.38.1] – 2026-10-06
+
 ### Endret
 
 - **Løpene i Opplæringstilbud** viser alle løp som Grep, VIGO eller utdanning.no har. Et løp som bare én kilde har, er merket «Står bare i …». Når en kilde mangler et løp de andre har, står det «Står ikke i …». Realfag på den tyske skolen nås nå fra inngangen, og seks lærefag fører videre til Vg4 påbygging.
