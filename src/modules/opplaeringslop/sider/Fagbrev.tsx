@@ -203,9 +203,9 @@ function Sammenlign({ data, valg, endre }: { data: Veiinnhold; valg: Valg; endre
           rad('dok', t('opplaeringslop.fagbrev.dokumentasjon'), (v) => v.dokumentasjon),
           rad('voksne', t('opplaeringslop.fagbrev.voksne'), (v) => v.voksne ?? strek),
         ]}
+        // Kildene til begge veiene som lukkede rader nederst i boksen, ikke som en rad i tabellen (eier 06.10.2026).
+        kilder={[...a.kilder, ...b.kilder]}
       />
-      {/* Kildene til begge veiene som lukkede rader under sammenligningen, ikke som en rad i den (eier 06.10.2026). */}
-      <Kildefot kilder={[...a.kilder, ...b.kilder]} />
       {/* Lukket fra start: fellesfagene for de to veiene står allerede i boksen over (eier 06.10.2026, runde 2). */}
       <Lukketkort tittel={t('opplaeringslop.fagbrev.fellesfagListe')} smakebit={t('opplaeringslop.fagbrev.fellesfagListeTekst')}>
         <ul class="fb-fellesfag">

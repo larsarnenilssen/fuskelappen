@@ -69,6 +69,11 @@ export default function Provene() {
             <section>
               <h2 class="liten-overskrift">{t('vurdering.provene.ikkeBestatt')}</h2>
               <Samleboks element={nyUtsatt} tabell={nyUtsatt.tabell} />
+              <ul class="vu-videre">
+                <li>
+                  <Inngang rute="/inntak/mer-opplaering?del=mo-fagprove" ikon="igjen" tittel={t('vurdering.provene.merOpplaering')} tekst={t('vurdering.provene.merOpplaeringTekst')} />
+                </li>
+              </ul>
             </section>
           )}
           <section>

@@ -101,6 +101,11 @@ export default function Eksamen({ sporring }: SideProps) {
             <section>
               <h2 class="liten-overskrift">{t('vurdering.eksamen.ikkeBestatt')}</h2>
               <Samleboks element={utsatt} tabell={utsatt.tabell} aapen={del === utsatt.id} />
+              <ul class="vu-videre">
+                <li>
+                  <Inngang rute="/inntak/mer-opplaering" ikon="igjen" tittel={t('vurdering.eksamen.merOpplaering')} tekst={t('vurdering.eksamen.merOpplaeringTekst')} />
+                </li>
+              </ul>
             </section>
           )}
           <section>

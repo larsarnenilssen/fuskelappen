@@ -34,6 +34,17 @@ export default function Oversikt() {
             <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
           </section>
           <section>
+            <h2 class="liten-overskrift">{t('inntak.merOpplaering.tittel')}</h2>
+            <a class="frist-inngang" href={`#${UNDERSIDER.merOpplaering.rute}`}>
+              <span class="frist-inngang-tittel">
+                <Ikon navn={UNDERSIDER.merOpplaering.ikon} />
+                {t('inntak.merOpplaering.kort')}
+              </span>
+              <span class="frist-inngang-neste">{t('inntak.merOpplaering.beskrivelse')}</span>
+              <Ikon navn="hoyre" class="frist-inngang-pil" />
+            </a>
+          </section>
+          <section>
             <h2 class="liten-overskrift">{t('inntak.frister.kort')}</h2>
             {/* Kortet viser den neste fristen, så brukeren ser hva som kommer uten å åpne tidslinjen. */}
             <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>

@@ -9,6 +9,7 @@ import { Kortfot, KortfotRader } from '../../../components/Kortfot.tsx';
 import { unikeKilder } from '../../../components/kilderader.ts';
 import type { KildeRef, Veidel, Veielement } from '../../../core/innhold/skjema.ts';
 import { harKontrakt, type Veiinnhold } from '../fagbrev/data.ts';
+import { faktaoppstilling } from './faktaoppstilling.ts';
 
 const DELER: readonly Veidel[] = ['skole', 'bedrift', 'praksis', 'prove'];
 
@@ -86,24 +87,29 @@ export function Fakta({ vei, data, med = 'kort' }: { vei: Veielement; data: Veii
   const { t, malform } = useTekst();
   const alt = med === 'alt';
   const slutt = kontraktSlutt(vei, data, med);
-  const rader: [string, string | undefined, boolean][] = [
-    [t('opplaeringslop.fagbrev.kontrakt'), vei.kontrakt[malform], alt],
-    [t('opplaeringslop.fagbrev.prove'), vei.prove[malform], alt],
-    [t('opplaeringslop.fagbrev.melderOpp'), vei.melderOpp[malform], true],
-    [t('opplaeringslop.fagbrev.fellesfag'), vei.fellesfagTekst[malform], true],
-    [t('opplaeringslop.fagbrev.dokumentasjon'), vei.dokumentasjon[malform], alt],
-    [t('opplaeringslop.fagbrev.voksne'), vei.voksne?.[malform], true],
+  const rader: [string, string, string | undefined, boolean][] = [
+    ['kontrakt', t('opplaeringslop.fagbrev.kontrakt'), vei.kontrakt[malform], alt],
+    ['prove', t('opplaeringslop.fagbrev.prove'), vei.prove[malform], alt],
+    ['melderOpp', t('opplaeringslop.fagbrev.melderOpp'), vei.melderOpp[malform], true],
+    ['fellesfag', t('opplaeringslop.fagbrev.fellesfag'), vei.fellesfagTekst[malform], true],
+    ['dokumentasjon', t('opplaeringslop.fagbrev.dokumentasjon'), vei.dokumentasjon[malform], alt],
+    ['voksne', t('opplaeringslop.fagbrev.voksne'), vei.voksne?.[malform], true],
   ];
+  const synlige = rader.filter(([, , dd, vis]) => vis && dd);
+  // I «Om veien» fyller feltene hele bredden eller deler den to og to, uten tomrom (eier 06.10.2026).
+  const plass = faktaoppstilling(synlige.map(([felt]) => felt));
+  const KLASSE = { hoy: 'fb-fakta-hoy', bred: 'fb-fakta-bred' } as const;
   return (
     <dl class="fb-fakta">
-      {rader.map(([dt, dd, vis]) =>
-        vis && dd ? (
-          <div key={dt}>
+      {synlige.map(([felt, dt, dd]) => {
+        const p = plass[felt];
+        return (
+          <div key={felt} class={p ? KLASSE[p] : undefined}>
             <dt>{dt}</dt>
             <dd>{dd}</dd>
           </div>
-        ) : null,
-      )}
+        );
+      })}
       {slutt && (
         <div class="fb-fakta-bred">
           <dt>{slutt.tittel[malform]}</dt>

@@ -17,6 +17,9 @@ test.describe('inntak', () => {
     await page.getByRole('link', { name: 'Ja, vitnemål fra norsk grunnskole' }).click();
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
     await page.getByRole('link', { name: 'Nei', exact: true }).click();
+    // Fag i videregående som ikke er bestått (mer opplæring, fase 6, pakke 7).
+    await expect(steg).toHaveText(['Fag som ikke er bestått']);
+    await page.getByRole('link', { name: 'Nei', exact: true }).click();
     await page.getByRole('link', { name: 'Før skoleåret søkeren fyller 19' }).click();
     await expect(steg).toHaveText(['Ungdomsrett']);
     await page.getByRole('link', { name: 'Vg1', exact: true }).click();
@@ -25,7 +28,7 @@ test.describe('inntak', () => {
     await expect(page.locator('.veiviser-svargruppe-tittel')).toHaveText(['Fortrinnsrett', 'Uten fortrinnsrett']);
     await page.getByRole('group', { name: 'Uten fortrinnsrett' }).getByRole('link', { name: 'Konkurrerer på poeng' }).click();
     // Poeng, hvor søknaden sendes, og søknad, svar og klage står på samme side, der veien ender.
-    await expect(page).toHaveURL(/steg=sk-poeng&svar=norsk\.ja\.nei\.under19\.vg1\.poeng$/);
+    await expect(page).toHaveURL(/steg=sk-poeng&svar=norsk\.ja\.nei\.nei\.under19\.vg1\.poeng$/);
     await expect(steg).toHaveText(['Konkurrerer på poeng', 'Hvor søknaden sendes', 'Søknad, svar og klage']);
     await expect(page.locator('.veiviser-stegnr').last()).toHaveText(/^Her ender veien · Søknad/);
     // Hvert steg står i sin egen ramme på siden.
@@ -34,7 +37,7 @@ test.describe('inntak', () => {
     // På mobil viser «Veien hit» de siste valgene, og resten bak en knapp. På stor skjerm står veien i prosessen.
     if (erMobil(info)) {
       await page.getByRole('button', { name: /Vis hele veien/ }).click();
-      await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(6);
+      await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(7);
     }
     // Lenken til forrige valg under knappene er tatt bort; veien hit lenker til hvert valg (eier 04.10.2026).
     await expect(page.getByRole('link', { name: /^Tilbake til «/ })).toHaveCount(0);
@@ -46,7 +49,7 @@ test.describe('inntak', () => {
     await settLagret(page, { fylke: '46' });
     await page.goto('./#/inntak');
     await expect(page.getByText('Viser også de lokale reglene om inntak i Vestland.')).toBeVisible();
-    await page.goto(`${VEIVISER}?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng`);
+    await page.goto(`${VEIVISER}?steg=sk-poeng&svar=norsk.ja.nei.nei.under19.vg1.poeng`);
     await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Konkurrerer på poeng');
     const bokser = page.locator('.veiviser-tillegg');
     await expect(bokser).toHaveCount(3);
@@ -135,3 +138,54 @@ test.describe('poengberegning ved inntak', () => {
     await expect(navn).toHaveCount(0);
   });
 });
+
+// Mer opplæring (fase 6, pakke 7): siden i Inntak, overskriftene som kan lukkes, steget i veiviseren og søket.
+test.describe('mer opplæring', () => {
+  const SIDE = './#/inntak/mer-opplaering';
+
+  test('fra Inntak til siden: «Hvem har rett?» er åpen, og de andre delene viser kortene til de åpnes', async ({ page }) => {
+    await page.goto('./#/inntak');
+    await page.getByRole('link', { name: /Mer opplæring i fag som ikke er bestått/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Mer opplæring');
+    await expect(page.locator('.brodsmuler')).toContainText('Inntak');
+    const hvem = page.locator('.seksjon-knapp', { hasText: 'Hvem har rett?' });
+    await expect(hvem).toHaveAttribute('aria-expanded', 'true');
+    // Regelverket og kildene står nederst i samme boks som tabellen (eier 06.10.2026).
+    await expect(page.locator('.tosidig-boks .kortfot .veiviser-regelverk summary')).toContainText(/I regelverket \(\d+\)/);
+    const vurdering = page.locator('.seksjon-knapp', { hasText: 'Vurdering' });
+    await expect(vurdering).toHaveAttribute('aria-expanded', 'false');
+    const seksjon = page.locator('.seksjon', { has: vurdering });
+    await expect(seksjon.locator('.seksjon-innhold')).toContainText('Trekket til eksamen');
+    await expect(seksjon.locator('.innholdskort').first()).toBeHidden();
+    await vurdering.click();
+    await expect(vurdering).toHaveAttribute('aria-expanded', 'true');
+    await expect(seksjon.locator('.innholdskort', { hasText: 'Førstegangsvitnemål' })).toBeVisible();
+  });
+
+  test('?del= åpner delen og kortet', async ({ page }) => {
+    await page.goto(`${SIDE}?del=mo-iop-fullforing`);
+    await expect(page.locator('.seksjon-knapp', { hasText: 'Individuelt tilrettelagt opplæring' })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator('#mo-iop-fullforing .innholdskort-knapp')).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator('#mo-iop-fullforing')).toContainText('sakkyndig vurdering');
+  });
+
+  test('veiviseren spør om fag som ikke er bestått, og «Ja» ender i mer opplæring', async ({ page }) => {
+    await page.goto(`${VEIVISER}?steg=sk-ikke-bestatt&svar=norsk.ja.nei`);
+    const steg = page.locator('.veiviser-stegtittel');
+    await expect(steg).toHaveText(['Fag som ikke er bestått']);
+    await page.getByRole('link', { name: 'Ja', exact: true }).click();
+    await expect(page).toHaveURL(/steg=sk-mer-opplaering&svar=norsk\.ja\.nei\.ja$/);
+    await expect(steg).toHaveText(['Mer opplæring']);
+    await expect(page.locator('.veiviser-stegnr').last()).toHaveText(/^Her ender veien/);
+    await page.locator('.veiviser-steg').getByRole('link', { name: 'Mer opplæring', exact: true }).click();
+    await expect(page.locator('main h1')).toHaveText('Mer opplæring');
+  });
+
+  test('søk på «meropplæring» og «meiropplæring» i ett ord finner siden', async ({ page }) => {
+    for (const q of ['meropplæring', 'meiropplæring']) {
+      await page.goto(`./#/sok?q=${q}`);
+      await expect(page.getByRole('link', { name: /Mer opplæring/ }).first()).toBeVisible();
+    }
+  });
+});
+

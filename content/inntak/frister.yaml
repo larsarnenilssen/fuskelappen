@@ -154,6 +154,7 @@
 
 - id: fr-mer-opplaering
   type: frist
+  lenker: [/inntak/mer-opplaering]
   modul: inntak
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }

@@ -218,3 +218,17 @@ praksis:
     grunnlag: Eier 05.10.2026 (avgjørelse 061). Opplæringslova § 14-1 sier bare at fylkeskommunen gir forskrift om skolerute.
     berorer: [skolerute]
     bekreftet: null
+
+  - id: laerling-til-laerekandidat-etter-prove
+    tittel: Fra lærling til lærekandidat etter en prøve som ikke er bestått
+    sporsmal: Kan en lærling som ikke har bestått fag- eller svenneprøven, bytte til lærekandidat, og må lærekontrakten da fortsatt være i kraft?
+    appen: >-
+      «Bytte vei» viser en overgang fra «Fag- eller svenneprøven ikke bestått» til lærekandidat. Vilkåret er at
+      fylkeskommunen samtykker i å endre kontrakten, og teksten sier at lov og forskrift ikke har noen egen regel om
+      å bytte etter en prøve som ikke er bestått.
+    grunnlag: >-
+      Eier spurte 06.10.2026 om det stemmer. Opplæringslova § 7-2 andre ledd (kontrakten kan endres med samtykke fra
+      fylkeskommunen) og fjerde ledd (kontrakter som avviker fra det fastsatte løpet). Udirs veiledning om mer
+      opplæring nevner ikke bytte til lærekandidat.
+    berorer: [fra-prove-ikke-bestatt]
+    bekreftet: null

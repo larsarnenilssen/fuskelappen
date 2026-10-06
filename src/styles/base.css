@@ -8115,6 +8115,11 @@ a.knapp {
   .fb-om .fb-fakta > .fb-fakta-bred {
     grid-column: 1 / -1;
   }
+
+  /* Fellesfagene står over to rader til høyre, med «Melder opp» og «Dokumentasjon» under hverandre til venstre. */
+  .fb-om .fb-fakta > .fb-fakta-hoy {
+    grid-row: span 2;
+  }
 }
 
 .fb-hvor {
@@ -8274,4 +8279,97 @@ a.knapp {
 .fb-side div.ingress > p,
 .fb-merknad > p {
   margin: 0;
+}
+
+/* ---------- Mer opplæring: to kolonner på skrivebord (fase 6, pakke 7) ----------
+   Fra 64rem står retten, gangen og fag- eller svenneprøven til venstre, og vurderingen, voksne, individuelt
+   tilrettelagt opplæring og «Videre» til høyre, som på sidene for lærlinger og kandidater. Én kolonne under 64rem. */
+@media (min-width: 64rem) {
+  main:has(.mo-bred) {
+    max-width: 72rem;
+  }
+
+  .mo-to {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: var(--rom-6);
+    align-items: start;
+  }
+
+  .mo-to-hoved > section:first-child > h2,
+  .mo-to-side > section:first-child > h2 {
+    margin-top: 0;
+  }
+}
+
+/* ---------- Sammenligning med kilder (eier 06.10.2026) ----------
+   Tabellen og regelverket og kildene står i samme hvite boks, som i kortene, ikke rett på bakgrunnen. */
+.tosidig-boks {
+  margin: 0 0 var(--rom-5);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  background: var(--farge-flate);
+}
+
+.tosidig-boks > .tosidig {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.tosidig-fot {
+  padding: 0 var(--rom-4) var(--rom-3);
+}
+
+.tosidig-fot .kortfot {
+  margin-top: 0;
+}
+
+/* ---------- Deler av en side som kan lukkes (Seksjon, fase 6, pakke 7) ----------
+   Som radene som kan åpnes i Lov og forskrift og overordnet del (.od-underdel): en tynn strek over hver del, ikke
+   under overskriften, og en liten pil til høyre. En lukket del viser innholdet på én dempet linje. */
+.seksjon {
+  margin-top: var(--rom-4);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.seksjon-overskrift {
+  margin: 0;
+}
+
+.seksjon-knapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-3);
+  width: 100%;
+  min-height: var(--trykkflate);
+  margin: 0;
+  padding: var(--rom-2) 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.seksjon-knapp:hover .seksjon-tittel {
+  text-decoration: underline;
+}
+
+.seksjon-pil {
+  flex: none;
+}
+
+.seksjon-innhold {
+  margin: 0 0 var(--rom-2);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+  cursor: pointer;
+}
+
+.seksjon > [id] {
+  padding-bottom: var(--rom-2);
 }

@@ -241,3 +241,21 @@
   stikkord: [søkerstatus, statuskode, status, VIGO, inntak, tilbud, venteliste, strøket, inntatt]
   relatert: [karakterpoeng, fortrinnsrett, individuell-behandling, gjesteelev]
   kodeliste: sokerstatuser
+
+- id: mer-opplaering
+  type: begrep
+  tittel: { nb: Mer opplæring, nn: Meir opplæring }
+  lenkeord: { nb: ["mer opplæring", "rett til mer opplæring"], nn: ["meir opplæring", "rett til meir opplæring"] }
+  tekst:
+    nb: Mer opplæring er retten til ny opplæring i et fag eleven har gjennomført, men ikke bestått. Opplæringen regnes som gjennomført når eleven har fulgt den fram til 1. mars. Lærlinger og kandidater som ikke har bestått fag- eller svenneprøven, har rett til mer opplæring på et tilbud på Vg3 som bygger på Vg2. Eleven melder fra til fylkeskommunen innen fristen fylket setter, og opplæringen ender med en ny standpunktkarakter. Voksne har en egen rett etter forskriften § 14-2. Se [Mer opplæring](#/inntak/mer-opplaering).
+    nn: Meir opplæring er retten til ny opplæring i eit fag eleven har gjennomført, men ikkje bestått. Opplæringa blir rekna som gjennomført når eleven har følgt henne fram til 1. mars. Lærlingar og kandidatar som ikkje har bestått fag- eller sveineprøva, har rett til meir opplæring på eit tilbod på Vg3 som byggjer på Vg2. Eleven melder frå til fylkeskommunen innan fristen fylket set, og opplæringa endar med ein ny standpunktkarakter. Vaksne har ein eigen rett etter forskrifta § 14-2. Sjå [Meir opplæring](#/inntak/mer-opplaering).
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 Innhaldet i retten til meir opplæring", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 14-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§14-2" }
+    - { id: udir-mer-opplaering, punkt: "Rett til mer opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «retten til ny opplæring i et fag» en god kort definisjon, når opplæringen kan ha færre timer enn vanlig?"
+  stikkord: [meir opplæring, meropplæring, meiropplæring, ikke bestått, ikkje bestått, stryk, IV, § 5-2, fag- eller svenneprøve, fullføringsrett]
+  relatert: [ungdomsrett, voksenrett, privatist]

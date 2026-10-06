@@ -57,3 +57,38 @@ Vi starter fase 6, pakke 7 i Jukselappen: **Mer opplæring** (repo `larsarnenils
 **Når pakken er levert:**
 - Skriv overleveringen i denne filen.
 - Oppdater status i `OPPDRAG.md` og `docs/arbeidsordrer/fase-7.md`.
+
+## Overlevering (06.10.2026, 0.39.0)
+
+Pakken er levert etter fire designrunder (`fase-6-pakke-7-forslag.md`) og avgjørelse 073.
+
+- **Siden «Mer opplæring»** i Inntak (`#/inntak/mer-opplaering`), med kortet på oversikten:
+  - «Hvem har rett?» som matrise, med regelverket og kildene i samme boks
+  - hva retten gir, og privatskoler som lukket kort
+  - gangen fra melding til ny standpunktkarakter
+  - fag- eller svenneprøven med tabell over løpene
+  - vurdering: ny, utsatt eller særskilt eksamen, trekket, fraværsgrensen og førstegangsvitnemål
+  - voksne og individuelt tilrettelagt opplæring, med tilpassede løp
+  - delene kan lukkes (`Seksjon`), og to kolonner fra 64rem
+- **Begrepet `mer-opplaering`** med lenkeordene «mer opplæring» og «rett til mer opplæring» (nynorsk «meir opplæring» og «rett til meir opplæring»). Søket finner også «meropplæring» og «meiropplæring».
+- **Lenker til siden:**
+  - Eksamen og prøvesiden i Vurdering
+  - nytt utgangspunkt «Fag- eller svenneprøven ikke bestått» i «Bytte vei», med fire veier
+  - steget om IOP i Tilrettelegging
+  - tre datoer i Kalenderen
+  - nytt spørsmål og sluttsteg i veiviseren «Rett, inntak og søknad»
+- **Kildene:** `udir-mer-opplaering`, `udir-mer-opplaering-voksne` og `udir-fullforingsretten-iop`, med `punkt` og `url` til hvert kapittel.
+- **Resten av appen:**
+  - matrisene i «Sammenlign» og «Underveis- og sluttvurdering» har kildene i boksen
+  - «Om veien» har ikke lenger tomrom (`faktaoppstilling`, testet for alle veiene)
+- **Tester:**
+  - enhetstest for oppstillingen
+  - ende-til-ende for siden, delene som lukkes, `?del=`, veiviseren, søket, den nye knappen og «Om veien»
+  - adressene gjennom veiviseren har fått ett ledd til
+
+## Åpent etter pakke 7
+
+- **Kontrollspørsmålene** til kortene, steget, utgangspunktet og begrepet venter på eier i kontrolloversikten.
+- **Praksislisten:** «Fra lærling til lærekandidat etter en prøve som ikke er bestått» (`laerling-til-laerekandidat-etter-prove`) bygger bare på ol. § 7-2 og venter på eiers bekreftelse.
+- **Forskrift til privatskoleloven** er ikke i Lov og forskrift. Kortet om privatskoler har bare Udirs kapittel 6 som kilde.
+- **Lokalt** kjøres ende-til-ende-testene bare i Chromium (se pakke 6). WebKit kjøres i CI.
