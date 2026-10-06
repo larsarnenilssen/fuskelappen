@@ -7,11 +7,10 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { oversiktsid } from '../../favoritter.ts';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import { avtaler, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
-import { dokumentnavn, dokumentRute, kildeFor, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
+import { dokumentnavn, dokumentRute, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
 import type { Lokaltype, Lovdokument, Lovoversikt } from '../typer.ts';
 import { Lasting, Sok, useLast } from './felles.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -120,7 +119,6 @@ export default function Oversikt() {
           />
         </Sok>
       )}
-      {typeof data !== 'string' && <Kildeliste kilder={[...synlige(data).map(kildeFor), ...synligAvtale.map((a) => ({ id: a.kilde }))]} />}
     </div>
   );
 }

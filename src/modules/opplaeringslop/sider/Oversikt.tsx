@@ -11,7 +11,6 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { oversiktsid } from '../../favoritter.ts';
 import { UNDERSIDER } from '../favoritter.ts';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { sokTilbud } from '../sok.ts';
 import { Lasting, Tilbudslenke, useSkoler, useSkolevisning, useTilbudsdata } from './felles.tsx';
@@ -202,7 +201,6 @@ export default function Oversikt() {
           )}
         </>
       )}
-      <Kildeliste kilder={[{ id: 'udir-grep' }, { id: 'udir-fag-og-timefordeling' }, { id: 'utdanning-no', punkt: 'Skoler' }, { id: 'udir-nor' }]} />
     </div>
   );
 }

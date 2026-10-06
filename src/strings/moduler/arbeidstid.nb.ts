@@ -228,7 +228,7 @@ export const arbeidstidNb = {
     utenUtvidelseMerknad: 'Funksjoner som ikke utvider planfestet tid ({prosent} %), er fordelt som undervisningen: en del planfestet tid og en del tid læreren disponerer selv.',
     tillegg: 'Møter, planleggingsdager og lønn',
     planlegging: 'Timer på planleggingsdager',
-    planleggingHjelp: 'Tomt felt gir {timer} timer (6 dager à 7,5 timer), som for en lærer i hel stilling. Skriv inn et annet antall ved deltid, for en periode, om skolen har andre planleggingsdager, eller for lærere som er 60 år og eldre når ferien legges til planleggingsdagene.',
+    planleggingHjelp: 'Tomt felt gir {timer} timer (6 dager à 7,5 timer), som for en lærer i hel stilling. Skriv inn et annet antall ved deltid, for en periode, om skolen har andre planleggingsdager eller for lærere som er 60 år og eldre når ferien legges til planleggingsdagene.',
     planleggingOppsummering: 'planleggingsdager {timer} t',
     moterHjelp: 'Valgfritt. Faste møter i planfestet tid, til diagrammet over arbeidstiden.',
     visLonn: 'Regn ut lønn',
@@ -288,7 +288,7 @@ export const arbeidstidNb = {
     tittel: 'Redusert undervisning',
     velg: 'Livsfasetiltak (SFS 2213 punkt 6)',
     hjelp:
-      'Læreren har rett til å få redusert undervisningen med inntil {nyutdannet} % det første yrkesåret etter fullført utdanning, inntil {fra57} % fra det kalenderåret læreren fyller 57 år, og inntil {fra60} % fra det kalenderåret læreren fyller 60 år. Reduksjonen regnes som en del av stillingen, som en funksjon.',
+      'Læreren har rett til å få redusert undervisningen med inntil {nyutdannet} % det første yrkesåret etter fullført utdanning, inntil {fra57} % fra det kalenderåret læreren fyller 57 år og inntil {fra60} % fra det kalenderåret læreren fyller 60 år. Reduksjonen regnes som en del av stillingen, som en funksjon.',
     valg: {
       ingen: 'Ingen',
       nyutdannet: 'Nyutdannet',

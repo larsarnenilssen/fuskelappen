@@ -79,8 +79,8 @@
   type: begrep
   tittel: { nb: Kort botid, nn: Kort butid }
   tekst:
-    nb: Kort botid betyr at eleven ikke har bodd lenge i Norge. Det er ingen fast grense, men fylkeskommunen ser på norskferdighetene, hva som er best for eleven, og hensynet til integrering. Elever med kort botid kan få innføringsopplæring, og kan velge læreplanen i norsk for språklige minoriteter med kort botid hvis de har hatt høyst fire års opplæring fra 5. trinn i norsk grunnskole.
-    nn: Kort butid tyder at eleven ikkje har budd lenge i Noreg. Det er inga fast grense, men fylkeskommunen ser på norskdugleiken, kva som er best for eleven, og omsynet til integrering. Elevar med kort butid kan få innføringsopplæring, og kan velje læreplanen i norsk for språklege minoritetar med kort butid dersom dei har hatt høgst fire års opplæring frå 5. trinn i norsk grunnskole.
+    nb: Kort botid betyr at eleven ikke har bodd lenge i Norge. Det er ingen fast grense, men fylkeskommunen ser på norskferdighetene, hva som er best for eleven og hensynet til integrering. Elever med kort botid kan få innføringsopplæring, og kan velge læreplanen i norsk for språklige minoriteter med kort botid hvis de har hatt høyst fire års opplæring fra 5. trinn i norsk grunnskole.
+    nn: Kort butid tyder at eleven ikkje har budd lenge i Noreg. Det er inga fast grense, men fylkeskommunen ser på norskdugleiken, kva som er best for eleven og omsynet til integrering. Elevar med kort butid kan få innføringsopplæring, og kan velje læreplanen i norsk for språklege minoritetar med kort butid dersom dei har hatt høgst fire års opplæring frå 5. trinn i norsk grunnskole.
   kilder:
     - { id: udir-innforingsopplaring, punkt: "Ingressen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/" }
     - { id: opplaeringsforskrifta, punkt: "§ 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-12" }

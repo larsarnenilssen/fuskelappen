@@ -25,9 +25,9 @@
   tittel: { nb: Habilitet, nn: Habilitet }
   tekst:
     nb: >-
-      Den som forbereder eller treffer en avgjørelse i en forvaltningssak, må være habil, altså upartisk. En ansatt er inhabil (ugild) blant annet når han eller hun selv er part, er i nær familie med en part, eller når andre særegne forhold kan svekke tilliten til upartiskheten. På skolen kan det for eksempel gjelde vedtak om egne barn eller nære slektninger. Se [forvaltningsloven § 6](#/lov/forvaltningsloven/6).
+      Den som forbereder eller treffer en avgjørelse i en forvaltningssak, må være habil, altså upartisk. En ansatt er inhabil (ugild) blant annet når han eller hun selv er part, er i nær familie med en part eller når andre særegne forhold kan svekke tilliten til upartiskheten. På skolen kan det for eksempel gjelde vedtak om egne barn eller nære slektninger. Se [forvaltningsloven § 6](#/lov/forvaltningsloven/6).
     nn: >-
-      Den som førebur eller gjer ei avgjerd i ei forvaltningssak, må vere habil, altså upartisk. Ein tilsett er inhabil (ugild) mellom anna når han eller ho sjølv er part, er i nær familie med ein part, eller når andre særeigne forhold kan svekkje tilliten til upartiskheita. På skulen kan det til dømes gjelde vedtak om eigne born eller nære slektningar. Sjå [forvaltningsloven § 6](#/lov/forvaltningsloven/6).
+      Den som førebur eller gjer ei avgjerd i ei forvaltningssak, må vere habil, altså upartisk. Ein tilsett er inhabil (ugild) mellom anna når han eller ho sjølv er part, er i nær familie med ein part eller når andre særeigne forhold kan svekkje tilliten til upartiskheita. På skulen kan det til dømes gjelde vedtak om eigne born eller nære slektningar. Sjå [forvaltningsloven § 6](#/lov/forvaltningsloven/6).
   kilder:
     - { id: forvaltningsloven, punkt: "§ 6 Habilitetskrav", url: "https://lovdata.no/lov/1967-02-10/§6" }
   kontrollert: null
@@ -57,9 +57,9 @@
   tittel: { nb: Aktivitetsplikt, nn: Aktivitetsplikt }
   tekst:
     nb: >-
-      Aktivitetsplikten betyr at alle som arbeider på skolen, skal følge med på hvordan elevene har det, gripe inn mot krenkelser om mulig, og si fra til rektor ved mistanke om at en elev ikke har et trygt og godt skolemiljø. Skolen skal snarest undersøke saken, sette inn egnede tiltak og lage en skriftlig plan for tiltakene. Det som gjøres, skal dokumenteres. Se [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+      Aktivitetsplikten betyr at alle som arbeider på skolen, skal følge med på hvordan elevene har det, gripe inn mot krenkelser om mulig og si fra til rektor ved mistanke om at en elev ikke har et trygt og godt skolemiljø. Skolen skal snarest undersøke saken, sette inn egnede tiltak og lage en skriftlig plan for tiltakene. Det som gjøres, skal dokumenteres. Se [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
     nn: >-
-      Aktivitetsplikta tyder at alle som arbeider på skulen, skal følgje med på korleis elevane har det, gripe inn mot krenkingar om mogleg, og seie frå til rektor ved mistanke om at ein elev ikkje har eit trygt og godt skulemiljø. Skulen skal snarast undersøkje saka, setje inn eigna tiltak og lage ein skriftleg plan for tiltaka. Det som blir gjort, skal dokumenterast. Sjå [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+      Aktivitetsplikta tyder at alle som arbeider på skulen, skal følgje med på korleis elevane har det, gripe inn mot krenkingar om mogleg og seie frå til rektor ved mistanke om at ein elev ikkje har eit trygt og godt skulemiljø. Skulen skal snarast undersøkje saka, setje inn eigna tiltak og lage ein skriftleg plan for tiltaka. Det som blir gjort, skal dokumenterast. Sjå [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
   kilder:
     - { id: opplaeringslova, punkt: "§ 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
   kontrollert: null

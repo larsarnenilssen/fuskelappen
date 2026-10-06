@@ -170,7 +170,7 @@ export const vurderingNb = {
   },
   klage: {
     kort: 'Klage på karakter',
-    beskrivelse: 'Steg for steg: begrunnelse, frist, hva skolen kan gjøre, og klageinstansen.',
+    beskrivelse: 'Steg for steg: begrunnelse, frist, hva skolen kan gjøre og klageinstansen.',
   },
   frister: {
     tittel: 'Kalender for eksamen',

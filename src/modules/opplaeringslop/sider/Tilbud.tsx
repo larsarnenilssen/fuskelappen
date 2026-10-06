@@ -22,7 +22,7 @@ import { lastFagroller } from '../../fag/data.ts';
 import { fellesStart } from '../../fag/klasser.ts';
 import { normaliser } from '../../fag/oppslag.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
-import type { Lopkilde } from '../../fag/tilbud/kildesamsvar.ts';
+import type { Lopkilde, Lopmerke } from '../../fag/tilbud/kildesamsvar.ts';
 import type { Avvik, Tilbudsdel, Tilpasning } from '../../fag/tilbud/modell.ts';
 import { vilbliLenke } from '../../fag/tilbud/vilbli.ts';
 import { visningstrinnTekst } from '../../fag/visning.ts';
@@ -431,16 +431,23 @@ function TilArbeidsplan({ kode, tb, indeks }: { kode: string; tb: Tilbudsdata; i
   );
 }
 
-/** Kildene som mangler et løp, som tekst: «Står ikke i VIGO og utdanning.no» (avgjørelse 052). */
-function ikkeI(t: T, kilder: readonly Lopkilde[]): string {
+/** Kildene som tekst: «VIGO og utdanning.no». */
+function kildeliste(t: T, kilder: readonly Lopkilde[]): string {
   const navn = kilder.map((k) => t(`opplaeringslop.tilbud.lopkilde.${k}`));
-  const liste = navn.length > 1 ? `${navn.slice(0, -1).join(', ')} ${t('opplaeringslop.tilbud.og')} ${navn.at(-1)}` : (navn[0] ?? '');
-  return t('opplaeringslop.tilbud.ikkeI', { kilder: liste });
+  return navn.length > 1 ? `${navn.slice(0, -1).join(', ')} ${t('opplaeringslop.tilbud.og')} ${navn.at(-1)}` : (navn[0] ?? '');
+}
+
+/**
+ * Merknaden ved et løp kildene er uenige om (avgjørelse 052 og 070): «Står bare i VIGO» når bare én kilde har løpet,
+ * ellers «Står ikke i utdanning.no» med kildene som mangler det.
+ */
+function lopmerknad(t: T, m: Lopmerke): string {
+  return m.har.length === 1 ? t('opplaeringslop.tilbud.bareI', { kilde: kildeliste(t, m.har) }) : t('opplaeringslop.tilbud.ikkeI', { kilder: kildeliste(t, m.mangler) });
 }
 
 /**
  * Tilbudene under en overskrift som kan legges sammen, f.eks. «Videre». Lange lister er lukket fra start. Et løp som
- * Grep, VIGO og utdanning.no ikke er enige om, får en merknad om hvilke kilder som mangler det (avgjørelse 052).
+ * Grep, VIGO og utdanning.no ikke er enige om, får en merknad om hvilke kilder som har eller mangler det (avgjørelse 052).
  */
 function Tilbudsliste({
   nokkel,
@@ -455,7 +462,7 @@ function Tilbudsliste({
   koder: readonly string[];
   indeks: Fagindeks;
   via?: string;
-  uenig?: Readonly<Record<string, readonly Lopkilde[]>>;
+  uenig?: Readonly<Record<string, Lopmerke>>;
 }) {
   const { t } = useTekst();
   if (koder.length === 0) return null;
@@ -468,7 +475,7 @@ function Tilbudsliste({
               indeks={indeks}
               kode={k}
               {...(via ? { via } : {})}
-              {...(uenig[k] ? { under: <span class="lop-uenig"> · {ikkeI(t, uenig[k] ?? [])}</span> } : {})}
+              {...(uenig[k] ? { under: <span class="lop-uenig"> · {lopmerknad(t, uenig[k])}</span> } : {})}
             />
           </li>
         ))}
@@ -816,6 +823,8 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           { id: 'udir-grep', punkt: k },
           ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
           ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
+          // Et løp som bare står på utdanning.no, har utdanning.no som kilde (avgjørelse 070).
+          ...(Object.values(tb.uenig).some((m) => m.har.length === 1 && m.har[0] === 'utdanning') ? [{ id: 'utdanning-no', punkt: 'Løpene' }] : []),
           po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
         ]}
       />

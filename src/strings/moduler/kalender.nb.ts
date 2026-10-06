@@ -12,6 +12,8 @@ export const kalenderNb = {
     hvem: 'Hvem det gjelder',
     alle: 'Alle',
   },
+  sokTema: 'Kalender – {tema}',
+  sokTemaTekst: 'Kalenderen filtrert på {tema}.',
   temaer: { inntak: 'Inntak', vurdering: 'Vurdering', eksamen: 'Eksamen', skolerute: 'Skolerute', regelverk: 'Regelverk' },
   grupper: { elever: 'Elever', privatister: 'Privatister', laerlinger: 'Lærlinger', voksne: 'Voksne', fortrinnsrett: 'Fortrinnsrett' },
   aaretRullende: 'Året fremover med ett blikk',

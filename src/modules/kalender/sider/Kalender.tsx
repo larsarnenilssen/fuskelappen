@@ -382,13 +382,17 @@ function Rad({ post: p, idag, malform }: { post: Kalenderpost; idag: string; mal
         )}
       </div>
       <div class="kal-punkt" aria-hidden="true" />
-      <Kort oppforing={p.oppforing} tid={tid} dato={p.fra ? datoLang(p.fra, malform) + (p.til && p.til !== p.fra ? `–${datoLang(p.til, malform)}` : '') : null} />
+      <Kort oppforing={p.oppforing} tid={tid} tidLukket={p.fra === null} dato={p.fra ? datoLang(p.fra, malform) + (p.til && p.til !== p.fra ? `–${datoLang(p.til, malform)}` : '') : null} />
     </li>
   );
 }
 
-/** Kortet: tittelen, temaet, fylket og hvem det gjelder. Teksten, lenkene, regelverket og kildene står inni, lukket. */
-function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing; tid: string; dato?: string | null }) {
+/**
+ * Kortet: tittelen, temaet, fylket og hvem det gjelder. Teksten, lenkene, regelverket og kildene står inni, lukket.
+ * Klokkeslettet og tiden med ord står på en egen linje under tittelen, og vises når kortet er åpent (eier 06.10.2026).
+ * `tidLukket`: tiden vises også når kortet er lukket, for poster uten fast dag («I løpet av januar»).
+ */
+function Kort({ oppforing: o, tid, tidLukket = false, dato = null }: { oppforing: Kalenderoppforing; tid: string; tidLukket?: boolean; dato?: string | null }) {
   const { t, malform } = useTekst();
   const [funnet, settFunnet] = useState<Kalenderlenke[] | null>(null);
   const ferdige = o.ferdigeLenker ?? [];
@@ -403,7 +407,7 @@ function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing
         <span class="kal-tittel">
           {dato && <span class="skjult-visuelt">{dato}: </span>}
           {o.tittel[malform]}
-          {tid && <span class="kal-tid"> {tid}</span>}
+          {tid && <span class={`kal-tid${tidLukket ? ' kal-tid-alltid' : ''}`}>{tid}</span>}
         </span>
         <span class="kal-merker">
           {o.tema.map((tema) => (

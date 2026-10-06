@@ -24,15 +24,6 @@ export const manifest: Modulmanifest = {
   ],
   async sokeoppforinger() {
     const { veivisere } = await hentInnhold();
-    const tidslinje = {
-      id: 'inntak:frister',
-      type: 'tidslinje' as const,
-      tittel: begge('inntak.frister.tittel'),
-      tekst: begge('inntak.frister.beskrivelse'),
-      stikkord: ['frist', 'søknadsfrist', 'tidslinje', 'inntak', '1. mars', '1. februar'],
-      rute: fristerRute,
-      modul: 'inntak',
-    };
     const poeng = {
       id: 'inntak:poeng',
       type: 'kalkulator' as const,
@@ -42,7 +33,7 @@ export const manifest: Modulmanifest = {
       rute: poengRute,
       modul: 'inntak',
     };
-    return [tidslinje, poeng, ...veivisere
+    return [poeng, ...veivisere
       .filter((v) => v.gyldighet.niva === 'nasjonal')
       .map((v) => ({
         id: `inntak:${v.id}`,

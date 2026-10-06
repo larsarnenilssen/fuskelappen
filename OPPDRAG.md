@@ -543,6 +543,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Pakke 5 er levert i 0.37.0 (05.10.2026): **Kalenderen** med skoleruta, fylkenes inntaksdatoer og kommende endringer i regelverket (avgjørelse 066), «Neste datoer» og sidekolonnen på forsiden (avgjørelse 068), og CI etter hva som er endret (avgjørelse 067).
 - 27 nye begreper (eier 05.10.2026) er levert i 0.36.0: `docs/arbeidsordrer/fase-6-begreper.md`.
 - Pakke 6 er levert i 0.38.0 (06.10.2026): **Lærlinger og kandidater** i Opplæringstilbud, med veiene til fag- og svennebrev, praksisbrev og kompetansebevis, overgangene med kilder, siden for hver vei og «Veiene hit» på prøvesiden (avgjørelse 069). Overleveringen står i `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`, og arbeidsordren for fase 7 i `docs/arbeidsordrer/fase-7.md`.
+- 0.38.1 (06.10.2026): alle løp fra Grep, VIGO og utdanning.no, merket når bare én kilde har dem (avgjørelse 070). Samme versjon har like høye knapper på forsiden, klokkeslettet under tittelen i Kalenderen, søk på «kalender» uten doble treff, ingen kildeliste på oversiktssidene og ingen komma foran siste «og»/«eller» i oppramsinger (testes).
+- **Pakke 7 – Mer opplæring** (eier 06.10.2026) tas før fase 7. Det blir en side i Inntak om retten til mer opplæring (forskrift til opplæringslova § 5-2 og Udirs veiledninger), med lenker fra Vurdering, Lærlinger og kandidater, Tilrettelegging, Kalenderen og veiviseren for rett til inntak. Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-7-mer-opplaering.md`.
 
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
 
@@ -556,6 +558,22 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Resultater fra Elevundersøkelsen (Udirs statistikkbank, åpent API, NLOD) for valgt skole og fylke, sammenlignet med landet: hentes automatisk og kontrolleres som de andre dataene (avgjørelse 049 og 053). Hvilke spørsmål og indekser som tas med, og hvordan små grupper og skjulte tall vises, legges fram for eier før det bygges. Ingen tall om enkeltelever.
 
 **Kontrollpunkt:** Eier kontrollerer innholdet.
+
+### Fase 7b – Nyheter
+
+*(Eier 06.10.2026.)* Tas etter fase 7 og før fase 8, fordi «Siste nytt» og Kalenderen hører sammen på forsiden. Arbeidsordren står i `docs/arbeidsordrer/fase-7b-nyheter.md`, og kartleggingen av kildene i `docs/arbeidsordrer/forslag-meropplaering-og-nyheter.md`.
+
+**Leveranser**
+
+- Et skript i GitHub Actions henter nyheter (tittel, dato, lenke og eventuelt ingress) fra så mange kilder som er forsvarlig, til `data/nyheter.json`. Appen gjør ingen eksterne kall.
+- Myndighetene er med: regjeringen.no, Udir og Statsforvalteren. Fagpressen, Utdanningsnytt, er med. Organisasjonene, f.eks. Skolelederforbundet, Skolenes landsforbund og Utdanningsforbundet, er med og merkes som interesseparter.
+- Kilder uten feed eller åpen liste skrapes ikke når det er ugreit (f.eks. Lektorlaget, eier 06.10.2026).
+- «Siste nytt» på forsiden og en egen side under «Oppslag». Statsforvalterens saker vises bare med valgt fylke.
+- Om ingress skal vises for alle kilder, noen eller ingen, avgjør eier når designet legges fram (eier 06.10.2026).
+- Nyhetsfilen publiseres daglig uten PR når den passer skjemaet (eier 06.10.2026). Det får et eget avgjørelsesnotat.
+- KS og KF Infoserie: eier tar stilling etter rådet i arbeidsordren (robots.txt hos KS, abonnement hos KF Infoserie).
+
+**Kontrollpunkt:** Eier kontrollerer kildene, merkingen og visningen.
 
 ### Fase 8 – Frister og årshjul
 
@@ -633,6 +651,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Fordelingstabellen i Arbeidsplan går utenfor skjermen ved skriftstørrelse på 150 % eller mer (kjent begrensning, README) | senere | Venter, etter eiers ønske |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 | Oversikt over tilbudene ved hver skole | fase 2 | Avklart. Skolene og tilbudene deres hentes fra utdanning.no (eier 03.10.2026, avgjørelse 053). |
+| KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Venter. Eier tar stilling etter rådet i `docs/arbeidsordrer/fase-7b-nyheter.md` (06.10.2026). |
 
 ## 8. Ferdig når
 
