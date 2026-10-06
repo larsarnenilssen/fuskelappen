@@ -27,7 +27,7 @@ export default function Vei({ parametre }: SideProps) {
   const fra = kommerFra(vei.id);
   const videre = veienVidere(vei);
   return (
-    <div class="side fb-side">
+    <div class="side fb-side fb-bred">
       <Brodsmuler ledd={sti} />
       <Sidetopp tittel={vei.tittel} favoritt={`opplaeringslop:vei:${vei.id}`} />
       <p class="ingress">{vei.ingress}</p>
@@ -42,39 +42,46 @@ export default function Vei({ parametre }: SideProps) {
         <span class="frist-inngang-neste">{t('opplaeringslop.fagbrev.proveTekst')}</span>
         <Ikon navn="hoyre" class="frist-inngang-pil" />
       </a>
-      <section>
-        <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.stegene')}</h2>
-        <Fargeforklaring />
-        <Stegrad vei={vei} />
-      </section>
-      {/* Faktaene om veien i en egen ramme, så de skiller seg fra stegene og overgangene (eier 06.10.2026, runde 2). */}
-      <section class="fb-om" aria-labelledby="fb-om">
-        <h2 class="liten-overskrift" id="fb-om">
-          {t('opplaeringslop.fagbrev.omVeien')}
-        </h2>
-        <Fakta vei={vei} med="alt" />
-      </section>
-      {fra.length > 0 && (
-        <section>
-          <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.kommerFra')}</h2>
-          <ul class="fb-overganger">
-            {fra.map(({ fra: u, overgang }) => (
-              <Overgangskort key={u.id} rute={lenke(FAGBREV_RUTE, { fane: 'bytte', fra: u.id })} ikon="sted" tittel={u.tittel} vilkar={overgang.vilkar} kilder={overgang.kilder} />
-            ))}
-          </ul>
-        </section>
-      )}
-      {videre.length > 0 && (
-        <section>
-          <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.veienVidere')}</h2>
-          <ul class="fb-overganger">
-            {videre.map((o) => {
-              const m = maal(o);
-              return <Overgangskort key={o.til} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel} vilkar={o.vilkar} kilder={o.kilder} />;
-            })}
-          </ul>
-        </section>
-      )}
+      {/* Skrivebord: stegene og «Om veien» til venstre, «Kommer fra» og «Veien videre» øverst til høyre (eier 06.10.2026, svar 6). */}
+      <div class="fb-to">
+        <div class="fb-to-hoved">
+          <section>
+            <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.stegene')}</h2>
+            <Fargeforklaring />
+            <Stegrad vei={vei} />
+          </section>
+          {/* Faktaene om veien i en egen ramme, så de skiller seg fra stegene og overgangene (eier 06.10.2026, runde 2). */}
+          <section class="fb-om" aria-labelledby="fb-om">
+            <h2 class="liten-overskrift" id="fb-om">
+              {t('opplaeringslop.fagbrev.omVeien')}
+            </h2>
+            <Fakta vei={vei} med="alt" />
+          </section>
+        </div>
+        <div class="fb-to-side">
+          {fra.length > 0 && (
+            <section>
+              <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.kommerFra')}</h2>
+              <ul class="fb-overganger">
+                {fra.map(({ fra: u, overgang }) => (
+                  <Overgangskort key={u.id} rute={lenke(FAGBREV_RUTE, { fane: 'bytte', fra: u.id })} ikon="sted" tittel={u.tittel} vilkar={overgang.vilkar} kilder={overgang.kilder} />
+                ))}
+              </ul>
+            </section>
+          )}
+          {videre.length > 0 && (
+            <section>
+              <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.veienVidere')}</h2>
+              <ul class="fb-overganger">
+                {videre.map((o) => {
+                  const m = maal(o);
+                  return <Overgangskort key={o.til} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel} vilkar={o.vilkar} kilder={o.kilder} />;
+                })}
+              </ul>
+            </section>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

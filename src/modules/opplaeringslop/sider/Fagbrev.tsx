@@ -13,7 +13,7 @@ import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import type { SideProps } from '../../typer.ts';
 import { finnVei, maal, type Mal, UTGANGSPUNKTER, type Vei, VEIER } from '../fagbrev/mockup.ts';
 import { Brodsmuler } from './felles.tsx';
-import { FAGBREV_RUTE, Fakta, Fargeforklaring, Lukketkort, Overgangskort, Stegrad, veiRute } from './fagbrevDeler.tsx';
+import { FAGBREV_RUTE, Fakta, Fargeforklaring, Lukketkort, Overgangskort, Stegrad, useBred, veiRute } from './fagbrevDeler.tsx';
 
 type Fane = 'veiene' | 'sammenlign' | 'bytte';
 const FANER: readonly Fane[] = ['veiene', 'sammenlign', 'bytte'];
@@ -25,6 +25,8 @@ interface Valg {
   a: string;
   b: string;
   fra: string;
+  /** Veien som vises i kolonnen til høyre på skrivebord. */
+  vei: string;
 }
 
 function lesValg(s: URLSearchParams): Valg {
@@ -39,22 +41,23 @@ function lesValg(s: URLSearchParams): Valg {
     a: vei(s.get('a'), 'laerling'),
     b: vei(s.get('b'), 'fagbrev-pa-jobb'),
     fra: fra && UTGANGSPUNKTER.some((u) => u.id === fra) ? fra : 'vg2-yf',
+    vei: vei(s.get('vei'), ''),
   };
 }
 
 function sporringFor(v: Valg): Record<string, string> {
   if (v.fane === 'sammenlign') return { fane: v.fane, a: v.a, b: v.b };
   if (v.fane === 'bytte') return { fane: v.fane, fra: v.fra };
-  return { fane: v.fane, mal: v.mal, ...(v.uten ? { uten: '1' } : {}) };
+  return { fane: v.fane, mal: v.mal, ...(v.uten ? { uten: '1' } : {}), ...(v.vei ? { vei: v.vei } : {}) };
 }
 
 type Endre = (v: Partial<Valg>) => void;
 
-/** En vei som et lukket kort: tittelen og en linje, og stegene og faktaene når det åpnes. */
-function Veikort({ vei }: { vei: Vei }) {
+/** Stegene, faktaene og knappen «Mer om …» for en vei: inni kortet på mobil, i kolonnen til høyre på skrivebord. */
+function Veiinnhold({ vei }: { vei: Vei }) {
   const { t } = useTekst();
   return (
-    <Lukketkort tittel={vei.tittel} smakebit={vei.kort} klasse="fb-vei">
+    <>
       <Stegrad vei={vei} />
       <Fakta vei={vei} />
       {/* Veien videre for den som vil vite mer: en tydelig knapp til siden for veien (eier 06.10.2026, runde 3). */}
@@ -65,14 +68,16 @@ function Veikort({ vei }: { vei: Vei }) {
         </span>
         <Ikon navn="hoyre" />
       </a>
-    </Lukketkort>
+    </>
   );
 }
 
 function Veiene({ valg, endre }: { valg: Valg; endre: Endre }) {
   const { t } = useTekst();
+  const bred = useBred();
   const veier = VEIER.filter((v) => v.mal === valg.mal && (!valg.uten || v.fellesfag === 'nei'));
-  return (
+  const valgt = veier.find((v) => v.id === valg.vei) ?? veier[0];
+  const styring = (
     <>
       <Bryter
         legend={t('opplaeringslop.fagbrev.maal')}
@@ -82,21 +87,63 @@ function Veiene({ valg, endre }: { valg: Valg; endre: Endre }) {
           { verdi: 'praksisbrev', tekst: t('opplaeringslop.fagbrev.maalValg.praksisbrev') },
           { verdi: 'kompetansebevis', tekst: t('opplaeringslop.fagbrev.maalValg.kompetansebevis') },
         ]}
-        onEndring={(mal) => endre({ mal, uten: false })}
+        onEndring={(mal) => endre({ mal, uten: false, vei: '' })}
       />
       {valg.mal === 'fagbrev' && (
         <div class="sokefilter">
-          <button type="button" class="sokefilter-valg" aria-pressed={valg.uten} onClick={() => endre({ uten: !valg.uten })}>
+          <button type="button" class="sokefilter-valg" aria-pressed={valg.uten} onClick={() => endre({ uten: !valg.uten, vei: '' })}>
             {t('opplaeringslop.fagbrev.utenFellesfag')}
           </button>
         </div>
       )}
+      {/* Kompetansebevis er også dokumentasjon for elever som ikke har fullført (eier 06.10.2026, svar 3). */}
+      {valg.mal === 'kompetansebevis' && (
+        <p class="merknad">
+          <Begrepstekst tekst={t('opplaeringslop.fagbrev.kompetansebevisElever')} />
+        </p>
+      )}
       <p class="dempet liten" role="status">
-        {t('opplaeringslop.fagbrev.antallVeier', { antall: String(veier.length) })}
+        {veier.length === 1 ? t('opplaeringslop.fagbrev.enVei') : t('opplaeringslop.fagbrev.antallVeier', { antall: String(veier.length) })}
       </p>
       <Fargeforklaring />
+    </>
+  );
+  // Skrivebord (fra 64rem): listen til venstre og den valgte veien til høyre (eier 06.10.2026, svar 6).
+  if (bred) {
+    return (
+      <div class="fb-to fb-to-veiene">
+        <div class="fb-to-hoved">
+          {styring}
+          <ul class="fb-velg-liste">
+            {veier.map((v) => (
+              <li key={v.id}>
+                <button type="button" class="fb-velg" aria-pressed={v.id === valgt?.id} aria-controls="fb-valgt" onClick={() => endre({ vei: v.id })}>
+                  <span class="fb-velg-tittel">{v.tittel}</span>
+                  <span class="fb-velg-kort">{v.kort}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {valgt && (
+          <section id="fb-valgt" class="fb-to-side fb-valgt" aria-labelledby="fb-valgt-tittel" aria-live="polite">
+            <h2 id="fb-valgt-tittel" class="fb-valgt-tittel">
+              {valgt.tittel}
+            </h2>
+            <p class="fb-valgt-kort">{valgt.kort}</p>
+            <Veiinnhold vei={valgt} />
+          </section>
+        )}
+      </div>
+    );
+  }
+  return (
+    <>
+      {styring}
       {veier.map((v) => (
-        <Veikort key={v.id} vei={v} />
+        <Lukketkort key={v.id} tittel={v.tittel} smakebit={v.kort} klasse="fb-vei">
+          <Veiinnhold vei={v} />
+        </Lukketkort>
       ))}
     </>
   );
@@ -141,7 +188,7 @@ function Sammenlign({ valg, endre }: { valg: Valg; endre: Endre }) {
           rad('melder', t('opplaeringslop.fagbrev.melderOpp'), (v) => v.melderOpp),
           rad('fellesfag', t('opplaeringslop.fagbrev.fellesfag'), (v) => v.fellesfagTekst),
           rad('dok', t('opplaeringslop.fagbrev.dokumentasjon'), (v) => v.dokumentasjon),
-          rad('voksne', t('opplaeringslop.fagbrev.voksne'), (v) => v.voksne),
+          rad('voksne', t('opplaeringslop.fagbrev.voksne'), (v) => v.voksne ?? '–'),
           rad('kilde', t('opplaeringslop.fagbrev.kilde'), (v) => v.kilder.join(', ')),
         ]}
       />
@@ -170,26 +217,30 @@ function Bytte({ valg, endre }: { valg: Valg; endre: Endre }) {
   // «fra grunnskolen», men «fra Vg2 yrkesfag».
   const fraTekst = /^Vg\d/.test(fra.tittel) ? fra.tittel : fra.tittel.toLowerCase();
   return (
-    <>
-      <h2 class="liten-overskrift fb-hvor" id="fb-hvor">
-        <Ikon navn="sted" />
-        {t('opplaeringslop.fagbrev.hvorErDu')}
-      </h2>
-      <div class="sokefilter" role="group" aria-labelledby="fb-hvor">
-        {UTGANGSPUNKTER.map((u) => (
-          <button key={u.id} type="button" class="sokefilter-valg" aria-pressed={u.id === fra.id} onClick={() => endre({ fra: u.id })}>
-            {u.tittel}
-          </button>
-        ))}
+    <div class="fb-to fb-to-bytte">
+      <div class="fb-to-hoved">
+        <h2 class="liten-overskrift fb-hvor" id="fb-hvor">
+          <Ikon navn="sted" />
+          {t('opplaeringslop.fagbrev.hvorErDu')}
+        </h2>
+        <div class="sokefilter fb-fra" role="group" aria-labelledby="fb-hvor">
+          {UTGANGSPUNKTER.map((u) => (
+            <button key={u.id} type="button" class="sokefilter-valg" aria-pressed={u.id === fra.id} onClick={() => endre({ fra: u.id })}>
+              {u.tittel}
+            </button>
+          ))}
+        </div>
       </div>
-      <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.veieneVidere', { fra: fraTekst })}</h2>
-      <ul class="fb-overganger">
-        {fra.overganger.map((o) => {
-          const m = maal(o);
-          return <Overgangskort key={o.til} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel} vilkar={o.vilkar} kilder={o.kilder} />;
-        })}
-      </ul>
-    </>
+      <div class="fb-to-side">
+        <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.veieneVidere', { fra: fraTekst })}</h2>
+        <ul class="fb-overganger">
+          {fra.overganger.map((o) => {
+            const m = maal(o);
+            return <Overgangskort key={o.til} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel} vilkar={o.vilkar} kilder={o.kilder} />;
+          })}
+        </ul>
+      </div>
+    </div>
   );
 }
 
@@ -205,9 +256,9 @@ export default function Fagbrev({ sporring }: SideProps) {
     erstattAdresse(FAGBREV_RUTE, sporringFor(neste));
   };
   return (
-    <div class="side fb-side">
+    <div class="side fb-side fb-bred">
       <Brodsmuler ledd={[{ tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' }]} />
-      <Sidetopp tittel={t('opplaeringslop.fagbrev.tittel')} favoritt="opplaeringslop:fag-og-svennebrev" />
+      <Sidetopp tittel={t('opplaeringslop.fagbrev.tittel')} favoritt="opplaeringslop:laerlinger-og-kandidater" />
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.fagbrev.innledning')} />
       </p>

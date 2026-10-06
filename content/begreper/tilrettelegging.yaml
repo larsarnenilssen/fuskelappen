@@ -4,13 +4,14 @@
   type: begrep
   tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring }
   tekst:
-    nb: Tilpasset opplæring betyr at skolen legger opp opplæringen slik at alle elevene får et tilfredsstillende utbytte, uansett forutsetninger. Det er et prinsipp for all opplæring og skjer i hovedsak i fellesskapet. Det er en plikt for skolen, men ikke en rett for den enkelte eleven, så det fattes ikke vedtak om tilpasset opplæring.
-    nn: Tilpassa opplæring tyder at skolen legg opp opplæringa slik at alle elevane får eit tilfredsstillande utbytte, uansett føresetnader. Det er eit prinsipp for all opplæring og skjer i hovudsak i fellesskapet. Det er ei plikt for skolen, men ikkje ein rett for den enkelte eleven, så det blir ikkje gjort vedtak om tilpassa opplæring.
+    nb: Tilpasset opplæring betyr at skolen legger opp opplæringen slik at alle elevene får et tilfredsstillende utbytte, uansett forutsetninger. Det er et prinsipp for all opplæring og skjer i hovedsak i fellesskapet. Det er en plikt for skolen, men ikke en rett for den enkelte eleven, så det fattes ikke vedtak om tilpasset opplæring. For dem som har læretid i bedrift, har lærebedriften den samme plikten.
+    nn: Tilpassa opplæring tyder at skolen legg opp opplæringa slik at alle elevane får eit tilfredsstillande utbytte, uansett føresetnader. Det er eit prinsipp for all opplæring og skjer i hovudsak i fellesskapet. Det er ei plikt for skolen, men ikkje ein rett for den enkelte eleven, så det blir ikkje gjort vedtak om tilpassa opplæring. For dei som har læretid i bedrift, har lærebedrifta den same plikta.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-1 Tilpassa opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§11-1" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
   kontrollert: null
   kontrollsporsmal:
+    - "Lagt til 06.10.2026: Er setningen om lærebedriftens plikt (§ 11-1 andre punktum) riktig og nyttig her?"
     - "Er «en plikt for skolen, men ikke en rett for den enkelte eleven» en riktig og ikke misvisende forenkling?"
   stikkord: [tilpassa opplæring, tilpasning, differensiering, fellesskapet]
   relatert: [tilfredsstillende-utbytte, individuell-tilrettelegging]
@@ -34,13 +35,17 @@
   type: begrep
   tittel: { nb: Individuell tilrettelegging, nn: Individuell tilrettelegging }
   tekst:
-    nb: Individuell tilrettelegging er samlenavnet på rettighetene en elev kan ha når tilpasset opplæring ikke er nok, i opplæringslova kapittel 11. Det er tre rettigheter, individuelt tilrettelagt opplæring, personlig assistanse, og fysisk tilrettelegging med tekniske hjelpemidler. Eleven får individuell tilrettelegging bare etter et vedtak fra fylkeskommunen. Rettighetene ses i sammenheng og står som hovedregel i samme vedtak.
-    nn: Individuell tilrettelegging er samlenamnet på rettane ein elev kan ha når tilpassa opplæring ikkje er nok, i opplæringslova kapittel 11. Det er tre rettar, individuelt tilrettelagd opplæring, personleg assistanse, og fysisk tilrettelegging med tekniske hjelpemiddel. Eleven får individuell tilrettelegging berre etter eit vedtak frå fylkeskommunen. Rettane blir sett i samanheng og står som hovudregel i same vedtak.
+    nb: Individuell tilrettelegging er samlenavnet på rettighetene en elev kan ha når tilpasset opplæring ikke er nok, i opplæringslova kapittel 11. Det er tre rettigheter, individuelt tilrettelagt opplæring, personlig assistanse, og fysisk tilrettelegging med tekniske hjelpemidler. Eleven får individuell tilrettelegging bare etter et vedtak fra fylkeskommunen. Rettighetene ses i sammenheng og står som hovedregel i samme vedtak. Lærekandidater har de samme rettighetene, også i lærebedriften. Lærlinger og praksisbrevkandidater har dem når fylkeskommunen har ansvaret for opplæringen. Ellers skal lærebedriften sørge for tilpasset opplæring.
+    nn: Individuell tilrettelegging er samlenamnet på rettane ein elev kan ha når tilpassa opplæring ikkje er nok, i opplæringslova kapittel 11. Det er tre rettar, individuelt tilrettelagd opplæring, personleg assistanse, og fysisk tilrettelegging med tekniske hjelpemiddel. Eleven får individuell tilrettelegging berre etter eit vedtak frå fylkeskommunen. Rettane blir sett i samanheng og står som hovudregel i same vedtak. Lærekandidatar har dei same rettane, også i lærebedrifta. Lærlingar og praksisbrevkandidatar har dei når fylkeskommunen har ansvaret for opplæringa. Elles skal lærebedrifta sørgje for tilpassa opplæring.
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging" }
     - { id: opplaeringslova, punkt: "§ 11-2 Tilfredsstillande utbytte av opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§11-2" }
+    - { id: opplaeringslova, punkt: "§ 7-4 sjette ledd (lærekandidater)", url: "https://lovdata.no/lov/2023-06-09-30/§7-4" }
+    - { id: opplaeringslova, punkt: "§ 7-1 tredje ledd (reglene for elever når fylkeskommunen har ansvaret)", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringslova, punkt: "§ 11-1 andre punktum (tilpasset opplæring i lærebedriften)", url: "https://lovdata.no/lov/2023-06-09-30/§11-1" }
   kontrollert: null
   kontrollsporsmal:
+    - "Lagt til etter eiers spørsmål 06.10.2026: Lærekandidater har rettighetene etter § 7-4 sjette ledd. Lærlinger og praksisbrevkandidater har dem bare når fylkeskommunen har ansvaret for opplæringen (§ 7-1 tredje ledd), f.eks. i skole. I lærebedriften gjelder tilpasset opplæring (§ 11-1). Er det riktig at lærlinger i lærebedriften ikke har rett til individuell tilrettelegging etter kapittel 11?"
     - "Er det riktig å telle tre rettigheter, når veilederen 1.1 deler fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet i flere punkter?"
   stikkord: [spesialundervisning, spesialpedagogikk, tilrettelegging, kapittel 11]
   relatert: [individuelt-tilrettelagt-opplaering, personlig-assistanse, fysisk-tilrettelegging, enkeltvedtak]
@@ -49,13 +54,15 @@
   type: begrep
   tittel: { nb: Individuelt tilrettelagt opplæring, nn: Individuelt tilrettelagd opplæring }
   tekst:
-    nb: Individuelt tilrettelagt opplæring er faglig tilrettelegging for en elev som trenger det for å få tilfredsstillende utbytte, for eksempel andre kompetansemål, avvik fra målene eller annen organisering. Det het spesialundervisning før opplæringslova fra 2024. Det krever samtykke, en sakkyndig vurdering fra PP-tjenesten og et vedtak, og skolen lager en individuell opplæringsplan.
-    nn: Individuelt tilrettelagd opplæring er fagleg tilrettelegging for ein elev som treng det for å få tilfredsstillande utbytte, til dømes andre kompetansemål, avvik frå måla eller anna organisering. Det heitte spesialundervisning før opplæringslova frå 2024. Det krev samtykke, ei sakkunnig vurdering frå PP-tenesta og eit vedtak, og skolen lagar ein individuell opplæringsplan.
+    nb: Individuelt tilrettelagt opplæring er faglig tilrettelegging for en elev som trenger det for å få tilfredsstillende utbytte, for eksempel andre kompetansemål, avvik fra målene eller annen organisering. Det het spesialundervisning før opplæringslova fra 2024. Det krever samtykke, en sakkyndig vurdering fra PP-tjenesten og et vedtak, og skolen lager en individuell opplæringsplan. Lærekandidater har samme rett, og lærlinger og praksisbrevkandidater har den når fylkeskommunen har ansvaret for opplæringen.
+    nn: Individuelt tilrettelagd opplæring er fagleg tilrettelegging for ein elev som treng det for å få tilfredsstillande utbytte, til dømes andre kompetansemål, avvik frå måla eller anna organisering. Det heitte spesialundervisning før opplæringslova frå 2024. Det krev samtykke, ei sakkunnig vurdering frå PP-tenesta og eit vedtak, og skolen lagar ein individuell opplæringsplan. Lærekandidatar har same rett, og lærlingar og praksisbrevkandidatar har han når fylkeskommunen har ansvaret for opplæringa.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-6 Individuelt tilrettelagd opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§11-6" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "5.4 Individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring" }
+    - { id: opplaeringslova, punkt: "§ 7-4 sjette ledd og § 7-1 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-4" }
   kontrollert: null
   kontrollsporsmal:
+    - "Lagt til etter eiers spørsmål 06.10.2026: Er setningen om lærekandidater, lærlinger og praksisbrevkandidater riktig (§ 7-4 sjette ledd og § 7-1 tredje ledd)?"
     - "Er det riktig og nyttig å skrive at dette het spesialundervisning før, eller kan det misforstås som at innholdet er det samme?"
   stikkord: [spesialundervisning, ITO, individuelt tilrettelagd opplæring, spesialpedagogisk hjelp]
   relatert: [individuell-tilrettelegging, sakkyndig-vurdering, individuell-opplaeringsplan]

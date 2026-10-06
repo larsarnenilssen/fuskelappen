@@ -252,3 +252,55 @@ Eier liker plasseringen, ikonet, sammenligningen og at veiene har hver sin fane.
 - **Knappen:** Lenken nederst i hver vei er en fylt knapp i hele bredden, «Mer om lærling», «Mer om fagbrev på jobb» osv. Linjen under sier hva siden har: «Kommer fra og veien videre».
 - **Kortnavn:** Hver vei har et kort navn til knappen (`kortnavn`), så teksten står på én linje i 390 px. Eksempler: «tidlig lærekontrakt» for lærling rett etter grunnskolen eller Vg1, og «opphenting og kryssløp» for lærling etter Vg1 studieforberedende.
 - **320 px:** Knappen har mindre luft og litt mindre skrift. Tre navn går likevel over to linjer: «praksisbrev til fagbrev», «opphenting og kryssløp» og «lærekandidat til lærling».
+
+## Svar fra eier (06.10.2026, runde 4) og hva som er gjort
+
+| Nr. | Svar | Gjort |
+|---|---|---|
+| 1 | Som anbefalt | Siden heter «Lærlinger og kandidater», med adressen `#/opplaeringslop/laerlinger-og-kandidater`. Stikkordene til søket kommer med innholdet. |
+| 2 | Som anbefalt | Fargene beholdes. |
+| 3 | Som anbefalt, og få fram at kompetansebevis også er dokumentasjon for elever som ikke har fullført | Under målet «Kompetansebevis» står det at kompetansebevis også er dokumentasjonen for elever som ikke har bestått alt, og for elever som bare har hatt deler av et fag (ofo. § 9-51). Ordet lenker til begrepet. |
+| 4 | Ta med det loven sier, men ikke som overgang, og bare der det er naturlig å skrive om kontrakten | «Når kontrakten sies opp eller heves» står i «Om veien» på veiene med kontrakt i bedrift (ol. § 7-3 og § 7-4 fjerde ledd). Det samme står i begrepet «Kontrakt om opplæring», med kontrollspørsmål. |
+| 5 | Som anbefalt, men ingen regel eller bestemmelse uten belegg i kildene eller eiers samtykke i chatten | Mockupen er gått gjennom. Påstander uten kilde er tatt bort (se under). |
+| 6 | Vurder to kolonner på skrivebord | Fra 64rem står tre visninger i to kolonner (se under). |
+| 7 | Hva er hensikten? | Svar i chatten. Gjøres i en egen runde hvis det er hensiktsmessig. |
+| 8, 9 | Som anbefalt | Særløp følger Udir-1. Rammene for opphenting (2018) er tatt bort som kilde, og Grep (YFO2002) er lagt til. |
+| 10 | Kan ikke begge brukes? | Ja. Lovteksten (ol. § 7-2) er hjemmelen, og merknaden er Udirs forklaring. Merknaden kan lenkes som kilde, men henvisningen til § 7-7 tredje ledd gjengis ikke. |
+| 11 | Sjekk om lærlinger også har rett til individuell tilrettelegging | Se under. |
+| 12 | Hva er kasuset? | Svar i chatten. Fremmedspråk gjelder ikke yrkeskompetanse, så punktet tas ikke med. |
+| 13, 14 | Greit | Som anbefalt. |
+| 15 | Følg loven | Begrepet «Påbygging» og mockupen følger ol. § 5-7. |
+
+**Gjennomgangen av mockupen (svar 5):**
+- Tatt bort, fordi det ikke står i kildene:
+  - «Ordningen brukes mest av voksne», «Praksisbrevordningen er laget for ungdom», «Som for ungdom»
+  - «Fylkeskommunen kan godkjenne slike kontrakter også for voksne»
+  - «Opplæringen kan da tilpasses det de kan fra før»
+  - «Vanligvis 2 år» for praksisbrevkandidater
+  - «Står i planen for kandidaten»
+- Voksne står nå bare der kildene sier noe: ol. § 18-3 andre ledd (tilbud fram til sluttkompetansen, og fag- eller svennebrev for dem med mye realkompetanse) og § 18-3 tredje ledd (voksne som velger kapittel 5).
+- Praksiskandidaten tar «fag- eller svenneprøve, og eksamen når læreplanverket krever det» (ofo. § 9-25 tredje ledd), ikke alltid eksamen.
+- Lærekandidatens fellesfag: «Kandidaten prøves i målene som er fastsatt for kandidaten. Forskriften har ingen egen regel om fellesfag for lærekandidater.» I «Fellesfagene i alle veiene» står «Ingen egen regel».
+- Godskriving gjengir regelen slik den står: «For lærekandidater godskrives tidligere læretid etter en konkret vurdering» (§ 6-9 tredje ledd), og «tidligere læretid i lærefaget skal godskrives fullt ut» (§ 6-9 første ledd).
+- At Vg3 påbygging bruker opp ungdomsretten, har eier sagt (04.10.2026), og det står som kilde. I innholdet blir det en post i praksislisten.
+
+**To kolonner på skrivebord (svar 6), fra 64rem, siden opptil 72rem bred:**
+- **«Veiene»:** målet, filteret og veiene som en liste til venstre. Den valgte veien står til høyre med stegene, faktaene og «Mer om …». Valget står i adressen (`vei=`), og kolonnen står fast når skjermen er høy nok (fra 46rem).
+- **«Bytte vei»:** utgangspunktene som en liste til venstre, og veiene videre til høyre.
+- **Siden for hver vei:**
+  - Prøven i Vurdering står over begge kolonnene.
+  - Venstre: stegene og «Om veien».
+  - Høyre: «Kommer fra» og «Veien videre».
+- **«Sammenlign»:** én kolonne. Boksen er allerede to kolonner, og blir bredere.
+- **Stegene** står på rad når kolonnen er bred nok (container query, 34rem), ellers som en sti. Det gjelder også i kolonnen til høyre.
+- **Mobil og nettbrett under 64rem:** som før, i én kolonne.
+
+**Individuell tilrettelegging (svar 11):**
+- **Hva kildene sier:**
+  - ol. §§ 11-4–11-6 gir rettighetene til elever.
+  - Lærekandidater har dem etter § 7-4 sjette ledd, også i bedriften.
+  - Lærlinger og praksisbrevkandidater har reglene for elever bare når fylkeskommunen har ansvaret for opplæringen (§ 7-1 tredje ledd). I lærebedriften skal lærebedriften sørge for tilpasset opplæring (§ 11-1 andre punktum).
+  - For lærlinger kan det ikke gjøres unntak fra læreplanverket (ofo. § 6-4 andre ledd).
+- **Endret, med kontrollspørsmål:**
+  - Begrepene «Individuell tilrettelegging» og «Individuelt tilrettelagt opplæring» har fått en setning om lærekandidater, lærlinger og praksisbrevkandidater, med § 7-4 sjette ledd, § 7-1 tredje ledd og § 11-1 som kilder.
+  - Begrepet «Tilpasset opplæring» sier at lærebedriften har samme plikt for dem som har læretid i bedrift.

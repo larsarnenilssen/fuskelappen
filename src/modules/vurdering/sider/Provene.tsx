@@ -16,7 +16,7 @@ import { Tabell } from '../../../components/Tabell.tsx';
 import { type Forklaringselement, hentInnhold, klageRute, UDIR_PROVER, UNDERSIDER } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
 import { kalenderLenke } from '../../kalender/adresse.ts';
-import { type Mal, VEIER } from '../../opplaeringslop/fagbrev/mockup.ts';
+import { type Mal, VEIER, veiRute } from '../../opplaeringslop/fagbrev/mockup.ts';
 import { Lukketkort } from '../../opplaeringslop/sider/fagbrevDeler.tsx';
 
 const MAL: readonly Mal[] = ['fagbrev', 'praksisbrev', 'kompetansebevis'];
@@ -64,7 +64,7 @@ export default function Provene() {
                     <ul class="fag-ifaget-lenker">
                       {VEIER.filter((v) => v.mal === mal).map((v) => (
                         <li key={v.id}>
-                          <a class="lenke-pil" href={`#/opplaeringslop/fag-og-svennebrev/${v.id}`}>
+                          <a class="lenke-pil" href={`#${veiRute(v.id)}`}>
                             {v.tittel}
                             <Ikon navn="hoyre" class="ikon-liten" />
                           </a>

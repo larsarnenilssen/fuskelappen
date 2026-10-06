@@ -7914,7 +7914,12 @@ a.knapp {
   color: var(--farge-tekst-dempet);
 }
 
-@media (min-width: 40rem) {
+/* Stegene står på rad når kolonnen er bred nok, uansett skjermbredde (kortet på mobil, kolonnen til høyre på skrivebord). */
+.fb-steg-ramme {
+  container-type: inline-size;
+}
+
+@container (min-width: 34rem) {
   .fb-steg {
     display: grid;
     grid-auto-columns: 1fr;
@@ -8110,6 +8115,11 @@ a.knapp {
   .fb-om .fb-fakta > div:nth-child(2) {
     border-top: 0;
   }
+
+  /* En lang tekst (f.eks. om oppsigelse og heving) går over begge kolonnene. */
+  .fb-om .fb-fakta > .fb-fakta-bred {
+    grid-column: 1 / -1;
+  }
 }
 
 .fb-hvor {
@@ -8161,4 +8171,106 @@ a.knapp {
     padding-inline: var(--rom-3);
     font-size: var(--str-s);
   }
+}
+
+/* ---------- To kolonner på skrivebord (eier 06.10.2026, svar 6) ----------
+   Fra 64rem (samme som TO_KOLONNER i fagbrevDeler.tsx) er siden bredere. «Veiene»: listen til venstre og den valgte
+   veien til høyre, som står fast når skjermen er høy nok. «Bytte vei»: utgangspunktene til venstre. Siden for hver vei:
+   stegene og «Om veien» til venstre, «Kommer fra» og «Veien videre» til høyre. Én kolonne under 64rem. */
+@media (min-width: 64rem) {
+  main:has(.fb-bred) {
+    max-width: 72rem;
+  }
+
+  .fb-to {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: var(--rom-6);
+    align-items: start;
+  }
+
+  .fb-to-veiene,
+  .fb-to-bytte {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
+
+  .fb-to-side > section:first-child > h2,
+  .fb-to-side > h2:first-child,
+  .fb-to-hoved > h2:first-child {
+    margin-top: 0;
+  }
+
+  .fb-to-bytte .fb-fra {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fb-to-bytte .fb-fra .sokefilter-valg {
+    min-height: var(--trykkflate);
+    border-radius: var(--radius-m);
+  }
+}
+
+@media (min-width: 64rem) and (min-height: 46rem) {
+  .fb-valgt {
+    position: sticky;
+    top: calc(var(--topplinje-hoyde) + var(--rom-3));
+  }
+}
+
+.fb-velg-liste {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fb-velg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 5px solid transparent;
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fb-velg[aria-pressed='true'] {
+  border-color: var(--farge-merke);
+  border-left-color: var(--farge-merke);
+  background: var(--farge-flate-2);
+}
+
+.fb-velg-tittel {
+  font-weight: 650;
+}
+
+.fb-velg-kort {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.fb-valgt {
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-top: 5px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.fb-valgt-tittel {
+  margin: 0;
+  font-size: var(--str-l);
+}
+
+.fb-valgt-kort {
+  margin: 0 0 var(--rom-3);
+  color: var(--farge-tekst-dempet);
 }

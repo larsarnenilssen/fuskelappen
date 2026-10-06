@@ -3,31 +3,52 @@
 // overgangene. Stegene står som en loddrett sti på mobil og som en rad med like brede steg på stor skjerm (eier
 // 06.10.2026, runde 2).
 import type { ComponentChildren } from 'preact';
-import { useId, useState } from 'preact/hooks';
+import { useEffect, useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
-import type { Del, Vei } from '../fagbrev/mockup.ts';
+import { type Del, harKontrakt, KONTRAKT_SLUTT, type Vei } from '../fagbrev/mockup.ts';
+
+export { FAGBREV_RUTE, veiRute } from '../fagbrev/mockup.ts';
 
 const DELER: readonly Del[] = ['skole', 'bedrift', 'praksis', 'prove'];
+
+/** Fra denne bredden står sidene om lærlinger og kandidater i to kolonner (eier 06.10.2026, svar 6). Samme verdi i base.css. */
+const TO_KOLONNER = '(min-width: 64rem)';
+
+/** Om skjermen er bred nok til to kolonner. Følger med når vinduet endrer størrelse. */
+export function useBred(): boolean {
+  const [bred, settBred] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia(TO_KOLONNER).matches);
+  useEffect(() => {
+    if (!window.matchMedia) return;
+    const m = window.matchMedia(TO_KOLONNER);
+    const endret = () => settBred(m.matches);
+    m.addEventListener('change', endret);
+    return () => m.removeEventListener('change', endret);
+  }, []);
+  return bred;
+}
 
 /** Stegene i veien. Hvert steg lenker til tilbudet, begrepet eller prøven, og viser delen og tiden under navnet. */
 export function Stegrad({ vei }: { vei: Vei }) {
   const { t } = useTekst();
+  // Rammen er en container: stegene står på rad når det er plass i kolonnen, ellers som en sti.
   return (
-    <ol class="fb-steg" aria-label={t('opplaeringslop.fagbrev.stegene')}>
-      {vei.steg.map((s, i) => (
-        <li key={i} data-del={s.del}>
-          <a class="fb-steg-knapp" href={`#${s.rute}`}>
-            <span class="fb-steg-merke" aria-hidden="true" />
-            <span class="fb-steg-tekst">
-              <span class="fb-steg-navn">{s.tekst}</span>
-              <span class="fb-steg-meta">{[t(`opplaeringslop.fagbrev.del.${s.del}`), s.tid].filter(Boolean).join(' · ')}</span>
-            </span>
-            <Ikon navn="hoyre" class="ikon-liten fb-steg-pil" />
-          </a>
-        </li>
-      ))}
-    </ol>
+    <div class="fb-steg-ramme">
+      <ol class="fb-steg" aria-label={t('opplaeringslop.fagbrev.stegene')}>
+        {vei.steg.map((s, i) => (
+          <li key={i} data-del={s.del}>
+            <a class="fb-steg-knapp" href={`#${s.rute}`}>
+              <span class="fb-steg-merke" aria-hidden="true" />
+              <span class="fb-steg-tekst">
+                <span class="fb-steg-navn">{s.tekst}</span>
+                <span class="fb-steg-meta">{[t(`opplaeringslop.fagbrev.del.${s.del}`), s.tid].filter(Boolean).join(' · ')}</span>
+              </span>
+              <Ikon navn="hoyre" class="ikon-liten fb-steg-pil" />
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
   );
 }
 
@@ -45,31 +66,36 @@ export function Fargeforklaring() {
   );
 }
 
-/** Hvem som melder opp, fellesfagene, voksne og kilden. Med `alt` også kontrakten, prøven og dokumentasjonen. */
+/**
+ * Hvem som melder opp, fellesfagene, voksne og kilden. Med `alt` også kontrakten, prøven, dokumentasjonen og hva som
+ * skjer når kontrakten sies opp eller heves (eier 06.10.2026, svar 4: der det er naturlig å skrive om kontrakten).
+ */
 export function Fakta({ vei, med = 'kort' }: { vei: Vei; med?: 'kort' | 'alt' }) {
   const { t } = useTekst();
   const alt = med === 'alt';
-  const rader: [string, string, boolean][] = [
+  const slutt = alt && harKontrakt(vei);
+  const rader: [string, string | undefined, boolean][] = [
     [t('opplaeringslop.fagbrev.kontrakt'), vei.kontrakt, alt],
     [t('opplaeringslop.fagbrev.prove'), vei.prove, alt],
     [t('opplaeringslop.fagbrev.melderOpp'), vei.melderOpp, true],
     [t('opplaeringslop.fagbrev.fellesfag'), vei.fellesfagTekst, true],
     [t('opplaeringslop.fagbrev.dokumentasjon'), vei.dokumentasjon, alt],
     [t('opplaeringslop.fagbrev.voksne'), vei.voksne, true],
+    [t('opplaeringslop.fagbrev.kontraktSlutt'), KONTRAKT_SLUTT.tekst, slutt],
   ];
   return (
     <>
       <dl class="fb-fakta">
-        {rader
-          .filter(([, , vis]) => vis)
-          .map(([dt, dd]) => (
-            <div key={dt}>
+        {rader.map(([dt, dd, vis]) =>
+          vis && dd ? (
+            <div key={dt} class={dd.length > 160 ? 'fb-fakta-bred' : undefined}>
               <dt>{dt}</dt>
               <dd>{dd}</dd>
             </div>
-          ))}
+          ) : null,
+        )}
       </dl>
-      <Kilder kilder={vei.kilder} />
+      <Kilder kilder={slutt ? [...vei.kilder, ...KONTRAKT_SLUTT.kilder] : vei.kilder} />
     </>
   );
 }
@@ -122,5 +148,3 @@ export function Overgangskort({ rute, ikon, tittel, vilkar, kilder }: { rute: st
   );
 }
 
-export const FAGBREV_RUTE = '/opplaeringslop/fag-og-svennebrev';
-export const veiRute = (id: string) => `${FAGBREV_RUTE}/${id}`;
