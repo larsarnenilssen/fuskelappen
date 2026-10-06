@@ -56,8 +56,8 @@ export const VEIER: Vei[] = [
   {
     id: 'laerling',
     mal: 'fagbrev',
-    tittel: 'Lærling i hovedmodellen',
-    kort: 'To år i skole og to år læretid i bedrift',
+    tittel: 'Lærling',
+    kort: 'Hovedmodellen: to år i skole og to år i bedrift',
     ingress:
       'Den vanlige veien: Vg1 og Vg2 på et yrkesfaglig utdanningsprogram, og så læretid i bedrift med lærekontrakt.',
     steg: [
@@ -92,7 +92,7 @@ export const VEIER: Vei[] = [
   {
     id: 'laerling-tidlig',
     mal: 'fagbrev',
-    tittel: 'Lærling rett etter grunnskolen eller etter Vg1',
+    tittel: 'Lærling rett etter grunnskolen eller Vg1',
     kort: '0+4, 1+3 og særløp',
     ingress:
       'Opplæringen kan organiseres på en annen måte enn hovedmodellen, f.eks. med hele løpet i bedrift (0+4) eller med kontrakt etter Vg1 (1+3).',
@@ -129,8 +129,8 @@ export const VEIER: Vei[] = [
   {
     id: 'praksisbrev-fagbrev',
     mal: 'fagbrev',
-    tittel: 'Praksisbrev og så fag- eller svennebrev',
-    kort: 'Praksisbrevprøve først, og så læretid videre',
+    tittel: 'Praksisbrevkandidat som blir lærling',
+    kort: 'Praksisbrev først, og så fag- eller svennebrev',
     ingress:
       'Praksisbrevkandidaten tar praksisbrevprøven og kan så fortsette som lærling mot fag- eller svennebrev.',
     steg: [
@@ -168,7 +168,7 @@ export const VEIER: Vei[] = [
   {
     id: 'fra-studieforberedende',
     mal: 'fagbrev',
-    tittel: 'Fra Vg1 studieforberedende',
+    tittel: 'Lærling etter Vg1 studieforberedende',
     kort: 'Med yrkesfaglig opphenting eller kryssløp',
     ingress:
       'En elev med Vg1 studiespesialisering kan gå over til Vg2 på yrkesfag, med yrkesfaglig opphenting eller som kryssløp.',
@@ -211,8 +211,8 @@ export const VEIER: Vei[] = [
   {
     id: 'vg3-i-skole',
     mal: 'fagbrev',
-    tittel: 'Vg3 i skole uten læreplass',
-    kort: 'Fag- eller svenneprøve som elev',
+    tittel: 'Elev på Vg3 i skole',
+    kort: 'Uten læreplass: fag- eller svenneprøve som elev',
     ingress:
       'Den som oppfyller vilkårene for læreplass, men ikke får det, har rett til et annet tilbud på Vg3, og tar prøven som elev.',
     steg: [
@@ -267,7 +267,7 @@ export const VEIER: Vei[] = [
   {
     id: 'fagbrev-pa-jobb',
     mal: 'fagbrev',
-    tittel: 'Fagbrev på jobb',
+    tittel: 'Kandidat for fagbrev på jobb',
     kort: 'Praksis og kontrakt med arbeidsgiveren',
     ingress:
       'For den som jobber i faget: minst ett års allsidig praksis i heltid før kontrakten, og så minst ett år med kontrakt.',
@@ -335,7 +335,7 @@ export const VEIER: Vei[] = [
     id: 'praksisbrevkandidat',
     mal: 'praksisbrev',
     tittel: 'Praksisbrevkandidat',
-    kort: 'Opplæring etter lokal læreplan',
+    kort: 'Opplæring etter lokal læreplan, og praksisbrev',
     ingress:
       'Opplæring i bedrift etter en lokal læreplan, med praksisbrevprøve til slutt.',
     steg: [
@@ -368,7 +368,7 @@ export const VEIER: Vei[] = [
     id: 'laerekandidat',
     mal: 'kompetansebevis',
     tittel: 'Lærekandidat',
-    kort: 'Opplæring mot mål som er fastsatt for kandidaten',
+    kort: 'Opplæring mot mål som er fastsatt for kandidaten, og kompetansebevis',
     ingress:
       'Opplæring mot en mindre omfattende prøve enn fag- eller svenneprøven. En elev kan bli lærekandidat etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten.',
     steg: [

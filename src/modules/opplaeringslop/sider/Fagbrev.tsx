@@ -13,7 +13,7 @@ import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import type { SideProps } from '../../typer.ts';
 import { finnVei, maal, type Mal, UTGANGSPUNKTER, type Vei, VEIER } from '../fagbrev/mockup.ts';
 import { Brodsmuler } from './felles.tsx';
-import { FAGBREV_RUTE, Fakta, Fargeforklaring, Overgangskort, Stegrad, veiRute } from './fagbrevDeler.tsx';
+import { FAGBREV_RUTE, Fakta, Fargeforklaring, Lukketkort, Overgangskort, Stegrad, veiRute } from './fagbrevDeler.tsx';
 
 type Fane = 'veiene' | 'sammenlign' | 'bytte';
 const FANER: readonly Fane[] = ['veiene', 'sammenlign', 'bytte'];
@@ -53,26 +53,15 @@ type Endre = (v: Partial<Valg>) => void;
 /** En vei som et lukket kort: tittelen og en linje, og stegene og faktaene når det åpnes. */
 function Veikort({ vei }: { vei: Vei }) {
   const { t } = useTekst();
-  const [aapen, settAapen] = useState(false);
-  const id = `vei-${vei.id}`;
   return (
-    <div class="innholdskort fb-vei">
-      <button type="button" class="innholdskort-knapp" aria-expanded={aapen} aria-controls={id} onClick={() => settAapen(!aapen)}>
-        <span class="innholdskort-topp">
-          <span class="innholdskort-tittel">{vei.tittel}</span>
-          <span class="innholdskort-smakebit">{vei.kort}</span>
-        </span>
-        <Ikon navn={aapen ? 'opp' : 'ned'} class="innholdskort-pil" />
-      </button>
-      <div id={id} class="innholdskort-innhold" hidden={!aapen}>
-        <Stegrad vei={vei} />
-        <Fakta vei={vei} />
-        <a class="lenke-pil" href={`#${veiRute(vei.id)}`}>
-          {t('opplaeringslop.fagbrev.lesMer')}
-          <Ikon navn="hoyre" class="ikon-liten" />
-        </a>
-      </div>
-    </div>
+    <Lukketkort tittel={vei.tittel} smakebit={vei.kort} klasse="fb-vei">
+      <Stegrad vei={vei} />
+      <Fakta vei={vei} />
+      <a class="lenke-pil" href={`#${veiRute(vei.id)}`}>
+        {t('opplaeringslop.fagbrev.lesMer')}
+        <Ikon navn="hoyre" class="ikon-liten" />
+      </a>
+    </Lukketkort>
   );
 }
 
@@ -152,18 +141,20 @@ function Sammenlign({ valg, endre }: { valg: Valg; endre: Endre }) {
           rad('kilde', t('opplaeringslop.fagbrev.kilde'), (v) => v.kilder.join(', ')),
         ]}
       />
-      <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.fellesfagListe')}</h2>
-      <ul class="fb-fellesfag">
-        {VEIER.map((v) => (
-          <li key={v.id} data-krav={v.fellesfag}>
-            <a href={`#${veiRute(v.id)}`}>{v.tittel}</a>
-            <span class="fb-fellesfag-krav">
-              <Ikon navn={v.fellesfag === 'ja' ? 'hake' : v.fellesfag === 'nei' ? 'lukk' : 'sporsmal'} class="ikon-liten" />
-              {t(`opplaeringslop.fagbrev.fellesfagKrav.${v.fellesfag}`)}
-            </span>
-          </li>
-        ))}
-      </ul>
+      {/* Lukket fra start: fellesfagene for de to veiene står allerede i boksen over (eier 06.10.2026, runde 2). */}
+      <Lukketkort tittel={t('opplaeringslop.fagbrev.fellesfagListe')} smakebit={t('opplaeringslop.fagbrev.fellesfagListeTekst')}>
+        <ul class="fb-fellesfag">
+          {VEIER.map((v) => (
+            <li key={v.id} data-krav={v.fellesfag}>
+              <a href={`#${veiRute(v.id)}`}>{v.tittel}</a>
+              <span class="fb-fellesfag-krav">
+                <Ikon navn={v.fellesfag === 'ja' ? 'hake' : v.fellesfag === 'nei' ? 'lukk' : 'sporsmal'} class="ikon-liten" />
+                {t(`opplaeringslop.fagbrev.fellesfagKrav.${v.fellesfag}`)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </Lukketkort>
     </>
   );
 }
@@ -176,7 +167,8 @@ function Bytte({ valg, endre }: { valg: Valg; endre: Endre }) {
   const fraTekst = /^Vg\d/.test(fra.tittel) ? fra.tittel : fra.tittel.toLowerCase();
   return (
     <>
-      <h2 class="liten-overskrift" id="fb-hvor">
+      <h2 class="liten-overskrift fb-hvor" id="fb-hvor">
+        <Ikon navn="sted" />
         {t('opplaeringslop.fagbrev.hvorErDu')}
       </h2>
       <div class="sokefilter" role="group" aria-labelledby="fb-hvor">

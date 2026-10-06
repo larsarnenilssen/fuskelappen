@@ -7840,55 +7840,118 @@ a.knapp {
   margin-top: 0;
 }
 
+/* Stegene: en loddrett sti på mobil, med en prikk i fargen til delen på linjen og delen og tiden under navnet. Fra
+   40rem en rad med like brede steg, med en stripe i fargen øverst og pil mellom (eier 06.10.2026, runde 2). */
 .fb-steg {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: var(--rom-2) var(--rom-4);
+  position: relative;
   margin: 0 0 var(--rom-3);
   padding: 0;
   list-style: none;
 }
 
-.fb-steg > li {
-  position: relative;
-  display: flex;
+.fb-steg::before {
+  content: '';
+  position: absolute;
+  top: 1.4rem;
+  bottom: 1.4rem;
+  left: calc(0.6rem - 1px);
+  width: 2px;
+  background: var(--farge-linje);
 }
 
-/* Pilen mellom stegene. */
-.fb-steg > li + li::before {
-  content: '→';
-  position: absolute;
-  left: calc(-1 * var(--rom-4));
-  top: 50%;
-  width: var(--rom-4);
-  transform: translateY(-50%);
-  color: var(--farge-tekst-dempet);
-  text-align: center;
+.fb-steg > li {
+  position: relative;
 }
 
 .fb-steg-knapp {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: var(--rom-3);
   min-height: var(--trykkflate);
-  padding: var(--rom-1) var(--rom-3);
-  border: var(--strek) solid var(--fb-farge);
-  border-left-width: 6px;
-  border-radius: var(--radius-s);
-  background: color-mix(in srgb, var(--fb-farge) 10%, var(--farge-flate));
+  padding: var(--rom-2) 0;
   color: var(--farge-tekst);
   text-decoration: none;
 }
 
-.fb-steg-tekst {
-  font-size: var(--str-s);
-  font-weight: 650;
+.fb-steg-merke {
+  position: relative;
+  flex: none;
+  box-sizing: border-box;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 3px solid var(--fb-farge);
+  border-radius: 50%;
+  background: var(--farge-flate);
 }
 
-.fb-steg-tid {
+/* Prøven er målet: en fylt prikk. */
+[data-del='prove'] > .fb-steg-knapp .fb-steg-merke {
+  background: var(--fb-farge);
+}
+
+.fb-steg-tekst {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fb-steg-navn {
+  color: var(--farge-lenke);
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.fb-steg-meta {
   color: var(--farge-tekst-dempet);
   font-size: var(--str-xs);
+}
+
+.fb-steg-pil {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+@media (min-width: 40rem) {
+  .fb-steg {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: var(--rom-4);
+  }
+
+  .fb-steg::before {
+    display: none;
+  }
+
+  /* Pilen mellom stegene står i mellomrommet. */
+  .fb-steg > li + li::before {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--rom-4));
+    width: var(--rom-4);
+    transform: translateY(-50%);
+    color: var(--farge-tekst-dempet);
+    text-align: center;
+  }
+
+  .fb-steg-knapp {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--rom-2) var(--rom-3);
+    border: var(--strek) solid var(--farge-kant);
+    border-top: 5px solid var(--fb-farge);
+    border-radius: var(--radius-s);
+    background: color-mix(in srgb, var(--fb-farge) 8%, var(--farge-flate));
+  }
+
+  .fb-steg-merke,
+  .fb-steg-pil {
+    display: none;
+  }
 }
 
 [data-del='skole'] {
@@ -8017,4 +8080,51 @@ a.knapp {
 
 .fb-prove {
   margin-bottom: var(--rom-4);
+}
+
+/* «Om veien» på siden for hver vei: faktaene i en egen ramme, i to kolonner der det er plass. */
+.fb-om {
+  margin: var(--rom-4) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 5px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.fb-om > h2 {
+  margin-top: 0;
+}
+
+.fb-om .fb-fakta > div:first-child {
+  border-top: 0;
+}
+
+@media (min-width: 40rem) {
+  .fb-om .fb-fakta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 var(--rom-4);
+  }
+
+  .fb-om .fb-fakta > div:nth-child(2) {
+    border-top: 0;
+  }
+}
+
+.fb-hvor {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.fb-hit .fag-ifaget-i {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.fb-hit-prove {
+  margin: var(--rom-3) 0 0;
+  font-size: var(--str-s);
 }

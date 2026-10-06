@@ -121,3 +121,23 @@ Innholdet i mockupen er et utkast. Det står i `src/modules/opplaeringslop/fagbr
 7. **Nasjonale rammer for yrkesfaglig opphenting (2018)** har hjemmel i den gamle loven. Kan de brukes som kilde, med en merknad om det?
 8. **Stor skjerm:** Skal veiene stå i to kolonner fra 64rem, og «Sammenlign» bli bredere, som kalkulatorene?
 9. **VIGO og fagarkene:** Du ønsket at VIGO også kontrollerer fagarkene, og VIGO og Grep er uenige om «bygger på» for noen tilbud (`docs/TILBUDSSTRUKTUR.md`). Skal det tas i denne pakken, eller som en egen pakke etterpå?
+
+## Svar fra eier (06.10.2026, runde 1) og endringer i runde 2
+
+Eier liker plasseringen, ikonet, sammenligningen og at veiene har hver sin fane. Endret i runde 2:
+
+- **Rollene først:**
+  - Siden heter «Lærlinger og kandidater».
+  - Ingressen og kortet på Opplæringstilbud nevner lærling, lærekandidat, praksisbrevkandidat og praksiskandidat, og fag- og svennebrev, praksisbrev og kompetansebevis står som det veiene ender i.
+  - Veiene har rollen i tittelen, f.eks. «Praksisbrevkandidat som blir lærling», «Elev på Vg3 i skole» og «Kandidat for fagbrev på jobb».
+  - Adressen er fortsatt `#/opplaeringslop/fag-og-svennebrev` og byttes når navnet er bestemt.
+- **«Fellesfagene i alle veiene»** i «Sammenlign» er et lukket kort.
+  - Bakgrunnen: listen kom fra mockup 4 («fellesfag i veiene som egen liste»), for å se alle veiene samlet.
+  - Fellesfagene for de to valgte veiene står allerede i boksen.
+- **Stegene:**
+  - På mobil en loddrett sti, som stiene ellers i appen: en prikk i fargen til delen på linjen, navnet som lenke og delen og tiden under. Prøven har fylt prikk.
+  - Fra 40rem en rad med like brede steg, med en stripe i fargen øverst og pil mellom.
+- **Siden for hver vei:**
+  - Faktaene står i rammen «Om veien», i to kolonner på stor skjerm.
+  - «Kommer fra» har ikonet «sted» (en nål på kartet) i stedet for pil tilbake. Det samme ikonet står ved «Hvor er du nå?» i «Bytte vei».
+- **«Veiene hit»** på prøvesiden er et lukket kort under prøvene, med veiene gruppert etter prøven de fører til.

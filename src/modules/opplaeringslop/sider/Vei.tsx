@@ -46,6 +46,12 @@ export default function Vei({ parametre }: SideProps) {
         <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.stegene')}</h2>
         <Fargeforklaring />
         <Stegrad vei={vei} />
+      </section>
+      {/* Faktaene om veien i en egen ramme, så de skiller seg fra stegene og overgangene (eier 06.10.2026, runde 2). */}
+      <section class="fb-om" aria-labelledby="fb-om">
+        <h2 class="liten-overskrift" id="fb-om">
+          {t('opplaeringslop.fagbrev.omVeien')}
+        </h2>
         <Fakta vei={vei} med="alt" />
       </section>
       {fra.length > 0 && (
@@ -53,7 +59,7 @@ export default function Vei({ parametre }: SideProps) {
           <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.kommerFra')}</h2>
           <ul class="fb-overganger">
             {fra.map(({ fra: u, overgang }) => (
-              <Overgangskort key={u.id} rute={lenke(FAGBREV_RUTE, { fane: 'bytte', fra: u.id })} ikon="tilbake" tittel={u.tittel} vilkar={overgang.vilkar} kilder={overgang.kilder} />
+              <Overgangskort key={u.id} rute={lenke(FAGBREV_RUTE, { fane: 'bytte', fra: u.id })} ikon="sted" tittel={u.tittel} vilkar={overgang.vilkar} kilder={overgang.kilder} />
             ))}
           </ul>
         </section>

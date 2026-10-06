@@ -3,6 +3,7 @@
 // resultat, det som gjelder hele veien, og ny og utsatt prøve samlet i én boks. Kortene står i
 // content/vurdering/proevene.yaml. Veiene fram til prøven kommer i Opplæringstilbud («Fag- og svennebrev»), og da får
 // siden «Veiene hit».
+import { Fragment } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
@@ -15,7 +16,10 @@ import { Tabell } from '../../../components/Tabell.tsx';
 import { type Forklaringselement, hentInnhold, klageRute, UDIR_PROVER, UNDERSIDER } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
 import { kalenderLenke } from '../../kalender/adresse.ts';
-import { VEIER } from '../../opplaeringslop/fagbrev/mockup.ts';
+import { type Mal, VEIER } from '../../opplaeringslop/fagbrev/mockup.ts';
+import { Lukketkort } from '../../opplaeringslop/sider/fagbrevDeler.tsx';
+
+const MAL: readonly Mal[] = ['fagbrev', 'praksisbrev', 'kompetansebevis'];
 
 const STI = ['pr-krav', 'pr-oppmelding', 'pr-provenemnda', 'pr-vurdering', 'pr-klage'];
 const HELE_VEIEN = ['pr-tilrettelegging', 'pr-bortvisning'];
@@ -50,23 +54,28 @@ export default function Provene() {
               <h2 class="liten-overskrift">{t('vurdering.provene.prover')}</h2>
               {hva.tabell && <Tabell tabell={hva.tabell} tittel={hva.tittel} />}
               <Innholdskort element={hva} />
+              {/* «Veiene hit» som et lukket kort under prøvene, med lenker tilbake til hver vei i Opplæringstilbud
+                  (MOCKUP, eier 06.10.2026, runde 2). */}
+              <Lukketkort tittel={t('opplaeringslop.fagbrev.veieneHit')} smakebit={t('opplaeringslop.fagbrev.veieneHitTekst', { antall: String(VEIER.length) })} klasse="fb-hit">
+                <p class="fag-ifaget-i">{t('opplaeringslop.fagbrev.iOpplaeringstilbud')}</p>
+                {MAL.map((mal) => (
+                  <Fragment key={mal}>
+                    <h3 class="fb-hit-prove">{t(`opplaeringslop.fagbrev.proveFor.${mal}`)}</h3>
+                    <ul class="fag-ifaget-lenker">
+                      {VEIER.filter((v) => v.mal === mal).map((v) => (
+                        <li key={v.id}>
+                          <a class="lenke-pil" href={`#/opplaeringslop/fag-og-svennebrev/${v.id}`}>
+                            {v.tittel}
+                            <Ikon navn="hoyre" class="ikon-liten" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </Fragment>
+                ))}
+              </Lukketkort>
             </section>
           )}
-          {/* «Veiene hit» med lenker tilbake til hver vei i Opplæringstilbud (MOCKUP, mockup 3, eier 04.10.2026). */}
-          <section>
-            <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.veieneHit')}</h2>
-            <p class="fag-ifaget-i">{t('opplaeringslop.fagbrev.iOpplaeringstilbud')}</p>
-            <ul class="fag-ifaget-lenker">
-              {VEIER.map((v) => (
-                <li key={v.id}>
-                  <a class="lenke-pil" href={`#/opplaeringslop/fag-og-svennebrev/${v.id}`}>
-                    {v.tittel}
-                    <Ikon navn="hoyre" class="ikon-liten" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
           <section>
             <h2 class="liten-overskrift">{t('vurdering.provene.gangen')}</h2>
             <Sti steg={steg} etikett={t('vurdering.provene.gangen')} />

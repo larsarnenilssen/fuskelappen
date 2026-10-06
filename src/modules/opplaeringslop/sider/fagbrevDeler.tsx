@@ -1,12 +1,16 @@
-// Delene som går igjen på sidene om fag- og svennebrev (MOCKUP, fase 6, pakke 6): stegene i en vei som knapper med
-// fargen til delen (skole, kontrakt i bedrift, praksis, prøven), fargeforklaringen og faktaene om veien.
+// Delene som går igjen på sidene om lærlinger og kandidater (MOCKUP, fase 6, pakke 6): stegene i en vei med fargen til
+// delen (skole, kontrakt i bedrift, praksis, prøven), fargeforklaringen, faktaene om veien, lukkede kort og
+// overgangene. Stegene står som en loddrett sti på mobil og som en rad med like brede steg på stor skjerm (eier
+// 06.10.2026, runde 2).
+import type { ComponentChildren } from 'preact';
+import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
 import type { Del, Vei } from '../fagbrev/mockup.ts';
 
 const DELER: readonly Del[] = ['skole', 'bedrift', 'praksis', 'prove'];
 
-/** Stegene i veien som knapper på rad, med pil mellom. Knappene lenker til tilbudet, begrepet eller prøven. */
+/** Stegene i veien. Hvert steg lenker til tilbudet, begrepet eller prøven, og viser delen og tiden under navnet. */
 export function Stegrad({ vei }: { vei: Vei }) {
   const { t } = useTekst();
   return (
@@ -14,9 +18,12 @@ export function Stegrad({ vei }: { vei: Vei }) {
       {vei.steg.map((s, i) => (
         <li key={i} data-del={s.del}>
           <a class="fb-steg-knapp" href={`#${s.rute}`}>
-            <span class="skjult-visuelt">{t(`opplaeringslop.fagbrev.del.${s.del}`)}: </span>
-            <span class="fb-steg-tekst">{s.tekst}</span>
-            {s.tid && <span class="fb-steg-tid">{s.tid}</span>}
+            <span class="fb-steg-merke" aria-hidden="true" />
+            <span class="fb-steg-tekst">
+              <span class="fb-steg-navn">{s.tekst}</span>
+              <span class="fb-steg-meta">{[t(`opplaeringslop.fagbrev.del.${s.del}`), s.tid].filter(Boolean).join(' · ')}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten fb-steg-pil" />
           </a>
         </li>
       ))}
@@ -24,7 +31,7 @@ export function Stegrad({ vei }: { vei: Vei }) {
   );
 }
 
-/** Fargene i stegene med navn, så fargen aldri er det eneste som skiller dem. */
+/** Fargene i stegene med navn. Delen står også i teksten under hvert steg, så fargen er aldri det eneste som skiller. */
 export function Fargeforklaring() {
   const { t } = useTekst();
   return (
@@ -75,6 +82,26 @@ export function Kilder({ kilder }: { kilder: readonly string[] }) {
       <span class="skjult-visuelt">{t('opplaeringslop.fagbrev.kilde')}: </span>
       {kilder.join(' · ')}
     </p>
+  );
+}
+
+/** Et kort som er lukket fra start, med tittel og én linje, som innholdskortene i Vurdering. */
+export function Lukketkort({ tittel, smakebit, children, klasse }: { tittel: string; smakebit: string; children: ComponentChildren; klasse?: string }) {
+  const [aapen, settAapen] = useState(false);
+  const id = useId();
+  return (
+    <div class={`innholdskort${klasse ? ` ${klasse}` : ''}`}>
+      <button type="button" class="innholdskort-knapp" aria-expanded={aapen} aria-controls={id} onClick={() => settAapen(!aapen)}>
+        <span class="innholdskort-topp">
+          <span class="innholdskort-tittel">{tittel}</span>
+          <span class="innholdskort-smakebit">{smakebit}</span>
+        </span>
+        <Ikon navn={aapen ? 'opp' : 'ned'} class="innholdskort-pil" />
+      </button>
+      <div id={id} class="innholdskort-innhold" hidden={!aapen}>
+        {children}
+      </div>
+    </div>
   );
 }
 
