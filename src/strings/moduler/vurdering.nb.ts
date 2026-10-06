@@ -157,7 +157,7 @@ export const vurderingNb = {
     tittel: 'Fag- og svenneprøven og de andre prøvene',
     kort: 'Fag- og svenneprøven',
     beskrivelse: 'Prøvene som sluttvurdering for lærlinger og kandidater: krav, oppmelding, prøvenemnda, karakterer, tilrettelegging, ny prøve og klage.',
-    innledning: 'Fag- og svenneprøven, praksisbrevprøven og kompetanseprøven er sluttvurderingen i fag- og yrkesopplæringen. Veiene fram til prøven kommer i Opplæringstilbud.',
+    innledning: 'Fag- og svenneprøven, praksisbrevprøven og kompetanseprøven er sluttvurderingen i fag- og yrkesopplæringen. Veiene fram til prøven for lærlinger og kandidater står i Opplæringstilbud.',
     prover: 'Prøvene',
     gangen: 'Fra krav til resultat',
     heleVeien: 'Gjelder hele veien',

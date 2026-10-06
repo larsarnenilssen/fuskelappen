@@ -11,9 +11,9 @@ const MODULSPEKER: Record<string, readonly string[]> = {
   kalender: ['kalender'],
   laereplanverket: ['laereplanverket'],
   lov: ['regelverk'],
-  opplaeringslop: ['opplaeringslop'],
+  opplaeringslop: ['opplaeringslop', 'laerlinger'],
   tilrettelegging: ['tilrettelegging'],
-  vurdering: ['vurdering'],
+  vurdering: ['vurdering', 'laerlinger'],
 };
 
 /** Data fra kildene og modulene som viser dem. */

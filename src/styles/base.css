@@ -7807,3 +7807,476 @@ a.knapp {
   min-height: var(--trykkflate);
   margin: var(--rom-3) 0;
 }
+
+/* ---------- Lærlinger og kandidater i Opplæringstilbud (fase 6, pakke 6, avgjørelse 069) ----------
+   Tre faner, veiene som lukkede kort med stegene som knapper i fargen til delen (skole, kontrakt i bedrift, praksis,
+   prøven), og overgangene som kort med vilkår og kilde. */
+.fb-faner {
+  display: flex;
+  margin: var(--rom-4) 0 var(--rom-3);
+  border-bottom: 2px solid var(--farge-kant);
+}
+
+.fb-fane {
+  flex: 1 1 0;
+  min-height: var(--trykkflate);
+  margin: 0 0 -2px;
+  padding: var(--rom-2) var(--rom-1);
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: none;
+  color: var(--farge-tekst-dempet);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fb-fane[aria-selected='true'] {
+  border-bottom-color: var(--farge-merke);
+  color: var(--farge-tekst);
+}
+
+.fb-panel > .bryter {
+  margin-top: 0;
+}
+
+/* Stegene: en loddrett sti på mobil, med en prikk i fargen til delen på linjen og delen og tiden under navnet. Fra
+   40rem en rad med like brede steg, med en stripe i fargen øverst og pil mellom (eier 06.10.2026, runde 2). */
+.fb-steg {
+  position: relative;
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+.fb-steg::before {
+  content: '';
+  position: absolute;
+  top: 1.4rem;
+  bottom: 1.4rem;
+  left: calc(0.6rem - 1px);
+  width: 2px;
+  background: var(--farge-linje);
+}
+
+.fb-steg > li {
+  position: relative;
+}
+
+.fb-steg-knapp {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-3);
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) 0;
+  color: var(--farge-tekst);
+  text-decoration: none;
+}
+
+.fb-steg-merke {
+  position: relative;
+  flex: none;
+  box-sizing: border-box;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 3px solid var(--fb-farge);
+  border-radius: 50%;
+  background: var(--farge-flate);
+}
+
+/* Prøven er målet: en fylt prikk. */
+[data-del='prove'] > .fb-steg-knapp .fb-steg-merke {
+  background: var(--fb-farge);
+}
+
+.fb-steg-tekst {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fb-steg-navn {
+  color: var(--farge-lenke);
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.fb-steg-meta {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.fb-steg-pil {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+/* Stegene står på rad når kolonnen er bred nok, uansett skjermbredde (kortet på mobil, kolonnen til høyre på skrivebord). */
+.fb-steg-ramme {
+  container-type: inline-size;
+}
+
+@container (min-width: 34rem) {
+  .fb-steg {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: var(--rom-4);
+  }
+
+  .fb-steg::before {
+    display: none;
+  }
+
+  /* Pilen mellom stegene står i mellomrommet. */
+  .fb-steg > li + li::before {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--rom-4));
+    width: var(--rom-4);
+    transform: translateY(-50%);
+    color: var(--farge-tekst-dempet);
+    text-align: center;
+  }
+
+  .fb-steg-knapp {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--rom-2) var(--rom-3);
+    border: var(--strek) solid var(--farge-kant);
+    border-top: 5px solid var(--fb-farge);
+    border-radius: var(--radius-s);
+    background: color-mix(in srgb, var(--fb-farge) 8%, var(--farge-flate));
+  }
+
+  .fb-steg-merke,
+  .fb-steg-pil {
+    display: none;
+  }
+}
+
+[data-del='skole'] {
+  --fb-farge: var(--vei-skole);
+}
+
+[data-del='bedrift'] {
+  --fb-farge: var(--vei-bedrift);
+}
+
+[data-del='praksis'] {
+  --fb-farge: var(--vei-praksis);
+}
+
+[data-del='prove'] {
+  --fb-farge: var(--vei-prove);
+}
+
+.fb-forklaring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.fb-forklaring li::before {
+  content: '';
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: var(--rom-1);
+  border-radius: 2px;
+  background: var(--fb-farge);
+  vertical-align: -0.1em;
+}
+
+.fb-fakta {
+  margin: 0 0 var(--rom-2);
+}
+
+.fb-fakta > div {
+  padding: var(--rom-2) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.fb-fakta dt {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fb-fakta dd {
+  margin: 0;
+}
+
+.fb-kilde {
+  display: flex;
+  gap: var(--rom-1);
+  align-items: baseline;
+  margin: var(--rom-1) 0 var(--rom-2);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.fb-velg-to {
+  display: grid;
+  gap: 0 var(--rom-3);
+}
+
+@media (min-width: 30rem) {
+  .fb-velg-to {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.fb-velg-to select {
+  width: 100%;
+}
+
+.fb-fellesfag,
+.fb-overganger {
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+.fb-fellesfag li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+  padding: var(--rom-2) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.fb-fellesfag-krav {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.fb-fellesfag li[data-krav='nei'] .fb-fellesfag-krav {
+  color: var(--farge-ok);
+  font-weight: 600;
+}
+
+.fb-overganger > li {
+  margin-bottom: var(--rom-2);
+}
+
+.fb-overganger .fb-kilde {
+  padding-left: var(--rom-3);
+}
+
+.fb-side .fag-ifaget-i {
+  border-top: 0;
+}
+
+.fb-prove {
+  margin-bottom: var(--rom-4);
+}
+
+/* «Om veien» på siden for hver vei: faktaene i en egen ramme, i to kolonner der det er plass. */
+.fb-om {
+  margin: var(--rom-4) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 5px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.fb-om > h2 {
+  margin-top: 0;
+}
+
+.fb-om .fb-fakta > div:first-child {
+  border-top: 0;
+}
+
+@media (min-width: 40rem) {
+  .fb-om .fb-fakta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 var(--rom-4);
+  }
+
+  .fb-om .fb-fakta > div:nth-child(2) {
+    border-top: 0;
+  }
+
+  /* En lang tekst (f.eks. om oppsigelse og heving) går over begge kolonnene. */
+  .fb-om .fb-fakta > .fb-fakta-bred {
+    grid-column: 1 / -1;
+  }
+}
+
+.fb-hvor {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.fb-hit .fag-ifaget-i {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.fb-hit-prove {
+  margin: var(--rom-3) 0 0;
+  font-size: var(--str-s);
+}
+
+/* «Mer om …» nederst i en vei: en fylt knapp i hele bredden, med det siden har på linjen under (eier 06.10.2026, runde 3). */
+.fb-mer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: var(--rom-2);
+  text-decoration: none;
+}
+
+.fb-mer-tekst {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fb-mer-under {
+  font-size: var(--str-xs);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.fb-mer > .ikon {
+  flex: none;
+}
+
+/* På de smaleste skjermene (320 px) får knappen mindre luft og litt mindre skrift, så «Mer om …» står på én linje. */
+@media (max-width: 22.5rem) {
+  .fb-mer {
+    padding-inline: var(--rom-3);
+    font-size: var(--str-s);
+  }
+}
+
+/* ---------- To kolonner på skrivebord (eier 06.10.2026, svar 6) ----------
+   Fra 64rem (samme som TO_KOLONNER i fagbrevDeler.tsx) er siden bredere. «Veiene»: listen til venstre og den valgte
+   veien til høyre, som står fast når skjermen er høy nok. «Bytte vei»: utgangspunktene til venstre. Siden for hver vei:
+   stegene og «Om veien» til venstre, «Kommer fra» og «Veien videre» til høyre. Én kolonne under 64rem. */
+@media (min-width: 64rem) {
+  main:has(.fb-bred) {
+    max-width: 72rem;
+  }
+
+  .fb-to {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: var(--rom-6);
+    align-items: start;
+  }
+
+  .fb-to-veiene,
+  .fb-to-bytte {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
+
+  .fb-to-side > section:first-child > h2,
+  .fb-to-side > h2:first-child,
+  .fb-to-hoved > h2:first-child {
+    margin-top: 0;
+  }
+
+  .fb-to-bytte .fb-fra {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fb-to-bytte .fb-fra .sokefilter-valg {
+    min-height: var(--trykkflate);
+    border-radius: var(--radius-m);
+  }
+}
+
+@media (min-width: 64rem) and (min-height: 46rem) {
+  .fb-valgt {
+    position: sticky;
+    top: calc(var(--topplinje-hoyde) + var(--rom-3));
+  }
+}
+
+.fb-velg-liste {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fb-velg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 5px solid transparent;
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fb-velg[aria-pressed='true'] {
+  border-color: var(--farge-merke);
+  border-left-color: var(--farge-merke);
+  background: var(--farge-flate-2);
+}
+
+.fb-velg-tittel {
+  font-weight: 650;
+}
+
+.fb-velg-kort {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.fb-valgt {
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-top: 5px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.fb-valgt-tittel {
+  margin: 0;
+  font-size: var(--str-l);
+}
+
+.fb-valgt-kort {
+  margin: 0 0 var(--rom-3);
+  color: var(--farge-tekst-dempet);
+}
+
+/* Ingressen og merknaden kommer fra content/ som HTML med avsnitt. */
+.fb-side div.ingress > p,
+.fb-merknad > p {
+  margin: 0;
+}

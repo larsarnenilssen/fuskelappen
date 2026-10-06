@@ -1,0 +1,703 @@
+# Veiene for lærlinger og kandidater til fag- og svennebrev, praksisbrev og kompetansebevis, og overgangene mellom
+# dem (fase 6, pakke 6, avgjørelse 069). Siden «Lærlinger og kandidater» i Opplæringstilbud viser dem. Bygger på
+# opplæringslova kapittel 5, 7, 18 og § 23-2, opplæringsforskrifta kapittel 6, 7 og 9, Udir-1-2026 og Udirs sider om
+# retten til videregående opplæring og lærekandidatordningen. Egne ord. Ingen påstand uten belegg i kildene (eier
+# 06.10.2026): det kildene ikke sier, står ikke her, eller står som at kilden ikke har en egen regel.
+#
+# Veiene (type vei). Adressen er id-en uten «vei-»: #/opplaeringslop/laerlinger-og-kandidater/laerling.
+
+- id: vei-laerling
+  type: vei
+  rekkefolge: 10
+  mal: fagbrev
+  tittel: { nb: "Lærling", nn: "Lærling" }
+  kortnavn: { nb: "lærling", nn: "lærling" }
+  kort: { nb: "Hovedmodellen: to år i skole og to år i bedrift", nn: "Hovudmodellen: to år i skule og to år i bedrift" }
+  tekst:
+    nb: "Den vanlige veien: Vg1 og Vg2 på et yrkesfaglig utdanningsprogram, og så læretid i bedrift med lærekontrakt."
+    nn: "Den vanlege vegen: Vg1 og Vg2 på eit yrkesfagleg utdanningsprogram, og så læretid i bedrift med lærekontrakt."
+  steg:
+    - { del: skole, tekst: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
+    - { del: skole, tekst: { nb: "Vg2 yrkesfag", nn: "Vg2 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
+    - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Vanligvis 2 år", nn: "Vanlegvis 2 år" }, rute: /begreper/laerling }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Lærekontrakt med lærebedriften", nn: "Lærekontrakt med lærebedrifta" }
+  prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Må være bestått. Med ett eller to fellesfag som ikke er bestått, kan prøven tas, men fagene må bestås etterpå."
+    nn: "Må vere bestått. Med eitt eller to fellesfag som ikkje er bestått, kan prøva takast, men faga må bestå etterpå."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  voksne:
+    nb: "Voksne med rett til videregående opplæring skal få et tilbud som fører fram til sluttkompetansen de har søkt på."
+    nn: "Vaksne med rett til vidaregåande opplæring skal få eit tilbod som fører fram til sluttkompetansen dei har søkt på."
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-2" }
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringslova, punkt: "§ 18-3 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«To år i skole og to år i bedrift» bygger på ol. § 5-2 tredje ledd («til vanleg»). Er «Vanligvis 2 år» for læretiden riktig å vise ved steget?"
+  stikkord: [lærling, lærekontrakt, hovedmodellen, 2+2, fagbrev, svennebrev]
+
+- id: vei-laerling-tidlig
+  type: vei
+  rekkefolge: 20
+  mal: fagbrev
+  tittel: { nb: "Lærling rett etter grunnskolen eller Vg1", nn: "Lærling rett etter grunnskulen eller Vg1" }
+  kortnavn: { nb: "tidlig lærekontrakt", nn: "tidleg lærekontrakt" }
+  kort: { nb: "0+4, 1+3 og særløp", nn: "0+4, 1+3 og særløp" }
+  tekst:
+    nb: "Fylkeskommunen kan godkjenne kontrakter som avviker fra opplæringsløpet, f.eks. med opplæringen i skole og bedrift i en annen rekkefølge. Noen lærefag har bare Vg1 i skole og tre års læretid (særløp)."
+    nn: "Fylkeskommunen kan godkjenne kontraktar som vik av frå opplæringsløpet, til dømes med opplæringa i skule og bedrift i ei anna rekkjefølgje. Nokre lærefag har berre Vg1 i skule og tre års læretid (særløp)."
+  steg:
+    - { del: skole, tekst: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }, tid: { nb: "0 eller 1 år", nn: "0 eller 1 år" }, rute: /opplaeringslop/lop }
+    - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "3 eller 4 år", nn: "3 eller 4 år" }, rute: /begreper/laerling }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Lærekontrakt der organiseringen går klart fram", nn: "Lærekontrakt der organiseringa går klart fram" }
+  prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Må være bestått. Med ett eller to fellesfag som ikke er bestått, kan prøven tas, men fagene må bestås etterpå. Kontrakten sier hvem som har ansvaret for de ulike delene av opplæringen."
+    nn: "Må vere bestått. Med eitt eller to fellesfag som ikkje er bestått, kan prøva takast, men faga må bestå etterpå. Kontrakten seier kven som har ansvaret for dei ulike delane av opplæringa."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-2 første og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav a–c og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.3 og 3.4.4", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Merknaden til ofo. § 7-6 omtaler særløp med læreplass etter Vg3, mens Udir-1 (3.4.3) sier bare Vg1 i skole og tre års læretid. Appen følger Udir-1 (eier 06.10.2026). Er det riktig?"
+    - "Er «0 eller 1 år» i skole og «3 eller 4 år» læretid en dekkende beskrivelse av 0+4, 1+3 og særløp?"
+  stikkord: [0+4, 1+3, særløp, annen organisering, vekslingsmodell]
+
+- id: vei-praksisbrev-fagbrev
+  type: vei
+  rekkefolge: 30
+  mal: fagbrev
+  tittel: { nb: "Praksisbrevkandidat som blir lærling", nn: "Praksisbrevkandidat som blir lærling" }
+  kortnavn: { nb: "praksisbrev til fagbrev", nn: "praksisbrev til fagbrev" }
+  kort: { nb: "Praksisbrev først, og så fag- eller svennebrev", nn: "Praksisbrev først, og så fag- eller sveinebrev" }
+  tekst:
+    nb: "Praksisbrevkandidaten tar praksisbrevprøven og kan så skrive lærekontrakt i lærefaget. Den som har praksisbrev, har fortsatt retten til videregående opplæring."
+    nn: "Praksisbrevkandidaten tek praksisbrevprøva og kan så skrive lærekontrakt i lærefaget. Den som har praksisbrev, har framleis retten til vidaregåande opplæring."
+  steg:
+    - { del: bedrift, tekst: { nb: "Praksisbrevkandidat", nn: "Praksisbrevkandidat" }, rute: /begreper/praksisbrev }
+    - { del: prove, tekst: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Etter godskriving", nn: "Etter godskriving" }, rute: /begreper/laerling }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Opplæringskontrakt, og så lærekontrakt", nn: "Opplæringskontrakt, og så lærekontrakt" }
+  prove: { nb: "Praksisbrevprøve, og så fag- eller svenneprøve", nn: "Praksisbrevprøve, og så fag- eller sveineprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Praksisbrev: må være bestått, men prøven kan tas med ett fellesfag som ikke er bestått. Fag- eller svennebrev: som for lærlinger."
+    nn: "Praksisbrev: må vere bestått, men prøva kan takast med eitt fellesfag som ikkje er bestått. Fag- eller sveinebrev: som for lærlingar."
+  dokumentasjon: { nb: "Praksisbrev, og så fag- eller svennebrev", nn: "Praksisbrev, og så fag- eller sveinebrev" }
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav e", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-9 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+    - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring, Fram til studie- eller yrkeskompetanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir skriver at den som har praksisbrev, har retten til videregående opplæring i behold. Er det riktig å si at praksisbrevkandidaten kan skrive lærekontrakt etterpå, og at læretiden godskrives etter ofo. § 6-9 første ledd?"
+  stikkord: [praksisbrev, praksisbrevkandidat, praksisbrevprøve, godskriving]
+
+- id: vei-fra-studieforberedende
+  type: vei
+  rekkefolge: 40
+  mal: fagbrev
+  tittel: { nb: "Lærling etter Vg1 studieforberedende", nn: "Lærling etter Vg1 studieførebuande" }
+  kortnavn: { nb: "opphenting og kryssløp", nn: "opphenting og kryssløp" }
+  kort: { nb: "Med yrkesfaglig opphenting eller kryssløp", nn: "Med yrkesfagleg opphenting eller kryssløp" }
+  tekst:
+    nb: "En elev med Vg1 studiespesialisering kan gå videre til Vg2 på yrkesfag, med yrkesfaglig opphenting eller som kryssløp."
+    nn: "Ein elev med Vg1 studiespesialisering kan gå vidare til Vg2 på yrkesfag, med yrkesfagleg opphenting eller som kryssløp."
+  steg:
+    - { del: skole, tekst: { nb: "Vg1 studieforberedende", nn: "Vg1 studieførebuande" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
+    - { del: skole, tekst: { nb: "Vg2 yrkesfag med opphenting", nn: "Vg2 yrkesfag med opphenting" }, tid: { nb: "1 år", nn: "1 år" }, rute: /begreper/yrkesfaglig-opphenting }
+    - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Vanligvis 2 år", nn: "Vanlegvis 2 år" }, rute: /begreper/laerling }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Lærekontrakt med lærebedriften", nn: "Lærekontrakt med lærebedrifta" }
+  prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Må være bestått. Med ett eller to fellesfag som ikke er bestått, kan prøven tas, men fagene må bestås etterpå. Fellesfagene fra Vg1 studiespesialisering dekker fellesfagene på Vg2, unntatt kroppsøving."
+    nn: "Må vere bestått. Med eitt eller to fellesfag som ikkje er bestått, kan prøva takast, men faga må bestå etterpå. Fellesfaga frå Vg1 studiespesialisering dekkjer fellesfaga på Vg2, unnateke kroppsøving."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 og 3.4.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - { id: udir-grep, punkt: "YFO2002 Yrkesfaglig opphenting" }
+    - { id: opplaeringslova, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir-1 (3.4.2) og læreplanen YFO2002 er kildene. Nasjonale rammer for yrkesfaglig opphenting (2018) er ikke brukt, fordi hjemmelen er i den gamle loven (eier 06.10.2026). Er teksten dekkende?"
+  stikkord: [yrkesfaglig opphenting, kryssløp, studiespesialisering, bytte til yrkesfag]
+
+- id: vei-vg3-i-skole
+  type: vei
+  rekkefolge: 50
+  mal: fagbrev
+  tittel: { nb: "Elev på Vg3 i skole", nn: "Elev på Vg3 i skule" }
+  kortnavn: { nb: "Vg3 i skole", nn: "Vg3 i skule" }
+  kort: { nb: "Uten læreplass: fag- eller svenneprøve som elev", nn: "Utan læreplass: fag- eller sveineprøve som elev" }
+  tekst:
+    nb: "Den som oppfyller vilkårene for læreplass, men ikke får det, har rett til et annet tilbud på Vg3, og tar prøven som elev."
+    nn: "Den som oppfyller vilkåra for læreplass, men ikkje får det, har rett til eit anna tilbod på Vg3, og tek prøva som elev."
+  steg:
+    - { del: skole, tekst: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
+    - { del: skole, tekst: { nb: "Vg2 yrkesfag", nn: "Vg2 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
+    - { del: skole, tekst: { nb: "Vg3 i skole", nn: "Vg3 i skule" }, rute: /begreper/vg3-i-skole }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Ingen. Fylkeskommunen skal fortsatt prøve å formidle læreplass til den som ønsker det.", nn: "Ingen. Fylkeskommunen skal framleis prøve å formidle læreplass til den som ønskjer det." }
+  prove: { nb: "Fag- eller svenneprøve som elev", nn: "Fag- eller sveineprøve som elev" }
+  melderOpp: { nb: "Skolen", nn: "Skulen" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Må være bestått. Med ett eller to fellesfag som ikke er bestått, kan eleven ta prøven, men må bestå fagene etterpå."
+    nn: "Må vere bestått. Med eitt eller to fellesfag som ikkje er bestått, kan eleven ta prøva, men må bestå faga etterpå."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  voksne:
+    nb: "Voksne som har valgt videregående opplæring etter kapittel 5, får de samme rettighetene som ungdom."
+    nn: "Vaksne som har valt vidaregåande opplæring etter kapittel 5, får dei same rettane som ungdom."
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+    - { id: opplaeringslova, punkt: "§ 18-3 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Loven og forskriften sier «eit anna opplæringstilbod på vidaregåande trinn 3», ikke at det er i skole. Er det riktig å kalle veien «Elev på Vg3 i skole»?"
+  stikkord: [vg3 i skole, alternativ vg3, uten læreplass, fagopplæring i skole]
+
+- id: vei-laerekandidat-laerling
+  type: vei
+  rekkefolge: 60
+  mal: fagbrev
+  tittel: { nb: "Lærekandidat som blir lærling", nn: "Lærekandidat som blir lærling" }
+  kortnavn: { nb: "lærekandidat til lærling", nn: "lærekandidat til lærling" }
+  kort: { nb: "Kontrakten endres underveis", nn: "Kontrakten blir endra undervegs" }
+  tekst:
+    nb: "En lærekandidat som oppfyller kravene for fag- eller svennebrev, kan bli lærling ved å endre kontrakten. Kontrakten kan bare endres med samtykke fra fylkeskommunen."
+    nn: "Ein lærekandidat som oppfyller krava for fag- eller sveinebrev, kan bli lærling ved å endre kontrakten. Kontrakten kan berre endrast med samtykke frå fylkeskommunen."
+  steg:
+    - { del: bedrift, tekst: { nb: "Lærekandidat", nn: "Lærekandidat" }, rute: /begreper/laerekandidat }
+    - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Etter godskriving", nn: "Etter godskriving" }, rute: /begreper/laerling }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Opplæringskontrakt som endres til lærekontrakt", nn: "Opplæringskontrakt som blir endra til lærekontrakt" }
+  prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Som for lærlinger, når kandidaten er blitt lærling. Må være bestått. Med ett eller to fellesfag som ikke er bestått, kan prøven tas, men fagene må bestås etterpå."
+    nn: "Som for lærlingar, når kandidaten har blitt lærling. Må vere bestått. Med eitt eller to fellesfag som ikkje er bestått, kan prøva takast, men faga må bestå etterpå."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-9 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+    - { id: udir-laerekandidatordningen, punkt: "Hva får du som lærekandidat?" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften har ingen uttrykkelig regel om godskriving når en lærekandidat blir lærling. § 6-9 tredje ledd sier at tidligere læretid for lærekandidater godskrives etter en konkret vurdering. Er det riktig å bruke den her?"
+  stikkord: [lærekandidat, lærling, endre kontrakten, godskriving]
+
+- id: vei-fagbrev-pa-jobb
+  type: vei
+  rekkefolge: 70
+  mal: fagbrev
+  tittel: { nb: "Kandidat for fagbrev på jobb", nn: "Kandidat for fagbrev på jobb" }
+  kortnavn: { nb: "fagbrev på jobb", nn: "fagbrev på jobb" }
+  kort: { nb: "Praksis og kontrakt med arbeidsgiveren", nn: "Praksis og kontrakt med arbeidsgivaren" }
+  tekst:
+    nb: "Minst ett års allsidig praksis i lærefaget i heltid før kontrakten, og så minst ett år med kontrakt."
+    nn: "Minst eitt års allsidig praksis i lærefaget i heiltid før kontrakten, og så minst eitt år med kontrakt."
+  steg:
+    - { del: praksis, tekst: { nb: "Allsidig praksis", nn: "Allsidig praksis" }, tid: { nb: "Minst 1 år i heltid", nn: "Minst 1 år i heiltid" }, rute: /begreper/fagbrev-pa-jobb }
+    - { del: bedrift, tekst: { nb: "Kontrakt om opplæring", nn: "Kontrakt om opplæring" }, tid: { nb: "Minst 1 år", nn: "Minst 1 år" }, rute: /begreper/kontrakt-om-opplaering }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Kontrakt om opplæring med lærebedriften", nn: "Kontrakt om opplæring med lærebedrifta" }
+  prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: nei
+  fellesfagTekst:
+    nb: "Trengs ikke for fag- eller svennebrev."
+    nn: "Trengst ikkje for fag- eller sveinebrev."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  voksne:
+    nb: "Fylkeskommunen skal sørge for at voksne med betydelig realkompetanse i et yrke får mulighet til å ta fag- eller svennebrev."
+    nn: "Fylkeskommunen skal sørgje for at vaksne med betydeleg realkompetanse i eit yrke får høve til å ta fag- eller sveinebrev."
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringslova, punkt: "§ 18-3 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-58", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-58" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "ol. § 18-3 andre ledd sier ikke hvilken ordning voksne med betydelig realkompetanse skal bruke. Er det greit å vise setningen både her og under praksiskandidat?"
+  stikkord: [fagbrev på jobb, realkompetanse, allsidig praksis, voksne]
+
+- id: vei-praksiskandidat
+  type: vei
+  rekkefolge: 80
+  mal: fagbrev
+  tittel: { nb: "Praksiskandidat", nn: "Praksiskandidat" }
+  kortnavn: { nb: "praksiskandidat", nn: "praksiskandidat" }
+  kort: { nb: "Praksis uten opplæring, og prøven", nn: "Praksis utan opplæring, og prøva" }
+  tekst:
+    nb: "Den som har allsidig praksis i et lærefag som er 25 prosent lengre enn opplæringsløpet, kan melde seg til prøven uten opplæring i skole eller bedrift."
+    nn: "Den som har allsidig praksis i eit lærefag som er 25 prosent lengre enn opplæringsløpet, kan melde seg til prøva utan opplæring i skule eller bedrift."
+  steg:
+    - { del: praksis, tekst: { nb: "Allsidig praksis", nn: "Allsidig praksis" }, tid: { nb: "25 % lengre enn løpet", nn: "25 % lengre enn løpet" }, rute: /begreper/praksiskandidat }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Ingen", nn: "Ingen" }
+  prove: { nb: "Fag- eller svenneprøve, og eksamen når læreplanverket krever det", nn: "Fag- eller sveineprøve, og eksamen når læreplanverket krev det" }
+  melderOpp: { nb: "Kandidaten selv, med prøveavgift", nn: "Kandidaten sjølv, med prøveavgift" }
+  fellesfag: nei
+  fellesfagTekst:
+    nb: "Trengs ikke for fag- eller svennebrev."
+    nn: "Trengst ikkje for fag- eller sveinebrev."
+  dokumentasjon: { nb: "Fag- eller svennebrev", nn: "Fag- eller sveinebrev" }
+  voksne:
+    nb: "Fylkeskommunen skal sørge for at voksne med betydelig realkompetanse i et yrke får mulighet til å ta fag- eller svennebrev."
+    nn: "Fylkeskommunen skal sørgje for at vaksne med betydeleg realkompetanse i eit yrke får høve til å ta fag- eller sveinebrev."
+  etter: fra-ferdig-fagbrev
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 23-2", url: "https://lovdata.no/lov/2023-06-09-30/§23-2" }
+    - { id: opplaeringslova, punkt: "§ 18-3 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-25 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-25" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kildene sier ikke noe om krav til grunnskole for praksiskandidater, og appen nevner det ikke. Er det riktig?"
+  stikkord: [praksiskandidat, praksiskandidatordningen, prøveavgift, allsidig praksis]
+
+- id: vei-praksisbrevkandidat
+  type: vei
+  rekkefolge: 90
+  mal: praksisbrev
+  tittel: { nb: "Praksisbrevkandidat", nn: "Praksisbrevkandidat" }
+  kortnavn: { nb: "praksisbrevkandidat", nn: "praksisbrevkandidat" }
+  kort: { nb: "Opplæring etter lokal læreplan, og praksisbrev", nn: "Opplæring etter lokal læreplan, og praksisbrev" }
+  tekst:
+    nb: "Opplæring i bedrift med opplæringskontrakt. Praksisbrevprøven bygger på kompetansemålene i en lokal læreplan i faget. Fylkeskommunen skal gi tilbud om praksisbrev."
+    nn: "Opplæring i bedrift med opplæringskontrakt. Praksisbrevprøva byggjer på kompetansemåla i ein lokal læreplan i faget. Fylkeskommunen skal gi tilbod om praksisbrev."
+  steg:
+    - { del: bedrift, tekst: { nb: "Praksisbrevkandidat", nn: "Praksisbrevkandidat" }, rute: /begreper/praksisbrev }
+    - { del: prove, tekst: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Opplæringskontrakt", nn: "Opplæringskontrakt" }
+  prove: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ja
+  fellesfagTekst:
+    nb: "Må være bestått. Med ett fellesfag som ikke er bestått, kan prøven tas, men faget må bestås etterpå."
+    nn: "Må vere bestått. Med eitt fellesfag som ikkje er bestått, kan prøva takast, men faget må bestå etterpå."
+  dokumentasjon: { nb: "Praksisbrev", nn: "Praksisbrev" }
+  etter: fra-praksisbrevkandidat
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-3 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-3" }
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav e", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-64", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-64" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kildene sier ikke hvor lang opplæringen for praksisbrevkandidater er, så appen viser ingen tid ved steget. Er det greit?"
+  stikkord: [praksisbrev, praksisbrevkandidat, praksisbrevprøve, lokal læreplan]
+
+- id: vei-laerekandidat
+  type: vei
+  rekkefolge: 100
+  mal: kompetansebevis
+  tittel: { nb: "Lærekandidat", nn: "Lærekandidat" }
+  kortnavn: { nb: "lærekandidat", nn: "lærekandidat" }
+  kort: { nb: "Opplæring mot mål som er fastsatt for kandidaten, og kompetansebevis", nn: "Opplæring mot mål som er fastsette for kandidaten, og kompetansebevis" }
+  tekst:
+    nb: "Opplæring mot en mindre omfattende prøve enn fag- eller svenneprøven. En elev kan bli lærekandidat etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten."
+    nn: "Opplæring mot ei mindre omfattande prøve enn fag- eller sveineprøva. Ein elev kan bli lærekandidat etter grunnskulen, etter Vg1 eller Vg2, eller ved å endre kontrakten."
+  steg:
+    - { del: skole, tekst: { nb: "Grunnskolen, Vg1 eller Vg2", nn: "Grunnskulen, Vg1 eller Vg2" }, rute: /opplaeringslop/lop }
+    - { del: bedrift, tekst: { nb: "Lærekandidat", nn: "Lærekandidat" }, rute: /begreper/laerekandidat }
+    - { del: prove, tekst: { nb: "Kompetanseprøve", nn: "Kompetanseprøve" }, rute: /vurdering/fag-og-svenneproven }
+  kontrakt: { nb: "Opplæringskontrakt", nn: "Opplæringskontrakt" }
+  prove: { nb: "Kompetanseprøve", nn: "Kompetanseprøve" }
+  melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
+  fellesfag: ingen
+  fellesfagTekst:
+    nb: "Kandidaten prøves i målene som er fastsatt for kandidaten. Forskriften har ingen egen regel om fellesfag for lærekandidater."
+    nn: "Kandidaten blir prøvd i måla som er fastsette for kandidaten. Forskrifta har ingen eigen regel om fellesfag for lærekandidatar."
+  dokumentasjon: { nb: "Kompetansebevis", nn: "Kompetansebevis" }
+  voksne:
+    nb: "Lærekandidatordningen er for både ungdom og voksne som trenger tilrettelegging."
+    nn: "Lærekandidatordninga er for både ungdom og vaksne som treng tilrettelegging."
+  etter: fra-laerekandidat
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringslova, punkt: "§ 7-2 andre og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 7-3 tredje og fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-64", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-64" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-51 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-51" }
+    - { id: udir-retten-til-vgo, punkt: "Hvordan bli lærekandidat", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/hvordan-bli-larekandidat/" }
+    - { id: udir-laerekandidatordningen, punkt: "Hva får du som lærekandidat?" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udirs side om lærekandidatordningen sier «kompetansebrev» når kompetanseprøven er bestått, mens forskriften § 9-51 sier kompetansebevis. Appen bruker kompetansebevis. Er det riktig?"
+    - "Udir skriver at kandidaten følger en «tilpasset lærekandidatplan (TLKP)». Bør planen nevnes, når fellesfagene ikke har egen regel i forskriften?"
+  stikkord: [lærekandidat, lærekandidatordningen, kompetanseprøve, kompetansebevis, TLKP]
+
+# Utgangspunktene (type utgangspunkt) med overgangene til veiene videre, til fanen «Bytte vei», «Kommer fra» og
+# «Veien videre». Hver overgang har vilkår og minst én kilde (testes i tests/content/veier.test.ts).
+
+- id: fra-grunnskolen
+  type: utgangspunkt
+  rekkefolge: 10
+  tittel: { nb: "Grunnskolen", nn: "Grunnskulen" }
+  tekst:
+    nb: "Veiene etter grunnskolen."
+    nn: "Vegane etter grunnskulen."
+  overganger:
+    - til: vei-laerling
+      vilkar:
+        nb: "Søk Vg1 yrkesfag. Retten til videregående opplæring gjelder."
+        nn: "Søk Vg1 yrkesfag. Retten til vidaregåande opplæring gjeld."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 5-1 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - til: vei-laerling-tidlig
+      vilkar:
+        nb: "Lærekontrakt rett etter grunnskolen (0+4), godkjent av fylkeskommunen."
+        nn: "Lærekontrakt rett etter grunnskulen (0+4), godkjend av fylkeskommunen."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 7-2 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - til: vei-fra-studieforberedende
+      vilkar:
+        nb: "Søk Vg1 studieforberedende og bytt til Vg2 yrkesfag etter Vg1."
+        nn: "Søk Vg1 studieførebuande og byt til Vg2 yrkesfag etter Vg1."
+      kilder:
+        - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - til: vei-laerekandidat
+      vilkar:
+        nb: "Opplæringskontrakt som lærekandidat. Fylkeskommunen kan godkjenne løp som avviker fra tilbudsstrukturen, i bedrift, i skole eller begge deler."
+        nn: "Opplæringskontrakt som lærekandidat. Fylkeskommunen kan godkjenne løp som vik av frå tilbodsstrukturen, i bedrift, i skule eller begge delar."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 7-2 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+        - { id: udir-retten-til-vgo, punkt: "Hvordan bli lærekandidat", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/hvordan-bli-larekandidat/" }
+    - til: vei-praksisbrevkandidat
+      vilkar:
+        nb: "Opplæringskontrakt som praksisbrevkandidat. Søk innen 1. februar."
+        nn: "Opplæringskontrakt som praksisbrevkandidat. Søk innan 1. februar."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav e", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+        - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-1 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: opplaeringslova, punkt: "§ 7-2 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - { id: udir-retten-til-vgo, punkt: "Hvordan bli lærekandidat", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/hvordan-bli-larekandidat/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav e", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kan en elev få kontrakt som praksisbrevkandidat rett etter grunnskolen (ofo. § 6-3 første ledd bokstav e)?"
+
+- id: fra-vg1-st
+  type: utgangspunkt
+  rekkefolge: 20
+  tittel: { nb: "Vg1 studieforberedende", nn: "Vg1 studieførebuande" }
+  tekst:
+    nb: "Veiene til fag- og svennebrev etter Vg1 studieforberedende."
+    nn: "Vegane til fag- og sveinebrev etter Vg1 studieførebuande."
+  overganger:
+    - til: vei-fra-studieforberedende
+      vilkar:
+        nb: "Vg2 yrkesfag med yrkesfaglig opphenting, eller et Vg2 som er kryssløp."
+        nn: "Vg2 yrkesfag med yrkesfagleg opphenting, eller eit Vg2 som er kryssløp."
+      kilder:
+        - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det dekkende å vise bare veien via Vg2 yrkesfag fra Vg1 studieforberedende?"
+
+- id: fra-vg1-yf
+  type: utgangspunkt
+  rekkefolge: 30
+  tittel: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }
+  tekst:
+    nb: "Veiene videre etter Vg1 yrkesfag."
+    nn: "Vegane vidare etter Vg1 yrkesfag."
+  overganger:
+    - til: vei-laerling
+      vilkar:
+        nb: "Vg2 på et programområde som bygger på Vg1."
+        nn: "Vg2 på eit programområde som byggjer på Vg1."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 5-1 sjette ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - til: vei-laerling-tidlig
+      vilkar:
+        nb: "Lærekontrakt etter Vg1 (1+3) eller særløp."
+        nn: "Lærekontrakt etter Vg1 (1+3) eller særløp."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+        - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.3 Særløp", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - til: vei-laerekandidat
+      vilkar:
+        nb: "Også når fagene på Vg1 ikke er bestått. Søk innen 1. februar."
+        nn: "Også når faga på Vg1 ikkje er bestått. Søk innan 1. februar."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 7-3 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+        - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+    - til: vei-praksisbrevkandidat
+      vilkar:
+        nb: "Også når fagene på Vg1 ikke er bestått. Søk innen 1. februar."
+        nn: "Også når faga på Vg1 ikkje er bestått. Søk innan 1. februar."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 7-3 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+        - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-1 sjette ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.3 Særløp", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 7-3 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "ofo. § 7-3 fjerde ledd gjelder den som har gjennomført, men ikke bestått fagene på Vg1 og Vg2. Er det riktig å vise lærekandidat og praksisbrevkandidat også etter Vg1?"
+
+- id: fra-vg2-yf
+  type: utgangspunkt
+  rekkefolge: 40
+  tittel: { nb: "Vg2 yrkesfag", nn: "Vg2 yrkesfag" }
+  tekst:
+    nb: "Veiene videre etter Vg2 yrkesfag."
+    nn: "Vegane vidare etter Vg2 yrkesfag."
+  overganger:
+    - til: vei-laerling
+      vilkar:
+        nb: "Søk formidling til læreplass innen 1. mars. Vilkårene for inntak til neste trinn må være oppfylt."
+        nn: "Søk formidling til læreplass innan 1. mars. Vilkåra for inntak til neste trinn må vere oppfylte."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 7-3 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+        - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+    - til: vei-vg3-i-skole
+      vilkar:
+        nb: "Når søkeren ikke får læreplass. Tilbudet starter så snart som mulig og senest 1. oktober."
+        nn: "Når søkjaren ikkje får læreplass. Tilbodet startar så snart som mogleg og seinast 1. oktober."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+    - til: vei-laerekandidat
+      vilkar:
+        nb: "Også når fagene på Vg1 og Vg2 ikke er bestått. Søk innen 1. februar."
+        nn: "Også når faga på Vg1 og Vg2 ikkje er bestått. Søk innan 1. februar."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 7-3 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+        - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+    - til: vei-praksisbrevkandidat
+      vilkar:
+        nb: "Også når fagene på Vg1 og Vg2 ikke er bestått. Søk innen 1. februar."
+        nn: "Også når faga på Vg1 og Vg2 ikkje er bestått. Søk innan 1. februar."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 7-3 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+        - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+    - side: { tittel: { nb: "Vg3 påbygging til generell studiekompetanse", nn: "Vg3 påbygging til generell studiekompetanse" }, rute: /opplaeringslop/PB }
+      vilkar:
+        nb: "Gir generell studiekompetanse, ikke yrkeskompetanse. Retten til videregående opplæring varer til man har studie- eller yrkeskompetanse, så etter bestått påbygging er den brukt. Et fag- eller svennebrev etterpå blir yrkesfaglig rekvalifisering."
+        nn: "Gir generell studiekompetanse, ikkje yrkeskompetanse. Retten til vidaregåande opplæring varer til ein har studie- eller yrkeskompetanse, så etter bestått påbygging er han brukt. Eit fag- eller sveinebrev etterpå blir yrkesfagleg rekvalifisering."
+      kilder:
+        - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
+        - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+        - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring, Fram til studie- eller yrkeskompetanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+        - { id: opplaeringslova, punkt: "§ 18-4", url: "https://lovdata.no/lov/2023-06-09-30/§18-4" }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 7-3 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 7-5 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-5" }
+    - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 7-3 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§7-3" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.2", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
+    - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring, Fram til studie- eller yrkeskompetanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+    - { id: opplaeringslova, punkt: "§ 18-4", url: "https://lovdata.no/lov/2023-06-09-30/§18-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "At Vg3 påbygging bruker retten, bygger nå på ol. § 5-1 andre ledd og Udirs side om retten (retten varer til studie- eller yrkeskompetanse), ikke på eiers svar 04.10.2026. Er teksten riktig?"
+
+- id: fra-laerling
+  type: utgangspunkt
+  rekkefolge: 50
+  tittel: { nb: "Lærling", nn: "Lærling" }
+  tekst:
+    nb: "Bytte underveis for den som er lærling."
+    nn: "Byte undervegs for den som er lærling."
+  overganger:
+    - til: vei-laerekandidat
+      vilkar:
+        nb: "Kontrakten kan bare endres med samtykke fra fylkeskommunen."
+        nn: "Kontrakten kan berre endrast med samtykke frå fylkeskommunen."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Oppsigelse og heving står under «Om veien», ikke som overgang (eier 06.10.2026). Er endring fra lærling til lærekandidat da den eneste overgangen som bør vises for lærlinger?"
+
+- id: fra-laerekandidat
+  type: utgangspunkt
+  rekkefolge: 60
+  tittel: { nb: "Lærekandidat", nn: "Lærekandidat" }
+  tekst:
+    nb: "Bytte underveis for den som er lærekandidat."
+    nn: "Byte undervegs for den som er lærekandidat."
+  overganger:
+    - til: vei-laerekandidat-laerling
+      vilkar:
+        nb: "Når kandidaten oppfyller kravene for fag- eller svennebrev, kan kontrakten endres til lærekontrakt, med samtykke fra fylkeskommunen. For lærekandidater godskrives tidligere læretid etter en konkret vurdering."
+        nn: "Når kandidaten oppfyller krava for fag- eller sveinebrev, kan kontrakten endrast til lærekontrakt, med samtykke frå fylkeskommunen. For lærekandidatar blir tidlegare læretid godskriven etter ei konkret vurdering."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-9 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+        - { id: udir-laerekandidatordningen, punkt: "Hva får du som lærekandidat?" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-9 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+    - { id: udir-laerekandidatordningen, punkt: "Hva får du som lærekandidat?" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «når kandidaten oppfyller kravene for fag- eller svennebrev» (Udirs side om lærekandidatordningen) riktig gjengitt?"
+
+- id: fra-praksisbrevkandidat
+  type: utgangspunkt
+  rekkefolge: 70
+  tittel: { nb: "Praksisbrevkandidat", nn: "Praksisbrevkandidat" }
+  tekst:
+    nb: "Veien videre etter praksisbrev."
+    nn: "Vegen vidare etter praksisbrev."
+  overganger:
+    - til: vei-praksisbrev-fagbrev
+      vilkar:
+        nb: "Lærekontrakt etter praksisbrevet. Den som har praksisbrev, har fortsatt retten til videregående opplæring, og tidligere læretid i lærefaget skal godskrives fullt ut."
+        nn: "Lærekontrakt etter praksisbrevet. Den som har praksisbrev, har framleis retten til vidaregåande opplæring, og tidlegare læretid i lærefaget skal godskrivast fullt ut."
+      kilder:
+        - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring, Fram til studie- eller yrkeskompetanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-9 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+  kilder:
+    - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring, Fram til studie- eller yrkeskompetanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-9 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder ofo. § 6-9 første ledd (tidligere læretid godskrives fullt ut for lærlinger) læretiden som praksisbrevkandidat?"
+
+- id: fra-ferdig-fagbrev
+  type: utgangspunkt
+  rekkefolge: 80
+  tittel: { nb: "Ferdig fag- eller svennebrev", nn: "Ferdig fag- eller sveinebrev" }
+  tekst:
+    nb: "Veiene videre etter fag- eller svennebrev."
+    nn: "Vegane vidare etter fag- eller sveinebrev."
+  overganger:
+    - side: { tittel: { nb: "Vg4 påbygging etter fag- eller svennebrev", nn: "Vg4 påbygging etter fag- eller sveinebrev" }, rute: /opplaeringslop/PB }
+      vilkar:
+        nb: "Retten varer ut skoleåret som starter det året man fyller 24, og forutsetter at alle fagene som gir vitnemål, er bestått. Etter det, og for den som ikke har bestått fellesfagene, gjelder reglene for voksne."
+        nn: "Retten varer ut skuleåret som tek til det året ein fyller 24, og føreset at alle faga som gir vitnemål, er bestått. Etter det, og for den som ikkje har bestått fellesfaga, gjeld reglane for vaksne."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 5-7", url: "https://lovdata.no/lov/2023-06-09-30/§5-7" }
+        - { id: opplaeringslova, punkt: "§ 18-7", url: "https://lovdata.no/lov/2023-06-09-30/§18-7" }
+        - { id: udir-retten-til-vgo, punkt: "Rett til påbygging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-pabygging/" }
+        - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.3", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
+    - side: { tittel: { nb: "Nytt fag- eller svennebrev", nn: "Nytt fag- eller sveinebrev" }, rute: /opplaeringslop/laerlinger-og-kandidater }
+      vilkar:
+        nb: "Den som har studie- eller yrkeskompetanse, har rett til opplæring fram til én ny sluttkompetanse på et yrkesfaglig utdanningsprogram. Et bestått fag- eller svennebrev godskrives."
+        nn: "Den som har studie- eller yrkeskompetanse, har rett til opplæring fram til éin ny sluttkompetanse på eit yrkesfagleg utdanningsprogram. Eit bestått fag- eller sveinebrev blir godskrive."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 18-4", url: "https://lovdata.no/lov/2023-06-09-30/§18-4" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-10", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-10" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-7", url: "https://lovdata.no/lov/2023-06-09-30/§5-7" }
+    - { id: opplaeringslova, punkt: "§ 18-7", url: "https://lovdata.no/lov/2023-06-09-30/§18-7" }
+    - { id: udir-retten-til-vgo, punkt: "Rett til påbygging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-pabygging/" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.3", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
+    - { id: opplaeringslova, punkt: "§ 18-4", url: "https://lovdata.no/lov/2023-06-09-30/§18-4" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-10", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-10" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er vilkåret for Vg4 påbygging (alle fag som gir vitnemål, bestått, ellers reglene for voksne etter ol. § 18-7) riktig gjengitt fra Udirs side om påbygging?"
+
+- id: fra-praksis
+  type: utgangspunkt
+  rekkefolge: 90
+  tittel: { nb: "Praksis i arbeidslivet", nn: "Praksis i arbeidslivet" }
+  tekst:
+    nb: "Veiene til fag- og svennebrev for den som har praksis i faget."
+    nn: "Vegane til fag- og sveinebrev for den som har praksis i faget."
+  overganger:
+    - til: vei-fagbrev-pa-jobb
+      vilkar:
+        nb: "Minst ett års allsidig praksis i lærefaget i heltid før kontrakten."
+        nn: "Minst eitt års allsidig praksis i lærefaget i heiltid før kontrakten."
+      kilder:
+        - { id: opplaeringsforskrifta, punkt: "§ 9-58 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-58" }
+    - til: vei-praksiskandidat
+      vilkar:
+        nb: "Allsidig praksis 25 prosent lengre enn opplæringsløpet. Fylkeskommunen kan i særlige tilfeller godkjenne kortere praksis."
+        nn: "Allsidig praksis 25 prosent lengre enn opplæringsløpet. Fylkeskommunen kan i særlege tilfelle godkjenne kortare praksis."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 23-2", url: "https://lovdata.no/lov/2023-06-09-30/§23-2" }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-58 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-58" }
+    - { id: opplaeringslova, punkt: "§ 23-2", url: "https://lovdata.no/lov/2023-06-09-30/§23-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skille fagbrev på jobb (med kontrakt) og praksiskandidat (uten opplæring) slik?"
+
+# Tekster som står på flere av veiene (eier 06.10.2026, svar 3 og 4).
+- id: lk-kontrakt-slutt
+  type: forklaring
+  tittel: { nb: "Når kontrakten sies opp eller heves", nn: "Når kontrakten blir sagd opp eller heva" }
+  tekst:
+    nb: "Kontrakten kan sies opp når partene er enige. Fylkeskommunen hever den når den som har læretid, sier skriftlig fra at hen ikke vil fortsette, og kan heve den ved vesentlige brudd på pliktene. Lærebedriften skriver ut en attest for opplæringen som er gjennomført, og arbeidsavtalen faller bort."
+    nn: "Kontrakten kan seiast opp når partane er samde. Fylkeskommunen hevar han når den som har læretid, seier skriftleg frå at han eller ho ikkje vil halde fram, og kan heve han ved vesentlege brot på pliktene. Lærebedrifta skriv ut ein attest for opplæringa som er gjennomført, og arbeidsavtalen fell bort."
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-3", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
+    - { id: opplaeringslova, punkt: "§ 7-4 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Teksten står i «Om veien» på veiene med kontrakt i bedrift, ikke som en overgang (eier 06.10.2026). Er den riktig og dekkende?"
+  stikkord: [oppsigelse, heving, heve kontrakten, attest, arbeidsavtale]
+
+- id: lk-kompetansebevis-elever
+  type: forklaring
+  tittel: { nb: "Kompetansebevis for elever", nn: "Kompetansebevis for elevar" }
+  tekst:
+    nb: "Kompetansebevis er også dokumentasjonen for elever som ikke har bestått alt som trengs til vitnemål eller fag- eller svennebrev, og for elever som bare har hatt opplæring i deler av et fag."
+    nn: "Kompetansebevis er også dokumentasjonen for elevar som ikkje har bestått alt som trengst til vitnemål eller fag- eller sveinebrev, og for elevar som berre har hatt opplæring i delar av eit fag."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-51 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-51" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Står under målet «Kompetansebevis» på fanen «Veiene» (eier 06.10.2026). Er gjengivelsen av § 9-51 første ledd riktig?"

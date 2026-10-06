@@ -60,6 +60,10 @@ const baner = {
   trapp: 'M3.5 20h4.5v-4.5h4.5V11h4.5V6.5h3.5',
   // Flagg: der veien i en veiviser ender.
   flagg: 'M5.5 21V3.5M5.5 4h12l-2.5 4.25L17.5 12.5h-12',
+  // Sted: en nål på kartet, for «Hvor er du nå?» og «Kommer fra» i veiene til fag- og svennebrev.
+  sted: 'M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11ZM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z',
+  // Vei: en vei som deler seg i to, for veiene til fag- og svennebrev.
+  vei: 'M12 21v-8.5L6 6.5V3M12 12.5l6-6V3',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
   lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
 } as const;

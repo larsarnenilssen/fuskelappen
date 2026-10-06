@@ -1,8 +1,8 @@
 // Siden «Fag- og svenneprøven og de andre prøvene» (fase 6, pakke 3, eier 04.10.2026): prøvene som sluttvurdering for
 // lærlinger og kandidater, med samme oppsett som siden «Eksamen»: blå bokser øverst for prøvene, stien fra krav til
 // resultat, det som gjelder hele veien, og ny og utsatt prøve samlet i én boks. Kortene står i
-// content/vurdering/proevene.yaml. Veiene fram til prøven kommer i Opplæringstilbud («Fag- og svennebrev»), og da får
-// siden «Veiene hit».
+// content/vurdering/proevene.yaml. Veiene fram til prøven står i Opplæringstilbud («Lærlinger og
+// kandidater»), og «Veiene hit» lenker dit.
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
@@ -15,6 +15,7 @@ import { Tabell } from '../../../components/Tabell.tsx';
 import { type Forklaringselement, hentInnhold, klageRute, UDIR_PROVER, UNDERSIDER } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
 import { kalenderLenke } from '../../kalender/adresse.ts';
+import { VeieneHit } from '../../opplaeringslop/sider/VeieneHit.tsx';
 
 const STI = ['pr-krav', 'pr-oppmelding', 'pr-provenemnda', 'pr-vurdering', 'pr-klage'];
 const HELE_VEIEN = ['pr-tilrettelegging', 'pr-bortvisning'];
@@ -49,6 +50,8 @@ export default function Provene() {
               <h2 class="liten-overskrift">{t('vurdering.provene.prover')}</h2>
               {hva.tabell && <Tabell tabell={hva.tabell} tittel={hva.tittel} />}
               <Innholdskort element={hva} />
+              {/* «Veiene hit»: lenker tilbake til hver vei i Opplæringstilbud (fase 6, pakke 6, eier 06.10.2026). */}
+              <VeieneHit />
             </section>
           )}
           <section>

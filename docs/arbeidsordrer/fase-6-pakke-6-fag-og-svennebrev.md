@@ -101,3 +101,46 @@ Som i de andre pakkene:
 - Ingen ende-til-ende-tester før eier har godkjent designet.
 - Push til `test` etter hver designrunde.
 - Nytt innhold får `kontrollert: null` og kontrollspørsmål med kilder.
+
+## Levert i pakke 6 (0.38.0, 06.10.2026)
+
+Fire designrunder med eier står i `fase-6-pakke-6-forslag.md`. Valgene står i avgjørelse 069.
+
+- **Lærlinger og kandidater** (`#/opplaeringslop/laerlinger-og-kandidater`) i Opplæringstilbud, med tre faner:
+  - «Veiene»: målet, filteret uten fellesfag og linjen om kompetansebevis for elever.
+  - «Sammenlign»: med fellesfagene i alle veiene som et lukket kort.
+  - «Bytte vei»: ni utgangspunkter.
+- **Ti veier** med egen side:
+  - prøven «I Vurdering» først
+  - stegene
+  - «Om veien», med oppsigelse og heving på veiene med kontrakt
+  - «Kommer fra» og «Veien videre»
+- **«Veiene hit»** på prøvesiden i Vurdering, som et lukket kort.
+- **To kolonner fra 64rem.** Stegene står på rad eller som sti etter plassen i kolonnen.
+- **Innholdet:**
+  - `content/opplaeringslop/veier.yaml` med de nye typene `vei` og `utgangspunkt`.
+  - Hver overgang har kilde, og `tests/content/veier.test.ts` tester veiene som veiviserne.
+  - Ny kilde: `udir-laerekandidatordningen`.
+- **Begrepene:**
+  - påbygging (ol. § 5-7)
+  - kontrakt om opplæring (oppsigelse og heving)
+  - individuell tilrettelegging, individuelt tilrettelagt opplæring og tilpasset opplæring (lærekandidater, lærlinger og praksisbrevkandidater)
+- **Ungdomsretten og påbygging** bygger på ol. § 5-1 andre ledd og Udirs side «Rett til videregående opplæring», ikke på eiers svar (eier 06.10.2026). Retten varer til studie- eller yrkeskompetanse. Udir skriver også at den som har praksisbrev, har retten i behold.
+
+## Åpent etter pakke 6
+
+- **Kontrollspørsmålene** til veiene, utgangspunktene og de endrede begrepene venter på eier i kontrolloversikten.
+- **Løpene i Grep, VIGO og utdanning.no (eiers spørsmål 7, 06.10.2026):** 72 uenigheter i `docs/TILBUDSSTRUKTUR.md`. Mønstrene:
+  - **49 av 61 som bare står i Grep, er fra Vg1 studiespesialisering til Vg2 yrkesfag.** Det er yrkesfaglig opphenting, som bare Grep beskriver som løp. De vises allerede umerket (avgjørelse 051).
+  - **De 12 andre som bare står i Grep,** er kryssløp mellom utdanningsprogram, f.eks. akvakultur og fiske og fangst til sjømatproduksjon, og naturbruk til byggdrifterfaget. VIGO og utdanning.no ser ut til å beskrive løpene innenfor et program. De vises og er merket.
+  - **utdanning.no bruker en gammel kode:** «Grafisk produksjonsteknikk» har koden TPGPT3 på utdanning.no, men IMGPT3 i Grep og VIGO. Faget er flyttet fra teknologi- og industrifag til informasjonsteknologi og medieproduksjon. Det samme løpet teller derfor som to uenigheter.
+  - **Grep mangler «bygger på» for Sikkerhetsfaget (SRSIK3) og Service- og administrasjonsfaget (SRSOA3).** Bare VIGO har løpet fra Vg2 salg, service og reiseliv. Løpene vises ikke, og de to lærefagene nås ikke fra inngangen i Opplæringsløp.
+  - **Kjøretøy (TPKJT2) til fire mekanikerfag og medieproduksjon (IMMED2) til to fag** står i Grep og VIGO, ikke på utdanning.no.
+  - **Gipsmakerfaget** fra Vg1 bygg- og anleggsteknikk står i Grep og på utdanning.no, ikke i VIGO.
+  
+  Forslag til en egen runde:
+  - vis alle løp som minst én kilde har, og merk dem tydelig med kilden når bare én kilde viser dem
+  - les gamle koder på utdanning.no som de nye
+  - ta med VIGO-løpene der Grep mangler «bygger på»
+- **Resten av «Åpent» i `fase-6-pakke-5.md`** står fortsatt: Vestland, skoleruta for de andre fylkene, inntaksdatoene uten årstall, Lovtidend avdeling I, kontrollspørsmålene og orddeling på mobil.
+- **Lokalt** kan ende-til-ende-testene bare kjøres i Chromium. Miljøet mangler WebKit og har en annen Chromium enn Playwright venter. Pakke 6 er testet i Chromium mobil og skrivebord (`executablePath: /opt/pw-browsers/chromium`), og i CI i begge nettleserne.

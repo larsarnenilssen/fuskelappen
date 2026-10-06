@@ -66,6 +66,12 @@
   --kalender-skolerute: var(--diagram-tekst-annen);
   --kalender-regelverk: var(--diagram-tekst-selv);
   --vurdering-standpunkt: var(--p-rav-700);
+  /* Delene i veiene til fag- og svennebrev (fase 6, pakke 6): skole, kontrakt i bedrift, praksis og prøven. Peker på
+     fagtypefargene, så mørkt tema følger med. Prøven har fargen til Vurdering (bær). */
+  --vei-skole: var(--fagtype-fellesfag);
+  --vei-bedrift: var(--fagtype-yff);
+  --vei-praksis: var(--fagtype-felles);
+  --vei-prove: var(--p-baer-700);
 }
 
 :root[data-tema='mork'] {
@@ -122,6 +128,7 @@
   --vurdering-halvaar: var(--p-blaa-300);
   --vurdering-eksamen: var(--p-lilla-300);
   --vurdering-standpunkt: var(--p-rav-300);
+  --vei-prove: var(--p-baer-300);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -179,6 +186,7 @@
     --vurdering-halvaar: var(--p-blaa-300);
     --vurdering-eksamen: var(--p-lilla-300);
     --vurdering-standpunkt: var(--p-rav-300);
+    --vei-prove: var(--p-baer-300);
   }
 }
 
@@ -240,6 +248,7 @@
     --vurdering-halvaar: var(--p-blaa-700);
     --vurdering-eksamen: var(--p-lilla-700);
     --vurdering-standpunkt: var(--p-rav-700);
+    --vei-prove: var(--p-baer-700);
   }
 }
 

@@ -170,14 +170,15 @@
   tittel: { nb: Påbygging til generell studiekompetanse, nn: Påbygging til generell studiekompetanse }
   lenkeord: { nb: ["påbygging"], nn: ["påbygging"] }
   tekst:
-    nb: Vg3 påbygging til generell studiekompetanse er et år for elever som har fullført vg1 og vg2 på et yrkesfaglig utdanningsprogram. Det har ordinært minst 841 timer, med 701 timer fellesfag og 140 timer programfag fra studieforberedende utdanningsprogram. Har eleven brukt timer i yrkesfaglig fordypning til fellesfag eller programfag, endres fagene på vg3. Den som har fullført og bestått fag- og yrkesopplæring innen utgangen av året vedkommende fyller 24 år, har rett til ett års påbygging etter fag- eller svennebrevet (vg4).
-    nn: Vg3 påbygging til generell studiekompetanse er eit år for elevar som har fullført vg1 og vg2 på eit yrkesfagleg utdanningsprogram. Det har ordinært minst 841 timar, med 701 timar fellesfag og 140 timar programfag frå studieførebuande utdanningsprogram. Har eleven brukt timar i yrkesfagleg fordjuping til fellesfag eller programfag, blir faga på vg3 endra. Den som har fullført og bestått fag- og yrkesopplæring innan utgangen av året vedkomande fyller 24 år, har rett til eitt års påbygging etter fag- eller sveinebrevet (vg4).
+    nb: Vg3 påbygging til generell studiekompetanse er et år for elever som har fullført vg1 og vg2 på et yrkesfaglig utdanningsprogram. Det har ordinært minst 841 timer, med 701 timer fellesfag og 140 timer programfag fra studieforberedende utdanningsprogram. Har eleven brukt timer i yrkesfaglig fordypning til fellesfag eller programfag, endres fagene på vg3. Den som har bestått fag- og yrkesopplæring, har rett til påbygging etter fag- eller svennebrevet (vg4). Retten varer ut skoleåret som starter det året vedkommende fyller 24 år. Etter det gjelder reglene for voksne.
+    nn: Vg3 påbygging til generell studiekompetanse er eit år for elevar som har fullført vg1 og vg2 på eit yrkesfagleg utdanningsprogram. Det har ordinært minst 841 timar, med 701 timar fellesfag og 140 timar programfag frå studieførebuande utdanningsprogram. Har eleven brukt timar i yrkesfagleg fordjuping til fellesfag eller programfag, blir faga på vg3 endra. Den som har bestått fag- og yrkesopplæring, har rett til påbygging etter fag- eller sveinebrevet (vg4). Retten varer ut skuleåret som tek til det året vedkomande fyller 24 år. Etter det gjeld reglane for vaksne.
   kilder:
     - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.2 og 3.5.3", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
     - { id: udir-regbok-programomradekode, punkt: "A03 Programområdekode (PBPBY4)" }
+    - { id: opplaeringslova, punkt: "§ 5-7 Påbygging til generell studiekompetanse", url: "https://lovdata.no/lov/2023-06-09-30/§5-7" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er retten til vg4 påbygging (fullført og bestått innen utgangen av året man fyller 24 år) gjengitt riktig, og bør unntakene for praksiskandidater nevnes?"
+    - "Retten til vg4 påbygging følger nå loven (§ 5-7: ut skoleåret som starter det året man fyller 24, og så reglene for voksne), etter eiers svar 06.10.2026. Udir-1 3.5.3 sier «innen utgangen av året». Er teksten riktig, og bør unntakene for praksiskandidater nevnes?"
   stikkord: [påbygg, vg3 påbygging, vg4, generell studiekompetanse, PBPBY4]
   relatert: [yrkesfaglig-fordypning, utdanningsprogram, opplaering-i-bedrift]
 
@@ -248,15 +249,18 @@
   tittel: { nb: Kontrakt om opplæring, nn: Kontrakt om opplæring }
   lenkeord: { nb: [lærekontrakt, opplæringskontrakt], nn: [lærekontrakt, opplæringskontrakt] }
   tekst:
-    nb: Den som skal ha læretid i bedrift, skal skrive kontrakt om opplæring med en lærebedrift før opplæringen begynner. For lærlingen heter den lærekontrakt, og for praksisbrevkandidaten og lærekandidaten opplæringskontrakt. Kontrakten sier hva som er målet for opplæringen og hvem som har ansvaret for de ulike delene av den, og viser til arbeidsavtalen. Fylkeskommunen skal godkjenne kontrakten, og den kan bare endres når fylkeskommunen samtykker. Kontrakten gjelder fra opplæringen begynner, selv om godkjenningen kommer senere. Fylkeskommunen kan godkjenne kontrakter som avviker fra det fastsatte opplæringsløpet.
-    nn: Den som skal ha læretid i bedrift, skal skrive kontrakt om opplæring med ei lærebedrift før opplæringa tek til. For lærlingen heiter han lærekontrakt, og for praksisbrevkandidaten og lærekandidaten opplæringskontrakt. Kontrakten seier kva som er målet for opplæringa og kven som har ansvaret for dei ulike delane av ho, og viser til arbeidsavtalen. Fylkeskommunen skal godkjenne kontrakten, og han kan berre endrast når fylkeskommunen samtykkjer. Kontrakten gjeld frå opplæringa tek til, sjølv om godkjenninga kjem seinare. Fylkeskommunen kan godkjenne kontraktar som avvik frå det fastsette opplæringsløpet.
+    nb: Den som skal ha læretid i bedrift, skal skrive kontrakt om opplæring med en lærebedrift før opplæringen begynner. For lærlingen heter den lærekontrakt, og for praksisbrevkandidaten og lærekandidaten opplæringskontrakt. Kontrakten sier hva som er målet for opplæringen og hvem som har ansvaret for de ulike delene av den, og viser til arbeidsavtalen. Fylkeskommunen skal godkjenne kontrakten, og den kan bare endres når fylkeskommunen samtykker. Kontrakten gjelder fra opplæringen begynner, selv om godkjenningen kommer senere. Fylkeskommunen kan godkjenne kontrakter som avviker fra det fastsatte opplæringsløpet. Kontrakten kan sies opp når partene er enige, og lærebedriften skal da orientere fylkeskommunen skriftlig først. Fylkeskommunen hever kontrakten når den som har læretid, sier skriftlig fra at hen ikke vil fortsette, og kan heve den ved vesentlige brudd på pliktene eller når en av partene ikke kan oppfylle den. Lærebedriften skriver ut en attest for opplæringen som er gjennomført, og arbeidsavtalen faller bort.
+    nn: Den som skal ha læretid i bedrift, skal skrive kontrakt om opplæring med ei lærebedrift før opplæringa tek til. For lærlingen heiter han lærekontrakt, og for praksisbrevkandidaten og lærekandidaten opplæringskontrakt. Kontrakten seier kva som er målet for opplæringa og kven som har ansvaret for dei ulike delane av ho, og viser til arbeidsavtalen. Fylkeskommunen skal godkjenne kontrakten, og han kan berre endrast når fylkeskommunen samtykkjer. Kontrakten gjeld frå opplæringa tek til, sjølv om godkjenninga kjem seinare. Fylkeskommunen kan godkjenne kontraktar som avvik frå det fastsette opplæringsløpet. Kontrakten kan seiast opp når partane er samde, og lærebedrifta skal då orientere fylkeskommunen skriftleg først. Fylkeskommunen hevar kontrakten når den som har læretid, seier skriftleg frå at han eller ho ikkje vil halde fram, og kan heve han ved vesentlege brot på pliktene eller når ein av partane ikkje kan oppfylle han. Lærebedrifta skriv ut ein attest for opplæringa som er gjennomført, og arbeidsavtalen fell bort.
   kilder:
     - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
     - { id: opplaeringslova, punkt: "§ 7-2 Inngåing og endring av kontrakt om opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringslova, punkt: "§ 7-3 Heving og oppseiing av kontrakt om opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
+    - { id: opplaeringslova, punkt: "§ 7-4 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-4" }
   kontrollert: null
   kontrollsporsmal:
+    - "Lagt til etter eiers svar 06.10.2026: Er setningene om oppsigelse og heving (ol. § 7-3 og § 7-4 fjerde ledd) riktige og dekkende?"
     - "Er det dekkende å si at kontrakten heter lærekontrakt for lærlinger og opplæringskontrakt for praksisbrevkandidater og lærekandidater (§ 7-1 fjerde ledd)?"
-  stikkord: [lærekontrakt, opplæringskontrakt, kontrakt, godkjenning, arbeidsavtale]
+  stikkord: [lærekontrakt, opplæringskontrakt, kontrakt, godkjenning, arbeidsavtale, oppsigelse, heving, attest]
   relatert: [laerling, laerebedrift, opplaeringskontor]
 
 - id: generell-studiekompetanse
