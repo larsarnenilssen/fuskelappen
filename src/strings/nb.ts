@@ -381,7 +381,7 @@ export const nb = {
     },
     vurdering: {
       navn: 'Vurdering',
-      beskrivelse: 'Grunnlag for vurdering, underveis- og sluttvurdering, fritak, fravær og orden og oppførsel.',
+      beskrivelse: 'Underveis- og sluttvurdering, grunnlag, fravær og eksamen.',
     },
     laereplanverket: {
       navn: 'Overordnet del',
@@ -397,11 +397,11 @@ export const nb = {
     },
     kalender: {
       navn: 'Kalender',
-      beskrivelse: 'Frister og datoer fra hele appen, med skoleruta.',
+      beskrivelse: 'Frister og datoer, med skoleruta.',
     },
     fylker: {
       navn: 'Fylkene',
-      beskrivelse: 'Fylkets sider, lokale forskrifter, skoler og opplæringskontor.',
+      beskrivelse: 'Fylkets sider, forskrifter og skoler.',
     },
     lov: {
       navn: 'Regelverk',

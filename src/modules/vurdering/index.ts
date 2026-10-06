@@ -74,15 +74,6 @@ export const manifest: Modulmanifest = {
         rute: proveneRute,
         modul: 'vurdering',
       },
-      {
-        id: 'vurdering:frister',
-        type: 'tidslinje' as const,
-        tittel: begge('vurdering.frister.tittel'),
-        tekst: begge('vurdering.frister.beskrivelse'),
-        stikkord: ['frist', 'eksamensdato', 'trekk', 'sensur', 'klage', 'klagefrist', 'oppmelding', 'kalender', 'tidslinje', 'privatist'],
-        rute: fristerRute,
-        modul: 'vurdering',
-      },
       ...veivisere
         .filter((v) => v.gyldighet.niva === 'nasjonal')
         .map((v) => ({ id: `vurdering:${v.id}`, type: 'veiviser' as const, tittel: v.tittel, tekst: v.tekst, stikkord: v.stikkord, rute: veiviserRute(v.id), modul: 'vurdering' })),

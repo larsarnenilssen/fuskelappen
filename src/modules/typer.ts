@@ -62,6 +62,8 @@ export interface Modulmanifest {
   id: string;
   navn: Tekstverdi;
   beskrivelse?: Tekstverdi;
+  /** Ekstra søkeord for treffet på selve modulen i søket, f.eks. «frister» for Kalender. */
+  stikkord?: string[];
   ikon: Ikonnavn;
   kategori: KategoriId;
   /** Rekkefølge innenfor kategorien. Lavest først. */

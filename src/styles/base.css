@@ -178,6 +178,8 @@ select {
  * Innholdet i toppfeltet flyttes litt ned, så appnavnet ikke havner i den.
  */
 @media (display-mode: standalone) and (pointer: coarse) {
+  /* På :root, så det som står fast under toppfeltet (f.eks. sidekolonnen på forsiden) kan regne den med. */
+  :root,
   .topplinje {
     --topplinje-luft: var(--topplinje-luft-installert);
   }
@@ -3617,30 +3619,33 @@ p.fagkort-tittel {
   color: var(--farge-merke);
 }
 
-/* Kategorioverskriftene er roligere: ikke store bokstaver. */
-/* Like høye bokser på forsiden (eier 02.10.2026). Undertekstene har plass til to linjer i vanlige bokser, tre i
-   Arbeidsplan og én i «Flere kalkulatorer». Arbeidsplan og «Flere» er til sammen like høye som to vanlige bokser,
-   fordelt 2/3 og 1/3. Høyden er en minstehøyde i rem, så boksene vokser med større tekst i stedet for å klippe den.
-   5,625rem er tittel og to linjer undertekst; da får Arbeidsplan (7,5rem) plass til tre linjer og «Flere» (3,75rem)
-   til én. */
-.forside .kategori {
+/* Like høye bokser på forsiden (eier 02.10.2026, presisert 06.10.2026). Vanlige bokser har plass til tittel og to
+   linjer undertekst. Arbeidsplan og «Flere kalkulatorer» er til sammen like høye som to vanlige bokser, fordelt 2/3 og
+   1/3. Boksene under «Oppslag» har plass til tittel og én linje. Høyden er en minstehøyde i rem, så boksene vokser med
+   større tekst i stedet for å klippe den. En boks med én linje undertekst får luft under linjen. Gruppene på forsiden
+   har innholdet i en egen ramme (`.gruppe-innhold`), så listen er ikke et direkte barn av gruppen. */
+.forside .kategori[data-kategori] {
   --modul-hoyde: 5.625rem;
 }
 
-.forside .kategori > .liste > li > .listelenke {
+.forside .kategori[data-kategori='felles'] {
+  --modul-hoyde: 4.25rem;
+}
+
+.forside .kategori[data-kategori] .liste > li > .listelenke {
   min-height: var(--modul-hoyde);
 }
 
-.forside .kategori[data-kategori='arbeidstid'] > .liste > li > a.listelenke {
+.forside .kategori[data-kategori='arbeidstid'] .liste > li > a.listelenke {
   min-height: calc(var(--modul-hoyde) * 4 / 3);
 }
 
-.forside .kategori > .liste > li > .flere-knapp {
+.forside .kategori[data-kategori] .liste > li > .flere-knapp {
   min-height: calc(var(--modul-hoyde) * 2 / 3);
   padding-block: var(--rom-1);
 }
 
-.forside .kategori > .liste > li > .flere-knapp .listelenke-under {
+.forside .kategori[data-kategori] .liste > li > .flere-knapp .listelenke-under {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -3648,7 +3653,7 @@ p.fagkort-tittel {
 
 /* På de smaleste skjermene får ikke undertittelen plass på én linje. Da står bare tittelen. */
 @media (max-width: 23.4rem) {
-  .forside .kategori > .liste > li > .flere-knapp .listelenke-under {
+  .forside .kategori[data-kategori] .liste > li > .flere-knapp .listelenke-under {
     display: none;
   }
 }
@@ -3842,10 +3847,12 @@ p.fagkort-tittel {
 
   /*
    * Kolonnen står fast under toppfeltet mens siden rulles, og ruller selv når den er høyere enn skjermen. Flaten går
-   * litt opp over overskriften, så overskriftene i kolonnene står i samme høyde.
+   * litt opp over overskriften, så overskriftene i kolonnene står i samme høyde. Når den står fast, er det like mye luft
+   * over den som mellom det blå feltet og kolonnen øverst på siden, også i installert app med høyere toppfelt (eier
+   * 06.10.2026).
    */
   .forside-sidekolonne {
-    --kolonne-topp: calc(var(--topplinje-hoyde) + env(safe-area-inset-top) + var(--rom-3));
+    --kolonne-topp: calc(var(--topplinje-hoyde) + env(safe-area-inset-top) + var(--topplinje-luft, 0px) + var(--rom-6) + var(--rom-1));
     position: sticky;
     top: var(--kolonne-topp);
     display: flex;
@@ -7623,9 +7630,15 @@ a.knapp {
 }
 
 .kal-tid {
+  display: block;
   font-weight: 400;
   font-size: var(--str-s);
   color: var(--farge-tekst-dempet);
+}
+
+/* Klokkeslettet står på linjen under tittelen, og vises når kortet er åpent (eier 06.10.2026). */
+.kal-kort:not([open]) .kal-tid:not(.kal-tid-alltid) {
+  display: none;
 }
 
 .kal-merker {

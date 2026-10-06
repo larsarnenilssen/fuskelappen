@@ -3,7 +3,18 @@
 // årshjulet og eksporten til kalender i fase 8.
 import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { kalenderRute } from './adresse.ts';
+import { kalenderLenke, kalenderRute } from './adresse.ts';
+import { KALENDERTEMAER, type Kalendertema } from '../../core/innhold/kalendertema.ts';
+import { hentTekst, type Malform } from '../../core/i18n/tekst.ts';
+
+/** Søkeordene for kalenderen filtrert på hvert tema. Inntak og eksamen har ordene fra de gamle kalenderne. */
+const STIKKORD: Record<Kalendertema, string[]> = {
+  inntak: ['frist', 'søknadsfrist', 'inntak', '1. mars', '1. februar'],
+  vurdering: ['frist', 'halvårsvurdering', 'standpunkt', 'varsel'],
+  eksamen: ['frist', 'eksamensdato', 'trekk', 'sensur', 'klage', 'klagefrist', 'oppmelding', 'privatist'],
+  skolerute: ['skolerute', 'ferie', 'skolestart', 'fridag'],
+  regelverk: ['endringer', 'ikrafttredelse', 'ny forskrift'],
+};
 
 export const manifest: Modulmanifest = {
   id: 'kalender',
@@ -12,18 +23,21 @@ export const manifest: Modulmanifest = {
   ikon: 'kalender',
   kategori: 'felles',
   rekkefolge: 5,
+  stikkord: ['frister', 'datoer', 'årshjul', 'skolerute', 'ferie', 'eksamen', 'inntak'],
   ruter: [{ sti: kalenderRute, tittel: 'kalender.tittel', side: () => import('./sider/Kalender.tsx') }],
+  // Søket (eier 06.10.2026): selve modulen er ett treff, med søkeordene under. I tillegg kommer kalenderen filtrert på
+  // hvert tema, f.eks. «Kalender – eksamen», i stedet for de gamle kalenderne for inntak og eksamen.
   async sokeoppforinger() {
-    return [
-      {
-        id: 'kalender:kalender',
-        type: 'tidslinje' as const,
-        tittel: { nb: 'Kalender', nn: 'Kalender' },
-        stikkord: ['frister', 'datoer', 'årshjul', 'skolerute', 'ferie', 'eksamen', 'inntak'],
-        rute: kalenderRute,
-        modul: 'kalender',
-      },
-    ];
+    const navn = (m: Malform, tema: Kalendertema) => hentTekst(m, `kalender.temaer.${tema}`).toLowerCase();
+    return KALENDERTEMAER.map((tema) => ({
+      id: `kalender:${tema}`,
+      type: 'tidslinje' as const,
+      tittel: { nb: hentTekst('nb', 'kalender.sokTema', { tema: navn('nb', tema) }), nn: hentTekst('nn', 'kalender.sokTema', { tema: navn('nn', tema) }) },
+      tekst: { nb: hentTekst('nb', 'kalender.sokTemaTekst', { tema: navn('nb', tema) }), nn: hentTekst('nn', 'kalender.sokTemaTekst', { tema: navn('nn', tema) }) },
+      stikkord: STIKKORD[tema],
+      rute: kalenderLenke(tema),
+      modul: 'kalender',
+    }));
   },
   async favorittbare(ider) {
     return bareSpurte([oversiktsfavoritt(manifest)], ider);

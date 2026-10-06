@@ -87,6 +87,7 @@ export async function samleSokeoppforinger(moduler: readonly Modulmanifest[] = a
               type: 'modul',
               tittel: begge(m.navn),
               ...(m.beskrivelse ? { tekst: begge(m.beskrivelse) } : {}),
+              ...(m.stikkord ? { stikkord: m.stikkord } : {}),
               rute: forste.sti,
               modul: m.id,
             },
