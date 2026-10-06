@@ -138,9 +138,8 @@ kilder:
     niva: nasjonal
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
-    # Aktiveres når eier har godkjent utvalget av kapitler og loven står i content/lovverk.yaml
-    # (docs/arbeidsordrer/fase-7-forslag.md). Kildesjekken melder feil for en aktiv lovtekst som ikke står der.
-    aktiv: false
+    # Utvalget er godkjent av eier 06.10.2026 og står i content/lovverk.yaml.
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -157,8 +156,7 @@ kilder:
     niva: nasjonal
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
-    # Aktiveres sammen med privatskolelova (se over).
-    aktiv: false
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-

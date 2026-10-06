@@ -79,6 +79,8 @@ export interface Skole {
   navn: string;
   fylke: string;
   kommune: string;
+  /** Privat skole (ErPrivatskole i NSR). Står bare på private skoler, så filen er kort (avgjørelse 075). */
+  privat?: true;
 }
 
 interface NsrEnhet {
@@ -89,6 +91,7 @@ interface NsrEnhet {
   ErAktiv: boolean;
   ErSkole: boolean;
   ErVideregaaendeSkole: boolean;
+  ErPrivatskole?: boolean;
 }
 
 interface NsrSide {
@@ -102,7 +105,7 @@ export const MINSTE_ANTALL_SKOLER = 300;
 export function filtrerSkoler(enheter: readonly NsrEnhet[], fylker: ReadonlySet<string>): Skole[] {
   return enheter
     .filter((e) => e.ErAktiv && e.ErSkole && e.ErVideregaaendeSkole && fylker.has(e.Fylkesnummer))
-    .map((e) => ({ id: e.Organisasjonsnummer, navn: e.Navn.trim(), fylke: e.Fylkesnummer, kommune: e.Kommunenummer }))
+    .map((e): Skole => ({ id: e.Organisasjonsnummer, navn: e.Navn.trim(), fylke: e.Fylkesnummer, kommune: e.Kommunenummer, ...(e.ErPrivatskole ? { privat: true as const } : {}) }))
     .sort((a, b) => a.fylke.localeCompare(b.fylke) || a.navn.localeCompare(b.navn, 'nb') || a.id.localeCompare(b.id));
 }
 
@@ -130,7 +133,7 @@ export function skoleendringer(forrige: readonly Skole[], nye: readonly Skole[])
     fjernet: forrige.filter((s) => !naa.has(s.id)),
     endret: nye.filter((s) => {
       const g = gamle.get(s.id);
-      return g !== undefined && (g.navn !== s.navn || g.fylke !== s.fylke || g.kommune !== s.kommune);
+      return g !== undefined && (g.navn !== s.navn || g.fylke !== s.fylke || g.kommune !== s.kommune || g.privat !== s.privat);
     }),
   };
 }

@@ -68,6 +68,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - **Endre aldri fasittester** uten eiers godkjenning. Feiler en fasittest, er det koden eller regelsettet som skal undersøkes.
 - Bruk gjeldende regelverk: opplæringslova og forskriften som gjelder fra 1.8.2024. Eldre materiale er bare bakgrunn.
 - Lov- og forskriftstekst kan siteres. Partenes tolkninger, andres veiledninger og Visma-materiell kopieres ikke. Skriv med egne ord og lenk til kilden.
+- Appen er skrevet for fylkeskommunale skoler. Der privatskolelova eller forskriften til den gir egne regler, får kortet eller steget `privatskole` (tekst og kilder), som vises når brukeren har valgt «Privatskole». Paragrafer i opplæringsforskrifta med en parallell i privatskoleforskrifta føres i `content/privatskole/paralleller.yaml` (avgjørelse 075).
 - Innhold og verdier har riktig `gyldighet` (nasjonal, fylke eller skole). Fylkes- og skoleinnhold vises bare når brukeren har valgt fylke eller skole.
 - Data under NLOD (Udir, Lovdata) krediteres under «Om».
 - Oppdater `godkjent_fingeravtrykk` i kilderegisteret bare etter beskjed fra eier.

@@ -154,6 +154,10 @@ export const nn: Tekster = {
       bareNasjonalt: 'Utan valt fylke blir berre nasjonalt innhald vist. Lokale reglar kan likevel gjelde.',
       fjern: 'Fjern fylke og skule',
       kilde: 'Skulelista er henta frå Nasjonalt skoleregister (Udir).',
+      privatskole: 'Privatskule',
+      privatskoleHjelp: 'Vis reglane som gjeld privatskular (privatskolelova og forskrifta til ho), der dei er ulike frå reglane for fylkeskommunale skular.',
+      privatskoleNsr: 'Skulen er ein privatskule i Nasjonalt skoleregister. Reglane for privatskular blir viste der dei er ulike.',
+      privatskoleOffentlig: 'Skulen er ein offentleg skule i Nasjonalt skoleregister. Slå på brytaren om du vil sjå reglane for privatskular.',
     },
     data: {
       legend: 'Dataa dine',
@@ -273,6 +277,11 @@ export const nn: Tekster = {
     aapneKilde: 'Opne kjelda',
   },
   komponenter: {
+    privatskole: {
+      tittel: 'For privatskular',
+      kilderByttet: 'For privatskular står paragrafane i privatskoleforskrifta.',
+      harMerknad: 'Har eigne reglar for privatskular',
+    },
     veiviser: {
       prosessen: 'Prosessen',
       heleProsessen: 'Heile prosessen',

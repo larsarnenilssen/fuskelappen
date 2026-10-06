@@ -10,6 +10,7 @@ import {
   fylkeslenkerSkjema,
   innholdsfil,
   kilderegisterSkjema,
+  parallellerSkjema,
   praksisfilSkjema,
   synonymSkjema,
   type Innholdselement,
@@ -18,10 +19,11 @@ import { regelsettSkjema } from '../../src/core/regler/skjema.ts';
 import { lovutvalgSkjema } from '../../src/modules/lov/skjema.ts';
 import { byggBegrepsord, type Begrepsord, lenkBegreper } from '../../src/core/innhold/begrepslenker.ts';
 
-type Filtype = 'kilderegister' | 'fylker' | 'fylkeslenker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'innhold' | 'regelsett';
+type Filtype = 'kilderegister' | 'paralleller' | 'fylker' | 'fylkeslenker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'innhold' | 'regelsett';
 
 const skjemaer: Record<Filtype, ZodType> = {
   kilderegister: kilderegisterSkjema,
+  paralleller: parallellerSkjema,
   fylker: fylkerSkjema,
   fylkeslenker: fylkeslenkerSkjema,
   synonymer: synonymSkjema,
@@ -39,6 +41,7 @@ export function filtype(relSti: string): Filtype | null {
   if (sti === 'content/sok/synonymer.yaml') return 'synonymer';
   if (sti === 'content/kontroll/praksis.yaml') return 'praksis';
   if (sti === 'content/lovverk.yaml') return 'lovutvalg';
+  if (sti === 'content/privatskole/paralleller.yaml') return 'paralleller';
   if (sti.startsWith('content/') || sti.startsWith('tests/fixtures/innhold/')) return 'innhold';
   if (sti.startsWith('rules/') || sti.startsWith('tests/fixtures/regler/')) return 'regelsett';
   return null;
@@ -94,6 +97,7 @@ export function validerTekst(relSti: string, tekst: string, medHtml = true, begr
         ...e,
         tekst: html(e.tekst),
         ...(e.type === 'steg' && e.forklaring ? { forklaring: html(e.forklaring) } : {}),
+        ...(e.privatskole ? { privatskole: { ...e.privatskole, tekst: html(e.privatskole.tekst) } } : {}),
       };
     });
   }

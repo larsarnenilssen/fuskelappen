@@ -93,10 +93,32 @@ const felles = {
    * (eier 04.10.2026). Vises på begrepssiden.
    */
   merknad: flerspraak.optional(),
+  /**
+   * Privatskoler (avgjørelse 075): det som er ulikt for skoler godkjent etter privatskolelova, med egne ord og kildene
+   * i privatskolelova eller forskriften til den. Vises i kortet eller steget når brukeren har valgt «Privatskole».
+   */
+  privatskole: z.object({ tekst: flerspraak, kilder: z.array(kildeRef).min(1) }).strict().optional(),
 };
 
 /** Paragraf i Regelverk: «dokument/nummer», f.eks. «opplaeringslova/11-1» eller «forvaltningsloven/11a». */
 export const paragrafRef = z.string().regex(/^[a-z0-9-]+\/[0-9a-z-]+$/, 'Paragraf skrives «dokument/nummer», f.eks. «opplaeringslova/11-1»');
+
+/**
+ * Paragrafene i opplæringsforskrifta som har en parallell i privatskoleforskrifta (avgjørelse 075): samme regel for
+ * skoler godkjent etter privatskolelova. Kortene viser parallellen i stedet når brukeren har valgt «Privatskole».
+ * `tittel` er tittelen på paragrafen i privatskoleforskrifta, og `lik` om tittelen er den samme som i
+ * opplæringsforskrifta. Er den ikke det, sier `merknad` hva som er ulikt.
+ */
+export const parallellerSkjema = z
+  .object({
+    paralleller: z.array(
+      z
+        .object({ fra: paragrafRef, til: paragrafRef, tittel: z.string().min(1), lik: z.boolean(), merknad: z.string().optional() })
+        .strict()
+        .refine((p) => p.lik || p.merknad, { message: 'En parallell med ulik tittel må ha en merknad' }),
+    ),
+  })
+  .strict();
 
 /**
  * Koder med forklaring, i grupper som kan lukkes, f.eks. karakterer og vurderingsuttrykk (fase 6, eier 04.10.2026).

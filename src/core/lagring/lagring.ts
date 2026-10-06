@@ -21,6 +21,11 @@ export const innstillingerSkjema = z.strictObject({
   tema: z.enum(['system', 'lys', 'mork']),
   fylke: z.nullable(z.string().check(z.regex(/^\d{2}$/))),
   skole: z.nullable(skoleSkjema),
+  /**
+   * Vis reglene for privatskoler der de er ulike (privatskolelova og forskriften, avgjørelse 075). Settes når brukeren
+   * velger en privat skole, og kan slås av og på. Mangler i data lagret før 0.40.0, og betyr da nei.
+   */
+  privatskole: z.optional(z.boolean()),
 });
 
 /**

@@ -8374,3 +8374,27 @@ a.knapp {
 .seksjon > [id] {
   padding-bottom: var(--rom-2);
 }
+
+/* ---------- Privatskoler (fase 7, avgjørelse 075) ----------
+   Det som er ulikt for privatskoler, i en boks med stiplet kant som de lokale tilleggene i veiviserne. Vises bare når
+   brukeren har valgt «Privatskole». */
+.privatskolemerknad {
+  margin: var(--rom-3) 0 var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) dashed var(--farge-merke);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+}
+
+.privatskolemerknad-topp {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.privatskolemerknad .brodtekst > :last-child {
+  margin-bottom: 0;
+}

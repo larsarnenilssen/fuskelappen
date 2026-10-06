@@ -102,9 +102,11 @@
     nn: "Privatskolar kan tilby meir opplæring, men har ikkje plikt til det. Dei kan ta inn elevar i fag når dei har plass innanfor elevtalet skolen er godkjend for, og eleven fyller krava til inntak. Opplæringa følgjer den godkjende læreplanen til skolen og det fastsette timetalet i faget. Privatskolar kan ikkje gjere unntak frå timetalet, slik fylkeskommunen kan. Elevar frå privatskolar kan også melde seg til meir opplæring hos fylkeskommunen."
   kilder:
     - { id: udir-mer-opplaering, punkt: "6. Spesielt for skoler godkjent etter privatskoleloven", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/spesielt-for-skoler-godkjent-etter-privatskoleloven/" }
+    - { id: privatskoleforskrifta, punkt: "§ 4-2 Meir opplæring", url: "https://lovdata.no/forskrift/2024-06-03-901/§4-2" }
+    - { id: privatskoleforskrifta, punkt: "§ 3-4 Plassar for inntak av elevar til meir opplæring", url: "https://lovdata.no/forskrift/2024-06-03-901/§3-4" }
   kontrollert: null
   kontrollsporsmal:
-    - "Udir viser til forskrift til privatskoleloven § 4-2, som appen ikke har i Lov og forskrift. Er det greit at kortet bare har Udirs kapittel 6 som kilde?"
+    - "Kortet har nå privatskoleforskrifta §§ 4-2 og 3-4 som kilde i tillegg til Udirs kapittel 6 (eier 06.10.2026). Stemmer teksten med paragrafene?"
 
 # Gangen: fra melding til ny standpunktkarakter.
 - id: mo-sti-melding

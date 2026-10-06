@@ -13,8 +13,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata | 1, 3 |
 | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7, 8 |
 | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7, 8 |
-| [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst (ikke aktiv) | 7 |
-| [Forskrift til privatskolelova (privatskoleforskrifta)](https://lovdata.no/forskrift/2024-06-03-901) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst (ikke aktiv) | 7 |
+| [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 7 |
+| [Forskrift til privatskolelova (privatskoleforskrifta)](https://lovdata.no/forskrift/2024-06-03-901) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 7 |
 | [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7 |
 | [Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)](https://lovdata.no/lov/2006-05-19-16) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3 |
 | [Lov om dokumentasjon og arkiv (arkivlova)](https://lovdata.no/lov/2025-06-20-96) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3 |

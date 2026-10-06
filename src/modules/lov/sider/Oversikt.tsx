@@ -3,7 +3,8 @@
 // valgt fylket, og skolens egne regler bare når skolen er valgt, merket «Skolen din» (avgjørelse 061). Alle dokumentene
 // har dato for ikrafttredelse og siste endring (eier 05.10.2026).
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
-import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { usePrivatskole, useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { PRIVATSKOLEDOKUMENTER } from '../../../core/privatskole.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { oversiktsid } from '../../favoritter.ts';
@@ -64,7 +65,15 @@ export default function Oversikt() {
   const [data, provIgjen] = useLast(lastOversikt, 'oversikt');
   const fylke = fylkesnavn(innstillinger.fylke);
   const synligAvtale = avtaler.filter((a) => a.gyldighet.niva === 'nasjonal' || a.gyldighet.fylke === innstillinger.fylke);
+  const privatskole = usePrivatskole();
   const nasjonale = (o: Lovoversikt) => o.dokumenter.filter((d) => d.gyldighet.niva === 'nasjonal');
+  // Privatskolelova og forskriften (avgjørelse 075): med «Privatskole» valgt står de først blant lovene og
+  // forskriftene, merket «Privatskole». Ellers står de i en egen gruppe, lukket som de andre.
+  const erPrivat = (d: Dokumentinfo) => PRIVATSKOLEDOKUMENTER.has(d.id);
+  const avType = (o: Lovoversikt, type: string) => {
+    const alle = nasjonale(o).filter((d) => d.type === type);
+    return privatskole ? [...alle.filter(erPrivat), ...alle.filter((d) => !erPrivat(d))] : alle.filter((d) => !erPrivat(d));
+  };
   const skole = innstillinger.skole?.id ?? null;
   const lokale = (o: Lovoversikt) =>
     o.dokumenter
@@ -81,7 +90,7 @@ export default function Oversikt() {
     id: d.id,
     tittel: dokumentnavn(d, malform),
     ...(d.korttittelNn ? {} : { lang: d.malform }),
-    ...(d.gyldighet.niva === 'skole' ? { merke: t('lov.skolenDin') } : {}),
+    ...(d.gyldighet.niva === 'skole' ? { merke: t('lov.skolenDin') } : privatskole && erPrivat(d) ? { merke: t('lov.privatskoleMerke') } : {}),
     under: [
       ...(d.iKraft && d.iKraftTil ? [t('lov.iKraftPeriode', { fra: dato(d.iKraft), til: dato(d.iKraftTil) })] : d.iKraft ? [t('lov.iKraft', { dato: dato(d.iKraft) })] : []),
       ...(d.sistEndret && d.sistEndret !== d.iKraft ? [t('lov.endret', { dato: dato(d.sistEndret) })] : []),
@@ -100,8 +109,8 @@ export default function Oversikt() {
         <Lasting feil={data === 'feil'} provIgjen={provIgjen} />
       ) : (
         <Sok etikett={t('lov.sokAlle')} dokumenter={alle} visDokument>
-          <Gruppe nokkel="lover" tittel={t('lov.lover')} rader={nasjonale(data).filter((d) => d.type === 'lov').map(rad)} />
-          <Gruppe nokkel="forskrifter" tittel={t('lov.forskrifter')} rader={nasjonale(data).filter((d) => d.type === 'forskrift').map(rad)} />
+          <Gruppe nokkel="lover" tittel={t('lov.lover')} rader={avType(data, 'lov').map(rad)} />
+          <Gruppe nokkel="forskrifter" tittel={t('lov.forskrifter')} rader={avType(data, 'forskrift').map(rad)} />
           <Gruppe nokkel="lokale" tittel={fylke ? t('lov.lokale', { fylke }) : t('lov.lokaleUtenFylke')} rader={fylke ? lokale(data).map(rad) : []}>
             {!fylke ? (
               <p class="dempet">
@@ -110,7 +119,13 @@ export default function Oversikt() {
             ) : (
               lokale(data).length === 0 && <p class="dempet">{t('lov.ingenLokale', { fylke })}</p>
             )}
+            {privatskole && <p class="dempet">{t('lov.privatskoleSkoleregler')}</p>}
           </Gruppe>
+          {!privatskole && nasjonale(data).some(erPrivat) && (
+            <Gruppe nokkel="privatskoler" tittel={t('lov.privatskoler')} rader={nasjonale(data).filter(erPrivat).map(rad)}>
+              <p class="dempet liten">{t('lov.privatskoleHjelp')}</p>
+            </Gruppe>
+          )}
           <Gruppe
             nokkel="avtaler"
             tittel={t('lov.avtaler')}

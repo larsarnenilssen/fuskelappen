@@ -4,10 +4,20 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Privatskole:** En ny bryter under «Fylke og skole» i innstillingene. Velger du en privat skole, slås den på av seg selv. Når den er på:
+  - kort og steg der privatskolene har egne regler, har en boks «For privatskoler»: inntaket, klage på karakter, individuell tilrettelegging, skoleregler og bortvisning
+  - kildene og «I regelverket» viser paragrafen i forskriften til privatskolelova i stedet for den samme regelen i opplæringsforskrifta, f.eks. fraværsgrensen, eksamen og klage
+  - privatskolelova og forskriften står først i Regelverk
+- **Privatskolelova og forskriften til den** i Lov og forskrift, med kapitlene som gjelder videregående opplæring. Teksten kommer med neste henting fra Lovdata.
+- **Begrepet «Privatskole».**
+
 ### Endret
 
-- **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene» og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
+- **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene», fagarket, tilbudene i Opplæringstilbud og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
 - **Regelverk:** Gruppene på oversikten (lover, forskrifter, lokale forskrifter og avtaler) er lukket når du kommer til siden. Det du åpner, er fortsatt åpent når du går tilbake.
+- **Mer opplæring:** Kortet om privatskoler har forskriften til privatskolelova (§§ 4-2 og 3-4) som kilde.
 
 ## [0.39.0] – 2026-10-06
 

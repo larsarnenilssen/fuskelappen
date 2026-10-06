@@ -116,6 +116,11 @@ export function useTilstand(): Lagret {
   return data;
 }
 
+/** Om brukeren har valgt å se reglene for privatskoler (avgjørelse 075). */
+export function usePrivatskole(): boolean {
+  return useTilstand().innstillinger.privatskole === true;
+}
+
 export type T = (nokkel: Tekstnokkel, verdier?: Verdier) => string;
 
 export function useTekst(): { t: T; malform: Malform } {

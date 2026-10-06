@@ -1,0 +1,235 @@
+# Privatskoler (avgjørelse 075): paragrafene i opplæringsforskrifta som har en parallell i privatskoleforskrifta.
+# Når brukeren har valgt «Privatskole», viser kortene paragrafen i privatskoleforskrifta i stedet (kildene og
+# «I regelverket»). Bare paragrafer som appen bruker som kilde, og der privatskoleforskrifta har en paragraf om det
+# samme. Titlene er lest hos Lovdata 06.10.2026 (innholdslisten i forskrift 2024-06-03-901). `lik` er om tittelen er
+# den samme. Ikke med, fordi privatskoleforskrifta ikke har en paragraf med samme tittel: inntaksfristene og
+# fordelingen av plassene (ofo. §§ 4-9 og 4-18 til 4-28), fag- og sveineprøva (ofo. §§ 9-48 og 9-54 til 9-69) og
+# klage på prøvene (ofo. §§ 10-9 og 10-10). Listen er til eiers kontroll (docs/arbeidsordrer/fase-7-forslag.md).
+paralleller:
+  - fra: opplaeringsforskrifta/4-2
+    til: privatskoleforskrifta/3-10
+    tittel: "Inntak til utdanningsprogram og programområde"
+    lik: true
+  - fra: opplaeringsforskrifta/4-3
+    til: privatskoleforskrifta/3-3
+    tittel: "Meir opplæring for elevar i fag som ikkje er bestått"
+    lik: false
+    merknad: "Opplæringsforskrifta har «som er gjennomført, men ikkje bestått». Privatskoleforskrifta har «som ikkje er bestått»."
+  - fra: opplaeringsforskrifta/4-12
+    til: privatskoleforskrifta/3-11
+    tittel: "Vilkår for inntak til vidaregåande trinn 1"
+    lik: true
+  - fra: opplaeringsforskrifta/4-13
+    til: privatskoleforskrifta/3-13
+    tittel: "Vilkår for inntak til vidaregåande trinn 2 og vidaregåande trinn 3"
+    lik: true
+  - fra: opplaeringsforskrifta/5-2
+    til: privatskoleforskrifta/4-2
+    tittel: "Meir opplæring"
+    lik: false
+    merknad: "Opplæringsforskrifta har «Innhaldet i retten til meir opplæring». Udir viser til privatskoleforskrifta § 4-2 for privatskolene."
+  - fra: opplaeringsforskrifta/9-1
+    til: privatskoleforskrifta/6-2
+    tittel: "Formålet med og grunnlaget for vurdering i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/9-2
+    til: privatskoleforskrifta/6-3
+    tittel: "Formålet med og grunnlaget for vurdering i orden og i oppførsel"
+    lik: true
+  - fra: opplaeringsforskrifta/9-3
+    til: privatskoleforskrifta/6-4
+    tittel: "Karakterar i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/9-4
+    til: privatskoleforskrifta/6-5
+    tittel: "Karakterar i orden og i oppførsel"
+    lik: true
+  - fra: opplaeringsforskrifta/9-6
+    til: privatskoleforskrifta/6-6
+    tittel: "Samtale om utvikling"
+    lik: true
+  - fra: opplaeringsforskrifta/9-7
+    til: privatskoleforskrifta/6-7
+    tittel: "Varsling om at karakteren kan falle bort eller bli sett ned"
+    lik: true
+  - fra: opplaeringsforskrifta/9-8
+    til: privatskoleforskrifta/6-8
+    tittel: "Fråværsgrense i vidaregåande skole"
+    lik: true
+  - fra: opplaeringsforskrifta/9-9
+    til: privatskoleforskrifta/6-9
+    tittel: "System for føring av karakterar og fråvær"
+    lik: true
+  - fra: opplaeringsforskrifta/9-11
+    til: privatskoleforskrifta/6-11
+    tittel: "Undervegsvurdering i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/9-12
+    til: privatskoleforskrifta/6-12
+    tittel: "Undervegsvurdering i orden og i oppførsel"
+    lik: true
+  - fra: opplaeringsforskrifta/9-13
+    til: privatskoleforskrifta/6-13
+    tittel: "Halvårsvurdering i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/9-14
+    til: privatskoleforskrifta/6-14
+    tittel: "Halvårsvurdering i orden og i oppførsel"
+    lik: true
+  - fra: opplaeringsforskrifta/9-15
+    til: privatskoleforskrifta/6-15
+    tittel: "Sluttvurdering i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/9-16
+    til: privatskoleforskrifta/6-16
+    tittel: "Standpunktkarakterar i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/9-17
+    til: privatskoleforskrifta/6-17
+    tittel: "Standpunktkarakterar i orden og i oppførsel"
+    lik: true
+  - fra: opplaeringsforskrifta/9-18
+    til: privatskoleforskrifta/6-18
+    tittel: "Fellesreglar om fritak frå vurdering med karakter"
+    lik: true
+  - fra: opplaeringsforskrifta/9-19
+    til: privatskoleforskrifta/6-19
+    tittel: "Fritak frå vurdering med karakter for elevar som får individuelt tilrettelagd opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-20
+    til: privatskoleforskrifta/6-20
+    tittel: "Fritak frå vurdering med karakter for elevar som får innføringsopplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-21
+    til: privatskoleforskrifta/6-21
+    tittel: "Fritak frå vurdering med karakter i eitt av dei norske skriftspråka"
+    lik: true
+  - fra: opplaeringsforskrifta/9-22
+    til: privatskoleforskrifta/6-22
+    tittel: "Fritak frå vurdering med karakter i framandspråk i vidaregåande opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-23
+    til: privatskoleforskrifta/6-23
+    tittel: "Fritak frå vurdering med karakter i kroppsøving"
+    lik: true
+  - fra: opplaeringsforskrifta/9-25
+    til: privatskoleforskrifta/6-25
+    tittel: "Om eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/9-26
+    til: privatskoleforskrifta/6-26
+    tittel: "Ansvaret for eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/9-27
+    til: privatskoleforskrifta/6-27
+    tittel: "Oppmelding til eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/9-28
+    til: privatskoleforskrifta/6-28
+    tittel: "Eksamensformer, tidsramme og trekk av elevar til eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/9-30
+    til: privatskoleforskrifta/6-30
+    tittel: "Talet på eksamenar på studieførebuande utdanningsprogram"
+    lik: true
+  - fra: opplaeringsforskrifta/9-31
+    til: privatskoleforskrifta/6-31
+    tittel: "Talet på eksamenar på yrkesfaglege utdanningsprogram"
+    lik: true
+  - fra: opplaeringsforskrifta/9-32
+    til: privatskoleforskrifta/6-32
+    tittel: "Førebuingsdel"
+    lik: true
+  - fra: opplaeringsforskrifta/9-33
+    til: privatskoleforskrifta/6-33
+    tittel: "Sensur av eksamenssvar"
+    lik: true
+  - fra: opplaeringsforskrifta/9-34
+    til: privatskoleforskrifta/6-34
+    tittel: "Særskild tilrettelegging av eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/9-36
+    til: privatskoleforskrifta/6-35
+    tittel: "Utsett eksamen for elevar i den vidaregåande opplæringa"
+    lik: false
+    merknad: "Opplæringsforskrifta har også privatistar i tittelen. Privatskoleforskrifta gjeld bare elevar."
+  - fra: opplaeringsforskrifta/9-37
+    til: privatskoleforskrifta/6-36
+    tittel: "Ny eksamen for elevar i den vidaregåande opplæringa"
+    lik: true
+  - fra: opplaeringsforskrifta/9-38
+    til: privatskoleforskrifta/6-37
+    tittel: "Særskild eksamen for elevar i den vidaregåande opplæringa"
+    lik: true
+  - fra: opplaeringsforskrifta/9-39
+    til: privatskoleforskrifta/6-38
+    tittel: "Bortvising frå eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/9-40
+    til: privatskoleforskrifta/6-39
+    tittel: "Annullering av eksamen på grunn av feil ved gjennomføringa"
+    lik: true
+  - fra: opplaeringsforskrifta/9-41
+    til: privatskoleforskrifta/6-40
+    tittel: "Annullering av eksamen når elevar ikkje får standpunktkarakter i faget"
+    lik: true
+  - fra: opplaeringsforskrifta/9-42
+    til: privatskoleforskrifta/6-41
+    tittel: "Annullering av eksamen på grunn av juks eller forsøk på juks"
+    lik: true
+  - fra: opplaeringsforskrifta/9-46
+    til: privatskoleforskrifta/6-45
+    tittel: "Vitnemål i vidaregåande opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-47
+    til: privatskoleforskrifta/6-46
+    tittel: "Førstegongsvitnemål i vidaregåande opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-49
+    til: privatskoleforskrifta/6-47
+    tittel: "Særskilde reglar om dokumentasjon i yrkesfaglege utdanningsprogram for dei med store lærevanskar"
+    lik: true
+  - fra: opplaeringsforskrifta/9-51
+    til: privatskoleforskrifta/6-48
+    tittel: "Kompetansebevis i vidaregåande opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-52
+    til: privatskoleforskrifta/6-49
+    tittel: "Føring av karakterar i fag på vitnemål og kompetansebevis i vidaregåande opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/9-53
+    til: privatskoleforskrifta/6-50
+    tittel: "Føring av fråvær i vidaregåande opplæring"
+    lik: true
+  - fra: opplaeringsforskrifta/10-1
+    til: privatskoleforskrifta/7-1
+    tittel: "Kva kapittelet gjeld og forholdet til forvaltningsloven"
+    lik: true
+  - fra: opplaeringsforskrifta/10-2
+    til: privatskoleforskrifta/7-2
+    tittel: "Klagefristar"
+    lik: true
+  - fra: opplaeringsforskrifta/10-3
+    til: privatskoleforskrifta/7-3
+    tittel: "Rett til grunngiving for karakteren"
+    lik: true
+  - fra: opplaeringsforskrifta/10-4
+    til: privatskoleforskrifta/7-4
+    tittel: "Klage på fastsetjing av standpunktkarakter i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/10-5
+    til: privatskoleforskrifta/7-5
+    tittel: "Klage på vedtak om ikkje å fastsetje standpunktkarakter i fag"
+    lik: true
+  - fra: opplaeringsforskrifta/10-6
+    til: privatskoleforskrifta/7-6
+    tittel: "Klage på standpunktkarakter i orden og i oppførsel"
+    lik: true
+  - fra: opplaeringsforskrifta/10-7
+    til: privatskoleforskrifta/7-7
+    tittel: "Klage på karakter ved skriftleg eksamen"
+    lik: true
+  - fra: opplaeringsforskrifta/10-8
+    til: privatskoleforskrifta/7-8
+    tittel: "Klage på gjennomføringa av munnleg eksamen og eksamen som ikkje berre er skriftleg eller munnleg"
+    lik: true

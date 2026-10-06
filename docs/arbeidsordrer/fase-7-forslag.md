@@ -155,3 +155,38 @@ Ordlyden i høyre kolonne er et utkast og får kontrollspørsmål. Jeg har ikke 
 1. **PR 1 (denne):** to kolonner og Regelverk (A), kildene som ikke aktive og dette forslaget.
 2. **Lovene:** utvalget i `content/lovverk.yaml` og kildene aktive. Teksten kommer i neste kildesjekk, eller når du starter den manuelt i Actions.
 3. **Innholdet etter C1, C2, C4 og C5:** kortet om privatskoler, merknadene og begrepet. Deretter skolemiljøet (fase 7), med mockup først.
+
+---
+
+## Svar fra eier 06.10.2026
+
+- **A3:** Fagarket og tilbudssidene skal også stå i to kolonner.
+- **B:** Alle kapitlene i forslaget tas med, også 6A og 7 i privatskolelova og 9 i forskriften.
+- **C:** Paragrafene skal vises der det er foreslått når brukeren har valgt privatskole, i et felt eller med en bryter ved skolevalget. Sidene merkes der det er nyttig, og de nye kildene vises, eller erstatter de gamle der det er riktig. Brukeren skal få se det lovverket som er relevant, avhengig av om de arbeider ved eller vil ha informasjon om en privatskole.
+
+## Runde 2 (gjort 06.10.2026, avgjørelse 074 og 075)
+
+- **To kolonner:**
+  - **Fagarket:** Læreplanverket, kompetansemålene og vurderingen står til venstre. Nøkkeltallene, faktaene og programområdene står til høyre. På mobil er rekkefølgen som før. Delene er lukket fra start, som før, så venstre kolonne er kort til en del åpnes.
+  - **Tilbudene:** Fagene og tilpasningene står til venstre, og veien videre, skolene, yrkene og Vilbli til høyre.
+- **Lov og forskrift:** Begge står i `content/lovverk.yaml`, og kildene er aktive. Teksten kommer i neste kildesjekk, som bare går fra `main`.
+  - Til teksten er hentet, viser Regelverk dem ikke, og kildene lenker til Lovdata.
+  - Når teksten er hentet, står lovene i en egen gruppe «Privatskoler». Med «Privatskole» valgt står de først blant lovene og forskriftene.
+- **Bryteren «Privatskole»** står under fylke og skole i innstillingene.
+  - Et valg av skole setter den etter Nasjonalt skoleregister: på for private skoler og av for offentlige. 141 av de 563 skolene er private.
+  - Brukeren kan endre den, også uten valgt skole.
+- **Med «Privatskole» på:**
+  - **«For privatskoler»** (en boks i kortet eller steget) står på disse stedene:
+    - Inntak: inntaksmåten (pl. § 3-1)
+    - Klage på karakter: første steg (psf. kap. 7)
+    - Tilrettelegging: vedtaket og klagen (pl. § 3-6)
+    - Orden og oppførsel: skoleregler og bortvisning (pl. §§ 5A-6, 5A-7 og 3-10)
+  - **Kildene byttes:** 56 paragrafer i opplæringsforskrifta har en parallell i privatskoleforskrifta (`content/privatskole/paralleller.yaml`): vurdering, fravær, eksamen, vitnemål, klage, inntak og mer opplæring. Kildene og «I regelverket» viser parallellen i stedet.
+  - **Ikke byttet,** fordi privatskoleforskrifta ikke har en paragraf om det samme: inntaksfristene og fordelingen av plassene, fag- og svenneprøven og klage på prøvene.
+- **Mer opplæring:** Kortet «Privatskoler» har psf. §§ 4-2 og 3-4 som kilde, alltid.
+- **Begrepet «Privatskole».**
+- **Kontroll:** Alt nytt har `kontrollert: null` og kontrollspørsmål. Parallellene er en liste til din kontroll. Titlene testes mot teksten fra Lovdata når den er hentet.
+
+**Åpent:**
+- Om departementet har delegert klagen etter pl. §§ 3-1, 3-6 og 3-10, f.eks. til Udir eller statsforvalteren. Det er spurt i kontrollspørsmålene.
+- Skolemiljøet (fase 7) bruker den samme boksen for henvisningen til pl. § 2-4 («rektor» leses som «dagleg leiar»).

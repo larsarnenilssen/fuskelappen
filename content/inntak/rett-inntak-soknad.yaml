@@ -445,6 +445,13 @@
       - { id: tegnsprak, gruppe: { nb: Fortrinnsrett, nn: Fortrinnsrett }, tekst: { nb: "Rett til opplæring i og på tegnspråk", nn: "Rett til opplæring i og på teiknspråk" }, neste: sk-fortrinn-tegnsprak }
       - { id: individuell, gruppe: { nb: Uten fortrinnsrett, nn: Utan fortrinnsrett }, tekst: { nb: "Individuell behandling", nn: "Individuell behandling" }, neste: sk-individuell-behandling }
       - { id: poeng, gruppe: { nb: Uten fortrinnsrett, nn: Utan fortrinnsrett }, tekst: { nb: "Konkurrerer på poeng", nn: "Konkurrerer på poeng" }, neste: sk-poeng }
+  privatskole:
+    tekst:
+      nb: "Privatskolen tar inn elevene selv. Skolen skal stå åpen for alle som fyller vilkårene for inntak i offentlige skoler, og har hele landet som inntaksområde. Er det flere søkere enn plasser, avgjør skolen hvem som tas inn etter sitt eget inntaksreglement. Reglene for inntak til privatskoler står i privatskoleforskrifta kapittel 3. Departementet er klageinstans."
+      nn: "Privatskulen tek inn elevane sjølv. Skulen skal stå open for alle som fyller vilkåra for inntak i offentlege skular, og har heile landet som inntaksområde. Er det fleire søkjarar enn plassar, avgjer skulen kven som blir teken inn etter sitt eige inntaksreglement. Reglane for inntak til privatskular står i privatskoleforskrifta kapittel 3. Departementet er klageinstans."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 3-1 Inntak av elevar", url: "https://lovdata.no/lov/2003-07-04-84/§3-1" }
+      - { id: privatskoleforskrifta, punkt: "Kapittel 3 Inntak til vidaregåande opplæring", url: "https://lovdata.no/forskrift/2024-06-03-901" }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-14 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-20 Individuell behandling ved fordeling av plassar til vidaregåande trinn 1", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
@@ -455,6 +462,8 @@
     - "Er svaralternativene for fortrinnsrett korte nok, og likevel dekkende for vilkårene i § 4-21, § 4-22 og § 4-23?"
     - "Er listen en riktig sammenslåing av § 4-20 (Vg1) og § 4-26 (Vg2 og Vg3)?"
     - "Udirs merknader sier at fritak og IV til sammen i mer enn halvparten av fagene også gir individuell behandling. Bør det stå i listen?"
+    - "Privatskoler (pl. § 3-1): Er det riktig at departementet er klageinstans for inntak, og bør det stå hvem som behandler klagen i praksis?"
+    - "Privatskoler: Gjelder fortrinnsretten og poengberegningen i steget også for privatskolene (psf. §§ 3-8 til 3-13), eller bør merknaden si at skolens inntaksreglement gjelder i stedet?"
 
 - id: sk-fortrinn-program
   type: steg

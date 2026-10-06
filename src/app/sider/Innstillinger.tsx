@@ -15,6 +15,8 @@ interface Skole {
   navn: string;
   fylke: string;
   kommune: string;
+  /** Privat skole i Nasjonalt skoleregister (ErPrivatskole). Mangler for offentlige skoler. */
+  privat?: boolean;
 }
 
 type Skoleliste = { tilstand: 'laster' } | { tilstand: 'ok'; skoler: Skole[] } | { tilstand: 'feil' };
@@ -84,6 +86,7 @@ export default function Innstillinger({ sporring }: SideProps) {
   const sett = (endring: Partial<Inn>) => tilstand.oppdaterInnstillinger(endring);
   const skolensFylke = (id: string) => (skoler.tilstand === 'ok' ? (skoler.skoler.find((s) => s.id === id)?.fylke ?? null) : null);
   const skolerIFylket = skoler.tilstand === 'ok' ? skoler.skoler.filter((s) => s.fylke === inn.fylke) : [];
+  const valgtSkole = skoler.tilstand === 'ok' && inn.skole?.id ? skoler.skoler.find((s) => s.id === inn.skole?.id) : undefined;
 
   const eksporter = () => {
     const naa = new Date();
@@ -187,7 +190,9 @@ export default function Innstillinger({ sporring }: SideProps) {
               onChange={(e) => {
                 const id = e.currentTarget.value;
                 const skole = skolerIFylket.find((s) => s.id === id);
-                sett({ skole: skole ? { id: skole.id, navn: skole.navn } : null });
+                // En privat skole slår på reglene for privatskoler, og en offentlig slår dem av. Bryteren under kan
+                // endre valget (avgjørelse 075).
+                sett(skole ? { skole: { id: skole.id, navn: skole.navn }, privatskole: skole.privat === true } : { skole: null });
               }}
             >
               <option value="">{inn.fylke ? t('innstillinger.sted.ikkeValgt') : t('innstillinger.sted.velgFylkeForst')}</option>
@@ -199,6 +204,25 @@ export default function Innstillinger({ sporring }: SideProps) {
             </select>
           )}
         </div>
+        {/* Privatskole (avgjørelse 075): også uten valgt skole, for den som vil se reglene for privatskoler. */}
+        <div class="vippe">
+          <input
+            id="velg-privatskole"
+            type="checkbox"
+            role="switch"
+            aria-describedby="privatskole-hjelp"
+            checked={inn.privatskole === true}
+            onChange={(e) => sett({ privatskole: e.currentTarget.checked })}
+          />
+          <label for="velg-privatskole">{t('innstillinger.sted.privatskole')}</label>
+        </div>
+        <p id="privatskole-hjelp" class="dempet liten">
+          {valgtSkole?.privat === true
+            ? t('innstillinger.sted.privatskoleNsr')
+            : valgtSkole && inn.privatskole !== true
+              ? t('innstillinger.sted.privatskoleOffentlig')
+              : t('innstillinger.sted.privatskoleHjelp')}
+        </p>
         {inn.fylke ? (
           <button type="button" class="knapp knapp-sekundaer" onClick={() => sett({ fylke: null, skole: null })}>
             <Ikon navn="lukk" />

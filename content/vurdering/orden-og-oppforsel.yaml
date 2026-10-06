@@ -8,12 +8,21 @@
     nb: "Vurderingen i orden og oppførsel skal fremme sosial læring og et trygt og godt skolemiljø. Grunnlaget er skolereglene, og elevene skal være kjent med dem. Orden handler om å være punktlig og forberedt og følge opp arbeid. Oppførsel handler om å vise hensyn og respekt for andre. Kompetanse i fag skal ikke trekkes inn, og det skal tas hensyn til elevens forutsetninger. Enkelthendelser skal ikke veie tungt, med mindre de er særlig klanderverdige eller grove."
     nn: "Vurderinga i orden og oppførsel skal fremje sosial læring og eit trygt og godt skolemiljø. Grunnlaget er skolereglane, og elevane skal vere kjende med dei. Orden handlar om å vere punktleg og førebudd og følgje opp arbeid. Oppførsel handlar om å vise omsyn og respekt for andre. Kompetanse i fag skal ikkje trekkjast inn, og det skal takast omsyn til føresetnadene til eleven. Enkelthendingar skal ikkje vege tungt, med mindre dei er særleg klanderverdige eller grove."
   paragrafer: [opplaeringsforskrifta/9-2, opplaeringslova/10-7]
+  privatskole:
+    tekst:
+      nb: "Privatskoler har skoleregler etter privatskolelova § 5A-7, om rettigheter og plikter for elevene, blant annet om orden og oppførsel. Skolens styre kan i reglene si hvilke tiltak som kan brukes når elever bryter dem, og hvordan sakene behandles. Elevene skal følge skolereglene (§ 5A-6).\n\nStyret kan fastsette i skolereglene at en elev i videregående kan vises bort i opptil fem dager etter flere eller alvorlige brudd, og for resten av skoleåret når bruddene er særlig alvorlige. Eleven kan ikke vises bort hvis mindre inngripende tiltak er nok. Daglig leder vedtar bortvisning. Bortvisning for resten av skoleåret vedtar hjemfylket. Vedtaket er et enkeltvedtak, og departementet er klageinstans (§ 3-10)."
+      nn: "Privatskular har skulereglar etter privatskolelova § 5A-7, om rettar og plikter for elevane, mellom anna om orden og oppførsel. Styret ved skulen kan i reglane seie kva tiltak som kan brukast når elevar bryt dei, og korleis sakene blir behandla. Elevane skal følgje skulereglane (§ 5A-6).\n\nStyret kan fastsetje i skulereglane at ein elev i vidaregåande kan visast bort i opptil fem dagar etter fleire eller alvorlege brot, og for resten av skuleåret når brota er særleg alvorlege. Eleven kan ikkje visast bort dersom mindre inngripande tiltak er nok. Dagleg leiar vedtek bortvising. Bortvising for resten av skuleåret vedtek heimfylket. Vedtaket er eit enkeltvedtak, og departementet er klageinstans (§ 3-10)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 5A-7 Skolereglar", url: "https://lovdata.no/lov/2003-07-04-84/§5A-7" }
+      - { id: privatskolelova, punkt: "§ 5A-6 Elevane si plikt til å delta og skolens oppfølgingsplikt", url: "https://lovdata.no/lov/2003-07-04-84/§5A-6" }
+      - { id: privatskolelova, punkt: "§ 3-10 Bortvising", url: "https://lovdata.no/lov/2003-07-04-84/§3-10" }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-2" }
     - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-2", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-2-formalet-med-og-grunnlaget-for-vurdering-i-orden-og-i-oppforsel/" }
   kontrollert: null
   kontrollsporsmal:
     - "Er sammendraget av § 9-2 riktig og dekkende?"
+    - "Privatskoler (pl. §§ 5A-6, 5A-7 og 3-10): Er sammendraget av skolereglene og bortvisningen riktig, og hører det hjemme på siden om orden og oppførsel, eller bør det vente til skolereglene i fase 7?"
 
 - id: oo-karakterer
   type: forklaring

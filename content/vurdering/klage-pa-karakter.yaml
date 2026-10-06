@@ -48,6 +48,12 @@
       - { id: prove, gruppe: { nb: Prøver, nn: Prøver }, tekst: { nb: "Fag- og svenneprøven, praksisbrevprøven eller kompetanseprøven", nn: "Fag- og sveineprøva, praksisbrevprøva eller kompetanseprøva" }, neste: kl-prove }
       - { id: annet, gruppe: { nb: Annet, nn: Anna }, tekst: { nb: "Fritak, tilrettelegging, utsatt eksamen, bortvisning eller annullering", nn: "Fritak, tilrettelegging, utsett eksamen, bortvising eller annullering" }, neste: kl-andre }
       - { id: underveis, gruppe: { nb: Annet, nn: Anna }, tekst: { nb: "Halvårsvurdering eller annen underveisvurdering", nn: "Halvårsvurdering eller anna undervegsvurdering" }, neste: kl-ingen-klagerett }
+  privatskole:
+    tekst:
+      nb: "For elever ved privatskoler står reglene om klage på sluttvurderinger i privatskoleforskrifta kapittel 7, og vurderingsreglene i kapittel 6. Reglene er de samme som i opplæringsforskrifta. Paragrafene i veiviseren viser til privatskoleforskrifta der den har en paragraf om det samme."
+      nn: "For elevar ved privatskular står reglane om klage på sluttvurderingar i privatskoleforskrifta kapittel 7, og vurderingsreglane i kapittel 6. Reglane er dei same som i opplæringsforskrifta. Paragrafane i vegvisaren viser til privatskoleforskrifta der ho har ein paragraf om det same."
+    kilder:
+      - { id: privatskoleforskrifta, punkt: "§ 7-1 Kva kapittelet gjeld og forholdet til forvaltningsloven", url: "https://lovdata.no/forskrift/2024-06-03-901/§7-1" }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-1", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
     - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/" }
@@ -56,6 +62,7 @@
   kontrollsporsmal:
     - "Er svarene i spørsmålet en dekkende liste over hva en elev, lærling eller privatist kan ville klage på?"
     - "Er det riktig å si at eleven klager selv fra fylte 15 år, også på karakterer (merknaden til § 10-1)?"
+    - "Privatskoler (psf. kap. 7): Kan merknaden si at reglene er de samme som i opplæringsforskrifta, eller er det forskjeller i klagebehandlingen (f.eks. hvem som forbereder klagen) som bør stå?"
 
 - id: kl-ingen-klagerett
   type: steg

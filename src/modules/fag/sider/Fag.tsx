@@ -12,6 +12,7 @@ import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
+import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { finnKobling, type Koblingsresultat } from '../../arbeidstid/beregning/index.ts';
 import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
@@ -448,6 +449,7 @@ export default function Fagside({ parametre }: SideProps) {
   const koblingsdata = useKoblingsdata();
   const [tilbud, settTilbud] = useState<Tilbudene | null>(null);
   const [ndla, settNdla] = useState<Ndla | null>(null);
+  const bred = useBred();
 
   useEffect(() => {
     // Faget på NDLA (avgjørelse 053). Siden virker også uten.
@@ -525,33 +527,9 @@ export default function Fagside({ parametre }: SideProps) {
   ];
   const antallMaal =
     plan && typeof plan === 'object' ? plan.kompetansemaalsett.filter((x) => fag.km.includes(x.kode)).reduce((sum, x) => sum + x.maal.length, 0) : null;
-  return (
-    <article class="side fagark" data-fagtype={fag.type}>
-      <Brodsmuler ledd={[{ tekst: t('fag.tittel'), href: '#/fag' }]} />
-      <div class="tittelrad">
-        <h1 tabIndex={-1}>{fag.navn[malform]}</h1>
-        <FavorittKnapp id={`fag:${kode}`} navn={fag.navn[malform]} />
-      </div>
-      {/* Fagkode, fagtype og trinn som merker under tittelen. Fargen på fagtypen går igjen i delene under. */}
-      <ul class="merker fagark-merker" aria-label={t('fag.side.merker')}>
-        <li class="merke merke-kode">
-          <span class="skjult-visuelt">{t('fag.side.fagkode')}: </span>
-          {kode}
-        </li>
-        <li class="merke merke-fagtype">
-          <span class="skjult-visuelt">{t('fag.side.fagtype')}: </span>
-          {fagtypeTekst(t, fag.type)}
-          {typeBegrep && <Begrepslenke id={typeBegrep} navn={fagtypeTekst(t, fag.type)} />}
-        </li>
-        {/* «i» for trinnet står inni det siste trinnmerket, som for fagtypen (eier 04.10.2026). */}
-        {fag.trinn.map((x, i) => (
-          <li key={x} class="merke">
-            <span class="skjult-visuelt">{t('fag.side.trinn')}: </span>
-            {trinnTekst(t, x)}
-            {i === fag.trinn.length - 1 && <Begrepslenke id="trinn-vg" navn={t('fag.side.trinn')} />}
-          </li>
-        ))}
-      </ul>
+  /** Nøkkeltallene og faktaene om faget. */
+  const fakta = (
+    <>
       <Nokkeltall kode={kode} fag={fag} r={kobling} indeks={indeks} malform={malform} />
       <dl class="egenskaper fagark-fakta">
         {programtekster.length > 0 && (
@@ -613,7 +591,11 @@ export default function Fagside({ parametre }: SideProps) {
       </dl>
       {nyPlan && lp && <p class="merknad">{t('fag.side.nyLaereplan', { gammel: lp, ny: nyPlan })}</p>}
       {erYff && <YffForklaring malform={malform} />}
-
+    </>
+  );
+  /** Læreplanverket, kompetansemålene og vurderingen. */
+  const seksjoner = (
+    <>
       {/* Grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del (avgjørelse 037). Står før
           kompetansemålene, og alle delene er lukket til brukeren åpner dem (eier 02.10.2026). */}
       {plan && typeof plan === 'object' && plan.ferdigheter.length + plan.temaer.length > 0 && (
@@ -654,7 +636,11 @@ export default function Fagside({ parametre }: SideProps) {
         {!fag.elev && !fag.privatist && <p class="dempet">{t('fag.side.ingenVurdering')}</p>}
         {plan && typeof plan === 'object' && <VurderingIPlan t={t} plan={plan} />}
       </Seksjon>
-
+    </>
+  );
+  /** Programområdene faget inngår i. */
+  const programomrader = (
+    <>
       {fag.po.length > 0 && (
         <Seksjon id="programomrader" lukket tittel={t('fag.side.programomrader', { antall: fag.po.length })}>
           <p class="liten">
@@ -676,6 +662,54 @@ export default function Fagside({ parametre }: SideProps) {
             })}
           </ul>
         </Seksjon>
+      )}
+    </>
+  );
+  return (
+    <article class="side side-bred fagark" data-fagtype={fag.type}>
+      <Brodsmuler ledd={[{ tekst: t('fag.tittel'), href: '#/fag' }]} />
+      <div class="tittelrad">
+        <h1 tabIndex={-1}>{fag.navn[malform]}</h1>
+        <FavorittKnapp id={`fag:${kode}`} navn={fag.navn[malform]} />
+      </div>
+      {/* Fagkode, fagtype og trinn som merker under tittelen. Fargen på fagtypen går igjen i delene under. */}
+      <ul class="merker fagark-merker" aria-label={t('fag.side.merker')}>
+        <li class="merke merke-kode">
+          <span class="skjult-visuelt">{t('fag.side.fagkode')}: </span>
+          {kode}
+        </li>
+        <li class="merke merke-fagtype">
+          <span class="skjult-visuelt">{t('fag.side.fagtype')}: </span>
+          {fagtypeTekst(t, fag.type)}
+          {typeBegrep && <Begrepslenke id={typeBegrep} navn={fagtypeTekst(t, fag.type)} />}
+        </li>
+        {/* «i» for trinnet står inni det siste trinnmerket, som for fagtypen (eier 04.10.2026). */}
+        {fag.trinn.map((x, i) => (
+          <li key={x} class="merke">
+            <span class="skjult-visuelt">{t('fag.side.trinn')}: </span>
+            {trinnTekst(t, x)}
+            {i === fag.trinn.length - 1 && <Begrepslenke id="trinn-vg" navn={t('fag.side.trinn')} />}
+          </li>
+        ))}
+      </ul>
+      {/* På skrivebord (fra 64rem): læreplanen, kompetansemålene og vurderingen til venstre, og nøkkeltallene, faktaene og
+          programområdene til høyre (eier 06.10.2026, avgjørelse 074). På mobil står alt i samme rekkefølge som før. */}
+      {bred ? (
+        <ToKolonner
+          hoved={seksjoner}
+          side={
+            <>
+              {fakta}
+              {programomrader}
+            </>
+          }
+        />
+      ) : (
+        <>
+          {fakta}
+          {seksjoner}
+          {programomrader}
+        </>
       )}
       <Kildeliste kilder={kilder} />
     </article>

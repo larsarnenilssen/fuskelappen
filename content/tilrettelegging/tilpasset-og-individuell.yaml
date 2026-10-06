@@ -428,6 +428,12 @@
     tekst:
       nb: Fylkeskommunen bestemmer om rektor fatter vedtaket, og hvordan saksgangen er.
       nn: Fylkeskommunen avgjer om rektor gjer vedtaket, og korleis sakshandsaminga er.
+  privatskole:
+    tekst:
+      nb: "For elever ved privatskoler gjør hjemkommunen eller hjemfylket vedtaket om individuelt tilrettelagt opplæring, personlig assistanse og fysisk tilrettelegging og tekniske hjelpemidler, ikke skolen. Hjemkommunen eller hjemfylket dekker utgiftene på lik linje med offentlige skoler. Reglene i opplæringslova §§ 11-4 til 11-11 gjelder tilsvarende for privatskoler."
+      nn: "For elevar ved privatskular gjer heimkommunen eller heimfylket vedtaket om individuelt tilrettelagd opplæring, personleg assistanse og fysisk tilrettelegging og tekniske hjelpemiddel, ikkje skulen. Heimkommunen eller heimfylket dekkjer utgiftene på lik linje med offentlege skular. Reglane i opplæringslova §§ 11-4 til 11-11 gjeld tilsvarande for privatskular."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 3-6 Individuell tilrettelegging", url: "https://lovdata.no/lov/2003-07-04-84/§3-6" }
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "7.2 Delegere oppgaven med å fatte vedtak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak" }
@@ -440,6 +446,7 @@
     - "Er det riktig at fritak fra vurdering med karakter i videregående bare gjelder sidemålet for elever med individuelt tilrettelagt opplæring?"
     - "Er «Oppgaven kan delegeres til rektor, men ansvaret ligger hos fylkeskommunen» dekkende for hvordan det gjøres i fylkene?"
     - "Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?"
+    - "Privatskoler (pl. § 3-6): Er sammendraget av første og andre ledd riktig?"
 
 - id: ti-iop
   type: steg
@@ -568,9 +575,16 @@
     nn: Tre veker frå vedtaket vart kjent. Klage på gjennomføringa har ingen frist.
   fristKort: { nb: "Klage: 3 uker", nn: "Klage: 3 veker" }
   paragrafer: [opplaeringslova/29-1, forvaltningsloven/28, forvaltningsloven/29]
+  privatskole:
+    tekst:
+      nb: "For elever ved privatskoler sier privatskolelova at departementet er klageinstans for klage på kommunale og fylkeskommunale vedtak om individuell tilrettelegging."
+      nn: "For elevar ved privatskular seier privatskolelova at departementet er klageinstans for klage på kommunale og fylkeskommunale vedtak om individuell tilrettelegging."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 3-6 fjerde ledd", url: "https://lovdata.no/lov/2003-07-04-84/§3-6" }
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "7.9 Klage på vedtaket", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#klage-vedtaket" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "8.4 Avvik mellom opplæringen eleven har fått og vedtaket", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#avvik-mellom-opplaringen-vedtaket" }
   kontrollert: null
   kontrollsporsmal:
     - "Er «Klage på gjennomføringen har ingen frist» en riktig og ikke misvisende forenkling av veilederens «løpende rett til å klage»?"
+    - "Privatskoler (pl. § 3-6 fjerde ledd): Er klagemyndigheten delegert, f.eks. til statsforvalteren, og bør merknaden i så fall si det?"
