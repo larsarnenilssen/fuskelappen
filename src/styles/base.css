@@ -7808,7 +7808,7 @@ a.knapp {
   margin: var(--rom-3) 0;
 }
 
-/* ---------- Fag- og svennebrev i Opplæringstilbud (fase 6, pakke 6, MOCKUP) ----------
+/* ---------- Lærlinger og kandidater i Opplæringstilbud (fase 6, pakke 6, avgjørelse 069) ----------
    Tre faner, veiene som lukkede kort med stegene som knapper i fargen til delen (skole, kontrakt i bedrift, praksis,
    prøven), og overgangene som kort med vilkår og kilde. */
 .fb-faner {
@@ -8273,4 +8273,10 @@ a.knapp {
 .fb-valgt-kort {
   margin: 0 0 var(--rom-3);
   color: var(--farge-tekst-dempet);
+}
+
+/* Ingressen og merknaden kommer fra content/ som HTML med avsnitt. */
+.fb-side div.ingress > p,
+.fb-merknad > p {
+  margin: 0;
 }

@@ -6,7 +6,7 @@ import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
 import type { Favorittbar, Modulmanifest } from '../typer.ts';
 import { kontorfavoritt, kontorrute, skolefavoritt, skolerute, UNDERSIDER } from './favoritter.ts';
 import { kortKode, tilbudRute } from './data.ts';
-import { VEIER } from './fagbrev/mockup.ts';
+import { hentVeier, veiAdresse, veiRute } from './fagbrev/data.ts';
 import { lastSkoler } from '../../data/utdanning.ts';
 import { lastOpplaeringskontor } from '../../data/udir.ts';
 import { begge } from '../../core/i18n/tekst.ts';
@@ -34,7 +34,7 @@ export const manifest: Modulmanifest = {
     // Søket trenger bare navnene, som står i fagindeksen. Tilbudene lastes først når et tilbud åpnes.
     const indeks = await lastFagindeks();
     // Skolene kan søkes på navn, sted og fylke, og åpnes i skoleoppslaget (eier 03.10.2026).
-    const [skoler, kontor] = await Promise.all([lastSkoler().then((s) => s.skoler), lastOpplaeringskontor().then((k) => k.kontor)]);
+    const [skoler, kontor, veier] = await Promise.all([lastSkoler().then((s) => s.skoler), lastOpplaeringskontor().then((k) => k.kontor), hentVeier().then((v) => v.veier)]);
     const fylkenavn = (nr: string) => fylker.find((f) => f.nummer === nr)?.navn ?? '';
     return [
       {
@@ -46,6 +46,25 @@ export const manifest: Modulmanifest = {
         rute: '/opplaeringslop/lop',
         modul: 'opplaeringslop',
       },
+      // Lærlinger og kandidater og hver vei (fase 6, pakke 6). «Fag- og svennebrev» finner siden (eier 06.10.2026).
+      {
+        id: 'opplaeringslop:laerlinger-og-kandidater',
+        type: 'side' as const,
+        tittel: begge('opplaeringslop.fagbrev.tittel'),
+        tekst: begge('opplaeringslop.fagbrev.sokTekst'),
+        stikkord: ['fag- og svennebrev', 'fagbrev', 'svennebrev', 'lærling', 'lærekandidat', 'praksisbrevkandidat', 'praksiskandidat', 'fagbrev på jobb', 'praksisbrev', 'kompetansebevis'],
+        rute: UNDERSIDER.fagbrev.rute,
+        modul: 'opplaeringslop',
+      },
+      ...veier.map((v) => ({
+        id: `opplaeringslop:vei:${veiAdresse(v.id)}`,
+        type: 'side' as const,
+        tittel: v.tittel,
+        tekst: v.kort,
+        stikkord: v.stikkord,
+        rute: veiRute(v.id),
+        modul: 'opplaeringslop',
+      })),
       ...skoler.map((s) => ({
         vekt: 0.6,
         id: `skole:${s.nr ?? s.navn}`,
@@ -97,10 +116,14 @@ export const manifest: Modulmanifest = {
       oversiktsfavoritt(manifest),
       { id: 'opplaeringslop:lop', type: 'side', tittel: begge('opplaeringslop.lop.tittel'), rute: UNDERSIDER.lop.rute },
       { id: 'opplaeringslop:laerlinger-og-kandidater', type: 'side', tittel: begge('opplaeringslop.fagbrev.tittel'), rute: UNDERSIDER.fagbrev.rute },
-      ...VEIER.map((v): Favorittbar => ({ id: `opplaeringslop:vei:${v.id}`, type: 'side', tittel: { nb: v.tittel, nn: v.tittel }, rute: `${UNDERSIDER.fagbrev.rute}/${v.id}` })),
       { id: 'opplaeringslop:skoler', type: 'side', tittel: begge('opplaeringslop.skoler.tittel'), rute: UNDERSIDER.skoler.rute },
       { id: 'opplaeringslop:opplaeringskontor', type: 'side', tittel: begge('opplaeringslop.kontor.tittel'), rute: UNDERSIDER.kontor.rute },
     ];
+    // Veiene for lærlinger og kandidater lastes bare når en av dem er spurt etter.
+    if (!ider || ider.some((id) => id.startsWith('opplaeringslop:vei:'))) {
+      const { veier } = await hentVeier();
+      sider.push(...veier.map((v): Favorittbar => ({ id: `opplaeringslop:vei:${veiAdresse(v.id)}`, type: 'side', tittel: v.tittel, rute: veiRute(v.id) })));
+    }
     const egne = ider?.filter((id) => id.startsWith('opplaeringslop:') && !sider.some((f) => f.id === id));
     if (egne?.length === 0) return bareSpurte(sider, ider);
     const trengs = (prefiks: string) => !egne || egne.some((id) => id.startsWith(prefiks));

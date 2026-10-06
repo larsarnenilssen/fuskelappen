@@ -4,6 +4,23 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Lærlinger og kandidater** i Opplæringstilbud: veiene til fag- og svennebrev, praksisbrev og kompetansebevis for lærling, lærekandidat, praksisbrevkandidat, praksiskandidat og kandidat for fagbrev på jobb.
+  - **Veiene:** Velg mål og se veiene med stegene, hvem som melder opp, fellesfagene, voksne og kilder.
+  - **Sammenlign:** to veier side om side.
+  - **Bytte vei:** fra der du er, til veiene videre, med vilkår og kilde for hver overgang.
+  - **Egen side for hver vei,** med prøven i Vurdering, «Om veien» (også når kontrakten sies opp eller heves), «Kommer fra» og «Veien videre».
+  - **På stor skjerm** står siden i to kolonner.
+- **«Veiene hit»** på siden om fag- og svenneprøven og de andre prøvene, med lenker tilbake til hver vei.
+
+### Endret
+
+- **Begrepene:**
+  - «Påbygging» følger opplæringslova § 5-7: retten varer ut skoleåret som starter det året man fyller 24.
+  - «Kontrakt om opplæring» forteller hva som skjer når kontrakten sies opp eller heves.
+  - «Individuell tilrettelegging», «Individuelt tilrettelagt opplæring» og «Tilpasset opplæring» sier hva som gjelder for lærekandidater, lærlinger og praksisbrevkandidater.
+
 ## [0.37.0] – 2026-10-05
 
 ### Lagt til

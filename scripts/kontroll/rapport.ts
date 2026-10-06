@@ -97,6 +97,8 @@ const TYPENAVN: Record<Kontrollinnhold['elementtype'], string> = {
   veiviser: 'veiviser',
   frist: 'frist',
   kildeomtale: 'kildeomtale',
+  vei: 'vei',
+  utgangspunkt: 'utgangspunkt',
 };
 
 function innholdstabell(innhold: readonly Kontrollinnhold[]): string[] {

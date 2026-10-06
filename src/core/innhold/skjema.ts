@@ -60,7 +60,7 @@ export const kildetekstSkjema = z
   })
   .strict();
 
-export const elementtype = z.enum(['begrep', 'regel', 'forklaring', 'steg', 'frist', 'kildeomtale', 'veiviser']);
+export const elementtype = z.enum(['begrep', 'regel', 'forklaring', 'steg', 'frist', 'kildeomtale', 'veiviser', 'vei', 'utgangspunkt']);
 export const malgruppe = z.enum(['skoleleder', 'laerer']);
 
 const felles = {
@@ -141,7 +141,7 @@ export const tabellSkjema = z
 export const vanligElement = z
   .object({
     ...felles,
-    type: elementtype.exclude(['frist', 'steg', 'veiviser']),
+    type: elementtype.exclude(['frist', 'steg', 'veiviser', 'vei', 'utgangspunkt']),
     /** Paragrafer i Regelverk, som i stegene i veiviserne. Vises som lenker til paragrafen i appen. */
     paragrafer: z.array(paragrafRef).optional(),
     /**
@@ -286,7 +286,84 @@ export const fristElement = z
     message: 'En frist må ha enten dato eller regel',
   });
 
-export const innholdselement = z.union([fristElement, stegElement, veiviserElement, vanligElement]);
+/** En adresse i appen, f.eks. `/begreper/laerling` eller `/vurdering/fag-og-svenneproven`. */
+const ruteSkjema = z.string().regex(/^\/[a-z]/, 'En adresse i appen begynner med «/», f.eks. «/begreper/laerling»');
+
+/** Delene i en vei til fag- og svennebrev (avgjørelse 069). Hver del har sin farge i stegene. */
+export const veidel = z.enum(['skole', 'bedrift', 'praksis', 'prove']);
+/** Det veien ender i: fag- eller svennebrev, praksisbrev eller kompetansebevis. */
+export const veimal = z.enum(['fagbrev', 'praksisbrev', 'kompetansebevis']);
+
+/**
+ * En vei for lærlinger og kandidater (fase 6, pakke 6, avgjørelse 069): stegene med del og tid, kontrakten, prøven,
+ * hvem som melder opp, fellesfagene, dokumentasjonen og voksne. `tekst` er ingressen. `etter` er utgangspunktet
+ * brukeren står på når veien er gått, og gir «Veien videre». `id` begynner med «vei-», og adressen er id-en uten det.
+ */
+export const veiElement = z
+  .object({
+    ...felles,
+    id: idSkjema.refine((id) => id.startsWith('vei-'), 'id til en vei begynner med «vei-»'),
+    type: z.literal('vei'),
+    mal: veimal,
+    /** Kort navn på rollen i knappen «Mer om …», så knappen får plass på en smal skjerm. */
+    kortnavn: flerspraak,
+    /** Én linje under tittelen i listen over veier. */
+    kort: flerspraak,
+    steg: z
+      .array(
+        z
+          .object({
+            del: veidel,
+            tekst: flerspraak,
+            /** Bare når kilden sier hvor lang tid steget tar. */
+            tid: flerspraak.optional(),
+            rute: ruteSkjema,
+          })
+          .strict(),
+      )
+      .min(2),
+    kontrakt: flerspraak,
+    prove: flerspraak,
+    melderOpp: flerspraak,
+    /** Om fellesfagene må være bestått, ikke trengs, eller om forskriften ikke har noen egen regel. */
+    fellesfag: z.enum(['ja', 'nei', 'ingen']),
+    fellesfagTekst: flerspraak,
+    dokumentasjon: flerspraak,
+    /** Bare når kildene sier noe om voksne på veien (eier 06.10.2026). */
+    voksne: flerspraak.optional(),
+    etter: idSkjema,
+    rekkefolge: z.number().int().default(100),
+  })
+  .strict();
+
+/**
+ * Der brukeren står, f.eks. «Vg2 yrkesfag» eller «Lærling», med overgangene til veiene videre (avgjørelse 069). En
+ * overgang går til en vei (`til`) eller til en annen side i appen (`side`), og har vilkår og minst én kilde. `id`
+ * begynner med «fra-», og adressen bruker id-en uten det.
+ */
+export const utgangspunktElement = z
+  .object({
+    ...felles,
+    id: idSkjema.refine((id) => id.startsWith('fra-'), 'id til et utgangspunkt begynner med «fra-»'),
+    type: z.literal('utgangspunkt'),
+    rekkefolge: z.number().int().default(100),
+    overganger: z
+      .array(
+        z
+          .object({
+            til: idSkjema.optional(),
+            side: z.object({ tittel: flerspraak, rute: ruteSkjema }).strict().optional(),
+            vilkar: flerspraak,
+            kilder: z.array(kildeRef).min(1, 'En overgang må ha minst én kilde'),
+          })
+          .strict()
+          .refine((o) => (o.til === undefined) !== (o.side === undefined), { message: 'En overgang går til en vei (til) eller en side (side)' }),
+      )
+      .min(1),
+  })
+  .strict();
+
+export const innholdselement = z.union([fristElement, stegElement, veiviserElement, veiElement, utgangspunktElement, vanligElement]);
 
 // En innholdsfil kan inneholde ett element eller en liste.
 export const innholdsfil = z.union([innholdselement, z.array(innholdselement)]).transform((v) => (Array.isArray(v) ? v : [v]));
@@ -424,6 +501,10 @@ export type Tabell = z.infer<typeof tabellSkjema>;
 export type Vanligelement = z.infer<typeof vanligElement>;
 export type Veiviserelement = z.infer<typeof veiviserElement>;
 export type Frist = z.infer<typeof fristElement>;
+export type Veielement = z.infer<typeof veiElement>;
+export type Utgangspunktelement = z.infer<typeof utgangspunktElement>;
+export type Veidel = z.infer<typeof veidel>;
+export type Veimal = z.infer<typeof veimal>;
 export type Kilde = z.infer<typeof kildeSkjema>;
 export type Kilderegister = z.infer<typeof kilderegisterSkjema>;
 export type Fylker = z.infer<typeof fylkerSkjema>;

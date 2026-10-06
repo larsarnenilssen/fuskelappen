@@ -17,7 +17,7 @@ import { sokTilbud } from '../sok.ts';
 import { Lasting, Tilbudslenke, useSkoler, useSkolevisning, useTilbudsdata } from './felles.tsx';
 import { tilbudPerProgram } from './Lop.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
-import { VEIER } from '../fagbrev/mockup.ts';
+import { useVeier } from '../fagbrev/data.ts';
 
 const MAKS_TREFF = 40;
 
@@ -108,6 +108,7 @@ export default function Oversikt() {
   const [sok, settSok] = useState('');
   const aktivt = sok.trim().length >= 2;
   const visning = useSkolevisning();
+  const veier = useVeier();
   // Søketreff ved skolen brukeren har valgt, står først.
   const sokt = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
   const vedSkolen = new Set(visning.skole?.tilbud ?? []);
@@ -189,7 +190,7 @@ export default function Oversikt() {
                       {t('opplaeringslop.fagbrev.tittel')}
                     </span>
                     <span class="frist-inngang-neste">
-                      <span class="frist-inngang-tid">{t('opplaeringslop.fagbrev.inngang', { antall: formaterTall(VEIER.length) })}</span>
+                      {veier && <span class="frist-inngang-tid">{t('opplaeringslop.fagbrev.inngang', { antall: formaterTall(veier.veier.length) })}</span>}
                       <span>{t('opplaeringslop.fagbrev.inngangTekst')}</span>
                     </span>
                     <Ikon navn="hoyre" class="frist-inngang-pil" />

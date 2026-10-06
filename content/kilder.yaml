@@ -846,6 +846,24 @@ kilder:
       Udirs side om fag- og svenneprøver, for kandidatene og for prøvenemndene. Siden om prøvene i Vurdering lenker hit
       (eier 04.10.2026).
 
+  - id: udir-laerekandidatordningen
+    navn: Lærekandidat – din vei til yrkeslivet
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/utdanningslopet/videregaende-opplaring/larekandidatordningen/larekandidat--din-vei-til-yrkeslivet/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side om lærekandidatordningen: for ungdom og voksne som trenger tilrettelegging, egen plan for
+      opplæringen, og bytte fra lærekandidat til lærling ved å endre kontrakten. Siden om lærlinger og kandidater i
+      Opplæringstilbud viser hit (fase 6, pakke 6).
+
   - id: eksamensdatoer
     navn: Eksamensdatoer fra udir.no og fylkeskommunene
     utgiver: Utdanningsdirektoratet og fylkeskommunene

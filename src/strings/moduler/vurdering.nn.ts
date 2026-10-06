@@ -157,7 +157,7 @@ export const vurderingNn = {
     tittel: 'Fag- og sveineprøva og dei andre prøvene',
     kort: 'Fag- og sveineprøva',
     beskrivelse: 'Prøvene som sluttvurdering for lærlingar og kandidatar: krav, oppmelding, prøvenemnda, karakterar, tilrettelegging, ny prøve og klage.',
-    innledning: 'Fag- og sveineprøva, praksisbrevprøva og kompetanseprøva er sluttvurderinga i fag- og yrkesopplæringa. Vegane fram til prøva kjem i Opplæringstilbod.',
+    innledning: 'Fag- og sveineprøva, praksisbrevprøva og kompetanseprøva er sluttvurderinga i fag- og yrkesopplæringa. Vegane fram til prøva for lærlingar og kandidatar står i Opplæringstilbod.',
     prover: 'Prøvene',
     gangen: 'Frå krav til resultat',
     heleVeien: 'Gjeld heile vegen',

@@ -9,7 +9,7 @@ En fil kan inneholde ett element eller en liste.
 | Felt | Påkrevd | Innhold |
 |---|---|---|
 | `id` | ja | små bokstaver a–z, tall og bindestrek |
-| `type` | ja | `begrep`, `regel`, `forklaring`, `steg`, `frist`, `kildeomtale`, `veiviser` |
+| `type` | ja | `begrep`, `regel`, `forklaring`, `steg`, `frist`, `kildeomtale`, `veiviser`, `vei`, `utgangspunkt` |
 | `tittel` | ja | `{ nb, nn }`, begge påkrevd |
 | `tekst` | ja | `{ nb, nn }`, begge påkrevd, Markdown tillatt |
 | `kildetekst` | nei | sitat fra kilden, uoversatt: `{ spraak: nb \| nn \| se \| en, tekst }` |
@@ -25,6 +25,22 @@ En fil kan inneholde ett element eller en liste.
 Frister (`type: frist`) har i tillegg `modul`, `malgruppe` (`skoleleder`, `laerer`) og enten `dato` eller `regel` (`{ type: arlig, dag, maned }`).
 
 Veivisere (avgjørelse 041): en veiviser (`type: veiviser`) har i tillegg `start` (id til første steg), `faser` (`{ id, tittel }`), `farge` (`blaa`, `lilla`, `turkis` eller `rav`, avgjørelse 042) og `rekkefolge` (plassen på oversikten). Et steg (`type: steg`) har `veiviser` (id) og kan ha `fase`, `ansvar`, `dokumentasjon`, `frist`, `fristKort` (to–tre ord til merket i kartet), `forklaring` (Markdown, skjult til den åpnes), `paragrafer` (`dokument/nummer` i Regelverk), `laereplaner` (`[{ kode, kompetansegivende, merknad }]`, vises i en boks med fagkodene fra Grep) og enten `neste` (id) eller `sporsmal` (`{ tekst, svar: [{ id, tekst, neste }] }`). Et steg uten `neste` og `sporsmal` er et utfall, der veien ender. Testene sjekker at alle steg kan nås, at ingen peker på steg som ikke finnes, at paragrafene finnes, og at læreplanene finnes i Grep og er kompetansegivende bare når fagene har tallkarakter.
+
+Veiene for lærlinger og kandidater (avgjørelse 069, `content/opplaeringslop/veier.yaml`):
+- **Vei (`type: vei`):** id-en begynner med `vei-`, og adressen er id-en uten det. I tillegg til de vanlige feltene:
+  - `mal`: `fagbrev`, `praksisbrev` eller `kompetansebevis`
+  - `kortnavn`: til knappen «Mer om …»
+  - `kort`: én linje i listen
+  - `steg`: `[{ del: skole | bedrift | praksis | prove, tekst, tid?, rute }]`, der `tid` bare står når kilden sier hvor lang tid steget tar
+  - `kontrakt`, `prove`, `melderOpp`, `fellesfag` (`ja`, `nei` eller `ingen` egen regel), `fellesfagTekst`, `dokumentasjon`, `voksne` (bare når kildene sier noe om voksne), `etter` (utgangspunktet når veien er gått) og `rekkefolge`
+  - `tekst` er ingressen.
+- **Utgangspunkt (`type: utgangspunkt`):** id-en begynner med `fra-`. Det har `overganger`: `[{ til | side, vilkar, kilder }]`. `til` er en vei, og `side` er `{ tittel, rute }` til en annen side i appen. Hver overgang har minst én kilde, og utgangspunktet har kildene til alle overgangene sine i `kilder`.
+- **Testene sjekker:**
+  - at alle veier kan nås
+  - at overgangene peker på noe som finnes
+  - at ingen overgang mangler kilde
+  - at kildene har punkt, og at paragrafene finnes i Regelverk
+  - at stegene lenker til sider og begreper som finnes
 
 Samme `id` kan finnes på flere nivåer. Da erstatter det mest lokale elementet det mer generelle (`forhold: erstatter`).
 
