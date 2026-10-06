@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Tilbake til samme sted:** Følger du en lenke under «I regelverket» eller «Kilder» og går tilbake, er kortene og radene du hadde åpne, fortsatt åpne, og siden står der du var. Det gjelder kortene i Vurdering, Lærlinger og kandidater og Kalenderen, forklaringene, veiviserne og fylkesboksen.
+
 ### Endret
 
 - **Lærlinger og kandidater:** Regelverket og kildene står som lukkede rader nederst i kortene og boksene («I regelverket» og «Kilder»), som ellers i appen. Det gjelder veiene, «Om veien», merknaden om kompetansebevis, sammenligningen og overgangene. «Mer om …» står over radene.

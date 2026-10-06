@@ -1,7 +1,8 @@
 // Forklaring som er skjult til brukeren åpner den. Kan inneholde tekst og SVG.
 import type { ComponentChildren } from 'preact';
-import { useId, useState } from 'preact/hooks';
+import { useId } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
+import { useHusketApen } from './husket.ts';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 
 interface Props {
@@ -15,7 +16,8 @@ interface Props {
 
 export function Forklaring({ tittel, children, aapen = false, ikon = 'info' }: Props) {
   const { t } = useTekst();
-  const [erAapen, settAapen] = useState(aapen);
+  // Om forklaringen er åpen, huskes for siden (husket.ts), med tittelen som nøkkel.
+  const [erAapen, settAapen] = useHusketApen(`forklaring:${tittel}`, aapen);
   const id = useId();
   return (
     <div class="forklaring">

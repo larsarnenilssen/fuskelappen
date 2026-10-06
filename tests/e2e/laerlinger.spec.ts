@@ -95,6 +95,26 @@ test.describe('lærlinger og kandidater på mobil', () => {
     await expect(kommerFra.locator('.veiviser-regelverk')).toContainText('§ 5-6');
   });
 
+  test('tilbake fra en paragraf i «I regelverket» viser kortet åpent og siden der den var (eier 06.10.2026)', async ({ page }) => {
+    await page.goto(SIDE);
+    const kort = page.locator('.fb-vei').nth(1);
+    await kort.getByRole('button').first().click();
+    const regelverk = kort.locator('.kortfot .veiviser-regelverk');
+    await regelverk.locator('summary').click();
+    const lenke = regelverk.locator('a').first();
+    await lenke.scrollIntoViewIfNeeded();
+    const for_ = await page.evaluate(() => window.scrollY);
+    expect(for_).toBeGreaterThan(100);
+    await lenke.click();
+    await expect(page).toHaveURL(/#\/lov\//);
+    await page.goBack();
+    await expect(page).toHaveURL(/laerlinger-og-kandidater/);
+    await expect(kort.getByRole('button').first()).toHaveAttribute('aria-expanded', 'true');
+    await expect(regelverk).toHaveAttribute('open', '');
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(for_ - 5);
+    expect(Math.abs((await page.evaluate(() => window.scrollY)) - for_)).toBeLessThan(5);
+  });
+
   test('oppsigelse og heving står bare på veiene med kontrakt i bedrift', async ({ page }) => {
     await page.goto(`${SIDE}/laerling`);
     await expect(page.locator('.fb-om')).toContainText('Når kontrakten sies opp eller heves');

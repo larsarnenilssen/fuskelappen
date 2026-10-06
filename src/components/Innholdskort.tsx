@@ -1,9 +1,10 @@
 // Et innholdselement som et kort som kan åpnes (fase 6): tittelen og den første setningen er synlige, og teksten står
 // inne i kortet, med paragrafene og kildene som lukkede rader nederst (Kortfot). Brukes på sidene i Vurdering.
-import { useId, useState } from 'preact/hooks';
+import { useId } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import type { Flerspraak, KildeRef } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
+import { useHusketApen } from './husket.ts';
 import { Kortfot } from './Kortfot.tsx';
 import { forsteSetning } from './Veiviser.tsx';
 
@@ -18,7 +19,8 @@ export interface Kortinnhold {
 
 export function Innholdskort({ element, aapen = false }: { element: Kortinnhold; aapen?: boolean }) {
   const { malform } = useTekst();
-  const [erAapen, settAapen] = useState(aapen);
+  // Om kortet er åpent, huskes for siden, så det er åpent igjen når brukeren går tilbake fra en kilde (husket.ts).
+  const [erAapen, settAapen] = useHusketApen(`innholdskort:${element.id}`, aapen);
   const id = useId();
   const paragrafer = element.paragrafer ?? [];
   return (
@@ -32,7 +34,7 @@ export function Innholdskort({ element, aapen = false }: { element: Kortinnhold;
       </button>
       <div id={id} class="innholdskort-innhold" hidden={!erAapen}>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: element.tekst[malform] }} />
-        <Kortfot paragrafer={paragrafer} kilder={element.kilder} />
+        <Kortfot paragrafer={paragrafer} kilder={element.kilder} nokkel={element.id} />
       </div>
     </div>
   );
