@@ -18,7 +18,7 @@ const register = parse(readFileSync(join(rot, 'content/kilder.yaml'), 'utf8')) a
 const kilder = new Set(register.kilder.map((k) => k.id));
 
 /** Sidene stegene og overgangene kan lenke til, utenom begrepene. */
-const SIDER = ['/opplaeringslop/lop', '/opplaeringslop/PB', '/opplaeringslop/laerlinger-og-kandidater', '/vurdering/fag-og-svenneproven'];
+const SIDER = ['/inntak', '/opplaeringslop/lop', '/opplaeringslop/PB', '/opplaeringslop/laerlinger-og-kandidater', '/vurdering/fag-og-svenneproven'];
 
 const paragrafer = new Map<string, Set<string>>();
 function paragrafFinnes(dok: string, nr: string): boolean {

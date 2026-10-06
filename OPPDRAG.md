@@ -544,6 +544,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - 27 nye begreper (eier 05.10.2026) er levert i 0.36.0: `docs/arbeidsordrer/fase-6-begreper.md`.
 - Pakke 6 er levert i 0.38.0 (06.10.2026): **Lærlinger og kandidater** i Opplæringstilbud, med veiene til fag- og svennebrev, praksisbrev og kompetansebevis, overgangene med kilder, siden for hver vei og «Veiene hit» på prøvesiden (avgjørelse 069). Overleveringen står i `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`, og arbeidsordren for fase 7 i `docs/arbeidsordrer/fase-7.md`.
 - 0.38.1 (06.10.2026): alle løp fra Grep, VIGO og utdanning.no, merket når bare én kilde har dem (avgjørelse 070). Samme versjon har like høye knapper på forsiden, klokkeslettet under tittelen i Kalenderen, søk på «kalender» uten doble treff, ingen kildeliste på oversiktssidene og ingen komma foran siste «og»/«eller» i oppramsinger (testes).
+- 0.38.2 (06.10.2026): «Bytte vei» uten kilder i kortene (kildene lukket under og på siden overgangen går til), og overgangene lærekandidat → elev og lærling → Vg3 i skole (avgjørelse 069).
 - **Pakke 7 – Mer opplæring** (eier 06.10.2026) tas før fase 7. Det blir en side i Inntak om retten til mer opplæring (forskrift til opplæringslova § 5-2 og Udirs veiledninger), med lenker fra Vurdering, Lærlinger og kandidater, Tilrettelegging, Kalenderen og veiviseren for rett til inntak. Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-7-mer-opplaering.md`.
 
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.

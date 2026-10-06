@@ -124,8 +124,11 @@ export function Kilder({ kilder }: { kilder: readonly KildeRef[] }) {
   );
 }
 
-/** En overgang som kort med vilkåret, og kildene under. */
-export function Overgangskort({ rute, ikon, tittel, vilkar, kilder }: { rute: string; ikon: Ikonnavn; tittel: string; vilkar: string; kilder: readonly KildeRef[] }) {
+/**
+ * En overgang som kort med vilkåret, og kildene under når de er med. På fanen «Bytte vei» står kortene uten kilder
+ * (eier 06.10.2026). Kildene står på siden kortet går til («Kommer fra»), og nederst på fanen.
+ */
+export function Overgangskort({ rute, ikon, tittel, vilkar, kilder }: { rute: string; ikon: Ikonnavn; tittel: string; vilkar: string; kilder?: readonly KildeRef[] }) {
   return (
     <li>
       <a class="frist-inngang" href={rute}>
@@ -136,7 +139,7 @@ export function Overgangskort({ rute, ikon, tittel, vilkar, kilder }: { rute: st
         <span class="frist-inngang-neste">{vilkar}</span>
         <Ikon navn="hoyre" class="frist-inngang-pil" />
       </a>
-      <Kilder kilder={kilder} />
+      {kilder && <Kilder kilder={kilder} />}
     </li>
   );
 }
