@@ -1,4 +1,86 @@
 {
-  "sjekket": null,
-  "nettsteder": []
+  "sjekket": "2026-10-06",
+  "nettsteder": [
+    {
+      "vert": "gann.no",
+      "lenker": [],
+      "stikkprover": 1
+    },
+    {
+      "vert": "inschool.zendesk.com",
+      "lenker": [
+        {
+          "url": "https://inschool.zendesk.com/hc/no/articles/19452863757970",
+          "brukt": [
+            "content/kilder.yaml"
+          ]
+        },
+        {
+          "url": "https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet",
+          "brukt": [
+            "content/kilder.yaml"
+          ]
+        },
+        {
+          "url": "https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer",
+          "brukt": [
+            "content/kilder.yaml"
+          ]
+        }
+      ],
+      "stikkprover": 0
+    },
+    {
+      "vert": "maere.no",
+      "lenker": [],
+      "stikkprover": 1
+    },
+    {
+      "vert": "regjeringen.no",
+      "lenker": [
+        {
+          "url": "https://www.regjeringen.no/no/dokument/lover_regler/endringer-i-lover-og-regler/endringer-i-lover-og-regler-fra-1.-juli-2026/id3162751/",
+          "brukt": [
+            "src/modules/kalender/oversikter.ts"
+          ]
+        }
+      ],
+      "stikkprover": 0
+    },
+    {
+      "vert": "skagerak.org",
+      "lenker": [],
+      "stikkprover": 1
+    },
+    {
+      "vert": "thorastorm.vgs.no",
+      "lenker": [],
+      "stikkprover": 1
+    },
+    {
+      "vert": "vgs.forusfriskole.no",
+      "lenker": [],
+      "stikkprover": 1
+    },
+    {
+      "vert": "vilbli.no",
+      "lenker": [
+        {
+          "url": "https://www.vilbli.no/",
+          "brukt": [
+            "content/inntak/frister.yaml",
+            "content/inntak/rett-inntak-soknad.yaml",
+            "content/kilder.yaml"
+          ]
+        },
+        {
+          "url": "https://www.vilbli.no/nb/nb/no/aktivitorfaget/program/v.hs/v.hsakt3----/p5",
+          "brukt": [
+            "src/modules/fag/tilbud/vilbli.ts"
+          ]
+        }
+      ],
+      "stikkprover": 6
+    }
+  ]
 }

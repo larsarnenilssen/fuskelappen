@@ -2454,21 +2454,21 @@
    "id": "akershus-skoleregler",
    "kilde": "lovdata-lokale",
    "type": "forskrift",
-   "tittel": "Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune",
+   "tittel": "Forskrift om reglement for deltakere ved voksenopplæringen, Akershus fylkeskommune",
    "korttittel": "Skoleregler i Akershus",
    "korttittelNn": "Skulereglar i Akershus",
    "malform": "nb",
-   "refid": "forskrift/2024-06-20-1886",
+   "refid": "forskrift/2024-10-24-3039",
    "gyldighet": {
     "niva": "fylke",
     "fylke": "32"
    },
    "utvalg": null,
    "sistEndret": null,
-   "iKraft": "2024-08-01",
+   "iKraft": "2024-10-24",
    "lokaltype": "skoleregler",
    "antallKapitler": 0,
-   "antallParagrafer": 14,
+   "antallParagrafer": 13,
    "paragrafer": [
     "1",
     "2",
@@ -2482,8 +2482,7 @@
     "10",
     "11",
     "12",
-    "13",
-    "14"
+    "13"
    ]
   },
   {
@@ -4172,12 +4171,12 @@
    ]
   },
   {
-   "id": "askoy-videregaende-skole-skoleregler",
+   "id": "askoy-videregaende-skole-mobilregler",
    "kilde": "lovdata-lokale",
    "type": "forskrift",
    "tittel": "Forskrift om lokale tilleggsreglar – mobilreglar for Askøy videregående skole, Vestland fylkeskommune",
-   "korttittel": "Skoleregler ved Askøy videregående skole",
-   "korttittelNn": "Skulereglar ved Askøy videregående skole",
+   "korttittel": "Regler for mobil ved Askøy videregående skole",
+   "korttittelNn": "Reglar for mobil ved Askøy videregående skole",
    "malform": "nn",
    "refid": "forskrift/2024-08-01-2484",
    "gyldighet": {
@@ -4621,6 +4620,36 @@
    ]
   },
   {
+   "id": "os-vidaregaande-skule-skoleregler",
+   "kilde": "lovdata-lokale",
+   "type": "forskrift",
+   "tittel": "Forskrift om tillegg til felles ordens- og åtferdsreglement for Os vidaregåande skule, Vestland fylkeskommune",
+   "korttittel": "Skoleregler ved Os vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Os vidaregåande skule",
+   "malform": "nn",
+   "refid": "forskrift/2024-08-10-3653",
+   "gyldighet": {
+    "niva": "skole",
+    "fylke": "46",
+    "skoler": [
+     "974557576"
+    ]
+   },
+   "utvalg": null,
+   "sistEndret": null,
+   "iKraft": "2024-08-19",
+   "lokaltype": "skoleregler-skole",
+   "antallKapitler": 0,
+   "antallParagrafer": 5,
+   "paragrafer": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
    "id": "osteroy-vidaregaande-skule-skoleregler",
    "kilde": "lovdata-lokale",
    "type": "forskrift",
@@ -4669,6 +4698,37 @@
    "utvalg": null,
    "sistEndret": null,
    "iKraft": "2025-01-01",
+   "lokaltype": "skoleregler-skole",
+   "antallKapitler": 0,
+   "antallParagrafer": 6,
+   "paragrafer": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "id": "slatthaug-videregaende-skole-mobilregler",
+   "kilde": "lovdata-lokale",
+   "type": "forskrift",
+   "tittel": "Forskrift om bruk av mobiltelefon og smartklokker, Slåtthaug vidaregåande skule, Vestland fylkeskommune",
+   "korttittel": "Regler for mobil ved Slåtthaug videregående skole",
+   "korttittelNn": "Reglar for mobil ved Slåtthaug videregående skole",
+   "malform": "nn",
+   "refid": "forskrift/2025-05-05-1300",
+   "gyldighet": {
+    "niva": "skole",
+    "fylke": "46",
+    "skoler": [
+     "974557320"
+    ]
+   },
+   "utvalg": null,
+   "sistEndret": null,
+   "iKraft": "2025-08-01",
    "lokaltype": "skoleregler-skole",
    "antallKapitler": 0,
    "antallParagrafer": 6,
@@ -4740,6 +4800,37 @@
     "3",
     "4",
     "5"
+   ]
+  },
+  {
+   "id": "stend-vidaregaande-skule-mobilregler",
+   "kilde": "lovdata-lokale",
+   "type": "forskrift",
+   "tittel": "Forskrift for bruk av mobiltelefon og smartklokker, Stend vidaregåande skule, Vestland fylkeskommune",
+   "korttittel": "Regler for mobil ved Stend vidaregåande skule",
+   "korttittelNn": "Reglar for mobil ved Stend vidaregåande skule",
+   "malform": "nn",
+   "refid": "forskrift/2024-12-10-3646",
+   "gyldighet": {
+    "niva": "skole",
+    "fylke": "46",
+    "skoler": [
+     "974557703"
+    ]
+   },
+   "utvalg": null,
+   "sistEndret": null,
+   "iKraft": "2025-01-01",
+   "lokaltype": "skoleregler-skole",
+   "antallKapitler": 0,
+   "antallParagrafer": 6,
+   "paragrafer": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
    ]
   },
   {

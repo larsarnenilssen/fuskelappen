@@ -11,7 +11,7 @@
  "iKraft": "2025-01-01",
  "iKraftTil": null,
  "lokaltype": "fagfordeling",
- "hentet": "2026-10-05",
+ "hentet": "2026-10-06",
  "gyldighet": {
   "niva": "fylke",
   "fylke": "34"
@@ -237,7 +237,7 @@
          ],
          [
           [
-           "Felles programfag* *Felles programfag er fordelt på to ulike fag per nivå. Informasjon om fagene finnes på nettstedet: ",
+           "Felles programfag*\n*Felles programfag er fordelt på to ulike fag per nivå. Informasjon om fagene finnes på nettstedet: ",
            {
             "t": "www.vilbli.no",
             "l": "https://www.vilbli.no/nb/no"

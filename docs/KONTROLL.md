@@ -29,33 +29,39 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 ## Må ses på
 
+- **SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, med vedlegg og protokoller:** ⚠️ sjekken feilet (06.10.2026): https://www.ks.no/fagomrader/lonn-og-tariff/saravtaler/ svarte 403 Forbidden
 - **Udir-1-2026, teksten øverst i rundskrivet:** ⚠️ ny kilde, ikke godkjent ennå
 - **Registreringshåndboken, A03 Programområdekode:** ⚠️ ny kilde, ikke godkjent ennå
-- **Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020:** ⚠️ ny kilde, ikke godkjent ennå
-- **Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis:** ⚠️ ny kilde, ikke godkjent ennå
+- **Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/ svarte 502 Bad Gateway
+- **Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/ svarte 502 Bad Gateway
 - **Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad:** ⚠️ ny kilde, ikke godkjent ennå
 - **Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad:** ⚠️ ny kilde, ikke godkjent ennå
-- **Læreplanverket (udir.no):** ⚠️ ny kilde, ikke godkjent ennå
-- **Lokale forskrifter hos Lovdata:** ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout Appen viser forrige henting.
+- **Læreplanverket (udir.no):** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/laring-og-trivsel/lareplanverket/ svarte 503 Service Unavailable
 - **Lokale forskrifter etter opplæringsloven:** ⚠️ ny kilde, ikke godkjent ennå
 - **Veileder om tilpasset opplæring og individuell tilrettelegging:** ⚠️ ny kilde, ikke godkjent ennå
-- **Særskilt språkopplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Innføringsopplæring:** ⚠️ ny kilde, ikke godkjent ennå
+- **Særskilt språkopplæring:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/ svarte 503 Service Unavailable
+- **Innføringsopplæring:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/ svarte 503 Service Unavailable
 - **Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever:** ⚠️ ny kilde, ikke godkjent ennå
 - **Retten til videregående opplæring:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rundskriv om skolemiljø:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rundskriv om skolemiljø, kapittel 4 Nulltoleranse:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre:** ⚠️ ny kilde, ikke godkjent ennå
 - **Rett til mer opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rett til mer opplæring for voksne:** ⚠️ ny kilde, ikke godkjent ennå
+- **Rett til mer opplæring for voksne:** ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout. Med nettleser: page.goto: Timeout 60000ms exceeded.
 - **Fullføringsretten for elever med individuelt tilrettelagt opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Fag- og timefordeling i grunnskolen (Udir-1-2026, vedlegg 1, punkt 2.2):** ⚠️ ny kilde, ikke godkjent ennå
-- **Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Hvem er klageinstanser etter enkeltvedtak?:** ⚠️ ny kilde, ikke godkjent ennå
+- **Fag- og timefordeling i grunnskolen (Udir-1-2026, vedlegg 1, punkt 2.2):** ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout. Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/ svarte 502 Bad Gateway
+- **Hvem er klageinstanser etter enkeltvedtak?:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/ svarte 502 Bad Gateway
 - **Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering:** ⚠️ ny kilde, ikke godkjent ennå
 - **Rundskriv om fraværsgrensen:** ⚠️ ny kilde, ikke godkjent ennå
-- **Standpunktvurdering:** ⚠️ ny kilde, ikke godkjent ennå
-- **Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar:** ⚠️ ny kilde, ikke godkjent ennå
-- **Behandling av klager på standpunktkarakterer i fag:** ⚠️ ny kilde, ikke godkjent ennå
+- **Standpunktvurdering:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/ svarte 502 Bad Gateway
+- **Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar:** ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout. Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **Behandling av klager på standpunktkarakterer i fag:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/ svarte 502 Bad Gateway
 - **Generelt om særskilt tilrettelegging av eksamen:** ⚠️ ny kilde, ikke godkjent ennå
-- **Administrere eksamen:** ⚠️ ny kilde, ikke godkjent ennå
+- **Administrere eksamen:** ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/ svarte 502 Bad Gateway
 - **Fag- og svenneprøver:** ⚠️ ny kilde, ikke godkjent ennå
 - **Lærekandidat – din vei til yrkeslivet:** ⚠️ ny kilde, ikke godkjent ennå
 - **Eksamensdatoer fra udir.no og fylkeskommunene:** ⚠️ ny kilde, ikke godkjent ennå
@@ -93,6 +99,31 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Helsefravær «etter grensen» når grensen ikke er nådd** | Teller helsefravær dokumentert av helsepersonell mot grensen helt til grensen er nådd, også når det er lagt inn som fravær «etter at grensen ble nådd» i kalkulatoren? | Eier 04.10.2026 (svar 2 på forslaget til pakke 2). Opplæringsforskrifta § 9-8 tredje ledd og rundskrivet punkt 3.3.2: helserelatert fravær teller til 10 prosent er nådd, og dokumentasjon fra helsepersonell får først betydning for fravær over det. | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-8): § 9-8 tredje ledd; [Rundskriv om fraværsgrensen](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/): punkt 3.1 og 3.3 Fravær som kan dokumenteres | ikke bekreftet |
 | **Skoleruta ved den enkelte skolen** | Kan skoleruta ved en videregående skole avvike fra fylkets skolerute, og hva er i så fall grunnlaget? | Eier 05.10.2026 (avgjørelse 061). Opplæringslova § 14-1 sier bare at fylkeskommunen gir forskrift om skolerute. | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§14-1): § 14-1 Skolerute og lengda på skoleåret; [Lokale forskrifter etter opplæringsloven](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/): På hvilke områder må kommunene og fylkeskommunene fastsette forskrift? (Skolerute); [Lokale forskrifter hos Lovdata](https://lovdata.no/register/lokaleForskrifter): Lokale forskrifter om skolerute for de videregående skolene | ikke bekreftet |
 | **Fra lærling til lærekandidat etter en prøve som ikke er bestått** | Kan en lærling som ikke har bestått fag- eller svenneprøven, bytte til lærekandidat, og må lærekontrakten da fortsatt være i kraft? | Eier spurte 06.10.2026 om det stemmer. Opplæringslova § 7-2 andre ledd (kontrakten kan endres med samtykke fra fylkeskommunen) og fjerde ledd (kontrakter som avviker fra det fastsatte løpet). Udirs veiledning om mer opplæring nevner ikke bytte til lærekandidat. | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-2): § 5-2 tredje ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 femte ledd; [Rett til mer opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring--nar-fag--eller-svenneproven-ikke-er-bestatt/): punkt 3. Mer opplæring når fag- eller svenneprøven ikke er bestått; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-66): § 9-66 første og andre ledd og § 9-66 tredje ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-67): § 9-67; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-2): § 7-2 andre og fjerde ledd | ikke bekreftet |
+
+## Nettsteder som ikke kan sjekkes automatisk
+
+Lenkesjekken 06.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under. De stenger trolig for automatiske forespørsler, så lenkene dit blir ikke sjekket. Åpne noen av dem av og til. Virker en lenke ikke, si fra til Claude.
+
+- **gann.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **inschool.zendesk.com** (3 lenker)
+  - https://inschool.zendesk.com/hc/no/articles/19452863757970 (står i `content/kilder.yaml`)
+  - https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet (står i `content/kilder.yaml`)
+  - https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer (står i `content/kilder.yaml`)
+- **maere.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **regjeringen.no** (én lenke)
+  - https://www.regjeringen.no/no/dokument/lover_regler/endringer-i-lover-og-regler/endringer-i-lover-og-regler-fra-1.-juli-2026/id3162751/ (står i `src/modules/kalender/oversikter.ts`)
+- **skagerak.org** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **thorastorm.vgs.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **vgs.forusfriskole.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **vilbli.no** (8 lenker)
+  - https://www.vilbli.no/ (står i `content/inntak/frister.yaml`, `content/inntak/rett-inntak-soknad.yaml`, `content/kilder.yaml`)
+  - https://www.vilbli.no/nb/nb/no/aktivitorfaget/program/v.hs/v.hsakt3----/p5 (står i `src/modules/fag/tilbud/vilbli.ts`)
+  - 6 lenker fra dataene, som sjekkes med stikkprøver.
 
 ## Per kilde
 
@@ -806,7 +837,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020
 
-`udir-yff-forskrift` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/)
+`udir-yff-forskrift` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/)
 
 **Innhold som bygger på kilden**
 
@@ -817,7 +848,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis
 
-`udir-foring-vitnemal-merknader` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/)
+`udir-foring-vitnemal-merknader` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/)
 
 **Innhold som bygger på kilden**
 
@@ -882,7 +913,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Læreplanverket (udir.no)
 
-`udir-lareplanverket` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/laring-og-trivsel/lareplanverket/)
+`udir-lareplanverket` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/laring-og-trivsel/lareplanverket/ svarte 503 Service Unavailable · [Åpne kilden](https://www.udir.no/laring-og-trivsel/lareplanverket/)
 
 **Innhold som bygger på kilden**
 
@@ -893,7 +924,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Lokale forskrifter hos Lovdata
 
-`lovdata-lokale` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout Appen viser forrige henting. · [Åpne kilden](https://lovdata.no/register/lokaleForskrifter)
+`lovdata-lokale` · Kildesjekk: i orden (06.10.2026) · [Åpne kilden](https://lovdata.no/register/lokaleForskrifter)
 
 **Innhold som bygger på kilden**
 
@@ -1028,7 +1059,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Særskilt språkopplæring
 
-`udir-sarskilt-sprakopplaring` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/)
+`udir-sarskilt-sprakopplaring` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/ svarte 503 Service Unavailable · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1048,7 +1079,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Innføringsopplæring
 
-`udir-innforingsopplaring` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/)
+`udir-innforingsopplaring` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/ svarte 503 Service Unavailable · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1102,7 +1133,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rundskriv om skolemiljø
 
-`udir-rundskriv-skolemiljo` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/)
+`udir-rundskriv-skolemiljo` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/)
 
 **Innhold som bygger på kilden**
 
@@ -1129,7 +1160,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren
 
-`udir-rundskriv-skolemiljo-statsforvalteren` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/)
+`udir-rundskriv-skolemiljo-statsforvalteren` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/)
 
 **Innhold som bygger på kilden**
 
@@ -1144,7 +1175,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
 
-`udir-rundskriv-skolemiljo-hvem` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/)
+`udir-rundskriv-skolemiljo-hvem` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/)
 
 **Innhold som bygger på kilden**
 
@@ -1154,7 +1185,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø
 
-`udir-rundskriv-skolemiljo-retten` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/)
+`udir-rundskriv-skolemiljo-retten` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/)
 
 **Innhold som bygger på kilden**
 
@@ -1165,7 +1196,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rundskriv om skolemiljø, kapittel 4 Nulltoleranse
 
-`udir-rundskriv-skolemiljo-nulltoleranse` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/)
+`udir-rundskriv-skolemiljo-nulltoleranse` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/)
 
 **Innhold som bygger på kilden**
 
@@ -1176,7 +1207,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre
 
-`udir-rundskriv-skolemiljo-informasjon` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/)
+`udir-rundskriv-skolemiljo-informasjon` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/)
 
 **Innhold som bygger på kilden**
 
@@ -1186,7 +1217,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Elevundersøkelsen i videregående, Udirs statistikkbank
 
-`udir-elevundersokelsen` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/)
+`udir-elevundersokelsen` · Kildesjekk: i orden (06.10.2026) · [Åpne kilden](https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/)
 
 **Innhold som bygger på kilden**
 
@@ -1223,7 +1254,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Rett til mer opplæring for voksne
 
-`udir-mer-opplaering-voksne` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/)
+`udir-mer-opplaering-voksne` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout. Med nettleser: page.goto: Timeout 60000ms exceeded. · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/)
 
 **Innhold som bygger på kilden**
 
@@ -1246,7 +1277,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring
 
-`udir-merknader-ofo` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/)
+`udir-merknader-ofo` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1266,7 +1297,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Hvem er klageinstanser etter enkeltvedtak?
 
-`udir-klageinstanser` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/)
+`udir-klageinstanser` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/)
 
 **Innhold som bygger på kilden**
 
@@ -1358,7 +1389,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Standpunktvurdering
 
-`udir-standpunktvurdering` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/)
+`udir-standpunktvurdering` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/)
 
 **Innhold som bygger på kilden**
 
@@ -1368,7 +1399,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar
 
-`udir-merknader-ofo-kap10` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/)
+`udir-merknader-ofo-kap10` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): The operation was aborted due to timeout. Med nettleser: page.goto: Timeout 60000ms exceeded. · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/)
 
 **Innhold som bygger på kilden**
 
@@ -1389,7 +1420,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Behandling av klager på standpunktkarakterer i fag
 
-`udir-klage-standpunkt` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/)
+`udir-klage-standpunkt` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/)
 
 **Innhold som bygger på kilden**
 
@@ -1418,7 +1449,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ### Administrere eksamen
 
-`udir-administrere-eksamen` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/)
+`udir-administrere-eksamen` · Kildesjekk: ⚠️ sjekken feilet (06.10.2026): https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/ svarte 502 Bad Gateway · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/)
 
 **Innhold som bygger på kilden**
 
