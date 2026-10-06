@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.38.2] – 2026-10-06
+
 ### Endret
 
 - **Lærlinger og kandidater, «Bytte vei»:**
