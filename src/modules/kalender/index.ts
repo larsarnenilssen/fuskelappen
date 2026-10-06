@@ -37,6 +37,8 @@ export const manifest: Modulmanifest = {
       stikkord: STIKKORD[tema],
       rute: kalenderLenke(tema),
       modul: 'kalender',
+      // Lavere enn selve kalenderen, så søk på «kalender» gir den først.
+      vekt: 0.5,
     }));
   },
   async favorittbare(ider) {

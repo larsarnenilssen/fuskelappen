@@ -83,6 +83,15 @@ test.describe('modulregister og søk', () => {
     await expect(page.getByRole('button', { name: 'Tøm søket' })).toHaveCount(0);
   });
 
+  test('«kalender» gir kalenderen først og så hvert tema, uten doble treff (eier 06.10.2026)', async ({ page }) => {
+    await page.goto('./#/sok?q=kalender');
+    const treff = page.locator('.sokeboks a');
+    await expect(treff.first()).toContainText('Kalender');
+    await expect(treff.first()).toContainText('Del av appen');
+    await expect(treff.nth(1)).toContainText('Kalender – inntak');
+    await expect(page.locator('.sokeboks a', { hasText: /^Kalender(Del av appen)?$/ })).toHaveCount(1);
+  });
+
   test('ingen treff gir melding', async ({ page }) => {
     await page.goto('./#/sok');
     await page.getByRole('searchbox').fill('xqzwvy');
