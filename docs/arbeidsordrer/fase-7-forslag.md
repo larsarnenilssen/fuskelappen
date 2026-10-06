@@ -361,3 +361,11 @@ Ny del av appen, «Skolemiljø», i kategorien med samme navn på forsiden (avgj
 **Spørsmål H:**
 1. Skal kortet om fysiske inngrep (kapittel 13) stå på siden om kapittel 12, under «Henger sammen med»?
 2. Er tolv nye begreper riktig nivå, eller er noen for smale (f.eks. tvangsmulkt)?
+
+## Svar fra eier 06.10.2026 (runde 6) og runde 7
+
+- Skolemiljø: Et trygt og godt skolemiljø og Elevundersøkelsen under en egen overskrift øverst. Gjort: «Retten og resultatene».
+- Et trygt og godt skolemiljø: mindre scrolling med kollaps. Gjort: de fem delene er lukket fra start og viser nummer, tittel, paragrafene og én setning.
+- Deretter PR, fletting og publisering med ny versjon: 0.40.0, fordi versjonen har nye deler av appen (Skolemiljø og Eksamen og klage).
+- Ende-til-ende-tester for Skolemiljø (`tests/e2e/skolemiljo.spec.ts`) er skrevet nå som designet er godkjent.
+- Spørsmål H1 og H2 er ikke besvart ennå.

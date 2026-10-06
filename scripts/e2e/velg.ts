@@ -13,6 +13,7 @@ const MODULSPEKER: Record<string, readonly string[]> = {
   laereplanverket: ['laereplanverket'],
   lov: ['regelverk'],
   opplaeringslop: ['opplaeringslop', 'laerlinger'],
+  skolemiljo: ['skolemiljo'],
   tilrettelegging: ['tilrettelegging'],
   vurdering: ['vurdering', 'laerlinger'],
 };
@@ -26,6 +27,7 @@ const DATAMODULER: Record<string, readonly string[]> = {
   utdanning: ['opplaeringslop'],
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
+  elevundersokelsen: ['skolemiljo'],
   udir: ['inntak', 'vurdering'],
   skolerute: ['kalender'],
   skolear: ['inntak', 'arbeidstid', 'vurdering'],

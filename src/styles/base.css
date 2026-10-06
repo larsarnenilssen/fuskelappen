@@ -9162,56 +9162,49 @@ a.knapp {
 }
 
 /* ---------- Et trygt og godt skolemiljø (fase 7, eier 06.10.2026) ----------
-   Kapittel 12 på én side: fem deler i rekkefølge, som kort med nummer (fem i bredden på skrivebord, under hverandre på
-   mobil). Delene lenger ned har samme nummer i overskriften. Delpliktene og veien til statsforvalteren er rader med
-   pil mellom leddene. Fargene er de samme som ellers i appen, ingen nye. */
-.k12-oversikt {
-  margin: 0 0 var(--rom-5);
+   Kapittel 12 i fem nummererte deler som er lukket fra start. Knappen er et kort med nummer, tittel, paragrafene og én
+   setning, så kapittelet kan leses i overskriftene. Delpliktene og veien til statsforvalteren er rader med strek
+   mellom leddene. Fargene er de samme som ellers i appen, ingen nye. */
+.k12-seksjon {
+  margin-bottom: var(--rom-3);
+  scroll-margin-top: var(--rom-6);
 }
 
-.k12-deler {
-  display: grid;
-  gap: var(--rom-2);
-  grid-template-columns: minmax(0, 1fr);
+.k12-seksjon-overskrift {
   margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: none;
+  font-size: inherit;
 }
 
-@media (min-width: 40rem) {
-  .k12-deler {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 64rem) {
-  .k12-deler {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-}
-
-.k12-del {
+.k12-del-knapp {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  grid-template-areas: 'nr tittel' 'nr par' 'nr tekst';
-  gap: 0 var(--rom-2);
-  height: 100%;
-  padding: var(--rom-3);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: 'nr tittel pil' 'nr par pil' 'nr tekst pil';
+  gap: 0 var(--rom-3);
+  align-items: start;
+  width: 100%;
+  padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
-  border-top: 4px solid var(--farge-lenke);
+  border-left: 4px solid var(--farge-lenke);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
   color: var(--farge-tekst);
-  text-decoration: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
-.k12-del:hover .k12-del-tittel {
+.k12-del-knapp:hover .k12-del-tittel {
   text-decoration: underline;
 }
 
-.k12-del .k12-del-nr {
+.k12-seksjon-apen .k12-del-knapp {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.k12-del-knapp .k12-del-nr {
   grid-area: nr;
+  margin-top: 0.1rem;
 }
 
 .k12-del-nr {
@@ -9235,6 +9228,7 @@ a.knapp {
 
 .k12-del-paragrafer {
   grid-area: par;
+  font-weight: 400;
   font-size: var(--str-xs);
   color: var(--farge-tekst-dempet);
 }
@@ -9242,24 +9236,28 @@ a.knapp {
 .k12-del-tekst {
   grid-area: tekst;
   margin-top: var(--rom-1);
+  font-weight: 400;
   font-size: var(--str-s);
 }
 
-.k12-seksjon {
-  margin-bottom: var(--rom-5);
-  scroll-margin-top: var(--rom-6);
+.k12-del-pil {
+  grid-area: pil;
+  align-self: center;
+  color: var(--farge-lenke);
 }
 
-.k12-seksjon-tittel {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--rom-1) var(--rom-2);
+.k12-del-innhold {
+  padding: var(--rom-3) var(--rom-3) var(--rom-1);
+  border: var(--strek) solid var(--farge-kant);
+  border-top: 0;
+  border-left: 4px solid var(--farge-lenke);
+  border-bottom-left-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
+  background: var(--farge-bakgrunn);
 }
 
-.k12-seksjon-paragrafer {
-  font-weight: 400;
-  color: var(--farge-tekst-dempet);
+.k12-del-innhold[hidden] {
+  display: none;
 }
 
 .k12-figur {

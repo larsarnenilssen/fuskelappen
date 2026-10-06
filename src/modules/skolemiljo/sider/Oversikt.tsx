@@ -1,4 +1,5 @@
-// Oversikten i Skolemiljø (fase 7): veiviseren for aktivitetsplikten og skolereglene.
+// Oversikten i Skolemiljø (fase 7): «Retten og resultatene» øverst (kapittel 12 og Elevundersøkelsen, eier 06.10.2026),
+// veiviseren for aktivitetsplikten og skolereglene.
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -23,6 +24,18 @@ export default function Oversikt() {
       <p class="ingress">
         <Begrepstekst tekst={t('skolemiljo.innledning')} />
       </p>
+      {/* Retten og resultatene øverst (eier 06.10.2026): kapittel 12 og Elevundersøkelsen. */}
+      <section>
+        <h2 class="liten-overskrift">{t('skolemiljo.rettenOgResultatene')}</h2>
+        <ul class="vu-videre">
+          <li>
+            <Inngang {...UNDERSIDER.kapittel12} tittel={t('skolemiljo.kapittel12.kort')} tekst={t('skolemiljo.kapittel12.beskrivelse')} />
+          </li>
+          <li>
+            <Inngang {...UNDERSIDER.elevundersokelsen} tittel={t('skolemiljo.elevundersokelsen.kort')} tekst={t('skolemiljo.elevundersokelsen.beskrivelse')} />
+          </li>
+        </ul>
+      </section>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (
@@ -35,13 +48,7 @@ export default function Oversikt() {
         <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
         <ul class="vu-videre">
           <li>
-            <Inngang {...UNDERSIDER.kapittel12} tittel={t('skolemiljo.kapittel12.kort')} tekst={t('skolemiljo.kapittel12.beskrivelse')} />
-          </li>
-          <li>
             <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
-          </li>
-          <li>
-            <Inngang {...UNDERSIDER.elevundersokelsen} tittel={t('skolemiljo.elevundersokelsen.kort')} tekst={t('skolemiljo.elevundersokelsen.beskrivelse')} />
           </li>
         </ul>
       </section>

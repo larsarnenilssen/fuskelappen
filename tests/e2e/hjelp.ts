@@ -6,6 +6,8 @@ export interface Oppsett {
   tema?: 'system' | 'lys' | 'mork';
   fylke?: string | null;
   skole?: { id: string | null; navn: string } | null;
+  /** Reglene for privatskoler (avgjørelse 075). */
+  privatskole?: boolean;
   favoritter?: string[];
   skjultKildevarsel?: string | null;
   forside?: { rekkefolge: string[]; lukket: string[]; bareFavoritter: boolean };
@@ -20,6 +22,7 @@ export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
       tema: oppsett.tema ?? 'system',
       fylke: oppsett.fylke ?? null,
       skole: oppsett.skole ?? null,
+      ...(oppsett.privatskole !== undefined ? { privatskole: oppsett.privatskole } : {}),
     },
     favoritter: oppsett.favoritter ?? [],
     scenarier: {},

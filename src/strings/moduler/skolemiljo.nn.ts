@@ -2,7 +2,8 @@
 
 export const skolemiljoNn = {
   tittel: 'Skulemiljø',
-  innledning: 'Aktivitetsplikta steg for steg, skulereglane i fylket og på skulen, og kva eleven kan gjere når skulen ikkje gjer nok. Kvart steg viser kven som har ansvaret, kva som skal dokumenterast og paragrafane i regelverket.',
+  innledning: 'Retten til eit trygt og godt skulemiljø og resultata frå Elevundersøkinga, aktivitetsplikta steg for steg og skulereglane i fylket og på skulen. Kvart steg viser kven som har ansvaret, kva som skal dokumenterast og paragrafane i regelverket.',
+  rettenOgResultatene: 'Retten og resultata',
   veivisere: 'Vegvisarar',
   oppslag: 'Oppslag',
   ikkeFunnet: 'Fann ikkje sida.',
@@ -11,7 +12,6 @@ export const skolemiljoNn = {
     kort: 'Eit trygt og godt skulemiljø',
     beskrivelse: 'Opplæringslova kapittel 12: retten, pliktene til skulen, statsforvaltaren, det fysiske miljøet og ansvaret.',
     innledning: 'Opplæringslova kapittel 12 gir alle elevar rett til eit trygt og godt skulemiljø, og skulen pliktar å sørgje for det. Her er kapittelet paragraf for paragraf, med eigne ord.',
-    oversikt: 'Kapittelet på éi side',
     deler: {
       retten: { tittel: 'Retten', paragrafer: '§§ 12-1 og 12-2', tekst: 'Alle elevar har rett til eit trygt og godt skulemiljø. Opplevinga til eleven avgjer.' },
       plikter: { tittel: 'Pliktene til skulen', paragrafer: '§§ 12-3 til 12-5', tekst: 'Nulltoleranse, førebygging og aktivitetsplikt.' },
