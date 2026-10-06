@@ -86,19 +86,23 @@ export function Fakta({ vei, data, med = 'kort' }: { vei: Veielement; data: Veii
   const { t, malform } = useTekst();
   const alt = med === 'alt';
   const slutt = kontraktSlutt(vei, data, med);
-  const rader: [string, string | undefined, boolean][] = [
+  // Fellesfagene har ofte den lengste teksten. Med dokumentasjonen står den over to rader til høyre, og «Melder opp» og
+  // «Dokumentasjon» under hverandre til venstre, så boksen blir lavere (eier 06.10.2026).
+  const hoy = alt && Boolean(vei.dokumentasjon[malform]);
+  const rader: [string, string | undefined, boolean, string?][] = [
     [t('opplaeringslop.fagbrev.kontrakt'), vei.kontrakt[malform], alt],
     [t('opplaeringslop.fagbrev.prove'), vei.prove[malform], alt],
     [t('opplaeringslop.fagbrev.melderOpp'), vei.melderOpp[malform], true],
-    [t('opplaeringslop.fagbrev.fellesfag'), vei.fellesfagTekst[malform], true],
+    [t('opplaeringslop.fagbrev.fellesfag'), vei.fellesfagTekst[malform], true, hoy ? 'fb-fakta-hoy' : undefined],
     [t('opplaeringslop.fagbrev.dokumentasjon'), vei.dokumentasjon[malform], alt],
-    [t('opplaeringslop.fagbrev.voksne'), vei.voksne?.[malform], true],
+    // Under to rader går voksne over begge kolonnene, så det ikke står en tom plass til høyre.
+    [t('opplaeringslop.fagbrev.voksne'), vei.voksne?.[malform], true, hoy ? 'fb-fakta-bred' : undefined],
   ];
   return (
     <dl class="fb-fakta">
-      {rader.map(([dt, dd, vis]) =>
+      {rader.map(([dt, dd, vis, klasse]) =>
         vis && dd ? (
-          <div key={dt}>
+          <div key={dt} class={klasse}>
             <dt>{dt}</dt>
             <dd>{dd}</dd>
           </div>

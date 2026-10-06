@@ -32,7 +32,7 @@ export function Seksjon({ id, tittel, innhold, apen: standard = false, tvingApen
         <button type="button" class="seksjon-knapp" aria-expanded={apen} aria-controls={innholdId} onClick={() => settApen(!apen)}>
           <span class="seksjon-tittel">{tittel}</span>
           {!apen && innhold && <span class="skjult-visuelt">: {innhold}</span>}
-          <Ikon navn={apen ? 'opp' : 'ned'} class="seksjon-pil" />
+          <Ikon navn={apen ? 'opp' : 'ned'} class="ikon-liten seksjon-pil" />
         </button>
       </h2>
       {!apen && innhold && (

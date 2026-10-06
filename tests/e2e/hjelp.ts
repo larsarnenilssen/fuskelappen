@@ -114,7 +114,7 @@ export const ruter = [
   '#/inntak/poeng',
   '#/inntak/poeng?trinn=vg3',
   '#/inntak/rett-inntak-soknad',
-  '#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng',
+  '#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.nei.under19.vg1.poeng',
   '#/kalender',
   '#/kalender?tema=eksamen&vis=privatister',
   '#/kalender?tema=inntak',

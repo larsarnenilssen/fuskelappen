@@ -17,6 +17,9 @@ test.describe('inntak', () => {
     await page.getByRole('link', { name: 'Ja, vitnemål fra norsk grunnskole' }).click();
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
     await page.getByRole('link', { name: 'Nei', exact: true }).click();
+    // Fag i videregående som ikke er bestått (mer opplæring, fase 6, pakke 7).
+    await expect(steg).toHaveText(['Fag som ikke er bestått']);
+    await page.getByRole('link', { name: 'Nei', exact: true }).click();
     await page.getByRole('link', { name: 'Før skoleåret søkeren fyller 19' }).click();
     await expect(steg).toHaveText(['Ungdomsrett']);
     await page.getByRole('link', { name: 'Vg1', exact: true }).click();
@@ -25,7 +28,7 @@ test.describe('inntak', () => {
     await expect(page.locator('.veiviser-svargruppe-tittel')).toHaveText(['Fortrinnsrett', 'Uten fortrinnsrett']);
     await page.getByRole('group', { name: 'Uten fortrinnsrett' }).getByRole('link', { name: 'Konkurrerer på poeng' }).click();
     // Poeng, hvor søknaden sendes, og søknad, svar og klage står på samme side, der veien ender.
-    await expect(page).toHaveURL(/steg=sk-poeng&svar=norsk\.ja\.nei\.under19\.vg1\.poeng$/);
+    await expect(page).toHaveURL(/steg=sk-poeng&svar=norsk\.ja\.nei\.nei\.under19\.vg1\.poeng$/);
     await expect(steg).toHaveText(['Konkurrerer på poeng', 'Hvor søknaden sendes', 'Søknad, svar og klage']);
     await expect(page.locator('.veiviser-stegnr').last()).toHaveText(/^Her ender veien · Søknad/);
     // Hvert steg står i sin egen ramme på siden.
@@ -34,7 +37,7 @@ test.describe('inntak', () => {
     // På mobil viser «Veien hit» de siste valgene, og resten bak en knapp. På stor skjerm står veien i prosessen.
     if (erMobil(info)) {
       await page.getByRole('button', { name: /Vis hele veien/ }).click();
-      await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(6);
+      await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(7);
     }
     // Lenken til forrige valg under knappene er tatt bort; veien hit lenker til hvert valg (eier 04.10.2026).
     await expect(page.getByRole('link', { name: /^Tilbake til «/ })).toHaveCount(0);
@@ -46,7 +49,7 @@ test.describe('inntak', () => {
     await settLagret(page, { fylke: '46' });
     await page.goto('./#/inntak');
     await expect(page.getByText('Viser også de lokale reglene om inntak i Vestland.')).toBeVisible();
-    await page.goto(`${VEIVISER}?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng`);
+    await page.goto(`${VEIVISER}?steg=sk-poeng&svar=norsk.ja.nei.nei.under19.vg1.poeng`);
     await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Konkurrerer på poeng');
     const bokser = page.locator('.veiviser-tillegg');
     await expect(bokser).toHaveCount(3);

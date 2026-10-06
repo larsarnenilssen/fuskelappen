@@ -8115,6 +8115,11 @@ a.knapp {
   .fb-om .fb-fakta > .fb-fakta-bred {
     grid-column: 1 / -1;
   }
+
+  /* Fellesfagene står over to rader til høyre, med «Melder opp» og «Dokumentasjon» under hverandre til venstre. */
+  .fb-om .fb-fakta > .fb-fakta-hoy {
+    grid-row: span 2;
+  }
 }
 
 .fb-hvor {
@@ -8322,22 +8327,27 @@ a.knapp {
 }
 
 /* ---------- Deler av en side som kan lukkes (Seksjon, fase 6, pakke 7) ----------
-   Overskriften er en knapp over hele bredden med pil til høyre og en tynn strek under, så den leses som noe som kan
-   åpnes. En lukket del viser innholdet på én dempet linje. */
+   Som radene som kan åpnes i Lov og forskrift og overordnet del (.od-underdel): en tynn strek over hver del, ikke
+   under overskriften, og en liten pil til høyre. En lukket del viser innholdet på én dempet linje. */
+.seksjon {
+  margin-top: var(--rom-4);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
 .seksjon-overskrift {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .seksjon-knapp {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--rom-2);
+  gap: var(--rom-3);
   width: 100%;
   min-height: var(--trykkflate);
-  padding: var(--rom-1) 0;
+  margin: 0;
+  padding: var(--rom-2) 0;
   border: 0;
-  border-bottom: var(--strek) solid var(--farge-linje);
   background: none;
   color: inherit;
   font: inherit;
@@ -8351,16 +8361,15 @@ a.knapp {
 
 .seksjon-pil {
   flex: none;
-  color: var(--farge-lenke);
 }
 
 .seksjon-innhold {
-  margin: var(--rom-2) 0 0;
+  margin: 0 0 var(--rom-2);
   color: var(--farge-tekst-dempet);
   font-size: var(--str-s);
   cursor: pointer;
 }
 
 .seksjon > [id] {
-  padding-top: var(--rom-3);
+  padding-bottom: var(--rom-2);
 }

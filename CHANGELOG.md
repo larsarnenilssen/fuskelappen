@@ -8,11 +8,14 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Mer opplæring** i Inntak: hvem som har rett til mer opplæring i fag som ikke er bestått, hva retten gir, privatskolene, fristen og vedtaket, fag- eller svenneprøven som ikke er bestått, de egne reglene for vurdering, voksne og elever med individuelt tilrettelagt opplæring. Overskriftene kan lukkes, og på stor skjerm står siden i to kolonner. Søk på «meropplæring» i ett ord finner også siden.
 - **Begrepet «Mer opplæring»**, som teksten i appen lenker til.
-- **Lenker til siden** fra Eksamen og prøvesiden i Vurdering, «Bytte vei» for lærlinger, steget om IOP i Tilrettelegging, Kalenderen og et nytt svar i veiviseren «Rett, inntak og søknad».
+- **Lenker til siden** fra Eksamen og prøvesiden i Vurdering, steget om IOP i Tilrettelegging og Kalenderen.
+- **«Bytte vei» for lærlinger og kandidater:** nytt utgangspunkt «Fag- eller svenneprøven ikke bestått», med mer opplæring på Vg3, ny eller utsatt prøve og lengre eller ny lærekontrakt.
+- **Veiviseren «Rett, inntak og søknad»:** nytt spørsmål om søkeren har fag i videregående som ikke er bestått, med et nytt sluttsteg om mer opplæring.
 
 ### Endret
 
 - **Sammenligningene** i «Underveis- og sluttvurdering» og «Sammenlign» for lærlinger og kandidater har regelverket og kildene nederst i samme boks som tabellen.
+- **«Om veien»** for lærlinger og kandidater er lavere på stor skjerm: «Melder opp» og «Dokumentasjon» står under hverandre ved siden av fellesfagene.
 
 ## [0.38.3] – 2026-10-06
 

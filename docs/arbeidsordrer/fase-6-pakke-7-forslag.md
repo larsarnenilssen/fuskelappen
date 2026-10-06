@@ -65,4 +65,14 @@ De andre kontrollspørsmålene står ved hvert kort i YAML-filen og kommer i kon
 - **Søket:** «meropplæring» og «meiropplæring» i ett ord finner siden og begrepet.
 - **Privatskoler:** et lukket kort under «Hva retten gir», med fem punkter fra Udirs kapittel 6 (omtrent 70 ord): kan tilby, ingen plikt, plass innenfor godkjent elevtall og krav til inntak, skolens læreplan og fast timetall uten unntak, og at elevene også kan melde seg hos fylkeskommunen.
 
-**Spørsmål 2 og 3, utdypet:** står i svaret til eier i chatten og tas inn her når eier har bestemt seg.
+**Spørsmål 2 og 3:** forklart i chatten.
+
+## Eiers svar og runde 3 (06.10.2026)
+
+**Svar:** 2: en egen knapp. 3: et eget spørsmål tidligere i veiviseren, så mer opplæring blir synlig.
+
+**Endret i runde 3:**
+- **Bytte vei:** Nytt utgangspunkt «Fag- eller svenneprøven ikke bestått» med tre veier: mer opplæring på Vg3 (§ 5-2 tredje ledd og § 4-9 femte ledd, ikke for særløp), ny eller utsatt prøve (§§ 9-66 og 9-67) og lengre eller ny lærekontrakt (ingen rett, § 9-66 tredje ledd). Overgangen under «Lærling» er tatt bort.
+- **Veiviseren:** Nytt steg «Fag som ikke er bestått» etter «Kompetanse fra før» (svaret «Nei»), med spørsmålet «Har søkeren fag i videregående som ikke er bestått?». «Ja» ender i «Mer opplæring», som nå også nevner voksne. «Nei» går videre til alder. Svaret under «Hvilket trinn …» er tatt bort. Adresser med svar etter «Kompetanse fra før» får ett ledd til (`norsk.ja.nei.nei.under19…`).
+- **Overskriftene som kan lukkes** har streken over seg, ikke under, og en liten pil, som radene som kan åpnes i Lov og forskrift og overordnet del.
+- **«Om veien»** (lærlinger og kandidater): «Melder opp» og «Dokumentasjon» står under hverandre til venstre for «Fellesfag», og «Voksne» går over begge kolonnene.

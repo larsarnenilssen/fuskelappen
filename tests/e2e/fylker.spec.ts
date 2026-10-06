@@ -4,7 +4,7 @@ import { expect, test } from '@playwright/test';
 import { aapneAlleSteg, erMobil, settLagret } from './hjelp.ts';
 
 const SKOLE = { id: '974557584', navn: 'Fyllingsdalen videregående skole' };
-const POENGSTEG = './#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng';
+const POENGSTEG = './#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.nei.under19.vg1.poeng';
 
 test.describe('fylker', () => {
   test('fra forsiden til fylket brukeren har valgt, og til listen med det fylket øverst', async ({ page }) => {
