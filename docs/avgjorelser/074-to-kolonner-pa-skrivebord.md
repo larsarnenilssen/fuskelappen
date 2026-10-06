@@ -13,6 +13,7 @@
   - Fagarket (eier 06.10.2026): læreplanverket, kompetansemålene og vurderingen til venstre, nøkkeltallene, faktaene og programområdene til høyre. Her er rekkefølgen på skrivebord en annen enn på mobil (`useBred`), fordi kompetansemålene trenger bredden.
   - Tilbudene i Opplæringstilbud (eier 06.10.2026): sammensetningen, fagene og tilpasningene til venstre, veien videre, skolene, yrkene og Vilbli til høyre.
   - Mer opplæring bruker komponenten i stedet for egne klasser. Sidene for lærlinger og kandidater beholder sine (`fb-to`), fordi de har egne bredder og en kolonne som står fast.
+- **Kildene til siden** (eier 06.10.2026): På fagarket og tilbudene står kildene i en lukket boks nederst i høyre kolonne (`Kildeboks`), med raden «Kilder (n)» som i kortene, ikke som en liste rett på bakgrunnen nederst på siden. På mobil står boksen nederst.
 - **Regelen** står i AGENTS.md under «Grensesnitt»: nye sider med flere deler bruker `ToKolonner`.
 - **Regelverk:** Gruppene (lover, forskrifter, lokale forskrifter og avtaler) er lukket fra start på mobil og skrivebord. Det brukeren åpner, huskes for siden (avgjørelse 072).
 

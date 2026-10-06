@@ -10,6 +10,7 @@ import { type T, useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
@@ -638,6 +639,8 @@ export default function Fagside({ parametre }: SideProps) {
       </Seksjon>
     </>
   );
+  /** Kildene til fagarket i en lukket boks, nederst i høyre kolonne på skrivebord (eier 06.10.2026). */
+  const kildeboks = <Kildeboks kilder={kilder} nokkel={`fag-${kode}`} />;
   /** Programområdene faget inngår i. */
   const programomrader = (
     <>
@@ -701,6 +704,7 @@ export default function Fagside({ parametre }: SideProps) {
             <>
               {fakta}
               {programomrader}
+              {kildeboks}
             </>
           }
         />
@@ -709,9 +713,9 @@ export default function Fagside({ parametre }: SideProps) {
           {fakta}
           {seksjoner}
           {programomrader}
+          {kildeboks}
         </>
       )}
-      <Kildeliste kilder={kilder} />
     </article>
   );
 }

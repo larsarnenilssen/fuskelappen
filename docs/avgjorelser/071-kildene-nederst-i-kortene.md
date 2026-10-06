@@ -15,3 +15,5 @@
 - **Unntak (eier 06.10.2026):** I poengberegningen i Inntak har de to lukkede kilderadene egne titler («Fagene med standpunkt på vitnemålet fra grunnskolen» og «Hvor fagene og typen kommer fra»), fordi titlene sier hva kildene gjelder. Utregningen i kalkulatorene har en kort kildelenke på hver linje og listen «Kilde» nederst, fordi den viser hvor hvert tall kommer fra, og er skjult til brukeren åpner den.
 
 **Konsekvens:** Komponenten `Kildefot` i `src/modules/opplaeringslop/sider/fagbrevDeler.tsx` gir radene for en liste med kilder. Andre moduler bruker `Kortfot` eller `Innholdskort` direkte.
+
+**Endret 06.10.2026 (eier):** På fagarket og tilbudene i Opplæringstilbud står kildene til siden i en lukket boks nederst i høyre kolonne (`Kildeboks`, avgjørelse 074), ikke som en liste rett på bakgrunnen.

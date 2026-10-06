@@ -11,9 +11,9 @@ import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { finnKobling } from '../../arbeidstid/beregning/index.ts';
 import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
@@ -827,18 +827,20 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           <p class="liten">
             <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
           </p>
+            {/* Kildene i en lukket boks nederst i høyre kolonne (eier 06.10.2026). */}
+            <Kildeboks
+              nokkel={`lop-${k}-kilder`}
+              kilder={[
+                { id: 'udir-grep', punkt: k },
+                ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
+                ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
+                // Et løp som bare står på utdanning.no, har utdanning.no som kilde (avgjørelse 070).
+                ...(Object.values(tb.uenig).some((m) => m.har.length === 1 && m.har[0] === 'utdanning') ? [{ id: 'utdanning-no', punkt: 'Løpene' }] : []),
+                po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
+              ]}
+            />
           </>
         }
-      />
-      <Kildeliste
-        kilder={[
-          { id: 'udir-grep', punkt: k },
-          ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
-          ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
-          // Et løp som bare står på utdanning.no, har utdanning.no som kilde (avgjørelse 070).
-          ...(Object.values(tb.uenig).some((m) => m.har.length === 1 && m.har[0] === 'utdanning') ? [{ id: 'utdanning-no', punkt: 'Løpene' }] : []),
-          po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
-        ]}
       />
     </article>
   );

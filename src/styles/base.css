@@ -8398,3 +8398,18 @@ a.knapp {
 .privatskolemerknad .brodtekst > :last-child {
   margin-bottom: 0;
 }
+
+/* ---------- Kildene til en side i en lukket boks (Kildeboks, eier 06.10.2026) ----------
+   Fagarket og tilbudene: kildene står som en lukket rad i en hvit boks nederst i høyre kolonne, som i kortene. */
+.kildeboks {
+  margin: var(--rom-4) 0;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  background: var(--farge-flate);
+}
+
+.kildeboks > .kortfot {
+  margin: 0;
+  border-top: 0;
+}

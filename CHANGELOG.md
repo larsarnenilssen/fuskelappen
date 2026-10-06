@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene», fagarket, tilbudene i Opplæringstilbud og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
+- **Kildene på fagarket og tilbudene** står i en lukket boks («Kilder»), nederst i høyre kolonne på stor skjerm og nederst på siden på mobil.
 - **Regelverk:** Gruppene på oversikten (lover, forskrifter, lokale forskrifter og avtaler) er lukket når du kommer til siden. Det du åpner, er fortsatt åpent når du går tilbake.
 - **Mer opplæring:** Kortet om privatskoler har forskriften til privatskolelova (§§ 4-2 og 3-4) som kilde.
 
