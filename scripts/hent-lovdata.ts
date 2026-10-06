@@ -57,7 +57,7 @@ import {
   notaterIDokument,
   oppdaterKommende,
 } from './lovdata/kommende.ts';
-import type { Fylke, Skole } from './lovdata/register.ts';
+import { type Fylke, KANDIDATREGLER, type Skole } from './lovdata/register.ts';
 import { createHash } from 'node:crypto';
 import { lesLovdataside } from './lovdata/side.ts';
 
@@ -319,7 +319,13 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1] && pro
   let lokale = forrigeLokale;
   let sider = new Map<string, string>();
   const lokalrapport: string[] = [];
-  const full = !forrigeLokale?.fullstendig || alle || Date.parse(idag) - Date.parse(forrigeLokale.fullstendig) >= FULLT_REGISTER_DAGER * 86_400_000;
+  // Hele registeret leses også når reglene for kandidatene er endret (KANDIDATREGLER), så forskrifter som ble utelatt
+  // før, kommer med.
+  const full =
+    !forrigeLokale?.fullstendig ||
+    alle ||
+    forrigeLokale.kandidatregler !== KANDIDATREGLER ||
+    Date.parse(idag) - Date.parse(forrigeLokale.fullstendig) >= FULLT_REGISTER_DAGER * 86_400_000;
   if (!fra && utvalg.lokale) {
     try {
       const svar = await oppdaterLokale(forrigeLokale, { full, fylker, skoler, titler: utvalg.lokale.titler as Titler, idag });

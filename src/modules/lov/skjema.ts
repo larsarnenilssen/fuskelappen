@@ -81,7 +81,13 @@ export const lovutvalgSkjema = z
      */
     lokale: z
       .object({
-        titler: z.object(Object.fromEntries(lokaltype.options.map((t) => [t, z.object({ nb: z.string().min(1), nn: z.string().min(1) }).strict()])) as Record<z.infer<typeof lokaltype>, z.ZodObject<{ nb: z.ZodString; nn: z.ZodString }>>).strict(),
+        titler: z
+          .object({
+            ...(Object.fromEntries(lokaltype.options.map((t) => [t, z.object({ nb: z.string().min(1), nn: z.string().min(1) }).strict()])) as Record<z.infer<typeof lokaltype>, z.ZodObject<{ nb: z.ZodString; nn: z.ZodString }>>),
+            /** Skolens egne regler om mobil og smartklokke, som står ved siden av skolens skoleregler (eier 06.10.2026). */
+            'mobilregler-skole': z.object({ nb: z.string().min(1), nn: z.string().min(1) }).strict().optional(),
+          })
+          .strict(),
       })
       .strict()
       .optional(),

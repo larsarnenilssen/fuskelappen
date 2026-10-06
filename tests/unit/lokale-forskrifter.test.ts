@@ -2,7 +2,7 @@
 // fylket og skolen, og id-ene i appen. Eksempelsidene er hentet fra Lovdata 05.10.2026.
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { klassifiserVurdering, lokaleSkjema, type Titler, velgForskrifter, vurder, type Vurdering } from '../../scripts/lovdata/lokale.ts';
+import { erMobilregler, klassifiserVurdering, lokaleSkjema, type Titler, velgForskrifter, vurder, type Vurdering } from '../../scripts/lovdata/lokale.ts';
 import { erKandidat, finnFylke, finnSkoler, klassifiser, lesMetadata, lesRegisterside, normaliserSkolenavn, skolearFor, slug } from '../../scripts/lovdata/register.ts';
 import { lesLovdataside } from '../../scripts/lovdata/side.ts';
 
@@ -48,6 +48,11 @@ describe('registeret hos Lovdata', () => {
     expect(erKandidat('Forskrift om skolerute for grunnskolen, Oslo kommune, Oslo')).toBe(false);
     expect(erKandidat('Forskrift om felles skoleregler for de videregående skolene i Nordland')).toBe(true);
     expect(erKandidat('Forskrift om skoleregler og skoledemokrati for elever, Rogaland')).toBe(true);
+    // Skolenes egne regler med andre titler (eier 06.10.2026).
+    expect(erKandidat('Forskrift om bruk av mobiltelefon og smartklokker, Slåtthaug vidaregåande skule, Vestland fylkeskommune')).toBe(true);
+    expect(erKandidat('Forskrift om ordens- og atferdsreglement for de videregående skolene i Viken fylkeskommune')).toBe(true);
+    expect(erKandidat('Forskrift om ordensreglement for Lia skole, Sandnes kommune, Rogaland')).toBe(false);
+    expect(erKandidat('Forskrift om bruk av mobiltelefon i grunnskolen, Bergen kommune, Vestland')).toBe(false);
     expect(erKandidat('Forskrift om skoleregler og skoledemokrati i Sola-skolen, Sola kommune, Rogaland')).toBe(false);
     expect(erKandidat('Forskrift om rabattordning for elever i videregående opplæring, Rogaland fylkeskommune')).toBe(true);
     expect(erKandidat('Forskrift om omdisponering av timar ved Sveio skule og Vikse skule, Sveio kommune, Vestland')).toBe(false);
@@ -150,6 +155,23 @@ describe('forskriftene i appen', () => {
     expect(ut.map((f) => f.korttittelNn)).toEqual(['Inntak og formidling i Oslo', 'Skulereglar ved Eid vidaregåande skule', 'Skulereglar i Vestland']);
   });
 
+  it('skolens regler om mobil står ved siden av skolens skoleregler, med egen id og tittel (eier 06.10.2026)', () => {
+    const ut = velgForskrifter(
+      [
+        v('a', 'Forskrift om skulereglar, Eid vidaregåande skule, Vestland fylkeskommune', UNDER_FYLKET, '2025-08-18'),
+        v('b', 'Forskrift om bruk av mobiltelefon og smartklokker, Eid vidaregåande skule, Vestland fylkeskommune', UNDER_FYLKET, '2025-08-18'),
+      ],
+      fylker,
+      skoler,
+      { ...titler, 'mobilregler-skole': { nb: 'Regler for mobil ved {sted}', nn: 'Reglar for mobil ved {sted}' } },
+      '2026-10-05',
+    );
+    expect(ut.map((f) => [f.id, f.korttittel])).toEqual([
+      ['eid-vidaregaande-skule-mobilregler', 'Regler for mobil ved Eid vidaregåande skule'],
+      ['eid-vidaregaande-skule-skoleregler', 'Skoleregler ved Eid vidaregåande skule'],
+    ]);
+  });
+
   it('den som gjelder i dag får id-en, en senere får «-fra-», og en eldre tas ikke med', () => {
     const t = 'Forskrift om skulereglar, Vestland fylkeskommune';
     const ut = velgForskrifter([v('a', t, SKOLEREGLER, '2024-08-01'), v('b', t, SKOLEREGLER, '2026-08-01'), v('c', t, SKOLEREGLER, '2027-08-01')], fylker, skoler, titler, '2026-10-05');
@@ -223,3 +245,13 @@ describe('registeret fra forrige gang', () => {
   });
 });
 
+describe('regler bare om mobil ved en skole (eier 06.10.2026)', () => {
+  it('står ved siden av skolens skoleregler, med egen tittel', () => {
+    expect(erMobilregler('Forskrift om bruk av mobiltelefon og smartklokker, Slåtthaug vidaregåande skule, Vestland fylkeskommune')).toBe(true);
+    expect(erMobilregler('Forskrift om lokale tilleggsreglar – mobilreglar for Askøy videregående skole, Vestland fylkeskommune')).toBe(true);
+    expect(erMobilregler('Forskrift om skulereglar, Eid vidaregåande skule, Vestland fylkeskommune')).toBe(false);
+    expect(
+      klassifiser({ tittel: 'Forskrift om bruk av mobiltelefon og smartklokker, Slåtthaug vidaregåande skule, Vestland fylkeskommune', hjemmel: ['lov/2023-06-09-30/§10-7', 'forskrift/2024-06-18-1455/§15'] }, ['1']),
+    ).toBe('skoleregler-skole');
+  });
+});

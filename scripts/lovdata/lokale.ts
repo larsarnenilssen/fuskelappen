@@ -15,6 +15,7 @@ import {
   finnSkoler,
   type Fylke,
   klassifiser,
+  KANDIDATREGLER,
   type Kunngjoring,
   kunngjoringstype,
   lesKunngjoringstidspunkter,
@@ -78,6 +79,8 @@ export const lokaleSkjema = z
   .object({
     /** Sist hele registeret ble lest (ÅÅÅÅ-MM-DD). */
     fullstendig: z.string().nullable(),
+    /** Versjonen av reglene for kandidatene da hele registeret sist ble lest (KANDIDATREGLER i register.ts). */
+    kandidatregler: z.number().int().optional(),
     /** Sist registeret eller Lovtidend ble lest. */
     lest: z.string().nullable(),
     /** Tidspunktet for den nyeste kunngjøringen i Lovtidend avdeling II som er lest («2026-10-02T15:00»). */
@@ -97,10 +100,14 @@ export const lokaleSkjema = z
 export type Lokale = z.infer<typeof lokaleSkjema>;
 
 /** Titlene i appen per type, fra content/lovverk.yaml (lokale.titler). {sted} er fylket eller skolen. */
-export type Titler = Record<Lokaltype, { nb: string; nn: string }>;
+export type Titler = Record<Lokaltype, { nb: string; nn: string }> & { 'mobilregler-skole'?: { nb: string; nn: string } };
 
-export function tittelFor(titler: Titler, type: Lokaltype, malform: 'nb' | 'nn', sted: string, skolear: string | null): string {
-  return titler[type][malform].replace('{sted}', sted).replace('{skolear}', skolear?.replace('-', '–') ?? '');
+/** Skolens egne regler bare om mobil og smartklokke, f.eks. «mobilreglar for Askøy …» (eier 06.10.2026). */
+export const erMobilregler = (tittel: string): boolean => /mobil|smartklokk/i.test(tittel);
+
+export function tittelFor(titler: Titler, type: Lokaltype | 'mobilregler-skole', malform: 'nb' | 'nn', sted: string, skolear: string | null): string {
+  const mal = type === 'mobilregler-skole' ? (titler['mobilregler-skole'] ?? titler['skoleregler-skole']) : titler[type];
+  return mal[malform].replace('{sted}', sted).replace('{skolear}', skolear?.replace('-', '–') ?? '');
 }
 
 /** Typen, fylket og skolene for en kandidat, med reglene i register.ts. */
@@ -122,7 +129,7 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
   const fylkesnavn = new Map(fylker.map((f) => [f.nummer, f.navn]));
   const skolenavn = new Map(skoler.map((s) => [s.id, s.navn]));
   const iAar = Number(idag.slice(0, 4)) - (Number(idag.slice(5, 7)) < 8 ? 1 : 0);
-  const grupper = new Map<string, { v: Vurdering; type: Lokaltype; fylke: string; skoler: string[]; sted: string; skolear: string | null }[]>();
+  const grupper = new Map<string, { v: Vurdering; type: Lokaltype; fylke: string; skoler: string[]; sted: string; skolear: string | null; mobil: boolean }[]>();
   for (const v of vurdert) {
     const k = klassifiserVurdering(v, fylker, skoler);
     if (!k.type || !k.fylke) continue;
@@ -133,16 +140,18 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
     const navn = k.skoler.map((s) => skolenavn.get(s)).filter((n): n is string => !!n);
     // Skolens egne regler tas bare med når skolen finnes. Fag- og timefordeling uten skole gjelder hele fylket.
     if (k.type === 'skoleregler-skole' && navn.length === 0) continue;
+    // Regler bare om mobil står ved siden av skolens skoleregler, ikke i stedet for dem (eier 06.10.2026).
+    const mobil = k.type === 'skoleregler-skole' && erMobilregler(v.tittel);
     const grunn =
       k.type === 'skoleregler-skole'
-        ? `${navn.map(slug).join('-og-')}-skoleregler`
+        ? `${navn.map(slug).join('-og-')}-${mobil ? 'mobilregler' : 'skoleregler'}`
         : k.type === 'fagfordeling'
           ? `${(navn.length > 0 ? navn : [fylke]).map(slug).join('-og-')}-fagfordeling-${v.refid.split('-').at(-1)}`
           : k.type === 'skolerute'
             ? `${slug(fylke)}-skolerute-${skolear}`
             : `${slug(fylke)}-${k.type}`;
     const sted = navn.length > 0 && (k.type === 'skoleregler-skole' || k.type === 'fagfordeling') ? navn.join(' og ') : fylke;
-    grupper.set(grunn, [...(grupper.get(grunn) ?? []), { v, type: k.type, fylke: k.fylke, skoler: k.skoler, sted, skolear }]);
+    grupper.set(grunn, [...(grupper.get(grunn) ?? []), { v, type: k.type, fylke: k.fylke, skoler: k.skoler, sted, skolear, mobil }]);
   }
   const ut: LokalForskrift[] = [];
   for (const [grunn, liste] of grupper) {
@@ -156,8 +165,8 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
         type: x.type,
         fylke: x.fylke,
         skoler: x.skoler,
-        korttittel: tittelFor(titler, x.type, 'nb', x.sted, x.skolear),
-        korttittelNn: tittelFor(titler, x.type, 'nn', x.sted, x.skolear),
+        korttittel: tittelFor(titler, x.mobil ? 'mobilregler-skole' : x.type, 'nb', x.sted, x.skolear),
+        korttittelNn: tittelFor(titler, x.mobil ? 'mobilregler-skole' : x.type, 'nn', x.sted, x.skolear),
         malform: x.v.malform,
         iKraft: x.v.iKraft,
         iKraftTil: x.v.iKraftTil,
@@ -418,6 +427,7 @@ export async function oppdaterLokale(
   return {
     lokale: {
       fullstendig: full ? idag : (forrige?.fullstendig ?? null),
+      kandidatregler: full ? KANDIDATREGLER : forrige?.kandidatregler,
       lest: idag,
       lovtidend,
       opphevinger: Object.fromEntries(opphevinger),

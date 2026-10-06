@@ -143,6 +143,7 @@ lokale:
     skoleregler: { nb: "Skoleregler i {sted}", nn: "Skulereglar i {sted}" }
     skoleregler-voksne: { nb: "Regler for voksne i {sted}", nn: "Reglar for vaksne i {sted}" }
     skoleregler-skole: { nb: "Skoleregler ved {sted}", nn: "Skulereglar ved {sted}" }
+    mobilregler-skole: { nb: "Regler for mobil ved {sted}", nn: "Reglar for mobil ved {sted}" }
     inntak: { nb: "Inntak og formidling i {sted}", nn: "Inntak og formidling i {sted}" }
     skolerute: { nb: "Skolerute {skolear} i {sted}", nn: "Skulerute {skolear} i {sted}" }
     skyss: { nb: "Skyss og rabattordning i {sted}", nn: "Skyss og rabattordning i {sted}" }
