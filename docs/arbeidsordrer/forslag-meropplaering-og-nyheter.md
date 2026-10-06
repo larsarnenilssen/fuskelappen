@@ -1,6 +1,12 @@
 # Forslag: mer opplæring og en nyhetsside
 
-Råd til eier 06.10.2026. Ingenting her er bygget. Eier avgjør plassering, innhold og rekkefølge før arbeidet starter.
+Råd til eier 06.10.2026. Ingenting her er bygget.
+
+**Eiers svar (06.10.2026):** Rekkefølgen er godkjent. Mer opplæring tas som fase 6, pakke 7, før fase 7 (`fase-6-pakke-7-mer-opplaering.md`). Nyhetene tas som fase 7b, etter fase 7 (`fase-7b-nyheter.md`).
+- Ingress avgjøres når designet vises.
+- Flest mulig kilder, inntil det blir uforsvarlig. Skraping av Lektorlaget er ugreit.
+- Nyhetsfilen kan publiseres daglig uten PR.
+- Om KS og KF Infoserie tar eier stilling etter rådet i `fase-7b-nyheter.md`.
 
 ## 1. Mer opplæring (meir opplæring)
 
