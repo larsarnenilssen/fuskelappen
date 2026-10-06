@@ -14,6 +14,7 @@ import { Sammenligning } from '../../../components/Sammenligning.tsx';
 import { Seksjon } from '../../../components/Seksjon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { Sti } from '../../../components/Sti.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { kalenderLenke } from '../../kalender/adresse.ts';
 import type { SideProps } from '../../typer.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
@@ -60,54 +61,58 @@ export default function MerOpplaering({ sporring }: SideProps) {
     });
 
   return (
-    <div class="side mo-bred">
+    <div class="side side-bred">
       <Brodsmuler ledd={[{ tekst: t('inntak.tittel'), href: '#/inntak' }]} />
       <Sidetopp tittel={t('inntak.merOpplaering.tittel')} favoritt="inntak:mer-opplaering" />
       <p class="ingress">{t('inntak.merOpplaering.innledning')}</p>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (
-        <div class="mo-to">
-          {/* På skrivebord: retten og gangen til venstre, de egne reglene og «Videre» til høyre (fra 64rem). */}
-          <div class="mo-to-hoved">
-            <Seksjon id="mo-rad" tittel={t('inntak.merOpplaering.hvem')} innhold={titler(rader)} apen tvingApen={harDel(rader)}>
-              {/* Regelverket og kildene til radene står nederst i boksen med tabellen (avgjørelse 071). */}
-              <Sammenligning
-                tittel={t('inntak.merOpplaering.hvem')}
-                venstre={t('inntak.merOpplaering.venstre')}
-                hoyre={t('inntak.merOpplaering.hoyre')}
-                rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
-                kilder={rader.flatMap((r) => r.kilder)}
-                nokkel="mo-rad"
-              />
-            </Seksjon>
-            {kortdel('hoved')[0]}
-            <Seksjon id="mo-sti" tittel={t('inntak.merOpplaering.gangen')} innhold={titler(stisteg)} apen tvingApen={harDel(stisteg)}>
-              <Sti steg={steg} etikett={t('inntak.merOpplaering.gangen')} />
-            </Seksjon>
-            {kortdel('hoved').slice(1)}
-          </div>
-          <div class="mo-to-side">
-            {kortdel('side')}
-            <section>
-              <h2 class="liten-overskrift">{t('inntak.merOpplaering.videre')}</h2>
-              <ul class="vu-videre">
-                <li>
-                  <Inngang rute={kalenderLenke('inntak')} ikon="kalender" tittel={t('inntak.merOpplaering.fristen')} tekst={t('inntak.merOpplaering.fristenTekst')} />
-                </li>
-                <li>
-                  <Inngang rute={veiviserRute('rett-inntak-soknad')} ikon="veiviser" tittel={t('inntak.merOpplaering.veiviser')} tekst={t('inntak.merOpplaering.veiviserTekst')} />
-                </li>
-                <li>
-                  <Inngang rute="/vurdering/eksamen?del=ek-utsatt-ny-sarskilt" ikon="vurdering" tittel={t('inntak.merOpplaering.eksamen')} tekst={t('inntak.merOpplaering.eksamenTekst')} />
-                </li>
-                <li>
-                  <Inngang rute="/opplaeringslop/laerlinger-og-kandidater?fane=bytte&fra=prove-ikke-bestatt" ikon="vei" tittel={t('inntak.merOpplaering.laerlinger')} tekst={t('inntak.merOpplaering.laerlingerTekst')} />
-                </li>
-              </ul>
-            </section>
-          </div>
-        </div>
+        // På skrivebord: retten og gangen til venstre, de egne reglene og «Videre» til høyre (fra 64rem).
+        <ToKolonner
+          hoved={
+            <>
+              <Seksjon id="mo-rad" tittel={t('inntak.merOpplaering.hvem')} innhold={titler(rader)} apen tvingApen={harDel(rader)}>
+                {/* Regelverket og kildene til radene står nederst i boksen med tabellen (avgjørelse 071). */}
+                <Sammenligning
+                  tittel={t('inntak.merOpplaering.hvem')}
+                  venstre={t('inntak.merOpplaering.venstre')}
+                  hoyre={t('inntak.merOpplaering.hoyre')}
+                  rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
+                  kilder={rader.flatMap((r) => r.kilder)}
+                  nokkel="mo-rad"
+                />
+              </Seksjon>
+              {kortdel('hoved')[0]}
+              <Seksjon id="mo-sti" tittel={t('inntak.merOpplaering.gangen')} innhold={titler(stisteg)} apen tvingApen={harDel(stisteg)}>
+                <Sti steg={steg} etikett={t('inntak.merOpplaering.gangen')} />
+              </Seksjon>
+              {kortdel('hoved').slice(1)}
+            </>
+          }
+          side={
+            <>
+              {kortdel('side')}
+              <section>
+                <h2 class="liten-overskrift">{t('inntak.merOpplaering.videre')}</h2>
+                <ul class="vu-videre">
+                  <li>
+                    <Inngang rute={kalenderLenke('inntak')} ikon="kalender" tittel={t('inntak.merOpplaering.fristen')} tekst={t('inntak.merOpplaering.fristenTekst')} />
+                  </li>
+                  <li>
+                    <Inngang rute={veiviserRute('rett-inntak-soknad')} ikon="veiviser" tittel={t('inntak.merOpplaering.veiviser')} tekst={t('inntak.merOpplaering.veiviserTekst')} />
+                  </li>
+                  <li>
+                    <Inngang rute="/vurdering/eksamen?del=ek-utsatt-ny-sarskilt" ikon="vurdering" tittel={t('inntak.merOpplaering.eksamen')} tekst={t('inntak.merOpplaering.eksamenTekst')} />
+                  </li>
+                  <li>
+                    <Inngang rute="/opplaeringslop/laerlinger-og-kandidater?fane=bytte&fra=prove-ikke-bestatt" ikon="vei" tittel={t('inntak.merOpplaering.laerlinger')} tekst={t('inntak.merOpplaering.laerlingerTekst')} />
+                  </li>
+                </ul>
+              </section>
+            </>
+          }
+        />
       )}
     </div>
   );

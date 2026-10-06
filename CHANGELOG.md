@@ -4,6 +4,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene» og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
+- **Regelverk:** Gruppene på oversikten (lover, forskrifter, lokale forskrifter og avtaler) er lukket når du kommer til siden. Det du åpner, er fortsatt åpent når du går tilbake.
+
 ## [0.39.0] – 2026-10-06
 
 ### Lagt til

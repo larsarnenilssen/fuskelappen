@@ -7,6 +7,7 @@ import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { fylketemaer } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import { dokumentnavn, dokumentRute, lastOversikt } from '../../lov/data.ts';
@@ -65,68 +66,80 @@ export default function Fylke({ parametre, sporring }: SideProps) {
   const mine = skolenes.filter(erMin);
   const andre = skolenes.filter((d) => !erMin(d));
   return (
-    <div class="side">
+    <div class="side side-bred">
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
-      {/* Lukket fra start, men åpen når brukeren kommer fra kalenderen for å lese mer hos fylket (eier 05.10.2026). */}
-      <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket={sporring.get('apne') !== 'fylket'}>
-        {temaer.length === 0 ? (
-          <p class="dempet">{t('fylker.ingenLenker')}</p>
-        ) : (
-          <ul class="liste">
-            {temaer.map((tema) => {
-              const l = fylke.lenker[tema];
-              return l ? <Lenkerad key={tema} href={l.url} ekstern tittel={t(`fylker.temaer.${tema}`)} under={nettsted(l.url)} /> : null;
-            })}
-          </ul>
-        )}
-      </Rubrikk>
-      <Rubrikk nokkel="fylke-lokale" tittel={t('fylker.lokale')} hoyre={fylkets.length + skolenes.length > 0 ? formaterTall(fylkets.length + skolenes.length) : null}>
-        {fylkets.length + skolenes.length === 0 ? (
-          <p class="dempet">{t('fylker.ingenLokale')}</p>
-        ) : (
+      {/* På skrivebord (fra 64rem): lenkene hos fylket og de lokale forskriftene til venstre, skolene, kontorene og
+          datoene til høyre (avgjørelse 074). */}
+      <ToKolonner
+        hoved={
           <>
-            {fylkets.length + mine.length > 0 && (
+          {/* Lukket fra start, men åpen når brukeren kommer fra kalenderen for å lese mer hos fylket (eier 05.10.2026). */}
+          <Rubrikk nokkel="fylke-lenker" tittel={t('fylker.hosFylket')} hoyre={formaterTall(temaer.length)} lukket={sporring.get('apne') !== 'fylket'}>
+            {temaer.length === 0 ? (
+              <p class="dempet">{t('fylker.ingenLenker')}</p>
+            ) : (
               <ul class="liste">
-                {fylkets.map((d) => (
-                  <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
-                ))}
-                {mine.map((d) => (
-                  <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} merke={t('lov.skolenDin')} />
-                ))}
+                {temaer.map((tema) => {
+                  const l = fylke.lenker[tema];
+                  return l ? <Lenkerad key={tema} href={l.url} ekstern tittel={t(`fylker.temaer.${tema}`)} under={nettsted(l.url)} /> : null;
+                })}
               </ul>
             )}
-            {andre.length > 0 && (
-              <details class="veiviser-kilder fylke-skolegruppe">
-                <summary class="forklaring-knapp">
-                  <Ikon navn="skole" />
-                  <span>{t('fylker.skolenesReglerAntall', { antall: formaterTall(andre.length) })}</span>
-                  <Ikon navn="ned" class="forklaring-pil" />
-                </summary>
-                <ul class="liste">
-                  {andre.map((d) => (
-                    <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
-                  ))}
-                </ul>
-              </details>
+          </Rubrikk>
+          <Rubrikk nokkel="fylke-lokale" tittel={t('fylker.lokale')} hoyre={fylkets.length + skolenes.length > 0 ? formaterTall(fylkets.length + skolenes.length) : null}>
+            {fylkets.length + skolenes.length === 0 ? (
+              <p class="dempet">{t('fylker.ingenLokale')}</p>
+            ) : (
+              <>
+                {fylkets.length + mine.length > 0 && (
+                  <ul class="liste">
+                    {fylkets.map((d) => (
+                      <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
+                    ))}
+                    {mine.map((d) => (
+                      <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} merke={t('lov.skolenDin')} />
+                    ))}
+                  </ul>
+                )}
+                {andre.length > 0 && (
+                  <details class="veiviser-kilder fylke-skolegruppe">
+                    <summary class="forklaring-knapp">
+                      <Ikon navn="skole" />
+                      <span>{t('fylker.skolenesReglerAntall', { antall: formaterTall(andre.length) })}</span>
+                      <Ikon navn="ned" class="forklaring-pil" />
+                    </summary>
+                    <ul class="liste">
+                      {andre.map((d) => (
+                        <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
+                      ))}
+                    </ul>
+                  </details>
+                )}
+              </>
             )}
+          </Rubrikk>
           </>
-        )}
-      </Rubrikk>
-      <Rubrikk nokkel="fylke-skoler" tittel={t('fylker.skolerOgKontor')}>
-        <ul class="liste">
-          <Lenkerad href={`#/opplaeringslop/skoler?fylke=${nr}`} ikon="skole" tittel={t('fylker.skoler', { fylke: kort })} under={t('fylker.skolerTekst')} />
-          <Lenkerad href={`#/opplaeringslop/opplaeringskontor?fylke=${nr}`} ikon="kontor" tittel={t('fylker.kontor', { fylke: kort })} under={t('fylker.kontorTekst')} />
-        </ul>
-      </Rubrikk>
-      <Rubrikk nokkel="fylke-datoer" tittel={t('fylker.datoer')}>
-        <ul class="liste">
-          <Lenkerad href={`#${kalenderLenke('inntak')}`} ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
-          <Lenkerad href={`#${kalenderLenke('eksamen')}`} ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
-          <Lenkerad href="#/vurdering/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
-        </ul>
-      </Rubrikk>
+        }
+        side={
+          <>
+          <Rubrikk nokkel="fylke-skoler" tittel={t('fylker.skolerOgKontor')}>
+            <ul class="liste">
+              <Lenkerad href={`#/opplaeringslop/skoler?fylke=${nr}`} ikon="skole" tittel={t('fylker.skoler', { fylke: kort })} under={t('fylker.skolerTekst')} />
+              <Lenkerad href={`#/opplaeringslop/opplaeringskontor?fylke=${nr}`} ikon="kontor" tittel={t('fylker.kontor', { fylke: kort })} under={t('fylker.kontorTekst')} />
+            </ul>
+          </Rubrikk>
+          <Rubrikk nokkel="fylke-datoer" tittel={t('fylker.datoer')}>
+            <ul class="liste">
+              <Lenkerad href={`#${kalenderLenke('inntak')}`} ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
+              <Lenkerad href={`#${kalenderLenke('eksamen')}`} ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
+              <Lenkerad href="#/vurdering/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
+            </ul>
+          </Rubrikk>
+          </>
+        }
+      />
       <p class="liten dempet">{t('fylker.sjekket')}</p>
     </div>
   );

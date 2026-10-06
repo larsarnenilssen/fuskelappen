@@ -129,6 +129,43 @@ kilder:
       Med vurderingsreglane. Utvalget av kapitler står i content/lovverk.yaml, og teksten hentes som for
       opplæringslova (avgjørelse 039).
 
+  - id: privatskolelova
+    navn: Lov om private skolar med rett til statstilskot (privatskolelova)
+    kortnavn: Privatskolelova
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2003-07-04-84
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    # Aktiveres når eier har godkjent utvalget av kapitler og loven står i content/lovverk.yaml
+    # (docs/arbeidsordrer/fase-7-forslag.md). Kildesjekken melder feil for en aktiv lovtekst som ikke står der.
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Eier 06.10.2026: tas først i fase 7, fordi skolemiljøet og skolereglene også gjelder privatskoler. Id, tittel og
+      målform (nynorsk) er lest hos Lovdata 06.10.2026 og kontrolleres av hentingen i Actions. Teksten hentes som for
+      opplæringslova (avgjørelse 039).
+
+  - id: privatskoleforskrifta
+    navn: Forskrift til privatskolelova (privatskoleforskrifta)
+    kortnavn: Privatskoleforskrifta
+    utgiver: Lovdata
+    url: https://lovdata.no/forskrift/2024-06-03-901
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    # Aktiveres sammen med privatskolelova (se over).
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      I kraft 1.8.2024 og erstatter forskrift 14. juli 2006 nr. 932 (§ 18-1). Id, tittel og målform (nynorsk) er lest
+      hos Lovdata 06.10.2026 og kontrolleres av hentingen i Actions. Teksten hentes som for opplæringslova
+      (avgjørelse 039).
+
   - id: forvaltningsloven
     navn: Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
     kortnavn: Forvaltningsloven

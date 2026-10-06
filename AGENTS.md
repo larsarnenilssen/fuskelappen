@@ -85,6 +85,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Native scroll og tilbakenavigasjon. Ingen egne sveipebevegelser for navigasjon.
 - Pinch-zoom slås ikke av globalt.
 - Forklaringer er skjult til brukeren åpner dem.
+- Nye sider med flere deler står i to kolonner på skrivebord (`ToKolonner`, fra 64rem): de første delene til venstre og resten til høyre, så rekkefølgen på mobil er den samme (eier 06.10.2026, avgjørelse 074).
 - Kort, bokser og rader som kan åpnes, husker for siden om de er åpne (`useHusketApen`), så tilbake fra en lenke (f.eks. en paragraf under «I regelverket») viser siden slik den var, der den var (eier 06.10.2026, avgjørelse 072).
 - Kort og bokser med kilder har regelverket og kildene som lukkede rader nederst (`Kortfot`): «I regelverket (n)» med paragrafene i Lov og forskrift, og «Kilder (n)». De har ikke egne kildelinjer. En knapp i kortet, f.eks. «Mer om …», står over radene. Lister med lenkekort (f.eks. overganger) har ingen kilder i kortene, men radene samlet under listen (eier 06.10.2026, avgjørelse 071). Unntak: utregningen i kalkulatorene og kilderadene i poengberegningen.
 - Alle sider har sti øverst (`Brodsmuler`), unntatt forsiden og sidene rett under den: oversiktene i modulene, kategoriene, søket, innstillingene og Om appen (eier 05.10.2026). Testes for rutene i `tests/e2e/hjelp.ts`, så nye sider kommer med av seg selv.

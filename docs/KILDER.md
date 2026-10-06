@@ -13,6 +13,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata | 1, 3 |
 | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7, 8 |
 | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7, 8 |
+| [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst (ikke aktiv) | 7 |
+| [Forskrift til privatskolelova (privatskoleforskrifta)](https://lovdata.no/forskrift/2024-06-03-901) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst (ikke aktiv) | 7 |
 | [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7 |
 | [Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)](https://lovdata.no/lov/2006-05-19-16) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3 |
 | [Lov om dokumentasjon og arkiv (arkivlova)](https://lovdata.no/lov/2025-06-20-96) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3 |
@@ -92,6 +94,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 - **arbeidsmiljoloven:** Kildejobben følger kapittel 10 om arbeidstid.
 - **opplaeringslova:** Utvalget av kapitler står i content/lovverk.yaml. Teksten hentes hver uke med npm run hent:lovdata til data/lovdata/ og vises uendret i Lov og forskrift (avgjørelse 039). Endrede paragrafer står til orientering i kontrollsaken.
 - **opplaeringsforskrifta:** Med vurderingsreglane. Utvalget av kapitler står i content/lovverk.yaml, og teksten hentes som for opplæringslova (avgjørelse 039).
+- **privatskolelova:** Eier 06.10.2026: tas først i fase 7, fordi skolemiljøet og skolereglene også gjelder privatskoler. Id, tittel og målform (nynorsk) er lest hos Lovdata 06.10.2026 og kontrolleres av hentingen i Actions. Teksten hentes som for opplæringslova (avgjørelse 039).
+- **privatskoleforskrifta:** I kraft 1.8.2024 og erstatter forskrift 14. juli 2006 nr. 932 (§ 18-1). Id, tittel og målform (nynorsk) er lest hos Lovdata 06.10.2026 og kontrolleres av hentingen i Actions. Teksten hentes som for opplæringslova (avgjørelse 039).
 - **forvaltningsloven:** Kapittel II–VI: habilitet, alminnelige regler, saksforberedelse ved enkeltvedtak, vedtaket og klage. Valgt ut fra Udirs regelverkssider (eier 02.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
 - **offentleglova:** Kapittel 1–4: formål og verkeområde, hovudreglane om innsyn og journalføring, unntaka frå innsynsretten og saksbehandling og klage (eier 05.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
 - **arkivlova:** Den nye arkivlova, i kraft 1.1.2026 (den gamle fra 1992 er opphevet). Kapittel 1, 2 og 4: verkeområde, arkivplikta, dokumentasjonsplan, bevaring og kassasjon, og tilsyn (eier 05.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).

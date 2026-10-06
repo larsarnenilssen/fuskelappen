@@ -2,7 +2,6 @@
 // fargen til delen (skole, kontrakt i bedrift, praksis, prøven), fargeforklaringen, faktaene om veien, regelverket og
 // kildene som lukkede rader nederst, og overgangene. Stegene står som en loddrett sti når kolonnen er smal, og som en rad med like brede steg når
 // det er plass (eier 06.10.2026, runde 2).
-import { useEffect, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
 import { Kortfot, KortfotRader } from '../../../components/Kortfot.tsx';
@@ -12,22 +11,6 @@ import { harKontrakt, type Veiinnhold } from '../fagbrev/data.ts';
 import { faktaoppstilling } from './faktaoppstilling.ts';
 
 const DELER: readonly Veidel[] = ['skole', 'bedrift', 'praksis', 'prove'];
-
-/** Fra denne bredden står sidene om lærlinger og kandidater i to kolonner (eier 06.10.2026, svar 6). Samme verdi i base.css. */
-const TO_KOLONNER = '(min-width: 64rem)';
-
-/** Om skjermen er bred nok til to kolonner. Følger med når vinduet endrer størrelse. */
-export function useBred(): boolean {
-  const [bred, settBred] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia(TO_KOLONNER).matches);
-  useEffect(() => {
-    if (!window.matchMedia) return;
-    const m = window.matchMedia(TO_KOLONNER);
-    const endret = () => settBred(m.matches);
-    m.addEventListener('change', endret);
-    return () => m.removeEventListener('change', endret);
-  }, []);
-  return bred;
-}
 
 /** Stegene i veien. Hvert steg lenker til tilbudet, begrepet eller prøven, og viser delen og tiden under navnet. */
 export function Stegrad({ vei }: { vei: Veielement }) {

@@ -28,10 +28,13 @@ interface Rad {
 /** Rekkefølgen på de lokale forskriftene: fylkets regler først, så skolens, inntak og skolerute. */
 const LOKAL_REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute', 'skyss', 'fagfordeling'];
 
-/** En gruppe dokumenter i en rubrikk som kan legges sammen, med antallet til høyre. Åpen fra start. */
+/**
+ * En gruppe dokumenter i en rubrikk som kan legges sammen, med antallet til høyre. Lukket fra start, på mobil og
+ * skrivebord, så oversikten viser gruppene (eier 06.10.2026). Det som er åpnet, huskes for siden.
+ */
 function Gruppe({ nokkel, tittel, rader, children }: { nokkel: string; tittel: string; rader: readonly Rad[]; children?: preact.ComponentChildren }) {
   return (
-    <Rubrikk nokkel={`lov-gruppe-${nokkel}`} tittel={tittel} hoyre={rader.length > 0 ? formaterTall(rader.length) : null}>
+    <Rubrikk nokkel={`lov-gruppe-${nokkel}`} tittel={tittel} lukket hoyre={rader.length > 0 ? formaterTall(rader.length) : null}>
       {rader.length > 0 && (
         <ul class="liste">
           {rader.map((r) => (
