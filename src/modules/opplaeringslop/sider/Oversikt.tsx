@@ -17,6 +17,7 @@ import { sokTilbud } from '../sok.ts';
 import { Lasting, Tilbudslenke, useSkoler, useSkolevisning, useTilbudsdata } from './felles.tsx';
 import { tilbudPerProgram } from './Lop.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
+import { VEIER } from '../fagbrev/mockup.ts';
 
 const MAKS_TREFF = 40;
 
@@ -164,22 +165,36 @@ export default function Oversikt() {
                 <h2 class="liten-overskrift" id="lop-del-program">
                   {t('opplaeringslop.oversikt.program')}
                 </h2>
-                {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
-                <a class="frist-inngang" href={`#${UNDERSIDER.lop.rute}`}>
-                  <span class="frist-inngang-tittel">
-                    <Ikon navn={UNDERSIDER.lop.ikon} />
-                    {t('opplaeringslop.lop.tittel')}
-                  </span>
-                  <span class="frist-inngang-neste">
-                    <span class="frist-inngang-tid">
-                      {visning.skole
-                        ? t('opplaeringslop.inngang.programSkole', { antall: formaterTall(tilbudPerProgram(data.indeks, visning.skole).size), skole: visning.skole.navn })
-                        : t('opplaeringslop.inngang.program', { antall: formaterTall(data.tilbud.struktur.length) })}
+                <div class="lop-innganger">
+                  {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
+                  <a class="frist-inngang" href={`#${UNDERSIDER.lop.rute}`}>
+                    <span class="frist-inngang-tittel">
+                      <Ikon navn={UNDERSIDER.lop.ikon} />
+                      {t('opplaeringslop.lop.tittel')}
                     </span>
-                    <span>{t('opplaeringslop.inngang.programTekst')}</span>
-                  </span>
-                  <Ikon navn="hoyre" class="frist-inngang-pil" />
-                </a>
+                    <span class="frist-inngang-neste">
+                      <span class="frist-inngang-tid">
+                        {visning.skole
+                          ? t('opplaeringslop.inngang.programSkole', { antall: formaterTall(tilbudPerProgram(data.indeks, visning.skole).size), skole: visning.skole.navn })
+                          : t('opplaeringslop.inngang.program', { antall: formaterTall(data.tilbud.struktur.length) })}
+                      </span>
+                      <span>{t('opplaeringslop.inngang.programTekst')}</span>
+                    </span>
+                    <Ikon navn="hoyre" class="frist-inngang-pil" />
+                  </a>
+                  {/* Veiene til fag- og svennebrev (fase 6, pakke 6, eier 04.10.2026). */}
+                  <a class="frist-inngang" href={`#${UNDERSIDER.fagbrev.rute}`}>
+                    <span class="frist-inngang-tittel">
+                      <Ikon navn={UNDERSIDER.fagbrev.ikon} />
+                      {t('opplaeringslop.fagbrev.tittel')}
+                    </span>
+                    <span class="frist-inngang-neste">
+                      <span class="frist-inngang-tid">{t('opplaeringslop.fagbrev.inngang', { antall: formaterTall(VEIER.length) })}</span>
+                      <span>{t('opplaeringslop.fagbrev.inngangTekst')}</span>
+                    </span>
+                    <Ikon navn="hoyre" class="frist-inngang-pil" />
+                  </a>
+                </div>
               </section>
               <Innganger />
             </>

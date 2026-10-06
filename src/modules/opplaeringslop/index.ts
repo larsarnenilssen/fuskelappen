@@ -6,6 +6,7 @@ import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
 import type { Favorittbar, Modulmanifest } from '../typer.ts';
 import { kontorfavoritt, kontorrute, skolefavoritt, skolerute, UNDERSIDER } from './favoritter.ts';
 import { kortKode, tilbudRute } from './data.ts';
+import { VEIER } from './fagbrev/mockup.ts';
 import { lastSkoler } from '../../data/utdanning.ts';
 import { lastOpplaeringskontor } from '../../data/udir.ts';
 import { begge } from '../../core/i18n/tekst.ts';
@@ -23,6 +24,8 @@ export const manifest: Modulmanifest = {
     // Registrene står før /:program, så adressene ikke leses som et utdanningsprogram (avgjørelse 053).
     { sti: '/opplaeringslop/lop', tittel: 'opplaeringslop.lop.tittel', side: () => import('./sider/Lop.tsx') },
     { sti: '/opplaeringslop/skoler', tittel: 'opplaeringslop.skoler.tittel', side: () => import('./sider/Skoler.tsx') },
+    { sti: '/opplaeringslop/fag-og-svennebrev', tittel: 'opplaeringslop.fagbrev.tittel', side: () => import('./sider/Fagbrev.tsx') },
+    { sti: '/opplaeringslop/fag-og-svennebrev/:vei', tittel: 'opplaeringslop.fagbrev.tittel', side: () => import('./sider/Vei.tsx') },
     { sti: '/opplaeringslop/opplaeringskontor', tittel: 'opplaeringslop.kontor.tittel', side: () => import('./sider/Kontor.tsx') },
     { sti: '/opplaeringslop/:program', tittel: 'opplaeringslop.tittel', side: () => import('./sider/Program.tsx') },
     { sti: '/opplaeringslop/:program/:tilbud', tittel: 'opplaeringslop.tittel', side: () => import('./sider/Tilbud.tsx') },
@@ -93,6 +96,8 @@ export const manifest: Modulmanifest = {
     const sider: Favorittbar[] = [
       oversiktsfavoritt(manifest),
       { id: 'opplaeringslop:lop', type: 'side', tittel: begge('opplaeringslop.lop.tittel'), rute: UNDERSIDER.lop.rute },
+      { id: 'opplaeringslop:fag-og-svennebrev', type: 'side', tittel: begge('opplaeringslop.fagbrev.tittel'), rute: UNDERSIDER.fagbrev.rute },
+      ...VEIER.map((v): Favorittbar => ({ id: `opplaeringslop:vei:${v.id}`, type: 'side', tittel: { nb: v.tittel, nn: v.tittel }, rute: `${UNDERSIDER.fagbrev.rute}/${v.id}` })),
       { id: 'opplaeringslop:skoler', type: 'side', tittel: begge('opplaeringslop.skoler.tittel'), rute: UNDERSIDER.skoler.rute },
       { id: 'opplaeringslop:opplaeringskontor', type: 'side', tittel: begge('opplaeringslop.kontor.tittel'), rute: UNDERSIDER.kontor.rute },
     ];

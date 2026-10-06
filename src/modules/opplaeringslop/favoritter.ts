@@ -10,6 +10,7 @@ export const kontorrute = (orgnr: string) => `/opplaeringslop/opplaeringskontor?
 /** Lenkene med ikon på oversiktssiden. Oversikten og favorittene henter ikonet herfra (`undersider`). */
 export const UNDERSIDER = {
   lop: { rute: '/opplaeringslop/lop', ikon: 'veiviser' },
+  fagbrev: { rute: '/opplaeringslop/fag-og-svennebrev', ikon: 'vei' },
   skoler: { rute: '/opplaeringslop/skoler', ikon: 'skole' },
   kontor: { rute: '/opplaeringslop/opplaeringskontor', ikon: 'kontor' },
 } as const satisfies Record<string, Underside>;

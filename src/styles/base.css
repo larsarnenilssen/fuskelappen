@@ -7807,3 +7807,214 @@ a.knapp {
   min-height: var(--trykkflate);
   margin: var(--rom-3) 0;
 }
+
+/* ---------- Fag- og svennebrev i Opplæringstilbud (fase 6, pakke 6, MOCKUP) ----------
+   Tre faner, veiene som lukkede kort med stegene som knapper i fargen til delen (skole, kontrakt i bedrift, praksis,
+   prøven), og overgangene som kort med vilkår og kilde. */
+.fb-faner {
+  display: flex;
+  margin: var(--rom-4) 0 var(--rom-3);
+  border-bottom: 2px solid var(--farge-kant);
+}
+
+.fb-fane {
+  flex: 1 1 0;
+  min-height: var(--trykkflate);
+  margin: 0 0 -2px;
+  padding: var(--rom-2) var(--rom-1);
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: none;
+  color: var(--farge-tekst-dempet);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fb-fane[aria-selected='true'] {
+  border-bottom-color: var(--farge-merke);
+  color: var(--farge-tekst);
+}
+
+.fb-panel > .bryter {
+  margin-top: 0;
+}
+
+.fb-steg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--rom-2) var(--rom-4);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+.fb-steg > li {
+  position: relative;
+  display: flex;
+}
+
+/* Pilen mellom stegene. */
+.fb-steg > li + li::before {
+  content: '→';
+  position: absolute;
+  left: calc(-1 * var(--rom-4));
+  top: 50%;
+  width: var(--rom-4);
+  transform: translateY(-50%);
+  color: var(--farge-tekst-dempet);
+  text-align: center;
+}
+
+.fb-steg-knapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: var(--trykkflate);
+  padding: var(--rom-1) var(--rom-3);
+  border: var(--strek) solid var(--fb-farge);
+  border-left-width: 6px;
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--fb-farge) 10%, var(--farge-flate));
+  color: var(--farge-tekst);
+  text-decoration: none;
+}
+
+.fb-steg-tekst {
+  font-size: var(--str-s);
+  font-weight: 650;
+}
+
+.fb-steg-tid {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+[data-del='skole'] {
+  --fb-farge: var(--vei-skole);
+}
+
+[data-del='bedrift'] {
+  --fb-farge: var(--vei-bedrift);
+}
+
+[data-del='praksis'] {
+  --fb-farge: var(--vei-praksis);
+}
+
+[data-del='prove'] {
+  --fb-farge: var(--vei-prove);
+}
+
+.fb-forklaring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.fb-forklaring li::before {
+  content: '';
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: var(--rom-1);
+  border-radius: 2px;
+  background: var(--fb-farge);
+  vertical-align: -0.1em;
+}
+
+.fb-fakta {
+  margin: 0 0 var(--rom-2);
+}
+
+.fb-fakta > div {
+  padding: var(--rom-2) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.fb-fakta dt {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fb-fakta dd {
+  margin: 0;
+}
+
+.fb-kilde {
+  display: flex;
+  gap: var(--rom-1);
+  align-items: baseline;
+  margin: var(--rom-1) 0 var(--rom-2);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.fb-velg-to {
+  display: grid;
+  gap: 0 var(--rom-3);
+}
+
+@media (min-width: 30rem) {
+  .fb-velg-to {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.fb-velg-to select {
+  width: 100%;
+}
+
+.fb-fellesfag,
+.fb-overganger {
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+.fb-fellesfag li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+  padding: var(--rom-2) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.fb-fellesfag-krav {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.fb-fellesfag li[data-krav='nei'] .fb-fellesfag-krav {
+  color: var(--farge-ok);
+  font-weight: 600;
+}
+
+.fb-overganger > li {
+  margin-bottom: var(--rom-2);
+}
+
+.fb-overganger .fb-kilde {
+  padding-left: var(--rom-3);
+}
+
+.fb-side .fag-ifaget-i {
+  border-top: 0;
+}
+
+.fb-prove {
+  margin-bottom: var(--rom-4);
+}
