@@ -25,17 +25,11 @@ Kontrollen av hver kolonne i rundskrivet fant disse. De påvirker ikke tilbudene
 
 - Vg3 Yrkessjåførkurs for voksne (TPYSL3) – voksenopplæring
 
-### Programområder som ikke nås fra inngangen
-
-Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst under programmet.
-
-- Studiespesialisering: Realfag vg2 tyske skole (STREA2TY), Realfag vg3 tyske skole (STREA3TY)
-
 ### Løpene i Grep, VIGO og utdanning.no
 
-649 koblinger mellom programområdene i Grep står i minst én av kildene. 577 har ingen kilde som er uenig. Hver kilde teller bare der den beskriver løpet (se avgjørelse 052). Uenigheter som er nye siden forrige uke, kommer i kontrollsaken.
+648 koblinger mellom programområdene i Grep står i minst én av kildene, og alle vises i appen. 578 har ingen kilde som er uenig. Hver kilde teller bare der den beskriver løpet (se avgjørelse 052 og 070). Uenigheter som er nye siden forrige uke, kommer i kontrollsaken.
 
-Står i Grep, ikke i VIGO, utdanning.no (61):
+Står bare i Grep, ikke i VIGO og utdanning.no (61):
 
 - Klima, energi og miljøteknikk (BAKEM2) → Rørleggerfaget (BARLF3) · vist i appen, merket
 - Håndverk, design og produktutvikling (DTDTH1) → Treteknikk (BATRT2) · vist i appen, merket
@@ -99,28 +93,40 @@ Står i Grep, ikke i VIGO, utdanning.no (61):
 - Teknologi- og industrifag (TPTIP1) → Trearbeid (DTDTR2) · vist i appen, merket
 - Teknologi- og industrifag (TPTIP1) → Yrkessjåførkurs for voksne (TPYSL3) · vist i appen, merket
 
-Står i Grep, VIGO, ikke i utdanning.no (7):
+Står i Grep og VIGO, ikke i utdanning.no (6):
 
 - Medieproduksjon (IMMED2) → Profileringsdesignfaget (FDPFD3) · vist i appen, merket
-- Medieproduksjon (IMMED2) → Grafisk produksjonsteknikkfaget (IMGPT3) · vist i appen, merket
 - Kjøretøy (TPKJT2) → Anleggsmaskinmekanikerfaget (TPAMM3) · vist i appen, merket
 - Kjøretøy (TPKJT2) → Landbruksmaskinmekanikerfaget (TPLMM3) · vist i appen, merket
 - Kjøretøy (TPKJT2) → Sykkelmekanikerfaget (TPSYM3) · vist i appen, merket
 - Kjøretøy (TPKJT2) → Truck- og liftmekanikerfaget (TPTLM3) · vist i appen, merket
 - Industriteknologi (TPPIN2) → Grafisk produksjonsteknikkfaget (IMGPT3) · vist i appen, merket
 
-Står i VIGO, ikke i utdanning.no (2):
+Står bare i VIGO, ikke i utdanning.no (2):
 
-- Salg, service og reiseliv (SRSSR2) → Sikkerhetsfaget (SRSIK3) · ikke vist i appen
-- Salg, service og reiseliv (SRSSR2) → Service- og administrasjonsfaget (SRSOA3) · ikke vist i appen
+- Salg, service og reiseliv (SRSSR2) → Sikkerhetsfaget (SRSIK3) · vist i appen, merket
+- Salg, service og reiseliv (SRSSR2) → Service- og administrasjonsfaget (SRSOA3) · vist i appen, merket
 
-Står i Grep, utdanning.no, ikke i VIGO (1):
+Står i Grep og utdanning.no, ikke i VIGO (1):
 
 - Bygg- og anleggsteknikk (BABAT1) → Gipsmakerfaget (DTGIP3) · vist i appen, merket
 
-Står i utdanning.no, ikke i Grep, VIGO (1):
+Står bare i VIGO, uten at en annen kilde er uenig (5):
 
-- Medieproduksjon (IMMED2) → Grafisk produksjonsteknikk (TPGPT3) · ikke vist i appen
+- Sikkerhetsfaget (SRSIK3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Service- og administrasjonsfaget (SRSOA3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Realfag vg2 tyske skole (STREA2TY) → Realfag vg3 tyske skole (STREA3TY) · vist i appen, merket
+- Studiespesialisering vg1 tyske skole (STUSP1TY) → Realfag vg2 tyske skole (STREA2TY) · vist i appen, merket
+- Sykkelmekanikerfaget (TPSYM3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+
+Står bare i utdanning.no, uten at en annen kilde er uenig (6):
+
+- Garverfaget (DTGAF3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Glassliperfaget (DTGSF3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Droneoperatørfaget (ELDRF3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Fiskeri- og akvakulturredskapsfaget (NAFIR3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Landbruksfaget (NALBF3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
+- Bilfaget, demontering av kjøretøy (TPBDK3) → Fag for studiekompetanse (PBPBY4) · vist i appen, merket
 
 ### Avvik mellom rundskrivet og Grep
 
@@ -689,10 +695,10 @@ Rudolf Steiner (RS), Montessori (MO) og tysk skole (TY) har egne programområder
 - Vg1 Studiespesialiserende, Steinerskolen, realfag 1. år (STREA1RS) · tabell 4 · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg2 Realfag vg2 Montessori (STREA2MO) · tabell 4 · bygger på STUSP1MO · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg2 Studiespesialiserende, Steinerskolen, realfag 2. år (STREA2RS) · tabell 4 · bygger på STREA1RS · ⚠ Grep kobler ingen fellesfag til programområdet.
-- Vg2 Realfag vg2 tyske skole (STREA2TY) · tabell 4 · ⚠ Grep kobler ingen fellesfag til programområdet.
+- Vg2 Realfag vg2 tyske skole (STREA2TY) · tabell 4 · bygger på STUSP1TY · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg3 Realfag vg3 Montessori (STREA3MO) · tabell 4 · bygger på STREA2MO · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg3 Studiespesialiserende, Steinerskolen, realfag 3. år (STREA3RS) · tabell 4 · bygger på STREA2RS · ⚠ Grep kobler ingen fellesfag til programområdet.
-- Vg3 Realfag vg3 tyske skole (STREA3TY) · tabell 4 · ⚠ Grep kobler ingen fellesfag til programområdet.
+- Vg3 Realfag vg3 tyske skole (STREA3TY) · tabell 4 · bygger på STREA2TY · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg1 Studiespesialiserende, Steinerskolen, humanistfag 1. år (STSSA1RS) · tabell 4 · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg2 Språk, samfunnsfag og økonomi vg2 Montessori (STSSA2MO) · tabell 4 · bygger på STUSP1MO · ⚠ Grep kobler ingen fellesfag til programområdet.
 - Vg2 Studiespesialiserende, Steinerskolen, humanistfag 2. år (STSSA2RS) · tabell 4 · bygger på STSSA1RS · ⚠ Grep kobler ingen fellesfag til programområdet.
@@ -2562,10 +2568,10 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Salg, service og reiseliv (SRSSR2):
 
-- Reiselivsfaget (SRRLV3): RLV3004 Reiselivsfaget, RLV3103 Reiselivsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srrlv3----/p5)
-- Sikkerhetsfaget (SRSIK3): SIK3004 Sikkerhetsfaget, SIK3103 Sikkerhetsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsik3----/p5)
-- Salgsfaget (SRSLG3): 6 koder, f.eks. SLG3004 Salgsfaget, SLG3103 Salgsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p5)
-- Service- og administrasjonsfaget (SRSOA3): SOA3001 Service- og administrasjonsfaget, SOA3103 Service- og administrasjonsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsoa3----/p5)
+- Reiselivsfaget (SRRLV3): RLV3004 Reiselivsfaget, RLV3103 Reiselivsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srrlv3----/p5)
+- Sikkerhetsfaget (SRSIK3): SIK3004 Sikkerhetsfaget, SIK3103 Sikkerhetsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsik3----/p5)
+- Salgsfaget (SRSLG3): 6 koder, f.eks. SLG3004 Salgsfaget, SLG3103 Salgsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p5)
+- Service- og administrasjonsfaget (SRSOA3): SOA3001 Service- og administrasjonsfaget, SOA3103 Service- og administrasjonsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsoa3----/p5)
 
 ### Teknologi- og industrifag (TP)
 
@@ -2963,7 +2969,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 #### Vg3 Fag for studiekompetanse (PBPBY4) · 645 timer ✓
 
-Tabell 27 (Vg4 påbygging) i Udir-1-2026. Bygger på 191 programområder: BA 28, DT 41, EL 22, FD 6, HS 11, IM 5, NA 10, RM 11, SR 4, TP 53.
+Tabell 27 (Vg4 påbygging) i Udir-1-2026. Bygger på 197 programområder: BA 28, DT 43, EL 23, FD 6, HS 11, IM 5, NA 12, RM 11, SR 4, TP 54.
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby4----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby4----/p2)
 

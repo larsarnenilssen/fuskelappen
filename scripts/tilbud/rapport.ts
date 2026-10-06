@@ -46,7 +46,10 @@ const celle = (t: string) => t.replace(/\|/g, '\\|');
  */
 export function lopssamsvar(indeks: Fagindeks, kilder: Lopskilder, tilbud: ReadonlyMap<string, Tilbud>) {
   return alleKoblinger(kilder).map((l) => {
-    const vist = indeks.programomrader[l.til]?.bygger.includes(l.fra) ?? false;
+    // Vist i appen: løpet står på tilbudet, også når det er funnet ut fra programmet (byggerPaa) eller hentet fra VIGO
+    // eller utdanning.no (medLopFraKildene).
+    const til = tilbud.get(l.til);
+    const vist = (til?.fra.includes(l.fra) ?? false) || (til?.kryssFra.includes(l.fra) ?? false);
     const opphenting = tilbud.get(l.fra)?.opphenting.til.includes(l.til) ?? false;
     return { ...l, status: opphenting ? ('opphenting' as const) : vist ? ('merket' as const) : ('ikkeVist' as const) };
   });
@@ -248,27 +251,34 @@ export function lagTilbudsrapport(
     for (const s of utenfor) ut.push(`- ${s.navn.nb}: ${s.utenfor.map(ponavn).join(', ')}`);
     ut.push('');
   }
-  // Løpene i Grep, VIGO og utdanning.no sammenlignet (avgjørelse 051 og 052). Appen viser Grep, med VIGO for
-  // påbygging der Grep ikke sier noe, og merker løp kildene ikke er enige om (kildesamsvar.ts).
+  // Løpene i Grep, VIGO og utdanning.no sammenlignet (avgjørelse 051, 052 og 070). Appen viser alle løp som minst én
+  // kilde har, og merker løp kildene ikke er enige om (kildesamsvar.ts).
   if (kilder) {
     const lop = lopssamsvar(indeks, kilder, tilbud);
     const uenige = lop.filter((l) => l.mangler.length > 0);
+    const ikkeVist = lop.filter((l) => l.status === 'ikkeVist').length;
     const KILDE: Record<Lopkilde, string> = { grep: 'Grep', vigo: 'VIGO', utdanning: 'utdanning.no' };
-    const kildeliste = (k: readonly Lopkilde[]) => k.map((x) => KILDE[x]).join(', ');
+    const kildeliste = (k: readonly Lopkilde[]) => k.map((x) => KILDE[x]).join(', ').replace(/, ([^,]+)$/, ' og $1');
     const STATUS = { merket: 'vist i appen, merket', opphenting: 'opphenting, ikke merket (avgjørelse 051)', ikkeVist: 'ikke vist i appen' };
     ut.push(
       '### Løpene i Grep, VIGO og utdanning.no',
       '',
-      `${lop.length} koblinger mellom programområdene i Grep står i minst én av kildene. ${lop.length - uenige.length} har ingen kilde som er uenig. Hver kilde teller bare der den beskriver løpet (se avgjørelse 052). Uenigheter som er nye siden forrige uke, kommer i kontrollsaken.`,
+      `${lop.length} koblinger mellom programområdene i Grep står i minst én av kildene${ikkeVist === 0 ? ', og alle vises i appen' : `. ${ikkeVist} vises ikke i appen`}. ${lop.length - uenige.length} har ingen kilde som er uenig. Hver kilde teller bare der den beskriver løpet (se avgjørelse 052 og 070). Uenigheter som er nye siden forrige uke, kommer i kontrollsaken.`,
       '',
     );
     const grupper = new Map<string, typeof uenige>();
     for (const l of uenige) {
-      const n = `Står i ${kildeliste(l.har)}, ikke i ${kildeliste(l.mangler)}`;
+      const n = l.har.length === 1 ? `Står bare i ${kildeliste(l.har)}, ikke i ${kildeliste(l.mangler)}` : `Står i ${kildeliste(l.har)}, ikke i ${kildeliste(l.mangler)}`;
       grupper.set(n, [...(grupper.get(n) ?? []), l]);
     }
     for (const [n, liste] of [...grupper].sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0], 'nb'))) {
       ut.push(`${n} (${liste.length}):`, '', ...liste.map((l) => `- ${ponavn(l.fra)} → ${ponavn(l.til)} · ${STATUS[l.status]}`), '');
+    }
+    // Løp bare én kilde har, uten at en annen kilde er uenig. De merkes også i appen (avgjørelse 070).
+    const alene = lop.filter((l) => l.mangler.length === 0 && l.har.length === 1);
+    for (const kilde of ['grep', 'vigo', 'utdanning'] as const) {
+      const liste = alene.filter((l) => l.har[0] === kilde);
+      if (liste.length > 0) ut.push(`Står bare i ${KILDE[kilde]}, uten at en annen kilde er uenig (${liste.length}):`, '', ...liste.map((l) => `- ${ponavn(l.fra)} → ${ponavn(l.til)} · ${STATUS[l.status]}`), '');
     }
   }
   if (avvik.size > 0) {

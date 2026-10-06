@@ -199,9 +199,14 @@ test.describe('opplæringsløp', () => {
     await expect(page.getByRole('link', { name: /VIGO Kodeverksbase/ }).first()).toBeVisible();
   });
 
-  test('løp kildene ikke er enige om, er merket, og tilbudet lenker til utdanning.no (avgjørelse 052)', async ({ page }) => {
+  test('løp kildene ikke er enige om, er merket, og tilbudet lenker til utdanning.no (avgjørelse 052 og 070)', async ({ page }) => {
+    // Løp som bare én kilde har, er med og merket med kilden. Er flere enige, står kilden som mangler løpet.
+    await page.goto('./#/opplaeringslop/SR/SRSSR2');
+    await expect(page.locator('[data-rubrikk$="-videre"]').getByRole('link', { name: /Sikkerhetsfaget.*Står bare i VIGO/ })).toBeVisible();
+    await page.goto('./#/opplaeringslop/IM/IMMED2');
+    await expect(page.locator('[data-rubrikk$="-kryss"]').getByRole('link', { name: /Profileringsdesignfaget.*Står ikke i utdanning\.no/ })).toBeVisible();
     await page.goto('./#/opplaeringslop/BA/BAKEM2');
-    await expect(page.locator('[data-rubrikk$="-videre"]').getByRole('link', { name: /Rørleggerfaget.*Står ikke i VIGO og utdanning\.no/ })).toBeVisible();
+    await expect(page.locator('[data-rubrikk$="-videre"]').getByRole('link', { name: /Rørleggerfaget.*Står bare i Grep/ })).toBeVisible();
     await page.getByRole('button', { name: 'Kildene er ikke enige om alle løpene' }).click();
     await expect(page.getByText('Merknaden sier bare at kildene er uenige')).toBeVisible();
     await expect(page.getByRole('link', { name: 'Tilbudet på utdanning.no' })).toHaveAttribute('href', 'https://utdanning.no/utdanning/vgs/BAKEM2----');

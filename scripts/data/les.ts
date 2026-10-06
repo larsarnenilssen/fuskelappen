@@ -7,7 +7,7 @@ import { medGrunnlagFraVigo } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
-import type { Lopskilder } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
+import { type Lopskilder, medLopFraKildene } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
 import type { Skoler, Utdanningslop, Yrker } from '../../src/modules/fag/utdanning/skjema.ts';
 import type { Skolenummer } from '../../src/modules/fag/vigo/skjema.ts';
 import type { Ndla } from '../../src/modules/fag/ndla/skjema.ts';
@@ -39,10 +39,11 @@ export function lesFagrelasjoner(rot: string): Fagrelasjoner | null {
 
 /**
  * Fagindeksen til tilbudsstrukturen: Grep, med grunnlaget for inntak fra VIGO der Grep ikke sier hva påbygging
- * bygger på (Vg4 påbygging etter lærefag, medGrunnlagFraVigo).
+ * bygger på (Vg4 påbygging etter lærefag, medGrunnlagFraVigo), og alle andre løp som VIGO eller utdanning.no har og
+ * Grep ikke har (medLopFraKildene, avgjørelse 070).
  */
 export function lesTilbudsindeks(rot: string): Fagindeks {
-  return medGrunnlagFraVigo(lesFagindeks(rot), lesFagrelasjoner(rot)?.grunnlag ?? {});
+  return medLopFraKildene(medGrunnlagFraVigo(lesFagindeks(rot), lesFagrelasjoner(rot)?.grunnlag ?? {}), lesLopskilder(rot));
 }
 
 /** Løpene fra utdanning.no (avgjørelse 052), eller null hvis filen mangler. */
