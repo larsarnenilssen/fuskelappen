@@ -178,8 +178,6 @@ select {
  * Innholdet i toppfeltet flyttes litt ned, så appnavnet ikke havner i den.
  */
 @media (display-mode: standalone) and (pointer: coarse) {
-  /* På :root, så det som står fast under toppfeltet (f.eks. sidekolonnen på forsiden) kan regne den med. */
-  :root,
   .topplinje {
     --topplinje-luft: var(--topplinje-luft-installert);
   }
@@ -3953,6 +3951,13 @@ p.fagkort-tittel {
     font-weight: 700;
     line-height: 1.15rem;
     text-align: center;
+  }
+}
+
+/* Toppfeltet er høyere i installert app på mobil, og sidekolonnen står fast under det. */
+@media (display-mode: standalone) and (pointer: coarse) {
+  .forside-sidekolonne {
+    --topplinje-luft: var(--topplinje-luft-installert);
   }
 }
 
