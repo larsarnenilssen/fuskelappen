@@ -43,6 +43,11 @@ export const lovutvalgSkjema = z
              * der ukenummeret går opp i dette tallet (13 gir uke 13, 26, 39 og 52). Standard er 13 (eier 02.10.2026).
              */
             intervall_uker: z.number().int().min(1).max(52).optional(),
+            /**
+             * Gjelder privatskoler (privatskolelova og forskriften, avgjørelse 075). Står i en egen gruppe på oversikten,
+             * og først blant lovene og forskriftene når brukeren har valgt privatskole i innstillingene.
+             */
+            privatskole: z.boolean().optional(),
             /** Hvorfor dokumentet og utvalget er med (til dokumentasjonen, vises ikke i appen). */
             merknad: z.string().optional(),
           })

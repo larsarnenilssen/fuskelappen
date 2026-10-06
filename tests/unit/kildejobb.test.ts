@@ -79,6 +79,16 @@ describe('skoleregisteret', () => {
     expect(skoler.map((s) => s.navn)).toEqual(['B vgs', 'Å vgs']);
   });
 
+  it('merker private skoler (ErPrivatskole), og bare dem (avgjørelse 075)', () => {
+    const skoler = filtrerSkoler([{ ...enhet('1', 'Privat vgs', '46'), ErPrivatskole: true }, { ...enhet('2', 'Offentleg vgs', '46'), ErPrivatskole: false }], new Set(['46']));
+    expect(skoler).toEqual([
+      { id: '2', navn: 'Offentleg vgs', fylke: '46', kommune: '4601' },
+      { id: '1', navn: 'Privat vgs', fylke: '46', kommune: '4601', privat: true },
+    ]);
+    const a = { id: '1', navn: 'A', fylke: '46', kommune: '4601' };
+    expect(skoleendringer([a], [{ ...a, privat: true }]).endret.map((s) => s.id)).toEqual(['1']);
+  });
+
   it('lager endringsrapport', () => {
     const a = { id: '1', navn: 'A', fylke: '46', kommune: '4601' };
     const b = { id: '2', navn: 'B', fylke: '46', kommune: '4601' };

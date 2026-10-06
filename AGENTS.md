@@ -68,6 +68,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - **Endre aldri fasittester** uten eiers godkjenning. Feiler en fasittest, er det koden eller regelsettet som skal undersøkes.
 - Bruk gjeldende regelverk: opplæringslova og forskriften som gjelder fra 1.8.2024. Eldre materiale er bare bakgrunn.
 - Lov- og forskriftstekst kan siteres. Partenes tolkninger, andres veiledninger og Visma-materiell kopieres ikke. Skriv med egne ord og lenk til kilden.
+- Appen er skrevet for fylkeskommunale skoler. Der privatskolelova eller forskriften til den gir egne regler, får kortet eller steget `privatskole` (tekst og kilder), som vises når brukeren har valgt «Privatskole». Paragrafer i opplæringsforskrifta med en parallell i privatskoleforskrifta føres i `content/privatskole/paralleller.yaml` (avgjørelse 075).
 - Innhold og verdier har riktig `gyldighet` (nasjonal, fylke eller skole). Fylkes- og skoleinnhold vises bare når brukeren har valgt fylke eller skole.
 - Data under NLOD (Udir, Lovdata) krediteres under «Om».
 - Oppdater `godkjent_fingeravtrykk` i kilderegisteret bare etter beskjed fra eier.
@@ -85,6 +86,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Native scroll og tilbakenavigasjon. Ingen egne sveipebevegelser for navigasjon.
 - Pinch-zoom slås ikke av globalt.
 - Forklaringer er skjult til brukeren åpner dem.
+- Nye sider med flere deler står i to kolonner på skrivebord (`ToKolonner`, fra 64rem): de første delene til venstre og resten til høyre, så rekkefølgen på mobil er den samme. Kildene til siden står i en lukket boks nederst i høyre kolonne (`Kildeboks`), ikke rett på bakgrunnen (eier 06.10.2026, avgjørelse 074).
 - Kort, bokser og rader som kan åpnes, husker for siden om de er åpne (`useHusketApen`), så tilbake fra en lenke (f.eks. en paragraf under «I regelverket») viser siden slik den var, der den var (eier 06.10.2026, avgjørelse 072).
 - Kort og bokser med kilder har regelverket og kildene som lukkede rader nederst (`Kortfot`): «I regelverket (n)» med paragrafene i Lov og forskrift, og «Kilder (n)». De har ikke egne kildelinjer. En knapp i kortet, f.eks. «Mer om …», står over radene. Lister med lenkekort (f.eks. overganger) har ingen kilder i kortene, men radene samlet under listen (eier 06.10.2026, avgjørelse 071). Unntak: utregningen i kalkulatorene og kilderadene i poengberegningen.
 - Alle sider har sti øverst (`Brodsmuler`), unntatt forsiden og sidene rett under den: oversiktene i modulene, kategoriene, søket, innstillingene og Om appen (eier 05.10.2026). Testes for rutene i `tests/e2e/hjelp.ts`, så nye sider kommer med av seg selv.

@@ -3,12 +3,13 @@
 // i begrepene, står kildene som før. Oppgir ikke kortet paragrafene, hentes de fra kildene, så «I regelverket» står
 // med der kildene er paragrafer i Lov og forskrift (eier 06.10.2026, avgjørelse 071).
 import type { ComponentChildren } from 'preact';
-import { useTekst } from '../app/tilstand.ts';
+import { usePrivatskole, useTekst } from '../app/tilstand.ts';
+import { PRIVATSKOLEDOKUMENTER, parallellTil, privatskolekilder } from '../core/privatskole.ts';
 import type { KildeRef } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
 import { Kildeliste } from './Kildelenke.tsx';
 import { useHusketApen, nokkelFra } from './husket.ts';
-import { paragraferFra } from './kilderader.ts';
+import { erHentet, paragraferFra } from './kilderader.ts';
 import { Paragraflenker } from './Paragraflenker.tsx';
 
 interface Props {
@@ -21,9 +22,21 @@ interface Props {
 }
 
 /** Radene uten ramme, til kort som har sin egen bunn (veiviserne og fristene). */
-export function KortfotRader({ paragrafer: oppgitt, kilder, children, nokkel }: Props) {
+export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, children, nokkel }: Props) {
   const { t } = useTekst();
-  const paragrafer = oppgitt?.length ? oppgitt : paragraferFra(kilder);
+  // For privatskoler står paragrafene i opplæringsforskrifta som har en parallell, i privatskoleforskrifta
+  // (avgjørelse 075).
+  const privat = usePrivatskole();
+  const kilder = privat ? privatskolekilder(kilderFelles) : kilderFelles;
+  const oppgitt = privat ? oppgittFelles?.map((p) => {
+    const ny = parallellTil(p);
+    return ny && erHentet(ny.split('/')[0] ?? '') ? ny : p;
+  }) : oppgittFelles;
+  const fraKilder = paragraferFra(kilder);
+  // Paragrafene i privatskolelova og forskriften fra merknaden for privatskoler kommer med også når kortet oppgir
+  // paragrafene selv.
+  const privatParagrafer = privat ? fraKilder.filter((p) => PRIVATSKOLEDOKUMENTER.has(p.split('/')[0] ?? '') && !oppgitt?.includes(p)) : [];
+  const paragrafer = oppgitt?.length ? [...oppgitt, ...privatParagrafer] : fraKilder;
   // Radene huskes som åpne på siden, så de er åpne igjen når brukeren går tilbake fra en paragraf eller en kilde.
   const grunn = nokkel ?? nokkelFra([...paragrafer, ...kilder.map((k) => `${k.id}|${k.punkt ?? ''}`)].join(','));
   const [regelverkApen, settRegelverkApen] = useHusketApen(`kortfot:${grunn}:regelverk`);

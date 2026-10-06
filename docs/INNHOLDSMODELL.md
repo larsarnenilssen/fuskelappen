@@ -21,6 +21,7 @@ En fil kan inneholde ett element eller en liste.
 | `relatert` | nei | id-er til annet innhold (må finnes) |
 | `lenkeord` | nei | bare begreper: ordene som lenker til begrepet i brødtekst, når tittelen ikke er ordet i teksten. `{ nb: [], nn: [] }` slår lenkingen av (avgjørelse 050) |
 | `kodeliste` | nei | kodeliste fra VIGO Kodeverksbase som vises under teksten, med søk: `fagmerknader` eller `vitnemalsmerknader` (avgjørelse 026) |
+| `privatskole` | nei | det som er ulikt for privatskoler: `{ tekst, kilder }`, med kildene i privatskolelova eller privatskoleforskrifta. Vises i kortet eller steget når brukeren har valgt «Privatskole» (avgjørelse 075) |
 
 Frister (`type: frist`) har i tillegg `modul`, `malgruppe` (`skoleleder`, `laerer`) og enten `dato` eller `regel` (`{ type: arlig, dag, maned }`).
 

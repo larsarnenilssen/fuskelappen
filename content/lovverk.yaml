@@ -29,6 +29,26 @@ dokumenter:
       Utvalg godkjent av eier 02.10.2026. Ikke med: 1–3 (grunnskolen), 21 (kommunens økonomiske ansvar),
       24 (iverksetjing) og vedleggene.
 
+  - id: privatskolelova
+    kilde: privatskolelova
+    privatskole: true
+    kapitler: ['1', '2', '3', '4', '5', '5A', '6A', '7']
+    merknad: >-
+      Eier 06.10.2026 (docs/arbeidsordrer/fase-7-forslag.md): det som gjelder videregående opplæring, elevene,
+      inntak, vurdering, skolemiljø, skoleregler, personalet, styret, tilsyn og de yrkesrettede skolene i kap. 6A.
+      Ikke med: 6 (tilskudd og skolepenger) og 8 (sluttføresegner). Vises for alle, og står først når brukeren har
+      valgt privatskole (avgjørelse 075).
+
+  - id: privatskoleforskrifta
+    kilde: privatskoleforskrifta
+    privatskole: true
+    kapitler: ['3-11']
+    merknad: >-
+      Eier 06.10.2026: inntak og innholdet i videregående opplæring, læreplanene, vurdering, klage, samarbeid med
+      foreldrene, tilleggskompetanse, politiattest og særskilt tilrettelagt opplæring. Ikke med: 1–2 (grunnskolen
+      og leksehjelp) og 12–18 (forsikring, rapportering, personopplysninger, delbetaling, søknadsfrist,
+      lovbruddsgebyr og sluttregler).
+
   - id: forvaltningsloven
     kilde: forvaltningsloven
     kapitler: ['II', 'III', 'IV', 'V', 'VI']

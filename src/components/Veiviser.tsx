@@ -5,7 +5,7 @@
 import type { ComponentChildren, Ref } from 'preact';
 import { useEffect, useId, useMemo, useRef, useState } from 'preact/hooks';
 import { beholdRullingVedNesteNavigasjon, lenke } from '../app/ruter.ts';
-import { type T, useTekst } from '../app/tilstand.ts';
+import { type T, usePrivatskole, useTekst } from '../app/tilstand.ts';
 import { fylkesnavn } from '../app/Stedmerknad.tsx';
 import { app } from '../config/app.ts';
 import type { Malform } from '../core/i18n/tekst.ts';
@@ -18,6 +18,7 @@ import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 import { Kortfot, KortfotRader } from './Kortfot.tsx';
 import { Laereplanboks } from './Laereplanboks.tsx';
+import { medPrivatskolekilder, Privatskolemerknad } from './Privatskolemerknad.tsx';
 import { delParagrafRef } from './Paragraflenker.tsx';
 
 interface Props {
@@ -394,7 +395,8 @@ function Stegdel({
   const innholdId = useId();
   const [aapen, settAapen] = useState(() => !lukkbar || storSkjerm());
   const egne = tillegg.filter((s) => s.id === node.id);
-  const kilder = [...node.kilder, ...egne.flatMap((s) => s.kilder)];
+  const privat = usePrivatskole();
+  const kilder = [...medPrivatskolekilder(node.kilder, node, privat), ...egne.flatMap((s) => s.kilder)];
   const sted = egne[0] && egne[0].gyldighet.niva !== 'nasjonal' ? (fylkesnavn(egne[0].gyldighet.fylke) ?? '') : '';
   const veksle = lukkbar && (
     <button type="button" class="forklaring-knapp veiviser-veksle" aria-expanded={aapen} aria-controls={innholdId} onClick={() => settAapen(!aapen)}>
@@ -436,12 +438,19 @@ function Stegdel({
               {t('komponenter.veiviser.harLokalt', { sted })}
             </p>
           )}
+          {privat && node.privatskole && (
+            <p class="veiviser-kortfakta-lokalt">
+              <Ikon navn="skole" class="ikon-liten" />
+              {t('komponenter.privatskole.harMerknad')}
+            </p>
+          )}
           <div class="veiviser-mer">{veksle}</div>
         </>
       )}
       <div id={innholdId} hidden={!aapen}>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
         {node.fylke && <HosFylket tema={node.fylke.tema} tekst={node.fylke.tekst} />}
+        <Privatskolemerknad element={node} />
         {(node.ansvar || node.dokumentasjon || node.frist) && (
           <dl class="veiviser-fakta">
             {node.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={node.ansvar[malform]} />}

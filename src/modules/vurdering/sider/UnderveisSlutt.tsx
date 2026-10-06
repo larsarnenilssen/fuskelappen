@@ -9,6 +9,7 @@ import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Innholdskort } from '../../../components/Innholdskort.tsx';
 import { Sammenligning } from '../../../components/Sammenligning.tsx';
+import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
 import { lastFagindeks, lastFagroller, lastLaereplan } from '../../../data/grep.ts';
 import { type Fagklasse, fagklasser } from '../../fag/klasser.ts';
 import { htmlSpraak, sokFag, tomtFilter } from '../../fag/oppslag.ts';
@@ -187,53 +188,66 @@ export default function UnderveisSlutt({ sporring }: SideProps) {
   const rader = innhold ? medPrefiks(innhold, 'us-rad-') : [];
   const prinsipper = innhold ? medPrefiks(innhold, 'us-prinsipp-') : [];
   const skolearet = innhold?.find((e) => e.id === 'us-skolearet');
+  const bred = useBred();
+  /** Fagsøket med læreplanen. Står til høyre på skrivebord og under skoleåret på mobil. */
+  const iFaget = (
+    <section>
+      <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.iLaereplanen')}</h2>
+      {/* Ny nøkkel når faget i adressen endres via en lenke, så valget følger adressen. */}
+      <IFaget key={sporring.get('fag') ?? ''} startkode={sporring.get('fag') ?? ''} />
+    </section>
+  );
   return (
-    <div class="side">
+    <div class="side side-bred">
       <Brodsmuler ledd={[{ tekst: t('vurdering.tittel'), href: '#/vurdering' }]} />
       <div class="tittelrad">
         <h1 tabIndex={-1}>{t('vurdering.underveisSlutt.tittel')}</h1>
         <FavorittKnapp id="vurdering:underveis-og-slutt" navn={t('vurdering.underveisSlutt.tittel')} />
       </div>
       <p class="ingress">{t('vurdering.underveisSlutt.innledning')}</p>
-      <section>
-        <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.skolearet')}</h2>
-        <Skolearet />
-        {skolearet && <Innholdskort element={skolearet} />}
-      </section>
-      {/* Fagsøket står rett under skoleåret, så det ikke blir oversett, og et fag fra fagarket vises høyt (eier 04.10.2026). */}
-      <section>
-        <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.iLaereplanen')}</h2>
-        {/* Ny nøkkel når faget i adressen endres via en lenke, så valget følger adressen. */}
-        <IFaget key={sporring.get('fag') ?? ''} startkode={sporring.get('fag') ?? ''} />
-      </section>
-      {innhold === null ? (
-        <p class="dempet">{t('app.lasterInn')}</p>
-      ) : (
-        <>
-          <section>
-            <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.forskjellen')}</h2>
-            <Sammenligning
-              tittel={t('vurdering.underveisSlutt.forskjellen')}
-              venstre={t('vurdering.underveisSlutt.venstre')}
-              hoyre={t('vurdering.underveisSlutt.hoyre')}
-              rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
-              kilder={rader.flatMap((r) => r.kilder)}
-              nokkel="us-rad"
-            />
-          </section>
-          <section>
-            <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.prinsipper')}</h2>
-            {/* Prinsippene i den rekkefølgen de kommer i skoleåret, som en sti. */}
-            <ol class="vu-sti">
-              {prinsipper.map((p) => (
-                <li key={p.id}>
-                  <Innholdskort element={p} />
-                </li>
-              ))}
-            </ol>
-          </section>
-        </>
-      )}
+      {/* På skrivebord (fra 64rem): skoleåret, forskjellen og prinsippene til venstre, og læreplanen for et fag til høyre,
+          så fagsøket står høyt og ikke blir oversett (eier 04.10.2026). På mobil står fagsøket rett under skoleåret. */}
+      <ToKolonner
+        hoved={
+          <>
+            <section>
+              <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.skolearet')}</h2>
+              <Skolearet />
+              {skolearet && <Innholdskort element={skolearet} />}
+            </section>
+            {!bred && iFaget}
+            {innhold === null ? (
+              <p class="dempet">{t('app.lasterInn')}</p>
+            ) : (
+              <>
+                <section>
+                  <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.forskjellen')}</h2>
+                  <Sammenligning
+                    tittel={t('vurdering.underveisSlutt.forskjellen')}
+                    venstre={t('vurdering.underveisSlutt.venstre')}
+                    hoyre={t('vurdering.underveisSlutt.hoyre')}
+                    rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
+                    kilder={rader.flatMap((r) => r.kilder)}
+                    nokkel="us-rad"
+                  />
+                </section>
+                <section>
+                  <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.prinsipper')}</h2>
+                  {/* Prinsippene i den rekkefølgen de kommer i skoleåret, som en sti. */}
+                  <ol class="vu-sti">
+                    {prinsipper.map((p) => (
+                      <li key={p.id}>
+                        <Innholdskort element={p} />
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+              </>
+            )}
+          </>
+        }
+        side={bred && iFaget}
+      />
     </div>
   );
 }

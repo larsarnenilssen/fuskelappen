@@ -48,7 +48,7 @@ function yamlFiler(mappe: string): string[] {
 }
 
 const regelfiler = yamlFiler(join(rot, 'rules')).map((fil) => ({ fil, r: lesFil(rot, fil) as Regelsett }));
-const spesielle = new Set(['kilder.yaml', 'fylker.yaml', 'synonymer.yaml', 'praksis.yaml', 'lovverk.yaml']);
+const spesielle = new Set(['kilder.yaml', 'fylker.yaml', 'synonymer.yaml', 'praksis.yaml', 'lovverk.yaml', 'paralleller.yaml']);
 const innholdsfiler = yamlFiler(join(rot, 'content'))
   .filter((f) => !spesielle.has(f.split('/').pop() ?? ''))
   .map((fil) => ({ fil, ider: (lesFil(rot, fil, false) as Innholdselement[]).map((e) => e.id) }));

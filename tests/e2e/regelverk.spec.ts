@@ -8,14 +8,16 @@ test.describe('regelverk', () => {
     await page.goto('./');
     await page.getByRole('link', { name: /^Regelverk/ }).click();
     await expect(page.locator('main h1')).toHaveText('Regelverk');
+    // Gruppene er lukket fra start, på mobil og skrivebord (eier 06.10.2026).
     for (const navn of [/^Lover \d+$/, /^Forskrifter \d+$/, /^Lokale forskrifter$/, /^Avtaler \d+$/]) {
-      await expect(page.getByRole('button', { name: navn })).toHaveAttribute('aria-expanded', 'true');
+      await expect(page.getByRole('button', { name: navn })).toHaveAttribute('aria-expanded', 'false');
     }
+    await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeHidden();
+    await page.getByRole('button', { name: /^Lover \d+$/ }).click();
     await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeVisible();
     // Uten valgt fylke står det hvordan lokale forskrifter vises.
+    await page.getByRole('button', { name: /^Lokale forskrifter$/ }).click();
     await expect(page.getByText('Velg fylke for å se lokale forskrifter')).toBeVisible();
-    await page.getByRole('button', { name: /^Lover \d+$/ }).click();
-    await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeHidden();
   });
 
   test('en adresse til en paragraf åpner kapitlet og paragrafen, og henvisninger går til appen', async ({ page }) => {
@@ -46,7 +48,10 @@ test.describe('regelverk', () => {
   test('lokale forskrifter vises når fylket er valgt, og skolens regler når skolen er valgt', async ({ page }) => {
     await settLagret(page, { fylke: '46', skole: { id: '974557584', navn: 'Fyllingsdalen videregående skole' } });
     await page.goto('./#/lov');
-    await expect(page.getByRole('button', { name: /^Lokale forskrifter i Vestland \d+$/ })).toBeVisible();
+    // Gruppene er lukket fra start (eier 06.10.2026).
+    const gruppe = page.getByRole('button', { name: /^Lokale forskrifter i Vestland \d+$/ });
+    await expect(gruppe).toHaveAttribute('aria-expanded', 'false');
+    await gruppe.click();
     await expect(page.getByRole('link', { name: /Fyllingsdalen videregående skole.*Skolen din/ })).toBeVisible();
     // Navnet på de lokale forskriftene følger brukerens målform, og datoen forskriften tok til å gjelde står under.
     const regler = page.getByRole('link', { name: /^Skoleregler i Vestland/ });

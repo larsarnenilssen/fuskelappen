@@ -15,7 +15,8 @@ import type { Flerspraak, Veimal } from '../../../core/innhold/skjema.ts';
 import type { SideProps } from '../../typer.ts';
 import { FAGBREV_RUTE, fraAdresse, maal, useVeier, veiAdresse, type Veielement, type Veiinnhold, veiRute } from '../fagbrev/data.ts';
 import { Brodsmuler } from './felles.tsx';
-import { Fakta, faktakilder, Fargeforklaring, Kildefot, Overgangskort, Stegrad, useBred } from './fagbrevDeler.tsx';
+import { Fakta, faktakilder, Fargeforklaring, Kildefot, Overgangskort, Stegrad } from './fagbrevDeler.tsx';
+import { useBred } from '../../../components/ToKolonner.tsx';
 import { Lukketkort } from '../../../components/Lukketkort.tsx';
 
 type Fane = 'veiene' | 'sammenlign' | 'bytte';

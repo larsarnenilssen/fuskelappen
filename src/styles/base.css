@@ -8174,7 +8174,7 @@ a.knapp {
 }
 
 /* ---------- To kolonner på skrivebord (eier 06.10.2026, svar 6) ----------
-   Fra 64rem (samme som TO_KOLONNER i fagbrevDeler.tsx) er siden bredere. «Veiene»: listen til venstre og den valgte
+   Fra 64rem (samme som TO_KOLONNER i ToKolonner.tsx) er siden bredere. «Veiene»: listen til venstre og den valgte
    veien til høyre, som står fast når skjermen er høy nok. «Bytte vei»: utgangspunktene til venstre. Siden for hver vei:
    stegene og «Om veien» til venstre, «Kommer fra» og «Veien videre» til høyre. Én kolonne under 64rem. */
 @media (min-width: 64rem) {
@@ -8281,23 +8281,24 @@ a.knapp {
   margin: 0;
 }
 
-/* ---------- Mer opplæring: to kolonner på skrivebord (fase 6, pakke 7) ----------
-   Fra 64rem står retten, gangen og fag- eller svenneprøven til venstre, og vurderingen, voksne, individuelt
-   tilrettelagt opplæring og «Videre» til høyre, som på sidene for lærlinger og kandidater. Én kolonne under 64rem. */
+/* ---------- To kolonner på skrivebord (ToKolonner, eier 06.10.2026, avgjørelse 074) ----------
+   Hovedregelen for nye sider med flere deler, som Mer opplæring, Underveis- og sluttvurdering, Eksamen og prøvene.
+   Fra 64rem (samme som TO_KOLONNER i ToKolonner.tsx) er siden opptil 72rem bred, med hoveddelen til venstre (3/5)
+   og sidedelen til høyre (2/5). Én kolonne under 64rem, hoveddelen først. */
 @media (min-width: 64rem) {
-  main:has(.mo-bred) {
+  main:has(.side-bred) {
     max-width: 72rem;
   }
 
-  .mo-to {
+  .to-kolonner {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     gap: var(--rom-6);
     align-items: start;
   }
 
-  .mo-to-hoved > section:first-child > h2,
-  .mo-to-side > section:first-child > h2 {
+  .to-kolonner-hoved > section:first-child > h2,
+  .to-kolonner-side > section:first-child > h2 {
     margin-top: 0;
   }
 }
@@ -8372,4 +8373,43 @@ a.knapp {
 
 .seksjon > [id] {
   padding-bottom: var(--rom-2);
+}
+
+/* ---------- Privatskoler (fase 7, avgjørelse 075) ----------
+   Det som er ulikt for privatskoler, i en boks med stiplet kant som de lokale tilleggene i veiviserne. Vises bare når
+   brukeren har valgt «Privatskole». */
+.privatskolemerknad {
+  margin: var(--rom-3) 0 var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) dashed var(--farge-merke);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+}
+
+.privatskolemerknad-topp {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.privatskolemerknad .brodtekst > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Kildene til en side i en lukket boks (Kildeboks, eier 06.10.2026) ----------
+   Fagarket og tilbudene: kildene står som en lukket rad i en hvit boks nederst i høyre kolonne, som i kortene. */
+.kildeboks {
+  margin: var(--rom-4) 0;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  background: var(--farge-flate);
+}
+
+.kildeboks > .kortfot {
+  margin: 0;
+  border-top: 0;
 }

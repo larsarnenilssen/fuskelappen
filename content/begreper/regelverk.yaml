@@ -100,3 +100,31 @@
     - "Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?"
   stikkord: [skoleregler, skulereglar, ordensreglement, orden og oppførsel]
   relatert: [lokal-forskrift, bortvising, aktivitetsplikt]
+
+# Privatskole (fase 7, eier 06.10.2026, avgjørelse 075). Lovteksten står i Lov og forskrift når kildesjekken har hentet
+# den, og kildene lenker dit.
+- id: privatskole
+  type: begrep
+  tittel: { nb: Privatskole, nn: Privatskule }
+  lenkeord: { nb: ["privatskole"], nn: ["privatskule", "privatskole"] }
+  tekst:
+    nb: >-
+      En privat grunnskole eller videregående skole som er godkjent etter privatskolelova, med rett til statstilskudd.
+      Privatskoler følger mange av de samme reglene som offentlige skoler, men har egne regler blant annet om inntak,
+      skoleregler og bortvisning. Vurderingsreglene står i forskriften til privatskolelova. Appen er skrevet for
+      fylkeskommunale skoler. Velg «Privatskole» i innstillingene for å se reglene for privatskoler der de er ulike.
+    nn: >-
+      Ein privat grunnskule eller vidaregåande skule som er godkjend etter privatskolelova, med rett til statstilskot.
+      Privatskular følgjer mange av dei same reglane som offentlege skular, men har eigne reglar mellom anna om inntak,
+      skulereglar og bortvising. Vurderingsreglane står i forskrifta til privatskolelova. Appen er skriven for
+      fylkeskommunale skular. Vel «Privatskule» i innstillingane for å sjå reglane for privatskular der dei er ulike.
+  kilder:
+    - { id: privatskolelova, punkt: "§ 1-2 Verkeområdet", url: "https://lovdata.no/lov/2003-07-04-84/§1-2" }
+    - { id: privatskolelova, punkt: "§ 2-1 Godkjenning av skolar", url: "https://lovdata.no/lov/2003-07-04-84/§2-1" }
+    - { id: privatskolelova, punkt: "§ 2-3a Vurdering og dokumentasjon", url: "https://lovdata.no/lov/2003-07-04-84/§2-3a" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at privatskoler har egne regler om inntak, skoleregler og bortvisning (pl. §§ 3-1, 5A-7 og 3-10), og er det de viktigste forskjellene å nevne?"
+    - "Skal begrepet også nevne skoler godkjent etter kapittel 6A (yrkesrettet opplæring)?"
+  stikkord: [privatskole, privatskolelova, friskole, privat skole, statstilskudd]
+  relatert: [enkeltvedtak]

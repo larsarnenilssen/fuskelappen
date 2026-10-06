@@ -11,8 +11,9 @@ import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { finnKobling } from '../../arbeidstid/beregning/index.ts';
 import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
@@ -747,7 +748,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
   // Påbygging står under programmet brukeren kom fra.
   const program = (viaKode && indeks.programomrader[viaKode]?.program) || po.program;
   return (
-    <article class="side tilbudsside" data-sted={po.sted}>
+    <article class="side side-bred tilbudsside" data-sted={po.sted}>
       <Brodsmuler
         ledd={[
           { tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' },
@@ -762,71 +763,84 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         <li class="merke">{t(`opplaeringslop.sted.${po.sted}`)}</li>
       </ul>
 
-      {tb.deler.length > 0 ? (
-        <>
-          <Sammensetning tb={tb} />
-          <Avviksmerknad avvik={tb.avvik.filter((a) => a.type === 'ingenFellesfag' || a.type === 'sum')} />
-          <Fagrubrikker kode={kode} tb={tb} indeks={indeks} laereplaner={laereplaner} />
-          <TilArbeidsplan kode={kode} tb={tb} indeks={indeks} />
-        </>
-      ) : (
-        <p class="merknad">
-          <Begrepstekst tekst={po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')} />
-        </p>
-      )}
+      {/* På skrivebord (fra 64rem): fagene og tilpasningene til venstre, og veien videre, skolene, yrkene og Vilbli til
+          høyre (eier 06.10.2026, avgjørelse 074). På mobil står alt i samme rekkefølge som før. */}
+      <ToKolonner
+        hoved={
+          <>
+          {tb.deler.length > 0 ? (
+            <>
+              <Sammensetning tb={tb} />
+              <Avviksmerknad avvik={tb.avvik.filter((a) => a.type === 'ingenFellesfag' || a.type === 'sum')} />
+              <Fagrubrikker kode={kode} tb={tb} indeks={indeks} laereplaner={laereplaner} />
+              <TilArbeidsplan kode={kode} tb={tb} indeks={indeks} />
+            </>
+          ) : (
+            <p class="merknad">
+              <Begrepstekst tekst={po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')} />
+            </p>
+          )}
 
-      {tb.tilpasninger.length > 0 && (
-        <Rubrikk nokkel={`lop-${k}-tilpasninger`} tittel={t('opplaeringslop.tilbud.tilpasningerTittel')} hoyre={formaterTall(tb.tilpasninger.length)} lukket>
-          <p class="liten dempet">{t('opplaeringslop.tilbud.tilpasningHjelp')}</p>
-          {tb.tilpasninger.map((p) => (
-            <Tilpasningen key={p.navn} tilpasning={p} ordinart={tb.totalt} />
-          ))}
-        </Rubrikk>
-      )}
+          {tb.tilpasninger.length > 0 && (
+            <Rubrikk nokkel={`lop-${k}-tilpasninger`} tittel={t('opplaeringslop.tilbud.tilpasningerTittel')} hoyre={formaterTall(tb.tilpasninger.length)} lukket>
+              <p class="liten dempet">{t('opplaeringslop.tilbud.tilpasningHjelp')}</p>
+              {tb.tilpasninger.map((p) => (
+                <Tilpasningen key={p.navn} tilpasning={p} ordinart={tb.totalt} />
+              ))}
+            </Rubrikk>
+          )}
+          </>
+        }
+        side={
+          <>
+          <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} uenig={tb.uenig} />
+          <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} uenig={tb.uenig} />
+          <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} uenig={tb.uenig} />
+          <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} uenig={tb.uenig} />
+          <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} uenig={tb.uenig} />
+          <Tilbudsliste
+            nokkel={`lop-${k}-opphenting-fra`}
+            tittel={t('opplaeringslop.tilbud.opphenting.fra', { fag: tb.opphenting.fag.map((f) => indeks.fag[f]?.navn[malform] ?? f).join(', ') })}
+            koder={tb.opphenting.fra}
+            indeks={indeks}
+          />
+          <Opphenting tb={tb} indeks={indeks} via={kode} />
+          {Object.keys(tb.uenig).length > 0 && (
+            <Forklaring tittel={t('opplaeringslop.tilbud.uenigTittel')}>
+              <p>{t('opplaeringslop.tilbud.uenigTekst')}</p>
+            </Forklaring>
+          )}
 
-      <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} uenig={tb.uenig} />
-      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} uenig={tb.uenig} />
-      <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} uenig={tb.uenig} />
-      <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} uenig={tb.uenig} />
-      <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} uenig={tb.uenig} />
-      <Tilbudsliste
-        nokkel={`lop-${k}-opphenting-fra`}
-        tittel={t('opplaeringslop.tilbud.opphenting.fra', { fag: tb.opphenting.fag.map((f) => indeks.fag[f]?.navn[malform] ?? f).join(', ') })}
-        koder={tb.opphenting.fra}
-        indeks={indeks}
-      />
-      <Opphenting tb={tb} indeks={indeks} via={kode} />
-      {Object.keys(tb.uenig).length > 0 && (
-        <Forklaring tittel={t('opplaeringslop.tilbud.uenigTittel')}>
-          <p>{t('opplaeringslop.tilbud.uenigTekst')}</p>
-        </Forklaring>
-      )}
+          {po.sted === 'bedrift' ? (
+            <>
+              <Yrkene kode={kode} />
+              <Kontorene kode={kode} />
+            </>
+          ) : (
+            <>
+              <Skoler kode={kode} />
+              <Yrkene kode={kode} />
+            </>
+          )}
+          <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} utdanning={tb.utdanning} />
 
-      {po.sted === 'bedrift' ? (
-        <>
-          <Yrkene kode={kode} />
-          <Kontorene kode={kode} />
-        </>
-      ) : (
-        <>
-          <Skoler kode={kode} />
-          <Yrkene kode={kode} />
-        </>
-      )}
-      <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} utdanning={tb.utdanning} />
-
-      <p class="liten">
-        <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
-      </p>
-      <Kildeliste
-        kilder={[
-          { id: 'udir-grep', punkt: k },
-          ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
-          ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
-          // Et løp som bare står på utdanning.no, har utdanning.no som kilde (avgjørelse 070).
-          ...(Object.values(tb.uenig).some((m) => m.har.length === 1 && m.har[0] === 'utdanning') ? [{ id: 'utdanning-no', punkt: 'Løpene' }] : []),
-          po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
-        ]}
+          <p class="liten">
+            <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
+          </p>
+            {/* Kildene i en lukket boks nederst i høyre kolonne (eier 06.10.2026). */}
+            <Kildeboks
+              nokkel={`lop-${k}-kilder`}
+              kilder={[
+                { id: 'udir-grep', punkt: k },
+                ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
+                ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
+                // Et løp som bare står på utdanning.no, har utdanning.no som kilde (avgjørelse 070).
+                ...(Object.values(tb.uenig).some((m) => m.har.length === 1 && m.har[0] === 'utdanning') ? [{ id: 'utdanning-no', punkt: 'Løpene' }] : []),
+                po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
+              ]}
+            />
+          </>
+        }
       />
     </article>
   );

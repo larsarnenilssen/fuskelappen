@@ -196,6 +196,8 @@ test.describe('opplæringsløp', () => {
     await page.goto('./#/opplaeringslop/HS/HSHEA3');
     await page.locator('[data-rubrikk$="-pabygging"]').getByRole('link', { name: /Vg4 Fag for studiekompetanse/ }).click();
     await expect(page.locator('.merke').filter({ hasText: /^Vg4$/ })).toBeVisible();
+    // Kildene står i en lukket boks (eier 06.10.2026).
+    await page.locator('.kildeboks').getByText(/^Kilder \(\d+\)$/).click();
     await expect(page.getByRole('link', { name: /VIGO Kodeverksbase/ }).first()).toBeVisible();
   });
 
