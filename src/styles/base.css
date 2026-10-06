@@ -4917,16 +4917,6 @@ p.fagkort-tittel {
 }
 
 /* Lenkene til punktet i avtaleteksten under hver bestemmelse i en avtale. */
-.lov-avtalekilder {
-  margin: var(--rom-2) 0;
-  padding: 0;
-  list-style: none;
-}
-
-.lov-avtalekilder li + li {
-  margin-top: var(--rom-1);
-}
-
 /* Veiviser (avgjørelse 041). Mobil: fasestolpe, veien hit som en linje med punkter, det gjeldende steget som kort på
    linjen, og veien videre (spørsmål og knapper) under kortet. Stor skjerm: prosessen med fasene og stegene i en
    kolonne til venstre, kortet og knappene til høyre. */
@@ -8036,15 +8026,6 @@ a.knapp {
   margin: 0;
 }
 
-.fb-kilde {
-  display: flex;
-  gap: var(--rom-1);
-  align-items: baseline;
-  margin: var(--rom-1) 0 var(--rom-2);
-  color: var(--farge-tekst-dempet);
-  font-size: var(--str-xs);
-}
-
 .fb-velg-to {
   display: grid;
   gap: 0 var(--rom-3);
@@ -8091,10 +8072,6 @@ a.knapp {
 
 .fb-overganger > li {
   margin-bottom: var(--rom-2);
-}
-
-.fb-overganger .fb-kilde {
-  padding-left: var(--rom-3);
 }
 
 .fb-side .fag-ifaget-i {

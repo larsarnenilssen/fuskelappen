@@ -13,6 +13,7 @@ import { formaterDato } from '../core/i18n/tekst.ts';
 import type { Stegelement, Veiviserelement } from '../core/innhold/skjema.ts';
 import { erUtfall, fasestatus, finnSide, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Vei, type Veiviserkart } from '../core/veiviser/veiviser.ts';
 import { HosFylket } from './HosFylket.tsx';
+import { useHusketApen } from './husket.ts';
 import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 import { Kortfot, KortfotRader } from './Kortfot.tsx';
@@ -202,9 +203,11 @@ function Oppsummering({ tekst, startPaaNytt }: { tekst: () => string; startPaaNy
 function Tillegg({ steg }: { steg: Stegelement }) {
   const { t, malform } = useTekst();
   const sted = steg.gyldighet.niva === 'nasjonal' ? '' : (fylkesnavn(steg.gyldighet.fylke) ?? steg.gyldighet.fylke);
-  // Lukket til brukeren åpner den, så siden ikke blir lang. Stedet og tittelen står alltid synlig.
+  // Lukket til brukeren åpner den, så siden ikke blir lang. Stedet og tittelen står alltid synlig. Om den er åpen,
+  // huskes for siden (husket.ts).
+  const [apen, settApen] = useHusketApen(`tillegg:${steg.id}`);
   return (
-    <details class="veiviser-tillegg">
+    <details class="veiviser-tillegg" open={apen} onToggle={(e) => settApen((e.currentTarget as HTMLDetailsElement).open)}>
       <summary class="veiviser-tillegg-topp">
         <span class="veiviser-tillegg-sted">
           <Ikon navn="skole" class="ikon-liten" />

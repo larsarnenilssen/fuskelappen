@@ -93,7 +93,6 @@ export const opplaeringslopNn = {
     fellesfag: 'Fellesfag',
     dokumentasjon: 'Dokumentasjon',
     voksne: 'Vaksne (kapittel 18)',
-    kilde: 'Kjelde',
     lesMer: 'Meir om {rolle}',
     lesMerTekst: 'Kjem frå og vegen vidare',
     velgA: 'Første veg',

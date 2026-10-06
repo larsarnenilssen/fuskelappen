@@ -9,6 +9,7 @@ import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
+import { useHusketApen } from '../../../components/husket.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kortfot } from '../../../components/Kortfot.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
@@ -398,11 +399,13 @@ function Kort({ oppforing: o, tid, tidLukket = false, dato = null }: { oppforing
   const ferdige = o.ferdigeLenker ?? [];
   const lenker = o.lenker.length > 0 ? (funnet === null ? null : [...ferdige, ...funnet]) : ferdige;
   const sted = o.fylke ? (fylkesnavn(o.fylke) ?? o.fylke) : null;
-  const apnet = (e: Event) => {
-    if ((e.currentTarget as HTMLDetailsElement).open && funnet === null && o.lenker.length > 0) void finnLenker(o.lenker).then(settFunnet);
-  };
+  // Om kortet er åpent, huskes for siden, så det er åpent igjen når brukeren går tilbake fra en lenke (husket.ts).
+  const [apen, settApen] = useHusketApen(`kal:${o.id}:${dato ?? ''}`);
+  useEffect(() => {
+    if (apen && funnet === null && o.lenker.length > 0) void finnLenker(o.lenker).then(settFunnet);
+  }, [apen]);
   return (
-    <details class={`kal-kort${sted ? ' kal-kort-lokal' : ''}`} onToggle={apnet}>
+    <details class={`kal-kort${sted ? ' kal-kort-lokal' : ''}`} open={apen} onToggle={(e) => settApen((e.currentTarget as HTMLDetailsElement).open)}>
       <summary class="kal-topp">
         <span class="kal-tittel">
           {dato && <span class="skjult-visuelt">{dato}: </span>}

@@ -163,12 +163,37 @@ export function beholdRullingVedNesteNavigasjon(): void {
   }, 1000);
 }
 
-/** Kalles når en ny side er tegnet: ny side starter øverst, tilbake gjenoppretter posisjonen. */
+/** Stopper forsøkene på å gjenopprette posisjonen, når en ny navigasjon kommer. */
+let stoppGjenoppretting: (() => void) | null = null;
+
+/**
+ * Kalles når en ny side er tegnet: ny side starter øverst, tilbake gjenoppretter posisjonen. Mange sider laster
+ * innholdet etter at de er tegnet, og kort som var åpne, åpnes igjen (husket.ts). Er siden for kort til posisjonen med
+ * en gang, prøver vi igjen mens den vokser, til den står der den var, brukeren ruller selv, eller det har gått tre
+ * sekunder (eier 06.10.2026).
+ */
 export function utforScroll(): void {
   if (oensketScroll === null) return;
   const y = oensketScroll;
   oensketScroll = null;
+  stoppGjenoppretting?.();
   window.scrollTo(0, y);
+  if (y === 0 || typeof ResizeObserver === 'undefined') return;
+  const brukeren = ['wheel', 'touchstart', 'keydown', 'pointerdown'] as const;
+  const stopp = () => {
+    observator.disconnect();
+    clearTimeout(tidsfrist);
+    for (const h of brukeren) window.removeEventListener(h, stopp);
+    if (stoppGjenoppretting === stopp) stoppGjenoppretting = null;
+  };
+  const observator = new ResizeObserver(() => {
+    if (Math.abs(window.scrollY - y) < 2) return stopp();
+    window.scrollTo(0, y);
+  });
+  const tidsfrist = setTimeout(stopp, 3000);
+  observator.observe(document.body);
+  for (const h of brukeren) window.addEventListener(h, stopp, { passive: true });
+  stoppGjenoppretting = stopp;
 }
 
 export type Navigasjonstype = 'forste' | 'ny' | 'historikk';

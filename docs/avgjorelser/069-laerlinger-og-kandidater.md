@@ -29,3 +29,4 @@
 **Endret 06.10.2026 (0.38.2, eier):**
 - På fanen «Bytte vei» står overgangene uten kilder, slik kortene på «Veiene» står. Kildene står samlet og lukket under kortene («Kilder»). På siden overgangen går til, står de under «Kommer fra». `tests/content/veier.test.ts` sjekker at utgangspunktet har kildene til alle overgangene sine.
 - Nye overganger: lærekandidat → elev i videregående skole (Udirs «Hvordan bli lærekandidat», ofo. § 6-3 bokstav b og c, ol. § 5-1 andre ledd) og lærling → Vg3 i skole når kontrakten er sagt opp eller hevet (ol. §§ 5-6 og 7-3, ofo. § 6-2). Begge har kontrollspørsmål.
+- Regelverket og kildene står som lukkede rader nederst i kortene og boksene, og samlet under listene med overganger (avgjørelse 071).

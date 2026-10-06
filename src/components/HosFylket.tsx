@@ -6,6 +6,7 @@ import { fylker } from '../app/Stedmerknad.tsx';
 import { useTekst, useTilstand } from '../app/tilstand.ts';
 import type { Flerspraak, Fylketema } from '../core/innhold/skjema.ts';
 import { fylkeFor, fylkeRute, lenkeFor, nettsted } from '../modules/fylker/innhold.ts';
+import { useHusketApen } from './husket.ts';
 import { Ikon } from './Ikon.tsx';
 
 function Fylkeslenke({ fylke, tema }: { fylke: string; tema: Fylketema }) {
@@ -29,10 +30,10 @@ export function HosFylket({ tema, tekst }: { tema: Fylketema; tekst: Flerspraak 
   const valgt = fylkeFor(innstillinger.fylke);
   const [annet, settAnnet] = useState('');
   const velgerId = useId();
-  // Åpen fra start på stor skjerm, lukket på mobil (eier 05.10.2026).
-  const [aapen] = useState(() => typeof matchMedia === 'function' && matchMedia('(min-width: 48rem)').matches);
+  // Åpen fra start på stor skjerm, lukket på mobil (eier 05.10.2026). Om den er åpen, huskes for siden (husket.ts).
+  const [aapen, settAapen] = useHusketApen(`hos-fylket:${tema}`, typeof matchMedia === 'function' && matchMedia('(min-width: 48rem)').matches);
   return (
-    <details class="hos-fylket" open={aapen}>
+    <details class="hos-fylket" open={aapen} onToggle={(e) => settAapen((e.currentTarget as HTMLDetailsElement).open)}>
       <summary class="hos-fylket-topp">
         <span class="hos-fylket-tittel">
           <Ikon navn="kontor" class="ikon-liten" />

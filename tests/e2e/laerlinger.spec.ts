@@ -20,6 +20,11 @@ test.describe('lærlinger og kandidater på mobil', () => {
     await expect(laerling).toHaveAttribute('aria-expanded', 'false');
     await laerling.click();
     await expect(kort.first().locator('.fb-steg > li')).toHaveCount(4);
+    // «Mer om …» står over regelverket og kildene, som er lukkede rader nederst i kortet (eier 06.10.2026).
+    const knapp = await kort.first().locator('.fb-mer').boundingBox();
+    const fot = await kort.first().locator('.kortfot').boundingBox();
+    expect(knapp && fot && fot.y > knapp.y).toBe(true);
+    await expect(kort.first().locator('.kortfot .veiviser-kilder:not(.veiviser-regelverk) summary')).toContainText(/Kilder \(\d+\)/);
     await kort.first().getByRole('link', { name: /^Mer om lærling/ }).click();
     await expect(page).toHaveURL(/#\/opplaeringslop\/laerlinger-og-kandidater\/laerling$/);
     await expect(page.locator('main h1')).toHaveText('Lærling');
@@ -63,12 +68,16 @@ test.describe('lærlinger og kandidater på mobil', () => {
     await page.getByRole('button', { name: 'Praksis i arbeidslivet' }).click();
     await expect(page).toHaveURL(/fra=praksis$/);
     await expect(page.locator('.fb-overganger > li')).toHaveCount(2);
-    // Kortene står uten kilder. Kildene står lukket under kortene, og på siden overgangen går til (eier 06.10.2026).
-    await expect(page.locator('.fb-overganger .fb-kilde')).toHaveCount(0);
-    await expect(page.locator('.fb-to-bytte .veiviser-kilder summary')).toContainText('Kilder (2)');
+    // Kortene står uten kilder. Regelverket og kildene står lukket under kortene, og på siden overgangen går til (eier
+    // 06.10.2026).
+    await expect(page.locator('.fb-overganger .veiviser-kilder')).toHaveCount(0);
+    await expect(page.locator('.fb-to-bytte .veiviser-regelverk summary')).toContainText('I regelverket (2)');
+    await expect(page.locator('.fb-to-bytte .veiviser-kilder:not(.veiviser-regelverk) summary')).toContainText('Kilder (2)');
     await page.getByRole('link', { name: /Kandidat for fagbrev på jobb/ }).click();
     await expect(page.locator('main h1')).toHaveText('Kandidat for fagbrev på jobb');
-    await expect(page.locator('.fb-overganger .fb-kilde').first()).toContainText('§ 9-58');
+    const kommerFra = page.locator('section', { has: page.getByRole('heading', { name: 'Kommer fra' }) });
+    await kommerFra.locator('.veiviser-kilder:not(.veiviser-regelverk) summary').click();
+    await expect(kommerFra.locator('.veiviser-kilder:not(.veiviser-regelverk)')).toContainText('§ 9-58');
     await page.locator('.fb-overganger a', { hasText: 'Praksis i arbeidslivet' }).click();
     await expect(page).toHaveURL(/fane=bytte&fra=praksis$/);
     await expect(page.getByRole('button', { name: 'Praksis i arbeidslivet' })).toHaveAttribute('aria-pressed', 'true');
@@ -80,7 +89,30 @@ test.describe('lærlinger og kandidater på mobil', () => {
     await page.goto(`${SIDE}?fane=bytte&fra=laerling`);
     await page.locator('.fb-overganger a', { hasText: 'Elev på Vg3 i skole' }).click();
     await expect(page.locator('main h1')).toHaveText('Elev på Vg3 i skole');
-    await expect(page.locator('.fb-overganger > li', { hasText: 'Når kontrakten er sagt opp' }).locator('.fb-kilde')).toContainText('§ 5-6');
+    const kommerFra = page.locator('section', { has: page.getByRole('heading', { name: 'Kommer fra' }) });
+    await expect(kommerFra.locator('.fb-overganger')).toContainText('Når kontrakten er sagt opp');
+    await kommerFra.locator('.veiviser-regelverk summary').click();
+    await expect(kommerFra.locator('.veiviser-regelverk')).toContainText('§ 5-6');
+  });
+
+  test('tilbake fra en paragraf i «I regelverket» viser kortet åpent og siden der den var (eier 06.10.2026)', async ({ page }) => {
+    await page.goto(SIDE);
+    const kort = page.locator('.fb-vei').nth(1);
+    await kort.getByRole('button').first().click();
+    const regelverk = kort.locator('.kortfot .veiviser-regelverk');
+    await regelverk.locator('summary').click();
+    const lenke = regelverk.locator('a').first();
+    await lenke.scrollIntoViewIfNeeded();
+    const for_ = await page.evaluate(() => window.scrollY);
+    expect(for_).toBeGreaterThan(100);
+    await lenke.click();
+    await expect(page).toHaveURL(/#\/lov\//);
+    await page.goBack();
+    await expect(page).toHaveURL(/laerlinger-og-kandidater/);
+    await expect(kort.getByRole('button').first()).toHaveAttribute('aria-expanded', 'true');
+    await expect(regelverk).toHaveAttribute('open', '');
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(for_ - 5);
+    expect(Math.abs((await page.evaluate(() => window.scrollY)) - for_)).toBeLessThan(5);
   });
 
   test('oppsigelse og heving står bare på veiene med kontrakt i bedrift', async ({ page }) => {
