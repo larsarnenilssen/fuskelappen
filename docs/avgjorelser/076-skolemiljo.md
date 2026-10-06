@@ -3,9 +3,13 @@
 **Kontekst:** Fase 7 (`OPPDRAG.md` kapittel 4 og `docs/arbeidsordrer/fase-7.md`): aktivitetsplikten trinn for trinn, skolereglene med reaksjoner og saksbehandling som fylkesinnhold, og plass til skolens egne regler. Kategorien «Skolemiljø» på forsiden hadde ingen moduler. Dette er mockupen til eier, runde 3 i `docs/arbeidsordrer/fase-7-forslag.md`.
 
 **Valg:**
-- **Ny modul `skolemiljo`** i kategorien «Skolemiljø», med oversikt, veiviser og siden «Skoleregler» (`#/skolemiljo/skoleregler`).
+- **Ny modul `skolemiljo`** i kategorien «Skolemiljø», med oversikt, veiviser og siden «Skoleregler» (`#/skolemiljo/skoleregler`). Kategorien får tre bokser på forsiden: Aktivitetsplikten, Skoleregler og Elevundersøkelsen (avgjørelse 077).
 - **Aktivitetsplikten** er en veiviser i `content/skolemiljo/aktivitetsplikten.yaml`, som veiviserne i Tilrettelegging (avgjørelse 041).
-  - Fire faser: i hverdagen, melde fra, undersøke og sette inn tiltak, statsforvalteren. Seks innganger.
+  - Veiviseren starter med rollen (eier 06.10.2026): den som arbeider på skolen, rektor eller eleven og foreldrene. Hver rolle får bare sin vei, og veiene møtes ikke i et felles steg.
+  - Den som arbeider på skolen: hva har skjedd (sett krenkelse, mistanke eller en ansatt som krenker), gripe inn, melde fra. Melde fra og skjerpet plikt er utfall, med lenke videre til rektors del.
+  - Rektor: undersøke, tiltak og aktivitetsplan, dokumentere og evaluere. Er eleven ikke trygg ennå, går veien tilbake til tiltak.
+  - Eleven og foreldrene: ta saken opp med skolen, og etter en uke statsforvalteren.
+  - Fire faser: når du ser noe, melde fra, skolen følger opp, eleven og statsforvalteren.
   - Kildene er opplæringslova kapittel 12 og Udirs rundskriv om skolemiljø, kapittel 6–8 (nye kilder `udir-rundskriv-skolemiljo` og `udir-rundskriv-skolemiljo-statsforvalteren`).
   - Stegene for å melde fra, skjerpet plikt og statsforvalteren har en merknad for privatskoler (privatskolelova § 2-4, avgjørelse 075).
 - **Ny veiviserfarge, indigo:** Alle de fem fargene var i bruk. Indigo (`--p-indigo-*`) har 700-tonen i lyst tema (over 4,5:1 mot hvit) og 300-tonen i mørkt, som de andre (avgjørelse 042). Grønt og rødt brukes fortsatt ikke.

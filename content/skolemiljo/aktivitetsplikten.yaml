@@ -14,44 +14,41 @@
   farge: indigo
   rekkefolge: 40
   faser:
-    - { id: hverdagen, tittel: { nb: I hverdagen, nn: I kvardagen } }
+    - { id: hverdagen, tittel: { nb: Når du ser noe, nn: Når du ser noko } }
     - { id: melde, tittel: { nb: Melde fra, nn: Melde frå } }
-    - { id: saken, tittel: { nb: Undersøke og sette inn tiltak, nn: Undersøkje og setje inn tiltak } }
-    - { id: statsforvalteren, tittel: { nb: Statsforvalteren, nn: Statsforvaltaren } }
+    - { id: saken, tittel: { nb: Skolen følger opp, nn: Skulen følgjer opp } }
+    - { id: statsforvalteren, tittel: { nb: Eleven og statsforvalteren, nn: Eleven og statsforvaltaren } }
   kilder:
     - { id: opplaeringslova, punkt: "Kapittel 12 Skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/kap12" }
     - { id: udir-rundskriv-skolemiljo, punkt: "6. Skolen har en aktivitetsplikt", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er de fire fasene (i hverdagen, melde fra, undersøke og sette inn tiltak, statsforvalteren) en dekkende og ikke misvisende inndeling av aktivitetsplikten?"
+    - "Er de tre veiene (den som arbeider på skolen, rektor og ledelsen, eleven og foreldrene) og de fire fasene en dekkende og ikke misvisende inndeling av aktivitetsplikten?"
   stikkord: [veiviser, aktivitetsplikt, skolemiljø, mobbing, krenkelser, tiltaksplan, aktivitetsplan, statsforvalteren]
 
 - id: am-start
   type: steg
   veiviser: aktivitetsplikten
   tittel:
-    nb: Hva har skjedd?
-    nn: Kva har skjedd?
+    nb: Hvem er du i saken?
+    nn: Kven er du i saka?
   tekst:
-    nb: Aktivitetsplikten gjelder alle som arbeider på skolen, også de som er fast på skolen uten å være ansatt der, for eksempel i renhold og kantine, helsesykepleier, lærlinger og praksisstudenter. Hvor saken starter, avgjør hva du skal gjøre først. Hele prosessen står i kartet under.
-    nn: Aktivitetsplikta gjeld alle som arbeider på skulen, også dei som er fast på skulen utan å vere tilsette der, til dømes i reinhald og kantine, helsesjukepleiar, lærlingar og praksisstudentar. Kvar saka startar, avgjer kva du skal gjere først. Heile prosessen står i kartet under.
+    nb: Aktivitetsplikten gjelder alle som arbeider på skolen, også de som er fast på skolen uten å være ansatt der, for eksempel i renhold og kantine, helsesykepleier, lærlinger og praksisstudenter. De skal følge med, gripe inn og melde fra til rektor. Rektor og skolen undersøker saken og setter inn tiltak. Eleven og foreldrene kan melde saken til statsforvalteren når skolen ikke gjør nok.
+    nn: Aktivitetsplikta gjeld alle som arbeider på skulen, også dei som er fast på skulen utan å vere tilsette der, til dømes i reinhald og kantine, helsesjukepleiar, lærlingar og praksisstudentar. Dei skal følgje med, gripe inn og melde frå til rektor. Rektor og skulen undersøkjer saka og set inn tiltak. Eleven og foreldra kan melde saka til statsforvaltaren når skulen ikkje gjer nok.
   sporsmal:
     tekst:
-      nb: Hvor starter saken?
-      nn: Kvar startar saka?
+      nb: Hvem er du i saken?
+      nn: Kven er du i saka?
     svar:
-      - { id: hverdagen, tekst: { nb: "Ingen sak ennå: hva alle skal gjøre i hverdagen", nn: "Inga sak enno: kva alle skal gjere i kvardagen" }, neste: am-folge-med }
-      - { id: ser, tekst: { nb: "Du ser at noen krenker en elev nå", nn: "Du ser at nokon krenkjer ein elev no" }, neste: am-gripe-inn }
-      - { id: mistanke, tekst: { nb: "Du har mistanke om eller vet at en elev ikke har det trygt og godt", nn: "Du har mistanke om eller veit at ein elev ikkje har det trygt og godt" }, neste: am-melde }
-      - { id: eleven, tekst: { nb: "En elev sier selv at hen ikke har det trygt og godt", nn: "Ein elev seier sjølv at hen ikkje har det trygt og godt" }, neste: am-melde }
-      - { id: ansatt, tekst: { nb: "Du har mistanke om at en som arbeider på skolen, krenker en elev", nn: "Du har mistanke om at ein som arbeider på skulen, krenkjer ein elev" }, neste: am-skjerpet }
-      - { id: ikke-nok, tekst: { nb: "Eleven eller foreldrene mener skolen ikke gjør nok", nn: "Eleven eller foreldra meiner skulen ikkje gjer nok" }, neste: am-statsforvalteren }
+      - { id: ansatt, tekst: { nb: "Jeg arbeider på skolen og har sett, hørt eller fått vite noe", nn: "Eg arbeider på skulen og har sett, høyrt eller fått vite noko" }, neste: am-folge-med }
+      - { id: rektor, tekst: { nb: "Jeg er rektor eller i ledelsen, og skolen har fått vite om saken", nn: "Eg er rektor eller i leiinga, og skulen har fått vite om saka" }, neste: am-undersoke }
+      - { id: elev, tekst: { nb: "Jeg er elev eller forelder og mener skolen ikke gjør nok", nn: "Eg er elev eller forelder og meiner skulen ikkje gjer nok" }, neste: am-elev }
   kilder:
     - { id: udir-rundskriv-skolemiljo, punkt: "6.2.1 Hvem er «alle som arbeider på skolen»?", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.2.1-hvem-er-alle-som-arbeider-pa-skolen" }
     - { id: opplaeringslova, punkt: "§ 12-2 Retten til eit trygt og godt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-2" }
   kontrollert: null
   kontrollsporsmal:
-    - "Dekker de seks inngangene de vanlige måtene en skolemiljøsak starter på i videregående?"
+    - "Er det riktig å dele veiviseren i tre veier etter hvem brukeren er (den som arbeider på skolen, rektor og ledelsen, eleven og foreldrene)?"
     - "Er oppramsingen av hvem som regnes som «alle som arbeider på skolen» riktig sammenfattet fra rundskrivet 6.2.1?"
 
 - id: am-folge-med
@@ -74,7 +71,14 @@
     nb: Hele tiden.
     nn: Heile tida.
   paragrafer: [opplaeringslova/12-4, opplaeringslova/12-3]
-  neste: am-gripe-inn
+  sporsmal:
+    tekst:
+      nb: Hva har du sett, hørt eller fått vite?
+      nn: Kva har du sett, høyrt eller fått vite?
+    svar:
+      - { id: krenker, tekst: { nb: "Noen krenker en elev nå", nn: "Nokon krenkjer ein elev no" }, neste: am-gripe-inn }
+      - { id: mistanke, tekst: { nb: "Jeg mistenker eller vet at en elev ikke har det trygt og godt, eller eleven har sagt det selv", nn: "Eg mistenkjer eller veit at ein elev ikkje har det trygt og godt, eller eleven har sagt det sjølv" }, neste: am-melde }
+      - { id: ansatt-krenker, tekst: { nb: "Jeg mistenker at en som arbeider på skolen, krenker en elev", nn: "Eg mistenkjer at ein som arbeider på skulen, krenkjer ein elev" }, neste: am-skjerpet }
   kilder:
     - { id: udir-rundskriv-skolemiljo, punkt: "6.3.1 Plikt til å følge med", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.1-plikt-til-a-folge-med" }
     - { id: opplaeringslova, punkt: "§ 12-4 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
@@ -117,8 +121,8 @@
     nb: Melde fra til rektor
     nn: Melde frå til rektor
   tekst:
-    nb: Har du mistanke om eller vet at en elev ikke har det trygt og godt, skal du melde fra til rektor. Det gjelder også når eleven sier det selv. Terskelen er lav. Hvor raskt du må melde fra, avhenger av hvor alvorlig saken er, og skolen skal ha rutiner for det. I alvorlige tilfeller melder rektor fra til fylkeskommunen.
-    nn: Har du mistanke om eller veit at ein elev ikkje har det trygt og godt, skal du melde frå til rektor. Det gjeld også når eleven seier det sjølv. Terskelen er låg. Kor raskt du må melde frå, avheng av kor alvorleg saka er, og skulen skal ha rutinar for det. I alvorlege tilfelle melder rektor frå til fylkeskommunen.
+    nb: Har du mistanke om eller vet at en elev ikke har det trygt og godt, skal du melde fra til rektor. Det gjelder også når eleven sier det selv. Terskelen er lav. Hvor raskt du må melde fra, avhenger av hvor alvorlig saken er, og skolen skal ha rutiner for det. I alvorlige tilfeller melder rektor fra til fylkeskommunen. Når du har meldt fra, undersøker skolen saken og setter inn tiltak. [Slik følger skolen opp saken](#/skolemiljo/aktivitetsplikten?steg=am-undersoke&svar=rektor).
+    nn: Har du mistanke om eller veit at ein elev ikkje har det trygt og godt, skal du melde frå til rektor. Det gjeld også når eleven seier det sjølv. Terskelen er låg. Kor raskt du må melde frå, avheng av kor alvorleg saka er, og skulen skal ha rutinar for det. I alvorlege tilfelle melder rektor frå til fylkeskommunen. Når du har meldt frå, undersøkjer skulen saka og set inn tiltak. [Slik følgjer skulen opp saka](#/skolemiljo/aktivitetsplikten?steg=am-undersoke&svar=rektor).
   ansvar:
     nb: Alle som arbeider på skolen, melder fra. Rektor kan la andre ta imot meldingene, men har ansvaret.
     nn: Alle som arbeider på skulen, melder frå. Rektor kan la andre ta imot meldingane, men har ansvaret.
@@ -133,7 +137,6 @@
     nb: Meldeplikten til rektor er noe annet enn meldeplikten til barnevernet. Skolen skal også gi foreldrene informasjon. Helsesykepleieren kan være bundet av taushetsplikten etter helsepersonelloven.
     nn: Meldeplikta til rektor er noko anna enn meldeplikta til barnevernet. Skulen skal også gi foreldra informasjon. Helsesjukepleiaren kan vere bunden av teieplikta etter helsepersonellova.
   paragrafer: [opplaeringslova/12-4, opplaeringslova/10-8]
-  neste: am-undersoke
   privatskole:
     tekst:
       nb: "For privatskoler gjelder opplæringslova kapittel 12 etter privatskolelova § 2-4. Der loven sier rektor, gjelder det daglig leder. Daglig leder skal melde fra til skolens styre i alvorlige tilfeller, ikke til fylkeskommunen."
@@ -158,8 +161,8 @@
     nb: Når en som arbeider på skolen, krenker en elev
     nn: Når ein som arbeider på skulen, krenkjer ein elev
   tekst:
-    nb: Har du mistanke om eller vet at en som arbeider på skolen, krenker en elev, skal du melde fra til rektor straks. Rektor melder videre til fylkeskommunen, med mindre meldingen er åpenbart grunnløs. Gjelder det noen i ledelsen, melder du fra direkte til fylkeskommunen. Aktivitetsplikten gjelder som ellers, så lenge eleven ikke har det trygt og godt.
-    nn: Har du mistanke om eller veit at ein som arbeider på skulen, krenkjer ein elev, skal du melde frå til rektor straks. Rektor melder vidare til fylkeskommunen, med mindre meldinga er openbert grunnlaus. Gjeld det nokon i leiinga, melder du frå direkte til fylkeskommunen. Aktivitetsplikta gjeld som elles, så lenge eleven ikkje har det trygt og godt.
+    nb: Har du mistanke om eller vet at en som arbeider på skolen, krenker en elev, skal du melde fra til rektor straks. Rektor melder videre til fylkeskommunen, med mindre meldingen er åpenbart grunnløs. Gjelder det noen i ledelsen, melder du fra direkte til fylkeskommunen. Aktivitetsplikten gjelder som ellers, så lenge eleven ikke har det trygt og godt. [Slik følger skolen opp saken](#/skolemiljo/aktivitetsplikten?steg=am-undersoke&svar=rektor).
+    nn: Har du mistanke om eller veit at ein som arbeider på skulen, krenkjer ein elev, skal du melde frå til rektor straks. Rektor melder vidare til fylkeskommunen, med mindre meldinga er openbert grunnlaus. Gjeld det nokon i leiinga, melder du frå direkte til fylkeskommunen. Aktivitetsplikta gjeld som elles, så lenge eleven ikkje har det trygt og godt. [Slik følgjer skulen opp saka](#/skolemiljo/aktivitetsplikten?steg=am-undersoke&svar=rektor).
   ansvar:
     nb: Den som får mistanke eller kjennskap, og rektor.
     nn: Den som får mistanke eller kjennskap, og rektor.
@@ -174,7 +177,6 @@
     nb: Terskelen for at en melding er åpenbart grunnløs, er høy, og rektor skal ikke undersøke saken grundig før han eller hun melder videre. At eleven opplever noe som krenkende, avgjør ikke alene om en ansatt har krenket. Irettesettelser og uenighet om vurdering er ikke krenkelser i seg selv.
     nn: Terskelen for at ei melding er openbert grunnlaus, er høg, og rektor skal ikkje undersøkje saka grundig før han eller ho melder vidare. At eleven opplever noko som krenkjande, avgjer ikkje åleine om ein tilsett har krenkt. Irettesetjingar og usemje om vurdering er ikkje krenkingar i seg sjølve.
   paragrafer: [opplaeringslova/12-5]
-  neste: am-undersoke
   privatskole:
     tekst:
       nb: "For privatskoler gjelder dette etter privatskolelova § 2-4. Daglig leder har rektors plikter, og meldingen går til skolens styre i stedet for fylkeskommunen."
@@ -307,7 +309,8 @@
       nn: Har eleven det trygt og godt no?
     svar:
       - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: am-trygt }
-      - { id: nei, tekst: { nb: "Nei, eller eleven og foreldrene mener skolen ikke gjør nok", nn: "Nei, eller eleven og foreldra meiner skulen ikkje gjer nok" }, neste: am-statsforvalteren }
+      - { id: nei, tekst: { nb: "Nei, tiltakene virker ikke godt nok", nn: "Nei, tiltaka verkar ikkje godt nok" }, neste: am-tiltak }
+      - { id: statsforvalteren, tekst: { nb: "Eleven eller foreldrene har meldt saken til statsforvalteren", nn: "Eleven eller foreldra har meldt saka til statsforvaltaren" }, neste: am-sf-skolen }
   kilder:
     - { id: udir-rundskriv-skolemiljo, punkt: "6.3.6 Plikt til å sette inn tiltak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak" }
     - { id: opplaeringslova, punkt: "§ 12-4 tredje ledd bokstav e", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
@@ -370,3 +373,91 @@
     - "Er «en uke, altså fem arbeidsdager» riktig gjengitt fra rundskrivet 7.2.2?"
     - "Bør steget si hvem som kan melde på vegne av eleven (foreldre med foreldreansvar, fullmektig, barnevernet)?"
     - "Privatskoler: Er det riktig lest av pl. § 2-4 at «skolen» erstatter fylkeskommunen i § 12-6 tredje og fjerde ledd, slik at pålegget går til skolen?"
+
+- id: am-sf-skolen
+  type: steg
+  veiviser: aktivitetsplikten
+  fase: saken
+  tittel:
+    nb: Når saken er meldt til statsforvalteren
+    nn: Når saka er meldt til statsforvaltaren
+  tekst:
+    nb: Statsforvalteren vurderer om skolen har satt inn egnede tiltak og laget en tiltaksplan, slik saken står når vedtaket fattes. Fylkeskommunen skal gi statsforvalteren alle opplysningene som trengs, uten hinder av taushetsplikten. Har skolen ikke gjort nok, pålegger statsforvalteren som hovedregel fylkeskommunen å rette det innen en frist, og følger opp saken. Skolen fortsetter å arbeide med saken mens den er hos statsforvalteren.
+    nn: Statsforvaltaren vurderer om skulen har sett inn eigna tiltak og laga ein tiltaksplan, slik saka står når vedtaket blir gjort. Fylkeskommunen skal gi statsforvaltaren alle opplysningane som trengst, utan hinder av teieplikta. Har skulen ikkje gjort nok, pålegg statsforvaltaren som hovudregel fylkeskommunen å rette det innan ein frist, og følgjer opp saka. Skulen held fram med å arbeide med saka medan ho er hos statsforvaltaren.
+  ansvar:
+    nb: Fylkeskommunen gir opplysningene og retter forholdet. Rektor har ansvaret på skolen.
+    nn: Fylkeskommunen gir opplysningane og rettar forholdet. Rektor har ansvaret på skulen.
+  dokumentasjon:
+    nb: Det skolen har gjort i saken, med tiltaksplanen, og det skolen gjør for å følge vedtaket.
+    nn: Det skulen har gjort i saka, med tiltaksplanen, og det skulen gjer for å følgje vedtaket.
+  frist:
+    nb: Fristen statsforvalteren setter i vedtaket.
+    nn: Fristen statsforvaltaren set i vedtaket.
+  forklaring:
+    nb: Statsforvalteren kan ilegge tvangsmulkt hvis vedtaket ikke følges. Skolen og fylkeskommunen kan ikke klage på vedtaket. Eleven og foreldrene kan klage til Utdanningsdirektoratet.
+    nn: Statsforvaltaren kan påleggje tvangsmulkt dersom vedtaket ikkje blir følgt. Skulen og fylkeskommunen kan ikkje klage på vedtaket. Eleven og foreldra kan klage til Utdanningsdirektoratet.
+  paragrafer: [opplaeringslova/12-6, opplaeringslova/12-8]
+  privatskole:
+    tekst:
+      nb: "For privatskoler gjelder dette etter privatskolelova § 2-4. Der opplæringslova § 12-6 tredje og fjerde ledd sier kommunen og fylkeskommunen, gjelder det skolen. Det er altså skolen som gir opplysningene og som pålegges å rette forholdet."
+      nn: "For privatskular gjeld dette etter privatskolelova § 2-4. Der opplæringslova § 12-6 tredje og fjerde ledd seier kommunen og fylkeskommunen, gjeld det skulen. Det er altså skulen som gir opplysningane og som blir pålagd å rette forholdet."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: udir-rundskriv-skolemiljo-statsforvalteren, punkt: "7. Å melde saken til statsforvalteren", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/" }
+    - { id: udir-rundskriv-skolemiljo, punkt: "8. Klage til Utdanningsdirektoratet", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/8.-klage-til-utdanningsdirektoratet/" }
+    - { id: opplaeringslova, punkt: "§ 12-6 tredje og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at skolen fortsetter å arbeide med saken mens den er hos statsforvalteren?"
+    - "Er «uten hinder av taushetsplikten» en riktig gjengivelse av § 12-6 tredje ledd («utan hinder av lovfesta teieplikt»)?"
+
+- id: am-elev
+  type: steg
+  veiviser: aktivitetsplikten
+  fase: statsforvalteren
+  tittel:
+    nb: Når skolen ikke gjør nok
+    nn: Når skulen ikkje gjer nok
+  tekst:
+    nb: Eleven har rett til et trygt og godt skolemiljø, og skolen skal ta det på alvor når eleven sier at hen ikke har det. Det er elevens egen opplevelse som avgjør om skolen skal sette inn tiltak. Mener eleven eller foreldrene at skolen ikke gjør nok, kan de melde saken til statsforvalteren. Først må saken være tatt opp med rektor.
+    nn: Eleven har rett til eit trygt og godt skulemiljø, og skulen skal ta det på alvor når eleven seier at hen ikkje har det. Det er den eigne opplevinga til eleven som avgjer om skulen skal setje inn tiltak. Meiner eleven eller foreldra at skulen ikkje gjer nok, kan dei melde saka til statsforvaltaren. Først må saka vere teken opp med rektor.
+  paragrafer: [opplaeringslova/12-2, opplaeringslova/12-6]
+  sporsmal:
+    tekst:
+      nb: Er saken tatt opp med rektor for minst en uke siden?
+      nn: Er saka teken opp med rektor for minst ei veke sidan?
+    svar:
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: am-statsforvalteren }
+      - { id: nei, tekst: { nb: "Nei, ikke ennå", nn: "Nei, ikkje enno" }, neste: am-ta-opp }
+  kilder:
+    - { id: udir-rundskriv-skolemiljo, punkt: "6.3.6 Plikt til å sette inn tiltak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak" }
+    - { id: udir-rundskriv-skolemiljo-statsforvalteren, punkt: "7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at det er elevens egen opplevelse som avgjør om skolen skal sette inn tiltak (rundskrivet 6.3.6)?"
+
+- id: am-ta-opp
+  type: steg
+  veiviser: aktivitetsplikten
+  fase: statsforvalteren
+  tittel:
+    nb: Ta saken opp med rektor først
+    nn: Ta saka opp med rektor først
+  tekst:
+    nb: Eleven eller foreldrene tar saken opp med rektor, eller den rektor har gitt oppgaven. Det kan gjøres muntlig eller skriftlig, og det trengs ikke dokumentasjon. Har det gått en uke uten at eleven har det trygt og godt, kan saken meldes til statsforvalteren. Statsforvalteren kan gjøre unntak fra uken når det er særlige grunner, for eksempel alvorlig vold, seksuelle krenkelser eller når det er rektor som krenker.
+    nn: Eleven eller foreldra tek saka opp med rektor, eller den rektor har gitt oppgåva. Det kan gjerast munnleg eller skriftleg, og det trengst ikkje dokumentasjon. Har det gått ei veke utan at eleven har det trygt og godt, kan saka meldast til statsforvaltaren. Statsforvaltaren kan gjere unntak frå veka når det er særlege grunnar, til dømes alvorleg vald, seksuelle krenkingar eller når det er rektor som krenkjer.
+  ansvar:
+    nb: Eleven eller foreldrene tar saken opp. Rektor har ansvaret for at skolen følger den opp.
+    nn: Eleven eller foreldra tek saka opp. Rektor har ansvaret for at skulen følgjer henne opp.
+  frist:
+    nb: Saken kan meldes til statsforvalteren når det har gått en uke, altså fem arbeidsdager.
+    nn: Saka kan meldast til statsforvaltaren når det har gått ei veke, altså fem arbeidsdagar.
+  fristKort: { nb: "Én uke", nn: "Ei veke" }
+  paragrafer: [opplaeringslova/12-6]
+  kilder:
+    - { id: udir-rundskriv-skolemiljo-statsforvalteren, punkt: "7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer" }
+    - { id: opplaeringslova, punkt: "§ 12-6 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på særlige grunner (alvorlig vold, seksuelle krenkelser, rektor som krenker) riktig gjengitt fra rundskrivet 7.2.2?"
