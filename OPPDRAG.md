@@ -557,6 +557,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Aktivitetsplikten trinn for trinn: plikten til å følge med, gripe inn, varsle, undersøke og sette inn tiltak, skjerpet aktivitetsplikt, aktivitetsplan og dokumentasjon, og elevens mulighet til å melde saken til statsforvalteren.
 - VLFKs skulereglar: reaksjoner og saksbehandling (fylkesinnhold).
 - Plass til skolens egne regler som `supplerer` (skoleinnhold).
+- *(Eier 06.10.2026)* Privatskolelova og forskriften til den i kildegrunnlaget og i Lov og forskrift, med et forslag til hvordan de brukes som kilder og regelreferanser i appen. Tas først i fasen (`docs/arbeidsordrer/fase-7.md`).
 - Resultater fra Elevundersøkelsen (Udirs statistikkbank, åpent API, NLOD) for valgt skole og fylke, sammenlignet med landet: hentes automatisk og kontrolleres som de andre dataene (avgjørelse 049 og 053). Hvilke spørsmål og indekser som tas med, og hvordan små grupper og skjulte tall vises, legges fram for eier før det bygges. Ingen tall om enkeltelever.
 
 **Kontrollpunkt:** Eier kontrollerer innholdet.
