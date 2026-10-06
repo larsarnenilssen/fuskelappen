@@ -26,6 +26,9 @@
   /* Bær (dyp rosa) for veiviseren «Klage på karakter» (fase 6, pakke 3). */
   --p-baer-700: #8a1f5c;
   --p-baer-100: #f7e3ee;
+  /* Indigo: veiviseren for aktivitetsplikten (fase 7, avgjørelse 076). */
+  --p-indigo-700: #3b3d9a;
+  --p-indigo-100: #e7e8f8;
   /* Mørkere flate for knappen under et tilbud ved brukerens skole (avgjørelse 053). */
   --p-turkis-200: #b9e0e3;
   --p-graa-600: #5f6673;
@@ -57,6 +60,8 @@
   --p-turkis-800: #1b4a4b;
   --p-baer-300: #f0a6cf;
   --p-baer-900: #3d1730;
+  --p-indigo-300: #b3b6f2;
+  --p-indigo-900: #24254d;
   --p-graa-400: #9ba3b0;
   /* Dempede mellomtoner for diagrammer i mørk visning: hvit tekst gir minst 4,5:1, flaten minst 3:1. */
   --p-blaa-500: #3f6fa6;

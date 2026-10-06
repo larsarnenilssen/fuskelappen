@@ -8,6 +8,7 @@ import { kalenderNn } from './moduler/kalender.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
+import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
 
@@ -384,6 +385,10 @@ export const nn: Tekster = {
       navn: 'Inntak',
       beskrivelse: 'Søkjarkategoriar, rettar og fristar ved inntak.',
     },
+    skolemiljo: {
+      navn: 'Skulemiljø',
+      beskrivelse: 'Aktivitetsplikta, skulereglar og reaksjonar.',
+    },
     tilrettelegging: {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpassa opplæring, individuell tilrettelegging og språkopplæring.',
@@ -433,6 +438,7 @@ export const nn: Tekster = {
   kalender: kalenderNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
+  skolemiljo: skolemiljoNn,
   vurdering: vurderingNn,
   inntak: inntakNn,
   begreper: {

@@ -284,6 +284,13 @@
   --farge-info-flate: var(--p-baer-100);
 }
 
+[data-veiviserfarge='indigo'] {
+  --farge-merke: var(--p-indigo-700);
+  --farge-lenke: var(--p-indigo-700);
+  --farge-flate-2: var(--p-indigo-100);
+  --farge-info-flate: var(--p-indigo-100);
+}
+
 :root[data-tema='mork'] [data-veiviserfarge='lilla'] {
   --farge-merke: var(--p-lilla-300);
   --farge-lenke: var(--p-lilla-300);
@@ -310,6 +317,13 @@
   --farge-lenke: var(--p-baer-300);
   --farge-flate-2: var(--p-baer-900);
   --farge-info-flate: var(--p-baer-900);
+}
+
+:root[data-tema='mork'] [data-veiviserfarge='indigo'] {
+  --farge-merke: var(--p-indigo-300);
+  --farge-lenke: var(--p-indigo-300);
+  --farge-flate-2: var(--p-indigo-900);
+  --farge-info-flate: var(--p-indigo-900);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -339,5 +353,12 @@
     --farge-lenke: var(--p-baer-300);
     --farge-flate-2: var(--p-baer-900);
     --farge-info-flate: var(--p-baer-900);
+  }
+
+  :root:not([data-tema='lys']) [data-veiviserfarge='indigo'] {
+    --farge-merke: var(--p-indigo-300);
+    --farge-lenke: var(--p-indigo-300);
+    --farge-flate-2: var(--p-indigo-900);
+    --farge-info-flate: var(--p-indigo-900);
   }
 }

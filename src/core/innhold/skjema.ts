@@ -246,7 +246,7 @@ export const stegElement = z
   });
 
 /** Fargene en veiviser kan ha (avgjørelse 042). Hver farge er definert for lyst og mørkt tema i tema.css. */
-export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav', 'baer']);
+export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav', 'baer', 'indigo']);
 
 /** En veiviser (avgjørelse 041): tittel, ingress (`tekst`), første steg og fasene stegene grupperes i. */
 export const veiviserElement = z

@@ -1,0 +1,42 @@
+// Skolemiljø (fase 7): veiviseren for aktivitetsplikten og stegene, og kortene om skolereglene, fra content/skolemiljo/.
+// Lastes ved behov.
+import type { Underside } from '../typer.ts';
+import type { Innholdselement, Stegelement, Vanligelement, Veiviserelement } from '../../core/innhold/skjema.ts';
+
+export type Forklaringselement = Vanligelement;
+
+const filer = import.meta.glob<Innholdselement[]>('/content/skolemiljo/*.yaml', { import: 'default' });
+
+export interface Skolemiljoinnhold {
+  veivisere: Veiviserelement[];
+  steg: Stegelement[];
+  forklaringer: Forklaringselement[];
+}
+
+let lopende: Promise<Skolemiljoinnhold> | null = null;
+
+export function hentInnhold(): Promise<Skolemiljoinnhold> {
+  lopende ??= Promise.all(Object.values(filer).map((last) => last())).then((lister) => {
+    const alle = lister.flat();
+    return {
+      veivisere: alle.filter((e): e is Veiviserelement => e.type === 'veiviser'),
+      steg: alle.filter((e): e is Stegelement => e.type === 'steg'),
+      forklaringer: alle.filter((e): e is Forklaringselement => e.type === 'forklaring'),
+    };
+  });
+  lopende.catch(() => {
+    lopende = null;
+  });
+  return lopende;
+}
+
+export const veiviserRute = (id: string) => `/skolemiljo/${id}`;
+export const skolereglerRute = '/skolemiljo/skoleregler';
+
+/** Lenkene med ikon på oversikten (avgjørelse 058). */
+export const UNDERSIDER = {
+  skoleregler: { rute: skolereglerRute, ikon: 'paragraf' },
+} as const satisfies Record<string, Underside>;
+
+/** Elementene på en side, i rekkefølgen de står i filen: id-er som starter med prefikset. */
+export const medPrefiks = (liste: readonly Forklaringselement[], prefiks: string) => liste.filter((e) => e.id.startsWith(prefiks));

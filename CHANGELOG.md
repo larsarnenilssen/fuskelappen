@@ -6,6 +6,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Lagt til
 
+- **Skolemiljø** (ny del av appen, mockup til eier):
+  - **Veiviseren «Aktivitetsplikten»:** følge med, gripe inn, melde fra, skjerpet plikt når en ansatt krenker en elev, undersøke, tiltak og tiltaksplan, dokumentere, følge opp og melde saken til statsforvalteren. Hvert steg har ansvar, dokumentasjon, frist og paragrafene.
+  - **Skoleregler:** reglene i loven om skoleregler, bortvisning og pålagt skolebytte. For valgt fylke kommer paragrafene om reaksjoner, saksbehandling og klage i fylkets skoleregler, og for valgt skole skolens egne regler når de står i Lovdata.
+  - **Privatskoler:** egne merknader når «Privatskole» er valgt.
 - **Privatskole:** En ny bryter under «Fylke og skole» i innstillingene. Velger du en privat skole, slås den på av seg selv. Når den er på:
   - kort og steg der privatskolene har egne regler, har en boks «For privatskoler»: inntaket, klage på karakter, individuell tilrettelegging, skoleregler og bortvisning
   - kildene og «I regelverket» viser paragrafen i forskriften til privatskolelova i stedet for den samme regelen i opplæringsforskrifta, f.eks. fraværsgrensen, eksamen og klage

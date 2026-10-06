@@ -8413,3 +8413,33 @@ a.knapp {
   margin: 0;
   border-top: 0;
 }
+
+/* ---------- Skoleregler i fylket (fase 7) ----------
+   Paragrafene om reaksjoner, saksbehandling og klage står åpne i en hvit boks, med lenke til hele forskriften og
+   kildene som lukkede rader nederst (Kortfot). */
+.sr-boks {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.sr-boks-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-m);
+}
+
+.sr-boks .brodtekst > p {
+  margin: 0 0 var(--rom-2);
+}
+
+.sr-lenker {
+  margin: var(--rom-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sr-lenker li {
+  padding: 0.125rem 0;
+}

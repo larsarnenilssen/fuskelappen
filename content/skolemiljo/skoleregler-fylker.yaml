@@ -1,0 +1,244 @@
+# Skolereglene i fylkene (fase 7): paragrafene om reaksjoner, saksbehandling og klage i forskriften om skoleregler
+# for hvert fylke, fra Lovdata (avgjørelse 061). Paragrafene er valgt ut fra titlene 06.10.2026 og vises med titlene
+# fra teksten. Teksten i forskriften vises uendret i Lov og forskrift. Endres forskriften, sjekker testene at
+# paragrafene fortsatt finnes (tests/content/skolemiljo.test.ts).
+
+- id: sr-fylke-42
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "42", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Agder"
+    nn: "Skulereglane i Agder"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Agder."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Agder."
+  paragrafer: [agder-skoleregler/7, agder-skoleregler/8, agder-skoleregler/9]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler for elever ved fylkeskommunale videregående skoler i Agder og deltakere i voksenopplæringen", url: "https://lovdata.no/dokument/LF/forskrift/2024-06-18-1248" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 7 Konsekvenser av brudd på skolereglene (orden og oppførsel); § 8 Saksbehandling ved brudd på skolereglene; § 9 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-32
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "32", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Akershus"
+    nn: "Skulereglane i Akershus"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Akershus."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Akershus."
+  paragrafer: [akershus-skoleregler/9, akershus-skoleregler/10]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune", url: "https://lovdata.no/dokument/LF/forskrift/2024-06-20-1886" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 9 Reaksjoner ved brudd på skolereglene; § 10 Rettigheter og plikter ved bruk av reaksjoner for brudd på skolereglene), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-33
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "33", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Buskerud"
+    nn: "Skulereglane i Buskerud"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Buskerud."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Buskerud."
+  paragrafer: [buskerud-skoleregler/10, buskerud-skoleregler/11]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler, Buskerud fylkeskommune", url: "https://lovdata.no/dokument/LF/forskrift/2026-06-03-1031" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 10 Reaksjoner og tiltak; § 11 Rettigheter og plikter ved bruk av reaksjoner og tiltak), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-56
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "56", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Finnmark"
+    nn: "Skulereglane i Finnmark"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Finnmark."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Finnmark."
+  paragrafer: [finnmark-skoleregler/6, finnmark-skoleregler/9, finnmark-skoleregler/12]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler for fylkeskommunale videregående skoler, Finnmark", url: "https://lovdata.no/dokument/LF/forskrift/2026-06-02-1081" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 6 Tiltak ved brudd på skolereglene; § 9 Saksbehandling; § 12 Klageadgang), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-34
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "34", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Innlandet"
+    nn: "Skulereglane i Innlandet"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Innlandet."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Innlandet."
+  paragrafer: [innlandet-skoleregler/5, innlandet-skoleregler/11]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler, Innlandet fylkeskommune", url: "https://lovdata.no/dokument/LF/forskrift/2024-10-23-3801" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 5 Reaksjoner ved brudd på reglene for orden og oppførsel; § 11 Saksbehandling), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-15
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "15", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Møre og Romsdal"
+    nn: "Skulereglane i Møre og Romsdal"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Møre og Romsdal."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Møre og Romsdal."
+  paragrafer: [more-og-romsdal-skoleregler/6, more-og-romsdal-skoleregler/9]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skolereglar for dei vidaregåande skolane, Møre og Romsdal fylkeskommune", url: "https://lovdata.no/dokument/LF/forskrift/2024-06-10-1765" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 6 Tiltak ved brot på skolereglane; § 9 Saksbehandling ved reaksjonar på brot på skolereglane der eleven har klagerett), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-18
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "18", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Nordland"
+    nn: "Skulereglane i Nordland"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Nordland."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Nordland."
+  paragrafer: [nordland-skoleregler/7, nordland-skoleregler/8]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler og deltakere i voksenopplæringen, Nordland", url: "https://lovdata.no/dokument/LF/forskrift/2024-06-10-1451" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 7 Konsekvenser av brudd på skolereglene (orden og oppførsel); § 8 Regler om saksbehandling ved brudd på skoleregler), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-03
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "03", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Oslo"
+    nn: "Skulereglane i Oslo"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Oslo."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Oslo."
+  paragrafer: [oslo-skoleregler/11, oslo-skoleregler/12, oslo-skoleregler/13]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo", url: "https://lovdata.no/dokument/LF/forskrift/2025-06-27-1353" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 11 Tiltak hvis du bryter skolereglene; § 12 Hvem kan bestemme hvilke tiltak; § 13 Saksbehandling av tiltak), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-11
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "11", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Rogaland"
+    nn: "Skulereglane i Rogaland"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Rogaland."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Rogaland."
+  paragrafer: [rogaland-skoleregler/9, rogaland-skoleregler/10, rogaland-skoleregler/11]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler og skoledemokrati for elever, Rogaland", url: "https://lovdata.no/dokument/LF/forskrift/2026-04-28-681" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 9 Generelt om saksbehandling ved brudd på reglene om orden og atferd; § 10 Alminnelige sanksjoner; § 11 Særlige sanksjoner), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-40
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "40", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Telemark"
+    nn: "Skulereglane i Telemark"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Telemark."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Telemark."
+  paragrafer: [telemark-skoleregler/6-1, telemark-skoleregler/6-2, telemark-skoleregler/6-3]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler for videregående skoler, Telemark fylkeskommune", url: "https://lovdata.no/dokument/LF/forskrift/2024-12-10-3620" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 6-1 Alminnelige sanksjoner; § 6-2 Særlige sanksjoner; § 6-3 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-55
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "55", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Troms"
+    nn: "Skulereglane i Troms"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Troms."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Troms."
+  paragrafer: [troms-skoleregler/5-1, troms-skoleregler/5-2, troms-skoleregler/5-3]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Troms", url: "https://lovdata.no/dokument/LF/forskrift/2025-05-28-1527" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 5-1 Alminnelige konsekvenser; § 5-2 Særlige konsekvenser; § 5-3 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-50
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "50", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Trøndelag"
+    nn: "Skulereglane i Trøndelag"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Trøndelag."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Trøndelag."
+  paragrafer: [trondelag-skoleregler/6]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Trøndelag", url: "https://lovdata.no/dokument/LF/forskrift/2024-06-11-1087" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 6 Konsekvenser av brudd på skolereglene (orden og oppførsel)), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-39
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "39", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Vestfold"
+    nn: "Skulereglane i Vestfold"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Vestfold."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Vestfold."
+  paragrafer: [vestfold-skoleregler/5-1, vestfold-skoleregler/5-2, vestfold-skoleregler/5-3, vestfold-skoleregler/5-4]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Vestfold", url: "https://lovdata.no/dokument/LF/forskrift/2025-06-17-1270" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 5-1 Generelt om saksbehandling; § 5-2 Alminnelige sanksjoner; § 5-3 Særlige sanksjoner; § 5-4 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-46
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Vestland"
+    nn: "Skulereglane i Vestland"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Vestland."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Vestland."
+  paragrafer: [vestland-skoleregler/8, vestland-skoleregler/12, vestland-skoleregler/13, vestland-skoleregler/16]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skulereglar, Vestland fylkeskommune", url: "https://lovdata.no/dokument/LF/forskrift/2026-06-16-1587" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 8 Sanksjonar ved brot på skulereglane; § 12 Saksbehandling; § 13 Prosess ved klage; § 16 Pålagt skulebyte), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"
+
+- id: sr-fylke-31
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "31", forhold: supplerer }
+  tittel:
+    nb: "Skolereglene i Østfold"
+    nn: "Skulereglane i Østfold"
+  tekst:
+    nb: "Paragrafene om tiltak og reaksjoner når elever bryter reglene, saksbehandlingen og klage i forskriften om skoleregler for Østfold."
+    nn: "Paragrafane om tiltak og reaksjonar når elevar bryt reglane, saksbehandlinga og klage i forskrifta om skulereglar for Østfold."
+  paragrafer: [ostfold-skoleregler/10, ostfold-skoleregler/11]
+  kilder:
+    - { id: lovdata-lokale, punkt: "Forskrift om skoleregler for de offentlige videregående skolene, Østfold", url: "https://lovdata.no/dokument/LF/forskrift/2024-06-19-1404" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er paragrafene riktig valgt ut (§ 10 Tiltak og reaksjoner; § 11 Rettigheter og plikter ved bruk av tiltak og reaksjoner), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?"

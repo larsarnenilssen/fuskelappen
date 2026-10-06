@@ -687,6 +687,41 @@ kilder:
       yrkesfaglig rekvalifisering. Kildesjekken leser oversiktssiden. Stegene i veiviseren «Rett, inntak og søknad»
       viser til undersidene.
 
+  - id: udir-rundskriv-skolemiljo
+    navn: Rundskriv om skolemiljø
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Udirs rundskriv om opplæringslova kapittel 12, sist endret 17.08.2026. Kapitlene har egne adresser. Kildesjekken
+      leser kapittel 6 om aktivitetsplikten. Veiviseren for aktivitetsplikten i Skolemiljø viser til avsnittene.
+
+  - id: udir-rundskriv-skolemiljo-statsforvalteren
+    navn: Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren
+    kortnavn: Rundskriv om skolemiljø, kap. 7
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Håndhevingsordningen (opplæringslova § 12-6). Kildesjekken følger kapittel 7 for seg, fordi det står på en egen
+      side.
+
   - id: udir-mer-opplaering
     navn: Rett til mer opplæring
     utgiver: Utdanningsdirektoratet

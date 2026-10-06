@@ -190,3 +190,95 @@ Ordlyden i høyre kolonne er et utkast og får kontrollspørsmål. Jeg har ikke 
 **Åpent:**
 - Om departementet har delegert klagen etter pl. §§ 3-1, 3-6 og 3-10, f.eks. til Udir eller statsforvalteren. Det er spurt i kontrollspørsmålene.
 - Skolemiljøet (fase 7) bruker den samme boksen for henvisningen til pl. § 2-4 («rektor» leses som «dagleg leiar»).
+
+---
+
+## Runde 3: skolemiljøet og Elevundersøkelsen (06.10.2026)
+
+PR-en med privatskolene og to kolonner er flettet ([#116](https://github.com/larsarnenilssen/jukselappen/pull/116)). Kildesjekken er startet, så teksten til privatskolelova og forskriften kommer inn i Lov og forskrift.
+
+### D. Mockup av skolemiljøet (i appen, på `test`)
+
+Ny del av appen, «Skolemiljø», i kategorien med samme navn på forsiden (avgjørelse 076).
+
+**D1. Veiviseren «Aktivitetsplikten»** (`#/skolemiljo/aktivitetsplikten`, egen farge: indigo):
+
+| Fase | Steg | Kilde |
+|---|---|---|
+| (start) | Hvor starter saken? Seks innganger: ingen sak ennå, du ser en krenkelse, mistanke, eleven sier det selv, en ansatt krenker, eleven eller foreldrene mener skolen ikke gjør nok | ol. § 12-2, rundskrivet 6.2.1 |
+| I hverdagen | Følge med, Gripe inn | ol. §§ 12-3, 12-4 første ledd, 13-4, rundskrivet 6.3.1–6.3.2 |
+| Melde fra | Melde fra til rektor, Når en som arbeider på skolen, krenker en elev | ol. §§ 12-4 andre ledd, 12-5, 10-8, rundskrivet 6.3.3–6.3.4 |
+| Undersøke og sette inn tiltak | Undersøke saken, Tiltak og tiltaksplan, Dokumentere, Følge opp og evaluere (spørsmål: har eleven det trygt og godt nå?), Eleven har det trygt og godt | ol. § 12-4, rundskrivet 6.3.5–6.5 |
+| Statsforvalteren | Melde saken til statsforvalteren (én uke, hva statsforvalteren vurderer, klage til Udir) | ol. §§ 12-6, 12-8, rundskrivet kap. 7–8 |
+
+- Hvert steg har ansvar, dokumentasjon og frist, som i Tilrettelegging.
+- **Privatskoler** (bryteren «Privatskole»): Melde fra, skjerpet plikt og statsforvalteren har boksen «For privatskoler».
+  - Der loven sier rektor, gjelder det daglig leder.
+  - Der den sier kommunen eller fylkeskommunen, gjelder det skolens styre (§§ 12-4 andre ledd og 12-5) eller skolen (§ 12-6).
+  - Heller ikke privatskoler kan klage på statsforvalterens vedtak.
+  - Kilde: privatskolelova § 2-4 og rundskrivet kap. 8.
+- **Ordet:** Rundskrivet kaller planen «tiltaksplan». Appen bruker det og nevner «aktivitetsplan» i parentes. Spørsmål til deg i kontrollspørsmålene.
+
+**D2. Siden «Skoleregler»** (`#/skolemiljo/skoleregler`, to kolonner på skrivebord):
+- **Venstre: reglene i loven, tre kort.**
+  - «Skolereglene er en forskrift» (ol. §§ 10-6 til 10-8)
+  - «Bortvisning» (ol. § 13-1)
+  - «Pålagt skolebytte» (ol. § 13-2)
+  - Hvert kort har en merknad for privatskoler (pl. §§ 5A-7, 3-10 og 2-4).
+- **Høyre: skolereglene i fylket.** For valgt fylke står paragrafene om reaksjoner, saksbehandling og klage åpne, med titlene fra Lovdata, og «Les hele skolereglene».
+  - Alle 15 fylker har et kort, med paragrafer valgt ut fra titlene. Hvert kort har et kontrollspørsmål om utvalget.
+  - Trøndelag har bare én paragraf om konsekvenser og ingen om saksbehandling.
+  - Fylker med egne skoleregler for voksne får en lenke til dem.
+- **Høyre: skolens egne regler.** For valgt skole står skolens forskrift når den finnes i Lovdata. Finnes den ikke der, står det at skolen likevel kan ha regler som ikke er kunngjort.
+- **Med «Privatskole» valgt** står det at fylkets skoleregler ikke gjelder, med henvisning til pl. § 5A-7.
+- **Videre:** lenker til aktivitetsplikten, orden og oppførsel og fylkessiden.
+
+**Spørsmål D:**
+1. Er inndelingen av veiviseren god, og mangler det steg (f.eks. informasjon til foreldrene som eget steg, eller samarbeid med barnevernet)?
+2. Skal skolereglene vise paragrafene som lenker (slik nå), eller teksten i paragrafene åpen på siden?
+3. Skal «Skolemiljø» ha flere oppslag, f.eks. det fysiske miljøet (ol. § 12-7 og forskriften om miljørettet helsevern)?
+
+### E. Elevundersøkelsen (forslag, ikke bygget)
+
+**Kilden:**
+- Udirs statistikkbank har et åpent API uten nøkkel: `api.statistikkbanken.udir.no/api/rest/v2/Eksport`.
+  - Tabell 152 har indeksene (skala 1–5) og tabell 154 mobbing (andel i prosent).
+  - Dataene er per skole (organisasjonsnummer, som i skoleregisteret), fylke og hele landet, per trinn (Vg1, Vg2 og Vg3) og skoleår. Nyeste skoleår er 2025–26.
+- **Lisens:** NLOD etter data.norge.no. Udirs vilkår krever kreditering («Inneholder data under NLOD, tilgjengeliggjort på data.udir.no»), som legges under «Om».
+- **Risiko:** Udir skriver at API-et «ikke er ment for ekstern bruk i dag, og vil endres uten varsel». Hentingen må derfor feile tydelig og beholde forrige datasett, som de andre hentingene (avgjørelse 049).
+
+**Forslag til innhold:**
+
+| Tas med | Hvorfor |
+|---|---|
+| **Mobbing på skolen** (andel mobbet) | Det viktigste tallet for skolemiljøet |
+| Mobbet av andre elever, digitalt og av voksne på skolen | Viser hvem som mobber. Mobbing fra voksne hører til den skjerpede plikten |
+| **Trivsel**, **Støtte fra lærer**, **Læringskultur** | Skolemiljøet i klassen |
+| **Felles regler**, **Elevdemokrati og medvirkning** | Skolereglene og elevrådet |
+| Mestring, Motivasjon, Vurdering for læring, Faglig utfordring | Læringsmiljøet. Kan tas med eller ikke (spør) |
+| Ikke med: Støtte hjemmefra, Utdanning og yrkesveiledning | Den siste gjelder bare Vg1 og rådgivingen på ungdomsskolen |
+
+**Forslag til visning** (siden «Elevundersøkelsen» i Skolemiljø):
+- **Valgt skole:** Hver indeks som en rad med skolen, fylket og landet side om side, per trinn (Vg1, Vg2 og Vg3), fordi API-et ikke har tall for alle trinn samlet.
+  - Appen regner ikke ut egne snitt, fordi det kan avsløre skjulte tall.
+- **Mobbing** står først og i prosent, med Udirs egen forklaring av hvem som regnes som mobbet. Forklaringen hentes fra Udir og kontrolleres før den skrives.
+- **Uten valgt skole:** fylket mot landet. **Uten valgt fylke:** bare landet.
+- **Privatskole valgt:** Tallene for skolen sammenlignes med landet for alle eierformer. Kan også vises mot privatskolene samlet (spør).
+- **Skoleår:** siste skoleår, og forrige år som en liten pil opp eller ned.
+
+**Små grupper og skjulte tall:**
+- **Skjermede tall:** Udir skjermer tall etter egne regler. Grensen er færre enn 20 svar bak tallet, og færre enn 30 for mobbing, og det finnes også andre regler.
+  - I API-et står skjermede tall som «\*». Appen viser «Skjermet» og en forklaring med lenke til Udirs skjermingsregler.
+  - Appen viser aldri et tall Udir har skjermet, og regner ikke ut tall som kan avsløre det.
+- **Manglende tall:** Har skolen ikke tall for et trinn (ingen elever eller ikke deltatt), står «Ingen tall for Vg2».
+- **Ingen tall om enkeltelever:** Appen henter bare tallene Udir publiserer for skolen, fylket og landet.
+
+**Henting:**
+- Et skript i kildesjekken (`npm run hent:elevundersokelsen`) lagrer tallene i `data/elevundersokelsen/`. Det er om lag 200 kB per skoleår, som lastes først når siden åpnes.
+- Elevundersøkelsen kommer én gang i året, så hentingen gjør bare noe når det er nye tall.
+
+**Spørsmål E:**
+1. Hvilke indekser skal med? Alle i tabellen, eller bare skolemiljøet (mobbing, trivsel, støtte fra lærer, læringskultur, felles regler og elevdemokrati)?
+2. Skal enkeltspørsmålene om mobbing (av elever, digitalt, av voksne) med, eller bare indeksen?
+3. Skal forrige skoleår vises?
+4. Privatskoler: Sammenlignes de med landet for alle eierformer eller med privatskolene?

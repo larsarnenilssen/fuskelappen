@@ -44,7 +44,7 @@ test.describe('favoritter og forsiden', () => {
     await expect(knapp).toHaveAttribute('aria-expanded', 'true');
     await knapp.click();
     await expect(knapp).toHaveAttribute('aria-expanded', 'false');
-    await expect(knapp.locator('.gruppe-sammendrag')).toHaveText('Testmodul for skolemiljø');
+    await expect(knapp.locator('.gruppe-sammendrag')).toHaveText('Skolemiljø, Testmodul for skolemiljø');
     await expect(page.locator('#forside-gruppe-skolemiljo')).toBeHidden();
     await page.reload();
     await expect(knapp).toHaveAttribute('aria-expanded', 'false');
