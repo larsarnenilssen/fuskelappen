@@ -91,9 +91,10 @@ test.describe('favoritter og forsiden', () => {
     await expect(page.locator('.forside-oppsett > .forsidegrupper [data-gruppe="favoritter"]')).toHaveCount(0);
     // Kolonnen står fast under toppfeltet når siden rulles.
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    const topp = await kolonne.evaluate((e) => Math.round(e.getBoundingClientRect().top));
     const fast = await kolonne.evaluate((e) => Math.round(parseFloat(getComputedStyle(e).top)));
-    expect(topp).toBe(fast);
+    // Høyden på kolonnen regnes ut på nytt i neste bilde etter rullingen (Sidekolonne i Forside.tsx), så kolonnen
+    // står fast først da. I WebKit kan den stå et par piksler høyere før det.
+    await expect.poll(() => kolonne.evaluate((e) => Math.round(e.getBoundingClientRect().top))).toBe(fast);
     // Slått av står en smal skinne med antall favoritter, og valget huskes.
     await page.evaluate(() => window.scrollTo(0, 0));
     await kolonne.getByRole('switch', { name: 'Sidekolonne' }).click();
