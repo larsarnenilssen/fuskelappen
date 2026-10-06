@@ -546,7 +546,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - 0.38.1 (06.10.2026): alle løp fra Grep, VIGO og utdanning.no, merket når bare én kilde har dem (avgjørelse 070). Samme versjon har like høye knapper på forsiden, klokkeslettet under tittelen i Kalenderen, søk på «kalender» uten doble treff, ingen kildeliste på oversiktssidene og ingen komma foran siste «og»/«eller» i oppramsinger (testes).
 - 0.38.2 (06.10.2026): «Bytte vei» uten kilder i kortene (kildene lukket under og på siden overgangen går til), og overgangene lærekandidat → elev og lærling → Vg3 i skole (avgjørelse 069).
 - 0.38.3 (06.10.2026): regelverket og kildene som lukkede rader nederst i alle kort og bokser (avgjørelse 071), og tilbake til samme sted: åpne kort og rulleposisjonen huskes for siden (avgjørelse 072).
-- **Pakke 7 – Mer opplæring** (eier 06.10.2026) tas før fase 7. Det blir en side i Inntak om retten til mer opplæring (forskrift til opplæringslova § 5-2 og Udirs veiledninger), med lenker fra Vurdering, Lærlinger og kandidater, Tilrettelegging, Kalenderen og veiviseren for rett til inntak. Arbeidsordren står i `docs/arbeidsordrer/fase-6-pakke-7-mer-opplaering.md`.
+- Pakke 7 er levert i 0.39.0 (06.10.2026): **Mer opplæring** i Inntak (forskrift til opplæringslova § 5-2 og Udirs veiledninger), med lenker fra Vurdering, Lærlinger og kandidater, Tilrettelegging, Kalenderen og veiviseren for rett til inntak, og deler av siden som kan lukkes (avgjørelse 073). Overleveringen står i `docs/arbeidsordrer/fase-6-pakke-7-mer-opplaering.md`.
 
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
 

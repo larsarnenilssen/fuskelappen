@@ -138,3 +138,54 @@ test.describe('poengberegning ved inntak', () => {
     await expect(navn).toHaveCount(0);
   });
 });
+
+// Mer opplæring (fase 6, pakke 7): siden i Inntak, overskriftene som kan lukkes, steget i veiviseren og søket.
+test.describe('mer opplæring', () => {
+  const SIDE = './#/inntak/mer-opplaering';
+
+  test('fra Inntak til siden: «Hvem har rett?» er åpen, og de andre delene viser kortene til de åpnes', async ({ page }) => {
+    await page.goto('./#/inntak');
+    await page.getByRole('link', { name: /Mer opplæring i fag som ikke er bestått/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Mer opplæring');
+    await expect(page.locator('.brodsmuler')).toContainText('Inntak');
+    const hvem = page.locator('.seksjon-knapp', { hasText: 'Hvem har rett?' });
+    await expect(hvem).toHaveAttribute('aria-expanded', 'true');
+    // Regelverket og kildene står nederst i samme boks som tabellen (eier 06.10.2026).
+    await expect(page.locator('.tosidig-boks .kortfot .veiviser-regelverk summary')).toContainText(/I regelverket \(\d+\)/);
+    const vurdering = page.locator('.seksjon-knapp', { hasText: 'Vurdering' });
+    await expect(vurdering).toHaveAttribute('aria-expanded', 'false');
+    const seksjon = page.locator('.seksjon', { has: vurdering });
+    await expect(seksjon.locator('.seksjon-innhold')).toContainText('Trekket til eksamen');
+    await expect(seksjon.locator('.innholdskort').first()).toBeHidden();
+    await vurdering.click();
+    await expect(vurdering).toHaveAttribute('aria-expanded', 'true');
+    await expect(seksjon.locator('.innholdskort', { hasText: 'Førstegangsvitnemål' })).toBeVisible();
+  });
+
+  test('?del= åpner delen og kortet', async ({ page }) => {
+    await page.goto(`${SIDE}?del=mo-iop-fullforing`);
+    await expect(page.locator('.seksjon-knapp', { hasText: 'Individuelt tilrettelagt opplæring' })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator('#mo-iop-fullforing .innholdskort-knapp')).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator('#mo-iop-fullforing')).toContainText('sakkyndig vurdering');
+  });
+
+  test('veiviseren spør om fag som ikke er bestått, og «Ja» ender i mer opplæring', async ({ page }) => {
+    await page.goto(`${VEIVISER}?steg=sk-ikke-bestatt&svar=norsk.ja.nei`);
+    const steg = page.locator('.veiviser-stegtittel');
+    await expect(steg).toHaveText(['Fag som ikke er bestått']);
+    await page.getByRole('link', { name: 'Ja', exact: true }).click();
+    await expect(page).toHaveURL(/steg=sk-mer-opplaering&svar=norsk\.ja\.nei\.ja$/);
+    await expect(steg).toHaveText(['Mer opplæring']);
+    await expect(page.locator('.veiviser-stegnr').last()).toHaveText(/^Her ender veien/);
+    await page.locator('.veiviser-steg').getByRole('link', { name: 'Mer opplæring', exact: true }).click();
+    await expect(page.locator('main h1')).toHaveText('Mer opplæring');
+  });
+
+  test('søk på «meropplæring» og «meiropplæring» i ett ord finner siden', async ({ page }) => {
+    for (const q of ['meropplæring', 'meiropplæring']) {
+      await page.goto(`./#/sok?q=${q}`);
+      await expect(page.getByRole('link', { name: /Mer opplæring/ }).first()).toBeVisible();
+    }
+  });
+});
+

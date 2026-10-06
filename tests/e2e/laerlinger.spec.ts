@@ -146,3 +146,41 @@ test.describe('lærlinger og kandidater på skrivebord', () => {
     expect(venstre && hoyre && hoyre.x > venstre.x + venstre.width - 1).toBe(true);
   });
 });
+
+// Fase 6, pakke 7 (eier 06.10.2026): eget utgangspunkt for prøven som ikke er bestått, og «Om veien» uten tomrom.
+test.describe('lærlinger og kandidater: prøven ikke bestått', () => {
+  test.use({ viewport: { width: 390, height: 844 } });
+
+  test('fag- eller svenneprøven ikke bestått: fire veier videre, og mer opplæring går til Inntak', async ({ page }) => {
+    await page.goto(`${SIDE}?fane=bytte`);
+    await page.getByRole('button', { name: 'Fag- eller svenneprøven ikke bestått' }).click();
+    await expect(page).toHaveURL(/fra=prove-ikke-bestatt$/);
+    const overganger = page.locator('.fb-overganger > li');
+    await expect(overganger).toHaveCount(4);
+    await expect(page.locator('.fb-overganger')).toContainText('Lærekandidat');
+    await page.locator('.fb-overganger a', { hasText: 'Mer opplæring på Vg3' }).click();
+    await expect(page).toHaveURL(/#\/inntak\/mer-opplaering$/);
+    await expect(page.locator('main h1')).toHaveText('Mer opplæring');
+  });
+
+});
+
+test.describe('lærlinger og kandidater: «Om veien» på stor skjerm', () => {
+  test.use({ viewport: { width: 1280, height: 900 } });
+
+  test('feltene fyller bredden to og to, også uten «Voksne»', async ({ page }) => {
+    // Uten «Voksne»: fellesfagene står over to rader til høyre.
+    await page.goto(`${SIDE}/laerling-tidlig`);
+    await expect(page.locator('.fb-om .fb-fakta-hoy')).toHaveCount(1);
+    const melder = await page.locator('.fb-om .fb-fakta > div', { hasText: 'Melder opp' }).boundingBox();
+    const dok = await page.locator('.fb-om .fb-fakta > div', { hasText: 'Dokumentasjon' }).boundingBox();
+    const fellesfag = await page.locator('.fb-om .fb-fakta-hoy').boundingBox();
+    expect(melder && dok && Math.abs(melder.x - dok.x) < 2).toBe(true);
+    expect(melder && fellesfag && fellesfag.x > melder.x + melder.width - 1).toBe(true);
+    // Med «Voksne»: seks felt to og to, uten felt over to rader.
+    await page.goto(`${SIDE}/laerling`);
+    await expect(page.locator('.fb-om .fb-fakta > div', { hasText: 'Voksne' })).toBeVisible();
+    await expect(page.locator('.fb-om .fb-fakta-hoy')).toHaveCount(0);
+  });
+});
+

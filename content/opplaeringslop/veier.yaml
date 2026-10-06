@@ -672,6 +672,12 @@
       kilder:
         - { id: opplaeringsforskrifta, punkt: "§ 9-66 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-66" }
         - { id: udir-mer-opplaering, punkt: "3. Mer opplæring når fag- eller svenneprøven ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring--nar-fag--eller-svenneproven-ikke-er-bestatt/" }
+    - til: vei-laerekandidat
+      vilkar:
+        nb: "Lærekontrakten kan bare endres til en opplæringskontrakt som lærekandidat med samtykke fra fylkeskommunen, som kan godkjenne kontrakter som avviker fra det fastsatte løpet. Lov og forskrift har ingen egen regel om å bytte etter en prøve som ikke er bestått."
+        nn: "Lærekontrakten kan berre endrast til ein opplæringskontrakt som lærekandidat med samtykke frå fylkeskommunen, som kan godkjenne kontraktar som vik av frå det fastsette løpet. Lov og forskrift har inga eiga regel om å byte etter ei prøve som ikkje er bestått."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 7-2 andre og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
@@ -679,9 +685,11 @@
     - { id: opplaeringsforskrifta, punkt: "§ 9-66 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-66" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-67", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-67" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-66 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-66" }
+    - { id: opplaeringslova, punkt: "§ 7-2 andre og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
   kontrollert: null
   kontrollsporsmal:
     - "Eget utgangspunkt etter eiers ønske 06.10.2026. Er de tre veiene (mer opplæring, ny eller utsatt prøve, lengre eller ny kontrakt) de riktige?"
+    - "Bytte til lærekandidat etter en prøve som ikke er bestått bygger bare på ol. § 7-2 (endring av kontrakt med samtykke). Er overgangen riktig, og bør den si at kontrakten må være i kraft (praksislisten, «laerling-til-laerekandidat-etter-prove»)?"
     - "Gjelder ny og utsatt prøve også kandidater med Vg3 i skole, der fylkeskommunen melder opp (§ 9-66 andre ledd)?"
 
 - id: fra-ferdig-fagbrev

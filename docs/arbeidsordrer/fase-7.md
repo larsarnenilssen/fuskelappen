@@ -22,8 +22,8 @@ Vi starter fase 7 i Jukselappen (repo `larsarnenilssen/jukselappen`, appen på h
 - `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md` («Åpent etter pakke 6»)
 
 **Status:**
-- Fase 6 er levert. Siste versjon er 0.38.3 (06.10.2026).
-- Pakke 7 (mer opplæring, `docs/arbeidsordrer/fase-6-pakke-7-mer-opplaering.md`) tas før fase 7 (eier 06.10.2026). Se der om den er levert.
+- Fase 6 er levert, også pakke 7 (mer opplæring, `docs/arbeidsordrer/fase-6-pakke-7-mer-opplaering.md`). Siste versjon er 0.39.0 (06.10.2026).
+- Nye lange sider kan bruke delene som kan lukkes (`Seksjon`, avgjørelse 073).
 - Fase 6 består av:
   - Vurdering, fraværsgrensen, eksamen og klage
   - fylkene og de lokale forskriftene
