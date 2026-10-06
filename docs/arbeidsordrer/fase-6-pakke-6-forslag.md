@@ -112,15 +112,7 @@ Innholdet i mockupen er et utkast. Det står i `src/modules/opplaeringslop/fagbr
 
 ## Spørsmål til eier
 
-1. **Designet:** Er fanene, de fargede stegknappene og sidene for hver vei slik du så for deg? Skal noe flyttes eller tas bort?
-2. **Fargene:** skole blå, kontrakt i bedrift rav, praksis grønn og prøven bær. Passer de, eller skal bedriften ha en annen farge?
-3. **Kompetansebevis:** Mockupen har bare lærekandidat. Kompetansebevis gis også til elever som ikke oppfyller kravene til vitnemål eller fagbrev (ofo. § 9-51 første ledd). Skal den veien med, f.eks. «Elev med kompetansebevis»?
-4. **Utgangspunktet «Lærling»** har bare overgangen til lærekandidat (ol. § 7-2 andre ledd). Skal det også stå hva som skjer når kontrakten heves (ol. § 7-3), f.eks. formidling til ny læreplass eller Vg3 i skole?
-5. **Det som ikke står i nasjonale kilder** (listen i arbeidsordren, f.eks. fellesfag for lærekandidater og i TAF/YSK): Mockupen skriver «Ikke funnet i nasjonale kilder» der det gjelder. Skal det stå synlig slik, eller bare som kontrollspørsmål til deg?
-6. **Udirs kilder er uenige** om særløp (merknaden til § 7-6: læreplass etter Vg3, Udir-1: kontrakt etter Vg1). Mockupen følger Udir-1 og sier «kontrakt etter Vg1». Er det riktig?
-7. **Nasjonale rammer for yrkesfaglig opphenting (2018)** har hjemmel i den gamle loven. Kan de brukes som kilde, med en merknad om det?
-8. **Stor skjerm:** Skal veiene stå i to kolonner fra 64rem, og «Sammenlign» bli bredere, som kalkulatorene?
-9. **VIGO og fagarkene:** Du ønsket at VIGO også kontrollerer fagarkene, og VIGO og Grep er uenige om «bygger på» for noen tilbud (`docs/TILBUDSSTRUKTUR.md`). Skal det tas i denne pakken, eller som en egen pakke etterpå?
+Spørsmålene er lagt fram på nytt etter runde 2, med valget, hva appen sier i dag og en anbefaling. Se «Spørsmål til eier (lagt fram på nytt 06.10.2026)» nederst.
 
 ## Svar fra eier (06.10.2026, runde 1) og endringer i runde 2
 
@@ -141,3 +133,116 @@ Eier liker plasseringen, ikonet, sammenligningen og at veiene har hver sin fane.
   - Faktaene står i rammen «Om veien», i to kolonner på stor skjerm.
   - «Kommer fra» har ikonet «sted» (en nål på kartet) i stedet for pil tilbake. Det samme ikonet står ved «Hvor er du nå?» i «Bytte vei».
 - **«Veiene hit»** på prøvesiden er et lukket kort under prøvene, med veiene gruppert etter prøven de fører til.
+
+## Spørsmål til eier (lagt fram på nytt 06.10.2026)
+
+«I appen i dag» viser hva som står i appen nå (begrepene, prøvesiden, veiviserne). «I mockupen» viser hva utkastet sier. Ingenting av dette er kontrollert.
+
+### A. Valg om siden
+
+**1. Navnet og adressen**
+- **Valget:** «Lærlinger og kandidater» (runde 2) eller «Fag- og svennebrev» (avtalt 04.10.2026).
+- **I appen i dag:** Siden heter «Lærlinger og kandidater» i mockupen. Adressen er fortsatt `#/opplaeringslop/fag-og-svennebrev`. Prøvesiden i Vurdering heter «Fag- og svenneprøven og de andre prøvene».
+- **Anbefaling:**
+  - Navnet «Lærlinger og kandidater», og adressen `#/opplaeringslop/laerlinger-og-kandidater`.
+  - «Fag- og svennebrev», «fagbrev» og «svennebrev» blir stikkord, så søket finner siden.
+
+**2. Designet og fargene**
+- **Valget:** Godkjenner du designet fra runde 2? Det gjelder fanene, stien på mobil, raden på skrivebord, «Om veien», ikonene og de lukkede kortene. Fargene er skole blå, kontrakt i bedrift rav, praksis grønn og prøven bær.
+- **I appen i dag:** Fargene finnes fra før. Skole, bedrift og praksis bruker fagtypefargene på fagarket, og bær er fargen til Vurdering.
+- **Anbefaling:** Behold fargene. Ende-til-ende-testene skrives først når du har godkjent designet.
+
+**3. Kompetansebevis for elever**
+- **Valget:**
+  - Skal målet «Kompetansebevis» bare ha lærekandidaten?
+  - Eller også elever som ikke oppfyller kravene til vitnemål eller fagbrev, eller som bare har hatt deler av et fag (ofo. § 9-51 første ledd)?
+- **I appen i dag:**
+  - Begrepet «Vitnemål og kompetansebevis» sier begge deler.
+  - På prøvesiden står kompetanseprøven med «Hvem: Lærekandidater. Gir: Kompetansebevis.»
+  - I mockupen er lærekandidat eneste vei til kompetansebevis.
+- **Anbefaling:** Ingen egen vei for elevene, fordi kompetansebeviset der er dokumentasjon på et løp som ikke er fullført, ikke et mål man velger. Én linje under målet «Kompetansebevis» viser til begrepet.
+
+**4. Når kontrakten sies opp eller heves**
+- **Valget:** Skal «Lærling» (og lærekandidat og praksisbrevkandidat) få en overgang for oppsigelse og heving av kontrakten?
+- **Hva loven sier (ol. § 7-3 og § 7-4):**
+  - Kontrakten kan sies opp når partene er enige.
+  - Fylkeskommunen hever den når den som har læretid, ikke vil fortsette, og kan heve ved vesentlige brudd.
+  - Lærebedriften skriver ut en attest, og arbeidsavtalen faller bort.
+  - Fristene for formidling gjelder ikke for dem som formidles i samarbeid med oppfølgingstjenesten (ofo. § 7-5 fjerde ledd).
+- **I appen i dag:** Ingenting om oppsigelse eller heving. «Kommer fra» og «Veien videre» har bare endring av kontrakten (ol. § 7-2 andre ledd).
+- **Anbefaling:**
+  - Ta med en overgang som sier det loven sier.
+  - Ingen påstand om hva som skjer etterpå (ny læreplass, Vg3 i skole), fordi det ikke står i kildene. Det blir et kontrollspørsmål.
+
+**5. Det som ikke står i nasjonale kilder: synlig eller bare til deg?**
+- **I appen i dag:** Begge deler finnes.
+  - Uklare punkter er kontrollspørsmål, som bare vises i kontrolloversikten.
+  - Praksis som ikke står i kildene, står i praksislisten (`content/kontroll/praksis.yaml`) og vises heller ikke i appen.
+  - Noen steder sier teksten det rett ut der brukeren trenger det, f.eks. at poengene for inntaksområde ikke står i forskriften, og at hurtigklage ikke står i forskriften.
+  - I mockupen står «Står i planen for kandidaten. Ikke funnet i nasjonale kilder.» om fellesfag for lærekandidater.
+- **Anbefaling:** Følg det som gjøres i dag.
+  - Synlig, med egne ord, bare der brukeren må gjøre noe annet, f.eks. «Fellesfagene står i planen for kandidaten. Forskriften har ingen egen regel.»
+  - Resten blir kontrollspørsmål.
+  - Ordet «nasjonale kilder» tas bort fra appen.
+
+**6. Veiene i to kolonner på stor skjerm**
+- **I appen i dag:** Etter runde 2 står stegene i én rad på skrivebord, og veiene i én kolonne.
+- **Anbefaling:** Behold én kolonne. Kortene åpnes, og to kolonner gir hopp i rekkefølgen når et kort åpnes.
+
+**7. VIGO og Grep**
+- **I appen i dag:**
+  - VIGO kontrollerer allerede fagarkene (avgjørelse 057). Årstimetallet og trekkordningen i Grep sjekkes mot VIGO, og avvik er merket på fagarket («Grep og VIGO er uenige om faget. Appen bruker Grep.»).
+  - Løpene (hva et tilbud bygger på) sammenlignes med Grep, VIGO og utdanning.no. Det er 72 uenigheter: 61 står bare i Grep (vist og merket i appen), 7 står i Grep og VIGO, ikke i utdanning.no, 2 bare i VIGO, 1 i Grep og utdanning.no, ikke i VIGO, og 1 bare i utdanning.no (`docs/TILBUDSSTRUKTUR.md`).
+- **Valget:** Skal de 72 gås gjennom med deg i denne pakken, eller i en egen runde etterpå?
+- **Anbefaling:** En egen runde etter pakke 6. Ingen av veiene på siden avhenger av dem.
+
+### B. Kildene er uklare eller uenige
+
+**8. Særløp**
+- **Uenigheten:** Merknaden til ofo. § 7-6 sier læreplass etter Vg3, mens Udir-1 (vedlegg 1, 3.4.3) sier bare Vg1 i skole og tre års læretid.
+- **I appen i dag:** Begrepene «Trinn» og «Opplæring i bedrift» følger Udir-1: «noen har bare vg1 i skole og tre års læretid (særløp)». Mockupen sier det samme («Lærekontrakt etter Vg1 (1+3) eller særløp»).
+- **Anbefaling:** Følg Udir-1, med kontrollspørsmål. Merknaden leses på nytt før teksten skrives.
+
+**9. Nasjonale rammer for yrkesfaglig opphenting (2018)**
+- **I appen i dag:** Begrepet «Yrkesfaglig opphenting» bygger bare på Udir-1 (3.4.2) og læreplanen YFO2002 i Grep, ikke på rammene. Mockupen har rammene som kilde for veien fra Vg1 studieforberedende.
+- **Anbefaling:** Ikke bruk rammene, som har hjemmel i den gamle loven. Udir-1 og Grep dekker det veien trenger.
+
+**10. Merknadene viser til «opplæringsloven § 7-7 tredje ledd»**
+- **Problemet:** Merknadene til ofo. § 6-3, § 6-4, § 7-1, § 7-3 og § 7-6 viser dit. § 7-7 tredje ledd er hjemmelen for forskrift om formidling. Hjemmelen for kontrakter som avviker fra opplæringsløpet, er § 7-2 fjerde og femte ledd. Forskriften § 6-3 viser selv til § 5-2 tredje ledd.
+- **I appen i dag:** Begrepene (lærekandidat, praksisbrev) og mockupen viser til ol. § 7-2.
+- **Anbefaling:** Vis til lovteksten (§ 7-2), ikke til merknaden, og legg inn et kontrollspørsmål.
+
+**11. § 9-64 viser til ol. § 7-4 sjette ledd for målene til lærekandidaten**
+- **Problemet:** Det leddet handler om individuell tilrettelegging, ikke om opplæringsmål.
+- **I appen i dag:** Begrepet «Lærekandidat» sier «de målene som er fastsatt for opplæringen hans eller hennes», og har dette som kontrollspørsmål. Mockupen sier det samme.
+- **Anbefaling:** Behold det slik.
+
+**12. Unntak for fremmedspråk i merknadene til § 9-46 og § 9-48**
+- **Problemet:** Unntaket står i merknadene, men ikke i paragrafene. Unntakene i § 9-48 andre ledd er bokstav a–f.
+- **I appen i dag:** «Krav før prøven» på prøvesiden følger paragrafene og nevner ikke fremmedspråk. Mockupen nevner det ikke.
+- **Anbefaling:** Følg paragrafene, med kontrollspørsmål.
+
+**13. Ikke funnet i kildene**
+
+| Punkt | I appen i dag | I mockupen | Anbefaling |
+|---|---|---|---|
+| Fellesfag for lærekandidater | Ikke omtalt | «Står i planen for kandidaten» | Synlig med egne ord (punkt 5) |
+| Fellesfag i TAF/YSK og vekslingsmodeller | Ikke omtalt noe sted | Ikke omtalt | Utenfor pakke 6. Kan bli en egen vei når kildene finnes. |
+| Godskriving når lærekandidaten blir lærling | Begrepet «Lærekandidat» har kontrollspørsmål om § 6-9 tredje ledd | «Læretiden godskrives etter en konkret vurdering» (§ 6-9 tredje ledd) | § 6-9 tredje ledd gjelder godskriving for lærekandidater, ikke uttrykkelig overgangen. Teksten skrives om til det loven sier, med kontrollspørsmål. |
+| Nedre aldersgrense for yrkesfaglig rekvalifisering | Veiviseren for rett og inntak sier «ingen øvre aldersgrense» og at opplæringen gis som opplæring for voksne | «Voksne har rett til én ny sluttkompetanse» | Ingen aldersgrense i teksten, med kontrollspørsmål |
+| Krav om grunnskole for praksiskandidater | Begrepet «Praksiskandidat» nevner ikke grunnskole | Nevner ikke grunnskole | Som i dag |
+
+**14. «En elev kan når som helst bli lærekandidat»**
+- **I appen i dag:** Begrepet sier «etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten» (runde 4), med kontrollspørsmål. Mockupen sier det samme.
+- **Anbefaling:** Behold det.
+
+### C. Funnet underveis
+
+**15. Retten til Vg4 påbygging**
+- **Lovteksten:** Retten varer ut skoleåret som starter det året man fyller 24, og etter det gjelder reglene for voksne (ol. § 5-7).
+- **I appen i dag:**
+  - Veiviseren for rett og inntak sier det samme som loven.
+  - Begrepet «Påbygging» sier «fullført og bestått … innen utgangen av året vedkommende fyller 24» (Udir-1, 3.5.3) og har et kontrollspørsmål om det.
+  - Mockupen sa det samme som begrepet, og er nå rettet til lovteksten.
+- **Valget:** Skal begrepet følge loven?
+- **Anbefaling:** Ja, med Udir-1 som kilde ved siden av.

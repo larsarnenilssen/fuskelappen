@@ -568,8 +568,8 @@ export const UTGANGSPUNKTER: Utgangspunkt[] = [
       {
         til: 'vg4',
         vilkar:
-          'Rett til ett år påbygging når fagbrevet er tatt innen utgangen av året man fyller 24.',
-        kilder: ['ol. § 5-1', 'Udir-1-2026 vedlegg 1, 3.5.3'],
+          'Retten varer ut skoleåret som starter det året man fyller 24. Etter det gjelder reglene for voksne.',
+        kilder: ['ol. § 5-7', 'Udir-1-2026 vedlegg 1, 3.5.3'],
       },
       {
         til: 'nytt-fagbrev',
