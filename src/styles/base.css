@@ -4917,16 +4917,6 @@ p.fagkort-tittel {
 }
 
 /* Lenkene til punktet i avtaleteksten under hver bestemmelse i en avtale. */
-.lov-avtalekilder {
-  margin: var(--rom-2) 0;
-  padding: 0;
-  list-style: none;
-}
-
-.lov-avtalekilder li + li {
-  margin-top: var(--rom-1);
-}
-
 /* Veiviser (avgjørelse 041). Mobil: fasestolpe, veien hit som en linje med punkter, det gjeldende steget som kort på
    linjen, og veien videre (spørsmål og knapper) under kortet. Stor skjerm: prosessen med fasene og stegene i en
    kolonne til venstre, kortet og knappene til høyre. */

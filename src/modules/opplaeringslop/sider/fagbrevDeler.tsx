@@ -6,8 +6,9 @@ import { useEffect, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
 import { Kortfot, KortfotRader } from '../../../components/Kortfot.tsx';
+import { unikeKilder } from '../../../components/kilderader.ts';
 import type { KildeRef, Veidel, Veielement } from '../../../core/innhold/skjema.ts';
-import { harKontrakt, paragraferFra, unikeKilder, type Veiinnhold } from '../fagbrev/data.ts';
+import { harKontrakt, type Veiinnhold } from '../fagbrev/data.ts';
 
 const DELER: readonly Veidel[] = ['skole', 'bedrift', 'praksis', 'prove'];
 
@@ -120,8 +121,7 @@ export function Fakta({ vei, data, med = 'kort' }: { vei: Veielement; data: Veii
  */
 export function Kildefot({ kilder, fot = false }: { kilder: readonly KildeRef[]; fot?: boolean }) {
   const unike = unikeKilder(kilder);
-  const paragrafer = paragraferFra(unike);
-  return fot ? <Kortfot paragrafer={paragrafer} kilder={unike} /> : <KortfotRader paragrafer={paragrafer} kilder={unike} />;
+  return fot ? <Kortfot kilder={unike} /> : <KortfotRader kilder={unike} />;
 }
 
 /**

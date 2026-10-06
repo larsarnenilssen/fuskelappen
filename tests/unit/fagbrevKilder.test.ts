@@ -1,7 +1,7 @@
-// Regelverket og kildene nederst i kortene om lærlinger og kandidater (eier 06.10.2026): paragrafene til «I regelverket»
+// Regelverket og kildene nederst i kort og bokser (Kortfot, eier 06.10.2026, avgjørelse 071): paragrafene til «I regelverket»
 // hentes fra kildene, og kildene står bare én gang.
 import { describe, expect, it } from 'vitest';
-import { paragraferFra, unikeKilder } from '../../src/modules/opplaeringslop/fagbrev/data.ts';
+import { paragraferFra, unikeKilder } from '../../src/components/kilderader.ts';
 
 describe('kildene nederst i kortene', () => {
   it('paragrafene i lov og forskrift blir lenker til Regelverk, hver paragraf én gang', () => {

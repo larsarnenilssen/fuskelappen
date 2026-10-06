@@ -7,6 +7,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - **Lærlinger og kandidater:** Regelverket og kildene står som lukkede rader nederst i kortene og boksene («I regelverket» og «Kilder»), som ellers i appen. Det gjelder veiene, «Om veien», merknaden om kompetansebevis, sammenligningen og overgangene. «Mer om …» står over radene.
+- **Resten av appen:** Bestemmelsene i avtalene i Regelverk og forklaringene av delene i Arbeidsplan har kildene som en lukket rad, ikke en åpen liste. Kort med paragrafer i kildene viser også «I regelverket», f.eks. fraværsreglene og poengberegningen.
 
 ## [0.38.2] – 2026-10-06
 

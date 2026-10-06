@@ -5,7 +5,8 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { finnKilde, Kildelenke, Kildeliste } from '../../../components/Kildelenke.tsx';
+import { finnKilde, Kildeliste } from '../../../components/Kildelenke.tsx';
+import { KortfotRader } from '../../../components/Kortfot.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
@@ -33,13 +34,8 @@ function Bestemmelse({ avtale, element, apen }: { avtale: Avtaleinfo; element: I
       </div>
       <div id={id} class="od-underdel-innhold" hidden={lukket}>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: element.tekst[malform] }} />
-        <ul class="lov-avtalekilder liten">
-          {element.kilder.map((k) => (
-            <li key={`${k.id}-${k.punkt ?? ''}`}>
-              <Kildelenke kilde={k} />
-            </li>
-          ))}
-        </ul>
+        {/* Kildene som en lukket rad under teksten, som i kortene ellers i appen (eier 06.10.2026, avgjørelse 071). */}
+        <KortfotRader kilder={element.kilder} />
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ function BrukAvDel({ id }: { id: FordelingsdelId }) {
   const element = useArbeidstidElement(`bruk-${id.replace('_', '-')}`);
   return (
     <Forklaring tittel={t(`arbeidstid.fordeling.deler.${id}` as Tekstnokkel)}>
-      {element ? <Innholdstekst element={element} /> : <p class="dempet">{element === undefined ? t('app.lasterInn') : t('arbeidstid.metode.ikkeFunnet')}</p>}
+      {element ? <Innholdstekst element={element} iKort /> : <p class="dempet">{element === undefined ? t('app.lasterInn') : t('arbeidstid.metode.ikkeFunnet')}</p>}
     </Forklaring>
   );
 }

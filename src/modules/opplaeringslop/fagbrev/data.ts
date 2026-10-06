@@ -1,7 +1,6 @@
 // Veiene for lærlinger og kandidater og utgangspunktene med overgangene (fase 6, pakke 6, avgjørelse 069), fra
 // content/opplaeringslop/veier.yaml. Lastes først når siden eller søket trenger dem.
 import { useEffect, useState } from 'preact/hooks';
-import lovverk from '../../../../content/lovverk.yaml';
 import type { Flerspraak, Innholdselement, KildeRef, Utgangspunktelement, Vanligelement, Veielement } from '../../../core/innhold/skjema.ts';
 
 const filer = import.meta.glob<Innholdselement[]>('/content/opplaeringslop/*.yaml', { import: 'default' });
@@ -55,36 +54,6 @@ export const veiRute = (id: string) => `${FAGBREV_RUTE}/${veiAdresse(id)}`;
 export const fraAdresse = (id: string) => id.replace(/^fra-/, '');
 
 export type Overgang = Utgangspunktelement['overganger'][number];
-
-/** Lovene og forskriftene som står i Lov og forskrift (content/lovverk.yaml). */
-const LOVDOKUMENTER = new Set((lovverk as { dokumenter: { id: string }[] }).dokumenter.map((d) => d.id));
-
-/**
- * Paragrafene i kildene, til «I regelverket» nederst i kortene: «§ 5-1 andre ledd» i opplæringslova blir
- * `opplaeringslova/5-1`. Bare dokumenter som står i Lov og forskrift, og hver paragraf én gang.
- */
-export function paragraferFra(kilder: readonly KildeRef[]): string[] {
-  const ut: string[] = [];
-  for (const k of kilder) {
-    if (!LOVDOKUMENTER.has(k.id)) continue;
-    for (const m of (k.punkt ?? '').matchAll(/§\s*(\d+-\d+[a-z]?)/g)) {
-      const ref = `${k.id}/${m[1] ?? ''}`;
-      if (!ut.includes(ref)) ut.push(ref);
-    }
-  }
-  return ut;
-}
-
-/** Kildene uten dubletter (samme kilde og punkt), i rekkefølgen de står. */
-export function unikeKilder(kilder: readonly KildeRef[]): KildeRef[] {
-  const sett = new Set<string>();
-  return kilder.filter((k) => {
-    const n = `${k.id}|${k.punkt ?? ''}`;
-    if (sett.has(n)) return false;
-    sett.add(n);
-    return true;
-  });
-}
 
 /** Om veien har kontrakt i bedrift, så teksten om oppsigelse og heving hører hjemme der. */
 export const harKontrakt = (vei: Veielement) => vei.steg.some((s) => s.del === 'bedrift');

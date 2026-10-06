@@ -62,6 +62,8 @@ test.describe('regelverk', () => {
     await expect(page.getByText('Bestemmelsene er skrevet med egne ord')).toBeVisible();
     const boks = page.locator('[data-rubrikk="lov-hta-ansettelse"]');
     await expect(boks.getByRole('button', { name: '§ 2 Ansettelse', exact: true })).toHaveAttribute('aria-expanded', 'true');
+    // Kildene står som en lukket rad under teksten (avgjørelse 071).
+    await boks.locator('.veiviser-kilder:not(.veiviser-regelverk) summary').first().click();
     await expect(boks.getByRole('link', { name: /Kap\. 1 § 2/ })).toHaveAttribute('href', /#page=8$/);
     await boks.getByRole('link', { name: 'arbeidsmiljøloven § 14-3' }).click();
     await expect(page.getByRole('button', { name: /^§ 14-3 / })).toHaveAttribute('aria-expanded', 'true');
