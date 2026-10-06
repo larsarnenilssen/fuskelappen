@@ -461,6 +461,7 @@ export const nn: Tekster = {
       fag: 'Læreplanverket',
       tilrettelegging: 'Tilrettelegging',
       vurdering: 'Vurdering og eksamen',
+      skolemiljo: 'Skulemiljø',
       arbeidstid: 'Arbeidstid',
       forvaltning: 'Regelverk',
       ingen: 'Ingen omgrep har dette temaet.',

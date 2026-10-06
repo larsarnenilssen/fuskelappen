@@ -1,6 +1,6 @@
 // Oversikten i Eksamen og klage (eier 06.10.2026, avgjørelse 078): de fire kortene som stod under «Eksamen og klage» i
-// Vurdering. Eksamen og prøvene står ved siden av hverandre, og veiviseren for klage og kalenderen under (eier
-// 04.10.2026). Kortet for kalenderen viser den neste datoen.
+// Vurdering, i to deler: «Eksamen og prøver» med eksamen, prøvene og kalenderen, og «Klage» med veiviseren. Kortet for
+// kalenderen viser den neste datoen.
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -41,38 +41,51 @@ export default function Oversikt() {
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (
-        <Veiviserinnganger
-          veivisere={veivisere}
-          rute={veiviserRute}
-          foran={[
-            { id: 'eksamen', kort: <Inngang {...UNDERSIDER.eksamen} tittel={t('eksamen.eksamen.kort')} tekst={t('eksamen.eksamen.beskrivelse')} /> },
-            { id: 'provene', kort: <Inngang {...UNDERSIDER.provene} tittel={t('eksamen.provene.kort')} tekst={t('eksamen.provene.beskrivelse')} /> },
-          ]}
-          etter={[
-            {
-              id: 'frister',
-              // Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne kalenderen.
-              kort: (
-                <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
-                  <span class="frist-inngang-tittel">
-                    <Ikon navn={UNDERSIDER.frister.ikon} />
-                    {t('eksamen.frister.tittel')}
-                  </span>
-                  {neste ? (
-                    <span class="frist-inngang-neste">
-                      <span class="frist-inngang-etikett">{t('eksamen.frister.neste')}</span>
-                      <span class="frist-inngang-tid">{tidspunkt(neste, malform)}</span>
-                      <span>{neste.tittel[malform]}</span>
-                    </span>
-                  ) : (
-                    <span class="frist-inngang-neste">{t('eksamen.frister.beskrivelse')}</span>
-                  )}
-                  <Ikon navn="hoyre" class="frist-inngang-pil" />
-                </a>
-              ),
-            },
-          ]}
-        />
+        <>
+          {/* To deler med overskrift, som i de andre modulene (eier 06.10.2026): eksamen, prøvene og kalenderen under
+              én overskrift, og veiviseren for klage under sin egen. */}
+          <section class="lop-del" aria-labelledby="ek-del-eksamen">
+            <h2 class="liten-overskrift" id="ek-del-eksamen">
+              {t('eksamen.delEksamen')}
+            </h2>
+            <Veiviserinnganger
+              veivisere={[]}
+              rute={veiviserRute}
+              foran={[
+                { id: 'eksamen', kort: <Inngang {...UNDERSIDER.eksamen} tittel={t('eksamen.eksamen.kort')} tekst={t('eksamen.eksamen.beskrivelse')} /> },
+                { id: 'provene', kort: <Inngang {...UNDERSIDER.provene} tittel={t('eksamen.provene.kort')} tekst={t('eksamen.provene.beskrivelse')} /> },
+                {
+                  id: 'frister',
+                  // Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne kalenderen.
+                  kort: (
+                    <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
+                      <span class="frist-inngang-tittel">
+                        <Ikon navn={UNDERSIDER.frister.ikon} />
+                        {t('eksamen.frister.tittel')}
+                      </span>
+                      {neste ? (
+                        <span class="frist-inngang-neste">
+                          <span class="frist-inngang-etikett">{t('eksamen.frister.neste')}</span>
+                          <span class="frist-inngang-tid">{tidspunkt(neste, malform)}</span>
+                          <span>{neste.tittel[malform]}</span>
+                        </span>
+                      ) : (
+                        <span class="frist-inngang-neste">{t('eksamen.frister.beskrivelse')}</span>
+                      )}
+                      <Ikon navn="hoyre" class="frist-inngang-pil" />
+                    </a>
+                  ),
+                },
+              ]}
+            />
+          </section>
+          <section class="lop-del" aria-labelledby="ek-del-klage">
+            <h2 class="liten-overskrift" id="ek-del-klage">
+              {t('eksamen.delKlage')}
+            </h2>
+            <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
+          </section>
+        </>
       )}
     </div>
   );

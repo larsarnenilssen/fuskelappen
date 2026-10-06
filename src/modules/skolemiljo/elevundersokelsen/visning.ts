@@ -130,3 +130,14 @@ export function sterkestOgSvakest(d: Elevundersokelsen, serie: Serie, mot: Serie
   const antallHver = Math.min(3, Math.floor(alle.length / 2));
   return { sterkest: alle.slice(0, antallHver), svakest: antallHver === 0 ? [] : alle.slice(-antallHver).reverse() };
 }
+
+/**
+ * Det beste tallet i en rad i tabellen (eier 06.10.2026): høyest for indeksene og lavest for mobbing. Bare når minst to
+ * serier har tall, ellers null. Like tall er like gode, så alle med det beste tallet merkes. Er alle tallene like, er
+ * ingen best, og ingen merkes.
+ */
+export function beste(verdier: readonly Verdi[], type: 'mobbing' | 'indeks'): number | null {
+  const tall = verdier.filter((v): v is number => typeof v === 'number');
+  if (tall.length < 2 || tall.every((v) => v === tall[0])) return null;
+  return type === 'mobbing' ? Math.min(...tall) : Math.max(...tall);
+}

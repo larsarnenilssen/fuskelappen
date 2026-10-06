@@ -35,6 +35,9 @@ export default function Oversikt() {
         <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
         <ul class="vu-videre">
           <li>
+            <Inngang {...UNDERSIDER.kapittel12} tittel={t('skolemiljo.kapittel12.kort')} tekst={t('skolemiljo.kapittel12.beskrivelse')} />
+          </li>
+          <li>
             <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
           </li>
           <li>

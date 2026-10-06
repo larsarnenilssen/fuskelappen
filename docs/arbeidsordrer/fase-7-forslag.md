@@ -338,3 +338,26 @@ Ny del av appen, «Skolemiljø», i kategorien med samme navn på forsiden (avgj
 **Spørsmål G:**
 1. «Kort om» sammenligner med landet. Skal skolen heller sammenlignes med fylket?
 2. Skal «Om tallene» være åpen fra start?
+
+## Svar fra eier 06.10.2026 (runde 5)
+
+- Eksamen og klage skal ha overskrifter: Eksamen, Fag- og svenneprøven og Kalender for eksamen under én, og Klage på karakter under sin egen.
+- Kapittel 12 skal ha egen side i Skolemiljø (foretrukket) eller et utbrodert begrep.
+- Begreper fra de siste pakkene som mangler, tas inn.
+- Elevundersøkelsen: søk i skoler og fylker når seriene velges, og en markering av det beste resultatet i hver rad i tabellen.
+- Bekreftelse på at tallene i appen følger de to nyeste skoleårene av seg selv.
+- Spørsmål G1 og G2: Det er fint slik det er.
+
+## Runde 6 (gjort 06.10.2026, avgjørelse 077, 078 og 079)
+
+**H1. Eksamen og klage:** overskriftene «Eksamen og prøver» (Eksamen, Fag- og svenneprøven og Kalender for eksamen) og «Klage» (Klage på karakter).
+
+**H2. Et trygt og godt skolemiljø** (`#/skolemiljo/trygt-og-godt-skolemiljo`): kapittel 12 på én side i fem deler, elleve kort med kontrollspørsmål, de fem delpliktene og veien til statsforvalteren som illustrasjoner, og «Henger sammen med» (informasjon, fysiske inngrep, veiviseren, skolereglene og Elevundersøkelsen).
+
+**H3. Begrepene:** tolv nye begreper, og et nytt tema «Skolemiljø» der aktivitetsplikt, skoleregler og bortvisning også står.
+
+**H4. Elevundersøkelsen:** søk i seriene, ramme rundt det beste tallet i hver rad, og dataene fra main ved hver publisering.
+
+**Spørsmål H:**
+1. Skal kortet om fysiske inngrep (kapittel 13) stå på siden om kapittel 12, under «Henger sammen med»?
+2. Er tolv nye begreper riktig nivå, eller er noen for smale (f.eks. tvangsmulkt)?

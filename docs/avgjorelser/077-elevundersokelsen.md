@@ -21,3 +21,8 @@
 - **To kolonner på skrivebord** i et rutenett: «Kort om» over hele bredden, mobbingen og «Om tallene» til venstre, og læringsmiljøet og kildene til høyre. På mobil står delene i samme rekkefølge under hverandre. Tabellen står over hele bredden.
 - **Tabellen** har fast oppsett med like brede kolonner for seriene, ledelinjer og tallene til høyre.
 - **Bedre og svakere** enn året før (og enn landet i «Kort om») er grønt og rødt (`--farge-ok` og `--farge-feil`), alltid med pil (▲ ▼) og tekst for skjermlesere. For mobbing er lavere bedre. En endring som rundes til 0, får ingen pil.
+
+**Tillegg (runde 6, eier 06.10.2026):**
+- **Søk i seriene:** Hvert valg er et søkefelt med liste (combobox etter ARIA 1.2). Uten søk står landet og fylkene. Med søk står treffene blant landet, fylkene og skolene, og «vgs» finner «videregående». Listen viser opptil 40 skoler.
+- **Beste resultat i tabellen:** Det beste tallet i hver rad har en ramme i tekstfargen og fet skrift, med «best i raden» for skjermlesere. Høyest er best for indeksene og lavest for mobbing. Like tall merkes alle, men er alle tallene i raden like, merkes ingen.
+- **Publiseringen:** Dataene fra Elevundersøkelsen hentes fra main når appen publiseres, som Grep og skoleregisteret (avgjørelse 018). Et nytt skoleår kommer da med i appen uten ny versjon, når kildesjekken har hentet det.

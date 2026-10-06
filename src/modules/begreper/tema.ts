@@ -1,7 +1,7 @@
 // Temaene i begrepsbanken (eier 05.10.2026). Begrepene får tema etter filen de står i under content/begreper/, så et
 // nytt begrep får tema av seg selv. En ny fil må føres opp her (testes).
 
-export const begrepstemaer = ['inntak', 'fag', 'tilrettelegging', 'vurdering', 'arbeidstid', 'forvaltning'] as const;
+export const begrepstemaer = ['inntak', 'fag', 'tilrettelegging', 'vurdering', 'skolemiljo', 'arbeidstid', 'forvaltning'] as const;
 
 export type Begrepstema = (typeof begrepstemaer)[number];
 
@@ -15,6 +15,7 @@ export const TEMA_FOR_FIL: Readonly<Record<string, Begrepstema>> = {
   sprak: 'tilrettelegging',
   vurdering: 'vurdering',
   eksamen: 'vurdering',
+  skolemiljo: 'skolemiljo',
   arbeidstid: 'arbeidstid',
   ansettelse: 'arbeidstid',
   lov: 'forvaltning',

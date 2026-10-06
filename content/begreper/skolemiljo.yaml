@@ -1,0 +1,285 @@
+# Begreper om skolemiljøet (fase 7, eier 06.10.2026): opplæringslova kapittel 12 og 13, og Elevundersøkelsen.
+# Aktivitetsplikt, skoleregler og bortvisning stod i regelverk.yaml og er flyttet hit, så de får temaet «Skolemiljø».
+# Alle er ukontrollerte (kontrollert: null) til eier har sett på dem.
+- id: aktivitetsplikt
+  type: begrep
+  tittel: { nb: Aktivitetsplikt, nn: Aktivitetsplikt }
+  tekst:
+    nb: >-
+      Aktivitetsplikten betyr at alle som arbeider på skolen, skal følge med på hvordan elevene har det, gripe inn mot krenkelser om mulig og si fra til rektor ved mistanke om at en elev ikke har et trygt og godt skolemiljø. Skolen skal snarest undersøke saken, sette inn egnede tiltak og lage en skriftlig plan for tiltakene. Det som gjøres, skal dokumenteres. Se [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+    nn: >-
+      Aktivitetsplikta tyder at alle som arbeider på skulen, skal følgje med på korleis elevane har det, gripe inn mot krenkingar om mogleg og seie frå til rektor ved mistanke om at ein elev ikkje har eit trygt og godt skulemiljø. Skulen skal snarast undersøkje saka, setje inn eigna tiltak og lage ein skriftleg plan for tiltaka. Det som blir gjort, skal dokumenterast. Sjå [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør forklaringen nevne at rektor skal melde fra til fylkeskommunen i alvorlige tilfeller?"
+  stikkord: [aktivitetsplikt, skolemiljø, mobbing, krenkelser, 12-4, tiltaksplan]
+  relatert: [skoleregler]
+
+- id: skoleregler
+  type: begrep
+  tittel: { nb: Skoleregler, nn: Skulereglar }
+  tekst:
+    nb: >-
+      Skolereglene er en lokal forskrift fra fylkeskommunen om skoledemokratiet og om elevenes rettigheter og plikter, blant annet om orden og oppførsel. Skolereglene kan si hvilke tiltak som kan brukes når elever bryter reglene, og hvordan slike saker skal behandles. Se [opplæringslova § 10-7](#/lov/opplaeringslova/10-7).
+    nn: >-
+      Skulereglane er ei lokal forskrift frå fylkeskommunen om skuledemokratiet og om rettane og pliktene til elevane, mellom anna om orden og åtferd. Skulereglane kan seie kva tiltak som kan brukast når elevar bryt reglane, og korleis slike saker skal behandlast. Sjå [opplæringslova § 10-7](#/lov/opplaeringslova/10-7).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 10-7 Skolereglar", url: "https://lovdata.no/lov/2023-06-09-30/§10-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?"
+  stikkord: [skoleregler, skulereglar, ordensreglement, orden og oppførsel]
+  relatert: [lokal-forskrift, bortvising, aktivitetsplikt]
+
+# Privatskole (fase 7, eier 06.10.2026, avgjørelse 075). Lovteksten står i Lov og forskrift når kildesjekken har hentet
+# den, og kildene lenker dit.
+
+- id: bortvising
+  type: begrep
+  tittel: { nb: Bortvisning, nn: Bortvising }
+  tekst:
+    nb: >-
+      Bortvisning betyr at en elev ikke får delta i opplæringen en tid, etter flere eller grove brudd på skolereglene. Fylkeskommunen må ha fastsatt det i skolereglene, og mindre inngripende tiltak må være prøvd eller ikke være nok. I videregående kan elever vises bort i opptil fem dager, og for resten av skoleåret ved særlig alvorlige brudd. Det er rektor som vedtar bortvisning. Rektor kan la lærere vise bort elever fra en økt de selv har ansvar for, i høyst to klokketimer. Se [opplæringslova § 13-1](#/lov/opplaeringslova/13-1).
+    nn: >-
+      Bortvising tyder at ein elev ikkje får delta i opplæringa ei tid, etter fleire eller grove brot på skulereglane. Fylkeskommunen må ha fastsett det i skulereglane, og mindre inngripande tiltak må vere prøvde eller ikkje vere nok. I vidaregåande kan elevar visast bort i opptil fem dagar, og for resten av skuleåret ved særleg alvorlege brot. Det er rektor som vedtek bortvising. Rektor kan la lærarar vise bort elevar frå ei økt dei sjølve har ansvar for, i høgst to klokketimar. Sjå [opplæringslova § 13-1](#/lov/opplaeringslova/13-1).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 13-1 Bortvising", url: "https://lovdata.no/lov/2023-06-09-30/§13-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Loven sier at en elev ikke kan vises bort dersom mindre inngripende tiltak er tilstrekkelige. Er «må være prøvd eller ikke være nok» en riktig gjengivelse, eller strengere enn loven?"
+    - "Er det riktig at bortvisning for resten av skoleåret ikke kan delegeres til skolen?"
+  stikkord: [bortvisning, bortvising, ordenstiltak, skolereglar, utvisning]
+  relatert: [skoleregler, forhandsvarsel, enkeltvedtak]
+
+- id: trygt-og-godt-skolemiljo
+  type: begrep
+  tittel: { nb: Trygt og godt skolemiljø, nn: Trygt og godt skulemiljø }
+  lenkeord: { nb: ["trygt og godt skolemiljø"], nn: ["trygt og godt skulemiljø"] }
+  tekst:
+    nb: >-
+      Alle elever har rett til et trygt og godt skolemiljø som fremmer helse, inkludering, trivsel og læring. Retten
+      gjelder både det psykososiale og det fysiske skolemiljøet, og det er elevens egen opplevelse som avgjør om eleven
+      har det trygt og godt. Se [opplæringslova § 12-2](#/lov/opplaeringslova/12-2) og siden
+      [Et trygt og godt skolemiljø](#/skolemiljo/trygt-og-godt-skolemiljo).
+    nn: >-
+      Alle elevar har rett til eit trygt og godt skulemiljø som fremjar helse, inkludering, trivsel og læring. Retten
+      gjeld både det psykososiale og det fysiske skulemiljøet, og det er den eigne opplevinga til eleven som avgjer om
+      eleven har det trygt og godt. Sjå [opplæringslova § 12-2](#/lov/opplaeringslova/12-2) og sida
+      [Eit trygt og godt skulemiljø](#/skolemiljo/trygt-og-godt-skolemiljo).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-2 Retten til eit trygt og godt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-2" }
+    - { id: udir-rundskriv-skolemiljo-retten, punkt: "3. Retten til et trygt og godt skolemiljø" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at elevens egen opplevelse avgjør om eleven har et trygt og godt skolemiljø?"
+  stikkord: [skolemiljø, skulemiljø, psykososialt skolemiljø, kapittel 12]
+  relatert: [aktivitetsplikt, krenkende-oppforsel, fysisk-skolemiljo]
+
+- id: krenkende-oppforsel
+  type: begrep
+  tittel: { nb: Krenkende oppførsel, nn: Krenkjande oppførsel }
+  lenkeord: { nb: ["krenkende oppførsel", "krenkelse"], nn: ["krenkjande oppførsel", "krenking"] }
+  tekst:
+    nb: >-
+      Krenkende oppførsel er for eksempel mobbing, vold, diskriminering og trakassering. Det kan også være indirekte,
+      som å holde noen utenfor, isolere eller baksnakke dem. Skolen skal ha nulltoleranse mot krenkende oppførsel. Ikke
+      all uenighet er en krenkelse, og en irettesettelse fra en lærer er ikke en krenkelse. Se
+      [opplæringslova § 12-3](#/lov/opplaeringslova/12-3).
+    nn: >-
+      Krenkjande oppførsel er til dømes mobbing, vald, diskriminering og trakassering. Det kan også vere indirekte,
+      som å halde nokon utanfor, isolere eller baksnakke dei. Skulen skal ha nulltoleranse mot krenkjande oppførsel.
+      Ikkje all usemje er ei krenking, og ei irettesetjing frå ein lærar er ikkje ei krenking. Sjå
+      [opplæringslova § 12-3](#/lov/opplaeringslova/12-3).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-3 Nulltoleranse og førebyggjande arbeid", url: "https://lovdata.no/lov/2023-06-09-30/§12-3" }
+    - { id: udir-rundskriv-skolemiljo-nulltoleranse, punkt: "4. Nulltoleranse" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Skal begrepet hete «Krenkende oppførsel» (lovens ord) eller «Krenkelse», og er eksemplene riktige?"
+  stikkord: [krenkelse, krenking, mobbing, vold, diskriminering, trakassering, nulltoleranse]
+  relatert: [trygt-og-godt-skolemiljo, aktivitetsplikt]
+
+- id: skjerpet-aktivitetsplikt
+  type: begrep
+  tittel: { nb: Skjerpet aktivitetsplikt, nn: Skjerpa aktivitetsplikt }
+  lenkeord: { nb: ["skjerpet aktivitetsplikt", "skjerpet plikt"], nn: ["skjerpa aktivitetsplikt", "skjerpa plikt"] }
+  tekst:
+    nb: >-
+      Skjerpet aktivitetsplikt gjelder når en som arbeider på skolen, krenker en elev. Den som får mistanke om eller
+      kjennskap til det, skal straks melde fra til rektor, og rektor skal melde fra til fylkeskommunen. Gjelder det noen
+      i ledelsen, meldes det direkte til fylkeskommunen. Se [opplæringslova § 12-5](#/lov/opplaeringslova/12-5).
+    nn: >-
+      Skjerpa aktivitetsplikt gjeld når ein som arbeider på skulen, krenkjer ein elev. Den som får mistanke om eller
+      kjennskap til det, skal straks melde frå til rektor, og rektor skal melde frå til fylkeskommunen. Gjeld det
+      nokon i leiinga, blir det meldt direkte til fylkeskommunen. Sjå [opplæringslova § 12-5](#/lov/opplaeringslova/12-5).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev", url: "https://lovdata.no/lov/2023-06-09-30/§12-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Loven kaller det «skjerpa plikt til å melde frå». Er «skjerpet aktivitetsplikt» et godt navn på begrepet, siden det er vanlig i praksis?"
+  stikkord: [skjerpet plikt, ansatt krenker elev, 12-5]
+  relatert: [aktivitetsplikt]
+
+- id: tiltaksplan
+  type: begrep
+  tittel: { nb: Tiltaksplan, nn: Tiltaksplan }
+  lenkeord: { nb: ["tiltaksplan", "aktivitetsplan"], nn: ["tiltaksplan", "aktivitetsplan"] }
+  tekst:
+    nb: >-
+      Tiltaksplanen (ofte kalt aktivitetsplan) er den skriftlige planen skolen lager når den setter inn tiltak i en sak
+      om skolemiljøet. Planen skal si hvilket problem tiltakene skal løse, hvilke tiltak som er planlagt, når de skal
+      gjennomføres, hvem som gjennomfører dem og når de skal evalueres. Se
+      [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+    nn: >-
+      Tiltaksplanen (ofte kalla aktivitetsplan) er den skriftlege planen skulen lagar når han set inn tiltak i ei sak
+      om skulemiljøet. Planen skal seie kva problem tiltaka skal løyse, kva tiltak som er planlagde, når dei skal
+      gjennomførast, kven som gjennomfører dei og når dei skal evaluerast. Sjå
+      [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-4 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
+    - { id: udir-rundskriv-skolemiljo, punkt: "6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4.3-skriftlig-tiltaksplan-nar-skolen-setter-inn-tiltak" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å skrive «ofte kalt aktivitetsplan», slik eier godkjente for veiviseren?"
+  stikkord: [aktivitetsplan, skriftlig plan, tiltak, skolemiljøsak]
+  relatert: [aktivitetsplikt]
+
+- id: handhevingsordningen
+  type: begrep
+  tittel: { nb: Håndhevingsordningen, nn: Handhevingsordninga }
+  lenkeord: { nb: ["håndhevingsordningen", "håndhevingsordning"], nn: ["handhevingsordninga", "handhevingsordning"] }
+  tekst:
+    nb: >-
+      Håndhevingsordningen betyr at en elev eller foreldrene kan melde en sak om skolemiljøet til statsforvalteren når
+      skolen ikke gjør nok. Saken må være tatt opp med rektor for minst en uke siden. Statsforvalteren avgjør om skolen
+      har satt inn egnede tiltak og laget en tiltaksplan, og kan vedta hva skolen skal gjøre. Se
+      [opplæringslova § 12-6](#/lov/opplaeringslova/12-6).
+    nn: >-
+      Handhevingsordninga tyder at ein elev eller foreldra kan melde ei sak om skulemiljøet til statsforvaltaren når
+      skulen ikkje gjer nok. Saka må vere tatt opp med rektor for minst ei veke sidan. Statsforvaltaren avgjer om
+      skulen har sett inn eigna tiltak og laga ein tiltaksplan, og kan vedta kva skulen skal gjere. Sjå
+      [opplæringslova § 12-6](#/lov/opplaeringslova/12-6).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-6 Statsforvaltaren si handheving", url: "https://lovdata.no/lov/2023-06-09-30/§12-6" }
+    - { id: udir-rundskriv-skolemiljo-statsforvalteren, punkt: "7. Å melde saken til statsforvalteren" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av håndhevingsordningen riktig og dekkende for et begrep?"
+  stikkord: [statsforvalteren, melde saken, skolemiljøsak, 12-6]
+  relatert: [statsforvalteren, aktivitetsplikt, tvangsmulkt]
+
+- id: tvangsmulkt
+  type: begrep
+  tittel: { nb: Tvangsmulkt, nn: Tvangsmulkt }
+  tekst:
+    nb: >-
+      Tvangsmulkt er et pengebeløp fylkeskommunen må betale når et vedtak fra statsforvalteren i en skolemiljøsak ikke
+      er gjennomført innen fristen. Mulkten løper til vedtaket er oppfylt, og går til statskassen. Se
+      [opplæringslova § 12-8](#/lov/opplaeringslova/12-8).
+    nn: >-
+      Tvangsmulkt er eit pengebeløp fylkeskommunen må betale når eit vedtak frå statsforvaltaren i ei skulemiljøsak
+      ikkje er gjennomført innan fristen. Mulkta går til vedtaket er oppfylt, og går til statskassa. Sjå
+      [opplæringslova § 12-8](#/lov/opplaeringslova/12-8).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-8 Tvangsmulkt", url: "https://lovdata.no/lov/2023-06-09-30/§12-8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at tvangsmulkten løper fra fristen i vedtaket er ute og til vedtaket er oppfylt?"
+  stikkord: [mulkt, vedtak, statsforvalteren, frist]
+  relatert: [handhevingsordningen]
+
+- id: fysisk-skolemiljo
+  type: begrep
+  tittel: { nb: Fysisk skolemiljø, nn: Fysisk skulemiljø }
+  lenkeord: { nb: ["fysisk skolemiljø", "fysiske skolemiljøet"], nn: ["fysisk skulemiljø", "fysiske skulemiljøet"] }
+  tekst:
+    nb: >-
+      Det fysiske skolemiljøet er bygningene, utearealene og arbeidsplassen eleven har på skolen. Alle elever har rett
+      til en arbeidsplass som er tilpasset behovene deres, og skolen skal være innredet for elever med nedsatt
+      funksjonsevne. Saker om det fysiske skolemiljøet behandles etter forskriften om helse og miljø i skoler, med
+      kommunen som tilsynsmyndighet. Se [opplæringslova § 12-7](#/lov/opplaeringslova/12-7).
+    nn: >-
+      Det fysiske skulemiljøet er bygningane, uteareala og arbeidsplassen eleven har på skulen. Alle elevar har rett
+      til ein arbeidsplass som er tilpassa behova deira, og skulen skal vere innreidd for elevar med nedsett
+      funksjonsevne. Saker om det fysiske skulemiljøet blir behandla etter forskrifta om helse og miljø i skular, med
+      kommunen som tilsynsmyndigheit. Sjå [opplæringslova § 12-7](#/lov/opplaeringslova/12-7).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-7 Det fysiske miljøet", url: "https://lovdata.no/lov/2023-06-09-30/§12-7" }
+    - { id: opplaeringsforskrifta, punkt: "§ 11-3 Saksbehandling som gjeld det fysiske skolemiljøet", url: "https://lovdata.no/forskrift/2024-06-03-900/§11-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «bygningene, utearealene og arbeidsplassen» en god forklaring på det fysiske skolemiljøet?"
+  stikkord: [inneklima, universell utforming, nedsatt funksjonsevne, miljørettet helsevern]
+  relatert: [trygt-og-godt-skolemiljo]
+
+- id: fysiske-inngrep
+  type: begrep
+  tittel: { nb: Fysiske inngrep, nn: Fysiske inngrep }
+  lenkeord: { nb: ["fysiske inngrep", "fysisk inngrep"], nn: ["fysiske inngrep", "fysisk inngrep"] }
+  tekst:
+    nb: >-
+      Ansatte kan gripe inn fysisk mot en elev når andre tiltak ikke er nok, for å hindre at eleven krenker noen eller
+      utsetter seg selv for fare, skader eiendom, oppfører seg sterkt nedverdigende for seg selv eller vesentlig
+      forstyrrer opplæringen til andre. Inngrepet kan ikke gå lenger enn nødvendig, og det skal meldes til rektor og
+      dokumenteres. Se [opplæringslova § 13-4](#/lov/opplaeringslova/13-4).
+    nn: >-
+      Tilsette kan gripe inn fysisk mot ein elev når andre tiltak ikkje er nok, for å hindre at eleven krenkjer nokon
+      eller utset seg sjølv for fare, skader eigedom, oppfører seg sterkt fornedrande for seg sjølv eller vesentleg
+      forstyrrar opplæringa til andre. Inngrepet kan ikkje gå lenger enn nødvendig, og det skal meldast til rektor og
+      dokumenterast. Sjå [opplæringslova § 13-4](#/lov/opplaeringslova/13-4).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 13-4 Fysiske inngrep for å avverje skade m.m.", url: "https://lovdata.no/lov/2023-06-09-30/§13-4" }
+    - { id: opplaeringslova, punkt: "§ 13-5 Meldeplikt og dokumentasjon", url: "https://lovdata.no/lov/2023-06-09-30/§13-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av §§ 13-4 og 13-5 riktig for et begrep?"
+  stikkord: [gripe inn fysisk, avverge skade, nødverge, meldeplikt]
+  relatert: [aktivitetsplikt]
+
+- id: palagt-skolebytte
+  type: begrep
+  tittel: { nb: Pålagt skolebytte, nn: Pålagt skulebyte }
+  lenkeord: { nb: ["pålagt skolebytte", "skolebytte"], nn: ["pålagt skulebyte", "skulebyte"] }
+  tekst:
+    nb: >-
+      Pålagt skolebytte betyr at fylkeskommunen vedtar at en elev skal flyttes til en annen skole fordi elevens
+      oppførsel går alvorlig ut over tryggheten eller læringen til medelever. Det kan ikke skje hvis mindre inngripende
+      tiltak kan hjelpe, eller hvis eleven må bytte utdanningsprogram eller programområde. Se
+      [opplæringslova § 13-2](#/lov/opplaeringslova/13-2).
+    nn: >-
+      Pålagt skulebyte tyder at fylkeskommunen vedtek at ein elev skal flyttast til ein annan skule fordi oppførselen
+      til eleven går alvorleg ut over tryggleiken eller læringa til medelevar. Det kan ikkje skje dersom mindre
+      inngripande tiltak kan hjelpe, eller dersom eleven må byte utdanningsprogram eller programområde. Sjå
+      [opplæringslova § 13-2](#/lov/opplaeringslova/13-2).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 13-2 Pålagt skolebyte", url: "https://lovdata.no/lov/2023-06-09-30/§13-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet også nevne at eleven ikke skal flyttes hvis det fører til at eleven må flytte hjemmefra eller den daglige skyssen blir uforsvarlig?"
+  stikkord: [skolebytte, flytte skole, tvungent skolebytte]
+  relatert: [bortvising, skoleregler]
+
+- id: elevundersokelsen
+  type: begrep
+  tittel: { nb: Elevundersøkelsen, nn: Elevundersøkinga }
+  lenkeord: { nb: ["Elevundersøkelsen"], nn: ["Elevundersøkinga", "Elevundersøkelsen"] }
+  tekst:
+    nb: >-
+      Elevundersøkelsen er Udirs spørreundersøkelse om læringsmiljøet, trivsel og mobbing. I videregående er den
+      obligatorisk for Vg1 og frivillig for Vg2 og Vg3. Den gjennomføres om høsten, og resultatene blir offentlige i
+      desember. Udir oppgir resultatene som indekser fra 1 til 5 og andeler i prosent, og skjermer tall som få elever
+      står bak. Se [Elevundersøkelsen](#/skolemiljo/elevundersokelsen) i Skolemiljø.
+    nn: >-
+      Elevundersøkinga er spørjeundersøkinga til Udir om læringsmiljøet, trivsel og mobbing. I vidaregåande er ho
+      obligatorisk for Vg1 og frivillig for Vg2 og Vg3. Ho blir gjennomført om hausten, og resultata blir offentlege i
+      desember. Udir oppgir resultata som indeksar frå 1 til 5 og delar i prosent, og skjermar tal som få elevar står
+      bak. Sjå [Elevundersøkinga](#/skolemiljo/elevundersokelsen) i Skulemiljø.
+  kilder:
+    - { id: udir-elevundersokelsen, punkt: "Offentlige resultater for videregående" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at Elevundersøkelsen er obligatorisk for Vg1 og frivillig for Vg2 og Vg3, og at resultatene blir offentlige i desember?"
+  stikkord: [elevundersøkelsen, elevundersøkinga, mobbing, trivsel, læringsmiljø, statistikk]
+  relatert: [trygt-og-godt-skolemiljo]

@@ -52,57 +52,6 @@
   stikkord: [forhåndsvarsel, varsel, uttale seg, partsrettigheter]
   relatert: [enkeltvedtak, bortvising]
 
-- id: aktivitetsplikt
-  type: begrep
-  tittel: { nb: Aktivitetsplikt, nn: Aktivitetsplikt }
-  tekst:
-    nb: >-
-      Aktivitetsplikten betyr at alle som arbeider på skolen, skal følge med på hvordan elevene har det, gripe inn mot krenkelser om mulig og si fra til rektor ved mistanke om at en elev ikke har et trygt og godt skolemiljø. Skolen skal snarest undersøke saken, sette inn egnede tiltak og lage en skriftlig plan for tiltakene. Det som gjøres, skal dokumenteres. Se [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
-    nn: >-
-      Aktivitetsplikta tyder at alle som arbeider på skulen, skal følgje med på korleis elevane har det, gripe inn mot krenkingar om mogleg og seie frå til rektor ved mistanke om at ein elev ikkje har eit trygt og godt skulemiljø. Skulen skal snarast undersøkje saka, setje inn eigna tiltak og lage ein skriftleg plan for tiltaka. Det som blir gjort, skal dokumenterast. Sjå [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
-  kilder:
-    - { id: opplaeringslova, punkt: "§ 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Bør forklaringen nevne at rektor skal melde fra til fylkeskommunen i alvorlige tilfeller?"
-  stikkord: [aktivitetsplikt, skolemiljø, mobbing, krenkelser, 12-4, tiltaksplan]
-  relatert: [skoleregler]
-
-- id: bortvising
-  type: begrep
-  tittel: { nb: Bortvisning, nn: Bortvising }
-  tekst:
-    nb: >-
-      Bortvisning betyr at en elev ikke får delta i opplæringen en tid, etter flere eller grove brudd på skolereglene. Fylkeskommunen må ha fastsatt det i skolereglene, og mindre inngripende tiltak må være prøvd eller ikke være nok. I videregående kan elever vises bort i opptil fem dager, og for resten av skoleåret ved særlig alvorlige brudd. Det er rektor som vedtar bortvisning. Rektor kan la lærere vise bort elever fra en økt de selv har ansvar for, i høyst to klokketimer. Se [opplæringslova § 13-1](#/lov/opplaeringslova/13-1).
-    nn: >-
-      Bortvising tyder at ein elev ikkje får delta i opplæringa ei tid, etter fleire eller grove brot på skulereglane. Fylkeskommunen må ha fastsett det i skulereglane, og mindre inngripande tiltak må vere prøvde eller ikkje vere nok. I vidaregåande kan elevar visast bort i opptil fem dagar, og for resten av skuleåret ved særleg alvorlege brot. Det er rektor som vedtek bortvising. Rektor kan la lærarar vise bort elevar frå ei økt dei sjølve har ansvar for, i høgst to klokketimar. Sjå [opplæringslova § 13-1](#/lov/opplaeringslova/13-1).
-  kilder:
-    - { id: opplaeringslova, punkt: "§ 13-1 Bortvising", url: "https://lovdata.no/lov/2023-06-09-30/§13-1" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Loven sier at en elev ikke kan vises bort dersom mindre inngripende tiltak er tilstrekkelige. Er «må være prøvd eller ikke være nok» en riktig gjengivelse, eller strengere enn loven?"
-    - "Er det riktig at bortvisning for resten av skoleåret ikke kan delegeres til skolen?"
-  stikkord: [bortvisning, bortvising, ordenstiltak, skolereglar, utvisning]
-  relatert: [skoleregler, forhandsvarsel, enkeltvedtak]
-
-- id: skoleregler
-  type: begrep
-  tittel: { nb: Skoleregler, nn: Skulereglar }
-  tekst:
-    nb: >-
-      Skolereglene er en lokal forskrift fra fylkeskommunen om skoledemokratiet og om elevenes rettigheter og plikter, blant annet om orden og oppførsel. Skolereglene kan si hvilke tiltak som kan brukes når elever bryter reglene, og hvordan slike saker skal behandles. Se [opplæringslova § 10-7](#/lov/opplaeringslova/10-7).
-    nn: >-
-      Skulereglane er ei lokal forskrift frå fylkeskommunen om skuledemokratiet og om rettane og pliktene til elevane, mellom anna om orden og åtferd. Skulereglane kan seie kva tiltak som kan brukast når elevar bryt reglane, og korleis slike saker skal behandlast. Sjå [opplæringslova § 10-7](#/lov/opplaeringslova/10-7).
-  kilder:
-    - { id: opplaeringslova, punkt: "§ 10-7 Skolereglar", url: "https://lovdata.no/lov/2023-06-09-30/§10-7" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?"
-  stikkord: [skoleregler, skulereglar, ordensreglement, orden og oppførsel]
-  relatert: [lokal-forskrift, bortvising, aktivitetsplikt]
-
-# Privatskole (fase 7, eier 06.10.2026, avgjørelse 075). Lovteksten står i Lov og forskrift når kildesjekken har hentet
-# den, og kildene lenker dit.
 - id: privatskole
   type: begrep
   tittel: { nb: Privatskole, nn: Privatskule }

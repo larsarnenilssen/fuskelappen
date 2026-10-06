@@ -461,6 +461,7 @@ export const nb = {
       fag: 'Læreplanverket',
       tilrettelegging: 'Tilrettelegging',
       vurdering: 'Vurdering og eksamen',
+      skolemiljo: 'Skolemiljø',
       arbeidstid: 'Arbeidstid',
       forvaltning: 'Regelverk',
       ingen: 'Ingen begreper har dette temaet.',

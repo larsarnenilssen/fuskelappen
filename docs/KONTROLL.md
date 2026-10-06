@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 513 |
+| Ikke kontrollert | 536 |
 | Praksis og tolkninger som bør bekreftes | 25 av 25 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -287,9 +287,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Fagbrev på jobb (`fagbrev-pa-jobb`) | begrep | § 7-1 fjerde ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Vg3 i skole (`vg3-i-skole`) | begrep | § 5-6 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Formidling til læreplass (`formidling-til-laereplass`) | begrep | § 5-6 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
-| Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/regelverk.yaml` | ikke kontrollert |
-| Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/regelverk.yaml` | ikke kontrollert |
-| Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Trygt og godt skolemiljø (`trygt-og-godt-skolemiljo`) | begrep | § 12-2 Retten til eit trygt og godt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Krenkende oppførsel (`krenkende-oppforsel`) | begrep | § 12-3 Nulltoleranse og førebyggjande arbeid | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Skjerpet aktivitetsplikt (`skjerpet-aktivitetsplikt`) | begrep | § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Tiltaksplan (`tiltaksplan`) | begrep | § 12-4 tredje ledd | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Håndhevingsordningen (`handhevingsordningen`) | begrep | § 12-6 Statsforvaltaren si handheving | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Tvangsmulkt (`tvangsmulkt`) | begrep | § 12-8 Tvangsmulkt | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Fysisk skolemiljø (`fysisk-skolemiljo`) | begrep | § 12-7 Det fysiske miljøet | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Fysiske inngrep (`fysiske-inngrep`) | begrep | § 13-4 Fysiske inngrep for å avverje skade m.m., § 13-5 Meldeplikt og dokumentasjon | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Pålagt skolebytte (`palagt-skolebytte`) | begrep | § 13-2 Pålagt skolebyte | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Særskilt språkopplæring (`sarskilt-sprakopplaering`) | begrep | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Morsmålsopplæring (`morsmalsopplaering`) | begrep | § 6-5 tredje ledd | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Innføringsopplæring (`innforingsopplaering`) | begrep | § 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
@@ -353,6 +362,17 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Melde saken til statsforvalteren (`am-statsforvalteren`) | steg | § 12-6 Statsforvaltaren si handheving | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Når saken er meldt til statsforvalteren (`am-sf-skolen`) | steg | § 12-6 tredje og fjerde ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Ta saken opp med rektor først (`am-ta-opp`) | steg | § 12-6 andre ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Hvem og hvor reglene gjelder (`k12-hvem`) | forklaring | § 12-1 Verkeområde for kapittelet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Retten til et trygt og godt skolemiljø (`k12-retten`) | forklaring | § 12-2 Retten til eit trygt og godt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Nulltoleranse mot krenkende oppførsel (`k12-nulltoleranse`) | forklaring | § 12-3 Nulltoleranse og førebyggjande arbeid, første ledd | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Forebygging (`k12-forebygging`) | forklaring | § 12-3 Nulltoleranse og førebyggjande arbeid, andre ledd | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Aktivitetsplikten (`k12-aktivitetsplikt`) | forklaring | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Når en som arbeider på skolen, krenker en elev (`k12-skjerpet`) | forklaring | § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Eleven kan melde saken til statsforvalteren (`k12-statsforvalteren`) | forklaring | § 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Det fysiske skolemiljøet (`k12-fysisk`) | forklaring | § 12-7 Det fysiske miljøet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Tvangsmulkt, straff og erstatning (`k12-ansvar`) | forklaring | § 12-8 Tvangsmulkt, § 12-9 Straffansvar for brot på reglane om skolemiljø, § 12-10 Bevisbyrde i erstatningssaker om psykososialt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Informasjon til elevene og foreldrene (`k12-informasjon`) | forklaring | § 10-8 Informasjon til elevane og foreldra | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Fysiske inngrep (`k12-fysiske-inngrep`) | forklaring | § 13-3 Førebygging, § 13-4 Fysiske inngrep for å avverje skade m.m., § 13-5 Meldeplikt og dokumentasjon | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
 | Skolereglene er en forskrift (`sr-loven-skoleregler`) | forklaring | § 10-7 Skolereglar, § 10-6 Elevane si plikt til å delta, § 10-8 Informasjon til elevane og foreldra | `content/skolemiljo/skoleregler.yaml` | ikke kontrollert |
 | Bortvisning (`sr-loven-bortvisning`) | forklaring | § 13-1 Bortvising | `content/skolemiljo/skoleregler.yaml` | ikke kontrollert |
 | Pålagt skolebytte (`sr-loven-skolebytte`) | forklaring | § 13-2 Pålagt skolebyte | `content/skolemiljo/skoleregler.yaml` | ikke kontrollert |
@@ -395,6 +415,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Sensur (`sensur`) | begrep | § 9-33, § 9-26 første og andre ledd, § 9-16 fjerde ledd | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Annullering (`annullering`) | begrep | § 9-42, § 9-40 og § 9-41, § 9-69 | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Hurtigklage (`hurtigklage`) | begrep | § 10-2 (den vanlige klagefristen) | `content/begreper/eksamen.yaml` | ikke kontrollert |
+| Kompetanseprøve (`kompetanseprove`) | begrep | § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva, § 10-10 Klage på praksisbrevprøve og kompetanseprøve | `content/begreper/eksamen.yaml` | ikke kontrollert |
+| Praksisbrevprøve (`praksisbrevprove`) | begrep | § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva, § 9-48 Fag- og sveinebrev og praksisbrev i vidaregåande opplæring, § 10-10 Klage på praksisbrevprøve og kompetanseprøve | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Statsforvalteren (`statsforvalteren`) | begrep | § 10-4 Klage på fastsetjing av standpunktkarakter i fag | `content/begreper/forvaltning.yaml` | ikke kontrollert |
 | Begrunnelse (`begrunnelse`) | begrep | § 10-3 Rett til grunngiving for karakteren | `content/begreper/forvaltning.yaml` | ikke kontrollert |
 | Skoleskyss (`skoleskyss`) | begrep | § 8-1 Gratis skyss eller full skyssgodtgjersle i vidaregåande opplæring, § 8-2 Rabattordning som alternativ til gratis skyss, eller full skyssgodtgjersle i vidaregåande opplæring | `content/begreper/fylker.yaml` | ikke kontrollert |
@@ -420,6 +442,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Fagbrev på jobb (`fagbrev-pa-jobb`) | begrep | § 9-58, § 9-48 tredje ledd og § 9-56 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Vg3 i skole (`vg3-i-skole`) | begrep | § 6-2, § 9-56 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Formidling til læreplass (`formidling-til-laereplass`) | begrep | § 7-1 til § 7-3, § 6-2 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Fysisk skolemiljø (`fysisk-skolemiljo`) | begrep | § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Kort botid (`kort-botid`) | begrep | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Underveisvurdering (`underveisvurdering`) | begrep | § 9-11, § 10-1 | `content/begreper/vurdering.yaml` | ikke kontrollert |
 | Halvårsvurdering (`halvarsvurdering`) | begrep | § 9-13, § 9-52 andre ledd | `content/begreper/vurdering.yaml` | ikke kontrollert |
@@ -550,6 +573,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Ferdig fag- eller svennebrev (`fra-ferdig-fagbrev`) | utgangspunkt | § 6-10 | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Praksis i arbeidslivet (`fra-praksis`) | utgangspunkt | § 9-58 andre ledd | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Kompetansebevis for elever (`lk-kompetansebevis-elever`) | forklaring | § 9-51 første ledd | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
+| Forebygging (`k12-forebygging`) | forklaring | § 20-5 Ikkje-anonyme skolemiljøundersøkingar | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Det fysiske skolemiljøet (`k12-fysisk`) | forklaring | § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
 | Læreplanene i særskilt språkopplæring (`sp-laereplan`) | steg | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Fravær som teller mot grensen (`fr-teller`) | regel | § 9-8 tredje ledd | `content/vurdering/fravaer.yaml` | ikke kontrollert |
 | Dokumentert fravær som ikke teller (`fr-unntak`) | regel | § 9-8 andre ledd bokstav b–i | `content/vurdering/fravaer.yaml` | ikke kontrollert |
@@ -685,6 +710,16 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Journalføring (`journalforing`) | begrep | § 14 Kva dokument som skal registrerast i journal, § 15 Kva metadata som skal registrerast om eit saksdokument i ein journal | `content/begreper/innsyn-og-arkiv.yaml` | ikke kontrollert |
 | Arkivplikt (`arkivplikt`) | begrep | § 1 Kva eit organ skal ta omsyn til når det skal avgjere kva dokumentasjon det skal forvalte som arkiv, § 13 Internkontroll med dokumentasjonsforvaltninga | `content/begreper/innsyn-og-arkiv.yaml` | ikke kontrollert |
 | Bevaring og kassasjon (`bevaring-og-kassasjon`) | begrep | § 3 Oppbevaringstider for dokumentasjon | `content/begreper/innsyn-og-arkiv.yaml` | ikke kontrollert |
+
+### Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger
+
+`forskrift-helse-miljo-skoler` · Kildesjekk: i orden (06.10.2026) · [Åpne kilden](https://lovdata.no/forskrift/2023-03-28-449)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Det fysiske skolemiljøet (`k12-fysisk`) | forklaring | § 20 Kommunens oppfølging av henvendelser og § 21 Klage | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
@@ -1073,6 +1108,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Tiltaksplan (`tiltaksplan`) | begrep | 6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Aktivitetsplikten (`aktivitetsplikten`) | veiviser | 6. Skolen har en aktivitetsplikt | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Hvem er du i saken? (`am-start`) | steg | 6.2.1 Hvem er «alle som arbeider på skolen»? | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Følge med (`am-folge-med`) | steg | 6.3.1 Plikt til å følge med | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
@@ -1087,6 +1123,9 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Melde saken til statsforvalteren (`am-statsforvalteren`) | steg | 8. Klage til Utdanningsdirektoratet | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Når saken er meldt til statsforvalteren (`am-sf-skolen`) | steg | 8. Klage til Utdanningsdirektoratet | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Når skolen ikke gjør nok (`am-elev`) | steg | 6.3.6 Plikt til å sette inn tiltak | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Aktivitetsplikten (`k12-aktivitetsplikt`) | forklaring | 6.3 En aktivitetsplikt med flere delplikter, 6.4 Dokumentasjonskravene | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Når en som arbeider på skolen, krenker en elev (`k12-skjerpet`) | forklaring | 6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Eleven kan melde saken til statsforvalteren (`k12-statsforvalteren`) | forklaring | 8. Klage til Utdanningsdirektoratet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
 
 ### Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren
 
@@ -1096,10 +1135,64 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Håndhevingsordningen (`handhevingsordningen`) | begrep | 7. Å melde saken til statsforvalteren | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Melde saken til statsforvalteren (`am-statsforvalteren`) | steg | 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer, 7. Å melde saken til statsforvalteren | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Når saken er meldt til statsforvalteren (`am-sf-skolen`) | steg | 7. Å melde saken til statsforvalteren | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Når skolen ikke gjør nok (`am-elev`) | steg | 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
 | Ta saken opp med rektor først (`am-ta-opp`) | steg | 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Eleven kan melde saken til statsforvalteren (`k12-statsforvalteren`) | forklaring | 7.2 Når kan statsforvalteren behandle saken? | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
+
+`udir-rundskriv-skolemiljo-hvem` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Hvem og hvor reglene gjelder (`k12-hvem`) | forklaring | 2. For hvem og hvor gjelder reglene om et trygt og godt skolemiljø? | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø
+
+`udir-rundskriv-skolemiljo-retten` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Trygt og godt skolemiljø (`trygt-og-godt-skolemiljo`) | begrep | 3. Retten til et trygt og godt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Retten til et trygt og godt skolemiljø (`k12-retten`) | forklaring | 3. Retten til et trygt og godt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 4 Nulltoleranse
+
+`udir-rundskriv-skolemiljo-nulltoleranse` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Krenkende oppførsel (`krenkende-oppforsel`) | begrep | 4. Nulltoleranse | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Nulltoleranse mot krenkende oppførsel (`k12-nulltoleranse`) | forklaring | 4. Nulltoleranse | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre
+
+`udir-rundskriv-skolemiljo-informasjon` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Informasjon til elevene og foreldrene (`k12-informasjon`) | forklaring | 5. Skolene skal informere elever og foreldre | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Elevundersøkelsen i videregående, Udirs statistikkbank
+
+`udir-elevundersokelsen` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Elevundersøkelsen (`elevundersokelsen`) | begrep | Offentlige resultater for videregående | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 
 ### Rett til mer opplæring
 
@@ -2160,6 +2253,12 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø
 
+**Skoleregler** (`skoleregler`, begrep, ikke kontrollert)
+
+- Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
+
 **Bortvisning** (`bortvising`, begrep, ikke kontrollert)
 
 - Loven sier at en elev ikke kan vises bort dersom mindre inngripende tiltak er tilstrekkelige. Er «må være prøvd eller ikke være nok» en riktig gjengivelse, eller strengere enn loven?
@@ -2167,11 +2266,59 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-1): § 13-1 Bortvising
 
-**Skoleregler** (`skoleregler`, begrep, ikke kontrollert)
+**Trygt og godt skolemiljø** (`trygt-og-godt-skolemiljo`, begrep, ikke kontrollert)
 
-- Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?
+- Er det riktig å skrive at elevens egen opplevelse avgjør om eleven har et trygt og godt skolemiljø?
 
-Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-2): § 12-2 Retten til eit trygt og godt skolemiljø; [Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/): punkt 3. Retten til et trygt og godt skolemiljø
+
+**Krenkende oppførsel** (`krenkende-oppforsel`, begrep, ikke kontrollert)
+
+- Skal begrepet hete «Krenkende oppførsel» (lovens ord) eller «Krenkelse», og er eksemplene riktige?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-3): § 12-3 Nulltoleranse og førebyggjande arbeid; [Rundskriv om skolemiljø, kapittel 4 Nulltoleranse](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/): punkt 4. Nulltoleranse
+
+**Skjerpet aktivitetsplikt** (`skjerpet-aktivitetsplikt`, begrep, ikke kontrollert)
+
+- Loven kaller det «skjerpa plikt til å melde frå». Er «skjerpet aktivitetsplikt» et godt navn på begrepet, siden det er vanlig i praksis?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-5): § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev
+
+**Tiltaksplan** (`tiltaksplan`, begrep, ikke kontrollert)
+
+- Er det greit å skrive «ofte kalt aktivitetsplan», slik eier godkjente for veiviseren?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 tredje ledd; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4.3-skriftlig-tiltaksplan-nar-skolen-setter-inn-tiltak): punkt 6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak
+
+**Håndhevingsordningen** (`handhevingsordningen`, begrep, ikke kontrollert)
+
+- Er sammendraget av håndhevingsordningen riktig og dekkende for et begrep?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 Statsforvaltaren si handheving; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/): punkt 7. Å melde saken til statsforvalteren
+
+**Tvangsmulkt** (`tvangsmulkt`, begrep, ikke kontrollert)
+
+- Er det riktig at tvangsmulkten løper fra fristen i vedtaket er ute og til vedtaket er oppfylt?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-8): § 12-8 Tvangsmulkt
+
+**Fysisk skolemiljø** (`fysisk-skolemiljo`, begrep, ikke kontrollert)
+
+- Er «bygningene, utearealene og arbeidsplassen» en god forklaring på det fysiske skolemiljøet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-7): § 12-7 Det fysiske miljøet; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§11-3): § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet
+
+**Fysiske inngrep** (`fysiske-inngrep`, begrep, ikke kontrollert)
+
+- Er sammendraget av §§ 13-4 og 13-5 riktig for et begrep?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-4): § 13-4 Fysiske inngrep for å avverje skade m.m.; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-5): § 13-5 Meldeplikt og dokumentasjon
+
+**Pålagt skolebytte** (`palagt-skolebytte`, begrep, ikke kontrollert)
+
+- Bør begrepet også nevne at eleven ikke skal flyttes hvis det fører til at eleven må flytte hjemmefra eller den daglige skyssen blir uforsvarlig?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-2): § 13-2 Pålagt skolebyte
 
 **Særskilt språkopplæring** (`sarskilt-sprakopplaering`, begrep, ikke kontrollert)
 
@@ -2582,6 +2729,77 @@ Kilder å sjekke mot: [Rundskriv om skolemiljø, kapittel 7 Å melde saken til s
 
 Kilder å sjekke mot: [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer): punkt 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 andre ledd
 
+**Hvem og hvor reglene gjelder** (`k12-hvem`, forklaring, ikke kontrollert)
+
+- Rundskrivet sier at reglene ikke gjelder for lærlinger og lærekandidater, og heller ikke for voksne i organisert opplæring. Skal kortet også nevne voksne, og gjelder det voksne i videregående opplæring etter kapittel 18?
+- Er det riktig å skrive at skolen skal sette inn tiltak når noe som skjer på skoleveien eller i fritiden, gjør at eleven ikke har det trygt og godt på skolen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-1): § 12-1 Verkeområde for kapittelet; [Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/): punkt 2. For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
+
+**Retten til et trygt og godt skolemiljø** (`k12-retten`, forklaring, ikke kontrollert)
+
+- Er setningen «Skolen kan ikke bestemme at en elev har det bra når eleven selv sier noe annet» en riktig forenkling av at elevens subjektive opplevelse er avgjørende?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-2): § 12-2 Retten til eit trygt og godt skolemiljø; [Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/): punkt 3. Retten til et trygt og godt skolemiljø
+
+**Nulltoleranse mot krenkende oppførsel** (`k12-nulltoleranse`, forklaring, ikke kontrollert)
+
+- Er eksemplene på indirekte krenkelser (holde utenfor, isolere, baksnakke) og på hva som ikke er krenkelser (uenighet, irettesettelse) gjengitt riktig etter rundskrivet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-3): § 12-3 Nulltoleranse og førebyggjande arbeid, første ledd; [Rundskriv om skolemiljø, kapittel 4 Nulltoleranse](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/): punkt 4. Nulltoleranse
+
+**Forebygging** (`k12-forebygging`, forklaring, ikke kontrollert)
+
+- Er det riktig å omtale ikke-anonyme skolemiljøundersøkelser (forskriften § 20-5) her, og er begrensningen «uten å navngi andre elever» gjengitt riktig for det forebyggende arbeidet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-3): § 12-3 Nulltoleranse og førebyggjande arbeid, andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§20-5): § 20-5 Ikkje-anonyme skolemiljøundersøkingar
+
+**Aktivitetsplikten** (`k12-aktivitetsplikt`, forklaring, ikke kontrollert)
+
+- Er inndelingen i fem delplikter (følge med, gripe inn, melde fra, undersøke, sette inn tiltak) og dokumentasjonsplikten den samme som i rundskrivet kapittel 6.3 og 6.4?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3-en-aktivitetsplikt-med-flere-delplikter): punkt 6.3 En aktivitetsplikt med flere delplikter; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4-dokumentasjonskravene): punkt 6.4 Dokumentasjonskravene
+
+**Når en som arbeider på skolen, krenker en elev** (`k12-skjerpet`, forklaring, ikke kontrollert)
+
+- Er sammendraget av den skjerpede plikten i § 12-5 riktig og dekkende?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-5): § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.4-skjerpet-plikt-til-a-melde-fra-hvis-en-som-arbeider-pa-skolen-krenker-elever): punkt 6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever
+
+**Eleven kan melde saken til statsforvalteren** (`k12-statsforvalteren`, forklaring, ikke kontrollert)
+
+- Er vilkårene for at statsforvalteren behandler saken (tatt opp med rektor, minst en uke, eleven går fortsatt på skolen) og hva statsforvalteren kan vedta, gjengitt riktig?
+- Bør kortet si at fylkeskommunen ikke kan klage på statsforvalterens vedtak, slik veiviseren gjør?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2-nar-kan-statsforvalteren-behandle-saken): punkt 7.2 Når kan statsforvalteren behandle saken?; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/8.-klage-til-utdanningsdirektoratet/): punkt 8. Klage til Utdanningsdirektoratet
+
+**Det fysiske skolemiljøet** (`k12-fysisk`, forklaring, ikke kontrollert)
+
+- Er det riktig å nevne inneklima, lys, lyd og renhold som eksempler på det fysiske skolemiljøet, eller bør kortet holde seg til ordlyden i § 12-7?
+- Er gangen i saker om det fysiske skolemiljøet (skolen, så kommunen som tilsynsmyndighet, så klage til statsforvalteren) riktig for en fylkeskommunal skole?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-7): § 12-7 Det fysiske miljøet; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§11-3): § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet; [Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger](https://lovdata.no/forskrift/2023-03-28-449/§20): § 20 Kommunens oppfølging av henvendelser og § 21 Klage
+
+**Tvangsmulkt, straff og erstatning** (`k12-ansvar`, forklaring, ikke kontrollert)
+
+- Er oppsummeringen av hvilke plikter som er straffbare etter § 12-9 riktig, og er «plikten til å undersøke og sette inn tiltak» riktig for § 12-4 andre ledd tredje punktum?
+- Er «omvendt bevisbyrde» et dekkende navn på regelen i § 12-10?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-8): § 12-8 Tvangsmulkt; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-9): § 12-9 Straffansvar for brot på reglane om skolemiljø; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-10): § 12-10 Bevisbyrde i erstatningssaker om psykososialt skolemiljø
+
+**Informasjon til elevene og foreldrene** (`k12-informasjon`, forklaring, ikke kontrollert)
+
+- Er det riktig etter rundskrivet kapittel 5 at elevene og foreldrene skal få informasjon om aktivitetsplikten og håndhevingsordningen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-8): § 10-8 Informasjon til elevane og foreldra; [Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/): punkt 5. Skolene skal informere elever og foreldre
+
+**Fysiske inngrep** (`k12-fysiske-inngrep`, forklaring, ikke kontrollert)
+
+- Er sammendraget av §§ 13-3 til 13-5 riktig, og hører kortet hjemme på siden om skolemiljøet?
+- Privatskoler: Er det riktig at privatskolelova §§ 3-10 a til 3-10 c har de samme reglene om forebygging, fysiske inngrep og melding?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-3): § 13-3 Førebygging; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-4): § 13-4 Fysiske inngrep for å avverje skade m.m.; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-5): § 13-5 Meldeplikt og dokumentasjon
+
 **Skolereglene er en forskrift** (`sr-loven-skoleregler`, forklaring, ikke kontrollert)
 
 - Er sammendraget av §§ 10-6, 10-7 og 10-8 riktig og dekkende?
@@ -2716,6 +2934,18 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 - Kildene appen har, sier ikke hvem som behandler hurtigklagen på standpunkt. Er det skolen og statsforvalteren som ved vanlig klage, bare raskere, og bør det stå?
 
 Kilder å sjekke mot: [Eksamensdatoer fra udir.no og fylkeskommunene](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Hurtigklage og hurtigklage på standpunkt (fylkenes sider); [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Hurtigklage; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/): punkt 4. Hvordan skal eleven eller foreldrene klage; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2 (den vanlige klagefristen)
+
+**Kompetanseprøve** (`kompetanseprove`, begrep, ikke kontrollert)
+
+- Er det riktig at kompetanseprøven gir kompetansebevis, og at klage på «ikke bestått» går til fylkestinget eller den fylkestinget gir fullmakt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-64): § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-10): § 10-10 Klage på praksisbrevprøve og kompetanseprøve
+
+**Praksisbrevprøve** (`praksisbrevprove`, begrep, ikke kontrollert)
+
+- Er det riktig at praksisbrevkandidaten prøves i kompetansemålene i den lokale læreplanen, og at klage på «ikke bestått» går til fylkestinget eller den fylkestinget gir fullmakt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-64): § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-48): § 9-48 Fag- og sveinebrev og praksisbrev i vidaregåande opplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-10): § 10-10 Klage på praksisbrevprøve og kompetanseprøve
 
 **Begrunnelse** (`begrunnelse`, begrep, ikke kontrollert)
 
@@ -4342,6 +4572,12 @@ Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-o
 - Er det riktig å skrive at det er elevens egen opplevelse som avgjør om skolen skal sette inn tiltak (rundskrivet 6.3.6)?
 
 Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak): punkt 6.3.6 Plikt til å sette inn tiltak; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer): punkt 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer
+
+**Elevundersøkelsen** (`elevundersokelsen`, begrep, ikke kontrollert)
+
+- Er det riktig at Elevundersøkelsen er obligatorisk for Vg1 og frivillig for Vg2 og Vg3, og at resultatene blir offentlige i desember?
+
+Kilder å sjekke mot: [Elevundersøkelsen i videregående, Udirs statistikkbank](https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/): Offentlige resultater for videregående
 
 **Vedtak** (`mo-sti-vedtak`, forklaring, ikke kontrollert)
 

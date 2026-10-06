@@ -15,6 +15,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
     - Overskriftene kan lukkes, og boksene om mobbing er lukket til du åpner dem.
     - Bedre og svakere enn året før er markert med grønn og rød pil.
     - På stor skjerm står mobbingen og læringsmiljøet side om side.
+    - Skoler og fylker kan søkes fram når du velger hva som skal sammenlignes.
+    - Tabellen har en ramme rundt det beste tallet i hver rad.
+    - Nye tall fra Udir kommer med av seg selv, uten ny versjon av appen.
+  - **Et trygt og godt skolemiljø:** opplæringslova kapittel 12 på én side, med retten, skolens plikter, statsforvalteren, det fysiske miljøet og ansvaret, de fem delpliktene og veien til statsforvalteren.
+- **Nye begreper:** trygt og godt skolemiljø, krenkende oppførsel, skjerpet aktivitetsplikt, tiltaksplan, håndhevingsordningen, tvangsmulkt, fysisk skolemiljø, fysiske inngrep, pålagt skolebytte, Elevundersøkelsen, kompetanseprøve og praksisbrevprøve. Begrepene om skolemiljøet har eget tema, «Skolemiljø».
 - **Regler for mobil og ordensreglement** fra skolene og fylkene i Lovdata kommer med i Lov og forskrift og på siden «Skoleregler».
 - **Privatskole:** En ny bryter under «Fylke og skole» i innstillingene. Velger du en privat skole, slås den på av seg selv. Når den er på:
   - kort og steg der privatskolene har egne regler, har en boks «For privatskoler»: inntaket, klage på karakter, individuell tilrettelegging, skoleregler og bortvisning
@@ -25,7 +30,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
-- **Eksamen og klage** er en egen del av appen under «Elever og opplæring» på forsiden, med eksamen, fag- og svenneprøven, klage på karakter og kalenderen for eksamen. Sidene stod før i Vurdering. Gamle lenker og favoritter virker fortsatt.
+- **Eksamen og klage** er en egen del av appen under «Elever og opplæring» på forsiden, med eksamen, fag- og svenneprøven, klage på karakter og kalenderen for eksamen, under overskriftene «Eksamen og prøver» og «Klage». Sidene stod før i Vurdering. Gamle lenker og favoritter virker fortsatt.
 - **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene», fagarket, tilbudene i Opplæringstilbud og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
 - **Kildene på fagarket og tilbudene** står i en lukket boks («Kilder»), nederst i høyre kolonne på stor skjerm og nederst på siden på mobil.
 - **Regelverk:** Gruppene på oversikten (lover, forskrifter, lokale forskrifter og avtaler) er lukket når du kommer til siden. Det du åpner, er fortsatt åpent når du går tilbake.

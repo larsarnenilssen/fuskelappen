@@ -918,7 +918,6 @@ main {
 .felt input,
 .felt select,
 .hos-fylket select,
-.eu-seriesvalg select,
 .sokefelt input {
   width: 100%;
   min-height: var(--trykkflate);
@@ -8525,11 +8524,6 @@ a.knapp {
   font-weight: 700;
 }
 
-.eu-seriesvalg select {
-  width: 100%;
-  min-width: 0;
-}
-
 .eu-valgrad {
   display: flex;
   flex-wrap: wrap;
@@ -8820,6 +8814,127 @@ a.knapp {
   margin: var(--rom-2) 0 0;
 }
 
+/* Det beste tallet i raden (eier 06.10.2026): en ramme i tekstfargen rundt tallet, og fet skrift. Rammen er ikke en
+   seriefarge, så den betyr det samme i alle kolonnene. Teksten «best i raden» står for skjermlesere. */
+.eu-beste {
+  display: inline-block;
+  padding: 0 0.3em;
+  border: 2px solid var(--farge-tekst);
+  border-radius: var(--radius-s);
+  font-weight: 700;
+}
+
+.eu-beste-forklaring {
+  font-variant-numeric: tabular-nums;
+  color: var(--farge-tekst);
+}
+
+/* Valget av serie med søk (combobox). Listen står over innholdet under feltet. */
+.eu-velger {
+  position: relative;
+  display: grid;
+  gap: var(--rom-1);
+  min-width: 0;
+}
+
+.eu-velger-felt {
+  position: relative;
+}
+
+.eu-velger-felt input {
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) 2.25rem;
+  border: var(--strek) solid var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font-size: max(16px, 1rem);
+  text-overflow: ellipsis;
+}
+
+.eu-velger-ikon,
+.eu-velger-pil {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--farge-tekst-dempet);
+  pointer-events: none;
+}
+
+.eu-velger-ikon {
+  left: var(--rom-2);
+}
+
+.eu-velger-pil {
+  right: var(--rom-2);
+}
+
+.eu-velger-liste {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: min(24rem, 60vh);
+  margin-top: 0.25rem;
+  overflow-y: auto;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  box-shadow: var(--skygge-flytende);
+}
+
+.eu-velger-liste[hidden] {
+  display: none;
+}
+
+.eu-velger-gruppe {
+  margin: 0;
+  padding: var(--rom-2) var(--rom-3) var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-velger-valg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  cursor: pointer;
+}
+
+.eu-velger-valg[aria-selected='true'] {
+  font-weight: 700;
+}
+
+.eu-velger-aktiv {
+  background: var(--farge-bakgrunn);
+  outline: 2px solid var(--farge-fokus);
+  outline-offset: -2px;
+}
+
+.eu-velger-under {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-velger-tom,
+.eu-velger-hint {
+  margin: 0;
+  padding: var(--rom-2) var(--rom-3);
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.eu-velger-hint:empty {
+  display: none;
+}
+
 /* Bedre og svakere (enn året før eller enn landet): grønn og rød, alltid med pil og tekst. */
 .eu-pil {
   margin-left: 0.2em;
@@ -9044,4 +9159,189 @@ a.knapp {
 
 .eu-om li + li {
   margin-top: var(--rom-1);
+}
+
+/* ---------- Et trygt og godt skolemiljø (fase 7, eier 06.10.2026) ----------
+   Kapittel 12 på én side: fem deler i rekkefølge, som kort med nummer (fem i bredden på skrivebord, under hverandre på
+   mobil). Delene lenger ned har samme nummer i overskriften. Delpliktene og veien til statsforvalteren er rader med
+   pil mellom leddene. Fargene er de samme som ellers i appen, ingen nye. */
+.k12-oversikt {
+  margin: 0 0 var(--rom-5);
+}
+
+.k12-deler {
+  display: grid;
+  gap: var(--rom-2);
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+@media (min-width: 40rem) {
+  .k12-deler {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .k12-deler {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.k12-del {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas: 'nr tittel' 'nr par' 'nr tekst';
+  gap: 0 var(--rom-2);
+  height: 100%;
+  padding: var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-top: 4px solid var(--farge-lenke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  text-decoration: none;
+}
+
+.k12-del:hover .k12-del-tittel {
+  text-decoration: underline;
+}
+
+.k12-del .k12-del-nr {
+  grid-area: nr;
+}
+
+.k12-del-nr {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--farge-lenke);
+  color: var(--farge-flate);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.k12-del-tittel {
+  grid-area: tittel;
+  font-weight: 700;
+  color: var(--farge-lenke);
+}
+
+.k12-del-paragrafer {
+  grid-area: par;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.k12-del-tekst {
+  grid-area: tekst;
+  margin-top: var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.k12-seksjon {
+  margin-bottom: var(--rom-5);
+  scroll-margin-top: var(--rom-6);
+}
+
+.k12-seksjon-tittel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1) var(--rom-2);
+}
+
+.k12-seksjon-paragrafer {
+  font-weight: 400;
+  color: var(--farge-tekst-dempet);
+}
+
+.k12-figur {
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.k12-figur-tittel {
+  margin-bottom: var(--rom-2);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+/* En rad med ledd og pil mellom. På smal skjerm under hverandre, med pil ned. */
+.k12-rekke {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ledd;
+}
+
+.k12-rekke > li {
+  position: relative;
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-bakgrunn);
+  font-size: var(--str-s);
+  font-weight: 600;
+  counter-increment: ledd;
+}
+
+.k12-rekke > li::before {
+  content: counter(ledd) '. ';
+  color: var(--farge-tekst-dempet);
+}
+
+@media (min-width: 40rem) {
+  .k12-rekke {
+    flex-direction: row;
+    gap: var(--rom-3);
+  }
+
+  .k12-rekke > li {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .k12-rekke > li + li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--rom-3));
+    width: var(--rom-3);
+    height: 2px;
+    background: var(--farge-tekst-dempet);
+  }
+}
+
+/* Veien til statsforvalteren har lengre ledd og står alltid under hverandre, med en strek ned mellom leddene. */
+.k12-rekke.k12-rekke-gang {
+  flex-direction: column;
+  gap: var(--rom-3);
+}
+
+.k12-rekke.k12-rekke-gang > li + li::after {
+  top: calc(-1 * var(--rom-3));
+  left: 1.25rem;
+  width: 2px;
+  height: var(--rom-3);
+}
+
+.k12-dokumentere {
+  margin: var(--rom-2) 0 0;
+  padding: var(--rom-1) var(--rom-3);
+  border: var(--strek) dashed var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  font-size: var(--str-s);
+  text-align: center;
 }

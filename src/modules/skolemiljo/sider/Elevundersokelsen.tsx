@@ -12,7 +12,7 @@
 // indeksene mot landet. Delene har overskrifter som kan lukkes, og boksene under «Mobbing» er lukket fra start. På
 // skrivebord står mobbingen og «Om tallene» til venstre og læringsmiljøet til høyre. Bedre og svakere enn året før er
 // grønt og rødt, med pil og tekst, så fargen aldri står alene.
-import { useEffect, useId, useState } from 'preact/hooks';
+import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { fylker as alleFylker, fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { type T, usePrivatskole, useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -41,10 +41,12 @@ import {
   skolerIFylket,
   standardSerier,
   standardTrinn,
+  beste,
   sterkestOgSvakest,
   verdi,
 } from '../elevundersokelsen/visning.ts';
 import { elevundersokelsenRute } from '../innhold.ts';
+import { type Enhetsvalg, Enhetsvelger } from './Enhetsvelger.tsx';
 
 const UDIR_SKJERMING = 'https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/visning-av-resultater-og-skjermingsregler/';
 const UDIR_STATISTIKK = 'https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/';
@@ -67,51 +69,35 @@ function Merke({ nr, hul = false }: { nr: number; hul?: boolean }) {
   return <span class={`eu-merke eu-merke-${FORMER[nr]}${hul ? ' eu-merke-hul' : ''}`} data-serie={nr + 1} aria-hidden="true" />;
 }
 
-/** Ett valg for en serie: hele landet, et fylke eller en skole, og eierformen for landet og fylkene. */
-function Seriesvalg({ d, nr, serie, onEndring }: { d: Data; nr: number; serie: Serie | null; onEndring: (s: Serie | null) => void }) {
-  const { t } = useTekst();
-  const id = useId();
+/** Alle valgene for en serie: ingen (for serie 2 og 3), landet og fylkene for hver eierform, og skolene. */
+function enhetsvalg(d: Data, t: T, medIngen: boolean): Enhetsvalg[] {
   const eierformer: Eierform[] = ['a', 'o', 'p'];
+  const ut: Enhetsvalg[] = medIngen ? [{ verdi: '', navn: t('skolemiljo.elevundersokelsen.ingen'), gruppe: 'ingen' }] : [];
+  for (const e of eierformer) ut.push({ verdi: serieTekst({ enhet: 'L', eierform: e }), navn: seriensNavn(d, { enhet: 'L', eierform: e }, t), gruppe: 'landet' });
+  for (const f of alleFylker.filter((f) => d.enheter[`F${f.nummer}`])) {
+    for (const e of eierformer) ut.push({ verdi: serieTekst({ enhet: `F${f.nummer}`, eierform: e }), navn: seriensNavn(d, { enhet: `F${f.nummer}`, eierform: e }, t), gruppe: 'fylker' });
+  }
+  for (const f of alleFylker) {
+    for (const s of skolerIFylket(d, f.nummer)) ut.push({ verdi: s.enhet, navn: s.navn, under: f.navn, gruppe: 'skoler' });
+  }
+  return ut;
+}
+
+/** Ett valg for en serie, med søk (eier 06.10.2026). */
+function Seriesvalg({ valg, nr, serie, onEndring }: { valg: readonly Enhetsvalg[]; nr: number; serie: Serie | null; onEndring: (s: Serie | null) => void }) {
+  const { t } = useTekst();
   return (
-    <div class="eu-seriesvalg">
-      <label for={id} class="eu-seriesvalg-etikett">
-        <Merke nr={nr} />
-        {t('skolemiljo.elevundersokelsen.serie', { nr: String(nr + 1) })}
-      </label>
-      <select id={id} value={serie ? serieTekst(serie) : ''} onChange={(e) => onEndring(serieFra(e.currentTarget.value))}>
-        {nr > 0 && <option value="">{t('skolemiljo.elevundersokelsen.ingen')}</option>}
-        <optgroup label={t('skolemiljo.elevundersokelsen.landet')}>
-          {eierformer.map((e) => (
-            <option key={e} value={serieTekst({ enhet: 'L', eierform: e })}>
-              {seriensNavn(d, { enhet: 'L', eierform: e }, t)}
-            </option>
-          ))}
-        </optgroup>
-        <optgroup label={t('skolemiljo.elevundersokelsen.fylker')}>
-          {alleFylker
-            .filter((f) => d.enheter[`F${f.nummer}`])
-            .flatMap((f) =>
-              eierformer.map((e) => (
-                <option key={`${f.nummer}${e}`} value={serieTekst({ enhet: `F${f.nummer}`, eierform: e })}>
-                  {seriensNavn(d, { enhet: `F${f.nummer}`, eierform: e }, t)}
-                </option>
-              )),
-            )}
-        </optgroup>
-        {alleFylker.map((f) => {
-          const skoler = skolerIFylket(d, f.nummer);
-          return skoler.length === 0 ? null : (
-            <optgroup key={f.nummer} label={t('skolemiljo.elevundersokelsen.skolerI', { fylke: f.navn })}>
-              {skoler.map((s) => (
-                <option key={s.enhet} value={s.enhet}>
-                  {s.navn}
-                </option>
-              ))}
-            </optgroup>
-          );
-        })}
-      </select>
-    </div>
+    <Enhetsvelger
+      etikett={
+        <>
+          <Merke nr={nr} />
+          {t('skolemiljo.elevundersokelsen.serie', { nr: String(nr + 1) })}
+        </>
+      }
+      valg={valg}
+      verdi={serie ? serieTekst(serie) : ''}
+      onVelg={(v) => onEndring(serieFra(v))}
+    />
   );
 }
 
@@ -455,7 +441,9 @@ function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]
           </tr>
         </thead>
         <tbody>
-          {d.sporsmal.map((q) => (
+          {d.sporsmal.map((q) => {
+            const best = beste(serier.map((s) => verdi(d, s, q.kode, naa, trinn)), q.type);
+            return (
             <tr key={q.kode}>
               <th scope="row">{kortnavn(d, q.kode, t)}</th>
               {serier.map((s) => {
@@ -465,7 +453,14 @@ function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]
                 const r = retning(q.type, endring(v, f));
                 return (
                   <td key={nokkelFor(s)} class={`tall${r ? ` eu-${r}` : ''}`}>
-                    <Verditekst v={v} prosent={q.type === 'mobbing'} />
+                    {best !== null && v === best ? (
+                      <span class="eu-beste">
+                        <Verditekst v={v} prosent={q.type === 'mobbing'} />
+                        <span class="skjult-visuelt"> ({t('skolemiljo.elevundersokelsen.beste')})</span>
+                      </span>
+                    ) : (
+                      <Verditekst v={v} prosent={q.type === 'mobbing'} />
+                    )}
                     <Pil r={r} tekst={t(r === 'bedre' ? 'skolemiljo.elevundersokelsen.bedreFjor' : 'skolemiljo.elevundersokelsen.svakereFjor')} />
                     {typeof f === 'number' && <span class="eu-fjor-tekst"> ({tallTekst(f)})</span>}
                     {typeof n === 'number' && <span class="eu-antall">{t('skolemiljo.elevundersokelsen.antall', { antall: formaterTall(n, 0) })}</span>}
@@ -473,10 +468,13 @@ function Tabellvisning({ d, serier, trinn }: { d: Data; serier: readonly Serie[]
                 );
               })}
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
-      <p class="dempet liten eu-tabell-forklaring">{t('skolemiljo.elevundersokelsen.tabellForklaring')}</p>
+      <p class="dempet liten eu-tabell-forklaring">
+        {t('skolemiljo.elevundersokelsen.tabellForklaring')} <span class="eu-beste eu-beste-forklaring" aria-hidden="true">4,2</span> {t('skolemiljo.elevundersokelsen.besteForklaring')}
+      </p>
     </div>
   );
 }
@@ -497,6 +495,8 @@ export default function Elevundersokelsen({ sporring }: { sporring: URLSearchPar
   const [vis, settVis] = useState<'diagram' | 'tabell'>(sporring.get('vis') === 'tabell' ? 'tabell' : 'diagram');
 
   const data = d && d !== 'feil' ? d : null;
+  const alleValg = useMemo(() => (data ? enhetsvalg(data, t, false) : []), [data, t]);
+  const alleValgMedIngen = useMemo(() => (data ? enhetsvalg(data, t, true) : []), [data, t]);
   const standard = data ? standardSerier(data, { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null, privatskole }) : [];
   const valg: (Serie | null)[] = valgt ?? standard;
   const serier = valg.filter((s): s is Serie => s !== null && !!data?.verdier[nokkelFor(s)]);
@@ -541,7 +541,7 @@ export default function Elevundersokelsen({ sporring }: { sporring: URLSearchPar
             <h2 class="liten-overskrift">{t('skolemiljo.elevundersokelsen.sammenlign')}</h2>
             <div class="eu-serievalg">
               {[0, 1, 2].map((nr) => (
-                <Seriesvalg key={nr} d={data} nr={nr} serie={valg[nr] ?? null} onEndring={(s) => endreSerie(nr, s)} />
+                <Seriesvalg key={nr} valg={nr === 0 ? alleValg : alleValgMedIngen} nr={nr} serie={valg[nr] ?? null} onEndring={(s) => endreSerie(nr, s)} />
               ))}
             </div>
             <div class="eu-valgrad">

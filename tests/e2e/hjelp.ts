@@ -119,6 +119,8 @@ export const ruter = [
   '#/skolemiljo',
   '#/skolemiljo/aktivitetsplikten',
   '#/skolemiljo/aktivitetsplikten?steg=am-tiltak&svar=rektor',
+  '#/skolemiljo/trygt-og-godt-skolemiljo',
+  '#/skolemiljo/trygt-og-godt-skolemiljo?del=k12-statsforvalteren',
   '#/skolemiljo/skoleregler',
   '#/skolemiljo/elevundersokelsen',
   '#/skolemiljo/elevundersokelsen?s=L,L|o,L|p&trinn=2&vis=tabell',

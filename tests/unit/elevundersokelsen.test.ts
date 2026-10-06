@@ -6,7 +6,8 @@ import { describe, expect, it } from 'vitest';
 import { byggResultater, type Rad, tall, validerResultater } from '../../scripts/elevundersokelsen/bygg.ts';
 import { elevundersokelsenSkjema } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
 import { type Elevundersokelsen } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
-import { egenSerie, endring, mobbeskala, retning, serieFra, serieTekst, standardSerier, standardTrinn, sterkestOgSvakest, verdi } from '../../src/modules/skolemiljo/elevundersokelsen/visning.ts';
+import { filtrerEnheter } from '../../src/modules/skolemiljo/sider/Enhetsvelger.tsx';
+import { beste, egenSerie, endring, mobbeskala, retning, serieFra, serieTekst, standardSerier, standardTrinn, sterkestOgSvakest, verdi } from '../../src/modules/skolemiljo/elevundersokelsen/visning.ts';
 
 const rot = join(__dirname, '../..');
 const fylker = new Set(['42', '46']);
@@ -122,6 +123,29 @@ describe('sammenligningen', () => {
     expect(egenSerie(data, { fylke: '46', skole: '1' })).toEqual({ enhet: 'S1', eierform: 'a' });
     expect(egenSerie(data, { fylke: '46', skole: '9' })).toEqual({ enhet: 'F46', eierform: 'a' });
     expect(egenSerie(data, { fylke: null, skole: null })).toBeNull();
+  });
+
+  it('det beste tallet i raden er høyest for indeksene og lavest for mobbing, og bare med minst to tall', () => {
+    expect(beste([4.2, 4.4, '*'], 'indeks')).toBe(4.4);
+    expect(beste([9.4, 5.6, 5.5], 'mobbing')).toBe(5.5);
+    expect(beste([4.2, null], 'indeks')).toBeNull();
+    expect(beste([4.2, 4.2, 4.2], 'indeks')).toBeNull();
+    expect(beste([4.2, 4.2, 4.1], 'indeks')).toBe(4.2);
+  });
+
+  it('søket i seriene: landet og fylkene uten søk, alle ordene må passe, og «vgs» finner «videregående»', () => {
+    const valg = [
+      { verdi: '', navn: 'Ingen', gruppe: 'ingen' as const },
+      { verdi: 'L', navn: 'Hele landet', gruppe: 'landet' as const },
+      { verdi: 'F46|p', navn: 'Vestland, private skoler', gruppe: 'fylker' as const },
+      { verdi: 'S1', navn: 'Slåtthaug videregående skole', under: 'Vestland', gruppe: 'skoler' as const },
+      { verdi: 'S2', navn: 'Voss gymnas', under: 'Vestland', gruppe: 'skoler' as const },
+    ];
+    expect(filtrerEnheter(valg, '').map((v) => v.verdi)).toEqual(['', 'L', 'F46|p']);
+    expect(filtrerEnheter(valg, 'slått').map((v) => v.verdi)).toEqual(['S1']);
+    expect(filtrerEnheter(valg, 'slåtthaug vgs').map((v) => v.verdi)).toEqual(['S1']);
+    expect(filtrerEnheter(valg, 'vestland priv').map((v) => v.verdi)).toEqual(['F46|p']);
+    expect(filtrerEnheter(valg, 'vestland').map((v) => v.verdi)).toEqual(['F46|p', 'S1', 'S2']);
   });
 
   it.runIf(d !== null)('starter med skolen, fylket og landet, og privatskoler mot privatskolene i landet (eier 06.10.2026)', () => {

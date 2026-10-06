@@ -722,6 +722,74 @@ kilder:
       Håndhevingsordningen (opplæringslova § 12-6). Kildesjekken følger kapittel 7 for seg, fordi det står på en egen
       side.
 
+  - id: udir-rundskriv-skolemiljo-hvem
+    navn: Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
+    kortnavn: Rundskriv om skolemiljø, kap. 2
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Hvem og hvor reglene i opplæringslova kapittel 12 gjelder (§ 12-1). Siden «Et trygt og godt skolemiljø» i Skolemiljø viser hit.
+
+  - id: udir-rundskriv-skolemiljo-retten
+    navn: Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø
+    kortnavn: Rundskriv om skolemiljø, kap. 3
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Retten etter opplæringslova § 12-2. Siden «Et trygt og godt skolemiljø» i Skolemiljø viser hit.
+
+  - id: udir-rundskriv-skolemiljo-nulltoleranse
+    navn: Rundskriv om skolemiljø, kapittel 4 Nulltoleranse
+    kortnavn: Rundskriv om skolemiljø, kap. 4
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Nulltoleranse og forebyggende arbeid etter opplæringslova § 12-3. Siden «Et trygt og godt skolemiljø» i Skolemiljø viser hit.
+
+  - id: udir-rundskriv-skolemiljo-informasjon
+    navn: Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre
+    kortnavn: Rundskriv om skolemiljø, kap. 5
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Informasjon til elevene og foreldrene om skolemiljøet. Siden «Et trygt og godt skolemiljø» i Skolemiljø viser hit.
+
   - id: udir-elevundersokelsen
     navn: Elevundersøkelsen i videregående, Udirs statistikkbank
     kortnavn: Elevundersøkelsen
