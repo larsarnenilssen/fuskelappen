@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Lærlinger og kandidater:** Regelverket og kildene står som lukkede rader nederst i kortene og boksene («I regelverket» og «Kilder»), som ellers i appen. Det gjelder veiene, «Om veien», merknaden om kompetansebevis, sammenligningen og overgangene. «Mer om …» står over radene.
+
 ## [0.38.2] – 2026-10-06
 
 ### Endret

@@ -1,5 +1,6 @@
 // En vei for lærlinger og kandidater på egen side (fase 6, pakke 6, avgjørelse 069): sti øverst, prøven i Vurdering
-// som første kort, stegene, «Om veien», og «Kommer fra» og «Veien videre» som knapper. På skrivebord står stegene og
+// som første kort, stegene, «Om veien», og «Kommer fra» og «Veien videre» som knapper. Regelverket og kildene står som
+// lukkede rader nederst i «Om veien» og under overgangene (eier 06.10.2026). På skrivebord står stegene og
 // «Om veien» til venstre, og «Kommer fra» og «Veien videre» til høyre (eier 06.10.2026).
 import { useTekst } from '../../../app/tilstand.ts';
 import { lenke } from '../../../app/ruter.ts';
@@ -8,7 +9,7 @@ import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import type { SideProps } from '../../typer.ts';
 import { FAGBREV_RUTE, fraAdresse, kommerFra, maal, PROVE_RUTE, useVeier, veiAdresse, veienVidere } from '../fagbrev/data.ts';
 import { Brodsmuler } from './felles.tsx';
-import { Fakta, Fargeforklaring, Overgangskort, Stegrad } from './fagbrevDeler.tsx';
+import { Fakta, faktakilder, Fargeforklaring, Kildefot, Overgangskort, Stegrad } from './fagbrevDeler.tsx';
 
 export default function Vei({ parametre }: SideProps) {
   const { t, malform } = useTekst();
@@ -70,6 +71,7 @@ export default function Vei({ parametre }: SideProps) {
               {t('opplaeringslop.fagbrev.omVeien')}
             </h2>
             <Fakta vei={vei} data={data} med="alt" />
+            <Kildefot kilder={faktakilder(vei, data, 'alt')} fot />
           </section>
         </div>
         <div class="fb-to-side">
@@ -78,9 +80,10 @@ export default function Vei({ parametre }: SideProps) {
               <h2 class="liten-overskrift">{t('opplaeringslop.fagbrev.kommerFra')}</h2>
               <ul class="fb-overganger">
                 {fra.map(({ fra: u, overgang }) => (
-                  <Overgangskort key={u.id} rute={lenke(FAGBREV_RUTE, { fane: 'bytte', fra: fraAdresse(u.id) })} ikon="sted" tittel={u.tittel[malform]} vilkar={overgang.vilkar[malform]} kilder={overgang.kilder} />
+                  <Overgangskort key={u.id} rute={lenke(FAGBREV_RUTE, { fane: 'bytte', fra: fraAdresse(u.id) })} ikon="sted" tittel={u.tittel[malform]} vilkar={overgang.vilkar[malform]} />
                 ))}
               </ul>
+              <Kildefot kilder={fra.flatMap((f) => f.overgang.kilder)} />
             </section>
           )}
           {videre.length > 0 && (
@@ -89,9 +92,10 @@ export default function Vei({ parametre }: SideProps) {
               <ul class="fb-overganger">
                 {videre.map((o) => {
                   const m = maal(data, o);
-                  return <Overgangskort key={m.rute + m.tittel.nb} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel[malform]} vilkar={o.vilkar[malform]} kilder={o.kilder} />;
+                  return <Overgangskort key={m.rute + m.tittel.nb} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel[malform]} vilkar={o.vilkar[malform]} />;
                 })}
               </ul>
+              <Kildefot kilder={videre.flatMap((o) => o.kilder)} />
             </section>
           )}
         </div>

@@ -8036,15 +8036,6 @@ a.knapp {
   margin: 0;
 }
 
-.fb-kilde {
-  display: flex;
-  gap: var(--rom-1);
-  align-items: baseline;
-  margin: var(--rom-1) 0 var(--rom-2);
-  color: var(--farge-tekst-dempet);
-  font-size: var(--str-xs);
-}
-
 .fb-velg-to {
   display: grid;
   gap: 0 var(--rom-3);
@@ -8091,10 +8082,6 @@ a.knapp {
 
 .fb-overganger > li {
   margin-bottom: var(--rom-2);
-}
-
-.fb-overganger .fb-kilde {
-  padding-left: var(--rom-3);
 }
 
 .fb-side .fag-ifaget-i {

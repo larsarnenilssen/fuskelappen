@@ -1,14 +1,13 @@
 // Delene som går igjen på sidene om lærlinger og kandidater (fase 6, pakke 6, avgjørelse 069): stegene i en vei med
-// fargen til delen (skole, kontrakt i bedrift, praksis, prøven), fargeforklaringen, faktaene om veien, kildene, lukkede
-// kort og overgangene. Stegene står som en loddrett sti når kolonnen er smal, og som en rad med like brede steg når
+// fargen til delen (skole, kontrakt i bedrift, praksis, prøven), fargeforklaringen, faktaene om veien, regelverket og
+// kildene som lukkede rader nederst, og overgangene. Stegene står som en loddrett sti når kolonnen er smal, og som en rad med like brede steg når
 // det er plass (eier 06.10.2026, runde 2).
-import { Fragment } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
-import { Kildelenke } from '../../../components/Kildelenke.tsx';
+import { Kortfot, KortfotRader } from '../../../components/Kortfot.tsx';
 import type { KildeRef, Veidel, Veielement } from '../../../core/innhold/skjema.ts';
-import { harKontrakt, type Veiinnhold } from '../fagbrev/data.ts';
+import { harKontrakt, paragraferFra, unikeKilder, type Veiinnhold } from '../fagbrev/data.ts';
 
 const DELER: readonly Veidel[] = ['skole', 'bedrift', 'praksis', 'prove'];
 
@@ -66,14 +65,26 @@ export function Fargeforklaring() {
   );
 }
 
+/** Teksten om oppsigelse og heving, når den hører til veien og alt skal med. */
+function kontraktSlutt(vei: Veielement, data: Veiinnhold, med: 'kort' | 'alt') {
+  return med === 'alt' && harKontrakt(vei) ? data.kontraktSlutt : undefined;
+}
+
+/** Kildene til faktaene om veien: veiens egne, og kildene til teksten om oppsigelse og heving når den står med. */
+export function faktakilder(vei: Veielement, data: Veiinnhold, med: 'kort' | 'alt' = 'kort'): KildeRef[] {
+  const slutt = kontraktSlutt(vei, data, med);
+  return slutt ? [...vei.kilder, ...slutt.kilder] : [...vei.kilder];
+}
+
 /**
- * Hvem som melder opp, fellesfagene, voksne og kildene. Med `alt` også kontrakten, prøven, dokumentasjonen og hva som
- * skjer når kontrakten sies opp eller heves (eier 06.10.2026, svar 4: der det er naturlig å skrive om kontrakten).
+ * Hvem som melder opp, fellesfagene og voksne. Med `alt` også kontrakten, prøven, dokumentasjonen og hva som skjer når
+ * kontrakten sies opp eller heves (eier 06.10.2026, svar 4: der det er naturlig å skrive om kontrakten). Kildene står i
+ * kortet rundt, som lukkede rader nederst (Kildefot).
  */
 export function Fakta({ vei, data, med = 'kort' }: { vei: Veielement; data: Veiinnhold; med?: 'kort' | 'alt' }) {
   const { t, malform } = useTekst();
   const alt = med === 'alt';
-  const slutt = alt && harKontrakt(vei) ? data.kontraktSlutt : undefined;
+  const slutt = kontraktSlutt(vei, data, med);
   const rader: [string, string | undefined, boolean][] = [
     [t('opplaeringslop.fagbrev.kontrakt'), vei.kontrakt[malform], alt],
     [t('opplaeringslop.fagbrev.prove'), vei.prove[malform], alt],
@@ -83,52 +94,41 @@ export function Fakta({ vei, data, med = 'kort' }: { vei: Veielement; data: Veii
     [t('opplaeringslop.fagbrev.voksne'), vei.voksne?.[malform], true],
   ];
   return (
-    <>
-      <dl class="fb-fakta">
-        {rader.map(([dt, dd, vis]) =>
-          vis && dd ? (
-            <div key={dt}>
-              <dt>{dt}</dt>
-              <dd>{dd}</dd>
-            </div>
-          ) : null,
-        )}
-        {slutt && (
-          <div class="fb-fakta-bred">
-            <dt>{slutt.tittel[malform]}</dt>
-            <dd dangerouslySetInnerHTML={{ __html: slutt.tekst[malform] }} />
+    <dl class="fb-fakta">
+      {rader.map(([dt, dd, vis]) =>
+        vis && dd ? (
+          <div key={dt}>
+            <dt>{dt}</dt>
+            <dd>{dd}</dd>
           </div>
-        )}
-      </dl>
-      <Kilder kilder={slutt ? [...vei.kilder, ...slutt.kilder] : vei.kilder} />
-    </>
-  );
-}
-
-/** Kildene på én linje, med kortnavn og punkt. En paragraf som står i Lov og forskrift, lenker dit. */
-export function Kilder({ kilder }: { kilder: readonly KildeRef[] }) {
-  const { t } = useTekst();
-  return (
-    <p class="fb-kilde">
-      <Ikon navn="paragraf" class="ikon-liten" />
-      <span>
-        <span class="skjult-visuelt">{t('opplaeringslop.fagbrev.kilde')}: </span>
-        {kilder.map((k, i) => (
-          <Fragment key={`${k.id}-${k.punkt ?? ''}`}>
-            {i > 0 && ' · '}
-            <Kildelenke kilde={k} kort />
-          </Fragment>
-        ))}
-      </span>
-    </p>
+        ) : null,
+      )}
+      {slutt && (
+        <div class="fb-fakta-bred">
+          <dt>{slutt.tittel[malform]}</dt>
+          <dd dangerouslySetInnerHTML={{ __html: slutt.tekst[malform] }} />
+        </div>
+      )}
+    </dl>
   );
 }
 
 /**
- * En overgang som kort med vilkåret, og kildene under når de er med. På fanen «Bytte vei» står kortene uten kilder
- * (eier 06.10.2026). Kildene står på siden kortet går til («Kommer fra»), og nederst på fanen.
+ * Regelverket og kildene som lukkede rader nederst i et kort eller en boks, som ellers i appen (Kortfot, eier
+ * 06.10.2026): «I regelverket» med paragrafene i Lov og forskrift, og «Kilder» med alle kildene. `fot` når radene står
+ * nederst i en ramme, fra kant til kant. Uten `fot` står radene under en liste, f.eks. under overgangene.
  */
-export function Overgangskort({ rute, ikon, tittel, vilkar, kilder }: { rute: string; ikon: Ikonnavn; tittel: string; vilkar: string; kilder?: readonly KildeRef[] }) {
+export function Kildefot({ kilder, fot = false }: { kilder: readonly KildeRef[]; fot?: boolean }) {
+  const unike = unikeKilder(kilder);
+  const paragrafer = paragraferFra(unike);
+  return fot ? <Kortfot paragrafer={paragrafer} kilder={unike} /> : <KortfotRader paragrafer={paragrafer} kilder={unike} />;
+}
+
+/**
+ * En overgang som kort med vilkåret. Kortet er en lenke, så kildene står samlet under listen med overgangene
+ * (Kildefot), ikke i hvert kort (eier 06.10.2026).
+ */
+export function Overgangskort({ rute, ikon, tittel, vilkar }: { rute: string; ikon: Ikonnavn; tittel: string; vilkar: string }) {
   return (
     <li>
       <a class="frist-inngang" href={rute}>
@@ -139,7 +139,6 @@ export function Overgangskort({ rute, ikon, tittel, vilkar, kilder }: { rute: st
         <span class="frist-inngang-neste">{vilkar}</span>
         <Ikon navn="hoyre" class="frist-inngang-pil" />
       </a>
-      {kilder && <Kilder kilder={kilder} />}
     </li>
   );
 }

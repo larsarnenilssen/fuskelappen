@@ -9,15 +9,13 @@ import { erstattAdresse } from '../../../app/ruter.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { kildeTekst } from '../../../components/Kildelenke.tsx';
-import { KortfotRader } from '../../../components/Kortfot.tsx';
 import { Sammenligning } from '../../../components/Sammenligning.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import type { Flerspraak, Veimal } from '../../../core/innhold/skjema.ts';
 import type { SideProps } from '../../typer.ts';
 import { FAGBREV_RUTE, fraAdresse, maal, useVeier, veiAdresse, type Veielement, type Veiinnhold, veiRute } from '../fagbrev/data.ts';
 import { Brodsmuler } from './felles.tsx';
-import { Fakta, Fargeforklaring, Overgangskort, Stegrad, useBred } from './fagbrevDeler.tsx';
+import { Fakta, faktakilder, Fargeforklaring, Kildefot, Overgangskort, Stegrad, useBred } from './fagbrevDeler.tsx';
 import { Lukketkort } from '../../../components/Lukketkort.tsx';
 
 type Fane = 'veiene' | 'sammenlign' | 'bytte';
@@ -66,7 +64,8 @@ function Veiinnhold({ vei, data }: { vei: Veielement; data: Veiinnhold }) {
     <>
       <Stegrad vei={vei} />
       <Fakta vei={vei} data={data} />
-      {/* Veien videre for den som vil vite mer: en tydelig knapp til siden for veien (eier 06.10.2026, runde 3). */}
+      {/* Veien videre for den som vil vite mer: en tydelig knapp til siden for veien (eier 06.10.2026, runde 3). Den står
+          over regelverket og kildene, som er lukkede rader nederst i kortet (eier 06.10.2026). */}
       <a class="knapp fb-mer" href={`#${veiRute(vei.id)}`}>
         <span class="fb-mer-tekst">
           <span>{t('opplaeringslop.fagbrev.lesMer', { rolle: vei.kortnavn[malform] })}</span>
@@ -74,6 +73,7 @@ function Veiinnhold({ vei, data }: { vei: Veielement; data: Veiinnhold }) {
         </span>
         <Ikon navn="hoyre" />
       </a>
+      <Kildefot kilder={faktakilder(vei, data)} fot />
     </>
   );
 }
@@ -104,7 +104,10 @@ function Veiene({ data, valg, endre }: { data: Veiinnhold; valg: Valg; endre: En
       )}
       {/* Kompetansebevis er også dokumentasjon for elever som ikke har fullført (eier 06.10.2026, svar 3). */}
       {valg.mal === 'kompetansebevis' && data.kompetansebevis && (
-        <div class="merknad fb-merknad" dangerouslySetInnerHTML={{ __html: data.kompetansebevis.tekst[malform] }} />
+        <div class="merknad fb-merknad">
+          <div dangerouslySetInnerHTML={{ __html: data.kompetansebevis.tekst[malform] }} />
+          <Kildefot kilder={data.kompetansebevis.kilder} fot />
+        </div>
       )}
       <p class="dempet liten" role="status">
         {veier.length === 1 ? t('opplaeringslop.fagbrev.enVei') : t('opplaeringslop.fagbrev.antallVeier', { antall: String(veier.length) })}
@@ -199,12 +202,10 @@ function Sammenlign({ data, valg, endre }: { data: Veiinnhold; valg: Valg; endre
           rad('fellesfag', t('opplaeringslop.fagbrev.fellesfag'), (v) => v.fellesfagTekst),
           rad('dok', t('opplaeringslop.fagbrev.dokumentasjon'), (v) => v.dokumentasjon),
           rad('voksne', t('opplaeringslop.fagbrev.voksne'), (v) => v.voksne ?? strek),
-          rad('kilde', t('opplaeringslop.fagbrev.kilde'), (v) => {
-            const navn = v.kilder.map((k) => { const { navn, punkt } = kildeTekst(t, k, true); return `${navn}${punkt}`; }).join(', ');
-            return { nb: navn, nn: navn };
-          }),
         ]}
       />
+      {/* Kildene til begge veiene som lukkede rader under sammenligningen, ikke som en rad i den (eier 06.10.2026). */}
+      <Kildefot kilder={[...a.kilder, ...b.kilder]} />
       {/* Lukket fra start: fellesfagene for de to veiene står allerede i boksen over (eier 06.10.2026, runde 2). */}
       <Lukketkort tittel={t('opplaeringslop.fagbrev.fellesfagListe')} smakebit={t('opplaeringslop.fagbrev.fellesfagListeTekst')}>
         <ul class="fb-fellesfag">
@@ -253,8 +254,9 @@ function Bytte({ data, valg, endre }: { data: Veiinnhold; valg: Valg; endre: End
             return <Overgangskort key={m.rute + m.tittel.nb} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel[malform]} vilkar={o.vilkar[malform]} />;
           })}
         </ul>
-        {/* Kildene til overgangene står samlet og lukket under kortene, og på siden hver vei går til (eier 06.10.2026). */}
-        <KortfotRader kilder={fra.kilder} />
+        {/* Regelverket og kildene til overgangene står samlet og lukket under kortene, og på siden hver vei går til (eier
+            06.10.2026). */}
+        <Kildefot kilder={fra.kilder} />
       </div>
     </div>
   );
