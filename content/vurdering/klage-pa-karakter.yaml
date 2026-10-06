@@ -6,8 +6,8 @@
   type: veiviser
   tittel: { nb: Klage på karakter, nn: Klage på karakter }
   tekst:
-    nb: "Hva kan eleven klage på, og hvem avgjør klagen? Veiviseren går gjennom begrunnelsen, fristen, hva skolen kan gjøre, og hva klageinstansen kan komme til."
-    nn: "Kva kan eleven klage på, og kven avgjer klaga? Vegvisaren går gjennom grunngivinga, fristen, kva skolen kan gjere, og kva klageinstansen kan kome til."
+    nb: "Hva kan eleven klage på, og hvem avgjør klagen? Veiviseren går gjennom begrunnelsen, fristen, hva skolen kan gjøre og hva klageinstansen kan komme til."
+    nn: "Kva kan eleven klage på, og kven avgjer klaga? Vegvisaren går gjennom grunngivinga, fristen, kva skolen kan gjere og kva klageinstansen kan kome til."
   start: kl-start
   farge: baer
   rekkefolge: 30
@@ -113,8 +113,8 @@
     nb: "Klagefristen"
     nn: "Klagefristen"
   tekst:
-    nb: "Fristen er ti kalenderdager. Den regnes fra dagen eleven fikk karakteren, eller fra dagen eleven fikk begrunnelsen, hvis den kom senere. Klagen er skriftlig, sier hva eleven klager på, og sendes til skolen. Den bør si hvorfor eleven mener reglene ikke er fulgt."
-    nn: "Fristen er ti kalenderdagar. Han blir rekna frå dagen eleven fekk karakteren, eller frå dagen eleven fekk grunngivinga, dersom ho kom seinare. Klaga er skriftleg, seier kva eleven klagar på, og blir send til skolen. Ho bør seie kvifor eleven meiner reglane ikkje er følgde."
+    nb: "Fristen er ti kalenderdager. Den regnes fra dagen eleven fikk karakteren, eller fra dagen eleven fikk begrunnelsen, hvis den kom senere. Klagen er skriftlig, sier hva eleven klager på og sendes til skolen. Den bør si hvorfor eleven mener reglene ikke er fulgt."
+    nn: "Fristen er ti kalenderdagar. Han blir rekna frå dagen eleven fekk karakteren, eller frå dagen eleven fekk grunngivinga, dersom ho kom seinare. Klaga er skriftleg, seier kva eleven klagar på og blir send til skolen. Ho bør seie kvifor eleven meiner reglane ikkje er følgde."
   ansvar:
     nb: "Eleven, eller foreldrene når eleven er under 15 år."
     nn: "Eleven, eller foreldra når eleven er under 15 år."

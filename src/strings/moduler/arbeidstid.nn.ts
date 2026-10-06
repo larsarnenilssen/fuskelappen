@@ -227,7 +227,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     utenUtvidelseMerknad: 'Funksjonar som ikkje utvidar planfesta tid ({prosent} %), er fordelte som undervisninga: ein del planfesta tid og ein del tid læraren disponerer sjølv.',
     tillegg: 'Møte, planleggingsdagar og løn',
     planlegging: 'Timar på planleggingsdagar',
-    planleggingHjelp: 'Tomt felt gir {timer} timar (6 dagar à 7,5 timar), som for ein lærar i heil stilling. Skriv inn eit anna tal ved deltid, for ein periode, om skulen har andre planleggingsdagar, eller for lærarar som er 60 år og eldre når ferien blir lagd til planleggingsdagane.',
+    planleggingHjelp: 'Tomt felt gir {timer} timar (6 dagar à 7,5 timar), som for ein lærar i heil stilling. Skriv inn eit anna tal ved deltid, for ein periode, om skulen har andre planleggingsdagar eller for lærarar som er 60 år og eldre når ferien blir lagd til planleggingsdagane.',
     planleggingOppsummering: 'planleggingsdagar {timer} t',
     moterHjelp: 'Valfritt. Faste møte i planfesta tid, til diagrammet over arbeidstida.',
     visLonn: 'Rekn ut løn',
@@ -287,7 +287,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     tittel: 'Redusert undervisning',
     velg: 'Livsfasetiltak (SFS 2213 punkt 6)',
     hjelp:
-      'Læraren har rett til å få redusert undervisninga med inntil {nyutdannet} % det første yrkesåret etter fullført utdanning, inntil {fra57} % frå det kalenderåret læraren fyller 57 år, og inntil {fra60} % frå det kalenderåret læraren fyller 60 år. Reduksjonen blir rekna som ein del av stillinga, som ein funksjon.',
+      'Læraren har rett til å få redusert undervisninga med inntil {nyutdannet} % det første yrkesåret etter fullført utdanning, inntil {fra57} % frå det kalenderåret læraren fyller 57 år og inntil {fra60} % frå det kalenderåret læraren fyller 60 år. Reduksjonen blir rekna som ein del av stillinga, som ein funksjon.',
     valg: {
       ingen: 'Ingen',
       nyutdannet: 'Nyutdanna',

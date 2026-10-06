@@ -9,8 +9,8 @@
     nb: Rett, inntak og søknad
     nn: Rett, inntak og søknad
   tekst:
-    nb: Finn ut om søkeren har rett til videregående opplæring som ungdom eller voksen, hvordan søkeren tas inn, og hvilken søknadsfrist som gjelder.
-    nn: Finn ut om søkjaren har rett til vidaregåande opplæring som ungdom eller vaksen, korleis søkjaren blir teken inn, og kva søknadsfrist som gjeld.
+    nb: Finn ut om søkeren har rett til videregående opplæring som ungdom eller voksen, hvordan søkeren tas inn og hvilken søknadsfrist som gjelder.
+    nn: Finn ut om søkjaren har rett til vidaregåande opplæring som ungdom eller vaksen, korleis søkjaren blir teken inn og kva søknadsfrist som gjeld.
   start: sk-grunnskole
   farge: turkis
   rekkefolge: 3
@@ -361,11 +361,11 @@
     nb: |-
       Søkere som har bestått alle fagene på trinnet før, skal tas inn til neste trinn. Det gjelder også fag med bare halvårsvurdering med karakter.
 
-      Fylkeskommunen kan likevel ta inn søkere som ikke har bestått alt, når det etter en samlet vurdering er faglig forsvarlig. Det gjelder søkere med individuelt tilrettelagt opplæring uten karakter i flere fag, søkere som skal følge individuelt utvalgte kompetansemål, og søkere som ikke har bestått ett eller flere fag. I særskilte tilfeller kan søkeren tas inn til mindre enn et fullstendig programområde.
+      Fylkeskommunen kan likevel ta inn søkere som ikke har bestått alt, når det etter en samlet vurdering er faglig forsvarlig. Det gjelder søkere med individuelt tilrettelagt opplæring uten karakter i flere fag, søkere som skal følge individuelt utvalgte kompetansemål og søkere som ikke har bestått ett eller flere fag. I særskilte tilfeller kan søkeren tas inn til mindre enn et fullstendig programområde.
     nn: |-
       Søkjarar som har bestått alle faga på trinnet før, skal takast inn til neste trinn. Det gjeld også fag med berre halvårsvurdering med karakter.
 
-      Fylkeskommunen kan likevel ta inn søkjarar som ikkje har bestått alt, når det etter ei samla vurdering er fagleg forsvarleg. Det gjeld søkjarar med individuelt tilrettelagd opplæring utan karakter i fleire fag, søkjarar som skal følgje individuelt utvalde kompetansemål, og søkjarar som ikkje har bestått eitt eller fleire fag. I særskilde tilfelle kan søkjaren takast inn til mindre enn eit fullstendig programområde.
+      Fylkeskommunen kan likevel ta inn søkjarar som ikkje har bestått alt, når det etter ei samla vurdering er fagleg forsvarleg. Det gjeld søkjarar med individuelt tilrettelagd opplæring utan karakter i fleire fag, søkjarar som skal følgje individuelt utvalde kompetansemål og søkjarar som ikkje har bestått eitt eller fleire fag. I særskilde tilfelle kan søkjaren takast inn til mindre enn eit fullstendig programområde.
   ansvar:
     nb: Fylkeskommunen vurderer.
     nn: Fylkeskommunen vurderer.
@@ -669,7 +669,7 @@
 
       **Søknad:** Voksne kan søke fortløpende. Det er ingen nasjonal søknadsfrist. Søkeren fører opp tre sluttkompetanser i prioritert rekkefølge, og sender søknaden til fylkeskommunen der søkeren er folkeregistrert, eller til fylket søkeren skal flytte til.
 
-      **Inntak:** Fylkeskommunen behandler søknadene fortløpende og skal gi et tilbud innen rimelig tid. Den kan ikke ha ventelister. Er det ikke plass til alle, tas søkerne inn i denne rekkefølgen: søkere med rett til videregående opplæring for voksne, søkere med rett til yrkesfaglig rekvalifisering, søkere med rett til påbygging, og til slutt søkere uten rett.
+      **Inntak:** Fylkeskommunen behandler søknadene fortløpende og skal gi et tilbud innen rimelig tid. Den kan ikke ha ventelister. Er det ikke plass til alle, tas søkerne inn i denne rekkefølgen: søkere med rett til videregående opplæring for voksne, søkere med rett til yrkesfaglig rekvalifisering, søkere med rett til påbygging og til slutt søkere uten rett.
 
       **Klage:** Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket.
     nn: |-
@@ -677,7 +677,7 @@
 
       **Søknad:** Vaksne kan søkje fortløpande. Det er inga nasjonal søknadsfrist. Søkjaren fører opp tre sluttkompetansar i prioritert rekkjefølgje, og sender søknaden til fylkeskommunen der søkjaren er folkeregistrert, eller til fylket søkjaren skal flytte til.
 
-      **Inntak:** Fylkeskommunen behandlar søknadene fortløpande og skal gi eit tilbod innan rimeleg tid. Han kan ikkje ha ventelister. Er det ikkje plass til alle, blir søkjarane tekne inn i denne rekkjefølgja: søkjarar med rett til vidaregåande opplæring for vaksne, søkjarar med rett til yrkesfagleg rekvalifisering, søkjarar med rett til påbygging, og til slutt søkjarar utan rett.
+      **Inntak:** Fylkeskommunen behandlar søknadene fortløpande og skal gi eit tilbod innan rimeleg tid. Han kan ikkje ha ventelister. Er det ikkje plass til alle, blir søkjarane tekne inn i denne rekkjefølgja: søkjarar med rett til vidaregåande opplæring for vaksne, søkjarar med rett til yrkesfagleg rekvalifisering, søkjarar med rett til påbygging og til slutt søkjarar utan rett.
 
       **Klage:** Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket.
   frist:

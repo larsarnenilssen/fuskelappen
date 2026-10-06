@@ -214,8 +214,8 @@
     nb: "God underveisvurdering"
     nn: "God undervegsvurdering"
   tekst:
-    nb: "Underveisvurderingen er en del av opplæringen. Eleven skal være med og vurdere eget arbeid, forstå hva som skal læres og hva som ventes, få vite hva hen mestrer, og få veiledning om hvordan hen kan øke kompetansen. Den brukes også til å vurdere om eleven har tilfredsstillende utbytte av opplæringen."
-    nn: "Undervegsvurderinga er ein del av opplæringa. Eleven skal vere med og vurdere eige arbeid, forstå kva som skal lærast og kva som blir venta, få vite kva hen meistrar, og få rettleiing om korleis hen kan auke kompetansen. Ho blir også brukt til å vurdere om eleven har tilfredsstillande utbyte av opplæringa."
+    nb: "Underveisvurderingen er en del av opplæringen. Eleven skal være med og vurdere eget arbeid, forstå hva som skal læres og hva som ventes, få vite hva hen mestrer og få veiledning om hvordan hen kan øke kompetansen. Den brukes også til å vurdere om eleven har tilfredsstillende utbytte av opplæringen."
+    nn: "Undervegsvurderinga er ein del av opplæringa. Eleven skal vere med og vurdere eige arbeid, forstå kva som skal lærast og kva som blir venta, få vite kva hen meistrar og få rettleiing om korleis hen kan auke kompetansen. Ho blir også brukt til å vurdere om eleven har tilfredsstillande utbyte av opplæringa."
   paragrafer: [opplaeringsforskrifta/9-11, opplaeringslova/11-2]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-11 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }

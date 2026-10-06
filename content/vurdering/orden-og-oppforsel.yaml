@@ -21,8 +21,8 @@
     nb: "Karakterene"
     nn: "Karakterane"
   tekst:
-    nb: "Karakterene er God (G) for vanlig god orden og oppførsel, Nokså god (Ng) for store negative avvik, og Lite god (Lg) for særlig store negative avvik."
-    nn: "Karakterane er God (G) for vanleg god orden og oppførsel, Nokså god (Ng) for store negative avvik, og Lite god (Lg) for særleg store negative avvik."
+    nb: "Karakterene er God (G) for vanlig god orden og oppførsel, Nokså god (Ng) for store negative avvik og Lite god (Lg) for særlig store negative avvik."
+    nn: "Karakterane er God (G) for vanleg god orden og oppførsel, Nokså god (Ng) for store negative avvik og Lite god (Lg) for særleg store negative avvik."
   paragrafer: [opplaeringsforskrifta/9-4]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-4", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-4" }

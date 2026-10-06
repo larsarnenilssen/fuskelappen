@@ -65,8 +65,8 @@
   type: begrep
   tittel: { nb: "Utsatt eksamen", nn: "Utsett eksamen" }
   tekst:
-    nb: "Elever og privatister som har dokumentert fravær på eksamen, har rett til utsatt eksamen ved første eksamen etter. Dokumentasjonen må vise at de var hindret, at det ikke kunne forutses, og at de ikke kan lastes for det. Eleven melder seg selv til skolen. Går eleven ikke opp eller stryker, faller standpunktkarakteren bort."
-    nn: "Elevar og privatistar som har dokumentert fråvær på eksamen, har rett til utsett eksamen ved første eksamen etter. Dokumentasjonen må vise at dei var hindra, at det ikkje kunne føresjåast, og at dei ikkje kan lastast for det. Eleven melder seg sjølv til skolen. Går eleven ikkje opp eller strykar, fell standpunktkarakteren bort."
+    nb: "Elever og privatister som har dokumentert fravær på eksamen, har rett til utsatt eksamen ved første eksamen etter. Dokumentasjonen må vise at de var hindret, at det ikke kunne forutses og at de ikke kan lastes for det. Eleven melder seg selv til skolen. Går eleven ikke opp eller stryker, faller standpunktkarakteren bort."
+    nn: "Elevar og privatistar som har dokumentert fråvær på eksamen, har rett til utsett eksamen ved første eksamen etter. Dokumentasjonen må vise at dei var hindra, at det ikkje kunne føresjåast og at dei ikkje kan lastast for det. Eleven melder seg sjølv til skolen. Går eleven ikkje opp eller strykar, fell standpunktkarakteren bort."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-36", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-36" }
   kontrollert: null
@@ -251,7 +251,7 @@
       Annullering betyr at en eksamen eller prøve ikke gjelder. Rektor selv annullerer eksamen for en elev som jukser
       eller prøver å jukse, og standpunktkarakteren i faget faller bort. For privatister og dem med læretid i bedrift
       er det fylkeskommunen som annullerer. Kandidaten får fullføre eksamensdagen, skal få uttale seg før det
-      avgjøres, og kan ta eksamen på nytt tidligst ett år etter. Udir kan annullere eksamen ved feil i
+      avgjøres og kan ta eksamen på nytt tidligst ett år etter. Udir kan annullere eksamen ved feil i
       gjennomføringen, og da har kandidaten rett til ny eksamen. Får eleven ikke standpunktkarakter i faget,
       annulleres eksamen. Ved juks på fag- og svenneprøven annullerer prøvenemnda prøven. Det er noe annet enn å bli
       vist bort fra eksamen.
@@ -259,7 +259,7 @@
       Annullering tyder at ein eksamen eller ei prøve ikkje gjeld. Rektor sjølv annullerer eksamen for ein elev som
       jukser eller prøver å jukse, og standpunktkarakteren i faget fell bort. For privatistar og dei med læretid i
       bedrift er det fylkeskommunen som annullerer. Kandidaten får fullføre eksamensdagen, skal få uttale seg før det
-      blir avgjort, og kan ta eksamen på nytt tidlegast eitt år etter. Udir kan annullere eksamen ved feil i
+      blir avgjort og kan ta eksamen på nytt tidlegast eitt år etter. Udir kan annullere eksamen ved feil i
       gjennomføringa, og då har kandidaten rett til ny eksamen. Får ikkje eleven standpunktkarakter i faget, blir
       eksamen annullert. Ved juks på fag- og sveineprøva annullerer prøvenemnda prøva. Det er noko anna enn å bli
       vist bort frå eksamen.

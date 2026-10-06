@@ -184,8 +184,8 @@
     nb: Elever med kort botid
     nn: Elevar med kort butid
   tekst:
-    nb: Det er ingen fast grense for hvor lenge en elev må ha bodd i Norge for å regnes som nyankommet. Fylkeskommunen ser på norskferdighetene, hva som er best for eleven, og hensynet til integrering. Elever som har bodd kort tid i Norge, kan få innføringsopplæring.
-    nn: Det er inga fast grense for kor lenge ein elev må ha budd i Noreg for å reknast som nykomen. Fylkeskommunen ser på norskdugleiken, kva som er best for eleven, og omsynet til integrering. Elevar som har budd kort tid i Noreg, kan få innføringsopplæring.
+    nb: Det er ingen fast grense for hvor lenge en elev må ha bodd i Norge for å regnes som nyankommet. Fylkeskommunen ser på norskferdighetene, hva som er best for eleven og hensynet til integrering. Elever som har bodd kort tid i Norge, kan få innføringsopplæring.
+    nn: Det er inga fast grense for kor lenge ein elev må ha budd i Noreg for å reknast som nykomen. Fylkeskommunen ser på norskdugleiken, kva som er best for eleven og omsynet til integrering. Elevar som har budd kort tid i Noreg, kan få innføringsopplæring.
   forklaring:
     nb: For å ha rett til videregående opplæring må eleven ha fullført grunnskolen eller tilsvarende, for eksempel ni års grunnopplæring i utlandet, og ha lovlig opphold. Fylkeskommunen skal ha et tilbud til dem som har rett til videregående, men mangler språklige forutsetninger for å gjennomføre den, og kan tilby mer grunnskoleopplæring. Hvem som har rett, og hvordan søkeren tas inn, står i veiviseren [Rett, inntak og søknad](#/inntak/rett-inntak-soknad?steg=sk-utland&svar=utland).
     nn: For å ha rett til vidaregåande opplæring må eleven ha fullført grunnskolen eller tilsvarande, til dømes ni års grunnopplæring i utlandet, og ha lovleg opphald. Fylkeskommunen skal ha eit tilbod til dei som har rett til vidaregåande, men manglar språklege føresetnader for å gjennomføre ho, og kan tilby meir grunnskoleopplæring. Kven som har rett, og korleis søkjaren blir teken inn, står i vegvisaren [Rett, inntak og søknad](#/inntak/rett-inntak-soknad?steg=sk-utland&svar=utland).
@@ -314,7 +314,7 @@
     - "Er det riktig at læreplanen for kort botid er kompetansegivende, og at eleven kan følge den i stedet for den vanlige læreplanen i norsk?"
     - "Er «Brukes i særskilt språkopplæring til eleven kan norsk godt nok til å følge den vanlige opplæringen» en riktig beskrivelse av grunnleggende norsk i videregående?"
     - "Står læreplanene på rett sted i veiviseren (etter vedtak og innføringsopplæring), eller bør de også vises i vedtakssteget?"
-    - "GNS02-01 står ikke i Udirs liste over læreplaner for særskilt språkopplæring. Er merknaden riktig: for voksne i modulstrukturert opplæring, ingen sluttvurdering, og en midtveisvurdering med godkjent eller ikke godkjent når modulen er ferdig?"
+    - "GNS02-01 står ikke i Udirs liste over læreplaner for særskilt språkopplæring. Er merknaden riktig: for voksne i modulstrukturert opplæring, ingen sluttvurdering og en midtveisvurdering med godkjent eller ikke godkjent når modulen er ferdig?"
 
 - id: sp-oppfolging
   type: steg
