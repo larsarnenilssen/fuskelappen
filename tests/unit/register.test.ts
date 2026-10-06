@@ -37,7 +37,9 @@ describe('modulregisteret', () => {
     expect(ider).toContain('modul:testmodul');
     expect(ider).toContain('testmodul:skoleregler');
     expect(new Set(ider).size).toBe(ider.length);
-  });
+    // Søket laster innholdet i alle modulene og alle dokumentene i Lov og forskrift. Med privatskolelova og
+    // forskriften (06.10.2026) tar det om lag 5 sekunder, så standardgrensen på 5 sekunder er for kort.
+  }, 30_000);
 
   it('samler favorittbare fra alle synlige moduler', async () => {
     const f = await samleFavorittbare();
