@@ -190,3 +190,182 @@ Ordlyden i høyre kolonne er et utkast og får kontrollspørsmål. Jeg har ikke 
 **Åpent:**
 - Om departementet har delegert klagen etter pl. §§ 3-1, 3-6 og 3-10, f.eks. til Udir eller statsforvalteren. Det er spurt i kontrollspørsmålene.
 - Skolemiljøet (fase 7) bruker den samme boksen for henvisningen til pl. § 2-4 («rektor» leses som «dagleg leiar»).
+
+---
+
+## Runde 3: skolemiljøet og Elevundersøkelsen (06.10.2026)
+
+PR-en med privatskolene og to kolonner er flettet ([#116](https://github.com/larsarnenilssen/jukselappen/pull/116)). Kildesjekken er startet, så teksten til privatskolelova og forskriften kommer inn i Lov og forskrift.
+
+### D. Mockup av skolemiljøet (i appen, på `test`)
+
+Ny del av appen, «Skolemiljø», i kategorien med samme navn på forsiden (avgjørelse 076).
+
+**D1. Veiviseren «Aktivitetsplikten»** (`#/skolemiljo/aktivitetsplikten`, egen farge: indigo):
+
+| Fase | Steg | Kilde |
+|---|---|---|
+| (start) | Hvor starter saken? Seks innganger: ingen sak ennå, du ser en krenkelse, mistanke, eleven sier det selv, en ansatt krenker, eleven eller foreldrene mener skolen ikke gjør nok | ol. § 12-2, rundskrivet 6.2.1 |
+| I hverdagen | Følge med, Gripe inn | ol. §§ 12-3, 12-4 første ledd, 13-4, rundskrivet 6.3.1–6.3.2 |
+| Melde fra | Melde fra til rektor, Når en som arbeider på skolen, krenker en elev | ol. §§ 12-4 andre ledd, 12-5, 10-8, rundskrivet 6.3.3–6.3.4 |
+| Undersøke og sette inn tiltak | Undersøke saken, Tiltak og tiltaksplan, Dokumentere, Følge opp og evaluere (spørsmål: har eleven det trygt og godt nå?), Eleven har det trygt og godt | ol. § 12-4, rundskrivet 6.3.5–6.5 |
+| Statsforvalteren | Melde saken til statsforvalteren (én uke, hva statsforvalteren vurderer, klage til Udir) | ol. §§ 12-6, 12-8, rundskrivet kap. 7–8 |
+
+- Hvert steg har ansvar, dokumentasjon og frist, som i Tilrettelegging.
+- **Privatskoler** (bryteren «Privatskole»): Melde fra, skjerpet plikt og statsforvalteren har boksen «For privatskoler».
+  - Der loven sier rektor, gjelder det daglig leder.
+  - Der den sier kommunen eller fylkeskommunen, gjelder det skolens styre (§§ 12-4 andre ledd og 12-5) eller skolen (§ 12-6).
+  - Heller ikke privatskoler kan klage på statsforvalterens vedtak.
+  - Kilde: privatskolelova § 2-4 og rundskrivet kap. 8.
+- **Ordet:** Rundskrivet kaller planen «tiltaksplan». Appen bruker det og nevner «aktivitetsplan» i parentes. Spørsmål til deg i kontrollspørsmålene.
+
+**D2. Siden «Skoleregler»** (`#/skolemiljo/skoleregler`, to kolonner på skrivebord):
+- **Venstre: reglene i loven, tre kort.**
+  - «Skolereglene er en forskrift» (ol. §§ 10-6 til 10-8)
+  - «Bortvisning» (ol. § 13-1)
+  - «Pålagt skolebytte» (ol. § 13-2)
+  - Hvert kort har en merknad for privatskoler (pl. §§ 5A-7, 3-10 og 2-4).
+- **Høyre: skolereglene i fylket.** For valgt fylke står paragrafene om reaksjoner, saksbehandling og klage åpne, med titlene fra Lovdata, og «Les hele skolereglene».
+  - Alle 15 fylker har et kort, med paragrafer valgt ut fra titlene. Hvert kort har et kontrollspørsmål om utvalget.
+  - Trøndelag har bare én paragraf om konsekvenser og ingen om saksbehandling.
+  - Fylker med egne skoleregler for voksne får en lenke til dem.
+- **Høyre: skolens egne regler.** For valgt skole står skolens forskrift når den finnes i Lovdata. Finnes den ikke der, står det at skolen likevel kan ha regler som ikke er kunngjort.
+- **Med «Privatskole» valgt** står det at fylkets skoleregler ikke gjelder, med henvisning til pl. § 5A-7.
+- **Videre:** lenker til aktivitetsplikten, orden og oppførsel og fylkessiden.
+
+**Spørsmål D:**
+1. Er inndelingen av veiviseren god, og mangler det steg (f.eks. informasjon til foreldrene som eget steg, eller samarbeid med barnevernet)?
+2. Skal skolereglene vise paragrafene som lenker (slik nå), eller teksten i paragrafene åpen på siden?
+3. Skal «Skolemiljø» ha flere oppslag, f.eks. det fysiske miljøet (ol. § 12-7 og forskriften om miljørettet helsevern)?
+
+### E. Elevundersøkelsen (forslag, ikke bygget)
+
+**Kilden:**
+- Udirs statistikkbank har et åpent API uten nøkkel: `api.statistikkbanken.udir.no/api/rest/v2/Eksport`.
+  - Tabell 152 har indeksene (skala 1–5) og tabell 154 mobbing (andel i prosent).
+  - Dataene er per skole (organisasjonsnummer, som i skoleregisteret), fylke og hele landet, per trinn (Vg1, Vg2 og Vg3) og skoleår. Nyeste skoleår er 2025–26.
+- **Lisens:** NLOD etter data.norge.no. Udirs vilkår krever kreditering («Inneholder data under NLOD, tilgjengeliggjort på data.udir.no»), som legges under «Om».
+- **Risiko:** Udir skriver at API-et «ikke er ment for ekstern bruk i dag, og vil endres uten varsel». Hentingen må derfor feile tydelig og beholde forrige datasett, som de andre hentingene (avgjørelse 049).
+
+**Forslag til innhold:**
+
+| Tas med | Hvorfor |
+|---|---|
+| **Mobbing på skolen** (andel mobbet) | Det viktigste tallet for skolemiljøet |
+| Mobbet av andre elever, digitalt og av voksne på skolen | Viser hvem som mobber. Mobbing fra voksne hører til den skjerpede plikten |
+| **Trivsel**, **Støtte fra lærer**, **Læringskultur** | Skolemiljøet i klassen |
+| **Felles regler**, **Elevdemokrati og medvirkning** | Skolereglene og elevrådet |
+| Mestring, Motivasjon, Vurdering for læring, Faglig utfordring | Læringsmiljøet. Kan tas med eller ikke (spør) |
+| Ikke med: Støtte hjemmefra, Utdanning og yrkesveiledning | Den siste gjelder bare Vg1 og rådgivingen på ungdomsskolen |
+
+**Forslag til visning** (siden «Elevundersøkelsen» i Skolemiljø):
+- **Valgt skole:** Hver indeks som en rad med skolen, fylket og landet side om side, per trinn (Vg1, Vg2 og Vg3), fordi API-et ikke har tall for alle trinn samlet.
+  - Appen regner ikke ut egne snitt, fordi det kan avsløre skjulte tall.
+- **Mobbing** står først og i prosent, med Udirs egen forklaring av hvem som regnes som mobbet. Forklaringen hentes fra Udir og kontrolleres før den skrives.
+- **Uten valgt skole:** fylket mot landet. **Uten valgt fylke:** bare landet.
+- **Privatskole valgt:** Tallene for skolen sammenlignes med landet for alle eierformer. Kan også vises mot privatskolene samlet (spør).
+- **Skoleår:** siste skoleår, og forrige år som en liten pil opp eller ned.
+
+**Små grupper og skjulte tall:**
+- **Skjermede tall:** Udir skjermer tall etter egne regler. Grensen er færre enn 20 svar bak tallet, og færre enn 30 for mobbing, og det finnes også andre regler.
+  - I API-et står skjermede tall som «\*». Appen viser «Skjermet» og en forklaring med lenke til Udirs skjermingsregler.
+  - Appen viser aldri et tall Udir har skjermet, og regner ikke ut tall som kan avsløre det.
+- **Manglende tall:** Har skolen ikke tall for et trinn (ingen elever eller ikke deltatt), står «Ingen tall for Vg2».
+- **Ingen tall om enkeltelever:** Appen henter bare tallene Udir publiserer for skolen, fylket og landet.
+
+**Henting:**
+- Et skript i kildesjekken (`npm run hent:elevundersokelsen`) lagrer tallene i `data/elevundersokelsen/`. Det er om lag 200 kB per skoleår, som lastes først når siden åpnes.
+- Elevundersøkelsen kommer én gang i året, så hentingen gjør bare noe når det er nye tall.
+
+**Spørsmål E:**
+1. Hvilke indekser skal med? Alle i tabellen, eller bare skolemiljøet (mobbing, trivsel, støtte fra lærer, læringskultur, felles regler og elevdemokrati)?
+2. Skal enkeltspørsmålene om mobbing (av elever, digitalt, av voksne) med, eller bare indeksen?
+3. Skal forrige skoleår vises?
+4. Privatskoler: Sammenlignes de med landet for alle eierformer eller med privatskolene?
+
+## Svar fra eier 06.10.2026 (runde 3)
+
+- **Forsiden:** Skal «Skolemiljø» ha egen overskrift, eller stå under «Elever og opplæring»? Skal «Eksamen og klage» løftes fram? Eier spurte hva Claude tenker.
+- **Veiviseren** er satt sammen feil: seks innganger som møtes, alle går gjennom «melde til rektor», og alt vises på én gang med felles utfall.
+- **Skoleregler:** Lenker til paragrafene er greit. Forskriften om mobil og smartklokker for Slåtthaug vgs mangler. Søket i Lovdata skal utvides, også til ordens- og atferdsreglement.
+- **Elevundersøkelsen:** Alt skal med, også mobbing. Visuelt og oversiktlig, med skole mot skole, fylke mot fylke og begge mot landet, og fjoråret. Privatskoler skal kunne sammenlignes med andre grupper og sin egen. Standard er eget fylke og egen skole, og det skal være enkelt å bytte.
+- **Tiltaksplan (aktivitetsplan i parentes):** Ja, det er greit.
+
+## Runde 4 (gjort 06.10.2026, avgjørelse 061, 076 og 077)
+
+**F1. Forsiden.** Claudes vurdering: «Skolemiljø» beholder egen overskrift, fordi kategorien nå har tre bokser: Aktivitetsplikten, Skoleregler og Elevundersøkelsen. «Eksamen og klage» blir en egen boks under «Elever og opplæring», ved siden av «Vurdering», og ikke en egen modul. Adressene og favorittene er de samme som før.
+
+**F2. Aktivitetsplikten etter rolle.** Veiviseren spør først «Hvem er du i saken?»:
+
+| Rolle | Veien |
+|---|---|
+| Den som arbeider på skolen | Hva har skjedd? Du ser en krenkelse → gripe inn → melde fra. Mistanke → melde fra. En ansatt krenker → skjerpet plikt. Veien slutter når saken er meldt, med lenke til rektors del |
+| Rektor | Undersøke → tiltak og tiltaksplan → dokumentere → følge opp og evaluere. Er eleven ikke trygg ennå, tilbake til tiltak, eller saken til statsforvalteren |
+| Eleven eller foreldrene | Har det gått en uke etter at saken ble tatt opp med rektor? Ja → statsforvalteren. Nei → ta saken opp med skolen |
+
+**F3. Flere skoleregler fra Lovdata.** Forskrifter fra fylkeskommunene, Oslo kommune og de videregående skolene med mobil, smartklokke, reglement, atferd, oppførsel eller ordens i tittelen kommer med. Regler for mobil står for seg ved siden av skolereglene. Hele registeret leses på nytt neste gang kildesjekken går på `main`, så forskriften for Slåtthaug kommer først etter fletting.
+
+**F4. Elevundersøkelsen** (`#/skolemiljo/elevundersokelsen`):
+- **Tallene:** Alle 15 spørsmål og indekser i Udirs tabeller: «Mobbing på skolen» og mobbet av elever, digitalt og av voksne, og alle de elleve indeksene. Skoleårene 2024–25 og 2025–26, for 412 skoler, alle fylker og landet.
+- **Sammenligning:** Opptil tre serier, valgt i tre menyer: landet, et fylke eller en skole. Landet og fylkene finnes for alle, offentlige og private skoler.
+  - Standard er egen skole, eget fylke og landet.
+  - Med «Privatskole» er standard egen skole, eget fylke og private skoler i hele landet.
+- **Visning:**
+  - Nøkkeltall for mobbing
+  - Mobbing som søyler og indeksene som punkter på skalaen 1–5, med fjoråret som hult merke og endringen i tekst
+  - Trinnvalg (Vg1, Vg2 og Vg3) og bryter mellom diagram og tabell
+  - Valgene står i adressen, så en sammenligning kan lagres som favoritt
+- **Om tallene:** Hvem som svarer, når tallene kommer, hva skjermet betyr, og kreditering under «Om» (NLOD).
+
+## Svar fra eier 06.10.2026 (runde 4)
+
+- De fire boksene under «Eksamen og klage» i Vurdering skal være en egen modul, «Eksamen og klage», under Vurdering på forsiden. Ekstraboksen på forsiden fjernes.
+- Skolemiljø skal være én boks på forsiden igjen, med Aktivitetsplikten, Skoleregler og Elevundersøkelsen på oversikten. Overskriften «Skolemiljø» står inntil videre.
+- Elevundersøkelsen: kvikke fakta om egen skole (ellers fylket), overskrifter som kan lukkes, boksene om mobbing lukket fra start, bedre bruk av to kolonner, like brede kolonner i tabellen, ledelinjer og grønt og rødt for bedre og svakere enn året før.
+
+## Runde 5 (gjort 06.10.2026, avgjørelse 077 og 078)
+
+**G1. Eksamen og klage** (`#/eksamen`): egen modul med Eksamen, Fag- og svenneprøven, Klage på karakter og Kalender for eksamen. De gamle adressene i Vurdering sender videre, og lagrede favoritter flyttes med.
+
+**G2. Forsiden:** Skolemiljø er én boks igjen. «Elever og opplæring» har Tilrettelegging, Vurdering og Eksamen og klage.
+
+**G3. Elevundersøkelsen:**
+- «Kort om» skolen: mobbing på skolen mot landet og året før, og de tre sterkeste og svakeste indeksene mot landet. Uten valgt skole brukes fylket.
+- «Kort om», «Mobbing», «Læringsmiljøet» og «Om tallene» kan lukkes. Boksene om mobbing er lukket fra start og viser tallene i overskriften.
+- På skrivebord: «Kort om» over hele bredden, mobbingen og «Om tallene» til venstre, og læringsmiljøet og kildene til høyre.
+- Tabellen har like brede kolonner, ledelinjer og pil for bedre (grønn) og svakere (rød) enn året før.
+
+**Spørsmål G:**
+1. «Kort om» sammenligner med landet. Skal skolen heller sammenlignes med fylket?
+2. Skal «Om tallene» være åpen fra start?
+
+## Svar fra eier 06.10.2026 (runde 5)
+
+- Eksamen og klage skal ha overskrifter: Eksamen, Fag- og svenneprøven og Kalender for eksamen under én, og Klage på karakter under sin egen.
+- Kapittel 12 skal ha egen side i Skolemiljø (foretrukket) eller et utbrodert begrep.
+- Begreper fra de siste pakkene som mangler, tas inn.
+- Elevundersøkelsen: søk i skoler og fylker når seriene velges, og en markering av det beste resultatet i hver rad i tabellen.
+- Bekreftelse på at tallene i appen følger de to nyeste skoleårene av seg selv.
+- Spørsmål G1 og G2: Det er fint slik det er.
+
+## Runde 6 (gjort 06.10.2026, avgjørelse 077, 078 og 079)
+
+**H1. Eksamen og klage:** overskriftene «Eksamen og prøver» (Eksamen, Fag- og svenneprøven og Kalender for eksamen) og «Klage» (Klage på karakter).
+
+**H2. Et trygt og godt skolemiljø** (`#/skolemiljo/trygt-og-godt-skolemiljo`): kapittel 12 på én side i fem deler, elleve kort med kontrollspørsmål, de fem delpliktene og veien til statsforvalteren som illustrasjoner, og «Henger sammen med» (informasjon, fysiske inngrep, veiviseren, skolereglene og Elevundersøkelsen).
+
+**H3. Begrepene:** tolv nye begreper, og et nytt tema «Skolemiljø» der aktivitetsplikt, skoleregler og bortvisning også står.
+
+**H4. Elevundersøkelsen:** søk i seriene, ramme rundt det beste tallet i hver rad, og dataene fra main ved hver publisering.
+
+**Spørsmål H:**
+1. Skal kortet om fysiske inngrep (kapittel 13) stå på siden om kapittel 12, under «Henger sammen med»?
+2. Er tolv nye begreper riktig nivå, eller er noen for smale (f.eks. tvangsmulkt)?
+
+## Svar fra eier 06.10.2026 (runde 6) og runde 7
+
+- Skolemiljø: Et trygt og godt skolemiljø og Elevundersøkelsen under en egen overskrift øverst. Gjort: «Retten og resultatene».
+- Et trygt og godt skolemiljø: mindre scrolling med kollaps. Gjort: de fem delene er lukket fra start og viser nummer, tittel, paragrafene og én setning.
+- Deretter PR, fletting og publisering med ny versjon: 0.40.0, fordi versjonen har nye deler av appen (Skolemiljø og Eksamen og klage).
+- Ende-til-ende-tester for Skolemiljø (`tests/e2e/skolemiljo.spec.ts`) er skrevet nå som designet er godkjent.
+- Spørsmål H1 og H2 er ikke besvart ennå.

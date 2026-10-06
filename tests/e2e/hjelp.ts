@@ -6,6 +6,8 @@ export interface Oppsett {
   tema?: 'system' | 'lys' | 'mork';
   fylke?: string | null;
   skole?: { id: string | null; navn: string } | null;
+  /** Reglene for privatskoler (avgjørelse 075). */
+  privatskole?: boolean;
   favoritter?: string[];
   skjultKildevarsel?: string | null;
   forside?: { rekkefolge: string[]; lukket: string[]; bareFavoritter: boolean };
@@ -20,6 +22,7 @@ export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
       tema: oppsett.tema ?? 'system',
       fylke: oppsett.fylke ?? null,
       skole: oppsett.skole ?? null,
+      ...(oppsett.privatskole !== undefined ? { privatskole: oppsett.privatskole } : {}),
     },
     favoritter: oppsett.favoritter ?? [],
     scenarier: {},
@@ -103,11 +106,12 @@ export const ruter = [
   '#/vurdering/orden-og-oppforsel',
   '#/vurdering/fravaer',
   '#/vurdering/fravaer?fag=ENG1007',
-  '#/vurdering/eksamen',
-  '#/vurdering/eksamen?del=ek-tilrettelegging',
-  '#/vurdering/fag-og-svenneproven',
-  '#/vurdering/klage-pa-karakter',
-  '#/vurdering/klage-pa-karakter?steg=kl-statsforvalteren&svar=standpunkt.nei',
+  '#/eksamen',
+  '#/eksamen/regler',
+  '#/eksamen/regler?del=ek-tilrettelegging',
+  '#/eksamen/fag-og-svenneproven',
+  '#/eksamen/klage-pa-karakter',
+  '#/eksamen/klage-pa-karakter?steg=kl-statsforvalteren&svar=standpunkt.nei',
   '#/begreper/karakterer-og-vurderingsuttrykk?q=IV',
   '#/inntak',
   '#/inntak/mer-opplaering',
@@ -115,6 +119,14 @@ export const ruter = [
   '#/inntak/poeng?trinn=vg3',
   '#/inntak/rett-inntak-soknad',
   '#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.nei.under19.vg1.poeng',
+  '#/skolemiljo',
+  '#/skolemiljo/aktivitetsplikten',
+  '#/skolemiljo/aktivitetsplikten?steg=am-tiltak&svar=rektor',
+  '#/skolemiljo/trygt-og-godt-skolemiljo',
+  '#/skolemiljo/trygt-og-godt-skolemiljo?del=k12-statsforvalteren',
+  '#/skolemiljo/skoleregler',
+  '#/skolemiljo/elevundersokelsen',
+  '#/skolemiljo/elevundersokelsen?s=L,L|o,L|p&trinn=2&vis=tabell',
   '#/kalender',
   '#/kalender?tema=eksamen&vis=privatister',
   '#/kalender?tema=inntak',

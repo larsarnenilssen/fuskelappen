@@ -46,6 +46,7 @@ export default function Om() {
             {t('om.kreditering.nlod')}
           </a>
         </p>
+        <p>{t('om.kreditering.elevundersokelsen')}</p>
         <p>{t('om.kreditering.utdanning')}</p>
         <p>
           {t('om.kreditering.ndla')}{' '}

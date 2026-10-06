@@ -1,0 +1,68 @@
+# Skoleregler (fase 7): reglene i loven om skoleregler, bortvisning og pålagt skolebytte, med egne ord. Skolereglene i
+# fylket står i skoleregler-fylker.yaml. For privatskoler gjelder privatskolelova §§ 5A-6, 5A-7, 3-10 og 2-4
+# (avgjørelse 075).
+- id: sr-loven-skoleregler
+  type: forklaring
+  tittel:
+    nb: Skolereglene er en forskrift
+    nn: Skulereglane er ei forskrift
+  tekst:
+    nb: Fylkeskommunen gir skolereglene som en forskrift. Den skal si hvordan skoledemokratiet er organisert, og hvilke rettigheter og plikter elevene har, blant annet om orden og oppførsel. Skolereglene kan også si hvilke tiltak skolen kan bruke når elever bryter reglene, og hvordan slike saker behandles. Elevene skal følge skolereglene, og skolen skal informere elevene og foreldrene om dem.
+    nn: Fylkeskommunen gir skulereglane som ei forskrift. Ho skal seie korleis skuledemokratiet er organisert, og kva rettar og plikter elevane har, mellom anna om orden og oppførsel. Skulereglane kan også seie kva tiltak skulen kan bruke når elevar bryt reglane, og korleis slike saker blir behandla. Elevane skal følgje skulereglane, og skulen skal informere elevane og foreldra om dei.
+  paragrafer: [opplaeringslova/10-7, opplaeringslova/10-6, opplaeringslova/10-8]
+  privatskole:
+    tekst:
+      nb: "Privatskoler har skoleregler etter privatskolelova § 5A-7. Det er skolens styre som kan si i reglene hvilke tiltak som kan brukes og hvordan sakene behandles. Fylkets skoleregler gjelder ikke for privatskoler."
+      nn: "Privatskular har skulereglar etter privatskolelova § 5A-7. Det er styret ved skulen som kan seie i reglane kva tiltak som kan brukast og korleis sakene blir behandla. Skulereglane til fylket gjeld ikkje for privatskular."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 5A-7 Skolereglar", url: "https://lovdata.no/lov/2003-07-04-84/§5A-7" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 10-7 Skolereglar", url: "https://lovdata.no/lov/2023-06-09-30/§10-7" }
+    - { id: opplaeringslova, punkt: "§ 10-6 Elevane si plikt til å delta", url: "https://lovdata.no/lov/2023-06-09-30/§10-6" }
+    - { id: opplaeringslova, punkt: "§ 10-8 Informasjon til elevane og foreldra", url: "https://lovdata.no/lov/2023-06-09-30/§10-8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av §§ 10-6, 10-7 og 10-8 riktig og dekkende?"
+    - "Privatskoler: Er det riktig å skrive at fylkets skoleregler ikke gjelder for privatskoler, siden privatskolelova § 5A-7 gir skolens styre den myndigheten?"
+
+- id: sr-loven-bortvisning
+  type: forklaring
+  tittel:
+    nb: Bortvisning
+    nn: Bortvising
+  tekst:
+    nb: Skolereglene kan si at elever kan vises bort fra opplæringen etter flere eller grove brudd på reglene. En elev kan ikke vises bort hvis mindre inngripende tiltak er nok. I videregående kan en elev vises bort i opptil fem dager, og for resten av skoleåret når bruddene er særlig alvorlige. Rektor vedtar bortvisningen selv, og kan la lærere vise bort elever fra en økt de har ansvaret for, i opptil to klokketimer. Vedtak om bortvisning for resten av skoleåret kan fylkeskommunen ikke overlate til skolen.
+    nn: Skulereglane kan seie at elevar kan visast bort frå opplæringa etter fleire eller grove brot på reglane. Ein elev kan ikkje visast bort dersom mindre inngripande tiltak er nok. I vidaregåande kan ein elev visast bort i opptil fem dagar, og for resten av skuleåret når brota er særleg alvorlege. Rektor vedtek bortvisinga sjølv, og kan la lærarar vise bort elevar frå ei økt dei har ansvaret for, i opptil to klokketimar. Vedtak om bortvising for resten av skuleåret kan fylkeskommunen ikkje overlate til skulen.
+  paragrafer: [opplaeringslova/13-1]
+  privatskole:
+    tekst:
+      nb: "For privatskoler gjelder privatskolelova § 3-10. Grensene er de samme for videregående, men det er daglig leder som vedtar bortvisning. Bortvisning for resten av skoleåret vedtar hjemfylket. Vedtaket er et enkeltvedtak, og departementet er klageinstans."
+      nn: "For privatskular gjeld privatskolelova § 3-10. Grensene er dei same for vidaregåande, men det er dagleg leiar som vedtek bortvising. Bortvising for resten av skuleåret vedtek heimfylket. Vedtaket er eit enkeltvedtak, og departementet er klageinstans."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 3-10 Bortvising", url: "https://lovdata.no/lov/2003-07-04-84/§3-10" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 13-1 Bortvising", url: "https://lovdata.no/lov/2023-06-09-30/§13-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 13-1 riktig, og bør kortet si at bortvisning er et enkeltvedtak med klagerett etter forvaltningsloven?"
+
+- id: sr-loven-skolebytte
+  type: forklaring
+  tittel:
+    nb: Pålagt skolebytte
+    nn: Pålagt skulebyte
+  tekst:
+    nb: Fylkeskommunen kan vedta at en elev skal flyttes til en annen skole når elevens oppførsel går alvorlig ut over tryggheten eller læringen til medelever. Det kan ikke skje hvis mindre inngripende tiltak kan hjelpe, hvis eleven må flytte hjemmefra eller den daglige skyssen blir uforsvarlig, eller hvis eleven må bytte utdanningsprogram eller programområde. Fylkeskommunen kan ikke overlate vedtaket til skolen.
+    nn: Fylkeskommunen kan vedta at ein elev skal flyttast til ein annan skule når oppførselen til eleven går alvorleg ut over tryggleiken eller læringa til medelevar. Det kan ikkje skje dersom mindre inngripande tiltak kan hjelpe, dersom eleven må flytte heimanfrå eller den daglege skyssen blir uforsvarleg, eller dersom eleven må byte utdanningsprogram eller programområde. Fylkeskommunen kan ikkje overlate vedtaket til skulen.
+  paragrafer: [opplaeringslova/13-2]
+  privatskole:
+    tekst:
+      nb: "Opplæringslova § 13-2 gjelder også for privatskoler (privatskolelova § 2-4). Det er hjemkommunen eller hjemfylket som vedtar skolebytte, og departementet er klageinstans."
+      nn: "Opplæringslova § 13-2 gjeld også for privatskular (privatskolelova § 2-4). Det er heimkommunen eller heimfylket som vedtek skulebyte, og departementet er klageinstans."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 13-2 Pålagt skolebyte", url: "https://lovdata.no/lov/2023-06-09-30/§13-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 13-2 riktig og dekkende?"

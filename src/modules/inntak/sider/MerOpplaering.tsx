@@ -103,7 +103,7 @@ export default function MerOpplaering({ sporring }: SideProps) {
                     <Inngang rute={veiviserRute('rett-inntak-soknad')} ikon="veiviser" tittel={t('inntak.merOpplaering.veiviser')} tekst={t('inntak.merOpplaering.veiviserTekst')} />
                   </li>
                   <li>
-                    <Inngang rute="/vurdering/eksamen?del=ek-utsatt-ny-sarskilt" ikon="vurdering" tittel={t('inntak.merOpplaering.eksamen')} tekst={t('inntak.merOpplaering.eksamenTekst')} />
+                    <Inngang rute="/eksamen/regler?del=ek-utsatt-ny-sarskilt" ikon="vurdering" tittel={t('inntak.merOpplaering.eksamen')} tekst={t('inntak.merOpplaering.eksamenTekst')} />
                   </li>
                   <li>
                     <Inngang rute="/opplaeringslop/laerlinger-og-kandidater?fane=bytte&fra=prove-ikke-bestatt" ikon="vei" tittel={t('inntak.merOpplaering.laerlinger')} tekst={t('inntak.merOpplaering.laerlingerTekst')} />

@@ -246,7 +246,7 @@ export const stegElement = z
   });
 
 /** Fargene en veiviser kan ha (avgjørelse 042). Hver farge er definert for lyst og mørkt tema i tema.css. */
-export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav', 'baer']);
+export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav', 'baer', 'indigo']);
 
 /** En veiviser (avgjørelse 041): tittel, ingress (`tekst`), første steg og fasene stegene grupperes i. */
 export const veiviserElement = z
@@ -298,7 +298,7 @@ export const fristElement = z
     tema: z.array(z.enum(KALENDERTEMAER)).optional(),
     malgruppe: z.array(malgruppe).min(1),
     grupper: z.array(z.enum(FRISTGRUPPER)).default([]),
-    /** Sider, veivisere og begreper i appen som fristen lenker til, f.eks. `/vurdering/klage-pa-karakter`. */
+    /** Sider, veivisere og begreper i appen som fristen lenker til, f.eks. `/eksamen/klage-pa-karakter`. */
     lenker: z.array(z.string().regex(/^\/[a-z]/)).default([]),
     /** Paragrafer i Regelverk, som i stegene i veiviserne. */
     paragrafer: z.array(paragrafRef).default([]),
@@ -308,7 +308,7 @@ export const fristElement = z
     message: 'En frist må ha enten dato eller regel',
   });
 
-/** En adresse i appen, f.eks. `/begreper/laerling` eller `/vurdering/fag-og-svenneproven`. */
+/** En adresse i appen, f.eks. `/begreper/laerling` eller `/eksamen/fag-og-svenneproven`. */
 const ruteSkjema = z.string().regex(/^\/[a-z]/, 'En adresse i appen begynner med «/», f.eks. «/begreper/laerling»');
 
 /** Delene i en vei til fag- og svennebrev (avgjørelse 069). Hver del har sin farge i stegene. */
@@ -404,7 +404,7 @@ export const kildeSkjema = z
     niva: nivaSkjema,
     fylke: z.string().regex(/^\d{2}$/).optional(),
     lisens: z.string().min(1),
-    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'inntak', 'ingen']),
+    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'inntak', 'elevundersokelsen', 'ingen']),
     aktiv: z.boolean(),
     uttrekk: z
       .object({

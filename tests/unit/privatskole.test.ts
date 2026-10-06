@@ -9,6 +9,7 @@ import { lesFil } from '../../scripts/innhold/last.ts';
 import { paragraferFra } from '../../src/components/kilderader.ts';
 import { innstillingerSkjema } from '../../src/core/lagring/lagring.ts';
 import { PRIVATSKOLEDOKUMENTER, parallellTil, privatskolekilder } from '../../src/core/privatskole.ts';
+import { appRuteForLovdata } from '../../src/modules/lov/lenker.ts';
 import { alleParagrafer, type Lovdokument } from '../../src/modules/lov/typer.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
@@ -75,6 +76,11 @@ describe('privatskoler', () => {
   it.runIf(existsSync(join(rot, 'data/lovdata/privatskoleforskrifta.json')))('titlene stemmer med privatskoleforskrifta fra Lovdata', () => {
     const psf = titler('privatskoleforskrifta');
     for (const p of paralleller) expect(psf?.get(p.til.split('/')[1] ?? ''), p.til).toBe(p.tittel);
+  });
+
+  it.runIf(existsSync(join(rot, 'data/lovdata/privatskolelova.json')))('en kilde hos Lovdata med stor bokstav i nummeret (§ 5A-7) får lenke til paragrafen i appen', async () => {
+    expect(await appRuteForLovdata('https://lovdata.no/lov/2003-07-04-84/§5A-7')).toBe('/lov/privatskolelova/5A-7');
+    expect(await appRuteForLovdata('https://lovdata.no/lov/2003-07-04-84/§3-10')).toBe('/lov/privatskolelova/3-10');
   });
 
   it('innstillingen er valgfri, så data lagret før 0.40.0 kan leses', () => {

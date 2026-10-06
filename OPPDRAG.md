@@ -562,6 +562,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 **Kontrollpunkt:** Eier kontrollerer innholdet.
 
+- Levert i 0.40.0 (06.10.2026): **Skolemiljø** med siden om opplæringslova kapittel 12, veiviseren for aktivitetsplikten etter rolle, skolereglene i fylket og på skolen, og **Elevundersøkelsen** med sammenligning, «Kort om» og søk (avgjørelse 076, 077 og 079). **Privatskoler** i appen og privatskolelova i Lov og forskrift (avgjørelse 075). **Eksamen og klage** som egen modul (avgjørelse 078). To kolonner på skrivebord (avgjørelse 074). Forslag og svar står i `docs/arbeidsordrer/fase-7-forslag.md`. Innholdet venter på eiers kontroll (`kontrollert: null`).
+
 ### Fase 7b – Nyheter
 
 *(Eier 06.10.2026.)* Tas etter fase 7 og før fase 8, fordi «Siste nytt» og Kalenderen hører sammen på forsiden. Arbeidsordren står i `docs/arbeidsordrer/fase-7b-nyheter.md`, og kartleggingen av kildene i `docs/arbeidsordrer/forslag-meropplaering-og-nyheter.md`.

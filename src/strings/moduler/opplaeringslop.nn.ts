@@ -75,7 +75,7 @@ export const opplaeringslopNn = {
   },
   fagbrev: {
     tittel: 'Lærlingar og kandidatar',
-    innledning: 'Lærling, lærekandidat, praksisbrevkandidat, praksiskandidat og kandidat for fagbrev på jobb: kva kvar veg består av, kven som melder opp, fellesfaga og korleis ein byter undervegs. Vegane endar i fag- og sveinebrev, praksisbrev eller kompetansebevis. Prøva står i Vurdering.',
+    innledning: 'Lærling, lærekandidat, praksisbrevkandidat, praksiskandidat og kandidat for fagbrev på jobb: kva kvar veg består av, kven som melder opp, fellesfaga og korleis ein byter undervegs. Vegane endar i fag- og sveinebrev, praksisbrev eller kompetansebevis. Prøva står i Eksamen og klage.',
     inngang: '{antall} vegar',
     inngangTekst: 'Lærling, lærekandidat, praksisbrevkandidat og praksiskandidat: vegane og byte undervegs.',
     faner: 'Vel vising',

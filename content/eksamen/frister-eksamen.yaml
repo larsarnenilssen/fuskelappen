@@ -8,7 +8,7 @@
 
 - id: fe-samtale
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   lenker: [/vurdering/underveis-og-sluttvurdering]
   malgruppe: [skoleleder, laerer]
@@ -29,7 +29,7 @@
 
 - id: fe-varsel
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   lenker: [/begreper/forhandsvarsel, /vurdering/fravaer]
   malgruppe: [skoleleder, laerer]
@@ -51,9 +51,9 @@
 
 - id: fe-klagefrist
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering, eksamen]
-  lenker: [/vurdering/klage-pa-karakter, /begreper/klage]
+  lenker: [/eksamen/klage-pa-karakter, /begreper/klage]
   malgruppe: [skoleleder, laerer]
   regel: { type: lopende }
   naar: { nb: Ti dager, nn: Ti dagar }
@@ -62,8 +62,8 @@
     nb: Klagefrist på standpunkt og eksamen
     nn: Klagefrist på standpunkt og eksamen
   tekst:
-    nb: Fristen for å klage på standpunktkarakterer, vedtak om IV og eksamenskarakterer er ti kalenderdager. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter).
-    nn: Fristen for å klage på standpunktkarakterar, vedtak om IV og eksamenskarakterar er ti kalenderdagar. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter).
+    nb: Fristen for å klage på standpunktkarakterer, vedtak om IV og eksamenskarakterer er ti kalenderdager. Se veiviseren [Klage på karakter](#/eksamen/klage-pa-karakter).
+    nn: Fristen for å klage på standpunktkarakterar, vedtak om IV og eksamenskarakterar er ti kalenderdagar. Sjå vegvisaren [Klage på karakter](#/eksamen/klage-pa-karakter).
   paragrafer: [opplaeringsforskrifta/10-2]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
@@ -73,9 +73,9 @@
 
 - id: fe-oppmelding-prove
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/fag-og-svenneproven, /begreper/fag-og-svenneprove]
+  lenker: [/eksamen/fag-og-svenneproven, /begreper/fag-og-svenneprove]
   malgruppe: [skoleleder]
   regel: { type: lopende }
   naar: { nb: To måneder før kontraktstiden er ute, nn: To månader før kontraktstida er ute }
@@ -84,8 +84,8 @@
     nb: Oppmelding til fag- eller svenneprøven
     nn: Oppmelding til fag- eller sveineprøva
   tekst:
-    nb: Lærebedriften melder opp lærlingen til fylkeskommunen der kontrakten er godkjent, senest to måneder før kontraktstiden er ute. Prøven holdes tidligst tre måneder før læretiden er over. Se [Fag- og svenneprøven](#/vurdering/fag-og-svenneproven).
-    nn: Lærebedrifta melder opp lærlingen til fylkeskommunen der kontrakten er godkjend, seinast to månader før kontraktstida er ute. Prøva blir halden tidlegast tre månader før læretida er over. Sjå [Fag- og sveineprøva](#/vurdering/fag-og-svenneproven).
+    nb: Lærebedriften melder opp lærlingen til fylkeskommunen der kontrakten er godkjent, senest to måneder før kontraktstiden er ute. Prøven holdes tidligst tre måneder før læretiden er over. Se [Fag- og svenneprøven](#/eksamen/fag-og-svenneproven).
+    nn: Lærebedrifta melder opp lærlingen til fylkeskommunen der kontrakten er godkjend, seinast to månader før kontraktstida er ute. Prøva blir halden tidlegast tre månader før læretida er over. Sjå [Fag- og sveineprøva](#/eksamen/fag-og-svenneproven).
   paragrafer: [opplaeringsforskrifta/9-55, opplaeringsforskrifta/9-56]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-55 andre ledd og § 9-56 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
@@ -95,9 +95,9 @@
 
 - id: fe-klage-prove
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/fag-og-svenneproven, /vurdering/klage-pa-karakter]
+  lenker: [/eksamen/fag-og-svenneproven, /eksamen/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: lopende }
   naar: { nb: Tre uker, nn: Tre veker }
@@ -106,8 +106,8 @@
     nb: Klagefrist på fag- og svenneprøven
     nn: Klagefrist på fag- og sveineprøva
   tekst:
-    nb: Kandidaten kan klage når karakteren er «ikke bestått». Fristen er tre uker etter forvaltningsloven. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove).
-    nn: Kandidaten kan klage når karakteren er «ikkje bestått». Fristen er tre veker etter forvaltningsloven. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove).
+    nb: Kandidaten kan klage når karakteren er «ikke bestått». Fristen er tre uker etter forvaltningsloven. Se veiviseren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-prove&svar=prove).
+    nn: Kandidaten kan klage når karakteren er «ikkje bestått». Fristen er tre veker etter forvaltningsloven. Sjå vegvisaren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-prove&svar=prove).
   paragrafer: [opplaeringsforskrifta/10-9, forvaltningsloven/29]
   kilder:
     - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2, andre avsnitt", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
@@ -117,7 +117,7 @@
 
 - id: fe-halvar-midt
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   lenker: [/begreper/halvarsvurdering]
   malgruppe: [skoleleder, laerer]
@@ -140,7 +140,7 @@
 - id: fe-mer-opplaering-mars
   type: frist
   lenker: [/inntak/mer-opplaering]
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   malgruppe: [skoleleder, laerer]
   regel: { type: arlig, dag: 1, maned: 3 }
@@ -160,7 +160,7 @@
 
 - id: fe-standpunkt-senest
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   lenker: [/begreper/standpunktkarakter]
   malgruppe: [skoleleder, laerer]
@@ -182,7 +182,7 @@
 
 - id: fe-halvar-slutt
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   lenker: [/begreper/halvarsvurdering]
   malgruppe: [skoleleder, laerer]
@@ -205,7 +205,7 @@
 - id: fe-mer-opplaering-melding
   type: frist
   lenker: [/inntak/mer-opplaering]
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 6 }
@@ -228,9 +228,9 @@
 
 - id: fe-skoler-oppmelding-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/oppmelding, /vurdering/eksamen]
+  lenker: [/begreper/oppmelding, /eksamen/regler]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 9 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -252,7 +252,7 @@
 
 - id: fe-privatister-oppmelding-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/privatist, /begreper/oppmelding]
   malgruppe: [skoleleder]
@@ -276,9 +276,9 @@
 
 - id: fe-trekk-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/trekkfag, /vurdering/eksamen]
+  lenker: [/begreper/trekkfag, /eksamen/regler]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 11 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -300,9 +300,9 @@
 
 - id: fe-eksamen-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/eksamen]
+  lenker: [/eksamen/regler]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 11 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -312,8 +312,8 @@
     nb: Skriftlig høsteksamen
     nn: Skriftleg hausteksamen
   tekst:
-    nb: Perioden for sentralt gitt skriftlig eksamen. Skriftlig eksamen starter kl. 09.00, og kandidater som kommer etter kl. 10.00, får ikke gjennomføre. Muntlige og praktiske eksamener settes av fylkeskommunen. Se [Eksamen](#/vurdering/eksamen).
-    nn: Perioden for sentralt gitt skriftleg eksamen. Skriftleg eksamen startar kl. 09.00, og kandidatar som kjem etter kl. 10.00, får ikkje gjennomføre. Munnlege og praktiske eksamenar blir sette av fylkeskommunen. Sjå [Eksamen](#/vurdering/eksamen).
+    nb: Perioden for sentralt gitt skriftlig eksamen. Skriftlig eksamen starter kl. 09.00, og kandidater som kommer etter kl. 10.00, får ikke gjennomføre. Muntlige og praktiske eksamener settes av fylkeskommunen. Se [Eksamen](#/eksamen/regler).
+    nn: Perioden for sentralt gitt skriftleg eksamen. Skriftleg eksamen startar kl. 09.00, og kandidatar som kjem etter kl. 10.00, får ikkje gjennomføre. Munnlege og praktiske eksamenar blir sette av fylkeskommunen. Sjå [Eksamen](#/eksamen/regler).
   paragrafer: [opplaeringsforskrifta/9-26, opplaeringsforskrifta/9-28]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-26 og § 9-28 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
@@ -323,9 +323,9 @@
 
 - id: fe-sensur-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/sensur, /vurdering/klage-pa-karakter]
+  lenker: [/begreper/sensur, /eksamen/klage-pa-karakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -346,9 +346,9 @@
 
 - id: fe-klage-registrering-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/klage-pa-karakter]
+  lenker: [/eksamen/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -369,9 +369,9 @@
 
 - id: fe-klage-behandlet-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/klage-pa-karakter, /begreper/klagenemnd]
+  lenker: [/eksamen/klage-pa-karakter, /begreper/klagenemnd]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 3 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -392,9 +392,9 @@
 
 - id: fe-skoler-oppmelding-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/oppmelding, /vurdering/eksamen]
+  lenker: [/begreper/oppmelding, /eksamen/regler]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -416,7 +416,7 @@
 
 - id: fe-privatister-oppmelding-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/privatist, /begreper/oppmelding]
   malgruppe: [skoleleder]
@@ -440,7 +440,7 @@
 
 - id: fe-ekstra-trekk-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/trekkfag]
   malgruppe: [skoleleder, laerer]
@@ -463,9 +463,9 @@
 
 - id: fe-trekk-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/trekkfag, /vurdering/eksamen]
+  lenker: [/begreper/trekkfag, /eksamen/regler]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 4 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -487,9 +487,9 @@
 
 - id: fe-eksamen-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/eksamen]
+  lenker: [/eksamen/regler]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 5 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -499,8 +499,8 @@
     nb: Skriftlig våreksamen
     nn: Skriftleg våreksamen
   tekst:
-    nb: Perioden for sentralt gitt skriftlig eksamen. Skriftlig eksamen starter kl. 09.00, og kandidater som kommer etter kl. 10.00, får ikke gjennomføre. Muntlige og praktiske eksamener settes av fylkeskommunen. Se [Eksamen](#/vurdering/eksamen).
-    nn: Perioden for sentralt gitt skriftleg eksamen. Skriftleg eksamen startar kl. 09.00, og kandidatar som kjem etter kl. 10.00, får ikkje gjennomføre. Munnlege og praktiske eksamenar blir sette av fylkeskommunen. Sjå [Eksamen](#/vurdering/eksamen).
+    nb: Perioden for sentralt gitt skriftlig eksamen. Skriftlig eksamen starter kl. 09.00, og kandidater som kommer etter kl. 10.00, får ikke gjennomføre. Muntlige og praktiske eksamener settes av fylkeskommunen. Se [Eksamen](#/eksamen/regler).
+    nn: Perioden for sentralt gitt skriftleg eksamen. Skriftleg eksamen startar kl. 09.00, og kandidatar som kjem etter kl. 10.00, får ikkje gjennomføre. Munnlege og praktiske eksamenar blir sette av fylkeskommunen. Sjå [Eksamen](#/eksamen/regler).
   paragrafer: [opplaeringsforskrifta/9-26, opplaeringsforskrifta/9-28]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-26 og § 9-28 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
@@ -510,9 +510,9 @@
 
 - id: fe-sensur-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/sensur, /vurdering/klage-pa-karakter]
+  lenker: [/begreper/sensur, /eksamen/klage-pa-karakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -533,9 +533,9 @@
 
 - id: fe-hurtigklage-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/begreper/hurtigklage, /vurdering/klage-pa-karakter]
+  lenker: [/begreper/hurtigklage, /eksamen/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 6 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -555,9 +555,9 @@
 
 - id: fe-klage-registrering-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/klage-pa-karakter]
+  lenker: [/eksamen/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 7 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -578,9 +578,9 @@
 
 - id: fe-klage-behandlet-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
-  lenker: [/vurdering/klage-pa-karakter, /begreper/klagenemnd]
+  lenker: [/eksamen/klage-pa-karakter, /begreper/klagenemnd]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 9 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -603,9 +603,9 @@
 
 - id: fe-standpunkt-kjent
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering, eksamen]
-  lenker: [/begreper/standpunktkarakter, /vurdering/klage-pa-karakter]
+  lenker: [/begreper/standpunktkarakter, /eksamen/klage-pa-karakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
   naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
@@ -626,7 +626,7 @@
 
 - id: fe-hurtigklage-standpunkt
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [vurdering, eksamen]
   lenker: [/begreper/hurtigklage]
   malgruppe: [skoleleder]
@@ -648,7 +648,7 @@
 
 - id: fe-privatister-datoer-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/privatist]
   malgruppe: [skoleleder]
@@ -671,7 +671,7 @@
 
 - id: fe-privatister-datoer-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/privatist]
   malgruppe: [skoleleder]
@@ -694,7 +694,7 @@
 
 - id: fe-tilrettelegging-privatister-host
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/sarskilt-tilrettelegging-av-eksamen]
   malgruppe: [skoleleder]
@@ -706,8 +706,8 @@
     nb: Privatister søker om tilrettelegging til høsteksamen
     nn: Privatistar søkjer om tilrettelegging til hausteksamen
   tekst:
-    nb: Privatister søker fylkeskommunen om særskilt tilrettelegging av eksamen. Fristen er veiledende, og en søknad kan ikke avslås bare fordi den kom sent. Se [Særskilt tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
-    nn: Privatistar søkjer fylkeskommunen om særskild tilrettelegging av eksamen. Fristen er rettleiande, og ein søknad kan ikkje avslåast berre fordi han kom seint. Sjå [Særskild tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
+    nb: Privatister søker fylkeskommunen om særskilt tilrettelegging av eksamen. Fristen er veiledende, og en søknad kan ikke avslås bare fordi den kom sent. Se [Særskilt tilrettelegging](#/eksamen/regler?del=ek-tilrettelegging).
+    nn: Privatistar søkjer fylkeskommunen om særskild tilrettelegging av eksamen. Fristen er rettleiande, og ein søknad kan ikkje avslåast berre fordi han kom seint. Sjå [Særskild tilrettelegging](#/eksamen/regler?del=ek-tilrettelegging).
   paragrafer: [opplaeringsforskrifta/9-34]
   kilder:
     - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-34, tredje ledd", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/" }
@@ -717,7 +717,7 @@
 
 - id: fe-tilrettelegging-privatister-var
   type: frist
-  modul: vurdering
+  modul: eksamen
   tema: [eksamen]
   lenker: [/begreper/sarskilt-tilrettelegging-av-eksamen]
   malgruppe: [skoleleder]
@@ -729,8 +729,8 @@
     nb: Privatister søker om tilrettelegging til våreksamen
     nn: Privatistar søkjer om tilrettelegging til våreksamen
   tekst:
-    nb: Privatister søker fylkeskommunen om særskilt tilrettelegging av eksamen. Fristen er veiledende, og en søknad kan ikke avslås bare fordi den kom sent. Se [Særskilt tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
-    nn: Privatistar søkjer fylkeskommunen om særskild tilrettelegging av eksamen. Fristen er rettleiande, og ein søknad kan ikkje avslåast berre fordi han kom seint. Sjå [Særskild tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
+    nb: Privatister søker fylkeskommunen om særskilt tilrettelegging av eksamen. Fristen er veiledende, og en søknad kan ikke avslås bare fordi den kom sent. Se [Særskilt tilrettelegging](#/eksamen/regler?del=ek-tilrettelegging).
+    nn: Privatistar søkjer fylkeskommunen om særskild tilrettelegging av eksamen. Fristen er rettleiande, og ein søknad kan ikkje avslåast berre fordi han kom seint. Sjå [Særskild tilrettelegging](#/eksamen/regler?del=ek-tilrettelegging).
   paragrafer: [opplaeringsforskrifta/9-34]
   kilder:
     - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-34, tredje ledd", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/" }

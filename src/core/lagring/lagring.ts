@@ -81,6 +81,19 @@ export const migreringer: Record<number, (gammel: Record<string, unknown>) => Re
   2: (d) => ({ ...d, skjemaversjon: 3, forside: standardForside() }),
 };
 
+/**
+ * Favoritter med ny id etter at en side er flyttet, f.eks. eksamen fra Vurdering til Eksamen og klage (avgjørelse 078).
+ * Byttes hver gang lagringen leses, uavhengig av skjemaversjonen, så de blir med uten ny versjon.
+ */
+export const FLYTTEDE_FAVORITTER: Readonly<Record<string, string>> = {
+  'vurdering:eksamen': 'eksamen:eksamen',
+  'vurdering:fag-og-svenneproven': 'eksamen:fag-og-svenneproven',
+  'vurdering:klage-pa-karakter': 'eksamen:klage-pa-karakter',
+  'vurdering:frister': 'eksamen:frister',
+};
+
+const flyttFavoritter = (liste: readonly string[]): string[] => [...new Set(liste.map((id) => FLYTTEDE_FAVORITTER[id] ?? id))];
+
 export function migrer(raa: unknown): Lagret | null {
   if (typeof raa !== 'object' || raa === null) return null;
   let data = raa as Record<string, unknown>;
@@ -93,7 +106,7 @@ export function migrer(raa: unknown): Lagret | null {
     versjon += 1;
   }
   const resultat = lagretSkjema.safeParse(data);
-  return resultat.success ? resultat.data : null;
+  return resultat.success ? { ...resultat.data, favoritter: flyttFavoritter(resultat.data.favoritter) } : null;
 }
 
 export interface Lager {

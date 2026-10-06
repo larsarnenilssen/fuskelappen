@@ -6,7 +6,7 @@ import type { Flerspraak, Innholdselement, KildeRef, Utgangspunktelement, Vanlig
 const filer = import.meta.glob<Innholdselement[]>('/content/opplaeringslop/*.yaml', { import: 'default' });
 
 export const FAGBREV_RUTE = '/opplaeringslop/laerlinger-og-kandidater';
-export const PROVE_RUTE = '/vurdering/fag-og-svenneproven';
+export const PROVE_RUTE = '/eksamen/fag-og-svenneproven';
 
 export interface Veiinnhold {
   veier: Veielement[];

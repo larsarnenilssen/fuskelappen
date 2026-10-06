@@ -8,8 +8,9 @@
 #   arbeidsflytens hendelse (push til main), så videresendingen må også sjekke at det er en tag som er pushet.
 #
 # Koden bygges alltid fra taggen. Kildestatusen og registerdataene (Grep og skoleregisteret) hentes fra main,
-# slik at de oppdateres hver uke (avgjørelse 018). Består ikke taggens tester med registerdataene fra main,
-# brukes taggens egne registerdata.
+# slik at de oppdateres hver uke (avgjørelse 018). Det samme gjelder resultatene fra Elevundersøkelsen, så et nytt
+# skoleår kommer med uten ny versjon (avgjørelse 077). Består ikke taggens tester med dataene fra main, brukes
+# taggens egne data.
 # Selve publiseringen kjører fra main, fordi GitHub Pages som standard bare tillater publisering derfra.
 #
 # Adressen (avgjørelse 065): Bygget legges under stien GitHub Pages oppgir, så appen følger domenet som er satt under
@@ -104,10 +105,10 @@ jobs:
         run: |
           cp data/status/kildestatus.json "$RUNNER_TEMP/kildestatus.json"
           mkdir -p "$RUNNER_TEMP/data"
-          cp -r data/grep data/skoler "$RUNNER_TEMP/data/"
+          cp -r data/grep data/skoler data/elevundersokelsen "$RUNNER_TEMP/data/"
           git checkout --quiet "$TAG"
           cp "$RUNNER_TEMP/kildestatus.json" data/status/kildestatus.json
-          cp -r "$RUNNER_TEMP/data/grep" "$RUNNER_TEMP/data/skoler" data/
+          cp -r "$RUNNER_TEMP/data/grep" "$RUNNER_TEMP/data/skoler" "$RUNNER_TEMP/data/elevundersokelsen" data/
           VERSJON=$(node -p "require('./package.json').version")
           if [ "v$VERSJON" != "$TAG" ]; then
             echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
@@ -125,13 +126,15 @@ jobs:
         env:
           TAG: ${{ steps.versjon.outputs.tag }}
         run: |
-          if git diff --quiet "$TAG" -- data/grep data/skoler; then
+          if git diff --quiet "$TAG" -- data/grep data/skoler data/elevundersokelsen && [ -z "$(git status --porcelain -- data/elevundersokelsen)" ]; then
             echo "Registerdataene er de samme som i $TAG."
           elif npx vitest run; then
             echo "Registerdataene fra main består testene i $TAG."
           else
             echo "::warning::Registerdataene fra main består ikke testene i $TAG. Bruker registerdataene i $TAG."
             git checkout "$TAG" -- data/grep data/skoler
+            # Eldre versjoner har ikke Elevundersøkelsen. Da fjernes dataene fra main.
+            git checkout "$TAG" -- data/elevundersokelsen 2>/dev/null || rm -rf data/elevundersokelsen
           fi
       - if: steps.versjon.outputs.tag != ''
         run: npm run build

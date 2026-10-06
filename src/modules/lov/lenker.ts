@@ -16,10 +16,15 @@ export async function appRuteForLovdata(url: string): Promise<string | null> {
   }
   const m = LOVDATA.exec(adresse);
   if (!m) return null;
+  // Nummeret sammenlignes uten store og små bokstaver: «§5A-7» i privatskolelova står som «5A-7» i appen.
   const nr = (m[2] as string).toLowerCase();
   const { dokumenter } = await lastOversikt();
-  const d = dokumenter.find((x) => x.refid === m[1] && x.paragrafer.includes(nr));
-  return d ? paragrafRute(d.id, nr) : null;
+  for (const d of dokumenter) {
+    if (d.refid !== m[1]) continue;
+    const treff = d.paragrafer.find((p) => p.toLowerCase() === nr);
+    if (treff) return paragrafRute(d.id, treff);
+  }
+  return null;
 }
 
 /** Som appRuteForLovdata, som hook: null til oversikten er lastet, og når det ikke finnes noen paragraf i appen. */

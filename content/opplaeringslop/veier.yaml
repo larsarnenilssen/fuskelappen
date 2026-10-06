@@ -20,7 +20,7 @@
     - { del: skole, tekst: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
     - { del: skole, tekst: { nb: "Vg2 yrkesfag", nn: "Vg2 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
     - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Vanligvis 2 år", nn: "Vanlegvis 2 år" }, rute: /begreper/laerling }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Lærekontrakt med lærebedriften", nn: "Lærekontrakt med lærebedrifta" }
   prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -58,7 +58,7 @@
   steg:
     - { del: skole, tekst: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }, tid: { nb: "0 eller 1 år", nn: "0 eller 1 år" }, rute: /opplaeringslop/lop }
     - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "3 eller 4 år", nn: "3 eller 4 år" }, rute: /begreper/laerling }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Lærekontrakt der organiseringen går klart fram", nn: "Lærekontrakt der organiseringa går klart fram" }
   prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -91,9 +91,9 @@
     nn: "Praksisbrevkandidaten tek praksisbrevprøva og kan så skrive lærekontrakt i lærefaget. Den som har praksisbrev, har framleis retten til vidaregåande opplæring."
   steg:
     - { del: bedrift, tekst: { nb: "Praksisbrevkandidat", nn: "Praksisbrevkandidat" }, rute: /begreper/praksisbrev }
-    - { del: prove, tekst: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }, rute: /eksamen/fag-og-svenneproven }
     - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Etter godskriving", nn: "Etter godskriving" }, rute: /begreper/laerling }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Opplæringskontrakt, og så lærekontrakt", nn: "Opplæringskontrakt, og så lærekontrakt" }
   prove: { nb: "Praksisbrevprøve, og så fag- eller svenneprøve", nn: "Praksisbrevprøve, og så fag- eller sveineprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -127,7 +127,7 @@
     - { del: skole, tekst: { nb: "Vg1 studieforberedende", nn: "Vg1 studieførebuande" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
     - { del: skole, tekst: { nb: "Vg2 yrkesfag med opphenting", nn: "Vg2 yrkesfag med opphenting" }, tid: { nb: "1 år", nn: "1 år" }, rute: /begreper/yrkesfaglig-opphenting }
     - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Vanligvis 2 år", nn: "Vanlegvis 2 år" }, rute: /begreper/laerling }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Lærekontrakt med lærebedriften", nn: "Lærekontrakt med lærebedrifta" }
   prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -161,7 +161,7 @@
     - { del: skole, tekst: { nb: "Vg1 yrkesfag", nn: "Vg1 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
     - { del: skole, tekst: { nb: "Vg2 yrkesfag", nn: "Vg2 yrkesfag" }, tid: { nb: "1 år", nn: "1 år" }, rute: /opplaeringslop/lop }
     - { del: skole, tekst: { nb: "Vg3 i skole", nn: "Vg3 i skule" }, rute: /begreper/vg3-i-skole }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Ingen. Fylkeskommunen skal fortsatt prøve å formidle læreplass til den som ønsker det.", nn: "Ingen. Fylkeskommunen skal framleis prøve å formidle læreplass til den som ønskjer det." }
   prove: { nb: "Fag- eller svenneprøve som elev", nn: "Fag- eller sveineprøve som elev" }
   melderOpp: { nb: "Skolen", nn: "Skulen" }
@@ -198,7 +198,7 @@
   steg:
     - { del: bedrift, tekst: { nb: "Lærekandidat", nn: "Lærekandidat" }, rute: /begreper/laerekandidat }
     - { del: bedrift, tekst: { nb: "Lærling", nn: "Lærling" }, tid: { nb: "Etter godskriving", nn: "Etter godskriving" }, rute: /begreper/laerling }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Opplæringskontrakt som endres til lærekontrakt", nn: "Opplæringskontrakt som blir endra til lærekontrakt" }
   prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -231,7 +231,7 @@
   steg:
     - { del: praksis, tekst: { nb: "Allsidig praksis", nn: "Allsidig praksis" }, tid: { nb: "Minst 1 år i heltid", nn: "Minst 1 år i heiltid" }, rute: /begreper/fagbrev-pa-jobb }
     - { del: bedrift, tekst: { nb: "Kontrakt om opplæring", nn: "Kontrakt om opplæring" }, tid: { nb: "Minst 1 år", nn: "Minst 1 år" }, rute: /begreper/kontrakt-om-opplaering }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Kontrakt om opplæring med lærebedriften", nn: "Kontrakt om opplæring med lærebedrifta" }
   prove: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -267,7 +267,7 @@
     nn: "Den som har allsidig praksis i eit lærefag som er 25 prosent lengre enn opplæringsløpet, kan melde seg til prøva utan opplæring i skule eller bedrift."
   steg:
     - { del: praksis, tekst: { nb: "Allsidig praksis", nn: "Allsidig praksis" }, tid: { nb: "25 % lengre enn løpet", nn: "25 % lengre enn løpet" }, rute: /begreper/praksiskandidat }
-    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Fag- eller svenneprøve", nn: "Fag- eller sveineprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Ingen", nn: "Ingen" }
   prove: { nb: "Fag- eller svenneprøve, og eksamen når læreplanverket krever det", nn: "Fag- eller sveineprøve, og eksamen når læreplanverket krev det" }
   melderOpp: { nb: "Kandidaten selv, med prøveavgift", nn: "Kandidaten sjølv, med prøveavgift" }
@@ -303,7 +303,7 @@
     nn: "Opplæring i bedrift med opplæringskontrakt. Praksisbrevprøva byggjer på kompetansemåla i ein lokal læreplan i faget. Fylkeskommunen skal gi tilbod om praksisbrev."
   steg:
     - { del: bedrift, tekst: { nb: "Praksisbrevkandidat", nn: "Praksisbrevkandidat" }, rute: /begreper/praksisbrev }
-    - { del: prove, tekst: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Opplæringskontrakt", nn: "Opplæringskontrakt" }
   prove: { nb: "Praksisbrevprøve", nn: "Praksisbrevprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -338,7 +338,7 @@
   steg:
     - { del: skole, tekst: { nb: "Grunnskolen, Vg1 eller Vg2", nn: "Grunnskulen, Vg1 eller Vg2" }, rute: /opplaeringslop/lop }
     - { del: bedrift, tekst: { nb: "Lærekandidat", nn: "Lærekandidat" }, rute: /begreper/laerekandidat }
-    - { del: prove, tekst: { nb: "Kompetanseprøve", nn: "Kompetanseprøve" }, rute: /vurdering/fag-og-svenneproven }
+    - { del: prove, tekst: { nb: "Kompetanseprøve", nn: "Kompetanseprøve" }, rute: /eksamen/fag-og-svenneproven }
   kontrakt: { nb: "Opplæringskontrakt", nn: "Opplæringskontrakt" }
   prove: { nb: "Kompetanseprøve", nn: "Kompetanseprøve" }
   melderOpp: { nb: "Lærebedriften", nn: "Lærebedrifta" }
@@ -658,7 +658,7 @@
         - { id: opplaeringsforskrifta, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
         - { id: opplaeringsforskrifta, punkt: "§ 4-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
         - { id: udir-mer-opplaering, punkt: "3. Mer opplæring når fag- eller svenneprøven ikke er bestått", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/mer-opplaring--nar-fag--eller-svenneproven-ikke-er-bestatt/" }
-    - side: { tittel: { nb: "Ny eller utsatt prøve", nn: "Ny eller utsett prøve" }, rute: /vurdering/fag-og-svenneproven }
+    - side: { tittel: { nb: "Ny eller utsatt prøve", nn: "Ny eller utsett prøve" }, rute: /eksamen/fag-og-svenneproven }
       vilkar:
         nb: "Rett til å bli meldt opp til én ny prøve. Lærebedriften melder opp den som har hatt læretid i bedrift, og fylkeskommunen den som har hatt opplæring i skole. Med dokumentert fravær er det utsatt prøve, så snart som mulig."
         nn: "Rett til å bli meld opp til éi ny prøve. Lærebedrifta melder opp den som har hatt læretid i bedrift, og fylkeskommunen den som har hatt opplæring i skole. Med dokumentert fråvær er det utsett prøve, så snart som mogleg."

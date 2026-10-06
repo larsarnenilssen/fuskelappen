@@ -4,8 +4,26 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.40.0] – 2026-10-06
+
 ### Lagt til
 
+- **Skolemiljø** (ny del av appen):
+  - **Veiviseren «Aktivitetsplikten»:** starter med hvem du er i saken. Den som arbeider på skolen, får følge med, gripe inn og melde fra, og skjerpet plikt når en ansatt krenker en elev. Rektor får undersøke, tiltak og tiltaksplan, dokumentere og følge opp. Eleven og foreldrene får ta saken opp med skolen og melde den til statsforvalteren. Hvert steg har ansvar, dokumentasjon, frist og paragrafene.
+  - **Skoleregler:** reglene i loven om skoleregler, bortvisning og pålagt skolebytte. For valgt fylke kommer paragrafene om reaksjoner, saksbehandling og klage i fylkets skoleregler, og for valgt skole skolens egne regler når de står i Lovdata.
+  - **Privatskoler:** egne merknader når «Privatskole» er valgt.
+  - **Elevundersøkelsen:** mobbing og alle indeksene for skolen, fylket og landet, med fjoråret. Sammenlign opptil tre skoler, fylker eller landet, også offentlige og private skoler hver for seg, per trinn, som diagram eller tabell.
+    - «Kort om» skolen (eller fylket): mobbing og de tre sterkeste og svakeste indeksene mot landet.
+    - Overskriftene kan lukkes, og boksene om mobbing er lukket til du åpner dem.
+    - Bedre og svakere enn året før er markert med grønn og rød pil.
+    - På stor skjerm står mobbingen og læringsmiljøet side om side.
+    - Skoler og fylker kan søkes fram når du velger hva som skal sammenlignes.
+    - Tabellen har en ramme rundt det beste tallet i hver rad.
+    - Nye tall fra Udir kommer med av seg selv, uten ny versjon av appen.
+  - **Et trygt og godt skolemiljø:** opplæringslova kapittel 12 i fem deler som er lukket til du åpner dem: retten, skolens plikter, statsforvalteren, det fysiske miljøet og ansvaret, med de fem delpliktene og veien til statsforvalteren.
+  - **Oversikten** har «Retten og resultatene» øverst, med kapittel 12 og Elevundersøkelsen.
+- **Nye begreper:** trygt og godt skolemiljø, krenkende oppførsel, skjerpet aktivitetsplikt, tiltaksplan, håndhevingsordningen, tvangsmulkt, fysisk skolemiljø, fysiske inngrep, pålagt skolebytte, Elevundersøkelsen, kompetanseprøve og praksisbrevprøve. Begrepene om skolemiljøet har eget tema, «Skolemiljø».
+- **Regler for mobil og ordensreglement** fra skolene og fylkene i Lovdata kommer med i Lov og forskrift og på siden «Skoleregler».
 - **Privatskole:** En ny bryter under «Fylke og skole» i innstillingene. Velger du en privat skole, slås den på av seg selv. Når den er på:
   - kort og steg der privatskolene har egne regler, har en boks «For privatskoler»: inntaket, klage på karakter, individuell tilrettelegging, skoleregler og bortvisning
   - kildene og «I regelverket» viser paragrafen i forskriften til privatskolelova i stedet for den samme regelen i opplæringsforskrifta, f.eks. fraværsgrensen, eksamen og klage
@@ -15,6 +33,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Eksamen og klage** er en egen del av appen under «Elever og opplæring» på forsiden, med eksamen, fag- og svenneprøven, klage på karakter og kalenderen for eksamen, under overskriftene «Eksamen og prøver» og «Klage». Sidene stod før i Vurdering. Gamle lenker og favoritter virker fortsatt.
 - **To kolonner på stor skjerm:** «Underveis- og sluttvurdering», «Eksamen», «Fag- og svenneprøven og de andre prøvene», fagarket, tilbudene i Opplæringstilbud og siden for hvert fylke står i to kolonner, som Mer opplæring og Lærlinger og kandidater. På mobil står alt som før.
 - **Kildene på fagarket og tilbudene** står i en lukket boks («Kilder»), nederst i høyre kolonne på stor skjerm og nederst på siden på mobil.
 - **Regelverk:** Gruppene på oversikten (lover, forskrifter, lokale forskrifter og avtaler) er lukket når du kommer til siden. Det du åpner, er fortsatt åpent når du går tilbake.

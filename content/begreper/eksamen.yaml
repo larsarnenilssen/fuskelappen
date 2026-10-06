@@ -154,8 +154,8 @@
   type: begrep
   tittel: { nb: "Klagenemnd", nn: "Klagenemnd" }
   tekst:
-    nb: "Det finnes to slags klagenemnder for karakterer. Ved skriftlig eksamen oppnevner statsforvalteren en klagenemnd som vurderer svaret på nytt, kan sette karakteren opp eller ned og ikke trenger å begrunne avgjørelsen. Ved «ikke bestått» på fag- og svenneprøven avgjør en klagenemnd oppnevnt av departementet. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
-    nn: "Det finst to slag klagenemnder for karakterar. Ved skriftleg eksamen nemner statsforvaltaren opp ei klagenemnd som vurderer svaret på nytt, kan setje karakteren opp eller ned og ikkje treng å grunngi avgjerda. Ved «ikkje bestått» på fag- og sveineprøva avgjer ei klagenemnd oppnemnd av departementet. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
+    nb: "Det finnes to slags klagenemnder for karakterer. Ved skriftlig eksamen oppnevner statsforvalteren en klagenemnd som vurderer svaret på nytt, kan sette karakteren opp eller ned og ikke trenger å begrunne avgjørelsen. Ved «ikke bestått» på fag- og svenneprøven avgjør en klagenemnd oppnevnt av departementet. Se veiviseren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
+    nn: "Det finst to slag klagenemnder for karakterar. Ved skriftleg eksamen nemner statsforvaltaren opp ei klagenemnd som vurderer svaret på nytt, kan setje karakteren opp eller ned og ikkje treng å grunngi avgjerda. Ved «ikkje bestått» på fag- og sveineprøva avgjer ei klagenemnd oppnemnd av departementet. Sjå vegvisaren [Klage på karakter](#/eksamen/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-7 og § 10-9 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
     - { id: opplaeringslova, punkt: "§ 8-3", url: "https://lovdata.no/lov/2023-06-09-30/§8-3" }
@@ -304,3 +304,51 @@
     - "Kildene appen har, sier ikke hvem som behandler hurtigklagen på standpunkt. Er det skolen og statsforvalteren som ved vanlig klage, bare raskere, og bør det stå?"
   stikkord: [hurtigklage, klage, avgangselev, standpunkt, høyere utdanning, vitnemål]
   relatert: [standpunktkarakter, klagenemnd, klage, vitnemal-og-kompetansebevis]
+
+# Prøvene for lærekandidater og praksisbrevkandidater (fase 7, gjennomgang av begrepsbanken 06.10.2026).
+- id: kompetanseprove
+  type: begrep
+  tittel: { nb: Kompetanseprøve, nn: Kompetanseprøve }
+  tekst:
+    nb: >-
+      Kompetanseprøven er sluttvurderingen for lærekandidater. Lærekandidaten prøves i opplæringsmålene som er satt
+      for ham eller henne, og prøven gir kompetansebevis. Fylkeskommunen lager prøven og sørger for at den blir vurdert.
+      Karakteren «ikke bestått» kan klages til fylkestinget eller den fylkestinget gir fullmakt. Se
+      [opplæringsforskrifta § 9-64](#/lov/opplaeringsforskrifta/9-64).
+    nn: >-
+      Kompetanseprøva er sluttvurderinga for lærekandidatar. Lærekandidaten blir prøvd i opplæringsmåla som er sette
+      for han eller ho, og prøva gir kompetansebevis. Fylkeskommunen lagar prøva og sørgjer for at ho blir vurdert.
+      Karakteren «ikkje bestått» kan klagast til fylkestinget eller den fylkestinget gir fullmakt. Sjå
+      [opplæringsforskrifta § 9-64](#/lov/opplaeringsforskrifta/9-64).
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-64" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-10 Klage på praksisbrevprøve og kompetanseprøve", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-10" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at kompetanseprøven gir kompetansebevis, og at klage på «ikke bestått» går til fylkestinget eller den fylkestinget gir fullmakt?"
+  stikkord: [kompetanseprøve, kompetanseprøva, lærekandidat, kompetansebevis, opplæringsmål]
+  relatert: [laerekandidat, fag-og-svenneprove, praksisbrevprove]
+
+- id: praksisbrevprove
+  type: begrep
+  tittel: { nb: Praksisbrevprøve, nn: Praksisbrevprøve }
+  tekst:
+    nb: >-
+      Praksisbrevprøven er sluttvurderingen for praksisbrevkandidater, og gir praksisbrev når den er bestått.
+      Kandidaten prøves i kompetansemålene i den lokale læreplanen. Fylkeskommunen lager prøven og sørger for at den
+      blir vurdert. Karakteren «ikke bestått» kan klages til fylkestinget eller den fylkestinget gir fullmakt. Se
+      [opplæringsforskrifta § 9-64](#/lov/opplaeringsforskrifta/9-64).
+    nn: >-
+      Praksisbrevprøva er sluttvurderinga for praksisbrevkandidatar, og gir praksisbrev når ho er bestått. Kandidaten
+      blir prøvd i kompetansemåla i den lokale læreplanen. Fylkeskommunen lagar prøva og sørgjer for at ho blir
+      vurdert. Karakteren «ikkje bestått» kan klagast til fylkestinget eller den fylkestinget gir fullmakt. Sjå
+      [opplæringsforskrifta § 9-64](#/lov/opplaeringsforskrifta/9-64).
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-64" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 Fag- og sveinebrev og praksisbrev i vidaregåande opplæring", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-10 Klage på praksisbrevprøve og kompetanseprøve", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-10" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at praksisbrevkandidaten prøves i kompetansemålene i den lokale læreplanen, og at klage på «ikke bestått» går til fylkestinget eller den fylkestinget gir fullmakt?"
+  stikkord: [praksisbrevprøve, praksisbrevprøva, praksisbrev, praksisbrevkandidat, lokal læreplan]
+  relatert: [praksisbrev, fag-og-svenneprove, kompetanseprove]

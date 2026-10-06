@@ -137,7 +137,7 @@ export const inntakNb = {
     veiviser: 'Rett, inntak og søknad',
     veiviserTekst: 'Veiviseren for rett til videregående opplæring, inntak og søknadsfrist.',
     eksamen: 'Utsatt, ny og særskilt eksamen',
-    eksamenTekst: 'Eksamen i Vurdering: hvem som har rett, og når standpunkt faller bort.',
+    eksamenTekst: 'Utsatt, ny og særskilt eksamen: hvem som har rett, og når standpunkt faller bort.',
     laerlinger: 'Lærlinger og kandidater',
     laerlingerTekst: 'Veiene til fag- og svennebrev, og overgangene mellom dem.',
   },

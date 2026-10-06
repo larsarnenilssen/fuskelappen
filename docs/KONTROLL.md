@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 480 |
+| Ikke kontrollert | 536 |
 | Praksis og tolkninger som bør bekreftes | 25 av 25 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -287,9 +287,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Fagbrev på jobb (`fagbrev-pa-jobb`) | begrep | § 7-1 fjerde ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Vg3 i skole (`vg3-i-skole`) | begrep | § 5-6 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Formidling til læreplass (`formidling-til-laereplass`) | begrep | § 5-6 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
-| Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/regelverk.yaml` | ikke kontrollert |
-| Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/regelverk.yaml` | ikke kontrollert |
-| Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Trygt og godt skolemiljø (`trygt-og-godt-skolemiljo`) | begrep | § 12-2 Retten til eit trygt og godt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Krenkende oppførsel (`krenkende-oppforsel`) | begrep | § 12-3 Nulltoleranse og førebyggjande arbeid | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Skjerpet aktivitetsplikt (`skjerpet-aktivitetsplikt`) | begrep | § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Tiltaksplan (`tiltaksplan`) | begrep | § 12-4 tredje ledd | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Håndhevingsordningen (`handhevingsordningen`) | begrep | § 12-6 Statsforvaltaren si handheving | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Tvangsmulkt (`tvangsmulkt`) | begrep | § 12-8 Tvangsmulkt | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Fysisk skolemiljø (`fysisk-skolemiljo`) | begrep | § 12-7 Det fysiske miljøet | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Fysiske inngrep (`fysiske-inngrep`) | begrep | § 13-4 Fysiske inngrep for å avverje skade m.m., § 13-5 Meldeplikt og dokumentasjon | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Pålagt skolebytte (`palagt-skolebytte`) | begrep | § 13-2 Pålagt skolebyte | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Særskilt språkopplæring (`sarskilt-sprakopplaering`) | begrep | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Morsmålsopplæring (`morsmalsopplaering`) | begrep | § 6-5 tredje ledd | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Innføringsopplæring (`innforingsopplaering`) | begrep | § 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
@@ -305,6 +314,9 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Individuell opplæringsplan (IOP) (`individuell-opplaeringsplan`) | begrep | § 11-10 Individuell opplæringsplan, § 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Selvråderett fra 15 år (`selvraderett-15-ar`) | begrep | § 24-5 Sjølvråderett for dei som har fylt 15 år | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Elevens beste og medvirkning (`elevens-beste`) | begrep | § 10-1 Det beste for eleven, § 10-2 Elevane sin rett til medverknad | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Hva klagen gjelder (`kl-start`) | steg | § 24-5 Sjølvråderett for dei som har fylt 15 år | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | § 8-3 Klagenemnd for fag- og sveineprøver | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Andre vedtak om vurdering og eksamen (`kl-andre`) | steg | § 29-1 Klage på enkeltvedtak | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
 | Søknadsfrist (`fr-soknad-mars`) | frist | § 5-5 Rett til omval | `content/inntak/frister.yaml` | ikke kontrollert |
 | Opplæringen (`mo-sti-opplaeringen`) | forklaring | § 14-4 | `content/inntak/mer-opplaering.yaml` | ikke kontrollert |
 | Elever med individuelt tilrettelagt opplæring (`mo-iop-fullforing`) | forklaring | § 5-1 andre ledd | `content/inntak/mer-opplaering.yaml` | ikke kontrollert |
@@ -337,12 +349,36 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Ferdig fag- eller svennebrev (`fra-ferdig-fagbrev`) | utgangspunkt | § 5-7, § 18-7, § 18-4 | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Praksis i arbeidslivet (`fra-praksis`) | utgangspunkt | § 23-2 | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Når kontrakten sies opp eller heves (`lk-kontrakt-slutt`) | forklaring | § 7-3, § 7-4 fjerde ledd | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
+| Aktivitetsplikten (`aktivitetsplikten`) | veiviser | Kapittel 12 Skolemiljø | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Hvem er du i saken? (`am-start`) | steg | § 12-2 Retten til eit trygt og godt skolemiljø | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Følge med (`am-folge-med`) | steg | § 12-4 første ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Gripe inn (`am-gripe-inn`) | steg | § 12-4 første ledd, § 13-4 Fysiske inngrep for å avverje skade m.m. | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Melde fra til rektor (`am-melde`) | steg | § 12-4 andre ledd, § 10-8 Informasjon til elevane og foreldra | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når en som arbeider på skolen, krenker en elev (`am-skjerpet`) | steg | § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Undersøke saken (`am-undersoke`) | steg | § 12-4 andre ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Tiltak og tiltaksplan (`am-tiltak`) | steg | § 12-4 andre og tredje ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Dokumentere (`am-dokumentere`) | steg | § 12-4 fjerde ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Følge opp og evaluere (`am-evaluere`) | steg | § 12-4 tredje ledd bokstav e | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Melde saken til statsforvalteren (`am-statsforvalteren`) | steg | § 12-6 Statsforvaltaren si handheving | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når saken er meldt til statsforvalteren (`am-sf-skolen`) | steg | § 12-6 tredje og fjerde ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Ta saken opp med rektor først (`am-ta-opp`) | steg | § 12-6 andre ledd | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Hvem og hvor reglene gjelder (`k12-hvem`) | forklaring | § 12-1 Verkeområde for kapittelet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Retten til et trygt og godt skolemiljø (`k12-retten`) | forklaring | § 12-2 Retten til eit trygt og godt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Nulltoleranse mot krenkende oppførsel (`k12-nulltoleranse`) | forklaring | § 12-3 Nulltoleranse og førebyggjande arbeid, første ledd | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Forebygging (`k12-forebygging`) | forklaring | § 12-3 Nulltoleranse og førebyggjande arbeid, andre ledd | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Aktivitetsplikten (`k12-aktivitetsplikt`) | forklaring | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Når en som arbeider på skolen, krenker en elev (`k12-skjerpet`) | forklaring | § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Eleven kan melde saken til statsforvalteren (`k12-statsforvalteren`) | forklaring | § 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Det fysiske skolemiljøet (`k12-fysisk`) | forklaring | § 12-7 Det fysiske miljøet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Tvangsmulkt, straff og erstatning (`k12-ansvar`) | forklaring | § 12-8 Tvangsmulkt, § 12-9 Straffansvar for brot på reglane om skolemiljø, § 12-10 Bevisbyrde i erstatningssaker om psykososialt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Informasjon til elevene og foreldrene (`k12-informasjon`) | forklaring | § 10-8 Informasjon til elevane og foreldra | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Fysiske inngrep (`k12-fysiske-inngrep`) | forklaring | § 13-3 Førebygging, § 13-4 Fysiske inngrep for å avverje skade m.m., § 13-5 Meldeplikt og dokumentasjon | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Skolereglene er en forskrift (`sr-loven-skoleregler`) | forklaring | § 10-7 Skolereglar, § 10-6 Elevane si plikt til å delta, § 10-8 Informasjon til elevane og foreldra | `content/skolemiljo/skoleregler.yaml` | ikke kontrollert |
+| Bortvisning (`sr-loven-bortvisning`) | forklaring | § 13-1 Bortvising | `content/skolemiljo/skoleregler.yaml` | ikke kontrollert |
+| Pålagt skolebytte (`sr-loven-skolebytte`) | forklaring | § 13-2 Pålagt skolebyte | `content/skolemiljo/skoleregler.yaml` | ikke kontrollert |
 | Særskilt språkopplæring og kort botid (`sprak-og-kort-botid`) | veiviser | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Ikke særskilt språkopplæring (`sp-ikke-rett`) | steg | Kapittel 6 Val av skriftspråk og særskilde språkrettar i den vidaregåande opplæringa | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Tilpasset opplæring og individuell tilrettelegging (`tilpasset-og-individuell`) | veiviser | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
-| Hva klagen gjelder (`kl-start`) | steg | § 24-5 Sjølvråderett for dei som har fylt 15 år | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | § 8-3 Klagenemnd for fag- og sveineprøver | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Andre vedtak om vurdering og eksamen (`kl-andre`) | steg | § 29-1 Klage på enkeltvedtak | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
 
 ### Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
 
@@ -379,6 +415,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Sensur (`sensur`) | begrep | § 9-33, § 9-26 første og andre ledd, § 9-16 fjerde ledd | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Annullering (`annullering`) | begrep | § 9-42, § 9-40 og § 9-41, § 9-69 | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Hurtigklage (`hurtigklage`) | begrep | § 10-2 (den vanlige klagefristen) | `content/begreper/eksamen.yaml` | ikke kontrollert |
+| Kompetanseprøve (`kompetanseprove`) | begrep | § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva, § 10-10 Klage på praksisbrevprøve og kompetanseprøve | `content/begreper/eksamen.yaml` | ikke kontrollert |
+| Praksisbrevprøve (`praksisbrevprove`) | begrep | § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva, § 9-48 Fag- og sveinebrev og praksisbrev i vidaregåande opplæring, § 10-10 Klage på praksisbrevprøve og kompetanseprøve | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Statsforvalteren (`statsforvalteren`) | begrep | § 10-4 Klage på fastsetjing av standpunktkarakter i fag | `content/begreper/forvaltning.yaml` | ikke kontrollert |
 | Begrunnelse (`begrunnelse`) | begrep | § 10-3 Rett til grunngiving for karakteren | `content/begreper/forvaltning.yaml` | ikke kontrollert |
 | Skoleskyss (`skoleskyss`) | begrep | § 8-1 Gratis skyss eller full skyssgodtgjersle i vidaregåande opplæring, § 8-2 Rabattordning som alternativ til gratis skyss, eller full skyssgodtgjersle i vidaregåande opplæring | `content/begreper/fylker.yaml` | ikke kontrollert |
@@ -404,6 +442,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Fagbrev på jobb (`fagbrev-pa-jobb`) | begrep | § 9-58, § 9-48 tredje ledd og § 9-56 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Vg3 i skole (`vg3-i-skole`) | begrep | § 6-2, § 9-56 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Formidling til læreplass (`formidling-til-laereplass`) | begrep | § 7-1 til § 7-3, § 6-2 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Fysisk skolemiljø (`fysisk-skolemiljo`) | begrep | § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Kort botid (`kort-botid`) | begrep | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Underveisvurdering (`underveisvurdering`) | begrep | § 9-11, § 10-1 | `content/begreper/vurdering.yaml` | ikke kontrollert |
 | Halvårsvurdering (`halvarsvurdering`) | begrep | § 9-13, § 9-52 andre ledd | `content/begreper/vurdering.yaml` | ikke kontrollert |
@@ -414,6 +453,62 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Fritak fra vurdering med karakter (`fritak-fra-vurdering-med-karakter`) | begrep | § 9-18, § 9-20, § 9-21, § 9-22, § 9-23 | `content/begreper/vurdering.yaml` | ikke kontrollert |
 | Orden og oppførsel (`orden-og-oppforsel`) | begrep | § 9-2, § 9-4, § 9-1 tredje ledd | `content/begreper/vurdering.yaml` | ikke kontrollert |
 | Karakterer og vurderingsuttrykk (`karakterer-og-vurderingsuttrykk`) | begrep | § 9-3, § 9-4 | `content/begreper/vurdering.yaml` | ikke kontrollert |
+| Trekk og antall eksamener (`ek-trekk`) | forklaring | § 9-28 første til tredje ledd, § 9-30 og § 9-31 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Sentralt og lokalt gitt eksamen (`ek-sentralt-lokalt`) | forklaring | § 9-25 andre ledd og § 9-26 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Oppmelding (`ek-oppmelding`) | forklaring | § 9-27 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Trekket blir kjent (`ek-trekket`) | forklaring | § 9-28 andre ledd | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Forberedelse (`ek-forberedelse`) | forklaring | § 9-32 og § 9-28 andre ledd | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Eksamensdagen (`ek-gjennomforing`) | forklaring | § 9-28 fjerde og femte ledd | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Sensur (`ek-sensur`) | forklaring | § 9-33 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Karakteren og klage (`ek-klage`) | forklaring | § 10-2, § 10-7 og § 10-8 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Bortvisning og annullering (`ek-bortvisning`) | forklaring | § 9-39 til § 9-42 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Særskilt tilrettelegging av eksamen (`ek-tilrettelegging`) | forklaring | § 9-34 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Utsatt, ny og særskilt eksamen (`ek-utsatt-ny-sarskilt`) | forklaring | § 9-36 til § 9-38 og § 5-2 første ledd | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Samtale om utviklingen (`fe-samtale`) | frist | § 9-6 første ledd og § 9-9 femte ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Varsel om at karakteren kan falle bort (`fe-varsel`) | frist | § 9-7 første ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Klagefrist på standpunkt og eksamen (`fe-klagefrist`) | frist | § 10-2 | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Oppmelding til fag- eller svenneprøven (`fe-oppmelding-prove`) | frist | § 9-55 andre ledd og § 9-56 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Halvårsvurdering (`fe-halvar-midt`) | frist | § 9-13 tredje og fjerde ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Opplæringen regnes som gjennomført (`fe-mer-opplaering-mars`) | frist | § 5-2 første og andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Standpunktkarakteren settes (`fe-standpunkt-senest`) | frist | § 9-16 fjerde ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Halvårsvurdering i fag som fortsetter (`fe-halvar-slutt`) | frist | § 9-13 tredje ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Melde seg til mer opplæring (`fe-mer-opplaering-melding`) | frist | § 4-3 | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skolene melder opp til høsteksamen (`fe-skoler-oppmelding-host`) | frist | § 9-27 første til tredje ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Privatister melder seg opp til høsteksamen (`fe-privatister-oppmelding-host`) | frist | § 9-27 femte og sjette ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Trekket til høsteksamen blir kjent (`fe-trekk-host`) | frist | § 9-28 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skriftlig høsteksamen (`fe-eksamen-host`) | frist | § 9-26 og § 9-28 femte ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Sensur for høsteksamen (`fe-sensur-host`) | frist | § 10-2 | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skolene registrerer klager på høsteksamen (`fe-klage-registrering-host`) | frist | § 10-7 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Klagene på høsteksamen er behandlet (`fe-klage-behandlet-host`) | frist | § 10-7 | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skolene melder opp til våreksamen (`fe-skoler-oppmelding-var`) | frist | § 9-27 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Privatister melder seg opp til våreksamen (`fe-privatister-oppmelding-var`) | frist | § 9-27 femte og sjette ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Trekket til våreksamen blir kjent (`fe-trekk-var`) | frist | § 9-28 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skriftlig våreksamen (`fe-eksamen-var`) | frist | § 9-26 og § 9-28 femte ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Sensur for våreksamen (`fe-sensur-var`) | frist | § 10-2 | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skolene registrerer klager på våreksamen (`fe-klage-registrering-var`) | frist | § 10-7 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Klagene på våreksamen er behandlet (`fe-klage-behandlet-var`) | frist | § 10-7 | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Datoene for muntlig og praktisk høsteksamen for privatister (`fe-privatister-datoer-host`) | frist | § 9-26 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Datoene for muntlig og praktisk våreksamen for privatister (`fe-privatister-datoer-var`) | frist | § 9-26 andre ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Klage på karakter (`klage-pa-karakter`) | veiviser | Kapittel 10 Klage på sluttvurderingar | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Hva klagen gjelder (`kl-start`) | steg | § 10-1 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Ingen klagerett (`kl-ingen-klagerett`) | steg | § 9-6 første ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Begrunnelse for karakteren (`kl-begrunnelse`) | steg | § 10-3 første og tredje ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Klagefristen (`kl-frist`) | steg | § 10-2 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Skolen vurderer klagen (`kl-skolen`) | steg | § 10-4 andre ledd, § 10-5 andre ledd og § 10-6 andre ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Statsforvalteren avgjør (`kl-statsforvalteren`) | steg | § 10-4 tredje og fjerde ledd, § 10-5 tredje og fjerde ledd og § 10-6 tredje ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Skriftlig eksamen (`kl-skriftlig`) | steg | § 10-3 fjerde ledd og § 10-7 andre ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Klagenemnda avgjør (`kl-klagenemnd`) | steg | § 10-7 første, tredje og fjerde ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Muntlig og praktisk eksamen (`kl-muntlig`) | steg | § 10-3 andre ledd og § 10-8 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | § 10-9 og § 10-10 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Prøvene som sluttvurdering (`pr-hva`) | forklaring | § 9-48, § 9-51 og § 9-55 første ledd | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Krav før prøven (`pr-krav`) | forklaring | § 9-57, § 9-48 tredje ledd og § 9-49 | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Oppmelding og når prøven holdes (`pr-oppmelding`) | forklaring | § 9-55 andre og tredje ledd og § 9-56 | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Prøvenemnda og prøven (`pr-provenemnda`) | forklaring | § 9-59 til § 9-61 | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Vurdering og karakterer (`pr-vurdering`) | forklaring | § 9-5, § 9-63 til § 9-65 | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Særskilt tilrettelegging av prøven (`pr-tilrettelegging`) | forklaring | § 9-62 | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Resultatet og klage (`pr-klage`) | forklaring | § 9-54 fjerde ledd, § 10-9 og § 10-10 | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Ny og utsatt prøve (`pr-ny-utsatt`) | forklaring | § 9-66 og § 9-67, § 9-68 fjerde ledd, § 5-2 tredje ledd | `content/eksamen/proevene.yaml` | ikke kontrollert |
+| Bortvisning og annullering (`pr-bortvisning`) | forklaring | § 9-68 og § 9-69 | `content/eksamen/proevene.yaml` | ikke kontrollert |
 | Voksne søker når som helst (`fr-voksne-lopende`) | frist | § 13-3 Søknad om inntak til vidaregåande opplæring for vaksne | `content/inntak/frister.yaml` | ikke kontrollert |
 | Kommunen melder elever som kan ha fortrinnsrett (`fr-melding-fortrinn`) | frist | § 4-21 tredje ledd og § 4-22 tredje ledd | `content/inntak/frister.yaml` | ikke kontrollert |
 | Søknadsfristen kunngjøres (`fr-kunngjoring`) | frist | § 4-9 fjerde ledd | `content/inntak/frister.yaml` | ikke kontrollert |
@@ -478,48 +573,14 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Ferdig fag- eller svennebrev (`fra-ferdig-fagbrev`) | utgangspunkt | § 6-10 | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Praksis i arbeidslivet (`fra-praksis`) | utgangspunkt | § 9-58 andre ledd | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Kompetansebevis for elever (`lk-kompetansebevis-elever`) | forklaring | § 9-51 første ledd | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
+| Forebygging (`k12-forebygging`) | forklaring | § 20-5 Ikkje-anonyme skolemiljøundersøkingar | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Det fysiske skolemiljøet (`k12-fysisk`) | forklaring | § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
 | Læreplanene i særskilt språkopplæring (`sp-laereplan`) | steg | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
-| Trekk og antall eksamener (`ek-trekk`) | forklaring | § 9-28 første til tredje ledd, § 9-30 og § 9-31 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Sentralt og lokalt gitt eksamen (`ek-sentralt-lokalt`) | forklaring | § 9-25 andre ledd og § 9-26 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Oppmelding (`ek-oppmelding`) | forklaring | § 9-27 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Trekket blir kjent (`ek-trekket`) | forklaring | § 9-28 andre ledd | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Forberedelse (`ek-forberedelse`) | forklaring | § 9-32 og § 9-28 andre ledd | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Eksamensdagen (`ek-gjennomforing`) | forklaring | § 9-28 fjerde og femte ledd | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Sensur (`ek-sensur`) | forklaring | § 9-33 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Karakteren og klage (`ek-klage`) | forklaring | § 10-2, § 10-7 og § 10-8 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Bortvisning og annullering (`ek-bortvisning`) | forklaring | § 9-39 til § 9-42 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Særskilt tilrettelegging av eksamen (`ek-tilrettelegging`) | forklaring | § 9-34 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Utsatt, ny og særskilt eksamen (`ek-utsatt-ny-sarskilt`) | forklaring | § 9-36 til § 9-38 og § 5-2 første ledd | `content/vurdering/eksamen.yaml` | ikke kontrollert |
 | Fravær som teller mot grensen (`fr-teller`) | regel | § 9-8 tredje ledd | `content/vurdering/fravaer.yaml` | ikke kontrollert |
 | Dokumentert fravær som ikke teller (`fr-unntak`) | regel | § 9-8 andre ledd bokstav b–i | `content/vurdering/fravaer.yaml` | ikke kontrollert |
 | Det som ikke er fravær (`fr-ikke-fravaer`) | regel | § 9-9 femte ledd | `content/vurdering/fravaer.yaml` | ikke kontrollert |
 | Rektors skjønn opp til 15 prosent (`fr-skjonn`) | regel | § 9-8 fjerde ledd | `content/vurdering/fravaer.yaml` | ikke kontrollert |
 | Fraværsgrensen og fraværet på vitnemålet (`fr-vitnemal`) | regel | § 9-53 fjerde og femte ledd | `content/vurdering/fravaer.yaml` | ikke kontrollert |
-| Samtale om utviklingen (`fe-samtale`) | frist | § 9-6 første ledd og § 9-9 femte ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Varsel om at karakteren kan falle bort (`fe-varsel`) | frist | § 9-7 første ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Klagefrist på standpunkt og eksamen (`fe-klagefrist`) | frist | § 10-2 | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Oppmelding til fag- eller svenneprøven (`fe-oppmelding-prove`) | frist | § 9-55 andre ledd og § 9-56 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Halvårsvurdering (`fe-halvar-midt`) | frist | § 9-13 tredje og fjerde ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Opplæringen regnes som gjennomført (`fe-mer-opplaering-mars`) | frist | § 5-2 første og andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Standpunktkarakteren settes (`fe-standpunkt-senest`) | frist | § 9-16 fjerde ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Halvårsvurdering i fag som fortsetter (`fe-halvar-slutt`) | frist | § 9-13 tredje ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Melde seg til mer opplæring (`fe-mer-opplaering-melding`) | frist | § 4-3 | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skolene melder opp til høsteksamen (`fe-skoler-oppmelding-host`) | frist | § 9-27 første til tredje ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Privatister melder seg opp til høsteksamen (`fe-privatister-oppmelding-host`) | frist | § 9-27 femte og sjette ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Trekket til høsteksamen blir kjent (`fe-trekk-host`) | frist | § 9-28 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skriftlig høsteksamen (`fe-eksamen-host`) | frist | § 9-26 og § 9-28 femte ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Sensur for høsteksamen (`fe-sensur-host`) | frist | § 10-2 | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skolene registrerer klager på høsteksamen (`fe-klage-registrering-host`) | frist | § 10-7 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Klagene på høsteksamen er behandlet (`fe-klage-behandlet-host`) | frist | § 10-7 | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skolene melder opp til våreksamen (`fe-skoler-oppmelding-var`) | frist | § 9-27 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Privatister melder seg opp til våreksamen (`fe-privatister-oppmelding-var`) | frist | § 9-27 femte og sjette ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Trekket til våreksamen blir kjent (`fe-trekk-var`) | frist | § 9-28 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skriftlig våreksamen (`fe-eksamen-var`) | frist | § 9-26 og § 9-28 femte ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Sensur for våreksamen (`fe-sensur-var`) | frist | § 10-2 | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skolene registrerer klager på våreksamen (`fe-klage-registrering-var`) | frist | § 10-7 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Klagene på våreksamen er behandlet (`fe-klage-behandlet-var`) | frist | § 10-7 | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Datoene for muntlig og praktisk høsteksamen for privatister (`fe-privatister-datoer-host`) | frist | § 9-26 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Datoene for muntlig og praktisk våreksamen for privatister (`fe-privatister-datoer-var`) | frist | § 9-26 andre ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
 | Grunnlag for vurdering (`grunnlag-for-vurdering`) | veiviser | Kapittel 9 Individuell vurdering | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Hvem skal vurderes (`vu-start`) | steg | § 9-13 første, andre og fjerde ledd | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Vurdering i bedrift (`vu-bedrift`) | steg | § 9-6 første ledd, § 9-13 fjerde ledd, § 9-15 tredje ledd | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
@@ -542,32 +603,12 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Halvår eller standpunkt (`vu-halvaar-standpunkt`) | steg | § 9-16 sjette ledd | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Vedtak om IV (`vu-iv`) | steg | § 9-16 sjette ledd, § 9-41, § 10-5 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Karakter settes (`vu-karakter`) | steg | § 9-16 tredje–femte ledd, § 9-3 tredje ledd, § 9-9 andre ledd | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
-| Klage på karakter (`klage-pa-karakter`) | veiviser | Kapittel 10 Klage på sluttvurderingar | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Hva klagen gjelder (`kl-start`) | steg | § 10-1 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Ingen klagerett (`kl-ingen-klagerett`) | steg | § 9-6 første ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Begrunnelse for karakteren (`kl-begrunnelse`) | steg | § 10-3 første og tredje ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Klagefristen (`kl-frist`) | steg | § 10-2 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Skolen vurderer klagen (`kl-skolen`) | steg | § 10-4 andre ledd, § 10-5 andre ledd og § 10-6 andre ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Statsforvalteren avgjør (`kl-statsforvalteren`) | steg | § 10-4 tredje og fjerde ledd, § 10-5 tredje og fjerde ledd og § 10-6 tredje ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Skriftlig eksamen (`kl-skriftlig`) | steg | § 10-3 fjerde ledd og § 10-7 andre ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Klagenemnda avgjør (`kl-klagenemnd`) | steg | § 10-7 første, tredje og fjerde ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Muntlig og praktisk eksamen (`kl-muntlig`) | steg | § 10-3 andre ledd og § 10-8 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | § 10-9 og § 10-10 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
 | Grunnlaget er skolereglene (`oo-grunnlag`) | forklaring | § 9-2 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 | Karakterene (`oo-karakterer`) | forklaring | § 9-4 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 | Underveisvurdering og halvårsvurdering (`oo-underveis`) | forklaring | § 9-12, § 9-14 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 | Varsel om Ng eller Lg (`oo-varsel`) | forklaring | § 9-7 andre og tredje ledd, § 9-17 fjerde ledd | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 | Standpunkt (`oo-standpunkt`) | forklaring | § 9-17 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 | Klage (`oo-klage`) | forklaring | § 10-6, § 10-2 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
-| Prøvene som sluttvurdering (`pr-hva`) | forklaring | § 9-48, § 9-51 og § 9-55 første ledd | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Krav før prøven (`pr-krav`) | forklaring | § 9-57, § 9-48 tredje ledd og § 9-49 | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Oppmelding og når prøven holdes (`pr-oppmelding`) | forklaring | § 9-55 andre og tredje ledd og § 9-56 | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Prøvenemnda og prøven (`pr-provenemnda`) | forklaring | § 9-59 til § 9-61 | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Vurdering og karakterer (`pr-vurdering`) | forklaring | § 9-5, § 9-63 til § 9-65 | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Særskilt tilrettelegging av prøven (`pr-tilrettelegging`) | forklaring | § 9-62 | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Resultatet og klage (`pr-klage`) | forklaring | § 9-54 fjerde ledd, § 10-9 og § 10-10 | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Ny og utsatt prøve (`pr-ny-utsatt`) | forklaring | § 9-66 og § 9-67, § 9-68 fjerde ledd, § 5-2 tredje ledd | `content/vurdering/proevene.yaml` | ikke kontrollert |
-| Bortvisning og annullering (`pr-bortvisning`) | forklaring | § 9-68 og § 9-69 | `content/vurdering/proevene.yaml` | ikke kontrollert |
 | Skoleåret i et fag (`us-skolearet`) | forklaring | § 9-13 tredje ledd, § 9-16 tredje og fjerde ledd, § 9-26 første ledd | `content/vurdering/underveis-og-slutt.yaml` | ikke kontrollert |
 | Hva det er (`us-rad-hva`) | forklaring | § 9-11 første ledd, § 9-15 tredje ledd | `content/vurdering/underveis-og-slutt.yaml` | ikke kontrollert |
 | Formål (`us-rad-formal`) | forklaring | § 9-11 første ledd, § 9-15 første ledd | `content/vurdering/underveis-og-slutt.yaml` | ikke kontrollert |
@@ -624,12 +665,12 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Klage på enkeltvedtak (`klage`) | begrep | § 28 Vedtak som kan påklages, klageinstans, § 29 Klagefrist, § 32 og § 33 (klagen sendes til underinstansen) | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Habilitet (`habilitet`) | begrep | § 6 Habilitetskrav | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Forhåndsvarsel (`forhandsvarsel`) | begrep | § 16 Forhåndsvarsling | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Skolen vurderer klagen (`kl-skolen`) | steg | § 33 andre ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | § 29 første ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Andre vedtak om vurdering og eksamen (`kl-andre`) | steg | § 28, § 29 og § 33 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
 | Klage på vedtaket om inntak (`fr-klage`) | frist | § 29 Klagefrist | `content/inntak/frister.yaml` | ikke kontrollert |
 | Søknad, svar og klage (`sk-soknad`) | steg | § 29 Klagefrist og § 32 Klagens adressat, form og innhold | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
 | Voksenrett (`sk-voksenrett`) | steg | § 29 Klagefrist og § 32 Klagens adressat, form og innhold | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
-| Skolen vurderer klagen (`kl-skolen`) | steg | § 33 andre ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | § 29 første ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Andre vedtak om vurdering og eksamen (`kl-andre`) | steg | § 28, § 29 og § 33 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
 
 ### Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
 
@@ -669,6 +710,16 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Journalføring (`journalforing`) | begrep | § 14 Kva dokument som skal registrerast i journal, § 15 Kva metadata som skal registrerast om eit saksdokument i ein journal | `content/begreper/innsyn-og-arkiv.yaml` | ikke kontrollert |
 | Arkivplikt (`arkivplikt`) | begrep | § 1 Kva eit organ skal ta omsyn til når det skal avgjere kva dokumentasjon det skal forvalte som arkiv, § 13 Internkontroll med dokumentasjonsforvaltninga | `content/begreper/innsyn-og-arkiv.yaml` | ikke kontrollert |
 | Bevaring og kassasjon (`bevaring-og-kassasjon`) | begrep | § 3 Oppbevaringstider for dokumentasjon | `content/begreper/innsyn-og-arkiv.yaml` | ikke kontrollert |
+
+### Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger
+
+`forskrift-helse-miljo-skoler` · Kildesjekk: i orden (06.10.2026) · [Åpne kilden](https://lovdata.no/forskrift/2023-03-28-449)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Det fysiske skolemiljøet (`k12-fysisk`) | forklaring | § 20 Kommunens oppfølging av henvendelser og § 21 Klage | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
@@ -851,6 +902,21 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Skolerute (`skolerute`) | begrep | Lokale forskrifter om skolerute for de videregående skolene | `content/begreper/fylker.yaml` | ikke kontrollert |
 | Fleksibilitet i fag- og timefordelingen (`fag-og-timefordeling-fleksibilitet`) | begrep | Lokale forskrifter om omfordeling av fag og fag på avvikende trinn | `content/begreper/fylker.yaml` | ikke kontrollert |
 | Ikrafttredelse og kunngjøring (`ikrafttredelse`) | begrep | Registeret over lokale forskrifter (dato for ikrafttredelse) | `content/begreper/fylker.yaml` | ikke kontrollert |
+| Skolereglene i Agder (`sr-fylke-42`) | forklaring | Forskrift om skoleregler for elever ved fylkeskommunale videregående skoler i Agder og deltakere i voksenopplæringen | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Akershus (`sr-fylke-32`) | forklaring | Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Buskerud (`sr-fylke-33`) | forklaring | Forskrift om skoleregler, Buskerud fylkeskommune | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Finnmark (`sr-fylke-56`) | forklaring | Forskrift om skoleregler for fylkeskommunale videregående skoler, Finnmark | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Innlandet (`sr-fylke-34`) | forklaring | Forskrift om skoleregler, Innlandet fylkeskommune | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Møre og Romsdal (`sr-fylke-15`) | forklaring | Forskrift om skolereglar for dei vidaregåande skolane, Møre og Romsdal fylkeskommune | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Nordland (`sr-fylke-18`) | forklaring | Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler og deltakere i voksenopplæringen, Nordland | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Oslo (`sr-fylke-03`) | forklaring | Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Rogaland (`sr-fylke-11`) | forklaring | Forskrift om skoleregler og skoledemokrati for elever, Rogaland | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Telemark (`sr-fylke-40`) | forklaring | Forskrift om skoleregler for videregående skoler, Telemark fylkeskommune | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Troms (`sr-fylke-55`) | forklaring | Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Troms | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Trøndelag (`sr-fylke-50`) | forklaring | Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Trøndelag | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Vestfold (`sr-fylke-39`) | forklaring | Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Vestfold | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Vestland (`sr-fylke-46`) | forklaring | Forskrift om skulereglar, Vestland fylkeskommune | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
+| Skolereglene i Østfold (`sr-fylke-31`) | forklaring | Forskrift om skoleregler for de offentlige videregående skolene, Østfold | `content/skolemiljo/skoleregler-fylker.yaml` | ikke kontrollert |
 
 ### Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
 
@@ -898,8 +964,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Bortvisning og annullering i Vestland (`ek-vl-bortvisning`) | forklaring | § 8 tredje ledd nr. 6, § 13 første og tredje ledd | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Bortvisning og annullering i Vestland (`kl-andre`) | steg | § 8 tredje ledd nr. 6, § 13 første til tredje ledd | `content/vurdering/klage-pa-karakter-vestland.yaml` | ikke kontrollert |
+| Bortvisning og annullering i Vestland (`ek-vl-bortvisning`) | forklaring | § 8 tredje ledd nr. 6, § 13 første og tredje ledd | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Bortvisning og annullering i Vestland (`kl-andre`) | steg | § 8 tredje ledd nr. 6, § 13 første til tredje ledd | `content/eksamen/klage-pa-karakter-vestland.yaml` | ikke kontrollert |
 | Skulereglane i Vestland (`oo-vestland`) | forklaring | § 11 Vurdering i orden og oppførsel | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 
 ### Lokale forskrifter etter opplæringsloven
@@ -1034,6 +1100,100 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Praksisbrevkandidat (`fra-praksisbrevkandidat`) | utgangspunkt | Rett til videregående opplæring, Fram til studie- eller yrkeskompetanse | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 | Ferdig fag- eller svennebrev (`fra-ferdig-fagbrev`) | utgangspunkt | Rett til påbygging | `content/opplaeringslop/veier.yaml` | ikke kontrollert |
 
+### Rundskriv om skolemiljø
+
+`udir-rundskriv-skolemiljo` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Tiltaksplan (`tiltaksplan`) | begrep | 6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Aktivitetsplikten (`aktivitetsplikten`) | veiviser | 6. Skolen har en aktivitetsplikt | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Hvem er du i saken? (`am-start`) | steg | 6.2.1 Hvem er «alle som arbeider på skolen»? | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Følge med (`am-folge-med`) | steg | 6.3.1 Plikt til å følge med | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Gripe inn (`am-gripe-inn`) | steg | 6.3.2 Plikt til å gripe inn | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Melde fra til rektor (`am-melde`) | steg | 6.3.3 Plikt til å melde fra | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når en som arbeider på skolen, krenker en elev (`am-skjerpet`) | steg | 6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Undersøke saken (`am-undersoke`) | steg | 6.3.5 Plikt til å undersøke, 6.5 Elevens rett til å bli hørt og plikten til å ta hensyn til elevens beste | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Tiltak og tiltaksplan (`am-tiltak`) | steg | 6.3.6 Plikt til å sette inn tiltak, 6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Dokumentere (`am-dokumentere`) | steg | 6.4 Dokumentasjonskravene | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Følge opp og evaluere (`am-evaluere`) | steg | 6.3.6 Plikt til å sette inn tiltak | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Eleven har det trygt og godt (`am-trygt`) | steg | 6.3.6 Plikt til å sette inn tiltak | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Melde saken til statsforvalteren (`am-statsforvalteren`) | steg | 8. Klage til Utdanningsdirektoratet | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når saken er meldt til statsforvalteren (`am-sf-skolen`) | steg | 8. Klage til Utdanningsdirektoratet | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når skolen ikke gjør nok (`am-elev`) | steg | 6.3.6 Plikt til å sette inn tiltak | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Aktivitetsplikten (`k12-aktivitetsplikt`) | forklaring | 6.3 En aktivitetsplikt med flere delplikter, 6.4 Dokumentasjonskravene | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Når en som arbeider på skolen, krenker en elev (`k12-skjerpet`) | forklaring | 6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+| Eleven kan melde saken til statsforvalteren (`k12-statsforvalteren`) | forklaring | 8. Klage til Utdanningsdirektoratet | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren
+
+`udir-rundskriv-skolemiljo-statsforvalteren` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Håndhevingsordningen (`handhevingsordningen`) | begrep | 7. Å melde saken til statsforvalteren | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Melde saken til statsforvalteren (`am-statsforvalteren`) | steg | 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer, 7. Å melde saken til statsforvalteren | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når saken er meldt til statsforvalteren (`am-sf-skolen`) | steg | 7. Å melde saken til statsforvalteren | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Når skolen ikke gjør nok (`am-elev`) | steg | 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Ta saken opp med rektor først (`am-ta-opp`) | steg | 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer | `content/skolemiljo/aktivitetsplikten.yaml` | ikke kontrollert |
+| Eleven kan melde saken til statsforvalteren (`k12-statsforvalteren`) | forklaring | 7.2 Når kan statsforvalteren behandle saken? | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
+
+`udir-rundskriv-skolemiljo-hvem` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Hvem og hvor reglene gjelder (`k12-hvem`) | forklaring | 2. For hvem og hvor gjelder reglene om et trygt og godt skolemiljø? | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø
+
+`udir-rundskriv-skolemiljo-retten` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Trygt og godt skolemiljø (`trygt-og-godt-skolemiljo`) | begrep | 3. Retten til et trygt og godt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Retten til et trygt og godt skolemiljø (`k12-retten`) | forklaring | 3. Retten til et trygt og godt skolemiljø | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 4 Nulltoleranse
+
+`udir-rundskriv-skolemiljo-nulltoleranse` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Krenkende oppførsel (`krenkende-oppforsel`) | begrep | 4. Nulltoleranse | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+| Nulltoleranse mot krenkende oppførsel (`k12-nulltoleranse`) | forklaring | 4. Nulltoleranse | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre
+
+`udir-rundskriv-skolemiljo-informasjon` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Informasjon til elevene og foreldrene (`k12-informasjon`) | forklaring | 5. Skolene skal informere elever og foreldre | `content/skolemiljo/kapittel-12.yaml` | ikke kontrollert |
+
+### Elevundersøkelsen i videregående, Udirs statistikkbank
+
+`udir-elevundersokelsen` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Elevundersøkelsen (`elevundersokelsen`) | begrep | Offentlige resultater for videregående | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
+
 ### Rett til mer opplæring
 
 `udir-mer-opplaering` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/)
@@ -1112,13 +1272,13 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Andre vedtak om vurdering og eksamen (`kl-andre`) | steg | Opplæringsforskrifta kapittel 9 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
 | Klage på vedtaket om inntak (`fr-klage`) | frist | Kapittel 4 Inntak til vidaregåande opplæring | `content/inntak/frister.yaml` | ikke kontrollert |
 | Søknad, svar og klage (`sk-soknad`) | steg | Kapittel 4 Inntak til vidaregåande opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
 | Fritak i innføringsopplæringen (`vu-fritak-innforing`) | steg | § 9-20, vedtak for elev i videregående | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Fritak i sidemålet (`vu-fritak-sidemal`) | steg | § 9-21 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Fritak i fremmedspråk (`vu-fritak-fremmedsprak`) | steg | § 9-22 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Fritak i kroppsøving (`vu-fritak-kroppsoving`) | steg | § 9-23 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
-| Andre vedtak om vurdering og eksamen (`kl-andre`) | steg | Opplæringsforskrifta kapittel 9 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
 
 ### Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering
 
@@ -1132,11 +1292,12 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Underveisvurdering (`underveisvurdering`) | begrep | Merknad til § 9-11 | `content/begreper/vurdering.yaml` | ikke kontrollert |
 | Halvårsvurdering (`halvarsvurdering`) | begrep | Merknad til § 9-9 | `content/begreper/vurdering.yaml` | ikke kontrollert |
 | Standpunktkarakter (`standpunktkarakter`) | begrep | Merknad til § 9-16 | `content/begreper/vurdering.yaml` | ikke kontrollert |
-| Trekk og antall eksamener (`ek-trekk`) | forklaring | Merknad til § 9-31 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Særskilt tilrettelegging av eksamen (`ek-tilrettelegging`) | forklaring | Merknad til § 9-34 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Utsatt, ny og særskilt eksamen (`ek-utsatt-ny-sarskilt`) | forklaring | Merknad til § 9-36, Merknad til § 9-37, Merknad til § 9-38 | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Privatister søker om tilrettelegging til høsteksamen (`fe-tilrettelegging-privatister-host`) | frist | Merknad til § 9-34, tredje ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Privatister søker om tilrettelegging til våreksamen (`fe-tilrettelegging-privatister-var`) | frist | Merknad til § 9-34, tredje ledd | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
+| Trekk og antall eksamener (`ek-trekk`) | forklaring | Merknad til § 9-31 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Særskilt tilrettelegging av eksamen (`ek-tilrettelegging`) | forklaring | Merknad til § 9-34 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Utsatt, ny og særskilt eksamen (`ek-utsatt-ny-sarskilt`) | forklaring | Merknad til § 9-36, Merknad til § 9-37, Merknad til § 9-38 | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Privatister søker om tilrettelegging til høsteksamen (`fe-tilrettelegging-privatister-host`) | frist | Merknad til § 9-34, tredje ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Privatister søker om tilrettelegging til våreksamen (`fe-tilrettelegging-privatister-var`) | frist | Merknad til § 9-34, tredje ledd | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Oppmelding og når prøven holdes (`pr-oppmelding`) | forklaring | Merknad til § 9-55 | `content/eksamen/proevene.yaml` | ikke kontrollert |
 | Grunnlag for vurdering (`grunnlag-for-vurdering`) | veiviser | Merknad til § 9-1 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Hvem skal vurderes (`vu-start`) | steg | Merknad til § 9-13 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Læreplanen eleven følger (`vu-laereplan`) | steg | Merknad til § 9-1 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
@@ -1154,7 +1315,6 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Karakter settes (`vu-karakter`) | steg | Merknad til § 9-16 | `content/vurdering/grunnlag-for-vurdering.yaml` | ikke kontrollert |
 | Grunnlaget er skolereglene (`oo-grunnlag`) | forklaring | Merknad til § 9-2 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
 | Varsel om Ng eller Lg (`oo-varsel`) | forklaring | Merknad til § 9-7 | `content/vurdering/orden-og-oppforsel.yaml` | ikke kontrollert |
-| Oppmelding og når prøven holdes (`pr-oppmelding`) | forklaring | Merknad til § 9-55 | `content/vurdering/proevene.yaml` | ikke kontrollert |
 | Skoleåret i et fag (`us-skolearet`) | forklaring | Merknad til § 9-16 | `content/vurdering/underveis-og-slutt.yaml` | ikke kontrollert |
 | Vitnemålet (`us-rad-vitnemal`) | forklaring | Merknad til § 9-52 | `content/vurdering/underveis-og-slutt.yaml` | ikke kontrollert |
 | Grunnlaget er kompetansemålene (`us-prinsipp-kompetansemal`) | forklaring | Merknad til § 9-1 | `content/vurdering/underveis-og-slutt.yaml` | ikke kontrollert |
@@ -1214,18 +1374,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Klagefrist på fag- og svenneprøven (`fe-klage-prove`) | frist | Merknad til § 10-2, andre avsnitt | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Klage på karakter (`klage-pa-karakter`) | veiviser | Merknad til § 10-1 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Hva klagen gjelder (`kl-start`) | steg | Merknad til § 10-1 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Ingen klagerett (`kl-ingen-klagerett`) | steg | Merknad til § 10-1, første ledd | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Begrunnelse for karakteren (`kl-begrunnelse`) | steg | Merknad til § 10-3 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Klagefristen (`kl-frist`) | steg | Merknad til § 10-2 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Skolen vurderer klagen (`kl-skolen`) | steg | Merknad til § 10-4 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Skriftlig eksamen (`kl-skriftlig`) | steg | Merknad til § 10-7 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Klagenemnda avgjør (`kl-klagenemnd`) | steg | Merknad til § 10-7 | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Muntlig og praktisk eksamen (`kl-muntlig`) | steg | Merknad til § 10-8, Merknad til § 10-2 (fristen gjelder også formelle feil) | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | Merknad til § 10-9, Merknad til § 10-2, andre avsnitt | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Resultatet og klage (`pr-klage`) | forklaring | Merknad til § 10-2, andre avsnitt | `content/vurdering/proevene.yaml` | ikke kontrollert |
+| Klagefrist på fag- og svenneprøven (`fe-klage-prove`) | frist | Merknad til § 10-2, andre avsnitt | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Klage på karakter (`klage-pa-karakter`) | veiviser | Merknad til § 10-1 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Hva klagen gjelder (`kl-start`) | steg | Merknad til § 10-1 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Ingen klagerett (`kl-ingen-klagerett`) | steg | Merknad til § 10-1, første ledd | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Begrunnelse for karakteren (`kl-begrunnelse`) | steg | Merknad til § 10-3 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Klagefristen (`kl-frist`) | steg | Merknad til § 10-2 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Skolen vurderer klagen (`kl-skolen`) | steg | Merknad til § 10-4 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Skriftlig eksamen (`kl-skriftlig`) | steg | Merknad til § 10-7 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Klagenemnda avgjør (`kl-klagenemnd`) | steg | Merknad til § 10-7 | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Muntlig og praktisk eksamen (`kl-muntlig`) | steg | Merknad til § 10-8, Merknad til § 10-2 (fristen gjelder også formelle feil) | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Fag- og svenneprøven og de andre prøvene (`kl-prove`) | steg | Merknad til § 10-9, Merknad til § 10-2, andre avsnitt | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Resultatet og klage (`pr-klage`) | forklaring | Merknad til § 10-2, andre avsnitt | `content/eksamen/proevene.yaml` | ikke kontrollert |
 
 ### Behandling av klager på standpunktkarakterer i fag
 
@@ -1236,14 +1396,14 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Hurtigklage (`hurtigklage`) | begrep | 4. Hvordan skal eleven eller foreldrene klage | `content/begreper/eksamen.yaml` | ikke kontrollert |
-| Standpunktkarakterene blir kjent (`fe-standpunkt-kjent`) | frist | 4. Hvordan skal eleven eller foreldrene klage | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Hurtigklage på standpunkt for avgangselever (`fe-hurtigklage-standpunkt`) | frist | 4. Hvordan skal eleven eller foreldrene klage | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Ingen klagerett (`kl-ingen-klagerett`) | steg | 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV) | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Begrunnelse for karakteren (`kl-begrunnelse`) | steg | 2. Hvem kan klage | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Klagefristen (`kl-frist`) | steg | 4. Hvordan skal eleven eller foreldrene klage | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Skolen vurderer klagen (`kl-skolen`) | steg | 5. Hvordan skal skolen behandle klagen | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Ny karakter fra skolen (`kl-ny-karakter`) | steg | 5. Hvordan skal skolen behandle klagen | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
-| Statsforvalteren avgjør (`kl-statsforvalteren`) | steg | Resultatet, 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV) | `content/vurdering/klage-pa-karakter.yaml` | ikke kontrollert |
+| Standpunktkarakterene blir kjent (`fe-standpunkt-kjent`) | frist | 4. Hvordan skal eleven eller foreldrene klage | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Hurtigklage på standpunkt for avgangselever (`fe-hurtigklage-standpunkt`) | frist | 4. Hvordan skal eleven eller foreldrene klage | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Ingen klagerett (`kl-ingen-klagerett`) | steg | 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV) | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Begrunnelse for karakteren (`kl-begrunnelse`) | steg | 2. Hvem kan klage | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Klagefristen (`kl-frist`) | steg | 4. Hvordan skal eleven eller foreldrene klage | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Skolen vurderer klagen (`kl-skolen`) | steg | 5. Hvordan skal skolen behandle klagen | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Ny karakter fra skolen (`kl-ny-karakter`) | steg | 5. Hvordan skal skolen behandle klagen | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
+| Statsforvalteren avgjør (`kl-statsforvalteren`) | steg | Resultatet, 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV) | `content/eksamen/klage-pa-karakter.yaml` | ikke kontrollert |
 
 ### Generelt om særskilt tilrettelegging av eksamen
 
@@ -1254,7 +1414,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Særskilt tilrettelegging av eksamen (`sarskilt-tilrettelegging-av-eksamen`) | begrep | Generelt om særskilt tilrettelegging av eksamen | `content/begreper/eksamen.yaml` | ikke kontrollert |
-| Særskilt tilrettelegging av eksamen (`ek-tilrettelegging`) | forklaring | Generelt om særskilt tilrettelegging av eksamen | `content/vurdering/eksamen.yaml` | ikke kontrollert |
+| Særskilt tilrettelegging av eksamen (`ek-tilrettelegging`) | forklaring | Generelt om særskilt tilrettelegging av eksamen | `content/eksamen/eksamen.yaml` | ikke kontrollert |
 
 ### Administrere eksamen
 
@@ -1266,16 +1426,16 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Oppmelding (`oppmelding`) | begrep | Påmelding av eksamenskandidater | `content/begreper/eksamen.yaml` | ikke kontrollert |
 | Hurtigklage (`hurtigklage`) | begrep | Hurtigklage | `content/begreper/eksamen.yaml` | ikke kontrollert |
-| Oppmelding (`ek-oppmelding`) | forklaring | Påmelding av eksamenskandidater | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Trekket blir kjent (`ek-trekket`) | forklaring | Trekk på videregående | `content/vurdering/eksamen.yaml` | ikke kontrollert |
-| Skolene melder opp til høsteksamen (`fe-skoler-oppmelding-host`) | frist | Påmelding av eksamenskandidater | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Privatister melder seg opp til høsteksamen (`fe-privatister-oppmelding-host`) | frist | Påmelding av eksamenskandidater | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Trekket til høsteksamen blir kjent (`fe-trekk-host`) | frist | Trekk på videregående | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Skolene melder opp til våreksamen (`fe-skoler-oppmelding-var`) | frist | Påmeldinger etter fristen | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Privatister melder seg opp til våreksamen (`fe-privatister-oppmelding-var`) | frist | Påmelding av eksamenskandidater | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Ekstra trekkdato (`fe-ekstra-trekk-var`) | frist | Trekk på videregående | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Trekket til våreksamen blir kjent (`fe-trekk-var`) | frist | Trekk på videregående | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
-| Hurtigklage på våreksamen (`fe-hurtigklage-var`) | frist | Hurtigklage | `content/vurdering/frister-eksamen.yaml` | ikke kontrollert |
+| Oppmelding (`ek-oppmelding`) | forklaring | Påmelding av eksamenskandidater | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Trekket blir kjent (`ek-trekket`) | forklaring | Trekk på videregående | `content/eksamen/eksamen.yaml` | ikke kontrollert |
+| Skolene melder opp til høsteksamen (`fe-skoler-oppmelding-host`) | frist | Påmelding av eksamenskandidater | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Privatister melder seg opp til høsteksamen (`fe-privatister-oppmelding-host`) | frist | Påmelding av eksamenskandidater | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Trekket til høsteksamen blir kjent (`fe-trekk-host`) | frist | Trekk på videregående | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Skolene melder opp til våreksamen (`fe-skoler-oppmelding-var`) | frist | Påmeldinger etter fristen | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Privatister melder seg opp til våreksamen (`fe-privatister-oppmelding-var`) | frist | Påmelding av eksamenskandidater | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Ekstra trekkdato (`fe-ekstra-trekk-var`) | frist | Trekk på videregående | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Trekket til våreksamen blir kjent (`fe-trekk-var`) | frist | Trekk på videregående | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
+| Hurtigklage på våreksamen (`fe-hurtigklage-var`) | frist | Hurtigklage | `content/eksamen/frister-eksamen.yaml` | ikke kontrollert |
 
 ### Lærekandidat – din vei til yrkeslivet
 
@@ -2093,6 +2253,12 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø
 
+**Skoleregler** (`skoleregler`, begrep, ikke kontrollert)
+
+- Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
+
 **Bortvisning** (`bortvising`, begrep, ikke kontrollert)
 
 - Loven sier at en elev ikke kan vises bort dersom mindre inngripende tiltak er tilstrekkelige. Er «må være prøvd eller ikke være nok» en riktig gjengivelse, eller strengere enn loven?
@@ -2100,11 +2266,59 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-1): § 13-1 Bortvising
 
-**Skoleregler** (`skoleregler`, begrep, ikke kontrollert)
+**Trygt og godt skolemiljø** (`trygt-og-godt-skolemiljo`, begrep, ikke kontrollert)
 
-- Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?
+- Er det riktig å skrive at elevens egen opplevelse avgjør om eleven har et trygt og godt skolemiljø?
 
-Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-2): § 12-2 Retten til eit trygt og godt skolemiljø; [Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/): punkt 3. Retten til et trygt og godt skolemiljø
+
+**Krenkende oppførsel** (`krenkende-oppforsel`, begrep, ikke kontrollert)
+
+- Skal begrepet hete «Krenkende oppførsel» (lovens ord) eller «Krenkelse», og er eksemplene riktige?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-3): § 12-3 Nulltoleranse og førebyggjande arbeid; [Rundskriv om skolemiljø, kapittel 4 Nulltoleranse](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/): punkt 4. Nulltoleranse
+
+**Skjerpet aktivitetsplikt** (`skjerpet-aktivitetsplikt`, begrep, ikke kontrollert)
+
+- Loven kaller det «skjerpa plikt til å melde frå». Er «skjerpet aktivitetsplikt» et godt navn på begrepet, siden det er vanlig i praksis?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-5): § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev
+
+**Tiltaksplan** (`tiltaksplan`, begrep, ikke kontrollert)
+
+- Er det greit å skrive «ofte kalt aktivitetsplan», slik eier godkjente for veiviseren?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 tredje ledd; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4.3-skriftlig-tiltaksplan-nar-skolen-setter-inn-tiltak): punkt 6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak
+
+**Håndhevingsordningen** (`handhevingsordningen`, begrep, ikke kontrollert)
+
+- Er sammendraget av håndhevingsordningen riktig og dekkende for et begrep?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 Statsforvaltaren si handheving; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/): punkt 7. Å melde saken til statsforvalteren
+
+**Tvangsmulkt** (`tvangsmulkt`, begrep, ikke kontrollert)
+
+- Er det riktig at tvangsmulkten løper fra fristen i vedtaket er ute og til vedtaket er oppfylt?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-8): § 12-8 Tvangsmulkt
+
+**Fysisk skolemiljø** (`fysisk-skolemiljo`, begrep, ikke kontrollert)
+
+- Er «bygningene, utearealene og arbeidsplassen» en god forklaring på det fysiske skolemiljøet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-7): § 12-7 Det fysiske miljøet; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§11-3): § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet
+
+**Fysiske inngrep** (`fysiske-inngrep`, begrep, ikke kontrollert)
+
+- Er sammendraget av §§ 13-4 og 13-5 riktig for et begrep?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-4): § 13-4 Fysiske inngrep for å avverje skade m.m.; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-5): § 13-5 Meldeplikt og dokumentasjon
+
+**Pålagt skolebytte** (`palagt-skolebytte`, begrep, ikke kontrollert)
+
+- Bør begrepet også nevne at eleven ikke skal flyttes hvis det fører til at eleven må flytte hjemmefra eller den daglige skyssen blir uforsvarlig?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-2): § 13-2 Pålagt skolebyte
 
 **Særskilt språkopplæring** (`sarskilt-sprakopplaering`, begrep, ikke kontrollert)
 
@@ -2199,6 +2413,29 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Er det greit å samle elevens beste og medvirkning i ett begrep, eller bør de være to?
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-1): § 10-1 Det beste for eleven; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-2): § 10-2 Elevane sin rett til medverknad; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#elevens-beste-retten-bli-hort): punkt 1.4 Elevens beste og retten til å bli hørt
+
+**Hva klagen gjelder** (`kl-start`, steg, ikke kontrollert)
+
+- Er svarene i spørsmålet en dekkende liste over hva en elev, lærling eller privatist kan ville klage på?
+- Er det riktig å si at eleven klager selv fra fylte 15 år, også på karakterer (merknaden til § 10-1)?
+- Privatskoler (psf. kap. 7): Kan merknaden si at reglene er de samme som i opplæringsforskrifta, eller er det forskjeller i klagebehandlingen (f.eks. hvem som forbereder klagen) som bør stå?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-1): § 10-1; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/): Merknad til § 10-1; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§24-5): § 24-5 Sjølvråderett for dei som har fylt 15 år
+
+**Fag- og svenneprøven og de andre prøvene** (`kl-prove`, steg, ikke kontrollert)
+
+- Er det riktig at klage på praksisbrevprøven og kompetanseprøven, både karakter og formelle feil, avgjøres av fylkestinget (§ 10-10 første ledd)?
+- Bør steget si at klagenemnda kan oppheve prøven og vise til ny prøve (§ 10-9 fjerde ledd)?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-9): § 10-9 og § 10-10; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-9-klage-pa-fag--og-sveineprove/): Merknad til § 10-9; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2, andre avsnitt; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§8-3): § 8-3 Klagenemnd for fag- og sveineprøver; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 første ledd
+
+**Andre vedtak om vurdering og eksamen** (`kl-andre`, steg, ikke kontrollert)
+
+- Forslaget nevnte at Udir er klageinstans for fritak i fremmedspråk. Skal det stå i steget, eller holder det å vise til oversikten over klageinstanser?
+- Er statsforvalteren klageinstans for alle disse vedtakene i videregående (Udirs oversikt)?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§28): § 28, § 29 og § 33; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§29-1): § 29-1 Klage på enkeltvedtak; [Hvem er klageinstanser etter enkeltvedtak?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/): Opplæringsforskrifta kapittel 9
 
 **Søknadsfrist** (`fr-soknad-mars`, frist, ikke kontrollert)
 
@@ -2406,6 +2643,182 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-3): § 7-3; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-4): § 7-4 fjerde ledd
 
+**Aktivitetsplikten** (`aktivitetsplikten`, veiviser, ikke kontrollert)
+
+- Er de tre veiene (den som arbeider på skolen, rektor og ledelsen, eleven og foreldrene) og de fire fasene en dekkende og ikke misvisende inndeling av aktivitetsplikten?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/kap12): Kapittel 12 Skolemiljø; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/): punkt 6. Skolen har en aktivitetsplikt
+
+**Hvem er du i saken?** (`am-start`, steg, ikke kontrollert)
+
+- Er det riktig å dele veiviseren i tre veier etter hvem brukeren er (den som arbeider på skolen, rektor og ledelsen, eleven og foreldrene)?
+- Er oppramsingen av hvem som regnes som «alle som arbeider på skolen» riktig sammenfattet fra rundskrivet 6.2.1?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.2.1-hvem-er-alle-som-arbeider-pa-skolen): punkt 6.2.1 Hvem er «alle som arbeider på skolen»?; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-2): § 12-2 Retten til eit trygt og godt skolemiljø
+
+**Følge med** (`am-folge-med`, steg, ikke kontrollert)
+
+- Er inspeksjonslogger og rutiner gode eksempler på dokumentasjon av plikten til å følge med?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.1-plikt-til-a-folge-med): punkt 6.3.1 Plikt til å følge med; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 første ledd
+
+**Gripe inn** (`am-gripe-inn`, steg, ikke kontrollert)
+
+- Er setningen om fysisk inngripen riktig og ikke for kort, sett opp mot rundskrivet 6.3.2 slik det ble endret 16.04.2026?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.2-plikt-til-a-gripe-inn): punkt 6.3.2 Plikt til å gripe inn; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 første ledd; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-4): § 13-4 Fysiske inngrep for å avverje skade m.m.
+
+**Melde fra til rektor** (`am-melde`, steg, ikke kontrollert)
+
+- Rundskrivet sier at det avhenger av alvoret hvor raskt det må meldes fra (straks, ved slutten av dagen eller ukentlig). Er «etter hvor alvorlig saken er» en god nok kortform?
+- Er det riktig at foreldrene skal få informasjon i saken (§ 10-8), og bør steget si når?
+- Privatskoler (pl. § 2-4): Er det riktig lest at «skolens styre» erstatter fylkeskommunen i § 12-4 andre ledd, slik at daglig leder melder til styret?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.3-plikt-til-a-melde-fra): punkt 6.3.3 Plikt til å melde fra; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 andre ledd; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-8): § 10-8 Informasjon til elevane og foreldra
+
+**Når en som arbeider på skolen, krenker en elev** (`am-skjerpet`, steg, ikke kontrollert)
+
+- Er «senest i neste pause eller friminutt» riktig gjengitt fra rundskrivet 6.3.4?
+- Privatskoler (pl. § 2-4): Er det riktig at meldingen etter § 12-5 går til skolens styre, også når det gjelder noen i ledelsen?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.4-skjerpet-plikt-til-a-melde-fra-hvis-en-som-arbeider-pa-skolen-krenker-elever): punkt 6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-5): § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev
+
+**Undersøke saken** (`am-undersoke`, steg, ikke kontrollert)
+
+- Er «Rektor har ansvaret» riktig, eller bør ansvaret for undersøkelsen beskrives som skolens?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.5-plikt-til-a-undersoke): punkt 6.3.5 Plikt til å undersøke; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.5-elevens-rett-til-a-bli-hort-og-plikten-til-a-ta-hensyn-til-elevens-beste): punkt 6.5 Elevens rett til å bli hørt og plikten til å ta hensyn til elevens beste; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 andre ledd
+
+**Tiltak og tiltaksplan** (`am-tiltak`, steg, ikke kontrollert)
+
+- Rundskrivet kaller planen «tiltaksplan». Er det riktig å nevne at den ofte kalles aktivitetsplan, og bør appen bruke ett av ordene?
+- Er eksemplet om å flytte en elev til en annen klasse uten enkeltvedtak riktig og ikke misvisende?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak): punkt 6.3.6 Plikt til å sette inn tiltak; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4.3-skriftlig-tiltaksplan-nar-skolen-setter-inn-tiltak): punkt 6.4.3 Skriftlig tiltaksplan når skolen setter inn tiltak; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 andre og tredje ledd
+
+**Dokumentere** (`am-dokumentere`, steg, ikke kontrollert)
+
+- Er eksemplene på dokumentasjon dekkende, og bør fylkets eget system (f.eks. et fagsystem) nevnes som fylkesinnhold?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4-dokumentasjonskravene): punkt 6.4 Dokumentasjonskravene; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 fjerde ledd
+
+**Følge opp og evaluere** (`am-evaluere`, steg, ikke kontrollert)
+
+- Er det riktig å skrive at plikten varer til eleven har det trygt og godt?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak): punkt 6.3.6 Plikt til å sette inn tiltak; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 tredje ledd bokstav e
+
+**Melde saken til statsforvalteren** (`am-statsforvalteren`, steg, ikke kontrollert)
+
+- Er «en uke, altså fem arbeidsdager» riktig gjengitt fra rundskrivet 7.2.2?
+- Bør steget si hvem som kan melde på vegne av eleven (foreldre med foreldreansvar, fullmektig, barnevernet)?
+- Privatskoler: Er det riktig lest av pl. § 2-4 at «skolen» erstatter fylkeskommunen i § 12-6 tredje og fjerde ledd, slik at pålegget går til skolen?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer): punkt 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/): punkt 7. Å melde saken til statsforvalteren; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/8.-klage-til-utdanningsdirektoratet/): punkt 8. Klage til Utdanningsdirektoratet; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 Statsforvaltaren si handheving
+
+**Når saken er meldt til statsforvalteren** (`am-sf-skolen`, steg, ikke kontrollert)
+
+- Er det riktig å skrive at skolen fortsetter å arbeide med saken mens den er hos statsforvalteren?
+- Er «uten hinder av taushetsplikten» en riktig gjengivelse av § 12-6 tredje ledd («utan hinder av lovfesta teieplikt»)?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/): punkt 7. Å melde saken til statsforvalteren; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/8.-klage-til-utdanningsdirektoratet/): punkt 8. Klage til Utdanningsdirektoratet; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 tredje og fjerde ledd
+
+**Ta saken opp med rektor først** (`am-ta-opp`, steg, ikke kontrollert)
+
+- Er eksemplene på særlige grunner (alvorlig vold, seksuelle krenkelser, rektor som krenker) riktig gjengitt fra rundskrivet 7.2.2?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer): punkt 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 andre ledd
+
+**Hvem og hvor reglene gjelder** (`k12-hvem`, forklaring, ikke kontrollert)
+
+- Rundskrivet sier at reglene ikke gjelder for lærlinger og lærekandidater, og heller ikke for voksne i organisert opplæring. Skal kortet også nevne voksne, og gjelder det voksne i videregående opplæring etter kapittel 18?
+- Er det riktig å skrive at skolen skal sette inn tiltak når noe som skjer på skoleveien eller i fritiden, gjør at eleven ikke har det trygt og godt på skolen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-1): § 12-1 Verkeområde for kapittelet; [Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/): punkt 2. For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
+
+**Retten til et trygt og godt skolemiljø** (`k12-retten`, forklaring, ikke kontrollert)
+
+- Er setningen «Skolen kan ikke bestemme at en elev har det bra når eleven selv sier noe annet» en riktig forenkling av at elevens subjektive opplevelse er avgjørende?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-2): § 12-2 Retten til eit trygt og godt skolemiljø; [Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/): punkt 3. Retten til et trygt og godt skolemiljø
+
+**Nulltoleranse mot krenkende oppførsel** (`k12-nulltoleranse`, forklaring, ikke kontrollert)
+
+- Er eksemplene på indirekte krenkelser (holde utenfor, isolere, baksnakke) og på hva som ikke er krenkelser (uenighet, irettesettelse) gjengitt riktig etter rundskrivet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-3): § 12-3 Nulltoleranse og førebyggjande arbeid, første ledd; [Rundskriv om skolemiljø, kapittel 4 Nulltoleranse](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/): punkt 4. Nulltoleranse
+
+**Forebygging** (`k12-forebygging`, forklaring, ikke kontrollert)
+
+- Er det riktig å omtale ikke-anonyme skolemiljøundersøkelser (forskriften § 20-5) her, og er begrensningen «uten å navngi andre elever» gjengitt riktig for det forebyggende arbeidet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-3): § 12-3 Nulltoleranse og førebyggjande arbeid, andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§20-5): § 20-5 Ikkje-anonyme skolemiljøundersøkingar
+
+**Aktivitetsplikten** (`k12-aktivitetsplikt`, forklaring, ikke kontrollert)
+
+- Er inndelingen i fem delplikter (følge med, gripe inn, melde fra, undersøke, sette inn tiltak) og dokumentasjonsplikten den samme som i rundskrivet kapittel 6.3 og 6.4?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3-en-aktivitetsplikt-med-flere-delplikter): punkt 6.3 En aktivitetsplikt med flere delplikter; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4-dokumentasjonskravene): punkt 6.4 Dokumentasjonskravene
+
+**Når en som arbeider på skolen, krenker en elev** (`k12-skjerpet`, forklaring, ikke kontrollert)
+
+- Er sammendraget av den skjerpede plikten i § 12-5 riktig og dekkende?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-5): § 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.4-skjerpet-plikt-til-a-melde-fra-hvis-en-som-arbeider-pa-skolen-krenker-elever): punkt 6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever
+
+**Eleven kan melde saken til statsforvalteren** (`k12-statsforvalteren`, forklaring, ikke kontrollert)
+
+- Er vilkårene for at statsforvalteren behandler saken (tatt opp med rektor, minst en uke, eleven går fortsatt på skolen) og hva statsforvalteren kan vedta, gjengitt riktig?
+- Bør kortet si at fylkeskommunen ikke kan klage på statsforvalterens vedtak, slik veiviseren gjør?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-6): § 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2-nar-kan-statsforvalteren-behandle-saken): punkt 7.2 Når kan statsforvalteren behandle saken?; [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/8.-klage-til-utdanningsdirektoratet/): punkt 8. Klage til Utdanningsdirektoratet
+
+**Det fysiske skolemiljøet** (`k12-fysisk`, forklaring, ikke kontrollert)
+
+- Er det riktig å nevne inneklima, lys, lyd og renhold som eksempler på det fysiske skolemiljøet, eller bør kortet holde seg til ordlyden i § 12-7?
+- Er gangen i saker om det fysiske skolemiljøet (skolen, så kommunen som tilsynsmyndighet, så klage til statsforvalteren) riktig for en fylkeskommunal skole?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-7): § 12-7 Det fysiske miljøet; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§11-3): § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet; [Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger](https://lovdata.no/forskrift/2023-03-28-449/§20): § 20 Kommunens oppfølging av henvendelser og § 21 Klage
+
+**Tvangsmulkt, straff og erstatning** (`k12-ansvar`, forklaring, ikke kontrollert)
+
+- Er oppsummeringen av hvilke plikter som er straffbare etter § 12-9 riktig, og er «plikten til å undersøke og sette inn tiltak» riktig for § 12-4 andre ledd tredje punktum?
+- Er «omvendt bevisbyrde» et dekkende navn på regelen i § 12-10?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-8): § 12-8 Tvangsmulkt; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-9): § 12-9 Straffansvar for brot på reglane om skolemiljø; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-10): § 12-10 Bevisbyrde i erstatningssaker om psykososialt skolemiljø
+
+**Informasjon til elevene og foreldrene** (`k12-informasjon`, forklaring, ikke kontrollert)
+
+- Er det riktig etter rundskrivet kapittel 5 at elevene og foreldrene skal få informasjon om aktivitetsplikten og håndhevingsordningen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-8): § 10-8 Informasjon til elevane og foreldra; [Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/): punkt 5. Skolene skal informere elever og foreldre
+
+**Fysiske inngrep** (`k12-fysiske-inngrep`, forklaring, ikke kontrollert)
+
+- Er sammendraget av §§ 13-3 til 13-5 riktig, og hører kortet hjemme på siden om skolemiljøet?
+- Privatskoler: Er det riktig at privatskolelova §§ 3-10 a til 3-10 c har de samme reglene om forebygging, fysiske inngrep og melding?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-3): § 13-3 Førebygging; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-4): § 13-4 Fysiske inngrep for å avverje skade m.m.; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-5): § 13-5 Meldeplikt og dokumentasjon
+
+**Skolereglene er en forskrift** (`sr-loven-skoleregler`, forklaring, ikke kontrollert)
+
+- Er sammendraget av §§ 10-6, 10-7 og 10-8 riktig og dekkende?
+- Privatskoler: Er det riktig å skrive at fylkets skoleregler ikke gjelder for privatskoler, siden privatskolelova § 5A-7 gir skolens styre den myndigheten?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-6): § 10-6 Elevane si plikt til å delta; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-8): § 10-8 Informasjon til elevane og foreldra
+
+**Bortvisning** (`sr-loven-bortvisning`, forklaring, ikke kontrollert)
+
+- Er sammendraget av § 13-1 riktig, og bør kortet si at bortvisning er et enkeltvedtak med klagerett etter forvaltningsloven?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-1): § 13-1 Bortvising
+
+**Pålagt skolebytte** (`sr-loven-skolebytte`, forklaring, ikke kontrollert)
+
+- Er sammendraget av § 13-2 riktig og dekkende?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-2): § 13-2 Pålagt skolebyte
+
 **Særskilt språkopplæring og kort botid** (`sprak-og-kort-botid`, veiviser, ikke kontrollert)
 
 - Er de fire fasene (vurdering, vedtak, opplæring, oppfølging) en dekkende inndeling av særskilt språkopplæring i videregående?
@@ -2423,29 +2836,6 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Er de fire fasene (tilpasset opplæring, utredning, vedtak, oppfølging) en dekkende og ikke misvisende inndeling av prosessen?
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/kap11): Kapittel 11 Tilpassa opplæring og individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging
-
-**Hva klagen gjelder** (`kl-start`, steg, ikke kontrollert)
-
-- Er svarene i spørsmålet en dekkende liste over hva en elev, lærling eller privatist kan ville klage på?
-- Er det riktig å si at eleven klager selv fra fylte 15 år, også på karakterer (merknaden til § 10-1)?
-- Privatskoler (psf. kap. 7): Kan merknaden si at reglene er de samme som i opplæringsforskrifta, eller er det forskjeller i klagebehandlingen (f.eks. hvem som forbereder klagen) som bør stå?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-1): § 10-1; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/): Merknad til § 10-1; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§24-5): § 24-5 Sjølvråderett for dei som har fylt 15 år
-
-**Fag- og svenneprøven og de andre prøvene** (`kl-prove`, steg, ikke kontrollert)
-
-- Er det riktig at klage på praksisbrevprøven og kompetanseprøven, både karakter og formelle feil, avgjøres av fylkestinget (§ 10-10 første ledd)?
-- Bør steget si at klagenemnda kan oppheve prøven og vise til ny prøve (§ 10-9 fjerde ledd)?
-- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-9): § 10-9 og § 10-10; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-9-klage-pa-fag--og-sveineprove/): Merknad til § 10-9; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2, andre avsnitt; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§8-3): § 8-3 Klagenemnd for fag- og sveineprøver; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 første ledd
-
-**Andre vedtak om vurdering og eksamen** (`kl-andre`, steg, ikke kontrollert)
-
-- Forslaget nevnte at Udir er klageinstans for fritak i fremmedspråk. Skal det stå i steget, eller holder det å vise til oversikten over klageinstanser?
-- Er statsforvalteren klageinstans for alle disse vedtakene i videregående (Udirs oversikt)?
-
-Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§28): § 28, § 29 og § 33; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§29-1): § 29-1 Klage på enkeltvedtak; [Hvem er klageinstanser etter enkeltvedtak?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/): Opplæringsforskrifta kapittel 9
 
 **Trekkfag** (`trekkfag`, begrep, ikke kontrollert)
 
@@ -2544,6 +2934,18 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 - Kildene appen har, sier ikke hvem som behandler hurtigklagen på standpunkt. Er det skolen og statsforvalteren som ved vanlig klage, bare raskere, og bør det stå?
 
 Kilder å sjekke mot: [Eksamensdatoer fra udir.no og fylkeskommunene](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Hurtigklage og hurtigklage på standpunkt (fylkenes sider); [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Hurtigklage; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/): punkt 4. Hvordan skal eleven eller foreldrene klage; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2 (den vanlige klagefristen)
+
+**Kompetanseprøve** (`kompetanseprove`, begrep, ikke kontrollert)
+
+- Er det riktig at kompetanseprøven gir kompetansebevis, og at klage på «ikke bestått» går til fylkestinget eller den fylkestinget gir fullmakt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-64): § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-10): § 10-10 Klage på praksisbrevprøve og kompetanseprøve
+
+**Praksisbrevprøve** (`praksisbrevprove`, begrep, ikke kontrollert)
+
+- Er det riktig at praksisbrevkandidaten prøves i kompetansemålene i den lokale læreplanen, og at klage på «ikke bestått» går til fylkestinget eller den fylkestinget gir fullmakt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-64): § 9-64 Utarbeiding av praksisbrevprøva og kompetanseprøva; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-48): § 9-48 Fag- og sveinebrev og praksisbrev i vidaregåande opplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-10): § 10-10 Klage på praksisbrevprøve og kompetanseprøve
 
 **Begrunnelse** (`begrunnelse`, begrep, ikke kontrollert)
 
@@ -2669,6 +3071,338 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 - Er forklaringene til hver kode riktige og korte nok?
 
 Kilder å sjekke mot: [Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk](https://regbok.udir.no/felt/?Id=1021153): B26 Karakterer og andre vurderingsuttrykk; [Registreringshåndboken, oversikt over alle feltene](https://regbok.udir.no/oversikt): B23 Karakterstatus og B25 Orden og oppførsel; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-3): § 9-3; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-4): § 9-4
+
+**Trekk og antall eksamener** (`ek-trekk`, forklaring, ikke kontrollert)
+
+- Er det riktig at de om lag 20 prosent på Vg2 yrkesfag trekkes ut i tillegg til den tverrfaglige eksamenen (§ 9-31 første og andre ledd)?
+- Påbygging etter opplæringslova § 5-7 er skrevet som «for dem med fag- eller svennebrev eller yrkeskompetanse». Er det en god forenkling?
+- Er rutenettet (trinn mot studieforberedende og yrkesfag) en god måte å vise § 9-30 og § 9-31 på, eller mangler noe viktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 første til tredje ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-30): § 9-30 og § 9-31; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-31-talet-pa-eksamenar-pa-yrkesfaglege-utdanningsprogram/): Merknad til § 9-31
+
+**Sentralt og lokalt gitt eksamen** (`ek-sentralt-lokalt`, forklaring, ikke kontrollert)
+
+- Er det greit å skrive «fylkeskommunen» der forskriften sier «kommunen eller fylkeskommunen», siden appen gjelder videregående?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-26): § 9-25 andre ledd og § 9-26
+
+**Oppmelding** (`ek-oppmelding`, forklaring, ikke kontrollert)
+
+- Er det riktig å skrive at ny og utsatt eksamen er gratis for privatister (§ 9-27 sjette ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
+
+**Trekket blir kjent** (`ek-trekket`, forklaring, ikke kontrollert)
+
+- Gjelder Udirs trekkdato også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Trekk på videregående
+
+**Forberedelse** (`ek-forberedelse`, forklaring, ikke kontrollert)
+
+- Er det riktig at forberedelsesdelen før muntlig eksamen alltid er 24 timer (§ 9-32 andre ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-32): § 9-32 og § 9-28 andre ledd
+
+**Eksamensdagen** (`ek-gjennomforing`, forklaring, ikke kontrollert)
+
+- Er tidsrammene i § 9-28 fjerde ledd gjengitt riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 fjerde og femte ledd
+
+**Sensur** (`ek-sensur`, forklaring, ikke kontrollert)
+
+- «Oppmann» er ordet i forskriften («ein oppmann eller ei oppkvinne»). Er det greit å bruke bare det?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-33): § 9-33
+
+**Karakteren og klage** (`ek-klage`, forklaring, ikke kontrollert)
+
+- Er sammendraget av klagereglene for eksamen dekkende som et steg i stien?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2, § 10-7 og § 10-8
+
+**Bortvisning og annullering** (`ek-bortvisning`, forklaring, ikke kontrollert)
+
+- Tverrfaglig eksamen annulleres bare når eleven ikke får standpunktkarakter i noen av programfagene (§ 9-41). Bør det stå?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-39): § 9-39 til § 9-42
+
+**Særskilt tilrettelegging av eksamen** (`ek-tilrettelegging`, forklaring, ikke kontrollert)
+
+- Er det riktig å si at fylkeskommunen ikke kan avslå bare fordi søknaden kom etter den veiledende fristen (merknaden til § 9-34)?
+- Er rektor ofte delegert myndighet til å avgjøre søknadene? Bør det stå (forslaget nevnte «eller rektor ved delegering»)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-34): § 9-34; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/): Merknad til § 9-34; [Generelt om særskilt tilrettelegging av eksamen](https://www.udir.no/eksamen-og-prover/eksamen/sarskilt-tilrettelegging-av-eksamen/): Generelt om særskilt tilrettelegging av eksamen
+
+**Utsatt, ny og særskilt eksamen** (`ek-utsatt-ny-sarskilt`, forklaring, ikke kontrollert)
+
+- Ved ny eksamen faller bare standpunktkarakteren som svarer til eksamenen bort (merknaden til § 9-37, f.eks. bare skriftlig hovedmål). Bør tabellen si det?
+- Er det riktig at sommerskole er nevnt bare under ny eksamen, når merknaden til § 9-38 sier at det også gjelder særskilt eksamen?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-36): § 9-36 til § 9-38 og § 5-2 første ledd; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-36-utsett-eksamen-for-elevar-og-privatistar-i-den-vidaregaande-opplaringa/): Merknad til § 9-36; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-37-ny-eksamen-for-elevar-i-den-vidaregaande-opplaringa/): Merknad til § 9-37; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-38-sarskild-eksamen-for-elevar-i-den-vidaregaande-opplaringa/): Merknad til § 9-38
+
+**Samtale om utviklingen** (`fe-samtale`, frist, ikke kontrollert)
+
+- Står det i § 9-9 femte ledd at fraværet skal dokumenteres hvert halvår, eller er det en forenkling?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-6): § 9-6 første ledd og § 9-9 femte ledd
+
+**Varsel om at karakteren kan falle bort** (`fe-varsel`, frist, ikke kontrollert)
+
+- Er «straks det er fare» en god forenkling av når varselet skal gis etter § 9-7?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-7): § 9-7 første ledd
+
+**Klagefrist på standpunkt og eksamen** (`fe-klagefrist`, frist, ikke kontrollert)
+
+- Er det greit at klagefristen står under «Hele året», når den gjelder fra hver karakter blir kjent?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
+
+**Oppmelding til fag- eller svenneprøven** (`fe-oppmelding-prove`, frist, ikke kontrollert)
+
+- Er det riktig å slå sammen fristen for oppmelding (§ 9-56) og når prøven tidligst holdes (§ 9-55) i én frist?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-56): § 9-55 andre ledd og § 9-56 andre ledd
+
+**Halvårsvurdering** (`fe-halvar-midt`, frist, ikke kontrollert)
+
+- Halvårsvurderingen midt i opplæringsperioden står i januar. Er det en god plassering for fag som går over hele skoleåret?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 tredje og fjerde ledd
+
+**Opplæringen regnes som gjennomført** (`fe-mer-opplaering-mars`, frist, ikke kontrollert)
+
+- Er «stryker eleven i faget» en god forenkling av «ikkje har bestått standpunktkarakter eller eksamen»?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-2): § 5-2 første og andre ledd
+
+**Standpunktkarakteren settes** (`fe-standpunkt-senest`, frist, ikke kontrollert)
+
+- Er «senest dagen før sensur» riktig gjengitt fra § 9-16?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-16): § 9-16 fjerde ledd
+
+**Halvårsvurdering i fag som fortsetter** (`fe-halvar-slutt`, frist, ikke kontrollert)
+
+- Er teksten riktig for halvårsvurderingen ved slutten av skoleåret (§ 9-13 tredje ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 tredje ledd
+
+**Melde seg til mer opplæring** (`fe-mer-opplaering-melding`, frist, ikke kontrollert)
+
+- Står denne fristen også i tidslinjen i Inntak? Skal den da bare lenke dit?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-3): § 4-3
+
+**Skolene melder opp til høsteksamen** (`fe-skoler-oppmelding-host`, frist, ikke kontrollert)
+
+- Holdes ny, utsatt og særskilt eksamen alltid i høstperioden, eller kan fylket legge dem andre steder (f.eks. sommerskole)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 første til tredje ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
+
+**Privatister melder seg opp til høsteksamen** (`fe-privatister-oppmelding-host`, frist, ikke kontrollert)
+
+- Er teksten dekkende for privatister?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 femte og sjette ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
+
+**Trekket til høsteksamen blir kjent** (`fe-trekk-host`, frist, ikke kontrollert)
+
+- Gjelder trekkdatoen fra Udir også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Trekk på videregående
+
+**Skriftlig høsteksamen** (`fe-eksamen-host`, frist, ikke kontrollert)
+
+- Er det riktig at datoene for muntlig og praktisk eksamen settes av fylkeskommunen (§ 9-26 andre ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-26 og § 9-28 femte ledd
+
+**Sensur for høsteksamen** (`fe-sensur-host`, frist, ikke kontrollert)
+
+- Er sensurfristen den dagen karakterene blir kjent for kandidatene, eller kan de komme tidligere?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
+
+**Skolene registrerer klager på høsteksamen** (`fe-klage-registrering-host`, frist, ikke kontrollert)
+
+- Er det riktig at denne fristen også gjelder fylkeskommunene for privatister?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7 andre ledd
+
+**Klagene på høsteksamen er behandlet** (`fe-klage-behandlet-host`, frist, ikke kontrollert)
+
+- Er teksten riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7
+
+**Skolene melder opp til våreksamen** (`fe-skoler-oppmelding-var`, frist, ikke kontrollert)
+
+- Er det riktig at oppmelding etter fristen går tjenestevei til skoleeier (Udir, «Påmeldinger etter fristen»)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmeldinger etter fristen
+
+**Privatister melder seg opp til våreksamen** (`fe-privatister-oppmelding-var`, frist, ikke kontrollert)
+
+- Er teksten dekkende for privatister?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 femte og sjette ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
+
+**Trekket til våreksamen blir kjent** (`fe-trekk-var`, frist, ikke kontrollert)
+
+- Er teksten riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Trekk på videregående
+
+**Skriftlig våreksamen** (`fe-eksamen-var`, frist, ikke kontrollert)
+
+- Er teksten riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-26 og § 9-28 femte ledd
+
+**Sensur for våreksamen** (`fe-sensur-var`, frist, ikke kontrollert)
+
+- Er teksten riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
+
+**Skolene registrerer klager på våreksamen** (`fe-klage-registrering-var`, frist, ikke kontrollert)
+
+- Er teksten riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7 andre ledd
+
+**Klagene på våreksamen er behandlet** (`fe-klage-behandlet-var`, frist, ikke kontrollert)
+
+- Klagene på våreksamen er behandlet i september, i neste skoleår. Er det greit at de står i september på tidslinjen?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7
+
+**Datoene for muntlig og praktisk høsteksamen for privatister** (`fe-privatister-datoer-host`, frist, ikke kontrollert)
+
+- Er det greit å nevne Privatistportalen ved navn?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-26): § 9-26 andre ledd
+
+**Datoene for muntlig og praktisk våreksamen for privatister** (`fe-privatister-datoer-var`, frist, ikke kontrollert)
+
+- Er teksten riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-26): § 9-26 andre ledd
+
+**Klage på karakter** (`klage-pa-karakter`, veiviser, ikke kontrollert)
+
+- Er de fire fasene (hva klagen gjelder, begrunnelse og frist, skolen, klageinstansen) en dekkende inndeling av klagegangen?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-1): Kapittel 10 Klage på sluttvurderingar; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/): Merknad til § 10-1
+
+**Ingen klagerett** (`kl-ingen-klagerett`, steg, ikke kontrollert)
+
+- Klageveiledningen punkt 7 sier at det ikke er klagerett på å ikke få halvårsvurdering med karakter. Er det greit å si det her for alle elever?
+
+Kilder å sjekke mot: [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/): Merknad til § 10-1, første ledd; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/7.--klage-pa-vedtak-om-a-ikke-fastsette-standpunktkarakter-i-fag-iv/): punkt 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV); [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-6): § 9-6 første ledd
+
+**Begrunnelse for karakteren** (`kl-begrunnelse`, steg, ikke kontrollert)
+
+- Er det riktig at faglæreren også begrunner vedtaket om IV (§ 10-5 andre ledd sier «i samråd med faglæraren»)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-3): § 10-3 første og tredje ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-3-rett-til-grunngiving-for-karakteren/): Merknad til § 10-3; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/2.-hvem-kan-klage/): punkt 2. Hvem kan klage
+
+**Klagefristen** (`kl-frist`, steg, ikke kontrollert)
+
+- Klageveiledningen punkt 4 sier at fristen regnes fra begrunnelsen når den ikke gis samme dag. Gjelder det også for IV og orden og oppførsel?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/): punkt 4. Hvordan skal eleven eller foreldrene klage
+
+**Skolen vurderer klagen** (`kl-skolen`, steg, ikke kontrollert)
+
+- Kan skolen også i orden og oppførsel bare endre karakteren til gunst for eleven (forvaltningsloven § 33), eller kan den sette den ned?
+- Bør steget nevne at skolen kan rette en ren feilføring uten å sende saken videre (klageveiledningen punkt 5)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-4): § 10-4 andre ledd, § 10-5 andre ledd og § 10-6 andre ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-4-klage-pa-fastsetjing-av-standpunktkarakter-i-fag/): Merknad til § 10-4; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/5.-hvordan-skal-skolen-behandle-klagen/): punkt 5. Hvordan skal skolen behandle klagen; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§33): § 33 andre ledd
+
+**Statsforvalteren avgjør** (`kl-statsforvalteren`, steg, ikke kontrollert)
+
+- Klageveiledningen («Resultatet») sier at skolen kan sette karakteren ned etter at statsforvalteren har opphevet den. Er det riktig å si det så tydelig til lærere og ledere?
+- Bør steget si hva skolen kan gjøre når statsforvalteren opphever et vedtak om IV (la IV stå, eller sette karakter)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-4): § 10-4 tredje og fjerde ledd, § 10-5 tredje og fjerde ledd og § 10-6 tredje ledd; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/resultatet/): Resultatet; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/7.--klage-pa-vedtak-om-a-ikke-fastsette-standpunktkarakter-i-fag-iv/): punkt 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV)
+
+**Skriftlig eksamen** (`kl-skriftlig`, steg, ikke kontrollert)
+
+- Er «sensorveiledningen» et godt nok ord for «retningslinjer som er utarbeidde for sensorane» i § 10-3 fjerde ledd?
+- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-3 fjerde ledd og § 10-7 andre ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/): Merknad til § 10-7
+
+**Klagenemnda avgjør** (`kl-klagenemnd`, steg, ikke kontrollert)
+
+- Er det riktig å si at karakteren kan settes ned etter klage på skriftlig eksamen (§ 10-7 fjerde ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7 første, tredje og fjerde ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/): Merknad til § 10-7
+
+**Muntlig og praktisk eksamen** (`kl-muntlig`, steg, ikke kontrollert)
+
+- Er eksemplene på formelle feil (feil oppgave, for kort tid, inhabil sensor) godt valgt fra merknaden til § 10-8?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-8): § 10-3 andre ledd og § 10-8; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-8-klage-pa-gjennomforinga-av-munnleg-eksamen-og-eksamen-som-ikkje-berre-er-skriftleg-eller-munnleg/): Merknad til § 10-8; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2 (fristen gjelder også formelle feil)
+
+**Prøvene som sluttvurdering** (`pr-hva`, forklaring, ikke kontrollert)
+
+- Er det riktig at lærekandidater får kompetansebevis etter kompetanseprøven (§ 9-51), og ikke et eget kompetansebrev (merknaden til § 9-55 nevner «kompetansebrev»)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-55): § 9-48, § 9-51 og § 9-55 første ledd
+
+**Krav før prøven** (`pr-krav`, forklaring, ikke kontrollert)
+
+- Er det greit å kalle vedtaket etter § 9-49 «unntak for store lærevansker»?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-57): § 9-57; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-48): § 9-48 tredje ledd og § 9-49
+
+**Oppmelding og når prøven holdes** (`pr-oppmelding`, forklaring, ikke kontrollert)
+
+- Gjelder fristen «to måneder før kontraktstiden er ute» også for lærekandidater og praksisbrevkandidater (§ 9-56 andre ledd sier «dei som har læretid i bedrift»)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-56): § 9-55 andre og tredje ledd og § 9-56; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/viii.-sarskilde-reglar-for-fag--og-sveineprova-praksisbrevprova-og-kompetanseprova-i-vidaregaande-opplaring/-9-55-organisering-av-fag--og-sveineprova-praksisbrevprova-og-kompetanseprova/): Merknad til § 9-55
+
+**Prøvenemnda og prøven** (`pr-provenemnda`, forklaring, ikke kontrollert)
+
+- Er sammendraget av § 9-59 til § 9-61 dekkende, eller mangler noe lærere og ledere trenger å vite?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-59): § 9-59 til § 9-61
+
+**Vurdering og karakterer** (`pr-vurdering`, forklaring, ikke kontrollert)
+
+- Er karakterene i § 9-5 gjengitt riktig på bokmål («bestått meget godt»)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-5): § 9-5; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-63): § 9-63 til § 9-65
+
+**Særskilt tilrettelegging av prøven** (`pr-tilrettelegging`, forklaring, ikke kontrollert)
+
+- Er sammendraget av § 9-62 riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-62): § 9-62
+
+**Resultatet og klage** (`pr-klage`, forklaring, ikke kontrollert)
+
+- Er det riktig at fylkeskommunen utsteder også kompetansebevis for lærekandidater (§ 9-51 tredje ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-9): § 9-54 fjerde ledd, § 10-9 og § 10-10; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2, andre avsnitt
+
+**Ny og utsatt prøve** (`pr-ny-utsatt`, forklaring, ikke kontrollert)
+
+- Er det riktig at grensen på én ny prøve ikke gjelder når kontrakten forlenges eller kandidaten får mer opplæring (§ 9-66 tredje ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-66): § 9-66 og § 9-67; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-68): § 9-68 fjerde ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-2): § 5-2 tredje ledd
+
+**Bortvisning og annullering** (`pr-bortvisning`, forklaring, ikke kontrollert)
+
+- Er sammendraget av § 9-68 og § 9-69 riktig?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-68): § 9-68 og § 9-69
 
 **Voksne søker når som helst** (`fr-voksne-lopende`, frist, ikke kontrollert)
 
@@ -2949,76 +3683,6 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor07-03/om-faget/vurdering): Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor09-05/om-faget/vurdering): Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor08-03/om-faget/vurdering): Morsmål for språklige minoriteter (NOR08-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/gns02-01/kompetansemaal-og-vurdering/kv852): Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Kompetansemål og vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/gns02-01/vurderingsordning): Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Vurderingsordning
 
-**Trekk og antall eksamener** (`ek-trekk`, forklaring, ikke kontrollert)
-
-- Er det riktig at de om lag 20 prosent på Vg2 yrkesfag trekkes ut i tillegg til den tverrfaglige eksamenen (§ 9-31 første og andre ledd)?
-- Påbygging etter opplæringslova § 5-7 er skrevet som «for dem med fag- eller svennebrev eller yrkeskompetanse». Er det en god forenkling?
-- Er rutenettet (trinn mot studieforberedende og yrkesfag) en god måte å vise § 9-30 og § 9-31 på, eller mangler noe viktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 første til tredje ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-30): § 9-30 og § 9-31; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-31-talet-pa-eksamenar-pa-yrkesfaglege-utdanningsprogram/): Merknad til § 9-31
-
-**Sentralt og lokalt gitt eksamen** (`ek-sentralt-lokalt`, forklaring, ikke kontrollert)
-
-- Er det greit å skrive «fylkeskommunen» der forskriften sier «kommunen eller fylkeskommunen», siden appen gjelder videregående?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-26): § 9-25 andre ledd og § 9-26
-
-**Oppmelding** (`ek-oppmelding`, forklaring, ikke kontrollert)
-
-- Er det riktig å skrive at ny og utsatt eksamen er gratis for privatister (§ 9-27 sjette ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
-
-**Trekket blir kjent** (`ek-trekket`, forklaring, ikke kontrollert)
-
-- Gjelder Udirs trekkdato også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Trekk på videregående
-
-**Forberedelse** (`ek-forberedelse`, forklaring, ikke kontrollert)
-
-- Er det riktig at forberedelsesdelen før muntlig eksamen alltid er 24 timer (§ 9-32 andre ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-32): § 9-32 og § 9-28 andre ledd
-
-**Eksamensdagen** (`ek-gjennomforing`, forklaring, ikke kontrollert)
-
-- Er tidsrammene i § 9-28 fjerde ledd gjengitt riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 fjerde og femte ledd
-
-**Sensur** (`ek-sensur`, forklaring, ikke kontrollert)
-
-- «Oppmann» er ordet i forskriften («ein oppmann eller ei oppkvinne»). Er det greit å bruke bare det?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-33): § 9-33
-
-**Karakteren og klage** (`ek-klage`, forklaring, ikke kontrollert)
-
-- Er sammendraget av klagereglene for eksamen dekkende som et steg i stien?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2, § 10-7 og § 10-8
-
-**Bortvisning og annullering** (`ek-bortvisning`, forklaring, ikke kontrollert)
-
-- Tverrfaglig eksamen annulleres bare når eleven ikke får standpunktkarakter i noen av programfagene (§ 9-41). Bør det stå?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-39): § 9-39 til § 9-42
-
-**Særskilt tilrettelegging av eksamen** (`ek-tilrettelegging`, forklaring, ikke kontrollert)
-
-- Er det riktig å si at fylkeskommunen ikke kan avslå bare fordi søknaden kom etter den veiledende fristen (merknaden til § 9-34)?
-- Er rektor ofte delegert myndighet til å avgjøre søknadene? Bør det stå (forslaget nevnte «eller rektor ved delegering»)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-34): § 9-34; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/): Merknad til § 9-34; [Generelt om særskilt tilrettelegging av eksamen](https://www.udir.no/eksamen-og-prover/eksamen/sarskilt-tilrettelegging-av-eksamen/): Generelt om særskilt tilrettelegging av eksamen
-
-**Utsatt, ny og særskilt eksamen** (`ek-utsatt-ny-sarskilt`, forklaring, ikke kontrollert)
-
-- Ved ny eksamen faller bare standpunktkarakteren som svarer til eksamenen bort (merknaden til § 9-37, f.eks. bare skriftlig hovedmål). Bør tabellen si det?
-- Er det riktig at sommerskole er nevnt bare under ny eksamen, når merknaden til § 9-38 sier at det også gjelder særskilt eksamen?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-36): § 9-36 til § 9-38 og § 5-2 første ledd; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-36-utsett-eksamen-for-elevar-og-privatistar-i-den-vidaregaande-opplaringa/): Merknad til § 9-36; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-37-ny-eksamen-for-elevar-i-den-vidaregaande-opplaringa/): Merknad til § 9-37; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-38-sarskild-eksamen-for-elevar-i-den-vidaregaande-opplaringa/): Merknad til § 9-38
-
 **Fravær som teller mot grensen** (`fr-teller`, regel, ikke kontrollert)
 
 - Er det riktig å si at dokumentasjon fra helsepersonell først får betydning for helsefravær etter at grensen er nådd (rundskrivet punkt 3.3.2)?
@@ -3050,156 +3714,6 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 - Er forskjellene mellom fraværsgrensen og fraværet på vitnemålet gjengitt riktig, særlig om helsefravær og egenmelding (rundskrivet punkt 5.1, § 9-53 femte ledd)?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-53): § 9-53 fjerde og femte ledd; [Rundskriv om fraværsgrensen](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/5.hva-er-skillet-mellom-fravarsgrensen-og-annet-regelverk/): punkt 5.1 Forskjellen på reglene om fraværsgrense og føring av fravær på vitnemålet
-
-**Samtale om utviklingen** (`fe-samtale`, frist, ikke kontrollert)
-
-- Står det i § 9-9 femte ledd at fraværet skal dokumenteres hvert halvår, eller er det en forenkling?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-6): § 9-6 første ledd og § 9-9 femte ledd
-
-**Varsel om at karakteren kan falle bort** (`fe-varsel`, frist, ikke kontrollert)
-
-- Er «straks det er fare» en god forenkling av når varselet skal gis etter § 9-7?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-7): § 9-7 første ledd
-
-**Klagefrist på standpunkt og eksamen** (`fe-klagefrist`, frist, ikke kontrollert)
-
-- Er det greit at klagefristen står under «Hele året», når den gjelder fra hver karakter blir kjent?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
-
-**Oppmelding til fag- eller svenneprøven** (`fe-oppmelding-prove`, frist, ikke kontrollert)
-
-- Er det riktig å slå sammen fristen for oppmelding (§ 9-56) og når prøven tidligst holdes (§ 9-55) i én frist?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-56): § 9-55 andre ledd og § 9-56 andre ledd
-
-**Halvårsvurdering** (`fe-halvar-midt`, frist, ikke kontrollert)
-
-- Halvårsvurderingen midt i opplæringsperioden står i januar. Er det en god plassering for fag som går over hele skoleåret?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 tredje og fjerde ledd
-
-**Opplæringen regnes som gjennomført** (`fe-mer-opplaering-mars`, frist, ikke kontrollert)
-
-- Er «stryker eleven i faget» en god forenkling av «ikkje har bestått standpunktkarakter eller eksamen»?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-2): § 5-2 første og andre ledd
-
-**Standpunktkarakteren settes** (`fe-standpunkt-senest`, frist, ikke kontrollert)
-
-- Er «senest dagen før sensur» riktig gjengitt fra § 9-16?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-16): § 9-16 fjerde ledd
-
-**Halvårsvurdering i fag som fortsetter** (`fe-halvar-slutt`, frist, ikke kontrollert)
-
-- Er teksten riktig for halvårsvurderingen ved slutten av skoleåret (§ 9-13 tredje ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 tredje ledd
-
-**Melde seg til mer opplæring** (`fe-mer-opplaering-melding`, frist, ikke kontrollert)
-
-- Står denne fristen også i tidslinjen i Inntak? Skal den da bare lenke dit?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-3): § 4-3
-
-**Skolene melder opp til høsteksamen** (`fe-skoler-oppmelding-host`, frist, ikke kontrollert)
-
-- Holdes ny, utsatt og særskilt eksamen alltid i høstperioden, eller kan fylket legge dem andre steder (f.eks. sommerskole)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 første til tredje ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
-
-**Privatister melder seg opp til høsteksamen** (`fe-privatister-oppmelding-host`, frist, ikke kontrollert)
-
-- Er teksten dekkende for privatister?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 femte og sjette ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
-
-**Trekket til høsteksamen blir kjent** (`fe-trekk-host`, frist, ikke kontrollert)
-
-- Gjelder trekkdatoen fra Udir også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Trekk på videregående
-
-**Skriftlig høsteksamen** (`fe-eksamen-host`, frist, ikke kontrollert)
-
-- Er det riktig at datoene for muntlig og praktisk eksamen settes av fylkeskommunen (§ 9-26 andre ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-26 og § 9-28 femte ledd
-
-**Sensur for høsteksamen** (`fe-sensur-host`, frist, ikke kontrollert)
-
-- Er sensurfristen den dagen karakterene blir kjent for kandidatene, eller kan de komme tidligere?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
-
-**Skolene registrerer klager på høsteksamen** (`fe-klage-registrering-host`, frist, ikke kontrollert)
-
-- Er det riktig at denne fristen også gjelder fylkeskommunene for privatister?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7 andre ledd
-
-**Klagene på høsteksamen er behandlet** (`fe-klage-behandlet-host`, frist, ikke kontrollert)
-
-- Er teksten riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7
-
-**Skolene melder opp til våreksamen** (`fe-skoler-oppmelding-var`, frist, ikke kontrollert)
-
-- Er det riktig at oppmelding etter fristen går tjenestevei til skoleeier (Udir, «Påmeldinger etter fristen»)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmeldinger etter fristen
-
-**Privatister melder seg opp til våreksamen** (`fe-privatister-oppmelding-var`, frist, ikke kontrollert)
-
-- Er teksten dekkende for privatister?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 femte og sjette ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Påmelding av eksamenskandidater
-
-**Trekket til våreksamen blir kjent** (`fe-trekk-var`, frist, ikke kontrollert)
-
-- Er teksten riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-28 andre ledd; [Administrere eksamen](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/): Trekk på videregående
-
-**Skriftlig våreksamen** (`fe-eksamen-var`, frist, ikke kontrollert)
-
-- Er teksten riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-28): § 9-26 og § 9-28 femte ledd
-
-**Sensur for våreksamen** (`fe-sensur-var`, frist, ikke kontrollert)
-
-- Er teksten riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
-
-**Skolene registrerer klager på våreksamen** (`fe-klage-registrering-var`, frist, ikke kontrollert)
-
-- Er teksten riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7 andre ledd
-
-**Klagene på våreksamen er behandlet** (`fe-klage-behandlet-var`, frist, ikke kontrollert)
-
-- Klagene på våreksamen er behandlet i september, i neste skoleår. Er det greit at de står i september på tidslinjen?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7
-
-**Datoene for muntlig og praktisk høsteksamen for privatister** (`fe-privatister-datoer-host`, frist, ikke kontrollert)
-
-- Er det greit å nevne Privatistportalen ved navn?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-26): § 9-26 andre ledd
-
-**Datoene for muntlig og praktisk våreksamen for privatister** (`fe-privatister-datoer-var`, frist, ikke kontrollert)
-
-- Er teksten riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-26): § 9-26 andre ledd
 
 **Grunnlag for vurdering** (`grunnlag-for-vurdering`, veiviser, ikke kontrollert)
 
@@ -3335,64 +3849,6 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-16): § 9-16 tredje–femte ledd; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iii.-sluttvurdering/-9-16-standpunktkarakterar-i-fag/): Merknad til § 9-16; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-3): § 9-3 tredje ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-9): § 9-9 andre ledd
 
-**Klage på karakter** (`klage-pa-karakter`, veiviser, ikke kontrollert)
-
-- Er de fire fasene (hva klagen gjelder, begrunnelse og frist, skolen, klageinstansen) en dekkende inndeling av klagegangen?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-1): Kapittel 10 Klage på sluttvurderingar; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/): Merknad til § 10-1
-
-**Ingen klagerett** (`kl-ingen-klagerett`, steg, ikke kontrollert)
-
-- Klageveiledningen punkt 7 sier at det ikke er klagerett på å ikke få halvårsvurdering med karakter. Er det greit å si det her for alle elever?
-
-Kilder å sjekke mot: [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/): Merknad til § 10-1, første ledd; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/7.--klage-pa-vedtak-om-a-ikke-fastsette-standpunktkarakter-i-fag-iv/): punkt 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV); [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-6): § 9-6 første ledd
-
-**Begrunnelse for karakteren** (`kl-begrunnelse`, steg, ikke kontrollert)
-
-- Er det riktig at faglæreren også begrunner vedtaket om IV (§ 10-5 andre ledd sier «i samråd med faglæraren»)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-3): § 10-3 første og tredje ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-3-rett-til-grunngiving-for-karakteren/): Merknad til § 10-3; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/2.-hvem-kan-klage/): punkt 2. Hvem kan klage
-
-**Klagefristen** (`kl-frist`, steg, ikke kontrollert)
-
-- Klageveiledningen punkt 4 sier at fristen regnes fra begrunnelsen når den ikke gis samme dag. Gjelder det også for IV og orden og oppførsel?
-- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/): punkt 4. Hvordan skal eleven eller foreldrene klage
-
-**Skolen vurderer klagen** (`kl-skolen`, steg, ikke kontrollert)
-
-- Kan skolen også i orden og oppførsel bare endre karakteren til gunst for eleven (forvaltningsloven § 33), eller kan den sette den ned?
-- Bør steget nevne at skolen kan rette en ren feilføring uten å sende saken videre (klageveiledningen punkt 5)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-4): § 10-4 andre ledd, § 10-5 andre ledd og § 10-6 andre ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-4-klage-pa-fastsetjing-av-standpunktkarakter-i-fag/): Merknad til § 10-4; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/5.-hvordan-skal-skolen-behandle-klagen/): punkt 5. Hvordan skal skolen behandle klagen; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§33): § 33 andre ledd
-
-**Statsforvalteren avgjør** (`kl-statsforvalteren`, steg, ikke kontrollert)
-
-- Klageveiledningen («Resultatet») sier at skolen kan sette karakteren ned etter at statsforvalteren har opphevet den. Er det riktig å si det så tydelig til lærere og ledere?
-- Bør steget si hva skolen kan gjøre når statsforvalteren opphever et vedtak om IV (la IV stå, eller sette karakter)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-4): § 10-4 tredje og fjerde ledd, § 10-5 tredje og fjerde ledd og § 10-6 tredje ledd; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/resultatet/): Resultatet; [Behandling av klager på standpunktkarakterer i fag](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/7.--klage-pa-vedtak-om-a-ikke-fastsette-standpunktkarakter-i-fag-iv/): punkt 7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV)
-
-**Skriftlig eksamen** (`kl-skriftlig`, steg, ikke kontrollert)
-
-- Er «sensorveiledningen» et godt nok ord for «retningslinjer som er utarbeidde for sensorane» i § 10-3 fjerde ledd?
-- Stemmer teksten i boksen «Hos fylkeskommunen» for alle fylker, og er det riktig tema hos fylket å lenke til?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-3 fjerde ledd og § 10-7 andre ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/): Merknad til § 10-7
-
-**Klagenemnda avgjør** (`kl-klagenemnd`, steg, ikke kontrollert)
-
-- Er det riktig å si at karakteren kan settes ned etter klage på skriftlig eksamen (§ 10-7 fjerde ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-7): § 10-7 første, tredje og fjerde ledd; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/): Merknad til § 10-7
-
-**Muntlig og praktisk eksamen** (`kl-muntlig`, steg, ikke kontrollert)
-
-- Er eksemplene på formelle feil (feil oppgave, for kort tid, inhabil sensor) godt valgt fra merknaden til § 10-8?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-8): § 10-3 andre ledd og § 10-8; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-8-klage-pa-gjennomforinga-av-munnleg-eksamen-og-eksamen-som-ikkje-berre-er-skriftleg-eller-munnleg/): Merknad til § 10-8; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2 (fristen gjelder også formelle feil)
-
 **Grunnlaget er skolereglene** (`oo-grunnlag`, forklaring, ikke kontrollert)
 
 - Er sammendraget av § 9-2 riktig og dekkende?
@@ -3429,60 +3885,6 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 - Er det riktig at statsforvalteren kan justere karakteren både opp og ned (§ 10-6 tredje ledd)?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-6): § 10-6; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-2): § 10-2
-
-**Prøvene som sluttvurdering** (`pr-hva`, forklaring, ikke kontrollert)
-
-- Er det riktig at lærekandidater får kompetansebevis etter kompetanseprøven (§ 9-51), og ikke et eget kompetansebrev (merknaden til § 9-55 nevner «kompetansebrev»)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-55): § 9-48, § 9-51 og § 9-55 første ledd
-
-**Krav før prøven** (`pr-krav`, forklaring, ikke kontrollert)
-
-- Er det greit å kalle vedtaket etter § 9-49 «unntak for store lærevansker»?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-57): § 9-57; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-48): § 9-48 tredje ledd og § 9-49
-
-**Oppmelding og når prøven holdes** (`pr-oppmelding`, forklaring, ikke kontrollert)
-
-- Gjelder fristen «to måneder før kontraktstiden er ute» også for lærekandidater og praksisbrevkandidater (§ 9-56 andre ledd sier «dei som har læretid i bedrift»)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-56): § 9-55 andre og tredje ledd og § 9-56; [Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/viii.-sarskilde-reglar-for-fag--og-sveineprova-praksisbrevprova-og-kompetanseprova-i-vidaregaande-opplaring/-9-55-organisering-av-fag--og-sveineprova-praksisbrevprova-og-kompetanseprova/): Merknad til § 9-55
-
-**Prøvenemnda og prøven** (`pr-provenemnda`, forklaring, ikke kontrollert)
-
-- Er sammendraget av § 9-59 til § 9-61 dekkende, eller mangler noe lærere og ledere trenger å vite?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-59): § 9-59 til § 9-61
-
-**Vurdering og karakterer** (`pr-vurdering`, forklaring, ikke kontrollert)
-
-- Er karakterene i § 9-5 gjengitt riktig på bokmål («bestått meget godt»)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-5): § 9-5; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-63): § 9-63 til § 9-65
-
-**Særskilt tilrettelegging av prøven** (`pr-tilrettelegging`, forklaring, ikke kontrollert)
-
-- Er sammendraget av § 9-62 riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-62): § 9-62
-
-**Resultatet og klage** (`pr-klage`, forklaring, ikke kontrollert)
-
-- Er det riktig at fylkeskommunen utsteder også kompetansebevis for lærekandidater (§ 9-51 tredje ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§10-9): § 9-54 fjerde ledd, § 10-9 og § 10-10; [Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/): Merknad til § 10-2, andre avsnitt
-
-**Ny og utsatt prøve** (`pr-ny-utsatt`, forklaring, ikke kontrollert)
-
-- Er det riktig at grensen på én ny prøve ikke gjelder når kontrakten forlenges eller kandidaten får mer opplæring (§ 9-66 tredje ledd)?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-66): § 9-66 og § 9-67; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-68): § 9-68 fjerde ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-2): § 5-2 tredje ledd
-
-**Bortvisning og annullering** (`pr-bortvisning`, forklaring, ikke kontrollert)
-
-- Er sammendraget av § 9-68 og § 9-69 riktig?
-
-Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-68): § 9-68 og § 9-69
 
 **Skoleåret i et fag** (`us-skolearet`, forklaring, ikke kontrollert)
 
@@ -3793,6 +4195,96 @@ Kilder å sjekke mot: [VIGO Kodeverksbase – erstattede fag, fag som brukes sam
 
 Kilder å sjekke mot: [Vilbli.no – inntak og frister](https://www.vilbli.no/): Inntak og frister i fylket; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak](https://kodeverk.vigo.no/): Status på søkerønsker (wish-statuses)
 
+**Skolereglene i Agder** (`sr-fylke-42`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 7 Konsekvenser av brudd på skolereglene (orden og oppførsel); § 8 Saksbehandling ved brudd på skolereglene; § 9 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-06-18-1248): Forskrift om skoleregler for elever ved fylkeskommunale videregående skoler i Agder og deltakere i voksenopplæringen
+
+**Skolereglene i Akershus** (`sr-fylke-32`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 9 Reaksjoner ved brudd på skolereglene; § 10 Rettigheter og plikter ved bruk av reaksjoner for brudd på skolereglene), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-06-20-1886): Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune
+
+**Skolereglene i Buskerud** (`sr-fylke-33`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 10 Reaksjoner og tiltak; § 11 Rettigheter og plikter ved bruk av reaksjoner og tiltak), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2026-06-03-1031): Forskrift om skoleregler, Buskerud fylkeskommune
+
+**Skolereglene i Finnmark** (`sr-fylke-56`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 6 Tiltak ved brudd på skolereglene; § 9 Saksbehandling; § 12 Klageadgang), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2026-06-02-1081): Forskrift om skoleregler for fylkeskommunale videregående skoler, Finnmark
+
+**Skolereglene i Innlandet** (`sr-fylke-34`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 5 Reaksjoner ved brudd på reglene for orden og oppførsel; § 11 Saksbehandling), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-10-23-3801): Forskrift om skoleregler, Innlandet fylkeskommune
+
+**Skolereglene i Møre og Romsdal** (`sr-fylke-15`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 6 Tiltak ved brot på skolereglane; § 9 Saksbehandling ved reaksjonar på brot på skolereglane der eleven har klagerett), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-06-10-1765): Forskrift om skolereglar for dei vidaregåande skolane, Møre og Romsdal fylkeskommune
+
+**Skolereglene i Nordland** (`sr-fylke-18`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 7 Konsekvenser av brudd på skolereglene (orden og oppførsel); § 8 Regler om saksbehandling ved brudd på skoleregler), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-06-10-1451): Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler og deltakere i voksenopplæringen, Nordland
+
+**Skolereglene i Oslo** (`sr-fylke-03`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 11 Tiltak hvis du bryter skolereglene; § 12 Hvem kan bestemme hvilke tiltak; § 13 Saksbehandling av tiltak), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2025-06-27-1353): Forskrift om skoleregler og skoledemokrati, Oslo kommune, Oslo
+
+**Skolereglene i Rogaland** (`sr-fylke-11`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 9 Generelt om saksbehandling ved brudd på reglene om orden og atferd; § 10 Alminnelige sanksjoner; § 11 Særlige sanksjoner), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2026-04-28-681): Forskrift om skoleregler og skoledemokrati for elever, Rogaland
+
+**Skolereglene i Telemark** (`sr-fylke-40`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 6-1 Alminnelige sanksjoner; § 6-2 Særlige sanksjoner; § 6-3 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-12-10-3620): Forskrift om skoleregler for videregående skoler, Telemark fylkeskommune
+
+**Skolereglene i Troms** (`sr-fylke-55`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 5-1 Alminnelige konsekvenser; § 5-2 Særlige konsekvenser; § 5-3 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2025-05-28-1527): Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Troms
+
+**Skolereglene i Trøndelag** (`sr-fylke-50`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 6 Konsekvenser av brudd på skolereglene (orden og oppførsel)), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-06-11-1087): Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Trøndelag
+
+**Skolereglene i Vestfold** (`sr-fylke-39`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 5-1 Generelt om saksbehandling; § 5-2 Alminnelige sanksjoner; § 5-3 Særlige sanksjoner; § 5-4 Klageinstans), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2025-06-17-1270): Forskrift om felles skoleregler for elever ved fylkeskommunale videregående skoler, Vestfold
+
+**Skolereglene i Vestland** (`sr-fylke-46`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 8 Sanksjonar ved brot på skulereglane; § 12 Saksbehandling; § 13 Prosess ved klage; § 16 Pålagt skulebyte), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2026-06-16-1587): Forskrift om skulereglar, Vestland fylkeskommune
+
+**Skolereglene i Østfold** (`sr-fylke-31`, forklaring, ikke kontrollert)
+
+- Er paragrafene riktig valgt ut (§ 10 Tiltak og reaksjoner; § 11 Rettigheter og plikter ved bruk av tiltak og reaksjoner), eller mangler det paragrafer om reaksjoner, saksbehandling eller klage?
+
+Kilder å sjekke mot: [Lokale forskrifter hos Lovdata](https://lovdata.no/dokument/LF/forskrift/2024-06-19-1404): Forskrift om skoleregler for de offentlige videregående skolene, Østfold
+
 **Inntaksområde** (`inntaksomrade`, begrep, ikke kontrollert)
 
 - Er «konkurrerer med dem ved skolene der» en riktig beskrivelse av hva inntaksområdepoeng betyr i praksis?
@@ -4068,6 +4560,24 @@ Kilder å sjekke mot: [Retten til videregående opplæring](https://www.udir.no/
 - Er det riktig å si at søkere med fag- eller svennebrev har både rett til påbygging og rett til yrkesfaglig rekvalifisering?
 
 Kilder å sjekke mot: [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-pabygging/): Rett til påbygging; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-yrkesfaglig-rekvalifisering/): Rett til yrkesfaglig rekvalifisering
+
+**Eleven har det trygt og godt** (`am-trygt`, steg, ikke kontrollert)
+
+- Er «dokumentasjonen tas vare på» riktig og nok, eller bør steget vise til arkivlova og fylkets arkivplan?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak): punkt 6.3.6 Plikt til å sette inn tiltak
+
+**Når skolen ikke gjør nok** (`am-elev`, steg, ikke kontrollert)
+
+- Er det riktig å skrive at det er elevens egen opplevelse som avgjør om skolen skal sette inn tiltak (rundskrivet 6.3.6)?
+
+Kilder å sjekke mot: [Rundskriv om skolemiljø](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.6-plikt-til-a-sette-inn-tiltak): punkt 6.3.6 Plikt til å sette inn tiltak; [Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2.2-saken-ma-vare-tatt-opp-med-rektor-for-en-uke-siden-eller-mer): punkt 7.2.2 Saken må være tatt opp med rektor for en uke siden eller mer
+
+**Elevundersøkelsen** (`elevundersokelsen`, begrep, ikke kontrollert)
+
+- Er det riktig at Elevundersøkelsen er obligatorisk for Vg1 og frivillig for Vg2 og Vg3, og at resultatene blir offentlige i desember?
+
+Kilder å sjekke mot: [Elevundersøkelsen i videregående, Udirs statistikkbank](https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/): Offentlige resultater for videregående
 
 **Vedtak** (`mo-sti-vedtak`, forklaring, ikke kontrollert)
 

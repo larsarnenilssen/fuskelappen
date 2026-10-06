@@ -19,7 +19,7 @@ import { kortManed, manedsnavn } from '../../../core/tidslinje.ts';
 import { iDag } from '../../../data/skolear.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import type { SideProps } from '../../typer.ts';
-import { EKSAMENSPLAN } from '../../vurdering/innhold.ts';
+import { EKSAMENSPLAN } from '../../eksamen/innhold.ts';
 import { kalenderRute, lesValg, sporringFor, type Kalendervalg } from '../adresse.ts';
 import { medFylketApent } from '../../fylker/innhold.ts';
 import {

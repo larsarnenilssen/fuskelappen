@@ -107,8 +107,21 @@ export function erKandidat(tittel: string): boolean {
   // Kommunenes har «kommune» eller «herad» (05.10.2026: skulereglar og skulerute i Kvam, Ulvik og Voss herad).
   if (!/fylkeskommune|oslo kommune/.test(t) && !VGS.test(t) && /\b(kommune|herad)\b/.test(t)) return false;
   if (/grunnsk[uo]l|barnesk[uo]l|ungdomssk[uo]l/.test(t) && !VGS.test(t)) return false;
-  return /(skule|skole)reg|ordensreg|tilleggsreg|mobilreg|inntak|(skule|skole)rute|skyss|rabattordning|timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t);
+  if (/(skule|skole)reg|ordensreg|tilleggsreg|mobilreg|inntak|(skule|skole)rute|skyss|rabattordning|timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t)) return true;
+  // Skolenes egne regler og fylkenes reglement har også andre titler (eier 06.10.2026): «Forskrift om bruk av
+  // mobiltelefon og smartklokker, Slåtthaug vidaregåande skule» og «ordens- og atferdsreglement». Dokumentsiden avgjør
+  // ut fra hjemmelen (opplæringslova § 10-7).
+  return (/fylkeskommune|oslo kommune/.test(t) || VGS.test(t)) && ORDENSTITTEL.test(t);
 }
+
+/** Titler på skoleregler som ikke sier «skoleregler»: mobil og smartklokke, ordens- og atferdsreglement, oppførsel. */
+const ORDENSTITTEL = /mobil|smartklokk|reglement|atferd|adferd|åtferd|oppførsel|ordens/;
+
+/**
+ * Versjonen av reglene for kandidatene. Når den endres, leses hele registeret på nytt neste gang, så forskrifter som
+ * ble utelatt før, kommer med (hent-lovdata.ts).
+ */
+export const KANDIDATREGLER = 2;
 
 export interface Metadata {
   tittel: string;
@@ -193,7 +206,7 @@ export function klassifiser(meta: Pick<Metadata, 'tittel' | 'hjemmel'>, skoler: 
   if (/inntak/.test(t)) return 'inntak';
   if (/timefordeling|omfordeling|omdisponering|avvik(ande|ende) trinn/.test(t)) return 'fagfordeling';
   if (/skyss|rabattordning/.test(t)) return 'skyss';
-  if (/(skule|skole|ordens)reg/.test(t)) return voksne ? 'skoleregler-voksne' : skoler.length > 0 ? 'skoleregler-skole' : 'skoleregler';
+  if (/(skule|skole|ordens)reg/.test(t) || ORDENSTITTEL.test(t)) return voksne ? 'skoleregler-voksne' : skoler.length > 0 ? 'skoleregler-skole' : 'skoleregler';
   return null;
 }
 

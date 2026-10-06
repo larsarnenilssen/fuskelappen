@@ -1,0 +1,426 @@
+# Et trygt og godt skolemiljø (fase 7, eier 06.10.2026): opplæringslova kapittel 12 med egne ord, paragraf for
+# paragraf, med Udirs rundskriv om skolemiljø som kilde. Siden «Et trygt og godt skolemiljø» i Skolemiljø viser kortene
+# i fem deler: retten, skolens plikter, statsforvalteren, det fysiske miljøet og ansvaret. Kortene om informasjon og
+# fysiske inngrep (kapittel 10 og 13) står under «Henger sammen med». For privatskoler gjelder kapittel 12 også, med
+# skolen, styret og daglig leder i stedet for fylkeskommunen og rektor (privatskolelova § 2-4, avgjørelse 075).
+
+- id: k12-hvem
+  type: forklaring
+  tittel:
+    nb: Hvem og hvor reglene gjelder
+    nn: Kven og kvar reglane gjeld
+  tekst:
+    nb: >-
+      Kapittel 12 gjelder for alle elever i videregående skole, i offentlige og private skoler. Det gjelder også når
+      opplæringen er utenfor skolen, for eksempel på en annen opplæringsarena eller i praksis. Reglene gjelder i
+      skoletiden, på skolens digitale plattformer og på turer og aktiviteter i regi av skolen. De gjelder ikke for
+      lærlinger og lærekandidater i bedrift, som har arbeidsmiljøloven.
+
+
+      De som arbeider på skolen, har ikke plikt til å følge med på elevene på skoleveien eller i fritiden. Men gjør
+      noe som skjer utenfor skolen, at en elev ikke har det trygt og godt på skolen, skal skolen sette inn tiltak.
+    nn: >-
+      Kapittel 12 gjeld for alle elevar i vidaregåande skule, i offentlege og private skular. Det gjeld også når
+      opplæringa er utanfor skulen, til dømes på ein annan opplæringsarena eller i praksis. Reglane gjeld i
+      skuletida, på dei digitale plattformene til skulen og på turar og aktivitetar i regi av skulen. Dei gjeld ikkje
+      for lærlingar og lærekandidatar i bedrift, som har arbeidsmiljølova.
+
+
+      Dei som arbeider på skulen, har ikkje plikt til å følgje med på elevane på skulevegen eller i fritida. Men gjer
+      noko som skjer utanfor skulen, at ein elev ikkje har det trygt og godt på skulen, skal skulen setje inn tiltak.
+  paragrafer: [opplaeringslova/12-1]
+  privatskole:
+    tekst:
+      nb: "Kapittel 12 gjelder også for privatskoler (privatskolelova § 2-4). Der loven sier kommunen og fylkeskommunen, gjelder det skolen eller skolens styre, og der den sier rektor, gjelder det daglig leder."
+      nn: "Kapittel 12 gjeld også for privatskular (privatskolelova § 2-4). Der lova seier kommunen og fylkeskommunen, gjeld det skulen eller styret ved skulen, og der ho seier rektor, gjeld det dagleg leiar."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-1 Verkeområde for kapittelet", url: "https://lovdata.no/lov/2023-06-09-30/§12-1" }
+    - { id: udir-rundskriv-skolemiljo-hvem, punkt: "2. For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Rundskrivet sier at reglene ikke gjelder for lærlinger og lærekandidater, og heller ikke for voksne i organisert opplæring. Skal kortet også nevne voksne, og gjelder det voksne i videregående opplæring etter kapittel 18?"
+    - "Er det riktig å skrive at skolen skal sette inn tiltak når noe som skjer på skoleveien eller i fritiden, gjør at eleven ikke har det trygt og godt på skolen?"
+  stikkord: [verkeområde, virkeområde, skoletid, skolevei, fritid, digitalt, lærlinger]
+
+- id: k12-retten
+  type: forklaring
+  tittel:
+    nb: Retten til et trygt og godt skolemiljø
+    nn: Retten til eit trygt og godt skulemiljø
+  tekst:
+    nb: >-
+      Alle elever har rett til et trygt og godt skolemiljø som fremmer helse, inkludering, trivsel og læring. Retten
+      gjelder både det psykososiale og det fysiske skolemiljøet. Det er elevens egen opplevelse som avgjør om eleven
+      har det trygt og godt. Skolen kan ikke bestemme at en elev har det bra når eleven selv sier noe annet.
+    nn: >-
+      Alle elevar har rett til eit trygt og godt skulemiljø som fremjar helse, inkludering, trivsel og læring. Retten
+      gjeld både det psykososiale og det fysiske skulemiljøet. Det er den eigne opplevinga til eleven som avgjer om
+      eleven har det trygt og godt. Skulen kan ikkje avgjere at ein elev har det bra når eleven sjølv seier noko anna.
+  paragrafer: [opplaeringslova/12-2]
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-2 Retten til eit trygt og godt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-2" }
+    - { id: udir-rundskriv-skolemiljo-retten, punkt: "3. Retten til et trygt og godt skolemiljø" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er setningen «Skolen kan ikke bestemme at en elev har det bra når eleven selv sier noe annet» en riktig forenkling av at elevens subjektive opplevelse er avgjørende?"
+  stikkord: [trygt og godt skolemiljø, psykososialt, fysisk, helse, inkludering, trivsel, læring, subjektiv opplevelse]
+
+- id: k12-nulltoleranse
+  type: forklaring
+  tittel:
+    nb: Nulltoleranse mot krenkende oppførsel
+    nn: Nulltoleranse mot krenkjande oppførsel
+  tekst:
+    nb: >-
+      Skolen skal ikke godta krenkende oppførsel, som mobbing, vold, diskriminering og trakassering. Krenkelser kan
+      også være indirekte, som å holde noen utenfor, isolere eller baksnakke dem. Ikke all uenighet er en krenkelse:
+      elevene må tåle at andre er uenige med dem, og en irettesettelse fra en lærer er ikke en krenkelse. Hva som
+      oppleves som krenkende, kan avhenge av blant annet alder, funksjonsevne, etnisitet, religion og seksuell
+      orientering.
+    nn: >-
+      Skulen skal ikkje godta krenkjande oppførsel, som mobbing, vald, diskriminering og trakassering. Krenkingar kan
+      også vere indirekte, som å halde nokon utanfor, isolere eller baksnakke dei. Ikkje all usemje er ei krenking:
+      elevane må tole at andre er usamde med dei, og ei irettesetjing frå ein lærar er ikkje ei krenking. Kva som
+      blir opplevd som krenkjande, kan avhenge av mellom anna alder, funksjonsevne, etnisitet, religion og seksuell
+      orientering.
+  paragrafer: [opplaeringslova/12-3]
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-3 Nulltoleranse og førebyggjande arbeid, første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-3" }
+    - { id: udir-rundskriv-skolemiljo-nulltoleranse, punkt: "4. Nulltoleranse" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på indirekte krenkelser (holde utenfor, isolere, baksnakke) og på hva som ikke er krenkelser (uenighet, irettesettelse) gjengitt riktig etter rundskrivet?"
+  stikkord: [nulltoleranse, krenkelse, krenking, mobbing, vold, diskriminering, trakassering, utestenging]
+
+- id: k12-forebygging
+  type: forklaring
+  tittel:
+    nb: Forebygging
+    nn: Førebygging
+  tekst:
+    nb: >-
+      Skolen skal arbeide hele tiden for at alle elevene skal ha et trygt og godt skolemiljø, også når ingen sak er
+      meldt. Som en del av dette arbeidet kan skolen bruke skolemiljøundersøkelser der elevene ikke er anonyme. Slike
+      undersøkelser skal gripe minst mulig inn i personvernet, og i det forebyggende arbeidet kan elevene ikke bli
+      bedt om å navngi andre elever når de svarer om negative relasjoner. Skolen skal kontrollere at opplysningene
+      stemmer før de brukes til å velge tiltak.
+    nn: >-
+      Skulen skal arbeide heile tida for at alle elevane skal ha eit trygt og godt skulemiljø, også når inga sak er
+      meld. Som ein del av dette arbeidet kan skulen bruke skulemiljøundersøkingar der elevane ikkje er anonyme. Slike
+      undersøkingar skal gripe minst mogleg inn i personvernet, og i det førebyggjande arbeidet kan elevane ikkje bli
+      bedne om å namngi andre elevar når dei svarar om negative relasjonar. Skulen skal kontrollere at opplysningane
+      stemmer før dei blir brukte til å velje tiltak.
+  paragrafer: [opplaeringslova/12-3, opplaeringsforskrifta/20-5]
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-3 Nulltoleranse og førebyggjande arbeid, andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 20-5 Ikkje-anonyme skolemiljøundersøkingar", url: "https://lovdata.no/forskrift/2024-06-03-900/§20-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å omtale ikke-anonyme skolemiljøundersøkelser (forskriften § 20-5) her, og er begrensningen «uten å navngi andre elever» gjengitt riktig for det forebyggende arbeidet?"
+  stikkord: [forebygging, førebygging, skolemiljøundersøkelse, ikke-anonym, kartlegging]
+
+- id: k12-aktivitetsplikt
+  type: forklaring
+  tittel:
+    nb: Aktivitetsplikten
+    nn: Aktivitetsplikta
+  tekst:
+    nb: >-
+      Aktivitetsplikten består av fem delplikter og en plikt til å dokumentere:
+
+
+      - **Følge med:** Alle som arbeider på skolen, skal følge med på hvordan elevene har det.
+
+      - **Gripe inn:** De skal gripe inn hvis noen krenker en elev, når det er mulig.
+
+      - **Melde fra:** De skal melde fra til rektor ved mistanke om eller kjennskap til at en elev ikke har det trygt
+      og godt, også når eleven sier det selv. Rektor skal melde fra til fylkeskommunen i alvorlige tilfeller.
+
+      - **Undersøke:** Skolen skal snarest undersøke saken.
+
+      - **Sette inn tiltak:** Skolen skal rette opp situasjonen med egnede tiltak og lage en skriftlig plan. Planen
+      skal si hvilket problem tiltakene skal løse, hvilke tiltak som er planlagt, når de skal gjennomføres, hvem som
+      gjennomfører dem og når de skal evalueres.
+
+
+      Skolen skal dokumentere det den gjør for å oppfylle aktivitetsplikten, så mye som trengs. Veiviseren
+      [Aktivitetsplikten](#/skolemiljo/aktivitetsplikten) viser stegene for den som arbeider på skolen, rektor og
+      eleven.
+    nn: >-
+      Aktivitetsplikta består av fem delplikter og ei plikt til å dokumentere:
+
+
+      - **Følgje med:** Alle som arbeider på skulen, skal følgje med på korleis elevane har det.
+
+      - **Gripe inn:** Dei skal gripe inn dersom nokon krenkjer ein elev, når det er mogleg.
+
+      - **Melde frå:** Dei skal melde frå til rektor ved mistanke om eller kjennskap til at ein elev ikkje har det
+      trygt og godt, også når eleven seier det sjølv. Rektor skal melde frå til fylkeskommunen i alvorlege tilfelle.
+
+      - **Undersøkje:** Skulen skal snarast undersøkje saka.
+
+      - **Setje inn tiltak:** Skulen skal rette opp situasjonen med eigna tiltak og lage ein skriftleg plan. Planen
+      skal seie kva problem tiltaka skal løyse, kva tiltak som er planlagde, når dei skal gjennomførast, kven som
+      gjennomfører dei og når dei skal evaluerast.
+
+
+      Skulen skal dokumentere det han gjer for å oppfylle aktivitetsplikta, så mykje som trengst. Vegvisaren
+      [Aktivitetsplikta](#/skolemiljo/aktivitetsplikten) viser stega for den som arbeider på skulen, rektor og
+      eleven.
+  paragrafer: [opplaeringslova/12-4]
+  privatskole:
+    tekst:
+      nb: "I privatskoler er det daglig leder som har rektors plikter, og daglig leder melder alvorlige saker til skolens styre (privatskolelova § 2-4)."
+      nn: "I privatskular er det dagleg leiar som har pliktene til rektor, og dagleg leiar melder alvorlege saker til styret ved skulen (privatskolelova § 2-4)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
+    - { id: udir-rundskriv-skolemiljo, punkt: "6.3 En aktivitetsplikt med flere delplikter", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3-en-aktivitetsplikt-med-flere-delplikter" }
+    - { id: udir-rundskriv-skolemiljo, punkt: "6.4 Dokumentasjonskravene", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.4-dokumentasjonskravene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er inndelingen i fem delplikter (følge med, gripe inn, melde fra, undersøke, sette inn tiltak) og dokumentasjonsplikten den samme som i rundskrivet kapittel 6.3 og 6.4?"
+  stikkord: [aktivitetsplikt, delplikter, følge med, gripe inn, melde fra, undersøke, tiltak, tiltaksplan, aktivitetsplan, dokumentasjon]
+
+- id: k12-skjerpet
+  type: forklaring
+  tittel:
+    nb: Når en som arbeider på skolen, krenker en elev
+    nn: Når ein som arbeider på skulen, krenkjer ein elev
+  tekst:
+    nb: >-
+      Får en som arbeider på skolen, mistanke om eller kjennskap til at en annen som arbeider der, krenker en elev, skal
+      vedkommende straks melde fra til rektor. Rektor skal melde fra til fylkeskommunen, med mindre meldingen er åpenbart
+      grunnløs. Gjelder mistanken noen i ledelsen på skolen, skal det meldes fra direkte til fylkeskommunen.
+    nn: >-
+      Får ein som arbeider på skulen, mistanke om eller kjennskap til at ein annan som arbeider der, krenkjer ein elev,
+      skal vedkomande straks melde frå til rektor. Rektor skal melde frå til fylkeskommunen, med mindre meldinga er
+      openbert grunnlaus. Gjeld mistanken nokon i leiinga på skulen, skal det meldast frå direkte til fylkeskommunen.
+  paragrafer: [opplaeringslova/12-5]
+  privatskole:
+    tekst:
+      nb: "I privatskoler melder daglig leder til skolens styre, og gjelder mistanken noen i ledelsen, meldes det direkte til styret (privatskolelova § 2-4)."
+      nn: "I privatskular melder dagleg leiar til styret ved skulen, og gjeld mistanken nokon i leiinga, blir det meldt direkte til styret (privatskolelova § 2-4)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev", url: "https://lovdata.no/lov/2023-06-09-30/§12-5" }
+    - { id: udir-rundskriv-skolemiljo, punkt: "6.3.4 Skjerpet plikt til å melde fra hvis en som arbeider på skolen, krenker elever", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/#6.3.4-skjerpet-plikt-til-a-melde-fra-hvis-en-som-arbeider-pa-skolen-krenker-elever" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av den skjerpede plikten i § 12-5 riktig og dekkende?"
+  stikkord: [skjerpet aktivitetsplikt, skjerpet plikt, ansatt krenker, lærer krenker, ledelsen]
+
+- id: k12-statsforvalteren
+  type: forklaring
+  tittel:
+    nb: Eleven kan melde saken til statsforvalteren
+    nn: Eleven kan melde saka til statsforvaltaren
+  tekst:
+    nb: >-
+      Har en elev ikke et trygt og godt skolemiljø, kan eleven eller foreldrene melde saken til statsforvalteren
+      (håndhevingsordningen). Saken må være tatt opp med rektor for minst en uke siden, og eleven må fortsatt gå på
+      skolen. Ellers avviser statsforvalteren saken, med mindre det er særlige grunner.
+
+
+      Statsforvalteren avgjør om skolen har satt inn egnede tiltak og laget en skriftlig plan. Fylkeskommunen skal gi
+      statsforvalteren alle opplysningene som trengs, uten hinder av taushetsplikt. Har skolen ikke gjort nok, kan
+      statsforvalteren pålegge fylkeskommunen å rette det. Blir saken ellers unødig forsinket, eller er det grunn til å
+      tro at fylkeskommunen ikke vil rette det, kan statsforvalteren selv vedta hva skolen skal gjøre, også reaksjoner
+      etter skolereglene eller skolebytte.
+
+
+      Avgjørelsen er et enkeltvedtak med en frist, og statsforvalteren følger opp saken. Eleven og foreldrene kan
+      klage til Utdanningsdirektoratet.
+    nn: >-
+      Har ein elev ikkje eit trygt og godt skulemiljø, kan eleven eller foreldra melde saka til statsforvaltaren
+      (handhevingsordninga). Saka må vere tatt opp med rektor for minst ei veke sidan, og eleven må framleis gå på
+      skulen. Elles avviser statsforvaltaren saka, om det ikkje er særlege grunnar.
+
+
+      Statsforvaltaren avgjer om skulen har sett inn eigna tiltak og laga ein skriftleg plan. Fylkeskommunen skal gi
+      statsforvaltaren alle opplysningane som trengst, utan hinder av teieplikt. Har skulen ikkje gjort nok, kan
+      statsforvaltaren påleggje fylkeskommunen å rette det. Blir saka elles unødig forseinka, eller er det grunn til å
+      tru at fylkeskommunen ikkje vil rette det, kan statsforvaltaren sjølv vedta kva skulen skal gjere, også
+      reaksjonar etter skulereglane eller skulebyte.
+
+
+      Avgjerda er eit enkeltvedtak med ein frist, og statsforvaltaren følgjer opp saka. Eleven og foreldra kan klage
+      til Utdanningsdirektoratet.
+  paragrafer: [opplaeringslova/12-6]
+  privatskole:
+    tekst:
+      nb: "Elever ved privatskoler kan også melde saken til statsforvalteren. Der § 12-6 tredje og fjerde ledd sier kommunen og fylkeskommunen, gjelder det skolen (privatskolelova § 2-4)."
+      nn: "Elevar ved privatskular kan også melde saka til statsforvaltaren. Der § 12-6 tredje og fjerde ledd seier kommunen og fylkeskommunen, gjeld det skulen (privatskolelova § 2-4)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker", url: "https://lovdata.no/lov/2023-06-09-30/§12-6" }
+    - { id: udir-rundskriv-skolemiljo-statsforvalteren, punkt: "7.2 Når kan statsforvalteren behandle saken?", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/#7.2-nar-kan-statsforvalteren-behandle-saken" }
+    - { id: udir-rundskriv-skolemiljo, punkt: "8. Klage til Utdanningsdirektoratet", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/8.-klage-til-utdanningsdirektoratet/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er vilkårene for at statsforvalteren behandler saken (tatt opp med rektor, minst en uke, eleven går fortsatt på skolen) og hva statsforvalteren kan vedta, gjengitt riktig?"
+    - "Bør kortet si at fylkeskommunen ikke kan klage på statsforvalterens vedtak, slik veiviseren gjør?"
+  stikkord: [statsforvalteren, håndhevingsordningen, handhevingsordninga, melde saken, klage, Utdanningsdirektoratet, enkeltvedtak]
+
+- id: k12-fysisk
+  type: forklaring
+  tittel:
+    nb: Det fysiske skolemiljøet
+    nn: Det fysiske skulemiljøet
+  tekst:
+    nb: >-
+      Alle elever har rett til en arbeidsplass som er tilpasset behovene deres. Skolen skal være innredet slik at det
+      er lagt til rette for elevene ved skolen som har nedsatt funksjonsevne. Inneklima, lys, lyd og renhold hører også
+      til det fysiske miljøet.
+
+
+      Saker om det fysiske skolemiljøet behandles etter forskriften om helse og miljø i skoler, ikke av
+      statsforvalteren etter § 12-6. Eleven eller foreldrene tar først saken opp med skolen. Følger ikke skolen den
+      opp innen rimelig tid, kan de gå til kommunen som tilsynsmyndighet. Kommunens avgjørelser kan klages til
+      statsforvalteren.
+    nn: >-
+      Alle elevar har rett til ein arbeidsplass som er tilpassa behova deira. Skulen skal vere innreidd slik at det er
+      lagt til rette for elevane ved skulen som har nedsett funksjonsevne. Inneklima, lys, lyd og reinhald høyrer også
+      til det fysiske miljøet.
+
+
+      Saker om det fysiske skulemiljøet blir behandla etter forskrifta om helse og miljø i skular, ikkje av
+      statsforvaltaren etter § 12-6. Eleven eller foreldra tek først saka opp med skulen. Følgjer ikkje skulen ho opp
+      innan rimeleg tid, kan dei gå til kommunen som tilsynsmyndigheit. Avgjerdene til kommunen kan klagast til
+      statsforvaltaren.
+  paragrafer: [opplaeringslova/12-7, opplaeringsforskrifta/11-3, helse-og-miljo/20, helse-og-miljo/21]
+  privatskole:
+    tekst:
+      nb: "For privatskoler er departementet klageinstans for enkeltvedtak etter § 12-7 om det fysiske skolemiljøet (privatskolelova § 2-4)."
+      nn: "For privatskular er departementet klageinstans for enkeltvedtak etter § 12-7 om det fysiske skulemiljøet (privatskolelova § 2-4)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-7 Det fysiske miljøet", url: "https://lovdata.no/lov/2023-06-09-30/§12-7" }
+    - { id: opplaeringsforskrifta, punkt: "§ 11-3 Saksbehandling som gjeld det fysiske skolemiljøet", url: "https://lovdata.no/forskrift/2024-06-03-900/§11-3" }
+    - { id: forskrift-helse-miljo-skoler, punkt: "§ 20 Kommunens oppfølging av henvendelser og § 21 Klage", url: "https://lovdata.no/forskrift/2023-03-28-449/§20" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å nevne inneklima, lys, lyd og renhold som eksempler på det fysiske skolemiljøet, eller bør kortet holde seg til ordlyden i § 12-7?"
+    - "Er gangen i saker om det fysiske skolemiljøet (skolen, så kommunen som tilsynsmyndighet, så klage til statsforvalteren) riktig for en fylkeskommunal skole?"
+  stikkord: [fysisk skolemiljø, inneklima, universell utforming, nedsatt funksjonsevne, miljørettet helsevern, tilsyn]
+
+- id: k12-ansvar
+  type: forklaring
+  tittel:
+    nb: Tvangsmulkt, straff og erstatning
+    nn: Tvangsmulkt, straff og erstatning
+  tekst:
+    nb: >-
+      Tre regler skal sikre at pliktene i kapittelet blir fulgt.
+
+
+      - **Tvangsmulkt:** Statsforvalteren og klageinstansen kan fastsette tvangsmulkt for fylkeskommunen for å sikre at
+      et vedtak etter § 12-6 blir gjennomført. Mulkten løper fra fristen i vedtaket er ute og til vedtaket er oppfylt,
+      og går til statskassen.
+
+      - **Straff:** Den som forsettlig eller grovt uaktsomt, eller flere ganger, bryter plikten til å følge med og gripe
+      inn, plikten til å melde fra eller den skjerpede plikten, kan straffes med bot eller fengsel i opptil tre
+      måneder. Det samme gjelder rektor som bryter plikten til å undersøke og sette inn tiltak. Også fylkeskommunen
+      kan straffes. Straffansvaret foreldes etter fem år.
+
+      - **Erstatning:** Krever en elev erstatning, og er det grunn til å tro at reglene om det psykososiale
+      skolemiljøet ikke er fulgt, legges det til grunn at de ikke er fulgt. Det gjelder med mindre fylkeskommunen gjør
+      noe annet sannsynlig (omvendt bevisbyrde).
+    nn: >-
+      Tre reglar skal sikre at pliktene i kapittelet blir følgde.
+
+
+      - **Tvangsmulkt:** Statsforvaltaren og klageinstansen kan fastsetje tvangsmulkt for fylkeskommunen for å sikre at
+      eit vedtak etter § 12-6 blir gjennomført. Mulkta går frå fristen i vedtaket er ute og til vedtaket er oppfylt,
+      og går til statskassa.
+
+      - **Straff:** Den som med vilje eller grovt aktlaust, eller fleire gonger, bryt plikta til å følgje med og gripe
+      inn, plikta til å melde frå eller den skjerpa plikta, kan straffast med bot eller fengsel i opptil tre månader.
+      Det same gjeld rektor som bryt plikta til å undersøkje og setje inn tiltak. Også fylkeskommunen kan straffast.
+      Straffansvaret blir forelda etter fem år.
+
+      - **Erstatning:** Krev ein elev erstatning, og er det grunn til å tru at reglane om det psykososiale
+      skulemiljøet ikkje er følgde, blir det lagt til grunn at dei ikkje er følgde. Det gjeld om ikkje fylkeskommunen
+      gjer noko anna truleg (omvend bevisbyrde).
+  paragrafer: [opplaeringslova/12-8, opplaeringslova/12-9, opplaeringslova/12-10]
+  privatskole:
+    tekst:
+      nb: "For privatskoler gjelder tvangsmulkt, straff og bevisbyrde skolen i stedet for fylkeskommunen (privatskolelova § 2-4)."
+      nn: "For privatskular gjeld tvangsmulkt, straff og bevisbyrde skulen i staden for fylkeskommunen (privatskolelova § 2-4)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-8 Tvangsmulkt", url: "https://lovdata.no/lov/2023-06-09-30/§12-8" }
+    - { id: opplaeringslova, punkt: "§ 12-9 Straffansvar for brot på reglane om skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-9" }
+    - { id: opplaeringslova, punkt: "§ 12-10 Bevisbyrde i erstatningssaker om psykososialt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-10" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er oppsummeringen av hvilke plikter som er straffbare etter § 12-9 riktig, og er «plikten til å undersøke og sette inn tiltak» riktig for § 12-4 andre ledd tredje punktum?"
+    - "Er «omvendt bevisbyrde» et dekkende navn på regelen i § 12-10?"
+  stikkord: [tvangsmulkt, straff, straffansvar, erstatning, bevisbyrde, omvendt bevisbyrde]
+
+- id: k12-informasjon
+  type: forklaring
+  tittel:
+    nb: Informasjon til elevene og foreldrene
+    nn: Informasjon til elevane og foreldra
+  tekst:
+    nb: >-
+      Fylkeskommunen skal gi elevene og foreldrene informasjonen de trenger, blant annet om skolemiljøet og
+      skolereglene, og om rettighetene og pliktene elevene har. Elevene og foreldrene skal kjenne til retten til et
+      trygt og godt skolemiljø, aktivitetsplikten og muligheten til å melde saken til statsforvalteren.
+    nn: >-
+      Fylkeskommunen skal gi elevane og foreldra informasjonen dei treng, mellom anna om skulemiljøet og
+      skulereglane, og om rettane og pliktene elevane har. Elevane og foreldra skal kjenne til retten til eit trygt og
+      godt skulemiljø, aktivitetsplikta og høvet til å melde saka til statsforvaltaren.
+  paragrafer: [opplaeringslova/10-8]
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 10-8 Informasjon til elevane og foreldra", url: "https://lovdata.no/lov/2023-06-09-30/§10-8" }
+    - { id: udir-rundskriv-skolemiljo-informasjon, punkt: "5. Skolene skal informere elever og foreldre" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig etter rundskrivet kapittel 5 at elevene og foreldrene skal få informasjon om aktivitetsplikten og håndhevingsordningen?"
+  stikkord: [informasjon, foreldre, elevrettigheter]
+
+- id: k12-fysiske-inngrep
+  type: forklaring
+  tittel:
+    nb: Fysiske inngrep
+    nn: Fysiske inngrep
+  tekst:
+    nb: >-
+      Når andre tiltak ikke er nok, kan ansatte gripe inn fysisk mot en elev for å hindre at eleven krenker noen eller
+      utsetter seg selv for fare, skader eiendom, oppfører seg sterkt nedverdigende for seg selv eller vesentlig
+      forstyrrer opplæringen til andre. Inngrepet kan ikke gå lenger enn nødvendig. Den ansatte melder fra til rektor,
+      og rektor til foreldrene. Ved gjentatte eller særlig alvorlige inngrep melder rektor fra til fylkeskommunen.
+      Skolen skal dokumentere alle fysiske inngrep, med elevens syn på saken. Fylkeskommunen skal sørge for at skolen
+      arbeider for at slike situasjoner ikke oppstår.
+    nn: >-
+      Når andre tiltak ikkje er nok, kan tilsette gripe inn fysisk mot ein elev for å hindre at eleven krenkjer nokon
+      eller utset seg sjølv for fare, skader eigedom, oppfører seg sterkt fornedrande for seg sjølv eller vesentleg
+      forstyrrar opplæringa til andre. Inngrepet kan ikkje gå lenger enn nødvendig. Den tilsette melder frå til
+      rektor, og rektor til foreldra. Ved gjentekne eller særleg alvorlege inngrep melder rektor frå til
+      fylkeskommunen. Skulen skal dokumentere alle fysiske inngrep, med synet til eleven på saka. Fylkeskommunen skal
+      sørgje for at skulen arbeider for at slike situasjonar ikkje oppstår.
+  paragrafer: [opplaeringslova/13-3, opplaeringslova/13-4, opplaeringslova/13-5]
+  privatskole:
+    tekst:
+      nb: "For privatskoler står de samme reglene i privatskolelova §§ 3-10 a til 3-10 c."
+      nn: "For privatskular står dei same reglane i privatskolelova §§ 3-10 a til 3-10 c."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 3-10 b Fysiske inngrep for å avverje skade m.m.", url: "https://lovdata.no/lov/2003-07-04-84/§3-10b" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 13-3 Førebygging", url: "https://lovdata.no/lov/2023-06-09-30/§13-3" }
+    - { id: opplaeringslova, punkt: "§ 13-4 Fysiske inngrep for å avverje skade m.m.", url: "https://lovdata.no/lov/2023-06-09-30/§13-4" }
+    - { id: opplaeringslova, punkt: "§ 13-5 Meldeplikt og dokumentasjon", url: "https://lovdata.no/lov/2023-06-09-30/§13-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av §§ 13-3 til 13-5 riktig, og hører kortet hjemme på siden om skolemiljøet?"
+    - "Privatskoler: Er det riktig at privatskolelova §§ 3-10 a til 3-10 c har de samme reglene om forebygging, fysiske inngrep og melding?"
+  stikkord: [fysiske inngrep, gripe inn fysisk, avverge skade, meldeplikt, dokumentasjon]

@@ -134,7 +134,7 @@ export default function Fylke({ parametre, sporring }: SideProps) {
             <ul class="liste">
               <Lenkerad href={`#${kalenderLenke('inntak')}`} ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
               <Lenkerad href={`#${kalenderLenke('eksamen')}`} ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
-              <Lenkerad href="#/vurdering/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
+              <Lenkerad href="#/eksamen/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
             </ul>
           </Rubrikk>
           </>

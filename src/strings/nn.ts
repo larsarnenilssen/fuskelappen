@@ -8,6 +8,8 @@ import { kalenderNn } from './moduler/kalender.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
+import { eksamenNn } from './moduler/eksamen.nn.ts';
+import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
 
@@ -221,6 +223,7 @@ export const nn: Tekster = {
       tittel: 'Kreditering',
       tekst:
         'Appen inneheld data frå Utdanningsdirektoratet og Lovdata, gjorde tilgjengelege under Norsk lisens for offentlege data (NLOD) 2.0.',
+      elevundersokelsen: 'Resultata frå Elevundersøkinga i Skulemiljø: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
       utdanning: 'Yrka og utdanningsbeskrivingane i Opplæringstilbod er baserte på opne data frå utdanning.no og er underlagde Norsk lisens for offentlege data (NLOD). Teksten blir halden ved like på utdanning.no.',
       ndla: 'Namna på faga på NDLA er frå Nasjonal digital læringsarena (NDLA), lisensierte under Creative Commons Namngjeving 4.0 (CC BY 4.0).',
       ccby: 'Les CC BY 4.0',
@@ -384,13 +387,21 @@ export const nn: Tekster = {
       navn: 'Inntak',
       beskrivelse: 'Søkjarkategoriar, rettar og fristar ved inntak.',
     },
+    skolemiljo: {
+      navn: 'Skulemiljø',
+      beskrivelse: 'Aktivitetsplikta, skulereglar og Elevundersøkinga.',
+    },
     tilrettelegging: {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpassa opplæring, individuell tilrettelegging og språkopplæring.',
     },
     vurdering: {
       navn: 'Vurdering',
-      beskrivelse: 'Undervegs- og sluttvurdering, grunnlag, fråvær og eksamen.',
+      beskrivelse: 'Undervegs- og sluttvurdering, grunnlag, fråvær og orden.',
+    },
+    eksamen: {
+      navn: 'Eksamen og klage',
+      beskrivelse: 'Eksamen, fag- og sveineprøva, klage på karakter og datoane.',
     },
     laereplanverket: {
       navn: 'Overordna del',
@@ -433,7 +444,9 @@ export const nn: Tekster = {
   kalender: kalenderNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
+  skolemiljo: skolemiljoNn,
   vurdering: vurderingNn,
+  eksamen: eksamenNn,
   inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',
@@ -448,6 +461,7 @@ export const nn: Tekster = {
       fag: 'Læreplanverket',
       tilrettelegging: 'Tilrettelegging',
       vurdering: 'Vurdering og eksamen',
+      skolemiljo: 'Skulemiljø',
       arbeidstid: 'Arbeidstid',
       forvaltning: 'Regelverk',
       ingen: 'Ingen omgrep har dette temaet.',
