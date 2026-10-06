@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.38.0] – 2026-10-06
+
 ### Lagt til
 
 - **Lærlinger og kandidater** i Opplæringstilbud: veiene til fag- og svennebrev, praksisbrev og kompetansebevis for lærling, lærekandidat, praksisbrevkandidat, praksiskandidat og kandidat for fagbrev på jobb.
