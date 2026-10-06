@@ -246,3 +246,9 @@ Eier liker plasseringen, ikonet, sammenligningen og at veiene har hver sin fane.
   - Mockupen sa det samme som begrepet, og er nå rettet til lovteksten.
 - **Valget:** Skal begrepet følge loven?
 - **Anbefaling:** Ja, med Udir-1 som kilde ved siden av.
+
+## Runde 3 (06.10.2026): «Mer om …»
+
+- **Knappen:** Lenken nederst i hver vei er en fylt knapp i hele bredden, «Mer om lærling», «Mer om fagbrev på jobb» osv. Linjen under sier hva siden har: «Kommer fra og veien videre».
+- **Kortnavn:** Hver vei har et kort navn til knappen (`kortnavn`), så teksten står på én linje i 390 px. Eksempler: «tidlig lærekontrakt» for lærling rett etter grunnskolen eller Vg1, og «opphenting og kryssløp» for lærling etter Vg1 studieforberedende.
+- **320 px:** Knappen har mindre luft og litt mindre skrift. Tre navn går likevel over to linjer: «praksisbrev til fagbrev», «opphenting og kryssløp» og «lærekandidat til lærling».

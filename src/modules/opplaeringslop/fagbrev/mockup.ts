@@ -19,6 +19,8 @@ export interface Vei {
   id: string;
   mal: Mal;
   tittel: string;
+  /** Kort navn på rollen i knappen «Mer om …», så knappen får plass på smal skjerm. */
+  kortnavn: string;
   kort: string;
   ingress: string;
   steg: Vegsteg[];
@@ -57,6 +59,7 @@ export const VEIER: Vei[] = [
     id: 'laerling',
     mal: 'fagbrev',
     tittel: 'Lærling',
+    kortnavn: 'lærling',
     kort: 'Hovedmodellen: to år i skole og to år i bedrift',
     ingress:
       'Den vanlige veien: Vg1 og Vg2 på et yrkesfaglig utdanningsprogram, og så læretid i bedrift med lærekontrakt.',
@@ -93,6 +96,7 @@ export const VEIER: Vei[] = [
     id: 'laerling-tidlig',
     mal: 'fagbrev',
     tittel: 'Lærling rett etter grunnskolen eller Vg1',
+    kortnavn: 'tidlig lærekontrakt',
     kort: '0+4, 1+3 og særløp',
     ingress:
       'Opplæringen kan organiseres på en annen måte enn hovedmodellen, f.eks. med hele løpet i bedrift (0+4) eller med kontrakt etter Vg1 (1+3).',
@@ -130,6 +134,7 @@ export const VEIER: Vei[] = [
     id: 'praksisbrev-fagbrev',
     mal: 'fagbrev',
     tittel: 'Praksisbrevkandidat som blir lærling',
+    kortnavn: 'praksisbrev til fagbrev',
     kort: 'Praksisbrev først, og så fag- eller svennebrev',
     ingress:
       'Praksisbrevkandidaten tar praksisbrevprøven og kan så fortsette som lærling mot fag- eller svennebrev.',
@@ -169,6 +174,7 @@ export const VEIER: Vei[] = [
     id: 'fra-studieforberedende',
     mal: 'fagbrev',
     tittel: 'Lærling etter Vg1 studieforberedende',
+    kortnavn: 'opphenting og kryssløp',
     kort: 'Med yrkesfaglig opphenting eller kryssløp',
     ingress:
       'En elev med Vg1 studiespesialisering kan gå over til Vg2 på yrkesfag, med yrkesfaglig opphenting eller som kryssløp.',
@@ -212,6 +218,7 @@ export const VEIER: Vei[] = [
     id: 'vg3-i-skole',
     mal: 'fagbrev',
     tittel: 'Elev på Vg3 i skole',
+    kortnavn: 'Vg3 i skole',
     kort: 'Uten læreplass: fag- eller svenneprøve som elev',
     ingress:
       'Den som oppfyller vilkårene for læreplass, men ikke får det, har rett til et annet tilbud på Vg3, og tar prøven som elev.',
@@ -241,6 +248,7 @@ export const VEIER: Vei[] = [
     id: 'laerekandidat-laerling',
     mal: 'fagbrev',
     tittel: 'Lærekandidat som blir lærling',
+    kortnavn: 'lærekandidat til lærling',
     kort: 'Kontrakten endres underveis',
     ingress:
       'En lærekandidat kan få endret kontrakten til lærekontrakt, med samtykke fra fylkeskommunen.',
@@ -268,6 +276,7 @@ export const VEIER: Vei[] = [
     id: 'fagbrev-pa-jobb',
     mal: 'fagbrev',
     tittel: 'Kandidat for fagbrev på jobb',
+    kortnavn: 'fagbrev på jobb',
     kort: 'Praksis og kontrakt med arbeidsgiveren',
     ingress:
       'For den som jobber i faget: minst ett års allsidig praksis i heltid før kontrakten, og så minst ett år med kontrakt.',
@@ -300,6 +309,7 @@ export const VEIER: Vei[] = [
     id: 'praksiskandidat',
     mal: 'fagbrev',
     tittel: 'Praksiskandidat',
+    kortnavn: 'praksiskandidat',
     kort: 'Praksis uten opplæring, og prøven',
     ingress:
       'Den som har allsidig praksis 25 prosent lengre enn opplæringsløpet, kan melde seg til prøven uten opplæring i skole eller bedrift.',
@@ -335,6 +345,7 @@ export const VEIER: Vei[] = [
     id: 'praksisbrevkandidat',
     mal: 'praksisbrev',
     tittel: 'Praksisbrevkandidat',
+    kortnavn: 'praksisbrevkandidat',
     kort: 'Opplæring etter lokal læreplan, og praksisbrev',
     ingress:
       'Opplæring i bedrift etter en lokal læreplan, med praksisbrevprøve til slutt.',
@@ -368,6 +379,7 @@ export const VEIER: Vei[] = [
     id: 'laerekandidat',
     mal: 'kompetansebevis',
     tittel: 'Lærekandidat',
+    kortnavn: 'lærekandidat',
     kort: 'Opplæring mot mål som er fastsatt for kandidaten, og kompetansebevis',
     ingress:
       'Opplæring mot en mindre omfattende prøve enn fag- eller svenneprøven. En elev kan bli lærekandidat etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten.',

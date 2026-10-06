@@ -8128,3 +8128,37 @@ a.knapp {
   margin: var(--rom-3) 0 0;
   font-size: var(--str-s);
 }
+
+/* «Mer om …» nederst i en vei: en fylt knapp i hele bredden, med det siden har på linjen under (eier 06.10.2026, runde 3). */
+.fb-mer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: var(--rom-2);
+  text-decoration: none;
+}
+
+.fb-mer-tekst {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fb-mer-under {
+  font-size: var(--str-xs);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.fb-mer > .ikon {
+  flex: none;
+}
+
+/* På de smaleste skjermene (320 px) får knappen mindre luft og litt mindre skrift, så «Mer om …» står på én linje. */
+@media (max-width: 22.5rem) {
+  .fb-mer {
+    padding-inline: var(--rom-3);
+    font-size: var(--str-s);
+  }
+}

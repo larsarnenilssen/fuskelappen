@@ -57,9 +57,13 @@ function Veikort({ vei }: { vei: Vei }) {
     <Lukketkort tittel={vei.tittel} smakebit={vei.kort} klasse="fb-vei">
       <Stegrad vei={vei} />
       <Fakta vei={vei} />
-      <a class="lenke-pil" href={`#${veiRute(vei.id)}`}>
-        {t('opplaeringslop.fagbrev.lesMer')}
-        <Ikon navn="hoyre" class="ikon-liten" />
+      {/* Veien videre for den som vil vite mer: en tydelig knapp til siden for veien (eier 06.10.2026, runde 3). */}
+      <a class="knapp fb-mer" href={`#${veiRute(vei.id)}`}>
+        <span class="fb-mer-tekst">
+          <span>{t('opplaeringslop.fagbrev.lesMer', { rolle: vei.kortnavn })}</span>
+          <span class="fb-mer-under">{t('opplaeringslop.fagbrev.lesMerTekst')}</span>
+        </span>
+        <Ikon navn="hoyre" />
       </a>
     </Lukketkort>
   );
