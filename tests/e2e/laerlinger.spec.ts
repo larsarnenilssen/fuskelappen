@@ -63,13 +63,24 @@ test.describe('lærlinger og kandidater på mobil', () => {
     await page.getByRole('button', { name: 'Praksis i arbeidslivet' }).click();
     await expect(page).toHaveURL(/fra=praksis$/);
     await expect(page.locator('.fb-overganger > li')).toHaveCount(2);
-    // Hver overgang har kilde.
-    await expect(page.locator('.fb-overganger .fb-kilde').first()).toContainText('§ 9-58');
+    // Kortene står uten kilder. Kildene står lukket under kortene, og på siden overgangen går til (eier 06.10.2026).
+    await expect(page.locator('.fb-overganger .fb-kilde')).toHaveCount(0);
+    await expect(page.locator('.fb-to-bytte .veiviser-kilder summary')).toContainText('Kilder (2)');
     await page.getByRole('link', { name: /Kandidat for fagbrev på jobb/ }).click();
     await expect(page.locator('main h1')).toHaveText('Kandidat for fagbrev på jobb');
+    await expect(page.locator('.fb-overganger .fb-kilde').first()).toContainText('§ 9-58');
     await page.locator('.fb-overganger a', { hasText: 'Praksis i arbeidslivet' }).click();
     await expect(page).toHaveURL(/fane=bytte&fra=praksis$/);
     await expect(page.getByRole('button', { name: 'Praksis i arbeidslivet' })).toHaveAttribute('aria-pressed', 'true');
+  });
+
+  test('lærekandidaten kan bli elev, og lærlingen kan gå til Vg3 i skole (eier 06.10.2026)', async ({ page }) => {
+    await page.goto(`${SIDE}?fane=bytte&fra=laerekandidat`);
+    await expect(page.locator('.fb-overganger')).toContainText('Elev i videregående skole');
+    await page.goto(`${SIDE}?fane=bytte&fra=laerling`);
+    await page.locator('.fb-overganger a', { hasText: 'Elev på Vg3 i skole' }).click();
+    await expect(page.locator('main h1')).toHaveText('Elev på Vg3 i skole');
+    await expect(page.locator('.fb-overganger > li', { hasText: 'Når kontrakten er sagt opp' }).locator('.fb-kilde')).toContainText('§ 5-6');
   });
 
   test('oppsigelse og heving står bare på veiene med kontrakt i bedrift', async ({ page }) => {

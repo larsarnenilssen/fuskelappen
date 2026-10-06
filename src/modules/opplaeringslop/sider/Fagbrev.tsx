@@ -10,6 +10,7 @@ import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { kildeTekst } from '../../../components/Kildelenke.tsx';
+import { KortfotRader } from '../../../components/Kortfot.tsx';
 import { Sammenligning } from '../../../components/Sammenligning.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import type { Flerspraak, Veimal } from '../../../core/innhold/skjema.ts';
@@ -249,9 +250,11 @@ function Bytte({ data, valg, endre }: { data: Veiinnhold; valg: Valg; endre: End
         <ul class="fb-overganger">
           {fra.overganger.map((o) => {
             const m = maal(data, o);
-            return <Overgangskort key={m.rute + m.tittel.nb} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel[malform]} vilkar={o.vilkar[malform]} kilder={o.kilder} />;
+            return <Overgangskort key={m.rute + m.tittel.nb} rute={`#${m.rute}`} ikon="vei" tittel={m.tittel[malform]} vilkar={o.vilkar[malform]} />;
           })}
         </ul>
+        {/* Kildene til overgangene står samlet og lukket under kortene, og på siden hver vei går til (eier 06.10.2026). */}
+        <KortfotRader kilder={fra.kilder} />
       </div>
     </div>
   );

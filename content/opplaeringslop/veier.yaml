@@ -561,11 +561,25 @@
         nn: "Kontrakten kan berre endrast med samtykke frå fylkeskommunen."
       kilder:
         - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - til: vei-vg3-i-skole
+      vilkar:
+        nb: "Når kontrakten er sagt opp eller hevet. Den som oppfyller vilkårene for læretid, men ikke får læreplass, har rett til et annet tilbud på Vg3 bygd på Vg2. Retten til videregående opplæring varer til man har studie- eller yrkeskompetanse."
+        nn: "Når kontrakten er sagd opp eller heva. Den som oppfyller vilkåra for læretid, men ikkje får læreplass, har rett til eit anna tilbod på Vg3 bygd på Vg2. Retten til vidaregåande opplæring varer til ein har studie- eller yrkeskompetanse."
+      kilder:
+        - { id: opplaeringslova, punkt: "§ 7-3", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
+        - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+        - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
   kilder:
     - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+    - { id: opplaeringslova, punkt: "§ 7-3", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
+    - { id: opplaeringslova, punkt: "§ 5-6", url: "https://lovdata.no/lov/2023-06-09-30/§5-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-2" }
+    - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
   kontrollert: null
   kontrollsporsmal:
-    - "Oppsigelse og heving står under «Om veien», ikke som overgang (eier 06.10.2026). Er endring fra lærling til lærekandidat da den eneste overgangen som bør vises for lærlinger?"
+    - "Oppsigelse og heving står under «Om veien», ikke som overgang (eier 06.10.2026). Er endring til lærekandidat og Vg3 i skole de overgangene som bør vises for lærlinger?"
+    - "Gjelder retten til et annet tilbud på Vg3 (ol. § 5-6 og ofo. § 6-2) også for en lærling som har mistet læreplassen fordi kontrakten er sagt opp eller hevet, når kildene ikke sier det direkte?"
 
 - id: fra-laerekandidat
   type: utgangspunkt
@@ -583,13 +597,28 @@
         - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
         - { id: opplaeringsforskrifta, punkt: "§ 6-9 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
         - { id: udir-laerekandidatordningen, punkt: "Hva får du som lærekandidat?" }
+    - side: { tittel: { nb: "Elev i videregående skole", nn: "Elev i vidaregåande skule" }, rute: /inntak }
+      vilkar:
+        nb: "Løpet kan gå i lærebedrift, i skole eller begge deler. Fylkeskommunen kan godkjenne at skolen tar en større del av opplæringen, eller at skole og bedrift kommer i en annen rekkefølge, og kontrakten endres med samtykke fra fylkeskommunen. Den som slutter som lærekandidat, kan søke inntak som elev. Retten til videregående opplæring varer til man har studie- eller yrkeskompetanse."
+        nn: "Løpet kan gå i lærebedrift, i skule eller begge delar. Fylkeskommunen kan godkjenne at skulen tek ein større del av opplæringa, eller at skule og bedrift kjem i ei anna rekkjefølgje, og kontrakten blir endra med samtykke frå fylkeskommunen. Den som sluttar som lærekandidat, kan søkje inntak som elev. Retten til vidaregåande opplæring varer til ein har studie- eller yrkeskompetanse."
+      kilder:
+        - { id: udir-retten-til-vgo, punkt: "Hvordan bli lærekandidat", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/hvordan-bli-larekandidat/" }
+        - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav b og c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+        - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+        - { id: opplaeringslova, punkt: "§ 7-3", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
+        - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
   kilder:
     - { id: opplaeringslova, punkt: "§ 7-2 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
     - { id: opplaeringsforskrifta, punkt: "§ 6-9 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-9" }
     - { id: udir-laerekandidatordningen, punkt: "Hva får du som lærekandidat?" }
+    - { id: udir-retten-til-vgo, punkt: "Hvordan bli lærekandidat", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/hvordan-bli-larekandidat/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 6-3 første ledd bokstav b og c", url: "https://lovdata.no/forskrift/2024-06-03-900/§6-3" }
+    - { id: opplaeringslova, punkt: "§ 7-3", url: "https://lovdata.no/lov/2023-06-09-30/§7-3" }
+    - { id: opplaeringslova, punkt: "§ 5-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
   kontrollert: null
   kontrollsporsmal:
     - "Er «når kandidaten oppfyller kravene for fag- eller svennebrev» (Udirs side om lærekandidatordningen) riktig gjengitt?"
+    - "At en lærekandidat kan ha hele eller deler av løpet i skole, bygger på Udirs side «Hvordan bli lærekandidat» og ofo. § 6-3 bokstav b og c. At den som slutter, kan søke inntak som elev, bygger på at retten varer til studie- eller yrkeskompetanse (ol. § 5-1 andre ledd). Er dette riktig?"
 
 - id: fra-praksisbrevkandidat
   type: utgangspunkt

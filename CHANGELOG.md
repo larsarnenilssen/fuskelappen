@@ -4,6 +4,12 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Lærlinger og kandidater, «Bytte vei»:**
+  - Kortene står uten kilder, så fanen leses som «Veiene». Kildene står lukket under kortene, og på siden hver overgang går til.
+  - Nye overganger: lærekandidat til elev i videregående skole, og lærling til Vg3 i skole når kontrakten er sagt opp eller hevet.
+
 ## [0.38.1] – 2026-10-06
 
 ### Endret
