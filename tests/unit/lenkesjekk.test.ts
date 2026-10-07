@@ -2,7 +2,7 @@
 // lenker eller kodefil som bygger lenker, må ha en regel i scripts/lenker/regler.ts.
 import { describe, expect, it } from 'vitest';
 import { DATAFILER, LENKEBYGGERE } from '../../scripts/lenker/regler.ts';
-import { finnDatafiler, finnLenkebyggere, finnUrler, samleLenker } from '../../scripts/lenker/samle.ts';
+import { finnDatafiler, finnLenkebyggere, finnUrler, samleLenker, utenKommentarer } from '../../scripts/lenker/samle.ts';
 import { lagKontrollrapport } from '../../scripts/kontroll/rapport.ts';
 import { lagRapport, type Lenkestatus, oppdaterStatus, type Resultat, sjekkAlle, stengteLenker, stengteNettsteder, velgStikkprove, vurderSvar } from '../../scripts/lenker/sjekk.ts';
 
@@ -26,6 +26,12 @@ describe('alle lenkene kommer med', () => {
     for (const b of LENKEBYGGERE) expect(b.lenker(rot).length, b.navn).toBeGreaterThan(0);
   });
 
+  it('adressene i kommentarer i YAML er eksempler og sjekkes ikke', () => {
+    const tekst = '# Mal: https://lovdata.no/lov/ÅÅÅÅ-MM-DD-nr\n  url: https://a.no/x # kommentar\n';
+    expect(finnUrler(utenKommentarer(tekst))).toEqual(['https://a.no/x']);
+    expect(samleLenker(rot).filter((l) => l.url.includes('ÅÅÅÅ'))).toEqual([]);
+  });
+
   it('finner adresser i tekst uten tegnsettingen etter', () => {
     expect(finnUrler('Se https://www.udir.no/lk20/. Og [lenke](https://lovdata.no/lov/2023-06-09-30/§11-1), samt `${x}`.')).toEqual(['https://www.udir.no/lk20/', 'https://lovdata.no/lov/2023-06-09-30/§11-1']);
   });
@@ -42,6 +48,13 @@ describe('vurderingen av svaret', () => {
     expect(vurderSvar('https://a.no/x', 403, null)).toBe('feil');
     expect(vurderSvar('https://a.no/x', 503, null)).toBe('feil');
     expect(vurderSvar('https://a.no/x', null, null)).toBe('feil');
+  });
+
+  it('Lovdatas korte adresser er ok når de sendes videre til den lange adressen', () => {
+    expect(vurderSvar('https://lovdata.no/lov/2023-06-09-30/§5-1', 200, 'https://lovdata.no/dokument/NL/lov/2023-06-09-30/KAPITTEL_3-1')).toBe('ok');
+    expect(vurderSvar('https://lovdata.no/forskrift/2024-06-03-900', 200, 'https://lovdata.no/dokument/SF/forskrift/2024-06-03-900')).toBe('ok');
+    expect(vurderSvar('https://lovdata.no/dokument/SF/forskrift/2024-06-03-900', 200, 'https://lovdata.no/dokument/SF/forskrift/2025-01-01-1')).toBe('flyttet');
+    expect(vurderSvar('https://lovdata.no/lov/2023-06-09-30', 200, 'https://lovdata.no/sok')).toBe('flyttet');
   });
 });
 

@@ -278,7 +278,7 @@ kilder:
     navn: Grep – fag, læreplaner, vurderingsordninger og årstimetall
     kortnavn: Grep
     utgiver: Utdanningsdirektoratet
-    url: https://data.udir.no/kl06/v201906/
+    url: https://www.udir.no/om-udir/data/kl06-grep/
     type: grep
     niva: nasjonal
     lisens: NLOD 2.0
@@ -493,7 +493,7 @@ kilder:
     faser: [5]
     merknad: >-
       Hentes hver uke med npm run hent:nor til data/udir/opplaeringskontor.json (avgjørelse 053), fra
-      https://data-nor.udir.no/v4. Aktive opplæringskontorer med kommune, nettside, antall lærlinger og fylkene de er
+      NOR-API-et (data-nor.udir.no/v4). Aktive opplæringskontorer med kommune, nettside, antall lærlinger og fylkene de er
       godkjent i. NOR sier ikke hvilke lærefag et kontor har.
 
   - id: ndla
@@ -1488,7 +1488,7 @@ kilder:
   - id: udir-nsr
     navn: Nasjonalt skoleregister (NSR)
     utgiver: Utdanningsdirektoratet
-    url: https://data-nsr.udir.no/
+    url: https://nsr.udir.no/innhold/om
     type: data
     niva: nasjonal
     lisens: NLOD 2.0
@@ -1501,7 +1501,7 @@ kilder:
   - id: ssb-fylkesinndeling
     navn: Standard for fylkesinndeling
     utgiver: Statistisk sentralbyrå
-    url: https://www.ssb.no/klass/klassifikasjoner/104
+    url: https://dataportal.ssb.no/classifications/104/codes
     type: side
     niva: nasjonal
     lisens: NLOD 2.0
