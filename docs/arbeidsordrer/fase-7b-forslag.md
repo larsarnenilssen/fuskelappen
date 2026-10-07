@@ -1,8 +1,10 @@
 # Fase 7b – forslag 1: nyhetene, kildene og designet
 
-Til eier, 07.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 med ingress, K3 ja»). Skissen ligger i testversjonen: https://jukselappen.no/test/ (forsiden → «Nyheter» i panelet, og Oppslag → Nyheter). Runde 2 er oppdatert etter svarene dine på designet.
+*Status 07.10.2026, kveld:* Eier godkjente designet og kildene etter runde 6. Nyhetene er levert i 0.42.0. Rundene under står som de ble skrevet, nyeste øverst.
 
-Sakene i skissen er ekte, hentet 07.10.2026 fra 15 kilder (81 saker de siste 90 dagene). Ingenting er publisert i appen, og arbeidsflyten som henter hver dag, lages først når du har svart på avgjørelse 084.
+Til eier, 07.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 med ingress, K3 ja»). Skissen lå i testversjonen: https://jukselappen.no/test/.
+
+Sakene i den første skissen var ekte, hentet 07.10.2026 fra 15 kilder (81 saker de siste 90 dagene).
 
 ---
 
