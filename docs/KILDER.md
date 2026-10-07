@@ -96,6 +96,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Siste nytt, Utdanningsdirektoratet](https://www.udir.no/om-udir/siste-nytt/) | Utdanningsdirektoratet | nasjonal | data | NLOD 2.0 | ingen | 7 |
 | [Nyheter fra Skolelederforbundet (RSS)](https://www.skolelederforbundet.no/) | Skolelederforbundet | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | ingen | 7 |
 | [Nyheter fra Utdanningsforbundet](https://www.utdanningsforbundet.no/nyheter) | Utdanningsforbundet | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken. | ingen | 7 |
+| [Nyheter fra Statsforvalteren (RSS per embete)](https://www.statsforvalteren.no/) | Statsforvalteren | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | ingen | 7 |
+| [Utdanningsnytt, saker merket videregående (RSS)](https://www.utdanningsnytt.no/tag/videreg%C3%A5ende) | Utdanningsforbundet | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | ingen | 7 |
 
 ## Merknader
 
@@ -190,3 +192,5 @@ Sender udir.no hentingen videre til en annen adresse, f.eks. «tidligere rundskr
 - **udir-siste-nytt:** Nyhetslisten (første side, ti saker). Udir har ingen RSS. Filtreres på ord for videregående.
 - **skolelederforbundet-nyheter:** Interesseorganisasjon. Medlemstilbud tas ikke med.
 - **utdanningsforbundet-nyheter:** Interesseorganisasjon. Nyhetslisten (første side). Ingen RSS. Eier må si ja til å lese en liste og ikke en feed.
+- **statsforvalteren-nyheter:** Ti embeter, hvert med sin feed. Filtreres på ord for videregående, og vises bare når fylket er valgt. Feeden har bare datoen saken sist ble oppdatert (atom:updated); hentingen beholder den første datoen den så.
+- **utdanningsnytt-nyheter:** Fagpresse, utgitt av Utdanningsforbundet. robots.txt tillater alt.

@@ -137,3 +137,126 @@ kilder:
     url: https://www.utdanningsforbundet.no/nyheter
     filter: alle
     ingress: true
+
+  - id: utdanningsnytt
+    navn: { nb: Utdanningsnytt, nn: Utdanningsnytt }
+    type: fagpresse
+    merknad: { nb: Utgitt av Utdanningsforbundet, nn: Gitt ut av Utdanningsforbundet }
+    kilde: utdanningsnytt-nyheter
+    format: rss
+    url: https://www.utdanningsnytt.no/tag/videreg%C3%A5ende?lab_viewport=rss
+    filter: alle
+    ingress: true
+
+  # Statsforvalteren: ett embete per fylke eller gruppe av fylker. Sakene står bare når et av fylkene er valgt.
+  # Embetene som skriver nynorsk, har feeden under /nn/<embete>/nyhende/.
+
+  - id: statsforvalteren-agder
+    navn: { nb: Statsforvalteren i Agder, nn: Statsforvaltaren i Agder }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/agder/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["42"]
+
+  - id: statsforvalteren-innlandet
+    navn: { nb: Statsforvalteren i Innlandet, nn: Statsforvaltaren i Innlandet }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/innlandet/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["34"]
+
+  - id: statsforvalteren-more-og-romsdal
+    navn: { nb: Statsforvalteren i Møre og Romsdal, nn: Statsforvaltaren i Møre og Romsdal }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nn/more-og-romsdal/nyhende/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["15"]
+
+  - id: statsforvalteren-nordland
+    navn: { nb: Statsforvalteren i Nordland, nn: Statsforvaltaren i Nordland }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/nordland/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["18"]
+
+  - id: statsforvalteren-rogaland
+    navn: { nb: Statsforvalteren i Rogaland, nn: Statsforvaltaren i Rogaland }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nn/rogaland/nyhende/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["11"]
+
+  - id: statsforvalteren-troms-og-finnmark
+    navn: { nb: Statsforvalteren i Troms og Finnmark, nn: Statsforvaltaren i Troms og Finnmark }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/troms-og-finnmark/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["55", "56"]
+
+  - id: statsforvalteren-trondelag
+    navn: { nb: Statsforvalteren i Trøndelag, nn: Statsforvaltaren i Trøndelag }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/trondelag/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["50"]
+
+  - id: statsforvalteren-vestfold-og-telemark
+    navn: { nb: Statsforvalteren i Vestfold og Telemark, nn: Statsforvaltaren i Vestfold og Telemark }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/vestfold-og-telemark/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["39", "40"]
+
+  - id: statsforvalteren-vestland
+    navn: { nb: Statsforvalteren i Vestland, nn: Statsforvaltaren i Vestland }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nn/vestland/nyhende/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["46"]
+
+  - id: statsforvalteren-ostfold-buskerud-oslo-og-akershus
+    navn: { nb: "Statsforvalteren i Østfold, Buskerud, Oslo og Akershus", nn: "Statsforvaltaren i Østfold, Buskerud, Oslo og Akershus" }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/ostfold-buskerud-oslo-og-akershus/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["31", "33", "03", "32"]

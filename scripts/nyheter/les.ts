@@ -59,7 +59,7 @@ export function lesFeed(xml: string): RaSak[] {
       if (!url.startsWith('http') || !tittel) return [];
       const ingress = rensTekst(felt(b, 'description', 'content:encoded') ?? '');
       const stikkord = [...b.matchAll(/<category(?:\s[^>]*)?>([\s\S]*?)<\/category>/gi)].map((m) => rensTekst(m[1] ?? ''));
-      return [{ tittel, url, dato: lesDato(rensTekst(felt(b, 'pubDate', 'dc:date') ?? '')), ingress: ingress || null, stikkord }];
+      return [{ tittel, url, dato: lesDato(rensTekst(felt(b, 'pubDate', 'dc:date', 'atom:updated') ?? '')), ingress: ingress || null, stikkord }];
     });
   }
   return [...xml.matchAll(/<entry(?:\s[^>]*)?>([\s\S]*?)<\/entry>/gi)].flatMap((m) => {

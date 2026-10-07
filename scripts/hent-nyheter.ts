@@ -68,10 +68,14 @@ export function tilSaker(kilde: Nyhetskilde, filter: Nyhetsfilter, raa: RaSak[],
   });
 }
 
-/** Nye og gamle saker fra én kilde: de nye først, uten dobbelt, nyeste først, høyst MAKS_PER_KILDE. */
+/**
+ * Nye og gamle saker fra én kilde: uten dobbelt, nyeste først, høyst MAKS_PER_KILDE. En sak vi har sett før, beholder
+ * datoen den fikk første gang, fordi noen feeder bare har datoen saken sist ble endret (Statsforvalteren).
+ */
 export function slaaSammen(nye: Nyhet[], gamle: Nyhet[], fra: string): Nyhet[] {
+  const forrigeDato = new Map(gamle.map((s) => [s.url, s.dato]));
   const sett = new Set<string>();
-  return [...nye, ...gamle]
+  return [...nye.map((s) => ({ ...s, dato: forrigeDato.get(s.url) ?? s.dato })), ...gamle]
     .filter((s) => s.dato >= fra && !sett.has(s.url) && sett.add(s.url))
     .sort((a, b) => b.dato.localeCompare(a.dato))
     .slice(0, MAKS_PER_KILDE);

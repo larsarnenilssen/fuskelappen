@@ -24,6 +24,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: ['regjeringen-kd-nyheter', 'udir-siste-nytt', 'skolelederforbundet-nyheter', 'utdanningsforbundet-nyheter'],
+  kilder: ['regjeringen-kd-nyheter', 'udir-siste-nytt', 'utdanningsnytt-nyheter', 'statsforvalteren-nyheter', 'skolelederforbundet-nyheter', 'utdanningsforbundet-nyheter'],
   status: 'aktiv',
 };

@@ -1560,3 +1560,33 @@ kilder:
     faser: [7]
     merknad: >-
       Interesseorganisasjon. Nyhetslisten (første side). Ingen RSS. Eier må si ja til å lese en liste og ikke en feed.
+
+  - id: statsforvalteren-nyheter
+    navn: Nyheter fra Statsforvalteren (RSS per embete)
+    kortnavn: Statsforvalteren
+    utgiver: Statsforvalteren
+    url: https://www.statsforvalteren.no/
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Ti embeter, hvert med sin feed. Filtreres på ord for videregående, og vises bare når fylket er valgt. Feeden har
+      bare datoen saken sist ble oppdatert (atom:updated); hentingen beholder den første datoen den så.
+
+  - id: utdanningsnytt-nyheter
+    navn: Utdanningsnytt, saker merket videregående (RSS)
+    kortnavn: Utdanningsnytt
+    utgiver: Utdanningsforbundet
+    url: https://www.utdanningsnytt.no/tag/videreg%C3%A5ende
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: Fagpresse, utgitt av Utdanningsforbundet. robots.txt tillater alt.
