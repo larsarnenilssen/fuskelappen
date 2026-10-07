@@ -809,6 +809,25 @@ kilder:
       ekstern bruk ennå og kan endres uten varsel. Kreditering: «Inneholder data under NLOD, tilgjengeliggjort på
       data.udir.no».
 
+  - id: udir-statistikkbanken
+    navn: Statistikkbanken for videregående opplæring, Udir
+    kortnavn: Udirs statistikkbank
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/tall-og-forskning/statistikk/statistikk-videregaende-skole/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: statistikk
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Søkere, elever, formidling til læreplass, lærekontrakter, fravær, gjennomføring, fag- og svennebrev og
+      eksamenskarakterer fra rapport-API-et bak statistikkbanken på udir.no (statistikkportalen.udir.no), for landet,
+      fylkene og skolene. Hentes hver uke med npm run hent:statistikk til data/statistikk/ (avgjørelse 080). Udir skriver
+      at API-et ikke er ment for ekstern bruk ennå og kan endres uten varsel. Eier har bestemt at appen bruker det
+      (07.10.2026). Kreditering: «Inneholder data under NLOD, tilgjengeliggjort på data.udir.no».
+
   - id: udir-mer-opplaering
     navn: Rett til mer opplæring
     utgiver: Utdanningsdirektoratet

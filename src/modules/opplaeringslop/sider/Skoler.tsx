@@ -20,6 +20,8 @@ import { fullKode, kortKode, type Tilbudene } from '../data.ts';
 import { filtrerSkoler, lopetTil, type Skoleoppforing } from '../skoler.ts';
 import { sokTilbud } from '../sok.ts';
 import { Brodsmuler, DinSkole, Lasting, Tilbudslenke, tilbudsnavn, useSkoler, useTilbudsdata } from './felles.tsx';
+import { SkolenITall, useStatistikk } from '../../statistikk/komponenter.tsx';
+import type { Statistikk } from '../../../core/statistikk/skjema.ts';
 
 const PER_SIDE = 30;
 const TRINN = ['Vg1', 'Vg2', 'Vg3', 'Bedrift'];
@@ -114,6 +116,7 @@ function Skolekort({
   valgt,
   program,
   regler,
+  statistikk,
 }: {
   skole: Skoleoppforing;
   indeks: Fagindeks;
@@ -124,6 +127,8 @@ function Skolekort({
   program: string;
   /** Skolens egne regler fra Lovdata (avgjørelse 061). */
   regler: readonly Skoleregel[];
+  /** Nøkkeltallene fra Udirs statistikkbank (avgjørelse 080), når de er lastet. */
+  statistikk: Statistikk | null;
 }) {
   const { t, malform } = useTekst();
   const [vist, settVist] = useState(apen);
@@ -164,6 +169,8 @@ function Skolekort({
       </div>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
         {/* Nettsiden og skolens egne regler som knapper øverst, og en strek før tilbudene (eier 05.10.2026). */}
+        {/* Skolen i tall øverst i kortet (skisse til eier 07.10.2026, avgjørelse 080). */}
+        {vist && statistikk && skole.orgnr && <SkolenITall orgnr={skole.orgnr} d={statistikk} />}
         {vist && (skole.nettside || regler.length > 0) && (
           <>
             <p class="skolekort-snarveier">
@@ -267,6 +274,7 @@ export default function Skoler({ sporring }: SideProps) {
   const skoleregler = useSkoleregler();
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
+  const statistikk = useStatistikk();
   const [data, provIgjen] = useTilbudsdata();
   const register = useSkoler();
   const sokId = useId();
@@ -396,6 +404,7 @@ export default function Skoler({ sporring }: SideProps) {
                 valgt={filter.tilbud}
                 program={filter.program}
                 regler={s.orgnr ? (skoleregler.get(s.orgnr) ?? []) : []}
+                statistikk={statistikk === 'feil' ? null : statistikk}
               />
             ))}
           </ul>

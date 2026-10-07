@@ -4,6 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til (skisse til godkjenning)
+
+- **Videregående i tall** (ny side): søkere per utdanningsprogram, fylkene side om side, læreplass fylke for fylke og gjennom høsten, gjennomføring, fag- og svennebrev, fravær og eksamen. Velg fylke eller hele landet. Tallene kommer fra Udirs statistikkbank og hentes hver uke.
+- **Tallene der de hører hjemme:**
+  - Fylkessiden: fire nøkkeltall og fylkets plass.
+  - Inntak: søkerne.
+  - Lærlinger og kandidater: læreplass og lærekontrakter.
+  - Fraværsgrensen: median fravær, også for valgt skole.
+  - Eksamen: snittkarakterer.
+  - Skolekortet: elevtall og fravær.
+- **Nye begreper:** nulltoleranse og psykososialt skolemiljø.
+
+### Endret
+
+- **Et trygt og godt skolemiljø:** Kortet om fysiske inngrep under «Henger sammen med» heter nå «Fysiske inngrep (kapittel 13)» og lenker til bortvisning og pålagt skolebytte under Skoleregler.
+
 ## [0.40.0] – 2026-10-06
 
 ### Lagt til

@@ -404,7 +404,7 @@ export const kildeSkjema = z
     niva: nivaSkjema,
     fylke: z.string().regex(/^\d{2}$/).optional(),
     lisens: z.string().min(1),
-    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'inntak', 'elevundersokelsen', 'ingen']),
+    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'inntak', 'elevundersokelsen', 'statistikk', 'ingen']),
     aktiv: z.boolean(),
     uttrekk: z
       .object({

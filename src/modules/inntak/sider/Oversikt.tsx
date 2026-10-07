@@ -10,6 +10,7 @@ import { hentInnhold, UNDERSIDER, veiviserRute, type Inntaksinnhold } from '../i
 import { nesteFrist, tidspunkt } from '../tidslinje.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
+import { SokereBoks } from '../../statistikk/komponenter.tsx';
 
 export default function Oversikt() {
   const { t, malform } = useTekst();
@@ -62,6 +63,8 @@ export default function Oversikt() {
               <Ikon navn="hoyre" class="frist-inngang-pil" />
             </a>
           </section>
+          {/* Søkerne i fylket i år (skisse til eier 07.10.2026, avgjørelse 080). */}
+          <SokereBoks fylke={innstillinger.fylke} />
           <section>
             <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>
             {/* Samme kort som tidslinjen over, med beskrivelsen i stedet for den neste fristen. */}

@@ -104,6 +104,7 @@ jobs:
           npm run hent:eksamen || status=1
           npm run hent:inntak || status=1
           npm run hent:elevundersokelsen || status=1
+          npm run hent:statistikk || status=1
           exit $status
       # Lageret lagres også når Grep ble stoppet, så neste kjøring fortsetter der denne slapp. Grenen har bare én
       # commit, som skrives over.
@@ -207,7 +208,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen data/statistikk docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.

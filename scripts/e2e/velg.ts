@@ -28,6 +28,7 @@ const DATAMODULER: Record<string, readonly string[]> = {
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
   elevundersokelsen: ['skolemiljo'],
+  statistikk: ['fylker', 'inntak', 'vurdering', 'eksamen', 'opplaeringslop'],
   udir: ['inntak', 'vurdering'],
   skolerute: ['kalender'],
   skolear: ['inntak', 'arbeidstid', 'vurdering'],

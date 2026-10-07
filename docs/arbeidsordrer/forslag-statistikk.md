@@ -66,3 +66,31 @@ Grunntanken: få tall, alltid med sammenligning (landet, året før) og kilde, o
 1. Kan appen bruke rapport-API-et til Udir, som Udir sier ikke er ment for ekstern bruk, når hentingen stopper og melder fra ved endringer? Eller skal vi først be Udir om å legge tabellene i det åpne API-et?
 2. Hvilke av forslagene B1–B4 skal tas, og i hvilken fase?
 3. Gjennomføring per fylke: Skal tallene fra Udir vises for de gamle fylkene, eller skal de hentes fra SSB for de nåværende fylkene?
+
+## D. Eiers svar og skissen i appen (07.10.2026)
+
+**Svar fra eier:**
+1. Bruk Udirs API.
+2. Eier vil se skisser av alle forslagene, helst nå eller i samme pakke som nyhetene.
+3. Gjennomføring: oppklar og avklar (se under).
+
+**Skissen** ligger på testsiden. Alle tallene er ekte og hentet fra statistikkbanken 07.10.2026:
+- **B1** på fylkessiden: fire nøkkeltall, fylkets plass blant fylkene og lenke til B4. Rangeringen av alle fylkene står bare på B4, så fylkessiden ikke blir lang.
+- **B2:**
+  - Inntak: søkere i fylket, endringen fra i fjor og hvor mange som søkte læreplass.
+  - Lærlinger og kandidater: andelen som fikk læreplass og løpende kontrakter.
+  - Fraværsgrensen: median fravær i fylket, landet og på valgt skole.
+  - Eksamen: snittkarakter i sju fellesfag, fylket mot landet.
+- **B3** i skolekortet under Skoler og tilbud: elevtall med endring, median fravær og lenke til Elevundersøkelsen for skolen.
+- **B4** som egen side, `#/statistikk`:
+  - valg av fylke og nøkkeltall
+  - søkere per utdanningsprogram mot i fjor, og fylkene side om side i en tabell
+  - fylkene rangert på læreplass, og læreplass gjennom høsten
+  - gjennomføring, fag- og svennebrev, fravær og eksamen
+- **Henting:** én kilde i kilderegisteret (`udir-statistikkbanken`) i stedet for én per tabell, siden alle tabellene kommer fra samme statistikkbank. Se avgjørelse 080.
+
+**Gjennomføring per fylke, oppklart:**
+- Udir har gjennomføring på fem/seks år til og med kullet som startet i 2019. Tallene er fordelt på fylkene slik de var før 2020, med teller og nevner.
+- Appen regner om til dagens fylker ved å legge sammen teller og nevner for de gamle fylkene. Hordaland og Sogn og Fjordane blir for eksempel Vestland. Det blir nøyaktig for hele fylker. Noen få kommuner byttet fylke i 2020 og 2024 (f.eks. Jevnaker, Lunner og Svelvik). Elevene der telles i det gamle fylket, så avviket er lite.
+- **Problemet kommer med kullet fra 2020.** Udir vil fordele det på fylkene fra 2020 til 2023 (Viken, Vestfold og Telemark, Troms og Finnmark). Disse kan ikke deles opp igjen, så sju av dagens fylker vil mangle tall. Fag- og svennebrev viser det allerede: for kullet fra 2020 har bare åtte fylker tall, og appen skriver at tallene mangler for de andre.
+- **Anbefaling:** Bruk Udir og omregningen så lenge den går. Når kullet fra 2020 kommer, prøver vi SSB-tabellen med dagens fylker (f.eks. 14863) for de sju fylkene. SSB kan ikke nås fra dette miljøet, men kan nås fra GitHub Actions. Det må prøves der før vi velger.

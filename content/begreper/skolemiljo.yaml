@@ -190,6 +190,54 @@
   stikkord: [mulkt, vedtak, statsforvalteren, frist]
   relatert: [handhevingsordningen]
 
+- id: nulltoleranse
+  type: begrep
+  tittel: { nb: Nulltoleranse, nn: Nulltoleranse }
+  tekst:
+    nb: >-
+      Nulltoleranse betyr at skolen ikke skal godta krenkende oppførsel, for eksempel mobbing, vold, diskriminering og
+      trakassering. Skolen skal også arbeide hele tiden for at alle elevene skal ha et trygt og godt skolemiljø, så
+      krenkelser blir forebygget. Se [opplæringslova § 12-3](#/lov/opplaeringslova/12-3).
+    nn: >-
+      Nulltoleranse tyder at skulen ikkje skal godta krenkjande oppførsel, til dømes mobbing, vald, diskriminering og
+      trakassering. Skulen skal også arbeide heile tida for at alle elevane skal ha eit trygt og godt skulemiljø, så
+      krenkingar blir førebygde. Sjå [opplæringslova § 12-3](#/lov/opplaeringslova/12-3).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-3 Nulltoleranse og førebyggjande arbeid", url: "https://lovdata.no/lov/2023-06-09-30/§12-3" }
+    - { id: udir-rundskriv-skolemiljo-nulltoleranse, punkt: "4. Nulltoleranse" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det dekkende å si at nulltoleransen også betyr at skolen skal forebygge krenkelser (§ 12-3 andre ledd), eller bør begrepet bare gjelde første ledd?"
+  stikkord: [nulltoleranse, krenkelser, mobbing, forebygging, 12-3]
+  relatert: [krenkende-oppforsel, trygt-og-godt-skolemiljo]
+
+- id: psykososialt-skolemiljo
+  type: begrep
+  tittel: { nb: Psykososialt skolemiljø, nn: Psykososialt skulemiljø }
+  lenkeord: { nb: ["psykososialt skolemiljø", "psykososiale skolemiljøet"], nn: ["psykososialt skulemiljø", "psykososiale skulemiljøet"] }
+  tekst:
+    nb: >-
+      Det psykososiale skolemiljøet er hvordan elevene har det med hverandre og med de ansatte på skolen, og om de
+      opplever seg trygge og inkludert. Det er elevens egen opplevelse som avgjør om skolemiljøet er trygt og godt.
+      Aktivitetsplikten, saker hos statsforvalteren og den omvendte bevisbyrden i erstatningssaker gjelder det
+      psykososiale skolemiljøet. Se [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+    nn: >-
+      Det psykososiale skulemiljøet er korleis elevane har det med kvarandre og med dei tilsette på skulen, og om dei
+      opplever seg trygge og inkluderte. Det er den eigne opplevinga til eleven som avgjer om skulemiljøet er trygt og
+      godt. Aktivitetsplikta, saker hos statsforvaltaren og den omvende bevisbyrda i erstatningssaker gjeld det
+      psykososiale skulemiljøet. Sjå [opplæringslova § 12-4](#/lov/opplaeringslova/12-4).
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø (aktivitetsplikt og dokumentasjonsplikt)", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
+    - { id: opplaeringslova, punkt: "§ 12-6 Statsforvaltaren si handheving av plikta til å sikre eit trygt og godt psykososialt skolemiljø i enkeltsaker", url: "https://lovdata.no/lov/2023-06-09-30/§12-6" }
+    - { id: opplaeringslova, punkt: "§ 12-10 Bevisbyrde i erstatningssaker om psykososialt skolemiljø", url: "https://lovdata.no/lov/2023-06-09-30/§12-10" }
+    - { id: udir-rundskriv-skolemiljo-retten, punkt: "3. Retten til et trygt og godt skolemiljø" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «hvordan elevene har det med hverandre og med de ansatte» en god forklaring på det psykososiale skolemiljøet, når loven ikke definerer begrepet?"
+    - "Er det riktig å si at det er elevens egen opplevelse som avgjør, slik rundskrivet kapittel 3 beskriver det?"
+  stikkord: [psykososialt, skolemiljø, trygghet, inkludering, aktivitetsplikt]
+  relatert: [trygt-og-godt-skolemiljo, aktivitetsplikt, fysisk-skolemiljo]
+
 - id: fysisk-skolemiljo
   type: begrep
   tittel: { nb: Fysisk skolemiljø, nn: Fysisk skulemiljø }

@@ -391,8 +391,8 @@
 - id: k12-fysiske-inngrep
   type: forklaring
   tittel:
-    nb: Fysiske inngrep
-    nn: Fysiske inngrep
+    nb: Fysiske inngrep (kapittel 13)
+    nn: Fysiske inngrep (kapittel 13)
   tekst:
     nb: >-
       Når andre tiltak ikke er nok, kan ansatte gripe inn fysisk mot en elev for å hindre at eleven krenker noen eller
@@ -401,6 +401,9 @@
       og rektor til foreldrene. Ved gjentatte eller særlig alvorlige inngrep melder rektor fra til fylkeskommunen.
       Skolen skal dokumentere alle fysiske inngrep, med elevens syn på saken. Fylkeskommunen skal sørge for at skolen
       arbeider for at slike situasjoner ikke oppstår.
+
+      Kapittel 13 handler også om bortvisning og pålagt skolebytte. De står under
+      [Skoleregler](#/skolemiljo/skoleregler).
     nn: >-
       Når andre tiltak ikkje er nok, kan tilsette gripe inn fysisk mot ein elev for å hindre at eleven krenkjer nokon
       eller utset seg sjølv for fare, skader eigedom, oppfører seg sterkt fornedrande for seg sjølv eller vesentleg
@@ -408,6 +411,9 @@
       rektor, og rektor til foreldra. Ved gjentekne eller særleg alvorlege inngrep melder rektor frå til
       fylkeskommunen. Skulen skal dokumentere alle fysiske inngrep, med synet til eleven på saka. Fylkeskommunen skal
       sørgje for at skulen arbeider for at slike situasjonar ikkje oppstår.
+
+      Kapittel 13 handlar også om bortvising og pålagt skulebyte. Dei står under
+      [Skulereglar](#/skolemiljo/skoleregler).
   paragrafer: [opplaeringslova/13-3, opplaeringslova/13-4, opplaeringslova/13-5]
   privatskole:
     tekst:
@@ -421,6 +427,6 @@
     - { id: opplaeringslova, punkt: "§ 13-5 Meldeplikt og dokumentasjon", url: "https://lovdata.no/lov/2023-06-09-30/§13-5" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er sammendraget av §§ 13-3 til 13-5 riktig, og hører kortet hjemme på siden om skolemiljøet?"
+    - "Er sammendraget av §§ 13-3 til 13-5 riktig, og hører kortet hjemme under «Henger sammen med» på siden om kapittel 12?"
     - "Privatskoler: Er det riktig at privatskolelova §§ 3-10 a til 3-10 c har de samme reglene om forebygging, fysiske inngrep og melding?"
   stikkord: [fysiske inngrep, gripe inn fysisk, avverge skade, meldeplikt, dokumentasjon]

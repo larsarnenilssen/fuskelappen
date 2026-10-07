@@ -7,7 +7,7 @@
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { huskOktlengde, lesOktlengde } from '../../../app/kalkulatorvalg.ts';
 import { erstattAdresse } from '../../../app/ruter.ts';
-import { type T, useTekst } from '../../../app/tilstand.ts';
+import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
@@ -30,6 +30,7 @@ import type { SideProps } from '../../typer.ts';
 import { beregnGrenser, type Fravaersresultat, type Fravaerssteg, type Grenseresultat, sjekkFravaer } from '../beregning/fravaer.ts';
 import { fravaerRute, hentInnhold, veiviserRute } from '../innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
+import { FravaerBoks } from '../../statistikk/komponenter.tsx';
 
 type Oktvalg = '45' | '60' | '90' | 'annen';
 const OKTER: readonly Oktvalg[] = ['45', '60', '90', 'annen'];
@@ -262,6 +263,7 @@ function Fravaersstolpe({ g, r, fam, enhet, timer }: { g: Grenseresultat; r: Fra
 }
 
 export default function Fravaer({ sporring }: SideProps) {
+  const { innstillinger } = useTilstand();
   const { t, malform } = useTekst();
   const hent = useHent();
   const [s, sett] = useSkjematilstand<Skjema>('vurdering-fravaer', start);
@@ -453,6 +455,8 @@ export default function Fravaer({ sporring }: SideProps) {
         </a>
       </div>
 
+      {/* Fraværet i fylket og på skolen (skisse til eier 07.10.2026, avgjørelse 080). */}
+      <FravaerBoks fylke={innstillinger.fylke} skole={innstillinger.skole} />
       {regler && regler.length > 0 && (
         <section class="poeng-regler">
           <h2 class="liten-overskrift">{t('vurdering.fravaer.regler')}</h2>
