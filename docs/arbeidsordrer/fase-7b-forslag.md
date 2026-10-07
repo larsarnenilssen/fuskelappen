@@ -12,6 +12,32 @@ Startpakken var 149,4 kB (grense 150 kB). Nå lastes bare tekstene for målforme
 
 ---
 
+## Runde 6: de tre visningene i panelet gjort like
+
+- **K4b:** Vestland, Vestfold og Telemark fylkeskommune er med, med ordfilter. Trøndelag og Østfold står i listen over kilder som ikke er med ennå (`docs/KILDER-IKKE-MED.md`).
+- **Lik videre-rad:** «Hele kalenderen», «Filtrer / Alle nyhetene» og «Alle tallene i Videregående i tall» har samme høyde, skrift og blå flate (44 px).
+- **Kalenderen:** Skrift og luft som i nyhetene. Opptil fire datoer. En dato som ikke får helt plass, vises ikke, og boksen blir lavere. Ingen luft under den siste.
+- **I tall:** Mindre luft mellom tallene og rundt stripen.
+- **Lukke panelet:** Klikk hvor som helst til høyre for «I tall» i overskriften lukker og åpner panelet, ikke bare pilen.
+
+Høyden på panelet med Vestland valgt (før → nå):
+
+| Visning | Mobil 390 px | Skrivebord |
+|---|---|---|
+| Kalender | 350 px, 3 datoer → 337 px, 4 datoer | 366 px, 3 datoer → 353 px, 4 datoer |
+| Nyheter | 323 px, 3 saker (uendret) | 373 px, 4 saker (uendret) |
+| I tall | 421 px → 382 px | 419 px → 380 px |
+
+På 320 px vises tre datoer, og boksen er lavere.
+
+| | Mobil | Skrivebord |
+|---|---|---|
+| Kalender | ![](bilder/fase-7b-panel-mobil-neste.png) | ![](bilder/fase-7b-panel-skrivebord-neste.png) |
+| Nyheter | ![](bilder/fase-7b-panel-mobil-nyheter.png) | ![](bilder/fase-7b-panel-skrivebord-nyheter.png) |
+| I tall | ![](bilder/fase-7b-panel-mobil-itall.png) | ![](bilder/fase-7b-panel-skrivebord-itall.png) |
+
+---
+
 ## Runde 5: dine svar 07.10.2026, kveld
 
 - **K4:** De åtte ACOS-fylkene er med, vist for valgt fylke. Innlandet uten filter (egen feed for utdanning), de andre med ordfilter. Vestland, Trøndelag, Vestfold og Telemark er prøvd (se under).
