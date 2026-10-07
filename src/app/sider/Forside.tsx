@@ -22,11 +22,19 @@ import { kortManed } from '../../core/tidslinje.ts';
 import { kalenderRute } from '../../modules/kalender/adresse.ts';
 import type { Kalenderpost } from '../../modules/kalender/beregning/kalender.ts';
 import { datoKort } from '../../modules/kalender/visning.ts';
+import { ForsideTall, forsideSammendrag, useStatistikk } from '../../modules/statistikk/komponenter.tsx';
 import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
 /** Gruppen med de tre neste datoene fra kalenderen (forslag D, eier 05.10.2026, avgjørelse 066). */
 const NESTE = 'neste';
+/**
+ * Gruppen med nøkkeltallene fra Videregående i tall, «Vestland i tall» (eier 07.10.2026, avgjørelse 080). Står i
+ * sidekolonnen under «Neste datoer», lukket på mobil, og kan slås av under «Tilpass» som «Neste datoer».
+ */
+const ITALL = 'itall';
+/** Videregående i tall som favoritt. Med «Bare favoritter» vises den som gruppen med tallene, som kalenderen. */
+const STATISTIKK_FAVORITT = oversiktsid('statistikk');
 /** Kalenderen som favoritt. Med «Bare favoritter» vises den som «Neste datoer», ikke som et kort (eier 05.10.2026). */
 const KALENDER_FAVORITT = oversiktsid('kalender');
 
@@ -268,7 +276,7 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
 function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; kolonnePa: boolean }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
-  const iKolonnen = (id: string) => id === NESTE || id === FAVORITTER;
+  const iKolonnen = (id: string) => id === NESTE || id === ITALL || id === FAVORITTER;
   const sorterbar = (utvalg: string[], etikett: string) => (
     <Sorterbar
       etikett={etikett}
@@ -280,6 +288,12 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
     <label class="avkrysning tilpass-neste">
       <input type="checkbox" checked={!(forside.skjult ?? []).includes(NESTE)} onChange={() => vekslSkjultGruppe(NESTE)} />
       {t('forside.tilpass.visNeste')}
+    </label>
+  );
+  const visITall = (
+    <label class="avkrysning tilpass-neste">
+      <input type="checkbox" checked={!(forside.skjult ?? []).includes(ITALL)} onChange={() => vekslSkjultGruppe(ITALL)} />
+      {t('forside.tilpass.visITall')}
     </label>
   );
   return (
@@ -297,11 +311,13 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
           <Sidekolonnebryter pa={kolonnePa} />
           {sorterbar(grupper.filter(iKolonnen), t('forside.tilpass.sidekolonne'))}
           {visNeste}
+          {visITall}
         </>
       ) : (
         <>
           {sorterbar(grupper, t('forside.tilpass.grupper'))}
           {visNeste}
+          {visITall}
         </>
       )}
       <button type="button" class="knapp knapp-sekundaer" onClick={nullstillForside}>
@@ -348,11 +364,12 @@ export default function Forside() {
     };
   }, []);
   const kategorier = kategorierMedModuler();
-  const grupper = ordneGrupper([NESTE, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
+  const grupper = ordneGrupper([NESTE, ITALL, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
   const kategoriForModul = new Map(kategorier.flatMap((k) => k.moduler.map((m) => [m.id, k.id] as const)));
   const navn = (id: string) => {
     const k = kategorier.find((x) => x.id === id);
     if (id === NESTE) return t('kalender.neste');
+    if (id === ITALL) return t('moduler.statistikk.navn');
     return k ? t(k.navn) : t('forside.favoritter');
   };
   const bare = forside.bareFavoritter;
@@ -367,14 +384,18 @@ export default function Forside() {
 
   const kalenderFavoritt = favoritter.includes(KALENDER_FAVORITT);
   const visNesteSomFavoritt = kalenderFavoritt && !(forside.skjult ?? []).includes(NESTE);
-  const sidegrupper = grupper.filter((id) => id === NESTE || id === FAVORITTER);
-  const hovedgrupper = grupper.filter((id) => id !== NESTE && id !== FAVORITTER);
+  const statistikkFavoritt = favoritter.includes(STATISTIKK_FAVORITT);
+  const iSidekolonnen = (id: string) => id === NESTE || id === ITALL || id === FAVORITTER;
+  const sidegrupper = grupper.filter(iSidekolonnen);
+  const hovedgrupper = grupper.filter((id) => !iSidekolonnen(id));
 
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
     // Med «Bare favoritter» står «Neste datoer» bare når kalenderen er favoritt, og da i stedet for kalenderens eget kort
     // (eier 05.10.2026).
     if (id === NESTE) return (bare && !kalenderFavoritt) || (forside.skjult ?? []).includes(NESTE) ? null : <NesteDatoer key={id} />;
+    // Tallene: med «Bare favoritter» bare når Videregående i tall er favoritt, som «Neste datoer».
+    if (id === ITALL) return (bare && !statistikkFavoritt) || (forside.skjult ?? []).includes(ITALL) ? null : <ITall key={id} />;
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
@@ -466,17 +487,17 @@ export default function Forside() {
                   <div class="forside-sidekolonne forside-skinnen">
                     <Sidekolonnebryter pa={false} kort />
                     {sidegrupper
-                      .filter((id) => id !== NESTE || !(forside.skjult ?? []).includes(NESTE))
+                      .filter((id) => id === FAVORITTER || !(forside.skjult ?? []).includes(id))
                       .map((id) => (
                         <button
                           key={id}
                           type="button"
                           class="ikonknapp skinne-knapp"
-                          aria-label={id === NESTE ? t('forside.visISidekolonne', { gruppe: navn(id) }) : `${t('forside.visISidekolonne', { gruppe: navn(id) })}, ${antallFavoritter(favoritter.length)}`}
+                          aria-label={id !== FAVORITTER ? t('forside.visISidekolonne', { gruppe: navn(id) }) : `${t('forside.visISidekolonne', { gruppe: navn(id) })}, ${antallFavoritter(favoritter.length)}`}
                           title={navn(id)}
                           onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}
                         >
-                          <Ikon navn={id === NESTE ? 'kalender' : 'stjerne'} />
+                          <Ikon navn={id === NESTE ? 'kalender' : id === ITALL ? 'sammenlign' : 'stjerne'} />
                           {id === FAVORITTER && favoritter.length > 0 && (
                             <span class="skinne-tall tall" aria-hidden="true">
                               {favoritter.length}
@@ -572,6 +593,30 @@ function NesteDatoer() {
           </a>
         </li>
       </ul>
+    </Gruppe>
+  );
+}
+
+/**
+ * Gruppen med tallene fra Videregående i tall (eier 07.10.2026, avgjørelse 080): «Vestland i tall» for fylket brukeren
+ * har valgt, ellers «Hele landet i tall». Lukket fra start på mobil, der overskriften viser søkerne og læreplassen, og
+ * åpen på stor skjerm, som «Neste datoer». Tallene lastes etter at forsiden er tegnet.
+ */
+function ITall() {
+  const { t } = useTekst();
+  const { innstillinger, forside } = useTilstand();
+  const d = useStatistikk();
+  const stor = useMinstBredde(SIDEKOLONNE_FRA);
+  const fylke = innstillinger.fylke;
+  // Uten tall (feil ved lasting) står ikke gruppen på forsiden.
+  if (d === 'feil') return null;
+  const enhet = d && fylke && d.enheter[`F${fylke}`] ? `F${fylke}` : 'L';
+  const sted = enhet === 'L' ? t('statistikk.landet') : (fylkesnavn(fylke) ?? t('statistikk.landet'));
+  const lukket = forside.lukket.includes(ITALL) || (!stor && !(forside.apnet ?? []).includes(ITALL));
+  const skole = innstillinger.skole?.id ? { orgnr: innstillinger.skole.id, navn: innstillinger.skole.navn } : null;
+  return (
+    <Gruppe id={ITALL} tittel={t('statistikk.iTall', { sted })} sammendrag={d ? forsideSammendrag(t, d, enhet) : t('app.lasterInn')} lukket={lukket} onVeksle={() => vekslGruppe(ITALL, lukket)}>
+      {d ? <ForsideTall d={d} enhet={enhet} skole={skole} /> : <p class="dempet">{t('app.lasterInn')}</p>}
     </Gruppe>
   );
 }

@@ -1,6 +1,8 @@
 // Videregående i tall (eier 07.10.2026, avgjørelse 080): nøkkeltallene fra Udirs statistikkbank for fylket og landet.
 // Komponentene i komponenter.tsx brukes også på fylkessiden og på sidene der tallene hører hjemme (Inntak, Lærlinger
 // og kandidater, fraværsgrensen, eksamen og skolene). Tallene står i data/statistikk/.
+// Modulen står ikke under «Oppslag» på forsiden, men som en egen gruppe i sidekolonnen, «Vestland i tall» (eier
+// 07.10.2026). Den kan slås av under «Tilpass».
 import { oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { STATISTIKK_RUTE } from './komponenter.tsx';
@@ -23,6 +25,7 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  paaForsiden: false,
   kilder: ['udir-statistikkbanken'],
   status: 'aktiv',
 };

@@ -106,4 +106,14 @@ export const statistikkNb = {
     fravaerUnder: 'median',
     elevundersokelsen: 'Elevundersøkelsen for skolen',
   },
+  forside: {
+    sammendrag: '{sokere} søkere · {laereplass} fikk læreplass',
+    sokere: 'Søkere {aar}',
+    laereplass: 'Fikk læreplass, desember {aar}',
+    plass: 'Nr. {plass} av {antall} fylker',
+    laereplassLandet: 'Av søkerne til læreplass',
+    elever: 'Elever {skolear}',
+    eleverUnder: 'På {skoler} skoler',
+    skoleUnder: 'Elever {skolear}',
+  },
 };

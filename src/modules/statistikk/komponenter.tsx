@@ -338,3 +338,88 @@ export function SkolenITall({ orgnr, d, children }: { orgnr: string; d: Statisti
     </div>
   );
 }
+
+/** Oppsummeringen av tallene på forsiden når gruppen er lukket: «25 090 søkere · 84,0 % fikk læreplass». */
+export function forsideSammendrag(t: T, d: Statistikk, enhet: string): string {
+  return t('statistikk.forside.sammendrag', { sokere: tekstFor(t, sisteVerdi(d.sokere.alle[enhet])), laereplass: tekstFor(t, sisteVerdi(d.formidling.desember[enhet]), 'prosent') });
+}
+
+/**
+ * Tallene på forsiden (eier 07.10.2026): søkere, læreplass og elever for fylket (eller landet), og elevene på skolen
+ * brukeren har valgt. Radene ser ut som «Neste datoer», med tallet der datoen står, og den siste raden går til
+ * Videregående i tall.
+ */
+export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string; skole: { orgnr: string; navn: string } | null }) {
+  const { t } = useTekst();
+  const fylke = enhet === 'L' ? null : enhet.slice(1);
+  const lenke = statistikkLenke(fylke);
+  const iLandet = (v: Verdi, form: 'antall' | 'prosent' = 'antall') => (enhet === 'L' ? null : t('statistikk.landetVerdi', { verdi: tekstFor(t, v, form) }));
+  const deler = (...x: (string | null)[]) => x.filter(Boolean).join(' · ');
+  const sok = d.sokere.alle[enhet];
+  const rangert = ranger(d, sisteFor(d.formidling.desember));
+  const plass = rangert.find((r) => r.enhet === enhet);
+  const skoler = sisteVerdi(d.elever.skoler[enhet]);
+  const skolear = (d.elever.skolear.at(-1) ?? '').replace('-', '–');
+  const skolensElever = skole ? d.elever.elever[`S${skole.orgnr}`] : undefined;
+  const rader = [
+    {
+      tall: tekstFor(t, sisteVerdi(sok)),
+      tittel: t('statistikk.forside.sokere', { aar: String(d.sokere.aar.at(-1) ?? '') }),
+      under: deler(endringTekst(t, sisteVerdi(sok), forrigeVerdi(sok), d.sokere.aar.at(-2) ?? ''), iLandet(sisteVerdi(d.sokere.alle.L))),
+      href: lenke,
+    },
+    {
+      tall: tekstFor(t, sisteVerdi(d.formidling.desember[enhet]), 'prosent'),
+      tittel: t('statistikk.forside.laereplass', { aar: String(d.formidling.aar.at(-1) ?? '') }),
+      under: enhet === 'L' ? t('statistikk.forside.laereplassLandet') : deler(plass ? t('statistikk.forside.plass', { plass: String(plass.plass), antall: String(rangert.length) }) : null, iLandet(sisteVerdi(d.formidling.desember.L), 'prosent')),
+      href: lenke,
+    },
+    {
+      tall: tekstFor(t, sisteVerdi(d.elever.elever[enhet])),
+      tittel: t('statistikk.forside.elever', { skolear }),
+      under: deler(typeof skoler === 'number' ? t('statistikk.forside.eleverUnder', { skoler: formaterTall(skoler, 0) }) : null, iLandet(sisteVerdi(d.elever.elever.L))),
+      href: lenke,
+    },
+    // Skolen brukeren har valgt, med lenke til skolen i Skoler og tilbud.
+    ...(skole && skolensElever
+      ? [
+          {
+            tall: tekstFor(t, sisteVerdi(skolensElever)),
+            tittel: skole.navn,
+            under: deler(t('statistikk.forside.skoleUnder', { skolear }), endringTekst(t, sisteVerdi(skolensElever), forrigeVerdi(skolensElever), (d.elever.skolear.at(-2) ?? '').replace('-', '–'))),
+            href: `#/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(skole.navn)}`,
+          },
+        ]
+      : []),
+  ];
+  return (
+    <ul class="liste kal-neste st-forside">
+      {rader.map((r) => (
+        <li key={r.tittel}>
+          <a class="listelenke" href={r.href}>
+            <span class="kal-neste-dato" aria-hidden="true">
+              {r.tall}
+            </span>
+            <span class="listelenke-tekst">
+              <span class="skjult-visuelt">{r.tall}: </span>
+              <span class="listelenke-tittel">{r.tittel}</span>
+              {r.under && <span class="listelenke-under">{r.under}</span>}
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      ))}
+      <li>
+        <a class="listelenke kal-neste-alle" href={lenke}>
+          <span class="kal-neste-dato" aria-hidden="true">
+            <Ikon navn="sammenlign" />
+          </span>
+          <span class="listelenke-tekst">
+            <span class="listelenke-tittel">{t('statistikk.tittel')}</span>
+          </span>
+          <Ikon navn="hoyre" class="ikon-liten" />
+        </a>
+      </li>
+    </ul>
+  );
+}

@@ -66,19 +66,21 @@ test.describe('favoritter og forsiden', () => {
     // Én kolonne, som på mobil. På skrivebord står favorittene i sidekolonnen (testen under).
     await page.setViewportSize({ width: 390, height: 800 });
     await page.goto('./');
-    // «Neste datoer» står først og favorittene som nummer to (avgjørelse 066).
+    // «Neste datoer» står først, så tallene fra Videregående i tall (eier 07.10.2026) og favorittene som nummer tre
+    // (avgjørelse 066).
     const grupper = page.locator('.forsidegruppe');
     await expect(grupper.nth(0)).toHaveAttribute('data-gruppe', 'neste');
-    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'itall');
+    await expect(grupper.nth(2)).toHaveAttribute('data-gruppe', 'favoritter');
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await page.getByRole('button', { name: 'Flytt «Favoritter» ned' }).click();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(grupper.nth(1)).not.toHaveAttribute('data-gruppe', 'favoritter');
-    await expect(grupper.nth(2)).toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(2)).not.toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(3)).toHaveAttribute('data-gruppe', 'favoritter');
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await page.getByRole('button', { name: /Standard rekkefølge/ }).click();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(2)).toHaveAttribute('data-gruppe', 'favoritter');
   });
 
   test('skrivebord: «Neste datoer» og favorittene i sidekolonnen, som står fast og kan slås av (eier 05.10.2026)', async ({ page }) => {
