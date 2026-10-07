@@ -101,6 +101,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Norsk Lovtidend (vedtatte endringer i regelverket appen har)](https://lovdata.no/register/lovtidend) | Lovdata | nasjonal | data | NLOD 2.0 (Lovdatas datasett) og lovtekst som ikke er vernet etter åndsverkloven § 14 | nyheter | 7 |
 | [forskning.no, saker merket skole og utdanning (RSS)](https://www.forskning.no/tag/skole%20og%20utdanning) | Stiftelsen forskning.no | nasjonal | data | forskning.no tilbyr feedene til bruk på andre nettsteder. Bare tittel, dato, lenke og ingress, med lenke til saken. | nyheter | 7 |
 | [Nyheter fra NIFU (RSS)](https://www.nifu.no/) | NIFU | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | nyheter | 7 |
+| [Aktuelt, Direktoratet for høyere utdanning og kompetanse (HKdir)](https://hkdir.no/aktuelt) | Direktoratet for høyere utdanning og kompetanse | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken. | nyheter | 7 |
+| [Nyheter fra fylkeskommunene på ACOS (RSS per fylke)](https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk) | Fylkeskommunene | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | nyheter | 7 |
 
 ## Merknader
 
@@ -200,3 +202,5 @@ Sender udir.no hentingen videre til en annen adresse, f.eks. «tidligere rundskr
 - **lovdata-lovtidend:** Endringene som står i Kalender (data/lovdata/kommende.json, hentet hver uke av npm run hent:lovdata), også som nyheter. Ingen egen henting fra Lovdata.
 - **forskning-no-skole:** Forskningsnyheter, eid av universitetene og høgskolene. Filtreres på ord for videregående (eier 07.10.2026).
 - **nifu-nyheter:** Forskningsinstitutt for utdanning og forskning. Feeden har bare de tre siste sakene, så den hentes hver dag. Filtreres på ord for videregående (eier 07.10.2026).
+- **hkdir-aktuelt:** Nyhetslisten «Aktuelt» (én side, ingen feed, ingen robots.txt). Filtreres på ord for videregående (eier 07.10.2026).
+- **fylkeskommunene-nyheter:** Akershus, Buskerud, Innlandet, Agder, Rogaland, Møre og Romsdal, Nordland, Troms og Finnmark, med feeden fylket selv lenker til (ArtikkelRSS.ashx). Vises bare når fylket er valgt. Eier 07.10.2026 (K4).

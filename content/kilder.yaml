@@ -1636,3 +1636,35 @@ kilder:
     merknad: >-
       Forskningsinstitutt for utdanning og forskning. Feeden har bare de tre siste sakene, så den hentes hver dag.
       Filtreres på ord for videregående (eier 07.10.2026).
+
+  - id: hkdir-aktuelt
+    navn: Aktuelt, Direktoratet for høyere utdanning og kompetanse (HKdir)
+    kortnavn: HKdir
+    utgiver: Direktoratet for høyere utdanning og kompetanse
+    url: https://hkdir.no/aktuelt
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken.
+    sjekkmetode: nyheter
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Nyhetslisten «Aktuelt» (én side, ingen feed, ingen robots.txt). Filtreres på ord for videregående (eier
+      07.10.2026).
+
+  - id: fylkeskommunene-nyheter
+    navn: Nyheter fra fylkeskommunene på ACOS (RSS per fylke)
+    kortnavn: Fylkeskommunene
+    utgiver: Fylkeskommunene
+    url: https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
+    sjekkmetode: nyheter
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Akershus, Buskerud, Innlandet, Agder, Rogaland, Møre og Romsdal, Nordland, Troms og Finnmark, med feeden fylket
+      selv lenker til (ArtikkelRSS.ashx). Vises bare når fylket er valgt. Eier 07.10.2026 (K4).

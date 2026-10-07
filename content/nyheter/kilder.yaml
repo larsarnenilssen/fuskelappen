@@ -11,8 +11,11 @@
 # Ordene som gjør en sak relevant for videregående. Et ord treffer også når det er starten på et lengre ord
 # (scripts/nyheter/filter.ts):
 # - Et sterkt ord tar med saken, med mindre tittelen handler om en annen del av utdanningen og ikke har et sterkt ord.
-# - Et generelt ord i tittelen tar med saken når ingen ord fra `utelukker` står der. Står de generelle ordene bare i
-#   ingressen, må minst to ulike ord treffe, så én tilfeldig «elev» eller «skole» ikke er nok.
+# - Et generelt ord i tittelen tar med saken når tittelen ikke har et ord fra `utelukker`. Står de generelle ordene bare
+#   i ingressen, må minst to ulike ord treffe, så én tilfeldig «elev» eller «skole» ikke er nok, og ingen ord fra
+#   `utelukker` stå der.
+# Grensetilfellene eier har sagt ja til (07.10.2026): «Inn på tunet for enkeltelever», «digital opplæring i fengsel»,
+# PISA, «Slik skal elevene lære mer i skolen» og «Eksamen i sikker nettleser».
 # Ord som er tatt ut fordi de ga feiltreff (eier 07.10.2026): «fylkeskommune» (landbruk, budsjett), «opplæring»
 # (fengsel, helse), «undervisning» og «vurdering» (forvaltning).
 filter:
@@ -74,6 +77,8 @@ filter:
     - særskilt språkopplæring
     - privatskole
     - privatskule
+    - opplæring i fengsel
+    - opplæring i fengsler
   utelukker:
     - barnehage
     - grunnskole
@@ -96,8 +101,6 @@ filter:
     - de yngste
     - dei minste
     - dei yngste
-    - tiendeklass
-    - tiandeklass
     - nasjonale prøver
     - nasjonale prøvar
     - fellesskole
@@ -317,25 +320,135 @@ kilder:
     ingress: true
     fylker: ["31", "33", "03", "32"]
 
+  # HKdir (K8, eier 07.10.2026): «Aktuelt» er en liste på én side, ingen feed. Karriereveiledning, fag- og
+  # yrkesopplæring og voksnes opplæring.
+  - id: hkdir
+    navn: { nb: Direktoratet for høyere utdanning og kompetanse, nn: Direktoratet for høgare utdanning og kompetanse }
+    kortnavn: { nb: HKdir, nn: HKdir }
+    type: myndighet
+    kilde: hkdir-aktuelt
+    format: hkdir
+    url: https://hkdir.no/aktuelt
+    filter: vgs
+    ingress: true
+
+  # Fylkeskommunene på ACOS (K4, eier 07.10.2026): én feed per fylke, med 5–9 saker. Fylkene lenker selv til feedene.
+  # robots.txt stenger /artikkelRSS.aspx, som er en annen adresse enn feeden (/ArtikkelRSS.ashx). Sier et fylke fra,
+  # tas feeden ut. Sakene vises bare når fylket er valgt. Innlandet har egen feed for utdanning og filtreres ikke.
+
+  - id: fylkeskommune-akershus
+    navn: { nb: Akershus fylkeskommune, nn: Akershus fylkeskommune }
+    kortnavn: { nb: Akershus fylkeskommune, nn: Akershus fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://afk.no/ArtikkelRSS.ashx?NyhetsKategoriId=22134&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["32"]
+
+  - id: fylkeskommune-buskerud
+    navn: { nb: Buskerud fylkeskommune, nn: Buskerud fylkeskommune }
+    kortnavn: { nb: Buskerud fylkeskommune, nn: Buskerud fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://bfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=21858&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["33"]
+
+  - id: fylkeskommune-innlandet
+    navn: { nb: Innlandet fylkeskommune, nn: Innlandet fylkeskommune }
+    kortnavn: { nb: Innlandet fylkeskommune, nn: Innlandet fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk"
+    filter: alle
+    ingress: true
+    fylker: ["34"]
+
+  - id: fylkeskommune-agder
+    navn: { nb: Agder fylkeskommune, nn: Agder fylkeskommune }
+    kortnavn: { nb: Agder fylkeskommune, nn: Agder fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://agderfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["42"]
+
+  - id: fylkeskommune-rogaland
+    navn: { nb: Rogaland fylkeskommune, nn: Rogaland fylkeskommune }
+    kortnavn: { nb: Rogaland fylkeskommune, nn: Rogaland fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.rogfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["11"]
+
+  - id: fylkeskommune-more-og-romsdal
+    navn: { nb: Møre og Romsdal fylkeskommune, nn: Møre og Romsdal fylkeskommune }
+    kortnavn: { nb: Møre og Romsdal fylkeskommune, nn: Møre og Romsdal fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://mrfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=917&Spraak=Nynorsk"
+    filter: vgs
+    ingress: true
+    fylker: ["15"]
+
+  - id: fylkeskommune-nordland
+    navn: { nb: Nordland fylkeskommune, nn: Nordland fylkeskommune }
+    kortnavn: { nb: Nordland fylkeskommune, nn: Nordland fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.nfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=367&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["18"]
+
+  - id: fylkeskommune-troms
+    navn: { nb: Troms fylkeskommune, nn: Troms fylkeskommune }
+    kortnavn: { nb: Troms fylkeskommune, nn: Troms fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.tromsfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["55"]
+
+  - id: fylkeskommune-finnmark
+    navn: { nb: Finnmark fylkeskommune, nn: Finnmark fylkeskommune }
+    kortnavn: { nb: Finnmark fylkeskommune, nn: Finnmark fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.ffk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["56"]
+
 # Prøvekilder: hentes bare av «npm run nyheter:prove» (i PR-er og ved manuell kjøring av arbeidsflyten Nyheter), og
 # vises ikke i appen. Rapporten viser om kilden svarer, hvor mange saker den har, og hva filteret ville tatt med, så
 # eier kan avgjøre om kilden skal med (K3, K5, K6 og K8, eier 07.10.2026). `streng`: bare sterke ord i tittelen.
 prove:
-  - { id: hkdir-aktuelt, navn: HKdir (Aktuelt), url: https://hkdir.no/aktuelt, format: hkdir }
   - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
-  # Fylkeskommunene (K4). ACOS-fylkene har en feed per nyhetskategori med 5–9 saker.
-  - { id: fk-akershus, navn: Akershus fylkeskommune, url: "https://afk.no/ArtikkelRSS.ashx?NyhetsKategoriId=22134&Spraak=Norsk" }
-  - { id: fk-buskerud, navn: Buskerud fylkeskommune, url: "https://bfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=21858&Spraak=Norsk" }
-  - { id: fk-innlandet, navn: Innlandet fylkeskommune (utdanning), url: "https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk", alle: true }
-  - { id: fk-agder, navn: Agder fylkeskommune, url: "https://agderfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
-  - { id: fk-rogaland, navn: Rogaland fylkeskommune, url: "https://www.rogfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
-  - { id: fk-more-og-romsdal, navn: Møre og Romsdal fylkeskommune, url: "https://mrfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=917&Spraak=Nynorsk" }
-  - { id: fk-nordland, navn: Nordland fylkeskommune, url: "https://www.nfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=367&Spraak=Norsk" }
-  - { id: fk-troms, navn: Troms fylkeskommune, url: "https://www.tromsfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
-  - { id: fk-finnmark, navn: Finnmark fylkeskommune, url: "https://www.ffk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
+  # Fylkene som ikke er på ACOS (K4, eier 07.10.2026).
+  - { id: fk-vestland, navn: "Vestland fylkeskommune (arkivet, tema Utdanning)", url: https://www.vestlandfylke.no/service/article/20/Utdanning, format: jsonliste, alle: true }
+  - { id: fk-trondelag, navn: "Trøndelag fylkeskommune (nyhetsarkivet, Utdanning)", url: "https://www.trondelagfylke.no/nyhetsarkiv/?filters=Utdanning&number=20", format: jsonliste, alle: true }
+  - { id: fk-vestfold, navn: Vestfold fylkeskommune (Aktuelt), url: https://vestfoldfylke.no/no/aktuelt/, format: lenkeliste }
+  - { id: fk-telemark, navn: Telemark fylkeskommune (Aktuelt), url: https://telemarkfylke.no/no/aktuelt/, format: lenkeliste }
 
-# Sider der prøvehentingen leter etter feeder (<link rel="alternate">) og leser robots.txt.
+# Sider der prøvehentingen leter etter feeder (<link rel="alternate">), leser robots.txt og viser HTML-en rundt datoene.
 oppdag:
-  - https://hkdir.no/aktuelt
-  - https://afk.no/aktuelt/
-  - https://ostfoldfk.no/
+  - https://www.vestlandfylke.no/nyheiter/
+  - https://www.trondelagfylke.no/nyhetsarkiv/?filters=Utdanning&number=20
+  - https://vestfoldfylke.no/no/aktuelt/
+  - https://telemarkfylke.no/no/aktuelt/

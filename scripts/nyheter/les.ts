@@ -136,3 +136,78 @@ export function lesHkdir(html: string, base: string): RaSak[] {
       return [{ tittel, url, dato: lesDato(publisert[1]), ingress: avsnitt[1] || null, stikkord: [] }];
     });
 }
+
+type Json = null | boolean | number | string | Json[] | { [k: string]: Json };
+
+const tekstfelt = (o: Record<string, Json>, ...navn: string[]) => {
+  for (const n of navn) {
+    const v = o[n];
+    if (typeof v === 'string' && v.trim()) return v;
+  }
+  return null;
+};
+
+/** Alle objekter i JSON-en som har en tittel og en adresse. */
+function sakerIJson(j: Json, base: string, ut: RaSak[]): void {
+  if (Array.isArray(j)) {
+    for (const x of j) sakerIJson(x, base, ut);
+    return;
+  }
+  if (!j || typeof j !== 'object') return;
+  const tittel = tekstfelt(j, 'title', 'Title', 'tittel', 'name', 'heading');
+  const url = tekstfelt(j, 'url', 'Url', 'URL', 'link', 'href');
+  if (tittel && url) {
+    ut.push({
+      tittel: rensTekst(tittel),
+      url: absolutt(url, base),
+      dato: lesDato(tekstfelt(j, 'published', 'publishDate', 'publishedDate', 'date', 'startPublish', 'created', 'updatedDateTime', 'changed')),
+      ingress: rensTekst(tekstfelt(j, 'ingress', 'description', 'lead', 'summary', 'intro') ?? '') || null,
+      stikkord: [],
+    });
+    return;
+  }
+  for (const v of Object.values(j)) sakerIJson(v, base, ut);
+}
+
+/**
+ * Saker fra en nyhetsliste som er JSON, eller en side med JSON i et attributt (f.eks. ng-init) eller i et skript. Brukes
+ * av prøvehentingen for Vestland og Trøndelag.
+ */
+export function lesJsonliste(tekst: string, base: string): RaSak[] {
+  const ut: RaSak[] = [];
+  const forsok = (s: string) => {
+    try {
+      sakerIJson(JSON.parse(s) as Json, base, ut);
+    } catch {
+      // Ikke JSON.
+    }
+  };
+  forsok(tekst);
+  if (ut.length > 0) return ut;
+  const dok = parse(tekst);
+  for (const el of dok.querySelectorAll('[ng-init], [data-props], [data-model], script[type="application/json"], script#__NEXT_DATA__')) {
+    const verdi = el.getAttribute('ng-init') ?? el.getAttribute('data-props') ?? el.getAttribute('data-model') ?? el.text;
+    // Fra første [ eller { til siste ] eller }, så et funksjonskall rundt JSON-en (vm.init(…)) faller bort.
+    const start = verdi.search(/[[{]/);
+    const slutt = Math.max(verdi.lastIndexOf(']'), verdi.lastIndexOf('}'));
+    if (start >= 0 && slutt > start) forsok(verdi.slice(start, slutt + 1));
+  }
+  return ut;
+}
+
+/** En nyhetsliste uten kjent oppbygning: lenker med en dato i nærheten. Brukes av prøvehentingen. */
+export function lesLenkeliste(html: string, base: string): RaSak[] {
+  const ut: RaSak[] = [];
+  const sett = new Set<string>();
+  for (const a of parse(html).querySelectorAll('a[href]')) {
+    const tittel = rensTekst(a.innerHTML);
+    const url = absolutt(a.getAttribute('href') ?? '', base);
+    if (tittel.length < 15 || !url.startsWith('http') || sett.has(url)) continue;
+    const rundt = rensTekst((a.parentNode?.parentNode ?? a.parentNode ?? a).innerHTML ?? '');
+    const dato = /\b(\d{1,2}\.\d{1,2}\.\d{4})\b/.exec(rundt)?.[1] ?? /\b(\d{1,2}\.\s*[a-zæøå]+\s+\d{4})\b/i.exec(rundt)?.[1] ?? null;
+    if (!dato) continue;
+    sett.add(url);
+    ut.push({ tittel, url, dato: lesDato(dato), ingress: null, stikkord: [] });
+  }
+  return ut;
+}

@@ -17,7 +17,7 @@ import { lesFil } from './innhold/last.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 import { erRelevant, vurder, type Nyhetsfilter } from './nyheter/filter.ts';
 import { lesLovdata } from './nyheter/lovdata.ts';
-import { kortIngress, lesFeed, lesUdir, lesUtdanningsforbundet, type RaSak } from './nyheter/les.ts';
+import { kortIngress, lesFeed, lesHkdir, lesUdir, lesUtdanningsforbundet, type RaSak } from './nyheter/les.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const FIL = join(rot, 'data/nyheter/nyheter.json');
@@ -44,6 +44,7 @@ async function hentTekst(url: string): Promise<string> {
 function les(kilde: Nyhetskilde, tekst: string): RaSak[] {
   if (kilde.format === 'udir') return lesUdir(tekst, kilde.url);
   if (kilde.format === 'utdanningsforbundet') return lesUtdanningsforbundet(tekst, kilde.url);
+  if (kilde.format === 'hkdir') return lesHkdir(tekst, kilde.url);
   return lesFeed(tekst);
 }
 

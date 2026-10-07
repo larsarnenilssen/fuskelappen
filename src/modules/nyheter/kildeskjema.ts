@@ -17,7 +17,7 @@ export const nyhetskildeSkjema = z.strictObject({
   /** Merknad ved kilden, f.eks. «Fagpresse, utgitt av Utdanningsforbundet». */
   merknad: flerspraak.optional(),
   /** lovdata: endringene i regelverket fra data/lovdata/kommende.json, uten egen henting. */
-  format: z.enum(['rss', 'udir', 'utdanningsforbundet', 'lovdata']),
+  format: z.enum(['rss', 'udir', 'utdanningsforbundet', 'hkdir', 'lovdata']),
   url: z.url().startsWith('https://'),
   filter: z.enum(['vgs', 'alle']),
   ingress: z.boolean(),
@@ -38,7 +38,7 @@ export const provekildeSkjema = z.strictObject({
   /** Alle sakene, uten filter (organisasjoner). */
   alle: z.boolean().optional(),
   /** Hvordan kilden leses. Uten står RSS eller Atom. */
-  format: z.enum(['rss', 'hkdir']).optional(),
+  format: z.enum(['rss', 'hkdir', 'jsonliste', 'lenkeliste']).optional(),
 });
 
 export const nyhetskilderSkjema = z.strictObject({

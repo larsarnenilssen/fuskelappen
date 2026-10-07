@@ -8,7 +8,7 @@ import type { Nyhetskilder, Provekilde } from '../../src/modules/nyheter/kildesk
 import { lesFil } from '../innhold/last.ts';
 import { USER_AGENT } from '../kilder/metoder.ts';
 import { vurder, type Nyhetsfilter } from './filter.ts';
-import { lesFeed, lesHkdir, rensTekst, type RaSak } from './les.ts';
+import { lesFeed, lesHkdir, lesJsonliste, lesLenkeliste, rensTekst, type RaSak } from './les.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 
@@ -43,9 +43,19 @@ async function main() {
     ut.push(`### ${k.navn}`, '', `\`${k.url}\``, '');
     try {
       const { status, tekst } = await hent(k.url);
-      const saker = status !== 200 ? [] : k.format === 'hkdir' ? lesHkdir(tekst, k.url) : lesFeed(tekst);
+      const saker =
+        status !== 200
+          ? []
+          : k.format === 'hkdir'
+            ? lesHkdir(tekst, k.url)
+            : k.format === 'jsonliste'
+              ? lesJsonliste(tekst, k.url)
+              : k.format === 'lenkeliste'
+                ? lesLenkeliste(tekst, k.url)
+                : lesFeed(tekst);
       const med = saker.filter((s) => provevurdering(filter, k, s).startsWith('med'));
-      ut.push(`Svar ${status}. ${saker.length} saker i feeden, om lag ${perUke(saker)} per uke. ${med.length} ville vært med.`, '');
+      ut.push(`Svar ${status}, ${Math.round(tekst.length / 1024)} kB. ${saker.length} saker, om lag ${perUke(saker)} per uke. ${med.length} ville vært med.`, '');
+      if (saker.length === 0) ut.push('Starten av svaret:', '', '```', tekst.slice(0, 800).replace(/\s+/g, ' '), '```', '');
       if (saker.length > 0) {
         ut.push('| Dato | Filteret | Tittel |', '|---|---|---|');
         for (const s of [...med, ...saker.filter((x) => !med.includes(x))].slice(0, 25)) ut.push(`| ${s.dato ?? '?'} | ${provevurdering(filter, k, s)} | ${celle(s.tittel)} |`);

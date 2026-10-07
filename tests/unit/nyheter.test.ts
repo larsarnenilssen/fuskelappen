@@ -7,7 +7,7 @@ import { lesFil } from '../../scripts/innhold/last.ts';
 import { erRelevant, vurder } from '../../scripts/nyheter/filter.ts';
 import { lesLovdata } from '../../scripts/nyheter/lovdata.ts';
 import { nyhetsstatus } from '../../scripts/nyheter/status.ts';
-import { kortIngress, lesDato, lesFeed, lesHkdir, lesUdir, lesUtdanningsforbundet, rensTekst } from '../../scripts/nyheter/les.ts';
+import { kortIngress, lesDato, lesFeed, lesHkdir, lesJsonliste, lesLenkeliste, lesUdir, lesUtdanningsforbundet, rensTekst } from '../../scripts/nyheter/les.ts';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Nyhetskilder } from '../../src/modules/nyheter/kildeskjema.ts';
 import { nyheterSkjema, type Nyhet } from '../../src/modules/nyheter/skjema.ts';
@@ -38,6 +38,15 @@ describe('lesingen', () => {
     expect(lesUtdanningsforbundet(udf, 'https://www.utdanningsforbundet.no/nyheter')).toEqual([{ tittel: 'Tittel', url: 'https://www.utdanningsforbundet.no/nyheter/2026/a', dato: '2026-10-05', ingress: 'Ingress', stikkord: [] }]);
   });
 
+  it('leser nyhetslister som JSON, også i et attributt, og lenker med dato (prøvehentingen)', () => {
+    const json = JSON.stringify({ items: [{ title: 'Inntaket er klart', url: '/nyheiter/inntak', description: 'Fleire fekk førstevalet.', updatedDateTime: '2026-08-07T10:00:00+02:00' }] });
+    expect(lesJsonliste(json, 'https://www.vestlandfylke.no/')).toEqual([{ tittel: 'Inntaket er klart', url: 'https://www.vestlandfylke.no/nyheiter/inntak', dato: '2026-08-07', ingress: 'Fleire fekk førstevalet.', stikkord: [] }]);
+    const html = `<div ng-init='vm.init(${JSON.stringify([{ title: 'Høring om tilbudsstruktur', url: 'https://t.no/a', published: '2026-06-16', ingress: 'Ny struktur.' }])})'></div>`;
+    expect(lesJsonliste(html, 'https://t.no/')[0]).toMatchObject({ tittel: 'Høring om tilbudsstruktur', dato: '2026-06-16' });
+    const liste = `<ul><li><div><a href="/no/aktuelt/elevar">Nye elevplassar i vidaregåande skule</a><span>07.10.2026</span></div></li></ul>`;
+    expect(lesLenkeliste(liste, 'https://vestfoldfylke.no/no/aktuelt/')).toEqual([{ tittel: 'Nye elevplassar i vidaregåande skule', url: 'https://vestfoldfylke.no/no/aktuelt/elevar', dato: '2026-10-07', ingress: null, stikkord: [] }]);
+  });
+
   it('leser «Aktuelt» hos HKdir', () => {
     const html = `<div><a href="/aktuelt/endringer-i-uvd-ordningen"><div><p>Endringer i UVD-ordningen</p></div><span>Publisert<!-- -->: <!-- -->30. september 2026</span> <p>Det blir endringer i ordningen.</p></a><a href="/aktuelt">Alle</a></div>`;
     expect(lesHkdir(html, 'https://hkdir.no/aktuelt')).toEqual([
@@ -63,8 +72,12 @@ describe('filteret for videregående', () => {
     ['Inn på tunet for enkeltelever', 'Et tiltak for elever med vedtak om individuelt tilrettelagt opplæring.', 'generell'],
     ['Webinar om tiltak', 'For elever i skolen.', 'generell'],
     ['Webinar om tiltak', 'For elever.', 'ingen'],
-    ['PISA 2025: nedgang for norske elever', '34 prosent av tiendeklassingene', 'utelukket'],
+    ['PISA 2025: nedgang for norske elever', '34 prosent av tiendeklassingene', 'generell'],
     ['En ny skoledag for 1. og 2. trinn', 'elevene i skolen', 'utelukket'],
+    ['Slik skal elevene lære mer i skolen', 'Smågruppeundervisning på 1. og 2. trinn', 'generell'],
+    ['Eksamen i sikker nettleser', 'Fra våren 2027 skal elever i grunnskolen ta eksamen i sikker nettleser.', 'generell'],
+    ['Statsbudsjettet 2027: 20,9 millioner til digital opplæring i fengsel', '', 'generell'],
+    ['Webinar om tiltak', 'For elever i skolen fra 1. til 4. trinn i barneskolen.', 'utelukket'],
     ['Rekordmange får tilbud om fagskoleutdanning', 'fagbrev', 'utelukket'],
     ['Søkertall for midler til barnehagelærerutdanning', '', 'utelukket'],
     ['Strategi for Ny-Ålesund Forskningsstasjon', '', 'ingen'],

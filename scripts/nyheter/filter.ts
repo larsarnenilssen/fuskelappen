@@ -26,7 +26,7 @@ export type Vurdering = 'sterk' | 'generell' | 'utelukket' | 'aldri' | 'ingen';
  * Hvorfor en sak er med eller ikke. Til rapporten og testene.
  * - `aldri`: et ord fra `aldri` står i tittelen eller teksten.
  * - `utelukket`: tittelen handler om en annen del av utdanningen (f.eks. «barnehage» eller «fagskole») og har ingen
- *   sterke ord, eller saken har bare generelle ord og et ord fra `utelukker` står i teksten.
+ *   sterke ord, eller de generelle ordene står bare i ingressen, og et ord fra `utelukker` står der også.
  * - `ingen`: ingen sterke ord, og ingen generelle ord i tittelen og færre enn to ulike i ingressen.
  * - `sterk` og `generell`: saken er med.
  */
@@ -36,10 +36,11 @@ export function vurder(filter: Nyhetsfilter, tittel: string, tekst = ''): Vurder
   if (aldri?.test(alt)) return 'aldri';
   if (utelukker?.test(tittel) && !sterke?.test(tittel)) return 'utelukket';
   if (sterke?.test(alt)) return 'sterk';
-  // Generelle ord: ett i tittelen, eller minst to ulike i ingressen.
-  const iTittel = generelle?.test(tittel) ?? false;
-  if (!iTittel && antallUlike(filter.generelle, tekst) < 2) return 'ingen';
-  return utelukker?.test(alt) ? 'utelukket' : 'generell';
+  // Generelle ord: ett i tittelen, eller minst to ulike i ingressen. Står et generelt ord i tittelen, utelukker bare
+  // tittelen saken (over), så «Eksamen i sikker nettleser» er med selv om ingressen nevner grunnskolen (eier 07.10.2026).
+  if (generelle?.test(tittel)) return 'generell';
+  if (antallUlike(filter.generelle, tekst) < 2) return 'ingen';
+  return utelukker?.test(tekst) ? 'utelukket' : 'generell';
 }
 
 /** Hvor mange av ordene som står i teksten. */
