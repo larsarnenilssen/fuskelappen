@@ -12,6 +12,31 @@ Startpakken var 149,4 kB (grense 150 kB). Nå lastes bare tekstene for målforme
 
 ---
 
+## Runde 5: dine svar 07.10.2026, kveld
+
+- **K4:** De åtte ACOS-fylkene er med, vist for valgt fylke. Innlandet uten filter (egen feed for utdanning), de andre med ordfilter. Vestland, Trøndelag, Vestfold og Telemark er prøvd (se under).
+- **K8:** HKdir er med, uten ekstra ord som utelukker.
+- **Grensetilfellene:** Alle fem er med. Regelen er endret: Et generelt ord i tittelen tar med saken, med mindre tittelen selv nevner en annen del av utdanningen. Det slipper også gjennom «Regjeringen vil innføre nye krav til hva fremtidige lærere skal kunne» (KD), som handler om lærerutdanningen.
+- **Fylke på nyhetssiden:** Et nytt valg «Fylke» ved siden av «Hvem» og «Kilde»: fylket ditt (standard), et annet fylke, alle fylkene eller ingen (bare de nasjonale kildene). Valget står i adressen (`?fylke=alle`). Når et annet fylke enn ditt vises, står kilden med fullt navn («Statsforvalteren i Vestland»). Forsiden følger alltid fylket i innstillingene.
+- **Fjerde sak på forsiden:** Inntil fire saker. En sak som ikke får helt plass, vises ikke, og boksen blir lavere i stedet for å ha luft nederst. Resultat:
+  - Skrivebord (sidekolonnen): fire saker når titlene er korte. Panelet er da 373 px, mot 366 px for kalenderen.
+  - Mobil: tre saker, fordi titlene går over to linjer. Panelet er 323 px, lavere enn kalenderen (350 px).
+  - Like mange eller flere favoritter er synlige som med kalenderen, i alle målingene.
+  - Saken alene får samme høyde som listen, og ingressen slutter på en hel linje med «…».
+
+### K4b. Vestland, Trøndelag, Vestfold og Telemark (prøvd i Actions 07.10.2026)
+
+Ingen av de fire har en feed. Alle sider er hentet med én forespørsel, og robots.txt tillater stiene (unntatt det Trøndelag bruker, se under).
+
+| Fylke | Hvordan | Størrelse | Saker | Med etter filteret | Vurdering |
+|---|---|---|---|---|---|
+| **Vestland** | Arkivet for temaet «Utdanning» (`/service/article/20/Utdanning`, JSON) | 33 kB | 20 siste, om lag 1 i uka | 14 av 20, alle relevante: inntaket, mobilregler i vidaregåande, fagbrev, KI for elevar og lærarar, nytt bygg for Os vgs. Ute: Arendalsuka, fylkesordføraren sine taler, valet, folkehelse. | **Ta med** med ordfilter. Det er ikke et dokumentert API, men det er det nyhetsarkivet selv bruker. |
+| **Trøndelag** | Nyhetsarkivet er tomt i HTML-en. Sakene hentes av JavaScript fra `/api/`, og robots.txt stenger `/api/`. | 51 kB | 0 | – | **Ikke nå.** Vi kan ikke lese listen uten å bruke stien robots.txt stenger. Alternativ: spør Trøndelag fylkeskommune om en feed. |
+| **Vestfold** | Hele «Aktuelt» på én side, med dato og ingress | 632 kB | 498 (alt siden 2020), om lag 3 i uka | 107. De nyeste er treffsikre: «Færre elever slutter på videregående skoler», «Felles krafttak for læreplass hjalp 84 søkere videre», «Inntakstall for skoleåret 2026/2027», «Nå bygges Elevtjenesten i Vestfold», nye rektorer. Feiltreff: «Skolestart med fokus på trafikksikkerhet» (barneskolen) og «Vestfold lærer av krigserfaringer fra Ukraina» («lærer» som verb). | **Ta med** med ordfilter. Siden er stor, men den hentes én gang om dagen. |
+| **Telemark** | Som Vestfold (samme nettsidesystem) | 357 kB | 264, om lag 1 i uka | 41: «Yrkesfag topper søkerlista i Telemark», «Behov for flere lærebedrifter», «Mobbetallene i Telemark stuper», «Forbyr salg av energidrikk på skolene». Feiltreff: «Hovudlaus bokleik for skulestartarane». | **Ta med** med ordfilter. |
+
+Alle tre jeg anbefaler, er lister og ikke feeder, som hos Udir og Utdanningsforbundet. **K4b:** Ja eller nei til Vestland, Vestfold og Telemark? Østfold svarer ikke, verken herfra eller fra Actions, og Oslo har ingen nyhetsliste for videregående.
+
 ## Runde 4: dine svar 07.10.2026, ettermiddag
 
 - **K3 NRK:** Ikke med (enig i rådet).
