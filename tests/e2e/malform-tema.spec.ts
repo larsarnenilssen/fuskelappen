@@ -13,6 +13,24 @@ test.describe('målform og tema', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
   });
 
+  test('bare tekstene for valgt målform lastes ved oppstart, den andre ved bytte', async ({ page }) => {
+    const tekstbiter: string[] = [];
+    page.on('request', (r) => {
+      const treff = /\/assets\/(nb|nn)-[\w-]+\.js$/.exec(r.url());
+      if (treff?.[1]) tekstbiter.push(treff[1]);
+    });
+    await page.goto('./#/innstillinger');
+    await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
+    expect(tekstbiter).toEqual(['nb']);
+    await page.getByRole('radio', { name: 'Nynorsk' }).check();
+    await expect(page.getByRole('heading', { level: 1, name: 'Innstillingar' })).toBeVisible();
+    expect(tekstbiter).toEqual(['nb', 'nn']);
+    tekstbiter.length = 0;
+    await page.reload();
+    await expect(page.getByRole('heading', { level: 1, name: 'Innstillingar' })).toBeVisible();
+    expect(tekstbiter).toEqual(['nn']);
+  });
+
   test('tema kan byttes og huskes', async ({ page }) => {
     await page.goto('./#/innstillinger');
     const html = page.locator('html');
@@ -40,6 +58,7 @@ test.describe('målform og tema', () => {
     const kontekst = await browser.newContext({ colorScheme: 'dark' });
     const side = await kontekst.newPage();
     await side.goto('http://localhost:4173/jukselappen/');
+    await side.locator('.skall').waitFor();
     const bakgrunn = await side.evaluate(() => getComputedStyle(document.querySelector('.skall') as Element).backgroundColor);
     const lys = await side.evaluate(() => {
       document.documentElement.dataset.tema = 'lys';

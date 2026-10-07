@@ -1,16 +1,14 @@
 // Datoene fra datafilene som oppføringer i kalenderen (avgjørelse 066): skoleruta fra fylkenes forskrifter, fylkenes
 // datoer for inntak og vedtatte endringer i regelverket. Rene funksjoner. Titlene står i src/strings.
-import { hentTekst, type Malform } from '../../core/i18n/tekst.ts';
+import { hentTekst, latBegge, type Malform } from '../../core/i18n/tekst.ts';
 import type { Flerspraak } from '../../core/innhold/skjema.ts';
 import { manedsnavn } from '../../core/tidslinje.ts';
 import { datoLang } from './visning.ts';
 import type { Kalenderoppforing } from './beregning/kalender.ts';
 import type { Inntaksdatoer, Inntaksfelt, KommendeEndringer, Skoleruter, Skolerutetype } from './datatyper.ts';
 
-/** Teksten på begge målformene. */
-function begge(lag: (m: Malform) => string): Flerspraak {
-  return { nb: lag('nb'), nn: lag('nn') };
-}
+/** Teksten på begge målformene, slått opp når den leses (bare den valgte målformen er lastet). */
+const begge = latBegge;
 
 function escape(tekst: string): string {
   return tekst.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

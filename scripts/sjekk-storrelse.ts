@@ -1,5 +1,5 @@
 // Sjekker at startpakken (det index.html laster med en gang) er under grensen i OPPDRAG.md.
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
@@ -16,6 +16,17 @@ for (const fil of new Set(filer)) {
   sum += storrelse;
   console.log(`${(storrelse / 1024).toFixed(1).padStart(7)} kB  ${fil}`);
 }
+// Tekstene for én målform lastes også ved oppstart (avgjørelse 083). Den største av de to regnes med.
+const tekstbiter = readdirSync(join(mappe, 'assets'))
+  .filter((f) => /^n[bn]-[\w-]+\.js$/.test(f))
+  .map((f) => ({ fil: `assets/${f}`, storrelse: gzipSync(readFileSync(join(mappe, 'assets', f))).length }));
+if (tekstbiter.length !== 2) {
+  console.error(`Fant ${tekstbiter.length} tekstbiter for målformene, ventet 2 (nb og nn).`);
+  process.exit(1);
+}
+const storst = tekstbiter.reduce((a, b) => (b.storrelse > a.storrelse ? b : a));
+sum += storst.storrelse;
+console.log(`${(storst.storrelse / 1024).toFixed(1).padStart(7)} kB  ${storst.fil} (tekstene, den største målformen)`);
 const kb = sum / 1024;
 console.log(`Startpakke: ${kb.toFixed(1)} kB gzip (grense ${GRENSE_KB} kB)`);
 if (kb > GRENSE_KB) {

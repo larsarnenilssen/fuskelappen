@@ -24,6 +24,9 @@ const server = await createServer({
 });
 
 try {
+  // Søkeindeksen har begge målformene, så begge tekstbitene lastes først (avgjørelse 083).
+  const tekst = (await server.ssrLoadModule('/src/core/i18n/tekst.ts')) as { lastAlleTekster: () => Promise<void> };
+  await tekst.lastAlleTekster();
   const register = (await server.ssrLoadModule('/src/modules/register.ts')) as {
     samleSokeoppforinger: () => Promise<Sokeoppforing[]>;
   };
