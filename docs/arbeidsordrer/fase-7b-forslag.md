@@ -44,6 +44,30 @@ Resultat: 21 av 486 saker er med (før: 36). Jeg har gått gjennom alle: 19 hand
 4. **«Slik skal elevene lære mer i skolen»** (KD): mest 1.–2. trinn, men også endringer i læreplaner. Ute nå.
 5. **«Eksamen i sikker nettleser»** (Statsforvalteren): gjelder grunnskolen fra 2027. Ute nå.
 
+### K. Prøvehentingen i Actions 07.10.2026 (K3, K5, K6 og K8)
+
+Kildene under er stengt fra skymiljøet og ble prøvd i arbeidsflyten **Nyheter** (PR #121). Rapporten står i sammendraget for kjøringen. Ingen av dem vises i appen før du sier ja.
+
+**K3. NRK.** Hvorfor treffer filteret så dårlig: NRK har feeder per distrikt (toppsaker og siste), men ingen kategori for skole, og titlene er skrevet for å fange interesse, ikke for å si hva saken gjelder. «Elev», «skole» og «lærer» står oftere i saker om ulykker, vold og kommunebudsjett enn i saker om opplæringen. Tallene fra én uke:
+- NRK Vestland, toppsaker: om lag 47 saker i uka. Med strengt filter (sterke ord i tittelen): 0. Med vanlig filter: 1 («På denne skulen er det syklar til over éin million kroner», en grunnskole).
+- NRK Vestland, siste: om lag 140 saker i uka. Strengt: 0. Vanlig: 0. Utelukket: «Opna tilsyn ved Brakanes skule» (grunnskole).
+- NRK Innlandet, toppsaker: om lag 23 i uka. Strengt: 0. Vanlig: 1 («Vil ha forbod mot smartbriller: Her blir dei brukt i skulekvardagen», relevant).
+
+Mitt råd: **ikke ta med NRK nå.** Med strengt filter blir det nesten ingen saker. Med vanlig filter blir det én–to i uka per distrikt, og omtrent halvparten gjelder grunnskolen. Store saker om videregående kommer ofte også fra Utdanningsnytt, Statsforvalteren eller Udir. Vil du likevel prøve, foreslår jeg vanlig filter, bare toppsakene i fylket som er valgt, i testversjonen i to uker.
+
+**K5. forskning.no** (taggen «skole og utdanning», feed som forskning.no selv tilbyr til andre nettsteder): om lag 3 saker i uka. 42 av de siste 92 saker passerer filteret, men mange gjelder barn og grunnskole. Eksempler som passer for videregående:
+- «Konkurransen mellom osloskolene kan gi snillere karakterer» (6. okt)
+- «Å ta fagbrev som voksen kan være utfordrende» (27. sep)
+- «Slik kan elevene på yrkesfag få mer ut av matte-undervisningen» (29. jun)
+- «Hvem er eksamensvurderingen egentlig til for?» (10. aug)
+- «Skolefravær: – At så mange i denne gruppa gruer seg til å gå på skolen, er alvorlig» (8. aug)
+
+Eksempler som gjelder grunnskolen og ville sluppet gjennom: «Slik bør foreldre og lærere gå fram for å sikre at barna blir gode lesere» og «Trygg og ryddig skolegård. Men hva vil barna selv ha?». Mitt råd: **ta med**, som type «Forskning», med et strengere filter for denne kilden: sterkt ord i tittelen eller ingressen, eller et generelt ord i tittelen uten «barn», «barna» eller «foreldre». Da blir det om lag én sak i uka.
+
+**K6. NIFU** (`nifu.no/category/nyhet/feed/`): Feeden viser bare de tre siste sakene, og de tre kom de tre siste dagene, så det er om lag én sak om dagen. De handlet om forskning og arbeidsliv. Ingen av de tre siste gjaldt skolen («NIFU analyserer statsbudsjettets betydning for forskning», «De eldste ansatte har svakere ferdigheter i adaptiv problemløsning …», «Ekstern finansiering av FoU relatert til sjømatnæringen»). Med daglig henting får vi med alt, og filteret slipper gjennom saker om rapporter om videregående, som «Videregående opplæring i utvikling og endring» (NIFU-rapport 2025:23). Mitt råd: **ta med** med vanlig filter. Det blir trolig én–to saker i måneden.
+
+**K8. HKdir:** Ingen feed, og ingen robots.txt (alt er tillatt). Siden «Aktuelt» finnes. Om den har tittel og dato på én side, prøves i neste kjøring. Det kan avgjøres når rapporten er klar.
+
 ## D. Designet (runde 2, etter dine svar 07.10.2026)
 
 **Forsiden** (visningen «Nyheter» i panelet, avgjørelse 081):

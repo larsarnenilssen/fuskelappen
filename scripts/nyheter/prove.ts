@@ -69,6 +69,15 @@ async function main() {
       const datoer = [...tekst.matchAll(/<time[^>]*>([\s\S]*?)<\/time>|\b(\d{1,2}\.\s?(?:\d{1,2}\.|[a-zæøå]+)\s?\d{4})\b/gi)].map((m) => rensTekst(m[1] ?? m[2] ?? '')).slice(0, 12);
       if (overskrifter.length) ut.push(`Overskrifter: ${overskrifter.map((o) => `«${o}»`).join(', ')}`, '');
       if (datoer.length) ut.push(`Datoer på siden: ${datoer.join(', ')}`, '');
+      // Lenken nærmest foran hver dato: på en nyhetsliste er det som regel tittelen på saken.
+      const datoMonster = /\b\d{1,2}\.\s?(?:\d{1,2}\.|[a-zæøå]+)\s?\d{4}\b/gi;
+      const saker = [...tekst.matchAll(datoMonster)].slice(0, 12).map((m) => {
+        const foran = tekst.slice(Math.max(0, (m.index ?? 0) - 1500), m.index);
+        const lenker = [...foran.matchAll(/<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)];
+        const siste = lenker.at(-1);
+        return siste ? `${m[0]}: «${rensTekst(siste[2] ?? '')}» (${siste[1]})` : `${m[0]}: ingen lenke foran`;
+      });
+      if (saker.length) ut.push('Lenken foran hver dato:', '', ...saker.map((x) => `- ${x}`), '');
       if (lenker.length) ut.push(`Lenker med rss/feed/atom: ${lenker.map((l) => `\`${l}\``).join(', ')}`, '');
       ut.push(robots ? `robots.txt (${robots.status}):` : 'robots.txt: ingen svar', '', '```', ...regler, '```', '');
     } catch (e) {
