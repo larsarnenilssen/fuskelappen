@@ -66,7 +66,11 @@ Eksempler som gjelder grunnskolen og ville sluppet gjennom: «Slik bør foreldre
 
 **K6. NIFU** (`nifu.no/category/nyhet/feed/`): Feeden viser bare de tre siste sakene, og de tre kom de tre siste dagene, så det er om lag én sak om dagen. De handlet om forskning og arbeidsliv. Ingen av de tre siste gjaldt skolen («NIFU analyserer statsbudsjettets betydning for forskning», «De eldste ansatte har svakere ferdigheter i adaptiv problemløsning …», «Ekstern finansiering av FoU relatert til sjømatnæringen»). Med daglig henting får vi med alt, og filteret slipper gjennom saker om rapporter om videregående, som «Videregående opplæring i utvikling og endring» (NIFU-rapport 2025:23). Mitt råd: **ta med** med vanlig filter. Det blir trolig én–to saker i måneden.
 
-**K8. HKdir:** Ingen feed, og ingen robots.txt (alt er tillatt). Siden «Aktuelt» finnes. Om den har tittel og dato på én side, prøves i neste kjøring. Det kan avgjøres når rapporten er klar.
+**K8. HKdir:** Ingen feed, og ingen robots.txt (alt er tillatt). Siden «Aktuelt» (`hkdir.no/aktuelt`) har tolv saker med dato på én side, fra 22. juni til 30. september, altså om lag én sak i uka. Titlene står ikke som vanlige lenker i HTML-en, så siden er trolig bygd med JavaScript, og listen må leses på en annen måte enn hos Udir. HKdir skriver mest om høyere utdanning, fagskole og kompetanse. Karriereveiledning og voksenopplæring er relevant, men det blir få saker om videregående.
+
+Mitt råd: **ikke nå.** Det er få relevante saker, og det er usikkert om listen kan leses med én forespørsel. Vil du ha den med, prøver jeg å lese listen. Da gjelder det samme som for Utdanningsforbundet (K1): det er en liste og ikke en feed.
+
+**Skolenes landsforbund:** Feeden svarte ikke, verken herfra eller fra Actions (heller ikke uten www). Den kan ikke tas med nå.
 
 ## D. Designet (runde 2, etter dine svar 07.10.2026)
 
