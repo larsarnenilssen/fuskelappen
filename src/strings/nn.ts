@@ -76,7 +76,7 @@ export const nn: Tekster = {
       sidekolonne: 'Sidekolonna',
       sidekolonneHjelp: 'På stor skjerm står kalenderen, nyheitene, tala og favorittane i ei eiga kolonne til høgre.',
       visninger: 'Kalender, nyheiter og tal',
-      visningerHjelp: 'Vel kva du kan veksle mellom øvst på framsida, eller øvst i sidekolonna på stor skjerm. Er berre éin vald, står han utan brytar.',
+      visningerHjelp: 'Vel kva du kan veksle mellom øvst på framsida, eller øvst i sidekolonna på stor skjerm. Du byter i overskrifta. Er berre éin vald, står han åleine.',
       visning: {
         neste: 'Neste datoar frå kalenderen',
         nyheter: 'Nyheiter',

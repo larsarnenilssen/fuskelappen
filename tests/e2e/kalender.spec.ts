@@ -73,9 +73,10 @@ test.describe('«Neste datoer» på forsiden', () => {
   test('@mobil kalenderen er første visning i panelet, lukket med neste dato, og kan tas ut under «Tilpass»', async ({ page }, info) => {
     test.skip(!info.project.name.includes('mobil'), 'Panelet er lukket fra start bare på mobil.');
     await page.goto('./');
-    const panel = page.locator('.forsidepanel');
-    const gruppe = panel.locator('[data-gruppe="panel"]');
+    const gruppe = page.locator('[data-gruppe="panel"]');
+    // Lukket: tittelen og den neste datoen, uten valgene.
     await expect(gruppe.locator('.gruppe-sammendrag')).toContainText(':');
+    await expect(gruppe.locator('.panel-fane')).toHaveCount(0);
     await gruppe.locator('.gruppeknapp').click();
     await expect(gruppe.locator('.kal-neste > li')).toHaveCount(4);
     await gruppe.getByRole('link', { name: 'Hele kalenderen' }).click();
@@ -84,7 +85,9 @@ test.describe('«Neste datoer» på forsiden', () => {
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await page.getByLabel('Neste datoer fra kalenderen').uncheck();
     await page.getByRole('button', { name: 'Ferdig' }).click();
+    // Panelet ble åpnet over, og står åpent: uten kalenderen og uten valget for den.
+    await expect(gruppe.locator('.gruppeknapp')).toHaveAttribute('aria-expanded', 'true');
     await expect(page.locator('.kal-neste')).toHaveCount(0);
-    await expect(panel.locator('.bryter-valg label', { hasText: 'Kalender' })).toHaveCount(0);
+    await expect(gruppe.getByRole('button', { name: 'Kalender', exact: true })).toHaveCount(0);
   });
 });

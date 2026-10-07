@@ -9781,19 +9781,41 @@ a.knapp {
 }
 
 /* ---------- Panelet øverst på forsiden (eier 07.10.2026, avgjørelse 081) ----------
-   Kalenderen, nyhetene og tallene på samme plass, med en bryter over. Bryteren fyller bredden, med like brede valg. */
-.forsidepanel > .bryter {
-  margin: var(--rom-4) 0 0;
+   Kalenderen, nyhetene og tallene på samme plass. Valgene står i overskriften når panelet er åpent: rolige tekstknapper,
+   der den valgte er fet med en strek under. Raden med valgene dekker overskriften unntatt pilen, så et trykk mellom
+   valgene ikke lukker panelet. */
+.forsidegruppe h2.med-faner {
+  position: relative;
 }
 
-.forsidepanel .bryter-valg {
-  display: grid;
-  grid-auto-columns: minmax(0, 1fr);
-  grid-auto-flow: column;
+.panel-faner {
+  position: absolute;
+  inset: 0 calc(1.1rem + var(--rom-2)) 0 0;
+  display: flex;
+  align-items: center;
+  gap: var(--rom-4);
 }
 
-.forsidepanel .forsidegruppe h2 {
-  margin-top: var(--rom-3);
+.panel-fane {
+  min-height: 2rem;
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--farge-tekst-dempet);
+  font: inherit;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.panel-fane:hover {
+  color: var(--farge-tekst);
+}
+
+.panel-fane[aria-pressed='true'] {
+  border-bottom-color: var(--farge-merke);
+  color: var(--farge-tekst);
+  font-weight: 700;
 }
 
 /* Nyhetene er en skisse til fase 7b. */
@@ -9809,10 +9831,33 @@ a.knapp {
   font-size: var(--str-s);
 }
 
-/* Tallene på forsiden: fire små fliser i to kolonner, også på stor skjerm. */
+/* Tallene på forsiden: ett kort som kalenderens, med tynne streker mellom delene i stedet for egne bokser. */
+.st-forside {
+  overflow: hidden;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.st-forside-sted {
+  margin: 0;
+  padding: var(--rom-2) var(--rom-4) 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
 .st-forside .st-fliser-kompakt {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: var(--rom-3);
+  gap: 0;
+  margin: 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.st-fliser-kompakt .st-flis {
+  padding: var(--rom-2) var(--rom-4);
+  border: 0;
+  border-radius: 0;
+  background: none;
 }
 
 .st-fliser-kompakt .st-flis-tall {
@@ -9822,11 +9867,9 @@ a.knapp {
 /* Stripen: hvert fylke er en prikk etter andelen som fikk læreplass. Landet er en stiplet strek. Prikkene har en ring i
    flatefargen, så de som ligger nær hverandre, skilles. Luft på sidene, så prikkene ytterst ikke går utenfor. */
 .st-stripe-figur {
-  margin: 0 0 var(--rom-3);
+  margin: 0;
   padding: var(--rom-3) var(--rom-4);
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-m);
-  background: var(--farge-flate);
+  border-bottom: var(--strek) solid var(--farge-linje);
 }
 
 .st-stripe {
@@ -9877,44 +9920,11 @@ a.knapp {
   color: var(--farge-tekst-dempet);
 }
 
-/* Skolen og lenken videre, som radene i «Neste datoer». */
-.st-forside-skole {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
-  margin: 0 0 var(--rom-3);
-  padding: var(--rom-2) var(--rom-3);
-  border-left: 4px solid var(--serie-1);
-  background: var(--farge-flate);
-  color: var(--farge-tekst);
-  font-size: var(--str-s);
-  text-decoration: none;
-}
-
-.st-forside-skole > span {
-  flex: 1;
-}
-
-.st-forside-skole:hover > span {
-  text-decoration: underline;
-}
-
-.st-forside-mer {
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-m);
-  background: var(--farge-flate-2);
-  color: var(--farge-lenke);
-}
-
-.st-forside-mer .listelenke-tittel {
-  color: var(--farge-lenke);
-}
-
 .st-stripe-forklaring {
   display: flex;
   flex-wrap: wrap;
   gap: var(--rom-1) var(--rom-4);
-  margin: var(--rom-2) 0 0;
+  margin: var(--rom-1) 0 0;
   font-size: var(--str-xs);
 }
 
@@ -9936,6 +9946,36 @@ a.knapp {
   display: inline-block;
   height: 0.875rem;
   border-left: 2px dashed var(--farge-tekst);
+}
+
+/* Skolen og lenken videre, som radene og «Hele kalenderen» i kalenderens kort. */
+.st-forside-skole {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  padding: var(--rom-2) var(--rom-4);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  color: var(--farge-tekst);
+  font-size: var(--str-s);
+  text-decoration: none;
+}
+
+.st-forside-skole > span {
+  flex: 1;
+}
+
+.st-forside-skole:hover > span {
+  text-decoration: underline;
+}
+
+.st-forside-mer {
+  border-radius: 0;
+  background: var(--farge-flate-2);
+  color: var(--farge-lenke);
+}
+
+.st-forside-mer .listelenke-tittel {
+  color: var(--farge-lenke);
 }
 
 /* Valget av visninger i panelet under «Tilpass»: uten ramme, som delene over. */

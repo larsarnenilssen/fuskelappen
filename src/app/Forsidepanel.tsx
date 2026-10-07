@@ -1,14 +1,13 @@
 // Panelet øverst på forsiden (eier 07.10.2026, avgjørelse 081): Kalender, Nyheter og Videregående i tall er
 // alternative visninger på samme plass, i sidekolonnen på skrivebord og øverst på mobil.
 //
-// - Brukeren veksler mellom visningene med en bryter over panelet. Under «Tilpass» velger brukeren hvilke visninger som
-//   er med. Er bare én med, står den uten bryter, som en vanlig gruppe.
+// - Brukeren veksler mellom visningene med tekstknapper i overskriften, som er borte når panelet er lukket. Under «Tilpass» velger brukeren hvilke visninger som
+//   er med. Er bare én med, står den uten valg, som en vanlig gruppe.
 // - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (som kalenderen gjorde før).
 // - Visningene har hvert sitt oppsett: datoene som en liste, tallene som fliser og en figur.
 // - Nyhetene kommer i fase 7b. Til da er visningen en skisse som bare finnes i testversjonen og i utvikling.
 import type { ComponentChildren, JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import { Bryter } from '../components/Bryter.tsx';
 import { Ikon, type Ikonnavn } from '../components/Ikon.tsx';
 import { kortManed } from '../core/tidslinje.ts';
 import { iDag } from '../data/skolear.ts';
@@ -35,7 +34,7 @@ export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string
   { id: 'itall', ikon: 'sammenlign', favoritt: oversiktsid('statistikk') },
 ];
 
-/** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med bryteren over. */
+/** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med valgene i overskriften. */
 type Ramme = (p: { tittel: string; sammendrag: string; children: ComponentChildren }) => JSX.Element;
 
 function Innhold({ id, ramme }: { id: Visning; ramme: Ramme }) {
@@ -62,7 +61,11 @@ export function Visningsgruppe({ id }: { id: Visning }) {
   return <Innhold id={id} ramme={ramme} />;
 }
 
-/** Panelet med bryteren og visningen brukeren har valgt. Med én visning står den som en vanlig gruppe. */
+/**
+ * Panelet med visningen brukeren har valgt. Valgene står i overskriften når panelet er åpent, som rolige tekstknapper
+ * (eier 07.10.2026). Lukket viser overskriften tittelen og oppsummeringen av visningen. Med én visning står den som en
+ * vanlig gruppe.
+ */
 export function Forsidepanel({ visninger }: { visninger: readonly Visning[] }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
@@ -71,13 +74,19 @@ export function Forsidepanel({ visninger }: { visninger: readonly Visning[] }) {
   if (!forste) return null;
   if (visninger.length === 1) return <Visningsgruppe id={forste} />;
   const aktiv = visninger.find((v) => v === forside.visning) ?? forste;
-  const ramme: Ramme = ({ tittel, sammendrag, children }) => (
-    <div class="forsidepanel" data-visning={aktiv}>
-      <Bryter legend={t('forside.panel.legend')} skjultLegend verdi={aktiv} valg={visninger.map((v) => ({ verdi: v, tekst: t(`forside.panel.${v}`) }))} onEndring={settForsidevisning} />
-      <Gruppe id={PANEL} tittel={tittel} sammendrag={sammendrag} lukket={lukket} onVeksle={() => vekslGruppe(PANEL, lukket)}>
-        {children}
-      </Gruppe>
+  const faner = (
+    <div class="panel-faner" role="group" aria-label={t('forside.panel.legend')}>
+      {visninger.map((v) => (
+        <button key={v} type="button" class="panel-fane" aria-pressed={v === aktiv} onClick={() => settForsidevisning(v)}>
+          {t(`forside.panel.${v}`)}
+        </button>
+      ))}
     </div>
+  );
+  const ramme: Ramme = ({ tittel, sammendrag, children }) => (
+    <Gruppe id={PANEL} tittel={tittel} sammendrag={sammendrag} lukket={lukket} faner={faner} onVeksle={() => vekslGruppe(PANEL, lukket)}>
+      {children}
+    </Gruppe>
   );
   return <Innhold key={aktiv} id={aktiv} ramme={ramme} />;
 }

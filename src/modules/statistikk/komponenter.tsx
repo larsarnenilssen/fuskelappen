@@ -370,6 +370,8 @@ export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string;
   const skolensElever = skole ? d.elever.elever[`S${skole.orgnr}`] : undefined;
   return (
     <div class="st-forside">
+      {/* Stedet står her, fordi overskriften viser valgene i panelet når det er åpent. */}
+      <p class="st-forside-sted">{t('statistikk.forside.sted', { sted: stedsnavn(d, enhet, t) })}</p>
       <ul class="st-fliser st-fliser-kompakt">
         <Flis etikett={t('statistikk.nokkeltall.sokere', { aar: String(d.sokere.aar.at(-1) ?? '') })} verdi={tekstFor(t, sisteVerdi(sok))} under={endringTekst(t, sisteVerdi(sok), forrigeVerdi(sok), d.sokere.aar.at(-2) ?? '') ?? ''} />
         <Flis

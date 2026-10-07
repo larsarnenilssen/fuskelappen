@@ -108,6 +108,7 @@ export const statistikkNb = {
   },
   forside: {
     sammendrag: '{sokere} søkere · {laereplass} fikk læreplass',
+    sted: 'Tall for {sted}',
     stripe: 'Fikk læreplass i fylkene, desember {aar}.',
     stripePlass: '{sted} er nr. {plass} av {antall}.',
     stripeBeskrivelse: 'Andelen søkere som fikk læreplass i de {antall} fylkene, fra {min} til {maks}. Landet {landet}.',

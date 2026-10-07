@@ -26,6 +26,7 @@ export function Gruppe({
   kategori,
   lukket,
   verktoy,
+  faner,
   onVeksle,
   children,
 }: {
@@ -35,6 +36,11 @@ export function Gruppe({
   kategori?: string;
   lukket: boolean;
   verktoy?: ComponentChildren;
+  /**
+   * Valgene i panelet øverst (avgjørelse 081): står i overskriften i stedet for tittelen når gruppen er åpen, og er borte
+   * når den er lukket. Tittelen er fortsatt navnet på knappen som lukker gruppen.
+   */
+  faner?: ComponentChildren;
   /** Uten: gruppen åpnes og lukkes med vekslGruppe. */
   onVeksle?: () => void;
   children: ComponentChildren;
@@ -68,16 +74,17 @@ export function Gruppe({
     };
   }, [lukket]);
   return (
-    <section class="kategori forsidegruppe" data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
-      <h2 id={`${innhold}-tittel`} class={verktoy && !lukket ? 'med-verktoy' : undefined}>
+    <section class={`kategori forsidegruppe${faner ? ' forsidepanel' : ''}`} data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
+      <h2 id={`${innhold}-tittel`} class={[verktoy && !lukket ? 'med-verktoy' : '', faner && !lukket ? 'med-faner' : ''].filter(Boolean).join(' ') || undefined}>
         <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={onVeksle ?? (() => vekslGruppe(id))}>
           <span class="gruppeknapp-tekst">
-            <span>{tittel}</span>
+            <span class={faner && !lukket ? 'skjult-visuelt' : undefined}>{tittel}</span>
             {lukket && <span class="gruppe-sammendrag">{sammendrag}</span>}
           </span>
           <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
         </button>
         {!lukket && verktoy}
+        {!lukket && faner}
       </h2>
       <div id={innhold} class={`gruppe-innhold${utvidet ? ' utvidet' : ''}${animerer ? ' animerer' : ''}`} hidden={!vis}>
         <div class="gruppe-innhold-indre">{children}</div>

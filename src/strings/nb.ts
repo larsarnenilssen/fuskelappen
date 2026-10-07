@@ -76,7 +76,7 @@ export const nb = {
       sidekolonne: 'Sidekolonnen',
       sidekolonneHjelp: 'På stor skjerm står kalenderen, nyhetene, tallene og favorittene i en egen kolonne til høyre.',
       visninger: 'Kalender, nyheter og tall',
-      visningerHjelp: 'Velg hva du kan veksle mellom øverst på forsiden, eller øverst i sidekolonnen på stor skjerm. Er bare én valgt, står den uten bryter.',
+      visningerHjelp: 'Velg hva du kan veksle mellom øverst på forsiden, eller øverst i sidekolonnen på stor skjerm. Du bytter i overskriften. Er bare én valgt, står den alene.',
       visning: {
         neste: 'Neste datoer fra kalenderen',
         nyheter: 'Nyheter',

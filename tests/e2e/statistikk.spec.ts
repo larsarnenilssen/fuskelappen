@@ -59,11 +59,12 @@ test.describe('Videregående i tall på forsiden', () => {
     await settLagret(page, { fylke: '46', skole: SLATTHAUG });
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('./');
-    const panel = page.locator('.forside-sidekolonne .forsidepanel');
-    // Kalenderen er første visning. Valget av «I tall» huskes.
+    const panel = page.locator('.forside-sidekolonne [data-gruppe="panel"]');
+    // Kalenderen er første visning. Valgene står i overskriften, og valget av «I tall» huskes.
     await expect(panel.locator('.kal-neste')).toBeVisible();
-    await panel.locator('.bryter-valg label', { hasText: 'I tall' }).click();
-    await expect(panel.getByRole('heading')).toContainText('Vestland i tall');
+    await panel.getByRole('button', { name: 'I tall', exact: true }).click();
+    await expect(panel.getByRole('button', { name: 'I tall', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await expect(panel.locator('.st-forside-sted')).toHaveText('Tall for Vestland');
     await expect(panel.locator('.st-fliser-kompakt > li')).toHaveCount(4);
     await expect(panel.locator('.st-stripe-prikk')).toHaveCount(15);
     await expect(panel).toContainText(SLATTHAUG.navn);
@@ -78,7 +79,7 @@ test.describe('Videregående i tall på forsiden', () => {
     await page.getByLabel('Videregående i tall', { exact: true }).uncheck();
     await page.getByLabel('Nyheter', { exact: true }).uncheck();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(page.locator('.forsidepanel')).toHaveCount(0);
+    await expect(page.locator('.panel-fane')).toHaveCount(0);
     await expect(page.locator('.forside-sidekolonne [data-gruppe="neste"]')).toBeVisible();
   });
 
@@ -86,20 +87,34 @@ test.describe('Videregående i tall på forsiden', () => {
     await settLagret(page, { fylke: '46', favoritter: ['kalender:oversikt', 'statistikk:oversikt'] });
     await page.goto('./');
     await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
-    await expect(page.locator('.forsidepanel')).toHaveCount(0);
+    await expect(page.locator('[data-gruppe="panel"]')).toHaveCount(0);
     await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(1);
     await expect(page.locator('[data-gruppe="itall"]')).toHaveCount(1);
+  });
+
+  test('«Bare favoritter»: bare visningene som er favoritter, står der', async ({ page }) => {
+    await settLagret(page, { fylke: '46', favoritter: ['statistikk:oversikt', 'inntak:oversikt'] });
+    await page.goto('./');
+    await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
+    await expect(page.locator('[data-gruppe="itall"]')).toHaveCount(1);
+    await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(0);
+    await expect(page.locator('[data-gruppe="nyheter"]')).toHaveCount(0);
   });
 
   test('@mobil «I tall» øverst: lukket med søkerne og læreplassen, og åpnes med et trykk', async ({ page }, info) => {
     test.skip(!info.project.name.includes('mobil'), 'Panelet er lukket fra start bare på mobil.');
     await settLagret(page, { fylke: '46' });
     await page.goto('./');
-    const panel = page.locator('.forsidepanel');
-    await panel.locator('.bryter-valg label', { hasText: 'I tall' }).click();
-    await expect(panel.locator('.gruppe-sammendrag')).toContainText(/søkere · .* fikk læreplass/);
+    const panel = page.locator('[data-gruppe="panel"]');
+    // Valgene står i overskriften når panelet er åpent.
     await panel.locator('.gruppeknapp').click();
+    await panel.getByRole('button', { name: 'I tall', exact: true }).click();
     await expect(panel.locator('.st-fliser-kompakt > li')).toHaveCount(4);
+    // Lukket viser overskriften tallene, uten valgene. Når panelet er åpent, lukkes det med pilen, fordi valgene dekker
+    // resten av overskriften.
+    await panel.locator('.gruppeknapp > .ikon').click();
+    await expect(panel.locator('.gruppe-sammendrag')).toContainText(/søkere · .* fikk læreplass/);
+    await expect(panel.locator('.panel-fane')).toHaveCount(0);
   });
 });
 
