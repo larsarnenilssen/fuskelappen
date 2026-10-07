@@ -70,6 +70,24 @@ export function oversiktspaminnelse(aar: string): string[] {
 }
 
 /**
+ * Kilder som stenger for kildesjekken og derfor sjekkes for hånd i hver kontrollrunde (eier 07.10.2026). De står også
+ * i docs/KILDER-IKKE-MED.md.
+ */
+export const SJEKKES_FOR_HAND: readonly { id: string; sporsmal: string }[] = [
+  { id: 'ks-sfs2213', sporsmal: 'Har KS lagt ut en ny SFS 2213 eller en ny protokoll siden forrige runde?' },
+];
+
+/** Punktene for kildene som sjekkes for hånd, med navn og lenke fra kilderegisteret. */
+export function handsjekk(register: Pick<Kilderegister, 'kilder'> | null): string[] {
+  const punkter = SJEKKES_FOR_HAND.flatMap((s) => {
+    const k = register?.kilder.find((x) => x.id === s.id);
+    return k ? [`- [ ] [${k.navn}](${k.url}): ${s.sporsmal} Er det kommet noe nytt, skriv det til Claude. <!-- handsjekk:${s.id} -->`] : [];
+  });
+  if (punkter.length === 0) return [];
+  return ['## Kilder som stenger for kildesjekken', '', 'Sidene under stenger for automatisk sjekk, så de sjekkes her (docs/KILDER-IKKE-MED.md).', '', ...punkter, ''];
+}
+
+/**
  * Lager saken for kontrollrunden. praksis er det som bør bekreftes (ikke bekreftet, eller bekreftet for mer
  * enn 12 måneder siden). Innhold og verdier som eier har kontrollert, men som er gamle eller har endret kilde,
  * får et avkrysningspunkt. Det som ikke er kontrollert ennå, telles bare, med lenke til kontrolloversikten.
@@ -98,6 +116,7 @@ export function lagKontrollrunde(
     const tekst = register ? kildelenker(kilder, register) : '';
     return tekst ? [`  - Kilder å sjekke mot: ${tekst}`] : [];
   };
+  const hand = handsjekk(register);
   const tekst = [
     `Kontrollrunden i ${navn} ${aar ?? ''}. ${innledning} går du gjennom det appen bygger på uten at det står i kildene, og det som bør kontrolleres på nytt. Kryss av det som fortsatt stemmer, og skriv \`/godkjent\` i en kommentar. Da legges datoen inn automatisk. Er noe endret, skriv det til Claude.`,
     '',
@@ -125,6 +144,7 @@ export function lagKontrollrunde(
     '',
     ...(nr === 5 ? inntakspaminnelse(aar ?? '') : []),
     ...(nr === 8 ? oversiktspaminnelse(aar ?? '') : []),
+    ...hand,
     ...(lenker.length > 0
       ? [
           '## Lenker til Vilbli',
@@ -141,6 +161,6 @@ export function lagKontrollrunde(
     '',
     rundemerke(periode),
   ].join('\n');
-  const antall = praksis.length + gamle.length + lenker.length + (nr === 5 ? 1 : 0);
+  const antall = praksis.length + gamle.length + lenker.length + (nr === 5 ? 1 : 0) + hand.filter((l) => l.startsWith('- [ ]')).length;
   return { tittel: `Kontrollrunde ${navn} ${aar ?? ''}: ${antall} ${antall === 1 ? 'punkt' : 'punkter'}`, tekst };
 }

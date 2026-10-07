@@ -663,7 +663,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 | Oversikt over tilbudene ved hver skole | fase 2 | Avklart. Skolene og tilbudene deres hentes fra utdanning.no (eier 03.10.2026, avgjørelse 053). |
 | Gjennomføring per fylke fra kullet som startet i 2020: Udir oppgir det på fylkene fra 2020 til 2023, som ikke kan deles opp | når Udir legger ut kullet | Venter. Appen regner om de eldre kullene. SSB (dagens fylker) prøves fra GitHub Actions for de sju fylkene som mangler (avgjørelse 080). |
-| KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Avklart for nyhetene (eier 07.10.2026): KS og KF Infoserie hentes ikke. Nyhetssiden har en fast lenke til KS, og vi spør ikke KS om en feed. Begge står i `docs/KILDER-IKKE-MED.md`. Kildesjekken av ks.no står som før. |
+| KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Avklart for nyhetene (eier 07.10.2026): KS og KF Infoserie hentes ikke. Nyhetssiden har en fast lenke til KS, og vi spør ikke KS om en feed. Begge står i `docs/KILDER-IKKE-MED.md`. Særavtalesiden på ks.no svarer 403 fra 06.10.2026. Den sjekkes for hånd i kontrollrundene, og Utdanningsforbundets gjengivelse av SFS 2213 sjekkes hver uke som varsel (eier 07.10.2026, avgjørelse 008). |
 
 ## 8. Ferdig når
 
