@@ -88,6 +88,7 @@ export const ruter = [
   '#/fylker/46',
   '#/statistikk',
   '#/statistikk?fylke=46',
+  '#/nyheter',
   '#/lov/vestland-skoleregler/8',
   '#/lov/forvaltningsloven',
   '#/lov/hovedtariffavtalen/hta-ansettelse',

@@ -1,0 +1,139 @@
+# Nyhetskildene (fase 7b). scripts/hent-nyheter.ts henter dem hver dag til data/nyheter/nyheter.json, og appen viser
+# navnet, typen og merknaden herfra. Hver kilde har en oppføring i content/kilder.yaml med lisens (`kilde`).
+#
+# - type: myndighet, fagpresse, organisasjon (interessepart), forskning eller media.
+# - format: rss (RSS eller Atom), udir eller utdanningsforbundet (nyhetslisten på én side).
+# - filter: vgs (bare saker som passer ordene under) eller alle.
+# - ingress: om ingressen tas med (eier avgjør når designet er klart).
+# - fylker: Statsforvalteren vises bare når et av fylkene er valgt.
+# - utelat: ord i tittelen som utelukker en sak fra kilden.
+
+# Ordene som gjør en sak relevant for videregående. Et ord treffer også når det er starten på et lengre ord.
+filter:
+  sterke:
+    - videregående
+    - vidaregåande
+    - vgs
+    - vg1
+    - vg2
+    - vg3
+    - yrkesfag
+    - studieforberedende
+    - studiekompetanse
+    - lærling
+    - lærlinga
+    - lærekandidat
+    - lærefag
+    - læreplass
+    - lærebedrift
+    - fagbrev
+    - svennebrev
+    - fagprøve
+    - fagopplæring
+    - fag- og yrkesopplæring
+    - opplæringskontor
+    - fylkeskommun
+    - privatist
+    - inntak
+    - opplæringslov
+    - opplæringsforskrift
+    - privatskolelov
+    - SFS 2213
+    - lektor
+  generelle:
+    - skole
+    - skule
+    - elev
+    - lærer
+    - lærar
+    - rektor
+    - skoleleder
+    - skuleleiar
+    - eksamen
+    - standpunkt
+    - karakter
+    - fravær
+    - læreplan
+    - fagfornyelsen
+    - vurdering
+    - skolemiljø
+    - skulemiljø
+    - mobbing
+    - tilpasset opplæring
+    - tilpassa opplæring
+    - spesialundervisning
+    - individuelt tilrettelagt
+    - særskilt språkopplæring
+    - undervisning
+    - opplæring
+  utelukker:
+    - barnehage
+    - grunnskole
+    - grunnskule
+    - barneskole
+    - barneskule
+    - ungdomsskole
+    - ungdomsskule
+    - småskole
+    - 1. trinn
+    - 1. og 2. trinn
+    - 1.–4. trinn
+    - 5.–7. trinn
+    - 8.–10. trinn
+    - skolefritidsordning
+    - SFO
+    - universitet
+    - høyskole
+    - høgskole
+    - studenter
+    - studentar
+    - doktorgrad
+    - fagskole
+    - fagskule
+    - studielån
+    - forskningssenter
+    - lærerutdanning
+    - lærarutdanning
+  aldri:
+    - stillingsutlysning
+    - ledig stilling
+
+kilder:
+  - id: regjeringen-kd
+    navn: { nb: Kunnskapsdepartementet, nn: Kunnskapsdepartementet }
+    kortnavn: { nb: KD, nn: KD }
+    type: myndighet
+    kilde: regjeringen-kd-nyheter
+    format: rss
+    url: https://www.regjeringen.no/no/rss/Rss/2581966/?owner=586
+    filter: vgs
+    ingress: true
+
+  - id: udir
+    navn: { nb: Utdanningsdirektoratet, nn: Utdanningsdirektoratet }
+    kortnavn: { nb: Udir, nn: Udir }
+    type: myndighet
+    kilde: udir-siste-nytt
+    format: udir
+    url: https://www.udir.no/om-udir/siste-nytt/
+    filter: vgs
+    ingress: true
+
+  - id: skolelederforbundet
+    navn: { nb: Skolelederforbundet, nn: Skolelederforbundet }
+    type: organisasjon
+    kilde: skolelederforbundet-nyheter
+    format: rss
+    url: https://www.skolelederforbundet.no/feed/
+    filter: alle
+    ingress: true
+    utelat: [forsikring, YS Fordel, Kampanje]
+
+  - id: utdanningsforbundet
+    navn: { nb: Utdanningsforbundet, nn: Utdanningsforbundet }
+    type: organisasjon
+    kilde: utdanningsforbundet-nyheter
+    format: utdanningsforbundet
+    url: https://www.utdanningsforbundet.no/nyheter
+    filter: alle
+    ingress: true

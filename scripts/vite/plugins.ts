@@ -203,6 +203,8 @@ export function skolerPlugin(rot: string): Plugin {
 export function dataPlugin(rot: string, mode: string): Plugin {
   const filer: Record<string, string> = {
     'data/status/kildestatus.json': join(rot, 'data/status/kildestatus.json'),
+    // Nyhetene hentes når de vises, ikke med appen, så en ny dag med nyheter ikke gir en ny versjon (fase 7b).
+    'data/nyheter/nyheter.json': join(rot, 'data/nyheter/nyheter.json'),
     'data/skoler/vgs.json': join(rot, 'data/skoler/vgs.json'),
     'sok/indeks.json': join(rot, `.generert/sokeindeks-${mode}.json`),
   };

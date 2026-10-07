@@ -5,7 +5,7 @@
 //   er med. Er bare én med, står den uten valg, som en vanlig gruppe.
 // - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (som kalenderen gjorde før).
 // - Visningene har hvert sitt oppsett: datoene som en liste, tallene som fliser og en figur.
-// - Nyhetene kommer i fase 7b. Til da er visningen en skisse som bare finnes i testversjonen og i utvikling.
+// - Nyhetene (fase 7b) og tallene lastes når visningen vises, så de ikke er med i startpakken.
 import type { ComponentChildren, JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { Ikon, type Ikonnavn } from '../components/Ikon.tsx';
@@ -18,6 +18,9 @@ import { datoKort } from '../modules/kalender/visning.ts';
 import type { Statistikk } from '../core/statistikk/skjema.ts';
 import { lastStatistikk } from '../data/statistikk.ts';
 import type * as Komponenter from '../modules/statistikk/komponenter.tsx';
+import type * as Nyhetskomponenter from '../modules/nyheter/komponenter.tsx';
+import { NYHETER_RUTE } from '../modules/nyheter/adresse.ts';
+import type { Nyheter as Nyhetsfil } from '../modules/nyheter/skjema.ts';
 import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
 import { settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilstand.ts';
@@ -28,11 +31,9 @@ export const PANEL = 'panel';
 /** Visningene i panelet. Id-ene er de samme som gruppene hadde før, så valget om å slå dem av beholdes. */
 export type Visning = 'neste' | 'nyheter' | 'itall';
 
-const NYHETER_SKISSE = __TESTVERSJON__ || import.meta.env.MODE !== 'production';
-
 export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string | null }[] = [
   { id: 'neste', ikon: 'kalender', favoritt: oversiktsid('kalender') },
-  ...(NYHETER_SKISSE ? [{ id: 'nyheter' as const, ikon: 'dokument' as const, favoritt: null }] : []),
+  { id: 'nyheter', ikon: 'dokument', favoritt: oversiktsid('nyheter') },
   { id: 'itall', ikon: 'sammenlign', favoritt: oversiktsid('statistikk') },
 ];
 
@@ -160,18 +161,30 @@ function NesteDatoer({ ramme }: { ramme: Ramme }) {
   });
 }
 
-/** Nyhetene (fase 7b). Til da en skisse som viser hvor de kommer. */
+/** De nyeste nyhetene (fase 7b). Komponentene og nyhetene lastes når visningen vises. */
 function Nyheter({ ramme }: { ramme: Ramme }) {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
+  const { innstillinger } = useTilstand();
+  const [lastet, settLastet] = useState<{ m: typeof Nyhetskomponenter; d: Nyhetsfil } | null | 'feil'>(null);
+  useEffect(() => {
+    let aktiv = true;
+    Promise.all([import('../modules/nyheter/komponenter.tsx'), import('../data/nyheter.ts').then((n) => n.lastNyheter())])
+      .then(([m, d]) => aktiv && settLastet({ m, d }))
+      .catch(() => aktiv && settLastet('feil'));
+    return () => {
+      aktiv = false;
+    };
+  }, []);
+  if (!lastet || lastet === 'feil') {
+    const melding = lastet === 'feil' ? t('nyheter.feil') : t('app.lasterInn');
+    return ramme({ tittel: t('forside.panel.nyheterTittel'), sammendrag: melding, children: <p class="dempet">{melding}</p> });
+  }
+  const { ForsideNyheter, forsideSammendrag, nyesteSaker } = lastet.m;
+  const saker = nyesteSaker(lastet.d, innstillinger.fylke);
   return ramme({
     tittel: t('forside.panel.nyheterTittel'),
-    sammendrag: t('forside.panel.nyheterSammendrag'),
-    children: (
-      <p class="forside-nyheter-skisse">
-        <Ikon navn="info" class="ikon-liten" />
-        <span>{t('forside.panel.nyheterSkisse')}</span>
-      </p>
-    ),
+    sammendrag: forsideSammendrag(t, malform, saker),
+    children: <ForsideNyheter saker={saker} rute={NYHETER_RUTE} />,
   });
 }
 

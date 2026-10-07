@@ -22,6 +22,7 @@ export const DATAFILER: readonly { fil: RegExp; type: Lenketype; grunn: string }
   { fil: /^data\/udir\/fagfordeling-.*\.json$/, type: 'fast', grunn: 'Kildene til fag- og timefordelingen.' },
   { fil: /^data\/eksamen\/datoer\.json$/, type: 'fast', grunn: 'Sidene eksamensdatoene er hentet fra.' },
   { fil: /^data\/inntak\/datoer\.json$/, type: 'fast', grunn: 'Fylkenes sider inntaksdatoene er hentet fra.' },
+  { fil: /^data\/nyheter\/nyheter\.json$/, type: 'stikkprove', grunn: 'Sakene i nyhetene skifter hver dag, og hentingen ser at kildene svarer.' },
 ];
 
 /** Lenker som ikke sjekkes: adresser i eksempler og maler. */

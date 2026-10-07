@@ -87,6 +87,12 @@ export default defineConfig(({ mode }) => {
               options: { cacheName: 'kildestatus', networkTimeoutSeconds: 4 },
             },
             {
+              // Nyhetene: ferske når det er nett, ellers forrige liste (fase 7b).
+              urlPattern: ({ url }) => url.pathname.endsWith('/data/nyheter/nyheter.json'),
+              handler: 'NetworkFirst',
+              options: { cacheName: 'nyheter', networkTimeoutSeconds: 4 },
+            },
+            {
               urlPattern: ({ url }) => url.pathname.includes('/data/') && url.pathname.endsWith('.json'),
               handler: 'StaleWhileRevalidate',
               options: { cacheName: 'data', expiration: { maxEntries: 200 } },

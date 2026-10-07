@@ -1,0 +1,125 @@
+/* Nyhetene (fase 7b): siden og visningen i panelet på forsiden. Filen importeres av komponentene og lastes med dem,
+   ikke i startpakken (avgjørelse 082). Fargene er tokenene fra tokens.css. */
+
+/* Skissen i testversjonen: valget mellom med og uten ingress. */
+.nyh-skisse {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3);
+  border: var(--strek) dashed var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.nyh-skisse p {
+  margin: var(--rom-2) 0 0;
+}
+
+/* Filteret: hvem og kilde side om side, under hverandre på smal skjerm. */
+.nyh-filter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: var(--rom-3);
+  margin: 0 0 var(--rom-3);
+}
+
+.nyh-filter .felt {
+  margin: 0;
+}
+
+.nyh-dag h2 {
+  margin: var(--rom-4) 0 var(--rom-2);
+}
+
+/* En sak: tittel, ingress og kilden under. Hele raden er lenken ut. */
+.nyh-sak {
+  align-items: flex-start;
+}
+
+.nyh-sak .listelenke-tekst {
+  gap: 0.15rem;
+}
+
+.nyh-sak .listelenke-tittel {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 12 5 5;
+}
+
+.nyh-sak > .ikon:last-child {
+  margin-top: 0.2rem;
+  color: var(--farge-tekst-dempet);
+}
+
+/* Ingressen: høyst tre linjer, i vanlig tekstfarge og litt mindre. */
+.nyh-ingress {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  font-size: var(--str-s);
+  color: var(--farge-tekst);
+}
+
+/* På forsiden: høyst to linjer. */
+.nyh-forside .nyh-ingress {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* «Alle nyhetene» er en lenke videre, med lenkefarge som «Hele kalenderen». */
+.nyh-forside .nyh-alle {
+  background: var(--farge-flate-2);
+  color: var(--farge-lenke);
+}
+
+.nyh-forside .nyh-alle .listelenke-tittel {
+  font-weight: 600;
+}
+
+.nyh-om p {
+  margin: 0 0 var(--rom-3);
+}
+
+.nyh-kildeliste {
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+}
+
+.nyh-kildeliste > li {
+  padding: var(--rom-2) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.nyh-kildeliste > li:first-child {
+  border-top: 0;
+}
+
+.nyh-kildenavn {
+  font-weight: 600;
+}
+
+.nyh-kildefeil {
+  display: flex;
+  gap: var(--rom-1);
+  align-items: flex-start;
+  margin-top: var(--rom-1);
+  color: var(--farge-advarsel);
+}
+
+.nyh-ks {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.nyh-ks h2 {
+  margin: 0 0 var(--rom-2);
+}
+
+.nyh-ks p {
+  margin: 0 0 var(--rom-2);
+}

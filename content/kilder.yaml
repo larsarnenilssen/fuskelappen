@@ -1498,3 +1498,65 @@ kilder:
     godkjent_fingeravtrykk: null
     faser: [0]
     merknad: Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.
+
+  # Nyhetskildene (fase 7b, avgjørelse 084). Hentes hver dag til data/nyheter/nyheter.json. Bare tittel, dato, lenke og
+  # ingress; appen lenker til saken hos kilden. Hvordan hver kilde hentes, står i content/nyheter/kilder.yaml.
+  - id: regjeringen-kd-nyheter
+    navn: Nyheter fra Kunnskapsdepartementet (RSS)
+    kortnavn: Regjeringen.no (KD)
+    utgiver: Kunnskapsdepartementet
+    url: https://www.regjeringen.no/no/dep/kd/id586/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Alle publiseringer fra departementet (RSS). Filtreres på ord for videregående, fordi KD også har barnehage,
+      høyere utdanning og forskning.
+
+  - id: udir-siste-nytt
+    navn: Siste nytt, Utdanningsdirektoratet
+    kortnavn: Udir, siste nytt
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/om-udir/siste-nytt/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Nyhetslisten (første side, ti saker). Udir har ingen RSS. Filtreres på ord for videregående.
+
+  - id: skolelederforbundet-nyheter
+    navn: Nyheter fra Skolelederforbundet (RSS)
+    kortnavn: Skolelederforbundet
+    utgiver: Skolelederforbundet
+    url: https://www.skolelederforbundet.no/
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: Interesseorganisasjon. Medlemstilbud tas ikke med.
+
+  - id: utdanningsforbundet-nyheter
+    navn: Nyheter fra Utdanningsforbundet
+    kortnavn: Utdanningsforbundet
+    utgiver: Utdanningsforbundet
+    url: https://www.utdanningsforbundet.no/nyheter
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken.
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Interesseorganisasjon. Nyhetslisten (første side). Ingen RSS. Eier må si ja til å lese en liste og ikke en feed.

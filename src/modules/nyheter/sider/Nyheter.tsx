@@ -1,0 +1,179 @@
+// Nyhetssiden (fase 7b): alle sakene per dag, nyeste først, med filter på hvem som står bak og kilde. Filteret står i
+// adressen. Til høyre på stor skjerm: om utvalget, kildene med status og kildene til siden.
+import { useEffect, useMemo, useState } from 'preact/hooks';
+import { erstattAdresse } from '../../../app/ruter.ts';
+import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { Bryter } from '../../../components/Bryter.tsx';
+import { Ikon } from '../../../components/Ikon.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
+import { Seksjon } from '../../../components/Seksjon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
+import { formaterDato, formaterTidspunkt } from '../../../core/i18n/tekst.ts';
+import { iDag } from '../../../data/skolear.ts';
+import { lastNyheter } from '../../../data/nyheter.ts';
+import { oversiktsid } from '../../favoritter.ts';
+import type { SideProps } from '../../typer.ts';
+import { NYHETER_RUTE } from '../adresse.ts';
+import { dagTittel, INGRESS_SKISSE, Sak, useVisIngress } from '../komponenter.tsx';
+import type { Nyheter as Nyhetsfil, Nyhetstype } from '../skjema.ts';
+import { filterSporring, lesFilter, NYHETSKILDER, perDag, synligeKilder, typerMedKilder, velgSaker, type Nyhetsfilter } from '../utvalg.ts';
+
+const KS_URL = 'https://www.ks.no/les-mer/?theme=43';
+
+export default function Nyheter({ sporring }: SideProps) {
+  const { t, malform } = useTekst();
+  const { innstillinger } = useTilstand();
+  const bred = useBred();
+  const [data, settData] = useState<Nyhetsfil | null | 'feil'>(null);
+  const [filter, settFilter] = useState<Nyhetsfilter>(() => lesFilter(sporring));
+  const [visIngress, settVisIngress] = useVisIngress();
+  useEffect(() => {
+    let aktiv = true;
+    lastNyheter()
+      .then((d) => aktiv && settData(d))
+      .catch(() => aktiv && settData('feil'));
+    return () => {
+      aktiv = false;
+    };
+  }, []);
+
+  const kilder = useMemo(() => synligeKilder(NYHETSKILDER, innstillinger.fylke), [innstillinger.fylke]);
+  const typer = typerMedKilder(kilder);
+  const kilderForType = filter.type ? kilder.filter((k) => k.type === filter.type) : kilder;
+  const endre = (endring: Partial<Nyhetsfilter>) => {
+    const ny = { ...filter, ...endring };
+    // En kilde som ikke hører til typen, faller bort.
+    if (ny.kilde && ny.type && kilder.find((k) => k.id === ny.kilde)?.type !== ny.type) ny.kilde = null;
+    settFilter(ny);
+    erstattAdresse(NYHETER_RUTE, Object.fromEntries(new URLSearchParams(filterSporring(ny))));
+  };
+  const saker = data && data !== 'feil' ? velgSaker(data.saker, kilder, filter) : [];
+  const idag = iDag();
+
+  const hoved = (
+    <>
+      {INGRESS_SKISSE && (
+        <div class="nyh-skisse">
+          <Bryter
+            legend={t('nyheter.skisse.legend')}
+            verdi={visIngress ? 'med' : 'uten'}
+            valg={[
+              { verdi: 'med', tekst: t('nyheter.skisse.med') },
+              { verdi: 'uten', tekst: t('nyheter.skisse.uten') },
+            ]}
+            onEndring={(v) => settVisIngress(v === 'med')}
+            kompakt
+          />
+          <p class="liten dempet">{t('nyheter.skisse.hjelp')}</p>
+        </div>
+      )}
+      <div class="nyh-filter">
+        <div class="felt">
+          <label for="nyh-hvem">{t('nyheter.filter.hvem')}</label>
+          <select id="nyh-hvem" value={filter.type ?? ''} onChange={(e) => endre({ type: (e.currentTarget.value || null) as Nyhetstype | null })}>
+            <option value="">{t('nyheter.filter.alle')}</option>
+            {typer.map((ty) => (
+              <option key={ty} value={ty}>
+                {t(`nyheter.filter.${ty}`)}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div class="felt">
+          <label for="nyh-kilde">{t('nyheter.filter.kilde')}</label>
+          <select id="nyh-kilde" value={filter.kilde ?? ''} onChange={(e) => endre({ kilde: e.currentTarget.value || null })}>
+            <option value="">{t('nyheter.filter.alleKilder')}</option>
+            {kilderForType.map((k) => (
+              <option key={k.id} value={k.id}>
+                {k.navn[malform]}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      {data === null && <p class="dempet">{t('nyheter.laster')}</p>}
+      {data === 'feil' && <p role="alert">{t('nyheter.feil')}</p>}
+      {data && data !== 'feil' && (
+        <>
+          <p class="liten dempet" aria-live="polite">
+            {t('nyheter.antall', { antall: saker.length })} · {t('nyheter.hentet', { tid: formaterTidspunkt(data.hentet, malform) })}
+          </p>
+          {saker.length === 0 && <p>{t('nyheter.ingen')}</p>}
+          {perDag(saker).map((dag) => (
+            <section key={dag.dato} class="nyh-dag" aria-labelledby={`nyh-${dag.dato}`}>
+              <h2 id={`nyh-${dag.dato}`} class="liten-overskrift">
+                {dagTittel(dag.dato, idag, t, malform)}
+              </h2>
+              <ul class="liste">
+                {dag.saker.map((s) => (
+                  <li key={s.url}>
+                    <Sak sak={s} ingress={visIngress} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </>
+      )}
+    </>
+  );
+
+  const status = data && data !== 'feil' ? data.kilder : {};
+  const side = (
+    <>
+      <Seksjon id="nyh-om" tittel={t('nyheter.om.tittel')} apen={bred}>
+        <div class="nyh-om">
+          <p>{t('nyheter.om.utvalg')}</p>
+          <p>{t('nyheter.om.interesseparter')}</p>
+          <p>
+            {t('nyheter.om.fylke')}
+            {!innstillinger.fylke && (
+              <>
+                {' '}
+                <a href="#/innstillinger">{t('nyheter.om.velgFylke')}</a>
+              </>
+            )}
+          </p>
+          <p class="dempet">{t('nyheter.om.ingenBilder')}</p>
+        </div>
+      </Seksjon>
+      <Seksjon id="nyh-kildene" tittel={t('nyheter.kildene.tittel', { antall: kilder.length })} innhold={kilder.map((k) => k.navn[malform]).join(', ')} apen={bred}>
+        <ul class="nyh-kildeliste">
+          {kilder.map((k) => {
+            const s = status[k.id];
+            return (
+              <li key={k.id}>
+                <span class="nyh-kildenavn">{k.navn[malform]}</span> <span class="dempet">· {t(`nyheter.typer.${k.type}`)}</span>
+                {k.merknad && <span class="liten dempet"> · {k.merknad[malform]}</span>}
+                {s && s.status !== 'ok' && (
+                  <span class="nyh-kildefeil liten">
+                    <Ikon navn="info" class="ikon-liten" />
+                    {t(`nyheter.kildene.${s.status}`, { dato: s.feilSiden ? formaterDato(s.feilSiden, malform) : '' })}
+                  </span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </Seksjon>
+      <div class="nyh-ks">
+        <h2 class="liten-overskrift">{t('nyheter.ks.tittel')}</h2>
+        <p>{t('nyheter.ks.tekst')}</p>
+        <a class="ekstern-lenke" href={KS_URL} target="_blank" rel="noopener noreferrer">
+          {t('nyheter.ks.lenke')}
+          <Ikon navn="ekstern" class="ikon-liten" />
+        </a>
+      </div>
+      <Kildeboks kilder={kilder.map((k) => ({ id: k.kilde }))} nokkel="nyheter" />
+    </>
+  );
+
+  return (
+    <div class="side side-bred">
+      <Sidetopp tittel={t('nyheter.tittel')} favoritt={oversiktsid('nyheter')} />
+      <p class="ingress">{t('nyheter.innledning')}</p>
+      <ToKolonner hoved={hoved} side={side} />
+    </div>
+  );
+}

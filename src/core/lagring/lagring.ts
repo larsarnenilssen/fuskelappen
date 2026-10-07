@@ -157,6 +157,8 @@ export const VALGNOKLER = {
   lopvisning: `${LAGRINGSNOKKEL}-lopvisning`,
   /** Øktlengden sist valgt i en kalkulator, som JSON: { minutter, fritt } (eier 04.10.2026). */
   oktlengde: `${LAGRINGSNOKKEL}-oktlengde`,
+  /** Skissen av nyhetene i testversjonen: «med» eller «uten» ingress (fase 7b). */
+  nyhetsingress: `${LAGRINGSNOKKEL}-nyhetsingress`,
 } as const;
 export type Valg = keyof typeof VALGNOKLER;
 
