@@ -55,7 +55,13 @@ async function main() {
                 : lesFeed(tekst);
       const med = saker.filter((s) => provevurdering(filter, k, s).startsWith('med'));
       ut.push(`Svar ${status}, ${Math.round(tekst.length / 1024)} kB. ${saker.length} saker, om lag ${perUke(saker)} per uke. ${med.length} ville vært med.`, '');
-      if (saker.length === 0) ut.push('Starten av svaret:', '', '```', tekst.slice(0, 800).replace(/\s+/g, ' '), '```', '');
+      if (saker.length === 0) {
+        // Hvor sakene kommer fra: teksten rundt «published» (Angular-maler, ng-init) og adressene i skriptene.
+        const i = tekst.search(/ng-init|published|"items"|nyhetsarkiv/i);
+        ut.push('Teksten rundt det første treffet på ng-init, published, items eller nyhetsarkiv:', '', '```', tekst.slice(Math.max(0, i - 400), i + 1200).replace(/\s+/g, ' '), '```', '');
+        const adresser = [...new Set([...tekst.matchAll(/["'](\/[a-z0-9/_-]*(?:api|service|nyhet|news|search|sok)[a-z0-9/_?=&.-]*)["']/gi)].map((m) => m[1]))].slice(0, 15);
+        ut.push(`Adresser i siden: ${adresser.length ? adresser.map((a) => `\`${a}\``).join(', ') : 'ingen'}`, '');
+      }
       if (saker.length > 0) {
         ut.push('| Dato | Filteret | Tittel |', '|---|---|---|');
         for (const s of [...med, ...saker.filter((x) => !med.includes(x))].slice(0, 25)) ut.push(`| ${s.dato ?? '?'} | ${provevurdering(filter, k, s)} | ${celle(s.tittel)} |`);

@@ -200,14 +200,17 @@ export function lesLenkeliste(html: string, base: string): RaSak[] {
   const ut: RaSak[] = [];
   const sett = new Set<string>();
   for (const a of parse(html).querySelectorAll('a[href]')) {
-    const tittel = rensTekst(a.innerHTML);
+    // Tittelen er overskriften i lenken (kortet), ellers hele lenketeksten. Ingressen er første avsnitt.
+    const overskrift = a.querySelector('h1, h2, h3, h4');
+    const tittel = rensTekst((overskrift ?? a).innerHTML);
     const url = absolutt(a.getAttribute('href') ?? '', base);
     if (tittel.length < 15 || !url.startsWith('http') || sett.has(url)) continue;
     const rundt = rensTekst((a.parentNode?.parentNode ?? a.parentNode ?? a).innerHTML ?? '');
     const dato = /\b(\d{1,2}\.\d{1,2}\.\d{4})\b/.exec(rundt)?.[1] ?? /\b(\d{1,2}\.\s*[a-zæøå]+\s+\d{4})\b/i.exec(rundt)?.[1] ?? null;
     if (!dato) continue;
     sett.add(url);
-    ut.push({ tittel, url, dato: lesDato(dato), ingress: null, stikkord: [] });
+    const ingress = overskrift ? rensTekst(a.querySelector('p')?.innerHTML ?? '') : '';
+    ut.push({ tittel, url, dato: lesDato(dato), ingress: ingress || null, stikkord: [] });
   }
   return ut;
 }
