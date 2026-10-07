@@ -140,6 +140,8 @@ export const ruter = [
 export async function venterPaaSide(side: Page): Promise<void> {
   await side.locator('main h1').first().waitFor();
   await side.locator('main .laster').waitFor({ state: 'detached' }).catch(() => undefined);
+  // Deler som lastes etter siden, f.eks. tallene på fylkessiden, er merket aria-busy til de er lastet.
+  await side.locator('main [aria-busy="true"]').first().waitFor({ state: 'detached' }).catch(() => undefined);
 }
 
 /** Finner elementer som går utenfor skjermen horisontalt. */

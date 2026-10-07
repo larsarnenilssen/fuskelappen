@@ -158,7 +158,24 @@ export function Tallboks({ tittel, fylke, children }: { tittel: string; fylke: s
 export function FylketITall({ fylke, navn }: { fylke: string; navn: string }) {
   const { t } = useTekst();
   const d = useStatistikk();
-  if (d === null || d === 'feil') return null;
+  if (d === 'feil') return null;
+  // Mens tallene lastes, står boksen med samme oppbygning og tomme fliser, så siden under ikke skyves ned når tallene
+  // kommer. Ellers flytter nettleseren siden for brukeren som har begynt å rulle (CI 07.10.2026).
+  if (d === null) {
+    return (
+      <section class="st-fylket" aria-busy="true" aria-labelledby="st-fylket-tittel">
+        <h2 class="liten-overskrift" id="st-fylket-tittel">
+          {t('statistikk.iTall', { sted: navn })}
+        </h2>
+        <ul class="st-fliser" aria-hidden="true">
+          {[0, 1, 2, 3].map((i) => (
+            <Flis key={i} etikett={'\u00a0'} verdi={'\u00a0'} under={'\u00a0'} />
+          ))}
+        </ul>
+        <p class="st-boks-lenke">{t('app.lasterInn')}</p>
+      </section>
+    );
+  }
   const enhet = `F${fylke}`;
   if (!d.enheter[enhet]) return null;
   // Bare plassen, ikke hele rangeringen: den står på siden Videregående i tall.
