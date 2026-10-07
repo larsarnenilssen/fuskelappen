@@ -91,37 +91,13 @@ button.nyh-sak {
    som ikke får helt plass, vises ikke, og boksen blir lavere (komponenter.tsx). Mens det måles, har boksen full høyde
    (`maler`). Filteret har luft rundt seg (eier 07.10.2026). Filteret og «Alle» står i én linje øverst. En sak som er valgt, fyller den
    samme plassen med ingressen og knappen til kilden. */
-.nyh-forside {
-  display: flex;
-  flex-direction: column;
-  max-height: 18.25rem;
-  margin: 0 0 var(--rom-4);
-  background: var(--farge-flate);
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-m);
-  overflow: hidden;
-}
-
-/* Linjen med filteret og «Alle nyhetene»: lys flate og blå tekst, som «Hele kalenderen» (eier 07.10.2026). */
-.nyh-forside.maler {
-  height: 18.25rem;
+.nyh-forside-topp {
+  border-bottom: var(--strek) solid var(--farge-linje);
 }
 
 /* Saken alene: like høy som listen var (satt i komponenten), ellers full høyde. */
 .nyh-forside-sak {
   height: 18.25rem;
-}
-
-.nyh-forside-topp {
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--rom-3);
-  min-height: 2.75rem;
-  padding: var(--rom-1) var(--rom-3);
-  background: var(--farge-flate-2);
-  border-bottom: var(--strek) solid var(--farge-linje);
 }
 
 /* Den vanlige nedtrekkslisten ligger usynlig over teksten. 16 px, så iOS ikke forstørrer siden når den åpnes. */
@@ -179,25 +155,6 @@ button.nyh-sak {
 .nyh-forside-alle:hover,
 .nyh-filterknapp:hover .nyh-filterknapp-tekst {
   text-decoration: underline;
-}
-
-.nyh-forside-liste {
-  /* Målestokk for sakene som får plass (offsetTop). */
-  position: relative;
-  flex: 1;
-  min-height: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
-
-.nyh-forside-liste > li + li {
-  border-top: var(--strek) solid var(--farge-linje);
-}
-
-.nyh-forside-tom {
-  padding: var(--rom-3);
 }
 
 .nyh-forside-knapp {

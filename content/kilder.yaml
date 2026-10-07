@@ -1654,7 +1654,7 @@ kilder:
       07.10.2026).
 
   - id: fylkeskommunene-nyheter
-    navn: Nyheter fra fylkeskommunene på ACOS (RSS per fylke)
+    navn: Nyheter fra fylkeskommunene (RSS eller nyhetsliste per fylke)
     kortnavn: Fylkeskommunene
     utgiver: Fylkeskommunene
     url: https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk
@@ -1667,4 +1667,5 @@ kilder:
     faser: [7]
     merknad: >-
       Akershus, Buskerud, Innlandet, Agder, Rogaland, Møre og Romsdal, Nordland, Troms og Finnmark, med feeden fylket
-      selv lenker til (ArtikkelRSS.ashx). Vises bare når fylket er valgt. Eier 07.10.2026 (K4).
+      selv lenker til (ArtikkelRSS.ashx). Vestland (arkivet for temaet Utdanning), Vestfold og Telemark (nyhetssiden),
+      som ikke har feed. Vises bare når fylket er valgt. Eier 07.10.2026 (K4 og K4b).

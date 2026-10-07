@@ -3,6 +3,7 @@
 // - På forsiden tar nyhetene ikke mer plass enn kalenderen. Et trykk på en sak viser den alene i samme plass, med
 //   ingressen, kilden og en knapp til saken hos kilden. Filteret på hvem eller kilde står øverst.
 import { useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
+import { useTilpassetListe } from '../../app/tilpassListe.ts';
 import { tilstand, useTekst, type T } from '../../app/tilstand.ts';
 import { Ikon } from '../../components/Ikon.tsx';
 import { nokkelFra, useHusketApen } from '../../components/husket.ts';
@@ -184,34 +185,9 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
   const sak = saker.find((s) => s.url === valgt) ?? null;
   const tilbake = useRef<HTMLButtonElement>(null);
   const forrige = useRef<string | null>(null);
-  const liste = useRef<HTMLUListElement>(null);
-  // Inntil fire saker, i en boks med høyst den høyden kalenderen har pluss litt. En sak som ikke får helt plass, skjules i
-  // stedet for å bli kuttet, og boksen blir lavere: fire saker når titlene er korte, tre når de går over to linjer
-  // (eier 07.10.2026). Saken alene får den samme høyden som listen hadde.
-  const boks = useRef<HTMLDivElement>(null);
-  const [hoyde, settHoyde] = useState<number | null>(null);
-  useLayoutEffect(() => {
-    const ul = liste.current;
-    const ramme = boks.current;
-    if (!ul || !ramme) return;
-    let bredde = -1;
-    const tilpass = () => {
-      if (ramme.clientWidth === bredde) return;
-      bredde = ramme.clientWidth;
-      const rader = [...ul.children] as HTMLElement[];
-      for (const li of rader) li.hidden = false;
-      ramme.classList.add('maler');
-      for (const li of rader) li.hidden = li.offsetTop + li.offsetHeight > ul.clientHeight + 1;
-      ramme.classList.remove('maler');
-      settHoyde(ramme.offsetHeight);
-    };
-    tilpass();
-    if (typeof ResizeObserver === 'undefined') return;
-    // Bare bredden endrer hvor mange som får plass. Høyden endres av tilpassingen selv.
-    const observator = new ResizeObserver(tilpass);
-    observator.observe(ramme);
-    return () => observator.disconnect();
-  }, [saker, valgt]);
+  // Inntil fire saker, og ingen luft under den siste (tilpassListe.ts, eier 07.10.2026). Saken alene får den samme
+  // høyden som listen hadde.
+  const { boks, liste, hoyde } = useTilpassetListe([saker, valgt]);
   // Saken alene: så mange hele linjer av ingressen som får plass, avsluttet med «…».
   const ingressRef = useRef<HTMLParagraphElement>(null);
   useLayoutEffect(() => {
@@ -237,8 +213,8 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
 
   if (sak) {
     return (
-      <div class="nyh-forside nyh-forside-sak" style={hoyde ? { height: `${hoyde}px` } : undefined}>
-        <div class="nyh-forside-topp">
+      <div class="panel-boks nyh-forside nyh-forside-sak" style={hoyde ? { height: `${hoyde}px` } : undefined}>
+        <div class="panel-videre nyh-forside-topp">
           <button ref={tilbake} type="button" class="lenkeknapp liten nyh-tilbake" onClick={() => settValgt(null)}>
             <Ikon navn="tilbake" class="ikon-liten" />
             {t('nyheter.tilbake')}
@@ -261,16 +237,16 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
     );
   }
   return (
-    <div ref={boks} class="nyh-forside">
-      <div class="nyh-forside-topp">
+    <div ref={boks} class="panel-boks nyh-forside">
+      <div class="panel-videre nyh-forside-topp">
         <Forsidefilter filter={filter} fylke={fylke} onEndring={settFilter} />
         <a class="nyh-forside-alle" href={`#${rute}`}>
           {t('nyheter.alle')}
           <Ikon navn="hoyre" class="ikon-liten" />
         </a>
       </div>
-      <ul ref={liste} class="nyh-forside-liste">
-        {saker.length === 0 && <li class="dempet nyh-forside-tom">{t('nyheter.ingen')}</li>}
+      <ul ref={liste} class="panel-liste">
+        {saker.length === 0 && <li class="dempet panel-tom">{t('nyheter.ingen')}</li>}
         {saker.map((s) => (
           <li key={s.url}>
             <button type="button" class="nyh-forside-knapp" data-url={s.url} onClick={() => settValgt(s.url)}>

@@ -17,7 +17,7 @@ export const nyhetskildeSkjema = z.strictObject({
   /** Merknad ved kilden, f.eks. «Fagpresse, utgitt av Utdanningsforbundet». */
   merknad: flerspraak.optional(),
   /** lovdata: endringene i regelverket fra data/lovdata/kommende.json, uten egen henting. */
-  format: z.enum(['rss', 'udir', 'utdanningsforbundet', 'hkdir', 'lovdata']),
+  format: z.enum(['rss', 'udir', 'utdanningsforbundet', 'hkdir', 'jsonliste', 'lenkeliste', 'lovdata']),
   url: z.url().startsWith('https://'),
   filter: z.enum(['vgs', 'alle']),
   ingress: z.boolean(),

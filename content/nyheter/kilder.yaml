@@ -435,20 +435,47 @@ kilder:
     ingress: true
     fylker: ["56"]
 
+  # Fylkene som ikke er på ACOS (K4b, eier 07.10.2026). Ingen av dem har feed. Vestland: arkivet for temaet
+  # «Utdanning» (JSON, ikke et dokumentert API). Vestfold og Telemark: hele «Aktuelt» på én side. Trøndelag er ikke med,
+  # fordi listen hentes fra /api/, som robots.txt stenger.
+  - id: fylkeskommune-vestland
+    navn: { nb: Vestland fylkeskommune, nn: Vestland fylkeskommune }
+    kortnavn: { nb: Vestland fylkeskommune, nn: Vestland fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: jsonliste
+    url: https://www.vestlandfylke.no/service/article/20/Utdanning
+    filter: vgs
+    ingress: true
+    fylker: ["46"]
+
+  - id: fylkeskommune-vestfold
+    navn: { nb: Vestfold fylkeskommune, nn: Vestfold fylkeskommune }
+    kortnavn: { nb: Vestfold fylkeskommune, nn: Vestfold fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: lenkeliste
+    url: https://vestfoldfylke.no/no/aktuelt/
+    filter: vgs
+    ingress: true
+    fylker: ["39"]
+
+  - id: fylkeskommune-telemark
+    navn: { nb: Telemark fylkeskommune, nn: Telemark fylkeskommune }
+    kortnavn: { nb: Telemark fylkeskommune, nn: Telemark fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: lenkeliste
+    url: https://telemarkfylke.no/no/aktuelt/
+    filter: vgs
+    ingress: true
+    fylker: ["40"]
+
 # Prøvekilder: hentes bare av «npm run nyheter:prove» (i PR-er og ved manuell kjøring av arbeidsflyten Nyheter), og
 # vises ikke i appen. Rapporten viser om kilden svarer, hvor mange saker den har, og hva filteret ville tatt med, så
 # eier kan avgjøre om kilden skal med (K3, K5, K6 og K8, eier 07.10.2026). `streng`: bare sterke ord i tittelen.
 prove:
   - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
-  # Fylkene som ikke er på ACOS (K4, eier 07.10.2026).
-  - { id: fk-vestland, navn: "Vestland fylkeskommune (arkivet, tema Utdanning)", url: https://www.vestlandfylke.no/service/article/20/Utdanning, format: jsonliste, alle: true }
-  - { id: fk-trondelag, navn: "Trøndelag fylkeskommune (nyhetsarkivet, Utdanning)", url: "https://www.trondelagfylke.no/nyhetsarkiv/?filters=Utdanning&number=20", format: jsonliste, alle: true }
-  - { id: fk-vestfold, navn: Vestfold fylkeskommune (Aktuelt), url: https://vestfoldfylke.no/no/aktuelt/, format: lenkeliste }
-  - { id: fk-telemark, navn: Telemark fylkeskommune (Aktuelt), url: https://telemarkfylke.no/no/aktuelt/, format: lenkeliste }
 
 # Sider der prøvehentingen leter etter feeder (<link rel="alternate">), leser robots.txt og viser HTML-en rundt datoene.
-oppdag:
-  - https://www.vestlandfylke.no/nyheiter/
-  - https://www.trondelagfylke.no/nyhetsarkiv/?filters=Utdanning&number=20
-  - https://vestfoldfylke.no/no/aktuelt/
-  - https://telemarkfylke.no/no/aktuelt/
+oppdag: []
