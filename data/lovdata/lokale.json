@@ -1,5 +1,6 @@
 {
- "fullstendig": "2026-10-05",
+ "fullstendig": "2026-10-06",
+ "kandidatregler": 2,
  "lest": "2026-10-06",
  "lovtidend": "2026-10-05T14:45",
  "opphevinger": {},
@@ -443,14 +444,14 @@
   },
   {
    "id": "akershus-skoleregler",
-   "refid": "forskrift/2024-06-20-1886",
+   "refid": "forskrift/2024-10-24-3039",
    "type": "skoleregler",
    "fylke": "32",
    "skoler": [],
    "korttittel": "Skoleregler i Akershus",
    "korttittelNn": "Skulereglar i Akershus",
    "malform": "nb",
-   "iKraft": "2024-08-01",
+   "iKraft": "2024-10-24",
    "iKraftTil": null
   },
   {
@@ -1078,15 +1079,15 @@
    "iKraftTil": null
   },
   {
-   "id": "askoy-videregaende-skole-skoleregler",
+   "id": "askoy-videregaende-skole-mobilregler",
    "refid": "forskrift/2024-08-01-2484",
    "type": "skoleregler-skole",
    "fylke": "46",
    "skoler": [
     "974557533"
    ],
-   "korttittel": "Skoleregler ved Askøy videregående skole",
-   "korttittelNn": "Skulereglar ved Askøy videregående skole",
+   "korttittel": "Regler for mobil ved Askøy videregående skole",
+   "korttittelNn": "Reglar for mobil ved Askøy videregående skole",
    "malform": "nn",
    "iKraft": "2024-08-15",
    "iKraftTil": null
@@ -1274,6 +1275,20 @@
    "iKraftTil": null
   },
   {
+   "id": "os-vidaregaande-skule-skoleregler",
+   "refid": "forskrift/2024-08-10-3653",
+   "type": "skoleregler-skole",
+   "fylke": "46",
+   "skoler": [
+    "974557576"
+   ],
+   "korttittel": "Skoleregler ved Os vidaregåande skule",
+   "korttittelNn": "Skulereglar ved Os vidaregåande skule",
+   "malform": "nn",
+   "iKraft": "2024-08-19",
+   "iKraftTil": null
+  },
+  {
    "id": "osteroy-vidaregaande-skule-skoleregler",
    "refid": "forskrift/2024-08-01-3757",
    "type": "skoleregler-skole",
@@ -1302,6 +1317,20 @@
    "iKraftTil": null
   },
   {
+   "id": "slatthaug-videregaende-skole-mobilregler",
+   "refid": "forskrift/2025-05-05-1300",
+   "type": "skoleregler-skole",
+   "fylke": "46",
+   "skoler": [
+    "974557320"
+   ],
+   "korttittel": "Regler for mobil ved Slåtthaug videregående skole",
+   "korttittelNn": "Reglar for mobil ved Slåtthaug videregående skole",
+   "malform": "nn",
+   "iKraft": "2025-08-01",
+   "iKraftTil": null
+  },
+  {
    "id": "sogndal-vidaregaande-skule-skoleregler",
    "refid": "forskrift/2024-08-01-1921",
    "type": "skoleregler-skole",
@@ -1327,6 +1356,20 @@
    "korttittelNn": "Skulereglar ved Sotra vidaregåande skule",
    "malform": "nn",
    "iKraft": "2025-04-10",
+   "iKraftTil": null
+  },
+  {
+   "id": "stend-vidaregaande-skule-mobilregler",
+   "refid": "forskrift/2024-12-10-3646",
+   "type": "skoleregler-skole",
+   "fylke": "46",
+   "skoler": [
+    "974557703"
+   ],
+   "korttittel": "Regler for mobil ved Stend vidaregåande skule",
+   "korttittelNn": "Reglar for mobil ved Stend vidaregåande skule",
+   "malform": "nn",
+   "iKraft": "2025-01-01",
    "iKraftTil": null
   },
   {
@@ -1672,6 +1715,19 @@
    "iKraftTil": null,
    "sistEndret": null,
    "vurdert": "2026-10-05"
+  },
+  {
+   "refid": "forskrift/2016-06-14-881",
+   "tittel": "Forskrift om felles ordens- og åtferdsreglement ved dei vidaregåande skulane i Hordaland fylkeskommune",
+   "gjelderFor": "Vestland",
+   "hjemmel": [
+    "lov/1998-07-17-61/§3-7"
+   ],
+   "malform": "nn",
+   "iKraft": "2016-08-01",
+   "iKraftTil": null,
+   "sistEndret": "2017-08-01",
+   "vurdert": "2026-10-06"
   },
   {
    "refid": "forskrift/2016-12-06-1690",
@@ -2214,6 +2270,20 @@
    "vurdert": "2026-10-05"
   },
   {
+   "refid": "forskrift/2024-08-10-3653",
+   "tittel": "Forskrift om tillegg til felles ordens- og åtferdsreglement for Os vidaregåande skule, Vestland fylkeskommune",
+   "gjelderFor": "Vestland",
+   "hjemmel": [
+    "lov/2023-06-09-30/§10-7",
+    "forskrift/2024-06-18-1455/§15"
+   ],
+   "malform": "nn",
+   "iKraft": "2024-08-19",
+   "iKraftTil": null,
+   "sistEndret": null,
+   "vurdert": "2026-10-06"
+  },
+  {
    "refid": "forskrift/2024-10-04-3683",
    "tittel": "Forskrift om lokale tilleggsreglar for Arna vidaregåande skule, Vestland fylkeskommune",
    "gjelderFor": "Vestland",
@@ -2239,6 +2309,19 @@
    "iKraftTil": null,
    "sistEndret": null,
    "vurdert": "2026-10-05"
+  },
+  {
+   "refid": "forskrift/2024-10-24-3039",
+   "tittel": "Forskrift om reglement for deltakere ved voksenopplæringen, Akershus fylkeskommune",
+   "gjelderFor": "Akershus",
+   "hjemmel": [
+    "lov/2023-06-09-30/§20-3"
+   ],
+   "malform": "nb",
+   "iKraft": "2024-10-24",
+   "iKraftTil": null,
+   "sistEndret": null,
+   "vurdert": "2026-10-06"
   },
   {
    "refid": "forskrift/2024-11-12-2832",
@@ -2436,6 +2519,20 @@
    "iKraftTil": null,
    "sistEndret": "2026-08-01",
    "vurdert": "2026-10-05"
+  },
+  {
+   "refid": "forskrift/2024-12-10-3646",
+   "tittel": "Forskrift for bruk av mobiltelefon og smartklokker, Stend vidaregåande skule, Vestland fylkeskommune",
+   "gjelderFor": "Vestland",
+   "hjemmel": [
+    "lov/2023-06-09-30/§10-7",
+    "forskrift/2024-06-18-1455/§15"
+   ],
+   "malform": "nn",
+   "iKraft": "2025-01-01",
+   "iKraftTil": null,
+   "sistEndret": null,
+   "vurdert": "2026-10-06"
   },
   {
    "refid": "forskrift/2024-12-11-3099",
@@ -2761,6 +2858,20 @@
    "iKraftTil": null,
    "sistEndret": null,
    "vurdert": "2026-10-05"
+  },
+  {
+   "refid": "forskrift/2025-05-05-1300",
+   "tittel": "Forskrift om bruk av mobiltelefon og smartklokker, Slåtthaug vidaregåande skule, Vestland fylkeskommune",
+   "gjelderFor": "Vestland",
+   "hjemmel": [
+    "lov/2023-06-09-30/§10-7",
+    "forskrift/2024-06-18-1455/§15"
+   ],
+   "malform": "nn",
+   "iKraft": "2025-08-01",
+   "iKraftTil": null,
+   "sistEndret": null,
+   "vurdert": "2026-10-06"
   },
   {
    "refid": "forskrift/2025-05-27-1696",

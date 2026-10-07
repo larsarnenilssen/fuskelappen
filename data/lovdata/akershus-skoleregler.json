@@ -2,16 +2,16 @@
  "id": "akershus-skoleregler",
  "kilde": "lovdata-lokale",
  "type": "forskrift",
- "tittel": "Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune",
+ "tittel": "Forskrift om reglement for deltakere ved voksenopplæringen, Akershus fylkeskommune",
  "korttittel": "Skoleregler i Akershus",
  "korttittelNn": "Skulereglar i Akershus",
  "malform": "nb",
- "refid": "forskrift/2024-06-20-1886",
+ "refid": "forskrift/2024-10-24-3039",
  "sistEndret": null,
- "iKraft": "2024-08-01",
+ "iKraft": "2024-10-24",
  "iKraftTil": null,
  "lokaltype": "skoleregler",
- "hentet": "2026-10-05",
+ "hentet": "2026-10-06",
  "gyldighet": {
   "niva": "fylke",
   "fylke": "32"
@@ -22,19 +22,10 @@
    "id": "dokument",
    "type": "avsnitt",
    "nr": null,
-   "overskrift": "Forskrift om skoleregler for elever ved de videregående skolene, Akershus fylkeskommune",
+   "overskrift": "Forskrift om reglement for deltakere ved voksenopplæringen, Akershus fylkeskommune",
    "merknader": [
     [
-     "Forskrift om skoleregler for elever ved de videregående skolene i Akershus fylkeskommune er vedtatt av fylkestinget i Akershus 20. juni 2024 og gjelder fra 1. august 2024. Grunnlaget (hjemmel) for denne forskriften er ",
-     {
-      "t": "opplæringsloven § 10-7",
-      "l": "lov/2023-06-09-30/§10-7",
-      "a": "opplaeringslova/10-7"
-     },
-     " som sier at fylkeskommunen skal gi forskrift om skoleregler for den videregående skolen.​1"
-    ],
-    [
-     "For deltagere i opplæring organisert for voksne, gjelder eget regelverk."
+     "Gjelder fra 24. oktober 2024."
     ]
    ],
    "seksjoner": [],
@@ -42,11 +33,11 @@
     {
      "nr": "1",
      "visNr": "§ 1",
-     "tittel": "Hensikten med skoleregler",
+     "tittel": "Hensikten med reglementet",
      "ledd": [
       {
        "tekst": [
-        "Skolereglene skal legge grunnlaget for et trygt og godt skolemiljø for alle og bidra til læring, trivsel, inkludering og god helse. Skolereglene inneholder rettigheter og plikter, regler om orden og oppførsel og regler om hvordan skolen vil reagere dersom skolereglene brytes. Skolereglene fastsetter hvordan skoledemokratiet skal organiseres på skolen."
+        "Reglementet skal legge grunnlaget for et trygt og godt læringsmiljø for alle og bidra til læring, trivsel, inkludering og god helse. Reglementet inneholder rettigheter og plikter, regler om orden og oppførsel og regler om hvordan fylkeskommunen vil reagere dersom reglementet brytes."
        ]
       }
      ],
@@ -56,11 +47,11 @@
     {
      "nr": "2",
      "visNr": "§ 2",
-     "tittel": "Hvem skolereglene gjelder for",
+     "tittel": "Hvem reglementet gjelder for",
      "ledd": [
       {
        "tekst": [
-        "Skolereglene gjelder for alle elever i Akershus fylkeskommunes videregående skoler. Det gjelder også for elever i annen grunnopplæring i regi av fylkeskommunen, så langt det passer. Det er egne regler for deltagere i opplæring organisert for voksne."
+        "Reglementet gjelder for alle deltakere ved voksenopplæringen i Akershus fylkeskommune. Disse reglene gjelder også for deltakere i annen opplæring i regi av fylkeskommunen, så langt det passer."
        ]
       }
      ],
@@ -70,11 +61,21 @@
     {
      "nr": "3",
      "visNr": "§ 3",
-     "tittel": "Hvor og når skolereglene gjelder",
+     "tittel": "Hvor og når reglementet gjelder",
      "ledd": [
       {
        "tekst": [
-        "Skolereglene gjelder i skoletiden, på skoleveien og ved forskjellige arrangementer i skolens regi. Det gjelder også når elevene får opplæring på andre steder enn på skolen. Skolereglene gjelder utenom skoletiden i situasjoner som har klar sammenheng med opplæringen, også ved kommunikasjon på skolens digitale læringsplattformer og arenaer."
+        "Reglementet gjelder ved læringsaktiviteter på skolen eller på andre læringsarenaer hvor deltaker er i opplæring i regi av Akershus fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglementet gjelder utenom skoletiden i situasjoner som har klar sammenheng med læringsarbeidet, for eksempel digital kommunikasjon mellom deltakerne."
+       ]
+      },
+      {
+       "tekst": [
+        "For deltakere som har lærekontrakt, vil arbeidsavtalen være gjeldende for deltakeren på arbeidsplassen."
        ]
       }
      ],
@@ -88,7 +89,7 @@
      "ledd": [
       {
        "tekst": [
-        "Skolen skal gi alle elever et opplæringstilbud som følger ",
+        "Skolen skal gi alle deltakere et opplæringstilbud som følger ",
         {
          "t": "opplæringsloven",
          "l": "lov/2023-06-09-30"
@@ -102,7 +103,7 @@
          "t": "Opplæringsloven",
          "l": "lov/2023-06-09-30"
         },
-        " gir hver enkelt elev rett til å medvirke i beslutninger om egen faglige og sosiale læring. Elevene har rett til å være med på å planlegge, gjennomføre og vurdere ulike aktiviteter og tiltak som har med opplæringen eller skolemiljøet å gjøre. Skolen skal legge til rette slik at alle elever får mulighet til å delta i dette arbeidet."
+        " gir hver enkelt deltaker rett til å medvirke i alt som gjelder egen læringssituasjon og i saker om læringsmiljø. Deltakerne har rett til å ytre meningene sine fritt. Deltakerne skal bli hørt, og det skal legges vekt på meningene deres."
        ]
       },
       {
@@ -112,17 +113,17 @@
          "t": "opplæringsloven",
          "l": "lov/2023-06-09-30"
         },
-        " gi elever og foreldre den informasjonen de har bruk for om opplæringen, eleven, skolemiljøet og skolereglene og om de rettigheter og plikter elevene har."
+        " gi deltakere den informasjonen de har bruk for om opplæringen, skolemiljøet og reglementet og om de rettigheter og plikter deltakerne har."
        ]
       },
       {
        "tekst": [
-        "Elevene har rett til nødvendige pauser. Skolen vurderer hvordan pauser kan organiseres slik at retten til et trygt og godt skolemiljø ivaretas."
+        "Deltakerne har rett til nødvendige pauser."
        ]
       },
       {
        "tekst": [
-        "Elever med fravær skal bli fulgt opp av skolen/fylkeskommunen. Det må vurderes i hvert tilfelle hvordan eleven skal følges opp."
+        "Deltakere med fravær skal bli fulgt opp av skolen, fylkeskommunen eller lærebedriften."
        ]
       }
      ],
@@ -132,32 +133,16 @@
     {
      "nr": "5",
      "visNr": "§ 5",
-     "tittel": "Generelt om elevenes plikter",
+     "tittel": "Generelt om deltakernes plikter",
      "ledd": [
       {
        "tekst": [
-        "Elevene skal være aktivt med i opplæringen og følge skolereglene."
+        "Deltakerne skal være til stede og aktivt med i opplæringen og følge reglementet."
        ]
       },
       {
        "tekst": [
-        "Alle elever skal bidra til at skolemiljøet fremmer helse, inkludering, trivsel og læring, og til at alle i skolesamfunnet har et godt arbeidsmiljø. Alle skal være hensynsfulle og høflige, og rette seg etter de lover og regler som gjelder i skolen og i samfunnet ellers."
-       ]
-      },
-      {
-       "tekst": [
-        "Når de ansatte på skolen gir beskjeder og håndhever reglene, skal elevene respektere og følge disse. Det betyr blant annet at elevene skal delta i undervisningen i den formen den blir gitt. Elevene kan bli pålagt å gjøre oppgaver (lekser) utenom skoletid, men skolen må ta hensyn til elevenes rett til hvile og fritid."
-       ]
-      },
-      {
-       "tekst": [
-        "Alle elever skal følge skolereglene, og gjentatte brudd på reglene kan gi nedsatt karakter i orden og oppførsel, se ",
-        {
-         "t": "forskrift til opplæringsloven § 9-2",
-         "l": "forskrift/2024-06-03-900/§9-2",
-         "a": "opplaeringsforskrifta/9-2"
-        },
-        ". Skolen skal ikke legge avgjørende vekt på enkelttilfeller, med unntak av særlig klanderverdige eller grove hendelser. I slike tilfeller kan nedsatt karakter i orden eller oppførsel benyttes som reaksjon."
+        "Alle deltakere skal bidra til et godt skole- og arbeidsmiljø som fremmer helse, inkludering, trivsel og læring. Alle skal være hensynsfulle og høflige og rette seg etter de lover og regler som gjelder i skolen, arbeidsplassen og i samfunnet ellers."
        ]
       }
      ],
@@ -167,7 +152,7 @@
     {
      "nr": "6",
      "visNr": "§ 6",
-     "tittel": "Nærvær og fravær",
+     "tittel": "Nærvær, fravær og permisjon",
      "ledd": [
       {
        "tekst": [],
@@ -177,7 +162,7 @@
          "ledd": [
           {
            "tekst": [
-            "Elevene skal være til stede i opplæringen dersom ikke annet er avtalt med skolen."
+            "deltakerne skal være til stede i opplæringen dersom ikke annet er avtalt med skolen eller lærebedriften"
            ]
           }
          ]
@@ -187,7 +172,7 @@
          "ledd": [
           {
            "tekst": [
-            "Kommer elevene mer enn 15 minutter for sent til opplæringen, blir fraværet registrert i Visma InSchool (VIS) lik opplæringsøktas lengde."
+            "skolen fører fraværet i dager og enkelttimer"
            ]
           }
          ]
@@ -197,7 +182,7 @@
          "ledd": [
           {
            "tekst": [
-            "Skolen fører fraværet i dager og enkelttimer."
+            "deltakere som har opplæring i bedrift eller annen opplæringsarena må følge bedriftens/opplæringsarenaens regler for fravær"
            ]
           }
          ]
@@ -207,13 +192,13 @@
          "ledd": [
           {
            "tekst": [
-            "Fravær kommer på vitnemålet og kompetansebeviset, se ",
+            "fravær kan føre til at deltakerne ikke får halvårsvurdering med karakter, standpunktvurdering eller godkjent modul (refererer til ",
             {
-             "t": "forskrift til opplæringsloven § 9-53",
-             "l": "forskrift/2024-06-03-900/§9-53",
-             "a": "opplaeringsforskrifta/9-53"
+             "t": "opplæringslovens § 5-4 andre ledd",
+             "l": "lov/2023-06-09-30/§5-4",
+             "a": "opplaeringslova/5-4"
             },
-            "."
+            ")"
            ]
           }
          ]
@@ -223,22 +208,31 @@
          "ledd": [
           {
            "tekst": [
-            "Fravær kan føre til at elevene ikke får halvårsvurdering med karakter eller standpunkt, se ",
-            {
-             "t": "forskrift til opplæringsloven § 9-8",
-             "l": "forskrift/2024-06-03-900/§9-8",
-             "a": "opplaeringsforskrifta/9-8"
-            },
-            "."
+            "deltakere skal varsles dersom det er fare for at halvårsvurdering i et fag, eller en modul bortfaller på grunn av manglende vurderingsgrunnlag i faget"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "varselet skal gis i tilstrekkelig god tid slik at den deltakeren gis anledning til å opparbeide grunnlag for vurdering i fag og moduler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "deltakere kan søke om permisjon fra opplæringen. Innvilgelse av permisjon skal være streng og kun gis i særlige tilfeller. Eksempel på situasjoner er førstegangstjeneste, vesentlige endringer i livssituasjon, fødsel og langvarig sykdom."
            ]
           }
          ]
         }
-       ]
-      },
-      {
-       "tekst": [
-        "Hvis årsaken til fraværet ligger utenfor elevenes kontroll, for eksempel stans eller forsinkelser i kollektivtrafikken, kan rektor avgjøre at det likevel ikke skal føres fravær."
        ]
       }
      ],
@@ -252,13 +246,7 @@
      "ledd": [
       {
        "tekst": [
-        "Elevene skal i alle sammenhenger når skolereglene gjelder etter ",
-        {
-         "t": "§ 3",
-         "l": "forskrift/2024-06-20-1886/§3",
-         "a": "akershus-skoleregler/3"
-        },
-        ":"
+        "Deltakerne skal i alle sammenhenger der reglementet gjelder:"
        ],
        "liste": [
         {
@@ -266,7 +254,7 @@
          "ledd": [
           {
            "tekst": [
-            "møte presis og forberedt og delta aktivt i opplæringen"
+            "møte presis, forberedt og delta aktivt i opplæringen"
            ]
           }
          ]
@@ -276,7 +264,7 @@
          "ledd": [
           {
            "tekst": [
-            "utføre skolearbeid til avtalt tid"
+            "oppdatere seg på arbeid som foregår og oppgaver som er gitt når deltaker har vært borte fra opplæringen"
            ]
           }
          ]
@@ -286,7 +274,7 @@
          "ledd": [
           {
            "tekst": [
-            "oppdatere seg på arbeid som foregår og oppgaver som er gitt når elevene har vært borte fra skolen"
+            "ha med nødvendige læremidler og utstyr"
            ]
           }
          ]
@@ -296,37 +284,7 @@
          "ledd": [
           {
            "tekst": [
-            "ha med nødvendige læremidler og utstyr til opplæringen"
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "e.",
-         "ledd": [
-          {
-           "tekst": [
-            "holde orden på arbeidsplassen og bidra til å holde det rent og ryddig og plukke opp søppel etter seg"
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "f.",
-         "ledd": [
-          {
-           "tekst": [
-            "varsle kontaktlærer så snart som mulig ved fravær, både planlagt og ikke planlagt"
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "g.",
-         "ledd": [
-          {
-           "tekst": [
-            "gi ny melding til kontaktlærer hvis fraværet varer mer enn tre dager."
+            "holde orden og bidra til å holde det rent og ryddig der man oppholder seg."
            ]
           }
          ]
@@ -344,13 +302,7 @@
      "ledd": [
       {
        "tekst": [
-        "Elevene skal i alle sammenhenger når skolereglene gjelder etter ",
-        {
-         "t": "§ 3",
-         "l": "forskrift/2024-06-20-1886/§3",
-         "a": "akershus-skoleregler/3"
-        },
-        ":"
+        "Deltakerne skal i alle sammenhenger der reglementet gjelder:"
        ],
        "liste": [
         {
@@ -378,7 +330,7 @@
          "ledd": [
           {
            "tekst": [
-            "ikke krenke andre, som for eksempel mobbing, vold, trusler, diskriminering, trakassering eller grovt språk"
+            "ikke krenke andre, gjennom for eksempel mobbing, vold, trusler, diskriminering, trakassering eller grovt språk"
            ]
           }
          ]
@@ -388,7 +340,7 @@
          "ledd": [
           {
            "tekst": [
-            "behandle skolens eiendom, undervisningsmateriell og utstyr forsvarlig og vise respekt for andres eiendeler"
+            "behandle skolens, lærebedriftens og andres undervisningsmateriell, utstyr og eiendeler forsvarlig"
            ]
           }
          ]
@@ -408,7 +360,7 @@
          "ledd": [
           {
            "tekst": [
-            "gjøre seg kjent med skolens brannreglement og delta i brannøvelser"
+            "gjøre seg kjent med skolens og arbeidsstedets brannreglement og delta i brannøvelser"
            ]
           }
          ]
@@ -418,7 +370,7 @@
          "ledd": [
           {
            "tekst": [
-            "delta i skolens helse-, miljø- og sikkerhetsarbeid"
+            "delta i helse-, miljø- og sikkerhetsarbeid"
            ]
           }
          ]
@@ -428,7 +380,7 @@
          "ledd": [
           {
            "tekst": [
-            "oppgi kilder brukt i oppgaver, både underveis i tekst og i kildeliste"
+            "bruke kildehenvisning ved sitering"
            ]
           }
          ]
@@ -438,13 +390,18 @@
          "ledd": [
           {
            "tekst": [
-            "ikke jukse eller forsøke å jukse (fuske). Skolen vil regne kommunikasjon eller bruk av hjelpemidler når det ikke er tillatt som juks. Juks eller forsøk på juks til eksamen, fag-/svenneprøve og kompetanseprøve er regulert i ",
+            "ikke jukse eller forsøke å jukse (fuske). Skolen vil regne kommunikasjon eller bruk av hjelpemidler når det ikke er tillatt, som juks. Dette gjelder også bruk av kunstig intelligens (KI) eller plagiering. Juks eller forsøk på juks til eksamen, fag-/svenneprøve og kompetanseprøve er regulert i ",
             {
-             "t": "forskrift til opplæringsloven § 9-42",
+             "t": "forskrift til opplæringsloven §§ 9-42",
              "l": "forskrift/2024-06-03-900/§9-42",
              "a": "opplaeringsforskrifta/9-42"
             },
-            ". Bruk av kunstig intelligens i oppgaver skal godkjennes av faglærer og dokumenteres i henhold til referansestil. Elevene skal følge de retningslinjer som enhver tid gjelder for bruk av teknologi / digitale verktøy i skolen"
+            " og ",
+            {
+             "t": "9-69",
+             "l": "forskrift/2024-06-03-900/§9-69",
+             "a": "opplaeringsforskrifta/9-69"
+            }
            ]
           }
          ]
@@ -454,7 +411,7 @@
          "ledd": [
           {
            "tekst": [
-            "ikke bruke elektronisk utstyr, som for eksempel mobiltelefoner mens opplæringen foregår, hvis dette ikke er avtalt med lærer"
+            "ikke bruke elektronisk utstyr, som for eksempel mobiltelefoner mens opplæringen foregår, hvis dette ikke er avtalt"
            ]
           }
          ]
@@ -464,9 +421,9 @@
          "ledd": [
           {
            "tekst": [
-            "ikke bruke plagg som helt eller delvis dekker ansiktet når opplæringen foregår, se ",
+            "ikke bruke plagg som helt eller delvis dekker ansiktet, se ",
             {
-             "t": "opplæringslovens § 27-2",
+             "t": "opplæringsloven § 27-2",
              "l": "lov/2023-06-09-30/§27-2",
              "a": "opplaeringslova/27-2"
             }
@@ -479,7 +436,7 @@
          "ledd": [
           {
            "tekst": [
-            "ikke ta bilder eller gjøre lyd- eller filmopptak av andre uten deres tillatelse. Elever kan heller ikke dele slikt materiale uten tillatelse, se ",
+            "ikke ta bilder eller gjøre lyd- eller filmopptak av andre uten deres tillatelse. Deltakere kan heller ikke dele slikt materiale uten tillatelse, se ",
             {
              "t": "åndsverkloven § 104",
              "l": "lov/2018-06-15-40/§104"
@@ -498,32 +455,13 @@
          "ledd": [
           {
            "tekst": [
-            "ikke bruke tobakk, snus eller elektroniske sigaretter, se ",
-            {
-             "t": "tobakksskadeloven §§ 27",
-             "l": "lov/1973-03-09-14/§27"
-            },
-            " og ",
-            {
-             "t": "28A",
-             "l": "lov/1973-03-09-14/§28A"
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "n.",
-         "ledd": [
-          {
-           "tekst": [
             "ikke ha med, laste ned, lese eller spre noen form for pornografisk, rasistisk eller annet krenkende eller ulovlig materiale"
            ]
           }
          ]
         },
         {
-         "merke": "o.",
+         "merke": "n.",
          "ledd": [
           {
            "tekst": [
@@ -537,11 +475,11 @@
          ]
         },
         {
-         "merke": "p.",
+         "merke": "o.",
          "ledd": [
           {
            "tekst": [
-            "ikke ha med, selge, kjøpe eller bruke rus- eller dopingmidler, eller være ruset."
+            "ikke ha med, selge, kjøpe eller bruke rus- eller dopingmidler, eller være ruset på skolen eller i arbeidstiden."
            ]
           }
          ]
@@ -555,11 +493,11 @@
     {
      "nr": "9",
      "visNr": "§ 9",
-     "tittel": "Reaksjoner ved brudd på skolereglene",
+     "tittel": "Reaksjoner",
      "ledd": [
       {
        "tekst": [
-        "Ved brudd på skolereglene, kan rektor eller fylkeskommunen bestemme reaksjoner mot enkeltelever som følge av at enkeltelever har brutt skolereglene. Statsforvalteren kan også vedta reaksjoner etter skolereglene. Reaksjoner kalles sanksjoner i ",
+        "Ved brudd på reglementet, kan rektor eller fylkeskommunen bestemme reaksjoner mot enkeltdeltakere som følge av at enkeltdeltakere har brutt reglementet. Statsforvalteren kan også vedta reaksjoner etter reglementet. Reaksjoner kalles sanksjoner i ",
         {
          "t": "forvaltningsloven",
          "l": "lov/1967-02-10"
@@ -569,7 +507,7 @@
       },
       {
        "tekst": [
-        "Akershus fylkeskommune benytter følgende reaksjoner ved brudd på skolereglene:"
+        "Akershus fylkeskommune benytter følgende reaksjoner ved brudd på reglementet:"
        ],
        "liste": [
         {
@@ -577,7 +515,7 @@
          "ledd": [
           {
            "tekst": [
-            "Lærer eller andre ansatte ved skolen kan gi enkeltelever irettesettelse eller anmerkning."
+            "lærer, rektor, instruktør, praksisveileder eller fylkeskommunen kan gi enkeltdeltakere skriftlig tilrettevisning eller advarsel ved gjentatte eller alvorlige brudd på reglementet"
            ]
           }
          ]
@@ -587,7 +525,7 @@
          "ledd": [
           {
            "tekst": [
-            "Lærer kan vise enkeltelever bort fra klassen eller gruppen sin for resten av undervisningsøkten som læreren har ansvaret for i inntil to klokketimer."
+            "lærer, instruktør, praksisveileder eller arbeidsgiver kan vise enkeltdeltakere bort fra opplæringen/arbeidet for økten som vedkommende har ansvaret for"
            ]
           }
          ]
@@ -597,13 +535,7 @@
          "ledd": [
           {
            "tekst": [
-            "Skolen kan sette ned karakter i orden eller oppførsel (se skolereglene ",
-            {
-             "t": "§ 5",
-             "l": "forskrift/2024-06-20-1886/§5",
-             "a": "akershus-skoleregler/5"
-            },
-            ")."
+            "ved brudd på reglementet, kan lærer/praksisveileder/arbeidsgiver bortvise deltaker for resten av dagen"
            ]
           }
          ]
@@ -613,7 +545,7 @@
          "ledd": [
           {
            "tekst": [
-            "Skolen kan inndra ulovlige gjenstander."
+            "skolen/læringsarena kan inndra ulovlige gjenstander"
            ]
           }
          ]
@@ -623,7 +555,7 @@
          "ledd": [
           {
            "tekst": [
-            "Rektor kan pålegge enkeltelever å rette opp skade de har påført skolens eiendom eller eiendeler, for eksempel rydde søppel, vaske golv, fjerne tagging."
+            "rektor kan avgjøre at enkeltdeltakere skal bytte klasse eller gruppe"
            ]
           }
          ]
@@ -633,7 +565,7 @@
          "ledd": [
           {
            "tekst": [
-            "Rektor kan bestemme at enkeltelever må komme på skolen før og etter undervisningstid, for eksempel for å møte rektor, eller for å utføre oppgaver."
+            "fylkeskommunen kan vedta at enkeltdeltakere skal bytte skole eller lærebedrift"
            ]
           }
          ]
@@ -643,7 +575,7 @@
          "ledd": [
           {
            "tekst": [
-            "Rektor kan avgjøre at enkeltelever skal bytte klasse eller gruppe."
+            "fylkeskommunen kan vise enkeltdeltakere bort fra resten av kurset, ut skoleåret, eller resten av en modul"
            ]
           }
          ]
@@ -653,7 +585,7 @@
          "ledd": [
           {
            "tekst": [
-            "Rektor kan vise enkeltelever bort fra skolen ut over to timer og resten av skoledagen."
+            "rektor kan pålegge deltakere å rette opp skade de har påført skolens eiendom eller eiendeler, for eksempel rydde søppel, vaske golv, fjerne tagging"
            ]
           }
          ]
@@ -663,13 +595,7 @@
          "ledd": [
           {
            "tekst": [
-            "Rektor kan vise enkeltelever bort fra og med en hel skoledag og inntil fem skoledager, se ",
-            {
-             "t": "opplæringsloven § 13-1",
-             "l": "lov/2023-06-09-30/§13-1",
-             "a": "opplaeringslova/13-1"
-            },
-            "."
+            "rektor kan bestemme at deltakere må komme på skolen før og etter undervisningstid for eksempel for å møte rektor, eller utføre oppgaver"
            ]
           }
          ]
@@ -679,45 +605,7 @@
          "ledd": [
           {
            "tekst": [
-            "Rektor kan vise enkeltelever bort eller sende hjem fra skoletur, se ",
-            {
-             "t": "opplæringsloven § 13-1",
-             "l": "lov/2023-06-09-30/§13-1",
-             "a": "opplaeringslova/13-1"
-            },
-            "."
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "k.",
-         "ledd": [
-          {
-           "tekst": [
-            "Fylkeskommunen kan vedta at enkeltelever skal bytte skole, se ",
-            {
-             "t": "opplæringsloven § 13-2",
-             "l": "lov/2023-06-09-30/§13-2",
-             "a": "opplaeringslova/13-2"
-            },
-            "."
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "l.",
-         "ledd": [
-          {
-           "tekst": [
-            "Fylkeskommunen kan vedta å vise enkeltelever bort fra undervisningen for resten av skoleåret, se ",
-            {
-             "t": "opplæringsloven § 13-1",
-             "l": "lov/2023-06-09-30/§13-1",
-             "a": "opplaeringslova/13-1"
-            },
-            "."
+            "rektor kan vise deltakere bort fra og med en hel skoledag og inntil fem skoledager."
            ]
           }
          ]
@@ -725,17 +613,31 @@
        ]
       }
      ],
-     "endringer": [],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "23 april 2026 nr. 978",
+        "l": "forskrift/2026-04-23-978"
+       },
+       "."
+      ]
+     ],
      "fotnoter": []
     },
     {
      "nr": "10",
      "visNr": "§ 10",
-     "tittel": "Rettigheter og plikter ved bruk av reaksjoner for brudd på skolereglene",
+     "tittel": "Rettigheter og plikter ved bruk av reaksjoner for brudd på reglementet",
      "ledd": [
       {
        "tekst": [
-        "Reaksjoner må være nevnt i skolereglene og stå i rimelig forhold til regelbruddet. En elev kan ikke vises bort dersom en mindre inngripende reaksjon er tilstrekkelig."
+        "Reaksjoner må være nevnt i reglementet og stå i rimelig forhold til regelbruddet. En deltaker kan ikke vises bort dersom en mindre inngripende reaksjon er tilstrekkelig."
+       ]
+      },
+      {
+       "tekst": [
+        "Fylkeskommunen skal ikke legge avgjørende vekt på enkelttilfeller, med unntak av særlig uakseptable eller alvorlige hendelser."
        ]
       },
       {
@@ -745,79 +647,47 @@
       },
       {
        "tekst": [
-        "Skolen skal på forhånd ha gjort elevene kjent med reaksjonene som kan brukes hvis de bryter reglene. Reaksjonen skal komme så raskt som mulig etter at regelbruddet har skjedd."
+        "Skolen skal på forhånd ha gjort deltakerne kjent med reaksjonene som kan brukes hvis de bryter reglene. Reaksjonen skal komme så raskt som mulig etter at regelbruddet har skjedd."
        ]
       },
       {
        "tekst": [
-        "Elevene skal få mulighet til å forklare seg"
-       ]
-      },
-      {
-       "tekst": [
-        "Før rektor eller fylkeskommunen kommer med reaksjoner, skal eleven det gjelder ha mulighet til å forklare seg muntlig for den som skal ta avgjørelsen, se ",
+        "Før rektor eller fylkeskommunen kommer med reaksjoner, skal deltaker det gjelder ha mulighet til å forklare seg for den som skal ta avgjørelsen, se ",
         {
-         "t": "opplæringsloven § 10-2",
-         "l": "lov/2023-06-09-30/§10-2",
-         "a": "opplaeringslova/10-2"
+         "t": "forvaltningsloven kapittel IV",
+         "l": "lov/1967-02-10/kapIV"
         },
-        ". Hvis eleven ikke retter seg etter det som er bestemt, kan rektor eller fylkeskommunen bestemme nye reaksjoner."
+        ". Hvis deltaker ikke retter seg etter det som er bestemt, kan rektor eller fylkeskommunen bestemme nye reaksjoner."
        ]
-      },
-      {
-       "tekst": [
-        "Enkeltvedtak"
-       ]
-      },
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Enkeltvedtak",
+     "ledd": [
       {
        "tekst": [
         "Hvis rektor eller fylkeskommunen skal bruke reaksjonene som er nevnt i ",
         {
-         "t": "§ 9 bokstav c",
-         "l": "forskrift/2024-06-20-1886/§9",
+         "t": "§ 9",
+         "l": "forskrift/2024-10-24-3039/§9",
          "a": "akershus-skoleregler/9"
         },
-        ", ",
-        {
-         "t": "i",
-         "l": "forskrift/2024-06-20-1886/§9",
-         "a": "akershus-skoleregler/9"
-        },
-        ", ",
-        {
-         "t": "j",
-         "l": "forskrift/2024-06-20-1886/§9",
-         "a": "akershus-skoleregler/9"
-        },
-        ", ",
-        {
-         "t": "k",
-         "l": "forskrift/2024-06-20-1886/§9",
-         "a": "akershus-skoleregler/9"
-        },
-        " og ",
-        {
-         "t": "l",
-         "l": "forskrift/2024-06-20-1886/§9",
-         "a": "akershus-skoleregler/9"
-        },
-        " vil dette være et enkeltvedtak, se ",
+        " bokstav e til g, vil dette være et enkeltvedtak, se ",
         {
          "t": "forvaltningsloven kapittel V",
          "l": "lov/1967-02-10/kapV"
         },
-        ". Vedtak som nevnt i ",
-        {
-         "t": "§ 9 bokstav h",
-         "l": "forskrift/2024-06-20-1886/§9",
-         "a": "akershus-skoleregler/9"
-        },
-        " vil kun være enkeltvedtak ved planlagt bortvisning fram i tid. Dette betyr blant annet at rektor eller fylkeskommunen skal varsle eleven på forhånd om at det kan bli aktuelt å fatte et enkeltvedtak."
+        ". Dette betyr blant annet at rektor eller fylkeskommunen skal varsle eleven på forhånd om at det kan bli aktuelt å fatte et enkeltvedtak."
        ]
       },
       {
        "tekst": [
-        "Ved enkeltvedtak skal elever få informasjon om klageretten og rett til innsyn i dokumentene. Vedtaket skal inneholde informasjon om at eleven kan søke om å få reaksjonen utsatt til klagesaken er avgjort."
+        "Deltakere som får vedtak om bortvisning ut over en dag, skal få informasjon om klageretten og rett til innsyn i dokumentene. Vedtaket skal inneholde informasjon om at deltaker kan søke om å få reaksjonen utsatt til klagesaken er avgjort."
        ]
       },
       {
@@ -841,65 +711,32 @@
        ]
       }
      ],
-     "endringer": [
-      [
-       "Endret ved forskrift ",
-       {
-        "t": "25 sep 2025 nr. 1975",
-        "l": "forskrift/2025-09-25-1975"
-       },
-       "."
-      ]
-     ],
-     "fotnoter": []
-    },
-    {
-     "nr": "11",
-     "visNr": "§ 11",
-     "tittel": "Forsikring, erstatning og politianmeldelse",
-     "ledd": [
-      {
-       "tekst": [
-        "Alle elever er forsikret av en elevforsikring som dekker ulykker eller skader på eleven selv. Mer informasjon om elevforsikring finnes på skolens nettsted."
-       ]
-      },
-      {
-       "tekst": [
-        "Elevene har selv ansvar for egne verdigjenstander og skolen kan ikke holdes erstatningsansvarlig for elevens personlige gjenstander."
-       ]
-      },
-      {
-       "tekst": [
-        "I tillegg til reaksjoner for brudd på skolereglene, kan eleven bli erstatningsansvarlig etter erstatningsrettslige regler."
-       ]
-      },
-      {
-       "tekst": [
-        "Rektor skal anmelde straffbare forhold til politiet. I saker som er av vesentlig eller prinsipiell betydning skal fylkeskommunen konsulteres."
-       ]
-      }
-     ],
      "endringer": [],
      "fotnoter": []
     },
     {
      "nr": "12",
      "visNr": "§ 12",
-     "tittel": "Skoledemokrati",
+     "tittel": "Forsikring, erstatning og politianmeldelse",
      "ledd": [
       {
        "tekst": [
-        "Skolen skal sørge for at elevene får være med å planlegge, gjennomføre og vurdere virksomheten til skolen, blant annet arbeidet med skolemiljø, kvalitetsutvikling i opplæring og fastsetting av skoleregler."
+        "Alle deltakere har en forsikring som dekker ulykker eller skader på deltakeren selv."
        ]
       },
       {
        "tekst": [
-        "Elevene skal ikke delta i saker som er omfattet av lovfestet taushetsplikt."
+        "Deltakerne har selv ansvar for egne verdigjenstander, og skolen/læringsarena kan ikke holdes erstatningsansvarlig for deltakerens personlige gjenstander."
        ]
       },
       {
        "tekst": [
-        "Skolen skal legge til rette for at alle elevene skal kunne ytre seg, og oppmuntre dem til å delta i skole- og elevdemokratiet. Skolen skal hjelpe elevene med arbeidet med skoledemokratiet. Dette er en del av opplæringen og det skal ikke føres fravær."
+        "I tillegg til reaksjoner for brudd på reglementet, kan deltaker bli erstatningsansvarlig etter erstatningsrettslige regler."
+       ]
+      },
+      {
+       "tekst": [
+        "Rektor eller bedriften skal anmelde straffbare forhold til politiet. I saker som er av vesentlig eller prinsipiell betydning skal fylkeskommunen konsulteres."
        ]
       }
      ],
@@ -909,138 +746,16 @@
     {
      "nr": "13",
      "visNr": "§ 13",
-     "tittel": "Organisering av skoledemokratiet",
+     "tittel": "Lokale utfyllende reglement",
      "ledd": [
       {
        "tekst": [
-        "Skolen skal ha et elevråd med minst ett medlem for hver tjuende elev. Elevrådet velges av elevene ved skriftlig avstemming. Det er opp til hver enkelt skole, i samråd med elevene, hvordan de vil organisere elevrådet innenfor disse rammene. Elevrådet er en viktig del av elevdemokratiet på skolen."
-       ]
-      },
-      {
-       "tekst": [
-        "Elevene kan velge å organisere elevdemokratiet på en annen måte enn elevråd, for eksempel med digitale avstemminger, skolekvitring, digitale debatter eller digitale ytringer. Slik organisering avgjøres ved skriftlig avstemming blant elevene. Det må være flertall for forslaget med to tredjedeler av stemmene. Organiseringen må godkjennes av rektor og gjelder for ett år av gangen."
-       ]
-      },
-      {
-       "tekst": [
-        "Skoleutvalg"
-       ]
-      },
-      {
-       "tekst": [
-        "Skolene i Akershus fylkeskommune skal ha et skoleutvalg som ivaretar elevenes rett til å medvirke i planlegging, gjennomføring og vurdering av skolens virksomhet. Skoleutvalget skal ha rådgivende myndighet."
-       ]
-      },
-      {
-       "tekst": [
-        "Skoleutvalget skal minst ha disse deltakerne:"
-       ],
-       "liste": [
+        "Reglementet er felles for de videregående skolene og de alternative opplæringsarenaene i Akershus fylkeskommune. Skolene kan ha behov for regler ut over dette, som for eksempel regler for bruk av kantine, bibliotek og parkeringsplass. I tillegg må alle deltakere som får hele eller deler av opplæringen i bedrift, følge reglene i ",
         {
-         "merke": "•",
-         "ledd": [
-          {
-           "tekst": [
-            "rektor"
-           ]
-          }
-         ]
+         "t": "arbeidsmiljøloven",
+         "l": "lov/2005-06-17-62"
         },
-        {
-         "merke": "•",
-         "ledd": [
-          {
-           "tekst": [
-            "én representant fra skolens ledelse"
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "•",
-         "ledd": [
-          {
-           "tekst": [
-            "én representant for de ansatte med vara"
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "•",
-         "ledd": [
-          {
-           "tekst": [
-            "fire representanter fra elevene med vara valgt av elevrådet blant skolens elever"
-           ]
-          }
-         ]
-        },
-        {
-         "merke": "•",
-         "ledd": [
-          {
-           "tekst": [
-            "annen representasjon er mulig, men elevene skal alltid være i flertall og i så tilfelle må ekstra elevrepresentanter velges."
-           ]
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "tekst": [
-        "Skoleutvalget skal publisere møteinnkalling med saksliste og referat fra møtene på skolens nettsider."
-       ]
-      },
-      {
-       "tekst": [
-        "Det gis ikke godtgjøring for medlemmer i skoleutvalget."
-       ]
-      },
-      {
-       "tekst": [
-        "Fylkeskommunale nemnder"
-       ]
-      },
-      {
-       "tekst": [
-        "Representanter for elever i den videregående opplæringen har møte- og talerett i fylkeskommunale nemnder på samme måte som de ansatte har etter ",
-        {
-         "t": "kommuneloven § 13-4",
-         "l": "lov/2018-06-22-83/§13-4"
-        },
-        "."
-       ]
-      }
-     ],
-     "endringer": [],
-     "fotnoter": []
-    },
-    {
-     "nr": "14",
-     "visNr": "§ 14",
-     "tittel": "Lokale utfyllende skoleregler",
-     "ledd": [
-      {
-       "tekst": [
-        "Skolereglene er felles for de videregående skolene og de alternative opplæringsarenaene i Akershus fylkeskommune. Det er egne regler for deltagere i opplæring organisert for voksne. Skolene kan ha behov for regler ut over dette, som for eksempel regler for bruk av kantine, bibliotek og parkeringsplass."
-       ]
-      },
-      {
-       "tekst": [
-        "Organisering av elevrådet utover minimumsbestemmelsene i ",
-        {
-         "t": "§ 13",
-         "l": "forskrift/2024-06-20-1886/§13",
-         "a": "akershus-skoleregler/13"
-        },
-        ", fastsettes i lokale skoleregler for skolen."
-       ]
-      },
-      {
-       "tekst": [
-        "Lokale skoleregler må være i tråd med skolereglene og de lover og forskrifter som gjelder, og skolen skal involvere elevene i arbeidet med å lage dem. Fylkesdirektøren for opplæring og kompetanse skal godkjenne dem. Utfyllende regler legges som vedlegg til skolereglene og gjelder for ett skoleår av gangen."
+        " og lokale regler som gjelder for den arbeidsplassen opplæringen foregår."
        ]
       }
      ],
