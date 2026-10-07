@@ -76,7 +76,7 @@ export interface Modulmanifest {
    * har). Moduler med mange oppføringer, som fagene, kan da la være å laste alt.
    */
   favorittbare(ider?: readonly string[]): Promise<Favorittbar[]>;
-  /** Frister modulen eier. Samles i årshjulet i fase 8. */
+  /** Frister modulen eier. Samles i kalenderen (avgjørelse 066). */
   frister(): Promise<Frist[]>;
   /**
    * Boksene modulen har på forsiden under kategorien sin (avgjørelse 030). Uten innganger står modulen som én boks

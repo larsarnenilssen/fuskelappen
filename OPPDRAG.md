@@ -1,6 +1,6 @@
 # OPPDRAG – Jukselappen
 
-**Versjon:** 1.4 · 01.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside)
+**Versjon:** 1.5 · 07.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm))
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -29,7 +29,7 @@ En installerbar nettapp for skoleledere og lærere i videregående opplæring so
 - tilpasset opplæring og individuell tilrettelegging, særskilt språkopplæring
 - vurdering, fravær og eksamen
 - skolemiljø og skoleregler
-- frister og årshjul
+- frister og datoer i en samlet kalender
 
 Forklaringene skal kunne brukes direkte i samtaler med lærere, og er derfor skjult til brukeren åpner dem.
 
@@ -114,7 +114,8 @@ Hver modul eksporterer et manifest fra `src/modules/<modul>/index.ts`:
 - `ruter`
 - `sokeoppforinger()` – det modulen bidrar med til samlet søk
 - `favorittbare` – funksjoner, fag, begreper osv. som kan favorittmerkes
-- `frister()` – frister modulen eier (samles i årshjulet i fase 8)
+- `frister()` – frister modulen eier (samles i kalenderen, avgjørelse 066)
+- `fakta()` – fakta til dagens jukselapp (fra fase 8)
 - `kilder` – kilde-id-er modulen bygger på
 - `status` – `aktiv` eller `skjult` (moduler fra senere faser er skjult til de er godkjent)
 
@@ -137,7 +138,7 @@ Hvert oppslag returnerer `{ verdi, niva, kilde }`. Grensesnittet viser tydelig n
 
 Innstillinger: fylke (valgfritt) og skole (valgfritt, forutsetter fylke). Skolelisten hentes fra Udirs Nasjonalt skoleregister hvis det lar seg gjøre i kildejobben, ellers fritekst. Uten valgt fylke vises bare nasjonalt innhold, med merknad om at lokale regler kan gjelde.
 
-Datamodell, oppslagslogikk og tester for nivåene lages i fase 0–1. Grensesnitt for å registrere lokale avtaler kommer i fase 9.
+Datamodell, oppslagslogikk og tester for nivåene lages i fase 0–1. Grensesnitt for å legge inn og melde inn lokale regler, som eier godkjenner, kommer i fase 9.
 
 ### 3.4 Regelsett
 
@@ -206,14 +207,14 @@ Skjemaet defineres med zod og valideres i testene.
   - **Skolemiljø:** Skolemiljø (fase 7).
   - **Oppslag:** Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen sto her, og forsiden hadde gruppen «Neste datoer» (avgjørelse 066). *(Eier 07.10.2026:)* Kalender og Nyheter står ikke lenger under «Oppslag», men i panelet øverst.
   - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag».
-  - Lokale profiler (fase 9) hører hjemme i Innstillinger.
+  - Lokale regler (fase 9) legges inn og meldes inn fra Innstillinger, ved valget av fylke og skole.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
 - Favoritter: funksjoner, fag og begreper. Lagres lokalt og kan sorteres.
 
 ### 3.8 Lagring og personvern
 
-- All brukerdata ligger lokalt på enheten: innstillinger, favoritter, scenarier og (fra fase 9) lokale profiler.
+- All brukerdata ligger lokalt på enheten: innstillinger, favoritter, scenarier og (fra fase 9) egne lokale regler til de er godkjent. Godkjente regler blir vanlig innhold i appen.
 - Eksport og import som JSON-fil.
 - Ingen informasjonskapsler, analyseverktøy eller kall til eksterne tjenester fra appen. Appen henter bare egne statiske filer.
 - Ingen personopplysninger i repoet. Testdata anonymiseres.
@@ -584,38 +585,118 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 - Levert i 0.42.0 (07.10.2026): **Nyheter** fra KD, Udir, HKdir, Lovdata, Statsforvalteren og fylkeskommunen i valgt fylke, forskning.no, NIFU, Utdanningsnytt, Utdanningsforbundet og Skolelederforbundet, valgt ut for videregående med et ordfilter og hentet hver dag (avgjørelse 084). Visningen «Nyheter» i panelet på forsiden med filter og ingress, og en egen side med filter på hvem, fylke og kilde, de siste 30 dagene og «Vis eldre». Kalender og Nyheter står ikke under «Oppslag». Kalenderen, nyhetene og tallene i panelet har samme oppsett. Nynorsk lastes bare når den trengs (avgjørelse 083). Kilder som ikke kan hentes, står i `docs/KILDER-IKKE-MED.md`. Forslaget og eiers svar står i `docs/arbeidsordrer/fase-7b-forslag.md`. **Fase 7b er levert.** Eier har godkjent designet og kildene underveis.
 
-### Fase 8 – Frister og årshjul
+### Fase 8 – Dagens jukselapp
 
-*(07.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-8.md`.
+*(Eier 07.10.2026:)* Fasen har bare dagens jukselapp. Årshjulet og eksporten til kalender (.ics) er tatt ut, fordi kalenderen dekker behovet. Arbeidsordren står i `docs/arbeidsordrer/fase-8.md`.
 
-*(Fase 6, pakke 5, 05.10.2026:)* Den samlede oversikten over fristene er bygget som **Kalenderen** (`#/kalender`, avgjørelse 066): fristene fra alle manifestene, skoleruta fra fylkenes forskrifter, fylkenes datoer for inntak og vedtatte endringer i regelverket, med filter på tema og hvem det gjelder, de neste tolv månedene eller et skoleår. Fase 8 bygger videre på den og på datafilene (`data/skolerute/`, `data/inntak/`, `data/lovdata/kommende.json`).
+*(Fase 6, pakke 5, 05.10.2026:)* Den samlede oversikten over fristene er bygget som **Kalenderen** (`#/kalender`, avgjørelse 066): fristene fra alle manifestene, skoleruta fra fylkenes forskrifter, fylkenes datoer for inntak og vedtatte endringer i regelverket, med filter på tema og hvem det gjelder, de neste tolv månedene eller et skoleår.
 
 **Leveranser**
 
-- Visning som årshjul, ved siden av listen i kalenderen.
-- Eksport til kalender (.ics), generert i nettleseren, fra postene i kalenderen med det filteret brukeren har valgt.
-- *(Ønske fra eier 04.10.2026)* **Dagens jukselapp** (navnet endret fra «Dagens fuskelapp», eier 04.10.2026)**:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den tas i denne fasen fordi den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet. Da finnes det også innhold fra de fleste modulene.
+- *(Ønske fra eier 04.10.2026)* **Dagens jukselapp** (navnet endret fra «Dagens fuskelapp», eier 04.10.2026)**:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet.
   - Dagens jukselapp skrus av og på fra forsiden (eier 04.10.2026), og gjerne også under Innstillinger. Den er av fra start, og valget lagres lokalt som de andre valgene.
   - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.
   - Jukselappen byttes a) automatisk hver dag (samme faktum hele dagen, valgt ut fra datoen), eller b) når brukeren trykker på et tegn for ny jukselapp ved siden av overskriften. Eier velger a, b eller begge når forslaget legges fram.
   - Modulene bidrar med fakta gjennom en ny funksjon i manifestet (som `frister()`), så nye moduler kommer med av seg selv. Fakta hentes fra innholdet, regelsettene og dataene appen alt har. Det gjøres ingen kall til eksterne tjenester, og alt virker uten nett.
   - Innhold for fylke og skole vises bare når brukeren har valgt fylket eller skolen. Teksten står på bokmål og nynorsk.
   - Når den er av, kan forsiden ha en kort tekst med en knapp som slår på dagens jukselapp. Teksten kan lukkes for godt.
-  - Legges fram for eier før det bygges: hvilke typer fakta som tas med, om bare kontrollert innhold skal vises, og hvordan rubrikken, bryteren på forsiden og spørsmålet ser ut.
 
-**Kontrollpunkt:** Eier kontrollerer frister, visning og dagens jukselapp.
+**Åpne punkter (avklares i fasen, før det bygges)**
 
-### Fase 9 – Lokale avtaler og profiler for fylke og skole
+- Hvilke typer fakta som tas med.
+- Om bare kontrollert innhold skal vises. Per 07.10.2026 har ikke noe innhold `kontrollert` satt, så jukselappen ville vært tom.
+- Om jukselappen byttes hver dag, med en knapp eller begge deler.
+- Hvor rubrikken og bryteren står: som egen rubrikk eller som en fjerde visning i panelet øverst (avgjørelse 081), og hvordan teksten som slår den på, ser ut.
+
+**Kontrollpunkt:** Eier kontrollerer visningen og fakta i dagens jukselapp.
+
+### Fase 9 – Lokale regler for fylke og skole
+
+*(Eier 07.10.2026:)* Brukerne melder inn lokale regler, og eier godkjenner dem. Godkjente regler vises for alle som har valgt fylket eller skolen. Lokale profiler som bare lagres og deles som fil eller lenke, er tatt ut.
 
 **Leveranser**
 
-- Grensesnitt for å registrere lokale avvik (`erstatter`) og lokale regler (`supplerer`) på fylkes- og skolenivå.
-- En lokal profil kan eksporteres og importeres som fil eller lenke, slik at kolleger ved samme skole kan bruke samme oppsett.
-- Verdier registrert av brukere merkes tydelig som lokale og ikke kontrollert av appens eier.
-- Profiler som eier godkjenner, kan legges inn i repoet som faste fylkes- eller skoleprofiler.
+- **Legge inn:** Brukeren kan legge inn en lokal regel for fylket eller skolen sin. Den kan komme i tillegg til de nasjonale (`supplerer`) eller gjelde i stedet for en nasjonal verdi (`erstatter`). Regelen gjelder med en gang for brukeren selv, lagres bare på enheten og merkes tydelig som brukerens egen og ikke kontrollert av eier.
+- **Dato og dokumentasjon:** Regelen merkes med dato. Brukeren kan velge å dokumentere den, for eksempel med en lenke til kilden eller et vedlegg.
+- **Melde inn:** Brukeren kan melde regelen inn. Eier får beskjed på e-post.
+- **Godkjenne:** Eier kontrollerer regelen. Godkjent blir den fast innhold eller en fast verdi for fylket eller skolen (`gyldighet`), med kilde, dato og `kontrollert`, og vises automatisk for alle som har valgt fylket eller skolen. Brukerens egen kopi erstattes av den godkjente.
 - Innhold for nye fylker legges til etter hvert som brukerkretsen vokser.
 
-**Kontrollpunkt:** Eier tester registrering og deling av en skoleprofil.
+**Utgangspunkt (forslag fra Claude, godtatt som utgangspunkt av eier 07.10.2026)**
+
+- **Innmelding på e-post,** med samme løsning som tilbakemeldingen (avgjørelse 064): appen lager en ferdig e-post med regelen i fast form til appens adresse. Brukeren trenger ingen konto og kan legge ved dokumentasjon selv. Appen sender ingenting, og regelen om ingen eksterne kall gjelder fortsatt. Claude legger regelen inn i repoet etter beskjed fra eier, og eier godkjenner som for annet innhold. Alternativet er en GitHub-sak som går rett inn i godkjenningen med `/godkjent` (avgjørelse 021), men den krever en GitHub-konto og er offentlig.
+- **Datoene:** når regelen ble meldt inn, når eier godkjente den, og eventuelt fra og til når den gjelder.
+- **Plassen:** i Innstillinger, ved valget av fylke og skole.
+
+**Åpne punkter (avklares i fasen)**
+
+- E-post, GitHub-sak eller begge.
+- Repoet er offentlig, så godkjente regler blir offentlige. Hva gjøres med dokumentasjon som har navn eller underskrifter, og med lokale avtaler som ikke er offentlige? Forslag: regelen skrives med egne ord, med lenke til kilden når den finnes, og dokumentet legges ikke i repoet.
+- Når godkjente regler vises for andre: med neste versjon, eller med en egen, rask publisering for lokale regler (som nyhetene, avgjørelse 084).
+- Hvilke regler og verdier som kan meldes inn (f.eks. arbeidstid, skoleregler, inntak og eksamen), og hvordan brukeren velger hva regelen gjelder.
+- Om datoene over er nok.
+
+**Kontrollpunkt:** Eier legger inn og melder inn en regel for en skole, godkjenner den og ser at den vises for andre som har valgt skolen.
+
+### Fase 10 – Velkomst
+
+*(Eier 07.10.2026.)* Tas etter fase 9, fordi ett av trinnene viser til innmeldingen av lokale regler.
+
+**Leveranser**
+
+- Et vindu over appen, med uklar bakgrunn, som åpnes første gang brukeren besøker appen. Brukeren blar med «Neste» og «Tilbake» og kan lukke vinduet når som helst, også ved første trinn. Valget lagres lokalt.
+- Vinduet kan åpnes igjen fra Innstillinger og fra forsiden.
+- En trinnvis veileder i bruken av appen, med korte, gjentakende animasjoner i trinnene der det passer. Trinnene kan ha felt å fylle ut eller lenker og tips om navigasjon. Trinnene er:
+  1. **Hva appen er:** kort om den og hvem den er for.
+  2. **Oppbyggingen:** appens oppbygging og funksjoner, steg for steg, i ett eller flere trinn.
+  3. **Fylke og skole:** hva valget gjør, og valget kan gjøres i trinnet.
+  4. **Lokale regler:** at brukeren kan melde inn regler for eget fylke eller egen skole (fase 9), med lenke dit.
+  5. **Hvem du er:** rollen og hva brukeren vil bruke appen til, med anbefalte favoritter som kan legges til. Trinnet viser også hvordan favorittene virker. Kan være ett eller flere trinn.
+  6. **Installere appen** på mobil eller skrivebord.
+  7. **Takk:** appen er et privat prosjekt laget med hjelp av KI, og innspill om feil, mangler og forbedringer er velkomne (lenke til Tilbakemelding). Takk, og «Du er klar!».
+- Tekstene står på bokmål og nynorsk.
+
+**Utgangspunkt (forslag fra Claude, godtatt som utgangspunkt av eier 07.10.2026)**
+
+- **Åpnes igjen** med en knapp under Innstillinger og en diskré lenke nederst på forsiden, ved forbeholdet («Ny her? Se velkomsten»).
+- **Første besøk:** Vinduet åpnes bare av seg selv når første besøk lander på forsiden. En delt lenke til en side går rett dit.
+- **Animasjonene** lages i CSS eller SVG, ikke som video, og lastes først når vinduet åpnes, så startpakken ikke vokser. For WCAG 2.1 AA (2.2.2) stopper en gjentakende animasjon av seg selv innen fem sekunder eller har en pauseknapp. Med redusert bevegelse på enheten vises ingen animasjon.
+- **Vinduet** holder fokus inne til det lukkes, og Esc lukker det. Bakgrunnen gjøres uklar også i WebKit.
+- **Rollen** gir anbefalte favoritter og kan sette filteret «hvem det gjelder» i kalenderen.
+- **Installasjon:** egen hjelp for iPhone og iPad (Del, så Legg til på Hjem-skjerm), Android og skrivebord. Trinnet hoppes over når appen alt er installert.
+
+**Åpne punkter (avklares i fasen)**
+
+- Om brukere som har appen fra før, skal få velkomsten én gang når den kommer.
+- Hvilke roller som er med (f.eks. lærer, kontaktlærer, avdelingsleder, rådgiver og rektor), og hvilke favoritter hver rolle får.
+- Hvor mange trinn det blir om oppbyggingen, og hva de viser.
+- Tekstene og animasjonene i hvert trinn.
+
+**Kontrollpunkt:** Eier går gjennom velkomsten på mobil og skrivebord.
+
+### Fase 11 – Reklamefilm
+
+*(Eier 07.10.2026.)* Tas sist, så filmen viser den ferdige appen.
+
+**Leveranser**
+
+- En kort og enkel reklamefilm for appen.
+
+**Utgangspunkt (forslag fra Claude, godtatt som utgangspunkt av eier 07.10.2026)**
+
+- Opptak av den ekte appen med eksempeldata, uten personopplysninger, med tekst og overganger. Lages i skyøkten med Playwright og ffmpeg.
+- Uten tale. Musikk bare med fri lisens, ellers uten musikk.
+- Filmen ligger ikke i selve appen, fordi den er for stor.
+
+**Åpne punkter (avklares i fasen)**
+
+- Hvor filmen skal brukes (sosiale medier, nettsiden, presentasjoner), og formatet: liggende (16:9), stående (9:16) eller kvadratisk.
+- Lengden, f.eks. 20–30 eller 45–60 sekunder.
+- Bokmål, nynorsk eller begge.
+- Hvor filmen skal ligge, og om appen skal lenke til den.
+- Musikk eller ikke.
+
+**Kontrollpunkt:** Eier godkjenner filmen.
 
 ## 5. Kildegrunnlag (første versjon av kilderegisteret)
 
@@ -664,9 +745,11 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Oversikt over tilbudene ved hver skole | fase 2 | Avklart. Skolene og tilbudene deres hentes fra utdanning.no (eier 03.10.2026, avgjørelse 053). |
 | Gjennomføring per fylke fra kullet som startet i 2020: Udir oppgir det på fylkene fra 2020 til 2023, som ikke kan deles opp | når Udir legger ut kullet | Venter. Appen regner om de eldre kullene. SSB (dagens fylker) prøves fra GitHub Actions for de sju fylkene som mangler (avgjørelse 080). |
 | KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Avklart for nyhetene (eier 07.10.2026): KS og KF Infoserie hentes ikke. Nyhetssiden har en fast lenke til KS, og vi spør ikke KS om en feed. Begge står i `docs/KILDER-IKKE-MED.md`. Særavtalesiden på ks.no svarer 403 fra 06.10.2026. Den sjekkes for hånd i kontrollrundene, og Utdanningsforbundets gjengivelse av SFS 2213 sjekkes hver uke som varsel (eier 07.10.2026, avgjørelse 008). |
+| Årshjul og eksport til kalender (.ics) | fase 8 | Tatt ut (eier 07.10.2026). Kalenderen dekker behovet. |
+| Lokale profiler som deles som fil eller lenke | fase 9 | Tatt ut (eier 07.10.2026). Lokale regler meldes inn og godkjennes av eier, og vises da for alle med samme fylke eller skole. |
 
 ## 8. Ferdig når
 
-- Fase 0–9 er levert og godkjent.
+- Fase 0–11 er levert og godkjent.
 - All faglig tekst og alle regelverdier har status `kontrollert`.
 - README og `docs/` beskriver arkitektur, innholdsmodell og kilder, og hvordan man legger til en ny modul, en ny regelperiode og en ny fylkes- eller skoleprofil.
