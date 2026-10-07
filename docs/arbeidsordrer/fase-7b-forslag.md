@@ -20,6 +20,47 @@ Startpakken var 149,4 kB (grense 150 kB). Nå lastes bare tekstene for målforme
 - **K8 HKdir:** Prøvehentingen viser HTML-en rundt datoene på «Aktuelt», så jeg kan se om listen kan leses (se under).
 - **Filteret på forsiden:** Linjen med filteret og «Alle nyhetene» har lys flate og blå tekst i liten skrift, som «Hele kalenderen». Den vanlige nedtrekkslisten ligger usynlig over teksten «Filtrer», så den virker som før med tastatur, skjermleser og mobilens egen liste. Når et filter er valgt, står navnet der i stedet (f.eks. «Udir»).
 
+### K4. Fylkeskommunene, forklart og med tall
+
+**Hva det gjelder:**
+- **ACOS** er firmaet som lager nettsidesystemet til åtte fylkeskommuner: Akershus, Buskerud, Innlandet, Agder, Rogaland, Møre og Romsdal, Nordland, og Troms og Finnmark. Sidene er bygd likt, og hvert fylke har en nyhetsfeed per kategori. Lenken til feeden står på fylkets egen nyhetsside.
+- **robots.txt** er en fil der et nettsted sier hvilke adresser automatiske hentere ikke skal bruke. Hos ACOS-fylkene står det «ikke hent `/artikkelRSS.aspx`». Feeden vi ville brukt, ligger på `/ArtikkelRSS.ashx`. Det er en annen adresse, så etter ordlyden er den tillatt.
+- **Hvorfor jeg tok det opp:** Navnene ligner så mye at forbudet kan ha vært ment for feeden også. Vi følger robots.txt nøye ellers, og du skulle få vite det før du bestemmer deg.
+
+**Mitt råd:** Det er forsvarlig å bruke feedene:
+- Fylkene lenker selv til dem.
+- Adressen som er stengt, er en annen side.
+- Vi henter én gang om dagen med eget navn i henvendelsen (User-Agent), og bare tittel, dato, lenke og ingress.
+
+Sier et fylke fra, tar vi det ut med en gang.
+
+**Prøvehentingen i Actions 07.10.2026** (feeden for nyheter fra hvert fylke, med vanlig ordfilter):
+
+| Fylke | Hvordan | Saker i feeden | Med etter filteret |
+|---|---|---|---|
+| Innlandet | ACOS, egen feed for utdanning | 5, om lag 1 i uka | 5 av 5, alle relevante: «Elevundersøkelsen 2026», «En av landets eldste laftebedrifter blir lærebedrift», «Tilsyn med individuelt tilrettelagt opplæring» |
+| Buskerud | ACOS | 9 | 3: «Inviterer 1300 lærlinger … til årets lærlingundersøkelse», «8 500 elever har fått videregående skoleplass» og «Internasjonal musikkpris til Den kulturelle skolesekken» (grunnskole) |
+| Rogaland | ACOS | 5 | 1: «Nytt skolebygg gir yrkesfagene et løft på Øksnevad» |
+| Møre og Romsdal | ACOS | 20 | 2: «Suksess for Nettskolen: Elevtalet dobla på eitt år» og en kronikk om elevane |
+| Troms | ACOS | 5 | 1: «Fordelte 15,2 millioner til kultur i skolen» |
+| Nordland | ACOS | 5 | 1: «40 millioner til ny idrettshall i Alstahaug» (videregående i ingressen) |
+| Akershus, Agder, Finnmark | ACOS | 5–9 | 0 de siste ukene |
+| Vestland | eget arkiv med temaet «Utdanning» (JSON) | | Ikke prøvd ennå. Om lag én sak i uka, alle om utdanning. Ikke et dokumentert API. |
+| Trøndelag | nyhetsarkiv filtrert på «Utdanning» | | Ikke prøvd ennå. Om lag én sak i uka. |
+| Vestfold, Telemark | én stor nyhetsside med dato, ingen feed | | Ikke prøvd ennå. Trenger ordfilter. |
+| Østfold | | | Svarer ikke, verken herfra eller fra Actions. |
+| Oslo | Utdanningsetaten har ingen nyhetsliste | | Ikke med. |
+
+**Forslag:**
+- Ta med de åtte ACOS-fylkene. Innlandet uten filter (bare utdanning), de andre med ordfilter.
+- Vestland og Trøndelag tas med når jeg har prøvd dem i Actions.
+- Vestfold og Telemark venter, fordi sidene er store (300–650 kB) og har nyheter om alt.
+- Sakene vises bare når fylket er valgt, som hos Statsforvalteren, og merkes «Myndighet» med fylkets navn som kilde.
+
+Du tar stilling til to ting:
+- (a) Ja eller nei til ACOS-feedene.
+- (b) Ja eller nei til Vestlands interne arkiv og Trøndelags nyhetsarkiv. Ingen av dem er feeder, men begge er lister på én side, som hos Udir.
+
 ## Runde 3: dine svar 07.10.2026, og hva som er gjort
 
 | | Svar | Gjort |
