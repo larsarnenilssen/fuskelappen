@@ -309,11 +309,12 @@ prove:
   - { id: nifu-alt, navn: NIFU (alt), url: https://www.nifu.no/feed/ }
   - { id: hkdir-rss, navn: HKdir (rss), url: https://hkdir.no/rss }
   - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
+  - { id: skolenes-uten-www, navn: Skolenes landsforbund (uten www), url: https://skolenes.no/feed/, alle: true }
 
 # Sider der prøvehentingen leter etter feeder (<link rel="alternate">) og leser robots.txt.
 oppdag:
-  - https://hkdir.no/
   - https://hkdir.no/aktuelt
-  - https://lovdata.no/info/rss
-  - https://www.nrk.no/rss/
-  - https://www.nifu.no/
+  - https://hkdir.no/aktuelt/nyheter
+  - https://hkdir.no/nyheter
+  - https://www.nifu.no/nyheter/
+  - https://www.skolenes.no/
