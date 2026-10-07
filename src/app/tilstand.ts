@@ -183,6 +183,16 @@ export function vekslSkjultGruppe(id: string): void {
   });
 }
 
+/** Slår dagens jukselapp på forsiden av eller på (fase 8). */
+export function settJukselapp(jukselapp: boolean): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp } }));
+}
+
+/** Lukker teksten som slår på dagens jukselapp, for godt (fase 8). */
+export function lukkJukselappTips(): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselappTipsLukket: true } }));
+}
+
 /** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */
 export function settBareFavoritter(bareFavoritter: boolean): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, bareFavoritter } }));

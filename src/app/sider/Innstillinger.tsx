@@ -4,7 +4,8 @@ import { Ikon } from '../../components/Ikon.tsx';
 import { eksportfilnavn, lagEksport, lesEksport, velgFylke, type Innstillinger as Inn } from '../../core/lagring/lagring.ts';
 import { KildestatusIndikator } from '../Kildestatusindikator.tsx';
 import { fylker } from '../Stedmerknad.tsx';
-import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
+import { settJukselapp, tilstand, useTekst, useTilstand } from '../tilstand.ts';
+import { JUKSELAPP_SKISSE } from '../Jukselapp.tsx';
 import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { FLYTTEPARAMETER, lesFlytting } from '../flytting.ts';
 import { erstattAdresse } from '../ruter.ts';
@@ -141,6 +142,17 @@ export default function Innstillinger({ sporring }: SideProps) {
         ]}
         onVelg={(tema) => sett({ tema })}
       />
+
+      {JUKSELAPP_SKISSE && (
+        <fieldset class="valggruppe">
+          <legend>{t('forside.jukselapp.legend')}</legend>
+          <div class="vippe">
+            <input id="innst-jukselapp" type="checkbox" role="switch" checked={!!data.forside.jukselapp} onChange={() => settJukselapp(!data.forside.jukselapp)} />
+            <label for="innst-jukselapp">{t('forside.jukselapp.innstilling')}</label>
+          </div>
+          <p class="dempet liten">{t('forside.jukselapp.innstillingHjelp')}</p>
+        </fieldset>
+      )}
 
       <fieldset class="valggruppe">
         <legend>{t('innstillinger.sted.legend')}</legend>

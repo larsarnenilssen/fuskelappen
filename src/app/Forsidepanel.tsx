@@ -23,6 +23,7 @@ import { NYHETER_RUTE } from '../modules/nyheter/adresse.ts';
 import type { Nyheter as Nyhetsfil } from '../modules/nyheter/skjema.ts';
 import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { useTilpassetListe } from './tilpassListe.ts';
+import { useDagensJukselapp } from './Jukselapp.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
 import { settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilstand.ts';
 
@@ -30,7 +31,7 @@ import { settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilsta
 export const PANEL = 'panel';
 
 /** Visningene i panelet. Id-ene er de samme som gruppene hadde før, så valget om å slå dem av beholdes. */
-export type Visning = 'neste' | 'nyheter' | 'itall';
+export type Visning = 'neste' | 'nyheter' | 'itall' | 'jukselapp';
 
 export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string | null }[] = [
   { id: 'neste', ikon: 'kalender', favoritt: oversiktsid('kalender') },
@@ -44,6 +45,7 @@ type Ramme = (p: { tittel: string; sammendrag: string; children: ComponentChildr
 function Innhold({ id, ramme }: { id: Visning; ramme: Ramme }) {
   if (id === 'neste') return <NesteDatoer ramme={ramme} />;
   if (id === 'nyheter') return <Nyheter ramme={ramme} />;
+  if (id === 'jukselapp') return <JukselappVisning ramme={ramme} />;
   return <ITall ramme={ramme} />;
 }
 
@@ -219,4 +221,11 @@ function ITall({ ramme }: { ramme: Ramme }) {
     sammendrag: forsideSammendrag(t, lastet.d, enhet),
     children: <ForsideTall d={lastet.d} enhet={enhet} skole={skole} />,
   });
+}
+
+/** SKISSE (fase 8, variant B): dagens jukselapp som en fjerde visning i panelet. */
+function JukselappVisning({ ramme }: { ramme: Ramme }) {
+  const { t } = useTekst();
+  const { sammendrag, innhold } = useDagensJukselapp();
+  return ramme({ tittel: t('forside.jukselapp.tittel'), sammendrag, children: innhold });
 }

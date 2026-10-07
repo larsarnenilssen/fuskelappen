@@ -8308,3 +8308,74 @@ a.panel-videre:hover .panel-videre-tekst {
     grid-column: 2;
   }
 }
+
+/* SKISSE (fase 8): dagens jukselapp. Kortet har en gul kant øverst, som lappen i logoen. */
+.jukselapp {
+  border-top: 4px solid var(--farge-aksent);
+  overflow: hidden;
+}
+
+.jukselapp-topp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin: calc(-1 * var(--rom-2)) calc(-1 * var(--rom-3)) 0 0;
+}
+
+.jukselapp-type {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.jukselapp-ny {
+  color: var(--farge-lenke);
+}
+
+.jukselapp-tekst {
+  margin: 0 0 var(--rom-3);
+  font-size: var(--str-l);
+  line-height: 1.45;
+}
+
+.jukselapp-videre {
+  margin-inline: calc(-1 * var(--rom-4));
+  padding-inline: var(--rom-4) var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.jukselapp-videre + .kortfot {
+  margin-top: 0;
+}
+
+/* Teksten som slår jukselappen på, når den er av: én rolig rad under stedet. */
+.jukselapp-tips {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-2) var(--rom-1) var(--rom-2) var(--rom-3);
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 4px solid var(--farge-aksent);
+  border-radius: var(--radius-m);
+  font-size: var(--str-s);
+}
+
+.jukselapp-tips > p {
+  flex: 1;
+  margin: 0;
+}
+
+.jukselapp-tips-merke {
+  display: none;
+}
+
+.jukselapp-tips > .knapp {
+  flex: none;
+}
