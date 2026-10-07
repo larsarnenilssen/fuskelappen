@@ -18,6 +18,14 @@ export function finnUrler(tekst: string): string[] {
   return [...tekst.matchAll(URL_MONSTER)].map((m) => m[0].replace(/[.,;:!?]+$/, '')).filter((u) => !u.includes('${'));
 }
 
+/** Teksten i en YAML-fil uten linjene som er kommentarer. Adressene der er eksempler, ikke lenker i appen. */
+export function utenKommentarer(tekst: string): string {
+  return tekst
+    .split('\n')
+    .filter((l) => !l.trimStart().startsWith('#'))
+    .join('\n');
+}
+
 function filer(mappe: string, endelser: readonly string[]): string[] {
   if (!existsSync(mappe)) return [];
   return readdirSync(mappe).flatMap((n) => {
@@ -63,7 +71,8 @@ export function samleLenker(rot: string): Lenke[] {
     lenker.set(url, l);
   };
   for (const f of [...filer(join(rot, 'content'), ['.yaml']), ...filer(join(rot, 'src'), ['.ts', '.tsx'])]) {
-    for (const url of finnUrler(readFileSync(f, 'utf8'))) legg(url, 'fast', rel(rot, f));
+    const tekst = readFileSync(f, 'utf8');
+    for (const url of finnUrler(f.endsWith('.yaml') ? utenKommentarer(tekst) : tekst)) legg(url, 'fast', rel(rot, f));
   }
   for (const f of finnDatafiler(rot)) {
     const regel = DATAFILER.find((r) => r.fil.test(f));

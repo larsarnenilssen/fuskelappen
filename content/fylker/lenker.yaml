@@ -36,17 +36,17 @@ fylker:
     navn: Møre og Romsdal fylkeskommune
     lenker:
       inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/innsoking-til-vidaregaande-opplaring/sok-vidaregaande-opplaring/", bekreftet: null }
-      klage-inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage/", bekreftet: null }
+      klage-inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage/", bekreftet: 2026-10-07 }
       tilrettelegging: { url: "https://mrfylke.no/tenester/skole-og-opplaring/ppt-og-oppfolgingstenesta/ppt-i-skolen/", bekreftet: null }
       eksamen: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: null }
-      klage-standpunkt: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage-pa-standpunktkarakter/", bekreftet: null }
+      klage-standpunkt: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage/", bekreftet: 2026-10-07 }
       privatist: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-privatistar/meld-deg-opp-til-eksamen/", bekreftet: null }
       fagprove: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-bedrift/praktisk-for-larlingar/fag-sveine-og-kompetanseprove/", bekreftet: null }
   - fylke: "18"
     navn: Nordland fylkeskommune
     lenker:
       forside: { url: "https://www.nfk.no/tjenester/skole-og-opplaring/", bekreftet: 2026-10-05 }
-      inntak: { url: "https://www.nfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/inntak/", bekreftet: 2026-10-05 }
+      inntak: { url: "https://www.nfk.no/tjenester/skole-og-opplaring/sok/", bekreftet: 2026-10-07 }
       klage-inntak: { url: "https://www.nfk.no/tjenester/skole-og-opplaring/klage/", bekreftet: 2026-10-05 }
       sprak: { url: "https://www.nfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/opplaring-for-minoritetsspraklige/", bekreftet: 2026-10-05 }
       tilrettelegging: { url: "https://www.nfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/pp-tjenesten/", bekreftet: 2026-10-05 }
@@ -84,7 +84,7 @@ fylker:
       forside: { url: "https://bfk.no/tjenester/skole-og-opplaring/", bekreftet: null }
       inntak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
       klage-inntak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
-      sprak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/minoritetsspraklige/", bekreftet: null }
+      sprak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/minoritetsspraklige-og-samiske-elever/", bekreftet: 2026-10-07 }
       tilrettelegging: { url: "https://bfk.no/tjenester/skole-og-opplaring/ppt-oppfolgingstjenesten/pp-tjenesten-ppt/", bekreftet: null }
       eksamen: { url: "https://bfk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: null }
       klage-standpunkt: { url: "https://bfk.no/tjenester/skole-og-opplaring/klage-pa-karakter/", bekreftet: null }
@@ -127,8 +127,8 @@ fylker:
     navn: Agder fylkeskommune
     lenker:
       forside: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/", bekreftet: null }
-      inntak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/styring-og-rammeverk/inntaksregler-og-inntaksmodell/", bekreftet: null }
-      klage-inntak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/klage/klage-pa-enkeltvedtak.23631.aspx", bekreftet: null }
+      inntak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/skolestruktur-innhold-og-rammeverk/inntaksregler-og-inntaksmodell/", bekreftet: 2026-10-07 }
+      klage-inntak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/klage-pa-vedtak/", bekreftet: 2026-10-07 }
       sprak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-skole/flerspraklige-elever/", bekreftet: null }
       tilrettelegging: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/pedagogisk-psykologisk-tjeneste-ppt/henvisning-til-ppt/", bekreftet: null }
       eksamen: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-elever/", bekreftet: null }
