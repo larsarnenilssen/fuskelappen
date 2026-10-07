@@ -58,7 +58,8 @@ export function rensUrl(url: string): string {
   }
 }
 
-export function tilSaker(kilde: Nyhetskilde, filter: Nyhetsfilter, raa: RaSak[], fra: string): Nyhet[] {
+export function tilSaker(kilde: Nyhetskilde, felles: Nyhetsfilter, raa: RaSak[], fra: string): Nyhet[] {
+  const filter = kilde.utelukker ? { ...felles, utelukker: [...felles.utelukker, ...kilde.utelukker] } : felles;
   const utelat = kilde.utelat?.length ? new RegExp(kilde.utelat.map((o) => o.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'i') : null;
   return raa.flatMap((s) => {
     if (!s.dato || s.dato < fra) return [];

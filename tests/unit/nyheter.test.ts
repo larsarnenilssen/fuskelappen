@@ -84,6 +84,18 @@ describe('hentingen', () => {
     expect(tilSaker(kilde, filter, raa, '2026-07-01')).toEqual([{ kilde: 'skolelederforbundet', tittel: 'Start med lederen', dato: '2026-09-29', url: 'https://a.no/2', ingress: 'Ingress' }]);
   });
 
+  it('forskning.no: saker om barn og foreldre er bare med med et sterkt ord', () => {
+    const fno = fil.kilder.find((k) => k.id === 'forskning-no');
+    if (!fno) throw new Error('Mangler kilden');
+    const sak = (tittel: string, ingress: string) => ({ tittel, ingress, url: `https://f.no/${tittel.length}`, dato: '2026-10-01', stikkord: [] });
+    const med = tilSaker(fno, filter, [
+      sak('Trygg og ryddig skolegård. Men hva vil barna selv ha?', 'Elever i skolen ble spurt.'),
+      sak('Slik kan elevene på yrkesfag få mer ut av matte-undervisningen', 'Elever i skolen.'),
+      sak('Hvem er eksamensvurderingen egentlig til for?', 'Lærere og elever.'),
+    ], '2026-07-01').map((s) => s.tittel);
+    expect(med).toEqual(['Slik kan elevene på yrkesfag få mer ut av matte-undervisningen', 'Hvem er eksamensvurderingen egentlig til for?']);
+  });
+
   it('saker fra før vurderes på nytt med filteret', () => {
     const kd = fil.kilder.find((k) => k.id === 'regjeringen-kd');
     if (!kd) throw new Error('Mangler kilden');

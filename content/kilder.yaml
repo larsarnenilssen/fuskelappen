@@ -1606,3 +1606,33 @@ kilder:
     merknad: >-
       Endringene som står i Kalender (data/lovdata/kommende.json, hentet hver uke av npm run hent:lovdata), også som
       nyheter. Ingen egen henting fra Lovdata.
+
+  - id: forskning-no-skole
+    navn: forskning.no, saker merket skole og utdanning (RSS)
+    kortnavn: forskning.no
+    utgiver: Stiftelsen forskning.no
+    url: https://www.forskning.no/tag/skole%20og%20utdanning
+    type: data
+    niva: nasjonal
+    lisens: forskning.no tilbyr feedene til bruk på andre nettsteder. Bare tittel, dato, lenke og ingress, med lenke til saken.
+    sjekkmetode: nyheter
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: Forskningsnyheter, eid av universitetene og høgskolene. Filtreres på ord for videregående (eier 07.10.2026).
+
+  - id: nifu-nyheter
+    navn: Nyheter fra NIFU (RSS)
+    kortnavn: NIFU
+    utgiver: NIFU
+    url: https://www.nifu.no/
+    type: data
+    niva: nasjonal
+    lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
+    sjekkmetode: nyheter
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Forskningsinstitutt for utdanning og forskning. Feeden har bare de tre siste sakene, så den hentes hver dag.
+      Filtreres på ord for videregående (eier 07.10.2026).

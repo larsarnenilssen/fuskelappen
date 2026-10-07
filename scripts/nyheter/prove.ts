@@ -78,6 +78,23 @@ async function main() {
         return siste ? `${m[0]}: «${rensTekst(siste[2] ?? '')}» (${siste[1]})` : `${m[0]}: ingen lenke foran`;
       });
       if (saker.length) ut.push('Lenken foran hver dato:', '', ...saker.map((x) => `- ${x}`), '');
+      // HTML-en rundt den første datoen, og tegn på at listen er bygd med JavaScript (data i <script> eller et API).
+      const forste = datoMonster.exec(tekst);
+      datoMonster.lastIndex = 0;
+      if (forste) {
+        const utsnitt = tekst
+          .slice(Math.max(0, forste.index - 900), forste.index + 600)
+          .replace(/<svg[\s\S]*?<\/svg>/gi, '<svg/>')
+          .replace(/\s(?:class|style|srcset|sizes|data-[\w-]+)="[^"]*"/gi, '')
+          .replace(/\s+/g, ' ');
+        ut.push('HTML rundt den første datoen:', '', '```html', utsnitt, '```', '');
+      }
+      const skript = {
+        nextData: tekst.includes('__NEXT_DATA__'),
+        json: (tekst.match(/<script[^>]+type="application\/(?:ld\+)?json"/gi) ?? []).length,
+        api: [...new Set([...tekst.matchAll(/["'](\/?(?:api|_next\/data|service)\/[^"']{3,120})["']/gi)].map((m) => m[1]))].slice(0, 10),
+      };
+      ut.push(`Skript: __NEXT_DATA__ ${skript.nextData ? 'ja' : 'nei'}, JSON-blokker ${skript.json}, adresser til API: ${skript.api.length ? skript.api.map((a) => `\`${a}\``).join(', ') : 'ingen'}.`, '');
       if (lenker.length) ut.push(`Lenker med rss/feed/atom: ${lenker.map((l) => `\`${l}\``).join(', ')}`, '');
       ut.push(robots ? `robots.txt (${robots.status}):` : 'robots.txt: ingen svar', '', '```', ...regler, '```', '');
     } catch (e) {

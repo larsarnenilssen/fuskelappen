@@ -99,6 +99,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Nyheter fra Statsforvalteren (RSS per embete)](https://www.statsforvalteren.no/) | Statsforvalteren | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | nyheter | 7 |
 | [Utdanningsnytt, saker merket videregående (RSS)](https://www.utdanningsnytt.no/tag/videreg%C3%A5ende) | Utdanningsforbundet | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | nyheter | 7 |
 | [Norsk Lovtidend (vedtatte endringer i regelverket appen har)](https://lovdata.no/register/lovtidend) | Lovdata | nasjonal | data | NLOD 2.0 (Lovdatas datasett) og lovtekst som ikke er vernet etter åndsverkloven § 14 | nyheter | 7 |
+| [forskning.no, saker merket skole og utdanning (RSS)](https://www.forskning.no/tag/skole%20og%20utdanning) | Stiftelsen forskning.no | nasjonal | data | forskning.no tilbyr feedene til bruk på andre nettsteder. Bare tittel, dato, lenke og ingress, med lenke til saken. | nyheter | 7 |
+| [Nyheter fra NIFU (RSS)](https://www.nifu.no/) | NIFU | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | nyheter | 7 |
 
 ## Merknader
 
@@ -196,3 +198,5 @@ Sender udir.no hentingen videre til en annen adresse, f.eks. «tidligere rundskr
 - **statsforvalteren-nyheter:** Ti embeter, hvert med sin feed. Filtreres på ord for videregående, og vises bare når fylket er valgt. Feeden har bare datoen saken sist ble oppdatert (atom:updated); hentingen beholder den første datoen den så.
 - **utdanningsnytt-nyheter:** Fagpresse, utgitt av Utdanningsforbundet. robots.txt tillater alt.
 - **lovdata-lovtidend:** Endringene som står i Kalender (data/lovdata/kommende.json, hentet hver uke av npm run hent:lovdata), også som nyheter. Ingen egen henting fra Lovdata.
+- **forskning-no-skole:** Forskningsnyheter, eid av universitetene og høgskolene. Filtreres på ord for videregående (eier 07.10.2026).
+- **nifu-nyheter:** Forskningsinstitutt for utdanning og forskning. Feeden har bare de tre siste sakene, så den hentes hver dag. Filtreres på ord for videregående (eier 07.10.2026).

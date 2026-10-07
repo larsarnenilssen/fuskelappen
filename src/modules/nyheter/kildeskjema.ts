@@ -24,6 +24,8 @@ export const nyhetskildeSkjema = z.strictObject({
   /** Fylkene kilden gjelder for. Sakene vises bare når et av dem er valgt (Statsforvalteren). */
   fylker: z.array(z.string().regex(/^\d{2}$/)).optional(),
   utelat: ordliste.optional(),
+  /** Ord som utelukker en sak fra akkurat denne kilden, i tillegg til `utelukker` i filteret (f.eks. «barn» hos forskning.no). */
+  utelukker: ordliste.optional(),
 });
 
 /** En kilde som bare prøvehentes (npm run nyheter:prove), og ikke vises i appen. */

@@ -130,29 +130,41 @@ function useForsidefilter(): [Nyhetsfilter, (f: Nyhetsfilter) => void] {
   ];
 }
 
-/** Nedtrekkslisten på forsiden: hvem og kilde i én liste, med teksten i selve listen. */
+/**
+ * Filteret på forsiden: hvem og kilde i én nedtrekksliste. Den vanlige nedtrekkslisten ligger usynlig over en blå
+ * tekst i samme stil som lenken til hele kalenderen, så filteret ikke tar oppmerksomheten fra nyhetene (eier
+ * 07.10.2026). Tastatur, skjermleser og mobilens egen liste virker som før.
+ */
 function Forsidefilter({ filter, fylke, onEndring }: { filter: Nyhetsfilter; fylke: string | null; onEndring: (f: Nyhetsfilter) => void }) {
   const { t, malform } = useTekst();
   const kilder = synligeKilder(NYHETSKILDER, fylke);
   const verdi = forsidefilterVerdi(filter);
+  const valgt = filter.kilde ? kilder.find((k) => k.id === filter.kilde)?.navn[malform] : filter.type ? t(`nyheter.filter.${filter.type}`) : null;
   return (
-    <select class="nyh-forside-filter" aria-label={t('nyheter.filter.forsideEtikett')} value={verdi} onChange={(e) => onEndring(lesForsidefilter(e.currentTarget.value))}>
-      <option value="">{verdi ? t('nyheter.filter.visAlle') : t('nyheter.filter.forside')}</option>
-      <optgroup label={t('nyheter.filter.hvem')}>
-        {typerMedKilder(kilder).map((ty) => (
-          <option key={ty} value={`type:${ty}`}>
-            {t(`nyheter.filter.${ty}`)}
-          </option>
-        ))}
-      </optgroup>
-      <optgroup label={t('nyheter.filter.kilde')}>
-        {kilder.map((k) => (
-          <option key={k.id} value={`kilde:${k.id}`}>
-            {k.navn[malform]}
-          </option>
-        ))}
-      </optgroup>
-    </select>
+    <span class="nyh-filterknapp">
+      <span class="nyh-filterknapp-tekst" aria-hidden="true">
+        <Ikon navn="filter" class="ikon-liten" />
+        <span>{valgt ?? t('nyheter.filter.knapp')}</span>
+        <Ikon navn="ned" class="ikon-liten" />
+      </span>
+      <select aria-label={t('nyheter.filter.forsideEtikett')} value={verdi} onChange={(e) => onEndring(lesForsidefilter(e.currentTarget.value))}>
+        <option value="">{verdi ? t('nyheter.filter.visAlle') : t('nyheter.filter.forside')}</option>
+        <optgroup label={t('nyheter.filter.hvem')}>
+          {typerMedKilder(kilder).map((ty) => (
+            <option key={ty} value={`type:${ty}`}>
+              {t(`nyheter.filter.${ty}`)}
+            </option>
+          ))}
+        </optgroup>
+        <optgroup label={t('nyheter.filter.kilde')}>
+          {kilder.map((k) => (
+            <option key={k.id} value={`kilde:${k.id}`}>
+              {k.navn[malform]}
+            </option>
+          ))}
+        </optgroup>
+      </select>
+    </span>
   );
 }
 
@@ -202,7 +214,7 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
       <div class="nyh-forside-topp">
         <Forsidefilter filter={filter} fylke={fylke} onEndring={settFilter} />
         <a class="nyh-forside-alle" href={`#${rute}`}>
-          {t('nyheter.alleKort')}
+          {t('nyheter.alle')}
           <Ikon navn="hoyre" class="ikon-liten" />
         </a>
       </div>

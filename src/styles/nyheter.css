@@ -101,26 +101,57 @@ button.nyh-sak {
   overflow: hidden;
 }
 
+/* Linjen med filteret og «Alle nyhetene»: lys flate og blå tekst, som «Hele kalenderen» (eier 07.10.2026). */
 .nyh-forside-topp {
   display: flex;
   flex: none;
   align-items: center;
+  justify-content: space-between;
   gap: var(--rom-3);
-  padding: var(--rom-3);
+  min-height: 2.75rem;
+  padding: var(--rom-1) var(--rom-3);
+  background: var(--farge-flate-2);
   border-bottom: var(--strek) solid var(--farge-linje);
 }
 
-/* Teksten står i nedtrekkslisten («Filtrer på …»). 16 px, så iOS ikke forstørrer siden når listen åpnes. */
-.nyh-forside-filter {
-  flex: 1;
+/* Den vanlige nedtrekkslisten ligger usynlig over teksten. 16 px, så iOS ikke forstørrer siden når den åpnes. */
+.nyh-filterknapp {
+  position: relative;
+  display: inline-flex;
+  min-width: 0;
+  border-radius: var(--radius-s);
+}
+
+.nyh-filterknapp:focus-within {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: 2px;
+}
+
+.nyh-filterknapp-tekst {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
   min-width: 0;
   min-height: 2.25rem;
-  padding: var(--rom-1) var(--rom-2);
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-s);
-  background: var(--farge-flate);
-  color: var(--farge-tekst);
+  color: var(--farge-lenke);
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.nyh-filterknapp-tekst > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nyh-filterknapp select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   font-size: max(16px, 1rem);
+  cursor: pointer;
 }
 
 .nyh-forside-alle {
@@ -132,6 +163,12 @@ button.nyh-sak {
   color: var(--farge-lenke);
   font-size: var(--str-s);
   font-weight: 600;
+  text-decoration: none;
+}
+
+.nyh-forside-alle:hover,
+.nyh-filterknapp:hover .nyh-filterknapp-tekst {
+  text-decoration: underline;
 }
 
 .nyh-forside-liste {

@@ -153,6 +153,28 @@ kilder:
     filter: alle
     ingress: true
 
+  # Forskning (K5 og K6, eier 07.10.2026). forskning.no har mye om barn og grunnskole, så saker om barn og foreldre
+  # tas bare med når de har et sterkt ord.
+  - id: forskning-no
+    navn: { nb: forskning.no, nn: forskning.no }
+    type: forskning
+    kilde: forskning-no-skole
+    format: rss
+    url: "https://www.forskning.no/tag/skole%20og%20utdanning?lab_viewport=rss"
+    filter: vgs
+    ingress: true
+    utelukker: [barn, foreldre]
+
+  - id: nifu
+    navn: { nb: NIFU, nn: NIFU }
+    type: forskning
+    merknad: { nb: Nordisk institutt for studier av innovasjon, forskning og utdanning, nn: Nordisk institutt for studiar av innovasjon, forsking og utdanning }
+    kilde: nifu-nyheter
+    format: rss
+    url: https://www.nifu.no/category/nyhet/feed/
+    filter: vgs
+    ingress: true
+
   - id: skolelederforbundet
     navn: { nb: Skolelederforbundet, nn: Skolelederforbundet }
     type: organisasjon
@@ -299,22 +321,21 @@ kilder:
 # vises ikke i appen. Rapporten viser om kilden svarer, hvor mange saker den har, og hva filteret ville tatt med, så
 # eier kan avgjøre om kilden skal med (K3, K5, K6 og K8, eier 07.10.2026). `streng`: bare sterke ord i tittelen.
 prove:
-  - { id: nrk-vestland-toppsaker, navn: NRK Vestland (toppsaker), url: https://www.nrk.no/vestland/toppsaker.rss, streng: true }
-  - { id: nrk-vestland-siste, navn: NRK Vestland (siste), url: https://www.nrk.no/vestland/siste.rss, streng: true }
-  - { id: nrk-innlandet-toppsaker, navn: NRK Innlandet (toppsaker), url: https://www.nrk.no/innlandet/toppsaker.rss, streng: true }
-  - { id: forskning-no, navn: forskning.no (alle), url: https://www.forskning.no/rss }
-  - { id: forskning-no-skole, navn: forskning.no (skole og utdanning), url: https://www.forskning.no/skole-og-utdanning?lab_viewport=rss }
-  - { id: forskning-no-tag, navn: forskning.no (taggen skole og utdanning), url: "https://www.forskning.no/tag/skole%20og%20utdanning?lab_viewport=rss" }
-  - { id: nifu-nyheter, navn: NIFU (nyheter), url: https://www.nifu.no/category/nyhet/feed/ }
-  - { id: nifu-alt, navn: NIFU (alt), url: https://www.nifu.no/feed/ }
   - { id: hkdir-rss, navn: HKdir (rss), url: https://hkdir.no/rss }
   - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
-  - { id: skolenes-uten-www, navn: Skolenes landsforbund (uten www), url: https://skolenes.no/feed/, alle: true }
+  # Fylkeskommunene (K4). ACOS-fylkene har en feed per nyhetskategori med 5–9 saker.
+  - { id: fk-akershus, navn: Akershus fylkeskommune, url: "https://afk.no/ArtikkelRSS.ashx?NyhetsKategoriId=22134&Spraak=Norsk" }
+  - { id: fk-buskerud, navn: Buskerud fylkeskommune, url: "https://bfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=21858&Spraak=Norsk" }
+  - { id: fk-innlandet, navn: Innlandet fylkeskommune (utdanning), url: "https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk", alle: true }
+  - { id: fk-agder, navn: Agder fylkeskommune, url: "https://agderfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
+  - { id: fk-rogaland, navn: Rogaland fylkeskommune, url: "https://www.rogfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
+  - { id: fk-more-og-romsdal, navn: Møre og Romsdal fylkeskommune, url: "https://mrfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=917&Spraak=Nynorsk" }
+  - { id: fk-nordland, navn: Nordland fylkeskommune, url: "https://www.nfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=367&Spraak=Norsk" }
+  - { id: fk-troms, navn: Troms fylkeskommune, url: "https://www.tromsfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
+  - { id: fk-finnmark, navn: Finnmark fylkeskommune, url: "https://www.ffk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk" }
 
 # Sider der prøvehentingen leter etter feeder (<link rel="alternate">) og leser robots.txt.
 oppdag:
   - https://hkdir.no/aktuelt
-  - https://hkdir.no/aktuelt/nyheter
-  - https://hkdir.no/nyheter
-  - https://www.nifu.no/nyheter/
-  - https://www.skolenes.no/
+  - https://afk.no/aktuelt/
+  - https://ostfoldfk.no/
