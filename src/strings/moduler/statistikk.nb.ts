@@ -108,12 +108,10 @@ export const statistikkNb = {
   },
   forside: {
     sammendrag: '{sokere} søkere · {laereplass} fikk læreplass',
-    sokere: 'Søkere {aar}',
-    laereplass: 'Fikk læreplass, desember {aar}',
-    plass: 'Nr. {plass} av {antall} fylker',
-    laereplassLandet: 'Av søkerne til læreplass',
-    elever: 'Elever {skolear}',
-    eleverUnder: 'På {skoler} skoler',
-    skoleUnder: 'Elever {skolear}',
+    stripe: 'Fikk læreplass i fylkene, desember {aar}.',
+    stripePlass: '{sted} er nr. {plass} av {antall}.',
+    stripeBeskrivelse: 'Andelen søkere som fikk læreplass i de {antall} fylkene, fra {min} til {maks}. Landet {landet}.',
+    skole: '{antall} elever på {skole}',
+    mer: 'Alle tallene i Videregående i tall',
   },
 };

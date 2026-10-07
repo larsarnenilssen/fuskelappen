@@ -9,7 +9,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Videregående i tall** (ny side): søkere per utdanningsprogram, fylkene side om side, læreplass fylke for fylke og gjennom høsten, gjennomføring, fag- og svennebrev, fravær og eksamen. Velg fylke eller hele landet. Tallene kommer fra Udirs statistikkbank og hentes hver uke.
   - Delene kan lukkes og viser en kort oppsummering når de er lukket. På mobil er de lukket fra start, unntatt gjennomføring og fravær.
   - Tabellen over fylkene kan sorteres på alle kolonnene. På mobil velger du hvilken kolonne som vises.
-- **Forsiden:** «Vestland i tall» (eller «Hele landet i tall») står i sidekolonnen under «Neste datoer», med søkerne, læreplassen, elevene og skolen du har valgt. På mobil er det en lukket rad øverst med søkerne og læreplassen. Den kan slås av og flyttes under «Tilpass». Videregående i tall står ikke lenger som boks under «Oppslag».
+- **Forsiden:** Kalenderen og tallene står i ett panel øverst, i sidekolonnen på stor skjerm. Du veksler mellom dem med en bryter over panelet, og under «Tilpass» velger du hvilke som er med. Er bare én med, står den uten bryter. Med «Bare favoritter» står de som er favoritter, hver for seg. Tallene viser fire nøkkeltall, fylket blant fylkene på læreplass og skolen du har valgt. Videregående i tall står ikke lenger som boks under «Oppslag». (Nyhetene kommer i samme panel i fase 7b.)
 - **Tallene der de hører hjemme:**
   - Fylkessiden: fire nøkkeltall og fylkets plass.
   - Inntak: søkerne.

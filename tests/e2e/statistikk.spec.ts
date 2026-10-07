@@ -54,34 +54,52 @@ test.describe('Videregående i tall', () => {
 });
 
 test.describe('Videregående i tall på forsiden', () => {
-  test('skrivebord: tallene for fylket i sidekolonnen, ikke under «Oppslag», og de kan slås av', async ({ page }, info) => {
+  test('skrivebord: «I tall» i panelet i sidekolonnen, ikke under «Oppslag», og panelet uten bryter med én visning', async ({ page }, info) => {
     test.skip(info.project.name.includes('mobil'), 'Sidekolonnen finnes bare på skrivebord.');
     await settLagret(page, { fylke: '46', skole: SLATTHAUG });
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('./');
-    const gruppe = page.locator('.forside-sidekolonne [data-gruppe="itall"]');
-    await expect(gruppe.getByRole('heading')).toContainText('Vestland i tall');
-    // Søkere, læreplass, elever, skolen og lenken til siden.
-    await expect(gruppe.locator('.st-forside > li')).toHaveCount(5);
-    await expect(gruppe).toContainText(SLATTHAUG.navn);
+    const panel = page.locator('.forside-sidekolonne .forsidepanel');
+    // Kalenderen er første visning. Valget av «I tall» huskes.
+    await expect(panel.locator('.kal-neste')).toBeVisible();
+    await panel.locator('.bryter-valg label', { hasText: 'I tall' }).click();
+    await expect(panel.getByRole('heading')).toContainText('Vestland i tall');
+    await expect(panel.locator('.st-fliser-kompakt > li')).toHaveCount(4);
+    await expect(panel.locator('.st-stripe-prikk')).toHaveCount(15);
+    await expect(panel).toContainText(SLATTHAUG.navn);
     await expect(page.locator('[data-kategori="felles"]')).not.toContainText('Videregående i tall');
-    await gruppe.getByRole('link', { name: 'Videregående i tall' }).click();
+    await page.reload();
+    await expect(panel.locator('.st-forside')).toBeVisible();
+    await panel.getByRole('link', { name: 'Alle tallene i Videregående i tall' }).click();
     await expect(page).toHaveURL(/#\/statistikk\?fylke=46$/);
+    // Med bare kalenderen igjen står den som en vanlig gruppe, uten bryter.
     await page.goto('./');
     await page.getByRole('button', { name: 'Tilpass' }).click();
-    await page.getByLabel('Vis «Videregående i tall» på forsiden').uncheck();
+    await page.getByLabel('Videregående i tall', { exact: true }).uncheck();
+    await page.getByLabel('Nyheter', { exact: true }).uncheck();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(page.locator('[data-gruppe="itall"]')).toHaveCount(0);
+    await expect(page.locator('.forsidepanel')).toHaveCount(0);
+    await expect(page.locator('.forside-sidekolonne [data-gruppe="neste"]')).toBeVisible();
   });
 
-  test('@mobil lukket med søkerne og læreplassen, og åpnes med et trykk', async ({ page }, info) => {
-    test.skip(!info.project.name.includes('mobil'), 'Gruppen er lukket fra start bare på mobil.');
+  test('«Bare favoritter»: kalenderen og Videregående i tall som favoritter står som hver sin gruppe', async ({ page }) => {
+    await settLagret(page, { fylke: '46', favoritter: ['kalender:oversikt', 'statistikk:oversikt'] });
+    await page.goto('./');
+    await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
+    await expect(page.locator('.forsidepanel')).toHaveCount(0);
+    await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(1);
+    await expect(page.locator('[data-gruppe="itall"]')).toHaveCount(1);
+  });
+
+  test('@mobil «I tall» øverst: lukket med søkerne og læreplassen, og åpnes med et trykk', async ({ page }, info) => {
+    test.skip(!info.project.name.includes('mobil'), 'Panelet er lukket fra start bare på mobil.');
     await settLagret(page, { fylke: '46' });
     await page.goto('./');
-    const gruppe = page.locator('[data-gruppe="itall"]');
-    await expect(gruppe.locator('.gruppe-sammendrag')).toContainText(/søkere · .* fikk læreplass/);
-    await gruppe.locator('.gruppeknapp').click();
-    await expect(gruppe.locator('.st-forside > li')).toHaveCount(4);
+    const panel = page.locator('.forsidepanel');
+    await panel.locator('.bryter-valg label', { hasText: 'I tall' }).click();
+    await expect(panel.locator('.gruppe-sammendrag')).toContainText(/søkere · .* fikk læreplass/);
+    await panel.locator('.gruppeknapp').click();
+    await expect(panel.locator('.st-fliser-kompakt > li')).toHaveCount(4);
   });
 });
 

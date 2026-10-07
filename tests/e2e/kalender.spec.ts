@@ -70,10 +70,11 @@ test.describe('kalenderen', () => {
 });
 
 test.describe('«Neste datoer» på forsiden', () => {
-  test('@mobil lukket med neste dato, åpnes, og kan slås av under «Tilpass»', async ({ page }, info) => {
-    test.skip(!info.project.name.includes('mobil'), 'Gruppen er lukket fra start bare på mobil.');
+  test('@mobil kalenderen er første visning i panelet, lukket med neste dato, og kan tas ut under «Tilpass»', async ({ page }, info) => {
+    test.skip(!info.project.name.includes('mobil'), 'Panelet er lukket fra start bare på mobil.');
     await page.goto('./');
-    const gruppe = page.locator('[data-gruppe="neste"]');
+    const panel = page.locator('.forsidepanel');
+    const gruppe = panel.locator('[data-gruppe="panel"]');
     await expect(gruppe.locator('.gruppe-sammendrag')).toContainText(':');
     await gruppe.locator('.gruppeknapp').click();
     await expect(gruppe.locator('.kal-neste > li')).toHaveCount(4);
@@ -81,8 +82,9 @@ test.describe('«Neste datoer» på forsiden', () => {
     await expect(page).toHaveURL(/#\/kalender$/);
     await page.goto('./');
     await page.getByRole('button', { name: 'Tilpass' }).click();
-    await page.getByLabel('Vis «Neste datoer» på forsiden').uncheck();
+    await page.getByLabel('Neste datoer fra kalenderen').uncheck();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(0);
+    await expect(page.locator('.kal-neste')).toHaveCount(0);
+    await expect(panel.locator('.bryter-valg label', { hasText: 'Kalender' })).toHaveCount(0);
   });
 });

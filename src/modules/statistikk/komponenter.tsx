@@ -345,81 +345,93 @@ export function forsideSammendrag(t: T, d: Statistikk, enhet: string): string {
 }
 
 /**
- * Tallene på forsiden (eier 07.10.2026): søkere, læreplass og elever for fylket (eller landet), og elevene på skolen
- * brukeren har valgt. Radene ser ut som «Neste datoer», med tallet der datoen står, og den siste raden går til
- * Videregående i tall.
+ * Tallene på forsiden, i panelet øverst (eier 07.10.2026, avgjørelse 081). Et annet oppsett enn datoene:
+ * - fire fliser med søkere, elever, læreplass og lærekontrakter
+ * - en stripe der hvert fylke er en prikk etter andelen som fikk læreplass, med fylket brukeren har valgt i
+ *   seriefargen og landet som en stiplet strek. Prikkene er plassert, ikke stolper, så skalaen trenger ikke starte på null.
+ * - elevtallet på skolen brukeren har valgt, og lenken til Videregående i tall
  */
 export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string; skole: { orgnr: string; navn: string } | null }) {
   const { t } = useTekst();
   const fylke = enhet === 'L' ? null : enhet.slice(1);
-  const lenke = statistikkLenke(fylke);
-  const iLandet = (v: Verdi, form: 'antall' | 'prosent' = 'antall') => (enhet === 'L' ? null : t('statistikk.landetVerdi', { verdi: tekstFor(t, v, form) }));
-  const deler = (...x: (string | null)[]) => x.filter(Boolean).join(' · ');
   const sok = d.sokere.alle[enhet];
-  const rangert = ranger(d, sisteFor(d.formidling.desember));
-  const plass = rangert.find((r) => r.enhet === enhet);
   const skoler = sisteVerdi(d.elever.skoler[enhet]);
-  const skolear = (d.elever.skolear.at(-1) ?? '').replace('-', '–');
+  const desember = sisteFor(d.formidling.desember);
+  const rangert = ranger(d, desember);
+  const plass = rangert.find((r) => r.enhet === enhet);
+  const landet = desember.L;
+  const aarFo = String(d.formidling.aar.at(-1) ?? '');
+  // Skalaen går fra femmeren under det laveste fylket til femmeren over det høyeste.
+  const verdier = rangert.map((r) => r.verdi);
+  const min = Math.floor(Math.min(...verdier) / 5) * 5;
+  const maks = Math.ceil(Math.max(...verdier) / 5) * 5;
+  const pos = (v: number) => `${((v - min) / Math.max(1, maks - min)) * 100}%`;
+  const prosent = (v: number) => tekstFor(t, v, 'prosent');
   const skolensElever = skole ? d.elever.elever[`S${skole.orgnr}`] : undefined;
-  const rader = [
-    {
-      tall: tekstFor(t, sisteVerdi(sok)),
-      tittel: t('statistikk.forside.sokere', { aar: String(d.sokere.aar.at(-1) ?? '') }),
-      under: deler(endringTekst(t, sisteVerdi(sok), forrigeVerdi(sok), d.sokere.aar.at(-2) ?? ''), iLandet(sisteVerdi(d.sokere.alle.L))),
-      href: lenke,
-    },
-    {
-      tall: tekstFor(t, sisteVerdi(d.formidling.desember[enhet]), 'prosent'),
-      tittel: t('statistikk.forside.laereplass', { aar: String(d.formidling.aar.at(-1) ?? '') }),
-      under: enhet === 'L' ? t('statistikk.forside.laereplassLandet') : deler(plass ? t('statistikk.forside.plass', { plass: String(plass.plass), antall: String(rangert.length) }) : null, iLandet(sisteVerdi(d.formidling.desember.L), 'prosent')),
-      href: lenke,
-    },
-    {
-      tall: tekstFor(t, sisteVerdi(d.elever.elever[enhet])),
-      tittel: t('statistikk.forside.elever', { skolear }),
-      under: deler(typeof skoler === 'number' ? t('statistikk.forside.eleverUnder', { skoler: formaterTall(skoler, 0) }) : null, iLandet(sisteVerdi(d.elever.elever.L))),
-      href: lenke,
-    },
-    // Skolen brukeren har valgt, med lenke til skolen i Skoler og tilbud.
-    ...(skole && skolensElever
-      ? [
-          {
-            tall: tekstFor(t, sisteVerdi(skolensElever)),
-            tittel: skole.navn,
-            under: deler(t('statistikk.forside.skoleUnder', { skolear }), endringTekst(t, sisteVerdi(skolensElever), forrigeVerdi(skolensElever), (d.elever.skolear.at(-2) ?? '').replace('-', '–'))),
-            href: `#/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(skole.navn)}`,
-          },
-        ]
-      : []),
-  ];
   return (
-    <ul class="liste kal-neste st-forside">
-      {rader.map((r) => (
-        <li key={r.tittel}>
-          <a class="listelenke" href={r.href}>
-            <span class="kal-neste-dato" aria-hidden="true">
-              {r.tall}
-            </span>
-            <span class="listelenke-tekst">
-              <span class="skjult-visuelt">{r.tall}: </span>
-              <span class="listelenke-tittel">{r.tittel}</span>
-              {r.under && <span class="listelenke-under">{r.under}</span>}
-            </span>
-            <Ikon navn="hoyre" class="ikon-liten" />
-          </a>
-        </li>
-      ))}
-      <li>
-        <a class="listelenke kal-neste-alle" href={lenke}>
-          <span class="kal-neste-dato" aria-hidden="true">
-            <Ikon navn="sammenlign" />
-          </span>
-          <span class="listelenke-tekst">
-            <span class="listelenke-tittel">{t('statistikk.tittel')}</span>
-          </span>
+    <div class="st-forside">
+      <ul class="st-fliser st-fliser-kompakt">
+        <Flis etikett={t('statistikk.nokkeltall.sokere', { aar: String(d.sokere.aar.at(-1) ?? '') })} verdi={tekstFor(t, sisteVerdi(sok))} under={endringTekst(t, sisteVerdi(sok), forrigeVerdi(sok), d.sokere.aar.at(-2) ?? '') ?? ''} />
+        <Flis
+          etikett={t('statistikk.nokkeltall.elever', { skolear: (d.elever.skolear.at(-1) ?? '').replace('-', '–') })}
+          verdi={tekstFor(t, sisteVerdi(d.elever.elever[enhet]))}
+          under={typeof skoler === 'number' ? t('statistikk.nokkeltall.eleverUnder', { skoler: formaterTall(skoler, 0) }) : ''}
+        />
+        <Flis etikett={t('statistikk.nokkeltall.laereplass')} verdi={tekstFor(t, sisteVerdi(d.formidling.desember[enhet]), 'prosent')} under={enhet === 'L' ? t('statistikk.nokkeltall.laereplassUnder', { aar: aarFo }) : t('statistikk.landetVerdi', { verdi: tekstFor(t, landet ?? null, 'prosent') })} />
+        <Flis etikett={t('statistikk.nokkeltall.kontrakter')} verdi={tekstFor(t, sisteVerdi(d.laerekontrakter.verdier[enhet]))} under={t('statistikk.nokkeltall.kontrakterUnder', { aar: String(d.laerekontrakter.aar.at(-1) ?? '') })} />
+      </ul>
+      {rangert.length > 0 && (
+        <figure class="st-stripe-figur">
+          <figcaption class="st-figur-tekst">
+            {t('statistikk.forside.stripe', { aar: aarFo })}
+            {plass && ` ${t('statistikk.forside.stripePlass', { sted: plass.navn, plass: String(plass.plass), antall: String(rangert.length) })}`}
+          </figcaption>
+          <div
+            class="st-stripe"
+            role="img"
+            aria-label={t('statistikk.forside.stripeBeskrivelse', { antall: String(rangert.length), min: prosent(Math.min(...verdier)), maks: prosent(Math.max(...verdier)), landet: tekstFor(t, landet ?? null, 'prosent') })}
+          >
+            {typeof landet === 'number' && <span class="st-stripe-landet" style={{ left: pos(landet) }} />}
+            {/* Det valgte fylket tegnes sist, så prikken står over de andre. */}
+            {[...rangert.filter((r) => r.enhet !== enhet), ...rangert.filter((r) => r.enhet === enhet)].map((r) => (
+              <span key={r.enhet} class={r.enhet === enhet ? 'st-stripe-prikk st-valgt' : 'st-stripe-prikk'} style={{ left: pos(r.verdi) }} title={`${r.navn}: ${prosent(r.verdi)}`} />
+            ))}
+          </div>
+          <div class="st-stripe-skala" aria-hidden="true">
+            <span>{prosent(min)}</span>
+            <span>{prosent(maks)}</span>
+          </div>
+          {/* Forklaringen: fylket er den blå prikken og landet streken, med tallene, så fargen ikke står alene. */}
+          <p class="st-stripe-forklaring" aria-hidden="true">
+            {plass && (
+              <span>
+                <span class="st-stripe-merke st-valgt" />
+                {plass.navn} {prosent(plass.verdi)}
+              </span>
+            )}
+            {typeof landet === 'number' && (
+              <span>
+                <span class="st-stripe-merke-landet" />
+                {t('statistikk.rangering.landet', { verdi: prosent(landet) })}
+              </span>
+            )}
+          </p>
+        </figure>
+      )}
+      {skole && skolensElever && (
+        <a class="st-forside-skole" href={`#/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(skole.navn)}`}>
+          <Ikon navn="skole" class="ikon-liten" />
+          <span>{t('statistikk.forside.skole', { antall: tekstFor(t, sisteVerdi(skolensElever)), skole: skole.navn })}</span>
           <Ikon navn="hoyre" class="ikon-liten" />
         </a>
-      </li>
-    </ul>
+      )}
+      <a class="listelenke st-forside-mer" href={statistikkLenke(fylke)}>
+        <Ikon navn="sammenlign" />
+        <span class="listelenke-tekst">
+          <span class="listelenke-tittel">{t('statistikk.forside.mer')}</span>
+        </span>
+        <Ikon navn="hoyre" class="ikon-liten" />
+      </a>
+    </div>
   );
 }

@@ -23,6 +23,6 @@
   - Tabeller for oversikten.
   - Visningslogikken er rene funksjoner i `src/modules/statistikk/visning.ts`.
 
-- **Forsiden** (eier 07.10.2026): Videregående i tall er en annen type modul enn de andre og står ikke som boks under «Oppslag» (`paaForsiden: false` i manifestet). Tallene står i stedet som en egen gruppe, «Vestland i tall», i sidekolonnen under «Neste datoer», bygd som den. På mobil er gruppen lukket, med søkerne og læreplassen i overskriften. Den kan flyttes og slås av under «Tilpass».
+- **Forsiden** (eier 07.10.2026): Videregående i tall er en annen type modul enn de andre og står ikke som boks under «Oppslag» (`paaForsiden: false` i manifestet). Tallene er en visning i panelet øverst på forsiden, sammen med kalenderen og nyhetene (avgjørelse 081).
 
 **Konsekvens:** Rapport-API-et er ikke dokumentert og kan endres. Da stopper hentingen, appen viser de forrige tallene, og skriptet må rettes. Boksene i de andre modulene og siden «Videregående i tall» er skisser til eier har godkjent dem (07.10.2026).

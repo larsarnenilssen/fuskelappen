@@ -9,42 +9,21 @@ import { Ikon } from '../../components/Ikon.tsx';
 import { Sorterbar } from '../../components/Sorterbar.tsx';
 import { visTekst } from '../../core/i18n/tekst.ts';
 import { flytt, flyttInnenfor, modulForFavoritt, ordneGrupper } from '../../core/forside/ordning.ts';
-import { oversiktsid } from '../../modules/favoritter.ts';
 import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
 import { Favorittliste, useFavorittbare } from '../Favorittliste.tsx';
+import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from '../Forsidegruppe.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
-import { fylkesnavn, Stedmerknad } from '../Stedmerknad.tsx';
-import { iDag } from '../../data/skolear.ts';
-import { kortManed } from '../../core/tidslinje.ts';
-import { kalenderRute } from '../../modules/kalender/adresse.ts';
-import type { Kalenderpost } from '../../modules/kalender/beregning/kalender.ts';
-import { datoKort } from '../../modules/kalender/visning.ts';
-import { ForsideTall, forsideSammendrag, useStatistikk } from '../../modules/statistikk/komponenter.tsx';
-import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe, vekslSkjultGruppe } from '../tilstand.ts';
+import { Forsidepanel, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
+import { Stedmerknad } from '../Stedmerknad.tsx';
+import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
-/** Gruppen med de tre neste datoene fra kalenderen (forslag D, eier 05.10.2026, avgjørelse 066). */
-const NESTE = 'neste';
-/**
- * Gruppen med nøkkeltallene fra Videregående i tall, «Vestland i tall» (eier 07.10.2026, avgjørelse 080). Står i
- * sidekolonnen under «Neste datoer», lukket på mobil, og kan slås av under «Tilpass» som «Neste datoer».
- */
-const ITALL = 'itall';
-/** Videregående i tall som favoritt. Med «Bare favoritter» vises den som gruppen med tallene, som kalenderen. */
-const STATISTIKK_FAVORITT = oversiktsid('statistikk');
-/** Kalenderen som favoritt. Med «Bare favoritter» vises den som «Neste datoer», ikke som et kort (eier 05.10.2026). */
-const KALENDER_FAVORITT = oversiktsid('kalender');
 
 /** Sidekolonnen på skrivebord kan slås av. Valget lagres i `skjult`, som gruppene (eier 05.10.2026). */
 const SIDEKOLONNE = 'sidekolonne';
-/**
- * Fra denne bredden (rem) står «Neste datoer» og favorittene i en sidekolonne like bred som hovedkolonnen: halv skjerm
- * på en 15" laptop med 1440 px eller mer (eier 05.10.2026). Smalere står alt i én kolonne, som på mobil.
- */
-const SIDEKOLONNE_FRA = 44;
 
 /** Den grafiske skyvebryteren som slår sidekolonnen av og på. `kort`: uten synlig etikett (i den smale skinnen). */
 function Sidekolonnebryter({ pa, kort = false }: { pa: boolean; kort?: boolean }) {
@@ -132,81 +111,6 @@ function Sidekolonne({ children }: { children: ComponentChildren }) {
   );
 }
 
-/** Hvor lenge åpning og lukking tar. Samme som --varighet-lang i tokens.css. */
-const ANIMASJON_MS = 220;
-
-/**
- * En gruppe med overskrift som åpner og lukker den, med en myk animasjon (ikke ved redusert bevegelse). Lukket viser
- * overskriften hva som er inni (`sammendrag`). `verktoy` (blyanten for favorittene) står i overskriften ved siden av
- * pilen, som egen knapp oppå raden, så resten av raden fortsatt åpner og lukker gruppen (eier 04.10.2026).
- */
-function Gruppe({
-  id,
-  tittel,
-  sammendrag,
-  kategori,
-  lukket,
-  verktoy,
-  onVeksle,
-  children,
-}: {
-  id: string;
-  tittel: string;
-  sammendrag: string;
-  kategori?: string;
-  lukket: boolean;
-  verktoy?: ComponentChildren;
-  /** Uten: gruppen åpnes og lukkes med vekslGruppe. */
-  onVeksle?: () => void;
-  children: ComponentChildren;
-}) {
-  const innhold = `forside-gruppe-${id}`;
-  // Innholdet er i DOM-en (vis) til lukkingen er ferdig animert, og utvidet når det skal ha full høyde.
-  const [vis, settVis] = useState(!lukket);
-  const [utvidet, settUtvidet] = useState(!lukket);
-  const [animerer, settAnimerer] = useState(false);
-  const forste = useRef(true);
-  useEffect(() => {
-    if (forste.current) {
-      forste.current = false;
-      return;
-    }
-    const rolig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    settAnimerer(!rolig);
-    let ramme = 0;
-    if (lukket) settUtvidet(false);
-    else {
-      settVis(true);
-      ramme = requestAnimationFrame(() => requestAnimationFrame(() => settUtvidet(true)));
-    }
-    const ferdig = setTimeout(() => {
-      if (lukket) settVis(false);
-      settAnimerer(false);
-    }, rolig ? 0 : ANIMASJON_MS);
-    return () => {
-      cancelAnimationFrame(ramme);
-      clearTimeout(ferdig);
-    };
-  }, [lukket]);
-  return (
-    <section class="kategori forsidegruppe" data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
-      <h2 id={`${innhold}-tittel`} class={verktoy && !lukket ? 'med-verktoy' : undefined}>
-        <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={onVeksle ?? (() => vekslGruppe(id))}>
-          <span class="gruppeknapp-tekst">
-            <span>{tittel}</span>
-            {lukket && <span class="gruppe-sammendrag">{sammendrag}</span>}
-          </span>
-          <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
-        </button>
-        {!lukket && verktoy}
-      </h2>
-      <div id={innhold} class={`gruppe-innhold${utvidet ? ' utvidet' : ''}${animerer ? ' animerer' : ''}`} hidden={!vis}>
-        <div class="gruppe-innhold-indre">{children}</div>
-      </div>
-    </section>
-  );
-}
-
 /** Blyanten for å sortere favorittene i en gruppe, og haken for å avslutte. */
 function Endreknapp({ endre, onEndre, gruppe }: { endre: boolean; onEndre: () => void; gruppe: string }) {
   const { t } = useTekst();
@@ -276,7 +180,7 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
 function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; kolonnePa: boolean }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
-  const iKolonnen = (id: string) => id === NESTE || id === ITALL || id === FAVORITTER;
+  const iKolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sorterbar = (utvalg: string[], etikett: string) => (
     <Sorterbar
       etikett={etikett}
@@ -284,17 +188,18 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
       onFlytt={(fra, til) => settGrupperekkefolge(utvalg.length === grupper.length ? flytt(grupper, fra, til) : flyttInnenfor(grupper, utvalg, fra, til))}
     />
   );
-  const visNeste = (
-    <label class="avkrysning tilpass-neste">
-      <input type="checkbox" checked={!(forside.skjult ?? []).includes(NESTE)} onChange={() => vekslSkjultGruppe(NESTE)} />
-      {t('forside.tilpass.visNeste')}
-    </label>
-  );
-  const visITall = (
-    <label class="avkrysning tilpass-neste">
-      <input type="checkbox" checked={!(forside.skjult ?? []).includes(ITALL)} onChange={() => vekslSkjultGruppe(ITALL)} />
-      {t('forside.tilpass.visITall')}
-    </label>
+  // Visningene i panelet øverst (avgjørelse 081): brukeren velger hvilke som er med.
+  const visninger = (
+    <fieldset class="tilpass-visninger">
+      <legend class="tilpass-del">{t('forside.tilpass.visninger')}</legend>
+      <p class="dempet liten">{t('forside.tilpass.visningerHjelp')}</p>
+      {VISNINGER.map((v) => (
+        <label key={v.id} class="avkrysning tilpass-neste">
+          <input type="checkbox" checked={!(forside.skjult ?? []).includes(v.id)} onChange={() => vekslSkjultGruppe(v.id)} />
+          {t(`forside.tilpass.visning.${v.id}`)}
+        </label>
+      ))}
+    </fieldset>
   );
   return (
     <section class="tilpasning" aria-labelledby="tilpass-tittel">
@@ -310,14 +215,12 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
           <p class="dempet liten">{t('forside.tilpass.sidekolonneHjelp')}</p>
           <Sidekolonnebryter pa={kolonnePa} />
           {sorterbar(grupper.filter(iKolonnen), t('forside.tilpass.sidekolonne'))}
-          {visNeste}
-          {visITall}
+          {visninger}
         </>
       ) : (
         <>
           {sorterbar(grupper, t('forside.tilpass.grupper'))}
-          {visNeste}
-          {visITall}
+          {visninger}
         </>
       )}
       <button type="button" class="knapp knapp-sekundaer" onClick={nullstillForside}>
@@ -325,20 +228,6 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
       </button>
     </section>
   );
-}
-
-/** Sant når skjermen er minst så bred, og oppdateres når bredden endres. */
-function useMinstBredde(rem: number): boolean {
-  const sporring = `(min-width: ${rem}rem)`;
-  const [treff, settTreff] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia(sporring).matches);
-  useEffect(() => {
-    if (!window.matchMedia) return;
-    const mq = window.matchMedia(sporring);
-    const lytt = () => settTreff(mq.matches);
-    mq.addEventListener('change', lytt);
-    return () => mq.removeEventListener('change', lytt);
-  }, [sporring]);
-  return treff;
 }
 
 export default function Forside() {
@@ -364,12 +253,11 @@ export default function Forside() {
     };
   }, []);
   const kategorier = kategorierMedModuler();
-  const grupper = ordneGrupper([NESTE, ITALL, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
+  const grupper = ordneGrupper([PANEL, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
   const kategoriForModul = new Map(kategorier.flatMap((k) => k.moduler.map((m) => [m.id, k.id] as const)));
   const navn = (id: string) => {
     const k = kategorier.find((x) => x.id === id);
-    if (id === NESTE) return t('kalender.neste');
-    if (id === ITALL) return t('moduler.statistikk.navn');
+    if (id === PANEL) return t(VISNINGER.length > 2 ? 'forside.panel.navnMedNyheter' : 'forside.panel.navn');
     return k ? t(k.navn) : t('forside.favoritter');
   };
   const bare = forside.bareFavoritter;
@@ -382,20 +270,20 @@ export default function Forside() {
   const endreknapp = (id: string, antall: number) =>
     antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
 
-  const kalenderFavoritt = favoritter.includes(KALENDER_FAVORITT);
-  const visNesteSomFavoritt = kalenderFavoritt && !(forside.skjult ?? []).includes(NESTE);
-  const statistikkFavoritt = favoritter.includes(STATISTIKK_FAVORITT);
-  const iSidekolonnen = (id: string) => id === NESTE || id === ITALL || id === FAVORITTER;
+  // Visningene i panelet som brukeren har slått på (avgjørelse 081). Med «Bare favoritter» står de som er favoritter,
+  // hver for seg, i stedet for kortene sine.
+  const skjult = forside.skjult ?? [];
+  const paa = VISNINGER.filter((v) => !skjult.includes(v.id));
+  const somFavoritt = paa.filter((v) => v.favoritt !== null && favoritter.includes(v.favoritt));
+  const visesSomVisning = (f: string) => somFavoritt.some((v) => v.favoritt === f);
+  const iSidekolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sidegrupper = grupper.filter(iSidekolonnen);
   const hovedgrupper = grupper.filter((id) => !iSidekolonnen(id));
 
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
-    // Med «Bare favoritter» står «Neste datoer» bare når kalenderen er favoritt, og da i stedet for kalenderens eget kort
-    // (eier 05.10.2026).
-    if (id === NESTE) return (bare && !kalenderFavoritt) || (forside.skjult ?? []).includes(NESTE) ? null : <NesteDatoer key={id} />;
-    // Tallene: med «Bare favoritter» bare når Videregående i tall er favoritt, som «Neste datoer».
-    if (id === ITALL) return (bare && !statistikkFavoritt) || (forside.skjult ?? []).includes(ITALL) ? null : <ITall key={id} />;
+    // Panelet øverst. Med «Bare favoritter» står visningene som er favoritter, hver som sin egen gruppe (eier 07.10.2026).
+    if (id === PANEL) return bare ? somFavoritt.map((v) => <Visningsgruppe key={v.id} id={v.id} />) : <Forsidepanel key={id} visninger={paa.map((v) => v.id)} />;
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
@@ -407,7 +295,7 @@ export default function Forside() {
     const k = kategorier.find((x) => x.id === id);
     if (!k) return null;
     if (bare) {
-      const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id && !(f === KALENDER_FAVORITT && visNesteSomFavoritt));
+      const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id && !visesSomVisning(f));
       if (ider.length === 0) return null;
       return (
         <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} sammendrag={antallFavoritter(ider.length)} lukket={lukket} verktoy={endreknapp(id, ider.length)}>
@@ -486,25 +374,42 @@ export default function Forside() {
                   <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
                   <div class="forside-sidekolonne forside-skinnen">
                     <Sidekolonnebryter pa={false} kort />
-                    {sidegrupper
-                      .filter((id) => id === FAVORITTER || !(forside.skjult ?? []).includes(id))
-                      .map((id) => (
-                        <button
-                          key={id}
-                          type="button"
-                          class="ikonknapp skinne-knapp"
-                          aria-label={id !== FAVORITTER ? t('forside.visISidekolonne', { gruppe: navn(id) }) : `${t('forside.visISidekolonne', { gruppe: navn(id) })}, ${antallFavoritter(favoritter.length)}`}
-                          title={navn(id)}
-                          onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}
-                        >
-                          <Ikon navn={id === NESTE ? 'kalender' : id === ITALL ? 'sammenlign' : 'stjerne'} />
-                          {id === FAVORITTER && favoritter.length > 0 && (
-                            <span class="skinne-tall tall" aria-hidden="true">
-                              {favoritter.length}
-                            </span>
-                          )}
-                        </button>
-                      ))}
+                    {/* Én knapp for hver visning i panelet, som åpner kolonnen med den visningen, og én for favorittene. */}
+                    {sidegrupper.flatMap((id) =>
+                      id === PANEL
+                        ? paa.map((v) => (
+                            <button
+                              key={v.id}
+                              type="button"
+                              class="ikonknapp skinne-knapp"
+                              aria-label={t('forside.visISidekolonne', { gruppe: t(`forside.panel.${v.id}`) })}
+                              title={t(`forside.panel.${v.id}`)}
+                              onClick={() => {
+                                settForsidevisning(v.id);
+                                vekslSkjultGruppe(SIDEKOLONNE);
+                              }}
+                            >
+                              <Ikon navn={v.ikon} />
+                            </button>
+                          ))
+                        : [
+                            <button
+                              key={id}
+                              type="button"
+                              class="ikonknapp skinne-knapp"
+                              aria-label={`${t('forside.visISidekolonne', { gruppe: navn(id) })}, ${antallFavoritter(favoritter.length)}`}
+                              title={navn(id)}
+                              onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}
+                            >
+                              <Ikon navn="stjerne" />
+                              {favoritter.length > 0 && (
+                                <span class="skinne-tall tall" aria-hidden="true">
+                                  {favoritter.length}
+                                </span>
+                              )}
+                            </button>,
+                          ],
+                    )}
                   </div>
                 </div>
               )}
@@ -520,103 +425,5 @@ export default function Forside() {
         </>
       )}
     </div>
-  );
-}
-
-/**
- * Gruppen «Neste datoer»: de tre neste datoene fra kalenderen. Lukket fra start på mobil, der overskriften viser den
- * neste datoen, og åpen på stor skjerm (forslag D, avgjørelse 066). Datoene lastes etter at forsiden er tegnet.
- */
-function NesteDatoer() {
-  const { t, malform } = useTekst();
-  const { innstillinger, forside } = useTilstand();
-  const [poster, settPoster] = useState<Kalenderpost[] | null>(null);
-  const [stor, settStor] = useState(() => typeof window !== 'undefined' && !!window.matchMedia && window.matchMedia(`(min-width: ${SIDEKOLONNE_FRA}rem)`).matches);
-  const fylke = innstillinger.fylke;
-  const skole = innstillinger.skole?.id ?? null;
-  useEffect(() => {
-    let aktiv = true;
-    void import('../../modules/kalender/neste.ts')
-      .then((m) => m.hentNeste({ fylke, skole }, iDag()))
-      .then((p) => aktiv && settPoster(p))
-      .catch(() => aktiv && settPoster([]));
-    return () => {
-      aktiv = false;
-    };
-  }, [fylke, skole]);
-  useEffect(() => {
-    if (!window.matchMedia) return;
-    const mq = window.matchMedia(`(min-width: ${SIDEKOLONNE_FRA}rem)`);
-    const lytt = () => settStor(mq.matches);
-    mq.addEventListener('change', lytt);
-    return () => mq.removeEventListener('change', lytt);
-  }, []);
-  const lukket = forside.lukket.includes(NESTE) || (!stor && !(forside.apnet ?? []).includes(NESTE));
-  const forste = poster?.[0];
-  const sammendrag = forste?.fra ? t('kalender.nesteSammendrag', { dato: datoKort(forste.fra, forste.til, malform), tittel: forste.oppforing.tittel[malform] }) : poster ? t('kalender.ingenNeste') : t('app.lasterInn');
-  return (
-    <Gruppe id={NESTE} tittel={t('kalender.neste')} sammendrag={sammendrag} lukket={lukket} onVeksle={() => vekslGruppe(NESTE, lukket)}>
-      <ul class="liste kal-neste">
-        {poster === null && <li class="dempet">{t('app.lasterInn')}</li>}
-        {poster?.length === 0 && <li class="dempet">{t('kalender.ingenNeste')}</li>}
-        {poster?.map((p) => {
-          const fra = p.fra as string;
-          const til = p.til && p.til !== fra ? p.til : undefined;
-          const sted = p.oppforing.fylke ? fylkesnavn(p.oppforing.fylke) : null;
-          return (
-            <li key={p.nokkel}>
-              <a class="listelenke" href={`#${kalenderRute}`}>
-                {/* Datoen på én linje: «5.–9. okt» (eier 05.10.2026). */}
-                <span class="kal-neste-dato" aria-hidden="true">
-                  {til && fra.slice(0, 7) === til.slice(0, 7) ? `${Number(fra.slice(8, 10))}.–${Number(til.slice(8, 10))}.` : `${Number(fra.slice(8, 10))}.`}
-                  <small>{kortManed(Number(fra.slice(5, 7)), malform)}</small>
-                </span>
-                <span class="listelenke-tekst">
-                  <span class="skjult-visuelt">{datoKort(fra, til, malform)}: </span>
-                  <span class="listelenke-tittel">{p.oppforing.tittel[malform]}</span>
-                  <span class="listelenke-under">{[...p.oppforing.tema.map((tema) => t(`kalender.temaer.${tema}`)), sted].filter(Boolean).join(' · ')}</span>
-                </span>
-                <Ikon navn="hoyre" class="ikon-liten" />
-              </a>
-            </li>
-          );
-        })}
-        <li>
-          <a class="listelenke kal-neste-alle" href={`#${kalenderRute}`}>
-            <span class="kal-neste-dato" aria-hidden="true">
-              <Ikon navn="kalender" />
-            </span>
-            <span class="listelenke-tekst">
-              <span class="listelenke-tittel">{t('kalender.heleKalenderen')}</span>
-            </span>
-            <Ikon navn="hoyre" class="ikon-liten" />
-          </a>
-        </li>
-      </ul>
-    </Gruppe>
-  );
-}
-
-/**
- * Gruppen med tallene fra Videregående i tall (eier 07.10.2026, avgjørelse 080): «Vestland i tall» for fylket brukeren
- * har valgt, ellers «Hele landet i tall». Lukket fra start på mobil, der overskriften viser søkerne og læreplassen, og
- * åpen på stor skjerm, som «Neste datoer». Tallene lastes etter at forsiden er tegnet.
- */
-function ITall() {
-  const { t } = useTekst();
-  const { innstillinger, forside } = useTilstand();
-  const d = useStatistikk();
-  const stor = useMinstBredde(SIDEKOLONNE_FRA);
-  const fylke = innstillinger.fylke;
-  // Uten tall (feil ved lasting) står ikke gruppen på forsiden.
-  if (d === 'feil') return null;
-  const enhet = d && fylke && d.enheter[`F${fylke}`] ? `F${fylke}` : 'L';
-  const sted = enhet === 'L' ? t('statistikk.landet') : (fylkesnavn(fylke) ?? t('statistikk.landet'));
-  const lukket = forside.lukket.includes(ITALL) || (!stor && !(forside.apnet ?? []).includes(ITALL));
-  const skole = innstillinger.skole?.id ? { orgnr: innstillinger.skole.id, navn: innstillinger.skole.navn } : null;
-  return (
-    <Gruppe id={ITALL} tittel={t('statistikk.iTall', { sted })} sammendrag={d ? forsideSammendrag(t, d, enhet) : t('app.lasterInn')} lukket={lukket} onVeksle={() => vekslGruppe(ITALL, lukket)}>
-      {d ? <ForsideTall d={d} enhet={enhet} skole={skole} /> : <p class="dempet">{t('app.lasterInn')}</p>}
-    </Gruppe>
   );
 }

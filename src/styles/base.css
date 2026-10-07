@@ -9779,3 +9779,172 @@ a.knapp {
     padding-inline: var(--rom-1);
   }
 }
+
+/* ---------- Panelet øverst på forsiden (eier 07.10.2026, avgjørelse 081) ----------
+   Kalenderen, nyhetene og tallene på samme plass, med en bryter over. Bryteren fyller bredden, med like brede valg. */
+.forsidepanel > .bryter {
+  margin: var(--rom-4) 0 0;
+}
+
+.forsidepanel .bryter-valg {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+}
+
+.forsidepanel .forsidegruppe h2 {
+  margin-top: var(--rom-3);
+}
+
+/* Nyhetene er en skisse til fase 7b. */
+.forside-nyheter-skisse {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) dashed var(--farge-kant);
+  border-radius: var(--radius-m);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+/* Tallene på forsiden: fire små fliser i to kolonner, også på stor skjerm. */
+.st-forside .st-fliser-kompakt {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: var(--rom-3);
+}
+
+.st-fliser-kompakt .st-flis-tall {
+  font-size: var(--str-l);
+}
+
+/* Stripen: hvert fylke er en prikk etter andelen som fikk læreplass. Landet er en stiplet strek. Prikkene har en ring i
+   flatefargen, så de som ligger nær hverandre, skilles. Luft på sidene, så prikkene ytterst ikke går utenfor. */
+.st-stripe-figur {
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.st-stripe {
+  position: relative;
+  height: 1.5rem;
+  margin: var(--rom-2) 0.5rem 0;
+}
+
+.st-stripe::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.st-stripe-prikk {
+  position: absolute;
+  top: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--farge-flate);
+  border-radius: 50%;
+  background: var(--farge-tekst-dempet);
+  transform: translate(-50%, -50%);
+}
+
+.st-stripe-prikk.st-valgt {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: var(--serie-1);
+}
+
+.st-stripe-landet {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 2px dashed var(--farge-tekst);
+}
+
+.st-stripe-skala {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin-top: var(--rom-1);
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+/* Skolen og lenken videre, som radene i «Neste datoer». */
+.st-forside-skole {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-2) var(--rom-3);
+  border-left: 4px solid var(--serie-1);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font-size: var(--str-s);
+  text-decoration: none;
+}
+
+.st-forside-skole > span {
+  flex: 1;
+}
+
+.st-forside-skole:hover > span {
+  text-decoration: underline;
+}
+
+.st-forside-mer {
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate-2);
+  color: var(--farge-lenke);
+}
+
+.st-forside-mer .listelenke-tittel {
+  color: var(--farge-lenke);
+}
+
+.st-stripe-forklaring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-4);
+  margin: var(--rom-2) 0 0;
+  font-size: var(--str-xs);
+}
+
+.st-stripe-forklaring > span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.st-stripe-merke {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--serie-1);
+}
+
+.st-stripe-merke-landet {
+  display: inline-block;
+  height: 0.875rem;
+  border-left: 2px dashed var(--farge-tekst);
+}
+
+/* Valget av visninger i panelet under «Tilpass»: uten ramme, som delene over. */
+.tilpass-visninger {
+  margin: var(--rom-4) 0;
+  padding: 0;
+  border: 0;
+}
+
+.tilpass-visninger legend {
+  padding: 0;
+}
