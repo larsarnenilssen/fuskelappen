@@ -47,6 +47,10 @@ function kildelinje(s: Nyhet, t: T, malform: Malform, dato: boolean): string {
   return (dato ? [kortDato(s.dato, malform), ...deler] : deler).join(' · ');
 }
 
+/** Tittelen og ingressen på målformen, for saker appen lager selv (Lovdata). Ellers som kilden skrev dem. */
+const tittel = (s: Nyhet, malform: Malform) => (malform === 'nn' && s.tittelNn) || s.tittel;
+const ingress = (s: Nyhet, malform: Malform) => (malform === 'nn' && s.ingressNn) || s.ingress;
+
 const kildenavn = (s: Nyhet, malform: Malform) => finnKilde(s.kilde)?.navn[malform] ?? s.kilde;
 /** Det korte navnet, f.eks. «KD», på knappen på forsiden, så den står på én linje. */
 const kortKildenavn = (s: Nyhet, malform: Malform) => {
@@ -75,8 +79,8 @@ export function Sak({ sak }: { sak: Nyhet }) {
       <div class={`nyh-sak-ramme${apen ? ' apen' : ''}`}>
         <a ref={lenke} class="listelenke nyh-sak" href={sak.url} target="_blank" rel="noopener noreferrer">
           <span class="listelenke-tekst">
-            <span class="listelenke-tittel">{sak.tittel}</span>
-            {apen && <span class="nyh-ingress">{sak.ingress}</span>}
+            <span class="listelenke-tittel">{tittel(sak, malform)}</span>
+            {apen && <span class="nyh-ingress">{ingress(sak, malform)}</span>}
             {under}
             {apen && (
               <span class="nyh-les">
@@ -89,7 +93,7 @@ export function Sak({ sak }: { sak: Nyhet }) {
           {!apen && <span class="skjult-visuelt"> ({t('nyheter.apnesHos', { kilde: kildenavn(sak, malform) })})</span>}
         </a>
         {apen && (
-          <button type="button" class="ikonknapp nyh-lukk" aria-label={t('nyheter.lukk', { tittel: sak.tittel })} title={t('nyheter.skjulIngress')} onClick={() => settApen(false)}>
+          <button type="button" class="ikonknapp nyh-lukk" aria-label={t('nyheter.lukk', { tittel: tittel(sak, malform) })} title={t('nyheter.skjulIngress')} onClick={() => settApen(false)}>
             <Ikon navn="opp" class="ikon-liten" />
           </button>
         )}
@@ -99,7 +103,7 @@ export function Sak({ sak }: { sak: Nyhet }) {
   return (
     <button ref={knapp} type="button" class="listelenke nyh-sak" aria-expanded={false} onClick={() => settApen(true)}>
       <span class="listelenke-tekst">
-        <span class="listelenke-tittel">{sak.tittel}</span>
+        <span class="listelenke-tittel">{tittel(sak, malform)}</span>
         {under}
       </span>
       <Ikon navn="ned" class="ikon-liten" />
@@ -111,7 +115,7 @@ export function Sak({ sak }: { sak: Nyhet }) {
 export function forsideSammendrag(t: T, malform: Malform, d: Nyheter, fylke: string | null): string {
   const forste = nyesteSaker(d, fylke, lesForsidefilter(tilstand.lesValg('nyhetsfilter')))[0];
   if (!forste) return t('nyheter.ingenNye');
-  return t('nyheter.sammendrag', { dato: kortDato(forste.dato, malform), tittel: forste.tittel });
+  return t('nyheter.sammendrag', { dato: kortDato(forste.dato, malform), tittel: tittel(forste, malform) });
 }
 
 /** Filteret på forsiden, husket på enheten. */
@@ -182,8 +186,8 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
           </button>
         </div>
         <div class="nyh-forside-innhold">
-          <h3 class="nyh-forside-tittel">{sak.tittel}</h3>
-          {sak.ingress && <p class="nyh-ingress">{sak.ingress}</p>}
+          <h3 class="nyh-forside-tittel">{tittel(sak, malform)}</h3>
+          {sak.ingress && <p class="nyh-ingress">{ingress(sak, malform)}</p>}
           <p class="nyh-forside-under">{kildelinje(sak, t, malform, true)}</p>
         </div>
         <a class="knapp knapp-liten nyh-forside-les" href={sak.url} target="_blank" rel="noopener noreferrer">
@@ -207,7 +211,7 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
         {saker.map((s) => (
           <li key={s.url}>
             <button type="button" class="nyh-forside-knapp" data-url={s.url} onClick={() => settValgt(s.url)}>
-              <span class="nyh-forside-tittel">{s.tittel}</span>
+              <span class="nyh-forside-tittel">{tittel(s, malform)}</span>
               <span class="nyh-forside-under">{kildelinje(s, t, malform, true)}</span>
             </button>
           </li>

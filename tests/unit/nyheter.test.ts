@@ -2,14 +2,16 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { rensUrl, slaaSammen, tilSaker } from '../../scripts/hent-nyheter.ts';
+import { beholdes, rensUrl, slaaSammen, tilSaker } from '../../scripts/hent-nyheter.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 import { erRelevant, vurder } from '../../scripts/nyheter/filter.ts';
+import { lesLovdata } from '../../scripts/nyheter/lovdata.ts';
+import { nyhetsstatus } from '../../scripts/nyheter/status.ts';
 import { kortIngress, lesDato, lesFeed, lesUdir, lesUtdanningsforbundet, rensTekst } from '../../scripts/nyheter/les.ts';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Nyhetskilder } from '../../src/modules/nyheter/kildeskjema.ts';
 import { nyheterSkjema, type Nyhet } from '../../src/modules/nyheter/skjema.ts';
-import { forsidefilterVerdi, lesFilter, lesForsidefilter, nyesteSaker, NYHETSKILDER, perDag, synligeKilder, velgSaker } from '../../src/modules/nyheter/utvalg.ts';
+import { forsidefilterVerdi, forTrettiDager, lesFilter, lesForsidefilter, nyesteSaker, NYHETSKILDER, perDag, synligeKilder, velgSaker } from '../../src/modules/nyheter/utvalg.ts';
 
 const rot = join(__dirname, '../..');
 const fil = lesFil(rot, join(rot, 'content/nyheter/kilder.yaml')) as Nyhetskilder;
@@ -49,6 +51,12 @@ describe('filteret for videregående', () => {
     ['No får alle elevar i vidaregåande utstyrsstipend', '', 'sterk'],
     ['Høring om overgangsordning for modulstrukturerte læreplaner', 'opplæringsforskriften § 23-8', 'sterk'],
     ['Råd om digitale hjelpemidler i vurderingen', '', 'generell'],
+    ['Fordeling av skjønnsmidlar', 'Statsforvaltaren gjer ei heilskapleg vurdering av økonomien til kommunane.', 'ingen'],
+    ['Matfylket Innlandet', 'Et samarbeid mellom Innlandet fylkeskommune og Statsforvalteren.', 'ingen'],
+    ['Inn på tunet for enkeltelever', 'Et tiltak for elever med vedtak om individuelt tilrettelagt opplæring.', 'generell'],
+    ['Webinar om tiltak', 'For elever i skolen.', 'generell'],
+    ['Webinar om tiltak', 'For elever.', 'ingen'],
+    ['PISA 2025: nedgang for norske elever', '34 prosent av tiendeklassingene', 'utelukket'],
     ['En ny skoledag for 1. og 2. trinn', 'elevene i skolen', 'utelukket'],
     ['Rekordmange får tilbud om fagskoleutdanning', 'fagbrev', 'utelukket'],
     ['Søkertall for midler til barnehagelærerutdanning', '', 'utelukket'],
@@ -74,6 +82,13 @@ describe('hentingen', () => {
       { tittel: 'Gammel', url: 'https://a.no/4', dato: '2026-01-01', ingress: null, stikkord: [] },
     ];
     expect(tilSaker(kilde, filter, raa, '2026-07-01')).toEqual([{ kilde: 'skolelederforbundet', tittel: 'Start med lederen', dato: '2026-09-29', url: 'https://a.no/2', ingress: 'Ingress' }]);
+  });
+
+  it('saker fra før vurderes på nytt med filteret', () => {
+    const kd = fil.kilder.find((k) => k.id === 'regjeringen-kd');
+    if (!kd) throw new Error('Mangler kilden');
+    expect(beholdes(kd, filter, { kilde: 'regjeringen-kd', tittel: 'Ny forskrift for Forsvarets høgskole', dato: '2026-08-24', url: 'https://r.no/1' })).toBe(false);
+    expect(beholdes(kd, filter, { kilde: 'regjeringen-kd', tittel: 'Utstyrsstipend til alle i videregående', dato: '2026-06-19', url: 'https://r.no/2' })).toBe(true);
   });
 
   it('beholder saker fra før som har falt ut av feeden', () => {
@@ -134,5 +149,31 @@ describe('utvalget i appen', () => {
   it('filteret i adressen godtar bare kjente verdier', () => {
     expect(lesFilter(new URLSearchParams('hvem=myndighet&kilde=udir'))).toEqual({ type: 'myndighet', kilde: 'udir' });
     expect(lesFilter(new URLSearchParams('hvem=x&kilde=y'))).toEqual({ type: null, kilde: null });
+  });
+});
+
+describe('nyhetssiden', () => {
+  it('de siste 30 dagene står først', () => {
+    expect(forTrettiDager('2026-10-07')).toBe('2026-09-07');
+    expect(forTrettiDager('2026-03-01')).toBe('2026-01-30');
+  });
+});
+
+describe('kildestatus og Lovdata', () => {
+  const fil = (status: 'ok' | 'feilet' | 'tom', feilSiden?: string) => ({ skjema: 1 as const, hentet: '', kilder: { udir: { status, ...(feilSiden ? { feilSiden } : {}) } }, saker: [] });
+
+  it('en kilde som har feilet i mer enn to dager, gir feil i kildesjekken', () => {
+    expect(nyhetsstatus(fil('ok'), ['udir'], '2026-10-07T04:00:00Z').status).toBe('ok');
+    expect(nyhetsstatus(fil('feilet', '2026-10-06'), ['udir'], '2026-10-07T04:00:00Z').status).toBe('ok');
+    expect(nyhetsstatus(fil('tom', '2026-10-01'), ['udir'], '2026-10-07T04:00:00Z')).toMatchObject({ status: 'feilet' });
+    expect(nyhetsstatus(null, ['udir'], '2026-10-07T04:00:00Z').status).toBe('feilet');
+  });
+
+  it('endringene fra Lovdata får tittel og ingress på begge målformer', () => {
+    for (const s of lesLovdata(rot, '2026-10-07')) {
+      expect(s.tittel).toMatch(/^Vedtatt endring i /);
+      expect(s.tittelNn ?? s.tittel).toMatch(/^Vedteken endring i /);
+      expect(s.url).toMatch(/^https:\/\/lovdata\.no\//);
+    }
   });
 });

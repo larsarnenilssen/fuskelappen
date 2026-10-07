@@ -18,6 +18,9 @@ import { lagFingeravtrykk, nyPost, vurderMotGodkjent, type Sjekkresultat } from 
 import { sjekkKfInfoserie } from './kf-infoserie.ts';
 import { sjekkLovdata } from './lovdata.ts';
 import { hentSkoler, sjekkFil, sjekkSide, skoleendringer, type Skole } from './metoder.ts';
+import { nyhetsstatus } from '../nyheter/status.ts';
+import type { Nyhetskilder } from '../../src/modules/nyheter/kildeskjema.ts';
+import type { Nyheter } from '../../src/modules/nyheter/skjema.ts';
 import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn, type Tabellresultat } from './tabeller.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
@@ -367,6 +370,12 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         tekster[kilde.id] = { tekst };
         rapport.push(`### ${kilde.navn}`, `Fingeravtrykk ${fingeravtrykk}.`, '');
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
+      }
+      case 'nyheter': {
+        // Nyhetene hentes hver dag i egen arbeidsflyt (avgjørelse 084). Her leses bare statusen fra hentingen.
+        const { kilder: nyhetskilder } = lesFil(rot, join(rot, 'content/nyheter/kilder.yaml')) as Nyhetskilder;
+        const ider = nyhetskilder.filter((n) => n.kilde === kilde.id).map((n) => n.id);
+        return nyhetsstatus(lesJson(join(rot, 'data/nyheter/nyheter.json')) as Nyheter | null, ider, naa);
       }
       default:
         return { status: 'feilet', fingeravtrykk: null, melding: `Sjekkmetoden «${kilde.sjekkmetode}» er ikke laget ennå.` };

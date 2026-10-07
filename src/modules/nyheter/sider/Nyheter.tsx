@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { useHusketApen } from '../../../components/husket.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Seksjon } from '../../../components/Seksjon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
@@ -16,7 +17,7 @@ import type { SideProps } from '../../typer.ts';
 import { NYHETER_RUTE } from '../adresse.ts';
 import { dagTittel, Sak } from '../komponenter.tsx';
 import type { Nyheter as Nyhetsfil, Nyhetstype } from '../skjema.ts';
-import { filterSporring, lesFilter, NYHETSKILDER, perDag, synligeKilder, typerMedKilder, velgSaker, type Nyhetsfilter } from '../utvalg.ts';
+import { filterSporring, forTrettiDager, lesFilter, NYHETSKILDER, perDag, synligeKilder, typerMedKilder, velgSaker, type Nyhetsfilter } from '../utvalg.ts';
 
 const KS_URL = 'https://www.ks.no/les-mer/?theme=43';
 
@@ -48,6 +49,12 @@ export default function Nyheter({ sporring }: SideProps) {
   };
   const saker = data && data !== 'feil' ? velgSaker(data.saker, kilder, filter) : [];
   const idag = iDag();
+  // De siste 30 dagene står først, og resten under «Vis eldre» (eier 07.10.2026).
+  const [visEldre, settVisEldre] = useHusketApen('nyheter:eldre');
+  const grense = forTrettiDager(idag);
+  const nye = saker.filter((s) => s.dato >= grense);
+  const vist = visEldre ? saker : nye;
+  const eldre = saker.length - nye.length;
 
   const hoved = (
     <>
@@ -80,10 +87,10 @@ export default function Nyheter({ sporring }: SideProps) {
       {data && data !== 'feil' && (
         <>
           <p class="liten dempet" aria-live="polite">
-            {t('nyheter.antall', { antall: saker.length })} · {t('nyheter.hentet', { tid: formaterTidspunkt(data.hentet, malform) })}
+            {t('nyheter.antall', { antall: vist.length })} · {t('nyheter.hentet', { tid: formaterTidspunkt(data.hentet, malform) })}
           </p>
-          {saker.length === 0 && <p>{t('nyheter.ingen')}</p>}
-          {perDag(saker).map((dag) => (
+          {vist.length === 0 && <p>{eldre > 0 ? t('nyheter.ingenNyere') : t('nyheter.ingen')}</p>}
+          {perDag(vist).map((dag) => (
             <section key={dag.dato} class="nyh-dag" aria-labelledby={`nyh-${dag.dato}`}>
               <h2 id={`nyh-${dag.dato}`} class="liten-overskrift">
                 {dagTittel(dag.dato, idag, t, malform)}
@@ -97,6 +104,11 @@ export default function Nyheter({ sporring }: SideProps) {
               </ul>
             </section>
           ))}
+          {!visEldre && eldre > 0 && (
+            <button type="button" class="knapp knapp-sekundaer knapp-liten nyh-eldre" onClick={() => settVisEldre(true)}>
+              {t('nyheter.visEldre', { antall: eldre })}
+            </button>
+          )}
         </>
       )}
     </>

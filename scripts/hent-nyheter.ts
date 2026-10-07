@@ -16,6 +16,7 @@ import { lesForrige, skrivHvisEndret } from './data/hent.ts';
 import { lesFil } from './innhold/last.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 import { erRelevant, vurder, type Nyhetsfilter } from './nyheter/filter.ts';
+import { lesLovdata } from './nyheter/lovdata.ts';
 import { kortIngress, lesFeed, lesUdir, lesUtdanningsforbundet, type RaSak } from './nyheter/les.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
@@ -64,8 +65,14 @@ export function tilSaker(kilde: Nyhetskilde, filter: Nyhetsfilter, raa: RaSak[],
     if (utelat?.test(s.tittel)) return [];
     if (kilde.filter === 'vgs' && !erRelevant(filter, s.tittel, [s.ingress ?? '', ...s.stikkord].join(' '))) return [];
     const ingress = kilde.ingress && s.ingress ? kortIngress(s.ingress) : undefined;
-    return [{ kilde: kilde.id, tittel: s.tittel, dato: s.dato, url: rensUrl(s.url), ...(ingress ? { ingress } : {}) }];
+    const ingressNn = kilde.ingress && s.ingressNn ? kortIngress(s.ingressNn) : undefined;
+    return [{ kilde: kilde.id, tittel: s.tittel, dato: s.dato, url: rensUrl(s.url), ...(ingress ? { ingress } : {}), ...(s.tittelNn ? { tittelNn: s.tittelNn } : {}), ...(ingressNn ? { ingressNn } : {}) }];
   });
+}
+
+/** Om en sak fra før fortsatt passer filteret og ordene kilden utelater. */
+export function beholdes(kilde: Nyhetskilde, filter: Nyhetsfilter, s: Nyhet): boolean {
+  return tilSaker(kilde, filter, [{ tittel: s.tittel, dato: s.dato, url: s.url, ingress: s.ingress ?? null, stikkord: [] }], '0000-00-00').length > 0;
 }
 
 /**
@@ -92,16 +99,18 @@ async function main() {
 
   await Promise.all(
     kilder.map(async (kilde) => {
-      const gamle = forrige?.saker.filter((s) => s.kilde === kilde.id) ?? [];
+      // Sakene fra før vurderes på nytt, så et endret filter også gjelder dem.
+      const gamle = forrige?.saker.filter((s) => s.kilde === kilde.id && beholdes(kilde, filter, s)) ?? [];
       const feilSiden = forrige?.kilder[kilde.id]?.feilSiden ?? naa.toISOString().slice(0, 10);
       try {
-        const raa = les(kilde, await hentTekst(kilde.url));
+        const raa = kilde.format === 'lovdata' ? lesLovdata(rot, naa.toISOString().slice(0, 10)) : les(kilde, await hentTekst(kilde.url));
         const nye = tilSaker(kilde, filter, raa, fra);
         if (rapport) {
           console.log(`\n${kilde.id}: ${raa.length} i feeden, ${nye.length} med`);
           for (const s of raa) console.log(`  ${s.dato ?? '??????????'} ${kilde.filter === 'vgs' ? vurder(filter, s.tittel, [s.ingress ?? '', ...s.stikkord].join(' ')).padEnd(9) : 'alle     '} ${s.tittel}`);
         }
-        if (raa.length === 0) {
+        // Lovdata har ofte ingen vedtatte endringer som ikke gjelder ennå. Det er ikke en feil.
+        if (raa.length === 0 && kilde.format !== 'lovdata') {
           status[kilde.id] = { status: 'tom', feilSiden, melding: 'Fant ingen saker. Formatet kan være endret.' };
           saker.push(...gamle);
           return;

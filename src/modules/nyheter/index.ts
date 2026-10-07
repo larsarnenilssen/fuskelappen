@@ -1,7 +1,7 @@
 // Nyheter (fase 7b): det siste fra myndighetene, fagpressen og organisasjonene, valgt ut for videregående. Sakene
 // hentes hver dag av scripts/hent-nyheter.ts til data/nyheter/nyheter.json. Kildene står i content/nyheter/kilder.yaml.
 // De nyeste står som visningen «Nyheter» i panelet øverst på forsiden (avgjørelse 081), og hele listen på en egen side
-// under «Oppslag», med filter på hvem og kilde.
+// med filter på hvem og kilde. Siden nås fra panelet, søket og favorittene, ikke fra «Oppslag» (eier 07.10.2026).
 import { oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { NYHETER_RUTE } from './adresse.ts';
@@ -24,6 +24,8 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: ['regjeringen-kd-nyheter', 'udir-siste-nytt', 'utdanningsnytt-nyheter', 'statsforvalteren-nyheter', 'skolelederforbundet-nyheter', 'utdanningsforbundet-nyheter'],
+  kilder: ['regjeringen-kd-nyheter', 'udir-siste-nytt', 'utdanningsnytt-nyheter', 'statsforvalteren-nyheter', 'lovdata-lovtidend', 'skolelederforbundet-nyheter', 'utdanningsforbundet-nyheter'],
+  // Står i panelet øverst på forsiden, ikke under «Oppslag» (eier 07.10.2026).
+  paaForsiden: false,
   status: 'aktiv',
 };

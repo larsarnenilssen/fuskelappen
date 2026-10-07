@@ -65,6 +65,7 @@
     "hent:nor": "tsx scripts/hent-nor.ts",
     "hent:eksamen": "tsx scripts/hent-eksamen.ts",
     "hent:inntak": "tsx scripts/hent-inntak.ts",
-    "hent:nyheter": "tsx scripts/hent-nyheter.ts"
+    "hent:nyheter": "tsx scripts/hent-nyheter.ts",
+    "nyheter:prove": "tsx scripts/nyheter/prove.ts"
   }
 }

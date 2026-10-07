@@ -2,11 +2,14 @@
 
 export const nyheterNb = {
   tittel: 'Nyheter',
+  lovdata: 'Vedtatt endring i {hva}',
   sisteNytt: 'Siste nytt',
   innledning: 'Det siste fra myndighetene, fagpressen og organisasjonene i skolen, valgt ut for videregående. Nyhetene hentes hver dag, og lenkene går til kildene.',
   laster: 'Laster nyhetene …',
   feil: 'Klarte ikke å laste nyhetene.',
   ingen: 'Ingen saker med dette filteret.',
+  visEldre: 'Vis eldre saker ({antall})',
+  ingenNyere: 'Ingen saker de siste 30 dagene med dette filteret.',
   ingenNye: 'Ingen nye saker',
   sammendrag: '{dato}: {tittel}',
   hentet: 'Sist oppdatert {tid}.',

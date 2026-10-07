@@ -1509,8 +1509,8 @@ kilder:
     type: data
     niva: nasjonal
     lisens: NLOD 2.0
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: nyheter
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1525,8 +1525,8 @@ kilder:
     type: data
     niva: nasjonal
     lisens: NLOD 2.0
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: nyheter
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1540,8 +1540,8 @@ kilder:
     type: data
     niva: nasjonal
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: nyheter
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: Interesseorganisasjon. Medlemstilbud tas ikke med.
@@ -1554,8 +1554,8 @@ kilder:
     type: data
     niva: nasjonal
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken.
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: nyheter
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1569,8 +1569,8 @@ kilder:
     type: data
     niva: nasjonal
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: nyheter
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1585,8 +1585,24 @@ kilder:
     type: data
     niva: nasjonal
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: nyheter
+    aktiv: true
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: Fagpresse, utgitt av Utdanningsforbundet. robots.txt tillater alt.
+
+  - id: lovdata-lovtidend
+    navn: Norsk Lovtidend (vedtatte endringer i regelverket appen har)
+    kortnavn: Lovdata
+    utgiver: Lovdata
+    url: https://lovdata.no/register/lovtidend
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0 (Lovdatas datasett) og lovtekst som ikke er vernet etter åndsverkloven § 14
+    sjekkmetode: nyheter
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: >-
+      Endringene som står i Kalender (data/lovdata/kommende.json, hentet hver uke av npm run hent:lovdata), også som
+      nyheter. Ingen egen henting fra Lovdata.

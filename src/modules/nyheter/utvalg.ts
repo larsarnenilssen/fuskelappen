@@ -60,6 +60,13 @@ export function typerMedKilder(kilder: readonly Kildevisning[]): Nyhetstype[] {
   return NYHETSTYPER.filter((t) => kilder.some((k) => k.type === t));
 }
 
+/** Datoen 30 dager før `idag` (YYYY-MM-DD). Sakene fra før står under «Vis eldre» på nyhetssiden. */
+export function forTrettiDager(idag: string): string {
+  const d = new Date(`${idag}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() - 30);
+  return d.toISOString().slice(0, 10);
+}
+
 /** Sakene per dag, nyeste dag først. */
 export function perDag(saker: readonly Nyhet[]): { dato: string; saker: Nyhet[] }[] {
   const dager: { dato: string; saker: Nyhet[] }[] = [];

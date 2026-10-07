@@ -4,7 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Nyheter:** Det siste fra Udir, Kunnskapsdepartementet, Statsforvalteren i fylket ditt, Lovdata, Utdanningsnytt, Utdanningsforbundet og Skolelederforbundet, valgt ut for videregående og hentet hver dag.
+  - På forsiden er nyhetene en visning i panelet øverst, sammen med kalenderen og tallene. Filtrer på hvem eller kilde øverst. Trykk på en sak for å se ingressen og gå videre til kilden.
+  - Nyhetssiden har sakene fra de siste 30 dagene per dag, med «Vis eldre» under og filter på hvem og kilde. Trykk på en sak for å se ingressen, og en gang til for å lese den hos kilden.
+  - Organisasjonene er merket som interesseparter, og Utdanningsnytt som fagpresse utgitt av Utdanningsforbundet.
+
 ### Endret
+
+- **Oppslag:** Kalender og Nyheter står ikke lenger under «Oppslag». De nås fra panelet øverst på forsiden (sidekolonnen på stor skjerm), fra søket og som favoritter, som Videregående i tall.
 
 - **Raskere oppstart:** Bare tekstene på målformen du har valgt, lastes når appen åpnes. Den andre lastes når du bytter.
 

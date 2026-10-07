@@ -1,0 +1,90 @@
+# Nyhetene (fase 7b, avgjørelse 084): henter kildene i content/nyheter/kilder.yaml hver dag til
+# data/nyheter/nyheter.json. Passer filen skjemaet og testene for nyhetene, committes den til main uten PR, og appen
+# publiseres på nytt med de nye nyhetene (deploy.yml tar med data/nyheter fra main). Feiler en kilde, står sakene fra
+# før, og kilden får status i filen og i kildesjekken.
+#
+# I PR-er som endrer hentingen eller kildene, og ved manuell kjøring, prøvehentes også prøvekildene (npm run
+# nyheter:prove). Rapporten står i sammendraget for kjøringen. En PR committer ingenting.
+name: Nyheter
+
+on:
+  schedule:
+    - cron: '47 3 * * *' # hver dag kl. 05.47 norsk sommertid (04.47 vintertid)
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/hent-nyheter.ts'
+      - 'scripts/nyheter/**'
+      - 'content/nyheter/**'
+      - '.github/workflows/nyheter.yml'
+
+concurrency:
+  group: nyheter-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
+  cancel-in-progress: false
+
+jobs:
+  hent:
+    name: Hent nyhetene
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    outputs:
+      endret: ${{ steps.lagre.outputs.endret }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Hent nyhetene
+        run: |
+          set -o pipefail
+          mkdir -p .generert
+          npm run --silent hent:nyheter -- --rapport | tee .generert/nyheter-rapport.txt
+          {
+            echo '## Nyhetene'
+            echo
+            echo '```'
+            grep -E '^(Nyheter:|[a-z0-9-]+: [0-9]+ i feeden|  [a-z0-9-]+: (feilet|tom))' .generert/nyheter-rapport.txt || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Prøvekildene
+        if: github.event_name != 'schedule'
+        continue-on-error: true
+        run: npm run --silent nyheter:prove | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Test nyhetene
+        run: npx vitest run tests/unit/nyheter.test.ts
+      - name: Lagre nyhetene på main
+        id: lagre
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- data/nyheter; then
+            echo "Nyhetene er uendret."
+            echo endret=nei >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nyheter/nyheter.json
+          git commit -m "Nyheter $(date -u +%F)"
+          # Kildesjekken kan ha pushet i mellomtiden. Nyhetsfilen er bare endret her, så en rebase går alltid.
+          git pull --rebase --quiet origin main
+          git push
+          echo endret=ja >> "$GITHUB_OUTPUT"
+
+  publiser:
+    name: Publiser med de nye nyhetene
+    needs: hent
+    if: needs.hent.outputs.endret == 'ja'
+    uses: ./.github/workflows/deploy.yml
+    with:
+      tag: ''
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      actions: write

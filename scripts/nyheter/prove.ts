@@ -1,0 +1,76 @@
+// Prøvehenting av mulige nyhetskilder (npm run nyheter:prove). Skriver en rapport i Markdown: om kilden svarer, hvor
+// mange saker den har, hvor ofte den publiserer, og hva filteret ville tatt med. Ingenting lagres, og appen viser ikke
+// kildene. Brukes til å avgjøre om en kilde skal med (eier 07.10.2026), og går i arbeidsflyten Nyheter i PR-er og ved
+// manuell kjøring, fordi flere av kildene er stengt fra skymiljøet.
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import type { Nyhetskilder, Provekilde } from '../../src/modules/nyheter/kildeskjema.ts';
+import { lesFil } from '../innhold/last.ts';
+import { USER_AGENT } from '../kilder/metoder.ts';
+import { vurder, type Nyhetsfilter } from './filter.ts';
+import { lesFeed, type RaSak } from './les.ts';
+
+const rot = fileURLToPath(new URL('../..', import.meta.url));
+
+async function hent(url: string): Promise<{ status: number; tekst: string }> {
+  const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(30_000) });
+  return { status: r.status, tekst: await r.text() };
+}
+
+const celle = (t: string) => t.replace(/\|/g, '\\|').replace(/\s+/g, ' ').trim();
+
+/** Hva filteret ville gjort med saken: «med» eller hvorfor ikke. `streng`: bare sterke ord i tittelen. */
+export function provevurdering(filter: Nyhetsfilter, k: Pick<Provekilde, 'streng' | 'alle'>, s: RaSak): string {
+  if (k.alle) return 'med (alle)';
+  const v = vurder(filter, s.tittel, [s.ingress ?? '', ...s.stikkord].join(' '));
+  if (k.streng) return vurder(filter, s.tittel) === 'sterk' ? 'med (streng)' : `ikke (streng; vanlig: ${v})`;
+  return v === 'sterk' || v === 'generell' ? `med (${v})` : `ikke (${v})`;
+}
+
+/** Saker per uke, regnet fra den eldste til den nyeste saken i feeden. */
+function perUke(saker: RaSak[]): string {
+  const datoer = saker.map((s) => s.dato).filter((d): d is string => d !== null).sort();
+  const [forste, siste] = [datoer[0], datoer.at(-1)];
+  if (!forste || !siste || datoer.length < 2) return '–';
+  const dager = Math.max(1, (Date.parse(siste) - Date.parse(forste)) / 86_400_000);
+  return (datoer.length / (dager / 7)).toFixed(1).replace('.', ',');
+}
+
+async function main() {
+  const { filter, prove, oppdag } = lesFil(rot, join(rot, 'content/nyheter/kilder.yaml')) as Nyhetskilder;
+  const ut: string[] = ['## Prøvekilder for nyhetene', ''];
+  for (const k of prove) {
+    ut.push(`### ${k.navn}`, '', `\`${k.url}\``, '');
+    try {
+      const { status, tekst } = await hent(k.url);
+      const saker = status === 200 ? lesFeed(tekst) : [];
+      const med = saker.filter((s) => provevurdering(filter, k, s).startsWith('med'));
+      ut.push(`Svar ${status}. ${saker.length} saker i feeden, om lag ${perUke(saker)} per uke. ${med.length} ville vært med.`, '');
+      if (saker.length > 0) {
+        ut.push('| Dato | Filteret | Tittel |', '|---|---|---|');
+        for (const s of [...med, ...saker.filter((x) => !med.includes(x))].slice(0, 25)) ut.push(`| ${s.dato ?? '?'} | ${provevurdering(filter, k, s)} | ${celle(s.tittel)} |`);
+        ut.push('');
+      }
+    } catch (e) {
+      ut.push(`Feilet: ${e instanceof Error ? e.message : String(e)}`, '');
+    }
+  }
+  ut.push('## Feeder og robots.txt', '');
+  for (const side of oppdag) {
+    try {
+      const { status, tekst } = await hent(side);
+      const feeder = [...tekst.matchAll(/<link[^>]+type="application\/(?:rss|atom)\+xml"[^>]*>/gi)].map((m) => /href="([^"]+)"/.exec(m[0])?.[1]).filter(Boolean);
+      const lenker = [...new Set([...tekst.matchAll(/href="([^"]*(?:rss|feed|atom)[^"]*)"/gi)].map((m) => m[1]))].slice(0, 15);
+      const robots = await hent(new URL('/robots.txt', side).toString()).catch(() => null);
+      const regler = robots?.status === 200 ? robots.tekst.split('\n').filter((l) => /^(user-agent|disallow|allow)/i.test(l.trim())).slice(0, 25) : [];
+      ut.push(`### ${side}`, '', `Svar ${status}. Feeder i <head>: ${feeder.length ? feeder.join(', ') : 'ingen'}.`, '');
+      if (lenker.length) ut.push(`Lenker med rss/feed/atom: ${lenker.map((l) => `\`${l}\``).join(', ')}`, '');
+      ut.push(robots ? `robots.txt (${robots.status}):` : 'robots.txt: ingen svar', '', '```', ...regler, '```', '');
+    } catch (e) {
+      ut.push(`### ${side}`, '', `Feilet: ${e instanceof Error ? e.message : String(e)}`, '');
+    }
+  }
+  console.log(ut.join('\n'));
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) await main();

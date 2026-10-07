@@ -8,7 +8,13 @@
 # - fylker: Statsforvalteren vises bare når et av fylkene er valgt.
 # - utelat: ord i tittelen som utelukker en sak fra kilden.
 
-# Ordene som gjør en sak relevant for videregående. Et ord treffer også når det er starten på et lengre ord.
+# Ordene som gjør en sak relevant for videregående. Et ord treffer også når det er starten på et lengre ord
+# (scripts/nyheter/filter.ts):
+# - Et sterkt ord tar med saken, med mindre tittelen handler om en annen del av utdanningen og ikke har et sterkt ord.
+# - Et generelt ord i tittelen tar med saken når ingen ord fra `utelukker` står der. Står de generelle ordene bare i
+#   ingressen, må minst to ulike ord treffe, så én tilfeldig «elev» eller «skole» ikke er nok.
+# Ord som er tatt ut fordi de ga feiltreff (eier 07.10.2026): «fylkeskommune» (landbruk, budsjett), «opplæring»
+# (fengsel, helse), «undervisning» og «vurdering» (forvaltning).
 filter:
   sterke:
     - videregående
@@ -32,7 +38,6 @@ filter:
     - fagopplæring
     - fag- og yrkesopplæring
     - opplæringskontor
-    - fylkeskommun
     - privatist
     - inntak
     - opplæringslov
@@ -55,7 +60,10 @@ filter:
     - fravær
     - læreplan
     - fagfornyelsen
-    - vurdering
+    - underveisvurdering
+    - sluttvurdering
+    - vurderingen
+    - vurderinga
     - skolemiljø
     - skulemiljø
     - mobbing
@@ -64,8 +72,8 @@ filter:
     - spesialundervisning
     - individuelt tilrettelagt
     - særskilt språkopplæring
-    - undervisning
-    - opplæring
+    - privatskole
+    - privatskule
   utelukker:
     - barnehage
     - grunnskole
@@ -80,6 +88,20 @@ filter:
     - 1.–4. trinn
     - 5.–7. trinn
     - 8.–10. trinn
+    - barnetrinn
+    - småtrinn
+    - mellomtrinn
+    - ungdomstrinn
+    - de minste
+    - de yngste
+    - dei minste
+    - dei yngste
+    - tiendeklass
+    - tiandeklass
+    - nasjonale prøver
+    - nasjonale prøvar
+    - fellesskole
+    - fellesskule
     - skolefritidsordning
     - SFO
     - universitet
@@ -117,6 +139,18 @@ kilder:
     format: udir
     url: https://www.udir.no/om-udir/siste-nytt/
     filter: vgs
+    ingress: true
+
+  # Vedtatte endringer i lovene og forskriftene appen har, fra hentingen fra Lovdata (data/lovdata/kommende.json).
+  # Tittelen og ingressen lages av appen, på bokmål og nynorsk. Datoen er datoen endringen ble vedtatt.
+  - id: lovdata
+    navn: { nb: Lovdata (Norsk Lovtidend), nn: Lovdata (Norsk Lovtidend) }
+    kortnavn: { nb: Lovdata, nn: Lovdata }
+    type: myndighet
+    kilde: lovdata-lovtidend
+    format: lovdata
+    url: https://lovdata.no/register/lovtidend
+    filter: alle
     ingress: true
 
   - id: skolelederforbundet
@@ -260,3 +294,26 @@ kilder:
     filter: vgs
     ingress: true
     fylker: ["31", "33", "03", "32"]
+
+# Prøvekilder: hentes bare av «npm run nyheter:prove» (i PR-er og ved manuell kjøring av arbeidsflyten Nyheter), og
+# vises ikke i appen. Rapporten viser om kilden svarer, hvor mange saker den har, og hva filteret ville tatt med, så
+# eier kan avgjøre om kilden skal med (K3, K5, K6 og K8, eier 07.10.2026). `streng`: bare sterke ord i tittelen.
+prove:
+  - { id: nrk-vestland-toppsaker, navn: NRK Vestland (toppsaker), url: https://www.nrk.no/vestland/toppsaker.rss, streng: true }
+  - { id: nrk-vestland-siste, navn: NRK Vestland (siste), url: https://www.nrk.no/vestland/siste.rss, streng: true }
+  - { id: nrk-innlandet-toppsaker, navn: NRK Innlandet (toppsaker), url: https://www.nrk.no/innlandet/toppsaker.rss, streng: true }
+  - { id: forskning-no, navn: forskning.no (alle), url: https://www.forskning.no/rss }
+  - { id: forskning-no-skole, navn: forskning.no (skole og utdanning), url: https://www.forskning.no/skole-og-utdanning?lab_viewport=rss }
+  - { id: forskning-no-tag, navn: forskning.no (taggen skole og utdanning), url: "https://www.forskning.no/tag/skole%20og%20utdanning?lab_viewport=rss" }
+  - { id: nifu-nyheter, navn: NIFU (nyheter), url: https://www.nifu.no/category/nyhet/feed/ }
+  - { id: nifu-alt, navn: NIFU (alt), url: https://www.nifu.no/feed/ }
+  - { id: hkdir-rss, navn: HKdir (rss), url: https://hkdir.no/rss }
+  - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
+
+# Sider der prøvehentingen leter etter feeder (<link rel="alternate">) og leser robots.txt.
+oppdag:
+  - https://hkdir.no/
+  - https://hkdir.no/aktuelt
+  - https://lovdata.no/info/rss
+  - https://www.nrk.no/rss/
+  - https://www.nifu.no/

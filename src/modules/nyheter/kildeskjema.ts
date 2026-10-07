@@ -16,7 +16,8 @@ export const nyhetskildeSkjema = z.strictObject({
   kilde: z.string().min(1),
   /** Merknad ved kilden, f.eks. «Fagpresse, utgitt av Utdanningsforbundet». */
   merknad: flerspraak.optional(),
-  format: z.enum(['rss', 'udir', 'utdanningsforbundet']),
+  /** lovdata: endringene i regelverket fra data/lovdata/kommende.json, uten egen henting. */
+  format: z.enum(['rss', 'udir', 'utdanningsforbundet', 'lovdata']),
   url: z.url().startsWith('https://'),
   filter: z.enum(['vgs', 'alle']),
   ingress: z.boolean(),
@@ -25,10 +26,24 @@ export const nyhetskildeSkjema = z.strictObject({
   utelat: ordliste.optional(),
 });
 
+/** En kilde som bare prøvehentes (npm run nyheter:prove), og ikke vises i appen. */
+export const provekildeSkjema = z.strictObject({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  navn: z.string().min(1),
+  url: z.url().startsWith('https://'),
+  /** Bare sterke ord i tittelen (nyhetsmedier). */
+  streng: z.boolean().optional(),
+  /** Alle sakene, uten filter (organisasjoner). */
+  alle: z.boolean().optional(),
+});
+
 export const nyhetskilderSkjema = z.strictObject({
   filter: z.strictObject({ sterke: ordliste, generelle: ordliste, utelukker: ordliste, aldri: ordliste }),
   kilder: z.array(nyhetskildeSkjema).min(1),
+  prove: z.array(provekildeSkjema).default([]),
+  oppdag: z.array(z.url()).default([]),
 });
 
 export type Nyhetskilde = z.infer<typeof nyhetskildeSkjema>;
 export type Nyhetskilder = z.infer<typeof nyhetskilderSkjema>;
+export type Provekilde = z.infer<typeof provekildeSkjema>;

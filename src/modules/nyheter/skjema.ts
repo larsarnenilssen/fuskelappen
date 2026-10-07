@@ -15,6 +15,9 @@ export const nyhetSkjema = z.strictObject({
   url: z.string().check(z.regex(/^https:\/\//)),
   /** Ingressen, når kilden har en og vi kan vise den. Uten HTML, høyst om lag 300 tegn. */
   ingress: z.optional(z.string()),
+  /** Tittel og ingress på nynorsk for saker appen lager selv (endringene i regelverket fra Lovdata). */
+  tittelNn: z.optional(z.string().check(z.minLength(1))),
+  ingressNn: z.optional(z.string()),
 });
 
 /**

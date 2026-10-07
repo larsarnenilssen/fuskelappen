@@ -48,5 +48,7 @@ export const manifest: Modulmanifest = {
     return [];
   },
   kilder: ['eksamensdatoer', 'lovdata-lokale', 'udir-administrere-eksamen'],
+  // Står i panelet øverst på forsiden, ikke under «Oppslag» (eier 07.10.2026).
+  paaForsiden: false,
   status: 'aktiv',
 };

@@ -87,13 +87,13 @@ button.nyh-sak {
 }
 
 /* ---------- Forsiden (eier 07.10.2026) ----------
-   Nyhetene tar ikke mer plass enn kalenderen, så like mange favoritter står under: fast høyde, tre saker med titler på
-   høyst to linjer, i litt mindre skrift. Filteret og «Alle» står i én linje øverst. En sak som er valgt, fyller den
+   Nyhetene er like høye som kalenderen, så like mange favoritter står under: fast høyde, tre saker med titler på
+   høyst to linjer, i litt mindre skrift. Filteret har luft rundt seg (eier 07.10.2026). Filteret og «Alle» står i én linje øverst. En sak som er valgt, fyller den
    samme plassen med ingressen og knappen til kilden. */
 .nyh-forside {
   display: flex;
   flex-direction: column;
-  height: 17rem;
+  height: 17.625rem;
   margin: 0 0 var(--rom-4);
   background: var(--farge-flate);
   border: var(--strek) solid var(--farge-kant);
@@ -106,7 +106,7 @@ button.nyh-sak {
   flex: none;
   align-items: center;
   gap: var(--rom-3);
-  padding: var(--rom-2) var(--rom-3);
+  padding: var(--rom-3);
   border-bottom: var(--strek) solid var(--farge-linje);
 }
 
@@ -270,4 +270,9 @@ button.nyh-sak {
 
 .nyh-ks p {
   margin: 0 0 var(--rom-2);
+}
+
+/* «Vis eldre» under sakene fra de siste 30 dagene. */
+.nyh-eldre {
+  margin: var(--rom-2) 0 var(--rom-4);
 }

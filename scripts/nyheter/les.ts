@@ -10,6 +10,9 @@ export interface RaSak {
   ingress: string | null;
   /** Kategorier eller stikkord fra kilden, til filteret. */
   stikkord: string[];
+  /** Tittel og ingress på nynorsk, når saken er laget av appen (Lovdata) og er ulik på nynorsk. */
+  tittelNn?: string;
+  ingressNn?: string;
 }
 
 const ENTITETER: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', shy: '' };
