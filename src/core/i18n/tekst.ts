@@ -1,12 +1,43 @@
 // Oppslag i UI-tekstene. Rene funksjoner; Preact-kroken ligger i app/tilstand.
-import { nb } from '../../strings/nb.ts';
-import { nn } from '../../strings/nn.ts';
+// Tekstene for hver målform er en egen bit som lastes når den trengs (avgjørelse 083): ved oppstart bare målformen
+// brukeren har valgt, og den andre når brukeren bytter.
 import type { Malform, Tekster, Tekstnokkel } from '../../strings/typer.ts';
 import type { Flerspraak } from '../innhold/skjema.ts';
 
 export type { Malform, Tekstnokkel };
 
-export const tekstTabeller: Record<Malform, Tekster> = { nb, nn };
+const lastere: Record<Malform, () => Promise<Tekster>> = {
+  nb: () => import('../../strings/nb.ts').then((m) => m.nb),
+  nn: () => import('../../strings/nn.ts').then((m) => m.nn),
+};
+
+/** Tekstene som er lastet. */
+const tekstTabeller: Partial<Record<Malform, Tekster>> = {};
+const lasting: Partial<Record<Malform, Promise<void>>> = {};
+
+export function teksterLastet(malform: Malform): boolean {
+  return tekstTabeller[malform] !== undefined;
+}
+
+/** Laster tekstene for målformen. Prøves på nytt neste gang hvis lastingen feiler. */
+export function lastTekster(malform: Malform): Promise<void> {
+  if (teksterLastet(malform)) return Promise.resolve();
+  lasting[malform] ??= lastere[malform]().then(
+    (tabell) => {
+      tekstTabeller[malform] = tabell;
+    },
+    (feil: unknown) => {
+      delete lasting[malform];
+      throw feil;
+    },
+  );
+  return lasting[malform];
+}
+
+/** Begge målformene, f.eks. for søkeindeksen og testene. */
+export async function lastAlleTekster(): Promise<void> {
+  await Promise.all([lastTekster('nb'), lastTekster('nn')]);
+}
 
 export type Verdier = Record<string, string | number>;
 
@@ -25,7 +56,8 @@ export function fyllInn(mal: string, verdier?: Verdier): string {
 }
 
 export function hentTekst(malform: Malform, nokkel: Tekstnokkel, verdier?: Verdier): string {
-  const mal = slaaOpp(tekstTabeller[malform], nokkel) ?? slaaOpp(tekstTabeller.nb, nokkel) ?? nokkel;
+  const annen: Malform = malform === 'nb' ? 'nn' : 'nb';
+  const mal = slaaOpp(tekstTabeller[malform], nokkel) ?? slaaOpp(tekstTabeller[annen], nokkel) ?? nokkel;
   return fyllInn(mal, verdier);
 }
 
@@ -36,8 +68,23 @@ export function visTekst(verdi: Tekstverdi, malform: Malform): string {
   return typeof verdi === 'string' ? hentTekst(malform, verdi) : verdi[malform];
 }
 
+/**
+ * Et nb/nn-par som slås opp først når det leses. Slik blir ikke målformen som ennå ikke er lastet, låst til teksten fra
+ * den andre: favoritter, søkeoppføringer og kalenderdata lages med begge målformene, men bare den valgte er lastet.
+ */
+export function latBegge(lag: (m: Malform) => string): Flerspraak {
+  return {
+    get nb() {
+      return lag('nb');
+    },
+    get nn() {
+      return lag('nn');
+    },
+  };
+}
+
 export function begge(verdi: Tekstverdi): Flerspraak {
-  return { nb: visTekst(verdi, 'nb'), nn: visTekst(verdi, 'nn') };
+  return typeof verdi === 'string' ? latBegge((m) => hentTekst(m, verdi)) : verdi;
 }
 
 /** Tall med høyst `desimaler` desimaler. `minst` gir faste desimaler, f.eks. 2 for kronebeløp (1 748,80). */

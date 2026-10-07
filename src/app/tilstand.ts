@@ -1,6 +1,6 @@
 // Appens tilstand: innstillinger og favoritter, lagret lokalt via lagringsmodulen.
 import { useEffect, useMemo, useState } from 'preact/hooks';
-import { hentTekst, type Malform, type Tekstnokkel, type Verdier } from '../core/i18n/tekst.ts';
+import { hentTekst, lastTekster, teksterLastet, type Malform, type Tekstnokkel, type Verdier } from '../core/i18n/tekst.ts';
 import {
   lesLagret,
   lesValg,
@@ -56,8 +56,15 @@ class Tilstand {
   sett(data: Lagret): void {
     this.data = data;
     this.kanLagre = skrivLagret(this.lager, data);
-    anvendInnstillinger(data.innstillinger);
-    for (const l of this.lyttere) l(data);
+    // Bytter brukeren målform, vises endringen først når tekstene er lastet (avgjørelse 083).
+    const malform = data.innstillinger.malform;
+    if (teksterLastet(malform)) this.varsle();
+    else void lastTekster(malform).then(() => this.varsle(), () => this.varsle());
+  }
+
+  private varsle(): void {
+    anvendInnstillinger(this.data.innstillinger);
+    for (const l of this.lyttere) l(this.data);
   }
 
   oppdater(endring: (data: Lagret) => Lagret): void {

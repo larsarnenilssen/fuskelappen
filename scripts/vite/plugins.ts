@@ -39,14 +39,26 @@ export function lesToken(rot: string, navn: string): string {
 
 /** Setter inn appnavn fra app.ts og temafarger fra tokens.css i index.html. */
 export function htmlPlugin(rot: string, navn: string, kortnavn: string): Plugin {
+  let base = '/';
   return {
     name: 'jukselappen:html',
-    transformIndexHtml(html) {
+    configResolved(config) {
+      base = config.base;
+    },
+    transformIndexHtml(html, ctx) {
+      // Filene med tekstene for hver målform, så index.html kan begynne å hente den valgte med en gang, samtidig med
+      // resten av startpakken (avgjørelse 083). I utvikling finnes ingen slike filer.
+      const tekstbiter: Record<string, string> = {};
+      for (const del of Object.values(ctx.bundle ?? {})) {
+        const malform = del.type === 'chunk' ? /\/src\/strings\/(nb|nn)\.ts$/.exec(del.facadeModuleId ?? '')?.[1] : undefined;
+        if (malform) tekstbiter[malform] = `${base}${del.fileName}`;
+      }
       return html
         .replaceAll('%APP_NAVN%', navn)
         .replaceAll('%APP_KORTNAVN%', kortnavn)
         .replaceAll('%TEMAFARGE_LYS%', lesToken(rot, 'meta-temafarge-lys'))
-        .replaceAll('%TEMAFARGE_MORK%', lesToken(rot, 'meta-temafarge-mork'));
+        .replaceAll('%TEMAFARGE_MORK%', lesToken(rot, 'meta-temafarge-mork'))
+        .replaceAll('%TEKSTBITER%', JSON.stringify(tekstbiter));
     },
   };
 }

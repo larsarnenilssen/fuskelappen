@@ -19,6 +19,8 @@ let lopende: Promise<Sokefunksjon> | null = null;
 async function lag(): Promise<Sokefunksjon> {
   const { byggIndeks, lastIndeks, sok } = await import('../core/sok/sok.ts');
   if (import.meta.env.DEV) {
+    const { lastAlleTekster } = await import('../core/i18n/tekst.ts');
+    await lastAlleTekster();
     const { samleSokeoppforinger } = await import('../modules/register.ts');
     const { kjerneoppforinger } = await import('./kjerneoppforinger.ts');
     const indeks = byggIndeks([...kjerneoppforinger(), ...(await samleSokeoppforinger())], synonymer);

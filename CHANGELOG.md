@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Raskere oppstart:** Bare tekstene på målformen du har valgt, lastes når appen åpnes. Den andre lastes når du bytter.
+
 ## [0.41.0] – 2026-10-07
 
 ### Lagt til

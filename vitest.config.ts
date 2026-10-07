@@ -6,6 +6,7 @@ export default defineConfig((env) =>
     test: {
       include: ['tests/unit/**/*.test.ts', 'tests/content/**/*.test.ts', 'tests/fasit/**/*.test.ts'],
       environment: 'node',
+      setupFiles: ['tests/oppsett.ts'],
     },
   }),
 );

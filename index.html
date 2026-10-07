@@ -23,6 +23,21 @@
         if (inn && (inn.tema === 'lys' || inn.tema === 'mork')) document.documentElement.dataset.tema = inn.tema;
         if (inn && inn.malform === 'nn') document.documentElement.lang = 'nn';
       } catch (e) {}
+      // Henter tekstene for målformen med en gang, samtidig med resten av appen. Samme valg som i app/tilstand.ts.
+      try {
+        var spraak = navigator.languages || [navigator.language];
+        var forste = '';
+        for (var i = 0; i < spraak.length; i++) if (/^(nb|nn|no)\b/i.test(spraak[i])) { forste = spraak[i].toLowerCase(); break; }
+        var malform = inn && (inn.malform === 'nb' || inn.malform === 'nn') ? inn.malform : forste.indexOf('nn') === 0 ? 'nn' : 'nb';
+        var tekstbit = %TEKSTBITER%[malform];
+        if (tekstbit) {
+          var lenke = document.createElement('link');
+          lenke.rel = 'modulepreload';
+          lenke.crossOrigin = '';
+          lenke.href = tekstbit;
+          document.head.appendChild(lenke);
+        }
+      } catch (e) {}
     </script>
   </head>
   <body>
