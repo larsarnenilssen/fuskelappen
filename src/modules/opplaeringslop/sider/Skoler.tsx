@@ -21,6 +21,7 @@ import { filtrerSkoler, lopetTil, type Skoleoppforing } from '../skoler.ts';
 import { sokTilbud } from '../sok.ts';
 import { Brodsmuler, DinSkole, Lasting, Tilbudslenke, tilbudsnavn, useSkoler, useTilbudsdata } from './felles.tsx';
 import { SkolenITall, useStatistikk } from '../../statistikk/komponenter.tsx';
+import { harSkoletall } from '../../statistikk/visning.ts';
 import type { Statistikk } from '../../../core/statistikk/skjema.ts';
 
 const PER_SIDE = 30;
@@ -150,6 +151,27 @@ function Skolekort({
     valgt && vedSkolen.includes(valgt)
       ? t('opplaeringslop.skoler.bareLopet', { tilbud: tilbudsnavn(t, indeks, valgt, malform) })
       : t('opplaeringslop.skoler.bareProgram', { program: tilbud.struktur.find((p) => p.program === program)?.navn[malform] ?? program });
+  const iTall = !!statistikk && !!skole.orgnr && harSkoletall(statistikk, skole.orgnr);
+  const snarveier =
+    skole.nettside || regler.length > 0 ? (
+      <>
+        {skole.nettside && (
+          <a class="knapp knapp-sekundaer knapp-liten" href={skole.nettside} target="_blank" rel="noopener noreferrer">
+            {t('opplaeringslop.skoler.nettsideKort')}
+            <Ikon navn="ekstern" class="ikon-liten" />
+          </a>
+        )}
+        {regler.map((r) => (
+          <a key={r.id} class="knapp knapp-sekundaer knapp-liten" href={`#${dokumentRute(r.id)}`}>
+            {/* Tegnet i samme skrift som teksten står på grunnlinjen. Ikonet ble smalt og skjevt (eier 05.10.2026). */}
+            <span class="skolekort-paragraf" aria-hidden="true">
+              §
+            </span>
+            {regelnavn(r)}
+          </a>
+        ))}
+      </>
+    ) : null;
   const under = [skole.sted, fylkesnavn(skole.fylke), skole.privat ? t('opplaeringslop.skoler.privat') : null, t('opplaeringslop.skoler.antallTilbud', { antall: formaterTall(antall) })].filter(Boolean).join(' · ');
   return (
     <li class={vist ? 'skolekort apen' : 'skolekort'} data-skole={skole.nr ?? undefined}>
@@ -168,28 +190,18 @@ function Skolekort({
         {skole.nr && <FavorittKnapp id={skolefavoritt(skole.nr)} navn={skole.navn} liten />}
       </div>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
-        {/* Nettsiden og skolens egne regler som knapper øverst, og en strek før tilbudene (eier 05.10.2026). */}
-        {/* Skolen i tall øverst i kortet (skisse til eier 07.10.2026, avgjørelse 080). */}
-        {vist && statistikk && skole.orgnr && <SkolenITall orgnr={skole.orgnr} d={statistikk} />}
-        {vist && (skole.nettside || regler.length > 0) && (
+        {/* Nettsiden og skolens egne regler som knapper øverst, og en strek før tilbudene (eier 05.10.2026). Har skolen
+            tall fra statistikkbanken, står knappene i rammen med tallene, så kortet ikke får en egen rad (eier 07.10.2026,
+            skisse, avgjørelse 080). */}
+        {vist && (iTall || snarveier) && (
           <>
-            <p class="skolekort-snarveier">
-              {skole.nettside && (
-                <a class="knapp knapp-sekundaer knapp-liten" href={skole.nettside} target="_blank" rel="noopener noreferrer">
-                  {t('opplaeringslop.skoler.nettsideKort')}
-                  <Ikon navn="ekstern" class="ikon-liten" />
-                </a>
-              )}
-              {regler.map((r) => (
-                <a key={r.id} class="knapp knapp-sekundaer knapp-liten" href={`#${dokumentRute(r.id)}`}>
-                  {/* Tegnet i samme skrift som teksten står på grunnlinjen. Ikonet ble smalt og skjevt (eier 05.10.2026). */}
-                  <span class="skolekort-paragraf" aria-hidden="true">
-                    §
-                  </span>
-                  {regelnavn(r)}
-                </a>
-              ))}
-            </p>
+            {iTall && statistikk && skole.orgnr ? (
+              <SkolenITall orgnr={skole.orgnr} d={statistikk}>
+                {snarveier}
+              </SkolenITall>
+            ) : (
+              <p class="skolekort-snarveier">{snarveier}</p>
+            )}
             <p class="skolekort-skille">{t('opplaeringslop.skoler.tilbudVedSkolen', { antall: formaterTall(antall) })}</p>
           </>
         )}

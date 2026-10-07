@@ -1,8 +1,8 @@
 // Visningen av nøkkeltallene fra Udirs statistikkbank (avgjørelse 080): endringen fra året før, rangeringen av fylkene
 // og utdanningsprogrammene i riktig rekkefølge.
 import { describe, expect, it } from 'vitest';
-import type { Statistikk } from '../../src/core/statistikk/skjema.ts';
-import { endringPoeng, endringProsent, forrigeVerdi, fylkesnokkel, programmerFor, ranger, sisteVerdi } from '../../src/modules/statistikk/visning.ts';
+import type { Statistikk, Verdi } from '../../src/core/statistikk/skjema.ts';
+import { endringPoeng, endringProsent, forrigeVerdi, type Fylkerad, fylkesnokkel, programmerFor, ranger, sisteVerdi, sorterFylker } from '../../src/modules/statistikk/visning.ts';
 
 const d = {
   enheter: { L: { navn: 'Hele landet' }, F46: { navn: 'Vestland' }, F11: { navn: 'Rogaland' }, F03: { navn: 'Oslo' }, F18: { navn: 'Nordland' } },
@@ -55,5 +55,22 @@ describe('visningen av nøkkeltallene', () => {
     expect(p.map((x) => x.id)).toEqual(['st', 'id', 'tp', 'el']);
     expect(p[0]).toMatchObject({ naa: 7392, foer: 7684 });
     expect(programmerFor(d, 'F03').every((x) => x.naa === null)).toBe(true);
+  });
+});
+
+describe('sorteringen av fylkene', () => {
+  const rad = (enhet: string, navn: string, sokere: Verdi, fravaer: Verdi = 6): Fylkerad => ({ enhet, navn, verdier: { sokere, elever: null, laereplass: null, gjennomforing: null, fravaer } });
+  const rader = [rad('F46', 'Vestland', 25090, 7), rad('F03', 'Oslo', 22569, 7), rad('F42', 'Agder', 13388, 5), rad('F56', 'Finnmark', '*', null)];
+
+  it('sorterer på navnet alfabetisk, også baklengs', () => {
+    expect(sorterFylker(rader, 'navn', false).map((r) => r.navn)).toEqual(['Agder', 'Finnmark', 'Oslo', 'Vestland']);
+    expect(sorterFylker(rader, 'navn', true).map((r) => r.navn)).toEqual(['Vestland', 'Oslo', 'Finnmark', 'Agder']);
+  });
+
+  it('sorterer tallene høyest eller lavest først, med fylker uten tall sist', () => {
+    expect(sorterFylker(rader, 'sokere', true).map((r) => r.enhet)).toEqual(['F46', 'F03', 'F42', 'F56']);
+    expect(sorterFylker(rader, 'sokere', false).map((r) => r.enhet)).toEqual(['F42', 'F03', 'F46', 'F56']);
+    // Like tall står alfabetisk.
+    expect(sorterFylker(rader, 'fravaer', true).map((r) => r.enhet)).toEqual(['F03', 'F46', 'F42', 'F56']);
   });
 });

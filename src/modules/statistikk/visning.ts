@@ -60,3 +60,51 @@ export function programmerFor(d: Statistikk, enhet: string): { id: string; navn:
     .map((p) => ({ ...p, naa: sisteVerdi(v[p.id]), foer: forrigeVerdi(v[p.id]) }))
     .sort((a, b) => Number(a.yrkesfag) - Number(b.yrkesfag) || Number(b.naa ?? 0) - Number(a.naa ?? 0));
 }
+
+/** Kolonnene i tabellen over fylkene. */
+export const FYLKEKOLONNER = ['sokere', 'elever', 'laereplass', 'gjennomforing', 'fravaer'] as const;
+export type Fylketall = (typeof FYLKEKOLONNER)[number];
+export type Fylkekolonne = 'navn' | Fylketall;
+
+export interface Fylkerad {
+  enhet: string;
+  navn: string;
+  verdier: Record<Fylketall, Verdi>;
+}
+
+/** De siste tallene for en enhet (et fylke eller landet), én verdi per kolonne. */
+export function fylkerad(d: Statistikk, enhet: string): Fylkerad {
+  return {
+    enhet,
+    navn: d.enheter[enhet]?.navn ?? enhet,
+    verdier: {
+      sokere: sisteVerdi(d.sokere.alle[enhet]),
+      elever: sisteVerdi(d.elever.elever[enhet]),
+      laereplass: sisteVerdi(d.formidling.desember[enhet]),
+      gjennomforing: sisteVerdi(d.gjennomforing.verdier[enhet]),
+      fravaer: d.fravaer.total[enhet] ?? null,
+    },
+  };
+}
+
+/**
+ * Fylkene sortert på en kolonne (eier 07.10.2026): navnet alfabetisk, tallene høyest eller lavest først. Fylker uten tall
+ * i kolonnen står alltid sist, i alfabetisk rekkefølge.
+ */
+export function sorterFylker(rader: readonly Fylkerad[], kolonne: Fylkekolonne, synkende: boolean): Fylkerad[] {
+  const navn = (a: Fylkerad, b: Fylkerad) => a.navn.localeCompare(b.navn, 'nb');
+  if (kolonne === 'navn') return [...rader].sort((a, b) => (synkende ? navn(b, a) : navn(a, b)));
+  const tall = (r: Fylkerad) => (typeof r.verdier[kolonne] === 'number' ? (r.verdier[kolonne] as number) : null);
+  return [...rader].sort((a, b) => {
+    const x = tall(a);
+    const y = tall(b);
+    if (x === null || y === null) return x === null && y === null ? navn(a, b) : x === null ? 1 : -1;
+    return (synkende ? y - x : x - y) || navn(a, b);
+  });
+}
+
+/** Om skolen har tall i dataene (elevtall eller fravær). */
+export function harSkoletall(d: Statistikk, orgnr: string): boolean {
+  const enhet = `S${orgnr}`;
+  return !!d.elever.elever[enhet] || (d.fravaer.total[enhet] ?? null) !== null;
+}

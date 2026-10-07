@@ -40,13 +40,17 @@ export const statistikkNn = {
     tekst: 'Skule og læreplass, per 1. mars {aar}. Streken er {fjor}.',
     studieforberedende: 'Studieførebuande',
     yrkesfag: 'Yrkesfag',
+    innhold: 'Flest søkjarar: {program} ({antall}).',
   },
   hosten: {
     tittel: 'Læreplass gjennom hausten',
     tekst: 'Delen søkjarar til læreplass med lærekontrakt i august, oktober og desember {aar}.',
+    innhold: '{maned}: {verdier}.',
   },
   gjennomforing: {
     tittel: 'Gjennomføring',
+    del: 'Gjennomføring og fråvær',
+    innhold: 'Gjennomført {gjennomforing}, fråvær {fravaer}.',
     tekst: 'Delen som fullførte og bestod innan fem eller seks år, for elevane som starta på vg1 i {kull}.',
     beregnet: 'Udir oppgir kulla som starta før 2020, på fylka den gongen. Appen reknar dei om til dagens fylke med tala for dei gamle fylka.',
     fagbrev: 'Fag- eller sveinebrev fem år etter start i lære',
@@ -64,6 +68,7 @@ export const statistikkNn = {
     tekst: 'Gjennomsnittleg karakter i dei største fellesfaga, skuleåret {skolear}{forelopig}.',
     forelopig: ' (førebelse tal)',
     fag: 'Fag',
+    innhold: 'Snittkarakter i {antall} fellesfag.',
     kort: {
       NOR1267: 'Norsk hovudmål, Vg3 studieførebuande',
       NOR1262: 'Norsk, Vg2 yrkesfag',
@@ -73,7 +78,9 @@ export const statistikkNn = {
   },
   fylkene: {
     tittel: 'Fylka side om side',
-    tekst: 'Dei siste tala for kvart fylke. Fylket du har valt, er markert.',
+    tekst: 'Dei siste tala for kvart fylke. Fylket du har valt, er markert. Trykk på ein kolonne for å sortere.',
+    vis: 'Vis og sorter etter',
+    innhold: 'Søkjarar, elevar, læreplass, gjennomføring og fråvær for kvart fylke.',
     fylke: 'Fylke',
     sokere: 'Søkjarar',
     elever: 'Elevar',
@@ -95,7 +102,8 @@ export const statistikkNn = {
     tittel: 'Skulen i tal',
     elever: 'Elevar {skolear}',
     fravaer: 'Fråvær {skolear}',
-    fravaerVerdi: 'median {dager}',
+    fravaerVerdi: '{dager}',
+    fravaerUnder: 'median',
     elevundersokelsen: 'Elevundersøkinga for skulen',
   },
 };

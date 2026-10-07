@@ -40,13 +40,17 @@ export const statistikkNb = {
     tekst: 'Skole og læreplass, per 1. mars {aar}. Streken er {fjor}.',
     studieforberedende: 'Studieforberedende',
     yrkesfag: 'Yrkesfag',
+    innhold: 'Flest søkere: {program} ({antall}).',
   },
   hosten: {
     tittel: 'Læreplass gjennom høsten',
     tekst: 'Andelen søkere til læreplass med lærekontrakt i august, oktober og desember {aar}.',
+    innhold: '{maned}: {verdier}.',
   },
   gjennomforing: {
     tittel: 'Gjennomføring',
+    del: 'Gjennomføring og fravær',
+    innhold: 'Gjennomført {gjennomforing}, fravær {fravaer}.',
     tekst: 'Andelen som fullførte og besto innen fem eller seks år, for elevene som startet på vg1 i {kull}.',
     beregnet: 'Udir oppgir kullene som startet før 2020, på fylkene den gang. Appen regner dem om til dagens fylker med tallene for de gamle fylkene.',
     fagbrev: 'Fag- eller svennebrev fem år etter start i lære',
@@ -64,6 +68,7 @@ export const statistikkNb = {
     tekst: 'Gjennomsnittlig karakter i de største fellesfagene, skoleåret {skolear}{forelopig}.',
     forelopig: ' (foreløpige tall)',
     fag: 'Fag',
+    innhold: 'Snittkarakter i {antall} fellesfag.',
     kort: {
       NOR1267: 'Norsk hovedmål, Vg3 studieforberedende',
       NOR1262: 'Norsk, Vg2 yrkesfag',
@@ -73,7 +78,9 @@ export const statistikkNb = {
   },
   fylkene: {
     tittel: 'Fylkene side om side',
-    tekst: 'De siste tallene for hvert fylke. Fylket du har valgt, er markert.',
+    tekst: 'De siste tallene for hvert fylke. Fylket du har valgt, er markert. Trykk på en kolonne for å sortere.',
+    vis: 'Vis og sorter etter',
+    innhold: 'Søkere, elever, læreplass, gjennomføring og fravær for hvert fylke.',
     fylke: 'Fylke',
     sokere: 'Søkere',
     elever: 'Elever',
@@ -95,7 +102,8 @@ export const statistikkNb = {
     tittel: 'Skolen i tall',
     elever: 'Elever {skolear}',
     fravaer: 'Fravær {skolear}',
-    fravaerVerdi: 'median {dager}',
+    fravaerVerdi: '{dager}',
+    fravaerUnder: 'median',
     elevundersokelsen: 'Elevundersøkelsen for skolen',
   },
 };

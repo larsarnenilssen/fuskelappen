@@ -9627,13 +9627,19 @@ a.knapp {
 }
 
 /* Tallboksen på sidene der tallene hører hjemme. */
+/* Samme avstand som mellom delene ellers på sidene (eier 07.10.2026). */
 .st-boks {
-  margin: var(--rom-3) 0 var(--rom-4);
+  margin: var(--rom-5) 0;
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
   border-left: 4px solid var(--serie-1);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
+}
+
+/* Etter en kalkulator: samme avstand som mellom delene i kalkulatoren, f.eks. fra «Sjekk fraværet» til kortet under. */
+.kalkulator-flate + .st-boks {
+  margin-top: calc(var(--rom-5) + var(--rom-3));
 }
 
 .st-boks-tittel {
@@ -9659,11 +9665,33 @@ a.knapp {
 }
 
 /* Skolen i tall i skolekortet. */
+/* Skolen i tall: tallene til venstre og knappene til nettsiden og reglene til høyre. På smal skjerm går knappene under
+   tallene (eier 07.10.2026). */
 .st-skolen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--rom-3) var(--rom-5);
   margin: 0 0 var(--rom-3);
-  padding: var(--rom-2) var(--rom-3);
+  padding: var(--rom-3);
   border-left: 4px solid var(--serie-1);
   background: var(--farge-bakgrunn);
+}
+
+.st-skolen-hoved {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.st-skolen-snarveier {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+}
+
+.st-skolen-snarveier .knapp {
+  text-decoration: none;
 }
 
 .st-skolen-tittel {
@@ -9672,6 +9700,8 @@ a.knapp {
   font-weight: 700;
 }
 
+/* Tallene står side om side og går under hverandre når de ikke får plass. Tekstene brytes ikke, så etikettene er én
+   linje og tallene står på samme linje (eier 07.10.2026). */
 .st-skolen-tall {
   display: flex;
   flex-wrap: wrap;
@@ -9683,4 +9713,69 @@ a.knapp {
 
 .st-skolen-tall li {
   display: grid;
+  align-content: start;
+  white-space: nowrap;
+}
+
+/* Tabellen over fylkene kan sorteres (eier 07.10.2026). Overskriftene er knapper med en pil for retningen. */
+.st-sorter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  width: 100%;
+  min-height: 2.25rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+.st-tabell thead th:not(:first-child) .st-sorter {
+  justify-content: flex-end;
+}
+
+.st-sorter:hover {
+  text-decoration: underline;
+}
+
+/* Pilen for en kolonne som ikke er sortert, er svakere enn pilen for kolonnen som er det. */
+.st-sorter .ikon[data-ikon='sorter'] {
+  opacity: 0.5;
+}
+
+/* Valget av kolonne trengs bare på mobil, der tabellen viser fylket og én kolonne. */
+.st-vis {
+  display: none;
+}
+
+@media (max-width: 40rem) {
+  .st-vis {
+    display: block;
+    margin-bottom: var(--rom-3);
+  }
+
+  .st-fylketabell .st-kol:not(.st-kol-vist) {
+    display: none;
+  }
+}
+
+.st-ingen {
+  margin: 0 0 var(--rom-3);
+}
+
+/* På smal skjerm kan overskriftene i tabellene gå over to linjer, og cellene har mindre luft, så tre kolonner får plass i
+   320 px (f.eks. eksamen: faget, fylket og landet). */
+@media (max-width: 30rem) {
+  .st-tabell thead th {
+    white-space: normal;
+  }
+
+  .st-tabell th,
+  .st-tabell td {
+    padding-inline: var(--rom-1);
+  }
 }

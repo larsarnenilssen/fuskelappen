@@ -7,13 +7,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til (skisse til godkjenning)
 
 - **Videregående i tall** (ny side): søkere per utdanningsprogram, fylkene side om side, læreplass fylke for fylke og gjennom høsten, gjennomføring, fag- og svennebrev, fravær og eksamen. Velg fylke eller hele landet. Tallene kommer fra Udirs statistikkbank og hentes hver uke.
+  - Delene kan lukkes og viser en kort oppsummering når de er lukket. På mobil er de lukket fra start, unntatt gjennomføring og fravær.
+  - Tabellen over fylkene kan sorteres på alle kolonnene. På mobil velger du hvilken kolonne som vises.
 - **Tallene der de hører hjemme:**
   - Fylkessiden: fire nøkkeltall og fylkets plass.
   - Inntak: søkerne.
   - Lærlinger og kandidater: læreplass og lærekontrakter.
   - Fraværsgrensen: median fravær, også for valgt skole.
   - Eksamen: snittkarakterer.
-  - Skolekortet: elevtall og fravær.
+  - Skolekortet: elevtall og fravær, med knappene til nettsiden og skolens regler i samme ramme.
 - **Nye begreper:** nulltoleranse og psykososialt skolemiljø.
 
 ### Endret

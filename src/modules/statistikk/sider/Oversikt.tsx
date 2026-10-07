@@ -5,17 +5,23 @@
 // - Til venstre: søkere per utdanningsprogram (i år som stolpe, i fjor som strek) og fylkene side om side i en tabell.
 // - Til høyre: fylkene rangert på læreplass, læreplass gjennom høsten, gjennomføring, fravær og eksamen, og kildene.
 // - Gjennomføringen er regnet om til dagens fylker av appen, og det står under tallene.
+// - Delene kan lukkes (Seksjon, eier 07.10.2026) og viser en kort oppsummering når de er lukket. På mobil er alle lukket
+//   fra start unntatt gjennomføring og fravær, som er tre korte tall, så siden gir rask oversikt.
+// - Tabellen over fylkene kan sorteres på alle kolonnene (eier 07.10.2026). På mobil viser den fylket og én kolonne,
+//   som brukeren velger, fordi seks kolonner ikke får plass i 320 px.
 import { useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeboks } from '../../../components/Kildeboks.tsx';
+import { Seksjon } from '../../../components/Seksjon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { ToKolonner } from '../../../components/ToKolonner.tsx';
+import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
 import type { Statistikk, Verdi } from '../../../core/statistikk/skjema.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import type { SideProps } from '../../typer.ts';
 import { eksamenTekst, endringTekst, fagnavn, Nokkeltall, Rangering, STATISTIKK_RUTE, stedsnavn, tekstFor, useStatistikk } from '../komponenter.tsx';
-import { fylkeneIDataene, fylkesnokkel, programmerFor, sisteVerdi } from '../visning.ts';
+import { FYLKEKOLONNER, type Fylkekolonne, fylkerad, fylkeneIDataene, fylkesnokkel, type Fylketall, programmerFor, ranger, sisteFor, sisteVerdi, sorterFylker } from '../visning.ts';
 import type { T } from '../../../app/tilstand.ts';
 
 /** Søkere per utdanningsprogram: i år som stolpe og i fjor som strek, studieforberedende og yrkesfag hver for seg. */
@@ -38,7 +44,6 @@ function Programmer({ d, enhet }: { d: Statistikk; enhet: string }) {
   return (
     <figure class="st-figur">
       <figcaption>
-        <span class="st-figur-tittel">{t('statistikk.program.tittel')}</span>
         <span class="st-figur-tekst">
           {t('statistikk.program.tekst', {
             aar: String(aarNaa ?? ''),
@@ -78,7 +83,6 @@ function Hosten({ d, enhet }: { d: Statistikk; enhet: string }) {
   return (
     <figure class="st-figur">
       <figcaption>
-        <span class="st-figur-tittel">{t('statistikk.hosten.tittel')}</span>
         <span class="st-figur-tekst">{t('statistikk.hosten.tekst', { aar: String(h.aar) })}</span>
       </figcaption>
       <ul class="st-maneder">
@@ -125,37 +129,84 @@ function Par({ d, enhet, tittel, verdi, landet, form, tekst }: { d: Statistikk; 
   );
 }
 
-/** Fylkene side om side: de siste tallene for hvert fylke, med det valgte fylket markert og landet nederst. */
+/** Hvordan en tallkolonne vises i tabellen. */
+const FORM: Record<Fylketall, 'antall' | 'prosent' | 'dager'> = { sokere: 'antall', elever: 'antall', laereplass: 'prosent', gjennomforing: 'prosent', fravaer: 'dager' };
+
+/**
+ * Fylkene side om side: de siste tallene for hvert fylke, med det valgte fylket markert og landet nederst. Overskriftene
+ * er knapper som sorterer: navnet alfabetisk, tallene høyest først og så lavest først. På mobil vises fylket og
+ * kolonnen i «Vis og sorter etter».
+ */
 function Fylkene({ d, enhet }: { d: Statistikk; enhet: string }) {
   const { t } = useTekst();
-  const rader = [...fylkeneIDataene(d).map((f) => f.nokkel), 'L'];
+  const [sortering, settSortering] = useState<{ kolonne: Fylkekolonne; synkende: boolean }>({ kolonne: 'navn', synkende: false });
+  const [vist, settVist] = useState<Fylketall>('sokere');
+  const rader = sorterFylker(
+    fylkeneIDataene(d).map((f) => fylkerad(d, f.nokkel)),
+    sortering.kolonne,
+    sortering.synkende,
+  );
+  const landet = fylkerad(d, 'L');
+  const sorter = (kolonne: Fylkekolonne) => {
+    // Første trykk på en tallkolonne gir høyest først, neste trykk lavest først. Navnet starter med A.
+    settSortering(sortering.kolonne === kolonne ? { kolonne, synkende: !sortering.synkende } : { kolonne, synkende: kolonne !== 'navn' });
+    if (kolonne !== 'navn') settVist(kolonne);
+  };
+  const ariaSort = (kolonne: Fylkekolonne) => (sortering.kolonne === kolonne ? (sortering.synkende ? 'descending' : 'ascending') : undefined);
+  const pil = (kolonne: Fylkekolonne) => (sortering.kolonne === kolonne ? (sortering.synkende ? 'ned' : 'opp') : 'sorter');
+  const kol = (k: Fylketall) => (k === vist ? 'st-kol st-kol-vist' : 'st-kol');
   return (
     <figure class="st-figur">
-      <figcaption id="st-fylkene-tittel">
-        <span class="st-figur-tittel">{t('statistikk.fylkene.tittel')}</span>
+      <figcaption id="st-fylkene-tekst">
         <span class="st-figur-tekst">{t('statistikk.fylkene.tekst')}</span>
       </figcaption>
+      <div class="felt st-vis">
+        <label for="st-fylkene-vis">{t('statistikk.fylkene.vis')}</label>
+        <select
+          id="st-fylkene-vis"
+          value={vist}
+          onChange={(e) => {
+            const k = e.currentTarget.value as Fylketall;
+            settVist(k);
+            settSortering({ kolonne: k, synkende: true });
+          }}
+        >
+          {FYLKEKOLONNER.map((k) => (
+            <option key={k} value={k}>
+              {t(`statistikk.fylkene.${k}`)}
+            </option>
+          ))}
+        </select>
+      </div>
       <div class="st-rulle">
-        <table class="st-tabell" aria-labelledby="st-fylkene-tittel">
+        <table class="st-tabell st-fylketabell" aria-label={t('statistikk.fylkene.tittel')} aria-describedby="st-fylkene-tekst">
           <thead>
             <tr>
-              <th scope="col">{t('statistikk.fylkene.fylke')}</th>
-              <th scope="col">{t('statistikk.fylkene.sokere')}</th>
-              <th scope="col">{t('statistikk.fylkene.elever')}</th>
-              <th scope="col">{t('statistikk.fylkene.laereplass')}</th>
-              <th scope="col">{t('statistikk.fylkene.gjennomforing')}</th>
-              <th scope="col">{t('statistikk.fylkene.fravaer')}</th>
+              <th scope="col" aria-sort={ariaSort('navn')}>
+                <button type="button" class="st-sorter" onClick={() => sorter('navn')}>
+                  {t('statistikk.fylkene.fylke')}
+                  <Ikon navn={pil('navn')} class="ikon-liten" />
+                </button>
+              </th>
+              {FYLKEKOLONNER.map((k) => (
+                <th key={k} scope="col" class={kol(k)} aria-sort={ariaSort(k)}>
+                  <button type="button" class="st-sorter" onClick={() => sorter(k)}>
+                    {t(`statistikk.fylkene.${k}`)}
+                    <Ikon navn={pil(k)} class="ikon-liten" />
+                  </button>
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            {rader.map((k) => (
-              <tr key={k} class={k === enhet ? 'st-valgt' : k === 'L' ? 'st-tabell-landet' : undefined}>
-                <th scope="row">{stedsnavn(d, k, t)}</th>
-                <td>{tekstFor(t, sisteVerdi(d.sokere.alle[k]))}</td>
-                <td>{tekstFor(t, sisteVerdi(d.elever.elever[k]))}</td>
-                <td>{tekstFor(t, sisteVerdi(d.formidling.desember[k]), 'prosent')}</td>
-                <td>{tekstFor(t, sisteVerdi(d.gjennomforing.verdier[k]), 'prosent')}</td>
-                <td>{tekstFor(t, d.fravaer.total[k] ?? null, 'dager')}</td>
+            {[...rader, landet].map((r) => (
+              <tr key={r.enhet} class={r.enhet === enhet ? 'st-valgt' : r.enhet === 'L' ? 'st-tabell-landet' : undefined}>
+                <th scope="row">{stedsnavn(d, r.enhet, t)}</th>
+                {FYLKEKOLONNER.map((k) => (
+                  <td key={k} class={kol(k)}>
+                    {tekstFor(t, r.verdier[k], FORM[k])}
+                  </td>
+                ))}
               </tr>
             ))}
           </tbody>
@@ -166,15 +217,14 @@ function Fylkene({ d, enhet }: { d: Statistikk; enhet: string }) {
 }
 
 /** Skriftlig eksamen i de største fellesfagene: fylket og landet. */
-export function Eksamenstabell({ d, enhet, t }: { d: Statistikk; enhet: string; t: T }) {
+function Eksamenstabell({ d, enhet, t }: { d: Statistikk; enhet: string; t: T }) {
   return (
     <figure class="st-figur">
-      <figcaption id="st-eksamen-tittel">
-        <span class="st-figur-tittel">{t('statistikk.eksamen.tittel')}</span>
+      <figcaption id="st-eksamen-tekst">
         <span class="st-figur-tekst">{eksamenTekst(t, d)}</span>
       </figcaption>
       <div class="st-rulle">
-        <table class="st-tabell" aria-labelledby="st-eksamen-tittel">
+        <table class="st-tabell" aria-label={t('statistikk.eksamen.tittel')} aria-describedby="st-eksamen-tekst">
           <thead>
             <tr>
               <th scope="col">{t('statistikk.eksamen.fag')}</th>
@@ -201,6 +251,8 @@ export default function Oversikt({ sporring }: SideProps) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
   const d = useStatistikk();
+  // På mobil er delene lukket fra start (eier 07.10.2026), på skrivebord åpne.
+  const bred = useBred();
   const [fylke, settFylke] = useState<string | null>(() => sporring.get('fylke') ?? innstillinger.fylke ?? null);
 
   return (
@@ -216,6 +268,24 @@ export default function Oversikt({ sporring }: SideProps) {
           const enhet = d.enheter[fylkesnokkel(fylke)] ? fylkesnokkel(fylke) : 'L';
           const kull = d.gjennomforing.kull.at(-1) ?? '';
           const fagbrev = d.fagbrev.verdier[enhet] ?? null;
+          // Oppsummeringene som står under en lukket del.
+          const flest = programmerFor(d, enhet).reduce<{ navn: string; naa: Verdi } | null>((m, p) => (typeof p.naa === 'number' && (!m || p.naa > (m.naa as number)) ? p : m), null);
+          const programInnhold = flest ? t('statistikk.program.innhold', { program: flest.navn, antall: tekstFor(t, flest.naa) }) : undefined;
+          const rangert = ranger(d, sisteFor(d.formidling.desember));
+          const plass = rangert.find((r) => r.enhet === enhet);
+          const rangeringInnhold = plass ? t('statistikk.rangering.plass', { sted: plass.navn, plass: String(plass.plass), antall: String(rangert.length) }) : undefined;
+          const h = d.formidling.hosten;
+          const sisteManed = h.maneder.length - 1;
+          const hostenInnhold = t('statistikk.hosten.innhold', {
+            maned: h.maneder[sisteManed] ?? '',
+            // «Vestland 84,0 %, landet 79,5 %» – landet med liten forbokstav inne i setningen.
+            verdier: (enhet === 'L' ? ['L'] : [enhet, 'L'])
+              .map((s) => {
+                const verdi = tekstFor(t, h.verdier[s]?.[sisteManed] ?? null, 'prosent');
+                return s === 'L' ? t('statistikk.landetVerdi', { verdi }) : `${stedsnavn(d, s, t)} ${verdi}`;
+              })
+              .join(', '),
+          });
           return (
             <>
               <div class="felt st-velg">
@@ -242,55 +312,75 @@ export default function Oversikt({ sporring }: SideProps) {
               <ToKolonner
                 hoved={
                   <>
-                    <Programmer d={d} enhet={enhet} />
-                    <Fylkene d={d} enhet={enhet} />
+                    <Seksjon id="st-program" tittel={t('statistikk.program.tittel')} innhold={programInnhold} apen={bred}>
+                      <Programmer d={d} enhet={enhet} />
+                    </Seksjon>
+                    <Seksjon id="st-fylkene" tittel={t('statistikk.fylkene.tittel')} innhold={t('statistikk.fylkene.innhold')} apen={bred}>
+                      <Fylkene d={d} enhet={enhet} />
+                    </Seksjon>
                   </>
                 }
                 side={
                   <>
-                    <Rangering d={d} enhet={enhet} />
-                    <Hosten d={d} enhet={enhet} />
-                    <Par
-                      d={d}
-                      enhet={enhet}
-                      tittel={t('statistikk.gjennomforing.tittel')}
-                      verdi={sisteVerdi(d.gjennomforing.verdier[enhet])}
-                      landet={sisteVerdi(d.gjennomforing.verdier.L)}
-                      form="prosent"
-                      tekst={`${t('statistikk.gjennomforing.tekst', { kull: String(kull) })} ${d.gjennomforing.beregnet && enhet !== 'L' ? t('statistikk.gjennomforing.beregnet') : ''}`}
-                    />
-                    {fagbrev === null && enhet !== 'L' ? (
-                      <p class="st-figur-tekst">
-                        {t('statistikk.gjennomforing.ingenFagbrev', {
-                          sted: stedsnavn(d, enhet, t),
-                          kull: String(d.fagbrev.kull),
-                        })}
-                      </p>
-                    ) : (
+                    <Seksjon id="st-rangering" tittel={t('statistikk.rangering.tittel')} innhold={rangeringInnhold} apen={bred}>
+                      <Rangering d={d} enhet={enhet} medTittel={false} />
+                    </Seksjon>
+                    <Seksjon id="st-hosten" tittel={t('statistikk.hosten.tittel')} innhold={hostenInnhold} apen={bred}>
+                      <Hosten d={d} enhet={enhet} />
+                    </Seksjon>
+                    <Seksjon
+                      id="st-gjennomforing"
+                      tittel={t('statistikk.gjennomforing.del')}
+                      innhold={t('statistikk.gjennomforing.innhold', {
+                        gjennomforing: tekstFor(t, sisteVerdi(d.gjennomforing.verdier[enhet]), 'prosent'),
+                        fravaer: tekstFor(t, d.fravaer.total[enhet] ?? null, 'dager'),
+                      })}
+                      apen
+                    >
                       <Par
                         d={d}
                         enhet={enhet}
-                        tittel={t('statistikk.gjennomforing.fagbrev')}
-                        verdi={fagbrev}
-                        landet={d.fagbrev.verdier.L ?? null}
+                        tittel={t('statistikk.gjennomforing.tittel')}
+                        verdi={sisteVerdi(d.gjennomforing.verdier[enhet])}
+                        landet={sisteVerdi(d.gjennomforing.verdier.L)}
                         form="prosent"
-                        tekst={t('statistikk.gjennomforing.fagbrevTekst', {
-                          kull: String(d.fagbrev.kull),
+                        tekst={`${t('statistikk.gjennomforing.tekst', { kull: String(kull) })} ${d.gjennomforing.beregnet && enhet !== 'L' ? t('statistikk.gjennomforing.beregnet') : ''}`}
+                      />
+                      {fagbrev === null && enhet !== 'L' ? (
+                        <p class="st-figur-tekst st-ingen">
+                          {t('statistikk.gjennomforing.ingenFagbrev', {
+                            sted: stedsnavn(d, enhet, t),
+                            kull: String(d.fagbrev.kull),
+                          })}
+                        </p>
+                      ) : (
+                        <Par
+                          d={d}
+                          enhet={enhet}
+                          tittel={t('statistikk.gjennomforing.fagbrev')}
+                          verdi={fagbrev}
+                          landet={d.fagbrev.verdier.L ?? null}
+                          form="prosent"
+                          tekst={t('statistikk.gjennomforing.fagbrevTekst', {
+                            kull: String(d.fagbrev.kull),
+                          })}
+                        />
+                      )}
+                      <Par
+                        d={d}
+                        enhet={enhet}
+                        tittel={t('statistikk.fravaer.total')}
+                        verdi={d.fravaer.total[enhet] ?? null}
+                        landet={d.fravaer.total.L ?? null}
+                        form="dager"
+                        tekst={t('statistikk.fravaer.tekst', {
+                          skolear: d.fravaer.skolear.replace('-', '–'),
                         })}
                       />
-                    )}
-                    <Par
-                      d={d}
-                      enhet={enhet}
-                      tittel={t('statistikk.fravaer.total')}
-                      verdi={d.fravaer.total[enhet] ?? null}
-                      landet={d.fravaer.total.L ?? null}
-                      form="dager"
-                      tekst={t('statistikk.fravaer.tekst', {
-                        skolear: d.fravaer.skolear.replace('-', '–'),
-                      })}
-                    />
-                    <Eksamenstabell d={d} enhet={enhet} t={t} />
+                    </Seksjon>
+                    <Seksjon id="st-eksamen" tittel={t('statistikk.eksamen.tittel')} innhold={t('statistikk.eksamen.innhold', { antall: String(d.eksamen.fag.length) })} apen={bred}>
+                      <Eksamenstabell d={d} enhet={enhet} t={t} />
+                    </Seksjon>
                     <Kildeboks
                       kilder={[
                         {

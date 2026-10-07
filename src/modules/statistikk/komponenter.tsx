@@ -96,7 +96,7 @@ export function Nokkeltall({ d, enhet }: { d: Statistikk; enhet: string }) {
  * Fylkene rangert på andelen som fikk læreplass, som liggende stolper fra null. Det valgte fylket har seriefargen og
  * fet skrift, de andre er grå, og landet er en stiplet strek.
  */
-export function Rangering({ d, enhet }: { d: Statistikk; enhet: string }) {
+export function Rangering({ d, enhet, medTittel = true }: { d: Statistikk; enhet: string; medTittel?: boolean }) {
   const { t } = useTekst();
   const verdier = sisteFor(d.formidling.desember);
   const rangert = ranger(d, verdier);
@@ -106,7 +106,7 @@ export function Rangering({ d, enhet }: { d: Statistikk; enhet: string }) {
   return (
     <figure class="st-figur">
       <figcaption>
-        <span class="st-figur-tittel">{t('statistikk.rangering.tittel')}</span>
+        {medTittel && <span class="st-figur-tittel">{t('statistikk.rangering.tittel')}</span>}
         <span class="st-figur-tekst">
           {t('statistikk.rangering.tekst', { aar: String(d.formidling.aar.at(-1) ?? '') })}{' '}
           {valgt && t('statistikk.rangering.plass', { sted: valgt.navn, plass: String(valgt.plass), antall: String(rangert.length) })}
@@ -298,8 +298,12 @@ export function EksamenBoks({ fylke }: { fylke: string | null }) {
   );
 }
 
-/** Skolen i tall, i skolekortet: elevene de siste årene, fraværet og lenken til Elevundersøkelsen. */
-export function SkolenITall({ orgnr, d }: { orgnr: string; d: Statistikk }) {
+/**
+ * Skolen i tall, i skolekortet: elevene de siste årene, fraværet og lenken til Elevundersøkelsen. Knappene til nettsiden
+ * og skolens egne regler står i samme ramme, til høyre på stor skjerm og under tallene på mobil, så kortet ikke får en
+ * egen rad med knapper (eier 07.10.2026).
+ */
+export function SkolenITall({ orgnr, d, children }: { orgnr: string; d: Statistikk; children?: ComponentChildren }) {
   const { t } = useTekst();
   const enhet = `S${orgnr}`;
   const elever = d.elever.elever[enhet];
@@ -307,25 +311,30 @@ export function SkolenITall({ orgnr, d }: { orgnr: string; d: Statistikk }) {
   if (!elever && fravaer === null) return null;
   return (
     <div class="st-skolen">
-      <p class="st-skolen-tittel">{t('statistikk.skolen.tittel')}</p>
-      <ul class="st-skolen-tall">
-        {elever && (
-          <li>
-            <span class="st-flis-etikett">{t('statistikk.skolen.elever', { skolear: (d.elever.skolear.at(-1) ?? '').replace('-', '–') })}</span>
-            <b>{tekstFor(t, sisteVerdi(elever))}</b>
-            <span class="st-flis-under">{endringTekst(t, sisteVerdi(elever), forrigeVerdi(elever), (d.elever.skolear.at(-2) ?? '').replace('-', '–')) ?? ''}</span>
-          </li>
-        )}
-        {fravaer !== null && (
-          <li>
-            <span class="st-flis-etikett">{t('statistikk.skolen.fravaer', { skolear: d.fravaer.skolear.replace('-', '–') })}</span>
-            <b>{t('statistikk.skolen.fravaerVerdi', { dager: tekstFor(t, fravaer, 'dager') })}</b>
-          </li>
-        )}
-      </ul>
-      <p class="st-boks-lenke">
-        <a href={`#/skolemiljo/elevundersokelsen?s=S${orgnr}`}>{t('statistikk.skolen.elevundersokelsen')}</a>
-      </p>
+      <div class="st-skolen-hoved">
+        <p class="st-skolen-tittel">{t('statistikk.skolen.tittel')}</p>
+        {/* Etiketten, tallet og teksten under står i hver sin rad, så tallene står på samme linje. */}
+        <ul class="st-skolen-tall">
+          {elever && (
+            <li>
+              <span class="st-flis-etikett">{t('statistikk.skolen.elever', { skolear: (d.elever.skolear.at(-1) ?? '').replace('-', '–') })}</span>
+              <b>{tekstFor(t, sisteVerdi(elever))}</b>
+              <span class="st-flis-under">{endringTekst(t, sisteVerdi(elever), forrigeVerdi(elever), (d.elever.skolear.at(-2) ?? '').replace('-', '–')) ?? ''}</span>
+            </li>
+          )}
+          {fravaer !== null && (
+            <li>
+              <span class="st-flis-etikett">{t('statistikk.skolen.fravaer', { skolear: d.fravaer.skolear.replace('-', '–') })}</span>
+              <b>{t('statistikk.skolen.fravaerVerdi', { dager: tekstFor(t, fravaer, 'dager') })}</b>
+              <span class="st-flis-under">{t('statistikk.skolen.fravaerUnder')}</span>
+            </li>
+          )}
+        </ul>
+        <p class="st-boks-lenke">
+          <a href={`#/skolemiljo/elevundersokelsen?s=S${orgnr}`}>{t('statistikk.skolen.elevundersokelsen')}</a>
+        </p>
+      </div>
+      {children && <div class="st-skolen-snarveier">{children}</div>}
     </div>
   );
 }
