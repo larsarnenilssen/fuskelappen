@@ -57,7 +57,9 @@ Kilder vi har prøvd å ta med i appen, men som ikke er med, eller bare er delvi
 | Kilde | Hva vi ville ha | Hvorfor ikke | Hva kan åpne den |
 |---|---|---|---|
 | Lovdata (lovdata.no og api.lovdata.no) | Lov og forskrift | Med, men svarer 405 fra skymiljøet og virker bare fra Actions. | – |
-| KS, avtaletekstene | Kildesjekk av SFS 2213 og andre avtaler | robots.txt stenger hele nettstedet, og sjekken fikk 403 06.10.2026. Lisensen er uklar, så teksten er skrevet med egne ord. | At KS åpner for henting eller gir lisens. |
+| KS, særavtalesiden (`ks-sfs2213`) | Varsel når KS legger ut en ny SFS 2213 eller en ny protokoll | Svarer 403 Forbidden til kildesjekken fra 06.10.2026, og robots.txt stenger hele ks.no for ukjente roboter. Siden er slått av i kildesjekken og sjekkes for hånd i kontrollrundene i mai og august (eier 07.10.2026). Varselet kommer i stedet fra Utdanningsforbundets side med avtaleteksten (`udf-sfs2213`), som sjekkes hver uke. Den lå 07.10.2026 én versjon etter KF Infoserie. | At KS åpner for kildesjekken. |
+| KS, PDF-en av hovedtariffavtalen | Kildesjekk av tallene fra hovedtariffavtalen | Med. PDF-en svarte fortsatt 06.10.2026, men ligger på samme nettsted som særavtalesiden. | – |
+| KS, lisens for avtaletekstene | Å gjengi avtaleteksten | Lisensen er uklar, så teksten er skrevet med egne ord, med korte sitater for tallene. | Lisens fra KS. |
 | KF Infoserie, SFS 2213 | Avtaleteksten | Bare den ene åpne delingslenken fra KS kan leses. | Avtale med Kommuneforlaget. |
 | Visma InSchool (hjelpesidene) | Veiledning for skolene | Opphavsrett. Bare lenker, og lenkesjekken får ikke svar. | – |
 

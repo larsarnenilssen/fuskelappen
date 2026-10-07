@@ -9,3 +9,5 @@
 - Utdanningsforbundets gjengivelse av SFS 2213 står i kilderegisteret som reserve (`udf-sfs2213`), uten sjekk.
 
 **Konsekvens:** Ingen nye avhengigheter. Første kjøring gir `endret` med fingeravtrykk til godkjenning for de tre nye kildene. KF Infoserie kan endre appen sin; da feiler sjekken med en tydelig melding, og reserven kan tas i bruk.
+
+**Tillegg 07.10.2026 (eier):** Særavtalesiden hos KS (`ks-sfs2213`) svarer 403 til kildesjekken fra 06.10.2026. Den er slått av og sjekkes for hånd i kontrollrundene (`SJEKKES_FOR_HAND` i `scripts/kilder/kontrollrunde.ts`). Utdanningsforbundets gjengivelse (`udf-sfs2213`) sjekkes nå hver uke (`side`) som varsel om ny tekst eller ny avtale. Avtaleteksten og sitatene kontrolleres fortsatt mot KF Infoserie. Se `docs/KILDER-IKKE-MED.md`.

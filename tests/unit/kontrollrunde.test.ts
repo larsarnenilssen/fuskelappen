@@ -55,6 +55,19 @@ describe('kontrollrunder', () => {
     expect(lagKontrollrunde('2027-08', [], [], 'eier/repo').tekst).not.toContain('Inntaksdatoene');
   });
 
+  it('tar med kildene som stenger for kildesjekken, i begge rundene', () => {
+    const register = { kilder: [{ id: 'ks-sfs2213', navn: 'SFS 2213 (særavtalene hos KS)', url: 'https://www.ks.no/saravtaler/' }] } as unknown as Kilderegister;
+    for (const periode of ['2027-05', '2027-08']) {
+      const r = lagKontrollrunde(periode, [], [], 'eier/repo', [], register);
+      expect(r.tekst).toContain('## Kilder som stenger for kildesjekken');
+      expect(r.tekst).toContain('- [ ] [SFS 2213 (særavtalene hos KS)](https://www.ks.no/saravtaler/): Har KS lagt ut en ny SFS 2213');
+      expect(r.tekst).toContain('<!-- handsjekk:ks-sfs2213 -->');
+    }
+    expect(lagKontrollrunde('2027-08', [], [], 'eier/repo', [], register).tittel).toBe('Kontrollrunde august 2027: 1 punkt');
+    // Uten kilden i registeret står ikke delen.
+    expect(lagKontrollrunde('2027-08', [], [], 'eier/repo').tekst).not.toContain('stenger for kildesjekken');
+  });
+
   it('tar med lenkene til Vilbli som skal sjekkes for hånd', () => {
     const r = lagKontrollrunde('2027-08', [], [], 'eier/repo', [{ tekst: 'Vg2 helsearbeiderfag', url: 'https://www.vilbli.no/x/p5' }]);
     expect(r.tittel).toBe('Kontrollrunde august 2027: 1 punkt');

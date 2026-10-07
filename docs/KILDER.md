@@ -6,9 +6,9 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 
 | Kilde | Utgiver | Nivå | Type | Lisens | Sjekk | Faser |
 |---|---|---|---|---|---|---|
-| [SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, med vedlegg og protokoller](https://www.ks.no/fagomrader/lonn-og-tariff/saravtaler/) | KS | nasjonal | side | Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | side | 1, 2, 3 |
+| [SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, med vedlegg og protokoller](https://www.ks.no/fagomrader/lonn-og-tariff/saravtaler/) | KS | nasjonal | side | Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | side (ikke aktiv) | 1, 2, 3 |
 | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e) | KS (KF Infoserie) | nasjonal | side | Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | kf-infoserie | 1, 2, 3 |
-| [SFS 2213 Arbeidstid skole – avtaleteksten gjengitt av Utdanningsforbundet](https://www.utdanningsforbundet.no/lonn-og-arbeidsvilkar/tariffavtaler/ks/ks-tariffavtaler/sfs-2213/) | Utdanningsforbundet | nasjonal | side | Opphavsrett Utdanningsforbundet. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | ingen | 1 |
+| [SFS 2213 Arbeidstid skole – avtaleteksten gjengitt av Utdanningsforbundet](https://www.utdanningsforbundet.no/lonn-og-arbeidsvilkar/tariffavtaler/ks/ks-tariffavtaler/sfs-2213/) | Utdanningsforbundet | nasjonal | side | Opphavsrett Utdanningsforbundet. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | side | 1 |
 | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf) | KS | nasjonal | side | Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | fil | 1, 3 |
 | [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata | 1, 3 |
 | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovtekst | 3, 4, 5, 6, 7, 8 |
@@ -106,9 +106,9 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 
 ## Merknader
 
-- **ks-sfs2213:** KS-oversikten over særavtaler. Selve avtaleteksten sjekkes i kilden ks-sfs2213-avtaletekst.
+- **ks-sfs2213:** KS-oversikten over særavtaler. Selve avtaleteksten sjekkes i kilden ks-sfs2213-avtaletekst. Siden stenger for kildesjekken (403 fra 06.10.2026), så den sjekkes for hånd i kontrollrundene. Varsel om en ny avtale kommer også fra udf-sfs2213.
 - **ks-sfs2213-avtaletekst:** Lenken er den KS publiserer på særavtalesiden. KF Infoserie krever nettleser, så kildejobben henter teksten med Playwright (docs/avgjorelser/008). Gjeldende versjon: 1.1.2026–31.12.2027.
-- **udf-sfs2213:** Pålitelig sekundærkilde (eier 29.09.2026). Reserve hvis avtaleteksten hos KF Infoserie ikke kan leses. Utdanningsforbundet er part i avtalen; bare avtaleteksten brukes, ikke deres tolkninger.
+- **udf-sfs2213:** Pålitelig sekundærkilde (eier 29.09.2026). Reserve hvis avtaleteksten hos KF Infoserie ikke kan leses. Utdanningsforbundet er part i avtalen; bare avtaleteksten brukes, ikke deres tolkninger. Sjekkes hver uke som varsel om ny tekst eller ny avtale, fordi særavtalesiden hos KS stenger (eier 07.10.2026). Siden lå 07.10.2026 én versjon etter KF Infoserie.
 - **ks-hovedtariffavtalen:** PDF-utgaven KS publiserer på https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/. Kildejobben sammenligner fingeravtrykket av hele filen. Brukes for timelønn (§ 12.4), feriepenger (§ 7.4.2) og garantilønn (kap. 4 punkt 4.1).
 - **arbeidsmiljoloven:** Kildejobben følger kapittel 10 om arbeidstid.
 - **opplaeringslova:** Utvalget av kapitler står i content/lovverk.yaml. Teksten hentes hver uke med npm run hent:lovdata til data/lovdata/ og vises uendret i Lov og forskrift (avgjørelse 039). Endrede paragrafer står til orientering i kontrollsaken.

@@ -15,7 +15,9 @@ kilder:
     niva: nasjonal
     lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: true
+    # Svarer 403 Forbidden til kildesjekken fra 06.10.2026. Sjekkes for hånd i kontrollrundene i mai og august
+    # (eier 07.10.2026, docs/KILDER-IKKE-MED.md).
+    aktiv: false
     uttrekk:
       selektor: article.theme-card
       inneholder: SFS 2213
@@ -23,7 +25,9 @@ kilder:
     godkjent_fingeravtrykk: sha256:7b5faa2311693ca97a7a881f1f9dbe6c87d02484e9df87dce086c4ba2bdfa092
     faser: [1, 2, 3]
     merknad: >-
-      KS-oversikten over særavtaler. Selve avtaleteksten sjekkes i kilden ks-sfs2213-avtaletekst.
+      KS-oversikten over særavtaler. Selve avtaleteksten sjekkes i kilden ks-sfs2213-avtaletekst. Siden stenger for
+      kildesjekken (403 fra 06.10.2026), så den sjekkes for hånd i kontrollrundene. Varsel om en ny avtale kommer
+      også fra udf-sfs2213.
 
   - id: ks-sfs2213-avtaletekst
     navn: SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)
@@ -50,13 +54,21 @@ kilder:
     type: side
     niva: nasjonal
     lisens: Opphavsrett Utdanningsforbundet. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
-    sjekkmetode: ingen
-    aktiv: false
-    godkjent_fingeravtrykk: null
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      # Klassenavnene har en endelse som endres når nettstedet bygges på nytt, så bare starten brukes.
+      selektor: '[class*="AgreementFullPage_content"]'
+      inneholder: SFS 2213
+    # Godkjent av eier 2026-10-07 (i samtalen om KS-kildene). Siden viste da avtaleteksten for 01.01.24–31.12.25
+    # og en lenke til protokollen fra 2026.
+    godkjent_fingeravtrykk: sha256:d1b8febc2b1223305afe1026a957e51e421427abf671dac17ab04986ed995465
     faser: [1]
     merknad: >-
       Pålitelig sekundærkilde (eier 29.09.2026). Reserve hvis avtaleteksten hos KF Infoserie ikke kan leses.
-      Utdanningsforbundet er part i avtalen; bare avtaleteksten brukes, ikke deres tolkninger.
+      Utdanningsforbundet er part i avtalen; bare avtaleteksten brukes, ikke deres tolkninger. Sjekkes hver uke som
+      varsel om ny tekst eller ny avtale, fordi særavtalesiden hos KS stenger (eier 07.10.2026). Siden lå 07.10.2026
+      én versjon etter KF Infoserie.
 
   - id: ks-hovedtariffavtalen
     navn: Hovedtariffavtalen 1.5.2026–30.4.2028
