@@ -45,3 +45,16 @@ jobs:
           SAK: ${{ github.event.issue.number }}
           SAKSTEKST: ${{ github.event.issue.body }}
           KOMMENTAR: ${{ github.event.comment.body }}
+
+  # Varsel til eier når godkjenningen feiler (avgjørelse 085). Hoppes over når kommentaren ikke er en godkjenning.
+  varsle:
+    name: Varsle eier
+    needs: [godkjenn]
+    if: always() && (needs.godkjenn.result == 'failure' || needs.godkjenn.result == 'success')
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ needs.godkjenn.result == 'failure' && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read

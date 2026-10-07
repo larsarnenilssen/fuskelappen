@@ -1,0 +1,45 @@
+# Varsel til eier når en arbeidsflyt feiler (avgjørelse 085). Kalles som siste jobb i arbeidsflytene som går av seg
+# selv: Kildesjekk, Nyheter, Sett versjonstag, CI på main og Godkjenning. Feilet kjøringen, lages eller oppdateres
+# saken for arbeidsflyten (etikett «feil») med hvor den feilet, et utdrag av loggen og hva eier gjør. Gikk den bra,
+# lukkes saken. Skriptet kjøres med Node uten npm ci, så jobben tar noen sekunder.
+name: Varsle eier
+
+on:
+  workflow_call:
+    inputs:
+      resultat:
+        description: 'feilet eller ok'
+        type: string
+        required: true
+      delfeil:
+        description: 'Steg som feilet uten å stoppe kjøringen, skilt med |'
+        type: string
+        required: false
+        default: ''
+
+permissions: {}
+
+jobs:
+  varsle:
+    name: Varsle eier
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # Filene på rotnivå (som .nvmrc) kommer alltid med.
+          sparse-checkout: scripts/varsel
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+      - name: Lag, oppdater eller lukk saken
+        run: node --experimental-strip-types scripts/varsel/arbeidsflyt.ts
+        env:
+          RESULTAT: ${{ inputs.resultat }}
+          DELFEIL: ${{ inputs.delfeil }}
+          ARBEIDSFLYT: ${{ github.workflow }}
+          GITHUB_TOKEN: ${{ github.token }}

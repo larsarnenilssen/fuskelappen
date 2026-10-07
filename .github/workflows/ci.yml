@@ -172,3 +172,16 @@ jobs:
           krev sjekk "$SJEKK" "$hopp_sjekk"
           krev bygg-e2e "$BYGG_E2E" "$hopp_e2e"
           krev e2e "$E2E" "$hopp_e2e"
+
+  # Varsel til eier når CI feiler på main (avgjørelse 085). På PR-er varsles ikke eier; der retter Claude feilen.
+  varsle:
+    name: Varsle eier
+    needs: [test]
+    if: always() && github.event_name == 'push' && needs.test.result != 'cancelled'
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ needs.test.result == 'failure' && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read

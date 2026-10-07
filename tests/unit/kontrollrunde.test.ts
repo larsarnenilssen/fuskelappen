@@ -64,6 +64,21 @@ describe('kontrollrunder', () => {
       expect(r.tekst).toContain('<!-- handsjekk:ks-sfs2213 -->');
     }
     expect(lagKontrollrunde('2027-08', [], [], 'eier/repo', [], register).tittel).toBe('Kontrollrunde august 2027: 1 punkt');
+    // Vestland: ett punkt med en lenke per side på vestlandfylke.no.
+    const medVestland = {
+      kilder: [
+        ...register.kilder,
+        { id: 'vlfk-eksamen', navn: 'vestlandfylke.no – eksamen', url: 'https://www.vestlandfylke.no/eksamen/' },
+        { id: 'vlfk-fagproven', navn: 'vestlandfylke.no – fagprøven', url: 'https://www.vestlandfylke.no/fagproven/' },
+        { id: 'vlfk-skulereglar', navn: 'Skulereglar', url: 'https://www.vlfk.no/' },
+      ],
+    } as unknown as Kilderegister;
+    const v = lagKontrollrunde('2027-05', [], [], 'eier/repo', [], medVestland);
+    expect(v.tekst).toContain('- [ ] **Vestland fylkeskommune (vestlandfylke.no):**');
+    expect(v.tekst).toContain('  - [vestlandfylke.no – fagprøven](https://www.vestlandfylke.no/fagproven/)');
+    expect(v.tekst).not.toContain('Skulereglar');
+    // Inntaksdatoene, KS og Vestland.
+    expect(v.tittel).toBe('Kontrollrunde mai 2027: 3 punkter');
     // Uten kilden i registeret står ikke delen.
     expect(lagKontrollrunde('2027-08', [], [], 'eier/repo').tekst).not.toContain('stenger for kildesjekken');
   });

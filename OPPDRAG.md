@@ -644,7 +644,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 ## 6. Vedlikehold etter levering
 
 - Ny periode for SFS 2213 (reforhandles før 2028): ny regelfil og nye fasittester side om side med den gamle.
-- Kildevarsler behandles når de kommer.
+- Kildevarsler behandles når de kommer. *(Eier 07.10.2026:)* Eier får e-post når noe har gått galt eller bør ses på, ikke når alt virker. Hver e-post har hele listen, og det som ikke løser seg selv, kommer igjen som påminnelse til det er løst (avgjørelse 085, `docs/EIER.md` punkt 6b).
 - Innhold med status `bor_kontrolleres` gjennomgås minst årlig.
 - Nye moduler bestilles som nye oppdrag.
 

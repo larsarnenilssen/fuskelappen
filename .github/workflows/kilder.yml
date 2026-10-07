@@ -51,6 +51,8 @@ jobs:
     # Første lesing av hele registeret over lokale forskrifter hos Lovdata tar 15–20 minutter (avgjørelse 061), og
     # lenkesjekken noen minutter (avgjørelse 062).
     timeout-minutes: 75
+    outputs:
+      delfeil: ${{ steps.delfeil.outputs.steg }}
     permissions:
       contents: write
       issues: write
@@ -172,6 +174,7 @@ jobs:
       # rad, kommer i kontrollsaken for lenkene (etikett «lenker»). Nettstedene som stenger for automatisk sjekk, skrives
       # til data/status/stengte-lenker.json og står i kontrolloversikten, så lenkesjekken går før den lages (sak #98).
       - name: Hent lenkestatus
+        id: hent-lenkestatus
         # Feiler hentingen, begynner lenkesjekken på nytt, og kontrolloversikten lages likevel.
         continue-on-error: true
         run: |
@@ -182,12 +185,14 @@ jobs:
             echo "Ingen lenkestatus ennå."
           fi
       - name: Sjekk lenkene
+        id: lenker
         continue-on-error: true
         timeout-minutes: 20
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run lenker:sjekk
       - name: Lagre lenkestatus
+        id: lagre-lenkestatus
         if: always()
         # Feiler lagringen, skal kildestatusen og kontrolloversikten likevel lagres.
         continue-on-error: true
@@ -213,6 +218,7 @@ jobs:
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
       - name: Endringsforslag (PR)
+        id: forslag
         # Feiler forslagene, skal kontrollsaken likevel komme.
         continue-on-error: true
         run: npm run kilder:forslag
@@ -223,6 +229,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           KONTROLLRUNDE: ${{ inputs.kontrollrunde && 'ja' || '' }}
+      # Stegene over som får feile uten at kildesjekken stopper. De meldes i saken om feil i automatikken
+      # (avgjørelse 085), så en lenkesjekk som feiler hver uke, ikke går upåaktet hen.
+      - name: Steg som feilet uten å stoppe kildesjekken
+        id: delfeil
+        if: always()
+        env:
+          GREP: ${{ steps.grep.outcome }}
+          HENT_LENKESTATUS: ${{ steps.hent-lenkestatus.outcome }}
+          LENKER: ${{ steps.lenker.outcome }}
+          LAGRE_LENKESTATUS: ${{ steps.lagre-lenkestatus.outcome }}
+          FORSLAG: ${{ steps.forslag.outcome }}
+        run: |
+          steg=""
+          [ "$GREP" = failure ] && steg="$steg|Hent Grep, fag- og timefordeling, overordnet del og lovtekst"
+          [ "$HENT_LENKESTATUS" = failure ] && steg="$steg|Hent lenkestatus"
+          [ "$LENKER" = failure ] && steg="$steg|Sjekk lenkene"
+          [ "$LAGRE_LENKESTATUS" = failure ] && steg="$steg|Lagre lenkestatus"
+          [ "$FORSLAG" = failure ] && steg="$steg|Endringsforslag (PR)"
+          echo "steg=${steg#|}" >> "$GITHUB_OUTPUT"
+          if [ -n "$steg" ]; then echo "::warning::Steg som feilet uten å stoppe kildesjekken: ${steg#|}"; fi
 
   publiser:
     name: Publiser fersk kildestatus
@@ -235,3 +261,17 @@ jobs:
       pages: write
       id-token: write
       actions: write
+
+  # Varsel til eier når kildesjekken eller publiseringen feiler, og lukking når den går bra igjen (avgjørelse 085).
+  varsle:
+    name: Varsle eier
+    needs: [dag, sjekk, publiser]
+    if: always() && needs.dag.outputs.kjor == 'ja' && !contains(needs.*.result, 'cancelled')
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ (contains(needs.*.result, 'failure') || needs.sjekk.outputs.delfeil != '') && 'feilet' || 'ok' }}
+      delfeil: ${{ needs.sjekk.outputs.delfeil }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read

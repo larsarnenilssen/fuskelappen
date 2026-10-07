@@ -71,17 +71,28 @@ export function oversiktspaminnelse(aar: string): string[] {
 
 /**
  * Kilder som stenger for kildesjekken og derfor sjekkes for hånd i hver kontrollrunde (eier 07.10.2026). De står også
- * i docs/KILDER-IKKE-MED.md.
+ * i docs/KILDER-IKKE-MED.md. Et punkt kan gjelde én kilde eller flere (med tittel og en lenke per kilde).
  */
-export const SJEKKES_FOR_HAND: readonly { id: string; sporsmal: string }[] = [
-  { id: 'ks-sfs2213', sporsmal: 'Har KS lagt ut en ny SFS 2213 eller en ny protokoll siden forrige runde?' },
+export const SJEKKES_FOR_HAND: readonly { id: string; tittel?: string; kilder: (k: { id: string; url: string }) => boolean; sporsmal: string }[] = [
+  { id: 'ks-sfs2213', kilder: (k) => k.id === 'ks-sfs2213', sporsmal: 'Har KS lagt ut en ny SFS 2213 eller en ny protokoll siden forrige runde?' },
+  {
+    id: 'vestland',
+    tittel: 'Vestland fylkeskommune (vestlandfylke.no)',
+    kilder: (k) => k.id.startsWith('vlfk-') && k.url.startsWith('https://www.vestlandfylke.no/'),
+    sporsmal:
+      'Nettstedet stenger for kildesjekken, så appen har generelle tekster der den ellers ville hatt Vestlands egne, og ingen sjekker sidene automatisk. Åpne sidene under: Står det noe nytt om inntak, språk, tilrettelegging, eksamen, klage eller fagprøven som appen bør ha med? Åpner sidene seg uten problemer for deg, kan Claude prøve å slå kildesjekken på igjen.',
+  },
 ];
 
 /** Punktene for kildene som sjekkes for hånd, med navn og lenke fra kilderegisteret. */
 export function handsjekk(register: Pick<Kilderegister, 'kilder'> | null): string[] {
   const punkter = SJEKKES_FOR_HAND.flatMap((s) => {
-    const k = register?.kilder.find((x) => x.id === s.id);
-    return k ? [`- [ ] [${k.navn}](${k.url}): ${s.sporsmal} Er det kommet noe nytt, skriv det til Claude. <!-- handsjekk:${s.id} -->`] : [];
+    const kilder = (register?.kilder ?? []).filter((k) => s.kilder(k));
+    const [forste] = kilder;
+    if (!forste) return [];
+    const slutt = `Er det kommet noe nytt, skriv det til Claude. <!-- handsjekk:${s.id} -->`;
+    if (!s.tittel && kilder.length === 1) return [`- [ ] [${forste.navn}](${forste.url}): ${s.sporsmal} ${slutt}`];
+    return [`- [ ] **${s.tittel ?? s.id}:** ${s.sporsmal} ${slutt}`, ...kilder.map((k) => `  - [${k.navn}](${k.url})`)];
   });
   if (punkter.length === 0) return [];
   return ['## Kilder som stenger for kildesjekken', '', 'Sidene under stenger for automatisk sjekk, så de sjekkes her (docs/KILDER-IKKE-MED.md).', '', ...punkter, ''];

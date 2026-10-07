@@ -6,7 +6,7 @@ import { avkryssede } from '../../scripts/kilder/godkjenning.ts';
 import { grepsammendrag, sammenlignGrep, type Grepdata } from '../../scripts/kilder/grep.ts';
 import { grepLaereplanlinjer } from '../../scripts/kilder/ukesrapport.ts';
 import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn } from '../../scripts/kilder/tabeller.ts';
-import { lagUkesrapport, lesTilstand, planleggKontrollsak, punktTreff, type Ukesgrunnlag } from '../../scripts/kilder/ukesrapport.ts';
+import { lagUkesrapport, planleggKontrollsak, punktTreff, type Ukesgrunnlag } from '../../scripts/kilder/ukesrapport.ts';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Kildekontroll } from '../../src/core/kontroll/indeks.ts';
 import type { Tabellrad } from '../../src/core/regler/skjema.ts';
@@ -217,7 +217,6 @@ describe('den ukentlige kontrollsaken', () => {
     expect(r.tekst).toContain('- [ ] `s/planfestet_maks_dag`: Kilden har nå 10 der verdien sto. Forslag: 10. <!-- verdi:s/planfestet_maks_dag:10 -->');
     expect(r.tekst).toContain('- Arbeidsmiljøloven: Tidsavbrudd (siden 05.10.2026)');
     expect(r.tekst).toContain('- Tatt inn automatisk: 1 ny fagkode.');
-    expect(lesTilstand(r.tekst)).toBe(r.tilstand);
   });
 
   it('viser kilder uten godkjent fingeravtrykk som nye, under egen overskrift før de endrede (sak #92)', () => {
@@ -261,12 +260,17 @@ describe('den ukentlige kontrollsaken', () => {
     expect(punktTreff('5.1', '5')).toBe(true);
   });
 
-  it('kommenterer bare når noe er nytt, lukker når alt er i orden, og lukker gamle saker per kilde', () => {
+  it('kommenterer med hele listen når noe er nytt, lukker når alt er i orden, og lukker gamle saker per kilde', () => {
     const r = lagUkesrapport(grunnlag({ kildestatus: { skjema: 1, kjort: '2026-10-05T04:17:00Z', kilder: { avtale: ok, lov: { ...ok, status: 'feilet', melding: 'Feil' }, grep: ok } } }));
-    expect(planleggKontrollsak(r, null, [])).toEqual([{ type: 'opprett', tittel: r.tittel, tekst: r.tekst }]);
-    expect(planleggKontrollsak(r, { nummer: 5, tekst: r.tekst }, [])).toEqual([{ type: 'oppdater', nummer: 5, tittel: r.tittel, tekst: r.tekst, kommentar: null }]);
-    expect(planleggKontrollsak(r, { nummer: 5, tekst: 'gammel' }, [])[0]).toMatchObject({ type: 'oppdater', kommentar: expect.stringContaining('noe nytt') });
-    expect(planleggKontrollsak(lagUkesrapport(grunnlag()), { nummer: 5, tekst: r.tekst }, [2])).toEqual([
+    const [opprett] = planleggKontrollsak(r, null, [], '2026-10-05');
+    expect(opprett).toMatchObject({ type: 'opprett', tittel: r.tittel, tekst: expect.stringContaining(r.tekst) });
+    const sak = { nummer: 5, tekst: opprett && 'tekst' in opprett ? opprett.tekst : '' };
+    // Samme innhold uken etter: ingen kommentar. To uker etter: påminnelse med hele listen.
+    expect(planleggKontrollsak(r, sak, [], '2026-10-12')[0]).toMatchObject({ type: 'oppdater', kommentar: null });
+    expect(planleggKontrollsak(r, sak, [], '2026-10-19')[0]).toMatchObject({ type: 'oppdater', kommentar: expect.stringContaining('Påminnelse') });
+    // En sak uten merket (fra før avgjørelse 085): alt er nytt.
+    expect(planleggKontrollsak(r, { nummer: 5, tekst: 'gammel' }, [], '2026-10-12')[0]).toMatchObject({ type: 'oppdater', kommentar: expect.stringContaining('Nytt siden sist') });
+    expect(planleggKontrollsak(lagUkesrapport(grunnlag()), sak, [2], '2026-10-12')).toEqual([
       { type: 'lukk', nummer: 5, kommentar: expect.stringContaining('ingenting') },
       { type: 'lukk', nummer: 2, kommentar: expect.stringContaining('ukentlig kontrollsak') },
     ]);

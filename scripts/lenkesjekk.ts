@@ -10,6 +10,8 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { samleLenker } from './lenker/samle.ts';
 import { type Lenkestatus, lagRapport, oppdaterStatus, sjekkAlle, stengteLenker, stengteNettsteder, velgStikkprove } from './lenker/sjekk.ts';
+import { finnAapenSak, lagGithub, utforVarsel } from './varsel/github.ts';
+import { norskDato, planleggVarsel } from './varsel/plan.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const statusfil = join(rot, '.generert/lenkestatus.json');
@@ -38,34 +40,18 @@ console.log(
     `OK ${antall('ok')}, flyttet ${antall('flyttet')}, borte ${antall('borte')}, feil ${antall('feil')}. Stengte nettsteder: ${stengte.join(', ') || 'ingen'}.`,
 );
 
-// Kontrollsaken for lenkene: opprettes, oppdateres eller lukkes. Uten GITHUB_TOKEN skrives rapporten bare ut.
+// Kontrollsaken for lenkene etter samme regel som de andre sakene til eier (avgjørelse 085): e-post når den lages,
+// når nye lenker kommer til og som påminnelse annenhver uke, med hele listen. Uten GITHUB_TOKEN skrives den bare ut.
 const token = process.env.GITHUB_TOKEN;
-const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/jukselappen';
-const api = process.env.GITHUB_API_URL ?? 'https://api.github.com';
-if (!token) {
-  console.log(rapport || 'Ingen lenker er borte eller flyttet.');
-} else {
-  const kall = async (sti: string, metode = 'GET', kropp?: unknown) => {
-    const svar = await fetch(`${api}/repos/${repo}${sti}`, {
-      method: metode,
-      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
-      ...(kropp ? { body: JSON.stringify(kropp) } : {}),
-    });
-    if (!svar.ok) throw new Error(`GitHub svarte ${svar.status} på ${metode} ${sti}`);
-    return svar.json() as Promise<unknown>;
-  };
-  const apne = (await kall(`/issues?state=open&labels=${ETIKETT}&per_page=10`)) as { number: number }[];
-  const sak = apne[0];
-  if (!rapport) {
-    if (sak) {
-      await kall(`/issues/${sak.number}`, 'PATCH', { state: 'closed', state_reason: 'completed' });
-      console.log(`Lukket sak #${sak.number}: ingen lenker er borte eller flyttet.`);
-    }
-  } else if (sak) {
-    await kall(`/issues/${sak.number}`, 'PATCH', { body: rapport });
-    console.log(`Oppdaterte sak #${sak.number}.`);
-  } else {
-    const ny = (await kall('/issues', 'POST', { title: 'Lenker som ikke virker', body: rapport, labels: [ETIKETT] })) as { number: number };
-    console.log(`Opprettet sak #${ny.number}.`);
-  }
-}
+const gh = token ? lagGithub(token) : null;
+const handlinger = planleggVarsel(
+  {
+    tittel: 'Lenker som ikke virker',
+    tekst: rapport || null,
+    idag,
+    paminnelseDager: 14,
+    lukk: (siden) => `Ingen lenker er borte eller flyttet lenger (sjekket ${norskDato(idag)}). Saken ble laget ${norskDato(siden)}. Lukker den.`,
+  },
+  gh ? await finnAapenSak(gh, ETIKETT) : null,
+);
+await utforVarsel(gh, handlinger, ETIKETT, 'Lenker i appen som er borte eller flyttet');

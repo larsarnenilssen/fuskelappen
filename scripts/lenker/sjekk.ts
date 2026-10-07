@@ -134,7 +134,9 @@ export function lagRapport(status: Lenkestatus, lenker: readonly Lenke[]): strin
   const linje = ([url, s]: [string, Lenkestatus['lenker'][string]]) =>
     `- [ ] ${url}${s.til ? ` → ${s.til}` : ''} (${s.ganger} ganger på rad). Står i: ${(brukt.get(url) ?? []).join(', ')}`;
   return [
-    `Lenkesjekken ${status.sjekket}.`,
+    `Lenkesjekken ${status.sjekket}. Lenkene under har vært borte eller flyttet to uker på rad. Den som trykker på dem i appen, kommer til en side som ikke finnes, eller til en annen side enn den skal.`,
+    '',
+    'Gi Claude lenken til denne saken, så finner Claude de nye adressene og retter dem. Kryss gjerne av lenker du har sjekket selv. Saken lukkes av seg selv når alle virker igjen (avgjørelse 062 og 085).',
     '',
     ...(varsle.some(([, s]) => s.svar === 'borte') ? ['## Borte', '', ...varsle.filter(([, s]) => s.svar === 'borte').map(linje), ''] : []),
     ...(varsle.some(([, s]) => s.svar === 'flyttet') ? ['## Flyttet', '', ...varsle.filter(([, s]) => s.svar === 'flyttet').map(linje), ''] : []),

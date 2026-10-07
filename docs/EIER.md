@@ -61,7 +61,32 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 ## 6. Den ukentlige kontrollsaken
 
-Etter kildesjekken hver mandag samles alt du bør se på, i **én sak** under **Issues** med merket `kontroll`. Du får e-post fra GitHub når saken lages, og når den får noe nytt. Er alt i orden, lukkes saken automatisk. Uker uten noe nytt gir ingen e-post.
+Etter kildesjekken hver mandag samles alt du bør se på, i **én sak** under **Issues** med merket `kontroll`. E-postene følger reglene i punkt 6b.
+
+### 6b. Varslene du får på e-post
+
+Du får e-post fra GitHub når noe har gått galt eller bør ses på, men ikke når alt virker (avgjørelse 085). Alle varslene er saker under **Issues**, og alle følger samme regel:
+
+- **Saken lages** når noe er galt. E-posten har hele teksten.
+- **Noe nytt kommer til:** en kommentar med det nye øverst og hele listen under. Hver e-post kan leses alene.
+- **Ingenting nytt, men noe står fortsatt åpent:** en påminnelse med hele listen. Har du gått glipp av e-poster, får du dem igjen på denne måten.
+- **Alt er i orden igjen:** saken lukkes med en kort kommentar.
+
+| Merke | Hva | Når | Påminnelse |
+|---|---|---|---|
+| `kontroll` | Kontrollsaken: endringer i kildene, tall som ikke stemmer, innhold som bør kontrolleres på nytt, kilder som ikke kunne sjekkes | Mandag | Annenhver uke |
+| `lenker` | Lenker i appen som har vært borte eller flyttet to uker på rad | Mandag | Annenhver uke |
+| `nyheter` | Nyhetskilder som ikke har kunnet hentes på mer enn to dager | Hver morgen | Hver uke |
+| `feil` | En arbeidsflyt har feilet: kildesjekken, nyhetene, publiseringen, CI på main eller godkjenningen. Saken sier hva arbeidsflyten gjør, hva feilen betyr for appen, hvor den feilet, med et utdrag av loggen, og hva du gjør. Én sak per arbeidsflyt. | Med en gang | Hver uke |
+| `kontrollrunde` | Kontrollrunden | Første mandag i mai og august | – |
+
+Endringsforslag fra kildesjekken kommer som PR (punkt 1), og GitHub sender e-post om dem.
+
+**Hva du gjør med en sak:** Les den. Står det at noe ofte går over av seg selv, kan du vente til neste kjøring. Ellers, eller når du er i tvil: gi Claude lenken til saken. Du trenger ikke forstå loggen.
+
+**E-post fra GitHub Actions:** GitHub sender også sin egen korte e-post når en arbeidsflyt feiler («Run failed»). Den sier lite. Saken med merket `feil` forklarer det samme. Vil du slippe den doble e-posten, kan du slå av e-post for Actions under GitHub → Settings → Notifications → Actions.
+
+**Hva du ikke får e-post om:** at ting virker (daglige nyheter, publiseringer, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
 
 Saken kan ha disse delene:
 
