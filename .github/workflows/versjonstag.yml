@@ -110,3 +110,16 @@ jobs:
             gh release create "$TAG" --verify-tag --title "$TAG" --notes-file "$RUNNER_TEMP/notat.md" --latest="$SIST" </dev/null
             echo "::notice::Laget utgivelsen $TAG."
           done < "$RUNNER_TEMP/tagger"
+
+  # Varsel til eier når taggen, publiseringen eller utgivelsen feiler (avgjørelse 085).
+  varsle:
+    name: Varsle eier
+    needs: [tag, publiser, utgivelse]
+    if: always() && !contains(needs.*.result, 'cancelled')
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ contains(needs.*.result, 'failure') && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read

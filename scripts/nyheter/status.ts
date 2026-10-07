@@ -21,3 +21,36 @@ export function nyhetsstatus(nyheter: Nyheter | null, ider: readonly string[], n
     ? { status: 'feilet', fingeravtrykk: null, melding: `${feil.join('; ')}. Appen viser sakene fra før.` }
     : { status: 'ok', fingeravtrykk: null, melding: null };
 }
+
+/** Nyhetskildene i saken: navnet, adressen og fylkene fra kildelisten. */
+export interface Nyhetskildeinfo {
+  id: string;
+  navn: { nb: string };
+  url: string;
+}
+
+/**
+ * Teksten i saken om nyhetskilder som ikke har kunnet hentes på mer enn GRENSE_DAGER dager (etikett «nyheter»,
+ * avgjørelse 085), eller null når alle virker. Saken oppdateres hver dag av arbeidsflyten Nyheter.
+ */
+export function nyhetsvarsel(nyheter: Nyheter, kilder: readonly Nyhetskildeinfo[], naa: string): string | null {
+  const grense = new Date(Date.parse(naa) - GRENSE_DAGER * 86_400_000).toISOString().slice(0, 10);
+  const dato = (iso: string) => iso.split('-').reverse().join('.');
+  const linjer = kilder.flatMap((k) => {
+    const s = nyheter.kilder[k.id];
+    if (!s || s.status === 'ok' || !s.feilSiden || s.feilSiden > grense) return [];
+    const hva =
+      s.status === 'tom'
+        ? `har ikke gitt noen saker siden ${dato(s.feilSiden)}. Siden kan ha fått nytt oppsett, eller filteret slipper ikke gjennom noe.`
+        : `har ikke kunnet hentes siden ${dato(s.feilSiden)}${s.melding ? ` (${s.melding})` : ''}.`;
+    return [`- **${k.navn.nb}** (\`${k.id}\`) ${hva} [Kilden](${k.url})`];
+  });
+  if (linjer.length === 0) return null;
+  return [
+    `Nyhetene hentes hver morgen. Kildene under har ikke kunnet hentes på mer enn ${GRENSE_DAGER} dager. Appen viser sakene som ble hentet før, men ingen nye fra dem.`,
+    '',
+    ...linjer,
+    '',
+    '**Hva du gjør:** En kilde som er nede noen dager, kommer ofte tilbake av seg selv. Da lukkes saken automatisk. Står en kilde her i mer enn en uke, har den trolig fått ny adresse eller nytt oppsett. Gi Claude lenken til denne saken, så kan kilden rettes, eller tas ut og føres i `docs/KILDER-IKKE-MED.md`.',
+  ].join('\n');
+}

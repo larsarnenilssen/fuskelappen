@@ -15,7 +15,8 @@ import { lesFil } from '../innhold/last.ts';
 import type { Tekstendring } from './avsnitt.ts';
 import type { Grependringer } from './grep.ts';
 import { lagKontrollrunde, praksisTilBekreftelse, RUNDEETIKETT, rundemerke, rundeperiode } from './kontrollrunde.ts';
-import { GAMMEL_ETIKETT, KONTROLLETIKETT, lagUkesrapport, planleggKontrollsak, regelverkSomGarUt, type Sakshandling } from './ukesrapport.ts';
+import { GAMMEL_ETIKETT, KONTROLLETIKETT, lagUkesrapport, planleggKontrollsak, regelverkSomGarUt } from './ukesrapport.ts';
+import { lagGithub, utforVarsel } from '../varsel/github.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const lesJson = (fil: string): unknown => (existsSync(fil) ? (JSON.parse(readFileSync(fil, 'utf8')) as unknown) : null);
@@ -79,18 +80,6 @@ async function sikreEtikett(navn: string, beskrivelse: string): Promise<void> {
   }
 }
 
-async function utfor(h: Sakshandling): Promise<void> {
-  if (h.type === 'opprett') {
-    await github('POST', '/issues', { title: h.tittel, body: h.tekst, labels: [KONTROLLETIKETT] });
-  } else if (h.type === 'oppdater') {
-    await github('PATCH', `/issues/${h.nummer}`, { title: h.tittel, body: h.tekst });
-    if (h.kommentar) await github('POST', `/issues/${h.nummer}/comments`, { body: h.kommentar });
-  } else {
-    await github('POST', `/issues/${h.nummer}/comments`, { body: h.kommentar });
-    await github('PATCH', `/issues/${h.nummer}`, { state: 'closed', state_reason: 'completed' });
-  }
-}
-
 if (!token || !process.env.GITHUB_REPOSITORY) {
   console.log(`[tørrkjøring] ${rapport.aapen ? rapport.tittel : 'Ingen kontrollsak denne uken.'}\n`);
   if (rapport.aapen) console.log(rapport.tekst);
@@ -98,13 +87,8 @@ if (!token || !process.env.GITHUB_REPOSITORY) {
 } else {
   const [kontroll] = await aapneSaker(KONTROLLETIKETT);
   const gamle = (await aapneSaker(GAMMEL_ETIKETT)).map((s) => s.number);
-  const handlinger = planleggKontrollsak(rapport, kontroll ? { nummer: kontroll.number, tekst: kontroll.body } : null, gamle);
-  if (handlinger.some((h) => h.type === 'opprett')) await sikreEtikett(KONTROLLETIKETT, 'Ukentlig kontrollsak fra kildesjekken');
-  for (const h of handlinger) {
-    await utfor(h);
-    console.log(h.type === 'opprett' ? `Opprettet kontrollsak: ${h.tittel}` : `${h.type} sak #${h.nummer}`);
-  }
-  if (handlinger.length === 0) console.log('Ingen kontrollsak denne uken.');
+  const handlinger = planleggKontrollsak(rapport, kontroll ? { nummer: kontroll.number, tekst: kontroll.body } : null, gamle, idag);
+  await utforVarsel(lagGithub(token), handlinger, KONTROLLETIKETT, 'Ukentlig kontrollsak fra kildesjekken');
 
   if (runde && periode) {
     // Bare én sak per runde, også om jobben kjøres flere ganger i uken.

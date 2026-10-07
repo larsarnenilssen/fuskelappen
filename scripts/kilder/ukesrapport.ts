@@ -1,6 +1,7 @@
 // Den ukentlige kontrollsaken: én GitHub-sak med alt eier bør se på etter kildesjekken, med avkrysningsliste.
 // Saken oppdateres hver mandag, får en kommentar (og dermed e-post) når noe nytt har kommet til, og lukkes når
 // alt er i orden. Ren logikk, testes i tests/unit/ukesrapport.test.ts (avgjørelse 018).
+import { type AapenSak, planleggVarsel, type Varselhandling } from '../varsel/plan.ts';
 import { createHash } from 'node:crypto';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Kildestatusfil } from '../../src/core/kildestatus/kildestatus.ts';
@@ -73,8 +74,6 @@ export interface Ukesrapport {
   aapen: boolean;
   tittel: string;
   tekst: string;
-  /** Fingeravtrykk av innholdet (uten datoer). Endres det, får saken en kommentar. */
-  tilstand: string;
 }
 
 function dato(iso: string): string {
@@ -389,7 +388,8 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     deler.push(['## Nye navn i fag- og timefordelingen', '', ...linjer.slice(0, MAKS_DETALJER), ...(linjer.length > MAKS_DETALJER ? [`- … og ${linjer.length - MAKS_DETALJER} til.`] : []), '']);
   }
 
-  const feilet = Object.entries(g.kildestatus.kilder).filter(([, p]) => p.status === 'feilet');
+  // Nyhetskildene har egen sak, som oppdateres hver dag (etikett «nyheter», avgjørelse 085).
+  const feilet = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'feilet' && kilder.get(id)?.sjekkmetode !== 'nyheter');
   if (feilet.length > 0) {
     orientering += feilet.length;
     deler.push([
@@ -403,62 +403,46 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
   }
 
   const innhold = deler.flat();
-  const tilstand = createHash('sha256').update(innhold.join('\n'), 'utf8').digest('hex').slice(0, 16);
   const tittel = punkter > 0 ? `Kontroll: ${punkter} ${punkter === 1 ? 'punkt' : 'punkter'} å se på` : 'Kontroll: til orientering';
   const tekst = [
     `Kildesjekken kjørte ${dato(g.kildestatus.kjort)}. Her er det du bør se på.`,
     '',
     'Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar. Da legges datoen inn automatisk. Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk`. Skal noe endres, skriv det til Claude.',
     '',
-    'Saken oppdateres hver mandag. Du får e-post når noe nytt har kommet til, og saken lukkes når alt er i orden.',
+    'Saken oppdateres hver mandag. Du får e-post når noe nytt kommer til, med hele listen. Står noe åpent uten at noe nytt kommer til, får du en påminnelse med hele listen annenhver uke. Saken lukkes når alt er i orden (avgjørelse 085).',
     '',
     ...innhold,
     '---',
     '',
     `Hele oversikten: [docs/KONTROLL.md](https://github.com/${g.repo}/blob/main/docs/KONTROLL.md). Slik behandler du saken: [docs/EIER.md](https://github.com/${g.repo}/blob/main/docs/EIER.md), punkt 6.`,
-    '',
-    `<!-- protokollen-kontroll tilstand:${tilstand} -->`,
   ].join('\n');
-  return { punkter, aapen: punkter + orientering > 0, tittel, tekst, tilstand };
+  return { punkter, aapen: punkter + orientering > 0, tittel, tekst };
 }
 
-export function lesTilstand(tekst: string | null | undefined): string | null {
-  return /<!-- protokollen-kontroll tilstand:([0-9a-f]+) -->/.exec(tekst ?? '')?.[1] ?? null;
-}
-
-export type Sakshandling =
-  | { type: 'opprett'; tittel: string; tekst: string }
-  | { type: 'oppdater'; nummer: number; tittel: string; tekst: string; kommentar: string | null }
-  | { type: 'lukk'; nummer: number; kommentar: string };
+/** Dager mellom påminnelsene om en kontrollsak som står åpen uten at noe nytt kommer til (avgjørelse 085). */
+export const PAMINNELSE_KONTROLL = 14;
 
 /**
- * Bestemmer hva som skal skje med kontrollsaken. Er innholdet det samme som sist, oppdateres bare teksten
- * (datoen), uten kommentar, så eier ikke får e-post uten grunn. Gamle saker per kilde lukkes.
+ * Bestemmer hva som skal skje med kontrollsaken (plan.ts): e-post når noe nytt kommer til og som påminnelse, ellers
+ * oppdateres bare teksten. Gamle saker per kilde lukkes.
  */
 export function planleggKontrollsak(
   rapport: Ukesrapport,
-  aapen: { nummer: number; tekst: string | null } | null,
+  aapen: AapenSak | null,
   gamleSaker: readonly number[],
-): Sakshandling[] {
-  const handlinger: Sakshandling[] = [];
-  if (rapport.aapen) {
-    if (!aapen) {
-      handlinger.push({ type: 'opprett', tittel: rapport.tittel, tekst: rapport.tekst });
-    } else {
-      const nytt = lesTilstand(aapen.tekst) !== rapport.tilstand;
-      handlinger.push({
-        type: 'oppdater',
-        nummer: aapen.nummer,
+  idag: string,
+): Varselhandling[] {
+  return [
+    ...planleggVarsel(
+      {
         tittel: rapport.tittel,
-        tekst: rapport.tekst,
-        kommentar: nytt ? 'Kildesjekken har funnet noe nytt. Se den oppdaterte beskrivelsen øverst i saken.' : null,
-      });
-    }
-  } else if (aapen) {
-    handlinger.push({ type: 'lukk', nummer: aapen.nummer, kommentar: 'Kildesjekken fant ingenting å se på denne uken. Lukker saken.' });
-  }
-  for (const nummer of gamleSaker) {
-    handlinger.push({ type: 'lukk', nummer, kommentar: 'Varsler om kildene samles nå i én ukentlig kontrollsak med etiketten «kontroll». Lukker denne saken.' });
-  }
-  return handlinger;
+        tekst: rapport.aapen ? rapport.tekst : null,
+        idag,
+        paminnelseDager: PAMINNELSE_KONTROLL,
+        lukk: () => 'Kildesjekken fant ingenting å se på denne uken. Lukker saken.',
+      },
+      aapen,
+    ),
+    ...gamleSaker.map((nummer): Varselhandling => ({ type: 'lukk', nummer, kommentar: 'Varsler om kildene samles nå i én ukentlig kontrollsak med etiketten «kontroll». Lukker denne saken.' })),
+  ];
 }

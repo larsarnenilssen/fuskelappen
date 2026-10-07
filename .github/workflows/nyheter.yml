@@ -3,6 +3,9 @@
 # publiseres på nytt med de nye nyhetene (deploy.yml tar med data/nyheter fra main). Feiler en kilde, står sakene fra
 # før, og kilden får status i filen og i kildesjekken.
 #
+# Feiler en nyhetskilde i mer enn to dager, kommer den i saken med etiketten «nyheter». Feiler arbeidsflyten, kommer
+# den i saken med etiketten «feil» (avgjørelse 085).
+#
 # I PR-er som endrer hentingen eller kildene, og ved manuell kjøring, prøvehentes også prøvekildene (npm run
 # nyheter:prove). Rapporten står i sammendraget for kjøringen. En PR committer ingenting.
 name: Nyheter
@@ -29,6 +32,7 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: write
+      issues: write
     outputs:
       endret: ${{ steps.lagre.outputs.endret }}
     steps:
@@ -58,6 +62,12 @@ jobs:
         run: npm run --silent nyheter:prove | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Test nyhetene
         run: npx vitest run tests/unit/nyheter.test.ts
+      # Saken om nyhetskilder som ikke har kunnet hentes på mer enn to dager (etikett «nyheter», avgjørelse 085).
+      - name: Sak om nyhetskilder som ikke kan hentes
+        if: github.event_name != 'pull_request'
+        run: npm run --silent nyheter:varsle
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Lagre nyhetene på main
         id: lagre
         if: github.event_name != 'pull_request'
@@ -88,3 +98,16 @@ jobs:
       pages: write
       id-token: write
       actions: write
+
+  # Varsel til eier når hentingen eller publiseringen feiler, og lukking når den går bra igjen (avgjørelse 085).
+  varsle:
+    name: Varsle eier
+    needs: [hent, publiser]
+    if: always() && github.event_name != 'pull_request' && !contains(needs.*.result, 'cancelled')
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ contains(needs.*.result, 'failure') && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read
