@@ -115,9 +115,19 @@ Eksempler som gjelder grunnskolen og ville sluppet gjennom: «Slik bør foreldre
 
 **K6. NIFU** (`nifu.no/category/nyhet/feed/`): Feeden viser bare de tre siste sakene, og de tre kom de tre siste dagene, så det er om lag én sak om dagen. De handlet om forskning og arbeidsliv. Ingen av de tre siste gjaldt skolen («NIFU analyserer statsbudsjettets betydning for forskning», «De eldste ansatte har svakere ferdigheter i adaptiv problemløsning …», «Ekstern finansiering av FoU relatert til sjømatnæringen»). Med daglig henting får vi med alt, og filteret slipper gjennom saker om rapporter om videregående, som «Videregående opplæring i utvikling og endring» (NIFU-rapport 2025:23). Mitt råd: **ta med** med vanlig filter. Det blir trolig én–to saker i måneden.
 
-**K8. HKdir:** Ingen feed, og ingen robots.txt (alt er tillatt). Siden «Aktuelt» (`hkdir.no/aktuelt`) har tolv saker med dato på én side, fra 22. juni til 30. september, altså om lag én sak i uka. Titlene står ikke som vanlige lenker i HTML-en, så siden er trolig bygd med JavaScript, og listen må leses på en annen måte enn hos Udir. HKdir skriver mest om høyere utdanning, fagskole og kompetanse. Karriereveiledning og voksenopplæring er relevant, men det blir få saker om videregående.
+**K8. HKdir (prøvd 07.10.2026):** «Aktuelt» (`hkdir.no/aktuelt`) kan leses med én forespørsel. Siden har alle sakene fra 2023 til nå, 171 i alt, hver med tittel, «Publisert: dato» og ingress. Det er ingen feed og ingen robots.txt. De publiserer lite, om lag én sak hver tiende dag, og mye gjelder høyere utdanning, fagskoler og godkjenning av utenlandsk utdanning. 29 av de 171 sakene passerer ordfilteret. Det blir 1–2 saker i måneden. Eksempler:
+- «Fire skoler hedres for fremragende resultater» (28. sep 2026)
+- «Internett, foreldre og KI: Slik søker unge råd om utdanning» (30. mar 2026)
+- «Dette er de ti mest populære yrkene blant unge» (4. jun 2025)
+- «Mange unge jenter er verken i jobb eller skole» (8. mar 2024)
+- «Gi dine innspill til kompetansestandarder for karriereveiledning i skolen» (27. sep 2023)
+- «Underveis mot fagbrev med Kompetansepluss fagopplæring» (29. mar 2023)
+- «Modulstrukturert opplæring gjev fleksibilitet» (9. feb 2023)
+- «To nye land i godkjenningsordningen for utenlandsk fag- og yrkesopplæring» (6. jun 2024)
 
-Mitt råd: **ikke nå.** Det er få relevante saker, og det er usikkert om listen kan leses med én forespørsel. Vil du ha den med, prøver jeg å lese listen. Da gjelder det samme som for Utdanningsforbundet (K1): det er en liste og ikke en feed.
+Med i filteret nå, men ikke relevant: «Fagskulane veks i takt med arbeidslivet sitt behov» og «Rekordmange har fått tilbud om studieplass». De kan tas bort ved å legge «fagskul» og «studieplass» til ordene som utelukker.
+
+Mitt råd: **ta med**, som type «Myndighet», med vanlig filter og de to ordene i tillegg. Det blir få saker, men de handler om karriereveiledning, fag- og yrkesopplæring og voksnes opplæring, som ingen av de andre kildene dekker. Det er en liste og ikke en feed, som hos Udir og Utdanningsforbundet.
 
 **Skolenes landsforbund:** Feeden svarte ikke, verken herfra eller fra Actions (heller ikke uten www). Den kan ikke tas med nå.
 
