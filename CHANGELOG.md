@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.42.0] – 2026-10-07
+
 ### Lagt til
 
 - **Nyheter:** Det siste fra Udir, Kunnskapsdepartementet, HKdir, Statsforvalteren og fylkeskommunen i fylket ditt, Lovdata, forskning.no, NIFU, Utdanningsnytt, Utdanningsforbundet og Skolelederforbundet, valgt ut for videregående og hentet hver dag.
@@ -14,9 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - **Oppslag:** Kalender og Nyheter står ikke lenger under «Oppslag». De nås fra panelet øverst på forsiden (sidekolonnen på stor skjerm), fra søket og som favoritter, som Videregående i tall.
-
 - **Forsiden:** Kalenderen, nyhetene og tallene i panelet har samme skrift, luft og lenke nederst. Kalenderen viser opptil fire datoer. Klikk hvor som helst i overskriften til høyre for valgene lukker og åpner panelet.
-
 - **Raskere oppstart:** Bare tekstene på målformen du har valgt, lastes når appen åpnes. Den andre lastes når du bytter.
 
 ## [0.41.0] – 2026-10-07

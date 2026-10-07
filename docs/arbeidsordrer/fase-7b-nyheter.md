@@ -2,7 +2,7 @@
 
 Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen står under arbeidsordren.
 
-*Status 07.10.2026:* Fase 7 er levert i 0.40.0 og 0.41.0. Forsiden har fått panelet med kalenderen og tallene (avgjørelse 081), og nyhetene skal inn som visningen «Nyheter» der. Plassen og en skisse finnes allerede i testversjonen. Denne arbeidsordren er klar til bruk.
+*Status 07.10.2026, kveld:* **Levert i 0.42.0.** Forslaget, eiers svar i seks runder og prøvehentingene står i `docs/arbeidsordrer/fase-7b-forslag.md`. Neste arbeid er fase 8 (`docs/arbeidsordrer/fase-8.md`).
 
 ---
 

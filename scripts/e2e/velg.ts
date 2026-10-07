@@ -12,6 +12,7 @@ const MODULSPEKER: Record<string, readonly string[]> = {
   kalender: ['kalender'],
   laereplanverket: ['laereplanverket'],
   lov: ['regelverk'],
+  nyheter: ['nyheter'],
   opplaeringslop: ['opplaeringslop', 'laerlinger'],
   skolemiljo: ['skolemiljo'],
   statistikk: ['statistikk'],
