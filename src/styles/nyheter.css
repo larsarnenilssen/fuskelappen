@@ -1,0 +1,284 @@
+/* Nyhetene (fase 7b): siden og visningen i panelet på forsiden. Filen importeres av komponentene og lastes med dem,
+   ikke i startpakken (avgjørelse 082). Fargene er tokenene fra tokens.css. */
+
+/* Filteret: hvem og kilde side om side, under hverandre på smal skjerm. */
+.nyh-filter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: var(--rom-3);
+  margin: 0 0 var(--rom-3);
+}
+
+.nyh-filter .felt {
+  margin: 0;
+}
+
+.nyh-dag h2 {
+  margin: var(--rom-4) 0 var(--rom-2);
+}
+
+/* En sak på siden: tittel og kilden under. Et trykk viser ingressen, og saken blir en lenke til kilden (eier
+   07.10.2026). Knappen som lukker saken, står oppe til høyre. */
+button.nyh-sak {
+  width: 100%;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nyh-sak {
+  align-items: flex-start;
+}
+
+.nyh-sak .listelenke-tekst {
+  gap: 0.15rem;
+}
+
+.nyh-sak .listelenke-tittel {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 12 5 5;
+}
+
+.nyh-sak > .ikon:last-child {
+  margin-top: 0.2rem;
+  color: var(--farge-tekst-dempet);
+}
+
+.nyh-sak-ramme {
+  position: relative;
+}
+
+.nyh-sak-ramme.apen {
+  background: var(--farge-flate-2);
+}
+
+.nyh-sak-ramme.apen .nyh-sak {
+  padding-right: calc(var(--trykkflate) + var(--rom-2));
+}
+
+.nyh-lukk {
+  position: absolute;
+  top: var(--rom-1);
+  right: var(--rom-1);
+  color: var(--farge-tekst-dempet);
+}
+
+.nyh-ingress {
+  font-size: var(--str-s);
+  color: var(--farge-tekst);
+}
+
+.nyh-les .ikon {
+  margin-left: var(--rom-1);
+  vertical-align: -0.15em;
+}
+
+.nyh-les {
+  display: block;
+  margin-top: var(--rom-1);
+  color: var(--farge-lenke);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* ---------- Forsiden (eier 07.10.2026) ----------
+   Høyst litt høyere enn kalenderen, med inntil fire saker med titler på høyst to linjer, i litt mindre skrift. En sak
+   som ikke får helt plass, vises ikke, og boksen blir lavere (komponenter.tsx). Mens det måles, har boksen full høyde
+   (`maler`). Filteret har luft rundt seg (eier 07.10.2026). Filteret og «Alle» står i én linje øverst. En sak som er valgt, fyller den
+   samme plassen med ingressen og knappen til kilden. */
+.nyh-forside-topp {
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+/* Saken alene: like høy som listen var (satt i komponenten), ellers full høyde. */
+.nyh-forside-sak {
+  height: 18.25rem;
+}
+
+/* Den vanlige nedtrekkslisten ligger usynlig over teksten. 16 px, så iOS ikke forstørrer siden når den åpnes. */
+.nyh-filterknapp {
+  position: relative;
+  display: inline-flex;
+  min-width: 0;
+  border-radius: var(--radius-s);
+}
+
+.nyh-filterknapp:focus-within {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: 2px;
+}
+
+.nyh-filterknapp-tekst {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-width: 0;
+  min-height: 2.25rem;
+  color: var(--farge-lenke);
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.nyh-filterknapp-tekst > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nyh-filterknapp select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: max(16px, 1rem);
+  cursor: pointer;
+}
+
+.nyh-forside-alle {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: 2.25rem;
+  color: var(--farge-lenke);
+  font-size: var(--str-s);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nyh-forside-alle:hover,
+.nyh-filterknapp:hover .nyh-filterknapp-tekst {
+  text-decoration: underline;
+}
+
+.nyh-forside-knapp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 100%;
+  padding: 0.4rem var(--rom-3);
+  border: 0;
+  background: none;
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nyh-forside-knapp:hover {
+  background: var(--farge-flate-2);
+}
+
+.nyh-forside-tittel {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  margin: 0;
+  font-size: var(--str-s);
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.nyh-forside-under {
+  margin: 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+/* Saken alene: tittelen (høyst tre linjer), ingressen i plassen som er igjen, kilden og knappen til saken. */
+.nyh-forside-innhold {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--rom-1);
+  min-height: 0;
+  padding: var(--rom-2) var(--rom-3) 0;
+  overflow: hidden;
+}
+
+.nyh-forside-innhold .nyh-forside-tittel {
+  flex: none;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.nyh-forside-innhold .nyh-ingress {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.nyh-forside-les {
+  flex: none;
+  align-self: flex-start;
+  margin: var(--rom-2) var(--rom-3) var(--rom-3);
+}
+
+.nyh-tilbake {
+  min-height: 2.25rem;
+}
+
+.nyh-om p {
+  margin: 0 0 var(--rom-3);
+}
+
+.nyh-kildeliste {
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+}
+
+.nyh-kildeliste > li {
+  padding: var(--rom-2) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.nyh-kildeliste > li:first-child {
+  border-top: 0;
+}
+
+.nyh-kildenavn {
+  font-weight: 600;
+}
+
+.nyh-kildefeil {
+  display: flex;
+  gap: var(--rom-1);
+  align-items: flex-start;
+  margin-top: var(--rom-1);
+  color: var(--farge-advarsel);
+}
+
+.nyh-ks {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.nyh-ks h2 {
+  margin: 0 0 var(--rom-2);
+}
+
+.nyh-ks p {
+  margin: 0 0 var(--rom-2);
+}
+
+/* «Vis eldre» under sakene fra de siste 30 dagene. */
+.nyh-eldre {
+  margin: var(--rom-2) 0 var(--rom-4);
+}

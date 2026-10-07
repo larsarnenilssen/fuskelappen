@@ -61,7 +61,7 @@ test.describe('Videregående i tall på forsiden', () => {
     await page.goto('./');
     const panel = page.locator('.forside-sidekolonne [data-gruppe="panel"]');
     // Kalenderen er første visning. Valgene står i overskriften, og valget av «I tall» huskes.
-    await expect(panel.locator('.kal-neste')).toBeVisible();
+    await expect(panel.locator('.kal-panel')).toBeVisible();
     await panel.getByRole('button', { name: 'I tall', exact: true }).click();
     await expect(panel.getByRole('button', { name: 'I tall', exact: true })).toHaveAttribute('aria-pressed', 'true');
     await expect(panel.locator('.st-forside-sted')).toHaveText('Tall for Vestland');

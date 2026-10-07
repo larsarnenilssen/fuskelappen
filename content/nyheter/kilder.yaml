@@ -1,0 +1,481 @@
+# Nyhetskildene (fase 7b). scripts/hent-nyheter.ts henter dem hver dag til data/nyheter/nyheter.json, og appen viser
+# navnet, typen og merknaden herfra. Hver kilde har en oppføring i content/kilder.yaml med lisens (`kilde`).
+#
+# - type: myndighet, fagpresse, organisasjon (interessepart), forskning eller media.
+# - format: rss (RSS eller Atom), udir eller utdanningsforbundet (nyhetslisten på én side).
+# - filter: vgs (bare saker som passer ordene under) eller alle.
+# - ingress: om ingressen tas med (eier avgjør når designet er klart).
+# - fylker: Statsforvalteren vises bare når et av fylkene er valgt.
+# - utelat: ord i tittelen som utelukker en sak fra kilden.
+
+# Ordene som gjør en sak relevant for videregående. Et ord treffer også når det er starten på et lengre ord
+# (scripts/nyheter/filter.ts):
+# - Et sterkt ord tar med saken, med mindre tittelen handler om en annen del av utdanningen og ikke har et sterkt ord.
+# - Et generelt ord i tittelen tar med saken når tittelen ikke har et ord fra `utelukker`. Står de generelle ordene bare
+#   i ingressen, må minst to ulike ord treffe, så én tilfeldig «elev» eller «skole» ikke er nok, og ingen ord fra
+#   `utelukker` stå der.
+# Grensetilfellene eier har sagt ja til (07.10.2026): «Inn på tunet for enkeltelever», «digital opplæring i fengsel»,
+# PISA, «Slik skal elevene lære mer i skolen» og «Eksamen i sikker nettleser».
+# Ord som er tatt ut fordi de ga feiltreff (eier 07.10.2026): «fylkeskommune» (landbruk, budsjett), «opplæring»
+# (fengsel, helse), «undervisning» og «vurdering» (forvaltning).
+filter:
+  sterke:
+    - videregående
+    - vidaregåande
+    - vgs
+    - vg1
+    - vg2
+    - vg3
+    - yrkesfag
+    - studieforberedende
+    - studiekompetanse
+    - lærling
+    - lærlinga
+    - lærekandidat
+    - lærefag
+    - læreplass
+    - lærebedrift
+    - fagbrev
+    - svennebrev
+    - fagprøve
+    - fagopplæring
+    - fag- og yrkesopplæring
+    - opplæringskontor
+    - privatist
+    - inntak
+    - opplæringslov
+    - opplæringsforskrift
+    - privatskolelov
+    - SFS 2213
+    - lektor
+  generelle:
+    - skole
+    - skule
+    - elev
+    - lærer
+    - lærar
+    - rektor
+    - skoleleder
+    - skuleleiar
+    - eksamen
+    - standpunkt
+    - karakter
+    - fravær
+    - læreplan
+    - fagfornyelsen
+    - underveisvurdering
+    - sluttvurdering
+    - vurderingen
+    - vurderinga
+    - skolemiljø
+    - skulemiljø
+    - mobbing
+    - tilpasset opplæring
+    - tilpassa opplæring
+    - spesialundervisning
+    - individuelt tilrettelagt
+    - særskilt språkopplæring
+    - privatskole
+    - privatskule
+    - opplæring i fengsel
+    - opplæring i fengsler
+  utelukker:
+    - barnehage
+    - grunnskole
+    - grunnskule
+    - barneskole
+    - barneskule
+    - ungdomsskole
+    - ungdomsskule
+    - småskole
+    - 1. trinn
+    - 1. og 2. trinn
+    - 1.–4. trinn
+    - 5.–7. trinn
+    - 8.–10. trinn
+    - barnetrinn
+    - småtrinn
+    - mellomtrinn
+    - ungdomstrinn
+    - de minste
+    - de yngste
+    - dei minste
+    - dei yngste
+    - nasjonale prøver
+    - nasjonale prøvar
+    - fellesskole
+    - fellesskule
+    - skolefritidsordning
+    - SFO
+    - universitet
+    - høyskole
+    - høgskole
+    - studenter
+    - studentar
+    - doktorgrad
+    - fagskole
+    - fagskule
+    - studielån
+    - forskningssenter
+    - lærerutdanning
+    - lærarutdanning
+  aldri:
+    - stillingsutlysning
+    - ledig stilling
+
+kilder:
+  - id: regjeringen-kd
+    navn: { nb: Kunnskapsdepartementet, nn: Kunnskapsdepartementet }
+    kortnavn: { nb: KD, nn: KD }
+    type: myndighet
+    kilde: regjeringen-kd-nyheter
+    format: rss
+    url: https://www.regjeringen.no/no/rss/Rss/2581966/?owner=586
+    filter: vgs
+    ingress: true
+
+  - id: udir
+    navn: { nb: Utdanningsdirektoratet, nn: Utdanningsdirektoratet }
+    kortnavn: { nb: Udir, nn: Udir }
+    type: myndighet
+    kilde: udir-siste-nytt
+    format: udir
+    url: https://www.udir.no/om-udir/siste-nytt/
+    filter: vgs
+    ingress: true
+
+  # Vedtatte endringer i lovene og forskriftene appen har, fra hentingen fra Lovdata (data/lovdata/kommende.json).
+  # Tittelen og ingressen lages av appen, på bokmål og nynorsk. Datoen er datoen endringen ble vedtatt.
+  - id: lovdata
+    navn: { nb: Lovdata (Norsk Lovtidend), nn: Lovdata (Norsk Lovtidend) }
+    kortnavn: { nb: Lovdata, nn: Lovdata }
+    type: myndighet
+    kilde: lovdata-lovtidend
+    format: lovdata
+    url: https://lovdata.no/register/lovtidend
+    filter: alle
+    ingress: true
+
+  # Forskning (K5 og K6, eier 07.10.2026). forskning.no har mye om barn og grunnskole, så saker om barn og foreldre
+  # tas bare med når de har et sterkt ord.
+  - id: forskning-no
+    navn: { nb: forskning.no, nn: forskning.no }
+    type: forskning
+    kilde: forskning-no-skole
+    format: rss
+    url: "https://www.forskning.no/tag/skole%20og%20utdanning?lab_viewport=rss"
+    filter: vgs
+    ingress: true
+    utelukker: [barn, foreldre]
+
+  - id: nifu
+    navn: { nb: NIFU, nn: NIFU }
+    type: forskning
+    merknad: { nb: Nordisk institutt for studier av innovasjon, forskning og utdanning, nn: Nordisk institutt for studiar av innovasjon, forsking og utdanning }
+    kilde: nifu-nyheter
+    format: rss
+    url: https://www.nifu.no/category/nyhet/feed/
+    filter: vgs
+    ingress: true
+
+  - id: skolelederforbundet
+    navn: { nb: Skolelederforbundet, nn: Skolelederforbundet }
+    type: organisasjon
+    kilde: skolelederforbundet-nyheter
+    format: rss
+    url: https://www.skolelederforbundet.no/feed/
+    filter: alle
+    ingress: true
+    utelat: [forsikring, YS Fordel, Kampanje]
+
+  - id: utdanningsforbundet
+    navn: { nb: Utdanningsforbundet, nn: Utdanningsforbundet }
+    type: organisasjon
+    kilde: utdanningsforbundet-nyheter
+    format: utdanningsforbundet
+    url: https://www.utdanningsforbundet.no/nyheter
+    filter: alle
+    ingress: true
+
+  - id: utdanningsnytt
+    navn: { nb: Utdanningsnytt, nn: Utdanningsnytt }
+    type: fagpresse
+    merknad: { nb: Utgitt av Utdanningsforbundet, nn: Gitt ut av Utdanningsforbundet }
+    kilde: utdanningsnytt-nyheter
+    format: rss
+    url: https://www.utdanningsnytt.no/tag/videreg%C3%A5ende?lab_viewport=rss
+    filter: alle
+    ingress: true
+
+  # Statsforvalteren: ett embete per fylke eller gruppe av fylker. Sakene står bare når et av fylkene er valgt.
+  # Embetene som skriver nynorsk, har feeden under /nn/<embete>/nyhende/.
+
+  - id: statsforvalteren-agder
+    navn: { nb: Statsforvalteren i Agder, nn: Statsforvaltaren i Agder }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/agder/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["42"]
+
+  - id: statsforvalteren-innlandet
+    navn: { nb: Statsforvalteren i Innlandet, nn: Statsforvaltaren i Innlandet }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/innlandet/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["34"]
+
+  - id: statsforvalteren-more-og-romsdal
+    navn: { nb: Statsforvalteren i Møre og Romsdal, nn: Statsforvaltaren i Møre og Romsdal }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nn/more-og-romsdal/nyhende/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["15"]
+
+  - id: statsforvalteren-nordland
+    navn: { nb: Statsforvalteren i Nordland, nn: Statsforvaltaren i Nordland }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/nordland/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["18"]
+
+  - id: statsforvalteren-rogaland
+    navn: { nb: Statsforvalteren i Rogaland, nn: Statsforvaltaren i Rogaland }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nn/rogaland/nyhende/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["11"]
+
+  - id: statsforvalteren-troms-og-finnmark
+    navn: { nb: Statsforvalteren i Troms og Finnmark, nn: Statsforvaltaren i Troms og Finnmark }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/troms-og-finnmark/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["55", "56"]
+
+  - id: statsforvalteren-trondelag
+    navn: { nb: Statsforvalteren i Trøndelag, nn: Statsforvaltaren i Trøndelag }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/trondelag/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["50"]
+
+  - id: statsforvalteren-vestfold-og-telemark
+    navn: { nb: Statsforvalteren i Vestfold og Telemark, nn: Statsforvaltaren i Vestfold og Telemark }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/vestfold-og-telemark/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["39", "40"]
+
+  - id: statsforvalteren-vestland
+    navn: { nb: Statsforvalteren i Vestland, nn: Statsforvaltaren i Vestland }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nn/vestland/nyhende/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["46"]
+
+  - id: statsforvalteren-ostfold-buskerud-oslo-og-akershus
+    navn: { nb: "Statsforvalteren i Østfold, Buskerud, Oslo og Akershus", nn: "Statsforvaltaren i Østfold, Buskerud, Oslo og Akershus" }
+    kortnavn: { nb: Statsforvalteren, nn: Statsforvaltaren }
+    type: myndighet
+    kilde: statsforvalteren-nyheter
+    format: rss
+    url: https://www.statsforvalteren.no/nb/ostfold-buskerud-oslo-og-akershus/nyheter/rss?limit=50
+    filter: vgs
+    ingress: true
+    fylker: ["31", "33", "03", "32"]
+
+  # HKdir (K8, eier 07.10.2026): «Aktuelt» er en liste på én side, ingen feed. Karriereveiledning, fag- og
+  # yrkesopplæring og voksnes opplæring.
+  - id: hkdir
+    navn: { nb: Direktoratet for høyere utdanning og kompetanse, nn: Direktoratet for høgare utdanning og kompetanse }
+    kortnavn: { nb: HKdir, nn: HKdir }
+    type: myndighet
+    kilde: hkdir-aktuelt
+    format: hkdir
+    url: https://hkdir.no/aktuelt
+    filter: vgs
+    ingress: true
+
+  # Fylkeskommunene på ACOS (K4, eier 07.10.2026): én feed per fylke, med 5–9 saker. Fylkene lenker selv til feedene.
+  # robots.txt stenger /artikkelRSS.aspx, som er en annen adresse enn feeden (/ArtikkelRSS.ashx). Sier et fylke fra,
+  # tas feeden ut. Sakene vises bare når fylket er valgt. Innlandet har egen feed for utdanning og filtreres ikke.
+
+  - id: fylkeskommune-akershus
+    navn: { nb: Akershus fylkeskommune, nn: Akershus fylkeskommune }
+    kortnavn: { nb: Akershus fylkeskommune, nn: Akershus fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://afk.no/ArtikkelRSS.ashx?NyhetsKategoriId=22134&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["32"]
+
+  - id: fylkeskommune-buskerud
+    navn: { nb: Buskerud fylkeskommune, nn: Buskerud fylkeskommune }
+    kortnavn: { nb: Buskerud fylkeskommune, nn: Buskerud fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://bfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=21858&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["33"]
+
+  - id: fylkeskommune-innlandet
+    navn: { nb: Innlandet fylkeskommune, nn: Innlandet fylkeskommune }
+    kortnavn: { nb: Innlandet fylkeskommune, nn: Innlandet fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://innlandetfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=3578&Spraak=Norsk"
+    filter: alle
+    ingress: true
+    fylker: ["34"]
+
+  - id: fylkeskommune-agder
+    navn: { nb: Agder fylkeskommune, nn: Agder fylkeskommune }
+    kortnavn: { nb: Agder fylkeskommune, nn: Agder fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://agderfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["42"]
+
+  - id: fylkeskommune-rogaland
+    navn: { nb: Rogaland fylkeskommune, nn: Rogaland fylkeskommune }
+    kortnavn: { nb: Rogaland fylkeskommune, nn: Rogaland fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.rogfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["11"]
+
+  - id: fylkeskommune-more-og-romsdal
+    navn: { nb: Møre og Romsdal fylkeskommune, nn: Møre og Romsdal fylkeskommune }
+    kortnavn: { nb: Møre og Romsdal fylkeskommune, nn: Møre og Romsdal fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://mrfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=917&Spraak=Nynorsk"
+    filter: vgs
+    ingress: true
+    fylker: ["15"]
+
+  - id: fylkeskommune-nordland
+    navn: { nb: Nordland fylkeskommune, nn: Nordland fylkeskommune }
+    kortnavn: { nb: Nordland fylkeskommune, nn: Nordland fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.nfk.no/ArtikkelRSS.ashx?NyhetsKategoriId=367&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["18"]
+
+  - id: fylkeskommune-troms
+    navn: { nb: Troms fylkeskommune, nn: Troms fylkeskommune }
+    kortnavn: { nb: Troms fylkeskommune, nn: Troms fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.tromsfylke.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["55"]
+
+  - id: fylkeskommune-finnmark
+    navn: { nb: Finnmark fylkeskommune, nn: Finnmark fylkeskommune }
+    kortnavn: { nb: Finnmark fylkeskommune, nn: Finnmark fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: rss
+    url: "https://www.ffk.no/ArtikkelRSS.ashx?NyhetsKategoriId=9&Spraak=Norsk"
+    filter: vgs
+    ingress: true
+    fylker: ["56"]
+
+  # Fylkene som ikke er på ACOS (K4b, eier 07.10.2026). Ingen av dem har feed. Vestland: arkivet for temaet
+  # «Utdanning» (JSON, ikke et dokumentert API). Vestfold og Telemark: hele «Aktuelt» på én side. Trøndelag er ikke med,
+  # fordi listen hentes fra /api/, som robots.txt stenger.
+  - id: fylkeskommune-vestland
+    navn: { nb: Vestland fylkeskommune, nn: Vestland fylkeskommune }
+    kortnavn: { nb: Vestland fylkeskommune, nn: Vestland fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: jsonliste
+    url: https://www.vestlandfylke.no/service/article/20/Utdanning
+    filter: vgs
+    ingress: true
+    fylker: ["46"]
+
+  - id: fylkeskommune-vestfold
+    navn: { nb: Vestfold fylkeskommune, nn: Vestfold fylkeskommune }
+    kortnavn: { nb: Vestfold fylkeskommune, nn: Vestfold fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: lenkeliste
+    url: https://vestfoldfylke.no/no/aktuelt/
+    filter: vgs
+    ingress: true
+    fylker: ["39"]
+
+  - id: fylkeskommune-telemark
+    navn: { nb: Telemark fylkeskommune, nn: Telemark fylkeskommune }
+    kortnavn: { nb: Telemark fylkeskommune, nn: Telemark fylkeskommune }
+    type: myndighet
+    kilde: fylkeskommunene-nyheter
+    format: lenkeliste
+    url: https://telemarkfylke.no/no/aktuelt/
+    filter: vgs
+    ingress: true
+    fylker: ["40"]
+
+# Prøvekilder: hentes bare av «npm run nyheter:prove» (i PR-er og ved manuell kjøring av arbeidsflyten Nyheter), og
+# vises ikke i appen. Rapporten viser om kilden svarer, hvor mange saker den har, og hva filteret ville tatt med, så
+# eier kan avgjøre om kilden skal med (K3, K5, K6 og K8, eier 07.10.2026). `streng`: bare sterke ord i tittelen.
+prove:
+  - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
+
+# Sider der prøvehentingen leter etter feeder (<link rel="alternate">), leser robots.txt og viser HTML-en rundt datoene.
+oppdag: []

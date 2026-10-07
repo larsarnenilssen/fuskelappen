@@ -204,7 +204,7 @@ Skjemaet defineres med zod og valideres i testene.
   - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
   - **Skolemiljø:** Skolemiljø (fase 7).
-  - **Oppslag:** Kalender, Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen står her, og forsiden har gruppen «Neste datoer» med de tre neste datoene (avgjørelse 066).
+  - **Oppslag:** Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen sto her, og forsiden hadde gruppen «Neste datoer» (avgjørelse 066). *(Eier 07.10.2026:)* Kalender og Nyheter står ikke lenger under «Oppslag», men i panelet øverst.
   - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag».
   - Lokale profiler (fase 9) hører hjemme i Innstillinger.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
@@ -582,7 +582,11 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 **Kontrollpunkt:** Eier kontrollerer kildene, merkingen og visningen.
 
+- Levert i 0.42.0 (07.10.2026): **Nyheter** fra KD, Udir, HKdir, Lovdata, Statsforvalteren og fylkeskommunen i valgt fylke, forskning.no, NIFU, Utdanningsnytt, Utdanningsforbundet og Skolelederforbundet, valgt ut for videregående med et ordfilter og hentet hver dag (avgjørelse 084). Visningen «Nyheter» i panelet på forsiden med filter og ingress, og en egen side med filter på hvem, fylke og kilde, de siste 30 dagene og «Vis eldre». Kalender og Nyheter står ikke under «Oppslag». Kalenderen, nyhetene og tallene i panelet har samme oppsett. Nynorsk lastes bare når den trengs (avgjørelse 083). Kilder som ikke kan hentes, står i `docs/KILDER-IKKE-MED.md`. Forslaget og eiers svar står i `docs/arbeidsordrer/fase-7b-forslag.md`. **Fase 7b er levert.** Eier har godkjent designet og kildene underveis.
+
 ### Fase 8 – Frister og årshjul
+
+*(07.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-8.md`.
 
 *(Fase 6, pakke 5, 05.10.2026:)* Den samlede oversikten over fristene er bygget som **Kalenderen** (`#/kalender`, avgjørelse 066): fristene fra alle manifestene, skoleruta fra fylkenes forskrifter, fylkenes datoer for inntak og vedtatte endringer i regelverket, med filter på tema og hvem det gjelder, de neste tolv månedene eller et skoleår. Fase 8 bygger videre på den og på datafilene (`data/skolerute/`, `data/inntak/`, `data/lovdata/kommende.json`).
 
@@ -659,7 +663,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 | Oversikt over tilbudene ved hver skole | fase 2 | Avklart. Skolene og tilbudene deres hentes fra utdanning.no (eier 03.10.2026, avgjørelse 053). |
 | Gjennomføring per fylke fra kullet som startet i 2020: Udir oppgir det på fylkene fra 2020 til 2023, som ikke kan deles opp | når Udir legger ut kullet | Venter. Appen regner om de eldre kullene. SSB (dagens fylker) prøves fra GitHub Actions for de sju fylkene som mangler (avgjørelse 080). |
-| KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Venter. Eier tar stilling etter rådet i `docs/arbeidsordrer/fase-7b-nyheter.md` (06.10.2026). |
+| KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Avklart for nyhetene (eier 07.10.2026): KS og KF Infoserie hentes ikke. Nyhetssiden har en fast lenke til KS, og vi spør ikke KS om en feed. Begge står i `docs/KILDER-IKKE-MED.md`. Kildesjekken av ks.no står som før. |
 
 ## 8. Ferdig når
 

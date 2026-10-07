@@ -10,6 +10,7 @@ import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 import { inntakNb } from './moduler/inntak.nb.ts';
 import { eksamenNb } from './moduler/eksamen.nb.ts';
 import { statistikkNb } from './moduler/statistikk.nb.ts';
+import { nyheterNb } from './moduler/nyheter.nb.ts';
 import { skolemiljoNb } from './moduler/skolemiljo.nb.ts';
 import { tilretteleggingNb } from './moduler/tilrettelegging.nb.ts';
 import { vurderingNb } from './moduler/vurdering.nb.ts';
@@ -40,8 +41,6 @@ export const nb = {
       nyheter: 'Nyheter',
       itall: 'I tall',
       nyheterTittel: 'Siste nytt',
-      nyheterSammendrag: 'Kommer i fase 7b',
-      nyheterSkisse: 'Skisse: Her kommer de siste nyhetene fra Udir, Lovdata og de andre kildene, med tittel, dato og lenke (fase 7b).',
     },
     visISidekolonne: 'Vis {gruppe} i sidekolonnen',
     tittel: 'Forside',
@@ -437,6 +436,10 @@ export const nb = {
       navn: 'Kalender',
       beskrivelse: 'Frister og datoer, med skoleruta.',
     },
+    nyheter: {
+      navn: 'Nyheter',
+      beskrivelse: 'Siste nytt fra myndighetene, fagpressen og organisasjonene.',
+    },
     statistikk: {
       navn: 'Videregående i tall',
       beskrivelse: 'Søkere, elever, læreplass, gjennomføring og eksamen.',
@@ -470,6 +473,7 @@ export const nb = {
   vurdering: vurderingNb,
   eksamen: eksamenNb,
   statistikk: statistikkNb,
+  nyheter: nyheterNb,
   inntak: inntakNb,
   begreper: {
     tittel: 'Begreper',

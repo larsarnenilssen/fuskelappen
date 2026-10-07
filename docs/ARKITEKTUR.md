@@ -121,6 +121,7 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
    - `side`: henter siden, trekker ut delen `uttrekk.selektor` peker på, normaliserer teksten og lager et fingeravtrykk (SHA-256). Avviker det fra `godkjent_fingeravtrykk`, blir status `endret`.
    - `nsr`: henter aktive videregående skoler fra Nasjonalt skoleregister til `data/skoler/vgs.json`. Oppdateres automatisk, med endringsrapport i jobbsammendraget.
    - `statistikk`: sjekker at nøkkeltallene fra Udirs statistikkbank er hentet (`npm run hent:statistikk` til `data/statistikk/statistikk.json`, avgjørelse 080). Publiseringen tar dataene fra `main`, som Elevundersøkelsen.
+   - `nyheter`: sjekker at nyhetene er hentet de siste to dagene. Nyhetene hentes hver dag av `.github/workflows/nyheter.yml` (`npm run hent:nyheter`, kildene i `content/nyheter/kilder.yaml`) til `data/nyheter/nyheter.json`, som committes til `main` uten PR og publiseres med `deploy.yml` (avgjørelse 084). Kilder som ikke kan hentes, står i `docs/KILDER-IKKE-MED.md`.
    - `kf-infoserie`: henter avtaletekster hos KF Infoserie med Chromium (Playwright), fordi siden krever nettleser.
    - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen. Teksten i PDF-en leses med pdfjs-dist til verdisjekken.
    - `lovdata`: laster ned Lovdatas datasett med gjeldende lover og sjekker delen `uttrekk.selektor` peker på.

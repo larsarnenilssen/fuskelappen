@@ -10,7 +10,7 @@ export interface Oppsett {
   privatskole?: boolean;
   favoritter?: string[];
   skjultKildevarsel?: string | null;
-  forside?: { rekkefolge: string[]; lukket: string[]; bareFavoritter: boolean; visning?: string; skjult?: string[] };
+  forside?: { rekkefolge: string[]; lukket: string[]; apnet?: string[]; bareFavoritter: boolean; visning?: string; skjult?: string[] };
 }
 
 /** Setter lagrede innstillinger før siden lastes. */
@@ -88,6 +88,7 @@ export const ruter = [
   '#/fylker/46',
   '#/statistikk',
   '#/statistikk?fylke=46',
+  '#/nyheter',
   '#/lov/vestland-skoleregler/8',
   '#/lov/forvaltningsloven',
   '#/lov/hovedtariffavtalen/hta-ansettelse',

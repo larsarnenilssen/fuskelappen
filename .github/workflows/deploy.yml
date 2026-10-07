@@ -7,6 +7,7 @@
 # - «Sett versjonstag» kaller den med den nye taggen. I en kalt arbeidsflyt er github.event_name den kallende
 #   arbeidsflytens hendelse (push til main), så videresendingen må også sjekke at det er en tag som er pushet.
 #
+# Nyhetene (data/nyheter, avgjørelse 084) hentes også fra main, til appen og til testversjonen.
 # Koden bygges alltid fra taggen. Kildestatusen og registerdataene (Grep og skoleregisteret) hentes fra main,
 # slik at de oppdateres hver uke (avgjørelse 018). Det samme gjelder resultatene fra Elevundersøkelsen, så et nytt
 # skoleår kommer med uten ny versjon (avgjørelse 077), og nøkkeltallene fra statistikkbanken (avgjørelse 080). Består ikke taggens tester med dataene fra main, brukes
@@ -106,9 +107,12 @@ jobs:
           cp data/status/kildestatus.json "$RUNNER_TEMP/kildestatus.json"
           mkdir -p "$RUNNER_TEMP/data"
           cp -r data/grep data/skoler data/elevundersokelsen data/statistikk "$RUNNER_TEMP/data/"
+          # Nyhetene hentes hver dag til main (avgjørelse 084). Filen hentes av appen ved siden av bygget.
+          if [ -d data/nyheter ]; then cp -r data/nyheter "$RUNNER_TEMP/data/"; fi
           git checkout --quiet "$TAG"
           cp "$RUNNER_TEMP/kildestatus.json" data/status/kildestatus.json
           cp -r "$RUNNER_TEMP/data/grep" "$RUNNER_TEMP/data/skoler" "$RUNNER_TEMP/data/elevundersokelsen" "$RUNNER_TEMP/data/statistikk" data/
+          if [ -d "$RUNNER_TEMP/data/nyheter" ]; then cp -r "$RUNNER_TEMP/data/nyheter" data/; fi
           VERSJON=$(node -p "require('./package.json').version")
           if [ "v$VERSJON" != "$TAG" ]; then
             echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
@@ -152,6 +156,8 @@ jobs:
           fi
           COMMIT=$(git rev-parse --short FETCH_HEAD)
           git worktree add --quiet --detach "$RUNNER_TEMP/test" FETCH_HEAD
+          # Testversjonen får også de ferske nyhetene fra main.
+          if [ -d "$RUNNER_TEMP/data/nyheter" ]; then cp -r "$RUNNER_TEMP/data/nyheter" "$RUNNER_TEMP/test/data/"; fi
           if (cd "$RUNNER_TEMP/test" && npm ci && npm run build:test); then
             cp -r "$RUNNER_TEMP/test/dist-test" dist/test
             echo "::notice::Testversjonen fra $COMMIT ligger under test/."

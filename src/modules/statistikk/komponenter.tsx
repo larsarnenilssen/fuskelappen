@@ -456,10 +456,10 @@ export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string;
           <Ikon navn="hoyre" class="ikon-liten" />
         </a>
       )}
-      <a class="listelenke st-forside-mer" href={statistikkLenke(fylke)}>
-        <Ikon navn="sammenlign" />
-        <span class="listelenke-tekst">
-          <span class="listelenke-tittel">{t('statistikk.forside.mer')}</span>
+      <a class="panel-videre" href={statistikkLenke(fylke)}>
+        <span class="panel-videre-tekst">
+          <Ikon navn="sammenlign" class="ikon-liten" />
+          {t('statistikk.forside.mer')}
         </span>
         <Ikon navn="hoyre" class="ikon-liten" />
       </a>

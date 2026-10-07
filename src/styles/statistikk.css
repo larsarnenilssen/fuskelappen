@@ -448,7 +448,7 @@
 
 .st-forside-sted {
   margin: 0;
-  padding: var(--rom-2) var(--rom-4) 0;
+  padding: var(--rom-2) var(--rom-3) 0;
   font-size: var(--str-xs);
   color: var(--farge-tekst-dempet);
 }
@@ -460,11 +460,14 @@
   border-bottom: var(--strek) solid var(--farge-linje);
 }
 
+/* Tallene på forsiden har samme luft som radene i kalenderen og nyhetene i panelet (eier 07.10.2026). */
 .st-fliser-kompakt .st-flis {
-  padding: var(--rom-2) var(--rom-4);
+  gap: 0;
+  padding: 0.4rem var(--rom-3);
   border: 0;
   border-radius: 0;
   background: none;
+  line-height: 1.3;
 }
 
 .st-fliser-kompakt .st-flis-tall {
@@ -475,14 +478,14 @@
    flatefargen, så de som ligger nær hverandre, skilles. Luft på sidene, så prikkene ytterst ikke går utenfor. */
 .st-stripe-figur {
   margin: 0;
-  padding: var(--rom-3) var(--rom-4);
+  padding: 0.4rem var(--rom-3) var(--rom-2);
   border-bottom: var(--strek) solid var(--farge-linje);
 }
 
 .st-stripe {
   position: relative;
   height: 1.5rem;
-  margin: var(--rom-2) 0.5rem 0;
+  margin: var(--rom-1) 0.5rem 0;
 }
 
 .st-stripe::before {
@@ -560,7 +563,7 @@
   display: flex;
   align-items: center;
   gap: var(--rom-2);
-  padding: var(--rom-2) var(--rom-4);
+  padding: var(--rom-2) var(--rom-3);
   border-bottom: var(--strek) solid var(--farge-linje);
   color: var(--farge-tekst);
   font-size: var(--str-s);
@@ -575,13 +578,4 @@
   text-decoration: underline;
 }
 
-.st-forside-mer {
-  border-radius: 0;
-  background: var(--farge-flate-2);
-  color: var(--farge-lenke);
-}
-
-.st-forside-mer .listelenke-tittel {
-  color: var(--farge-lenke);
-}
 

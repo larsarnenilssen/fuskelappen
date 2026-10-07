@@ -78,7 +78,7 @@ test.describe('«Neste datoer» på forsiden', () => {
     await expect(gruppe.locator('.gruppe-sammendrag')).toContainText(':');
     await expect(gruppe.locator('.panel-fane')).toHaveCount(0);
     await gruppe.locator('.gruppeknapp').click();
-    await expect(gruppe.locator('.kal-neste > li')).toHaveCount(4);
+    await expect(gruppe.locator('.kal-panel .panel-liste > li')).toHaveCount(4);
     await gruppe.getByRole('link', { name: 'Hele kalenderen' }).click();
     await expect(page).toHaveURL(/#\/kalender$/);
     await page.goto('./');
@@ -87,7 +87,7 @@ test.describe('«Neste datoer» på forsiden', () => {
     await page.getByRole('button', { name: 'Ferdig' }).click();
     // Panelet ble åpnet over, og står åpent: uten kalenderen og uten valget for den.
     await expect(gruppe.locator('.gruppeknapp')).toHaveAttribute('aria-expanded', 'true');
-    await expect(page.locator('.kal-neste')).toHaveCount(0);
+    await expect(page.locator('.kal-panel')).toHaveCount(0);
     await expect(gruppe.getByRole('button', { name: 'Kalender', exact: true })).toHaveCount(0);
   });
 });

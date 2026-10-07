@@ -10,6 +10,7 @@ import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
 import { eksamenNn } from './moduler/eksamen.nn.ts';
 import { statistikkNn } from './moduler/statistikk.nn.ts';
+import { nyheterNn } from './moduler/nyheter.nn.ts';
 import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
@@ -40,8 +41,6 @@ export const nn: Tekster = {
       nyheter: 'Nyheiter',
       itall: 'I tal',
       nyheterTittel: 'Siste nytt',
-      nyheterSammendrag: 'Kjem i fase 7b',
-      nyheterSkisse: 'Skisse: Her kjem dei siste nyheitene frå Udir, Lovdata og dei andre kjeldene, med tittel, dato og lenke (fase 7b).',
     },
     visISidekolonne: 'Vis {gruppe} i sidekolonna',
     tittel: 'Framside',
@@ -437,6 +436,10 @@ export const nn: Tekster = {
       navn: 'Kalender',
       beskrivelse: 'Fristar og datoar, med skuleruta.',
     },
+    nyheter: {
+      navn: 'Nyheiter',
+      beskrivelse: 'Siste nytt frå styresmaktene, fagpressa og organisasjonane.',
+    },
     statistikk: {
       navn: 'Vidaregåande i tal',
       beskrivelse: 'Søkjarar, elevar, læreplass, gjennomføring og eksamen.',
@@ -470,6 +473,7 @@ export const nn: Tekster = {
   vurdering: vurderingNn,
   eksamen: eksamenNn,
   statistikk: statistikkNn,
+  nyheter: nyheterNn,
   inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',
