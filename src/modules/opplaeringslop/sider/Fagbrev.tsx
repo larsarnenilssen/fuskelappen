@@ -284,7 +284,7 @@ export default function Fagbrev({ sporring }: SideProps) {
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.fagbrev.innledning')} />
       </p>
-      {/* Læreplass i fylket (skisse til eier 07.10.2026, avgjørelse 080). */}
+      {/* Læreplass i fylket (eier 07.10.2026, avgjørelse 080). */}
       <LaereplassBoks fylke={innstillinger.fylke} />
       <div class="fb-faner" role="tablist" aria-label={t('opplaeringslop.fagbrev.faner')}>
         {FANER.map((f) => (

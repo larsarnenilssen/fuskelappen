@@ -5,6 +5,8 @@
 import { useId, useMemo, useRef, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+// Stilene lastes med siden, ikke i startpakken.
+import '../../../styles/elevundersokelsen.css';
 
 export interface Enhetsvalg {
   /** Verdien i adressen, f.eks. «F46|p» eller «S974557584». Tom: ingen serie. */

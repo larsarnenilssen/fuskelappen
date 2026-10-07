@@ -49,10 +49,13 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 | `favorittbare()` | funksjoner, fag og begreper som kan favorittmerkes |
 | `frister()` | frister modulen eier (samles i årshjulet i fase 8) |
 | `innganger`, `flereTittel` | boksene modulen har på forsiden: hovedbokser, og innganger merket `flere` i en boks som kan åpnes (avgjørelse 030). Uten innganger er modulen selv én boks |
+| `paaForsiden` | `false` når modulen ikke skal stå som boks under kategorien sin på forsiden, fordi den har en egen plass der (Videregående i tall, avgjørelse 080 og 081) |
 | `kilder` | kilde-id-er fra `content/kilder.yaml` |
 | `status` | `aktiv` eller `skjult`. Skjulte moduler vises bare i utvikling og testing |
 
 `src/modules/register.ts` finner modulene automatisk med `import.meta.glob`. Forsiden, søket og favorittene bygges fra registeret, så en ny modul krever ingen endring i forsidekoden.
+
+Øverst på forsiden (i sidekolonnen på stor skjerm) er panelet med kalenderen, nyhetene og tallene som alternative visninger (`src/app/Forsidepanel.tsx`, avgjørelse 081). Gruppene som åpnes og lukkes, står i `src/app/Forsidegruppe.tsx`. En ny visning i panelet krever en oppføring i `VISNINGER` og en komponent der.
 
 I utvikling og testing tas også testmodulen i `tests/fixtures/moduler/` med (via den virtuelle modulen `virtual:testoppsett`). I produksjonsbygget er den tom.
 
@@ -117,6 +120,7 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
 1. `scripts/kilder/sjekk.ts` sjekker de aktive kildene:
    - `side`: henter siden, trekker ut delen `uttrekk.selektor` peker på, normaliserer teksten og lager et fingeravtrykk (SHA-256). Avviker det fra `godkjent_fingeravtrykk`, blir status `endret`.
    - `nsr`: henter aktive videregående skoler fra Nasjonalt skoleregister til `data/skoler/vgs.json`. Oppdateres automatisk, med endringsrapport i jobbsammendraget.
+   - `statistikk`: sjekker at nøkkeltallene fra Udirs statistikkbank er hentet (`npm run hent:statistikk` til `data/statistikk/statistikk.json`, avgjørelse 080). Publiseringen tar dataene fra `main`, som Elevundersøkelsen.
    - `kf-infoserie`: henter avtaletekster hos KF Infoserie med Chromium (Playwright), fordi siden krever nettleser.
    - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen. Teksten i PDF-en leses med pdfjs-dist til verdisjekken.
    - `lovdata`: laster ned Lovdatas datasett med gjeldende lover og sjekker delen `uttrekk.selektor` peker på.

@@ -135,7 +135,7 @@ export default function Eksamen({ sporring }: SideProps) {
                   <Ikon navn="info" class="ikon-liten" /> {t('eksamen.eksamen.fagarket')}
                 </p>
               </section>
-              {/* Eksamenskarakterene i fylket (skisse til eier 07.10.2026, avgjørelse 080). */}
+              {/* Eksamenskarakterene i fylket (eier 07.10.2026, avgjørelse 080). */}
               <EksamenBoks fylke={innstillinger.fylke} />
             </>
           }

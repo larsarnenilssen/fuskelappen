@@ -18,6 +18,8 @@ import { dokumentnavn, dokumentRute, lastOversikt } from '../../lov/data.ts';
 import type { Lovoversikt } from '../../lov/typer.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
 import { type Forklaringselement, hentInnhold, medPrefiks, veiviserRute } from '../innhold.ts';
+// Stilene lastes med siden, ikke i startpakken.
+import '../../../styles/skolemiljo.css';
 
 type Dokumentinfo = Lovoversikt['dokumenter'][number];
 

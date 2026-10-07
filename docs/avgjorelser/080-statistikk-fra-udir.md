@@ -25,4 +25,4 @@
 
 - **Forsiden** (eier 07.10.2026): Videregående i tall er en annen type modul enn de andre og står ikke som boks under «Oppslag» (`paaForsiden: false` i manifestet). Tallene er en visning i panelet øverst på forsiden, sammen med kalenderen og nyhetene (avgjørelse 081).
 
-**Konsekvens:** Rapport-API-et er ikke dokumentert og kan endres. Da stopper hentingen, appen viser de forrige tallene, og skriptet må rettes. Boksene i de andre modulene og siden «Videregående i tall» er skisser til eier har godkjent dem (07.10.2026).
+**Konsekvens:** Rapport-API-et er ikke dokumentert og kan endres. Da stopper hentingen, appen viser de forrige tallene, og skriptet må rettes. Eier godkjente siden, boksene i de andre modulene og panelet på forsiden 07.10.2026 (versjon 0.41.0).

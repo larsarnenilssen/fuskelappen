@@ -5,7 +5,7 @@
 // 07.10.2026). Den kan slås av under «Tilpass».
 import { oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { STATISTIKK_RUTE } from './komponenter.tsx';
+import { STATISTIKK_RUTE } from './adresse.ts';
 
 export const manifest: Modulmanifest = {
   id: 'statistikk',

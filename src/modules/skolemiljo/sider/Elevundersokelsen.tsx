@@ -47,6 +47,8 @@ import {
 } from '../elevundersokelsen/visning.ts';
 import { elevundersokelsenRute } from '../innhold.ts';
 import { type Enhetsvalg, Enhetsvelger } from './Enhetsvelger.tsx';
+// Stilene lastes med siden, ikke i startpakken.
+import '../../../styles/elevundersokelsen.css';
 
 const UDIR_SKJERMING = 'https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/visning-av-resultater-og-skjermingsregler/';
 const UDIR_STATISTIKK = 'https://www.udir.no/tall-og-forskning/brukerundersokelser/elevundersokelsen/resultater/offentlige-resultater-vgs/';

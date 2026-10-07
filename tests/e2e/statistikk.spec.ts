@@ -83,6 +83,18 @@ test.describe('Videregående i tall på forsiden', () => {
     await expect(page.locator('.forside-sidekolonne [data-gruppe="neste"]')).toBeVisible();
   });
 
+  test('skrivebord: uten valgt fylke viser «I tall» hele landet og en lenke for å velge fylke, ikke stripen', async ({ page }, info) => {
+    test.skip(info.project.name.includes('mobil'), 'Sidekolonnen finnes bare på skrivebord.');
+    await settLagret(page, { forside: { rekkefolge: [], lukket: [], bareFavoritter: false, visning: 'itall' } });
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('./');
+    const panel = page.locator('.forside-sidekolonne [data-gruppe="panel"]');
+    await expect(panel.locator('.st-forside-sted')).toHaveText('Tall for hele landet');
+    await expect(panel.locator('.st-stripe-figur')).toHaveCount(0);
+    await panel.getByRole('link', { name: /Velg fylke for å se hvor fylket ditt ligger/ }).click();
+    await expect(page).toHaveURL(/#\/innstillinger$/);
+  });
+
   test('«Bare favoritter»: kalenderen og Videregående i tall som favoritter står som hver sin gruppe', async ({ page }) => {
     await settLagret(page, { fylke: '46', favoritter: ['kalender:oversikt', 'statistikk:oversikt'] });
     await page.goto('./');

@@ -1,0 +1,240 @@
+/* Fraværsgrensen (fase 6, pakke 2). Filen importeres av siden og lastes sammen med den, ikke i startpakken (grensen
+   på 150 kB, avgjørelse 080). Reglene som deles med andre sider, står fortsatt i base.css. Fargene er tokenene fra
+   tokens.css. */
+
+
+
+.fr-fag {
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.fr-fag p {
+  margin: 0 0 var(--rom-1);
+}
+
+.fr-fag-navn {
+  font-weight: 700;
+}
+
+.fr-fag-timer {
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-hele-aaret {
+  margin: var(--rom-3) 0 0;
+}
+
+.fr-felt {
+  display: grid;
+  gap: var(--rom-3);
+}
+
+.fr-tabell {
+  width: 100%;
+  margin: var(--rom-3) 0;
+  border-collapse: collapse;
+  font-size: var(--str-s);
+}
+
+.fr-tabell th,
+.fr-tabell td {
+  padding: var(--rom-1) var(--rom-2);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  text-align: right;
+}
+
+.fr-tabell thead th,
+.fr-tabell td {
+  white-space: nowrap;
+}
+
+.fr-tabell th[scope='row'] {
+  font-weight: 400;
+  text-align: left;
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-tabell-svar th[scope='row'],
+.fr-tabell-svar td {
+  font-weight: 700;
+  color: var(--farge-tekst);
+}
+
+.fr-tomt {
+  margin: var(--rom-3) 0;
+}
+
+.fr-veiviserkort {
+  margin-top: var(--rom-3);
+}
+@media (min-width: 64rem) {
+
+  .fravaer .fr-veiviserkort {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
+}
+
+
+.fr-sjekk-svar {
+  margin-top: var(--rom-3);
+}
+
+.fr-tall {
+  display: grid;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-3);
+}
+
+.fr-tall div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+}
+
+.fr-tall dt {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-tall-prosent {
+  color: var(--farge-tekst);
+}
+.fr-tegn {
+  flex-shrink: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 3px;
+}
+
+.fr-tegn-teller {
+  background: var(--farge-ok);
+}
+
+.fr-skjonn .fr-tegn-teller {
+  background: var(--farge-advarsel);
+}
+
+.fr-over .fr-tegn-teller {
+  background: var(--farge-feil);
+}
+
+.fr-tegn-samlet,
+.fr-stolpe-samlet {
+  background: repeating-linear-gradient(135deg, var(--farge-tekst-dempet) 0 2px, transparent 2px 6px);
+  opacity: 0.45;
+}
+
+.fr-tall dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.fr-stolpe {
+  position: relative;
+  height: 1.25rem;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  overflow: hidden;
+}
+
+.fr-stolpe-samlet,
+.fr-stolpe-fyll {
+  position: absolute;
+  inset: 0 auto 0 0;
+}
+
+.fr-stolpe-fyll {
+  background: var(--farge-ok);
+}
+
+.fr-skjonn .fr-stolpe-fyll {
+  background: var(--farge-advarsel);
+}
+
+.fr-over .fr-stolpe-fyll {
+  background: var(--farge-feil);
+}
+
+.fr-stolpe-merke {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 2px solid var(--farge-tekst);
+}
+
+.fr-stolpe-merke-15 {
+  border-left-style: dashed;
+}
+
+.fr-stolpe-etiketter {
+  position: relative;
+  height: 1.25rem;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-stolpe-etiketter span {
+  position: absolute;
+  top: 0.125rem;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.fr-utfall {
+  margin: var(--rom-3) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border-left: 4px solid var(--farge-ok);
+  border-radius: var(--radius-s);
+  background: var(--farge-ok-flate);
+}
+
+.fr-skjonn .fr-utfall {
+  border-left-color: var(--farge-advarsel);
+  background: var(--farge-advarsel-flate);
+}
+
+.fr-over .fr-utfall {
+  border-left-color: var(--farge-feil);
+  background: var(--farge-feil-flate);
+}
+
+.fr-utfall p {
+  margin: 0 0 var(--rom-2);
+}
+
+.fr-utfall p:last-child {
+  margin-bottom: 0;
+}
+
+.fr-utfall-tittel {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  font-weight: 700;
+}
+.fr-del-helse {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.fr-del-helse input {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.fr-helse-etter {
+  margin-left: var(--rom-2);
+  padding-left: var(--rom-3);
+  border-left: 3px solid var(--farge-kant);
+}

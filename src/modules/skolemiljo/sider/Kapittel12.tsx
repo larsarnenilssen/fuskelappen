@@ -20,6 +20,8 @@ import { paragrafRute } from '../../lov/data.ts';
 import type { SideProps } from '../../typer.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
 import { type Forklaringselement, hentInnhold, medPrefiks, UNDERSIDER, veiviserRute } from '../innhold.ts';
+// Stilene lastes med siden, ikke i startpakken.
+import '../../../styles/skolemiljo.css';
 
 /** De fem delene av kapittelet, med kortene i hver del. Den første id-en er kortet oversikten lenker til. */
 const DELER = [

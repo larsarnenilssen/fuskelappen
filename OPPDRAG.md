@@ -205,6 +205,7 @@ Skjemaet defineres med zod og valideres i testene.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
   - **Skolemiljø:** Skolemiljø (fase 7).
   - **Oppslag:** Kalender, Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen står her, og forsiden har gruppen «Neste datoer» med de tre neste datoene (avgjørelse 066).
+  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag».
   - Lokale profiler (fase 9) hører hjemme i Innstillinger.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
@@ -563,6 +564,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 **Kontrollpunkt:** Eier kontrollerer innholdet.
 
 - Levert i 0.40.0 (06.10.2026): **Skolemiljø** med siden om opplæringslova kapittel 12, veiviseren for aktivitetsplikten etter rolle, skolereglene i fylket og på skolen, og **Elevundersøkelsen** med sammenligning, «Kort om» og søk (avgjørelse 076, 077 og 079). **Privatskoler** i appen og privatskolelova i Lov og forskrift (avgjørelse 075). **Eksamen og klage** som egen modul (avgjørelse 078). To kolonner på skrivebord (avgjørelse 074). Forslag og svar står i `docs/arbeidsordrer/fase-7-forslag.md`. Innholdet venter på eiers kontroll (`kontrollert: null`).
+- Levert i 0.41.0 (07.10.2026): **Videregående i tall** med tall fra Udirs statistikkbank (søkere, elever, læreplass, lærekontrakter, fravær, gjennomføring, fag- og svennebrev og eksamen), hentet hver uke. Tallene står også på fylkessiden, i Inntak, Lærlinger og kandidater, Fraværsgrensen, Eksamen og skolekortet (avgjørelse 080). Forsiden har et **panel** med kalenderen og tallene som alternative visninger, og plass til nyhetene i fase 7b (avgjørelse 081). Kapittel 12-siden viser til kapittel 13, og to nye begreper (nulltoleranse og psykososialt skolemiljø). Forslaget og eiers svar står i `docs/arbeidsordrer/forslag-statistikk.md`. **Fase 7 er levert.** Kontrollpunktet tas i kontrollrundene.
 
 ### Fase 7b – Nyheter
 
@@ -573,7 +575,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Et skript i GitHub Actions henter nyheter (tittel, dato, lenke og eventuelt ingress) fra så mange kilder som er forsvarlig, til `data/nyheter.json`. Appen gjør ingen eksterne kall.
 - Myndighetene er med: regjeringen.no, Udir og Statsforvalteren. Fagpressen, Utdanningsnytt, er med. Organisasjonene, f.eks. Skolelederforbundet, Skolenes landsforbund og Utdanningsforbundet, er med og merkes som interesseparter.
 - Kilder uten feed eller åpen liste skrapes ikke når det er ugreit (f.eks. Lektorlaget, eier 06.10.2026).
-- «Siste nytt» på forsiden og en egen side under «Oppslag». Statsforvalterens saker vises bare med valgt fylke.
+- «Siste nytt» på forsiden og en egen side under «Oppslag». Statsforvalterens saker vises bare med valgt fylke. *(Eier 07.10.2026:)* På forsiden er nyhetene visningen «Nyheter» i panelet øverst, sammen med kalenderen og tallene (avgjørelse 081). Plassen og en skisse er laget i 0.41.0, og bare testversjonen viser den.
 - Om ingress skal vises for alle kilder, noen eller ingen, avgjør eier når designet legges fram (eier 06.10.2026).
 - Nyhetsfilen publiseres daglig uten PR når den passer skjemaet (eier 06.10.2026). Det får et eget avgjørelsesnotat.
 - KS og KF Infoserie: eier tar stilling etter rådet i arbeidsordren (robots.txt hos KS, abonnement hos KF Infoserie).
@@ -656,6 +658,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Fordelingstabellen i Arbeidsplan går utenfor skjermen ved skriftstørrelse på 150 % eller mer (kjent begrensning, README) | senere | Venter, etter eiers ønske |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 | Oversikt over tilbudene ved hver skole | fase 2 | Avklart. Skolene og tilbudene deres hentes fra utdanning.no (eier 03.10.2026, avgjørelse 053). |
+| Gjennomføring per fylke fra kullet som startet i 2020: Udir oppgir det på fylkene fra 2020 til 2023, som ikke kan deles opp | når Udir legger ut kullet | Venter. Appen regner om de eldre kullene. SSB (dagens fylker) prøves fra GitHub Actions for de sju fylkene som mangler (avgjørelse 080). |
 | KS: robots.txt nekter ukjente roboter (`User-agent: * Disallow: /`), også for kildesjekken av ks.no. KF Infoserie i nyhetene | fase 7b | Venter. Eier tar stilling etter rådet i `docs/arbeidsordrer/fase-7b-nyheter.md` (06.10.2026). |
 
 ## 8. Ferdig når

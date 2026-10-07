@@ -192,7 +192,7 @@ function Skolekort({
       <div id={id} class="skolekort-innhold" hidden={!vist}>
         {/* Nettsiden og skolens egne regler som knapper øverst, og en strek før tilbudene (eier 05.10.2026). Har skolen
             tall fra statistikkbanken, står knappene i rammen med tallene, så kortet ikke får en egen rad (eier 07.10.2026,
-            skisse, avgjørelse 080). */}
+            avgjørelse 080). */}
         {vist && (iTall || snarveier) && (
           <>
             {iTall && statistikk && skole.orgnr ? (

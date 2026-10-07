@@ -31,6 +31,8 @@ import { beregnGrenser, type Fravaersresultat, type Fravaerssteg, type Grenseres
 import { fravaerRute, hentInnhold, veiviserRute } from '../innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { FravaerBoks } from '../../statistikk/komponenter.tsx';
+// Stilene lastes med siden, ikke i startpakken.
+import '../../../styles/fravaer.css';
 
 type Oktvalg = '45' | '60' | '90' | 'annen';
 const OKTER: readonly Oktvalg[] = ['45', '60', '90', 'annen'];
@@ -455,7 +457,7 @@ export default function Fravaer({ sporring }: SideProps) {
         </a>
       </div>
 
-      {/* Fraværet i fylket og på skolen (skisse til eier 07.10.2026, avgjørelse 080). */}
+      {/* Fraværet i fylket og på skolen (eier 07.10.2026, avgjørelse 080). */}
       <FravaerBoks fylke={innstillinger.fylke} skole={innstillinger.skole} />
       {regler && regler.length > 0 && (
         <section class="poeng-regler">

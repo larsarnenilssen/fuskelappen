@@ -71,7 +71,7 @@ export default function Fylke({ parametre, sporring }: SideProps) {
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
-      {/* Nøkkeltallene fra Udirs statistikkbank øverst (skisse til eier 07.10.2026, avgjørelse 080). */}
+      {/* Nøkkeltallene fra Udirs statistikkbank øverst (eier 07.10.2026, avgjørelse 080). */}
       <FylketITall fylke={nr} navn={kort} />
       {/* På skrivebord (fra 64rem): lenkene hos fylket og de lokale forskriftene til venstre, skolene, kontorene og
           datoene til høyre (avgjørelse 074). */}

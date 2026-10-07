@@ -13,8 +13,11 @@ import { formaterTall, type Tekstnokkel } from '../../core/i18n/tekst.ts';
 import { lastStatistikk } from '../../data/statistikk.ts';
 import { endringPoeng, endringProsent, forrigeVerdi, ranger, sisteFor, sisteVerdi } from './visning.ts';
 
-export const STATISTIKK_RUTE = '/statistikk';
-export const statistikkLenke = (fylke: string | null | undefined) => `#${STATISTIKK_RUTE}${fylke ? `?fylke=${fylke}` : ''}`;
+import { statistikkLenke } from './adresse.ts';
+// Stilene lastes med komponentene, ikke i startpakken.
+import '../../styles/statistikk.css';
+
+export { STATISTIKK_RUTE, statistikkLenke } from './adresse.ts';
 
 /** Tallene, lastet første gang de trengs. null mens de lastes, «feil» når de ikke kunne lastes. */
 export function useStatistikk(): Statistikk | null | 'feil' {
@@ -349,6 +352,7 @@ export function forsideSammendrag(t: T, d: Statistikk, enhet: string): string {
  * - fire fliser med søkere, elever, læreplass og lærekontrakter
  * - en stripe der hvert fylke er en prikk etter andelen som fikk læreplass, med fylket brukeren har valgt i
  *   seriefargen og landet som en stiplet strek. Prikkene er plassert, ikke stolper, så skalaen trenger ikke starte på null.
+ *   Uten valgt fylke står en lenke til innstillingene i stedet.
  * - elevtallet på skolen brukeren har valgt, og lenken til Videregående i tall
  */
 export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string; skole: { orgnr: string; navn: string } | null }) {
@@ -371,7 +375,7 @@ export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string;
   return (
     <div class="st-forside">
       {/* Stedet står her, fordi overskriften viser valgene i panelet når det er åpent. */}
-      <p class="st-forside-sted">{t('statistikk.forside.sted', { sted: stedsnavn(d, enhet, t) })}</p>
+      <p class="st-forside-sted">{enhet === 'L' ? t('statistikk.forside.stedLandet') : t('statistikk.forside.sted', { sted: stedsnavn(d, enhet, t) })}</p>
       <ul class="st-fliser st-fliser-kompakt">
         <Flis etikett={t('statistikk.nokkeltall.sokere', { aar: String(d.sokere.aar.at(-1) ?? '') })} verdi={tekstFor(t, sisteVerdi(sok))} under={endringTekst(t, sisteVerdi(sok), forrigeVerdi(sok), d.sokere.aar.at(-2) ?? '') ?? ''} />
         <Flis
@@ -382,7 +386,15 @@ export function ForsideTall({ d, enhet, skole }: { d: Statistikk; enhet: string;
         <Flis etikett={t('statistikk.nokkeltall.laereplass')} verdi={tekstFor(t, sisteVerdi(d.formidling.desember[enhet]), 'prosent')} under={enhet === 'L' ? t('statistikk.nokkeltall.laereplassUnder', { aar: aarFo }) : t('statistikk.landetVerdi', { verdi: tekstFor(t, landet ?? null, 'prosent') })} />
         <Flis etikett={t('statistikk.nokkeltall.kontrakter')} verdi={tekstFor(t, sisteVerdi(d.laerekontrakter.verdier[enhet]))} under={t('statistikk.nokkeltall.kontrakterUnder', { aar: String(d.laerekontrakter.aar.at(-1) ?? '') })} />
       </ul>
-      {rangert.length > 0 && (
+      {/* Uten valgt fylke sier stripen lite, så i stedet står en lenke til innstillingene (eier 07.10.2026). */}
+      {enhet === 'L' && (
+        <a class="st-forside-skole" href="#/innstillinger">
+          <Ikon navn="sted" class="ikon-liten" />
+          <span>{t('statistikk.forside.velgFylke')}</span>
+          <Ikon navn="hoyre" class="ikon-liten" />
+        </a>
+      )}
+      {enhet !== 'L' && rangert.length > 0 && (
         <figure class="st-stripe-figur">
           <figcaption class="st-figur-tekst">
             {t('statistikk.forside.stripe', { aar: aarFo })}

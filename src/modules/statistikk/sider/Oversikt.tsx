@@ -1,5 +1,5 @@
 // Videregående i tall (eier 07.10.2026, avgjørelse 080): nøkkeltallene fra Udirs statistikkbank for fylket brukeren
-// har valgt, eller for landet, med fylket i adressen (?fylke=46). Skisse til eier.
+// har valgt, eller for landet, med fylket i adressen (?fylke=46).
 //
 // - Øverst: velg fylke og fire nøkkeltall.
 // - Til venstre: søkere per utdanningsprogram (i år som stolpe, i fjor som strek) og fylkene side om side i en tabell.

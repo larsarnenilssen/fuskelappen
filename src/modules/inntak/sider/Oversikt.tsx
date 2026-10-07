@@ -63,7 +63,7 @@ export default function Oversikt() {
               <Ikon navn="hoyre" class="frist-inngang-pil" />
             </a>
           </section>
-          {/* Søkerne i fylket i år (skisse til eier 07.10.2026, avgjørelse 080). */}
+          {/* Søkerne i fylket i år (eier 07.10.2026, avgjørelse 080). */}
           <SokereBoks fylke={innstillinger.fylke} />
           <section>
             <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>

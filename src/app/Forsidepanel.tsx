@@ -15,7 +15,9 @@ import { oversiktsid } from '../modules/favoritter.ts';
 import { kalenderRute } from '../modules/kalender/adresse.ts';
 import type { Kalenderpost } from '../modules/kalender/beregning/kalender.ts';
 import { datoKort } from '../modules/kalender/visning.ts';
-import { ForsideTall, forsideSammendrag, useStatistikk } from '../modules/statistikk/komponenter.tsx';
+import type { Statistikk } from '../core/statistikk/skjema.ts';
+import { lastStatistikk } from '../data/statistikk.ts';
+import type * as Komponenter from '../modules/statistikk/komponenter.tsx';
 import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
 import { settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilstand.ts';
@@ -180,15 +182,28 @@ function Nyheter({ ramme }: { ramme: Ramme }) {
 function ITall({ ramme }: { ramme: Ramme }) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
-  const d = useStatistikk();
+  // Komponentene og tallene lastes når visningen vises, så de ikke er med i startpakken (grensen på 150 kB).
+  const [lastet, settLastet] = useState<{ m: typeof Komponenter; d: Statistikk } | null | 'feil'>(null);
+  useEffect(() => {
+    let aktiv = true;
+    Promise.all([import('../modules/statistikk/komponenter.tsx'), lastStatistikk()])
+      .then(([m, d]) => aktiv && settLastet({ m, d }))
+      .catch(() => aktiv && settLastet('feil'));
+    return () => {
+      aktiv = false;
+    };
+  }, []);
+  const d = lastet && lastet !== 'feil' ? lastet.d : null;
   const fylke = innstillinger.fylke;
-  const enhet = d && d !== 'feil' && fylke && d.enheter[`F${fylke}`] ? `F${fylke}` : 'L';
+  const enhet = d && fylke && d.enheter[`F${fylke}`] ? `F${fylke}` : 'L';
   const sted = enhet === 'L' ? t('statistikk.landet') : (fylkesnavn(fylke) ?? t('statistikk.landet'));
   const skole = innstillinger.skole?.id ? { orgnr: innstillinger.skole.id, navn: innstillinger.skole.navn } : null;
-  const melding = d === 'feil' ? t('statistikk.feil') : t('app.lasterInn');
+  const melding = lastet === 'feil' ? t('statistikk.feil') : t('app.lasterInn');
+  if (!lastet || lastet === 'feil') return ramme({ tittel: t('statistikk.iTall', { sted }), sammendrag: melding, children: <p class="dempet">{melding}</p> });
+  const { ForsideTall, forsideSammendrag } = lastet.m;
   return ramme({
     tittel: t('statistikk.iTall', { sted }),
-    sammendrag: d && d !== 'feil' ? forsideSammendrag(t, d, enhet) : melding,
-    children: d && d !== 'feil' ? <ForsideTall d={d} enhet={enhet} skole={skole} /> : <p class="dempet">{melding}</p>,
+    sammendrag: forsideSammendrag(t, lastet.d, enhet),
+    children: <ForsideTall d={lastet.d} enhet={enhet} skole={skole} />,
   });
 }
