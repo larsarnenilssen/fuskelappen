@@ -7,7 +7,7 @@ import { lesFil } from '../../scripts/innhold/last.ts';
 import { erRelevant, vurder } from '../../scripts/nyheter/filter.ts';
 import { lesLovdata } from '../../scripts/nyheter/lovdata.ts';
 import { nyhetsstatus } from '../../scripts/nyheter/status.ts';
-import { kortIngress, lesDato, lesFeed, lesUdir, lesUtdanningsforbundet, rensTekst } from '../../scripts/nyheter/les.ts';
+import { kortIngress, lesDato, lesFeed, lesHkdir, lesUdir, lesUtdanningsforbundet, rensTekst } from '../../scripts/nyheter/les.ts';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Nyhetskilder } from '../../src/modules/nyheter/kildeskjema.ts';
 import { nyheterSkjema, type Nyhet } from '../../src/modules/nyheter/skjema.ts';
@@ -36,6 +36,13 @@ describe('lesingen', () => {
     expect(lesUdir(udir, 'https://www.udir.no/om-udir/siste-nytt/')).toEqual([{ tittel: 'Høring', url: 'https://www.udir.no/om-udir/x/', dato: '2026-10-06', ingress: 'Tekst', stikkord: ['Artikkel'] }]);
     const udf = `<article><a href="/nyheter/2026/a"><h2 class="Kort_title__x">Tittel</h2><p class="Kort_ingress__y">Ingress</p><p class="Kort_publishDate__z">Publisert<!-- --> 05.10.2026</p></a></article>`;
     expect(lesUtdanningsforbundet(udf, 'https://www.utdanningsforbundet.no/nyheter')).toEqual([{ tittel: 'Tittel', url: 'https://www.utdanningsforbundet.no/nyheter/2026/a', dato: '2026-10-05', ingress: 'Ingress', stikkord: [] }]);
+  });
+
+  it('leser «Aktuelt» hos HKdir', () => {
+    const html = `<div><a href="/aktuelt/endringer-i-uvd-ordningen"><div><p>Endringer i UVD-ordningen</p></div><span>Publisert<!-- -->: <!-- -->30. september 2026</span> <p>Det blir endringer i ordningen.</p></a><a href="/aktuelt">Alle</a></div>`;
+    expect(lesHkdir(html, 'https://hkdir.no/aktuelt')).toEqual([
+      { tittel: 'Endringer i UVD-ordningen', url: 'https://hkdir.no/aktuelt/endringer-i-uvd-ordningen', dato: '2026-09-30', ingress: 'Det blir endringer i ordningen.', stikkord: [] },
+    ]);
   });
 
   it('renser tekst, korter ingressen og leser datoer', () => {

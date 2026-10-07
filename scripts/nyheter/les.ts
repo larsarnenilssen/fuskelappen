@@ -32,12 +32,17 @@ export function kortIngress(tekst: string, maks = 300): string {
   return `${kuttet.slice(0, Math.max(kuttet.lastIndexOf(' '), maks - 40)).replace(/[\s,.;:–-]+$/, '')} …`;
 }
 
-/** Dato i norsk tid fra RFC 822 (RSS), ISO 8601 (Atom) eller dd.mm.åååå (listene). */
+const MANEDER = ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'];
+
+/** Dato i norsk tid fra RFC 822 (RSS), ISO 8601 (Atom), dd.mm.åååå eller «30. september 2026» (listene). */
 export function lesDato(tekst: string | null | undefined): string | null {
   if (!tekst) return null;
   const s = tekst.trim();
   const norsk = /^(\d{1,2})\.(\d{1,2})\.(\d{4})/.exec(s);
   if (norsk) return `${norsk[3]}-${norsk[2]?.padStart(2, '0')}-${norsk[1]?.padStart(2, '0')}`;
+  const medNavn = /^(\d{1,2})\.\s*([a-zæøå]+)\s+(\d{4})/i.exec(s);
+  const maned = medNavn ? MANEDER.indexOf((medNavn[2] ?? '').toLowerCase()) + 1 : 0;
+  if (medNavn && maned > 0) return `${medNavn[3]}-${String(maned).padStart(2, '0')}-${medNavn[1]?.padStart(2, '0')}`;
   const tid = Date.parse(s);
   if (Number.isNaN(tid)) return null;
   // Datoen i Norge, så en sak publisert kl. 00.30 norsk tid får riktig dag.
@@ -112,5 +117,22 @@ export function lesUtdanningsforbundet(html: string, base: string): RaSak[] {
       const ingress = rensTekst(kort.querySelector('[class*="_ingress"]')?.innerHTML ?? '');
       const dato = lesDato(rensTekst(kort.querySelector('[class*="_publishDate"]')?.innerHTML ?? '').replace(/^\D+/, ''));
       return [{ tittel, url, dato, ingress: ingress || null, stikkord: [] }];
+    });
+}
+
+/**
+ * «Aktuelt» hos HKdir: hver sak er en lenke til /aktuelt/… med tittelen, «Publisert: 30. september 2026» og ingressen
+ * i hvert sitt avsnitt.
+ */
+export function lesHkdir(html: string, base: string): RaSak[] {
+  return parse(html)
+    .querySelectorAll('a[href^="/aktuelt/"]')
+    .flatMap((lenke) => {
+      const avsnitt = lenke.querySelectorAll('p').map((p) => rensTekst(p.innerHTML));
+      const publisert = /Publisert\s*:\s*(\d{1,2}\.\s*[a-zæøå]+\s+\d{4})/i.exec(rensTekst(lenke.innerHTML));
+      const tittel = avsnitt[0];
+      const url = absolutt(lenke.getAttribute('href') ?? '', base);
+      if (!tittel || !url || !publisert) return [];
+      return [{ tittel, url, dato: lesDato(publisert[1]), ingress: avsnitt[1] || null, stikkord: [] }];
     });
 }

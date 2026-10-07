@@ -37,6 +37,8 @@ export const provekildeSkjema = z.strictObject({
   streng: z.boolean().optional(),
   /** Alle sakene, uten filter (organisasjoner). */
   alle: z.boolean().optional(),
+  /** Hvordan kilden leses. Uten står RSS eller Atom. */
+  format: z.enum(['rss', 'hkdir']).optional(),
 });
 
 export const nyhetskilderSkjema = z.strictObject({

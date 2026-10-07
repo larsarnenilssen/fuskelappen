@@ -12,6 +12,14 @@ Startpakken var 149,4 kB (grense 150 kB). Nå lastes bare tekstene for målforme
 
 ---
 
+## Runde 4: dine svar 07.10.2026, ettermiddag
+
+- **K3 NRK:** Ikke med (enig i rådet).
+- **K5 forskning.no:** Med, som type «Forskning», med eget filter: saker om barn og foreldre er bare med når de har et sterkt ord.
+- **K6 NIFU:** Med, som type «Forskning», med vanlig filter.
+- **K8 HKdir:** Prøvehentingen viser HTML-en rundt datoene på «Aktuelt», så jeg kan se om listen kan leses (se under).
+- **Filteret på forsiden:** Linjen med filteret og «Alle nyhetene» har lys flate og blå tekst i liten skrift, som «Hele kalenderen». Den vanlige nedtrekkslisten ligger usynlig over teksten «Filtrer», så den virker som før med tastatur, skjermleser og mobilens egen liste. Når et filter er valgt, står navnet der i stedet (f.eks. «Udir»).
+
 ## Runde 3: dine svar 07.10.2026, og hva som er gjort
 
 | | Svar | Gjort |

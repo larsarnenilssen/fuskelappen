@@ -321,7 +321,7 @@ kilder:
 # vises ikke i appen. Rapporten viser om kilden svarer, hvor mange saker den har, og hva filteret ville tatt med, så
 # eier kan avgjøre om kilden skal med (K3, K5, K6 og K8, eier 07.10.2026). `streng`: bare sterke ord i tittelen.
 prove:
-  - { id: hkdir-rss, navn: HKdir (rss), url: https://hkdir.no/rss }
+  - { id: hkdir-aktuelt, navn: HKdir (Aktuelt), url: https://hkdir.no/aktuelt, format: hkdir }
   - { id: skolenes, navn: Skolenes landsforbund, url: https://www.skolenes.no/feed/, alle: true }
   # Fylkeskommunene (K4). ACOS-fylkene har en feed per nyhetskategori med 5–9 saker.
   - { id: fk-akershus, navn: Akershus fylkeskommune, url: "https://afk.no/ArtikkelRSS.ashx?NyhetsKategoriId=22134&Spraak=Norsk" }
