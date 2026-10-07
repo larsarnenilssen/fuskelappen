@@ -34,9 +34,23 @@ export function finnKilde(id: string): Kildevisning | undefined {
   return kildeMedId.get(id);
 }
 
-/** Kildene brukeren kan se: alle uten fylke, og Statsforvalteren for fylket som er valgt. */
-export function synligeKilder(kilder: readonly Kildevisning[], fylke: string | null): Kildevisning[] {
-  return kilder.filter((k) => !k.fylker || (fylke !== null && k.fylker.includes(fylke)));
+/** Fylket nyhetene vises for: et fylkesnummer, `alle` fylkene, eller null (bare de nasjonale kildene). */
+export type Nyhetsfylke = string | 'alle' | null;
+
+/**
+ * Kildene brukeren kan se: alle uten fylke, og Statsforvalteren og fylkeskommunen for fylket som er valgt. På
+ * nyhetssiden kan brukeren velge et annet fylke, eller alle (eier 07.10.2026). Forsiden følger fylket i innstillingene.
+ */
+export function synligeKilder(kilder: readonly Kildevisning[], fylke: Nyhetsfylke): Kildevisning[] {
+  return kilder.filter((k) => !k.fylker || fylke === 'alle' || (fylke !== null && k.fylker.includes(fylke)));
+}
+
+/** Fylket fra adressen (?fylke=46 eller ?fylke=alle). Uten står fylket i innstillingene. */
+export function lesNyhetsfylke(sporring: URLSearchParams, gyldige: readonly string[], standard: string | null): Nyhetsfylke {
+  const f = sporring.get('fylke');
+  if (f === 'alle') return 'alle';
+  if (f === 'ingen') return null;
+  return f && gyldige.includes(f) ? f : standard;
 }
 
 export interface Nyhetsfilter {
@@ -88,16 +102,17 @@ export function lesFilter(sporring: URLSearchParams): Nyhetsfilter {
   };
 }
 
-export function filterSporring(filter: Nyhetsfilter): string {
+export function filterSporring(filter: Nyhetsfilter, fylke?: { valgt: Nyhetsfylke; standard: string | null }): string {
   const p = new URLSearchParams();
+  if (fylke && fylke.valgt !== fylke.standard) p.set('fylke', fylke.valgt ?? 'ingen');
   if (filter.type) p.set('hvem', filter.type);
   if (filter.kilde) p.set('kilde', filter.kilde);
   const s = p.toString();
   return s ? `?${s}` : '';
 }
 
-/** Så mange saker står i panelet på forsiden. */
-const PAA_FORSIDEN = 3;
+/** Inntil så mange saker står i panelet på forsiden. Saker som ikke får plass i høyden, vises ikke (komponenter.tsx). */
+const PAA_FORSIDEN = 4;
 
 /** Høyst så mange saker fra samme kilde på forsiden, så én kilde med mange saker samme dag ikke fyller panelet. */
 const PER_KILDE = 2;

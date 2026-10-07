@@ -2,7 +2,7 @@
 // - Ingressen står ikke i listene. På siden viser et trykk på en sak ingressen, og neste trykk åpner saken hos kilden.
 // - På forsiden tar nyhetene ikke mer plass enn kalenderen. Et trykk på en sak viser den alene i samme plass, med
 //   ingressen, kilden og en knapp til saken hos kilden. Filteret på hvem eller kilde står øverst.
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { tilstand, useTekst, type T } from '../../app/tilstand.ts';
 import { Ikon } from '../../components/Ikon.tsx';
 import { nokkelFra, useHusketApen } from '../../components/husket.ts';
@@ -40,10 +40,14 @@ export function dagTittel(dato: string, idag: string, t: T, malform: Malform): s
 
 const kortDato = (dato: string, malform: Malform) => `${Number(dato.slice(8, 10))}. ${kortManed(Number(dato.slice(5, 7)), malform)}`;
 
-/** Kilden og hvem som står bak, f.eks. «Udir · Myndighet», med datoen først på forsiden. */
-function kildelinje(s: Nyhet, t: T, malform: Malform, dato: boolean): string {
+/**
+ * Kilden og hvem som står bak, f.eks. «Udir · Myndighet», med datoen først på forsiden. Med `fulltNavn` står hele navnet
+ * på kilder for et fylke («Statsforvalteren i Vestland»), når nyhetssiden viser flere fylker.
+ */
+function kildelinje(s: Nyhet, t: T, malform: Malform, dato: boolean, fulltNavn = false): string {
   const k = finnKilde(s.kilde);
-  const deler = k ? [(k.kortnavn ?? k.navn)[malform], t(`nyheter.typer.${k.type}`)] : [s.kilde];
+  const navn = k && (fulltNavn && k.fylker ? k.navn : (k.kortnavn ?? k.navn));
+  const deler = k && navn ? [navn[malform], t(`nyheter.typer.${k.type}`)] : [s.kilde];
   return (dato ? [kortDato(s.dato, malform), ...deler] : deler).join(' · ');
 }
 
@@ -62,7 +66,7 @@ const kortKildenavn = (s: Nyhet, malform: Malform) => {
  * Én sak på nyhetssiden. Lukket er saken en knapp som viser ingressen. Åpen er saken en lenke til kilden, med en egen
  * knapp som lukker den. Uten ingress er saken en lenke med en gang. Hva som er åpent, huskes for siden.
  */
-export function Sak({ sak }: { sak: Nyhet }) {
+export function Sak({ sak, fulltNavn = false }: { sak: Nyhet; fulltNavn?: boolean }) {
   const { t, malform } = useTekst();
   const [apen, settApen] = useHusketApen(`nyhet:${nokkelFra(sak.url)}`);
   const lenke = useRef<HTMLAnchorElement>(null);
@@ -73,7 +77,7 @@ export function Sak({ sak }: { sak: Nyhet }) {
     if (forrige.current !== apen) (apen ? lenke : knapp).current?.focus();
     forrige.current = apen;
   }, [apen]);
-  const under = <span class="listelenke-under">{kildelinje(sak, t, malform, false)}</span>;
+  const under = <span class="listelenke-under">{kildelinje(sak, t, malform, false, fulltNavn)}</span>;
   if (!sak.ingress || apen) {
     return (
       <div class={`nyh-sak-ramme${apen ? ' apen' : ''}`}>
@@ -181,6 +185,49 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
   const tilbake = useRef<HTMLButtonElement>(null);
   const forrige = useRef<string | null>(null);
   const liste = useRef<HTMLUListElement>(null);
+  // Inntil fire saker, i en boks med høyst den høyden kalenderen har pluss litt. En sak som ikke får helt plass, skjules i
+  // stedet for å bli kuttet, og boksen blir lavere: fire saker når titlene er korte, tre når de går over to linjer
+  // (eier 07.10.2026). Saken alene får den samme høyden som listen hadde.
+  const boks = useRef<HTMLDivElement>(null);
+  const [hoyde, settHoyde] = useState<number | null>(null);
+  useLayoutEffect(() => {
+    const ul = liste.current;
+    const ramme = boks.current;
+    if (!ul || !ramme) return;
+    let bredde = -1;
+    const tilpass = () => {
+      if (ramme.clientWidth === bredde) return;
+      bredde = ramme.clientWidth;
+      const rader = [...ul.children] as HTMLElement[];
+      for (const li of rader) li.hidden = false;
+      ramme.classList.add('maler');
+      for (const li of rader) li.hidden = li.offsetTop + li.offsetHeight > ul.clientHeight + 1;
+      ramme.classList.remove('maler');
+      settHoyde(ramme.offsetHeight);
+    };
+    tilpass();
+    if (typeof ResizeObserver === 'undefined') return;
+    // Bare bredden endrer hvor mange som får plass. Høyden endres av tilpassingen selv.
+    const observator = new ResizeObserver(tilpass);
+    observator.observe(ramme);
+    return () => observator.disconnect();
+  }, [saker, valgt]);
+  // Saken alene: så mange hele linjer av ingressen som får plass, avsluttet med «…».
+  const ingressRef = useRef<HTMLParagraphElement>(null);
+  useLayoutEffect(() => {
+    const p = ingressRef.current;
+    const innhold = p?.parentElement;
+    if (!p || !innhold) return;
+    p.style.removeProperty('-webkit-line-clamp');
+    p.style.removeProperty('line-clamp');
+    const andre = [...innhold.children].filter((c) => c !== p).reduce((sum, c) => sum + (c as HTMLElement).offsetHeight, 0);
+    const mellom = parseFloat(getComputedStyle(innhold).rowGap) || 0;
+    const linje = parseFloat(getComputedStyle(p).lineHeight) || 20;
+    const plass = innhold.clientHeight - parseFloat(getComputedStyle(innhold).paddingTop) - andre - mellom * (innhold.children.length - 1);
+    const linjer = String(Math.max(1, Math.floor(plass / linje)));
+    p.style.setProperty('-webkit-line-clamp', linjer);
+    p.style.setProperty('line-clamp', linjer);
+  }, [valgt, hoyde]);
   useEffect(() => {
     // Fokus følger med: til «Tilbake» når en sak vises, og til saken igjen når brukeren går tilbake.
     if (valgt) tilbake.current?.focus();
@@ -190,7 +237,7 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
 
   if (sak) {
     return (
-      <div class="nyh-forside nyh-forside-sak">
+      <div class="nyh-forside nyh-forside-sak" style={hoyde ? { height: `${hoyde}px` } : undefined}>
         <div class="nyh-forside-topp">
           <button ref={tilbake} type="button" class="lenkeknapp liten nyh-tilbake" onClick={() => settValgt(null)}>
             <Ikon navn="tilbake" class="ikon-liten" />
@@ -199,7 +246,11 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
         </div>
         <div class="nyh-forside-innhold">
           <h3 class="nyh-forside-tittel">{tittel(sak, malform)}</h3>
-          {sak.ingress && <p class="nyh-ingress">{ingress(sak, malform)}</p>}
+          {sak.ingress && (
+            <p ref={ingressRef} class="nyh-ingress">
+              {ingress(sak, malform)}
+            </p>
+          )}
           <p class="nyh-forside-under">{kildelinje(sak, t, malform, true)}</p>
         </div>
         <a class="knapp knapp-liten nyh-forside-les" href={sak.url} target="_blank" rel="noopener noreferrer">
@@ -210,7 +261,7 @@ export function ForsideNyheter({ d, fylke, rute }: { d: Nyheter; fylke: string |
     );
   }
   return (
-    <div class="nyh-forside">
+    <div ref={boks} class="nyh-forside">
       <div class="nyh-forside-topp">
         <Forsidefilter filter={filter} fylke={fylke} onEndring={settFilter} />
         <a class="nyh-forside-alle" href={`#${rute}`}>

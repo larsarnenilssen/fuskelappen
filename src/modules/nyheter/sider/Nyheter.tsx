@@ -3,6 +3,7 @@
 // har ikke egen «Kilder»-boks (eier 07.10.2026).
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
+import { fylker } from '../../../app/Stedmerknad.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { useHusketApen } from '../../../components/husket.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -17,7 +18,7 @@ import type { SideProps } from '../../typer.ts';
 import { NYHETER_RUTE } from '../adresse.ts';
 import { dagTittel, Sak } from '../komponenter.tsx';
 import type { Nyheter as Nyhetsfil, Nyhetstype } from '../skjema.ts';
-import { filterSporring, forTrettiDager, lesFilter, NYHETSKILDER, perDag, synligeKilder, typerMedKilder, velgSaker, type Nyhetsfilter } from '../utvalg.ts';
+import { filterSporring, forTrettiDager, lesFilter, lesNyhetsfylke, type Nyhetsfylke, NYHETSKILDER, perDag, synligeKilder, typerMedKilder, velgSaker, type Nyhetsfilter } from '../utvalg.ts';
 
 const KS_URL = 'https://www.ks.no/les-mer/?theme=43';
 
@@ -37,15 +38,22 @@ export default function Nyheter({ sporring }: SideProps) {
     };
   }, []);
 
-  const kilder = useMemo(() => synligeKilder(NYHETSKILDER, innstillinger.fylke), [innstillinger.fylke]);
+  // Fylket: det i innstillingene, et annet fylke, alle fylkene eller ingen (bare de nasjonale kildene). Forsiden følger
+  // alltid innstillingene (eier 07.10.2026).
+  const mittFylke = innstillinger.fylke;
+  const [fylke, settFylke] = useState<Nyhetsfylke>(() => lesNyhetsfylke(sporring, fylker.map((f) => f.nummer), mittFylke));
+  const kilder = useMemo(() => synligeKilder(NYHETSKILDER, fylke), [fylke]);
   const typer = typerMedKilder(kilder);
   const kilderForType = filter.type ? kilder.filter((k) => k.type === filter.type) : kilder;
-  const endre = (endring: Partial<Nyhetsfilter>) => {
+  const endre = (endring: Partial<Nyhetsfilter>, nyttFylke: Nyhetsfylke = fylke) => {
     const ny = { ...filter, ...endring };
-    // En kilde som ikke hører til typen, faller bort.
-    if (ny.kilde && ny.type && kilder.find((k) => k.id === ny.kilde)?.type !== ny.type) ny.kilde = null;
+    const synlige = synligeKilder(NYHETSKILDER, nyttFylke);
+    // En kilde som ikke hører til typen eller fylket, faller bort.
+    const k = synlige.find((x) => x.id === ny.kilde);
+    if (ny.kilde && (!k || (ny.type && k.type !== ny.type))) ny.kilde = null;
     settFilter(ny);
-    erstattAdresse(NYHETER_RUTE, Object.fromEntries(new URLSearchParams(filterSporring(ny))));
+    settFylke(nyttFylke);
+    erstattAdresse(NYHETER_RUTE, Object.fromEntries(new URLSearchParams(filterSporring(ny, { valgt: nyttFylke, standard: mittFylke }))));
   };
   const saker = data && data !== 'feil' ? velgSaker(data.saker, kilder, filter) : [];
   const idag = iDag();
@@ -66,6 +74,18 @@ export default function Nyheter({ sporring }: SideProps) {
             {typer.map((ty) => (
               <option key={ty} value={ty}>
                 {t(`nyheter.filter.${ty}`)}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div class="felt">
+          <label for="nyh-fylke">{t('nyheter.filter.fylke')}</label>
+          <select id="nyh-fylke" value={fylke ?? 'ingen'} onChange={(e) => endre({}, e.currentTarget.value === 'ingen' ? null : e.currentTarget.value)}>
+            <option value="ingen">{t('nyheter.filter.ingenFylke')}</option>
+            <option value="alle">{t('nyheter.filter.alleFylker')}</option>
+            {fylker.map((f) => (
+              <option key={f.nummer} value={f.nummer}>
+                {f.nummer === mittFylke ? t('nyheter.filter.mittFylke', { fylke: f.navn }) : f.navn}
               </option>
             ))}
           </select>
@@ -98,7 +118,7 @@ export default function Nyheter({ sporring }: SideProps) {
               <ul class="liste">
                 {dag.saker.map((s) => (
                   <li key={s.url}>
-                    <Sak sak={s} />
+                    <Sak sak={s} fulltNavn={fylke !== mittFylke} />
                   </li>
                 ))}
               </ul>

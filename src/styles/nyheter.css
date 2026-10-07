@@ -87,13 +87,14 @@ button.nyh-sak {
 }
 
 /* ---------- Forsiden (eier 07.10.2026) ----------
-   Nyhetene er like høye som kalenderen, så like mange favoritter står under: fast høyde, tre saker med titler på
-   høyst to linjer, i litt mindre skrift. Filteret har luft rundt seg (eier 07.10.2026). Filteret og «Alle» står i én linje øverst. En sak som er valgt, fyller den
+   Høyst litt høyere enn kalenderen, med inntil fire saker med titler på høyst to linjer, i litt mindre skrift. En sak
+   som ikke får helt plass, vises ikke, og boksen blir lavere (komponenter.tsx). Mens det måles, har boksen full høyde
+   (`maler`). Filteret har luft rundt seg (eier 07.10.2026). Filteret og «Alle» står i én linje øverst. En sak som er valgt, fyller den
    samme plassen med ingressen og knappen til kilden. */
 .nyh-forside {
   display: flex;
   flex-direction: column;
-  height: 17.625rem;
+  max-height: 18.25rem;
   margin: 0 0 var(--rom-4);
   background: var(--farge-flate);
   border: var(--strek) solid var(--farge-kant);
@@ -102,6 +103,15 @@ button.nyh-sak {
 }
 
 /* Linjen med filteret og «Alle nyhetene»: lys flate og blå tekst, som «Hele kalenderen» (eier 07.10.2026). */
+.nyh-forside.maler {
+  height: 18.25rem;
+}
+
+/* Saken alene: like høy som listen var (satt i komponenten), ellers full høyde. */
+.nyh-forside-sak {
+  height: 18.25rem;
+}
+
 .nyh-forside-topp {
   display: flex;
   flex: none;
@@ -172,6 +182,8 @@ button.nyh-sak {
 }
 
 .nyh-forside-liste {
+  /* Målestokk for sakene som får plass (offsetTop). */
+  position: relative;
   flex: 1;
   min-height: 0;
   margin: 0;
@@ -193,7 +205,7 @@ button.nyh-sak {
   flex-direction: column;
   gap: 0.1rem;
   width: 100%;
-  padding: var(--rom-2) var(--rom-3);
+  padding: 0.4rem var(--rom-3);
   border: 0;
   background: none;
   color: var(--farge-tekst);
