@@ -12,6 +12,8 @@ const baner = {
   hoyre: 'm9 5 7 7-7 7',
   opp: 'm6 15 6-6 6 6',
   ned: 'm6 9 6 6 6-6',
+  // Sortering: piler opp og ned, for kolonner som kan sorteres.
+  sorter: 'm8 9 4-4 4 4M8 15l4 4 4-4',
   lukk: 'M6 6l12 12M18 6 6 18',
   bok: 'M5 4.5h11a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3V4.5ZM5 17a3 3 0 0 1 3-3h11M10.5 7.5v4M8.5 9.5h4',
   kalkulator: 'M6 3.5h12v17H6zM9 7h6M9 11h.01M12 11h.01M15 11h.01M9 14.5h.01M12 14.5h.01M15 14.5h.01M9 18h.01M12 18h.01M15 18h.01',

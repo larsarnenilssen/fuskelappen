@@ -1,0 +1,210 @@
+/* Skolemiljø: siden om kapittel 12 og skolereglene. Filen importeres av sidene og lastes sammen med dem, ikke i
+   startpakken (grensen på 150 kB, avgjørelse 080). Fargene er tokenene fra tokens.css. */
+
+/* ---------- Et trygt og godt skolemiljø (fase 7, eier 06.10.2026) ----------
+   Kapittel 12 i fem nummererte deler som er lukket fra start. Knappen er et kort med nummer, tittel, paragrafene og én
+   setning, så kapittelet kan leses i overskriftene. Delpliktene og veien til statsforvalteren er rader med strek
+   mellom leddene. Fargene er de samme som ellers i appen, ingen nye. */
+.k12-seksjon {
+  margin-bottom: var(--rom-3);
+  scroll-margin-top: var(--rom-6);
+}
+
+.k12-seksjon-overskrift {
+  margin: 0;
+  font-size: inherit;
+}
+
+.k12-del-knapp {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: 'nr tittel pil' 'nr par pil' 'nr tekst pil';
+  gap: 0 var(--rom-3);
+  align-items: start;
+  width: 100%;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 4px solid var(--farge-lenke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.k12-del-knapp:hover .k12-del-tittel {
+  text-decoration: underline;
+}
+
+.k12-seksjon-apen .k12-del-knapp {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.k12-del-knapp .k12-del-nr {
+  grid-area: nr;
+  margin-top: 0.1rem;
+}
+
+.k12-del-nr {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--farge-lenke);
+  color: var(--farge-flate);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.k12-del-tittel {
+  grid-area: tittel;
+  font-weight: 700;
+  color: var(--farge-lenke);
+}
+
+.k12-del-paragrafer {
+  grid-area: par;
+  font-weight: 400;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.k12-del-tekst {
+  grid-area: tekst;
+  margin-top: var(--rom-1);
+  font-weight: 400;
+  font-size: var(--str-s);
+}
+
+.k12-del-pil {
+  grid-area: pil;
+  align-self: center;
+  color: var(--farge-lenke);
+}
+
+.k12-del-innhold {
+  padding: var(--rom-3) var(--rom-3) var(--rom-1);
+  border: var(--strek) solid var(--farge-kant);
+  border-top: 0;
+  border-left: 4px solid var(--farge-lenke);
+  border-bottom-left-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
+  background: var(--farge-bakgrunn);
+}
+
+.k12-del-innhold[hidden] {
+  display: none;
+}
+
+.k12-figur {
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.k12-figur-tittel {
+  margin-bottom: var(--rom-2);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+/* En rad med ledd og pil mellom. På smal skjerm under hverandre, med pil ned. */
+.k12-rekke {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ledd;
+}
+
+.k12-rekke > li {
+  position: relative;
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-bakgrunn);
+  font-size: var(--str-s);
+  font-weight: 600;
+  counter-increment: ledd;
+}
+
+.k12-rekke > li::before {
+  content: counter(ledd) '. ';
+  color: var(--farge-tekst-dempet);
+}
+
+@media (min-width: 40rem) {
+  .k12-rekke {
+    flex-direction: row;
+    gap: var(--rom-3);
+  }
+
+  .k12-rekke > li {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .k12-rekke > li + li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--rom-3));
+    width: var(--rom-3);
+    height: 2px;
+    background: var(--farge-tekst-dempet);
+  }
+}
+
+/* Veien til statsforvalteren har lengre ledd og står alltid under hverandre, med en strek ned mellom leddene. */
+.k12-rekke.k12-rekke-gang {
+  flex-direction: column;
+  gap: var(--rom-3);
+}
+
+.k12-rekke.k12-rekke-gang > li + li::after {
+  top: calc(-1 * var(--rom-3));
+  left: 1.25rem;
+  width: 2px;
+  height: var(--rom-3);
+}
+
+.k12-dokumentere {
+  margin: var(--rom-2) 0 0;
+  padding: var(--rom-1) var(--rom-3);
+  border: var(--strek) dashed var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  font-size: var(--str-s);
+  text-align: center;
+}
+
+
+
+.sr-boks {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.sr-boks-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-m);
+}
+
+.sr-lenker {
+  margin: var(--rom-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sr-lenker li {
+  padding: 0.125rem 0;
+}

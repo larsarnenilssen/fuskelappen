@@ -138,6 +138,8 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
   test('åpnes over siden, og «Lukk søket» og Esc viser siden der brukeren var', async ({ page }) => {
     await page.goto('./#/fylker/46');
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+    // Rull først når siden er lastet, så posisjonen ikke flyttes av innhold som kommer etterpå.
+    await venterPaaSide(page);
     await page.evaluate(() => window.scrollTo(0, 400));
     const y = await page.evaluate(() => window.scrollY);
     // Et vanlig trykk i Playwright ruller først knappen inn i bildet. En person som trykker, ruller ikke siden.
@@ -156,6 +158,7 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
 
   test('siden står synlig bak søket, og et trykk utenfor lukker det der brukeren var', async ({ page }) => {
     await page.goto('./#/fylker/46');
+    await venterPaaSide(page);
     await page.evaluate(() => window.scrollTo(0, 300));
     const y = await page.evaluate(() => window.scrollY);
     await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).dispatchEvent('click');

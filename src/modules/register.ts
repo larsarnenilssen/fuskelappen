@@ -33,7 +33,7 @@ export const aktiveModuler: readonly Modulmanifest[] = alleModuler.filter((m) =>
 
 export function modulerIKategori(kategori: KategoriId): Modulmanifest[] {
   return aktiveModuler
-    .filter((m) => m.kategori === kategori)
+    .filter((m) => m.kategori === kategori && m.paaForsiden !== false)
     .sort((a, b) => (a.rekkefolge ?? 100) - (b.rekkefolge ?? 100));
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "jukselappen",
-  "version": "0.40.0",
+  "version": "0.41.0",
   "private": true,
   "type": "module",
   "description": "Installerbar nettapp for skoleledere og lærere i videregående opplæring.",
@@ -57,6 +57,7 @@
     "hent:overordnet": "tsx scripts/hent-overordnet-del.ts",
     "hent:lovdata": "tsx scripts/hent-lovdata.ts",
     "hent:elevundersokelsen": "tsx scripts/hent-elevundersokelsen.ts",
+    "hent:statistikk": "tsx scripts/hent-statistikk.ts",
     "hent:skolerute": "tsx scripts/hent-skolerute.ts",
     "hent:vigo": "tsx scripts/hent-vigo.ts",
     "hent:utdanning": "tsx scripts/hent-utdanning.ts",

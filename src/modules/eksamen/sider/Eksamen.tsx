@@ -22,6 +22,7 @@ import { stidatoer } from '../eksamensdatoer/datoer.ts';
 import type { Eksamensdatoer } from '../eksamensdatoer/skjema.ts';
 import { type Forklaringselement, hentInnhold, klageRute, medPrefiks, UNDERSIDER } from '../innhold.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
+import { EksamenBoks } from '../../statistikk/komponenter.tsx';
 
 /** Stegene fra oppmelding til karakter, med feltet i eksamensdatoene som gir datoene til steget. */
 const STI: readonly { id: string; felt?: string }[] = [
@@ -134,6 +135,8 @@ export default function Eksamen({ sporring }: SideProps) {
                   <Ikon navn="info" class="ikon-liten" /> {t('eksamen.eksamen.fagarket')}
                 </p>
               </section>
+              {/* Eksamenskarakterene i fylket (eier 07.10.2026, avgjørelse 080). */}
+              <EksamenBoks fylke={innstillinger.fylke} />
             </>
           }
         />

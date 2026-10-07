@@ -2,6 +2,8 @@
 
 Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen står under arbeidsordren.
 
+*Status 07.10.2026:* Fase 7 er levert i 0.40.0 og 0.41.0. Forsiden har fått panelet med kalenderen og tallene (avgjørelse 081), og nyhetene skal inn som visningen «Nyheter» der. Plassen og en skisse finnes allerede i testversjonen. Denne arbeidsordren er klar til bruk.
+
 ---
 
 Vi starter fase 7b i Jukselappen: **Nyheter** (repo `larsarnenilssen/jukselappen`, appen på https://jukselappen.no). Skriv til meg på bokmål, kort og enkelt.
@@ -17,6 +19,7 @@ Vi starter fase 7b i Jukselappen: **Nyheter** (repo `larsarnenilssen/jukselappen
   - om rytmen (063)
   - om forsiden og sidekolonnen (056, 068)
   - om kalenderen (066)
+  - om panelet øverst på forsiden, der nyhetene skal stå (081), og statistikken fra Udir som en annen visning der (080)
 
 **Mine svar (06.10.2026):**
 - **Kilder:** Flest mulig kilder, inntil det punktet der det blir uforsvarlig. Det er f.eks. ugreit å skrape Lektorlaget.
@@ -28,7 +31,7 @@ Vi starter fase 7b i Jukselappen: **Nyheter** (repo `larsarnenilssen/jukselappen
 - **Skriptet:** Et skript i GitHub Actions henter tittel, dato, lenke og eventuelt ingress til `data/nyheter.json`. Det henter ikke bilder eller hele tekster. Appen gjør ingen eksterne kall.
 - **Svikt:** Feiler en kilde, eller gir den null saker, beholdes forrige liste, og kilden får status i Kildestatus.
 - **Daglig publisering uten PR,** når filen passer skjemaet. Det skrives et avgjørelsesnotat om det før koden.
-- **«Siste nytt» på forsiden,** slik «Neste datoer» står i dag (på skrivebord i sidekolonnen), og en egen side under «Oppslag» med filter på type (myndigheter, fagpresse, organisasjoner) og kilde.
+- **«Siste nytt» på forsiden** som visningen «Nyheter» i panelet øverst (eier 07.10.2026, avgjørelse 081), sammen med kalenderen og tallene. Panelet står i `src/app/Forsidepanel.tsx`: bytt skissen (`Nyheter`) med de siste nyhetene, og ta bort `NYHETER_SKISSE`, så visningen kommer med i den publiserte appen. Med «Bare favoritter» står nyhetene som egen gruppe når nyhetssiden er favoritt (sett `favoritt` i `VISNINGER`). En egen side under «Oppslag» med filter på type (myndigheter, fagpresse, organisasjoner) og kilde.
 - **Merking:** Organisasjonene merkes som interesseparter. Utdanningsnytt merkes som fagpresse, utgitt av Utdanningsforbundet.
 - **Statsforvalteren:** Sakene vises bare når fylket er valgt.
 - **Kilderegisteret:** Hver kilde får en oppføring i `content/kilder.yaml` med lisens.

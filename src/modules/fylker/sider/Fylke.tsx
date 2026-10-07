@@ -16,6 +16,7 @@ import { useLast } from '../../lov/sider/felles.tsx';
 import type { SideProps } from '../../typer.ts';
 import { fylkeFor, nettsted } from '../innhold.ts';
 import { kalenderLenke } from '../../kalender/adresse.ts';
+import { FylketITall } from '../../statistikk/komponenter.tsx';
 
 const REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'inntak', 'skolerute', 'skyss'];
 
@@ -70,6 +71,8 @@ export default function Fylke({ parametre, sporring }: SideProps) {
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
+      {/* Nøkkeltallene fra Udirs statistikkbank øverst (eier 07.10.2026, avgjørelse 080). */}
+      <FylketITall fylke={nr} navn={kort} />
       {/* På skrivebord (fra 64rem): lenkene hos fylket og de lokale forskriftene til venstre, skolene, kontorene og
           datoene til høyre (avgjørelse 074). */}
       <ToKolonner

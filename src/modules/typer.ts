@@ -93,6 +93,11 @@ export interface Modulmanifest {
   flereTittel?: Tekstverdi;
   /** Undertittelen i boksen med innganger merket `flere`. Uten den står navnene på inngangene. */
   flereUnder?: Tekstverdi;
+  /**
+   * false: modulen står ikke som boks under kategorien sin på forsiden, fordi den har en egen plass der (Videregående i
+   * tall i sidekolonnen, eier 07.10.2026). Siden finnes fortsatt, i søket og som favoritt.
+   */
+  paaForsiden?: false;
   /** Kilde-id-er fra content/kilder.yaml. */
   kilder: string[];
   /** Moduler fra senere faser er skjult til de er godkjent. */

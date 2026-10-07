@@ -163,6 +163,11 @@ export function vekslGruppe(id: string, erLukket?: boolean): void {
   });
 }
 
+/** Visningen i panelet øverst på forsiden: kalenderen, nyhetene eller tallene (avgjørelse 081). */
+export function settForsidevisning(visning: string): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, visning } }));
+}
+
 /** Slår en gruppe på forsiden av eller på (avgjørelse 066). */
 export function vekslSkjultGruppe(id: string): void {
   tilstand.oppdater((d) => {

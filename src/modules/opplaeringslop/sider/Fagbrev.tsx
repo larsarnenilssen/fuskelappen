@@ -4,7 +4,7 @@
 // videre, med vilkår og kilde. Fanen og valgene står i adressen. På skrivebord står «Veiene» og «Bytte vei» i to
 // kolonner (eier 06.10.2026). Innholdet står i content/opplaeringslop/veier.yaml.
 import { useEffect, useId, useState } from 'preact/hooks';
-import { useTekst } from '../../../app/tilstand.ts';
+import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
@@ -18,6 +18,7 @@ import { Brodsmuler } from './felles.tsx';
 import { Fakta, faktakilder, Fargeforklaring, Kildefot, Overgangskort, Stegrad } from './fagbrevDeler.tsx';
 import { useBred } from '../../../components/ToKolonner.tsx';
 import { Lukketkort } from '../../../components/Lukketkort.tsx';
+import { LaereplassBoks } from '../../statistikk/komponenter.tsx';
 
 type Fane = 'veiene' | 'sammenlign' | 'bytte';
 const FANER: readonly Fane[] = ['veiene', 'sammenlign', 'bytte'];
@@ -265,6 +266,7 @@ function Bytte({ data, valg, endre }: { data: Veiinnhold; valg: Valg; endre: End
 
 export default function Fagbrev({ sporring }: SideProps) {
   const { t } = useTekst();
+  const { innstillinger } = useTilstand();
   const data = useVeier();
   const [valg, settValg] = useState<Valg>(() => lesValg(sporring));
   // En ny adresse mens siden vises (f.eks. «Kommer fra» på en vei), er samme side, så valgene leses på nytt.
@@ -282,6 +284,8 @@ export default function Fagbrev({ sporring }: SideProps) {
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.fagbrev.innledning')} />
       </p>
+      {/* Læreplass i fylket (eier 07.10.2026, avgjørelse 080). */}
+      <LaereplassBoks fylke={innstillinger.fylke} />
       <div class="fb-faner" role="tablist" aria-label={t('opplaeringslop.fagbrev.faner')}>
         {FANER.map((f) => (
           <button key={f} type="button" role="tab" id={`fb-fane-${f}`} class="fb-fane" aria-selected={valg.fane === f} aria-controls="fb-panel" onClick={() => endre({ fane: f })}>

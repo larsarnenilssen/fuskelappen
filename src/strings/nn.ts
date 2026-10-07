@@ -9,6 +9,7 @@ import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
 import { eksamenNn } from './moduler/eksamen.nn.ts';
+import { statistikkNn } from './moduler/statistikk.nn.ts';
 import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
@@ -31,6 +32,17 @@ export const nn: Tekster = {
   },
   forside: {
     sidekolonne: 'Sidekolonne',
+    panel: {
+      legend: 'Vis øvst',
+      navn: 'Kalender og tal',
+      navnMedNyheter: 'Kalender, nyheiter og tal',
+      neste: 'Kalender',
+      nyheter: 'Nyheiter',
+      itall: 'I tal',
+      nyheterTittel: 'Siste nytt',
+      nyheterSammendrag: 'Kjem i fase 7b',
+      nyheterSkisse: 'Skisse: Her kjem dei siste nyheitene frå Udir, Lovdata og dei andre kjeldene, med tittel, dato og lenke (fase 7b).',
+    },
     visISidekolonne: 'Vis {gruppe} i sidekolonna',
     tittel: 'Framside',
     sokEtikett: 'Søk i {app}',
@@ -62,8 +74,14 @@ export const nn: Tekster = {
       hjelp: 'Dra i handtaket for å flytte ei gruppe, eller bruk pilene. Trykk på overskrifta til ei gruppe på framsida for å lukke eller opne ho. Favorittane blir sorterte med «Endre rekkjefølgje» der dei står.',
       grupper: 'Gruppene',
       sidekolonne: 'Sidekolonna',
-      sidekolonneHjelp: 'På stor skjerm står «Neste datoar» og favorittane i ei eiga kolonne til høgre.',
-      visNeste: 'Vis «Neste datoar» på framsida',
+      sidekolonneHjelp: 'På stor skjerm står kalenderen, nyheitene, tala og favorittane i ei eiga kolonne til høgre.',
+      visninger: 'Kalender, nyheiter og tal',
+      visningerHjelp: 'Vel kva du kan veksle mellom øvst på framsida, eller øvst i sidekolonna på stor skjerm. Du byter i overskrifta. Er berre éin vald, står han åleine.',
+      visning: {
+        neste: 'Neste datoar frå kalenderen',
+        nyheter: 'Nyheiter',
+        itall: 'Vidaregåande i tal',
+      },
       nullstill: 'Standard rekkjefølgje, alle grupper opne',
     },
   },
@@ -223,7 +241,7 @@ export const nn: Tekster = {
       tittel: 'Kreditering',
       tekst:
         'Appen inneheld data frå Utdanningsdirektoratet og Lovdata, gjorde tilgjengelege under Norsk lisens for offentlege data (NLOD) 2.0.',
-      elevundersokelsen: 'Resultata frå Elevundersøkinga i Skulemiljø: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
+      elevundersokelsen: 'Resultata frå Elevundersøkinga i Skulemiljø og nøkkeltala frå statistikkbanken til Udir: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
       utdanning: 'Yrka og utdanningsbeskrivingane i Opplæringstilbod er baserte på opne data frå utdanning.no og er underlagde Norsk lisens for offentlege data (NLOD). Teksten blir halden ved like på utdanning.no.',
       ndla: 'Namna på faga på NDLA er frå Nasjonal digital læringsarena (NDLA), lisensierte under Creative Commons Namngjeving 4.0 (CC BY 4.0).',
       ccby: 'Les CC BY 4.0',
@@ -419,6 +437,10 @@ export const nn: Tekster = {
       navn: 'Kalender',
       beskrivelse: 'Fristar og datoar, med skuleruta.',
     },
+    statistikk: {
+      navn: 'Vidaregåande i tal',
+      beskrivelse: 'Søkjarar, elevar, læreplass, gjennomføring og eksamen.',
+    },
     fylker: {
       navn: 'Fylka',
       beskrivelse: 'Sidene til fylket, forskrifter og skular.',
@@ -447,6 +469,7 @@ export const nn: Tekster = {
   skolemiljo: skolemiljoNn,
   vurdering: vurderingNn,
   eksamen: eksamenNn,
+  statistikk: statistikkNn,
   inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',

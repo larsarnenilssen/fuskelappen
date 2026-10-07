@@ -1,0 +1,587 @@
+/* Videregående i tall (avgjørelse 080 og 081): siden, boksene i de andre modulene, skolekortet og tallene i panelet
+   på forsiden. Filen importeres av src/modules/statistikk/komponenter.tsx og lastes sammen med komponentene, ikke i
+   startpakken (grensen på 150 kB). Fargene er tokenene fra tokens.css. */
+
+/* ---------- Videregående i tall (eier 07.10.2026, avgjørelse 080) ----------
+   Nøkkeltall i fliser, fylkene rangert som liggende stolper fra null, og små tallbokser på sidene der tallene hører
+   hjemme. Det valgte fylket har seriefargen, de andre er grå, og landet er en stiplet strek. Tallene står som tekst. */
+.st-velg {
+  max-width: 24rem;
+}
+
+.st-fliser {
+  display: grid;
+  gap: var(--rom-2);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 64rem) {
+  .st-fliser {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.st-flis {
+  display: grid;
+  align-content: start;
+  gap: 0.125rem;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.st-flis-etikett {
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.st-flis-tall {
+  font-size: var(--str-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.st-flis-under,
+.st-figur-tekst,
+.st-rad-under {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.st-figur {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.st-figur figcaption {
+  display: grid;
+  gap: 0.125rem;
+  margin-bottom: var(--rom-3);
+}
+
+.st-figur-tittel {
+  font-weight: 700;
+}
+
+.st-figur-tekst {
+  display: block;
+  margin: 0;
+}
+
+.st-rangering,
+.st-maneder {
+  display: grid;
+  gap: var(--rom-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-rad {
+  display: grid;
+  grid-template-columns: minmax(0, 9rem) minmax(0, 1fr) auto;
+  gap: var(--rom-2);
+  align-items: center;
+  font-size: var(--str-s);
+}
+
+.st-program .st-rad {
+  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) 7rem;
+}
+
+/* På smal skjerm står navnet over stolpen, så stolpen får hele bredden. */
+@media (max-width: 40rem) {
+  .st-program .st-rad {
+    grid-template-columns: minmax(0, 1fr) 7rem;
+    row-gap: 0;
+  }
+
+  .st-program .st-rad-navn {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Tabellene rulles for seg når de er bredere enn skjermen. */
+.st-rulle {
+  overflow-x: auto;
+}
+
+.st-rad-navn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.st-valgt .st-rad-navn,
+.st-rad.st-valgt .st-rad-tall {
+  font-weight: 700;
+}
+
+.st-spor {
+  position: relative;
+  height: 0.75rem;
+  border-left: var(--strek) solid var(--farge-linje);
+}
+
+.st-stolpe {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 0 4px 4px 0;
+  background: var(--farge-linje);
+}
+
+.st-valgt .st-stolpe {
+  background: var(--serie-1);
+}
+
+.st-rad-landet .st-stolpe {
+  background: var(--farge-tekst-dempet);
+}
+
+/* Landet: en stiplet strek tvers over stolpene. */
+.st-landet {
+  position: absolute;
+  top: -0.25rem;
+  bottom: -0.25rem;
+  border-left: 2px dashed var(--farge-tekst);
+}
+
+.st-landet-merke {
+  display: inline-block;
+  width: 0;
+  height: 0.9em;
+  border-left: 2px dashed var(--farge-tekst);
+  vertical-align: -0.1em;
+}
+
+.st-forklaring {
+  margin: var(--rom-2) 0 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+/* I fjor: en loddrett strek over stolpen. */
+.st-fjor {
+  position: absolute;
+  top: -0.25rem;
+  bottom: -0.25rem;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--farge-tekst);
+  box-shadow: 0 0 0 1px var(--farge-flate);
+}
+
+.st-rad-tall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.st-gruppe + .st-gruppe {
+  margin-top: var(--rom-3);
+}
+
+.st-gruppe-navn {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--farge-tekst-dempet);
+}
+
+.st-maned {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.st-maned + .st-maned {
+  margin-top: var(--rom-2);
+}
+
+.st-maned-navn {
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.st-par {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.st-par-tittel {
+  margin: 0 0 var(--rom-1);
+  font-weight: 700;
+}
+
+.st-par-tall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-5);
+  margin-bottom: var(--rom-1);
+}
+
+.st-par-tall b {
+  font-size: var(--str-l);
+}
+
+.st-par-landet {
+  color: var(--farge-tekst-dempet);
+}
+
+.st-tabell {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--str-s);
+}
+
+.st-tabell th,
+.st-tabell td {
+  padding: var(--rom-1) var(--rom-2);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.st-tabell thead th {
+  border-bottom: 2px solid var(--farge-tekst-dempet);
+}
+
+.st-tabell th[scope='row'],
+.st-tabell thead th:first-child {
+  text-align: left;
+  white-space: normal;
+}
+
+.st-tabell tr.st-valgt th,
+.st-tabell tr.st-valgt td {
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--serie-1);
+}
+
+.st-tabell-landet th,
+.st-tabell-landet td {
+  font-style: italic;
+}
+
+.st-tabell-liten {
+  font-size: var(--str-xs);
+}
+
+.st-fylket {
+  margin-bottom: var(--rom-5);
+}
+
+/* Tallboksen på sidene der tallene hører hjemme. */
+/* Samme avstand som mellom delene ellers på sidene (eier 07.10.2026). */
+.st-boks {
+  margin: var(--rom-5) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 4px solid var(--serie-1);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+/* Etter en kalkulator: samme avstand som mellom delene i kalkulatoren, f.eks. fra «Sjekk fraværet» til kortet under. */
+.kalkulator-flate + .st-boks {
+  margin-top: calc(var(--rom-5) + var(--rom-3));
+}
+
+.st-boks-tittel {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-1);
+  font-weight: 700;
+}
+
+.st-boks-innhold p {
+  margin: 0 0 var(--rom-1);
+}
+
+.st-boks-lenke {
+  margin: var(--rom-1) 0 0;
+  font-size: var(--str-s);
+}
+
+.st-boks-kilde {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+/* Skolen i tall i skolekortet. */
+/* Skolen i tall: tallene til venstre og knappene til nettsiden og reglene til høyre. På smal skjerm går knappene under
+   tallene (eier 07.10.2026). */
+.st-skolen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--rom-3) var(--rom-5);
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-3);
+  border-left: 4px solid var(--serie-1);
+  background: var(--farge-bakgrunn);
+}
+
+.st-skolen-hoved {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.st-skolen-snarveier {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+}
+
+.st-skolen-snarveier .knapp {
+  text-decoration: none;
+}
+
+.st-skolen-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+/* Tallene står side om side og går under hverandre når de ikke får plass. Tekstene brytes ikke, så etikettene er én
+   linje og tallene står på samme linje (eier 07.10.2026). */
+.st-skolen-tall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2) var(--rom-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-skolen-tall li {
+  display: grid;
+  align-content: start;
+  white-space: nowrap;
+}
+
+/* Tabellen over fylkene kan sorteres (eier 07.10.2026). Overskriftene er knapper med en pil for retningen. */
+.st-sorter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  width: 100%;
+  min-height: 2.25rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+.st-tabell thead th:not(:first-child) .st-sorter {
+  justify-content: flex-end;
+}
+
+.st-sorter:hover {
+  text-decoration: underline;
+}
+
+/* Pilen for en kolonne som ikke er sortert, er svakere enn pilen for kolonnen som er det. */
+.st-sorter .ikon[data-ikon='sorter'] {
+  opacity: 0.5;
+}
+
+/* Valget av kolonne trengs bare på mobil, der tabellen viser fylket og én kolonne. */
+.st-vis {
+  display: none;
+}
+
+@media (max-width: 40rem) {
+  .st-vis {
+    display: block;
+    margin-bottom: var(--rom-3);
+  }
+
+  .st-fylketabell .st-kol:not(.st-kol-vist) {
+    display: none;
+  }
+}
+
+.st-ingen {
+  margin: 0 0 var(--rom-3);
+}
+
+/* På smal skjerm kan overskriftene i tabellene gå over to linjer, og cellene har mindre luft, så tre kolonner får plass i
+   320 px (f.eks. eksamen: faget, fylket og landet). */
+@media (max-width: 30rem) {
+  .st-tabell thead th {
+    white-space: normal;
+  }
+
+  .st-tabell th,
+  .st-tabell td {
+    padding-inline: var(--rom-1);
+  }
+}
+
+/* Tallene på forsiden: ett kort som kalenderens, med tynne streker mellom delene i stedet for egne bokser. */
+.st-forside {
+  overflow: hidden;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.st-forside-sted {
+  margin: 0;
+  padding: var(--rom-2) var(--rom-4) 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.st-forside .st-fliser-kompakt {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.st-fliser-kompakt .st-flis {
+  padding: var(--rom-2) var(--rom-4);
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.st-fliser-kompakt .st-flis-tall {
+  font-size: var(--str-l);
+}
+
+/* Stripen: hvert fylke er en prikk etter andelen som fikk læreplass. Landet er en stiplet strek. Prikkene har en ring i
+   flatefargen, så de som ligger nær hverandre, skilles. Luft på sidene, så prikkene ytterst ikke går utenfor. */
+.st-stripe-figur {
+  margin: 0;
+  padding: var(--rom-3) var(--rom-4);
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.st-stripe {
+  position: relative;
+  height: 1.5rem;
+  margin: var(--rom-2) 0.5rem 0;
+}
+
+.st-stripe::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.st-stripe-prikk {
+  position: absolute;
+  top: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--farge-flate);
+  border-radius: 50%;
+  background: var(--farge-tekst-dempet);
+  transform: translate(-50%, -50%);
+}
+
+.st-stripe-prikk.st-valgt {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: var(--serie-1);
+}
+
+.st-stripe-landet {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 2px dashed var(--farge-tekst);
+}
+
+.st-stripe-skala {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin-top: var(--rom-1);
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.st-stripe-forklaring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-4);
+  margin: var(--rom-1) 0 0;
+  font-size: var(--str-xs);
+}
+
+.st-stripe-forklaring > span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.st-stripe-merke {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--serie-1);
+}
+
+.st-stripe-merke-landet {
+  display: inline-block;
+  height: 0.875rem;
+  border-left: 2px dashed var(--farge-tekst);
+}
+
+/* Skolen og lenken videre, som radene og «Hele kalenderen» i kalenderens kort. */
+.st-forside-skole {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  padding: var(--rom-2) var(--rom-4);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  color: var(--farge-tekst);
+  font-size: var(--str-s);
+  text-decoration: none;
+}
+
+.st-forside-skole > span {
+  flex: 1;
+}
+
+.st-forside-skole:hover > span {
+  text-decoration: underline;
+}
+
+.st-forside-mer {
+  border-radius: 0;
+  background: var(--farge-flate-2);
+  color: var(--farge-lenke);
+}
+
+.st-forside-mer .listelenke-tittel {
+  color: var(--farge-lenke);
+}
+

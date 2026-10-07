@@ -66,9 +66,9 @@ test.describe('favoritter og forsiden', () => {
     // Én kolonne, som på mobil. På skrivebord står favorittene i sidekolonnen (testen under).
     await page.setViewportSize({ width: 390, height: 800 });
     await page.goto('./');
-    // «Neste datoer» står først og favorittene som nummer to (avgjørelse 066).
+    // Panelet med kalenderen, nyhetene og tallene står først (avgjørelse 081), og favorittene som nummer to.
     const grupper = page.locator('.forsidegruppe');
-    await expect(grupper.nth(0)).toHaveAttribute('data-gruppe', 'neste');
+    await expect(grupper.nth(0)).toHaveAttribute('data-gruppe', 'panel');
     await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await page.getByRole('button', { name: 'Flytt «Favoritter» ned' }).click();
@@ -87,7 +87,7 @@ test.describe('favoritter og forsiden', () => {
     await page.goto('./');
     const kolonne = page.locator('.forside-sidekolonne');
     await expect(kolonne.locator('[data-gruppe="favoritter"]')).toBeVisible();
-    await expect(kolonne.locator('[data-gruppe="neste"]')).toBeVisible();
+    await expect(kolonne.locator('[data-gruppe="panel"]')).toBeVisible();
     await expect(page.locator('.forside-oppsett > .forsidegrupper [data-gruppe="favoritter"]')).toHaveCount(0);
     // Kolonnen står fast under toppfeltet når siden rulles.
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
@@ -113,7 +113,7 @@ test.describe('favoritter og forsiden', () => {
     // Smalt vindu: alt i én kolonne, uten bryter.
     await page.setViewportSize({ width: 600, height: 800 });
     await expect(page.locator('.forside-sidekolonne')).toHaveCount(0);
-    await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'neste');
+    await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'panel');
     await expect(page.getByRole('switch', { name: 'Sidekolonne' })).toHaveCount(0);
   });
 
