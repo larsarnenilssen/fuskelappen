@@ -9,7 +9,7 @@ import { kortIngress, lesDato, lesFeed, lesUdir, lesUtdanningsforbundet, rensTek
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Nyhetskilder } from '../../src/modules/nyheter/kildeskjema.ts';
 import { nyheterSkjema, type Nyhet } from '../../src/modules/nyheter/skjema.ts';
-import { lesFilter, nyesteSaker, NYHETSKILDER, perDag, synligeKilder, velgSaker } from '../../src/modules/nyheter/utvalg.ts';
+import { forsidefilterVerdi, lesFilter, lesForsidefilter, nyesteSaker, NYHETSKILDER, perDag, synligeKilder, velgSaker } from '../../src/modules/nyheter/utvalg.ts';
 
 const rot = join(__dirname, '../..');
 const fil = lesFil(rot, join(rot, 'content/nyheter/kilder.yaml')) as Nyhetskilder;
@@ -121,6 +121,14 @@ describe('utvalget i appen', () => {
 
   it('forsiden har høyst to saker fra hver kilde', () => {
     expect(nyesteSaker({ skjema: 1, hentet: '', kilder: {}, saker }, null).map((s) => s.tittel)).toEqual(['A', 'B', 'D']);
+  });
+
+  it('forsiden filtrerer på hvem eller kilde, og med én kilde gjelder ikke grensen per kilde', () => {
+    const d = { skjema: 1 as const, hentet: '', kilder: {}, saker };
+    expect(nyesteSaker(d, null, lesForsidefilter('kilde:udir')).map((s) => s.tittel)).toEqual(['A', 'B', 'C']);
+    expect(nyesteSaker(d, null, lesForsidefilter('type:organisasjon')).map((s) => s.tittel)).toEqual(['D']);
+    expect(lesForsidefilter('kilde:finnes-ikke')).toEqual({ type: null, kilde: null });
+    expect(forsidefilterVerdi(lesForsidefilter('type:myndighet'))).toBe('type:myndighet');
   });
 
   it('filteret i adressen godtar bare kjente verdier', () => {

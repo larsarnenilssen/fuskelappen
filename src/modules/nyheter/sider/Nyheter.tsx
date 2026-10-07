@@ -1,11 +1,10 @@
 // Nyhetssiden (fase 7b): alle sakene per dag, nyeste først, med filter på hvem som står bak og kilde. Filteret står i
-// adressen. Til høyre på stor skjerm: om utvalget, kildene med status og kildene til siden.
+// adressen. Til høyre på stor skjerm: om utvalget og kildene med status. Kildelisten er kildene til siden, så siden
+// har ikke egen «Kilder»-boks (eier 07.10.2026).
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
-import { Bryter } from '../../../components/Bryter.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Seksjon } from '../../../components/Seksjon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
@@ -15,7 +14,7 @@ import { lastNyheter } from '../../../data/nyheter.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import type { SideProps } from '../../typer.ts';
 import { NYHETER_RUTE } from '../adresse.ts';
-import { dagTittel, INGRESS_SKISSE, Sak, useVisIngress } from '../komponenter.tsx';
+import { dagTittel, Sak } from '../komponenter.tsx';
 import type { Nyheter as Nyhetsfil, Nyhetstype } from '../skjema.ts';
 import { filterSporring, lesFilter, NYHETSKILDER, perDag, synligeKilder, typerMedKilder, velgSaker, type Nyhetsfilter } from '../utvalg.ts';
 
@@ -27,7 +26,6 @@ export default function Nyheter({ sporring }: SideProps) {
   const bred = useBred();
   const [data, settData] = useState<Nyhetsfil | null | 'feil'>(null);
   const [filter, settFilter] = useState<Nyhetsfilter>(() => lesFilter(sporring));
-  const [visIngress, settVisIngress] = useVisIngress();
   useEffect(() => {
     let aktiv = true;
     lastNyheter()
@@ -53,21 +51,6 @@ export default function Nyheter({ sporring }: SideProps) {
 
   const hoved = (
     <>
-      {INGRESS_SKISSE && (
-        <div class="nyh-skisse">
-          <Bryter
-            legend={t('nyheter.skisse.legend')}
-            verdi={visIngress ? 'med' : 'uten'}
-            valg={[
-              { verdi: 'med', tekst: t('nyheter.skisse.med') },
-              { verdi: 'uten', tekst: t('nyheter.skisse.uten') },
-            ]}
-            onEndring={(v) => settVisIngress(v === 'med')}
-            kompakt
-          />
-          <p class="liten dempet">{t('nyheter.skisse.hjelp')}</p>
-        </div>
-      )}
       <div class="nyh-filter">
         <div class="felt">
           <label for="nyh-hvem">{t('nyheter.filter.hvem')}</label>
@@ -108,7 +91,7 @@ export default function Nyheter({ sporring }: SideProps) {
               <ul class="liste">
                 {dag.saker.map((s) => (
                   <li key={s.url}>
-                    <Sak sak={s} ingress={visIngress} />
+                    <Sak sak={s} />
                   </li>
                 ))}
               </ul>
@@ -165,7 +148,6 @@ export default function Nyheter({ sporring }: SideProps) {
           <Ikon navn="ekstern" class="ikon-liten" />
         </a>
       </div>
-      <Kildeboks kilder={kilder.map((k) => ({ id: k.kilde }))} nokkel="nyheter" />
     </>
   );
 

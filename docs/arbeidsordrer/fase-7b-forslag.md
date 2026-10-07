@@ -1,6 +1,6 @@
 # Fase 7b – forslag 1: nyhetene, kildene og designet
 
-Til eier, 07.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 med ingress, K3 ja»). Skissen ligger i testversjonen: https://jukselappen.no/test/ (forsiden → «Nyheter» i panelet, og Oppslag → Nyheter).
+Til eier, 07.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 med ingress, K3 ja»). Skissen ligger i testversjonen: https://jukselappen.no/test/ (forsiden → «Nyheter» i panelet, og Oppslag → Nyheter). Runde 2 er oppdatert etter svarene dine på designet.
 
 Sakene i skissen er ekte, hentet 07.10.2026 fra 15 kilder (81 saker de siste 90 dagene). Ingenting er publisert i appen, og arbeidsflyten som henter hver dag, lages først når du har svart på avgjørelse 084.
 
@@ -12,23 +12,27 @@ Startpakken var 149,4 kB (grense 150 kB). Nå lastes bare tekstene for målforme
 
 ---
 
-## D. Designet
+## D. Designet (runde 2, etter dine svar 07.10.2026)
 
-**Forsiden** (visningen «Nyheter» i panelet, avgjørelse 081): de fire nyeste sakene, høyst to fra hver kilde, så én kilde med mange saker samme dag ikke fyller panelet. Under tittelen: dato, kilde og hvem som står bak («7. okt · KD · Myndighet»). Lukket viser overskriften den nyeste saken. «Alle nyhetene» nederst, som «Hele kalenderen».
+**Forsiden** (visningen «Nyheter» i panelet, avgjørelse 081):
+- Fast høyde, som ikke er større enn kalenderens: 340 px på mobil og 356 px på skrivebord, mot 350–373 px for kalenderen. Målt med åtte favoritter er like mange eller flere favoritter synlige under som med kalenderen, på mobil, skrivebord og en laptop med lav skjerm. Sidekolonnen trengte ikke bli høyere.
+- Tre saker, høyst to fra hver kilde, med tittel på høyst to linjer i litt mindre skrift. Under: dato, kilde og hvem («7. okt · KD · Myndighet»). Ingen ingress i listen.
+- **Filteret** øverst: én nedtrekksliste med teksten «Filtrer på hvem eller kilde …», med to grupper: hvem (myndigheter, fagpresse, organisasjoner) og kilde. Når et filter er valgt, heter første valg «Vis alle». Filteret huskes på enheten. Ved siden av står «Alle ›» til nyhetssiden.
+- **Et trykk på en sak** viser saken alene i den samme plassen: tittelen, ingressen (høyst fire linjer), dato og kilde, og knappen «Les saken hos KD». «‹ Tilbake til nyhetene» øverst tar deg tilbake til listen.
 
-**Nyhetssiden** (Oppslag → Nyheter, `#/nyheter`): sakene per dag («I dag», «I går», «Mandag 5. oktober»), filter på hvem (myndigheter, fagpresse, organisasjoner) og kilde, og filteret i adressen. Til høyre på skrivebord: «Om nyhetene», kildene med status, en fast boks «Nytt fra KS» og kildene til siden. Hver sak er en lenke ut, med ikon for at den åpnes hos kilden.
+**Nyhetssiden:**
+- Sakene per dag, uten ingress. **Første trykk** på en sak viser ingressen og «Les saken hos …». Saken får en lys bakgrunn. **Neste trykk** åpner saken hos kilden. Pilen oppe til høyre lukker saken igjen. Saker uten ingress er en lenke med en gang. Hva som er åpent, huskes når du går tilbake til siden.
+- «Kilder»-boksen er tatt bort. Kildelisten til høyre (på mobil under) er kildene til siden.
+- Bryteren for skissen med og uten ingress er tatt bort.
 
 | | Mobil | Skrivebord |
 |---|---|---|
-| Forsiden med ingress | ![](bilder/fase-7b-mobil-forside-med-ingress.png) | ![](bilder/fase-7b-skrivebord-forside.png) (uten ingress) |
-| Forsiden uten ingress | ![](bilder/fase-7b-mobil-forside-uten-ingress.png) | |
-| Siden med ingress | ![](bilder/fase-7b-mobil-side-med-ingress.png) | ![](bilder/fase-7b-skrivebord-side-med-ingress.png) |
-| Siden uten ingress | ![](bilder/fase-7b-mobil-side-uten-ingress.png) | ![](bilder/fase-7b-skrivebord-side-uten-ingress.png) |
-
-I testversjonen står en bryter «Med ingress / Uten ingress» øverst på nyhetssiden. Den gjelder også forsiden.
+| Forsiden | ![](bilder/fase-7b-mobil-forside.png) | ![](bilder/fase-7b-skrivebord-forside.png) |
+| Forsiden, en sak valgt | ![](bilder/fase-7b-mobil-forside-sak.png) | ![](bilder/fase-7b-skrivebord-forside-sak.png) |
+| Nyhetssiden, en sak åpnet | ![](bilder/fase-7b-mobil-side.png) | ![](bilder/fase-7b-skrivebord-side.png) |
 
 **Spørsmål:**
-- **D1. Ingress:** med, uten, eller med på siden og uten på forsiden? Mitt råd: uten på forsiden (fire titler får plass uten å rulle), med på siden (høyst tre linjer).
+- **D1.** Filteret på forsiden har både hvem og kilde i én liste. Er det greit, eller vil du ha bare det ene?
 - **D2. Ingress fra hvem:** alle, eller bare myndighetene (NLOD)? Organisasjonene, Utdanningsnytt og Statsforvalteren oppgir ingen lisens. Ingressen er deres eget sammendrag, og vi lenker alltid til saken. Mitt råd: alle, så listen ser lik ut, men du avgjør.
 - **D3. Merket «Myndighet»** står ved alle saker fra KD, Udir og Statsforvalteren. Skal bare interesseparter og fagpresse ha merke, så listen blir roligere?
 - **D4. Hvor langt tilbake:** 90 dager og høyst 25 saker per kilde. Siden blir lang (67 saker med Vestland valgt). Skal den vise de siste 30 dagene, med «Vis eldre» under?

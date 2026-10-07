@@ -179,12 +179,11 @@ function Nyheter({ ramme }: { ramme: Ramme }) {
     const melding = lastet === 'feil' ? t('nyheter.feil') : t('app.lasterInn');
     return ramme({ tittel: t('forside.panel.nyheterTittel'), sammendrag: melding, children: <p class="dempet">{melding}</p> });
   }
-  const { ForsideNyheter, forsideSammendrag, nyesteSaker } = lastet.m;
-  const saker = nyesteSaker(lastet.d, innstillinger.fylke);
+  const { ForsideNyheter, forsideSammendrag } = lastet.m;
   return ramme({
     tittel: t('forside.panel.nyheterTittel'),
-    sammendrag: forsideSammendrag(t, malform, saker),
-    children: <ForsideNyheter saker={saker} rute={NYHETER_RUTE} />,
+    sammendrag: forsideSammendrag(t, malform, lastet.d, innstillinger.fylke),
+    children: <ForsideNyheter d={lastet.d} fylke={innstillinger.fylke} rute={NYHETER_RUTE} />,
   });
 }
 

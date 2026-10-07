@@ -90,7 +90,7 @@ export function filterSporring(filter: Nyhetsfilter): string {
 }
 
 /** Så mange saker står i panelet på forsiden. */
-const PAA_FORSIDEN = 4;
+const PAA_FORSIDEN = 3;
 
 /** Høyst så mange saker fra samme kilde på forsiden, så én kilde med mange saker samme dag ikke fyller panelet. */
 const PER_KILDE = 2;
@@ -99,13 +99,28 @@ const PER_KILDE = 2;
  * De nyeste sakene for brukeren: fra kildene uten fylke, og Statsforvalteren i fylket som er valgt. Høyst PER_KILDE fra
  * hver kilde.
  */
-export function nyesteSaker(d: Nyheter, fylke: string | null, antall = PAA_FORSIDEN): Nyhet[] {
+export function nyesteSaker(d: Nyheter, fylke: string | null, filter?: Nyhetsfilter, antall = PAA_FORSIDEN): Nyhet[] {
   const telt = new Map<string, number>();
-  return velgSaker(d.saker, synligeKilder(NYHETSKILDER, fylke))
+  // Med filter på én kilde gjelder ikke grensen per kilde.
+  const grense = filter?.kilde ? antall : PER_KILDE;
+  return velgSaker(d.saker, synligeKilder(NYHETSKILDER, fylke), filter)
     .filter((s) => {
       const n = telt.get(s.kilde) ?? 0;
       telt.set(s.kilde, n + 1);
-      return n < PER_KILDE;
+      return n < grense;
     })
     .slice(0, antall);
+}
+
+/** Filteret på forsiden som én verdi i nedtrekkslisten: «» (alle), «type:myndighet» eller «kilde:udir». */
+export function lesForsidefilter(verdi: string | null): Nyhetsfilter {
+  const [hva, id] = (verdi ?? '').split(':');
+  if (hva === 'type') return { type: NYHETSTYPER.find((t) => t === id) ?? null, kilde: null };
+  if (hva === 'kilde' && id && kildeMedId.has(id)) return { type: null, kilde: id };
+  return { type: null, kilde: null };
+}
+
+export function forsidefilterVerdi(filter: Nyhetsfilter): string {
+  if (filter.kilde) return `kilde:${filter.kilde}`;
+  return filter.type ? `type:${filter.type}` : '';
 }

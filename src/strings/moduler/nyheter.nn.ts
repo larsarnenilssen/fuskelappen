@@ -11,6 +11,11 @@ export const nyheterNn = {
   sammendrag: '{dato}: {tittel}',
   hentet: 'Sist oppdatert {tid}.',
   alle: 'Alle nyheitene',
+  alleKort: 'Alle',
+  les: 'Les saka hos {kilde}',
+  lukk: 'Skjul ingressen til «{tittel}»',
+  skjulIngress: 'Skjul ingressen',
+  tilbake: 'Tilbake til nyheitene',
   apnesHos: 'blir opna hos {kilde}',
   iDag: 'I dag',
   iGaar: 'I går',
@@ -34,6 +39,9 @@ export const nyheterNn = {
     kilde: 'Kjelde',
     alleKilder: 'Alle kjeldene',
     sammendrag: '{hvem} · {kilde}',
+    forside: 'Filtrer på kven eller kjelde …',
+    forsideEtikett: 'Filtrer nyheitene på kven eller kjelde',
+    visAlle: 'Vis alle',
   },
   om: {
     tittel: 'Om nyheitene',
@@ -41,7 +49,7 @@ export const nyheterNn = {
     interesseparter: 'Organisasjonane er interesseparter. Utdanningsnytt er fagpresse, gitt ut av Utdanningsforbundet.',
     fylke: 'Nyheitene frå Statsforvaltaren står når du har valt fylke.',
     velgFylke: 'Vel fylke',
-    ingenBilder: 'Appen hentar berre tittel, dato, lenkje og ingress. Les saka hos kjelda.',
+    ingenBilder: 'Appen hentar berre tittel, dato, lenkje og ingress. Trykk på ei sak for å sjå ingressen, og ein gong til for å lese saka hos kjelda.',
   },
   kildene: {
     tittel: 'Kjeldene ({antall})',
@@ -52,11 +60,5 @@ export const nyheterNn = {
     tittel: 'Nytt frå KS',
     tekst: 'KS er arbeidsgivarpart i SFS 2213. Nyheitene frå KS blir ikkje henta inn i appen.',
     lenke: 'Løn og arbeidsgivar hos KS',
-  },
-  skisse: {
-    legend: 'Skisse',
-    med: 'Med ingress',
-    uten: 'Utan ingress',
-    hjelp: 'Berre i testversjonen: vis nyheitene med og utan ingress.',
   },
 };

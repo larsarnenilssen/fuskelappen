@@ -11,6 +11,11 @@ export const nyheterNb = {
   sammendrag: '{dato}: {tittel}',
   hentet: 'Sist oppdatert {tid}.',
   alle: 'Alle nyhetene',
+  alleKort: 'Alle',
+  les: 'Les saken hos {kilde}',
+  lukk: 'Skjul ingressen til «{tittel}»',
+  skjulIngress: 'Skjul ingressen',
+  tilbake: 'Tilbake til nyhetene',
   apnesHos: 'åpnes hos {kilde}',
   iDag: 'I dag',
   iGaar: 'I går',
@@ -34,6 +39,9 @@ export const nyheterNb = {
     kilde: 'Kilde',
     alleKilder: 'Alle kildene',
     sammendrag: '{hvem} · {kilde}',
+    forside: 'Filtrer på hvem eller kilde …',
+    forsideEtikett: 'Filtrer nyhetene på hvem eller kilde',
+    visAlle: 'Vis alle',
   },
   om: {
     tittel: 'Om nyhetene',
@@ -41,7 +49,7 @@ export const nyheterNb = {
     interesseparter: 'Organisasjonene er interesseparter. Utdanningsnytt er fagpresse, utgitt av Utdanningsforbundet.',
     fylke: 'Nyhetene fra Statsforvalteren står når du har valgt fylke.',
     velgFylke: 'Velg fylke',
-    ingenBilder: 'Appen henter bare tittel, dato, lenke og ingress. Les saken hos kilden.',
+    ingenBilder: 'Appen henter bare tittel, dato, lenke og ingress. Trykk på en sak for å se ingressen, og en gang til for å lese saken hos kilden.',
   },
   kildene: {
     tittel: 'Kildene ({antall})',
@@ -52,11 +60,5 @@ export const nyheterNb = {
     tittel: 'Nytt fra KS',
     tekst: 'KS er arbeidsgiverpart i SFS 2213. Nyhetene fra KS hentes ikke inn i appen.',
     lenke: 'Lønn og arbeidsgiver hos KS',
-  },
-  skisse: {
-    legend: 'Skisse',
-    med: 'Med ingress',
-    uten: 'Uten ingress',
-    hjelp: 'Bare i testversjonen: vis nyhetene med og uten ingress.',
   },
 };

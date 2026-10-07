@@ -8227,19 +8227,6 @@ a.knapp {
   font-weight: 700;
 }
 
-/* Nyhetene er en skisse til fase 7b. */
-.forside-nyheter-skisse {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--rom-2);
-  margin: 0;
-  padding: var(--rom-3) var(--rom-4);
-  border: var(--strek) dashed var(--farge-kant);
-  border-radius: var(--radius-m);
-  color: var(--farge-tekst-dempet);
-  font-size: var(--str-s);
-}
-
 /* Valget av visninger i panelet under «Tilpass»: uten ramme, som delene over. */
 .tilpass-visninger {
   margin: var(--rom-4) 0;
