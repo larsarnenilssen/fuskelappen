@@ -47,7 +47,7 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 | `ruter` | stier (må starte med `/<id>`), tittel og side som lastes ved behov |
 | `sokeoppforinger()` | det modulen bidrar med til samlet søk |
 | `favorittbare()` | funksjoner, fag og begreper som kan favorittmerkes |
-| `frister()` | frister modulen eier (samles i årshjulet i fase 8) |
+| `frister()` | frister modulen eier (samles i kalenderen, avgjørelse 066) |
 | `innganger`, `flereTittel` | boksene modulen har på forsiden: hovedbokser, og innganger merket `flere` i en boks som kan åpnes (avgjørelse 030). Uten innganger er modulen selv én boks |
 | `paaForsiden` | `false` når modulen ikke skal stå som boks under kategorien sin på forsiden, fordi den har en egen plass der (Videregående i tall, avgjørelse 080 og 081) |
 | `kilder` | kilde-id-er fra `content/kilder.yaml` |

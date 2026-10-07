@@ -1,6 +1,5 @@
 // Kalenderen (fase 6, pakke 5, avgjørelse 066): fristene og datoene fra alle modulene på én side, med filter på tema og
-// hvem det gjelder. Kalender for inntak og Kalender for eksamen er lenker hit, ferdig filtrert. Grunnlaget for
-// årshjulet og eksporten til kalender i fase 8.
+// hvem det gjelder. Kalender for inntak og Kalender for eksamen er lenker hit, ferdig filtrert.
 import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { kalenderLenke, kalenderRute } from './adresse.ts';

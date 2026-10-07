@@ -26,3 +26,5 @@
 - Nye moduler med frister kommer med av seg selv. Et nytt tema (arbeidstid, skolemiljø) legges i `KALENDERTEMAER` og får farge i `tema.css`.
 - Fase 8 bygger årshjulet og eksporten (.ics) på postene i kalenderen.
 - `components/Tidslinje.tsx` og sidene for de to gamle kalenderne er fjernet.
+
+**Endret 07.10.2026:** Årshjulet og eksporten (.ics) er tatt ut av fase 8 (eier 07.10.2026). Kalenderen er visningen av fristene.
