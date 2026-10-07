@@ -12,6 +12,38 @@ Startpakken var 149,4 kB (grense 150 kB). Nå lastes bare tekstene for målforme
 
 ---
 
+## Runde 3: dine svar 07.10.2026, og hva som er gjort
+
+| | Svar | Gjort |
+|---|---|---|
+| D1 | Filter på hvem og kilde i én liste er fint. | Uendret. |
+| D2 | Ingress fra alle kildene. | Som før. |
+| D3 | Merke ved alle. Er alle statsforvalterne med, og sortert på fylke? | Merket står ved alle. Alle ti embetene hentes uten feil, og sakene vises bare når et av fylkene til embetet er valgt (f.eks. Troms og Finnmark for 55 og 56, Vestfold og Telemark for 39 og 40, og Østfold, Buskerud, Oslo og Akershus for 31, 33, 03 og 32). Med dagens filter gir de 0–4 saker hver. |
+| D4 | Siste 30 dager, med «Vis eldre». | Gjort. Antallet står på knappen. |
+| Design | Like høy som kalenderen, mer luft rundt filteret. | Panelet er nå 350 px på mobil og 366 px på skrivebord, nøyaktig som kalenderen, og filteret har 12 px luft rundt seg. Like mange favoritter er synlige som med kalenderen. |
+| Design | Kalender og Nyheter ut av «Oppslag». | Gjort. Kalender, Nyheter og Videregående i tall nås fra panelet, søket og favorittene. |
+| K1 | Ja til Utdanningsforbundets liste. | Med. |
+| K2 | Ja til Lovdata. | Med: de vedtatte endringene i lovene og forskriftene appen har (de samme som i Kalender), med tittel og ingress på bokmål og nynorsk og datoen endringen ble vedtatt. De tre endringene som finnes nå, ble vedtatt i juni og er eldre enn 90 dager, så de står ikke i listen i dag. |
+| K7 | Nei til UiO. | Ikke med. |
+| K9 | Nei til e-post til KS. | Som nå: fast lenke til KS. |
+| F1 | Claude vurderer ordfilteret. | Se F under. |
+| P1 | Ja til daglig henting. | Arbeidsflyten **Nyheter** henter hver dag kl. 05.47, legger nyhetsfilen på `main` uten PR og publiserer. Testversjonen får de samme nyhetene. Kildesjekken melder en nyhetskilde som har feilet i mer enn to dager. |
+
+### F. Ordfilteret, runde 2
+
+Gjennomgått mot 486 saker fra KD, Udir og de ti statsforvalterne fra de siste 90 dagene. Endringer:
+- **Tatt ut** fordi de ga feiltreff: «fylkeskommune» («Matfylket Innlandet», budsjettet for kommunene), «opplæring» («digital opplæring i fengsel», helse og omsorg), «undervisning» og «vurdering» («konkrete vurderinger», «ei heilskapleg vurdering av økonomien»). «Vurderingen» står fortsatt, som i «Råd om digitale hjelpemidler i vurderingen».
+- **Ingressen:** Står de generelle ordene bare i ingressen, må minst to ulike treffe. Ett tilfeldig «elev» er ikke nok.
+- **Nye ord som utelukker:** barnetrinn, mellomtrinn, ungdomstrinn, «de yngste», tiendeklassinger, nasjonale prøver og fellesskolen. Nytt generelt ord: privatskole.
+- **Sakene fra før** vurderes på nytt ved hver henting, så et endret filter gjelder hele listen.
+
+Resultat: 21 av 486 saker er med (før: 36). Jeg har gått gjennom alle: 19 handler om videregående eller om skolen generelt, og de to andre er grensetilfelle 1. **Grensetilfeller jeg vil høre din mening om:**
+1. **«Inn på tunet for enkeltelever»** (Statsforvalteren i Agder og Innlandet): tiltak for elever med individuelt tilrettelagt opplæring, mest grunnskole. Med nå.
+2. **«Statsbudsjettet 2027: 20,9 millioner til digital opplæring i fengsel»** (KD): Opplæring i fengsel er ofte videregående opplæring som fylkeskommunen har ansvar for, men saken nevner det ikke. Ute nå.
+3. **«PISA 2025: Fortsatt kraftig nedgang …»** (KD): gjelder tiendeklassinger. Ute nå.
+4. **«Slik skal elevene lære mer i skolen»** (KD): mest 1.–2. trinn, men også endringer i læreplaner. Ute nå.
+5. **«Eksamen i sikker nettleser»** (Statsforvalteren): gjelder grunnskolen fra 2027. Ute nå.
+
 ## D. Designet (runde 2, etter dine svar 07.10.2026)
 
 **Forsiden** (visningen «Nyheter» i panelet, avgjørelse 081):
