@@ -14,6 +14,7 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
 - `CHANGELOG.md` (siste versjoner)
 - Denne filen, også bakgrunnen under arbeidsordren
 - `docs/INNHOLDSMODELL.md`: `gyldighet`, `forhold` (`erstatter` og `supplerer`) og `kontrollert`
+- `docs/DESIGN.md`: designprinsippene fra fase 8b, som nye sider og skjemaer følger
 - Avgjørelsene i `docs/avgjorelser/`:
   - om tilbakemelding på e-post, løsningen innmeldingen kan bygge på (064)
   - om godkjenning med `/godkjent` i en kontrollsak (021), kontrollspørsmål og kontrollrunder (019)

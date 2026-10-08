@@ -85,6 +85,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 
 ## Grensesnitt
 
+- Utseendet følger `docs/DESIGN.md` (kort, flater, overskrifter, valgknapper, to kolonner, veiviserne og tall). Finnes det et mønster der, brukes det i stedet for en ny variant (fase 8b, eier 08.10.2026).
 - Ett scrollområde. Ingen horisontal overflyt i 320–430 px (testes).
 - Native scroll og tilbakenavigasjon. Ingen egne sveipebevegelser for navigasjon.
 - Pinch-zoom slås ikke av globalt.
