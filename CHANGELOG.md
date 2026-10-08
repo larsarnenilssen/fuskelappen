@@ -25,12 +25,14 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Kildene nederst på siden** i Lov og forskrift, Overordnet del og Opplæringstilbud står i en lukket boks, som på fagarket, i stedet for en punktliste.
 - **Innstillinger og Om appen:** Delene i Innstillinger er kort med overskriften på en lys blå flate, som i kalkulatorene. På Om appen har brukserklæringen samme overskrift, og delene under har en strek over. Lenkene til Om appen og til kildene er rader med pil.
 - **Fant ikke siden** har «Til forsiden» og «Søk i appen» som rader med ikon og pil.
+- **Veiviserne:** Svarene brukeren har gitt, står med gul bakgrunn øverst i veien og i fasene til venstre, som det som er valgt ellers i appen. «Start på nytt» har fått et ikon, og knappene «Kopier oppsummeringen» og «Start på nytt» er like brede.
 - **Kortene som kan lukkes** i Opplæringstilbud, Læreplanverket og Lov og forskrift har overskriften på en lys blå flate i stedet for en tykk strek. Fellesfag, felles programfag og yrkesfaglig fordypning i et tilbud har en prikk i samme farge som i stolpen over.
 
 ### Rettet
 
 - **Videregående i tall:** Uten valgt fylke står det «i hele landet» med liten h inni titler og tekster, f.eks. «Lærerne i videregående i hele landet» i Arbeidsplan.
 - **Arbeidsplan:** Teksten under fordelingen når fag og funksjoner ikke fyller hele stillingen, er skrevet om. Den sier at delen som står igjen, er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.
+- **Videregående i tall:** Den stiplede streken for landet står rett gjennom alle radene i figurene med fylkene, f.eks. «Hva fylkeskommunen bruker per elev». Før flyttet den seg litt i rader med bredere tall, og stolpene ble litt for korte der.
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
 
 ## [0.44.0] – 2026-10-08
