@@ -399,6 +399,16 @@ main {
   color: var(--farge-merke);
 }
 
+/* En rad i listen som åpner noe i stedet for å gå til en side, f.eks. velkomsten i Innstillinger (fase 10). */
+.listelenke-knapp {
+  width: 100%;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
 .listelenke-tekst {
   display: flex;
   flex-direction: column;
@@ -913,6 +923,12 @@ main {
 
 .valggruppe > legend ~ * {
   clear: both;
+}
+
+/* En knapp midt i et kort får like mye luft under seg som avsnittene, så teksten under ikke står tett inntil den
+   (f.eks. «Fjern fylke og skole» og kilden under, eier 08.10.2026). */
+.valggruppe > .knapp:not(:last-child) {
+  margin-bottom: var(--rom-3);
 }
 
 .valg {

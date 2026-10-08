@@ -5,7 +5,7 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
-import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { veiviseroverskrift, Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
@@ -19,6 +19,7 @@ export default function Oversikt() {
     void hentInnhold().then(settInnhold);
   }, []);
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
+  const veivisere = innhold ? velgSynlige(innhold.veivisere, sted) : [];
   return (
     <div class="side side-bred">
       <Sidetopp tittel={t('skolemiljo.tittel')} favoritt={oversiktsid('skolemiljo')} />
@@ -51,11 +52,11 @@ export default function Oversikt() {
         }
         side={
           <section class="lop-del">
-            <h2 class="liten-overskrift">{t('skolemiljo.veivisere')}</h2>
+            <h2 class="liten-overskrift">{t(veiviseroverskrift(veivisere.length))}</h2>
             {innhold === null ? (
               <p class="dempet">{t('app.lasterInn')}</p>
             ) : (
-              <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
+              <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
             )}
           </section>
         }

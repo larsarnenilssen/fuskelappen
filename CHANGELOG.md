@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Velkomst** (fase 10, under arbeid): en kort omvisning i et vindu over appen ved første besøk, med valg av fylke og skole, rolle med forslag til favoritter, dagens jukselapp og hjelp til å installere appen. Den kan åpnes igjen nederst på forsiden og i Innstillinger.
+
+### Endret
+
+- **Overskriftene over verktøyene på oversiktene** står i entall når det er ett verktøy («Veiviser», «Kalkulator») og i flertall når det er flere.
+
+### Rettet
+
+- **Innstillinger, «Fylke og skole»:** Teksten under knappen «Fjern fylke og skole» står ikke lenger tett inntil knappen.
+
 ## [0.46.0] – 2026-10-08
 
 ### Lagt til

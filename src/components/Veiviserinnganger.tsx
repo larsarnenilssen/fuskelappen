@@ -5,7 +5,13 @@
 import type { ComponentChildren } from 'preact';
 import { useTekst } from '../app/tilstand.ts';
 import type { Veiviserelement } from '../core/innhold/skjema.ts';
+import type { Tekstnokkel } from '../core/i18n/tekst.ts';
 import { Ikon } from './Ikon.tsx';
+
+/** Overskriften over veiviserne: entall for én, flertall for flere (eier 08.10.2026). */
+export function veiviseroverskrift(antall: number): Tekstnokkel {
+  return antall === 1 ? 'felles.veiviser' : 'felles.veivisere';
+}
 
 export function Veiviserinnganger({
   veivisere,

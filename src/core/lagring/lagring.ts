@@ -27,6 +27,11 @@ export const innstillingerSkjema = z.strictObject({
    * velger en privat skole, og kan slås av og på. Mangler i data lagret før 0.40.0, og betyr da nei.
    */
   privatskole: z.optional(z.boolean()),
+  /**
+   * Rollen brukeren valgte i velkomsten (fase 10), f.eks. `laerer` eller `radgiver`. Gir anbefalte favoritter. Lagres
+   * som tekst og leses med `lesRolle()`, så en rolle som er tatt bort, ikke gjør lagringen ugyldig.
+   */
+  rolle: z.optional(z.string()),
 });
 
 /**
@@ -68,6 +73,8 @@ export const lagretSkjema = z.strictObject({
    * regel leses for seg med `egneRegler()`, så én ugyldig regel ikke gjør resten av lagringen ugyldig.
    */
   egneRegler: z.optional(z.array(z.unknown())),
+  /** Datoen velkomsten ble lukket første gang (fase 10). Mangler til da, og i data fra før velkomsten kom. */
+  velkomst: z.optional(z.string()),
 });
 
 export type Innstillinger = z.infer<typeof innstillingerSkjema>;

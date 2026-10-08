@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
-import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { veiviseroverskrift, Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { Kalkulatorinngang } from '../../../components/Kalkulatorinngang.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
@@ -23,6 +23,7 @@ export default function Oversikt() {
     void hentInnhold().then(settInnhold);
   }, []);
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
+  const veivisere = innhold ? velgSynlige(innhold.veivisere, sted) : [];
   const neste = innhold ? nesteFrist(velgSynlige(innhold.frister, sted), iDag()) : null;
   return (
     <div class="side side-bred">
@@ -58,11 +59,11 @@ export default function Oversikt() {
             side={
               <>
                 <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('inntak.veivisere')}</h2>
-                  <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
+                  <h2 class="liten-overskrift">{t(veiviseroverskrift(veivisere.length))}</h2>
+                  <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
                 </section>
                 <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>
+                  <h2 class="liten-overskrift">{t('felles.kalkulator')}</h2>
                   <Kalkulatorinngang
                     href={`#${UNDERSIDER.poeng.rute}`}
                     ikon={UNDERSIDER.poeng.ikon}

@@ -595,11 +595,19 @@ export const nn: Tekster = {
     se: 'nordsamisk',
     en: 'engelsk',
   },
+  velkomst: {
+    lenke: 'Ny her? Sjå velkomsten',
+    innstillinger: 'Velkomst',
+    innstillingerUnder: 'Ei kort omvising i appen, med val av fylke, rolle og favorittar.',
+  },
   felles: {
     plassering: 'Plassering',
     kilder: 'Kjelder',
     lukk: 'Lukk',
     eksternLenke: '(blir opna på {nettsted})',
+    veiviser: 'Vegvisar',
+    veivisere: 'Vegvisarar',
+    kalkulator: 'Kalkulator',
   },
   utvikling: {
     tittel: 'Komponentkatalog',

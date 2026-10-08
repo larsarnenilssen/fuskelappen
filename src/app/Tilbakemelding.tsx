@@ -8,14 +8,14 @@ import { fylkesnavn } from './Stedmerknad.tsx';
 import { epostlenke, forrigeSide } from './tilbakemelding.ts';
 import { useTekst, useTilstand } from './tilstand.ts';
 
-export function Tilbakemelding({ overskrift: Overskrift = 'h2' }: { overskrift?: 'h2' | 'legend' }) {
+/** E-posten med emne og mal, til «Skriv e-post» her og i velkomsten (fase 10). */
+export function useTilbakemeldingslenke(): string {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
-  const [kopiert, settKopiert] = useState<'ja' | 'nei' | null>(null);
   const versjon = `${__APP_VERSJON__}${__TESTVERSJON__ ? ' (test)' : ''}`;
   const side = forrigeSide();
   const fylke = fylkesnavn(innstillinger.fylke);
-  const lenke = epostlenke(app.tilbakemelding, t('tilbakemelding.emne', { app: app.navn, versjon }), [
+  return epostlenke(app.tilbakemelding, t('tilbakemelding.emne', { app: app.navn, versjon }), [
     t('tilbakemelding.mal'),
     '',
     '',
@@ -25,6 +25,12 @@ export function Tilbakemelding({ overskrift: Overskrift = 'h2' }: { overskrift?:
     ...(side ? [t('tilbakemelding.side', { side })] : []),
     ...(fylke ? [t('tilbakemelding.fylke', { fylke })] : []),
   ]);
+}
+
+export function Tilbakemelding({ overskrift: Overskrift = 'h2' }: { overskrift?: 'h2' | 'legend' }) {
+  const { t } = useTekst();
+  const [kopiert, settKopiert] = useState<'ja' | 'nei' | null>(null);
+  const lenke = useTilbakemeldingslenke();
   const kopier = async () => {
     try {
       await navigator.clipboard.writeText(app.tilbakemelding);

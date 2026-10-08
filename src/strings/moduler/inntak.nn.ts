@@ -4,7 +4,6 @@ import type { inntakNb } from './inntak.nb.ts';
 export const inntakNn: typeof inntakNb = {
   tittel: 'Inntak',
   innledning: 'Rettar og søkjarkategoriar ved inntak til vidaregåande opplæring, etter opplæringslova og opplæringsforskrifta. Kvart steg viser fristane og paragrafane i regelverket.',
-  veivisere: 'Vegvisarar',
   bareNasjonalt: 'Viser dei nasjonale reglane. Fylket kan ha lokale reglar om inntak.',
   velgFylke: 'Vel fylke',
   lokaleMed: 'Viser også dei lokale reglane om inntak i {fylke}.',
@@ -116,7 +115,6 @@ export const inntakNn: typeof inntakNb = {
     },
     regler: 'Slik blir poenga rekna ut',
     kort: 'Poengutrekning til Vg1, Vg2 og Vg3',
-    kalkulator: 'Kalkulator',
   },
   merOpplaering: {
     tittel: 'Meir opplæring',
