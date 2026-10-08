@@ -19,7 +19,19 @@ Testversjonen: https://jukselappen.no/test/#/fag
 |---|---|---|
 | Fagsøket, skrivebord | ![](bilder/fase-8b-p2-for-fag.jpg) | ![](bilder/fase-8b-p2-etter-fag.jpg) |
 | Fagarket, skrivebord | ![](bilder/fase-8b-p2-for-fagark.jpg) | ![](bilder/fase-8b-p2-etter-fagark.jpg) |
-| Fagarket med delene åpne, mobil | | ![](bilder/fase-8b-p2-etter-fagark-apen-m.jpg) |
+
+**Eiers merknader (08.10.2026):** Uten rammer og farger ble det vanskelig å se forskjell på nivåene. De nyeste sidene bruker bokser og farger med hell. Vurdert på nytt og endret:
+- **Fag og faggrupper i fagsøket:** Gruppene av fag (f.eks. «Engelsk (2)») har et ikon i en myk sirkel, og fagene har det ikke. Fagtypene øverst (Fellesfag …) står på en myk blå flate med en prikk i fargen til fagtypen. Når en gruppe er åpen, står fagene i en egen boks under.
+- **Kalkulatorknappen ved årsrammen** er flyttet til en blå lenkelinje nederst i kortet med nøkkeltallene, som «Hele kalenderen» på forsiden.
+- **Overskrifter og underoverskrifter på fagarket:** Delene er kort igjen, med overskriften på en myk blå flate. Underdelene (f.eks. «Muntlige ferdigheter») er rader med tynn strek inne i kortet. Boksene under «Vurderingsordning» er en grå flate inne i kortet.
+- **«Inngår i tilbud»:** Tilbudene er rader med tittel, en linje med kode, trinn og timer, og pil, som fagene i fagsøket.
+- **Underveis- og standpunktvurdering:** står inne i kortet med luft over og under, og lenken til læreplanen står under med luft.
+
+| | Etter merknadene |
+|---|---|
+| Fagsøket, skrivebord | ![](bilder/fase-8b-p2-ny-fag.jpg) |
+| Fagarket, skrivebord | ![](bilder/fase-8b-p2-ny-fagark.jpg) |
+| Fagarket med delene åpne, mobil | ![](bilder/fase-8b-p2-ny-fagark-apen-m.jpg) |
 
 ---
 

@@ -84,7 +84,7 @@ export function fagUndertekst(t: T, kode: string, fag: Fag, tilbud: readonly str
     .join(' · ');
 }
 
-/** Et fag i listen. Kanten og fagtypen har fargen til fagtypen, som på fagarket (eier 01.10.2026). */
+/** Et fag i listen. Fagtypen har fargen til fagtypen, som på fagarket (eier 01.10.2026). */
 function Faglenke({ kode, fag, tilbud }: Fagtreff & { tilbud?: readonly string[] }) {
   const { t, malform } = useTekst();
   const type = fagtypeTekst(t, fag.type);
@@ -135,6 +135,8 @@ function Gruppe({ tittel, aapen: start, nivaa, fagtype, children }: { tittel: st
     <section class={`faggruppe faggruppe-${nivaa}`} data-fagtype={fagtype}>
       <Overskrift class="faggruppe-tittel">
         <button type="button" class="kortknapp" aria-expanded={aapen} aria-controls={id} onClick={() => settAapen(!aapen)}>
+          {/* En gruppe av fag inne i listen har et ikon, så den skiller seg fra fagene, som ikke har det (eier 08.10.2026). */}
+          {nivaa === 3 && <Ikon navn="lag" class="faggruppe-ikon" />}
           <span class="kortknapp-tekst">{tittel}</span>
           <Ikon navn={aapen ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
         </button>

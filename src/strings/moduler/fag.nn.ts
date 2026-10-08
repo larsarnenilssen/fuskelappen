@@ -85,7 +85,6 @@ export const fagNn: Skjema<typeof fagNb> = {
     arsrammeVis: 'Sjå alle {antall}',
     arsrammeProgramVerdi: '{t60} ({t45})',
     regnUt: 'Rekn ut i Arbeidsplan',
-    regnUtKort: 'Arbeidsplan',
     nokkeltall: 'Årstimetal og årsramme',
     merker: 'Fagkode, fagtype og trinn',
     timerEnhet: 'timar à 60 minutt',
