@@ -521,7 +521,6 @@
     - { id: opplaeringslova, punkt: "§ 7-6 første og andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-6" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-6 andre ledd (dialog med instruktør)", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-13 fjerde ledd (halvårsvurderingen)", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
-    - { id: udir-ord-og-omgrep, punkt: "Tabellen over gamle og nye ord", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/" }
   kontrollert: null
   kontrollsporsmal:
     - "«Faglig leder» står ikke i opplæringslova av 2023. Er det riktig at ordet fortsatt er vanlig i fylkeskommunene og bransjene, så det bør stå i tittelen?"
