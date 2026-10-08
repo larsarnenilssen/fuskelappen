@@ -11,7 +11,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { kontorfavoritt } from '../favoritter.ts';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import { lastOpplaeringskontor } from '../../../data/udir.ts';
 import type { SideProps } from '../../typer.ts';
@@ -146,7 +146,7 @@ export default function Kontor({ sporring }: SideProps) {
           <p class="dempet liten">{t('opplaeringslop.kontor.hentet', { dato: formaterDato(data.hentet, malform) })}</p>
         </>
       )}
-      <Kildeliste kilder={[{ id: 'udir-nor' }]} />
+      <Kildeboks kilder={[{ id: 'udir-nor' }]} nokkel="kontor" />
     </div>
   );
 }

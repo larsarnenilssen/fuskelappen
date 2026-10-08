@@ -26,7 +26,9 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Et kort som er en lenke (`frist-inngang`, `Inngang`), har ikonet i en myk sirkel til venstre, tittelen i tekstfarge, teksten dempet under og pilen til høyre, som modulene på forsiden.
 - **Ingen tykke streker til venstre.** En farge som betyr noe, f.eks. delen i diagrammet i Arbeidsplan, vises som en liten rund prikk foran tittelen, som i forklaringene til diagrammene. Der fargen ikke står i et diagram på siden, er det ingen prikk. Fagtypen står i farge som tekst («Fellesfag») og i merket på fagarket, ikke som strek.
 
-*Eksempler:* modulene på forsiden, kalenderen og nyhetene i panelet, figurene i Videregående i tall.
+- **En oppføring med egen side** (f.eks. et begrep) står i et hvitt kort med regelverket og kildene som lukkede rader nederst (`Kortfot`). Lenker videre («Se også») er rader med pil under kortet.
+
+*Eksempler:* modulene på forsiden, kalenderen og nyhetene i panelet, figurene i Videregående i tall, begrepene.
 
 ## Flater
 
@@ -62,7 +64,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 ## To kolonner
 
 - Sider med flere deler står i to kolonner fra 64rem (`ToKolonner`): de første delene til venstre (3/5) og resten til høyre (2/5). Rekkefølgen på mobil er den samme.
-- Kildene til siden står nederst i høyre kolonne i en lukket boks (`Kildeboks`). En tallboks fra Videregående i tall står over kildene.
+- Kildene til siden står nederst i høyre kolonne i en lukket boks (`Kildeboks`). En tallboks fra Videregående i tall står over kildene. Sider med én kolonne har også kildene i `Kildeboks` nederst, aldri som en punktliste rett på bakgrunnen.
 - **En kolonne står aldri tom.** I kalkulatorene står resultatkortet i høyre kolonne fra start, med en strek der tallet kommer og en kort linje om hva som må fylles inn (eier 08.10.2026).
 - Oversiktene i modulene: ingressen øverst over begge kolonnene, sidene i modulen til venstre, og veiviserne, fristene, kalkulatoren og tallene til høyre.
 

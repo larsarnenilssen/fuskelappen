@@ -12,7 +12,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { skolefavoritt } from '../favoritter.ts';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import type { SideProps } from '../../typer.ts';
@@ -428,7 +428,7 @@ export default function Skoler({ sporring }: SideProps) {
           {register.hentet && <p class="dempet liten">{t('opplaeringslop.skoler.hentet', { dato: formaterDato(register.hentet, malform) })}</p>}
         </>
       )}
-      <Kildeliste kilder={[{ id: 'utdanning-no', punkt: 'Skoler' }, { id: 'vigo-kodeverk', punkt: 'Skolenummer' }]} />
+      <Kildeboks kilder={[{ id: 'utdanning-no', punkt: 'Skoler' }, { id: 'vigo-kodeverk', punkt: 'Skolenummer' }]} nokkel="skoler" />
     </div>
   );
 }

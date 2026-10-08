@@ -76,6 +76,8 @@ test.describe('regelverk', () => {
 
   test('kilder til en paragraf hos Lovdata får også en lenke til paragrafen i appen', async ({ page }) => {
     await page.goto('./#/begreper/aktivitetsplikt');
+    // Kildene står som en lukket rad nederst i kortet (Kortfot, fase 8b).
+    await page.locator('.begrep-kort .veiviser-kilder:not(.veiviser-regelverk) summary').click();
     await page.locator('.kildeliste').getByRole('link', { name: 'Les i appen' }).first().click();
     await expect(page).toHaveURL(/#\/lov\/opplaeringslova\/12-4$/);
   });

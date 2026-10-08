@@ -6,7 +6,7 @@ import { useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { erVariant } from '../../fag/tilbud/modell.ts';
@@ -163,7 +163,7 @@ export default function Program({ parametre }: SideProps) {
           </ul>
         </Rubrikk>
       )}
-      <Kildeliste kilder={[{ id: 'udir-grep', punkt: program }, { id: 'udir-fag-og-timefordeling' }, ...(visning.skole ? [{ id: 'utdanning-no', punkt: 'Skoler' }] : [])]} />
+      <Kildeboks kilder={[{ id: 'udir-grep', punkt: program }, { id: 'udir-fag-og-timefordeling' }, ...(visning.skole ? [{ id: 'utdanning-no', punkt: 'Skoler' }] : [])]} nokkel={`program-${program}`} />
     </div>
   );
 }

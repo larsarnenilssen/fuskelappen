@@ -5,7 +5,8 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { finnKilde, Kildeliste } from '../../../components/Kildelenke.tsx';
+import { finnKilde } from '../../../components/Kildelenke.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { KortfotRader } from '../../../components/Kortfot.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
@@ -89,7 +90,7 @@ export function Avtale({ avtale, nokkel }: { avtale: Avtaleinfo; nokkel: string 
           })}
         </Sok>
       )}
-      <Kildeliste kilder={[{ id: avtale.kilde }]} />
+      <Kildeboks kilder={[{ id: avtale.kilde }]} nokkel={`avtale-${avtale.id}`} />
     </div>
   );
 }

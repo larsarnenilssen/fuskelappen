@@ -3,7 +3,6 @@ import { useKildestatus } from '../../../app/kildestatus.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Nivamerke, Statusmerke } from '../../../components/Merker.tsx';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { beregnStatus, velgSynlige } from '../../../core/innhold/status.ts';
@@ -12,6 +11,8 @@ import { hentBegreper } from '../innhold.ts';
 import { Kodegrupper } from '../Kodegrupper.tsx';
 import { Kodeliste } from '../Kodeliste.tsx';
 import { UtenforBoks } from '../../statistikk/ssb.tsx';
+import { Kortfot } from '../../../components/Kortfot.tsx';
+import { Ikon } from '../../../components/Ikon.tsx';
 
 export default function Begrep({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
@@ -52,28 +53,37 @@ export default function Begrep({ parametre, sporring }: SideProps) {
         <h1 tabIndex={-1}>{begrep.tittel[malform]}</h1>
         <FavorittKnapp id={`begreper:${begrep.id}`} navn={begrep.tittel[malform]} />
       </div>
-      <div class="merker">
-        <Nivamerke niva={begrep.gyldighet.niva} />
-        <Statusmerke status={status} kontrollert={begrep.kontrollert} />
+      {/* Begrepet står i et hvitt kort med regelverket og kildene som lukkede rader nederst, som de andre kortene, og «Se
+          også» som rader med pil (fase 8b, eier 08.10.2026). */}
+      <div class="kort begrep-kort">
+        <div class="merker">
+          <Nivamerke niva={begrep.gyldighet.niva} />
+          <Statusmerke status={status} kontrollert={begrep.kontrollert} />
+        </div>
+        <div class="brodtekst" dangerouslySetInnerHTML={{ __html: begrep.tekst[malform] }} />
+        {begrep.merknad && <p class="merknad merknad-advarsel begrep-merknad">{begrep.merknad[malform]}</p>}
+        {begrep.kildetekst && (
+          <blockquote class="kildetekst" lang={begrep.kildetekst.spraak}>
+            <p class="liten dempet">{t('begreper.kildetekst', { spraak: t(`spraak.${begrep.kildetekst.spraak}`) })}</p>
+            <p>{begrep.kildetekst.tekst}</p>
+          </blockquote>
+        )}
+        {begrep.kodeliste && <Kodeliste liste={begrep.kodeliste} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
+        {'kodegrupper' in begrep && begrep.kodegrupper && <Kodegrupper grupper={begrep.kodegrupper} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
+        <Kortfot kilder={begrep.kilder} nokkel={`begrep-${begrep.id}`} />
       </div>
-      <div class="brodtekst" dangerouslySetInnerHTML={{ __html: begrep.tekst[malform] }} />
-      {begrep.merknad && <p class="merknad merknad-advarsel begrep-merknad">{begrep.merknad[malform]}</p>}
-      {begrep.kildetekst && (
-        <blockquote class="kildetekst" lang={begrep.kildetekst.spraak}>
-          <p class="liten dempet">{t('begreper.kildetekst', { spraak: t(`spraak.${begrep.kildetekst.spraak}`) })}</p>
-          <p>{begrep.kildetekst.tekst}</p>
-        </blockquote>
-      )}
-      {begrep.kodeliste && <Kodeliste liste={begrep.kodeliste} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
-      {'kodegrupper' in begrep && begrep.kodegrupper && <Kodegrupper grupper={begrep.kodegrupper} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
-      <Kildeliste kilder={begrep.kilder} />
       {relaterte.length > 0 && (
-        <section>
+        <section class="lop-del">
           <h2 class="liten-overskrift">{t('begreper.relatert')}</h2>
-          <ul>
+          <ul class="liste">
             {relaterte.map((r) => (
               <li key={r.id}>
-                <a href={`#/begreper/${r.id}`}>{r.tittel[malform]}</a>
+                <a class="listelenke" href={`#/begreper/${r.id}`}>
+                  <span class="listelenke-tekst">
+                    <span class="listelenke-tittel">{r.tittel[malform]}</span>
+                  </span>
+                  <Ikon navn="hoyre" class="ikon-liten" />
+                </a>
               </li>
             ))}
           </ul>
