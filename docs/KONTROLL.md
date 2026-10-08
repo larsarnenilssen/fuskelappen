@@ -876,7 +876,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no
 
-`udir-lk20` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/lk20/)
+`udir-lk20` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/laring-og-trivsel/lareplanverket/)
 
 **Innhold som bygger på kilden**
 
@@ -997,7 +997,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Ord og omgrep i opplæringslova (nye og gamle begreper)
 
-`udir-ord-og-omgrep` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/)
+`udir-ord-og-omgrep` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ord-og-omgrep/)
 
 **Innhold som bygger på kilden**
 
@@ -2301,7 +2301,7 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Bør begrepet nevne karriereveiledningen fylkeskommunen skal ha for alle som bor i fylket (§ 28-9), eller er det et annet tema?
 - Er det riktig at rådgiving på skolen ikke regnes som fravær, slik «Det som ikke er fravær» i Vurdering sier?
 
-Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§16-1): § 16-1 Rådgiving om utdannings- og yrkesval; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§16-2): § 16-2 Rådgiving om sosiale og personlege forhold; [Ord og omgrep i opplæringslova (nye og gamle begreper)](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/): Sosialpedagogisk rådgiving og utdannings- og yrkesrådgiving i tabellen; [Rundskriv om fraværsgrensen](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/): punkt 3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§16-1): § 16-1 Rådgiving om utdannings- og yrkesval; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§16-2): § 16-2 Rådgiving om sosiale og personlege forhold; [Ord og omgrep i opplæringslova (nye og gamle begreper)](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ord-og-omgrep/): Sosialpedagogisk rådgiving og utdannings- og yrkesrådgiving i tabellen; [Rundskriv om fraværsgrensen](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/): punkt 3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen
 
 **Aktivitetsplikt** (`aktivitetsplikt`, begrep, ikke kontrollert)
 
@@ -2438,7 +2438,7 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Er det riktig å telle tre rettigheter, når veilederen 1.1 deler fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet i flere punkter?
 - Ordet «spesialundervisning» i en tekst lenker hit og ikke til «Individuelt tilrettelagt opplæring», fordi Udir skriver at det gamle begrepet er delt i tre. Er det riktig valg?
 
-Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-2): § 11-2 Tilfredsstillande utbytte av opplæringa; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-4): § 7-4 sjette ledd (lærekandidater); [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-1): § 7-1 tredje ledd (reglene for elever når fylkeskommunen har ansvaret); [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-1): § 11-1 andre punktum (tilpasset opplæring i lærebedriften); [Ord og omgrep i opplæringslova (nye og gamle begreper)](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/): Spesialundervisning («Dette omgrepet er no delt i tre ulike omgrep»)
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-2): § 11-2 Tilfredsstillande utbytte av opplæringa; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-4): § 7-4 sjette ledd (lærekandidater); [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-1): § 7-1 tredje ledd (reglene for elever når fylkeskommunen har ansvaret); [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-1): § 11-1 andre punktum (tilpasset opplæring i lærebedriften); [Ord og omgrep i opplæringslova (nye og gamle begreper)](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ord-og-omgrep/): Spesialundervisning («Dette omgrepet er no delt i tre ulike omgrep»)
 
 **Individuelt tilrettelagt opplæring** (`individuelt-tilrettelagt-opplaering`, begrep, ikke kontrollert)
 
