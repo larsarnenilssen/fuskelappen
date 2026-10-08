@@ -26,8 +26,9 @@ declare module 'virtual:jukselappfag' {
 }
 
 declare module 'virtual:jukselappeu' {
+  import type { JukselappEu } from './modules/skolemiljo/elevundersokelsen/jukselapp.ts';
   /** Mobbing og indeksene i Elevundersøkelsen for Vg1, til dagens jukselapp (avgjørelse 085). Null uten data. */
-  const eu: import('./modules/skolemiljo/elevundersokelsen/jukselapp.ts').JukselappEu | null;
+  const eu: JukselappEu | null;
   export default eu;
 }
 
