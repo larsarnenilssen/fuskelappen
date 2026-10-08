@@ -4,6 +4,25 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 3: oversiktene i modulene (08.10.2026)
+
+Eier 08.10.2026: kalkulatorene skal ha samme overskrifter som fagarket, og læringen fra pakke 1 og 2 føres videre.
+
+- **Oversiktene** i Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler står i to kolonner på skrivebord. Sidene i modulen står til venstre. Veiviserne, fristene, kalkulatoren og tallene står til høyre.
+- **Rekkefølgen på mobil** følger kolonnene: først venstre, så høyre. I Vurdering og Aktivitetsplikt og skoleregler står veiviseren derfor nederst på mobil, ikke i midten.
+- **Inngangene** har ikonet i en lys blå sirkel, tittelen i tekstfarge og teksten dempet under, som modulene på forsiden. Delene har en strek over og en fet overskrift.
+- **Kort med overskrift:** I kalkulatorene (skjemadelene, resultatet, fordelingen og «Lagrede varianter») og i rubrikkene i Opplæringstilbud, Læreplanverket og Lov og forskrift står overskriften på en lys blå flate. De tykke strekene er borte.
+- **Fagtypene i et tilbud** (fellesfag, felles programfag og yrkesfaglig fordypning) har en prikk i samme farge som i stolpen over. Før var streken grå på grunn av en feil i stilene.
+
+| | Etter |
+|---|---|
+| De seks oversiktene, skrivebord | ![](bilder/fase-8b-p3-oversiktene.jpg) |
+| Inntak og Vurdering, mobil | ![](bilder/fase-8b-p3-oversiktene-m.jpg) |
+| Et tilbud i Opplæringstilbud | ![](bilder/fase-8b-p3-tilbud.jpg) |
+| Arbeidsplan med de nye overskriftene | ![](bilder/fase-8b-p3-arbeidsplan.jpg) |
+
+---
+
 ## Pakke 2: fag og læreplaner (08.10.2026)
 
 Testversjonen: https://jukselappen.no/test/#/fag
