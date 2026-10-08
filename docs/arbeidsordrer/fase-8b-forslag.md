@@ -4,6 +4,20 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 5: Regelverk, Læreplanverket og Begreper (08.10.2026)
+
+- **Begrepene:** Teksten står i et hvitt kort, med «I regelverket» og «Kilder» som lukkede rader nederst, som de andre kortene i appen. «Se også» er rader med pil, ikke en punktliste.
+- **Kildene nederst på siden** (Lov og forskrift, avtalene, Overordnet del, Opplæringsløp, programmene, skolene og opplæringskontorene) står i en lukket boks («Kilder (n)»), som på fagarket og temasidene, ikke som en punktliste rett på bakgrunnen.
+- **Søket i begrepene** har forstørrelsesglasset, som de andre søkefeltene.
+- Gruppene, søket og paragrafene i Lov og forskrift og Læreplanverket fikk overskriften på en lys blå flate allerede i pakke 2 og er ellers som før.
+
+| | Før | Etter |
+|---|---|---|
+| Et begrep | ![](bilder/fase-8b-p5-for-begrep.jpg) | ![](bilder/fase-8b-p5-etter-begrep.jpg) |
+| En lov | ![](bilder/fase-8b-p5-for-lov.jpg) | ![](bilder/fase-8b-p5-etter-lov.jpg) |
+
+---
+
 ## Pakke 4: veiviserne (08.10.2026)
 
 - **Stegene:** Steget og tittelen står på en lys flate øverst i kortet, i fargen til veiviseren (blå, rosa, grønn …), som overskriftene på fagarket og i kalkulatorene.

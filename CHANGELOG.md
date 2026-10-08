@@ -21,6 +21,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Kalkulatorene:** Overskriftene på delene i skjemaet og på kortene i resultatkolonnen står på en lys blå flate, som delene på fagarket.
 - **Oversiktene i modulene** (Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler) står i to kolonner på skrivebord: sidene i modulen til venstre, og veiviserne, fristene, kalkulatoren og tallene til høyre. Inngangene har ikonet i en lys blå sirkel og tittelen i vanlig tekstfarge, som modulene på forsiden, og delene har en strek over.
 - **Veiviserne:** Steget og tittelen står på en lys flate i fargen til veiviseren. Svarene står som rader i én boks med pil, i stedet for tykke blå rammer. «Hos fylkeskommunen» har ikke lenger en tykk strek.
+- **Begrepene** står i et hvitt kort med «I regelverket» og «Kilder» som lukkede rader nederst, og «Se også» er rader med pil. Søket i begrepene har forstørrelsesglass.
+- **Kildene nederst på siden** i Lov og forskrift, Overordnet del og Opplæringstilbud står i en lukket boks, som på fagarket, i stedet for en punktliste.
 - **Kortene som kan lukkes** i Opplæringstilbud, Læreplanverket og Lov og forskrift har overskriften på en lys blå flate i stedet for en tykk strek. Fellesfag, felles programfag og yrkesfaglig fordypning i et tilbud har en prikk i samme farge som i stolpen over.
 
 ### Rettet
