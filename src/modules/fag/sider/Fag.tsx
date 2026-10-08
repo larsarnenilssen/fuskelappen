@@ -348,33 +348,10 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
         </div>
         {kjent && (
           <div class="nokkeltall-rute">
-            {/* «Regn ut i Arbeidsplan» står som knapp på linje med overskriften i ruten, så kortet ikke trenger en egen rad
-                (eier 04.10.2026). På smal skjerm vises bare ikonet. At årsrammen bygger på appens tolkning av vedlegg 1,
-                står på begrepet Årsramme bak «i». Teksten følger bredden på ruten: hele, «Arbeidsplan» eller bare ikonet. */}
-            <div class="nokkeltall-topp">
-              <span class="nokkeltall-etikett">
-                {t('fag.side.arsramme')} <Begrepslenke id="arsramme" navn={t('fag.side.arsramme')} />
-              </span>
-              <a
-                class="knapp knapp-sekundaer knapp-liten nokkeltall-regn-ut"
-                href="#/arbeidstid/arbeidsplan"
-                title={t('fag.side.regnUt')}
-                aria-label={t('fag.side.regnUt')}
-                onClick={(e) => {
-                  e.preventDefault();
-                  regnUtIArbeidsplan(kode, fag, r);
-                }}
-                data-regn-ut
-              >
-                <Ikon navn="kalkulator" class="ikon-liten" />
-                <span class="nokkeltall-regn-ut-lang" aria-hidden="true">
-                  {t('fag.side.regnUt')}
-                </span>
-                <span class="nokkeltall-regn-ut-kort" aria-hidden="true">
-                  {t('fag.side.regnUtKort')}
-                </span>
-              </a>
-            </div>
+            {/* At årsrammen bygger på appens tolkning av vedlegg 1, står på begrepet Årsramme bak «i». */}
+            <span class="nokkeltall-etikett">
+              {t('fag.side.arsramme')} <Begrepslenke id="arsramme" navn={t('fag.side.arsramme')} />
+            </span>
             {r.status === 'koblet' ? (
               <>
                 <span class="nokkeltall-verdi tall">{formaterTall(r.kandidat.rad.t60)}</span>
@@ -405,6 +382,25 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
             </div>
           ))}
         </dl>
+      )}
+      {/* «Regn ut i Arbeidsplan» som en lenkelinje nederst i kortet, som «Hele kalenderen» på forsiden, så knappen ikke
+          står inntil teksten i ruten (eier 08.10.2026). */}
+      {kjent && (
+        <a
+          class="panel-videre nokkeltall-videre"
+          href="#/arbeidstid/arbeidsplan"
+          onClick={(e) => {
+            e.preventDefault();
+            regnUtIArbeidsplan(kode, fag, r);
+          }}
+          data-regn-ut
+        >
+          <span class="panel-videre-tekst">
+            <Ikon navn="kalkulator" class="ikon-liten" />
+            {t('fag.side.regnUt')}
+          </span>
+          <Ikon navn="hoyre" class="ikon-liten" />
+        </a>
       )}
     </section>
   );
@@ -651,15 +647,31 @@ export default function Fagside({ parametre }: SideProps) {
           </p>
           {/* Hvert programområde lenker til tilbudet i Opplæringsløp (pakke 5, avgjørelse 035), med hvordan faget
               inngår i tilbudet og timene (eier 02.10.2026). */}
-          <ul class="inngar-liste">
+          <ul class="liste inngar-liste">
             {fag.po.map((p) => {
               const po = indeks.programomrader[p];
               const tb = tilbud?.tilbud[p];
               const rolle = tb ? fagITilbud(tb, kode, indeks) : null;
+              const under = [p.replace(/-+$/, ''), po ? trinnTekst(t, po.trinn) : null, rolle ? rolletekst(t, rolle) : null].filter(Boolean).join(' · ');
               return (
                 <li key={p}>
-                  {po ? <a href={`#${tilbudRute(po.program, p)}`}>{`${po.navn[malform]} (${p.replace(/-+$/, '')}, ${trinnTekst(t, po.trinn)})`}</a> : p}
-                  {rolle && <span class="inngar-rolle">{rolletekst(t, rolle)}</span>}
+                  {/* Hvert tilbud er en rad med pil, som fagene i fagsøket (eier 08.10.2026). */}
+                  {po ? (
+                    <a class="listelenke" href={`#${tilbudRute(po.program, p)}`}>
+                      <span class="listelenke-tekst">
+                        <span class="listelenke-tittel">{po.navn[malform]}</span>
+                        <span class="listelenke-under">{under}</span>
+                      </span>
+                      <Ikon navn="hoyre" class="ikon-liten" />
+                    </a>
+                  ) : (
+                    <span class="listelenke">
+                      <span class="listelenke-tekst">
+                        <span class="listelenke-tittel">{p}</span>
+                        {rolle && <span class="listelenke-under">{rolletekst(t, rolle)}</span>}
+                      </span>
+                    </span>
+                  )}
                 </li>
               );
             })}
