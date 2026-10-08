@@ -1,7 +1,7 @@
 // Rollene i velkomsten (fase 10) og favorittene hver rolle får anbefalt. Favorittene er id-er fra modulenes
 // `favorittbare` (testes). Rekkefølgen er rekkefølgen i velkomsten.
 
-export const ROLLER = ['laerer', 'kontaktlaerer', 'radgiver', 'avdelingsleder', 'rektor'] as const;
+export const ROLLER = ['laerer', 'kontaktlaerer', 'radgiver', 'skoleleder'] as const;
 export type Rolle = (typeof ROLLER)[number];
 
 export const ANBEFALTE: Readonly<Record<Rolle, readonly string[]>> = {
@@ -29,18 +29,12 @@ export const ANBEFALTE: Readonly<Record<Rolle, readonly string[]>> = {
     'opplaeringslop:laerlinger-og-kandidater',
     'tilrettelegging:sprak-og-kort-botid',
   ],
-  avdelingsleder: [
+  // Rektor og avdelingsleder er én rolle (eier 08.10.2026): arbeidstiden til de ansatte, plikten til å handle når en
+  // elev ikke har det trygt og godt, klagene og tallene for skolen.
+  skoleleder: [
     'arbeidstid:arbeidsplan',
     'arbeidstid:beskjeftigelse',
-    'arbeidstid:vikar',
-    'vurdering:grunnlag-for-vurdering',
-    'eksamen:klage-pa-karakter',
     'skolemiljo:aktivitetsplikten',
-  ],
-  rektor: [
-    'skolemiljo:kapittel-12',
-    'skolemiljo:aktivitetsplikten',
-    'arbeidstid:arbeidsplan',
     'eksamen:klage-pa-karakter',
     'elevundersokelsen:oversikt',
     'statistikk:oversikt',

@@ -14,8 +14,8 @@ describe('velkomsten (fase 10)', () => {
   });
 
   it('en rolle som ikke finnes, leses som ingen rolle', () => {
-    expect(lesRolle('rektor')).toBe('rektor');
-    expect(lesRolle('vaktmester')).toBeNull();
+    expect(lesRolle('skoleleder')).toBe('skoleleder');
+    expect(lesRolle('rektor')).toBeNull();
     expect(lesRolle(undefined)).toBeNull();
   });
 

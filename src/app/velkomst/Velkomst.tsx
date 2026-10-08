@@ -208,6 +208,7 @@ function Takk({ v }: { v: typeof velkomstNb }) {
           {v.takk.knapp}
         </a>
       </p>
+      <p class="dempet liten">{v.takk.senere}</p>
       <p class="vk-takk">{fyllInn(v.takk.takk, { app: app.navn })}</p>
     </>
   );
@@ -267,6 +268,7 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
               {v.sted.lokaleLenke}
               <Ikon navn="hoyre" class="ikon-liten" />
             </a>
+            <p class="dempet liten">{v.sted.lokaleSenere}</p>
           </div>
         </>
       ),

@@ -35,7 +35,7 @@
 .vk-stolpe {
   display: flex;
   gap: var(--rom-1);
-  margin: var(--rom-2) var(--rom-5) 0;
+  margin: var(--rom-2) var(--rom-5) var(--rom-3);
   padding: 0;
   list-style: none;
 }
@@ -57,7 +57,7 @@
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: var(--rom-4) var(--rom-5);
+  padding: var(--rom-1) var(--rom-5) var(--rom-4);
 }
 
 .overlegg .vk-innhold h2 {

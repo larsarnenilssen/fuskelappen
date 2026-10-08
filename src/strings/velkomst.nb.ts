@@ -45,6 +45,7 @@ export const velkomstNb = {
     lokaleTekst:
       'Du kan legge inn en regel for fylket eller skolen din og melde den inn. Den gjelder med en gang for deg, og for andre ved skolen når den er godkjent.',
     lokaleLenke: 'Legg inn en lokal regel',
+    lokaleSenere: 'Du kan også gjøre det senere, under Innstillinger → «Lokale regler».',
   },
   rolle: {
     tittel: 'Hvilken rolle har du?',
@@ -54,8 +55,7 @@ export const velkomstNb = {
       laerer: 'Lærer',
       kontaktlaerer: 'Kontaktlærer',
       radgiver: 'Rådgiver',
-      avdelingsleder: 'Avdelingsleder',
-      rektor: 'Rektor',
+      skoleleder: 'Skoleleder',
     },
     anbefalte: 'Forslag til favoritter',
     leggTilAlle: 'Legg til alle',
@@ -97,6 +97,7 @@ export const velkomstNb = {
     privat: '{app} er et privat prosjekt, laget med hjelp av KI. Opplysningene kan være feil, så sjekk kilden når det er viktig.',
     innspill: 'Ser du feil eller mangler, eller har du forslag til hva som kan bli bedre? Alle innspill er velkomne.',
     knapp: 'Skriv tilbakemelding',
+    senere: 'Du kan også skrive senere, under Innstillinger → «Tilbakemelding».',
     takk: 'Takk for at du bruker {app}!',
   },
 };

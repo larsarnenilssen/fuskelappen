@@ -50,6 +50,7 @@ export const velkomstNn: Skjema<typeof velkomstNb> = {
     lokaleTekst:
       'Du kan leggje inn ein regel for fylket eller skulen din og melde han inn. Han gjeld med ein gong for deg, og for andre ved skulen når han er godkjend.',
     lokaleLenke: 'Legg inn ein lokal regel',
+    lokaleSenere: 'Du kan også gjere det seinare, under Innstillingar → «Lokale reglar».',
   },
   rolle: {
     tittel: 'Kva rolle har du?',
@@ -59,8 +60,7 @@ export const velkomstNn: Skjema<typeof velkomstNb> = {
       laerer: 'Lærar',
       kontaktlaerer: 'Kontaktlærar',
       radgiver: 'Rådgivar',
-      avdelingsleder: 'Avdelingsleiar',
-      rektor: 'Rektor',
+      skoleleder: 'Skuleleiar',
     },
     anbefalte: 'Forslag til favorittar',
     leggTilAlle: 'Legg til alle',
@@ -98,6 +98,7 @@ export const velkomstNn: Skjema<typeof velkomstNb> = {
     privat: '{app} er eit privat prosjekt, laga med hjelp av KI. Opplysningane kan vere feil, så sjekk kjelda når det er viktig.',
     innspill: 'Ser du feil eller manglar, eller har du forslag til kva som kan bli betre? Alle innspel er velkomne.',
     knapp: 'Skriv tilbakemelding',
+    senere: 'Du kan også skrive seinare, under Innstillingar → «Tilbakemelding».',
     takk: 'Takk for at du brukar {app}!',
   },
 };

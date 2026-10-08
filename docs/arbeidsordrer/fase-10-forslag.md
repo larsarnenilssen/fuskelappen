@@ -4,6 +4,44 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «V1 ja, V3 B»). Rund
 
 ---
 
+## Runde 2: senere i Innstillinger, og skoleleder (08.10.2026)
+
+**Dine innspill:** Det må forklares at lokale regler og tilbakemeldinger også kan ordnes senere. Rektor og avdelingsleder slås sammen til skoleleder, med favorittene som passer best.
+
+Du skrev «under favoritter». Lokale regler og tilbakemeldingen står under Innstillinger, så linjene viser dit. Si fra hvis du mente noe annet.
+
+### Endret i skissen
+
+- **Lokale regler (trinn 4):** Under lenken står «Du kan også gjøre det senere, under Innstillinger → «Lokale regler».»
+- **Takk (trinn 8):** Under «Skriv tilbakemelding» står «Du kan også skrive senere, under Innstillinger → «Tilbakemelding».»
+- **Skoleleder** i stedet for rektor og avdelingsleder. Det blir fire roller: lærer, kontaktlærer, rådgiver og skoleleder.
+- Det er litt mer luft mellom stolpen med trinnene og innholdet, så innholdet ikke ruller helt opp mot stolpen.
+
+| | Mobil |
+|---|---|
+| Lokale regler, nederst i trinn 4 | ![](bilder/fase-10-r2-4-sted-lokale-mobil.jpg) |
+| Skoleleder valgt | ![](bilder/fase-10-r2-5-rolle-mobil.jpg) |
+| Takk | ![](bilder/fase-10-r2-8-takk-mobil.jpg) |
+
+### Favorittene for skoleleder
+
+| Favoritt | Hvorfor |
+|---|---|
+| Arbeidsplan | Arbeidstiden til lærerne |
+| Beskjeftigelse | Stillingsprosenten ut fra fagene og funksjonene |
+| Aktivitetsplikten | Plikten til å handle når en elev ikke har det trygt og godt |
+| Klage på karakter | Klagene skolen behandler først |
+| Elevundersøkelsen | Resultatene for skolen |
+| Videregående i tall | Søkerne, fullføringen og tallene for fylket |
+
+Ute fra listene i runde 1: Vikartimer og Grunnlag for vurdering (fra avdelingsleder), og Et trygt og godt skolemiljø (fra rektor).
+
+**Råd:** Som over. Vil du heller ha Vikartimer enn Videregående i tall? Vikartimer passer for den som setter opp vikarene, Videregående i tall for den som planlegger.
+
+Spørsmålene V1 og V3–V8 fra runde 1 står fortsatt åpne. V2 gjelder nå fire roller.
+
+---
+
 ## Runde 1: skisse og åtte spørsmål (08.10.2026)
 
 Skissen finnes bare i testversjonen (https://jukselappen.no/test/). Den publiserte appen er uendret. Velkomsten virker som den skal i appen: valgene lagres, og favorittene, fylket og jukselappen blir med videre.
