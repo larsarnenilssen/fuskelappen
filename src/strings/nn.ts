@@ -311,17 +311,18 @@ export const nn: Tekster = {
   kildestatus: {
     tittel: 'Kjelder og kjeldestatus',
     indikator: 'Kjeldestatus: {status}',
+    telling: 'Verkar: {virker}. Endra dei siste {dager} dagane: {endret}. Svarar ikkje: {svarerIkke}.',
+    kilde: { virker: 'verkar', endretNylig: 'endra {dato}', svarerIkke: 'svarar ikkje', forHand: 'blir sjekka for hand' },
     status: {
-      ok: 'alt i orden',
-      endret: 'kjelde endra',
-      feilet: 'sjekken feila',
+      ok: 'alle kjeldene verkar',
+      feilet: 'nokre kjelder svarar ikkje',
       utdatert: 'utdatert',
       ukjent: 'ukjend',
       ikkeSjekket: 'blir ikkje sjekka enno',
       skjult: 'varsel skjult',
     },
     forklaring:
-      'Ein automatisk jobb sjekkar kjeldene kvar veke. Endrar ei kjelde seg, blir eigaren av appen varsla og går gjennom innhaldet. Innhaldet i appen blir aldri endra automatisk.',
+      'Ein automatisk jobb sjekkar kvar veke at kjeldene svarar, og om innhaldet i dei er endra. Endrar ei kjelde seg, blir eigaren av appen varsla og går gjennom innhaldet. Innhaldet i appen blir aldri endra automatisk. Ei kjelde står som endra i 30 dagar, og svarar ho ikkje to sjekkar på rad, står det her.',
     sistKjort: 'Sist sjekka {dato}.',
     nesteSjekk: 'Neste planlagde sjekk: {dato}.',
     skjulVarsel: 'Skjul varselet til neste sjekk',

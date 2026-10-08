@@ -8,7 +8,7 @@ function status(kjort: Date, ...statuser: ('ok' | 'endret' | 'feilet')[]) {
     kilder: Object.fromEntries(
       statuser.map((s, i) => [
         i === 0 ? 'ks-sfs2213' : 'udir-nsr',
-        { status: s, sjekket: kjort.toISOString(), fingeravtrykk: null, endret_siden: null, melding: null },
+        { status: s, sjekket: kjort.toISOString(), fingeravtrykk: null, endret_siden: null as string | null, melding: null },
       ]),
     ),
   };
@@ -41,11 +41,19 @@ test.describe('kildestatus', () => {
     await expect(page.getByText('Det er mer enn 14 dager siden kildene ble sjekket.', { exact: false })).toBeVisible();
   });
 
-  test('viser endret og feilet', async ({ page }) => {
-    await medStatus(page, status(dagerSiden(1), 'endret', 'ok'));
+  test('en kilde som er endret, er ikke et varsel, og godkjenning vises ikke (avgjørelse 089)', async ({ page }) => {
+    const data = status(dagerSiden(1), 'endret', 'ok');
+    const forste = data.kilder['ks-sfs2213'];
+    if (forste) forste.endret_siden = dagerSiden(3).toISOString();
+    await medStatus(page, data);
     await page.goto('./#/innstillinger');
-    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'endret');
-    await page.unroute('**/data/status/kildestatus.json');
+    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'ok');
+    await expect(page.locator('.indikator')).toHaveAccessibleName('Kildestatus: alle kildene virker');
+    await page.goto('./#/om/kilder');
+    await expect(page.locator('[data-kilde="ks-sfs2213"] .merke')).toHaveAttribute('data-visning', 'endretNylig');
+    await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('endret ');
+    await expect(page.getByTestId('kildetelling')).toContainText('Virker: 1. Endret de siste 30 dagene: 1. Svarer ikke: 0.');
+    await expect(page.locator('main')).not.toContainText(/godkjent/i);
   });
 
   test('viser ukjent når statusfilen mangler', async ({ page }) => {
@@ -58,8 +66,8 @@ test.describe('kildestatus', () => {
   test('kildesiden lister kildene fra kilderegisteret', async ({ page }) => {
     await medStatus(page, status(dagerSiden(1), 'ok', 'ok'));
     await page.goto('./#/om/kilder');
-    await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('alt i orden');
-    await expect(page.locator('[data-kilde="opplaeringslova"]')).toContainText('sjekkes ikke ennå');
+    await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('virker');
+    await expect(page.locator('[data-kilde="opplaeringslova"]')).toContainText('sjekkes for hånd');
   });
 
   test('varselet kan skjules til neste sjekk og vises igjen', async ({ page }) => {

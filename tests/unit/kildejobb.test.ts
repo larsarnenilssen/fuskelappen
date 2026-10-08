@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { erNyKilde, lagFingeravtrykk, normaliserTekst, nyPost, vurderMotGodkjent } from '../../scripts/kilder/logikk.ts';
+import { erIkkeGodkjent, grunnlagFor, lagFingeravtrykk, normaliserTekst, nyPost, vurderMotGrunnlag } from '../../scripts/kilder/logikk.ts';
 import { kfTekst } from '../../scripts/kilder/kf-infoserie.ts';
 import { ventetid } from '../../scripts/hent-grep.ts';
 import { feilmelding, filtrerSkoler, lovdataFilnavn, skoleendringer, strukturhint, trekkUt } from '../../scripts/kilder/metoder.ts';
@@ -13,34 +13,67 @@ describe('fingeravtrykk og status', () => {
     expect(lagFingeravtrykk('x')).toMatch(/^sha256:[0-9a-f]{64}$/);
   });
 
-  it('sammenligner med godkjent fingeravtrykk', () => {
-    expect(vurderMotGodkjent(A, A).status).toBe('ok');
-    expect(vurderMotGodkjent(A, B).status).toBe('endret');
-    expect(vurderMotGodkjent(A, null)).toMatchObject({ status: 'endret', melding: 'Ny kilde, ikke godkjent ennå.' });
+  it('sammenligner med grunnlaget, og første sjekk av en ny kilde blir grunnlaget (avgjørelse 089)', () => {
+    expect(vurderMotGrunnlag(A, A)).toMatchObject({ status: 'ok', grunnlag: A });
+    expect(vurderMotGrunnlag(A, B)).toMatchObject({ status: 'endret', grunnlag: B });
+    expect(vurderMotGrunnlag(A, null)).toMatchObject({ status: 'ok', grunnlag: A, melding: null });
   });
 
-  it('kjenner igjen en ny kilde: uten godkjent fingeravtrykk i registeret (sak #92)', () => {
-    expect(erNyKilde({ godkjent_fingeravtrykk: null })).toBe(true);
-    expect(erNyKilde({})).toBe(true);
-    expect(erNyKilde({ godkjent_fingeravtrykk: A })).toBe(false);
-    expect(erNyKilde(undefined)).toBe(false);
+  it('grunnlaget er det eier har gått gjennom, ellers det kildesjekken lagret', () => {
+    const { grunnlag } = nyPost(undefined, undefined, vurderMotGrunnlag(A, null), 't1');
+    expect(grunnlagFor({ godkjent_fingeravtrykk: B }, grunnlag)).toBe(B);
+    expect(grunnlagFor({ godkjent_fingeravtrykk: null }, grunnlag)).toBe(A);
+    expect(grunnlagFor({}, undefined)).toBeNull();
   });
 
-  it('husker når en endring først ble oppdaget', () => {
-    const forste = nyPost(undefined, { status: 'endret', fingeravtrykk: A, melding: null }, 't1');
-    expect(forste.endret_siden).toBe('t1');
-    const andre = nyPost(forste, { status: 'endret', fingeravtrykk: A, melding: null }, 't2');
-    expect(andre.endret_siden).toBe('t1');
-    const ny = nyPost(andre, { status: 'endret', fingeravtrykk: B, melding: null }, 't3');
-    expect(ny.endret_siden).toBe('t3');
-    const ok = nyPost(ny, { status: 'ok', fingeravtrykk: B, melding: null }, 't4');
-    expect(ok.endret_siden).toBeNull();
+  it('kjenner igjen en kilde eier ikke har godkjent for bruk', () => {
+    expect(erIkkeGodkjent({ godkjent: null })).toBe(true);
+    expect(erIkkeGodkjent({ godkjent: '2026-10-08' })).toBe(false);
+    expect(erIkkeGodkjent(undefined)).toBe(false);
   });
 
-  it('beholder forrige fingeravtrykk når sjekken feiler', () => {
-    const forrige = nyPost(undefined, { status: 'ok', fingeravtrykk: A, melding: null }, 't1');
-    const feil = nyPost(forrige, { status: 'feilet', fingeravtrykk: null, melding: 'Tidsavbrudd' }, 't2');
-    expect(feil).toMatchObject({ status: 'feilet', fingeravtrykk: A, melding: 'Tidsavbrudd', sjekket: 't2' });
+  it('husker når innholdet sist ble endret, også etter at eier har gått gjennom det', () => {
+    const forste = nyPost(undefined, undefined, vurderMotGrunnlag(A, null), 't1');
+    expect(forste.post).toMatchObject({ status: 'ok', endret_siden: null });
+    expect(forste.grunnlag).toEqual({ grunnlag: A, feil_pa_rad: 0 });
+    const endret = nyPost(forste.post, forste.grunnlag, vurderMotGrunnlag(B, grunnlagFor({}, forste.grunnlag)), 't2');
+    expect(endret.post).toMatchObject({ status: 'endret', endret_siden: 't2' });
+    expect(endret.grunnlag.grunnlag).toBe(A);
+    const uendret = nyPost(endret.post, endret.grunnlag, vurderMotGrunnlag(B, grunnlagFor({}, endret.grunnlag)), 't3');
+    expect(uendret.post).toMatchObject({ status: 'endret', endret_siden: 't2' });
+    // Eier har gått gjennom endringen (godkjent_fingeravtrykk = B): ok, men datoen for endringen står.
+    const gjennomgatt = nyPost(uendret.post, uendret.grunnlag, vurderMotGrunnlag(B, grunnlagFor({ godkjent_fingeravtrykk: B }, uendret.grunnlag)), 't4');
+    expect(gjennomgatt.post).toMatchObject({ status: 'ok', endret_siden: 't2' });
+    expect(gjennomgatt.grunnlag.grunnlag).toBe(B);
+  });
+
+  it('statusposten har samme form som før, så versjonen som er publisert, kan lese den', () => {
+    const { post } = nyPost(undefined, undefined, vurderMotGrunnlag(A, null), 't1');
+    expect(Object.keys(post).sort()).toEqual(['endret_siden', 'fingeravtrykk', 'melding', 'sjekket', 'status']);
+  });
+
+  it('en kilde som var «ny, ikke godkjent» i gammel status, får ingen dato for endring', () => {
+    const gammel = { status: 'endret' as const, sjekket: 't0', fingeravtrykk: A, endret_siden: 't0', melding: 'Ny kilde, ikke godkjent ennå.' };
+    const r = nyPost(gammel, undefined, vurderMotGrunnlag(A, grunnlagFor({}, undefined)), 't1');
+    expect(r.post).toMatchObject({ status: 'ok', endret_siden: null });
+    expect(r.grunnlag.grunnlag).toBe(A);
+  });
+
+  it('en feil vises først når kilden har feilet to sjekker på rad, og forrige fingeravtrykk beholdes', () => {
+    const forrige = nyPost(undefined, undefined, { status: 'ok', fingeravtrykk: A, melding: null }, 't1');
+    const en = nyPost(forrige.post, forrige.grunnlag, { status: 'feilet', fingeravtrykk: null, melding: 'Tidsavbrudd' }, 't2');
+    expect(en.post).toMatchObject({ status: 'ok', fingeravtrykk: A, melding: 'Tidsavbrudd', sjekket: 't2' });
+    expect(en.grunnlag.feil_pa_rad).toBe(1);
+    const to = nyPost(en.post, en.grunnlag, { status: 'feilet', fingeravtrykk: null, melding: 'Tidsavbrudd' }, 't3');
+    expect(to.post).toMatchObject({ status: 'feilet', fingeravtrykk: A });
+    expect(to.grunnlag.feil_pa_rad).toBe(2);
+    const igjen = nyPost(to.post, to.grunnlag, { status: 'ok', fingeravtrykk: A, melding: null }, 't4');
+    expect(igjen.post.status).toBe('ok');
+    expect(igjen.grunnlag.feil_pa_rad).toBe(0);
+    // Nyhetskildene har sin egen regel (mer enn to dager) og feiler med en gang.
+    expect(nyPost(forrige.post, forrige.grunnlag, { status: 'feilet', fingeravtrykk: null, melding: 'x' }, 't2', { straks: true }).post.status).toBe('feilet');
+    // En helt ny kilde som feiler, har ingenting å falle tilbake på.
+    expect(nyPost(undefined, undefined, { status: 'feilet', fingeravtrykk: null, melding: 'x' }, 't1').post.status).toBe('feilet');
   });
 });
 

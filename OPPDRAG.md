@@ -221,7 +221,7 @@ Skjemaet defineres med zod og valideres i testene.
 
 ### 3.9 Kilder, oppdatering og varsling
 
-Kilderegisteret ligger i `content/kilder.yaml`, og `docs/KILDER.md` genereres fra det. Hver kilde har `id`, `navn`, `utgiver`, `url`, `type`, `niva`, `lisens`, `sjekkmetode` og `godkjent_fingeravtrykk`.
+Kilderegisteret ligger i `content/kilder.yaml`, og `docs/KILDER.md` genereres fra det. Hver kilde har `id`, `navn`, `utgiver`, `url`, `type`, `niva`, `lisens`, `sjekkmetode`, `godkjent` (datoen eier godkjente kilden, avgjørelse 089) og `godkjent_fingeravtrykk`.
 
 Tre oppdateringsnivåer:
 

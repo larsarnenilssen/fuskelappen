@@ -3,7 +3,10 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { app } from '../../src/config/app.ts';
 import {
+  ENDRET_NYLIG_DAGER,
   erUtdatert,
+  kildevisning,
+  tellKilder,
   lesKildestatus,
   nesteKildesjekk,
   samletStatus,
@@ -39,8 +42,24 @@ describe('kildestatus', () => {
   it('samlet status', () => {
     expect(samletStatus(null, naa)).toBe('ukjent');
     expect(samletStatus(fil('2026-09-28T03:00:00Z', 'ok', 'ok'), naa)).toBe('ok');
-    expect(samletStatus(fil('2026-09-28T03:00:00Z', 'ok', 'endret'), naa)).toBe('endret');
+    // At en kilde er endret, er ikke et varsel i appen (avgjørelse 089).
+    expect(samletStatus(fil('2026-09-28T03:00:00Z', 'ok', 'endret'), naa)).toBe('ok');
     expect(samletStatus(fil('2026-09-28T03:00:00Z', 'endret', 'feilet'), naa)).toBe('feilet');
+  });
+
+  it('viser om kilden virker, er endret de siste 30 dagene eller ikke svarer, ikke om eier har godkjent den', () => {
+    expect(ENDRET_NYLIG_DAGER).toBe(30);
+    expect(kildevisning(post('ok'), naa)).toBe('virker');
+    // «endret» betyr at eier ikke har gått gjennom endringen. Det vises ikke; datoen for endringen gjør.
+    expect(kildevisning(post('endret'), naa)).toBe('virker');
+    expect(kildevisning({ ...post('endret'), endret_siden: '2026-09-01T04:00:00Z' }, naa)).toBe('endretNylig');
+    // 30 dager før 29.09 kl. 12 er 30.08 kl. 12.
+    expect(kildevisning({ ...post('ok'), endret_siden: '2026-08-30T12:00:00Z' }, naa)).toBe('endretNylig');
+    expect(kildevisning({ ...post('ok'), endret_siden: '2026-08-30T11:59:59Z' }, naa)).toBe('virker');
+    expect(kildevisning(post('feilet'), naa)).toBe('svarerIkke');
+    const f = fil('2026-09-28T03:00:00Z', 'ok', 'endret', 'feilet');
+    f.kilder.k0 = { ...post('ok'), endret_siden: '2026-09-20T04:00:00Z' };
+    expect(tellKilder(f, naa)).toEqual({ virker: 1, endretNylig: 1, svarerIkke: 1 });
   });
 
   it('avviser ugyldig statusfil', () => {
@@ -63,7 +82,7 @@ describe('skjult varsel', () => {
   it('viser varselet igjen etter neste kjøring eller ny status', () => {
     const skjult = varselnokkel(feilet, 'feilet');
     expect(visningsstatus(fil('2026-09-29T03:00:00Z', 'feilet'), naa, skjult)).toBe('feilet');
-    expect(visningsstatus(fil('2026-09-28T03:00:00Z', 'endret'), naa, skjult)).toBe('endret');
+    expect(visningsstatus(fil('2026-09-28T03:00:00Z', 'endret'), naa, skjult)).toBe('ok');
     // Blir statusen utdatert, er det et nytt varsel.
     expect(visningsstatus(feilet, new Date('2026-10-20T12:00:00Z'), skjult)).toBe('utdatert');
   });

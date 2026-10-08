@@ -4,7 +4,12 @@
 # aktiv:        true når kildejobben skal sjekke kilden. Kilder aktiveres i fasen der de tas i bruk.
 # uttrekk:      for sjekkmetode «side»: hvilken del av siden som sammenlignes.
 # kortnavn:     valgfritt kort navn til utregningene i kalkulatorene, f.eks. «Opplæringsforskrifta».
-# godkjent_fingeravtrykk: settes bare av eier, eller etter eksplisitt beskjed fra eier.
+# godkjent:     datoen eier godkjente at kilden kan brukes i appen (avgjørelse 089). Settes bare av eier, med
+#               /godkjent i kontrollsaken, eller etter eksplisitt beskjed fra eier. Eier godkjente 08.10.2026 alle
+#               kildene som var i bruk. Nye kilder får godkjent: null.
+# godkjent_fingeravtrykk: innholdet eier sist har gått gjennom. Endringer etter det kommer i kontrollsaken.
+#               Settes bare av eier, eller etter eksplisitt beskjed fra eier. Uten det sammenlignes det med det
+#               kildesjekken så første gang (grunnlag i data/status/kildegrunnlag.json).
 kilder:
   - id: ks-sfs2213
     navn: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, med vedlegg og protokoller
@@ -21,6 +26,7 @@ kilder:
     uttrekk:
       selektor: article.theme-card
       inneholder: SFS 2213
+    godkjent: 2026-10-08
     # Godkjent av eier 2026-09-29 (sak #2).
     godkjent_fingeravtrykk: sha256:7b5faa2311693ca97a7a881f1f9dbe6c87d02484e9df87dce086c4ba2bdfa092
     faser: [1, 2, 3]
@@ -39,6 +45,7 @@ kilder:
     lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: kf-infoserie
     aktiv: true
+    godkjent: 2026-10-08
     # Godkjent av eier 2026-09-29.
     godkjent_fingeravtrykk: sha256:1c68729cdb42f9a73ce42cdae825a5f7e96507fc9361cb9488f0309ef1ad27ce
     faser: [1, 2, 3]
@@ -60,6 +67,7 @@ kilder:
       # Klassenavnene har en endelse som endres når nettstedet bygges på nytt, så bare starten brukes.
       selektor: '[class*="AgreementFullPage_content"]'
       inneholder: SFS 2213
+    godkjent: 2026-10-08
     # Godkjent av eier 2026-10-07 (i samtalen om KS-kildene). Siden viste da avtaleteksten for 01.01.24–31.12.25
     # og en lenke til protokollen fra 2026.
     godkjent_fingeravtrykk: sha256:d1b8febc2b1223305afe1026a957e51e421427abf671dac17ab04986ed995465
@@ -80,6 +88,7 @@ kilder:
     lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: fil
     aktiv: true
+    godkjent: 2026-10-08
     # Godkjent av eier 2026-09-29.
     godkjent_fingeravtrykk: sha256:9060856923b545153ae7c4c2072d411157afe5f2fcfb08da5be1f374f86bc745
     faser: [1, 3]
@@ -103,6 +112,7 @@ kilder:
       # Finner sjekken ikke kapittelet, beskriver feilmeldingen strukturen i filen (docs/avgjorelser/008).
       selektor: '[data-name="kap10"]'
       inneholder: Kapittel 10. Arbeidstid
+    godkjent: 2026-10-08
     # Godkjent av eier 2026-09-29.
     godkjent_fingeravtrykk: sha256:3a795969f3c58abf9fe8d4bddc30e2144df258e9cc09cc7a09727731783966cd
     faser: [1, 3]
@@ -118,6 +128,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 4, 5, 6, 7, 8]
     merknad: >-
@@ -135,6 +146,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 4, 5, 6, 7, 8]
     merknad: >-
@@ -152,6 +164,7 @@ kilder:
     sjekkmetode: lovtekst
     # Utvalget er godkjent av eier 06.10.2026 og står i content/lovverk.yaml.
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -169,6 +182,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -186,6 +200,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 4, 5, 6, 7]
     merknad: >-
@@ -202,6 +217,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3]
     merknad: >-
@@ -218,6 +234,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3]
     merknad: >-
@@ -235,6 +252,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3]
     merknad: >-
@@ -251,6 +269,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3]
     merknad: >-
@@ -268,6 +287,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 7]
     merknad: >-
@@ -284,6 +304,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: grep
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [1, 2, 3, 6]
     merknad: >-
@@ -302,6 +323,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: udir-fagfordeling
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 3]
     merknad: >-
@@ -326,6 +348,7 @@ kilder:
       # Ingressen («Dette rundskrivet erstatter …») og «Sist endra». Ingressen i Udir-1-2025 varslet blant
       # annet en egen forskrift om fag- og timefordeling.
       selektor: .abstract-block__lead, .byline__updated
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 3, 6]
     merknad: >-
@@ -344,6 +367,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: "#maincolpage"
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 3]
     merknad: >-
@@ -363,6 +387,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: .rich-text
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2]
     merknad: >-
@@ -380,6 +405,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: .rich-text
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 6]
     merknad: >-
@@ -399,6 +425,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: "#maincolpage"
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 6]
     merknad: >-
@@ -417,6 +444,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: "#maincolpage"
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 6]
     merknad: >-
@@ -434,6 +462,7 @@ kilder:
     lisens: Offentlig tilgjengelig
     sjekkmetode: vigo-kodeverk
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 6]
     merknad: >-
@@ -452,6 +481,7 @@ kilder:
     lisens: Ikke oppgitt. API-et er «åpent api for interne tjenester på utdanning.no», ikke versjonert og kan endres uten forvarsel.
     sjekkmetode: utdanning-no
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 5]
     merknad: >-
@@ -470,6 +500,7 @@ kilder:
     lisens: NLOD
     sjekkmetode: utdanning-no
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -489,6 +520,7 @@ kilder:
     lisens: NLOD
     sjekkmetode: nor
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -506,6 +538,7 @@ kilder:
     lisens: CC BY 4.0
     sjekkmetode: ndla
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2]
     merknad: >-
@@ -521,6 +554,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 6]
     merknad: >-
@@ -540,6 +574,7 @@ kilder:
       # Bare ingressen. Sjekken feiler hvis setningen om de tre delene blir borte eller endret.
       selektor: .page-header__ingress
       inneholder: Læreplanverket består av overordnet del, fag- og timefordelingen og læreplaner for fag
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -556,6 +591,7 @@ kilder:
     lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -574,6 +610,7 @@ kilder:
     lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 5]
     merknad: >-
@@ -591,6 +628,7 @@ kilder:
     lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
     sjekkmetode: lovtekst
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 7]
     merknad: >-
@@ -607,6 +645,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 5, 7]
     merknad: >-
@@ -624,6 +663,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [8]
     merknad: >-
@@ -641,6 +681,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [3, 4]
     merknad: >-
@@ -658,6 +699,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
@@ -675,6 +717,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
@@ -692,6 +735,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
@@ -709,6 +753,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -727,6 +772,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -745,6 +791,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -763,6 +810,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -780,6 +828,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -797,6 +846,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -814,6 +864,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -829,6 +880,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: elevundersokelsen
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -848,6 +900,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: statistikk
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -868,6 +921,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -885,6 +939,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -902,6 +957,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -920,6 +976,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -938,6 +995,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -956,6 +1014,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -973,6 +1032,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -992,6 +1052,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1009,6 +1070,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1027,6 +1089,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1045,6 +1108,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1062,6 +1126,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1079,6 +1144,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1096,6 +1162,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1113,6 +1180,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1129,6 +1197,7 @@ kilder:
     lisens: NLOD 2.0 (udir.no). Fylkenes sider er lest for datoene, som er fakta. Teksten kopieres ikke.
     sjekkmetode: eksamen
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1145,6 +1214,7 @@ kilder:
     lisens: Fylkenes sider er lest for datoene, som er fakta. Teksten kopieres ikke, bare korte utdrag med datoen.
     sjekkmetode: inntak
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1164,6 +1234,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: "#maincolpage"
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1181,6 +1252,7 @@ kilder:
     aktiv: true
     uttrekk:
       selektor: ".variabel-container"
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1197,6 +1269,7 @@ kilder:
     lisens: Opphavsrett fylkeskommunene. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [2, 5]
     merknad: >-
@@ -1215,6 +1288,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [4, 6]
     merknad: >-
@@ -1232,6 +1306,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovdata
     aktiv: false
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -1248,6 +1323,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: lovdata
     aktiv: false
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1266,6 +1342,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [4, 5]
     merknad: >-
@@ -1286,6 +1363,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [5]
     merknad: >-
@@ -1306,6 +1384,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
@@ -1326,6 +1405,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
@@ -1346,6 +1426,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [4]
     merknad: >-
@@ -1366,6 +1447,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1386,6 +1468,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1406,6 +1489,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1426,6 +1510,7 @@ kilder:
     aktiv: false
     uttrekk:
       selektor: main
+    godkjent: null
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
@@ -1443,6 +1528,7 @@ kilder:
     lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [1]
     merknad: Bakgrunn for forklaringen av «annet elevrettet arbeid». Endres ikke; sjekkes derfor ikke.
@@ -1456,6 +1542,7 @@ kilder:
     lisens: Opphavsrett Utdanningsforbundet. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [1]
     merknad: Partens syn på «annet elevrettet arbeid». Bakgrunn, gjengis med egne ord.
@@ -1469,6 +1556,7 @@ kilder:
     lisens: Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [1]
     merknad: Bakgrunn for vikarkalkulatoren (kalkulert tid og timelønn). Regelen står i hovedtariffavtalen § 12.4.
@@ -1482,6 +1570,7 @@ kilder:
     lisens: Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [1]
     merknad: Bakgrunn for perioder i Arbeidsplan (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
@@ -1495,6 +1584,7 @@ kilder:
     lisens: Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [1]
     merknad: >-
@@ -1511,6 +1601,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: nsr
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [0]
     merknad: Skolelisten i innstillingene. Oppdateres automatisk; varsel bare ved feil.
@@ -1524,6 +1615,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: ingen
     aktiv: false
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [0]
     merknad: Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.
@@ -1540,6 +1632,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1556,6 +1649,7 @@ kilder:
     lisens: NLOD 2.0
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1571,6 +1665,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: Interesseorganisasjon. Medlemstilbud tas ikke med.
@@ -1585,6 +1680,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1600,6 +1696,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1616,6 +1713,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: Fagpresse, utgitt av Utdanningsforbundet. robots.txt tillater alt.
@@ -1630,6 +1728,7 @@ kilder:
     lisens: NLOD 2.0 (Lovdatas datasett) og lovtekst som ikke er vernet etter åndsverkloven § 14
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1646,6 +1745,7 @@ kilder:
     lisens: forskning.no tilbyr feedene til bruk på andre nettsteder. Bare tittel, dato, lenke og ingress, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: Forskningsnyheter, eid av universitetene og høgskolene. Filtreres på ord for videregående (eier 07.10.2026).
@@ -1660,6 +1760,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1676,6 +1777,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra nyhetslisten, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-
@@ -1692,6 +1794,7 @@ kilder:
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
     sjekkmetode: nyheter
     aktiv: true
+    godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [7]
     merknad: >-

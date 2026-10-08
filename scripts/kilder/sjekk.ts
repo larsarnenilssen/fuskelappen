@@ -14,7 +14,7 @@ import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import { delIBiter, finnEndringer, lesKildetekst, type Kildetekstfil, type Tekstendring } from './avsnitt.ts';
 import { antallEndringer, grepdetaljer, grepsammendrag, type Grependringer } from './grep.ts';
-import { lagFingeravtrykk, nyPost, vurderMotGodkjent, type Sjekkresultat } from './logikk.ts';
+import { grunnlagFor, lagFingeravtrykk, nyPost, vurderMotGrunnlag, type Grunnlagsfil, type Grunnlagspost, type Sjekkresultat } from './logikk.ts';
 import { sjekkKfInfoserie } from './kf-infoserie.ts';
 import { sjekkLovdata } from './lovdata.ts';
 import { hentSkoler, sjekkFil, sjekkSide, skoleendringer, type Skole } from './metoder.ts';
@@ -25,6 +25,8 @@ import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn, type Tabellresultat 
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const statusfil = join(rot, 'data/status/kildestatus.json');
+// Grunnlaget for endringer og feil på rad (avgjørelse 089). Appen leser ikke filen.
+const grunnlagsfil = join(rot, 'data/status/kildegrunnlag.json');
 const verdistatusfil = join(rot, 'data/status/verdistatus.json');
 const kildetekstfil = join(rot, 'data/status/kildetekst.json');
 const skolefil = join(rot, 'data/skoler/vgs.json');
@@ -45,6 +47,7 @@ function lesJson(fil: string): unknown {
 }
 
 const forrige: Kildestatusfil | null = lesKildestatus(lesJson(statusfil));
+const forrigeGrunnlag = (lesJson(grunnlagsfil) as Grunnlagsfil | null)?.kilder ?? {};
 const naa = new Date().toISOString();
 const rapport: string[] = [];
 // Teksten fra hver kilde, eller hvorfor den ikke kunne leses. Brukes av verdisjekken etterpå.
@@ -322,7 +325,7 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         const { fingeravtrykk, tekst, nettleser } = await sjekkSide(kilde);
         tekster[kilde.id] = { tekst };
         if (nettleser) rapport.push(`### ${kilde.navn}`, 'Lest med nettleser, fordi siden ikke svarte på vanlig henting.', '');
-        return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
+        return vurderMotGrunnlag(fingeravtrykk, grunnlagFor(kilde, forrigeGrunnlag[kilde.id]));
       }
       case 'nsr':
         return await sjekkNsr(kilde);
@@ -352,7 +355,7 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };
         rapport.push(`### ${kilde.navn}`, `Filen er ${bytes} byte, fingeravtrykk ${fingeravtrykk}.`, '');
-        return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
+        return vurderMotGrunnlag(fingeravtrykk, grunnlagFor(kilde, forrigeGrunnlag[kilde.id]));
       }
       case 'kf-infoserie': {
         const r = await sjekkKfInfoserie(kilde);
@@ -363,13 +366,13 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
           `${r.tittel ?? 'Ukjent tittel'}, versjon ${r.versjon ?? '?'}, gyldig ${r.gyldig ?? '?'}. ${r.tegn} tegn tekst, fingeravtrykk ${r.fingeravtrykk}.`,
           '',
         );
-        return vurderMotGodkjent(r.fingeravtrykk, kilde.godkjent_fingeravtrykk);
+        return vurderMotGrunnlag(r.fingeravtrykk, grunnlagFor(kilde, forrigeGrunnlag[kilde.id]));
       }
       case 'lovdata': {
         const { fingeravtrykk, tekst } = await sjekkLovdata(kilde);
         tekster[kilde.id] = { tekst };
         rapport.push(`### ${kilde.navn}`, `Fingeravtrykk ${fingeravtrykk}.`, '');
-        return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
+        return vurderMotGrunnlag(fingeravtrykk, grunnlagFor(kilde, forrigeGrunnlag[kilde.id]));
       }
       case 'nyheter': {
         // Nyhetene hentes hver dag i egen arbeidsflyt (avgjørelse 084). Her leses bare statusen fra hentingen.
@@ -388,15 +391,19 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
 }
 
 const kilder: Record<string, KildestatusPost> = {};
+const grunnlag: Record<string, Grunnlagspost> = {};
 for (const kilde of register.kilder.filter((k) => k.aktiv && k.sjekkmetode !== 'ingen')) {
   const resultat = await sjekk(kilde);
-  kilder[kilde.id] = nyPost(forrige?.kilder[kilde.id], resultat, naa);
+  const ny = nyPost(forrige?.kilder[kilde.id], forrigeGrunnlag[kilde.id], resultat, naa, { straks: kilde.sjekkmetode === 'nyheter' });
+  kilder[kilde.id] = ny.post;
+  grunnlag[kilde.id] = ny.grunnlag;
   console.log(`${kilde.id}: ${resultat.status}${resultat.melding ? ` – ${resultat.melding}` : ''}`);
 }
 
 const fil: Kildestatusfil = { skjema: 1, kjort: naa, kilder };
 mkdirSync(join(rot, 'data/status'), { recursive: true });
 writeFileSync(statusfil, `${JSON.stringify(fil, null, 2)}\n`);
+writeFileSync(grunnlagsfil, `${JSON.stringify({ skjema: 1, kilder: grunnlag } satisfies Grunnlagsfil, null, 2)}\n`);
 
 // Verdisjekken: ser etter sitatet til hver regelverdi i kildeteksten (docs/avgjorelser/017).
 const regelsett = lesRegelsett(rot);

@@ -129,7 +129,8 @@ Regelverdier med `grunnlag: praksis` må stå i listen. Det testes.
 | `sjekkmetode` | `side`, `kf-infoserie`, `fil`, `lovdata`, `grep`, `nsr` eller `ingen` |
 | `aktiv` | om kildejobben sjekker kilden nå. Kilder aktiveres i fasen der de tas i bruk |
 | `uttrekk` | for `side` og `lovdata`: `selektor` (CSS), valgfritt `inneholder` (tekst treffet må ha) og `fjern` (selektorer som fjernes først) |
-| `godkjent_fingeravtrykk` | `sha256:…` eller `null`. **Oppdateres bare etter beskjed fra eier.** |
+| `godkjent` | Datoen eier godkjente at kilden kan brukes i appen, eller `null` (avgjørelse 089). **Settes bare av eier.** Vises ikke i appen. |
+| `godkjent_fingeravtrykk` | `sha256:…` eller `null`: innholdet eier sist har gått gjennom. Uten det sammenlignes det med det kildesjekken så første gang. **Oppdateres bare etter beskjed fra eier.** |
 | `faser`, `merknad` | dokumentasjon |
 
 ## Andre filer

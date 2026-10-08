@@ -311,17 +311,18 @@ export const nb = {
   kildestatus: {
     tittel: 'Kilder og kildestatus',
     indikator: 'Kildestatus: {status}',
+    telling: 'Virker: {virker}. Endret de siste {dager} dagene: {endret}. Svarer ikke: {svarerIkke}.',
+    kilde: { virker: 'virker', endretNylig: 'endret {dato}', svarerIkke: 'svarer ikke', forHand: 'sjekkes for hånd' },
     status: {
-      ok: 'alt i orden',
-      endret: 'kilde endret',
-      feilet: 'sjekk feilet',
+      ok: 'alle kildene virker',
+      feilet: 'noen kilder svarer ikke',
       utdatert: 'utdatert',
       ukjent: 'ukjent',
       ikkeSjekket: 'sjekkes ikke ennå',
       skjult: 'varsel skjult',
     },
     forklaring:
-      'En automatisk jobb sjekker kildene hver uke. Endrer en kilde seg, blir appens eier varslet og går gjennom innholdet. Innholdet i appen endres aldri automatisk.',
+      'En automatisk jobb sjekker hver uke at kildene svarer, og om innholdet i dem er endret. Endrer en kilde seg, blir appens eier varslet og går gjennom innholdet. Innholdet i appen endres aldri automatisk. En kilde står som endret i 30 dager, og svarer den ikke to sjekker på rad, står det her.',
     sistKjort: 'Sist sjekket {dato}.',
     nesteSjekk: 'Neste planlagte sjekk: {dato}.',
     skjulVarsel: 'Skjul varselet til neste sjekk',

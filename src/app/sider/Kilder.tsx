@@ -1,13 +1,16 @@
 // Detaljside for kilder og kildestatus.
 import { Kildelenke } from '../../components/Kildelenke.tsx';
 import { app } from '../../config/app.ts';
-import { formaterTidspunkt } from '../../core/i18n/tekst.ts';
+import { formaterDato, formaterTidspunkt } from '../../core/i18n/tekst.ts';
 import kilderegister from '../../../content/kilder.yaml';
 import type { Kilderegister } from '../../core/innhold/skjema.ts';
 import {
+  ENDRET_NYLIG_DAGER,
   erUtdatert,
+  kildevisning,
   nesteKildesjekk,
   samletStatus,
+  tellKilder,
   UTDATERT_ETTER_DAGER,
   varselnokkel,
 } from '../../core/kildestatus/kildestatus.ts';
@@ -39,6 +42,14 @@ export default function Kilder() {
             <strong>{t('kildestatus.indikator', { status: t(`kildestatus.status.${samlet}`) })}</strong>
           </p>
           {fil && <p>{t('kildestatus.sistKjort', { dato: formaterTidspunkt(fil.kjort, malform) })}</p>}
+          {fil && (
+            <p data-testid="kildetelling">
+              {(() => {
+                const n = tellKilder(fil, naa);
+                return t('kildestatus.telling', { virker: n.virker, endret: n.endretNylig, svarerIkke: n.svarerIkke, dager: ENDRET_NYLIG_DAGER });
+              })()}
+            </p>
+          )}
           {fil && erUtdatert(fil.kjort, naa) && <p>{t('kildestatus.utdatertForklaring', { dager: UTDATERT_ETTER_DAGER })}</p>}
           {!fil && <p>{t('kildestatus.ingenData')}</p>}
           <p data-testid="neste-kildesjekk">{t('kildestatus.nesteSjekk', { dato: formaterTidspunkt(neste.toISOString(), malform) })}</p>
@@ -58,8 +69,15 @@ export default function Kilder() {
       )}
       <ul class="liste kilder">
         {register.kilder.map((k) => {
+          // Brukerne ser om kilden virker, er endret nylig eller ikke svarer, ikke om eier har godkjent den
+          // (avgjørelse 089). Merkefargene er de samme som før: ok, endret og feilet.
           const post = fil?.kilder[k.id];
-          const s = post ? post.status : 'ikkeSjekket';
+          const visning = post ? kildevisning(post, naa) : null;
+          const klasse = visning === 'svarerIkke' ? 'feilet' : visning === 'endretNylig' ? 'endret' : visning === 'virker' ? 'ok' : 'ikkeSjekket';
+          const tekst =
+            visning === 'endretNylig' && post?.endret_siden
+              ? t('kildestatus.kilde.endretNylig', { dato: formaterDato(post.endret_siden.slice(0, 10), malform) })
+              : t(`kildestatus.kilde.${visning ?? 'forHand'}`);
           return (
             <li key={k.id} class="kilde" data-kilde={k.id}>
               <div class="kilde-innhold">
@@ -68,7 +86,9 @@ export default function Kilder() {
                   {t('kildestatus.utgiver', { utgiver: k.utgiver })} · {t('kildestatus.lisens', { lisens: k.lisens })}
                 </p>
                 <p class="liten">
-                  <span class={`merke merke-kilde-${s}`}>{t(`kildestatus.status.${s}`)}</span>
+                  <span class={`merke merke-kilde-${klasse}`} data-visning={visning ?? 'forHand'}>
+                    {tekst}
+                  </span>
                 </p>
               </div>
             </li>

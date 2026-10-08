@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Spesialundervisning** i teksten lenker til Individuell tilrettelegging, fordi Udir skriver at det gamle begrepet nå er delt i tre rettigheter. **PPT** lenker til PP-tjenesten.
 - **Søket** finner veiviseren for inntak på «inntakskontor», «VIGO» og «Vilbli».
 - **Nyhetene** hentes tre ganger om dagen (morgen, formiddag og ettermiddag), så de kommer også når GitHub hopper over den første hentingen.
+- **Kildene:** Siden om kildene viser om hver kilde virker, er endret de siste 30 dagene eller ikke svarer. En kilde står som «svarer ikke» først når den har feilet to sjekker på rad, så korte feil hos kilden ikke vises.
 
 ### Rettet
 
