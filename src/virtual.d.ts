@@ -25,6 +25,12 @@ declare module 'virtual:jukselappfag' {
   export default fag;
 }
 
+declare module 'virtual:jukselappeu' {
+  /** Mobbing og indeksene i Elevundersøkelsen for Vg1, til dagens jukselapp (avgjørelse 085). Null uten data. */
+  const eu: import('./modules/skolemiljo/elevundersokelsen/jukselapp.ts').JukselappEu | null;
+  export default eu;
+}
+
 declare module 'virtual:fagsok' {
   /** Programområdene, fagkodene og årstimene til fagsøket i kalkulatorene, fra fagindeksen (avgjørelse 049). */
   const data: {

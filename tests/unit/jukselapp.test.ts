@@ -15,6 +15,9 @@ import { aktiveModuler, alleRuter } from '../../src/modules/register.ts';
 import type { Faktum } from '../../src/modules/typer.ts';
 import { hentInnhold as hentSkolemiljo, veiviserRute } from '../../src/modules/skolemiljo/innhold.ts';
 import { faktaFraStatistikk } from '../../src/modules/statistikk/fakta.ts';
+import { faktaFraElevundersokelsen } from '../../src/modules/skolemiljo/fakta.ts';
+import { byggJukselappEu } from '../../src/modules/skolemiljo/elevundersokelsen/jukselapp.ts';
+import { lastElevundersokelsen } from '../../src/data/elevundersokelsen.ts';
 import { lastStatistikk } from '../../src/data/statistikk.ts';
 
 const rot = join(import.meta.dirname, '../..');
@@ -175,6 +178,30 @@ describe('faktaene fra modulene', () => {
     expect(alle.filter((f) => f.id.startsWith('opplaeringslop:vei-')).length).toBeGreaterThanOrEqual(10);
     expect(alle.some((f) => f.id === 'vurdering:fr-teller' && f.rute === '/vurdering/fravaer')).toBe(true);
     expect(alle.filter((f) => f.id.startsWith('eksamen:')).length).toBeGreaterThan(30);
+  }, 60_000);
+
+  it('Elevundersøkelsen gir mobbing og indeksene for Vg1 i landet, fylket og på skolen, uten skjermede tall', async () => {
+    await lastAlleTekster();
+    const eu = byggJukselappEu(await lastElevundersokelsen());
+    expect(eu.sporsmal.map((s) => s.kode)).toContain('EUIndeks_1398');
+    for (const rad of Object.values(eu.verdier)) for (const [naa] of Object.values(rad)) expect(typeof naa).toBe('number');
+    const fakta = faktaFraElevundersokelsen(eu);
+    const vestland = fakta.find((f) => f.id === 'skolemiljo:eu:EUIndeks_1398:F46');
+    expect(vestland?.gyldighet).toEqual({ niva: 'fylke', fylke: '46', forhold: 'supplerer' });
+    expect(vestland?.tekst.nb).toMatch(/prosent av elevene på Vg1 i Vestland svarte i Elevundersøkelsen/);
+    expect(fakta.find((f) => f.id === 'skolemiljo:eu:EUIndeks_1398:L')?.gyldighet).toBeUndefined();
+    const skole = fakta.find((f) => f.id.startsWith('skolemiljo:eu:EUIndeks_1379:S'));
+    expect(skole?.gyldighet?.niva).toBe('skole');
+    expect(skole?.tekst.nb).toMatch(/for elevene på Vg1 ved /);
+  });
+
+  it('skolene i skoleregisteret og kodene i kodegruppene gir fakta, skolene bare for valgt skole', async () => {
+    await lastAlleTekster();
+    const alle = (await Promise.all(aktiveModuler.map((m) => m.fakta()))).flat();
+    const skole = alle.find((f) => f.id.startsWith('opplaeringslop:skole:'));
+    expect(skole?.gyldighet?.niva).toBe('skole');
+    expect(skole?.tekst.nb).toMatch(/^Ifølge utdanning\.no har .+ tilbud i videregående opplæring/);
+    expect(alle.find((f) => f.id === 'begreper:kode:karakterer-og-vurderingsuttrykk:karakterer:IV')?.tekst.nb).toMatch(/^IV \(Ikke vurderingsgrunnlag\): /);
   }, 60_000);
 
   it('fagene har årstimene og årsrammen fra SFS 2213 vedlegg 1', () => {

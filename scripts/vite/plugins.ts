@@ -6,6 +6,8 @@ import { Innholdsfeil, lesBegrepsord, lesFil } from '../innhold/last.ts';
 import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
 import { byggJukselappfag } from '../../src/modules/fag/jukselappfag.ts';
+import { byggJukselappEu } from '../../src/modules/skolemiljo/elevundersokelsen/jukselapp.ts';
+import type { Elevundersokelsen } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesLopskilder, lesSkoler, lesSkolenummer, lesTilbudsindeks, lesUtdanningslop } from '../data/les.ts';
 import { kobleSkoler } from '../../src/modules/opplaeringslop/skoler.ts';
@@ -158,6 +160,26 @@ export function jukselappfagPlugin(rot: string): Plugin {
       if (lastId !== '\0' + id) return null;
       const dato = new Date().toISOString().slice(0, 10);
       return `export default ${JSON.stringify(byggJukselappfag(lesFagindeks(rot), lesRegelsett(rot), dato))};`;
+    },
+  };
+}
+
+/**
+ * Utdraget fra Elevundersøkelsen til dagens jukselapp (avgjørelse 085): mobbing og indeksene for Vg1, laget fra
+ * resultatfilen når appen bygges. Uten filen er utdraget tomt.
+ */
+export function jukselappEuPlugin(rot: string): Plugin {
+  const id = 'virtual:jukselappeu';
+  return {
+    name: 'jukselappen:jukselappeu',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      const fil = join(rot, 'data/elevundersokelsen/resultater.json');
+      const data = existsSync(fil) ? byggJukselappEu(JSON.parse(readFileSync(fil, 'utf8')) as Elevundersokelsen) : null;
+      return `export default ${JSON.stringify(data)};`;
     },
   };
 }

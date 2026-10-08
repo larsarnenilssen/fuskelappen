@@ -1,6 +1,11 @@
 /* Dagens jukselapp (fase 8, avgjørelse 085): en visning i panelet øverst på forsiden med samme oppsett som
    kalenderen, nyhetene og tallene (eier 08.10.2026). Øverst hvor faktumet kommer fra og knappen for ny jukselapp, så
    faktumet, og nederst lenken over hele bredden. Lastes med kortet (avgjørelse 082). */
+/* Like høy som kalenderen og nyhetene (eier 08.10.2026): faktumet fyller plassen mellom linjen øverst og lenken. */
+.jl-panel {
+  min-height: 16.75rem;
+}
+
 .jl-topp {
   display: flex;
   align-items: center;
@@ -33,10 +38,13 @@
 }
 
 .jl-tekst {
+  display: flex;
+  flex: 1;
+  align-items: center;
   margin: 0;
-  padding: var(--rom-2) var(--rom-3) var(--rom-3);
-  font-size: var(--str-s);
-  line-height: 1.35;
+  padding: var(--rom-3);
+  font-size: var(--str-m);
+  line-height: 1.45;
 }
 
 .jl-videre {

@@ -6,6 +6,17 @@ Til eier. Svar gjerne punkt for punkt (f.eks. «J1 ja, men uten paragrafer, J4 A
 
 ---
 
+## Runde 4: flere fakta og lik høyde (eier 08.10.2026)
+
+- **Tatt med etter rådene i vurderingen:**
+  - Elevundersøkelsen: mobbing og indeksene for Vg1, for landet, fylket og skolen, fra et lite utdrag som lages ved bygging. Ordlyden om mobbing følger teksten på siden for Elevundersøkelsen: «… svarte i Elevundersøkelsen 2025-26 at de er blitt mobbet 2 eller 3 ganger i måneden eller oftere de siste månedene».
+  - Skoleregisteret: tilbudene ved skolen du har valgt.
+  - Kodene i begrepene: karakterer og vurderingsuttrykk, orden og oppførsel, og karakterstatus. Kodelistene fra VIGO er ikke med.
+- **Ikke med foreløpig:** kompetansemål, skolenes egne regler, datoene, nyhetene og opplæringskontorene.
+- **Høyden:** Jukselappen er 268 px, som kalenderen (269 px på mobil). Nyhetene er 255 px og tallene 330 px. Faktumet står midt i plassen, i litt større skrift. Testes i `tests/e2e/jukselapp.spec.ts`.
+
+---
+
 ## Runde 3: kortet uten tittel og kilder (eier 08.10.2026)
 
 - «I regelverket» og «Kilder» er tatt ut av kortet. Kildene står på siden lenken går til.

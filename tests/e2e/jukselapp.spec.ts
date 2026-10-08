@@ -6,6 +6,11 @@ import { expect, test } from '@playwright/test';
 import { aapneAlt, settLagret } from './hjelp.ts';
 
 const VESTLAND = '46';
+/** Dagens dato, så jukselappen ikke vises først (alternativ C). */
+const idag = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
 const apen = (forside: Record<string, unknown> = {}) => ({ rekkefolge: [], lukket: [], apnet: ['panel'], bareFavoritter: false, ...forside });
 
 test.describe('dagens jukselapp', () => {
@@ -69,6 +74,27 @@ test.describe('dagens jukselapp', () => {
     await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
     await aapneAlt(page, '.jl-panel');
     expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(0);
+  });
+
+  test('er omtrent like høy som kalenderen (eier 08.10.2026)', { tag: '@mobil' }, async ({ page }) => {
+    await settLagret(page, { fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'neste', jukselappVist: idag() }) });
+    await page.goto('./');
+    const panel = page.locator('[data-gruppe="panel"]').first();
+    // Kalenderen tilpasser hvor mange datoer som får plass (useTilpassetListe), så høyden måles når den står stille.
+    const hoyde = async () => (await panel.locator('.kal-panel').boundingBox())?.height ?? 0;
+    await expect(panel.locator('.kal-panel .panel-liste > li').nth(2)).toBeVisible();
+    let kalender = 0;
+    await expect
+      .poll(async () => {
+        const forrige = kalender;
+        kalender = await hoyde();
+        return kalender > 0 && kalender === forrige;
+      })
+      .toBe(true);
+    await panel.getByRole('button', { name: 'Jukselapp', exact: true }).click();
+    await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
+    const jukselapp = (await page.locator('.jl-panel').boundingBox())?.height ?? 0;
+    expect(Math.abs(jukselapp - kalender)).toBeLessThanOrEqual(48);
   });
 
   for (const tema of ['lys', 'mork'] as const) {

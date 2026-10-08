@@ -94,7 +94,7 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       continue;
     }
     // Dagens jukselapp (avgjørelse 085): kortet, utvalget og faktaene i modulene.
-    if (/^src\/(app\/Jukselapp|core\/jukselapp\/|modules\/[^/]+\/(fakta|jukselappfag)\.ts$)/.test(fil)) {
+    if (/^src\/(app\/Jukselapp|core\/jukselapp\/|modules\/.+\/(fakta|jukselappfag|jukselapp)\.ts$)/.test(fil)) {
       speker.add('jukselapp');
       grunner.push(`${fil}: dagens jukselapp`);
     }
