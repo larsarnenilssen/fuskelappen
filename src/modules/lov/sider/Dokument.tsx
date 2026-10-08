@@ -7,7 +7,7 @@ import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
@@ -124,7 +124,7 @@ function Lovside({ parametre }: SideProps) {
               <Ikon navn="ekstern" class="ikon-liten" />
             </a>
           </p>
-          <Kildeliste kilder={[kildeFor(data)]} />
+          <Kildeboks kilder={[kildeFor(data)]} nokkel={`lov-${data.id}`} />
         </>
       )}
     </div>

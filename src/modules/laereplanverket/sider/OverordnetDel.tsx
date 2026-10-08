@@ -7,7 +7,7 @@ import { useEffect, useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
@@ -144,7 +144,7 @@ export default function OverordnetDel({ parametre }: SideProps) {
           <p class="liten dempet">{t('laereplanverket.hentet', { dato: formaterDato(data.od.hentet, malform) })}</p>
         </>
       )}
-      <Kildeliste kilder={[{ id: 'udir-overordnet-del' }, { id: 'udir-grep' }]} />
+      <Kildeboks kilder={[{ id: 'udir-overordnet-del' }, { id: 'udir-grep' }]} nokkel="overordnet-del" />
     </div>
   );
 }

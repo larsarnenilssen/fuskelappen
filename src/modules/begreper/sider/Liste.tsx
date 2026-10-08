@@ -55,7 +55,10 @@ export default function Liste({ sporring }: SideProps) {
         <>
           <div class="felt">
             <label for={id}>{t('begreper.filtrer')}</label>
-            <input id={id} type="search" autoComplete="off" value={filter} onInput={(e) => skrivFilter(e.currentTarget.value)} />
+            <div class="sokefelt">
+              <Ikon navn="sok" class="sokefelt-ikon" />
+              <input id={id} type="search" autoComplete="off" value={filter} onInput={(e) => skrivFilter(e.currentTarget.value)} />
+            </div>
           </div>
           {/* Temaene står i en boks som er lukket til brukeren åpner den. Overskriften viser temaet som er valgt (eier 05.10.2026). */}
           <details class="veiviser-kilder begrepsfilter">

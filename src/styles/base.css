@@ -6904,6 +6904,15 @@ button.frist-stripe-celle:hover {
   margin: var(--rom-3) 0;
 }
 
+/* Begrepet i et hvitt kort (fase 8b). Uten merker begynner kortet med teksten. */
+.begrep-kort > .merker:empty {
+  display: none;
+}
+
+.begrep-kort > .brodtekst > :first-child {
+  margin-top: 0;
+}
+
 /* ---------- Diskré stjerne for elementer uten egen side (avgjørelse 058) ---------- */
 /* Overskriften (en knapp som åpner) og stjernen ved siden av, i paragrafene, bestemmelsene og delene. */
 .med-stjerne {

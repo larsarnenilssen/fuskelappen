@@ -11,7 +11,6 @@ import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeboks } from '../../../components/Kildeboks.tsx';
-import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
@@ -485,7 +484,7 @@ export default function Fagside({ parametre }: SideProps) {
               </li>
             ))}
           </ul>
-          <Kildeliste kilder={[{ id: 'vigo-kodeverk', punkt: kode }]} />
+          <Kildeboks kilder={[{ id: 'vigo-kodeverk', punkt: kode }]} nokkel={`fag-${kode}`} />
         </div>
       );
     }
