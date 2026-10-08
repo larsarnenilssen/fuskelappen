@@ -1,6 +1,6 @@
 # Kobling fra fagkode til årsramme
 
-Laget automatisk (`npm run kobling:rapport`). Kildesjekken lager rapporten på nytt hver mandag etter at Grep er hentet. Grep hentet 2026-10-01.
+Laget automatisk (`npm run kobling:rapport`). Kildesjekken lager rapporten på nytt hver mandag etter at Grep er hentet. Grep hentet 2026-10-08.
 
 Koblingen står i `rules/sfs2213/kobling-fagkode-<periode>.yaml`. Fellesfag kobles eksplisitt per fagkode, utdanningsprogram og trinn. Felles programfag kobles med regler på fagkodeprefiks, utdanningsprogram og trinn. Alt er et forslag som ikke er kontrollert ennå. Se avgjørelse 023.
 
@@ -113,6 +113,8 @@ Fag med årstimer som brukes på et utdanningsprogram og trinn i Grep, men som i
 
 | Program | Trinn | Fagtype | Fagkoder | Eksempler |
 |---|---|---|---:|---|
+| Naturbruk (NA) | Vg3 | fellesfag | 2 | KEF1010, KEF1110 |
+| Salg, service og reiseliv (SR) | Vg2 | fellesfag | 2 | KEF1002, KEF1102 |
 | Studiespesialisering (ST) | Vg1 | valgfritt programfag | 2 | KRI1023, KRI1028 |
 | Studiespesialisering (ST) | Vg2 | valgfritt programfag | 6 | KRI1024, KRI1029, REA3065, REA3067 |
 | Studiespesialisering (ST) | Vg3 | valgfritt programfag | 4 | REA3065, REA3067, SAM3066, SAM3067 |

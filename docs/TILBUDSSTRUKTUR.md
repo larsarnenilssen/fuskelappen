@@ -1,6 +1,6 @@
 # Tilbudsstrukturen i videregående
 
-Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-01) og Udir-1-2026 «Fag- og timefordeling og tilbudsstruktur» for skoleåret 2026–2027 (hentet 2026-10-01). Ikke rediger for hånd. Se avgjørelse 024.
+Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-08) og Udir-1-2026 «Fag- og timefordeling og tilbudsstruktur» for skoleåret 2026–2027 (hentet 2026-10-01). Ikke rediger for hånd. Se avgjørelse 024.
 
 **Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. Felles programfag står hvert for seg med timetallet i Grep i parentes. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men hører til samme læreplan. Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). Lenkene til Vilbli viser skolene og lærebedriftene som tilbyr hvert tilbud (avgjørelse 027). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.
 
@@ -8,7 +8,7 @@ Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-01) og Udir-1-2026
 
 - 16 utdanningsprogram, 323 programområder: 134 i skole og 189 i bedrift. 32 er varianter for særskilte skoler.
 - 133 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 133 av dem.
-- 4 ulike avvik i 34 programområder (se under).
+- 6 ulike avvik i 34 programområder (se under).
 
 ### Summer i rundskrivet som ikke stemmer
 
@@ -133,7 +133,9 @@ Står bare i utdanning.no, uten at en annen kilde er uenig (6):
 - Grep kobler ingen fellesfag til programområdet. (32: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
 - Felles programfag fra eget programområde: fant ingen felles programfag i Grep. (15: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
 - Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 700. ELROM3
-- Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde. ELDRF2
+- Kroppsøving: fant ingen fagkode i Grep for programområdet. ELDRF2
+- Norsk/norsk for elever med samisk/norsk for elever med tegnspråk: fant ingen fagkode i Grep for programområdet. ELDRF2
+- Samfunnskunnskap: fant ingen fagkode i Grep for programområdet. ELDRF2
 
 ## Studieforberedende utdanningsprogram
 
@@ -1139,14 +1141,14 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>koder fra Automatisering (ELAUT2): Grep kobler ingen fellesfag til programområdet<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
-| Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap<br>koder fra Automatisering (ELAUT2): Grep kobler ingen fellesfag til programområdet | 554* |
-| Kroppsøving | 56 | KRO1018 Kroppsøving vg2<br>koder fra Automatisering (ELAUT2): Grep kobler ingen fellesfag til programområdet | 635 |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | **ingen fagkode i Grep** |  |
+| Samfunnskunnskap | 84 | **ingen fagkode i Grep** |  |
+| Kroppsøving | 56 | **ingen fagkode i Grep** |  |
 | Felles programfag fra eget programområde | 477 | DRF2001 Operasjon og sikkerhet (300)<br>DRF2002 Nyttelast, sensorer og bearbeiding av data (177)<br>vurdering: DRF2003 Tverrfaglig eksamen dronefag | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
-Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1066 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, NOR1067 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, muntlig samhandling; Samfunnskunnskap: SAK1002 Samfunnskunnskap, samisk plan.
+Alternativer for særskilte grupper: andre fellesfag: 4 koder, f.eks. KEF1002 Kvensk som andrespråk, vg2 yrkesfaglige utdanningsprogram, KEF1003 Kvensk som andrespråk, muntlig for privatister, vg2 yrkesfaglige utdanningsprogram.
 
 Tilpassede ordninger (kolonner i rundskrivet):
 
@@ -1156,7 +1158,9 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Avvik:
 
-- ⚠ Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde.
+- ⚠ Norsk/norsk for elever med samisk/norsk for elever med tegnspråk: fant ingen fagkode i Grep for programområdet.
+- ⚠ Samfunnskunnskap: fant ingen fagkode i Grep for programområdet.
+- ⚠ Kroppsøving: fant ingen fagkode i Grep for programområdet.
 
 Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdanningsprogram (PBPBY3).
 
@@ -2193,7 +2197,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/prog
 | Programfag fra eget programområde eller studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
-Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1054 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 påbygging til generell studiekompetanse, NOR1058 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 påbygging til generell studiekompetanse; Naturfag: NAT1030 Naturfag Vg3 påbygging til generell studiekompetanse, samisk plan; Historie: HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse, HIS1015 Historie, Vg3, påbygging til generell studiekompetanse for elever med samisk, kvensk eller finsk som andrespråk.
+Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1054 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 påbygging til generell studiekompetanse, NOR1058 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 påbygging til generell studiekompetanse; Naturfag: NAT1030 Naturfag Vg3 påbygging til generell studiekompetanse, samisk plan; Historie: HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse, HIS1015 Historie, Vg3, påbygging til generell studiekompetanse for elever med samisk, kvensk eller finsk som andrespråk; andre fellesfag: 4 koder, f.eks. KEF1010 Kvensk som andrespråk, vg3 påbygging til generell studiekompetanse, skriftlig, KEF1011 Kvensk som andrespråk, vg3 påbygging til generell studiekompetanse, muntlig.
 
 Tilpassede ordninger (kolonner i rundskrivet):
 
@@ -2556,7 +2560,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-o
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 554 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
-Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1066 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, NOR1067 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, muntlig samhandling; Samfunnskunnskap: SAK1002 Samfunnskunnskap, samisk plan; andre fellesfag: 18 koder, f.eks. SAS2002 Samisk som andrespråk, samisk 2, nordsamisk, vg2 yrkesfaglige utdanningsprogram, SAS2003 Samisk som andrespråk, samisk 2, nordsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig.
+Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1066 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, NOR1067 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, muntlig samhandling; Samfunnskunnskap: SAK1002 Samfunnskunnskap, samisk plan; andre fellesfag: 22 koder, f.eks. KEF1002 Kvensk som andrespråk, vg2 yrkesfaglige utdanningsprogram, KEF1003 Kvensk som andrespråk, muntlig for privatister, vg2 yrkesfaglige utdanningsprogram.
 
 Tilpassede ordninger (kolonner i rundskrivet):
 
