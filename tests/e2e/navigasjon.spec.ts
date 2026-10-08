@@ -100,6 +100,9 @@ test.describe('navigasjon', () => {
     test(`lerretet har toppfarge bak statuslinjen og sidefarge nederst (${tema})`, async ({ page }) => {
       await settLagret(page, { tema });
       await page.goto('./');
+      // Vent til appen har tegnet skallet og topplinjen. Ellers kan fargene leses før elementene finnes.
+      await expect(page.locator('.skall')).toBeVisible();
+      await expect(page.locator('.topplinje')).toBeVisible();
       const farger = await page.evaluate(() => {
         const stil = (el: Element) => getComputedStyle(el);
         return {

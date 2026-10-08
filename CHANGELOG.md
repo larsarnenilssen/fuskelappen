@@ -4,13 +4,34 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.44.0] – 2026-10-08
+
 ### Lagt til
+
+- **Videregående i tall med tall fra SSB:** tre temasider, Ungdom og søkere, Skolen og Læreplass og fullføring, med tallene fra Udir og SSB sammen. Hver temaside begynner med «Kort fortalt», tre tall med kilden.
+  - Fra SSB:
+    - 16–18-åringene nå og framover
+    - unge utenfor arbeid og utdanning
+    - grunnskolepoeng
+    - hvem som går i videregående, også etter bakgrunn
+    - lærerne
+    - hva fylkeskommunen bruker per elev
+  - Tallene hentes hver uke.
+- **Tallene der de er nyttige:**
+  - Inntak har søkerne og ungdomskullene i én boks.
+  - Poengberegning har grunnskolepoengene i fylket.
+  - Oppfølgingstjenesten har andelen unge utenfor arbeid og utdanning.
+  - Arbeidsplan har lærerne i fylket.
 
 - **Nye begreper:** Læreplan i fag, Kompetansemål, Fagkode, Årstimetall, Vurderingsordning, Sidemål, Egenmelding, Tilbudsstruktur, Instruktør, Rådgiving, Oppfølgingstjenesten og Elevråd. Ordene lenker til begrepene der de står i teksten.
 - **Ny versjon:** Når appen har lastet ned en ny versjon, kommer en melding over appen med det som er nytt, og knappene «Oppdater nå» og «Senere». Den kommer bare for nye versjoner, ikke når nyhetene, tallene eller kildestatusen er oppdatert. Da tas oppdateringen i bruk neste gang du åpner appen.
 
 ### Endret
 
+- **Stien øverst på sidene** står i en rolig, avrundet flate med piler mellom leddene, i hele appen.
+- **Videregående i tall:** Oversikten har nøkkeltallene, tre temakort og fylkene side om side, som står åpen. Figurene står på temasidene.
+- **Tallboksene** på de andre sidene har merkelappen «Videregående i tall» og står etter sidens eget innhold. På Lærlinger og kandidater og fylkessiden sto de øverst.
+- **Kreditering:** SSB står under «Om» med lisensen CC BY 4.0, også for fylkeslisten.
 - **Dagens jukselapp** er merket med det gule merket «Dagens jukselapp» når den står først på dagen, med «Tilbake til …» kalenderen, nyhetene eller tallene. Visningen du har valgt, blir ikke lenger byttet ut med jukselappen.
 - **Ungdomsrett** forklarer at retten også kalles fullføringsretten, og «fullføringsretten» i teksten lenker dit.
 - **Spesialundervisning** i teksten lenker til Individuell tilrettelegging, fordi Udir skriver at det gamle begrepet nå er delt i tre rettigheter. **PPT** lenker til PP-tjenesten.

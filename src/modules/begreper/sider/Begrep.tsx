@@ -11,6 +11,7 @@ import type { SideProps } from '../../typer.ts';
 import { hentBegreper } from '../innhold.ts';
 import { Kodegrupper } from '../Kodegrupper.tsx';
 import { Kodeliste } from '../Kodeliste.tsx';
+import { UtenforBoks } from '../../statistikk/ssb.tsx';
 
 export default function Begrep({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
@@ -78,6 +79,8 @@ export default function Begrep({ parametre, sporring }: SideProps) {
           </ul>
         </section>
       )}
+      {/* Unge utenfor arbeid og utdanning fra SSB, nederst (avgjørelse 090 og 091). */}
+      {begrep.id === 'oppfolgingstjenesten' && <UtenforBoks fylke={innstillinger.fylke} />}
     </article>
   );
 }

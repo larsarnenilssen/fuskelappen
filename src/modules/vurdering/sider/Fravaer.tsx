@@ -457,8 +457,6 @@ export default function Fravaer({ sporring }: SideProps) {
         </a>
       </div>
 
-      {/* Fraværet i fylket og på skolen (eier 07.10.2026, avgjørelse 080). */}
-      <FravaerBoks fylke={innstillinger.fylke} skole={innstillinger.skole} />
       {regler && regler.length > 0 && (
         <section class="poeng-regler">
           <h2 class="liten-overskrift">{t('vurdering.fravaer.regler')}</h2>
@@ -470,6 +468,8 @@ export default function Fravaer({ sporring }: SideProps) {
           ))}
         </section>
       )}
+      {/* Fraværet i fylket og på skolen, nederst etter sidens eget innhold (avgjørelse 080 og 091). */}
+      <FravaerBoks fylke={innstillinger.fylke} skole={innstillinger.skole} />
     </div>
   );
 }

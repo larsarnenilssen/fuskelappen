@@ -137,19 +137,31 @@ export function Rangering({ d, enhet, medTittel = true }: { d: Statistikk; enhet
   );
 }
 
-/** En liten boks med ett tall der det hører hjemme, med lenke til «Videregående i tall» for fylket. */
-export function Tallboks({ tittel, fylke, children }: { tittel: string; fylke: string | null; children: ComponentChildren }) {
+/**
+ * En tallboks fra Videregående i tall på en side der tallene er nyttige (avgjørelse 091). Alle har samme oppbygning, så
+ * det er tydelig at de er hentet inn fra Videregående i tall og ikke er en del av sidens eget innhold:
+ *
+ * - merkelappen «Videregående i tall» med ikonet til modulen, og en tittel som sier hva tallene er og hvor de gjelder
+ * - tallene, kort
+ * - lenken til Videregående i tall (eller temasiden) og kilden
+ *
+ * Boksen står etter sidens eget innhold: nederst på siden, eller nederst i høyre kolonne over kildene.
+ */
+export function Tallboks({ tittel, fylke = null, lenke, kilde, children }: { tittel: string; fylke?: string | null; lenke?: string; kilde?: string; children: ComponentChildren }) {
   const { t } = useTekst();
   return (
     <aside class="st-boks" aria-label={tittel}>
-      <p class="st-boks-tittel">
-        <Ikon navn="vurdering" class="ikon-liten" />
-        {tittel}
+      <p class="st-boks-merke">
+        <Ikon navn="sammenlign" class="ikon-liten" />
+        {t('statistikk.merke')}
       </p>
+      <p class="st-boks-tittel">{tittel}</p>
       <div class="st-boks-innhold">{children}</div>
       <p class="st-boks-lenke">
-        <a href={statistikkLenke(fylke)}>{t('statistikk.merLenke')}</a>
-        <span class="st-boks-kilde"> · {t('statistikk.kilde')}</span>
+        <a href={lenke ?? statistikkLenke(fylke)}>
+          {t('statistikk.merLenke')} <Ikon navn="hoyre" class="ikon-liten" />
+        </a>
+        <span class="st-boks-kilde"> · {kilde ?? t('statistikk.kilde')}</span>
       </p>
     </aside>
   );
@@ -184,6 +196,10 @@ export function FylketITall({ fylke, navn }: { fylke: string; navn: string }) {
   const plass = rangert.find((r) => r.enhet === enhet);
   return (
     <section class="st-fylket" aria-labelledby="st-fylket-tittel">
+      <p class="st-boks-merke">
+        <Ikon navn="sammenlign" class="ikon-liten" />
+        {t('statistikk.merke')}
+      </p>
       <h2 class="liten-overskrift" id="st-fylket-tittel">
         {t('statistikk.iTall', { sted: navn })}
       </h2>
@@ -222,28 +238,6 @@ function useSted(d: Statistikk | null | 'feil', fylke: string | null): { d: Stat
   if (d === null || d === 'feil') return null;
   const enhet = fylke && d.enheter[`F${fylke}`] ? `F${fylke}` : 'L';
   return { d, enhet };
-}
-
-/** Inntak: søkerne i fylket i år, endringen fra i fjor og hvor mange som søkte læreplass. */
-export function SokereBoks({ fylke }: { fylke: string | null }) {
-  const { t } = useTekst();
-  const s = useSted(useStatistikk(), fylke);
-  if (!s) return null;
-  const { d, enhet } = s;
-  const alle = d.sokere.alle[enhet];
-  const aar = d.sokere.aar;
-  return (
-    <Tallboks tittel={t('statistikk.boks.inntak', { sted: stedsnavn(d, enhet, t) })} fylke={fylke}>
-      <p>
-        {t('statistikk.boks.inntakTekst', {
-          antall: tekstFor(t, sisteVerdi(alle)),
-          aar: String(aar.at(-1) ?? ''),
-          endring: endringTekst(t, sisteVerdi(alle), forrigeVerdi(alle), aar.at(-2) ?? '') ?? '',
-          laereplass: tekstFor(t, sisteVerdi(d.sokere.laereplass[enhet])),
-        })}
-      </p>
-    </Tallboks>
-  );
 }
 
 /** Lærlinger og kandidater: andelen som fikk læreplass og de løpende lærekontraktene. */

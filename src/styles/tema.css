@@ -32,6 +32,8 @@
   --farge-feil: var(--p-roed-700);
   --farge-feil-flate: var(--p-roed-100);
   --farge-info-flate: var(--p-blaa-100);
+  /* Tallboksene fra Videregående i tall på andre sider (avgjørelse 091): en svak nyanse av temafargen. */
+  --farge-itall-flate: color-mix(in srgb, var(--farge-flate-2) 45%, var(--farge-flate));
   /* Sidekolonnen på forsiden på skrivebord: en lys nyanse av temafargen (eier 05.10.2026). */
   --farge-sidekolonne: color-mix(in srgb, var(--farge-flate-2) 55%, var(--farge-bakgrunn));
   --farge-fokus: var(--p-fokus-lys);

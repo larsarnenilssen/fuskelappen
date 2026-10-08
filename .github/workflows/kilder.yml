@@ -107,6 +107,7 @@ jobs:
           npm run hent:inntak || status=1
           npm run hent:elevundersokelsen || status=1
           npm run hent:statistikk || status=1
+          npm run hent:ssb || status=1
           exit $status
       # Lageret lagres også når Grep ble stoppet, så neste kjøring fortsetter der denne slapp. Grenen har bare én
       # commit, som skrives over.

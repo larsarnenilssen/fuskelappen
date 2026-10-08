@@ -284,8 +284,6 @@ export default function Fagbrev({ sporring }: SideProps) {
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.fagbrev.innledning')} />
       </p>
-      {/* Læreplass i fylket (eier 07.10.2026, avgjørelse 080). */}
-      <LaereplassBoks fylke={innstillinger.fylke} />
       <div class="fb-faner" role="tablist" aria-label={t('opplaeringslop.fagbrev.faner')}>
         {FANER.map((f) => (
           <button key={f} type="button" role="tab" id={`fb-fane-${f}`} class="fb-fane" aria-selected={valg.fane === f} aria-controls="fb-panel" onClick={() => endre({ fane: f })}>
@@ -304,6 +302,8 @@ export default function Fagbrev({ sporring }: SideProps) {
           </>
         )}
       </div>
+      {/* Læreplass i fylket, nederst etter sidens eget innhold (avgjørelse 080 og 091). */}
+      <LaereplassBoks fylke={innstillinger.fylke} />
     </div>
   );
 }

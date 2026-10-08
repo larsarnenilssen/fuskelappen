@@ -1612,13 +1612,35 @@ kilder:
     url: https://dataportal.ssb.no/classifications/104/codes
     type: side
     niva: nasjonal
-    lisens: NLOD 2.0
+    lisens: CC BY 4.0
     sjekkmetode: ingen
     aktiv: false
     godkjent: 2026-10-08
     godkjent_fingeravtrykk: null
     faser: [0]
-    merknad: Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.
+    merknad: >-
+      Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd. SSB publiserer under CC BY 4.0
+      (lisensen rettet etter beskjed fra eier 08.10.2026). Krediteres under «Om».
+
+  - id: ssb-statistikkbanken
+    navn: Statistikkbanken, Statistisk sentralbyrå
+    kortnavn: SSB
+    utgiver: Statistisk sentralbyrå
+    url: https://www.ssb.no/statbank
+    type: data
+    niva: nasjonal
+    lisens: CC BY 4.0
+    sjekkmetode: ssb
+    aktiv: true
+    godkjent: 2026-10-08
+    godkjent_fingeravtrykk: null
+    faser: [8]
+    merknad: >-
+      Ungdomskullene og framskrivingen (07459 og 14746), unge utenfor arbeid og utdanning (13563 og 13556),
+      grunnskolepoeng (07495), KOSTRA for videregående (12399 og 12609), lærerne i videregående (12091 og 12697) og
+      16–18-åringer i videregående (12274 og 09382), for landet og fylkene. Hentes hver uke med npm run hent:ssb fra
+      PxWebApi v2 (data.ssb.no) til data/statistikk/ssb.json (avgjørelse 090). Godkjent av eier 08.10.2026. Kreditering:
+      «Statistisk sentralbyrå (SSB)», CC BY 4.0, under «Om» og i hver figur.
 
   # Nyhetskildene (fase 7b, avgjørelse 084). Hentes hver dag til data/nyheter/nyheter.json. Bare tittel, dato, lenke og
   # ingress; appen lenker til saken hos kilden. Hvordan hver kilde hentes, står i content/nyheter/kilder.yaml.

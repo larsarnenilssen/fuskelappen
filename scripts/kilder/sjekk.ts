@@ -345,6 +345,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkHentet('Elevundersøkelsen', 'elevundersokelsen-endringer.json', [{ navn: 'Resultatene', fil: 'data/elevundersokelsen/resultater.json', hent: del(null) }]);
       case 'statistikk':
         return sjekkHentet('Statistikkbanken', 'statistikk-endringer.json', [{ navn: 'Nøkkeltallene', fil: 'data/statistikk/statistikk.json', hent: del(null) }]);
+      case 'ssb':
+        return sjekkHentet('SSB', 'ssb-endringer.json', [{ navn: 'Tallene', fil: 'data/statistikk/ssb.json', hent: del(null) }]);
       case 'nor':
         return sjekkHentet('NOR', 'nor-endringer.json', [{ navn: 'Opplæringskontorene', fil: 'data/udir/opplaeringskontor.json', hent: del(null) }]);
       case 'eksamen':

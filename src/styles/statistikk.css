@@ -142,7 +142,7 @@
 }
 
 .st-rad-landet .st-stolpe {
-  background: var(--farge-tekst-dempet);
+  background: var(--p-blaa-500);
 }
 
 /* Landet: en stiplet strek tvers over stolpene. */
@@ -281,18 +281,40 @@
 }
 
 .st-fylket {
-  margin-bottom: var(--rom-5);
+  margin: var(--rom-5) 0;
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
+  border-left: 4px solid var(--serie-1);
+  border-radius: var(--radius-m);
+  background: var(--farge-itall-flate);
 }
 
-/* Tallboksen på sidene der tallene hører hjemme. */
-/* Samme avstand som mellom delene ellers på sidene (eier 07.10.2026). */
+/* Tallboksen på sidene der tallene er nyttige (avgjørelse 091): en lys flate i fargen til Videregående i tall, en strek
+   til venstre og merkelappen øverst, så den skiller seg fra sidens eget innhold. Samme avstand som mellom delene ellers
+   på sidene (eier 07.10.2026). */
 .st-boks {
-  margin: var(--rom-5) 0;
+  margin: var(--rom-6) 0 var(--rom-5);
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
   border-left: 4px solid var(--serie-1);
   border-radius: var(--radius-m);
-  background: var(--farge-flate);
+  background: var(--farge-itall-flate);
+}
+
+/* Merkelappen «Videregående i tall» over tittelen, i tallboksene og over tallene på fylkessiden. */
+.st-boks-merke {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--farge-merke);
+}
+
+.st-boks .fg-hovedtall-rad {
+  margin-bottom: var(--rom-1);
 }
 
 /* Etter en kalkulator: samme avstand som mellom delene i kalkulatoren, f.eks. fra «Sjekk fraværet» til kortet under. */
@@ -504,7 +526,7 @@
   height: 0.75rem;
   border: 2px solid var(--farge-flate);
   border-radius: 50%;
-  background: var(--farge-tekst-dempet);
+  background: var(--p-blaa-500);
   transform: translate(-50%, -50%);
 }
 
@@ -579,3 +601,500 @@
 }
 
 
+
+/* ---------- Figurer med tall fra SSB (SKISSE 08.10.2026) ----------
+   Linjediagram med historikk og framskriving, punktskala, stablet stolpe og store hovedtall. Valgt fylke har
+   seriefargen, landet og de andre er grå, og framskrivingen er stiplet på en lys flate. */
+.fg-linje {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 14rem;
+  overflow: visible;
+}
+
+.fg-rutenett {
+  stroke: var(--farge-linje);
+  stroke-width: 1;
+}
+
+.fg-akse,
+.fg-sluttverdi {
+  fill: var(--farge-tekst-dempet);
+  font-size: 9px;
+}
+
+.fg-sluttverdi {
+  font-weight: 700;
+}
+
+.fg-framskrevet {
+  fill: var(--farge-flate-2);
+  opacity: 0.6;
+}
+
+.fg-flate {
+  fill: var(--serie-1);
+  opacity: 0.08;
+}
+
+.fg-serie polyline {
+  fill: none;
+  stroke: var(--farge-tekst-dempet);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.fg-serie circle {
+  fill: var(--farge-tekst-dempet);
+}
+
+.fg-valgt polyline {
+  stroke: var(--serie-1);
+  stroke-width: 2.5;
+}
+
+.fg-valgt circle {
+  fill: var(--serie-1);
+}
+
+.fg-valgt .fg-sluttverdi {
+  fill: var(--farge-tekst);
+}
+
+.fg-serie .fg-stiplet {
+  stroke-dasharray: 4 3;
+}
+
+.fg-forklaring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-4);
+  margin: var(--rom-2) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.fg-forklaring li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.fg-forklaring b {
+  color: var(--farge-tekst);
+}
+
+.fg-strek {
+  display: inline-block;
+  width: 1.25rem;
+  height: 0;
+  border-top: 2.5px solid var(--serie-1);
+}
+
+.fg-strek-gra {
+  border-top: 1.5px solid var(--farge-tekst-dempet);
+}
+
+.fg-strek-stiplet {
+  border-top-style: dashed;
+}
+
+/* Hovedtall øverst i en figur: stort tall, etikett og en kort tekst. */
+.fg-hovedtall-rad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-3) var(--rom-6);
+  margin: 0 0 var(--rom-3);
+}
+
+.fg-hovedtall {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.fg-hovedtall-tall {
+  font-size: var(--str-xxl);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.fg-ned .fg-hovedtall-tall {
+  color: var(--diagram-tekst-motetid);
+}
+
+.fg-opp .fg-hovedtall-tall {
+  color: var(--diagram-tekst-annen);
+}
+
+.fg-hovedtall-etikett {
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.fg-hovedtall-under {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+/* Punktskala: fylkene som punkter på en felles skala. */
+.fg-punkter {
+  display: grid;
+  gap: 0.375rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fg-punktrad {
+  display: grid;
+  grid-template-columns: minmax(0, 8rem) minmax(0, 1fr) 2.75rem;
+  gap: var(--rom-2);
+  align-items: center;
+  font-size: var(--str-s);
+}
+
+.fg-punktnavn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fg-punktspor {
+  position: relative;
+  height: 0.75rem;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.fg-punkt {
+  position: absolute;
+  top: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: -0.375rem 0 0 -0.375rem;
+  border-radius: 50%;
+  background: var(--p-blaa-500);
+}
+
+.fg-valgt .fg-punkt {
+  width: 1rem;
+  height: 1rem;
+  margin: -0.5rem 0 0 -0.5rem;
+  background: var(--serie-1);
+  box-shadow: 0 0 0 2px var(--farge-flate);
+}
+
+.fg-valgt .fg-punktnavn,
+.fg-valgt .fg-punkttall {
+  font-weight: 700;
+}
+
+.fg-punktlandet {
+  position: absolute;
+  top: -0.375rem;
+  bottom: -0.375rem;
+  border-left: 2px dashed var(--farge-tekst);
+}
+
+.fg-punkttall {
+  text-align: right;
+}
+
+/* Stablet stolpe: andeler som summerer til 100. */
+.fg-stablet-stolpe {
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: var(--radius-s);
+}
+
+.fg-del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2px;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  color: var(--diagram-etikett);
+  white-space: nowrap;
+}
+
+.fg-del-0 {
+  background: var(--p-graa-400);
+  /* Mørk tekst på den lyse grå delen, også i mørk visning (kontrast). */
+  color: var(--p-blekk);
+}
+
+.fg-del-1 {
+  background: var(--p-graa-500);
+}
+
+.fg-del-2 {
+  background: var(--p-blaa-500);
+}
+
+/* Den fremhevede delen (f.eks. lærerne som er 60 år eller eldre) i en mørk rav, så den hvite teksten har nok kontrast
+   (WCAG AA). Oransje (serie-2) har for lav kontrast mot både hvit og mørk tekst i små bokstaver. */
+.fg-del-3,
+.fg-del-fremhevet {
+  background: var(--p-rav-700);
+  color: var(--diagram-etikett);
+}
+
+.fg-farge {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+}
+
+/* «Utforsk tallene»: temakortene til temasidene (eier 08.10.2026, avgjørelse 090). De er lenker og skal ikke se ut som
+   nøkkeltallene over: mer luft og en strek over, en lys flate i temafargen, ikonet i en fylt sirkel og pilen til høyre.
+   De to tallene står alltid side om side, med tallet over teksten. */
+.st-utforsk {
+  margin: var(--rom-5) 0 var(--rom-6);
+  padding-top: var(--rom-4);
+  border-top: var(--strek) solid var(--farge-kant);
+}
+
+.st-temaer {
+  display: grid;
+  gap: var(--rom-3);
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 48rem) {
+  .st-temaer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.st-tema {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-3);
+  height: 100%;
+  padding: var(--rom-4);
+  border: var(--strek) solid transparent;
+  border-radius: var(--radius-l, var(--radius-m));
+  background: var(--farge-flate-2);
+  color: inherit;
+  text-decoration: none;
+}
+
+.st-tema:hover {
+  border-color: var(--farge-merke);
+}
+
+.st-tema-topp {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: var(--rom-3);
+  align-items: center;
+}
+
+.st-tema-ikon {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+}
+
+.st-tema-tittel {
+  display: block;
+  font-weight: 700;
+  color: var(--farge-lenke);
+}
+
+.st-tema-tekst {
+  display: block;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.st-tema-pil {
+  color: var(--farge-lenke);
+}
+
+.st-tema-tall {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--rom-3);
+  margin-top: auto;
+  padding-top: var(--rom-3);
+  border-top: var(--strek) solid var(--farge-kant);
+}
+
+.st-tema-tall > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.st-tema-tall b {
+  font-weight: 800;
+  font-size: var(--str-l);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.st-tema-tall > span > span {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+/* Fanene mellom temaene: de samme pillene som ellers i appen (frist-filter). */
+.st-temafaner ul {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+/* Kilden som et lite merke: «SSB» eller «Udir». */
+.st-kilde-merke {
+  display: inline-block;
+  margin-left: var(--rom-1);
+  padding: 0 var(--rom-1);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-s);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--farge-tekst-dempet);
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+.fg-mellomrom {
+  margin-top: var(--rom-4);
+}
+
+/* «Kort fortalt» øverst på temasidene: tallet først og stort i en egen kolonne, teksten ved siden av og kilden til slutt.
+   Tallene står under hverandre, så de kan leses nedover som en liste (eier 08.10.2026). */
+.st-kort {
+  margin: 0 0 var(--rom-5);
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
+  border-left: 4px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate-2);
+}
+
+.st-kort-tittel {
+  margin: 0 0 var(--rom-3);
+  font-size: var(--str-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--farge-tekst-dempet);
+}
+
+.st-kort ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-kort li {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: var(--rom-3);
+  align-items: baseline;
+  padding: var(--rom-2) 0;
+}
+
+.st-kort li + li {
+  border-top: var(--strek) solid var(--farge-kant);
+}
+
+.st-kort-tall {
+  font-weight: 800;
+  font-size: var(--str-l);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.st-kort-tekst {
+  font-size: var(--str-s);
+}
+
+@media (min-width: 64rem) {
+  .st-kort ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--rom-5);
+  }
+
+  .st-kort li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--rom-1);
+    padding: 0;
+  }
+
+  .st-kort li + li {
+    border-top: 0;
+    padding-left: var(--rom-5);
+    border-left: var(--strek) solid var(--farge-kant);
+  }
+}
+
+.st-om-tallene p {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
+.st-om-tallene .st-kilde-merke {
+  margin: 0 var(--rom-1) 0 0;
+}
+
+/* Lange navn (f.eks. «Med innvandringsbakgrunn») står på en egen linje over stolpen. */
+.fg-brede-navn .st-rad {
+  grid-template-columns: minmax(0, 1fr) auto;
+  row-gap: var(--rom-1);
+  margin-bottom: var(--rom-2);
+}
+
+.fg-brede-navn .st-rad-navn {
+  grid-column: 1 / -1;
+  white-space: normal;
+}
+
+/* Valget mellom to visninger i en figur, f.eks. fylkene og etter bakgrunn: de samme pillene som fanene. */
+.st-valg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: var(--rom-3) 0;
+}
+
+.st-valg button {
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  font-size: var(--str-s);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.st-valg button[aria-pressed='true'] {
+  border-color: var(--farge-aksent);
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+/* I høyre kolonne (fylkessiden) er det ikke plass til fire fliser i bredden: to og to. */
+.to-kolonner-side .st-fliser {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}

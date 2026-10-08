@@ -92,7 +92,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet) | Visma | nasjonal | side | Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | ingen | 08.10.2026 | 1 |
 | [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | Visma | nasjonal | side | Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke. | ingen | 08.10.2026 | 1 |
 | [Nasjonalt skoleregister (NSR)](https://nsr.udir.no/innhold/om) | Utdanningsdirektoratet | nasjonal | data | NLOD 2.0 | nsr | 08.10.2026 | 0 |
-| [Standard for fylkesinndeling](https://dataportal.ssb.no/classifications/104/codes) | Statistisk sentralbyrå | nasjonal | side | NLOD 2.0 | ingen | 08.10.2026 | 0 |
+| [Standard for fylkesinndeling](https://dataportal.ssb.no/classifications/104/codes) | Statistisk sentralbyrå | nasjonal | side | CC BY 4.0 | ingen | 08.10.2026 | 0 |
+| [Statistikkbanken, Statistisk sentralbyrå](https://www.ssb.no/statbank) | Statistisk sentralbyrå | nasjonal | data | CC BY 4.0 | ssb | 08.10.2026 | 8 |
 | [Nyheter fra Kunnskapsdepartementet (RSS)](https://www.regjeringen.no/no/dep/kd/id586/) | Kunnskapsdepartementet | nasjonal | data | NLOD 2.0 | nyheter | 08.10.2026 | 7 |
 | [Siste nytt, Utdanningsdirektoratet](https://www.udir.no/om-udir/siste-nytt/) | Utdanningsdirektoratet | nasjonal | data | NLOD 2.0 | nyheter | 08.10.2026 | 7 |
 | [Nyheter fra Skolelederforbundet (RSS)](https://www.skolelederforbundet.no/) | Skolelederforbundet | nasjonal | data | Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken. | nyheter | 08.10.2026 | 7 |
@@ -194,7 +195,8 @@ Sender udir.no hentingen videre til en annen adresse, f.eks. «tidligere rundskr
 - **inschool-periodebeskjeftigelse:** Bakgrunn for perioder i Arbeidsplan (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
 - **inschool-fastlonn:** Bakgrunn for lønn i en periode i Arbeidsplan: lønnsprosenten for perioden sendes til lønnssystemet, og start- og sluttdato for perioden settes på lønnsradene. Lønn for deler av en måned (arbeidsdager ÷ 21,67) er praksis i lønnssystemet slik eier har beskrevet den 30.09.2026, og står ikke i artikkelen.
 - **udir-nsr:** Skolelisten i innstillingene. Oppdateres automatisk; varsel bare ved feil.
-- **ssb-fylkesinndeling:** Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.
+- **ssb-fylkesinndeling:** Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd. SSB publiserer under CC BY 4.0 (lisensen rettet etter beskjed fra eier 08.10.2026). Krediteres under «Om».
+- **ssb-statistikkbanken:** Ungdomskullene og framskrivingen (07459 og 14746), unge utenfor arbeid og utdanning (13563 og 13556), grunnskolepoeng (07495), KOSTRA for videregående (12399 og 12609), lærerne i videregående (12091 og 12697) og 16–18-åringer i videregående (12274 og 09382), for landet og fylkene. Hentes hver uke med npm run hent:ssb fra PxWebApi v2 (data.ssb.no) til data/statistikk/ssb.json (avgjørelse 090). Godkjent av eier 08.10.2026. Kreditering: «Statistisk sentralbyrå (SSB)», CC BY 4.0, under «Om» og i hver figur.
 - **regjeringen-kd-nyheter:** Alle publiseringer fra departementet (RSS). Filtreres på ord for videregående, fordi KD også har barnehage, høyere utdanning og forskning.
 - **udir-siste-nytt:** Nyhetslisten (første side, ti saker). Udir har ingen RSS. Filtreres på ord for videregående.
 - **skolelederforbundet-nyheter:** Interesseorganisasjon. Medlemstilbud tas ikke med.

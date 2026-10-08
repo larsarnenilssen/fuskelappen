@@ -287,6 +287,7 @@ export const nn: Tekster = {
       elevundersokelsen: 'Resultata frå Elevundersøkinga og nøkkeltala frå statistikkbanken til Udir: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
       utdanning: 'Yrka og utdanningsbeskrivingane i Opplæringstilbod er baserte på opne data frå utdanning.no og er underlagde Norsk lisens for offentlege data (NLOD). Teksten blir halden ved like på utdanning.no.',
       ndla: 'Namna på faga på NDLA er frå Nasjonal digital læringsarena (NDLA), lisensierte under Creative Commons Namngjeving 4.0 (CC BY 4.0).',
+      ssb: 'Tala frå Statistisk sentralbyrå (SSB) i Vidaregåande i tal og fylkeslista er lisensierte under Creative Commons Namngjeving 4.0 (CC BY 4.0). Appen har lagt saman og rekna om nokre av tala, til dømes delane og 16–18-åringane.',
       ccby: 'Les CC BY 4.0',
       nlod: 'Les NLOD 2.0',
     },
@@ -494,7 +495,7 @@ export const nn: Tekster = {
     },
     statistikk: {
       navn: 'Vidaregåande i tal',
-      beskrivelse: 'Søkjarar, elevar, læreplass, gjennomføring og eksamen.',
+      beskrivelse: 'Søkjarar, elevar, læreplass og gjennomføring frå Udir. Ungdomskull, lærarar og meir frå SSB.',
     },
     fylker: {
       navn: 'Fylka',

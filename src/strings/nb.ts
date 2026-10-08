@@ -287,6 +287,7 @@ export const nb = {
       elevundersokelsen: 'Resultatene fra Elevundersøkelsen og nøkkeltallene fra Udirs statistikkbank: Inneholder data under NLOD, tilgjengeliggjort på data.udir.no.',
       utdanning: 'Yrkene og utdanningsbeskrivelsene i Opplæringstilbud er basert på åpne data fra utdanning.no og er underlagt Norsk lisens for offentlige data (NLOD). Teksten vedlikeholdes på utdanning.no.',
       ndla: 'Navnene på fagene på NDLA er fra Nasjonal digital læringsarena (NDLA), lisensiert under Creative Commons Navngivelse 4.0 (CC BY 4.0).',
+      ssb: 'Tallene fra Statistisk sentralbyrå (SSB) i Videregående i tall og fylkeslisten er lisensiert under Creative Commons Navngivelse 4.0 (CC BY 4.0). Appen har lagt sammen og regnet om noen av tallene, f.eks. andelene og 16–18-åringene.',
       ccby: 'Les CC BY 4.0',
       nlod: 'Les NLOD 2.0',
     },
@@ -494,7 +495,7 @@ export const nb = {
     },
     statistikk: {
       navn: 'Videregående i tall',
-      beskrivelse: 'Søkere, elever, læreplass, gjennomføring og eksamen.',
+      beskrivelse: 'Søkere, elever, læreplass og gjennomføring fra Udir. Ungdomskull, lærere og mer fra SSB.',
     },
     fylker: {
       navn: 'Fylkene',

@@ -16,6 +16,7 @@ av skriptene i `scripts/` (kildesjekken, avgjørelse 018) og endres bare av dem.
 | `eksamen.ts` | udir.no og fylkenes sider | eksamensdatoene, hentet i januar og august (avgjørelse 059) | `lastEksamensdatoer` |
 | `elevundersokelsen.ts` | Udirs statistikkbank | resultatene fra Elevundersøkelsen for landet, fylkene og skolene, to skoleår (avgjørelse 077) | `lastElevundersokelsen` |
 | `statistikk.ts` | Udirs statistikkbank | søkere, elever, formidling, lærekontrakter, fravær, gjennomføring og eksamenskarakterer for landet, fylkene og skolene (avgjørelse 080) | `lastStatistikk` |
+| `statistikk.ts` | SSBs statistikkbank | ungdomskullene og framskrivingen, unge utenfor arbeid og utdanning, grunnskolepoeng, KOSTRA, lærerne og 16–18-åringer i videregående for landet og fylkene (avgjørelse 090) | `lastSsb` |
 | `kalender.ts` | Lovdata | skoleruta fra fylkenes forskrifter og vedtatte endringer i regelverket, til kalenderen (avgjørelse 066) | `lastSkoleruter`, `lastKommende` |
 | `skolear.ts` | – | skoleåret og valget av fag- og timefordeling etter dato | `iDag`, `skolearFor`, `velgFordeling`, `fordelingsfil` |
 
