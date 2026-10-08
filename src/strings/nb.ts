@@ -15,6 +15,7 @@ import { skolemiljoNb } from './moduler/skolemiljo.nb.ts';
 import { elevundersokelsenNb } from './moduler/elevundersokelsen.nb.ts';
 import { tilretteleggingNb } from './moduler/tilrettelegging.nb.ts';
 import { vurderingNb } from './moduler/vurdering.nb.ts';
+import { lokaleReglerNb } from './moduler/lokaleregler.nb.ts';
 
 export const nb = {
   app: {
@@ -245,6 +246,7 @@ export const nb = {
     ok: 'Innstillingene og favorittene fra den gamle adressen er tatt med.',
     feil: 'Innstillingene fra den gamle adressen kunne ikke leses. Last ned en kopi der, og hent den inn her.',
   },
+  lokaleRegler: lokaleReglerNb,
   tilbakemelding: {
     tittel: 'Tilbakemelding',
     tekst: 'Har du et spørsmål, et innspill eller funnet en feil? Send en e-post. Skriv ikke navn eller andre personopplysninger om elever eller ansatte.',

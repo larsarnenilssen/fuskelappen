@@ -15,6 +15,7 @@ import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
 import { elevundersokelsenNn } from './moduler/elevundersokelsen.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
+import { lokaleReglerNn } from './moduler/lokaleregler.nn.ts';
 
 export const nn: Tekster = {
   app: {
@@ -245,6 +246,7 @@ export const nn: Tekster = {
     ok: 'Innstillingane og favorittane frå den gamle adressa er tekne med.',
     feil: 'Innstillingane frå den gamle adressa kunne ikkje lesast. Last ned ein kopi der, og hent han inn her.',
   },
+  lokaleRegler: lokaleReglerNn,
   tilbakemelding: {
     tittel: 'Tilbakemelding',
     tekst: 'Har du eit spørsmål, eit innspel eller funne ein feil? Send ein e-post. Skriv ikkje namn eller andre personopplysningar om elevar eller tilsette.',

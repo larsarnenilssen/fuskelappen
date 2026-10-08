@@ -28,9 +28,19 @@ const utviklingsruter: Rute[] =
   ? [{ sti: '/utvikling/komponenter', tittel: 'utvikling.tittel', side: () => import('./sider/Komponentkatalog.tsx') }]
   : [];
 
+// Skissen til de lokale reglene (fase 9, docs/arbeidsordrer/fase-9-forslag.md) finnes også i testversjonen, men ikke i appen.
+const skisseruter: Rute[] =
+  import.meta.env.MODE !== 'production' || __TESTVERSJON__
+  ? [
+      { sti: '/innstillinger/lokal-regel', tittel: 'lokaleRegler.skjema.tittelNy', side: () => import('./sider/LokalRegel.tsx') },
+      { sti: '/utvikling/lokale-regler', tittel: 'lokaleRegler.skisse.tittel', side: () => import('./sider/LokaleReglerSkisse.tsx') },
+    ]
+  : [];
+
 export const ruter: readonly Rute[] = [
   ...kjerne,
   ...utviklingsruter,
+  ...skisseruter,
   ...alleRuter().map(({ modul, rute }) => ({ ...rute, modul: modul.id })),
 ];
 
