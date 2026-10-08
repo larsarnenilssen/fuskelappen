@@ -541,6 +541,27 @@ main {
   margin-top: var(--rom-5);
 }
 
+/* Delene på oversiktene i modulene har en strek over og en fet overskrift i tekstfarge (fase 8b, docs/DESIGN.md). */
+.lop-del > .liten-overskrift {
+  margin: 0 0 var(--rom-3);
+  padding-top: var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+/* I to kolonner står den første delen i hver kolonne øverst, uten luft over. */
+@media (min-width: 64rem) {
+  .to-kolonner-hoved > .lop-del:first-child,
+  .to-kolonner-side > .lop-del:first-child {
+    margin-top: 0;
+  }
+
+  /* Inngangene står under hverandre i kolonnene, ikke to og to. */
+  .to-kolonner .lop-innganger,
+  .to-kolonner-side .veiviser-innganger {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .lop-innganger {
   display: grid;
   gap: var(--rom-3);
@@ -5687,6 +5708,10 @@ div + .veiviser-svargruppe {
   gap: var(--rom-3);
 }
 
+.veiviser-inngang-topp > .ikon {
+  color: var(--farge-tekst-dempet);
+}
+
 .veiviser-inngang-tittel {
   flex: 1;
   min-height: calc(2em * var(--linjehoyde));
@@ -6161,10 +6186,14 @@ button.frist-stripe-celle:hover {
 
 
 /* Kortet på oversiktssiden: lenke til tidslinjen med den neste fristen. */
+/* Et kort som lenker til en side (fase 8b, docs/DESIGN.md): ikonet i en myk sirkel til venstre, tittelen i tekstfarge
+   og teksten dempet under, og pilen til høyre, som modulene på forsiden. Tittelen er `display: contents`, så ikonet og
+   teksten i den står i hver sin kolonne. */
 .frist-inngang {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--rom-2);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.125rem var(--rom-3);
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
@@ -6178,18 +6207,27 @@ button.frist-stripe-celle:hover {
 }
 
 .frist-inngang-tittel {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
+  display: contents;
   font-weight: 700;
-  color: var(--farge-lenke);
+  color: var(--farge-tekst);
+}
+
+.frist-inngang-tittel > .ikon {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  box-sizing: content-box;
+  padding: var(--rom-2);
+  border-radius: 50%;
+  background: var(--farge-flate-2);
+  color: var(--farge-merke);
 }
 
 .frist-inngang-neste {
   display: flex;
   flex-direction: column;
-  grid-column: 1;
+  grid-column: 2;
   font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
 }
 
 .frist-inngang-etikett {
@@ -6202,13 +6240,14 @@ button.frist-stripe-celle:hover {
 
 .frist-inngang-tid {
   font-weight: 700;
+  color: var(--farge-tekst);
 }
 
 .frist-inngang-pil {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1 / span 2;
   align-self: center;
-  color: var(--farge-lenke);
+  color: var(--farge-tekst-dempet);
 }
 
 @media (min-width: 40rem) {

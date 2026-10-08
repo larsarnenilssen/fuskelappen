@@ -1,14 +1,7 @@
-/* Skissen til designløftet (fase 8b, docs/DESIGN.md). Lastes bare i utvikling, i testene og i testversjonen
-   (src/app/designskisse.ts). Stilene under «Ny stil» gjelder det som står inni `.ny-design`: «Etter» på skissesiden, og
-   hele appen når bryteren på skissesiden er på. Når eier har godkjent skissen, flyttes de inn i base.css pakke for pakke,
-   og de gamle stilene fjernes. Bare fargene fra tokens.css og tema.css. */
+/* Skissesiden til designløftet (fase 8b, docs/DESIGN.md), bare i utvikling, i testene og i testversjonen. Stilene for
+   «Etter» står i base.css fra pakke 1–3, så «Før» og «Etter» er nå like. Siden fjernes i oppryddingen (pakke 7). */
 
 /* ---------- Skissesiden ---------- */
-.designskisse .vippe {
-  margin-top: var(--rom-4);
-  margin-bottom: var(--rom-1);
-}
-
 .ds-monster {
   margin-top: var(--rom-6);
   padding-top: var(--rom-4);
@@ -141,55 +134,3 @@
   border: var(--strek) dashed var(--farge-kant);
   color: var(--farge-tekst-dempet);
 }
-
-/* ================================ Ny stil ================================ */
-
-/* Kortene i skjemaene, valgknappene og resultatkortet står i base.css fra pakke 1 (kalkulatorene). */
-
-/* ---------- Flater og innganger: oversiktene i modulene ----------
-   Delene får en strek over og en fet overskrift i tekstfarge. Inngangene har ikonet i en myk sirkel og tittelen i
-   tekstfarge, som modulene på forsiden. */
-.ny-design .lop-del > .liten-overskrift {
-  margin: 0 0 var(--rom-3);
-  padding-top: var(--rom-3);
-  border-top: var(--strek) solid var(--farge-linje);
-  font-size: var(--str-m);
-}
-
-.ny-design .frist-inngang {
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  column-gap: var(--rom-3);
-  row-gap: 0.125rem;
-  align-items: center;
-}
-
-.ny-design .frist-inngang-tittel {
-  display: contents;
-  color: var(--farge-tekst);
-}
-
-.ny-design .frist-inngang-tittel > .ikon {
-  grid-row: 1 / span 2;
-  grid-column: 1;
-  box-sizing: content-box;
-  padding: var(--rom-2);
-  border-radius: 50%;
-  background: var(--farge-flate-2);
-  color: var(--farge-merke);
-}
-
-.ny-design .frist-inngang-neste {
-  grid-column: 2;
-  color: var(--farge-tekst-dempet);
-}
-
-.ny-design .frist-inngang-pil {
-  grid-column: 3;
-  color: var(--farge-tekst-dempet);
-}
-
-.ny-design .veiviser-inngang-topp > .ikon {
-  color: var(--farge-tekst-dempet);
-}
-
-/* Delene på fagarket og nøkkeltallene står i base.css fra pakke 2 (fag og læreplaner). */

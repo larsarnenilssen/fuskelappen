@@ -6,6 +6,7 @@ export const vurderingNn = {
   delFag: 'Vurdering i fag',
   delFravaer: 'Fråvær',
   delOrden: 'Orden og oppførsel',
+  delVeiviser: 'Vegvisar',
   ikkeFunnet: 'Fann ikkje vegvisaren.',
   underveisSlutt: {
     tittel: 'Undervegs- og sluttvurdering',
