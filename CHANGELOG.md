@@ -6,7 +6,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Lagt til
 
-- **Nye begreper:** Læreplan i fag, Kompetansemål, Fagkode, Årstimetall, Vurderingsordning, Sidemål, Egenmelding, Tilbudsstruktur, Instruktør og faglig leder, Rådgiving, Oppfølgingstjenesten og Elevråd. Ordene lenker til begrepene der de står i teksten.
+- **Nye begreper:** Læreplan i fag, Kompetansemål, Fagkode, Årstimetall, Vurderingsordning, Sidemål, Egenmelding, Tilbudsstruktur, Instruktør, Rådgiving, Oppfølgingstjenesten og Elevråd. Ordene lenker til begrepene der de står i teksten.
 
 ### Endret
 

@@ -512,20 +512,18 @@
 
 - id: instruktor
   type: begrep
-  tittel: { nb: Instruktør og faglig leder, nn: Instruktør og fagleg leiar }
-  lenkeord: { nb: ["instruktør", "faglig leder"], nn: ["instruktør", "fagleg leiar", "faglig leder"] }
+  tittel: { nb: Instruktør, nn: Instruktør }
   tekst:
-    nb: En lærebedrift skal ha en eller flere faglig kvalifiserte personer som har ansvaret for opplæringen, og en eller flere instruktører som gir den. Den som har ansvaret, kalles ofte faglig leder, men loven bruker ikke det ordet. Instruktøren følger lærlingen i det daglige, har jevnlig dialog med lærlingen om utviklingen og gir halvårsvurderingen til lærlinger, lærekandidater og praksisbrevkandidater. Det er lærebedriften som har ansvaret for opplæringen, også når deler av den skjer i en annen bedrift.
-    nn: Ei lærebedrift skal ha ein eller fleire fagleg kvalifiserte personar som har ansvaret for opplæringa, og ein eller fleire instruktørar som gir henne. Den som har ansvaret, blir ofte kalla fagleg leiar, men lova bruker ikkje det ordet. Instruktøren følgjer lærlingen i det daglege, har jamleg dialog med lærlingen om utviklinga og gir halvårsvurderinga til lærlingar, lærekandidatar og praksisbrevkandidatar. Det er lærebedrifta som har ansvaret for opplæringa, også når delar av ho skjer i ei anna bedrift.
+    nb: En instruktør gir opplæringen i lærebedriften. Lærebedriften skal ha en eller flere instruktører, og i tillegg en eller flere faglig kvalifiserte personer som har ansvaret for opplæringen. Instruktøren har jevnlig dialog med lærlingen om hvordan lærlingen utvikler seg, og gir halvårsvurderingen til lærlinger, lærekandidater og praksisbrevkandidater. Det er lærebedriften som har ansvaret for opplæringen, også når deler av den skjer i en annen bedrift.
+    nn: Ein instruktør gir opplæringa i lærebedrifta. Lærebedrifta skal ha ein eller fleire instruktørar, og i tillegg ein eller fleire fagleg kvalifiserte personar som har ansvaret for opplæringa. Instruktøren har jamleg dialog med lærlingen om korleis lærlingen utviklar seg, og gir halvårsvurderinga til lærlingar, lærekandidatar og praksisbrevkandidatar. Det er lærebedrifta som har ansvaret for opplæringa, også når delar av ho skjer i ei anna bedrift.
   kilder:
     - { id: opplaeringslova, punkt: "§ 7-6 første og andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-6" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-6 andre ledd (dialog med instruktør)", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-13 fjerde ledd (halvårsvurderingen)", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
   kontrollert: null
   kontrollsporsmal:
-    - "«Faglig leder» står ikke i opplæringslova av 2023. Er det riktig at ordet fortsatt er vanlig i fylkeskommunene og bransjene, så det bør stå i tittelen?"
-    - "Er «følger lærlingen i det daglige» en dekkende beskrivelse av instruktøren, når loven bare sier at instruktøren gir opplæring?"
-  stikkord: [instruktør, faglig leder, fagleg leiar, lærebedrift, opplæringsansvarlig, veileder]
+    - "Eier valgte 08.10.2026 at begrepet bare heter «Instruktør», og at «faglig leder» bare er søkeord. Er det riktig at instruktøren og den som har ansvaret for opplæringen, kan være ulike personer, slik § 7-6 andre ledd leses her?"
+  stikkord: [instruktør, instruktørar, faglig leder, fagleg leiar, lærebedrift, opplæringsansvarlig]
   relatert: [laerebedrift, laerling, opplaeringskontor, halvarsvurdering]
 
 - id: radgiving
