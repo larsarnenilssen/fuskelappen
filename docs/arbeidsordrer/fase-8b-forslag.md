@@ -1,0 +1,42 @@
+# Fase 8b – Designløft: forslag til eier
+
+Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rundene står med den nyeste øverst.
+
+---
+
+## Runde 1: designprinsippene og skissen
+
+**Reglene** står i `docs/DESIGN.md`. De bygger på sidekolonnen på forsiden, Kalender, Nyheter og Videregående i tall.
+
+**Skissen** står i testversjonen: https://jukselappen.no/test/#/utvikling/design
+- Hvert mønster har «Før» og «Etter». «Etter» er de samme komponentene som i appen, med de nye stilene.
+- **Bryteren øverst** viser kalkulatorene og fagarket i ny stil i hele testversjonen, så du kan se de ekte sidene. Slå den av for å se dem som før.
+- Resten av appen er ikke endret ennå. Det kommer i pakkene, etter ditt svar.
+
+**Kort fortalt, det som endres:**
+- **Kort:** tynn kant rundt, ingen tykke fargede streker til venstre. Titlene står i tekstfarge, ikke blått, lilla eller brunt.
+- **Overskrifter:** «FAG 1» står i kortet i vanlig skrift, ikke med store bokstaver på rammen. Delene på oversiktene får en strek over og en fet overskrift, som på forsiden og temasidene.
+- **Valgknapper:** gule piller med luft mellom, som fanene i Videregående i tall, i stedet for mørkeblå blokker.
+- **Innganger:** ikonet i en myk sirkel og tittelen i tekstfarge, som modulene på forsiden.
+- **Delene som kan lukkes:** som delene på temasidene: strek over, tittel og en liten pil. Ingen ramme og ingen tykk strek.
+- **Tall:** tallet først og stort, teksten under. Tynn kant i stedet for den tykke blå rammen rundt resultatet.
+
+| | Før | Etter |
+|---|---|---|
+| Arbeidsplan, skrivebord | ![](bilder/fase-8b-arbeidsplan-for.jpg) | ![](bilder/fase-8b-arbeidsplan-etter.jpg) |
+| Vikartimer, mobil | ![](bilder/fase-8b-vikar-for.jpg) | ![](bilder/fase-8b-vikar-etter.jpg) |
+| Fagarket, skrivebord | ![](bilder/fase-8b-fag-for.jpg) | ![](bilder/fase-8b-fag-etter.jpg) |
+
+Hele skissen: [skrivebord](bilder/fase-8b-skisse-skrivebord.jpg) og [mobil](bilder/fase-8b-skisse-mobil.jpg).
+
+**Spørsmål:**
+
+- **D1 Fargen til delene i Arbeidsplan.** Den tykke streken blir en liten prikk foran tittelen, i samme farge som delen i diagrammet. Prikken står bare i Arbeidsplan, der diagrammet er. I de andre kalkulatorene er det ingen farge. Er det greit?
+- **D2 Valgknappene.** Gule piller overalt der brukeren velger mellom noen få ting, også i skjemaene (kalkulatorene, poengberegningen og «Min skole / Alle» i Opplæringstilbud). Er det greit, eller vil du ha en roligere variant i skjemaene (hvit pille med blå kant for det valgte)?
+- **D3 Resultatkolonnen i kalkulatorene på skrivebord.** I dag står den tom med en løs tekst til noe er fylt inn.
+  - **A (anbefalt):** Resultatkortet står der fra start, med streker («–») der tallene kommer og en kort linje om hva som må fylles inn. Siden hopper ikke når tallene kommer.
+  - **B:** Skjemaet bruker hele bredden til noe er fylt inn, og resultatet kommer til høyre etterpå.
+- **D4 Delene på fagarket** («Kompetansemål og læreplan», «Vurderingsordning», «Inngår i tilbud»). I skissen er de som delene på temasidene: en strek over, uten ramme. Er det greit, eller vil du ha dem som hvite kort med tynn kant?
+- **D5 Nøkkeltallene i Videregående i tall** har teksten over tallet («Søkere 2026», så «25 090»). Resten av appen får tallet først. Skal flisene der også få tallet først (i oppryddingen), eller beholdes de som de er?
+
+**Neste steg etter svaret:** pakke 1, kalkulatorene, med skisse før og etter på `test/`, PR og grønn CI.
