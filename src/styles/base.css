@@ -1061,6 +1061,21 @@ main {
   padding: 0 var(--rom-4) var(--rom-3);
 }
 
+/* Forklaringer etter hverandre står som rader i én boks, med en tynn strek mellom (fase 8b, docs/DESIGN.md), f.eks.
+   «Hva tiden brukes til» i Arbeidsplan og «Slik regnes grensen» i Fraværsgrensen. */
+.forklaring:has(+ .forklaring) {
+  margin-bottom: 0;
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.forklaring + .forklaring {
+  border-top-color: var(--farge-linje);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .diagram {
   display: block;
   width: 100%;
@@ -1113,16 +1128,17 @@ main {
   font-size: var(--str-s);
 }
 
+/* Valgene er piller med luft mellom, og det valgte er gult, som fanene og filtrene i Videregående i tall og kalenderen
+   (fase 8b, docs/DESIGN.md). Korte valg (`bryter-korte`, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (eier
+   08.10.2026). Radioknappen ligger usynlig over hele valget. */
 .bryter-valg {
   display: flex;
   flex-wrap: wrap;
-  border: var(--strek) solid var(--farge-merke);
-  border-radius: var(--radius-m);
-  overflow: hidden;
+  gap: var(--rom-2);
 }
 
 .bryter-valg label {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
   overflow-wrap: anywhere;
   hyphens: auto;
@@ -1131,22 +1147,26 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 2.5rem;
-  padding: var(--rom-1) var(--rom-3);
+  padding: var(--rom-1) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
   background: var(--farge-flate);
-  color: var(--farge-merke);
+  color: var(--farge-tekst);
   font-size: var(--str-s);
   font-weight: 600;
   text-align: center;
   cursor: pointer;
 }
 
-.bryter-valg label + label {
-  border-left: var(--strek) solid var(--farge-merke);
+.bryter-valg label.valgt {
+  border-color: var(--farge-aksent);
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
 }
 
-.bryter-valg label.valgt {
-  background: var(--farge-merke);
-  color: var(--farge-merke-tekst);
+.bryter-korte .bryter-valg label {
+  min-width: 2.75rem;
+  border-radius: var(--radius-m);
 }
 
 .bryter-valg input {
@@ -1162,7 +1182,7 @@ main {
 
 .bryter-valg label:focus-within {
   outline: var(--fokusring) solid var(--farge-fokus);
-  outline-offset: -3px;
+  outline-offset: 2px;
 }
 
 .vippe {
@@ -1197,15 +1217,16 @@ main {
   background: var(--farge-tekst-dempet);
 }
 
+/* På er gult med mørk knott, som de valgte pillene (eier 08.10.2026, docs/DESIGN.md). */
 .vippe input:checked {
-  background: var(--farge-merke);
-  border-color: var(--farge-merke);
+  background: var(--farge-aksent);
+  border-color: var(--farge-aksent);
 }
 
 .vippe input:checked::after {
   left: auto;
   right: 2px;
-  background: var(--farge-merke-tekst);
+  background: var(--farge-aksent-tekst);
 }
 
 .vippe label {
@@ -1344,7 +1365,7 @@ main {
 
 .bryter-kompakt .bryter-valg label {
   min-height: 2.25rem;
-  padding: 0 var(--rom-2);
+  padding: 0 var(--rom-3);
 }
 
 .fagvalg-navn {
@@ -1366,12 +1387,22 @@ main {
 }
 
 .fagkort-tittel {
-  padding: 0 var(--rom-1);
+  padding: 0;
   font-weight: 700;
   font-size: var(--str-s);
-  color: var(--farge-tekst-dempet);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  color: var(--farge-tekst);
+}
+
+/* Tittelen står i kortet, ikke på rammen (fase 8b, docs/DESIGN.md): en legend som flyter, blir vanlig innhold i
+   fieldset, og alt som kommer etter, begynner under den (også etter fjern-knappen, som ikke står i flyten). */
+legend.fagkort-tittel {
+  float: left;
+  width: 100%;
+  margin: 0 0 var(--rom-2);
+}
+
+legend.fagkort-tittel ~ * {
+  clear: both;
 }
 
 /* ---------- Kort som kan legges sammen (overskriften er en knapp med pil opp/ned) ---------- */
@@ -1433,9 +1464,8 @@ main {
   padding-bottom: var(--rom-2);
 }
 
-/* Lukkeknappen står på rammen, så oppsummeringen får plass ved siden av. */
-.fagkort.lukket .kort-oppsummering {
-  padding-right: 2rem;
+.fagkort.lukket legend.fagkort-tittel {
+  margin-bottom: 0;
 }
 
 .fordeling-visning.lukket .fordeling-topp {
@@ -1449,16 +1479,12 @@ p.fagkort-tittel {
 
 .fagkort-fjern {
   position: absolute;
-  top: -1.4rem;
-  right: var(--rom-2);
-  background: var(--farge-flate);
+  top: 0;
+  right: 0;
 }
 
 .fagkort-resultat {
   font-weight: 700;
-  color: var(--farge-merke);
-  text-transform: none;
-  letter-spacing: 0;
 }
 
 .fagkort .felt,
@@ -1903,14 +1929,36 @@ p.fagkort-tittel {
   margin-bottom: var(--rom-3);
 }
 
-/* ---------- Resultatkort ---------- */
+/* ---------- Resultatkort ----------
+   Et hvitt kort med tynn kant som de andre kortene, med hovedtallet stort (fase 8b, docs/DESIGN.md). Før noe er fylt
+   inn, står det tomme kortet (`tomtresultat`) på samme plass, med en strek der tallet kommer (eier 08.10.2026). */
 
-.resultatkort {
+.resultatkort,
+.tomtresultat {
   margin: 0 0 var(--rom-4);
   padding: var(--rom-3) var(--rom-4);
-  border: 2px solid var(--farge-merke);
-  border-radius: var(--radius-l);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
   background: var(--farge-flate);
+}
+
+.tomtresultat-tittel {
+  margin: var(--rom-1) 0;
+  font-size: var(--str-m);
+}
+
+.tomtresultat-verdi {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-xxl);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--farge-tekst-dempet);
+}
+
+.tomtresultat-tekst {
+  margin: 0;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
 }
 
 .resultatkort-topp {
@@ -2045,13 +2093,13 @@ p.fagkort-tittel {
 .resultatkort-tittel {
   margin: var(--rom-1) 0 var(--rom-1);
   font-size: var(--str-m);
-  color: var(--farge-tekst-dempet);
 }
 
 .resultatkort-verdi {
   font-size: var(--str-xxl);
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.01em;
   margin: 0 0 var(--rom-2);
 }
 
@@ -2333,14 +2381,23 @@ p.fagkort-tittel {
   }
 }
 
-/* ---------- Lagrede varianter ---------- */
+/* ---------- Lagrede varianter ----------
+   Et hvitt kort som resultatet, med variantene som rader med en tynn strek mellom (fase 8b, docs/DESIGN.md). */
 
 .varianter {
   margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
 }
 
 .varianter .liten-overskrift {
   margin: 0;
+}
+
+.variantliste li + li {
+  border-top: var(--strek) solid var(--farge-linje);
 }
 
 /* ---------- Sammenligning av to varianter ----------
@@ -3282,15 +3339,14 @@ p.fagkort-tittel {
   color: var(--farge-tekst-dempet);
   font-size: var(--str-s);
 }
-/* ---------- Kalkulatorskjema i deler (avgjørelse 033) ----------
-   Hver del er et kort med tykk kant og overskrift i fargen til delen i diagrammet, og kan legges sammen.
-   Fag og funksjoner står som egne små kort inne i delen, med kant i fargen de har i stolpen for beskjeftigelse. */
+/* ---------- Kalkulatorskjema i deler (avgjørelse 033, fase 8b) ----------
+   Hver del er et hvitt kort med tynn kant og tittelen i tekstfarge, og kan legges sammen (docs/DESIGN.md). I Arbeidsplan
+   har delene og fagene en prikk i fargen de har i diagrammet, så de kan følges dit (eier 08.10.2026). Fag og funksjoner
+   står som en myk flate inne i delen. */
 .skjemadel {
   --del: var(--diagram-selv);
-  --del-tekst: var(--farge-tekst);
   margin: 0 0 var(--rom-3);
   border: var(--strek) solid var(--farge-kant);
-  border-left: 6px solid var(--del);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
   min-width: 0;
@@ -3298,22 +3354,14 @@ p.fagkort-tittel {
 
 .skjemadel[data-del='undervisning'] {
   --del: var(--diagram-undervisning);
-  --del-tekst: var(--diagram-tekst-undervisning);
 }
 
 .skjemadel[data-del='funksjoner'] {
   --del: var(--diagram-funksjon);
-  --del-tekst: var(--diagram-tekst-funksjon);
 }
 
 .skjemadel[data-del='tid'] {
   --del: var(--diagram-motetid);
-  --del-tekst: var(--diagram-tekst-motetid);
-}
-
-.skjemadel[data-del='lonn'] {
-  --del: var(--diagram-planlegging);
-  --del-tekst: var(--diagram-tekst-planlegging);
 }
 
 .skjemadel-topp {
@@ -3321,15 +3369,15 @@ p.fagkort-tittel {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--rom-1) var(--rom-3);
-  padding: var(--rom-2) var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
 }
 
 .skjemadel-tittel {
   flex: 1 1 auto;
   min-width: 0;
   margin: 0;
-  font-size: var(--str-l);
-  color: var(--del-tekst);
+  font-size: var(--str-m);
+  color: var(--farge-tekst);
 }
 
 /* Overskriften er en knapp over hele bredden: navnet til venstre, summen og pilen til høyre. */
@@ -3360,6 +3408,27 @@ p.fagkort-tittel {
   hyphens: auto;
 }
 
+/* Prikken i fargen til delen i diagrammet, bare i Arbeidsplan og bare for delene som har en farge der. */
+:is(.kalkulator[data-kalkulator='arbeidsplan'], .designskisse)
+  :is(.skjemadel[data-del='undervisning'], .skjemadel[data-del='funksjoner'], .skjemadel[data-del='tid'])
+  .skjemadel-navn::before,
+.kalkulator[data-kalkulator='arbeidsplan'] .skjemadel :is(.fagkortliste > .fagkort, .funksjonskort) .fagkort-tittel .kortknapp-tekst::before {
+  content: '';
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: var(--rom-2);
+  border-radius: 50%;
+  background: var(--del);
+  vertical-align: middle;
+}
+
+.kalkulator[data-kalkulator='arbeidsplan'] .skjemadel :is(.fagkortliste > .fagkort, .funksjonskort) .fagkort-tittel .kortknapp-tekst::before {
+  width: 0.625rem;
+  height: 0.625rem;
+  background: var(--rad);
+}
+
 .skjemadel-sum {
   font-size: var(--str-m);
   font-weight: 700;
@@ -3376,65 +3445,47 @@ p.fagkort-tittel {
 
 .skjemadel-innhold {
   container-type: inline-size;
-  padding: 0 var(--rom-3) var(--rom-3);
+  padding: 0 var(--rom-4) var(--rom-4);
 }
 
 .skjemadel-innhold > :last-child {
   margin-bottom: 0;
 }
 
-/* Fag, funksjoner og livsfasetiltak står som små kort inne i delen, med luft mellom og egen kant til venstre. */
+/* Fag, funksjoner og livsfasetiltak står som en myk flate inne i delen, uten kant, med luft mellom. */
 .skjemadel .fagkort {
   --rad: var(--farge-kant);
-  --rad-tekst: var(--farge-tekst-dempet);
-  border: var(--strek) solid var(--farge-kant);
-  border-left: 4px solid var(--rad);
-  border-radius: var(--radius-s);
+  margin: var(--rom-3) 0;
+  padding: var(--rom-3);
+  border: 0;
+  border-radius: var(--radius-m);
   background: var(--farge-bakgrunn);
 }
 
-.skjemadel .fagkort {
-  margin: var(--rom-4) 0 var(--rom-3);
-  padding: var(--rom-3) var(--rom-2) var(--rom-2);
-}
-
-.skjemadel .fagkort-tittel {
-  color: var(--rad-tekst);
-}
-
-.skjemadel .fagkort-fjern {
-  background: var(--farge-flate);
-}
-
-/* Fagene får fargen de har i stolpen for beskjeftigelse, etter tur. */
+/* Fagene får fargen de har i stolpen for beskjeftigelse, etter tur (prikken i Arbeidsplan). */
 .skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 1) {
   --rad: var(--diagram-undervisning);
-  --rad-tekst: var(--diagram-tekst-undervisning);
 }
 
 .skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 2) {
   --rad: var(--diagram-annen);
-  --rad-tekst: var(--diagram-tekst-annen);
 }
 
 .skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 3) {
   --rad: var(--diagram-motetid);
-  --rad-tekst: var(--diagram-tekst-motetid);
 }
 
 .skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 4) {
   --rad: var(--diagram-selv);
-  --rad-tekst: var(--diagram-tekst-selv);
 }
 
 .skjemadel .fagkortliste {
   margin-bottom: 0;
 }
 
-/* Funksjonene er kort som fagene, i fargen til funksjoner (eier 02.10.2026). */
+/* Funksjonene i fargen til funksjoner (eier 02.10.2026). */
 .skjemadel .funksjonskort {
   --rad: var(--diagram-funksjon);
-  --rad-tekst: var(--diagram-tekst-funksjon);
 }
 
 /* Fjern-knappen står på rammen, så navnet får hele linjen. */
@@ -3449,7 +3500,11 @@ p.fagkort-tittel {
   }
 
   .skjemadel-innhold {
-    padding: 0 var(--rom-2) var(--rom-2);
+    padding: 0 var(--rom-3) var(--rom-3);
+  }
+
+  .skjemadel .fagkort {
+    padding: var(--rom-3) var(--rom-2) var(--rom-2);
   }
 }
 
@@ -3464,7 +3519,7 @@ p.fagkort-tittel {
 }
 
 /* Svært smalt innhold (stor skrift på smal skjerm): etiketten ved en bryter står under bryteren, overskriften på
-   fag- og funksjonskortene får hele bredden, og fjern-knappen står under overskriften i stedet for på rammen. */
+   fag- og funksjonskortene får hele bredden, og fjern-knappen står under overskriften i stedet for til høyre. */
 @container (max-width: 15rem) {
   .vippe.med-hjelp {
     grid-template-columns: auto auto;
@@ -3700,18 +3755,28 @@ p.fagkort-tittel {
   margin: var(--rom-3) 0 0;
 }
 
-/* I det blå feltet under søket (eier 04.10.2026): lyse kanter og tekst, og valgt visning lys med mørk tekst. */
+/* I det blå feltet under søket (eier 04.10.2026): lyse kanter og tekst, og valgt visning lys med mørk tekst. Valgene
+   står samlet i én blokk, ikke som piller (unntaket i docs/DESIGN.md). */
 .forside-topp .bryter-valg {
-  border-color: var(--farge-topplinje-tekst);
+  gap: 0;
+  border: var(--strek) solid var(--farge-topplinje-tekst);
+  border-radius: var(--radius-m);
+  overflow: hidden;
 }
 
 .forside-topp .bryter-valg label {
+  border: 0;
+  border-radius: 0;
   background: transparent;
   color: var(--farge-topplinje-tekst);
 }
 
 .forside-topp .bryter-valg label + label {
-  border-left-color: var(--farge-topplinje-tekst);
+  border-left: var(--strek) solid var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label:focus-within {
+  outline-offset: -3px;
 }
 
 .forside-topp .bryter-valg label.valgt {
@@ -6257,19 +6322,8 @@ button.frist-stripe-celle:hover {
   padding: 0 var(--rom-3) var(--rom-3);
 }
 
-.poeng-tomt {
-  padding: var(--rom-4);
-  border: var(--strek) dashed var(--farge-kant);
-  border-radius: var(--radius-m);
-  text-align: center;
-}
-
 .poeng-regler {
   margin-top: var(--rom-5);
-}
-
-.poeng-regler .forklaring {
-  margin-bottom: var(--rom-2);
 }
 
 /* På bred skjerm følger resultatet med når skjemaet rulles, så poengsummen alltid er synlig. */

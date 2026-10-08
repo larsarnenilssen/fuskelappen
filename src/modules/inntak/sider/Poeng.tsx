@@ -11,7 +11,7 @@ import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Kortfot } from '../../../components/Kortfot.tsx';
-import { Resultatkort, type Utregningssteg } from '../../../components/Resultatkort.tsx';
+import { Resultatkort, Tomtresultat, type Utregningssteg } from '../../../components/Resultatkort.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { KildeRef } from '../../../core/innhold/skjema.ts';
 import { velgSynlige } from '../../../core/innhold/status.ts';
@@ -521,7 +521,7 @@ function stegTekst(t: T, s: Poengsteg): Utregningssteg {
 
 function Resultat({ r, tomt, trinn, tittel }: { r: Poengresultat; tomt: boolean; trinn: Trinn; tittel: string }) {
   const { t } = useTekst();
-  if (tomt) return <p class="dempet poeng-tomt">{t('inntak.poeng.resultat.tom')}</p>;
+  if (tomt) return <Tomtresultat tittel={tittel} tekst={t('inntak.poeng.resultat.tom')} />;
   if (r.individuell) {
     return (
       <p class="merknad merknad-advarsel" role="status">

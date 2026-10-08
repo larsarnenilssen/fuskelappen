@@ -4,6 +4,29 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 1: kalkulatorene (08.10.2026)
+
+Testversjonen: https://jukselappen.no/test/ (sammenlign med https://jukselappen.no/).
+
+- **Skjemaet:** hvite kort med tynn kant og titler i tekstfarge. I Arbeidsplan har delene og fagene en prikk i fargen fra diagrammet (D1). «Fag 1» står i kortet, i vanlig skrift.
+- **Valgene:** gule piller. Korte valg (høyst sju tegn, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (D2). Det gjelder alle stedene appen har slike valg, også Opplæringstilbud, Kalender og Elevundersøkelsen. Valget i det mørke toppfeltet på forsiden er som før.
+- **Resultatet:** et hvitt kort med tynn kant. Før noe er fylt inn, står kortet der med en strek og en linje om hva som må fylles inn (D3).
+- **«Lagrede varianter»** står i et kort.
+- **Forklaringene** etter hverandre («Hva tiden brukes til», «Slik regnes grensen», «Slik regnes poengene») står i én boks med en tynn strek mellom.
+
+**Eiers merknader (08.10.2026) og hva som er gjort:**
+- **1 100 timer planfestet tid** i skjermbildene var en testverdi for Vestland som bare finnes i utviklingsmiljøet (`tests/fixtures/regler/sfs2213-fylke-46.yaml`). Appen bruker 1 150 timer fra regelsettet. Skjermbildene er tatt på nytt uten valgt fylke.
+- **«Disponerer læreren selv»:** Teksten er skrevet om to ganger (eier: den første omskrivingen var uoversiktlig). Den vises bare når fag og funksjoner ikke fyller stillingsprosenten, og lyder nå: «Fag og funksjoner fyller ikke hele stillingen. Delen som står igjen (100 % av stillingen), er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.» Beregningen er ikke endret.
+- **Bryterne:** Av/på-bryterne er gule med mørk knott når de er på, som de valgte pillene, i hele appen.
+
+| | Før | Etter |
+|---|---|---|
+| Arbeidsplan, skrivebord | ![](bilder/fase-8b-arbeidsplan-for.jpg) | ![](bilder/fase-8b-arbeidsplan-etter.jpg) |
+| Fraværsgrensen, skrivebord | ![](bilder/fase-8b-p1-for-fravaer.jpg) | ![](bilder/fase-8b-p1-etter-fravaer.jpg) |
+| Poengberegning, mobil | ![](bilder/fase-8b-p1-for-poeng-m.jpg) | ![](bilder/fase-8b-p1-etter-poeng-m.jpg) |
+
+---
+
 ## Svar på runde 1 (eier 08.10.2026)
 
 > Det nye designet er gjennomgående bedre.

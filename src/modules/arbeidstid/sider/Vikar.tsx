@@ -79,7 +79,7 @@ export default function Vikar() {
               </Utregningskort>
             </>
           )}
-          {!fast.resultat && !time.resultat && !feil && <ManglerInndata />}
+          {!fast.resultat && !time.resultat && !feil && <ManglerInndata tittel={s.type === 'fast' ? t('arbeidstid.resultat.endring') : t('arbeidstid.resultat.utbetaltLonn')} />}
           <Varianter id="vikar" skjema={s} resultat={hoved} onHent={sett} />
         </>
       }

@@ -390,7 +390,7 @@ test.describe('arbeidstid', () => {
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s120,0/);
     await page.getByLabel('Timer på planleggingsdager').fill('');
     await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0,0');
-    await expect(page.getByText(/Delen av stillingen som ikke er fylt med fag og funksjoner \(100 %\)/)).toBeVisible();
+    await expect(page.getByText(/Fag og funksjoner fyller ikke hele stillingen\. Delen som står igjen \(100 % av stillingen\)/)).toBeVisible();
     await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('50');
     // 50 % stilling: halvparten av planfestet tid (575), med de samme 45 timene på planleggingsdager når ikke annet er skrevet inn.
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('530,0');
@@ -676,7 +676,7 @@ test.describe('arbeidstid', () => {
     await expect(page.getByRole('img', { name: /Kontaktlærer 25 %.*stillingen på 100 %/ })).toBeVisible();
   });
 
-  test('fjern-knappen står på rammen over navnet, som på fagkortet, og tillegget på linjen med vippen', async ({ page }) => {
+  test('fjern-knappen står til høyre for tittelen, over navnet, som på fagkortet, og tillegget på linjen med vippen', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
@@ -685,7 +685,7 @@ test.describe('arbeidstid', () => {
       const b = await l.boundingBox();
       return b ? b.y + b.height / 2 : NaN;
     };
-    // Funksjonen er et kort som fagene (eier 02.10.2026): fjern-knappen står på rammen, over navnet.
+    // Funksjonen er et kort som fagene (eier 02.10.2026): fjern-knappen står til høyre for tittelen, over navnet (fase 8b).
     const navn = await page.getByLabel('Funksjon 1: Navn').boundingBox();
     const fjern = await midt(page.getByRole('button', { name: 'Fjern funksjon 1' }));
     expect(fjern).toBeLessThan(navn?.y ?? 0);

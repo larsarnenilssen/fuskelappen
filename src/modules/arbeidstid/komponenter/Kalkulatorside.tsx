@@ -6,6 +6,7 @@ import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Tomtresultat } from '../../../components/Resultatkort.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { type AdvarselId, type Arsrammerad, type Arstimerad, type Hent, lesArsrammer, lesArstimer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
@@ -92,9 +93,10 @@ export function Feilmelding({ feil }: { feil: string }) {
   );
 }
 
-export function ManglerInndata() {
+/** Resultatkortet før noe er fylt inn, med tittelen til resultatet som kommer. */
+export function ManglerInndata({ tittel }: { tittel: string }) {
   const { t } = useTekst();
-  return <p class="dempet">{t('arbeidstid.felles.manglerInndata')}</p>;
+  return <Tomtresultat tittel={tittel} tekst={t('arbeidstid.felles.manglerInndata')} />;
 }
 
 /** Årsrammene i vedlegg 1 for gjeldende periode, eller tom liste hvis regelverket mangler. */

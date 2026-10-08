@@ -46,7 +46,7 @@ export default function Beskjeftigelse() {
               </a>
             </>
           ) : (
-            !feil && <ManglerInndata />
+            !feil && <ManglerInndata tittel={tittel} />
           )}
           <Varianter
             id="beskjeftigelse"

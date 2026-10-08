@@ -87,7 +87,7 @@ test.describe('poengberegning ved inntak', () => {
     await page.goto('./#/inntak');
     await page.locator('.frist-inngang', { hasText: 'Poengberegning' }).click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Poengberegning');
-    await expect(page.locator('.poeng-tomt')).toBeVisible();
+    await expect(page.locator('.tomtresultat')).toContainText('Legg inn karakterene');
     const karakterer = [5, 4, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5];
     const fag = page.locator('.skjemadel').first().locator('select.poeng-velger');
     await expect(fag).toHaveCount(13);

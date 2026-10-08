@@ -171,3 +171,19 @@ export function Resultatkort(props: Props) {
     </section>
   );
 }
+
+/**
+ * Resultatkortet før noe er fylt inn (eier 08.10.2026, docs/DESIGN.md): tittelen, en strek der tallet kommer, og hva
+ * som må fylles inn. Kolonnen med resultatet står da ikke tom på skrivebord, og siden hopper ikke når tallet kommer.
+ */
+export function Tomtresultat({ tittel, tekst }: { tittel: string; tekst: string }) {
+  return (
+    <section class="tomtresultat" aria-label={tittel}>
+      <h2 class="tomtresultat-tittel">{tittel}</h2>
+      <p class="tomtresultat-verdi tall" aria-hidden="true">
+        –
+      </p>
+      <p class="tomtresultat-tekst">{tekst}</p>
+    </section>
+  );
+}

@@ -608,8 +608,8 @@ export const nn: Tekster = {
     design: {
       tittel: 'Designløft: skisse',
       innledning: 'Før og etter for dei viktigaste mønstera i fase 8b. «Etter» bruker dei same komponentane som appen, med dei nye stilane. Sida finst berre i utvikling og i testversjonen.',
-      bryter: 'Vis kalkulatorane og fagarket i ny stil',
-      bryterHjelp: 'Gjeld heile appen på denne eininga til du slår han av: korta i skjemaa, valknappane, delane som kan lukkast og tala. Med brytaren på er også «Før» i ny stil.',
+      bryter: 'Vis fagarket og oversiktene i ny stil',
+      bryterHjelp: 'Gjeld heile appen på denne eininga til du slår han av. Kalkulatorane har alt fått ny stil, så der er «Før» og «Etter» like.',
       for: 'Før',
       etter: 'Etter',
       kort: 'Kort og overskrifter',

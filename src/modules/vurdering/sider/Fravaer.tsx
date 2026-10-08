@@ -14,7 +14,7 @@ import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kortfot } from '../../../components/Kortfot.tsx';
-import { Resultatkort, type Utregningssteg } from '../../../components/Resultatkort.tsx';
+import { Resultatkort, Tomtresultat, type Utregningssteg } from '../../../components/Resultatkort.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { KildeRef } from '../../../core/innhold/skjema.ts';
@@ -442,7 +442,7 @@ export default function Fravaer({ sporring }: SideProps) {
               <Grensetabell g={g} />
             </Resultatkort>
           ) : (
-            <p class="dempet fr-tomt">{t('vurdering.fravaer.resultat.tom')}</p>
+            <Tomtresultat tittel={t('vurdering.fravaer.resultat.tittel')} tekst={t('vurdering.fravaer.resultat.tom')} />
           )}
         </div>
         {/* Til steget om fravær i veiviseren (eier 04.10.2026): under utregningen på mobil, og nederst i venstre spalte
