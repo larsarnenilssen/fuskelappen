@@ -16,7 +16,7 @@ Testversjonen: https://jukselappen.no/test/ (sammenlign med https://jukselappen.
 
 **Eiers merknader (08.10.2026) og hva som er gjort:**
 - **1 100 timer planfestet tid** i skjermbildene var en testverdi for Vestland som bare finnes i utviklingsmiljøet (`tests/fixtures/regler/sfs2213-fylke-46.yaml`). Appen bruker 1 150 timer fra regelsettet. Skjermbildene er tatt på nytt uten valgt fylke.
-- **«Disponerer læreren selv»:** Teksten under fordelingen sier nå at den ufylte delen av stillingen er fordelt som undervisningen: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og resten er tid læreren disponerer selv. Beregningen er ikke endret.
+- **«Disponerer læreren selv»:** Teksten er skrevet om to ganger (eier: den første omskrivingen var uoversiktlig). Den vises bare når fag og funksjoner ikke fyller stillingsprosenten, og lyder nå: «Fag og funksjoner fyller ikke hele stillingen. Delen som står igjen (100 % av stillingen), er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.» Beregningen er ikke endret.
 - **Bryterne:** Av/på-bryterne er gule med mørk knott når de er på, som de valgte pillene, i hele appen.
 
 | | Før | Etter |

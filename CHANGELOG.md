@@ -16,7 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Rettet
 
-- **Arbeidsplan:** Teksten om delen av stillingen som ikke er fylt med fag og funksjoner, sier tydeligere at en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og resten tid læreren disponerer selv.
+- **Arbeidsplan:** Teksten under fordelingen når fag og funksjoner ikke fyller hele stillingen, er skrevet om. Den sier at delen som står igjen, er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
 
 ## [0.44.0] – 2026-10-08

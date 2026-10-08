@@ -282,7 +282,7 @@ export const arbeidstidNb = {
     lonnMerknadPeriode: 'Lønn, tillegg, variabel lønn og overtid er det som utbetales for perioden. Lønnen og tilleggene regnes fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder. Variabel lønn og overtid regnes med timene i perioden. Feriepengene regnes av dette og kommer i tillegg.',
     lonnMerknad: 'Lønn, tillegg, variabel lønn og overtid er det som utbetales i året. Feriepengene regnes av dette og kommer i tillegg.',
     diagramMerknad: 'Diagrammet viser undervisningen og funksjonene som er lagt inn ({prosent} %), som er mer enn stillingen.',
-    ikkeFyltMerknad: 'Delen av stillingen som ikke er fylt med fag og funksjoner ({prosent} %), er fordelt som undervisningen: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og resten er tid læreren disponerer selv.',
+    ikkeFyltMerknad: 'Fag og funksjoner fyller ikke hele stillingen. Delen som står igjen ({prosent} % av stillingen), er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.',
   },
   livsfase: {
     tittel: 'Redusert undervisning',
