@@ -10,7 +10,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Dagens jukselapp:** ett faktum fra appen hver dag, som en fjerde visning i panelet øverst på forsiden, ved siden av kalenderen, nyhetene og tallene. Den er av fra start. Slå den på under «Tilpass» eller Innstillinger.
   - Faktaene kommer fra hele appen: begreper, regler og frister (med når fristen er), stegene i veiviserne, veiene til fag- og svennebrev, eksamen og fraværsgrensen, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimene og årsrammen i fagene, og tallene fra Videregående i tall: søkere, elever, læreplass, gjennomføring, fag- og svennebrev, fravær og snittkarakterer til eksamen. Fylkets innhold og tall kommer med når du har valgt fylke, og skolens elevtall og fravær når du har valgt skole.
-  - Hvert faktum lenker til stedet i appen der det står, og har kildene og paragrafene under.
+  - Hvert faktum lenker til stedet i appen der det står, med kildene. Lenken har hele linjen nederst, og «Ny jukselapp» står øverst til høyre.
   - Jukselappen byttes hver dag, og «Ny jukselapp» gir en ny med en gang.
   - Første gang du åpner appen en ny dag, står panelet på jukselappen. Velger du en annen visning, gjelder den resten av dagen.
 

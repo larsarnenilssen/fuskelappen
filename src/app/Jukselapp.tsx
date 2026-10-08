@@ -37,7 +37,7 @@ export function useDagensJukselapp(): { sammendrag: string; innhold: JSX.Element
   if (!lastet) return { sammendrag: t('app.lasterInn'), innhold: <p class="dempet">{t('app.lasterInn')}</p> };
   const { m, f } = lastet;
   return {
-    sammendrag: f ? `${f.tittel[malform]}: ${f.tekst[malform]}` : t('forside.jukselapp.tom'),
+    sammendrag: f ? f.tekst[malform] : t('forside.jukselapp.tom'),
     innhold: <m.Jukselappkort f={f} onNy={() => settSteg(lastet.steg + 1)} />,
   };
 }

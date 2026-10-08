@@ -21,9 +21,11 @@ test.describe('dagens jukselapp', () => {
     await bryter.check();
     await page.getByRole('button', { name: 'Ferdig' }).click();
     await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveAttribute('aria-pressed', 'true');
-    await expect(panel.locator('.jl-tittel')).not.toBeEmpty();
     await expect(panel.locator('.jl-tekst')).not.toBeEmpty();
-    await expect(panel.locator('.jl-rader summary').filter({ hasText: 'Kilder' })).toBeVisible();
+    await expect(panel.locator('.jl-under')).not.toBeEmpty();
+    // Kortet har ingen tittel og ingen rader med regelverket og kildene (eier 08.10.2026). Lenken har hele bunnlinjen.
+    await expect(panel.locator('.jl-panel h3, .jl-panel details')).toHaveCount(0);
+    await expect(panel.locator('a.jl-videre')).toBeVisible();
 
     // Innstillinger viser samme valg.
     await page.goto('./#/innstillinger');
@@ -41,7 +43,7 @@ test.describe('dagens jukselapp', () => {
     const forste = await kort.getAttribute('data-faktum');
     await kort.getByRole('button', { name: 'Ny jukselapp' }).click();
     await expect(kort).not.toHaveAttribute('data-faktum', forste ?? '');
-    const lenke = kort.locator('.jl-lenke');
+    const lenke = kort.locator('a.jl-videre');
     const adresse = (await lenke.getAttribute('href')) ?? '';
     expect(adresse).toMatch(/^#\/[a-z]/);
     await lenke.click();
@@ -70,7 +72,7 @@ test.describe('dagens jukselapp', () => {
   });
 
   for (const tema of ['lys', 'mork'] as const) {
-    test(`ingen alvorlige axe-funn med kildene åpne (${tema})`, { tag: '@mobil' }, async ({ page }) => {
+    test(`ingen alvorlige axe-funn (${tema})`, { tag: '@mobil' }, async ({ page }) => {
       await settLagret(page, { tema, fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
       await page.goto('./');
       await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);

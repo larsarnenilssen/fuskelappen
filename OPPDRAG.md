@@ -595,7 +595,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 - *(Ønske fra eier 04.10.2026)* **Dagens jukselapp** (navnet endret fra «Dagens fuskelapp», eier 04.10.2026)**:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet.
   - Dagens jukselapp skrus av og på fra forsiden (eier 04.10.2026), og gjerne også under Innstillinger. Den er av fra start, og valget lagres lokalt som de andre valgene.
-  - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.
+  - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden. *(Eier 08.10.2026:)* Kortet viser ikke kildene. De står på siden lenken går til.
   - Jukselappen byttes a) automatisk hver dag (samme faktum hele dagen, valgt ut fra datoen), eller b) når brukeren trykker på et tegn for ny jukselapp ved siden av overskriften. Eier velger a, b eller begge når forslaget legges fram.
   - Modulene bidrar med fakta gjennom en ny funksjon i manifestet (som `frister()`), så nye moduler kommer med av seg selv. Fakta hentes fra innholdet, regelsettene og dataene appen alt har. Det gjøres ingen kall til eksterne tjenester, og alt virker uten nett.
   - Innhold for fylke og skole vises bare når brukeren har valgt fylket eller skolen. Teksten står på bokmål og nynorsk.

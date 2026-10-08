@@ -6,6 +6,18 @@ Til eier. Svar gjerne punkt for punkt (f.eks. «J1 ja, men uten paragrafer, J4 A
 
 ---
 
+## Runde 3: kortet uten tittel og kilder (eier 08.10.2026)
+
+- «I regelverket» og «Kilder» er tatt ut av kortet. Kildene står på siden lenken går til.
+- Tittelen er tatt bort. Den øverste linjen er høyere, med hvor faktumet kommer fra til venstre og «Ny jukselapp» til høyre.
+- Lenken til stedet i appen har hele bunnfeltet.
+
+| Mobil | Skrivebord |
+|---|---|
+| ![](bilder/fase-8-r3-mobil.png) | ![](bilder/fase-8-r3-skrivebord.png) |
+
+---
+
 ## Kontroll og vurdering av innholdet (eier 08.10.2026)
 
 Eier ba om en kontroll av at veiene for lærlinger og kandidater, eksamen og fraværsgrensen er med, og en vurdering av om innhold på flere sider kan brukes.
