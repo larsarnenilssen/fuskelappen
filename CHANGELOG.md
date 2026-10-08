@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.45.0] – 2026-10-08
+
 ### Endret
 
 - **Kalkulatorene har fått samme design som de nyeste delene av appen** (Arbeidsplan, Beskjeftigelse, Vikartimer, Overtid, Fraværsgrensen og Poengberegning):
@@ -19,8 +21,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Delene som kan lukkes («Kompetansemål og læreplan», «Vurderingsordning», «Inngår i tilbud» …) er kort med overskriften på en lys blå flate.
   - «Inngår i tilbud» viser tilbudene som rader med pil, ikke som en punktliste.
 - **Kalkulatorene:** Overskriftene på delene i skjemaet og på kortene i resultatkolonnen står på en lys blå flate, som delene på fagarket.
-- **Oversiktene i modulene** (Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler) står i to kolonner på skrivebord: sidene i modulen til venstre, og veiviserne, fristene, kalkulatoren og tallene til høyre. Inngangene har ikonet i en lys blå sirkel og tittelen i vanlig tekstfarge, som modulene på forsiden, og delene har en strek over.
+- **Oversiktene i modulene** (Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler) står i to kolonner på skrivebord: sidene i modulen til venstre, og veiviserne, kalkulatorene, fristene og tallene til høyre, i den rekkefølgen og likt i alle modulene. I Inntak, Vurdering, Eksamen og klage og Aktivitetsplikt og skoleregler er veiviserne, kalkulatoren og kalenderen flyttet til høyre. Kalkulatorene har fått en stolpe som veiviserne, som viser hva du fyller inn og hva som regnes ut. Inngangene har ikonet i en lys blå sirkel og tittelen i vanlig tekstfarge, som modulene på forsiden, og delene har en strek over.
 - **Veiviserne:** Steget og tittelen står på en lys flate i fargen til veiviseren. Svarene står som rader i én boks med pil, i stedet for tykke blå rammer. «Hos fylkeskommunen» har ikke lenger en tykk strek.
+- **Forsiden:** Teksten om Arbeidsplan er kortere: «Utregning og illustrasjon av beskjeftigelse og arbeidstid.» Kalkulatorene under «Flere kalkulatorer» har korte tekster på én linje og er like høye som boksene under «Oppslag».
 - **Begrepene** står i et hvitt kort med «I regelverket» og «Kilder» som lukkede rader nederst, og «Se også» er rader med pil. Søket i begrepene har forstørrelsesglass.
 - **Kildene nederst på siden** i Lov og forskrift, Overordnet del og Opplæringstilbud står i en lukket boks, som på fagarket, i stedet for en punktliste.
 - **Innstillinger og Om appen:** Delene i Innstillinger er kort med overskriften på en lys blå flate, som i kalkulatorene. På Om appen har brukserklæringen samme overskrift, og delene under har en strek over. Lenkene til Om appen og til kildene er rader med pil.
@@ -33,7 +36,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Rettet
 
 - **Videregående i tall:** Uten valgt fylke står det «i hele landet» med liten h inni titler og tekster, f.eks. «Lærerne i videregående i hele landet» i Arbeidsplan.
-- **Arbeidsplan:** Teksten under fordelingen når fag og funksjoner ikke fyller hele stillingen, er skrevet om. Den sier at delen som står igjen, er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.
+- **Arbeidsplan:** Teksten under fordelingen om delen av stillingen som fag og funksjoner ikke fyller, er tatt bort.
 - **Videregående i tall:** Den stiplede streken for landet står rett gjennom alle radene i figurene med fylkene, f.eks. «Hva fylkeskommunen bruker per elev». Før flyttet den seg litt i rader med bredere tall, og stolpene ble litt for korte der.
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
 

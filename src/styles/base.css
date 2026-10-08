@@ -3775,15 +3775,31 @@ p.fagkort-tittel {
 }
 
 .forside .kategori[data-kategori='felles'] {
-  --modul-hoyde: 4.25rem;
+  --modul-hoyde: var(--oppslag-hoyde);
+}
+
+.forside {
+  --oppslag-hoyde: 4.25rem;
 }
 
 .forside .kategori[data-kategori] .liste > li > .listelenke {
   min-height: var(--modul-hoyde);
 }
 
-.forside .kategori[data-kategori='arbeidstid'] .liste > li > a.listelenke {
+.forside .kategori[data-kategori='arbeidstid'] .liste:not(.flere-liste) > li > a.listelenke {
   min-height: calc(var(--modul-hoyde) * 4 / 3);
+}
+
+/* Boksene i den sammenleggbare boksen («Flere kalkulatorer») er like høye som boksene under «Oppslag», med teksten på
+   én linje (eier 08.10.2026). */
+.forside .kategori[data-kategori] .flere-liste > li > .listelenke {
+  min-height: var(--oppslag-hoyde);
+}
+
+.forside .kategori[data-kategori] .flere-liste .listelenke-under {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .forside .kategori[data-kategori] .liste > li > .flere-knapp {
@@ -3905,8 +3921,11 @@ p.fagkort-tittel {
   transition: grid-template-rows var(--varighet-lang) ease;
 }
 
+/* min-width: 0, så en tekst på én linje (f.eks. under «Flere kalkulatorer») kuttes med … i stedet for å gjøre
+   rutenettet bredere enn skjermen. */
 .gruppe-innhold-indre {
   min-height: 0;
+  min-width: 0;
 }
 
 .gruppe-innhold.animerer > .gruppe-innhold-indre,
@@ -5827,6 +5846,58 @@ div + .veiviser-svargruppe {
   display: none;
   font-size: var(--str-xs);
   color: var(--farge-tekst-dempet);
+}
+
+/* Kalkulatorene på oversiktene (eier 08.10.2026): samme kort som veiviserne, med ikonet foran tittelen. */
+.kalkulator-inngang-ikon {
+  flex: none;
+  color: var(--farge-merke);
+}
+
+/* Stolpen på kalkulatorene på oversiktene (Kalkulatorinngang, eier 08.10.2026, docs/DESIGN.md): delene som fylles
+   inn, er grå, og resultatet står i merkefargen med navnet i fet tekstfarge. Samme mål som fasestolpen i veiviserne. */
+.inngangsbilde {
+  display: flex;
+  gap: var(--rom-1);
+}
+
+/* Hvert ledd er minst så bredt som det lengste ordet, så navnene brytes mellom ord og ikke midt i dem. Leddene
+   deler resten av bredden. */
+.inngangsbilde-ledd {
+  flex: 1 1 auto;
+  min-width: min-content;
+  font-size: var(--str-xs);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--farge-tekst-dempet);
+}
+
+.inngangsbilde-strek {
+  display: block;
+  height: 0.375rem;
+  margin-bottom: var(--rom-1);
+  border-radius: 999px;
+  background: var(--farge-kant);
+}
+
+.inngangsbilde-ut .inngangsbilde-strek {
+  background: var(--farge-merke);
+}
+
+.inngangsbilde-navn {
+  display: block;
+}
+
+.inngangsbilde-ut .inngangsbilde-navn {
+  font-weight: 700;
+  color: var(--farge-tekst);
+}
+
+/* Svært smal skjerm: navnene under kalkulatorstolpen deles midt i ord, som i veiviserne. Da står bare stolpen. */
+@media (max-width: 24rem) {
+  .inngangsbilde-navn {
+    display: none;
+  }
 }
 
 /* Svært smal skjerm: navnene under stolpen deles midt i ord. Da står bare stolpen og antallet faser. */

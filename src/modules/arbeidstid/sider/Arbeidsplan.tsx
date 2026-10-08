@@ -113,7 +113,6 @@ export default function Arbeidsplan({ sporring }: SideProps) {
   // Timer på planleggingsdager for en lærer i hel stilling: 6 dager × 7,5 timer (samme tall for alle, som i InSchool).
   const planleggingStandard = (useRegeltall(hent, 'sfs2213.arbeidsaar_tillegg_dager') ?? 0) * (useRegeltall(hent, 'sfs2213.timer_per_dag') ?? 0);
   const ukegrenser = maksUke !== null && maksDag !== null && dagerPerUke !== null ? { maksUke, maksDag, dagerPerUke } : null;
-  const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
   const satser = useMemo(() => tilleggssatser(hent), [hent]);
   const kontaktlaererTimer = useRegeltall(hent, 'sfs2213.kontaktlaerer_reduksjon');
   const arsrammeFunksjon = useRegeltall(hent, 'sfs2213.arsramme_funksjon');
@@ -315,7 +314,6 @@ export default function Arbeidsplan({ sporring }: SideProps) {
           {fordeling && (
             <>
               <Fordelingsvisning resultat={fordeling} {...(ukegrenser ? { uke: ukegrenser } : {})}>
-                {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.arbeidsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
                 {iPeriode && dager !== null && (
                   <p class="liten dempet">
                     {t('arbeidstid.arbeidsplan.fordelingPeriode', { dager: tallTekst(dager), skolear: tallTekst(s.dagerSkolear ?? skolearDager) })}

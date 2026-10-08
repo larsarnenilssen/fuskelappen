@@ -19,24 +19,26 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      // Den mjuke bindestreken (\u00ad) deler ordet på smale skjermar.
-      forside: 'Fag, funksjonar, periode\u00adsysselsetjing, fordeling av arbeidstida og løn.',
+      forside: 'Utrekning og illustrasjon av sysselsetjing og arbeidstid.',
       beskrivelse: 'Fag og funksjonar mot stillingsprosenten for heile skuleåret eller ein periode (periodesysselsetjing), med fordelinga av arbeidstida og løn.',
     },
     beskjeftigelse: {
       tittel: 'Sysselsetjing',
       kort: 'Sysselsetjing',
       beskrivelse: 'Undervisningsprosent for eitt eller fleire fag.',
+      forside: 'Undervisningsprosent for fag.',
     },
     vikar: {
       tittel: 'Vikartimar',
       kort: 'Vikartimar',
       beskrivelse: 'Auka sysselsetjing for tilsette, eller løn for timevikarar.',
+      forside: 'Auka sysselsetjing eller timeløn.',
     },
     overtid: {
       tittel: 'Overtid over 100 %',
       kort: 'Overtid',
       beskrivelse: 'Betaling for undervisning utover heil stilling.',
+      forside: 'Betaling utover heil stilling.',
     },
   },
   felles: {
@@ -281,7 +283,6 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     lonnMerknadPeriode: 'Løn, tillegg, variabel løn og overtid er det som blir utbetalt for perioden. Løna og tillegga blir rekna frå datoane: heile månader, og arbeidsdagar ÷ 21,67 i brotne månader. Variabel løn og overtid blir rekna med timane i perioden. Feriepengane blir rekna av dette og kjem i tillegg.',
     lonnMerknad: 'Løn, tillegg, variabel løn og overtid er det som blir utbetalt i året. Feriepengane blir rekna av dette og kjem i tillegg.',
     diagramMerknad: 'Diagrammet viser undervisninga og funksjonane som er lagde inn ({prosent} %), som er meir enn stillinga.',
-    ikkeFyltMerknad: 'Fag og funksjonar fyller ikkje heile stillinga. Delen som står att ({prosent} % av stillinga), er fordelt på same måten som undervisning: ein del er anna planfesta tid, t.d. møte og anna elevretta arbeid, og ein del er tid læraren disponerer sjølv.',
   },
   livsfase: {
     tittel: 'Redusert undervisning',

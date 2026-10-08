@@ -85,7 +85,7 @@ test.describe('inntak', () => {
 test.describe('poengberegning ved inntak', () => {
   test('Vg1: fagene fra grunnskolen gir poengsummen med utregningen', async ({ page }) => {
     await page.goto('./#/inntak');
-    await page.locator('.frist-inngang', { hasText: 'Poengberegning' }).click();
+    await page.locator('.kalkulator-inngang', { hasText: 'Poengberegning' }).click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Poengberegning');
     await expect(page.locator('.tomtresultat')).toContainText('Legg inn karakterene');
     const karakterer = [5, 4, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5];

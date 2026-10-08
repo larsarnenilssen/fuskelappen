@@ -24,6 +24,12 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **En gruppe i en liste** (f.eks. «Engelsk (2)» i fagsøket) har ikonet i en myk sirkel, så den skiller seg fra radene for hvert element, som ikke har ikon. Gruppene øverst (fagtypene) står på en myk flate i temafargen.
 - **En lenke videre fra et kort** (f.eks. «Regn ut i Arbeidsplan») er en blå lenkelinje nederst i kortet (`panel-videre`), som «Hele kalenderen» på forsiden.
 - Et kort som er en lenke (`frist-inngang`, `Inngang`), har ikonet i en myk sirkel til venstre, tittelen i tekstfarge, teksten dempet under og pilen til høyre, som modulene på forsiden.
+- **Verktøyene på oversiktene har et lite bilde av hva de gjør** (eier 08.10.2026):
+  - En veiviser (`Veiviserinnganger`) har fasestolpen i fargen til veiviseren, med fasene under.
+  - En kalkulator (`Kalkulatorinngang`) har en stolpe med delene brukeren fyller inn, i grått, og det som regnes ut, i merkefargen. Navnene er overskriftene i skjemaet og på resultatkortet.
+  - Bildet står bare på oversiktene i modulene, der det har navn og sier hva verktøyet gjør. Boksene på forsiden har bare ikonet (eier 08.10.2026). Uten navn ble bildet der pynt, og to av ti bokser skilte seg ut uten grunn.
+  - Kalenderen og fristene viser den neste datoen i stedet for et bilde.
+  - Sidene med tekst (`Inngang`) har bare ikonet. Et bilde på dem ville vært pynt og ikke sagt noe om innholdet.
 - **Ingen tykke streker til venstre.** En farge som betyr noe, f.eks. delen i diagrammet i Arbeidsplan, vises som en liten rund prikk foran tittelen, som i forklaringene til diagrammene. Der fargen ikke står i et diagram på siden, er det ingen prikk. Fagtypen står i farge som tekst («Fellesfag») og i merket på fagarket, ikke som strek.
 
 - **En oppføring med egen side** (f.eks. et begrep) står i et hvitt kort med regelverket og kildene som lukkede rader nederst (`Kortfot`). Lenker videre («Se også») er rader med pil under kortet.
@@ -66,7 +72,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Sider med flere deler står i to kolonner fra 64rem (`ToKolonner`): de første delene til venstre (3/5) og resten til høyre (2/5). Rekkefølgen på mobil er den samme.
 - Kildene til siden står nederst i høyre kolonne i en lukket boks (`Kildeboks`). En tallboks fra Videregående i tall står over kildene. Sider med én kolonne har også kildene i `Kildeboks` nederst, aldri som en punktliste rett på bakgrunnen.
 - **En kolonne står aldri tom.** I kalkulatorene står resultatkortet i høyre kolonne fra start, med en strek der tallet kommer og en kort linje om hva som må fylles inn (eier 08.10.2026).
-- Oversiktene i modulene: ingressen øverst over begge kolonnene, sidene i modulen til venstre, og veiviserne, fristene, kalkulatoren og tallene til høyre.
+- **Oversiktene i modulene:** ingressen øverst over begge kolonnene. Til venstre står sidene i modulen: oppslag, forklaringer og figurer. Til høyre står verktøyene og det som endrer seg, alltid i denne rekkefølgen: veiviserne, kalkulatorene, fristene eller kalenderen, og tallene fra Videregående i tall (eier 08.10.2026, testes). På mobil står venstre kolonne først.
 
 *Eksempler:* fagarket, temasidene, Mer opplæring, Eksamen.
 

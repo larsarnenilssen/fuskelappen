@@ -1,6 +1,27 @@
 import { expect, test } from '@playwright/test';
 
 test.describe('modulregister og søk', () => {
+  test('oversiktene i modulene: veivisere, kalkulatorer og kalendere står i høyre kolonne (eier 08.10.2026)', async ({ page }) => {
+    for (const rute of ['#/inntak', '#/vurdering', '#/eksamen', '#/skolemiljo', '#/tilrettelegging']) {
+      await page.goto(`./${rute}`);
+      const side = page.locator('.to-kolonner-side');
+      await expect(side.locator('.veiviser-inngang').first(), rute).toBeVisible();
+      await expect(page.locator('.to-kolonner-hoved').locator('.veiviser-inngang, .kalkulator-inngang, .frist-inngang:has(.frist-inngang-etikett)'), rute).toHaveCount(0);
+    }
+    // Kalkulatorene har en stolpe som viser hva som fylles inn og hva som regnes ut, som fasene i veiviserne.
+    await page.goto('./#/vurdering');
+    const kalkulator = page.locator('.to-kolonner-side .kalkulator-inngang');
+    await expect(kalkulator).toHaveCount(1);
+    await expect(kalkulator.locator('.inngangsbilde-ledd')).toHaveCount(3);
+    await expect(kalkulator.locator('.inngangsbilde-ut')).toContainText('Fraværsgrensen');
+  });
+
+  test('forsiden har ikke bildet på kalkulatorene (eier 08.10.2026)', async ({ page }) => {
+    await page.goto('./');
+    await expect(page.locator('.listelenke', { hasText: 'Arbeidsplan' })).toBeVisible();
+    await expect(page.locator('.inngangsbilde')).toHaveCount(0);
+  });
+
   test('testmodulen dukker opp på forsiden i sin kategori', async ({ page }) => {
     await page.goto('./');
     const kategori = page.locator('[data-kategori="skolemiljo"]');

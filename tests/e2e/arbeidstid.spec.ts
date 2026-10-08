@@ -390,7 +390,8 @@ test.describe('arbeidstid', () => {
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s120,0/);
     await page.getByLabel('Timer på planleggingsdager').fill('');
     await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0,0');
-    await expect(page.getByText(/Fag og funksjoner fyller ikke hele stillingen\. Delen som står igjen \(100 % av stillingen\)/)).toBeVisible();
+    // Teksten om delen av stillingen som fag og funksjoner ikke fyller, er tatt bort (eier 08.10.2026).
+    await expect(page.getByText(/fyller ikke hele stillingen/)).toHaveCount(0);
     await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('50');
     // 50 % stilling: halvparten av planfestet tid (575), med de samme 45 timene på planleggingsdager når ikke annet er skrevet inn.
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('530,0');

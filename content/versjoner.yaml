@@ -2,6 +2,17 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 0.45.0
+    dato: 2026-10-08
+    nytt:
+      - nb: "Hele appen har fått samme rolige design som forsiden, kalenderen og Videregående i tall: hvite kort, overskrifter på en lys flate og gule valg."
+        nn: "Heile appen har fått same rolege design som framsida, kalenderen og Vidaregåande i tal: kvite kort, overskrifter på ei lys flate og gule val."
+      - nb: På oversiktene i modulene står veiviserne, kalkulatorene og fristene til høyre, og kalkulatorene viser hva du fyller inn og hva som regnes ut.
+        nn: På oversiktene i modulane står vegvisarane, kalkulatorane og fristane til høgre, og kalkulatorane viser kva du fyller inn og kva som blir rekna ut.
+      - nb: I veiviserne står svarene du har gitt, med gul bakgrunn.
+        nn: I vegvisarane står svara du har gitt, med gul bakgrunn.
+      - nb: Tallet står først i flisene i Videregående i tall, og streken for landet i figurene står rett.
+        nn: Talet står først i flisene i Vidaregåande i tal, og streken for landet i figurane står rett.
   - versjon: 0.44.0
     dato: 2026-10-08
     nytt:

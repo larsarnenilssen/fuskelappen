@@ -25,8 +25,8 @@ export default function Oversikt() {
       <p class="ingress">
         <Begrepstekst tekst={t('skolemiljo.innledning')} />
       </p>
-      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md). Rekkefølgen på mobil er som før: retten, veiviseren og så
-          skolereglene, som står til høyre. */}
+      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): retten og skolereglene til venstre, veiviseren til høyre
+          (eier 08.10.2026). */}
       <ToKolonner
         hoved={
           <>
@@ -40,23 +40,23 @@ export default function Oversikt() {
               </ul>
             </section>
             <section class="lop-del">
-              <h2 class="liten-overskrift">{t('skolemiljo.veivisere')}</h2>
-              {innhold === null ? (
-                <p class="dempet">{t('app.lasterInn')}</p>
-              ) : (
-                <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
-              )}
+              <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
+              <ul class="vu-videre">
+                <li>
+                  <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
+                </li>
+              </ul>
             </section>
           </>
         }
         side={
           <section class="lop-del">
-            <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
-            <ul class="vu-videre">
-              <li>
-                <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
-              </li>
-            </ul>
+            <h2 class="liten-overskrift">{t('skolemiljo.veivisere')}</h2>
+            {innhold === null ? (
+              <p class="dempet">{t('app.lasterInn')}</p>
+            ) : (
+              <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
+            )}
           </section>
         }
       />
