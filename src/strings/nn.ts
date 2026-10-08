@@ -582,6 +582,7 @@ export const nn: Tekster = {
     tittel: 'Fann ikkje sida',
     tekst: 'Sida finst ikkje, eller ho er ikkje tilgjengeleg enno.',
     tilForsiden: 'Til framsida',
+    sok: 'Søk i appen',
   },
   spraak: {
     nb: 'bokmål',

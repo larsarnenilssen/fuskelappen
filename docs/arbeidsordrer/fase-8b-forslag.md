@@ -4,6 +4,21 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 6: Innstillinger, Om appen, Kilder og Fant ikke siden (08.10.2026)
+
+- **Innstillinger:** Hver del (Målform, Utseende, Forsiden, Fylke og skole, Dine data, Tilbakemelding) er et hvitt kort med overskriften på en lys blå flate, som delene i kalkulatorene. Før sto overskriften på rammen. «Om appen» nederst er en rad med ikon og pil.
+- **Om appen:** Brukserklæringen har overskriften på en lys blå flate. Delene under (Tilbakemelding, Kilder, Personvern, Kreditering) har en tynn strek over og en fet overskrift i vanlig størrelse, som delene på oversiktene. «Se alle kilder og kildestatus» er en rad med pil.
+- **Kilder og kildestatus:** Kildene sto allerede som rader i ett kort. «For appens eier» har fått streken over, som de andre delene. Den grønne statusboksen er beholdt, fordi fargen sier at alle kildene virker.
+- **Fant ikke siden:** «Til forsiden» og «Søk i appen» er rader med ikon og pil, som inngangene på forsiden.
+
+| | Før | Etter |
+|---|---|---|
+| Innstillinger | ![](bilder/fase-8b-p6-for-innstillinger.jpg) | ![](bilder/fase-8b-p6-etter-innstillinger.jpg) |
+| Om appen | ![](bilder/fase-8b-p6-for-om.jpg) | ![](bilder/fase-8b-p6-etter-om.jpg) |
+| Fant ikke siden | ![](bilder/fase-8b-p6-for-ukjent.jpg) | ![](bilder/fase-8b-p6-etter-ukjent.jpg) |
+
+---
+
 ## Pakke 5: Regelverk, Læreplanverket og Begreper (08.10.2026)
 
 - **Begrepene:** Teksten står i et hvitt kort, med «I regelverket» og «Kilder» som lukkede rader nederst, som de andre kortene i appen. «Se også» er rader med pil, ikke en punktliste.

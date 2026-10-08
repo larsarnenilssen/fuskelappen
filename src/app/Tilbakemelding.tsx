@@ -60,8 +60,8 @@ export function Tilbakemelding({ overskrift: Overskrift = 'h2' }: { overskrift?:
     );
   }
   return (
-    <section aria-labelledby="om-tilbakemelding" data-testid="tilbakemelding">
-      <h2 id="om-tilbakemelding">{t('tilbakemelding.tittel')}</h2>
+    <section class="lop-del" aria-labelledby="om-tilbakemelding" data-testid="tilbakemelding">
+      <h2 id="om-tilbakemelding" class="liten-overskrift">{t('tilbakemelding.tittel')}</h2>
       {innhold}
     </section>
   );

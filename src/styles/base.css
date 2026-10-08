@@ -782,6 +782,18 @@ main {
   font-size: var(--str-l);
 }
 
+/* Et kort med overskriften på en myk flate øverst, som delene i kalkulatorene (fase 8b, docs/DESIGN.md). */
+.kort-med-topp {
+  overflow: hidden;
+}
+
+.kort.kort-med-topp > h2:first-child {
+  margin: calc(-1 * var(--rom-3)) calc(-1 * var(--rom-4)) var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
+  background: var(--farge-flate-2);
+  font-size: var(--str-m);
+}
+
 .kort-advarsel,
 .kort-endret,
 .kort-utdatert {
@@ -910,7 +922,10 @@ main {
 
 /* ---------- Skjema ---------- */
 
+/* Kortene i Innstillinger: overskriften står på en myk flate øverst i kortet, som delene i kalkulatorene (fase 8b,
+   docs/DESIGN.md). En legend som flyter, blir vanlig innhold i fieldset, og alt etter den begynner under den. */
 .valggruppe {
+  overflow: hidden;
   margin: 0 0 var(--rom-4);
   padding: var(--rom-3) var(--rom-4) var(--rom-2);
   border: var(--strek) solid var(--farge-kant);
@@ -919,9 +934,18 @@ main {
   min-width: 0;
 }
 
-.valggruppe legend {
-  padding: 0 var(--rom-1);
-  font-weight: 650;
+.valggruppe > legend {
+  float: left;
+  width: calc(100% + 2 * var(--rom-4));
+  margin: calc(-1 * var(--rom-3)) calc(-1 * var(--rom-4)) var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
+  background: var(--farge-flate-2);
+  font-weight: 700;
+  color: var(--farge-tekst);
+}
+
+.valggruppe > legend ~ * {
+  clear: both;
 }
 
 .valg {

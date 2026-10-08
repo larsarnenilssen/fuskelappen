@@ -23,6 +23,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Veiviserne:** Steget og tittelen står på en lys flate i fargen til veiviseren. Svarene står som rader i én boks med pil, i stedet for tykke blå rammer. «Hos fylkeskommunen» har ikke lenger en tykk strek.
 - **Begrepene** står i et hvitt kort med «I regelverket» og «Kilder» som lukkede rader nederst, og «Se også» er rader med pil. Søket i begrepene har forstørrelsesglass.
 - **Kildene nederst på siden** i Lov og forskrift, Overordnet del og Opplæringstilbud står i en lukket boks, som på fagarket, i stedet for en punktliste.
+- **Innstillinger og Om appen:** Delene i Innstillinger er kort med overskriften på en lys blå flate, som i kalkulatorene. På Om appen har brukserklæringen samme overskrift, og delene under har en strek over. Lenkene til Om appen og til kildene er rader med pil.
+- **Fant ikke siden** har «Til forsiden» og «Søk i appen» som rader med ikon og pil.
 - **Kortene som kan lukkes** i Opplæringstilbud, Læreplanverket og Lov og forskrift har overskriften på en lys blå flate i stedet for en tykk strek. Fellesfag, felles programfag og yrkesfaglig fordypning i et tilbud har en prikk i samme farge som i stolpen over.
 
 ### Rettet

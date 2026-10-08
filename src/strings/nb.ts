@@ -582,6 +582,7 @@ export const nb = {
     tittel: 'Fant ikke siden',
     tekst: 'Siden finnes ikke, eller den er ikke tilgjengelig ennå.',
     tilForsiden: 'Til forsiden',
+    sok: 'Søk i appen',
   },
   spraak: {
     nb: 'bokmål',
