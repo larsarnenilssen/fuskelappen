@@ -25,7 +25,7 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er de tre fasene (rett, inntaksmåte, søknad) en dekkende inndeling av hvordan en søker til videregående tas inn?"
-  stikkord: [veiviser, inntak, søkerkategori, søkjarkategori, søker, ungdomsrett, voksenrett, fortrinnsrett, søknadsfrist, søkjar]
+  stikkord: [veiviser, inntak, søkerkategori, søkjarkategori, søker, ungdomsrett, voksenrett, fortrinnsrett, søknadsfrist, søkjar, inntakskontor, inntakskontoret, VIGO, Vilbli, vilbli.no]
 
 - id: sk-grunnskole
   type: steg

@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Nye begreper:** Læreplan i fag, Kompetansemål, Fagkode, Årstimetall, Vurderingsordning, Sidemål, Egenmelding, Tilbudsstruktur, Instruktør og faglig leder, Rådgiving, Oppfølgingstjenesten og Elevråd. Ordene lenker til begrepene der de står i teksten.
+
+### Endret
+
+- **Ungdomsrett** forklarer at retten også kalles fullføringsretten, og «fullføringsretten» i teksten lenker dit.
+- **Spesialundervisning** i teksten lenker til Individuell tilrettelegging, fordi Udir skriver at det gamle begrepet nå er delt i tre rettigheter. **PPT** lenker til PP-tjenesten.
+- **Søket** finner veiviseren for inntak på «inntakskontor», «VIGO» og «Vilbli».
+
 ## [0.43.0] – 2026-10-08
 
 ### Lagt til

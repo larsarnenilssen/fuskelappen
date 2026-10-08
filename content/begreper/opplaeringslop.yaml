@@ -13,8 +13,8 @@
   kontrollert: null
   kontrollsporsmal:
     - "Påbygging regnes som et tilbud innenfor yrkesfag (eier 01.10.2026). Er setningen om dette riktig formulert?"
-  stikkord: [studieforberedende, yrkesfaglig, yrkesfag, tilbudsstruktur]
-  relatert: [programomrade, trinn-vg, fellesfag]
+  stikkord: [studieforberedende, yrkesfaglig, yrkesfag, tilbudsstruktur, Vilbli]
+  relatert: [programomrade, trinn-vg, fellesfag, tilbudsstruktur]
 
 - id: programomrade
   type: begrep
@@ -490,3 +490,60 @@
     - "Bør begrepet si at fylkeskommunen skal fortsette å prøve å formidle søkere som har begynt på et annet tilbud (§ 6-2 andre ledd)?"
   stikkord: [formidling, læreplass, søke læreplass, lærling, lærekandidat, praksisbrevkandidat]
   relatert: [laerling, laerekandidat, praksisbrev, laerebedrift, vg3-i-skole]
+
+- id: tilbudsstruktur
+  type: begrep
+  tittel: { nb: Tilbudsstruktur, nn: Tilbodsstruktur }
+  lenkeord: { nb: ["tilbudsstruktur"], nn: ["tilbodsstruktur", "tilbudsstruktur"] }
+  tekst:
+    nb: Tilbudsstrukturen er oversikten over utdanningsprogrammene, programområdene og lærefagene i videregående opplæring, altså hvilke løp som fører fram til studiekompetanse eller yrkeskompetanse. Departementet fastsetter den med hjemmel i opplæringslova § 1-6, og opplæringen skal være i samsvar med den. Udir gir den ut sammen med fag- og timefordelingen. Fylkeskommunen velger hvilke tilbud skolene i fylket skal ha, og skal legge stor vekt på hvilken kompetanse samfunnet trenger. Opplæringstilbud i appen viser løpene.
+    nn: Tilbodsstrukturen er oversikta over utdanningsprogramma, programområda og lærefaga i vidaregåande opplæring, altså kva løp som fører fram til studiekompetanse eller yrkeskompetanse. Departementet fastset han med heimel i opplæringslova § 1-6, og opplæringa skal vere i samsvar med han. Udir gir han ut saman med fag- og timefordelinga. Fylkeskommunen vel kva tilbod skolane i fylket skal ha, og skal leggje stor vekt på kva kompetanse samfunnet treng. Opplæringstilbod i appen viser løpa.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 1-6 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§1-6" }
+    - { id: opplaeringslova, punkt: "§ 5-3 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-1 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-1" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «Fylkeskommunen velger hvilke tilbud skolene i fylket skal ha» en riktig forenkling av § 5-3, som handler om planleggingen og utbyggingen av tilbudet?"
+    - "Udir gir ut tilbudsstrukturen i rundskrivet (vedlegg 2), og ingen egen forskrift finnes ennå (som for fag- og timefordelingen). Er det greit å skrive at departementet fastsetter den?"
+  stikkord: [tilbud, utdanningsprogram, programområde, lærefag, Udir-1, dimensjonering, Vilbli]
+  relatert: [utdanningsprogram, programomrade, fag-og-timefordeling, opplaering-i-bedrift]
+
+- id: instruktor
+  type: begrep
+  tittel: { nb: Instruktør og faglig leder, nn: Instruktør og fagleg leiar }
+  lenkeord: { nb: ["instruktør", "faglig leder"], nn: ["instruktør", "fagleg leiar", "faglig leder"] }
+  tekst:
+    nb: En lærebedrift skal ha en eller flere faglig kvalifiserte personer som har ansvaret for opplæringen, og en eller flere instruktører som gir den. Den som har ansvaret, kalles ofte faglig leder, men loven bruker ikke det ordet. Instruktøren følger lærlingen i det daglige, har jevnlig dialog med lærlingen om utviklingen og gir halvårsvurderingen til lærlinger, lærekandidater og praksisbrevkandidater. Det er lærebedriften som har ansvaret for opplæringen, også når deler av den skjer i en annen bedrift.
+    nn: Ei lærebedrift skal ha ein eller fleire fagleg kvalifiserte personar som har ansvaret for opplæringa, og ein eller fleire instruktørar som gir henne. Den som har ansvaret, blir ofte kalla fagleg leiar, men lova bruker ikkje det ordet. Instruktøren følgjer lærlingen i det daglege, har jamleg dialog med lærlingen om utviklinga og gir halvårsvurderinga til lærlingar, lærekandidatar og praksisbrevkandidatar. Det er lærebedrifta som har ansvaret for opplæringa, også når delar av ho skjer i ei anna bedrift.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-6 første og andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-6 andre ledd (dialog med instruktør)", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 fjerde ledd (halvårsvurderingen)", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: udir-ord-og-omgrep, punkt: "Tabellen over gamle og nye ord", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«Faglig leder» står ikke i opplæringslova av 2023. Er det riktig at ordet fortsatt er vanlig i fylkeskommunene og bransjene, så det bør stå i tittelen?"
+    - "Er «følger lærlingen i det daglige» en dekkende beskrivelse av instruktøren, når loven bare sier at instruktøren gir opplæring?"
+  stikkord: [instruktør, faglig leder, fagleg leiar, lærebedrift, opplæringsansvarlig, veileder]
+  relatert: [laerebedrift, laerling, opplaeringskontor, halvarsvurdering]
+
+- id: radgiving
+  type: begrep
+  tittel: { nb: Rådgiving, nn: Rådgiving }
+  lenkeord: { nb: ["rådgiving", "rådgivning", "rådgiver"], nn: ["rådgiving", "rådgivar", "rådgivning"] }
+  tekst:
+    nb: Elever har rett til den rådgivingen de trenger, både om utdannings- og yrkesvalg og om sosiale og personlige forhold som kan påvirke hvordan de har det på skolen. Rådgivingen skal gis på skolen eleven går på, og individuelt når eleven ønsker det. Fylkeskommunen skal sørge for at de som har læretid i bedrift, også har tilgang til begge deler. Før opplæringslova fra 2024 het det utdannings- og yrkesrådgiving og sosialpedagogisk rådgiving. Rådgiving på skolen regnes ikke som fravær.
+    nn: Elevar har rett til den rådgivinga dei treng, både om utdannings- og yrkesval og om sosiale og personlege forhold som kan påverke korleis dei har det på skolen. Rådgivinga skal givast på skolen eleven går på, og individuelt når eleven ønskjer det. Fylkeskommunen skal sørgje for at dei som har læretid i bedrift, også har tilgang til begge delar. Før opplæringslova frå 2024 heitte det utdannings- og yrkesrådgiving og sosialpedagogisk rådgiving. Rådgiving på skolen blir ikkje rekna som fråvær.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 16-1 Rådgiving om utdannings- og yrkesval", url: "https://lovdata.no/lov/2023-06-09-30/§16-1" }
+    - { id: opplaeringslova, punkt: "§ 16-2 Rådgiving om sosiale og personlege forhold", url: "https://lovdata.no/lov/2023-06-09-30/§16-2" }
+    - { id: udir-ord-og-omgrep, punkt: "Sosialpedagogisk rådgiving og utdannings- og yrkesrådgiving i tabellen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet nevne karriereveiledningen fylkeskommunen skal ha for alle som bor i fylket (§ 28-9), eller er det et annet tema?"
+    - "Er det riktig at rådgiving på skolen ikke regnes som fravær, slik «Det som ikke er fravær» i Vurdering sier?"
+  stikkord: [rådgiver, rådgivar, sosialpedagogisk rådgiving, yrkesrådgiving, utdanningsvalg, karriereveiledning, skolerådgiver]
+  relatert: [omvalg, utdanningsprogram, laerling]

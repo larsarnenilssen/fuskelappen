@@ -108,3 +108,72 @@
     - "Er det riktig å si at temaene «ikke er med i alle fag», ut fra at målene står i kompetansemål i fagene der det er relevant?"
   stikkord: [folkehelse, livsmestring, demokrati, medborgerskap, bærekraftig utvikling, bærekraft]
   relatert: [grunnleggende-ferdigheter, overordnet-del, laereplanverket]
+
+- id: laereplan
+  type: begrep
+  tittel: { nb: Læreplan i fag, nn: Læreplan i fag }
+  lenkeord: { nb: ["læreplan"], nn: ["læreplan"] }
+  tekst:
+    nb: En læreplan i fag er forskriften som sier hva opplæringen i et fag skal inneholde. Den begynner med en del om faget, med fagets relevans og sentrale verdier, kjerneelementer, tverrfaglige temaer og grunnleggende ferdigheter. Så kommer kompetansemål og vurdering for hvert trinn, og til slutt vurderingsordningen, fagkodene og timetallet. Læreplanene er en av de tre delene av læreplanverket. Fag og læreplaner i appen viser innholdet fra Grep, med lenke til læreplanen på udir.no.
+    nn: Ein læreplan i fag er forskrifta som seier kva opplæringa i eit fag skal innehalde. Han byrjar med ein del om faget, med relevansen og dei sentrale verdiane i faget, kjerneelement, tverrfaglege tema og grunnleggjande ferdigheiter. Så kjem kompetansemål og vurdering for kvart trinn, og til slutt vurderingsordninga, fagkodane og timetalet. Læreplanane er ein av dei tre delane av læreplanverket. Fag og læreplanar i appen viser innhaldet frå Grep, med lenkje til læreplanen på udir.no.
+  kilder:
+    - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), innholdsfortegnelsen", url: "https://www.udir.no/lk20/nor01-08/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-1 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-1" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Lenkeordet er «læreplan», så «læreplanen» i en tekst lenker hit. Er det riktig, eller blir det for mange lenker?"
+    - "Er rekkefølgen på delene i læreplanen beskrevet riktig, også for læreplaner i programfag og lærefag?"
+  stikkord: [læreplanen, LK20, fagfornyelsen, kjerneelementer, om faget, forskrift]
+  relatert: [laereplanverket, kompetansemal, vurderingsordning, fagkode, arstimetall]
+
+- id: kompetansemal
+  type: begrep
+  tittel: { nb: Kompetansemål, nn: Kompetansemål }
+  tekst:
+    nb: Kompetansemålene i læreplanen sier hva eleven, lærlingen eller kandidaten skal kunne etter et trinn eller når opplæringen i faget er slutt. De er grunnlaget for vurderingen i faget og skal forstås i lys av teksten om faget i læreplanen. Elevene og de som har opplæring i bedrift, skal være kjent med læreplanen. Eksamen skal også være i samsvar med kompetansemålene. Fag og læreplaner i appen viser kompetansemålene for hvert fag.
+    nn: Kompetansemåla i læreplanen seier kva eleven, lærlingen eller kandidaten skal kunne etter eit trinn eller når opplæringa i faget er slutt. Dei er grunnlaget for vurderinga i faget og skal forståast i lys av teksten om faget i læreplanen. Elevane og dei som har opplæring i bedrift, skal vere kjende med læreplanen. Eksamen skal også vere i samsvar med kompetansemåla. Fag og læreplanar i appen viser kompetansemåla for kvart fag.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-25 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-25" }
+    - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), Kompetansemål og vurdering", url: "https://www.udir.no/lk20/nor01-08/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «eleven, lærlingen eller kandidaten» en dekkende måte å si hvem kompetansemålene gjelder for?"
+    - "Bør begrepet også si at forutsetninger, fravær, orden og oppførsel ikke skal trekkes inn i vurderingen i fag (§ 9-1 tredje ledd)?"
+  stikkord: [kompetansemålene, læreplan, vurdering, grunnlag for vurdering, § 9-1]
+  relatert: [laereplan, kompetanse, sluttvurdering, vurderingsordning]
+
+- id: fagkode
+  type: begrep
+  tittel: { nb: Fagkode, nn: Fagkode }
+  tekst:
+    nb: En fagkode er koden for et fag på et bestemt trinn og nivå, for eksempel NOR1267 for norsk hovedmål skriftlig på Vg3 studieforberedende. Ett fag kan ha flere koder, for eksempel én for skriftlig og én for muntlig. Udir fastsetter fagkodene i Grep, og bare de kan føres på vitnemål og kompetansebevis. Hver læreplan har en liste over fagkodene sine, og under Fag og læreplaner i appen kan du søke på fagkoden.
+    nn: Ein fagkode er koden for eit fag på eit bestemt trinn og nivå, til dømes NOR1267 for norsk hovudmål skriftleg på Vg3 studieførebuande. Eitt fag kan ha fleire kodar, til dømes éin for skriftleg og éin for munnleg. Udir fastset fagkodane i Grep, og berre dei kan førast på vitnemål og kompetansebevis. Kvar læreplan har ei liste over fagkodane sine, og under Fag og læreplanar i appen kan du søkje på fagkoden.
+  kilder:
+    - { id: udir-regbok-oversikt, punkt: "A04 Fagkode (definisjon og utfyllende kommentar)", url: "https://regbok.udir.no/felt/?Id=1014304" }
+    - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), Fagkoder", url: "https://www.udir.no/lk20/nor01-08/fagkoder" }
+    - { id: udir-grep, punkt: Fagkoder }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplet med NOR1267 og skriftlig og muntlig godt valgt, eller bør eksemplet være et programfag?"
+  stikkord: [fagkoder, NOR1267, Grep, VIGO, kode, vitnemål]
+  relatert: [laereplan, fagmerknader, vitnemal-og-kompetansebevis]
+
+- id: arstimetall
+  type: begrep
+  tittel: { nb: Årstimetall, nn: Årstimetal }
+  lenkeord: { nb: ["årstimetall", "årstime"], nn: ["årstimetal", "årstimetall", "årstime"] }
+  tekst:
+    nb: Årstimetallet er antallet timer et fag har i løpet av et skoleår på et trinn, regnet i 60-minutters enheter. Det står i fag- og timefordelingen og under Timetall i læreplanen. Fraværsgrensen på 10 prosent regnes av årstimetallet i faget. Årstimetallet er noe annet enn årsrammen i SFS 2213, som er antallet undervisningstimer i faget som utgjør en hel stilling for læreren.
+    nn: Årstimetalet er talet på timar eit fag har i løpet av eit skoleår på eit trinn, rekna i 60-minutts einingar. Det står i fag- og timefordelinga og under Timetal i læreplanen. Fråværsgrensa på 10 prosent blir rekna av årstimetalet i faget. Årstimetalet er noko anna enn årsramma i SFS 2213, som er talet på undervisningstimar i faget som utgjer ei heil stilling for læraren.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 1.2 60-minutters enheter", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.260-minutters-enheter/" }
+    - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), Timetall", url: "https://www.udir.no/lk20/nor01-08/timetall" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det nyttig å skille årstimetallet fra årsrammen i SFS 2213 i samme begrep?"
+    - "Fylkeskommunen kan gi flere timer enn minstetimetallet. Bør begrepet si at det da er fylkets tall som gjelder for fraværsgrensen?"
+  stikkord: [årstimer, timetall, timer, 60-minutters enheter, fag- og timefordeling]
+  relatert: [fag-og-timefordeling, fravaersgrensen, arsramme, laereplan]

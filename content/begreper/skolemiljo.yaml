@@ -331,3 +331,18 @@
     - "Er det riktig at Elevundersøkelsen er obligatorisk for Vg1 og frivillig for Vg2 og Vg3, og at resultatene blir offentlige i desember?"
   stikkord: [elevundersøkelsen, elevundersøkinga, mobbing, trivsel, læringsmiljø, statistikk]
   relatert: [trygt-og-godt-skolemiljo]
+
+- id: elevrad
+  type: begrep
+  tittel: { nb: Elevråd, nn: Elevråd }
+  tekst:
+    nb: Hver videregående skole skal ha et elevråd som elevene ved skolen velger, men elevene kan velge å organisere seg på en annen måte. Elevene skal være representert i organene ved skolen. Representantene for elevene i videregående opplæring har møte- og talerett i fylkeskommunale nemnder på samme måte som de ansatte. Elevrådsarbeid som skolen har godkjent, regnes ikke som fravær.
+    nn: Kvar vidaregåande skole skal ha eit elevråd som elevane ved skolen vel, men elevane kan velje å organisere seg på ein annan måte. Elevane skal vere representerte i organa ved skolen. Representantane for elevane i vidaregåande opplæring har møte- og talerett i fylkeskommunale nemnder på same måten som dei tilsette. Elevrådsarbeid som skolen har godkjent, blir ikkje rekna som fråvær.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 10-5 Organiseringa av skoledemokratiet", url: "https://lovdata.no/lov/2023-06-09-30/§10-5" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet si noe om skoleutvalget eller andre brukerorganer, som fylkeskommunen bestemmer at skolene skal ha (§ 10-5 første ledd)?"
+  stikkord: [elevrådet, elevdemokrati, skoledemokrati, elevmedvirkning, tillitsvalgt, brukerorgan]
+  relatert: [elevens-beste, trygt-og-godt-skolemiljo]

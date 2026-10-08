@@ -6,17 +6,20 @@
 - id: ungdomsrett
   type: begrep
   tittel: { nb: Ungdomsrett, nn: Ungdomsrett }
+  lenkeord: { nb: ["ungdomsrett", "fullføringsrett"], nn: ["ungdomsrett", "fullføringsrett"] }
   tekst:
-    nb: Ungdomsrett er det vanlige navnet på retten til videregående opplæring etter opplæringslova § 5-1. Den har alle som har fullført grunnskolen eller tilsvarende, og den varer til studie- eller yrkeskompetanse, men ikke lenger enn ut skoleåret som starter det året eleven fyller 24. Søkere med ungdomsrett skal komme inn på ett av tre utdanningsprogram på Vg1 som de har søkt på.
-    nn: Ungdomsrett er det vanlege namnet på retten til vidaregåande opplæring etter opplæringslova § 5-1. Han har alle som har fullført grunnskolen eller tilsvarande, og han varer til studie- eller yrkeskompetanse, men ikkje lenger enn ut skoleåret som tek til det året eleven fyller 24. Søkjarar med ungdomsrett skal kome inn på eitt av tre utdanningsprogram på Vg1 som dei har søkt på.
+    nb: Ungdomsrett er det vanlige navnet på retten til videregående opplæring etter opplæringslova § 5-1. Den har alle som har fullført grunnskolen eller tilsvarende, og den varer til studie- eller yrkeskompetanse, men ikke lenger enn ut skoleåret som starter det året eleven fyller 24. Søkere med ungdomsrett skal komme inn på ett av tre utdanningsprogram på Vg1 som de har søkt på. Fordi retten varer til eleven har oppnådd kompetansen, og ikke et bestemt antall år, kalles den også fullføringsretten. Fag eleven allerede har bestått, er ikke med i retten.
+    nn: Ungdomsrett er det vanlege namnet på retten til vidaregåande opplæring etter opplæringslova § 5-1. Han har alle som har fullført grunnskolen eller tilsvarande, og han varer til studie- eller yrkeskompetanse, men ikkje lenger enn ut skoleåret som tek til det året eleven fyller 24. Søkjarar med ungdomsrett skal kome inn på eitt av tre utdanningsprogram på Vg1 som dei har søkt på. Fordi retten varer til eleven har oppnådd kompetansen, og ikkje eit bestemt tal år, blir han også kalla fullføringsretten. Fag eleven allereie har bestått, er ikkje med i retten.
   kilder:
     - { id: opplaeringslova, punkt: "§ 5-1 Rett til vidaregåande opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
-    - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+    - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring (og «Frem til studie- eller yrkeskompetanse»)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+    - { id: udir-fullforingsretten-iop, punkt: "Overskriften: «Fullføringsretten for elever med individuelt tilrettelagt opplæring»", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/" }
   kontrollert: null
   kontrollsporsmal:
     - "«Ungdomsrett» står ikke i loven, men brukes i Vestlands forskrift og i praksis. Er det greit å bruke ordet som navn på begrepet?"
-  stikkord: [rett til videregående, rett til vidaregåande, § 5-1, søker, søkjar]
-  relatert: [voksenrett, omvalg, sluttkompetanse]
+    - "Lagt til 08.10.2026: «Fullføringsretten» lenker hit, og begrepet sier at retten kalles det fordi den varer til eleven har oppnådd kompetansen. Er det riktig, eller bør fullføringsretten være et eget begrep?"
+  stikkord: [rett til videregående, rett til vidaregåande, § 5-1, søker, søkjar, fullføringsrett, fullføringsreformen]
+  relatert: [voksenrett, omvalg, sluttkompetanse, mer-opplaering, oppfolgingstjenesten]
 
 - id: voksenrett
   type: begrep
@@ -259,3 +262,19 @@
     - "Er «retten til ny opplæring i et fag» en god kort definisjon, når opplæringen kan ha færre timer enn vanlig?"
   stikkord: [meir opplæring, meropplæring, meiropplæring, ikke bestått, ikkje bestått, stryk, IV, § 5-2, fag- eller svenneprøve, fullføringsrett]
   relatert: [ungdomsrett, voksenrett, privatist]
+
+- id: oppfolgingstjenesten
+  type: begrep
+  tittel: { nb: Oppfølgingstjenesten, nn: Oppfølgingstenesta }
+  lenkeord: { nb: ["oppfølgingstjeneste"], nn: ["oppfølgingsteneste", "oppfølgingstjeneste"] }
+  tekst:
+    nb: Oppfølgingstjenesten (OT) er en tjeneste i fylkeskommunen for ungdom som har rett til videregående opplæring, men som verken er i opplæring eller i arbeid. Den skal sørge for at de får tilbud om videregående opplæring, arbeid eller andre tiltak som gir kompetanse. Oppfølgingstjenesten samordner tilbudene og samarbeidet mellom kommunen, fylkeskommunen og statlige etater som har ansvar for ungdommene. Ungdom er omfattet av tjenesten til utgangen av året de fyller 24 år.
+    nn: Oppfølgingstenesta (OT) er ei teneste i fylkeskommunen for ungdom som har rett til vidaregåande opplæring, men som verken er i opplæring eller i arbeid. Ho skal sørgje for at dei får tilbod om vidaregåande opplæring, arbeid eller andre tiltak som gir kompetanse. Oppfølgingstenesta samordnar tilboda og samarbeidet mellom kommunen, fylkeskommunen og statlege etatar som har ansvar for ungdommane. Ungdom er omfatta av tenesta til utgangen av året dei fyller 24 år.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 9-4 Oppfølgingsteneste for dei som ikkje er i vidaregåande opplæring eller arbeid", url: "https://lovdata.no/lov/2023-06-09-30/§9-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Mange fylkeskommuner har samlet PP-tjenesten og oppfølgingstjenesten i én enhet. Bør begrepet si det?"
+    - "Skolene melder fra til oppfølgingstjenesten når en elev slutter. Det står ikke i loven. Bør det stå i begrepet som praksis?"
+  stikkord: [OT, oppfølging, drop-out, slutter i skolen, avbrudd, ungdom utenfor skole og arbeid, NAV]
+  relatert: [ungdomsrett, pp-tjenesten, radgiving]
