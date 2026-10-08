@@ -4,6 +4,8 @@ Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen og
 
 *Status 08.10.2026:* Skrevet etter at eier ba om at designet løftes til dagens standard i hele appen. Fasen tas før fase 9 (eier 08.10.2026: «som neste skritt i prosjektet»). Arbeidsordren er klar til bruk.
 
+*Status 08.10.2026, ettermiddag:* Steg 1 er gjort: designprinsippene står i `docs/DESIGN.md`, og skissen står i testversjonen på `#/utvikling/design`. Spørsmålene til eier står i `docs/arbeidsordrer/fase-8b-forslag.md`. Eier godkjente designet samme dag, med en endring for de korte valgene (svarene står i forslagsfilen). Pakke 1 (kalkulatorene) er neste.
+
 ---
 
 Vi starter fase 8b i Jukselappen: **Designløft** (repo `larsarnenilssen/jukselappen`, appen på https://jukselappen.no). Skriv til meg på bokmål, kort og enkelt.

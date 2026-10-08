@@ -28,9 +28,16 @@ const utviklingsruter: Rute[] =
   ? [{ sti: '/utvikling/komponenter', tittel: 'utvikling.tittel', side: () => import('./sider/Komponentkatalog.tsx') }]
   : [];
 
+// Skissen til designløftet (fase 8b, docs/DESIGN.md) finnes også i testversjonen, men ikke i appen.
+const skisseruter: Rute[] =
+  import.meta.env.MODE !== 'production' || __TESTVERSJON__
+  ? [{ sti: '/utvikling/design', tittel: 'utvikling.design.tittel', side: () => import('./sider/Designskisse.tsx') }]
+  : [];
+
 export const ruter: readonly Rute[] = [
   ...kjerne,
   ...utviklingsruter,
+  ...skisseruter,
   ...alleRuter().map(({ modul, rute }) => ({ ...rute, modul: modul.id })),
 ];
 

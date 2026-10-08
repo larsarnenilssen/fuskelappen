@@ -51,6 +51,7 @@ export const ruter = [
   '#/om/kilder',
   '#/kategori/skolemiljo',
   '#/utvikling/komponenter',
+  '#/utvikling/design',
   '#/testmodul',
   '#/begreper',
   '#/begreper/testbegrep-skolemiljo',
