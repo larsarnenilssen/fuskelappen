@@ -825,7 +825,8 @@
 
 .fg-del-0 {
   background: var(--p-graa-400);
-  color: var(--farge-tekst);
+  /* Mørk tekst på den lyse grå delen, også i mørk visning (kontrast). */
+  color: var(--p-blekk);
 }
 
 .fg-del-1 {
@@ -836,9 +837,11 @@
   background: var(--p-blaa-500);
 }
 
+/* Den fremhevede delen (f.eks. lærerne som er 60 år eller eldre) i en mørk rav, så den hvite teksten har nok kontrast
+   (WCAG AA). Oransje (serie-2) har for lav kontrast mot både hvit og mørk tekst i små bokstaver. */
 .fg-del-3,
 .fg-del-fremhevet {
-  background: var(--serie-2);
+  background: var(--p-rav-700);
   color: var(--diagram-etikett);
 }
 
