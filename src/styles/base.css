@@ -3921,8 +3921,11 @@ p.fagkort-tittel {
   transition: grid-template-rows var(--varighet-lang) ease;
 }
 
+/* min-width: 0, så en tekst på én linje (f.eks. under «Flere kalkulatorer») kuttes med … i stedet for å gjøre
+   rutenettet bredere enn skjermen. */
 .gruppe-innhold-indre {
   min-height: 0;
+  min-width: 0;
 }
 
 .gruppe-innhold.animerer > .gruppe-innhold-indre,
