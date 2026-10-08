@@ -3,11 +3,11 @@ import { describe, expect, it } from 'vitest';
 import { grepFor, KJERNE, velgTester } from '../../scripts/e2e/velg.ts';
 
 describe('berørte ende-til-ende-tester', () => {
-  it('en modul gir spesifikasjonene sine og overflyt for rutene sine', () => {
+  it('en modul gir spesifikasjonene sine, og overflyt og teksthøyde for rutene sine', () => {
     const u = velgTester(['src/modules/inntak/sider/Frister.tsx', 'content/inntak/frister.yaml']);
     expect(u.speker).toEqual(['inntak']);
     expect(u.ruter).toEqual(['#/inntak']);
-    expect(grepFor(u)).toBe('(inntak\\.spec\\.ts|overflyt\\.spec\\.ts .*(#/inntak))');
+    expect(grepFor(u)).toBe('(inntak\\.spec\\.ts|(overflyt|teksthoyde)\\.spec\\.ts .*(#/inntak))');
   });
 
   it('strenger og data peker til modulene som bruker dem', () => {
@@ -16,11 +16,11 @@ describe('berørte ende-til-ende-tester', () => {
     expect(velgTester(['rules/sfs2213/2025.yaml']).speker).toEqual(['arbeidstid', 'kalkulator-fag']);
   });
 
-  it('felles kode gir kjernetestene og overflyt for alle rutene', () => {
+  it('felles kode gir kjernetestene, og overflyt og teksthøyde for alle rutene', () => {
     const u = velgTester(['src/components/Kortfot.tsx']);
     expect(u.speker).toEqual([...KJERNE].sort());
     expect(u.ruter).toBe('alle');
-    expect(grepFor(u)).toContain('overflyt\\.spec\\.ts');
+    expect(grepFor(u)).toContain('(overflyt|teksthoyde)\\.spec\\.ts');
   });
 
   it('faktaene i en modul og kortet gir testene for dagens jukselapp', () => {

@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Rettet
+
+- **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
+
 ## [0.44.0] – 2026-10-08
 
 ### Lagt til

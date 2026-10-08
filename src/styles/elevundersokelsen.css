@@ -25,7 +25,7 @@
   margin-right: var(--rom-1);
   border: 2px solid var(--eu-farge);
   background: var(--eu-farge);
-  vertical-align: -0.05em;
+  vertical-align: middle;
 }
 
 .eu-merke-sirkel {

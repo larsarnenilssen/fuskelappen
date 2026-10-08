@@ -74,7 +74,7 @@ button.nyh-sak {
 
 .nyh-les .ikon {
   margin-left: var(--rom-1);
-  vertical-align: -0.15em;
+  vertical-align: middle;
 }
 
 .nyh-les {
