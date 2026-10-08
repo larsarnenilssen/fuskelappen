@@ -158,8 +158,9 @@ export function Tallboks({ tittel, fylke = null, lenke, kilde, children }: { tit
       <p class="st-boks-tittel">{tittel}</p>
       <div class="st-boks-innhold">{children}</div>
       <p class="st-boks-lenke">
-        <a href={lenke ?? statistikkLenke(fylke)}>
-          {t('statistikk.merLenke')} <Ikon navn="hoyre" class="ikon-liten" />
+        <a class="pil-lenke" href={lenke ?? statistikkLenke(fylke)}>
+          {t('statistikk.merLenke')}
+          <Ikon navn="hoyre" class="ikon-liten" />
         </a>
         <span class="st-boks-kilde"> · {kilde ?? t('statistikk.kilde')}</span>
       </p>
@@ -206,8 +207,9 @@ export function FylketITall({ fylke, navn }: { fylke: string; navn: string }) {
       <Nokkeltall d={d} enhet={enhet} />
       <p class="st-boks-lenke">
         {plass && <>{t('statistikk.rangering.plassFylke', { sted: navn, plass: String(plass.plass), antall: String(rangert.length) })} </>}
-        <a href={statistikkLenke(fylke)}>
-          {t('statistikk.merLenke')} <Ikon navn="hoyre" class="ikon-liten" />
+        <a class="pil-lenke" href={statistikkLenke(fylke)}>
+          {t('statistikk.merLenke')}
+          <Ikon navn="hoyre" class="ikon-liten" />
         </a>
         <span class="st-boks-kilde"> · {t('statistikk.kilde')}</span>
       </p>

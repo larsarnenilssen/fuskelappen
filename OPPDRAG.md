@@ -615,6 +615,27 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 - Levert i 0.44.0 (08.10.2026): **Videregående i tall med tall fra SSB**. Oversikten har fire nøkkeltall fra Udir og tre temakort. Temasidene (Ungdom og søkere, Skolen, Læreplass og fullføring) har «Kort fortalt» og figurene fra Udir og SSB sammen: ungdomskull og framskriving, unge utenfor arbeid og utdanning, grunnskolepoeng, KOSTRA, lærerne og deltakelsen. Tallene hentes hver uke (avgjørelse 090). Tallboksene på de andre sidene har samme oppbygning og står etter sidens eget innhold (avgjørelse 091). SSB er godkjent som kilde av eier. Forslaget står i `docs/forslag/ssb.md`. Stien øverst på sidene står i én avrundet flate (variant D, eier 08.10.2026).
 
+### Fase 8b – Designløft
+
+*(Eier 08.10.2026:)* Designet har utviklet seg gjennom flere generasjoner. Eier foretrekker de siste delene: sidekolonnen på forsiden, kalenderen, nyhetene og Videregående i tall. Designet løftes til denne standarden i hele appen, uten nye funksjoner og uten å endre innholdet. Fasen tas som neste skritt, før fase 9. Arbeidsordren og kartleggingen står i `docs/arbeidsordrer/fase-8b-designloft.md`.
+
+**Leveranser**
+
+- Designprinsippene i `docs/DESIGN.md`, med skisse før og etter for de viktigste mønstrene, godkjent av eier før resten bygges.
+- Pakker, én om gangen, med skisse, PR og grønn CI:
+  1. kalkulatorene
+  2. fag og læreplaner
+  3. oversiktene i modulene
+  4. veiviserne
+  5. Regelverk, Læreplanverket og Begreper
+  6. Innstillinger, Om appen og Kilder
+  7. opprydding
+- Ingen nye farger. Stiler som ikke brukes lenger, fjernes.
+
+**Kontrollpunkt:** Eier ser gjennom appen på `test/` på mobil og skrivebord og opplever den som én helhet i den nyeste stilen.
+
+- Gjort før fasen (08.10.2026): merker, piler og ikoner ved tekst står midt i teksthøyden i hele appen, og en test sjekker det (avgjørelse 092).
+
 ### Fase 9 – Lokale regler for fylke og skole
 
 *(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-9.md`.

@@ -135,10 +135,11 @@ export function velgTester(endrede: readonly string[]): Utvalg {
 /** Escaper tegn med betydning i et regulært uttrykk. */
 const escape = (tekst: string) => tekst.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/** Uttrykket til `--grep`: hele spesifikasjonene, og overflyttestene for rutene. `null` når ingenting skal kjøres. */
+/** Uttrykket til `--grep`: hele spesifikasjonene, og overflyt- og teksthøydetestene for rutene. `null` når ingenting skal kjøres. */
 export function grepFor(utvalg: Utvalg): string | null {
   const deler = utvalg.speker.map((s) => `${escape(s)}\\.spec\\.ts`);
-  if (utvalg.ruter === 'alle') deler.push('overflyt\\.spec\\.ts');
-  else if (utvalg.ruter.length > 0) deler.push(`overflyt\\.spec\\.ts .*(${utvalg.ruter.map(escape).join('|')})`);
+  // Overflyten og plasseringen av merker og ikoner i teksthøyden (avgjørelse 092) testes for de samme rutene.
+  if (utvalg.ruter === 'alle') deler.push('(overflyt|teksthoyde)\\.spec\\.ts');
+  else if (utvalg.ruter.length > 0) deler.push(`(overflyt|teksthoyde)\\.spec\\.ts .*(${utvalg.ruter.map(escape).join('|')})`);
   return deler.length > 0 ? `(${deler.join('|')})` : null;
 }

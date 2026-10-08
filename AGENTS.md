@@ -89,6 +89,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Native scroll og tilbakenavigasjon. Ingen egne sveipebevegelser for navigasjon.
 - Pinch-zoom slås ikke av globalt.
 - Forklaringer er skjult til brukeren åpner dem.
+- Merker, piler og ikoner som står sammen med tekst, står midt i teksthøyden: `vertical-align: middle` i løpende tekst, `align-items: center` i flex og grid, uten egne småjusteringer (eier 08.10.2026, avgjørelse 092). Testes for alle rutene.
 - Meldinger over hele appen, som meldingen om ny versjon og velkomsten, bruker `Overlegg`: et kort over et uklart slør, med tynn ramme i merkefargen (eier 08.10.2026, avgjørelse 088).
 - Nye sider med flere deler står i to kolonner på skrivebord (`ToKolonner`, fra 64rem): de første delene til venstre og resten til høyre, så rekkefølgen på mobil er den samme. Kildene til siden står i en lukket boks nederst i høyre kolonne (`Kildeboks`), ikke rett på bakgrunnen (eier 06.10.2026, avgjørelse 074).
 - Kort, bokser og rader som kan åpnes, husker for siden om de er åpne (`useHusketApen`), så tilbake fra en lenke (f.eks. en paragraf under «I regelverket») viser siden slik den var, der den var (eier 06.10.2026, avgjørelse 072).

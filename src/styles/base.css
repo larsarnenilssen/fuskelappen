@@ -268,10 +268,22 @@ main {
   color: var(--farge-tekst-dempet);
 }
 
+/* En lenke med pil etter teksten («Mer i Videregående i tall ›»): pilen står midt i teksthøyden, og understreken
+   går bare under teksten. */
+.pil-lenke {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+/* Ikoner og merker som står sammen med tekst, står midt i teksthøyden (eier 08.10.2026, avgjørelse 092):
+   vertical-align: middle i løpende tekst, og align-items: center i flex og grid. Ingen egne småjusteringer
+   (-0.15em o.l.). Testes i tests/e2e/teksthoyde.spec.ts. */
 .ikon {
   width: 1.5rem;
   height: 1.5rem;
   flex: none;
+  vertical-align: middle;
 }
 
 .ikon-liten {
@@ -809,7 +821,7 @@ main {
 }
 
 .kildelenke .ikon {
-  vertical-align: -0.15em;
+  vertical-align: middle;
   margin-left: 0.2em;
 }
 
@@ -2719,7 +2731,7 @@ p.fagkort-tittel {
 }
 
 .fagfilter .lenkeknapp .ikon {
-  vertical-align: -0.15em;
+  vertical-align: middle;
   margin-right: var(--rom-1);
 }
 
@@ -4287,7 +4299,7 @@ p.fagkort-tittel {
 
 .fagrad-pil {
   margin-left: var(--rom-1);
-  vertical-align: -0.15em;
+  vertical-align: middle;
 }
 
 .fagrad-timer {
@@ -6539,7 +6551,7 @@ button.frist-stripe-celle:hover {
   height: 0.7rem;
   margin-right: var(--rom-1);
   border-radius: 3px;
-  vertical-align: -1px;
+  vertical-align: middle;
   background: var(--tegn);
 }
 
@@ -7700,7 +7712,7 @@ a.knapp {
   margin-right: var(--rom-1);
   border-radius: 2px;
   background: var(--fb-farge);
-  vertical-align: -0.1em;
+  vertical-align: middle;
 }
 
 .fb-fakta {
