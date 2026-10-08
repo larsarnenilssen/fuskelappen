@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { oversiktsid } from '../../favoritter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
@@ -56,19 +57,26 @@ export default function Oversikt() {
   }, []);
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
   return (
-    <div class="side">
+    <div class="side side-bred">
       <Sidetopp tittel={t('tilrettelegging.tittel')} favoritt={oversiktsid('tilrettelegging')} />
-      <p class="ingress"><Begrepstekst tekst={t('tilrettelegging.innledning')} /></p>
-      <Figur />
-      {innhold === null ? (
-        <p class="dempet">{t('app.lasterInn')}</p>
-      ) : (
-        <section>
-          <h2 class="liten-overskrift">{t('tilrettelegging.veivisere')}</h2>
-          {/* Like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren (eier 03.10.2026). */}
-          <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
-        </section>
-      )}
+      <p class="ingress">
+        <Begrepstekst tekst={t('tilrettelegging.innledning')} />
+      </p>
+      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): figuren til venstre, veiviserne til høyre. */}
+      <ToKolonner
+        hoved={<Figur />}
+        side={
+          <section class="lop-del">
+            <h2 class="liten-overskrift">{t('tilrettelegging.veivisere')}</h2>
+            {/* Like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren (eier 03.10.2026). */}
+            {innhold === null ? (
+              <p class="dempet">{t('app.lasterInn')}</p>
+            ) : (
+              <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
+            )}
+          </section>
+        }
+      />
     </div>
   );
 }

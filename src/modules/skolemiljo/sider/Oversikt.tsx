@@ -4,6 +4,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { oversiktsid } from '../../favoritter.ts';
@@ -19,36 +20,45 @@ export default function Oversikt() {
   }, []);
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
   return (
-    <div class="side">
+    <div class="side side-bred">
       <Sidetopp tittel={t('skolemiljo.tittel')} favoritt={oversiktsid('skolemiljo')} />
       <p class="ingress">
         <Begrepstekst tekst={t('skolemiljo.innledning')} />
       </p>
-      {/* Retten og pliktene øverst (eier 06.10.2026): kapittel 12. Elevundersøkelsen er egen modul (avgjørelse 087). */}
-      <section>
-        <h2 class="liten-overskrift">{t('skolemiljo.rettenOgResultatene')}</h2>
-        <ul class="vu-videre">
-          <li>
-            <Inngang {...UNDERSIDER.kapittel12} tittel={t('skolemiljo.kapittel12.kort')} tekst={t('skolemiljo.kapittel12.beskrivelse')} />
-          </li>
-        </ul>
-      </section>
-      {innhold === null ? (
-        <p class="dempet">{t('app.lasterInn')}</p>
-      ) : (
-        <section>
-          <h2 class="liten-overskrift">{t('skolemiljo.veivisere')}</h2>
-          <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
-        </section>
-      )}
-      <section>
-        <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
-        <ul class="vu-videre">
-          <li>
-            <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
-          </li>
-        </ul>
-      </section>
+      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): retten og skolereglene til venstre, veiviseren til høyre. */}
+      <ToKolonner
+        hoved={
+          <>
+            {/* Retten og pliktene øverst (eier 06.10.2026): kapittel 12. Elevundersøkelsen er egen modul (avgjørelse 087). */}
+            <section class="lop-del">
+              <h2 class="liten-overskrift">{t('skolemiljo.rettenOgResultatene')}</h2>
+              <ul class="vu-videre">
+                <li>
+                  <Inngang {...UNDERSIDER.kapittel12} tittel={t('skolemiljo.kapittel12.kort')} tekst={t('skolemiljo.kapittel12.beskrivelse')} />
+                </li>
+              </ul>
+            </section>
+            <section class="lop-del">
+              <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
+              <ul class="vu-videre">
+                <li>
+                  <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
+                </li>
+              </ul>
+            </section>
+          </>
+        }
+        side={
+          <section class="lop-del">
+            <h2 class="liten-overskrift">{t('skolemiljo.veivisere')}</h2>
+            {innhold === null ? (
+              <p class="dempet">{t('app.lasterInn')}</p>
+            ) : (
+              <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
+            )}
+          </section>
+        }
+      />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import { lastOpplaeringskontor } from '../../../data/udir.ts';
 import type { Opplaeringskontorer } from '../nor/skjema.ts';
 import { filtrerSkoler, type Skoleoppforing } from '../skoler.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { oversiktsid } from '../../favoritter.ts';
 import { UNDERSIDER } from '../favoritter.ts';
@@ -19,7 +20,6 @@ import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { useVeier } from '../fagbrev/data.ts';
 
 const MAKS_TREFF = 40;
-
 
 /**
  * Den andre delen av modulen: skoleoppslaget og opplæringskontorene, som kort med det viktigste tallet, på samme måte
@@ -49,7 +49,13 @@ function Innganger() {
             {t('opplaeringslop.skoler.tittel')}
           </span>
           <span class="frist-inngang-neste">
-            {register && <span class="frist-inngang-tid">{sted ? t('opplaeringslop.inngang.skolerFylke', { antall: formaterTall(iFylket(register.skoler)), fylke: sted }) : t('opplaeringslop.inngang.skoler', { antall: formaterTall(register.skoler.length) })}</span>}
+            {register && (
+              <span class="frist-inngang-tid">
+                {sted
+                  ? t('opplaeringslop.inngang.skolerFylke', { antall: formaterTall(iFylket(register.skoler)), fylke: sted })
+                  : t('opplaeringslop.inngang.skoler', { antall: formaterTall(register.skoler.length) })}
+              </span>
+            )}
             <span>{t('opplaeringslop.inngang.skolerTekst')}</span>
           </span>
           <Ikon navn="hoyre" class="frist-inngang-pil" />
@@ -60,7 +66,13 @@ function Innganger() {
             {t('opplaeringslop.kontor.tittel')}
           </span>
           <span class="frist-inngang-neste">
-            {kontorer !== null && <span class="frist-inngang-tid">{sted ? t('opplaeringslop.tilbud.kontorFylke', { antall: formaterTall(kontorer), fylke: sted }) : t('opplaeringslop.tilbud.kontorLandet', { antall: formaterTall(kontorer) })}</span>}
+            {kontorer !== null && (
+              <span class="frist-inngang-tid">
+                {sted
+                  ? t('opplaeringslop.tilbud.kontorFylke', { antall: formaterTall(kontorer), fylke: sted })
+                  : t('opplaeringslop.tilbud.kontorLandet', { antall: formaterTall(kontorer) })}
+              </span>
+            )}
             <span>{t('opplaeringslop.inngang.kontorTekst')}</span>
           </span>
           <Ikon navn="hoyre" class="frist-inngang-pil" />
@@ -92,7 +104,9 @@ function Skoletreff({ sok, treff }: { sok: string; treff: readonly Skoleoppforin
       </ul>
       {treff.length > MAKS_SKOLER && (
         <p class="liten">
-          <a href={lenke('/opplaeringslop/skoler', { fylke: 'alle', q: sok })}>{t('opplaeringslop.oversikt.alleSkoler', { antall: formaterTall(treff.length) })}</a>
+          <a href={lenke('/opplaeringslop/skoler', { fylke: 'alle', q: sok })}>
+            {t('opplaeringslop.oversikt.alleSkoler', { antall: formaterTall(treff.length) })}
+          </a>
         </p>
       )}
     </section>
@@ -120,7 +134,7 @@ export default function Oversikt() {
       ? t('opplaeringslop.oversikt.ingenTreff')
       : t('opplaeringslop.oversikt.antallTreffBegge', { tilbud: formaterTall(treff.length), skoler: formaterTall(skoletreff.length) });
   return (
-    <div class="side lop-oversikt">
+    <div class="side side-bred lop-oversikt">
       <Sidetopp tittel={t('opplaeringslop.tittel')} favoritt={oversiktsid('opplaeringslop')} />
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.innledning')} />
@@ -160,44 +174,51 @@ export default function Oversikt() {
               <Skoletreff sok={sok} treff={skoletreff} />
             </>
           ) : (
-            <>
-              <section class="lop-del" aria-labelledby="lop-del-program">
-                <h2 class="liten-overskrift" id="lop-del-program">
-                  {t('opplaeringslop.oversikt.program')}
-                </h2>
-                <div class="lop-innganger">
-                  {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
-                  <a class="frist-inngang" href={`#${UNDERSIDER.lop.rute}`}>
-                    <span class="frist-inngang-tittel">
-                      <Ikon navn={UNDERSIDER.lop.ikon} />
-                      {t('opplaeringslop.lop.tittel')}
-                    </span>
-                    <span class="frist-inngang-neste">
-                      <span class="frist-inngang-tid">
-                        {visning.skole
-                          ? t('opplaeringslop.inngang.programSkole', { antall: formaterTall(tilbudPerProgram(data.indeks, visning.skole).size), skole: visning.skole.navn })
-                          : t('opplaeringslop.inngang.program', { antall: formaterTall(data.tilbud.struktur.length) })}
+            // To kolonner på skrivebord (fase 8b, docs/DESIGN.md): programmene og løpene til venstre, skolene og
+            // opplæringskontorene til høyre.
+            <ToKolonner
+              hoved={
+                <section class="lop-del" aria-labelledby="lop-del-program">
+                  <h2 class="liten-overskrift" id="lop-del-program">
+                    {t('opplaeringslop.oversikt.program')}
+                  </h2>
+                  <div class="lop-innganger">
+                    {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
+                    <a class="frist-inngang" href={`#${UNDERSIDER.lop.rute}`}>
+                      <span class="frist-inngang-tittel">
+                        <Ikon navn={UNDERSIDER.lop.ikon} />
+                        {t('opplaeringslop.lop.tittel')}
                       </span>
-                      <span>{t('opplaeringslop.inngang.programTekst')}</span>
-                    </span>
-                    <Ikon navn="hoyre" class="frist-inngang-pil" />
-                  </a>
-                  {/* Veiene til fag- og svennebrev (fase 6, pakke 6, eier 04.10.2026). */}
-                  <a class="frist-inngang" href={`#${UNDERSIDER.fagbrev.rute}`}>
-                    <span class="frist-inngang-tittel">
-                      <Ikon navn={UNDERSIDER.fagbrev.ikon} />
-                      {t('opplaeringslop.fagbrev.tittel')}
-                    </span>
-                    <span class="frist-inngang-neste">
-                      {veier && <span class="frist-inngang-tid">{t('opplaeringslop.fagbrev.inngang', { antall: formaterTall(veier.veier.length) })}</span>}
-                      <span>{t('opplaeringslop.fagbrev.inngangTekst')}</span>
-                    </span>
-                    <Ikon navn="hoyre" class="frist-inngang-pil" />
-                  </a>
-                </div>
-              </section>
-              <Innganger />
-            </>
+                      <span class="frist-inngang-neste">
+                        <span class="frist-inngang-tid">
+                          {visning.skole
+                            ? t('opplaeringslop.inngang.programSkole', {
+                                antall: formaterTall(tilbudPerProgram(data.indeks, visning.skole).size),
+                                skole: visning.skole.navn,
+                              })
+                            : t('opplaeringslop.inngang.program', { antall: formaterTall(data.tilbud.struktur.length) })}
+                        </span>
+                        <span>{t('opplaeringslop.inngang.programTekst')}</span>
+                      </span>
+                      <Ikon navn="hoyre" class="frist-inngang-pil" />
+                    </a>
+                    {/* Veiene til fag- og svennebrev (fase 6, pakke 6, eier 04.10.2026). */}
+                    <a class="frist-inngang" href={`#${UNDERSIDER.fagbrev.rute}`}>
+                      <span class="frist-inngang-tittel">
+                        <Ikon navn={UNDERSIDER.fagbrev.ikon} />
+                        {t('opplaeringslop.fagbrev.tittel')}
+                      </span>
+                      <span class="frist-inngang-neste">
+                        {veier && <span class="frist-inngang-tid">{t('opplaeringslop.fagbrev.inngang', { antall: formaterTall(veier.veier.length) })}</span>}
+                        <span>{t('opplaeringslop.fagbrev.inngangTekst')}</span>
+                      </span>
+                      <Ikon navn="hoyre" class="frist-inngang-pil" />
+                    </a>
+                  </div>
+                </section>
+              }
+              side={<Innganger />}
+            />
           )}
         </>
       )}
