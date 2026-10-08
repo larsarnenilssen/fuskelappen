@@ -187,21 +187,22 @@
   white-space: nowrap;
 }
 
+/* Utfallet står på en flate i statusfargen med tynn kant, som statusboksen i Kilder (fase 8b, docs/DESIGN.md). */
 .fr-utfall {
   margin: var(--rom-3) 0;
   padding: var(--rom-3) var(--rom-4);
-  border-left: 4px solid var(--farge-ok);
-  border-radius: var(--radius-s);
+  border: var(--strek) solid var(--farge-ok);
+  border-radius: var(--radius-m);
   background: var(--farge-ok-flate);
 }
 
 .fr-skjonn .fr-utfall {
-  border-left-color: var(--farge-advarsel);
+  border-color: var(--farge-advarsel);
   background: var(--farge-advarsel-flate);
 }
 
 .fr-over .fr-utfall {
-  border-left-color: var(--farge-feil);
+  border-color: var(--farge-feil);
   background: var(--farge-feil-flate);
 }
 
@@ -229,8 +230,9 @@
   margin-top: 0.1rem;
 }
 
+/* Fraværet etter grensen hører til avkryssingen over og står på en myk flate under den. */
 .fr-helse-etter {
-  margin-left: var(--rom-2);
-  padding-left: var(--rom-3);
-  border-left: 3px solid var(--farge-kant);
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
 }

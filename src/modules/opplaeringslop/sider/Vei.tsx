@@ -66,7 +66,7 @@ export default function Vei({ parametre }: SideProps) {
             <Stegrad vei={vei} />
           </section>
           {/* Faktaene om veien i en egen ramme, så de skiller seg fra stegene og overgangene (eier 06.10.2026, runde 2). */}
-          <section class="fb-om" aria-labelledby="fb-om">
+          <section class="kort kort-med-topp fb-om" aria-labelledby="fb-om">
             <h2 class="liten-overskrift" id="fb-om">
               {t('opplaeringslop.fagbrev.omVeien')}
             </h2>

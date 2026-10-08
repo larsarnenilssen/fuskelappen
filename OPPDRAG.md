@@ -635,6 +635,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 **Kontrollpunkt:** Eier ser gjennom appen på `test/` på mobil og skrivebord og opplever den som én helhet i den nyeste stilen.
 
 - Gjort før fasen (08.10.2026): merker, piler og ikoner ved tekst står midt i teksthøyden i hele appen, og en test sjekker det (avgjørelse 092).
+- Levert på `main` 08.10.2026 (PR #135–#145), ennå ikke i en versjon: prinsippene i `docs/DESIGN.md`, godkjent av eier etter skissen, og alle sju pakkene. I tillegg etter eiers ønsker underveis: samme overskrifter i kalkulatorene som på fagarket, gule svar og like brede knapper med ikon i veiviserne, og streken for landet rett i figurene i Videregående i tall. En test stopper tykke streker til venstre utenfor sitatene, tallboksene og «Kort fortalt». Før og etter for hver pakke står i `docs/arbeidsordrer/fase-8b-forslag.md`. **Venter på eiers kontrollpunkt.**
 
 ### Fase 9 – Lokale regler for fylke og skole
 

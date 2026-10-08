@@ -10,11 +10,9 @@ test.describe('ingen horisontal overflyt i 320–430 px', { tag: '@mobil' }, () 
     test(rute, async ({ page }) => {
       // Fagsøket, tilbudene i Opplæringsløp, overordnet del, dokumentene i Regelverk og Arbeidsplan åpner mange grupper og lister i fem bredder (opptil 100
       // trykk). Det tar nær 30 sekunder i WebKit i CI, så testen får mer tid. Arbeidsplan (12 deler, 60 trykk) gikk over 30 sekunder 05.10.2026.
-      // Skissen til designløftet har alt to ganger, før og etter, og gikk over 30 sekunder 08.10.2026.
       test.slow(
         rute === '#/fag' ||
           rute === '#/arbeidstid/arbeidsplan' ||
-          rute === '#/utvikling/design' ||
           rute.startsWith('#/opplaeringslop/') ||
           rute.startsWith('#/laereplanverket') ||
           rute.startsWith('#/lov/'),

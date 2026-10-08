@@ -55,8 +55,9 @@ const stedITekst = (d: Statistikk, enhet: string, t: T) => (enhet === 'L' ? t('s
 function Flis({ etikett, verdi, under }: { etikett: string; verdi: string; under: ComponentChildren }) {
   return (
     <li class="st-flis">
-      <span class="st-flis-etikett">{etikett}</span>
+      {/* Tallet først og stort, teksten under (fase 8b, D5, docs/DESIGN.md). */}
       <span class="st-flis-tall">{verdi}</span>
+      <span class="st-flis-etikett">{etikett}</span>
       <span class="st-flis-under">{under}</span>
     </li>
   );
@@ -332,19 +333,19 @@ export function SkolenITall({ orgnr, d, children }: { orgnr: string; d: Statisti
     <div class="st-skolen">
       <div class="st-skolen-hoved">
         <p class="st-skolen-tittel">{t('statistikk.skolen.tittel')}</p>
-        {/* Etiketten, tallet og teksten under står i hver sin rad, så tallene står på samme linje. */}
+        {/* Tallet, etiketten og teksten under står i hver sin rad, så tallene står på samme linje (tallet først, D5). */}
         <ul class="st-skolen-tall">
           {elever && (
             <li>
-              <span class="st-flis-etikett">{t('statistikk.skolen.elever', { skolear: (d.elever.skolear.at(-1) ?? '').replace('-', '–') })}</span>
               <b>{tekstFor(t, sisteVerdi(elever))}</b>
+              <span class="st-flis-etikett">{t('statistikk.skolen.elever', { skolear: (d.elever.skolear.at(-1) ?? '').replace('-', '–') })}</span>
               <span class="st-flis-under">{endringTekst(t, sisteVerdi(elever), forrigeVerdi(elever), (d.elever.skolear.at(-2) ?? '').replace('-', '–')) ?? ''}</span>
             </li>
           )}
           {fravaer !== null && (
             <li>
-              <span class="st-flis-etikett">{t('statistikk.skolen.fravaer', { skolear: d.fravaer.skolear.replace('-', '–') })}</span>
               <b>{t('statistikk.skolen.fravaerVerdi', { dager: tekstFor(t, fravaer, 'dager') })}</b>
+              <span class="st-flis-etikett">{t('statistikk.skolen.fravaer', { skolear: d.fravaer.skolear.replace('-', '–') })}</span>
               <span class="st-flis-under">{t('statistikk.skolen.fravaerUnder')}</span>
             </li>
           )}

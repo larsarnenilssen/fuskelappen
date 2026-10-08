@@ -2,7 +2,7 @@
 
 Dagens standard for hele appen (fase 8b, eier 08.10.2026). Den bygger på de nyeste delene: sidekolonnen på forsiden, Kalender, Nyheter og Videregående i tall. Nye sider følger reglene her, og eldre sider løftes til dem i fase 8b.
 
-Godkjent av eier 08.10.2026 etter skissen på `#/utvikling/design` i testversjonen (svarene står i `docs/arbeidsordrer/fase-8b-forslag.md`).
+Godkjent av eier 08.10.2026 etter en skisse i testversjonen, som ble fjernet i oppryddingen (svarene står i `docs/arbeidsordrer/fase-8b-forslag.md`).
 
 Reglene i AGENTS.md under «Grensesnitt» gjelder fortsatt. Denne filen sier hvordan det skal se ut.
 
@@ -36,7 +36,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Hvit flate** (`--farge-flate`) er kort og bokser med sidens eget innhold.
 - **Myk flate i temafargen** (`--farge-flate-2` og blandingene `--farge-sidekolonne` og `--farge-itall-flate`) er det som står rundt eller oppsummerer: sidekolonnen, «Kort fortalt», temakortene, lenkelinjen nederst i en boks («Hele kalenderen») og tallboksene.
 - En boks inni en boks unngås. Trengs det, er den indre en myk flate uten kant.
-- **Strek til venstre** (4 px) brukes bare der den sier at innholdet kommer fra et annet sted eller oppsummerer siden: tallboksene fra Videregående i tall, «Kort fortalt» og sitert lov- og forskriftstekst.
+- **Strek til venstre** (4 px) brukes bare der den sier at innholdet kommer fra et annet sted eller oppsummerer siden: tallboksene fra Videregående i tall, «Kort fortalt» og sitert lov- og forskriftstekst. Andre steder blir den stoppet av `tests/unit/designregler.test.ts`, som har listen over de tillatte.
 
 *Eksempler:* sidekolonnen på forsiden, «Kort fortalt» på temasidene, tallboksene.
 
