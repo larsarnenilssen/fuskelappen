@@ -1,542 +1,542 @@
 {
   "skjema": 1,
-  "kjort": "2026-10-08T08:34:40.019Z",
+  "kjort": "2026-10-08T10:24:16.473Z",
   "kilder": {
     "ks-sfs2213-avtaletekst": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:1c68729cdb42f9a73ce42cdae825a5f7e96507fc9361cb9488f0309ef1ad27ce",
       "endret_siden": null,
       "melding": null
     },
     "udf-sfs2213": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:d1b8febc2b1223305afe1026a957e51e421427abf671dac17ab04986ed995465",
       "endret_siden": null,
       "melding": null
     },
     "ks-hovedtariffavtalen": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:9060856923b545153ae7c4c2072d411157afe5f2fcfb08da5be1f374f86bc745",
       "endret_siden": null,
       "melding": null
     },
     "arbeidsmiljoloven": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:3a795969f3c58abf9fe8d4bddc30e2144df258e9cc09cc7a09727731783966cd",
       "endret_siden": null,
       "melding": null
     },
     "opplaeringslova": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:7c8e68bb834be349f49f4ce46a4380a5fdd99dedea6852295d135d98166a0cc7",
       "endret_siden": null,
       "melding": null
     },
     "opplaeringsforskrifta": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:bd073b579fdbe326b5eda854b99bcb4df7764c1374a0b3827866791936ecc03f",
       "endret_siden": null,
       "melding": null
     },
     "privatskolelova": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:4950774f34322e5069620b61d97bad86bcb90badfc617d9885a3eda7bedd0761",
       "endret_siden": null,
       "melding": null
     },
     "privatskoleforskrifta": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:811b72ea5d27ac1e171d3213dc458ac665b3badbbfa2e8b96d99e5ee7e80fd9b",
       "endret_siden": null,
       "melding": null
     },
     "forvaltningsloven": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:bbe45b2a0b79981bc1fafe4ed40b8b9848dc6499980c7065fc5c1b5fc4b6f737",
       "endret_siden": null,
       "melding": null
     },
     "offentleglova": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:54fad107c57d01d86ff9b4918ea25ed082fe1695369c1dc994e095beecb78bf7",
       "endret_siden": null,
       "melding": null
     },
     "arkivlova": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:1d93877fb5485f72a1161de33798ddc2283f47f72f7a86ba788a37c3b42de7bf",
       "endret_siden": null,
       "melding": null
     },
     "offentlegforskrifta": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:e7bbb030be6bb48773a9325d4af83e631acae32e0add9a6a39b8a886129d14c9",
       "endret_siden": null,
       "melding": null
     },
     "arkivforskrifta": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:524596eba740d9a08957a1b95decbf60e9596d6ee3f1f960a31642c3063f0a9c",
       "endret_siden": null,
       "melding": null
     },
     "forskrift-helse-miljo-skoler": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:2a0d81baaebc417cf8e0e9fbe665f72bc4fd77895834d14976a5c229c7d336d5",
       "endret_siden": null,
       "melding": null
     },
     "udir-grep": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:97b3a183988d6a69574cbc19c718abca29109eaabcbd8d6b291a4f0de358740e",
       "endret_siden": null,
-      "melding": "Tatt inn automatisk: 4 endringer i fag."
+      "melding": null
     },
     "udir-fag-og-timefordeling": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:a5fe5acba90f0c5b5d01b4dcd3589e34e4c8b4126e4edddfa7a21ed87ba73222",
       "endret_siden": null,
       "melding": null
     },
     "udir-fag-og-timefordeling-forside": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:249ce9893f401710fc7003cd161c6f70250accae6e6313fa1beb41d619a6ded8",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-regbok-programomradekode": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:64e3131e4a0a21b10f0675536c5e63a7e7b1dab10f964e574fee93a02573683b",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-yff-forskrift": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:4dffa26609a0641e398710a171f0b12a0eddc4320d4ece6ac6ccc8806d9b8e79",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-foring-vitnemal-merknader": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:4418ff1c52eb68e3ff719296eea9ade97a40ac5a5ebfbbde5e8a34a709c79b95",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-regbok-fam": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:7ef8d225a2641ec70ac31e8cf7099d1accf25d9ff2eb4be2eee0c201070fe4d2",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-regbok-vmm": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:e479a309c167d2ae37869406d1eee02aef6b0aa6735b182592e42cc95f86bda3",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "vigo-kodeverk": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:0113387e09de7d3f7d3a266d774bbcdcae08a6564bee7f8e52f789d33584d9fc",
       "endret_siden": null,
       "melding": null
     },
     "utdanning-no": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:49187eb917b2140dfc8d0dbcddf7e736598a7826aecdbc90e70e2f1ff369bc88",
       "endret_siden": null,
       "melding": null
     },
     "utdanning-no-beskrivelser": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:c63e96d3f4e361bb6fa869d93efc588746a9a9e7e6bae116f6c98ba9f5b4805f",
       "endret_siden": null,
       "melding": null
     },
     "udir-nor": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:1ed328c3565170cc3072c5170c87e26ee2b1ab2dc55d0e0bd9aadd5d41219f9c",
       "endret_siden": null,
-      "melding": "Tatt inn automatisk: 3 endringer fra NOR."
+      "melding": null
     },
     "ndla": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:77a5a6cf85d9972060848fedffbe6efcbb9918a32fb6ae7381e779ecc5ae54d5",
       "endret_siden": null,
       "melding": null
     },
     "udir-lareplanverket": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:0f82148c9ac275cac6851296383da2e288474823806a5896889658e74c34cee5",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "lovdata-lokale": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:25f3ba9dea135fac34594637b8839a54915ab98182c14b6c61164780dc3a4ebb",
       "endret_siden": null,
       "melding": null
     },
     "vestland-forskrift-inntak": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:8f949cde606bfe9acdfbca89055e7ce27f112e7f7f93f653c07b1bfbbd058b2c",
       "endret_siden": null,
       "melding": null
     },
     "vestland-forskrift-skulereglar": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:0bb9562ae8391377b360ef06f171c051b8b763b8c76a18786c419eda4b1f47d1",
       "endret_siden": null,
       "melding": null
     },
     "udir-lokale-forskrifter": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:031d3ba80557916c5550ef487aca137450b03e1305717cd97af6bdafdf268a64",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-ord-og-omgrep": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:777be696fa1fd1360ef8d191f5357cb598de09ee95e5d1db78dd87f1a78758cf",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-veileder-tilpasset-opplaering": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:4fbe5c3c4bb76ff75191cdec6d94226e96646372552cf782e73761f4cb1fc9ed",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-sarskilt-sprakopplaring": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:f86756f5d3341e54fa045a857390f7aaff637d73599c5a7560907cf6129407fa",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-innforingsopplaring": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:ed9f5433cea9d776ef97f6007297780e2f496673ce472d666b2c27fa7b093362",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-minoritetsspraklige": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:d67444a3bfd01dc6bc36c77fa11b71ab094005eaa010e8fc91d8353451f9f452",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-retten-til-vgo": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:5d46b396fcd53721c25546f8c3cfb10982fa9e60ca1daf8cfa66acf1e96b718d",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-rundskriv-skolemiljo": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:84d166ddd53a120697ef20dd1bee7ec01551bad8430a7dd0d1572709d66d86cf",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-rundskriv-skolemiljo-statsforvalteren": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:909db6c64d5ebed7c9cdc53a5df7a9f2ef3afc666840f46d69121f7c7a3827c6",
-      "endret_siden": "2026-10-06T21:20:47.959Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-rundskriv-skolemiljo-hvem": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:3abcef62f4f5133eaff5f74bff2669772676ecf98208e2487b2da9496c153992",
-      "endret_siden": "2026-10-06T21:20:47.959Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-rundskriv-skolemiljo-retten": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:311dae08d215ec9b1e982541e88a0c18196af1d604acb1a7d57416d0f4ebfa56",
-      "endret_siden": "2026-10-06T21:20:47.959Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-rundskriv-skolemiljo-nulltoleranse": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:f4296a4ebd5dcfaad665a820b13970661cbc09e4ff7386275d9766d041282483",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-rundskriv-skolemiljo-informasjon": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:66d93d73048b480c3735e279097514680ff43152fa675736284ef24c0381388f",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
-    },
-    "udir-elevundersokelsen": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": "sha256:ddd884de110181b39716d24cf29d88daaf45667dcbc1869b843ac67f51fff02e",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:031d3ba80557916c5550ef487aca137450b03e1305717cd97af6bdafdf268a64",
       "endret_siden": null,
       "melding": null
     },
-    "udir-statistikkbanken": {
-      "status": "feilet",
-      "sjekket": "2026-10-08T08:34:40.019Z",
-      "fingeravtrykk": null,
+    "udir-ord-og-omgrep": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:777be696fa1fd1360ef8d191f5357cb598de09ee95e5d1db78dd87f1a78758cf",
       "endret_siden": null,
-      "melding": "Cannot read properties of undefined (reading 'length')"
+      "melding": null
+    },
+    "udir-veileder-tilpasset-opplaering": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:4fbe5c3c4bb76ff75191cdec6d94226e96646372552cf782e73761f4cb1fc9ed",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-sarskilt-sprakopplaring": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:f86756f5d3341e54fa045a857390f7aaff637d73599c5a7560907cf6129407fa",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-innforingsopplaring": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:ed9f5433cea9d776ef97f6007297780e2f496673ce472d666b2c27fa7b093362",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-minoritetsspraklige": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:d67444a3bfd01dc6bc36c77fa11b71ab094005eaa010e8fc91d8353451f9f452",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-retten-til-vgo": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:5d46b396fcd53721c25546f8c3cfb10982fa9e60ca1daf8cfa66acf1e96b718d",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-rundskriv-skolemiljo": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:84d166ddd53a120697ef20dd1bee7ec01551bad8430a7dd0d1572709d66d86cf",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-rundskriv-skolemiljo-statsforvalteren": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:909db6c64d5ebed7c9cdc53a5df7a9f2ef3afc666840f46d69121f7c7a3827c6",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-rundskriv-skolemiljo-hvem": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:3abcef62f4f5133eaff5f74bff2669772676ecf98208e2487b2da9496c153992",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-rundskriv-skolemiljo-retten": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:311dae08d215ec9b1e982541e88a0c18196af1d604acb1a7d57416d0f4ebfa56",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-rundskriv-skolemiljo-nulltoleranse": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:f4296a4ebd5dcfaad665a820b13970661cbc09e4ff7386275d9766d041282483",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-rundskriv-skolemiljo-informasjon": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:66d93d73048b480c3735e279097514680ff43152fa675736284ef24c0381388f",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-elevundersokelsen": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:7507dea70553a4ad511aa9b362f5665f33d90677276df589be46b0b01ad3f1d4",
+      "endret_siden": "2026-10-08T10:24:16.473Z",
+      "melding": null
+    },
+    "udir-statistikkbanken": {
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
+      "fingeravtrykk": "sha256:b2c717e665f6d6f927fdc612a971749efe63795995aa0b1ac85652bf48d2028a",
+      "endret_siden": null,
+      "melding": null
     },
     "udir-mer-opplaering": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:616d7a358c85eed88737952eb2e4cb6b30c8ea68d84e4a17ffb876ead7001f55",
-      "endret_siden": "2026-10-06T16:33:42.889Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-mer-opplaering-voksne": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:befa419853e00d6eb7564d89c6b26e1d58d7f443e452a705286dfa6cf68833a9",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-fullforingsretten-iop": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:6e4b9adb1d4792be39d8e39818979f106253c60ddf1e50a36577c519b02e5a33",
-      "endret_siden": "2026-10-06T16:33:42.889Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-fag-og-timefordeling-grunnskole": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:0422aa0369374200b7fd79d4775a894413ff918a062643ac1eaa0d05d2a37385",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-merknader-ofo": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:e346bf9231673578a0629fd1883ee623cfd4497ac6911c6b8f5d807b03f97f25",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-klageinstanser": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:b8f1656eaaf8fbfea99f59888dba26603ef635a6f31bdd8cbcbba634e1370df6",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-merknader-ofo-kap9": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:2304690f18e8f4d7a24f646a47067b5447f23cd9d04231b4ce68ececc69a4770",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-rundskriv-fravarsgrensen": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:2eef376a59d502ca06480eedc57ba03ba18164c0a0a2545785caf365e83296f8",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-standpunktvurdering": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:c47f780d7ba33572638eacd82b729dae3fa45af45bb04784fafb3462b958604c",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-merknader-ofo-kap10": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:b154be37e230bd6ff9f7d95301242c7cecc89a715ff180f43392e72b7cc3e95e",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-klage-standpunkt": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:9e12afa10e676c14eaa12874d48e25cbef51b4752809f3fdbaf474bd7559c41f",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-sarskilt-tilrettelegging-eksamen": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:95f6fe81352578a4b82a163b7cc85bd6940c2ff3ebc86a6bb05dcd0fb91705a9",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-administrere-eksamen": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:fd870cd20958b60c207aa2fad960cec5b87746dcdeb6c0daa7b0e4b2bc2c5a95",
-      "endret_siden": "2026-10-08T08:34:40.019Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-fag-og-svenneprover": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:64ae2e1a5d7ffb2eb5d48ba896954dd4681978e9eaa14fb8cf348fa17c4f36cc",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-laerekandidatordningen": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:8c9dcd8db713b49cd01205e8b3c3040d516a42b77552286fa25f7edb867d9ffe",
-      "endret_siden": "2026-10-06T16:33:42.889Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "eksamensdatoer": {
       "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:525648f8ff67719c63af4d8aacdc6de4d5b899a439fde277c1f1c9bd6768b8f0",
       "endret_siden": "2026-10-06T16:33:42.889Z",
       "melding": "Eksamensdatoene: 1 uenige og 0 som ikke ble funnet. Se rapporten."
     },
     "inntaksdatoer": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:35cefc5dc33d64d0a9e38a0e83c16318d46c732dab704d6e2258d32dfc73d132",
       "endret_siden": null,
       "melding": null
     },
     "udir-regbok-karakterer": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:69a0a2343aa5c395f5ccd01b281f9c642e4571e48cc2f001212c958885a4d543",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-regbok-oversikt": {
-      "status": "endret",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "status": "ok",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:7b745b13d9de13683d1019099cd921d433a2a7d575d681ff4bad6771ec1d0e92",
-      "endret_siden": "2026-10-04T20:34:00.346Z",
-      "melding": "Ny kilde, ikke godkjent ennå."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-nsr": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": "sha256:c64c5332128c8b89940374326ab9fffeaf1f494e1aa1f136d45cedd3d1ad316f",
       "endret_siden": null,
       "melding": null
     },
     "regjeringen-kd-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "udir-siste-nytt": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "skolelederforbundet-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "utdanningsforbundet-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "statsforvalteren-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "utdanningsnytt-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "lovdata-lovtidend": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "forskning-no-skole": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "nifu-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "hkdir-aktuelt": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null
     },
     "fylkeskommunene-nyheter": {
       "status": "ok",
-      "sjekket": "2026-10-08T08:34:40.019Z",
+      "sjekket": "2026-10-08T10:24:16.473Z",
       "fingeravtrykk": null,
       "endret_siden": null,
       "melding": null

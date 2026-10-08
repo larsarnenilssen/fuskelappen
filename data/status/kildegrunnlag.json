@@ -1,0 +1,313 @@
+{
+  "skjema": 1,
+  "kilder": {
+    "ks-sfs2213-avtaletekst": {
+      "grunnlag": "sha256:1c68729cdb42f9a73ce42cdae825a5f7e96507fc9361cb9488f0309ef1ad27ce",
+      "feil_pa_rad": 0
+    },
+    "udf-sfs2213": {
+      "grunnlag": "sha256:d1b8febc2b1223305afe1026a957e51e421427abf671dac17ab04986ed995465",
+      "feil_pa_rad": 0
+    },
+    "ks-hovedtariffavtalen": {
+      "grunnlag": "sha256:9060856923b545153ae7c4c2072d411157afe5f2fcfb08da5be1f374f86bc745",
+      "feil_pa_rad": 0
+    },
+    "arbeidsmiljoloven": {
+      "grunnlag": "sha256:3a795969f3c58abf9fe8d4bddc30e2144df258e9cc09cc7a09727731783966cd",
+      "feil_pa_rad": 0
+    },
+    "opplaeringslova": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "opplaeringsforskrifta": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "privatskolelova": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "privatskoleforskrifta": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "forvaltningsloven": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "offentleglova": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "arkivlova": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "offentlegforskrifta": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "arkivforskrifta": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "forskrift-helse-miljo-skoler": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-grep": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-fag-og-timefordeling": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-fag-og-timefordeling-forside": {
+      "grunnlag": "sha256:249ce9893f401710fc7003cd161c6f70250accae6e6313fa1beb41d619a6ded8",
+      "feil_pa_rad": 0
+    },
+    "udir-regbok-programomradekode": {
+      "grunnlag": "sha256:64e3131e4a0a21b10f0675536c5e63a7e7b1dab10f964e574fee93a02573683b",
+      "feil_pa_rad": 0
+    },
+    "udir-yff-forskrift": {
+      "grunnlag": "sha256:4dffa26609a0641e398710a171f0b12a0eddc4320d4ece6ac6ccc8806d9b8e79",
+      "feil_pa_rad": 0
+    },
+    "udir-foring-vitnemal-merknader": {
+      "grunnlag": "sha256:4418ff1c52eb68e3ff719296eea9ade97a40ac5a5ebfbbde5e8a34a709c79b95",
+      "feil_pa_rad": 0
+    },
+    "udir-regbok-fam": {
+      "grunnlag": "sha256:7ef8d225a2641ec70ac31e8cf7099d1accf25d9ff2eb4be2eee0c201070fe4d2",
+      "feil_pa_rad": 0
+    },
+    "udir-regbok-vmm": {
+      "grunnlag": "sha256:e479a309c167d2ae37869406d1eee02aef6b0aa6735b182592e42cc95f86bda3",
+      "feil_pa_rad": 0
+    },
+    "vigo-kodeverk": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "utdanning-no": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "utdanning-no-beskrivelser": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-nor": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "ndla": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-lareplanverket": {
+      "grunnlag": "sha256:0f82148c9ac275cac6851296383da2e288474823806a5896889658e74c34cee5",
+      "feil_pa_rad": 0
+    },
+    "lovdata-lokale": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "vestland-forskrift-inntak": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "vestland-forskrift-skulereglar": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-lokale-forskrifter": {
+      "grunnlag": "sha256:031d3ba80557916c5550ef487aca137450b03e1305717cd97af6bdafdf268a64",
+      "feil_pa_rad": 0
+    },
+    "udir-ord-og-omgrep": {
+      "grunnlag": "sha256:777be696fa1fd1360ef8d191f5357cb598de09ee95e5d1db78dd87f1a78758cf",
+      "feil_pa_rad": 0
+    },
+    "udir-veileder-tilpasset-opplaering": {
+      "grunnlag": "sha256:4fbe5c3c4bb76ff75191cdec6d94226e96646372552cf782e73761f4cb1fc9ed",
+      "feil_pa_rad": 0
+    },
+    "udir-sarskilt-sprakopplaring": {
+      "grunnlag": "sha256:f86756f5d3341e54fa045a857390f7aaff637d73599c5a7560907cf6129407fa",
+      "feil_pa_rad": 0
+    },
+    "udir-innforingsopplaring": {
+      "grunnlag": "sha256:ed9f5433cea9d776ef97f6007297780e2f496673ce472d666b2c27fa7b093362",
+      "feil_pa_rad": 0
+    },
+    "udir-minoritetsspraklige": {
+      "grunnlag": "sha256:d67444a3bfd01dc6bc36c77fa11b71ab094005eaa010e8fc91d8353451f9f452",
+      "feil_pa_rad": 0
+    },
+    "udir-retten-til-vgo": {
+      "grunnlag": "sha256:5d46b396fcd53721c25546f8c3cfb10982fa9e60ca1daf8cfa66acf1e96b718d",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-skolemiljo": {
+      "grunnlag": "sha256:84d166ddd53a120697ef20dd1bee7ec01551bad8430a7dd0d1572709d66d86cf",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-skolemiljo-statsforvalteren": {
+      "grunnlag": "sha256:909db6c64d5ebed7c9cdc53a5df7a9f2ef3afc666840f46d69121f7c7a3827c6",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-skolemiljo-hvem": {
+      "grunnlag": "sha256:3abcef62f4f5133eaff5f74bff2669772676ecf98208e2487b2da9496c153992",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-skolemiljo-retten": {
+      "grunnlag": "sha256:311dae08d215ec9b1e982541e88a0c18196af1d604acb1a7d57416d0f4ebfa56",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-skolemiljo-nulltoleranse": {
+      "grunnlag": "sha256:f4296a4ebd5dcfaad665a820b13970661cbc09e4ff7386275d9766d041282483",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-skolemiljo-informasjon": {
+      "grunnlag": "sha256:66d93d73048b480c3735e279097514680ff43152fa675736284ef24c0381388f",
+      "feil_pa_rad": 0
+    },
+    "udir-elevundersokelsen": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-statistikkbanken": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-mer-opplaering": {
+      "grunnlag": "sha256:616d7a358c85eed88737952eb2e4cb6b30c8ea68d84e4a17ffb876ead7001f55",
+      "feil_pa_rad": 0
+    },
+    "udir-mer-opplaering-voksne": {
+      "grunnlag": "sha256:befa419853e00d6eb7564d89c6b26e1d58d7f443e452a705286dfa6cf68833a9",
+      "feil_pa_rad": 0
+    },
+    "udir-fullforingsretten-iop": {
+      "grunnlag": "sha256:6e4b9adb1d4792be39d8e39818979f106253c60ddf1e50a36577c519b02e5a33",
+      "feil_pa_rad": 0
+    },
+    "udir-fag-og-timefordeling-grunnskole": {
+      "grunnlag": "sha256:0422aa0369374200b7fd79d4775a894413ff918a062643ac1eaa0d05d2a37385",
+      "feil_pa_rad": 0
+    },
+    "udir-merknader-ofo": {
+      "grunnlag": "sha256:e346bf9231673578a0629fd1883ee623cfd4497ac6911c6b8f5d807b03f97f25",
+      "feil_pa_rad": 0
+    },
+    "udir-klageinstanser": {
+      "grunnlag": "sha256:b8f1656eaaf8fbfea99f59888dba26603ef635a6f31bdd8cbcbba634e1370df6",
+      "feil_pa_rad": 0
+    },
+    "udir-merknader-ofo-kap9": {
+      "grunnlag": "sha256:2304690f18e8f4d7a24f646a47067b5447f23cd9d04231b4ce68ececc69a4770",
+      "feil_pa_rad": 0
+    },
+    "udir-rundskriv-fravarsgrensen": {
+      "grunnlag": "sha256:2eef376a59d502ca06480eedc57ba03ba18164c0a0a2545785caf365e83296f8",
+      "feil_pa_rad": 0
+    },
+    "udir-standpunktvurdering": {
+      "grunnlag": "sha256:c47f780d7ba33572638eacd82b729dae3fa45af45bb04784fafb3462b958604c",
+      "feil_pa_rad": 0
+    },
+    "udir-merknader-ofo-kap10": {
+      "grunnlag": "sha256:b154be37e230bd6ff9f7d95301242c7cecc89a715ff180f43392e72b7cc3e95e",
+      "feil_pa_rad": 0
+    },
+    "udir-klage-standpunkt": {
+      "grunnlag": "sha256:9e12afa10e676c14eaa12874d48e25cbef51b4752809f3fdbaf474bd7559c41f",
+      "feil_pa_rad": 0
+    },
+    "udir-sarskilt-tilrettelegging-eksamen": {
+      "grunnlag": "sha256:95f6fe81352578a4b82a163b7cc85bd6940c2ff3ebc86a6bb05dcd0fb91705a9",
+      "feil_pa_rad": 0
+    },
+    "udir-administrere-eksamen": {
+      "grunnlag": "sha256:fd870cd20958b60c207aa2fad960cec5b87746dcdeb6c0daa7b0e4b2bc2c5a95",
+      "feil_pa_rad": 0
+    },
+    "udir-fag-og-svenneprover": {
+      "grunnlag": "sha256:64ae2e1a5d7ffb2eb5d48ba896954dd4681978e9eaa14fb8cf348fa17c4f36cc",
+      "feil_pa_rad": 0
+    },
+    "udir-laerekandidatordningen": {
+      "grunnlag": "sha256:8c9dcd8db713b49cd01205e8b3c3040d516a42b77552286fa25f7edb867d9ffe",
+      "feil_pa_rad": 0
+    },
+    "eksamensdatoer": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "inntaksdatoer": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-regbok-karakterer": {
+      "grunnlag": "sha256:69a0a2343aa5c395f5ccd01b281f9c642e4571e48cc2f001212c958885a4d543",
+      "feil_pa_rad": 0
+    },
+    "udir-regbok-oversikt": {
+      "grunnlag": "sha256:7b745b13d9de13683d1019099cd921d433a2a7d575d681ff4bad6771ec1d0e92",
+      "feil_pa_rad": 0
+    },
+    "udir-nsr": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "regjeringen-kd-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "udir-siste-nytt": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "skolelederforbundet-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "utdanningsforbundet-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "statsforvalteren-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "utdanningsnytt-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "lovdata-lovtidend": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "forskning-no-skole": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "nifu-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "hkdir-aktuelt": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
+    "fylkeskommunene-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    }
+  }
+}

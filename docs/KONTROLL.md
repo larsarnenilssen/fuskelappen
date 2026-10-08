@@ -29,45 +29,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 ## Må ses på
 
-- **Udir-1-2026, teksten øverst i rundskrivet:** ⚠️ ny kilde, ikke godkjent ennå
-- **Registreringshåndboken, A03 Programområdekode:** ⚠️ ny kilde, ikke godkjent ennå
-- **Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020:** ⚠️ ny kilde, ikke godkjent ennå
-- **Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis:** ⚠️ ny kilde, ikke godkjent ennå
-- **Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad:** ⚠️ ny kilde, ikke godkjent ennå
-- **Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad:** ⚠️ ny kilde, ikke godkjent ennå
-- **Læreplanverket (udir.no):** ⚠️ ny kilde, ikke godkjent ennå
-- **Lokale forskrifter etter opplæringsloven:** ⚠️ ny kilde, ikke godkjent ennå
-- **Ord og omgrep i opplæringslova (nye og gamle begreper):** ⚠️ ny kilde, ikke godkjent ennå
-- **Veileder om tilpasset opplæring og individuell tilrettelegging:** ⚠️ ny kilde, ikke godkjent ennå
-- **Særskilt språkopplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Innføringsopplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever:** ⚠️ ny kilde, ikke godkjent ennå
-- **Retten til videregående opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om skolemiljø:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om skolemiljø, kapittel 4 Nulltoleranse:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre:** ⚠️ ny kilde, ikke godkjent ennå
-- **Statistikkbanken for videregående opplæring, Udir:** ⚠️ sjekken feilet (08.10.2026): Cannot read properties of undefined (reading 'length')
-- **Rett til mer opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rett til mer opplæring for voksne:** ⚠️ ny kilde, ikke godkjent ennå
-- **Fullføringsretten for elever med individuelt tilrettelagt opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Fag- og timefordeling i grunnskolen (Udir-1-2026, vedlegg 1, punkt 2.2):** ⚠️ ny kilde, ikke godkjent ennå
-- **Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring:** ⚠️ ny kilde, ikke godkjent ennå
-- **Hvem er klageinstanser etter enkeltvedtak?:** ⚠️ ny kilde, ikke godkjent ennå
-- **Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering:** ⚠️ ny kilde, ikke godkjent ennå
-- **Rundskriv om fraværsgrensen:** ⚠️ ny kilde, ikke godkjent ennå
-- **Standpunktvurdering:** ⚠️ ny kilde, ikke godkjent ennå
-- **Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar:** ⚠️ ny kilde, ikke godkjent ennå
-- **Behandling av klager på standpunktkarakterer i fag:** ⚠️ ny kilde, ikke godkjent ennå
-- **Generelt om særskilt tilrettelegging av eksamen:** ⚠️ ny kilde, ikke godkjent ennå
-- **Administrere eksamen:** ⚠️ ny kilde, ikke godkjent ennå
-- **Fag- og svenneprøver:** ⚠️ ny kilde, ikke godkjent ennå
-- **Lærekandidat – din vei til yrkeslivet:** ⚠️ ny kilde, ikke godkjent ennå
-- **Eksamensdatoer fra udir.no og fylkeskommunene:** ⚠️ ny kilde, ikke godkjent ennå
-- **Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk:** ⚠️ ny kilde, ikke godkjent ennå
-- **Registreringshåndboken, oversikt over alle feltene:** ⚠️ ny kilde, ikke godkjent ennå
+- **Eksamensdatoer fra udir.no og fylkeskommunene:** ⚠️ endret siden 06.10.2026, ikke gått gjennom
 
 ## Praksis og tolkninger
 
@@ -311,7 +273,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 | Vg3 i skole (`vg3-i-skole`) | begrep | § 5-6 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Formidling til læreplass (`formidling-til-laereplass`) | begrep | § 5-6 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Tilbudsstruktur (`tilbudsstruktur`) | begrep | § 1-6 tredje ledd, § 5-3 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
-| Instruktør og faglig leder (`instruktor`) | begrep | § 7-6 første og andre ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Instruktør (`instruktor`) | begrep | § 7-6 første og andre ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Rådgiving (`radgiving`) | begrep | § 16-1 Rådgiving om utdannings- og yrkesval, § 16-2 Rådgiving om sosiale og personlege forhold | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
@@ -475,7 +437,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 | Vg3 i skole (`vg3-i-skole`) | begrep | § 6-2, § 9-56 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Formidling til læreplass (`formidling-til-laereplass`) | begrep | § 7-1 til § 7-3, § 6-2 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Tilbudsstruktur (`tilbudsstruktur`) | begrep | § 5-1 første ledd | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
-| Instruktør og faglig leder (`instruktor`) | begrep | § 9-6 andre ledd (dialog med instruktør), § 9-13 fjerde ledd (halvårsvurderingen) | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Instruktør (`instruktor`) | begrep | § 9-6 andre ledd (dialog med instruktør), § 9-13 fjerde ledd (halvårsvurderingen) | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Fysisk skolemiljø (`fysisk-skolemiljo`) | begrep | § 11-3 Saksbehandling som gjeld det fysiske skolemiljøet | `content/begreper/skolemiljo.yaml` | ikke kontrollert |
 | Kort botid (`kort-botid`) | begrep | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Underveisvurdering (`underveisvurdering`) | begrep | § 9-11, § 10-1 | `content/begreper/vurdering.yaml` | ikke kontrollert |
@@ -827,7 +789,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Udir-1-2026, teksten øverst i rundskrivet
 
-`udir-fag-og-timefordeling-forside` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
+`udir-fag-og-timefordeling-forside` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
 
 **Innhold som bygger på kilden**
 
@@ -837,7 +799,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Registreringshåndboken, A03 Programområdekode
 
-`udir-regbok-programomradekode` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://regbok.udir.no/felt/?Id=1014307)
+`udir-regbok-programomradekode` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://regbok.udir.no/felt/?Id=1014307)
 
 **Innhold som bygger på kilden**
 
@@ -848,7 +810,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020
 
-`udir-yff-forskrift` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/)
+`udir-yff-forskrift` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/)
 
 **Innhold som bygger på kilden**
 
@@ -859,7 +821,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis
 
-`udir-foring-vitnemal-merknader` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/)
+`udir-foring-vitnemal-merknader` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/eksamen-og-prover/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/)
 
 **Innhold som bygger på kilden**
 
@@ -870,7 +832,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad
 
-`udir-regbok-fam` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://regbok.udir.no/felt/?Id=1015037)
+`udir-regbok-fam` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://regbok.udir.no/felt/?Id=1015037)
 
 **Innhold som bygger på kilden**
 
@@ -880,7 +842,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad
 
-`udir-regbok-vmm` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://regbok.udir.no/felt/?Id=1015039)
+`udir-regbok-vmm` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://regbok.udir.no/felt/?Id=1015039)
 
 **Innhold som bygger på kilden**
 
@@ -930,7 +892,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Læreplanverket (udir.no)
 
-`udir-lareplanverket` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/laring-og-trivsel/lareplanverket/)
+`udir-lareplanverket` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/laring-og-trivsel/lareplanverket/)
 
 **Innhold som bygger på kilden**
 
@@ -1018,7 +980,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Lokale forskrifter etter opplæringsloven
 
-`udir-lokale-forskrifter` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/)
+`udir-lokale-forskrifter` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/)
 
 **Innhold som bygger på kilden**
 
@@ -1035,19 +997,18 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Ord og omgrep i opplæringslova (nye og gamle begreper)
 
-`udir-ord-og-omgrep` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/)
+`udir-ord-og-omgrep` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/)
 
 **Innhold som bygger på kilden**
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Instruktør og faglig leder (`instruktor`) | begrep | Tabellen over gamle og nye ord | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Rådgiving (`radgiving`) | begrep | Sosialpedagogisk rådgiving og utdannings- og yrkesrådgiving i tabellen | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Individuell tilrettelegging (`individuell-tilrettelegging`) | begrep | Spesialundervisning («Dette omgrepet er no delt i tre ulike omgrep») | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 
 ### Veileder om tilpasset opplæring og individuell tilrettelegging
 
-`udir-veileder-tilpasset-opplaering` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/)
+`udir-veileder-tilpasset-opplaering` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/)
 
 **Innhold som bygger på kilden**
 
@@ -1088,7 +1049,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Særskilt språkopplæring
 
-`udir-sarskilt-sprakopplaring` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/)
+`udir-sarskilt-sprakopplaring` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1108,7 +1069,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Innføringsopplæring
 
-`udir-innforingsopplaring` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/)
+`udir-innforingsopplaring` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1123,7 +1084,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever
 
-`udir-minoritetsspraklige` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/)
+`udir-minoritetsspraklige` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/)
 
 **Innhold som bygger på kilden**
 
@@ -1136,7 +1097,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Retten til videregående opplæring
 
-`udir-retten-til-vgo` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/)
+`udir-retten-til-vgo` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1162,7 +1123,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om skolemiljø
 
-`udir-rundskriv-skolemiljo` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/)
+`udir-rundskriv-skolemiljo` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/6.-skolen-har-en-aktivitetsplikt/)
 
 **Innhold som bygger på kilden**
 
@@ -1189,7 +1150,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om skolemiljø, kapittel 7 Å melde saken til statsforvalteren
 
-`udir-rundskriv-skolemiljo-statsforvalteren` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/)
+`udir-rundskriv-skolemiljo-statsforvalteren` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/7.-a-melde-saken-til-statsforvalteren-handhevingsordningen/)
 
 **Innhold som bygger på kilden**
 
@@ -1204,7 +1165,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om skolemiljø, kapittel 2 For hvem og hvor gjelder reglene om et trygt og godt skolemiljø?
 
-`udir-rundskriv-skolemiljo-hvem` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/)
+`udir-rundskriv-skolemiljo-hvem` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/2.-for-hvem-og-hvor-gjelder-reglene-om-et-trygt-og-godt-skolemiljo/)
 
 **Innhold som bygger på kilden**
 
@@ -1214,7 +1175,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om skolemiljø, kapittel 3 Retten til et trygt og godt skolemiljø
 
-`udir-rundskriv-skolemiljo-retten` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/)
+`udir-rundskriv-skolemiljo-retten` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/3.-retten-til-et-trygt-og-godt-skolemiljo/)
 
 **Innhold som bygger på kilden**
 
@@ -1226,7 +1187,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om skolemiljø, kapittel 4 Nulltoleranse
 
-`udir-rundskriv-skolemiljo-nulltoleranse` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/)
+`udir-rundskriv-skolemiljo-nulltoleranse` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/4.-nulltoleranse/)
 
 **Innhold som bygger på kilden**
 
@@ -1238,7 +1199,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om skolemiljø, kapittel 5 Skolene skal informere elever og foreldre
 
-`udir-rundskriv-skolemiljo-informasjon` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/)
+`udir-rundskriv-skolemiljo-informasjon` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-skolemiljo/5.-skolene-skal-informere-elever-og-foreldre/)
 
 **Innhold som bygger på kilden**
 
@@ -1258,7 +1219,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rett til mer opplæring
 
-`udir-mer-opplaering` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/)
+`udir-mer-opplaering` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1285,7 +1246,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rett til mer opplæring for voksne
 
-`udir-mer-opplaering-voksne` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/)
+`udir-mer-opplaering-voksne` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring-for-voksne/)
 
 **Innhold som bygger på kilden**
 
@@ -1296,7 +1257,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Fullføringsretten for elever med individuelt tilrettelagt opplæring
 
-`udir-fullforingsretten-iop` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/)
+`udir-fullforingsretten-iop` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/fullforingsretten-vgo-individuelt-tilrettelagt-opplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1309,7 +1270,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring
 
-`udir-merknader-ofo` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/)
+`udir-merknader-ofo` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/)
 
 **Innhold som bygger på kilden**
 
@@ -1329,7 +1290,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Hvem er klageinstanser etter enkeltvedtak?
 
-`udir-klageinstanser` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/)
+`udir-klageinstanser` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/)
 
 **Innhold som bygger på kilden**
 
@@ -1345,7 +1306,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering
 
-`udir-merknader-ofo-kap9` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/)
+`udir-merknader-ofo-kap9` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/)
 
 **Innhold som bygger på kilden**
 
@@ -1387,7 +1348,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Rundskriv om fraværsgrensen
 
-`udir-rundskriv-fravarsgrensen` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/)
+`udir-rundskriv-fravarsgrensen` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/)
 
 **Regelverdier**
 
@@ -1424,7 +1385,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Standpunktvurdering
 
-`udir-standpunktvurdering` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/)
+`udir-standpunktvurdering` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/)
 
 **Innhold som bygger på kilden**
 
@@ -1434,7 +1395,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar
 
-`udir-merknader-ofo-kap10` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/)
+`udir-merknader-ofo-kap10` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/)
 
 **Innhold som bygger på kilden**
 
@@ -1455,7 +1416,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Behandling av klager på standpunktkarakterer i fag
 
-`udir-klage-standpunkt` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/)
+`udir-klage-standpunkt` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/)
 
 **Innhold som bygger på kilden**
 
@@ -1473,7 +1434,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Generelt om særskilt tilrettelegging av eksamen
 
-`udir-sarskilt-tilrettelegging-eksamen` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/sarskilt-tilrettelegging-av-eksamen/)
+`udir-sarskilt-tilrettelegging-eksamen` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/sarskilt-tilrettelegging-av-eksamen/)
 
 **Innhold som bygger på kilden**
 
@@ -1484,7 +1445,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Administrere eksamen
 
-`udir-administrere-eksamen` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/)
+`udir-administrere-eksamen` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/)
 
 **Innhold som bygger på kilden**
 
@@ -1505,7 +1466,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Lærekandidat – din vei til yrkeslivet
 
-`udir-laerekandidatordningen` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/larekandidatordningen/larekandidat--din-vei-til-yrkeslivet/)
+`udir-laerekandidatordningen` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/larekandidatordningen/larekandidat--din-vei-til-yrkeslivet/)
 
 **Innhold som bygger på kilden**
 
@@ -1517,7 +1478,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Eksamensdatoer fra udir.no og fylkeskommunene
 
-`eksamensdatoer` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/)
+`eksamensdatoer` · Kildesjekk: ⚠️ endret siden 06.10.2026, ikke gått gjennom · [Åpne kilden](https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/)
 
 **Innhold som bygger på kilden**
 
@@ -1527,7 +1488,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk
 
-`udir-regbok-karakterer` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://regbok.udir.no/felt/?Id=1021153)
+`udir-regbok-karakterer` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://regbok.udir.no/felt/?Id=1021153)
 
 **Innhold som bygger på kilden**
 
@@ -1539,7 +1500,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Registreringshåndboken, oversikt over alle feltene
 
-`udir-regbok-oversikt` · Kildesjekk: ⚠️ ny kilde, ikke godkjent ennå · [Åpne kilden](https://regbok.udir.no/oversikt)
+`udir-regbok-oversikt` · Kildesjekk: i orden (08.10.2026) · [Åpne kilden](https://regbok.udir.no/oversikt)
 
 **Innhold som bygger på kilden**
 
@@ -2329,12 +2290,11 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§1-6): § 1-6 tredje ledd; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-3): § 5-3 første ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-1): § 5-1 første ledd; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur
 
-**Instruktør og faglig leder** (`instruktor`, begrep, ikke kontrollert)
+**Instruktør** (`instruktor`, begrep, ikke kontrollert)
 
-- «Faglig leder» står ikke i opplæringslova av 2023. Er det riktig at ordet fortsatt er vanlig i fylkeskommunene og bransjene, så det bør stå i tittelen?
-- Er «følger lærlingen i det daglige» en dekkende beskrivelse av instruktøren, når loven bare sier at instruktøren gir opplæring?
+- Eier valgte 08.10.2026 at begrepet bare heter «Instruktør», og at «faglig leder» bare er søkeord. Er det riktig at instruktøren og den som har ansvaret for opplæringen, kan være ulike personer, slik § 7-6 andre ledd leses her?
 
-Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-6): § 7-6 første og andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-6): § 9-6 andre ledd (dialog med instruktør); [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 fjerde ledd (halvårsvurderingen); [Ord og omgrep i opplæringslova (nye og gamle begreper)](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/): Tabellen over gamle og nye ord
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§7-6): § 7-6 første og andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-6): § 9-6 andre ledd (dialog med instruktør); [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 fjerde ledd (halvårsvurderingen)
 
 **Rådgiving** (`radgiving`, begrep, ikke kontrollert)
 
@@ -4337,13 +4297,13 @@ Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapslø
 
 - Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 
-Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.1 Fagmerknader; [Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad](https://regbok.udir.no/felt/?Id=1015037): B16 FAM-kode og B17 FAM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak](https://kodeverk.vigo.no/): Fagmerknader
+Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.1 Fagmerknader; [Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad](https://regbok.udir.no/felt/?Id=1015037): B16 FAM-kode og B17 FAM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak](https://kodeverk.vigo.no/): Fagmerknader
 
 **Vitnemålsmerknader (VMM-koder)** (`vitnemalsmerknader`, begrep, ikke kontrollert)
 
 - Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 
-Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak](https://kodeverk.vigo.no/): Vitnemålsmerknader
+Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader, vitnemålsmerknader, status på søkerønsker og grunnlag for inntak](https://kodeverk.vigo.no/): Vitnemålsmerknader
 
 **Status på søkerønsker** (`status-sokeronsker`, begrep, ikke kontrollert)
 
