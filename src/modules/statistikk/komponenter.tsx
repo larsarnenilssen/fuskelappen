@@ -4,6 +4,7 @@
 //
 // Formen følger dataviz-metoden, som Elevundersøkelsen: tallene står som tekst, stolpene går fra null, det valgte
 // fylket har seriefargen og de andre er grå, og landet er en stiplet strek. Fargen står aldri alene.
+import { ELEVUNDERSOKELSEN_RUTE } from '../elevundersokelsen/adresse.ts';
 import type { ComponentChildren } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { type T, useTekst } from '../../app/tilstand.ts';
@@ -351,7 +352,7 @@ export function SkolenITall({ orgnr, d, children }: { orgnr: string; d: Statisti
           )}
         </ul>
         <p class="st-boks-lenke">
-          <a href={`#/skolemiljo/elevundersokelsen?s=S${orgnr}`}>{t('statistikk.skolen.elevundersokelsen')}</a>
+          <a href={`#${ELEVUNDERSOKELSEN_RUTE}?s=S${orgnr}`}>{t('statistikk.skolen.elevundersokelsen')}</a>
         </p>
       </div>
       {children && <div class="st-skolen-snarveier">{children}</div>}

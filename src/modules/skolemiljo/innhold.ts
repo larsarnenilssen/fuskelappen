@@ -32,7 +32,6 @@ export function hentInnhold(): Promise<Skolemiljoinnhold> {
 
 export const veiviserRute = (id: string) => `/skolemiljo/${id}`;
 export const skolereglerRute = '/skolemiljo/skoleregler';
-export const elevundersokelsenRute = '/skolemiljo/elevundersokelsen';
 /** Opplæringslova kapittel 12 som egen side (eier 06.10.2026). */
 export const kapittel12Rute = '/skolemiljo/trygt-og-godt-skolemiljo';
 
@@ -40,7 +39,6 @@ export const kapittel12Rute = '/skolemiljo/trygt-og-godt-skolemiljo';
 export const UNDERSIDER = {
   kapittel12: { rute: kapittel12Rute, ikon: 'skole' },
   skoleregler: { rute: skolereglerRute, ikon: 'paragraf' },
-  elevundersokelsen: { rute: elevundersokelsenRute, ikon: 'vurdering' },
 } as const satisfies Record<string, Underside>;
 
 /** Elementene på en side, i rekkefølgen de står i filen: id-er som starter med prefikset. */

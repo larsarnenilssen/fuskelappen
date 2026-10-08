@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Eksamen og klage (avgjørelse 085). Lastes bare når modulen har dagen.
+// Fakta til dagens jukselapp fra Eksamen og klage (avgjørelse 086). Lastes bare når modulen har dagen.
 import type { Innholdselement } from '../../core/innhold/skjema.ts';
 import { faktaFraModul } from '../../core/jukselapp/innhold.ts';
 import type { Faktum } from '../typer.ts';

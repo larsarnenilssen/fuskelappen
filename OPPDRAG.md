@@ -204,9 +204,9 @@ Skjemaet defineres med zod og valideres i testene.
   - **Læreplanverket:** Overordnet del, Fag og læreplaner.
   - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
-  - **Skolemiljø:** Skolemiljø (fase 7).
+  - **Skolemiljø:** Aktivitetsplikt og skoleregler (fase 7, før «Skolemiljø») og Elevundersøkelsen. *(Eier 08.10.2026:)* Elevundersøkelsen er egen modul, og modulen Skolemiljø har fått et navn som ikke er det samme som kategorien (avgjørelse 087).
   - **Oppslag:** Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen sto her, og forsiden hadde gruppen «Neste datoer» (avgjørelse 066). *(Eier 07.10.2026:)* Kalender og Nyheter står ikke lenger under «Oppslag», men i panelet øverst.
-  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag». *(Eier 08.10.2026:)* Dagens jukselapp er en fjerde visning i panelet når brukeren har slått den på (avgjørelse 085).
+  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag». *(Eier 08.10.2026:)* Dagens jukselapp er en fjerde visning i panelet når brukeren har slått den på (avgjørelse 086).
   - Lokale regler (fase 9) legges inn og meldes inn fra Innstillinger, ved valget av fylke og skole.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
@@ -611,7 +611,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 **Kontrollpunkt:** Eier kontrollerer visningen og fakta i dagens jukselapp.
 
-- Levert i 0.43.0 (08.10.2026): **Dagens jukselapp** som fjerde visning i panelet øverst på forsiden, med samme oppsett som kalenderen, nyhetene og tallene (avgjørelse 085). Av fra start, med samme bryter under «Tilpass» og Innstillinger. Første besøk hver dag står panelet på jukselappen (alternativ C). Byttes hver dag og med knappen «Ny jukselapp». Fakta fra `fakta()` i manifestene: begreper, forklaringer, regler, frister og steg i veiviserne, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimer og årsramme i fagene, og tall fra Videregående i tall. Innhold som ikke er kontrollert, vises (eier 08.10.2026). Forslaget og eiers svar står i `docs/arbeidsordrer/fase-8-forslag.md`. **Fase 8 er levert.** Eier har godkjent designet underveis, og faktaene tas i kontrollrundene.
+- Levert i 0.43.0 (08.10.2026): **Dagens jukselapp** som fjerde visning i panelet øverst på forsiden, med samme oppsett som kalenderen, nyhetene og tallene (avgjørelse 086). Av fra start, med samme bryter under «Tilpass» og Innstillinger. Første besøk hver dag står panelet på jukselappen (alternativ C). Byttes hver dag og med knappen «Ny jukselapp». Fakta fra `fakta()` i manifestene: begreper, forklaringer, regler, frister og steg i veiviserne, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimer og årsramme i fagene, og tall fra Videregående i tall. Innhold som ikke er kontrollert, vises (eier 08.10.2026). Elevundersøkelsen er egen modul under Skolemiljø, og modulen Skolemiljø heter «Aktivitetsplikt og skoleregler» (avgjørelse 087). Forslaget og eiers svar står i `docs/arbeidsordrer/fase-8-forslag.md`. **Fase 8 er levert.** Eier har godkjent designet underveis, og faktaene tas i kontrollrundene.
 
 ### Fase 9 – Lokale regler for fylke og skole
 
@@ -731,7 +731,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 ## 6. Vedlikehold etter levering
 
 - Ny periode for SFS 2213 (reforhandles før 2028): ny regelfil og nye fasittester side om side med den gamle.
-- Kildevarsler behandles når de kommer. *(Eier 07.10.2026:)* Eier får e-post når noe har gått galt eller bør ses på, ikke når alt virker. Hver e-post har hele listen, og det som ikke løser seg selv, kommer igjen som påminnelse til det er løst (avgjørelse 085, `docs/EIER.md` punkt 6b).
+- Kildevarsler behandles når de kommer. *(Eier 07.10.2026:)* Eier får e-post når noe har gått galt eller bør ses på, ikke når alt virker. Hver e-post har hele listen, og det som ikke løser seg selv, kommer igjen som påminnelse til det er løst (avgjørelse 086, `docs/EIER.md` punkt 6b).
 - Innhold med status `bor_kontrolleres` gjennomgås minst årlig.
 - Nye moduler bestilles som nye oppdrag.
 

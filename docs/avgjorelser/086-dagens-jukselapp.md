@@ -1,11 +1,11 @@
-# 085 – Dagens jukselapp
+# 086 – Dagens jukselapp
 
 **Status:** Designet godkjent av eier 08.10.2026 (`docs/arbeidsordrer/fase-8-forslag.md`, runde 1–2).
 
 **Kontekst:** Fase 8 skal gi ett faktum fra appen på forsiden: en morsomhet og en inngang til innholdet. Modulene skal bidra gjennom manifestet, som med fristene (avgjørelse 066). Faktaene skal komme fra innholdet og dataene appen alt har, uten eksterne kall, og startpakken skal ikke vokse.
 
 **Valg:**
-- **Kortet** (eier 08.10.2026): like høyt som kalenderen (minst 16,75rem), med faktumet midt i plassen. Øverst hvor faktumet kommer fra og knappen «Ny jukselapp», så faktumet, og nederst lenken til stedet i appen over hele bredden. Kortet har ingen tittel og ingen rader med regelverket og kildene (unntak fra avgjørelse 071). Kildene og paragrafene følger med i `Faktum`, og står på siden lenken går til.
+- **Kortet** (eier 08.10.2026): like høyt som kalenderen (minst 16,75rem). Øverst hvor faktumet kommer fra og knappen «Ny jukselapp», så tittelen og faktumet midt i plassen, og nederst lenken til stedet i appen over hele bredden. Er lenken den samme som tittelen (et begrep, en vei), står «Les mer» med tittelen for skjermlesere. Teksten er høyst om lag 240 tegn: med tittelen fyller den høyden på mobil, og lengre tekst ville gjort kortet høyere enn de andre visningene. Kortet har ingen rader med regelverket og kildene (unntak fra avgjørelse 071). Kildene og paragrafene følger med i `Faktum`, og står på siden lenken går til.
 - **Plassen:** en fjerde visning, «Jukselapp», i panelet øverst på forsiden (avgjørelse 081), med samme oppsett som kalenderen, nyhetene og tallene. Den er av fra start. Den samme bryteren står under «Tilpass» og under Innstillinger (`forside.jukselapp`). Det er ingen egen tekst på forsiden som slår den på. Velkomsten i fase 10 spør om brukeren vil slå den på (eier 08.10.2026).
 - **Første besøk hver dag** står panelet på jukselappen (alternativ C). Datoen huskes i `forside.jukselappVist`. Bytter brukeren visning, gjelder valget resten av dagen. Begge feltene kan mangle, så skjemaversjonen er den samme.
 - **`fakta()` i manifestet** gir modulens fakta (`Faktum` i `src/modules/typer.ts`): tittel, én til tre setninger, hvor det kommer fra, lenken til stedet i appen, kildene og eventuelt paragrafene og gyldigheten. Logikken står i `fakta.ts` i hver modul, som lastes først når modulen har dagen. Moduler uten fakta gir en tom liste.

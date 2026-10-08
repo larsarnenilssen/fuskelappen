@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Lov og forskrift (avgjørelse 085): bestemmelsene i SFS 2213 og hovedtariffavtalen med
+// Fakta til dagens jukselapp fra Lov og forskrift (avgjørelse 086): bestemmelsene i SFS 2213 og hovedtariffavtalen med
 // egne ord, og første ledd i paragrafene om rett til vidaregåande opplæring, skolereglar, tilpassa opplæring, skolemiljø
 // og ordenstiltak i opplæringslova, og om inntak, vurdering og klage i forskrifta. Lovteksten vises uoversatt, på
 // målformen den er fastsett på. Lastes bare når modulen har dagen.

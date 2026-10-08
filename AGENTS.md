@@ -96,7 +96,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 
 ## Legge til noe nytt
 
-- **Ny modul:** ny mappe i `src/modules/` med manifest, innhold i `content/<modul>/`, kilder i kilderegisteret, tester. Manifestet har `fakta()` til dagens jukselapp, med logikken i `fakta.ts` (avgjørelse 085). En modul uten fakta gir en tom liste.
+- **Ny modul:** ny mappe i `src/modules/` med manifest, innhold i `content/<modul>/`, kilder i kilderegisteret, tester. Manifestet har `fakta()` til dagens jukselapp, med logikken i `fakta.ts` (avgjørelse 086). En modul uten fakta gir en tom liste.
 - **Favoritter og ikoner:** Alle sider har stjernen ved overskriften (`Sidetopp`, testes for rutene i `tests/e2e/hjelp.ts`). Elementer uten egen side (en skole, en paragraf) får den diskré stjernen (`FavorittKnapp liten`) når de har en adresse favoritten kan åpne. Alt med stjerneknapp har en oppføring i modulens `favorittbare` (testes). En favoritt kan ha eget `ikon`. Uten får den ikonet til den nærmeste inngangen over: boksene på forsiden og lenkene med ikon på modulens oversiktssider (`undersider`), ellers modulens ikon (`ikonForFavoritt`, avgjørelse 056 og 058). En oversiktsside med egne ikoner henter dem fra `undersider`, så de ikke kan bli ulike.
 - **Ny regelperiode:** ny fil i `rules/<regelverk>/` og nye fasittester. Det skal ikke trengs kodeendringer.
 - **Nytt begrep:** lenkes automatisk i brødtekst med tittelen. Er ikke tittelen ordet som står i teksten, får begrepet `lenkeord` (avgjørelse 050). Begrepet får temaet til filen det står i under `content/begreper/`. En ny fil føres opp i `src/modules/begreper/tema.ts` (testes).

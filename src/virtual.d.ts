@@ -20,14 +20,14 @@ declare module 'virtual:fagroller' {
 }
 
 declare module 'virtual:jukselappfag' {
-  /** Fagene til dagens jukselapp: kode, navn på bokmål og nynorsk, årstimer og årsramme (t60, t45). Avgjørelse 085. */
+  /** Fagene til dagens jukselapp: kode, navn på bokmål og nynorsk, årstimer og årsramme (t60, t45). Avgjørelse 086. */
   const fag: [string, string, string, number, number, number][];
   export default fag;
 }
 
 declare module 'virtual:jukselappeu' {
-  import type { JukselappEu } from './modules/skolemiljo/elevundersokelsen/jukselapp.ts';
-  /** Mobbing og indeksene i Elevundersøkelsen for Vg1, til dagens jukselapp (avgjørelse 085). Null uten data. */
+  import type { JukselappEu } from './modules/elevundersokelsen/jukselapp.ts';
+  /** Mobbing og indeksene i Elevundersøkelsen for Vg1, til dagens jukselapp (avgjørelse 086). Null uten data. */
   const eu: JukselappEu | null;
   export default eu;
 }

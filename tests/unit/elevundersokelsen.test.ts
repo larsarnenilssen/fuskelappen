@@ -4,10 +4,10 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { byggResultater, type Rad, tall, validerResultater } from '../../scripts/elevundersokelsen/bygg.ts';
-import { elevundersokelsenSkjema } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
-import { type Elevundersokelsen } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
-import { filtrerEnheter } from '../../src/modules/skolemiljo/sider/Enhetsvelger.tsx';
-import { beste, egenSerie, endring, mobbeskala, retning, serieFra, serieTekst, standardSerier, standardTrinn, sterkestOgSvakest, verdi } from '../../src/modules/skolemiljo/elevundersokelsen/visning.ts';
+import { elevundersokelsenSkjema } from '../../src/modules/elevundersokelsen/skjema.ts';
+import { type Elevundersokelsen } from '../../src/modules/elevundersokelsen/skjema.ts';
+import { filtrerEnheter } from '../../src/modules/elevundersokelsen/sider/Enhetsvelger.tsx';
+import { beste, egenSerie, endring, mobbeskala, retning, serieFra, serieTekst, standardSerier, standardTrinn, sterkestOgSvakest, verdi } from '../../src/modules/elevundersokelsen/visning.ts';
 
 const rot = join(__dirname, '../..');
 const fylker = new Set(['42', '46']);

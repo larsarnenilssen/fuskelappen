@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Tilrettelegging (avgjørelse 085): stegene i veiviserne. Lastes bare når modulen har
+// Fakta til dagens jukselapp fra Tilrettelegging (avgjørelse 086): stegene i veiviserne. Lastes bare når modulen har
 // dagen.
 import type { Innholdselement } from '../../core/innhold/skjema.ts';
 import { faktaFraModul } from '../../core/jukselapp/innhold.ts';

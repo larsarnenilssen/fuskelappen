@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Fag og læreplaner (avgjørelse 085): årstimene og årsrammen i et fag, fra utdraget som
+// Fakta til dagens jukselapp fra Fag og læreplaner (avgjørelse 086): årstimene og årsrammen i et fag, fra utdraget som
 // lages når appen bygges. Lastes bare når modulen har dagen.
 import fagliste from 'virtual:jukselappfag';
 import { formaterTall, hentTekst, latBegge } from '../../core/i18n/tekst.ts';

@@ -134,7 +134,7 @@ describe('modulregisteret', () => {
     // Ruter uten egen side: /arbeidstid sender til forsiden, og /laereplanverket/overordnet-del er samme side som
     // /laereplanverket. De gamle kalenderne sender videre til kalenderen, ferdig filtrert (avgjørelse 066), og de gamle
     // adressene i Vurdering til Eksamen og klage (avgjørelse 078).
-    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del', '/inntak/frister', '/vurdering/eksamen-og-klage', '/vurdering/eksamen', '/vurdering/fag-og-svenneproven', '/vurdering/klage-pa-karakter'];
+    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del', '/inntak/frister', '/vurdering/eksamen-og-klage', '/vurdering/eksamen', '/vurdering/fag-og-svenneproven', '/vurdering/klage-pa-karakter', '/skolemiljo/elevundersokelsen'];
     const mangler = alleRuter()
       .map(({ rute }) => rute.sti)
       .filter((sti) => !truffet.has(sti) && !utenEgenSide.includes(sti));

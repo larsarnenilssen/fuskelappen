@@ -6,8 +6,8 @@ import { Innholdsfeil, lesBegrepsord, lesFil } from '../innhold/last.ts';
 import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
 import { byggJukselappfag } from '../../src/modules/fag/jukselappfag.ts';
-import { byggJukselappEu } from '../../src/modules/skolemiljo/elevundersokelsen/jukselapp.ts';
-import type { Elevundersokelsen } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
+import { byggJukselappEu } from '../../src/modules/elevundersokelsen/jukselapp.ts';
+import type { Elevundersokelsen } from '../../src/modules/elevundersokelsen/skjema.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesLopskilder, lesSkoler, lesSkolenummer, lesTilbudsindeks, lesUtdanningslop } from '../data/les.ts';
 import { kobleSkoler } from '../../src/modules/opplaeringslop/skoler.ts';
@@ -146,7 +146,7 @@ export function fagsokPlugin(rot: string): Plugin {
 }
 
 /**
- * Fagene til dagens jukselapp (avgjørelse 085): navnet, årstimene og årsrammen for fagene som kobles til én årsramme i
+ * Fagene til dagens jukselapp (avgjørelse 086): navnet, årstimene og årsrammen for fagene som kobles til én årsramme i
  * SFS 2213, laget fra fagindeksen og regelsettet når appen bygges. Lastes bare når jukselappen viser et fag.
  */
 export function jukselappfagPlugin(rot: string): Plugin {
@@ -165,7 +165,7 @@ export function jukselappfagPlugin(rot: string): Plugin {
 }
 
 /**
- * Utdraget fra Elevundersøkelsen til dagens jukselapp (avgjørelse 085): mobbing og indeksene for Vg1, laget fra
+ * Utdraget fra Elevundersøkelsen til dagens jukselapp (avgjørelse 086): mobbing og indeksene for Vg1, laget fra
  * resultatfilen når appen bygges. Uten filen er utdraget tomt.
  */
 export function jukselappEuPlugin(rot: string): Plugin {

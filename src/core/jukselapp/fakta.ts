@@ -1,4 +1,4 @@
-// Dagens jukselapp (fase 8, avgjørelse 085): teksten i et faktum og hvilket faktum dagen får. Rene funksjoner.
+// Dagens jukselapp (fase 8, avgjørelse 086): teksten i et faktum og hvilket faktum dagen får. Rene funksjoner.
 //
 // Faktumet velges ut fra datoen, så det er det samme hele dagen og likt for alle med samme fylke og skole, uten at noe
 // lagres. Dagene går på rundgang mellom modulene, så to dager etter hverandre gir fakta fra ulike deler av appen, og

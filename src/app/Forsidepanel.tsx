@@ -39,7 +39,7 @@ export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string
   { id: 'itall', ikon: 'sammenlign', favoritt: oversiktsid('statistikk') },
 ];
 
-/** Dagens jukselapp (avgjørelse 085): med når brukeren har slått den på. Den har ingen side, så den kan ikke være favoritt. */
+/** Dagens jukselapp (avgjørelse 086): med når brukeren har slått den på. Den har ingen side, så den kan ikke være favoritt. */
 export const JUKSELAPPVISNING: { id: Visning; ikon: Ikonnavn; favoritt: string | null } = { id: 'jukselapp', ikon: 'skriv', favoritt: null };
 
 /** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med valgene i overskriften. */
@@ -79,7 +79,7 @@ export function Forsidepanel({ visninger }: { visninger: readonly Visning[] }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
   const lukket = useLukket(PANEL);
-  // Første besøk en ny dag står panelet på dagens jukselapp (eier 08.10.2026, alternativ C i avgjørelse 085). Bytter
+  // Første besøk en ny dag står panelet på dagens jukselapp (eier 08.10.2026, alternativ C i avgjørelse 086). Bytter
   // brukeren visning, gjelder valget resten av dagen.
   const idag = iDag();
   const nyDag = visninger.includes('jukselapp') && forside.jukselappVist !== idag;
@@ -233,7 +233,7 @@ function ITall({ ramme }: { ramme: Ramme }) {
   });
 }
 
-/** Dagens jukselapp som en fjerde visning i panelet (eier 08.10.2026, avgjørelse 085). */
+/** Dagens jukselapp som en fjerde visning i panelet (eier 08.10.2026, avgjørelse 086). */
 function JukselappVisning({ ramme }: { ramme: Ramme }) {
   const { t } = useTekst();
   const { sammendrag, innhold } = useDagensJukselapp();

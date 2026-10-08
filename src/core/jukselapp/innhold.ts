@@ -1,4 +1,4 @@
-// Fakta fra innholdsfilene i en modul (dagens jukselapp, avgjørelse 085): hvert element får adressen til siden det
+// Fakta fra innholdsfilene i en modul (dagens jukselapp, avgjørelse 086): hvert element får adressen til siden det
 // står på, og stegene i veiviserne lenker rett til steget.
 import type { Faktum } from '../../modules/typer.ts';
 import { begge, type Tekstverdi } from '../i18n/tekst.ts';

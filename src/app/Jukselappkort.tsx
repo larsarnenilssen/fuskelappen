@@ -1,4 +1,4 @@
-// Kortet med dagens jukselapp (fase 8, avgjørelse 085). Lastes når jukselappen vises, så kortet, stilene og utvalget
+// Kortet med dagens jukselapp (fase 8, avgjørelse 086). Lastes når jukselappen vises, så kortet, stilene og utvalget
 // ikke er med i startpakken.
 import { Ikon } from '../components/Ikon.tsx';
 import { visTekst } from '../core/i18n/tekst.ts';
@@ -10,10 +10,10 @@ import '../styles/jukselapp.css';
 export { hentFaktum } from '../core/jukselapp/fakta.ts';
 
 /**
- * Jukselappen i panelet, med samme oppsett som kalenderen, nyhetene og tallene (eier 08.10.2026): øverst hvor faktumet
- * kommer fra og knappen for ny jukselapp, så faktumet i liten skrift, og nederst den blå linjen med lenken til stedet i
- * appen over hele bredden. Tittelen, regelverket og kildene står ikke i kortet (eier 08.10.2026). De står på siden
- * lenken går til.
+ * Jukselappen i panelet, med samme oppsett og høyde som kalenderen, nyhetene og tallene (eier 08.10.2026): øverst hvor
+ * faktumet kommer fra og knappen for ny jukselapp, så tittelen og faktumet midt i plassen, og nederst den blå linjen
+ * med lenken til stedet i appen over hele bredden. Regelverket og kildene står ikke i kortet, men på siden lenken går
+ * til.
  */
 export function Jukselappkort({ f, onNy }: { f: Faktum | null; onNy: () => void }) {
   const { t, malform } = useTekst();
@@ -28,15 +28,21 @@ export function Jukselappkort({ f, onNy }: { f: Faktum | null; onNy: () => void 
         </button>
       </div>
       {f ? (
-        <p class="jl-tekst" aria-live="polite">
-          {f.tekst[malform]}
-        </p>
+        <div class="jl-innhold" aria-live="polite">
+          <h3 class="jl-tittel">{f.tittel[malform]}</h3>
+          <p class="jl-tekst">{f.tekst[malform]}</p>
+        </div>
       ) : (
         <p class="dempet panel-tom">{t('forside.jukselapp.tom')}</p>
       )}
+      {/* Er lenken den samme som tittelen (et begrep, en vei), står «Les mer» i stedet, så teksten ikke gjentas. */}
       {f && (
-        <a class="panel-videre jl-videre" href={`#${f.rute}`}>
-          <span class="jl-lenke">{f.lenke[malform]}</span>
+        <a
+          class="panel-videre jl-videre"
+          href={`#${f.rute}`}
+          aria-label={f.lenke[malform] === f.tittel[malform] ? t('forside.jukselapp.lesMerOm', { tittel: f.tittel[malform] }) : undefined}
+        >
+          <span class="jl-lenke">{f.lenke[malform] === f.tittel[malform] ? t('forside.jukselapp.lesMer') : f.lenke[malform]}</span>
           <Ikon navn="hoyre" class="ikon-liten" />
         </a>
       )}

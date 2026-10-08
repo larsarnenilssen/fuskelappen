@@ -278,7 +278,7 @@ export default function Forside() {
   // Visningene i panelet som brukeren har slått på (avgjørelse 081). Med «Bare favoritter» står de som er favoritter,
   // hver for seg, i stedet for kortene sine.
   const skjult = forside.skjult ?? [];
-  // Dagens jukselapp er den fjerde visningen når brukeren har slått den på (eier 08.10.2026, avgjørelse 085).
+  // Dagens jukselapp er den fjerde visningen når brukeren har slått den på (eier 08.10.2026, avgjørelse 086).
   const jukselappPa = forside.jukselapp === true;
   const paa = [...VISNINGER.filter((v) => !skjult.includes(v.id)), ...(jukselappPa ? [JUKSELAPPVISNING] : [])];
   // Jukselappen har ingen side å være favoritt. Med «Bare favoritter» står den likevel når den er slått på.

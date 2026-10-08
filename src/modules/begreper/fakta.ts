@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra begrepsbanken (avgjørelse 085): de første setningene i hvert begrep, og kodene i
+// Fakta til dagens jukselapp fra begrepsbanken (avgjørelse 086): de første setningene i hvert begrep, og kodene i
 // kodegruppene, f.eks. karakterene og vurderingsuttrykkene (IV, IM, Ng). Kodelistene fra VIGO er ikke med. Lastes bare
 // når modulen har dagen.
 import { faktaFraElementer, faktatekst } from '../../core/jukselapp/fakta.ts';
@@ -17,8 +17,8 @@ export async function fakta(): Promise<Faktum[]> {
             return [
               {
                 id: `begreper:kode:${b.id}:${g.id}:${k.kode}`,
-                tittel: { nb: `${k.kode} ${k.navn.nb}`, nn: `${k.kode} ${k.navn.nn}` },
-                tekst: { nb: `${k.kode} (${k.navn.nb}): ${tekst.nb}`, nn: `${k.kode} (${k.navn.nn}): ${tekst.nn}` },
+                tittel: { nb: `${k.kode} – ${k.navn.nb}`, nn: `${k.kode} – ${k.navn.nn}` },
+                tekst,
                 under: g.tittel,
                 lenke: b.tittel,
                 rute: `/begreper/${b.id}?q=${encodeURIComponent(k.kode)}`,

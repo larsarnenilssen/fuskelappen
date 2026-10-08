@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra overordnet del (avgjørelse 085): første avsnitt i ingressen og i teksten til hver
+// Fakta til dagens jukselapp fra overordnet del (avgjørelse 086): første avsnitt i ingressen og i teksten til hver
 // del, f.eks. de fem grunnleggende ferdighetene og de tre tverrfaglige temaene. Teksten er Udirs, på bokmål og
 // nynorsk. Lastes bare når modulen har dagen.
 import { hentTekst, latBegge } from '../../core/i18n/tekst.ts';

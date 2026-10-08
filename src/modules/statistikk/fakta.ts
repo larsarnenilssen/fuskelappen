@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Videregående i tall (avgjørelse 085): søkerne, elevene, læreplassen, gjennomføringen,
+// Fakta til dagens jukselapp fra Videregående i tall (avgjørelse 086): søkerne, elevene, læreplassen, gjennomføringen,
 // fag- og svennebrevene, fraværet og snittkarakteren til skriftlig eksamen i hele landet og i hvert fylke, og elevene og
 // fraværet på hver skole. Fylkets tall vises bare når fylket er valgt, og skolens bare når skolen er valgt. Lastes bare
 // når modulen har dagen.

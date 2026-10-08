@@ -6,6 +6,7 @@ const MODULSPEKER: Record<string, readonly string[]> = {
   arbeidstid: ['arbeidstid', 'kalkulator-fag'],
   begreper: ['kodelister', 'modul-og-sok'],
   eksamen: ['eksamen', 'laerlinger', 'kalender'],
+  elevundersokelsen: ['elevundersokelsen'],
   fag: ['fag', 'kalkulator-fag'],
   fylker: ['fylker'],
   inntak: ['inntak'],
@@ -29,7 +30,7 @@ const DATAMODULER: Record<string, readonly string[]> = {
   utdanning: ['opplaeringslop'],
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
-  elevundersokelsen: ['skolemiljo'],
+  elevundersokelsen: ['elevundersokelsen'],
   statistikk: ['statistikk', 'fylker', 'inntak', 'vurdering', 'eksamen', 'opplaeringslop'],
   udir: ['inntak', 'vurdering'],
   skolerute: ['kalender'],
@@ -93,7 +94,7 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       grunner.push(`${fil}: testen selv`);
       continue;
     }
-    // Dagens jukselapp (avgjørelse 085): kortet, utvalget og faktaene i modulene.
+    // Dagens jukselapp (avgjørelse 086): kortet, utvalget og faktaene i modulene.
     if (/^src\/(app\/Jukselapp|core\/jukselapp\/|modules\/.+\/(fakta|jukselappfag|jukselapp)\.ts$)/.test(fil)) {
       speker.add('jukselapp');
       grunner.push(`${fil}: dagens jukselapp`);

@@ -1,6 +1,6 @@
 // Bygger resultatene fra Elevundersøkelsen (avgjørelse 077) av radene fra Udirs statistikkbank. Rene funksjoner,
 // testet i tests/unit/elevundersokelsen.test.ts.
-import type { Elevundersokelsen, Eierform, Verdi } from '../../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
+import type { Elevundersokelsen, Eierform, Verdi } from '../../src/modules/elevundersokelsen/skjema.ts';
 
 /** En rad fra API-et, med feltene som brukes. Tallene kommer som tekst med desimalkomma og mellomrom som tusenskille. */
 export interface Rad {

@@ -1,4 +1,4 @@
-// Fagene til dagens jukselapp (avgjørelse 085): navnet, årstimene og årsrammen i SFS 2213 vedlegg 1 for fagene som
+// Fagene til dagens jukselapp (avgjørelse 086): navnet, årstimene og årsrammen i SFS 2213 vedlegg 1 for fagene som
 // kobles til én årsramme. Lages når appen bygges (virtual:jukselappfag), så forsiden ikke må laste hele fagindeksen.
 // Ren funksjon, så den kan testes.
 import type { Oppslag } from '../../core/regler/motor.ts';

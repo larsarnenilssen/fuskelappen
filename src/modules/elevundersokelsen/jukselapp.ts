@@ -1,4 +1,4 @@
-// Utdraget fra Elevundersøkelsen til dagens jukselapp (avgjørelse 085): mobbing på skolen og indeksene for Vg1, i år og
+// Utdraget fra Elevundersøkelsen til dagens jukselapp (avgjørelse 086): mobbing på skolen og indeksene for Vg1, i år og
 // året før, for landet, fylkene og skolene (alle skoler samlet for landet og fylkene). Lages når appen bygges
 // (virtual:jukselappeu), så hele filen (600 kB) ikke lastes. Vg1 fordi undersøkelsen er obligatorisk der. Skjermede tall
 // er ikke med. Ren funksjon, så den kan testes.

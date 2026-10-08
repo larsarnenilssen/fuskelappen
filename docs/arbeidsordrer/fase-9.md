@@ -24,7 +24,7 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
   - om brukserklæringen og merket «Kontrollert» (016)
 
 **Status:**
-- Siste versjon er 0.43.0 (08.10.2026), med dagens jukselapp i panelet øverst på forsiden (avgjørelse 085).
+- Siste versjon er 0.43.0 (08.10.2026), med dagens jukselapp i panelet øverst på forsiden (avgjørelse 086).
 - Innhold og regelverdier har `gyldighet` (nasjonal, fylke eller skole), og oppslaget går skole → fylke → nasjonal (`hentVerdi` i `src/core/regler/`, `velgSynlige` i `src/core/innhold/status.ts`). Vestland har fylkesinnhold for inntak, eksamen og skoleregler, og alle fylkene har lokale forskrifter fra Lovdata.
 - Fylke og skole velges under Innstillinger og lagres lokalt (`src/core/lagring/lagring.ts`, skjemaversjon 3).
 - Tilbakemeldingen lager en ferdig e-post til appens adresse (avgjørelse 064). Appen sender ingenting selv.
@@ -60,7 +60,7 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
 
 ### Levert i fase 8 (0.43.0, 08.10.2026)
 
-- **Dagens jukselapp** er en fjerde visning i panelet øverst på forsiden. Den er av fra start og slås på under «Tilpass» eller Innstillinger. Første besøk hver dag står panelet på jukselappen (avgjørelse 085).
+- **Dagens jukselapp** er en fjerde visning i panelet øverst på forsiden. Den er av fra start og slås på under «Tilpass» eller Innstillinger. Første besøk hver dag står panelet på jukselappen (avgjørelse 086).
 - Modulene gir fakta gjennom `fakta()` i manifestet. Fakta med `gyldighet` for et fylke vises bare når fylket er valgt. Godkjente lokale regler fra fase 9 kan komme med i jukselappen av seg selv når de står i innholdet med riktig `gyldighet`.
 - Velkomsten i fase 10 skal spørre om brukeren vil slå på dagens jukselapp (`OPPDRAG.md`, eier 08.10.2026).
 

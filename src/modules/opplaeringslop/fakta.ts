@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Opplæringsløp (avgjørelse 085): veiene til fag- og svennebrev, og tilbudene ved
+// Fakta til dagens jukselapp fra Opplæringsløp (avgjørelse 086): veiene til fag- og svennebrev, og tilbudene ved
 // skolen brukeren har valgt, fra utdanning.no. Lastes bare når modulen har dagen.
 import { formaterTall, hentTekst, latBegge } from '../../core/i18n/tekst.ts';
 import { faktaFraElementer } from '../../core/jukselapp/fakta.ts';

@@ -1,4 +1,4 @@
-// Fakta til dagens jukselapp fra Arbeidstid (avgjørelse 085): forklaringene i kalkulatorene. «Bruk av tiden» står i
+// Fakta til dagens jukselapp fra Arbeidstid (avgjørelse 086): forklaringene i kalkulatorene. «Bruk av tiden» står i
 // Arbeidsplan, og metoden står i kalkulatoren den hører til. Lastes bare når modulen har dagen.
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Innholdselement } from '../../core/innhold/skjema.ts';

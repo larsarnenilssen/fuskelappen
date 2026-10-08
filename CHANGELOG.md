@@ -10,9 +10,14 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Dagens jukselapp:** ett faktum fra appen hver dag, som en fjerde visning i panelet øverst på forsiden, ved siden av kalenderen, nyhetene og tallene. Den er av fra start. Slå den på under «Tilpass» eller Innstillinger.
   - Faktaene kommer fra hele appen: begreper, regler og frister (med når fristen er), stegene i veiviserne, veiene til fag- og svennebrev, eksamen og fraværsgrensen, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimene og årsrammen i fagene, og tallene fra Videregående i tall: søkere, elever, læreplass, gjennomføring, fag- og svennebrev, fravær og snittkarakterer til eksamen. Elevundersøkelsen gir mobbing og læringsmiljøet for Vg1, og begrepene kodene for karakterer, orden og oppførsel. Fylkets innhold og tall kommer med når du har valgt fylke, og skolens elevtall, fravær, tilbud og resultater i Elevundersøkelsen når du har valgt skole.
-  - Hvert faktum lenker til stedet i appen der det står, med kildene. Lenken har hele linjen nederst, og «Ny jukselapp» står øverst til høyre. Jukselappen er like høy som kalenderen.
+  - Hvert faktum har en tittel og lenker til stedet i appen der det står, med kildene. Lenken har hele linjen nederst, og «Ny jukselapp» står øverst til høyre. Jukselappen er like høy som kalenderen.
   - Jukselappen byttes hver dag, og «Ny jukselapp» gir en ny med en gang.
   - Første gang du åpner appen en ny dag, står panelet på jukselappen. Velger du en annen visning, gjelder den resten av dagen.
+
+### Endret
+
+- **Elevundersøkelsen** er en egen del av appen under Skolemiljø på forsiden, med adressen `#/elevundersokelsen`. Gamle lenker og favoritter virker.
+- **Skolemiljø** (aktivitetsplikten, skolereglene og kapittel 12) heter nå **Aktivitetsplikt og skoleregler**, så den ikke har samme navn som kategorien.
 
 ### Rettet
 

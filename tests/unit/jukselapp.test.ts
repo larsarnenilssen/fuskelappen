@@ -1,4 +1,4 @@
-// Dagens jukselapp (fase 8, avgjørelse 085): teksten i et faktum, utvalget per dag og faktaene fra alle modulene.
+// Dagens jukselapp (fase 8, avgjørelse 086): teksten i et faktum, utvalget per dag og faktaene fra alle modulene.
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { lesFil } from '../../scripts/innhold/last.ts';
@@ -15,8 +15,8 @@ import { aktiveModuler, alleRuter } from '../../src/modules/register.ts';
 import type { Faktum } from '../../src/modules/typer.ts';
 import { hentInnhold as hentSkolemiljo, veiviserRute } from '../../src/modules/skolemiljo/innhold.ts';
 import { faktaFraStatistikk } from '../../src/modules/statistikk/fakta.ts';
-import { faktaFraElevundersokelsen } from '../../src/modules/skolemiljo/fakta.ts';
-import { byggJukselappEu } from '../../src/modules/skolemiljo/elevundersokelsen/jukselapp.ts';
+import { faktaFraElevundersokelsen } from '../../src/modules/elevundersokelsen/fakta.ts';
+import { byggJukselappEu } from '../../src/modules/elevundersokelsen/jukselapp.ts';
 import { lastElevundersokelsen } from '../../src/data/elevundersokelsen.ts';
 import { lastStatistikk } from '../../src/data/statistikk.ts';
 
@@ -186,11 +186,11 @@ describe('faktaene fra modulene', () => {
     expect(eu.sporsmal.map((s) => s.kode)).toContain('EUIndeks_1398');
     for (const rad of Object.values(eu.verdier)) for (const [naa] of Object.values(rad)) expect(typeof naa).toBe('number');
     const fakta = faktaFraElevundersokelsen(eu);
-    const vestland = fakta.find((f) => f.id === 'skolemiljo:eu:EUIndeks_1398:F46');
+    const vestland = fakta.find((f) => f.id === 'elevundersokelsen:EUIndeks_1398:F46');
     expect(vestland?.gyldighet).toEqual({ niva: 'fylke', fylke: '46', forhold: 'supplerer' });
     expect(vestland?.tekst.nb).toMatch(/prosent av elevene på Vg1 i Vestland svarte i Elevundersøkelsen/);
-    expect(fakta.find((f) => f.id === 'skolemiljo:eu:EUIndeks_1398:L')?.gyldighet).toBeUndefined();
-    const skole = fakta.find((f) => f.id.startsWith('skolemiljo:eu:EUIndeks_1379:S'));
+    expect(fakta.find((f) => f.id === 'elevundersokelsen:EUIndeks_1398:L')?.gyldighet).toBeUndefined();
+    const skole = fakta.find((f) => f.id.startsWith('elevundersokelsen:EUIndeks_1379:S'));
     expect(skole?.gyldighet?.niva).toBe('skole');
     expect(skole?.tekst.nb).toMatch(/for elevene på Vg1 ved /);
   });
@@ -200,8 +200,8 @@ describe('faktaene fra modulene', () => {
     const alle = (await Promise.all(aktiveModuler.map((m) => m.fakta()))).flat();
     const skole = alle.find((f) => f.id.startsWith('opplaeringslop:skole:'));
     expect(skole?.gyldighet?.niva).toBe('skole');
-    expect(skole?.tekst.nb).toMatch(/^Ifølge utdanning\.no har .+ tilbud i videregående opplæring/);
-    expect(alle.find((f) => f.id === 'begreper:kode:karakterer-og-vurderingsuttrykk:karakterer:IV')?.tekst.nb).toMatch(/^IV \(Ikke vurderingsgrunnlag\): /);
+    expect(skole?.tekst.nb).toMatch(/^Skolen i .+ har \d+ tilbud i videregående opplæring/);
+    expect(alle.find((f) => f.id === 'begreper:kode:karakterer-og-vurderingsuttrykk:karakterer:IV')?.tittel.nb).toBe('IV – Ikke vurderingsgrunnlag');
   }, 60_000);
 
   it('fagene har årstimene og årsrammen fra SFS 2213 vedlegg 1', () => {

@@ -37,7 +37,7 @@ export interface Favorittbar {
 }
 
 /**
- * Et faktum til dagens jukselapp på forsiden (fase 8, avgjørelse 085): én til tre setninger fra innholdet, regelsettene
+ * Et faktum til dagens jukselapp på forsiden (fase 8, avgjørelse 086): én til tre setninger fra innholdet, regelsettene
  * eller dataene modulen alt har, med lenke til stedet i appen og kildene.
  */
 export interface Faktum {
@@ -104,7 +104,7 @@ export interface Modulmanifest {
   /** Frister modulen eier. Samles i kalenderen (avgjørelse 066). */
   frister(): Promise<Frist[]>;
   /**
-   * Fakta til dagens jukselapp (fase 8, avgjørelse 085). Lastes først når jukselappen vises, og bare for modulen som
+   * Fakta til dagens jukselapp (fase 8, avgjørelse 086). Lastes først når jukselappen vises, og bare for modulen som
    * har dagen. En modul uten fakta gir en tom liste.
    */
   fakta(): Promise<Faktum[]>;

@@ -1,16 +1,14 @@
-// Skolemiljø (fase 7, avgjørelse 076, 077 og 079): oversikten, siden om kapittel 12 med delene lukket fra start,
-// veiviseren for aktivitetsplikten etter rolle, skolereglene for fylket og for privatskoler, og Elevundersøkelsen med
-// søk i seriene, «Kort om» og det beste tallet i tabellen.
+// Aktivitetsplikt og skoleregler (modulen skolemiljo, fase 7, avgjørelse 076, 079 og 086): oversikten, siden om
+// kapittel 12 med delene lukket fra start, veiviseren for aktivitetsplikten etter rolle, og skolereglene for fylket og
+// for privatskoler. Elevundersøkelsen står i elevundersokelsen.spec.ts.
 import { expect, test } from '@playwright/test';
 import { settLagret } from './hjelp.ts';
 
-const SLATTHAUG = { id: '974557320', navn: 'Slåtthaug videregående skole' };
-
-test.describe('skolemiljø', () => {
-  test('oversikten har retten og resultatene øverst, så veiviseren og skolereglene', async ({ page }) => {
+test.describe('Aktivitetsplikt og skoleregler', () => {
+  test('oversikten har retten og pliktene øverst, så veiviseren og skolereglene', async ({ page }) => {
     await page.goto('./#/skolemiljo');
     const overskrifter = page.locator('main h2');
-    await expect(overskrifter).toHaveText(['Retten og resultatene', 'Veivisere', 'Oppslag']);
+    await expect(overskrifter).toHaveText(['Retten og pliktene', 'Veivisere', 'Oppslag']);
     await page.locator('main').getByRole('link', { name: /^Et trygt og godt skolemiljø/ }).click();
     await expect(page.locator('main h1')).toHaveText('Et trygt og godt skolemiljø');
   });
@@ -51,21 +49,5 @@ test.describe('skolemiljø', () => {
     await expect(page.locator('main h1')).toHaveText('Skoleregler');
     await expect(page.locator('.sr-boks')).toHaveCount(0);
     await expect(page.locator('main p.privatskolemerknad')).toBeVisible();
-  });
-
-  test('Elevundersøkelsen: «Kort om» skolen, søk i seriene og det beste tallet i tabellen', async ({ page }) => {
-    await settLagret(page, { fylke: '46', skole: SLATTHAUG });
-    await page.goto('./#/skolemiljo/elevundersokelsen');
-    await expect(page.getByRole('heading', { name: /Kort om Slåtthaug/ })).toBeVisible();
-    const serie2 = page.getByRole('combobox', { name: /Serie 2/ });
-    await serie2.click();
-    await serie2.fill('voss gym');
-    await expect(page.getByRole('option')).toHaveCount(1);
-    await page.keyboard.press('Enter');
-    await expect(serie2).toHaveValue('Voss gymnas');
-    await expect(page).toHaveURL(/s=S974557320(%2C|,)S\d+/);
-    await page.getByRole('radio', { name: 'Tabell' }).check({ force: true });
-    await expect(page.locator('.eu-tabell')).toBeVisible();
-    await expect(page.locator('.eu-tabell .eu-beste').first()).toBeVisible();
   });
 });

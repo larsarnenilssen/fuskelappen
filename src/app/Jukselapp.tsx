@@ -1,5 +1,5 @@
 // Dagens jukselapp på forsiden (fase 8): ett faktum fra appen, med lenke til stedet der det står og kilden.
-// Jukselappen er en visning i panelet øverst på forsiden (eier 08.10.2026, avgjørelse 081 og 085). Faktaene kommer
+// Jukselappen er en visning i panelet øverst på forsiden (eier 08.10.2026, avgjørelse 081 og 086). Faktaene kommer
 // fra `fakta()` i manifestene.
 import type { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
@@ -10,7 +10,7 @@ import type * as Kortmodul from './Jukselappkort.tsx';
 import { settJukselapp, useTekst, useTilstand } from './tilstand.ts';
 
 /**
- * Dagens faktum og kortet som viser det (avgjørelse 085). Kortet og faktaene lastes når jukselappen vises, og bare
+ * Dagens faktum og kortet som viser det (avgjørelse 086). Kortet og faktaene lastes når jukselappen vises, og bare
  * modulen som har dagen, laster innholdet sitt. `steg` er antall trykk på knappen for ny jukselapp. Det lagres ikke, så
  * neste dag kommer dagens igjen.
  */

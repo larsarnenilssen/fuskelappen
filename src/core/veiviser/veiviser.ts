@@ -125,7 +125,7 @@ export function tilstand(kart: Veiviserkart, steg: string, svar: readonly string
 
 /**
  * Svarene på den korteste veien fra starten til `steg`, så en lenke kan åpne veiviseren der (dagens jukselapp,
- * avgjørelse 085). Null når steget ikke kan nås.
+ * avgjørelse 086). Null når steget ikke kan nås.
  */
 export function veiTil(kart: Veiviserkart, steg: string): string[] | null {
   const ko: { id: string; svar: string[] }[] = [{ id: kart.start, svar: [] }];

@@ -191,7 +191,7 @@ export function settJukselapp(jukselapp: boolean): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp, ...(jukselapp ? { visning: 'jukselapp' } : {}) } }));
 }
 
-/** Første besøk en ny dag: panelet står på dagens jukselapp, og datoen huskes (alternativ C, avgjørelse 085). */
+/** Første besøk en ny dag: panelet står på dagens jukselapp, og datoen huskes (alternativ C, avgjørelse 086). */
 export function visJukselappForst(dato: string): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, visning: 'jukselapp', jukselappVist: dato } }));
 }

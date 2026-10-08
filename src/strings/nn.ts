@@ -12,6 +12,7 @@ import { eksamenNn } from './moduler/eksamen.nn.ts';
 import { statistikkNn } from './moduler/statistikk.nn.ts';
 import { nyheterNn } from './moduler/nyheter.nn.ts';
 import { skolemiljoNn } from './moduler/skolemiljo.nn.ts';
+import { elevundersokelsenNn } from './moduler/elevundersokelsen.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 import { vurderingNn } from './moduler/vurdering.nn.ts';
 
@@ -88,6 +89,8 @@ export const nn: Tekster = {
     jukselapp: {
       tittel: 'Dagens jukselapp',
       ny: 'Ny jukselapp',
+      lesMer: 'Les meir',
+      lesMerOm: 'Les meir: {tittel}',
       tom: 'Ingen jukselapp i dag.',
       innstilling: 'Dagens jukselapp på framsida',
       innstillingHjelp: 'Eitt faktum frå appen kvar dag, med lenkje og kjelde. Han står øvst på framsida, ved sida av kalenderen, nyheitene og tala. Han blir vist først ved første besøk kvar dag.',
@@ -96,7 +99,7 @@ export const nn: Tekster = {
   },
   jukselapp: {
     overordnetDel: 'Overordna del {nr}',
-    fag: '{fag} har {timer} årstimar. Årsramma for faget er {t60} timar, eller {t45} i 45-minutts einingar.',
+    fag: 'Faget har {timer} årstimar. Årsramma for faget er {t60} timar, eller {t45} i 45-minutts einingar.',
     landet: 'heile landet',
     sokereTittel: 'Søkjarar',
     sokere: 'Per 1. mars {aar} hadde {antall} søkt vidaregåande opplæring i {sted}, mot {forrige} året før.',
@@ -104,11 +107,10 @@ export const nn: Tekster = {
     formidling: 'I desember {aar} hadde {andel} prosent av søkjarane til læreplass i {sted} fått lærekontrakt.',
     iSted: 'i {sted}',
     vedSkole: 'ved {sted}',
-    euTittel: 'Elevundersøkinga: {navn}',
     euMobbing: '{verdi} prosent av elevane på Vg1 {hvor} svarte i Elevundersøkinga {skolear} at dei er blitt mobba 2 eller 3 gonger i månaden eller oftare dei siste månadene.',
     euMobbingForrige: '{verdi} prosent av elevane på Vg1 {hvor} svarte i Elevundersøkinga {skolear} at dei er blitt mobba 2 eller 3 gonger i månaden eller oftare dei siste månadene. Året før var det {forrige} prosent.',
     euIndeks: 'I Elevundersøkinga {skolear} var indeksen «{navn}» {verdi} for elevane på Vg1 {hvor}, på ein skala frå 1 til 5 der høgare er betre.',
-    skoletilbud: 'Ifølgje utdanning.no har {skole} i {sted} {antall} tilbod i vidaregåande opplæring fordelt på {programmer} utdanningsprogram.',
+    skoletilbud: 'Skulen i {sted} har {antall} tilbod i vidaregåande opplæring fordelt på {programmer} utdanningsprogram, ifølgje utdanning.no.',
     eleverTittel: 'Elevar',
     elever: 'I skuleåret {skolear} var det {antall} elevar på {skoler} vidaregåande skular i {sted}.',
     eleverSkole: 'I skuleåret {skolear} hadde {sted} {antall} elevar.',
@@ -279,7 +281,7 @@ export const nn: Tekster = {
       tittel: 'Kreditering',
       tekst:
         'Appen inneheld data frå Utdanningsdirektoratet og Lovdata, gjorde tilgjengelege under Norsk lisens for offentlege data (NLOD) 2.0.',
-      elevundersokelsen: 'Resultata frå Elevundersøkinga i Skulemiljø og nøkkeltala frå statistikkbanken til Udir: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
+      elevundersokelsen: 'Resultata frå Elevundersøkinga og nøkkeltala frå statistikkbanken til Udir: Inneheld data under NLOD, tilgjengeleggjort på data.udir.no.',
       utdanning: 'Yrka og utdanningsbeskrivingane i Opplæringstilbod er baserte på opne data frå utdanning.no og er underlagde Norsk lisens for offentlege data (NLOD). Teksten blir halden ved like på utdanning.no.',
       ndla: 'Namna på faga på NDLA er frå Nasjonal digital læringsarena (NDLA), lisensierte under Creative Commons Namngjeving 4.0 (CC BY 4.0).',
       ccby: 'Les CC BY 4.0',
@@ -444,8 +446,12 @@ export const nn: Tekster = {
       beskrivelse: 'Søkjarkategoriar, rettar og fristar ved inntak.',
     },
     skolemiljo: {
-      navn: 'Skulemiljø',
-      beskrivelse: 'Aktivitetsplikta, skulereglar og Elevundersøkinga.',
+      navn: 'Aktivitetsplikt og skulereglar',
+      beskrivelse: 'Retten til eit trygt og godt skulemiljø, aktivitetsplikta og skulereglane.',
+    },
+    elevundersokelsen: {
+      navn: 'Elevundersøkinga',
+      beskrivelse: 'Mobbing, trivsel og læringsmiljø på skulen, i fylket og i landet.',
     },
     tilrettelegging: {
       navn: 'Tilrettelegging',
@@ -509,6 +515,7 @@ export const nn: Tekster = {
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
   skolemiljo: skolemiljoNn,
+  elevundersokelsen: elevundersokelsenNn,
   vurdering: vurderingNn,
   eksamen: eksamenNn,
   statistikk: statistikkNn,

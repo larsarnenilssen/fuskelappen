@@ -1,4 +1,4 @@
-// Dagens jukselapp (fase 8, avgjørelse 085): bryteren under «Tilpass» og Innstillinger, visningen i panelet, knappen
+// Dagens jukselapp (fase 8, avgjørelse 086): bryteren under «Tilpass» og Innstillinger, visningen i panelet, knappen
 // for ny jukselapp, lenken videre og visningen først ved første besøk hver dag (alternativ C). Faktumet avhenger av
 // datoen, så testene ser på oppsettet og ikke på teksten.
 import AxeBuilder from '@axe-core/playwright';
@@ -28,8 +28,10 @@ test.describe('dagens jukselapp', () => {
     await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveAttribute('aria-pressed', 'true');
     await expect(panel.locator('.jl-tekst')).not.toBeEmpty();
     await expect(panel.locator('.jl-under')).not.toBeEmpty();
-    // Kortet har ingen tittel og ingen rader med regelverket og kildene (eier 08.10.2026). Lenken har hele bunnlinjen.
-    await expect(panel.locator('.jl-panel h3, .jl-panel details')).toHaveCount(0);
+    // Kortet har tittelen over faktumet, og ingen rader med regelverket og kildene (eier 08.10.2026). Lenken har hele
+    // bunnlinjen.
+    await expect(panel.locator('.jl-tittel')).not.toBeEmpty();
+    await expect(panel.locator('.jl-panel details')).toHaveCount(0);
     await expect(panel.locator('a.jl-videre')).toBeVisible();
 
     // Innstillinger viser samme valg.

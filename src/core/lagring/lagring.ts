@@ -47,7 +47,7 @@ export const forsideSkjema = z.strictObject({
   jukselapp: z.optional(z.boolean()),
   /**
    * Datoen dagens jukselapp sist ble vist først i panelet. Første besøk en ny dag står panelet på jukselappen (eier
-   * 08.10.2026, alternativ C i avgjørelse 085).
+   * 08.10.2026, alternativ C i avgjørelse 086).
    */
   jukselappVist: z.optional(z.string()),
 });
@@ -100,6 +100,8 @@ export const FLYTTEDE_FAVORITTER: Readonly<Record<string, string>> = {
   'vurdering:fag-og-svenneproven': 'eksamen:fag-og-svenneproven',
   'vurdering:klage-pa-karakter': 'eksamen:klage-pa-karakter',
   'vurdering:frister': 'eksamen:frister',
+  // Elevundersøkelsen ble egen modul (avgjørelse 087).
+  'skolemiljo:elevundersokelsen': 'elevundersokelsen:oversikt',
 };
 
 const flyttFavoritter = (liste: readonly string[]): string[] => [...new Set(liste.map((id) => FLYTTEDE_FAVORITTER[id] ?? id))];

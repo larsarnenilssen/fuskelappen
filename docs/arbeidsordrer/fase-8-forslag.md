@@ -1,8 +1,23 @@
 # Forslag: fase 8 – Dagens jukselapp
 
-*Status 08.10.2026:* Eier godkjente designet etter runde 2, med alternativ C. Levert i 0.43.0 (avgjørelse 085). Rundene under står som de ble skrevet, nyeste øverst.
+*Status 08.10.2026:* Eier godkjente designet etter runde 2, med alternativ C. Levert i 0.43.0 (avgjørelse 086). Rundene under står som de ble skrevet, nyeste øverst.
 
 Til eier. Svar gjerne punkt for punkt (f.eks. «J1 ja, men uten paragrafer, J4 A»). Rundene står med den nyeste øverst.
+
+---
+
+## Runde 5: tittelen tilbake, og Elevundersøkelsen som egen modul (eier 08.10.2026)
+
+**Lengden og tittelen:** Med høyden på 268 px er det plass til tittelen på en linje over faktumet når teksten er høyst om lag 240 tegn, som før. Over 60 fakta på mobil (390 px) holdt 58 seg innenfor kalenderhøyden, og den lengste ble 20 px høyere. Lengre tekst ville gjort kortet høyere enn de andre visningene, så tittelen er tatt tilbake, og lengden er den samme.
+- Tittelen står i halvfet over faktumet, og begge står midt i plassen.
+- Gjentakelser er tatt bort: fagene sier «Faget har 140 årstimer» under tittelen, kodene har koden i tittelen («IV – Ikke vurderingsgrunnlag»), og Elevundersøkelsen har navnet på indeksen som tittel.
+- Er lenken den samme som tittelen (et begrep, en vei), står «Les mer».
+
+**Elevundersøkelsen** er en egen modul under Skolemiljø på forsiden (`#/elevundersokelsen`). Modulen Skolemiljø heter nå **Aktivitetsplikt og skoleregler**, og Elevundersøkelsen er tatt ut av den (avgjørelse 087). Andre navn jeg vurderte: «Trygt skolemiljø» (for likt siden «Et trygt og godt skolemiljø») og «Skolemiljøregler».
+
+| Jukselappen, mobil | Jukselappen, skrivebord | Skolemiljø på forsiden |
+|---|---|---|
+| ![](bilder/fase-8-r5-mobil.png) | ![](bilder/fase-8-r5-skrivebord.png) | ![](bilder/fase-8-r5-skolemiljo.png) |
 
 ---
 
@@ -67,7 +82,7 @@ Eier ba om en kontroll av at veiene for lærlinger og kandidater, eksamen og fra
 - **J7:** B med C. Første besøk hver dag står panelet på jukselappen.
 - **J8:** Teksten er grei, med en setning om at jukselappen vises først ved første besøk hver dag.
 - Testing, fletting og publisering, med versjon valgt av Claude: 0.43.0.
-- Skissen er erstattet av `fakta()` i manifestene. Om lag 1 600 fakta fra tolv moduler, se avgjørelse 085.
+- Skissen er erstattet av `fakta()` i manifestene. Om lag 1 600 fakta fra tolv moduler, se avgjørelse 086.
 
 ---
 

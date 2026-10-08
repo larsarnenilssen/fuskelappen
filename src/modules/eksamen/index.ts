@@ -62,7 +62,7 @@ export const manifest: Modulmanifest = {
     return (await hentInnhold()).frister;
   },
   async fakta() {
-    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 085).
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 086).
     return (await import('./fakta.ts')).fakta();
   },
   kilder: ['opplaeringsforskrifta', 'udir-merknader-ofo-kap9', 'udir-merknader-ofo-kap10', 'udir-klage-standpunkt', 'udir-sarskilt-tilrettelegging-eksamen', 'udir-administrere-eksamen', 'udir-klageinstanser', 'udir-fag-og-svenneprover', 'eksamensdatoer'],
