@@ -9,7 +9,7 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 Eier 08.10.2026: «Gi Start på nytt et ikon og still de to knappene side om side. Inkluder gul merking for svarene som er gitt øverst i veien.» Og: streken for landet i Videregående i tall er brutt.
 
 - **Svarene som er gitt,** står med gul bakgrunn øverst i veien og i fasene til venstre på skrivebord.
-- **«Start på nytt»** har ikon, og knappene står side om side. På mobil er de like brede, og fra 375 px er det plass side om side. På de smaleste skjermene står de under hverandre.
+- **«Start på nytt»** har ikon, og knappene er like brede, så brede som «Kopier oppsummeringen». De sto en kort stund side om side, men eier likte dem bedre under hverandre (eier 08.10.2026).
 - **Streken for landet** flyttet seg opptil 4 px mellom radene, fordi tallkolonnen fikk bredden til tallet i hver rad (bredere i den fete raden for fylket). Nå deler radene kolonnene, og en test sjekker at streken står rett.
 
 | | Før | Etter |

@@ -5766,29 +5766,15 @@ div + .veiviser-svargruppe {
   flex: none;
 }
 
-/* «Kopier oppsummeringen» og «Start på nytt» står side om side (eier 08.10.2026). */
+/* «Kopier oppsummeringen» og «Start på nytt» står under hverandre, med ikon, og er like brede: så brede som den
+   bredeste (eier 08.10.2026). */
 .veiviser-oppsummering .knapperad {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, max-content));
+  grid-template-columns: minmax(0, max-content);
 }
 
 .veiviser-oppsummering .knapp {
-  justify-content: center;
   text-decoration: none;
-}
-
-/* På mobil er de like brede, med litt mindre luft og tekst, så de får plass side om side. På de smaleste skjermene er
-   det ikke plass til «oppsummeringen» i en halv bredde, og da står de under hverandre. */
-@media (max-width: 40rem) {
-  .veiviser-oppsummering .knapperad {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
-  }
-
-  .veiviser-oppsummering .knapp {
-    gap: var(--rom-1);
-    padding-inline: var(--rom-3);
-    font-size: var(--str-s);
-  }
 }
 
 .veiviser-oppsummering p[role='status'] {

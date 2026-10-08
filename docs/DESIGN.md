@@ -87,7 +87,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Et steg er et hvitt kort med steget og tittelen på en myk flate i fargen til veiviseren (`--farge-flate-2` settes per veiviser).
 - Svarene er rader i ett hvitt kort med tynn strek mellom og pil til høyre (`veiviser-svarliste`).
 - Svarene brukeren har gitt, står med gul bakgrunn (`veiviser-svar-valgt`) øverst i veien og i fasene, fordi gult er det som er valgt (eier 08.10.2026).
-- Knappene i veiviseren følger fargen til veiviseren, som lenkene, og er ikke gule. «Kopier oppsummeringen» og «Start på nytt» har ikon og står side om side.
+- Knappene i veiviseren følger fargen til veiviseren, som lenkene, og er ikke gule. «Kopier oppsummeringen» og «Start på nytt» har ikon, står under hverandre og er like brede.
 - Det som er lokalt (fylket, skolen), står på en myk flate uten strek. Lokale tillegg og privatskoler har stiplet kant.
 
 ## Tall og resultater
