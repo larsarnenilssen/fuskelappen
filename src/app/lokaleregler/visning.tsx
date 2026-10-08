@@ -86,3 +86,20 @@ export function Egenregelkort({ regel }: { regel: EgenRegel }) {
     </article>
   );
 }
+
+/**
+ * Under en godkjent lokal regel der den brukes (på siden og i kalkulatoren): hvem den gjelder for, når den ble
+ * kontrollert, og hvor brukeren endrer den for seg selv eller melder inn at den er feil eller endret (eier 08.10.2026).
+ */
+export function Lokalfot({ regel, sted }: { regel: EgenRegel; sted: string }) {
+  const { t, malform } = useTekst();
+  return (
+    <p class="lokalfot">
+      <span>{t('lokaleRegler.lokalfot.tekst', { sted, dato: formaterDato(regel.godkjent ?? '', malform) })}</span>{' '}
+      <span>
+        {t('lokaleRegler.lokalfot.sporsmal')}{' '}
+        <a href={`#/innstillinger/lokal-regel?fra=${regel.kode}`}>{t('lokaleRegler.lokalfot.lenke')}</a>
+      </span>
+    </p>
+  );
+}

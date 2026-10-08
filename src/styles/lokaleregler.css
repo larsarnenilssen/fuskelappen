@@ -174,3 +174,31 @@
 .utregning-linje .merke-egen {
   margin-left: var(--rom-2);
 }
+
+/* Under en godkjent lokal regel: hvem den gjelder for, og hvor den endres eller meldes inn. */
+.lokalfot {
+  margin: var(--rom-2) 0 0;
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-linje);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.lokalregel-valg .valg {
+  min-height: var(--trykkflate);
+  padding: var(--rom-1) 0;
+}
+
+.lokalregel-valg .valg + .valg {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.lokalregel-valgtekst {
+  display: flex;
+  flex-direction: column;
+}
+
+.lokalregel-sendt {
+  margin-top: var(--rom-3);
+  border-color: var(--farge-ok);
+}

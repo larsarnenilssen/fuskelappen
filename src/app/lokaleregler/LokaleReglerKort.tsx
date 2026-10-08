@@ -2,7 +2,7 @@
 import { Ikon } from '../../components/Ikon.tsx';
 import { formaterDato } from '../../core/i18n/tekst.ts';
 import { useTekst } from '../tilstand.ts';
-import { type EgenRegel, nasjonalVerdi, status } from './skisse.ts';
+import { type EgenRegel, GODKJENT_VERDI, nasjonalVerdi, status } from './skisse.ts';
 import { medEnhet, Statuslinje, useEgneRegler, useSted, verdinavn } from './visning.tsx';
 
 function Regelrad({ regel, sted }: { regel: EgenRegel; sted: string }) {
@@ -15,7 +15,7 @@ function Regelrad({ regel, sted }: { regel: EgenRegel; sted: string }) {
           verdi: medEnhet(regel.nokkel, regel.verdi ?? 0),
           nasjonal: medEnhet(regel.nokkel, Number(nasjonalVerdi(regel.nokkel).verdi)),
         })
-      : t('lokaleRegler.rad.regel', { sted, tema: t(`lokaleRegler.tema.${regel.tema ?? 'skoleregler'}`) });
+      : t('lokaleRegler.rad.regel', { sted, tema: t(`lokaleRegler.tema.${regel.tema}`) });
   return (
     <li>
       <a class="listelenke" href={`#/innstillinger/lokal-regel?kode=${regel.kode}`}>
@@ -38,6 +38,8 @@ export function LokaleReglerKort() {
   const regler = useEgneRegler();
   const egne = regler.filter((r) => status(r) !== 'godkjent');
   const godkjente = regler.filter((r) => status(r) === 'godkjent');
+  // Alle godkjente regler for skolen eller fylket, også dem andre har meldt inn.
+  const alleGodkjente = [GODKJENT_VERDI, ...godkjente];
   const stedsnavn = (r: EgenRegel) => (r.niva === 'skole' && sted.skole ? sted.skole.navn : (sted.fylkesnavn ?? ''));
   return (
     <fieldset class="valggruppe" data-testid="lokale-regler">
@@ -69,18 +71,21 @@ export function LokaleReglerKort() {
               {t('lokaleRegler.leggInn')}
             </a>
           </p>
-          {godkjente.length > 0 && (
+          {alleGodkjente.length > 0 && (
             <>
               <h3 class="lokaleregler-under">{t('lokaleRegler.godkjente', { sted: sted.navn ?? '' })}</h3>
               <p class="dempet liten">{t('lokaleRegler.godkjenteTekst', { sted: sted.navn ?? '' })}</p>
               <ul class="liste lokaleregler-liste">
-                {godkjente.map((r) => (
+                {alleGodkjente.map((r) => (
                   <li key={r.kode}>
-                    <a class="listelenke" href="#/utvikling/lokale-regler">
+                    <a class="listelenke" href={`#/innstillinger/lokal-regel?fra=${r.kode}`}>
                       <span class="listelenke-tekst">
-                        <span class="listelenke-tittel">{r.tittel}</span>
+                        <span class="listelenke-tittel">{r.type === 'verdi' && r.nokkel ? t(`lokaleRegler.verdier.${verdinavn(r.nokkel)}`) : r.tittel}</span>
                         <span class="listelenke-under">
-                          {t(`lokaleRegler.tema.${r.tema ?? 'skoleregler'}`)} · {t('lokaleRegler.status.godkjent', { dato: formaterDato(r.godkjent ?? '', malform) })}
+                          {t(`lokaleRegler.tema.${r.tema}`)} · {t('lokaleRegler.status.godkjent', { dato: formaterDato(r.godkjent ?? '', malform) })}
+                        </span>
+                        <span class="listelenke-under">
+                          {t('lokaleRegler.lokalfot.sporsmal')} {t('lokaleRegler.lokalfot.lenke')}
                         </span>
                       </span>
                       <Ikon navn="hoyre" class="ikon-liten" />

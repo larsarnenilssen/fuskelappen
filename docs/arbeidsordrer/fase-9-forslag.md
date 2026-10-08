@@ -4,6 +4,63 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «L1 ja, L4 B»). Rund
 
 ---
 
+## Runde 2: svarene dine og ny skisse (08.10.2026)
+
+**Dine svar:** L1 ja, med en vei til å endre eller melde inn en godkjent regel der den brukes. L2, L3 og L6 ja. L5: godkjenning uten ny versjon. L4: spørsmål (svar under). I tillegg: skjemaet etter tema, funksjoner i prosent, en regel for vedlikehold, og e-posten som havnet bak nettleseren.
+
+### Endret i skissen
+
+- **Tema først:** Skjemaet begynner med «Hva gjelder endringen?» (Arbeidstid, Skoleregler, Fraværsgrensen, Eksamen og Inntak). Så kommer «Hva vil du endre?» med det som kan endres under temaet, med den nasjonale verdien under hvert valg. Under Arbeidstid står de fem verdiene og «En annen regel om arbeidstid». Under de andre temaene er det bare en regel på siden.
+- **Funksjoner i prosent:** Redusert undervisning for kontaktlærer oppgis i prosent av en stilling eller i årsrammetimer. Under feltet står omregningen («= 36,45 årsrammetimer») og den nasjonale verdien begge veier: «minst 28,5 årsrammetimer, altså 4,69 % av en stilling». Prosenten er årsrammetimene delt på årsrammen for funksjoner (607,5), som i Arbeidsplan. Valget står på prosent fra start.
+- **Feil eller endret?** Under en godkjent regel, på siden og i kalkulatoren, står det hvem den gjelder for og når den ble kontrollert, og «Feil eller endret? Endre for deg eller meld inn». Lenken åpner skjemaet med den godkjente regelen fylt inn. Lagrer du, gjelder din versjon for deg i stedet for den godkjente, merket «Din egen». Melder du den inn, får eier den som en endring av den godkjente (`endrer: LR-2FXB` i e-posten). De godkjente reglene står også i Innstillinger med samme lenke.
+- **E-posten:** Etter «Lagre og meld inn» kommer et kort under knappene: «E-posten er laget». Det sier at e-posten kan ligge bak nettleseren (f.eks. i Outlook), at regelen er lagret, og har «Åpne e-posten på nytt» og «Kopier e-posten». Kortet får fokus, så skjermlesere leser det også. Appen kan ikke hente e-postprogrammet fram selv. Det bestemmer operativsystemet.
+
+| | Mobil | Skrivebord |
+|---|---|---|
+| Skjemaet, tema først | ![](bilder/fase-9-r2-ny-mobil.jpg) | ![](bilder/fase-9-r2-ny-skrivebord.jpg) |
+| Kontaktlærer i prosent | ![](bilder/fase-9-r2-prosent-mobil.jpg) | |
+| Skoleregler: bare en regel på siden | ![](bilder/fase-9-r2-tema-mobil.jpg) | |
+| Endre en godkjent regel | ![](bilder/fase-9-r2-endre-godkjent-mobil.jpg) | |
+| Etter «Lagre og meld inn» | ![](bilder/fase-9-r2-sendt-mobil.jpg) | |
+| På siden, i kalkulatoren og i Innstillinger | ![](bilder/fase-9-r2-visning-mobil.jpg) | ![](bilder/fase-9-r2-visning-skrivebord.jpg) |
+| Delen i Innstillinger | ![](bilder/fase-9-r2-innstillinger-mobil.jpg) | |
+| 320 px, nynorsk | ![](bilder/fase-9-r2-ny-mobil320-nn.jpg) | |
+
+### L4. Hva det betyr at lokale avtaler som ikke er offentlige, kan godkjennes
+
+Et eksempel: Skolen har en lokal avtale om at planfestet tid er 1 100 timer. Avtalen ligger i personalhåndboka, ikke på nett. En lærer legger inn 1 100 timer og melder det inn, med avtalen som vedlegg i e-posten.
+
+- **A: Bare med offentlig kilde.** Du kan ikke godkjenne regelen, fordi andre ikke kan sjekke kilden. Den blir lærerens egen, og de andre ved skolen ser den ikke.
+- **B: Også uten offentlig kilde.** Du leser avtalen i vedlegget og godkjenner. Alle som har valgt skolen, får 1 100 timer i kalkulatorene. Kilden i appen er «Lokal avtale ved Slåtthaug vgs, 12.08.2026 (ikke offentlig)», uten lenke. Avtalen legges ikke ut, men tallet og datoen blir offentlige i appen og i repoet.
+
+Med B er din kontroll det eneste andre kan stole på, og du bør bare godkjenne når du har sett avtalen. Med A får de fleste lokale arbeidstidsavtalene ikke plass.
+
+**Råd:** B, med to vilkår: du har sett dokumentet, og regelen sier ikke mer enn tallet, datoen og hvem avtalen gjelder for.
+
+### L5. Godkjenning uten ny versjon
+
+- Godkjente lokale regler ligger i en egen mappe (`lokale/`), ikke i `content/` og `rules/`. Skjemaet og testene er de samme.
+- Ved bygging blir de en egen fil ved siden av appen (`data/lokale/regler.json`), som nyhetene (avgjørelse 084). Appen henter filen når den åpnes, og service workeren tar vare på den, så den virker uten nett. Oppslaget skole → fylke → nasjonal bruker reglene i filen.
+- **Godkjenningen:** Du sier «godkjent» til Claude. Claude setter `kontrollert` med datoen og fletter PR-en når CI er grønn. Publiseringen starter av seg selv, uten versjonstag, og tar med `lokale/` fra main. Ingen melding om ny versjon i appen.
+- Brukerne ser regelen neste gang de åpner appen, vanligvis samme dag. Den godkjente regelen erstatter kopien til den som meldte den inn.
+- Til filen er hentet første gang, bruker kalkulatorene de nasjonale verdiene. Er en lokal regel brukt, står det i resultatet, så det ikke kan gå ubemerket.
+
+**Spørsmål:** Er det greit at publiseringen av lokale regler starter av seg selv når PR-en er flettet, som for nyhetene?
+
+### L7. Vedlikehold: nye sider, funksjoner, kalkulatorer og regler
+
+- **Regelverdier:** Hver verdi i `rules/` som kalkulatorene bruker, får `lokal: true` eller `lokal: false`. En test feiler når en verdi mangler valget. En ny verdi kan derfor ikke legges inn uten at noen har tatt stilling til om den kan variere lokalt.
+- **Sider og kalkulatorer:** Hver modul sier i manifestet hvilke tema den har lokale regler for (`lokaleRegler`), eller at den ikke har noen. En test feiler når en ny side eller kalkulator mangler valget. Temaene og valgene i skjemaet bygges fra dette, så de kommer med uten egen kode.
+- **AGENTS.md** får en linje under «Legge til noe nytt»: Kan noe nytt variere lokalt (fylke, skole eller lokal avtale), blir det et valg under Lokale regler. Er du i tvil, spør eier.
+
+**Råd:** Som over.
+
+### Videre
+
+Når L4 og L5 er avklart, og du er fornøyd med designet, bygger jeg løsningen ferdig: lagringen, oppslaget, delene på sidene, filen med godkjente regler, publiseringen og testene. Ende-til-ende-testene kommer etter at du har sagt at designet er ferdig.
+
+---
+
 ## Runde 1: skisse og seks spørsmål (08.10.2026)
 
 Skissen finnes bare i testversjonen (https://jukselappen.no/test/). Den publiserte appen er uendret. Velg Vestland og en skole under Innstillinger, så står delen «Lokale regler» rett under «Fylke og skole». Reglene i skissen ligger bare i minnet og er borte når siden lastes på nytt. Tre eksempler er lagt inn: en verdi som bare er lagret, en regel som er meldt inn, og en regel som er godkjent.

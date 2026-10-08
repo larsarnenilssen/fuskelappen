@@ -21,9 +21,25 @@ export const LOKALE_VERDIER = [
 
 export type Verdinokkel = (typeof LOKALE_VERDIER)[number];
 
-/** Sidene der regler som kommer i tillegg, vises i første omgang (forslag L1). */
-export const TEMA = ['skoleregler', 'eksamen', 'fravaer', 'arbeidstid', 'inntak'] as const;
+/** Temaene, i rekkefølgen i skjemaet. Brukeren velger først hva endringen gjelder (eier 08.10.2026). */
+export const TEMA = ['arbeidstid', 'skoleregler', 'fravaer', 'eksamen', 'inntak'] as const;
 export type Tema = (typeof TEMA)[number];
+
+/**
+ * Det som kan endres lokalt under hvert tema: verdier i kalkulatorene og «tekst», en regel på siden for temaet. I den
+ * ferdige løsningen kommer listen fra `lokal: true` i rules/ og `lokaleRegler` i manifestene, så nye sider, funksjoner
+ * og kalkulatorer kommer med (eier 08.10.2026, forslag L7).
+ */
+export const VALG: Readonly<Record<Tema, readonly (Verdinokkel | 'tekst')[]>> = {
+  arbeidstid: ['sfs2213.planfestet_timer', 'sfs2213.kontaktlaerer_reduksjon', 'sfs2213.godtgjoring_kontaktlaerer', 'sfs2213.godtgjoring_radgiver', 'sfs2213.skolear_dager', 'tekst'],
+  skoleregler: ['tekst'],
+  fravaer: ['tekst'],
+  eksamen: ['tekst'],
+  inntak: ['tekst'],
+};
+
+/** Verdier for funksjoner, som kan oppgis i prosent av en stilling i stedet for årsrammetimer (eier 08.10.2026). */
+export const I_PROSENT: readonly Verdinokkel[] = ['sfs2213.kontaktlaerer_reduksjon'];
 
 export type Regelstatus = 'egen' | 'innmeldt' | 'godkjent';
 
@@ -36,7 +52,9 @@ export interface EgenRegel {
   forhold: 'erstatter' | 'supplerer';
   nokkel?: Verdinokkel;
   verdi?: number;
-  tema?: Tema;
+  tema: Tema;
+  /** Koden til en godkjent regel som denne endrer. Brukerens versjon gjelder da for brukeren i stedet for den godkjente. */
+  endrer?: string;
   tittel?: string;
   tekst?: string;
   lenke?: string;
@@ -70,6 +88,7 @@ let regler: EgenRegel[] = [
     niva: 'skole',
     forhold: 'erstatter',
     nokkel: 'sfs2213.planfestet_timer',
+    tema: 'arbeidstid',
     verdi: 1100,
     merknad: 'Lokal avtale om arbeidstid for skoleåret 2026–27',
     lagtInn: '2026-10-08',
@@ -103,6 +122,26 @@ let regler: EgenRegel[] = [
   },
 ];
 
+/**
+ * Bare i skissen: en verdi eier har godkjent for skolen, som den vises for alle som har valgt skolen. I den ferdige
+ * løsningen står den i rules/ med gyldighet for skolen.
+ */
+export const GODKJENT_VERDI: EgenRegel = {
+  kode: 'LR-2FXB',
+  type: 'verdi',
+  niva: 'skole',
+  forhold: 'erstatter',
+  tema: 'arbeidstid',
+  nokkel: 'sfs2213.planfestet_timer',
+  verdi: 1100,
+  merknad: 'Lokal avtale om arbeidstid for skoleåret 2026–27',
+  lagtInn: '2026-09-20',
+  gjelderFra: '2026-08-01',
+  gjelderTil: '2027-07-31',
+  innmeldt: '2026-09-20',
+  godkjent: '2026-09-24',
+};
+
 const lyttere = new Set<() => void>();
 
 export function hentRegler(): readonly EgenRegel[] {
@@ -110,7 +149,7 @@ export function hentRegler(): readonly EgenRegel[] {
 }
 
 export function finnRegel(kode: string): EgenRegel | undefined {
-  return regler.find((r) => r.kode === kode);
+  return [...regler, GODKJENT_VERDI].find((r) => r.kode === kode);
 }
 
 export function lagreRegel(regel: EgenRegel): void {
@@ -129,7 +168,7 @@ export function lytt(lytter: () => void): () => void {
 }
 
 /** Den nasjonale verdien som gjelder i dag, fra regelsettet. */
-export function nasjonalVerdi(nokkel: Verdinokkel) {
+export function nasjonalVerdi(nokkel: Verdinokkel | 'sfs2213.arsramme_funksjon') {
   return hentVerdi(nokkel, { dato: iDag() });
 }
 
@@ -153,12 +192,13 @@ export function innmelding(
     `  fylke: "${sted.fylke}" # ${sted.fylkesnavn}`,
   ];
   if (r.niva === 'skole' && sted.skole) linjer.push(`  skole: "${sted.skole.id ?? ''}" # ${sted.skole.navn}`);
-  linjer.push(`  forhold: ${r.forhold}`);
+  linjer.push(`  forhold: ${r.forhold}`, `  tema: ${r.tema}`);
+  if (r.endrer) linjer.push(`  endrer: ${r.endrer}`);
   if (r.type === 'verdi') {
     const n = r.nokkel ? String(nasjonalVerdi(r.nokkel).verdi) : '';
     linjer.push(`  nokkel: ${r.nokkel ?? ''}`, `  verdi: ${r.verdi ?? ''}`, `  nasjonal_verdi: ${n}`);
   } else {
-    linjer.push(`  tema: ${r.tema ?? ''}`, `  malform: ${malform}`, `  tittel: ${sitat(r.tittel ?? '')}`, `  tekst: ${sitat(r.tekst ?? '')}`);
+    linjer.push(`  malform: ${malform}`, `  tittel: ${sitat(r.tittel ?? '')}`, `  tekst: ${sitat(r.tekst ?? '')}`);
   }
   if (r.gjelderFra) linjer.push(`  gjelder_fra: ${r.gjelderFra}`);
   if (r.gjelderTil) linjer.push(`  gjelder_til: ${r.gjelderTil}`);
