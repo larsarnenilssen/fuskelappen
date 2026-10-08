@@ -47,7 +47,7 @@ test.describe('opplæringsløp', () => {
     // Fagarket viser hvordan faget inngår i hvert tilbud, med timene (eier 02.10.2026).
     await page.getByRole('button', { name: /^Inngår i tilbud/ }).click();
     await expect(page.locator('.inngar-liste li', { hasText: 'HSHEA2' })).toContainText('Felles programfag · 197 timer');
-    await page.getByRole('link', { name: /Helsearbeiderfag \(HSHEA2/ }).click();
+    await page.locator('.inngar-liste').getByRole('link', { name: /Helsearbeiderfag.*HSHEA2/ }).click();
     await expect(page.locator('main h1')).toHaveText('Helsearbeiderfag');
     // Stien tilbake til programmet og oversikten.
     await page.getByRole('navigation', { name: 'Plassering' }).getByRole('link', { name: 'Helse- og oppvekstfag' }).click();

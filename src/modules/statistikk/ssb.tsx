@@ -34,6 +34,8 @@ export function useSsb(): Ssb | null | 'feil' {
 
 /** «Vestland» eller «Hele landet». */
 export const ssbSted = (t: T, enhet: string): string => (enhet === 'L' ? t('statistikk.landet') : (fylkesnavn(enhet.slice(1)) ?? enhet));
+/** Stedet inni en setning: «hele landet» med liten forbokstav, ellers fylket («Lærerne i videregående i hele landet»). */
+export const ssbStedITekst = (t: T, enhet: string): string => (enhet === 'L' ? t('statistikk.landetITekst') : ssbSted(t, enhet));
 /** «F46» når fylket finnes i tallene, ellers landet. */
 export const ssbEnhet = (s: Ssb, fylke: string | null | undefined): string => (fylke && s.ungdomskull.verdier[`F${fylke}`] ? `F${fylke}` : 'L');
 const fylkene = (s: Ssb) => Object.keys(s.ungdomskull.verdier).filter((k) => k !== 'L');
@@ -128,6 +130,7 @@ export function Ungdomskull({ s, enhet }: { s: Ssb; enhet: string }) {
   const { t } = useTekst();
   const u = s.ungdomskull;
   const sted = ssbSted(t, enhet);
+  const stedITekst = ssbStedITekst(t, enhet);
   const k = kullFor(s, enhet);
   const landet = kullFor(s, 'L');
   const fraAar = u.aar[0] ?? k.fra;
@@ -136,7 +139,7 @@ export function Ungdomskull({ s, enhet }: { s: Ssb; enhet: string }) {
   return (
     <Ssbfigur
       tittel={t('statistikk.ssb.kull.figur')}
-      tekst={t('statistikk.ssb.kull.tekst', { sted, fra: String(fraAar), reg: String(k.fra), til: String(tilAar) })}
+      tekst={t('statistikk.ssb.kull.tekst', { sted: stedITekst, fra: String(fraAar), reg: String(k.fra), til: String(tilAar) })}
       merknad={t('statistikk.ssb.kull.merknad')}
     >
       <div class="fg-hovedtall-rad">
@@ -154,7 +157,7 @@ export function Ungdomskull({ s, enhet }: { s: Ssb; enhet: string }) {
         aar={u.aar}
         serier={[{ navn: sted, verdier: u.verdier[enhet] ?? [], valgt: true }]}
         framskrevetFra={u.aar.indexOf(u.framskrevetFra)}
-        etikett={t('statistikk.ssb.kull.etikett', { sted, fra: String(fraAar), til: String(tilAar) })}
+        etikett={t('statistikk.ssb.kull.etikett', { sted: stedITekst, fra: String(fraAar), til: String(tilAar) })}
       />
       <Strekforklaring
         deler={[
@@ -181,6 +184,7 @@ export function Utenfor({ s, enhet }: { s: Ssb; enhet: string }) {
   const { t } = useTekst();
   const n = s.utenfor;
   const sted = ssbSted(t, enhet);
+  const stedITekst = ssbStedITekst(t, enhet);
   const sisteAar = String(n.aar.at(-1) ?? '');
   const alder = n.alder[enhet];
   const serier =
@@ -194,7 +198,7 @@ export function Utenfor({ s, enhet }: { s: Ssb; enhet: string }) {
   return (
     <Ssbfigur
       tittel={t('statistikk.ssb.utenfor.figur')}
-      tekst={`${t('statistikk.ssb.utenfor.tekst', { sted })}${n.forelopig ? ` ${t('statistikk.ssb.utenfor.forelopig', { aar: sisteAar })}` : ''}`}
+      tekst={`${t('statistikk.ssb.utenfor.tekst', { sted: stedITekst })}${n.forelopig ? ` ${t('statistikk.ssb.utenfor.forelopig', { aar: sisteAar })}` : ''}`}
       merknad={t('statistikk.ssb.utenfor.merknad')}
     >
       <div class="fg-hovedtall-rad">
@@ -205,7 +209,7 @@ export function Utenfor({ s, enhet }: { s: Ssb; enhet: string }) {
         aar={n.aar}
         serier={serier}
         desimaler={1}
-        etikett={t('statistikk.ssb.utenfor.etikett', { sted, fra: String(n.aar[0] ?? ''), til: sisteAar })}
+        etikett={t('statistikk.ssb.utenfor.etikett', { sted: stedITekst, fra: String(n.aar[0] ?? ''), til: sisteAar })}
       />
       {enhet !== 'L' && (
         <Strekforklaring
@@ -284,10 +288,11 @@ export function Deltakelse({ s, enhet }: { s: Ssb; enhet: string }) {
   const [visning, settVisning] = useState<'fylkene' | 'bakgrunn'>('fylkene');
   const d = s.deltakelse;
   const sted = ssbSted(t, enhet);
+  const stedITekst = ssbStedITekst(t, enhet);
   const aar = String(d.aar.at(-1) ?? '');
   const alle = fylkene(s).map((e) => siste(d.alle[e])).filter((x): x is number => x !== null);
   return (
-    <Ssbfigur tittel={t('statistikk.ssb.deltakelse.figur')} tekst={t('statistikk.ssb.deltakelse.tekst', { sted, aar })} merknad={t('statistikk.ssb.deltakelse.merknad')}>
+    <Ssbfigur tittel={t('statistikk.ssb.deltakelse.figur')} tekst={t('statistikk.ssb.deltakelse.tekst', { sted: stedITekst, aar })} merknad={t('statistikk.ssb.deltakelse.merknad')}>
       <div class="fg-hovedtall-rad">
         <Hovedtall tall={pst(t, siste(d.alle[enhet]))} etikett={t('statistikk.ssb.deltakelse.hoved')} under={sted} />
         {enhet !== 'L' && <Hovedtall tall={pst(t, siste(d.alle.L))} etikett={t('statistikk.ssb.kull.landet')} under={aar} />}
@@ -341,10 +346,11 @@ export function Laererne({ s, enhet }: { s: Ssb; enhet: string }) {
   const { t } = useTekst();
   const l = s.laerere;
   const sted = ssbSted(t, enhet);
+  const stedITekst = ssbStedITekst(t, enhet);
   const aar = String(l.aar.at(-1) ?? '');
   const a = l.alder[enhet];
   return (
-    <Ssbfigur tittel={t('statistikk.ssb.laerere.figur')} tekst={t('statistikk.ssb.laerere.tekst', { sted, aar })} merknad={t('statistikk.ssb.laerere.merknad')}>
+    <Ssbfigur tittel={t('statistikk.ssb.laerere.figur')} tekst={t('statistikk.ssb.laerere.tekst', { sted: stedITekst, aar })} merknad={t('statistikk.ssb.laerere.merknad')}>
       <div class="fg-hovedtall-rad">
         <Hovedtall tall={formaterTall(siste(l.antall[enhet]) ?? 0, 0)} etikett={t('statistikk.ssb.laerere.laerere')} under={t('statistikk.ssb.laerere.kvinner', { verdi: pst(t, l.kvinner[enhet] ?? null) })} />
         <Hovedtall tall={pst(t, a?.fra60 ?? null)} etikett={t('statistikk.ssb.laerere.over60')} under={enhet === 'L' ? undefined : t('statistikk.landetVerdi', { verdi: pst(t, l.alder.L?.fra60 ?? null) })} />
@@ -371,7 +377,7 @@ export function Laererne({ s, enhet }: { s: Ssb; enhet: string }) {
               ]
         }
         desimaler={1}
-        etikett={t('statistikk.ssb.laerere.etikett', { sted, fra: String(l.aar[0] ?? ''), til: aar })}
+        etikett={t('statistikk.ssb.laerere.etikett', { sted: stedITekst, fra: String(l.aar[0] ?? ''), til: aar })}
       />
       {enhet !== 'L' && (
         <Strekforklaring
@@ -427,7 +433,7 @@ export function InntakBoks({ fylke }: { fylke: string | null }) {
   const udir = d !== null && d !== 'feil' ? d : null;
   const sok = udir?.sokere.alle[enhet];
   return (
-    <Tallboks tittel={t('statistikk.ssb.boks.inntak', { sted: ssbSted(t, enhet) })} lenke={temaLenke('ungdom', fylke)} kilde={t('statistikk.kildeBegge')}>
+    <Tallboks tittel={t('statistikk.ssb.boks.inntak', { sted: ssbStedITekst(t, enhet) })} lenke={temaLenke('ungdom', fylke)} kilde={t('statistikk.kildeBegge')}>
       {udir && sok && (
         <p>
           {t('statistikk.boks.inntakTekst', {
@@ -445,7 +451,7 @@ export function InntakBoks({ fylke }: { fylke: string | null }) {
         aar={s.ungdomskull.aar}
         serier={[{ navn: ssbSted(t, enhet), verdier: s.ungdomskull.verdier[enhet] ?? [], valgt: true }]}
         framskrevetFra={s.ungdomskull.aar.indexOf(s.ungdomskull.framskrevetFra)}
-        etikett={t('statistikk.ssb.kull.etikett', { sted: ssbSted(t, enhet), fra: String(s.ungdomskull.aar[0] ?? ''), til: String(s.ungdomskull.aar.at(-1) ?? '') })}
+        etikett={t('statistikk.ssb.kull.etikett', { sted: ssbStedITekst(t, enhet), fra: String(s.ungdomskull.aar[0] ?? ''), til: String(s.ungdomskull.aar.at(-1) ?? '') })}
       />
     </Tallboks>
   );
@@ -460,7 +466,7 @@ export function PoengBoks({ fylke }: { fylke: string | null }) {
   const g = s.grunnskolepoeng;
   const poeng = (x: Tall) => (x === null ? t('statistikk.ingenTall') : formaterTall(x, 1, 1));
   return (
-    <Tallboks tittel={t('statistikk.ssb.boks.poeng', { sted: ssbSted(t, enhet) })} lenke={temaLenke('ungdom', fylke)} kilde={t('statistikk.ssb.kildeAar', { aar: String(g.aar.at(-1) ?? '') })}>
+    <Tallboks tittel={t('statistikk.ssb.boks.poeng', { sted: ssbStedITekst(t, enhet) })} lenke={temaLenke('ungdom', fylke)} kilde={t('statistikk.ssb.kildeAar', { aar: String(g.aar.at(-1) ?? '') })}>
       <div class="fg-hovedtall-rad">
         <Hovedtall tall={poeng(siste(g.poeng[enhet]))} etikett={t('statistikk.ssb.poeng.snitt', { aar: String(g.aar.at(-1) ?? '') })} />
         <Hovedtall tall={poeng(g.jenter[enhet] ?? null)} etikett={t('statistikk.ssb.poeng.jenter')} />
@@ -477,9 +483,9 @@ export function UtenforBoks({ fylke }: { fylke: string | null }) {
   if (s === null || s === 'feil') return null;
   const enhet = ssbEnhet(s, fylke);
   const n = s.utenfor;
-  const sted = ssbSted(t, enhet);
+  const stedITekst = ssbStedITekst(t, enhet);
   return (
-    <Tallboks tittel={t('statistikk.ssb.boks.utenfor', { sted })} lenke={temaLenke('fullforing', fylke)} kilde={t('statistikk.ssb.kildeAar', { aar: String(n.aar.at(-1) ?? '') })}>
+    <Tallboks tittel={t('statistikk.ssb.boks.utenfor', { sted: stedITekst })} lenke={temaLenke('fullforing', fylke)} kilde={t('statistikk.ssb.kildeAar', { aar: String(n.aar.at(-1) ?? '') })}>
       <div class="fg-hovedtall-rad">
         {(['15-19', '20-24'] as const).map((g) => {
           const [fra, til] = g.split('-');
@@ -505,7 +511,7 @@ export function LaerereBoks({ fylke }: { fylke: string | null }) {
   const enhet = ssbEnhet(s, fylke);
   const l = s.laerere;
   return (
-    <Tallboks tittel={t('statistikk.ssb.boks.laerere', { sted: ssbSted(t, enhet) })} lenke={temaLenke('skolen', fylke)} kilde={t('statistikk.ssb.kildeAar', { aar: String(l.aar.at(-1) ?? '') })}>
+    <Tallboks tittel={t('statistikk.ssb.boks.laerere', { sted: ssbStedITekst(t, enhet) })} lenke={temaLenke('skolen', fylke)} kilde={t('statistikk.ssb.kildeAar', { aar: String(l.aar.at(-1) ?? '') })}>
       <div class="fg-hovedtall-rad">
         <Hovedtall tall={formaterTall(siste(l.antall[enhet]) ?? 0, 0)} etikett={t('statistikk.ssb.laerere.laerere')} />
         <Hovedtall

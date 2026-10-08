@@ -13,9 +13,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Av/på-bryterne er gule når de er på, som valgene, i hele appen.
   - Resultatet står i et kort fra start, også før noe er fylt inn, så kolonnen til høyre ikke står tom på skrivebord.
   - «Lagrede varianter» står i et kort, og forklaringene under kalkulatoren står samlet i én boks.
+- **Fag og læreplaner har fått samme design:**
+  - I fagsøket står fagtypene (Fellesfag, Felles programfag …) på en lys blå flate med en prikk i fargen til fagtypen, uten tykke fargede streker. Gruppene av fag, f.eks. «Engelsk (2)», har et ikon, så de skiller seg fra fagene.
+  - På fagarket står årstimetallet og årsrammen med tallet først og stort. «Regn ut i Arbeidsplan» er en lenkelinje nederst i kortet.
+  - Delene som kan lukkes («Kompetansemål og læreplan», «Vurderingsordning», «Inngår i tilbud» …) er kort med overskriften på en lys blå flate.
+  - «Inngår i tilbud» viser tilbudene som rader med pil, ikke som en punktliste.
 
 ### Rettet
 
+- **Videregående i tall:** Uten valgt fylke står det «i hele landet» med liten h inni titler og tekster, f.eks. «Lærerne i videregående i hele landet» i Arbeidsplan.
 - **Arbeidsplan:** Teksten under fordelingen når fag og funksjoner ikke fyller hele stillingen, er skrevet om. Den sier at delen som står igjen, er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
 

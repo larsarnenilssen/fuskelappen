@@ -5,6 +5,8 @@ export const statistikkNn = {
   innledning: 'Tal om vidaregåande i fylket og i landet, frå statistikkbanken til Udir og SSB. Tala blir henta kvar veke.',
   sted: 'Vis tal for',
   landet: 'Heile landet',
+  /** Inni en setning, f.eks. «Lærerne i videregående i hele landet». */
+  landetITekst: 'heile landet',
   iTall: '{sted} i tal',
   laster: 'Lastar tala …',
   feil: 'Klarte ikkje å laste tala.',

@@ -2846,12 +2846,54 @@ p.fagkort-tittel {
 
 /* Treffene gruppert etter fagtype, og store grupper etter læreplan. */
 .faggruppe-2 {
-  margin: 0 0 var(--rom-3);
+  margin: 0 0 var(--rom-4);
 }
 
 .faggruppe-tittel {
   margin: 0 0 var(--rom-2);
-  font-size: var(--str-l);
+  font-size: var(--str-m);
+}
+
+/* Fagtypene (Fellesfag, Felles programfag …) står på en myk flate i temafargen med en prikk i fargen til fagtypen, som
+   fagtypen under hvert fag (eier 08.10.2026). */
+.faggruppe-2 > .faggruppe-tittel .kortknapp {
+  padding: var(--rom-2) var(--rom-4);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate-2);
+}
+
+.faggruppe-2[data-fagtype] > .faggruppe-tittel .kortknapp-tekst::before {
+  content: '';
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: var(--rom-2);
+  border-radius: 50%;
+  background: var(--fagtype);
+  vertical-align: middle;
+}
+
+/* En gruppe av fag inne i listen (f.eks. «Engelsk (2)»): ikonet i en myk sirkel, som modulene på forsiden. Fagene har
+   ikke ikon. Når gruppen er åpen, står fagene i den på en myk flate under. */
+.faggruppe-ikon {
+  box-sizing: content-box;
+  padding: var(--rom-2);
+  border-radius: 50%;
+  background: var(--farge-flate-2);
+  color: var(--farge-merke);
+}
+
+.faggruppe-3 .faggruppe-tittel .kortknapp {
+  justify-content: flex-start;
+  gap: var(--rom-3);
+}
+
+.faggruppe-3 .faggruppe-tittel .kortknapp-pil {
+  margin-left: auto;
+}
+
+.faggruppe-3 > div > .liste {
+  margin: var(--rom-2) 0 var(--rom-1);
 }
 
 .faggruppe-3 {
@@ -2896,8 +2938,9 @@ p.fagkort-tittel {
   color: var(--farge-lenke);
 }
 
-/* ---------- Fagarket (eier 01.10.2026) ----------
-   Merker under tittelen, nøkkeltall og kort for hver del. Fargen på fagtypen går igjen som kant på kortene. */
+/* ---------- Fagarket (eier 01.10.2026, fase 8b) ----------
+   Merker under tittelen, nøkkeltall og fakta i hvite kort med tynn kant, og delene som kan lukkes med en strek over, som
+   på temasidene (docs/DESIGN.md). Fargen på fagtypen står i merket under tittelen og i fagsøket, ikke som kant. */
 /* Fargen på fagtypen, brukt både på fagarket og i fagsøket. */
 .fagark,
 [data-fagtype] {
@@ -2953,32 +2996,39 @@ p.fagkort-tittel {
 
 .fagark-kort,
 .nokkeltall-kort,
-.fagark-fakta,
-.fag-seksjon {
+.fagark-fakta {
   margin: 0 0 var(--rom-3);
   border: var(--strek) solid var(--farge-kant);
-  border-left: 4px solid var(--fagtype);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
 }
 
+/* Nøkkeltallene: tallet først og stort, teksten under, side om side med en tynn strek mellom (eier 08.10.2026, D5). */
 .nokkeltall-kort {
-  padding: var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
 }
 
 .nokkeltall {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
-  gap: var(--rom-2);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--rom-3) var(--rom-4);
 }
 
 .nokkeltall-rute {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
-  padding: var(--rom-2) var(--rom-3);
-  border-radius: var(--radius-s);
-  background: var(--farge-flate-2);
+  min-width: 0;
+}
+
+.nokkeltall-rute + .nokkeltall-rute {
+  padding-left: var(--rom-4);
+  border-left: var(--strek) solid var(--farge-kant);
+}
+
+.nokkeltall-rute > .nokkeltall-verdi,
+.nokkeltall-utvid > .nokkeltall-verdi {
+  order: -1;
 }
 
 .nokkeltall-etikett {
@@ -2987,7 +3037,6 @@ p.fagkort-tittel {
   gap: var(--rom-1);
   font-size: var(--str-s);
   font-weight: 600;
-  color: var(--farge-tekst-dempet);
 }
 
 .nokkeltall-etikett .begrep-i {
@@ -2998,7 +3047,9 @@ p.fagkort-tittel {
 
 .nokkeltall-verdi {
   font-size: var(--str-xxl);
-  font-weight: 700;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
   line-height: 1.2;
 }
 
@@ -3063,52 +3114,14 @@ p.fagkort-tittel {
   white-space: nowrap;
 }
 
-.nokkeltall-topp {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--rom-2);
+.nokkeltall-kort {
+  overflow: hidden;
 }
 
-/* Knappen trekkes litt inn over og under, så linjen blir lite høyere enn overskriften. */
-.nokkeltall-regn-ut {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--rom-1);
-  flex-shrink: 0;
-  min-width: 2.25rem;
-  margin-block: calc(-1 * var(--rom-1));
-  text-decoration: none;
-}
-
-/* Teksten følger bredden på ruten (eier 04.10.2026): hele teksten, «Arbeidsplan» eller bare ikonet. */
-.nokkeltall-rute {
-  container-type: inline-size;
-}
-
-.nokkeltall-regn-ut-kort {
-  display: none;
-}
-
-@container (max-width: 21rem) {
-  .nokkeltall-regn-ut-lang {
-    display: none;
-  }
-
-  .nokkeltall-regn-ut-kort {
-    display: inline;
-  }
-}
-
-@container (max-width: 15rem) {
-  .nokkeltall-regn-ut {
-    padding-inline: 0;
-  }
-
-  .nokkeltall-regn-ut-kort {
-    display: none;
-  }
+/* «Regn ut i Arbeidsplan» som lenkelinjen nederst i kortet (panel-videre), helt ut til kantene (eier 08.10.2026). */
+.nokkeltall-videre {
+  margin: var(--rom-3) calc(-1 * var(--rom-4)) calc(-1 * var(--rom-3));
+  border-top: var(--strek) solid var(--farge-linje);
 }
 
 .fagark-fakta {
@@ -3133,39 +3146,70 @@ p.fagkort-tittel {
 }
 
 .fag-seksjon {
-  padding: 0;
+  margin: 0 0 var(--rom-3);
   overflow: hidden;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
 }
 
+/* Overskriften på delene står på en myk flate i temafargen, så den skiller seg fra underoverskriftene inni (eier
+   08.10.2026). */
 .fag-seksjon-tittel {
   margin: 0;
-  font-size: var(--str-l);
+  font-size: var(--str-m);
 }
 
 .fag-seksjon-tittel .kortknapp {
   width: 100%;
+  min-height: var(--trykkflate);
   justify-content: space-between;
-  padding: var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
   border-radius: 0;
+  background: var(--farge-flate-2);
+}
+
+.fag-seksjon-tittel .kortknapp:hover .kortknapp-tekst {
+  text-decoration: underline;
 }
 
 .fag-seksjon > div {
-  padding: 0 var(--rom-3) var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
 }
 
-/* Fagsøket: en farget kant ved hvert fag og ved overskriften på hver gruppe, i fargen på fagtypen. */
-.faglenke {
-  box-shadow: inset 4px 0 0 var(--fagtype);
+.fag-seksjon > div > :first-child {
+  margin-top: 0;
 }
 
+.fag-seksjon > div > :last-child {
+  margin-bottom: 0;
+}
+
+/* Forklaringene i en del (f.eks. underveis- og standpunktvurdering) står som rader i én boks, med luft over. */
+.fag-seksjon .forklaring {
+  margin: 0;
+}
+
+.fag-seksjon :not(.forklaring) + .forklaring {
+  margin-top: var(--rom-3);
+}
+
+.fag-seksjon .forklaring:not(:has(+ .forklaring)) {
+  margin-bottom: var(--rom-3);
+}
+
+/* Listen med tilbud går ut til kantene i kortet, som radene i fagsøket. */
+.fag-seksjon .inngar-liste {
+  margin: var(--rom-3) calc(-1 * var(--rom-4)) calc(-1 * var(--rom-3));
+  border: 0;
+  border-top: var(--strek) solid var(--farge-linje);
+  border-radius: 0;
+}
+
+/* Fagsøket: fagtypen står i farge i linjen under navnet, uten kant (fase 8b). */
 .faglenke-type {
   color: var(--fagtype);
   font-weight: 600;
-}
-
-.faggruppe-2[data-fagtype] > .faggruppe-tittel {
-  padding-left: var(--rom-2);
-  border-left: 4px solid var(--fagtype);
 }
 
 /* Kompetansemålene med luft og strek mellom, så lange lister er lette å lese. */
@@ -3209,10 +3253,11 @@ p.fagkort-tittel {
   margin-bottom: var(--rom-3);
 }
 
+/* Boksene står inne i kortet for delen, så de er en myk flate uten kant (docs/DESIGN.md). */
 .fagark .fag-vurdering {
-  padding: var(--rom-2) var(--rom-3);
-  border-radius: var(--radius-s);
-  background: var(--farge-flate-2);
+  padding: var(--rom-2) var(--rom-3) var(--rom-3);
+  border-radius: var(--radius-m);
+  background: var(--farge-bakgrunn);
 }
 
 /* Etikettene i boksene får plass til det lengste ordet («Standpunktkarakter»), så det ikke deles midt i ordet når to
@@ -4524,15 +4569,6 @@ p.fagkort-tittel {
   font-weight: 400;
 }
 
-.inngar-liste > li + li {
-  margin-top: var(--rom-1);
-}
-
-.inngar-rolle {
-  display: block;
-  font-size: var(--str-s);
-  color: var(--farge-tekst-dempet);
-}
 
 .tilbud-arbeidsplan {
   margin: var(--rom-3) 0;
