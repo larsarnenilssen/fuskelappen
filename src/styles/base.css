@@ -2978,6 +2978,7 @@ p.fagkort-tittel {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+  min-width: 0;
 }
 
 .nokkeltall-rute + .nokkeltall-rute {
@@ -3075,9 +3076,10 @@ p.fagkort-tittel {
 
 .nokkeltall-topp {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: var(--rom-2);
+  gap: var(--rom-1) var(--rom-2);
 }
 
 /* Knappen trekkes litt inn over og under, så linjen blir lite høyere enn overskriften. */
