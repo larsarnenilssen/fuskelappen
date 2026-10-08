@@ -31,7 +31,7 @@ const DATAMODULER: Record<string, readonly string[]> = {
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
   elevundersokelsen: ['elevundersokelsen'],
-  statistikk: ['statistikk', 'fylker', 'inntak', 'vurdering', 'eksamen', 'opplaeringslop'],
+  statistikk: ['statistikk', 'fylker', 'inntak', 'vurdering', 'eksamen', 'opplaeringslop', 'begreper', 'arbeidstid'],
   udir: ['inntak', 'vurdering'],
   skolerute: ['kalender'],
   skolear: ['inntak', 'arbeidstid', 'vurdering'],

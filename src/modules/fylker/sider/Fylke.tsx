@@ -71,8 +71,6 @@ export default function Fylke({ parametre, sporring }: SideProps) {
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
       <Sidetopp tittel={fylke.navn} favoritt={`fylker:${nr}`} />
       <p class="ingress">{t('fylker.fylkeInnledning')}</p>
-      {/* Nøkkeltallene fra Udirs statistikkbank øverst (eier 07.10.2026, avgjørelse 080). */}
-      <FylketITall fylke={nr} navn={kort} />
       {/* På skrivebord (fra 64rem): lenkene hos fylket og de lokale forskriftene til venstre, skolene, kontorene og
           datoene til høyre (avgjørelse 074). */}
       <ToKolonner
@@ -140,6 +138,9 @@ export default function Fylke({ parametre, sporring }: SideProps) {
               <Lenkerad href="#/eksamen/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
             </ul>
           </Rubrikk>
+          {/* Nøkkeltallene fra Videregående i tall nederst i høyre kolonne, etter sidens eget innhold (avgjørelse 080 og
+              091). På mobil står de etter lenkene og forskriftene. */}
+          <FylketITall fylke={nr} navn={kort} />
           </>
         }
       />

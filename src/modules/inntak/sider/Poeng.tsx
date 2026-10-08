@@ -18,6 +18,7 @@ import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentLokaleNokler, hentSupplerende, type Oppslag } from '../../../core/regler/index.ts';
 import { Skjemadel } from '../../arbeidstid/komponenter/Skjemadel.tsx';
 import { useHent, useRegelkontekst, useSkjematilstand } from '../../arbeidstid/kontekst.ts';
+import { PoengBoks } from '../../statistikk/ssb.tsx';
 import type { SideProps } from '../../typer.ts';
 import { GRUNNSKOLEFAG, GRUNNSKOLEFAG_KILDER, type Grunnskolefag } from '../beregning/grunnskolefag.ts';
 import { beregnVg1, beregnVg2Vg3, type Karakterrad, type Karaktertype, type Poengresultat, type Poengsteg, type Vurdering } from '../beregning/poeng.ts';
@@ -249,6 +250,8 @@ export default function Poeng({ sporring }: SideProps) {
           ))}
         </section>
       )}
+      {/* Grunnskolepoengene i fylket fra SSB, nederst (avgjørelse 090 og 091). */}
+      <PoengBoks fylke={innstillinger.fylke} />
     </div>
   );
 }

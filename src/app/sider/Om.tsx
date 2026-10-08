@@ -54,6 +54,12 @@ export default function Om() {
             {t('om.kreditering.ccby')}
           </a>
         </p>
+        <p>
+          {t('om.kreditering.ssb')}{' '}
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank" rel="noopener noreferrer">
+            {t('om.kreditering.ccby')}
+          </a>
+        </p>
       </section>
 
       <Forklaring tittel={t('om.teknisk.tittel')}>

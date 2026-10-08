@@ -24,11 +24,14 @@ export function Kalkulatorside({
   children,
   resultat,
   etter,
+  tall,
 }: {
   id: KalkulatorId;
   children: ComponentChildren;
   resultat?: ComponentChildren;
   etter?: ComponentChildren;
+  /** En tallboks fra Videregående i tall, nederst etter metoden (avgjørelse 091). */
+  tall?: ComponentChildren;
 }) {
   const { t } = useTekst();
   const tittel = t(`arbeidstid.kalkulatorer.${id}.tittel` as Tekstnokkel);
@@ -61,6 +64,7 @@ export function Kalkulatorside({
       </div>
       {etter && <div class="kalkulator-etter">{etter}</div>}
       <Metode id={`metode-${id}`} />
+      {tall}
     </div>
   );
 }

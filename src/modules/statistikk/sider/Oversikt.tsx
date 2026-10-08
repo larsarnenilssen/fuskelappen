@@ -1,31 +1,32 @@
-// Videregående i tall (eier 07.10.2026, avgjørelse 080): nøkkeltallene fra Udirs statistikkbank for fylket brukeren
-// har valgt, eller for landet, med fylket i adressen (?fylke=46).
+// Videregående i tall (eier 07.10.2026, avgjørelse 080 og 090): nøkkeltallene fra Udirs statistikkbank og tallene fra
+// SSB for fylket brukeren har valgt, eller for landet, med fylket i adressen (?fylke=46).
 //
-// - Øverst: velg fylke og fire nøkkeltall.
-// - Til venstre: søkere per utdanningsprogram (i år som stolpe, i fjor som strek) og fylkene side om side i en tabell.
-// - Til høyre: fylkene rangert på læreplass, læreplass gjennom høsten, gjennomføring, fravær og eksamen, og kildene.
-// - Gjennomføringen er regnet om til dagens fylker av appen, og det står under tallene.
-// - Delene kan lukkes (Seksjon, eier 07.10.2026) og viser en kort oppsummering når de er lukket. På mobil er alle lukket
-//   fra start unntatt gjennomføring og fravær, som er tre korte tall, så siden gir rask oversikt.
+// - Øverst: velg fylke og fire nøkkeltall fra Udir.
+// - «Utforsk tallene»: tre temakort til temasidene (sider/Tema.tsx), der tallene fra Udir og SSB står sammen. Kortene er
+//   lenker og ser annerledes ut enn nøkkeltallene, med to tall hver, side om side (eier 08.10.2026).
+// - Fylkene side om side i en tabell, alltid åpen, og til høyre hvor tallene kommer fra og kildene.
 // - Tabellen over fylkene kan sorteres på alle kolonnene (eier 07.10.2026). På mobil viser den fylket og én kolonne,
 //   som brukeren velger, fordi seks kolonner ikke får plass i 320 px.
+// - Komponentene for søkerne, høsten, tallparene og eksamen brukes av temasidene.
 import { useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
-import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeboks } from '../../../components/Kildeboks.tsx';
-import { Seksjon } from '../../../components/Seksjon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
-import { ToKolonner, useBred } from '../../../components/ToKolonner.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
+import { formaterTall } from '../../../core/i18n/tekst.ts';
+import type { Ssb } from '../../../core/statistikk/ssb-skjema.ts';
 import type { Statistikk, Verdi } from '../../../core/statistikk/skjema.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import type { SideProps } from '../../typer.ts';
-import { eksamenTekst, endringTekst, fagnavn, Nokkeltall, Rangering, STATISTIKK_RUTE, stedsnavn, tekstFor, useStatistikk } from '../komponenter.tsx';
-import { FYLKEKOLONNER, type Fylkekolonne, fylkerad, fylkeneIDataene, fylkesnokkel, type Fylketall, programmerFor, ranger, sisteFor, sisteVerdi, sorterFylker } from '../visning.ts';
-import type { T } from '../../../app/tilstand.ts';
+import { eksamenTekst, endringTekst, fagnavn, Nokkeltall, STATISTIKK_RUTE, stedsnavn, tekstFor, useStatistikk } from '../komponenter.tsx';
+import { fortegn, kullFor, pst, useSsb } from '../ssb.tsx';
+import { TEMAER, type Temaid, temaLenke } from '../temaer.ts';
+import { FYLKEKOLONNER, type Fylkekolonne, fylkerad, fylkeneIDataene, fylkesnokkel, type Fylketall, programmerFor, sisteVerdi, sorterFylker } from '../visning.ts';
 
 /** Søkere per utdanningsprogram: i år som stolpe og i fjor som strek, studieforberedende og yrkesfag hver for seg. */
-function Programmer({ d, enhet }: { d: Statistikk; enhet: string }) {
+export function Programmer({ d, enhet }: { d: Statistikk; enhet: string }) {
   const { t } = useTekst();
   const liste = programmerFor(d, enhet);
   const maks = Math.max(1, ...liste.flatMap((p) => [p.naa, p.foer]).filter((v): v is number => typeof v === 'number'));
@@ -76,7 +77,7 @@ function Programmer({ d, enhet }: { d: Statistikk; enhet: string }) {
 }
 
 /** Læreplass gjennom høsten: august, oktober og desember, for fylket og landet. */
-function Hosten({ d, enhet }: { d: Statistikk; enhet: string }) {
+export function Hosten({ d, enhet }: { d: Statistikk; enhet: string }) {
   const { t } = useTekst();
   const h = d.formidling.hosten;
   const serier = enhet === 'L' ? ['L'] : [enhet, 'L'];
@@ -109,7 +110,7 @@ function Hosten({ d, enhet }: { d: Statistikk; enhet: string }) {
 }
 
 /** To tall side om side: fylket og landet, med en tekst under. */
-function Par({ d, enhet, tittel, verdi, landet, form, tekst }: { d: Statistikk; enhet: string; tittel: string; verdi: Verdi; landet: Verdi; form: 'prosent' | 'dager'; tekst: string }) {
+export function Par({ d, enhet, tittel, verdi, landet, form, tekst }: { d: Statistikk; enhet: string; tittel: string; verdi: Verdi; landet: Verdi; form: 'prosent' | 'dager'; tekst: string }) {
   const { t } = useTekst();
   return (
     <div class="st-par">
@@ -137,7 +138,7 @@ const FORM: Record<Fylketall, 'antall' | 'prosent' | 'dager'> = { sokere: 'antal
  * er knapper som sorterer: navnet alfabetisk, tallene høyest først og så lavest først. På mobil vises fylket og
  * kolonnen i «Vis og sorter etter».
  */
-function Fylkene({ d, enhet }: { d: Statistikk; enhet: string }) {
+export function Fylkene({ d, enhet }: { d: Statistikk; enhet: string }) {
   const { t } = useTekst();
   const [sortering, settSortering] = useState<{ kolonne: Fylkekolonne; synkende: boolean }>({ kolonne: 'navn', synkende: false });
   const [vist, settVist] = useState<Fylketall>('sokere');
@@ -217,7 +218,7 @@ function Fylkene({ d, enhet }: { d: Statistikk; enhet: string }) {
 }
 
 /** Skriftlig eksamen i de største fellesfagene: fylket og landet. */
-function Eksamenstabell({ d, enhet, t }: { d: Statistikk; enhet: string; t: T }) {
+export function Eksamenstabell({ d, enhet, t }: { d: Statistikk; enhet: string; t: T }) {
   return (
     <figure class="st-figur">
       <figcaption id="st-eksamen-tekst">
@@ -247,12 +248,33 @@ function Eksamenstabell({ d, enhet, t }: { d: Statistikk; enhet: string; t: T })
   );
 }
 
+/** De to tallene på hvert temakort: et tall og hva det er. Tallene fra SSB står med strek til de er lastet. */
+function temaTall(t: T, tema: Temaid, d: Statistikk, s: Ssb | null, enhet: string): { tall: string; tekst: string }[] {
+  const ingen = t('statistikk.ingenTall');
+  if (tema === 'ungdom') {
+    const k = s ? kullFor(s, enhet) : null;
+    return [
+      { tall: k?.endring != null ? t('statistikk.prosent', { verdi: fortegn(k.endring) }) : ingen, tekst: t('statistikk.tema.kull', { aar: String(k?.til ?? '') }) },
+      { tall: formaterTall(s?.grunnskolepoeng.poeng[enhet]?.at(-1) ?? 0, 1, 1), tekst: t('statistikk.tema.poeng') },
+    ];
+  }
+  if (tema === 'skolen') {
+    return [
+      { tall: s ? pst(t, s.laerere.alder[enhet]?.fra60 ?? null, 0) : ingen, tekst: t('statistikk.tema.laerere60') },
+      { tall: tekstFor(t, d.fravaer.total[enhet] ?? null, 'dager'), tekst: t('statistikk.tema.fravaer') },
+    ];
+  }
+  return [
+    { tall: tekstFor(t, sisteVerdi(d.gjennomforing.verdier[enhet]), 'prosent'), tekst: t('statistikk.tema.fullforer') },
+    { tall: s ? pst(t, s.utenfor.prosent[enhet]?.at(-1) ?? null) : ingen, tekst: t('statistikk.tema.utenfor') },
+  ];
+}
+
 export default function Oversikt({ sporring }: SideProps) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
   const d = useStatistikk();
-  // På mobil er delene lukket fra start (eier 07.10.2026), på skrivebord åpne.
-  const bred = useBred();
+  const s = useSsb();
   const [fylke, settFylke] = useState<string | null>(() => sporring.get('fylke') ?? innstillinger.fylke ?? null);
 
   return (
@@ -266,33 +288,15 @@ export default function Oversikt({ sporring }: SideProps) {
       ) : (
         (() => {
           const enhet = d.enheter[fylkesnokkel(fylke)] ? fylkesnokkel(fylke) : 'L';
-          const kull = d.gjennomforing.kull.at(-1) ?? '';
-          const fagbrev = d.fagbrev.verdier[enhet] ?? null;
-          // Oppsummeringene som står under en lukket del.
-          const flest = programmerFor(d, enhet).reduce<{ navn: string; naa: Verdi } | null>((m, p) => (typeof p.naa === 'number' && (!m || p.naa > (m.naa as number)) ? p : m), null);
-          const programInnhold = flest ? t('statistikk.program.innhold', { program: flest.navn, antall: tekstFor(t, flest.naa) }) : undefined;
-          const rangert = ranger(d, sisteFor(d.formidling.desember));
-          const plass = rangert.find((r) => r.enhet === enhet);
-          const rangeringInnhold = plass ? t('statistikk.rangering.plass', { sted: plass.navn, plass: String(plass.plass), antall: String(rangert.length) }) : undefined;
-          const h = d.formidling.hosten;
-          const sisteManed = h.maneder.length - 1;
-          const hostenInnhold = t('statistikk.hosten.innhold', {
-            maned: h.maneder[sisteManed] ?? '',
-            // «Vestland 84,0 %, landet 79,5 %» – landet med liten forbokstav inne i setningen.
-            verdier: (enhet === 'L' ? ['L'] : [enhet, 'L'])
-              .map((s) => {
-                const verdi = tekstFor(t, h.verdier[s]?.[sisteManed] ?? null, 'prosent');
-                return s === 'L' ? t('statistikk.landetVerdi', { verdi }) : `${stedsnavn(d, s, t)} ${verdi}`;
-              })
-              .join(', '),
-          });
+          const valgtFylke = enhet === 'L' ? null : enhet.slice(1);
+          const ssb = s === 'feil' ? null : s;
           return (
             <>
               <div class="felt st-velg">
                 <label for="st-fylke">{t('statistikk.sted')}</label>
                 <select
                   id="st-fylke"
-                  value={enhet === 'L' ? '' : enhet.slice(1)}
+                  value={valgtFylke ?? ''}
                   onChange={(e) => {
                     const v = e.currentTarget.value || null;
                     settFylke(v);
@@ -309,84 +313,64 @@ export default function Oversikt({ sporring }: SideProps) {
               </div>
               <h2 class="liten-overskrift">{t('statistikk.iTall', { sted: stedsnavn(d, enhet, t) })}</h2>
               <Nokkeltall d={d} enhet={enhet} />
+              <section class="st-utforsk" aria-labelledby="st-utforsk-tittel">
+                <h2 class="liten-overskrift" id="st-utforsk-tittel">
+                  {t('statistikk.utforsk')}
+                </h2>
+                <ul class="st-temaer">
+                  {TEMAER.map((x) => (
+                    <li key={x.id}>
+                      <a class="st-tema" href={temaLenke(x.id, valgtFylke)}>
+                        <span class="st-tema-topp">
+                          <span class="st-tema-ikon" aria-hidden="true">
+                            <Ikon navn={x.ikon} />
+                          </span>
+                          <span class="st-tema-navn">
+                            <span class="st-tema-tittel">{t(`statistikk.tema.${x.id}.navn`)}</span>
+                            <span class="st-tema-tekst">{t(`statistikk.tema.${x.id}.tekst`)}</span>
+                          </span>
+                          <Ikon navn="hoyre" class="ikon-liten st-tema-pil" />
+                        </span>
+                        <span class="st-tema-tall">
+                          {temaTall(t, x.id, d, ssb, enhet).map((k) => (
+                            <span key={k.tekst}>
+                              <b>{k.tall}</b>
+                              <span>{k.tekst}</span>
+                            </span>
+                          ))}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
               <ToKolonner
                 hoved={
-                  <>
-                    <Seksjon id="st-program" tittel={t('statistikk.program.tittel')} innhold={programInnhold} apen={bred}>
-                      <Programmer d={d} enhet={enhet} />
-                    </Seksjon>
-                    <Seksjon id="st-fylkene" tittel={t('statistikk.fylkene.tittel')} innhold={t('statistikk.fylkene.innhold')} apen={bred}>
-                      <Fylkene d={d} enhet={enhet} />
-                    </Seksjon>
-                  </>
+                  <section aria-labelledby="st-fylkene-tittel">
+                    <h2 class="liten-overskrift" id="st-fylkene-tittel">
+                      {t('statistikk.fylkene.tittel')}
+                    </h2>
+                    <Fylkene d={d} enhet={enhet} />
+                  </section>
                 }
                 side={
                   <>
-                    <Seksjon id="st-rangering" tittel={t('statistikk.rangering.tittel')} innhold={rangeringInnhold} apen={bred}>
-                      <Rangering d={d} enhet={enhet} medTittel={false} />
-                    </Seksjon>
-                    <Seksjon id="st-hosten" tittel={t('statistikk.hosten.tittel')} innhold={hostenInnhold} apen={bred}>
-                      <Hosten d={d} enhet={enhet} />
-                    </Seksjon>
-                    <Seksjon
-                      id="st-gjennomforing"
-                      tittel={t('statistikk.gjennomforing.del')}
-                      innhold={t('statistikk.gjennomforing.innhold', {
-                        gjennomforing: tekstFor(t, sisteVerdi(d.gjennomforing.verdier[enhet]), 'prosent'),
-                        fravaer: tekstFor(t, d.fravaer.total[enhet] ?? null, 'dager'),
-                      })}
-                      apen
-                    >
-                      <Par
-                        d={d}
-                        enhet={enhet}
-                        tittel={t('statistikk.gjennomforing.tittel')}
-                        verdi={sisteVerdi(d.gjennomforing.verdier[enhet])}
-                        landet={sisteVerdi(d.gjennomforing.verdier.L)}
-                        form="prosent"
-                        tekst={`${t('statistikk.gjennomforing.tekst', { kull: String(kull) })} ${d.gjennomforing.beregnet && enhet !== 'L' ? t('statistikk.gjennomforing.beregnet') : ''}`}
-                      />
-                      {fagbrev === null && enhet !== 'L' ? (
-                        <p class="st-figur-tekst st-ingen">
-                          {t('statistikk.gjennomforing.ingenFagbrev', {
-                            sted: stedsnavn(d, enhet, t),
-                            kull: String(d.fagbrev.kull),
-                          })}
-                        </p>
-                      ) : (
-                        <Par
-                          d={d}
-                          enhet={enhet}
-                          tittel={t('statistikk.gjennomforing.fagbrev')}
-                          verdi={fagbrev}
-                          landet={d.fagbrev.verdier.L ?? null}
-                          form="prosent"
-                          tekst={t('statistikk.gjennomforing.fagbrevTekst', {
-                            kull: String(d.fagbrev.kull),
-                          })}
-                        />
-                      )}
-                      <Par
-                        d={d}
-                        enhet={enhet}
-                        tittel={t('statistikk.fravaer.total')}
-                        verdi={d.fravaer.total[enhet] ?? null}
-                        landet={d.fravaer.total.L ?? null}
-                        form="dager"
-                        tekst={t('statistikk.fravaer.tekst', {
-                          skolear: d.fravaer.skolear.replace('-', '–'),
-                        })}
-                      />
-                    </Seksjon>
-                    <Seksjon id="st-eksamen" tittel={t('statistikk.eksamen.tittel')} innhold={t('statistikk.eksamen.innhold', { antall: String(d.eksamen.fag.length) })} apen={bred}>
-                      <Eksamenstabell d={d} enhet={enhet} t={t} />
-                    </Seksjon>
+                    <section class="st-om-tallene" aria-labelledby="st-om-tittel">
+                      <h2 class="liten-overskrift" id="st-om-tittel">
+                        {t('statistikk.om.tittel')}
+                      </h2>
+                      <p>
+                        <span class="st-kilde-merke">{t('statistikk.ssb.udirMerke')}</span> {t('statistikk.om.udir')}
+                      </p>
+                      <p>
+                        <span class="st-kilde-merke">{t('statistikk.ssb.merke')}</span> {t('statistikk.om.ssb')}
+                      </p>
+                      <p class="dempet">{t('statistikk.om.oppdatering')}</p>
+                    </section>
                     <Kildeboks
                       kilder={[
-                        {
-                          id: 'udir-statistikkbanken',
-                          punkt: t('statistikk.tittel'),
-                        },
+                        { id: 'udir-statistikkbanken', punkt: t('statistikk.tittel') },
+                        { id: 'ssb-statistikkbanken', punkt: t('statistikk.ssb.kildeboks') },
                       ]}
                       nokkel="statistikk"
                     />

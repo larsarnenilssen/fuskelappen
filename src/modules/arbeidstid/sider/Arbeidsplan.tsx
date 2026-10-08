@@ -5,7 +5,8 @@
 // og stillingen og funksjonene gjelder perioden. Prosentene kan vises for perioden eller på årsbasis
 // (prosent × periodenøkkel). Timer og kroner er de samme i begge visningene.
 import { useId, useMemo, useState } from 'preact/hooks';
-import { useTekst } from '../../../app/tilstand.ts';
+import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { LaerereBoks } from '../../statistikk/ssb.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
@@ -69,6 +70,7 @@ function nokkeltallNavn(t: ReturnType<typeof useTekst>['t'], id: NokkeltallId, i
 
 export default function Arbeidsplan({ sporring }: SideProps) {
   const { t, malform } = useTekst();
+  const { innstillinger } = useTilstand();
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
@@ -205,6 +207,8 @@ export default function Arbeidsplan({ sporring }: SideProps) {
   return (
     <Kalkulatorside
       id="arbeidsplan"
+      // Lærerne i fylket fra SSB (eier 08.10.2026, avgjørelse 090 og 091).
+      tall={<LaerereBoks fylke={innstillinger.fylke} />}
       resultat={
         <>
           {feil && <Feilmelding feil={feil} />}
