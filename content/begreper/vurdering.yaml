@@ -97,8 +97,8 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er sammendraget av § 9-8 og rundskrivet riktig og ikke misvisende?"
-  stikkord: [fravær, 10 prosent, 15 prosent, egenmelding]
-  relatert: [ikke-vurderingsgrunnlag]
+  stikkord: [fravær, 10 prosent, 15 prosent, egenmelding, dokumentert fravær]
+  relatert: [ikke-vurderingsgrunnlag, egenmelding, arstimetall]
 
 - id: fritak-fra-vurdering-med-karakter
   type: begrep
@@ -182,3 +182,56 @@
         - { kode: "S", navn: { nb: "Særskilt eksamen", nn: "Særskild eksamen" }, tekst: { nb: "Karakter fra særskilt eksamen.", nn: "Karakter frå særskild eksamen." } }
         - { kode: "N", navn: { nb: "Ny eksamen", nn: "Ny eksamen" }, tekst: { nb: "Karakter fra ny eksamen.", nn: "Karakter frå ny eksamen." } }
         - { kode: "U", navn: { nb: "Utsatt eksamen", nn: "Utsett eksamen" }, tekst: { nb: "Karakter fra utsatt eksamen.", nn: "Karakter frå utsett eksamen." } }
+
+- id: vurderingsordning
+  type: begrep
+  tittel: { nb: "Vurderingsordning", nn: "Vurderingsordning" }
+  tekst:
+    nb: "Vurderingsordningen er den delen av læreplanen som sier hvilken sluttvurdering et fag har. Den sier om eleven skal ha standpunktkarakter og på hvilket trinn, om eleven skal opp til eller kan trekkes ut til eksamen, hvilken eksamensform faget har og om eksamen er sentralt eller lokalt gitt. Det står i læreplanen om det skal være eksamen, når i opplæringsløpet og om eksamen har forberedelsesdel. Privatister har en egen ordning i mange fag. Fag og læreplaner i appen viser vurderingsordningen for hvert fag."
+    nn: "Vurderingsordninga er den delen av læreplanen som seier kva sluttvurdering eit fag har. Ho seier om eleven skal ha standpunktkarakter og på kva trinn, om eleven skal opp til eller kan trekkjast ut til eksamen, kva eksamensform faget har og om eksamen er sentralt eller lokalt gitt. Det står i læreplanen om det skal vere eksamen, når i opplæringsløpet og om eksamen har førebuingsdel. Privatistar har ei eiga ordning i mange fag. Fag og læreplanar i appen viser vurderingsordninga for kvart fag."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-25 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-25" }
+    - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), Vurderingsordning", url: "https://www.udir.no/lk20/nor01-08/vurderingsordning" }
+    - { id: udir-grep, punkt: Vurderingsordninger }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «Privatister har en egen ordning i mange fag» riktig og nyttig, eller bør det stå mer om privatister?"
+    - "Bør begrepet nevne at lærlinger avslutter med fag- eller svenneprøve, som står i læreplanen for Vg3-faget i bedrift?"
+  stikkord: [eksamensordning, eksamen, trekkfag, standpunkt, privatist, sentralt gitt, lokalt gitt]
+  relatert: [laereplan, standpunktkarakter, trekkfag, sentralt-gitt-eksamen, lokalt-gitt-eksamen]
+
+- id: sidemal
+  type: begrep
+  tittel: { nb: "Sidemål", nn: "Sidemål" }
+  tekst:
+    nb: "Sidemålet er den av de to norske skriftformene, bokmål og nynorsk, som ikke er elevens hovedmål. På Vg3 studieforberedende og Vg3 påbygging har eleven en egen standpunktkarakter i norsk skriftlig sidemål og kan trekkes ut til skriftlig eksamen i sidemål. Elever som får opplæring i samisk, kvensk eller finsk, tegnspråk eller særskilt språkopplæring, er fritatt fra skriveopplæringen i sidemål. Andre kan ha rett til fritak fra vurdering med karakter i sidemål, for eksempel ved dokumentert sykdom eller når de ikke gikk på 8.–10. trinn i Norge. Elever med individuelt tilrettelagt opplæring får fritaket når de ber om det. Se [Fritak i sidemålet](#/vurdering/grunnlag-for-vurdering?steg=vu-fritak-sidemal&svar=elev.vanlig.sidemal)."
+    nn: "Sidemålet er den av dei to norske skriftformene, bokmål og nynorsk, som ikkje er hovudmålet til eleven. På Vg3 studieførebuande og Vg3 påbygging har eleven ein eigen standpunktkarakter i norsk skriftleg sidemål og kan trekkjast ut til skriftleg eksamen i sidemål. Elevar som får opplæring i samisk, kvensk eller finsk, teiknspråk eller særskild språkopplæring, er fritekne frå skriveopplæringa i sidemål. Andre kan ha rett til fritak frå vurdering med karakter i sidemål, til dømes ved dokumentert sjukdom eller når dei ikkje gjekk på 8.–10. trinn i Noreg. Elevar med individuelt tilrettelagd opplæring får fritaket når dei ber om det. Sjå [Fritak i sidemålet](#/vurdering/grunnlag-for-vurdering?steg=vu-fritak-sidemal&svar=elev.vanlig.sidemal)."
+  kilder:
+    - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), Vurderingsordning", url: "https://www.udir.no/lk20/nor01-08/vurderingsordning" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-9 Fritak frå skriveopplæring", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-9" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-21 Fritak frå vurdering med karakter", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-21" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-19 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-19" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er vilkårene for fritak i § 9-21 oppsummert godt nok med to eksempler, eller bør alle fire stå?"
+    - "Skolen, kommunen eller fylkeskommunen som skriver vitnemålet, avgjør søknader om fritak (§ 9-21 andre ledd). Bør det stå i begrepet?"
+  stikkord: [hovedmål, hovudmål, nynorsk, bokmål, fritak i sidemål, norsk skriftlig, sidemålsfritak]
+  relatert: [fritak-fra-vurdering-med-karakter, standpunktkarakter, individuelt-tilrettelagt-opplaering]
+
+- id: egenmelding
+  type: begrep
+  tittel: { nb: "Egenmelding", nn: "Eigenmelding" }
+  lenkeord: { nb: ["egenmelding", "egenmeldt"], nn: ["eigenmelding", "eigenmeldt", "egenmelding"] }
+  tekst:
+    nb: "En egenmelding er elevens egen beskjed om at fraværet skyldes sykdom eller andre helseforhold. Ved fraværsgrensen kan eleven bruke egenmelding for helsefravær i opptil 10 prosent av timene i et fag. Når helsefravær og udokumentert fravær til sammen er 10 prosent, må mer helsefravær dokumenteres av helsepersonell, med mindre eleven har en dokumentert tilstand som gir høyere risiko for slikt fravær. På vitnemålet kan helsefravær med egenmelding strykes fra og med fjerde dag når fraværet er innenfor 10 prosent i faget."
+    nn: "Ei eigenmelding er beskjeden frå eleven sjølv om at fråværet kjem av sjukdom eller andre helseforhold. Ved fråværsgrensa kan eleven bruke eigenmelding for helsefråvær i opptil 10 prosent av timane i eit fag. Når helsefråvær og udokumentert fråvær til saman er 10 prosent, må meir helsefråvær dokumenterast av helsepersonell, med mindre eleven har ein dokumentert tilstand som gir høgare risiko for slikt fråvær. På vitnemålet kan helsefråvær med eigenmelding strykast frå og med fjerde dag når fråværet er innanfor 10 prosent i faget."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-53 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-53" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "5.1 Forskjellen på reglene om fraværsgrense og føring av fravær på vitnemålet", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/5.hva-er-skillet-mellom-fravarsgrensen-og-annet-regelverk/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften sier ikke hvem som skriver egenmeldingen. Er «elevens egen beskjed» dekkende, også for elever under 18 år der foreldrene ofte gir beskjeden?"
+    - "Er setningen om vitnemålet riktig sammenfattet fra § 9-53 og rundskrivet punkt 5.1?"
+  stikkord: [egenmeldt fravær, helsefravær, helserelatert fravær, dokumentert fravær, legeerklæring, fravær]
+  relatert: [fravaersgrensen, arstimetall]
