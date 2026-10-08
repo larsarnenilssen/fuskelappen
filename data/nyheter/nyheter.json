@@ -1,6 +1,6 @@
 {
 "skjema": 1,
-"hentet": "2026-10-07T15:57:55.230Z",
+"hentet": "2026-10-08T08:21:02.491Z",
 "kilder": {
 "regjeringen-kd":{"status":"ok"},
 "udir":{"status":"ok"},
@@ -35,6 +35,8 @@
 "fylkeskommune-telemark":{"status":"ok"}
 },
 "saker": [
+{"kilde":"skolelederforbundet","tittel":"Møt fylkeslederen: Lill Presttun","dato":"2026-10-08","url":"https://www.skolelederforbundet.no/skolelederen/mot-fylkeslederen-lill-presttun/","ingress":"Lill Presttun er er leder for Skolelederforbundet Vestland. De er godt i gang med å planlegge Bergenskonferansen, i tillegg til arbeidet med å bygge sterke lokallag og sikre målrettet arbeid med forhandlinger. Hun finner ro og påfyll når hun spiller kornett i brass band."},
+{"kilde":"udir","tittel":"Foreslår egen helseretning på studieforberedende","dato":"2026-10-08","url":"https://www.udir.no/presse/pressemeldinger/new-page/","ingress":"Utdanningsdirektoratet vil ha innspill på seks nye retninger på studieforberedende på videregående. Målet er at elevene skal få kompetanse som er bedre tilpasset høyere utdanning og samfunnets behov."},
 {"kilde":"fylkeskommune-nordland","tittel":"40 millioner til ny idrettshall i Alstahaug","dato":"2026-10-07","url":"https://www.nfk.no/aktuelt/40-millioner-til-ny-idrettshall-i-alstahaug.135691.aspx","ingress":"Fylkesrådet vil bidra med 40 millioner kroner til en ny idrettshall i Alstahaug. Hallen skal gi bedre forhold for elevene ved Sandnessjøen videregående skole og samtidig komme idretten og lokalsamfunnet til gode."},
 {"kilde":"regjeringen-kd","tittel":"Forslag til endringer i opplæringsloven og privatskoleloven om plikt til smågruppeundervisning og fjerning av krav om leksehjelp","dato":"2026-10-07","url":"https://www.regjeringen.no/no/dokumenter/horing-forslag-til-endringer-i-opplaringsloven-og-privatskolen-smagruppeundervisning-og-leksehjelp/id3170886/","ingress":"Kunnskapsdepartementet sender på høring forslag til endringer i lov 9. juni 2023 nr. 30 om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsloven) og lov 4. juli 2003 nr. 84 om private skolar med rett til statstilskot (privatskoleloven). Departementet foreslår å lovfeste en plikt for …"},
 {"kilde":"regjeringen-kd","tittel":"Statsbudsjettet 2027: 20,9 millioner til digital opplæring i fengsel","dato":"2026-10-07","url":"https://www.regjeringen.no/no/aktuelt/digital-opplaring-i-fengsel/id3174289/","ingress":"Arbeiderparti-regjeringen fortsetter å satse på kriminalomsorgen, og foreslår å bevilge 20,9 millioner til en ny digital løsning for opplæring i fengsler."},
@@ -145,7 +147,6 @@
 {"kilde":"fylkeskommune-vestland","tittel":"Inntaket til vidaregåande klart: I år får fleire førstevalet sitt","dato":"2026-08-07","url":"https://www.vestlandfylke.no/nyheitsarkiv/2026/inntaket-til-vidaregaande-klart-i-ar-far-fleire-forstevalet-sitt/","ingress":"Alle søkjarar med rett til opplæring har no fått tilbod om skuleplass på vidaregåande skular i Vestland. For å sikre plass til alle, er det oppretta tre nye klassar i løpet av sommaren."},
 {"kilde":"forskning-no","tittel":"Forskere har undersøkt hvordan KI brukes i norske klasserom","dato":"2026-08-06","url":"https://www.forskning.no/kunstig-intelligens-partner-pedagogikk/forskere-har-undersokt-hvordan-ki-brukes-i-norske-klasserom/2685092","ingress":"Det er viktig at lærere og elever kjenner til og forstår teknologiens store svakheter, mener norske forskere. De har studert KI-bruk i klasserommet."},
 {"kilde":"fylkeskommune-vestfold","tittel":"Sisteinntaket til videregående skoler er klart","dato":"2026-08-05","url":"https://vestfoldfylke.no/no/aktuelt/sisteinntaket-til-videregaende-skoler-er-klart/","ingress":"Samtlige elever med rett til videregående opplæring i Vestfold, har etter sisteinntaket 5. august fått tilbud om skoleplass."},
-{"kilde":"statsforvalteren-ostfold-buskerud-oslo-og-akershus","tittel":"Privatskolesamling 2026","dato":"2026-07-20","url":"https://www.statsforvalteren.no/nb/ostfold-buskerud-oslo-og-akershus/arrangementer-kurs-og-ovelser/2026/09/privatskolesamling-2026/","ingress":"Statsforvalteren i Østfold, Buskerud, Oslo og Akershus inviterer til samling for privatskoler i våre fylker 23. september 2026."},
-{"kilde":"fylkeskommune-telemark","tittel":"Yrkesfag topper søkerlista i Telemark","dato":"2026-07-09","url":"https://telemarkfylke.no/no/aktuelt/yrkesfag-topper-sokerlista-i-telemark/","ingress":"Over 5700 elever i Telemark har fått tilbud om videregående opplæring i årets hovedinntak. Yrkesfag er fortsatt mest ettertraktet."}
+{"kilde":"statsforvalteren-ostfold-buskerud-oslo-og-akershus","tittel":"Privatskolesamling 2026","dato":"2026-07-20","url":"https://www.statsforvalteren.no/nb/ostfold-buskerud-oslo-og-akershus/arrangementer-kurs-og-ovelser/2026/09/privatskolesamling-2026/","ingress":"Statsforvalteren i Østfold, Buskerud, Oslo og Akershus inviterer til samling for privatskoler i våre fylker 23. september 2026."}
 ]
 }
