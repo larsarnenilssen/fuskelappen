@@ -4,6 +4,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Rettet
+
+- **Lenker til fylkene:** Lenkene til særskilt språkopplæring i Buskerud, inntak og klage i Agder, inntak i Nordland og klage på standpunkt i Møre og Romsdal går til de nye sidene hos fylkene.
+- **Kildene:** Lenkene til Grep, Nasjonalt skoleregister og SSBs fylkesinndeling går til sider som finnes.
+
 ## [0.42.0] – 2026-10-07
 
 ### Lagt til

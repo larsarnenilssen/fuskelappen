@@ -20,10 +20,18 @@ const sti = (u: URL) => u.pathname.replace(/\/+$/, '').toLowerCase();
 /** Nettstedet for en lenke, uten www. */
 const vert = (url: string) => new URL(url).hostname.replace(/^www\./, '');
 
+/** En kort adresse hos Lovdata som er sendt videre til den lange adressen under /dokument/. */
+function erLovdataKortadresse(fra: URL, etter: URL): boolean {
+  const lovdata = (u: URL) => u.hostname.replace(/^www\./, '') === 'lovdata.no';
+  return lovdata(fra) && lovdata(etter) && !fra.pathname.startsWith('/dokument/') && etter.pathname.startsWith('/dokument/');
+}
+
 /**
  * Vurderer svaret: 404 og 410 er borte. En videresending til forsiden fra en dypere side er trolig en side som er
  * borte. En videresending til en annen side er flyttet. 401, 403, 429, 5xx og feil i nettverket er usikre (feil),
- * fordi nettstedet kan stenge for automatiske forespørsler.
+ * fordi nettstedet kan stenge for automatiske forespørsler. Lovdatas korte adresser («lovdata.no/lov/…/§5-1») sendes
+ * alltid videre til den lange adressen under /dokument/. De er Lovdatas faste adresser, som Lovdata selv bruker i
+ * teksten, og regnes som ok (avgjørelse 062).
  */
 export function vurderSvar(url: string, status: number | null, til: string | null): Svar {
   if (status === null) return 'feil';
@@ -34,6 +42,7 @@ export function vurderSvar(url: string, status: number | null, til: string | nul
   const etter = new URL(til);
   if (fra.hostname.replace(/^www\./, '') === etter.hostname.replace(/^www\./, '') && sti(fra) === sti(etter)) return 'ok';
   if (sti(etter) === '' && sti(fra) !== '') return 'borte';
+  if (erLovdataKortadresse(fra, etter)) return 'ok';
   return 'flyttet';
 }
 

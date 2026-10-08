@@ -23,3 +23,5 @@
 - **Kildene om Vestland** (`vlfk-*`) er ikke aktive lenger. Sidene lenkes fra `content/fylker/lenker.yaml` (avgjørelse 061), og lenkesjekken sjekker adressene.
 
 **Konsekvens:** Nye lenker kommer med uten ekstra arbeid. En død lenke blir oppdaget innen to uker, en massegenerert innen et par måneder. Hyppigheten endres i `kilder.yml`, og antallet stikkprøver med `--antall`.
+
+**Endret 07.10.2026 (sak #118):** Lovdatas korte adresser («lovdata.no/lov/…/§5-1») sendes alltid videre til den lange adressen under /dokument/. De er Lovdatas faste adresser, som Lovdata selv bruker i teksten, og regnes som ok, ikke flyttet. Adresser i kommentarer i YAML-filene er eksempler og sjekkes ikke.
