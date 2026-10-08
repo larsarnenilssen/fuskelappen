@@ -3775,15 +3775,31 @@ p.fagkort-tittel {
 }
 
 .forside .kategori[data-kategori='felles'] {
-  --modul-hoyde: 4.25rem;
+  --modul-hoyde: var(--oppslag-hoyde);
+}
+
+.forside {
+  --oppslag-hoyde: 4.25rem;
 }
 
 .forside .kategori[data-kategori] .liste > li > .listelenke {
   min-height: var(--modul-hoyde);
 }
 
-.forside .kategori[data-kategori='arbeidstid'] .liste > li > a.listelenke {
+.forside .kategori[data-kategori='arbeidstid'] .liste:not(.flere-liste) > li > a.listelenke {
   min-height: calc(var(--modul-hoyde) * 4 / 3);
+}
+
+/* Boksene i den sammenleggbare boksen («Flere kalkulatorer») er like høye som boksene under «Oppslag», med teksten på
+   én linje (eier 08.10.2026). */
+.forside .kategori[data-kategori] .flere-liste > li > .listelenke {
+  min-height: var(--oppslag-hoyde);
+}
+
+.forside .kategori[data-kategori] .flere-liste .listelenke-under {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .forside .kategori[data-kategori] .liste > li > .flere-knapp {

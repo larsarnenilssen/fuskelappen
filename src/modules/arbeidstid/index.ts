@@ -1,6 +1,6 @@
 // Arbeidstid etter SFS 2213: arbeidsplan (med fordeling av arbeidstiden) og kalkulatorer for beskjeftigelse,
 // vikartimer og overtid. Arbeidsplanen kan også gjelde en periode. Verdiene leses fra rules/ via hentVerdi().
-import { begge } from '../../core/i18n/tekst.ts';
+import { begge, type Tekstnokkel } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { kalkulatorer } from './kalkulatorer.ts';
 
@@ -48,7 +48,8 @@ export const manifest: Modulmanifest = {
   innganger: kalkulatorer.map((k, i) => ({
     id: `arbeidstid:${k.id}`,
     tittel: k.kort,
-    beskrivelse: k.id === 'arbeidsplan' ? 'arbeidstid.kalkulatorer.arbeidsplan.forside' : k.beskrivelse,
+    // Forsiden har egne, korte tekster, så boksene får én linje (eier 08.10.2026). Beskrivelsen er ingressen på siden.
+    beskrivelse: `arbeidstid.kalkulatorer.${k.id}.forside` as Tekstnokkel,
     rute: k.rute,
     ikon: k.ikon,
     ...(k.bilde ? { bilde: { type: 'kalkulator' as const, ...k.bilde } } : {}),

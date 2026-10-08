@@ -26,16 +26,19 @@ export const arbeidstidNb = {
       tittel: 'Beskjeftigelse',
       kort: 'Beskjeftigelse',
       beskrivelse: 'Undervisningsprosent for ett eller flere fag.',
+      forside: 'Undervisningsprosent for fag.',
     },
     vikar: {
       tittel: 'Vikartimer',
       kort: 'Vikartimer',
       beskrivelse: 'Økt beskjeftigelse for ansatte, eller lønn for timevikarer.',
+      forside: 'Økt beskjeftigelse eller timelønn.',
     },
     overtid: {
       tittel: 'Overtid over 100 %',
       kort: 'Overtid',
       beskrivelse: 'Betaling for undervisning ut over hel stilling.',
+      forside: 'Betaling ut over hel stilling.',
     },
   },
   felles: {

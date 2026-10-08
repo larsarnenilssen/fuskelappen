@@ -26,16 +26,19 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
       tittel: 'Sysselsetjing',
       kort: 'Sysselsetjing',
       beskrivelse: 'Undervisningsprosent for eitt eller fleire fag.',
+      forside: 'Undervisningsprosent for fag.',
     },
     vikar: {
       tittel: 'Vikartimar',
       kort: 'Vikartimar',
       beskrivelse: 'Auka sysselsetjing for tilsette, eller løn for timevikarar.',
+      forside: 'Auka sysselsetjing eller timeløn.',
     },
     overtid: {
       tittel: 'Overtid over 100 %',
       kort: 'Overtid',
       beskrivelse: 'Betaling for undervisning utover heil stilling.',
+      forside: 'Betaling utover heil stilling.',
     },
   },
   felles: {
