@@ -448,41 +448,8 @@ main {
   min-width: 0;
 }
 
-.favoritt-knapper {
-  display: flex;
-  flex: none;
-  padding-right: var(--rom-1);
-}
-
 .utilgjengelig {
   color: var(--farge-tekst-dempet);
-}
-
-.flis-rutenett {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-  gap: var(--rom-2);
-  list-style: none;
-  margin: 0 0 var(--rom-4);
-  padding: 0;
-}
-
-.flis {
-  display: flex;
-  flex-direction: column;
-  gap: var(--rom-2);
-  height: 100%;
-  padding: var(--rom-3);
-  background: var(--farge-flate);
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-m);
-  color: var(--farge-tekst);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.flis .ikon {
-  color: var(--farge-merke);
 }
 
 .merknad {
@@ -1604,8 +1571,9 @@ p.fagkort-tittel {
 }
 
 .fag-blandet {
-  padding-left: var(--rom-3);
-  border-left: 3px solid var(--farge-linje);
+  margin-top: var(--rom-3);
+  padding-top: var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
 }
 
 .fagtreff {
@@ -1974,12 +1942,6 @@ p.fagkort-tittel {
 
 .gruppe {
   background: var(--farge-bakgrunn);
-}
-
-.arsramme-plass {
-  padding-left: var(--rom-3);
-  border-left: 3px solid var(--farge-linje);
-  margin-bottom: var(--rom-3);
 }
 
 /* ---------- Resultatkort ----------
@@ -2844,8 +2806,9 @@ p.fagkort-tittel {
 }
 
 .felt-hjelp.overstyrt {
-  padding-left: var(--rom-2);
-  border-left: 3px solid var(--farge-advarsel);
+  padding: var(--rom-1) var(--rom-2);
+  border-radius: var(--radius-s);
+  background: var(--farge-advarsel-flate);
 }
 
 /* ---------- Fag og læreplaner ---------- */
@@ -3065,7 +3028,6 @@ p.fagkort-tittel {
   margin: -0.35rem -0.25rem;
 }
 
-.fagark-kort,
 .nokkeltall-kort,
 .fagark-fakta {
   margin: 0 0 var(--rom-3);
@@ -3528,7 +3490,7 @@ p.fagkort-tittel {
 }
 
 /* Prikken i fargen til delen i diagrammet, bare i Arbeidsplan og bare for delene som har en farge der. */
-:is(.kalkulator[data-kalkulator='arbeidsplan'], .designskisse)
+.kalkulator[data-kalkulator='arbeidsplan']
   :is(.skjemadel[data-del='undervisning'], .skjemadel[data-del='funksjoner'], .skjemadel[data-del='tid'])
   .skjemadel-navn::before,
 .kalkulator[data-kalkulator='arbeidsplan'] .skjemadel :is(.fagkortliste > .fagkort, .funksjonskort) .fagkort-tittel .kortknapp-tekst::before {
@@ -6129,12 +6091,10 @@ div + .veiviser-svargruppe {
 
 .veiviser-prosess-steg li {
   padding: var(--rom-1) var(--rom-2);
-  border-left: 3px solid transparent;
 }
 
 .veiviser-prosess-steg .veiviser-prosess-naa {
-  border-left-color: var(--farge-merke);
-  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  border-radius: var(--radius-s);
   background: var(--farge-flate-2);
   font-weight: 700;
 }
@@ -8026,17 +7986,9 @@ a.knapp {
 }
 
 /* «Om veien» på siden for hver vei: faktaene i en egen ramme, i to kolonner der det er plass. */
+/* Et kort med overskriften på en myk flate (kort-med-topp), med luft over. */
 .fb-om {
-  margin: var(--rom-4) 0;
-  padding: var(--rom-3) var(--rom-4);
-  border: var(--strek) solid var(--farge-kant);
-  border-left: 5px solid var(--farge-merke);
-  border-radius: var(--radius-m);
-  background: var(--farge-flate);
-}
-
-.fb-om > h2 {
-  margin-top: 0;
+  margin-top: var(--rom-4);
 }
 
 .fb-om .fb-fakta > div:first-child {
@@ -8176,7 +8128,6 @@ a.knapp {
   min-height: var(--trykkflate);
   padding: var(--rom-2) var(--rom-3);
   border: var(--strek) solid var(--farge-kant);
-  border-left: 5px solid transparent;
   border-radius: var(--radius-m);
   background: var(--farge-flate);
   color: var(--farge-tekst);
@@ -8187,7 +8138,7 @@ a.knapp {
 
 .fb-velg[aria-pressed='true'] {
   border-color: var(--farge-merke);
-  border-left-color: var(--farge-merke);
+  box-shadow: inset 0 0 0 1px var(--farge-merke);
   background: var(--farge-flate-2);
 }
 

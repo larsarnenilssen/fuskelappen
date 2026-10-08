@@ -3,7 +3,8 @@
 
 /* ---------- Et trygt og godt skolemiljø (fase 7, eier 06.10.2026) ----------
    Kapittel 12 i fem nummererte deler som er lukket fra start. Knappen er et kort med nummer, tittel, paragrafene og én
-   setning, så kapittelet kan leses i overskriftene. Delpliktene og veien til statsforvalteren er rader med strek
+   setning, så kapittelet kan leses i overskriftene. Knappen står på en myk flate i temafargen, som overskriftene på de
+   andre kortene, uten tykk strek (fase 8b, docs/DESIGN.md). Delpliktene og veien til statsforvalteren er rader med strek
    mellom leddene. Fargene er de samme som ellers i appen, ingen nye. */
 .k12-seksjon {
   margin-bottom: var(--rom-3);
@@ -24,9 +25,8 @@
   width: 100%;
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
-  border-left: 4px solid var(--farge-lenke);
   border-radius: var(--radius-m);
-  background: var(--farge-flate);
+  background: var(--farge-flate-2);
   color: var(--farge-tekst);
   font: inherit;
   text-align: left;
@@ -63,7 +63,6 @@
 .k12-del-tittel {
   grid-area: tittel;
   font-weight: 700;
-  color: var(--farge-lenke);
 }
 
 .k12-del-paragrafer {
@@ -90,7 +89,6 @@
   padding: var(--rom-3) var(--rom-3) var(--rom-1);
   border: var(--strek) solid var(--farge-kant);
   border-top: 0;
-  border-left: 4px solid var(--farge-lenke);
   border-bottom-left-radius: var(--radius-m);
   border-bottom-right-radius: var(--radius-m);
   background: var(--farge-bakgrunn);

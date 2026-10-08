@@ -26,6 +26,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Innstillinger og Om appen:** Delene i Innstillinger er kort med overskriften på en lys blå flate, som i kalkulatorene. På Om appen har brukserklæringen samme overskrift, og delene under har en strek over. Lenkene til Om appen og til kildene er rader med pil.
 - **Fant ikke siden** har «Til forsiden» og «Søk i appen» som rader med ikon og pil.
 - **Veiviserne:** Svarene brukeren har gitt, står med gul bakgrunn øverst i veien og i fasene til venstre, som det som er valgt ellers i appen. «Start på nytt» har fått et ikon, og knappene «Kopier oppsummeringen» og «Start på nytt» er like brede.
+- **De siste tykke strekene til venstre er borte:** delene i «Et trygt og godt skolemiljø» har overskriften på en lys blå flate, «Om veien» i Lærlinger og kandidater er et kort med overskrift, og utfallet i fraværsgrensen står i en boks med tynn kant i statusfargen. Det samme gjelder fag nummer to i samme økt i Arbeidsplan, merknaden når årsrammen er skrevet inn selv, valget av vei og steget du står på i «Hele prosessen».
+- **Videregående i tall:** Tallet står først og stort i flisene, med teksten under, som i resten av appen.
 - **Kortene som kan lukkes** i Opplæringstilbud, Læreplanverket og Lov og forskrift har overskriften på en lys blå flate i stedet for en tykk strek. Fellesfag, felles programfag og yrkesfaglig fordypning i et tilbud har en prikk i samme farge som i stolpen over.
 
 ### Rettet
