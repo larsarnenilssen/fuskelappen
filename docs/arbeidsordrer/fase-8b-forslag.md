@@ -21,7 +21,7 @@ Testversjonen: https://jukselappen.no/test/ (sammenlign med https://jukselappen.
 
 | | Før | Etter |
 |---|---|---|
-| Arbeidsplan, skrivebord | ![](bilder/fase-8b-p1-for-arbeidsplan.jpg) | ![](bilder/fase-8b-p1-etter-arbeidsplan.jpg) |
+| Arbeidsplan, skrivebord | ![](bilder/fase-8b-arbeidsplan-for.jpg) | ![](bilder/fase-8b-arbeidsplan-etter.jpg) |
 | Fraværsgrensen, skrivebord | ![](bilder/fase-8b-p1-for-fravaer.jpg) | ![](bilder/fase-8b-p1-etter-fravaer.jpg) |
 | Poengberegning, mobil | ![](bilder/fase-8b-p1-for-poeng-m.jpg) | ![](bilder/fase-8b-p1-etter-poeng-m.jpg) |
 
