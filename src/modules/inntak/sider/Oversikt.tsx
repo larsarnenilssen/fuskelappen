@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { Kalkulatorinngang } from '../../../components/Kalkulatorinngang.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
@@ -33,15 +34,11 @@ export default function Oversikt() {
       ) : (
         <>
           <Lokalmerknad innhold={innhold} />
-          {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): veiviseren og mer opplæring til venstre, fristene,
-              kalkulatoren og tallene til høyre. */}
+          {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): mer opplæring til venstre, og veiviseren, kalkulatoren,
+              fristene og tallene til høyre (eier 08.10.2026). */}
           <ToKolonner
             hoved={
               <>
-                <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('inntak.veivisere')}</h2>
-                  <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
-                </section>
                 <section class="lop-del">
                   <h2 class="liten-overskrift">{t('inntak.merOpplaering.tittel')}</h2>
                   <a class="frist-inngang" href={`#${UNDERSIDER.merOpplaering.rute}`}>
@@ -58,6 +55,20 @@ export default function Oversikt() {
             side={
               <>
                 <section class="lop-del">
+                  <h2 class="liten-overskrift">{t('inntak.veivisere')}</h2>
+                  <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
+                </section>
+                <section class="lop-del">
+                  <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>
+                  <Kalkulatorinngang
+                    href={`#${UNDERSIDER.poeng.rute}`}
+                    ikon={UNDERSIDER.poeng.ikon}
+                    tittel={t('inntak.poeng.kort')}
+                    inn={[t('inntak.poeng.deler.standpunkt'), t('inntak.poeng.deler.eksamen'), t('inntak.poeng.deler.valgfag')]}
+                    ut={t('inntak.poeng.resultat.tittel')}
+                  />
+                </section>
+                <section class="lop-del">
                   <h2 class="liten-overskrift">{t('inntak.frister.kort')}</h2>
                   {/* Kortet viser den neste fristen, så brukeren ser hva som kommer uten å åpne tidslinjen. */}
                   <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
@@ -72,18 +83,6 @@ export default function Oversikt() {
                         <span>{neste.tittel[malform]}</span>
                       </span>
                     )}
-                    <Ikon navn="hoyre" class="frist-inngang-pil" />
-                  </a>
-                </section>
-                <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>
-                  {/* Samme kort som tidslinjen over, med beskrivelsen i stedet for den neste fristen. */}
-                  <a class="frist-inngang" href={`#${UNDERSIDER.poeng.rute}`}>
-                    <span class="frist-inngang-tittel">
-                      <Ikon navn={UNDERSIDER.poeng.ikon} />
-                      {t('inntak.poeng.kort')}
-                    </span>
-                    <span class="frist-inngang-neste">{t('inntak.poeng.beskrivelse')}</span>
                     <Ikon navn="hoyre" class="frist-inngang-pil" />
                   </a>
                 </section>

@@ -1,5 +1,5 @@
 // Oversikten i Eksamen og klage (eier 06.10.2026, avgjørelse 078): de fire kortene som stod under «Eksamen og klage» i
-// Vurdering, i to deler: «Eksamen og prøver» med eksamen, prøvene og kalenderen, og «Klage» med veiviseren. Kortet for
+// Vurdering: «Eksamen og prøver» med eksamen og prøvene, «Klage» med veiviseren og «Datoer» med kalenderen. Kortet for
 // kalenderen viser den neste datoen.
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -45,8 +45,8 @@ export default function Oversikt() {
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (
-        // To deler med overskrift, som i de andre modulene (eier 06.10.2026): eksamen, prøvene og kalenderen under én
-        // overskrift, og veiviseren for klage under sin egen. På skrivebord står klagen til høyre (fase 8b).
+        // Eksamen og prøvene til venstre, og veiviseren for klage og kalenderen til høyre, som veiviserne og fristene i de
+        // andre modulene (fase 8b, eier 08.10.2026).
         <ToKolonner
           hoved={
             <section class="lop-del" aria-labelledby="ek-del-eksamen">
@@ -59,39 +59,41 @@ export default function Oversikt() {
                 foran={[
                   { id: 'eksamen', kort: <Inngang {...UNDERSIDER.eksamen} tittel={t('eksamen.eksamen.kort')} tekst={t('eksamen.eksamen.beskrivelse')} /> },
                   { id: 'provene', kort: <Inngang {...UNDERSIDER.provene} tittel={t('eksamen.provene.kort')} tekst={t('eksamen.provene.beskrivelse')} /> },
-                  {
-                    id: 'frister',
-                    // Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne kalenderen.
-                    kort: (
-                      <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
-                        <span class="frist-inngang-tittel">
-                          <Ikon navn={UNDERSIDER.frister.ikon} />
-                          {t('eksamen.frister.tittel')}
-                        </span>
-                        {neste ? (
-                          <span class="frist-inngang-neste">
-                            <span class="frist-inngang-etikett">{t('eksamen.frister.neste')}</span>
-                            <span class="frist-inngang-tid">{tidspunkt(neste, malform)}</span>
-                            <span>{neste.tittel[malform]}</span>
-                          </span>
-                        ) : (
-                          <span class="frist-inngang-neste">{t('eksamen.frister.beskrivelse')}</span>
-                        )}
-                        <Ikon navn="hoyre" class="frist-inngang-pil" />
-                      </a>
-                    ),
-                  },
                 ]}
               />
             </section>
           }
           side={
-            <section class="lop-del" aria-labelledby="ek-del-klage">
-              <h2 class="liten-overskrift" id="ek-del-klage">
-                {t('eksamen.delKlage')}
-              </h2>
-              <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
-            </section>
+            <>
+              <section class="lop-del" aria-labelledby="ek-del-klage">
+                <h2 class="liten-overskrift" id="ek-del-klage">
+                  {t('eksamen.delKlage')}
+                </h2>
+                <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
+              </section>
+              <section class="lop-del" aria-labelledby="ek-del-datoer">
+                <h2 class="liten-overskrift" id="ek-del-datoer">
+                  {t('eksamen.delDatoer')}
+                </h2>
+                {/* Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne kalenderen. */}
+                <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
+                  <span class="frist-inngang-tittel">
+                    <Ikon navn={UNDERSIDER.frister.ikon} />
+                    {t('eksamen.frister.tittel')}
+                  </span>
+                  {neste ? (
+                    <span class="frist-inngang-neste">
+                      <span class="frist-inngang-etikett">{t('eksamen.frister.neste')}</span>
+                      <span class="frist-inngang-tid">{tidspunkt(neste, malform)}</span>
+                      <span>{neste.tittel[malform]}</span>
+                    </span>
+                  ) : (
+                    <span class="frist-inngang-neste">{t('eksamen.frister.beskrivelse')}</span>
+                  )}
+                  <Ikon navn="hoyre" class="frist-inngang-pil" />
+                </a>
+              </section>
+            </>
           }
         />
       )}

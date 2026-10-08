@@ -1,5 +1,5 @@
 // Oversikten i Vurdering: delene som kort, som i Inntak og Opplæringstilbud (fase 6, mockup godkjent av eier
-// 04.10.2026). Fravær har ett kort, kalkulatoren for fraværsgrensen (pakke 2). Eksamen og klage er egen modul
+// 04.10.2026). Kalkulatoren for fraværsgrensen står til høyre under veiviseren (eier 08.10.2026). Eksamen og klage er egen modul
 // (avgjørelse 078).
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -11,6 +11,7 @@ import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, UNDERSIDER, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
+import { Kalkulatorinngang } from '../../../components/Kalkulatorinngang.tsx';
 
 export default function Oversikt() {
   const { t } = useTekst();
@@ -27,7 +28,8 @@ export default function Oversikt() {
       <p class="ingress">
         <Begrepstekst tekst={t('vurdering.innledning')} />
       </p>
-      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): sidene i modulen til venstre, veiviseren til høyre. */}
+      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): sidene i modulen til venstre, veiviseren og kalkulatoren
+          til høyre (eier 08.10.2026). */}
       <ToKolonner
         hoved={
           <>
@@ -36,12 +38,6 @@ export default function Oversikt() {
                 {t('vurdering.delFag')}
               </h2>
               <Inngang {...UNDERSIDER.underveisSlutt} tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />
-            </section>
-            <section class="lop-del" aria-labelledby="vu-del-fravaer">
-              <h2 class="liten-overskrift" id="vu-del-fravaer">
-                {t('vurdering.delFravaer')}
-              </h2>
-              <Inngang {...UNDERSIDER.fravaer} tittel={t('vurdering.fravaer.kort')} tekst={t('vurdering.fravaer.beskrivelse')} />
             </section>
             <section class="lop-del" aria-labelledby="vu-del-orden">
               <h2 class="liten-overskrift" id="vu-del-orden">
@@ -52,12 +48,26 @@ export default function Oversikt() {
           </>
         }
         side={
-          <section class="lop-del" aria-labelledby="vu-del-veiviser">
-            <h2 class="liten-overskrift" id="vu-del-veiviser">
-              {t('vurdering.delVeiviser')}
-            </h2>
-            {innhold === null ? <p class="dempet">{t('app.lasterInn')}</p> : <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />}
-          </section>
+          <>
+            <section class="lop-del" aria-labelledby="vu-del-veiviser">
+              <h2 class="liten-overskrift" id="vu-del-veiviser">
+                {t('vurdering.delVeiviser')}
+              </h2>
+              {innhold === null ? <p class="dempet">{t('app.lasterInn')}</p> : <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />}
+            </section>
+            <section class="lop-del" aria-labelledby="vu-del-kalkulator">
+              <h2 class="liten-overskrift" id="vu-del-kalkulator">
+                {t('vurdering.delKalkulator')}
+              </h2>
+              <Kalkulatorinngang
+                href={`#${UNDERSIDER.fravaer.rute}`}
+                ikon={UNDERSIDER.fravaer.ikon}
+                tittel={t('vurdering.fravaer.kort')}
+                inn={[t('vurdering.fravaer.faget'), t('vurdering.fravaer.okter')]}
+                ut={t('vurdering.fravaer.resultat.tittel')}
+              />
+            </section>
+          </>
         }
       />
     </div>

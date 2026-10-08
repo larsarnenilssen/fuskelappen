@@ -343,6 +343,9 @@ export const nn: Tekster = {
     aapneKilde: 'Opne kjelda',
   },
   komponenter: {
+    kalkulator: {
+      innOgUt: 'Du fyller inn: {inn}. Kalkulatoren reknar ut: {ut}.',
+    },
     privatskole: {
       tittel: 'For privatskular',
       kilderByttet: 'For privatskular står paragrafane i privatskoleforskrifta.',

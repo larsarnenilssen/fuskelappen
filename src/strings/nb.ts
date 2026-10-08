@@ -343,6 +343,9 @@ export const nb = {
     aapneKilde: 'Åpne kilden',
   },
   komponenter: {
+    kalkulator: {
+      innOgUt: 'Du fyller inn: {inn}. Kalkulatoren regner ut: {ut}.',
+    },
     privatskole: {
       tittel: 'For privatskoler',
       kilderByttet: 'For privatskoler står paragrafene i privatskoleforskrifta.',

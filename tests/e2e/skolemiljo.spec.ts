@@ -5,10 +5,10 @@ import { expect, test } from '@playwright/test';
 import { settLagret } from './hjelp.ts';
 
 test.describe('Aktivitetsplikt og skoleregler', () => {
-  test('oversikten har retten og pliktene øverst, så veiviseren og skolereglene', async ({ page }) => {
+  test('oversikten har retten og pliktene øverst, så skolereglene, og veiviseren til høyre (eier 08.10.2026)', async ({ page }) => {
     await page.goto('./#/skolemiljo');
     const overskrifter = page.locator('main h2');
-    await expect(overskrifter).toHaveText(['Retten og pliktene', 'Veivisere', 'Oppslag']);
+    await expect(overskrifter).toHaveText(['Retten og pliktene', 'Oppslag', 'Veivisere']);
     await page.locator('main').getByRole('link', { name: /^Et trygt og godt skolemiljø/ }).click();
     await expect(page.locator('main h1')).toHaveText('Et trygt og godt skolemiljø');
   });

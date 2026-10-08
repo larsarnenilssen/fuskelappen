@@ -19,8 +19,7 @@ export const arbeidstidNb = {
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      // Den myke bindestreken (\u00ad) deler ordet på smale skjermer, så første linje blir fylt (eier 02.10.2026).
-      forside: 'Fag, funksjoner, periode\u00adbeskjeftigelse, fordeling av arbeidstiden og lønn.',
+      forside: 'Utregning og illustrasjon av beskjeftigelse og arbeidstid.',
       beskrivelse: 'Fag og funksjoner mot stillingsprosenten for hele skoleåret eller en periode (periodebeskjeftigelse), med fordelingen av arbeidstiden og lønn.',
     },
     beskjeftigelse: {
@@ -282,7 +281,6 @@ export const arbeidstidNb = {
     lonnMerknadPeriode: 'Lønn, tillegg, variabel lønn og overtid er det som utbetales for perioden. Lønnen og tilleggene regnes fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder. Variabel lønn og overtid regnes med timene i perioden. Feriepengene regnes av dette og kommer i tillegg.',
     lonnMerknad: 'Lønn, tillegg, variabel lønn og overtid er det som utbetales i året. Feriepengene regnes av dette og kommer i tillegg.',
     diagramMerknad: 'Diagrammet viser undervisningen og funksjonene som er lagt inn ({prosent} %), som er mer enn stillingen.',
-    ikkeFyltMerknad: 'Fag og funksjoner fyller ikke hele stillingen. Delen som står igjen ({prosent} % av stillingen), er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.',
   },
   livsfase: {
     tittel: 'Redusert undervisning',
