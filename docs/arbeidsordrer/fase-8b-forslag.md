@@ -4,6 +4,18 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Svar på runde 1 (eier 08.10.2026)
+
+> Det nye designet er gjennomgående bedre.
+
+- **D1:** Godtatt. Eier likte at fargene var lette å følge i den eldre versjonen, men det er penere nå.
+- **D2:** Fargen og pillene er gode, men 45/60/90 er for runde. **Gjort:** korte valg på én linje i skjemaene (`Bryter kompakt`) er avrundede firkanter.
+- **D3:** A. Resultatkortet vises fra start.
+- **D4:** Godtatt.
+- **D5:** Ja, tallet først også i Videregående i tall. Tas i oppryddingen (pakke 7).
+
+---
+
 ## Runde 1: designprinsippene og skissen
 
 **Reglene** står i `docs/DESIGN.md`. De bygger på sidekolonnen på forsiden, Kalender, Nyheter og Videregående i tall.

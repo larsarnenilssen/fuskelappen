@@ -252,9 +252,12 @@
   outline-offset: 2px;
 }
 
+/* Korte valg på én linje i skjemaet (45, 60, 90, Annet): avrundede firkanter, ikke runde piller (eier 08.10.2026). */
 .ny-design .bryter-kompakt .bryter-valg label {
+  min-width: 2.75rem;
   min-height: 2.25rem;
   padding: 0 var(--rom-3);
+  border-radius: var(--radius-m);
 }
 
 /* ---------- Flater og innganger: oversiktene i modulene ----------

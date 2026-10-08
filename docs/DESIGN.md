@@ -2,7 +2,7 @@
 
 Dagens standard for hele appen (fase 8b, eier 08.10.2026). Den bygger på de nyeste delene: sidekolonnen på forsiden, Kalender, Nyheter og Videregående i tall. Nye sider følger reglene her, og eldre sider løftes til dem i fase 8b.
 
-**Utkast 08.10.2026**, til eier har godkjent skissen. Skissen står på `#/utvikling/design` i testversjonen.
+Godkjent av eier 08.10.2026 etter skissen på `#/utvikling/design` i testversjonen (svarene står i `docs/arbeidsordrer/fase-8b-forslag.md`).
 
 Reglene i AGENTS.md under «Grensesnitt» gjelder fortsatt. Denne filen sier hvordan det skal se ut.
 
@@ -48,6 +48,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 ## Valgknapper
 
 - **Valg mellom få alternativer** (2–5) er piller: avrundet helt, hvit med tynn kant. Det valgte er gult (`--farge-aksent`) med mørk tekst. Pillene står med litt luft mellom, ikke i én blokk.
+- **Korte valg på én linje i et skjema** (`Bryter kompakt`, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (`--radius-m`), ikke runde piller, med samme farger (eier 08.10.2026).
 - Det samme gjelder faner og filtre på en side (temafanene i Videregående i tall, filtrene i søket og kalenderen).
 - Unntak: valgene i overskriften på panelet på forsiden er rolige tekstknapper med strek under, og valget i det mørke toppfeltet på forsiden beholder sin form.
 - Bryter (av/på) og nedtrekkslister er som før.
@@ -59,7 +60,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 
 - Sider med flere deler står i to kolonner fra 64rem (`ToKolonner`): de første delene til venstre (3/5) og resten til høyre (2/5). Rekkefølgen på mobil er den samme.
 - Kildene til siden står nederst i høyre kolonne i en lukket boks (`Kildeboks`). En tallboks fra Videregående i tall står over kildene.
-- **En kolonne står aldri tom.** I kalkulatorene står resultatkortet i høyre kolonne fra start, med strekene der tallene kommer og en kort linje om hva som må fylles inn.
+- **En kolonne står aldri tom.** I kalkulatorene står resultatkortet i høyre kolonne fra start, med en strek der tallet kommer og en kort linje om hva som må fylles inn (eier 08.10.2026).
 - Oversiktene i modulene: ingressen og inngangene til venstre, veiviserne, kalenderen og tallene til høyre.
 
 *Eksempler:* fagarket, temasidene, Mer opplæring, Eksamen.
@@ -76,6 +77,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 ## Tall og resultater
 
 - **Tallet først og stort** (fet, `--str-xl` eller større, faste sifferbredder), med teksten under eller ved siden av, og eventuelt en dempet linje under det igjen.
+- Det gjelder alle tall, også nøkkeltallene i Videregående i tall (eier 08.10.2026).
 - Flere tall står side om side på én linje og brytes til neste linje når det ikke er plass.
 - Resultatet i en kalkulator er et hvitt kort med tynn kant som de andre kortene: tittelen i tekstfarge, hovedtallet stort og delresultatene i rader under. «Vis utregning» og «Kopier» står nederst.
 - Seriefargen (`--serie-1`) markerer det valgte i en figur. Grått er resten.
