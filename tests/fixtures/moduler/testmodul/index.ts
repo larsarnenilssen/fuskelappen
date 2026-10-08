@@ -40,6 +40,7 @@ export const manifest: Modulmanifest = {
       },
     ];
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

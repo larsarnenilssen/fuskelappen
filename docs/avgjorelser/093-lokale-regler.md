@@ -1,0 +1,21 @@
+# 093 – Lokale regler fra brukerne
+
+**Status:** Godkjent av eier 08.10.2026 (svarene på L1–L7 i `docs/arbeidsordrer/fase-9-forslag.md`).
+
+**Kontekst:** Fase 9 skal la brukerne legge inn regler for fylket eller skolen sin, i tillegg til de nasjonale eller i stedet for en nasjonal verdi. Regelen gjelder med en gang for brukeren, og eier kan godkjenne den, så den gjelder for alle som har valgt fylket eller skolen (`OPPDRAG.md`, fase 9). Appen gjør ingen eksterne kall, og repoet er offentlig.
+
+**Valg:**
+- **Hva som kan legges inn (L1):** Brukeren velger først temaet (Arbeidstid, Skoleregler, Fraværsgrensen, Eksamen eller Inntak), så hva som endres:
+  - **Et tall i kalkulatorene**, som gjelder i stedet for den nasjonale verdien. Verdiene med `lokal: true` i `rules/`: i første omgang planfestet tid (SFS 2213 punkt 5.1), redusert undervisning for kontaktlærer (7.3 b), godtgjøring for kontaktlærer og rådgiver (9.1) og undervisningsdagene i skoleåret.
+  - **En regel på siden for temaet**, som kommer i tillegg. Den står i delen «Lokale regler for {sted}».
+  - Verdier i årsrammetimer for funksjoner kan oppgis i prosent av en stilling, med omregningen (28,5 av 607,5 = 4,69 %, eier 08.10.2026).
+- **Lagringen:** Brukerens regler ligger i det valgfrie feltet `egneRegler`. Hver regel leses for seg, så én ugyldig regel ikke gjør resten av lagringen ugyldig. Skjemaversjonen er fortsatt 3. Reglene blir med i «Last ned kopi».
+- **Oppslaget:** `Regelkontekst.lokale` har de lokale verdiene, og `finnVerdi` slår dem opp før regelsettene: brukerens egne først, så skolen og fylket. `Oppslag.lokal` sier hvor verdien kommer fra. Kalkulatorene bruker dem uten egen kode per modul.
+- **Visningen (L2):** Brukerens egne regler og verdier har stiplet kant i ravfarge og merket «Din egen · ikke kontrollert». Godkjente har merket for skolen eller fylket og «Kontrollert {dato}». Under en godkjent regel, der den brukes, står «Feil eller endret? Endre for deg eller meld inn» (eier 08.10.2026). En egen endring av en godkjent regel (`endrer`) gjelder for brukeren i stedet for den godkjente.
+- **Innmelding (L3):** Bare e-post, som tilbakemeldingen (avgjørelse 064). E-posten har regelen i fast form (YAML) med en tilfeldig kode (`LR-XXXX`). Etter «Lagre og meld inn» sier appen at e-posten kan ligge bak nettleseren, med «Åpne e-posten på nytt» og «Kopier e-posten» (eier 08.10.2026). Appen sender ingenting selv.
+- **Dokumentasjon (L4):** Appen lagrer en lenke og en linje om kilden, ingen vedlegg. Dokumenter legges ved e-posten og legges aldri i repoet. Regelen skrives med egne ord, uten navn og underskrifter. En lokal avtale som ikke er offentlig, kan godkjennes når eier har sett den (eier 08.10.2026, L4 B). Kilden står da som «{navn} (ikke offentlig)», uten lenke.
+- **Godkjenning og publisering (L5):** Godkjente regler står i `lokale/regler.yaml`, med kilden i regelen (ikke i kilderegisteret), `kontrollert` og eventuelt `kontrollsporsmal`. Claude legger regelen inn med `kontrollert: null` i en PR, og setter datoen når eier sier «godkjent». Bare regler med `kontrollert` publiseres. Ved bygging blir filen `data/lokale/regler.json`, som appen henter (`NetworkFirst`, som nyhetene). Når PR-en er flettet, publiserer arbeidsflyten «Lokale regler» appen på nytt uten ny versjon. `deploy.yml` tar med `lokale/` fra main og sjekker filen mot versjonens tester. En godkjent regel med samme kode som brukerens kopi, bytter kopien ut, og brukeren får beskjed i Innstillinger.
+- **Datoene (L6):** lagt inn, meldt inn, godkjent (`kontrollert`) og eventuelt gjelder fra og til. En regel som har gått ut, brukes ikke og står som «Gikk ut» i Innstillinger.
+- **Vedlikehold (L7):** Hver nasjonal regelverdi har `lokal: true` eller `false`, og hver modul har `lokaleRegler` i manifestet (påkrevd i typen). Testene i `tests/content/lokale.test.ts` feiler når en verdi mangler valget, når en lokal verdi mangler navn eller tema, og når et tema ikke har én side. AGENTS.md har regelen under «Legge til noe nytt».
+
+**Konsekvens:** Nye lokale verdier legges til med `lokal: true` og et navn i `src/strings/moduler/lokaleregler.*.ts`, uten annen kode. Godkjente regler blir offentlige i repoet og i appen, men ikke dokumentene bak dem. Startpakken økte med om lag 2,5 kB. Ende-til-ende-testene bruker egne godkjente regler i `tests/fixtures/lokale/regler.yaml`.

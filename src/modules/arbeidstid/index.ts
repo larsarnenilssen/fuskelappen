@@ -36,6 +36,7 @@ export const manifest: Modulmanifest = {
   async favorittbare() {
     return kalkulatorer.map((k) => ({ id: `arbeidstid:${k.id}`, type: 'funksjon' as const, tittel: begge(k.tittel), rute: k.rute }));
   },
+  lokaleRegler: ['arbeidstid'],
   async frister() {
     return [];
   },

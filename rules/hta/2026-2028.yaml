@@ -7,6 +7,7 @@ gyldig_til: "2028-04-30"
 kilde: ks-hovedtariffavtalen
 verdier:
   timelonn_konstant:
+    lokal: false
     verdi: 1400
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
@@ -15,29 +16,34 @@ verdier:
       Timelønn for undervisningspersonale = (årslønn × 1400 × 100) ÷ (årsramme × 1687,5 × 112).
       1400 ÷ årsramme er tiden som beregnes for én undervisningstime på 60 minutter, med for- og etterarbeid.
   timelonn_arsverk_timer:
+    lokal: false
     verdi: 1687.5
     enhet: timer
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
     sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
   timelonn_ferie_teller:
+    lokal: false
     verdi: 100
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
     sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
     merknad: Brøken 100/112 i formelen trekker feriepengene ut av timelønnen. Feriepenger beregnes for seg.
   timelonn_ferie_nevner:
+    lokal: false
     verdi: 112
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
     sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
   feriepenger_prosent:
+    lokal: false
     verdi: 12
     enhet: prosent
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
     kontrollert: null
     sitat: "utgjør 12,0 % (14,3 % for arbeidstakere over 60 år)"
   feriepenger_prosent_over_60:
+    lokal: false
     verdi: 14.3
     enhet: prosent
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
@@ -45,6 +51,7 @@ verdier:
     sitat: "utgjør 12,0 % (14,3 % for arbeidstakere over 60 år)"
     merknad: For arbeidstakere over 60 år.
   overtidstillegg_prosent:
+    lokal: false
     verdi: 50
     enhet: prosent
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.5.3 }
@@ -54,6 +61,7 @@ verdier:
       Overtidstillegg for dagarbeidstid til vanlig tid. For undervisning regnes tillegget ut fra timelønnen for
       undervisning i § 12.4 (§ 6.4). Overtidsbetaling blir da 1,5 × timelønn (eier 29.09.2026).
   garantilonn:
+    lokal: false
     enhet: kroner per år
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
     kontrollert: null
@@ -67,12 +75,14 @@ verdier:
       - { id: lektor, navn: "Lektor og stillinger med krav om mastergrad", ar_0: 655800, ar_6: 676700, ar_8: 687500, ar_10: 723100, ar_16: 797500 }
       - { id: lektor-tillegg, navn: "Lektor med tilleggsutdanning", ar_0: 676200, ar_6: 697400, ar_8: 711000, ar_10: 746600, ar_16: 833300 }
   garantilonn_ansiennitet:
+    lokal: false
     verdi: [0, 6, 8, 10, 16]
     enhet: år
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
     kontrollert: null
     merknad: Ansiennitetstrinnene i tabellen. Kolonnene i garantilonn heter ar_<trinn>.
   arbeidsdager_per_maned:
+    lokal: false
     verdi: 21.67
     enhet: dager
     kilde: { id: inschool-fastlonn }

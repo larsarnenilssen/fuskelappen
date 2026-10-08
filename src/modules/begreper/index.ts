@@ -71,6 +71,7 @@ export const manifest: Modulmanifest = {
     }));
     return [oversiktsfavoritt(manifest), ...begreper];
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

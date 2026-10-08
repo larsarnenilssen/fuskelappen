@@ -20,6 +20,7 @@ gyldig_til: "2027-12-31"
 kilde: udir-grep
 verdier:
   programnavn:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: { dato: "2026-10-01" }
     grunnlag: avledet
@@ -53,6 +54,7 @@ verdier:
       - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått)", grep: [DT, FD] }
       - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått)", grep: [SR, IM] }
   kobling_fellesfag:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     grunnlag: avledet
@@ -633,6 +635,7 @@ verdier:
       # Kroppsøving vg3 på påbygging har raden for kroppsøving vg3 på studiespesialisering (eier 01.10.2026).
       - { nr: 8, program: PB, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: som kroppsøving vg3 på ST" }
   kobling_programfag:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     grunnlag: avledet
@@ -698,6 +701,7 @@ verdier:
       - { nr: 121, program: ST, trinn: Vg3, fagkoder: [SAM3068, SAM3069, SAM3070, SAM3071], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Nær.øk (samme læreplan for begge fagene)" }
       - { nr: 77, program: ST, trinn: Vg3, fagkoder: [SPR3022], merknad: "Eier 01.10.2026: 525 i InSchool; vedlegget har bare raden for vg2" }
   kobling_regler:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     grunnlag: avledet
@@ -777,6 +781,7 @@ verdier:
       - { id: st-vg2-fremmedsprak, prefikser: [PSP], program: ST, trinn: Vg2, fagtype: valgfritt_programfag, nr: 102, merknad: "Eier 01.10.2026: som fremmedspråk vg2" }
       - { id: st-vg3-fremmedsprak, prefikser: [PSP], program: ST, trinn: Vg3, fagtype: valgfritt_programfag, nr: 103, merknad: "Eier 01.10.2026: som fremmedspråk vg3" }
   kobling_yff:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     grunnlag: praksis

@@ -4,6 +4,7 @@
 // felt og en stolpe med merker ved 10 og 15 prosent, med utfallet i tekst. Reglene står under, lukket til de åpnes.
 // Faget står i adressen (?fag=ENG1007), så fagarket kan lenke rett hit. Ingenting lagres; skjemaet huskes i
 // nettleserhistorikken som i de andre kalkulatorene.
+import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { huskOktlengde, lesOktlengde } from '../../../app/kalkulatorvalg.ts';
 import { erstattAdresse } from '../../../app/ruter.ts';
@@ -468,6 +469,8 @@ export default function Fravaer({ sporring }: SideProps) {
           ))}
         </section>
       )}
+      {/* Lokale regler om fravær for fylket og skolen (fase 9, avgjørelse 093). */}
+      <LokaleRegler tema="fravaer" />
       {/* Fraværet i fylket og på skolen, nederst etter sidens eget innhold (avgjørelse 080 og 091). */}
       <FravaerBoks fylke={innstillinger.fylke} skole={innstillinger.skole} />
     </div>

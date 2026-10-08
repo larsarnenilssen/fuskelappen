@@ -21,6 +21,7 @@ export const manifest: Modulmanifest = {
   async favorittbare() {
     return [oversiktsfavoritt(manifest)];
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

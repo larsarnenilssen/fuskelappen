@@ -639,7 +639,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 ### Fase 9 – Lokale regler for fylke og skole
 
-*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-9.md`.
+*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-9.md`. Levert i 0.46.0 (08.10.2026), etter forslaget og eiers svar i `docs/arbeidsordrer/fase-9-forslag.md` (avgjørelse 093). De åpne punktene under er avklart der: bare e-post, godkjenning uten ny versjon, lokale avtaler som ikke er offentlige kan godkjennes når eier har sett dem, og datoene er nok. Kontrollpunktet gjenstår for eier.
 
 *(Eier 07.10.2026:)* Brukerne melder inn lokale regler, og eier godkjenner dem. Godkjente regler vises for alle som har valgt fylket eller skolen. Lokale profiler som bare lagres og deles som fil eller lenke, er tatt ut.
 
@@ -668,6 +668,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 **Kontrollpunkt:** Eier legger inn og melder inn en regel for en skole, godkjenner den og ser at den vises for andre som har valgt skolen.
 
 ### Fase 10 – Velkomst
+
+*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-10.md`.
 
 *(Eier 07.10.2026.)* Tas etter fase 9, fordi ett av trinnene viser til innmeldingen av lokale regler.
 

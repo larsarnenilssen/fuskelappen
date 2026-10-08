@@ -10,12 +10,14 @@ gyldig_til: "2027-12-31"
 kilde: ks-sfs2213-avtaletekst
 verdier:
   arsverk_timer:
+    lokal: false
     verdi: 1687.5
     enhet: timer
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "4" }
     kontrollert: null
     sitat: "utføres innenfor et årsverk på 1687,5 timer (1650 timer for lærere som er 60 år og eldre)"
   arsverk_timer_60_ar:
+    lokal: false
     verdi: 1650
     enhet: timer
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "4" }
@@ -23,6 +25,7 @@ verdier:
     sitat: "utføres innenfor et årsverk på 1687,5 timer (1650 timer for lærere som er 60 år og eldre)"
     merknad: Årsverket for lærere som er 60 år og eldre.
   arbeidsaar_tillegg_dager:
+    lokal: false
     verdi: 6
     enhet: dager
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "4 a" }
@@ -30,6 +33,7 @@ verdier:
     sitat: "Arbeidsårets lengde er elevenes skoleår + 6 dager à 7,5 timer til kompetanseutvikling, planlegging m.m."
     merknad: Arbeidsåret er elevenes skoleår pluss 6 dager til kompetanseutvikling, planlegging m.m.
   timer_per_dag:
+    lokal: false
     verdi: 7.5
     enhet: timer
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "4 a" }
@@ -37,6 +41,7 @@ verdier:
     sitat: "Arbeidsårets lengde er elevenes skoleår + 6 dager à 7,5 timer til kompetanseutvikling, planlegging m.m."
     merknad: De 6 dagene regnes «à 7,5 timer». Brukes også når arbeidsåret utvides (punkt 5.3).
   arbeidsdager_per_uke:
+    lokal: false
     verdi: 5
     enhet: dager
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
@@ -46,6 +51,7 @@ verdier:
       Avledet: 37,5 timer per uke ÷ 7,5 timer per dag. Gjør arbeidsårets dager om til uker
       (196 dager = 39,2 uker), slik eier har bekreftet 29.09.2026.
   planfestet_timer:
+    lokal: true
     verdi: 1150
     enhet: timer
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
@@ -53,18 +59,21 @@ verdier:
     sitat: "er den planfestede arbeidstiden 1.300, 1.225 og 1.150 timer på hhv. barnetrinnet, ungdomstrinnet og videregående skole"
     merknad: Videregående skole, med mindre partene på skolen blir enige om noe annet.
   planfestet_maks_dag:
+    lokal: false
     verdi: 9
     enhet: timer
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     kontrollert: null
     sitat: "Planfestet arbeidstid kan maksimalt være 9 timer pr. dag og inntil 37,5 timer pr. uke."
   planfestet_maks_uke:
+    lokal: false
     verdi: 37.5
     enhet: timer
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     kontrollert: null
     sitat: "Planfestet arbeidstid kan maksimalt være 9 timer pr. dag og inntil 37,5 timer pr. uke."
   arsramme_funksjon:
+    lokal: false
     verdi: 607.5
     enhet: årsrammetimer (60 min)
     kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
@@ -72,12 +81,14 @@ verdier:
     sitat: "funksjon som kontaktlærer, sosiallærer/rådgiver m.fl., brukes årsramme 607,5/810"
     merknad: Årsrammen for lærere som har redusert undervisningstid på grunn av funksjon (810 i 45-minutters enheter).
   arsramme_funksjon_45:
+    lokal: false
     verdi: 810
     enhet: årsrammetimer (45 min)
     kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     kontrollert: null
     sitat: "funksjon som kontaktlærer, sosiallærer/rådgiver m.fl., brukes årsramme 607,5/810"
   stjernetillegg:
+    lokal: false
     verdi: 52.5
     enhet: årsrammetimer (60 min)
     kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
@@ -85,18 +96,21 @@ verdier:
     sitat: "Når det faktiske antall elever i klassen er 1-15, økes årsrammen med 52,5/70 timer."
     merknad: Fag merket * får årsrammen økt når det faktiske antallet elever i klassen er 1–15 (70 i 45-minutters enheter).
   stjernetillegg_45:
+    lokal: false
     verdi: 70
     enhet: årsrammetimer (45 min)
     kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     kontrollert: null
     sitat: "Når det faktiske antall elever i klassen er 1-15, økes årsrammen med 52,5/70 timer."
   stjerne_maks_elever:
+    lokal: false
     verdi: 15
     enhet: elever
     kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     kontrollert: null
     sitat: "Når det faktiske antall elever i klassen er 1-15, økes årsrammen med 52,5/70 timer."
   kontaktlaerer_reduksjon:
+    lokal: true
     verdi: 28.5
     enhet: årsrammetimer (60 min)
     kilde: { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
@@ -104,6 +118,7 @@ verdier:
     sitat: "Lærere i videregående opplæring som utfører kontaktlærertjeneste for elevene, får redusert årsrammen for undervisning med minimum 28,5/38"
     merknad: Minste reduksjon for kontaktlærertjeneste i videregående opplæring (38 i 45-minutters enheter).
   livsfase_nyutdannet_prosent:
+    lokal: false
     verdi: 6
     enhet: prosent
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "6" }
@@ -111,6 +126,7 @@ verdier:
     sitat: "redusert undervisningen med inntil 6 % fra skoleårets begynnelse det første yrkesåret"
     merknad: Rett til redusert undervisning med inntil 6 % det første yrkesåret etter fullført faglig og pedagogisk utdanning.
   livsfase_57_prosent:
+    lokal: false
     verdi: 6
     enhet: prosent
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "6" }
@@ -118,6 +134,7 @@ verdier:
     sitat: "redusert undervisningen med inntil 6 % fra skoleårets begynnelse det kalenderåret de fyller 57 år"
     merknad: Rett til redusert undervisning med inntil 6 % fra skoleårets begynnelse det kalenderåret læreren fyller 57 år.
   livsfase_60_prosent:
+    lokal: false
     verdi: 12.5
     enhet: prosent
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "6" }
@@ -125,6 +142,7 @@ verdier:
     sitat: "redusert undervisningen med inntil 12,5 % fra skoleårets begynnelse det kalenderåret de fyller 60 år"
     merknad: Rett til redusert undervisning med inntil 12,5 % fra skoleårets begynnelse det kalenderåret læreren fyller 60 år.
   godtgjoring_kontaktlaerer:
+    lokal: true
     verdi: 12000
     enhet: kroner per år
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
@@ -132,6 +150,7 @@ verdier:
     sitat: "Godtgjøring for kontaktlærertjeneste er minimum kr. 12 000 pr. år."
     merknad: Minste godtgjøring for kontaktlærertjeneste. Kommer i tillegg til lønnen.
   godtgjoring_radgiver:
+    lokal: true
     verdi: 12000
     enhet: kroner per år
     kilde: { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
@@ -139,6 +158,7 @@ verdier:
     sitat: "Rådgiver-/sosiallærertjeneste godtgjøres med minimum kr. 12 000 pr. år."
     merknad: Minste godtgjøring for rådgiver- og sosiallærertjeneste. Kommer i tillegg til lønnen.
   skolear_uker:
+    lokal: false
     verdi: 38
     enhet: uker
     kilde: { id: opplaeringslova, punkt: "§ 14-1 første ledd" }
@@ -146,6 +166,7 @@ verdier:
     sitat: "Opplæringa skal strekkje seg over minst 38 skoleveker"
     merknad: Elevenes skoleår i uker (190 dager). Brukes når timer per uke gjøres om til årstimer.
   skolear_dager:
+    lokal: true
     verdi: 190
     enhet: dager
     kilde: { id: opplaeringslova, punkt: "§ 14-1 første ledd" }

@@ -2,6 +2,8 @@
 
 Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «L1 ja, L4 B»). Rundene står med den nyeste øverst.
 
+*Status 08.10.2026:* Eier svarte «L4 B» og godkjente designet etter runde 2 («Ellers fint; kjør publisering!»). Levert i 0.46.0 (avgjørelse 093). Skissen er erstattet av løsningen, og rundene under står som de ble skrevet.
+
 ---
 
 ## Runde 2: svarene dine og ny skisse (08.10.2026)

@@ -11,6 +11,8 @@ export interface Oppsett {
   favoritter?: string[];
   skjultKildevarsel?: string | null;
   forside?: { rekkefolge: string[]; lukket: string[]; apnet?: string[]; bareFavoritter: boolean; visning?: string; skjult?: string[] };
+  /** Brukerens egne lokale regler (fase 9, avgjørelse 093). */
+  egneRegler?: Record<string, unknown>[];
 }
 
 /** Setter lagrede innstillinger før siden lastes. */
@@ -28,6 +30,7 @@ export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
     scenarier: {},
     skjultKildevarsel: oppsett.skjultKildevarsel ?? null,
     forside: oppsett.forside ?? { rekkefolge: [], lukket: [], bareFavoritter: false },
+    ...(oppsett.egneRegler ? { egneRegler: oppsett.egneRegler } : {}),
   };
   await side.addInitScript((d) => {
     if (!sessionStorage.getItem('oppsett-satt')) {
@@ -47,6 +50,7 @@ export const ruter = [
   '#/sok',
   '#/sok?q=skule',
   '#/innstillinger',
+  '#/innstillinger/lokal-regel',
   '#/om',
   '#/om/kilder',
   '#/kategori/skolemiljo',

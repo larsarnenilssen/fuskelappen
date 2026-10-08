@@ -13,6 +13,8 @@ import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesLopskilder, lesSkoler,
 import { kobleSkoler } from '../../src/modules/opplaeringslop/skoler.ts';
 import { uenigheter } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
 import { lagVersjonsfil, type Versjonsomtale } from '../../src/core/versjon/versjoner.ts';
+import { lagPublisert } from '../../src/core/lokale/regler.ts';
+import { LOKALEFIL, lesLokaleRegler, TESTFIL } from '../lokale/les.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -281,6 +283,36 @@ export function dataPlugin(rot: string, mode: string): Plugin {
         }
         this.emitFile({ type: 'asset', fileName: navn, source: readFileSync(fil) });
       }
+    },
+  };
+}
+
+/**
+ * De godkjente lokale reglene (fase 9, avgjørelse 093): lokale/regler.yaml blir data/lokale/regler.json ved siden av
+ * appen, med bare reglene eier har kontrollert. Filen hentes av appen, så nye regler kan publiseres uten ny versjon.
+ */
+export function lokaleReglerPlugin(rot: string, mode: string): Plugin {
+  const navn = 'data/lokale/regler.json';
+  const kilde = mode === 'e2e' ? TESTFIL : LOKALEFIL;
+  const fil = () => JSON.stringify(lagPublisert(lesLokaleRegler(rot, kilde)));
+  let base = '/';
+  return {
+    name: 'jukselappen:lokale-regler',
+    configResolved(config) {
+      base = config.base;
+    },
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if ((req.url ?? '').split('?')[0] !== `${base}${navn}`) return next();
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.end(fil());
+      });
+    },
+    buildStart() {
+      this.addWatchFile(join(rot, kilde));
+    },
+    generateBundle() {
+      this.emitFile({ type: 'asset', fileName: navn, source: fil() });
     },
   };
 }

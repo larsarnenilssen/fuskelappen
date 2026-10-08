@@ -1,50 +1,57 @@
-// Skissen til fase 9: hvordan brukerens egne regler vises. Se skisse.ts.
-import { useEffect, useState } from 'preact/hooks';
+// Visningen av lokale regler (fase 9, avgjørelse 093): kortene på sidene, statuslinjen og navnene på verdiene.
 import { Ikon } from '../../components/Ikon.tsx';
-import { formaterDato, formaterTall } from '../../core/i18n/tekst.ts';
-import { fylkesnavn } from '../Stedmerknad.tsx';
-import { useTekst, useTilstand } from '../tilstand.ts';
-import { type EgenRegel, hentRegler, lytt, nasjonalVerdi, status, type Verdinokkel } from './skisse.ts';
-import '../../styles/lokaleregler.css';
+import { Egenmerke, Lokalfot, lokalRegelAdresse } from '../../components/Lokalregel.tsx';
+import { Nivamerke, Statusmerke } from '../../components/Merker.tsx';
+import { formaterDato, formaterTall, type Tekstnokkel } from '../../core/i18n/tekst.ts';
+import { egenstatus } from '../../core/lokale/regler.ts';
+import { TEMA_FOR_REGELVERK, type EgenRegel, type PublisertRegel, type Tema } from '../../core/lokale/skjema.ts';
+import { hentVerdi, regelsett } from '../../core/regler/index.ts';
+import { iDag } from '../../data/skolear.ts';
+import { useTekst } from '../tilstand.ts';
 
-/** Reglene i skissen, oppdatert når de endres. */
-export function useEgneRegler(): readonly EgenRegel[] {
-  const [regler, settRegler] = useState(hentRegler);
-  useEffect(() => lytt(() => settRegler(hentRegler())), []);
-  return regler;
+/**
+ * Verdiene som kan ha en lokal verdi (`lokal: true` i rules/), per tema, i rekkefølgen i regelsettet. Nye verdier med
+ * `lokal: true` kommer med av seg selv (forslag L7).
+ */
+export function lokaleVerdivalg(): Record<Tema, string[]> {
+  const valg: Record<Tema, string[]> = { arbeidstid: [], skoleregler: [], fravaer: [], eksamen: [], inntak: [] };
+  for (const r of regelsett) {
+    if (r.gyldighet.niva !== 'nasjonal') continue;
+    const tema = TEMA_FOR_REGELVERK[r.regelverk];
+    if (!tema) continue;
+    for (const [navn, v] of Object.entries(r.verdier)) {
+      const nokkel = `${r.regelverk}.${navn}`;
+      if (v.lokal === true && !valg[tema].includes(nokkel)) valg[tema].push(nokkel);
+    }
+  }
+  return valg;
 }
 
-/** Stedet regelen gjelder for, med navn: skolen eller fylket brukeren har valgt. */
-export function useSted() {
-  const { innstillinger } = useTilstand();
-  const fylke = fylkesnavn(innstillinger.fylke);
-  return { fylke: innstillinger.fylke, fylkesnavn: fylke, skole: innstillinger.skole, navn: innstillinger.skole?.navn ?? fylke };
-}
+/** Den nasjonale verdien som gjelder i dag. */
+export const nasjonalVerdi = (nokkel: string) => hentVerdi(nokkel, { dato: iDag() });
 
-export const verdinavn = (nokkel: Verdinokkel) => nokkel.split('.')[1] as 'planfestet_timer';
+/** Tekstnøkkelen til navnet på en lokal verdi, f.eks. «lokaleRegler.verdier.planfestet_timer». */
+export const verdinavn = (nokkel: string): Tekstnokkel => `lokaleRegler.verdier.${nokkel.split('.')[1] ?? ''}` as Tekstnokkel;
 
-/** Verdien med enheten fra regelsettet, f.eks. «1 150 timer». */
-export function medEnhet(nokkel: Verdinokkel, verdi: number): string {
+/** Verdier i årsrammetimer for funksjoner kan oppgis i prosent av en stilling (eier 08.10.2026). */
+export const iProsent = (nokkel: string): boolean => (nasjonalVerdi(nokkel).enhet ?? '').startsWith('årsrammetimer');
+
+/** Årsrammen for funksjoner (607,5), som prosenten regnes av. */
+export const funksjonsramme = (): number => Number(nasjonalVerdi('sfs2213.arsramme_funksjon').verdi);
+
+/** Verdien med enheten, f.eks. «1 150 timer», eller i prosent av en stilling for funksjoner. */
+export function visVerdi(nokkel: string, verdi: number): string {
+  if (iProsent(nokkel)) return `${formaterTall((verdi / funksjonsramme()) * 100)}\u00a0%`;
   const enhet = nasjonalVerdi(nokkel).enhet;
   return `${formaterTall(verdi)}${enhet ? ` ${enhet}` : ''}`;
 }
 
-/** Merket på en regel brukeren har lagt inn selv: «Din egen · ikke kontrollert». */
-export function Egenmerke({ verdi = false }: { verdi?: boolean }) {
-  const { t } = useTekst();
-  return (
-    <span class="merke merke-egen">
-      <Ikon navn="person" />
-      {verdi ? t('lokaleRegler.merke.egenVerdi') : t('lokaleRegler.merke.egen')} · {t('lokaleRegler.merke.ikkeKontrollert')}
-    </span>
-  );
-}
-
-/** Statuslinjen: når regelen ble lagt inn, og om den er meldt inn eller godkjent. */
-export function Statuslinje({ regel }: { regel: EgenRegel }) {
+/** Statuslinjen til en egen regel: når den ble lagt inn, og om den er meldt inn, godkjent eller har gått ut. */
+export function Statuslinje({ regel, godkjente }: { regel: EgenRegel; godkjente: readonly PublisertRegel[] }) {
   const { t, malform } = useTekst();
-  const s = status(regel);
-  const dato = (d: string) => formaterDato(d, malform);
+  const dato = (d: string | undefined) => (d ? formaterDato(d, malform) : '');
+  const s = egenstatus(regel, godkjente, iDag());
+  const godkjent = godkjente.find((g) => g.kode === regel.kode);
   return (
     <span class="egenregel-status">
       {t('lokaleRegler.skjema.lagtInn', { dato: dato(regel.lagtInn) })}
@@ -52,14 +59,41 @@ export function Statuslinje({ regel }: { regel: EgenRegel }) {
       {s === 'egen'
         ? t('lokaleRegler.status.egen')
         : s === 'innmeldt'
-          ? t('lokaleRegler.status.innmeldt', { dato: dato(regel.innmeldt ?? '') })
-          : t('lokaleRegler.status.godkjent', { dato: dato(regel.godkjent ?? '') })}
+          ? t('lokaleRegler.status.innmeldt', { dato: dato(regel.innmeldt) })
+          : s === 'utlopt'
+            ? t('lokaleRegler.status.utlopt', { dato: dato(regel.gjelderTil) })
+            : t('lokaleRegler.status.godkjent', { dato: dato(godkjent?.kontrollert?.dato) })}
     </span>
   );
 }
 
+/** Tekst med avsnitt, uten HTML. */
+function Avsnitt({ tekst }: { tekst: string }) {
+  return (
+    <>
+      {tekst
+        .split(/\n\s*\n/)
+        .map((a) => a.trim())
+        .filter(Boolean)
+        .map((a, i) => (
+          <p key={i} class="egenregel-tekst">
+            {a}
+          </p>
+        ))}
+    </>
+  );
+}
+
+function vertsnavn(url: string): string {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return url;
+  }
+}
+
 /** En regel brukeren har lagt inn, som et kort på siden der den gjelder: stiplet kant og merket «Din egen». */
-export function Egenregelkort({ regel }: { regel: EgenRegel }) {
+export function Egenregelkort({ regel, godkjente }: { regel: EgenRegel; godkjente: readonly PublisertRegel[] }) {
   const { t } = useTekst();
   return (
     <article class="egenregel">
@@ -67,18 +101,18 @@ export function Egenregelkort({ regel }: { regel: EgenRegel }) {
         <Egenmerke />
       </div>
       <h3 class="egenregel-tittel">{regel.tittel}</h3>
-      <p class="egenregel-tekst">{regel.tekst}</p>
+      <Avsnitt tekst={regel.tekst ?? ''} />
       {regel.lenke && (
         <p class="egenregel-kilde">
           <a href={regel.lenke} rel="noopener noreferrer" target="_blank">
-            {new URL(regel.lenke).hostname}
+            {vertsnavn(regel.lenke)}
             <Ikon navn="ekstern" class="ikon-liten" />
           </a>
         </p>
       )}
       <p class="egenregel-fot">
-        <Statuslinje regel={regel} />
-        <a href={`#/innstillinger/lokal-regel?kode=${regel.kode}`}>
+        <Statuslinje regel={regel} godkjente={godkjente} />
+        <a href={lokalRegelAdresse({ kode: regel.kode })}>
           <Ikon navn="blyant" class="ikon-liten" />
           {t('lokaleRegler.endre')}
         </a>
@@ -87,19 +121,65 @@ export function Egenregelkort({ regel }: { regel: EgenRegel }) {
   );
 }
 
-/**
- * Under en godkjent lokal regel der den brukes (på siden og i kalkulatoren): hvem den gjelder for, når den ble
- * kontrollert, og hvor brukeren endrer den for seg selv eller melder inn at den er feil eller endret (eier 08.10.2026).
- */
-export function Lokalfot({ regel, sted }: { regel: EgenRegel; sted: string }) {
+/** En regel eier har godkjent: merket for skolen eller fylket, «Kontrollert», kilden og hvor den endres. */
+export function Godkjentkort({ regel }: { regel: PublisertRegel }) {
   const { t, malform } = useTekst();
+  const kilde = regel.kilde.offentlig ? regel.kilde.navn : t('lokaleRegler.side.ikkeOffentlig', { navn: regel.kilde.navn });
   return (
-    <p class="lokalfot">
-      <span>{t('lokaleRegler.lokalfot.tekst', { sted, dato: formaterDato(regel.godkjent ?? '', malform) })}</span>{' '}
-      <span>
-        {t('lokaleRegler.lokalfot.sporsmal')}{' '}
-        <a href={`#/innstillinger/lokal-regel?fra=${regel.kode}`}>{t('lokaleRegler.lokalfot.lenke')}</a>
-      </span>
-    </p>
+    <article class="godkjentregel">
+      <div class="egenregel-topp">
+        <Nivamerke niva={regel.niva} />
+        <Statusmerke status="kontrollert" kontrollert={regel.kontrollert} />
+      </div>
+      <h3 class="egenregel-tittel">{regel.tittel?.[malform]}</h3>
+      <Avsnitt tekst={regel.tekst?.[malform] ?? ''} />
+      <p class="egenregel-kilde">
+        {regel.kilde.url ? (
+          <a href={regel.kilde.url} rel="noopener noreferrer" target="_blank">
+            {t('lokaleRegler.side.kilde', { navn: kilde })}
+            <Ikon navn="ekstern" class="ikon-liten" />
+          </a>
+        ) : (
+          t('lokaleRegler.side.kilde', { navn: kilde })
+        )}
+      </p>
+      <Lokalfot kode={regel.kode} stedsnavn={regel.stedsnavn} kontrollert={regel.kontrollert?.dato ?? null} />
+    </article>
+  );
+}
+
+/** En lokal verdi på siden for temaet: navnet, tallet, den nasjonale verdien og hvor den endres eller meldes inn. */
+export function Verdikort({ regel, egen }: { regel: EgenRegel | PublisertRegel; egen: boolean }) {
+  const { t } = useTekst();
+  if (!regel.nokkel || regel.verdi === undefined) return null;
+  const nasjonal = Number(nasjonalVerdi(regel.nokkel).verdi);
+  const godkjent = egen ? null : (regel as PublisertRegel);
+  return (
+    <article class={egen ? 'egenregel' : 'godkjentregel'}>
+      <div class="egenregel-topp">
+        {godkjent ? (
+          <>
+            <Nivamerke niva={godkjent.niva} />
+            <Statusmerke status="kontrollert" kontrollert={godkjent.kontrollert} />
+          </>
+        ) : (
+          <Egenmerke verdi />
+        )}
+      </div>
+      <h3 class="egenregel-tittel">{t(verdinavn(regel.nokkel))}</h3>
+      <p class="egenverdi-tall tall">{visVerdi(regel.nokkel, regel.verdi)}</p>
+      <p class="egenregel-status">{t('lokaleRegler.nasjonaltVar', { verdi: visVerdi(regel.nokkel, nasjonal) })}</p>
+      {godkjent ? (
+        <Lokalfot kode={godkjent.kode} stedsnavn={godkjent.stedsnavn} kontrollert={godkjent.kontrollert?.dato ?? null} />
+      ) : (
+        <p class="egenregel-fot">
+          <Statuslinje regel={regel as EgenRegel} godkjente={[]} />
+          <a href={lokalRegelAdresse({ kode: regel.kode })}>
+            <Ikon navn="blyant" class="ikon-liten" />
+            {t('lokaleRegler.endre')}
+          </a>
+        </p>
+      )}
+    </article>
   );
 }

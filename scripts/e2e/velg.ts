@@ -48,7 +48,7 @@ const REGELMODULER: Record<string, readonly string[]> = {
 };
 
 /** Felles kode: kjernetestene for skallet, navigasjonen og de felles komponentene, og overflyt for alle rutene. */
-export const KJERNE = ['navigasjon', 'komponenter', 'modul-og-sok', 'malform-tema', 'innstillinger', 'favoritter', 'om', 'kildestatus', 'pwa'] as const;
+export const KJERNE = ['navigasjon', 'komponenter', 'modul-og-sok', 'malform-tema', 'innstillinger', 'lokaleregler', 'favoritter', 'om', 'kildestatus', 'pwa'] as const;
 
 export interface Utvalg {
   /** Spesifikasjonene som kjøres i sin helhet. */

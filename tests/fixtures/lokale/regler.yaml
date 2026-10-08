@@ -1,0 +1,40 @@
+# Godkjente lokale regler til ende-til-ende-testene (bygget med --mode e2e). Ikke ekte regler.
+regler:
+  - kode: LR-2FXB
+    tema: arbeidstid
+    type: verdi
+    niva: skole
+    fylke: "46"
+    skole: "974557320"
+    stedsnavn: Slåtthaug videregående skole
+    nokkel: sfs2213.planfestet_timer
+    verdi: 1100
+    kilde: { navn: Lokal avtale om arbeidstid for testskolen, offentlig: false }
+    meldt_inn: "2026-09-20"
+    kontrollert: { dato: "2026-09-24" }
+  - kode: LR-9HWD
+    tema: eksamen
+    type: regel
+    niva: skole
+    fylke: "46"
+    skole: "974557320"
+    stedsnavn: Slåtthaug videregående skole
+    tittel: { nb: Oppmøte til skriftlig eksamen, nn: Oppmøte til skriftleg eksamen }
+    tekst:
+      nb: Elevene møter 30 minutter før eksamen begynner.
+      nn: Elevane møter 30 minutt før eksamen byrjar.
+    kilde: { navn: Testskolens side om eksamen, url: "https://example.no/eksamen", offentlig: true }
+    meldt_inn: "2026-10-01"
+    kontrollert: { dato: "2026-10-03" }
+  - kode: LR-7777
+    tema: eksamen
+    type: regel
+    niva: fylke
+    fylke: "46"
+    skole: null
+    stedsnavn: Vestland
+    tittel: { nb: Ikke kontrollert, nn: Ikkje kontrollert }
+    tekst: { nb: Skal ikke vises., nn: Skal ikkje visast. }
+    kilde: { navn: Test, url: "https://example.no", offentlig: true }
+    meldt_inn: "2026-10-01"
+    kontrollert: null

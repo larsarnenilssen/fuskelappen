@@ -12,7 +12,8 @@ import { Oppsummering, Sammenleggknapp, useSammenlagt } from '../../../component
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Fordelingsdel, Fordelingsresultat } from '../beregning/index.ts';
 import { Ukemaaler } from './Grafikk.tsx';
-import { brukteNiva, tallTekst } from './Utregning.tsx';
+import { brukteLokale, brukteNiva, tallTekst } from './Utregning.tsx';
+import { Egenmerke, LokaleVerdierFot } from '../../../components/Lokalregel.tsx';
 
 const BREDDE = 320;
 const STOLPE = 56;
@@ -179,7 +180,7 @@ export function Fordelingsvisning({ resultat, uke, children }: { resultat: Forde
           </Sammenleggknapp>
         </h2>
         {/* Lokale verdier (fylke eller skole), f.eks. lokalt avtalt planfestet tid, merkes med nivå. */}
-        <Nivamerke niva={brukteNiva(resultat.trinn)} />
+        {brukteLokale(resultat.trinn).some((l) => l.egen) ? <Egenmerke verdi /> : <Nivamerke niva={brukteNiva(resultat.trinn)} />}
         {kanVisesStor && !lukket && (
           <button type="button" class="lenkeknapp liten" onClick={veksle}>
             <Ikon navn={stor ? 'forminsk' : 'utvid'} class="ikon-liten" />
@@ -209,6 +210,8 @@ export function Fordelingsvisning({ resultat, uke, children }: { resultat: Forde
           <Ukemaaler planfestet={(planfestet - planlegging) / uker} total={(totalt - planlegging) / uker} maksUke={uke.maksUke} maksDag={uke.maksDag} dagerPerUke={uke.dagerPerUke} />
         )}
         {children}
+        {/* Hvor en lokal verdi kan endres eller meldes inn (fase 9, avgjørelse 093). */}
+        <LokaleVerdierFot lokale={brukteLokale(resultat.trinn)} />
       </div>
     </div>
   );

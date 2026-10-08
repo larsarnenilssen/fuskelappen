@@ -146,6 +146,7 @@ export const manifest: Modulmanifest = {
     const kontorfavoritter: Favorittbar[] = (kontor?.kontor ?? []).map((k) => ({ id: kontorfavoritt(k.orgnr), type: 'element', tittel: { nb: k.navn, nn: k.navn }, rute: kontorrute(k.orgnr) }));
     return bareSpurte([...sider, ...program, ...tilbud, ...skolefavoritter, ...kontorfavoritter], ider);
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

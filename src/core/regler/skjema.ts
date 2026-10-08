@@ -26,6 +26,11 @@ export const regelverdiSkjema = z
      * ser hver uke etter utdraget i kilden (verdisjekken). Høyst 200 tegn: et sitat, ikke en kopi.
      */
     sitat: z.string().trim().min(1).max(200).optional(),
+    /**
+     * Om verdien kan variere lokalt, så brukeren kan legge inn en lokal verdi for fylket eller skolen (fase 9,
+     * avgjørelse 093). Påkrevd for verdiene kalkulatorene bruker (testes), så nye verdier får et valg.
+     */
+    lokal: z.boolean().optional(),
   })
   .strict();
 

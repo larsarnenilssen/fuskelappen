@@ -101,7 +101,29 @@ verdier:
 - `grunnlag`: `avledet` (regnet ut fra andre verdier) eller `praksis` (praksis eier har beskrevet). Slike verdier har ikke sitat, men en `merknad` som forklarer grunnlaget. Uten `grunnlag` står verdien i kilden.
 - Tabeller og lister har ikke sitat. De kontrolleres med egne tester, f.eks. at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad. Vedlegg 1 og garantilønnen sjekkes også rad for rad mot kilden hver uke (avgjørelse 018).
 - Nasjonale perioder for samme regelverk kan ikke overlappe. Det testes.
+- `lokal`: `true` når verdien kan ha en lokal verdi for fylket eller skolen (brukerens egen eller godkjent, avgjørelse 093), ellers `false`. Påkrevd for alle nasjonale verdier (testes). En verdi med `lokal: true` er et tall, og har et navn i `src/strings/moduler/lokaleregler.*.ts`.
 - Verdier med `kontrollert: null` vises uten merke. Brukserklæringen under «Om appen» og setningen nederst på forsiden sier at appen er utviklet privat og kan ha feil (avgjørelse 016).
+
+## Lokale regler (`lokale/regler.yaml`)
+
+Lokale regler fra brukerne som eier har godkjent (fase 9, avgjørelse 093). Skjemaet er `godkjentRegelSkjema` i `src/core/lokale/skjema.ts`. Filen publiseres uten ny versjon som `data/lokale/regler.json`, med bare reglene som har `kontrollert`.
+
+| Felt | Innhold |
+|---|---|
+| `kode` | koden fra innmeldingen, `LR-` og fire tegn. Brukerens kopi med samme kode byttes ut |
+| `tema` | `arbeidstid`, `skoleregler`, `fravaer`, `eksamen` eller `inntak` |
+| `type` | `verdi` (et tall i kalkulatorene, i stedet for den nasjonale verdien) eller `regel` (en regel på siden for temaet, i tillegg) |
+| `niva`, `fylke`, `skole`, `stedsnavn` | `fylke` eller `skole`, fylkesnummeret, skolens nummer i Nasjonalt skoleregister (eller `null`) og navnet |
+| `nokkel`, `verdi` | for en verdi: f.eks. `sfs2213.planfestet_timer` (må ha `lokal: true` i `rules/`) og tallet |
+| `tittel`, `tekst` | for en regel: `{ nb, nn }`, med egne ord, uten navn |
+| `kilde` | `{ navn, url?, offentlig }`. En offentlig kilde har lenke. En lokal avtale som ikke er offentlig, har ingen lenke |
+| `gjelder_fra`, `gjelder_til` | valgfrie datoer |
+| `meldt_inn` | datoen i innmeldingen |
+| `endrer` | koden til en godkjent regel denne erstatter (en innmeldt endring) |
+| `kontrollert` | `null` eller `{ dato }`. **Settes bare av eier**, eller av Claude etter eiers beskjed med dato |
+| `kontrollsporsmal` | spørsmål til eier. Vises ikke i appen |
+
+Brukerens egne regler lagres bare på enheten (`egneRegler` i lagringen, `egenRegelSkjema`). De har de samme feltene med camelCase, og `lagtInn`, `innmeldt`, `lenke` og `merknad`.
 
 ## Praksis og tolkninger (`content/kontroll/praksis.yaml`)
 

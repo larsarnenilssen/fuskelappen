@@ -125,6 +125,7 @@ export const manifest: Modulmanifest = {
     ]);
     return bareSpurte([oversiktsfavoritt(manifest), ...lov, ...avtalefavoritter], ider);
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

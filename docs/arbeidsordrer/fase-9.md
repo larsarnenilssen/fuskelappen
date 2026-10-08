@@ -2,7 +2,7 @@
 
 Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen står under arbeidsordren.
 
-*Status 08.10.2026:* Skrevet etter at fase 8 ble levert i 0.43.0, og oppdatert etter at fase 8b (designløftet) ble levert i 0.45.0. Arbeidsordren er klar til bruk.
+*Status 08.10.2026:* Levert i 0.46.0. Forslaget og eiers svar står i `fase-9-forslag.md`, valgene i avgjørelse 093. Neste fase: `fase-10.md`.
 
 ---
 

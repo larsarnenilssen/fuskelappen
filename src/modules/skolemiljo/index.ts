@@ -59,6 +59,7 @@ export const manifest: Modulmanifest = {
       ...veivisere.map((v) => ({ id: `skolemiljo:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },
+  lokaleRegler: ['skoleregler'],
   async frister() {
     return [];
   },

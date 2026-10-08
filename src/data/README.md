@@ -18,6 +18,7 @@ av skriptene i `scripts/` (kildesjekken, avgjørelse 018) og endres bare av dem.
 | `statistikk.ts` | Udirs statistikkbank | søkere, elever, formidling, lærekontrakter, fravær, gjennomføring og eksamenskarakterer for landet, fylkene og skolene (avgjørelse 080) | `lastStatistikk` |
 | `statistikk.ts` | SSBs statistikkbank | ungdomskullene og framskrivingen, unge utenfor arbeid og utdanning, grunnskolepoeng, KOSTRA, lærerne og 16–18-åringer i videregående for landet og fylkene (avgjørelse 090) | `lastSsb` |
 | `kalender.ts` | Lovdata | skoleruta fra fylkenes forskrifter og vedtatte endringer i regelverket, til kalenderen (avgjørelse 066) | `lastSkoleruter`, `lastKommende` |
+| `lokale.ts` | brukerne, godkjent av eier | de godkjente lokale reglene fra `lokale/regler.yaml`, publisert uten ny versjon (avgjørelse 093) | `lastLokaleRegler` |
 | `skolear.ts` | – | skoleåret og valget av fag- og timefordeling etter dato | `iDag`, `skolearFor`, `velgFordeling`, `fordelingsfil` |
 
 Det som regnes ut når appen bygges (Vite-pluginene i `scripts/vite/plugins.ts`), leser de samme filene med

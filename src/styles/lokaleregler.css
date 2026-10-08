@@ -1,7 +1,7 @@
-/* ---------- Brukerens egne lokale regler (fase 9, skisse) ----------
+/* ---------- Lokale regler (fase 9, avgjørelse 093) ----------
    En regel brukeren har lagt inn selv, står med stiplet kant i ravfarge og merket «Din egen · ikke kontrollert», så den
    ikke kan forveksles med innhold eier har kontrollert. En godkjent regel er et vanlig kort med merket for skolen eller
-   fylket og «Kontrollert». Lastes med sidene som bruker dem (avgjørelse 082). */
+   fylket og «Kontrollert». Lastes med komponentene som bruker dem (avgjørelse 082). */
 
 .merke-egen {
   display: inline-flex;
@@ -106,7 +106,25 @@
   display: flex;
   align-items: center;
   gap: var(--rom-2);
+  margin-bottom: var(--rom-3);
   background: var(--farge-ok-flate);
+}
+
+.lokaleregler-melding > span {
+  flex: 1;
+}
+
+.lokaleregler-del {
+  margin: var(--rom-5) 0;
+}
+
+.lokaleverdier-fot {
+  margin-top: var(--rom-2);
+}
+
+.godkjentregel .egenverdi-tall,
+.egenregel .egenverdi-tall {
+  margin: 0 0 var(--rom-1);
 }
 
 .lokaleregler-melding > .ikon {

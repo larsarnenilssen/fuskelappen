@@ -55,6 +55,7 @@ export const manifest: Modulmanifest = {
     const deler: Favorittbar[] = alleDeler(od.deler).map((d) => ({ id: delfavoritt(d), type: 'element', tittel: { nb: navn(d, 'nb'), nn: navn(d, 'nn') }, rute: delRute(d) }));
     return bareSpurte([side, ...deler], ider);
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

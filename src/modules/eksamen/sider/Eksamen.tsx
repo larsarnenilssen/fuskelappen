@@ -3,6 +3,7 @@
 // gjelder hele veien, og utsatt, ny og særskilt eksamen samlet i én boks. Kortene står i
 // content/eksamen/eksamen.yaml. Vestland vises bare når Vestland er valgt.
 // `?del=<id>` åpner et kort og ruller dit, så veiviserne og Tilrettelegging kan lenke rett til det.
+import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import { useEffect, useState } from 'preact/hooks';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -107,6 +108,8 @@ export default function Eksamen({ sporring }: SideProps) {
                   </div>
                 ))}
               </section>
+              {/* Lokale regler fra brukerne for fylket og skolen (fase 9, avgjørelse 093). */}
+              <LokaleRegler tema="eksamen" />
               {utsatt && (
                 <section>
                   <h2 class="liten-overskrift">{t('eksamen.eksamen.ikkeBestatt')}</h2>
