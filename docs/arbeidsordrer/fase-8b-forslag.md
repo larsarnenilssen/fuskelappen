@@ -4,6 +4,20 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 4: veiviserne (08.10.2026)
+
+- **Stegene:** Steget og tittelen står på en lys flate øverst i kortet, i fargen til veiviseren (blå, rosa, grønn …), som overskriftene på fagarket og i kalkulatorene.
+- **Svarene** står som rader i ett hvitt kort med en tynn strek mellom og en pil til høyre, som listene på forsiden. De tykke blå rammene er borte.
+- **«Hos fylkeskommunen»** er en lys flate uten tykk strek til venstre.
+- Ansvar, dokumentasjon og frist, linjen til venstre med fasene og «Hele prosessen» er som før.
+
+| | Før | Etter |
+|---|---|---|
+| Første steg | ![](bilder/fase-8b-p4-for-start.jpg) | ![](bilder/fase-8b-p4-etter-start.jpg) |
+| Slutten på en vei | ![](bilder/fase-8b-p4-for-klage.jpg) | ![](bilder/fase-8b-p4-etter-klage.jpg) |
+
+---
+
 ## Pakke 3: oversiktene i modulene (08.10.2026)
 
 Eier 08.10.2026: kalkulatorene skal ha samme overskrifter som fagarket, og læringen fra pakke 1 og 2 føres videre.

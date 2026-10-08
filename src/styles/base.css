@@ -5209,7 +5209,9 @@ p.fagkort-tittel {
   position: relative;
   /* Toppfeltet er alt med i scroll-padding. Luften over viser det siste punktet på veien, med svaret som ble valgt. */
   scroll-margin-top: 4.5rem;
-  padding: var(--rom-3) var(--rom-4) 0;
+  --steg-topp: var(--rom-3);
+  --steg-side: var(--rom-4);
+  padding: var(--steg-topp) var(--steg-side) 0;
   background: var(--farge-flate);
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
@@ -5237,18 +5239,26 @@ p.fagkort-tittel {
   background: var(--farge-tekst-dempet);
 }
 
+/* Steget og tittelen står på en myk flate i temafargen øverst i kortet, som overskriftene på fagarket og i
+   kalkulatorene (fase 8b, eier 08.10.2026). Flaten går ut til kantene med negative marger, fordi kortet ikke kan skjule
+   det som stikker ut: sirkelen på linjen til venstre står utenfor kortet. */
 .veiviser-stegnr {
   display: flex;
   align-items: center;
   gap: var(--rom-1);
-  margin: 0;
+  margin: calc(-1 * var(--steg-topp)) calc(-1 * var(--steg-side)) 0;
+  padding: var(--steg-topp) var(--steg-side) 0;
+  border-radius: calc(var(--radius-m) - var(--strek)) calc(var(--radius-m) - var(--strek)) 0 0;
+  background: var(--farge-flate-2);
   font-size: var(--str-xs);
   font-weight: 600;
   color: var(--farge-tekst-dempet);
 }
 
 .veiviser-stegtittel {
-  margin: var(--rom-1) 0 var(--rom-2);
+  margin: 0 calc(-1 * var(--steg-side)) var(--rom-3);
+  padding: var(--rom-1) var(--steg-side) var(--rom-3);
+  background: var(--farge-flate-2);
   font-size: var(--str-xl);
   line-height: 1.25;
 }
@@ -5341,9 +5351,7 @@ p.fagkort-tittel {
 /* Boksen «Hos fylkeskommunen» i veiviserstegene (avgjørelse 061). Lukket på mobil, åpen på stor skjerm. */
 .hos-fylket {
   margin: var(--rom-3) 0 var(--rom-2);
-  border: var(--strek) solid var(--farge-kant);
-  border-left: 4px solid var(--farge-lenke);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   background: var(--farge-info-flate);
 }
 
@@ -5668,14 +5676,21 @@ p.fagkort-tittel {
   line-height: 1.35;
 }
 
-/* Svarene står under hverandre på alle skjermer, så knappene får samme bredde og ikke står side om side med ulik
-   høyde (eier 03.10.2026). */
+/* Svarene står under hverandre på alle skjermer (eier 03.10.2026), som rader i ett hvitt kort med en tynn strek
+   mellom, som listene på forsiden (fase 8b, docs/DESIGN.md). */
 .veiviser-svarliste {
   display: grid;
-  gap: var(--rom-2);
   margin: 0;
   padding: 0;
+  overflow: hidden;
   list-style: none;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.veiviser-svarliste > li + li {
+  border-top: var(--strek) solid var(--farge-linje);
 }
 
 /* Overskrift over svar som hører sammen, f.eks. «Fortrinnsrett». */
@@ -5698,18 +5713,18 @@ div + .veiviser-svargruppe {
   justify-content: space-between;
   gap: var(--rom-3);
   min-height: var(--trykkflate);
-  padding: var(--rom-2) var(--rom-3) var(--rom-2) var(--rom-4);
-  border: 2px solid var(--farge-merke);
-  border-radius: var(--radius-m);
-  background: var(--farge-flate);
-  color: var(--farge-lenke);
+  padding: var(--rom-3) var(--rom-3) var(--rom-3) var(--rom-4);
+  color: var(--farge-tekst);
   /* Mindre tekst, så knapper med mye tekst ikke blir så høye (eier 03.10.2026). */
   font-size: var(--str-m);
   font-weight: 600;
   line-height: 1.35;
   text-decoration: none;
-  box-shadow: var(--skygge-knapp);
   transition: background var(--varighet);
+}
+
+.veiviser-svarknapp > .ikon:last-child {
+  color: var(--farge-merke);
 }
 
 .veiviser-svarknapp:hover {
@@ -6121,7 +6136,8 @@ div + .veiviser-svargruppe {
   }
 
   .veiviser-med-faser .veiviser-steg {
-    padding: var(--rom-4) var(--rom-5) 0;
+    --steg-topp: var(--rom-4);
+    --steg-side: var(--rom-5);
   }
 
   .veiviser-med-faser .veiviser-mer {

@@ -79,6 +79,12 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 
 *Eksempler:* delene på temasidene, kortene i Vurdering, kildeboksen.
 
+## Veiviserne
+
+- Et steg er et hvitt kort med steget og tittelen på en myk flate i fargen til veiviseren (`--farge-flate-2` settes per veiviser).
+- Svarene er rader i ett hvitt kort med tynn strek mellom og pil til høyre (`veiviser-svarliste`).
+- Det som er lokalt (fylket, skolen), står på en myk flate uten strek. Lokale tillegg og privatskoler har stiplet kant.
+
 ## Tall og resultater
 
 - **Tallet først og stort** (fet, `--str-xl` eller større, faste sifferbredder), med teksten under eller ved siden av, og eventuelt en dempet linje under det igjen.
