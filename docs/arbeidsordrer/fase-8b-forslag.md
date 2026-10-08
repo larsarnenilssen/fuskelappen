@@ -9,7 +9,7 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 Eier 08.10.2026: kalkulatorene skal ha samme overskrifter som fagarket, og læringen fra pakke 1 og 2 føres videre.
 
 - **Oversiktene** i Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler står i to kolonner på skrivebord. Sidene i modulen står til venstre. Veiviserne, fristene, kalkulatoren og tallene står til høyre.
-- **Rekkefølgen på mobil** følger kolonnene: først venstre, så høyre. I Vurdering og Aktivitetsplikt og skoleregler står veiviseren derfor nederst på mobil, ikke i midten.
+- **Rekkefølgen på mobil** følger kolonnene: først venstre, så høyre. I Vurdering står veiviseren derfor nederst på mobil, ikke ved siden av underveis- og sluttvurdering. I Aktivitetsplikt og skoleregler er rekkefølgen som før (retten, veiviseren, skolereglene), så der står skolereglene til høyre.
 - **Inngangene** har ikonet i en lys blå sirkel, tittelen i tekstfarge og teksten dempet under, som modulene på forsiden. Delene har en strek over og en fet overskrift.
 - **Kort med overskrift:** I kalkulatorene (skjemadelene, resultatet, fordelingen og «Lagrede varianter») og i rubrikkene i Opplæringstilbud, Læreplanverket og Lov og forskrift står overskriften på en lys blå flate. De tykke strekene er borte.
 - **Fagtypene i et tilbud** (fellesfag, felles programfag og yrkesfaglig fordypning) har en prikk i samme farge som i stolpen over. Før var streken grå på grunn av en feil i stilene.
