@@ -4474,20 +4474,52 @@ p.fagkort-tittel {
   margin: 0;
 }
 
+/* Stien øverst på siden (variant D, eier 08.10.2026): hele stien i én rolig, avrundet flate i temafargen, med en pil
+   mellom leddene og lenkene uten understrek. Ikke bobler rundt hvert ledd, som ville ligne fanene og merkene på
+   sidene og gått over flere linjer på mobil. Pilen står midt i teksthøyden. */
 .brodsmuler ol {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  gap: 0 var(--rom-1);
-  margin: 0 0 var(--rom-1);
-  padding: 0;
+  align-items: center;
+  gap: 0.15rem var(--rom-2);
+  max-width: 100%;
+  margin: 0 0 var(--rom-2);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-m);
+  background: var(--farge-flate-2);
   list-style: none;
-  font-size: var(--str-s);
+  font-size: var(--str-xs);
+  line-height: 1.5;
+}
+
+.brodsmuler li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
+  min-width: 0;
 }
 
 .brodsmuler li + li::before {
-  content: '›';
-  margin-right: var(--rom-1);
-  color: var(--farge-tekst-dempet);
+  content: '';
+  flex: none;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-top: 1.5px solid var(--farge-tekst-dempet);
+  border-right: 1.5px solid var(--farge-tekst-dempet);
+  transform: rotate(45deg);
+}
+
+.brodsmuler a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  color: var(--farge-lenke);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brodsmuler a:hover {
+  text-decoration: underline;
 }
 
 .tilpasning {

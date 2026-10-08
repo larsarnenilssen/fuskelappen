@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.44.0] – 2026-10-08
+
 ### Lagt til
 
 - **Videregående i tall med tall fra SSB:** tre temasider, Ungdom og søkere, Skolen og Læreplass og fullføring, med tallene fra Udir og SSB sammen. Hver temaside begynner med «Kort fortalt», tre tall med kilden.
@@ -26,6 +28,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Stien øverst på sidene** står i en rolig, avrundet flate med piler mellom leddene, i hele appen.
 - **Videregående i tall:** Oversikten har nøkkeltallene, tre temakort og fylkene side om side, som står åpen. Figurene står på temasidene.
 - **Tallboksene** på de andre sidene har merkelappen «Videregående i tall» og står etter sidens eget innhold. På Lærlinger og kandidater og fylkessiden sto de øverst.
 - **Kreditering:** SSB står under «Om» med lisensen CC BY 4.0, også for fylkeslisten.

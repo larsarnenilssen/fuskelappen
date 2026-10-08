@@ -2,6 +2,17 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 0.44.0
+    dato: 2026-10-08
+    nytt:
+      - nb: "Videregående i tall har fått tall fra SSB og tre temasider: Ungdom og søkere, Skolen og Læreplass og fullføring."
+        nn: "Vidaregåande i tal har fått tal frå SSB og tre temasider: Ungdom og søkjarar, Skulen og Læreplass og fullføring."
+      - nb: Tallene står også der de er nyttige, for eksempel ungdomskullene på Inntak og lærerne på Arbeidsplan.
+        nn: Tala står òg der dei er nyttige, til dømes ungdomskulla på Inntak og lærarane på Arbeidsplan.
+      - nb: Når det kommer en ny versjon, viser appen hva som er nytt. Dagens jukselapp er merket når den står først.
+        nn: Når det kjem ein ny versjon, viser appen kva som er nytt. Dagens jukselapp er merkt når han står først.
+      - nb: Nye begreper, og stien øverst på sidene har fått et nytt utseende.
+        nn: Nye omgrep, og stien øvst på sidene har fått ein ny utsjånad.
   - versjon: 0.43.0
     dato: 2026-10-08
     nytt:
