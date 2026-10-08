@@ -44,7 +44,7 @@
     - { id: opplaeringslova, punkt: "§ 7-4 sjette ledd (lærekandidater)", url: "https://lovdata.no/lov/2023-06-09-30/§7-4" }
     - { id: opplaeringslova, punkt: "§ 7-1 tredje ledd (reglene for elever når fylkeskommunen har ansvaret)", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
     - { id: opplaeringslova, punkt: "§ 11-1 andre punktum (tilpasset opplæring i lærebedriften)", url: "https://lovdata.no/lov/2023-06-09-30/§11-1" }
-    - { id: udir-ord-og-omgrep, punkt: "Spesialundervisning («Dette omgrepet er no delt i tre ulike omgrep»)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/" }
+    - { id: udir-ord-og-omgrep, punkt: "Spesialundervisning («Dette omgrepet er no delt i tre ulike omgrep»)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ord-og-omgrep/" }
   kontrollert: null
   kontrollsporsmal:
     - "Lagt til etter eiers spørsmål 06.10.2026: Lærekandidater har rettighetene etter § 7-4 sjette ledd. Lærlinger og praksisbrevkandidater har dem bare når fylkeskommunen har ansvaret for opplæringen (§ 7-1 tredje ledd), f.eks. i skole. I lærebedriften gjelder tilpasset opplæring (§ 11-1). Er det riktig at lærlinger i lærebedriften ikke har rett til individuell tilrettelegging etter kapittel 11?"

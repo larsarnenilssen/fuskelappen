@@ -536,7 +536,7 @@
   kilder:
     - { id: opplaeringslova, punkt: "§ 16-1 Rådgiving om utdannings- og yrkesval", url: "https://lovdata.no/lov/2023-06-09-30/§16-1" }
     - { id: opplaeringslova, punkt: "§ 16-2 Rådgiving om sosiale og personlege forhold", url: "https://lovdata.no/lov/2023-06-09-30/§16-2" }
-    - { id: udir-ord-og-omgrep, punkt: "Sosialpedagogisk rådgiving og utdannings- og yrkesrådgiving i tabellen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/" }
+    - { id: udir-ord-og-omgrep, punkt: "Sosialpedagogisk rådgiving og utdannings- og yrkesrådgiving i tabellen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ord-og-omgrep/" }
     - { id: udir-rundskriv-fravarsgrensen, punkt: "3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
   kontrollert: null
   kontrollsporsmal:
