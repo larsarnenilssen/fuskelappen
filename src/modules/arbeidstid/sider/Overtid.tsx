@@ -80,7 +80,7 @@ export default function Overtid() {
               </Utregningskort>
             </>
           ) : (
-            !feil && <ManglerInndata />
+            !feil && <ManglerInndata tittel={tittel} />
           )}
           <Varianter id="overtid" skjema={s} resultat={resultat ? { tittel, verdi: resultat.betaling.verdi, enhet: 'kroner' } : null} onHent={sett} />
         </>

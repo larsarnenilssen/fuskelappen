@@ -4,6 +4,24 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 1: kalkulatorene (08.10.2026)
+
+Testversjonen: https://jukselappen.no/test/ (sammenlign med https://jukselappen.no/).
+
+- **Skjemaet:** hvite kort med tynn kant og titler i tekstfarge. I Arbeidsplan har delene og fagene en prikk i fargen fra diagrammet (D1). «Fag 1» står i kortet, i vanlig skrift.
+- **Valgene:** gule piller. Korte valg (høyst sju tegn, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (D2). Det gjelder alle stedene appen har slike valg, også Opplæringstilbud, Kalender og Elevundersøkelsen. Valget i det mørke toppfeltet på forsiden er som før.
+- **Resultatet:** et hvitt kort med tynn kant. Før noe er fylt inn, står kortet der med en strek og en linje om hva som må fylles inn (D3).
+- **«Lagrede varianter»** står i et kort.
+- **Forklaringene** etter hverandre («Hva tiden brukes til», «Slik regnes grensen», «Slik regnes poengene») står i én boks med en tynn strek mellom.
+
+| | Før | Etter |
+|---|---|---|
+| Arbeidsplan, skrivebord | ![](bilder/fase-8b-p1-for-arbeidsplan.jpg) | ![](bilder/fase-8b-p1-etter-arbeidsplan.jpg) |
+| Fraværsgrensen, skrivebord | ![](bilder/fase-8b-p1-for-fravaer.jpg) | ![](bilder/fase-8b-p1-etter-fravaer.jpg) |
+| Poengberegning, mobil | ![](bilder/fase-8b-p1-for-poeng-m.jpg) | ![](bilder/fase-8b-p1-etter-poeng-m.jpg) |
+
+---
+
 ## Svar på runde 1 (eier 08.10.2026)
 
 > Det nye designet er gjennomgående bedre.

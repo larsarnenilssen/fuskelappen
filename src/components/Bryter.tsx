@@ -1,8 +1,12 @@
-// Segmentert bryter, brukt i kalkulatorene og i Opplæringsløp («Min skole» eller «Alle», avgjørelse 053).
+// Valg mellom noen få alternativer, brukt i kalkulatorene og i Opplæringsløp («Min skole» eller «Alle», avgjørelse 053).
+// Valgene er piller, og korte valg (f.eks. 45, 60, 90 og Annet) avrundede firkanter (fase 8b, docs/DESIGN.md).
 import { useId } from 'preact/hooks';
 
+/** Valg med høyst så mange tegn er korte og får avrundede firkanter i stedet for piller (eier 08.10.2026). */
+const KORT_VALG = 7;
+
 /**
- * Segmentert bryter: et lite utvalg valg side om side (radioknapper).
+ * Et lite utvalg valg side om side (radioknapper).
  * Kompakt: mindre knapper, og etiketten (om den vises) står på samme linje som valgene.
  */
 export function Bryter<V extends string>({
@@ -22,6 +26,7 @@ export function Bryter<V extends string>({
   kompakt?: boolean;
 }) {
   const id = useId();
+  const korte = valg.every((v) => v.tekst.length <= KORT_VALG) ? ' bryter-korte' : '';
   const knapper = (
     <div class="bryter-valg">
       {valg.map((v) => (
@@ -41,7 +46,7 @@ export function Bryter<V extends string>({
   );
   if (kompakt) {
     return (
-      <div class="bryter bryter-kompakt" role="radiogroup" aria-labelledby={`${id}-etikett`}>
+      <div class={`bryter bryter-kompakt${korte}`} role="radiogroup" aria-labelledby={`${id}-etikett`}>
         <span id={`${id}-etikett`} class={skjultLegend ? 'skjult-visuelt' : 'bryter-etikett'}>
           {legend}
         </span>
@@ -50,7 +55,7 @@ export function Bryter<V extends string>({
     );
   }
   return (
-    <fieldset class="bryter">
+    <fieldset class={`bryter${korte}`}>
       <legend class={skjultLegend ? 'skjult-visuelt' : 'bryter-legend'}>{legend}</legend>
       {knapper}
     </fieldset>

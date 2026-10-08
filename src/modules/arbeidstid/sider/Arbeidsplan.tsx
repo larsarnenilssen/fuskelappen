@@ -310,7 +310,7 @@ export default function Arbeidsplan({ sporring }: SideProps) {
               </Utregningskort>
             </>
           ) : (
-            !feil && <ManglerInndata />
+            !feil && <ManglerInndata tittel={iPeriode ? t('arbeidstid.resultat.periodebeskjeftigelse') : t('arbeidstid.resultat.samletBeskjeftigelse')} />
           )}
           {fordeling && (
             <>

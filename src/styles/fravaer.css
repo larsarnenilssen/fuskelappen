@@ -63,10 +63,6 @@
   color: var(--farge-tekst);
 }
 
-.fr-tomt {
-  margin: var(--rom-3) 0;
-}
-
 .fr-veiviserkort {
   margin-top: var(--rom-3);
 }

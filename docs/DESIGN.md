@@ -48,7 +48,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 ## Valgknapper
 
 - **Valg mellom få alternativer** (2–5) er piller: avrundet helt, hvit med tynn kant. Det valgte er gult (`--farge-aksent`) med mørk tekst. Pillene står med litt luft mellom, ikke i én blokk.
-- **Korte valg på én linje i et skjema** (`Bryter kompakt`, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (`--radius-m`), ikke runde piller, med samme farger (eier 08.10.2026).
+- **Korte valg** (høyst sju tegn, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (`--radius-m`), ikke runde piller, med samme farger (eier 08.10.2026). `Bryter` gir dem klassen `bryter-korte` selv.
 - Det samme gjelder faner og filtre på en side (temafanene i Videregående i tall, filtrene i søket og kalenderen).
 - Unntak: valgene i overskriften på panelet på forsiden er rolige tekstknapper med strek under, og valget i det mørke toppfeltet på forsiden beholder sin form.
 - Bryter (av/på) og nedtrekkslister er som før.
@@ -69,7 +69,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 
 - **En del av en side** som kan lukkes, er en `Seksjon`: tynn strek over, tittelen til venstre og en liten pil til høyre. Lukket viser den innholdet på én dempet linje.
 - **Et kort som kan åpnes** (`Innholdskort`, `Lukketkort`) viser tittelen og første setning, med pilen til høyre. Det har regelverket og kildene som lukkede rader nederst (`Kortfot`).
-- **Tilleggsstoff** som ikke er sidens eget innhold, er en lukket rad med ikon og blå tekst, som «Kilder (n)», «I regelverket (n)» og «Slik regnes det ut» (`Forklaring`).
+- **Tilleggsstoff** som ikke er sidens eget innhold, er en lukket rad med ikon og blå tekst, som «Kilder (n)», «I regelverket (n)» og «Slik regnes det ut» (`Forklaring`). Flere slike rader etter hverandre står i én boks, med en tynn strek mellom.
 - Det som er åpent, huskes for siden (`useHusketApen`).
 
 *Eksempler:* delene på temasidene, kortene i Vurdering, kildeboksen.
@@ -79,7 +79,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Tallet først og stort** (fet, `--str-xl` eller større, faste sifferbredder), med teksten under eller ved siden av, og eventuelt en dempet linje under det igjen.
 - Det gjelder alle tall, også nøkkeltallene i Videregående i tall (eier 08.10.2026).
 - Flere tall står side om side på én linje og brytes til neste linje når det ikke er plass.
-- Resultatet i en kalkulator er et hvitt kort med tynn kant som de andre kortene: tittelen i tekstfarge, hovedtallet stort og delresultatene i rader under. «Vis utregning» og «Kopier» står nederst.
+- Resultatet i en kalkulator er et hvitt kort med tynn kant som de andre kortene: tittelen i tekstfarge, hovedtallet stort og delresultatene i rader under. «Vis utregning» og «Kopier» står nederst. Før noe er fylt inn, står det tomme kortet (`Tomtresultat`) på samme plass.
 - Seriefargen (`--serie-1`) markerer det valgte i en figur. Grått er resten.
 
 *Eksempler:* «Kort fortalt», hovedtallene i figurene, tallene i temakortene.

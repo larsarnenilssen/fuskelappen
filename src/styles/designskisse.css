@@ -144,121 +144,7 @@
 
 /* ================================ Ny stil ================================ */
 
-/* ---------- Kort: skjemadelene i kalkulatorene ----------
-   Hvitt kort med tynn kant, ikke tykk farget strek. Tittelen i tekstfarge. Fargen til delen i diagrammet er en prikk
-   foran navnet, bare i Arbeidsplan, der diagrammet har fargene, og bare for delene som har en farge der. */
-.ny-design .skjemadel {
-  border-left: var(--strek) solid var(--farge-kant);
-}
-
-.ny-design .skjemadel-tittel {
-  font-size: var(--str-m);
-  color: var(--farge-tekst);
-}
-
-.ny-design .skjemadel-topp {
-  padding: var(--rom-2) var(--rom-4);
-}
-
-.ny-design .skjemadel-innhold {
-  padding: 0 var(--rom-4) var(--rom-4);
-}
-
-.ny-design :is([data-kalkulator='arbeidsplan'], .designskisse)
-  :is(.skjemadel[data-del='undervisning'], .skjemadel[data-del='funksjoner'], .skjemadel[data-del='tid'])
-  .skjemadel-navn::before {
-  content: '';
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-  margin-right: var(--rom-2);
-  border-radius: 50%;
-  background: var(--del);
-  vertical-align: middle;
-}
-
-/* Fag og funksjoner inni delen: en myk flate uten kant, med tittelen i kortet og i vanlig skrift, ikke på rammen og
-   ikke med store bokstaver. Prikken i fargen fagene har i stolpen. */
-.ny-design .skjemadel .fagkort {
-  margin: var(--rom-3) 0;
-  padding: var(--rom-3);
-  border: 0;
-  border-radius: var(--radius-m);
-  background: var(--farge-bakgrunn);
-}
-
-.ny-design .skjemadel .fagkort-tittel {
-  float: left;
-  width: 100%;
-  margin: 0 0 var(--rom-2);
-  padding: 0;
-  font-size: var(--str-s);
-  color: var(--farge-tekst);
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.ny-design .skjemadel .fagkort-tittel + * {
-  clear: both;
-}
-
-.ny-design .skjemadel :is(.fagkortliste > .fagkort, .funksjonskort) .fagkort-tittel .kortknapp-tekst::before {
-  content: '';
-  display: inline-block;
-  width: 0.625rem;
-  height: 0.625rem;
-  margin-right: var(--rom-2);
-  border-radius: 50%;
-  background: var(--rad);
-  vertical-align: middle;
-}
-
-.ny-design .skjemadel .fagkort-fjern {
-  top: var(--rom-1);
-  right: var(--rom-1);
-  background: none;
-}
-
-/* ---------- Valgknapper: piller ----------
-   Som fanene og filtrene i Videregående i tall og kalenderen: hver for seg, med luft mellom. Det valgte er gult. */
-.ny-design .bryter-valg {
-  gap: var(--rom-2);
-  border: 0;
-  border-radius: 0;
-  overflow: visible;
-}
-
-.ny-design .bryter-valg label {
-  flex: 0 1 auto;
-  min-height: 2.5rem;
-  padding: var(--rom-1) var(--rom-4);
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: 999px;
-  background: var(--farge-flate);
-  color: var(--farge-tekst);
-}
-
-.ny-design .bryter-valg label + label {
-  border-left: var(--strek) solid var(--farge-kant);
-}
-
-.ny-design .bryter-valg label.valgt {
-  border-color: var(--farge-aksent);
-  background: var(--farge-aksent);
-  color: var(--farge-aksent-tekst);
-}
-
-.ny-design .bryter-valg label:focus-within {
-  outline-offset: 2px;
-}
-
-/* Korte valg på én linje i skjemaet (45, 60, 90, Annet): avrundede firkanter, ikke runde piller (eier 08.10.2026). */
-.ny-design .bryter-kompakt .bryter-valg label {
-  min-width: 2.75rem;
-  min-height: 2.25rem;
-  padding: 0 var(--rom-3);
-  border-radius: var(--radius-m);
-}
+/* Kortene i skjemaene, valgknappene og resultatkortet står i base.css fra pakke 1 (kalkulatorene). */
 
 /* ---------- Flater og innganger: oversiktene i modulene ----------
    Delene får en strek over og en fet overskrift i tekstfarge. Inngangene har ikonet i en myk sirkel og tittelen i
@@ -346,8 +232,7 @@
 }
 
 /* ---------- Tall og resultater ----------
-   Tallet først og stort, teksten under. Nøkkeltallene står på hvit flate med en tynn strek mellom, ikke i blå ruter.
-   Resultatkortet har tynn kant som de andre kortene, ikke tykk blå ramme. */
+   Tallet først og stort, teksten under. Nøkkeltallene står på hvit flate med en tynn strek mellom, ikke i blå ruter. */
 .ny-design .nokkeltall-kort {
   padding: var(--rom-3) var(--rom-4);
   border-left: var(--strek) solid var(--farge-kant);
@@ -380,19 +265,4 @@
   font-size: var(--str-s);
   font-weight: 600;
   color: var(--farge-tekst);
-}
-
-.ny-design .resultatkort {
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-m);
-}
-
-.ny-design .resultatkort-tittel {
-  color: var(--farge-tekst);
-}
-
-.ny-design .resultatkort-verdi {
-  font-weight: 800;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.01em;
 }

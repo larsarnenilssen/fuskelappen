@@ -4,6 +4,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Kalkulatorene har fått samme design som de nyeste delene av appen** (Arbeidsplan, Beskjeftigelse, Vikartimer, Overtid, Fraværsgrensen og Poengberegning):
+  - Delene i skjemaet er hvite kort med tynn kant og titler i vanlig tekstfarge, uten de tykke fargede strekene. I Arbeidsplan har delene og fagene en liten prikk i fargen de har i diagrammet.
+  - «Fag 1» står i kortet, i vanlig skrift.
+  - Valgene er gule piller, og korte valg som 45, 60 og 90 er avrundede firkanter. Det samme gjelder valgene i Opplæringstilbud, Kalender og Elevundersøkelsen.
+  - Resultatet står i et kort fra start, også før noe er fylt inn, så kolonnen til høyre ikke står tom på skrivebord.
+  - «Lagrede varianter» står i et kort, og forklaringene under kalkulatoren står samlet i én boks.
+
 ### Rettet
 
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
