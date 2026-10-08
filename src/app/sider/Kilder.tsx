@@ -95,7 +95,7 @@ export default function Kilder() {
           );
         })}
       </ul>
-      <section aria-labelledby="kilder-eier">
+      <section class="lop-del" aria-labelledby="kilder-eier">
         <h2 id="kilder-eier" class="liten-overskrift">
           {t('kildestatus.eier.tittel')}
         </h2>

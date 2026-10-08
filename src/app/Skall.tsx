@@ -33,9 +33,27 @@ function IkkeFunnet() {
     <div class="side">
       <h1 tabIndex={-1}>{t('ikkeFunnet.tittel')}</h1>
       <p>{t('ikkeFunnet.tekst')}</p>
-      <p>
-        <a href="#/">{t('ikkeFunnet.tilForsiden')}</a>
-      </p>
+      {/* Veien videre som rader med ikon og pil, som inngangene på forsiden (fase 8b, docs/DESIGN.md). */}
+      <ul class="liste">
+        <li>
+          <a class="listelenke" href="#/">
+            <Ikon navn="hjem" />
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">{t('ikkeFunnet.tilForsiden')}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+        <li>
+          <a class="listelenke" href="#/sok">
+            <Ikon navn="sok" />
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">{t('ikkeFunnet.sok')}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

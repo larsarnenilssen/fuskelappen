@@ -286,9 +286,17 @@ export default function Innstillinger({ sporring }: SideProps) {
       <p class="innstillinger-kildestatus">
         <KildestatusIndikator />
       </p>
-      <p>
-        <a href="#/om">{t('om.tittel')}</a>
-      </p>
+      <ul class="liste">
+        <li>
+          <a class="listelenke" href="#/om">
+            <Ikon navn="info" />
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">{t('om.tittel')}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

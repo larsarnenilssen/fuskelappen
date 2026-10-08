@@ -73,11 +73,12 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 ## Delene som kan lukkes
 
 - **En del av en side** som kan lukkes, er en `Seksjon`: tynn strek over, tittelen til venstre og en liten pil til høyre. Lukket viser den innholdet på én dempet linje.
-- **Kort med overskrift** (skjemadelene i kalkulatorene, resultatkortet, rubrikkene i Opplæringstilbud, Læreplanverket og Lov og forskrift) har overskriften på en myk flate i temafargen, med innholdet på hvitt under (eier 08.10.2026).
+- **Kort med overskrift** (skjemadelene i kalkulatorene, resultatkortet, rubrikkene i Opplæringstilbud, Læreplanverket og Lov og forskrift, delene i Innstillinger og brukserklæringen i Om appen) har overskriften på en myk flate i temafargen, med innholdet på hvitt under (eier 08.10.2026).
 - **Har delene egne underoverskrifter** (f.eks. fagarket, med ferdighetene, kompetansemålene og vurderingen), er hver del et hvitt kort med overskriften på en myk flate i temafargen, så nivåene skilles (eier 08.10.2026). Underdelene er rader med en tynn strek mellom, og forklaringene inni står med luft over og under.
 - **Et kort som kan åpnes** (`Innholdskort`, `Lukketkort`) viser tittelen og første setning, med pilen til høyre. Det har regelverket og kildene som lukkede rader nederst (`Kortfot`).
 - **Tilleggsstoff** som ikke er sidens eget innhold, er en lukket rad med ikon og blå tekst, som «Kilder (n)», «I regelverket (n)» og «Slik regnes det ut» (`Forklaring`). Flere slike rader etter hverandre står i én boks, med en tynn strek mellom.
 - Det som er åpent, huskes for siden (`useHusketApen`).
+- Et skjema i deler (`fieldset.valggruppe`) har overskriften (`legend`) på den myke flaten i kortet, ikke på rammen. Et vanlig kort får det samme med `kort-med-topp`.
 
 *Eksempler:* delene på temasidene, kortene i Vurdering, kildeboksen.
 

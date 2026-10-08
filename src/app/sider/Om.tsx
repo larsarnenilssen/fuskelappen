@@ -1,5 +1,6 @@
 import { app } from '../../config/app.ts';
 import { Forklaring } from '../../components/Forklaring.tsx';
+import { Ikon } from '../../components/Ikon.tsx';
 import { TekniskInfo } from '../TekniskInfo.tsx';
 import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { useTekst } from '../tilstand.ts';
@@ -15,7 +16,7 @@ export default function Om() {
         {t('om.versjon', { versjon: __APP_VERSJON__ })}
       </p>
 
-      <section class="kort" aria-labelledby="om-erklaering" data-testid="brukserklaering">
+      <section class="kort kort-med-topp" aria-labelledby="om-erklaering" data-testid="brukserklaering">
         <h2 id="om-erklaering">{t('om.erklaering.tittel')}</h2>
         <p>{t('om.erklaering.privat', { app: app.navn })}</p>
         <p>{t('om.erklaering.garanti')}</p>
@@ -26,20 +27,27 @@ export default function Om() {
 
       <Tilbakemelding />
 
-      <section aria-labelledby="om-kilder">
-        <h2 id="om-kilder">{t('om.kilder.tittel')}</h2>
-        <p>
-          <a href="#/om/kilder">{t('om.kilder.lenke')}</a>
-        </p>
+      <section class="lop-del" aria-labelledby="om-kilder">
+        <h2 id="om-kilder" class="liten-overskrift">{t('om.kilder.tittel')}</h2>
+        <ul class="liste">
+          <li>
+            <a class="listelenke" href="#/om/kilder">
+              <span class="listelenke-tekst">
+                <span class="listelenke-tittel">{t('om.kilder.lenke')}</span>
+              </span>
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        </ul>
       </section>
 
-      <section aria-labelledby="om-personvern">
-        <h2 id="om-personvern">{t('om.personvern.tittel')}</h2>
+      <section class="lop-del" aria-labelledby="om-personvern">
+        <h2 id="om-personvern" class="liten-overskrift">{t('om.personvern.tittel')}</h2>
         <p>{t('om.personvern.tekst')}</p>
       </section>
 
-      <section aria-labelledby="om-kreditering">
-        <h2 id="om-kreditering">{t('om.kreditering.tittel')}</h2>
+      <section class="lop-del" aria-labelledby="om-kreditering">
+        <h2 id="om-kreditering" class="liten-overskrift">{t('om.kreditering.tittel')}</h2>
         <p>{t('om.kreditering.tekst')}</p>
         <p>
           <a href="https://data.norge.no/nlod/no/2.0" target="_blank" rel="noopener noreferrer">
