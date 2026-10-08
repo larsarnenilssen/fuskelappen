@@ -4,6 +4,25 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 2: fag og læreplaner (08.10.2026)
+
+Testversjonen: https://jukselappen.no/test/#/fag
+
+- **Fagsøket:** Gruppene (Fellesfag, Felles programfag …) har en tynn strek over og en fet overskrift, uten tykke fargede streker. Fagene i listen har ikke lenger en farget strek til venstre. Fagtypen står fortsatt i farge under navnet («Fellesfag»).
+- **Fagarket:**
+  - Årstimetallet og årsrammen står med tallet først og stort, side om side med en tynn strek mellom (D5).
+  - Delene som kan lukkes, og «Inngår i tilbud», har en strek over, uten ramme (D4).
+  - Faktaboksen og boksene under «Vurderingsordning» er hvite kort med tynn kant, ikke blå flater og ikke strek i fargen til fagtypen.
+- **Også rettet:** Tallboksene og figurene i Videregående i tall sier «i hele landet» med liten h inni setninger (eier 08.10.2026).
+
+| | Før | Etter |
+|---|---|---|
+| Fagsøket, skrivebord | ![](bilder/fase-8b-p2-for-fag.jpg) | ![](bilder/fase-8b-p2-etter-fag.jpg) |
+| Fagarket, skrivebord | ![](bilder/fase-8b-p2-for-fagark.jpg) | ![](bilder/fase-8b-p2-etter-fagark.jpg) |
+| Fagarket med delene åpne, mobil | | ![](bilder/fase-8b-p2-etter-fagark-apen-m.jpg) |
+
+---
+
 ## Pakke 1: kalkulatorene (08.10.2026)
 
 Testversjonen: https://jukselappen.no/test/ (sammenlign med https://jukselappen.no/).

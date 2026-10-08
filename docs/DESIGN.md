@@ -21,7 +21,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Luft inni: `--rom-3` over og under, `--rom-4` på sidene (`--rom-3` på smal skjerm).
 - Rader i et kort skilles med en tynn strek (`--farge-linje`), ikke med egne kort.
 - Et kort som er en lenke, har pilen til høyre. Ikonet står til venstre, i en myk sirkel i temafargen.
-- **Ingen tykke streker til venstre.** En farge som betyr noe, f.eks. delen i diagrammet i Arbeidsplan, vises som en liten rund prikk foran tittelen, som i forklaringene til diagrammene. Der fargen ikke står i et diagram på siden, er det ingen prikk.
+- **Ingen tykke streker til venstre.** En farge som betyr noe, f.eks. delen i diagrammet i Arbeidsplan, vises som en liten rund prikk foran tittelen, som i forklaringene til diagrammene. Der fargen ikke står i et diagram på siden, er det ingen prikk. Fagtypen står i farge som tekst («Fellesfag») og i merket på fagarket, ikke som strek.
 
 *Eksempler:* modulene på forsiden, kalenderen og nyhetene i panelet, figurene i Videregående i tall.
 

@@ -13,6 +13,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Av/på-bryterne er gule når de er på, som valgene, i hele appen.
   - Resultatet står i et kort fra start, også før noe er fylt inn, så kolonnen til høyre ikke står tom på skrivebord.
   - «Lagrede varianter» står i et kort, og forklaringene under kalkulatoren står samlet i én boks.
+- **Fag og læreplaner har fått samme design:**
+  - I fagsøket har gruppene (Fellesfag, Felles programfag …) en tynn strek over og ingen tykke fargede streker. Fagtypen står fortsatt i farge under navnet.
+  - På fagarket står årstimetallet og årsrammen med tallet først og stort, i et hvitt kort.
+  - Delene som kan lukkes («Kompetansemål og læreplan», «Vurderingsordning», «Inngår i tilbud» …) har en strek over, som delene i Videregående i tall.
+  - Fakta om faget og boksene under «Vurderingsordning» er hvite kort med tynn kant.
 
 ### Rettet
 
