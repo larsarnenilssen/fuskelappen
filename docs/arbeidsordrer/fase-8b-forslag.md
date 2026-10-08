@@ -14,6 +14,11 @@ Testversjonen: https://jukselappen.no/test/ (sammenlign med https://jukselappen.
 - **«Lagrede varianter»** står i et kort.
 - **Forklaringene** etter hverandre («Hva tiden brukes til», «Slik regnes grensen», «Slik regnes poengene») står i én boks med en tynn strek mellom.
 
+**Eiers merknader (08.10.2026) og hva som er gjort:**
+- **1 100 timer planfestet tid** i skjermbildene var en testverdi for Vestland som bare finnes i utviklingsmiljøet (`tests/fixtures/regler/sfs2213-fylke-46.yaml`). Appen bruker 1 150 timer fra regelsettet. Skjermbildene er tatt på nytt uten valgt fylke.
+- **«Disponerer læreren selv»:** Teksten under fordelingen sier nå at den ufylte delen av stillingen er fordelt som undervisningen: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og resten er tid læreren disponerer selv. Beregningen er ikke endret.
+- **Bryterne:** Av/på-bryterne er gule med mørk knott når de er på, som de valgte pillene, i hele appen.
+
 | | Før | Etter |
 |---|---|---|
 | Arbeidsplan, skrivebord | ![](bilder/fase-8b-p1-for-arbeidsplan.jpg) | ![](bilder/fase-8b-p1-etter-arbeidsplan.jpg) |

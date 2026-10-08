@@ -1217,15 +1217,16 @@ main {
   background: var(--farge-tekst-dempet);
 }
 
+/* På er gult med mørk knott, som de valgte pillene (eier 08.10.2026, docs/DESIGN.md). */
 .vippe input:checked {
-  background: var(--farge-merke);
-  border-color: var(--farge-merke);
+  background: var(--farge-aksent);
+  border-color: var(--farge-aksent);
 }
 
 .vippe input:checked::after {
   left: auto;
   right: 2px;
-  background: var(--farge-merke-tekst);
+  background: var(--farge-aksent-tekst);
 }
 
 .vippe label {

@@ -281,7 +281,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     lonnMerknadPeriode: 'Løn, tillegg, variabel løn og overtid er det som blir utbetalt for perioden. Løna og tillegga blir rekna frå datoane: heile månader, og arbeidsdagar ÷ 21,67 i brotne månader. Variabel løn og overtid blir rekna med timane i perioden. Feriepengane blir rekna av dette og kjem i tillegg.',
     lonnMerknad: 'Løn, tillegg, variabel løn og overtid er det som blir utbetalt i året. Feriepengane blir rekna av dette og kjem i tillegg.',
     diagramMerknad: 'Diagrammet viser undervisninga og funksjonane som er lagde inn ({prosent} %), som er meir enn stillinga.',
-    ikkeFyltMerknad: 'Delen av stillinga som ikkje er fylt med fag og funksjonar ({prosent} %), er rekna med som anna planfesta tid og tid læraren disponerer sjølv.',
+    ikkeFyltMerknad: 'Delen av stillinga som ikkje er fylt med fag og funksjonar ({prosent} %), er fordelt som undervisninga: ein del er anna planfesta tid, t.d. møte og anna elevretta arbeid, og resten er tid læraren disponerer sjølv.',
   },
   livsfase: {
     tittel: 'Redusert undervisning',

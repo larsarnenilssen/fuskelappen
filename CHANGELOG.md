@@ -10,11 +10,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Delene i skjemaet er hvite kort med tynn kant og titler i vanlig tekstfarge, uten de tykke fargede strekene. I Arbeidsplan har delene og fagene en liten prikk i fargen de har i diagrammet.
   - «Fag 1» står i kortet, i vanlig skrift.
   - Valgene er gule piller, og korte valg som 45, 60 og 90 er avrundede firkanter. Det samme gjelder valgene i Opplæringstilbud, Kalender og Elevundersøkelsen.
+  - Av/på-bryterne er gule når de er på, som valgene, i hele appen.
   - Resultatet står i et kort fra start, også før noe er fylt inn, så kolonnen til høyre ikke står tom på skrivebord.
   - «Lagrede varianter» står i et kort, og forklaringene under kalkulatoren står samlet i én boks.
 
 ### Rettet
 
+- **Arbeidsplan:** Teksten om delen av stillingen som ikke er fylt med fag og funksjoner, sier tydeligere at en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og resten tid læreren disponerer selv.
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
 
 ## [0.44.0] – 2026-10-08

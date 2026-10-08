@@ -51,7 +51,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Korte valg** (høyst sju tegn, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (`--radius-m`), ikke runde piller, med samme farger (eier 08.10.2026). `Bryter` gir dem klassen `bryter-korte` selv.
 - Det samme gjelder faner og filtre på en side (temafanene i Videregående i tall, filtrene i søket og kalenderen).
 - Unntak: valgene i overskriften på panelet på forsiden er rolige tekstknapper med strek under, og valget i det mørke toppfeltet på forsiden beholder sin form.
-- Bryter (av/på) og nedtrekkslister er som før.
+- **Av/på-brytere** (`vippe`) er gule med mørk knott når de er på, som de valgte pillene (eier 08.10.2026). Nedtrekkslister er som før.
 - Ingen mørkeblå fylte flater i innholdet. Mørkeblått er toppfeltet og hovedknappene.
 
 *Eksempler:* fanene på temasidene, «Fylkene / Etter bakgrunn», filtrene i kalenderen.
