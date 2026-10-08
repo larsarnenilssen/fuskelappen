@@ -21,6 +21,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Rettet
 
 - **Kildestatusen:** Statistikkbanken sto som «feilet» når tallene var uendret, og to kilder for Vestland pekte til den gamle adressen vlfk.no.
+- **Lenkene til kildene:** Læreplanverket, Statsforvalteren og Udirs «Ord og omgrep» er flyttet hos kilden og har fått de nye adressene.
 
 ## [0.43.0] – 2026-10-08
 

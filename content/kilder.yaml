@@ -548,7 +548,7 @@ kilder:
   - id: udir-lk20
     navn: Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no
     utgiver: Utdanningsdirektoratet
-    url: https://www.udir.no/lk20/
+    url: https://www.udir.no/laring-og-trivsel/lareplanverket/
     type: side
     niva: nasjonal
     lisens: NLOD 2.0
@@ -655,7 +655,7 @@ kilder:
   - id: udir-ord-og-omgrep
     navn: Ord og omgrep i opplæringslova (nye og gamle begreper)
     utgiver: Utdanningsdirektoratet
-    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ny-opplaringslov/ord-og-omgrep/
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/ord-og-omgrep/
     type: side
     niva: nasjonal
     lisens: NLOD 2.0
@@ -1690,7 +1690,7 @@ kilder:
     navn: Nyheter fra Statsforvalteren (RSS per embete)
     kortnavn: Statsforvalteren
     utgiver: Statsforvalteren
-    url: https://www.statsforvalteren.no/
+    url: https://www.statsforvalteren.no/nb/portal/
     type: data
     niva: nasjonal
     lisens: Ingen lisens oppgitt. Bare tittel, dato, lenke og ingress fra feeden, med lenke til saken.
