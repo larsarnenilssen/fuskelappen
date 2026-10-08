@@ -23,7 +23,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Lenker i en liste** er rader med tittel, en dempet linje under og pil til høyre (`listelenke`), ikke punktlister med understrekede lenker (eier 08.10.2026).
 - **En gruppe i en liste** (f.eks. «Engelsk (2)» i fagsøket) har ikonet i en myk sirkel, så den skiller seg fra radene for hvert element, som ikke har ikon. Gruppene øverst (fagtypene) står på en myk flate i temafargen.
 - **En lenke videre fra et kort** (f.eks. «Regn ut i Arbeidsplan») er en blå lenkelinje nederst i kortet (`panel-videre`), som «Hele kalenderen» på forsiden.
-- Et kort som er en lenke, har pilen til høyre. Ikonet står til venstre, i en myk sirkel i temafargen.
+- Et kort som er en lenke (`frist-inngang`, `Inngang`), har ikonet i en myk sirkel til venstre, tittelen i tekstfarge, teksten dempet under og pilen til høyre, som modulene på forsiden.
 - **Ingen tykke streker til venstre.** En farge som betyr noe, f.eks. delen i diagrammet i Arbeidsplan, vises som en liten rund prikk foran tittelen, som i forklaringene til diagrammene. Der fargen ikke står i et diagram på siden, er det ingen prikk. Fagtypen står i farge som tekst («Fellesfag») og i merket på fagarket, ikke som strek.
 
 *Eksempler:* modulene på forsiden, kalenderen og nyhetene i panelet, figurene i Videregående i tall.
@@ -64,13 +64,14 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Sider med flere deler står i to kolonner fra 64rem (`ToKolonner`): de første delene til venstre (3/5) og resten til høyre (2/5). Rekkefølgen på mobil er den samme.
 - Kildene til siden står nederst i høyre kolonne i en lukket boks (`Kildeboks`). En tallboks fra Videregående i tall står over kildene.
 - **En kolonne står aldri tom.** I kalkulatorene står resultatkortet i høyre kolonne fra start, med en strek der tallet kommer og en kort linje om hva som må fylles inn (eier 08.10.2026).
-- Oversiktene i modulene: ingressen og inngangene til venstre, veiviserne, kalenderen og tallene til høyre.
+- Oversiktene i modulene: ingressen øverst over begge kolonnene, sidene i modulen til venstre, og veiviserne, fristene, kalkulatoren og tallene til høyre.
 
 *Eksempler:* fagarket, temasidene, Mer opplæring, Eksamen.
 
 ## Delene som kan lukkes
 
 - **En del av en side** som kan lukkes, er en `Seksjon`: tynn strek over, tittelen til venstre og en liten pil til høyre. Lukket viser den innholdet på én dempet linje.
+- **Kort med overskrift** (skjemadelene i kalkulatorene, resultatkortet, rubrikkene i Opplæringstilbud, Læreplanverket og Lov og forskrift) har overskriften på en myk flate i temafargen, med innholdet på hvitt under (eier 08.10.2026).
 - **Har delene egne underoverskrifter** (f.eks. fagarket, med ferdighetene, kompetansemålene og vurderingen), er hver del et hvitt kort med overskriften på en myk flate i temafargen, så nivåene skilles (eier 08.10.2026). Underdelene er rader med en tynn strek mellom, og forklaringene inni står med luft over og under.
 - **Et kort som kan åpnes** (`Innholdskort`, `Lukketkort`) viser tittelen og første setning, med pilen til høyre. Det har regelverket og kildene som lukkede rader nederst (`Kortfot`).
 - **Tilleggsstoff** som ikke er sidens eget innhold, er en lukket rad med ikon og blå tekst, som «Kilder (n)», «I regelverket (n)» og «Slik regnes det ut» (`Forklaring`). Flere slike rader etter hverandre står i én boks, med en tynn strek mellom.

@@ -541,6 +541,27 @@ main {
   margin-top: var(--rom-5);
 }
 
+/* Delene på oversiktene i modulene har en strek over og en fet overskrift i tekstfarge (fase 8b, docs/DESIGN.md). */
+.lop-del > .liten-overskrift {
+  margin: 0 0 var(--rom-3);
+  padding-top: var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+/* I to kolonner står den første delen i hver kolonne øverst, uten luft over. */
+@media (min-width: 64rem) {
+  .to-kolonner-hoved > .lop-del:first-child,
+  .to-kolonner-side > .lop-del:first-child {
+    margin-top: 0;
+  }
+
+  /* Inngangene står under hverandre i kolonnene, ikke to og to. */
+  .to-kolonner .lop-innganger,
+  .to-kolonner-side .veiviser-innganger {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .lop-innganger {
   display: grid;
   gap: var(--rom-3);
@@ -1472,6 +1493,10 @@ legend.fagkort-tittel ~ * {
   margin-bottom: 0;
 }
 
+.fordeling-visning.lukket {
+  padding-bottom: 0;
+}
+
 p.fagkort-tittel {
   margin: 0 0 var(--rom-2);
   padding: 0;
@@ -1664,16 +1689,18 @@ p.fagkort-tittel {
 
 /* Diagram og tabell står i et eget kort, med luft mellom tittel, stolpe, fargeforklaring, tabell og merknad. */
 .fordeling-visning {
+  --fordeling-luft: var(--rom-4);
+  overflow: hidden;
   margin: var(--rom-5) 0;
-  padding: var(--rom-4);
+  padding: var(--fordeling-luft);
   border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-m);
   background: var(--farge-flate);
 }
 
 @media (max-width: 29.99rem) {
   .fordeling-visning {
-    padding: var(--rom-3);
+    --fordeling-luft: var(--rom-3);
   }
 }
 
@@ -1694,10 +1721,12 @@ p.fagkort-tittel {
 .fordeling-topp {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: var(--rom-1) var(--rom-3);
-  margin: 0 0 var(--rom-4);
+  margin: calc(-1 * var(--fordeling-luft)) calc(-1 * var(--fordeling-luft)) var(--rom-4);
+  padding: var(--rom-1) var(--fordeling-luft);
+  background: var(--farge-flate-2);
 }
 
 .fordeling-visning .liten {
@@ -1935,6 +1964,7 @@ p.fagkort-tittel {
 
 .resultatkort,
 .tomtresultat {
+  overflow: hidden;
   margin: 0 0 var(--rom-4);
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
@@ -1943,8 +1973,24 @@ p.fagkort-tittel {
 }
 
 .tomtresultat-tittel {
-  margin: var(--rom-1) 0;
+  margin: calc(-1 * var(--rom-3)) calc(-1 * var(--rom-4)) var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
+  background: var(--farge-flate-2);
   font-size: var(--str-m);
+}
+
+/* Overskriften på kortene i resultatkolonnen står på en myk flate i temafargen, som delene i skjemaet (eier
+   08.10.2026). */
+.resultatkort-topp {
+  margin: calc(-1 * var(--rom-3)) calc(-1 * var(--rom-4)) var(--rom-3);
+  padding: var(--rom-1) var(--rom-4);
+  background: var(--farge-flate-2);
+}
+
+.varianter > .med-hjelp:first-child {
+  margin: calc(-1 * var(--rom-3)) calc(-1 * var(--rom-4)) var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
+  background: var(--farge-flate-2);
 }
 
 .tomtresultat-verdi {
@@ -2385,6 +2431,7 @@ p.fagkort-tittel {
    Et hvitt kort som resultatet, med variantene som rader med en tynn strek mellom (fase 8b, docs/DESIGN.md). */
 
 .varianter {
+  overflow: hidden;
   margin: 0 0 var(--rom-4);
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
@@ -3386,10 +3433,12 @@ p.fagkort-tittel {
 }
 /* ---------- Kalkulatorskjema i deler (avgjørelse 033, fase 8b) ----------
    Hver del er et hvitt kort med tynn kant og tittelen i tekstfarge, og kan legges sammen (docs/DESIGN.md). I Arbeidsplan
-   har delene og fagene en prikk i fargen de har i diagrammet, så de kan følges dit (eier 08.10.2026). Fag og funksjoner
-   står som en myk flate inne i delen. */
+   har delene og fagene en prikk i fargen de har i diagrammet, så de kan følges dit (eier 08.10.2026). Overskriften står
+   på en myk flate i temafargen, som delene på fagarket (eier 08.10.2026). Fag og funksjoner står som en myk flate inne
+   i delen. */
 .skjemadel {
   --del: var(--diagram-selv);
+  overflow: hidden;
   margin: 0 0 var(--rom-3);
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
@@ -3414,7 +3463,8 @@ p.fagkort-tittel {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--rom-1) var(--rom-3);
-  padding: var(--rom-2) var(--rom-4);
+  padding: var(--rom-1) var(--rom-4);
+  background: var(--farge-flate-2);
 }
 
 .skjemadel-tittel {
@@ -3490,7 +3540,7 @@ p.fagkort-tittel {
 
 .skjemadel-innhold {
   container-type: inline-size;
-  padding: 0 var(--rom-4) var(--rom-4);
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
 }
 
 .skjemadel-innhold > :last-child {
@@ -3545,7 +3595,7 @@ p.fagkort-tittel {
   }
 
   .skjemadel-innhold {
-    padding: 0 var(--rom-3) var(--rom-3);
+    padding: var(--rom-3) var(--rom-3) var(--rom-3);
   }
 
   .skjemadel .fagkort {
@@ -4293,17 +4343,29 @@ p.fagkort-tittel {
 
 /* ---------- Opplæringsløp (avgjørelse 035 og 036) ---------- */
 /* Rubrikker som kan legges sammen, med kant i fargen til fagtypen. */
+/* En rubrikk er et hvitt kort med overskriften på en myk flate i temafargen, som delene på fagarket (fase 8b, eier
+   08.10.2026). En rubrikk for en fagtype har en prikk i fargen til fagtypen, som i stolpen over, ikke en tykk strek. */
 .rubrikk {
-  --fagtype: var(--farge-kant);
+  overflow: hidden;
   margin: 0 0 var(--rom-3);
   border: var(--strek) solid var(--farge-kant);
-  border-left: 4px solid var(--fagtype);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
 }
 
-.rubrikk[data-fagtype] {
-  --fagtype: var(--fagtype-andre);
+.rubrikk > :first-child {
+  background: var(--farge-flate-2);
+}
+
+.rubrikk[data-fagtype] .rubrikk-tittel .kortknapp-tekst > :first-child::before {
+  content: '';
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: var(--rom-2);
+  border-radius: 50%;
+  background: var(--fagtype);
+  vertical-align: middle;
 }
 
 .rubrikk-tittel {
@@ -4315,7 +4377,7 @@ p.fagkort-tittel {
   display: flex;
   width: 100%;
   min-height: var(--trykkflate);
-  padding: 0 var(--rom-3);
+  padding: 0 var(--rom-4);
 }
 
 .rubrikk-tittel .kortknapp-tekst {
@@ -4340,7 +4402,7 @@ p.fagkort-tittel {
 }
 
 .rubrikk-innhold {
-  padding: 0 var(--rom-3) var(--rom-3);
+  padding: var(--rom-2) var(--rom-4) var(--rom-3);
 }
 
 .rubrikk-innhold > .liste {
@@ -5707,6 +5769,10 @@ div + .veiviser-svargruppe {
   gap: var(--rom-3);
 }
 
+.veiviser-inngang-topp > .ikon {
+  color: var(--farge-tekst-dempet);
+}
+
 .veiviser-inngang-tittel {
   flex: 1;
   min-height: calc(2em * var(--linjehoyde));
@@ -6181,10 +6247,14 @@ button.frist-stripe-celle:hover {
 
 
 /* Kortet på oversiktssiden: lenke til tidslinjen med den neste fristen. */
+/* Et kort som lenker til en side (fase 8b, docs/DESIGN.md): ikonet i en myk sirkel til venstre, tittelen i tekstfarge
+   og teksten dempet under, og pilen til høyre, som modulene på forsiden. Tittelen er `display: contents`, så ikonet og
+   teksten i den står i hver sin kolonne. */
 .frist-inngang {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--rom-2);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.125rem var(--rom-3);
   padding: var(--rom-3) var(--rom-4);
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
@@ -6198,18 +6268,27 @@ button.frist-stripe-celle:hover {
 }
 
 .frist-inngang-tittel {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
+  display: contents;
   font-weight: 700;
-  color: var(--farge-lenke);
+  color: var(--farge-tekst);
+}
+
+.frist-inngang-tittel > .ikon {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  box-sizing: content-box;
+  padding: var(--rom-2);
+  border-radius: 50%;
+  background: var(--farge-flate-2);
+  color: var(--farge-merke);
 }
 
 .frist-inngang-neste {
   display: flex;
   flex-direction: column;
-  grid-column: 1;
+  grid-column: 2;
   font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
 }
 
 .frist-inngang-etikett {
@@ -6222,13 +6301,14 @@ button.frist-stripe-celle:hover {
 
 .frist-inngang-tid {
   font-weight: 700;
+  color: var(--farge-tekst);
 }
 
 .frist-inngang-pil {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1 / span 2;
   align-self: center;
-  color: var(--farge-lenke);
+  color: var(--farge-tekst-dempet);
 }
 
 @media (min-width: 40rem) {

@@ -9,8 +9,6 @@ import { lastTekster } from './core/i18n/tekst.ts';
 
 anvendInnstillinger(tilstand.data.innstillinger);
 startRuting();
-// Skissen til designløftet (fase 8b) finnes ikke i produksjonsbygget.
-if (import.meta.env.MODE !== 'production' || __TESTVERSJON__) void import('./app/designskisse.ts').then((m) => m.startDesignskisse());
 
 // Bare tekstene for målformen brukeren har valgt, lastes ved oppstart (avgjørelse 083). Feiler lastingen, vises appen
 // likevel, med nøklene der tekstene skulle stått, så brukeren kan laste på nytt.

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { oversiktsid } from '../../favoritter.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
@@ -21,43 +22,44 @@ export default function Oversikt() {
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
   const veivisere = innhold ? velgSynlige(innhold.veivisere, sted) : [];
   return (
-    <div class="side">
+    <div class="side side-bred">
       <Sidetopp tittel={t('vurdering.tittel')} favoritt={oversiktsid('vurdering')} />
       <p class="ingress">
         <Begrepstekst tekst={t('vurdering.innledning')} />
       </p>
-      <section class="lop-del" aria-labelledby="vu-del-fag">
-        <h2 class="liten-overskrift" id="vu-del-fag">
-          {t('vurdering.delFag')}
-        </h2>
-        {innhold === null ? (
-          <p class="dempet">{t('app.lasterInn')}</p>
-        ) : (
-          // Kortet for underveis- og sluttvurdering står i samme rutenett som veiviseren, så de får lik bredde.
-          <Veiviserinnganger
-            veivisere={veivisere}
-            rute={veiviserRute}
-            foran={[
-              {
-                id: 'underveis',
-                kort: <Inngang {...UNDERSIDER.underveisSlutt} tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />,
-              },
-            ]}
-          />
-        )}
-      </section>
-      <section class="lop-del" aria-labelledby="vu-del-fravaer">
-        <h2 class="liten-overskrift" id="vu-del-fravaer">
-          {t('vurdering.delFravaer')}
-        </h2>
-        <Inngang {...UNDERSIDER.fravaer} tittel={t('vurdering.fravaer.kort')} tekst={t('vurdering.fravaer.beskrivelse')} />
-      </section>
-      <section class="lop-del" aria-labelledby="vu-del-orden">
-        <h2 class="liten-overskrift" id="vu-del-orden">
-          {t('vurdering.delOrden')}
-        </h2>
-        <Inngang {...UNDERSIDER.orden} tittel={t('vurdering.orden.kort')} tekst={t('vurdering.orden.beskrivelse')} />
-      </section>
+      {/* To kolonner på skrivebord (fase 8b, docs/DESIGN.md): sidene i modulen til venstre, veiviseren til høyre. */}
+      <ToKolonner
+        hoved={
+          <>
+            <section class="lop-del" aria-labelledby="vu-del-fag">
+              <h2 class="liten-overskrift" id="vu-del-fag">
+                {t('vurdering.delFag')}
+              </h2>
+              <Inngang {...UNDERSIDER.underveisSlutt} tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />
+            </section>
+            <section class="lop-del" aria-labelledby="vu-del-fravaer">
+              <h2 class="liten-overskrift" id="vu-del-fravaer">
+                {t('vurdering.delFravaer')}
+              </h2>
+              <Inngang {...UNDERSIDER.fravaer} tittel={t('vurdering.fravaer.kort')} tekst={t('vurdering.fravaer.beskrivelse')} />
+            </section>
+            <section class="lop-del" aria-labelledby="vu-del-orden">
+              <h2 class="liten-overskrift" id="vu-del-orden">
+                {t('vurdering.delOrden')}
+              </h2>
+              <Inngang {...UNDERSIDER.orden} tittel={t('vurdering.orden.kort')} tekst={t('vurdering.orden.beskrivelse')} />
+            </section>
+          </>
+        }
+        side={
+          <section class="lop-del" aria-labelledby="vu-del-veiviser">
+            <h2 class="liten-overskrift" id="vu-del-veiviser">
+              {t('vurdering.delVeiviser')}
+            </h2>
+            {innhold === null ? <p class="dempet">{t('app.lasterInn')}</p> : <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />}
+          </section>
+        }
+      />
     </div>
   );
 }

@@ -18,6 +18,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - På fagarket står årstimetallet og årsrammen med tallet først og stort. «Regn ut i Arbeidsplan» er en lenkelinje nederst i kortet.
   - Delene som kan lukkes («Kompetansemål og læreplan», «Vurderingsordning», «Inngår i tilbud» …) er kort med overskriften på en lys blå flate.
   - «Inngår i tilbud» viser tilbudene som rader med pil, ikke som en punktliste.
+- **Kalkulatorene:** Overskriftene på delene i skjemaet og på kortene i resultatkolonnen står på en lys blå flate, som delene på fagarket.
+- **Oversiktene i modulene** (Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler) står i to kolonner på skrivebord: sidene i modulen til venstre, og veiviserne, fristene, kalkulatoren og tallene til høyre. Inngangene har ikonet i en lys blå sirkel og tittelen i vanlig tekstfarge, som modulene på forsiden, og delene har en strek over.
+- **Kortene som kan lukkes** i Opplæringstilbud, Læreplanverket og Lov og forskrift har overskriften på en lys blå flate i stedet for en tykk strek. Fellesfag, felles programfag og yrkesfaglig fordypning i et tilbud har en prikk i samme farge som i stolpen over.
 
 ### Rettet
 

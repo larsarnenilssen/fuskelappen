@@ -1,6 +1,6 @@
-// Skissen til designløftet (fase 8b, docs/DESIGN.md): før og etter for de viktigste mønstrene. «Før» og «Etter» er de
-// samme komponentene, og «Etter» står inni `.ny-design`, så de nye stilene i designskisse.css gjelder der. Bryteren
-// øverst setter den samme klassen på hele appen. Finnes bare i utvikling, i testene og i testversjonen (ruteliste.ts).
+// Skissen til designløftet (fase 8b, docs/DESIGN.md): før og etter for de viktigste mønstrene, med de samme komponentene
+// som appen. Stilene som ble vist som «Etter», står nå i base.css, så de to er like. Finnes bare i utvikling, i testene
+// og i testversjonen (ruteliste.ts), og fjernes i oppryddingen (pakke 7).
 import type { ComponentChildren } from 'preact';
 import { useId, useState } from 'preact/hooks';
 import { Bryter } from '../../components/Bryter.tsx';
@@ -10,7 +10,7 @@ import { Resultatkort } from '../../components/Resultatkort.tsx';
 import { Tallfelt } from '../../components/Tallfelt.tsx';
 import { Skjemadel } from '../../modules/arbeidstid/komponenter/Skjemadel.tsx';
 import { formaterTall } from '../../core/i18n/tekst.ts';
-import { lesNyStil, settNyStil } from '../designskisse.ts';
+import '../../styles/designskisse.css';
 import { useTekst } from '../tilstand.ts';
 
 type T = ReturnType<typeof useTekst>['t'];
@@ -27,7 +27,7 @@ function Monster({ id, tittel, tekst, children }: { id: string; tittel: string; 
           <p class="ds-merke">{t('utvikling.design.for')}</p>
           {children(false)}
         </div>
-        <div class="ds-side ds-etter ny-design">
+        <div class="ds-side ds-etter">
           <p class="ds-merke">{t('utvikling.design.etter')}</p>
           {children(true)}
         </div>
@@ -285,30 +285,10 @@ function Tall({ t }: { t: T }) {
 
 export default function Designskisse() {
   const { t } = useTekst();
-  const [nyStil, settNy] = useState(lesNyStil);
   return (
     <div class="side side-bred designskisse">
       <h1 tabIndex={-1}>{t('utvikling.design.tittel')}</h1>
       <p class="ingress">{t('utvikling.design.innledning')}</p>
-      <div class="vippe">
-        <input
-          id="ds-ny-stil"
-          type="checkbox"
-          role="switch"
-          aria-describedby="ds-ny-stil-hjelp"
-          checked={nyStil}
-          onChange={(e) => {
-            const pa = e.currentTarget.checked;
-            settNy(pa);
-            settNyStil(pa);
-          }}
-        />
-        <label for="ds-ny-stil">{t('utvikling.design.bryter')}</label>
-      </div>
-      <p id="ds-ny-stil-hjelp" class="dempet liten">
-        {t('utvikling.design.bryterHjelp')}
-      </p>
-
       <Monster id="kort" tittel={t('utvikling.design.kort')} tekst={t('utvikling.design.kortTekst')}>
         {() => <Kalkulatorskjema t={t} />}
       </Monster>
