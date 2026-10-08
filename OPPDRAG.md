@@ -1,6 +1,6 @@
 # OPPDRAG – Jukselappen
 
-**Versjon:** 1.6 · 08.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm). 1.5 → 1.6 (08.10.2026): fase 8 levert, og velkomsten i fase 10 spør om dagens jukselapp)
+**Versjon:** 1.7 · 08.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm). 1.5 → 1.6 (08.10.2026): fase 8 levert, og velkomsten i fase 10 spør om dagens jukselapp. 1.6 → 1.7 (08.10.2026): fase 8b levert i 0.45.0)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -635,7 +635,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 **Kontrollpunkt:** Eier ser gjennom appen på `test/` på mobil og skrivebord og opplever den som én helhet i den nyeste stilen.
 
 - Gjort før fasen (08.10.2026): merker, piler og ikoner ved tekst står midt i teksthøyden i hele appen, og en test sjekker det (avgjørelse 092).
-- Levert på `main` 08.10.2026 (PR #135–#145), ennå ikke i en versjon: prinsippene i `docs/DESIGN.md`, godkjent av eier etter skissen, og alle sju pakkene. I tillegg etter eiers ønsker underveis: samme overskrifter i kalkulatorene som på fagarket, gule svar og like brede knapper med ikon i veiviserne, og streken for landet rett i figurene i Videregående i tall. En test stopper tykke streker til venstre utenfor sitatene, tallboksene og «Kort fortalt». Før og etter for hver pakke står i `docs/arbeidsordrer/fase-8b-forslag.md`. **Venter på eiers kontrollpunkt.**
+- Levert i 0.45.0 (08.10.2026, PR #135–#146): prinsippene i `docs/DESIGN.md`, godkjent av eier etter skissen, og alle sju pakkene. I tillegg etter eiers ønsker underveis: samme overskrifter i kalkulatorene som på fagarket, gule svar og like brede knapper med ikon i veiviserne, og streken for landet rett i figurene i Videregående i tall. En test stopper tykke streker til venstre utenfor sitatene, tallboksene og «Kort fortalt». Etter pakkene (eier 08.10.2026): oversiktene i modulene har sidene til venstre og veiviserne, kalkulatorene, fristene og tallene til høyre, i den rekkefølgen, og kalkulatorene der har en stolpe som viser hva som fylles inn og hva som regnes ut. Forsiden har ikke bildene, og kalkulatorene under «Flere kalkulatorer» er like høye som boksene under «Oppslag». Teksten om undertid i Arbeidsplan er tatt bort. Før og etter for hver pakke står i `docs/arbeidsordrer/fase-8b-forslag.md`. **Fase 8b er levert.**
 
 ### Fase 9 – Lokale regler for fylke og skole
 

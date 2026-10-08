@@ -62,20 +62,12 @@ export interface Faktum {
 }
 
 /** En inngang til modulen på forsiden. Uten innganger står modulen selv som én boks. */
-/**
- * Det lille bildet på en inngang (eier 08.10.2026, `Inngangsbilde`): kalkulatorstolpen med delene som fylles inn og
- * det som regnes ut, eller stolpene for tall og statistikk.
- */
-export type Inngangsbilde = { type: 'kalkulator'; inn: readonly Tekstverdi[]; ut: Tekstverdi } | { type: 'tall' };
-
 export interface Inngang {
   id: string;
   tittel: Tekstverdi;
   beskrivelse?: Tekstverdi;
   rute: string;
   ikon: Ikonnavn;
-  /** Bildet under teksten, for kalkulatorer og tall. */
-  bilde?: Inngangsbilde;
   /** Står i den sammenleggbare boksen under hovedboksene (`flereTittel`), lukket til brukeren åpner den. */
   flere?: boolean;
   /**
@@ -116,8 +108,6 @@ export interface Modulmanifest {
    * har dagen. En modul uten fakta gir en tom liste.
    */
   fakta(): Promise<Faktum[]>;
-  /** Bildet på modulens boks på forsiden når den ikke har egne innganger, f.eks. tall for Elevundersøkelsen. */
-  bilde?: Inngangsbilde;
   /**
    * Boksene modulen har på forsiden under kategorien sin (avgjørelse 030). Uten innganger står modulen som én boks
    * med navn og beskrivelse.

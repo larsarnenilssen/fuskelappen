@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.45.0] – 2026-10-08
+
 ### Endret
 
 - **Kalkulatorene har fått samme design som de nyeste delene av appen** (Arbeidsplan, Beskjeftigelse, Vikartimer, Overtid, Fraværsgrensen og Poengberegning):
@@ -21,7 +23,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Kalkulatorene:** Overskriftene på delene i skjemaet og på kortene i resultatkolonnen står på en lys blå flate, som delene på fagarket.
 - **Oversiktene i modulene** (Vurdering, Tilrettelegging, Eksamen og klage, Opplæringstilbud, Inntak og Aktivitetsplikt og skoleregler) står i to kolonner på skrivebord: sidene i modulen til venstre, og veiviserne, kalkulatorene, fristene og tallene til høyre, i den rekkefølgen og likt i alle modulene. I Inntak, Vurdering, Eksamen og klage og Aktivitetsplikt og skoleregler er veiviserne, kalkulatoren og kalenderen flyttet til høyre. Kalkulatorene har fått en stolpe som veiviserne, som viser hva du fyller inn og hva som regnes ut. Inngangene har ikonet i en lys blå sirkel og tittelen i vanlig tekstfarge, som modulene på forsiden, og delene har en strek over.
 - **Veiviserne:** Steget og tittelen står på en lys flate i fargen til veiviseren. Svarene står som rader i én boks med pil, i stedet for tykke blå rammer. «Hos fylkeskommunen» har ikke lenger en tykk strek.
-- **Forsiden:** Arbeidsplan har en liten kalkulatorstolpe og Elevundersøkelsen små stolper for tall på tittellinjen, uten at boksene blir høyere. Teksten om Arbeidsplan er kortere: «Utregning og illustrasjon av beskjeftigelse og arbeidstid.»
+- **Forsiden:** Teksten om Arbeidsplan er kortere: «Utregning og illustrasjon av beskjeftigelse og arbeidstid.» Kalkulatorene under «Flere kalkulatorer» har korte tekster på én linje og er like høye som boksene under «Oppslag».
 - **Begrepene** står i et hvitt kort med «I regelverket» og «Kilder» som lukkede rader nederst, og «Se også» er rader med pil. Søket i begrepene har forstørrelsesglass.
 - **Kildene nederst på siden** i Lov og forskrift, Overordnet del og Opplæringstilbud står i en lukket boks, som på fagarket, i stedet for en punktliste.
 - **Innstillinger og Om appen:** Delene i Innstillinger er kort med overskriften på en lys blå flate, som i kalkulatorene. På Om appen har brukserklæringen samme overskrift, og delene under har en strek over. Lenkene til Om appen og til kildene er rader med pil.

@@ -16,15 +16,10 @@ test.describe('modulregister og søk', () => {
     await expect(kalkulator.locator('.inngangsbilde-ut')).toContainText('Fraværsgrensen');
   });
 
-  test('forsiden: Arbeidsplan og Elevundersøkelsen har bildet på tittellinjen, de andre kalkulatorene ikke (eier 08.10.2026)', async ({ page }) => {
+  test('forsiden har ikke bildet på kalkulatorene (eier 08.10.2026)', async ({ page }) => {
     await page.goto('./');
-    const arbeidsplan = page.locator('.listelenke', { hasText: 'Arbeidsplan' });
-    await expect(arbeidsplan.locator('.listelenke-tittelrad .inngangsbilde-kalkulator .inngangsbilde-ledd')).toHaveCount(4);
-    // Skjermlesere får delene som tekst i lenken.
-    await expect(arbeidsplan).toContainText('Kalkulatoren regner ut: Samlet beskjeftigelse');
-    const elevundersokelsen = page.locator('.listelenke', { hasText: 'Elevundersøkelsen' });
-    await expect(elevundersokelsen.locator('.listelenke-tittelrad .inngangsbilde-tall .inngangsbilde-stolpe')).toHaveCount(9);
-    await expect(page.locator('.flere-liste .inngangsbilde')).toHaveCount(0);
+    await expect(page.locator('.listelenke', { hasText: 'Arbeidsplan' })).toBeVisible();
+    await expect(page.locator('.inngangsbilde')).toHaveCount(0);
   });
 
   test('testmodulen dukker opp på forsiden i sin kategori', async ({ page }) => {

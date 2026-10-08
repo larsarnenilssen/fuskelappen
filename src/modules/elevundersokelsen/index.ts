@@ -11,8 +11,6 @@ export const manifest: Modulmanifest = {
   beskrivelse: 'moduler.elevundersokelsen.beskrivelse',
   stikkord: ['elevundersøkelsen', 'elevundersøkinga', 'mobbing', 'trivsel', 'læringsmiljø', 'skolemiljø', 'statistikk'],
   ikon: 'vurdering',
-  // Tall fra Elevundersøkelsen: bildet for tall og statistikk på boksen på forsiden (eier 08.10.2026).
-  bilde: { type: 'tall' },
   kategori: 'skolemiljo',
   rekkefolge: 20,
   ruter: [{ sti: ELEVUNDERSOKELSEN_RUTE, tittel: 'elevundersokelsen.tittel', side: () => import('./sider/Elevundersokelsen.tsx') }],

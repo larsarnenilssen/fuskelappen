@@ -2,7 +2,7 @@
 
 Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen står under arbeidsordren.
 
-*Status 08.10.2026:* Skrevet etter at fase 8 ble levert i 0.43.0. Arbeidsordren er klar til bruk.
+*Status 08.10.2026:* Skrevet etter at fase 8 ble levert i 0.43.0, og oppdatert etter at fase 8b (designløftet) ble levert i 0.45.0. Arbeidsordren er klar til bruk.
 
 ---
 
@@ -25,11 +25,11 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
   - om brukserklæringen og merket «Kontrollert» (016)
 
 **Status:**
-- Siste versjon er 0.43.0 (08.10.2026), med dagens jukselapp i panelet øverst på forsiden (avgjørelse 086).
+- Siste versjon er 0.45.0 (08.10.2026), med designløftet i hele appen (fase 8b, `docs/DESIGN.md`). Dagens jukselapp kom i 0.43.0 (avgjørelse 086).
 - Innhold og regelverdier har `gyldighet` (nasjonal, fylke eller skole), og oppslaget går skole → fylke → nasjonal (`hentVerdi` i `src/core/regler/`, `velgSynlige` i `src/core/innhold/status.ts`). Vestland har fylkesinnhold for inntak, eksamen og skoleregler, og alle fylkene har lokale forskrifter fra Lovdata.
 - Fylke og skole velges under Innstillinger og lagres lokalt (`src/core/lagring/lagring.ts`, skjemaversjon 3).
 - Tilbakemeldingen lager en ferdig e-post til appens adresse (avgjørelse 064). Appen sender ingenting selv.
-- Startpakken er 122,8 kB (grense 150 kB). Nye sider og skjemaer lastes når de vises.
+- Startpakken er 127,4 kB (grense 150 kB). Nye sider og skjemaer lastes når de vises.
 
 **Fasen (fra `OPPDRAG.md`):**
 - **Legge inn:** Brukeren kan legge inn en lokal regel for fylket eller skolen sin, i tillegg til de nasjonale (`supplerer`) eller i stedet for en nasjonal verdi (`erstatter`). Regelen gjelder med en gang for brukeren selv, lagres bare på enheten og merkes tydelig som brukerens egen og ikke kontrollert.
@@ -41,6 +41,7 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
 
 **Arbeidsmåte:**
 - Først et forslag med mockup i appen, med skjermbilder på mobil og skrivebord, før noe bygges ferdig. Push til `test` etter hver designrunde.
+- Nye sider, skjemaer og kort følger `docs/DESIGN.md`: et skjema i deler er kort med overskriften på en lys flate (`Skjemadel`, `valggruppe`), valg er gule piller, og innstillinger og merknader bruker mønstrene som finnes. Ingen tykke streker til venstre (testes).
 - Legg fram for meg, med et råd for hvert punkt:
   - hvilke regler og verdier som kan legges inn i første omgang, og hvordan brukeren velger hva regelen gjelder (et kort, en verdi i regelsettet, et steg i en veiviser)
   - hvordan brukerens egne regler vises på sidene og i kalkulatorene, og hvordan de skilles fra godkjent innhold
@@ -59,17 +60,26 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
 
 ## Bakgrunn
 
+### Levert i fase 8b (0.45.0, 08.10.2026)
+
+- **Designløftet:** hele appen i stilen fra sidekolonnen på forsiden, kalenderen, nyhetene og Videregående i tall. Prinsippene står i `docs/DESIGN.md`, før og etter for hver pakke i `docs/arbeidsordrer/fase-8b-forslag.md`.
+- **Innstillinger** er kort med overskriften på en lys flate (`fieldset.valggruppe`). De lokale reglene i fase 9 hører hjemme der, ved valget av fylke og skole, og skal se ut som de andre delene.
+- **Oversiktene i modulene:** sidene til venstre, og veiviserne, kalkulatorene, fristene og tallene til høyre, i den rekkefølgen (testes i `modul-og-sok.spec.ts`). Kalkulatorene der har en stolpe som viser hva som fylles inn og hva som regnes ut (`Kalkulatorinngang`). Forsiden har ikke slike bilder.
+- **Veiviserne:** Svarene brukeren har gitt, står med gul bakgrunn.
+- **Tester som vokter designet:** tykke streker til venstre (`tests/unit/designregler.test.ts`), og streken for landet i figurene (`statistikk.spec.ts`).
+
 ### Levert i fase 8 (0.43.0, 08.10.2026)
 
 - **Dagens jukselapp** er en fjerde visning i panelet øverst på forsiden. Den er av fra start og slås på under «Tilpass» eller Innstillinger. Første besøk hver dag står panelet på jukselappen (avgjørelse 086).
 - Modulene gir fakta gjennom `fakta()` i manifestet. Fakta med `gyldighet` for et fylke vises bare når fylket er valgt. Godkjente lokale regler fra fase 9 kan komme med i jukselappen av seg selv når de står i innholdet med riktig `gyldighet`.
 - Velkomsten i fase 10 skal spørre om brukeren vil slå på dagens jukselapp (`OPPDRAG.md`, eier 08.10.2026).
 
-### Åpent etter fase 8
+### Åpent etter fase 8 og 8b
 
 - **Eiers kontroll:** Faktaene i jukselappen kommer fra innhold som ikke er kontrollert ennå (eier har sagt ja til å vise dem). Innholdet fra fase 7, 7b og 8 tas i kontrollrundene.
 - **Utvalget av paragrafer** i jukselappen er kapittel 5, 10, 11, 12 og 13 i opplæringslova og kapittel 4, 9 og 10 i opplæringsforskrifta (`UTVALG` i `src/modules/lov/fakta.ts`). Eier kan be om flere eller færre.
 - **Kilder som ikke er med:** `docs/KILDER-IKKE-MED.md`. Trøndelag og Østfold fylkeskommune er fortsatt ikke med i nyhetene.
+- **Eiers kontrollpunkt for fase 8b:** eier ser gjennom appen på mobil og skrivebord. Ønsker om justeringer kan komme underveis i fase 9.
 
 ### Tekniske hensyn
 
@@ -78,3 +88,4 @@ Vi starter fase 9 i Jukselappen: **Lokale regler for fylke og skole** (repo `lar
 - Innmeldingen må ha en fast form som Claude kan legge inn uten å tolke (regel, nivå, fylke eller skole, forhold, tekst, kilde og datoer).
 - Repoet er offentlig. Alt som godkjennes, blir offentlig.
 - Nye tekster i `src/strings/` på bokmål og nynorsk. Farger bare i `tokens.css`.
+- Lokale ende-til-ende-tester: Playwright bruker en `vite preview` som allerede kjører på port 4173 i stedet for å bygge på nytt. Stopp en gammel server før en kjøring, ellers testes et gammelt bygg.

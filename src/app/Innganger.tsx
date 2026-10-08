@@ -2,7 +2,6 @@
 // «flere» i en boks som er lukket til brukeren åpner den. Hvilke bokser som er åpne, huskes for siden.
 import { useId } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
-import { Inngangsbilde } from '../components/Inngangsbilde.tsx';
 import { useSammenlagt } from '../components/Sammenlegg.tsx';
 import { visTekst } from '../core/i18n/tekst.ts';
 import { innganger } from '../modules/register.ts';
@@ -17,22 +16,7 @@ function Lenke({ inngang, modul }: { inngang: Inngang; modul: string }) {
     <a class="listelenke" href={`#${valgt?.rute ?? inngang.rute}`} data-modul={modul}>
       <Ikon navn={inngang.ikon} />
       <span class="listelenke-tekst">
-        {inngang.bilde ? (
-          // Bildet står på tittellinjen, til høyre for tittelen, så boksen ikke blir høyere (eier 08.10.2026).
-          <span class="listelenke-tittelrad">
-            <span class="listelenke-tittel">{valgt?.tittel ?? visTekst(inngang.tittel, malform)}</span>
-            <Inngangsbilde
-              kompakt
-              bilde={
-                inngang.bilde.type === 'tall'
-                  ? inngang.bilde
-                  : { type: 'kalkulator', inn: inngang.bilde.inn.map((x) => visTekst(x, malform)), ut: visTekst(inngang.bilde.ut, malform) }
-              }
-            />
-          </span>
-        ) : (
-          <span class="listelenke-tittel">{valgt?.tittel ?? visTekst(inngang.tittel, malform)}</span>
-        )}
+        <span class="listelenke-tittel">{valgt?.tittel ?? visTekst(inngang.tittel, malform)}</span>
         {inngang.beskrivelse && <span class="listelenke-under">{visTekst(inngang.beskrivelse, malform)}</span>}
       </span>
       <Ikon navn="hoyre" class="ikon-liten" />

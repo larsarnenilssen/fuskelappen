@@ -44,7 +44,7 @@ export function kategorierMedModuler() {
 /** Boksene modulen har på forsiden. Uten egne innganger er modulen selv én boks. */
 export function innganger(m: Modulmanifest): Inngang[] {
   if (m.innganger) return m.innganger;
-  return [{ id: `modul:${m.id}`, tittel: m.navn, ...(m.beskrivelse ? { beskrivelse: m.beskrivelse } : {}), rute: m.ruter[0]?.sti ?? '/', ikon: m.ikon, ...(m.bilde ? { bilde: m.bilde } : {}) }];
+  return [{ id: `modul:${m.id}`, tittel: m.navn, ...(m.beskrivelse ? { beskrivelse: m.beskrivelse } : {}), rute: m.ruter[0]?.sti ?? '/', ikon: m.ikon }];
 }
 
 /** Adressen uten spørreparametre («/opplaeringslop/skoler?skole=1» → «/opplaeringslop/skoler»). */

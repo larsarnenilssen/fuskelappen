@@ -52,7 +52,6 @@ export const manifest: Modulmanifest = {
     beskrivelse: `arbeidstid.kalkulatorer.${k.id}.forside` as Tekstnokkel,
     rute: k.rute,
     ikon: k.ikon,
-    ...(k.bilde ? { bilde: { type: 'kalkulator' as const, ...k.bilde } } : {}),
     flere: i > 0,
   })),
   flereTittel: 'arbeidstid.kalkulatorer.flere',
