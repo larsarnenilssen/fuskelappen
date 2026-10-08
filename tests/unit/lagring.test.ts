@@ -63,6 +63,13 @@ describe('lagring', () => {
     expect(lesLagret(lager)).toEqual({ data, status: 'ok' });
   });
 
+  it('husker dagen brukeren gikk fra dagens jukselapp til sin egen visning, uten ny skjemaversjon', () => {
+    const lager = new MinneLager();
+    const data = { ...standard(), forside: { ...standard().forside, jukselapp: true, visning: 'nyheter', jukselappForlatt: '2026-10-08' } };
+    expect(skrivLagret(lager, data)).toBe(true);
+    expect(lesLagret(lager)).toEqual({ data, status: 'ok' });
+  });
+
   it('tåler ødelagte data og feil i lagringen', () => {
     const lager = new MinneLager();
     lager.setItem(LAGRINGSNOKKEL, '{ikke json');

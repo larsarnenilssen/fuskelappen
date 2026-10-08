@@ -27,6 +27,13 @@ describe('berørte ende-til-ende-tester', () => {
     expect(velgTester(['src/modules/vurdering/fakta.ts']).speker).toEqual(['jukselapp', 'laerlinger', 'vurdering']);
     expect(velgTester(['src/core/jukselapp/fakta.ts']).speker).toContain('jukselapp');
     expect(velgTester(['src/app/Jukselappkort.tsx']).speker).toContain('jukselapp');
+    expect(velgTester(['src/app/Forsidepanel.tsx']).speker).toContain('jukselapp');
+  });
+
+  it('meldingen om ny versjon og punktene gir testen for den', () => {
+    expect(velgTester(['content/versjoner.yaml'])).toEqual({ speker: ['nyversjon'], ruter: [], grunner: ['content/versjoner.yaml: meldingen om ny versjon'] });
+    expect(velgTester(['src/components/Overlegg.tsx']).speker).toContain('nyversjon');
+    expect(velgTester(['src/app/Oppdateringsvarsel.tsx']).speker).toContain('nyversjon');
   });
 
   it('en endret test kjøres selv', () => {

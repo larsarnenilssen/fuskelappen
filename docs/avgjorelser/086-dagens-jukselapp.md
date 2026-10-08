@@ -19,3 +19,5 @@
 - **Lasting:** Kortet, stilene (`jukselapp.css`, avgjørelse 082) og utvalget lastes når jukselappen vises. Er den av, lastes ingenting.
 
 **Konsekvens:** En ny modul kommer med av seg selv når manifestet har `fakta()`, og typesjekken krever funksjonen. En test sjekker at faktaene har tekst på begge målformene, kilder i kilderegisteret og en adresse i appen. Startpakken økte med om lag 2 kB.
+
+**Tillegg 08.10.2026 (variant B):** Første besøk på dagen er valgene i overskriften byttet ut med det gule merket «Dagens jukselapp» og lenken «Tilbake til …» brukerens egen visning. Brukerens visning blir ikke lenger overskrevet: dagen brukeren går tilbake, lagres i `forside.jukselappForlatt`, og valgene står som vanlig resten av dagen. Har brukeren valgt jukselappen selv blant valgene, står valgene som vanlig uten merket. `jukselappVist` fra 0.43.0 leses ikke lenger.

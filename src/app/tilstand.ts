@@ -184,16 +184,16 @@ export function vekslSkjultGruppe(id: string): void {
 }
 
 /**
- * Slår dagens jukselapp av eller på (fase 8). Slått på blir den visningen i panelet øverst på forsiden, så brukeren ser
- * den med en gang.
+ * Slår dagens jukselapp av eller på (fase 8). Slått på står den i panelet øverst på forsiden som dagens jukselapp, med
+ * «Tilbake til …» brukerens egen visning, så brukeren ser den med en gang.
  */
 export function settJukselapp(jukselapp: boolean): void {
-  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp, ...(jukselapp ? { visning: 'jukselapp' } : {}) } }));
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp } }));
 }
 
-/** Første besøk en ny dag: panelet står på dagens jukselapp, og datoen huskes (alternativ C, avgjørelse 086). */
-export function visJukselappForst(dato: string): void {
-  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, visning: 'jukselapp', jukselappVist: dato } }));
+/** «Tilbake til …» fra dagens jukselapp: panelet står på brukerens egen visning resten av dagen. */
+export function forlatJukselapp(dato: string): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselappForlatt: dato } }));
 }
 
 /** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */

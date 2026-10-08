@@ -42,6 +42,9 @@ export const nn: Tekster = {
       nyheter: 'Nyheiter',
       itall: 'I tal',
       jukselapp: 'Jukselapp',
+      dagens: 'Dagens jukselapp',
+      tilbake: { neste: 'Tilbake til kalenderen', nyheter: 'Tilbake til nyheitene', itall: 'Tilbake til tala' },
+      tilbakeKort: { neste: 'Til kalenderen', nyheter: 'Til nyheitene', itall: 'Til tala' },
       nyheterTittel: 'Siste nytt',
     },
     visISidekolonne: 'Vis {gruppe} i sidekolonna',
@@ -435,10 +438,13 @@ export const nn: Tekster = {
     },
   },
   oppdatering: {
-    klar: 'Ny versjon er klar.',
-    oppdater: 'Oppdater',
+    klar: 'Ny versjon er klar',
     lukk: 'Seinare',
     offlineKlar: 'Appen kan no brukast utan nett.',
+    merke: 'Ny versjon',
+    tittel: 'Nytt i versjon {versjon}',
+    oppdaterNa: 'Oppdater no',
+    liten: 'Det tek nokre sekund. Det du har lagra i appen, blir liggjande.',
   },
   moduler: {
     inntak: {
