@@ -15,3 +15,5 @@
 - **Kildestatus:** Nyhetskildene har sjekkmetoden `nyheter` i kilderegisteret. Kildesjekken leser statusen fra nyhetsfilen og melder en kilde som feilet når den har feilet eller gitt null saker i mer enn to dager.
 
 **Konsekvens:** Publiseringen går hver dag i stedet for hver uke. Det er om lag fem minutter i Actions per dag. Nyhetene er aldri mer enn et døgn gamle, og ingenting annet i appen endres uten PR. En kilde som endrer formatet, gir status `tom` i stedet for en tom liste.
+
+**Tillegg 08.10.2026:** Den første planlagte kjøringen ble hoppet over av GitHub, så nyhetene var fra dagen før. Arbeidsflyten kjører nå også kl. 08.17 og 13.17 norsk sommertid (06.17 og 11.17 UTC). Bare nye saker committes og publiseres, og saken om nyhetskilder får bare en kommentar når noe nytt er galt, så flere kjøringer gir ikke flere varsler.

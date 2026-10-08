@@ -11,8 +11,12 @@
 name: Nyheter
 
 on:
+  # GitHub kan utsette eller hoppe over planlagte kjøringer (den første natten, 08.10.2026, ble hoppet over). Derfor
+  # tre kjøringer om dagen: hentingen er den samme hver gang, og bare nye saker committes og publiseres.
   schedule:
     - cron: '47 3 * * *' # hver dag kl. 05.47 norsk sommertid (04.47 vintertid)
+    - cron: '17 6 * * *' # 08.17 sommertid, om den første ble hoppet over
+    - cron: '17 11 * * *' # 13.17 sommertid, så nyhetene fra formiddagen kommer med
   workflow_dispatch:
   pull_request:
     paths:
