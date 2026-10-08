@@ -4,6 +4,27 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Pakke 7: opprydding (08.10.2026)
+
+- **Skissesiden** (`#/utvikling/design`) er fjernet med ruten, stilene og tekstene.
+- **De siste tykke strekene til venstre** er byttet ut:
+  - Delene i «Et trygt og godt skolemiljø» har overskriften på en lys blå flate.
+  - «Om veien» i Lærlinger og kandidater er et kort med overskrift, som brukserklæringen i Om appen.
+  - Utfallet i fraværsgrensen står i en boks med tynn kant i statusfargen, som statusboksen i Kilder.
+  - Fag nummer to i samme økt i Arbeidsplan, merknaden når årsrammen er skrevet inn selv, valget av vei og steget du står på i «Hele prosessen» har ikke lenger strek.
+  - Tykke streker er bare igjen i sitatene, tallboksene og «Kort fortalt». En ny test (`tests/unit/designregler.test.ts`) stopper nye andre steder.
+- **Ubrukte stiler** er fjernet (`flis`, `flis-rutenett`, `favoritt-knapper`, `arsramme-plass` og `fagark-kort`), og «Om veien» bruker `kort-med-topp` i stedet for en egen variant.
+- **D5, tallet først:** Flisene i Videregående i tall har tallet først og stort, med teksten under.
+- Den mørkeblå linjen nederst i kalkulatorene på mobil er beholdt. Den er en knapp som går til resultatet, ikke innhold.
+
+| | Før | Etter |
+|---|---|---|
+| Videregående i tall | ![](bilder/fase-8b-p7-for-tall.jpg) | ![](bilder/fase-8b-p7-etter-tall.jpg) |
+| Et trygt og godt skolemiljø | ![](bilder/fase-8b-p7-for-k12.jpg) | ![](bilder/fase-8b-p7-etter-k12.jpg) |
+| Om veien | ![](bilder/fase-8b-p7-for-vei.jpg) | ![](bilder/fase-8b-p7-etter-vei.jpg) |
+
+---
+
 ## Veiviserne og streken for landet (08.10.2026)
 
 Eier 08.10.2026: «Gi Start på nytt et ikon og still de to knappene side om side. Inkluder gul merking for svarene som er gitt øverst i veien.» Og: streken for landet i Videregående i tall er brutt.
