@@ -16,10 +16,10 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from '../Forsidegruppe.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
-import { Forsidepanel, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
+import { Forsidepanel, JUKSELAPPVISNING, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
-import { JUKSELAPP, JUKSELAPP_SKISSE, Jukselapptips, Jukselappverktoy, useDagensJukselapp } from '../Jukselapp.tsx';
-import { nullstillForside, settBareFavoritter, settJukselapp, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
+import { JUKSELAPP_SKISSE, Jukselappbryter } from '../Jukselapp.tsx';
+import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
 
@@ -172,22 +172,6 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
   );
 }
 
-/** SKISSE (fase 8, variant A): dagens jukselapp som egen rubrikk, med knappen som slår den av i overskriften. */
-function JukselappGruppe() {
-  const { t } = useTekst();
-  const { forside } = useTilstand();
-  const { sammendrag, innhold } = useDagensJukselapp();
-  const lukket = forside.lukket.includes(JUKSELAPP);
-  return (
-    <Gruppe id={JUKSELAPP} tittel={t('forside.jukselapp.tittel')} sammendrag={sammendrag} lukket={lukket} verktoy={<Jukselappverktoy />}>
-      {innhold}
-    </Gruppe>
-  );
-}
-
-/** SKISSE: variant B (fjerde visning i panelet) vises med #/?jukselapp=panel. */
-const jukselappIPanelet = () => JUKSELAPP_SKISSE && typeof location !== 'undefined' && location.hash.includes('jukselapp=panel');
-
 /** Rekkefølgen på gruppene, med dra og slipp og piler. */
 /**
  * «Tilpass»: rekkefølgen på gruppene. Når sidekolonnen brukes (skrivebord), står «Neste datoer» og favorittene i en egen
@@ -197,7 +181,7 @@ const jukselappIPanelet = () => JUKSELAPP_SKISSE && typeof location !== 'undefin
 function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; kolonnePa: boolean }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
-  const iKolonnen = (id: string) => id === PANEL || id === FAVORITTER || id === JUKSELAPP;
+  const iKolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sorterbar = (utvalg: string[], etikett: string) => (
     <Sorterbar
       etikett={etikett}
@@ -216,11 +200,11 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
           {t(`forside.tilpass.visning.${v.id}`)}
         </label>
       ))}
+      {/* Den samme bryteren som under Innstillinger (eier 08.10.2026). */}
       {JUKSELAPP_SKISSE && (
-        <label class="avkrysning tilpass-neste">
-          <input type="checkbox" checked={!!forside.jukselapp} onChange={() => settJukselapp(!forside.jukselapp)} />
-          {t('forside.jukselapp.tilpass')}
-        </label>
+        <div class="tilpass-jukselapp">
+          <Jukselappbryter id="tilpass-jukselapp" />
+        </div>
       )}
     </fieldset>
   );
@@ -276,15 +260,11 @@ export default function Forside() {
     };
   }, []);
   const kategorier = kategorierMedModuler();
-  // SKISSE (fase 8): dagens jukselapp står først som egen rubrikk (variant A), eller som visning i panelet (variant B).
-  const jukselappPa = JUKSELAPP_SKISSE && forside.jukselapp === true;
-  const iPanelet = jukselappIPanelet();
-  const grupper = ordneGrupper([...(jukselappPa && !iPanelet ? [JUKSELAPP] : []), PANEL, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
+  const grupper = ordneGrupper([PANEL, FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
   const kategoriForModul = new Map(kategorier.flatMap((k) => k.moduler.map((m) => [m.id, k.id] as const)));
   const navn = (id: string) => {
     const k = kategorier.find((x) => x.id === id);
     if (id === PANEL) return t(VISNINGER.length > 2 ? 'forside.panel.navnMedNyheter' : 'forside.panel.navn');
-    if (id === JUKSELAPP) return t('forside.jukselapp.tittel');
     return k ? t(k.navn) : t('forside.favoritter');
   };
   const bare = forside.bareFavoritter;
@@ -300,10 +280,13 @@ export default function Forside() {
   // Visningene i panelet som brukeren har slått på (avgjørelse 081). Med «Bare favoritter» står de som er favoritter,
   // hver for seg, i stedet for kortene sine.
   const skjult = forside.skjult ?? [];
-  const paa = [...VISNINGER.filter((v) => !skjult.includes(v.id)), ...(jukselappPa && iPanelet ? [{ id: 'jukselapp' as const, ikon: 'dokument' as const, favoritt: null }] : [])];
-  const somFavoritt = paa.filter((v) => v.favoritt !== null && favoritter.includes(v.favoritt));
+  // SKISSE (fase 8): dagens jukselapp er den fjerde visningen når brukeren har slått den på (eier 08.10.2026).
+  const jukselappPa = JUKSELAPP_SKISSE && forside.jukselapp === true;
+  const paa = [...VISNINGER.filter((v) => !skjult.includes(v.id)), ...(jukselappPa ? [JUKSELAPPVISNING] : [])];
+  // Jukselappen har ingen side å være favoritt. Med «Bare favoritter» står den likevel når den er slått på.
+  const somFavoritt = paa.filter((v) => (v.favoritt !== null && favoritter.includes(v.favoritt)) || v.id === 'jukselapp');
   const visesSomVisning = (f: string) => somFavoritt.some((v) => v.favoritt === f);
-  const iSidekolonnen = (id: string) => id === PANEL || id === FAVORITTER || id === JUKSELAPP;
+  const iSidekolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sidegrupper = grupper.filter(iSidekolonnen);
   const hovedgrupper = grupper.filter((id) => !iSidekolonnen(id));
 
@@ -311,7 +294,6 @@ export default function Forside() {
     const lukket = forside.lukket.includes(id);
     // Panelet øverst. Med «Bare favoritter» står visningene som er favoritter, hver som sin egen gruppe (eier 07.10.2026).
     if (id === PANEL) return bare ? somFavoritt.map((v) => <Visningsgruppe key={v.id} id={v.id} />) : <Forsidepanel key={id} visninger={paa.map((v) => v.id)} />;
-    if (id === JUKSELAPP) return <JukselappGruppe key={id} />;
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
@@ -378,7 +360,6 @@ export default function Forside() {
       {!erAktivtSok(sporring) && (
         <>
           <Stedmerknad />
-          {JUKSELAPP_SKISSE && !tilpass && <Jukselapptips />}
 
           {tilpass ? (
             <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} kolonnePa={kolonnePa} />

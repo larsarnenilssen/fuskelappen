@@ -1,8 +1,44 @@
 # Forslag: fase 8 – Dagens jukselapp
 
-*Status 07.10.2026:* Runde 1 lagt fram for eier. Skissen ligger i testversjonen: https://jukselappen.no/test/. Variant B (fjerde visning i panelet) vises med https://jukselappen.no/test/#/?jukselapp=panel.
+*Status 08.10.2026:* Runde 2 lagt fram for eier. Skissen ligger i testversjonen: https://jukselappen.no/test/. Slå på jukselappen under «Tilpass» eller Innstillinger.
 
 Til eier. Svar gjerne punkt for punkt (f.eks. «J1 ja, men uten paragrafer, J4 A»). Rundene står med den nyeste øverst.
+
+---
+
+## Runde 2: dine svar 08.10.2026
+
+- **Plass:** B, en fjerde visning i panelet. Variant A og adressen `?jukselapp=panel` er tatt bort.
+- **Ingen rad på forsiden** som slår den på. Bryteren står under Innstillinger og under «Tilpass», den samme begge steder. Slått på blir «Jukselapp» valgt i panelet, så den vises med en gang.
+- **Velkomsten:** I fase 10 har velkomsten fått et trinn som spør om brukeren vil slå på dagens jukselapp (`OPPDRAG.md`).
+- **Oppsettet** er som kalenderen, nyhetene og tallene, uten gul kant:
+  - en boks med tittelen i halvfet og faktumet i liten skrift, og typen i dempet skrift under
+  - «I regelverket» og «Kilder» som lukkede rader
+  - den blå linjen nederst, med «Ny jukselapp» til venstre og lenken til stedet i appen til høyre
+- **Fakta:** Typene er godkjent, og fakta som ikke er kontrollert, kan vises. I skissen er det lagt til hovedtariffavtalen (ferie og overtid) og mer fra overordnet del (de fem grunnleggende ferdighetene, de tre tverrfaglige temaene samt profesjonsfellesskap og skoleutvikling). Skissen har nå 15 fakta.
+- **Bytte:** hver dag, og med knappen.
+- **Med «Bare favoritter»:** Jukselappen kan ikke være favoritt, så den står som egen gruppe når den er slått på.
+
+Panelet med jukselappen er om lag 235 px høyt på mobil (390 px), mot 337 px for kalenderen. Boksen blir høyere når kildene åpnes.
+
+| | Mobil | Skrivebord |
+|---|---|---|
+| Jukselapp i panelet | ![](bilder/fase-8-r2-mobil.png) | ![](bilder/fase-8-r2-skrivebord.png) |
+| 320 px, nynorsk | ![](bilder/fase-8-r2-mobil320-nn.png) | |
+| «Tilpass» og Innstillinger | ![](bilder/fase-8-r2-tilpass-mobil.png) | ![](bilder/fase-8-innstillinger-mobil.png) |
+
+### J7. Et tredje alternativ?
+
+Ulempen med B er at panelet husker visningen. Den som bruker kalenderen, ser sjelden jukselappen. To måter å løse det på:
+
+- **C: Jukselappen først én gang om dagen.** Første gang forsiden åpnes en ny dag, står panelet på «Jukselapp». Bytter brukeren visning, gjelder valget resten av dagen. Det er ikke noe nytt element på forsiden, og ett trykk tar deg til kalenderen. Appen husker datoen jukselappen sist ble vist, lokalt.
+- **D: En linje nederst i panelet.** Under kalenderen, nyhetene og tallene står én linje: «Dagens jukselapp: Ferie …», som bytter til jukselappen. Den er alltid synlig, men er et nytt element på forsiden, som du ikke ønsket.
+
+**Mitt råd:** B som nå, eventuelt med C. Si fra om du vil ha C, så legger jeg det inn i skissen.
+
+### J8. Teksten under bryteren
+
+«Ett faktum fra appen hver dag, med lenke og kilde. Den står øverst på forsiden, ved siden av kalenderen, nyhetene og tallene.» Under «Tilpass» står bryteren under valgene for kalenderen, nyhetene og tallene. Greit?
 
 ---
 

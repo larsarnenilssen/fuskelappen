@@ -600,6 +600,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
   - Modulene bidrar med fakta gjennom en ny funksjon i manifestet (som `frister()`), så nye moduler kommer med av seg selv. Fakta hentes fra innholdet, regelsettene og dataene appen alt har. Det gjøres ingen kall til eksterne tjenester, og alt virker uten nett.
   - Innhold for fylke og skole vises bare når brukeren har valgt fylket eller skolen. Teksten står på bokmål og nynorsk.
   - Når den er av, kan forsiden ha en kort tekst med en knapp som slår på dagens jukselapp. Teksten kan lukkes for godt.
+  - *(Eier 08.10.2026:)* Ingen tekst på forsiden som slår den på. Bryteren står under Innstillinger og under «Tilpass» på forsiden, og velkomsten i fase 10 spør om brukeren vil slå den på.
 
 **Åpne punkter (avklares i fasen, før det bygges)**
 
@@ -652,8 +653,9 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
   3. **Fylke og skole:** hva valget gjør, og valget kan gjøres i trinnet.
   4. **Lokale regler:** at brukeren kan melde inn regler for eget fylke eller egen skole (fase 9), med lenke dit.
   5. **Hvem du er:** rollen og hva brukeren vil bruke appen til, med anbefalte favoritter som kan legges til. Trinnet viser også hvordan favorittene virker. Kan være ett eller flere trinn.
-  6. **Installere appen** på mobil eller skrivebord.
-  7. **Takk:** appen er et privat prosjekt laget med hjelp av KI, og innspill om feil, mangler og forbedringer er velkomne (lenke til Tilbakemelding). Takk, og «Du er klar!».
+  6. **Dagens jukselapp:** spørsmål om brukeren vil slå på dagens jukselapp (fase 8), med bryteren i trinnet *(eier 08.10.2026)*.
+  7. **Installere appen** på mobil eller skrivebord.
+  8. **Takk:** appen er et privat prosjekt laget med hjelp av KI, og innspill om feil, mangler og forbedringer er velkomne (lenke til Tilbakemelding). Takk, og «Du er klar!».
 - Tekstene står på bokmål og nynorsk.
 
 **Utgangspunkt (forslag fra Claude, godtatt som utgangspunkt av eier 07.10.2026)**

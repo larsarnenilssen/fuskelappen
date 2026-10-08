@@ -1,18 +1,15 @@
 // Dagens jukselapp på forsiden (fase 8): ett faktum fra appen, med lenke til stedet der det står og kilden.
+// Jukselappen er en visning i panelet øverst på forsiden (eier 08.10.2026, avgjørelse 081).
 // SKISSE til eier: faktaene står i jukselappSkisse.ts til `fakta()` i manifestene er bygget. Skissen finnes bare i
 // testversjonen og i utvikling.
 import type { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import { Ikon } from '../components/Ikon.tsx';
 import { iDag } from '../data/skolear.ts';
 import type * as Kortmodul from './Jukselappkort.tsx';
-import { lukkJukselappTips, settJukselapp, useTekst, useTilstand } from './tilstand.ts';
+import { settJukselapp, useTekst, useTilstand } from './tilstand.ts';
 
 /** Skissen vises bare i testversjonen og i utvikling, til eier har godkjent designet. */
 export const JUKSELAPP_SKISSE = __TESTVERSJON__ || import.meta.env.MODE !== 'production';
-
-/** Gruppen med dagens jukselapp i rekkefølgen på forsiden. */
-export const JUKSELAPP = 'jukselapp';
 
 /**
  * Dagens faktum og kortet som viser det. Kortet og faktaene lastes når jukselappen vises, så de ikke er med i
@@ -32,42 +29,25 @@ export function useDagensJukselapp(): { sammendrag: string; innhold: JSX.Element
   }, []);
   if (!m) return { sammendrag: t('app.lasterInn'), innhold: <p class="dempet">{t('app.lasterInn')}</p> };
   const f = m.velgFaktum(m.synligeFakta(m.SKISSEFAKTA, innstillinger.fylke, innstillinger.skole?.id ?? null), iDag(), ekstra);
-  return { sammendrag: f?.tekst[malform] ?? t('forside.jukselapp.tom'), innhold: <m.Jukselappkort f={f} onNy={() => settEkstra(ekstra + 1)} /> };
-}
-
-/** Knappen i overskriften som slår jukselappen av. */
-export function Jukselappverktoy() {
-  const { t } = useTekst();
-  return (
-    <button type="button" class="ikonknapp gruppe-endre" aria-label={t('forside.jukselapp.slaAv')} title={t('forside.jukselapp.slaAv')} onClick={() => settJukselapp(false)}>
-      <Ikon navn="lukk" class="ikon-liten" />
-    </button>
-  );
+  return { sammendrag: f ? `${f.tittel[malform]}: ${f.tekst[malform]}` : t('forside.jukselapp.tom'), innhold: <m.Jukselappkort f={f} onNy={() => settEkstra(ekstra + 1)} /> };
 }
 
 /**
- * Teksten som slår på dagens jukselapp når den er av (eier 04.10.2026). Den kan lukkes for godt. Etter at brukeren
- * har slått jukselappen av, sier den hvor den slås på igjen.
+ * Bryteren som slår dagens jukselapp av og på. Den samme står under Innstillinger og under «Tilpass» på forsiden (eier
+ * 08.10.2026). Slått på vises jukselappen i panelet øverst på forsiden.
  */
-export function Jukselapptips() {
+export function Jukselappbryter({ id }: { id: string }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
-  if (forside.jukselapp || forside.jukselappTipsLukket) return null;
-  const avslatt = forside.jukselapp === false;
   return (
-    <div class="jukselapp-tips">
-      <span class="jukselapp-tips-merke" aria-hidden="true">
-        <Ikon navn="dokument" class="ikon-liten" />
-      </span>
-      <p>
-        {avslatt ? t('forside.jukselapp.tipsAv') : t('forside.jukselapp.tips')}
+    <>
+      <div class="vippe">
+        <input id={id} type="checkbox" role="switch" checked={!!forside.jukselapp} aria-describedby={`${id}-hjelp`} onChange={() => settJukselapp(!forside.jukselapp)} />
+        <label for={id}>{t('forside.jukselapp.innstilling')}</label>
+      </div>
+      <p id={`${id}-hjelp`} class="dempet liten">
+        {t('forside.jukselapp.innstillingHjelp')}
       </p>
-      <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => settJukselapp(true)}>
-        {t('forside.jukselapp.slaPa')}
-      </button>
-      <button type="button" class="ikonknapp" aria-label={t('forside.jukselapp.lukkTips')} title={t('forside.jukselapp.lukkTips')} onClick={lukkJukselappTips}>
-        <Ikon navn="lukk" class="ikon-liten" />
-      </button>
-    </div>
+    </>
   );
 }

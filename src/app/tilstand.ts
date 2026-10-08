@@ -183,14 +183,12 @@ export function vekslSkjultGruppe(id: string): void {
   });
 }
 
-/** Slår dagens jukselapp på forsiden av eller på (fase 8). */
+/**
+ * Slår dagens jukselapp av eller på (fase 8). Slått på blir den visningen i panelet øverst på forsiden, så brukeren ser
+ * den med en gang.
+ */
 export function settJukselapp(jukselapp: boolean): void {
-  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp } }));
-}
-
-/** Lukker teksten som slår på dagens jukselapp, for godt (fase 8). */
-export function lukkJukselappTips(): void {
-  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselappTipsLukket: true } }));
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp, ...(jukselapp ? { visning: 'jukselapp' } : {}) } }));
 }
 
 /** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */

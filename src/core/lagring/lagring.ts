@@ -45,8 +45,6 @@ export const forsideSkjema = z.strictObject({
   visning: z.optional(z.string()),
   /** Dagens jukselapp på forsiden (fase 8). Av fra start, så den mangler til brukeren slår den på. */
   jukselapp: z.optional(z.boolean()),
-  /** Brukeren har lukket teksten som slår på dagens jukselapp, for godt (fase 8). */
-  jukselappTipsLukket: z.optional(z.boolean()),
 });
 
 export const lagretSkjema = z.strictObject({

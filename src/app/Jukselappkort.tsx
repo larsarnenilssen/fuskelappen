@@ -1,7 +1,7 @@
 // Kortet med dagens jukselapp (fase 8). Lastes når jukselappen vises, med faktaene, så Kortfot og kildene ikke kommer
 // med i startpakken.
 import { Ikon } from '../components/Ikon.tsx';
-import { Kortfot } from '../components/Kortfot.tsx';
+import { KortfotRader } from '../components/Kortfot.tsx';
 import type { Faktum } from './jukselappSkisse.ts';
 import { useTekst } from './tilstand.ts';
 
@@ -27,27 +27,41 @@ export function synligeFakta(fakta: readonly Faktum[], fylke: string | null, sko
   return fakta.filter((f) => !f.fylke || (f.fylke === fylke && (!f.skole || f.skole === skole)));
 }
 
-/** Kortet: typen og modulen, knappen for ny jukselapp, faktumet, lenken videre og kildene. */
+/**
+ * Jukselappen i panelet, med samme oppsett som kalenderen, nyhetene og tallene (eier 08.10.2026): en boks med tittelen
+ * og faktumet i liten skrift, typen under, regelverket og kildene som lukkede rader, og den blå linjen nederst med
+ * knappen for ny jukselapp og lenken til stedet i appen.
+ */
 export function Jukselappkort({ f, onNy }: { f: Faktum | undefined; onNy: () => void }) {
   const { t, malform } = useTekst();
-  if (!f) return <p class="dempet">{t('forside.jukselapp.tom')}</p>;
   return (
-    <article class="kort jukselapp" aria-live="polite">
-      <div class="jukselapp-topp">
-        <p class="jukselapp-type">
-          <Ikon navn={f.ikon} class="ikon-liten" />
-          <span>{[f.type[malform], f.sted].filter(Boolean).join(' · ')}</span>
-        </p>
-        <button type="button" class="ikonknapp jukselapp-ny" aria-label={t('forside.jukselapp.ny')} title={t('forside.jukselapp.ny')} onClick={onNy}>
+    <div class="panel-boks jl-panel">
+      {f ? (
+        <div class="jl-innhold" aria-live="polite">
+          <h3 class="jl-tittel">{f.tittel[malform]}</h3>
+          <p class="jl-tekst">{f.tekst[malform]}</p>
+          <p class="jl-under">{[f.type[malform], f.sted].filter(Boolean).join(' · ')}</p>
+        </div>
+      ) : (
+        <p class="dempet panel-tom">{t('forside.jukselapp.tom')}</p>
+      )}
+      {f && (
+        <div class="jl-rader">
+          <KortfotRader kilder={f.kilder} nokkel={`jukselapp:${f.id}`} />
+        </div>
+      )}
+      <div class="panel-videre jl-videre">
+        <button type="button" class="lenkeknapp liten jl-ny" onClick={onNy}>
           <Ikon navn="igjen" class="ikon-liten" />
+          {t('forside.jukselapp.ny')}
         </button>
+        {f && (
+          <a class="jl-lenke" href={`#${f.rute}`}>
+            <span>{f.lenke[malform]}</span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        )}
       </div>
-      <p class="jukselapp-tekst">{f.tekst[malform]}</p>
-      <a class="panel-videre jukselapp-videre" href={`#${f.rute}`}>
-        <span class="panel-videre-tekst">{f.lenke[malform]}</span>
-        <Ikon navn="hoyre" class="ikon-liten" />
-      </a>
-      <Kortfot kilder={f.kilder} nokkel={`jukselapp:${f.id}`} />
-    </article>
+    </div>
   );
 }

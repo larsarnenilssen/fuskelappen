@@ -8309,73 +8309,90 @@ a.panel-videre:hover .panel-videre-tekst {
   }
 }
 
-/* SKISSE (fase 8): dagens jukselapp. Kortet har en gul kant øverst, som lappen i logoen. */
-.jukselapp {
-  border-top: 4px solid var(--farge-aksent);
-  overflow: hidden;
+/* SKISSE (fase 8): dagens jukselapp, en visning i panelet øverst på forsiden med samme oppsett som kalenderen,
+   nyhetene og tallene (eier 08.10.2026). Boksen blir høyere når regelverket eller kildene åpnes. */
+.jl-panel {
+  max-height: none;
 }
 
-.jukselapp-topp {
+.jl-innhold {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--rom-2);
-  margin: calc(-1 * var(--rom-2)) calc(-1 * var(--rom-3)) 0 0;
+  flex-direction: column;
+  gap: var(--rom-1);
+  padding: var(--rom-2) var(--rom-3);
 }
 
-.jukselapp-type {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-2);
+.jl-tittel {
   margin: 0;
-  color: var(--farge-tekst-dempet);
   font-size: var(--str-s);
   font-weight: 600;
 }
 
-.jukselapp-ny {
-  color: var(--farge-lenke);
+.jl-tekst {
+  margin: 0;
+  font-size: var(--str-s);
+  line-height: 1.35;
 }
 
-.jukselapp-tekst {
-  margin: 0 0 var(--rom-3);
-  font-size: var(--str-l);
-  line-height: 1.45;
+.jl-under {
+  margin: 0;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
 }
 
-.jukselapp-videre {
-  margin-inline: calc(-1 * var(--rom-4));
-  padding-inline: var(--rom-4) var(--rom-3);
+.jl-rader {
   border-top: var(--strek) solid var(--farge-linje);
 }
 
-.jukselapp-videre + .kortfot {
-  margin-top: 0;
-}
-
-/* Teksten som slår jukselappen på, når den er av: én rolig rad under stedet. */
-.jukselapp-tips {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
-  margin: 0 0 var(--rom-4);
-  padding: var(--rom-2) var(--rom-1) var(--rom-2) var(--rom-3);
-  background: var(--farge-flate);
-  border: var(--strek) solid var(--farge-kant);
-  border-left: 4px solid var(--farge-aksent);
-  border-radius: var(--radius-m);
+.jl-rader .forklaring-knapp {
+  min-height: 2.75rem;
+  padding-block: var(--rom-1);
   font-size: var(--str-s);
 }
 
-.jukselapp-tips > p {
-  flex: 1;
-  margin: 0;
+.jl-rader .kildeliste,
+.jl-rader .paragraflenker {
+  padding-inline: var(--rom-3);
 }
 
-.jukselapp-tips-merke {
-  display: none;
+.jl-videre {
+  border-top: var(--strek) solid var(--farge-linje);
 }
 
-.jukselapp-tips > .knapp {
+.jl-ny {
   flex: none;
+  gap: var(--rom-2);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.jl-ny:hover,
+.jl-lenke:hover > span {
+  text-decoration: underline;
+}
+
+/* Bredden 0 og resten av plassen: en lang tittel kortes av med «…» i stedet for å gjøre boksen bredere. */
+.jl-lenke {
+  display: inline-flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--rom-1);
+  width: 0;
+  min-width: 0;
+  min-height: 2.75rem;
+  color: var(--farge-lenke);
+  text-align: right;
+  text-decoration: none;
+}
+
+.jl-lenke > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tilpass-jukselapp {
+  margin-top: var(--rom-3);
 }

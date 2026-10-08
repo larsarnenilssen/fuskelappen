@@ -11,6 +11,8 @@ export interface Faktum {
   /** Fylket eller skolen, når faktumet bare gjelder der. */
   sted?: string;
   ikon: Ikonnavn;
+  /** Tittelen på elementet faktumet er hentet fra, f.eks. «Årsverk». */
+  tittel: Flerspraak;
   tekst: Flerspraak;
   /** Lenken videre, f.eks. «Mer om årsverk». */
   lenke: Flerspraak;
@@ -24,6 +26,7 @@ export interface Faktum {
 export const SKISSEFAKTA: Faktum[] = [
   {
     id: 'begreper:arsverk',
+    tittel: { nb: 'Årsverk', nn: 'Årsverk' },
     type: { nb: 'Begrep', nn: 'Omgrep' },
     ikon: 'bok',
     tekst: {
@@ -36,6 +39,7 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'fag:MAT1019',
+    tittel: { nb: 'Matematikk 1P', nn: 'Matematikk 1P' },
     type: { nb: 'Fag', nn: 'Fag' },
     ikon: 'skole',
     tekst: {
@@ -51,6 +55,7 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'eksamen:fe-klagefrist',
+    tittel: { nb: 'Klagefrist på standpunkt og eksamen', nn: 'Klagefrist på standpunkt og eksamen' },
     type: { nb: 'Frist', nn: 'Frist' },
     ikon: 'kalender',
     tekst: {
@@ -63,18 +68,20 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'laereplanverket:2.3',
+    tittel: { nb: 'Grunnleggende ferdigheter', nn: 'Grunnleggjande ferdigheiter' },
     type: { nb: 'Overordnet del', nn: 'Overordna del' },
     ikon: 'lag',
     tekst: {
-      nb: 'Skolen skal legge til rette for og støtte elevenes utvikling av de fem grunnleggende ferdighetene gjennom hele opplæringsløpet.',
-      nn: 'Skolen skal leggje til rette for og støtte elevane si utvikling av dei fem grunnleggjande ferdigheitene gjennom heile opplæringsløpet.',
+      nb: 'Læreplanverket definerer fem grunnleggende ferdigheter: lesing, skriving, regning, muntlige ferdigheter og digitale ferdigheter.',
+      nn: 'Læreplanverket definerer fem grunnleggjande ferdigheiter: lesing, skriving, rekning, munnlege ferdigheiter og digitale ferdigheiter.',
     },
-    lenke: { nb: '2.3 Grunnleggende ferdigheter', nn: '2.3 Grunnleggjande ferdigheiter' },
+    lenke: { nb: 'Overordnet del 2.3', nn: 'Overordna del 2.3' },
     rute: '/laereplanverket/overordnet-del/2.3',
     kilder: [{ id: 'udir-overordnet-del', punkt: '2.3 Grunnleggende ferdigheter' }],
   },
   {
     id: 'vurdering:fr-teller',
+    tittel: { nb: 'Fravær som teller mot grensen', nn: 'Fråvær som tel mot grensa' },
     type: { nb: 'Regel', nn: 'Regel' },
     ikon: 'vurdering',
     tekst: {
@@ -87,6 +94,7 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'lov:opplaeringslova/12-2',
+    tittel: { nb: 'Retten til eit trygt og godt skolemiljø', nn: 'Retten til eit trygt og godt skolemiljø' },
     type: { nb: 'Paragraf', nn: 'Paragraf' },
     ikon: 'paragraf',
     // Lovteksten gjengis uoversatt, på nynorsk som den er vedtatt.
@@ -100,6 +108,7 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'inntak:po-vg1',
+    tittel: { nb: 'Poeng til Vg1', nn: 'Poeng til Vg1' },
     type: { nb: 'Inntak', nn: 'Inntak' },
     ikon: 'inngang',
     tekst: {
@@ -112,6 +121,7 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'statistikk:gjennomforing',
+    tittel: { nb: 'Gjennomføring', nn: 'Gjennomføring' },
     type: { nb: 'I tall', nn: 'I tal' },
     sted: 'Vestland',
     fylke: '46',
@@ -126,18 +136,20 @@ export const SKISSEFAKTA: Faktum[] = [
   },
   {
     id: 'skolemiljo:k12-hvem',
+    tittel: { nb: 'Hvem kapittel 12 gjelder for', nn: 'Kven kapittel 12 gjeld for' },
     type: { nb: 'Skolemiljø', nn: 'Skulemiljø' },
     ikon: 'person',
     tekst: {
       nb: 'Kapittel 12 i opplæringslova gjelder ikke for lærlinger og lærekandidater i bedrift. De har arbeidsmiljøloven.',
       nn: 'Kapittel 12 i opplæringslova gjeld ikkje for lærlingar og lærekandidatar i bedrift. Dei har arbeidsmiljølova.',
     },
-    lenke: { nb: 'Et trygt og godt skolemiljø', nn: 'Eit trygt og godt skulemiljø' },
+    lenke: { nb: 'Kapittel 12', nn: 'Kapittel 12' },
     rute: '/skolemiljo/trygt-og-godt-skolemiljo',
     kilder: [{ id: 'opplaeringslova', punkt: '§ 12-1', url: 'https://lovdata.no/lov/2023-06-09-30/§12-1' }],
   },
   {
     id: 'inntak:fr-vl-voksne-host',
+    tittel: { nb: 'Voksne bør søke for oppstart om høsten', nn: 'Vaksne bør søkje for oppstart om hausten' },
     type: { nb: 'Frist', nn: 'Frist' },
     sted: 'Vestland',
     fylke: '46',
@@ -146,12 +158,13 @@ export const SKISSEFAKTA: Faktum[] = [
       nb: 'Det er ingen søknadsfrist for voksne i Vestland, men søkeren bør søke innen 1. mars for tilbud som starter om høsten.',
       nn: 'Det er ingen søknadsfrist for vaksne i Vestland, men søkjaren bør søkje innan 1. mars for tilbod som startar om hausten.',
     },
-    lenke: { nb: 'Vestland fylkeskommune', nn: 'Vestland fylkeskommune' },
+    lenke: { nb: 'Vestland', nn: 'Vestland' },
     rute: '/fylker/46',
     kilder: [{ id: 'vestland-forskrift-inntak', punkt: '§ 4-1 første ledd', url: 'https://lovdata.no/forskrift/2020-09-29-3380/§4-1' }],
   },
   {
     id: 'opplaeringslop:vei-laerling',
+    tittel: { nb: 'Lærling', nn: 'Lærling' },
     type: { nb: 'Opplæringsløp', nn: 'Opplæringsløp' },
     ikon: 'vei',
     tekst: {
@@ -161,5 +174,57 @@ export const SKISSEFAKTA: Faktum[] = [
     lenke: { nb: 'Lærling', nn: 'Lærling' },
     rute: '/opplaeringslop/laerlinger-og-kandidater/laerling',
     kilder: [{ id: 'opplaeringslova', punkt: '§ 5-2 tredje ledd', url: 'https://lovdata.no/lov/2023-06-09-30/§5-2' }],
+  },
+  {
+    id: 'laereplanverket:2.5',
+    tittel: { nb: 'Tverrfaglige temaer', nn: 'Tverrfaglege tema' },
+    type: { nb: 'Overordnet del', nn: 'Overordna del' },
+    ikon: 'lag',
+    tekst: {
+      nb: 'Skolen skal legge til rette for læring innenfor de tre tverrfaglige temaene folkehelse og livsmestring, demokrati og medborgerskap, og bærekraftig utvikling.',
+      nn: 'Skolen skal leggje til rette for læring innanfor dei tre tverrfaglege temaa folkehelse og livsmeistring, demokrati og medborgarskap, og berekraftig utvikling.',
+    },
+    lenke: { nb: 'Overordnet del 2.5', nn: 'Overordna del 2.5' },
+    rute: '/laereplanverket/overordnet-del/2.5',
+    kilder: [{ id: 'udir-overordnet-del', punkt: '2.5 Tverrfaglige temaer' }],
+  },
+  {
+    id: 'laereplanverket:3.5',
+    tittel: { nb: 'Profesjonsfellesskap og skoleutvikling', nn: 'Profesjonsfellesskap og skuleutvikling' },
+    type: { nb: 'Overordnet del', nn: 'Overordna del' },
+    ikon: 'lag',
+    tekst: {
+      nb: 'Skolen skal være et profesjonsfaglig fellesskap der lærere, ledere og andre ansatte reflekterer over felles verdier, og vurderer og videreutvikler sin praksis.',
+      nn: 'Skolen skal vere ein profesjonsfagleg fellesskap der lærarar, leiarar og andre tilsette reflekterer over felles verdiar, og vurderer og vidareutviklar praksisen sin.',
+    },
+    lenke: { nb: 'Overordnet del 3.5', nn: 'Overordna del 3.5' },
+    rute: '/laereplanverket/overordnet-del/3.5',
+    kilder: [{ id: 'udir-overordnet-del', punkt: '3.5 Profesjonsfellesskap og skoleutvikling' }],
+  },
+  {
+    id: 'lov:hovedtariffavtalen/hta-ferie',
+    tittel: { nb: 'Ferie', nn: 'Ferie' },
+    type: { nb: 'Hovedtariffavtalen', nn: 'Hovudtariffavtalen' },
+    ikon: 'dokument',
+    tekst: {
+      nb: 'Undervisningspersonale tar hele ferien, fem uker, sammenhengende fram til siste virkedag i juli, med mindre noe annet er bestemt etter drøftinger med den enkelte.',
+      nn: 'Undervisningspersonale tek heile ferien, fem veker, samanhengande fram til siste yrkedag i juli, med mindre noko anna er bestemt etter drøftingar med den enkelte.',
+    },
+    lenke: { nb: 'HTA § 7', nn: 'HTA § 7' },
+    rute: '/lov/hovedtariffavtalen/hta-ferie',
+    kilder: [{ id: 'ks-hovedtariffavtalen', punkt: 'Kap. 1 § 7 (7.1–7.4)', url: 'https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=23' }],
+  },
+  {
+    id: 'lov:hovedtariffavtalen/hta-overtid',
+    tittel: { nb: 'Overtid', nn: 'Overtid' },
+    type: { nb: 'Hovedtariffavtalen', nn: 'Hovudtariffavtalen' },
+    ikon: 'dokument',
+    tekst: {
+      nb: 'Pålagt arbeid ut over den ordinære arbeidstiden er overtid, og overtid skal begrenses mest mulig. For undervisningspersonalet gjelder egne bestemmelser i SFS 2213 punkt 5.2.',
+      nn: 'Pålagt arbeid ut over den ordinære arbeidstida er overtid, og overtid skal avgrensast mest mogleg. For undervisningspersonalet gjeld eigne føresegner i SFS 2213 punkt 5.2.',
+    },
+    lenke: { nb: 'HTA § 6', nn: 'HTA § 6' },
+    rute: '/lov/hovedtariffavtalen/hta-overtid',
+    kilder: [{ id: 'ks-hovedtariffavtalen', punkt: 'Kap. 1 § 6 (6.1–6.4)', url: 'https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=20' }],
   },
 ];

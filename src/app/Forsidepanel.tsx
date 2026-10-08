@@ -39,6 +39,9 @@ export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string
   { id: 'itall', ikon: 'sammenlign', favoritt: oversiktsid('statistikk') },
 ];
 
+/** SKISSE (fase 8): dagens jukselapp, som er med når brukeren har slått den på, og ikke kan være favoritt. */
+export const JUKSELAPPVISNING: { id: Visning; ikon: Ikonnavn; favoritt: string | null } = { id: 'jukselapp', ikon: 'skriv', favoritt: null };
+
 /** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med valgene i overskriften. */
 type Ramme = (p: { tittel: string; sammendrag: string; children: ComponentChildren }) => JSX.Element;
 
@@ -223,7 +226,7 @@ function ITall({ ramme }: { ramme: Ramme }) {
   });
 }
 
-/** SKISSE (fase 8, variant B): dagens jukselapp som en fjerde visning i panelet. */
+/** SKISSE (fase 8): dagens jukselapp som en fjerde visning i panelet (eier 08.10.2026). */
 function JukselappVisning({ ramme }: { ramme: Ramme }) {
   const { t } = useTekst();
   const { sammendrag, innhold } = useDagensJukselapp();
