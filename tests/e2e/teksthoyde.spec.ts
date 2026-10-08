@@ -17,7 +17,11 @@ async function finnSkjeve(page: Page): Promise<string[]> {
       if (r.width === 0 || r.height === 0 || r.height > 40) continue;
       const forelder = el.parentElement;
       if (!forelder) continue;
-      const visning = getComputedStyle(forelder).display;
+      // Et element med `display: contents` (f.eks. tittelen i inngangene) lager ingen boks, så det er beholderen over
+      // som plasserer ikonet.
+      let boks: Element | null = forelder;
+      while (boks && getComputedStyle(boks).display === 'contents') boks = boks.parentElement;
+      const visning = boks ? getComputedStyle(boks).display : '';
       if (visning.includes('flex') || visning.includes('grid')) continue;
       // Bare når det står tekst ved siden av, i samme element.
       const noder = [...forelder.childNodes];
