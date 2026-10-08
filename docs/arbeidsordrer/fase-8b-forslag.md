@@ -4,6 +4,20 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «D1 ja, D3 B»). Rund
 
 ---
 
+## Veiviserne og streken for landet (08.10.2026)
+
+Eier 08.10.2026: «Gi Start på nytt et ikon og still de to knappene side om side. Inkluder gul merking for svarene som er gitt øverst i veien.» Og: streken for landet i Videregående i tall er brutt.
+
+- **Svarene som er gitt,** står med gul bakgrunn øverst i veien og i fasene til venstre på skrivebord.
+- **«Start på nytt»** har ikon, og knappene står side om side. På mobil er de like brede, og fra 375 px er det plass side om side. På de smaleste skjermene står de under hverandre.
+- **Streken for landet** flyttet seg opptil 4 px mellom radene, fordi tallkolonnen fikk bredden til tallet i hver rad (bredere i den fete raden for fylket). Nå deler radene kolonnene, og en test sjekker at streken står rett.
+
+| | Før | Etter |
+|---|---|---|
+| Slutten på en vei | ![](bilder/fase-8b-p4-etter-klage.jpg) | ![](bilder/fase-8b-vv-etter-klage.jpg) |
+
+---
+
 ## Pakke 6: Innstillinger, Om appen, Kilder og Fant ikke siden (08.10.2026)
 
 - **Innstillinger:** Hver del (Målform, Utseende, Forsiden, Fylke og skole, Dine data, Tilbakemelding) er et hvitt kort med overskriften på en lys blå flate, som delene i kalkulatorene. Før sto overskriften på rammen. «Om appen» nederst er en rad med ikon og pil.

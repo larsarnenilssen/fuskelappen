@@ -81,6 +81,17 @@ test.describe('Videregående i tall', () => {
     await expect(kort.nth(0)).toContainText('Nordland');
   });
 
+  test('streken for landet står rett gjennom alle radene, uansett hvor bredt tallet er (eier 08.10.2026)', async ({ page }) => {
+    await page.goto('./#/statistikk/skolen?fylke=46');
+    const del = page.getByRole('button', { name: /^Penger per elev/ });
+    if ((await del.getAttribute('aria-expanded')) === 'false') await del.click();
+    const streker = page.locator('.st-felles-kolonner .st-landet');
+    await expect(streker.first()).toBeVisible();
+    const venstre = await streker.evaluateAll((s) => s.map((e) => e.getBoundingClientRect().left));
+    expect(venstre.length).toBeGreaterThan(1);
+    expect(Math.max(...venstre) - Math.min(...venstre)).toBeLessThan(0.5);
+  });
+
   test('deltakelsen: fylkene fra start, og etter bakgrunn som et valg', async ({ page }, info) => {
     test.skip(info.project.name.includes('mobil'), 'Samme figur på mobil, der delen er lukket fra start.');
     await page.goto('./#/statistikk/ungdom?fylke=46');

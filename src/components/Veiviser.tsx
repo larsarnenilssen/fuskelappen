@@ -184,6 +184,7 @@ function Oppsummering({ tekst, startPaaNytt }: { tekst: () => string; startPaaNy
           {t('komponenter.veiviser.kopier')}
         </button>
         <a class="knapp knapp-sekundaer" href={startPaaNytt}>
+          <Ikon navn="igjen" class="ikon-liten" />
           {t('komponenter.veiviser.startPaaNytt')}
         </a>
       </div>

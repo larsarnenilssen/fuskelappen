@@ -90,7 +90,7 @@ function Stolper({ s, verdier, enhet, maks, format, etikett }: { s: Ssb; verdier
   const p = (v: number) => `${Math.min(100, (Math.abs(v) / maks) * 100)}%`;
   return (
     <>
-      <ol class="st-rangering" aria-label={etikett}>
+      <ol class="st-rangering st-felles-kolonner" aria-label={etikett}>
         {rader.map((r) => (
           <li key={r.e} class={r.e === enhet ? 'st-rad st-valgt' : 'st-rad'}>
             <span class="st-rad-navn">{ssbSted(t, r.e)}</span>

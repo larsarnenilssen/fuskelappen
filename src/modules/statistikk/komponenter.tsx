@@ -118,7 +118,7 @@ export function Rangering({ d, enhet, medTittel = true }: { d: Statistikk; enhet
           {valgt && t('statistikk.rangering.plass', { sted: valgt.navn, plass: String(valgt.plass), antall: String(rangert.length) })}
         </span>
       </figcaption>
-      <ol class="st-rangering">
+      <ol class="st-rangering st-felles-kolonner">
         {rangert.map((r) => (
           <li key={r.enhet} class={r.enhet === enhet ? 'st-rad st-valgt' : 'st-rad'}>
             <span class="st-rad-navn">{r.navn}</span>

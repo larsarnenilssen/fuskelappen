@@ -92,6 +92,18 @@
   font-size: var(--str-s);
 }
 
+/* Figurer med en stiplet strek for landet: radene deler kolonnene (subgrid), så sporet er like bredt i alle radene og
+   streken står rett. Før fikk tallkolonnen bredden til tallet i hver rad, og streken flyttet seg (eier 08.10.2026). */
+.st-felles-kolonner {
+  grid-template-columns: minmax(0, 9rem) minmax(0, 1fr) auto;
+  column-gap: var(--rom-2);
+}
+
+.st-felles-kolonner > .st-rad {
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+
 .st-program .st-rad {
   grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) 7rem;
 }

@@ -5224,9 +5224,16 @@ p.fagkort-tittel {
   font-weight: 600;
 }
 
+/* Svaret brukeren har gitt, står med gul bakgrunn, som det som er valgt ellers i appen (eier 08.10.2026). */
 .veiviser-svar-valgt {
   display: block;
-  color: var(--farge-tekst-dempet);
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 0.125rem;
+  padding: 0 var(--rom-2);
+  border-radius: var(--radius-s);
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
 }
 
 .veiviser-steg {
@@ -5759,8 +5766,29 @@ div + .veiviser-svargruppe {
   flex: none;
 }
 
+/* «Kopier oppsummeringen» og «Start på nytt» står side om side (eier 08.10.2026). */
+.veiviser-oppsummering .knapperad {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+}
+
 .veiviser-oppsummering .knapp {
+  justify-content: center;
   text-decoration: none;
+}
+
+/* På mobil er de like brede, med litt mindre luft og tekst, så de får plass side om side. På de smaleste skjermene er
+   det ikke plass til «oppsummeringen» i en halv bredde, og da står de under hverandre. */
+@media (max-width: 40rem) {
+  .veiviser-oppsummering .knapperad {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
+  }
+
+  .veiviser-oppsummering .knapp {
+    gap: var(--rom-1);
+    padding-inline: var(--rom-3);
+    font-size: var(--str-s);
+  }
 }
 
 .veiviser-oppsummering p[role='status'] {

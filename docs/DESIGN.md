@@ -86,6 +86,8 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 
 - Et steg er et hvitt kort med steget og tittelen på en myk flate i fargen til veiviseren (`--farge-flate-2` settes per veiviser).
 - Svarene er rader i ett hvitt kort med tynn strek mellom og pil til høyre (`veiviser-svarliste`).
+- Svarene brukeren har gitt, står med gul bakgrunn (`veiviser-svar-valgt`) øverst i veien og i fasene, fordi gult er det som er valgt (eier 08.10.2026).
+- Knappene i veiviseren følger fargen til veiviseren, som lenkene, og er ikke gule. «Kopier oppsummeringen» og «Start på nytt» har ikon og står side om side.
 - Det som er lokalt (fylket, skolen), står på en myk flate uten strek. Lokale tillegg og privatskoler har stiplet kant.
 
 ## Tall og resultater
@@ -95,6 +97,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Flere tall står side om side på én linje og brytes til neste linje når det ikke er plass.
 - Resultatet i en kalkulator er et hvitt kort med tynn kant som de andre kortene: tittelen i tekstfarge, hovedtallet stort og delresultatene i rader under. «Vis utregning» og «Kopier» står nederst. Før noe er fylt inn, står det tomme kortet (`Tomtresultat`) på samme plass.
 - Seriefargen (`--serie-1`) markerer det valgte i en figur. Grått er resten.
+- En strek tvers over radene i en figur (f.eks. landet) må stå rett. Radene deler kolonnene (`st-felles-kolonner`, subgrid) eller har en fast bredde på tallkolonnen, så sporet er like bredt i alle radene (testes).
 
 *Eksempler:* «Kort fortalt», hovedtallene i figurene, tallene i temakortene.
 
