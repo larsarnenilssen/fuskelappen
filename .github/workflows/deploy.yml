@@ -7,7 +7,8 @@
 # - «Sett versjonstag» kaller den med den nye taggen. I en kalt arbeidsflyt er github.event_name den kallende
 #   arbeidsflytens hendelse (push til main), så videresendingen må også sjekke at det er en tag som er pushet.
 #
-# Nyhetene (data/nyheter, avgjørelse 084) hentes også fra main, til appen og til testversjonen.
+# Nyhetene (data/nyheter, avgjørelse 084) hentes også fra main, til appen og til testversjonen. Det samme gjelder de
+# godkjente lokale reglene (lokale/, avgjørelse 093), så en godkjent regel publiseres uten ny versjon.
 # Koden bygges alltid fra taggen. Kildestatusen og registerdataene (Grep og skoleregisteret) hentes fra main,
 # slik at de oppdateres hver uke (avgjørelse 018). Det samme gjelder resultatene fra Elevundersøkelsen, så et nytt
 # skoleår kommer med uten ny versjon (avgjørelse 077), og nøkkeltallene fra statistikkbanken (avgjørelse 080). Består ikke taggens tester med dataene fra main, brukes
@@ -109,10 +110,13 @@ jobs:
           cp -r data/grep data/skoler data/elevundersokelsen data/statistikk "$RUNNER_TEMP/data/"
           # Nyhetene hentes hver dag til main (avgjørelse 084). Filen hentes av appen ved siden av bygget.
           if [ -d data/nyheter ]; then cp -r data/nyheter "$RUNNER_TEMP/data/"; fi
+          # De godkjente lokale reglene (avgjørelse 093). Versjoner før 0.46.0 har ikke mappen og bruker den ikke.
+          if [ -d lokale ]; then cp -r lokale "$RUNNER_TEMP/lokale"; fi
           git checkout --quiet "$TAG"
           cp "$RUNNER_TEMP/kildestatus.json" data/status/kildestatus.json
           cp -r "$RUNNER_TEMP/data/grep" "$RUNNER_TEMP/data/skoler" "$RUNNER_TEMP/data/elevundersokelsen" "$RUNNER_TEMP/data/statistikk" data/
           if [ -d "$RUNNER_TEMP/data/nyheter" ]; then cp -r "$RUNNER_TEMP/data/nyheter" data/; fi
+          if [ -d "$RUNNER_TEMP/lokale" ] && [ -d lokale ]; then cp -r "$RUNNER_TEMP/lokale/." lokale/; fi
           VERSJON=$(node -p "require('./package.json').version")
           if [ "v$VERSJON" != "$TAG" ]; then
             echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
@@ -130,13 +134,14 @@ jobs:
         env:
           TAG: ${{ steps.versjon.outputs.tag }}
         run: |
-          if git diff --quiet "$TAG" -- data/grep data/skoler data/elevundersokelsen data/statistikk && [ -z "$(git status --porcelain -- data/elevundersokelsen data/statistikk)" ]; then
+          if git diff --quiet "$TAG" -- data/grep data/skoler data/elevundersokelsen data/statistikk lokale && [ -z "$(git status --porcelain -- data/elevundersokelsen data/statistikk lokale)" ]; then
             echo "Registerdataene er de samme som i $TAG."
           elif npx vitest run; then
             echo "Registerdataene fra main består testene i $TAG."
           else
             echo "::warning::Registerdataene fra main består ikke testene i $TAG. Bruker registerdataene i $TAG."
             git checkout "$TAG" -- data/grep data/skoler
+            git checkout "$TAG" -- lokale 2>/dev/null || true
             # Eldre versjoner har ikke Elevundersøkelsen. Da fjernes dataene fra main.
             git checkout "$TAG" -- data/elevundersokelsen 2>/dev/null || rm -rf data/elevundersokelsen
             git checkout "$TAG" -- data/statistikk 2>/dev/null || rm -rf data/statistikk
@@ -158,6 +163,7 @@ jobs:
           git worktree add --quiet --detach "$RUNNER_TEMP/test" FETCH_HEAD
           # Testversjonen får også de ferske nyhetene fra main.
           if [ -d "$RUNNER_TEMP/data/nyheter" ]; then cp -r "$RUNNER_TEMP/data/nyheter" "$RUNNER_TEMP/test/data/"; fi
+          if [ -d "$RUNNER_TEMP/lokale" ] && [ -d "$RUNNER_TEMP/test/lokale" ]; then cp -r "$RUNNER_TEMP/lokale/." "$RUNNER_TEMP/test/lokale/"; fi
           if (cd "$RUNNER_TEMP/test" && npm ci && npm run build:test); then
             cp -r "$RUNNER_TEMP/test/dist-test" dist/test
             echo "::notice::Testversjonen fra $COMMIT ligger under test/."

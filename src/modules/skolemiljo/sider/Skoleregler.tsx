@@ -2,6 +2,7 @@
 // reaksjoner, saksbehandling og klage i skolereglene for fylket brukeren har valgt (fylkesinnhold), og skolens egne
 // regler når de står i Lovdata (skoleinnhold). For privatskoler gjelder privatskolelova § 5A-7 i stedet for fylkets
 // skoleregler (avgjørelse 075). To kolonner på skrivebord (avgjørelse 074).
+import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import { useEffect, useState } from 'preact/hooks';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { usePrivatskole, useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -153,6 +154,8 @@ export default function Skoleregler() {
                   )}
                 </ul>
               </section>
+              {/* Lokale regler fra brukerne for fylket og skolen (fase 9, avgjørelse 093). */}
+              {!privat && <LokaleRegler tema="skoleregler" />}
               <Kildeboks kilder={kilder} nokkel="skoleregler" />
             </>
           }

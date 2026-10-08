@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { app } from './src/config/app.ts';
-import { dataPlugin, fagrollerPlugin, fagsokPlugin, jukselappfagPlugin, jukselappEuPlugin, begrepsordPlugin, skolerPlugin, tilbudPlugin, innholdPlugin, lesToken, testoppsettPlugin, htmlPlugin, versjonPlugin } from './scripts/vite/plugins.ts';
+import { dataPlugin, fagrollerPlugin, fagsokPlugin, jukselappfagPlugin, jukselappEuPlugin, begrepsordPlugin, skolerPlugin, tilbudPlugin, innholdPlugin, lesToken, testoppsettPlugin, htmlPlugin, versjonPlugin, lokaleReglerPlugin } from './scripts/vite/plugins.ts';
 
 const rot = fileURLToPath(new URL('.', import.meta.url));
 const pakke = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string };
@@ -48,6 +48,7 @@ export default defineConfig(({ mode }) => {
       htmlPlugin(rot, navn, test ? app.testnavn : app.kortnavn),
       testoppsettPlugin(mode),
       dataPlugin(rot, mode),
+      lokaleReglerPlugin(rot, mode),
       fagrollerPlugin(rot),
       tilbudPlugin(rot),
       skolerPlugin(rot),
@@ -94,6 +95,12 @@ export default defineConfig(({ mode }) => {
               urlPattern: ({ url }) => url.pathname.endsWith('/data/nyheter/nyheter.json'),
               handler: 'NetworkFirst',
               options: { cacheName: 'nyheter', networkTimeoutSeconds: 4 },
+            },
+            {
+              // De godkjente lokale reglene: ferske når det er nett, ellers forrige fil (fase 9, avgjørelse 093).
+              urlPattern: ({ url }) => url.pathname.endsWith('/data/lokale/regler.json'),
+              handler: 'NetworkFirst',
+              options: { cacheName: 'lokale-regler', networkTimeoutSeconds: 4 },
             },
             {
               urlPattern: ({ url }) => url.pathname.includes('/data/') && url.pathname.endsWith('.json'),

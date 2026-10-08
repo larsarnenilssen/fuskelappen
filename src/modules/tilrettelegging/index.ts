@@ -33,6 +33,7 @@ export const manifest: Modulmanifest = {
     const { veivisere } = await hentInnhold();
     return [oversiktsfavoritt(manifest), ...veivisere.map((v) => ({ id: `tilrettelegging:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) }))];
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

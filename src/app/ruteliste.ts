@@ -19,6 +19,8 @@ const kjerne: Rute[] = [
   { sti: '/innstillinger', tittel: 'innstillinger.tittel', side: () => import('./sider/Innstillinger.tsx') },
   { sti: '/om', tittel: 'om.tittel', side: () => import('./sider/Om.tsx') },
   { sti: '/om/kilder', tittel: 'kildestatus.tittel', side: () => import('./sider/Kilder.tsx') },
+  // Skjemaet for en lokal regel (fase 9, avgjørelse 093).
+  { sti: '/innstillinger/lokal-regel', tittel: 'lokaleRegler.skjema.tittelNy', side: () => import('./sider/LokalRegel.tsx') },
   { sti: '/kategori/:id', tittel: 'forside.moduler', side: () => import('./sider/Kategori.tsx') },
 ];
 

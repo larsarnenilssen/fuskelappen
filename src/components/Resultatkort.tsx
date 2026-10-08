@@ -12,6 +12,8 @@ import type { KildeRef, Niva } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
 import { Kildelenke, kildeTekst } from './Kildelenke.tsx';
 import { Nivamerke } from './Merker.tsx';
+import { Egenmerke, LokaleVerdierFot } from './Lokalregel.tsx';
+import type { LokalVerdi } from '../core/regler/motor.ts';
 import { Resultatlinje } from './Resultatlinje.tsx';
 import { Sammenleggknapp, useSammenlagt } from './Sammenlegg.tsx';
 
@@ -26,6 +28,8 @@ export interface Utregningssteg {
   innsatt?: string;
   /** Hvor verdiene i trinnet kommer fra. Lokale nivåer vises som merke på trinnet. */
   kilder?: { kilde: KildeRef; niva: Niva; rad?: string }[];
+  /** Trinnet bruker en verdi brukeren har lagt inn selv (fase 9). Merket «din egen verdi» står i stedet for nivået. */
+  egen?: boolean;
 }
 
 interface Props {
@@ -42,6 +46,8 @@ interface Props {
   fast?: boolean;
   /** Innhold under hovedverdien, f.eks. en oversikt over delresultater. */
   children?: ComponentChildren;
+  /** Lokale verdier som er brukt (fase 9): brukerens egne og de godkjente, med hvor de endres eller meldes inn. */
+  lokale?: readonly LokalVerdi[];
 }
 
 /** Utregningen som ren tekst, til utklippstavlen. */
@@ -53,6 +59,9 @@ export function lagKopitekst(t: T, p: Omit<Props, 'children' | 'fast'>, dato: st
     linjer.push(`${i + 1}. ${s.tekst}: ${s.innsatt ? `${s.innsatt} = ` : ''}${s.verdi}`);
     if (s.formel) linjer.push(`   ${s.formel}`);
   });
+  for (const l of p.lokale ?? []) {
+    linjer.push('', l.egen ? t('lokaleRegler.kopi.egen', { sted: l.stedsnavn }) : t('lokaleRegler.kopi.godkjent', { sted: l.stedsnavn, dato: l.kontrollert ?? '' }));
+  }
   if (p.kilder && p.kilder.length > 0) {
     linjer.push('', `${t('komponenter.resultat.kilde')}:`);
     for (const k of p.kilder) {
@@ -69,7 +78,8 @@ export function lagKopitekst(t: T, p: Omit<Props, 'children' | 'fast'>, dato: st
 type Kopistatus = 'klar' | 'kopiert' | 'feilet';
 
 export function Resultatkort(props: Props) {
-  const { tittel, verdi, enhet, niva = 'nasjonal', sammendrag, steg, kilder, fast = false, children } = props;
+  const { tittel, verdi, enhet, niva = 'nasjonal', sammendrag, steg, kilder, fast = false, children, lokale = [] } = props;
+  const egen = lokale.some((l) => l.egen);
   const { t, malform } = useTekst();
   const [vis, settVis] = useState(false);
   const [kopi, settKopi] = useState<{ status: Kopistatus; tekst: string }>({ status: 'klar', tekst: '' });
@@ -97,9 +107,7 @@ export function Resultatkort(props: Props) {
             {tittel}
           </Sammenleggknapp>
         </h2>
-        <div class="merker merker-inline">
-          <Nivamerke niva={niva} />
-        </div>
+        <div class="merker merker-inline">{egen ? <Egenmerke verdi /> : <Nivamerke niva={niva} />}</div>
       </div>
       <p class="resultatkort-verdi" aria-live="polite">
         <span class="tall">{verdi}</span>
@@ -108,6 +116,7 @@ export function Resultatkort(props: Props) {
       <div id={innhold} hidden={lukket}>
         {sammendrag && <p class="resultatkort-sammendrag tall">{sammendrag}</p>}
         {children}
+        <LokaleVerdierFot lokale={lokale} />
         <div class="resultatkort-knapper">
           <button type="button" class="lenkeknapp" aria-expanded={vis} aria-controls={id} onClick={() => settVis(!vis)}>
             <Ikon navn={vis ? 'opp' : 'ned'} class="ikon-liten" />
@@ -136,11 +145,13 @@ export function Resultatkort(props: Props) {
                 <span class="utregning-linje">
                   {s.innsatt && <span class="tall">{s.innsatt} = </span>}
                   <span class="utregning-verdi tall">{s.verdi}</span>
-                  {[...new Set((s.kilder ?? []).map((k) => k.niva).concat(s.niva ? [s.niva] : []))]
-                    .filter((n) => n !== 'nasjonal')
-                    .map((n) => (
-                      <Nivamerke key={n} niva={n} />
-                    ))}
+                  {s.egen ? (
+                    <Egenmerke verdi />
+                  ) : (
+                    [...new Set((s.kilder ?? []).map((k) => k.niva).concat(s.niva ? [s.niva] : []))]
+                      .filter((n) => n !== 'nasjonal')
+                      .map((n) => <Nivamerke key={n} niva={n} />)
+                  )}
                 </span>
                 {s.formel && <span class="utregning-formel">{s.formel}</span>}
                 {s.kilde && (

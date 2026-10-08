@@ -10,6 +10,7 @@ import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { FLYTTEPARAMETER, lesFlytting } from '../flytting.ts';
 import { erstattAdresse } from '../ruter.ts';
 import type { SideProps } from '../../modules/typer.ts';
+import { LokaleReglerKort } from '../lokaleregler/LokaleReglerKort.tsx';
 
 interface Skole {
   id: string;
@@ -239,6 +240,9 @@ export default function Innstillinger({ sporring }: SideProps) {
         )}
         <p class="dempet liten">{t('innstillinger.sted.kilde')}</p>
       </fieldset>
+
+      {/* Brukerens egne lokale regler og de godkjente for stedet (fase 9, avgjørelse 093). */}
+      <LokaleReglerKort />
 
       <fieldset class="valggruppe">
         <legend>{t('innstillinger.data.legend')}</legend>

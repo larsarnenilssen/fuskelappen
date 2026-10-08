@@ -1,0 +1,8 @@
+# Lokale regler som eier har godkjent (fase 9, avgjørelse 093). Format: docs/INNHOLDSMODELL.md, «Lokale regler».
+#
+# - Brukerne melder inn regler på e-post i fast form. Claude legger dem inn her med kontrollert: null, og eier
+#   godkjenner. Bare regler med kontrollert kommer med i appen.
+# - Når en PR som endrer denne filen er flettet, publiseres appen på nytt uten ny versjon (arbeidsflyten «Lokale
+#   regler»). Brukerne får regelen neste gang de åpner appen.
+# - Regelen skrives med egne ord, uten navn og underskrifter. Dokumentasjon brukeren har lagt ved, legges ikke i repoet.
+regler: []

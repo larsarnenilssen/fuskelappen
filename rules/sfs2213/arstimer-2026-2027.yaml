@@ -16,6 +16,7 @@ gyldig_til: "2027-12-31"
 kilde: udir-grep
 verdier:
   arstimer:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     merknad: >-

@@ -2,6 +2,15 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 0.46.0
+    dato: 2026-10-08
+    nytt:
+      - nb: "Lokale regler: Under Innstillinger kan du legge inn regler og tall som gjelder ved skolen eller i fylket ditt, for eksempel planfestet tid."
+        nn: "Lokale reglar: Under Innstillingar kan du leggje inn reglar og tal som gjeld ved skulen eller i fylket ditt, til dømes planfesta tid."
+      - nb: Regelen gjelder med en gang for deg og er merket «Din egen». Kalkulatorene bruker tallet ditt.
+        nn: Regelen gjeld med ein gong for deg og er merkt «Din eigen». Kalkulatorane bruker talet ditt.
+      - nb: Meld inn regelen på e-post. Når den er godkjent, ser alle som har valgt skolen eller fylket den.
+        nn: Meld inn regelen på e-post. Når han er godkjend, ser alle som har valt skulen eller fylket han.
   - versjon: 0.45.0
     dato: 2026-10-08
     nytt:

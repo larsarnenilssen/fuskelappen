@@ -67,6 +67,7 @@ export const manifest: Modulmanifest = {
       ...veivisere.map((v) => ({ id: `inntak:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },
+  lokaleRegler: ['inntak'],
   async frister() {
     return (await hentInnhold()).frister;
   },

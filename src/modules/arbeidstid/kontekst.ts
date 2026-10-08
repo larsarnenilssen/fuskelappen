@@ -2,6 +2,7 @@
 import { iDag } from '../../data/skolear.ts';
 import { useCallback, useMemo, useRef, useState } from 'preact/hooks';
 import { useTilstand } from '../../app/tilstand.ts';
+import { useLokale } from '../../app/lokaleregler/bruk.ts';
 import { hentVerdi, type Regelkontekst } from '../../core/regler/index.ts';
 import type { Hent } from './beregning/index.ts';
 
@@ -12,7 +13,9 @@ export function useRegelkontekst(): Regelkontekst {
   const { innstillinger } = useTilstand();
   const fylke = innstillinger.fylke;
   const skole = innstillinger.skole?.id ?? null;
-  return useMemo(() => ({ dato: iDag(), fylke, skole }), [fylke, skole]);
+  // Brukerens egne lokale verdier og de godkjente går foran regelsettene (fase 9, avgjørelse 093).
+  const { verdier } = useLokale();
+  return useMemo(() => ({ dato: iDag(), fylke, skole, lokale: verdier }), [fylke, skole, verdier]);
 }
 
 /** Leser regelverdier med brukerens kontekst. Lokale verdier (fylke, skole) går foran nasjonale. */

@@ -10,6 +10,29 @@ export interface Regelkontekst {
   periode?: string | null;
   fylke?: string | null;
   skole?: string | null;
+  /**
+   * Lokale verdier fra brukerens egne regler og reglene eier har godkjent (fase 9, avgjørelse 093). De slås opp før
+   * regelsettene: egne først, så skolen og fylket. Hvem som gjelder, er valgt av kalleren (src/core/lokale/regler.ts).
+   */
+  lokale?: readonly LokalVerdi[];
+}
+
+/** En lokal verdi som gjelder i stedet for verdien i regelsettet (fase 9). */
+export interface LokalVerdi {
+  /** Full nøkkel, f.eks. «sfs2213.planfestet_timer». */
+  nokkel: string;
+  verdi: number;
+  niva: 'fylke' | 'skole';
+  fylke: string;
+  skole: string | null;
+  /** Brukerens egen verdi, ikke kontrollert. Ellers godkjent av eier. */
+  egen: boolean;
+  /** Koden for innmeldingen, så brukeren kan endre eller melde inn en endring. */
+  kode: string;
+  /** Datoen eier kontrollerte verdien, eller null for brukerens egen. */
+  kontrollert: string | null;
+  /** Navnet på fylket eller skolen. */
+  stedsnavn: string;
 }
 
 export interface Oppslag {
@@ -22,6 +45,8 @@ export interface Oppslag {
   kontrollert: Kontrollert;
   regelsett: string;
   periode: string;
+  /** Satt når verdien kommer fra en lokal regel (fase 9): brukerens egen eller en godkjent. */
+  lokal?: LokalVerdi;
 }
 
 export class Regelfeil extends Error {}
@@ -94,6 +119,23 @@ export function finnVerdi(alle: readonly Regelsett[], nokkel: string, kontekst: 
   const [regelverk, navn] = delNokkel(nokkel);
   const periode = velgPeriode(alle, regelverk, kontekst);
   const dato = referansedato(periode, kontekst);
+  const lokal = finnLokal(nokkel, kontekst);
+  if (lokal) {
+    const grunn = periode.verdier[navn];
+    return {
+      verdi: lokal.verdi,
+      enhet: grunn?.enhet,
+      niva: lokal.niva,
+      fylke: lokal.fylke,
+      skole: lokal.skole,
+      // Kilden er den nasjonale verdiens kilde, som sier hva den lokale verdien erstatter (f.eks. SFS 2213 punkt 5.1).
+      kilde: grunn?.kilde ?? { id: periode.kilde },
+      kontrollert: lokal.kontrollert ? { dato: lokal.kontrollert } : null,
+      regelsett: periode.id,
+      periode: periode.id,
+      lokal,
+    };
+  }
   const { skole, fylke } = lokale(alle, regelverk, dato, kontekst);
   for (const r of [...skole, ...fylke]) {
     if (r.gyldighet.niva !== 'nasjonal' && r.gyldighet.forhold === 'erstatter') {
@@ -104,6 +146,15 @@ export function finnVerdi(alle: readonly Regelsett[], nokkel: string, kontekst: 
   const v = periode.verdier[navn];
   if (!v) throw new Regelfeil(`Fant ikke ${navn} i ${periode.id}`);
   return tilOppslag(periode, periode, v);
+}
+
+/** Den lokale verdien som gjelder for nøkkelen og stedet: egne først, så skolen og fylket. */
+function finnLokal(nokkel: string, kontekst: Regelkontekst): LokalVerdi | undefined {
+  const passer = (kontekst.lokale ?? []).filter(
+    (l) => l.nokkel === nokkel && l.fylke === kontekst.fylke && (l.niva === 'fylke' || (l.skole !== null && l.skole === kontekst.skole)),
+  );
+  const rang = (l: LokalVerdi) => (l.egen ? 0 : 2) + (l.niva === 'skole' ? 0 : 1);
+  return [...passer].sort((a, b) => rang(a) - rang(b))[0];
 }
 
 /** Alle verdier som gjelder samtidig (nasjonal + lokale som supplerer), gruppert etter nivå. */

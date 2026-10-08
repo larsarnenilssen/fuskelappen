@@ -20,3 +20,16 @@ export function epostlenke(adresse: string, emne: string, linjer: readonly strin
   const kode = (s: string) => encodeURIComponent(s);
   return `mailto:${adresse}?subject=${kode(emne)}&body=${kode(linjer.join('\r\n'))}`;
 }
+
+/**
+ * Åpner en mailto-lenke i e-postprogrammet. Lenken klikkes som en vanlig lenke i siden, så nettleseren behandler den
+ * som et klikk fra brukeren (og ende-til-ende-testene kan fange den).
+ */
+export function aapneEpost(lenke: string): void {
+  const a = document.createElement('a');
+  a.href = lenke;
+  a.hidden = true;
+  document.body.append(a);
+  a.click();
+  a.remove();
+}

@@ -12,6 +12,7 @@ gyldig_til: "2027-12-31"
 kilde: udir-grep
 verdier:
   fagnavn:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     merknad: Fagnavnene i vedlegg 1 med fullt navn og prefikset i fagkodene i Grep.
@@ -50,6 +51,7 @@ verdier:
       - { vedlegg: "Latin/Gresk", navn: "Latin og gresk", prefikser: [SPR] }
       - { vedlegg: "Ant.spr. og ku.", navn: "Antikkens språk og kultur", prefikser: [SPR] }
   kallenavn:
+    lokal: false
     kilde: { id: udir-grep }
     kontrollert: null
     merknad: Fagnavn og fagkoder i Grep som hører til en bestemt rad i vedlegg 1 (samme fag, program og trinn).

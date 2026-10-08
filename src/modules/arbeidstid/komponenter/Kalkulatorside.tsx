@@ -1,4 +1,5 @@
 // Felles ramme for kalkulatorsidene: tittel med «?» for ingressen og favorittknapp, metode, advarsler og feil.
+import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import type { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
@@ -65,6 +66,8 @@ export function Kalkulatorside({
       </div>
       {etter && <div class="kalkulator-etter">{etter}</div>}
       <Metode id={`metode-${id}`} />
+      {/* Lokale regler om arbeidstid for fylket og skolen (fase 9, avgjørelse 093). */}
+      <LokaleRegler tema="arbeidstid" />
       {tall}
     </div>
   );

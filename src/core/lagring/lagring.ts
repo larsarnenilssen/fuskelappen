@@ -1,6 +1,7 @@
 // Lokal lagring med skjemaversjon, migrering og feilhåndtering.
 // All brukerdata ligger på enheten. Ingenting sendes noe sted.
 import * as z from 'zod/mini';
+import { egenRegelSkjema, type EgenRegel } from '../lokale/skjema.ts';
 
 /** Testversjonen har egen nøkkel, så testing ikke endrer innstillingene og favorittene i appen (avgjørelse 045). */
 export const LAGRINGSNOKKEL = __TESTVERSJON__ ? 'jukselappen-test' : 'jukselappen';
@@ -62,12 +63,25 @@ export const lagretSkjema = z.strictObject({
   /** Kildevarsel brukeren har skjult til neste kildesjekk («kjort|status»), eller null. */
   skjultKildevarsel: z.nullable(z.string()),
   forside: forsideSkjema,
+  /**
+   * Brukerens egne lokale regler (fase 9, avgjørelse 093). Valgfritt, så eldre data kan leses uten migrering. Hver
+   * regel leses for seg med `egneRegler()`, så én ugyldig regel ikke gjør resten av lagringen ugyldig.
+   */
+  egneRegler: z.optional(z.array(z.unknown())),
 });
 
 export type Innstillinger = z.infer<typeof innstillingerSkjema>;
 export type Skolevalg = z.infer<typeof skoleSkjema>;
 export type Lagret = z.infer<typeof lagretSkjema>;
 export type Forsideoppsett = z.infer<typeof forsideSkjema>;
+
+/** Brukerens egne regler som passer skjemaet. Ugyldige regler hoppes over. */
+export function egneRegler(data: Pick<Lagret, 'egneRegler'>): EgenRegel[] {
+  return (data.egneRegler ?? []).flatMap((r) => {
+    const lest = egenRegelSkjema.safeParse(r);
+    return lest.success ? [lest.data] : [];
+  });
+}
 
 export const standardForside = (): Forsideoppsett => ({ rekkefolge: [], lukket: [], bareFavoritter: false });
 

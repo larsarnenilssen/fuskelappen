@@ -8,6 +8,7 @@ gyldig_til: "2099-12-31"
 kilde: opplaeringsforskrifta
 verdier:
   snitt_desimaler:
+    lokal: false
     verdi: 2
     kilde: { id: opplaeringsforskrifta, punkt: "§ 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a" }
     kontrollert: null
@@ -16,17 +17,20 @@ verdier:
       Gjennomsnittet avrundes til to desimaler før det ganges med ti. § 4-25 har samme regel for Vg2 og Vg3.
       Avrundingen følger vanlige regler (Udirs merknader, praksislisten «poeng-avrunding»).
   poeng_faktor:
+    lokal: false
     verdi: 10
     kilde: { id: opplaeringsforskrifta, punkt: "§ 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a" }
     kontrollert: null
     sitat: "Samla poengsum for karakterane blir eit utrekna gjennomsnitt, med to desimalar, multiplisert med ti."
   valgfag_desimaler:
+    lokal: false
     verdi: 2
     kilde: { id: opplaeringsforskrifta, punkt: "§ 4-19 første ledd bokstav b" }
     kontrollert: null
     sitat: "Gjennomsnittskarakteren skal førast med to desimalar."
     merknad: Gjennomsnittet av valgfagene teller som én karakter (eier 03.10.2026, Udirs merknader).
   iv_im_verdi:
+    lokal: false
     verdi: 0
     kilde: { id: opplaeringsforskrifta, punkt: "§ 4-19 første ledd bokstav e og § 4-25 første ledd bokstav d" }
     kontrollert: null

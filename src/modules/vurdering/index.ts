@@ -73,6 +73,7 @@ export const manifest: Modulmanifest = {
       ...veivisere.map((v) => ({ id: `vurdering:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },
+  lokaleRegler: ['fravaer'],
   async frister() {
     return [];
   },

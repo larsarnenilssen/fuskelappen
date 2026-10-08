@@ -1,4 +1,5 @@
 // Manifestet hver modul eksporterer fra src/modules/<modul>/index.ts. Se docs/ARKITEKTUR.md.
+import type { Tema } from '../core/lokale/skjema.ts';
 import type { ComponentType } from 'preact';
 import type { Tekstverdi } from '../core/i18n/tekst.ts';
 import type { Flerspraak, Frist, Gyldighet, KildeRef } from '../core/innhold/skjema.ts';
@@ -103,6 +104,11 @@ export interface Modulmanifest {
   favorittbare(ider?: readonly string[]): Promise<Favorittbar[]>;
   /** Frister modulen eier. Samles i kalenderen (avgjørelse 066). */
   frister(): Promise<Frist[]>;
+  /**
+   * Temaene for lokale regler modulen har en side for (fase 9, avgjørelse 093), eller en tom liste. Påkrevd, så en ny
+   * modul må ta stilling til om noe i den kan variere lokalt (eier 08.10.2026). Siden for temaet har `LokaleRegler`.
+   */
+  lokaleRegler: readonly Tema[];
   /**
    * Fakta til dagens jukselapp (fase 8, avgjørelse 086). Lastes først når jukselappen vises, og bare for modulen som
    * har dagen. En modul uten fakta gir en tom liste.

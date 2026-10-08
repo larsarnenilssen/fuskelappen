@@ -414,3 +414,14 @@ Fra du trykker Save til publiseringen er ferdig, virker ikke appen. Det tar et p
 **E. Etterpå (Claude):** adressene i README, i denne veiledningen og i arbeidsordrene oppdateres.
 
 Ingenting av dette endrer e-postadressen for tilbakemeldinger (jukselappen.app@gmail.com).
+
+## 17. Godkjenne en lokal regel (fase 9)
+
+Brukerne melder inn lokale regler på e-post til jukselappen.app@gmail.com, med emnet «Lokal regel til Jukselappen: … (LR-XXXX)». Regelen står i fast form nederst i e-posten (avgjørelse 093).
+
+1. **Les e-posten og vedlegget.** Sjekk regelen mot kilden: lenken, eller dokumentet brukeren har lagt ved. En lokal avtale som ikke er offentlig, kan godkjennes når du har sett den.
+2. **Gi den til Claude.** Lim inn e-posten i en ny samtale og skriv «Legg inn den lokale regelen». Ikke lim inn vedlegget eller navn. Claude legger regelen inn i `lokale/regler.yaml` med `kontrollert: null`, på bokmål og nynorsk, i en PR, og skriver hva du bør sjekke.
+3. **Se over PR-en.** Er alt riktig, skriver du «godkjent» til Claude. Claude setter datoen og fletter PR-en når CI er grønn.
+4. **Publisering skjer av seg selv,** uten ny versjon (arbeidsflyten «Lokale regler»). Brukerne får regelen neste gang de åpner appen. Den som meldte den inn, får beskjed i Innstillinger, og kopien deres byttes ut.
+
+Er en godkjent regel feil eller endret, kan brukerne melde inn en endring fra regelen («Feil eller endret?»). E-posten har da `endrer: LR-XXXX`, og den nye regelen erstatter den gamle når du godkjenner den.

@@ -1,0 +1,41 @@
+# Lokale regler (fase 9, avgjørelse 093): når en PR som endrer lokale/regler.yaml er flettet til main, publiseres appen
+# på nytt uten ny versjon. deploy.yml tar med lokale/ fra main og bygger data/lokale/regler.json, med bare reglene eier
+# har kontrollert. Brukerne får de godkjente reglene neste gang de åpner appen. Testene for filen kjøres i CI før
+# fletting, og på nytt mot versjonens tester i publiseringen.
+name: Lokale regler
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lokale/**'
+  workflow_dispatch:
+
+concurrency:
+  group: lokale-regler
+  cancel-in-progress: false
+
+jobs:
+  publiser:
+    name: Publiser med de godkjente lokale reglene
+    uses: ./.github/workflows/deploy.yml
+    with:
+      tag: ''
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      actions: write
+
+  # Varsel til eier når publiseringen feiler, og lukking når den går bra igjen (avgjørelse 085).
+  varsle:
+    name: Varsle eier
+    needs: [publiser]
+    if: always() && !contains(needs.*.result, 'cancelled')
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ contains(needs.*.result, 'failure') && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read

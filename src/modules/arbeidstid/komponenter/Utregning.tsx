@@ -5,6 +5,8 @@ import { Resultatkort, type Utregningssteg } from '../../../components/Resultatk
 import { fyllInn, formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Niva } from '../../../core/innhold/skjema.ts';
 import type { ComponentChildren } from 'preact';
+import { unikeLokale } from '../../../components/Lokalregel.tsx';
+import type { LokalVerdi } from '../../../core/regler/motor.ts';
 import { type Enhet, type Operand, type Trinn } from '../beregning/index.ts';
 
 const nivaRang: Record<Niva, number> = { nasjonal: 0, fylke: 1, skole: 2 };
@@ -45,6 +47,7 @@ function stegFra(t: T, trinn: Trinn): Utregningssteg {
   }
   // Hver kilde (med punkt og nivå) vises én gang per trinn. Rader i tabeller (f.eks. vedlegg 1) samles på kilden.
   const kilder = new Map<string, NonNullable<Utregningssteg['kilder']>[number]>();
+  const egen = Object.values(trinn.operander).some((o) => o.oppslag?.lokal?.egen === true);
   for (const o of Object.values(trinn.operander)) {
     if (!o.oppslag) continue;
     const id = `${o.oppslag.kilde.id}|${o.oppslag.kilde.punkt ?? ''}|${o.oppslag.niva}`;
@@ -59,7 +62,13 @@ function stegFra(t: T, trinn: Trinn): Utregningssteg {
     innsatt: fyllInn(mal, tall),
     verdi: medEnhet(t, trinn.resultat.verdi, trinn.resultat.enhet),
     kilder: [...kilder.values()],
+    ...(egen ? { egen } : {}),
   };
+}
+
+/** De lokale verdiene som er brukt i utregningen (fase 9): brukerens egne og de godkjente. */
+export function brukteLokale(trinnliste: readonly Trinn[]): LokalVerdi[] {
+  return unikeLokale(trinnliste.flatMap((tr) => Object.values(tr.operander).map((o) => o.oppslag?.lokal)));
 }
 
 /** Mest lokale nivå blant verdiene som er brukt (skole → fylke → nasjonal). */
@@ -113,6 +122,7 @@ export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, fas
       {...(sammendrag && siste?.innsatt ? { sammendrag: `${siste.innsatt} = ${siste.verdi}` } : {})}
       steg={steg.map((s) => ({ ...s, kilder: (s.kilder ?? []).filter((k) => k.niva !== 'nasjonal') }))}
       kilder={samleKilder(steg)}
+      lokale={brukteLokale(trinn)}
       fast={fast}
     >
       {children}

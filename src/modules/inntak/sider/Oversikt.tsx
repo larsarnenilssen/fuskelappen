@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
+import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { Kalkulatorinngang } from '../../../components/Kalkulatorinngang.tsx';
@@ -50,6 +51,8 @@ export default function Oversikt() {
                     <Ikon navn="hoyre" class="frist-inngang-pil" />
                   </a>
                 </section>
+                {/* Lokale regler om inntak for fylket og skolen (fase 9, avgjørelse 093). */}
+                <LokaleRegler tema="inntak" />
               </>
             }
             side={

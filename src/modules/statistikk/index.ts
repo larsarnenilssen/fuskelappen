@@ -31,6 +31,7 @@ export const manifest: Modulmanifest = {
       ...TEMAER.map((x) => ({ id: temaFavoritt(x.id), type: 'side' as const, tittel: begge(`statistikk.tema.${x.id}.navn`), rute: temarute(x.id), ikon: x.ikon })),
     ];
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

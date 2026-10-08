@@ -8,6 +8,7 @@ gyldig_til: "2099-12-31"
 kilde: opplaeringsforskrifta
 verdier:
   fravaer_grense_prosent:
+    lokal: false
     verdi: 10
     enhet: prosent
     kilde: { id: opplaeringsforskrifta, punkt: "§ 9-8 første ledd" }
@@ -17,6 +18,7 @@ verdier:
       Grensen er 10,0 prosent av årstimetallet i faget det skoleåret, og kan ikke rundes ned (Udirs rundskriv om
       fraværsgrensen punkt 3.5). Eleven er innenfor så lenge fraværet ikke er mer enn grensen (eier 04.10.2026, FR3).
   fravaer_skjonn_prosent:
+    lokal: false
     verdi: 15
     enhet: prosent
     kilde: { id: opplaeringsforskrifta, punkt: "§ 9-8 fjerde ledd" }
@@ -26,6 +28,7 @@ verdier:
       Rektor kan avgjøre at eleven likevel får karakter. Helsefravær med legeerklæring før grensen ble nådd, teller med
       i rammen (eier 04.10.2026, praksislisten «fravaer-15-prosent-legeerklaering», FR8).
   klokketime_minutter:
+    lokal: false
     verdi: 60
     enhet: minutter
     kilde: { id: udir-rundskriv-fravarsgrensen, punkt: "3.6 Én time er en klokketime" }

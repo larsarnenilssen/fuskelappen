@@ -12,6 +12,7 @@ gyldig_til: "2027-12-31"
 kilde: ks-sfs2213-avtaletekst
 verdier:
   arsrammer:
+    lokal: false
     enhet: årsrammetimer (60/45 min)
     kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     kontrollert: null

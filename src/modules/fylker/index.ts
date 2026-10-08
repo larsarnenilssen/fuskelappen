@@ -52,6 +52,7 @@ export const manifest: Modulmanifest = {
       ider,
     );
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },

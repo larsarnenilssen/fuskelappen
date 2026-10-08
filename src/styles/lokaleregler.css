@@ -1,0 +1,222 @@
+/* ---------- Lokale regler (fase 9, avgjørelse 093) ----------
+   En regel brukeren har lagt inn selv, står med stiplet kant i ravfarge og merket «Din egen · ikke kontrollert», så den
+   ikke kan forveksles med innhold eier har kontrollert. En godkjent regel er et vanlig kort med merket for skolen eller
+   fylket og «Kontrollert». Lastes med komponentene som bruker dem (avgjørelse 082). */
+
+.merke-egen {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  background: var(--farge-advarsel-flate);
+  border-color: var(--farge-advarsel);
+  border-style: dashed;
+}
+
+.egenregel,
+.godkjentregel {
+  margin: var(--rom-3) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) dashed var(--farge-advarsel);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.godkjentregel {
+  border-style: solid;
+  border-color: var(--farge-kant);
+}
+
+.egenregel-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1);
+  margin-bottom: var(--rom-2);
+}
+
+.egenregel-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-m);
+}
+
+.egenregel-tekst {
+  margin: 0 0 var(--rom-2);
+}
+
+.egenregel-kilde {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
+.egenregel-kilde a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.egenregel-fot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0;
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-linje);
+  font-size: var(--str-s);
+}
+
+.egenregel-fot a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.egenregel-status {
+  color: var(--farge-tekst-dempet);
+}
+
+/* Forhåndsvisningen av en verdi i skjemaet. */
+.egenverdi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--rom-1);
+}
+
+.egenverdi-navn {
+  font-weight: 600;
+}
+
+.egenverdi-tall {
+  font-size: var(--str-xl);
+  font-weight: 700;
+}
+
+.lokaleregler-under {
+  margin: var(--rom-3) 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
+.lokaleregler-liste {
+  margin-bottom: var(--rom-3);
+}
+
+.lokaleregler-melding {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin-bottom: var(--rom-3);
+  background: var(--farge-ok-flate);
+}
+
+.lokaleregler-melding > span {
+  flex: 1;
+}
+
+.lokaleregler-del {
+  margin: var(--rom-5) 0;
+}
+
+.lokaleverdier-fot {
+  margin-top: var(--rom-2);
+}
+
+.godkjentregel .egenverdi-tall,
+.egenregel .egenverdi-tall {
+  margin: 0 0 var(--rom-1);
+}
+
+.lokaleregler-melding > .ikon {
+  flex: none;
+  color: var(--farge-ok);
+}
+
+.lokalregel-tall {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.lokalregel-tall input {
+  width: 8rem;
+}
+
+.lokalregel-datoer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--rom-4);
+}
+
+.lokalregel-datoer .felt {
+  flex: 1 1 10rem;
+}
+
+.lokalregel-skjema textarea {
+  width: 100%;
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  font-size: max(16px, 1rem);
+}
+
+.lokalregel-steg {
+  margin: 0 0 var(--rom-3);
+  padding-left: var(--rom-5);
+}
+
+.lokalregel-steg li + li {
+  margin-top: var(--rom-1);
+}
+
+.lokalregel-epost summary {
+  cursor: pointer;
+  color: var(--farge-lenke);
+  font-weight: 600;
+}
+
+.lokalregel-epost pre {
+  overflow-x: auto;
+  max-width: 100%;
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  font-size: var(--str-xs);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.utregning-linje .merke-egen {
+  margin-left: var(--rom-2);
+}
+
+/* Under en godkjent lokal regel: hvem den gjelder for, og hvor den endres eller meldes inn. */
+.lokalfot {
+  margin: var(--rom-2) 0 0;
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-linje);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.lokalregel-valg .valg {
+  min-height: var(--trykkflate);
+  padding: var(--rom-1) 0;
+}
+
+.lokalregel-valg .valg + .valg {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.lokalregel-valgtekst {
+  display: flex;
+  flex-direction: column;
+}
+
+.lokalregel-sendt {
+  margin-top: var(--rom-3);
+  border-color: var(--farge-ok);
+}

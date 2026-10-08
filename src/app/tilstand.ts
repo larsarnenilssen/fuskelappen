@@ -1,7 +1,9 @@
 // Appens tilstand: innstillinger og favoritter, lagret lokalt via lagringsmodulen.
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { hentTekst, lastTekster, teksterLastet, type Malform, type Tekstnokkel, type Verdier } from '../core/i18n/tekst.ts';
+import type { EgenRegel } from '../core/lokale/skjema.ts';
 import {
+  egneRegler,
   lesLagret,
   lesValg,
   skrivValg,
@@ -204,4 +206,19 @@ export function settBareFavoritter(bareFavoritter: boolean): void {
 /** Standard rekkefølge, og alle gruppene åpne. */
 export function nullstillForside(): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge: [], lukket: [], apnet: [], skjult: [] } }));
+}
+
+/** Brukerens egne lokale regler (fase 9, avgjørelse 093). Ugyldige regler hoppes over. */
+export function useEgneRegler(): EgenRegel[] {
+  const data = useTilstand();
+  return useMemo(() => egneRegler(data), [data]);
+}
+
+/** Lagrer en egen lokal regel, ny eller endret (samme kode). */
+export function lagreEgenRegel(regel: EgenRegel): void {
+  tilstand.oppdater((d) => ({ ...d, egneRegler: [...egneRegler(d).filter((r) => r.kode !== regel.kode), regel] }));
+}
+
+export function slettEgenRegel(kode: string): void {
+  tilstand.oppdater((d) => ({ ...d, egneRegler: egneRegler(d).filter((r) => r.kode !== kode) }));
 }

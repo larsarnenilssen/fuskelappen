@@ -4,6 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.46.0] – 2026-10-08
+
+### Lagt til
+
+- **Lokale regler for fylket og skolen** (fase 9): Under Innstillinger → «Lokale regler» kan du legge inn en regel som gjelder hos dere.
+  - Velg først hva endringen gjelder (Arbeidstid, Skoleregler, Fraværsgrensen, Eksamen eller Inntak), så hva du vil endre.
+  - Et tall i kalkulatorene gjelder i stedet for det nasjonale:
+    - planfestet tid
+    - redusert undervisning for kontaktlærer, i prosent eller årsrammetimer
+    - godtgjøring for kontaktlærer og rådgiver
+    - undervisningsdagene i skoleåret
+  - En regel på en side står i tillegg, i delen «Lokale regler for …» på siden for temaet.
+  - Regelen gjelder med en gang for deg, lagres bare på enheten og er merket «Din egen · ikke kontrollert».
+- **Meld inn en lokal regel:** «Lagre og meld inn» lager en e-post med regelen. Godkjent av eier blir den vist for alle som har valgt fylket eller skolen, uten at det trengs en ny versjon av appen, og din kopi byttes ut.
+- **Feil eller endret?** Under en godkjent lokal regel, på siden og i kalkulatoren, kan du endre den for deg selv eller melde inn en endring.
+
 ## [0.45.0] – 2026-10-08
 
 ### Endret

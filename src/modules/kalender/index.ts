@@ -43,6 +43,7 @@ export const manifest: Modulmanifest = {
   async favorittbare(ider) {
     return bareSpurte([oversiktsfavoritt(manifest)], ider);
   },
+  lokaleRegler: [],
   async frister() {
     return [];
   },
