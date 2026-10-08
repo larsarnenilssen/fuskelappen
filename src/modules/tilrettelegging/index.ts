@@ -36,6 +36,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 086).
+    return (await import('./fakta.ts')).fakta();
+  },
   kilder: ['udir-veileder-tilpasset-opplaering', 'opplaeringslova', 'udir-fullforingsretten-iop'],
   status: 'aktiv',
 };

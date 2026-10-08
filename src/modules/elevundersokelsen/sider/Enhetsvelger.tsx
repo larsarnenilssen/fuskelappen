@@ -68,9 +68,9 @@ export function Enhetsvelger({ etikett, valg, verdi, onVelg }: { etikett: preact
 
   const grupper: { gruppe: Enhetsvalg['gruppe']; tittel: string }[] = [
     { gruppe: 'ingen', tittel: '' },
-    { gruppe: 'landet', tittel: t('skolemiljo.elevundersokelsen.landet') },
-    { gruppe: 'fylker', tittel: t('skolemiljo.elevundersokelsen.fylker') },
-    { gruppe: 'skoler', tittel: t('skolemiljo.elevundersokelsen.skoler') },
+    { gruppe: 'landet', tittel: t('elevundersokelsen.landet') },
+    { gruppe: 'fylker', tittel: t('elevundersokelsen.fylker') },
+    { gruppe: 'skoler', tittel: t('elevundersokelsen.skoler') },
   ];
   const aktivId = apen && synlige[aktiv] ? `${id}-v${aktiv}` : undefined;
 
@@ -92,7 +92,7 @@ export function Enhetsvelger({ etikett, valg, verdi, onVelg }: { etikett: preact
           aria-expanded={apen}
           aria-controls={listeId}
           aria-activedescendant={aktivId}
-          placeholder={t('skolemiljo.elevundersokelsen.sokPlassholder')}
+          placeholder={t('elevundersokelsen.sokPlassholder')}
           value={sok ?? valgt?.navn ?? ''}
           onFocus={(e) => {
             e.currentTarget.select();
@@ -128,14 +128,14 @@ export function Enhetsvelger({ etikett, valg, verdi, onVelg }: { etikett: preact
         <Ikon navn={apen ? 'opp' : 'ned'} class="ikon-liten eu-velger-pil" />
       </div>
       <div class="eu-velger-liste" hidden={!apen}>
-        {synlige.length === 0 && <p class="eu-velger-tom">{t('skolemiljo.elevundersokelsen.ingenTreff')}</p>}
-        <div id={listeId} role="listbox" aria-label={t('skolemiljo.elevundersokelsen.treff')}>
+        {synlige.length === 0 && <p class="eu-velger-tom">{t('elevundersokelsen.ingenTreff')}</p>}
+        <div id={listeId} role="listbox" aria-label={t('elevundersokelsen.treff')}>
         {grupper.map(({ gruppe, tittel }) => {
           const iGruppen = synlige.filter((v) => v.gruppe === gruppe);
           if (iGruppen.length === 0) return null;
           const overskrift = `${id}-${gruppe}`;
           return (
-            <div key={gruppe} role="group" aria-labelledby={tittel ? overskrift : undefined} aria-label={tittel ? undefined : t('skolemiljo.elevundersokelsen.ingen')}>
+            <div key={gruppe} role="group" aria-labelledby={tittel ? overskrift : undefined} aria-label={tittel ? undefined : t('elevundersokelsen.ingen')}>
               {tittel && (
                 <p id={overskrift} role="presentation" class="eu-velger-gruppe">
                   {tittel}
@@ -167,9 +167,9 @@ export function Enhetsvelger({ etikett, valg, verdi, onVelg }: { etikett: preact
         <p class="eu-velger-hint" aria-live="polite">
           {sok
             ? flere > 0
-              ? t('skolemiljo.elevundersokelsen.flereTreff', { antall: String(flere) })
+              ? t('elevundersokelsen.flereTreff', { antall: String(flere) })
               : ''
-            : t('skolemiljo.elevundersokelsen.skrivForSkoler', { antall: String(antallSkoler) })}
+            : t('elevundersokelsen.skrivForSkoler', { antall: String(antallSkoler) })}
         </p>
       </div>
     </div>

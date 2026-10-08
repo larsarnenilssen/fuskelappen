@@ -8308,3 +8308,8 @@ a.panel-videre:hover .panel-videre-tekst {
     grid-column: 2;
   }
 }
+
+/* Bryteren for dagens jukselapp under «Tilpass» (fase 8). Kortet har stilene sine i jukselapp.css. */
+.tilpass-jukselapp {
+  margin-top: var(--rom-3);
+}

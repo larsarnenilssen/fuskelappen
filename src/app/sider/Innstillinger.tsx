@@ -5,6 +5,7 @@ import { eksportfilnavn, lagEksport, lesEksport, velgFylke, type Innstillinger a
 import { KildestatusIndikator } from '../Kildestatusindikator.tsx';
 import { fylker } from '../Stedmerknad.tsx';
 import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
+import { Jukselappbryter } from '../Jukselapp.tsx';
 import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { FLYTTEPARAMETER, lesFlytting } from '../flytting.ts';
 import { erstattAdresse } from '../ruter.ts';
@@ -141,6 +142,11 @@ export default function Innstillinger({ sporring }: SideProps) {
         ]}
         onVelg={(tema) => sett({ tema })}
       />
+
+      <fieldset class="valggruppe">
+        <legend>{t('forside.jukselapp.legend')}</legend>
+        <Jukselappbryter id="innst-jukselapp" />
+      </fieldset>
 
       <fieldset class="valggruppe">
         <legend>{t('innstillinger.sted.legend')}</legend>

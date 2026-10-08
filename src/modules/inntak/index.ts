@@ -70,6 +70,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return (await hentInnhold()).frister;
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 086).
+    return (await import('./fakta.ts')).fakta();
+  },
   kilder: ['opplaeringslova', 'opplaeringsforskrifta', 'udir-retten-til-vgo', 'udir-merknader-ofo', 'udir-mer-opplaering', 'udir-mer-opplaering-voksne', 'udir-fullforingsretten-iop', 'udir-klageinstanser', 'vestland-forskrift-inntak', 'udir-fag-og-timefordeling-grunnskole', 'vilbli'],
   status: 'aktiv',
 };

@@ -19,6 +19,19 @@ declare module 'virtual:fagroller' {
   export const laereplaner: Record<string, string>;
 }
 
+declare module 'virtual:jukselappfag' {
+  /** Fagene til dagens jukselapp: kode, navn på bokmål og nynorsk, årstimer og årsramme (t60, t45). Avgjørelse 086. */
+  const fag: [string, string, string, number, number, number][];
+  export default fag;
+}
+
+declare module 'virtual:jukselappeu' {
+  import type { JukselappEu } from './modules/elevundersokelsen/jukselapp.ts';
+  /** Mobbing og indeksene i Elevundersøkelsen for Vg1, til dagens jukselapp (avgjørelse 086). Null uten data. */
+  const eu: JukselappEu | null;
+  export default eu;
+}
+
 declare module 'virtual:fagsok' {
   /** Programområdene, fagkodene og årstimene til fagsøket i kalkulatorene, fra fagindeksen (avgjørelse 049). */
   const data: {

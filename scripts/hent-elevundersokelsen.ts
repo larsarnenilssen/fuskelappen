@@ -13,7 +13,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
-import { type Elevundersokelsen, elevundersokelsenSkjema } from '../src/modules/skolemiljo/elevundersokelsen/skjema.ts';
+import { type Elevundersokelsen, elevundersokelsenSkjema } from '../src/modules/elevundersokelsen/skjema.ts';
 import { hentJson, lesForrige, skrivEndringer, skrivHvisEndret } from './data/hent.ts';
 import { byggResultater, type Rad, sammenlignResultater, type Sporsmal, validerResultater } from './elevundersokelsen/bygg.ts';
 

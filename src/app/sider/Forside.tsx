@@ -16,8 +16,9 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from '../Forsidegruppe.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
-import { Forsidepanel, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
+import { Forsidepanel, JUKSELAPPVISNING, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
+import { Jukselappbryter } from '../Jukselapp.tsx';
 import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
@@ -199,6 +200,10 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
           {t(`forside.tilpass.visning.${v.id}`)}
         </label>
       ))}
+      {/* Den samme bryteren som under Innstillinger (eier 08.10.2026). */}
+      <div class="tilpass-jukselapp">
+        <Jukselappbryter id="tilpass-jukselapp" />
+      </div>
     </fieldset>
   );
   return (
@@ -273,8 +278,11 @@ export default function Forside() {
   // Visningene i panelet som brukeren har slått på (avgjørelse 081). Med «Bare favoritter» står de som er favoritter,
   // hver for seg, i stedet for kortene sine.
   const skjult = forside.skjult ?? [];
-  const paa = VISNINGER.filter((v) => !skjult.includes(v.id));
-  const somFavoritt = paa.filter((v) => v.favoritt !== null && favoritter.includes(v.favoritt));
+  // Dagens jukselapp er den fjerde visningen når brukeren har slått den på (eier 08.10.2026, avgjørelse 086).
+  const jukselappPa = forside.jukselapp === true;
+  const paa = [...VISNINGER.filter((v) => !skjult.includes(v.id)), ...(jukselappPa ? [JUKSELAPPVISNING] : [])];
+  // Jukselappen har ingen side å være favoritt. Med «Bare favoritter» står den likevel når den er slått på.
+  const somFavoritt = paa.filter((v) => (v.favoritt !== null && favoritter.includes(v.favoritt)) || v.id === 'jukselapp');
   const visesSomVisning = (f: string) => somFavoritt.some((v) => v.favoritt === f);
   const iSidekolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sidegrupper = grupper.filter(iSidekolonnen);

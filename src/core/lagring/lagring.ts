@@ -43,6 +43,13 @@ export const forsideSkjema = z.strictObject({
   skjult: z.optional(z.array(z.string())),
   /** Visningen brukeren har valgt i panelet øverst: kalenderen, nyhetene eller tallene (avgjørelse 081). */
   visning: z.optional(z.string()),
+  /** Dagens jukselapp på forsiden (fase 8). Av fra start, så den mangler til brukeren slår den på. */
+  jukselapp: z.optional(z.boolean()),
+  /**
+   * Datoen dagens jukselapp sist ble vist først i panelet. Første besøk en ny dag står panelet på jukselappen (eier
+   * 08.10.2026, alternativ C i avgjørelse 086).
+   */
+  jukselappVist: z.optional(z.string()),
 });
 
 export const lagretSkjema = z.strictObject({
@@ -93,6 +100,8 @@ export const FLYTTEDE_FAVORITTER: Readonly<Record<string, string>> = {
   'vurdering:fag-og-svenneproven': 'eksamen:fag-og-svenneproven',
   'vurdering:klage-pa-karakter': 'eksamen:klage-pa-karakter',
   'vurdering:frister': 'eksamen:frister',
+  // Elevundersøkelsen ble egen modul (avgjørelse 087).
+  'skolemiljo:elevundersokelsen': 'elevundersokelsen:oversikt',
 };
 
 const flyttFavoritter = (liste: readonly string[]): string[] => [...new Set(liste.map((id) => FLYTTEDE_FAVORITTER[id] ?? id))];

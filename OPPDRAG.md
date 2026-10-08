@@ -1,6 +1,6 @@
 # OPPDRAG – Jukselappen
 
-**Versjon:** 1.5 · 07.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm))
+**Versjon:** 1.6 · 08.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm). 1.5 → 1.6 (08.10.2026): fase 8 levert, og velkomsten i fase 10 spør om dagens jukselapp)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -204,9 +204,9 @@ Skjemaet defineres med zod og valideres i testene.
   - **Læreplanverket:** Overordnet del, Fag og læreplaner.
   - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
-  - **Skolemiljø:** Skolemiljø (fase 7).
+  - **Skolemiljø:** Aktivitetsplikt og skoleregler (fase 7, før «Skolemiljø») og Elevundersøkelsen. *(Eier 08.10.2026:)* Elevundersøkelsen er egen modul, og modulen Skolemiljø har fått et navn som ikke er det samme som kategorien (avgjørelse 087).
   - **Oppslag:** Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen sto her, og forsiden hadde gruppen «Neste datoer» (avgjørelse 066). *(Eier 07.10.2026:)* Kalender og Nyheter står ikke lenger under «Oppslag», men i panelet øverst.
-  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag».
+  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag». *(Eier 08.10.2026:)* Dagens jukselapp er en fjerde visning i panelet når brukeren har slått den på (avgjørelse 086).
   - Lokale regler (fase 9) legges inn og meldes inn fra Innstillinger, ved valget av fylke og skole.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
@@ -595,11 +595,12 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 - *(Ønske fra eier 04.10.2026)* **Dagens jukselapp** (navnet endret fra «Dagens fuskelapp», eier 04.10.2026)**:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet.
   - Dagens jukselapp skrus av og på fra forsiden (eier 04.10.2026), og gjerne også under Innstillinger. Den er av fra start, og valget lagres lokalt som de andre valgene.
-  - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.
+  - Når den er på, står en rubrikk «Dagens jukselapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden. *(Eier 08.10.2026:)* Kortet viser ikke kildene. De står på siden lenken går til.
   - Jukselappen byttes a) automatisk hver dag (samme faktum hele dagen, valgt ut fra datoen), eller b) når brukeren trykker på et tegn for ny jukselapp ved siden av overskriften. Eier velger a, b eller begge når forslaget legges fram.
   - Modulene bidrar med fakta gjennom en ny funksjon i manifestet (som `frister()`), så nye moduler kommer med av seg selv. Fakta hentes fra innholdet, regelsettene og dataene appen alt har. Det gjøres ingen kall til eksterne tjenester, og alt virker uten nett.
   - Innhold for fylke og skole vises bare når brukeren har valgt fylket eller skolen. Teksten står på bokmål og nynorsk.
   - Når den er av, kan forsiden ha en kort tekst med en knapp som slår på dagens jukselapp. Teksten kan lukkes for godt.
+  - *(Eier 08.10.2026:)* Ingen tekst på forsiden som slår den på. Bryteren står under Innstillinger og under «Tilpass» på forsiden, og velkomsten i fase 10 spør om brukeren vil slå den på.
 
 **Åpne punkter (avklares i fasen, før det bygges)**
 
@@ -610,7 +611,11 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 **Kontrollpunkt:** Eier kontrollerer visningen og fakta i dagens jukselapp.
 
+- Levert i 0.43.0 (08.10.2026): **Dagens jukselapp** som fjerde visning i panelet øverst på forsiden, med samme oppsett som kalenderen, nyhetene og tallene (avgjørelse 086). Av fra start, med samme bryter under «Tilpass» og Innstillinger. Første besøk hver dag står panelet på jukselappen (alternativ C). Byttes hver dag og med knappen «Ny jukselapp». Fakta fra `fakta()` i manifestene: begreper, forklaringer, regler, frister og steg i veiviserne, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimer og årsramme i fagene, og tall fra Videregående i tall. Innhold som ikke er kontrollert, vises (eier 08.10.2026). Elevundersøkelsen er egen modul under Skolemiljø, og modulen Skolemiljø heter «Aktivitetsplikt og skoleregler» (avgjørelse 087). Forslaget og eiers svar står i `docs/arbeidsordrer/fase-8-forslag.md`. **Fase 8 er levert.** Eier har godkjent designet underveis, og faktaene tas i kontrollrundene.
+
 ### Fase 9 – Lokale regler for fylke og skole
+
+*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-9.md`.
 
 *(Eier 07.10.2026:)* Brukerne melder inn lokale regler, og eier godkjenner dem. Godkjente regler vises for alle som har valgt fylket eller skolen. Lokale profiler som bare lagres og deles som fil eller lenke, er tatt ut.
 
@@ -652,8 +657,9 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
   3. **Fylke og skole:** hva valget gjør, og valget kan gjøres i trinnet.
   4. **Lokale regler:** at brukeren kan melde inn regler for eget fylke eller egen skole (fase 9), med lenke dit.
   5. **Hvem du er:** rollen og hva brukeren vil bruke appen til, med anbefalte favoritter som kan legges til. Trinnet viser også hvordan favorittene virker. Kan være ett eller flere trinn.
-  6. **Installere appen** på mobil eller skrivebord.
-  7. **Takk:** appen er et privat prosjekt laget med hjelp av KI, og innspill om feil, mangler og forbedringer er velkomne (lenke til Tilbakemelding). Takk, og «Du er klar!».
+  6. **Dagens jukselapp:** spørsmål om brukeren vil slå på dagens jukselapp (fase 8), med bryteren i trinnet *(eier 08.10.2026)*.
+  7. **Installere appen** på mobil eller skrivebord.
+  8. **Takk:** appen er et privat prosjekt laget med hjelp av KI, og innspill om feil, mangler og forbedringer er velkomne (lenke til Tilbakemelding). Takk, og «Du er klar!».
 - Tekstene står på bokmål og nynorsk.
 
 **Utgangspunkt (forslag fra Claude, godtatt som utgangspunkt av eier 07.10.2026)**
@@ -725,7 +731,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 ## 6. Vedlikehold etter levering
 
 - Ny periode for SFS 2213 (reforhandles før 2028): ny regelfil og nye fasittester side om side med den gamle.
-- Kildevarsler behandles når de kommer. *(Eier 07.10.2026:)* Eier får e-post når noe har gått galt eller bør ses på, ikke når alt virker. Hver e-post har hele listen, og det som ikke løser seg selv, kommer igjen som påminnelse til det er løst (avgjørelse 085, `docs/EIER.md` punkt 6b).
+- Kildevarsler behandles når de kommer. *(Eier 07.10.2026:)* Eier får e-post når noe har gått galt eller bør ses på, ikke når alt virker. Hver e-post har hele listen, og det som ikke løser seg selv, kommer igjen som påminnelse til det er løst (avgjørelse 086, `docs/EIER.md` punkt 6b).
 - Innhold med status `bor_kontrolleres` gjennomgås minst årlig.
 - Nye moduler bestilles som nye oppdrag.
 

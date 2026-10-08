@@ -1,0 +1,77 @@
+/* Dagens jukselapp (fase 8, avgjørelse 086): en visning i panelet øverst på forsiden med samme oppsett som
+   kalenderen, nyhetene og tallene (eier 08.10.2026). Øverst hvor faktumet kommer fra og knappen for ny jukselapp, så
+   faktumet, og nederst lenken over hele bredden. Lastes med kortet (avgjørelse 082). */
+/* Like høy som kalenderen og nyhetene (eier 08.10.2026): faktumet fyller plassen mellom linjen øverst og lenken. */
+.jl-panel {
+  min-height: 16.75rem;
+}
+
+.jl-topp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  min-height: 2.75rem;
+  padding: var(--rom-1) var(--rom-2) var(--rom-1) var(--rom-3);
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.jl-under {
+  min-width: 0;
+  margin: 0;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.jl-ny {
+  flex: none;
+  gap: var(--rom-2);
+  min-height: 2.75rem;
+  padding-inline: var(--rom-1);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.jl-ny:hover {
+  text-decoration: underline;
+}
+
+/* Tittelen og faktumet midt i plassen mellom linjen øverst og lenken. */
+.jl-innhold {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--rom-1);
+  padding: var(--rom-3);
+}
+
+.jl-tittel {
+  margin: 0;
+  font-size: var(--str-m);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.jl-tekst {
+  margin: 0;
+  font-size: var(--str-m);
+  line-height: 1.45;
+}
+
+.jl-videre {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+/* Lenken har hele linjen. En svært lang tittel kortes av med «…». */
+.jl-lenke {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+a.jl-videre:hover .jl-lenke {
+  text-decoration: underline;
+}

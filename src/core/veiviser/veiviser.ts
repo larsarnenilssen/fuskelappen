@@ -123,6 +123,26 @@ export function tilstand(kart: Veiviserkart, steg: string, svar: readonly string
   return svar.length > 0 ? { steg, svar: svar.join('.') } : { steg };
 }
 
+/**
+ * Svarene på den korteste veien fra starten til `steg`, så en lenke kan åpne veiviseren der (dagens jukselapp,
+ * avgjørelse 086). Null når steget ikke kan nås.
+ */
+export function veiTil(kart: Veiviserkart, steg: string): string[] | null {
+  const ko: { id: string; svar: string[] }[] = [{ id: kart.start, svar: [] }];
+  const sett = new Set<string>();
+  while (ko.length > 0) {
+    const { id, svar } = ko.shift() as { id: string; svar: string[] };
+    if (id === steg) return svar;
+    if (sett.has(id)) continue;
+    sett.add(id);
+    const node = kart.steg.get(id);
+    if (!node) continue;
+    if (node.neste !== undefined) ko.push({ id: node.neste, svar });
+    for (const a of node.sporsmal?.svar ?? []) ko.push({ id: a.neste, svar: [...svar, a.id] });
+  }
+  return null;
+}
+
 /** Leser svarene fra adressen («tvil.nei» → ["tvil", "nei"]). */
 export function lesSvar(verdi: string | null): string[] {
   return verdi ? verdi.split('.').filter(Boolean) : [];

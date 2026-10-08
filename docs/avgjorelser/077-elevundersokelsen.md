@@ -26,3 +26,5 @@
 - **Søk i seriene:** Hvert valg er et søkefelt med liste (combobox etter ARIA 1.2). Uten søk står landet og fylkene. Med søk står treffene blant landet, fylkene og skolene, og «vgs» finner «videregående». Listen viser opptil 40 skoler.
 - **Beste resultat i tabellen:** Det beste tallet i hver rad har en ramme i tekstfargen og fet skrift, med «best i raden» for skjermlesere. Høyest er best for indeksene og lavest for mobbing. Like tall merkes alle, men er alle tallene i raden like, merkes ingen.
 - **Publiseringen:** Dataene fra Elevundersøkelsen hentes fra main når appen publiseres, som Grep og skoleregisteret (avgjørelse 018). Et nytt skoleår kommer da med i appen uten ny versjon, når kildesjekken har hentet det.
+
+**Endret 08.10.2026:** Elevundersøkelsen er egen modul med adressen `#/elevundersokelsen` (avgjørelse 087).

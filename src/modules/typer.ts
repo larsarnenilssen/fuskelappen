@@ -1,7 +1,7 @@
 // Manifestet hver modul eksporterer fra src/modules/<modul>/index.ts. Se docs/ARKITEKTUR.md.
 import type { ComponentType } from 'preact';
 import type { Tekstverdi } from '../core/i18n/tekst.ts';
-import type { Flerspraak, Frist } from '../core/innhold/skjema.ts';
+import type { Flerspraak, Frist, Gyldighet, KildeRef } from '../core/innhold/skjema.ts';
 import type { Sokeoppforing } from '../core/sok/sok.ts';
 import type { Ikonnavn } from '../components/Ikon.tsx';
 import type { KategoriId } from './kategorier.ts';
@@ -34,6 +34,31 @@ export interface Favorittbar {
   rute: string;
   /** Eget ikon. Uten står ikonet til inngangen eller modulen over (ikonForFavoritt, avgjørelse 056). */
   ikon?: Ikonnavn;
+}
+
+/**
+ * Et faktum til dagens jukselapp på forsiden (fase 8, avgjørelse 086): én til tre setninger fra innholdet, regelsettene
+ * eller dataene modulen alt har, med lenke til stedet i appen og kildene.
+ */
+export interface Faktum {
+  /** Globalt unik id, f.eks. «begreper:arsverk». */
+  id: string;
+  /** Tittelen på elementet faktumet er hentet fra, f.eks. «Årsverk». */
+  tittel: Flerspraak;
+  tekst: Flerspraak;
+  /** Linjen under faktumet: hvor det kommer fra, f.eks. modulen eller dokumentet. */
+  under: Tekstverdi;
+  /** Lenken nederst, kort, f.eks. «Fraværsgrensen» eller «HTA § 7». */
+  lenke: Flerspraak;
+  /** Hash-rute uten #. */
+  rute: string;
+  kilder: KildeRef[];
+  /** Når fristen er, for frister: «1. mars», «Ti dager», «Hvert halvår». */
+  naar?: Flerspraak;
+  /** Paragrafene til «I regelverket». Uten hentes de fra kildene (Kortfot). */
+  paragrafer?: string[];
+  /** Fylkes- og skoleinnhold vises bare når fylket eller skolen er valgt. Uten gjelder faktumet hele landet. */
+  gyldighet?: Gyldighet;
 }
 
 /** En inngang til modulen på forsiden. Uten innganger står modulen selv som én boks. */
@@ -78,6 +103,11 @@ export interface Modulmanifest {
   favorittbare(ider?: readonly string[]): Promise<Favorittbar[]>;
   /** Frister modulen eier. Samles i kalenderen (avgjørelse 066). */
   frister(): Promise<Frist[]>;
+  /**
+   * Fakta til dagens jukselapp (fase 8, avgjørelse 086). Lastes først når jukselappen vises, og bare for modulen som
+   * har dagen. En modul uten fakta gir en tom liste.
+   */
+  fakta(): Promise<Faktum[]>;
   /**
    * Boksene modulen har på forsiden under kategorien sin (avgjørelse 030). Uten innganger står modulen som én boks
    * med navn og beskrivelse.

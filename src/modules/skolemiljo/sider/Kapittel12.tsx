@@ -16,6 +16,7 @@ import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import { ELEVUNDERSOKELSEN_RUTE } from '../../elevundersokelsen/adresse.ts';
 import { paragrafRute } from '../../lov/data.ts';
 import type { SideProps } from '../../typer.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
@@ -154,7 +155,7 @@ export default function Kapittel12({ sporring }: SideProps) {
                     <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.kapittel12.skoleregler')} tekst={t('skolemiljo.kapittel12.skolereglerTekst')} />
                   </li>
                   <li>
-                    <Inngang {...UNDERSIDER.elevundersokelsen} tittel={t('skolemiljo.kapittel12.elevundersokelsen')} tekst={t('skolemiljo.kapittel12.elevundersokelsenTekst')} />
+                    <Inngang rute={ELEVUNDERSOKELSEN_RUTE} ikon="vurdering" tittel={t('skolemiljo.kapittel12.elevundersokelsen')} tekst={t('skolemiljo.kapittel12.elevundersokelsenTekst')} />
                   </li>
                 </ul>
               </section>

@@ -183,6 +183,19 @@ export function vekslSkjultGruppe(id: string): void {
   });
 }
 
+/**
+ * Slår dagens jukselapp av eller på (fase 8). Slått på blir den visningen i panelet øverst på forsiden, så brukeren ser
+ * den med en gang.
+ */
+export function settJukselapp(jukselapp: boolean): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp, ...(jukselapp ? { visning: 'jukselapp' } : {}) } }));
+}
+
+/** Første besøk en ny dag: panelet står på dagens jukselapp, og datoen huskes (alternativ C, avgjørelse 086). */
+export function visJukselappForst(dato: string): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, visning: 'jukselapp', jukselappVist: dato } }));
+}
+
 /** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */
 export function settBareFavoritter(bareFavoritter: boolean): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, bareFavoritter } }));
