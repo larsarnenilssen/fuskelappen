@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Rettet
 
+- **Videregående i tall:** Uten valgt fylke står det «i hele landet» med liten h inni titler og tekster, f.eks. «Lærerne i videregående i hele landet» i Arbeidsplan.
 - **Arbeidsplan:** Teksten under fordelingen når fag og funksjoner ikke fyller hele stillingen, er skrevet om. Den sier at delen som står igjen, er fordelt på samme måte som undervisning: en del er annen planfestet tid, f.eks. møter og annet elevrettet arbeid, og en del er tid læreren disponerer selv.
 - **Merker, piler og ikoner** ved tekst står midt i teksthøyden i hele appen, f.eks. pilen i «Mer i Videregående i tall» og merkene «SSB» og «Udir».
 

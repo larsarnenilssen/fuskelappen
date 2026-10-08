@@ -49,6 +49,8 @@ export function endringTekst(t: T, naa: Verdi, foer: Verdi, aar: number | string
 
 /** Stedsnavnet: fylket uten «fylkeskommune», eller «Hele landet». */
 export const stedsnavn = (d: Statistikk, enhet: string, t: T) => (enhet === 'L' ? t('statistikk.landet') : (d.enheter[enhet]?.navn ?? enhet));
+/** Stedet inni en setning: «hele landet» med liten forbokstav, ellers fylket. */
+const stedITekst = (d: Statistikk, enhet: string, t: T) => (enhet === 'L' ? t('statistikk.landetITekst') : stedsnavn(d, enhet, t));
 
 function Flis({ etikett, verdi, under }: { etikett: string; verdi: string; under: ComponentChildren }) {
   return (
@@ -249,7 +251,7 @@ export function LaereplassBoks({ fylke }: { fylke: string | null }) {
   if (!s) return null;
   const { d, enhet } = s;
   return (
-    <Tallboks tittel={t('statistikk.boks.laerling', { sted: stedsnavn(d, enhet, t) })} fylke={fylke}>
+    <Tallboks tittel={t('statistikk.boks.laerling', { sted: stedITekst(d, enhet, t) })} fylke={fylke}>
       <p>
         {t('statistikk.boks.laerlingTekst', {
           andel: tekstFor(t, sisteVerdi(d.formidling.desember[enhet]), 'prosent'),
@@ -270,7 +272,7 @@ export function FravaerBoks({ fylke, skole }: { fylke: string | null; skole: { i
   const { d, enhet } = s;
   const skolens = skole?.id ? (d.fravaer.total[`S${skole.id}`] ?? null) : null;
   return (
-    <Tallboks tittel={t('statistikk.boks.fravaer', { sted: stedsnavn(d, enhet, t) })} fylke={fylke}>
+    <Tallboks tittel={t('statistikk.boks.fravaer', { sted: stedITekst(d, enhet, t) })} fylke={fylke}>
       <p>
         {t('statistikk.boks.fravaerTekst', {
           dager: tekstFor(t, d.fravaer.total[enhet] ?? null, 'dager'),
@@ -290,7 +292,7 @@ export function EksamenBoks({ fylke }: { fylke: string | null }) {
   if (!s) return null;
   const { d, enhet } = s;
   return (
-    <Tallboks tittel={t('statistikk.boks.eksamen', { sted: stedsnavn(d, enhet, t) })} fylke={fylke}>
+    <Tallboks tittel={t('statistikk.boks.eksamen', { sted: stedITekst(d, enhet, t) })} fylke={fylke}>
       <table class="st-tabell st-tabell-liten">
         <caption class="skjult-visuelt">{eksamenTekst(t, d)}</caption>
         <thead>
