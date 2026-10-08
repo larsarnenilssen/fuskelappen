@@ -8313,3 +8313,140 @@ a.panel-videre:hover .panel-videre-tekst {
 .tilpass-jukselapp {
   margin-top: var(--rom-3);
 }
+
+/* Dagens jukselapp første besøk på dagen (variant B, eier 08.10.2026): valgene i overskriften er byttet ut med det gule
+   merket «Dagens jukselapp» og en lenke tilbake til brukerens egen visning. Raden går fram til pilen som lukker
+   panelet. På smale skjermer står det «Til kalenderen» i stedet for «Tilbake til kalenderen». */
+.panel-dagens {
+  right: var(--trykkflate);
+  justify-content: space-between;
+  gap: var(--rom-2);
+}
+
+.panel-dagens-merke {
+  padding: var(--rom-1) var(--rom-3);
+  border-radius: 999px;
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+  font-size: var(--str-s);
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.panel-tilbake {
+  min-height: var(--trykkflate);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--farge-tekst-dempet);
+  font: inherit;
+  font-size: var(--str-s);
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.panel-tilbake:hover {
+  color: var(--farge-tekst);
+}
+
+.panel-tilbake-kort {
+  display: none;
+}
+
+@media (max-width: 23.5rem) {
+  .panel-tilbake-lang {
+    display: none;
+  }
+
+  .panel-tilbake-kort {
+    display: inline;
+  }
+}
+
+/* ---------- Overlegg (avgjørelse 088) ----------
+   Meldingen om ny versjon, og velkomsten i fase 10: et kort midt på skjermen over et uklart slør, som søket. Kortet har
+   en tynn ramme i merkefargen, og luft mellom delene (eier 08.10.2026). */
+.overlegg-lag {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--rom-4) var(--rom-3);
+  background: var(--farge-slor);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  overscroll-behavior: contain;
+}
+
+.overlegg {
+  width: 100%;
+  max-width: 28rem;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: var(--rom-6) var(--rom-5) var(--rom-5);
+  border: var(--strek) solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-bakgrunn);
+  color: var(--farge-tekst);
+  box-shadow: var(--skygge-flytende);
+}
+
+/* Fokus settes på kortet når det åpnes, uten ring rundt hele kortet. */
+.overlegg:focus {
+  outline: none;
+}
+
+.overlegg-merke {
+  display: inline-block;
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-1) var(--rom-3);
+  border-radius: 999px;
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.overlegg h2 {
+  margin: 0 0 var(--rom-4);
+  font-size: var(--str-l);
+  line-height: 1.3;
+}
+
+.overlegg-liste {
+  margin: 0 0 var(--rom-5);
+  padding-left: 1.2em;
+}
+
+.overlegg-liste li {
+  margin-bottom: var(--rom-3);
+  line-height: 1.5;
+}
+
+.overlegg-liste li:last-child {
+  margin-bottom: 0;
+}
+
+.overlegg-knapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin-top: var(--rom-5);
+}
+
+.overlegg-knapper .knapp {
+  flex: 1 1 auto;
+}
+
+.overlegg-liten {
+  margin: var(--rom-4) 0 0;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  line-height: 1.45;
+}

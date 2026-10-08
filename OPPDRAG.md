@@ -667,7 +667,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - **Åpnes igjen** med en knapp under Innstillinger og en diskré lenke nederst på forsiden, ved forbeholdet («Ny her? Se velkomsten»).
 - **Første besøk:** Vinduet åpnes bare av seg selv når første besøk lander på forsiden. En delt lenke til en side går rett dit.
 - **Animasjonene** lages i CSS eller SVG, ikke som video, og lastes først når vinduet åpnes, så startpakken ikke vokser. For WCAG 2.1 AA (2.2.2) stopper en gjentakende animasjon av seg selv innen fem sekunder eller har en pauseknapp. Med redusert bevegelse på enheten vises ingen animasjon.
-- **Vinduet** holder fokus inne til det lukkes, og Esc lukker det. Bakgrunnen gjøres uklar også i WebKit.
+- **Vinduet** holder fokus inne til det lukkes, og Esc lukker det. Bakgrunnen gjøres uklar også i WebKit. Det bygger på `Overlegg` fra meldingen om ny versjon (avgjørelse 088).
 - **Rollen** gir anbefalte favoritter og kan sette filteret «hvem det gjelder» i kalenderen.
 - **Installasjon:** egen hjelp for iPhone og iPad (Del, så Legg til på Hjem-skjerm), Android og skrivebord. Trinnet hoppes over når appen alt er installert.
 

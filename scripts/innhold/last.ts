@@ -18,9 +18,10 @@ import {
 import { regelsettSkjema } from '../../src/core/regler/skjema.ts';
 import { lovutvalgSkjema } from '../../src/modules/lov/skjema.ts';
 import { nyhetskilderSkjema } from '../../src/modules/nyheter/kildeskjema.ts';
+import { versjonerSkjema } from '../../src/core/versjon/skjema.ts';
 import { byggBegrepsord, type Begrepsord, lenkBegreper } from '../../src/core/innhold/begrepslenker.ts';
 
-type Filtype = 'kilderegister' | 'paralleller' | 'fylker' | 'fylkeslenker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'nyhetskilder' | 'innhold' | 'regelsett';
+type Filtype = 'kilderegister' | 'paralleller' | 'fylker' | 'fylkeslenker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'nyhetskilder' | 'versjoner' | 'innhold' | 'regelsett';
 
 const skjemaer: Record<Filtype, ZodType> = {
   kilderegister: kilderegisterSkjema,
@@ -31,6 +32,7 @@ const skjemaer: Record<Filtype, ZodType> = {
   praksis: praksisfilSkjema,
   lovutvalg: lovutvalgSkjema,
   nyhetskilder: nyhetskilderSkjema,
+  versjoner: versjonerSkjema,
   innhold: innholdsfil,
   regelsett: regelsettSkjema,
 };
@@ -45,6 +47,7 @@ export function filtype(relSti: string): Filtype | null {
   if (sti === 'content/lovverk.yaml') return 'lovutvalg';
   if (sti === 'content/privatskole/paralleller.yaml') return 'paralleller';
   if (sti === 'content/nyheter/kilder.yaml') return 'nyhetskilder';
+  if (sti === 'content/versjoner.yaml') return 'versjoner';
   if (sti.startsWith('content/') || sti.startsWith('tests/fixtures/innhold/')) return 'innhold';
   if (sti.startsWith('rules/') || sti.startsWith('tests/fixtures/regler/')) return 'regelsett';
   return null;

@@ -45,6 +45,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Claude fletter PR-ene på eiers vegne når CI er grønn og det ikke er konflikter (eier 01.10.2026). Er CI rød, rettes feilen først.
 - Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `test/` ved siden av appen, f.eks. `https://jukselappen.no/test/` (avgjørelse 045 og 065).
 - Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026).
+- Versjons-PR-en har 1–4 korte punkter om det som er nytt i `content/versjoner.yaml`, på bokmål og nynorsk. De vises i meldingen om ny versjon i appen (avgjørelse 088, testes).
 - Oppdater `CHANGELOG.md` for alt brukeren merker.
 - Tekniske valg av betydning dokumenteres i `docs/avgjorelser/NNN-tittel.md`: kontekst, valg og konsekvens, noen få linjer.
 - Er noe faglig eller juridisk uklart: spør eier. Gjett aldri på hva en regel betyr.
@@ -87,6 +88,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Native scroll og tilbakenavigasjon. Ingen egne sveipebevegelser for navigasjon.
 - Pinch-zoom slås ikke av globalt.
 - Forklaringer er skjult til brukeren åpner dem.
+- Meldinger over hele appen, som meldingen om ny versjon og velkomsten, bruker `Overlegg`: et kort over et uklart slør, med tynn ramme i merkefargen (eier 08.10.2026, avgjørelse 088).
 - Nye sider med flere deler står i to kolonner på skrivebord (`ToKolonner`, fra 64rem): de første delene til venstre og resten til høyre, så rekkefølgen på mobil er den samme. Kildene til siden står i en lukket boks nederst i høyre kolonne (`Kildeboks`), ikke rett på bakgrunnen (eier 06.10.2026, avgjørelse 074).
 - Kort, bokser og rader som kan åpnes, husker for siden om de er åpne (`useHusketApen`), så tilbake fra en lenke (f.eks. en paragraf under «I regelverket») viser siden slik den var, der den var (eier 06.10.2026, avgjørelse 072).
 - Kort og bokser med kilder har regelverket og kildene som lukkede rader nederst (`Kortfot`): «I regelverket (n)» med paragrafene i Lov og forskrift, og «Kilder (n)». De har ikke egne kildelinjer. En knapp i kortet, f.eks. «Mer om …», står over radene. Lister med lenkekort (f.eks. overganger) har ingen kilder i kortene, men radene samlet under listen (eier 06.10.2026, avgjørelse 071). Unntak: utregningen i kalkulatorene, kilderadene i poengberegningen og dagens jukselapp, som lenker til siden der kildene står (eier 08.10.2026).

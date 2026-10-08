@@ -7,13 +7,19 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til
 
 - **Nye begreper:** Læreplan i fag, Kompetansemål, Fagkode, Årstimetall, Vurderingsordning, Sidemål, Egenmelding, Tilbudsstruktur, Instruktør, Rådgiving, Oppfølgingstjenesten og Elevråd. Ordene lenker til begrepene der de står i teksten.
+- **Ny versjon:** Når appen har lastet ned en ny versjon, kommer en melding over appen med det som er nytt, og knappene «Oppdater nå» og «Senere». Den kommer bare for nye versjoner, ikke når nyhetene, tallene eller kildestatusen er oppdatert. Da tas oppdateringen i bruk neste gang du åpner appen.
 
 ### Endret
 
+- **Dagens jukselapp** er merket med det gule merket «Dagens jukselapp» når den står først på dagen, med «Tilbake til …» kalenderen, nyhetene eller tallene. Visningen du har valgt, blir ikke lenger byttet ut med jukselappen.
 - **Ungdomsrett** forklarer at retten også kalles fullføringsretten, og «fullføringsretten» i teksten lenker dit.
 - **Spesialundervisning** i teksten lenker til Individuell tilrettelegging, fordi Udir skriver at det gamle begrepet nå er delt i tre rettigheter. **PPT** lenker til PP-tjenesten.
 - **Søket** finner veiviseren for inntak på «inntakskontor», «VIGO» og «Vilbli».
 - **Nyhetene** hentes tre ganger om dagen (morgen, formiddag og ettermiddag), så de kommer også når GitHub hopper over den første hentingen.
+
+### Rettet
+
+- **Kildestatusen:** Statistikkbanken sto som «feilet» når tallene var uendret, og to kilder for Vestland pekte til den gamle adressen vlfk.no.
 
 ## [0.43.0] – 2026-10-08
 

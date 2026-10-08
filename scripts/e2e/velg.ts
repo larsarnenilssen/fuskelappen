@@ -94,10 +94,16 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       grunner.push(`${fil}: testen selv`);
       continue;
     }
-    // Dagens jukselapp (avgjørelse 086): kortet, utvalget og faktaene i modulene.
-    if (/^src\/(app\/Jukselapp|core\/jukselapp\/|modules\/.+\/(fakta|jukselappfag|jukselapp)\.ts$)/.test(fil)) {
+    // Dagens jukselapp (avgjørelse 086): kortet, panelet med merket, utvalget og faktaene i modulene.
+    if (/^src\/(app\/(Jukselapp|Forsidepanel)|core\/jukselapp\/|modules\/.+\/(fakta|jukselappfag|jukselapp)\.ts$)/.test(fil)) {
       speker.add('jukselapp');
       grunner.push(`${fil}: dagens jukselapp`);
+    }
+    // Meldingen om ny versjon (avgjørelse 088): overlegget og punktene.
+    if (/^src\/(app\/Oppdateringsvarsel|components\/Overlegg|core\/versjon\/)/.test(fil) || fil === 'content/versjoner.yaml') {
+      speker.add('nyversjon');
+      grunner.push(`${fil}: meldingen om ny versjon`);
+      if (fil === 'content/versjoner.yaml') continue;
     }
     if (fil === 'scripts/bygg-sokeindeks.ts') {
       speker.add('modul-og-sok');

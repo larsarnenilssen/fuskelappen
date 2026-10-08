@@ -12,6 +12,7 @@ import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesLopskilder, lesSkoler, lesSkolenummer, lesTilbudsindeks, lesUtdanningslop } from '../data/les.ts';
 import { kobleSkoler } from '../../src/modules/opplaeringslop/skoler.ts';
 import { uenigheter } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
+import { lagVersjonsfil, type Versjonsomtale } from '../../src/core/versjon/versjoner.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -300,6 +301,36 @@ export function begrepsordPlugin(rot: string): Plugin {
       const mappe = join(rot, 'content/begreper');
       if (existsSync(mappe)) for (const f of readdirSync(mappe)) if (f.endsWith('.yaml')) this.addWatchFile(join(mappe, f));
       return `export default ${JSON.stringify(lesBegrepsord(rot).filter((b) => b.fylke === null))};`;
+    },
+  };
+}
+
+/**
+ * versjon.json ved siden av appen: versjonsnummeret og det som er nytt i versjonen, fra content/versjoner.yaml
+ * (avgjørelse 088). Filen ligger ikke i service workeren, så den gamle appen kan hente den nye filen når en ny versjon
+ * er lastet ned, og vise meldingen bare når versjonsnummeret er nytt.
+ */
+export function versjonPlugin(rot: string, versjon: string): Plugin {
+  const fil = (): string => {
+    const { versjoner } = lesFil(rot, join(rot, 'content/versjoner.yaml')) as { versjoner: Versjonsomtale[] };
+    return JSON.stringify(lagVersjonsfil(versjoner, versjon));
+  };
+  let base = '/';
+  return {
+    name: 'jukselappen:versjon',
+    configResolved(config) {
+      base = config.base;
+    },
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if ((req.url ?? '').split('?')[0] !== `${base}versjon.json`) return next();
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.setHeader('Cache-Control', 'no-store');
+        res.end(fil());
+      });
+    },
+    generateBundle() {
+      this.emitFile({ type: 'asset', fileName: 'versjon.json', source: fil() });
     },
   };
 }

@@ -25,7 +25,7 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { useTilpassetListe } from './tilpassListe.ts';
 import { useDagensJukselapp } from './Jukselapp.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
-import { settForsidevisning, useTekst, useTilstand, vekslGruppe, visJukselappForst } from './tilstand.ts';
+import { forlatJukselapp, settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilstand.ts';
 
 /** Gruppen med panelet i rekkefølgen på forsiden. */
 export const PANEL = 'panel';
@@ -79,18 +79,27 @@ export function Forsidepanel({ visninger }: { visninger: readonly Visning[] }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
   const lukket = useLukket(PANEL);
-  // Første besøk en ny dag står panelet på dagens jukselapp (eier 08.10.2026, alternativ C i avgjørelse 086). Bytter
-  // brukeren visning, gjelder valget resten av dagen.
+  // Første besøk en ny dag står panelet på dagens jukselapp (eier 08.10.2026, alternativ C i avgjørelse 086). Valgene
+  // er da byttet ut med det gule merket «Dagens jukselapp» og «Tilbake til …» brukerens egen visning, som gjelder
+  // resten av dagen (variant B, eier 08.10.2026). Har brukeren valgt jukselappen selv, står valgene som vanlig.
   const idag = iDag();
-  const nyDag = visninger.includes('jukselapp') && forside.jukselappVist !== idag;
-  useEffect(() => {
-    if (nyDag) visJukselappForst(idag);
-  }, [nyDag, idag]);
   const forste = visninger[0];
   if (!forste) return null;
   if (visninger.length === 1) return <Visningsgruppe id={forste} />;
-  const aktiv = nyDag ? 'jukselapp' : (visninger.find((v) => v === forside.visning) ?? forste);
-  const faner = (
+  const egen = visninger.find((v) => v === forside.visning) ?? forste;
+  const dagens = visninger.includes('jukselapp') && egen !== 'jukselapp' && forside.jukselappForlatt !== idag;
+  const aktiv = dagens ? 'jukselapp' : egen;
+  // Visningen «Tilbake til …» går til. Er jukselappen brukerens egen visning, vises ikke merkingen.
+  const tilbake = egen === 'jukselapp' ? 'neste' : egen;
+  const faner = dagens ? (
+    <div class="panel-faner panel-dagens">
+      <span class="panel-dagens-merke">{t('forside.panel.dagens')}</span>
+      <button type="button" class="panel-tilbake" onClick={() => forlatJukselapp(idag)}>
+        <span class="panel-tilbake-lang">{t(`forside.panel.tilbake.${tilbake}`)}</span>
+        <span class="panel-tilbake-kort">{t(`forside.panel.tilbakeKort.${tilbake}`)}</span>
+      </button>
+    </div>
+  ) : (
     <div class="panel-faner" role="group" aria-label={t('forside.panel.legend')}>
       {visninger.map((v) => (
         <button key={v} type="button" class="panel-fane" aria-pressed={v === aktiv} onClick={() => settForsidevisning(v)}>
