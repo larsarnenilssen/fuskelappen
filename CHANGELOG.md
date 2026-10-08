@@ -17,6 +17,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Søket** finner veiviseren for inntak på «inntakskontor», «VIGO» og «Vilbli».
 - **Nyhetene** hentes tre ganger om dagen (morgen, formiddag og ettermiddag), så de kommer også når GitHub hopper over den første hentingen.
 
+### Rettet
+
+- **Kildestatusen:** Statistikkbanken sto som «feilet» når tallene var uendret, og to kilder for Vestland pekte til den gamle adressen vlfk.no.
+
 ## [0.43.0] – 2026-10-08
 
 ### Lagt til

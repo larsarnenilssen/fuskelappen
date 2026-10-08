@@ -1225,7 +1225,7 @@ kilder:
   - id: vlfk-forskrift-inntak
     navn: Lokal forskrift om inntak til vidaregåande opplæring, Vestland fylkeskommune
     utgiver: Vestland fylkeskommune (Lovdata)
-    url: https://www.vlfk.no/
+    url: https://www.vestlandfylke.no/
     type: side
     niva: fylke
     fylke: "46"
@@ -1241,7 +1241,7 @@ kilder:
   - id: vlfk-skulereglar
     navn: Skulereglar for dei vidaregåande skulane i Vestland fylkeskommune
     utgiver: Vestland fylkeskommune (Lovdata)
-    url: https://www.vlfk.no/
+    url: https://www.vestlandfylke.no/
     type: side
     niva: fylke
     fylke: "46"

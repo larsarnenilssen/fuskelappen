@@ -276,7 +276,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const fil = join(rot, 'data/statistikk/statistikk.json');
   const forrige = lesForrige<Statistikk>(fil);
   const endret = skrivHvisEndret(fil, forrige, data);
-  skrivEndringer(rot, 'statistikk', { endret, forste: !forrige });
+  // Kildesjekken (sjekkHentet) leser `endringer` i endringsfilen. Uten listen feilet sjekken da tallene var uendret.
+  skrivEndringer(rot, 'statistikk', { endret, forste: !forrige, endringer: endret && forrige ? ['Nøkkeltallene er oppdatert.'] : [] });
   const skoler = Object.keys(data.enheter).filter((k) => k.startsWith('S')).length;
   console.log(`Statistikk: søkere ${data.sokere.aar.at(-1)}, elever ${data.elever.skolear.at(-1)}, ${skoler} skoler, formidling ${data.formidling.hosten.maneder.join('/')} ${data.formidling.hosten.aar}. ${endret ? 'Endret.' : 'Uendret.'}`);
 }
