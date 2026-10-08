@@ -74,6 +74,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 085).
+    return (await import('./fakta.ts')).fakta();
+  },
   kilder: ['ks-sfs2213-avtaletekst', 'vigo-kodeverk'],
   status: 'aktiv',
 };

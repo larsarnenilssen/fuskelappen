@@ -19,6 +19,12 @@ declare module 'virtual:fagroller' {
   export const laereplaner: Record<string, string>;
 }
 
+declare module 'virtual:jukselappfag' {
+  /** Fagene til dagens jukselapp: kode, navn på bokmål og nynorsk, årstimer og årsramme (t60, t45). Avgjørelse 085. */
+  const fag: [string, string, string, number, number, number][];
+  export default fag;
+}
+
 declare module 'virtual:fagsok' {
   /** Programområdene, fagkodene og årstimene til fagsøket i kalkulatorene, fra fagindeksen (avgjørelse 049). */
   const data: {

@@ -1,0 +1,83 @@
+// Dagens jukselapp (fase 8, avgjørelse 085): bryteren under «Tilpass» og Innstillinger, visningen i panelet, knappen
+// for ny jukselapp, lenken videre og visningen først ved første besøk hver dag (alternativ C). Faktumet avhenger av
+// datoen, så testene ser på oppsettet og ikke på teksten.
+import AxeBuilder from '@axe-core/playwright';
+import { expect, test } from '@playwright/test';
+import { aapneAlt, settLagret } from './hjelp.ts';
+
+const VESTLAND = '46';
+const apen = (forside: Record<string, unknown> = {}) => ({ rekkefolge: [], lukket: [], apnet: ['panel'], bareFavoritter: false, ...forside });
+
+test.describe('dagens jukselapp', () => {
+  test('er av fra start, og slås på under «Tilpass» med den samme bryteren som under Innstillinger', async ({ page }) => {
+    await settLagret(page, { fylke: VESTLAND, forside: apen() });
+    await page.goto('./');
+    const panel = page.locator('[data-gruppe="panel"]').first();
+    await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toBeVisible();
+    await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveCount(0);
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    const bryter = page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' });
+    await expect(bryter).not.toBeChecked();
+    await bryter.check();
+    await page.getByRole('button', { name: 'Ferdig' }).click();
+    await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await expect(panel.locator('.jl-tittel')).not.toBeEmpty();
+    await expect(panel.locator('.jl-tekst')).not.toBeEmpty();
+    await expect(panel.locator('.jl-rader summary').filter({ hasText: 'Kilder' })).toBeVisible();
+
+    // Innstillinger viser samme valg.
+    await page.goto('./#/innstillinger');
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toBeChecked();
+    await page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' }).uncheck();
+    await page.goto('./');
+    await expect(page.locator('.jl-panel')).toHaveCount(0);
+  });
+
+  test('knappen gir en ny jukselapp, og lenken går til stedet i appen', async ({ page }) => {
+    await settLagret(page, { forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
+    await page.goto('./');
+    const kort = page.locator('.jl-panel');
+    await expect(kort).toHaveAttribute('data-faktum', /.+/);
+    const forste = await kort.getAttribute('data-faktum');
+    await kort.getByRole('button', { name: 'Ny jukselapp' }).click();
+    await expect(kort).not.toHaveAttribute('data-faktum', forste ?? '');
+    const lenke = kort.locator('.jl-lenke');
+    const adresse = (await lenke.getAttribute('href')) ?? '';
+    expect(adresse).toMatch(/^#\/[a-z]/);
+    await lenke.click();
+    await expect(page).toHaveURL(new RegExp(`${adresse.split('?')[0]?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
+    await expect(page.locator('main h1').first()).toBeVisible();
+  });
+
+  test('vises først ved første besøk en ny dag, og valget av visning gjelder resten av dagen', async ({ page }) => {
+    await settLagret(page, { forside: apen({ jukselapp: true, visning: 'neste', jukselappVist: '2000-01-01' }) });
+    await page.goto('./');
+    const panel = page.locator('[data-gruppe="panel"]').first();
+    await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await panel.getByRole('button', { name: 'Kalender', exact: true }).click();
+    await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await page.reload();
+    await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  });
+
+  test('ingen horisontal overflyt på 320 px med nynorsk og fylke', { tag: '@mobil' }, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 700 });
+    await settLagret(page, { malform: 'nn', tema: 'lys', fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
+    await page.goto('./');
+    await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
+    await aapneAlt(page, '.jl-panel');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(0);
+  });
+
+  for (const tema of ['lys', 'mork'] as const) {
+    test(`ingen alvorlige axe-funn med kildene åpne (${tema})`, { tag: '@mobil' }, async ({ page }) => {
+      await settLagret(page, { tema, fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
+      await page.goto('./');
+      await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
+      await aapneAlt(page, '.jl-panel');
+      const resultat = await new AxeBuilder({ page }).include('.jl-panel').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      const alvorlige = resultat.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical').map((v) => `${v.id}: ${v.help}`);
+      expect(alvorlige).toEqual([]);
+    });
+  }
+});

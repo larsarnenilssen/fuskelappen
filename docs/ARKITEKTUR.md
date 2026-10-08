@@ -48,6 +48,7 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 | `sokeoppforinger()` | det modulen bidrar med til samlet søk |
 | `favorittbare()` | funksjoner, fag og begreper som kan favorittmerkes |
 | `frister()` | frister modulen eier (samles i kalenderen, avgjørelse 066) |
+| `fakta()` | fakta til dagens jukselapp, lastet bare når modulen har dagen (avgjørelse 085). Logikken står i modulens `fakta.ts` |
 | `innganger`, `flereTittel` | boksene modulen har på forsiden: hovedbokser, og innganger merket `flere` i en boks som kan åpnes (avgjørelse 030). Uten innganger er modulen selv én boks |
 | `paaForsiden` | `false` når modulen ikke skal stå som boks under kategorien sin på forsiden, fordi den har en egen plass der (Videregående i tall, avgjørelse 080 og 081) |
 | `kilder` | kilde-id-er fra `content/kilder.yaml` |
@@ -55,7 +56,7 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 
 `src/modules/register.ts` finner modulene automatisk med `import.meta.glob`. Forsiden, søket og favorittene bygges fra registeret, så en ny modul krever ingen endring i forsidekoden.
 
-Øverst på forsiden (i sidekolonnen på stor skjerm) er panelet med kalenderen, nyhetene og tallene som alternative visninger (`src/app/Forsidepanel.tsx`, avgjørelse 081). Gruppene som åpnes og lukkes, står i `src/app/Forsidegruppe.tsx`. En ny visning i panelet krever en oppføring i `VISNINGER` og en komponent der.
+Øverst på forsiden (i sidekolonnen på stor skjerm) er panelet med kalenderen, nyhetene og tallene som alternative visninger (`src/app/Forsidepanel.tsx`, avgjørelse 081), og dagens jukselapp når brukeren har slått den på (`src/app/Jukselapp.tsx` og `src/core/jukselapp/`, avgjørelse 085). Gruppene som åpnes og lukkes, står i `src/app/Forsidegruppe.tsx`. En ny visning i panelet krever en oppføring i `VISNINGER` og en komponent der.
 
 I utvikling og testing tas også testmodulen i `tests/fixtures/moduler/` med (via den virtuelle modulen `virtual:testoppsett`). I produksjonsbygget er den tom.
 

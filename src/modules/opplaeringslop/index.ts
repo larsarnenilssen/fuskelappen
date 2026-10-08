@@ -149,6 +149,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 085).
+    return (await import('./fakta.ts')).fakta();
+  },
   kilder: ['udir-grep', 'udir-fag-og-timefordeling', 'utdanning-no', 'udir-nor'],
   status: 'aktiv',
 };

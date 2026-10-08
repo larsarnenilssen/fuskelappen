@@ -5,6 +5,7 @@ import type { Plugin } from 'vite';
 import { Innholdsfeil, lesBegrepsord, lesFil } from '../innhold/last.ts';
 import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
+import { byggJukselappfag } from '../../src/modules/fag/jukselappfag.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesLopskilder, lesSkoler, lesSkolenummer, lesTilbudsindeks, lesUtdanningslop } from '../data/les.ts';
 import { kobleSkoler } from '../../src/modules/opplaeringslop/skoler.ts';
@@ -138,6 +139,25 @@ export function fagsokPlugin(rot: string): Plugin {
     load(lastId) {
       if (lastId !== '\0' + id) return null;
       return `export default ${JSON.stringify(byggFagsokdata(lesFagindeks(rot), fagsokgrunnlag(lesRegelsett(rot))))};`;
+    },
+  };
+}
+
+/**
+ * Fagene til dagens jukselapp (avgjørelse 085): navnet, årstimene og årsrammen for fagene som kobles til én årsramme i
+ * SFS 2213, laget fra fagindeksen og regelsettet når appen bygges. Lastes bare når jukselappen viser et fag.
+ */
+export function jukselappfagPlugin(rot: string): Plugin {
+  const id = 'virtual:jukselappfag';
+  return {
+    name: 'jukselappen:jukselappfag',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      const dato = new Date().toISOString().slice(0, 10);
+      return `export default ${JSON.stringify(byggJukselappfag(lesFagindeks(rot), lesRegelsett(rot), dato))};`;
     },
   };
 }

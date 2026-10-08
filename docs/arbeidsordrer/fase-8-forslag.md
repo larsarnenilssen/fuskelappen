@@ -1,8 +1,17 @@
 # Forslag: fase 8 – Dagens jukselapp
 
-*Status 08.10.2026:* Runde 2 lagt fram for eier. Skissen ligger i testversjonen: https://jukselappen.no/test/. Slå på jukselappen under «Tilpass» eller Innstillinger.
+*Status 08.10.2026:* Eier godkjente designet etter runde 2, med alternativ C. Levert i 0.43.0 (avgjørelse 085). Rundene under står som de ble skrevet, nyeste øverst.
 
 Til eier. Svar gjerne punkt for punkt (f.eks. «J1 ja, men uten paragrafer, J4 A»). Rundene står med den nyeste øverst.
+
+---
+
+## Svar på runde 2 (eier 08.10.2026) og leveransen
+
+- **J7:** B med C. Første besøk hver dag står panelet på jukselappen.
+- **J8:** Teksten er grei, med en setning om at jukselappen vises først ved første besøk hver dag.
+- Testing, fletting og publisering, med versjon valgt av Claude: 0.43.0.
+- Skissen er erstattet av `fakta()` i manifestene. Om lag 1 600 fakta fra tolv moduler, se avgjørelse 085.
 
 ---
 

@@ -93,6 +93,11 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       grunner.push(`${fil}: testen selv`);
       continue;
     }
+    // Dagens jukselapp (avgjørelse 085): kortet, utvalget og faktaene i modulene.
+    if (/^src\/(app\/Jukselapp|core\/jukselapp\/|modules\/[^/]+\/(fakta|jukselappfag)\.ts$)/.test(fil)) {
+      speker.add('jukselapp');
+      grunner.push(`${fil}: dagens jukselapp`);
+    }
     if (fil === 'scripts/bygg-sokeindeks.ts') {
       speker.add('modul-og-sok');
       grunner.push(`${fil}: søket`);

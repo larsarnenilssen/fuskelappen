@@ -45,6 +45,11 @@ export const forsideSkjema = z.strictObject({
   visning: z.optional(z.string()),
   /** Dagens jukselapp på forsiden (fase 8). Av fra start, så den mangler til brukeren slår den på. */
   jukselapp: z.optional(z.boolean()),
+  /**
+   * Datoen dagens jukselapp sist ble vist først i panelet. Første besøk en ny dag står panelet på jukselappen (eier
+   * 08.10.2026, alternativ C i avgjørelse 085).
+   */
+  jukselappVist: z.optional(z.string()),
 });
 
 export const lagretSkjema = z.strictObject({

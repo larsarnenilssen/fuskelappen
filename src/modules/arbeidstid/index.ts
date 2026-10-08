@@ -39,6 +39,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 085).
+    return (await import('./fakta.ts')).fakta();
+  },
   // Arbeidsplan er hovedboksen. De andre kalkulatorene står i en boks som kan åpnes.
   // Arbeidsplan har en kortere tekst på forsiden, så boksen ikke blir høy.
   innganger: kalkulatorer.map((k, i) => ({

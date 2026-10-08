@@ -76,6 +76,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 085).
+    return (await import('./fakta.ts')).fakta();
+  },
   kilder: ['opplaeringsforskrifta', 'udir-merknader-ofo-kap9', 'udir-merknader-ofo-kap10', 'udir-rundskriv-fravarsgrensen', 'udir-standpunktvurdering', 'udir-grep', 'vigo-kodeverk'],
   status: 'aktiv',
 };

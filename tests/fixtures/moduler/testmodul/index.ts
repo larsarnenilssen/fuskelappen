@@ -43,6 +43,9 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    return [];
+  },
   innganger: [
     {
       id: 'testmodul:hoved',

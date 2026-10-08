@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.43.0] – 2026-10-08
+
+### Lagt til
+
+- **Dagens jukselapp:** ett faktum fra appen hver dag, som en fjerde visning i panelet øverst på forsiden, ved siden av kalenderen, nyhetene og tallene. Den er av fra start. Slå den på under «Tilpass» eller Innstillinger.
+  - Faktaene kommer fra hele appen: begreper, regler og frister, stegene i veiviserne, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimene og årsrammen i fagene, og tallene fra Videregående i tall. Fylkets innhold og tall kommer med når du har valgt fylke.
+  - Hvert faktum lenker til stedet i appen der det står, og har kildene og paragrafene under.
+  - Jukselappen byttes hver dag, og «Ny jukselapp» gir en ny med en gang.
+  - Første gang du åpner appen en ny dag, står panelet på jukselappen. Velger du en annen visning, gjelder den resten av dagen.
+
 ### Rettet
 
 - **Lenker til fylkene:** Lenkene til særskilt språkopplæring i Buskerud, inntak og klage i Agder, inntak i Nordland og klage på standpunkt i Møre og Romsdal går til de nye sidene hos fylkene.

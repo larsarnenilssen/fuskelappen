@@ -2,6 +2,8 @@
 
 Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen står under arbeidsordren.
 
+*Status 08.10.2026:* Fasen er levert i 0.43.0 (avgjørelse 085). Arbeidsordren for fase 9 står i `fase-9.md`.
+
 *Status 07.10.2026:* Skrevet om etter eiers beskjed 07.10.2026. Fase 8 har bare dagens jukselapp. Årshjulet og eksporten til kalender (.ics) er tatt ut, og fasene 9–11 er skrevet om i `OPPDRAG.md`. Arbeidsordren er klar til bruk.
 
 ---

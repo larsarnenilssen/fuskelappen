@@ -1,0 +1,84 @@
+/* Dagens jukselapp (fase 8, avgjørelse 085): en visning i panelet øverst på forsiden med samme oppsett som
+   kalenderen, nyhetene og tallene (eier 08.10.2026). Boksen blir høyere når regelverket eller kildene åpnes. Lastes
+   med kortet (avgjørelse 082). */
+.jl-panel {
+  max-height: none;
+}
+
+.jl-innhold {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-1);
+  padding: var(--rom-2) var(--rom-3);
+}
+
+.jl-tittel {
+  margin: 0;
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.jl-tekst {
+  margin: 0;
+  font-size: var(--str-s);
+  line-height: 1.35;
+}
+
+.jl-under {
+  margin: 0;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}
+
+.jl-rader {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.jl-rader .forklaring-knapp {
+  min-height: 2.75rem;
+  padding-block: var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.jl-rader .kildeliste,
+.jl-rader .paragraflenker {
+  padding-inline: var(--rom-3);
+}
+
+.jl-videre {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.jl-ny {
+  flex: none;
+  gap: var(--rom-2);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.jl-ny:hover,
+.jl-lenke:hover > span {
+  text-decoration: underline;
+}
+
+/* Bredden 0 og resten av plassen: en lang tittel kortes av med «…» i stedet for å gjøre boksen bredere. */
+.jl-lenke {
+  display: inline-flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--rom-1);
+  width: 0;
+  min-width: 0;
+  min-height: 2.75rem;
+  color: var(--farge-lenke);
+  text-align: right;
+  text-decoration: none;
+}
+
+.jl-lenke > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

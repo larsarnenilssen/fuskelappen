@@ -55,6 +55,9 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    return [];
+  },
   kilder: ['lovdata-lokale'],
   status: 'aktiv',
 };

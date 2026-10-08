@@ -191,6 +191,11 @@ export function settJukselapp(jukselapp: boolean): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp, ...(jukselapp ? { visning: 'jukselapp' } : {}) } }));
 }
 
+/** Første besøk en ny dag: panelet står på dagens jukselapp, og datoen huskes (alternativ C, avgjørelse 085). */
+export function visJukselappForst(dato: string): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, visning: 'jukselapp', jukselappVist: dato } }));
+}
+
 /** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */
 export function settBareFavoritter(bareFavoritter: boolean): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, bareFavoritter } }));

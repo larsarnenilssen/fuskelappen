@@ -55,6 +55,14 @@ describe('lagring', () => {
     expect(lesLagret(lager)).toEqual({ data, status: 'ok' });
   });
 
+  it('husker dagens jukselapp og dagen den sist ble vist først, uten ny skjemaversjon (fase 8)', () => {
+    const lager = new MinneLager();
+    expect(lesLagret(lager).data.forside.jukselapp).toBeUndefined();
+    const data = { ...standard(), forside: { ...standard().forside, jukselapp: true, jukselappVist: '2026-10-08', visning: 'jukselapp' } };
+    expect(skrivLagret(lager, data)).toBe(true);
+    expect(lesLagret(lager)).toEqual({ data, status: 'ok' });
+  });
+
   it('tåler ødelagte data og feil i lagringen', () => {
     const lager = new MinneLager();
     lager.setItem(LAGRINGSNOKKEL, '{ikke json');

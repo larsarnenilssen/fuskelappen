@@ -25,7 +25,7 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { useTilpassetListe } from './tilpassListe.ts';
 import { useDagensJukselapp } from './Jukselapp.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
-import { settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilstand.ts';
+import { settForsidevisning, useTekst, useTilstand, vekslGruppe, visJukselappForst } from './tilstand.ts';
 
 /** Gruppen med panelet i rekkefølgen på forsiden. */
 export const PANEL = 'panel';
@@ -39,7 +39,7 @@ export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string
   { id: 'itall', ikon: 'sammenlign', favoritt: oversiktsid('statistikk') },
 ];
 
-/** SKISSE (fase 8): dagens jukselapp, som er med når brukeren har slått den på, og ikke kan være favoritt. */
+/** Dagens jukselapp (avgjørelse 085): med når brukeren har slått den på. Den har ingen side, så den kan ikke være favoritt. */
 export const JUKSELAPPVISNING: { id: Visning; ikon: Ikonnavn; favoritt: string | null } = { id: 'jukselapp', ikon: 'skriv', favoritt: null };
 
 /** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med valgene i overskriften. */
@@ -79,10 +79,17 @@ export function Forsidepanel({ visninger }: { visninger: readonly Visning[] }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
   const lukket = useLukket(PANEL);
+  // Første besøk en ny dag står panelet på dagens jukselapp (eier 08.10.2026, alternativ C i avgjørelse 085). Bytter
+  // brukeren visning, gjelder valget resten av dagen.
+  const idag = iDag();
+  const nyDag = visninger.includes('jukselapp') && forside.jukselappVist !== idag;
+  useEffect(() => {
+    if (nyDag) visJukselappForst(idag);
+  }, [nyDag, idag]);
   const forste = visninger[0];
   if (!forste) return null;
   if (visninger.length === 1) return <Visningsgruppe id={forste} />;
-  const aktiv = visninger.find((v) => v === forside.visning) ?? forste;
+  const aktiv = nyDag ? 'jukselapp' : (visninger.find((v) => v === forside.visning) ?? forste);
   const faner = (
     <div class="panel-faner" role="group" aria-label={t('forside.panel.legend')}>
       {visninger.map((v) => (
@@ -226,7 +233,7 @@ function ITall({ ramme }: { ramme: Ramme }) {
   });
 }
 
-/** SKISSE (fase 8): dagens jukselapp som en fjerde visning i panelet (eier 08.10.2026). */
+/** Dagens jukselapp som en fjerde visning i panelet (eier 08.10.2026, avgjørelse 085). */
 function JukselappVisning({ ramme }: { ramme: Ramme }) {
   const { t } = useTekst();
   const { sammendrag, innhold } = useDagensJukselapp();

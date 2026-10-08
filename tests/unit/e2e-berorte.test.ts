@@ -23,6 +23,12 @@ describe('berørte ende-til-ende-tester', () => {
     expect(grepFor(u)).toContain('overflyt\\.spec\\.ts');
   });
 
+  it('faktaene i en modul og kortet gir testene for dagens jukselapp', () => {
+    expect(velgTester(['src/modules/vurdering/fakta.ts']).speker).toEqual(['jukselapp', 'laerlinger', 'vurdering']);
+    expect(velgTester(['src/core/jukselapp/fakta.ts']).speker).toContain('jukselapp');
+    expect(velgTester(['src/app/Jukselappkort.tsx']).speker).toContain('jukselapp');
+  });
+
   it('en endret test kjøres selv', () => {
     expect(velgTester(['tests/e2e/fag.spec.ts']).speker).toEqual(['fag']);
   });

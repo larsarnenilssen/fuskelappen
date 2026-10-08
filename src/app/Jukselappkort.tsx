@@ -1,53 +1,37 @@
-// Kortet med dagens jukselapp (fase 8). Lastes når jukselappen vises, med faktaene, så Kortfot og kildene ikke kommer
-// med i startpakken.
+// Kortet med dagens jukselapp (fase 8, avgjørelse 085). Lastes når jukselappen vises, så kortet, stilene og utvalget
+// ikke er med i startpakken.
 import { Ikon } from '../components/Ikon.tsx';
 import { KortfotRader } from '../components/Kortfot.tsx';
-import type { Faktum } from './jukselappSkisse.ts';
+import { visTekst } from '../core/i18n/tekst.ts';
+import type { Faktum } from '../modules/typer.ts';
+import { fylkesnavn } from './Stedmerknad.tsx';
 import { useTekst } from './tilstand.ts';
+import '../styles/jukselapp.css';
 
-export { SKISSEFAKTA } from './jukselappSkisse.ts';
-
-/** Dagen som tall, så samme dato gir samme faktum for alle (og ingenting må lagres). */
-function dagnummer(dato: string): number {
-  return Math.floor(Date.parse(`${dato}T12:00:00Z`) / 86_400_000);
-}
+export { hentFaktum } from '../core/jukselapp/fakta.ts';
 
 /**
- * Faktumet for i dag. `ekstra` er antall trykk på knappen for ny jukselapp. Hoppet gjennom listen er et primtall, så
- * dagene etter hverandre gir fakta fra ulike moduler, og alle kommer før noe gjentas.
- */
-export function velgFaktum<T>(fakta: readonly T[], dato: string, ekstra = 0): T | undefined {
-  if (fakta.length === 0) return undefined;
-  const hopp = fakta.length % 7 === 0 ? 11 : 7;
-  return fakta[((((dagnummer(dato) + ekstra) * hopp) % fakta.length) + fakta.length) % fakta.length];
-}
-
-/** Faktaene som gjelder for brukeren: nasjonale, og fylkets og skolens når de er valgt. */
-export function synligeFakta(fakta: readonly Faktum[], fylke: string | null, skole: string | null): Faktum[] {
-  return fakta.filter((f) => !f.fylke || (f.fylke === fylke && (!f.skole || f.skole === skole)));
-}
-
-/**
- * Jukselappen i panelet, med samme oppsett som kalenderen, nyhetene og tallene (eier 08.10.2026): en boks med tittelen
- * og faktumet i liten skrift, typen under, regelverket og kildene som lukkede rader, og den blå linjen nederst med
+ * Jukselappen i panelet, med samme oppsett som kalenderen, nyhetene og tallene (eier 08.10.2026): tittelen og faktumet
+ * i liten skrift, hvor det kommer fra under, regelverket og kildene som lukkede rader, og den blå linjen nederst med
  * knappen for ny jukselapp og lenken til stedet i appen.
  */
-export function Jukselappkort({ f, onNy }: { f: Faktum | undefined; onNy: () => void }) {
+export function Jukselappkort({ f, onNy }: { f: Faktum | null; onNy: () => void }) {
   const { t, malform } = useTekst();
+  const sted = f?.gyldighet && f.gyldighet.niva !== 'nasjonal' ? fylkesnavn(f.gyldighet.fylke) : null;
   return (
-    <div class="panel-boks jl-panel">
+    <div class="panel-boks jl-panel" data-faktum={f?.id}>
       {f ? (
         <div class="jl-innhold" aria-live="polite">
           <h3 class="jl-tittel">{f.tittel[malform]}</h3>
           <p class="jl-tekst">{f.tekst[malform]}</p>
-          <p class="jl-under">{[f.type[malform], f.sted].filter(Boolean).join(' · ')}</p>
+          <p class="jl-under">{[visTekst(f.under, malform), sted].filter(Boolean).join(' · ')}</p>
         </div>
       ) : (
         <p class="dempet panel-tom">{t('forside.jukselapp.tom')}</p>
       )}
       {f && (
         <div class="jl-rader">
-          <KortfotRader kilder={f.kilder} nokkel={`jukselapp:${f.id}`} />
+          <KortfotRader paragrafer={f.paragrafer} kilder={f.kilder} nokkel={`jukselapp:${f.id}`} />
         </div>
       )}
       <div class="panel-videre jl-videre">

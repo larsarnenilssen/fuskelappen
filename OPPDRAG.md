@@ -1,6 +1,6 @@
 # OPPDRAG – Jukselappen
 
-**Versjon:** 1.5 · 07.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm))
+**Versjon:** 1.6 · 08.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm). 1.5 → 1.6 (08.10.2026): fase 8 levert, og velkomsten i fase 10 spør om dagens jukselapp)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -206,7 +206,7 @@ Skjemaet defineres med zod og valideres i testene.
   - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
   - **Skolemiljø:** Skolemiljø (fase 7).
   - **Oppslag:** Begreper, Regelverk, Fylkene. *(Fase 6, pakke 5, eier 05.10.2026:)* Kalenderen sto her, og forsiden hadde gruppen «Neste datoer» (avgjørelse 066). *(Eier 07.10.2026:)* Kalender og Nyheter står ikke lenger under «Oppslag», men i panelet øverst.
-  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag».
+  - *(Eier 07.10.2026:)* Øverst på forsiden (i sidekolonnen på stor skjerm) er et panel med Kalender, Nyheter og Videregående i tall som alternative visninger. Valgene står i overskriften, og brukeren velger visningene under «Tilpass» (avgjørelse 081). Videregående i tall står ikke under «Oppslag». *(Eier 08.10.2026:)* Dagens jukselapp er en fjerde visning i panelet når brukeren har slått den på (avgjørelse 085).
   - Lokale regler (fase 9) legges inn og meldes inn fra Innstillinger, ved valget av fylke og skole.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
@@ -611,7 +611,11 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 **Kontrollpunkt:** Eier kontrollerer visningen og fakta i dagens jukselapp.
 
+- Levert i 0.43.0 (08.10.2026): **Dagens jukselapp** som fjerde visning i panelet øverst på forsiden, med samme oppsett som kalenderen, nyhetene og tallene (avgjørelse 085). Av fra start, med samme bryter under «Tilpass» og Innstillinger. Første besøk hver dag står panelet på jukselappen (alternativ C). Byttes hver dag og med knappen «Ny jukselapp». Fakta fra `fakta()` i manifestene: begreper, forklaringer, regler, frister og steg i veiviserne, SFS 2213 og hovedtariffavtalen, paragrafer i opplæringslova og forskriften, overordnet del, årstimer og årsramme i fagene, og tall fra Videregående i tall. Innhold som ikke er kontrollert, vises (eier 08.10.2026). Forslaget og eiers svar står i `docs/arbeidsordrer/fase-8-forslag.md`. **Fase 8 er levert.** Eier har godkjent designet underveis, og faktaene tas i kontrollrundene.
+
 ### Fase 9 – Lokale regler for fylke og skole
+
+*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-9.md`.
 
 *(Eier 07.10.2026:)* Brukerne melder inn lokale regler, og eier godkjenner dem. Godkjente regler vises for alle som har valgt fylket eller skolen. Lokale profiler som bare lagres og deles som fil eller lenke, er tatt ut.
 

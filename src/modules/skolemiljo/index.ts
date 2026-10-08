@@ -70,6 +70,10 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
+  async fakta() {
+    // Lastes bare når modulen har dagen i dagens jukselapp (avgjørelse 085).
+    return (await import('./fakta.ts')).fakta();
+  },
   kilder: ['opplaeringslova', 'opplaeringsforskrifta', 'forskrift-helse-miljo-skoler', 'udir-rundskriv-skolemiljo', 'udir-rundskriv-skolemiljo-hvem', 'udir-rundskriv-skolemiljo-retten', 'udir-rundskriv-skolemiljo-nulltoleranse', 'udir-rundskriv-skolemiljo-informasjon', 'lovdata-lokale', 'privatskolelova', 'udir-elevundersokelsen'],
   status: 'aktiv',
 };
