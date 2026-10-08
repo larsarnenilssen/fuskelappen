@@ -415,6 +415,8 @@ export const kildeSkjema = z
       })
       .strict()
       .optional(),
+    /** Datoen eier godkjente at kilden kan brukes i appen, eller null (avgjørelse 089). Settes bare av eier. */
+    godkjent: isoDato.nullable(),
     godkjent_fingeravtrykk: sha256.nullable(),
     faser: z.array(z.number().int().min(0).max(9)).default([]),
     merknad: z.string().optional(),

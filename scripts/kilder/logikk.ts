@@ -7,6 +7,8 @@ export interface Sjekkresultat {
   status: 'ok' | 'endret' | 'feilet';
   fingeravtrykk: string | null;
   melding: string | null;
+  /** Grunnlaget endringer sammenlignes med, for kilder som sjekkes med fingeravtrykk. */
+  grunnlag?: string | null;
 }
 
 export { normaliserTekst } from '../../src/core/kontroll/tekst.ts';
@@ -16,43 +18,73 @@ export function lagFingeravtrykk(tekst: string): string {
 }
 
 /**
- * Sammenligner med fingeravtrykket eier har godkjent. Uten godkjent avtrykk får kilden status «endret», så den
- * kommer med i kontrollsaken og kan godkjennes. Saken og kontrolloversikten viser den som ny (erNyKilde).
+ * Sammenligner med grunnlaget (avgjørelse 089): fingeravtrykket eier har gått gjennom (`godkjent_fingeravtrykk`),
+ * ellers det kildesjekken så første gang. Første sjekk av en ny kilde blir grunnlaget, så en ny kilde står ikke som
+ * endret. «endret» betyr at eier ikke har gått gjennom endringen ennå, og kommer i kontrollsaken.
  */
-export function vurderMotGodkjent(fingeravtrykk: string, godkjent: string | null): Sjekkresultat {
-  if (godkjent === fingeravtrykk) return { status: 'ok', fingeravtrykk, melding: null };
-  return {
-    status: 'endret',
-    fingeravtrykk,
-    melding: godkjent === null ? 'Ny kilde, ikke godkjent ennå.' : 'Innholdet er endret siden forrige godkjenning.',
-  };
+export function vurderMotGrunnlag(fingeravtrykk: string, grunnlag: string | null): Sjekkresultat {
+  if (grunnlag === null || grunnlag === fingeravtrykk) return { status: 'ok', fingeravtrykk, melding: null, grunnlag: grunnlag ?? fingeravtrykk };
+  return { status: 'endret', fingeravtrykk, melding: 'Innholdet er endret siden det sist ble gått gjennom.', grunnlag };
 }
 
 /**
- * En kilde uten godkjent fingeravtrykk i kilderegisteret er ny. Det finnes ingen godkjent tekst å sammenligne
- * med, så den merkes «Ny kilde, ikke godkjent ennå» og ikke «Endret siden …» (sak #92).
+ * Det kildesjekken husker om en kilde utenom kildestatusen (data/status/kildegrunnlag.json): fingeravtrykket endringer
+ * sammenlignes med når eier ikke har gått gjennom noe, og hvor mange sjekker på rad som har feilet.
  */
-export function erNyKilde(kilde: { godkjent_fingeravtrykk?: string | null } | undefined): boolean {
-  return kilde !== undefined && !kilde.godkjent_fingeravtrykk;
+export interface Grunnlagspost {
+  grunnlag: string | null;
+  feil_pa_rad: number;
 }
 
-/** Lager ny statuspost og tar vare på når en endring først ble oppdaget. */
-export function nyPost(forrige: KildestatusPost | undefined, r: Sjekkresultat, naa: string): KildestatusPost {
+export interface Grunnlagsfil {
+  skjema: 1;
+  kilder: Record<string, Grunnlagspost>;
+}
+
+/** Grunnlaget for en kilde: det eier har gått gjennom, ellers det som ble lagret ved forrige sjekk. */
+export function grunnlagFor(kilde: { godkjent_fingeravtrykk?: string | null }, forrige: Grunnlagspost | undefined): string | null {
+  return kilde.godkjent_fingeravtrykk ?? forrige?.grunnlag ?? null;
+}
+
+/** En kilde eier ikke har godkjent for bruk i appen (avgjørelse 089). */
+export function erIkkeGodkjent(kilde: { godkjent?: string | null } | undefined): boolean {
+  return kilde !== undefined && !kilde.godkjent;
+}
+
+/** Meldingen kildesjekken brukte for nye kilder før avgjørelse 089. Datoen i slike poster er ikke en endring. */
+const GAMMEL_NY_KILDE = 'Ny kilde, ikke godkjent ennå.';
+
+/**
+ * Lager ny statuspost og grunnlagspost. En feil vises først når kilden har feilet to sjekker på rad, så en kort feil
+ * hos kilden ikke vises i appen. `straks` gir feilen med en gang, for nyhetskildene, som har sin egen regel om mer enn
+ * to dager. `endret_siden` er når fingeravtrykket sist ble et annet enn ved forrige sjekk.
+ */
+export function nyPost(
+  forrige: KildestatusPost | undefined,
+  forrigeGrunnlag: Grunnlagspost | undefined,
+  r: Sjekkresultat,
+  naa: string,
+  { straks = false }: { straks?: boolean } = {},
+): { post: KildestatusPost; grunnlag: Grunnlagspost } {
+  const gammelNy = forrige?.melding === GAMMEL_NY_KILDE;
+  const endretSiden = gammelNy ? null : (forrige?.endret_siden ?? null);
   if (r.status === 'feilet') {
+    const paRad = (forrigeGrunnlag?.feil_pa_rad ?? (forrige?.status === 'feilet' ? 1 : 0)) + 1;
+    const tidligere = forrige && forrige.status !== 'feilet' && !gammelNy ? forrige.status : 'ok';
     return {
-      status: 'feilet',
-      sjekket: naa,
-      fingeravtrykk: forrige?.fingeravtrykk ?? null,
-      endret_siden: forrige?.endret_siden ?? null,
-      melding: r.melding,
+      post: {
+        status: straks || paRad >= 2 || !forrige ? 'feilet' : tidligere,
+        sjekket: naa,
+        fingeravtrykk: forrige?.fingeravtrykk ?? null,
+        endret_siden: endretSiden,
+        melding: r.melding,
+      },
+      grunnlag: { grunnlag: forrigeGrunnlag?.grunnlag ?? null, feil_pa_rad: paRad },
     };
   }
-  const sammeEndring = forrige?.status === 'endret' && forrige.fingeravtrykk === r.fingeravtrykk && forrige.endret_siden;
+  const endret = !gammelNy && forrige?.fingeravtrykk && r.fingeravtrykk && forrige.fingeravtrykk !== r.fingeravtrykk;
   return {
-    status: r.status,
-    sjekket: naa,
-    fingeravtrykk: r.fingeravtrykk,
-    endret_siden: r.status === 'endret' ? (sammeEndring ? forrige.endret_siden : naa) : null,
-    melding: r.melding,
+    post: { status: r.status, sjekket: naa, fingeravtrykk: r.fingeravtrykk, endret_siden: endret ? naa : endretSiden, melding: r.melding },
+    grunnlag: { grunnlag: r.grunnlag !== undefined ? r.grunnlag : (forrigeGrunnlag?.grunnlag ?? null), feil_pa_rad: 0 },
   };
 }

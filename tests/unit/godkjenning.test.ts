@@ -8,6 +8,7 @@ import {
   kommandoIder,
   settBekreftet,
   settFingeravtrykk,
+  settGodkjentBruk,
   settKontrollertInnhold,
   settKontrollertVerdi,
 } from '../../scripts/kilder/godkjenning.ts';
@@ -71,5 +72,16 @@ describe('godkjenning fra en kontrollsak', () => {
     expect(ny).toContain(`    # Godkjent av eier 2026-10-05 (sak #42).\n    godkjent_fingeravtrykk: ${fp}`);
     expect(ny.split('\n').length).toBe(fil.split('\n').length);
     expect(data.kilder.find((k) => k.id === 'ks-sfs2213')?.godkjent_fingeravtrykk).toMatch(/^sha256:7b5f/);
+  });
+
+  it('godkjenner en kilde for bruk i appen: «godkjent: null» blir datoen (avgjørelse 089)', () => {
+    expect(avkryssede('- [x] Udir (Udir). [Åpne kilden](https://udir.no) <!-- godkjenn-bruk:udir-ny -->')).toEqual([{ type: 'bruk', id: 'udir-ny' }]);
+    const fil = les('content/kilder.yaml');
+    const ubrukt = 'vlfk-sider';
+    const ny = settGodkjentBruk(fil, ubrukt, '2026-10-09') ?? '';
+    const data = parse(ny) as { kilder: { id: string; godkjent: string | null }[] };
+    expect(data.kilder.find((k) => k.id === ubrukt)?.godkjent).toBe('2026-10-09');
+    expect(ny.split('\n').length).toBe(fil.split('\n').length);
+    expect(settGodkjentBruk(fil, 'finnes-ikke', '2026-10-09')).toBeNull();
   });
 });

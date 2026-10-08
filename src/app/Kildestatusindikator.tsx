@@ -15,7 +15,6 @@ export function KildestatusIndikator() {
   if (samlet === null) return null;
   const ikon: Record<Visningsstatus, Ikonnavn> = {
     ok: 'ok',
-    endret: 'info',
     feilet: 'advarsel',
     utdatert: 'klokke',
     ukjent: 'info',

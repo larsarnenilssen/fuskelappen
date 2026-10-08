@@ -4,6 +4,7 @@
 
 export type Godkjenning =
   | { type: 'kilde'; id: string; fingeravtrykk: string }
+  | { type: 'bruk'; id: string }
   | { type: 'praksis'; id: string }
   | { type: 'innhold'; id: string }
   | { type: 'verdi'; id: string };
@@ -20,6 +21,8 @@ export function avkryssede(tekst: string): Godkjenning[] {
       const i = rest.indexOf(':');
       const fingeravtrykk = rest.slice(i + 1);
       if (i > 0 && fingeravtrykk.startsWith('sha256:')) ut.push({ type: 'kilde', id: rest.slice(0, i), fingeravtrykk });
+    } else if (type === 'godkjenn-bruk') {
+      ut.push({ type: 'bruk', id: rest });
     } else if (type === 'praksis') {
       ut.push({ type: 'praksis', id: rest });
     } else if (type === 'kontroll') {
@@ -110,10 +113,24 @@ export function settFingeravtrykk(yaml: string, id: string, fingeravtrykk: strin
   return linjer.join('\n');
 }
 
+/** Datoen eier godkjente at kilden kan brukes i appen (avgjørelse 089): «godkjent: null» blir datoen. */
+export function settGodkjentBruk(yaml: string, id: string, d: string): string | null {
+  const linjer = yaml.split('\n');
+  const start = linjer.findIndex((l) => l === `  - id: ${id}`);
+  if (start < 0) return null;
+  const slutt = blokk(linjer, start, 2);
+  const i = linjer.findIndex((l, n) => n > start && n < slutt && l.startsWith('    godkjent: '));
+  if (i < 0) return null;
+  linjer[i] = `    godkjent: ${d}`;
+  return linjer.join('\n');
+}
+
 export function beskriv(g: Godkjenning): string {
   switch (g.type) {
     case 'kilde':
       return `nytt fingeravtrykk for kilden \`${g.id}\``;
+    case 'bruk':
+      return `kilden \`${g.id}\` er godkjent for bruk i appen`;
     case 'praksis':
       return `praksisen \`${g.id}\` er bekreftet`;
     case 'innhold':

@@ -11,7 +11,7 @@ import { lesVerdistatus, type Verdistatusfil } from '../../src/core/kontroll/ver
 import type { Innholdsstatus } from '../../src/core/innhold/status.ts';
 import { lesInnhold, lesRegelsett } from '../innhold/alt.ts';
 import { praksisTilBekreftelse } from '../kilder/kontrollrunde.ts';
-import { erNyKilde } from '../kilder/logikk.ts';
+import { erIkkeGodkjent } from '../kilder/logikk.ts';
 import { lesFil } from '../innhold/last.ts';
 import type { StengteLenker } from '../lenker/sjekk.ts';
 import { kildelenker, praksiskilder } from './kildelenker.ts';
@@ -64,11 +64,11 @@ function visEier(p: { eier: Innholdsstatus; kontrollert: string | null }): strin
 function visKildestatus(kilde: Kilde | undefined, status: Kildestatusfil | null): string {
   if (!kilde) return 'ukjent kilde';
   const post = status?.kilder[kilde.id];
-  if (!kilde.aktiv || kilde.sjekkmetode === 'ingen' || !post) return 'sjekkes ikke automatisk';
-  if (post.status === 'ok') return `i orden (${dato(post.sjekket)})`;
-  if (post.status === 'endret' && erNyKilde(kilde)) return '⚠️ ny kilde, ikke godkjent ennå';
-  if (post.status === 'endret') return `⚠️ endret siden ${dato(post.endret_siden ?? post.sjekket)}, venter på godkjenning`;
-  return `⚠️ sjekken feilet (${dato(post.sjekket)}): ${post.melding ?? ''}`;
+  const bruk = erIkkeGodkjent(kilde) ? '⚠️ ikke godkjent for bruk; ' : '';
+  if (!kilde.aktiv || kilde.sjekkmetode === 'ingen' || !post) return `${bruk}sjekkes ikke automatisk`;
+  if (post.status === 'ok') return `${bruk}i orden (${dato(post.sjekket)})`;
+  if (post.status === 'endret') return `${bruk}⚠️ endret siden ${dato(post.endret_siden ?? post.sjekket)}, ikke gått gjennom`;
+  return `${bruk}⚠️ sjekken feilet (${dato(post.sjekket)}): ${post.melding ?? ''}`;
 }
 
 function celle(tekst: string): string {

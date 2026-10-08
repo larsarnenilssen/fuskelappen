@@ -5,18 +5,19 @@
 // men ingenting lagres eller sendes (for å prøve lokalt).
 import { execFileSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Innholdselement, Praksisfil } from '../../src/core/innhold/skjema.ts';
+import type { Innholdselement, Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
 import { lesKildestatus } from '../../src/core/kildestatus/kildestatus.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
-import { lesFil } from '../innhold/last.ts';
+import { filtype, lesFil } from '../innhold/last.ts';
 import {
   avkryssede,
   beskriv,
   kommandoIder,
   settBekreftet,
   settFingeravtrykk,
+  settGodkjentBruk,
   settKontrollertInnhold,
   settKontrollertVerdi,
   type Godkjenning,
@@ -48,10 +49,11 @@ function yamlFiler(mappe: string): string[] {
 }
 
 const regelfiler = yamlFiler(join(rot, 'rules')).map((fil) => ({ fil, r: lesFil(rot, fil) as Regelsett }));
-const spesielle = new Set(['kilder.yaml', 'fylker.yaml', 'synonymer.yaml', 'praksis.yaml', 'lovverk.yaml', 'paralleller.yaml']);
+// Bare innholdsfilene (filtype), ikke kilderegisteret, fylkene, versjonene og de andre spesielle filene.
 const innholdsfiler = yamlFiler(join(rot, 'content'))
-  .filter((f) => !spesielle.has(f.split('/').pop() ?? ''))
+  .filter((f) => filtype(relative(rot, f)) === 'innhold')
   .map((fil) => ({ fil, ider: (lesFil(rot, fil, false) as Innholdselement[]).map((e) => e.id) }));
+const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
 const praksisfil = join(rot, 'content/kontroll/praksis.yaml');
 const praksisIder = new Set((lesFil(rot, praksisfil) as Praksisfil).praksis.map((p) => p.id));
 const kildestatus = lesKildestatus(existsSync(join(rot, 'data/status/kildestatus.json')) ? JSON.parse(readFileSync(join(rot, 'data/status/kildestatus.json'), 'utf8')) : null);
@@ -63,6 +65,7 @@ function tolk(id: string): Godkjenning | null {
   const [regelsett, nokkel] = id.includes('/') ? id.split('/') : [null, id];
   const treff = regelfiler.filter(({ r }) => (regelsett === null || r.id === regelsett) && nokkel !== undefined && nokkel in r.verdier);
   if (treff.length === 1 && treff[0]) return { type: 'verdi', id: `${treff[0].r.id}/${nokkel}` };
+  if (register.kilder.some((k) => k.id === id && k.godkjent === null)) return { type: 'bruk', id };
   const post = kildestatus?.kilder[id];
   if (post?.status === 'endret' && post.fingeravtrykk) return { type: 'kilde', id, fingeravtrykk: post.fingeravtrykk };
   return null;
@@ -85,6 +88,7 @@ const ikkeFunnet: string[] = [...ukjente];
 /** Setter datoen for én godkjenning. Gir false hvis elementet ikke finnes i filene. */
 function godkjenn(g: Godkjenning): boolean {
   if (g.type === 'kilde') return endre(join(rot, 'content/kilder.yaml'), (t) => settFingeravtrykk(t, g.id, g.fingeravtrykk, idag, sak));
+  if (g.type === 'bruk') return endre(join(rot, 'content/kilder.yaml'), (t) => settGodkjentBruk(t, g.id, idag));
   if (g.type === 'praksis') return endre(praksisfil, (t) => settBekreftet(t, g.id, idag));
   if (g.type === 'innhold') return innholdsfiler.filter((f) => f.ider.includes(g.id)).some((f) => endre(f.fil, (t) => settKontrollertInnhold(t, g.id, idag)));
   const [regelsett, nokkel = ''] = g.id.split('/');

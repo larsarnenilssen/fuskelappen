@@ -119,7 +119,7 @@ describe('kontrollindeks og kontrollrapport', () => {
   ];
   const register = {
     kilder: [
-      { id: 'kilde-a', navn: 'Kilde A', url: 'https://example.org/a', aktiv: true, sjekkmetode: 'side', godkjent_fingeravtrykk: 'sha256:y' },
+      { id: 'kilde-a', navn: 'Kilde A', url: 'https://example.org/a', aktiv: true, sjekkmetode: 'side', godkjent: '2026-10-08', godkjent_fingeravtrykk: 'sha256:y' },
       { id: 'kilde-b', navn: 'Kilde B', url: 'https://example.org/b', aktiv: false, sjekkmetode: 'ingen' },
     ],
   } as unknown as Parameters<typeof lagKontrollrapport>[1];
@@ -146,17 +146,16 @@ describe('kontrollindeks og kontrollrapport', () => {
   it('rapporten viser det som må ses på, og tabellene per kilde', () => {
     const md = lagKontrollrapport(indeks, register, kildestatus, verdistatus, '2026-10-06');
     expect(md).toContain('Oppdatert 06.10.2026.');
-    expect(md).toContain('- **Kilde A:** ⚠️ endret siden 05.10.2026, venter på godkjenning');
+    expect(md).toContain('- **Kilde A:** ⚠️ endret siden 05.10.2026, ikke gått gjennom');
     expect(md).toContain('- `test-2026/arsverk`: ⚠️ avvik siden 05.10.2026. Kilden har nå 1700 der verdien sto.');
     expect(md).toContain('- `test-2026/arsverk_60`: ⚠️ kilden er endret etter kontrollen 10.01.2026');
     expect(md).toContain('| Årsverk (`arsverk`) | begrep | 4, 5.1 | `content/test.yaml` | ikke kontrollert |');
     expect(md).toContain('| `uten_sitat` (test-2026) | – | 5 | praksis, sjekkes ikke automatisk | ikke kontrollert |');
   });
 
-  it('en kilde uten godkjent fingeravtrykk står som ny, ikke som endret (sak #92)', () => {
-    const ny = { kilder: register.kilder.map((k) => ({ ...k, godkjent_fingeravtrykk: null })) } as unknown as typeof register;
-    const md = lagKontrollrapport(indeks, ny, kildestatus, verdistatus, '2026-10-06');
-    expect(md).toContain('- **Kilde A:** ⚠️ ny kilde, ikke godkjent ennå');
-    expect(md).not.toContain('endret siden 05.10.2026, venter på godkjenning');
+  it('en kilde eier ikke har godkjent for bruk, er merket i kontrolloversikten (avgjørelse 089)', () => {
+    const ikke = { kilder: register.kilder.map((k) => ({ ...k, godkjent: null })) } as unknown as typeof register;
+    const md = lagKontrollrapport(indeks, ikke, kildestatus, verdistatus, '2026-10-06');
+    expect(md).toContain('- **Kilde A:** ⚠️ ikke godkjent for bruk; ⚠️ endret siden 05.10.2026, ikke gått gjennom');
   });
 });
