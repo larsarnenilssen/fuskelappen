@@ -53,6 +53,8 @@ export interface Faktum {
   /** Hash-rute uten #. */
   rute: string;
   kilder: KildeRef[];
+  /** Når fristen er, for frister: «1. mars», «Ti dager», «Hvert halvår». */
+  naar?: Flerspraak;
   /** Paragrafene til «I regelverket». Uten hentes de fra kildene (Kortfot). */
   paragrafer?: string[];
   /** Fylkes- og skoleinnhold vises bare når fylket eller skolen er valgt. Uten gjelder faktumet hele landet. */

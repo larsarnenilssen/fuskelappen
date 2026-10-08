@@ -5,7 +5,8 @@
 // bare modulen som har dagen, må laste innholdet sitt. Innenfor en modul går rundene gjennom alle faktaene før noe
 // gjentas.
 import type { Flerspraak, Gyldighet, Innholdselement } from '../innhold/skjema.ts';
-import type { Tekstverdi } from '../i18n/tekst.ts';
+import { latBegge, type Tekstverdi } from '../i18n/tekst.ts';
+import { tidspunkt } from '../tidslinje.ts';
 import type { Faktum } from '../../modules/typer.ts';
 
 /** Høyst så mange tegn i teksten. Den første setningen tas alltid med, så sant den ikke er lengre enn `LENGSTE`. */
@@ -85,6 +86,8 @@ export function faktaFraElementer(
     const r = rute(e);
     const tekst = r ? faktatekst(e.tekst) : null;
     if (!r || !tekst) continue;
+    // Fristene får tidspunktet med: «1. mars», «Ti dager». Frister med dato fra dataene har det i kalenderen.
+    const naar = e.type === 'frist' && tidspunkt(e, 'nb') ? latBegge((m) => tidspunkt(e, m)) : null;
     const paragrafer = 'paragrafer' in e && Array.isArray(e.paragrafer) && e.paragrafer.length > 0 ? (e.paragrafer as string[]) : undefined;
     fakta.push({
       id: `${modul}:${e.id}${e.gyldighet.niva === 'nasjonal' ? '' : `:${e.gyldighet.fylke}`}`,
@@ -94,6 +97,7 @@ export function faktaFraElementer(
       lenke: lenke(e),
       rute: r,
       kilder: e.kilder,
+      ...(naar ? { naar } : {}),
       ...(paragrafer ? { paragrafer } : {}),
       ...(e.gyldighet.niva === 'nasjonal' ? {} : { gyldighet: e.gyldighet }),
     });

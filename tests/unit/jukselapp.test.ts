@@ -157,7 +157,25 @@ describe('faktaene fra modulene', () => {
     expect(fakta.find((f) => f.id === 'statistikk:sokere:L')?.gyldighet).toBeUndefined();
     expect(fakta.find((f) => f.id === 'statistikk:sokere:F46')?.gyldighet).toEqual({ niva: 'fylke', fylke: '46', forhold: 'supplerer' });
     expect(fakta.find((f) => f.id === 'statistikk:sokere:F46')?.tekst.nb).toContain('Vestland');
+    // Skolens tall har skolen i gyldigheten og vises bare når skolen er valgt.
+    const skole = fakta.find((f) => f.id.startsWith('statistikk:elever:S'));
+    expect(skole?.gyldighet?.niva).toBe('skole');
+    if (skole?.gyldighet?.niva === 'skole') {
+      expect(erSynlig(skole.gyldighet, { fylke: skole.gyldighet.fylke, skole: skole.gyldighet.skole })).toBe(true);
+      expect(erSynlig(skole.gyldighet, { fylke: skole.gyldighet.fylke, skole: null })).toBe(false);
+    }
+    // Landet, Vestland og skolene har elever, fravær og snittkarakterer.
+    for (const id of ['statistikk:elever:L', 'statistikk:fravaer:F46', 'statistikk:fagbrev:L', 'statistikk:eksamen:MAT1019:L']) expect(fakta.some((f) => f.id === id), id).toBe(true);
   });
+
+  it('fristene har tidspunktet med, veiene til fag- og svennebrev og fraværsgrensen er med', async () => {
+    await lastAlleTekster();
+    const alle = (await Promise.all(aktiveModuler.map((m) => m.fakta()))).flat();
+    expect(alle.find((f) => f.id === 'eksamen:fe-klagefrist')?.naar?.nb).toBe('Ti dager');
+    expect(alle.filter((f) => f.id.startsWith('opplaeringslop:vei-')).length).toBeGreaterThanOrEqual(10);
+    expect(alle.some((f) => f.id === 'vurdering:fr-teller' && f.rute === '/vurdering/fravaer')).toBe(true);
+    expect(alle.filter((f) => f.id.startsWith('eksamen:')).length).toBeGreaterThan(30);
+  }, 60_000);
 
   it('fagene har årstimene og årsrammen fra SFS 2213 vedlegg 1', () => {
     const fag = byggJukselappfag(lesFagindeks(rot), lesRegelsett(rot), '2026-10-08');

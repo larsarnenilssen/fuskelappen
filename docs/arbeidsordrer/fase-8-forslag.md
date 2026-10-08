@@ -6,6 +6,39 @@ Til eier. Svar gjerne punkt for punkt (f.eks. «J1 ja, men uten paragrafer, J4 A
 
 ---
 
+## Kontroll og vurdering av innholdet (eier 08.10.2026)
+
+Eier ba om en kontroll av at veiene for lærlinger og kandidater, eksamen og fraværsgrensen er med, og en vurdering av om innhold på flere sider kan brukes.
+
+**Kontrollert (testes i `tests/unit/jukselapp.test.ts`):**
+- **Veiene til fag- og svennebrev:** alle ti er med, fra lærling til praksiskandidat.
+- **Eksamen og klage:** 65 fakta: reglene for eksamen, fag- og svenneprøven, stegene i «Klage på karakter» og fristene.
+- **Fraværsgrensen:** sju fakta: hva som teller, unntakene, rektors skjønn, årstimetallet, hvem den gjelder for, varselet og begrepet.
+
+**Lagt til nå:**
+- **Fristene** viser når de er («Ti dager», «1. mars», «Hvert halvår»).
+- **Videregående i tall:**
+  - elever og skoler
+  - fag- og svennebrev
+  - medianfravær
+  - snittkarakteren til skriftlig eksamen i de sju fellesfagene, for landet og fylkene
+- **Skolen du har valgt:** elevtallet og fraværet, synlig bare når skolen er valgt.
+
+**Vurdert, men ikke lagt inn (si fra om du vil ha noe av det):**
+
+| Innhold | Vurdering |
+|---|---|
+| **Elevundersøkelsen** (mobbing og indeksene for skolen, fylket og landet) | Godt egnet, særlig for valgt skole. Filen er stor (600 kB), så det bør lages et lite utdrag ved bygging, som for fagene. Ordlyden om mobbing må være presis, så jeg vil foreslå teksten før den tas med. **Råd: ta med.** |
+| **Skolen du har valgt** i skoleregisteret (antall tilbud og plasser fra utdanning.no) | Lett å lage og passer kravet om skoleinnhold. **Råd: ta med.** |
+| **Kodelistene** i begrepene (karakterer, vurderingsuttrykk, fag- og vitnemålsmerknader) | Kuriositeter, f.eks. hva en vitnemålsmerknad betyr. Mange er korte og tekniske. **Råd: et utvalg.** |
+| **Kompetansemål** i læreplanene | Morsomt, men hver læreplan er en egen fil, og målene sier lite alene. **Råd: vent.** |
+| **Skolenes og fylkenes egne regler** fra Lovdata | Passer for valgt fylke og skole, men teksten varierer mye og begynner ofte med formål eller virkeområde. **Råd: vent.** |
+| **Opplæringskontorene** | Lite verdi som faktum. **Råd: nei.** |
+| **Datoene** i kalenderen, skoleruta og eksamensdatoene | Står allerede i kalenderen og blir fort gamle. **Råd: nei.** |
+| **Nyhetene** | Ferskvare med egen visning. **Råd: nei.** |
+
+---
+
 ## Svar på runde 2 (eier 08.10.2026) og leveransen
 
 - **J7:** B med C. Første besøk hver dag står panelet på jukselappen.

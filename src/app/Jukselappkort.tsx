@@ -24,7 +24,7 @@ export function Jukselappkort({ f, onNy }: { f: Faktum | null; onNy: () => void 
         <div class="jl-innhold" aria-live="polite">
           <h3 class="jl-tittel">{f.tittel[malform]}</h3>
           <p class="jl-tekst">{f.tekst[malform]}</p>
-          <p class="jl-under">{[visTekst(f.under, malform), sted].filter(Boolean).join(' · ')}</p>
+          <p class="jl-under">{[visTekst(f.under, malform), f.naar?.[malform], sted].filter(Boolean).join(' · ')}</p>
         </div>
       ) : (
         <p class="dempet panel-tom">{t('forside.jukselapp.tom')}</p>
