@@ -45,6 +45,27 @@ function Avsnitt({ tekster }: { tekster: readonly string[] }) {
   );
 }
 
+/**
+ * En tekst der `{navn}` blir lenker til sider i appen. En lenke lukker velkomsten og åpner siden (som lenken til en
+ * lokal regel).
+ */
+function MedLenker({ tekst, lenker }: { tekst: string; lenker: Record<string, { href: string; tekst: string }> }) {
+  return (
+    <>
+      {tekst.split(/(\{\w+\})/).map((del, i) => {
+        const lenke = /^\{\w+\}$/.test(del) ? lenker[del.slice(1, -1)] : undefined;
+        return lenke ? (
+          <a key={i} href={lenke.href}>
+            {lenke.tekst}
+          </a>
+        ) : (
+          del
+        );
+      })}
+    </>
+  );
+}
+
 /** Trinnet om rollen: rollen som gule piller, og favorittene rollen får foreslått, med stjernen ved hver. */
 function Rollevalg({ v }: { v: typeof velkomstNb }) {
   const { malform } = useTekst();
@@ -190,7 +211,15 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
       innhold: (
         <>
           <BildeForsiden spillAv={v.spillAv} faner={[v.velkommen.bildeKalender, v.velkommen.bildeNyheter, v.velkommen.bildeTall]} />
-          <Avsnitt tekster={[fyllInn(v.velkommen.tekst, a), v.velkommen.navnet, v.velkommen.sok]} />
+          <Avsnitt tekster={[fyllInn(v.velkommen.tekst, a), v.velkommen.navnet]} />
+          {/* Tilbakemeldingen står under Om appen og Innstillinger (eier 09.10.2026), i samme avsnitt som søket. */}
+          <p>
+            {v.velkommen.sok}{' '}
+            <MedLenker
+              tekst={v.velkommen.tilbakemelding}
+              lenker={{ om: { href: '#/om', tekst: v.velkommen.om }, innstillinger: { href: '#/innstillinger', tekst: v.velkommen.innstillinger } }}
+            />
+          </p>
         </>
       ),
     },
