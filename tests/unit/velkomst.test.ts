@@ -11,7 +11,8 @@ describe('velkomsten (fase 10)', () => {
     for (const rolle of ROLLER) {
       for (const id of ANBEFALTE[rolle]) expect(alle.has(id), `${rolle}: ${id}`).toBe(true);
     }
-  });
+    // Laster alle modulene, som de andre testene av favorittbare (tests/unit/register.test.ts).
+  }, 30_000);
 
   it('en rolle som ikke finnes, leses som ingen rolle', () => {
     expect(lesRolle('skoleleder')).toBe('skoleleder');
