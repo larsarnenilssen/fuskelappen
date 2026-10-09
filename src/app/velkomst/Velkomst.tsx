@@ -19,7 +19,7 @@ import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
 import { FORHANDSVISNING } from './apne.ts';
 import { ANBEFALTE, lesRolle, ROLLER, type Rolle } from './roller.ts';
 import { installasjonstilbud } from './VelkomstLaster.tsx';
-import { BildeFavoritter, BildeForsiden, BildeInstaller, BildeSidene, BildeTakk, BildeVelkommen } from './Bilder.tsx';
+import { BildeFavoritter, BildeForsiden, BildeInstaller, BildeSidene, BildeSok, BildeTakk, BildeVelkommen } from './Bilder.tsx';
 import '../../styles/velkomst.css';
 
 type Enhet = 'ios' | 'android' | 'datamaskin';
@@ -42,16 +42,6 @@ function Avsnitt({ tekster }: { tekster: readonly string[] }) {
         <p key={t}>{t}</p>
       ))}
     </>
-  );
-}
-
-function Punkter({ tekster }: { tekster: readonly string[] }) {
-  return (
-    <ul class="vk-punkter">
-      {tekster.map((t) => (
-        <li key={t}>{t}</li>
-      ))}
-    </ul>
   );
 }
 
@@ -230,7 +220,17 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
       innhold: (
         <>
           <BildeVelkommen spillAv={v.spillAv} />
-          <Avsnitt tekster={[fyllInn(v.velkommen.tekst, a), v.velkommen.hvem, v.velkommen.omvisning]} />
+          <Avsnitt tekster={[fyllInn(v.velkommen.tekst, a), v.velkommen.navnet, v.velkommen.omvisning]} />
+        </>
+      ),
+    },
+    {
+      id: 'sok',
+      tittel: v.sok.tittel,
+      innhold: (
+        <>
+          <BildeSok spillAv={v.spillAv} sok={v.sok.bildeSok} treff={v.sok.bildeTreff} treffUnder={v.sok.bildeTreffUnder} />
+          <Avsnitt tekster={[v.sok.hvor, v.sok.hva]} />
         </>
       ),
     },
@@ -239,8 +239,8 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
       tittel: v.forsiden.tittel,
       innhold: (
         <>
-          <BildeForsiden spillAv={v.spillAv} sok={v.forsiden.bildeSok} treff={v.forsiden.bildeTreff} treffUnder={v.forsiden.bildeTreffUnder} />
-          <Punkter tekster={[v.forsiden.sok, v.forsiden.grupper, v.forsiden.panel, v.forsiden.tilpass]} />
+          <BildeForsiden spillAv={v.spillAv} faner={[v.forsiden.bildeKalender, v.forsiden.bildeNyheter, v.forsiden.bildeTall]} />
+          <Avsnitt tekster={[v.forsiden.panel, v.forsiden.grupper, v.forsiden.tilpass]} />
         </>
       ),
     },
@@ -250,7 +250,7 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
       innhold: (
         <>
           <BildeSidene spillAv={v.spillAv} regelverk={v.sidene.bildeRegelverk} kilder={v.sidene.bildeKilder} />
-          <Punkter tekster={[v.sidene.oversikt, v.sidene.lukket, v.sidene.kilder, v.sidene.begreper]} />
+          <Avsnitt tekster={[v.sidene.oversikt, v.sidene.kilder]} />
         </>
       ),
     },
@@ -260,16 +260,20 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
       innhold: (
         <>
           <p>{v.sted.tekst}</p>
-          <StedValg id="vk" forklaring={v.sted.forklaring} />
-          <div class="vk-lokale">
-            <h3>{v.sted.lokaleTittel}</h3>
-            <p>{v.sted.lokaleTekst}</p>
-            <a class="vk-videre" href="#/innstillinger/lokal-regel">
-              {v.sted.lokaleLenke}
-              <Ikon navn="hoyre" class="ikon-liten" />
-            </a>
-            <p class="dempet liten">{v.sted.lokaleSenere}</p>
-          </div>
+          <StedValg id="vk" kort />
+          {/* Lokale regler som én lenkerad, som «Legg inn en lokal regel» på sidene (fase 9). */}
+          <ul class="liste">
+            <li>
+              <a class="listelenke" href="#/innstillinger/lokal-regel">
+                <Ikon navn="pluss" />
+                <span class="listelenke-tekst">
+                  <span class="listelenke-tittel">{v.sted.lokaleLenke}</span>
+                  <span class="listelenke-under">{v.sted.lokaleUnder}</span>
+                </span>
+                <Ikon navn="hoyre" class="ikon-liten" />
+              </a>
+            </li>
+          </ul>
         </>
       ),
     },

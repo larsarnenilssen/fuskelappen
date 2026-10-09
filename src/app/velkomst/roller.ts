@@ -1,7 +1,7 @@
 // Rollene i velkomsten (fase 10) og favorittene hver rolle får anbefalt. Favorittene er id-er fra modulenes
 // `favorittbare` (testes). Rekkefølgen er rekkefølgen i velkomsten.
 
-export const ROLLER = ['laerer', 'kontaktlaerer', 'radgiver', 'skoleleder'] as const;
+export const ROLLER = ['laerer', 'kontaktlaerer', 'radgiver', 'skoleleder', 'annen'] as const;
 export type Rolle = (typeof ROLLER)[number];
 
 export const ANBEFALTE: Readonly<Record<Rolle, readonly string[]>> = {
@@ -39,6 +39,8 @@ export const ANBEFALTE: Readonly<Record<Rolle, readonly string[]>> = {
     'elevundersokelsen:oversikt',
     'statistikk:oversikt',
   ],
+  // For alle andre, og den som ikke vil si rollen sin (eier 09.10.2026): et bredt utvalg fra flere deler av appen.
+  annen: ['kalender:oversikt', 'vurdering:fravaer', 'skolemiljo:aktivitetsplikten', 'arbeidstid:arbeidsplan', 'eksamen:eksamen', 'statistikk:oversikt'],
 };
 
 /** Rollen fra lagringen, eller null når den mangler eller ikke finnes lenger. */

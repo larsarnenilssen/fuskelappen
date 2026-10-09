@@ -1,7 +1,7 @@
 // Valget av fylke og skole, med bryteren «Privatskole» (avgjørelse 075). Står i Innstillinger og i velkomsten
 // (fase 10), så valget ser likt ut og virker likt begge steder. `id` skiller feltene når velkomsten er åpen over
-// Innstillinger.
-import type { ComponentChildren } from 'preact';
+// Innstillinger. `kort` er varianten i velkomsten: bare feltene og bryteren, og teksten om privatskoler bare når den
+// valgte skolen er privat, så trinnet får plass uten mye rulling (eier 09.10.2026).
 import { useEffect, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
 import { velgFylke, type Innstillinger } from '../core/lagring/lagring.ts';
@@ -29,7 +29,7 @@ function hentSkoler(): Promise<Skole[] | null> {
   return skolerHentet;
 }
 
-export function StedValg({ id = 'velg', forklaring, etter }: { id?: string; forklaring?: string; etter?: ComponentChildren }) {
+export function StedValg({ id = 'velg', kort = false }: { id?: string; kort?: boolean }) {
   const { t } = useTekst();
   const inn = useTilstand().innstillinger;
   const [skoler, settSkoler] = useState<Skoleliste>({ tilstand: 'laster' });
@@ -42,11 +42,19 @@ export function StedValg({ id = 'velg', forklaring, etter }: { id?: string; fork
   const skolensFylke = (skoleId: string) => (skoler.tilstand === 'ok' ? (skoler.skoler.find((s) => s.id === skoleId)?.fylke ?? null) : null);
   const skolerIFylket = skoler.tilstand === 'ok' ? skoler.skoler.filter((s) => s.fylke === inn.fylke) : [];
   const valgtSkole = skoler.tilstand === 'ok' && inn.skole?.id ? skoler.skoler.find((s) => s.id === inn.skole?.id) : undefined;
+  const privatHjelp =
+    valgtSkole?.privat === true
+      ? t('innstillinger.sted.privatskoleNsr')
+      : kort
+        ? null
+        : valgtSkole && inn.privatskole !== true
+          ? t('innstillinger.sted.privatskoleOffentlig')
+          : t('innstillinger.sted.privatskoleHjelp');
 
   return (
     <fieldset class="valggruppe">
       <legend>{t('innstillinger.sted.legend')}</legend>
-      <p class="dempet liten">{forklaring ?? t('innstillinger.sted.forklaring')}</p>
+      {!kort && <p class="dempet liten">{t('innstillinger.sted.forklaring')}</p>}
       <div class="felt">
         <label for={`${id}-fylke`}>{t('innstillinger.sted.fylke')}</label>
         <select
@@ -119,29 +127,26 @@ export function StedValg({ id = 'velg', forklaring, etter }: { id?: string; fork
           id={`${id}-privatskole`}
           type="checkbox"
           role="switch"
-          aria-describedby={`${id}-privatskole-hjelp`}
+          aria-describedby={privatHjelp ? `${id}-privatskole-hjelp` : undefined}
           checked={inn.privatskole === true}
           onChange={(e) => sett({ privatskole: e.currentTarget.checked })}
         />
         <label for={`${id}-privatskole`}>{t('innstillinger.sted.privatskole')}</label>
       </div>
-      <p id={`${id}-privatskole-hjelp`} class="dempet liten">
-        {valgtSkole?.privat === true
-          ? t('innstillinger.sted.privatskoleNsr')
-          : valgtSkole && inn.privatskole !== true
-            ? t('innstillinger.sted.privatskoleOffentlig')
-            : t('innstillinger.sted.privatskoleHjelp')}
-      </p>
+      {privatHjelp && (
+        <p id={`${id}-privatskole-hjelp`} class="dempet liten">
+          {privatHjelp}
+        </p>
+      )}
       {inn.fylke ? (
         <button type="button" class="knapp knapp-sekundaer" onClick={() => sett({ fylke: null, skole: null })}>
           <Ikon navn="lukk" />
           {t('innstillinger.sted.fjern')}
         </button>
       ) : (
-        <p class="merknad">{t('innstillinger.sted.bareNasjonalt')}</p>
+        !kort && <p class="merknad">{t('innstillinger.sted.bareNasjonalt')}</p>
       )}
-      {etter}
-      <p class="dempet liten">{t('innstillinger.sted.kilde')}</p>
+      {!kort && <p class="dempet liten">{t('innstillinger.sted.kilde')}</p>}
     </fieldset>
   );
 }

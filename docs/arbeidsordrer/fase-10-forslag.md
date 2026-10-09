@@ -4,6 +4,34 @@ Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «V1 ja, V3 B»). Rund
 
 ---
 
+## Runde 3: navnet, annen rolle, søket og forsiden hver for seg (09.10.2026)
+
+**Dine svar:** Første trinn skrives om, så det ikke bare handler om regelverk og forklarer navnet. Appen kalles en digital jukselapp, ikke en lapp. «Annen rolle» for alle andre. Ingen kulepunkter, unntatt i stegene for installering. Søket og forsiden blir to trinn, med en ny grafikk til forsiden. Trinnet om fylke og skole får plass og nevner lokale regler øverst.
+
+### Endret i skissen
+
+- **Første trinn:** «Jukselappen er en digital jukselapp: en enkel oversikt og et raskt oppslag for skoleledere og lærere i videregående skole. Her er arbeidstid, inntak, fag og læreplaner, vurdering, tilrettelegging, skolemiljø og frister, med kalkulatorer, veivisere, kalenderen, nyheter og tall.» Så: «Navnet spiller på jukselappen fra skolen. Innholdet er det du bør kunne, men ingen husker alt. Når det teller, kan du «jukse litt» og sjekke jukselappen: regelen, tallet eller neste skritt, med lenke til kilden.»
+- **Annen rolle:** femte pille, med Kalender, Fraværsgrensen, Aktivitetsplikten, Arbeidsplan, Eksamen og Videregående i tall. Teksten over sier at valget er frivillig.
+- **Ingen kulepunkter:** Søket, forsiden og sidene er korte avsnitt. Stegene for installering er fortsatt nummerert.
+- **Søket** (trinn 2): hvor søket står, og hva det finner. Samme grafikk som før.
+- **Forsiden** (trinn 3): panelet øverst, gruppene under og «Tilpass». Den nye grafikken er en liten forside der panelet bytter fra Kalender til Nyheter til I tall og tilbake (fire sekunder), med boksene under. Det blir ni trinn.
+- **Hvor jobber du?** (trinn 5): Avsnittet øverst nevner lokale regler og at de kan legges inn senere under Innstillinger. Kortet viser bare fylke, skole og bryteren for privatskole. Teksten om privatskoler kommer når den valgte skolen er privat. Lokale regler er én lenkerad under kortet. Alt får plass på en iPhone uten rulling. I Innstillinger er kortet som før.
+
+| | Mobil | Skrivebord |
+|---|---|---|
+| 1. Velkommen | ![](bilder/fase-10-r3-1-velkommen-mobil.jpg) | |
+| 2. Søket | ![](bilder/fase-10-r3-2-sok-mobil.jpg) | |
+| 3. Forsiden (slutten av animasjonen) | ![](bilder/fase-10-r3-3-forsiden-mobil.jpg) | ![](bilder/fase-10-r3-3-forsiden-skrivebord.jpg) |
+| 3. Forsiden (midt i, mørk visning) | ![](bilder/fase-10-r3-3-forsiden-midt-mork.jpg) | |
+| 4. Sidene | ![](bilder/fase-10-r3-4-sidene-mobil.jpg) | |
+| 5. Hvor jobber du? | ![](bilder/fase-10-r3-5-sted-mobil.jpg) | |
+| 6. Annen rolle valgt | ![](bilder/fase-10-r3-6-rolle-mobil.jpg) | |
+| 320 px, nynorsk | ![](bilder/fase-10-r3-1-velkommen-mobil320-nn.jpg) | |
+
+Spørsmålene V1, V3 og V5–V8 fra runde 1 står fortsatt åpne.
+
+---
+
 ## Runde 2: senere i Innstillinger, og skoleleder (08.10.2026)
 
 **Dine innspill:** Det må forklares at lokale regler og tilbakemeldinger også kan ordnes senere. Rektor og avdelingsleder slås sammen til skoleleder, med favorittene som passer best.

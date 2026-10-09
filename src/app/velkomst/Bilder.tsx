@@ -40,8 +40,8 @@ export function BildeVelkommen({ spillAv }: { spillAv: string }) {
   );
 }
 
-/** Trinn 2: forsiden med søket. Et ord skrives i søkefeltet, og treffet kommer fram. */
-export function BildeForsiden({ spillAv, sok, treff, treffUnder }: { spillAv: string; sok: string; treff: string; treffUnder: string }) {
+/** Trinn 2: søket. Et ord skrives i søkefeltet, og treffet kommer fram. */
+export function BildeSok({ spillAv, sok, treff, treffUnder }: { spillAv: string; sok: string; treff: string; treffUnder: string }) {
   return (
     <Ramme spillAv={spillAv}>
       {() => (
@@ -74,7 +74,69 @@ export function BildeForsiden({ spillAv, sok, treff, treffUnder }: { spillAv: st
   );
 }
 
-/** Trinn 3: et kort med regelverket og kildene nederst. Raden med regelverket åpnes. */
+/**
+ * Trinn 3: forsiden. Panelet øverst bytter fra kalenderen til nyhetene og tallene og tilbake, med boksene under, så det
+ * er tydelig at panelet står på forsiden og ikke i søket (eier 09.10.2026).
+ */
+export function BildeForsiden({ spillAv, faner }: { spillAv: string; faner: readonly [string, string, string] }) {
+  return (
+    <Ramme spillAv={spillAv}>
+      {() => (
+        <div class="vk-telefon vk-forside">
+          <div class="vk-topp">
+            <span class="vk-sokefelt">
+              <Ikon navn="sok" class="ikon-liten" />
+            </span>
+          </div>
+          <div class="vk-panel">
+            <div class="vk-faner">
+              {faner.map((f, i) => (
+                <span key={f} class={`vk-fane vk-vis-${i}`}>
+                  {f}
+                </span>
+              ))}
+            </div>
+            <div class="vk-panelinnhold">
+              <div class="vk-lag vk-vis-0">
+                {[0, 1].map((i) => (
+                  <span key={i} class="vk-panelrad">
+                    <span class="vk-dato" />
+                    <span class="vk-strek" />
+                  </span>
+                ))}
+              </div>
+              <div class="vk-lag vk-vis-1">
+                {[0, 1].map((i) => (
+                  <span key={i} class="vk-panelrad">
+                    <span class="vk-prikk" />
+                    <span class="vk-strek" />
+                  </span>
+                ))}
+              </div>
+              <div class="vk-lag vk-vis-2 vk-soyler">
+                {[45, 70, 55, 90, 75, 60].map((h) => (
+                  <span key={h} style={{ height: `${h}%` }} />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div class="vk-bokser">
+            {MODULIKONER.slice(0, 2).map((ikon) => (
+              <span key={ikon} class="vk-boks">
+                <span class="vk-sirkel">
+                  <Ikon navn={ikon} class="ikon-liten" />
+                </span>
+                <span class="vk-strek" />
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </Ramme>
+  );
+}
+
+/** Trinn 4: et kort med regelverket og kildene nederst. Raden med regelverket åpnes. */
 export function BildeSidene({ spillAv, regelverk, kilder }: { spillAv: string; regelverk: string; kilder: string }) {
   return (
     <Ramme spillAv={spillAv}>
@@ -105,7 +167,7 @@ export function BildeSidene({ spillAv, regelverk, kilder }: { spillAv: string; r
   );
 }
 
-/** Trinn 5: stjernen ved overskriften fylles, og siden kommer med under favorittene. */
+/** Trinn 6: stjernen ved overskriften fylles, og siden kommer med under favorittene. */
 export function BildeFavoritter({ spillAv, favoritter, side }: { spillAv: string; favoritter: string; side: string }) {
   return (
     <Ramme spillAv={spillAv} klasse="vk-bilde-lav">
@@ -148,7 +210,7 @@ export function BildeTakk({ spillAv }: { spillAv: string }) {
   );
 }
 
-/** Trinn 7: hvor knappen for å installere står, for hver enhet. */
+/** Trinn 8: hvor knappen for å installere står, for hver enhet. */
 export function BildeInstaller({ spillAv, enhet, tekst }: { spillAv: string; enhet: 'ios' | 'android' | 'datamaskin'; tekst: string }) {
   return (
     <Ramme spillAv={spillAv} klasse="vk-bilde-lav" key={enhet}>
