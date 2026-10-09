@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Legg til fag og Legg til funksjon** i Arbeidsplan og Beskjeftigelse lukker kortene som står fra før, så det nye kortet står åpent under dem.
+
 ## [1.0.3] – 2026-10-09
 
 ### Endret
