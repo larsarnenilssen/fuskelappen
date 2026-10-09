@@ -8,6 +8,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Velkomsten har fire trinn i stedet for ni:** hva appen er, hvor du jobber, rolle med forslag til favoritter og dagens jukselapp, og installering. Hvert trinn får plass uten å rulle på en vanlig mobil.
 
+### Rettet
+
+- **Kontrast i kalenderen:** datoer som er passert, er dempet med en farge som er lett å lese, i lys og mørk visning.
+- **Blank side ved feil:** en feil i en side gir nå en melding med «Last siden på nytt» og «Til forsiden», og toppfeltet virker som før.
+- **Lagring:** favorittene, variantene og de egne reglene slettes ikke lenger når et lagret felt er ukjent eller ugyldig. Det som ikke kunne leses, tas vare på i en egen kopi på enheten.
+- **Tilbake** fra en lenke rett etter at siden er rullet, gir nå stedet på siden der brukeren var.
+
 ## [1.1.0] – 2026-10-09
 
 ### Endret

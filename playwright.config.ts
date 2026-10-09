@@ -9,7 +9,9 @@ export default defineConfig({
   testDir: 'tests/e2e',
   fullyParallel: true,
   forbidOnly: ci,
-  retries: 0,
+  // Ett nytt forsøk i CI, så en ustabil test ikke gjør hele kjøringen rød. Playwright merker testen som «flaky» i
+  // rapporten, så den kan rettes (avgjørelse 097). Lokalt ingen nye forsøk.
+  retries: ci ? 1 : 0,
   // Hver del i CI kjører på en maskin med fire kjerner (avgjørelse 055).
   workers: ci ? 3 : undefined,
   reporter: ci ? [['list'], ['html', { open: 'never' }]] : 'list',

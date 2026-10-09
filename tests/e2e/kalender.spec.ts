@@ -1,8 +1,9 @@
 // Kalenderen (fase 6, pakke 5, avgjørelse 066): fristene fra alle modulene, filteret i adressen, de gamle adressene
 // som sender videre, og gruppen «Neste datoer» på forsiden. Datoene avhenger av dagen testen kjøres, så testene sjekker
 // oppsettet og ikke bestemte datoer.
+import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
-import { settLagret } from './hjelp.ts';
+import { settLagret, venterPaaSide } from './hjelp.ts';
 
 test.describe('kalenderen', () => {
   test('fra Inntak til kalenderen filtrert på inntak, med et kort som åpnes', async ({ page }) => {
@@ -67,6 +68,27 @@ test.describe('kalenderen', () => {
     await expect(page).toHaveURL(/aar=\d{4}/);
     await expect(page.locator('.kal-maned')).toHaveCount(12);
   });
+});
+
+test.describe('passerte datoer', () => {
+  // Datoer som er passert, dempes. Med fast dato midt i skoleåret finnes det alltid passerte datoer, så kontrasten
+  // testes uansett hvilken dag testen kjøres (avgjørelse 097). Kortene står lukket, slik brukeren ser dem.
+  for (const tema of ['lys', 'mork'] as const) {
+    test(`har nok kontrast, uten alvorlige axe-funn (${tema})`, { tag: '@mobil' }, async ({ page }) => {
+      await page.clock.setFixedTime(new Date('2027-01-15T10:00:00'));
+      await settLagret(page, { tema });
+      await page.goto('./#/kalender?visning=skolear');
+      await venterPaaSide(page);
+      await expect(page.locator('.kal-passert').first()).toBeVisible();
+      await expect(page.locator('.kal-passert-maned').first()).toBeVisible();
+      await expect(page.locator('.kal-passert .kal-kort[open]')).toHaveCount(0);
+      const resultat = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      const alvorlige = resultat.violations
+        .filter((v) => v.impact === 'serious' || v.impact === 'critical')
+        .map((v) => `${v.id}: ${v.help} (${v.nodes.map((n) => n.target.join(' ')).join(', ')})`);
+      expect(alvorlige).toEqual([]);
+    });
+  }
 });
 
 test.describe('«Neste datoer» på forsiden', () => {

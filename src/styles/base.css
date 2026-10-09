@@ -7832,10 +7832,16 @@ a.knapp {
   color: var(--kal-farge);
 }
 
+/* Datoer som er passert, dempes med den dempede tekstfargen, ikke med gjennomsiktighet, så teksten og merkene holder
+   kontrastkravet i WCAG 1.4.3 i lys og mørk visning (avgjørelse 097). */
 .kal-passert > .kal-dato,
-.kal-passert > .kal-punkt,
-.kal-passert > .kal-kort:not([open]) {
-  opacity: 0.55;
+.kal-passert > .kal-kort:not([open]) .kal-tittel,
+.kalender .kal-passert > .kal-kort:not([open]) .kal-merker .merke {
+  color: var(--farge-tekst-dempet);
+}
+
+.kal-passert > .kal-punkt {
+  border-color: var(--farge-tekst-dempet);
 }
 
 .kal-naa > .kal-kort {
