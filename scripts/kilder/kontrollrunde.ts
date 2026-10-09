@@ -75,13 +75,6 @@ export function oversiktspaminnelse(aar: string): string[] {
  */
 export const SJEKKES_FOR_HAND: readonly { id: string; tittel?: string; kilder: (k: { id: string; url: string }) => boolean; sporsmal: string }[] = [
   { id: 'ks-sfs2213', kilder: (k) => k.id === 'ks-sfs2213', sporsmal: 'Har KS lagt ut en ny SFS 2213 eller en ny protokoll siden forrige runde?' },
-  {
-    id: 'vestland',
-    tittel: 'Vestland fylkeskommune (vestlandfylke.no)',
-    kilder: (k) => k.id.startsWith('vlfk-') && k.url.startsWith('https://www.vestlandfylke.no/'),
-    sporsmal:
-      'Nettstedet stenger for kildesjekken, så appen har generelle tekster der den ellers ville hatt Vestlands egne, og ingen sjekker sidene automatisk. Åpne sidene under: Står det noe nytt om inntak, språk, tilrettelegging, eksamen, klage eller fagprøven som appen bør ha med? Åpner sidene seg uten problemer for deg, kan Claude prøve å slå kildesjekken på igjen.',
-  },
 ];
 
 /** Punktene for kildene som sjekkes for hånd, med navn og lenke fra kilderegisteret. */
