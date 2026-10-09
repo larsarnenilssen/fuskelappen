@@ -52,7 +52,7 @@ Krysset som tar bort kortet, står til høyre for pilen på samme linje, som i d
 
 ### A3. Hvor kortnavnet brukes
 
-«Fag 1» står i dag også i utregningen («Fag 1: …»), i kalkulatoren Beskjeftigelse og i sammenligningen av to arbeidsplaner.
+«Fag 1» står i dag også i utregningen («Fag 1: …») og i stolpen i kalkulatoren Beskjeftigelse.
 
 **Råd:** Kortnavnet alle steder der «Fag 1» står i dag, så det er det samme navnet overalt.
 
