@@ -57,10 +57,14 @@ describe('godkjenning fra en kontrollsak', () => {
   });
 
   it('setter bekreftet for en praksis', () => {
-    const ny = settBekreftet(les('content/kontroll/praksis.yaml'), 'periodenokkel', '2026-10-05');
-    const data = parse(ny ?? '') as { praksis: { id: string; bekreftet: unknown }[] };
+    type Praksisfil = { praksis: { id: string; bekreftet: unknown }[] };
+    const for_ = les('content/kontroll/praksis.yaml');
+    const ny = settBekreftet(for_, 'periodenokkel', '2026-10-05');
+    const data = parse(ny ?? '') as Praksisfil;
     expect(data.praksis.find((p) => p.id === 'periodenokkel')?.bekreftet).toEqual({ dato: '2026-10-05' });
-    expect(data.praksis.filter((p) => p.bekreftet !== null)).toHaveLength(1);
+    // De andre praksisene er uendret, uansett om de er bekreftet i filen eller ikke.
+    const andre = (d: Praksisfil) => d.praksis.filter((p) => p.id !== 'periodenokkel');
+    expect(andre(data)).toEqual(andre(parse(for_) as Praksisfil));
   });
 
   it('setter nytt fingeravtrykk med kommentar om hvem og når', () => {

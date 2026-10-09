@@ -297,7 +297,7 @@
 
 # Veiene til fag- og svennebrev, praksisbrev og kompetansebevis, og formidling til læreplass (fase 6). Bygger på
 # opplæringslova kapittel 5, 7 og § 23-2 og opplæringsforskrifta kapittel 6, 7 og 9, og på oversikten over veiene i
-# docs/arbeidsordrer/fase-6-forslag.md. Egne ord, ikke kopiert.
+# docs/arkiv/arbeidsordrer/fase-6-forslag.md. Egne ord, ikke kopiert.
 - id: praksisbrev
   type: begrep
   tittel: { nb: Praksisbrev, nn: Praksisbrev }

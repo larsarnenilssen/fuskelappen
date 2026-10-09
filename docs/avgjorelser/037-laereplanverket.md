@@ -1,6 +1,6 @@
 # 037 – Læreplanverket: overordnet del, grunnleggende ferdigheter og tverrfaglige temaer
 
-**Kontekst:** Pakke 6 i fase 2 (OPPDRAG.md). Eier ønsker en egen boks under «Læreplanverk og opplæringsløp» med overordnet del, grunnleggende ferdigheter og tverrfaglige temaer (B2). Overordnet del har mye tekst og skal være lett å navigere. Fagarket skal vise ferdighetene og temaene i faget med lenke til overordnet del. Kilden for teksten skulle avgjøres i pakken.
+**Kontekst:** Pakke 6 i fase 2 (docs/arkiv/OPPDRAG.md). Eier ønsker en egen boks under «Læreplanverk og opplæringsløp» med overordnet del, grunnleggende ferdigheter og tverrfaglige temaer (B2). Overordnet del har mye tekst og skal være lett å navigere. Fagarket skal vise ferdighetene og temaene i faget med lenke til overordnet del. Kilden for teksten skulle avgjøres i pakken.
 
 **Valg:**
 - **Kilde for overordnet del: udir.no**, ikke Lovdatas datasett.

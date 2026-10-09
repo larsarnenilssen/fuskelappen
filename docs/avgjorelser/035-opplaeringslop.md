@@ -1,6 +1,6 @@
 # 035 – Opplæringsløp: tilbudsstrukturen i appen
 
-**Kontekst:** Pakke 5 i fase 2 (OPPDRAG.md). Tilbudsmodellen (avgjørelse 024) og lenkene til Vilbli (avgjørelse 027) fantes bare i rapporten `docs/TILBUDSSTRUKTUR.md`. Eier ønsker tilbudsstrukturen i appen som en egen boks under «Læreplanverk og opplæringsløp», uten mellomside, med lenker begge veier mellom fag og tilbud (B1, B5).
+**Kontekst:** Pakke 5 i fase 2 (docs/arkiv/OPPDRAG.md). Tilbudsmodellen (avgjørelse 024) og lenkene til Vilbli (avgjørelse 027) fantes bare i rapporten `docs/TILBUDSSTRUKTUR.md`. Eier ønsker tilbudsstrukturen i appen som en egen boks under «Læreplanverk og opplæringsløp», uten mellomside, med lenker begge veier mellom fag og tilbud (B1, B5).
 
 **Valg:**
 - **Ny modul `opplaeringslop`:**

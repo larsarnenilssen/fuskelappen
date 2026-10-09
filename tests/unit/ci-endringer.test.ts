@@ -3,7 +3,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { bareVersjon, bareVersjonsoverskrift, erDokumentasjon, TESTEDE_DOKUMENTER, velgNivaa } from '../../scripts/ci/endringer.ts';
+import { bareVersjon, bareVersjonsoverskrift, erDokumentasjon, erRaskDokumentasjon, RASKE_MAPPER, TESTEDE_DOKUMENTER, velgNivaa } from '../../scripts/ci/endringer.ts';
 
 const rot = join(__dirname, '../..');
 
@@ -28,9 +28,12 @@ const logg = (versjon: string | null) =>
 const filer = (forrige: Record<string, string>, etter: Record<string, string>) => (fil: string) => ({ base: forrige[fil] ?? null, ny: etter[fil] ?? null });
 
 describe('dokumentasjon', () => {
-  it('docs/ og *.md utenom innholdet er dokumentasjon', () => {
-    expect(erDokumentasjon('docs/avgjorelser/067-ci-etter-endringer.md')).toBe(true);
-    expect(erDokumentasjon('docs/arbeidsordrer/fase-6-pakke-5.md')).toBe(true);
+  it('docs/ og *.md utenom innholdet er dokumentasjon, også arkivet og DRIFT.md', () => {
+    expect(erDokumentasjon('docs/arkiv/arbeidsordrer/fase-6-pakke-5.md')).toBe(true);
+    expect(erDokumentasjon('docs/arkiv/arbeidsordrer/bilder/designloft-mobil-1.jpg')).toBe(true);
+    expect(erDokumentasjon('docs/arkiv/OPPDRAG.md')).toBe(true);
+    expect(erDokumentasjon('DRIFT.md')).toBe(true);
+    expect(erDokumentasjon('.claude/skills/ny-versjon/SKILL.md')).toBe(true);
     expect(erDokumentasjon('docs/KONTROLL.md')).toBe(true);
     expect(erDokumentasjon('CHANGELOG.md')).toBe(true);
     expect(erDokumentasjon('AGENTS.md')).toBe(true);
@@ -46,6 +49,14 @@ describe('dokumentasjon', () => {
     expect(erDokumentasjon('.github/workflows/ci.yml')).toBe(false);
   });
 
+  it('avgjørelsene og oversikten over dem trenger den raske jobben (avgjørelse 105)', () => {
+    for (const f of ['docs/avgjorelser/067-ci-etter-endringer.md', 'docs/avgjorelser/README.md']) {
+      expect(erDokumentasjon(f), f).toBe(false);
+      expect(erRaskDokumentasjon(f), f).toBe(true);
+    }
+    expect(erRaskDokumentasjon('docs/EIER.md')).toBe(false);
+  });
+
   it('dokumentene testene leser, står i TESTEDE_DOKUMENTER', () => {
     // Testene leser dokumentene med join(rot, …) og filnavnet. Kommer det et nytt, må det føres opp.
     const lest = new Set<string>();
@@ -55,7 +66,9 @@ describe('dokumentasjon', () => {
         for (const m of tekst.matchAll(/join\(rot, '([^']+\.md)'\)/g)) lest.add(m[1] as string);
       }
     }
-    expect([...lest].sort()).toEqual([...TESTEDE_DOKUMENTER].sort());
+    for (const f of lest) expect(erDokumentasjon(f), f).toBe(false);
+    const iRaskeMapper = (f: string) => RASKE_MAPPER.some((m) => f.startsWith(m));
+    expect([...lest].filter((f) => !iRaskeMapper(f)).sort()).toEqual([...TESTEDE_DOKUMENTER].sort());
   });
 });
 
@@ -100,7 +113,12 @@ describe('nivået', () => {
   const versjon = { 'package.json': pakke('0.36.1'), 'package-lock.json': laas('0.36.1'), 'CHANGELOG.md': logg('0.36.1') };
 
   it('bare dokumentasjon gir ingen tester', () => {
-    expect(velgNivaa(['docs/EIER.md', 'docs/avgjorelser/066-kalender.md', 'OPPDRAG.md', 'CHANGELOG.md'], filer({}, {}))).toBe('ingen');
+    expect(velgNivaa(['docs/EIER.md', 'docs/arkiv/OPPDRAG.md', 'DRIFT.md', 'AGENTS.md', 'CHANGELOG.md'], filer({}, {}))).toBe('ingen');
+  });
+
+  it('avgjørelsene gir den raske jobben, så testen av oversikten kjøres', () => {
+    expect(velgNivaa(['docs/avgjorelser/105-drift.md', 'docs/avgjorelser/README.md', 'DRIFT.md'], filer({}, {}))).toBe('rask');
+    expect(velgNivaa(['docs/avgjorelser/105-drift.md', 'src/app/App.tsx'], filer({}, {}))).toBe('alt');
   });
 
   it('dokumentene testene leser, gir alt', () => {

@@ -1,6 +1,6 @@
 # 038 – Sammenligning og deling av varianter i Arbeidsplan
 
-**Kontekst:** Fase 3 (OPPDRAG.md): to varianter skal kunne sammenlignes side om side, f.eks. med og uten kontaktlærerfunksjon, og en variant skal kunne deles som lenke med komprimert tilstand i adressen. Appen har ingen server og lagrer ingenting utenfor enheten.
+**Kontekst:** Fase 3 (docs/arkiv/OPPDRAG.md): to varianter skal kunne sammenlignes side om side, f.eks. med og uten kontaktlærerfunksjon, og en variant skal kunne deles som lenke med komprimert tilstand i adressen. Appen har ingen server og lagrer ingenting utenfor enheten.
 
 **Valg:**
 - **Samme utregning overalt:** Utregningen i Arbeidsplan er flyttet ut av siden til `beregnArbeidsplan` (`src/modules/arbeidstid/arbeidsplan.ts`). Siden og sammenligningen bruker den samme funksjonen, så tallene alltid er like.

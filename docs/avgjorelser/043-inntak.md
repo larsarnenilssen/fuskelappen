@@ -1,6 +1,6 @@
 # 043 – Inntak: ny modul, lokale steg som bokser og felles veiviserkort
 
-**Kontekst:** Fase 5, pakke 1. Eier godkjente forslaget i `docs/arbeidsordrer/fase-5-forslag.md` (03.10.2026): søkerkategorier og rettigheter ved inntak, med veiviseren «Rett, inntak og søknad». Innholdet fra Vestlands lokale forskrift om inntak skal bare vises når Vestland er valgt, og uten valgt fylke står bare de nasjonale reglene, med en merknad.
+**Kontekst:** Fase 5, pakke 1. Eier godkjente forslaget i `docs/arkiv/arbeidsordrer/fase-5-forslag.md` (03.10.2026): søkerkategorier og rettigheter ved inntak, med veiviseren «Rett, inntak og søknad». Innholdet fra Vestlands lokale forskrift om inntak skal bare vises når Vestland er valgt, og uten valgt fylke står bare de nasjonale reglene, med en merknad.
 
 **Valg:**
 - **Ny modul `inntak`** under «Elever og opplæring», før Tilrettelegging. Inntak er et eget emne i oppdraget og får egne frister til årshjulet (fase 8). Tidslinjen (pakke 2) og poengberegningen (pakke 3) kommer i samme modul.

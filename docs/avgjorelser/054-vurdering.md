@@ -1,6 +1,6 @@
 # 054 – Vurdering: underveis og slutt, grunnlag for vurdering og orden og oppførsel
 
-**Kontekst:** Fase 6, pakke 1. Forslaget og mockupene ble godkjent av eier 04.10.2026 (`docs/arbeidsordrer/fase-6-forslag.md`). Eier ville ha en egen modul Vurdering under «Elever og opplæring» (OPPDRAG.md 3.7), mer vekt på vurderingspraksis, orden og oppførsel som eget stoff, og et søkbart oppslag over karakterkodene.
+**Kontekst:** Fase 6, pakke 1. Forslaget og mockupene ble godkjent av eier 04.10.2026 (`docs/arkiv/arbeidsordrer/fase-6-forslag.md`). Eier ville ha en egen modul Vurdering under «Elever og opplæring» (docs/arkiv/OPPDRAG.md 3.7), mer vekt på vurderingspraksis, orden og oppførsel som eget stoff, og et søkbart oppslag over karakterkodene.
 
 **Valg:**
 - **Modulen** `vurdering` har oversikten (`#/vurdering`), siden «Underveis- og sluttvurdering», veiviseren «Grunnlag for vurdering» (rav, avgjørelse 042) og siden «Orden og oppførsel». Fravær, eksamen og klage kommer som egne deler i pakke 2 og 3.

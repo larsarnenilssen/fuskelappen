@@ -1,6 +1,6 @@
 # 073 – Mer opplæring: siden i Inntak, deler som kan lukkes og kildene i boksen med matrisen
 
-**Kontekst:** Fase 6, pakke 7. Eier ville ha retten til mer opplæring (opplæringsforskrifta § 5-2 og Udirs tre veiledninger) samlet på én side, med lenker fra Vurdering, Lærlinger og kandidater, Tilrettelegging, Kalenderen og veiviseren for rett til inntak. Fire designrunder 06.10.2026 (`docs/arbeidsordrer/fase-6-pakke-7-forslag.md`).
+**Kontekst:** Fase 6, pakke 7. Eier ville ha retten til mer opplæring (opplæringsforskrifta § 5-2 og Udirs tre veiledninger) samlet på én side, med lenker fra Vurdering, Lærlinger og kandidater, Tilrettelegging, Kalenderen og veiviseren for rett til inntak. Fire designrunder 06.10.2026 (`docs/arkiv/arbeidsordrer/fase-6-pakke-7-forslag.md`).
 
 **Valg:**
 - **Siden** `#/inntak/mer-opplaering` er vanlige innholdselementer i `content/inntak/mer-opplaering.yaml`, valgt med prefiks (`mo-rad-`, `mo-retten-`, `mo-sti-`, `mo-fagprove`, `mo-vurdering-`, `mo-voksne-`, `mo-iop-`), som sidene i Vurdering (avgjørelse 054). Fra 64rem står siden i to kolonner. `?del=<id>` åpner delen og kortet.

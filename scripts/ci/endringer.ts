@@ -1,7 +1,8 @@
 // CI etter hva som er endret (avgjørelse 067): ser på filene en PR endrer, og velger hvor mye CI skal kjøre.
 //   ingen: bare dokumentasjon. Ingen tester.
-//   rask:  bare versjonsnummeret i package.json og package-lock.json, en ny versjonsoverskrift i CHANGELOG.md og
-//          eventuelt dokumentasjon. Lint, typesjekk, enhetstester og bygg, ikke ende-til-ende.
+//   rask:  bare versjonsnummeret i package.json og package-lock.json, en ny versjonsoverskrift i CHANGELOG.md,
+//          avgjørelsene (RASKE_MAPPER) og eventuelt dokumentasjon. Lint, typesjekk, enhetstester og bygg, ikke
+//          ende-til-ende.
 //   alt:   alt annet. Som før.
 // Ren logikk, testes i tests/unit/ci-endringer.test.ts. Kjøres av .github/workflows/ci.yml med Node uten
 // avhengigheter (--experimental-strip-types), så CI ikke trenger npm ci for å velge.
@@ -14,15 +15,26 @@ export type Nivaa = 'ingen' | 'rask' | 'alt';
 /** Dokumentasjon som testene leser eller sammenligner med dataene. Endres de, kjøres alt. */
 export const TESTEDE_DOKUMENTER: readonly string[] = ['docs/KOBLING.md', 'docs/TILBUDSSTRUKTUR.md', 'docs/KILDER.md', 'README.md'];
 
+/**
+ * Mapper med dokumentasjon der en enhetstest sjekker en generert oversikt (docs/avgjorelser/README.md, avgjørelse
+ * 105). Endres de, kjøres den raske jobben, så en oversikt som ikke er oppdatert, stopper PR-en og ikke main.
+ */
+export const RASKE_MAPPER: readonly string[] = ['docs/avgjorelser/'];
+
 /** Filene der bare versjonsnummeret kan være endret. */
 export const VERSJONSFILER: readonly string[] = ['package.json', 'package-lock.json'];
 
+/** Dokumentasjon som bare trenger den raske jobben (lint, typesjekk, enhetstester og bygg). */
+export function erRaskDokumentasjon(fil: string): boolean {
+  return RASKE_MAPPER.some((mappe) => fil.startsWith(mappe));
+}
+
 /**
- * Dokumentasjon: alt under docs/ og *.md utenom innholdet. Unntak: dokumentene testene leser, og *.md under tests/
- * (fasittestene krever tests/fasit/README.md).
+ * Dokumentasjon: alt under docs/ og *.md utenom innholdet, også arkivet (docs/arkiv/) og DRIFT.md. Unntak: dokumentene
+ * testene leser, mappene i RASKE_MAPPER, og *.md under tests/ (fasittestene krever tests/fasit/README.md).
  */
 export function erDokumentasjon(fil: string): boolean {
-  if (TESTEDE_DOKUMENTER.includes(fil)) return false;
+  if (TESTEDE_DOKUMENTER.includes(fil) || erRaskDokumentasjon(fil)) return false;
   if (fil.startsWith('content/') || fil.startsWith('tests/')) return false;
   return fil.startsWith('docs/') || fil.endsWith('.md');
 }
@@ -73,7 +85,7 @@ export function velgNivaa(filer: readonly string[], lesFil: (fil: string) => { b
   if (filer.every(erDokumentasjon)) return 'ingen';
   const rask = filer.every((f) => {
     // CHANGELOG.md er dokumentasjon, men i en versjons-PR skal den bare ha fått overskriften for versjonen.
-    if (f !== 'CHANGELOG.md' && erDokumentasjon(f)) return true;
+    if (f !== 'CHANGELOG.md' && (erDokumentasjon(f) || erRaskDokumentasjon(f))) return true;
     const { base, ny } = lesFil(f);
     return f === 'CHANGELOG.md' ? bareVersjonsoverskrift(base, ny) : bareVersjon(f, base, ny);
   });

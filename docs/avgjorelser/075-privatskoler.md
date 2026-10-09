@@ -1,6 +1,6 @@
 # 075 – Privatskoler: privatskolelova i Regelverk, et valg i innstillingene og egne regler der de er ulike
 
-**Kontekst:** Appen er skrevet for fylkeskommunale skoler. Eier ville ha privatskolelova og forskriften til den i appen før skolemiljøet i fase 7, fordi skolemiljøet og skolereglene også gjelder privatskoler (`docs/arbeidsordrer/fase-7.md`). Eier godkjente utvalget av kapitler 06.10.2026. Eier ba også om at den som arbeider ved en privatskole, eller vil se reglene for privatskoler, får se de riktige reglene i appen (`docs/arbeidsordrer/fase-7-forslag.md`).
+**Kontekst:** Appen er skrevet for fylkeskommunale skoler. Eier ville ha privatskolelova og forskriften til den i appen før skolemiljøet i fase 7, fordi skolemiljøet og skolereglene også gjelder privatskoler (`docs/arkiv/arbeidsordrer/fase-7.md`). Eier godkjente utvalget av kapitler 06.10.2026. Eier ba også om at den som arbeider ved en privatskole, eller vil se reglene for privatskoler, får se de riktige reglene i appen (`docs/arkiv/arbeidsordrer/fase-7-forslag.md`).
 
 **Valg:**
 - **Lov og forskrift:** `privatskolelova` (lov 2003-07-04-84, kap. 1–5, 5A, 6A og 7) og `privatskoleforskrifta` (forskrift 2024-06-03-901, kap. 3–11) står i `content/lovverk.yaml` med `privatskole: true`. Teksten hentes av kildesjekken som for de andre lovene.
