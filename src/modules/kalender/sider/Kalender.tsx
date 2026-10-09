@@ -11,6 +11,7 @@ import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
 import { useHusketApen } from '../../../components/husket.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Kildeboks } from '../../../components/Kildeboks.tsx';
 import { Kortfot } from '../../../components/Kortfot.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { formaterDato, type Malform } from '../../../core/i18n/tekst.ts';
@@ -39,6 +40,7 @@ import {
 import { harEksamensdatoer } from '../beregning/oppforinger.ts';
 import { folgerVertskommunen, harSkolerute } from '../datakilder.ts';
 import { ENDRINGER_REGJERINGEN, NYTT_UDIR } from '../oversikter.ts';
+import { manifest } from '../index.ts';
 import { hentKalenderdata, samle, type Kalenderdata } from '../samle.ts';
 import { finnLenker, type Kalenderlenke } from '../lenker.ts';
 import { datocelle, datoLang, manedTittel, periodeTekst } from '../visning.ts';
@@ -305,26 +307,17 @@ export default function Kalender({ sporring }: SideProps) {
           <p class="liten dempet kal-kilde">
             {t('kalender.kilde')} {data && t('kalender.hentet', { dato: formaterDato(data.hentet, malform) })}
           </p>
-          <ul class="kal-kontroll liten">
-            <li>
-              <a class="ekstern-lenke" href={EKSAMENSPLAN} target="_blank" rel="noopener noreferrer">
-                {t('kalender.eksamensplan')}
-                <Ikon navn="ekstern" class="ikon-liten" />
-              </a>
-            </li>
-            <li>
-              <a class="ekstern-lenke" href={ENDRINGER_REGJERINGEN.url} target="_blank" rel="noopener noreferrer">
-                {t('kalender.endringerRegjeringen')}
-                <Ikon navn="ekstern" class="ikon-liten" />
-              </a>
-            </li>
-            <li>
-              <a class="ekstern-lenke" href={NYTT_UDIR.url} target="_blank" rel="noopener noreferrer">
-                {t('kalender.nyttUdir')}
-                <Ikon navn="ekstern" class="ikon-liten" />
-              </a>
-            </li>
-          </ul>
+          {/* Kildene og oversiktene brukeren kan kontrollere kalenderen mot, i en lukket boks, ikke som en punktliste på
+              bakgrunnen (docs/DESIGN.md, avgjørelse 100). */}
+          <Kildeboks
+            nokkel="kalender"
+            kilder={manifest.kilder.map((id) => ({ id }))}
+            lenker={[
+              { tekst: t('kalender.eksamensplan'), url: EKSAMENSPLAN },
+              { tekst: t('kalender.endringerRegjeringen'), url: ENDRINGER_REGJERINGEN.url },
+              { tekst: t('kalender.nyttUdir'), url: NYTT_UDIR.url },
+            ]}
+          />
         </>
       )}
     </div>

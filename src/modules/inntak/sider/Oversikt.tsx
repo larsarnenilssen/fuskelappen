@@ -3,6 +3,7 @@ import { LokaleRegler } from '../../../app/lokaleregler/LokaleRegler.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { veiviseroverskrift, Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { Kalkulatorinngang } from '../../../components/Kalkulatorinngang.tsx';
+import { Oversiktsdel } from '../../../components/Oversiktsdel.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
@@ -41,8 +42,7 @@ export default function Oversikt() {
           <ToKolonner
             hoved={
               <>
-                <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('inntak.merOpplaering.tittel')}</h2>
+                <Oversiktsdel tittel={t('inntak.merOpplaering.tittel')} antall={1}>
                   <a class="frist-inngang" href={`#${UNDERSIDER.merOpplaering.rute}`}>
                     <span class="frist-inngang-tittel">
                       <Ikon navn={UNDERSIDER.merOpplaering.ikon} />
@@ -51,19 +51,18 @@ export default function Oversikt() {
                     <span class="frist-inngang-neste">{t('inntak.merOpplaering.beskrivelse')}</span>
                     <Ikon navn="hoyre" class="frist-inngang-pil" />
                   </a>
-                </section>
+                </Oversiktsdel>
                 {/* Lokale regler om inntak for fylket og skolen (fase 9, avgjørelse 093). */}
                 <LokaleRegler tema="inntak" />
               </>
             }
             side={
               <>
-                <section class="lop-del">
-                  <h2 class="liten-overskrift">{t(veiviseroverskrift(veivisere.length))}</h2>
+                {/* Delene med én inngang står uten overskrift, som én liste (avgjørelse 100). */}
+                <Oversiktsdel tittel={t(veiviseroverskrift(veivisere.length))} antall={veivisere.length}>
                   <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
-                </section>
-                <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('felles.kalkulator')}</h2>
+                </Oversiktsdel>
+                <Oversiktsdel tittel={t('felles.kalkulator')} antall={1}>
                   <Kalkulatorinngang
                     href={`#${UNDERSIDER.poeng.rute}`}
                     ikon={UNDERSIDER.poeng.ikon}
@@ -71,9 +70,8 @@ export default function Oversikt() {
                     inn={[t('inntak.poeng.deler.standpunkt'), t('inntak.poeng.deler.eksamen'), t('inntak.poeng.deler.valgfag')]}
                     ut={t('inntak.poeng.resultat.tittel')}
                   />
-                </section>
-                <section class="lop-del">
-                  <h2 class="liten-overskrift">{t('inntak.frister.kort')}</h2>
+                </Oversiktsdel>
+                <Oversiktsdel tittel={t('inntak.frister.kort')} antall={1}>
                   {/* Kortet viser den neste fristen, så brukeren ser hva som kommer uten å åpne tidslinjen. */}
                   <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
                     <span class="frist-inngang-tittel">
@@ -89,7 +87,7 @@ export default function Oversikt() {
                     )}
                     <Ikon navn="hoyre" class="frist-inngang-pil" />
                   </a>
-                </section>
+                </Oversiktsdel>
                 {/* Søkerne fra Udir og ungdomskullene fra SSB, nederst etter sidens eget innhold (avgjørelse 090 og 091). */}
                 <InntakBoks fylke={innstillinger.fylke} />
               </>

@@ -19,10 +19,21 @@ interface Props {
   nokkel?: string;
   /** Rader mellom regelverket og kildene, f.eks. «Mer om dette steget» i veiviserne. */
   children?: ComponentChildren;
+  /**
+   * Lenker som står med kildene, men ikke i kilderegisteret, f.eks. oversikter som får ny adresse hvert år
+   * (kalenderen, avgjørelse 100).
+   */
+  lenker?: readonly Kildeboklenke[];
+}
+
+/** En lenke blant kildene som ikke står i kilderegisteret. */
+export interface Kildeboklenke {
+  tekst: string;
+  url: string;
 }
 
 /** Radene uten ramme, til kort som har sin egen bunn (veiviserne og fristene). */
-export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, children, nokkel }: Props) {
+export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, children, nokkel, lenker = [] }: Props) {
   const { t } = useTekst();
   // For privatskoler står paragrafene i opplæringsforskrifta som har en parallell, i privatskoleforskrifta
   // (avgjørelse 075).
@@ -54,14 +65,29 @@ export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, 
         </details>
       )}
       {children}
-      {kilder.length > 0 && (
+      {kilder.length + lenker.length > 0 && (
         <details class="veiviser-kilder" open={kilderApen} onToggle={(e) => settKilderApen((e.currentTarget as HTMLDetailsElement).open)}>
           <summary class="forklaring-knapp">
             <Ikon navn="bok" />
-            <span>{t('komponenter.veiviser.kilder', { antall: String(kilder.length) })}</span>
+            <span>{t('komponenter.veiviser.kilder', { antall: String(kilder.length + lenker.length) })}</span>
             <Ikon navn="ned" class="forklaring-pil" />
           </summary>
-          <Kildeliste kilder={kilder} niva={3} utenOverskrift />
+          {kilder.length > 0 && <Kildeliste kilder={kilder} niva={3} utenOverskrift />}
+          {lenker.length > 0 && (
+            <div class="kildeliste">
+              <ul>
+                {lenker.map((l) => (
+                  <li key={l.url}>
+                    <a class="kildelenke" href={l.url} target="_blank" rel="noopener noreferrer">
+                      {l.tekst}
+                      <Ikon navn="ekstern" class="ikon-liten" />
+                      <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted: new URL(l.url).hostname.replace(/^www\./, '') })}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </details>
       )}
     </>
@@ -70,7 +96,7 @@ export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, 
 
 /** Radene festet nederst i kortet, fra kant til kant. */
 export function Kortfot(props: Props) {
-  if (!props.paragrafer?.length && props.kilder.length === 0 && !props.children) return null;
+  if (!props.paragrafer?.length && props.kilder.length === 0 && !props.lenker?.length && !props.children) return null;
   return (
     <div class="kortfot">
       <KortfotRader {...props} />

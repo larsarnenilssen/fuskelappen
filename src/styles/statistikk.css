@@ -978,7 +978,7 @@
   padding: 0 var(--rom-1);
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-s);
-  font-size: 0.6875rem;
+  font-size: var(--str-xs);
   font-weight: 600;
   line-height: 1.5;
   color: var(--farge-tekst-dempet);

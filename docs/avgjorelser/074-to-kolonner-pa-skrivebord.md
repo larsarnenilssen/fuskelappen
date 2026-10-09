@@ -18,3 +18,5 @@
 - **Regelverk:** Gruppene (lover, forskrifter, lokale forskrifter og avtaler) er lukket fra start på mobil og skrivebord. Det brukeren åpner, huskes for siden (avgjørelse 072).
 
 **Konsekvens:** Nye sider får to kolonner uten egen CSS. Kalkulatorene, forsiden og kalenderen har egne oppsett på skrivebord og er ikke endret. Vurderingen av de andre sidene står i `docs/arbeidsordrer/fase-7-forslag.md`.
+
+**Endret 09.10.2026:** Gruppene i Regelverk står åpne, med dokumentene i en liste under gruppenavnet (avgjørelse 100).

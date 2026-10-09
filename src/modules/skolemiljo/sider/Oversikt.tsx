@@ -6,6 +6,7 @@ import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { veiviseroverskrift, Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { Oversiktsdel } from '../../../components/Oversiktsdel.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import { Inngang } from '../../vurdering/sider/Inngang.tsx';
@@ -32,33 +33,31 @@ export default function Oversikt() {
         hoved={
           <>
             {/* Retten og pliktene øverst (eier 06.10.2026): kapittel 12. Elevundersøkelsen er egen modul (avgjørelse 087). */}
-            <section class="lop-del">
-              <h2 class="liten-overskrift">{t('skolemiljo.rettenOgResultatene')}</h2>
+            {/* Delene med én inngang står uten overskrift, som én liste (avgjørelse 100). */}
+            <Oversiktsdel tittel={t('skolemiljo.rettenOgResultatene')} antall={1}>
               <ul class="vu-videre">
                 <li>
                   <Inngang {...UNDERSIDER.kapittel12} tittel={t('skolemiljo.kapittel12.kort')} tekst={t('skolemiljo.kapittel12.beskrivelse')} />
                 </li>
               </ul>
-            </section>
-            <section class="lop-del">
-              <h2 class="liten-overskrift">{t('skolemiljo.oppslag')}</h2>
+            </Oversiktsdel>
+            <Oversiktsdel tittel={t('skolemiljo.oppslag')} antall={1}>
               <ul class="vu-videre">
                 <li>
                   <Inngang {...UNDERSIDER.skoleregler} tittel={t('skolemiljo.skoleregler.kort')} tekst={t('skolemiljo.skoleregler.beskrivelse')} />
                 </li>
               </ul>
-            </section>
+            </Oversiktsdel>
           </>
         }
         side={
-          <section class="lop-del">
-            <h2 class="liten-overskrift">{t(veiviseroverskrift(veivisere.length))}</h2>
+          <Oversiktsdel tittel={t(veiviseroverskrift(veivisere.length))} antall={veivisere.length}>
             {innhold === null ? (
               <p class="dempet">{t('app.lasterInn')}</p>
             ) : (
               <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
             )}
-          </section>
+          </Oversiktsdel>
         }
       />
     </div>
