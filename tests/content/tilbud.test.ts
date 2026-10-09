@@ -21,7 +21,8 @@ const hoved = tilbud.filter((t) => !t.variant);
 describe('tilbudsstrukturen', () => {
   it('docs/TILBUDSSTRUKTUR.md er oppdatert (kjør «npm run tilbud:rapport»)', () => {
     expect(readFileSync(join(rot, 'docs/TILBUDSSTRUKTUR.md'), 'utf8')).toBe(lagRapportFraRepo(rot));
-  });
+    // Rapporten lages fra alle dataene og tar noen sekunder på en travel maskin (avgjørelse 097).
+  }, 30_000);
 
   it('hvert programområde i skole med tabell har en sum som stemmer med rundskrivet', () => {
     const feil = hoved.filter((t) => t.tabell && t.sum !== t.totalt).map((t) => `${t.kode}: ${t.sum} ≠ ${t.totalt}`);
@@ -81,7 +82,7 @@ describe('tilbudsstrukturen', () => {
 
   it('data/status/lopsamsvar.json er oppdatert (kjør «npm run tilbud:rapport»)', () => {
     expect(JSON.parse(readFileSync(join(rot, 'data/status/lopsamsvar.json'), 'utf8')).uenige).toEqual(uenigheterFraRepo(rot));
-  });
+  }, 30_000);
 
   it('løpene fra utdanning.no er gyldige, og kildesamsvaret gir det eier har sett (avgjørelse 052)', () => {
     const k = lesLopskilder(rot);

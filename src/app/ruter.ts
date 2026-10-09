@@ -80,17 +80,13 @@ export function startRuting(): void {
   const naa = gjeldende();
   if (naa) dybde = naa.dybde;
   else history.replaceState({ appId: nyId(), dybde: 0 }, '');
-  let ventende = false;
+  // Posisjonen lagres med en gang, ikke i neste bilde (requestAnimationFrame): ruller brukeren og trykker på en lenke
+  // rett etter, kunne ellers posisjonen bli lagret på den nye siden, og tilbake ga feil sted (avgjørelse 097).
   window.addEventListener(
     'scroll',
     () => {
-      if (ventende) return;
-      ventende = true;
-      requestAnimationFrame(() => {
-        ventende = false;
-        const id = gjeldende();
-        if (id) scrollPosisjoner.set(id.appId, window.scrollY);
-      });
+      const id = gjeldende();
+      if (id) scrollPosisjoner.set(id.appId, window.scrollY);
     },
     { passive: true },
   );

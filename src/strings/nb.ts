@@ -592,6 +592,13 @@ export const nb = {
     tilForsiden: 'Til forsiden',
     sok: 'Søk i appen',
   },
+  /** Feilgrensen rundt siden (avgjørelse 097): en feil i en side gir denne meldingen i stedet for en blank side. */
+  sidefeil: {
+    tittel: 'Noe gikk galt',
+    tekst: 'Siden kunne ikke vises på grunn av en feil i appen. Last siden på nytt, eller gå til forsiden.',
+    lastPaNytt: 'Last siden på nytt',
+    tilForsiden: 'Til forsiden',
+  },
   spraak: {
     nb: 'bokmål',
     nn: 'nynorsk',
