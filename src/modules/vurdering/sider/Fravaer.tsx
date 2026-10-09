@@ -14,6 +14,7 @@ import { Bryter } from '../../../components/Bryter.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Innholdskort } from '../../../components/Innholdskort.tsx';
 import { Kortfot } from '../../../components/Kortfot.tsx';
 import { Resultatkort, Tomtresultat, type Utregningssteg } from '../../../components/Resultatkort.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
@@ -29,7 +30,7 @@ import type { Fagindeks } from '../../fag/skjema.ts';
 import type { Merknad } from '../../fag/vigo/skjema.ts';
 import type { SideProps } from '../../typer.ts';
 import { beregnGrenser, type Fravaersresultat, type Fravaerssteg, type Grenseresultat, sjekkFravaer } from '../beregning/fravaer.ts';
-import { fravaerRute, hentInnhold, veiviserRute } from '../innhold.ts';
+import { type Forklaringselement, fravaerRute, hentInnhold, veiviserRute } from '../innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { FravaerBoks } from '../../statistikk/komponenter.tsx';
 // Stilene lastes med siden, ikke i startpakken.
@@ -275,13 +276,17 @@ export default function Fravaer({ sporring }: SideProps) {
   const [indeks, settIndeks] = useState<Fagindeks | null>(null);
   const [klasser, settKlasser] = useState<Map<string, Fagklasse> | null>(null);
   const [regler, settRegler] = useState<Innholdselement[] | null>(null);
+  const [oppfolging, settOppfolging] = useState<Forklaringselement | null>(null);
   const [fam, settFam] = useState<Merknad | null>(null);
   useEffect(() => {
     void Promise.all([lastFagindeks(), lastFagroller()]).then(([i, r]) => {
       settIndeks(i);
       settKlasser(fagklasser(i, r.roller));
     });
-    void hentInnhold().then((i) => settRegler(i.regler));
+    void hentInnhold().then((i) => {
+      settRegler(i.regler);
+      settOppfolging(i.forklaringer.find((e) => e.id === 'fr-oppfolging') ?? null);
+    });
   }, []);
   // Faget i adressen kan endres av en lenke (f.eks. fra fagarket) mens siden er åpen.
   const fraAdressen = sporring.get('fag') ?? '';
@@ -458,6 +463,13 @@ export default function Fravaer({ sporring }: SideProps) {
         </a>
       </div>
 
+      {/* Oppfølgingsplikten (opplæringslova § 10-6) gjelder alt fravær, ikke bare grensen, og står derfor som eget kort
+          over reglene for grensen (09.10.2026). */}
+      {oppfolging && (
+        <div class="poeng-regler">
+          <Innholdskort element={oppfolging} />
+        </div>
+      )}
       {regler && regler.length > 0 && (
         <section class="poeng-regler">
           <h2 class="liten-overskrift">{t('vurdering.fravaer.regler')}</h2>

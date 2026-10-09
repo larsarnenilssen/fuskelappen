@@ -2,7 +2,7 @@
 // Kapittelet står i fem nummererte deler som er lukket fra start (eier 06.10.2026), så hele kapittelet får plass på
 // skjermen: hver del viser tittelen, paragrafene og én setning, og åpnes med et trykk. Inni står kortene med egne ord
 // (content/skolemiljo/kapittel-12.yaml). Aktivitetsplikten har de fem delpliktene som en rad, og statsforvalteren
-// veien dit som en sti. Kortene om informasjon og fysiske inngrep (kapittel 10 og 13)
+// veien dit som en sti. Kortene om informasjon, meldepliktene og fysiske inngrep (kapittel 10, 13 og 24)
 // og lenkene til veiviseren, skolereglene og Elevundersøkelsen står til høyre på skrivebord (avgjørelse 074).
 // `?del=<id>` åpner delen eller kortet og ruller dit, som på siden om eksamen. Delene husker om de er åpne (avgjørelse 072).
 import type { ComponentChildren } from 'preact';
@@ -32,7 +32,7 @@ const DELER = [
   { id: 'fysisk', kort: ['k12-fysisk'] },
   { id: 'ansvar', kort: ['k12-ansvar'] },
 ] as const;
-const VED_SIDEN = ['k12-informasjon', 'k12-fysiske-inngrep'];
+const VED_SIDEN = ['k12-informasjon', 'k12-meldeplikter', 'k12-fysiske-inngrep'];
 const DELPLIKTER = ['folgeMed', 'gripeInn', 'meldeFra', 'undersoke', 'tiltak'] as const;
 const GANG = ['rektor', 'uke', 'melde', 'vedtak', 'klage'] as const;
 

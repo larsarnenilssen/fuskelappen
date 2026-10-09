@@ -3,10 +3,10 @@
   type: forklaring
   tittel:
     nb: "Grunnlaget er skolereglene"
-    nn: "Grunnlaget er skolereglane"
+    nn: "Grunnlaget er skulereglane"
   tekst:
     nb: "Vurderingen i orden og oppførsel skal fremme sosial læring og et trygt og godt skolemiljø. Grunnlaget er skolereglene, og elevene skal være kjent med dem. Orden handler om å være punktlig og forberedt og følge opp arbeid. Oppførsel handler om å vise hensyn og respekt for andre. Kompetanse i fag skal ikke trekkes inn, og det skal tas hensyn til elevens forutsetninger. Enkelthendelser skal ikke veie tungt, med mindre de er særlig klanderverdige eller grove."
-    nn: "Vurderinga i orden og oppførsel skal fremje sosial læring og eit trygt og godt skolemiljø. Grunnlaget er skolereglane, og elevane skal vere kjende med dei. Orden handlar om å vere punktleg og førebudd og følgje opp arbeid. Oppførsel handlar om å vise omsyn og respekt for andre. Kompetanse i fag skal ikkje trekkjast inn, og det skal takast omsyn til føresetnadene til eleven. Enkelthendingar skal ikkje vege tungt, med mindre dei er særleg klanderverdige eller grove."
+    nn: "Vurderinga i orden og oppførsel skal fremje sosial læring og eit trygt og godt skulemiljø. Grunnlaget er skulereglane, og elevane skal vere kjende med dei. Orden handlar om å vere punktleg og førebudd og følgje opp arbeid. Oppførsel handlar om å vise omsyn og respekt for andre. Kompetanse i fag skal ikkje trekkjast inn, og det skal takast omsyn til føresetnadene til eleven. Enkelthendingar skal ikkje vege tungt, med mindre dei er særleg klanderverdige eller grove."
   paragrafer: [opplaeringsforskrifta/9-2, opplaeringslova/10-7]
   privatskole:
     tekst:
@@ -46,7 +46,7 @@
     nn: "Undervegsvurdering og halvårsvurdering"
   tekst:
     nb: "Eleven får jevnlig underveisvurdering i orden og oppførsel, med veiledning om hva som er god orden og oppførsel. Halvårsvurdering gis midt i opplæringsperioden, og ved slutten av skoleåret når eleven ikke er i siste år. Kontaktlæreren gir den, i samråd med de andre lærerne."
-    nn: "Eleven får jamleg undervegsvurdering i orden og oppførsel, med rettleiing om kva som er god orden og oppførsel. Halvårsvurdering blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når eleven ikkje er i siste år. Kontaktlæraren gir henne, i samråd med dei andre lærarane."
+    nn: "Eleven får jamleg undervegsvurdering i orden og oppførsel, med rettleiing om kva som er god orden og oppførsel. Halvårsvurdering blir gitt midt i opplæringsperioden, og ved slutten av skuleåret når eleven ikkje er i siste år. Kontaktlæraren gir henne, i samråd med dei andre lærarane."
   paragrafer: [opplaeringsforskrifta/9-12, opplaeringsforskrifta/9-14]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-12", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-12" }
@@ -62,7 +62,7 @@
     nn: "Varsel om Ng eller Lg"
   tekst:
     nb: "Står eleven i fare for å få Ng eller Lg ved halvårsvurderingen eller i standpunkt, skal eleven varsles, og foreldrene hvis eleven er under 18. Varselet skal gi eleven mulighet til å forbedre seg. Får eleven en nedsatt karakter som sanksjon for en enkelthendelse etter skolereglene, trengs det ikke varsel."
-    nn: "Står eleven i fare for å få Ng eller Lg ved halvårsvurderinga eller i standpunkt, skal eleven varslast, og foreldra dersom eleven er under 18. Varselet skal gi eleven høve til å betre seg. Får eleven ein nedsett karakter som sanksjon for ei enkelthending etter skolereglane, trengst det ikkje varsel."
+    nn: "Står eleven i fare for å få Ng eller Lg ved halvårsvurderinga eller i standpunkt, skal eleven varslast, og foreldra dersom eleven er under 18. Varselet skal gi eleven høve til å betre seg. Får eleven ein nedsett karakter som sanksjon for ei enkelthending etter skulereglane, trengst det ikkje varsel."
   paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/9-17]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-7 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
@@ -79,7 +79,7 @@
     nn: "Standpunkt"
   tekst:
     nb: "Når opplæringsløpet i videregående skole er slutt, settes én standpunktkarakter i orden og én i oppførsel, etter en helhetlig vurdering av hele opplæringstiden. Rektor må drøfte karakterene med lærerne før de settes."
-    nn: "Når opplæringsløpet i vidaregåande skole er slutt, blir det sett éin standpunktkarakter i orden og éin i oppførsel, etter ei heilskapleg vurdering av heile opplæringstida. Rektor må drøfte karakterane med lærarane før dei blir sette."
+    nn: "Når opplæringsløpet i vidaregåande skule er slutt, blir det sett éin standpunktkarakter i orden og éin i oppførsel, etter ei heilskapleg vurdering av heile opplæringstida. Rektor må drøfte karakterane med lærarane før dei blir sette."
   paragrafer: [opplaeringsforskrifta/9-17]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-17", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-17" }
@@ -94,7 +94,7 @@
     nn: "Klage"
   tekst:
     nb: "Eleven kan klage på standpunktkarakteren i orden og oppførsel innen 10 dager. Skolen vurderer klagen først og kan sette karakteren opp. Statsforvalteren er klageinstans og kan justere karakteren opp eller ned."
-    nn: "Eleven kan klage på standpunktkarakteren i orden og oppførsel innan 10 dagar. Skolen vurderer klaga først og kan setje karakteren opp. Statsforvaltaren er klageinstans og kan justere karakteren opp eller ned."
+    nn: "Eleven kan klage på standpunktkarakteren i orden og oppførsel innan 10 dagar. Skulen vurderer klaga først og kan setje karakteren opp. Statsforvaltaren er klageinstans og kan justere karakteren opp eller ned."
   paragrafer: [opplaeringsforskrifta/10-6, opplaeringsforskrifta/10-2]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-6", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-6" }

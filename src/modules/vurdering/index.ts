@@ -52,7 +52,7 @@ export const manifest: Modulmanifest = {
         type: 'kalkulator' as const,
         tittel: begge('vurdering.fravaer.tittel'),
         tekst: begge('vurdering.fravaer.beskrivelse'),
-        stikkord: ['fravær', 'fraværsgrense', 'fraværsgrensen', '10 prosent', '15 prosent', 'egenmelding', 'legeerklæring', 'IV', 'kalkulator'],
+        stikkord: ['fravær', 'fraværsgrense', 'fraværsgrensen', '10 prosent', '15 prosent', 'egenmelding', 'legeerklæring', 'IV', 'kalkulator', 'oppfølgingsplikt', 'følge opp fravær'],
         rute: fravaerRute,
         modul: 'vurdering',
       },

@@ -341,15 +341,18 @@
   type: begrep
   tittel: { nb: Kontaktlærer, nn: Kontaktlærar }
   tekst:
-    nb: En lærer som utfører kontaktlærertjeneste i videregående opplæring, får redusert årsrammen for undervisning med minst 28,5 årsrammetimer (38 i 45-minutters enheter). For lærere med redusert undervisning på grunn av funksjon brukes årsrammen 607,5, så 28,5 årsrammetimer tilsvarer 4,69 % av en hel stilling. I tillegg gis det minst 12 000 kroner i året i godtgjøring for kontaktlærertjenesten.
-    nn: Ein lærar som utfører kontaktlærarteneste i vidaregåande opplæring, får redusert årsramma for undervisning med minst 28,5 årsrammetimar (38 i 45-minutts einingar). For lærarar med redusert undervisning på grunn av funksjon blir årsramma 607,5 brukt, så 28,5 årsrammetimar svarar til 4,69 % av ei heil stilling. I tillegg blir det gitt minst 12 000 kroner i året i godtgjering for kontaktlærartenesta.
+    nb: Alle elever skal ha en kontaktlærer. Etter opplæringslova har kontaktlæreren et særlig ansvar for eleven, for kontakten med hjemmet og for administrative, sosiale og pedagogiske oppgaver i klassen. På Vg1 og Vg2 skal skolen invitere foreldrene til elever under 18 år til minst én planlagt samtale med kontaktlæreren i første halvår. En lærer som utfører kontaktlærertjeneste i videregående opplæring, får redusert årsrammen for undervisning med minst 28,5 årsrammetimer (38 i 45-minutters enheter). For lærere med redusert undervisning på grunn av funksjon brukes årsrammen 607,5, så 28,5 årsrammetimer tilsvarer 4,69 % av en hel stilling. I tillegg gis det minst 12 000 kroner i året i godtgjøring for kontaktlærertjenesten. Se [opplæringslova § 14-2](#/lov/opplaeringslova/14-2).
+    nn: Alle elevar skal ha ein kontaktlærar. Etter opplæringslova har kontaktlæraren eit særleg ansvar for eleven, for kontakten med heimen og for administrative, sosiale og pedagogiske gjeremål i klassen. På Vg1 og Vg2 skal skulen invitere foreldra til elevar under 18 år til minst éin planlagd samtale med kontaktlæraren i første halvår. Ein lærar som utfører kontaktlærarteneste i vidaregåande opplæring, får redusert årsramma for undervisning med minst 28,5 årsrammetimar (38 i 45-minutts einingar). For lærarar med redusert undervisning på grunn av funksjon blir årsramma 607,5 brukt, så 28,5 årsrammetimar svarar til 4,69 % av ei heil stilling. I tillegg blir det gitt minst 12 000 kroner i året i godtgjering for kontaktlærartenesta. Sjå [opplæringslova § 14-2](#/lov/opplaeringslova/14-2).
   kilder:
+    - { id: opplaeringslova, punkt: "§ 14-2 femte ledd", url: "https://lovdata.no/lov/2023-06-09-30/§14-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 11-1 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§11-1" }
     - { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
     - { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig å gjøre 28,5 årsrammetimer om til prosent med årsrammen 607,5 (4,69 %)?"
+    - "Er lovens beskrivelse av kontaktlærerrollen (§ 14-2 femte ledd) og foreldresamtalen på Vg1 og Vg2 (opplæringsforskrifta § 11-1 andre ledd) gjengitt riktig, og står de best først i begrepet?"
   stikkord: [kontaktlærertjeneste, funksjon, reduksjon, "28,5 årsrammetimer"]
   relatert: [andre-arbeidsoppgaver, funksjonsgodtgjoring, arsramme]
 

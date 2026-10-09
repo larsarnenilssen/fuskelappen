@@ -5,7 +5,7 @@
   tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring }
   tekst:
     nb: Tilpasset opplæring betyr at skolen legger opp opplæringen slik at alle elevene får et tilfredsstillende utbytte, uansett forutsetninger. Det er et prinsipp for all opplæring og skjer i hovedsak i fellesskapet. Det er en plikt for skolen, men ikke en rett for den enkelte eleven, så det fattes ikke vedtak om tilpasset opplæring. For dem som har læretid i bedrift, har lærebedriften den samme plikten.
-    nn: Tilpassa opplæring tyder at skolen legg opp opplæringa slik at alle elevane får eit tilfredsstillande utbytte, uansett føresetnader. Det er eit prinsipp for all opplæring og skjer i hovudsak i fellesskapet. Det er ei plikt for skolen, men ikkje ein rett for den enkelte eleven, så det blir ikkje gjort vedtak om tilpassa opplæring. For dei som har læretid i bedrift, har lærebedrifta den same plikta.
+    nn: Tilpassa opplæring tyder at skulen legg opp opplæringa slik at alle elevane får eit tilfredsstillande utbytte, uansett føresetnader. Det er eit prinsipp for all opplæring og skjer i hovudsak i fellesskapet. Det er ei plikt for skulen, men ikkje ein rett for den enkelte eleven, så det blir ikkje gjort vedtak om tilpassa opplæring. For dei som har læretid i bedrift, har lærebedrifta den same plikta.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-1 Tilpassa opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§11-1" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
@@ -21,7 +21,7 @@
   tittel: { nb: Tilfredsstillende utbytte, nn: Tilfredsstillande utbytte }
   tekst:
     nb: Tilfredsstillende utbytte er målestokken for om opplæringen er god nok for en elev. Skolen vurderer det faglig, ut fra elevens mestring, forutsetninger og utvikling sett opp mot kompetansemålene, eller målene i elevens IOP. Er det tvil om at en elev får tilfredsstillende utbytte, skal læreren melde fra til rektor, og skolen skal sette inn tiltak.
-    nn: Tilfredsstillande utbytte er målestokken for om opplæringa er god nok for ein elev. Skolen vurderer det fagleg, ut frå meistringa, føresetnadene og utviklinga til eleven sett opp mot kompetansemåla, eller måla i IOP-en til eleven. Er det tvil om at ein elev får tilfredsstillande utbytte, skal læraren melde frå til rektor, og skolen skal setje inn tiltak.
+    nn: Tilfredsstillande utbytte er målestokken for om opplæringa er god nok for ein elev. Skulen vurderer det fagleg, ut frå meistringa, føresetnadene og utviklinga til eleven sett opp mot kompetansemåla, eller måla i IOP-en til eleven. Er det tvil om at ein elev får tilfredsstillande utbytte, skal læraren melde frå til rektor, og skulen skal setje inn tiltak.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-2 Tilfredsstillande utbytte av opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§11-2" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen" }
@@ -58,7 +58,7 @@
   tittel: { nb: Individuelt tilrettelagt opplæring, nn: Individuelt tilrettelagd opplæring }
   tekst:
     nb: Individuelt tilrettelagt opplæring er faglig tilrettelegging for en elev som trenger det for å få tilfredsstillende utbytte, for eksempel andre kompetansemål, avvik fra målene eller annen organisering. Det het spesialundervisning før opplæringslova fra 2024. Det krever samtykke, en sakkyndig vurdering fra PP-tjenesten og et vedtak, og skolen lager en individuell opplæringsplan. Lærekandidater har samme rett, og lærlinger og praksisbrevkandidater har den når fylkeskommunen har ansvaret for opplæringen.
-    nn: Individuelt tilrettelagd opplæring er fagleg tilrettelegging for ein elev som treng det for å få tilfredsstillande utbytte, til dømes andre kompetansemål, avvik frå måla eller anna organisering. Det heitte spesialundervisning før opplæringslova frå 2024. Det krev samtykke, ei sakkunnig vurdering frå PP-tenesta og eit vedtak, og skolen lagar ein individuell opplæringsplan. Lærekandidatar har same rett, og lærlingar og praksisbrevkandidatar har han når fylkeskommunen har ansvaret for opplæringa.
+    nn: Individuelt tilrettelagd opplæring er fagleg tilrettelegging for ein elev som treng det for å få tilfredsstillande utbytte, til dømes andre kompetansemål, avvik frå måla eller anna organisering. Det heitte spesialundervisning før opplæringslova frå 2024. Det krev samtykke, ei sakkunnig vurdering frå PP-tenesta og eit vedtak, og skulen lagar ein individuell opplæringsplan. Lærekandidatar har same rett, og lærlingar og praksisbrevkandidatar har han når fylkeskommunen har ansvaret for opplæringa.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-6 Individuelt tilrettelagd opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§11-6" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "5.4 Individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring" }
@@ -123,7 +123,7 @@
   lenkeord: { nb: ["PP-tjenesten", "PP-tjeneste", "PPT"], nn: ["PP-tenesta", "PP-teneste", "PP-tjenesten", "PPT"] }
   tekst:
     nb: PP-tjenesten (pedagogisk-psykologisk tjeneste) skal støtte skolene i å gi et inkluderende opplæringstilbud og i å sette inn tiltak tidlig. Den lager de sakkyndige vurderingene loven krever, og er faglig uavhengig når den gjør det. Fylkeskommunen skal ha en PP-tjeneste for videregående opplæring.
-    nn: PP-tenesta (pedagogisk-psykologisk teneste) skal støtte skolane i å gi eit inkluderande opplæringstilbod og i å setje inn tiltak tidleg. Ho lagar dei sakkunnige vurderingane lova krev, og er fagleg uavhengig når ho gjer det. Fylkeskommunen skal ha ei PP-teneste for vidaregåande opplæring.
+    nn: PP-tenesta (pedagogisk-psykologisk teneste) skal støtte skulane i å gi eit inkluderande opplæringstilbod og i å setje inn tiltak tidleg. Ho lagar dei sakkunnige vurderingane lova krev, og er fagleg uavhengig når ho gjer det. Fylkeskommunen skal ha ei PP-teneste for vidaregåande opplæring.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-13 Pedagogisk-psykologisk teneste", url: "https://lovdata.no/lov/2023-06-09-30/§11-13" }
     - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging (Støtte fra PP-tjenesten)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
@@ -139,7 +139,7 @@
   lenkeord: { nb: ["individuell opplæringsplan", "IOP"], nn: ["individuell opplæringsplan", "IOP"] }
   tekst:
     nb: En individuell opplæringsplan (IOP) er skolens plan for opplæringen til en elev med individuelt tilrettelagt opplæring. Den bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den gir ingen nye rettigheter. Skolen lager den så raskt som mulig etter vedtaket, sammen med eleven og foreldrene, og evaluerer utbyttet én gang i året.
-    nn: Ein individuell opplæringsplan (IOP) er planen til skolen for opplæringa til ein elev med individuelt tilrettelagd opplæring. Han byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han gir ingen nye rettar. Skolen lagar han så raskt som mogleg etter vedtaket, saman med eleven og foreldra, og evaluerer utbyttet éin gong i året.
+    nn: Ein individuell opplæringsplan (IOP) er planen til skulen for opplæringa til ein elev med individuelt tilrettelagd opplæring. Han byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han gir ingen nye rettar. Skulen lagar han så raskt som mogleg etter vedtaket, saman med eleven og foreldra, og evaluerer utbyttet éin gong i året.
   kilder:
     - { id: opplaeringslova, punkt: "§ 11-10 Individuell opplæringsplan", url: "https://lovdata.no/lov/2023-06-09-30/§11-10" }
     - { id: opplaeringslova, punkt: "§ 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§11-11" }
@@ -173,7 +173,7 @@
   lenkeord: { nb: ["elevens beste"], nn: ["det beste for eleven"] }
   tekst:
     nb: Ved handlinger og avgjørelser som gjelder elever, skal det som er best for eleven, være et grunnleggende hensyn. Elevene har også rett til å medvirke og bli hørt i alt som gjelder dem selv, og meningene deres skal vektlegges etter alder og modenhet. Begge deler gjelder når skolen vurderer tiltak og fylkeskommunen fatter vedtak.
-    nn: Ved handlingar og avgjerder som gjeld elevar, skal det som er best for eleven, vere eit grunnleggjande omsyn. Elevane har også rett til å medverke og bli høyrde i alt som gjeld dei sjølve, og meiningane deira skal vektleggjast etter alder og modning. Begge delar gjeld når skolen vurderer tiltak og fylkeskommunen gjer vedtak.
+    nn: Ved handlingar og avgjerder som gjeld elevar, skal det som er best for eleven, vere eit grunnleggjande omsyn. Elevane har også rett til å medverke og bli høyrde i alt som gjeld dei sjølve, og meiningane deira skal vektleggjast etter alder og modning. Begge delar gjeld når skulen vurderer tiltak og fylkeskommunen gjer vedtak.
   kilder:
     - { id: opplaeringslova, punkt: "§ 10-1 Det beste for eleven", url: "https://lovdata.no/lov/2023-06-09-30/§10-1" }
     - { id: opplaeringslova, punkt: "§ 10-2 Elevane sin rett til medverknad", url: "https://lovdata.no/lov/2023-06-09-30/§10-2" }

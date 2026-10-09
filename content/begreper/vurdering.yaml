@@ -21,7 +21,7 @@
   tittel: { nb: "Halvårsvurdering", nn: "Halvårsvurdering" }
   tekst:
     nb: "Halvårsvurdering er en del av underveisvurderingen. Den gis midt i opplæringsperioden, og ved slutten av skoleåret når faget fortsetter. Fra 8. trinn får eleven halvårsvurdering både med og uten karakter. Halvårsvurdering med karakter er skriftlig, kan ikke endres etter at den er ført og føres ikke på vitnemålet. Når en elev ikke fullfører et fag, føres halvårsvurderingen fra siste fullførte skoleår på kompetansebeviset."
-    nn: "Halvårsvurdering er ein del av undervegsvurderinga. Ho blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når faget held fram. Frå 8. trinn får eleven halvårsvurdering både med og utan karakter. Halvårsvurdering med karakter er skriftleg, kan ikkje endrast etter at ho er ført og blir ikkje ført på vitnemålet. Når ein elev ikkje fullfører eit fag, blir halvårsvurderinga frå siste fullførte skoleår ført på kompetansebeviset."
+    nn: "Halvårsvurdering er ein del av undervegsvurderinga. Ho blir gitt midt i opplæringsperioden, og ved slutten av skuleåret når faget held fram. Frå 8. trinn får eleven halvårsvurdering både med og utan karakter. Halvårsvurdering med karakter er skriftleg, kan ikkje endrast etter at ho er ført og blir ikkje ført på vitnemålet. Når ein elev ikkje fullfører eit fag, blir halvårsvurderinga frå siste fullførte skuleår ført på kompetansebeviset."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-13", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-52 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-52" }
@@ -89,7 +89,7 @@
   lenkeord: { nb: ["fraværsgrense", "fraværsgrensen"], nn: ["fråværsgrense", "fråværsgrensa"] }
   tekst:
     nb: "Fraværsgrensen sier at en elev i videregående skole som har fravær i mer enn 10 prosent av årstimetallet i et fag, ikke kan få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i et fag som fortsetter. Fravær som er dokumentert med grunnene i forskriften, for eksempel velferd eller sykdom etter at grensen er nådd, teller ikke. Rektor selv kan la en elev med opptil 15 prosent egenmeldt eller udokumentert fravær få karakter når det er klart urimelig at grensen skal gjelde. Grensen gjelder ikke lærlinger, lærekandidater, praksisbrevkandidater og voksne."
-    nn: "Fråværsgrensa seier at ein elev i vidaregåande skole som har fråvær i meir enn 10 prosent av årstimetalet i eit fag, ikkje kan få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i forskrifta, til dømes velferd eller sjukdom etter at grensa er nådd, tel ikkje. Rektor sjølv kan la ein elev med opptil 15 prosent eigenmeldt eller udokumentert fråvær få karakter når det er klart urimeleg at grensa skal gjelde. Grensa gjeld ikkje lærlingar, lærekandidatar, praksisbrevkandidatar og vaksne."
+    nn: "Fråværsgrensa seier at ein elev i vidaregåande skule som har fråvær i meir enn 10 prosent av årstimetalet i eit fag, ikkje kan få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skuleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i forskrifta, til dømes velferd eller sjukdom etter at grensa er nådd, tel ikkje. Rektor sjølv kan la ein elev med opptil 15 prosent eigenmeldt eller udokumentert fråvær få karakter når det er klart urimeleg at grensa skal gjelde. Grensa gjeld ikkje lærlingar, lærekandidatar, praksisbrevkandidatar og vaksne."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
     - { id: udir-rundskriv-fravarsgrensen, punkt: "1. Innledning – fraværsgrensen i korte trekk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/1.-innledning---fravarsgrensen-i-korte-trekk/" }
@@ -125,7 +125,7 @@
   lenkeord: { nb: ["orden og oppførsel"], nn: ["orden og oppførsel"] }
   tekst:
     nb: "Elevene får karakter i orden og i oppførsel, med skolereglene som grunnlag. Karakterene er God (G), Nokså god (Ng) og Lite god (Lg). Kompetanse i fag skal ikke trekkes inn, og orden og oppførsel skal heller ikke trekkes inn i vurderingen i fag. Eleven skal varsles når hen står i fare for Ng eller Lg, og kan klage på standpunktkarakteren."
-    nn: "Elevane får karakter i orden og i oppførsel, med skolereglane som grunnlag. Karakterane er God (G), Nokså god (Ng) og Lite god (Lg). Kompetanse i fag skal ikkje trekkjast inn, og orden og oppførsel skal heller ikkje trekkjast inn i vurderinga i fag. Eleven skal varslast når hen står i fare for Ng eller Lg, og kan klage på standpunktkarakteren."
+    nn: "Elevane får karakter i orden og i oppførsel, med skulereglane som grunnlag. Karakterane er God (G), Nokså god (Ng) og Lite god (Lg). Kompetanse i fag skal ikkje trekkjast inn, og orden og oppførsel skal heller ikkje trekkjast inn i vurderinga i fag. Eleven skal varslast når hen står i fare for Ng eller Lg, og kan klage på standpunktkarakteren."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-2" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-4", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-4" }
@@ -142,7 +142,7 @@
   lenkeord: { nb: ["vurderingsuttrykk", "karakterkode"], nn: ["vurderingsuttrykk", "karakterkode"] }
   tekst:
     nb: "Kodene skolene fører for karakterer og andre vurderingsuttrykk i videregående opplæring, for orden og oppførsel, og for karakterstatus når en karakter endres. Kodene står i Udirs registreringshåndbok og brukes i de skoleadministrative systemene og VIGO. Søk på kode eller tekst. Forklaringene er korte; reglene står i opplæringsforskrifta."
-    nn: "Kodane skolane fører for karakterar og andre vurderingsuttrykk i vidaregåande opplæring, for orden og oppførsel, og for karakterstatus når ein karakter blir endra. Kodane står i registreringshandboka til Udir og blir brukte i dei skoleadministrative systema og VIGO. Søk på kode eller tekst. Forklaringane er korte; reglane står i opplæringsforskrifta."
+    nn: "Kodane skulane fører for karakterar og andre vurderingsuttrykk i vidaregåande opplæring, for orden og oppførsel, og for karakterstatus når ein karakter blir endra. Kodane står i registreringshandboka til Udir og blir brukte i dei skuleadministrative systema og VIGO. Søk på kode eller tekst. Forklaringane er korte; reglane står i opplæringsforskrifta."
   kilder:
     - { id: udir-regbok-karakterer, punkt: "B26 Karakterer og andre vurderingsuttrykk", url: "https://regbok.udir.no/felt/?Id=1021153" }
     - { id: udir-regbok-oversikt, punkt: "B23 Karakterstatus og B25 Orden og oppførsel", url: "https://regbok.udir.no/oversikt" }

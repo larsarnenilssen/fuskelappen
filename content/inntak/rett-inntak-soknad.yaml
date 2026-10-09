@@ -33,7 +33,7 @@
   fase: rett
   tittel:
     nb: Grunnskolen
-    nn: Grunnskolen
+    nn: Grunnskulen
   tekst:
     nb: |-
       For å ha rett til videregående opplæring må søkeren ha fullført grunnskolen eller tilsvarende opplæring. Tilsvarende opplæring er:
@@ -43,19 +43,19 @@
       - realkompetanse tilsvarende fullført forberedende opplæring for voksne
       - fullført grunnskolen med privat opplæring i hjemmet
     nn: |-
-      For å ha rett til vidaregåande opplæring må søkjaren ha fullført grunnskolen eller tilsvarande opplæring. Tilsvarande opplæring er:
+      For å ha rett til vidaregåande opplæring må søkjaren ha fullført grunnskulen eller tilsvarande opplæring. Tilsvarande opplæring er:
 
-      - skriven ut av grunnskolen før 10. trinn
+      - skriven ut av grunnskulen før 10. trinn
       - minst ni års allmenn grunnopplæring i utlandet
       - realkompetanse tilsvarande fullført førebuande opplæring for vaksne
-      - fullført grunnskolen med privat opplæring i heimen
+      - fullført grunnskulen med privat opplæring i heimen
   paragrafer: [opplaeringslova/5-1, opplaeringsforskrifta/4-1]
   sporsmal:
     tekst:
       nb: Har søkeren fullført grunnskolen eller tilsvarende?
-      nn: Har søkjaren fullført grunnskolen eller tilsvarande?
+      nn: Har søkjaren fullført grunnskulen eller tilsvarande?
     svar:
-      - { id: norsk, tekst: { nb: "Ja, vitnemål fra norsk grunnskole", nn: "Ja, vitnemål frå norsk grunnskole" }, neste: sk-opphold }
+      - { id: norsk, tekst: { nb: "Ja, vitnemål fra norsk grunnskole", nn: "Ja, vitnemål frå norsk grunnskule" }, neste: sk-opphold }
       - { id: utland, tekst: { nb: "Ja, grunnopplæring i utlandet", nn: "Ja, grunnopplæring i utlandet" }, neste: sk-utland }
       - { id: annet, tekst: { nb: "Ja, på en annen måte (realkompetanse, hjemmeopplæring)", nn: "Ja, på ein annan måte (realkompetanse, heimeopplæring)" }, neste: sk-opphold }
       - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: sk-ikke-grunnskole }
@@ -104,7 +104,7 @@
     nn: Ikkje rett til vidaregåande enno
   tekst:
     nb: Søkeren har ikke rett til videregående opplæring før grunnskolen eller tilsvarende er fullført. Voksne som trenger mer grunnskoleopplæring, kan ha rett til forberedende opplæring for voksne. Fylkeskommunen kan likevel gi videregående opplæring til voksne som ikke har fullført grunnskolen, men har ingen plikt til det.
-    nn: Søkjaren har ikkje rett til vidaregåande opplæring før grunnskolen eller tilsvarande er fullført. Vaksne som treng meir grunnskoleopplæring, kan ha rett til førebuande opplæring for vaksne. Fylkeskommunen kan likevel gi vidaregåande opplæring til vaksne som ikkje har fullført grunnskolen, men har inga plikt til det.
+    nn: Søkjaren har ikkje rett til vidaregåande opplæring før grunnskulen eller tilsvarande er fullført. Vaksne som treng meir grunnskuleopplæring, kan ha rett til førebuande opplæring for vaksne. Fylkeskommunen kan likevel gi vidaregåande opplæring til vaksne som ikkje har fullført grunnskulen, men har inga plikt til det.
   paragrafer: [opplaeringslova/5-1, opplaeringslova/18-2, opplaeringslova/18-5]
   kilder:
     - { id: opplaeringslova, punkt: "§ 18-2 Rett til førebuande opplæring for vaksne", url: "https://lovdata.no/lov/2023-06-09-30/§18-2" }
@@ -148,7 +148,7 @@
     nn: Ventar på opphaldsløyve
   tekst:
     nb: Søkere som oppholder seg lovlig i Norge mens de venter på svar på søknad om oppholdstillatelse, har rett til videregående opplæring ut skoleåret som starter det året de fyller 18. Får søkeren avslag, gjelder retten bare til datoen for det endelige vedtaket.
-    nn: Søkjarar som oppheld seg lovleg i Noreg medan dei ventar på svar på søknad om opphaldsløyve, har rett til vidaregåande opplæring ut skoleåret som tek til det året dei fyller 18. Får søkjaren avslag, gjeld retten berre til datoen for det endelege vedtaket.
+    nn: Søkjarar som oppheld seg lovleg i Noreg medan dei ventar på svar på søknad om opphaldsløyve, har rett til vidaregåande opplæring ut skuleåret som tek til det året dei fyller 18. Får søkjaren avslag, gjeld retten berre til datoen for det endelege vedtaket.
   paragrafer: [opplaeringslova/5-9]
   neste: sk-kompetanse
   kilder:
@@ -258,7 +258,7 @@
 
       Søkeren har også rett til yrkesfaglig rekvalifisering: opplæring fram til én ny sluttkompetanse på et yrkesfaglig utdanningsprogram. Den retten har bare den som har én sluttkompetanse fra før. Bestått påbygging gir en sluttkompetanse til.
     nn: |-
-      Søkjarar med bestått fag- og yrkesopplæring har rett til [påbygging](#/begreper/pabygging) til generell studiekompetanse. Retten gjeld ut skoleåret som tek til det året søkjaren fyller 24. Frå skoleåret søkjaren fyller 19, kan påbygginga takast som vaksen, og etter 24 gjeld reglane for vaksne.
+      Søkjarar med bestått fag- og yrkesopplæring har rett til [påbygging](#/begreper/pabygging) til generell studiekompetanse. Retten gjeld ut skuleåret som tek til det året søkjaren fyller 24. Frå skuleåret søkjaren fyller 19, kan påbygginga takast som vaksen, og etter 24 gjeld reglane for vaksne.
 
       Søkjaren har også rett til yrkesfagleg rekvalifisering: opplæring fram til éin ny sluttkompetanse på eit yrkesfagleg utdanningsprogram. Den retten har berre den som har éin sluttkompetanse frå før. Bestått påbygging gir ein sluttkompetanse til.
   paragrafer: [opplaeringslova/5-7, opplaeringslova/18-7, opplaeringslova/18-4]
@@ -302,15 +302,15 @@
     nn: Alder
   tekst:
     nb: Retten til videregående opplæring som ungdom varer ut skoleåret som starter det året søkeren fyller 24. Etter det har søkeren rett til opplæring for voksne. Fra skoleåret som starter det året søkeren fyller 19, kan søkeren velge mellom opplæring som ungdom og som voksen.
-    nn: Retten til vidaregåande opplæring som ungdom varer ut skoleåret som tek til det året søkjaren fyller 24. Etter det har søkjaren rett til opplæring for vaksne. Frå skoleåret som tek til det året søkjaren fyller 19, kan søkjaren velje mellom opplæring som ungdom og som vaksen.
+    nn: Retten til vidaregåande opplæring som ungdom varer ut skuleåret som tek til det året søkjaren fyller 24. Etter det har søkjaren rett til opplæring for vaksne. Frå skuleåret som tek til det året søkjaren fyller 19, kan søkjaren velje mellom opplæring som ungdom og som vaksen.
   paragrafer: [opplaeringslova/5-1, opplaeringslova/18-3]
   sporsmal:
     tekst:
       nb: Når starter opplæringen?
       nn: Når tek opplæringa til?
     svar:
-      - { id: under19, tekst: { nb: "Før skoleåret søkeren fyller 19", nn: "Før skoleåret søkjaren fyller 19" }, neste: sk-ungdomsrett }
-      - { id: mellom, tekst: { nb: "Fra skoleåret søkeren fyller 19, til og med skoleåret søkeren fyller 24", nn: "Frå skoleåret søkjaren fyller 19, til og med skoleåret søkjaren fyller 24" }, neste: sk-ungdom-eller-voksen }
+      - { id: under19, tekst: { nb: "Før skoleåret søkeren fyller 19", nn: "Før skuleåret søkjaren fyller 19" }, neste: sk-ungdomsrett }
+      - { id: mellom, tekst: { nb: "Fra skoleåret søkeren fyller 19, til og med skoleåret søkeren fyller 24", nn: "Frå skuleåret søkjaren fyller 19, til og med skuleåret søkjaren fyller 24" }, neste: sk-ungdom-eller-voksen }
       - { id: over24, tekst: { nb: "Senere", nn: "Seinare" }, neste: sk-voksenrett }
   kilder:
     - { id: opplaeringslova, punkt: "§ 5-1 andre og tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
@@ -427,7 +427,7 @@
     nn: |-
       Søkjarar med fortrinnsrett blir tekne inn først. Det er tre grunnlag for fortrinnsrett: omfattande behov for individuell tilrettelegging, sterkt nedsett funksjonsevne og rett til opplæring i og på teiknspråk. Søkjarar utan fortrinnsrett konkurrerer på poeng, eller blir behandla individuelt når dei ikkje kan rangerast etter poeng. Det gjeld:
 
-      - søkjarar som manglar karakter i meir enn halvparten av faga på vitnemålet frå grunnskolen
+      - søkjarar som manglar karakter i meir enn halvparten av faga på vitnemålet frå grunnskulen
       - søkjarar med vitnemål eller dokumentasjon utan tal- eller bokstavkarakterar
       - andre søkjarar utan samanliknbart karaktergrunnlag
       - søkjarar som har fått godkjent meir enn halvparten av faga gjennom realkompetansevurdering (Vg1)
@@ -474,16 +474,16 @@
     nn: "Fortrinnsrett: særleg utdanningsprogram"
   tekst:
     nb: Søkere med omfattende behov for [individuell tilrettelegging](#/begreper/individuell-tilrettelegging) i grunnskolen har fortrinnsrett til et bestemt utdanningsprogram på Vg1 når vanskene gjør at valget av utdanningsprogram har svært mye å si for om de kan fullføre. Søkere som trolig kan fullføre tre utdanningsprogram, har ikke fortrinnsrett. PP-tjenesten i fylkeskommunen skal gi en sakkyndig vurdering.
-    nn: Søkjarar med omfattande behov for [individuell tilrettelegging](#/begreper/individuell-tilrettelegging) i grunnskolen har fortrinnsrett til eit bestemt utdanningsprogram på Vg1 når vanskane gjer at valet av utdanningsprogram har svært mykje å seie for om dei kan fullføre. Søkjarar som truleg kan fullføre tre utdanningsprogram, har ikkje fortrinnsrett. PP-tenesta i fylkeskommunen skal gi ei sakkunnig vurdering.
+    nn: Søkjarar med omfattande behov for [individuell tilrettelegging](#/begreper/individuell-tilrettelegging) i grunnskulen har fortrinnsrett til eit bestemt utdanningsprogram på Vg1 når vanskane gjer at valet av utdanningsprogram har svært mykje å seie for om dei kan fullføre. Søkjarar som truleg kan fullføre tre utdanningsprogram, har ikkje fortrinnsrett. PP-tenesta i fylkeskommunen skal gi ei sakkunnig vurdering.
   ansvar:
     nb: Kommunen melder eleven til fylkeskommunen, med elevens samtykke. PP-tjenesten i fylkeskommunen gir sakkyndig vurdering.
     nn: Kommunen melder eleven til fylkeskommunen, med samtykke frå eleven. PP-tenesta i fylkeskommunen gir sakkunnig vurdering.
   dokumentasjon:
     nb: Kommunen legger ved siste vedtak om individuelt tilrettelagt opplæring med sakkyndig vurdering, og gjør rede for vanskene, tiltakene i grunnskolen og hva vanskene betyr i videregående.
-    nn: Kommunen legg ved siste vedtak om individuelt tilrettelagd opplæring med sakkunnig vurdering, og gjer greie for vanskane, tiltaka i grunnskolen og kva vanskane tyder i vidaregåande.
+    nn: Kommunen legg ved siste vedtak om individuelt tilrettelagd opplæring med sakkunnig vurdering, og gjer greie for vanskane, tiltaka i grunnskulen og kva vanskane tyder i vidaregåande.
   frist:
     nb: Kommunen melder eleven innen 1. oktober det året eleven fullfører grunnskolen. Søknadsfristen er 1. februar.
-    nn: Kommunen melder eleven innan 1. oktober det året eleven fullfører grunnskolen. Søknadsfristen er 1. februar.
+    nn: Kommunen melder eleven innan 1. oktober det året eleven fullfører grunnskulen. Søknadsfristen er 1. februar.
   fristKort: { nb: "1. okt. og 1. feb.", nn: "1. okt. og 1. feb." }
   paragrafer: [opplaeringsforskrifta/4-21, opplaeringsforskrifta/4-9]
   neste: sk-bosted
@@ -501,19 +501,19 @@
   fase: inntak
   tittel:
     nb: "Fortrinnsrett: tilrettelagt skole"
-    nn: "Fortrinnsrett: tilrettelagd skole"
+    nn: "Fortrinnsrett: tilrettelagd skule"
   tekst:
     nb: |-
       Søkere med rett til individuell tilrettelegging, som på grunn av sterkt nedsatt funksjonsevne har et særlig behov for en skole som er særskilt tilrettelagt, kan få fortrinnsrett.
 
       På Vg1 kan søkeren søke om fortrinnsrett, men har ikke rett til en bestemt skole. Fylkeskommunen vurderer om tungtveiende grunner taler for en bestemt skole. På Vg2 og Vg3 har søkeren fortrinnsrett når behovet er dokumentert, og den som er tatt inn på dette grunnlaget før, har rett til å fullføre på samme skole.
     nn: |-
-      Søkjarar med rett til individuell tilrettelegging, som på grunn av sterkt nedsett funksjonsevne har eit særleg behov for ein skole som er særskilt tilrettelagd, kan få fortrinnsrett.
+      Søkjarar med rett til individuell tilrettelegging, som på grunn av sterkt nedsett funksjonsevne har eit særleg behov for ein skule som er særskilt tilrettelagd, kan få fortrinnsrett.
 
-      På Vg1 kan søkjaren søkje om fortrinnsrett, men har ikkje rett til ein bestemt skole. Fylkeskommunen vurderer om tungtvegande grunnar talar for ein bestemt skole. På Vg2 og Vg3 har søkjaren fortrinnsrett når behovet er dokumentert, og den som er teken inn på dette grunnlaget før, har rett til å fullføre på same skole.
+      På Vg1 kan søkjaren søkje om fortrinnsrett, men har ikkje rett til ein bestemt skule. Fylkeskommunen vurderer om tungtvegande grunnar talar for ein bestemt skule. På Vg2 og Vg3 har søkjaren fortrinnsrett når behovet er dokumentert, og den som er teken inn på dette grunnlaget før, har rett til å fullføre på same skule.
   ansvar:
     nb: Kommunen melder elever som fullfører grunnskolen, med elevens samtykke. Fylkeskommunen vurderer.
-    nn: Kommunen melder elevar som fullfører grunnskolen, med samtykke frå eleven. Fylkeskommunen vurderer.
+    nn: Kommunen melder elevar som fullfører grunnskulen, med samtykke frå eleven. Fylkeskommunen vurderer.
   frist:
     nb: Kommunen melder innen 1. oktober. Søknadsfristen er 1. februar.
     nn: Kommunen melder innan 1. oktober. Søknadsfristen er 1. februar.
@@ -536,10 +536,10 @@
     nn: "Fortrinnsrett: teiknspråk"
   tekst:
     nb: Søkere med rett til opplæring i og på norsk tegnspråk har fortrinnsrett når de søker opplæring med tegnspråktolk eller en skole med opplæring i og på tegnspråk. Søknaden må si hva søkeren prioriterer. Søker de en skole med tegnspråk, kan de bare føre opp tilbudene der. Den som er tatt inn på en slik skole, skal normalt kunne fullføre der.
-    nn: Søkjarar med rett til opplæring i og på norsk teiknspråk har fortrinnsrett når dei søkjer opplæring med teiknspråktolk eller ein skole med opplæring i og på teiknspråk. Søknaden må seie kva søkjaren prioriterer. Søkjer dei ein skole med teiknspråk, kan dei berre føre opp tilboda der. Den som er teken inn på ein slik skole, skal normalt kunne fullføre der.
+    nn: Søkjarar med rett til opplæring i og på norsk teiknspråk har fortrinnsrett når dei søkjer opplæring med teiknspråktolk eller ein skule med opplæring i og på teiknspråk. Søknaden må seie kva søkjaren prioriterer. Søkjer dei ein skule med teiknspråk, kan dei berre føre opp tilboda der. Den som er teken inn på ein slik skule, skal normalt kunne fullføre der.
   frist:
     nb: Søknadsfristen er 1. februar. Fylkeskommunen sender søknaden videre til fylkeskommunen som eier skolen, innen 15. mars.
-    nn: Søknadsfristen er 1. februar. Fylkeskommunen sender søknaden vidare til fylkeskommunen som eig skolen, innan 15. mars.
+    nn: Søknadsfristen er 1. februar. Fylkeskommunen sender søknaden vidare til fylkeskommunen som eig skulen, innan 15. mars.
   fristKort: { nb: "1. feb.", nn: "1. feb." }
   paragrafer: [opplaeringsforskrifta/4-23, opplaeringsforskrifta/4-28, opplaeringsforskrifta/4-7, opplaeringsforskrifta/4-11, opplaeringsforskrifta/4-17, opplaeringslova/6-3]
   neste: sk-bosted
@@ -559,7 +559,7 @@
     nn: Individuell behandling
   tekst:
     nb: Fylkeskommunen vurderer søkeren individuelt i stedet for etter poeng. Søkere med vitnemål eller dokumentasjon uten karakterer rangeres etter uttalelser fra skolen de kommer fra. Søkeren har fortsatt rett til ett av tre utdanningsprogram.
-    nn: Fylkeskommunen vurderer søkjaren individuelt i staden for etter poeng. Søkjarar med vitnemål eller dokumentasjon utan karakterar blir rangerte etter fråsegner frå skolen dei kjem frå. Søkjaren har framleis rett til eitt av tre utdanningsprogram.
+    nn: Fylkeskommunen vurderer søkjaren individuelt i staden for etter poeng. Søkjarar med vitnemål eller dokumentasjon utan karakterar blir rangerte etter fråsegner frå skulen dei kjem frå. Søkjaren har framleis rett til eitt av tre utdanningsprogram.
   ansvar:
     nb: Fylkeskommunen.
     nn: Fylkeskommunen.
@@ -596,7 +596,7 @@
 
       Søkere med rett skal likevel komme inn på ett av tre utdanningsprogram de har søkt på. På musikk, dans og drama og idrettsfag kan fylkeskommunen fordele opptil halvparten av plassene på Vg1 etter ferdigheter eller opptaksprøve i tillegg til poeng.
     nn: |-
-      Er det fleire søkjarar enn plassar, blir plassane fordelte etter poengsum. Poengsummen er gjennomsnittet av karakterane med to desimalar, gonga med ti. Til Vg1 tel karakterane frå grunnskolen, og til Vg2 og Vg3 karakterane frå Vg1 og eventuelt Vg2. Står søkjarar likt om dei siste plassane, blir det avgjort ved loddtrekning.
+      Er det fleire søkjarar enn plassar, blir plassane fordelte etter poengsum. Poengsummen er gjennomsnittet av karakterane med to desimalar, gonga med ti. Til Vg1 tel karakterane frå grunnskulen, og til Vg2 og Vg3 karakterane frå Vg1 og eventuelt Vg2. Står søkjarar likt om dei siste plassane, blir det avgjort ved loddtrekning.
 
       Søkjarar med rett skal likevel kome inn på eitt av tre utdanningsprogram dei har søkt på. På musikk, dans og drama og idrettsfag kan fylkeskommunen fordele opptil halvparten av plassane på Vg1 etter ferdigheiter eller opptaksprøve i tillegg til poeng.
   frist:
@@ -635,7 +635,7 @@
 
       Fylkeskommunen tar først inn søkere som er folkeregistrert i fylket. Er det ledig plass, tas søkere fra andre fylker inn etterpå.
     nn: |-
-      Søknaden skal sendast til fylkeskommunen der søkjaren er folkeregistrert når søknaden blir send. Søkjarar som kan dokumentere at dei skal flytte, sender søknaden til fylket dei flyttar til. Søkjarar til ein skole i eit anna fylke, eller til ei landslinje, sender søknaden til fylket der skolen ligg.
+      Søknaden skal sendast til fylkeskommunen der søkjaren er folkeregistrert når søknaden blir send. Søkjarar som kan dokumentere at dei skal flytte, sender søknaden til fylket dei flyttar til. Søkjarar til ein skule i eit anna fylke, eller til ei landslinje, sender søknaden til fylket der skulen ligg.
 
       Fylkeskommunen tek først inn søkjarar som er folkeregistrerte i fylket. Er det ledig plass, blir søkjarar frå andre fylke tekne inn etterpå.
   paragrafer: [opplaeringsforskrifta/4-8, opplaeringsforskrifta/4-14]
@@ -668,7 +668,7 @@
     nn: |-
       Søknadsfristen står i steget over: 1. mars, eller 1. februar for søkjarar med fortrinnsrett, individuell tilrettelegging, særskild språkopplæring, teiknspråk eller kort tid i Noreg. Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter. Søknader som kjem for seint, blir behandla så langt det er mogleg.
 
-      Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Kvart søkjarønske har ein status i VIGO, til dømes tilbod om plass, venteliste eller stroke. Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skole søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
+      Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Kvart søkjarønske har ein status i VIGO, til dømes tilbod om plass, venteliste eller stroke. Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skule søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
   frist:
     nb: Klage innen tre uker etter svaret.
     nn: Klage innan tre veker etter svaret.

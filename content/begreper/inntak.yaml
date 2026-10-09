@@ -9,7 +9,7 @@
   lenkeord: { nb: ["ungdomsrett", "fullføringsrett"], nn: ["ungdomsrett", "fullføringsrett"] }
   tekst:
     nb: Ungdomsrett er det vanlige navnet på retten til videregående opplæring etter opplæringslova § 5-1. Den har alle som har fullført grunnskolen eller tilsvarende, og den varer til studie- eller yrkeskompetanse, men ikke lenger enn ut skoleåret som starter det året eleven fyller 24. Søkere med ungdomsrett skal komme inn på ett av tre utdanningsprogram på Vg1 som de har søkt på. Fordi retten varer til eleven har oppnådd kompetansen, og ikke et bestemt antall år, kalles den også fullføringsretten. Fag eleven allerede har bestått, er ikke med i retten.
-    nn: Ungdomsrett er det vanlege namnet på retten til vidaregåande opplæring etter opplæringslova § 5-1. Han har alle som har fullført grunnskolen eller tilsvarande, og han varer til studie- eller yrkeskompetanse, men ikkje lenger enn ut skoleåret som tek til det året eleven fyller 24. Søkjarar med ungdomsrett skal kome inn på eitt av tre utdanningsprogram på Vg1 som dei har søkt på. Fordi retten varer til eleven har oppnådd kompetansen, og ikkje eit bestemt tal år, blir han også kalla fullføringsretten. Fag eleven allereie har bestått, er ikkje med i retten.
+    nn: Ungdomsrett er det vanlege namnet på retten til vidaregåande opplæring etter opplæringslova § 5-1. Han har alle som har fullført grunnskulen eller tilsvarande, og han varer til studie- eller yrkeskompetanse, men ikkje lenger enn ut skuleåret som tek til det året eleven fyller 24. Søkjarar med ungdomsrett skal kome inn på eitt av tre utdanningsprogram på Vg1 som dei har søkt på. Fordi retten varer til eleven har oppnådd kompetansen, og ikkje eit bestemt tal år, blir han også kalla fullføringsretten. Fag eleven allereie har bestått, er ikkje med i retten.
   kilder:
     - { id: opplaeringslova, punkt: "§ 5-1 Rett til vidaregåande opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
     - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring (og «Frem til studie- eller yrkeskompetanse»)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
@@ -26,7 +26,7 @@
   tittel: { nb: Voksenrett, nn: Vaksenrett }
   tekst:
     nb: Voksenrett er det vanlige navnet på retten til videregående opplæring for voksne etter opplæringslova § 18-3. Den har den som har fullført grunnskolen eller tilsvarende, men ikke har studie- eller yrkeskompetanse, fra skoleåret som starter det året søkeren fyller 19. Søkeren skal komme inn på et tilbud som fører fram til en av tre sluttkompetanser søkeren har søkt på, og har rett til å få realkompetansen vurdert. Mellom 19 og 24 år kan søkeren velge mellom ungdomsrett og voksenrett.
-    nn: Vaksenrett er det vanlege namnet på retten til vidaregåande opplæring for vaksne etter opplæringslova § 18-3. Han har den som har fullført grunnskolen eller tilsvarande, men ikkje har studie- eller yrkeskompetanse, frå skoleåret som tek til det året søkjaren fyller 19. Søkjaren skal kome inn på eit tilbod som fører fram til ein av tre sluttkompetansar søkjaren har søkt på, og har rett til å få realkompetansen vurdert. Mellom 19 og 24 år kan søkjaren velje mellom ungdomsrett og vaksenrett.
+    nn: Vaksenrett er det vanlege namnet på retten til vidaregåande opplæring for vaksne etter opplæringslova § 18-3. Han har den som har fullført grunnskulen eller tilsvarande, men ikkje har studie- eller yrkeskompetanse, frå skuleåret som tek til det året søkjaren fyller 19. Søkjaren skal kome inn på eit tilbod som fører fram til ein av tre sluttkompetansar søkjaren har søkt på, og har rett til å få realkompetansen vurdert. Mellom 19 og 24 år kan søkjaren velje mellom ungdomsrett og vaksenrett.
   kilder:
     - { id: opplaeringslova, punkt: "§ 18-3 Rett til vidaregåande opplæring for vaksne", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
     - { id: udir-retten-til-vgo, punkt: "Inntak og formidling for voksne", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling-for-voksne/" }
@@ -57,7 +57,7 @@
   lenkeord: { nb: ["fortrinnsrett"], nn: ["fortrinnsrett"] }
   tekst:
     nb: Søkere med fortrinnsrett tas inn før søkerne som konkurrerer på poeng. Det er tre grunnlag. Søkere med omfattende behov for individuell tilrettelegging kan ha fortrinnsrett til et bestemt utdanningsprogram på Vg1. Søkere med sterkt nedsatt funksjonsevne kan ha fortrinnsrett til en skole som er særskilt tilrettelagt. Søkere med rett til opplæring i og på norsk tegnspråk har fortrinnsrett til opplæring med tolk eller på en skole med tegnspråk. Søknadsfristen er 1. februar.
-    nn: Søkjarar med fortrinnsrett blir tekne inn før søkjarane som konkurrerer på poeng. Det er tre grunnlag. Søkjarar med omfattande behov for individuell tilrettelegging kan ha fortrinnsrett til eit bestemt utdanningsprogram på Vg1. Søkjarar med sterkt nedsett funksjonsevne kan ha fortrinnsrett til ein skole som er særskilt tilrettelagd. Søkjarar med rett til opplæring i og på norsk teiknspråk har fortrinnsrett til opplæring med tolk eller på ein skole med teiknspråk. Søknadsfristen er 1. februar.
+    nn: Søkjarar med fortrinnsrett blir tekne inn før søkjarane som konkurrerer på poeng. Det er tre grunnlag. Søkjarar med omfattande behov for individuell tilrettelegging kan ha fortrinnsrett til eit bestemt utdanningsprogram på Vg1. Søkjarar med sterkt nedsett funksjonsevne kan ha fortrinnsrett til ein skule som er særskilt tilrettelagd. Søkjarar med rett til opplæring i og på norsk teiknspråk har fortrinnsrett til opplæring med tolk eller på ein skule med teiknspråk. Søknadsfristen er 1. februar.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-21 til § 4-23 og § 4-27 til § 4-28", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-21" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-14 Rekkjefølgja ved inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
@@ -73,7 +73,7 @@
   lenkeord: { nb: ["individuell behandling"], nn: ["individuell behandling"] }
   tekst:
     nb: Søkere som ikke kan rangeres etter poeng, behandles individuelt. Det gjelder for eksempel søkere som mangler karakter i mer enn halvparten av fagene, søkere med vitnemål uten karakterer og søkere uten sammenlignbart karaktergrunnlag. Fylkeskommunen vurderer søkeren i stedet for å regne poeng, og søkere uten karakterer rangeres etter uttalelser fra skolen de kommer fra.
-    nn: Søkjarar som ikkje kan rangerast etter poeng, blir behandla individuelt. Det gjeld til dømes søkjarar som manglar karakter i meir enn halvparten av faga, søkjarar med vitnemål utan karakterar og søkjarar utan samanliknbart karaktergrunnlag. Fylkeskommunen vurderer søkjaren i staden for å rekne poeng, og søkjarar utan karakterar blir rangerte etter fråsegner frå skolen dei kjem frå.
+    nn: Søkjarar som ikkje kan rangerast etter poeng, blir behandla individuelt. Det gjeld til dømes søkjarar som manglar karakter i meir enn halvparten av faga, søkjarar med vitnemål utan karakterar og søkjarar utan samanliknbart karaktergrunnlag. Fylkeskommunen vurderer søkjaren i staden for å rekne poeng, og søkjarar utan karakterar blir rangerte etter fråsegner frå skulen dei kjem frå.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-20 og § 4-26", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
     - { id: udir-merknader-ofo, punkt: "Merknader til § 4-18", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-18-fordeling-av-plassar-til-vidaregaande-trinn-1/" }
@@ -103,7 +103,7 @@
   tittel: { nb: Realkompetansevurdering, nn: Realkompetansevurdering }
   tekst:
     nb: Realkompetansevurdering er en vurdering av om det en voksen kan fra utdanning, arbeid og ellers, kan godkjennes som likeverdig med kompetansen fra videregående opplæring. Søkeren kan få godkjent hele eller deler av fag, moduler eller skoleår, og får ikke opplæring i det som er godkjent. Voksne med rett til opplæring har rett til realkompetansevurdering når de søker inntak.
-    nn: Realkompetansevurdering er ei vurdering av om det ein vaksen kan frå utdanning, arbeid og elles, kan godkjennast som likeverdig med kompetansen frå vidaregåande opplæring. Søkjaren kan få godkjent heile eller delar av fag, modular eller skoleår, og får ikkje opplæring i det som er godkjent. Vaksne med rett til opplæring har rett til realkompetansevurdering når dei søkjer inntak.
+    nn: Realkompetansevurdering er ei vurdering av om det ein vaksen kan frå utdanning, arbeid og elles, kan godkjennast som likeverdig med kompetansen frå vidaregåande opplæring. Søkjaren kan få godkjent heile eller delar av fag, modular eller skuleår, og får ikkje opplæring i det som er godkjent. Vaksne med rett til opplæring har rett til realkompetansevurdering når dei søkjer inntak.
   kilder:
     - { id: opplaeringslova, punkt: "§ 18-8 Realkompetansevurdering", url: "https://lovdata.no/lov/2023-06-09-30/§18-8" }
     - { id: opplaeringsforskrifta, punkt: "§ 13-2 og § 13-5", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-5" }
@@ -118,7 +118,7 @@
   tittel: { nb: Landslinje, nn: Landslinje }
   tekst:
     nb: En landslinje er et tilbud ved en fylkeskommunal videregående skole som staten finansierer og godkjenner, og som er åpent for søkere fra hele landet. Søknaden sendes til fylket der skolen ligger, og det har ingen betydning hvor søkeren er folkeregistrert.
-    nn: Ei landslinje er eit tilbod ved ein fylkeskommunal vidaregåande skole som staten finansierer og godkjenner, og som er ope for søkjarar frå heile landet. Søknaden skal sendast til fylket der skolen ligg, og det har ikkje noko å seie kvar søkjaren er folkeregistrert.
+    nn: Ei landslinje er eit tilbod ved ein fylkeskommunal vidaregåande skule som staten finansierer og godkjenner, og som er ope for søkjarar frå heile landet. Søknaden skal sendast til fylket der skulen ligg, og det har ikkje noko å seie kvar søkjaren er folkeregistrert.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-5 første ledd bokstav d og § 4-16", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-16" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-8 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-8" }
@@ -133,7 +133,7 @@
   tittel: { nb: Gjesteelev, nn: Gjesteelev }
   tekst:
     nb: En gjesteelev går på skole i et annet fylke enn der eleven er folkeregistrert. Fylkeskommunen tar først inn søkere fra eget fylke. Er det ledig plass, tas søkere fra andre fylker inn etterpå. Først kommer de med særlige pedagogiske eller sosiale grunner og de som må gå i et annet fylke for å få opplæring i eller på samisk. Klage på inntak av gjesteelever avgjøres av fylkeskommunens klageorgan.
-    nn: Ein gjesteelev går på skole i eit anna fylke enn der eleven er folkeregistrert. Fylkeskommunen tek først inn søkjarar frå eige fylke. Er det ledig plass, blir søkjarar frå andre fylke tekne inn etterpå. Først kjem dei med særlege pedagogiske eller sosiale grunnar og dei som må gå i eit anna fylke for å få opplæring i eller på samisk. Klage på inntak av gjesteelevar blir avgjord av klageorganet i fylkeskommunen.
+    nn: Ein gjesteelev går på skule i eit anna fylke enn der eleven er folkeregistrert. Fylkeskommunen tek først inn søkjarar frå eige fylke. Er det ledig plass, blir søkjarar frå andre fylke tekne inn etterpå. Først kjem dei med særlege pedagogiske eller sosiale grunnar og dei som må gå i eit anna fylke for å få opplæring i eller på samisk. Klage på inntak av gjesteelevar blir avgjord av klageorganet i fylkeskommunen.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-14 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
     - { id: opplaeringslova, punkt: "§ 29-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
@@ -179,7 +179,7 @@
   tittel: { nb: Karakterpoeng, nn: Karakterpoeng }
   tekst:
     nb: Karakterpoeng er poengsummen søkerne konkurrerer med når det er flere søkere enn plasser. Til Vg1 regnes den ut fra standpunkt- og eksamenskarakterene fra grunnskolen, og til Vg2 og Vg3 fra standpunkt, eksamen og halvårsvurderinger med karakter fra Vg1 og eventuelt Vg2. Poengsummen er gjennomsnittet med to desimaler, ganget med ti. Står søkerne likt om de siste plassene, avgjør loddtrekning. Søkere med fortrinnsrett eller som skal behandles individuelt, tas inn uten å konkurrere på poeng. Forskriften kaller det «poengsum». Vestlands forskrift og rapporteringen til Udir bruker «karakterpoeng».
-    nn: Karakterpoeng er poengsummen søkjarane konkurrerer med når det er fleire søkjarar enn plassar. Til Vg1 blir han rekna ut frå standpunkt- og eksamenskarakterane frå grunnskolen, og til Vg2 og Vg3 frå standpunkt, eksamen og halvårsvurderingar med karakter frå Vg1 og eventuelt Vg2. Poengsummen er gjennomsnittet med to desimalar, gonga med ti. Står søkjarane likt om dei siste plassane, avgjer loddtrekning. Søkjarar med fortrinnsrett eller som skal behandlast individuelt, blir tekne inn utan å konkurrere på poeng. Forskrifta kallar det «poengsum». Forskrifta i Vestland og rapporteringa til Udir bruker «karakterpoeng».
+    nn: Karakterpoeng er poengsummen søkjarane konkurrerer med når det er fleire søkjarar enn plassar. Til Vg1 blir han rekna ut frå standpunkt- og eksamenskarakterane frå grunnskulen, og til Vg2 og Vg3 frå standpunkt, eksamen og halvårsvurderingar med karakter frå Vg1 og eventuelt Vg2. Poengsummen er gjennomsnittet med to desimalar, gonga med ti. Står søkjarane likt om dei siste plassane, avgjer loddtrekning. Søkjarar med fortrinnsrett eller som skal behandlast individuelt, blir tekne inn utan å konkurrere på poeng. Forskrifta kallar det «poengsum». Forskrifta i Vestland og rapporteringa til Udir bruker «karakterpoeng».
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-18 Fordeling av plassar til vidaregåande trinn 1", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-18" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-19 bokstav a", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-19" }
@@ -198,7 +198,7 @@
   tittel: { nb: Privatist, nn: Privatist }
   tekst:
     nb: En privatist er en som melder seg til eksamen uten å delta i opplæringen i faget. I grunnskolen kan bare de som ville hatt rett til opplæring for voksne, være privatister. Privatisten melder seg opp selv, der fylkeskommunen bestemmer og bare ett sted for samme eksamen, og betaler en prøveavgift. Utsatt og ny eksamen er gratis. På vitnemålet får privatisten bare eksamenskarakterer, og tidligere standpunkt- og eksamenskarakterer i faget faller bort når den nye karakteren føres. En elev kan søke om å slippe opplæringen i et fag for å ta eksamen som privatist, og fylkeskommunen kan si ja når det er tungtveiende grunner. Har søkeren tatt fag som privatist, brukes det beste utvalget av karakterer ved inntak til Vg2 og Vg3.
-    nn: Ein privatist er ein som melder seg til eksamen utan å delta i opplæringa i faget. I grunnskolen kan berre dei som ville hatt rett til opplæring for vaksne, vere privatistar. Privatisten melder seg opp sjølv, der fylkeskommunen bestemmer og berre éin stad for same eksamen, og betaler ei prøveavgift. Utsett og ny eksamen er gratis. På vitnemålet får privatisten berre eksamenskarakterar, og tidlegare standpunkt- og eksamenskarakterar i faget fell bort når den nye karakteren blir ført. Ein elev kan søkje om å sleppe opplæringa i eit fag for å ta eksamen som privatist, og fylkeskommunen kan seie ja når det ligg føre tungtvegande grunnar. Har søkjaren teke fag som privatist, blir det beste utvalet av karakterar brukt ved inntak til Vg2 og Vg3.
+    nn: Ein privatist er ein som melder seg til eksamen utan å delta i opplæringa i faget. I grunnskulen kan berre dei som ville hatt rett til opplæring for vaksne, vere privatistar. Privatisten melder seg opp sjølv, der fylkeskommunen bestemmer og berre éin stad for same eksamen, og betaler ei prøveavgift. Utsett og ny eksamen er gratis. På vitnemålet får privatisten berre eksamenskarakterar, og tidlegare standpunkt- og eksamenskarakterar i faget fell bort når den nye karakteren blir ført. Ein elev kan søkje om å sleppe opplæringa i eit fag for å ta eksamen som privatist, og fylkeskommunen kan seie ja når det ligg føre tungtvegande grunnar. Har søkjaren teke fag som privatist, blir det beste utvalet av karakterar brukt ved inntak til Vg2 og Vg3.
   kilder:
     - { id: opplaeringslova, punkt: "§ 23-1 Privatistar", url: "https://lovdata.no/lov/2023-06-09-30/§23-1" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-27 Oppmelding til eksamen", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
@@ -278,3 +278,35 @@
     - "Skolene melder fra til oppfølgingstjenesten når en elev slutter. Det står ikke i loven. Bør det stå i begrepet som praksis?"
   stikkord: [OT, oppfølging, drop-out, slutter i skolen, avbrudd, ungdom utenfor skole og arbeid, NAV]
   relatert: [ungdomsrett, pp-tjenesten, radgiving]
+
+# Gratisprinsippet (opplæringslova § 5-8), lagt til 09.10.2026 etter gjennomgangen av innholdet, godkjent av eier.
+# Bare det som står i loven, forskriften og Udirs regelverkstolkning og veileder. Grensene som er usikre, er
+# kontrollspørsmål.
+- id: gratisprinsippet
+  type: begrep
+  tittel: { nb: Gratisprinsippet, nn: Gratisprinsippet }
+  tekst:
+    nb: >-
+      Gratisprinsippet betyr at videregående opplæring skal være gratis. Fylkeskommunen kan likevel kreve at elever og lærlinger dekker individuelt utstyr som opplæringen til vanlig gjør det nødvendig å ha, for eksempel kokkekniver, enklere verneutstyr eller avanserte kalkulatorer. Relativt kostbart utstyr kan ikke kreves betalt. Utstyr som dekker de særlige behovene til en elev, for eksempel etter reglene om fysisk tilrettelegging, skal alltid være gratis. Læremidler og digitalt utstyr skal fylkeskommunen dekke, men den kan kreve en årlig egenandel for bærbar PC. Egenandelen kan ikke være høyere enn den laveste satsen i det årlige utstyrsstipendet fra Lånekassen, og eleven får beholde PC-en etter videregående. Turer og aktiviteter som er en del av opplæringen, kan ikke kreves betalt. Det er likevel mulig å samle inn penger til dem gjennom dugnad og anonym, frivillig innsamling. Se [opplæringslova § 5-8](#/lov/opplaeringslova/5-8) og [opplæringsforskrifta § 22-5](#/lov/opplaeringsforskrifta/22-5).
+    nn: >-
+      Gratisprinsippet tyder at vidaregåande opplæring skal vere gratis. Fylkeskommunen kan likevel krevje at elevar og lærlingar dekkjer individuelt utstyr som opplæringa til vanleg gjer det nødvendig å ha, til dømes kokkeknivar, enklare verneutstyr eller avanserte kalkulatorar. Relativt kostbart utstyr kan ikkje krevjast betalt. Utstyr som dekkjer dei særlege behova til ein elev, til dømes etter reglane om fysisk tilrettelegging, skal alltid vere gratis. Læremiddel og digitalt utstyr skal fylkeskommunen dekkje, men han kan krevje ein årleg eigendel for berbar PC. Eigendelen kan ikkje vere høgare enn den lågaste satsen i det årlege utstyrsstipendet frå Lånekassen, og eleven får behalde PC-en etter vidaregåande. Turar og aktivitetar som er ein del av opplæringa, kan ikkje krevjast betalt. Det er likevel mogleg å samle inn pengar til dei gjennom dugnad og anonym, frivillig innsamling. Sjå [opplæringslova § 5-8](#/lov/opplaeringslova/5-8) og [opplæringsforskrifta § 22-5](#/lov/opplaeringsforskrifta/22-5).
+  privatskole:
+    tekst:
+      nb: "Privatskoler kan kreve skolepenger innenfor grensene i privatskolelova § 6-2. I videregående kan skolen i tillegg pålegge elevene å betale for individuelt utstyr som opplæringen til vanlig gjør det nødvendig å ha."
+      nn: "Privatskular kan krevje skulepengar innanfor grensene i privatskolelova § 6-2. I vidaregåande kan skulen i tillegg påleggje elevane å betale for individuelt utstyr som opplæringa til vanleg gjer det nødvendig å ha."
+    kilder:
+      - { id: udir-gratisprinsippet, punkt: "Gratisprinsippet og privatskoler godkjent etter privatskoleloven", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/gratisprinsippet-og-privatskoler-godkjent-etter-privatskoleloven/" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-8 Gratis vidaregåande opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§5-8" }
+    - { id: opplaeringsforskrifta, punkt: "§ 22-5 Eigendel for berbar PC", url: "https://lovdata.no/forskrift/2024-06-03-900/§22-5" }
+    - { id: udir-merknader-opplaeringslova, punkt: "§ 5-8 Gratis vidaregåande opplæring (Prop. 57 L (2022–2023) punkt 40.7)", url: "https://www.udir.no/regelverkstolkninger/opplaring/lov-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringslova/tredje-del--vidaregaande-opplaring/kapittel-5-rett-til-vidaregaande-opplaring/-5-8-gratis-vidaregaande-opplaring/" }
+    - { id: udir-gratisprinsippet, punkt: "Læremidler og utstyr", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/laremidler-og-utstyr/" }
+    - { id: udir-gratisprinsippet, punkt: "Aktiviteter og turer", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/aktiviteter-og-turer/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på utstyr eleven kan måtte betale for (kokkekniver, enklere verneutstyr og avanserte kalkulatorer) og grensen mot relativt kostbart utstyr gjengitt riktig etter forarbeidene til § 5-8?"
+    - "Udirs veileder sier at fylkeskommunen ikke kan kreve egenandel etter at eleven er formidlet til læreplass, men at lærlinger kan måtte dekke for eksempel kniver og vanlige arbeidsklær. Bør begrepet forklare forskjellen for lærlinger?"
+    - "Veilederen sier at skolen ikke kan ta initiativ til aktiviteter som krever betaling fra elever eller foreldre. Er det likevel dekkende å si at det er mulig å samle inn penger gjennom dugnad og anonym, frivillig innsamling?"
+    - "Privatskoler: Privatskolelova kapittel 6 er ikke med i Lov og forskrift, så teksten bygger på Udirs veileder om privatskoler, som viser til § 6-2. Er det riktig at videregående privatskoler kan kreve betaling for individuelt utstyr som opplæringen til vanlig krever, i tillegg til skolepengene?"
+  stikkord: [gratisprinsippet, gratis opplæring, egenandel, eigendel, utstyr, PC, utstyrsstipend, skoletur, tur, dugnad, "5-8"]
+  relatert: [ungdomsrett, fysisk-tilrettelegging]

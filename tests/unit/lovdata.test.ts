@@ -9,6 +9,7 @@ import { kapittelliste, lovdokumentSkjema, lovoversiktSkjema, lovutvalgSkjema } 
 import { alleParagrafer, alleSeksjoner, rentekst } from '../../src/modules/lov/typer.ts';
 import { kilderegisterSkjema } from '../../src/core/innhold/skjema.ts';
 import { lokalForskrift } from '../../scripts/hent-lovdata.ts';
+import { kanVisesIRegelverket } from '../../src/components/kilderader.ts';
 
 const rot = join(__dirname, '../..');
 const html = readFileSync(join(rot, 'tests/fixtures/lovdata/lov.html'), 'utf8');
@@ -60,6 +61,21 @@ describe('leseren for Lovdata', () => {
     expect(() => lesLovdokument(html, { ...oppsett, kapitler: ['1', '99'] })).toThrow(/fant ikke kapittel 99/);
   });
 
+  it('tar bare med paragrafene i et utvalg av paragrafer, og hopper over resten av kapitlene uten å lese det', () => {
+    // § 2-1 har en tabell appen ikke leser. Den stopper ikke hentingen når den ikke er med i utvalget.
+    const utdrag = lesLovdokument(html, { ...oppsett, kapitler: ['1', '2', '16'], paragrafer: ['1-2', '16-1'] });
+    expect(alleParagrafer(utdrag.seksjoner).map((x) => x.paragraf.visNr)).toEqual(['§ 1-2', '§ 16-1']);
+    // Kapitler uten noen av paragrafene, og merknadene under kapitteloverskriften, tas ikke med.
+    expect(alleSeksjoner(utdrag.seksjoner).map((s) => `${s.type}:${s.nr ?? ''}`)).toEqual(['del:', 'kapittel:1', 'del:', 'kapittel:16', 'avsnitt:']);
+    expect(alleSeksjoner(utdrag.seksjoner).find((s) => s.nr === '16')?.merknader).toEqual([]);
+    expect(lovdokumentSkjema.parse(utdrag)).toEqual(utdrag);
+  });
+
+  it('stopper når en paragraf i utvalget mangler, eller utvalget av paragrafer ikke har kapitler', () => {
+    expect(() => lesLovdokument(html, { ...oppsett, kapitler: ['1'], paragrafer: ['1-9'] })).toThrow(/fant ikke § 1-9/);
+    expect(() => lesLovdokument(html, { ...oppsett, kapitler: null, paragrafer: ['1-1'] })).toThrow(/krever kapitlene/);
+  });
+
   it('stopper når teksten har noe appen ikke leser, så ingen tekst forsvinner', () => {
     expect(() => lesLovdokument(html, { ...oppsett, kapitler: ['2'] })).toThrow(/innhold appen ikke leser: table i § 2-1/);
     expect(() => lesLovdokument(html, { ...oppsett, kapitler: null })).toThrow(/innhold appen ikke leser/);
@@ -94,6 +110,22 @@ describe('utvalget i content/lovverk.yaml', () => {
     const kap = (id: string) => kapittelliste(utvalg.dokumenter.find((d) => d.id === id)?.kapitler ?? []);
     expect(kap('opplaeringslova')).toEqual(['1', ...Array.from({ length: 17 }, (_, i) => String(i + 5)), '23', '24', '25', '27', '28', '29', '30']);
     expect(kap('opplaeringsforskrifta')).toEqual([...Array.from({ length: 17 }, (_, i) => String(i + 4)), '22', '23']);
+  });
+
+  it('har bare avvergeplikten fra straffeloven (§ 196 i kapittel 20, eier 09.10.2026)', () => {
+    const straffeloven = utvalg.dokumenter.find((d) => d.id === 'straffeloven');
+    expect(straffeloven?.kapitler).toEqual(['20']);
+    expect(straffeloven?.paragrafer).toEqual(['196']);
+    // Et utvalg av paragrafer krever kapitlene de står i.
+    for (const d of utvalg.dokumenter) if (d.paragrafer) expect(d.kapitler, d.id).toBeDefined();
+  });
+
+  it('en paragraf i et dokument som ikke er hentet ennå, står ikke under «I regelverket»', () => {
+    // Straffeloven er ny i utvalget 09.10.2026 og hentes første gang i Actions. Til da lenker kilden til Lovdata.
+    expect(kanVisesIRegelverket('straffeloven/196')).toBe(existsSync(join(rot, 'data/lovdata/straffeloven.json')));
+    expect(kanVisesIRegelverket('opplaeringslova/12-4')).toBe(existsSync(join(rot, 'data/lovdata/opplaeringslova.json')));
+    // Avtalene og andre referanser utenfor Lov og forskrift står som før.
+    expect(kanVisesIRegelverket('sfs2213/sfs-tidsressurser')).toBe(true);
   });
 
   it('peker på aktive kilder fra Lovdata: datasettene, eller siden for lokale forskrifter med fylke', () => {

@@ -62,6 +62,7 @@ Kilder vi har prøvd å ta med i appen, men som ikke er med, eller bare er delvi
 | KS, lisens for avtaletekstene | Å gjengi avtaleteksten | Lisensen er uklar, så teksten er skrevet med egne ord, med korte sitater for tallene. | Lisens fra KS. |
 | KF Infoserie, SFS 2213 | Avtaleteksten | Bare den ene åpne delingslenken fra KS kan leses. | Avtale med Kommuneforlaget. |
 | Visma InSchool (hjelpesidene) | Veiledning for skolene | Opphavsrett. Bare lenker, og lenkesjekken får ikke svar. | – |
+| Straffeloven § 196 (`straffeloven`) | Avvergeplikten i kortet «Hvem melder hva til hvem» (09.10.2026) | Med fra 09.10.2026 (eier): bare § 196 er i Lov og forskrift (`paragrafer` i `content/lovverk.yaml`). Lovdata svarer 405 fra skymiljøet, så teksten kommer med første henting i Actions. Til da lenker kilden til Lovdata. | – |
 
 ## Sider lenkesjekken ikke når
 

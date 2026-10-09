@@ -13,3 +13,5 @@
 - **Data i appen:** Ett dokument per JS-bit som lastes første gang det trengs og følger med når appen installeres, og en liten oversikt. Startpakken blir ikke større.
 
 **Konsekvens:** Ingen nye avhengigheter i appen (leseren bruker `node-html-parser`, som skriptene hadde fra før). Endrer Lovdata strukturen i filene eller sidene, stopper hentingen med en tydelig feil, og forrige tekst vises til leseren er rettet. Lokale forskrifter kan være opptil 13 uker gamle, og hentet-datoen står på siden. Avtalene må holdes oppdatert for hånd når kontrollsaken melder endringer. Gir KS tillatelse til å vise avtaleteksten, kan avtalene hentes og vises som lovene.
+
+**Endret 09.10.2026:** Utvalget i `content/lovverk.yaml` kan også ha `paragrafer`, når bare noen få paragrafer i kapitlene skal med. Resten av kapitlene leses ikke. Brukt for straffeloven § 196 (eier 09.10.2026). En paragraf i et dokument som ikke er hentet ennå, står ikke under «I regelverket» før kildesjekken har hentet teksten.

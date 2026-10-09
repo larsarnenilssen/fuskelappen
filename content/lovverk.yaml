@@ -7,6 +7,7 @@
 #   2. Legg en oppføring her med id (adressen i appen), kilde og eventuelt kapitlene som skal med.
 #   3. Kjør kildesjekken (eller hent:lovdata i Actions). Det trengs ingen kodeendring.
 # Kapitler skrives som i teksten: «11», «IV», eller et spenn med arabiske tall: «5-21».
+# Skal bare noen få paragrafer i et kapittel med, står de i paragrafer: ['196'] (sammen med kapitlene).
 #
 # Lokale forskrifter (skoleregler, skoleregler for voksne og for den enkelte skole, inntak og skolerute) hentes for
 # alle fylker og skoler fra registeret hos Lovdata, og står ikke her (avgjørelse 061, eier 05.10.2026). Titlene i appen
@@ -97,6 +98,15 @@ dokumenter:
     merknad: >-
       Godkjent av eier 02.10.2026: krav til arbeidsmiljøet (kap. 4), arbeidstid (kap. 10, som SFS 2213 bygger på),
       permisjoner (kap. 12), ansettelse (kap. 14) og opphør av arbeidsforhold (kap. 15).
+
+  - id: straffeloven
+    kilde: straffeloven
+    kapitler: ['20']
+    paragrafer: ['196']
+    merknad: >-
+      Eier 09.10.2026: bare avvergeplikten (§ 196), som kortet «Hvem melder hva til hvem» i Skolemiljø viser til.
+      Resten av kapittel 20 (vern av den offentlige ro, orden og sikkerhet) gjelder ikke skolen. Lovdata svarer bare
+      fra Actions, så teksten kommer med første henting der.
 
 # Avtaler (eier 02.10.2026): bestemmelsene er skrevet med egne ord i content/lov/, fordi rettighetene til
 # avtaleteksten ikke er avklart. Her står hvilke elementer som hører til hvilket kapittel. Kildejobben sjekker

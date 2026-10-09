@@ -206,11 +206,19 @@ export function tolkOverskrift(id: string, tekst: string): { type: Seksjon['type
   return { type: 'avsnitt', nr: null };
 }
 
+/** Paragrafene som tas med, og numrene som er funnet (et utvalg av paragrafer, f.eks. straffeloven § 196). */
+interface Paragrafutvalg {
+  nr: ReadonlySet<string>;
+  funnet: Set<string>;
+}
+
 /**
  * Leser en seksjon. Med et utvalg leses bare kapitlene i utvalget (og delene og avsnittene rundt dem). Resten hoppes
  * over uten å leses, så f.eks. vedlegg med tabeller ikke stopper hentingen. Alle kapittelnumre legges i `funnet`.
+ * Med et utvalg av paragrafer leses bare de paragrafene i kapitlene. Resten av kapitlet, også merknadene under
+ * overskriften, hoppes over uten å leses, og seksjoner uten noen av paragrafene tas ikke med.
  */
-function lesSeksjon(el: HTMLElement, utvalg: ReadonlySet<string> | null, funnet: Set<string>, iUtvalg: boolean): Seksjon | null {
+function lesSeksjon(el: HTMLElement, utvalg: ReadonlySet<string> | null, funnet: Set<string>, iUtvalg: boolean, paragrafutvalg: Paragrafutvalg | null = null): Seksjon | null {
   const id = el.getAttribute('data-name') ?? el.getAttribute('id') ?? '';
   const barn = el.childNodes.filter(erElement);
   const hode = barn.find((e) => overskrift.test(tag(e)));
@@ -222,15 +230,21 @@ function lesSeksjon(el: HTMLElement, utvalg: ReadonlySet<string> | null, funnet:
   for (const b of barn) {
     if (b === hode) continue;
     if (tag(b) === 'section' && klasse(b, 'section')) {
-      const under = lesSeksjon(b, utvalg, funnet, med);
+      const under = lesSeksjon(b, utvalg, funnet, med, paragrafutvalg);
       if (under) s.seksjoner.push(under);
     } else if (!med) continue;
-    else if (tag(b) === 'article' && klasse(b, 'legalArticle')) s.paragrafer.push(lesParagraf(b));
+    else if (paragrafutvalg) {
+      const nr = (b.getAttribute('data-name') ?? '').replace(/^§\s*/, '');
+      if (tag(b) !== 'article' || !klasse(b, 'legalArticle') || !paragrafutvalg.nr.has(nr)) continue;
+      s.paragrafer.push(lesParagraf(b));
+      paragrafutvalg.funnet.add(nr);
+    } else if (tag(b) === 'article' && klasse(b, 'legalArticle')) s.paragrafer.push(lesParagraf(b));
     else if (tag(b) === 'article' && (klasse(b, 'defaultP') || klasse(b, 'changesToParent'))) s.merknader.push(rydd(segmenter(b)));
     else throw new Ukjent(`${beskriv(b)} i «${s.overskrift}»`);
   }
   // Utenfor utvalget beholdes bare deler og avsnitt som har kapitler i utvalget, uten egen tekst.
   if (!med) return s.seksjoner.length > 0 ? { ...s, merknader: [] } : null;
+  if (paragrafutvalg && s.paragrafer.length === 0 && s.seksjoner.length === 0) return null;
   return s;
 }
 
@@ -262,6 +276,8 @@ export interface Leseoppsett {
   kilde: string;
   /** Kapitlene som tas med (utskrevet, uten spenn), eller null for hele dokumentet. */
   kapitler: readonly string[] | null;
+  /** Paragrafene som tas med i kapitlene («196»), eller null/udefinert for hele kapitlene. Krever kapitler. */
+  paragrafer?: readonly string[] | null | undefined;
   korttittel?: string | undefined;
   korttittelNn?: string | undefined;
   /** Målformen, når filen ikke oppgir den (sidene for lokale forskrifter). */
@@ -290,13 +306,15 @@ export function lesLovdokument(html: string, oppsett: Leseoppsett): Lovdokument 
   const kort = hodefelt(rot, 'titleShort')?.split(' – ')[0]?.trim();
   const lang = rot.querySelector('html')?.getAttribute('lang');
   const utvalg = oppsett.kapitler ? new Set(oppsett.kapitler) : null;
+  if (oppsett.paragrafer && !utvalg) throw new Error(`${oppsett.id}: et utvalg av paragrafer krever kapitlene de står i.`);
+  const paragrafutvalg: Paragrafutvalg | null = oppsett.paragrafer ? { nr: new Set(oppsett.paragrafer), funnet: new Set() } : null;
   const funnet = new Set<string>();
   let seksjoner: Seksjon[];
   try {
     seksjoner = hoved.childNodes.filter(erElement).flatMap((e): Seksjon[] => {
       if (tag(e) === 'h1') return [];
       if (tag(e) === 'section' && klasse(e, 'section')) {
-        const s = lesSeksjon(e, utvalg, funnet, false);
+        const s = lesSeksjon(e, utvalg, funnet, false, paragrafutvalg);
         return s ? [s] : [];
       }
       // Med et utvalg av kapitler tas ikke tekst utenfor kapitlene med.
@@ -320,6 +338,10 @@ export function lesLovdokument(html: string, oppsett: Leseoppsett): Lovdokument 
   if (oppsett.kapitler) {
     const mangler = oppsett.kapitler.filter((k) => !funnet.has(k));
     if (mangler.length > 0) throw new Error(`${oppsett.id}: fant ikke kapittel ${mangler.join(', ')} i teksten. Utvalget i content/lovverk.yaml må kanskje endres.`);
+  }
+  if (paragrafutvalg) {
+    const mangler = [...paragrafutvalg.nr].filter((nr) => !paragrafutvalg.funnet.has(nr));
+    if (mangler.length > 0) throw new Error(`${oppsett.id}: fant ikke § ${mangler.join(', § ')} i kapitlene i utvalget. Utvalget i content/lovverk.yaml må kanskje endres.`);
   }
   return {
     id: oppsett.id,
