@@ -43,7 +43,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Hver fase startes i en ny samtale med arbeidsordren i `docs/arbeidsordrer/fase-N.md` (eier 02.10.2026). Når en fase er levert, skrives arbeidsordren for neste fase.
 - Arbeid på en egen gren per fase eller oppgave, og slå sammen til `main` via PR med grønn CI.
 - Claude fletter PR-ene på eiers vegne når CI er grønn og det ikke er konflikter (eier 01.10.2026). Er CI rød, rettes feilen først.
-- Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `test/` ved siden av appen, f.eks. `https://jukselappen.no/test/` (avgjørelse 045 og 065).
+- Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `test/` ved siden av appen, f.eks. `https://jukselappen.no/test/` (avgjørelse 045 og 065). Testversjonen tas ned, og grenen slettes, hver gang en versjon publiseres (eier 09.10.2026, avgjørelse 095).
 - Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026).
 - Versjons-PR-en har 1–4 korte punkter om det som er nytt i `content/versjoner.yaml`, på bokmål og nynorsk. De vises i meldingen om ny versjon i appen (avgjørelse 088, testes).
 - Oppdater `CHANGELOG.md` for alt brukeren merker.
