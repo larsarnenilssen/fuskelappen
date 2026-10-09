@@ -16,6 +16,19 @@ test.describe('begrepsbanken', () => {
     await expect(page.locator('.begrep-kort .kildeliste')).toContainText('§ 4-3');
   });
 
+  test('gratisprinsippet for privatskoler bygger på privatskolelova § 6-2 (eier 09.10.2026)', async ({ page }) => {
+    await settLagret(page, { privatskole: true });
+    await page.goto('./#/begreper/gratisprinsippet');
+    const merknad = page.locator('.begrep-kort .privatskolemerknad');
+    await expect(merknad).toContainText('kan kreve skolepenger');
+    await expect(merknad).toContainText('15 prosent av tilskuddsgrunnlaget');
+    await page.locator('.begrep-kort .kortfot summary').last().click();
+    await expect(page.locator('.begrep-kort .kildeliste')).toContainText('§ 6-2 Skolepengar');
+    await expect(page.locator('.begrep-kort .kildeliste')).toContainText('§ 15-1 Eigendel for berbar PC');
+    // Paragrafen i forskriften er utenfor utvalget i Lov og forskrift og står ikke under «I regelverket».
+    await expect(page.locator('.begrep-kort .paragraflenker')).not.toContainText('15-1');
+  });
+
   test('uten «Privatskole» står ikke merknaden', async ({ page }) => {
     await page.goto('./#/begreper/politiattest');
     await expect(page.locator('main h1')).toHaveText('Politiattest');

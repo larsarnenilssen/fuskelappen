@@ -2,6 +2,7 @@
 // kilder i lukkede rader nederst, faget fra adressen og oppslaget over karakterkodene. Pakke 2: fraværsgrensen, med
 // lenker fra fagarket og til veiviseren. Eksamen, klage på karakter og prøvene står i eksamen.spec.ts (avgjørelse 078).
 import { expect, test } from '@playwright/test';
+import { aapneDel } from './hjelp.ts';
 
 test.describe('vurdering', () => {
   test('fra oversikten gjennom fravær og varsel til karakter uten varsel', async ({ page }) => {
@@ -73,7 +74,8 @@ test.describe('vurdering', () => {
 
   test('fagarket lenker til kalkulatoren med faget valgt, og kalkulatoren til steget om fravær', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
-    // Vurderingsordningen står åpen fra start (avgjørelse 100).
+    // Vurderingsordningen står åpen fra start på skrivebord og er lukket på mobil (avgjørelse 100, eier 09.10.2026).
+    await aapneDel(page, /^Vurderingsordning$/);
     await expect(page.locator('.fag-ifaget')).toContainText('Sentralt gitt');
     await page.getByRole('link', { name: 'Fraværskalkulatoren for faget' }).click();
     await expect(page).toHaveURL(/#\/vurdering\/fravaer\?fag=ENG1007$/);

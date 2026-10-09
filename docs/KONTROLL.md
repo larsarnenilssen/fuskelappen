@@ -1458,7 +1458,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Regelverkstolkninger til opplæringslova (forarbeidene til hver paragraf)
 
-`udir-merknader-opplaeringslova` · Kildesjekk: ⚠️ ikke godkjent for bruk; i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/lov-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringslova/)
+`udir-merknader-opplaeringslova` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/lov-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringslova/)
 
 **Innhold som bygger på kilden**
 
@@ -1474,7 +1474,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Merknader til opplæringsforskrifta, kapittel 12 Personalet i skolen
 
-`udir-merknader-ofo-kap12` · Kildesjekk: ⚠️ ikke godkjent for bruk; i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-12-personalet-i-skolen/)
+`udir-merknader-ofo-kap12` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-12-personalet-i-skolen/)
 
 **Innhold som bygger på kilden**
 
@@ -1486,7 +1486,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Plikt til å følge opp fravær
 
-`udir-oppfolging-fravaer` · Kildesjekk: ⚠️ ikke godkjent for bruk; i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/plikt-til-a-folge-opp-fravar/)
+`udir-oppfolging-fravaer` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/plikt-til-a-folge-opp-fravar/)
 
 **Innhold som bygger på kilden**
 
@@ -1496,7 +1496,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Meldeplikt til barnevernet
 
-`udir-meldeplikt-barnevernet` · Kildesjekk: ⚠️ ikke godkjent for bruk; i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/meldeplikt-til-barnevernet/)
+`udir-meldeplikt-barnevernet` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/meldeplikt-til-barnevernet/)
 
 **Innhold som bygger på kilden**
 
@@ -1506,7 +1506,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Veileder om gratisprinsippet i grunnskolen og videregående opplæring
 
-`udir-gratisprinsippet` · Kildesjekk: ⚠️ ikke godkjent for bruk; i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/laremidler-og-utstyr/)
+`udir-gratisprinsippet` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/laremidler-og-utstyr/)
 
 **Innhold som bygger på kilden**
 
@@ -1516,7 +1516,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Lov om straff (straffeloven)
 
-`straffeloven` · Kildesjekk: ⚠️ ikke godkjent for bruk; i orden (09.10.2026) · [Åpne kilden](https://lovdata.no/lov/2005-05-20-28)
+`straffeloven` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://lovdata.no/lov/2005-05-20-28)
 
 **Innhold som bygger på kilden**
 

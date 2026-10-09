@@ -86,7 +86,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Et kort som kan åpnes** (`Innholdskort`, `Lukketkort`) viser tittelen og første setning, med pilen til høyre. Det har regelverket og kildene som lukkede rader nederst (`Kortfot`).
 - **Tilleggsstoff** som ikke er sidens eget innhold, er en lukket rad med ikon og blå tekst, som «Kilder (n)», «I regelverket (n)» og «Slik regnes det ut» (`Forklaring`). Flere slike rader etter hverandre står i én boks, med en tynn strek mellom.
 - Det som er åpent, huskes for siden (`useHusketApen`).
-- **Hovedinnholdet står åpent.** Det brukeren kommer for (kompetansemålene og vurderingsordningen på fagarket, dokumentene i Regelverk), er ikke lukket fra start. Lukket står det som bare noen trenger (avgjørelse 100).
+- **Hovedinnholdet står åpent på skrivebord.** Det brukeren kommer for (kompetansemålene og vurderingsordningen på fagarket, dokumentene i Regelverk), er åpent fra start på skrivebord (fra 64rem, `useBred`) og lukket på mobil, så siden ikke blir lang (eier 09.10.2026). Lukket overalt står det som bare noen trenger (avgjørelse 100).
 - Et skjema i deler (`fieldset.valggruppe`) har overskriften (`legend`) på den myke flaten i kortet, ikke på rammen. Et vanlig kort får det samme med `kort-med-topp`.
 
 *Eksempler:* delene på temasidene, kortene i Vurdering, kildeboksen.

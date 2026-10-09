@@ -138,6 +138,21 @@ test.describe('velkomsten', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Ny lokal regel' })).toBeVisible();
   });
 
+  test('lenkene til Om appen og Innstillinger i første trinn lukker velkomsten og åpner siden med tilbakemeldingen', async ({ page }) => {
+    // Tilbakemeldingen står under Om appen og Innstillinger, og velkomsten sier det (eier 09.10.2026).
+    await settLagret(page, {});
+    await apne(page);
+    const dialog = page.getByRole('dialog', { name: TRINN[0] });
+    await expect(dialog).toContainText('Gi gjerne tilbakemelding under Om appen eller Innstillinger.');
+    await dialog.getByRole('link', { name: 'Om appen', exact: true }).click();
+    await expect(page.getByRole('dialog')).toHaveCount(0);
+    await expect(page.getByRole('heading', { level: 1, name: 'Om appen' })).toBeVisible();
+    await apne(page);
+    await page.getByRole('dialog').getByRole('link', { name: 'Innstillinger', exact: true }).click();
+    await expect(page.getByRole('dialog')).toHaveCount(0);
+    await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
+  });
+
   test('med redusert bevegelse står bildene stille, uten knappen som spiller dem av', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await settLagret(page, {});

@@ -41,14 +41,33 @@ export function unikeKilder(kilder: readonly KildeRef[]): KildeRef[] {
 /** Om teksten til et dokument i Lov og forskrift er hentet, så paragrafene kan åpnes i appen. */
 export const erHentet = (dokument: string): boolean => LOVDOKUMENTER.has(dokument);
 
-const UTVALGET = new Set((lovverk as { dokumenter: { id: string }[] }).dokumenter.map((d) => d.id));
+const UTVALGET = new Map(
+  (lovverk as { dokumenter: { id: string; kapitler?: string[] | null; paragrafer?: string[] | null }[] }).dokumenter.map((d) => [d.id, d] as const),
+);
+
+/** Om kapitlet står i listen over kapitler i utvalget, også i et spenn som «5-21». */
+function kapittelIListen(kapittel: string, kapitler: readonly string[]): boolean {
+  return kapitler.some((k) => {
+    const spenn = /^(\d+)-(\d+)$/.exec(k);
+    return spenn ? /^\d+$/.test(kapittel) && Number(kapittel) >= Number(spenn[1]) && Number(kapittel) <= Number(spenn[2]) : k === kapittel;
+  });
+}
 
 /**
- * Om en paragraf som et kort oppgir selv («straffeloven/196»), kan vises under «I regelverket». Et dokument som er nytt
- * i Lov og forskrift og ikke hentet ennå, vises ikke, så lenken ikke går til en side som mangler. Andre referanser
- * (f.eks. avtalene) står som før.
+ * Om en paragraf som et kort oppgir selv («straffeloven/196») eller som står i kildene, kan vises under «I regelverket».
+ * Et dokument som er nytt i Lov og forskrift og ikke hentet ennå, vises ikke, så lenken ikke går til en side som mangler.
+ * Det gjør heller ikke en paragraf utenfor utvalget i content/lovverk.yaml: kapitlet går fram av nummeret («6-2» står i
+ * kapittel 6). Nummer uten kapittel («17» i forvaltningsloven) regnes som med. Andre referanser (f.eks. avtalene) står
+ * som før. Et kapittel som er nytt i utvalget, men ikke hentet ennå, tas bort av `Paragraflenker`.
  */
 export function kanVisesIRegelverket(ref: string): boolean {
-  const dokument = ref.slice(0, Math.max(0, ref.indexOf('/')));
-  return !UTVALGET.has(dokument) || HENTET.has(dokument);
+  const i = ref.indexOf('/');
+  const dokument = ref.slice(0, Math.max(0, i));
+  const utvalg = UTVALGET.get(dokument);
+  if (!utvalg) return true;
+  if (!HENTET.has(dokument)) return false;
+  const nr = ref.slice(i + 1);
+  if (utvalg.paragrafer) return utvalg.paragrafer.includes(nr);
+  const kapittel = /^(\d+[A-Z]?)-/.exec(nr)?.[1];
+  return !utvalg.kapitler || !kapittel || kapittelIListen(kapittel, utvalg.kapitler);
 }

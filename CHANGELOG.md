@@ -11,6 +11,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Hvem melder hva til hvem:** nytt kort på siden om skolemiljøet som samler meldepliktene (til rektor, ved krenkelser fra ansatte, etter fysiske inngrep og til barnevernet), avvergeplikten og forholdet til taushetsplikten.
 - **Gratisprinsippet:** nytt begrep om hva elevene kan og ikke kan måtte betale for i videregående.
 - **Straffeloven § 196** (avvergeplikten) i Lov og forskrift. Paragrafen kommer med første ukentlige henting.
+- **Privatskolelova kapittel 6** (tilskudd og skolepenger) i Lov og forskrift. Kapitlet kommer med første henting. Gratisprinsippet for privatskoler bygger nå på § 6-2 om skolepenger og forskriften om egenandel for bærbar PC, og begrepet «Privatskole» nevner tilskuddet og skolepengene.
 - **Begrepene viser det som er ulikt for privatskoler** når «Privatskole» er valgt, som kortene gjør.
 - Begrepet «Kontaktlærer» sier nå hva opplæringslova legger i rollen, og «Skjerpet aktivitetsplikt» at rektor ikke melder videre når meldingen er åpenbart grunnløs.
 
@@ -19,12 +20,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Aktuelt på forsiden:** Kalenderen, nyhetene, Videregående i tall og dagens jukselapp står samlet under «Aktuelt», øverst i sidekolonnen på stor skjerm og i en egen ramme øverst på mobil. Aktuelt lukkes og åpnes med pilen, som de andre gruppene, og er lukket fra start på mobil. Hva som står der, også dagens jukselapp, velger du i menyen i Aktuelt, der du også kan skjule det. «Tilpass» har bare rekkefølgen og valget om å vise Aktuelt. Bryteren for sidekolonnen og bryteren for dagens jukselapp under Innstillinger er tatt bort.
 - **Dagens jukselapp står ikke lenger først** ved første besøk på dagen. Visningen du valgte sist i Aktuelt, står.
 - **Velkomsten har fire trinn i stedet for ni:** hva appen er, hvor du jobber, rolle med forslag til favoritter og dagens jukselapp, og installering. Hvert trinn får plass uten å rulle på en vanlig mobil.
+- **Velkomsten har fire trinn i stedet for ni:** hva appen er, hvor du jobber, rolle med forslag til favoritter og dagens jukselapp, og installering. Hvert trinn får plass uten å rulle på en vanlig mobil. Første trinn sier at du kan gi tilbakemelding under Om appen eller Innstillinger, med lenker dit.
 - **Lov- og forskriftsteksten, eksamens- og inntaksdatoene, skoleruta og de andre dataene fra kildene** kommer ut i appen uten ny versjon, når kildesjekken har hentet dem og appens tester består med dem. Før kom bare Grep, skoleregisteret og statistikken ut på denne måten.
 - **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.
 - **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
 - **Større tekst:** Brødteksten er 16 px, og datoer, merker og dempede linjer er litt større.
-- **Fagsiden** viser kompetansemålene og vurderingsordningen med en gang, uten at de må åpnes.
-- **Regelverk** viser alle dokumentene i en liste med gruppene som overskrifter.
+- **Fagsiden** viser kompetansemålene og vurderingsordningen med en gang på skrivebord, uten at de må åpnes. På mobil er de lukket til du åpner dem.
+- **Regelverk** viser alle dokumentene i en liste med gruppene som overskrifter på skrivebord. På mobil er gruppene lukket til du åpner dem.
 - **Oversiktene i modulene** har ikke lenger en overskrift over hver inngang når det bare står én inngang under den.
 - **Søket** viser paragrafer om grunnskolen lenger ned, og privatskoleregler lenger ned når «Privatskole» ikke er valgt.
 - Det valgte filteret i søket og kalenderen er gult, som de andre valgene.

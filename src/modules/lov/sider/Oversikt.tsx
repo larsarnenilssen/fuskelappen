@@ -1,13 +1,15 @@
 // Regelverk (avgjørelse 039): søket i alle dokumentene øverst, og så dokumentene i grupper med overskrift: lover,
-// forskrifter, lokale forskrifter og avtaler (eier 02.10.2026). Gruppene står åpne, så dokumentene synes med en gang
-// (avgjørelse 100). Lokale forskrifter vises bare når brukeren har
-// valgt fylket, og skolens egne regler bare når skolen er valgt, merket «Skolen din» (avgjørelse 061). Alle dokumentene
+// forskrifter, lokale forskrifter og avtaler (eier 02.10.2026). På skrivebord står gruppene åpne, så dokumentene synes
+// med en gang (avgjørelse 100). På mobil er de lukket fra start (eier 09.10.2026). Lokale forskrifter vises bare når
+// brukeren har valgt fylket, og skolens egne regler bare når skolen er valgt, merket «Skolen din» (avgjørelse 061). Alle dokumentene
 // har dato for ikrafttredelse og siste endring (eier 05.10.2026).
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { usePrivatskole, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { PRIVATSKOLEDOKUMENTER } from '../../../core/privatskole.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { useBred } from '../../../components/ToKolonner.tsx';
 import { oversiktsid } from '../../favoritter.ts';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import { avtaler, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
@@ -29,12 +31,45 @@ interface Rad {
 /** Rekkefølgen på de lokale forskriftene: fylkets regler først, så skolens, inntak og skolerute. */
 const LOKAL_REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute', 'skyss', 'fagfordeling'];
 
+/** Dokumentene i en gruppe som lenkerader. */
+function Rader({ rader }: { rader: readonly Rad[] }) {
+  if (rader.length === 0) return null;
+  return (
+    <ul class="liste">
+      {rader.map((r) => (
+        <li key={r.id}>
+          <a class="listelenke" href={`#${dokumentRute(r.id)}`}>
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel" lang={r.lang}>
+                {r.tittel}
+                {r.merke && <span class="merke merke-skole">{r.merke}</span>}
+              </span>
+              <span class="listelenke-under">{r.under}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 /**
- * En gruppe dokumenter i et kort med overskriften på en myk flate og antallet til høyre. Gruppene står åpne, så
- * brukeren ser dokumentene med en gang (avgjørelse 100, før lukket etter eier 06.10.2026).
+ * En gruppe dokumenter med antallet til høyre. På skrivebord står gruppen åpen i et kort med overskriften på en myk
+ * flate, så brukeren ser dokumentene med en gang (avgjørelse 100). På mobil er gruppen en rubrikk som er lukket fra
+ * start, så oversikten viser gruppene (eier 06.10.2026 og 09.10.2026). Det brukeren åpner, huskes for siden.
  */
 function Gruppe({ nokkel, tittel, rader, children }: { nokkel: string; tittel: string; rader: readonly Rad[]; children?: preact.ComponentChildren }) {
+  const bred = useBred();
   const id = `lov-gruppe-${nokkel}`;
+  if (!bred) {
+    return (
+      <Rubrikk nokkel={id} tittel={tittel} lukket hoyre={rader.length > 0 ? formaterTall(rader.length) : null}>
+        <Rader rader={rader} />
+        {children}
+      </Rubrikk>
+    );
+  }
   return (
     <section class="rubrikk lv-gruppe" data-rubrikk={id} aria-labelledby={id}>
       <h2 class="rubrikk-tittel lv-gruppe-tittel" id={id}>
@@ -44,24 +79,7 @@ function Gruppe({ nokkel, tittel, rader, children }: { nokkel: string; tittel: s
         {rader.length > 0 && <span class="rubrikk-hoyre tall">{formaterTall(rader.length)}</span>}
       </h2>
       <div class="rubrikk-innhold">
-        {rader.length > 0 && (
-          <ul class="liste">
-            {rader.map((r) => (
-              <li key={r.id}>
-                <a class="listelenke" href={`#${dokumentRute(r.id)}`}>
-                  <span class="listelenke-tekst">
-                    <span class="listelenke-tittel" lang={r.lang}>
-                      {r.tittel}
-                      {r.merke && <span class="merke merke-skole">{r.merke}</span>}
-                    </span>
-                    <span class="listelenke-under">{r.under}</span>
-                  </span>
-                  <Ikon navn="hoyre" class="ikon-liten" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
+        <Rader rader={rader} />
         {children}
       </div>
     </section>
@@ -77,7 +95,7 @@ export default function Oversikt() {
   const privatskole = usePrivatskole();
   const nasjonale = (o: Lovoversikt) => o.dokumenter.filter((d) => d.gyldighet.niva === 'nasjonal');
   // Privatskolelova og forskriften (avgjørelse 075): med «Privatskole» valgt står de først blant lovene og
-  // forskriftene, merket «Privatskole». Ellers står de i en egen gruppe, lukket som de andre.
+  // forskriftene, merket «Privatskole». Ellers står de i en egen gruppe, som de andre.
   const erPrivat = (d: Dokumentinfo) => PRIVATSKOLEDOKUMENTER.has(d.id);
   const avType = (o: Lovoversikt, type: string) => {
     const alle = nasjonale(o).filter((d) => d.type === type);

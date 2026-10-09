@@ -1,7 +1,7 @@
 // Eksamen og klage (avgjørelse 078): oversikten med de fire kortene, eksamen, klage på karakter og prøvene (fase 6,
 // pakke 3), og de gamle adressene i Vurdering, som sender videre.
 import { expect, test } from '@playwright/test';
-import { settLagret } from './hjelp.ts';
+import { aapneDel, settLagret } from './hjelp.ts';
 
 test.describe('eksamen og klage', () => {
   test('oversikten har eksamen, prøvene, klage og kalenderen', async ({ page }) => {
@@ -69,6 +69,8 @@ test.describe('eksamen og klage', () => {
 
   test('fagarket lenker til eksamen', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
+    // Lenken står under «Vurderingsordning», som er lukket på mobil (eier 09.10.2026).
+    await aapneDel(page, /^Vurderingsordning$/);
     await page.getByRole('link', { name: 'Eksamen og klage', exact: true }).click();
     await expect(page).toHaveURL(/#\/eksamen\/regler$/);
   });

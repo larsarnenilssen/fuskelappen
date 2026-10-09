@@ -48,9 +48,6 @@ describe('kilderegisteret', () => {
       'udir-grep',
       'udir-veileder-tilpasset-opplaering',
       'udir-overordnet-del',
-      'vlfk-forskrift-inntak',
-      'vlfk-skulereglar',
-      'vlfk-sider',
       'udir-nsr',
     ]) {
       expect(kildeIder.has(id), id).toBe(true);

@@ -17,7 +17,12 @@ export const velkomstNb = {
     navnet:
       'Navnet spiller på jukselappen fra skolen. Innholdet er det du bør kunne, men ingen husker alt. Når det teller, kan du «jukse litt» og sjekke jukselappen: regelen, tallet eller neste skritt, med lenke til kilden.',
     // Det viktigste fra de tidligere trinnene om søket og forsiden (avgjørelse 101).
-    sok: 'Søk øverst på forsiden, eller med forstørrelsesglasset på de andre sidene. På forsiden står også Aktuelt: kalenderen, nyhetene og tallene.',
+    sok: 'Søk øverst på forsiden eller med forstørrelsesglasset på de andre sidene. På forsiden står også Aktuelt: kalenderen, nyhetene og tallene.',
+    // Tilbakemeldingen står under Om appen og Innstillinger (eier 09.10.2026). {om} og {innstillinger} blir lenker. Står
+    // i samme avsnitt som søket, så trinnet får plass uten rulling.
+    tilbakemelding: 'Gi gjerne tilbakemelding under {om} eller {innstillinger}.',
+    om: 'Om appen',
+    innstillinger: 'Innstillinger',
     bildeKalender: 'Kalender',
     bildeNyheter: 'Nyheter',
     bildeTall: 'I tall',
