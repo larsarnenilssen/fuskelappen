@@ -34,6 +34,24 @@ describe('arbeidsflyter', () => {
     expect(deploy.jobs.bygg.if).toContain("github.ref_type != 'tag'");
   });
 
+  it('en versjon publiseres uten testversjonen, og grenen test slettes etterpå (avgjørelse 095)', () => {
+    type Steg = { id?: string; run?: string; env?: Record<string, string> };
+    type Jobb = { needs?: string[]; if?: string; outputs?: Record<string, string>; permissions?: Record<string, string>; steps: Steg[] };
+    const fil = (navn: string) => parse(readFileSync(join(rot, '.github/workflows', navn), 'utf8')) as { on: Record<string, unknown>; jobs: Record<string, Jobb> };
+    const deploy = fil('deploy.yml');
+    const test = deploy.jobs.bygg?.steps.find((s) => s.id === 'test');
+    expect(test?.env?.ONSKET).toBe('${{ inputs.tag }}');
+    expect(test?.run?.indexOf('if [ -n "$ONSKET" ]')).toBeLessThan(test?.run?.indexOf('npm run build:test') ?? -1);
+    expect(deploy.jobs.bygg?.outputs?.ta_ned_test).toBe('${{ steps.test.outputs.ta_ned }}');
+    expect(deploy.jobs['ta-ned-test']).toMatchObject({ needs: ['bygg', 'publiser'], if: "needs.bygg.outputs.ta_ned_test == 'true'", permissions: { actions: 'write' } });
+    expect(deploy.jobs['ta-ned-test']?.steps[0]?.run).toContain('testversjon.yml --repo "$GITHUB_REPOSITORY" --ref main -f ta_ned=true');
+    const testversjon = fil('testversjon.yml');
+    expect(testversjon.on.workflow_dispatch).toMatchObject({ inputs: { ta_ned: { type: 'boolean', default: false } } });
+    expect(testversjon.jobs.publiser?.if).toBe('${{ !inputs.ta_ned }}');
+    expect(testversjon.jobs['ta-ned']).toMatchObject({ if: '${{ inputs.ta_ned }}', permissions: { contents: 'write' } });
+    expect(testversjon.jobs['ta-ned']?.steps[0]?.run).toContain('git/refs/heads/test');
+  });
+
   it('CI hopper over jobbene på jobbnivå etter nivået, og «Test og bygg» samler alle (avgjørelse 067)', () => {
     type Jobb = { name?: string; needs?: string | string[]; if?: string; outputs?: Record<string, string>; steps?: { run?: string }[] };
     const ci = parse(readFileSync(join(rot, '.github/workflows/ci.yml'), 'utf8')) as { on: Record<string, unknown>; jobs: Record<string, Jobb> };

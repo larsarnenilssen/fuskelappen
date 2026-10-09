@@ -7,6 +7,6 @@
 - **Hva som testes:** grenen `test`. Claude pusher grenen som skal testes dit (`git push origin <gren>:test --force`). Arbeidsflyten «Testversjon» starter da «Publiser» fra main.
 - **Bygget:** `npm run build:test` bygger med `FUSKELAPPEN_TEST=1`: egen sti (`/fuskelappen/test/`), navnet «Fuskelappen test», en linje øverst som sier at det er en testversjon, og egen lagringsnøkkel (`fuskelappen-test`), så testing ikke endrer innstillingene og favorittene i appen.
 - **Feil:** Feiler bygget av testversjonen, publiseres appen likevel, uten testversjon.
-- **Fjerne:** Slett grenen `test` og kjør «Publiser». Den ukentlige kildesjekken publiserer også på nytt, og tar med testversjonen så lenge grenen finnes.
+- **Fjerne:** Slett grenen `test` og kjør «Publiser». Den ukentlige kildesjekken publiserer også på nytt, og tar med testversjonen så lenge grenen finnes. Fra 09.10.2026 tas testversjonen ned av seg selv når en versjon publiseres (avgjørelse 095).
 
 **Konsekvens:** Eier kan prøve en endring på sin egen telefon før versjonen avtales. Testversjonen kan legges til på hjemskjermen som en egen app. Den er offentlig tilgjengelig for den som kjenner adressen, men lenkes ikke fra appen.

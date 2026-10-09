@@ -148,7 +148,7 @@ I appen viser topplinjen en diskret indikator (`ok`, `endret`, `feilet`, `utdate
 ## Publisering
 
 - `ci.yml`: lint, typesjekk, tester, bygg og ende-til-ende-tester på hver PR og hver push til `main`. På en PR velger den første jobben hva som kjøres, etter filene som er endret (`scripts/ci/endringer.ts`, avgjørelse 067). «Test og bygg» samler resultatet.
-- `deploy.yml`: en tag `vX.Y.Z` starter publisering. Arbeidsflyten kjører fra `main` (GitHub Pages tillater som standard bare publisering derfra), bygger koden fra taggen og sjekker at taggen og versjonen i `package.json` stemmer. Tilbakerulling: kjør «Publiser» manuelt med forrige tag.
+- `deploy.yml`: en tag `vX.Y.Z` starter publisering. Arbeidsflyten kjører fra `main` (GitHub Pages tillater som standard bare publisering derfra), bygger koden fra taggen og sjekker at taggen og versjonen i `package.json` stemmer. Tilbakerulling: kjør «Publiser» manuelt med forrige tag. En publisering med tag tar ned testversjonen og sletter grenen `test` (avgjørelse 095).
 - Versjonen bygges inn fra `package.json` og vises under «Om».
 
 ## Legge til noe nytt
