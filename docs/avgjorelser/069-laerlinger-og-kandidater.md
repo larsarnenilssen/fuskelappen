@@ -1,6 +1,6 @@
 # 069 – Lærlinger og kandidater: veiene og overgangene som innhold
 
-**Kontekst:** Eier ville ha veiene til fag- og svennebrev, praksisbrev og kompetansebevis i Opplæringstilbud. Veiene skulle kunne kombineres og byttes mellom, med kilde på hver overgang, og testes som veiviserne (fase 6, pakke 6, runde 3 og 4 i `docs/arbeidsordrer/fase-6-forslag.md` og fire designrunder i `fase-6-pakke-6-forslag.md`, 04. og 06.10.2026).
+**Kontekst:** Eier ville ha veiene til fag- og svennebrev, praksisbrev og kompetansebevis i Opplæringstilbud. Veiene skulle kunne kombineres og byttes mellom, med kilde på hver overgang, og testes som veiviserne (fase 6, pakke 6, runde 3 og 4 i `docs/arkiv/arbeidsordrer/fase-6-forslag.md` og fire designrunder i `fase-6-pakke-6-forslag.md`, 04. og 06.10.2026).
 
 **Valg:**
 - **Siden:**

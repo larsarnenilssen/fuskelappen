@@ -1,6 +1,7 @@
 # Lint, typesjekk, tester, bygg og ende-til-ende-tester på hver PR og hver push til main. På en PR ser den første jobben
 # hvilke filer som er endret, og hopper over det som ikke trengs (avgjørelse 067): bare dokumentasjon gir ingen tester,
-# bare versjonsnummeret gir bare den raske jobben. På main og ved manuell start kjøres alt.
+# bare versjonsnummeret eller avgjørelsene (avgjørelse 105) gir bare den raske jobben. På main og ved manuell start
+# kjøres alt.
 name: CI
 
 on:

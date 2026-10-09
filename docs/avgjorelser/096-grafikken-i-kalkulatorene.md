@@ -1,6 +1,6 @@
 # 096 – Grafikken i kalkulatorene og vurderingen
 
-**Kontekst:** Eier ba om en vurdering av farger, oppløsning, utseende og proporsjoner i grafikken i kalkulatorene og i Underveis- og sluttvurdering (09.10.2026). Stolpene var SVG-er som ble skalert med bredden, så de ble over dobbelt så høye på skrivebord og tekstene for små på mobil. Fargene i årsverket besto ikke sjekken for fargesvakt syn (dataviz-validatoren). Forslaget med bilder og svarene står i `docs/arbeidsordrer/grafikk-forslag.md`.
+**Kontekst:** Eier ba om en vurdering av farger, oppløsning, utseende og proporsjoner i grafikken i kalkulatorene og i Underveis- og sluttvurdering (09.10.2026). Stolpene var SVG-er som ble skalert med bredden, så de ble over dobbelt så høye på skrivebord og tekstene for små på mobil. Fargene i årsverket besto ikke sjekken for fargesvakt syn (dataviz-validatoren). Forslaget med bilder og svarene står i `docs/arkiv/arbeidsordrer/grafikk-forslag.md`.
 
 **Valg:**
 - **Én felles stolpe** (`Stolpe` i `src/modules/arbeidstid/komponenter/Grafikk.tsx`). Den er HTML med fast høyde, 2 px mellomrom mellom delene og tekst i tekstfarge. Stillingsmåleren, perioden, beløpet, uka og årsverket bruker den.

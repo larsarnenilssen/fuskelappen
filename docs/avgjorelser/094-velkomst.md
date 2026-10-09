@@ -1,6 +1,6 @@
 # 094 – Velkomsten
 
-**Kontekst:** Fase 10 skulle gi nye brukere en trinnvis omvisning i et vindu over appen, med valgene som betyr mest: fylke og skole, rolle og favoritter og dagens jukselapp, i tillegg til hjelp til å installere appen. Forslaget, skjermbildene og svarene står i `docs/arbeidsordrer/fase-10-forslag.md` (tre runder, eier 08. og 09.10.2026).
+**Kontekst:** Fase 10 skulle gi nye brukere en trinnvis omvisning i et vindu over appen, med valgene som betyr mest: fylke og skole, rolle og favoritter og dagens jukselapp, i tillegg til hjelp til å installere appen. Forslaget, skjermbildene og svarene står i `docs/arkiv/arbeidsordrer/fase-10-forslag.md` (tre runder, eier 08. og 09.10.2026).
 
 **Valg:**
 - **Trinnene:** ni trinn: velkommen (hva appen er og hvorfor den heter Jukselappen), søket, forsiden, sidene, «Hvor jobber du?» (fylke, skole og lokale regler), rolle og favoritter, dagens jukselapp, installering og takk. Tekstene er korte avsnitt, uten kulepunkter. Bare stegene for installering er nummerert (eier 09.10.2026). Appen kalles en digital jukselapp, ikke en lapp.

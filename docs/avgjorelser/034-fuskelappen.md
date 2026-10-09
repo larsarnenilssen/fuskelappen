@@ -16,3 +16,5 @@
 - Systemlinjen: i installert app går toppfeltet allerede opp bak klokke og batteri (`black-translucent` og `safe-area-inset-top`), så den er uendret.
 
 **Konsekvens:** Appen har et eget uttrykk som henger sammen med ikonet. Den installerte appen må legges til på hjemskjermen på nytt fra den nye adressen. Repoet må få nytt navn før endringen publiseres, ellers peker den publiserte appen på feil sti.
+
+**Endret:** Appen heter Jukselappen, med lagringsnøkkelen `jukselappen` og nytt ikon (avgjørelse 058), adressen er https://jukselappen.no/ (avgjørelse 065), og bunnmenyen er tatt bort (avgjørelse 056). Linjen er ført inn 09.10.2026 sammen med oversikten over avgjørelsene.

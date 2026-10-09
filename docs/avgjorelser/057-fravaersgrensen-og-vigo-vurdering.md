@@ -1,6 +1,6 @@
 # 057 – Fraværsgrensen, og VIGO som kontroll av fagene i Grep
 
-**Kontekst:** Fase 6, pakke 2 (godkjent av eier 04.10.2026, `docs/arbeidsordrer/fase-6-forslag.md`). Skoleledere trenger fraværsgrensen i et fag i timer og økter, og en rask sjekk av om et fravær er innenfor. Eier ville også at VIGO Kodeverksbase kontrollerer fagarkene. Svarene fra eier på forslaget til pakke 2 står under «Valg».
+**Kontekst:** Fase 6, pakke 2 (godkjent av eier 04.10.2026, `docs/arkiv/arbeidsordrer/fase-6-forslag.md`). Skoleledere trenger fraværsgrensen i et fag i timer og økter, og en rask sjekk av om et fravær er innenfor. Eier ville også at VIGO Kodeverksbase kontrollerer fagarkene. Svarene fra eier på forslaget til pakke 2 står under «Valg».
 
 **Valg:**
 - **Kalkulatoren** (`#/vurdering/fravaer?fag=<kode>`) følger poengberegningen (avgjørelse 047): faget (søk, bare fag med årstimetall) eller timer skrevet inn, og øktlengde (45, 60, 90 eller annet) til venstre. Til høyre står grensen i et resultatkort, med utregningen linje for linje og kortnavn på kilden. «Sjekk fraværet» er lukket til brukeren åpner det, og telles i økter av valgt lengde. Skjemadel har fått `standardLukket` for dette.

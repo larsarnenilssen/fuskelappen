@@ -1,4 +1,4 @@
-// Sjekker at startpakken (det index.html laster med en gang) er under grensen i OPPDRAG.md.
+// Sjekker at startpakken (det index.html laster med en gang) er under grensen i DRIFT.md («Grenser»).
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';

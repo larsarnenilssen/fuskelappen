@@ -1,6 +1,6 @@
 # 066 – Kalenderen: fristene fra alle modulene på én side
 
-**Kontekst:** Fristene sto på to tidslinjer: Kalender for inntak (oktober–september) og Kalender for eksamen (august–juli). Eier ville ha én samlet kalender for fristene og datoene i alle modulene, med skoleruta og kommende endringer i regelverket. Den er grunnlaget for årshjulet og eksporten til kalender i fase 8 (fase 6, pakke 5, godkjent av eier 04. og 05.10.2026, `docs/arbeidsordrer/fase-6-pakke-5-forslag.md`).
+**Kontekst:** Fristene sto på to tidslinjer: Kalender for inntak (oktober–september) og Kalender for eksamen (august–juli). Eier ville ha én samlet kalender for fristene og datoene i alle modulene, med skoleruta og kommende endringer i regelverket. Den er grunnlaget for årshjulet og eksporten til kalender i fase 8 (fase 6, pakke 5, godkjent av eier 04. og 05.10.2026, `docs/arkiv/arbeidsordrer/fase-6-pakke-5-forslag.md`).
 
 **Valg:**
 - **Ny modul Kalender** (`#/kalender`) under Oppslag. Den samler `frister()` fra alle manifestene. Beregningen er rene funksjoner i `src/modules/kalender/beregning/`.

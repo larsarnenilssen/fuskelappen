@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Varige arbeidsregler for alle agenter og utviklere i dette repoet. Aktivt oppdrag står i `OPPDRAG.md`. Arkitektur og innholdsmodell står i `docs/`.
+Varige arbeidsregler for alle agenter og utviklere i dette repoet. Prosjektet er i drift: faste jobber, endringer, versjoner og åpne punkter står i `DRIFT.md`. Oppskriftene for det som går igjen, er skills (se under). Arkitektur og innholdsmodell står i `docs/`. Oppdraget og arbeidsordrene fra byggingen (fase 0–10) ligger i `docs/arkiv/`.
 
 ## Prosjektet
 
@@ -21,6 +21,8 @@ Installerbar nettapp (PWA) for skoleledere og lærere i videregående: arbeidsti
 | `npm run test:e2e:berorte` | bare de berørte ende-til-ende-testene, i WebKit mobil (avgjørelse 055) |
 | `npm run kilder:sjekk` | kjører kildesjekken lokalt |
 | `npm run hent:grep` | henter Grep-data og lager endringsrapport |
+| `npm run kilder:dokumenter` | lager `docs/KILDER.md` fra kilderegisteret (testes) |
+| `npm run avgjorelser` | lager oversikten `docs/avgjorelser/README.md` (testes) |
 
 En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte`, og hele ende-til-ende-suiten kjøres i CI med bygget én gang og åtte jobber (avgjørelse 055). Kjør ikke hele suiten lokalt uten grunn.
 
@@ -36,19 +38,32 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - `content/` – innhold (YAML) og kilderegister (`kilder.yaml`)
 - `data/` – genererte data fra kilder; endres bare av skript
 - `tests/fasit/` – eiergodkjente eksempler
+- `lokale/regler.yaml` – lokale regler eier har godkjent
+- `.claude/skills/` – oppskrifter for driftsoppgavene
 
 ## Arbeidsmåte
 
-- Følg fasene i `OPPDRAG.md`. Stopp ved hvert kontrollpunkt med en kort oppsummering: hva er bygget, hva må eier kontrollere, hva er åpent.
-- Hver fase startes i en ny samtale med arbeidsordren i `docs/arbeidsordrer/fase-N.md` (eier 02.10.2026). Når en fase er levert, skrives arbeidsordren for neste fase.
-- Arbeid på en egen gren per fase eller oppgave, og slå sammen til `main` via PR med grønn CI.
+- Prosjektet er i drift (`DRIFT.md`). Hver oppgave startes i en ny samtale. Avslutt med en kort oppsummering: hva er gjort, hva må eier kontrollere, hva er åpent.
+- Arbeid på en egen gren per oppgave, og slå sammen til `main` via PR med grønn CI.
 - Claude fletter PR-ene på eiers vegne når CI er grønn og det ikke er konflikter (eier 01.10.2026). Er CI rød, rettes feilen først.
-- Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `test/` ved siden av appen, f.eks. `https://jukselappen.no/test/` (avgjørelse 045 og 065). Testversjonen tas ned, og grenen slettes, hver gang en versjon publiseres (eier 09.10.2026, avgjørelse 095).
-- Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026).
+- Eier kan teste en gren før versjonen avtales, under `test/` (avgjørelse 045 og 065). Testversjonen tas ned, og grenen slettes, hver gang en versjon publiseres (eier 09.10.2026, avgjørelse 095). Skill: `testversjon`.
+- Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026). Skill: `ny-versjon`.
 - Versjons-PR-en har 1–4 korte punkter om det som er nytt i `content/versjoner.yaml`, på bokmål og nynorsk. De vises i meldingen om ny versjon i appen (avgjørelse 088, testes).
 - Oppdater `CHANGELOG.md` for alt brukeren merker.
-- Tekniske valg av betydning dokumenteres i `docs/avgjorelser/NNN-tittel.md`: kontekst, valg og konsekvens, noen få linjer.
+- Tekniske valg av betydning dokumenteres i `docs/avgjorelser/NNN-tittel.md`: kontekst, valg og konsekvens, noen få linjer. Endres noe et eldre notat sier, får det en linje «**Endret dd.mm.åååå:** … (avgjørelse NNN)» nederst. Kjør `npm run avgjorelser` etterpå (testes).
 - Er noe faglig eller juridisk uklart: spør eier. Gjett aldri på hva en regel betyr.
+
+## Skills
+
+Oppskriftene ligger i `.claude/skills/<navn>/SKILL.md`. Bruk dem når oppgaven passer, og følg reglene i denne filen også der.
+
+| Skill | Når |
+|---|---|
+| `ny-versjon` | En versjon skal publiseres: versjons-PR, tagg, publisering og testversjonen tas ned |
+| `testversjon` | Eier vil prøve en gren på `test/` |
+| `ny-kilde` | En ny kilde tas inn, eller en kilde kan ikke hentes |
+| `lokal-regel` | En bruker har meldt inn en lokal regel på e-post |
+| `dependabot` | En PR fra Dependabot er åpen, har konflikt eller feiler |
 
 ## Kode
 
@@ -103,11 +118,12 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 
 ## Legge til noe nytt
 
+- **Ny kilde:** se skillen `ny-kilde`.
 - **Ny modul:** ny mappe i `src/modules/` med manifest, innhold i `content/<modul>/`, kilder i kilderegisteret, tester. Manifestet har `fakta()` til dagens jukselapp, med logikken i `fakta.ts` (avgjørelse 086). En modul uten fakta gir en tom liste.
 - **Favoritter og ikoner:** Alle sider har stjernen ved overskriften (`Sidetopp`, testes for rutene i `tests/e2e/hjelp.ts`). Elementer uten egen side (en skole, en paragraf) får den diskré stjernen (`FavorittKnapp liten`) når de har en adresse favoritten kan åpne. Alt med stjerneknapp har en oppføring i modulens `favorittbare` (testes). En favoritt kan ha eget `ikon`. Uten får den ikonet til den nærmeste inngangen over: boksene på forsiden og lenkene med ikon på modulens oversiktssider (`undersider`), ellers modulens ikon (`ikonForFavoritt`, avgjørelse 056 og 058). En oversiktsside med egne ikoner henter dem fra `undersider`, så de ikke kan bli ulike.
 - **Ny regelperiode:** ny fil i `rules/<regelverk>/` og nye fasittester. Det skal ikke trengs kodeendringer.
 - **Nytt begrep:** lenkes automatisk i brødtekst med tittelen. Er ikke tittelen ordet som står i teksten, får begrepet `lenkeord` (avgjørelse 050). Begrepet får temaet til filen det står i under `content/begreper/`. En ny fil føres opp i `src/modules/begreper/tema.ts` (testes).
 - **Velkomsten (avgjørelse 094):** Får appen en ny del eller et nytt valg som brukeren bør kjenne til, vurder om velkomsten skal nevne det. Tekstene står i `src/strings/velkomst.*.ts`, og rollene med forslag til favoritter i `src/app/velkomst/roller.ts` (testes).
 - **Lokale regler (avgjørelse 093):** Kan noe nytt variere lokalt (fylke, skole eller lokal avtale), blir det et valg under Lokale regler. En ny regelverdi får `lokal: true` eller `lokal: false`, og en lokal verdi får et navn i `src/strings/moduler/lokaleregler.*.ts`. En ny modul har `lokaleRegler` i manifestet (temaene den har en side for, eller en tom liste). Testes. Er du i tvil, spør eier (eier 08.10.2026).
-- **Godkjenne en lokal regel:** Innmeldingen fra e-posten legges inn i `lokale/regler.yaml` med `kontrollert: null` og kontrollspørsmål. `kontrollert` settes bare etter eiers beskjed, med dato. Vedlegg, navn og underskrifter legges aldri i repoet.
+- **Godkjenne en lokal regel:** Innmeldingen fra e-posten legges inn i `lokale/regler.yaml` med `kontrollert: null` og kontrollspørsmål. `kontrollert` settes bare etter eiers beskjed, med dato. Vedlegg, navn og underskrifter legges aldri i repoet. Skill: `lokal-regel`.
 - **Ny fylkes- eller skoleprofil:** innhold og verdier med riktig `gyldighet`, og tester for oppslag på det nivået.

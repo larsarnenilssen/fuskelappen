@@ -1,6 +1,6 @@
 # 047 – Poengberegning ved inntak
 
-**Kontekst:** Fase 5, pakke 3: poengberegning etter gjeldende inntaksregler, med utregningen synlig og kilde for hver regel. Reglene og fasittestene F1–F9 ble godkjent av eier 03.10.2026 (`docs/arbeidsordrer/fase-5-forslag.md`).
+**Kontekst:** Fase 5, pakke 3: poengberegning etter gjeldende inntaksregler, med utregningen synlig og kilde for hver regel. Reglene og fasittestene F1–F9 ble godkjent av eier 03.10.2026 (`docs/arkiv/arbeidsordrer/fase-5-forslag.md`).
 
 **Valg:**
 - **Beregningen** står i `src/modules/inntak/beregning/poeng.ts` som rene funksjoner: `beregnVg1` (§ 4-19) og `beregnVg2Vg3` (§ 4-25). Tallene (to desimaler, ganger ti, null for IV og IM) står i `rules/inntak/2024.yaml` med sitat. Gjennomsnittet avrundes etter vanlige regler før det ganges med ti (praksislisten «poeng-avrunding»).

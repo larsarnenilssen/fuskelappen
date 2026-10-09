@@ -1,5 +1,5 @@
 # Fristene på tidslinjen «Eksamen og klage gjennom året» (fase 6, pakke 3, avgjørelse 046 og 059). Egne ord.
-# Godkjent i forslaget av eier 04.10.2026 (docs/arbeidsordrer/fase-6-forslag.md, «Frister og datoer»).
+# Godkjent i forslaget av eier 04.10.2026 (docs/arkiv/arbeidsordrer/fase-6-forslag.md, «Frister og datoer»).
 # grupper: elever, privatister, laerlinger. Frister uten grupper gjelder alle.
 # Frister med `eksamensdato` får datoen fra eksamensdatoene (data/eksamen/datoer.json, npm run hent:eksamen) når den
 # finnes for skoleåret. Ellers vises måneden og `naar`. Datoer med `fylke: true` vises bare når fylket er valgt.
