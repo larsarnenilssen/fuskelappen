@@ -10,3 +10,5 @@
 - **Eier godkjente 08.10.2026 alle kildene som var i bruk.** De 11 gamle Vestland-kildene (`vlfk-*`) som ikke er i bruk, har `godkjent: null`.
 
 **Konsekvens:** Brukerne ser nøytral informasjon om kildene. Eier ser i kontrollsaken både nye kilder som venter på godkjenning, og endringer i godkjente kilder. Første kildesjekk etter endringen lagrer grunnlaget for kildene uten godkjent fingeravtrykk, uten å melde dem som endret.
+
+**Endret 09.10.2026:** De elleve Vestland-kildene (`vlfk-*`) er tatt ut av kilderegisteret, og punktet for vestlandfylke.no i kontrollrundene er fjernet. Vestland behandles som de andre fylkene, med lenkene i `content/fylker/lenker.yaml` (eier 09.10.2026).

@@ -77,10 +77,10 @@ describe('godkjenning fra en kontrollsak', () => {
   it('godkjenner en kilde for bruk i appen: «godkjent: null» blir datoen (avgjørelse 089)', () => {
     expect(avkryssede('- [x] Udir (Udir). [Åpne kilden](https://udir.no) <!-- godkjenn-bruk:udir-ny -->')).toEqual([{ type: 'bruk', id: 'udir-ny' }]);
     const fil = les('content/kilder.yaml');
-    const ubrukt = 'vlfk-sider';
-    const ny = settGodkjentBruk(fil, ubrukt, '2026-10-09') ?? '';
+    const kilde = 'straffeloven';
+    const ny = settGodkjentBruk(fil, kilde, '2026-10-10') ?? '';
     const data = parse(ny) as { kilder: { id: string; godkjent: string | null }[] };
-    expect(data.kilder.find((k) => k.id === ubrukt)?.godkjent).toBe('2026-10-09');
+    expect(data.kilder.find((k) => k.id === kilde)?.godkjent).toBe('2026-10-10');
     expect(ny.split('\n').length).toBe(fil.split('\n').length);
     expect(settGodkjentBruk(fil, 'finnes-ikke', '2026-10-09')).toBeNull();
   });
