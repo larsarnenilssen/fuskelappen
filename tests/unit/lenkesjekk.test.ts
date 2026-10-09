@@ -33,6 +33,7 @@ describe('alle lenkene kommer med', () => {
   });
 
   it('finner adresser i tekst uten tegnsettingen etter', () => {
+    expect(finnUrler('Lenken må begynne med https://.')).toEqual([]);
     expect(finnUrler('Se https://www.udir.no/lk20/. Og [lenke](https://lovdata.no/lov/2023-06-09-30/§11-1), samt `${x}`.')).toEqual(['https://www.udir.no/lk20/', 'https://lovdata.no/lov/2023-06-09-30/§11-1']);
   });
 });

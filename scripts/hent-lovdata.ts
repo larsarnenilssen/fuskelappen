@@ -52,6 +52,7 @@ import {
   lesDepartementer,
   lesLovtidendAvd1,
   lesNotaterFraXml,
+  notaterIUtvalg,
   type Lovverkdokument,
   navnestamme,
   notaterIDokument,
@@ -414,7 +415,10 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1] && pro
         const fil = finnFil(mappe, navn);
         if (!fil) throw new Error(`Fant ikke ${navn} i datasettet. Er adressen i kilderegisteret riktig?`);
         html = readFileSync(fil, 'utf8');
-        fraXml.set(d.id, { notater: lesNotaterFraXml(html), departementer: lesDepartementer(html) });
+        fraXml.set(d.id, {
+          notater: notaterIUtvalg(lesNotaterFraXml(html), 'paragrafer' in d ? d.paragrafer : undefined),
+          departementer: lesDepartementer(html),
+        });
       }
       const ny = lovdokumentSkjema.parse(
         (lokal ? lesLovdataside : lesLovdokument)(html, {

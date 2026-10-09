@@ -96,7 +96,8 @@ function sjekkGrep(): Sjekkresultat {
   const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Record<string, unknown>;
   const fingeravtrykk = lagFingeravtrykk(JSON.stringify({ ...indeks, hentet: '' }));
   rapport.push('### Grep', endringer ? grepsammendrag(endringer) : 'Første henting.', ...(endringer ? grepdetaljer(endringer).map((l) => `- ${l}`) : []), '');
-  if (tester === 'feilet') {
+  // Feiler testene uten at Grep er endret, er det andre data (f.eks. lovteksten) som feiler, og det sier de selv.
+  if (tester === 'feilet' && endringer && antallEndringer(endringer) > 0) {
     return { status: 'endret', fingeravtrykk, melding: `Grep er endret slik at testene feiler, og dataene er ikke tatt inn: ${endringer ? grepsammendrag(endringer) : ''}`.trim() };
   }
   const antall = endringer ? antallEndringer(endringer) : 0;
@@ -311,6 +312,8 @@ function sjekkLovtekst(kilde: Kilde): Sjekkresultat {
   // Lovteksten testes med de andre dataene før den lagres (avgjørelse 098). Feiler testene, er den nye teksten ikke tatt inn.
   const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
   if (tester === 'feilet' && endringer.length > 0) return { status: 'endret', fingeravtrykk, melding: `Testene feilet med den nye lov- og forskriftsteksten, og endringene er ikke tatt inn (${endringer.length} endringer).` };
+  // Et nytt dokument (første henting) som får testene til å feile, er heller ikke tatt inn.
+  if (tester === 'feilet' && mine.some((d) => d.forste)) return { status: 'endret', fingeravtrykk, melding: 'Testene feilet etter første henting av teksten, og den er ikke tatt inn. Appen lenker til Lovdata til den er rettet.' };
   if (kilde.id === 'lovdata-lokale') {
     const r = sjekkSkoleruteOgAvd1(lest.kommende?.feil ?? null, (lest.kommende?.linjer ?? []).filter((l) => !l.dokument).map((l) => l.tekst));
     if (r) return { status: 'endret', fingeravtrykk, melding: r };

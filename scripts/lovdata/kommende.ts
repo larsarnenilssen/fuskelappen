@@ -146,6 +146,19 @@ export function lesNotaterFraXml(html: string): { nr: string; endringer: Segment
   });
 }
 
+/**
+ * Notatene fra datasettet for paragrafene i utvalget. Har dokumentet et utvalg av enkeltparagrafer (f.eks. straffeloven
+ * § 196), gjelder bare de. Ellers leses hele dokumentet, også utenfor utvalget av kapitler.
+ */
+export function notaterIUtvalg(
+  notater: { nr: string; endringer: Segment[][] }[],
+  paragrafer: readonly string[] | undefined,
+): { nr: string; endringer: Segment[][] }[] {
+  if (!paragrafer) return notater;
+  const valgte = new Set(paragrafer);
+  return notater.filter((p) => valgte.has(p.nr));
+}
+
 /** Departementet i hodet på dokumentet fra datasettet (<dd class="ministry">), ett eller flere. */
 export function lesDepartementer(html: string): string[] {
   const dd = parse(html).querySelector('header.documentHeader dd.ministry');

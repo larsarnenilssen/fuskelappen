@@ -13,9 +13,11 @@ export interface Lenke {
 
 const URL_MONSTER = /https?:\/\/[^\s"'<>`\])}]+/g;
 
-/** Lenkene i en tekst, uten tegn som avslutter en setning. */
+/** Lenkene i en tekst, uten tegn som avslutter en setning. «https://» alene (f.eks. i en hjelpetekst) er ingen lenke. */
 export function finnUrler(tekst: string): string[] {
-  return [...tekst.matchAll(URL_MONSTER)].map((m) => m[0].replace(/[.,;:!?]+$/, '')).filter((u) => !u.includes('${'));
+  return [...tekst.matchAll(URL_MONSTER)]
+    .map((m) => m[0].replace(/[.,;:!?]+$/, ''))
+    .filter((u) => !u.includes('${') && URL.canParse(u));
 }
 
 /** Teksten i en YAML-fil uten linjene som er kommentarer. Adressene der er eksempler, ikke lenker i appen. */
