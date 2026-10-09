@@ -73,7 +73,7 @@ test.describe('vurdering', () => {
 
   test('fagarket lenker til kalkulatoren med faget valgt, og kalkulatoren til steget om fravær', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
-    await page.getByRole('button', { name: /^Vurderingsordning$/ }).click();
+    // Vurderingsordningen står åpen fra start (avgjørelse 100).
     await expect(page.locator('.fag-ifaget')).toContainText('Sentralt gitt');
     await page.getByRole('link', { name: 'Fraværskalkulatoren for faget' }).click();
     await expect(page).toHaveURL(/#\/vurdering\/fravaer\?fag=ENG1007$/);

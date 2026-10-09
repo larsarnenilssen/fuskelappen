@@ -69,7 +69,6 @@ test.describe('eksamen og klage', () => {
 
   test('fagarket lenker til eksamen', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
-    await page.getByText('Vurderingsordning', { exact: true }).first().click();
     await page.getByRole('link', { name: 'Eksamen og klage', exact: true }).click();
     await expect(page).toHaveURL(/#\/eksamen\/regler$/);
   });

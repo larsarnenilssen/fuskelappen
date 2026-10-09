@@ -12,6 +12,7 @@ import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, UNDERSIDER, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
 import { Kalkulatorinngang } from '../../../components/Kalkulatorinngang.tsx';
+import { Oversiktsdel } from '../../../components/Oversiktsdel.tsx';
 
 export default function Oversikt() {
   const { t } = useTekst();
@@ -33,32 +34,21 @@ export default function Oversikt() {
       <ToKolonner
         hoved={
           <>
-            <section class="lop-del" aria-labelledby="vu-del-fag">
-              <h2 class="liten-overskrift" id="vu-del-fag">
-                {t('vurdering.delFag')}
-              </h2>
+            {/* Delene med én inngang står uten overskrift, som én liste (avgjørelse 100). */}
+            <Oversiktsdel tittel={t('vurdering.delFag')} antall={1}>
               <Inngang {...UNDERSIDER.underveisSlutt} tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />
-            </section>
-            <section class="lop-del" aria-labelledby="vu-del-orden">
-              <h2 class="liten-overskrift" id="vu-del-orden">
-                {t('vurdering.delOrden')}
-              </h2>
+            </Oversiktsdel>
+            <Oversiktsdel tittel={t('vurdering.delOrden')} antall={1}>
               <Inngang {...UNDERSIDER.orden} tittel={t('vurdering.orden.kort')} tekst={t('vurdering.orden.beskrivelse')} />
-            </section>
+            </Oversiktsdel>
           </>
         }
         side={
           <>
-            <section class="lop-del" aria-labelledby="vu-del-veiviser">
-              <h2 class="liten-overskrift" id="vu-del-veiviser">
-                {t(veiviseroverskrift(veivisere.length))}
-              </h2>
+            <Oversiktsdel tittel={t(veiviseroverskrift(veivisere.length))} antall={veivisere.length}>
               {innhold === null ? <p class="dempet">{t('app.lasterInn')}</p> : <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />}
-            </section>
-            <section class="lop-del" aria-labelledby="vu-del-kalkulator">
-              <h2 class="liten-overskrift" id="vu-del-kalkulator">
-                {t('felles.kalkulator')}
-              </h2>
+            </Oversiktsdel>
+            <Oversiktsdel tittel={t('felles.kalkulator')} antall={1}>
               <Kalkulatorinngang
                 href={`#${UNDERSIDER.fravaer.rute}`}
                 ikon={UNDERSIDER.fravaer.ikon}
@@ -66,7 +56,7 @@ export default function Oversikt() {
                 inn={[t('vurdering.fravaer.faget'), t('vurdering.fravaer.okter')]}
                 ut={t('vurdering.fravaer.resultat.tittel')}
               />
-            </section>
+            </Oversiktsdel>
           </>
         }
       />

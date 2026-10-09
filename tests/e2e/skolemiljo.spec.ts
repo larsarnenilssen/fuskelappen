@@ -7,8 +7,12 @@ import { settLagret } from './hjelp.ts';
 test.describe('Aktivitetsplikt og skoleregler', () => {
   test('oversikten har retten og pliktene øverst, så skolereglene, og veiviseren til høyre (eier 08.10.2026)', async ({ page }) => {
     await page.goto('./#/skolemiljo');
-    const overskrifter = page.locator('main h2');
-    await expect(overskrifter).toHaveText(['Retten og pliktene', 'Oppslag', 'Veiviser']);
+    // Hver del har én inngang og står derfor uten overskrift, i samme rekkefølge (avgjørelse 100).
+    await expect(page.locator('main h2')).toHaveCount(0);
+    const innganger = page.locator('main .lop-del a[href]');
+    await expect(innganger.nth(0)).toContainText('Et trygt og godt skolemiljø');
+    await expect(innganger.nth(1)).toContainText('Skoleregler');
+    await expect(page.locator('main .veiviser-inngang').first()).toBeVisible();
     await page.locator('main').getByRole('link', { name: /^Et trygt og godt skolemiljø/ }).click();
     await expect(page.locator('main h1')).toHaveText('Et trygt og godt skolemiljø');
   });
