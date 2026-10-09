@@ -129,10 +129,65 @@ export const FLYTTEDE_FAVORITTER: Readonly<Record<string, string>> = {
 
 const flyttFavoritter = (liste: readonly string[]): string[] => [...new Set(liste.map((id) => FLYTTEDE_FAVORITTER[id] ?? id))];
 
-export function migrer(raa: unknown): Lagret | null {
-  if (typeof raa !== 'object' || raa === null) return null;
-  let data = raa as Record<string, unknown>;
+/** Om lesingen måtte rette noe: et felt som var ugyldig eller manglet, og fikk reserveverdien. */
+interface Lesing {
+  avvik: boolean;
+}
+
+const erObjekt = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
+
+/**
+ * Leser ett felt mot skjemaet for feltet (avgjørelse 097). I en liste hoppes ugyldige elementer over, og et objekt leses
+ * felt for felt. Et ugyldig felt får reserveverdien, eller tas bort hvis det er valgfritt.
+ */
+function lesFelt(skjema: z.ZodMiniType, verdi: unknown, reserve: unknown, lesing: Lesing): { verdi: unknown } | null {
+  if (verdi !== undefined) {
+    if (skjema instanceof z.ZodMiniObject && erObjekt(verdi) && erObjekt(reserve)) return { verdi: lesObjekt(skjema, verdi, reserve, lesing) };
+    const lest = skjema.safeParse(verdi);
+    if (lest.success) return { verdi: lest.data };
+    if (skjema instanceof z.ZodMiniArray && Array.isArray(verdi)) {
+      const element = skjema.def.element as z.ZodMiniType;
+      lesing.avvik = true;
+      return {
+        verdi: verdi.flatMap((e) => {
+          const l = element.safeParse(e);
+          return l.success ? [l.data] : [];
+        }),
+      };
+    }
+    lesing.avvik = true;
+  }
+  // Mangler feltet eller er det ugyldig: et valgfritt felt utelates, et påkrevd får reserveverdien.
+  if (skjema.safeParse(undefined).success) return null;
+  if (verdi === undefined) lesing.avvik = true;
+  return { verdi: reserve };
+}
+
+/**
+ * Leser et objekt felt for felt (avgjørelse 097). Et ugyldig felt gjør ikke resten ugyldig, og felt skjemaet ikke kjenner
+ * (fra en nyere versjon, eller som en eldre versjon brukte), beholdes uendret, så de blir med ved neste lagring.
+ */
+function lesObjekt<S extends z.ZodMiniObject>(skjema: S, raa: Record<string, unknown>, reserve: Record<string, unknown>, lesing: Lesing): z.infer<S> {
+  const shape = skjema.shape as Record<string, z.ZodMiniType>;
+  const ut: Record<string, unknown> = {};
+  for (const [nokkel, verdi] of Object.entries(raa)) if (!(nokkel in shape)) ut[nokkel] = verdi;
+  for (const [nokkel, feltskjema] of Object.entries(shape)) {
+    const lest = lesFelt(feltskjema, raa[nokkel], reserve[nokkel], lesing);
+    if (lest) ut[nokkel] = lest.verdi;
+  }
+  // Hvert kjent felt er lest mot sitt eget skjema, og ukjente felt er tillatt i lagrede data.
+  return ut as z.infer<S>;
+}
+
+/**
+ * Leser lagrede data: migrerer fra eldre skjemaversjoner og leser så felt for felt. Null bare når dataene ikke kan leses
+ * i det hele tatt: ikke et objekt, en ukjent eldre versjon eller en nyere versjon (avgjørelse 097).
+ */
+function lesData(raa: unknown, malform: 'nb' | 'nn' = 'nb'): { data: Lagret; avvik: boolean } | null {
+  if (!erObjekt(raa)) return null;
+  let data = raa;
   let versjon = typeof data.skjemaversjon === 'number' ? data.skjemaversjon : 0;
+  // En nyere versjon kan ha endret feltene på en måte denne versjonen ikke kjenner. Råteksten tas da vare på (lesLagret).
   if (versjon > SKJEMAVERSJON) return null;
   while (versjon < SKJEMAVERSJON) {
     const steg = migreringer[versjon];
@@ -140,8 +195,13 @@ export function migrer(raa: unknown): Lagret | null {
     data = steg(data);
     versjon += 1;
   }
-  const resultat = lagretSkjema.safeParse(data);
-  return resultat.success ? { ...resultat.data, favoritter: flyttFavoritter(resultat.data.favoritter) } : null;
+  const lesing: Lesing = { avvik: false };
+  const lest = lesObjekt(lagretSkjema, data, standard(malform), lesing);
+  return { data: { ...lest, favoritter: flyttFavoritter(lest.favoritter) }, avvik: lesing.avvik };
+}
+
+export function migrer(raa: unknown, malform: 'nb' | 'nn' = 'nb'): Lagret | null {
+  return lesData(raa, malform)?.data ?? null;
 }
 
 export interface Lager {
@@ -150,7 +210,22 @@ export interface Lager {
   removeItem(nokkel: string): void;
 }
 
-export type Lesestatus = 'ok' | 'ny' | 'ugyldig' | 'utilgjengelig';
+/** `reparert`: dataene ble lest, men ett eller flere felt var ugyldige og fikk reserveverdien (avgjørelse 097). */
+export type Lesestatus = 'ok' | 'ny' | 'reparert' | 'ugyldig' | 'utilgjengelig';
+
+/**
+ * Nøkkelen der råteksten tas vare på før data som ikke kunne leses helt, blir overskrevet ved neste lagring (avgjørelse
+ * 097). Den siste kopien gjelder. Slettes med resten ved «Slett alt».
+ */
+export const SIKKERHETSKOPINOKKEL = `${LAGRINGSNOKKEL}-sikkerhetskopi`;
+
+function taSikkerhetskopi(lager: Lager, tekst: string): void {
+  try {
+    lager.setItem(SIKKERHETSKOPINOKKEL, tekst);
+  } catch {
+    // Fullt lager: da kan heller ikke de nye dataene lagres, så ingenting blir overskrevet.
+  }
+}
 
 export function lesLagret(lager: Lager | null, malform: 'nb' | 'nn' = 'nb'): { data: Lagret; status: Lesestatus } {
   if (!lager) return { data: standard(malform), status: 'utilgjengelig' };
@@ -162,12 +237,15 @@ export function lesLagret(lager: Lager | null, malform: 'nb' | 'nn' = 'nb'): { d
     return { data: standard(malform), status: 'utilgjengelig' };
   }
   if (tekst === null) return { data: standard(malform), status: 'ny' };
+  let lest: ReturnType<typeof lesData> = null;
   try {
-    const data = migrer(JSON.parse(tekst));
-    return data ? { data, status: 'ok' } : { data: standard(malform), status: 'ugyldig' };
+    lest = lesData(JSON.parse(tekst), malform);
   } catch {
-    return { data: standard(malform), status: 'ugyldig' };
+    // Ikke gyldig JSON: behandles som ugyldige data under.
   }
+  if (lest && !lest.avvik) return { data: lest.data, status: 'ok' };
+  taSikkerhetskopi(lager, tekst);
+  return lest ? { data: lest.data, status: 'reparert' } : { data: standard(malform), status: 'ugyldig' };
 }
 
 /** Returnerer false hvis lagring ikke er mulig (privat modus, fullt lager). */
@@ -220,6 +298,7 @@ export function slettLagret(lager: Lager | null): void {
       lager?.removeItem(nokkel);
       for (const valg of Object.keys(VALGNOKLER)) lager?.removeItem(`${nokkel}-${valg}`);
     }
+    lager?.removeItem(SIKKERHETSKOPINOKKEL);
   } catch {
     // Ingenting å gjøre; data i minnet nullstilles av kalleren.
   }

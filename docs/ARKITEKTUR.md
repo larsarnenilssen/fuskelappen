@@ -100,7 +100,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 
 ## Lagring og personvern
 
-`src/core/lagring/` lagrer ett dokument i `localStorage` med `skjemaversjon`. Eldre versjoner migreres, ugyldige data erstattes med standardverdier, og hvis lagring ikke er mulig (privat nettlesing), holdes data i minnet med en merknad. Innstillinger og favoritter kan eksporteres og importeres som JSON. Ingen informasjonskapsler, ingen analyse, ingen kall til eksterne tjenester.
+`src/core/lagring/` lagrer ett dokument i `localStorage` med `skjemaversjon`. Eldre versjoner migreres. Dokumentet leses felt for felt: et ugyldig felt får standardverdien, ukjente felt beholdes, og råteksten tas vare på under en egen nøkkel før noe ugyldig overskrives (avgjørelse 097). Hvis lagring ikke er mulig (privat nettlesing), holdes data i minnet med en merknad. Innstillinger og favoritter kan eksporteres og importeres som JSON. Ingen informasjonskapsler, ingen analyse, ingen kall til eksterne tjenester.
 
 ## PWA
 
