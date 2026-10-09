@@ -225,6 +225,30 @@
       "grunnlag": "sha256:b154be37e230bd6ff9f7d95301242c7cecc89a715ff180f43392e72b7cc3e95e",
       "feil_pa_rad": 0
     },
+    "udir-merknader-opplaeringslova": {
+      "grunnlag": "sha256:66636fddba3ba8d5156c80da9dbd03dddcf100f17e15cdc23bfdb87c7a56e1b0",
+      "feil_pa_rad": 0
+    },
+    "udir-merknader-ofo-kap12": {
+      "grunnlag": "sha256:ce04ced5385985c44b01c47040d4b9bd24772d259f7cf502b867307b3a2b1057",
+      "feil_pa_rad": 0
+    },
+    "udir-oppfolging-fravaer": {
+      "grunnlag": "sha256:f536a37abcecfc371d1bb1a1bb73dc776b617c3771ddb696e95639e5922e3ac8",
+      "feil_pa_rad": 0
+    },
+    "udir-meldeplikt-barnevernet": {
+      "grunnlag": "sha256:c267c51af4e33c2c791de538a027d4bee944eb799c63e7389e55dc89385dc3ca",
+      "feil_pa_rad": 0
+    },
+    "udir-gratisprinsippet": {
+      "grunnlag": "sha256:8a5177ef7783ba34d91c5118c40d34cd5a813ef30b821c3f7fb7bf721e27b4e8",
+      "feil_pa_rad": 0
+    },
+    "straffeloven": {
+      "grunnlag": null,
+      "feil_pa_rad": 0
+    },
     "udir-klage-standpunkt": {
       "grunnlag": "sha256:9e12afa10e676c14eaa12874d48e25cbef51b4752809f3fdbaf474bd7559c41f",
       "feil_pa_rad": 0
@@ -265,49 +289,53 @@
       "grunnlag": null,
       "feil_pa_rad": 0
     },
-    "regjeringen-kd-nyheter": {
+    "ssb-statistikkbanken": {
       "grunnlag": null,
       "feil_pa_rad": 0
+    },
+    "regjeringen-kd-nyheter": {
+      "grunnlag": null,
+      "feil_pa_rad": 1
     },
     "udir-siste-nytt": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "skolelederforbundet-nyheter": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "utdanningsforbundet-nyheter": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "statsforvalteren-nyheter": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "utdanningsnytt-nyheter": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "lovdata-lovtidend": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "forskning-no-skole": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "nifu-nyheter": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "hkdir-aktuelt": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     },
     "fylkeskommunene-nyheter": {
       "grunnlag": null,
-      "feil_pa_rad": 0
+      "feil_pa_rad": 1
     }
   }
 }
