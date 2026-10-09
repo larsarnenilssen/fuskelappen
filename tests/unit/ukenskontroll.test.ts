@@ -1,10 +1,10 @@
 // Ukens kontroll i kontrollsaken (avgjørelse 106): fem punkter som ikke er kontrollert, valgt etter risiko og rotert
-// med ukenummeret, i en del som ikke gir e-post, med samme avkrysning som kontrollrunden.
+// med ukenummeret, med samme avkrysning som kontrollrunden. Et nytt utvalg gir e-post (eier 09.10.2026).
 import { describe, expect, it } from 'vitest';
 import { avkryssede } from '../../scripts/kilder/godkjenning.ts';
 import { lagUkesrapport, planleggKontrollsak, type Ukesgrunnlag } from '../../scripts/kilder/ukesrapport.ts';
 import { ikkeKontrollert, lagUkensKontroll, risikoniva, ukenummer, velgUkensKontroll } from '../../scripts/kilder/ukenskontroll.ts';
-import { lesMerke, planleggVarsel, punktlinjer } from '../../scripts/varsel/plan.ts';
+import { planleggVarsel, punktlinjer } from '../../scripts/varsel/plan.ts';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Kildekontroll, Kontrollinnhold, Kontrollverdi } from '../../src/core/kontroll/indeks.ts';
 
@@ -135,30 +135,33 @@ describe('ukens kontroll i saken', () => {
     ...over,
   });
 
-  it('holder saken åpen uten å gi e-post hver uke, selv om utvalget skifter', () => {
+  it('gir e-post når utvalget skifter, og holder saken åpen (eier 09.10.2026)', () => {
     const r = lagUkesrapport(grunnlag({ ukens }));
-    expect(r).toMatchObject({ aapen: true, punkter: 0, tittel: 'Kontroll: ukens kontroll' });
-    expect(punktlinjer(r.tekst)).toEqual([]);
+    expect(r).toMatchObject({ aapen: true, tittel: 'Kontroll: ukens kontroll' });
+    expect(punktlinjer(r.tekst).length).toBeGreaterThan(0);
     const [opprett] = planleggKontrollsak(r, null, [], '2026-10-12');
     expect(opprett?.type).toBe('opprett');
-    const sak = { nummer: 7, tekst: opprett && 'tekst' in opprett ? opprett.tekst : '' };
-    // Neste uke er utvalget et annet, men det gir ingen kommentar. Heller ingen påminnelse etter to eller fire uker.
+    const sak = { nummer: 7, tekst: lagret(opprett) };
+    // Samme utvalg samme uke gir ingen ny e-post.
+    expect(planleggKontrollsak(r, sak, [], '2026-10-12')[0]).toMatchObject({ type: 'oppdater', kommentar: null });
+    // Neste uke er utvalget et annet, og det gir en kommentar (e-post) med ukens kontroll.
     const neste = lagUkesrapport(grunnlag({ ukens: lagUkensKontroll(indeks, register, '2026-10-19', 'eier/repo', { antall: 3 }) }));
-    expect(planleggKontrollsak(neste, sak, [], '2026-10-19')[0]).toMatchObject({ type: 'oppdater', kommentar: null });
-    expect(planleggKontrollsak(neste, sak, [], '2026-11-09')[0]).toMatchObject({ type: 'oppdater', kommentar: null });
-    // Saken lukkes ikke så lenge noe ikke er kontrollert.
-    expect(planleggKontrollsak(neste, sak, [], '2026-11-09')[0]?.type).not.toBe('lukk');
+    const [h] = planleggKontrollsak(neste, sak, [], '2026-10-19');
+    expect(h?.type).toBe('oppdater');
+    const kommentar = h && 'kommentar' in h ? (h.kommentar ?? '') : '';
+    expect(kommentar).toContain('Nytt siden sist');
+    expect(kommentar).toContain('## Ukens kontroll');
   });
 
-  it('gir e-post som før når noe annet nytt kommer til, med ukens kontroll i hele listen', () => {
+  it('gir e-post når noe annet nytt kommer til, med ukens kontroll i hele listen', () => {
     const sak = { nummer: 7, tekst: lagret(planleggKontrollsak(lagUkesrapport(grunnlag({ ukens })), null, [], '2026-10-12')[0]) };
     const feilet = { status: 'feilet' as const, sjekket: '2026-10-19T04:17:00Z', fingeravtrykk: null, endret_siden: null, melding: 'Feil' };
     const r = lagUkesrapport(grunnlag({ ukens, kildestatus: { skjema: 1, kjort: '2026-10-19T04:17:00Z', kilder: { lov: feilet } } }));
     const [h] = planleggKontrollsak(r, sak, [], '2026-10-19');
     const kommentar = h && 'kommentar' in h ? (h.kommentar ?? '') : '';
     expect(kommentar).toContain('Nytt siden sist');
+    expect(kommentar).toContain('Feil');
     expect(kommentar).toContain('## Ukens kontroll');
-    expect([...(lesMerke(lagret(h))?.punkter ?? [])]).toHaveLength(1);
   });
 
   it('påminnelsen annenhver uke gjelder fortsatt det som står utenfor ukens kontroll', () => {

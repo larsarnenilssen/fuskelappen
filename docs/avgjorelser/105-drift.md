@@ -9,3 +9,5 @@
 - **Oversikten** `docs/avgjorelser/README.md` lages av `npm run avgjorelser` (`scripts/lag-avgjorelser.ts`) med status `gjeldende`, `endret` (linje «**Endret …**») eller `erstattet` («**Erstattet av avgjørelse NNN**»). En enhetstest feiler når den ikke er oppdatert. Derfor gir endringer under `docs/avgjorelser/` den raske jobben i CI, ikke `ingen` (avgjørelse 067).
 
 **Konsekvens:** En ny økt starter med AGENTS.md og DRIFT.md, og laster en skill når oppgaven passer. En ny funksjon som eier vil se før den bygges, får et forslag i `docs/forslag/`, som `docs/forslag/ssb.md`. To grener som legger til hver sin avgjørelse samtidig, må kjøre `npm run avgjorelser` på nytt etter at den første er flettet. Statusen er bare så god som «Endret»-linjene i notatene.
+
+**Endret 09.10.2026:** Eier har godtatt versjonstakten i `DRIFT.md`.

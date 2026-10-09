@@ -24,3 +24,5 @@
 - **Ingen kvartalsrunde for lenkene:** Lenker som ikke er bekreftet på åtte uker, eller aldri, kommer som avkrysningspunkter med lenke i kontrollsaken. Avkrysset og `/godkjent` gir dagens dato i `bekreftet` (`<!-- fylkeslenke:fylke:tema -->`). Lenker som virker, bekrefter seg selv, så eier ser bare det som ikke virker.
 
 **Konsekvens:** Kontrollen går i et fast, lite tempo, med det viktigste først. Om lag 110 uker tar alt, hvis eier krysser av fem punkter i uken. Eier får ingen ekstra e-post for ukens kontroll, men må åpne kontrollsaken selv. `bekreftet` i lenker.yaml betyr nå «sist sett med riktig tittel, av skriptet eller eier». Den fornyes når den er eldre enn fire uker, så filen endres høyst om lag en gang i måneden per lenke. `kontrollert`, `godkjent` og `bekreftet` i praksislisten settes fortsatt bare av eier.
+
+**Endret 09.10.2026:** Ukens kontroll gir e-post når utvalget skifter, som andre nye punkter i kontrollsaken (eier 09.10.2026). Merkene `uten-varsel` er tatt bort.

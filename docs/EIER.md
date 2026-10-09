@@ -63,7 +63,7 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 Etter kildesjekken hver mandag samles alt du bør se på, i **én sak** under **Issues** med merket `kontroll`. E-postene følger reglene i punkt 6b.
 
-**Ukens kontroll:** Nederst i saken står fem punkter som ikke er kontrollert, med det viktigste først: tallene i kalkulatorene, så juridisk tunge tekster, til slutt begreper og fylker. Les dem mot kildene og spørsmålene, kryss av det som stemmer, og skriv `/godkjent`. Det du ikke krysser av, kommer igjen en senere uke. Ukens kontroll gir ingen e-post, så åpne saken selv, for eksempel på mandager. Saken står åpen så lenge noe ikke er kontrollert. Om lag et kvarter i uken holder (avgjørelse 106).
+**Ukens kontroll:** Nederst i saken står fem punkter som ikke er kontrollert, med det viktigste først: tallene i kalkulatorene, så juridisk tunge tekster, til slutt begreper og fylker. Les dem mot kildene og spørsmålene, kryss av det som stemmer, og skriv `/godkjent`. Det du ikke krysser av, kommer igjen en senere uke. Du får e-post når utvalget er nytt, vanligvis hver mandag (eier 09.10.2026). Saken står åpen så lenge noe ikke er kontrollert. Om lag et kvarter i uken holder (avgjørelse 106).
 
 **Fylkeslenkene:** Lenker til fylkene som ikke har svart med riktig side på åtte uker, står i saken. Åpne dem, kryss av dem som viser riktig side, og skriv `/godkjent`. Viser en lenke feil side, gi lenken til Claude.
 
@@ -90,7 +90,7 @@ Endringsforslag fra kildesjekken kommer som PR (punkt 1), og GitHub sender e-pos
 
 **E-post fra GitHub Actions:** GitHub sender også sin egen korte e-post når en arbeidsflyt feiler («Run failed»). Den sier lite. Saken med merket `feil` forklarer det samme. Vil du slippe den doble e-posten, kan du slå av e-post for Actions under GitHub → Settings → Notifications → Actions.
 
-**Hva du ikke får e-post om:** ukens kontroll (den står i kontrollsaken, men gir ingen e-post eller påminnelse alene), at ting virker (nyheter, publiseringer, oppetiden, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
+**Hva du ikke får e-post om:** at ting virker (nyheter, publiseringer, oppetiden, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
 
 Saken kan ha disse delene:
 

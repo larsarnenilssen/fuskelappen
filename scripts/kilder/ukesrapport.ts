@@ -1,7 +1,7 @@
 // Den ukentlige kontrollsaken: én GitHub-sak med alt eier bør se på etter kildesjekken, med avkrysningsliste.
 // Saken oppdateres hver mandag, får en kommentar (og dermed e-post) når noe nytt har kommet til, og lukkes når
-// alt er i orden. Ukens kontroll står nederst, gir ikke e-post og holder saken åpen så lenge noe ikke er kontrollert
-// (avgjørelse 106). Ren logikk, testes i tests/unit/kontrollsak.test.ts og ukenskontroll.test.ts (avgjørelse 018).
+// alt er i orden. Ukens kontroll står nederst og gir e-post når utvalget skifter, og saken står åpen så lenge noe
+// ikke er kontrollert (avgjørelse 106, eier 09.10.2026). Ren logikk, testes i tests/unit/kontrollsak.test.ts og ukenskontroll.test.ts (avgjørelse 018).
 import { FORMATRAD, feiltype } from '../varsel/feiltype.ts';
 import { type AapenSak, planleggVarsel, type Varselhandling } from '../varsel/plan.ts';
 import { createHash } from 'node:crypto';
@@ -51,7 +51,7 @@ export interface Ukesgrunnlag {
   navn?: { linjer: string[]; ordninger: string[] } | null;
   /** Lenkene til fylkenes temasider som ikke er bekreftet på åtte uker (scripts/lenker/fylker.ts, avgjørelse 106). */
   fylkeslenker?: readonly Fylkeslenke[];
-  /** Ukens kontroll (ukenskontroll.ts, avgjørelse 106). Gir ikke e-post, men holder saken åpen. */
+  /** Ukens kontroll (ukenskontroll.ts, avgjørelse 106). Gir e-post når utvalget skifter, og holder saken åpen. */
   ukens?: UkensKontroll | null;
 }
 
@@ -433,7 +433,8 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     ]);
   }
 
-  // Ukens kontroll står sist (avgjørelse 106). Den gir ikke e-post, men saken står åpen så lenge noe ikke er kontrollert.
+  // Ukens kontroll står sist (avgjørelse 106). Et nytt utvalg gir e-post, og saken står åpen så lenge noe ikke er
+  // kontrollert.
   const ukens = g.ukens && g.ukens.antall > 0 ? g.ukens.linjer : [];
   const innhold = [...deler.flat(), ...ukens];
   const tittel =
@@ -443,7 +444,7 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     '',
     'Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar. Da legges datoen inn automatisk. Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk`. Skal noe endres, skriv det til Claude.',
     '',
-    'Saken oppdateres hver mandag. Du får e-post når noe nytt kommer til, med hele listen. Står noe åpent uten at noe nytt kommer til, får du en påminnelse med hele listen annenhver uke. Saken lukkes når alt er i orden (avgjørelse 085). Ukens kontroll nederst gir ikke e-post, og saken står åpen så lenge noe ikke er kontrollert (avgjørelse 106).',
+    'Saken oppdateres hver mandag. Du får e-post når noe nytt kommer til, med hele listen. Står noe åpent uten at noe nytt kommer til, får du en påminnelse med hele listen annenhver uke. Saken lukkes når alt er i orden (avgjørelse 085). Ukens kontroll står nederst, med nye punkter hver uke, og saken står åpen så lenge noe ikke er kontrollert (avgjørelse 106).',
     '',
     ...innhold,
     '---',

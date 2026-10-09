@@ -10,7 +10,7 @@ Status:
 - **endret:** notatet har minst én linje «**Endret …**» nederst, eller en del som sier «(Erstattet i avgjørelse NNN …)». Avgjørelsene disse linjene viser til, står etter «av». Det som står nederst, gjelder foran det over.
 - **erstattet:** notatet gjelder ikke lenger. Se avgjørelsen som erstattet det.
 
-106 avgjørelser: 75 gjeldende, 30 endret og 1 erstattet.
+106 avgjørelser: 73 gjeldende, 32 endret og 1 erstattet.
 
 | Nr. | Avgjørelse | Status |
 |---|---|---|
@@ -118,5 +118,5 @@ Status:
 | 102 | [Aktuelt på forsiden](102-aktuelt-pa-forsiden.md) | gjeldende |
 | 103 | [«Skule» på nynorsk i innholdet](103-nynorsk-skule.md) | endret |
 | 104 | [Sikkerhetskopien kan gjenopprettes](104-gjenopprett-sikkerhetskopi.md) | gjeldende |
-| 105 | [Fra faser til drift: DRIFT.md, arkivet, skills og oversikten over avgjørelsene](105-drift.md) | gjeldende |
-| 106 | [Plan for kontrollen: ukens kontroll og fylkeslenkene](106-plan-for-kontrollen.md) | gjeldende |
+| 105 | [Fra faser til drift: DRIFT.md, arkivet, skills og oversikten over avgjørelsene](105-drift.md) | endret |
+| 106 | [Plan for kontrollen: ukens kontroll og fylkeslenkene](106-plan-for-kontrollen.md) | endret |
