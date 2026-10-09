@@ -4,9 +4,7 @@ export const vurderingNb = {
   tittel: 'Vurdering',
   innledning: 'Vurdering i fag og i orden og oppførsel i videregående opplæring, etter opplæringsforskrifta kapittel 9 og 10: hva karakteren bygger på, underveis- og sluttvurdering og fravær. Eksamen, prøvene og klage på karakter står i Eksamen og klage.',
   delFag: 'Vurdering i fag',
-  delKalkulator: 'Kalkulator',
   delOrden: 'Orden og oppførsel',
-  delVeiviser: 'Veiviser',
   ikkeFunnet: 'Fant ikke veiviseren.',
   underveisSlutt: {
     tittel: 'Underveis- og sluttvurdering',

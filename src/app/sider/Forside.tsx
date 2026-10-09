@@ -19,6 +19,7 @@ import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
 import { Forsidepanel, JUKSELAPPVISNING, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
 import { Jukselappbryter } from '../Jukselapp.tsx';
+import { apneVelkomst } from '../velkomst/apne.ts';
 import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
@@ -426,6 +427,12 @@ export default function Forside() {
 
           <div class="bunntekst">
             <p data-testid="forbehold">{t('forside.forbehold', { app: app.navn })}</p>
+            {/* Velkomsten kan åpnes igjen herfra og fra Innstillinger (fase 10). */}
+            <p>
+              <button type="button" class="lenkeknapp" onClick={apneVelkomst}>
+                {t('velkomst.lenke')}
+              </button>
+            </p>
             <p>
               <a href="#/om">{t('om.tittel')}</a>
             </p>

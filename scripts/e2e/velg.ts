@@ -105,6 +105,13 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       grunner.push(`${fil}: meldingen om ny versjon`);
       if (fil === 'content/versjoner.yaml') continue;
     }
+    // Velkomsten (fase 10, avgjørelse 094). Selve vinduet, tekstene og stilene lastes bare med velkomsten. Det som
+    // står i startpakken (åpningen og fylke- og skolevalget), er også felles kode.
+    if (/^src\/(app\/velkomst\/|app\/StedValg|strings\/velkomst\.|styles\/velkomst\.css)/.test(fil)) {
+      speker.add('velkomst');
+      grunner.push(`${fil}: velkomsten`);
+      if (/^src\/(app\/velkomst\/(Velkomst|Bilder|roller)|strings\/velkomst\.|styles\/velkomst\.css)/.test(fil)) continue;
+    }
     if (fil === 'scripts/bygg-sokeindeks.ts') {
       speker.add('modul-og-sok');
       grunner.push(`${fil}: søket`);

@@ -7,7 +7,7 @@ import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { oversiktsid } from '../../favoritter.ts';
-import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { veiviseroverskrift, Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, UNDERSIDER, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
 import { Inngang } from './Inngang.tsx';
@@ -51,13 +51,13 @@ export default function Oversikt() {
           <>
             <section class="lop-del" aria-labelledby="vu-del-veiviser">
               <h2 class="liten-overskrift" id="vu-del-veiviser">
-                {t('vurdering.delVeiviser')}
+                {t(veiviseroverskrift(veivisere.length))}
               </h2>
               {innhold === null ? <p class="dempet">{t('app.lasterInn')}</p> : <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />}
             </section>
             <section class="lop-del" aria-labelledby="vu-del-kalkulator">
               <h2 class="liten-overskrift" id="vu-del-kalkulator">
-                {t('vurdering.delKalkulator')}
+                {t('felles.kalkulator')}
               </h2>
               <Kalkulatorinngang
                 href={`#${UNDERSIDER.fravaer.rute}`}

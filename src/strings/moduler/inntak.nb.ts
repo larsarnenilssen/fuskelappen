@@ -3,7 +3,6 @@
 export const inntakNb = {
   tittel: 'Inntak',
   innledning: 'Rettigheter og søkerkategorier ved inntak til videregående opplæring, etter opplæringslova og opplæringsforskrifta. Hvert steg viser fristene og paragrafene i regelverket.',
-  veivisere: 'Veivisere',
   bareNasjonalt: 'Viser de nasjonale reglene. Fylket kan ha lokale regler om inntak.',
   velgFylke: 'Velg fylke',
   lokaleMed: 'Viser også de lokale reglene om inntak i {fylke}.',
@@ -115,7 +114,6 @@ export const inntakNb = {
     },
     regler: 'Slik regnes poengene',
     kort: 'Poengberegning til Vg1, Vg2 og Vg3',
-    kalkulator: 'Kalkulator',
   },
   merOpplaering: {
     tittel: 'Mer opplæring',

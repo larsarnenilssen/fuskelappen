@@ -42,12 +42,15 @@ class Tilstand {
   data: Lagret;
   /** false når data bare ligger i minnet (privat nettlesing, fullt lager). */
   kanLagre: boolean;
+  /** Sant når ingenting var lagret da appen startet: første besøk (velkomsten, fase 10). */
+  readonly ny: boolean;
 
   constructor() {
     this.lager = finnLager();
     const { data, status } = lesLagret(this.lager, foretrukketMalform());
     this.data = data;
     this.kanLagre = status !== 'utilgjengelig';
+    this.ny = status === 'ny';
   }
 
   lytt(lytter: Lytter): () => void {

@@ -595,11 +595,20 @@ export const nb = {
     se: 'nordsamisk',
     en: 'engelsk',
   },
+  velkomst: {
+    lenke: 'Ny her? Se velkomsten',
+    innstillinger: 'Velkomst',
+    innstillingerUnder: 'En kort omvisning i appen, med valg av fylke, rolle og favoritter.',
+  },
   felles: {
     plassering: 'Plassering',
     kilder: 'Kilder',
     lukk: 'Lukk',
     eksternLenke: '(åpnes på {nettsted})',
+    // Overskriftene over verktøyene på oversiktene, i entall eller flertall etter hvor mange det er (eier 08.10.2026).
+    veiviser: 'Veiviser',
+    veivisere: 'Veivisere',
+    kalkulator: 'Kalkulator',
   },
   utvikling: {
     tittel: 'Komponentkatalog',

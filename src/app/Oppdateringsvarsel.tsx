@@ -12,6 +12,7 @@ import { utvikling } from 'virtual:testoppsett';
 import { Overlegg } from '../components/Overlegg.tsx';
 import { lesVersjonsfil, vurderOppdatering, type Oppdatering, type Versjonsfil } from '../core/versjon/versjoner.ts';
 import { useTekst } from './tilstand.ts';
+import { useVelkomstApen } from './velkomst/apne.ts';
 
 const SJEKK_HVER = 60 * 60 * 1000;
 /** En ny versjon som er funnet så kort tid etter at appen startet, tas i bruk med en gang når bare dataene er nye. */
@@ -33,6 +34,7 @@ export function Oppdateringsvarsel() {
   const [melding, settMelding] = useState<Extract<Oppdatering, { type: 'melding' }> | null>(null);
   const [apen, settApen] = useState(false);
   const oppdater = useRef<((reload?: boolean) => Promise<void>) | null>(null);
+  const velkomst = useVelkomstApen();
 
   useEffect(() => {
     const start = Date.now();
@@ -80,7 +82,8 @@ export function Oppdateringsvarsel() {
     };
   }, []);
 
-  if (!melding || !apen) return null;
+  // Meldingen og velkomsten (fase 10) står ikke oppå hverandre. Meldingen venter til velkomsten er lukket.
+  if (!melding || !apen || velkomst) return null;
   const punkter = melding.nytt?.[malform] ?? [];
   return (
     <Overlegg tittelId="ny-versjon-tittel" onLukk={() => settApen(false)}>

@@ -15,6 +15,7 @@ import { Sokeboks } from './Sokeboks.tsx';
 import { merkSide } from './tilbakemelding.ts';
 import { ruter, type Rute } from './ruteliste.ts';
 import { useTekst } from './tilstand.ts';
+import { VelkomstLaster } from './velkomst/VelkomstLaster.tsx';
 
 type Sidemodul = { default: ComponentType<SideProps> };
 const lastet = new Map<Rute, Sidemodul>();
@@ -248,6 +249,7 @@ export function Skall() {
       {/* «Til toppen» på alle sider, når siden er lang nok og brukeren har rullet ned (avgjørelse 056). */}
       <TilToppen key={plassering.sti} />
       <Oppdateringsvarsel />
+      <VelkomstLaster />
       <Flyttevarsel />
     </div>
   );

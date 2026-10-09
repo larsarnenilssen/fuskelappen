@@ -4,7 +4,18 @@
 import type { ComponentChildren } from 'preact';
 import { useEffect, useRef } from 'preact/hooks';
 
-export function Overlegg({ tittelId, onLukk, children }: { tittelId: string; onLukk: () => void; children: ComponentChildren }) {
+export function Overlegg({
+  tittelId,
+  onLukk,
+  klasse,
+  children,
+}: {
+  tittelId: string;
+  onLukk: () => void;
+  /** Egen klasse på kortet, f.eks. for velkomsten, som har fast høyde og knappene nederst. */
+  klasse?: string;
+  children: ComponentChildren;
+}) {
   const lag = useRef<HTMLDivElement>(null);
   const lukk = useRef(onLukk);
   lukk.current = onLukk;
@@ -30,7 +41,7 @@ export function Overlegg({ tittelId, onLukk, children }: { tittelId: string; onL
 
   return (
     <div class="overlegg-lag" ref={lag}>
-      <div class="overlegg" role="dialog" aria-modal="true" aria-labelledby={tittelId} tabIndex={-1}>
+      <div class={klasse ? `overlegg ${klasse}` : 'overlegg'} role="dialog" aria-modal="true" aria-labelledby={tittelId} tabIndex={-1}>
         {children}
       </div>
     </div>
