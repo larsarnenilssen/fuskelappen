@@ -92,22 +92,21 @@ test.describe('passerte datoer', () => {
 });
 
 test.describe('«Neste datoer» på forsiden', () => {
-  test('@mobil kalenderen er første visning i panelet, lukket med neste dato, og kan tas ut under «Tilpass»', async ({ page }, info) => {
-    test.skip(!info.project.name.includes('mobil'), 'Panelet er lukket fra start bare på mobil.');
+  test('@mobil kalenderen er første visning i Aktuelt, lukket med neste dato, og kan tas ut i menyen', async ({ page }, info) => {
+    test.skip(!info.project.name.includes('mobil'), 'Aktuelt er lukket fra start bare på mobil.');
     await page.goto('./');
     const gruppe = page.locator('[data-gruppe="panel"]');
-    // Lukket: tittelen og den neste datoen, uten valgene.
+    // Lukket: «Aktuelt», visningen og den neste datoen, uten fanene (avgjørelse 102).
     await expect(gruppe.locator('.gruppe-sammendrag')).toContainText(':');
-    await expect(gruppe.locator('.panel-fane')).toHaveCount(0);
+    await expect(gruppe.locator('.aktuelt-faner')).toBeHidden();
     await gruppe.locator('.gruppeknapp').click();
     await expect(gruppe.locator('.kal-panel .panel-liste > li')).toHaveCount(4);
     await gruppe.getByRole('link', { name: 'Hele kalenderen' }).click();
     await expect(page).toHaveURL(/#\/kalender$/);
     await page.goto('./');
-    await page.getByRole('button', { name: 'Tilpass' }).click();
-    await page.getByLabel('Neste datoer fra kalenderen').uncheck();
-    await page.getByRole('button', { name: 'Ferdig' }).click();
-    // Panelet ble åpnet over, og står åpent: uten kalenderen og uten valget for den.
+    await gruppe.getByRole('button', { name: 'Velg hva som står i Aktuelt' }).click();
+    await gruppe.getByLabel('Neste datoer fra kalenderen').uncheck();
+    // Aktuelt ble åpnet over, og står åpent: uten kalenderen og uten fanen for den.
     await expect(gruppe.locator('.gruppeknapp')).toHaveAttribute('aria-expanded', 'true');
     await expect(page.locator('.kal-panel')).toHaveCount(0);
     await expect(gruppe.getByRole('button', { name: 'Kalender', exact: true })).toHaveCount(0);

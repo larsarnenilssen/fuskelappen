@@ -19,7 +19,7 @@ export const velkomstNn: Skjema<typeof velkomstNb> = {
     tekst: '{app} er ein digital jukselapp: ei enkel oversikt og eit raskt oppslag for skuleleiarar og lærarar i vidaregåande.',
     navnet:
       'Namnet spelar på jukselappen frå skulen. Innhaldet er det du bør kunne, men ingen hugsar alt. Når det gjeld, kan du «jukse litt» og sjekke jukselappen: regelen, talet eller neste steg, med lenke til kjelda.',
-    sok: 'Søk øvst på framsida eller med forstørringsglaset på dei andre sidene. På framsida står også kalenderen, nyheitene og tala.',
+    sok: 'Søk øvst på framsida eller med forstørringsglaset på dei andre sidene. På framsida står også Aktuelt: kalenderen, nyheitene og tala.',
     tilbakemelding: 'Gi gjerne tilbakemelding under {om} eller {innstillinger}.',
     om: 'Om appen',
     innstillinger: 'Innstillingar',

@@ -12,3 +12,5 @@
 - **«Bare favoritter»:** Ingen sidekolonne. Er kalenderen favoritt, står «Neste datoer» øverst i stedet for et kort for kalenderen.
 
 **Konsekvens:** Bredden avgjøres av `matchMedia` i `Forside.tsx` (`SIDEKOLONNE_FRA`) og av mediespørringene i `base.css`. De må endres sammen. Ende-til-ende-testene på skrivebord (1280 px) ser sidekolonnen, og testene som gjelder én kolonne, setter mobilbredde selv.
+
+**Endret 09.10.2026:** Bryteren og den smale skinnen er tatt bort. Øverst i kolonnen står Aktuelt, som lukkes med pilen i overskriften, og favorittene under. Er Aktuelt skjult og det ikke er favoritter, er det ingen sidekolonne, og gruppene får hele bredden. `sidekolonne` i `forside.skjult` gir Aktuelt lukket (avgjørelse 102).

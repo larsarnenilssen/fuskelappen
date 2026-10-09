@@ -38,8 +38,9 @@ export const innstillingerSkjema = z.strictObject({
  * Forsiden slik brukeren har tilpasset den (avgjørelse 056): rekkefølgen på gruppene (favorittene og kategoriene),
  * gruppene som er lukket, og om forsiden bare viser favorittene under hver kategori. Tom rekkefølge er standard.
  * `apnet` er grupper som er lukket fra start på mobil, men som brukeren har åpnet, og `skjult` grupper brukeren har
- * slått av (gruppen «Neste datoer», avgjørelse 066, og visningene i panelet øverst, avgjørelse 081). Begge kan mangle i
- * data lagret før 0.37.0.
+ * slått av (gruppen «Neste datoer», avgjørelse 066, visningene i Aktuelt, avgjørelse 081, og `aktuelt` når Aktuelt er
+ * skjult helt, avgjørelse 102). `sidekolonne` i `skjult` er fra bryteren som ble tatt bort i avgjørelse 102, og gir
+ * Aktuelt lukket på skrivebord. Begge kan mangle i data lagret før 0.37.0.
  */
 export const forsideSkjema = z.strictObject({
   rekkefolge: z.array(z.string()),
@@ -47,15 +48,15 @@ export const forsideSkjema = z.strictObject({
   bareFavoritter: z.boolean(),
   apnet: z.optional(z.array(z.string())),
   skjult: z.optional(z.array(z.string())),
-  /** Visningen brukeren har valgt i panelet øverst: kalenderen, nyhetene eller tallene (avgjørelse 081). */
+  /** Visningen brukeren har valgt i Aktuelt: kalenderen, nyhetene, tallene eller jukselappen (avgjørelse 081 og 102). */
   visning: z.optional(z.string()),
   /** Dagens jukselapp på forsiden (fase 8). Av fra start, så den mangler til brukeren slår den på. */
   jukselapp: z.optional(z.boolean()),
   /** Brukt i 0.43.0: datoen dagens jukselapp sist ble vist først. Leses ikke lenger, men kan finnes i lagrede data. */
   jukselappVist: z.optional(z.string()),
   /**
-   * Datoen brukeren gikk fra dagens jukselapp til visningen sin med «Tilbake til …». Til da står panelet på
-   * jukselappen den dagen, merket «Dagens jukselapp» (alternativ C i avgjørelse 086, variant B, eier 08.10.2026).
+   * Brukt til og med 1.1.0 (avgjørelse 086, variant B): datoen brukeren gikk fra dagens jukselapp med «Tilbake
+   * til …». Leses ikke lenger etter avgjørelse 102, men kan finnes i lagrede data.
    */
   jukselappForlatt: z.optional(z.string()),
 });

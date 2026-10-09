@@ -12,3 +12,5 @@
 - Gruppene på forsiden er flyttet til `src/app/Forsidegruppe.tsx`, så panelet og forsiden bruker den samme.
 
 **Konsekvens:** Fase 7b legger nyhetene inn som visningen `nyheter` i panelet og tar bort skissen. En ny visning krever en oppføring i `VISNINGER`, en komponent i panelet og en tekst i `forside.panel` og `forside.tilpass.visning`.
+
+**Endret 09.10.2026:** Panelet heter «Aktuelt» og har merkelappen som overskrift, med menyen og pilen til høyre. Fanene står under overskriften. Med én visning står den i Aktuelt uten faner, ikke som en vanlig gruppe. Visningene velges i menyen i Aktuelt, ikke under «Tilpass», og menyen kan skjule Aktuelt helt (avgjørelse 102).

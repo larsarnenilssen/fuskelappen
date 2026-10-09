@@ -1,34 +1,28 @@
-// Dagens jukselapp (fase 8, avgjørelse 086): bryteren under «Tilpass» og Innstillinger, visningen i panelet, knappen
-// for ny jukselapp, lenken videre og visningen først ved første besøk hver dag (alternativ C), med det gule merket og
-// «Tilbake til …» (variant B, eier 08.10.2026). Faktumet avhenger av datoen, så testene ser på oppsettet og ikke på
-// teksten.
+// Dagens jukselapp (fase 8, avgjørelse 086 og 102): valget i menyen i Aktuelt, visningen i Aktuelt, knappen for ny
+// jukselapp og lenken videre. Den står ikke lenger først ved første besøk på dagen (avgjørelse 102, testet i
+// aktuelt.spec.ts). Faktumet avhenger av datoen, så testene ser på oppsettet og ikke på teksten.
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 import { aapneAlt, settLagret } from './hjelp.ts';
 
 const VESTLAND = '46';
-/** Dagens dato, så jukselappen ikke vises først (alternativ C). */
-const idag = () => {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-};
 const apen = (forside: Record<string, unknown> = {}) => ({ rekkefolge: [], lukket: [], apnet: ['panel'], bareFavoritter: false, ...forside });
 
 test.describe('dagens jukselapp', () => {
-  test('er av fra start, og slås på under «Tilpass» med den samme bryteren som under Innstillinger', async ({ page }) => {
+  test('er av fra start, og slås på i menyen i Aktuelt, ikke under «Tilpass» eller Innstillinger', async ({ page }) => {
     await settLagret(page, { fylke: VESTLAND, forside: apen() });
     await page.goto('./');
     const panel = page.locator('[data-gruppe="panel"]').first();
     await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toBeVisible();
     await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveCount(0);
     await page.getByRole('button', { name: 'Tilpass' }).click();
-    const bryter = page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' });
-    await expect(bryter).not.toBeChecked();
-    await bryter.check();
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toHaveCount(0);
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    // Slått på står den som dagens jukselapp, med veien tilbake til kalenderen.
-    await expect(panel.locator('.panel-dagens-merke')).toHaveText('Dagens jukselapp');
-    await expect(panel.getByRole('button', { name: 'Tilbake til kalenderen' })).toBeVisible();
+    await panel.getByRole('button', { name: 'Velg hva som står i Aktuelt' }).click();
+    await panel.getByRole('checkbox', { name: 'Dagens jukselapp' }).check();
+    // Slått på er den én av fanene. Kalenderen står fortsatt, til brukeren velger jukselappen.
+    await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await panel.getByRole('button', { name: 'Jukselapp', exact: true }).click();
     await expect(panel.locator('.jl-tekst')).not.toBeEmpty();
     await expect(panel.locator('.jl-under')).not.toBeEmpty();
     // Kortet har tittelen over faktumet, og ingen rader med regelverket og kildene (eier 08.10.2026). Lenken har hele
@@ -37,12 +31,15 @@ test.describe('dagens jukselapp', () => {
     await expect(panel.locator('.jl-panel details')).toHaveCount(0);
     await expect(panel.locator('a.jl-videre')).toBeVisible();
 
-    // Innstillinger viser samme valg.
+    // Innstillinger har ikke bryteren (avgjørelse 102).
     await page.goto('./#/innstillinger');
-    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toBeChecked();
-    await page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' }).uncheck();
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toHaveCount(0);
     await page.goto('./');
+    await panel.getByRole('button', { name: 'Velg hva som står i Aktuelt' }).click();
+    await panel.getByRole('checkbox', { name: 'Dagens jukselapp' }).uncheck();
     await expect(page.locator('.jl-panel')).toHaveCount(0);
+    await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveCount(0);
   });
 
   test('knappen gir en ny jukselapp, og lenken går til stedet i appen', async ({ page }) => {
@@ -61,49 +58,30 @@ test.describe('dagens jukselapp', () => {
     await expect(page.locator('main h1').first()).toBeVisible();
   });
 
-  test('vises først ved første besøk en ny dag, merket, og «Tilbake til …» gjelder resten av dagen', async ({ page }) => {
-    await settLagret(page, { forside: apen({ jukselapp: true, visning: 'nyheter', jukselappForlatt: '2000-01-01' }) });
-    await page.goto('./');
-    const panel = page.locator('[data-gruppe="panel"]').first();
-    await expect(panel.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
-    await expect(panel.locator('.panel-dagens-merke')).toHaveText('Dagens jukselapp');
-    // Valgene er byttet ut med merket og veien tilbake til brukerens egen visning.
-    await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toHaveCount(0);
-    await panel.getByRole('button', { name: 'Tilbake til nyhetene' }).click();
-    await expect(panel.getByRole('button', { name: 'Nyheter', exact: true })).toHaveAttribute('aria-pressed', 'true');
-    await expect(panel.locator('.panel-dagens-merke')).toHaveCount(0);
-    await page.reload();
-    await expect(panel.getByRole('button', { name: 'Nyheter', exact: true })).toHaveAttribute('aria-pressed', 'true');
-  });
-
-  test('har brukeren valgt jukselappen selv, står valgene som vanlig, uten merket', async ({ page }) => {
+  test('har brukeren valgt jukselappen, står den med fanene som vanlig', async ({ page }) => {
     await settLagret(page, { forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
     await page.goto('./');
     const panel = page.locator('[data-gruppe="panel"]').first();
     await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveAttribute('aria-pressed', 'true');
-    await expect(panel.locator('.panel-dagens-merke')).toHaveCount(0);
+    await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toHaveAttribute('aria-pressed', 'false');
   });
 
   for (const malform of ['nb', 'nn'] as const) {
-    test(`ingen horisontal overflyt på 320 px med fylke, og merket dekker ikke pilen (${malform})`, { tag: '@mobil' }, async ({ page }) => {
+    test(`ingen horisontal overflyt på 320 px med fylke, og fanene får plass (${malform})`, { tag: '@mobil' }, async ({ page }) => {
       await page.setViewportSize({ width: 320, height: 700 });
-      await settLagret(page, { malform, tema: 'lys', fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'neste' }) });
+      await settLagret(page, { malform, tema: 'lys', fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
       await page.goto('./');
       await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
-      // På smale skjermer står det «Til kalenderen».
-      await expect(page.locator('.panel-tilbake-kort')).toHaveText('Til kalenderen');
-      await expect(page.locator('.panel-tilbake-kort')).toBeVisible();
-      await expect(page.locator('.panel-tilbake-lang')).toBeHidden();
       await aapneAlt(page, '.jl-panel');
       expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(0);
-      const tilbake = await page.locator('.panel-tilbake').boundingBox();
-      const pil = await page.locator('[data-gruppe="panel"] h2 .ikon').last().boundingBox();
-      expect((tilbake?.x ?? 0) + (tilbake?.width ?? 0)).toBeLessThanOrEqual(pil?.x ?? 0);
+      const faner = await page.locator('.aktuelt-faner').boundingBox();
+      const boks = await page.locator('[data-gruppe="panel"]').boundingBox();
+      expect((faner?.x ?? 0) + (faner?.width ?? 0)).toBeLessThanOrEqual((boks?.x ?? 0) + (boks?.width ?? 0));
     });
   }
 
   test('er omtrent like høy som kalenderen (eier 08.10.2026)', { tag: '@mobil' }, async ({ page }) => {
-    await settLagret(page, { fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'neste', jukselappForlatt: idag() }) });
+    await settLagret(page, { fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'neste' }) });
     await page.goto('./');
     const panel = page.locator('[data-gruppe="panel"]').first();
     // Kalenderen tilpasser hvor mange datoer som får plass (useTilpassetListe), så høyden måles når den står stille.
@@ -125,8 +103,7 @@ test.describe('dagens jukselapp', () => {
 
   for (const tema of ['lys', 'mork'] as const) {
     test(`ingen alvorlige axe-funn (${tema})`, { tag: '@mobil' }, async ({ page }) => {
-      // Første besøk på dagen, så det gule merket og «Tilbake til …» kommer med.
-      await settLagret(page, { tema, fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'neste' }) });
+      await settLagret(page, { tema, fylke: VESTLAND, forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
       await page.goto('./');
       await expect(page.locator('.jl-panel')).toHaveAttribute('data-faktum', /.+/);
       await aapneAlt(page, '.jl-panel');

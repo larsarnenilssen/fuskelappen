@@ -21,3 +21,5 @@
 **Konsekvens:** En ny modul kommer med av seg selv når manifestet har `fakta()`, og typesjekken krever funksjonen. En test sjekker at faktaene har tekst på begge målformene, kilder i kilderegisteret og en adresse i appen. Startpakken økte med om lag 2 kB.
 
 **Tillegg 08.10.2026 (variant B):** Første besøk på dagen er valgene i overskriften byttet ut med det gule merket «Dagens jukselapp» og lenken «Tilbake til …» brukerens egen visning. Brukerens visning blir ikke lenger overskrevet: dagen brukeren går tilbake, lagres i `forside.jukselappForlatt`, og valgene står som vanlig resten av dagen. Har brukeren valgt jukselappen selv blant valgene, står valgene som vanlig uten merket. `jukselappVist` fra 0.43.0 leses ikke lenger.
+
+**Endret 09.10.2026:** Dagens jukselapp slås av og på i menyen i Aktuelt og i velkomsten, ikke under «Tilpass» eller Innstillinger. Den står ikke lenger først ved første besøk på dagen: visningen brukeren valgte sist, står. Det gule merket og «Tilbake til …» er tatt bort, og `jukselappForlatt` leses ikke lenger (avgjørelse 102).

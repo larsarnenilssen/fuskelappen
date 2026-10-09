@@ -94,10 +94,15 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       grunner.push(`${fil}: testen selv`);
       continue;
     }
-    // Dagens jukselapp (avgjørelse 086): kortet, panelet med merket, utvalget og faktaene i modulene.
+    // Dagens jukselapp (avgjørelse 086): kortet, visningen i Aktuelt, utvalget og faktaene i modulene.
     if (/^src\/(app\/(Jukselapp|Forsidepanel)|core\/jukselapp\/|modules\/.+\/(fakta|jukselappfag|jukselapp)\.ts$)/.test(fil)) {
       speker.add('jukselapp');
       grunner.push(`${fil}: dagens jukselapp`);
+    }
+    // Aktuelt øverst på forsiden (avgjørelse 102): gruppen, menyen og sidekolonnen.
+    if (/^src\/app\/(Forsidepanel|Forsidegruppe|sider\/Forside)\./.test(fil)) {
+      speker.add('aktuelt');
+      grunner.push(`${fil}: Aktuelt på forsiden`);
     }
     // Meldingen om ny versjon (avgjørelse 088): overlegget og punktene.
     if (/^src\/(app\/Oppdateringsvarsel|components\/Overlegg|core\/versjon\/)/.test(fil) || fil === 'content/versjoner.yaml') {

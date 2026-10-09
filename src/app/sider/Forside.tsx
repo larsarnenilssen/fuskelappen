@@ -1,8 +1,9 @@
 // Forsiden bygges bare fra modulregisteret. En ny modul krever ingen endring her.
 // Avgjørelse 056: favorittene og kategoriene er grupper som kan lukkes og sorteres («Tilpass forsiden»), favorittene
 // sorteres der de står, og forsiden kan vise bare favorittene, fordelt under kategoriene sine. Valgene lagres på enheten.
+// Avgjørelse 102: Aktuelt (kalenderen, nyhetene, tallene og dagens jukselapp) står øverst, i sidekolonnen på skrivebord.
 import type { ComponentChildren } from 'preact';
-import { useEffect, useId, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Bryter } from '../../components/Bryter.tsx';
 import { Ikon } from '../../components/Ikon.tsx';
@@ -16,34 +17,17 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from '../Forsidegruppe.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
-import { Forsidepanel, JUKSELAPPVISNING, PANEL, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
+import { Aktuelt, PANEL, useAktuelt, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
-import { Jukselappbryter } from '../Jukselapp.tsx';
 import { apneVelkomst } from '../velkomst/apne.ts';
-import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
+import { nullstillForside, settAktueltVist, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
 
-/** Sidekolonnen på skrivebord kan slås av. Valget lagres i `skjult`, som gruppene (eier 05.10.2026). */
-const SIDEKOLONNE = 'sidekolonne';
-
-/** Den grafiske skyvebryteren som slår sidekolonnen av og på. `kort`: uten synlig etikett (i den smale skinnen). */
-function Sidekolonnebryter({ pa, kort = false }: { pa: boolean; kort?: boolean }) {
-  const { t } = useTekst();
-  const id = useId();
-  return (
-    <div class={`vippe forside-vippe${kort ? ' uten-etikett' : ''}`} title={kort ? t('forside.sidekolonne') : undefined}>
-      <input id={id} type="checkbox" role="switch" checked={pa} onChange={() => vekslSkjultGruppe(SIDEKOLONNE)} />
-      <label for={id} class={kort ? 'skjult-visuelt' : undefined}>
-        {t('forside.sidekolonne')}
-      </label>
-    </div>
-  );
-}
-
 /**
  * Sidekolonnen (eier 05.10.2026): står fast mens siden rulles og ruller selv når den er for lang, uten synlig
- * rullefelt. En toning øverst og nederst viser at det er mer over eller under. Bryteren står fast øverst.
+ * rullefelt. En toning øverst og nederst viser at det er mer over eller under. Bryteren som slo den av, er tatt bort
+ * (avgjørelse 102): Aktuelt lukkes med pilen i overskriften, som de andre gruppene.
  */
 function Sidekolonne({ children }: { children: ComponentChildren }) {
   const kolonne = useRef<HTMLDivElement>(null);
@@ -101,9 +85,6 @@ function Sidekolonne({ children }: { children: ComponentChildren }) {
   }, []);
   return (
     <div class="forside-sidekolonne" ref={kolonne}>
-      <div class="sidekolonne-topp">
-        <Sidekolonnebryter pa />
-      </div>
       <div class={`sidekolonne-ramme${mer.over ? ' mer-over' : ''}${mer.under ? ' mer-under' : ''}`}>
         <div class="sidekolonne-rull" ref={rull}>
           <div class="sidekolonne-innhold">{children}</div>
@@ -173,15 +154,15 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
   );
 }
 
-/** Rekkefølgen på gruppene, med dra og slipp og piler. */
 /**
- * «Tilpass»: rekkefølgen på gruppene. Når sidekolonnen brukes (skrivebord), står «Neste datoer» og favorittene i en egen
- * del med bryteren for kolonnen, og hopper ut av rekkefølgen for de andre gruppene. Plassen deres i den felles
- * rekkefølgen beholdes, så de står der brukeren satte dem når vinduet blir smalt (eier 05.10.2026).
+ * «Tilpass»: rekkefølgen på gruppene, og om Aktuelt står på forsiden (avgjørelse 102). Hva som står i Aktuelt, velges i
+ * menyen i Aktuelt selv. Når sidekolonnen brukes (skrivebord), står Aktuelt og favorittene i en egen del, og hopper ut
+ * av rekkefølgen for de andre gruppene. Plassen deres i den felles rekkefølgen beholdes, så de står der brukeren satte
+ * dem når vinduet blir smalt (eier 05.10.2026).
  */
-function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; kolonnePa: boolean }) {
+function Tilpasning({ grupper, navn, sidekolonne }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean }) {
   const { t } = useTekst();
-  const { forside } = useTilstand();
+  const { skjult } = useAktuelt();
   const iKolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sorterbar = (utvalg: string[], etikett: string) => (
     <Sorterbar
@@ -190,20 +171,16 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
       onFlytt={(fra, til) => settGrupperekkefolge(utvalg.length === grupper.length ? flytt(grupper, fra, til) : flyttInnenfor(grupper, utvalg, fra, til))}
     />
   );
-  // Visningene i panelet øverst (avgjørelse 081): brukeren velger hvilke som er med.
-  const visninger = (
+  // Aktuelt kan skjules i menyen sin. Her kommer det tilbake.
+  const aktuelt = (
     <fieldset class="tilpass-visninger">
-      <legend class="tilpass-del">{t('forside.tilpass.visninger')}</legend>
-      <p class="dempet liten">{t('forside.tilpass.visningerHjelp')}</p>
-      {VISNINGER.map((v) => (
-        <label key={v.id} class="avkrysning tilpass-neste">
-          <input type="checkbox" checked={!(forside.skjult ?? []).includes(v.id)} onChange={() => vekslSkjultGruppe(v.id)} />
-          {t(`forside.tilpass.visning.${v.id}`)}
-        </label>
-      ))}
-      {/* Den samme bryteren som under Innstillinger (eier 08.10.2026). */}
-      <div class="tilpass-jukselapp">
-        <Jukselappbryter id="tilpass-jukselapp" />
+      <legend class="tilpass-del">{t('forside.aktuelt.navn')}</legend>
+      <p class="dempet liten" id="tilpass-aktuelt-hjelp">
+        {t('forside.aktuelt.visHjelp')}
+      </p>
+      <div class="vippe">
+        <input id="tilpass-aktuelt" type="checkbox" role="switch" checked={!skjult} aria-describedby="tilpass-aktuelt-hjelp" onChange={() => settAktueltVist(skjult)} />
+        <label for="tilpass-aktuelt">{t('forside.aktuelt.vis')}</label>
       </div>
     </fieldset>
   );
@@ -219,16 +196,12 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
           )}
           <h3 class="tilpass-del">{t('forside.tilpass.sidekolonne')}</h3>
           <p class="dempet liten">{t('forside.tilpass.sidekolonneHjelp')}</p>
-          <Sidekolonnebryter pa={kolonnePa} />
           {sorterbar(grupper.filter(iKolonnen), t('forside.tilpass.sidekolonne'))}
-          {visninger}
         </>
       ) : (
-        <>
-          {sorterbar(grupper, t('forside.tilpass.grupper'))}
-          {visninger}
-        </>
+        sorterbar(grupper, t('forside.tilpass.grupper'))
       )}
+      {aktuelt}
       <button type="button" class="knapp knapp-sekundaer" onClick={nullstillForside}>
         {t('forside.tilpass.nullstill')}
       </button>
@@ -263,36 +236,36 @@ export default function Forside() {
   const kategoriForModul = new Map(kategorier.flatMap((k) => k.moduler.map((m) => [m.id, k.id] as const)));
   const navn = (id: string) => {
     const k = kategorier.find((x) => x.id === id);
-    if (id === PANEL) return t(VISNINGER.length > 2 ? 'forside.panel.navnMedNyheter' : 'forside.panel.navn');
+    if (id === PANEL) return t('forside.aktuelt.navn');
     return k ? t(k.navn) : t('forside.favoritter');
   };
   const bare = forside.bareFavoritter;
-  // Sidekolonnen brukes på skrivebord, med alt innhold. Med «Bare favoritter» står favorittene under gruppene.
-  const medKolonne = skrivebord && !bare;
-  const kolonnePa = !(forside.skjult ?? []).includes(SIDEKOLONNE);
+  // Visningene i Aktuelt som brukeren har med (avgjørelse 081 og 102). Er Aktuelt skjult, er ingen med.
+  const aktuelt = useAktuelt();
+  const paa = aktuelt.skjult ? [] : aktuelt.paa;
+  // Sidekolonnen brukes på skrivebord, med alt innhold, når det er noe i den: Aktuelt eller favoritter. Ellers får
+  // gruppene hele bredden (avgjørelse 102). Med «Bare favoritter» står favorittene under gruppene.
+  const medKolonne = skrivebord && !bare && (!aktuelt.skjult || favoritter.length > 0);
+  const fullBredde = skrivebord && !bare && !medKolonne;
 
   const antallFavoritter = (n: number) => (n === 1 ? t('forside.enFavoritt') : t('forside.antallFavoritter', { antall: String(n) }));
   // Blyanten trengs bare når det er minst to favoritter å sortere.
   const endreknapp = (id: string, antall: number) =>
     antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
 
-  // Visningene i panelet som brukeren har slått på (avgjørelse 081). Med «Bare favoritter» står de som er favoritter,
-  // hver for seg, i stedet for kortene sine.
-  const skjult = forside.skjult ?? [];
-  // Dagens jukselapp er den fjerde visningen når brukeren har slått den på (eier 08.10.2026, avgjørelse 086).
-  const jukselappPa = forside.jukselapp === true;
-  const paa = [...VISNINGER.filter((v) => !skjult.includes(v.id)), ...(jukselappPa ? [JUKSELAPPVISNING] : [])];
-  // Jukselappen har ingen side å være favoritt. Med «Bare favoritter» står den likevel når den er slått på.
-  const somFavoritt = paa.filter((v) => (v.favoritt !== null && favoritter.includes(v.favoritt)) || v.id === 'jukselapp');
-  const visesSomVisning = (f: string) => somFavoritt.some((v) => v.favoritt === f);
+  // Med «Bare favoritter» står visningene som er favoritter, hver for seg, i stedet for kortene sine. Jukselappen har
+  // ingen side å være favoritt, og står likevel når den er slått på.
+  const favorittFor = (v: string) => VISNINGER.find((x) => x.id === v)?.favoritt ?? null;
+  const somFavoritt = paa.filter((v) => v === 'jukselapp' || favoritter.includes(favorittFor(v) ?? ''));
+  const visesSomVisning = (f: string) => somFavoritt.some((v) => favorittFor(v) === f);
   const iSidekolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sidegrupper = grupper.filter(iSidekolonnen);
   const hovedgrupper = grupper.filter((id) => !iSidekolonnen(id));
 
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
-    // Panelet øverst. Med «Bare favoritter» står visningene som er favoritter, hver som sin egen gruppe (eier 07.10.2026).
-    if (id === PANEL) return bare ? somFavoritt.map((v) => <Visningsgruppe key={v.id} id={v.id} />) : <Forsidepanel key={id} visninger={paa.map((v) => v.id)} />;
+    // Aktuelt øverst. Med «Bare favoritter» står visningene som er favoritter, hver som sin egen gruppe (eier 07.10.2026).
+    if (id === PANEL) return bare ? somFavoritt.map((v) => <Visningsgruppe key={v} id={v} />) : <Aktuelt key={id} />;
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
@@ -326,7 +299,7 @@ export default function Forside() {
   };
 
   return (
-    <div class={`side forside${medKolonne ? ' forside-bred' : ''}`}>
+    <div class={`side forside${medKolonne || fullBredde ? ' forside-bred' : ''}`}>
       <h1 class="skjult-visuelt" tabIndex={-1}>
         {t('forside.tittel')}
       </h1>
@@ -361,65 +334,27 @@ export default function Forside() {
           <Stedmerknad />
 
           {tilpass ? (
-            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} kolonnePa={kolonnePa} />
+            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} />
           ) : (
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
-              {!medKolonne ? (
+              {fullBredde ? (
+                // Skrivebord uten noe i sidekolonnen (Aktuelt skjult og ingen favoritter): gruppene får hele bredden, i
+                // så mange spalter som får plass (avgjørelse 102).
+                <div class="forside-oppsett forside-full">
+                  <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+                </div>
+              ) : !medKolonne ? (
                 // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026).
                 <div class="forsidegrupper">{grupper.map(gruppe)}</div>
-              ) : kolonnePa ? (
-                // Skrivebord (eier 05.10.2026): «Neste datoer» og favorittene står i en egen kolonne til høyre, i
-                // rekkefølgen fra «Tilpass». Kolonnene er like brede: gruppene i én kolonne ved siden av, og i to når
-                // det er plass til tre.
+              ) : (
+                // Skrivebord (eier 05.10.2026): Aktuelt og favorittene står i en egen kolonne til høyre, i rekkefølgen
+                // fra «Tilpass». Kolonnene er like brede: gruppene i én kolonne ved siden av, og i to når det er plass
+                // til tre.
                 <div class="forside-oppsett">
                   <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
                   <Sidekolonne>{sidegrupper.map(gruppe)}</Sidekolonne>
-                </div>
-              ) : (
-                // Slått av: en smal skinne med bryteren, og knapper som åpner kolonnen igjen. Gruppene får bredden.
-                <div class="forside-oppsett forside-skinne">
-                  <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
-                  <div class="forside-sidekolonne forside-skinnen">
-                    <Sidekolonnebryter pa={false} kort />
-                    {/* Én knapp for hver visning i panelet, som åpner kolonnen med den visningen, og én for favorittene. */}
-                    {sidegrupper.flatMap((id) =>
-                      id === PANEL
-                        ? paa.map((v) => (
-                            <button
-                              key={v.id}
-                              type="button"
-                              class="ikonknapp skinne-knapp"
-                              aria-label={t('forside.visISidekolonne', { gruppe: t(`forside.panel.${v.id}`) })}
-                              title={t(`forside.panel.${v.id}`)}
-                              onClick={() => {
-                                settForsidevisning(v.id);
-                                vekslSkjultGruppe(SIDEKOLONNE);
-                              }}
-                            >
-                              <Ikon navn={v.ikon} />
-                            </button>
-                          ))
-                        : [
-                            <button
-                              key={id}
-                              type="button"
-                              class="ikonknapp skinne-knapp"
-                              aria-label={`${t('forside.visISidekolonne', { gruppe: navn(id) })}, ${antallFavoritter(favoritter.length)}`}
-                              title={navn(id)}
-                              onClick={() => vekslSkjultGruppe(SIDEKOLONNE)}
-                            >
-                              <Ikon navn="stjerne" />
-                              {favoritter.length > 0 && (
-                                <span class="skinne-tall tall" aria-hidden="true">
-                                  {favoritter.length}
-                                </span>
-                              )}
-                            </button>,
-                          ],
-                    )}
-                  </div>
                 </div>
               )}
             </>

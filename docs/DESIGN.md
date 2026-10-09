@@ -35,13 +35,13 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 
 - **En oppføring med egen side** (f.eks. et begrep) står i et hvitt kort med regelverket og kildene som lukkede rader nederst (`Kortfot`). Lenker videre («Se også») er rader med pil under kortet.
 
-*Eksempler:* modulene på forsiden, kalenderen og nyhetene i panelet, figurene i Videregående i tall, begrepene.
+*Eksempler:* modulene på forsiden, kalenderen og nyhetene i Aktuelt, figurene i Videregående i tall, begrepene.
 
 ## Flater
 
 - **Bakgrunnen** (`--farge-bakgrunn`) er siden selv. Overskrifter, ingress og løpende tekst står rett på den.
 - **Hvit flate** (`--farge-flate`) er kort og bokser med sidens eget innhold.
-- **Myk flate i temafargen** (`--farge-flate-2` og blandingene `--farge-sidekolonne` og `--farge-itall-flate`) er det som står rundt eller oppsummerer: sidekolonnen, «Kort fortalt», temakortene, lenkelinjen nederst i en boks («Hele kalenderen») og tallboksene.
+- **Myk flate i temafargen** (`--farge-flate-2` og blandingene `--farge-sidekolonne` og `--farge-itall-flate`) er det som står rundt eller oppsummerer: sidekolonnen og Aktuelt på forsiden, «Kort fortalt», temakortene, lenkelinjen nederst i en boks («Hele kalenderen») og tallboksene.
 - En boks inni en boks unngås. Trengs det, er den indre en myk flate uten kant.
 - **Strek til venstre** (4 px) brukes bare der den sier at innholdet kommer fra et annet sted eller oppsummerer siden: tallboksene fra Videregående i tall, «Kort fortalt» og sitert lov- og forskriftstekst. Andre steder blir den stoppet av `tests/unit/designregler.test.ts`, som har listen over de tillatte.
 
@@ -52,7 +52,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Sidetittel** (`h1`) med stjernen til høyre (`Sidetopp`) og stien over (`Brodsmuler`).
 - **Delene på en side** (`h2`) er fete, i tekstfarge og normal størrelse, med en tynn strek over (`Seksjon`). Ikke farget, ikke store bokstaver.
 - **Titler i kort** er fete og i tekstfarge. Teksten under er dempet og mindre.
-- **Merkelapp** over en tittel: liten, store bokstaver, litt sperret, i merkefargen (`st-boks-merke`). Den sier hvilken type boks det er, f.eks. «Videregående i tall», «Kort fortalt» eller «Dagens jukselapp». Den står aldri alene som overskrift.
+- **Merkelapp** over en tittel: liten, store bokstaver, litt sperret, i merkefargen (`st-boks-merke`). Den sier hvilken type boks det er, f.eks. «Videregående i tall», «Kort fortalt» eller «Dagens jukselapp». Den står aldri alene som overskrift. Unntak: «Aktuelt» på forsiden, der merkelappen er overskriften på gruppen, med menyen og pilen ved siden av (eier 09.10.2026, avgjørelse 102).
 - **Gruppenavn** inni en figur eller liste: små store bokstaver i dempet farge («Studieforberedende», «Yrkesfag»).
 
 *Eksempler:* temasidene i Videregående i tall, tallboksene, gruppene på forsiden.
@@ -62,7 +62,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Valg mellom få alternativer** (2–5) er piller: avrundet helt, hvit med tynn kant. Det valgte er gult (`--farge-aksent`) med mørk tekst. Pillene står med litt luft mellom, ikke i én blokk.
 - **Korte valg** (høyst sju tegn, f.eks. 45, 60, 90 og Annet) er avrundede firkanter (`--radius-m`), ikke runde piller, med samme farger (eier 08.10.2026). `Bryter` gir dem klassen `bryter-korte` selv.
 - Det samme gjelder faner og filtre på en side (temafanene i Videregående i tall, filtrene i søket og kalenderen).
-- Unntak: valgene i overskriften på panelet på forsiden er rolige tekstknapper med strek under, og valget i det mørke toppfeltet på forsiden beholder sin form.
+- Unntak: fanene i Aktuelt på forsiden er rolige tekstknapper med strek under, og valget i det mørke toppfeltet på forsiden beholder sin form.
 - **Av/på-brytere** (`vippe`) er gule med mørk knott når de er på, som de valgte pillene (eier 08.10.2026). Nedtrekkslister er som før.
 - Ingen mørkeblå fylte flater i innholdet. Mørkeblått er toppfeltet og hovedknappene.
 
@@ -111,6 +111,16 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - En strek tvers over radene i en figur (f.eks. landet) må stå rett. Radene deler kolonnene (`st-felles-kolonner`, subgrid) eller har en fast bredde på tallkolonnen, så sporet er like bredt i alle radene (testes).
 
 *Eksempler:* «Kort fortalt», hovedtallene i figurene, tallene i temakortene.
+
+## Forsiden
+
+- **Gruppene** (kategoriene med modulene, favorittene og Aktuelt) lukkes og åpnes med pilen i overskriften, og lukket viser overskriften hva som er inni. Rekkefølgen settes under «Tilpass» (avgjørelse 056).
+- **Aktuelt** (kalenderen, nyhetene, Videregående i tall og dagens jukselapp) er én gruppe på den myke flaten i temafargen: merkelappen «Aktuelt» som overskrift, filterknappen og pilen til høyre, og fanene mellom visningene under. Filterknappen åpner menyen, et hvitt kort under overskriften, som velger visningene, slår dagens jukselapp av og på og skjuler Aktuelt. «Tilpass» henter det tilbake. Visningen brukeren valgte sist, står (eier 09.10.2026, avgjørelse 102).
+- **Skrivebord** (fra 44rem): Aktuelt øverst i sidekolonnen, åpent fra start, og favorittene under. Kolonnen står fast og ruller selv (avgjørelse 068). Er Aktuelt skjult og det ikke er favoritter, får gruppene hele bredden.
+- **Mobil:** Aktuelt i en egen ramme øverst, lukket fra start med én linje: visningen og den neste datoen, nyheten, tallet eller faktumet.
+- **«Bare favoritter»:** Visningene som er favoritter, står som egne grupper, og favorittene under kategoriene sine.
+
+*Eksempler:* forsiden.
 
 ## Avstander
 
