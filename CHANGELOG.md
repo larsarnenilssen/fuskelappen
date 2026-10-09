@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Velkomsten har fire trinn i stedet for ni:** hva appen er, hvor du jobber, rolle med forslag til favoritter og dagens jukselapp, og installering. Hvert trinn får plass uten å rulle på en vanlig mobil.
+
 ## [1.1.0] – 2026-10-09
 
 ### Endret

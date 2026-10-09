@@ -44,9 +44,10 @@ export function useDagensJukselapp(): { sammendrag: string; innhold: JSX.Element
 
 /**
  * Bryteren som slår dagens jukselapp av og på. Den samme står under Innstillinger og under «Tilpass» på forsiden (eier
- * 08.10.2026). Slått på vises jukselappen i panelet øverst på forsiden.
+ * 08.10.2026). Slått på vises jukselappen i panelet øverst på forsiden. Velkomsten gir en kortere `hjelp`, så trinnet
+ * får plass uten rulling (avgjørelse 101).
  */
-export function Jukselappbryter({ id }: { id: string }) {
+export function Jukselappbryter({ id, hjelp }: { id: string; hjelp?: string }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
   return (
@@ -56,7 +57,7 @@ export function Jukselappbryter({ id }: { id: string }) {
         <label for={id}>{t('forside.jukselapp.innstilling')}</label>
       </div>
       <p id={`${id}-hjelp`} class="dempet liten">
-        {t('forside.jukselapp.innstillingHjelp')}
+        {hjelp ?? t('forside.jukselapp.innstillingHjelp')}
       </p>
     </>
   );

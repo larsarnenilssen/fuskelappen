@@ -5,18 +5,9 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
 import { settLagret } from './hjelp.ts';
 
-const TRINN = [
-  'Velkommen til Jukselappen',
-  'Søket',
-  'Forsiden',
-  'Sidene',
-  'Hvor jobber du?',
-  'Hvilken rolle har du?',
-  'Dagens jukselapp',
-  'Legg appen på hjemskjermen',
-  'Du er klar!',
-];
-const TRINN_ID = ['velkommen', 'sok', 'forsiden', 'sidene', 'sted', 'rolle', 'jukselapp', 'installer', 'takk'];
+// Fire trinn (avgjørelse 101).
+const TRINN = ['Velkommen til Jukselappen', 'Hvor jobber du?', 'Hvilken rolle har du?', 'Legg appen på hjemskjermen'];
+const TRINN_ID = ['velkommen', 'sted', 'rolle', 'installer'];
 
 /** Som en vanlig nettleser: velkomsten åpnes av seg selv ved første besøk. */
 async function utenTestrobot(page: Page): Promise<void> {
@@ -91,8 +82,8 @@ test.describe('velkomsten', () => {
     await dialog.getByRole('button', { name: 'Ferdig' }).click();
     await expect(dialog).toHaveCount(0);
 
-    await apne(page, 'sidene');
-    await expect(page.getByRole('dialog', { name: 'Sidene' })).toBeVisible();
+    await apne(page, 'rolle');
+    await expect(page.getByRole('dialog', { name: TRINN[2] })).toBeVisible();
     await page.keyboard.press('Escape');
     await expect(page.getByRole('dialog')).toHaveCount(0);
     await expect(page.locator('#innhold')).toHaveJSProperty('inert', false);
@@ -107,7 +98,7 @@ test.describe('velkomsten', () => {
     await dialog.getByRole('radio', { name: 'Skoleleder' }).check();
     await dialog.getByRole('button', { name: 'Legg til alle' }).click();
     await expect(dialog.getByRole('button', { name: 'Alle er lagt til' })).toBeDisabled();
-    await dialog.getByRole('button', { name: 'Neste' }).click();
+    // Bryteren for dagens jukselapp står i samme trinn som rollen.
     await dialog.getByRole('switch', { name: 'Dagens jukselapp på forsiden' }).check();
 
     const data = (await lagret(page)) as {
@@ -150,7 +141,7 @@ test.describe('velkomsten', () => {
   test('med redusert bevegelse står bildene stille, uten knappen som spiller dem av', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await settLagret(page, {});
-    await apne(page, 'forsiden');
+    await apne(page, 'velkommen');
     const dialog = page.getByRole('dialog');
     await expect(dialog.getByRole('button', { name: 'Vis igjen' })).toBeHidden();
     const animasjoner = await page.locator('.vk-scene *').evaluateAll((e) => e.map((x) => getComputedStyle(x).animationName).filter((n) => n !== 'none'));
@@ -164,7 +155,15 @@ test.describe('velkomsten', () => {
     const dialog = page.getByRole('dialog');
     await dialog.getByRole('button', { name: 'Neste' }).click();
     await dialog.getByRole('button', { name: 'Neste' }).click();
-    await expect(dialog.getByRole('heading', { level: 2 })).toHaveText('Framsida');
+    await expect(dialog.getByRole('heading', { level: 2 })).toHaveText('Kva rolle har du?');
+  });
+
+  test('et trinn som er tatt bort, gir første trinn', async ({ page }) => {
+    await settLagret(page, {});
+    for (const gammel of ['sok', 'forsiden', 'sidene', 'jukselapp', 'takk']) {
+      await apne(page, gammel);
+      await expect(page.getByRole('dialog', { name: TRINN[0] })).toBeVisible();
+    }
   });
 
   test('ingen horisontal overflyt på 320 px i noen av trinnene', { tag: '@mobil' }, async ({ page }) => {
@@ -181,6 +180,35 @@ test.describe('velkomsten', () => {
       expect(overflyt, id).toBeLessThanOrEqual(0);
     }
   });
+
+  // Hvert trinn skal få plass uten rulling på en iPhone 14 (390 × 844), også med en rolle og favorittene valgt
+  // (avgjørelse 101). Er et trinn for høyt, gjøres teksten kortere før vinduet gjøres høyere.
+  for (const malform of ['nb', 'nn'] as const) {
+    test(`trinnene får plass uten rulling på 390 × 844 (${malform})`, { tag: '@mobil' }, async ({ page }) => {
+      await page.setViewportSize({ width: 390, height: 844 });
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      await settLagret(page, { malform, tema: 'lys' });
+      await apne(page);
+      const dialog = page.getByRole('dialog');
+      const ruller = () =>
+        page.evaluate(() => {
+          const innhold = document.querySelector('.vk-innhold');
+          return innhold ? innhold.scrollHeight - innhold.clientHeight : 0;
+        });
+      for (const [i, id] of TRINN_ID.entries()) {
+        if (i > 0) await dialog.getByRole('button', { name: 'Neste' }).click();
+        if (id === 'rolle') {
+          for (const rolle of await dialog.getByRole('radio').all()) {
+            await rolle.check();
+            await expect(dialog.locator('.vk-favorittliste li')).toHaveCount(6);
+            expect(await ruller(), `${id}: ${await rolle.evaluate((e) => e.closest('label')?.textContent)}`).toBeLessThanOrEqual(0);
+          }
+        } else {
+          expect(await ruller(), id).toBeLessThanOrEqual(0);
+        }
+      }
+    });
+  }
 
   for (const tema of ['lys', 'mork'] as const) {
     test(`ingen alvorlige axe-funn i trinnene (${tema})`, { tag: '@mobil' }, async ({ page }) => {
