@@ -1,5 +1,5 @@
 // Nyhetene (fase 7b): lesingen av feeder og lister, filteret for videregående og utvalget i appen.
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { beholdes, rensUrl, slaaSammen, tilSaker } from '../../scripts/hent-nyheter.ts';
@@ -144,8 +144,11 @@ describe('kildene og dataene', () => {
     for (const k of fil.kilder.filter((k) => k.id.startsWith('statsforvalteren'))) expect(k.fylker?.length, k.id).toBeGreaterThan(0);
   });
 
-  it('data/nyheter/nyheter.json passer skjemaet og har bare kjente kilder', () => {
-    const d = nyheterSkjema.parse(JSON.parse(readFileSync(join(rot, 'data/nyheter/nyheter.json'), 'utf8')));
+  // Filen ligger på grenen nyheter, ikke på main (avgjørelse 098). Arbeidsflyten Nyheter henter den og kjører testen
+  // før den lagres. Uten filen (f.eks. i CI for en PR) hoppes testen over.
+  const nyhetsfil = join(rot, 'data/nyheter/nyheter.json');
+  it.skipIf(!existsSync(nyhetsfil))('data/nyheter/nyheter.json passer skjemaet og har bare kjente kilder', () => {
+    const d = nyheterSkjema.parse(JSON.parse(readFileSync(nyhetsfil, 'utf8')));
     const kjente = new Set(fil.kilder.map((k) => k.id));
     for (const s of d.saker) expect(kjente.has(s.kilde), s.kilde).toBe(true);
   });

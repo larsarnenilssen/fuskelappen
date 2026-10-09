@@ -21,11 +21,13 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     with:
       tag: ''
+    # issues: write trengs av varseljobben i deploy.yml, som bare går når «Publiser» er startet for seg.
     permissions:
       contents: read
       pages: write
       id-token: write
       actions: write
+      issues: write
 
   # Varsel til eier når publiseringen feiler, og lukking når den går bra igjen (avgjørelse 085).
   varsle:

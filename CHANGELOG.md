@@ -17,6 +17,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - **Velkomsten har fire trinn i stedet for ni:** hva appen er, hvor du jobber, rolle med forslag til favoritter og dagens jukselapp, og installering. Hvert trinn får plass uten å rulle på en vanlig mobil.
+- **Lov- og forskriftsteksten, eksamens- og inntaksdatoene, skoleruta og de andre dataene fra kildene** kommer ut i appen uten ny versjon, når kildesjekken har hentet dem og appens tester består med dem. Før kom bare Grep, skoleregisteret og statistikken ut på denne måten.
 - **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.
 - **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
 - **Større tekst:** Brødteksten er 16 px, og datoer, merker og dempede linjer er litt større.

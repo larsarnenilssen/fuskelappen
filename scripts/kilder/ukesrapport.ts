@@ -1,6 +1,7 @@
 // Den ukentlige kontrollsaken: én GitHub-sak med alt eier bør se på etter kildesjekken, med avkrysningsliste.
 // Saken oppdateres hver mandag, får en kommentar (og dermed e-post) når noe nytt har kommet til, og lukkes når
 // alt er i orden. Ren logikk, testes i tests/unit/ukesrapport.test.ts (avgjørelse 018).
+import { FORMATRAD, feiltype } from '../varsel/feiltype.ts';
 import { type AapenSak, planleggVarsel, type Varselhandling } from '../varsel/plan.ts';
 import { createHash } from 'node:crypto';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
@@ -396,15 +397,17 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
 
   // Nyhetskildene har egen sak, som oppdateres hver dag (etikett «nyheter», avgjørelse 085).
   const feilet = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'feilet' && kilder.get(id)?.sjekkmetode !== 'nyheter');
+  // Feil som ligner programfeil eller uventet format, går ikke over av seg selv og står for seg (avgjørelse 099).
   if (feilet.length > 0) {
     orientering += feilet.length;
+    const linje = ([id, p]: (typeof feilet)[number]) => `- ${kilder.get(id)?.navn ?? id}: ${p.melding ?? 'ukjent feil'} (siden ${dato(p.sjekket)})`;
+    const format = feilet.filter(([, p]) => feiltype(p.melding ?? '') === 'format');
+    const andre = feilet.filter(([, p]) => feiltype(p.melding ?? '') !== 'format');
     deler.push([
       '## Kilder som ikke kunne sjekkes',
       '',
-      'Det går ofte over av seg selv. Står en kilde her i flere uker, si fra til Claude.',
-      '',
-      ...feilet.map(([id, p]) => `- ${kilder.get(id)?.navn ?? id}: ${p.melding ?? 'ukjent feil'} (siden ${dato(p.sjekket)})`),
-      '',
+      ...(format.length > 0 ? ['### Endret format', '', FORMATRAD, '', ...format.map(linje), ''] : []),
+      ...(andre.length > 0 ? [...(format.length > 0 ? ['### Kan gå over av seg selv', ''] : []), 'Det går ofte over av seg selv. Står en kilde her i flere uker, si fra til Claude.', '', ...andre.map(linje), ''] : []),
     ]);
   }
 

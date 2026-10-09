@@ -1,9 +1,10 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
 # Skriver data/status/kildestatus.json, verdistatus.json (verdisjekken) og stengte-lenker.json (lenkesjekken) og lager
 # docs/KONTROLL.md og docs/KOBLING.md på nytt,
-# committer dem ved hver kjøring (holder den planlagte jobben i live),
+# committer dem ved hver kjøring (kildestatus.json endres hver gang, så det blir alltid en commit, og den holder de
+# planlagte jobbene i live: GitHub slår dem av etter 60 dager uten aktivitet i et offentlig repo),
 # oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
-# fersk status og registerdata (Grep, skoleregisteret).
+# fersk status og alle dataene som er hentet (avgjørelse 098). Alt som lagres på main, er testet først.
 name: Kildesjekk
 
 on:
@@ -128,10 +129,15 @@ jobs:
       # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) og oversikten over tilbudsstrukturen
       # (avgjørelse 024) lages på nytt med de nye dataene, så nye fag og endrede tilbud står der før testene kjøres.
       # Begge lages også når dataene er uendret, fordi skoleåret og regelperioden følger datoen.
-      - name: Test de nye dataene fra Grep, Udir-1, VIGO, utdanning.no, NDLA og NOR
+      # Alt som er hentet i steget over, testes før det lagres på main (avgjørelse 098), også lovteksten og
+      # statistikken. Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra. HENTET er listen over
+      # datamappene; deploy.yml tar de samme mappene fra main (testes i tests/unit/arbeidsflyter.test.ts).
+      - name: Test de nye dataene
+        env:
+          HENTET: data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen data/statistikk
         run: |
           mkdir -p .generert
-          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak)" ]; then
+          if [ -z "$(git status --porcelain -- $HENTET)" ]; then
             echo uendret > .generert/grep-tester.txt
             npm run kobling:rapport
             npm run tilbud:rapport
@@ -139,17 +145,24 @@ jobs:
             echo ok > .generert/grep-tester.txt
           else
             echo feilet > .generert/grep-tester.txt
-            # Ta vare på de nye dataene til endringsforslaget, og legg de gamle tilbake (med rapporten for dem).
-            mkdir -p .generert/grep-ny && cp -r data/grep/. .generert/grep-ny/
-            mkdir -p .generert/udir-ny && cp -r data/udir/. .generert/udir-ny/
-            mkdir -p .generert/vigo-ny && cp -r data/vigo/. .generert/vigo-ny/
-            mkdir -p .generert/utdanning-ny && cp -r data/utdanning/. .generert/utdanning-ny/
-            mkdir -p .generert/ndla-ny && cp -r data/ndla/. .generert/ndla-ny/
-            mkdir -p .generert/eksamen-ny && cp -r data/eksamen/. .generert/eksamen-ny/
-            mkdir -p .generert/inntak-ny && cp -r data/inntak/. .generert/inntak-ny/
-            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen data/inntak
+            # Ta vare på de nye dataene til endringsforslaget (.generert/<mappe>-ny), og legg de gamle tilbake (med
+            # rapportene for dem).
+            for d in $HENTET; do
+              if [ -d "$d" ]; then mkdir -p ".generert/${d#data/}-ny" && cp -r "$d/." ".generert/${d#data/}-ny/"; fi
+            done
+            git checkout -- $HENTET docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- $HENTET
             npm run kobling:rapport
             npm run tilbud:rapport
+          fi
+      # Nyhetene ligger på grenen nyheter (avgjørelse 098). Kildesjekken leser statusen for nyhetskildene fra dem.
+      - name: Hent nyhetene
+        continue-on-error: true
+        run: |
+          if git fetch --depth=1 origin nyheter; then
+            mkdir -p data/nyheter
+            git show FETCH_HEAD:nyheter.json > data/nyheter/nyheter.json
+          else
+            echo "::warning::Ingen gren som heter nyheter ennå. Nyhetskildene kan ikke sjekkes denne gangen."
           fi
       - name: Sjekk kildene
         env:
@@ -210,6 +223,19 @@ jobs:
         run: npm run kontroll:rapport
       - name: Sammendrag
         run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
+      # Skoleregisteret (data/skoler) hentes av «Sjekk kildene», etter testene over. Det testes her, før det lagres
+      # på main (avgjørelse 098). Feiler testene, beholdes forrige liste, og saken om feil i automatikken sier fra.
+      - name: Test skoleregisteret
+        id: skoler
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- data/skoler)" ]; then
+            echo "Skoleregisteret er uendret."
+          elif ! npx vitest run; then
+            git checkout -- data/skoler
+            echo "::error::Testene feiler med det nye skoleregisteret. Den forrige listen beholdes."
+            exit 1
+          fi
       - name: Lagre kildestatus
         run: |
           git config user.name "github-actions[bot]"
@@ -241,6 +267,7 @@ jobs:
           LENKER: ${{ steps.lenker.outcome }}
           LAGRE_LENKESTATUS: ${{ steps.lagre-lenkestatus.outcome }}
           FORSLAG: ${{ steps.forslag.outcome }}
+          SKOLER: ${{ steps.skoler.outcome }}
         run: |
           steg=""
           [ "$GREP" = failure ] && steg="$steg|Hent Grep, fag- og timefordeling, overordnet del og lovtekst"
@@ -248,6 +275,7 @@ jobs:
           [ "$LENKER" = failure ] && steg="$steg|Sjekk lenkene"
           [ "$LAGRE_LENKESTATUS" = failure ] && steg="$steg|Lagre lenkestatus"
           [ "$FORSLAG" = failure ] && steg="$steg|Endringsforslag (PR)"
+          [ "$SKOLER" = failure ] && steg="$steg|Test skoleregisteret"
           echo "steg=${steg#|}" >> "$GITHUB_OUTPUT"
           if [ -n "$steg" ]; then echo "::warning::Steg som feilet uten å stoppe kildesjekken: ${steg#|}"; fi
 
@@ -257,11 +285,13 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     with:
       tag: ''
+    # issues: write trengs av varseljobben i deploy.yml, som bare går når «Publiser» er startet for seg.
     permissions:
       contents: read
       pages: write
       id-token: write
       actions: write
+      issues: write
 
   # Varsel til eier når kildesjekken eller publiseringen feiler, og lukking når den går bra igjen (avgjørelse 085).
   varsle:

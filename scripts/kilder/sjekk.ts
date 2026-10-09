@@ -19,6 +19,7 @@ import { sjekkKfInfoserie } from './kf-infoserie.ts';
 import { sjekkLovdata } from './lovdata.ts';
 import { hentSkoler, sjekkFil, sjekkSide, skoleendringer, type Skole } from './metoder.ts';
 import { nyhetsstatus } from '../nyheter/status.ts';
+import { feiltype } from '../varsel/feiltype.ts';
 import type { Nyhetskilder } from '../../src/modules/nyheter/kildeskjema.ts';
 import type { Nyheter } from '../../src/modules/nyheter/skjema.ts';
 import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn, type Tabellresultat } from './tabeller.ts';
@@ -307,6 +308,9 @@ function sjekkLovtekst(kilde: Kilde): Sjekkresultat {
   );
   const feil = mine.find((d) => d.feil);
   if (feil) return { status: 'feilet', fingeravtrykk, melding: `${feil.feil} Appen viser forrige henting.` };
+  // Lovteksten testes med de andre dataene før den lagres (avgjørelse 098). Feiler testene, er den nye teksten ikke tatt inn.
+  const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  if (tester === 'feilet' && endringer.length > 0) return { status: 'endret', fingeravtrykk, melding: `Testene feilet med den nye lov- og forskriftsteksten, og endringene er ikke tatt inn (${endringer.length} endringer).` };
   if (kilde.id === 'lovdata-lokale') {
     const r = sjekkSkoleruteOgAvd1(lest.kommende?.feil ?? null, (lest.kommende?.linjer ?? []).filter((l) => !l.dokument).map((l) => l.tekst));
     if (r) return { status: 'endret', fingeravtrykk, melding: r };
@@ -501,7 +505,8 @@ const tabell = [
   '',
   '| Kilde | Status | Melding |',
   '|---|---|---|',
-  ...Object.entries(kilder).map(([id, p]) => `| ${id} | ${p.status} | ${p.melding ?? ''} |`),
+  // En feil som ligner programfeil eller uventet format, går ikke over av seg selv (avgjørelse 099).
+  ...Object.entries(kilder).map(([id, p]) => `| ${id} | ${p.status}${p.status === 'feilet' && feiltype(p.melding ?? '') === 'format' ? ' (endret format?)' : ''} | ${p.melding ?? ''} |`),
   '',
   ...rapport,
 ];
