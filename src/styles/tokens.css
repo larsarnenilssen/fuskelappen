@@ -33,6 +33,13 @@
   --p-serie-oransje: #d95926;
   --p-serie-gronn: #13936a;
   --p-serie-gronn-mork: #199e70;
+  /* Gul og fiolett til figurene i kalkulatorene og vurderingen (forslag 09.10.2026), fra den samme validerte paletten.
+     Rekkefølgen i årsverket (blå, oransje, grønn, gul, fiolett) består dataviz-validatoren i lyst og mørkt tema. Den
+     mørke fioletten er lysere enn de andre, så den skiller seg fra blått for fargesvakt syn. */
+  --p-serie-gul: #eda100;
+  --p-serie-gul-mork: #c98500;
+  --p-serie-fiolett: #4a3aa7;
+  --p-serie-fiolett-mork: #b3a9f5;
   /* Indigo: veiviseren for aktivitetsplikten (fase 7, avgjørelse 076). */
   --p-indigo-700: #3b3d9a;
   --p-indigo-100: #e7e8f8;

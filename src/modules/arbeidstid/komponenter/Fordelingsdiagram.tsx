@@ -1,5 +1,5 @@
 // Stolpediagram over årsverket i en tenkt stilling: planfestet tid (undervisning, møter, annen planfestet tid,
-// funksjoner) og tid læreren disponerer selv. Egen SVG uten diagrambibliotek. Tallene står også i en tabell,
+// funksjoner) og tid læreren disponerer selv. Stolpe i HTML uten diagrambibliotek. Tallene står også i en tabell,
 // med timer per skoleuke (planleggingsdagene holdes utenfor), slik at fordelingen kan sammenlignes med en arbeidsplan. Tabellen har fargene
 // ved hver del og er fargeforklaringen til diagrammet (eiers valg 30.09.2026).
 // Fordelingsvisning samler diagram, tabell og forklaring, og kan vises i fullskjerm der nettleseren støtter det.
@@ -11,64 +11,43 @@ import { Nivamerke } from '../../../components/Merker.tsx';
 import { Oppsummering, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Fordelingsdel, Fordelingsresultat } from '../beregning/index.ts';
-import { Ukemaaler } from './Grafikk.tsx';
+import { Stolpe, Ukemaaler } from './Grafikk.tsx';
 import { brukteLokale, brukteNiva, tallTekst } from './Utregning.tsx';
 import { Egenmerke, LokaleVerdierFot } from '../../../components/Lokalregel.tsx';
-
-const BREDDE = 320;
-const STOLPE = 56;
-const HOYDE = STOLPE + 30;
 
 export function Fordelingsdiagram({ deler, totalt }: { deler: readonly Fordelingsdel[]; totalt: number }) {
   const { t } = useTekst();
   const navn = (d: Fordelingsdel) => t(`arbeidstid.fordeling.deler.${d.id}` as Tekstnokkel);
   const synlige = deler.filter((d) => d.timer > 0);
   const andel = (timer: number) => (totalt > 0 ? (timer / totalt) * 100 : 0);
-  let x = 0;
-  const bokser = synlige.map((d) => {
-    const b = totalt > 0 ? (d.timer / totalt) * BREDDE : 0;
-    const boks = { d, x, b };
-    x += b;
-    return boks;
-  });
-  const planfestetSlutt = bokser.filter((b) => b.d.planfestet).reduce((s, b) => Math.max(s, b.x + b.b), 0);
   const planfestet = synlige.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
   const selv = synlige.filter((d) => !d.planfestet).reduce((s, d) => s + d.timer, 0);
   const beskrivelse = t('arbeidstid.fordeling.diagramBeskrivelse', {
     timer: tallTekst(totalt),
     deler: synlige.map((d) => `${navn(d)} ${tallTekst(d.timer)} (${tallTekst(andel(d.timer), 1)} %)`).join(', '),
   });
+  const planfestetAndel = andel(planfestet);
 
+  // Andelene står i tabellen under, som også er fargeforklaringen. Under stolpen står bare planfestet tid og tiden
+  // læreren disponerer selv, i vanlig tekst (forslag 09.10.2026).
   return (
     <figure class="fordeling">
-      <svg class="diagram" viewBox={`0 0 ${BREDDE} ${HOYDE}`} role="img" aria-label={beskrivelse}>
-        {bokser.map(({ d, x: bx, b }) => (
-          <rect key={d.id} class={`fordeling-del-${d.id}`} x={bx} y={0} width={b} height={STOLPE} />
-        ))}
-        {bokser.slice(1).map(({ d, x: bx }) => (
-          <line key={`skille-${d.id}`} class="fordeling-skille" x1={bx} x2={bx} y1={0} y2={STOLPE} />
-        ))}
-        {bokser
-          .filter(({ b }) => b >= 34)
-          .map(({ d, x: bx, b }) => (
-            <text key={`tekst-${d.id}`} class="fordeling-etikett" x={bx + b / 2} y={STOLPE / 2 + 5} text-anchor="middle">
-              {tallTekst(andel(d.timer), 0)} %
-            </text>
-          ))}
-        {planfestetSlutt > 0 && (
-          <>
-            <path class="fordeling-klamme" d={`M0.5 ${STOLPE + 4} V${STOLPE + 10} H${planfestetSlutt - 0.5} V${STOLPE + 4}`} />
-            <text class="figur-tekst" x={planfestetSlutt / 2} y={STOLPE + 25} text-anchor="middle">
-              {t('arbeidstid.fordeling.planfestet')} {t('arbeidstid.felles.timerKort', { timer: tallTekst(planfestet, 0) })}
-            </text>
-          </>
-        )}
-        {selv > 0 && planfestetSlutt < BREDDE - 44 && (
-          <text class="figur-tekst" x={(planfestetSlutt + BREDDE) / 2} y={STOLPE + 25} text-anchor="middle">
-            {t('arbeidstid.felles.timerKort', { timer: tallTekst(selv, 0) })}
-          </text>
-        )}
-      </svg>
+      <Stolpe deler={synlige.map((d) => ({ verdi: d.timer, farge: d.id }))} skala={totalt} bred etikett={beskrivelse}>
+        <div class="stolpe-klammer" aria-hidden="true">
+          {planfestet > 0 && (
+            <span class="stolpe-klamme" style={{ width: `${planfestetAndel}%` }}>
+              <span class="stolpe-tekst">
+                {t('arbeidstid.fordeling.planfestet')} {t('arbeidstid.felles.timerKort', { timer: tallTekst(planfestet, 0) })}
+              </span>
+            </span>
+          )}
+          {selv > 0 && planfestetAndel < 86 && (
+            <span class="stolpe-klamme stolpe-klamme-uten" style={{ width: `${100 - planfestetAndel}%` }}>
+              <span class="stolpe-tekst">{t('arbeidstid.felles.timerKort', { timer: tallTekst(selv, 0) })}</span>
+            </span>
+          )}
+        </div>
+      </Stolpe>
     </figure>
   );
 }

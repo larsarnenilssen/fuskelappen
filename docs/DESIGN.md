@@ -104,6 +104,8 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Flere tall står side om side på én linje og brytes til neste linje når det ikke er plass.
 - Resultatet i en kalkulator er et hvitt kort med tynn kant som de andre kortene: tittelen i tekstfarge, hovedtallet stort og delresultatene i rader under. «Vis utregning» og «Kopier» står nederst. Før noe er fylt inn, står det tomme kortet (`Tomtresultat`) på samme plass.
 - Seriefargen (`--serie-1`) markerer det valgte i en figur. Grått er resten.
+- **Stolpene i kalkulatorene** er én felles komponent (`Stolpe`): HTML med fast høyde (0,75rem, årsverket 2rem), 2 px mellomrom mellom delene og avrundede hjørner. Tekst ved stolpen står i tekstfarge og vanlig størrelse, aldri i seriefargen. Tall som står i en tabell rett under, står ikke inni stolpen (eier 09.10.2026, avgjørelse 096).
+- **Fargene i figurene** kommer fra den validerte paletten (`--serie-1` til `--serie-5`: blå, oransje, grønn, gul og fiolett). Årsverket har dem i denne rekkefølgen, med lys grå for tiden læreren disponerer selv. Fagene i stolpen for beskjeftigelse har de fire første etter tur, og funksjonene fiolett. En del i en figur har fast farge, så fargen ikke bytter når en annen del faller bort.
 - En strek tvers over radene i en figur (f.eks. landet) må stå rett. Radene deler kolonnene (`st-felles-kolonner`, subgrid) eller har en fast bredde på tallkolonnen, så sporet er like bredt i alle radene (testes).
 
 *Eksempler:* «Kort fortalt», hovedtallene i figurene, tallene i temakortene.

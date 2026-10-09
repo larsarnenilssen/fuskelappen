@@ -336,10 +336,10 @@ export default function Arbeidsplan({ sporring }: SideProps) {
               {(lonn.resultat.tillegg || lonn.resultat.variabel || lonn.resultat.overtid) && (
                 <Belopsstolpe
                   deler={[
-                    { navn: iPeriode ? t('arbeidstid.arbeidsplan.lonnStillingKort') : t('arbeidstid.arbeidsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
-                    ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.arbeidsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
-                    ...(lonn.resultat.variabel ? [{ navn: t('arbeidstid.resultat.variabelLonn'), verdi: lonn.resultat.variabel.verdi }] : []),
-                    ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: lonn.resultat.overtid.verdi }] : []),
+                    { id: 'lonn', navn: iPeriode ? t('arbeidstid.arbeidsplan.lonnStillingKort') : t('arbeidstid.arbeidsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
+                    ...(lonn.resultat.tillegg ? [{ id: 'tillegg' as const, navn: t('arbeidstid.arbeidsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
+                    ...(lonn.resultat.variabel ? [{ id: 'variabel' as const, navn: t('arbeidstid.resultat.variabelLonn'), verdi: lonn.resultat.variabel.verdi }] : []),
+                    ...(lonn.resultat.overtid ? [{ id: 'overtid' as const, navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: lonn.resultat.overtid.verdi }] : []),
                   ]}
                 />
               )}

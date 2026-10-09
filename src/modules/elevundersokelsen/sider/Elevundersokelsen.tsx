@@ -326,7 +326,8 @@ function Indekser({ d, serier, trinn, koder }: { d: Data; serier: readonly Serie
   const { t } = useTekst();
   const naa = d.skolear.length - 1;
   const x = (v: number) => `${((v - 1) / 4) * 100}%`;
-  const y = (i: number) => `${8 + i * 11}px`;
+  // Seriene står på hver sin linje, med plass til merket og ringen rundt (forslag 09.10.2026: de overlappet).
+  const y = (i: number) => `${10 + i * 16}px`;
   const akse = (
     <div class="eu-akse" aria-hidden="true">
       {[1, 2, 3, 4, 5].map((n) => (

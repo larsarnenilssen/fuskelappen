@@ -59,8 +59,8 @@ export default function Overtid() {
                 <Stillingsmaaler deler={[{ navn: t('arbeidstid.resultat.beskjeftigelse'), prosent: s.beskjeftigelse ?? 0 }]} />
                 <Belopsstolpe
                   deler={[
-                    { navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: resultat.betaling.verdi },
-                    { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: resultat.feriepenger.verdi },
+                    { id: 'lonn', navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: resultat.betaling.verdi },
+                    { id: 'feriepenger', navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: resultat.feriepenger.verdi },
                   ]}
                 />
                 <Oversiktsliste

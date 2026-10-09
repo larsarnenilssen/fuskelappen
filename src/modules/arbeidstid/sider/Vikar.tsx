@@ -64,8 +64,8 @@ export default function Vikar() {
               <Utregningskort tittel={t('arbeidstid.resultat.utbetaltLonn')} resultat={time.resultat.lonn} trinn={time.resultat.trinn} sammendrag={false}>
                 <Belopsstolpe
                   deler={[
-                    { navn: t('arbeidstid.resultat.lonn'), verdi: time.resultat.lonn.verdi },
-                    { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: time.resultat.feriepenger.verdi },
+                    { id: 'lonn', navn: t('arbeidstid.resultat.lonn'), verdi: time.resultat.lonn.verdi },
+                    { id: 'feriepenger', navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: time.resultat.feriepenger.verdi },
                   ]}
                 />
                 <Oversiktsliste

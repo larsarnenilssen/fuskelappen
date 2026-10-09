@@ -38,18 +38,20 @@
   --farge-sidekolonne: color-mix(in srgb, var(--farge-flate-2) 55%, var(--farge-bakgrunn));
   --farge-fokus: var(--p-fokus-lys);
   --farge-temafarge: var(--meta-temafarge-lys);
-  --diagram-undervisning: var(--p-blaa-700);
-  --diagram-motetid: var(--p-rav-700);
-  --diagram-annen: var(--p-groenn-700);
-  --diagram-planlegging: var(--p-turkis-700);
-  --diagram-funksjon: var(--p-lilla-700);
-  --diagram-selv: var(--p-graa-600);
+  --diagram-undervisning: var(--p-serie-blaa);
+  --diagram-motetid: var(--p-serie-oransje);
+  --diagram-annen: var(--p-serie-gronn);
+  --diagram-planlegging: var(--p-serie-gul);
+  --diagram-funksjon: var(--p-serie-fiolett);
+  --diagram-selv: var(--p-graa-400);
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-700);
   --diagram-over: var(--p-roed-700);
   --serie-1: var(--p-serie-blaa);
   --serie-2: var(--p-serie-oransje);
   --serie-3: var(--p-serie-gronn);
+  --serie-4: var(--p-serie-gul);
+  --serie-5: var(--p-serie-fiolett);
   --diagram-tekst-undervisning: var(--p-blaa-700);
   --diagram-tekst-annen: var(--p-groenn-700);
   --diagram-tekst-motetid: var(--p-rav-700);
@@ -62,15 +64,17 @@
   --fagtype-yff: var(--p-rav-700);
   --fagtype-andre: var(--p-graa-600);
   --vurdering-underveis: var(--p-blaa-100);
-  --vurdering-halvaar: var(--p-blaa-700);
-  --vurdering-eksamen: var(--p-lilla-700);
+  --vurdering-halvaar: var(--serie-1);
+  --vurdering-eksamen: var(--serie-5);
   /* Temaene i kalenderen (fase 6, pakke 5). Peker på diagramfargene, så lyst og mørkt tema følger med. */
   --kalender-inntak: var(--diagram-tekst-undervisning);
   --kalender-vurdering: var(--diagram-tekst-motetid);
   --kalender-eksamen: var(--diagram-tekst-funksjon);
   --kalender-skolerute: var(--diagram-tekst-annen);
   --kalender-regelverk: var(--diagram-tekst-selv);
-  --vurdering-standpunkt: var(--p-rav-700);
+  --vurdering-standpunkt: var(--serie-2);
+  --vurdering-tekst-halvaar: var(--p-blaa-700);
+  --vurdering-tekst-standpunkt: var(--p-rav-700);
   /* Delene i veiene til fag- og svennebrev (fase 6, pakke 6): skole, kontrakt i bedrift, praksis og prøven. Peker på
      fagtypefargene, så mørkt tema følger med. Prøven har fargen til Vurdering (bær). */
   --vei-skole: var(--fagtype-fellesfag);
@@ -109,11 +113,11 @@
   --farge-info-flate: var(--p-blaa-800);
   --farge-fokus: var(--p-fokus-mork);
   --farge-temafarge: var(--meta-temafarge-mork);
-  --diagram-undervisning: var(--p-blaa-500);
-  --diagram-motetid: var(--p-rav-500);
-  --diagram-annen: var(--p-groenn-500);
-  --diagram-planlegging: var(--p-turkis-500);
-  --diagram-funksjon: var(--p-lilla-500);
+  --diagram-undervisning: var(--p-serie-blaa-mork);
+  --diagram-motetid: var(--p-serie-oransje);
+  --diagram-annen: var(--p-serie-gronn-mork);
+  --diagram-planlegging: var(--p-serie-gul-mork);
+  --diagram-funksjon: var(--p-serie-fiolett-mork);
   --diagram-selv: var(--p-graa-500);
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-500);
@@ -121,6 +125,8 @@
   --serie-1: var(--p-serie-blaa-mork);
   --serie-2: var(--p-serie-oransje);
   --serie-3: var(--p-serie-gronn-mork);
+  --serie-4: var(--p-serie-gul-mork);
+  --serie-5: var(--p-serie-fiolett-mork);
   --diagram-tekst-undervisning: var(--p-blaa-300);
   --diagram-tekst-annen: var(--p-groenn-300);
   --diagram-tekst-motetid: var(--p-rav-300);
@@ -133,9 +139,11 @@
   --fagtype-yff: var(--p-rav-300);
   --fagtype-andre: var(--p-graa-400);
   --vurdering-underveis: var(--p-blaa-900);
-  --vurdering-halvaar: var(--p-blaa-300);
-  --vurdering-eksamen: var(--p-lilla-300);
-  --vurdering-standpunkt: var(--p-rav-300);
+  --vurdering-halvaar: var(--serie-1);
+  --vurdering-eksamen: var(--serie-5);
+  --vurdering-standpunkt: var(--serie-2);
+  --vurdering-tekst-halvaar: var(--p-blaa-300);
+  --vurdering-tekst-standpunkt: var(--p-rav-300);
   --vei-prove: var(--p-baer-300);
 }
 
@@ -170,11 +178,11 @@
     --farge-info-flate: var(--p-blaa-800);
     --farge-fokus: var(--p-fokus-mork);
     --farge-temafarge: var(--meta-temafarge-mork);
-    --diagram-undervisning: var(--p-blaa-500);
-    --diagram-motetid: var(--p-rav-500);
-    --diagram-annen: var(--p-groenn-500);
-    --diagram-planlegging: var(--p-turkis-500);
-    --diagram-funksjon: var(--p-lilla-500);
+    --diagram-undervisning: var(--p-serie-blaa-mork);
+    --diagram-motetid: var(--p-serie-oransje);
+    --diagram-annen: var(--p-serie-gronn-mork);
+    --diagram-planlegging: var(--p-serie-gul-mork);
+    --diagram-funksjon: var(--p-serie-fiolett-mork);
     --diagram-selv: var(--p-graa-500);
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-500);
@@ -182,6 +190,8 @@
     --serie-1: var(--p-serie-blaa-mork);
     --serie-2: var(--p-serie-oransje);
     --serie-3: var(--p-serie-gronn-mork);
+    --serie-4: var(--p-serie-gul-mork);
+    --serie-5: var(--p-serie-fiolett-mork);
     --diagram-tekst-undervisning: var(--p-blaa-300);
     --diagram-tekst-annen: var(--p-groenn-300);
     --diagram-tekst-motetid: var(--p-rav-300);
@@ -194,9 +204,11 @@
     --fagtype-yff: var(--p-rav-300);
     --fagtype-andre: var(--p-graa-400);
     --vurdering-underveis: var(--p-blaa-900);
-    --vurdering-halvaar: var(--p-blaa-300);
-    --vurdering-eksamen: var(--p-lilla-300);
-    --vurdering-standpunkt: var(--p-rav-300);
+    --vurdering-halvaar: var(--serie-1);
+    --vurdering-eksamen: var(--serie-5);
+    --vurdering-standpunkt: var(--serie-2);
+    --vurdering-tekst-halvaar: var(--p-blaa-700);
+    --vurdering-tekst-standpunkt: var(--p-rav-700);
     --vei-prove: var(--p-baer-300);
   }
 }
@@ -235,18 +247,20 @@
     --farge-info-flate: var(--p-blaa-100);
     --farge-fokus: var(--p-fokus-lys);
     --farge-temafarge: var(--meta-temafarge-lys);
-    --diagram-undervisning: var(--p-blaa-700);
-    --diagram-motetid: var(--p-rav-700);
-    --diagram-annen: var(--p-groenn-700);
-    --diagram-planlegging: var(--p-turkis-700);
-    --diagram-funksjon: var(--p-lilla-700);
-    --diagram-selv: var(--p-graa-600);
+    --diagram-undervisning: var(--p-serie-blaa);
+    --diagram-motetid: var(--p-serie-oransje);
+    --diagram-annen: var(--p-serie-gronn);
+    --diagram-planlegging: var(--p-serie-gul);
+    --diagram-funksjon: var(--p-serie-fiolett);
+    --diagram-selv: var(--p-graa-400);
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-700);
     --diagram-over: var(--p-roed-700);
     --serie-1: var(--p-serie-blaa);
     --serie-2: var(--p-serie-oransje);
     --serie-3: var(--p-serie-gronn);
+    --serie-4: var(--p-serie-gul);
+    --serie-5: var(--p-serie-fiolett);
     --diagram-tekst-undervisning: var(--p-blaa-700);
     --diagram-tekst-annen: var(--p-groenn-700);
     --diagram-tekst-motetid: var(--p-rav-700);
@@ -259,9 +273,11 @@
     --fagtype-yff: var(--p-rav-700);
     --fagtype-andre: var(--p-graa-600);
     --vurdering-underveis: var(--p-blaa-100);
-    --vurdering-halvaar: var(--p-blaa-700);
-    --vurdering-eksamen: var(--p-lilla-700);
-    --vurdering-standpunkt: var(--p-rav-700);
+    --vurdering-halvaar: var(--serie-1);
+    --vurdering-eksamen: var(--serie-5);
+    --vurdering-standpunkt: var(--serie-2);
+    --vurdering-tekst-halvaar: var(--p-blaa-700);
+    --vurdering-tekst-standpunkt: var(--p-rav-700);
     --vei-prove: var(--p-baer-700);
   }
 }
