@@ -17,6 +17,9 @@ updates:
     ignore:
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
+      # TypeScript 7 venter til typescript-eslint støtter den (peer typescript < 6.1 i 8.71). Tas ut når den gjør det.
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
     groups:
       npm-utvikling:
         dependency-type: development
