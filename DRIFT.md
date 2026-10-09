@@ -23,7 +23,8 @@ Jobbene går av seg selv i GitHub Actions. Eier får e-post bare når noe har g�
 | **Lokale regler** (`lokale-regler.yml`) | Når en PR som endrer `lokale/regler.yaml`, er flettet | Publiserer uten ny versjon (avgjørelse 093). | – |
 | **Dependabot** (`.github/dependabot.yml`) | Én gang i måneden | Grupperte PR-er for npm og Actions (avgjørelse 099). Se skillen `dependabot`. | – |
 | **Varsle eier** (`varsle.yml`) | Når en av jobbene over, publiseringen eller CI på `main` feiler | Lager eller oppdaterer saken for arbeidsflyten, og lukker den når det går bra igjen. | `feil` |
-| **Ukentlig kontroll og kvartalsrunde for fylkeslenkene** | Kommer | Bygges i en egen pakke. | – |
+| **Ukens kontroll** | Med kildesjekken | Nederst i kontrollsaken: fem punkter som ikke er kontrollert, med det viktigste først (tallene i kalkulatorene, så juridisk tunge tekster, til slutt begreper og fylker). Utvalget roterer med ukenummeret, og det som blir kontrollert, faller ut av seg selv. Gir ingen e-post (avgjørelse 106). | `kontroll` |
+| **Fylkeslenkene** (`npm run lenker:fylker`) | Med kildesjekken | Bekrefter lenkene til fylkenes sider med tittelen og prøver adressen med og uten www. Lagrer `content/fylker/lenker.yaml` på `main` etter testene. Lenker som ikke er bekreftet på åtte uker, kommer i kontrollsaken. Ingen egen kvartalsrunde (avgjørelse 106). | `kontroll` |
 
 Kildesjekken committer statusfilen hver mandag, også når ingenting er endret. Det holder de planlagte jobbene i live: GitHub slår dem av i offentlige repoer etter 60 dager uten aktivitet.
 

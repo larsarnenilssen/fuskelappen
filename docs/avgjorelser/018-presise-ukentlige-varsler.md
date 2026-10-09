@@ -22,3 +22,5 @@
 **Konsekvens:** Eier får én e-post i uken når noe er nytt, med nok informasjon til å avgjøre hva som skal gjøres. Nye fag og årstimetall fra Grep kommer ut i appen uten ny versjon. Lovdata-kilder har ingen tabeller og vises bare med endrede paragrafer. Steg 3–5: kontrollspørsmål og kontrollrunder, automatiske endringsforslag og godkjenning med avkrysning.
 
 **Endret 09.10.2026:** Publiseringen tar alle datamappene kildesjekken lagrer på `main`, ikke bare Grep og skoleregisteret, og alt testes før det lagres (avgjørelse 098).
+
+**Endret 09.10.2026:** Kontrollsaken har ukens kontroll nederst: fem punkter som ikke er kontrollert, valgt etter risiko. Saken står derfor åpen så lenge noe ikke er kontrollert, men ukens kontroll gir ikke e-post (avgjørelse 106).

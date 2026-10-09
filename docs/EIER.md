@@ -63,6 +63,10 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 Etter kildesjekken hver mandag samles alt du bør se på, i **én sak** under **Issues** med merket `kontroll`. E-postene følger reglene i punkt 6b.
 
+**Ukens kontroll:** Nederst i saken står fem punkter som ikke er kontrollert, med det viktigste først: tallene i kalkulatorene, så juridisk tunge tekster, til slutt begreper og fylker. Les dem mot kildene og spørsmålene, kryss av det som stemmer, og skriv `/godkjent`. Det du ikke krysser av, kommer igjen en senere uke. Ukens kontroll gir ingen e-post, så åpne saken selv, for eksempel på mandager. Saken står åpen så lenge noe ikke er kontrollert. Om lag et kvarter i uken holder (avgjørelse 106).
+
+**Fylkeslenkene:** Lenker til fylkene som ikke har svart med riktig side på åtte uker, står i saken. Åpne dem, kryss av dem som viser riktig side, og skriv `/godkjent`. Viser en lenke feil side, gi lenken til Claude.
+
 ### 6b. Varslene du får på e-post
 
 Du får e-post fra GitHub når noe har gått galt eller bør ses på, men ikke når alt virker (avgjørelse 085). Alle varslene er saker under **Issues**, og alle følger samme regel:
@@ -86,7 +90,7 @@ Endringsforslag fra kildesjekken kommer som PR (punkt 1), og GitHub sender e-pos
 
 **E-post fra GitHub Actions:** GitHub sender også sin egen korte e-post når en arbeidsflyt feiler («Run failed»). Den sier lite. Saken med merket `feil` forklarer det samme. Vil du slippe den doble e-posten, kan du slå av e-post for Actions under GitHub → Settings → Notifications → Actions.
 
-**Hva du ikke får e-post om:** at ting virker (nyheter, publiseringer, oppetiden, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
+**Hva du ikke får e-post om:** ukens kontroll (den står i kontrollsaken, men gir ingen e-post eller påminnelse alene), at ting virker (nyheter, publiseringer, oppetiden, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
 
 Saken kan ha disse delene:
 
@@ -209,12 +213,12 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 
 **Praksis og tolkninger:** Noe i appen står ikke i kildene. Det bygger på praksis eller på valg du har gjort, for eksempel 21,67 arbeidsdager per måned, 45 timer planleggingsdager for alle og variabel lønn for deltidsansatte. Alt dette står i `content/kontroll/praksis.yaml` og i kontrolloversikten, med hva appen gjør og hvem som har bestemt det.
 
-**Kontrollrundene:** Første mandag i **mai**, når hovedtariffavtalen endres, og første mandag i **august**, før skoleåret, lager kildesjekken en egen sak med merket `kontrollrunde`. Den har tre deler:
+**Kontrollrundene:** Første mandag i **mai**, når hovedtariffavtalen endres, og første mandag i **august**, før skoleåret, lager kildesjekken en egen sak med merket `kontrollrunde`. Den har fire deler:
 
 - **Praksis og tolkninger** som ikke er bekreftet, eller som ble bekreftet for mer enn 12 måneder siden.
 - **Det som bør kontrolleres på nytt:** innhold du har kontrollert, men der kontrollen er over 12 måneder gammel eller kilden er endret siden.
 - **Lenker til Vilbli** fra tilbudsoversikten, som ikke kan sjekkes automatisk (se punkt 15).
-- **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene.
+- **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene. Selve kontrollen av det skjer i ukens kontroll (punkt 6).
 
 Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.
 

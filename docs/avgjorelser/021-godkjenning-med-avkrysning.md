@@ -17,3 +17,5 @@
 - **AGENTS.md:** Claude setter fortsatt aldri `kontrollert`, `bekreftet` eller `godkjent_fingeravtrykk` på eget initiativ. Godkjenningsjobben gjør det bare på eiers kommando.
 
 **Konsekvens:** Eier godkjenner direkte i saken på telefonen, uten å gå via Claude. Merkene «Kontrollert» vises i appen fra neste versjon. Neste kildesjekk lukker punkter som er i orden.
+
+**Endret 09.10.2026:** Ukens kontroll i kontrollsaken bruker de samme merkene, så avkrysning og `/godkjent` virker der. Lenker til fylkene som ikke er bekreftet på åtte uker, har merket `fylkeslenke:fylke:tema`, og avkrysning gir dagens dato i `bekreftet` i `content/fylker/lenker.yaml` (avgjørelse 106).

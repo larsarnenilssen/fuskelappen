@@ -1,7 +1,10 @@
 # Lenker til fylkeskommunenes egne sider om videregående opplæring, per tema (eier 05.10.2026, avgjørelse 061).
 # Fylkenes tekster kopieres ikke. Appen lenker til siden i fylket brukeren har valgt.
-# Adressene er funnet med nettsøk 05.10.2026. «bekreftet» er datoen siden svarte med riktig tittel. null betyr at
-# adressen bare er sett i søk, fordi nettstedet stenger skymiljøet. Lenkesjekken holder dette oppdatert.
+# Adressene er funnet med nettsøk 05.10.2026. «bekreftet» er datoen siden sist svarte med en tittel som passer temaet.
+# Det er ikke eiers kontroll. Kildesjekken bekrefter lenkene hver uke (npm run lenker:fylker, avgjørelse 106) og
+# fornyer datoen når den er eldre enn fire uker. Virker bare adressen med eller uten www, byttes den. null betyr at
+# lenken aldri er bekreftet. Lenker som ikke er bekreftet på åtte uker, kommer i kontrollsaken, og eier kan bekrefte dem
+# der med /godkjent.
 # Mangler et tema, vises fylkets side for videregående (forside).
 temaer: [forside, inntak, klage-inntak, sprak, tilrettelegging, eksamen, klage-standpunkt, privatist, fagprove]
 kontrollert: null
@@ -35,13 +38,13 @@ fylker:
   - fylke: "15"
     navn: Møre og Romsdal fylkeskommune
     lenker:
-      inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/innsoking-til-vidaregaande-opplaring/sok-vidaregaande-opplaring/", bekreftet: null }
+      inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/innsoking-til-vidaregaande-opplaring/sok-vidaregaande-opplaring/", bekreftet: 2026-10-09 }
       klage-inntak: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage/", bekreftet: 2026-10-07 }
-      tilrettelegging: { url: "https://mrfylke.no/tenester/skole-og-opplaring/ppt-og-oppfolgingstenesta/ppt-i-skolen/", bekreftet: null }
-      eksamen: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: null }
+      tilrettelegging: { url: "https://mrfylke.no/tenester/skole-og-opplaring/ppt-og-oppfolgingstenesta/ppt-i-skolen/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: 2026-10-09 }
       klage-standpunkt: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-skole/klage/", bekreftet: 2026-10-07 }
-      privatist: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-privatistar/meld-deg-opp-til-eksamen/", bekreftet: null }
-      fagprove: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-bedrift/praktisk-for-larlingar/fag-sveine-og-kompetanseprove/", bekreftet: null }
+      privatist: { url: "https://mrfylke.no/tenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-privatistar/meld-deg-opp-til-eksamen/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://mrfylke.no/tenester/skole-og-opplaring/opplaring-i-bedrift/praktisk-for-larlingar/fag-sveine-og-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "18"
     navn: Nordland fylkeskommune
     lenker:
@@ -57,15 +60,15 @@ fylker:
   - fylke: "31"
     navn: Østfold fylkeskommune
     lenker:
-      forside: { url: "https://ofk.no/tjenester/skole-og-opplaring/", bekreftet: null }
-      inntak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
-      klage-inntak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
-      sprak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/minoritetsspraklige/", bekreftet: null }
-      tilrettelegging: { url: "https://ofk.no/tjenester/skole-og-opplaring/ppt-oppfolgingstjenesten/pp-tjenesten-ppt/", bekreftet: null }
-      eksamen: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-elever/karakter-og-klage/", bekreftet: null }
-      klage-standpunkt: { url: "https://ofk.no/tjenester/skole-og-opplaring/klage-pa-karakter/", bekreftet: null }
-      privatist: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/privatisteksamen/karakter-og-klage/", bekreftet: null }
-      fagprove: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-bedrift/fag-svenne-og-kompetanseprove/", bekreftet: null }
+      forside: { url: "https://ofk.no/tjenester/skole-og-opplaring/", bekreftet: 2026-10-09 }
+      inntak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
+      klage-inntak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
+      sprak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/minoritetsspraklige/", bekreftet: 2026-10-09 }
+      tilrettelegging: { url: "https://ofk.no/tjenester/skole-og-opplaring/ppt-oppfolgingstjenesten/pp-tjenesten-ppt/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-elever/", bekreftet: 2026-10-09 }
+      klage-standpunkt: { url: "https://ofk.no/tjenester/skole-og-opplaring/klage-pa-karakter/", bekreftet: 2026-10-09 }
+      privatist: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/privatisteksamen/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-bedrift/fag-svenne-og-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "32"
     navn: Akershus fylkeskommune
     lenker:
@@ -81,15 +84,15 @@ fylker:
   - fylke: "33"
     navn: Buskerud fylkeskommune
     lenker:
-      forside: { url: "https://bfk.no/tjenester/skole-og-opplaring/", bekreftet: null }
-      inntak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
-      klage-inntak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
+      forside: { url: "https://bfk.no/tjenester/skole-og-opplaring/", bekreftet: 2026-10-09 }
+      inntak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
+      klage-inntak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
       sprak: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-skole/minoritetsspraklige-og-samiske-elever/", bekreftet: 2026-10-07 }
-      tilrettelegging: { url: "https://bfk.no/tjenester/skole-og-opplaring/ppt-oppfolgingstjenesten/pp-tjenesten-ppt/", bekreftet: null }
-      eksamen: { url: "https://bfk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: null }
-      klage-standpunkt: { url: "https://bfk.no/tjenester/skole-og-opplaring/klage-pa-karakter/", bekreftet: null }
-      privatist: { url: "https://bfk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/privatisteksamen/meld-deg-opp-til-eksamen/", bekreftet: null }
-      fagprove: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-bedrift/fag-svenne-og-kompetanseprove/", bekreftet: null }
+      tilrettelegging: { url: "https://bfk.no/tjenester/skole-og-opplaring/ppt-oppfolgingstjenesten/pp-tjenesten-ppt/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://bfk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/", bekreftet: 2026-10-09 }
+      klage-standpunkt: { url: "https://bfk.no/tjenester/skole-og-opplaring/klage-pa-karakter/", bekreftet: 2026-10-09 }
+      privatist: { url: "https://bfk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/privatisteksamen/meld-deg-opp-til-eksamen/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://bfk.no/tjenester/skole-og-opplaring/opplaring-i-bedrift/fag-svenne-og-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "34"
     navn: Innlandet fylkeskommune
     lenker:
@@ -104,47 +107,47 @@ fylker:
   - fylke: "39"
     navn: Vestfold fylkeskommune
     lenker:
-      forside: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/", bekreftet: null }
-      inntak: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
-      klage-inntak: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/klagerett/", bekreftet: null }
-      tilrettelegging: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/pp-tjenesten/", bekreftet: null }
-      eksamen: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/eksamen/", bekreftet: null }
-      klage-standpunkt: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/klagerett/", bekreftet: null }
-      fagprove: { url: "https://www.vestfoldfylke.no/no/meny/tjenester/opplaring/opplaring-i-bedrift/har-du-laretid-i-bedrift-og-lurer-pa-noe/fag--svenne--og-kompetanseprove/", bekreftet: null }
+      forside: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/", bekreftet: 2026-10-09 }
+      inntak: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
+      klage-inntak: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/klagerett/", bekreftet: 2026-10-09 }
+      tilrettelegging: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/pp-tjenesten/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/eksamen/", bekreftet: 2026-10-09 }
+      klage-standpunkt: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/klagerett/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://vestfoldfylke.no/no/meny/tjenester/opplaring/opplaring-i-bedrift/har-du-laretid-i-bedrift-og-lurer-pa-noe/fag--svenne--og-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "40"
     navn: Telemark fylkeskommune
     lenker:
-      forside: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/", bekreftet: null }
-      inntak: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/soke-skoleplass/", bekreftet: null }
-      klage-inntak: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/klagerett/", bekreftet: null }
-      sprak: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/minoritetsspraklige/opplaringstilbud-minoritetsspraklige-elever/", bekreftet: null }
-      tilrettelegging: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/tilrettelegging-av-opplaringen/", bekreftet: null }
-      eksamen: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/eksamen/eksamen-for-elever/", bekreftet: null }
-      klage-standpunkt: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/klagerett/", bekreftet: null }
-      privatist: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/eksamen/eksamen-for-privatister/", bekreftet: null }
-      fagprove: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-bedrift/fag--svenne--og-kompetanseprove/", bekreftet: null }
+      forside: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/", bekreftet: 2026-10-09 }
+      inntak: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
+      klage-inntak: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/klagerett/", bekreftet: 2026-10-09 }
+      sprak: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/minoritetsspraklige/opplaringstilbud-minoritetsspraklige-elever/", bekreftet: 2026-10-09 }
+      tilrettelegging: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-skole/tilrettelegging-av-opplaringen/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/eksamen/eksamen-for-elever/", bekreftet: 2026-10-09 }
+      klage-standpunkt: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/klagerett/", bekreftet: 2026-10-09 }
+      privatist: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/eksamen/eksamen-for-privatister/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://www.telemarkfylke.no/no/meny/tjenester/opplaring-og-folkehelse/opplaring-i-bedrift/fag--svenne--og-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "42"
     navn: Agder fylkeskommune
     lenker:
-      forside: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/", bekreftet: null }
+      forside: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/", bekreftet: 2026-10-09 }
       inntak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/skolestruktur-innhold-og-rammeverk/inntaksregler-og-inntaksmodell/", bekreftet: 2026-10-07 }
       klage-inntak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/klage-pa-vedtak/", bekreftet: 2026-10-07 }
-      sprak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-skole/flerspraklige-elever/", bekreftet: null }
-      tilrettelegging: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/pedagogisk-psykologisk-tjeneste-ppt/henvisning-til-ppt/", bekreftet: null }
-      eksamen: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-elever/", bekreftet: null }
-      privatist: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-privatister/for-eksamen/pamelding-betaling-og-eksamensdatoer/", bekreftet: null }
-      fagprove: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-bedrift/fagprove-svenneprove-eller-kompetanseprove/vurdering-og-klagerett/", bekreftet: null }
+      sprak: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-skole/flerspraklige-elever/", bekreftet: 2026-10-09 }
+      tilrettelegging: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/pedagogisk-psykologisk-tjeneste-ppt/henvisning-til-ppt/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-elever/", bekreftet: 2026-10-09 }
+      privatist: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-privatister/for-eksamen/pamelding-betaling-og-eksamensdatoer/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-bedrift/fagprove-svenneprove-eller-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "46"
     navn: Vestland fylkeskommune
     lenker:
-      forside: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/", bekreftet: null }
-      inntak: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/soknad-inntak/", bekreftet: null }
-      sprak: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/fremhevde-sider/minoritetsspraklege/", bekreftet: null }
-      tilrettelegging: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/tilrettelegging-ved-laringsutfordringar/", bekreftet: null }
-      eksamen: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/", bekreftet: null }
-      klage-standpunkt: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/klage-pa-standpunktkarakter-og-karakter-i-orden-og-atferd/", bekreftet: null }
-      privatist: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/privatist/", bekreftet: null }
-      fagprove: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/laerling/fagproven/", bekreftet: null }
+      forside: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/", bekreftet: 2026-10-09 }
+      inntak: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/soknad-inntak/", bekreftet: 2026-10-09 }
+      sprak: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/fremhevde-sider/minoritetsspraklege/", bekreftet: 2026-10-09 }
+      tilrettelegging: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/tilrettelegging-ved-laringsutfordringar/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/", bekreftet: 2026-10-09 }
+      klage-standpunkt: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/klage-pa-standpunktkarakter-og-karakter-i-orden-og-atferd/", bekreftet: 2026-10-09 }
+      privatist: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/privatist/", bekreftet: 2026-10-09 }
+      fagprove: { url: "https://www.vestlandfylke.no/utdanning-og-karriere/laerling/fagproven/", bekreftet: 2026-10-09 }
   - fylke: "50"
     navn: Trøndelag fylkeskommune
     lenker:
@@ -161,7 +164,7 @@ fylker:
     lenker:
       forside: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/", bekreftet: 2026-10-05 }
       inntak: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/slik-soker-du-skoleplass/", bekreftet: 2026-10-05 }
-      klage-inntak: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/klage/", bekreftet: null }
+      klage-inntak: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/klage/", bekreftet: 2026-10-09 }
       sprak: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/flyktninger-og-innvandrere/", bekreftet: 2026-10-05 }
       tilrettelegging: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/elev-og-larlingtjenester/pedagogisk-psykologisk-tjeneste-ppt/", bekreftet: 2026-10-05 }
       eksamen: { url: "https://www.tromsfylke.no/tjenester/skole-og-opplaring/eksamen-fag-og-svenneprove/eksamen-for-elever/", bekreftet: 2026-10-05 }

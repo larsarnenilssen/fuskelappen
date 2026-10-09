@@ -10,7 +10,7 @@ Status:
 - **endret:** notatet har minst én linje «**Endret …**» nederst, eller en del som sier «(Erstattet i avgjørelse NNN …)». Avgjørelsene disse linjene viser til, står etter «av». Det som står nederst, gjelder foran det over.
 - **erstattet:** notatet gjelder ikke lenger. Se avgjørelsen som erstattet det.
 
-105 avgjørelser: 75 gjeldende, 29 endret og 1 erstattet.
+106 avgjørelser: 75 gjeldende, 30 endret og 1 erstattet.
 
 | Nr. | Avgjørelse | Status |
 |---|---|---|
@@ -31,10 +31,10 @@ Status:
 | 015 | [Periodebeskjeftigelse er en del av Arbeidsplan](015-periode-i-arbeidsplan.md) | gjeldende |
 | 016 | [Brukserklæring i stedet for «ikke kontrollert»-merker](016-brukserklaering-i-stedet-for-kontrollmerker.md) | endret av 064 |
 | 017 | [Automatisk kontroll av regelverdier mot kildeteksten](017-automatisk-kontroll-av-regelverdier.md) | gjeldende |
-| 018 | [Presise ukentlige varsler og registerdata som oppdateres automatisk](018-presise-ukentlige-varsler.md) | endret av 098 |
+| 018 | [Presise ukentlige varsler og registerdata som oppdateres automatisk](018-presise-ukentlige-varsler.md) | endret av 098, 106 |
 | 019 | [Kontrollspørsmål, praksis og kontrollrunder](019-kontrollsporsmal-praksis-og-kontrollrunder.md) | gjeldende |
 | 020 | [Automatiske endringsforslag fra kildesjekken](020-automatiske-endringsforslag.md) | gjeldende |
-| 021 | [Godkjenning med avkrysning og /godkjent](021-godkjenning-med-avkrysning.md) | gjeldende |
+| 021 | [Godkjenning med avkrysning og /godkjent](021-godkjenning-med-avkrysning.md) | endret av 106 |
 | 022 | [Fag og læreplaner fra Grep](022-fag-og-laereplaner-fra-grep.md) | gjeldende |
 | 023 | [Kobling fra fagkode til årsramme](023-kobling-fagkode-arsramme.md) | gjeldende |
 | 024 | [Fag- og timefordeling og tilbudsstruktur](024-fag-og-timefordeling-og-tilbudsstruktur.md) | gjeldende |
@@ -75,7 +75,7 @@ Status:
 | 059 | [Eksamen og klage, og eksamensdatoene fra Udir og fylkene](059-eksamen-klage-og-eksamensdatoer.md) | gjeldende |
 | 060 | [Lager for Grep-hentingen](060-grep-lager.md) | gjeldende |
 | 061 | [Fylkene og lokale forskrifter](061-fylkene-og-lokale-forskrifter.md) | gjeldende |
-| 062 | [Lenkesjekk for alle lenker i appen](062-lenkesjekk.md) | endret |
+| 062 | [Lenkesjekk for alle lenker i appen](062-lenkesjekk.md) | endret av 106 |
 | 063 | [Kildesjekkens rytme](063-kildesjekkens-rytme.md) | endret av 098 |
 | 064 | [Tilbakemelding på e-post](064-tilbakemelding-pa-epost.md) | gjeldende |
 | 065 | [Eget domene: jukselappen.no](065-eget-domene.md) | gjeldende |
@@ -98,7 +98,7 @@ Status:
 | 082 | [Stiler som lastes med sidene](082-stiler-som-lastes-med-sidene.md) | gjeldende |
 | 083 | [Målformene lastes hver for seg](083-malformene-lastes-hver-for-seg.md) | gjeldende |
 | 084 | [Nyhetene hentes og publiseres hver dag](084-nyhetene-hentes-og-publiseres-hver-dag.md) | endret av 098 |
-| 085 | [Varsler til eier](085-varsler-til-eier.md) | endret av 099 |
+| 085 | [Varsler til eier](085-varsler-til-eier.md) | endret av 099, 106 |
 | 086 | [Dagens jukselapp](086-dagens-jukselapp.md) | endret av 102 |
 | 087 | [Elevundersøkelsen som egen modul, og Skolemiljø får nytt navn](087-elevundersokelsen-som-egen-modul.md) | gjeldende |
 | 088 | [Melding om ny versjon, med det som er nytt](088-melding-om-ny-versjon.md) | gjeldende |
@@ -119,3 +119,4 @@ Status:
 | 103 | [«Skule» på nynorsk i innholdet](103-nynorsk-skule.md) | endret |
 | 104 | [Sikkerhetskopien kan gjenopprettes](104-gjenopprett-sikkerhetskopi.md) | gjeldende |
 | 105 | [Fra faser til drift: DRIFT.md, arkivet, skills og oversikten over avgjørelsene](105-drift.md) | gjeldende |
+| 106 | [Plan for kontrollen: ukens kontroll og fylkeslenkene](106-plan-for-kontrollen.md) | gjeldende |
