@@ -2,6 +2,8 @@
 
 Til eier, 09.10.2026. Svar gjerne punkt for punkt (f.eks. «G1 ja, G3 A»).
 
+*Status 09.10.2026:* Eier svarte «Flott redesign; jeg liker det. Jeg ønsker G3 B.» Rådene gjelder for G1, G2 og G4–G7, og G3 er B: hvert fag har sin farge etter tur (blå, oransje, grønn og gul), og funksjonene er fiolette. Levert i 1.1.0, sammen med rettingen av «Til toppen» over linjen med resultatet. Avgjørelse 096.
+
 **Ønsket ditt:** Vurder farger, oppløsning, utseende og proporsjoner i grafikken i kalkulatorene, først og fremst i Arbeidstid, og i Underveis- og sluttvurdering og andre grafikker som er eldre enn Videregående i tall.
 
 **Skissen** ligger i testversjonen: https://jukselappen.no/test/. Grafikken i disse er endret: Arbeidsplan, Beskjeftigelse, Vikartimer, Overtid, Underveis- og sluttvurdering og Elevundersøkelsen. Resten av appen er som før. Skissen regner og lagrer som appen.

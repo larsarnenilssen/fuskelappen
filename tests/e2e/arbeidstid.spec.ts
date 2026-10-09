@@ -536,6 +536,58 @@ test.describe('arbeidstid', () => {
     await expect(forklaring).not.toContainText('Fag 1');
   });
 
+  test('stolpen har samme høyde på alle skjermer, fagene hver sin farge og funksjonene fiolett, som prikken i kortet (eier 09.10.2026)', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('140');
+    await page.getByRole('button', { name: 'Legg til fag' }).click();
+    await velgFag(page, 'matematikk r1', 'Informasjonsteknologi');
+    await page.getByLabel('Antall årstimer').last().fill('140');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByLabel('Funksjon 1: Navn').fill('Kontaktlærer');
+    await page.getByLabel('Funksjon 1: Prosent').fill('10');
+
+    const stolpe = page.locator('.resultatkort .stolpe').first();
+    // Stolpen er HTML med fast høyde (0,75rem), ikke et bilde som skaleres med bredden.
+    expect((await stolpe.locator('.stolpe-spor').boundingBox())?.height).toBe(12);
+    const farge = (l: Locator) => l.evaluate((el) => getComputedStyle(el).backgroundColor);
+    const deler = stolpe.locator('.stolpe-del');
+    await expect(deler).toHaveCount(3);
+    const [fag1, fag2, funksjon] = [await farge(deler.nth(0)), await farge(deler.nth(1)), await farge(deler.nth(2))];
+    expect(new Set([fag1, fag2, funksjon]).size).toBe(3);
+    // Prikken i fagkortet har samme farge som faget i stolpen.
+    const prikk = page.locator('.fagkortliste > .fagkort').nth(1).locator('.fagkort-prikk').first();
+    expect(await farge(prikk)).toBe(fag2);
+    const funksjonsprikk = page.locator('.funksjonskort .fagkort-prikk').first();
+    expect(await farge(funksjonsprikk)).toBe(funksjon);
+  });
+
+  test('«Til toppen» står over linjen med resultatet, ikke oppå den (eier 09.10.2026)', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('140');
+    await page.getByRole('button', { name: 'Legg til fag' }).click();
+    await velgFag(page, 'matematikk r1', 'Informasjonsteknologi');
+    await page.getByLabel('Antall årstimer').last().fill('140');
+    // Rull til resultatkortet er rett under skjermen, så linjen med resultatet står nederst. Er skjemaet ved siden av
+    // resultatet (skrivebord), rulles det til etter kortet.
+    await page.evaluate(() => {
+      const kort = document.querySelector('.resultatkort')?.getBoundingClientRect();
+      if (!kort) return;
+      const over = kort.top + window.scrollY - window.innerHeight - 20;
+      window.scrollTo(0, over > window.innerHeight ? over : kort.bottom + window.scrollY + 20);
+    });
+    const linje = page.locator('.resultatlinje button');
+    const knapp = page.getByRole('button', { name: 'Til toppen' });
+    test.skip((await knapp.count()) === 0 || (await linje.count()) === 0, 'Siden er for kort til at begge vises på denne skjermen.');
+    await expect(linje).toBeVisible();
+    await expect(knapp).toBeVisible();
+    const a = await linje.boundingBox();
+    const b = await knapp.boundingBox();
+    expect(a && b).toBeTruthy();
+    if (a && b) expect(b.y + b.height).toBeLessThanOrEqual(a.y);
+  });
+
   test('funksjoner kan ha bare tillegg, bare tid eller begge deler', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();

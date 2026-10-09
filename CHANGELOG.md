@@ -4,9 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [1.1.0] – 2026-10-09
+
 ### Endret
 
+- **Ny grafikk i kalkulatorene** (Arbeidsplan, Beskjeftigelse, Vikartimer og Overtid):
+  - Stolpene er like høye på mobil og skrivebord, med litt luft mellom delene og tekstene i vanlig størrelse.
+  - Klarere farger som også skilles ved fargesvakt syn, i lys og mørk visning.
+  - Årsverket har ikke lenger prosenttallene inni stolpen. De står i tabellen under.
+  - Delene av lønnen har faste farger.
+- **Skoleåret i Underveis- og sluttvurdering:** tynnere tidslinje, etikettene i tekstfarge og standpunkt i oransje.
 - **Legg til fag og Legg til funksjon** i Arbeidsplan og Beskjeftigelse lukker kortene som står fra før, så det nye kortet står åpent under dem.
+
+### Rettet
+
+- «Til toppen» dekket linjen med resultatet nederst i kalkulatorene. Knappen står nå over linjen.
+- Punktene i Elevundersøkelsen lå oppå hverandre, så sirkelen så ut som en halvsirkel.
 
 ## [1.0.3] – 2026-10-09
 

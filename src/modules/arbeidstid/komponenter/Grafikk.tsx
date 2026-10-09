@@ -7,7 +7,7 @@ import { medEnhet, tallTekst } from './Utregning.tsx';
 export interface Stolpedel {
   navn: string;
   prosent: number;
-  /** Fag er undervisning og står i fargen til undervisning, funksjoner i fargen til funksjoner, som i årsverket. */
+  /** Fag får farger etter tur. Funksjoner står i fargen til funksjoner, som i årsverket. */
   type?: 'fag' | 'funksjon';
 }
 
@@ -76,9 +76,12 @@ export function Stolpe({
   );
 }
 
+/** Fargene til fagene etter tur: de fire første i paletten for figurene, som prikken i fagkortene (eier 09.10.2026). */
+const fagfarger = ['serie-1', 'serie-2', 'serie-3', 'serie-4'] as const;
+
 /**
- * Stolpe for beskjeftigelsen mot stillingen, med strek ved stillingen. Fagene står i fargen til undervisning og
- * funksjonene i fargen til funksjoner, som i årsverket, skilt med mellomrom og navngitt i forklaringen. Delen ut over
+ * Stolpe for beskjeftigelsen mot stillingen, med strek ved stillingen. Hvert fag har sin farge etter tur, og
+ * funksjonene står i fargen til funksjoner, som i årsverket, skilt med mellomrom og navngitt i forklaringen. Delen ut over
  * stillingen er markert: opp til hel stilling (100 %) som variabel lønn når stillingen er mindre, og over hel stilling
  * som overtid.
  */
@@ -97,7 +100,9 @@ export function Stillingsmaaler({
   const { t } = useTekst();
   const sum = deler.reduce((s, d) => s + d.prosent, 0);
   const skala = Math.max(grense, sum, 1);
-  const farge = (d: Stolpedel) => (d.type === 'funksjon' ? 'funksjonstid' : 'undervisning');
+  // Fagene telles for seg, så funksjonene ikke tar en farge fra fagene.
+  let fag = 0;
+  const farger = deler.map((d) => (d.type === 'funksjon' ? 'funksjonstid' : fagfarger[fag++ % fagfarger.length]));
   const tekst = beskrivelse ?? t('arbeidstid.grafikk.stilling', { sum: tallTekst(sum), deler: deler.map((d) => `${d.navn} ${tallTekst(d.prosent)} %`).join(', '), grense: tallTekst(grense) });
   // Det som går ut over stillingen, legges over delene: variabel lønn opp til hel stilling, og overtid over den.
   const markert: { fra: number; til: number; farge: string }[] = [];
@@ -106,7 +111,7 @@ export function Stillingsmaaler({
   return (
     <figure class="figur">
       <Stolpe
-        deler={deler.map((d) => ({ verdi: d.prosent, farge: farge(d) }))}
+        deler={deler.map((d, i) => ({ verdi: d.prosent, farge: farger[i] ?? 'serie-1' }))}
         skala={skala}
         spor={grense}
         markert={markert}
@@ -117,7 +122,7 @@ export function Stillingsmaaler({
         <ul class="fordeling-forklaring fordeling-forklaring-rad">
           {deler.map((d, i) => (
             <li key={i}>
-              <span class={`fordeling-farge fordeling-del-${farge(d)}`} aria-hidden="true" />
+              <span class={`fordeling-farge fordeling-del-${farger[i] ?? 'serie-1'}`} aria-hidden="true" />
               <span>
                 {d.navn}: {tallTekst(d.prosent)} %
               </span>

@@ -3728,10 +3728,22 @@ p.fagkort-tittel {
   padding-block: var(--rom-2);
 }
 
-/* Fagene har fargen til undervisning, som i stolpen for beskjeftigelse og i årsverket (prikken i Arbeidsplan, forslag
-   09.10.2026). */
-.skjemadel .fagkortliste > .fagkort {
-  --rad: var(--diagram-undervisning);
+/* Fagene får hver sin farge etter tur, som i stolpen for beskjeftigelse (prikken i Arbeidsplan). Fargene er de fire
+   første i paletten for figurene. Funksjonene har fiolett (eier 09.10.2026, G3 B i grafikk-forslag.md). */
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 1) {
+  --rad: var(--serie-1);
+}
+
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 2) {
+  --rad: var(--serie-2);
+}
+
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 3) {
+  --rad: var(--serie-3);
+}
+
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 4) {
+  --rad: var(--serie-4);
 }
 
 .skjemadel .fagkortliste {
@@ -3816,6 +3828,12 @@ p.fagkort-tittel {
   font-weight: 600;
   box-shadow: var(--skygge-flytende);
   cursor: pointer;
+}
+
+/* Når linjen med resultatet står nederst i en kalkulator, står knappen over den, så den ikke dekker resultatet
+   (eier 09.10.2026). */
+:root:has(.resultatlinje) .til-toppen {
+  bottom: calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--strek) + var(--trykkflate) + var(--rom-3));
 }
 
 /* Hele overskriftsraden i fagsøket åpner og lukker gruppen, ikke bare teksten (eier 02.10.2026). */
