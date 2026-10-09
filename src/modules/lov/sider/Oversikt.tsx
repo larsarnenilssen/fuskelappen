@@ -1,5 +1,6 @@
-// Regelverk (avgjørelse 039): søket i alle dokumentene øverst, og så dokumentene i grupper som kan legges sammen:
-// lover, forskrifter, lokale forskrifter og avtaler (eier 02.10.2026). Lokale forskrifter vises bare når brukeren har
+// Regelverk (avgjørelse 039): søket i alle dokumentene øverst, og så dokumentene i grupper med overskrift: lover,
+// forskrifter, lokale forskrifter og avtaler (eier 02.10.2026). Gruppene står åpne, så dokumentene synes med en gang
+// (avgjørelse 100). Lokale forskrifter vises bare når brukeren har
 // valgt fylket, og skolens egne regler bare når skolen er valgt, merket «Skolen din» (avgjørelse 061). Alle dokumentene
 // har dato for ikrafttredelse og siste endring (eier 05.10.2026).
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
@@ -8,7 +9,6 @@ import { PRIVATSKOLEDOKUMENTER } from '../../../core/privatskole.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { oversiktsid } from '../../favoritter.ts';
-import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import { avtaler, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
 import { dokumentnavn, dokumentRute, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
@@ -30,32 +30,41 @@ interface Rad {
 const LOKAL_REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'skoleregler-skole', 'inntak', 'skolerute', 'skyss', 'fagfordeling'];
 
 /**
- * En gruppe dokumenter i en rubrikk som kan legges sammen, med antallet til høyre. Lukket fra start, på mobil og
- * skrivebord, så oversikten viser gruppene (eier 06.10.2026). Det som er åpnet, huskes for siden.
+ * En gruppe dokumenter i et kort med overskriften på en myk flate og antallet til høyre. Gruppene står åpne, så
+ * brukeren ser dokumentene med en gang (avgjørelse 100, før lukket etter eier 06.10.2026).
  */
 function Gruppe({ nokkel, tittel, rader, children }: { nokkel: string; tittel: string; rader: readonly Rad[]; children?: preact.ComponentChildren }) {
+  const id = `lov-gruppe-${nokkel}`;
   return (
-    <Rubrikk nokkel={`lov-gruppe-${nokkel}`} tittel={tittel} lukket hoyre={rader.length > 0 ? formaterTall(rader.length) : null}>
-      {rader.length > 0 && (
-        <ul class="liste">
-          {rader.map((r) => (
-            <li key={r.id}>
-              <a class="listelenke" href={`#${dokumentRute(r.id)}`}>
-                <span class="listelenke-tekst">
-                  <span class="listelenke-tittel" lang={r.lang}>
-                    {r.tittel}
-                    {r.merke && <span class="merke merke-skole">{r.merke}</span>}
+    <section class="rubrikk lv-gruppe" data-rubrikk={id} aria-labelledby={id}>
+      <h2 class="rubrikk-tittel lv-gruppe-tittel" id={id}>
+        <span>{tittel}</span>
+        {/* Mellomrommet skiller tittelen og tallet for skjermlesere. Det vises ikke i flex. */}
+        {rader.length > 0 && ' '}
+        {rader.length > 0 && <span class="rubrikk-hoyre tall">{formaterTall(rader.length)}</span>}
+      </h2>
+      <div class="rubrikk-innhold">
+        {rader.length > 0 && (
+          <ul class="liste">
+            {rader.map((r) => (
+              <li key={r.id}>
+                <a class="listelenke" href={`#${dokumentRute(r.id)}`}>
+                  <span class="listelenke-tekst">
+                    <span class="listelenke-tittel" lang={r.lang}>
+                      {r.tittel}
+                      {r.merke && <span class="merke merke-skole">{r.merke}</span>}
+                    </span>
+                    <span class="listelenke-under">{r.under}</span>
                   </span>
-                  <span class="listelenke-under">{r.under}</span>
-                </span>
-                <Ikon navn="hoyre" class="ikon-liten" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-      {children}
-    </Rubrikk>
+                  <Ikon navn="hoyre" class="ikon-liten" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+        {children}
+      </div>
+    </section>
   );
 }
 

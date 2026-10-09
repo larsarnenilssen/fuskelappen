@@ -593,7 +593,8 @@ export default function Fagside({ parametre }: SideProps) {
   const seksjoner = (
     <>
       {/* Grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del (avgjørelse 037). Står før
-          kompetansemålene, og alle delene er lukket til brukeren åpner dem (eier 02.10.2026). */}
+          kompetansemålene. Kompetansemålene og vurderingsordningen er hovedinnholdet og står åpne fra start, de andre
+          delene er lukket (avgjørelse 100). Det brukeren åpner og lukker, huskes for siden. */}
       {plan && typeof plan === 'object' && plan.ferdigheter.length + plan.temaer.length > 0 && (
         <Seksjon id="laereplanverket" lukket tittel={t('laereplanverket.fagark.tittel')}>
           <FerdigheterOgTemaer plan={plan} lang={htmlSpraak(plan.spraak)} />
@@ -603,7 +604,6 @@ export default function Fagside({ parametre }: SideProps) {
       {!erYff && (
         <Seksjon
           id="kompetansemaal"
-          lukket
           tittel={antallMaal !== null ? `${t('fag.side.kompetansemaalSeksjon')} (${formaterTall(antallMaal)})` : t('fag.side.kompetansemaalSeksjon')}
         >
           {!lp ? (
@@ -623,7 +623,7 @@ export default function Fagside({ parametre }: SideProps) {
         </Seksjon>
       )}
 
-      <Seksjon id="vurdering" lukket tittel={t('fag.side.vurdering')}>
+      <Seksjon id="vurdering" tittel={t('fag.side.vurdering')}>
         <div class="fag-vurderinger">
           <IFaget t={t} kode={kode} fag={fag} rel={rel} malform={malform} />
           {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}

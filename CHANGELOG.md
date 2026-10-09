@@ -4,9 +4,21 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
+
 ### Endret
 
 - **Lov- og forskriftsteksten, eksamens- og inntaksdatoene, skoleruta og de andre dataene fra kildene** kommer ut i appen uten ny versjon, når kildesjekken har hentet dem og appens tester består med dem. Før kom bare Grep, skoleregisteret og statistikken ut på denne måten.
+- **Større tekst:** Brødteksten er 16 px, og datoer, merker og dempede linjer er litt større.
+- **Fagsiden** viser kompetansemålene og vurderingsordningen med en gang, uten at de må åpnes.
+- **Regelverk** viser alle dokumentene i en liste med gruppene som overskrifter.
+- **Oversiktene i modulene** har ikke lenger en overskrift over hver inngang når det bare står én inngang under den.
+- **Søket** viser paragrafer om grunnskolen lenger ned, og privatskoleregler lenger ned når «Privatskole» ikke er valgt.
+- Det valgte filteret i søket og kalenderen er gult, som de andre valgene.
+- Kildene nederst i kalenderen står i en lukket boks, som på de andre sidene.
+- På skrivebord står toppfeltet i linje med sidene i to kolonner.
 
 ### Rettet
 

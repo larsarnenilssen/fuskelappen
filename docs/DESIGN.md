@@ -12,6 +12,7 @@ Reglene i AGENTS.md under «Grensesnitt» gjelder fortsatt. Denne filen sier hvo
 - **Farge bare når den betyr noe.** Tekst og titler står i tekstfarge. Blått er lenker og det brukeren kan trykke på. Gult er det som er valgt. Seriefargene er tall og diagrammer.
 - **Ingen nye farger.** Alle farger er tokenene i `tokens.css` og `tema.css`.
 - **Samme mønster for det samme.** Finnes det et mønster under, brukes det i stedet for en ny variant.
+- **Lesbar tekst.** Brødteksten er 16 px (`--str-m`). Dempede linjer er 14 px (`--str-s`), og datoer, merker og merkelapper minst 13 px (`--str-xs`). Overskriftene er `--str-l` (18 px), `--str-xl` (21 px) og `--str-xxl` (26 px). Alle størrelser er tokenene i `tokens.css` (avgjørelse 100).
 
 ## Kort
 
@@ -72,7 +73,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - Sider med flere deler står i to kolonner fra 64rem (`ToKolonner`): de første delene til venstre (3/5) og resten til høyre (2/5). Rekkefølgen på mobil er den samme.
 - Kildene til siden står nederst i høyre kolonne i en lukket boks (`Kildeboks`). En tallboks fra Videregående i tall står over kildene. Sider med én kolonne har også kildene i `Kildeboks` nederst, aldri som en punktliste rett på bakgrunnen.
 - **En kolonne står aldri tom.** I kalkulatorene står resultatkortet i høyre kolonne fra start, med en strek der tallet kommer og en kort linje om hva som må fylles inn (eier 08.10.2026).
-- **Oversiktene i modulene:** ingressen øverst over begge kolonnene. Til venstre står sidene i modulen: oppslag, forklaringer og figurer. Til høyre står verktøyene og det som endrer seg, alltid i denne rekkefølgen: veiviserne, kalkulatorene, fristene eller kalenderen, og tallene fra Videregående i tall (eier 08.10.2026, testes). På mobil står venstre kolonne først.
+- **Oversiktene i modulene:** ingressen øverst over begge kolonnene. Har en del bare én inngang, står den uten overskrift, og flere slike står som én liste (`Oversiktsdel`, avgjørelse 100). Til venstre står sidene i modulen: oppslag, forklaringer og figurer. Til høyre står verktøyene og det som endrer seg, alltid i denne rekkefølgen: veiviserne, kalkulatorene, fristene eller kalenderen, og tallene fra Videregående i tall (eier 08.10.2026, testes). På mobil står venstre kolonne først.
 
 *Eksempler:* fagarket, temasidene, Mer opplæring, Eksamen.
 
@@ -85,6 +86,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Et kort som kan åpnes** (`Innholdskort`, `Lukketkort`) viser tittelen og første setning, med pilen til høyre. Det har regelverket og kildene som lukkede rader nederst (`Kortfot`).
 - **Tilleggsstoff** som ikke er sidens eget innhold, er en lukket rad med ikon og blå tekst, som «Kilder (n)», «I regelverket (n)» og «Slik regnes det ut» (`Forklaring`). Flere slike rader etter hverandre står i én boks, med en tynn strek mellom.
 - Det som er åpent, huskes for siden (`useHusketApen`).
+- **Hovedinnholdet står åpent.** Det brukeren kommer for (kompetansemålene og vurderingsordningen på fagarket, dokumentene i Regelverk), er ikke lukket fra start. Lukket står det som bare noen trenger (avgjørelse 100).
 - Et skjema i deler (`fieldset.valggruppe`) har overskriften (`legend`) på den myke flaten i kortet, ikke på rammen. Et vanlig kort får det samme med `kort-med-topp`.
 
 *Eksempler:* delene på temasidene, kortene i Vurdering, kildeboksen.

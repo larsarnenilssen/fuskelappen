@@ -4,19 +4,17 @@ import { expect, test } from '@playwright/test';
 import { settLagret } from './hjelp.ts';
 
 test.describe('regelverk', () => {
-  test('fra forsiden til oversikten med grupper som kan legges sammen', async ({ page }) => {
+  test('fra forsiden til oversikten med dokumentene i grupper', async ({ page }) => {
     await page.goto('./');
     await page.getByRole('link', { name: /^Regelverk/ }).click();
     await expect(page.locator('main h1')).toHaveText('Regelverk');
-    // Gruppene er lukket fra start, på mobil og skrivebord (eier 06.10.2026).
+    // Gruppene står åpne med overskrift, så dokumentene synes med en gang (avgjørelse 100).
     for (const navn of [/^Lover \d+$/, /^Forskrifter \d+$/, /^Lokale forskrifter$/, /^Avtaler \d+$/]) {
-      await expect(page.getByRole('button', { name: navn })).toHaveAttribute('aria-expanded', 'false');
+      await expect(page.getByRole('heading', { level: 2, name: navn })).toBeVisible();
     }
-    await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeHidden();
-    await page.getByRole('button', { name: /^Lover \d+$/ }).click();
+    await expect(page.locator('main').getByRole('button', { name: /^Lover \d+$/ })).toHaveCount(0);
     await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeVisible();
     // Uten valgt fylke står det hvordan lokale forskrifter vises.
-    await page.getByRole('button', { name: /^Lokale forskrifter$/ }).click();
     await expect(page.getByText('Velg fylke for å se lokale forskrifter')).toBeVisible();
   });
 
@@ -48,10 +46,8 @@ test.describe('regelverk', () => {
   test('lokale forskrifter vises når fylket er valgt, og skolens regler når skolen er valgt', async ({ page }) => {
     await settLagret(page, { fylke: '46', skole: { id: '974557584', navn: 'Fyllingsdalen videregående skole' } });
     await page.goto('./#/lov');
-    // Gruppene er lukket fra start (eier 06.10.2026).
-    const gruppe = page.getByRole('button', { name: /^Lokale forskrifter i Vestland \d+$/ });
-    await expect(gruppe).toHaveAttribute('aria-expanded', 'false');
-    await gruppe.click();
+    // Gruppene står åpne (avgjørelse 100).
+    await expect(page.getByRole('heading', { level: 2, name: /^Lokale forskrifter i Vestland \d+$/ })).toBeVisible();
     await expect(page.getByRole('link', { name: /Fyllingsdalen videregående skole.*Skolen din/ })).toBeVisible();
     // Navnet på de lokale forskriftene følger brukerens målform, og datoen forskriften tok til å gjelde står under.
     const regler = page.getByRole('link', { name: /^Skoleregler i Vestland/ });
