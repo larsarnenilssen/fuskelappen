@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { settLagret } from './hjelp.ts';
 
 test.describe('fylke og skole', () => {
   test('kan velges, endres og fjernes, og huskes', async ({ page }) => {
@@ -65,5 +66,57 @@ test.describe('fylke og skole', () => {
     await page.getByRole('radio', { name: 'Bokmål' }).check();
     await page.locator('input[type="file"]').setInputFiles(fil);
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillingar' })).toBeVisible();
+  });
+});
+
+test.describe('sikkerhetskopien (avgjørelse 104)', () => {
+  test('vises ikke når det ikke finnes noen', async ({ page }) => {
+    await page.goto('./#/innstillinger');
+    await expect(page.getByRole('button', { name: 'Slett alle lokale data' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Gjenopprett sikkerhetskopien' })).toHaveCount(0);
+  });
+
+  test('kan gjenopprettes, og gjenopprettingen kan angres', async ({ page }) => {
+    const kopi = {
+      skjemaversjon: 3,
+      innstillinger: { malform: 'nb', tema: 'system', fylke: null, skole: null },
+      favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'],
+      scenarier: {},
+      skjultKildevarsel: null,
+      forside: { rekkefolge: [], lukket: [], bareFavoritter: false },
+    };
+    await settLagret(page, {});
+    await page.addInitScript((k) => {
+      if (!sessionStorage.getItem('kopi-satt')) {
+        localStorage.setItem('jukselappen-sikkerhetskopi', JSON.stringify(k));
+        sessionStorage.setItem('kopi-satt', '1');
+      }
+    }, kopi);
+    await page.goto('./#/innstillinger');
+    await expect(page.getByText('Sikkerhetskopien på denne enheten har 2 favoritter.')).toBeVisible();
+
+    const dialoger: string[] = [];
+    page.on('dialog', (d) => {
+      dialoger.push(d.message());
+      void d.accept();
+    });
+    await page.getByRole('button', { name: 'Gjenopprett sikkerhetskopien' }).click();
+    expect(dialoger[0]).toContain('Det som er lagret nå, blir den nye sikkerhetskopien');
+    await expect(page.getByRole('status').filter({ hasText: 'Sikkerhetskopien er gjenopprettet.' })).toBeVisible();
+    // Det som var lagret før, er nå sikkerhetskopien: ingen favoritter.
+    await expect(page.getByText('Sikkerhetskopien på denne enheten har ingen favoritter.')).toBeVisible();
+
+    await page.reload();
+    await page.locator('.topplinje .appnavn').click();
+    const titler = page.locator('[data-gruppe="favoritter"] .listelenke-tittel');
+    await expect(titler).toHaveText(['Testfunksjon', 'Skolemiljø (testbegrep)']);
+
+    // Angre: gjenopprett én gang til.
+    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Innstillinger' }).click();
+    await expect(page.getByText('Sikkerhetskopien på denne enheten har ingen favoritter.')).toBeVisible();
+    await page.getByRole('button', { name: 'Gjenopprett sikkerhetskopien' }).click();
+    await expect(page.getByText('Sikkerhetskopien på denne enheten har 2 favoritter.')).toBeVisible();
+    await page.locator('.topplinje .appnavn').click();
+    await expect(titler).toHaveCount(0);
   });
 });

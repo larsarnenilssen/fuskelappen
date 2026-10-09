@@ -13,3 +13,5 @@
 **Konsekvens:** Brukerdata går ikke tapt når et felt er ukjent eller ugyldig, og versjoner av appen fra og med denne beholder felt de ikke kjenner. Versjoner fra før denne endringen gjør det ikke, så en tilbakerulling til en tag fra før 097 kan fortsatt miste data. Appen har ennå ingen måte å hente tilbake sikkerhetskopien på. Den kan leses i nettleserens utviklerverktøy. En ny regelperiode som mangler en nøkkel, gir rød test i stedet for en teknisk feil hos brukeren. En ustabil ende-til-ende-test gjør ikke lenger CI rød, men står som «flaky» i rapporten.
 
 **Endret 09.10.2026:** `E2E_PORT` gir ende-til-ende-testene en egen port lokalt (`E2E_PORT=4391 npm run test:e2e:berorte`), så to kjøringer samtidig ikke tester hverandres bygg. Uten den brukes 4173 som før.
+
+**Endret 09.10.2026:** Sikkerhetskopien kan gjenopprettes i Innstillinger, og gjenopprettingen kan angres (avgjørelse 104).
