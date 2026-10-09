@@ -46,10 +46,10 @@ jobs:
     outputs:
       nye_saker: ${{ steps.lagre.outputs.nye_saker }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -59,7 +59,7 @@ jobs:
       - name: Adressen til appen
         id: pages
         continue-on-error: true
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Hent nyhetene fra forrige gang
         id: forrige
         env:
@@ -171,7 +171,7 @@ jobs:
     steps:
       - id: pages
         continue-on-error: true
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Sjekk at jukselappen.no svarer
         id: sjekk
         if: steps.pages.outputs.base_url != ''

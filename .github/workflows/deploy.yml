@@ -80,7 +80,7 @@ jobs:
     env:
       DATA_FRA_MAIN: data/grep data/skoler data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen data/statistikk lokale
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
@@ -88,7 +88,7 @@ jobs:
       # /jukselappen på github.io. Bygget leser den fra PAGES_BASE (avgjørelse 065).
       - name: Finn adressen i innstillingene for GitHub Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Sjekk adressen
         env:
           VERT: ${{ steps.pages.outputs.host }}
@@ -146,7 +146,7 @@ jobs:
             echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
             exit 1
           fi
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         if: steps.versjon.outputs.tag != ''
         with:
           node-version-file: .nvmrc
@@ -220,7 +220,7 @@ jobs:
         run: |
           echo "indeks=$(sha256sum dist/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
           echo "versjon=$(jq -r '.versjon // empty' dist/versjon.json 2>/dev/null || true)" >> "$GITHUB_OUTPUT"
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         if: steps.versjon.outputs.tag != ''
         with:
           path: dist
@@ -238,7 +238,7 @@ jobs:
       url: ${{ steps.pages.outputs.page_url }}
     steps:
       - id: pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
       # Røyktest (avgjørelse 099): henter forsiden og versjon.json fra adressen GitHub Pages oppgir, med en ny
       # parameter hver gang, så svaret ikke kommer fra mellomlageret. Prøver i fem minutter, fordi det kan ta litt tid
       # før den nye utgaven er ute overalt.
