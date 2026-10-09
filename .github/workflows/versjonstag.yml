@@ -65,11 +65,13 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     with:
       tag: ${{ needs.tag.outputs.tag }}
+    # issues: write trengs av varseljobben i deploy.yml, som bare går når «Publiser» er startet for seg.
     permissions:
       contents: read
       pages: write
       id-token: write
       actions: write
+      issues: write
 
   utgivelse:
     name: Lag utgivelse

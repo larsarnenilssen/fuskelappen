@@ -19,3 +19,5 @@
 - **Kontrollrundene** har kildene som stenger for kildesjekken og sjekkes for hånd (`SJEKKES_FOR_HAND`): særavtalesiden hos KS og sidene på vestlandfylke.no.
 
 **Konsekvens:** Hver e-post kan leses alene, og en feil som ikke løser seg selv, kommer igjen hver eller annenhver uke til den er løst. Når det går bra, kommer ingen e-post, unntatt den korte kommentaren når en sak lukkes. GitHubs egen e-post om arbeidsflyter som feiler, kommer fortsatt. Eier kan slå den av under GitHub → Settings → Notifications → Actions. Slik behandler eier sakene: `docs/EIER.md`, punkt 6b.
+
+**Endret 09.10.2026:** «Publiser» og oppetiden har også saker med etiketten `feil`, og saken ber eier sende lenken til Claude med en gang når feilen ligner en formatendring hos en kilde (avgjørelse 099).

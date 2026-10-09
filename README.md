@@ -8,7 +8,7 @@ Appnavnet er definert i `src/config/app.ts` og hentes derfra til manifest og sid
 
 ## Kom i gang
 
-Krever Node 22 (se `.nvmrc`).
+Krever Node 24 (se `.nvmrc`).
 
 | Kommando | Gjør |
 |---|---|

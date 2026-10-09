@@ -123,7 +123,7 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
    - `nsr`: henter aktive videregående skoler fra Nasjonalt skoleregister til `data/skoler/vgs.json`. Oppdateres automatisk, med endringsrapport i jobbsammendraget.
    - `statistikk`: sjekker at nøkkeltallene fra Udirs statistikkbank er hentet (`npm run hent:statistikk` til `data/statistikk/statistikk.json`, avgjørelse 080). Publiseringen tar dataene fra `main`, som Elevundersøkelsen.
    - `ssb`: sjekker at tallene fra SSBs statistikkbank er hentet (`npm run hent:ssb` til `data/statistikk/ssb.json`, avgjørelse 090).
-   - `nyheter`: sjekker at nyhetene er hentet de siste to dagene. Nyhetene hentes hver dag av `.github/workflows/nyheter.yml` (`npm run hent:nyheter`, kildene i `content/nyheter/kilder.yaml`) til `data/nyheter/nyheter.json`, som committes til `main` uten PR og publiseres med `deploy.yml` (avgjørelse 084). Kilder som ikke kan hentes, står i `docs/KILDER-IKKE-MED.md`.
+   - `nyheter`: sjekker at nyhetene er hentet de siste to dagene. Nyhetene hentes hver dag av `.github/workflows/nyheter.yml` (`npm run hent:nyheter`, kildene i `content/nyheter/kilder.yaml`) til `data/nyheter/nyheter.json`. Filen ligger på grenen `nyheter` (én commit som skrives over), ikke på `main`, og publiseres med `deploy.yml` når sakene er endret (avgjørelse 084 og 098). Kilder som ikke kan hentes, står i `docs/KILDER-IKKE-MED.md`.
    - `kf-infoserie`: henter avtaletekster hos KF Infoserie med Chromium (Playwright), fordi siden krever nettleser.
    - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen. Teksten i PDF-en leses med pdfjs-dist til verdisjekken.
    - `lovdata`: laster ned Lovdatas datasett med gjeldende lover og sjekker delen `uttrekk.selektor` peker på.
@@ -137,7 +137,7 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
 2. Statusfilen `data/status/kildestatus.json` committes ved hver kjøring, sammen med `verdistatus.json` og `docs/KONTROLL.md`. Det holder den planlagte jobben i live (GitHub slår av planlagte jobber etter 60 dager uten aktivitet).
 3. `scripts/kilder/varsle.ts` lager den ukentlige kontrollsaken (etikett `kontroll`, `scripts/kilder/ukesrapport.ts`): endrede punkter i kildene med ny tekst og berørt innhold, tall og tabeller som ikke stemmer, Grep og kilder som feilet. Saken får en kommentar bare når innholdet er nytt, og lukkes når alt er i orden. Se [avgjørelse 018](avgjorelser/018-presise-ukentlige-varsler.md).
 4. `scripts/kilder/lag-forslag.ts` lager endringsforslag som PR: nye tall og sitater på grenen `kontroll/forslag`, og nye Grep-data som feiler testene på `kontroll/grep`. CI startes med `workflow_dispatch`. Se [avgjørelse 020](avgjorelser/020-automatiske-endringsforslag.md).
-5. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil og ferske registerdata (Grep og skoleregisteret) fra main. Består ikke versjonens tester med de nye registerdataene, brukes versjonens egne. Koden på Pages endres bare ved ny versjon.
+5. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil og alle datamappene den lagrer på main (`DATA_FRA_MAIN` i `deploy.yml`: Grep, skoleregisteret, lovteksten, datoene, statistikken osv., avgjørelse 098). Alt som lagres på main, er testet først. Består ikke versjonens tester med dataene fra main, brukes versjonens egne. Koden på Pages endres bare ved ny versjon.
 
 Inndata `simuler_feil` gir simulert feil for én kilde, for å teste varslingen. Inndata `kontrollrunde` lager en kontrollrunde med en gang (ellers første mandag i mai og august, avgjørelse 019).
 
@@ -148,7 +148,7 @@ I appen viser topplinjen en diskret indikator (`ok`, `endret`, `feilet`, `utdate
 ## Publisering
 
 - `ci.yml`: lint, typesjekk, tester, bygg og ende-til-ende-tester på hver PR og hver push til `main`. På en PR velger den første jobben hva som kjøres, etter filene som er endret (`scripts/ci/endringer.ts`, avgjørelse 067). «Test og bygg» samler resultatet.
-- `deploy.yml`: en tag `vX.Y.Z` starter publisering. Arbeidsflyten kjører fra `main` (GitHub Pages tillater som standard bare publisering derfra), bygger koden fra taggen og sjekker at taggen og versjonen i `package.json` stemmer. Tilbakerulling: kjør «Publiser» manuelt med forrige tag. En publisering med tag tar ned testversjonen og sletter grenen `test` (avgjørelse 095).
+- `deploy.yml`: en tag `vX.Y.Z` starter publisering. Arbeidsflyten kjører fra `main` (GitHub Pages tillater som standard bare publisering derfra), bygger koden fra taggen og sjekker at taggen og versjonen i `package.json` stemmer. Tilbakerulling: kjør «Publiser» manuelt med forrige tag. En publisering med tag tar ned testversjonen og sletter grenen `test` (avgjørelse 095). Etter publiseringen sjekker en røyktest at jukselappen.no viser utgaven som ble bygget (avgjørelse 099).
 - Versjonen bygges inn fra `package.json` og vises under «Om».
 
 ## Legge til noe nytt

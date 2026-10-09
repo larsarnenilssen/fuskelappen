@@ -1,7 +1,8 @@
 # Varsel til eier når en arbeidsflyt feiler (avgjørelse 085). Kalles som siste jobb i arbeidsflytene som går av seg
-# selv: Kildesjekk, Nyheter, Lokale regler, Sett versjonstag, CI på main og Godkjenning. Feilet kjøringen, lages eller oppdateres
-# saken for arbeidsflyten (etikett «feil») med hvor den feilet, et utdrag av loggen og hva eier gjør. Gikk den bra,
-# lukkes saken. Skriptet kjøres med Node uten npm ci, så jobben tar noen sekunder.
+# selv: Kildesjekk, Nyheter (og oppetiden, avgjørelse 099), Lokale regler, Sett versjonstag, Publiser, CI på main og
+# Godkjenning. Feilet kjøringen, lages eller oppdateres saken for arbeidsflyten (etikett «feil») med hvor den feilet,
+# et utdrag av loggen og hva eier gjør. Gikk den bra, lukkes saken. Skriptet kjøres med Node uten npm ci, så jobben
+# tar noen sekunder.
 name: Varsle eier
 
 on:
@@ -13,6 +14,16 @@ on:
         required: true
       delfeil:
         description: 'Steg som feilet uten å stoppe kjøringen, skilt med |'
+        type: string
+        required: false
+        default: ''
+      navn:
+        description: 'Navnet saken gjelder, hvis det ikke er arbeidsflytens eget (f.eks. Oppetid)'
+        type: string
+        required: false
+        default: ''
+      jobber:
+        description: 'Bare disse jobbene tas med i saken, skilt med |. Tomt for alle.'
         type: string
         required: false
         default: ''
@@ -41,5 +52,6 @@ jobs:
         env:
           RESULTAT: ${{ inputs.resultat }}
           DELFEIL: ${{ inputs.delfeil }}
-          ARBEIDSFLYT: ${{ github.workflow }}
+          ARBEIDSFLYT: ${{ inputs.navn || github.workflow }}
+          JOBBER: ${{ inputs.jobber }}
           GITHUB_TOKEN: ${{ github.token }}

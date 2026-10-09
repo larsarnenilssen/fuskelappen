@@ -1,0 +1,34 @@
+# Dependabot (avgjørelse 099): oppdateringer av npm-pakkene og GitHub Actions én gang i måneden, samlet i få PR-er.
+# - Små oppdateringer (minor og patch) kommer i én PR for utviklingspakkene, én for produksjonspakkene og én for
+#   Actions. Claude fletter dem når CI er grønn, som andre PR-er.
+# - Nye hovedversjoner kommer hver for seg, så de kan vurderes én og én.
+# - @playwright/test kommer for seg, fordi bildet i ci.yml må ha samme versjon (testet i
+#   tests/unit/arbeidsflyter.test.ts). Claude endrer bildet i samme PR.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 4
+    commit-message:
+      prefix: 'Avhengigheter'
+    groups:
+      npm-utvikling:
+        dependency-type: development
+        update-types: [minor, patch]
+        exclude-patterns: ['@playwright/test']
+      npm-produksjon:
+        dependency-type: production
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 2
+    commit-message:
+      prefix: 'Actions'
+    groups:
+      actions:
+        patterns: ['*']

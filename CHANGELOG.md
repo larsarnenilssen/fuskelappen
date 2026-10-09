@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Lov- og forskriftsteksten, eksamens- og inntaksdatoene, skoleruta og de andre dataene fra kildene** kommer ut i appen uten ny versjon, når kildesjekken har hentet dem og appens tester består med dem. Før kom bare Grep, skoleregisteret og statistikken ut på denne måten.
+
 ## [1.1.0] – 2026-10-09
 
 ### Endret

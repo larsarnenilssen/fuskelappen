@@ -57,7 +57,7 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 **Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages kontrollsaken under **Issues** (punkt 6), og du får e-post fra GitHub. Neste vanlige kjøring lukker saken automatisk når alt er i orden.
 
-**Grep og skoleregisteret** hentes også hver mandag. Består appens tester med de nye dataene, tas de inn og publiseres automatisk, uten at du trenger å gjøre noe. Det står i kontrollsaken hva som er endret. Feiler testene, tas dataene ikke inn, og kontrollsaken sier fra.
+**Dataene fra kildene** hentes også hver mandag: Grep, skoleregisteret, lov- og forskriftsteksten, eksamens- og inntaksdatoene, statistikken og de andre. Består appens tester med de nye dataene, tas de inn og publiseres automatisk, uten ny versjon og uten at du trenger å gjøre noe (avgjørelse 098). Det står i kontrollsaken hva som er endret. Feiler testene, tas dataene ikke inn, og kontrollsaken eller saken om feil i automatikken sier fra.
 
 ## 6. Den ukentlige kontrollsaken
 
@@ -77,23 +77,23 @@ Du får e-post fra GitHub når noe har gått galt eller bør ses på, men ikke n
 | `kontroll` | Kontrollsaken: endringer i kildene, tall som ikke stemmer, innhold som bør kontrolleres på nytt, kilder som ikke kunne sjekkes | Mandag | Annenhver uke |
 | `lenker` | Lenker i appen som har vært borte eller flyttet to uker på rad | Mandag | Annenhver uke |
 | `nyheter` | Nyhetskilder som ikke har kunnet hentes på mer enn to dager | Hver morgen | Hver uke |
-| `feil` | En arbeidsflyt har feilet: kildesjekken, nyhetene, publiseringen, CI på main eller godkjenningen. Saken sier hva arbeidsflyten gjør, hva feilen betyr for appen, hvor den feilet, med et utdrag av loggen, og hva du gjør. Én sak per arbeidsflyt. | Med en gang | Hver uke |
+| `feil` | En arbeidsflyt har feilet: kildesjekken, nyhetene, publiseringen (også når jukselappen.no ikke viser den nye utgaven etterpå), CI på main eller godkjenningen. Saken «Oppetid» kommer når jukselappen.no ikke har svart to ganger på rad, med ti minutters mellomrom. Saken sier hva arbeidsflyten gjør, hva feilen betyr for appen, hvor den feilet, med et utdrag av loggen, og hva du gjør. Én sak per arbeidsflyt. | Med en gang | Hver uke |
 | `kontrollrunde` | Kontrollrunden | Første mandag i mai og august | – |
 
 Endringsforslag fra kildesjekken kommer som PR (punkt 1), og GitHub sender e-post om dem.
 
-**Hva du gjør med en sak:** Les den. Står det at noe ofte går over av seg selv, kan du vente til neste kjøring. Ellers, eller når du er i tvil: gi Claude lenken til saken. Du trenger ikke forstå loggen.
+**Hva du gjør med en sak:** Les den. Står det at noe ofte går over av seg selv, kan du vente til neste kjøring. Står det at kilden ser ut til å ha endret format, går det ikke over av seg selv: gi Claude lenken til saken med en gang (avgjørelse 099). Ellers, eller når du er i tvil: gi Claude lenken til saken. Du trenger ikke forstå loggen.
 
 **E-post fra GitHub Actions:** GitHub sender også sin egen korte e-post når en arbeidsflyt feiler («Run failed»). Den sier lite. Saken med merket `feil` forklarer det samme. Vil du slippe den doble e-posten, kan du slå av e-post for Actions under GitHub → Settings → Notifications → Actions.
 
-**Hva du ikke får e-post om:** at ting virker (daglige nyheter, publiseringer, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
+**Hva du ikke får e-post om:** at ting virker (nyheter, publiseringer, oppetiden, kildesjekker uten funn, data som hentes automatisk), hvor treffsikkert nyhetsfilteret er, og nettstedene som stenger for lenkesjekken (de står i `docs/KONTROLL.md`). Kilder som ikke kan sjekkes automatisk, står i `docs/KILDER-IKKE-MED.md`, og de viktigste sjekkes i kontrollrundene.
 
 Saken kan ha disse delene:
 
 - **Endret i kildene:** hvilket punkt i kilden som er endret, med den nye teksten sitert, og hvilke tall, begreper og forklaringer i appen som kan være berørt. Tekst som er fjernet, kan ikke vises, fordi appen ikke lagrer kildeteksten (opphavsrett). Da står det hvor mange setninger som er fjernet.
 - **Tall og tabeller som ikke stemmer med kilden:** tall der sitatet ikke lenger står i kilden, med forslag til nytt tall når det finnes. Vedlegg 1 og garantilønnen sjekkes rad for rad.
 - **Grep:** hva som er tatt inn automatisk, eller at Grep er endret slik at testene feiler.
-- **Kilder som ikke kunne sjekkes:** for eksempel fordi nettstedet var nede. Det går ofte over av seg selv. Står en kilde der i flere uker, si fra til Claude.
+- **Kilder som ikke kunne sjekkes:** for eksempel fordi nettstedet var nede. Det går ofte over av seg selv. Står en kilde der i flere uker, si fra til Claude. Kilder der feilen ligner en programfeil eller et uventet svar, står for seg under «Endret format». De går ikke over av seg selv: gi Claude lenken til saken.
 
 **Endringsforslag:** Er et tall endret i kilden, lager kildesjekken en PR med det nye tallet og det nye sitatet. Kontrollsaken lenker til den. Beskrivelsen av PR-en viser tallene før og etter, og hvilke tester som eventuelt feiler. Stemmer tallene, og gjelder endringen samme avtaleperiode, fletter du PR-en som vanlig (punkt 1). Gjelder den en ny periode, for eksempel en ny hovedtariffavtale, skal PR-en ikke flettes. Si fra til Claude, som lager en ny regelfil. Feiler testene med nye Grep-data, kommer det også en PR med dataene, så Claude kan rette koblingene der.
 
@@ -103,7 +103,7 @@ Saken kan ha disse delene:
 2. Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar (punkt 12).
 3. Skal noe endres, skriv til Claude hva, med vanlige ord. For eksempel: «Oppdater forklaringen av planfestet tid til 10 timer per dag.»
 
-Innholdet i appen endres aldri automatisk. Unntaket er registerdataene fra Grep og skoleregisteret.
+Innholdet i appen endres aldri automatisk. Unntaket er dataene fra kildene (Grep, skoleregisteret, lovteksten, datoene og statistikken), som tas inn når testene består.
 
 **Skjule varselet i appen:** Under **Om appen → Kilder** kan du trykke «Skjul varselet til neste sjekk». Da forsvinner advarselen øverst til høyre på din enhet til neste kildesjekk, eller til statusen endrer seg. Saken på GitHub påvirkes ikke.
 

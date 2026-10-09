@@ -13,7 +13,7 @@ import type { Regelsett } from '../../src/core/regler/skjema.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import { endreRegelfil, finnVerdiendringer, forslagstekst, grepforslagstekst, type Verdiendring } from './forslag.ts';
-import { grepdetaljer, grepsammendrag, type Grependringer } from './grep.ts';
+import { antallEndringer, grepdetaljer, grepsammendrag, type Grependringer } from './grep.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const generert = join(rot, '.generert');
@@ -130,19 +130,16 @@ if (grepTester === 'feilet' && existsSync(grepNy)) {
   if (ekte) {
     resultat.grep = await lagPr(
       'kontroll/grep',
-      `Grep er endret: ${sammendrag}`,
+      g && antallEndringer(g) > 0 ? `Grep er endret: ${sammendrag}` : 'Nye data fra kildesjekken feiler testene',
       () => {
         // Læreplanmappen erstattes helt, så læreplaner som er fjernet i Grep, forsvinner også her.
         rmSync(join(rot, 'data/grep/laereplaner'), { recursive: true, force: true });
         cpSync(grepNy, join(rot, 'data/grep'), { recursive: true });
-        const udirNy = join(generert, 'udir-ny');
-        if (existsSync(udirNy)) cpSync(udirNy, join(rot, 'data/udir'), { recursive: true });
-        const vigoNy = join(generert, 'vigo-ny');
-        if (existsSync(vigoNy)) cpSync(vigoNy, join(rot, 'data/vigo'), { recursive: true });
-        const utdanningNy = join(generert, 'utdanning-ny');
-        if (existsSync(utdanningNy)) cpSync(utdanningNy, join(rot, 'data/utdanning'), { recursive: true });
-        const ndlaNy = join(generert, 'ndla-ny');
-        if (existsSync(ndlaNy)) cpSync(ndlaNy, join(rot, 'data/ndla'), { recursive: true });
+        // De andre datamappene som ble testet sammen med Grep (kilder.yml, «Test de nye dataene», avgjørelse 098).
+        for (const mappe of ['udir', 'vigo', 'utdanning', 'ndla', 'lovdata', 'skolerute', 'eksamen', 'inntak', 'elevundersokelsen', 'statistikk']) {
+          const ny = join(generert, `${mappe}-ny`);
+          if (existsSync(ny)) cpSync(ny, join(rot, 'data', mappe), { recursive: true });
+        }
         // Rapportene over koblingen (docs/KOBLING.md) og tilbudsstrukturen (docs/TILBUDSSTRUKTUR.md) lages med de
         // nye dataene, så PR-en viser nye ukoblede fag og endrede tilbud.
         execFileSync('npx', ['tsx', 'scripts/kobling/rapport.ts'], { cwd: rot, stdio: 'inherit' });

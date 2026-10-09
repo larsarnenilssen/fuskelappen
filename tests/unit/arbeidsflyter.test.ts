@@ -64,4 +64,74 @@ describe('arbeidsflyter', () => {
     expect(e2e?.needs).toBe('bygg-e2e');
     expect(test).toMatchObject({ name: 'Test og bygg', if: 'always()', needs: ['endringer', 'sjekk', 'bygg-e2e', 'e2e'] });
   });
+
+  it('publiseringen tar alle datamappene kildesjekken lagrer på main, og kildesjekken tester dem først (avgjørelse 098)', () => {
+    type Steg = { name?: string; run?: string; env?: Record<string, string> };
+    type Jobb = { env?: Record<string, string>; steps: Steg[] };
+    const fil = (navn: string) => parse(readFileSync(join(rot, '.github/workflows', navn), 'utf8')) as { jobs: Record<string, Jobb> };
+    const kilder = fil('kilder.yml').jobs.sjekk?.steps ?? [];
+    const lagre = kilder.find((s) => s.name === 'Lagre kildestatus')?.run ?? '';
+    // Datamappene som legges til i commiten, uten statusfilene (kildestatus.json hentes for seg).
+    const lagret = new Set([...lagre.matchAll(/\bdata\/([a-z]+)/g)].map((m) => m[1]).filter((m) => m !== 'status'));
+    const fraMain = (fil('deploy.yml').jobs.bygg?.env?.DATA_FRA_MAIN ?? '').split(' ');
+    expect(lagret.size).toBeGreaterThan(10);
+    for (const m of lagret) expect(fraMain, m).toContain(`data/${m}`);
+    expect(fraMain).toContain('lokale');
+    expect(fraMain).not.toContain('data/nyheter');
+    // Alt som hentes i steget for Grep, testes før det lagres. Skoleregisteret hentes av kildesjekken og testes for seg.
+    const hentet = (kilder.find((s) => s.name === 'Test de nye dataene')?.env?.HENTET ?? '').split(' ');
+    for (const m of lagret) if (m !== 'skoler') expect(hentet, m).toContain(`data/${m}`);
+    expect(kilder.find((s) => s.name === 'Test skoleregisteret')?.run).toContain('npx vitest run');
+    expect(lagre).not.toContain('data/nyheter');
+  });
+
+  it('nyhetene lagres på grenen nyheter, ikke på main, og publiseres bare når sakene er endret (avgjørelse 098)', () => {
+    const nyheter = readFileSync(join(rot, '.github/workflows/nyheter.yml'), 'utf8');
+    expect(nyheter).toContain('refs/heads/nyheter');
+    expect(nyheter).not.toContain('git add');
+    expect(nyheter).toContain("if: needs.hent.outputs.nye_saker == 'ja'");
+    const deploy = readFileSync(join(rot, '.github/workflows/deploy.yml'), 'utf8');
+    expect(deploy).toContain('origin nyheter');
+    expect(readFileSync(join(rot, '.gitignore'), 'utf8')).toContain('data/nyheter/');
+  });
+
+  it('publiseringen har røyktest og varsler selv når den er startet for seg (avgjørelse 099)', () => {
+    type Steg = { id?: string; name?: string; uses?: string; run?: string };
+    type Jobb = { needs?: string | string[]; if?: string; uses?: string; permissions?: Record<string, string>; steps?: Steg[] };
+    const fil = (navn: string) => parse(readFileSync(join(rot, '.github/workflows', navn), 'utf8')) as { jobs: Record<string, Jobb> };
+    const deploy = fil('deploy.yml');
+    const steg = deploy.jobs.publiser?.steps ?? [];
+    expect(steg[0]?.uses).toMatch(/^actions\/deploy-pages@/);
+    expect(steg.at(-1)?.name).toBe('Sjekk at den nye utgaven er ute');
+    expect(steg.at(-1)?.run).toContain('$INDEKS');
+    expect(deploy.jobs.varsle).toMatchObject({ uses: './.github/workflows/varsle.yml', permissions: { issues: 'write' } });
+    expect(deploy.jobs.varsle?.if).toContain("github.workflow == 'Publiser'");
+    // De som kaller publiseringen, må gi varseljobben der lov til å skrive saker, ellers starter ikke kjøringen.
+    for (const navn of ['kilder.yml', 'nyheter.yml', 'lokale-regler.yml', 'versjonstag.yml']) {
+      const kall = Object.values(fil(navn).jobs).filter((j) => j.uses === './.github/workflows/deploy.yml');
+      expect(kall.length, navn).toBeGreaterThan(0);
+      for (const j of kall) expect(j.permissions?.issues, navn).toBe('write');
+    }
+  });
+
+  it('oppetiden sjekkes hver time, og eier varsles først etter to feil på rad (avgjørelse 099)', () => {
+    type Jobb = { name?: string; with?: Record<string, string>; steps?: { id?: string; 'continue-on-error'?: boolean; run?: string }[] };
+    const nyheter = parse(readFileSync(join(rot, '.github/workflows/nyheter.yml'), 'utf8')) as { on: { schedule: { cron: string }[] }; jobs: Record<string, Jobb> };
+    expect(nyheter.on.schedule[0]?.cron).toBe('47 * * * *');
+    const sjekk = nyheter.jobs.oppe?.steps?.find((s) => s.id === 'sjekk');
+    expect(sjekk?.['continue-on-error']).toBe(true);
+    expect(sjekk?.run).toContain('sleep 600');
+    expect(nyheter.jobs['varsle-oppetid']?.with).toMatchObject({ navn: 'Oppetid', jobber: nyheter.jobs.oppe?.name });
+  });
+
+  it('Dependabot og Node holdes oppdatert (avgjørelse 099)', () => {
+    type Oppdatering = { 'package-ecosystem': string; schedule: { interval: string }; groups: Record<string, unknown> };
+    const dependabot = parse(readFileSync(join(rot, '.github/dependabot.yml'), 'utf8')) as { updates: Oppdatering[] };
+    expect(dependabot.updates.map((u) => u['package-ecosystem']).sort()).toEqual(['github-actions', 'npm']);
+    for (const u of dependabot.updates) expect(u.schedule.interval).toBe('monthly');
+    expect(Object.keys(dependabot.updates.find((u) => u['package-ecosystem'] === 'npm')?.groups ?? {}).sort()).toEqual(['npm-produksjon', 'npm-utvikling']);
+    const node = readFileSync(join(rot, '.nvmrc'), 'utf8').trim();
+    const pakke = JSON.parse(readFileSync(join(rot, 'package.json'), 'utf8')) as { engines: { node: string } };
+    expect(pakke.engines.node).toBe(`>=${node}`);
+  });
 });

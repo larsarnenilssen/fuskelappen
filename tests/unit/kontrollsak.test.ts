@@ -216,7 +216,19 @@ describe('den ukentlige kontrollsaken', () => {
     expect(r.tekst).toContain('- [ ] Jeg har sett på endringene i SFS 2213, og det nye fingeravtrykket kan godkjennes. <!-- godkjenn-kilde:avtale:sha256:b -->');
     expect(r.tekst).toContain('- [ ] `s/planfestet_maks_dag`: Kilden har nå 10 der verdien sto. Forslag: 10. <!-- verdi:s/planfestet_maks_dag:10 -->');
     expect(r.tekst).toContain('- Arbeidsmiljøloven: Tidsavbrudd (siden 05.10.2026)');
+    expect(r.tekst).toContain('Det går ofte over av seg selv.');
+    expect(r.tekst).not.toContain('endret format');
     expect(r.tekst).toContain('- Tatt inn automatisk: 1 ny fagkode.');
+  });
+
+  it('skiller kilder som ser ut til å ha endret format, fra feil som går over av seg selv (avgjørelse 099)', () => {
+    const kildestatus = (melding: string) => ({ skjema: 1 as const, kjort: '2026-10-05T04:17:00Z', kilder: { avtale: ok, lov: { ...ok, status: 'feilet' as const, melding }, grep: ok } });
+    const format = lagUkesrapport(grunnlag({ kildestatus: kildestatus("Nøkkeltallene: Cannot read properties of undefined (reading 'length'). Appen viser forrige henting.") })).tekst;
+    expect(format).toContain('### Endret format\n\nKilden ser ut til å ha endret format – send lenken til denne saken til Claude.');
+    expect(format).not.toContain('Det går ofte over av seg selv');
+    const nett = lagUkesrapport(grunnlag({ kildestatus: kildestatus('fetch failed (ECONNRESET)') })).tekst;
+    expect(nett).toContain('Det går ofte over av seg selv.');
+    expect(nett).not.toContain('endret format');
   });
 
   it('viser kilder i bruk som eier ikke har godkjent, med avkrysning, før de endrede (avgjørelse 089)', () => {

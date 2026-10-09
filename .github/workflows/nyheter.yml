@@ -1,20 +1,25 @@
-# Nyhetene (fase 7b, avgjørelse 084): henter kildene i content/nyheter/kilder.yaml hver dag til
-# data/nyheter/nyheter.json. Passer filen skjemaet og testene for nyhetene, committes den til main uten PR, og appen
-# publiseres på nytt med de nye nyhetene (deploy.yml tar med data/nyheter fra main). Feiler en kilde, står sakene fra
-# før, og kilden får status i filen og i kildesjekken.
+# Nyhetene (fase 7b, avgjørelse 084 og 098): henter kildene i content/nyheter/kilder.yaml hver time til
+# data/nyheter/nyheter.json. Filen ligger på grenen nyheter, som har én commit som skrives over (som grep-lager,
+# avgjørelse 060), så nyhetene ikke gir commits på main. Passer filen skjemaet og testene for nyhetene, lagres den der.
+# Er sakene endret, publiseres appen på nytt (deploy.yml henter nyhetene fra grenen). Er bare statusen for en kilde
+# endret, lagres den uten publisering og kommer med neste gang appen publiseres. Feiler en kilde, står sakene fra før,
+# og kilden får status i filen og i kildesjekken.
 #
 # Feiler en nyhetskilde i mer enn to dager, kommer den i saken med etiketten «nyheter». Feiler arbeidsflyten, kommer
 # den i saken med etiketten «feil» (avgjørelse 085).
 #
+# Oppetiden (avgjørelse 099): Hver kjøring sjekker også at jukselappen.no svarer. Svarer den ikke, prøves det igjen
+# etter ti minutter, og svarer den ikke da heller, kommer saken «Feil i automatikken: Oppetid» (etikett «feil»).
+#
 # I PR-er som endrer hentingen eller kildene, og ved manuell kjøring, prøvehentes også prøvekildene (npm run
-# nyheter:prove). Rapporten står i sammendraget for kjøringen. En PR committer ingenting.
+# nyheter:prove). Rapporten står i sammendraget for kjøringen. En PR lagrer ingenting.
 name: Nyheter
 
 on:
   # GitHub starter planlagte kjøringer i dette repoet 6,5–7 timer for sent (08.10.2026: 05.47 kom 12.57 og 13.17 kom
   # 19.53, kildesjekken 7 timer for sent). Derfor kjører hentingen hver time: med samme forsinkelse kommer det likevel en
-  # kjøring hver time, også om morgenen. Hentingen er den samme hver gang, og bare nye saker committes og publiseres
-  # (avgjørelse 084, tillegg 09.10.2026). Repoet er offentlig, så kjøringene koster ikke Actions-minutter.
+  # kjøring hver time, også om morgenen. Hentingen er den samme hver gang, og bare nye saker publiseres
+  # (avgjørelse 084, tillegg 09.10.2026, og 098). Repoet er offentlig, så kjøringene koster ikke Actions-minutter.
   schedule:
     - cron: '47 * * * *'
   workflow_dispatch:
@@ -37,8 +42,9 @@ jobs:
     permissions:
       contents: write
       issues: write
+      pages: read
     outputs:
-      endret: ${{ steps.lagre.outputs.endret }}
+      nye_saker: ${{ steps.lagre.outputs.nye_saker }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -48,10 +54,33 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      # Sakene og statusen fra forrige gang, så hentingen kan beholde saker som har falt ut av en feed, og vite hvor
+      # lenge en kilde har feilet. Før grenen nyheter finnes, brukes filen som er publisert på jukselappen.no.
+      - name: Adressen til appen
+        id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+      - name: Hent nyhetene fra forrige gang
+        id: forrige
+        env:
+          ADRESSE: ${{ steps.pages.outputs.base_url }}
+        run: |
+          mkdir -p .generert data/nyheter
+          if git fetch --depth=1 origin nyheter; then
+            git show FETCH_HEAD:nyheter.json > data/nyheter/nyheter.json
+            echo fra=gren >> "$GITHUB_OUTPUT"
+          elif [ -n "$ADRESSE" ] && curl -fsSL --max-time 30 "$ADRESSE/data/nyheter/nyheter.json" -o .generert/publisert.json && jq -e '.saker' .generert/publisert.json >/dev/null; then
+            echo "Ingen gren som heter nyheter ennå. Begynner med nyhetene som er publisert."
+            mv .generert/publisert.json data/nyheter/nyheter.json
+            echo fra=publisert >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Fant ingen nyheter fra før. Begynner på nytt."
+            echo fra=ingen >> "$GITHUB_OUTPUT"
+          fi
+          if [ -f data/nyheter/nyheter.json ]; then cp data/nyheter/nyheter.json .generert/nyheter-forrige.json; fi
       - name: Hent nyhetene
         run: |
           set -o pipefail
-          mkdir -p .generert
           npm run --silent hent:nyheter -- --rapport | tee .generert/nyheter-rapport.txt
           {
             echo '## Nyhetene'
@@ -72,36 +101,48 @@ jobs:
         run: npm run --silent nyheter:varsle
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: Lagre nyhetene på main
+      # Grenen har bare én commit, som skrives over (avgjørelse 098). En push med GITHUB_TOKEN starter ingen
+      # arbeidsflyter. Appen publiseres bare når sakene er endret, ikke når bare statusen for en kilde er det.
+      - name: Lagre nyhetene på grenen nyheter
         id: lagre
         if: github.event_name != 'pull_request'
+        env:
+          FRA: ${{ steps.forrige.outputs.fra }}
         run: |
-          if git diff --quiet -- data/nyheter; then
+          f=data/nyheter/nyheter.json
+          forrige=.generert/nyheter-forrige.json
+          if [ "$FRA" = gren ] && cmp -s "$f" "$forrige"; then
             echo "Nyhetene er uendret."
-            echo endret=nei >> "$GITHUB_OUTPUT"
+            echo nye_saker=nei >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/nyheter/nyheter.json
-          git commit -m "Nyheter $(date -u +%F)"
-          # Kildesjekken kan ha pushet i mellomtiden. Nyhetsfilen er bare endret her, så en rebase går alltid.
-          git pull --rebase --quiet origin main
-          git push
-          echo endret=ja >> "$GITHUB_OUTPUT"
+          export GIT_AUTHOR_NAME="github-actions[bot]" GIT_AUTHOR_EMAIL="41898282+github-actions[bot]@users.noreply.github.com"
+          export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME" GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+          blob=$(git hash-object -w "$f")
+          tree=$(printf '100644 blob %s\tnyheter.json\n' "$blob" | git mktree)
+          commit=$(git commit-tree "$tree" -m "Nyheter $(date -u '+%F %H.%M')")
+          git push --force origin "$commit:refs/heads/nyheter"
+          if [ -s "$forrige" ] && [ "$(jq -cS '.saker' "$f")" = "$(jq -cS '.saker' "$forrige")" ]; then
+            echo "Bare statusen for kildene er endret. Den kommer med neste gang appen publiseres."
+            echo nye_saker=nei >> "$GITHUB_OUTPUT"
+          else
+            echo nye_saker=ja >> "$GITHUB_OUTPUT"
+          fi
 
   publiser:
     name: Publiser med de nye nyhetene
     needs: hent
-    if: needs.hent.outputs.endret == 'ja'
+    if: needs.hent.outputs.nye_saker == 'ja'
     uses: ./.github/workflows/deploy.yml
     with:
       tag: ''
+    # issues: write trengs av varseljobben i deploy.yml, som bare går når «Publiser» er startet for seg.
     permissions:
       contents: read
       pages: write
       id-token: write
       actions: write
+      issues: write
 
   # Varsel til eier når hentingen eller publiseringen feiler, og lukking når den går bra igjen (avgjørelse 085).
   varsle:
@@ -111,6 +152,52 @@ jobs:
     uses: ./.github/workflows/varsle.yml
     with:
       resultat: ${{ contains(needs.*.result, 'failure') && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+
+  # Oppetiden (avgjørelse 099). Sjekken får feile uten at kjøringen feiler, så GitHub ikke sender sin egen e-post i
+  # tillegg til saken. Får ikke jobben adressen fra GitHub Pages, hoppes sjekken over.
+  oppe:
+    name: Oppetid
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: read
+    outputs:
+      utfall: ${{ steps.sjekk.outcome }}
+    steps:
+      - id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+      - name: Sjekk at jukselappen.no svarer
+        id: sjekk
+        if: steps.pages.outputs.base_url != ''
+        continue-on-error: true
+        env:
+          ADRESSE: ${{ steps.pages.outputs.base_url }}
+        run: |
+          svarer() { curl -fsS -o /dev/null --max-time 30 --retry 2 --retry-delay 10 --retry-all-errors "$ADRESSE/?oppetid=${GITHUB_RUN_ID}-$1"; }
+          if svarer 1; then echo "$ADRESSE/ svarer."; exit 0; fi
+          echo "$ADRESSE/ svarte ikke. Prøver igjen om ti minutter."
+          sleep 600
+          if svarer 2; then echo "$ADRESSE/ svarer igjen."; exit 0; fi
+          echo "::error::$ADRESSE/ har ikke svart to ganger på rad, med ti minutters mellomrom."
+          exit 1
+
+  # Egen sak for oppetiden («Feil i automatikken: Oppetid»), som lukkes når siden svarer igjen.
+  varsle-oppetid:
+    name: Varsle eier om oppetiden
+    needs: [oppe]
+    if: always() && needs.oppe.result == 'success' && needs.oppe.outputs.utfall != 'skipped'
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ needs.oppe.outputs.utfall == 'failure' && 'feilet' || 'ok' }}
+      delfeil: Sjekk at jukselappen.no svarer
+      navn: Oppetid
+      jobber: Oppetid
     permissions:
       contents: read
       issues: write
