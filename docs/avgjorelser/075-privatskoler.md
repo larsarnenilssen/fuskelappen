@@ -25,3 +25,5 @@
   Alle har `kontrollert: null` og kontrollspørsmål. Begrepet «Privatskole» er nytt.
 
 **Konsekvens:** Nytt innhold der privatskoler har egne regler, får `privatskole` på elementet. Det trengs ingen kodeendring. Skolemiljøet i fase 7 bruker det samme for henvisningen til privatskolelova § 2-4. Startpakken er om lag 1 kB større på grunn av parallellene. Titlene i parallellene testes mot teksten fra Lovdata når den er hentet.
+
+**Endret 09.10.2026:** Privatskolelova kapittel 6 (tilskudd og skolepenger) er med i Lov og forskrift (eier 09.10.2026). Gratisprinsippet for privatskoler bygger på § 6-2 og privatskoleforskrifta § 15-1, og begrepet «Privatskole» nevner tilskuddet og skolepengene (§§ 6-1 til 6-3).

@@ -1,18 +1,30 @@
 // Regelverk (fase 3, avgjørelse 039): lover og forskrifter fra Lovdata, lokale forskrifter for valgt fylke og avtaler
 // med egne ord, med søk, rubrikker, bokser og en adresse per paragraf og bestemmelse.
 import { expect, test } from '@playwright/test';
-import { settLagret } from './hjelp.ts';
+import { aapneDel, erMobil, settLagret } from './hjelp.ts';
 
 test.describe('regelverk', () => {
-  test('fra forsiden til oversikten med dokumentene i grupper', async ({ page }) => {
+  test('fra forsiden til oversikten med dokumentene i grupper', async ({ page }, info) => {
     await page.goto('./');
     await page.getByRole('link', { name: /^Regelverk/ }).click();
     await expect(page.locator('main h1')).toHaveText('Regelverk');
-    // Gruppene står åpne med overskrift, så dokumentene synes med en gang (avgjørelse 100).
-    for (const navn of [/^Lover \d+$/, /^Forskrifter \d+$/, /^Lokale forskrifter$/, /^Avtaler \d+$/]) {
-      await expect(page.getByRole('heading', { level: 2, name: navn })).toBeVisible();
+    const grupper = [/^Lover \d+$/, /^Forskrifter \d+$/, /^Lokale forskrifter$/, /^Avtaler \d+$/];
+    if (erMobil(info)) {
+      // På mobil er gruppene lukket fra start, så oversikten viser gruppene (eier 09.10.2026).
+      for (const navn of grupper) await expect(page.getByRole('button', { name: navn })).toHaveAttribute('aria-expanded', 'false');
+      await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeHidden();
+      await page.getByRole('button', { name: /^Lover \d+$/ }).click();
+      await page.getByRole('button', { name: /^Lokale forskrifter$/ }).click();
+      // Det brukeren åpner, huskes for siden: tilbake fra et dokument er gruppen åpen igjen.
+      await page.getByRole('link', { name: /Opplæringslova/ }).click();
+      await expect(page.locator('main h1')).toHaveText(/Opplæringslova/);
+      await page.goBack();
+      await expect(page.getByRole('button', { name: /^Lover \d+$/ })).toHaveAttribute('aria-expanded', 'true');
+    } else {
+      // På skrivebord står gruppene åpne med overskrift, så dokumentene synes med en gang (avgjørelse 100).
+      for (const navn of grupper) await expect(page.getByRole('heading', { level: 2, name: navn })).toBeVisible();
+      await expect(page.locator('main').getByRole('button', { name: /^Lover \d+$/ })).toHaveCount(0);
     }
-    await expect(page.locator('main').getByRole('button', { name: /^Lover \d+$/ })).toHaveCount(0);
     await expect(page.getByRole('link', { name: /Opplæringslova/ })).toBeVisible();
     // Uten valgt fylke står det hvordan lokale forskrifter vises.
     await expect(page.getByText('Velg fylke for å se lokale forskrifter')).toBeVisible();
@@ -46,8 +58,9 @@ test.describe('regelverk', () => {
   test('lokale forskrifter vises når fylket er valgt, og skolens regler når skolen er valgt', async ({ page }) => {
     await settLagret(page, { fylke: '46', skole: { id: '974557584', navn: 'Fyllingsdalen videregående skole' } });
     await page.goto('./#/lov');
-    // Gruppene står åpne (avgjørelse 100).
+    // Gruppene står åpne på skrivebord (avgjørelse 100) og er lukket på mobil (eier 09.10.2026).
     await expect(page.getByRole('heading', { level: 2, name: /^Lokale forskrifter i Vestland \d+$/ })).toBeVisible();
+    await aapneDel(page, /^Lokale forskrifter i Vestland \d+$/);
     await expect(page.getByRole('link', { name: /Fyllingsdalen videregående skole.*Skolen din/ })).toBeVisible();
     // Navnet på de lokale forskriftene følger brukerens målform, og datoen forskriften tok til å gjelde står under.
     const regler = page.getByRole('link', { name: /^Skoleregler i Vestland/ });

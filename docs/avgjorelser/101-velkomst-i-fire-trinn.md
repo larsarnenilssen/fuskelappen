@@ -12,3 +12,5 @@
 - På iPhone SE (375 × 667) får alle trinnene plass, unntatt rollen når en rolle er valgt: da ruller innholdet omtrent 50 px, og bryteren for dagens jukselapp står under kanten.
 - Velkomsten sier ikke lenger at appen er et privat prosjekt laget med hjelp av KI, og har ikke knappen for tilbakemelding. Forbeholdet står nederst på forsiden, KI-støtten under Om appen og tilbakemeldingen i Innstillinger. Eier kan be om en kort setning om det i første trinn.
 - Et nytt trinn eller en lengre tekst må få plass uten rulling på 390 × 844 (testen i `tests/e2e/velkomst.spec.ts`).
+
+**Endret 09.10.2026:** Eier ba om at velkomsten sier hvor tilbakemeldingen står. Første trinn har en setning med lenker til Om appen og Innstillinger, i samme avsnitt som søket, så trinnet fortsatt får plass uten rulling. Lenkene lukker velkomsten og åpner siden. For å få plass er «skule» tatt bort i første setning på nynorsk («lærarar i vidaregåande»).

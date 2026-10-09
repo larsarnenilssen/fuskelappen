@@ -3,6 +3,7 @@
 // i begrepene, står kildene som før. Oppgir ikke kortet paragrafene, hentes de fra kildene, så «I regelverket» står
 // med der kildene er paragrafer i Lov og forskrift (eier 06.10.2026, avgjørelse 071).
 import type { ComponentChildren } from 'preact';
+import { useState } from 'preact/hooks';
 import { usePrivatskole, useTekst } from '../app/tilstand.ts';
 import { PRIVATSKOLEDOKUMENTER, parallellTil, privatskolekilder } from '../core/privatskole.ts';
 import type { KildeRef } from '../core/innhold/skjema.ts';
@@ -52,16 +53,30 @@ export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, 
   const grunn = nokkel ?? nokkelFra([...paragrafer, ...kilder.map((k) => `${k.id}|${k.punkt ?? ''}`)].join(','));
   const [regelverkApen, settRegelverkApen] = useHusketApen(`kortfot:${grunn}:regelverk`);
   const [kilderApen, settKilderApen] = useHusketApen(`kortfot:${grunn}:kilder`);
+  // Antallet paragrafer som finnes i teksten, når de er lastet. En paragraf i et kapittel som ikke er hentet ennå, vises
+  // ikke (Paragraflenker), og raden står ikke når ingen av paragrafene finnes.
+  const regelverkNokkel = paragrafer.join(',');
+  const [funnet, settFunnet] = useState<{ nokkel: string; antall: number } | null>(null);
+  const antall = funnet?.nokkel === regelverkNokkel ? funnet.antall : paragrafer.length;
   return (
     <>
-      {paragrafer.length > 0 && (
-        <details class="veiviser-kilder veiviser-regelverk" open={regelverkApen} onToggle={(e) => settRegelverkApen((e.currentTarget as HTMLDetailsElement).open)}>
+      {antall > 0 && (
+        <details
+          class="veiviser-kilder veiviser-regelverk"
+          open={regelverkApen}
+          onToggle={(e) => settRegelverkApen((e.currentTarget as HTMLDetailsElement).open)}
+        >
           <summary class="forklaring-knapp">
             <Ikon navn="paragraf" />
-            <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(paragrafer.length) })}</span>
+            <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(antall) })}</span>
             <Ikon navn="ned" class="forklaring-pil" />
           </summary>
-          <Paragraflenker paragrafer={paragrafer} overskrift={t('komponenter.veiviser.regelverk')} utenOverskrift />
+          <Paragraflenker
+            paragrafer={paragrafer}
+            overskrift={t('komponenter.veiviser.regelverk')}
+            utenOverskrift
+            onAntall={(n) => settFunnet({ nokkel: regelverkNokkel, antall: n })}
+          />
         </details>
       )}
       {children}

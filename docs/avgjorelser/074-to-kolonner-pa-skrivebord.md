@@ -20,3 +20,5 @@
 **Konsekvens:** Nye sider får to kolonner uten egen CSS. Kalkulatorene, forsiden og kalenderen har egne oppsett på skrivebord og er ikke endret. Vurderingen av de andre sidene står i `docs/arbeidsordrer/fase-7-forslag.md`.
 
 **Endret 09.10.2026:** Gruppene i Regelverk står åpne, med dokumentene i en liste under gruppenavnet (avgjørelse 100).
+
+**Endret 09.10.2026:** På mobil er gruppene i Regelverk igjen lukket fra start. På skrivebord står de åpne (avgjørelse 100).
