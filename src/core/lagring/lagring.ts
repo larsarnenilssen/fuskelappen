@@ -216,7 +216,7 @@ export type Lesestatus = 'ok' | 'ny' | 'reparert' | 'ugyldig' | 'utilgjengelig';
 
 /**
  * Nøkkelen der råteksten tas vare på før data som ikke kunne leses helt, blir overskrevet ved neste lagring (avgjørelse
- * 097). Den siste kopien gjelder. Slettes med resten ved «Slett alt».
+ * 097). Den siste kopien gjelder. Kan gjenopprettes i Innstillinger (avgjørelse 104). Slettes med resten ved «Slett alt».
  */
 export const SIKKERHETSKOPINOKKEL = `${LAGRINGSNOKKEL}-sikkerhetskopi`;
 
@@ -247,6 +247,50 @@ export function lesLagret(lager: Lager | null, malform: 'nb' | 'nn' = 'nb'): { d
   if (lest && !lest.avvik) return { data: lest.data, status: 'ok' };
   taSikkerhetskopi(lager, tekst);
   return lest ? { data: lest.data, status: 'reparert' } : { data: standard(malform), status: 'ugyldig' };
+}
+
+/**
+ * Leser sikkerhetskopien (avgjørelse 104). Null når det ikke finnes noen, eller når den ikke kan leses av denne
+ * versjonen: ødelagt JSON, en ukjent eldre eller en nyere skjemaversjon. Kopien leses felt for felt som lagrede data.
+ */
+export function lesSikkerhetskopi(lager: Lager | null, malform: 'nb' | 'nn' = 'nb'): Lagret | null {
+  try {
+    const tekst = lager?.getItem(SIKKERHETSKOPINOKKEL) ?? null;
+    return tekst === null ? null : (lesData(JSON.parse(tekst), malform)?.data ?? null);
+  } catch {
+    return null;
+  }
+}
+
+/** JSON med nøklene sortert, så to like dataobjekter gir samme tekst uansett rekkefølgen på feltene. */
+function sortertJson(verdi: unknown): string {
+  return JSON.stringify(verdi, (_nokkel, v: unknown) =>
+    erObjekt(v) ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))) : v,
+  );
+}
+
+/** Om to sett lagrede data har det samme innholdet. */
+export function sammeData(a: Lagret, b: Lagret): boolean {
+  return sortertJson(a) === sortertJson(b);
+}
+
+/**
+ * Gjenoppretter sikkerhetskopien (avgjørelse 104): kopien blir de lagrede dataene, og `gjeldende` (det som var lagret)
+ * blir den nye sikkerhetskopien, så gjenopprettingen kan angres ved å gjøre det samme én gang til. Returnerer dataene
+ * fra kopien, eller null hvis det ikke finnes noen gyldig kopi eller den ikke kunne skrives. Da er ingenting endret.
+ */
+export function gjenopprettSikkerhetskopi(lager: Lager | null, gjeldende: Lagret, malform: 'nb' | 'nn' = 'nb'): Lagret | null {
+  const kopi = lesSikkerhetskopi(lager, malform);
+  if (!lager || !kopi) return null;
+  if (!skrivLagret(lager, kopi)) return null;
+  try {
+    lager.setItem(SIKKERHETSKOPINOKKEL, JSON.stringify(gjeldende));
+    return kopi;
+  } catch {
+    // Kopien av det gjeldende kunne ikke lagres: det gjeldende skrives tilbake, så ingenting går tapt.
+    skrivLagret(lager, gjeldende);
+    return null;
+  }
 }
 
 /** Returnerer false hvis lagring ikke er mulig (privat modus, fullt lager). */

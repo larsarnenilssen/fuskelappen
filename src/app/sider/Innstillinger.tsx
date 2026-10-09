@@ -1,10 +1,18 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Ikon } from '../../components/Ikon.tsx';
-import { eksportfilnavn, lagEksport, lesEksport, type Innstillinger as Inn } from '../../core/lagring/lagring.ts';
+import {
+  egneRegler,
+  eksportfilnavn,
+  lagEksport,
+  lesEksport,
+  sammeData,
+  type Innstillinger as Inn,
+  type Lagret,
+} from '../../core/lagring/lagring.ts';
 import { KildestatusIndikator } from '../Kildestatusindikator.tsx';
 import { StedValg } from '../StedValg.tsx';
-import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
+import { tilstand, useTekst, useTilstand, type T } from '../tilstand.ts';
 import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { FLYTTEPARAMETER, lesFlytting } from '../flytting.ts';
 import { erstattAdresse } from '../ruter.ts';
@@ -38,11 +46,31 @@ function Valg<V extends string>({
   );
 }
 
+/** Hva sikkerhetskopien har, så brukeren kan kjenne den igjen: favorittene og de egne lokale reglene (avgjørelse 104). */
+function innholdISikkerhetskopi(t: T, kopi: Lagret): string {
+  const n = kopi.favoritter.length;
+  const favoritter =
+    n === 0
+      ? t('innstillinger.data.sikkerhetskopi.ingenFavoritter')
+      : n === 1
+        ? t('innstillinger.data.sikkerhetskopi.enFavoritt')
+        : t('innstillinger.data.sikkerhetskopi.favoritter', { antall: n });
+  const r = egneRegler(kopi).length;
+  if (r === 0) return favoritter;
+  const regler = r === 1 ? t('innstillinger.data.sikkerhetskopi.enRegel') : t('innstillinger.data.sikkerhetskopi.regler', { antall: r });
+  return t('innstillinger.data.sikkerhetskopi.og', { forste: favoritter, andre: regler });
+}
+
 export default function Innstillinger({ sporring }: SideProps) {
   const { t } = useTekst();
   const data = useTilstand();
   const inn = data.innstillinger;
   const [melding, settMelding] = useState<string | null>(null);
+  // Sikkerhetskopien vises bare når den er gyldig og ulik det som er lagret nå (avgjørelse 104).
+  const kopi = useMemo(() => {
+    const lest = tilstand.sikkerhetskopi();
+    return lest && !sammeData(lest, data) ? lest : null;
+  }, [data]);
 
   // Innstillingene og favorittene fra den gamle adressen (avgjørelse 065). Adressen ryddes, så de ikke hentes inn på nytt.
   useEffect(() => {
@@ -155,6 +183,24 @@ export default function Innstillinger({ sporring }: SideProps) {
             {t('innstillinger.data.slett')}
           </button>
         </div>
+        {kopi && (
+          <>
+            <p class="dempet liten">{t('innstillinger.data.sikkerhetskopi.forklaring', { innhold: innholdISikkerhetskopi(t, kopi) })}</p>
+            <div class="knapperad">
+              <button
+                type="button"
+                class="knapp knapp-sekundaer"
+                onClick={() => {
+                  if (!window.confirm(t('innstillinger.data.sikkerhetskopi.bekreft'))) return;
+                  settMelding(t(tilstand.gjenopprettSikkerhetskopi() ? 'innstillinger.data.sikkerhetskopi.ok' : 'innstillinger.data.sikkerhetskopi.feil'));
+                }}
+              >
+                <Ikon navn="igjen" />
+                {t('innstillinger.data.sikkerhetskopi.knapp')}
+              </button>
+            </div>
+          </>
+        )}
         <p role="status" class="liten">
           {melding}
         </p>

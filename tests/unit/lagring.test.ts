@@ -3,11 +3,14 @@ import {
   GAMLE_LAGRINGSNOKLER,
   LAGRINGSNOKKEL,
   eksportfilnavn,
+  gjenopprettSikkerhetskopi,
   lagEksport,
   lesEksport,
   lesLagret,
+  lesSikkerhetskopi,
   lesValg,
   migrer,
+  sammeData,
   SIKKERHETSKOPINOKKEL,
   SKJEMAVERSJON,
   slettLagret,
@@ -292,5 +295,85 @@ describe('lagringen sletter ikke brukerdata (avgjørelse 097)', () => {
       removeItem() {},
     };
     expect(lesLagret(fullt).status).toBe('ugyldig');
+  });
+});
+
+describe('sikkerhetskopien kan gjenopprettes (avgjørelse 104)', () => {
+  const kopi = () => ({ ...standard(), favoritter: ['begreper:arsramme', 'eksamen:eksamen'], egneRegler: [{ kode: 'x' }] });
+
+  it('leser en gyldig kopi og gir null når den mangler eller ikke kan leses', () => {
+    const lager = new MinneLager();
+    expect(lesSikkerhetskopi(lager)).toBeNull();
+    expect(lesSikkerhetskopi(null)).toBeNull();
+    expect(lesSikkerhetskopi(odelagtLager)).toBeNull();
+    lager.setItem(SIKKERHETSKOPINOKKEL, '{"favoritter": ["a"');
+    expect(lesSikkerhetskopi(lager)).toBeNull();
+    lager.setItem(SIKKERHETSKOPINOKKEL, JSON.stringify({ ...kopi(), skjemaversjon: SKJEMAVERSJON + 1 }));
+    expect(lesSikkerhetskopi(lager)).toBeNull();
+    lager.setItem(SIKKERHETSKOPINOKKEL, '"tekst"');
+    expect(lesSikkerhetskopi(lager)).toBeNull();
+    lager.setItem(SIKKERHETSKOPINOKKEL, JSON.stringify(kopi()));
+    expect(lesSikkerhetskopi(lager)).toEqual(kopi());
+  });
+
+  it('leser kopien felt for felt og flytter gamle favoritter', () => {
+    const lager = new MinneLager();
+    lager.setItem(SIKKERHETSKOPINOKKEL, JSON.stringify({ ...kopi(), favoritter: ['vurdering:eksamen', 5], skjultKildevarsel: 5 }));
+    expect(lesSikkerhetskopi(lager)).toEqual({ ...kopi(), favoritter: ['eksamen:eksamen'] });
+  });
+
+  it('bytter kopien og de lagrede dataene, så gjenopprettingen kan angres', () => {
+    const lager = new MinneLager();
+    const gjeldende = { ...standard(), favoritter: ['lov:oversikt'] };
+    skrivLagret(lager, gjeldende);
+    lager.setItem(SIKKERHETSKOPINOKKEL, JSON.stringify(kopi()));
+
+    expect(gjenopprettSikkerhetskopi(lager, gjeldende)).toEqual(kopi());
+    expect(lesLagret(lager)).toEqual({ data: kopi(), status: 'ok' });
+    expect(lesSikkerhetskopi(lager)).toEqual(gjeldende);
+
+    // Én gang til: tilbake til der vi startet.
+    expect(gjenopprettSikkerhetskopi(lager, kopi())).toEqual(gjeldende);
+    expect(lesLagret(lager).data).toEqual(gjeldende);
+    expect(lesSikkerhetskopi(lager)).toEqual(kopi());
+  });
+
+  it('endrer ingenting når det ikke finnes en gyldig kopi eller lageret ikke virker', () => {
+    const lager = new MinneLager();
+    const gjeldende = { ...standard(), favoritter: ['lov:oversikt'] };
+    skrivLagret(lager, gjeldende);
+    expect(gjenopprettSikkerhetskopi(lager, gjeldende)).toBeNull();
+    lager.setItem(SIKKERHETSKOPINOKKEL, '{');
+    expect(gjenopprettSikkerhetskopi(lager, gjeldende)).toBeNull();
+    expect(lager.getItem(SIKKERHETSKOPINOKKEL)).toBe('{');
+    expect(lesLagret(lager).data).toEqual(gjeldende);
+    expect(gjenopprettSikkerhetskopi(null, gjeldende)).toBeNull();
+  });
+
+  it('skriver det gjeldende tilbake hvis det ikke kan bli ny kopi', () => {
+    const lager = new MinneLager();
+    const gjeldende = { ...standard(), favoritter: ['lov:oversikt'] };
+    skrivLagret(lager, gjeldende);
+    lager.setItem(SIKKERHETSKOPINOKKEL, JSON.stringify(kopi()));
+    const halvfullt: Lager = {
+      getItem: (k) => lager.getItem(k),
+      setItem: (k, v) => {
+        if (k === SIKKERHETSKOPINOKKEL) throw new Error('QuotaExceededError');
+        lager.setItem(k, v);
+      },
+      removeItem: (k) => lager.removeItem(k),
+    };
+    expect(gjenopprettSikkerhetskopi(halvfullt, gjeldende)).toBeNull();
+    expect(lesLagret(lager).data).toEqual(gjeldende);
+    expect(lesSikkerhetskopi(lager)).toEqual(kopi());
+  });
+
+  it('sammenligner data uavhengig av rekkefølgen på feltene', () => {
+    const a = kopi();
+    const { favoritter, ...resten } = a;
+    expect(sammeData(a, { favoritter, ...resten })).toBe(true);
+    expect(sammeData(a, { ...a, innstillinger: { skole: null, fylke: null, tema: 'system', malform: 'nb' } })).toBe(true);
+    expect(sammeData(a, { ...a, favoritter: [...favoritter].reverse() })).toBe(false);
+    expect(sammeData(a, standard())).toBe(false);
   });
 });

@@ -4,7 +4,9 @@ import { hentTekst, lastTekster, teksterLastet, type Malform, type Tekstnokkel, 
 import type { EgenRegel } from '../core/lokale/skjema.ts';
 import {
   egneRegler,
+  gjenopprettSikkerhetskopi,
   lesLagret,
+  lesSikkerhetskopi,
   lesValg,
   skrivValg,
   type Valg,
@@ -87,6 +89,22 @@ class Tilstand {
 
   skrivValg(valg: Valg, verdi: string): void {
     skrivValg(this.lager, valg, verdi);
+  }
+
+  /** Sikkerhetskopien som kan gjenopprettes, eller null (avgjørelse 104). */
+  sikkerhetskopi(): Lagret | null {
+    return lesSikkerhetskopi(this.lager, this.data.innstillinger.malform);
+  }
+
+  /**
+   * Gjenoppretter sikkerhetskopien. Det som var lagret, blir den nye kopien, så det kan angres (avgjørelse 104).
+   * Returnerer false hvis ingenting ble endret.
+   */
+  gjenopprettSikkerhetskopi(): boolean {
+    const kopi = gjenopprettSikkerhetskopi(this.lager, this.data, this.data.innstillinger.malform);
+    if (!kopi) return false;
+    this.sett(kopi);
+    return true;
   }
 
   slettAlt(): void {
