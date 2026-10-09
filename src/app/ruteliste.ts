@@ -30,9 +30,17 @@ const utviklingsruter: Rute[] =
   ? [{ sti: '/utvikling/komponenter', tittel: 'utvikling.tittel', side: () => import('./sider/Komponentkatalog.tsx') }]
   : [];
 
+// Skissen av fag- og funksjonskortene i Arbeidsplan (eier 09.10.2026): i utvikling og i testversjonen, til eier har
+// bestemt seg.
+const skisseruter: Rute[] =
+  import.meta.env.MODE !== 'production' || __TESTVERSJON__
+    ? [{ sti: '/utvikling/arbeidsplan-fag', tittel: { nb: 'Skisse: Arbeidsplan', nn: 'Skisse: Arbeidsplan' }, side: () => import('./sider/SkisseArbeidsplan.tsx') }]
+    : [];
+
 export const ruter: readonly Rute[] = [
   ...kjerne,
   ...utviklingsruter,
+  ...skisseruter,
   ...alleRuter().map(({ modul, rute }) => ({ ...rute, modul: modul.id })),
 ];
 

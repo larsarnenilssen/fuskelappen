@@ -1,0 +1,66 @@
+/* Skissen av fag- og funksjonskortene i Arbeidsplan (eier 09.10.2026). Bare i utvikling og i testversjonen. */
+
+.skisse-hode {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+/* Prikken i fargen til faget eller funksjonen i stolpen, som i Arbeidsplan i dag. */
+.skisse-prikk {
+  flex: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-right: var(--rom-1);
+  border-radius: 50%;
+  background: var(--rad);
+}
+
+.skisse-kort .skisse-felt {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.skisse-kort .skisse-felt input,
+.skisse-kort input.skisse-felt {
+  min-height: 2.5rem;
+  font-weight: 600;
+}
+
+.skisse-kort input.skisse-felt {
+  width: 100%;
+  padding: var(--rom-1) var(--rom-3);
+  border: var(--strek) solid var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font-size: max(16px, 1rem);
+}
+
+.skisse-navn {
+  flex: 1;
+  min-width: 0;
+  min-height: 2.5rem;
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.skisse-ikon.ikonknapp {
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.skisse-innhold {
+  margin-top: var(--rom-2);
+}
+
+.skisse-lenkerad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+  margin: 0 0 var(--rom-2);
+}

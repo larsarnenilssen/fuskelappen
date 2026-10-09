@@ -1,0 +1,36 @@
+// Tekstene i skissen av fag- og funksjonskortene i Arbeidsplan (eier 09.10.2026). Skissen finnes bare i utvikling og
+// i testversjonen, og fjernes når eier har bestemt seg. Bare bokmål, som skissene i fase 9 og 10.
+export const skisseArbeidsplanNb = {
+  tittel: 'Skisse: fag og funksjoner i Arbeidsplan',
+  ingress:
+    'Forslag: Feltet for faget og navnet på funksjonen står der «Fag 1» og «Funksjon 1» står i dag, med prikken i fargen til delen foran. Er kortet lukket, står kortnavnet der. Stolpen bruker kortnavnene. Prøv å åpne og lukke kortene.',
+  bareHer: 'Skissen finnes bare i testversjonen. Tallene er eksempler, og ingenting lagres.',
+  na: 'Slik er det i dag',
+  forslag: 'Forslaget',
+  stolpe: 'Stolpen over stillingen',
+  undervisning: 'Undervisning',
+  funksjoner: 'Funksjoner',
+  fagPlassholder: 'Fag {nr}: søk etter fag',
+  funksjonPlassholder: 'Funksjon {nr}: skriv navnet',
+  fagSokHjelp: 'Søk med fagnavn, fagkode, kode for årsrammen eller utdanningsprogram og trinn.',
+  manuell: 'Skriv inn årsramme selv',
+  arstimer: 'Årstimer',
+  okter: 'Økter/uke',
+  arsrammeKort: 'årsramme 525/700',
+  endre: 'Endre',
+  fjernFag: 'Fjern fag {nr}',
+  fjernFunksjon: 'Fjern funksjon {nr}',
+  aapne: 'Åpne {navn}',
+  lukk: 'Lukk {navn}',
+  tom: 'Ingen fag valgt ennå',
+  utvider: 'Utvider planfestet tid',
+  timer: 'Timer',
+  leggTilFag: 'Legg til fag',
+  leggTilFunksjon: 'Legg til funksjon',
+  arstimerHjelp: 'Årstimetall for elevene fra Udir ({kode}). Du kan endre det.',
+  eksempler: {
+    engelsk: { kort: 'Engelsk', rad: 'Engelsk · Studiespesialisering Vg1', kode: 'ENG1007' },
+    matematikk: { kort: 'Matematikk R1', rad: 'Informasjonsteknologi · Studiespesialisering Vg2', koder: 'REA3056, REA3057 Matematikk R1', kode: 'REA3048' },
+    kontaktlaerer: 'Kontaktlærer',
+  },
+};
