@@ -21,8 +21,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.
 - **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
 - **Større tekst:** Brødteksten er 16 px, og datoer, merker og dempede linjer er litt større.
-- **Fagsiden** viser kompetansemålene og vurderingsordningen med en gang, uten at de må åpnes.
-- **Regelverk** viser alle dokumentene i en liste med gruppene som overskrifter.
+- **Fagsiden** viser kompetansemålene og vurderingsordningen med en gang på skrivebord, uten at de må åpnes. På mobil er de lukket til du åpner dem.
+- **Regelverk** viser alle dokumentene i en liste med gruppene som overskrifter på skrivebord. På mobil er gruppene lukket til du åpner dem.
 - **Oversiktene i modulene** har ikke lenger en overskrift over hver inngang når det bare står én inngang under den.
 - **Søket** viser paragrafer om grunnskolen lenger ned, og privatskoleregler lenger ned når «Privatskole» ikke er valgt.
 - Det valgte filteret i søket og kalenderen er gult, som de andre valgene.

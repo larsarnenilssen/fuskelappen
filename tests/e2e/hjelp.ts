@@ -182,6 +182,16 @@ export async function aapneAlt(side: Page, omraade = 'main'): Promise<void> {
 }
 
 /**
+ * Åpner en del på siden (en knapp med aria-expanded) hvis den er lukket. Kompetansemålene og vurderingsordningen på
+ * fagsiden og gruppene i Regelverk er lukket på mobil og åpne på skrivebord (eier 09.10.2026).
+ */
+export async function aapneDel(side: Page, navn: RegExp): Promise<void> {
+  const knapp = side.locator('main').getByRole('button', { name: navn });
+  if ((await knapp.count()) === 0) await side.locator('main').getByRole('heading', { name: navn }).waitFor();
+  if ((await knapp.count()) > 0 && (await knapp.getAttribute('aria-expanded')) === 'false') await knapp.click();
+}
+
+/**
  * Åpner et steg i en veiviser hvis det er lukket. Steg uten valg over spørsmålet er lukket på mobil (avgjørelse 044).
  */
 export async function aapneSteg(steg: Locator): Promise<void> {
