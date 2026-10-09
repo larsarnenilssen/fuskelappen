@@ -8,7 +8,7 @@ praksis:
     appen: Hele måneder gir hel månedslønn. I brutte måneder gir hver arbeidsdag (mandag–fredag, også fridager) 1/21,67 av månedslønnen.
     grunnlag: Eier 30.09.2026. Praksis i lønnssystemet og i Vestland fylkeskommune.
     berorer: [hta-2026-2028/arbeidsdager_per_maned, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: variabel-lonn-deltid
     tittel: Variabel lønn for deltidsansatte
@@ -16,7 +16,7 @@ praksis:
     appen: Det som er over stillingen og opp til 100 %, er variabel lønn med vanlig timelønn. Bare det som er over 100 %, er overtid.
     grunnlag: Eier 30.09.2026, inntil dommen om overtid for deltidsansatte er rettskraftig.
     berorer: [variabel-lonn, teknisk-undertid-overtid, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: variabel-lonn-timevikar
     tittel: Variabel lønn for timevikarer
@@ -24,7 +24,7 @@ praksis:
     appen: Begrepet «variabel lønn» sier at timevikarer får variabel lønn for vikartimene.
     grunnlag: Eier 01.10.2026.
     berorer: [variabel-lonn]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: overtid-undervisning
     tittel: Overtidsbetaling for undervisning
@@ -32,7 +32,7 @@ praksis:
     appen: Overtidsbetaling = kalkulert tid × timelønn for undervisning × 1,5.
     grunnlag: Eier 29.09.2026. Hovedtariffavtalen § 6.4 og § 6.5.3.
     berorer: [hta-2026-2028/overtidstillegg_prosent, metode-overtid, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: planleggingsdager-45
     tittel: Planleggingsdager
@@ -40,7 +40,7 @@ praksis:
     appen: Planleggingsdagene er 6 × 7,5 = 45 timer for alle, tatt fra annen planfestet tid. Tallet kan endres for den enkelte.
     grunnlag: Eier 30.09.2026. Visma InSchool.
     berorer: [planleggingsdager, bruk-planleggingsdager, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: skolear-38-uker
     tittel: Skoleåret og timer per uke
@@ -48,7 +48,7 @@ praksis:
     appen: Skoleåret er 190 dager og 38 uker. Møtetid regnes for 38 uker, og timer per uke er timene utenom planleggingsdagene ÷ 38.
     grunnlag: Opplæringslova. Paragrafen er ikke lagt inn i kilderegisteret ennå, så tallene sjekkes ikke automatisk.
     berorer: [sfs2213-2026-2027/skolear_uker, sfs2213-2026-2027/skolear_dager, bruk-motetid, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: planfestet-60
     tittel: Planfestet tid fra 60 år
@@ -56,7 +56,7 @@ praksis:
     appen: Ferien tas like mye fra planfestet tid og tiden læreren disponerer selv.
     grunnlag: Eier 30.09.2026.
     berorer: [sfs2213-2026-2027/arsverk_timer_60_ar, arsverk, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: periodenokkel
     tittel: Periodenøkkel
@@ -64,7 +64,7 @@ praksis:
     appen: Perioderamme = årsramme × periodenøkkel. Beskjeftigelse i perioden = timene i perioden ÷ perioderammen × 100.
     grunnlag: Eier 30.09.2026. Visma InSchool.
     berorer: [periodebeskjeftigelse, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: frigjort-tid-57
     tittel: Frigjort tid for 57-åringer
@@ -72,7 +72,7 @@ praksis:
     appen: Livsfasetiltak regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer. Den frigjorte tiden fordeles som undervisningen.
     grunnlag: Eier 30.09.2026.
     berorer: [livsfasetiltak, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: funksjon-arsramme-607
     tittel: Funksjoner i årsrammetimer
@@ -80,7 +80,7 @@ praksis:
     appen: Prosent = årsrammetimer ÷ 607,5 × 100. Kontaktlærer med 28,5 årsrammetimer gir 4,69 %.
     grunnlag: Tolkning av vedlegg 1 til SFS 2213 (årsramme ved redusert undervisning på grunn av funksjon).
     berorer: [sfs2213-2026-2027/arsramme_funksjon, kontaktlaerer, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: utvidet-arbeidsar
     tittel: Utvidet arbeidsår
@@ -88,7 +88,7 @@ praksis:
     appen: 100 % funksjon gir 29 dager, i alt 225 dager. For lærere som er 60 år og eldre er arbeidsåret fem dager kortere.
     grunnlag: Eier 30.09.2026.
     berorer: [arbeidsar, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: tillegg-standard
     tittel: Tillegg for funksjoner
@@ -96,7 +96,7 @@ praksis:
     appen: Tillegget fylles inn med minstegodtgjøringen i punkt 9.1. Kjennes navnet ikke igjen, brukes beløpet for kontaktlærer.
     grunnlag: Appens valg, med utgangspunkt i SFS 2213 punkt 9.1.
     berorer: [sfs2213-2026-2027/godtgjoring_kontaktlaerer, funksjonsgodtgjoring, metode-arbeidsplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: yff-arsramme
     tittel: Årsramme for yrkesfaglig fordypning
@@ -104,7 +104,7 @@ praksis:
     appen: Fagkoder for yrkesfaglig fordypning (YFF4101 osv.) kobles til raden for felles programfag på programmet og trinnet, f.eks. 607,5 på helse- og oppvekstfag vg2.
     grunnlag: Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020.
     berorer: [sfs2213-2026-2027/kobling_yff]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: fagfornyelsen
     tittel: Fagfornyelsen og LK20
@@ -112,7 +112,7 @@ praksis:
     appen: Begrepet «læreplanverket» sier at læreplanverket som gjelder nå, heter Kunnskapsløftet 2020 (LK20), og at revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20.
     grunnlag: Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde.
     berorer: [laereplanverket]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: forelopig-svar-sakkyndig
     tittel: Foreløpig svar i saker om individuelt tilrettelagt opplæring
@@ -120,7 +120,7 @@ praksis:
     appen: Vedtakssteget i veiviseren sier at eleven eller foreldrene skal få et foreløpig svar hvis det ikke er fattet vedtak innen en måned etter at den sakkyndige vurderingen er mottatt.
     grunnlag: Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen.
     berorer: [ti-vedtak]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: samtykke-innforingsopplaering
     tittel: Samtykke til innføringsopplæring
@@ -128,7 +128,7 @@ praksis:
     appen: Steget «Innføringsopplæring» sier at eleven samtykker selv når eleven er i stand til det, ellers foreldrene.
     grunnlag: Eier 03.10.2026. Opplæringslova § 6-6 sier at eleven må samtykke, og Udir skriver «eleven eller foreldrene».
     berorer: [sp-innforing]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: kompetansegivende-laereplaner
     tittel: Kompetansegivende læreplaner i særskilt språkopplæring
@@ -136,7 +136,7 @@ praksis:
     appen: Steget «Læreplanene i særskilt språkopplæring» merker grunnleggende norsk og morsmål for språklige minoriteter som ikke kompetansegivende, og norsk for kort botid som kompetansegivende. Læreplanen for voksne i norsk og samfunnskunnskap for språklige minoriteter (GNS02-01) har ikke noe merke.
     grunnlag: Eier 03.10.2026 ba om at det står om læreplanene er kompetansegivende. Ordet står ikke i kildene. Vurderingsordningene i Grep sier at det ikke gis karakter etter NOR07-03 og NOR08-03, og at NOR09-05 gir standpunktkarakter. GNS02-01 har bare en midtveisvurdering med godkjent eller ikke godkjent, og eier valgte 03.10.2026 at den står uten merke.
     berorer: [sp-laereplan]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: klage-inntak-inntakskontoret
     tittel: Hvem klagen på inntak sendes til
@@ -144,7 +144,7 @@ praksis:
     appen: Steget «Søknad, svar og klage» i veiviseren «Rett, inntak og søknad» sier at klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen.
     grunnlag: Eier 03.10.2026. Forvaltningsloven § 32 første ledd bokstav a sier at klagen settes fram for organet som har truffet vedtaket. At det vanligvis er inntakskontoret, står ikke i kildene.
     berorer: [sk-soknad]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: poeng-avrunding
     tittel: Avrunding i poengberegningen ved inntak
@@ -155,7 +155,7 @@ praksis:
       Udirs merknad sier «vanlige avrundingsregler», men beskriver rekkefølgen som sum × 10 ÷ antall fag, som gir 44,29
       for F1. Appen følger forskriften.
     berorer: [inntak-2024/snitt_desimaler, inntak-2024/poeng_faktor, po-vg1]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: poeng-vg3-vestland
     tittel: Karakterene som teller ved inntak til Vg3 i Vestland
@@ -163,7 +163,7 @@ praksis:
     appen: Poengberegningen bruker karakterene fra Vg1 og Vg2 til Vg3, også når Vestland er valgt.
     grunnlag: Eier 03.10.2026. Opplæringsforskrifta § 4-25 sier Vg1 og eventuelt Vg2. Vestlands forskrift § 2-3 andre ledd nevner bare Vg2.
     berorer: [po-vl-vg3]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: poeng-halvar-vg1-standpunkt-vg2
     tittel: Den siste vurderingen gjelder i fag som fortsetter, ved inntak til Vg3
@@ -178,7 +178,7 @@ praksis:
       hverandre etter hvert som nye kommer. Standpunkt står.» Udirs merknad til § 4-25 nevner norsk. Ordlyden i
       § 4-25 sier ikke noe om fag som fortsetter.
     berorer: [po-vg2-vg3]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: fravaer-15-prosent-legeerklaering
     tittel: Helsefravær med legeerklæring før grensen og rektors skjønn
@@ -193,7 +193,7 @@ praksis:
       Eier 04.10.2026: «De ti og de fem teller.» Opplæringsforskrifta § 9-8 fjerde ledd sier «eigenmeldt eller
       udokumentert fråvær». Udirs rundskriv sier ikke noe om helsefravær med legeerklæring før grensen.
     berorer: [vu-skjonn, fr-skjonn, vurdering-2025/fravaer_skjonn_prosent]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: fravaer-helse-etter-grensen
     tittel: Helsefravær «etter grensen» når grensen ikke er nådd
@@ -209,7 +209,7 @@ praksis:
       3.3.2: helserelatert fravær teller til 10 prosent er nådd, og dokumentasjon fra helsepersonell får først betydning
       for fravær over det.
     berorer: [fr-teller]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: skolerute-ved-skolen
     tittel: Skoleruta ved den enkelte skolen
@@ -217,7 +217,7 @@ praksis:
     appen: Begrepet «skolerute» sier at skoleruta ved den enkelte skolen kan avvike fra fylkets skolerute.
     grunnlag: Eier 05.10.2026 (avgjørelse 061). Opplæringslova § 14-1 sier bare at fylkeskommunen gir forskrift om skolerute.
     berorer: [skolerute]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
 
   - id: laerling-til-laerekandidat-etter-prove
     tittel: Fra lærling til lærekandidat etter en prøve som ikke er bestått
@@ -231,4 +231,4 @@ praksis:
       fylkeskommunen) og fjerde ledd (kontrakter som avviker fra det fastsatte løpet). Udirs veiledning om mer
       opplæring nevner ikke bytte til lærekandidat.
     berorer: [fra-prove-ikke-bestatt]
-    bekreftet: null
+    bekreftet: { dato: "2026-10-09" }
