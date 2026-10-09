@@ -1,6 +1,6 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
-# Skriver data/status/kildestatus.json, verdistatus.json (verdisjekken) og stengte-lenker.json (lenkesjekken) og lager
-# docs/KONTROLL.md og docs/KOBLING.md på nytt,
+# Skriver data/status/kildestatus.json, verdistatus.json (verdisjekken) og stengte-lenker.json (lenkesjekken), bekrefter
+# lenkene til fylkene i content/fylker/lenker.yaml (avgjørelse 106) og lager docs/KONTROLL.md og docs/KOBLING.md på nytt,
 # committer dem ved hver kjøring (kildestatus.json endres hver gang, så det blir alltid en commit, og den holder de
 # planlagte jobbene i live: GitHub slår dem av etter 60 dager uten aktivitet i et offentlig repo),
 # oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
@@ -50,8 +50,8 @@ jobs:
     runs-on: ubuntu-latest
     # Grep kan være tregt (04.10.2026: over 20 minutter), så jobben får god tid. Grep-hentingen har egen grense under.
     # Første lesing av hele registeret over lokale forskrifter hos Lovdata tar 15–20 minutter (avgjørelse 061), og
-    # lenkesjekken noen minutter (avgjørelse 062).
-    timeout-minutes: 75
+    # lenkesjekken noen minutter (avgjørelse 062), og lenkene til fylkene høyst et kvarter (avgjørelse 106).
+    timeout-minutes: 90
     outputs:
       delfeil: ${{ steps.delfeil.outputs.steg }}
     permissions:
@@ -219,6 +219,21 @@ jobs:
           tree=$(printf '100644 blob %s\tlenkestatus.json\n' "$blob" | git mktree)
           commit=$(git commit-tree "$tree" -m "Lenkestatus $(date -u +%F)")
           git push --force origin "$commit:refs/heads/lenkesjekk"
+      # Lenkene til fylkenes temasider (avgjørelse 106): lenker som ikke er bekreftet de siste fire ukene, hentes, og de
+      # som svarer med en tittel som passer temaet, får dagens dato i bekreftet. Virker bare adressen med eller uten www,
+      # byttes den. Filen testes før den lagres på main (avgjørelse 098). Lenker som ikke er bekreftet på åtte uker,
+      # kommer i kontrollsaken, så eier kan sjekke dem for hånd.
+      - name: Bekreft lenkene til fylkene
+        id: fylkeslenker
+        continue-on-error: true
+        timeout-minutes: 15
+        run: |
+          npm run lenker:fylker
+          if [ -n "$(git status --porcelain -- content/fylker/lenker.yaml)" ] && ! npx vitest run; then
+            git checkout -- content/fylker/lenker.yaml
+            echo "::error::Testene feiler med de nye datoene og adressene i content/fylker/lenker.yaml. Filen er ikke endret."
+            exit 1
+          fi
       - name: Kontrolloversikt
         run: npm run kontroll:rapport
       - name: Sammendrag
@@ -240,7 +255,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/kildegrunnlag.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen data/statistikk docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git add data/status/kildestatus.json data/status/kildegrunnlag.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/status/stengte-lenker.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen data/statistikk content/fylker/lenker.yaml docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
@@ -266,6 +281,7 @@ jobs:
           HENT_LENKESTATUS: ${{ steps.hent-lenkestatus.outcome }}
           LENKER: ${{ steps.lenker.outcome }}
           LAGRE_LENKESTATUS: ${{ steps.lagre-lenkestatus.outcome }}
+          FYLKESLENKER: ${{ steps.fylkeslenker.outcome }}
           FORSLAG: ${{ steps.forslag.outcome }}
           SKOLER: ${{ steps.skoler.outcome }}
         run: |
@@ -274,6 +290,7 @@ jobs:
           [ "$HENT_LENKESTATUS" = failure ] && steg="$steg|Hent lenkestatus"
           [ "$LENKER" = failure ] && steg="$steg|Sjekk lenkene"
           [ "$LAGRE_LENKESTATUS" = failure ] && steg="$steg|Lagre lenkestatus"
+          [ "$FYLKESLENKER" = failure ] && steg="$steg|Bekreft lenkene til fylkene"
           [ "$FORSLAG" = failure ] && steg="$steg|Endringsforslag (PR)"
           [ "$SKOLER" = failure ] && steg="$steg|Test skoleregisteret"
           echo "steg=${steg#|}" >> "$GITHUB_OUTPUT"

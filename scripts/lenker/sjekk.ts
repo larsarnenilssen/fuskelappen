@@ -46,14 +46,47 @@ export function vurderSvar(url: string, status: number | null, til: string | nul
   return 'flyttet';
 }
 
+/**
+ * Samme adresse med motsatt variant av vertsnavnet: «www.» lagt til eller tatt bort (avgjørelse 106). Mange nettsteder
+ * svarer bare på den ene varianten, og det kan endre seg. Gir null for adresser som ikke er http(s), og for IP-adresser
+ * og localhost, der www ikke gir mening.
+ */
+export function annenVariant(url: string): string | null {
+  if (!URL.canParse(url)) return null;
+  const u = new URL(url);
+  if (!/^https?:$/.test(u.protocol) || !u.hostname.includes('.') || /^[\d.]+$/.test(u.hostname) || u.hostname.startsWith('[')) return null;
+  u.hostname = u.hostname.startsWith('www.') ? u.hostname.slice(4) : `www.${u.hostname}`;
+  return u.toString();
+}
+
+async function hentStatus(url: string): Promise<{ status: number; til: string | null }> {
+  const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html,*/*;q=0.8' }, redirect: 'follow', signal: AbortSignal.timeout(20_000) });
+  await svar.body?.cancel().catch(() => undefined);
+  return { status: svar.status, til: svar.url && svar.url !== url ? svar.url : null };
+}
+
+/**
+ * Sjekker én lenke. Svarer ikke nettstedet (feil på tilkoblingen eller DNS), prøves den andre varianten av vertsnavnet
+ * (med eller uten www). Virker den, er lenken ok, med en merknad, så en www-feil ikke gir falsk alarm (avgjørelse 106).
+ */
 export async function sjekkUrl(url: string): Promise<Resultat> {
   try {
-    const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html,*/*;q=0.8' }, redirect: 'follow', signal: AbortSignal.timeout(20_000) });
-    await svar.body?.cancel().catch(() => undefined);
-    const til = svar.url && svar.url !== url ? svar.url : null;
-    return { url, svar: vurderSvar(url, svar.status, til), status: svar.status, til, melding: null };
+    const { status, til } = await hentStatus(url);
+    return { url, svar: vurderSvar(url, status, til), status, til, melding: null };
   } catch (e) {
-    return { url, svar: 'feil', status: null, til: null, melding: feilmelding(e) };
+    const melding = feilmelding(e);
+    const annen = annenVariant(url);
+    if (annen) {
+      try {
+        const { status, til } = await hentStatus(annen);
+        const etter = til ?? annen;
+        const svar = vurderSvar(url, status, etter);
+        if (svar === 'ok') return { url, svar, status, til: etter, melding: `Svarer bare som ${new URL(annen).hostname} (${melding})` };
+      } catch {
+        // Den andre varianten svarer heller ikke. Feilen fra den første gjelder.
+      }
+    }
+    return { url, svar: 'feil', status: null, til: null, melding };
   }
 }
 

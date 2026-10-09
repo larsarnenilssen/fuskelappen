@@ -7,7 +7,9 @@ export type Godkjenning =
   | { type: 'bruk'; id: string }
   | { type: 'praksis'; id: string }
   | { type: 'innhold'; id: string }
-  | { type: 'verdi'; id: string };
+  | { type: 'verdi'; id: string }
+  /** En lenke til fylkets temaside eier har sjekket for hånd (avgjørelse 106). id er «fylke:tema», f.eks. «46:inntak». */
+  | { type: 'fylkeslenke'; id: string };
 
 /**
  * Punktene eier har krysset av i saken: «- [x] … <!-- merke -->». Tallforslag (verdi:) og Grep godkjennes ved
@@ -23,6 +25,8 @@ export function avkryssede(tekst: string): Godkjenning[] {
       if (i > 0 && fingeravtrykk.startsWith('sha256:')) ut.push({ type: 'kilde', id: rest.slice(0, i), fingeravtrykk });
     } else if (type === 'godkjenn-bruk') {
       ut.push({ type: 'bruk', id: rest });
+    } else if (type === 'fylkeslenke') {
+      ut.push({ type: 'fylkeslenke', id: rest });
     } else if (type === 'praksis') {
       ut.push({ type: 'praksis', id: rest });
     } else if (type === 'kontroll') {
@@ -135,6 +139,8 @@ export function beskriv(g: Godkjenning): string {
       return `praksisen \`${g.id}\` er bekreftet`;
     case 'innhold':
       return `\`${g.id}\` er kontrollert`;
+    case 'fylkeslenke':
+      return `lenken til fylket \`${g.id}\` er bekreftet`;
     default:
       return `regelverdien \`${g.id}\` er kontrollert`;
   }

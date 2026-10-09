@@ -22,6 +22,7 @@ import {
   settKontrollertVerdi,
   type Godkjenning,
 } from './godkjenning.ts';
+import { settFylkeslenke } from '../lenker/fylkeslenker.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const sak = process.env.SAK ?? '?';
@@ -90,6 +91,10 @@ function godkjenn(g: Godkjenning): boolean {
   if (g.type === 'kilde') return endre(join(rot, 'content/kilder.yaml'), (t) => settFingeravtrykk(t, g.id, g.fingeravtrykk, idag, sak));
   if (g.type === 'bruk') return endre(join(rot, 'content/kilder.yaml'), (t) => settGodkjentBruk(t, g.id, idag));
   if (g.type === 'praksis') return endre(praksisfil, (t) => settBekreftet(t, g.id, idag));
+  if (g.type === 'fylkeslenke') {
+    const [fylke = '', tema = ''] = g.id.split(':');
+    return endre(join(rot, 'content/fylker/lenker.yaml'), (t) => settFylkeslenke(t, fylke, tema, { bekreftet: idag }));
+  }
   if (g.type === 'innhold') return innholdsfiler.filter((f) => f.ider.includes(g.id)).some((f) => endre(f.fil, (t) => settKontrollertInnhold(t, g.id, idag)));
   const [regelsett, nokkel = ''] = g.id.split('/');
   return regelfiler.filter(({ r }) => r.id === regelsett && nokkel in r.verdier).some(({ fil }) => endre(fil, (t) => settKontrollertVerdi(t, nokkel, idag)));

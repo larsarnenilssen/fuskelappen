@@ -27,3 +27,5 @@
 **Endret 07.10.2026 (sak #118):** Lovdatas korte adresser («lovdata.no/lov/…/§5-1») sendes alltid videre til den lange adressen under /dokument/. De er Lovdatas faste adresser, som Lovdata selv bruker i teksten, og regnes som ok, ikke flyttet. Adresser i kommentarer i YAML-filene er eksempler og sjekkes ikke.
 
 **Endret 09.10.2026:** De elleve Vestland-kildene (`vlfk-*`) er tatt ut av kilderegisteret, og punktet for vestlandfylke.no i kontrollrundene er fjernet. Vestland behandles som de andre fylkene, med lenkene i `content/fylker/lenker.yaml` (eier 09.10.2026).
+
+**Endret 09.10.2026:** Svarer ikke en adresse (feil i tilkoblingen eller DNS), prøves samme adresse med www lagt til eller tatt bort. Virker den, regnes lenken som ok, med en merknad, så en www-feil ikke gir falsk alarm. Lenkene til fylkene bekreftes i tillegg med tittelen hver uke (avgjørelse 106).

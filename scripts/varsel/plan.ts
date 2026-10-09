@@ -9,8 +9,9 @@
 //   listen.
 // - Ellers oppdateres bare teksten, uten kommentar.
 //
-// Et punkt er en linje som begynner med «- ». Datoer og «N ganger på rad» teller ikke, så «3 ganger på rad» og «4
-// ganger på rad» er samme punkt. Merket nederst i saken husker når den ble laget, når eier sist fikk e-post og punktene da.
+// Et punkt er en linje som begynner med «- », utenom delen merket «uten-varsel» (avgjørelse 106): den gir verken
+// kommentar eller påminnelse, men holder saken åpen. Datoer og «N ganger på rad» teller ikke, så «3 ganger på rad»
+// og «4 ganger på rad» er samme punkt. Merket nederst i saken husker når den ble laget, når eier sist fikk e-post og punktene da.
 // Ren logikk, testet i tests/unit/varsel.test.ts.
 import { createHash } from 'node:crypto';
 
@@ -41,9 +42,22 @@ const MAKS_KOMMENTAR = 60_000;
 
 const MERKE = /\n*<!-- varsel siden:(\d{4}-\d{2}-\d{2}) varslet:(\d{4}-\d{2}-\d{2}) punkter:([0-9a-f,]*) -->\s*$/;
 
-/** Punktlinjene i teksten: linjer som begynner med «- », med eller uten innrykk. */
-function punktlinjer(tekst: string): string[] {
-  return tekst.split('\n').filter((l) => /^\s*- /.test(l));
+/** Merkene rundt en del av saken som ikke gir e-post (avgjørelse 106). */
+export const STILLE_START = '<!-- uten-varsel -->';
+export const STILLE_SLUTT = '<!-- /uten-varsel -->';
+
+/**
+ * Punktlinjene i teksten: linjer som begynner med «- », med eller uten innrykk. Linjene mellom `<!-- uten-varsel -->`
+ * og `<!-- /uten-varsel -->` er ikke med. Der står det som skifter hver uke med vilje, som ukens kontroll i
+ * kontrollsaken, og det skal ikke gi e-post (avgjørelse 106).
+ */
+export function punktlinjer(tekst: string): string[] {
+  let stille = false;
+  return tekst.split('\n').filter((l) => {
+    if (l.trim() === STILLE_START) stille = true;
+    else if (l.trim() === STILLE_SLUTT) stille = false;
+    return !stille && /^\s*- /.test(l);
+  });
 }
 
 /** Nøkkelen for et punkt: linjen uten avkrysning, datoer og «N ganger på rad», som endres fra gang til gang. */
@@ -98,7 +112,7 @@ export function planleggVarsel(v: Varsel, aapen: AapenSak | null): Varselhandlin
     kommentar = kortet(
       [`**Nytt siden sist (${norskDato(v.idag)}):**`, '', ...nye.map((l) => l.trimStart()), '', '---', '', `**Alt som står åpent nå** (saken ble laget ${norskDato(forrige.siden)}):`, '', hele].join('\n'),
     );
-  } else if (dagerMellom(forrige.varslet, v.idag) >= v.paminnelseDager) {
+  } else if (dagerMellom(forrige.varslet, v.idag) >= v.paminnelseDager && (punktlinjer(v.tekst).length > 0 || !v.tekst.includes(STILLE_START))) {
     kommentar = kortet(
       [`**Påminnelse:** Dette har stått åpent siden ${norskDato(forrige.siden)}, og noe av det har ikke løst seg selv. Her er alt som står åpent nå:`, '', hele].join('\n'),
     );

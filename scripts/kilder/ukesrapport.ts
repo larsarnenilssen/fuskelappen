@@ -1,6 +1,7 @@
 // Den ukentlige kontrollsaken: én GitHub-sak med alt eier bør se på etter kildesjekken, med avkrysningsliste.
 // Saken oppdateres hver mandag, får en kommentar (og dermed e-post) når noe nytt har kommet til, og lukkes når
-// alt er i orden. Ren logikk, testes i tests/unit/ukesrapport.test.ts (avgjørelse 018).
+// alt er i orden. Ukens kontroll står nederst, gir ikke e-post og holder saken åpen så lenge noe ikke er kontrollert
+// (avgjørelse 106). Ren logikk, testes i tests/unit/kontrollsak.test.ts og ukenskontroll.test.ts (avgjørelse 018).
 import { FORMATRAD, feiltype } from '../varsel/feiltype.ts';
 import { type AapenSak, planleggVarsel, type Varselhandling } from '../varsel/plan.ts';
 import { createHash } from 'node:crypto';
@@ -11,6 +12,8 @@ import type { Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Tekstendring } from './avsnitt.ts';
 import type { Grependringer } from './grep.ts';
 import { erIkkeGodkjent } from './logikk.ts';
+import type { Fylkeslenke } from '../lenker/fylkeslenker.ts';
+import type { UkensKontroll } from './ukenskontroll.ts';
 
 export const KONTROLLETIKETT = 'kontroll';
 /** Etiketten de gamle sakene per kilde hadde. De lukkes og erstattes av kontrollsaken. */
@@ -46,6 +49,10 @@ export interface Ukesgrunnlag {
   utlop?: Utlop[];
   /** Navn i rundskrivet uten nynorsk eller utskrevet navn i appen (.generert/tilbud-navn.json). */
   navn?: { linjer: string[]; ordninger: string[] } | null;
+  /** Lenkene til fylkenes temasider som ikke er bekreftet på åtte uker (scripts/lenker/fylker.ts, avgjørelse 106). */
+  fylkeslenker?: readonly Fylkeslenke[];
+  /** Ukens kontroll (ukenskontroll.ts, avgjørelse 106). Gir ikke e-post, men holder saken åpen. */
+  ukens?: UkensKontroll | null;
 }
 
 /** Endrede læreplaner og fag fra Grep, til orientering i kontrollsaken (avgjørelse 022). */
@@ -395,6 +402,21 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     deler.push(['## Nye navn i fag- og timefordelingen', '', ...linjer.slice(0, MAKS_DETALJER), ...(linjer.length > MAKS_DETALJER ? [`- … og ${linjer.length - MAKS_DETALJER} til.`] : []), '']);
   }
 
+  // Lenkene til fylkene som ikke har svart med riktig tittel på åtte uker (avgjørelse 106). Eier sjekker dem for hånd.
+  // Avkrysset og /godkjent gir dagens dato i bekreftet.
+  const fylkeslenker = g.fylkeslenker ?? [];
+  if (fylkeslenker.length > 0) {
+    punkter += fylkeslenker.length;
+    deler.push([
+      '## Lenker til fylkene som ikke er bekreftet',
+      '',
+      'Lenkene under har ikke svart med riktig side de siste åtte ukene (eller aldri), så de kan ikke bekreftes automatisk. Åpne dem. Viser lenken fylkets side om temaet, kryss av og skriv /godkjent. Viser den feil side eller ingenting, skriv det til Claude.',
+      '',
+      ...fylkeslenker.map((l) => `- [ ] [${l.navn}: ${l.tema}](${l.url}), sist bekreftet ${l.bekreftet ? dato(l.bekreftet) : 'aldri'} <!-- fylkeslenke:${l.fylke}:${l.tema} -->`),
+      '',
+    ]);
+  }
+
   // Nyhetskildene har egen sak, som oppdateres hver dag (etikett «nyheter», avgjørelse 085).
   const feilet = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'feilet' && kilder.get(id)?.sjekkmetode !== 'nyheter');
   // Feil som ligner programfeil eller uventet format, går ikke over av seg selv og står for seg (avgjørelse 099).
@@ -411,21 +433,24 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     ]);
   }
 
-  const innhold = deler.flat();
-  const tittel = punkter > 0 ? `Kontroll: ${punkter} ${punkter === 1 ? 'punkt' : 'punkter'} å se på` : 'Kontroll: til orientering';
+  // Ukens kontroll står sist (avgjørelse 106). Den gir ikke e-post, men saken står åpen så lenge noe ikke er kontrollert.
+  const ukens = g.ukens && g.ukens.antall > 0 ? g.ukens.linjer : [];
+  const innhold = [...deler.flat(), ...ukens];
+  const tittel =
+    punkter > 0 ? `Kontroll: ${punkter} ${punkter === 1 ? 'punkt' : 'punkter'} å se på` : orientering === 0 && ukens.length > 0 ? 'Kontroll: ukens kontroll' : 'Kontroll: til orientering';
   const tekst = [
     `Kildesjekken kjørte ${dato(g.kildestatus.kjort)}. Her er det du bør se på.`,
     '',
     'Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar. Da legges datoen inn automatisk. Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk`. Skal noe endres, skriv det til Claude.',
     '',
-    'Saken oppdateres hver mandag. Du får e-post når noe nytt kommer til, med hele listen. Står noe åpent uten at noe nytt kommer til, får du en påminnelse med hele listen annenhver uke. Saken lukkes når alt er i orden (avgjørelse 085).',
+    'Saken oppdateres hver mandag. Du får e-post når noe nytt kommer til, med hele listen. Står noe åpent uten at noe nytt kommer til, får du en påminnelse med hele listen annenhver uke. Saken lukkes når alt er i orden (avgjørelse 085). Ukens kontroll nederst gir ikke e-post, og saken står åpen så lenge noe ikke er kontrollert (avgjørelse 106).',
     '',
     ...innhold,
     '---',
     '',
     `Hele oversikten: [docs/KONTROLL.md](https://github.com/${g.repo}/blob/main/docs/KONTROLL.md). Slik behandler du saken: [docs/EIER.md](https://github.com/${g.repo}/blob/main/docs/EIER.md), punkt 6.`,
   ].join('\n');
-  return { punkter, aapen: punkter + orientering > 0, tittel, tekst };
+  return { punkter, aapen: punkter + orientering > 0 || ukens.length > 0, tittel, tekst };
 }
 
 /** Dager mellom påminnelsene om en kontrollsak som står åpen uten at noe nytt kommer til (avgjørelse 085). */

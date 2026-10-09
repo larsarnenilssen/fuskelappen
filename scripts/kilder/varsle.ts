@@ -4,12 +4,12 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
+import type { Fylkeslenker, Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { kontrollenker } from '../../src/modules/fag/tilbud/vilbli.ts';
 import { lesKildestatus } from '../../src/core/kildestatus/kildestatus.ts';
 import { lagKontrollindeks } from '../../src/core/kontroll/indeks.ts';
-import { lesVerdistatus } from '../../src/core/kontroll/verdisjekk.ts';
+import { lesVerdistatus, verdinokkel } from '../../src/core/kontroll/verdisjekk.ts';
 import { lesInnhold, lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import type { Tekstendring } from './avsnitt.ts';
@@ -17,6 +17,8 @@ import type { Grependringer } from './grep.ts';
 import { lagKontrollrunde, praksisTilBekreftelse, RUNDEETIKETT, rundemerke, rundeperiode } from './kontrollrunde.ts';
 import { GAMMEL_ETIKETT, KONTROLLETIKETT, lagUkesrapport, planleggKontrollsak, regelverkSomGarUt } from './ukesrapport.ts';
 import { lagGithub, utforVarsel } from '../varsel/github.ts';
+import { alleLenker, ikkeBekreftet } from '../lenker/fylkeslenker.ts';
+import { lagUkensKontroll, type Verdidetaljer } from './ukenskontroll.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const lesJson = (fil: string): unknown => (existsSync(fil) ? (JSON.parse(readFileSync(fil, 'utf8')) as unknown) : null);
@@ -27,7 +29,9 @@ if (!kildestatus) throw new Error('Ugyldig data/status/kildestatus.json');
 const verdistatus = lesVerdistatus(lesJson(join(rot, 'data/status/verdistatus.json')));
 const endringer = (lesJson(join(rot, '.generert/endringer.json')) ?? {}) as Record<string, Tekstendring[] | null>;
 const idag = kildestatus.kjort.slice(0, 10);
-const indeks = lagKontrollindeks(register.kilder, lesRegelsett(rot), lesInnhold(rot), kildestatus.kilder, verdistatus, idag);
+const regelsett = lesRegelsett(rot);
+const alleInnhold = lesInnhold(rot);
+const indeks = lagKontrollindeks(register.kilder, regelsett, alleInnhold, kildestatus.kilder, verdistatus, idag);
 
 const token = process.env.GITHUB_TOKEN;
 const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/jukselappen';
@@ -41,8 +45,15 @@ const udir = lesJson(join(rot, '.generert/udir-endringer.json')) as { endringer:
 const navn = lesJson(join(rot, '.generert/tilbud-navn.json')) as { linjer: string[]; ordninger: string[] } | null;
 const overordnet = lesJson(join(rot, '.generert/overordnet-endringer.json')) as { endringer: string[] } | null;
 const lovdata = lesJson(join(rot, '.generert/lovdata-endringer.json')) as { dokumenter: { id: string; kilde?: string; endringer: string[] }[] } | null;
-const utlop = regelverkSomGarUt(lesRegelsett(rot), idag);
-const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo, grep, kobling, lopsamsvar, udir, navn, overordnet, lovdata, utlop, ...(forslag ? { forslag } : {}) });
+const utlop = regelverkSomGarUt(regelsett, idag);
+// Ukens kontroll og lenkene til fylkene som ikke er bekreftet på åtte uker (avgjørelse 106).
+const verdidetaljer = new Map<string, Verdidetaljer>(
+  regelsett.flatMap((r) => Object.entries(r.verdier).map(([nokkel, v]): [string, Verdidetaljer] => [verdinokkel(r.id, nokkel), { ...(v.sitat ? { sitat: v.sitat } : {}), ...(v.merknad ? { merknad: v.merknad } : {}) }])),
+);
+const fylkeinnhold = new Set(alleInnhold.filter(({ element }) => element.gyldighet.niva === 'fylke').map(({ element }) => element.id));
+const ukens = lagUkensKontroll(indeks, register, idag, repo, { fylkeinnhold, verdidetaljer });
+const fylkeslenker = ikkeBekreftet(alleLenker(lesFil(rot, join(rot, 'content/fylker/lenker.yaml')) as Fylkeslenker), idag);
+const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo, grep, kobling, lopsamsvar, udir, navn, overordnet, lovdata, utlop, ukens, fylkeslenker, ...(forslag ? { forslag } : {}) });
 
 // Kontrollrunden: første mandag i mai og august, eller når den startes manuelt (KONTROLLRUNDE=ja).
 const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;

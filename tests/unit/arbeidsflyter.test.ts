@@ -85,6 +85,22 @@ describe('arbeidsflyter', () => {
     expect(lagre).not.toContain('data/nyheter');
   });
 
+  it('kildesjekken bekrefter lenkene til fylkene, tester filen og lagrer den før kontrollsaken lages (avgjørelse 106)', () => {
+    type Steg = { id?: string; name?: string; run?: string };
+    const steg = (parse(readFileSync(join(rot, '.github/workflows/kilder.yml'), 'utf8')) as { jobs: Record<string, { steps: Steg[] }> }).jobs.sjekk?.steps ?? [];
+    const i = steg.findIndex((s) => s.id === 'fylkeslenker');
+    expect(steg[i]?.run).toContain('npm run lenker:fylker');
+    expect(steg[i]?.run).toContain('npx vitest run');
+    expect(steg[i]?.run).toContain('git checkout -- content/fylker/lenker.yaml');
+    const lagre = steg.findIndex((s) => s.name === 'Lagre kildestatus');
+    const varsle = steg.findIndex((s) => s.run === 'npm run kilder:varsle');
+    expect(i).toBeGreaterThan(-1);
+    expect(i).toBeLessThan(lagre);
+    expect(lagre).toBeLessThan(varsle);
+    expect(steg[lagre]?.run).toContain('content/fylker/lenker.yaml');
+    expect(steg.find((s) => s.id === 'delfeil')?.run).toContain('Bekreft lenkene til fylkene');
+  });
+
   it('nyhetene lagres på grenen nyheter, ikke på main, og publiseres bare når sakene er endret (avgjørelse 098)', () => {
     const nyheter = readFileSync(join(rot, '.github/workflows/nyheter.yml'), 'utf8');
     expect(nyheter).toContain('refs/heads/nyheter');
