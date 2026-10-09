@@ -8,7 +8,7 @@
  "refid": "lov/2003-07-04-84",
  "sistEndret": "2026-08-01",
  "iKraft": "2003-10-01",
- "hentet": "2026-10-06",
+ "hentet": "2026-10-09",
  "gyldighet": {
   "niva": "nasjonal"
  },
@@ -19,6 +19,7 @@
   "4",
   "5",
   "5A",
+  "6",
   "6A",
   "7"
  ],
@@ -445,7 +446,8 @@
         "Departementet kan godkjenne private skolar og driftsendringar ved godkjende private skolar. Departementet kan godkjenne at ein grunnskole flyttar verksemda si til ein annan kommune eller at ein vidaregåande skole flyttar verksemda si til ein annan fylkeskommune. Ein skole skal ikkje få godkjenning dersom etableringa vil medføre negative konsekvensar for det offentlege skoletilbodet, eller andre særlege grunnar tilseier at skolen ikkje bør godkjennast. Vertskommunen eller vertsfylket skal få høve til å gi fråsegn før departementet gjer vedtak i saka, og dei kan klage på departementet sitt vedtak. Departementet skal leggje vesentleg vekt på fråsegna til vertskommunen eller vertsfylket. Godkjende skolar har rett til statstilskot etter ",
         {
          "t": "§ 6-1",
-         "l": "lov/2003-07-04-84/§6-1"
+         "l": "lov/2003-07-04-84/§6-1",
+         "a": "privatskolelova/6-1"
         },
         " og til å drive verksemd etter lova."
        ]
@@ -711,7 +713,8 @@
         "Skolen skal ha vedtekter. Vedtektene skal angje at alle offentlege tilskot og skolepengar skal kome elevane til gode, jf. ",
         {
          "t": "§ 6-3",
-         "l": "lov/2003-07-04-84/§6-3"
+         "l": "lov/2003-07-04-84/§6-3",
+         "a": "privatskolelova/6-3"
         },
         "."
        ]
@@ -2064,7 +2067,8 @@
         " og skolar som får statstilskot etter ",
         {
          "t": "privatskolelova § 6-1",
-         "l": "lov/2003-07-04-84/§6-1"
+         "l": "lov/2003-07-04-84/§6-1",
+         "a": "privatskolelova/6-1"
         },
         "."
        ]
@@ -4202,6 +4206,403 @@
        {
         "t": "res. 31 mai 2024 nr. 1028",
         "l": "forskrift/2024-05-31-1028"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap6",
+   "type": "kapittel",
+   "nr": "6",
+   "overskrift": "Kapittel 6 Offentlege tilskot og skolepengar m.m.",
+   "merknader": [
+    [
+     "Overskriften endra ved lov ",
+     {
+      "t": "29 juni 2007 nr. 92",
+      "l": "lov/2007-06-29-92"
+     },
+     " (ikr. 1 juli 2007 iflg. ",
+     {
+      "t": "res. 29 juni 2007 nr. 757",
+      "l": "forskrift/2007-06-29-757"
+     },
+     ")."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "6-1",
+     "visNr": "§ 6-1",
+     "tittel": "Statstilskot",
+     "ledd": [
+      {
+       "tekst": [
+        "Godkjende skolar får statstilskot til godkjend opplæring med 85 prosent av eit tilskotsgrunnlag per elev. Til grunn for tilskotsgrunnlaget ligg gjennomsnittlege driftsutgifter per elev i den offentlege skolen. Tilskotsgrunnlaget blir korrigert for utgifter som den offentlege skolen har, men som ikkje skal inngå i tilskotsgrunnlaget. Tilskotsgrunnlaget blir rekna ut særskilt for barnesteget, ungdomssteget og dei ulike utdanningsprogramma i vidaregåande opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "Grunnskolar får innarbeidd 100 prosent av gjennomsnittlege utgifter til pensjonsinnskot i offentlege skolar i tilskotsgrunnlaget. Vidaregåande skolar får innarbeidd 85 prosent av gjennomsnittlege utgifter til pensjonsinnskot i offentlege skolar i tilskotsgrunnlaget."
+       ]
+      },
+      {
+       "tekst": [
+        "For grunnskolar skal det takast omsyn til skilnaden i utgifter mellom små og store skolar ved at det blir gitt ein høgare tilskotssats for elevar opp til eit fastsett elevtal (knekkpunktet)."
+       ]
+      },
+      {
+       "tekst": [
+        "Dei skolane som driv særskilt tilrettelagd opplæring for elevar med dokumenterte behov, får likevel alle driftsutgifter dekte ved statstilskot etter ein normalsats per elev per skoleår."
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om tilskotsordninga for dei skolane som driv særskilt tilrettelagd opplæring for elevar med dokumenterte behov, om tilskotsordninga for grunnskolar og vidaregåande skolar, og om dokumentasjon for elevtal og rapportering av elevtal."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved lover ",
+       {
+        "t": "4 juli 2003 nr. 85",
+        "l": "lov/2003-07-04-85"
+       },
+       " (ikr. 1 okt 2003), ",
+       {
+        "t": "26 nov 2004 nr. 74",
+        "l": "lov/2004-11-26-74"
+       },
+       " (ikr. 1 des 2004, sjå lovas III), ",
+       {
+        "t": "29 juni 2007 nr. 92",
+        "l": "lov/2007-06-29-92"
+       },
+       " (ikr. 1 juli 2007 iflg. ",
+       {
+        "t": "res. 29 juni 2007 nr. 757",
+        "l": "forskrift/2007-06-29-757"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 94",
+        "l": "lov/2009-06-19-94"
+       },
+       " (ikr. 1 aug 2009 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 675",
+        "l": "forskrift/2009-06-19-675"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 95",
+        "l": "lov/2009-06-19-95"
+       },
+       " (ikr. 1 jan 2010), ",
+       {
+        "t": "14 juni 2024 nr. 34",
+        "l": "lov/2024-06-14-34"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 14 juni 2024 nr. 954",
+        "l": "forskrift/2024-06-14-954"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-2",
+     "visNr": "§ 6-2",
+     "tittel": "Skolepengar",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolar som får statstilskot etter ",
+        {
+         "t": "§ 6-1",
+         "l": "lov/2003-07-04-84/§6-1",
+         "a": "privatskolelova/6-1"
+        },
+        " første ledd, kan krevje inn skolepengar. Styret fastset storleiken på skolepengane. Skolepengane kan utgjere inntil 15 prosent av tilskotsgrunnlaget, med eit beløp fastsett av departementet i tillegg for dekning av utgifter til husleige/kapitalkostnader. Departementet kan i særskilde tilfelle gjere tidsavgrensa unntak frå kravet."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom styret etter ",
+        {
+         "t": "§ 5-2 andre ledd bokstav b",
+         "l": "lov/2003-07-04-84/§5-2/ledd/2/bokstav/b",
+         "a": "privatskolelova/5-2"
+        },
+        " etablerer ei ordning med graderte og reduserte skolepengar, kan skolen etter søknad gi reduserte skolepengar ut frå økonomien til den enkelte hushaldninga, og gi moderasjon til hushaldningar som har fleire barn på skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolar som får statstilskot etter ",
+        {
+         "t": "§ 6-1",
+         "l": "lov/2003-07-04-84/§6-1",
+         "a": "privatskolelova/6-1"
+        },
+        " fjerde ledd, kan i særskilde tilfelle få dispensasjon til å krevje inn skolepengar."
+       ]
+      },
+      {
+       "tekst": [
+        "Grunnskolar kan ikkje krevje noka form for betaling frå elevar eller foreldre utover det som følgjer av denne føresegna."
+       ]
+      },
+      {
+       "tekst": [
+        "Vidaregåande skolar kan ikkje krevje noka form for betaling for opplæringa frå elevar eller foreldre utover det som følgjer av denne føresegna. Skolen har ansvaret for å halde elevane med nødvendige trykte og digitale læremiddel og digitalt utstyr. Elevane kan ikkje påleggjast å dekkje nokon del av utgiftene til dette utover det som følgjer av forskrift. Skolen kan påleggje elevane å halde seg med anna individuelt utstyr som opplæringa til vanleg gjer det nødvendig å ha. Departementet kan gi nærmare forskrifter."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved lover ",
+       {
+        "t": "4 juli 2003 nr. 85",
+        "l": "lov/2003-07-04-85"
+       },
+       " (ikr. 1 okt 2003), ",
+       {
+        "t": "26 nov 2004 nr. 74",
+        "l": "lov/2004-11-26-74"
+       },
+       " (ikr. 1 des 2004, sjå lovas III), ",
+       {
+        "t": "29 juni 2007 nr. 92",
+        "l": "lov/2007-06-29-92"
+       },
+       " (ikr. 1 juli 2007 iflg. ",
+       {
+        "t": "res. 29 juni 2007 nr. 757",
+        "l": "forskrift/2007-06-29-757"
+       },
+       "), ",
+       {
+        "t": "29 juni 2007 nr. 91",
+        "l": "lov/2007-06-29-91"
+       },
+       " (ikr. 1 aug 2007 iflg. ",
+       {
+        "t": "res. 29 juni 2007 nr. 758",
+        "l": "forskrift/2007-06-29-758"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 94",
+        "l": "lov/2009-06-19-94"
+       },
+       " (ikr. 1 aug 2009 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 675",
+        "l": "forskrift/2009-06-19-675"
+       },
+       "), ",
+       {
+        "t": "14 juni 2024 nr. 34",
+        "l": "lov/2024-06-14-34"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 14 juni 2024 nr. 954",
+        "l": "forskrift/2024-06-14-954"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-3",
+     "visNr": "§ 6-3",
+     "tittel": "Krav til bruken av offentlege tilskot og skolepengar",
+     "ledd": [
+      {
+       "tekst": [
+        "Alle offentlege tilskot og skolepengar skal kome elevane til gode. Dette inneber mellom anna at skolen ikkje kan"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "gi utbytte eller på annan måte overføre overskot til eigarane eller deira nærståande, verken når skolen er i drift eller om drifta blir nedlagd"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "pådra seg kostnader i form av leigeutgifter for eigedom eller lokale som tilhører skolens eigarar eller deira nærståande eller på anna måte pådra seg kostnader som kan innebere at alle offentlege tilskot eller eigendelar frå elevane ikkje kjem elevane til gode."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi nærare forskrift om forbod mot utbytte eller anna overføring som nemnt i første ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om korleis skolane skal dokumentere at første ledd er oppfylt og skolane si plikt til å godtgjere at innkjøp og leige er gjort på grunnlag av vilkåra i marknaden."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "4 juli 2003 nr. 85",
+        "l": "lov/2003-07-04-85"
+       },
+       " (ikr. 1 okt 2003), endra ved lover ",
+       {
+        "t": "26 nov 2004 nr. 74",
+        "l": "lov/2004-11-26-74"
+       },
+       " (ikr. 1 des 2004, sjå lovas III), ",
+       {
+        "t": "29 juni 2007 nr. 92",
+        "l": "lov/2007-06-29-92"
+       },
+       " (ikr. 1 juli 2007 iflg. ",
+       {
+        "t": "res. 29 juni 2007 nr. 757",
+        "l": "forskrift/2007-06-29-757"
+       },
+       "), ",
+       {
+        "t": "19 juni 2015 nr. 75",
+        "l": "lov/2015-06-19-75"
+       },
+       " (ikr. 1 aug 2015 iflg. ",
+       {
+        "t": "res. 19 juni 2015 nr. 701",
+        "l": "forskrift/2015-06-19-701"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-4",
+     "visNr": "§ 6-4",
+     "tittel": "Statstilskot til kompletterande undervisning",
+     "ledd": [
+      {
+       "tekst": [
+        "Det kan givast tilskot til kompletterande undervisning til elevar som er i eit ordinært utdanningsløp ved ein grunnskole i utlandet. Tilskotet kan gis for"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "norske statsborgarar og barn av norske statsborgarar"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "EØS-borgarar og barn av EØS-borgarar som har rett til likebehandling med norske statsborgarar etter ",
+            {
+             "t": "EØS-avtalen",
+             "l": "lov/1992-11-27-109/eøsl"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "britiske statsborgarar og barn av britiske statsborgarar som har rett til likebehandling med norske statsborgarar etter ",
+            {
+             "t": "lov om overgangsregler mv. ved Storbritannias uttreden fra Den europeiske union § 3",
+             "l": "lov/2020-11-27-131/§3"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Det kan ikkje givast tilskot til kompletterande undervisning for elevar ved skole som er godkjend etter lova her."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "4 juli 2003 nr. 85",
+        "l": "lov/2003-07-04-85"
+       },
+       " (ikr. 1 okt 2003), endra ved lover ",
+       {
+        "t": "26 nov 2004 nr. 74",
+        "l": "lov/2004-11-26-74"
+       },
+       " (ikr. 1 des 2004, sjå lovas III), ",
+       {
+        "t": "29 juni 2007 nr. 92",
+        "l": "lov/2007-06-29-92"
+       },
+       " (ikr. 1 juli 2007 iflg. ",
+       {
+        "t": "res. 29 juni 2007 nr. 757",
+        "l": "forskrift/2007-06-29-757"
+       },
+       "), ",
+       {
+        "t": "19 juni 2015 nr. 75",
+        "l": "lov/2015-06-19-75"
+       },
+       " (ikr. 1 aug 2015 iflg. ",
+       {
+        "t": "res. 19 juni 2015 nr. 701",
+        "l": "forskrift/2015-06-19-701"
+       },
+       "), ",
+       {
+        "t": "27 nov 2020 nr. 131",
+        "l": "lov/2020-11-27-131"
+       },
+       " (ikr. 1 jan 2021 iflg. ",
+       {
+        "t": "res. 18 des 2020 nr. 2842",
+        "l": "forskrift/2020-12-18-2842"
        },
        ")."
       ]

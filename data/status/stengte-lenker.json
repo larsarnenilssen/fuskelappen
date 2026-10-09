@@ -26,57 +26,6 @@
       "stikkprover": 0
     },
     {
-      "vert": "malemestreneioslo.no",
-      "lenker": [],
-      "stikkprover": 1
-    },
-    {
-      "vert": "miok.no",
-      "lenker": [],
-      "stikkprover": 1
-    },
-    {
-      "vert": "nifu.no",
-      "lenker": [
-        {
-          "url": "https://www.nifu.no/",
-          "brukt": [
-            "content/kilder.yaml"
-          ]
-        },
-        {
-          "url": "https://www.nifu.no/category/nyhet/feed/",
-          "brukt": [
-            "content/nyheter/kilder.yaml"
-          ]
-        }
-      ],
-      "stikkprover": 0
-    },
-    {
-      "vert": "okio.no",
-      "lenker": [],
-      "stikkprover": 1
-    },
-    {
-      "vert": "skolelederforbundet.no",
-      "lenker": [
-        {
-          "url": "https://www.skolelederforbundet.no/",
-          "brukt": [
-            "content/kilder.yaml"
-          ]
-        },
-        {
-          "url": "https://www.skolelederforbundet.no/feed/",
-          "brukt": [
-            "content/nyheter/kilder.yaml"
-          ]
-        }
-      ],
-      "stikkprover": 0
-    },
-    {
       "vert": "skolenes.no",
       "lenker": [
         {
@@ -87,11 +36,6 @@
         }
       ],
       "stikkprover": 0
-    },
-    {
-      "vert": "telemark.otek.no",
-      "lenker": [],
-      "stikkprover": 1
     },
     {
       "vert": "vilbli.no",

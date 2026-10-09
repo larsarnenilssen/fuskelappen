@@ -31,17 +31,6 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 - **Administrere eksamen:** ⚠️ endret siden 09.10.2026, ikke gått gjennom
 - **Eksamensdatoer fra udir.no og fylkeskommunene:** ⚠️ endret siden 06.10.2026, ikke gått gjennom
-- **Nyheter fra Kunnskapsdepartementet (RSS):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Siste nytt, Utdanningsdirektoratet:** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Nyheter fra Skolelederforbundet (RSS):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Nyheter fra Utdanningsforbundet:** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Nyheter fra Statsforvalteren (RSS per embete):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Utdanningsnytt, saker merket videregående (RSS):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Norsk Lovtidend (vedtatte endringer i regelverket appen har):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **forskning.no, saker merket skole og utdanning (RSS):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Nyheter fra NIFU (RSS):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Aktuelt, Direktoratet for høyere utdanning og kompetanse (HKdir):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
-- **Nyheter fra fylkeskommunene (RSS eller nyhetsliste per fylke):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
 
 ## Praksis og tolkninger
 
@@ -83,22 +72,8 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
   - https://inschool.zendesk.com/hc/no/articles/19452863757970 (står i `content/kilder.yaml`)
   - https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet (står i `content/kilder.yaml`)
   - https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer (står i `content/kilder.yaml`)
-- **malemestreneioslo.no** (én lenke)
-  - Én lenke fra dataene, som sjekkes med stikkprøver.
-- **miok.no** (én lenke)
-  - Én lenke fra dataene, som sjekkes med stikkprøver.
-- **nifu.no** (2 lenker)
-  - https://www.nifu.no/ (står i `content/kilder.yaml`)
-  - https://www.nifu.no/category/nyhet/feed/ (står i `content/nyheter/kilder.yaml`)
-- **okio.no** (én lenke)
-  - Én lenke fra dataene, som sjekkes med stikkprøver.
-- **skolelederforbundet.no** (2 lenker)
-  - https://www.skolelederforbundet.no/ (står i `content/kilder.yaml`)
-  - https://www.skolelederforbundet.no/feed/ (står i `content/nyheter/kilder.yaml`)
 - **skolenes.no** (én lenke)
   - https://www.skolenes.no/feed/ (står i `content/nyheter/kilder.yaml`)
-- **telemark.otek.no** (én lenke)
-  - Én lenke fra dataene, som sjekkes med stikkprøver.
 - **vilbli.no** (8 lenker)
   - https://www.vilbli.no/ (står i `content/inntak/frister.yaml`, `content/inntak/rett-inntak-soknad.yaml`, `content/kilder.yaml`)
   - https://www.vilbli.no/nb/nb/no/aktivitorfaget/program/v.hs/v.hsakt3----/p5 (står i `src/modules/fag/tilbud/vilbli.ts`)
@@ -674,7 +649,7 @@ Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Privatskole (`privatskole`) | begrep | § 1-2 Verkeområdet, § 2-1 Godkjenning av skolar, § 2-3a Vurdering og dokumentasjon | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Privatskole (`privatskole`) | begrep | § 1-2 Verkeområdet, § 2-1 Godkjenning av skolar, § 2-3a Vurdering og dokumentasjon, § 6-1 Statstilskot, § 6-2 Skolepengar, § 6-3 Krav til bruken av offentlege tilskot og skolepengar | `content/begreper/regelverk.yaml` | ikke kontrollert |
 
 ### Forskrift til privatskolelova (privatskoleforskrifta)
 
@@ -2327,7 +2302,8 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Er eksemplene på utstyr eleven kan måtte betale for (kokkekniver, enklere verneutstyr og avanserte kalkulatorer) og grensen mot relativt kostbart utstyr gjengitt riktig etter forarbeidene til § 5-8?
 - Udirs veileder sier at fylkeskommunen ikke kan kreve egenandel etter at eleven er formidlet til læreplass, men at lærlinger kan måtte dekke for eksempel kniver og vanlige arbeidsklær. Bør begrepet forklare forskjellen for lærlinger?
 - Veilederen sier at skolen ikke kan ta initiativ til aktiviteter som krever betaling fra elever eller foreldre. Er det likevel dekkende å si at det er mulig å samle inn penger gjennom dugnad og anonym, frivillig innsamling?
-- Privatskoler: Privatskolelova kapittel 6 er ikke med i Lov og forskrift, så teksten bygger på Udirs veileder om privatskoler, som viser til § 6-2. Er det riktig at videregående privatskoler kan kreve betaling for individuelt utstyr som opplæringen til vanlig krever, i tillegg til skolepengene?
+- Privatskoler: Merknaden bygger nå på privatskolelova § 6-2 og privatskoleforskrifta § 15-1. Er det dekkende å utelate at departementet i særlige tilfeller kan gjøre tidsavgrensede unntak fra grensen for skolepengene, og at skoler med tilskudd etter § 6-1 fjerde ledd bare kan kreve skolepenger etter dispensasjon?
+- Privatskoler: Udirs side om gratisprinsippet og privatskoler er med som kilde. Gjelder det samme om turer og aktiviteter (ikke betaling, men dugnad og anonym, frivillig innsamling) for videregående privatskoler, og bør merknaden i så fall si det?
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-8): § 5-8 Gratis vidaregåande opplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§22-5): § 22-5 Eigendel for berbar PC; [Regelverkstolkninger til opplæringslova (forarbeidene til hver paragraf)](https://www.udir.no/regelverkstolkninger/opplaring/lov-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringslova/tredje-del--vidaregaande-opplaring/kapittel-5-rett-til-vidaregaande-opplaring/-5-8-gratis-vidaregaande-opplaring/): § 5-8 Gratis vidaregåande opplæring (Prop. 57 L (2022–2023) punkt 40.7); [Veileder om gratisprinsippet i grunnskolen og videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/laremidler-og-utstyr/): Læremidler og utstyr; [Veileder om gratisprinsippet i grunnskolen og videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-om-gratisprinsippet-i-grunnskolen-og-videregaende-opplaring/aktiviteter-og-turer/): Aktiviteter og turer
 
@@ -4279,8 +4255,9 @@ Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande o
 
 - Er det riktig å si at privatskoler har egne regler om inntak, skoleregler og bortvisning (pl. §§ 3-1, 5A-7 og 3-10), og er det de viktigste forskjellene å nevne?
 - Skal begrepet også nevne skoler godkjent etter kapittel 6A (yrkesrettet opplæring)?
+- Tilskuddet og skolepengene (privatskolelova §§ 6-1 til 6-3): Er det nok å si at skolen kan kreve skolepenger innenfor grensene i loven og ikke kan gi utbytte til eierne, eller bør begrepet også nevne tallene som står i gratisprinsippet for privatskoler (85 prosent av tilskuddsgrunnlaget i tilskudd, skolepenger inntil 15 prosent)?
 
-Kilder å sjekke mot: [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§1-2): § 1-2 Verkeområdet; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§2-1): § 2-1 Godkjenning av skolar; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§2-3a): § 2-3a Vurdering og dokumentasjon
+Kilder å sjekke mot: [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§1-2): § 1-2 Verkeområdet; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§2-1): § 2-1 Godkjenning av skolar; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§2-3a): § 2-3a Vurdering og dokumentasjon; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§6-1): § 6-1 Statstilskot; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§6-2): § 6-2 Skolepengar; [Lov om private skolar med rett til statstilskot (privatskolelova)](https://lovdata.no/lov/2003-07-04-84/§6-3): § 6-3 Krav til bruken av offentlege tilskot og skolepengar
 
 **Privatskoler** (`mo-retten-privatskoler`, forklaring, ikke kontrollert)
 
