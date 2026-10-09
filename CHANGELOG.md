@@ -11,6 +11,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Hvem melder hva til hvem:** nytt kort på siden om skolemiljøet som samler meldepliktene (til rektor, ved krenkelser fra ansatte, etter fysiske inngrep og til barnevernet), avvergeplikten og forholdet til taushetsplikten.
 - **Gratisprinsippet:** nytt begrep om hva elevene kan og ikke kan måtte betale for i videregående.
 - **Straffeloven § 196** (avvergeplikten) i Lov og forskrift. Paragrafen kommer med første ukentlige henting.
+- **Privatskolelova kapittel 6** (tilskudd og skolepenger) i Lov og forskrift. Kapitlet kommer med første henting. Gratisprinsippet for privatskoler bygger nå på § 6-2 om skolepenger og forskriften om egenandel for bærbar PC, og begrepet «Privatskole» nevner tilskuddet og skolepengene.
 - **Begrepene viser det som er ulikt for privatskoler** når «Privatskole» er valgt, som kortene gjør.
 - Begrepet «Kontaktlærer» sier nå hva opplæringslova legger i rollen, og «Skjerpet aktivitetsplikt» at rektor ikke melder videre når meldingen er åpenbart grunnløs.
 

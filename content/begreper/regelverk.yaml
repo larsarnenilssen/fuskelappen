@@ -60,20 +60,28 @@
     nb: >-
       En privat grunnskole eller videregående skole som er godkjent etter privatskolelova, med rett til statstilskudd.
       Privatskoler følger mange av de samme reglene som offentlige skoler, men har egne regler blant annet om inntak,
-      skoleregler og bortvisning. Vurderingsreglene står i forskriften til privatskolelova. Appen er skrevet for
+      skoleregler og bortvisning. Vurderingsreglene står i forskriften til privatskolelova. Staten gir tilskudd til
+      godkjent opplæring, og skolen kan kreve skolepenger innenfor grensene i loven. Tilskuddet og skolepengene skal
+      komme elevene til gode, så skolen kan for eksempel ikke gi utbytte til eierne. Appen er skrevet for
       fylkeskommunale skoler. Velg «Privatskole» i innstillingene for å se reglene for privatskoler der de er ulike.
     nn: >-
       Ein privat grunnskule eller vidaregåande skule som er godkjend etter privatskolelova, med rett til statstilskot.
       Privatskular følgjer mange av dei same reglane som offentlege skular, men har eigne reglar mellom anna om inntak,
-      skulereglar og bortvising. Vurderingsreglane står i forskrifta til privatskolelova. Appen er skriven for
+      skulereglar og bortvising. Vurderingsreglane står i forskrifta til privatskolelova. Staten gir tilskot til
+      godkjend opplæring, og skulen kan krevje skulepengar innanfor grensene i lova. Tilskotet og skulepengane skal
+      kome elevane til gode, så skulen kan til dømes ikkje gi utbyte til eigarane. Appen er skriven for
       fylkeskommunale skular. Vel «Privatskule» i innstillingane for å sjå reglane for privatskular der dei er ulike.
   kilder:
     - { id: privatskolelova, punkt: "§ 1-2 Verkeområdet", url: "https://lovdata.no/lov/2003-07-04-84/§1-2" }
     - { id: privatskolelova, punkt: "§ 2-1 Godkjenning av skolar", url: "https://lovdata.no/lov/2003-07-04-84/§2-1" }
     - { id: privatskolelova, punkt: "§ 2-3a Vurdering og dokumentasjon", url: "https://lovdata.no/lov/2003-07-04-84/§2-3a" }
+    - { id: privatskolelova, punkt: "§ 6-1 Statstilskot", url: "https://lovdata.no/lov/2003-07-04-84/§6-1" }
+    - { id: privatskolelova, punkt: "§ 6-2 Skolepengar", url: "https://lovdata.no/lov/2003-07-04-84/§6-2" }
+    - { id: privatskolelova, punkt: "§ 6-3 Krav til bruken av offentlege tilskot og skolepengar", url: "https://lovdata.no/lov/2003-07-04-84/§6-3" }
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig å si at privatskoler har egne regler om inntak, skoleregler og bortvisning (pl. §§ 3-1, 5A-7 og 3-10), og er det de viktigste forskjellene å nevne?"
     - "Skal begrepet også nevne skoler godkjent etter kapittel 6A (yrkesrettet opplæring)?"
-  stikkord: [privatskole, privatskolelova, friskole, privat skole, statstilskudd]
+    - "Tilskuddet og skolepengene (privatskolelova §§ 6-1 til 6-3): Er det nok å si at skolen kan kreve skolepenger innenfor grensene i loven og ikke kan gi utbytte til eierne, eller bør begrepet også nevne tallene som står i gratisprinsippet for privatskoler (85 prosent av tilskuddsgrunnlaget i tilskudd, skolepenger inntil 15 prosent)?"
+  stikkord: [privatskole, privatskolelova, friskole, privat skole, statstilskudd, skolepenger, skulepengar]
   relatert: [enkeltvedtak]

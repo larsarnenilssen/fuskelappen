@@ -24,21 +24,39 @@ async function lastLenker(refer: readonly string[]): Promise<Dokumentlenker[]> {
     const { dokument, nr } = delParagrafRef(r);
     perDokument.set(dokument, [...(perDokument.get(dokument) ?? []), nr]);
   }
-  return Promise.all(
+  const lenker = await Promise.all(
     [...perDokument].map(async ([id, nr]) => {
-      const dok = await lastDokument(id).catch(() => null);
+      const info = dokumenter.find((d) => d.id === id);
+      // En paragraf som ikke er i den hentede teksten, f.eks. i et kapittel som er nytt i utvalget og hentes første gang
+      // i Actions, tas bort, så lenken ikke går til en paragraf som mangler.
+      const finnes = info ? nr.filter((n) => info.paragrafer.includes(n)) : nr;
+      const dok = finnes.length > 0 ? await lastDokument(id).catch(() => null) : null;
       const titler = new Map(dok ? alleParagrafer(dok.seksjoner).map(({ paragraf: p }) => [p.nr, p]) : []);
       return {
         dokument: id,
-        navn: dokumenter.find((d) => d.id === id)?.korttittel ?? id,
-        paragrafer: nr.map((n) => ({ nr: n, visNr: titler.get(n)?.visNr ?? `§ ${n}`, tittel: titler.get(n)?.tittel ?? null })),
+        navn: info?.korttittel ?? id,
+        paragrafer: finnes.map((n) => ({ nr: n, visNr: titler.get(n)?.visNr ?? `§ ${n}`, tittel: titler.get(n)?.tittel ?? null })),
       };
     }),
   );
+  return lenker.filter((d) => d.paragrafer.length > 0);
 }
 
-/** `utenOverskrift` når lenkene står i en boks som allerede har overskriften, f.eks. «I regelverket» i veiviserne. */
-export function Paragraflenker({ paragrafer: alle, overskrift, utenOverskrift = false }: { paragrafer: readonly string[]; overskrift: string; utenOverskrift?: boolean }) {
+/**
+ * `utenOverskrift` når lenkene står i en boks som allerede har overskriften, f.eks. «I regelverket» i veiviserne.
+ * `onAntall` får antallet paragrafer som vises når de er lastet, så boksen rundt kan vise riktig tall.
+ */
+export function Paragraflenker({
+  paragrafer: alle,
+  overskrift,
+  utenOverskrift = false,
+  onAntall,
+}: {
+  paragrafer: readonly string[];
+  overskrift: string;
+  utenOverskrift?: boolean;
+  onAntall?: (antall: number) => void;
+}) {
   // Paragrafer i et dokument som ikke er hentet ennå, vises ikke (kanVisesIRegelverket).
   const paragrafer = alle.filter(kanVisesIRegelverket);
   const [lenker, settLenker] = useState<Dokumentlenker[] | null>(null);
@@ -46,7 +64,11 @@ export function Paragraflenker({ paragrafer: alle, overskrift, utenOverskrift = 
   useEffect(() => {
     let aktiv = true;
     void lastLenker(paragrafer).then(
-      (l) => aktiv && settLenker(l),
+      (l) => {
+        if (!aktiv) return;
+        settLenker(l);
+        onAntall?.(l.reduce((sum, d) => sum + d.paragrafer.length, 0));
+      },
       () => undefined,
     );
     return () => {
@@ -54,7 +76,7 @@ export function Paragraflenker({ paragrafer: alle, overskrift, utenOverskrift = 
     };
     // Nøkkelen endres når listen endres. Selve listen er en ny tabell ved hver tegning.
   }, [nokkel]);
-  if (paragrafer.length === 0) return null;
+  if (paragrafer.length === 0 || lenker?.length === 0) return null;
   const vis =
     lenker ??
     [...new Set(paragrafer.map((r) => delParagrafRef(r).dokument))].map((d) => ({

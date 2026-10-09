@@ -33,12 +33,13 @@ dokumenter:
   - id: privatskolelova
     kilde: privatskolelova
     privatskole: true
-    kapitler: ['1', '2', '3', '4', '5', '5A', '6A', '7']
+    kapitler: ['1', '2', '3', '4', '5', '5A', '6', '6A', '7']
     merknad: >-
       Eier 06.10.2026 (docs/arbeidsordrer/fase-7-forslag.md): det som gjelder videregående opplæring, elevene,
       inntak, vurdering, skolemiljø, skoleregler, personalet, styret, tilsyn og de yrkesrettede skolene i kap. 6A.
-      Ikke med: 6 (tilskudd og skolepenger) og 8 (sluttføresegner). Vises for alle, og står først når brukeren har
-      valgt privatskole (avgjørelse 075).
+      Kap. 6 (tilskudd og skolepenger) er med etter eier 09.10.2026. Teksten hentes første gang i Actions; til da
+      står paragrafene ikke under «I regelverket». Ikke med: 8 (sluttføresegner). Vises for alle, og står først når
+      brukeren har valgt privatskole (avgjørelse 075).
 
   - id: privatskoleforskrifta
     kilde: privatskoleforskrifta

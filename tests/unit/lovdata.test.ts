@@ -112,6 +112,12 @@ describe('utvalget i content/lovverk.yaml', () => {
     expect(kap('opplaeringsforskrifta')).toEqual([...Array.from({ length: 17 }, (_, i) => String(i + 4)), '22', '23']);
   });
 
+  it('har kapittel 6 om tilskudd og skolepenger i privatskolelova (eier 09.10.2026), men ikke kapittel 8', () => {
+    const kap = utvalg.dokumenter.find((d) => d.id === 'privatskolelova')?.kapitler ?? [];
+    expect(kap).toContain('6');
+    expect(kap).not.toContain('8');
+  });
+
   it('har bare avvergeplikten fra straffeloven (§ 196 i kapittel 20, eier 09.10.2026)', () => {
     const straffeloven = utvalg.dokumenter.find((d) => d.id === 'straffeloven');
     expect(straffeloven?.kapitler).toEqual(['20']);
@@ -127,6 +133,25 @@ describe('utvalget i content/lovverk.yaml', () => {
     // Avtalene og andre referanser utenfor Lov og forskrift står som før.
     expect(kanVisesIRegelverket('sfs2213/sfs-tidsressurser')).toBe(true);
   });
+
+  it.runIf(existsSync(join(rot, 'data/lovdata/opplaeringslova.json')) && existsSync(join(rot, 'data/lovdata/privatskoleforskrifta.json')))(
+    'en paragraf utenfor utvalget av kapitler eller paragrafer står ikke under «I regelverket»',
+    () => {
+      // Kapitlet går fram av nummeret, også i et spenn av kapitler («5-21») og med bokstav («5A»).
+      expect(kanVisesIRegelverket('opplaeringslova/18-5')).toBe(true);
+      expect(kanVisesIRegelverket('opplaeringslova/3-1')).toBe(false);
+      expect(kanVisesIRegelverket('privatskoleforskrifta/15-1')).toBe(false);
+      if (existsSync(join(rot, 'data/lovdata/privatskolelova.json'))) {
+        expect(kanVisesIRegelverket('privatskolelova/5A-7')).toBe(true);
+        expect(kanVisesIRegelverket('privatskolelova/8-1')).toBe(false);
+        // Kapittel 6 er med i utvalget (eier 09.10.2026). Er det ikke hentet ennå, tar Paragraflenker bort paragrafen.
+        expect(kanVisesIRegelverket('privatskolelova/6-2')).toBe(true);
+      }
+      if (existsSync(join(rot, 'data/lovdata/straffeloven.json'))) expect(kanVisesIRegelverket('straffeloven/195')).toBe(false);
+      // Nummer uten kapittel regnes som med.
+      if (existsSync(join(rot, 'data/lovdata/forvaltningsloven.json'))) expect(kanVisesIRegelverket('forvaltningsloven/17')).toBe(true);
+    },
+  );
 
   it('peker på aktive kilder fra Lovdata: datasettene, eller siden for lokale forskrifter med fylke', () => {
     for (const d of utvalg.dokumenter) {
