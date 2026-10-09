@@ -142,7 +142,7 @@ export const nn: Tekster = {
   sok: {
     tittel: 'Søk',
     etikett: 'Søk etter tema, omgrep eller fag',
-    plassholder: 'Til dømes «årsramme» eller «skoleregler»',
+    plassholder: 'Til dømes «årsramme» eller «skulereglar»',
     skrivForASoke: 'Skriv minst to teikn for å søkje. Søket forstår både bokmål og nynorsk.',
     lasterIndeks: 'Gjer klar søket …',
     indeksFeil: 'Søket er ikkje tilgjengeleg akkurat no.',

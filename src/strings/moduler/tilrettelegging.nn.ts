@@ -9,7 +9,7 @@ export const tilretteleggingNn: typeof tilretteleggingNb = {
     tittel: 'Kven får kva',
     alle: 'Alle elevar',
     tilpasset: 'Tilpassa opplæring',
-    alleTekst: 'Skolen tilpassar opplæringa i fellesskapet. Det blir ikkje gjort vedtak.',
+    alleTekst: 'Skulen tilpassar opplæringa i fellesskapet. Det blir ikkje gjort vedtak.',
     noen: 'Nokre elevar i tillegg',
     individuell: 'Individuell tilrettelegging',
     noenTekst: 'Rettar etter vedtak frå fylkeskommunen:',

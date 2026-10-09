@@ -44,7 +44,7 @@ export const inntakNn: typeof inntakNb = {
       kroppsoving: 'Kroppsøving',
       fremmedsprak: 'Framandspråk, fordjuping eller arbeidslivsfag',
     },
-    fagKilde: 'Faga med standpunkt på vitnemålet frå grunnskolen',
+    fagKilde: 'Faga med standpunkt på vitnemålet frå grunnskulen',
     eksamenNr: 'Eksamen {nr}',
     leggTilEksamen: 'Legg til eksamen',
     valgfagNr: 'Valfag {nr}',

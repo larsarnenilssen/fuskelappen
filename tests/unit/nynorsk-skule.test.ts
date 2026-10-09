@@ -2,7 +2,7 @@
 // (`nn`-feltene) og rules. Kildetekst (`kildetekst`, `sitat`, `punkt`) står i egne felt og sjekkes ikke. Lenkeord
 // (lister under `nn`) har begge formene med vilje, så tekst med «skole» også lenkes. Lenkemål, adresser og
 // plassholdere ({skolear}) hoppes over. content/versjoner.yaml er meldingene om tidligere versjoner og endres ikke.
-// UI-tekstene i src/strings sjekkes ikke ennå.
+// UI-tekstene i src/strings (de nynorske filene) sjekkes også: ordene i tekstene i enkle anførselstegn.
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { isScalar, LineCounter, parseDocument, visit } from 'yaml';
@@ -64,4 +64,21 @@ describe('nynorsk: «skule»', () => {
   it('de nynorske tekstene i content og rules skriver «skule»', () => {
     expect(brudd()).toEqual([]);
   }, 30_000);
+
+  it('UI-tekstene på nynorsk i src/strings skriver «skule»', () => {
+    const mappe = join(rot, 'src/strings');
+    const nynorsk = [...readdirSync(mappe), ...readdirSync(join(mappe, 'moduler')).map((navn) => join('moduler', navn))].filter(
+      (navn) => /(^|\/)(nn|[\w-]+\.nn)\.ts$/.test(navn),
+    );
+    expect(nynorsk.length).toBeGreaterThan(10);
+    const funn = nynorsk.flatMap((navn) => {
+      const kilde = readFileSync(join(mappe, navn), 'utf8');
+      // Id-er, nøkler (f.eks. «siste-skoledag») og importstier er ikke tekst og hoppes over.
+      return [...kilde.matchAll(/'((?:[^'\\\n]|\\.)*)'/g)]
+        .map(([, tekst]) => tekst ?? '')
+        .filter((tekst) => !/^[a-z0-9-]+$/.test(tekst) && !tekst.startsWith('./'))
+        .flatMap((tekst) => skoleord(tekst).map((ord) => `${navn}: «${ord}»`));
+    });
+    expect(funn).toEqual([]);
+  });
 });

@@ -44,7 +44,7 @@ export const eksamenNn = {
   },
   klage: {
     kort: 'Klage på karakter',
-    beskrivelse: 'Steg for steg: grunngiving, frist, kva skolen kan gjere og klageinstansen.',
+    beskrivelse: 'Steg for steg: grunngiving, frist, kva skulen kan gjere og klageinstansen.',
   },
   frister: {
     tittel: 'Kalender for eksamen',

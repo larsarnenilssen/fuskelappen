@@ -9,3 +9,5 @@
 - **Grensesnittet:** `src/strings/` er ikke endret ennå. Det tas for seg, og testen kan da utvides til UI-tekstene.
 
 **Konsekvens:** Nytt nynorsk innhold skrives med «skule». Kildetekst gjengis fortsatt uoversatt, så lovens «skole» står i sitater og paragraftitler.
+
+**Endret 09.10.2026:** Grensesnittekstene i de nynorske filene i `src/strings/` skriver også «skule» (elleve ord, bl.a. skulen, grunnskulen, skuleåret og skulereglane). Plassholdere (`{skole}`, `{skolear}`), id-er og importstier er ikke endret. Testen sjekker nå også tekstene i enkle anførselstegn i disse filene.
