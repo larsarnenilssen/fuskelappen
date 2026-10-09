@@ -6,7 +6,7 @@ import { useTekst } from '../app/tilstand.ts';
 
 interface Props {
   /** Resultatkortet linjen viser til. */
-  mal: RefObject<HTMLElement>;
+  mal: RefObject<HTMLElement | null>;
   tittel: string;
   verdi: string;
   enhet?: string;
