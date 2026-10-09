@@ -62,7 +62,9 @@ describe('arbeidsflyter', () => {
     expect(sjekk).toMatchObject({ needs: 'endringer', if: "needs.endringer.outputs.nivaa != 'ingen'" });
     expect(bygg).toMatchObject({ needs: 'endringer', if: "needs.endringer.outputs.nivaa == 'alt'" });
     expect(e2e?.needs).toBe('bygg-e2e');
-    expect(test).toMatchObject({ name: 'Test og bygg', if: 'always()', needs: ['endringer', 'sjekk', 'bygg-e2e', 'e2e'] });
+    // Ikke always(): en kjøring som avbrytes av en nyere push, skal ikke gi «Test og bygg» rødt og varsel til eier.
+    expect(test).toMatchObject({ name: 'Test og bygg', if: '${{ !cancelled() }}', needs: ['endringer', 'sjekk', 'bygg-e2e', 'e2e'] });
+    expect(ci.jobs.varsle?.if).toContain("needs.test.result != 'skipped'");
   });
 
   it('publiseringen tar alle datamappene kildesjekken lagrer på main, og kildesjekken tester dem først (avgjørelse 098)', () => {
