@@ -2,7 +2,7 @@
 // Et sammenlagt kort viser bare overskriften og en kort oppsummering, så skjemaet og resultatene tar mindre plass.
 // Hvilke kort som er lagt sammen, huskes i nettleserhistorikken for siden (som det utfylte), ikke på enheten.
 import type { ComponentChildren } from 'preact';
-import { useCallback, useId, useState } from 'preact/hooks';
+import { useCallback, useEffect, useId, useState } from 'preact/hooks';
 import { Ikon } from './Ikon.tsx';
 
 function lesLukket(): Record<string, boolean> {
@@ -12,6 +12,27 @@ function lesLukket(): Record<string, boolean> {
   } catch {
     return {};
   }
+}
+
+function lagreLukket(endring: Record<string, boolean>): void {
+  try {
+    const tilstand = (history.state as Record<string, unknown> | null) ?? {};
+    history.replaceState({ ...tilstand, lukket: { ...lesLukket(), ...endring } }, '');
+  } catch {
+    // Historikken kan ikke oppdateres. Kortet virker likevel.
+  }
+}
+
+const LEGG_SAMMEN = 'jukselappen:legg-sammen';
+
+/**
+ * Legger sammen kortene med disse nøklene, f.eks. fagene som står fra før når brukeren legger til et nytt
+ * (eier 09.10.2026).
+ */
+export function leggSammen(nokler: readonly string[]): void {
+  if (nokler.length === 0) return;
+  lagreLukket(Object.fromEntries(nokler.map((n) => [n, true])));
+  window.dispatchEvent(new CustomEvent<readonly string[]>(LEGG_SAMMEN, { detail: nokler }));
 }
 
 /**
@@ -26,14 +47,16 @@ export function useSammenlagt(nokkel: string, standardLukket = false): [boolean,
   const veksle = useCallback(() => {
     settLukket((naa) => {
       const ny = !naa;
-      try {
-        const tilstand = (history.state as Record<string, unknown> | null) ?? {};
-        history.replaceState({ ...tilstand, lukket: { ...lesLukket(), [nokkel]: ny } }, '');
-      } catch {
-        // Historikken kan ikke oppdateres. Kortet virker likevel.
-      }
+      lagreLukket({ [nokkel]: ny });
       return ny;
     });
+  }, [nokkel]);
+  useEffect(() => {
+    const lytt = (e: Event) => {
+      if ((e as CustomEvent<readonly string[]>).detail.includes(nokkel)) settLukket(true);
+    };
+    window.addEventListener(LEGG_SAMMEN, lytt);
+    return () => window.removeEventListener(LEGG_SAMMEN, lytt);
   }, [nokkel]);
   return [lukket, veksle];
 }
