@@ -66,7 +66,7 @@ test.describe('favoritter og forsiden', () => {
     // Én kolonne, som på mobil. På skrivebord står favorittene i sidekolonnen (testen under).
     await page.setViewportSize({ width: 390, height: 800 });
     await page.goto('./');
-    // Panelet med kalenderen, nyhetene og tallene står først (avgjørelse 081), og favorittene som nummer to.
+    // Aktuelt med kalenderen, nyhetene og tallene står først (avgjørelse 081 og 102), og favorittene som nummer to.
     const grupper = page.locator('.forsidegruppe');
     await expect(grupper.nth(0)).toHaveAttribute('data-gruppe', 'panel');
     await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
@@ -81,7 +81,7 @@ test.describe('favoritter og forsiden', () => {
     await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
   });
 
-  test('skrivebord: «Neste datoer» og favorittene i sidekolonnen, som står fast og kan slås av (eier 05.10.2026)', async ({ page }) => {
+  test('skrivebord: Aktuelt og favorittene i sidekolonnen, som står fast, uten bryter (eier 05.10.2026, avgjørelse 102)', async ({ page }) => {
     await settLagret(page, { favoritter: TO });
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto('./');
@@ -95,26 +95,18 @@ test.describe('favoritter og forsiden', () => {
     // Høyden på kolonnen regnes ut på nytt i neste bilde etter rullingen (Sidekolonne i Forside.tsx), så kolonnen
     // står fast først da. I WebKit kan den stå et par piksler høyere før det.
     await expect.poll(() => kolonne.evaluate((e) => Math.round(e.getBoundingClientRect().top))).toBe(fast);
-    // Slått av står en smal skinne med antall favoritter, og valget huskes.
+    // Bryteren som slo av kolonnen, er tatt bort (avgjørelse 102).
     await page.evaluate(() => window.scrollTo(0, 0));
-    await kolonne.getByRole('switch', { name: 'Sidekolonne' }).click();
-    const skinne = page.locator('.forside-skinnen');
-    await expect(skinne.locator('.skinne-tall')).toHaveText('2');
-    await expect(page.locator('[data-gruppe="favoritter"]')).toHaveCount(0);
-    await page.reload();
-    await expect(skinne).toBeVisible();
-    await skinne.getByRole('button', { name: /Vis Favoritter i sidekolonnen/ }).click();
-    await expect(kolonne.locator('[data-gruppe="favoritter"]')).toBeVisible();
+    await expect(page.getByRole('switch', { name: 'Sidekolonne' })).toHaveCount(0);
     // I «Tilpass» har kolonnen en egen del.
     await page.getByRole('button', { name: 'Tilpass' }).click();
     await expect(page.getByRole('heading', { name: 'Sidekolonnen' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Flytt «Favoritter» opp' })).toBeVisible();
     await page.getByRole('button', { name: 'Ferdig' }).click();
-    // Smalt vindu: alt i én kolonne, uten bryter.
+    // Smalt vindu: alt i én kolonne.
     await page.setViewportSize({ width: 600, height: 800 });
     await expect(page.locator('.forside-sidekolonne')).toHaveCount(0);
     await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'panel');
-    await expect(page.getByRole('switch', { name: 'Sidekolonne' })).toHaveCount(0);
   });
 
   test('«Bare favoritter»: kalenderen som favoritt står øverst som «Neste datoer», ikke som kort (eier 05.10.2026)', async ({ page }) => {

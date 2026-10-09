@@ -16,6 +16,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Aktuelt på forsiden:** Kalenderen, nyhetene, Videregående i tall og dagens jukselapp står samlet under «Aktuelt», øverst i sidekolonnen på stor skjerm og i en egen ramme øverst på mobil. Aktuelt lukkes og åpnes med pilen, som de andre gruppene, og er lukket fra start på mobil. Hva som står der, også dagens jukselapp, velger du i menyen i Aktuelt, der du også kan skjule det. «Tilpass» har bare rekkefølgen og valget om å vise Aktuelt. Bryteren for sidekolonnen og bryteren for dagens jukselapp under Innstillinger er tatt bort.
+- **Dagens jukselapp står ikke lenger først** ved første besøk på dagen. Visningen du valgte sist i Aktuelt, står.
 - **Velkomsten har fire trinn i stedet for ni:** hva appen er, hvor du jobber, rolle med forslag til favoritter og dagens jukselapp, og installering. Hvert trinn får plass uten å rulle på en vanlig mobil.
 - **Lov- og forskriftsteksten, eksamens- og inntaksdatoene, skoleruta og de andre dataene fra kildene** kommer ut i appen uten ny versjon, når kildesjekken har hentet dem og appens tester består med dem. Før kom bare Grep, skoleregisteret og statistikken ut på denne måten.
 - **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.

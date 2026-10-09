@@ -116,13 +116,13 @@ test.describe('Videregående i tall', () => {
 });
 
 test.describe('Videregående i tall på forsiden', () => {
-  test('skrivebord: «I tall» i panelet i sidekolonnen, ikke under «Oppslag», og panelet uten bryter med én visning', async ({ page }, info) => {
+  test('skrivebord: «I tall» i Aktuelt i sidekolonnen, ikke under «Oppslag», og uten faner med én visning', async ({ page }, info) => {
     test.skip(info.project.name.includes('mobil'), 'Sidekolonnen finnes bare på skrivebord.');
     await settLagret(page, { fylke: '46', skole: SLATTHAUG });
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto('./');
     const panel = page.locator('.forside-sidekolonne [data-gruppe="panel"]');
-    // Kalenderen er første visning. Valgene står i overskriften, og valget av «I tall» huskes.
+    // Kalenderen er første visning. Fanene står under overskriften, og valget av «I tall» huskes.
     await expect(panel.locator('.kal-panel')).toBeVisible();
     await panel.getByRole('button', { name: 'I tall', exact: true }).click();
     await expect(panel.getByRole('button', { name: 'I tall', exact: true })).toHaveAttribute('aria-pressed', 'true');
@@ -135,14 +135,13 @@ test.describe('Videregående i tall på forsiden', () => {
     await expect(panel.locator('.st-forside')).toBeVisible();
     await panel.getByRole('link', { name: 'Alle tallene i Videregående i tall' }).click();
     await expect(page).toHaveURL(/#\/statistikk\?fylke=46$/);
-    // Med bare kalenderen igjen står den som en vanlig gruppe, uten bryter.
+    // Med bare kalenderen igjen står den i Aktuelt uten faner (avgjørelse 102).
     await page.goto('./');
-    await page.getByRole('button', { name: 'Tilpass' }).click();
-    await page.getByLabel('Videregående i tall', { exact: true }).uncheck();
-    await page.getByLabel('Nyheter', { exact: true }).uncheck();
-    await page.getByRole('button', { name: 'Ferdig' }).click();
+    await panel.getByRole('button', { name: 'Velg hva som står i Aktuelt' }).click();
+    await panel.getByLabel('Videregående i tall', { exact: true }).uncheck();
+    await panel.getByLabel('Nyheter', { exact: true }).uncheck();
     await expect(page.locator('.panel-fane')).toHaveCount(0);
-    await expect(page.locator('.forside-sidekolonne [data-gruppe="neste"]')).toBeVisible();
+    await expect(panel.locator('.kal-panel')).toBeVisible();
   });
 
   test('skrivebord: uten valgt fylke viser «I tall» hele landet og en lenke for å velge fylke, ikke stripen', async ({ page }, info) => {
@@ -176,19 +175,18 @@ test.describe('Videregående i tall på forsiden', () => {
   });
 
   test('@mobil «I tall» øverst: lukket med søkerne og læreplassen, og åpnes med et trykk', async ({ page }, info) => {
-    test.skip(!info.project.name.includes('mobil'), 'Panelet er lukket fra start bare på mobil.');
+    test.skip(!info.project.name.includes('mobil'), 'Aktuelt er lukket fra start bare på mobil.');
     await settLagret(page, { fylke: '46' });
     await page.goto('./');
     const panel = page.locator('[data-gruppe="panel"]');
-    // Valgene står i overskriften når panelet er åpent.
+    // Fanene står under overskriften når Aktuelt er åpent.
     await panel.locator('.gruppeknapp').click();
     await panel.getByRole('button', { name: 'I tall', exact: true }).click();
     await expect(panel.locator('.st-fliser-kompakt > li')).toHaveCount(4);
-    // Lukket viser overskriften tallene, uten valgene. Når panelet er åpent, lukkes det med pilen, fordi valgene dekker
-    // resten av overskriften.
+    // Lukket viser overskriften tallene, uten fanene.
     await panel.locator('.gruppeknapp > .ikon').click();
     await expect(panel.locator('.gruppe-sammendrag')).toContainText(/søkere · .* fikk læreplass/);
-    await expect(panel.locator('.panel-fane')).toHaveCount(0);
+    await expect(panel.locator('.aktuelt-faner')).toBeHidden();
   });
 });
 

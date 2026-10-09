@@ -1,13 +1,17 @@
-// Panelet øverst på forsiden (eier 07.10.2026, avgjørelse 081): Kalender, Nyheter og Videregående i tall er
-// alternative visninger på samme plass, i sidekolonnen på skrivebord og øverst på mobil.
+// Aktuelt øverst på forsiden (avgjørelse 081 og 102): kalenderen, nyhetene, Videregående i tall og dagens jukselapp
+// er alternative visninger på samme plass, øverst i sidekolonnen på skrivebord og øverst på mobil.
 //
-// - Brukeren veksler mellom visningene med tekstknapper i overskriften, som er borte når panelet er lukket. Under «Tilpass» velger brukeren hvilke visninger som
-//   er med. Er bare én med, står den uten valg, som en vanlig gruppe.
-// - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (som kalenderen gjorde før).
+// - Aktuelt er en gruppe som de andre på forsiden: overskriften lukker og åpner den, og valget lagres i `lukket` og
+//   `apnet`. Det står på den myke flaten i temafargen, med «Aktuelt» som merkelapp (eier 09.10.2026).
+// - Brukeren veksler mellom visningene med fanene under overskriften. Menyen (filterknappen) i overskriften velger hvilke
+//   visninger som er med, slår dagens jukselapp av og på, og skjuler Aktuelt. «Tilpass» henter det tilbake.
+// - Åpent fra start på skrivebord, lukket på mobil (avgjørelse 066). Lukket viser overskriften visningen og den neste
+//   datoen, nyheten, tallet eller faktumet.
+// - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (eier 07.10.2026).
 // - Visningene har hvert sitt oppsett: datoene som en liste, tallene som fliser og en figur.
 // - Nyhetene (fase 7b) og tallene lastes når visningen vises, så de ikke er med i startpakken.
 import type { ComponentChildren, JSX } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useId, useState } from 'preact/hooks';
 import { Ikon, type Ikonnavn } from '../components/Ikon.tsx';
 import { kortManed } from '../core/tidslinje.ts';
 import { iDag } from '../data/skolear.ts';
@@ -25,12 +29,15 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { useTilpassetListe } from './tilpassListe.ts';
 import { useDagensJukselapp } from './Jukselapp.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
-import { forlatJukselapp, settForsidevisning, useTekst, useTilstand, vekslGruppe } from './tilstand.ts';
+import { AKTUELT_SKJULT, settForsidevisning, settJukselapp, useTekst, useTilstand, vekslGruppe, vekslSkjultGruppe } from './tilstand.ts';
 
-/** Gruppen med panelet i rekkefølgen på forsiden. */
+/** Gruppen med Aktuelt i rekkefølgen på forsiden. Id-en er den samme som panelet hadde før avgjørelse 102. */
 export const PANEL = 'panel';
 
-/** Visningene i panelet. Id-ene er de samme som gruppene hadde før, så valget om å slå dem av beholdes. */
+/** Bryteren for sidekolonnen før avgjørelse 102. Den som hadde slått den av, får Aktuelt lukket på skrivebord. */
+const SIDEKOLONNE = 'sidekolonne';
+
+/** Visningene i Aktuelt. Id-ene er de samme som gruppene hadde før, så valget om å slå dem av beholdes. */
 export type Visning = 'neste' | 'nyheter' | 'itall' | 'jukselapp';
 
 export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string | null }[] = [
@@ -42,7 +49,7 @@ export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string
 /** Dagens jukselapp (avgjørelse 086): med når brukeren har slått den på. Den har ingen side, så den kan ikke være favoritt. */
 export const JUKSELAPPVISNING: { id: Visning; ikon: Ikonnavn; favoritt: string | null } = { id: 'jukselapp', ikon: 'skriv', favoritt: null };
 
-/** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med valgene i overskriften. */
+/** Rammen rundt en visning: en egen gruppe, eller Aktuelt med fanene. */
 type Ramme = (p: { tittel: string; sammendrag: string; children: ComponentChildren }) => JSX.Element;
 
 function Innhold({ id, ramme }: { id: Visning; ramme: Ramme }) {
@@ -52,14 +59,28 @@ function Innhold({ id, ramme }: { id: Visning; ramme: Ramme }) {
   return <ITall ramme={ramme} />;
 }
 
+/**
+ * Visningene brukeren har med i Aktuelt, i fast rekkefølge, og om Aktuelt er skjult. Det er skjult når brukeren har
+ * valgt «Skjul Aktuelt», eller når ingen visning er med.
+ */
+export function useAktuelt(): { paa: Visning[]; skjult: boolean } {
+  const { forside } = useTilstand();
+  const skjult = forside.skjult ?? [];
+  const paa: Visning[] = [...VISNINGER.filter((v) => !skjult.includes(v.id)).map((v) => v.id), ...(forside.jukselapp ? (['jukselapp'] as const) : [])];
+  return { paa, skjult: skjult.includes(AKTUELT_SKJULT) || paa.length === 0 };
+}
+
 /** Om en gruppe er lukket: lukket av brukeren, eller lukket fra start på mobil til brukeren åpner den (avgjørelse 066). */
 function useLukket(id: string): boolean {
   const { forside } = useTilstand();
   const stor = useMinstBredde(SIDEKOLONNE_FRA);
-  return forside.lukket.includes(id) || (!stor && !(forside.apnet ?? []).includes(id));
+  const apnet = (forside.apnet ?? []).includes(id);
+  // Den som hadde slått av sidekolonnen før avgjørelse 102, får Aktuelt lukket, ikke skjult, til det åpnes.
+  const kolonneAv = id === PANEL && (forside.skjult ?? []).includes(SIDEKOLONNE);
+  return forside.lukket.includes(id) || ((!stor || kolonneAv) && !apnet);
 }
 
-/** Én visning som egen gruppe: med «Bare favoritter», og når den er den eneste i panelet. */
+/** Én visning som egen gruppe: med «Bare favoritter». */
 export function Visningsgruppe({ id }: { id: Visning }) {
   const lukket = useLukket(id);
   const ramme: Ramme = ({ tittel, sammendrag, children }) => (
@@ -70,46 +91,97 @@ export function Visningsgruppe({ id }: { id: Visning }) {
   return <Innhold id={id} ramme={ramme} />;
 }
 
-/**
- * Panelet med visningen brukeren har valgt. Valgene står i overskriften når panelet er åpent, som rolige tekstknapper
- * (eier 07.10.2026). Lukket viser overskriften tittelen og oppsummeringen av visningen. Med én visning står den som en
- * vanlig gruppe.
- */
-export function Forsidepanel({ visninger }: { visninger: readonly Visning[] }) {
+/** Navnet på en visning i fanene og i overskriften når Aktuelt er lukket. */
+function useVisningsnavn(): (v: Visning) => string {
+  const { t } = useTekst();
+  return (v) => (v === 'jukselapp' ? t('forside.jukselapp.tittel') : t(`forside.panel.${v}`));
+}
+
+/** Menyen i Aktuelt: hvilke visninger som er med, dagens jukselapp og «Skjul Aktuelt» (avgjørelse 102). */
+function Meny({ id }: { id: string }) {
   const { t } = useTekst();
   const { forside } = useTilstand();
-  const lukket = useLukket(PANEL);
-  // Første besøk en ny dag står panelet på dagens jukselapp (eier 08.10.2026, alternativ C i avgjørelse 086). Valgene
-  // er da byttet ut med det gule merket «Dagens jukselapp» og «Tilbake til …» brukerens egen visning, som gjelder
-  // resten av dagen (variant B, eier 08.10.2026). Har brukeren valgt jukselappen selv, står valgene som vanlig.
-  const idag = iDag();
-  const forste = visninger[0];
-  if (!forste) return null;
-  if (visninger.length === 1) return <Visningsgruppe id={forste} />;
-  const egen = visninger.find((v) => v === forside.visning) ?? forste;
-  const dagens = visninger.includes('jukselapp') && egen !== 'jukselapp' && forside.jukselappForlatt !== idag;
-  const aktiv = dagens ? 'jukselapp' : egen;
-  // Visningen «Tilbake til …» går til. Er jukselappen brukerens egen visning, vises ikke merkingen.
-  const tilbake = egen === 'jukselapp' ? 'neste' : egen;
-  const faner = dagens ? (
-    <div class="panel-faner panel-dagens">
-      <span class="panel-dagens-merke">{t('forside.panel.dagens')}</span>
-      <button type="button" class="panel-tilbake" onClick={() => forlatJukselapp(idag)}>
-        <span class="panel-tilbake-lang">{t(`forside.panel.tilbake.${tilbake}`)}</span>
-        <span class="panel-tilbake-kort">{t(`forside.panel.tilbakeKort.${tilbake}`)}</span>
+  const skjult = forside.skjult ?? [];
+  return (
+    <div id={id} class="aktuelt-meny">
+      <fieldset>
+        <legend>{t('forside.aktuelt.menyTittel')}</legend>
+        {VISNINGER.map((v) => (
+          <label key={v.id} class="avkrysning">
+            <input type="checkbox" checked={!skjult.includes(v.id)} onChange={() => vekslSkjultGruppe(v.id)} />
+            {t(`forside.tilpass.visning.${v.id}`)}
+          </label>
+        ))}
+        <label class="avkrysning">
+          <input type="checkbox" checked={!!forside.jukselapp} onChange={() => settJukselapp(!forside.jukselapp)} />
+          {t('forside.tilpass.visning.jukselapp')}
+        </label>
+      </fieldset>
+      <button type="button" class="lenkeknapp aktuelt-skjul" onClick={() => vekslSkjultGruppe(AKTUELT_SKJULT)}>
+        <Ikon navn="lukk" class="ikon-liten" />
+        {t('forside.aktuelt.skjul')}
       </button>
-    </div>
-  ) : (
-    <div class="panel-faner" role="group" aria-label={t('forside.panel.legend')}>
-      {visninger.map((v) => (
-        <button key={v} type="button" class="panel-fane" aria-pressed={v === aktiv} onClick={() => settForsidevisning(v)}>
-          {t(`forside.panel.${v}`)}
-        </button>
-      ))}
+      <p class="dempet liten">{t('forside.aktuelt.skjulHjelp')}</p>
     </div>
   );
+}
+
+/**
+ * Aktuelt (avgjørelse 102): en gruppe med overskriften «Aktuelt», menyen og pilen, og fanene mellom visningene under.
+ * Visningen brukeren valgte sist, står. Lukket viser overskriften visningen og oppsummeringen av den.
+ */
+export function Aktuelt() {
+  const { t } = useTekst();
+  const { forside } = useTilstand();
+  const navn = useVisningsnavn();
+  const { paa, skjult } = useAktuelt();
+  const lukket = useLukket(PANEL);
+  const [meny, settMeny] = useState(false);
+  const id = useId();
+  const forste = paa[0];
+  if (skjult || !forste) return null;
+  const aktiv = paa.find((v) => v === forside.visning) ?? forste;
+  const menyId = `${id}-meny`;
+  // Visningen tegnes på nytt når brukeren bytter, så fokuset settes tilbake på fanen.
+  const velg = (v: Visning) => {
+    settForsidevisning(v);
+    requestAnimationFrame(() => document.querySelector<HTMLElement>(`[data-gruppe="${PANEL}"] [data-visning="${v}"]`)?.focus());
+  };
+  const menyknapp = (
+    <button
+      type="button"
+      class="ikonknapp gruppe-endre aktuelt-menyknapp"
+      aria-expanded={meny}
+      aria-controls={meny ? menyId : undefined}
+      aria-label={t('forside.aktuelt.meny')}
+      title={t('forside.aktuelt.meny')}
+      onClick={() => settMeny(!meny)}
+    >
+      <Ikon navn={meny ? 'lukk' : 'filter'} class="ikon-liten" />
+    </button>
+  );
   const ramme: Ramme = ({ tittel, sammendrag, children }) => (
-    <Gruppe id={PANEL} tittel={tittel} sammendrag={sammendrag} lukket={lukket} faner={faner} onVeksle={() => vekslGruppe(PANEL, lukket)}>
+    <Gruppe
+      id={PANEL}
+      klasse="aktuelt"
+      tittel={t('forside.aktuelt.navn')}
+      sammendrag={`${navn(aktiv)} · ${sammendrag}`}
+      lukket={lukket}
+      verktoy={menyknapp}
+      verktoyAlltid
+      foran={meny && <Meny id={menyId} />}
+      onVeksle={() => vekslGruppe(PANEL, lukket)}
+    >
+      {paa.length > 1 && (
+        <div class="aktuelt-faner" role="group" aria-label={t('forside.panel.legend')}>
+          {paa.map((v) => (
+            <button key={v} type="button" class="panel-fane" data-visning={v} aria-pressed={v === aktiv} onClick={() => velg(v)}>
+              {t(`forside.panel.${v}`)}
+            </button>
+          ))}
+        </div>
+      )}
+      <h3 class="skjult-visuelt">{tittel}</h3>
       {children}
     </Gruppe>
   );
@@ -242,7 +314,7 @@ function ITall({ ramme }: { ramme: Ramme }) {
   });
 }
 
-/** Dagens jukselapp som en fjerde visning i panelet (eier 08.10.2026, avgjørelse 086). */
+/** Dagens jukselapp som en fjerde visning i Aktuelt (eier 08.10.2026, avgjørelse 086 og 102). */
 function JukselappVisning({ ramme }: { ramme: Ramme }) {
   const { t } = useTekst();
   const { sammendrag, innhold } = useDagensJukselapp();

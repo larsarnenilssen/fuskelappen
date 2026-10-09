@@ -175,7 +175,7 @@ export function vekslGruppe(id: string, erLukket?: boolean): void {
   });
 }
 
-/** Visningen i panelet øverst på forsiden: kalenderen, nyhetene eller tallene (avgjørelse 081). */
+/** Visningen i Aktuelt: kalenderen, nyhetene, tallene eller dagens jukselapp (avgjørelse 081 og 102). */
 export function settForsidevisning(visning: string): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, visning } }));
 }
@@ -189,16 +189,31 @@ export function vekslSkjultGruppe(id: string): void {
 }
 
 /**
- * Slår dagens jukselapp av eller på (fase 8). Slått på står den i panelet øverst på forsiden som dagens jukselapp, med
- * «Tilbake til …» brukerens egen visning, så brukeren ser den med en gang.
+ * Slår dagens jukselapp av eller på (fase 8): i menyen i Aktuelt og i velkomsten (avgjørelse 102). Slått på er den én av
+ * visningene i Aktuelt. `jukselappForlatt` fra før avgjørelse 102 leses ikke lenger.
  */
 export function settJukselapp(jukselapp: boolean): void {
   tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselapp } }));
 }
 
-/** «Tilbake til …» fra dagens jukselapp: panelet står på brukerens egen visning resten av dagen. */
-export function forlatJukselapp(dato: string): void {
-  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, jukselappForlatt: dato } }));
+/** Id-en i `forside.skjult` når brukeren har skjult Aktuelt helt (avgjørelse 102). */
+export const AKTUELT_SKJULT = 'aktuelt';
+
+/** Visningene i Aktuelt, med de samme id-ene som gruppene hadde før, så valget om å slå dem av beholdes. */
+export const AKTUELT_VISNINGER = ['neste', 'nyheter', 'itall'] as const;
+
+/**
+ * Viser eller skjuler Aktuelt på forsiden («Tilpass», avgjørelse 102). Vises det igjen uten noen visning valgt, kommer
+ * kalenderen tilbake.
+ */
+export function settAktueltVist(vis: boolean): void {
+  tilstand.oppdater((d) => {
+    const f = d.forside;
+    const uten = (f.skjult ?? []).filter((g) => g !== AKTUELT_SKJULT);
+    if (!vis) return { ...d, forside: { ...f, skjult: [...uten, AKTUELT_SKJULT] } };
+    const ingen = !f.jukselapp && AKTUELT_VISNINGER.every((v) => uten.includes(v));
+    return { ...d, forside: { ...f, skjult: ingen ? uten.filter((g) => g !== 'neste') : uten } };
+  });
 }
 
 /** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */

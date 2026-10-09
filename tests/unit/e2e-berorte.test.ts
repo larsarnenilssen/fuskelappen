@@ -28,6 +28,8 @@ describe('berørte ende-til-ende-tester', () => {
     expect(velgTester(['src/core/jukselapp/fakta.ts']).speker).toContain('jukselapp');
     expect(velgTester(['src/app/Jukselappkort.tsx']).speker).toContain('jukselapp');
     expect(velgTester(['src/app/Forsidepanel.tsx']).speker).toContain('jukselapp');
+    expect(velgTester(['src/app/Forsidepanel.tsx']).speker).toContain('aktuelt');
+    expect(velgTester(['src/app/sider/Forside.tsx']).speker).toEqual(expect.arrayContaining(['aktuelt', 'favoritter']));
   });
 
   it('meldingen om ny versjon og punktene gir testen for den', () => {

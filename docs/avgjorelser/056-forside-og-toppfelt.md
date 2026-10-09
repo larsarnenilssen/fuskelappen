@@ -13,3 +13,5 @@
 - **Søkesiden:** søkefeltet får fokus i stedet for overskriften (`data-autofokus`).
 
 **Konsekvens:** Én flate å ordne appen på, mer plass på mobil og ingen fast meny nederst. Startpakken øker til om lag 95,6 kB, fordi forsiden lastes med en gang. Nye moduler får grupper, favoritter og ikoner uten endringer i forsiden.
+
+**Endret 09.10.2026:** Kalenderen, nyhetene, tallene og dagens jukselapp står samlet i gruppen «Aktuelt», som tilpasses i menyen sin. «Tilpass» har rekkefølgen, bryteren «Vis Aktuelt på forsiden» og «Standard rekkefølge» (avgjørelse 102).

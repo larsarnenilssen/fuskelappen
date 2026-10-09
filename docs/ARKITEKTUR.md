@@ -56,7 +56,7 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 
 `src/modules/register.ts` finner modulene automatisk med `import.meta.glob`. Forsiden, søket og favorittene bygges fra registeret, så en ny modul krever ingen endring i forsidekoden.
 
-Øverst på forsiden (i sidekolonnen på stor skjerm) er panelet med kalenderen, nyhetene og tallene som alternative visninger (`src/app/Forsidepanel.tsx`, avgjørelse 081), og dagens jukselapp når brukeren har slått den på (`src/app/Jukselapp.tsx` og `src/core/jukselapp/`, avgjørelse 086). Gruppene som åpnes og lukkes, står i `src/app/Forsidegruppe.tsx`. En ny visning i panelet krever en oppføring i `VISNINGER` og en komponent der.
+Øverst på forsiden (i sidekolonnen på stor skjerm) er Aktuelt med kalenderen, nyhetene og tallene som alternative visninger, og menyen som velger dem (`src/app/Forsidepanel.tsx`, avgjørelse 081 og 102), og dagens jukselapp når brukeren har slått den på (`src/app/Jukselapp.tsx` og `src/core/jukselapp/`, avgjørelse 086). Gruppene som åpnes og lukkes, står i `src/app/Forsidegruppe.tsx`. En ny visning i Aktuelt krever en oppføring i `VISNINGER` og en komponent der.
 
 I utvikling og testing tas også testmodulen i `tests/fixtures/moduler/` med (via den virtuelle modulen `virtual:testoppsett`). I produksjonsbygget er den tom.
 

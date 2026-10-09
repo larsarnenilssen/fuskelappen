@@ -1,5 +1,5 @@
 // Dagens jukselapp på forsiden (fase 8): ett faktum fra appen, med lenke til stedet der det står og kilden.
-// Jukselappen er en visning i panelet øverst på forsiden (eier 08.10.2026, avgjørelse 081 og 086). Faktaene kommer
+// Jukselappen er en visning i Aktuelt øverst på forsiden (eier 08.10.2026, avgjørelse 081, 086 og 102). Faktaene kommer
 // fra `fakta()` i manifestene.
 import type { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
@@ -43,9 +43,9 @@ export function useDagensJukselapp(): { sammendrag: string; innhold: JSX.Element
 }
 
 /**
- * Bryteren som slår dagens jukselapp av og på. Den samme står under Innstillinger og under «Tilpass» på forsiden (eier
- * 08.10.2026). Slått på vises jukselappen i panelet øverst på forsiden. Velkomsten gir en kortere `hjelp`, så trinnet
- * får plass uten rulling (avgjørelse 101).
+ * Bryteren som slår dagens jukselapp av og på i velkomsten. På forsiden slås den av og på i menyen i Aktuelt, og ikke
+ * lenger under Innstillinger eller «Tilpass» (avgjørelse 102). Begge lagrer det samme valget. Slått på er jukselappen
+ * én av visningene i Aktuelt. Velkomsten gir en kortere `hjelp`, så trinnet får plass uten rulling (avgjørelse 101).
  */
 export function Jukselappbryter({ id, hjelp }: { id: string; hjelp?: string }) {
   const { t } = useTekst();

@@ -1,12 +1,12 @@
 // Delene forsiden er bygd av (avgjørelse 056 og 066): gruppene som åpnes og lukkes, og bredden sidekolonnen brukes fra.
-// Brukes av forsiden og av panelet øverst (Forsidepanel.tsx).
+// Brukes av forsiden og av Aktuelt (Forsidepanel.tsx, avgjørelse 102).
 import type { ComponentChildren } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
 import { vekslGruppe } from './tilstand.ts';
 
 /**
- * Fra denne bredden (rem) står «Neste datoer» og favorittene i en sidekolonne like bred som hovedkolonnen: halv skjerm
+ * Fra denne bredden (rem) står Aktuelt og favorittene i en sidekolonne like bred som hovedkolonnen: halv skjerm
  * på en 15" laptop med 1440 px eller mer (eier 05.10.2026). Smalere står alt i én kolonne, som på mobil.
  */
 export const SIDEKOLONNE_FRA = 44;
@@ -24,9 +24,11 @@ export function Gruppe({
   tittel,
   sammendrag,
   kategori,
+  klasse,
   lukket,
   verktoy,
-  faner,
+  verktoyAlltid = false,
+  foran,
   onVeksle,
   children,
 }: {
@@ -34,13 +36,14 @@ export function Gruppe({
   tittel: string;
   sammendrag: string;
   kategori?: string;
+  /** Egen klasse på gruppen, f.eks. `aktuelt` (avgjørelse 102). */
+  klasse?: string;
   lukket: boolean;
   verktoy?: ComponentChildren;
-  /**
-   * Valgene i panelet øverst (avgjørelse 081): står i overskriften i stedet for tittelen når gruppen er åpen, og er borte
-   * når den er lukket. Tittelen er fortsatt navnet på knappen som lukker gruppen.
-   */
-  faner?: ComponentChildren;
+  /** Verktøyet står også når gruppen er lukket (menyen i Aktuelt, avgjørelse 102). */
+  verktoyAlltid?: boolean;
+  /** Står mellom overskriften og innholdet, også når gruppen er lukket (menyen i Aktuelt). */
+  foran?: ComponentChildren;
   /** Uten: gruppen åpnes og lukkes med vekslGruppe. */
   onVeksle?: () => void;
   children: ComponentChildren;
@@ -73,19 +76,20 @@ export function Gruppe({
       clearTimeout(ferdig);
     };
   }, [lukket]);
+  const medVerktoy = !!verktoy && (verktoyAlltid || !lukket);
   return (
-    <section class={`kategori forsidegruppe${faner ? ' forsidepanel' : ''}`} data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
-      <h2 id={`${innhold}-tittel`} class={[verktoy && !lukket ? 'med-verktoy' : '', faner && !lukket ? 'med-faner' : ''].filter(Boolean).join(' ') || undefined}>
+    <section class={`kategori forsidegruppe${klasse ? ` ${klasse}` : ''}${lukket ? ' lukket' : ''}`} data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
+      <h2 id={`${innhold}-tittel`} class={medVerktoy ? 'med-verktoy' : undefined}>
         <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={onVeksle ?? (() => vekslGruppe(id))}>
           <span class="gruppeknapp-tekst">
-            <span class={faner && !lukket ? 'skjult-visuelt' : undefined}>{tittel}</span>
+            <span class="gruppe-tittel">{tittel}</span>
             {lukket && <span class="gruppe-sammendrag">{sammendrag}</span>}
           </span>
           <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
         </button>
-        {!lukket && verktoy}
-        {!lukket && faner}
+        {medVerktoy && verktoy}
       </h2>
+      {foran}
       <div id={innhold} class={`gruppe-innhold${utvidet ? ' utvidet' : ''}${animerer ? ' animerer' : ''}`} hidden={!vis}>
         <div class="gruppe-innhold-indre">{children}</div>
       </div>
