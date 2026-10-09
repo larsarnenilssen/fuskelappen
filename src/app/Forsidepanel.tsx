@@ -43,9 +43,10 @@ export const VISNINGER: readonly { id: Visning; ikon: Ikonnavn; favoritt: string
 export const JUKSELAPPVISNING: { id: Visning; ikon: Ikonnavn; favoritt: string | null } = { id: 'jukselapp', ikon: 'skriv', favoritt: null };
 
 /** Rammen rundt en visning: en egen gruppe, eller gruppen i panelet med valgene i overskriften. */
-type Ramme = (p: { tittel: string; sammendrag: string; children: ComponentChildren }) => JSX.Element;
+export type Ramme = (p: { tittel: string; sammendrag: string; children: ComponentChildren }) => JSX.Element;
 
-function Innhold({ id, ramme }: { id: Visning; ramme: Ramme }) {
+/** Innholdet i en visning, i rammen den står i. Brukes også av forslaget til ny forside (src/app/forslag/). */
+export function Innhold({ id, ramme }: { id: Visning; ramme: Ramme }) {
   if (id === 'neste') return <NesteDatoer ramme={ramme} />;
   if (id === 'nyheter') return <Nyheter ramme={ramme} />;
   if (id === 'jukselapp') return <JukselappVisning ramme={ramme} />;

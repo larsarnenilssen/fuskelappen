@@ -20,6 +20,7 @@ import { Forsidepanel, JUKSELAPPVISNING, PANEL, VISNINGER, Visningsgruppe } from
 import { Stedmerknad } from '../Stedmerknad.tsx';
 import { Jukselappbryter } from '../Jukselapp.tsx';
 import { apneVelkomst } from '../velkomst/apne.ts';
+import { useForslag, useForslagsmodul, type Forslag, type Forslagsmodul } from '../forslag/forslag.ts';
 import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settForsidevisning, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslSkjultGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
@@ -45,7 +46,7 @@ function Sidekolonnebryter({ pa, kort = false }: { pa: boolean; kort?: boolean }
  * Sidekolonnen (eier 05.10.2026): står fast mens siden rulles og ruller selv når den er for lang, uten synlig
  * rullefelt. En toning øverst og nederst viser at det er mer over eller under. Bryteren står fast øverst.
  */
-function Sidekolonne({ children }: { children: ComponentChildren }) {
+function Sidekolonne({ children, utenBryter = false }: { children: ComponentChildren; utenBryter?: boolean }) {
   const kolonne = useRef<HTMLDivElement>(null);
   const rull = useRef<HTMLDivElement>(null);
   const [mer, settMer] = useState({ over: false, under: false });
@@ -101,9 +102,12 @@ function Sidekolonne({ children }: { children: ComponentChildren }) {
   }, []);
   return (
     <div class="forside-sidekolonne" ref={kolonne}>
-      <div class="sidekolonne-topp">
-        <Sidekolonnebryter pa />
-      </div>
+      {/* Forslag 1 (forslag.ts): uten bryteren. Aktuelt legges sammen eller skjules i panelet selv. */}
+      {!utenBryter && (
+        <div class="sidekolonne-topp">
+          <Sidekolonnebryter pa />
+        </div>
+      )}
       <div class={`sidekolonne-ramme${mer.over ? ' mer-over' : ''}${mer.under ? ' mer-under' : ''}`}>
         <div class="sidekolonne-rull" ref={rull}>
           <div class="sidekolonne-innhold">{children}</div>
@@ -179,19 +183,37 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
  * del med bryteren for kolonnen, og hopper ut av rekkefølgen for de andre gruppene. Plassen deres i den felles
  * rekkefølgen beholdes, så de står der brukeren satte dem når vinduet blir smalt (eier 05.10.2026).
  */
-function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; kolonnePa: boolean }) {
+function Tilpasning({
+  grupper: alle,
+  navn,
+  sidekolonne,
+  kolonnePa,
+  forslag = 0,
+  ff = null,
+}: {
+  grupper: string[];
+  navn: (id: string) => string;
+  sidekolonne: boolean;
+  kolonnePa: boolean;
+  forslag?: Forslag;
+  ff?: Forslagsmodul | null;
+}) {
   const { t } = useTekst();
   const { forside } = useTilstand();
   const iKolonnen = (id: string) => id === PANEL || id === FAVORITTER;
+  // Forslag 2 og 3: Aktuelt står fast under søket og er ikke med i rekkefølgen.
+  const grupper = forslag === 2 || forslag === 3 ? alle.filter((id) => id !== PANEL) : alle;
   const sorterbar = (utvalg: string[], etikett: string) => (
     <Sorterbar
       etikett={etikett}
       elementer={utvalg.map((id) => ({ id, navn: navn(id), innhold: <span class="sorterbar-navn">{navn(id)}</span> }))}
-      onFlytt={(fra, til) => settGrupperekkefolge(utvalg.length === grupper.length ? flytt(grupper, fra, til) : flyttInnenfor(grupper, utvalg, fra, til))}
+      onFlytt={(fra, til) => settGrupperekkefolge(utvalg.length === alle.length ? flytt(alle, fra, til) : flyttInnenfor(alle, utvalg, fra, til))}
     />
   );
   // Visningene i panelet øverst (avgjørelse 081): brukeren velger hvilke som er med.
-  const visninger = (
+  const visninger = forslag ? (
+    ff && <ff.TilpassAktuelt />
+  ) : (
     <fieldset class="tilpass-visninger">
       <legend class="tilpass-del">{t('forside.tilpass.visninger')}</legend>
       <p class="dempet liten">{t('forside.tilpass.visningerHjelp')}</p>
@@ -219,7 +241,7 @@ function Tilpasning({ grupper, navn, sidekolonne, kolonnePa }: { grupper: string
           )}
           <h3 class="tilpass-del">{t('forside.tilpass.sidekolonne')}</h3>
           <p class="dempet liten">{t('forside.tilpass.sidekolonneHjelp')}</p>
-          <Sidekolonnebryter pa={kolonnePa} />
+          {!forslag && <Sidekolonnebryter pa={kolonnePa} />}
           {sorterbar(grupper.filter(iKolonnen), t('forside.tilpass.sidekolonne'))}
           {visninger}
         </>
@@ -244,6 +266,10 @@ export default function Forside() {
   const [endrer, settEndrer] = useState<string | null>(null);
   const topp = useRef<HTMLDivElement>(null);
   const skrivebord = useMinstBredde(SIDEKOLONNE_FRA);
+  // Forslaget til ny presentasjon av kalenderen, nyhetene, tallene og jukselappen (forslag.ts). Alltid 0 i den
+  // publiserte appen, og uten `?forslag=` i adressen.
+  const forslag = useForslag();
+  const ff = useForslagsmodul(forslag);
 
 
   // Toppfeltet viser en søkeknapp når søkefeltet er rullet ut av syne (avgjørelse 056).
@@ -268,8 +294,8 @@ export default function Forside() {
   };
   const bare = forside.bareFavoritter;
   // Sidekolonnen brukes på skrivebord, med alt innhold. Med «Bare favoritter» står favorittene under gruppene.
-  const medKolonne = skrivebord && !bare;
-  const kolonnePa = !(forside.skjult ?? []).includes(SIDEKOLONNE);
+  const medKolonne = skrivebord && !bare && forslag !== 2 && forslag !== 3;
+  const kolonnePa = forslag === 1 || !(forside.skjult ?? []).includes(SIDEKOLONNE);
 
   const antallFavoritter = (n: number) => (n === 1 ? t('forside.enFavoritt') : t('forside.antallFavoritter', { antall: String(n) }));
   // Blyanten trengs bare når det er minst to favoritter å sortere.
@@ -292,6 +318,8 @@ export default function Forside() {
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
     // Panelet øverst. Med «Bare favoritter» står visningene som er favoritter, hver som sin egen gruppe (eier 07.10.2026).
+    // Forslag 1: Aktuelt står på plassen til panelet. Forslag 2 og 3: Aktuelt står fast under søket.
+    if (id === PANEL && forslag) return forslag === 1 && ff ? <ff.Kolonnepanel key={id} /> : null;
     if (id === PANEL) return bare ? somFavoritt.map((v) => <Visningsgruppe key={v.id} id={v.id} />) : <Forsidepanel key={id} visninger={paa.map((v) => v.id)} />;
     if (id === FAVORITTER) {
       if (bare) return null;
@@ -304,7 +332,8 @@ export default function Forside() {
     const k = kategorier.find((x) => x.id === id);
     if (!k) return null;
     if (bare) {
-      const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id && !visesSomVisning(f));
+      // I forslaget står kalenderen, nyhetene og tallene som vanlige favoritter, fordi Aktuelt står for seg.
+      const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id && (forslag !== 0 || !visesSomVisning(f)));
       if (ider.length === 0) return null;
       return (
         <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} sammendrag={antallFavoritter(ider.length)} lukket={lukket} verktoy={endreknapp(id, ider.length)}>
@@ -361,9 +390,11 @@ export default function Forside() {
           <Stedmerknad />
 
           {tilpass ? (
-            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} kolonnePa={kolonnePa} />
+            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} kolonnePa={kolonnePa} forslag={forslag} ff={ff} />
           ) : (
             <>
+              {forslag === 2 && ff && <ff.Baand />}
+              {forslag === 3 && ff && <ff.Rad />}
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
               {!medKolonne ? (
@@ -375,7 +406,7 @@ export default function Forside() {
                 // det er plass til tre.
                 <div class="forside-oppsett">
                   <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
-                  <Sidekolonne>{sidegrupper.map(gruppe)}</Sidekolonne>
+                  <Sidekolonne utenBryter={forslag === 1}>{sidegrupper.map(gruppe)}</Sidekolonne>
                 </div>
               ) : (
                 // Slått av: en smal skinne med bryteren, og knapper som åpner kolonnen igjen. Gruppene får bredden.
@@ -436,6 +467,7 @@ export default function Forside() {
             <p>
               <a href="#/om">{t('om.tittel')}</a>
             </p>
+            {ff && forslag !== 0 && <ff.Forslagslinje forslag={forslag} />}
           </div>
         </>
       )}

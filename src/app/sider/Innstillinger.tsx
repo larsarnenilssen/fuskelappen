@@ -6,6 +6,7 @@ import { KildestatusIndikator } from '../Kildestatusindikator.tsx';
 import { StedValg } from '../StedValg.tsx';
 import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
 import { Jukselappbryter } from '../Jukselapp.tsx';
+import { useForslag } from '../forslag/forslag.ts';
 import { Tilbakemelding } from '../Tilbakemelding.tsx';
 import { FLYTTEPARAMETER, lesFlytting } from '../flytting.ts';
 import { erstattAdresse } from '../ruter.ts';
@@ -44,6 +45,7 @@ export default function Innstillinger({ sporring }: SideProps) {
   const data = useTilstand();
   const inn = data.innstillinger;
   const [melding, settMelding] = useState<string | null>(null);
+  const forslag = useForslag();
 
   // Innstillingene og favorittene fra den gamle adressen (avgjørelse 065). Adressen ryddes, så de ikke hentes inn på nytt.
   useEffect(() => {
@@ -116,10 +118,13 @@ export default function Innstillinger({ sporring }: SideProps) {
         onVelg={(tema) => sett({ tema })}
       />
 
-      <fieldset class="valggruppe">
-        <legend>{t('forside.jukselapp.legend')}</legend>
-        <Jukselappbryter id="innst-jukselapp" />
-      </fieldset>
+      {/* I forslaget til ny forside slås jukselappen av og på i menyen i Aktuelt (forslag.ts). */}
+      {!forslag && (
+        <fieldset class="valggruppe">
+          <legend>{t('forside.jukselapp.legend')}</legend>
+          <Jukselappbryter id="innst-jukselapp" />
+        </fieldset>
+      )}
 
       <StedValg />
 

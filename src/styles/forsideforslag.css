@@ -1,0 +1,377 @@
+/*
+ * Forslaget til ny presentasjon av kalenderen, nyhetene, tallene og dagens jukselapp på forsiden (09.10.2026,
+ * src/app/forslag/). Lastes bare med forslaget, i utvikling og testversjonen.
+ *
+ * «Aktuelt» står på den myke flaten i temafargen, som sidekolonnen (docs/DESIGN.md, «Flater»), så det skiller seg fra
+ * de hvite boksene med modulene og favorittene. Merkelappen er den samme som over tallboksene.
+ */
+
+.ff-merke {
+  margin: 0;
+  color: var(--farge-merke);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* ---------- Kortet: forslag 1 (sidekolonnen og mobil) og forslag 2 på mobil ---------- */
+.ff-panel {
+  margin: 0 0 var(--rom-4);
+}
+
+.ff-kolonne,
+.ff-baand {
+  padding: var(--rom-1) var(--rom-3);
+  border-radius: var(--radius-l);
+  background: var(--farge-sidekolonne);
+  container: sidekolonne / inline-size;
+}
+
+/* I sidekolonnen har kolonnen selv flaten. */
+.forside-sidekolonne .ff-kolonne {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.ff-hode {
+  position: relative;
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.ff-veksle {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: 3rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.ff-hode-tekst {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  /* Plass til menyknappen, som står oppå raden til venstre for pilen. */
+  margin-right: var(--trykkflate);
+}
+
+.ff-sammendrag {
+  overflow: hidden;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ff-sammendrag strong {
+  color: var(--farge-tekst);
+  font-weight: 600;
+}
+
+.ff-pil {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+/* Ikonet til visningen i en hvit sirkel, som ikonene til modulene, men på den myke flaten. */
+.ff-ikon {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--rom-2);
+  border-radius: 50%;
+  background: var(--farge-flate);
+  color: var(--farge-merke);
+}
+
+.ff-hode > .ff-menyknapp {
+  position: absolute;
+  top: 50%;
+  right: calc(1.1rem + var(--rom-1));
+  transform: translateY(-50%);
+}
+
+.ff-menyknapp {
+  color: var(--farge-lenke);
+}
+
+.ff-menyknapp[aria-expanded='true'] {
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+.ff-faner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1) var(--rom-4);
+  margin: 0 0 var(--rom-2);
+}
+
+.ff-innhold .panel-boks {
+  margin-bottom: var(--rom-3);
+}
+
+/* Menyen: hva som står i Aktuelt, og «Skjul Aktuelt». Et hvitt kort under overskriften. */
+.ff-meny {
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  font-size: var(--str-s);
+}
+
+.ff-meny fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.ff-meny legend {
+  padding: 0;
+  font-weight: 700;
+}
+
+.ff-meny .avkrysning {
+  min-height: 2.25rem;
+}
+
+.ff-skjul {
+  margin-top: var(--rom-1);
+}
+
+.ff-meny p {
+  margin: 0 0 var(--rom-1);
+}
+
+/* ---------- Forslag 2 på stor skjerm: båndet ---------- */
+.ff-baand-bred {
+  padding: var(--rom-2) var(--rom-3);
+}
+
+.ff-baand-rad {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-3);
+  min-height: var(--trykkflate);
+}
+
+.ff-baand-rad > .ff-merke {
+  flex: none;
+}
+
+.ff-segmenter {
+  display: grid;
+  flex: 1;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: var(--rom-2);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ff-segment {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-1) var(--rom-2);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: none;
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.ff-segment:hover {
+  background: var(--farge-flate);
+}
+
+.ff-segment-tekst {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  font-size: var(--str-s);
+  line-height: 1.3;
+}
+
+.ff-segment .ff-sammendrag {
+  font-size: var(--str-xs);
+}
+
+.ff-verktoy {
+  display: flex;
+  flex: none;
+  margin-left: auto;
+}
+
+.ff-veksle-liten {
+  color: var(--farge-tekst-dempet);
+}
+
+.ff-kortrad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  align-items: start;
+  gap: var(--rom-3);
+  margin: var(--rom-1) 0 var(--rom-2);
+}
+
+.ff-kortrad[hidden] {
+  display: none;
+}
+
+.ff-kort {
+  min-width: 0;
+  container: sidekolonne / inline-size;
+}
+
+.ff-kort-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.ff-kort .panel-boks {
+  margin: 0;
+}
+
+/* ---------- Forslag 3: den kompakte raden ---------- */
+.ff-rad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2) var(--rom-3);
+  margin: 0 0 var(--rom-4);
+}
+
+.ff-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Små piller (docs/DESIGN.md, «Valgknapper»), på den myke flaten, så de ikke ligner modulene. */
+.ff-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: 2.5rem;
+  padding: 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
+  background: var(--farge-sidekolonne);
+  color: var(--farge-lenke);
+  font: inherit;
+  font-size: var(--str-s);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ff-chip:hover {
+  background: var(--farge-flate-2);
+}
+
+.ff-rad > .ff-meny {
+  flex: 1 1 100%;
+}
+
+/*
+ * På smal skjerm står merkelappen bare for skjermlesere, og knappene står i én rad med like brede knapper, med ikonet
+ * over navnet, så de får plass også på 320 px.
+ */
+@media (max-width: 29.99rem) {
+  .ff-rad > .ff-merke {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .ff-chips {
+    display: grid;
+    flex: 1 1 100%;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    gap: var(--rom-1);
+  }
+
+  .ff-chips > li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ff-chip {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1rem;
+    width: 100%;
+    min-height: 3.25rem;
+    padding: var(--rom-1) 0.125rem;
+    border-radius: var(--radius-m);
+    font-size: var(--str-xs);
+  }
+
+  .ff-chip > span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .ff-chips .ff-menyknapp {
+    align-self: center;
+  }
+}
+
+.overlegg.ff-overlegg {
+  max-width: 30rem;
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
+}
+
+.ff-overlegg-topp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 calc(-1 * var(--rom-2)) var(--rom-1) 0;
+}
+
+.overlegg h2.ff-overlegg-tittel {
+  margin: var(--rom-1) 0 var(--rom-2);
+  font-size: var(--str-m);
+}
+
+.ff-overlegg .panel-boks {
+  margin: 0;
+}
+
+/* Linjen nederst på forsiden i forslaget. */
+.ff-linje {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+}

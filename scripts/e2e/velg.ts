@@ -112,6 +112,12 @@ export function velgTester(endrede: readonly string[]): Utvalg {
       grunner.push(`${fil}: velkomsten`);
       if (/^src\/(app\/velkomst\/(Velkomst|Bilder|roller)|strings\/velkomst\.|styles\/velkomst\.css)/.test(fil)) continue;
     }
+    // Forslaget til ny forside (09.10.2026): lastes bare med `?forslag=` i utvikling, testene og testversjonen.
+    if (/^src\/(app\/forslag\/Forsideforslag|strings\/forsideforslag\.|styles\/forsideforslag\.css)/.test(fil)) {
+      speker.add('forsideforslag');
+      grunner.push(`${fil}: forslaget til ny forside`);
+      continue;
+    }
     if (fil === 'scripts/bygg-sokeindeks.ts') {
       speker.add('modul-og-sok');
       grunner.push(`${fil}: søket`);

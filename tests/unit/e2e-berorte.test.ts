@@ -35,6 +35,7 @@ describe('berørte ende-til-ende-tester', () => {
     expect(velgTester(['src/components/Overlegg.tsx']).speker).toContain('nyversjon');
     expect(velgTester(['src/app/Oppdateringsvarsel.tsx']).speker).toContain('nyversjon');
     expect(velgTester(['src/strings/velkomst.nb.ts'])).toEqual({ speker: ['velkomst'], ruter: [], grunner: ['src/strings/velkomst.nb.ts: velkomsten'] });
+    expect(velgTester(['src/styles/forsideforslag.css'])).toEqual({ speker: ['forsideforslag'], ruter: [], grunner: ['src/styles/forsideforslag.css: forslaget til ny forside'] });
     expect(velgTester(['src/app/velkomst/apne.ts']).speker).toEqual(expect.arrayContaining(['velkomst', 'innstillinger']));
   });
 
