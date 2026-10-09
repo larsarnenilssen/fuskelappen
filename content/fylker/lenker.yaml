@@ -65,9 +65,9 @@ fylker:
       klage-inntak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/soke-skoleplass/", bekreftet: 2026-10-09 }
       sprak: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-skole/minoritetsspraklige/", bekreftet: 2026-10-09 }
       tilrettelegging: { url: "https://ofk.no/tjenester/skole-og-opplaring/ppt-oppfolgingstjenesten/pp-tjenesten-ppt/", bekreftet: 2026-10-09 }
-      eksamen: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-elever/karakter-og-klage/", bekreftet: 2026-10-09 }
+      eksamen: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/eksamen-for-elever/", bekreftet: 2026-10-09 }
       klage-standpunkt: { url: "https://ofk.no/tjenester/skole-og-opplaring/klage-pa-karakter/", bekreftet: 2026-10-09 }
-      privatist: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/privatisteksamen/karakter-og-klage/", bekreftet: null }
+      privatist: { url: "https://ofk.no/tjenester/skole-og-opplaring/eksamen-og-vitnemal/privatisteksamen/", bekreftet: 2026-10-09 }
       fagprove: { url: "https://ofk.no/tjenester/skole-og-opplaring/opplaring-i-bedrift/fag-svenne-og-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "32"
     navn: Akershus fylkeskommune
@@ -136,7 +136,7 @@ fylker:
       tilrettelegging: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/pedagogisk-psykologisk-tjeneste-ppt/henvisning-til-ppt/", bekreftet: 2026-10-09 }
       eksamen: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-elever/", bekreftet: 2026-10-09 }
       privatist: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/eksamen/eksamen-for-privatister/for-eksamen/pamelding-betaling-og-eksamensdatoer/", bekreftet: 2026-10-09 }
-      fagprove: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-bedrift/fagprove-svenneprove-eller-kompetanseprove/vurdering-og-klagerett/", bekreftet: null }
+      fagprove: { url: "https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-bedrift/fagprove-svenneprove-eller-kompetanseprove/", bekreftet: 2026-10-09 }
   - fylke: "46"
     navn: Vestland fylkeskommune
     lenker:
