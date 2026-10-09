@@ -14,3 +14,5 @@
 - **Lasting:** velkomsten, tekstene (`src/strings/velkomst.*.ts`), stilene (`velkomst.css`) og animasjonene lastes når vinduet åpnes (avgjørelse 082 og 083). I startpakken er bare åpningen og tilbudet om installering.
 
 **Konsekvens:** Startpakken er omtrent som før (130,5 kB). En ny rolle eller favoritt legges inn i `roller.ts` og testes. Velkomsttestene (`tests/e2e/velkomst.spec.ts`) går gjennom alle trinnene og tester overflyt og axe i lys og mørk visning.
+
+**Endret 09.10.2026:** Velkomsten har fire trinn i stedet for ni: velkommen (med det viktigste fra søket og forsiden), «Hvor jobber du?», rolle med favoritter og dagens jukselapp, og installering. Hvert trinn skal få plass uten rulling på en iPhone (avgjørelse 101).

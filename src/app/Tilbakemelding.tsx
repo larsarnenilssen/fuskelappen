@@ -8,7 +8,7 @@ import { fylkesnavn } from './Stedmerknad.tsx';
 import { epostlenke, forrigeSide } from './tilbakemelding.ts';
 import { useTekst, useTilstand } from './tilstand.ts';
 
-/** E-posten med emne og mal, til «Skriv e-post» her og i velkomsten (fase 10). */
+/** E-posten med emne og mal, til «Skriv e-post». */
 export function useTilbakemeldingslenke(): string {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();

@@ -1,6 +1,7 @@
-// Velkomsten (fase 10): en trinnvis omvisning i et vindu over appen, med valgene for fylke og skole, rolle og
-// favoritter, dagens jukselapp og hjelp til å installere appen. Bygger på `Overlegg` (avgjørelse 088): resten av appen
-// kan ikke nås mens vinduet er åpent, Esc og krysset lukker det, også ved første trinn. Lastes først når vinduet åpnes.
+// Velkomsten (fase 10): fire trinn i et vindu over appen (avgjørelse 101): hva appen er, fylke og skole, rolle med
+// favoritter og dagens jukselapp, og hjelp til å installere appen. Hvert trinn skal få plass uten rulling på en iPhone.
+// Bygger på `Overlegg` (avgjørelse 088): resten av appen kan ikke nås mens vinduet er åpent, Esc og krysset lukker det,
+// også ved første trinn. Lastes først når vinduet åpnes.
 import type { JSX } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
@@ -12,14 +13,13 @@ import type { Favorittbar } from '../../modules/typer.ts';
 import { ikonForFavoritt, samleFavorittbare } from '../../modules/register.ts';
 import { velkomstNb } from '../../strings/velkomst.nb.ts';
 import { velkomstNn } from '../../strings/velkomst.nn.ts';
-import { useDagensJukselapp, Jukselappbryter } from '../Jukselapp.tsx';
+import { Jukselappbryter } from '../Jukselapp.tsx';
 import { StedValg } from '../StedValg.tsx';
-import { useTilbakemeldingslenke } from '../Tilbakemelding.tsx';
 import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
 import { FORHANDSVISNING } from './apne.ts';
 import { ANBEFALTE, lesRolle, ROLLER, type Rolle } from './roller.ts';
 import { installasjonstilbud } from './VelkomstLaster.tsx';
-import { BildeFavoritter, BildeForsiden, BildeInstaller, BildeSidene, BildeSok, BildeTakk, BildeVelkommen } from './Bilder.tsx';
+import { BildeForsiden, BildeInstaller } from './Bilder.tsx';
 import '../../styles/velkomst.css';
 
 type Enhet = 'ios' | 'android' | 'datamaskin';
@@ -123,17 +123,6 @@ function Rollevalg({ v }: { v: typeof velkomstNb }) {
   );
 }
 
-function JukselappEksempel({ v }: { v: typeof velkomstNb }) {
-  const { innhold } = useDagensJukselapp();
-  return (
-    <div class="vk-jukselapp">
-      <p class="dempet liten">{v.jukselapp.eksempel}</p>
-      <p class="vk-merkelapp">{v.jukselapp.tittel}</p>
-      {innhold}
-    </div>
-  );
-}
-
 function Installering({ v }: { v: typeof velkomstNb }) {
   const [enhet, settEnhet] = useState<Enhet>(gjettEnhet);
   const [tilbud, settTilbud] = useState(installasjonstilbud);
@@ -185,25 +174,6 @@ function Installering({ v }: { v: typeof velkomstNb }) {
   );
 }
 
-function Takk({ v }: { v: typeof velkomstNb }) {
-  const lenke = useTilbakemeldingslenke();
-  return (
-    <>
-      <BildeTakk spillAv={v.spillAv} />
-      <p>{fyllInn(v.takk.privat, { app: app.navn })}</p>
-      <p>{v.takk.innspill}</p>
-      <p>
-        <a class="knapp knapp-sekundaer" href={lenke}>
-          <Ikon navn="blyant" />
-          {v.takk.knapp}
-        </a>
-      </p>
-      <p class="dempet liten">{v.takk.senere}</p>
-      <p class="vk-takk">{fyllInn(v.takk.takk, { app: app.navn })}</p>
-    </>
-  );
-}
-
 type Trinn = { id: string; tittel: string; innhold: JSX.Element };
 
 export function Velkomst({ onLukk }: { onLukk: () => void }) {
@@ -219,38 +189,8 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
       tittel: fyllInn(v.velkommen.tittel, a),
       innhold: (
         <>
-          <BildeVelkommen spillAv={v.spillAv} />
-          <Avsnitt tekster={[fyllInn(v.velkommen.tekst, a), v.velkommen.navnet, v.velkommen.omvisning]} />
-        </>
-      ),
-    },
-    {
-      id: 'sok',
-      tittel: v.sok.tittel,
-      innhold: (
-        <>
-          <BildeSok spillAv={v.spillAv} sok={v.sok.bildeSok} treff={v.sok.bildeTreff} treffUnder={v.sok.bildeTreffUnder} />
-          <Avsnitt tekster={[v.sok.hvor, v.sok.hva]} />
-        </>
-      ),
-    },
-    {
-      id: 'forsiden',
-      tittel: v.forsiden.tittel,
-      innhold: (
-        <>
-          <BildeForsiden spillAv={v.spillAv} faner={[v.forsiden.bildeKalender, v.forsiden.bildeNyheter, v.forsiden.bildeTall]} />
-          <Avsnitt tekster={[v.forsiden.panel, v.forsiden.grupper, v.forsiden.tilpass]} />
-        </>
-      ),
-    },
-    {
-      id: 'sidene',
-      tittel: v.sidene.tittel,
-      innhold: (
-        <>
-          <BildeSidene spillAv={v.spillAv} regelverk={v.sidene.bildeRegelverk} kilder={v.sidene.bildeKilder} />
-          <Avsnitt tekster={[v.sidene.oversikt, v.sidene.kilder]} />
+          <BildeForsiden spillAv={v.spillAv} faner={[v.velkommen.bildeKalender, v.velkommen.bildeNyheter, v.velkommen.bildeTall]} />
+          <Avsnitt tekster={[fyllInn(v.velkommen.tekst, a), v.velkommen.navnet, v.velkommen.sok]} />
         </>
       ),
     },
@@ -284,20 +224,8 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
         <>
           <p>{v.rolle.tekst}</p>
           <Rollevalg v={v} />
-          <BildeFavoritter spillAv={v.spillAv} favoritter={v.rolle.bildeFavoritter} side={v.rolle.bildeSide} />
-          <p class="dempet liten">{v.rolle.slik}</p>
-        </>
-      ),
-    },
-    {
-      id: 'jukselapp',
-      tittel: v.jukselapp.tittel,
-      innhold: (
-        <>
-          <p>{v.jukselapp.tekst}</p>
-          <JukselappEksempel v={v} />
           <div class="vk-bryter">
-            <Jukselappbryter id="vk-jukselapp" />
+            <Jukselappbryter id="vk-jukselapp" hjelp={v.rolle.jukselapp} />
           </div>
         </>
       ),
@@ -316,10 +244,10 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
           },
         ]
       : []),
-    { id: 'takk', tittel: v.takk.tittel, innhold: <Takk v={v} /> },
   ];
 
-  // Forhåndsvisningen kan starte på et bestemt trinn, f.eks. `?vis=velkomst&trinn=rolle` (til skjermbildene).
+  // Forhåndsvisningen kan starte på et bestemt trinn, f.eks. `?vis=velkomst&trinn=rolle` (til skjermbildene). En id som
+  // ikke finnes (også trinnene som er tatt bort, f.eks. `sok` og `takk`), gir første trinn.
   const [nr, settNr] = useState(() => {
     const start = new URLSearchParams(location.hash.split('?')[1] ?? '').get('trinn');
     return Math.max(
@@ -341,7 +269,7 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
     tittel.current?.focus({ preventScroll: true });
   }, [nr]);
 
-  // Trinnene er aldri tomme: velkomsten og takken er alltid med.
+  // Trinnene er aldri tomme: første trinn er alltid med.
   const gjeldende = (trinn[nr] ?? trinn[0]) as Trinn;
   const sist = nr === trinn.length - 1;
 
