@@ -47,7 +47,7 @@
       - **h. Trafikkopplæring til klasse B:** sikkerhetskurs på bane, sikkerhetskurs på vei (del 2 og 3) og førerprøven, med rimelig reisetid.
       - **i. Representasjon** på arrangement på nasjonalt og internasjonalt nivå.
     nn: |
-      Fråvær som er dokumentert med ein av desse grunnane, tel ikkje, same kor i skoleåret det er (§ 9-8 andre ledd bokstav b–i). Eleven kan dokumentere det når som helst, og skolen må ta imot dokumentasjonen fortløpande. Det udokumenterte fråværet kan likevel ikkje vere meir enn 10 prosent.
+      Fråvær som er dokumentert med ein av desse grunnane, tel ikkje, same kor i skuleåret det er (§ 9-8 andre ledd bokstav b–i). Eleven kan dokumentere det når som helst, og skulen må ta imot dokumentasjonen fortløpande. Det udokumenterte fråværet kan likevel ikkje vere meir enn 10 prosent.
 
       - **b. Velferd:** omsorg for eigne barn, gravferd eller alvorleg sjukdom i familien, konfirmasjon. Kor mykje som kan unntakast, avgjer fylkeskommunen.
       - **c. Religiøse høgtidsdagar** utanom dei offentlege heilagdagane, høgst to dagar.
@@ -65,6 +65,7 @@
   kontrollsporsmal:
     - "Er eksemplene på hver grunn riktige og dekkende nok (rundskrivet punkt 3.3.3)?"
     - "Er det riktig å skrive at det udokumenterte fraværet likevel ikke kan være mer enn 10 prosent?"
+    - "«Hvor mye som kan unntas, bestemmer fylkeskommunen» står ikke i forskriften, som bare sier «velferdsforhold» (§ 9-8 andre ledd bokstav b). Rundskrivet punkt 3.3.3 sier at det «beror på lokal regulering i fylkeskommunen». Er setningen dekkende, eller bør den si at det avhenger av lokale regler i fylket?"
 
 - id: fr-ikke-fravaer
   type: regel
@@ -89,11 +90,11 @@
     nn: |
       Dette blir ikkje rekna som fråvær frå opplæringa, og blir ikkje ført mot grensa:
 
-      - samtale eller undersøking hos skolehelsetenesta
-      - rådgiving på skolen, og utgreiing hos PP-tenesta og Statped
+      - samtale eller undersøking hos skulehelsetenesta
+      - rådgiving på skulen, og utgreiing hos PP-tenesta og Statped
       - studiearbeid som er avtalt med faglæraren på førehand
-      - elevrådsarbeid og anna elevarbeid som skolen har godkjent
-      - avtalt samtale med rektor eller andre tilsette på skolen
+      - elevrådsarbeid og anna elevarbeid som skulen har godkjent
+      - avtalt samtale med rektor eller andre tilsette på skulen
       - intervju til læreplass
       - særskild, ny og utsett eksamen, og privatisteksamen i framandspråk når han er ein del av fagvalet
       - opplæring som ikkje blir halden, til dømes ved streik
@@ -154,13 +155,13 @@
       - **Mer opplæring** i fag som ikke er bestått, med færre timer: Grensen regnes av det reduserte timetallet. Skriv det inn selv.
       - **Én avregning for hele året,** ikke per halvår. Fraværet følger ikke med når eleven bytter skole.
     nn: |
-      Grensa blir rekna av årstimetalet i faget det skoleåret, slik det står i fag- og timefordelinga. Éin time er ein klokketime. Er øktene kortare eller lengre, blir grensa rekna om til økter. Eleven er innanfor så lenge fråværet ikkje er meir enn grensa.
+      Grensa blir rekna av årstimetalet i faget det skuleåret, slik det står i fag- og timefordelinga. Éin time er ein klokketime. Er øktene kortare eller lengre, blir grensa rekna om til økter. Eleven er innanfor så lenge fråværet ikkje er meir enn grensa.
 
       - **Heile årstimetalet** blir alltid brukt, også når eleven byrjar seint eller byter fag. Ved fagbyte startar fråværet i det nye faget på null, men grensa er den same.
-      - **Gjennomgåande fag**, til dømes norsk og kroppsøving: timetalet det eine skoleåret, ikkje heile faget.
+      - **Gjennomgåande fag**, til dømes norsk og kroppsøving: timetalet det eine skuleåret, ikkje heile faget.
       - **Eige årstimetal i fylket:** Har fylkeskommunen fastsett fleire timar i ei lokal fag- og timefordeling, gjeld det talet. Skriv det inn sjølv.
       - **Meir opplæring** i fag som ikkje er bestått, med færre timar: Grensa blir rekna av det reduserte timetalet. Skriv det inn sjølv.
-      - **Éi avrekning for heile året,** ikkje per halvår. Fråværet følgjer ikkje med når eleven byter skole.
+      - **Éi avrekning for heile året,** ikkje per halvår. Fråværet følgjer ikkje med når eleven byter skule.
   paragrafer: [opplaeringsforskrifta/9-8]
   kilder:
     - { id: udir-rundskriv-fravarsgrensen, punkt: "3.5–3.9", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
@@ -176,7 +177,7 @@
     nn: "Kven grensa gjeld for"
   tekst:
     nb: "Fraværsgrensen gjelder alle elever i videregående skole, også på påbygging (Vg3 og Vg4). Den gjelder ikke for lærlinger, lærekandidater, praksisbrevkandidater og voksne, og heller ikke for elever på yrkesfag som får et annet opplæringstilbud i stedet for opplæring i bedrift."
-    nn: "Fråværsgrensa gjeld alle elevar i vidaregåande skole, også på påbygging (Vg3 og Vg4). Ho gjeld ikkje for lærlingar, lærekandidatar, praksisbrevkandidatar og vaksne, og heller ikkje for elevar på yrkesfag som får eit anna opplæringstilbod i staden for opplæring i bedrift."
+    nn: "Fråværsgrensa gjeld alle elevar i vidaregåande skule, også på påbygging (Vg3 og Vg4). Ho gjeld ikkje for lærlingar, lærekandidatar, praksisbrevkandidatar og vaksne, og heller ikkje for elevar på yrkesfag som får eit anna opplæringstilbod i staden for opplæring i bedrift."
   kilder:
     - { id: udir-rundskriv-fravarsgrensen, punkt: "2. Hvem gjelder fraværsgrensen for", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/2.-hvem-gjelder-fravarsgrensen-for/" }
   kontrollert: null
@@ -201,7 +202,7 @@
 
       - **Kva det gjeld:** Fråværsgrensa gjeld kvart fag for seg og kan gjere at eleven ikkje får karakter. Fråværet på vitnemålet er samla for alle fag og har inga kopling til karakterane.
       - **Timar eller dagar:** Ved grensa blir timar unntekne. På vitnemålet blir berre dagar unntekne, så ein time hos tannlegen kan ikkje strykast der.
-      - **Kor mykje:** Ved grensa er det inga øvre grense for dokumentert fråvær. På vitnemålet kan høgst ti dagar per skoleår strykast.
+      - **Kor mykje:** Ved grensa er det inga øvre grense for dokumentert fråvær. På vitnemålet kan høgst ti dagar per skuleår strykast.
       - **Helsefråvær:** Ved grensa må helsefråvær etter 10 prosent dokumenterast av helsepersonell. På vitnemålet kan helsefråvær først strykast frå og med fjerde dag, også med eigenmelding når fråværet er innanfor 10 prosent i faget. Har eleven dokumentert høgare risiko for helserelatert fråvær, kan det strykast frå første dag.
   paragrafer: [opplaeringsforskrifta/9-53]
   kilder:
@@ -210,3 +211,47 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er forskjellene mellom fraværsgrensen og fraværet på vitnemålet gjengitt riktig, særlig om helsefravær og egenmelding (rundskrivet punkt 5.1, § 9-53 femte ledd)?"
+
+# Oppfølgingsplikten (opplæringslova § 10-6 første ledd), lagt til 09.10.2026 etter gjennomgangen av innholdet, godkjent
+# av eier. Står som eget kort over «Slik regnes grensen» på fraværssiden, fordi plikten gjelder alt fravær og ikke
+# bare grensen.
+- id: fr-oppfolging
+  type: forklaring
+  tittel:
+    nb: "Skolen skal følge opp alt fravær"
+    nn: "Skulen skal følgje opp alt fråvær"
+  tekst:
+    nb: |
+      Fylkeskommunen skal sørge for at elever med fravær fra opplæringen blir fulgt opp. Plikten gjelder alt fravær fra første dag, ikke bare høyt fravær, og den er noe annet enn fraværsgrensen. Fylkeskommunen kan delegere oppgavene til rektor.
+
+      - **Hvordan:** Fylkeskommunen avgjør selv hvordan elevene følges opp, ut fra årsaken og hvor lenge og hvor ofte eleven er borte. Ved kort fravær, for eksempel influensa, er det ofte nok at skolen tar imot beskjed om årsaken. Gjentatt, hyppig eller langvarig fravær kan kreve tiltak som er tilpasset eleven.
+      - **Rutiner:** Fylkeskommunen bør ha rutiner for å registrere ulike typer fravær, se fraværsmønstre, følge opp elevene og samarbeide med hjemmet. Den bør være særlig oppmerksom på elever som ikke møter første skoledag etter sommerferien.
+      - **Før grensen:** Skolen må prøve å finne tiltak som hjelper eleven å unngå å miste retten til vurdering med karakter.
+      - **Foreldrene:** Foreldrene til elever under 18 år skal få skriftlig eller muntlig melding om fraværet.
+      - **Sammenheng:** Plikten må ses sammen med pliktene etter reglene om skolemiljøet og tilpasset opplæring.
+    nn: |
+      Fylkeskommunen skal sørgje for at elevar med fråvær frå opplæringa blir følgde opp. Plikta gjeld alt fråvær frå første dag, ikkje berre høgt fråvær, og ho er noko anna enn fråværsgrensa. Fylkeskommunen kan delegere oppgåvene til rektor.
+
+      - **Korleis:** Fylkeskommunen avgjer sjølv korleis elevane blir følgde opp, ut frå årsaka og kor lenge og kor ofte eleven er borte. Ved kort fråvær, til dømes influensa, er det ofte nok at skulen tek imot melding om årsaka. Gjenteke, hyppig eller langvarig fråvær kan krevje tiltak som er tilpassa eleven.
+      - **Rutinar:** Fylkeskommunen bør ha rutinar for å registrere ulike typar fråvær, sjå fråværsmønster, følgje opp elevane og samarbeide med heimen. Han bør vere særleg merksam på elevar som ikkje møter første skuledag etter sommarferien.
+      - **Før grensa:** Skulen må prøve å finne tiltak som hjelper eleven å unngå å miste retten til vurdering med karakter.
+      - **Foreldra:** Foreldra til elevar under 18 år skal få skriftleg eller munnleg melding om fråværet.
+      - **Samanheng:** Plikta må sjåast saman med pliktene etter reglane om skulemiljøet og tilpassa opplæring.
+  paragrafer: [opplaeringslova/10-6, opplaeringsforskrifta/11-1]
+  privatskole:
+    tekst:
+      nb: "For privatskoler står oppfølgingsplikten i privatskolelova § 5A-6. Der er det skolen som skal sørge for at elever med fravær blir fulgt opp."
+      nn: "For privatskular står oppfølgingsplikta i privatskolelova § 5A-6. Der er det skulen som skal sørgje for at elevar med fråvær blir følgde opp."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 5A-6 Elevane si plikt til å delta og skolens oppfølgingsplikt", url: "https://lovdata.no/lov/2003-07-04-84/§5A-6" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 10-6 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§10-6" }
+    - { id: udir-oppfolging-fravaer, punkt: "Plikten gjelder fra første fraværsdag og Oppfølgingen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/plikt-til-a-folge-opp-fravar/" }
+    - { id: udir-merknader-opplaeringslova, punkt: "§ 10-6 Elevane si plikt til å delta og kommunen og fylkeskommunen si oppfølgingsplikt (Prop. 57 L (2022–2023) punkt 13)", url: "https://www.udir.no/regelverkstolkninger/opplaring/lov-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringslova/fjerde-del--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-det-beste-for-eleven-medverknad-skoledemokrati-foreldresamarbeid-skolereglar-og-plikt-til-a-delta/-10-6-elevane-si-plikt-til-a-delta-og-kommunen-og-fylkeskommunen-si-oppfolgingsplikt/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 11-1 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§11-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir skriver at fylkeskommunen kan delegere oppfølgingsplikten til rektor. Er det slik i fylket, og bør kortet heller si at det i praksis er skolen som følger opp?"
+    - "Er det tydelig nok at plikten gjelder alt fravær fra første dag, men at kort fravær ofte bare krever at skolen tar imot beskjed om årsaken?"
+    - "Bør kortet lenke videre, for eksempel til rådgivingen, PP-tjenesten eller oppfølgingstjenesten, og i så fall når?"
+  stikkord: [oppfølgingsplikt, følge opp fravær, bekymringsfullt fravær, nærvær, "10-6"]

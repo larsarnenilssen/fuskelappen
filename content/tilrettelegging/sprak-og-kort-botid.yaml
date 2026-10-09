@@ -10,7 +10,7 @@
     nn: Særskild språkopplæring og kort butid
   tekst:
     nb: Elever med et annet morsmål enn norsk og samisk har rett til særskilt språkopplæring til de kan norsk godt nok til å følge den vanlige opplæringen. Her er hva fylkeskommunen og skolen gjør steg for steg, også for elever som har bodd kort tid i Norge.
-    nn: Elevar med eit anna morsmål enn norsk og samisk har rett til særskild språkopplæring til dei kan norsk godt nok til å følgje den vanlege opplæringa. Her er kva fylkeskommunen og skolen gjer steg for steg, også for elevar som har budd kort tid i Noreg.
+    nn: Elevar med eit anna morsmål enn norsk og samisk har rett til særskild språkopplæring til dei kan norsk godt nok til å følgje den vanlege opplæringa. Her er kva fylkeskommunen og skulen gjer steg for steg, også for elevar som har budd kort tid i Noreg.
   start: sp-morsmal
   farge: lilla
   rekkefolge: 2
@@ -81,7 +81,7 @@
     nn: Fylkeskommunen vurderer om eleven kan norsk godt nok til å følgje den vanlege opplæringa. Vurderinga må byggje på eit fagleg grunnlag, men det er ingen nasjonale krav til metode eller verktøy. Udir har eit frivillig kartleggingsverktøy i grunnleggjande norsk. Kan eleven ikkje noko norsk, kan ein oppstartsamtale vere nok.
   ansvar:
     nb: Fylkeskommunen. I praksis gjør skolen vurderingen.
-    nn: Fylkeskommunen. I praksis gjer skolen vurderinga.
+    nn: Fylkeskommunen. I praksis gjer skulen vurderinga.
   dokumentasjon:
     nb: Vurderingen av norskferdighetene, som grunnlag for vedtaket.
     nn: Vurderinga av norskdugleiken, som grunnlag for vedtaket.
@@ -156,7 +156,7 @@
     nn: Skriftleg enkeltvedtak med opplæringa eleven skal få.
   forklaring:
     nb: Morsmålsopplæring kommer i tillegg til det vanlige timetallet og kan gis ved en annen skole. Tospråklig opplæring i fag gis ved skolen eleven går på. Har skolen ikke egnede lærere, kan begge deler gis som fjernundervisning.
-    nn: Morsmålsopplæring kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skole. Tospråkleg opplæring i fag blir gitt ved skolen eleven går på. Har ikkje skolen eigna lærarar, kan begge delar givast som fjernundervisning.
+    nn: Morsmålsopplæring kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skule. Tospråkleg opplæring i fag blir gitt ved skulen eleven går på. Har ikkje skulen eigna lærarar, kan begge delar givast som fjernundervisning.
   paragrafer: [opplaeringslova/6-5, opplaeringslova/10-1, opplaeringslova/10-2, forvaltningsloven/17]
   neste: sp-kort-botid
   fylke:
@@ -188,7 +188,7 @@
     nn: Det er inga fast grense for kor lenge ein elev må ha budd i Noreg for å reknast som nykomen. Fylkeskommunen ser på norskdugleiken, kva som er best for eleven og omsynet til integrering. Elevar som har budd kort tid i Noreg, kan få innføringsopplæring.
   forklaring:
     nb: For å ha rett til videregående opplæring må eleven ha fullført grunnskolen eller tilsvarende, for eksempel ni års grunnopplæring i utlandet, og ha lovlig opphold. Fylkeskommunen skal ha et tilbud til dem som har rett til videregående, men mangler språklige forutsetninger for å gjennomføre den, og kan tilby mer grunnskoleopplæring. Hvem som har rett, og hvordan søkeren tas inn, står i veiviseren [Rett, inntak og søknad](#/inntak/rett-inntak-soknad?steg=sk-utland&svar=utland).
-    nn: For å ha rett til vidaregåande opplæring må eleven ha fullført grunnskolen eller tilsvarande, til dømes ni års grunnopplæring i utlandet, og ha lovleg opphald. Fylkeskommunen skal ha eit tilbod til dei som har rett til vidaregåande, men manglar språklege føresetnader for å gjennomføre ho, og kan tilby meir grunnskoleopplæring. Kven som har rett, og korleis søkjaren blir teken inn, står i vegvisaren [Rett, inntak og søknad](#/inntak/rett-inntak-soknad?steg=sk-utland&svar=utland).
+    nn: For å ha rett til vidaregåande opplæring må eleven ha fullført grunnskulen eller tilsvarande, til dømes ni års grunnopplæring i utlandet, og ha lovleg opphald. Fylkeskommunen skal ha eit tilbod til dei som har rett til vidaregåande, men manglar språklege føresetnader for å gjennomføre ho, og kan tilby meir grunnskuleopplæring. Kven som har rett, og korleis søkjaren blir teken inn, står i vegvisaren [Rett, inntak og søknad](#/inntak/rett-inntak-soknad?steg=sk-utland&svar=utland).
   paragrafer: [opplaeringslova/6-6, opplaeringslova/5-1, opplaeringslova/5-9, opplaeringslova/9-6, opplaeringslova/9-7, opplaeringsforskrifta/4-1]
   sporsmal:
     tekst:
@@ -214,7 +214,7 @@
     nn: Innføringsopplæring
   tekst:
     nb: Fylkeskommunen kan gi elever med kort botid og vedtak om særskilt språkopplæring hele eller deler av opplæringen i egne grupper, klasser eller skoler. Det er et frivillig overgangstilbud for å lære norsk raskt. Vedtaket kan gjøre unntak fra læreplanene i fag og fra fag- og timefordelingen. Så lenge eleven får innføringsopplæring, har eleven rett til fritak fra vurdering med karakter, men ikke fra standpunktkarakter. Se også [vurdering i innføringsopplæringen](#/vurdering/grunnlag-for-vurdering?steg=vu-innforing&svar=elev.innforing).
-    nn: Fylkeskommunen kan gi elevar med kort butid og vedtak om særskild språkopplæring heile eller delar av opplæringa i eigne grupper, klassar eller skolar. Det er eit frivillig overgangstilbod for å lære norsk raskt. Vedtaket kan gjere unntak frå læreplanane i fag og frå fag- og timefordelinga. Så lenge eleven får innføringsopplæring, har eleven rett til fritak frå vurdering med karakter, men ikkje frå standpunktkarakter. Sjå også [vurdering i innføringsopplæringa](#/vurdering/grunnlag-for-vurdering?steg=vu-innforing&svar=elev.innforing).
+    nn: Fylkeskommunen kan gi elevar med kort butid og vedtak om særskild språkopplæring heile eller delar av opplæringa i eigne grupper, klassar eller skular. Det er eit frivillig overgangstilbod for å lære norsk raskt. Vedtaket kan gjere unntak frå læreplanane i fag og frå fag- og timefordelinga. Så lenge eleven får innføringsopplæring, har eleven rett til fritak frå vurdering med karakter, men ikkje frå standpunktkarakter. Sjå også [vurdering i innføringsopplæringa](#/vurdering/grunnlag-for-vurdering?steg=vu-innforing&svar=elev.innforing).
   ansvar:
     nb: Fylkeskommunen. Eleven samtykker selv når eleven er i stand til det, ellers foreldrene.
     nn: Fylkeskommunen. Eleven samtykkjer sjølv når eleven er i stand til det, elles foreldra.
@@ -227,7 +227,7 @@
   fristKort: { nb: "Høyst 2 år", nn: "Høgst 2 år" }
   forklaring:
     nb: Når eleven går over til vanlig klasse, kan eleven fortsatt ha rett til særskilt språkopplæring der. Skolen skal vurdere norskferdighetene underveis, for å se når eleven kan gå over.
-    nn: Når eleven går over til vanleg klasse, kan eleven framleis ha rett til særskild språkopplæring der. Skolen skal vurdere norskdugleiken undervegs, for å sjå når eleven kan gå over.
+    nn: Når eleven går over til vanleg klasse, kan eleven framleis ha rett til særskild språkopplæring der. Skulen skal vurdere norskdugleiken undervegs, for å sjå når eleven kan gå over.
   paragrafer: [opplaeringslova/6-6, opplaeringslova/14-2, opplaeringsforskrifta/9-20]
   sporsmal:
     tekst:
@@ -269,7 +269,7 @@
     nn: |-
       Det er tre læreplanar for særskild språkopplæring. Grunnleggjande norsk og morsmål for språklege minoritetar gir ikkje karakter, og er ikkje kompetansegivande. Norsk for språklege minoritetar med kort butid (NOR09-05) gir karakter, og er kompetansegivande. Kva dette tyder for vurderinga, står i [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-uten-karakter&svar=elev.sprak).
 
-      Elevar med særskild språkopplæring kan velje å følgje læreplanen for kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv.
+      Elevar med særskild språkopplæring kan velje å følgje læreplanen for kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskule. Eleven vel sjølv.
 
       For vaksne i modulstrukturert opplæring er det ein eigen læreplan i norsk og samfunnskunnskap for språklege minoritetar (GNS02-01).
   ansvar:
@@ -325,10 +325,10 @@
     nn: Jamleg vurdering
   tekst:
     nb: Fylkeskommunen skal jevnlig vurdere om eleven kan norsk godt nok til å følge den vanlige opplæringen. Hvor ofte, vurderes for hver elev. Skolen tilpasser opplæringen også mens eleven får særskilt språkopplæring.
-    nn: Fylkeskommunen skal jamleg vurdere om eleven kan norsk godt nok til å følgje den vanlege opplæringa. Kor ofte, blir vurdert for kvar elev. Skolen tilpassar opplæringa også medan eleven får særskild språkopplæring.
+    nn: Fylkeskommunen skal jamleg vurdere om eleven kan norsk godt nok til å følgje den vanlege opplæringa. Kor ofte, blir vurdert for kvar elev. Skulen tilpassar opplæringa også medan eleven får særskild språkopplæring.
   ansvar:
     nb: Fylkeskommunen. I praksis vurderer skolen.
-    nn: Fylkeskommunen. I praksis vurderer skolen.
+    nn: Fylkeskommunen. I praksis vurderer skulen.
   frist:
     nb: Jevnlig. Ingen fast frist.
     nn: Jamleg. Inga fast frist.

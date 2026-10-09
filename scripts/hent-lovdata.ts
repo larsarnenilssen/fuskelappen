@@ -421,6 +421,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1] && pro
           id: d.id,
           kilde: d.kilde,
           kapitler: d.kapitler ? kapittelliste(d.kapitler) : null,
+          paragrafer: 'paragrafer' in d ? d.paragrafer : undefined,
           korttittel: d.korttittel,
           korttittelNn: 'korttittelNn' in d ? d.korttittelNn : undefined,
           malform: d.malform,

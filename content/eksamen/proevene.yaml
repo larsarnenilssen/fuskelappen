@@ -8,7 +8,7 @@
     nn: "Prøvene som sluttvurdering"
   tekst:
     nb: "Lærlinger og elever på Vg3 i skole avslutter med fag- eller svenneprøven og får fag- eller svennebrev. Praksisbrevkandidater tar praksisbrevprøven og får praksisbrev. Lærekandidater tar kompetanseprøven og får kompetansebevis. Kandidater for fagbrev på jobb og praksiskandidater tar også fag- eller svenneprøven. Fylkeskommunen har ansvaret for prøvene og skal gjøre kandidatene kjent med reglene."
-    nn: "Lærlingar og elevar på Vg3 i skole avsluttar med fag- eller sveineprøva og får fag- eller sveinebrev. Praksisbrevkandidatar tek praksisbrevprøva og får praksisbrev. Lærekandidatar tek kompetanseprøva og får kompetansebevis. Kandidatar for fagbrev på jobb og praksiskandidatar tek også fag- eller sveineprøva. Fylkeskommunen har ansvaret for prøvene og skal gjere kandidatane kjende med reglane."
+    nn: "Lærlingar og elevar på Vg3 i skule avsluttar med fag- eller sveineprøva og får fag- eller sveinebrev. Praksisbrevkandidatar tek praksisbrevprøva og får praksisbrev. Lærekandidatar tek kompetanseprøva og får kompetansebevis. Kandidatar for fagbrev på jobb og praksiskandidatar tek også fag- eller sveineprøva. Fylkeskommunen har ansvaret for prøvene og skal gjere kandidatane kjende med reglane."
   tabell:
     form: bokser
     kolonner:
@@ -17,7 +17,7 @@
     rader:
       - tittel: { nb: Fag- eller svenneprøve, nn: Fag- eller sveineprøve }
         celler:
-          - { tekst: { nb: "Lærlinger, elever på Vg3 i skole, kandidater for fagbrev på jobb og praksiskandidater.", nn: "Lærlingar, elevar på Vg3 i skole, kandidatar for fagbrev på jobb og praksiskandidatar." } }
+          - { tekst: { nb: "Lærlinger, elever på Vg3 i skole, kandidater for fagbrev på jobb og praksiskandidater.", nn: "Lærlingar, elevar på Vg3 i skule, kandidatar for fagbrev på jobb og praksiskandidatar." } }
           - { tekst: { nb: "Fag- eller svennebrev.", nn: "Fag- eller sveinebrev." } }
       - tittel: { nb: Praksisbrevprøve, nn: Praksisbrevprøve }
         celler:
@@ -70,7 +70,7 @@
       Kven som melder opp til prøva, kjem an på kvar kandidaten har fått opplæringa.
 
       - **Lærlingar og andre med læretid i bedrift:** Lærebedrifta melder opp til fylkeskommunen der kontrakten er godkjend, seinast to månader før kontraktstida er ute.
-      - **Elevar på Vg3 i skole:** Skolen melder opp til fylkeskommunen der skolen ligg.
+      - **Elevar på Vg3 i skule:** Skulen melder opp til fylkeskommunen der skulen ligg.
       - **Praksiskandidatar:** Melder seg sjølve innan fristen fylkeskommunen set, og betaler prøveavgift.
 
       Prøva blir som hovudregel halden før læretida er over, men tidlegast tre månader før. Ho blir halden i lærebedrifta der kandidaten har fått det meste av opplæringa, viss ikkje fylkeskommunen etter råd frå prøvenemnda bestemmer noko anna. Kandidaten må fullføre læretida for å få brevet.
@@ -90,7 +90,7 @@
     nn: "Prøvenemnda og prøva"
   tekst:
     nb: "Fylkeskommunen oppnevner prøvenemnder etter forslag fra yrkesopplæringsnemnda og partene i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og de skal som hovedregel ikke være knyttet til lærebedriften eller skolen. Prøvenemnda lager oppgaven og grunnlaget for vurderingen. Prøven starter med et møte der kandidaten får oppgaven, og skal vise at kandidaten kan planlegge, gjennomføre, vurdere og dokumentere arbeidet og begrunne løsningene. Prøvenemnda fører protokoll."
-    nn: "Fylkeskommunen nemner opp prøvenemnder etter framlegg frå yrkesopplæringsnemnda og partane i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og dei skal som hovudregel ikkje vere knytte til lærebedrifta eller skolen. Prøvenemnda lagar oppgåva og grunnlaget for vurderinga. Prøva startar med eit møte der kandidaten får oppgåva, og skal vise at kandidaten kan planleggje, gjennomføre, vurdere og dokumentere arbeidet og grunngi løysingane. Prøvenemnda fører protokoll."
+    nn: "Fylkeskommunen nemner opp prøvenemnder etter framlegg frå yrkesopplæringsnemnda og partane i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og dei skal som hovudregel ikkje vere knytte til lærebedrifta eller skulen. Prøvenemnda lagar oppgåva og grunnlaget for vurderinga. Prøva startar med eit møte der kandidaten får oppgåva, og skal vise at kandidaten kan planleggje, gjennomføre, vurdere og dokumentere arbeidet og grunngi løysingane. Prøvenemnda fører protokoll."
   paragrafer: [opplaeringsforskrifta/9-59, opplaeringsforskrifta/9-60, opplaeringsforskrifta/9-61]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-59 til § 9-61", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-59" }
@@ -178,7 +178,7 @@
       - tittel: { nb: Ny prøve, nn: Ny prøve }
         celler:
           - { tekst: { nb: "Kandidater som ikke besto første gang, og kandidater som ble vist bort.", nn: "Kandidatar som ikkje bestod første gongen, og kandidatar som vart viste bort." } }
-          - { tekst: { nb: "Lærebedriften melder opp, eller fylkeskommunen når opplæringen var i skole. Praksiskandidater melder seg selv tidligst seks måneder etter, og betaler ny prøveavgift.", nn: "Lærebedrifta melder opp, eller fylkeskommunen når opplæringa var i skole. Praksiskandidatar melder seg sjølve tidlegast seks månader etter, og betaler ny prøveavgift." } }
+          - { tekst: { nb: "Lærebedriften melder opp, eller fylkeskommunen når opplæringen var i skole. Praksiskandidater melder seg selv tidligst seks måneder etter, og betaler ny prøveavgift.", nn: "Lærebedrifta melder opp, eller fylkeskommunen når opplæringa var i skule. Praksiskandidatar melder seg sjølve tidlegast seks månader etter, og betaler ny prøveavgift." } }
       - tittel: { nb: Utsatt prøve, nn: Utsett prøve }
         celler:
           - { tekst: { nb: "Kandidater med dokumentert fravær på prøven.", nn: "Kandidatar med dokumentert fråvær på prøva." } }

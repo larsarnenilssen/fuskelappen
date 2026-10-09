@@ -31,7 +31,7 @@ export const manifest: Modulmanifest = {
         type: 'side' as const,
         tittel: begge('skolemiljo.kapittel12.tittel'),
         tekst: begge('skolemiljo.kapittel12.beskrivelse'),
-        stikkord: ['kapittel 12', 'skolemiljø', 'trygt og godt', 'mobbing', 'krenkelser', 'nulltoleranse', 'aktivitetsplikt', 'statsforvalteren', 'håndhevingsordningen', 'tvangsmulkt', 'fysisk skolemiljø', 'fysiske inngrep'],
+        stikkord: ['kapittel 12', 'skolemiljø', 'trygt og godt', 'mobbing', 'krenkelser', 'nulltoleranse', 'aktivitetsplikt', 'statsforvalteren', 'håndhevingsordningen', 'tvangsmulkt', 'fysisk skolemiljø', 'fysiske inngrep', 'meldeplikt', 'barnevernet', 'bekymringsmelding', 'avvergeplikt'],
         rute: kapittel12Rute,
         modul: 'skolemiljo',
       },

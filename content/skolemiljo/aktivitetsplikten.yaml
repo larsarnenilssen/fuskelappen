@@ -134,8 +134,8 @@
     nn: Etter kor alvorleg saka er, i nokre saker straks.
   fristKort: { nb: "Etter alvor", nn: "Etter alvor" }
   forklaring:
-    nb: Meldeplikten til rektor er noe annet enn meldeplikten til barnevernet. Skolen skal også gi foreldrene informasjon. Helsesykepleieren kan være bundet av taushetsplikten etter helsepersonelloven.
-    nn: Meldeplikta til rektor er noko anna enn meldeplikta til barnevernet. Skulen skal også gi foreldra informasjon. Helsesjukepleiaren kan vere bunden av teieplikta etter helsepersonellova.
+    nb: Meldeplikten til rektor er noe annet enn meldeplikten til barnevernet. Se [Hvem melder hva til hvem](#/skolemiljo/trygt-og-godt-skolemiljo?del=k12-meldeplikter). Skolen skal også gi foreldrene informasjon. Helsesykepleieren kan være bundet av taushetsplikten etter helsepersonelloven.
+    nn: Meldeplikta til rektor er noko anna enn meldeplikta til barnevernet. Sjå [Kven melder kva til kven](#/skolemiljo/trygt-og-godt-skolemiljo?del=k12-meldeplikter). Skulen skal også gi foreldra informasjon. Helsesjukepleiaren kan vere bunden av teieplikta etter helsepersonellova.
   paragrafer: [opplaeringslova/12-4, opplaeringslova/10-8]
   privatskole:
     tekst:

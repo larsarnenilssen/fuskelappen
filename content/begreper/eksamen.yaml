@@ -66,7 +66,7 @@
   tittel: { nb: "Utsatt eksamen", nn: "Utsett eksamen" }
   tekst:
     nb: "Elever og privatister som har dokumentert fravær på eksamen, har rett til utsatt eksamen ved første eksamen etter. Dokumentasjonen må vise at de var hindret, at det ikke kunne forutses og at de ikke kan lastes for det. Eleven melder seg selv til skolen. Går eleven ikke opp eller stryker, faller standpunktkarakteren bort."
-    nn: "Elevar og privatistar som har dokumentert fråvær på eksamen, har rett til utsett eksamen ved første eksamen etter. Dokumentasjonen må vise at dei var hindra, at det ikkje kunne føresjåast og at dei ikkje kan lastast for det. Eleven melder seg sjølv til skolen. Går eleven ikkje opp eller strykar, fell standpunktkarakteren bort."
+    nn: "Elevar og privatistar som har dokumentert fråvær på eksamen, har rett til utsett eksamen ved første eksamen etter. Dokumentasjonen må vise at dei var hindra, at det ikkje kunne føresjåast og at dei ikkje kan lastast for det. Eleven melder seg sjølv til skulen. Går eleven ikkje opp eller strykar, fell standpunktkarakteren bort."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-36", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-36" }
   kontrollert: null
@@ -141,7 +141,7 @@
   tittel: { nb: "Prøvenemnd", nn: "Prøvenemnd" }
   tekst:
     nb: "Prøvenemnda lager, gjennomfører og vurderer fag- og svenneprøven. Fylkeskommunen oppnevner den etter forslag fra yrkesopplæringsnemnda og partene i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og de skal som hovedregel ikke være fra lærebedriften eller skolen der kandidaten har fått opplæring."
-    nn: "Prøvenemnda lagar, gjennomfører og vurderer fag- og sveineprøva. Fylkeskommunen nemner henne opp etter framlegg frå yrkesopplæringsnemnda og partane i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og dei skal som hovudregel ikkje vere frå lærebedrifta eller skolen der kandidaten har fått opplæring."
+    nn: "Prøvenemnda lagar, gjennomfører og vurderer fag- og sveineprøva. Fylkeskommunen nemner henne opp etter framlegg frå yrkesopplæringsnemnda og partane i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og dei skal som hovudregel ikkje vere frå lærebedrifta eller skulen der kandidaten har fått opplæring."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-59 til § 9-61 og § 9-63", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-59" }
   kontrollert: null
@@ -171,7 +171,7 @@
   lenkeord: { nb: ["vitnemål", "kompetansebevis"], nn: ["vitnemål", "kompetansebevis"] }
   tekst:
     nb: "Vitnemål gis når eleven har bestått alle fag og eksamener i opplæringsløpet. Kompetansebevis gis når vilkårene for vitnemål eller fag- og svennebrev ikke er oppfylt, eller når eleven bare har hatt deler av et fag. Begge viser standpunkt- og eksamenskarakterer og fravær. Skolen skriver ut vitnemålet, og fylkeskommunen for lærlinger og privatister."
-    nn: "Vitnemål blir gitt når eleven har bestått alle fag og eksamenar i opplæringsløpet. Kompetansebevis blir gitt når vilkåra for vitnemål eller fag- og sveinebrev ikkje er oppfylte, eller når eleven berre har hatt delar av eit fag. Begge viser standpunkt- og eksamenskarakterar og fråvær. Skolen skriv ut vitnemålet, og fylkeskommunen for lærlingar og privatistar."
+    nn: "Vitnemål blir gitt når eleven har bestått alle fag og eksamenar i opplæringsløpet. Kompetansebevis blir gitt når vilkåra for vitnemål eller fag- og sveinebrev ikkje er oppfylte, eller når eleven berre har hatt delar av eit fag. Begge viser standpunkt- og eksamenskarakterar og fråvær. Skulen skriv ut vitnemålet, og fylkeskommunen for lærlingar og privatistar."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-46, § 9-51 og § 9-53", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-46" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-54", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-54" }
@@ -196,10 +196,10 @@
       melder opp elever til fag- eller svenneprøven, og praksiskandidater melder seg selv og betaler prøveavgift.
     nn: >-
       Oppmelding er å melde ein kandidat til eksamen eller prøve. Udir fastset fristane for oppmelding til eksamen.
-      Skolen melder opp elevane, men til ny, utsett og særskild eksamen melder eleven seg sjølv, til skolen.
+      Skulen melder opp elevane, men til ny, utsett og særskild eksamen melder eleven seg sjølv, til skulen.
       Privatistar melder seg sjølve der fylkeskommunen bestemmer, og betaler prøveavgift. Lærebedrifta melder opp
       lærlingar og kandidatar for fagbrev på jobb til eksamen, og alle med læretid i bedrift til fag- eller
-      sveineprøva, praksisbrevprøva eller kompetanseprøva, seinast to månader før kontraktstida er ute. Skolen
+      sveineprøva, praksisbrevprøva eller kompetanseprøva, seinast to månader før kontraktstida er ute. Skulen
       melder opp elevar til fag- eller sveineprøva, og praksiskandidatar melder seg sjølve og betaler prøveavgift.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-27", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }

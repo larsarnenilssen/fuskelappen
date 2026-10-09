@@ -33,7 +33,7 @@
     nn: Kommunen melder elevar som kan ha fortrinnsrett
   tekst:
     nb: Kommunen melder elever med omfattende behov for individuell tilrettelegging eller sterkt nedsatt funksjonsevne til fylkeskommunen, det året de fullfører grunnskolen. Eleven må samtykke.
-    nn: Kommunen melder elevar med omfattande behov for individuell tilrettelegging eller sterkt nedsett funksjonsevne til fylkeskommunen, det året dei fullfører grunnskolen. Eleven må samtykkje.
+    nn: Kommunen melder elevar med omfattande behov for individuell tilrettelegging eller sterkt nedsett funksjonsevne til fylkeskommunen, det året dei fullfører grunnskulen. Eleven må samtykkje.
   paragrafer: [opplaeringsforskrifta/4-21, opplaeringsforskrifta/4-22]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-21 tredje ledd og § 4-22 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-21" }
@@ -144,7 +144,7 @@
     nn: Søknader til skular med teiknspråk blir sende vidare
   tekst:
     nb: Fylkeskommunen sender søknaden til fylkeskommunen som eier skolen med opplæring i og på tegnspråk. Den melder tilbake om søkeren har fått plass.
-    nn: Fylkeskommunen sender søknaden til fylkeskommunen som eig skolen med opplæring i og på teiknspråk. Han melder tilbake om søkjaren har fått plass.
+    nn: Fylkeskommunen sender søknaden til fylkeskommunen som eig skulen med opplæring i og på teiknspråk. Han melder tilbake om søkjaren har fått plass.
   paragrafer: [opplaeringsforskrifta/4-11]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-11", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-11" }
