@@ -3,6 +3,7 @@
 // utforsk-lovtidend). lti-ikraft.html og lti-lov.html er laget etter malen til en ekte side, se kommentaren i filene.
 import { readFileSync } from 'node:fs';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { parse } from 'yaml';
 import {
   brukKunngjoringer,
   endringerFraNotater,
@@ -17,6 +18,7 @@ import {
   type Lovverkdokument,
   navnestamme,
   notaterIDokument,
+  notaterIUtvalg,
   oppdaterKommende,
   tolkIkraft,
 } from '../../scripts/lovdata/kommende.ts';
@@ -72,12 +74,23 @@ describe('notatene i datasettene', () => {
     expect(lesDepartementer(side('lov'))).toEqual([]);
   });
 
+  it('tar bare med notatene for paragrafene i utvalget når dokumentet har et utvalg av paragrafer', () => {
+    const notater = [
+      { nr: '37', endringer: [] },
+      { nr: '196', endringer: [] },
+    ];
+    expect(notaterIUtvalg(notater, ['196']).map((p) => p.nr)).toEqual(['196']);
+    expect(notaterIUtvalg(notater, undefined)).toEqual(notater);
+  });
+
   it('den lagrede filen følger skjemaet og har endringene i notatene i data/lovdata', () => {
     // Hentingen i Actions leser også notatene utenfor utvalget av kapitler og Lovtidend, så filen kan ha flere.
     const lagret = kommendeSkjema.parse(JSON.parse(readFileSync('data/lovdata/kommende.json', 'utf8')));
     const ider = new Set(lagret.endringer.map((e) => e.id));
     expect(endringerFraNotater(lovverk, lagret.lest).filter((e) => !ider.has(e.id))).toEqual([]);
-    expect(lagret.endringer.every((e) => LOVVERK.includes(e.dokument))).toBe(true);
+    // Endringene gjelder bare dokumenter i Lov og forskrift (content/lovverk.yaml), ikke andre lover i datasettet.
+    const iUtvalget = new Set((parse(readFileSync('content/lovverk.yaml', 'utf8')) as { dokumenter: { id: string }[] }).dokumenter.map((d) => d.id));
+    expect(lagret.endringer.filter((e) => !iUtvalget.has(e.dokument)).map((e) => e.dokument)).toEqual([]);
   });
 });
 
