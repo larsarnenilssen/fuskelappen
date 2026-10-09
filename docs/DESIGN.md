@@ -2,7 +2,7 @@
 
 Dagens standard for hele appen (fase 8b, eier 08.10.2026). Den bygger på de nyeste delene: sidekolonnen på forsiden, Kalender, Nyheter og Videregående i tall. Nye sider følger reglene her, og eldre sider løftes til dem i fase 8b.
 
-Godkjent av eier 08.10.2026 etter en skisse i testversjonen, som ble fjernet i oppryddingen (svarene står i `docs/arbeidsordrer/fase-8b-forslag.md`).
+Godkjent av eier 08.10.2026 etter en skisse i testversjonen, som ble fjernet i oppryddingen (svarene står i `docs/arkiv/arbeidsordrer/fase-8b-forslag.md`).
 
 Reglene i AGENTS.md under «Grensesnitt» gjelder fortsatt. Denne filen sier hvordan det skal se ut.
 

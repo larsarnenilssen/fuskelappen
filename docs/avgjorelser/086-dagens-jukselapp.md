@@ -1,6 +1,6 @@
 # 086 – Dagens jukselapp
 
-**Status:** Designet godkjent av eier 08.10.2026 (`docs/arbeidsordrer/fase-8-forslag.md`, runde 1–2).
+**Status:** Designet godkjent av eier 08.10.2026 (`docs/arkiv/arbeidsordrer/fase-8-forslag.md`, runde 1–2).
 
 **Kontekst:** Fase 8 skal gi ett faktum fra appen på forsiden: en morsomhet og en inngang til innholdet. Modulene skal bidra gjennom manifestet, som med fristene (avgjørelse 066). Faktaene skal komme fra innholdet og dataene appen alt har, uten eksterne kall, og startpakken skal ikke vokse.
 
@@ -14,7 +14,7 @@
 - **Fagene** kommer fra et utdrag som lages når appen bygges (`virtual:jukselappfag`): fagene som kobles til én årsramme i SFS 2213 vedlegg 1. Hele fagindeksen (1,2 MB) lastes ikke.
 - **Utvalget:** Dagene går på rundgang mellom modulene, så bare modulen som har dagen, laster innholdet sitt. Innenfor modulen går rundene gjennom alle faktaene før noe gjentas (et primtall som hopp). Faktumet er det samme hele dagen og likt for alle med samme fylke og skole, og ingenting lagres. Knappen «Ny jukselapp» går ett steg videre. Moduler uten fakta for brukeren hoppes over.
 - **Fylke og skole:** Fakta med `gyldighet` for et fylke eller en skole vises bare når det er valgt.
-- **Ikke med (eier 08.10.2026):** kompetansemålene, skolenes og fylkenes egne regler fra Lovdata, datoene i kalenderen og eksamensdatoene, nyhetene, opplæringskontorene, kodelistene fra VIGO og lenkene til fylkenes sider. Se vurderingen i `docs/arbeidsordrer/fase-8-forslag.md`.
+- **Ikke med (eier 08.10.2026):** kompetansemålene, skolenes og fylkenes egne regler fra Lovdata, datoene i kalenderen og eksamensdatoene, nyhetene, opplæringskontorene, kodelistene fra VIGO og lenkene til fylkenes sider. Se vurderingen i `docs/arkiv/arbeidsordrer/fase-8-forslag.md`.
 - **Kontroll:** Innhold som ikke er kontrollert, vises, med brukserklæringen som forbehold (avgjørelse 016, eier 08.10.2026).
 - **Lasting:** Kortet, stilene (`jukselapp.css`, avgjørelse 082) og utvalget lastes når jukselappen vises. Er den av, lastes ingenting.
 

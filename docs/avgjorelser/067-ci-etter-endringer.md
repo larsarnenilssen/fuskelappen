@@ -18,3 +18,5 @@
 - En versjons-PR der `CHANGELOG.md` har fått mer enn overskriften, kjører alt. Det er strengere enn nødvendig, men versjons-PR-en skal bare ha versjonen.
 - `main` krever i dag ingen sjekk før fletting. Skal en sjekk kreves, er det «Test og bygg», som eier slår på under Settings → Branches (eller Rules). De andre jobbene kan være hoppet over og skal ikke kreves hver for seg.
 - Leser en ny test et dokument under `docs/`, må det føres opp i `TESTEDE_DOKUMENTER` i `scripts/ci/endringer.ts`. Testen i `tests/unit/ci-endringer.test.ts` finner dokumenter som leses med `join(rot, '….md')`.
+
+**Endret 09.10.2026:** Avgjørelsene (`docs/avgjorelser/`) gir `rask`, ikke `ingen`, fordi en enhetstest sjekker at oversikten over dem (`docs/avgjorelser/README.md`) er oppdatert. Arkivet (`docs/arkiv/`), `DRIFT.md` og skillene under `.claude/skills/` er dokumentasjon og gir `ingen` (avgjørelse 105).

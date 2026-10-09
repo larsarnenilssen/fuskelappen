@@ -12,7 +12,7 @@ Står en knapp ikke der veiledningen sier, eller GitHub spør om noe som ikke st
 
 Fra 01.10.2026 fletter Claude PR-ene på dine vegne når CI er grønn og det ikke er konflikter. Du får lenken og en kort oppsummering. Vil du se på en PR før den flettes, så si fra. Stegene under gjelder når du fletter selv, og for endringsforslagene fra kildesjekken (punkt 6).
 
-Når Claude er ferdig med en fase, får du en lenke til et endringsforslag («pull request»).
+Når Claude er ferdig med en oppgave, får du en lenke til et endringsforslag («pull request»). Hvordan appen holdes ved like, står i `DRIFT.md`.
 
 1. Åpne lenken.
 2. Se nederst på siden. Står det et **grønt hakemerke** og «All checks have passed», er alle automatiske tester bestått. Står det et rødt kryss, skal du ikke slå sammen. Si fra til Claude.
@@ -425,3 +425,26 @@ Brukerne melder inn lokale regler på e-post til jukselappen.app@gmail.com, med 
 4. **Publisering skjer av seg selv,** uten ny versjon (arbeidsflyten «Lokale regler»). Brukerne får regelen neste gang de åpner appen. Den som meldte den inn, får beskjed i Innstillinger, og kopien deres byttes ut.
 
 Er en godkjent regel feil eller endret, kan brukerne melde inn en endring fra regelen («Feil eller endret?»). E-posten har da `endrer: LR-XXXX`, og den nye regelen erstatter den gamle når du godkjenner den.
+
+## 18. Beredskap: det som ikke står i repoet
+
+Appen og jobbene ligger i repoet, men noe hviler på kontoer og innstillinger bare du har. Se over dette et par ganger i året, for eksempel ved kontrollrundene i mai og august.
+
+**Domenet jukselappen.no hos Webhuset.** Automatisk fornyelse skal være på, og betalingskortet hos Webhuset må være gyldig. Går domenet ut, virker ikke appen på adressen, og andre kan ta navnet. Sjekk når kortet utløper, og bytt det i god tid. DNS-oppsettet står i punkt 16.
+
+**Tofaktor på GitHub.** Gjenopprettingskodene for tofaktor skal være lagret trygt, for eksempel i en passordbehandler eller på papir et sikkert sted, ikke i repoet eller i en e-post. Mister du telefonen uten kodene, kan du miste tilgangen til kontoen og repoet.
+
+**Andre kontoer.** E-postkontoen for tilbakemeldinger og lokale regler (punkt 17) og Claude-abonnementet. Appen virker uten dem, men innmeldinger kommer ikke fram, og Claude kan ikke gjøre endringer.
+
+**Innstillingene på GitHub.** Disse er satt under **Settings** i repoet og står ikke i filene:
+
+- **Ruleset for `main`** (Rules → Rulesets): hindrer at `main` slettes eller skrives over med force push.
+- **Actions kan lage PR-er** (Actions → General → Workflow permissions → «Allow GitHub Actions to create and approve pull requests»). Endringsforslagene fra kildesjekken og godkjenningen trenger det.
+- **Dependabot alerts og Dependabot security updates** (Code security): varsel og PR når en pakke appen bruker, har et kjent sikkerhetshull.
+- **Pages** med kilden GitHub Actions, domenet jukselappen.no og Enforce HTTPS (punkt 2 og 16).
+
+Endrer du en av dem, si fra til Claude, så det skrives her.
+
+**Hvis du er borte en periode.** Appen lever videre som en statisk side, og en installert app virker også uten nett. Jobbene går som før: kildesjekken hver mandag og nyhetene hver time, og lovteksten, dataene og nyhetene kommer ut uten ny versjon når testene består. Feiler testene, beholdes forrige data. Det kommer ingen nye versjoner, og ingenting rettes før du eller Claude ser på det. Varslene kommer til deg som saker og e-post, med påminnelser til de er løst, og ingen andre får dem. Står kildesjekken stille i 14 dager, viser appen at kildestatusen er utdatert. Har repoet ingen aktivitet på 60 dager, kan GitHub slå av de planlagte jobbene. Kildesjekkens commit hver mandag hindrer det så lenge den går. Er en jobb slått av, slår du den på igjen under **Actions** (velg jobben → **Enable workflow**).
+
+**Om noen andre skal overta.** Appen er et vanlig oppsett med TypeScript, Vite og Preact. En utvikler kan starte med `README.md`, `AGENTS.md` og `DRIFT.md`. Tilgang gir du under **Settings → Collaborators**.

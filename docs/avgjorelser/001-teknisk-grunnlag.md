@@ -1,6 +1,6 @@
 # 001 – Teknisk grunnlag og versjoner
 
-**Kontekst:** OPPDRAG.md kap. 2 bestemmer TypeScript, Vite, Preact, Vitest, Playwright, axe-core, MiniSearch, vite-plugin-pwa og zod (3.5). Versjonene må velges.
+**Kontekst:** docs/arkiv/OPPDRAG.md kap. 2 bestemmer TypeScript, Vite, Preact, Vitest, Playwright, axe-core, MiniSearch, vite-plugin-pwa og zod (3.5). Versjonene må velges.
 
 **Valg:**
 - Node 22 (LTS), Vite 8, Preact 10, Vitest 5, Playwright 1.63, vite-plugin-pwa 1.3 med workbox-window, zod 4, MiniSearch 7.

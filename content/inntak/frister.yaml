@@ -1,5 +1,5 @@
 # Fristene ved inntak gjennom året (fase 5, pakke 2, avgjørelse 046). Egne ord. Godkjent i forslaget av eier
-# 03.10.2026 (docs/arbeidsordrer/fase-5-forslag.md). Vestland-fristene står i frister-vestland.yaml.
+# 03.10.2026 (docs/arkiv/arbeidsordrer/fase-5-forslag.md). Vestland-fristene står i frister-vestland.yaml.
 # grupper: elever (søkere med ungdomsrett), voksne, fortrinnsrett (fortrinnsrett og individuell behandling).
 - id: fr-voksne-lopende
   type: frist

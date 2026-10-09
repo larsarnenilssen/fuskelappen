@@ -47,6 +47,7 @@
     "kilder:varsle": "tsx scripts/kilder/varsle.ts",
     "kilder:forslag": "tsx scripts/kilder/lag-forslag.ts",
     "kilder:dokumenter": "tsx scripts/lag-kilder-md.ts",
+    "avgjorelser": "tsx scripts/lag-avgjorelser.ts",
     "kontroll:rapport": "tsx scripts/kontroll/rapport.ts",
     "kontroll:godkjenn": "tsx scripts/kilder/godkjenn.ts",
     "lag:ikoner": "tsx scripts/lag-ikoner.ts",

@@ -1,6 +1,6 @@
 # 076 – Skolemiljø: aktivitetsplikten som veiviser og skolereglene i fylket
 
-**Kontekst:** Fase 7 (`OPPDRAG.md` kapittel 4 og `docs/arbeidsordrer/fase-7.md`): aktivitetsplikten trinn for trinn, skolereglene med reaksjoner og saksbehandling som fylkesinnhold, og plass til skolens egne regler. Kategorien «Skolemiljø» på forsiden hadde ingen moduler. Dette er mockupen til eier, runde 3 i `docs/arbeidsordrer/fase-7-forslag.md`.
+**Kontekst:** Fase 7 (`docs/arkiv/OPPDRAG.md` kapittel 4 og `docs/arkiv/arbeidsordrer/fase-7.md`): aktivitetsplikten trinn for trinn, skolereglene med reaksjoner og saksbehandling som fylkesinnhold, og plass til skolens egne regler. Kategorien «Skolemiljø» på forsiden hadde ingen moduler. Dette er mockupen til eier, runde 3 i `docs/arkiv/arbeidsordrer/fase-7-forslag.md`.
 
 **Valg:**
 - **Ny modul `skolemiljo`** i kategorien «Skolemiljø», med oversikt, veiviser og siden «Skoleregler» (`#/skolemiljo/skoleregler`). Kategorien får tre bokser på forsiden: Aktivitetsplikten, Skoleregler og Elevundersøkelsen (avgjørelse 077).

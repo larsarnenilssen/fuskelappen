@@ -72,7 +72,7 @@ Status beregnes automatisk (`beregnStatus()` i `src/core/innhold/status.ts`):
 ## Regelsett (`rules/<regelverk>/*.yaml`)
 
 ```yaml
-# Eksempel på formatet (fra OPPDRAG.md). Verdiene legges inn og kontrolleres i fase 1.
+# Eksempel på formatet (fra docs/arkiv/OPPDRAG.md). Verdiene legges inn og kontrolleres i fase 1.
 id: sfs2213-2026-2027
 regelverk: sfs2213
 gyldig_fra: 2026-01-01

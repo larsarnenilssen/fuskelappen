@@ -1,8 +1,8 @@
 # 093 – Lokale regler fra brukerne
 
-**Status:** Godkjent av eier 08.10.2026 (svarene på L1–L7 i `docs/arbeidsordrer/fase-9-forslag.md`).
+**Status:** Godkjent av eier 08.10.2026 (svarene på L1–L7 i `docs/arkiv/arbeidsordrer/fase-9-forslag.md`).
 
-**Kontekst:** Fase 9 skal la brukerne legge inn regler for fylket eller skolen sin, i tillegg til de nasjonale eller i stedet for en nasjonal verdi. Regelen gjelder med en gang for brukeren, og eier kan godkjenne den, så den gjelder for alle som har valgt fylket eller skolen (`OPPDRAG.md`, fase 9). Appen gjør ingen eksterne kall, og repoet er offentlig.
+**Kontekst:** Fase 9 skal la brukerne legge inn regler for fylket eller skolen sin, i tillegg til de nasjonale eller i stedet for en nasjonal verdi. Regelen gjelder med en gang for brukeren, og eier kan godkjenne den, så den gjelder for alle som har valgt fylket eller skolen (`docs/arkiv/OPPDRAG.md`, fase 9). Appen gjør ingen eksterne kall, og repoet er offentlig.
 
 **Valg:**
 - **Hva som kan legges inn (L1):** Brukeren velger først temaet (Arbeidstid, Skoleregler, Fraværsgrensen, Eksamen eller Inntak), så hva som endres:

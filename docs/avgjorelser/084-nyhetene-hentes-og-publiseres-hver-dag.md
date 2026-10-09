@@ -1,6 +1,6 @@
 # 084 – Nyhetene hentes og publiseres hver dag
 
-**Status:** Godkjent av eier 07.10.2026 (svar P1 i docs/arbeidsordrer/fase-7b-forslag.md).
+**Status:** Godkjent av eier 07.10.2026 (svar P1 i docs/arkiv/arbeidsordrer/fase-7b-forslag.md).
 
 **Kontekst:** Fase 7b skal vise siste nytt fra myndighetene, fagpressen og organisasjonene. Nyheter er ferskvare. Dataene fra de andre kildene går via den ukentlige kildesjekken og kontrollsaken (avgjørelse 020 og 063), og en ny versjon av appen krever tag. Eier har sagt ja til at nyhetsfilen publiseres daglig uten PR når den passer skjemaet (06.10.2026). Appen gjør ingen eksterne kall (AGENTS.md).
 
