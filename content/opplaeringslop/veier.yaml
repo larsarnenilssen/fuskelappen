@@ -661,7 +661,7 @@
     - side: { tittel: { nb: "Ny eller utsatt prøve", nn: "Ny eller utsett prøve" }, rute: /eksamen/fag-og-svenneproven }
       vilkar:
         nb: "Rett til å bli meldt opp til én ny prøve. Lærebedriften melder opp den som har hatt læretid i bedrift, og fylkeskommunen den som har hatt opplæring i skole. Med dokumentert fravær er det utsatt prøve, så snart som mulig."
-        nn: "Rett til å bli meld opp til éi ny prøve. Lærebedrifta melder opp den som har hatt læretid i bedrift, og fylkeskommunen den som har hatt opplæring i skole. Med dokumentert fråvær er det utsett prøve, så snart som mogleg."
+        nn: "Rett til å bli meld opp til éi ny prøve. Lærebedrifta melder opp den som har hatt læretid i bedrift, og fylkeskommunen den som har hatt opplæring i skule. Med dokumentert fråvær er det utsett prøve, så snart som mogleg."
       kilder:
         - { id: opplaeringsforskrifta, punkt: "§ 9-66 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-66" }
         - { id: opplaeringsforskrifta, punkt: "§ 9-67", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-67" }

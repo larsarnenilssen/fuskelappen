@@ -233,3 +233,12 @@ paralleller:
     til: privatskoleforskrifta/7-8
     tittel: "Klage på gjennomføringa av munnleg eksamen og eksamen som ikkje berre er skriftleg eller munnleg"
     lik: true
+  # Lagt til 09.10.2026: kortet om oppfølging av fravær og begrepene om kontaktlærer og politiattest viser til dem.
+  - fra: opplaeringsforskrifta/11-1
+    til: privatskoleforskrifta/8-1
+    tittel: "Foreldremøte og foreldresamtale"
+    lik: true
+  - fra: opplaeringsforskrifta/12-15
+    til: privatskoleforskrifta/10-1
+    tittel: "Politiattest ved tilsetjing"
+    lik: true

@@ -19,7 +19,7 @@
     nn: Samtale om utviklinga
   tekst:
     nb: Eleven, og den som har læretid i bedrift, har rett til minst én samtale i halvåret med kontaktlæreren eller instruktøren om utviklingen sin. Skolen dokumenterer fraværet hvert halvår.
-    nn: Eleven, og den som har læretid i bedrift, har rett til minst éin samtale i halvåret med kontaktlæraren eller instruktøren om utviklinga si. Skolen dokumenterer fråværet kvart halvår.
+    nn: Eleven, og den som har læretid i bedrift, har rett til minst éin samtale i halvåret med kontaktlæraren eller instruktøren om utviklinga si. Skulen dokumenterer fråværet kvart halvår.
   paragrafer: [opplaeringsforskrifta/9-6, opplaeringsforskrifta/9-9]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-6 første ledd og § 9-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
@@ -187,14 +187,14 @@
   lenker: [/begreper/halvarsvurdering]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
-  naar: { nb: Ved slutten av skoleåret, nn: Ved slutten av skoleåret }
+  naar: { nb: Ved slutten av skoleåret, nn: Ved slutten av skuleåret }
   grupper: [elever, laerlinger]
   tittel:
     nb: Halvårsvurdering i fag som fortsetter
     nn: Halvårsvurdering i fag som held fram
   tekst:
     nb: I fag som fortsetter neste skoleår, får eleven halvårsvurdering ved slutten av skoleåret i stedet for standpunktkarakter.
-    nn: I fag som held fram neste skoleår, får eleven halvårsvurdering ved slutten av skoleåret i staden for standpunktkarakter.
+    nn: I fag som held fram neste skuleår, får eleven halvårsvurdering ved slutten av skuleåret i staden for standpunktkarakter.
   paragrafer: [opplaeringsforskrifta/9-13]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-13 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
@@ -238,10 +238,10 @@
   grupper: [elever]
   tittel:
     nb: Skolene melder opp til høsteksamen
-    nn: Skolane melder opp til hausteksamen
+    nn: Skulane melder opp til hausteksamen
   tekst:
     nb: Skolen melder opp elevene til eksamen, også til ny, utsatt og særskilt eksamen, som holdes om høsten. Eleven må selv melde seg til skolen.
-    nn: Skolen melder opp elevane til eksamen, også til ny, utsett og særskild eksamen, som blir haldne om hausten. Eleven må sjølv melde seg til skolen.
+    nn: Skulen melder opp elevane til eksamen, også til ny, utsett og særskild eksamen, som blir haldne om hausten. Eleven må sjølv melde seg til skulen.
   paragrafer: [opplaeringsforskrifta/9-27]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-27 første til tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
@@ -356,10 +356,10 @@
   grupper: [elever, privatister]
   tittel:
     nb: Skolene registrerer klager på høsteksamen
-    nn: Skolane registrerer klager på hausteksamen
+    nn: Skulane registrerer klager på hausteksamen
   tekst:
     nb: Siste dag for skolene og fylkeskommunene til å registrere klagene på skriftlig eksamen.
-    nn: Siste dag for skolane og fylkeskommunane til å registrere klagene på skriftleg eksamen.
+    nn: Siste dag for skulane og fylkeskommunane til å registrere klagene på skriftleg eksamen.
   paragrafer: [opplaeringsforskrifta/10-7]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
@@ -402,10 +402,10 @@
   grupper: [elever]
   tittel:
     nb: Skolene melder opp til våreksamen
-    nn: Skolane melder opp til våreksamen
+    nn: Skulane melder opp til våreksamen
   tekst:
     nb: Skolen melder opp alle elever i fag som avsluttes med eksamen. Etter fristen går oppmeldingen tjenestevei til fylkeskommunen.
-    nn: Skolen melder opp alle elevar i fag som blir avslutta med eksamen. Etter fristen går oppmeldinga tenesteveg til fylkeskommunen.
+    nn: Skulen melder opp alle elevar i fag som blir avslutta med eksamen. Etter fristen går oppmeldinga tenesteveg til fylkeskommunen.
   paragrafer: [opplaeringsforskrifta/9-27]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-27 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
@@ -565,10 +565,10 @@
   grupper: [elever, privatister]
   tittel:
     nb: Skolene registrerer klager på våreksamen
-    nn: Skolane registrerer klager på våreksamen
+    nn: Skulane registrerer klager på våreksamen
   tekst:
     nb: Siste dag for skolene og fylkeskommunene til å registrere klagene på skriftlig eksamen.
-    nn: Siste dag for skolane og fylkeskommunane til å registrere klagene på skriftleg eksamen.
+    nn: Siste dag for skulane og fylkeskommunane til å registrere klagene på skriftleg eksamen.
   paragrafer: [opplaeringsforskrifta/10-7]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }

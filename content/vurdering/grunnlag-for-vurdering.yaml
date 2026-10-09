@@ -6,7 +6,7 @@
   tittel: { nb: Grunnlag for vurdering, nn: Grunnlag for vurdering }
   tekst:
     nb: "Kan eleven få karakter i faget? Veiviseren går gjennom læreplanen, fritak, fravær og grunnlaget for karakter, og hva skolen må gjøre når eleven står i fare for å ikke få karakter."
-    nn: "Kan eleven få karakter i faget? Vegvisaren går gjennom læreplanen, fritak, fråvær og grunnlaget for karakter, og kva skolen må gjere når eleven står i fare for ikkje å få karakter."
+    nn: "Kan eleven få karakter i faget? Vegvisaren går gjennom læreplanen, fritak, fråvær og grunnlaget for karakter, og kva skulen må gjere når eleven står i fare for ikkje å få karakter."
   start: vu-start
   farge: rav
   rekkefolge: 20
@@ -266,10 +266,10 @@
     nn: "Fritak i sidemålet"
   tekst:
     nb: "Eleven har rett til fritak fra vurdering med karakter i sidemålet hvis eleven har vansker med å lære begge skriftspråkene på grunn av dokumentert sykdom, skade eller dysfunksjon, ikke har gått i norsk grunnskole på 8.–10. trinn, har hatt særskilt språkopplæring eller har gått på en godkjent internasjonal eller utenlandsk skole i Norge. Elever med individuelt tilrettelagt opplæring får fritaket hvis de ber om det."
-    nn: "Eleven har rett til fritak frå vurdering med karakter i sidemålet dersom eleven har vanskar med å lære begge skriftspråka på grunn av dokumentert sjukdom, skade eller dysfunksjon, ikkje har gått i norsk grunnskole på 8.–10. trinn, har hatt særskild språkopplæring eller har gått på ein godkjend internasjonal eller utanlandsk skole i Noreg. Elevar med individuelt tilrettelagd opplæring får fritaket dersom dei ber om det."
+    nn: "Eleven har rett til fritak frå vurdering med karakter i sidemålet dersom eleven har vanskar med å lære begge skriftspråka på grunn av dokumentert sjukdom, skade eller dysfunksjon, ikkje har gått i norsk grunnskule på 8.–10. trinn, har hatt særskild språkopplæring eller har gått på ein godkjend internasjonal eller utanlandsk skule i Noreg. Elevar med individuelt tilrettelagd opplæring får fritaket dersom dei ber om det."
   ansvar:
     nb: "Skolen eller fylkeskommunen som skriver ut vitnemålet. Klage går til statsforvalteren."
-    nn: "Skolen eller fylkeskommunen som skriv ut vitnemålet. Klage går til statsforvaltaren."
+    nn: "Skulen eller fylkeskommunen som skriv ut vitnemålet. Klage går til statsforvaltaren."
   forklaring:
     nb: "Ved dokumentert sykdom, skade eller dysfunksjon må dokumentasjonen vise sammenhengen mellom vanskene og det å lære begge skriftspråkene. At eleven har dysleksi, er ikke nok alene. Eleven trenger ikke ligge an til karakteren 1. Med fritak har eleven bare én eksamensdag i norsk hovedmål."
     nn: "Ved dokumentert sjukdom, skade eller dysfunksjon må dokumentasjonen vise samanhengen mellom vanskane og det å lære begge skriftspråka. At eleven har dysleksi, er ikkje nok åleine. Eleven treng ikkje liggje an til karakteren 1. Med fritak har eleven berre éin eksamensdag i norsk hovudmål."
@@ -337,7 +337,7 @@
     nn: "Fråvær i faget"
   tekst:
     nb: "En elev som har fravær i mer enn 10 prosent av årstimetallet i faget, kan ikke få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i et fag som fortsetter. Fravær som er dokumentert med grunnene i § 9-8 andre ledd, for eksempel sykdom etter at grensen er nådd, velferd eller lovpålagt oppmøte, teller ikke. Grensen regnes for hvert skoleår, og kan ikke rundes ned. Grensen i faget i timer og økter står i [kalkulatoren for fraværsgrensen](#/vurdering/fravaer)."
-    nn: "Ein elev som har fråvær i meir enn 10 prosent av årstimetalet i faget, kan ikkje få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i § 9-8 andre ledd, til dømes sjukdom etter at grensa er nådd, velferd eller lovpålagt oppmøte, tel ikkje. Grensa blir rekna for kvart skoleår, og kan ikkje rundast ned. Grensa i faget i timar og økter står i [kalkulatoren for fråværsgrensa](#/vurdering/fravaer)."
+    nn: "Ein elev som har fråvær i meir enn 10 prosent av årstimetalet i faget, kan ikkje få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skuleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i § 9-8 andre ledd, til dømes sjukdom etter at grensa er nådd, velferd eller lovpålagt oppmøte, tel ikkje. Grensa blir rekna for kvart skuleår, og kan ikkje rundast ned. Grensa i faget i timar og økter står i [kalkulatoren for fråværsgrensa](#/vurdering/fravaer)."
   paragrafer: [opplaeringsforskrifta/9-8]
   sporsmal:
     tekst:
@@ -422,7 +422,7 @@
     nn: "Ein elev kan ikkje miste karakteren på grunn av fråvær utan å ha fått skriftleg varsel på førehand. Varselet blir gitt straks det er fare for at eleven ikkje får karakter, til dømes når fråværet nærmar seg 10 prosent, og til foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sjølv om fråværsgrensa er overskriden."
   ansvar:
     nb: "Skolen, på vegne av fylkeskommunen."
-    nn: "Skolen, på vegner av fylkeskommunen."
+    nn: "Skulen, på vegner av fylkeskommunen."
   dokumentasjon:
     nb: "Skriftlig varsel med dato, om fare for IV på grunn av fravær."
     nn: "Skriftleg varsel med dato, om fare for IV på grunn av fråvær."
@@ -464,7 +464,7 @@
     nn: "Er det tvil om faglæraren har grunnlag for karakter, skal eleven varslast skriftleg straks, og foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sett på det grunnlaget faglæraren har."
   ansvar:
     nb: "Skolen, på vegne av fylkeskommunen."
-    nn: "Skolen, på vegner av fylkeskommunen."
+    nn: "Skulen, på vegner av fylkeskommunen."
   dokumentasjon:
     nb: "Skriftlig varsel med dato, om fare for IV fordi grunnlaget for vurdering mangler."
     nn: "Skriftleg varsel med dato, om fare for IV fordi grunnlaget for vurdering manglar."
@@ -502,7 +502,7 @@
     nn: "Karakter utan varsel"
   tekst:
     nb: "Er eleven ikke varslet skriftlig i forkant, skal eleven få karakter. Det gjelder også når fraværsgrensen er overskredet, og når grunnlaget er tynt. Faglæreren setter karakteren ut fra kompetansemålene og det grunnlaget som finnes. Opphever klageinstansen et vedtak om IV, og eleven ikke var varslet, skal skolen sette karakter."
-    nn: "Er eleven ikkje varsla skriftleg på førehand, skal eleven få karakter. Det gjeld også når fråværsgrensa er overskriden, og når grunnlaget er tynt. Faglæraren set karakteren ut frå kompetansemåla og det grunnlaget som finst. Opphevar klageinstansen eit vedtak om IV, og eleven ikkje var varsla, skal skolen setje karakter."
+    nn: "Er eleven ikkje varsla skriftleg på førehand, skal eleven få karakter. Det gjeld også når fråværsgrensa er overskriden, og når grunnlaget er tynt. Faglæraren set karakteren ut frå kompetansemåla og det grunnlaget som finst. Opphevar klageinstansen eit vedtak om IV, og eleven ikkje var varsla, skal skulen setje karakter."
   ansvar:
     nb: "Faglæreren setter karakteren."
     nn: "Faglæraren set karakteren."

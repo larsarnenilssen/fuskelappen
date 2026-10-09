@@ -40,7 +40,7 @@
   tittel: { nb: Overordnet del, nn: Overordna del }
   tekst:
     nb: Overordnet del – verdier og prinsipper for grunnopplæringen – er den delen av læreplanverket som utdyper verdigrunnlaget i formålsparagrafen og prinsippene for opplæringen. Den har tre kapitler om verdigrunnlaget, om læring, utvikling og danning og om skolens praksis. Overordnet del gjelder hele grunnopplæringen, også opplæring i lærebedrift, og alle som arbeider i opplæringen, skal la den prege planleggingen og gjennomføringen. Den er fastsatt ved kongelig resolusjon med hjemmel i opplæringsloven § 1-4.
-    nn: Overordna del – verdiar og prinsipp for grunnopplæringa – er den delen av læreplanverket som utdjupar verdigrunnlaget i formålsparagrafen og prinsippa for opplæringa. Ho har tre kapittel om verdigrunnlaget, om læring, utvikling og danning og om praksisen i skolen. Overordna del gjeld heile grunnopplæringa, også opplæring i lærebedrift, og alle som arbeider i opplæringa, skal la henne prege planlegginga og gjennomføringa. Ho er fastsett ved kongeleg resolusjon med heimel i opplæringslova § 1-4.
+    nn: Overordna del – verdiar og prinsipp for grunnopplæringa – er den delen av læreplanverket som utdjupar verdigrunnlaget i formålsparagrafen og prinsippa for opplæringa. Ho har tre kapittel om verdigrunnlaget, om læring, utvikling og danning og om praksisen i skulen. Overordna del gjeld heile grunnopplæringa, også opplæring i lærebedrift, og alle som arbeider i opplæringa, skal la henne prege planlegginga og gjennomføringa. Ho er fastsett ved kongeleg resolusjon med heimel i opplæringslova § 1-4.
   kilder:
     - { id: udir-overordnet-del, punkt: Om overordnet del, url: "https://www.udir.no/lk20/overordnet-del/om-overordnet-del/" }
   kontrollert: null
@@ -166,7 +166,7 @@
   lenkeord: { nb: ["årstimetall", "årstime"], nn: ["årstimetal", "årstimetall", "årstime"] }
   tekst:
     nb: Årstimetallet er antallet timer et fag har i løpet av et skoleår på et trinn, regnet i 60-minutters enheter. Det står i fag- og timefordelingen og under Timetall i læreplanen. Fraværsgrensen på 10 prosent regnes av årstimetallet i faget. Årstimetallet er noe annet enn årsrammen i SFS 2213, som er antallet undervisningstimer i faget som utgjør en hel stilling for læreren.
-    nn: Årstimetalet er talet på timar eit fag har i løpet av eit skoleår på eit trinn, rekna i 60-minutts einingar. Det står i fag- og timefordelinga og under Timetal i læreplanen. Fråværsgrensa på 10 prosent blir rekna av årstimetalet i faget. Årstimetalet er noko anna enn årsramma i SFS 2213, som er talet på undervisningstimar i faget som utgjer ei heil stilling for læraren.
+    nn: Årstimetalet er talet på timar eit fag har i løpet av eit skuleår på eit trinn, rekna i 60-minutts einingar. Det står i fag- og timefordelinga og under Timetal i læreplanen. Fråværsgrensa på 10 prosent blir rekna av årstimetalet i faget. Årstimetalet er noko anna enn årsramma i SFS 2213, som er talet på undervisningstimar i faget som utgjer ei heil stilling for læraren.
   kilder:
     - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 1.2 60-minutters enheter", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.260-minutters-enheter/" }
     - { id: udir-lk20, punkt: "Læreplan i norsk (NOR01‑08), Timetall", url: "https://www.udir.no/lk20/nor01-08/timetall" }

@@ -4,10 +4,10 @@
   type: forklaring
   tittel:
     nb: "Skoleåret i et fag"
-    nn: "Skoleåret i eit fag"
+    nn: "Skuleåret i eit fag"
   tekst:
     nb: "Underveisvurderingen går hele året. Halvårsvurderingen gis midt i opplæringsperioden, og ved slutten av skoleåret når faget fortsetter neste år. Standpunktkarakteren settes så sent som mulig, og senest dagen før sensur når eleven har eksamen i faget. Datoene for eksamen fastsetter Udir hvert år."
-    nn: "Undervegsvurderinga går heile året. Halvårsvurderinga blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når faget held fram neste år. Standpunktkarakteren blir sett så seint som mogleg, og seinast dagen før sensur når eleven har eksamen i faget. Datoane for eksamen fastset Udir kvart år."
+    nn: "Undervegsvurderinga går heile året. Halvårsvurderinga blir gitt midt i opplæringsperioden, og ved slutten av skuleåret når faget held fram neste år. Standpunktkarakteren blir sett så seint som mogleg, og seinast dagen før sensur når eleven har eksamen i faget. Datoane for eksamen fastset Udir kvart år."
   paragrafer: [opplaeringsforskrifta/9-13, opplaeringsforskrifta/9-16]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-13 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }

@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Kompetansekrav i begrepene om ansettelse:** «Krav for ansettelse i lærerstilling», «Relevant kompetanse i undervisningsfag», «Kvalifikasjonsprinsippet» og «Politiattest». «Midlertidig ansettelse» forklarer nå også reglene i opplæringslova (ansettelse på vilkår og til 31. juli).
+- **Skolen skal følge opp alt fravær:** nytt kort på fraværssiden om oppfølgingsplikten i opplæringslova § 10-6.
+- **Hvem melder hva til hvem:** nytt kort på siden om skolemiljøet som samler meldepliktene (til rektor, ved krenkelser fra ansatte, etter fysiske inngrep og til barnevernet), avvergeplikten og forholdet til taushetsplikten.
+- **Gratisprinsippet:** nytt begrep om hva elevene kan og ikke kan måtte betale for i videregående.
+- Begrepet «Kontaktlærer» sier nå hva opplæringslova legger i rollen, og «Skjerpet aktivitetsplikt» at rektor ikke melder videre når meldingen er åpenbart grunnløs.
+
+### Endret
+
+- **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.
+
 ## [1.1.0] – 2026-10-09
 
 ### Endret

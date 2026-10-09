@@ -346,7 +346,7 @@
       Ein lærekandidat har skrive ein opplæringskontrakt med sikte på ei mindre omfattande prøve enn fag- eller
       sveineprøva. Prøva heiter kompetanseprøve, og kandidaten blir prøvd i dei måla som er fastsette for opplæringa
       hans eller hennar. Fylkeskommunen lagar prøva og gir kompetansebevis. Ein elev kan bli lærekandidat etter
-      grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten med samtykke frå fylkeskommunen. For å bli
+      grunnskulen, etter Vg1 eller Vg2, eller ved å endre kontrakten med samtykke frå fylkeskommunen. For å bli
       formidla som lærekandidat til neste trinn må søkjaren ha bestått sitt individuelle opplæringsløp, men også den
       som har gjennomført Vg1 og Vg2 utan å bestå faga, kan søkje. Lærekandidatar har rett til individuell
       tilrettelegging.
@@ -497,7 +497,7 @@
   lenkeord: { nb: ["tilbudsstruktur"], nn: ["tilbodsstruktur", "tilbudsstruktur"] }
   tekst:
     nb: Tilbudsstrukturen er oversikten over utdanningsprogrammene, programområdene og lærefagene i videregående opplæring, altså hvilke løp som fører fram til studiekompetanse eller yrkeskompetanse. Departementet fastsetter den med hjemmel i opplæringslova § 1-6, og opplæringen skal være i samsvar med den. Udir gir den ut sammen med fag- og timefordelingen. Fylkeskommunen velger hvilke tilbud skolene i fylket skal ha, og skal legge stor vekt på hvilken kompetanse samfunnet trenger. Opplæringstilbud i appen viser løpene.
-    nn: Tilbodsstrukturen er oversikta over utdanningsprogramma, programområda og lærefaga i vidaregåande opplæring, altså kva løp som fører fram til studiekompetanse eller yrkeskompetanse. Departementet fastset han med heimel i opplæringslova § 1-6, og opplæringa skal vere i samsvar med han. Udir gir han ut saman med fag- og timefordelinga. Fylkeskommunen vel kva tilbod skolane i fylket skal ha, og skal leggje stor vekt på kva kompetanse samfunnet treng. Opplæringstilbod i appen viser løpa.
+    nn: Tilbodsstrukturen er oversikta over utdanningsprogramma, programområda og lærefaga i vidaregåande opplæring, altså kva løp som fører fram til studiekompetanse eller yrkeskompetanse. Departementet fastset han med heimel i opplæringslova § 1-6, og opplæringa skal vere i samsvar med han. Udir gir han ut saman med fag- og timefordelinga. Fylkeskommunen vel kva tilbod skulane i fylket skal ha, og skal leggje stor vekt på kva kompetanse samfunnet treng. Opplæringstilbod i appen viser løpa.
   kilder:
     - { id: opplaeringslova, punkt: "§ 1-6 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§1-6" }
     - { id: opplaeringslova, punkt: "§ 5-3 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-3" }
@@ -532,7 +532,7 @@
   lenkeord: { nb: ["rådgiving", "rådgivning", "rådgiver"], nn: ["rådgiving", "rådgivar", "rådgivning"] }
   tekst:
     nb: Elever har rett til den rådgivingen de trenger, både om utdannings- og yrkesvalg og om sosiale og personlige forhold som kan påvirke hvordan de har det på skolen. Rådgivingen skal gis på skolen eleven går på, og individuelt når eleven ønsker det. Fylkeskommunen skal sørge for at de som har læretid i bedrift, også har tilgang til begge deler. Før opplæringslova fra 2024 het det utdannings- og yrkesrådgiving og sosialpedagogisk rådgiving. Rådgiving på skolen regnes ikke som fravær.
-    nn: Elevar har rett til den rådgivinga dei treng, både om utdannings- og yrkesval og om sosiale og personlege forhold som kan påverke korleis dei har det på skolen. Rådgivinga skal givast på skolen eleven går på, og individuelt når eleven ønskjer det. Fylkeskommunen skal sørgje for at dei som har læretid i bedrift, også har tilgang til begge delar. Før opplæringslova frå 2024 heitte det utdannings- og yrkesrådgiving og sosialpedagogisk rådgiving. Rådgiving på skolen blir ikkje rekna som fråvær.
+    nn: Elevar har rett til den rådgivinga dei treng, både om utdannings- og yrkesval og om sosiale og personlege forhold som kan påverke korleis dei har det på skulen. Rådgivinga skal givast på skulen eleven går på, og individuelt når eleven ønskjer det. Fylkeskommunen skal sørgje for at dei som har læretid i bedrift, også har tilgang til begge delar. Før opplæringslova frå 2024 heitte det utdannings- og yrkesrådgiving og sosialpedagogisk rådgiving. Rådgiving på skulen blir ikkje rekna som fråvær.
   kilder:
     - { id: opplaeringslova, punkt: "§ 16-1 Rådgiving om utdannings- og yrkesval", url: "https://lovdata.no/lov/2023-06-09-30/§16-1" }
     - { id: opplaeringslova, punkt: "§ 16-2 Rådgiving om sosiale og personlege forhold", url: "https://lovdata.no/lov/2023-06-09-30/§16-2" }
