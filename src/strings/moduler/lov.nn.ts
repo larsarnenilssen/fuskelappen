@@ -48,7 +48,7 @@ export const lovNn: typeof lovNb = {
   lasterFeil: 'Klarte ikkje å laste teksten.',
   ikkeFunnet: 'Fann ikkje dokumentet.',
   paragrafIkkeFunnet: 'Fann ikkje {paragraf} i utvalet av {navn}. Han kan stå i eit kapittel som ikkje er med.',
-  utvalg: 'Utval: {liste}. Kapittel som berre gjeld grunnskolen, er ikkje med.',
+  utvalg: 'Utval: {liste}. Kapittel som berre gjeld grunnskulen, er ikkje med.',
   utvalgEnkel: 'Utval: {liste}.',
   heleDokumentet: 'Heile dokumentet er med.',
   endringer: 'Endringar',
