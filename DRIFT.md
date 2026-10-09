@@ -23,7 +23,7 @@ Jobbene går av seg selv i GitHub Actions. Eier får e-post bare når noe har g�
 | **Lokale regler** (`lokale-regler.yml`) | Når en PR som endrer `lokale/regler.yaml`, er flettet | Publiserer uten ny versjon (avgjørelse 093). | – |
 | **Dependabot** (`.github/dependabot.yml`) | Én gang i måneden | Grupperte PR-er for npm og Actions (avgjørelse 099). Se skillen `dependabot`. | – |
 | **Varsle eier** (`varsle.yml`) | Når en av jobbene over, publiseringen eller CI på `main` feiler | Lager eller oppdaterer saken for arbeidsflyten, og lukker den når det går bra igjen. | `feil` |
-| **Ukens kontroll** | Med kildesjekken | Nederst i kontrollsaken: fem punkter som ikke er kontrollert, med det viktigste først (tallene i kalkulatorene, så juridisk tunge tekster, til slutt begreper og fylker). Utvalget roterer med ukenummeret, og det som blir kontrollert, faller ut av seg selv. Gir ingen e-post (avgjørelse 106). | `kontroll` |
+| **Ukens kontroll** | Med kildesjekken | Nederst i kontrollsaken: fem punkter som ikke er kontrollert, med det viktigste først (tallene i kalkulatorene, så juridisk tunge tekster, til slutt begreper og fylker). Utvalget roterer med ukenummeret, og det som blir kontrollert, faller ut av seg selv. Et nytt utvalg gir e-post (avgjørelse 106, eier 09.10.2026). | `kontroll` |
 | **Fylkeslenkene** (`npm run lenker:fylker`) | Med kildesjekken | Bekrefter lenkene til fylkenes sider med tittelen og prøver adressen med og uten www. Lagrer `content/fylker/lenker.yaml` på `main` etter testene. Lenker som ikke er bekreftet på åtte uker, kommer i kontrollsaken. Ingen egen kvartalsrunde (avgjørelse 106). | `kontroll` |
 
 Kildesjekken committer statusfilen hver mandag, også når ingenting er endret. Det holder de planlagte jobbene i live: GitHub slår dem av i offentlige repoer etter 60 dager uten aktivitet.
@@ -54,9 +54,9 @@ En versjon publiseres bare når eier og Claude er enige om at den skal ut, og om
 
 Se skillen `ny-versjon`.
 
-## Versjonstakt (forslag til eier)
+## Versjonstakt
 
-*Forslag fra Claude 09.10.2026. Ikke bestemt av eier.* Fra 0.1.0 til 1.2.0 kom det 70 versjoner på 11 dager. Hver versjon gir brukerne meldingen «Ny versjon er klar».
+Bestemt av eier 09.10.2026. Fra 0.1.0 til 1.2.0 kom det 70 versjoner på 11 dager. Hver versjon gir brukerne meldingen «Ny versjon er klar».
 
 - **En versjon når det er noe brukerne merker**, typisk høyst én i måneden. Endringer samles på `main` og prøves på `test/` i mellomtiden.
 - **Raske rettinger** (x.y.Z) når som helst ved feil brukerne merker.

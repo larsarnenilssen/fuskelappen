@@ -7,7 +7,6 @@
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Kildekontroll, Kontrollinnhold, Kontrollkilde, Kontrollverdi } from '../../src/core/kontroll/indeks.ts';
 import { kildelenker } from '../kontroll/kildelenker.ts';
-import { STILLE_SLUTT, STILLE_START } from '../varsel/plan.ts';
 
 export const UKENS_ANTALL = 5;
 
@@ -136,15 +135,13 @@ export function lagUkensKontroll(
   return {
     antall: utvalg.length,
     linjer: [
-      STILLE_START,
       '## Ukens kontroll',
       '',
-      `${utvalg.length === 1 ? 'Ett punkt' : `${utvalg.length} punkter`} du ikke har kontrollert ennå, valgt etter risiko: tallene i kalkulatorene først, så tekstene med størst juridisk betydning, til slutt begreper og fylkenes egne regler. Les det opp mot kildene og spørsmålene. Kryss av det som stemmer, og skriv \`/godkjent\`. Det du ikke krysser av, kommer igjen en senere uke. Er noe feil, skriv det til Claude. Denne delen gir ikke egen e-post (avgjørelse 106).`,
+      `${utvalg.length === 1 ? 'Ett punkt' : `${utvalg.length} punkter`} du ikke har kontrollert ennå, valgt etter risiko: tallene i kalkulatorene først, så tekstene med størst juridisk betydning, til slutt begreper og fylkenes egne regler. Les det opp mot kildene og spørsmålene. Kryss av det som stemmer, og skriv \`/godkjent\`. Det du ikke krysser av, kommer igjen en senere uke. Er noe feil, skriv det til Claude.`,
       '',
       ...punkter,
       '',
       `Ikke kontrollert ennå: ${verdier} ${verdier === 1 ? 'regelverdi' : 'regelverdier'} og ${innhold} ${innhold === 1 ? 'tekst' : 'tekster'}.`,
-      STILLE_SLUTT,
       '',
     ],
   };
