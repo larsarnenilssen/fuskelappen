@@ -10,7 +10,7 @@ Status:
 - **endret:** notatet har minst én linje «**Endret …**» nederst, eller en del som sier «(Erstattet i avgjørelse NNN …)». Avgjørelsene disse linjene viser til, står etter «av». Det som står nederst, gjelder foran det over.
 - **erstattet:** notatet gjelder ikke lenger. Se avgjørelsen som erstattet det.
 
-106 avgjørelser: 73 gjeldende, 32 endret og 1 erstattet.
+106 avgjørelser: 72 gjeldende, 33 endret og 1 erstattet.
 
 | Nr. | Avgjørelse | Status |
 |---|---|---|
@@ -44,7 +44,7 @@ Status:
 | 028 | [Registreringshåndboken som kilde](028-registreringshandboken.md) | gjeldende |
 | 029 | [Versjonstaggen settes av en arbeidsflyt](029-versjonstag-fra-arbeidsflyt.md) | gjeldende |
 | 030 | [Forsiden med hovedbokser og en boks med resten](030-forsiden-med-innganger.md) | gjeldende |
-| 031 | [Vanlige fag i fagsøket, og roller regnet ut når appen bygges](031-vanlige-fag-i-fagsoket.md) | gjeldende |
+| 031 | [Vanlige fag i fagsøket, og roller regnet ut når appen bygges](031-vanlige-fag-i-fagsoket.md) | endret av 072 |
 | 032 | [Fagarket med kort og fagtypefarger](032-fagarket-med-kort-og-fagtypefarger.md) | gjeldende |
 | 033 | [Kalkulatorene i fargede deler](033-kalkulatorene-i-fargede-deler.md) | gjeldende |
 | 034 | [Fuskelappen: nytt navn, ny logo og roligere forside](034-fuskelappen.md) | endret av 056, 058, 065 |

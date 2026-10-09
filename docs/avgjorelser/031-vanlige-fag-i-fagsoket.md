@@ -17,3 +17,5 @@
 - Kan rollene ikke lastes, vises alle fagene, som før.
 
 **Konsekvens:** Søket blir kortere og lettere å lese, og ingen fag blir umulige å finne. Endres tilbudsmodellen, endres også hvilke fag som er vanlige.
+
+**Endret 09.10.2026:** Alle gruppene i fagsøket (fellesfag, felles programfag, valgfrie programfag og yrkesfaglig fordypning) er lukket når siden åpnes, og siden husker hvilke som er åpne (eier 09.10.2026, avgjørelse 072).

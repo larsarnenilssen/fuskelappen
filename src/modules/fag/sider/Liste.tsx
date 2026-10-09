@@ -5,6 +5,7 @@
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { type T, useTekst } from '../../../app/tilstand.ts';
+import { useHusketApen } from '../../../components/husket.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { oversiktsid } from '../../favoritter.ts';
@@ -126,9 +127,13 @@ function Fagliste({ treff }: { treff: readonly (Fagtreff & { tilbud?: readonly s
   );
 }
 
-/** En gruppe med overskrift som åpner og lukker den. Innholdet tegnes først når gruppen er åpen. */
-function Gruppe({ tittel, aapen: start, nivaa, fagtype, children }: { tittel: string; aapen: boolean; nivaa: 2 | 3; fagtype?: Fagtype; children: () => preact.ComponentChildren }) {
-  const [aapen, settAapen] = useState(start);
+/**
+ * En gruppe med overskrift som åpner og lukker den. Innholdet tegnes først når gruppen er åpen. Alle gruppene er lukket
+ * når siden åpnes (eier 09.10.2026), og siden husker hvilke som er åpne, så tilbake fra et fag viser dem slik de var
+ * (avgjørelse 072).
+ */
+function Gruppe({ tittel, nokkel, nivaa, fagtype, children }: { tittel: string; nokkel: string; nivaa: 2 | 3; fagtype?: Fagtype; children: () => preact.ComponentChildren }) {
+  const [aapen, settAapen] = useHusketApen(`faggruppe:${nokkel}`);
   const id = useId();
   const Overskrift = nivaa === 2 ? 'h2' : 'h3';
   return (
@@ -151,7 +156,7 @@ function Gruppe({ tittel, aapen: start, nivaa, fagtype, children }: { tittel: st
 /** Grupper med mer enn så mange fag deles etter læreplan. */
 const STOR_GRUPPE = 12;
 
-/** Treffene gruppert etter fagtype, og store grupper etter læreplan (lukket til brukeren åpner dem). */
+/** Treffene gruppert etter fagtype, og store grupper etter læreplan. Alle er lukket til brukeren åpner dem. */
 function Grupper({ treff, program, titler }: { treff: readonly (Fagtreff & { tilbud?: readonly string[] })[]; program: string; titler: Readonly<Record<string, string>> }) {
   const { t, malform } = useTekst();
   const rekkefolge = gruppeRekkefolge(program !== '' && programgruppe(program) === 'yrkesfaglig');
@@ -159,7 +164,7 @@ function Grupper({ treff, program, titler }: { treff: readonly (Fagtreff & { til
   return (
     <div class="faggrupper">
       {grupper.map((g) => (
-        <Gruppe key={g.type} fagtype={g.type} nivaa={2} aapen tittel={t('fag.gruppe', { navn: t(`fag.gruppenavn.${g.type}` as `fag.gruppenavn.${Fagtype}`), antall: formaterTall(g.treff.length) })}>
+        <Gruppe key={g.type} fagtype={g.type} nivaa={2} nokkel={g.type} tittel={t('fag.gruppe', { navn: t(`fag.gruppenavn.${g.type}` as `fag.gruppenavn.${Fagtype}`), antall: formaterTall(g.treff.length) })}>
           {() =>
             g.treff.length <= STOR_GRUPPE ? (
               <Fagliste treff={g.treff} />
@@ -172,7 +177,7 @@ function Grupper({ treff, program, titler }: { treff: readonly (Fagtreff & { til
                     </li>
                   ) : (
                     <li key={u.laereplan ?? u.tittel}>
-                      <Gruppe nivaa={3} aapen={false} tittel={t('fag.gruppe', { navn: u.laereplan ? u.tittel : t('fag.utenLaereplan'), antall: formaterTall(u.treff.length) })}>
+                      <Gruppe nivaa={3} nokkel={`${g.type}:${u.laereplan ?? u.tittel}`} tittel={t('fag.gruppe', { navn: u.laereplan ? u.tittel : t('fag.utenLaereplan'), antall: formaterTall(u.treff.length) })}>
                         {() => <Fagliste treff={u.treff} />}
                       </Gruppe>
                     </li>
