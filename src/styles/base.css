@@ -1514,6 +1514,109 @@ p.fagkort-tittel {
   font-weight: 700;
 }
 
+/* Overskriften i fag- og funksjonskortene (eier 09.10.2026): feltet for faget eller navnet på funksjonen står der
+   «Fag 1» og «Funksjon 1» sto, med pilen og krysset på samme linje. Lukket står kortnavnet der. */
+.fagkort-hode {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.fagkort-hode > .sokefelt,
+.fagkort-hode > .tekstfelt {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.fagkort-hode > .kortknapp {
+  flex: 1;
+  min-width: 0;
+  min-height: 2.5rem;
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.fagkort-hode > .ikonknapp {
+  position: static;
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+/* Pilen står på samme sted i åpne og lukkede kort: midt i en like bred plass som knappen i det åpne kortet. */
+.fagkort-hode > .kortknapp .kortknapp-pil {
+  margin-left: auto;
+  margin-right: calc((2.25rem - 1.1rem) / 2);
+}
+
+.fagkort-pil {
+  color: var(--farge-tekst-dempet);
+}
+
+/* Et lukket kort skjuler feltene, også når raden er en flex-rad (funksjonene). */
+.funksjonsrad[hidden] {
+  display: none;
+}
+
+/* Prikken i fargen til faget eller funksjonen i stolpen. Bare i Arbeidsplan, der stolpen har fargene. */
+.fagkort-prikk {
+  display: none;
+}
+
+.kalkulator[data-kalkulator='arbeidsplan'] .skjemadel .fagkort-prikk {
+  display: inline-block;
+  flex: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-right: var(--rom-1);
+  border-radius: 50%;
+  background: var(--rad);
+  vertical-align: middle;
+}
+
+/* Litt luft mellom delene i kortet (eier 09.10.2026): under overskriften, mellom radene og nederst i åpne kort. */
+.fagvelger > .fagkort-hode,
+.funksjonskort > .fagkort-hode {
+  margin-bottom: var(--rom-3);
+}
+
+.fagkort.lukket .fagkort-hode {
+  margin-bottom: 0;
+}
+
+.fagkort-treff {
+  margin-bottom: var(--rom-3);
+}
+
+.fagkort-lenkerad {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-3);
+  margin-bottom: var(--rom-3);
+}
+
+/* Eksemplene brytes over flere linjer, så «Skriv inn årsramme selv» står øverst til høyre, på samme sted som «Søk i
+   vedlegg 1» når årsrammen skrives inn selv. */
+.fagkort-eksempel {
+  flex: 1;
+  min-width: 0;
+}
+
+.fagkort-lenkerad .etikettrad-hoyre {
+  flex: none;
+  margin-left: auto;
+}
+
+.fagkort-del {
+  white-space: nowrap;
+}
+
+.fagkort .fagvalg,
+.fagkort .inndatarad {
+  margin-bottom: var(--rom-3);
+}
+
 .fagkort .felt,
 .fagkort .bryter {
   margin-bottom: var(--rom-2);
@@ -3503,8 +3606,7 @@ p.fagkort-tittel {
 /* Prikken i fargen til delen i diagrammet, bare i Arbeidsplan og bare for delene som har en farge der. */
 .kalkulator[data-kalkulator='arbeidsplan']
   :is(.skjemadel[data-del='undervisning'], .skjemadel[data-del='funksjoner'], .skjemadel[data-del='tid'])
-  .skjemadel-navn::before,
-.kalkulator[data-kalkulator='arbeidsplan'] .skjemadel :is(.fagkortliste > .fagkort, .funksjonskort) .fagkort-tittel .kortknapp-tekst::before {
+  .skjemadel-navn::before {
   content: '';
   display: inline-block;
   width: 0.75rem;
@@ -3513,12 +3615,6 @@ p.fagkort-tittel {
   border-radius: 50%;
   background: var(--del);
   vertical-align: middle;
-}
-
-.kalkulator[data-kalkulator='arbeidsplan'] .skjemadel :is(.fagkortliste > .fagkort, .funksjonskort) .fagkort-tittel .kortknapp-tekst::before {
-  width: 0.625rem;
-  height: 0.625rem;
-  background: var(--rad);
 }
 
 .skjemadel-sum {
@@ -3552,6 +3648,16 @@ p.fagkort-tittel {
   border: 0;
   border-radius: var(--radius-m);
   background: var(--farge-bakgrunn);
+}
+
+/* Litt mer luft nederst i åpne kort, også på smal skjerm (eier 09.10.2026). Lukket står navnet midt i kortet, med like
+   mye luft over og under. */
+.skjemadel .fagkort:not(.lukket):has(> .fagkort-hode, > div > .fagvelger) {
+  padding-bottom: var(--rom-3);
+}
+
+.skjemadel .fagkort.lukket:has(> .fagkort-hode) {
+  padding-block: var(--rom-2);
 }
 
 /* Fagene får fargen de har i stolpen for beskjeftigelse, etter tur (prikken i Arbeidsplan). */

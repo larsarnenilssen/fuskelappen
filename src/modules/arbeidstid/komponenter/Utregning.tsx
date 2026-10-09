@@ -36,7 +36,7 @@ function operandTall(o: Operand, sum = false): string {
   return tallMedEnhet(o.verdi, o.enhet);
 }
 
-function stegFra(t: T, trinn: Trinn): Utregningssteg {
+function stegFra(t: T, trinn: Trinn, gruppenavn?: readonly string[]): Utregningssteg {
   const nokkel = `arbeidstid.trinn.${trinn.id}`;
   const mal = t(`${nokkel}.formel` as Tekstnokkel);
   const navn: Record<string, string> = {};
@@ -57,7 +57,10 @@ function stegFra(t: T, trinn: Trinn): Utregningssteg {
   }
   const tekst = t(`${nokkel}.tekst` as Tekstnokkel);
   return {
-    tekst: trinn.gruppe !== undefined ? `${t('arbeidstid.felles.gruppe', { nr: trinn.gruppe })}: ${tekst.charAt(0).toLowerCase()}${tekst.slice(1)}` : tekst,
+    tekst:
+      trinn.gruppe !== undefined
+        ? `${gruppenavn?.[trinn.gruppe - 1] ?? t('arbeidstid.felles.gruppe', { nr: trinn.gruppe })}: ${tekst.charAt(0).toLowerCase()}${tekst.slice(1)}`
+        : tekst,
     formel: fyllInn(mal, navn),
     innsatt: fyllInn(mal, tall),
     verdi: medEnhet(t, trinn.resultat.verdi, trinn.resultat.enhet),
@@ -90,6 +93,8 @@ interface Props {
   sammendrag?: boolean;
   /** Vis hovedresultatet i en fast linje nederst når kortet er utenfor skjermen. Standard er sann. */
   fast?: boolean;
+  /** Kortnavnene på fagene i beregningen, i samme rekkefølge (eier 09.10.2026). Uten dem står «Fag 1», «Fag 2». */
+  gruppenavn?: readonly string[];
   children?: ComponentChildren;
 }
 
@@ -108,10 +113,10 @@ function samleKilder(steg: readonly Utregningssteg[]): NonNullable<Utregningsste
 }
 
 /** Resultatkort for en beregning, med kompakt utregning trinn for trinn og kildene samlet. */
-export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, fast = true, children }: Props) {
+export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, fast = true, gruppenavn, children }: Props) {
   const { t } = useTekst();
   const enhet = enhetTekst(t, resultat.enhet);
-  const steg = trinn.map((tr) => stegFra(t, tr));
+  const steg = trinn.map((tr) => stegFra(t, tr, gruppenavn));
   const siste = steg[steg.length - 1];
   return (
     <Resultatkort

@@ -432,14 +432,14 @@ test.describe('arbeidstid', () => {
     await expect(page.getByText(/Diagrammet viser undervisningen og funksjonene som er lagt inn \(100 %\)/)).toBeVisible();
 
     // Tillegg per funksjon: beløpet fra SFS 2213 punkt 9.1 fylles inn og kan overskrives.
-    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).fill('Rådgiver');
     await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
     const tillegg1 = page.getByLabel('Tillegg per år, funksjon 1');
     await expect(tillegg1).toHaveValue(/12\s?000/);
     await expect(page.getByText(/minst 12\s000 kr i året for rådgiver eller sosiallærer/)).toBeVisible();
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/580\s888,89/);
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).last().fill('Kontaktlærer');
     // Funksjon 2 har ikke tillegg før bryteren slås på.
     await expect(page.getByLabel('Tillegg per år, funksjon 2')).toHaveCount(0);
     await page.getByRole('switch', { name: 'Funksjon 2: Tillegg i lønnen' }).check();
@@ -455,12 +455,12 @@ test.describe('arbeidstid', () => {
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('420');
 
-    // Fagkortet: feltene skjules, og overskriften viser faget.
+    // Fagkortet: feltene skjules, og overskriften viser kortnavnet til faget (eier 09.10.2026).
     const fag = page.getByRole('button', { name: /^Fag 1/ });
     await expect(fag).toHaveAttribute('aria-expanded', 'true');
     await fag.click();
     await expect(fag).toHaveAttribute('aria-expanded', 'false');
-    await expect(fag).toContainText('Engelsk · Studiespesialisering Vg1');
+    await expect(fag).toContainText('Engelsk');
     await expect(page.getByLabel('Antall årstimer')).toBeHidden();
 
     // Resultatkortet viser fortsatt svaret når det er lagt sammen.
@@ -491,6 +491,41 @@ test.describe('arbeidstid', () => {
     await expect(page.getByLabel('Antall årstimer')).toHaveValue('420');
   });
 
+  test('fag og funksjoner: feltet står øverst i kortet, og kortnavnet i lukkede kort og i stolpen (eier 09.10.2026)', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    const forste = page.getByLabel('Fag', { exact: true }).first();
+    await expect(forste).toHaveAttribute('placeholder', 'Fag 1: søk etter fag');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await expect(forste).toHaveValue('Engelsk');
+    await page.getByRole('button', { name: 'Legg til fag' }).click();
+    await velgFag(page, 'matematikk r1', 'Informasjonsteknologi');
+    await expect(page.getByLabel('Fag', { exact: true }).last()).toHaveValue('Matematikk R1');
+
+    // Lukket står kortnavnet i overskriften, og skjermlesere får «Fag 2: Matematikk R1».
+    await page.getByRole('button', { name: 'Fag 2: Matematikk R1' }).click();
+    const lukket = page.getByRole('button', { name: /^Fag 2: Matematikk R1/ });
+    await expect(lukket).toHaveAttribute('aria-expanded', 'false');
+    await expect(lukket).toContainText('Matematikk R1 · ');
+
+    // Å skrive i feltet søker på nytt, og et nytt treff erstatter faget.
+    await forste.fill('norsk stud vg1');
+    await page.locator('.fagtreff button', { hasText: 'Norsk' }).first().click();
+    await expect(forste).toHaveValue(/^Norsk/);
+
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await expect(page.getByLabel('Funksjon 1: Navn')).toHaveAttribute('placeholder', 'Funksjon 1: skriv navnet');
+    await page.getByLabel('Funksjon 1: Navn').fill('Kontaktlærer');
+    await page.getByLabel('Funksjon 1: Prosent').fill('10');
+    await page.getByRole('button', { name: 'Funksjon 1: Kontaktlærer' }).click();
+    await expect(page.getByLabel('Funksjon 1: Prosent')).toBeHidden();
+
+    // Stolpen og utregningen bruker kortnavnene i stedet for «Fag 1» og «Fag 2».
+    const forklaring = page.locator('.resultatkort figure.figur').first().locator('.fordeling-forklaring-rad');
+    await expect(forklaring).toContainText('Matematikk R1:');
+    await expect(forklaring).toContainText('Kontaktlærer: 10 %');
+    await expect(forklaring).not.toContainText('Fag 1');
+  });
+
   test('funksjoner kan ha bare tillegg, bare tid eller begge deler', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
@@ -501,7 +536,7 @@ test.describe('arbeidstid', () => {
 
     // Funksjon 1: bare tillegg (0 %). Tillegget kommer i lønnen, men tiden endres ikke.
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).fill('Rådgiver');
     await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
     await expect(lonn).toContainText(/Tillegg: Rådgiver\s*12\s000/);
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
@@ -513,14 +548,14 @@ test.describe('arbeidstid', () => {
 
     // Funksjon 2: bare tid (10 %), uten tillegg.
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Teamleder');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).last().fill('Teamleder');
     await page.getByLabel('Funksjon 2: Prosent').fill('10');
     await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('168,8');
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
 
     // Funksjon 3: både tid (5 %) og tillegg.
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).last().fill('Kontaktlærer');
     await page.getByLabel('Funksjon 3: Prosent').fill('5');
     await page.getByRole('switch', { name: 'Funksjon 3: Tillegg i lønnen' }).check();
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/624\s000/);
@@ -530,7 +565,7 @@ test.describe('arbeidstid', () => {
   test('funksjoner kan oppgis i årsrammetimer, med forslag for kontaktlærer', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).fill('Kontaktlærer');
     await expect(page.getByText(/Kontaktlærer: minst 28,5 årsrammetimer \(SFS 2213 punkt 7\.3 b\)/)).toBeVisible();
     await page.getByRole('button', { name: 'Bruk 28,5 timer' }).click();
     await expect(page.getByLabel('Funksjon 1: Årsrammetimer')).toHaveValue('28,5');
@@ -660,7 +695,7 @@ test.describe('arbeidstid', () => {
       }
     }
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
+    await page.getByPlaceholder(/^Funksjon \d+: skriv navnet$/).fill('Kontaktlærer');
     await page.getByLabel('Funksjon 1: Prosent').fill('25');
     await expect(resultat(page)).toContainText('97,23');
     const differanse = page.locator('.arbeidsplan-differanse');
@@ -677,7 +712,7 @@ test.describe('arbeidstid', () => {
     await expect(page.getByRole('img', { name: /Kontaktlærer 25 %.*stillingen på 100 %/ })).toBeVisible();
   });
 
-  test('fjern-knappen står til høyre for tittelen, over navnet, som på fagkortet, og tillegget på linjen med vippen', async ({ page }) => {
+  test('fjern-knappen står på linjen med navnet, som på fagkortet, og tillegget på linjen med vippen', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
@@ -686,10 +721,10 @@ test.describe('arbeidstid', () => {
       const b = await l.boundingBox();
       return b ? b.y + b.height / 2 : NaN;
     };
-    // Funksjonen er et kort som fagene (eier 02.10.2026): fjern-knappen står til høyre for tittelen, over navnet (fase 8b).
-    const navn = await page.getByLabel('Funksjon 1: Navn').boundingBox();
+    // Funksjonen er et kort som fagene (eier 02.10.2026): navnet står øverst i kortet, med fjern-knappen på samme linje
+    // (eier 09.10.2026).
     const fjern = await midt(page.getByRole('button', { name: 'Fjern funksjon 1' }));
-    expect(fjern).toBeLessThan(navn?.y ?? 0);
+    expect(Math.abs(fjern - (await midt(page.getByLabel('Funksjon 1: Navn'))))).toBeLessThan(6);
     const vippe = await midt(page.locator('.funksjon-tillegg .vippe'));
     const belop = page.getByLabel('Tillegg per år, funksjon 1');
     expect(Math.abs(vippe - (await midt(belop)))).toBeLessThan(12);

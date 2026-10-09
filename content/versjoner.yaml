@@ -2,6 +2,13 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 1.0.3
+    dato: 2026-10-09
+    nytt:
+      - nb: "Arbeidsplan og Beskjeftigelse: Feltet for faget og navnet på funksjonen står øverst i kortet, der «Fag 1» og «Funksjon 1» sto før."
+        nn: "Arbeidsplan og Sysselsetjing: Feltet for faget og namnet på funksjonen står øvst i kortet, der «Fag 1» og «Funksjon 1» stod før."
+      - nb: Lukkede kort, stolpen over stillingen og utregningen viser kortnavnet på faget, for eksempel «Matematikk R1».
+        nn: Lukka kort, stolpen over stillinga og utrekninga viser kortnamnet på faget, til dømes «Matematikk R1».
   - versjon: 1.0.2
     dato: 2026-10-09
     nytt:

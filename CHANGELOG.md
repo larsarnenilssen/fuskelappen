@@ -4,6 +4,23 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [1.0.3] – 2026-10-09
+
+### Endret
+
+- **Fag og funksjoner i Arbeidsplan og Beskjeftigelse:**
+  - Søkefeltet for faget står øverst i kortet, der «Fag 1» sto, med prikken i fargen fra stolpen foran.
+  - Når et fag er valgt, står kortnavnet i feltet. Å skrive i feltet søker på nytt.
+  - Funksjonene har navnefeltet øverst, der «Funksjon 1» sto.
+  - Lukkede kort viser kortnavnet, for eksempel «Matematikk R1 · 26,67 %».
+  - Kortnavnet er navnet på faget, uten program og trinn, med høyst tre ord.
+- **Stolpen over stillingen og utregningen** bruker kortnavnene i stedet for «Fag 1» og «Fag 2».
+- **Litt mer luft** i fag- og funksjonskortene.
+
+### Rettet
+
+- Et lukket funksjonskort viste fortsatt feltene.
+
 ## [1.0.2] – 2026-10-09
 
 ### Endret

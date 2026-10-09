@@ -6,7 +6,7 @@ import { useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { Oppsummering, Sammenleggbartkort, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
+import { Sammenleggbartkort, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Funksjon } from '../beregning/index.ts';
@@ -151,36 +151,54 @@ function Funksjonskort({
   const [lukket, veksle] = useSammenlagt(`funksjon-${f.id}`);
   const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring((gamle) => gamle.map((x) => (x.id === fid ? { ...x, ...endring } : x)));
   const nr = (n: number) => t('arbeidstid.arbeidsplan.funksjonNr', { nr: n + 1 });
+  const navn = f.navn.trim();
   const forslag = tilleggsforslag(f, satser);
   // Kontaktlærer uten tid: forslag om minstereduksjonen i punkt 7.3 b, som brukeren kan velge.
   const kontaktlaererHint = kontaktlaererTimer !== null && /kontakt/i.test(f.navn) && prosent === 0;
   return (
     <fieldset class={`fagkort funksjonskort${lukket ? ' lukket' : ''}`}>
-      <legend class="fagkort-tittel">
-        <Sammenleggknapp lukket={lukket} onVeksle={veksle} kontroll={innhold} oppsummering={f.navn || undefined}>
-          <span>{nr(i)}</span>
-          {delresultat && <span class="fagkort-resultat tall"> · {t('arbeidstid.felles.delresultat', { verdi: delresultat })}</span>}
-        </Sammenleggknapp>
-      </legend>
-      <button type="button" class="ikonknapp fagkort-fjern" aria-label={t('arbeidstid.arbeidsplan.fjernFunksjon', { nr: i + 1 })} onClick={() => onEndring((gamle) => gamle.filter((x) => x.id !== f.id))}>
-        <Ikon navn="lukk" class="ikon-liten" />
-      </button>
-      <Oppsummering lukket={lukket} onVeksle={veksle}>
-        {f.navn}
-      </Oppsummering>
+      <legend class="skjult-visuelt">{nr(i)}</legend>
+      {/* Navnefeltet står der «Funksjon 1» sto, og navnet står der når kortet er lukket (eier 09.10.2026). */}
+      <div class="fagkort-hode">
+        {lukket ? (
+          <Sammenleggknapp lukket onVeksle={veksle} kontroll={innhold}>
+            <span class="fagkort-prikk" aria-hidden="true" />
+            {navn && <span class="skjult-visuelt">{nr(i)}: </span>}
+            {navn || nr(i)}
+            {delresultat && <span class="fagkort-resultat tall"> · {t('arbeidstid.felles.delresultat', { verdi: delresultat })}</span>}
+          </Sammenleggknapp>
+        ) : (
+          <>
+            <span class="fagkort-prikk" aria-hidden="true" />
+            <label class="skjult-visuelt" for={id}>
+              {`${nr(i)}: ${t('arbeidstid.arbeidsplan.funksjonNavn')}`}
+            </label>
+            <input
+              id={id}
+              class="tekstfelt"
+              type="text"
+              autoComplete="off"
+              placeholder={t('arbeidstid.arbeidsplan.funksjonNavnPlassholder', { nr: i + 1 })}
+              value={f.navn}
+              onInput={(e) => sett(f.id, { navn: e.currentTarget.value })}
+            />
+            <button
+              type="button"
+              class="ikonknapp fagkort-pil"
+              aria-expanded="true"
+              aria-controls={innhold}
+              aria-label={navn ? t('arbeidstid.felles.kortnavn', { tittel: nr(i), navn }) : nr(i)}
+              onClick={veksle}
+            >
+              <Ikon navn="opp" class="ikon-liten" />
+            </button>
+          </>
+        )}
+        <button type="button" class="ikonknapp fagkort-fjern" aria-label={t('arbeidstid.arbeidsplan.fjernFunksjon', { nr: i + 1 })} onClick={() => onEndring((gamle) => gamle.filter((x) => x.id !== f.id))}>
+          <Ikon navn="lukk" class="ikon-liten" />
+        </button>
+      </div>
       <div id={innhold} class="inndatarad funksjonsrad" hidden={lukket}>
-        <label class="skjult-visuelt" for={id}>
-          {`${nr(i)}: ${t('arbeidstid.arbeidsplan.funksjonNavn')}`}
-        </label>
-        <input
-          id={id}
-          class="tekstfelt"
-          type="text"
-          autoComplete="off"
-          placeholder={t('arbeidstid.arbeidsplan.funksjonNavnPlassholder')}
-          value={f.navn}
-          onInput={(e) => sett(f.id, { navn: e.currentTarget.value })}
-        />
         {iTimer(f) ? (
           <Tallfelt
             key="timer"
