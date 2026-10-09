@@ -2,6 +2,8 @@
 
 Til eier, 08.10.2026. Svar gjerne punkt for punkt (f.eks. «V1 ja, V3 B»). Rundene står med den nyeste øverst.
 
+*Status 09.10.2026:* Eier godkjente designet etter runde 3 («Vi er ferdige; publiser og versjoner»). Rådene gjelder for punktene som sto åpne: V1 B uten knapp (meldingen om ny versjon vises av versjonen brukeren har fra før, så den sier hvor velkomsten står), V3 A, V5 A og V6–V8 som i skissen. Levert i 1.0.1 (avgjørelse 094). Rundene under står som de ble skrevet.
+
 ---
 
 ## Runde 3: navnet, annen rolle, søket og forsiden hver for seg (09.10.2026)

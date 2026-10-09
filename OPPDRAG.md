@@ -1,6 +1,6 @@
 # OPPDRAG – Jukselappen
 
-**Versjon:** 1.7 · 08.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm). 1.5 → 1.6 (08.10.2026): fase 8 levert, og velkomsten i fase 10 spør om dagens jukselapp. 1.6 → 1.7 (08.10.2026): fase 8b levert i 0.45.0)
+**Versjon:** 1.8 · 09.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside. 1.4 → 1.5 (07.10.2026): fase 8 bare dagens jukselapp, fase 9 lokale regler som meldes inn og godkjennes, nye faser 10 (velkomst) og 11 (reklamefilm). 1.5 → 1.6 (08.10.2026): fase 8 levert, og velkomsten i fase 10 spør om dagens jukselapp. 1.6 → 1.7 (08.10.2026): fase 8b levert i 0.45.0. 1.7 → 1.8 (09.10.2026): fase 10 levert i 1.0.1)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -669,7 +669,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 ### Fase 10 – Velkomst
 
-*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-10.md`.
+*(08.10.2026:)* Arbeidsordren står i `docs/arbeidsordrer/fase-10.md`. Levert i 1.0.1 (09.10.2026), etter tre runder med forslag og eiers svar i `docs/arbeidsordrer/fase-10-forslag.md` (avgjørelse 094). De åpne punktene under er avklart der: de som har appen fra før, får ikke velkomsten av seg selv, men meldingen om ny versjon sier hvor den står. Rollene er lærer, kontaktlærer, rådgiver, skoleleder og «Annen rolle», med seks forslag til favoritter hver, og rollen setter ikke filteret i kalenderen. Oppbyggingen er tre trinn (søket, forsiden og sidene), og lokale regler står i trinnet om fylke og skole. Det blir ni trinn. Eier har gått gjennom velkomsten i testversjonen underveis og godkjent den (09.10.2026). **Fase 10 er levert.**
 
 *(Eier 07.10.2026.)* Tas etter fase 9, fordi ett av trinnene viser til innmeldingen av lokale regler.
 

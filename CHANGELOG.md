@@ -4,9 +4,19 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [1.0.1] – 2026-10-09
+
 ### Lagt til
 
-- **Velkomst** (fase 10, under arbeid): en kort omvisning i et vindu over appen ved første besøk, med valg av fylke og skole, rolle med forslag til favoritter, dagens jukselapp og hjelp til å installere appen. Den kan åpnes igjen nederst på forsiden og i Innstillinger.
+- **Velkomst** (fase 10): en kort omvisning i et vindu over appen ved første besøk på forsiden, i ni trinn:
+  - hva appen er, og hvorfor den heter Jukselappen
+  - søket, forsiden og sidene
+  - fylke og skole, og lokale regler
+  - rolle med forslag til favoritter (lærer, kontaktlærer, rådgiver, skoleleder eller annen rolle)
+  - dagens jukselapp, med bryteren
+  - hjelp til å installere appen på iPhone og iPad, Android eller datamaskin
+  - takk, med lenke til tilbakemelding
+- Velkomsten kan åpnes igjen nederst på forsiden («Ny her? Se velkomsten») og i Innstillinger. Den har korte animasjoner, som står stille med redusert bevegelse.
 
 ### Endret
 

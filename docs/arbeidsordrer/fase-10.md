@@ -2,7 +2,7 @@
 
 Lim inn teksten under streken som første melding i en ny samtale. Bakgrunnen står under arbeidsordren.
 
-*Status 08.10.2026:* Skrevet da fase 9 ble levert i 0.46.0. Arbeidsordren er klar til bruk.
+*Status 09.10.2026:* Levert i 1.0.1 (avgjørelse 094). Forslaget og svarene står i `docs/arbeidsordrer/fase-10-forslag.md`, og arbeidsordren for fase 11 i `docs/arbeidsordrer/fase-11.md`.
 
 ---
 

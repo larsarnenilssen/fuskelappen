@@ -60,6 +60,11 @@
   padding: var(--rom-1) var(--rom-5) var(--rom-4);
 }
 
+.vk-innhold:focus-visible {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: calc(-1 * var(--fokusring));
+}
+
 .overlegg .vk-innhold h2 {
   margin: 0 0 var(--rom-3);
 }

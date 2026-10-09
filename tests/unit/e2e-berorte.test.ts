@@ -34,6 +34,8 @@ describe('berørte ende-til-ende-tester', () => {
     expect(velgTester(['content/versjoner.yaml'])).toEqual({ speker: ['nyversjon'], ruter: [], grunner: ['content/versjoner.yaml: meldingen om ny versjon'] });
     expect(velgTester(['src/components/Overlegg.tsx']).speker).toContain('nyversjon');
     expect(velgTester(['src/app/Oppdateringsvarsel.tsx']).speker).toContain('nyversjon');
+    expect(velgTester(['src/strings/velkomst.nb.ts'])).toEqual({ speker: ['velkomst'], ruter: [], grunner: ['src/strings/velkomst.nb.ts: velkomsten'] });
+    expect(velgTester(['src/app/velkomst/apne.ts']).speker).toEqual(expect.arrayContaining(['velkomst', 'innstillinger']));
   });
 
   it('en endret test kjøres selv', () => {

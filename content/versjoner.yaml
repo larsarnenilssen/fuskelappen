@@ -2,6 +2,15 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 1.0.1
+    dato: 2026-10-09
+    nytt:
+      - nb: "Velkomst: en kort omvisning i appen, med valg av fylke og skole, rolle med forslag til favoritter og dagens jukselapp."
+        nn: "Velkomst: ei kort omvising i appen, med val av fylke og skule, rolle med forslag til favorittar og dagens jukselapp."
+      - nb: Du finner velkomsten nederst på forsiden («Ny her? Se velkomsten») og i Innstillinger.
+        nn: Du finn velkomsten nedst på framsida («Ny her? Sjå velkomsten») og i Innstillingar.
+      - nb: Overskriftene over veiviserne og kalkulatorene står i entall når det er ett verktøy, og i flertall når det er flere.
+        nn: Overskriftene over vegvisarane og kalkulatorane står i eintal når det er eitt verktøy, og i fleirtal når det er fleire.
   - versjon: 0.46.0
     dato: 2026-10-08
     nytt:

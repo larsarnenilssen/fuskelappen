@@ -367,7 +367,9 @@ export function Velkomst({ onLukk }: { onLukk: () => void }) {
             <li key={t.id} class={i < nr ? 'vk-ferdig' : i === nr ? 'vk-her' : undefined} />
           ))}
         </ol>
-        <div class="vk-innhold" ref={innhold} key={gjeldende.id}>
+        {/* Innholdet ruller for seg, og kan få fokus, så det kan rulles med tastaturet også når ingenting i det kan få
+            fokus (WCAG 2.1.1). */}
+        <div class="vk-innhold" ref={innhold} key={gjeldende.id} tabIndex={0} role="region" aria-labelledby="velkomst-tittel">
           <h2 id="velkomst-tittel" tabIndex={-1} ref={tittel}>
             {gjeldende.tittel}
           </h2>
