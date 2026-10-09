@@ -7,13 +7,18 @@
 # - «Sett versjonstag» kaller den med den nye taggen. I en kalt arbeidsflyt er github.event_name den kallende
 #   arbeidsflytens hendelse (push til main), så videresendingen må også sjekke at det er en tag som er pushet.
 #
-# Nyhetene (data/nyheter, avgjørelse 084) hentes også fra main, til appen og til testversjonen. Det samme gjelder de
-# godkjente lokale reglene (lokale/, avgjørelse 093), så en godkjent regel publiseres uten ny versjon.
-# Koden bygges alltid fra taggen. Kildestatusen og registerdataene (Grep og skoleregisteret) hentes fra main,
-# slik at de oppdateres hver uke (avgjørelse 018). Det samme gjelder resultatene fra Elevundersøkelsen, så et nytt
-# skoleår kommer med uten ny versjon (avgjørelse 077), og nøkkeltallene fra statistikkbanken (avgjørelse 080). Består ikke taggens tester med dataene fra main, brukes
-# taggens egne data.
+# Koden bygges alltid fra taggen. Dataene hentes ferske (avgjørelse 018 og 098):
+# - Kildestatusen og alle datamappene kildesjekken oppdaterer på main (DATA_FRA_MAIN under: Grep, skoleregisteret,
+#   Udir, VIGO, utdanning.no, NDLA, lov- og forskriftstekst, skoleruta, eksamens- og inntaksdatoene, Elevundersøkelsen
+#   og statistikken), og de godkjente lokale reglene (lokale/, avgjørelse 093). Slik kommer ny lovtekst og nye datoer
+#   ut uten ny versjon. Består ikke taggens tester med dataene fra main, brukes taggens egne data, med en advarsel.
+#   En eldre versjon som mangler en av mappene, bruker den ikke og får den ikke.
+# - Nyhetene fra grenen nyheter (avgjørelse 084 og 098), til appen og til testversjonen.
 # Selve publiseringen kjører fra main, fordi GitHub Pages som standard bare tillater publisering derfra.
+#
+# Røyktest (avgjørelse 099): Etter publiseringen sjekkes det at jukselappen.no viser nøyaktig den utgaven som ble
+# bygget. Feiler den, eller noe annet, kommer saken om feil i automatikken (avgjørelse 085): fra arbeidsflyten som
+# kalte publiseringen, eller fra jobben «Varsle eier» her når «Publiser» er startet for seg.
 #
 # Adressen (avgjørelse 065): Bygget legges under stien GitHub Pages oppgir, så appen følger domenet som er satt under
 # Settings → Pages. Endres domenet, må appen publiseres på nytt (Actions → Publiser → Run workflow).
@@ -68,6 +73,12 @@ jobs:
     outputs:
       tag: ${{ steps.versjon.outputs.tag }}
       ta_ned_test: ${{ steps.test.outputs.ta_ned }}
+      indeks: ${{ steps.merke.outputs.indeks }}
+      versjon: ${{ steps.merke.outputs.versjon }}
+    # Datamappene kildesjekken lagrer på main (kilder.yml, «Lagre kildestatus»), og de lokale reglene. Listen testes
+    # mot kilder.yml i tests/unit/arbeidsflyter.test.ts (avgjørelse 098).
+    env:
+      DATA_FRA_MAIN: data/grep data/skoler data/udir data/vigo data/utdanning data/ndla data/lovdata data/skolerute data/eksamen data/inntak data/elevundersokelsen data/statistikk lokale
     steps:
       - uses: actions/checkout@v5
         with:
@@ -104,23 +115,32 @@ jobs:
             exit 1
           fi
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-      - name: Hent koden for versjonen, med fersk kildestatus og registerdata fra main
+      - name: Hent koden for versjonen, med fersk kildestatus og data fra main
         if: steps.versjon.outputs.tag != ''
         env:
           TAG: ${{ steps.versjon.outputs.tag }}
+          ADRESSE: ${{ steps.pages.outputs.base_url }}
         run: |
           cp data/status/kildestatus.json "$RUNNER_TEMP/kildestatus.json"
-          mkdir -p "$RUNNER_TEMP/data"
-          cp -r data/grep data/skoler data/elevundersokelsen data/statistikk "$RUNNER_TEMP/data/"
-          # Nyhetene hentes hver dag til main (avgjørelse 084). Filen hentes av appen ved siden av bygget.
-          if [ -d data/nyheter ]; then cp -r data/nyheter "$RUNNER_TEMP/data/"; fi
-          # De godkjente lokale reglene (avgjørelse 093). Versjoner før 0.46.0 har ikke mappen og bruker den ikke.
-          if [ -d lokale ]; then cp -r lokale "$RUNNER_TEMP/lokale"; fi
+          for d in $DATA_FRA_MAIN; do
+            if [ -d "$d" ]; then mkdir -p "$RUNNER_TEMP/main/$d" && cp -r "$d/." "$RUNNER_TEMP/main/$d/"; fi
+          done
+          # Nyhetene ligger på grenen nyheter (avgjørelse 098). Før grenen finnes, brukes nyhetene som er publisert.
+          mkdir -p "$RUNNER_TEMP/nyheter"
+          if git fetch --quiet origin nyheter 2>/dev/null; then
+            git show FETCH_HEAD:nyheter.json > "$RUNNER_TEMP/nyheter/nyheter.json"
+          elif curl -fsSL --max-time 30 "$ADRESSE/data/nyheter/nyheter.json" -o "$RUNNER_TEMP/nyheter/publisert.json" && jq -e '.saker' "$RUNNER_TEMP/nyheter/publisert.json" >/dev/null; then
+            mv "$RUNNER_TEMP/nyheter/publisert.json" "$RUNNER_TEMP/nyheter/nyheter.json"
+          else
+            echo "::warning::Fant ingen nyheter, verken på grenen nyheter eller på $ADRESSE."
+          fi
           git checkout --quiet "$TAG"
           cp "$RUNNER_TEMP/kildestatus.json" data/status/kildestatus.json
-          cp -r "$RUNNER_TEMP/data/grep" "$RUNNER_TEMP/data/skoler" "$RUNNER_TEMP/data/elevundersokelsen" "$RUNNER_TEMP/data/statistikk" data/
-          if [ -d "$RUNNER_TEMP/data/nyheter" ]; then cp -r "$RUNNER_TEMP/data/nyheter" data/; fi
-          if [ -d "$RUNNER_TEMP/lokale" ] && [ -d lokale ]; then cp -r "$RUNNER_TEMP/lokale/." lokale/; fi
+          # Mappen fra main erstatter mappen i versjonen, så filer som er fjernet på main, også forsvinner. En versjon
+          # som ikke har mappen, bruker den ikke, og får den ikke.
+          for d in $DATA_FRA_MAIN; do
+            if [ -d "$RUNNER_TEMP/main/$d" ] && [ -d "$d" ]; then rm -rf "$d" && cp -r "$RUNNER_TEMP/main/$d" "$d"; fi
+          done
           VERSJON=$(node -p "require('./package.json').version")
           if [ "v$VERSJON" != "$TAG" ]; then
             echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
@@ -133,22 +153,30 @@ jobs:
           cache: npm
       - if: steps.versjon.outputs.tag != ''
         run: npm ci
-      - name: Sjekk registerdataene fra main mot versjonens tester
+      - name: Sjekk dataene fra main mot versjonens tester
         if: steps.versjon.outputs.tag != ''
         env:
           TAG: ${{ steps.versjon.outputs.tag }}
         run: |
-          if git diff --quiet "$TAG" -- data/grep data/skoler data/elevundersokelsen data/statistikk lokale && [ -z "$(git status --porcelain -- data/elevundersokelsen data/statistikk lokale)" ]; then
-            echo "Registerdataene er de samme som i $TAG."
+          if git diff --quiet "$TAG" -- $DATA_FRA_MAIN && [ -z "$(git status --porcelain -- $DATA_FRA_MAIN)" ]; then
+            echo "Dataene fra main er de samme som i $TAG."
           elif npx vitest run; then
-            echo "Registerdataene fra main består testene i $TAG."
+            echo "Dataene fra main består testene i $TAG."
           else
-            echo "::warning::Registerdataene fra main består ikke testene i $TAG. Bruker registerdataene i $TAG."
-            git checkout "$TAG" -- data/grep data/skoler
-            git checkout "$TAG" -- lokale 2>/dev/null || true
-            # Eldre versjoner har ikke Elevundersøkelsen. Da fjernes dataene fra main.
-            git checkout "$TAG" -- data/elevundersokelsen 2>/dev/null || rm -rf data/elevundersokelsen
-            git checkout "$TAG" -- data/statistikk 2>/dev/null || rm -rf data/statistikk
+            echo "::warning::Dataene fra main består ikke testene i $TAG. Bruker dataene i $TAG."
+            for d in $DATA_FRA_MAIN; do
+              rm -rf "$d"
+              git checkout "$TAG" -- "$d" 2>/dev/null || true
+            done
+          fi
+      # Etter testene, så nyhetene ikke avgjør om dataene fra main kan brukes. De er testet før de ble lagret
+      # (nyheter.yml).
+      - name: Legg inn nyhetene
+        if: steps.versjon.outputs.tag != ''
+        run: |
+          if [ -s "$RUNNER_TEMP/nyheter/nyheter.json" ]; then
+            mkdir -p data/nyheter
+            cp "$RUNNER_TEMP/nyheter/nyheter.json" data/nyheter/nyheter.json
           fi
       - if: steps.versjon.outputs.tag != ''
         run: npm run build
@@ -172,15 +200,26 @@ jobs:
           fi
           COMMIT=$(git rev-parse --short FETCH_HEAD)
           git worktree add --quiet --detach "$RUNNER_TEMP/test" FETCH_HEAD
-          # Testversjonen får også de ferske nyhetene fra main.
-          if [ -d "$RUNNER_TEMP/data/nyheter" ]; then cp -r "$RUNNER_TEMP/data/nyheter" "$RUNNER_TEMP/test/data/"; fi
-          if [ -d "$RUNNER_TEMP/lokale" ] && [ -d "$RUNNER_TEMP/test/lokale" ]; then cp -r "$RUNNER_TEMP/lokale/." "$RUNNER_TEMP/test/lokale/"; fi
+          # Testversjonen får også de ferske nyhetene og de godkjente lokale reglene.
+          if [ -s "$RUNNER_TEMP/nyheter/nyheter.json" ]; then
+            mkdir -p "$RUNNER_TEMP/test/data/nyheter"
+            cp "$RUNNER_TEMP/nyheter/nyheter.json" "$RUNNER_TEMP/test/data/nyheter/nyheter.json"
+          fi
+          if [ -d "$RUNNER_TEMP/main/lokale" ] && [ -d "$RUNNER_TEMP/test/lokale" ]; then cp -r "$RUNNER_TEMP/main/lokale/." "$RUNNER_TEMP/test/lokale/"; fi
           if (cd "$RUNNER_TEMP/test" && npm ci && npm run build:test); then
             cp -r "$RUNNER_TEMP/test/dist-test" dist/test
             echo "::notice::Testversjonen fra $COMMIT ligger under test/."
           else
             echo "::warning::Testversjonen fra $COMMIT kunne ikke bygges. Publiserer uten testversjon."
           fi
+      # Røyktesten (avgjørelse 099) sammenligner forsiden på jukselappen.no med forsiden i bygget, og versjonsnummeret
+      # med versjon.json (eldre versjoner har ikke filen).
+      - name: Merke for røyktesten
+        id: merke
+        if: steps.versjon.outputs.tag != ''
+        run: |
+          echo "indeks=$(sha256sum dist/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "versjon=$(jq -r '.versjon // empty' dist/versjon.json 2>/dev/null || true)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v4
         if: steps.versjon.outputs.tag != ''
         with:
@@ -200,6 +239,30 @@ jobs:
     steps:
       - id: pages
         uses: actions/deploy-pages@v4
+      # Røyktest (avgjørelse 099): henter forsiden og versjon.json fra adressen GitHub Pages oppgir, med en ny
+      # parameter hver gang, så svaret ikke kommer fra mellomlageret. Prøver i fem minutter, fordi det kan ta litt tid
+      # før den nye utgaven er ute overalt.
+      - name: Sjekk at den nye utgaven er ute
+        env:
+          ADRESSE: ${{ steps.pages.outputs.page_url }}
+          INDEKS: ${{ needs.bygg.outputs.indeks }}
+          VERSJON: ${{ needs.bygg.outputs.versjon }}
+        run: |
+          adresse="${ADRESSE%/}/"
+          for forsok in 1 2 3 4 5 6 7 8 9 10; do
+            if [ "$forsok" -gt 1 ]; then sleep 30; fi
+            merke="roykt=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${forsok}"
+            indeks=$(curl -fsSL --compressed --max-time 30 "${adresse}?${merke}" | sha256sum | cut -d' ' -f1)
+            versjon=""
+            if [ -n "$VERSJON" ]; then versjon=$(curl -fsSL --compressed --max-time 30 "${adresse}versjon.json?${merke}" | jq -r '.versjon // empty' 2>/dev/null || true); fi
+            if [ "$indeks" = "$INDEKS" ] && [ "$versjon" = "$VERSJON" ]; then
+              echo "${adresse} viser utgaven som ble bygget${VERSJON:+ (versjon $VERSJON)}."
+              exit 0
+            fi
+            echo "Forsøk $forsok: forsiden ${indeks:0:12} (venter ${INDEKS:0:12}), versjon «${versjon}» (venter «${VERSJON}»)."
+          done
+          echo "::error::${adresse} viser ikke utgaven som nettopp ble publisert, etter fem minutter. Siden kan være nede, eller den forrige utgaven ligger fortsatt ute."
+          exit 1
 
   # Sletter grenen test når en versjon er publisert uten testversjonen (avgjørelse 095). Slettingen gjøres av
   # «Testversjon», som har lov til å skrive til repoet, så de som kaller publiseringen, ikke trenger det.
@@ -214,3 +277,18 @@ jobs:
       - run: gh workflow run testversjon.yml --repo "$GITHUB_REPOSITORY" --ref main -f ta_ned=true
         env:
           GH_TOKEN: ${{ github.token }}
+
+  # Varsel til eier når publiseringen eller røyktesten feiler, og lukking når den går bra igjen (avgjørelse 085 og
+  # 099). Bare når «Publiser» er startet for seg (versjonstag, testversjon eller for hånd). Når en annen arbeidsflyt
+  # kaller publiseringen, er github.workflow navnet på den, og den varsler selv.
+  varsle:
+    name: Varsle eier
+    needs: [bygg, publiser, ta-ned-test]
+    if: always() && github.workflow == 'Publiser' && github.event_name == 'workflow_dispatch' && !contains(needs.*.result, 'cancelled')
+    uses: ./.github/workflows/varsle.yml
+    with:
+      resultat: ${{ contains(needs.*.result, 'failure') && 'feilet' || 'ok' }}
+    permissions:
+      contents: read
+      issues: write
+      actions: read

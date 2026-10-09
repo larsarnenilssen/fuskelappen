@@ -2,7 +2,8 @@
 // arbeidsflytene som går av seg selv. Feilet kjøringen, lages eller oppdateres saken for arbeidsflyten (etikett
 // «feil») etter regelen i plan.ts. Gikk den bra, lukkes saken. Kjøres med Node uten npm ci:
 //   node --experimental-strip-types scripts/varsel/arbeidsflyt.ts
-// Miljø: RESULTAT (feilet eller ok), DELFEIL (steg som feilet uten å stoppe kjøringen, skilt med |), ARBEIDSFLYT, GITHUB_TOKEN, GITHUB_REPOSITORY, GITHUB_RUN_ID, GITHUB_RUN_NUMBER,
+// Miljø: RESULTAT (feilet eller ok), DELFEIL (steg som feilet uten å stoppe kjøringen, skilt med |), ARBEIDSFLYT,
+// JOBBER (bare disse jobbene, skilt med |; tom for alle), GITHUB_TOKEN, GITHUB_REPOSITORY, GITHUB_RUN_ID, GITHUB_RUN_NUMBER,
 // GITHUB_SERVER_URL, GITHUB_API_URL.
 import { arbeidsflytmerke, type Feiletjobb, feiltekst, feiltittel, loggutdrag } from './feil.ts';
 import { finnAapenSak, lagGithub, utforVarsel } from './github.ts';
@@ -40,7 +41,8 @@ async function feiledeJobber(): Promise<Feiletjobb[]> {
   if (!gh || !env.GITHUB_RUN_ID) return [];
   const { jobs } = await gh.kall<{ jobs: Jobb[] }>('GET', `/actions/runs/${env.GITHUB_RUN_ID}/jobs?per_page=100`);
   const delfeil = new Set((env.DELFEIL ?? '').split('|').filter(Boolean));
-  const feilet = jobs.filter((j) => j.conclusion === 'failure' || (j.steps ?? []).some((s) => delfeil.has(s.name)));
+  const bare = new Set((env.JOBBER ?? '').split('|').filter(Boolean));
+  const feilet = jobs.filter((j) => (bare.size === 0 || bare.has(j.name)) && (j.conclusion === 'failure' || (j.steps ?? []).some((s) => delfeil.has(s.name))));
   return Promise.all(
     feilet.map(async (j) => {
       const tekst = await logg(j.id);

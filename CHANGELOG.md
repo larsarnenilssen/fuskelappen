@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Lov- og forskriftsteksten, eksamens- og inntaksdatoene, skoleruta og de andre dataene fra kildene** kommer ut i appen uten ny versjon, når kildesjekken har hentet dem og appens tester består med dem. Før kom bare Grep, skoleregisteret og statistikken ut på denne måten.
 - **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.
 - **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
 - **Større tekst:** Brødteksten er 16 px, og datoer, merker og dempede linjer er litt større.

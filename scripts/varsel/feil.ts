@@ -1,16 +1,20 @@
 // Teksten i saken når en arbeidsflyt feiler (etikett «feil», avgjørelse 085): hva arbeidsflyten gjør, hva feilen
 // betyr for appen, hvor den feilet, et utdrag av loggen og hva eier gjør. Ren logikk, testet i
 // tests/unit/varsel.test.ts. Kjøres av arbeidsflyt.ts.
+import { FORMATRAD, feiltype } from './feiltype.ts';
 
 /** Arbeidsflytene som varsler, med navnet de har i .github/workflows. */
-export const ARBEIDSFLYTER: Readonly<Record<string, { gjor: string; betyr: string }>> = {
+/** `henter`: arbeidsflyten henter fra kildene, så en programfeil i loggen tyder på at en kilde har endret format. */
+export const ARBEIDSFLYTER: Readonly<Record<string, { gjor: string; betyr: string; henter?: boolean }>> = {
   Kildesjekk: {
     gjor: 'sjekker kildene, lenkene og dataene hver mandag og lager kontrollsaken',
     betyr: 'Kildestatusen og dataene i appen er ikke oppdatert denne gangen, og kontrollsaken kan mangle eller være gammel. Etter 14 dager uten en kildesjekk som går bra, viser appen kildestatusen som «utdatert».',
+    henter: true,
   },
   Nyheter: {
-    gjor: 'henter nyhetene hver morgen og publiserer appen med dem',
+    gjor: 'henter nyhetene hver time og publiserer appen når det er nye saker',
     betyr: 'Appen viser nyhetene fra forrige gang hentingen gikk bra.',
+    henter: true,
   },
   'Sett versjonstag': {
     gjor: 'setter versjonstaggen og publiserer en ny versjon av appen',
@@ -19,6 +23,18 @@ export const ARBEIDSFLYTER: Readonly<Record<string, { gjor: string; betyr: strin
   CI: {
     gjor: 'tester main etter hver fletting',
     betyr: 'Det er en feil på main. Appen på jukselappen.no er ikke berørt, men feilen må rettes før neste versjon.',
+  },
+  Publiser: {
+    gjor: 'bygger og publiserer appen på jukselappen.no, og sjekker etterpå at den nye utgaven faktisk er ute',
+    betyr: 'jukselappen.no viser kanskje den forrige utgaven av appen, eller svarer ikke. Brukere som har appen installert, kan bruke den uten nett.',
+  },
+  'Lokale regler': {
+    gjor: 'publiserer appen med de lokale reglene du har godkjent',
+    betyr: 'De nye lokale reglene er kanskje ikke ute. Appen viser reglene fra forrige publisering.',
+  },
+  Oppetid: {
+    gjor: 'sjekker hver time at jukselappen.no svarer, og melder fra når den ikke har svart to ganger på rad med ti minutters mellomrom',
+    betyr: 'jukselappen.no svarer ikke. Brukere som har appen installert, kan bruke den uten nett, men nye brukere kommer ikke inn.',
   },
   Godkjenning: {
     gjor: 'fører inn godkjenningene dine når du skriver /godkjent i en kontrollsak',
@@ -83,7 +99,10 @@ export function feiltekst(navn: string, kjoring: Kjoring, jobber: readonly Feile
         )),
     '',
     ...jobber.flatMap((j) => (j.utdrag ? [`<details><summary>Utdrag av loggen for «${j.navn}»</summary>`, '', '```text', j.utdrag, '```', '', `[Hele loggen](${j.url})`, '</details>', ''] : [])),
-    `**Hva du gjør:** Mange feil går over av seg selv, for eksempel når en kilde eller GitHub er nede en stund. Går neste kjøring bra, lukkes saken automatisk. Feiler den igjen på samme sted, eller står saken i mer enn et par dager, gi Claude lenken til denne saken. Du kan også starte kjøringen på nytt med «Re-run failed jobs» på [kjøringen](${kjoring.url}), eller se alle kjøringene under [Actions](${actions}).`,
+    // Ligner loggen på en programfeil eller et uventet format, går feilen ikke over av seg selv (avgjørelse 099).
+    om?.henter && jobber.some((j) => j.utdrag !== null && feiltype(j.utdrag) === 'format')
+      ? `**Hva du gjør:** ${FORMATRAD} Feilen går neppe over av seg selv. Går en senere kjøring bra, lukkes saken automatisk. Se alle kjøringene under [Actions](${actions}).`
+      : `**Hva du gjør:** Mange feil går over av seg selv, for eksempel når en kilde eller GitHub er nede en stund. Går neste kjøring bra, lukkes saken automatisk. Feiler den igjen på samme sted, eller står saken i mer enn et par dager, gi Claude lenken til denne saken. Du kan også starte kjøringen på nytt med «Re-run failed jobs» på [kjøringen](${kjoring.url}), eller se alle kjøringene under [Actions](${actions}).`,
     '',
     arbeidsflytmerke(navn),
   ].join('\n');

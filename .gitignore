@@ -7,3 +7,5 @@ test-results/
 playwright-report/
 *.log
 .DS_Store
+# Nyhetene ligger på grenen nyheter (avgjørelse 098). Lokalt kan de hentes med npm run hent:nyheter.
+data/nyheter/

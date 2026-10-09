@@ -26,3 +26,5 @@
   - Den første natten ble ikke hoppet over, som tillegget 08.10 sier. Kjøringen kom sju timer for sent.
 - **Endringen:** Hentingen kjører nå hver time (`47 * * * *`). Med samme forsinkelse kommer det da en kjøring omtrent hver time, også om morgenen.
 - **Ingen garanti:** GitHub lover ikke når planlagte kjøringer kommer, eller at de kommer. Skal nyhetene være der på et bestemt tidspunkt, må kjøringen startes utenfra (eier vurderer en ekstern tjeneste).
+
+**Endret 09.10.2026:** Nyhetsfilen ligger på grenen `nyheter` med én commit som skrives over, ikke på `main`, og appen publiseres bare når sakene er endret (avgjørelse 098).

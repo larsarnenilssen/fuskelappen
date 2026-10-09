@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest';
 import type { Nyheter } from '../../src/modules/nyheter/skjema.ts';
 import { nyhetsvarsel } from '../../scripts/nyheter/status.ts';
 import { arbeidsflytmerke, feiltekst, loggutdrag } from '../../scripts/varsel/feil.ts';
+import { FORMATRAD, feiltype } from '../../scripts/varsel/feiltype.ts';
 import { lesMerke, planleggVarsel, punktnokkel, type Varsel } from '../../scripts/varsel/plan.ts';
 
 const varsel = (tekst: string | null, idag: string): Varsel => ({
@@ -72,7 +73,7 @@ describe('feil i automatikken', () => {
       ],
       'https://github.com/r/actions',
     );
-    expect(tekst).toContain('Arbeidsflyten **Nyheter** henter nyhetene hver morgen');
+    expect(tekst).toContain('Arbeidsflyten **Nyheter** henter nyhetene hver time');
     expect(tekst).toContain('Den feilet sist 07.10.2026 ([kjøring 42](https://github.com/r/actions/runs/1)).');
     expect(tekst).toContain('**Hva det betyr:** Appen viser nyhetene fra forrige gang hentingen gikk bra.');
     expect(tekst).toContain('- Jobben «Hent nyhetene», steget «Hent nyhetene»\n');
@@ -86,6 +87,35 @@ describe('feil i automatikken', () => {
     const logg = ['2026-10-07T04:47:01.1234567Z ##[group]Run npm run hent:nyheter', '2026-10-07T04:47:02.0000000Z Henter udir', '2026-10-07T04:47:03.0000000Z ##[endgroup]', '2026-10-07T04:47:04.0000000Z ##[error]Process completed with exit code 1.', '2026-10-07T04:47:05.0000000Z etter'].join('\n');
     expect(loggutdrag(logg)).toBe('Henter udir\n##[error]Process completed with exit code 1.\netter');
     expect(loggutdrag('ingen feil her')).toBeNull();
+  });
+
+  it('ber eier sende saken til Claude når loggen fra en henting ligner en programfeil (avgjørelse 099)', () => {
+    const kjoring = { nummer: '7', url: 'https://github.com/r/actions/runs/7', dato: '2026-10-08' };
+    const jobb = (utdrag: string) => [{ navn: 'Sjekk kilder', steg: [{ navn: 'Hent Grep', fortsatte: true }], url: 'https://github.com/r/job/7', utdrag }];
+    const format = feiltekst('Kildesjekk', kjoring, jobb("TypeError: Cannot read properties of undefined (reading 'length')\n##[error]Process completed with exit code 1."), 'https://github.com/r/actions');
+    expect(format).toContain(`**Hva du gjør:** ${FORMATRAD}`);
+    expect(format).not.toContain('Mange feil går over av seg selv');
+    const nett = feiltekst('Kildesjekk', kjoring, jobb('TypeError: fetch failed (ECONNRESET: read ECONNRESET)\n##[error]Process completed with exit code 1.'), 'https://github.com/r/actions');
+    expect(nett).toContain('Mange feil går over av seg selv');
+    // CI henter ingen kilder, så en TypeError der er en feil i koden, ikke i en kilde.
+    expect(feiltekst('CI', kjoring, jobb('TypeError: x is not a function'), 'https://github.com/r/actions')).toContain('Mange feil går over av seg selv');
+  });
+});
+
+describe('nettfeil og formatendring (avgjørelse 099)', () => {
+  it('skiller programfeil og uventet format fra nett, tidsavbrudd og feil hos serveren', () => {
+    expect(feiltype("Nøkkeltallene: Cannot read properties of undefined (reading 'length'). Appen viser forrige henting.")).toBe('format');
+    expect(feiltype('Fant ikke innholdet (selektor «main»). Siden kan ha fått ny struktur.')).toBe('format');
+    expect(feiltype('Tallene fra statistikkbanken ser ikke ut som ventet: mangler landet. Beholder forrige fil.')).toBe('format');
+    expect(feiltype('Nyhetene passer ikke skjemaet: invalid_type')).toBe('format');
+    expect(feiltype('https://www.udir.no/x svarte 404 Not Found')).toBe('format');
+    expect(feiltype('fetch failed (ECONNRESET: read ECONNRESET)')).toBe('nett');
+    expect(feiltype('TypeError: fetch failed')).toBe('nett');
+    expect(feiltype('The operation was aborted due to timeout')).toBe('nett');
+    expect(feiltype('https://www.udir.no/x svarte 503 Service Unavailable')).toBe('nett');
+    expect(feiltype('Tidsavbrudd')).toBe('nett');
+    expect(feiltype('https://www.ks.no/x svarte 403 Forbidden')).toBe('ukjent');
+    expect(feiltype('Hentingen av lov- og forskriftstekst kjørte ikke. Se loggen.')).toBe('ukjent');
   });
 });
 

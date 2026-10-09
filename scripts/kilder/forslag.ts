@@ -104,9 +104,9 @@ export function forslagstekst(endringer: readonly Verdiendring[], feiledeTester:
 /** Beskrivelsen av PR-en med nye Grep-data når testene feiler. */
 export function grepforslagstekst(sammendrag: string, detaljer: readonly string[], feiledeTester: readonly string[]): string {
   return [
-    'Grep er endret slik at testene feiler, og derfor er de nye dataene ikke tatt inn automatisk. Denne PR-en har de nye dataene, så du og Claude kan se hva som må rettes.',
+    'Nye data fra kildesjekken (Grep, lovteksten, statistikken eller de andre kildene som hentes hver uke) gjør at testene feiler, og derfor er de ikke tatt inn automatisk. Denne PR-en har de nye dataene, så du og Claude kan se hva som må rettes.',
     '',
-    `**Endringer:** ${sammendrag}`,
+    `**Endringer i Grep:** ${sammendrag}`,
     '',
     ...detaljer.map((d) => `- ${d}`),
     '',

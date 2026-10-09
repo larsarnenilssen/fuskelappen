@@ -8,3 +8,5 @@
 - Resten står som før: Grep, Udir-1, VIGO, utdanning.no, NDLA, NOR, lovtekst, Lovtidend (avgjørelse 061) og lenkesjekken (avgjørelse 062) hver uke, hele registeret over lokale forskrifter én gang i året.
 
 **Konsekvens:** Nye eksamensdatoer kommer inn innen en uke. Lovteksten er oppdatert innen et døgn etter de store datoene. Kontrollsaken oppdateres også ved de ekstra kjøringene, og kontrollrunden lages fortsatt bare én gang per runde.
+
+**Endret 09.10.2026:** Lovteksten publiseres fra `main` uten ny versjon, så den er ute innen et døgn også når det ikke kommer en ny versjon (avgjørelse 098).
