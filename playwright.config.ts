@@ -1,7 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
 const ci = !!process.env.CI;
-const port = 4173;
+// E2E_PORT gir en egen port lokalt, så flere kjøringer samtidig ikke bruker samme server (avgjørelse 097).
+const port = Number(process.env.E2E_PORT ?? 4173);
 // I CI bygges appen én gang i en egen jobb, og delene (shards) får bygget som artefakt (avgjørelse 055).
 const ferdigBygd = !!process.env.E2E_FERDIG_BYGD;
 

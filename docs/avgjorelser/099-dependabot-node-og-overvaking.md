@@ -16,3 +16,5 @@
 **Konsekvens:** Det kommer noen få PR-er fra Dependabot i måneden. Eier må gi Dependabot lov i innstillingene (se rapporten til eier). En publisering som ikke kommer ut, eller en side som er nede, gir én e-post, ikke én per time. Oppetiden sjekkes bare så ofte som GitHub starter kjøringene. En ekstern vakt ville vært mer presis, men er en tjeneste utenfor GitHub som eier må velge selv.
 
 **Endret 09.10.2026:** Nye hovedversjoner av `@types/node` foreslås ikke. Typene følger Node-versjonen appen bruker (`.nvmrc`), og endres sammen med den.
+
+**Endret 09.10.2026:** TypeScript 7 foreslås ikke før typescript-eslint støtter den (8.71 krever TypeScript under 6.1, så `npm ci` feiler). Regelen i `dependabot.yml` tas ut når typescript-eslint støtter TypeScript 7.

@@ -54,10 +54,10 @@ test.describe('målform og tema', () => {
     expect(new Set(farger).size).toBe(1);
   });
 
-  test('følger systemets mørke tema', async ({ browser }) => {
-    const kontekst = await browser.newContext({ colorScheme: 'dark' });
+  test('følger systemets mørke tema', async ({ browser, baseURL }) => {
+    const kontekst = await browser.newContext({ colorScheme: 'dark', baseURL });
     const side = await kontekst.newPage();
-    await side.goto('http://localhost:4173/jukselappen/');
+    await side.goto('./');
     await side.locator('.skall').waitFor();
     const bakgrunn = await side.evaluate(() => getComputedStyle(document.querySelector('.skall') as Element).backgroundColor);
     const lys = await side.evaluate(() => {
