@@ -13,6 +13,10 @@ updates:
     open-pull-requests-limit: 4
     commit-message:
       prefix: 'Avhengigheter'
+    # @types/node følger Node-versjonen appen bruker (.nvmrc, Node 24), ikke den nyeste Node.
+    ignore:
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
     groups:
       npm-utvikling:
         dependency-type: development

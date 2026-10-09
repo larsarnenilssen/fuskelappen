@@ -14,3 +14,5 @@
 - **Nettfeil eller formatendring** (`scripts/varsel/feiltype.ts`): En feilmelding som ligner en programfeil eller et uventet svar (TypeError, «Cannot read properties», skjemafeil, «ser ikke ut som ventet», «Fant ikke innholdet», 404) regnes som en formatendring. Nett, tidsavbrudd, 429 og 5xx regnes som forbigående. I kontrollsaken står kildene med formatendring for seg, med «Kilden ser ut til å ha endret format – send lenken til denne saken til Claude.» Det samme står i saken om feil i automatikken for Kildesjekk og Nyheter når loggen ligner en programfeil. Det andre står som før.
 
 **Konsekvens:** Det kommer noen få PR-er fra Dependabot i måneden. Eier må gi Dependabot lov i innstillingene (se rapporten til eier). En publisering som ikke kommer ut, eller en side som er nede, gir én e-post, ikke én per time. Oppetiden sjekkes bare så ofte som GitHub starter kjøringene. En ekstern vakt ville vært mer presis, men er en tjeneste utenfor GitHub som eier må velge selv.
+
+**Endret 09.10.2026:** Nye hovedversjoner av `@types/node` foreslås ikke. Typene følger Node-versjonen appen bruker (`.nvmrc`), og endres sammen med den.
