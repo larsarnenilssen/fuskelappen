@@ -17,7 +17,7 @@ test.describe('navigasjon', () => {
     await expect(meny.getByRole('button', { name: 'Søk' })).toHaveCount(0);
     await meny.getByRole('link', { name: 'Innstillinger' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
-    await expect(meny.getByRole('link', { name: 'Innstillinger' })).toHaveAttribute('aria-current', 'page');
+    await expect(meny.getByRole('button', { name: 'Innstillinger' })).toHaveAttribute('aria-pressed', 'true');
     await expect(page).toHaveTitle('Innstillinger – Jukselappen');
     // Søket åpnes over siden (eier 05.10.2026). Tilbake lukker det og viser siden igjen.
     await meny.getByRole('button', { name: 'Søk' }).click();
@@ -137,8 +137,28 @@ test.describe('alle sider under en modul har sti øverst', () => {
   }
 });
 
+test.describe('innstillingsknappen i toppfeltet (eier 09.10.2026)', () => {
+  test('i Innstillinger er den gul og fører tilbake til siden brukeren kom fra', async ({ page }) => {
+    await page.goto('./#/fylker/46');
+    await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+    const meny = page.getByRole('navigation', { name: 'Hovedmeny' });
+    await meny.getByRole('link', { name: 'Innstillinger' }).click();
+    await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
+    await meny.getByRole('button', { name: 'Innstillinger' }).click();
+    await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+    await expect(meny.getByRole('link', { name: 'Innstillinger' })).toBeVisible();
+  });
+
+  test('kom brukeren rett til Innstillinger, fører den til forsiden', async ({ page }) => {
+    await page.goto('./#/innstillinger');
+    await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
+    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('button', { name: 'Innstillinger' }).click();
+    await expect(page.getByTestId('forbehold')).toBeVisible();
+  });
+});
+
 test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
-  test('åpnes over siden, og «Lukk søket» og Esc viser siden der brukeren var', async ({ page }) => {
+  test('åpnes over siden, og Esc viser siden der brukeren var, uten egen knapp for å lukke (eier 09.10.2026)', async ({ page }) => {
     await page.goto('./#/fylker/46');
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
     // Rull først når siden er lastet, så posisjonen ikke flyttes av innhold som kommer etterpå.
@@ -148,15 +168,12 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
     // Et vanlig trykk i Playwright ruller først knappen inn i bildet. En person som trykker, ruller ikke siden.
     await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).dispatchEvent('click');
     await expect(page.getByRole('searchbox')).toBeFocused();
-    await page.getByRole('button', { name: 'Lukk søket' }).click();
-    await expect(page.locator('main h1')).toBeVisible();
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
-    await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
+    await expect(page.getByRole('dialog', { name: 'Søk' }).getByRole('button', { name: /Lukk/ })).toHaveCount(0);
     // Esc lyttes etter når søket er åpnet, ikke i samme øyeblikk som trykket.
-    await expect(page.getByRole('searchbox')).toBeFocused();
     await page.keyboard.press('Escape');
     await expect(page.getByRole('searchbox')).toHaveCount(0);
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
   });
 
   test('siden står synlig bak søket, og et trykk utenfor lukker det der brukeren var', async ({ page }) => {

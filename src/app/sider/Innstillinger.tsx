@@ -168,10 +168,8 @@ export default function Innstillinger({ sporring }: SideProps) {
 
       <Tilbakemelding overskrift="legend" />
 
-      {/* Kildestatusen sto i toppfeltet. Den står her, nederst, sammen med «Om» (avgjørelse 056). */}
-      <p class="innstillinger-kildestatus">
-        <KildestatusIndikator />
-      </p>
+      {/* Velkomsten, kildesjekken og Om appen nederst, i den rekkefølgen (eier 09.10.2026). Kildestatusen sto i
+          toppfeltet før avgjørelse 056. */}
       <ul class="liste">
         <li>
           {/* Velkomsten kan åpnes igjen her og fra forsiden (fase 10). */}
@@ -183,6 +181,9 @@ export default function Innstillinger({ sporring }: SideProps) {
             </span>
             <Ikon navn="hoyre" class="ikon-liten" />
           </button>
+        </li>
+        <li>
+          <KildestatusIndikator />
         </li>
         <li>
           <a class="listelenke" href="#/om">

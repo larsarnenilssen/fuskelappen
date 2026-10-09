@@ -206,16 +206,24 @@ export function Skall() {
                 <Ikon navn="sok" />
               </button>
             )}
-            <a class="ikonknapp" href="#/innstillinger" aria-label={t('nav.innstillinger')} title={t('nav.innstillinger')} aria-current={paaInnstillinger ? 'page' : undefined}>
-              <Ikon navn="innstillinger" />
-            </a>
+            {paaInnstillinger ? (
+              // I Innstillinger er knappen gul og fører tilbake til siden brukeren kom fra, eller til forsiden (eier
+              // 09.10.2026).
+              <button type="button" class="ikonknapp" aria-pressed="true" aria-label={t('nav.innstillinger')} title={t('nav.innstillingerTilbake')} onClick={gaaTilbake}>
+                <Ikon navn="innstillinger" />
+              </button>
+            ) : (
+              <a class="ikonknapp" href="#/innstillinger" aria-label={t('nav.innstillinger')} title={t('nav.innstillinger')}>
+                <Ikon navn="innstillinger" />
+              </a>
+            )}
           </nav>
         </div>
       </header>
       {__TESTVERSJON__ && <p class="testversjon">{t('app.testversjon')}</p>}
       {sok !== null && (
         // Søkefeltet som på forsiden, lagt over siden (eier 05.10.2026). Siden står synlig bak. Et trykk utenfor feltet
-        // og treffene, «Lukk», Esc og tilbake lukker søket.
+        // og treffene, Esc og tilbake lukker søket. Knappen «Lukk søket» er tatt bort (eier 09.10.2026).
         <div
           class="toppsok-lag"
           onClick={(e) => {
@@ -223,12 +231,6 @@ export function Skall() {
           }}
         >
           <div class="toppsok forside-topp" role="dialog" aria-modal="true" aria-label={t('nav.sok')}>
-            <div class="toppsok-rad">
-              <button type="button" class="toppsok-lukk" onClick={lukkToppsok}>
-                <Ikon navn="lukk" class="ikon-liten" />
-                {t('sok.lukk')}
-              </button>
-            </div>
             <Sokeboks etikett={t('sok.etikett')} plassholder={t('sok.plassholder')} startverdi={sok} autofokus onEndring={settToppsok} />
           </div>
         </div>

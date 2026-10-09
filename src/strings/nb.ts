@@ -32,6 +32,7 @@ export const nb = {
   nav: {
     sok: 'Søk',
     innstillinger: 'Innstillinger',
+    innstillingerTilbake: 'Lukk innstillingene og gå tilbake',
   },
   forside: {
     sidekolonne: 'Sidekolonne',
@@ -149,7 +150,6 @@ export const nb = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
-    lukk: 'Lukk søket',
     visFlere: 'Vis flere treff ({antall} til)',
     filter: {
       etikett: 'Vis treff fra',
@@ -314,6 +314,9 @@ export const nb = {
   kildestatus: {
     tittel: 'Kilder og kildestatus',
     indikator: 'Kildestatus: {status}',
+    // Raden i Innstillinger (eier 09.10.2026). Navnet til skjermlesere er «Kildesjekken: …».
+    sjekken: 'Kildesjekken',
+    sjekkenNavn: 'Kildesjekken: {status}',
     telling: 'Virker: {virker}. Endret de siste {dager} dagene: {endret}. Svarer ikke: {svarerIkke}.',
     kilde: { virker: 'virker', endretNylig: 'endret {dato}', svarerIkke: 'svarer ikke', forHand: 'sjekkes for hånd' },
     status: {

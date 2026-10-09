@@ -32,6 +32,7 @@ export const nn: Tekster = {
   nav: {
     sok: 'Søk',
     innstillinger: 'Innstillingar',
+    innstillingerTilbake: 'Lukk innstillingane og gå tilbake',
   },
   forside: {
     sidekolonne: 'Sidekolonne',
@@ -149,7 +150,6 @@ export const nn: Tekster = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
-    lukk: 'Lukk søket',
     visFlere: 'Vis fleire treff ({antall} til)',
     filter: {
       etikett: 'Vis treff frå',
@@ -314,6 +314,8 @@ export const nn: Tekster = {
   kildestatus: {
     tittel: 'Kjelder og kjeldestatus',
     indikator: 'Kjeldestatus: {status}',
+    sjekken: 'Kjeldesjekken',
+    sjekkenNavn: 'Kjeldesjekken: {status}',
     telling: 'Verkar: {virker}. Endra dei siste {dager} dagane: {endret}. Svarar ikkje: {svarerIkke}.',
     kilde: { virker: 'verkar', endretNylig: 'endra {dato}', svarerIkke: 'svarar ikkje', forHand: 'blir sjekka for hand' },
     status: {
