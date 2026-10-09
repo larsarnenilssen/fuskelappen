@@ -204,7 +204,7 @@ select {
   justify-content: flex-end;
 }
 
-.topplinje .ikonknapp[aria-current='page'] {
+.topplinje .ikonknapp[aria-pressed='true'] {
   background: var(--farge-aksent);
   color: var(--farge-aksent-tekst);
 }
@@ -3717,26 +3717,6 @@ p.fagkort-tittel {
   overflow-y: auto;
   overscroll-behavior: contain;
   box-shadow: var(--skygge-flytende);
-}
-
-.toppsok-rad {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: var(--rom-1);
-}
-
-.toppsok-lukk {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-1);
-  min-height: var(--trykkflate);
-  padding: 0 var(--rom-2);
-  border: 0;
-  background: transparent;
-  color: var(--farge-topplinje-tekst);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .forside-topp .sokeboks {

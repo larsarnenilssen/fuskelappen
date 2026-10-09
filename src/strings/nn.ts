@@ -32,6 +32,7 @@ export const nn: Tekster = {
   nav: {
     sok: 'Søk',
     innstillinger: 'Innstillingar',
+    innstillingerTilbake: 'Lukk innstillingane og gå tilbake',
   },
   forside: {
     sidekolonne: 'Sidekolonne',
@@ -149,7 +150,6 @@ export const nn: Tekster = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
-    lukk: 'Lukk søket',
     visFlere: 'Vis fleire treff ({antall} til)',
     filter: {
       etikett: 'Vis treff frå',

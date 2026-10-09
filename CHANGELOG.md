@@ -4,6 +4,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [1.0.2] – 2026-10-09
+
+### Endret
+
+- **Søket over sidene** har ikke lenger knappen «Lukk søket». Esc, et trykk utenfor søket og tilbake lukker det.
+- **Innstillinger:** Den gule knappen øverst fører tilbake til siden du kom fra, eller til forsiden hvis du kom rett til Innstillinger.
+
 ## [1.0.1] – 2026-10-09
 
 ### Lagt til

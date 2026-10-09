@@ -32,6 +32,7 @@ export const nb = {
   nav: {
     sok: 'Søk',
     innstillinger: 'Innstillinger',
+    innstillingerTilbake: 'Lukk innstillingene og gå tilbake',
   },
   forside: {
     sidekolonne: 'Sidekolonne',
@@ -149,7 +150,6 @@ export const nb = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
-    lukk: 'Lukk søket',
     visFlere: 'Vis flere treff ({antall} til)',
     filter: {
       etikett: 'Vis treff fra',
