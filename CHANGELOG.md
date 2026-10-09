@@ -8,6 +8,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Gjenopprett sikkerhetskopien:** Har appen tatt en sikkerhetskopi før den rettet eller erstattet data den ikke kunne lese, kan du hente den tilbake under Innstillinger, «Dine data». Teksten over knappen sier hvor mange favoritter kopien har. Det som var lagret før, blir den nye kopien, så du kan angre.
 
+### Endret
+
+- **Fag og læreplaner:** Gruppene med fag (fellesfag, felles programfag, valgfrie programfag og yrkesfaglig fordypning) er lukket når siden åpnes. Åpner du en gruppe og går til et fag, er den åpen når du går tilbake.
+
 ## [1.2.0] – 2026-10-09
 
 ### Lagt til

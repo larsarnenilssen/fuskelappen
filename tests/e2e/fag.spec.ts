@@ -1,6 +1,12 @@
 // Fag og læreplaner (fase 2): søk og filter, fagside med kompetansemål og vurdering, målform og favoritter.
-import { expect, test } from '@playwright/test';
+import { expect, type Page, test } from '@playwright/test';
 import { aapneDel, erMobil, settLagret } from './hjelp.ts';
+
+/** Åpner gruppene i fagsøket, som er lukket når siden åpnes (eier 09.10.2026). */
+async function aapneFaggrupper(page: Page): Promise<void> {
+  const lukket = page.locator('.faggruppe-2 > .faggruppe-tittel > button[aria-expanded="false"]');
+  while ((await lukket.count()) > 0) await lukket.first().click();
+}
 
 test.describe('fag og læreplaner', () => {
   test('søk og filter følger adressen, og fører til fagsiden', async ({ page }) => {
@@ -33,12 +39,15 @@ test.describe('fag og læreplaner', () => {
     const grupper = page.locator('.faggruppe-2 > .faggruppe-tittel');
     // Yrkesfaglig fordypning står først på et yrkesfaglig program.
     await expect(grupper.first()).toContainText('Yrkesfaglig fordypning');
-    await expect(page.getByRole('button', { name: /^Felles programfag \(\d+\)/ })).toHaveAttribute('aria-expanded', 'true');
+    // Alle gruppene er lukket når siden åpnes (eier 09.10.2026).
+    for (const knapp of await grupper.getByRole('button').all()) await expect(knapp).toHaveAttribute('aria-expanded', 'false');
     // Hele overskriftsraden åpner og lukker gruppen, også til høyre for teksten (eier 02.10.2026).
     const felles = page.getByRole('button', { name: /^Felles programfag \(\d+\)/ });
     await felles.scrollIntoViewIfNeeded();
     const rad = await felles.boundingBox();
     await page.mouse.click((rad?.x ?? 0) + (rad?.width ?? 0) - 40, (rad?.y ?? 0) + (rad?.height ?? 0) / 2);
+    await expect(felles).toHaveAttribute('aria-expanded', 'true');
+    await felles.click();
     await expect(felles).toHaveAttribute('aria-expanded', 'false');
     await felles.click();
     await expect(felles).toHaveAttribute('aria-expanded', 'true');
@@ -52,11 +61,13 @@ test.describe('fag og læreplaner', () => {
     await expect(varianter).not.toBeChecked();
     await varianter.check();
     await expect(page).toHaveURL(/vis=variant/);
+    await aapneFaggrupper(page);
     await expect(page.getByText(/Kvensk/).first()).toBeVisible();
     // Uten de vanlige fagene står bare variantene igjen.
     await page.getByRole('checkbox', { name: /Vanlige fag/ }).uncheck();
     await expect(page).toHaveURL(/vanlige=nei/);
     await expect(page.getByRole('button', { name: /^Yrkesfaglig fordypning/ })).toHaveCount(0);
+    await aapneFaggrupper(page);
     await expect(page.getByText(/Kvensk/).first()).toBeVisible();
 
     // Et søk på en hel fagkode viser faget, også når det er skjult.
@@ -193,6 +204,8 @@ test.describe('fag og læreplaner', () => {
   test('«Til toppen» vises når brukeren har rullet langt ned i fagsøket, og fører til toppen (eier 02.10.2026)', async ({ page }) => {
     await page.goto('./#/fag?program=HS&vis=variant,bedrift,andre');
     await expect(page.locator('.faggruppe-2').first()).toBeVisible();
+    await aapneFaggrupper(page);
+    await page.evaluate(() => window.scrollTo(0, 0));
     const knapp = page.getByRole('button', { name: 'Til toppen' });
     await expect(knapp).toHaveCount(0);
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
