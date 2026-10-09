@@ -9,7 +9,7 @@ import type { KildeRef } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
 import { Kildeliste } from './Kildelenke.tsx';
 import { useHusketApen, nokkelFra } from './husket.ts';
-import { erHentet, paragraferFra } from './kilderader.ts';
+import { erHentet, kanVisesIRegelverket, paragraferFra } from './kilderader.ts';
 import { Paragraflenker } from './Paragraflenker.tsx';
 
 interface Props {
@@ -36,7 +36,7 @@ export function KortfotRader({ paragrafer: oppgittFelles, kilder: kilderFelles, 
   // Paragrafene i privatskolelova og forskriften fra merknaden for privatskoler kommer med også når kortet oppgir
   // paragrafene selv.
   const privatParagrafer = privat ? fraKilder.filter((p) => PRIVATSKOLEDOKUMENTER.has(p.split('/')[0] ?? '') && !oppgitt?.includes(p)) : [];
-  const paragrafer = oppgitt?.length ? [...oppgitt, ...privatParagrafer] : fraKilder;
+  const paragrafer = (oppgitt?.length ? [...oppgitt, ...privatParagrafer] : fraKilder).filter(kanVisesIRegelverket);
   // Radene huskes som åpne på siden, så de er åpne igjen når brukeren går tilbake fra en paragraf eller en kilde.
   const grunn = nokkel ?? nokkelFra([...paragrafer, ...kilder.map((k) => `${k.id}|${k.punkt ?? ''}`)].join(','));
   const [regelverkApen, settRegelverkApen] = useHusketApen(`kortfot:${grunn}:regelverk`);

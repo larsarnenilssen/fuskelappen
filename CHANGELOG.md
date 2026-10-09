@@ -10,6 +10,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Skolen skal følge opp alt fravær:** nytt kort på fraværssiden om oppfølgingsplikten i opplæringslova § 10-6.
 - **Hvem melder hva til hvem:** nytt kort på siden om skolemiljøet som samler meldepliktene (til rektor, ved krenkelser fra ansatte, etter fysiske inngrep og til barnevernet), avvergeplikten og forholdet til taushetsplikten.
 - **Gratisprinsippet:** nytt begrep om hva elevene kan og ikke kan måtte betale for i videregående.
+- **Straffeloven § 196** (avvergeplikten) i Lov og forskrift. Paragrafen kommer med første ukentlige henting.
+- **Begrepene viser det som er ulikt for privatskoler** når «Privatskole» er valgt, som kortene gjør.
 - Begrepet «Kontaktlærer» sier nå hva opplæringslova legger i rollen, og «Skjerpet aktivitetsplikt» at rektor ikke melder videre når meldingen er åpenbart grunnløs.
 
 ### Endret

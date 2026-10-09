@@ -133,6 +133,14 @@
       De som ansettes i lærerstilling, skal ha relevant lærerutdanning senest når de begynner i stillingen. Det betyr pedagogisk utdanning etter rammeplanene for lærerutdanningene eller tilsvarende pedagogisk utdanning. I videregående kreves i tillegg for fellesfag og for programfag på studieforberedende minst 240 studiepoeng (med pedagogisk utdanning) eller faglærerutdanning. For programfag på yrkesfag kreves yrkesfaglærerutdanning, minst 180 studiepoeng (med pedagogisk utdanning) eller faglærerutdanning. Med en av disse utdanningene kan de ansettes for å undervise i fag der de har minst 60 studiepoeng relevant utdanning. Fag- eller svennebrev med to års yrkesteoretisk utdanning, fire års yrkespraksis og pedagogisk utdanning kvalifiserer også, i fag som bakgrunnen er relevant for. Lærerutdanning med minst 60 studiepoeng spesialpedagogikk kvalifiserer blant annet for å gi individuelt tilrettelagt opplæring. De som var kvalifisert etter tidligere regler, er det fortsatt. I tillegg gjelder kravet om relevant kompetanse i fagene de skal undervise i. Finnes det ingen kvalifiserte søkere, kan andre ansettes midlertidig. Se [opplæringslova § 17-3](#/lov/opplaeringslova/17-3) og [opplæringsforskrifta §§ 12-1, 12-7 og 12-8](#/lov/opplaeringsforskrifta/12-7).
     nn: >-
       Dei som blir tilsette i lærarstilling, skal ha relevant lærarutdanning seinast når dei byrjar i stillinga. Det tyder pedagogisk utdanning etter rammeplanane for lærarutdanningane eller tilsvarande pedagogisk utdanning. I vidaregåande krevst det i tillegg for fellesfag og for programfag på studieførebuande minst 240 studiepoeng (med pedagogisk utdanning) eller faglærarutdanning. For programfag på yrkesfag krevst yrkesfaglærarutdanning, minst 180 studiepoeng (med pedagogisk utdanning) eller faglærarutdanning. Med ei av desse utdanningane kan dei tilsetjast for å undervise i fag der dei har minst 60 studiepoeng relevant utdanning. Fag- eller sveinebrev med to års yrkesteoretisk utdanning, fire års yrkespraksis og pedagogisk utdanning kvalifiserer også, i fag som bakgrunnen er relevant for. Lærarutdanning med minst 60 studiepoeng spesialpedagogikk kvalifiserer mellom anna for å gi individuelt tilrettelagd opplæring. Dei som var kvalifiserte etter tidlegare reglar, er det framleis. I tillegg gjeld kravet om relevant kompetanse i faga dei skal undervise i. Finst det ingen kvalifiserte søkjarar, kan andre tilsetjast mellombels. Sjå [opplæringslova § 17-3](#/lov/opplaeringslova/17-3) og [opplæringsforskrifta §§ 12-1, 12-7 og 12-8](#/lov/opplaeringsforskrifta/12-7).
+  privatskole:
+    tekst:
+      nb: "For privatskoler gjelder de samme kravene (privatskolelova § 4-2). For skoler godkjent med alternative læreplaner kan departementet godkjenne andre kompetansekrav. I skoler godkjent på grunnlag av en anerkjent pedagogisk retning skal minst halvparten av lærerne ha spesialkompetanse i retningen, som hovedregel minst 60 studiepoeng (privatskoleforskrifta § 9-1). I skoler med toppidrett skal lærerne som underviser i idrettene, ha spisskompetanse i dem (§ 9-2)."
+      nn: "For privatskular gjeld dei same krava (privatskolelova § 4-2). For skular godkjende med alternative læreplanar kan departementet godkjenne andre kompetansekrav. I skular godkjende på grunnlag av ei anerkjend pedagogisk retning skal minst halvparten av lærarane ha spesialkompetanse i retninga, som hovudregel minst 60 studiepoeng (privatskoleforskrifta § 9-1). I skular med toppidrett skal lærarane som underviser i idrettane, ha spisskompetanse i dei (§ 9-2)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 4-2 Kompetansekrav til undervisningspersonalet", url: "https://lovdata.no/lov/2003-07-04-84/§4-2" }
+      - { id: privatskoleforskrifta, punkt: "§ 9-1 Spesialkompetanse i skolar som er godkjende for å drive på grunnlag av ei anerkjend pedagogisk retning", url: "https://lovdata.no/forskrift/2024-06-03-901/§9-1" }
+      - { id: privatskoleforskrifta, punkt: "§ 9-2 Spisskompetanse i skolar som er godkjende for å drive særskilt tilrettelagd vidaregåande opplæring i kombinasjon med toppidrett", url: "https://lovdata.no/forskrift/2024-06-03-901/§9-2" }
   kilder:
     - { id: opplaeringslova, punkt: "§ 17-3 Krav for å bli tilsett i lærarstilling", url: "https://lovdata.no/lov/2023-06-09-30/§17-3" }
     - { id: opplaeringsforskrifta, punkt: "§ 12-1 Krav til pedagogisk utdanning for å bli tilsett i lærarstilling", url: "https://lovdata.no/forskrift/2024-06-03-900/§12-1" }
@@ -145,7 +153,7 @@
     - "Er sammendraget av kravene i opplæringsforskrifta §§ 12-1, 12-7 og 12-8 riktig og passe detaljert for videregående, eller bør begrepet bare vise til forskriften?"
     - "Er det riktig at «en av disse utdanningene» (240 eller 180 studiepoeng, faglærer- og yrkesfaglærerutdanning) gir rett til å undervise i fag der læreren har 60 studiepoeng, mens fag- eller svennebrev gjelder fag som bakgrunnen er relevant for (§ 12-8 bokstav d)?"
     - "Bør overgangsregelen i § 12-13 fjerde ledd (fast ansatte lærere per 1. august 2024 uten pedagogisk utdanning) nevnes?"
-    - "Privatskolelova § 4-2 sier at de samme kravene gjelder i privatskoler, med mulighet for andre krav ved alternative læreplaner. Bør begrepet si det, siden begrepene ikke viser privatskoletekst?"
+    - "Privatskoler: Er det riktig gjengitt at de samme kravene gjelder, og at departementet kan godkjenne andre krav ved alternative læreplaner (privatskolelova § 4-2)? Er tilleggskravene i privatskoleforskrifta §§ 9-1 og 9-2 riktig oppsummert?"
   stikkord: [kompetansekrav, lærerutdanning, pedagogisk utdanning, PPU, studiepoeng, ansettelse, tilsetjing, lærerstilling, "17-3", "12-7", "12-8"]
   relatert: [relevant-kompetanse, midlertidig-ansettelse, kvalifikasjonsprinsippet, politiattest, stillingskode]
 
@@ -158,6 +166,12 @@
       Lærere som underviser i videregående, skal ha minst 60 studiepoeng som er relevante for faget. Kravet kommer i tillegg til kravene for ansettelse. Det gjelder ikke i yrkesfaglig fordypning. Det gjelder heller ikke for lærere som er ansatt med fag- eller svennebrev og yrkesteoretisk utdanning, når ett av de to årene med yrkesteoretisk utdanning er relevant for faget. Loven unntar dessuten dem som kunne ansettes i lærerstilling før 1. januar 2014, også om de ikke arbeidet som lærer da. Allmennlærere og midlertidig ansatte er også unntatt. Har skolen ikke nok lærere som oppfyller kravet, kan fylkeskommunen fravike det. Det gjøres for hver lærer og hvert fag og skal vurderes på nytt hvert skoleår. En slik avgjørelse er ikke et enkeltvedtak. I et vedtak om individuelt tilrettelagt opplæring kan det også gjøres unntak. Se [opplæringslova § 17-4](#/lov/opplaeringslova/17-4) og [opplæringsforskrifta § 12-9](#/lov/opplaeringsforskrifta/12-9).
     nn: >-
       Lærarar som underviser i vidaregåande, skal ha minst 60 studiepoeng som er relevante for faget. Kravet kjem i tillegg til krava for tilsetjing. Det gjeld ikkje i yrkesfagleg fordjuping. Det gjeld heller ikkje for lærarar som er tilsette med fag- eller sveinebrev og yrkesteoretisk utdanning, når eitt av dei to åra med yrkesteoretisk utdanning er relevant for faget. Lova unntek dessutan dei som kunne tilsetjast i lærarstilling før 1. januar 2014, også om dei ikkje arbeidde som lærar då. Allmennlærarar og mellombels tilsette er også unntekne. Har skulen ikkje nok lærarar som oppfyller kravet, kan fylkeskommunen fråvike det. Det blir gjort for kvar lærar og kvart fag og skal vurderast på nytt kvart skuleår. Ei slik avgjerd er ikkje eit enkeltvedtak. I eit vedtak om individuelt tilrettelagd opplæring kan det også gjerast unntak. Sjå [opplæringslova § 17-4](#/lov/opplaeringslova/17-4) og [opplæringsforskrifta § 12-9](#/lov/opplaeringsforskrifta/12-9).
+  privatskole:
+    tekst:
+      nb: "For privatskoler gjelder det samme kravet (privatskolelova § 4-2). For skoler godkjent med alternative læreplaner kan departementet godkjenne andre kompetansekrav."
+      nn: "For privatskular gjeld det same kravet (privatskolelova § 4-2). For skular godkjende med alternative læreplanar kan departementet godkjenne andre kompetansekrav."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 4-2 Kompetansekrav til undervisningspersonalet", url: "https://lovdata.no/lov/2003-07-04-84/§4-2" }
   kilder:
     - { id: opplaeringslova, punkt: "§ 17-4 Krav om relevant kompetanse i undervisningsfag", url: "https://lovdata.no/lov/2023-06-09-30/§17-4" }
     - { id: opplaeringsforskrifta, punkt: "§ 12-9 Krav om relevant kompetanse i undervisningsfaga i den vidaregåande opplæringa", url: "https://lovdata.no/forskrift/2024-06-03-900/§12-9" }
@@ -169,6 +183,7 @@
     - "Er det riktig at unntaket etter § 17-4 tredje ledd må gjøres for hver lærer og hvert fag, og ikke er et enkeltvedtak (forarbeidene, gjengitt hos Udir)? Bør begrepet si hvem i fylkeskommunen som avgjør det?"
     - "Er unntaket i § 12-9 andre ledd for lærere ansatt etter § 12-8 bokstav d gjengitt riktig, og bør alternativet med realkompetanse nevnes?"
     - "Er «Relevant kompetanse i undervisningsfag» et godt navn, eller bruker skolene et annet ord, for eksempel «undervisningskompetanse» eller «kompetansekravet»?"
+    - "Privatskolelova sier ikke hvem i en privatskole som kan fravike kravet etter opplæringslova § 17-4 tredje ledd, så begrepet sier ikke noe om det. Er det riktig at kravet ellers gjelder på samme måte (privatskolelova § 4-2)?"
   stikkord: [relevant kompetanse, undervisningskompetanse, kompetansekrav, 60 studiepoeng, fagfordeling, unntak, allmennlærer, "17-4", "12-9"]
   relatert: [krav-for-ansettelse-som-laerer, midlertidig-ansettelse, individuelt-tilrettelagt-opplaering]
 
@@ -187,7 +202,7 @@
   kontrollsporsmal:
     - "Er det riktig at kvalifikasjonsprinsippet i § 17-5 gjelder alle stillinger på skolen, ikke bare lærerstillinger (forarbeidene, gjengitt hos Udir)?"
     - "Fortrinnsrett, for eksempel for deltidsansatte, kan gå foran den best kvalifiserte søkeren. Bør begrepet nevne slike unntak, og med hvilke kilder?"
-    - "Privatskolelova har ingen tilsvarende paragraf. Bør begrepet si noe om privatskoler?"
+    - "Er «hvor personlig egnet søkeren er» en god gjengivelse av lovens «kor personleg eigna søkjaren er», eller bør det stå «personlig egnethet»?"
   stikkord: [kvalifikasjonsprinsippet, best kvalifisert, ansettelse, tilsetjing, utlysning, personlig egnethet, "17-5"]
   relatert: [krav-for-ansettelse-som-laerer, politiattest]
 
@@ -199,6 +214,13 @@
       Fylkeskommunen skal kreve politiattest av alle som skal ansettes fast eller midlertidig i videregående skole, i alle typer stillinger. Utlysningen skal si at søkerne må legge fram politiattest. Attesten kreves bare av den som får tilbud om stillingen, og tilbudet skal ta forbehold om at merknader på attesten kan endre det. Attesten skal foreligge før søkeren ansettes. Den som er dømt for eller har vedtatt forelegg for seksuelle overgrep mot mindreårige, skal ikke ansettes eller ha praksis på skolen. Andre merknader skal vurderes konkret. Fylkeskommunen kan også kreve politiattest av dem som skal ha praksis eller utføre oppgaver på skolen, men ikke av dem som allerede er ansatt. Se [opplæringslova § 17-11](#/lov/opplaeringslova/17-11) og [opplæringsforskrifta § 12-15](#/lov/opplaeringsforskrifta/12-15).
     nn: >-
       Fylkeskommunen skal krevje politiattest av alle som skal tilsetjast fast eller mellombels i vidaregåande skule, i alle typar stillingar. Utlysinga skal seie at søkjarane må leggje fram politiattest. Attesten blir berre kravd av den som får tilbod om stillinga, og tilbodet skal ta atterhald om at merknader på attesten kan endre det. Attesten skal liggje føre før søkjaren blir tilsett. Den som er dømd for eller har vedteke førelegg for seksuelle overgrep mot mindreårige, skal ikkje tilsetjast eller ha praksis på skulen. Andre merknader skal vurderast konkret. Fylkeskommunen kan også krevje politiattest av dei som skal ha praksis eller utføre oppgåver på skulen, men ikkje av dei som alt er tilsette. Sjå [opplæringslova § 17-11](#/lov/opplaeringslova/17-11) og [opplæringsforskrifta § 12-15](#/lov/opplaeringsforskrifta/12-15).
+  privatskole:
+    tekst:
+      nb: "I privatskoler er det skolen som skal kreve politiattest og si fra om det i utlysningen, ikke fylkeskommunen (privatskolelova § 4-3 og privatskoleforskrifta § 10-1)."
+      nn: "I privatskular er det skulen som skal krevje politiattest og seie frå om det i utlysinga, ikkje fylkeskommunen (privatskolelova § 4-3 og privatskoleforskrifta § 10-1)."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 4-3 Politiattest og forbod mot tilsetjing", url: "https://lovdata.no/lov/2003-07-04-84/§4-3" }
+      - { id: privatskoleforskrifta, punkt: "§ 10-1 Politiattest ved tilsetjing", url: "https://lovdata.no/forskrift/2024-06-03-901/§10-1" }
   kilder:
     - { id: opplaeringslova, punkt: "§ 17-11 Politiattest og forbod mot tilsetjing", url: "https://lovdata.no/lov/2023-06-09-30/§17-11" }
     - { id: opplaeringsforskrifta, punkt: "§ 12-15 Politiattest ved tilsetjing", url: "https://lovdata.no/forskrift/2024-06-03-900/§12-15" }
@@ -208,7 +230,7 @@
   kontrollsporsmal:
     - "Er det riktig at politiattest ikke kan kreves av dem som allerede er ansatt (forarbeidene, gjengitt hos Udir), og bør unntaket om ny vandelsvurdering (politiregisterloven § 43) nevnes?"
     - "Bør begrepet nevne at vikarer fra bemanningsbyrå regnes som midlertidig ansatte og selv må levere politiattest (forarbeidene)?"
-    - "Privatskoler: Etter privatskolelova § 4-3 er det skolen som skal kreve attesten. Bør begrepet si det, siden begrepene ikke viser privatskoletekst?"
+    - "Privatskoler: Er det dekkende å si at reglene ellers er de samme (privatskolelova § 4-3 og privatskoleforskrifta kapittel 10)?"
   stikkord: [politiattest, vandelskontroll, ansettelse, tilsetjing, seksuelle overgrep, tilsetjingsforbod, "17-11", "12-15"]
   relatert: [krav-for-ansettelse-som-laerer, kvalifikasjonsprinsippet]
 

@@ -1193,17 +1193,18 @@ kilder:
     kortnavn: Straffeloven
     utgiver: Lovdata
     url: https://lovdata.no/lov/2005-05-20-28
-    type: side
+    type: lovdata-datasett
     niva: nasjonal
     lisens: NLOD 2.0
-    sjekkmetode: ingen
-    aktiv: false
+    sjekkmetode: lovtekst
+    aktiv: true
     godkjent: null
     godkjent_fingeravtrykk: null
     merknad: >-
-      Bare avvergeplikten i § 196, som kortet «Hvem melder hva til hvem» i Skolemiljø lenker til. Loven er ikke med i
-      Lov og forskrift, og teksten kunne ikke leses fra skymiljøet (Lovdata svarer 405). Kortet sier derfor bare det
-      Udirs regelverkstolkning til opplæringslova § 24-3 sier om avvergeplikten (docs/KILDER-IKKE-MED.md).
+      Bare avvergeplikten i § 196 (kapittel 20), som kortet «Hvem melder hva til hvem» i Skolemiljø viser til (eier
+      09.10.2026). Utvalget står i content/lovverk.yaml, og teksten hentes som for opplæringslova (avgjørelse 039).
+      Lovdata svarer bare fra Actions, så data/lovdata/straffeloven.json kommer med første henting der. Til da lenker
+      kilden til Lovdata, og paragrafen står ikke under «I regelverket».
 
   - id: udir-klage-standpunkt
     navn: Behandling av klager på standpunktkarakterer i fag

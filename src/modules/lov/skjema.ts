@@ -35,6 +35,11 @@ export const lovutvalgSkjema = z
             korttittel: z.string().min(1).optional(),
             /** Kapitlene som tas med. Mangler den, tas hele dokumentet med. */
             kapitler: z.array(kapittel).min(1).optional(),
+            /**
+             * Paragrafene som tas med i kapitlene, når bare noen få skal med (f.eks. straffeloven § 196). Krever
+             * kapitler. Mangler den, tas hele kapitlene med.
+             */
+            paragrafer: z.array(z.string().regex(/^\d+[A-Za-z]?(-\d+\s?[a-z]?)?$/)).min(1).optional(),
             gyldighet: gyldighet.default({ niva: 'nasjonal' }),
             /** Målformen dokumentet er fastsatt på, når Lovdata ikke oppgir den (lokale forskrifter). */
             malform: z.enum(['nb', 'nn']).optional(),
