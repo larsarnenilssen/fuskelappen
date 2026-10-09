@@ -445,6 +445,8 @@ test.describe('arbeidstid', () => {
     await page.getByRole('switch', { name: 'Funksjon 2: Tillegg i lønnen' }).check();
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/592\s888,89/);
     await expect(lonn).toContainText(/Tillegg: Kontaktlærer\s*12\s000/);
+    // Funksjon 1 ble lagt sammen da funksjon 2 ble lagt til (eier 09.10.2026).
+    await page.getByRole('button', { name: /^Funksjon 1: Rådgiver/ }).click();
     await tillegg1.fill('15000');
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/595\s888,89/);
     await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
@@ -498,6 +500,9 @@ test.describe('arbeidstid', () => {
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await expect(forste).toHaveValue('Engelsk');
     await page.getByRole('button', { name: 'Legg til fag' }).click();
+    // Fagene som står fra før, legges sammen når et nytt legges til (eier 09.10.2026).
+    await expect(page.getByRole('button', { name: /^Fag 1: Engelsk/ })).toHaveAttribute('aria-expanded', 'false');
+    await expect(forste).toBeHidden();
     await velgFag(page, 'matematikk r1', 'Informasjonsteknologi');
     await expect(page.getByLabel('Fag', { exact: true }).last()).toHaveValue('Matematikk R1');
 
@@ -508,6 +513,7 @@ test.describe('arbeidstid', () => {
     await expect(lukket).toContainText('Matematikk R1 · ');
 
     // Å skrive i feltet søker på nytt, og et nytt treff erstatter faget.
+    await page.getByRole('button', { name: /^Fag 1: Engelsk/ }).click();
     await forste.fill('norsk stud vg1');
     await page.locator('.fagtreff button', { hasText: 'Norsk' }).first().click();
     await expect(forste).toHaveValue(/^Norsk/);
@@ -518,6 +524,10 @@ test.describe('arbeidstid', () => {
     await page.getByLabel('Funksjon 1: Prosent').fill('10');
     await page.getByRole('button', { name: 'Funksjon 1: Kontaktlærer' }).click();
     await expect(page.getByLabel('Funksjon 1: Prosent')).toBeHidden();
+    await page.getByRole('button', { name: /^Funksjon 1: Kontaktlærer/ }).click();
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await expect(page.getByLabel('Funksjon 1: Prosent')).toBeHidden();
+    await expect(page.getByLabel('Funksjon 2: Navn')).toBeVisible();
 
     // Stolpen og utregningen bruker kortnavnene i stedet for «Fag 1» og «Fag 2».
     const forklaring = page.locator('.resultatkort figure.figur').first().locator('.fordeling-forklaring-rad');

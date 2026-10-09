@@ -6,7 +6,7 @@ import { huskOktlengde, lesOktlengde } from '../../../app/kalkulatorvalg.ts';
 import { useTekst, type T } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
+import { leggSammen, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall, type Malform } from '../../../core/i18n/tekst.ts';
 import { somTabell } from '../../../core/regler/motor.ts';
@@ -894,7 +894,15 @@ export function Grupper({
           />
         );
       })}
-      <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => onEndring((gamle) => [...gamle, nyGruppe()])}>
+      {/* Fagene som står fra før, legges sammen når brukeren legger til et nytt (eier 09.10.2026). */}
+      <button
+        type="button"
+        class="knapp knapp-sekundaer knapp-liten"
+        onClick={() => {
+          leggSammen(grupper.map((g) => `gruppe-${g.id}`));
+          onEndring((gamle) => [...gamle, nyGruppe()]);
+        }}
+      >
         <Ikon navn="pluss" class="ikon-liten" />
         {t('arbeidstid.felles.leggTilGruppe')}
       </button>

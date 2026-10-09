@@ -6,7 +6,7 @@ import { useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { Sammenleggbartkort, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
+import { leggSammen, Sammenleggbartkort, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Funksjon } from '../beregning/index.ts';
@@ -105,9 +105,16 @@ export function Funksjoner({
           />
         ))}
       </div>
-      {/* Knappen er som «Legg til fag» (eier 02.10.2026). */}
+      {/* Knappen er som «Legg til fag» (eier 02.10.2026), og legger sammen funksjonene som står fra før (eier 09.10.2026). */}
       <div class="med-hjelp">
-        <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => onEndring((gamle) => [...gamle, nyFunksjon()])}>
+        <button
+          type="button"
+          class="knapp knapp-sekundaer knapp-liten"
+          onClick={() => {
+            leggSammen(funksjoner.map((f) => `funksjon-${f.id}`));
+            onEndring((gamle) => [...gamle, nyFunksjon()]);
+          }}
+        >
           <Ikon navn="pluss" class="ikon-liten" />
           {t('arbeidstid.arbeidsplan.leggTilFunksjon')}
         </button>
