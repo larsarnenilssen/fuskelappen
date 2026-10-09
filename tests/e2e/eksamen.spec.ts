@@ -36,11 +36,16 @@ test.describe('eksamen og klage', () => {
 
   test('Vestland-boksen på eksamen vises bare når Vestland er valgt', async ({ page }) => {
     await page.goto('./#/eksamen/regler');
+    // Siden må være tegnet før vi ser at boksen mangler.
+    await expect(page.locator('main h1')).toBeVisible();
+    await expect(page.locator('.innholdskort').first()).toBeVisible();
     await expect(page.locator('#ek-vl-bortvisning')).toHaveCount(0);
-    await settLagret(page, { fylke: '46' });
-    await page.goto('./#/eksamen/regler');
-    await page.reload();
-    await expect(page.locator('#ek-vl-bortvisning')).toBeVisible();
+    // Vestland settes før siden lastes, i en ny fane, som i de andre testene. Før ble den samme siden lastet to ganger
+    // rett etter hverandre, og i WebKit ble Vestland av og til ikke lest (sak #138, avgjørelse 097).
+    const ny = await page.context().newPage();
+    await settLagret(ny, { fylke: '46' });
+    await ny.goto('./#/eksamen/regler');
+    await expect(ny.locator('#ek-vl-bortvisning')).toBeVisible();
   });
 
   test('klage på karakter: halvårsvurdering gir ingen klagerett, og standpunkt går til statsforvalteren', async ({ page }) => {

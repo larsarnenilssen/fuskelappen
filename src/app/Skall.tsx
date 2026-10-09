@@ -8,6 +8,7 @@ import { Ikon } from '../components/Ikon.tsx';
 import { TilToppen } from '../components/TilToppen.tsx';
 import { gaaTilForsidesok, useForsidesokSynlig } from './forsidesok.ts';
 import type { SideProps } from '../modules/typer.ts';
+import { Feilgrense } from './Feilgrense.tsx';
 import { Flyttevarsel } from './Flyttevarsel.tsx';
 import { Oppdateringsvarsel } from './Oppdateringsvarsel.tsx';
 import { apneToppsok, gaaTilbake, lukkToppsok, matchRute, settToppsok, usePlassering, useToppsok, utforScroll, type Navigasjonstype } from './ruter.ts';
@@ -237,16 +238,19 @@ export function Skall() {
       )}
       {/* Siden står bak søket, men kan ikke nås med tastatur eller skjermleser mens søket er åpent. */}
       <main id="innhold" tabIndex={-1} inert={sok !== null}>
-        {treff ? (
-          <Side
-            key={`${treff.rute.sti}|${plassering.sti}`}
-            rute={treff.rute}
-            props={{ parametre: treff.parametre, sporring: plassering.sporring }}
-            type={plassering.type}
-          />
-        ) : (
-          <IkkeFunnet />
-        )}
+        {/* En feil i siden gir en melding i stedet for en blank side, og toppfeltet virker fortsatt (avgjørelse 097). */}
+        <Feilgrense adresse={`${plassering.sti}?${plassering.sporring.toString()}`}>
+          {treff ? (
+            <Side
+              key={`${treff.rute.sti}|${plassering.sti}`}
+              rute={treff.rute}
+              props={{ parametre: treff.parametre, sporring: plassering.sporring }}
+              type={plassering.type}
+            />
+          ) : (
+            <IkkeFunnet />
+          )}
+        </Feilgrense>
       </main>
       {/* «Til toppen» på alle sider, når siden er lang nok og brukeren har rullet ned (avgjørelse 056). */}
       <TilToppen key={plassering.sti} />

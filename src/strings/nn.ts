@@ -591,6 +591,13 @@ export const nn: Tekster = {
     tilForsiden: 'Til framsida',
     sok: 'Søk i appen',
   },
+  /** Feilgrensen rundt siden (avgjørelse 097). */
+  sidefeil: {
+    tittel: 'Noko gjekk gale',
+    tekst: 'Sida kunne ikkje visast på grunn av ein feil i appen. Last sida på nytt, eller gå til framsida.',
+    lastPaNytt: 'Last sida på nytt',
+    tilForsiden: 'Til framsida',
+  },
   spraak: {
     nb: 'bokmål',
     nn: 'nynorsk',

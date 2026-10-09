@@ -33,6 +33,25 @@ test.describe('navigasjon', () => {
     await expect(page.locator('.bunnmeny')).toHaveCount(0);
   });
 
+  test('en feil i en side gir en melding i stedet for en blank side, og toppfeltet virker (avgjørelse 097)', async ({ page }) => {
+    // Testmodulen kaster en feil med ?feil=1 (tests/fixtures/moduler/testmodul).
+    await page.goto('./#/testmodul?feil=1');
+    await expect(page.getByRole('heading', { level: 1, name: 'Noe gikk galt' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Last siden på nytt' })).toBeVisible();
+    // Toppfeltet står utenfor feilgrensen.
+    const meny = page.getByRole('navigation', { name: 'Hovedmeny' });
+    await expect(meny.getByRole('link', { name: 'Innstillinger' })).toBeVisible();
+    // Feilen nullstilles når adressen endres: samme side uten feilen vises.
+    await page.evaluate(() => (window.location.hash = '#/testmodul'));
+    await expect(page.getByRole('heading', { level: 1, name: 'Testmodul for skolemiljø' })).toBeVisible();
+    await page.goBack();
+    await expect(page.getByRole('heading', { level: 1, name: 'Noe gikk galt' })).toBeVisible();
+    await page.getByRole('link', { name: 'Til forsiden' }).click();
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(page.getByRole('searchbox')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Noe gikk galt' })).toHaveCount(0);
+  });
+
   test('gamle lenker til favorittsiden går til forsiden (avgjørelse 056)', async ({ page }) => {
     await page.goto('./#/favoritter');
     await expect(page).toHaveURL(/#\/$/);
