@@ -7,14 +7,14 @@
   tittel: { nb: Klage på karakter, nn: Klage på karakter }
   tekst:
     nb: "Hva kan eleven klage på, og hvem avgjør klagen? Veiviseren går gjennom begrunnelsen, fristen, hva skolen kan gjøre og hva klageinstansen kan komme til."
-    nn: "Kva kan eleven klage på, og kven avgjer klaga? Vegvisaren går gjennom grunngivinga, fristen, kva skolen kan gjere og kva klageinstansen kan kome til."
+    nn: "Kva kan eleven klage på, og kven avgjer klaga? Vegvisaren går gjennom grunngivinga, fristen, kva skulen kan gjere og kva klageinstansen kan kome til."
   start: kl-start
   farge: baer
   rekkefolge: 30
   faser:
     - { id: hva, tittel: { nb: Hva klagen gjelder, nn: Kva klaga gjeld } }
     - { id: begrunnelse, tittel: { nb: "Begrun\u00adnelse og frist", nn: "Grunn\u00adgiving og frist" } }
-    - { id: skolen, tittel: { nb: Skolen, nn: Skolen } }
+    - { id: skolen, tittel: { nb: Skolen, nn: Skulen } }
     - { id: klageinstans, tittel: { nb: "Klage\u00adinstansen", nn: "Klage\u00adinstansen" } }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "Kapittel 10 Klage på sluttvurderingar", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
@@ -121,7 +121,7 @@
     nn: "Klagefristen"
   tekst:
     nb: "Fristen er ti kalenderdager. Den regnes fra dagen eleven fikk karakteren, eller fra dagen eleven fikk begrunnelsen, hvis den kom senere. Klagen er skriftlig, sier hva eleven klager på og sendes til skolen. Den bør si hvorfor eleven mener reglene ikke er fulgt."
-    nn: "Fristen er ti kalenderdagar. Han blir rekna frå dagen eleven fekk karakteren, eller frå dagen eleven fekk grunngivinga, dersom ho kom seinare. Klaga er skriftleg, seier kva eleven klagar på og blir send til skolen. Ho bør seie kvifor eleven meiner reglane ikkje er følgde."
+    nn: "Fristen er ti kalenderdagar. Han blir rekna frå dagen eleven fekk karakteren, eller frå dagen eleven fekk grunngivinga, dersom ho kom seinare. Klaga er skriftleg, seier kva eleven klagar på og blir send til skulen. Ho bør seie kvifor eleven meiner reglane ikkje er følgde."
   ansvar:
     nb: "Eleven, eller foreldrene når eleven er under 15 år."
     nn: "Eleven, eller foreldra når eleven er under 15 år."
@@ -153,7 +153,7 @@
   fase: skolen
   tittel:
     nb: "Skolen vurderer klagen"
-    nn: "Skolen vurderer klaga"
+    nn: "Skulen vurderer klaga"
   tekst:
     nb: |-
       Rektor sørger for at skolen vurderer klagen, sammen med faglæreren som satte karakteren.
@@ -164,13 +164,13 @@
 
       Endrer ikke skolen vedtaket, sender den klagen til statsforvalteren med begrunnelsen fra læreren og en uttalelse fra skolen. Eleven får kopi.
     nn: |-
-      Rektor syter for at skolen vurderer klaga, saman med faglæraren som sette karakteren.
+      Rektor syter for at skulen vurderer klaga, saman med faglæraren som sette karakteren.
 
-      - **Standpunkt i fag:** Eleven kan ikkje klage på karakteren i seg sjølv, berre på at reglane for å setje standpunktkarakter ikkje er følgde. Er skolen samd, kan han setje karakteren opp, men ikkje ned.
-      - **IV:** Er skolen samd, set han ein karakter frå 1 til 6.
-      - **Orden og oppførsel:** Skolen kan endre karakteren til gunst for eleven.
+      - **Standpunkt i fag:** Eleven kan ikkje klage på karakteren i seg sjølv, berre på at reglane for å setje standpunktkarakter ikkje er følgde. Er skulen samd, kan han setje karakteren opp, men ikkje ned.
+      - **IV:** Er skulen samd, set han ein karakter frå 1 til 6.
+      - **Orden og oppførsel:** Skulen kan endre karakteren til gunst for eleven.
 
-      Endrar ikkje skolen vedtaket, sender han klaga til statsforvaltaren med grunngivinga frå læraren og ei fråsegn frå skolen. Eleven får kopi.
+      Endrar ikkje skulen vedtaket, sender han klaga til statsforvaltaren med grunngivinga frå læraren og ei fråsegn frå skulen. Eleven får kopi.
   ansvar:
     nb: "Rektor, med faglæreren."
     nn: "Rektor, med faglæraren."
@@ -178,9 +178,9 @@
   sporsmal:
     tekst:
       nb: "Endrer skolen vedtaket?"
-      nn: "Endrar skolen vedtaket?"
+      nn: "Endrar skulen vedtaket?"
     svar:
-      - { id: ja, tekst: { nb: "Ja, skolen gir eleven medhold", nn: "Ja, skolen gir eleven medhald" }, neste: kl-ny-karakter }
+      - { id: ja, tekst: { nb: "Ja, skolen gir eleven medhold", nn: "Ja, skulen gir eleven medhald" }, neste: kl-ny-karakter }
       - { id: nei, tekst: { nb: "Nei, klagen sendes til statsforvalteren", nn: "Nei, klaga blir send til statsforvaltaren" }, neste: kl-statsforvalteren }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 10-4 andre ledd, § 10-5 andre ledd og § 10-6 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-4" }
@@ -198,10 +198,10 @@
   fase: skolen
   tittel:
     nb: "Ny karakter fra skolen"
-    nn: "Ny karakter frå skolen"
+    nn: "Ny karakter frå skulen"
   tekst:
     nb: "Skolen gjør et nytt vedtak, og saken sendes ikke til statsforvalteren. Den nye karakteren er et nytt vedtak: eleven kan kreve begrunnelse og har ny klagerett."
-    nn: "Skolen gjer eit nytt vedtak, og saka blir ikkje send til statsforvaltaren. Den nye karakteren er eit nytt vedtak: eleven kan krevje grunngiving og har ny klagerett."
+    nn: "Skulen gjer eit nytt vedtak, og saka blir ikkje send til statsforvaltaren. Den nye karakteren er eit nytt vedtak: eleven kan krevje grunngiving og har ny klagerett."
   paragrafer: [opplaeringsforskrifta/10-3, forvaltningsloven/33]
   kilder:
     - { id: udir-klage-standpunkt, punkt: "5. Hvordan skal skolen behandle klagen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/5.-hvordan-skal-skolen-behandle-klagen/" }
@@ -226,7 +226,7 @@
     nn: |-
       Kva statsforvaltaren kan gjere, kjem an på kva klaga gjeld.
 
-      - **Standpunkt i fag:** Statsforvaltaren kan avvise klaga, stadfeste karakteren eller oppheve han, men ikkje setje ein ny karakter. Opphevar statsforvaltaren karakteren, vurderer skolen på nytt og kan la karakteren stå, setje han opp eller setje han ned. Den nye karakteren er endeleg.
+      - **Standpunkt i fag:** Statsforvaltaren kan avvise klaga, stadfeste karakteren eller oppheve han, men ikkje setje ein ny karakter. Opphevar statsforvaltaren karakteren, vurderer skulen på nytt og kan la karakteren stå, setje han opp eller setje han ned. Den nye karakteren er endeleg.
       - **IV:** Statsforvaltaren vurderer om eleven er varsla, og om læraren har vist at grunnlaget manglar eller at fråværsgrensa er overskriden. Skjønnet til rektor for fråvær mellom 10 og 15 prosent blir ikkje vurdert.
       - **Orden og oppførsel:** Statsforvaltaren kan avvise klaga, stadfeste karakteren eller justere han opp eller ned.
   ansvar:
@@ -251,10 +251,10 @@
     nn: "Skriftleg eksamen"
   tekst:
     nb: "Eleven kan klage på selve karakteren. Det gis ingen begrunnelse, men eleven har rett til kopi av svaret sitt og sensorveiledningen. Klagen sendes til skolen, og privatister sender den til fylkeskommunen. Skolen eller fylkeskommunen sender klagen og svaret videre uten å vurdere dem."
-    nn: "Eleven kan klage på sjølve karakteren. Det blir ikkje gitt grunngiving, men eleven har rett til kopi av svaret sitt og retningslinjene for sensorane. Klaga blir send til skolen, og privatistar sender ho til fylkeskommunen. Skolen eller fylkeskommunen sender klaga og svaret vidare utan å vurdere dei."
+    nn: "Eleven kan klage på sjølve karakteren. Det blir ikkje gitt grunngiving, men eleven har rett til kopi av svaret sitt og retningslinjene for sensorane. Klaga blir send til skulen, og privatistar sender ho til fylkeskommunen. Skulen eller fylkeskommunen sender klaga og svaret vidare utan å vurdere dei."
   ansvar:
     nb: "Skolen, eller fylkeskommunen for privatister."
-    nn: "Skolen, eller fylkeskommunen for privatistar."
+    nn: "Skulen, eller fylkeskommunen for privatistar."
   frist:
     nb: "Ti kalenderdager fra karakteren er kjent. Datoene for klageperioden står i kalenderen."
     nn: "Ti kalenderdagar frå karakteren er kjend. Datoane for klageperioden står i kalenderen."
@@ -312,7 +312,7 @@
     nn: |-
       Eleven kan berre klage på formelle feil ved gjennomføringa som kan ha påverka resultatet, ikkje på karakteren. Døme er feil oppgåve, for kort tid eller ein ugild sensor. Eleven kan krevje ei munnleg grunngiving innan klagefristen.
 
-      Skolen sender klaga til statsforvaltaren med oppgåva og fråsegner frå rektor og sensorane. Statsforvaltaren avviser klaga, stadfestar karakteren eller annullerer han. Blir karakteren annullert, kan eleven ta [ny eksamen](#/eksamen/regler?del=ek-utsatt-ny-sarskilt). I eit trekkfag blir faget trekt på nytt.
+      Skulen sender klaga til statsforvaltaren med oppgåva og fråsegner frå rektor og sensorane. Statsforvaltaren avviser klaga, stadfestar karakteren eller annullerer han. Blir karakteren annullert, kan eleven ta [ny eksamen](#/eksamen/regler?del=ek-utsatt-ny-sarskilt). I eit trekkfag blir faget trekt på nytt.
   ansvar:
     nb: "Statsforvalteren."
     nn: "Statsforvaltaren."
@@ -389,7 +389,7 @@
     nn: "Andre vedtak om vurdering og eksamen"
   tekst:
     nb: "Fritak fra vurdering med karakter, særskilt tilrettelegging av eksamen, utsatt eksamen, bortvisning og annullering er enkeltvedtak. Eleven klager etter forvaltningsloven til den som gjorde vedtaket, og fristen er tre uker. Endrer ikke skolen eller fylkeskommunen vedtaket, går klagen til statsforvalteren. Udirs oversikt over klageinstanser sier hvem som avgjør hver klage."
-    nn: "Fritak frå vurdering med karakter, særskild tilrettelegging av eksamen, utsett eksamen, bortvising og annullering er enkeltvedtak. Eleven klagar etter forvaltningsloven til den som gjorde vedtaket, og fristen er tre veker. Endrar ikkje skolen eller fylkeskommunen vedtaket, går klaga til statsforvaltaren. Oversikta til Udir over klageinstansar seier kven som avgjer kvar klage."
+    nn: "Fritak frå vurdering med karakter, særskild tilrettelegging av eksamen, utsett eksamen, bortvising og annullering er enkeltvedtak. Eleven klagar etter forvaltningsloven til den som gjorde vedtaket, og fristen er tre veker. Endrar ikkje skulen eller fylkeskommunen vedtaket, går klaga til statsforvaltaren. Oversikta til Udir over klageinstansar seier kven som avgjer kvar klage."
   frist:
     nb: "Tre uker."
     nn: "Tre veker."

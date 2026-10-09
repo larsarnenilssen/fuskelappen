@@ -36,7 +36,7 @@
   tittel: { nb: Morsmålsopplæring, nn: Morsmålsopplæring }
   tekst:
     nb: Morsmålsopplæring er opplæring i elevens morsmål, som en del av særskilt språkopplæring når eleven trenger det. Den skal styrke forutsetningene for å lære norsk og for å lære i fagene. Den kommer i tillegg til det vanlige timetallet og kan gis ved en annen skole eller som fjernundervisning.
-    nn: Morsmålsopplæring er opplæring i morsmålet til eleven, som ein del av særskild språkopplæring når eleven treng det. Ho skal styrkje føresetnadene for å lære norsk og for å lære i faga. Ho kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skole eller som fjernundervisning.
+    nn: Morsmålsopplæring er opplæring i morsmålet til eleven, som ein del av særskild språkopplæring når eleven treng det. Ho skal styrkje føresetnadene for å lære norsk og for å lære i faga. Ho kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skule eller som fjernundervisning.
   kilder:
     - { id: udir-sarskilt-sprakopplaring, punkt: "Morsmålsopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#morsmaalsopplaering" }
     - { id: opplaeringslova, punkt: "§ 6-5 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§6-5" }
@@ -51,7 +51,7 @@
   tittel: { nb: Tospråklig opplæring i fag, nn: Tospråkleg opplæring i fag }
   tekst:
     nb: Tospråklig opplæring i fag betyr at eleven får opplæring i ett eller flere fag både på norsk og på morsmålet eller et annet språk eleven kan godt, for eksempel i matematikk eller naturfag. Målet er faglig framgang mens eleven lærer norsk. Den er en del av særskilt språkopplæring og gis ved skolen eleven går på.
-    nn: Tospråkleg opplæring i fag tyder at eleven får opplæring i eitt eller fleire fag både på norsk og på morsmålet eller eit anna språk eleven kan godt, til dømes i matematikk eller naturfag. Målet er fagleg framgang medan eleven lærer norsk. Ho er ein del av særskild språkopplæring og blir gitt ved skolen eleven går på.
+    nn: Tospråkleg opplæring i fag tyder at eleven får opplæring i eitt eller fleire fag både på norsk og på morsmålet eller eit anna språk eleven kan godt, til dømes i matematikk eller naturfag. Målet er fagleg framgang medan eleven lærer norsk. Ho er ein del av særskild språkopplæring og blir gitt ved skulen eleven går på.
   kilder:
     - { id: udir-sarskilt-sprakopplaring, punkt: "Tospråklig opplæring i fag", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag" }
   kontrollert: null
@@ -65,7 +65,7 @@
   tittel: { nb: Innføringsopplæring, nn: Innføringsopplæring }
   tekst:
     nb: Innføringsopplæring er opplæring i egne grupper, klasser eller skoler for elever med kort botid og vedtak om særskilt språkopplæring, for å lære norsk raskt. Den er frivillig og krever samtykke. Vedtaket gjelder høyst ett år om gangen og til sammen høyst to år, og kan gjøre unntak fra læreplanene og fag- og timefordelingen.
-    nn: Innføringsopplæring er opplæring i eigne grupper, klassar eller skolar for elevar med kort butid og vedtak om særskild språkopplæring, for å lære norsk raskt. Ho er frivillig og krev samtykke. Vedtaket gjeld høgst eitt år om gongen og til saman høgst to år, og kan gjere unntak frå læreplanane og fag- og timefordelinga.
+    nn: Innføringsopplæring er opplæring i eigne grupper, klassar eller skular for elevar med kort butid og vedtak om særskild språkopplæring, for å lære norsk raskt. Ho er frivillig og krev samtykke. Vedtaket gjeld høgst eitt år om gongen og til saman høgst to år, og kan gjere unntak frå læreplanane og fag- og timefordelinga.
   kilder:
     - { id: opplaeringslova, punkt: "§ 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg", url: "https://lovdata.no/lov/2023-06-09-30/§6-6" }
     - { id: udir-innforingsopplaring, punkt: "Varighet på inntil to år", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r" }
@@ -80,7 +80,7 @@
   tittel: { nb: Kort botid, nn: Kort butid }
   tekst:
     nb: Kort botid betyr at eleven ikke har bodd lenge i Norge. Det er ingen fast grense, men fylkeskommunen ser på norskferdighetene, hva som er best for eleven og hensynet til integrering. Elever med kort botid kan få innføringsopplæring, og kan velge læreplanen i norsk for språklige minoriteter med kort botid hvis de har hatt høyst fire års opplæring fra 5. trinn i norsk grunnskole.
-    nn: Kort butid tyder at eleven ikkje har budd lenge i Noreg. Det er inga fast grense, men fylkeskommunen ser på norskdugleiken, kva som er best for eleven og omsynet til integrering. Elevar med kort butid kan få innføringsopplæring, og kan velje læreplanen i norsk for språklege minoritetar med kort butid dersom dei har hatt høgst fire års opplæring frå 5. trinn i norsk grunnskole.
+    nn: Kort butid tyder at eleven ikkje har budd lenge i Noreg. Det er inga fast grense, men fylkeskommunen ser på norskdugleiken, kva som er best for eleven og omsynet til integrering. Elevar med kort butid kan få innføringsopplæring, og kan velje læreplanen i norsk for språklege minoritetar med kort butid dersom dei har hatt høgst fire års opplæring frå 5. trinn i norsk grunnskule.
   kilder:
     - { id: udir-innforingsopplaring, punkt: "Ingressen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/" }
     - { id: opplaeringsforskrifta, punkt: "§ 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-12" }

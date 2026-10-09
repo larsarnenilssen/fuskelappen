@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useKildestatus } from '../../../app/kildestatus.ts';
-import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { usePrivatskole, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Nivamerke, Statusmerke } from '../../../components/Merker.tsx';
@@ -13,10 +13,12 @@ import { Kodeliste } from '../Kodeliste.tsx';
 import { UtenforBoks } from '../../statistikk/ssb.tsx';
 import { Kortfot } from '../../../components/Kortfot.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { medPrivatskolekilder, Privatskolemerknad } from '../../../components/Privatskolemerknad.tsx';
 
 export default function Begrep({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
+  const privat = usePrivatskole();
   const kildestatus = useKildestatus();
   const [alle, settAlle] = useState<Innholdselement[] | null>(null);
 
@@ -62,6 +64,8 @@ export default function Begrep({ parametre, sporring }: SideProps) {
         </div>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: begrep.tekst[malform] }} />
         {begrep.merknad && <p class="merknad merknad-advarsel begrep-merknad">{begrep.merknad[malform]}</p>}
+        {/* Det som er ulikt for privatskoler, når brukeren har valgt «Privatskole», som i kortene (avgjørelse 075). */}
+        <Privatskolemerknad element={begrep} />
         {begrep.kildetekst && (
           <blockquote class="kildetekst" lang={begrep.kildetekst.spraak}>
             <p class="liten dempet">{t('begreper.kildetekst', { spraak: t(`spraak.${begrep.kildetekst.spraak}`) })}</p>
@@ -70,7 +74,7 @@ export default function Begrep({ parametre, sporring }: SideProps) {
         )}
         {begrep.kodeliste && <Kodeliste liste={begrep.kodeliste} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
         {'kodegrupper' in begrep && begrep.kodegrupper && <Kodegrupper grupper={begrep.kodegrupper} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
-        <Kortfot kilder={begrep.kilder} nokkel={`begrep-${begrep.id}`} />
+        <Kortfot kilder={medPrivatskolekilder(begrep.kilder, begrep, privat)} nokkel={`begrep-${begrep.id}`} />
       </div>
       {relaterte.length > 0 && (
         <section class="lop-del">

@@ -4,7 +4,7 @@
 /** Spesifikasjonene for hver modul. Moduler uten egen spesifikasjon dekkes av overflyt-testene for rutene sine. */
 const MODULSPEKER: Record<string, readonly string[]> = {
   arbeidstid: ['arbeidstid', 'kalkulator-fag'],
-  begreper: ['kodelister', 'modul-og-sok'],
+  begreper: ['begreper', 'kodelister', 'modul-og-sok'],
   eksamen: ['eksamen', 'laerlinger', 'kalender'],
   elevundersokelsen: ['elevundersokelsen'],
   fag: ['fag', 'kalkulator-fag'],

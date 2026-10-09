@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { lastDokument, lastOversikt, paragrafRute } from '../modules/lov/data.ts';
 import { alleParagrafer } from '../modules/lov/typer.ts';
+import { kanVisesIRegelverket } from './kilderader.ts';
 
 interface Dokumentlenker {
   dokument: string;
@@ -37,7 +38,9 @@ async function lastLenker(refer: readonly string[]): Promise<Dokumentlenker[]> {
 }
 
 /** `utenOverskrift` når lenkene står i en boks som allerede har overskriften, f.eks. «I regelverket» i veiviserne. */
-export function Paragraflenker({ paragrafer, overskrift, utenOverskrift = false }: { paragrafer: readonly string[]; overskrift: string; utenOverskrift?: boolean }) {
+export function Paragraflenker({ paragrafer: alle, overskrift, utenOverskrift = false }: { paragrafer: readonly string[]; overskrift: string; utenOverskrift?: boolean }) {
+  // Paragrafer i et dokument som ikke er hentet ennå, vises ikke (kanVisesIRegelverket).
+  const paragrafer = alle.filter(kanVisesIRegelverket);
   const [lenker, settLenker] = useState<Dokumentlenker[] | null>(null);
   const nokkel = paragrafer.join(',');
   useEffect(() => {

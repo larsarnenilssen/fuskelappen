@@ -6,10 +6,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Lagt til
 
-- **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
+- **Kompetansekrav i begrepene om ansettelse:** «Krav for ansettelse i lærerstilling», «Relevant kompetanse i undervisningsfag», «Kvalifikasjonsprinsippet» og «Politiattest». «Midlertidig ansettelse» forklarer nå også reglene i opplæringslova (ansettelse på vilkår og til 31. juli).
+- **Skolen skal følge opp alt fravær:** nytt kort på fraværssiden om oppfølgingsplikten i opplæringslova § 10-6.
+- **Hvem melder hva til hvem:** nytt kort på siden om skolemiljøet som samler meldepliktene (til rektor, ved krenkelser fra ansatte, etter fysiske inngrep og til barnevernet), avvergeplikten og forholdet til taushetsplikten.
+- **Gratisprinsippet:** nytt begrep om hva elevene kan og ikke kan måtte betale for i videregående.
+- **Straffeloven § 196** (avvergeplikten) i Lov og forskrift. Paragrafen kommer med første ukentlige henting.
+- **Begrepene viser det som er ulikt for privatskoler** når «Privatskole» er valgt, som kortene gjør.
+- Begrepet «Kontaktlærer» sier nå hva opplæringslova legger i rollen, og «Skjerpet aktivitetsplikt» at rektor ikke melder videre når meldingen er åpenbart grunnløs.
 
 ### Endret
 
+- **Nynorsk skriver «skule»** i alt innhold (forklaringer, veivisere og begreper), ikke lenger både «skule» og «skole». Lov- og forskriftstekst står som før.
+- **Søket kjenner noen hverdagsord:** «leseplikt» og «undervisningsplikt» finner undervisningstid, årsramme og beskjeftigelse. Også «fagfordeling», «timeressurs», «ordenskarakter», «terminkarakter», «spesialundervisning» og «9A» gir treff.
 - **Større tekst:** Brødteksten er 16 px, og datoer, merker og dempede linjer er litt større.
 - **Fagsiden** viser kompetansemålene og vurderingsordningen med en gang, uten at de må åpnes.
 - **Regelverk** viser alle dokumentene i en liste med gruppene som overskrifter.

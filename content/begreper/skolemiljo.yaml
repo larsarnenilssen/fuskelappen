@@ -108,17 +108,20 @@
   tekst:
     nb: >-
       Skjerpet aktivitetsplikt gjelder når en som arbeider på skolen, krenker en elev. Den som får mistanke om eller
-      kjennskap til det, skal straks melde fra til rektor, og rektor skal melde fra til fylkeskommunen. Gjelder det noen
-      i ledelsen, meldes det direkte til fylkeskommunen. Se [opplæringslova § 12-5](#/lov/opplaeringslova/12-5).
+      kjennskap til det, skal straks melde fra til rektor, og rektor skal melde fra til fylkeskommunen, med mindre
+      meldingen er åpenbart grunnløs. Gjelder det noen i ledelsen, meldes det direkte til fylkeskommunen. Se
+      [opplæringslova § 12-5](#/lov/opplaeringslova/12-5).
     nn: >-
       Skjerpa aktivitetsplikt gjeld når ein som arbeider på skulen, krenkjer ein elev. Den som får mistanke om eller
-      kjennskap til det, skal straks melde frå til rektor, og rektor skal melde frå til fylkeskommunen. Gjeld det
-      nokon i leiinga, blir det meldt direkte til fylkeskommunen. Sjå [opplæringslova § 12-5](#/lov/opplaeringslova/12-5).
+      kjennskap til det, skal straks melde frå til rektor, og rektor skal melde frå til fylkeskommunen, med mindre
+      meldinga er openbert grunnlaus. Gjeld det nokon i leiinga, blir det meldt direkte til fylkeskommunen. Sjå
+      [opplæringslova § 12-5](#/lov/opplaeringslova/12-5).
   kilder:
     - { id: opplaeringslova, punkt: "§ 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev", url: "https://lovdata.no/lov/2023-06-09-30/§12-5" }
   kontrollert: null
   kontrollsporsmal:
     - "Loven kaller det «skjerpa plikt til å melde frå». Er «skjerpet aktivitetsplikt» et godt navn på begrepet, siden det er vanlig i praksis?"
+    - "Er tillegget om at rektor ikke melder videre når meldingen er åpenbart grunnløs (§ 12-5 første ledd), riktig gjengitt?"
   stikkord: [skjerpet plikt, ansatt krenker elev, 12-5]
   relatert: [aktivitetsplikt]
 
@@ -337,7 +340,7 @@
   tittel: { nb: Elevråd, nn: Elevråd }
   tekst:
     nb: Hver videregående skole skal ha et elevråd som elevene ved skolen velger, men elevene kan velge å organisere seg på en annen måte. Elevene skal være representert i organene ved skolen. Representantene for elevene i videregående opplæring har møte- og talerett i fylkeskommunale nemnder på samme måte som de ansatte. Elevrådsarbeid som skolen har godkjent, regnes ikke som fravær.
-    nn: Kvar vidaregåande skole skal ha eit elevråd som elevane ved skolen vel, men elevane kan velje å organisere seg på ein annan måte. Elevane skal vere representerte i organa ved skolen. Representantane for elevane i vidaregåande opplæring har møte- og talerett i fylkeskommunale nemnder på same måten som dei tilsette. Elevrådsarbeid som skolen har godkjent, blir ikkje rekna som fråvær.
+    nn: Kvar vidaregåande skule skal ha eit elevråd som elevane ved skulen vel, men elevane kan velje å organisere seg på ein annan måte. Elevane skal vere representerte i organa ved skulen. Representantane for elevane i vidaregåande opplæring har møte- og talerett i fylkeskommunale nemnder på same måten som dei tilsette. Elevrådsarbeid som skulen har godkjent, blir ikkje rekna som fråvær.
   kilder:
     - { id: opplaeringslova, punkt: "§ 10-5 Organiseringa av skoledemokratiet", url: "https://lovdata.no/lov/2023-06-09-30/§10-5" }
     - { id: udir-rundskriv-fravarsgrensen, punkt: "3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }

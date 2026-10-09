@@ -40,3 +40,15 @@ export function unikeKilder(kilder: readonly KildeRef[]): KildeRef[] {
 
 /** Om teksten til et dokument i Lov og forskrift er hentet, så paragrafene kan åpnes i appen. */
 export const erHentet = (dokument: string): boolean => LOVDOKUMENTER.has(dokument);
+
+const UTVALGET = new Set((lovverk as { dokumenter: { id: string }[] }).dokumenter.map((d) => d.id));
+
+/**
+ * Om en paragraf som et kort oppgir selv («straffeloven/196»), kan vises under «I regelverket». Et dokument som er nytt
+ * i Lov og forskrift og ikke hentet ennå, vises ikke, så lenken ikke går til en side som mangler. Andre referanser
+ * (f.eks. avtalene) står som før.
+ */
+export function kanVisesIRegelverket(ref: string): boolean {
+  const dokument = ref.slice(0, Math.max(0, ref.indexOf('/')));
+  return !UTVALGET.has(dokument) || HENTET.has(dokument);
+}

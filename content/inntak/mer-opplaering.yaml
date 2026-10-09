@@ -19,7 +19,7 @@
   sammenligning:
     venstre:
       nb: "Fulgt fram til 1. mars. Er opplæringen organisert på en annen måte enn et vanlig skoleår, må eleven ha fulgt en like stor del av den."
-      nn: "Følgd fram til 1. mars. Er opplæringa organisert på ein annan måte enn eit vanleg skoleår, må eleven ha følgt ein like stor del av henne."
+      nn: "Følgd fram til 1. mars. Er opplæringa organisert på ein annan måte enn eit vanleg skuleår, må eleven ha følgt ein like stor del av henne."
     hoyre:
       nb: "Eleven sluttet i faget eller gikk over fraværsgrensen før 1. mars."
       nn: "Eleven slutta i faget eller gjekk over fråværsgrensa før 1. mars."
@@ -96,10 +96,10 @@
   type: forklaring
   tittel:
     nb: "Privatskoler"
-    nn: "Privatskolar"
+    nn: "Privatskular"
   tekst:
     nb: "Privatskoler kan tilby mer opplæring, men har ikke plikt til det. De kan ta inn elever i fag når de har plass innenfor elevtallet skolen er godkjent for, og eleven fyller kravene til inntak. Opplæringen følger skolens godkjente læreplan og det fastsatte timetallet i faget. Privatskoler kan ikke gjøre unntak fra timetallet, slik fylkeskommunen kan. Elever fra privatskoler kan også melde seg til mer opplæring hos fylkeskommunen."
-    nn: "Privatskolar kan tilby meir opplæring, men har ikkje plikt til det. Dei kan ta inn elevar i fag når dei har plass innanfor elevtalet skolen er godkjend for, og eleven fyller krava til inntak. Opplæringa følgjer den godkjende læreplanen til skolen og det fastsette timetalet i faget. Privatskolar kan ikkje gjere unntak frå timetalet, slik fylkeskommunen kan. Elevar frå privatskolar kan også melde seg til meir opplæring hos fylkeskommunen."
+    nn: "Privatskular kan tilby meir opplæring, men har ikkje plikt til det. Dei kan ta inn elevar i fag når dei har plass innanfor elevtalet skulen er godkjend for, og eleven fyller krava til inntak. Opplæringa følgjer den godkjende læreplanen til skulen og det fastsette timetalet i faget. Privatskular kan ikkje gjere unntak frå timetalet, slik fylkeskommunen kan. Elevar frå privatskular kan også melde seg til meir opplæring hos fylkeskommunen."
   kilder:
     - { id: udir-mer-opplaering, punkt: "6. Spesielt for skoler godkjent etter privatskoleloven", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/spesielt-for-skoler-godkjent-etter-privatskoleloven/" }
     - { id: privatskoleforskrifta, punkt: "§ 4-2 Meir opplæring", url: "https://lovdata.no/forskrift/2024-06-03-901/§4-2" }
@@ -151,7 +151,7 @@
     nn: "Opplæringa"
   tekst:
     nb: "Fylkeskommunen bestemmer hvordan og når opplæringen gis: i en vanlig klasse gjennom et skoleår, eller i et kortere løp med færre timer. Den kan ikke gis som ekstra timer på slutten av skoleåret. I utgangspunktet gis den i vanlig skoletid. Undervisning i helger må være noe eleven ønsker og til det beste for eleven. Deler av opplæringen kan gis som fjernundervisning når det er gode grunner for det, og det er trygt og pedagogisk forsvarlig."
-    nn: "Fylkeskommunen bestemmer korleis og når opplæringa blir gitt: i ein vanleg klasse gjennom eit skoleår, eller i eit kortare løp med færre timar. Ho kan ikkje givast som ekstra timar på slutten av skoleåret. I utgangspunktet blir ho gitt i vanleg skoletid. Undervisning i helgar må vere noko eleven ønskjer og til det beste for eleven. Delar av opplæringa kan givast som fjernundervisning når det er gode grunnar for det, og det er trygt og pedagogisk forsvarleg."
+    nn: "Fylkeskommunen bestemmer korleis og når opplæringa blir gitt: i ein vanleg klasse gjennom eit skuleår, eller i eit kortare løp med færre timar. Ho kan ikkje givast som ekstra timar på slutten av skuleåret. I utgangspunktet blir ho gitt i vanleg skuletid. Undervisning i helgar må vere noko eleven ønskjer og til det beste for eleven. Delar av opplæringa kan givast som fjernundervisning når det er gode grunnar for det, og det er trygt og pedagogisk forsvarleg."
   kilder:
     - { id: udir-mer-opplaering, punkt: "2. Organisering av mer opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-mer-opplaring/organisering-av-mer-opplaring/" }
     - { id: opplaeringslova, punkt: "§ 14-4", url: "https://lovdata.no/lov/2023-06-09-30/§14-4" }
@@ -200,7 +200,7 @@
         celler:
           - { tekst: { nb: "Ja", nn: "Ja" } }
           - { tekst: { nb: "Vg3 som bygger på Vg2. Fylket kan tilby et annet lærefag på samme Vg2, men skal strekke seg langt for samme lærefag.", nn: "Vg3 som byggjer på Vg2. Fylket kan tilby eit anna lærefag på same Vg2, men skal strekkje seg langt for same lærefag." } }
-      - tittel: { nb: "Avviksfag (Vg3 i skole)", nn: "Avviksfag (Vg3 i skole)" }
+      - tittel: { nb: "Avviksfag (Vg3 i skole)", nn: "Avviksfag (Vg3 i skule)" }
         celler:
           - { tekst: { nb: "Ja", nn: "Ja" } }
           - { tekst: { nb: "Bygger på Vg2, også når kandidaten har tatt Vg3 som elev.", nn: "Byggjer på Vg2, også når kandidaten har teke Vg3 som elev." } }

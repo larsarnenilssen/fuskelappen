@@ -1,7 +1,8 @@
 # Et trygt og godt skolemiljø (fase 7, eier 06.10.2026): opplæringslova kapittel 12 med egne ord, paragraf for
 # paragraf, med Udirs rundskriv om skolemiljø som kilde. Siden «Et trygt og godt skolemiljø» i Skolemiljø viser kortene
-# i fem deler: retten, skolens plikter, statsforvalteren, det fysiske miljøet og ansvaret. Kortene om informasjon og
-# fysiske inngrep (kapittel 10 og 13) står under «Henger sammen med». For privatskoler gjelder kapittel 12 også, med
+# i fem deler: retten, skolens plikter, statsforvalteren, det fysiske miljøet og ansvaret. Kortene om informasjon,
+# meldepliktene og fysiske inngrep (kapittel 10, 13 og 24) står under «Henger sammen med». For privatskoler gjelder
+# kapittel 12 også, med
 # skolen, styret og daglig leder i stedet for fylkeskommunen og rektor (privatskolelova § 2-4, avgjørelse 075).
 
 - id: k12-hvem
@@ -387,6 +388,62 @@
   kontrollsporsmal:
     - "Er det riktig etter rundskrivet kapittel 5 at elevene og foreldrene skal få informasjon om aktivitetsplikten og håndhevingsordningen?"
   stikkord: [informasjon, foreldre, elevrettigheter]
+
+# Meldepliktene samlet (lagt til 09.10.2026 etter gjennomgangen av innholdet, godkjent av eier): kapittel 12 og 13,
+# barnevernet (§ 24-3), avvergeplikten (straffeloven § 196) og taushetsplikten. Står under «Henger sammen med».
+# Straffeloven § 196 står i Lov og forskrift når kildesjekken i Actions har hentet den (eier 09.10.2026).
+- id: k12-meldeplikter
+  type: forklaring
+  tittel:
+    nb: Hvem melder hva til hvem
+    nn: Kven melder kva til kven
+  tekst:
+    nb: |
+      Skolen har flere meldeplikter. De gjelder ulike saker og går til ulike mottakere.
+
+      - **Skolemiljøet, til rektor:** Alle som arbeider på skolen, melder fra til rektor når de får mistanke om eller kjennskap til at en elev ikke har et trygt og godt skolemiljø. I alvorlige tilfeller melder rektor fra til fylkeskommunen (§ 12-4).
+      - **En ansatt krenker en elev:** Den som får mistanke om det, melder straks fra til rektor, og rektor melder til fylkeskommunen, med mindre meldingen er åpenbart grunnløs. Gjelder det noen i ledelsen, meldes det direkte til fylkeskommunen (§ 12-5).
+      - **Fysiske inngrep:** Den som har grepet inn fysisk mot en elev, melder fra til rektor. Rektor melder fra til foreldrene. Ved gjentatte eller særlig alvorlige inngrep melder rektor også til fylkeskommunen (§ 13-5).
+      - **Barnevernet:** Alle som arbeider på skolen, skal være oppmerksomme på forhold som kan føre til tiltak fra barnevernet. De skal melde fra til barnevernet uten ugrunnet opphold når det er grunn til å tro at et barn blir mishandlet eller utsatt for alvorlig omsorgssvikt, og i de andre tilfellene som står i § 24-3. Plikten er personlig, så vurderingen kan ikke overlates til rektor eller andre. Barnevernet kan også pålegge skolen å gi opplysninger.
+      - **Avvergeplikt:** Alle har plikt til å prøve å avverge visse alvorlige lovbrudd, for eksempel mishandling i nære relasjoner, grov kroppsskade, voldtekt og drap, ved å anmelde det eller på annen måte. Plikten gjelder når lovbruddet fortsatt kan avverges, og det er sikkert eller mest sannsynlig at det er eller vil bli begått (straffeloven § 196). Noen av situasjonene som gir meldeplikt til barnevernet, kan også gi avvergeplikt.
+
+      Meldeplikten til barnevernet og avvergeplikten gjelder uten hinder av taushetsplikten. Ellers har alle som arbeider for fylkeskommunen, taushetsplikt om personlige forhold. Udir peker på at en melding til barnevernet når vilkårene ikke er oppfylt, kan være brudd på taushetsplikten. Skolen bør skrive ned vurderingen før den melder eller lar være.
+    nn: |
+      Skulen har fleire meldeplikter. Dei gjeld ulike saker og går til ulike mottakarar.
+
+      - **Skulemiljøet, til rektor:** Alle som arbeider på skulen, melder frå til rektor når dei får mistanke om eller kjennskap til at ein elev ikkje har eit trygt og godt skulemiljø. I alvorlege tilfelle melder rektor frå til fylkeskommunen (§ 12-4).
+      - **Ein tilsett krenkjer ein elev:** Den som får mistanke om det, melder straks frå til rektor, og rektor melder til fylkeskommunen, med mindre meldinga er openbert grunnlaus. Gjeld det nokon i leiinga, blir det meldt direkte til fylkeskommunen (§ 12-5).
+      - **Fysiske inngrep:** Den som har gripe inn fysisk mot ein elev, melder frå til rektor. Rektor melder frå til foreldra. Ved gjentekne eller særleg alvorlege inngrep melder rektor også til fylkeskommunen (§ 13-5).
+      - **Barnevernet:** Alle som arbeider på skulen, skal vere merksame på forhold som kan føre til tiltak frå barnevernet. Dei skal melde frå til barnevernet utan ugrunna opphald når det er grunn til å tru at eit barn blir mishandla eller utsett for alvorleg omsorgssvikt, og i dei andre tilfella som står i § 24-3. Plikta er personleg, så vurderinga kan ikkje overlatast til rektor eller andre. Barnevernet kan også påleggje skulen å gi opplysningar.
+      - **Avverjeplikt:** Alle har plikt til å prøve å avverje visse alvorlege lovbrot, til dømes mishandling i nære relasjonar, grov kroppsskade, valdtekt og drap, ved å melde det til politiet eller på annan måte. Plikta gjeld når lovbrotet framleis kan avverjast, og det er sikkert eller mest sannsynleg at det er eller vil bli gjort (straffeloven § 196). Nokre av situasjonane som gir meldeplikt til barnevernet, kan også gi avverjeplikt.
+
+      Meldeplikta til barnevernet og avverjeplikta gjeld utan hinder av teieplikta. Elles har alle som arbeider for fylkeskommunen, teieplikt om personlege forhold. Udir peikar på at ei melding til barnevernet når vilkåra ikkje er oppfylte, kan vere brot på teieplikta. Skulen bør skrive ned vurderinga før han melder eller lèt vere.
+  paragrafer: [opplaeringslova/12-4, opplaeringslova/12-5, opplaeringslova/13-5, opplaeringslova/24-3, forvaltningsloven/13, straffeloven/196]
+  privatskole:
+    tekst:
+      nb: "For privatskoler gjelder de samme meldepliktene. Kapittel 12 gjelder etter privatskolelova § 2-4, med daglig leder og styret i stedet for rektor og fylkeskommunen. Meldeplikten etter fysiske inngrep står i § 3-10 c, plikten til å melde fra til barnevernet i § 7-4 og taushetsplikten i § 7-3."
+      nn: "For privatskular gjeld dei same meldepliktene. Kapittel 12 gjeld etter privatskolelova § 2-4, med dagleg leiar og styret i staden for rektor og fylkeskommunen. Meldeplikta etter fysiske inngrep står i § 3-10 c, plikta til å melde frå til barnevernet i § 7-4 og teieplikta i § 7-3."
+    kilder:
+      - { id: privatskolelova, punkt: "§ 2-4 Krav til skoleanlegg og skolemiljø", url: "https://lovdata.no/lov/2003-07-04-84/§2-4" }
+      - { id: privatskolelova, punkt: "§ 3-10 c Meldeplikt og dokumentasjon", url: "https://lovdata.no/lov/2003-07-04-84/§3-10c" }
+      - { id: privatskolelova, punkt: "§ 7-3 Teieplikt", url: "https://lovdata.no/lov/2003-07-04-84/§7-3" }
+      - { id: privatskolelova, punkt: "§ 7-4 Plikt til å melde frå til barnevernet", url: "https://lovdata.no/lov/2003-07-04-84/§7-4" }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 12-4 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§12-4" }
+    - { id: opplaeringslova, punkt: "§ 12-5 Skjerpa plikt til å melde frå dersom ein som arbeider på skolen, krenkjer ein elev", url: "https://lovdata.no/lov/2023-06-09-30/§12-5" }
+    - { id: opplaeringslova, punkt: "§ 13-5 Meldeplikt og dokumentasjon", url: "https://lovdata.no/lov/2023-06-09-30/§13-5" }
+    - { id: opplaeringslova, punkt: "§ 24-3 Plikt til å melde frå til barnevernet", url: "https://lovdata.no/lov/2023-06-09-30/§24-3" }
+    - { id: udir-merknader-opplaeringslova, punkt: "§ 24-3 Plikt til å melde frå til barnevernet (Prop. 57 L (2022–2023) punkt 23.5.3)", url: "https://www.udir.no/regelverkstolkninger/opplaring/lov-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringslova/sjuande-del--forskjellige-reglar/kapittel-24-samarbeid-samordning-opplysningsplikt-sjolvraderett-og-avgjerder-pa-vegner-av-eleven/-24-3-plikt-til-a-melde-fra-til-barnevernet/" }
+    - { id: udir-meldeplikt-barnevernet, punkt: "Hvem har meldeplikt til barnevernet? og Når skal du melde fra til barnevernet?", url: "https://www.udir.no/regelverk-og-tilsyn/meldeplikt-til-barnevernet/" }
+    - { id: forvaltningsloven, punkt: "§ 13 Taushetsplikt", url: "https://lovdata.no/lov/1967-02-10/§13" }
+    - { id: straffeloven, punkt: "§ 196 Plikt til å avverge et straffbart forhold", url: "https://lovdata.no/lov/2005-05-20-28/§196" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det nyttig å samle meldepliktene i ett kort, og mangler det plikter skolen ofte møter, for eksempel å varsle politiet?"
+    - "Avvergeplikten er skrevet etter straffeloven § 196 første ledd, med fire av lovbruddene i listen som eksempler (mishandling i nære relasjoner, grov kroppsskade, voldtekt og drap). Er eksemplene godt valgt for skolen, og bør unntakene i tredje ledd (for eksempel fare for en selv eller nærstående) nevnes?"
+    - "Er det riktig at meldeplikten til barnevernet er personlig, så vurderingen ikke kan overlates til rektor (forarbeidene, gjengitt hos Udir), og at skolen likevel kan ha rutiner for å sende meldingene?"
+    - "Privatskoler: Er det riktig at de samme meldepliktene gjelder etter privatskolelova §§ 2-4, 3-10 c og 7-4, med daglig leder og styret i stedet for rektor og fylkeskommunen?"
+  stikkord: [meldeplikt, opplysningsplikt, barnevernet, bekymringsmelding, avvergeplikt, avverjeplikt, taushetsplikt, melde fra, "24-3"]
 
 - id: k12-fysiske-inngrep
   type: forklaring
