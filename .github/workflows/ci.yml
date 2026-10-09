@@ -143,7 +143,9 @@ jobs:
   test:
     name: Test og bygg
     needs: [endringer, sjekk, bygg-e2e, e2e]
-    if: always()
+    # Ikke når kjøringen er avbrutt (en nyere push har tatt over): da er jobbene «cancelled», ikke feilet, og eier
+    # skal ikke varsles om feil.
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       - name: Alle jobbene må være grønne eller hoppet over etter nivået
@@ -178,7 +180,7 @@ jobs:
   varsle:
     name: Varsle eier
     needs: [test]
-    if: always() && github.event_name == 'push' && needs.test.result != 'cancelled'
+    if: always() && github.event_name == 'push' && needs.test.result != 'cancelled' && needs.test.result != 'skipped'
     uses: ./.github/workflows/varsle.yml
     with:
       resultat: ${{ needs.test.result == 'failure' && 'feilet' || 'ok' }}
