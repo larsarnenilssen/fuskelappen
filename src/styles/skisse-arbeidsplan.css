@@ -52,8 +52,32 @@
   height: 2.25rem;
 }
 
+/* Litt mer luft i kortene enn i dag (eier 09.10.2026): under overskriftslinjen, mellom radene og nederst. */
+.skjemadel .skisse-kort:not(.lukket) {
+  padding-bottom: var(--rom-3);
+}
+
+/* Lukket står navnet midt i kortet, med like mye luft over og under. */
+.skjemadel .skisse-kort.lukket {
+  padding-block: var(--rom-2);
+}
+
 .skisse-innhold {
-  margin-top: var(--rom-2);
+  margin-top: var(--rom-3);
+}
+
+.skisse-innhold > .fagvalg,
+.skisse-innhold > .skisse-lenkerad,
+.skisse-innhold > .inndatarad {
+  margin-bottom: var(--rom-3);
+}
+
+.skisse-innhold > .felt-hjelp {
+  margin: 0;
+}
+
+.skisse-innhold > .vippe {
+  margin-bottom: 0;
 }
 
 .skisse-lenkerad {
@@ -61,6 +85,5 @@
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: 0 var(--rom-3);
-  margin: 0 0 var(--rom-2);
+  gap: var(--rom-1) var(--rom-3);
 }

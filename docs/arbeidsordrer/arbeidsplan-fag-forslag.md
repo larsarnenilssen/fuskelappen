@@ -26,6 +26,8 @@ Skissen finnes bare i testversjonen: https://jukselappen.no/test/#/utvikling/arb
 - **Når et fag er valgt:** fagets kortnavn står i feltet. Under står årsrammen som før, med «Endre». Kortnavnet er faget, og boksen under er årsrammen. Med Matematikk R1 står det for eksempel «Matematikk R1» i feltet og «Informasjonsteknologi · Studiespesialisering Vg2» i boksen.
 - **Lukket:** «Matematikk R1 · 26,67 %», med prikken foran. Et trykk på navnet eller pilen åpner kortet.
 
+**Luft:** Kortene har litt mer luft enn i dag: under feltet øverst, mellom radene og nederst i åpne kort (eier 09.10.2026). Lukkede kort har like mye luft over og under navnet.
+
 **Kortet for en funksjon:** Navnefeltet står øverst, med «Funksjon 2: skriv navnet» grått før det er fylt ut. Lukket står det «Kontaktlærer · 10 %».
 
 **Stolpen:** «Engelsk: 26,67 %», «Matematikk R1: 26,67 %» og «Kontaktlærer: 10 %», i stedet for «Fag 1» og «Fag 2». Funksjonene har navnet sitt i stolpen allerede i dag.
