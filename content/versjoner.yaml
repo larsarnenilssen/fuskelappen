@@ -9,6 +9,8 @@ versjoner:
         nn: Søket over sidene blir lukka med Esc eller eit trykk utanfor søket, utan eigen knapp.
       - nb: I Innstillinger tar den gule knappen øverst deg tilbake til siden du kom fra.
         nn: I Innstillingar tek den gule knappen øvst deg tilbake til sida du kom frå.
+      - nb: Velkomst, Kildesjekken og Om appen står sammen nederst i Innstillinger.
+        nn: Velkomst, Kjeldesjekken og Om appen står saman nedst i Innstillingar.
   - versjon: 1.0.1
     dato: 2026-10-09
     nytt:

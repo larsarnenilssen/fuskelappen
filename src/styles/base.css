@@ -236,15 +236,10 @@ select {
   text-overflow: ellipsis;
 }
 
-/* Kildestatusen under Innstillinger (avgjørelse 056). */
-.indikator {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-2);
-  min-height: var(--trykkflate);
-}
-
-.indikator-feilet {
+/* Kildesjekken i listen nederst i Innstillinger (avgjørelse 056, eier 09.10.2026). Svarer noen kilder ikke, har
+   ikonet og statusen varselfargen. */
+.listelenke.indikator-feilet > .ikon:first-child,
+.indikator-feilet .listelenke-under {
   color: var(--farge-advarsel);
 }
 

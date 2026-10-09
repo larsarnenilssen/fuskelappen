@@ -314,6 +314,8 @@ export const nn: Tekster = {
   kildestatus: {
     tittel: 'Kjelder og kjeldestatus',
     indikator: 'Kjeldestatus: {status}',
+    sjekken: 'Kjeldesjekken',
+    sjekkenNavn: 'Kjeldesjekken: {status}',
     telling: 'Verkar: {virker}. Endra dei siste {dager} dagane: {endret}. Svarar ikkje: {svarerIkke}.',
     kilde: { virker: 'verkar', endretNylig: 'endra {dato}', svarerIkke: 'svarar ikkje', forHand: 'blir sjekka for hand' },
     status: {

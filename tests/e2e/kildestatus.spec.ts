@@ -35,7 +35,7 @@ test.describe('kildestatus', () => {
     await page.goto('./#/innstillinger');
     const indikator = page.locator('.indikator');
     await expect(indikator).toHaveAttribute('data-status', 'utdatert');
-    await expect(indikator).toHaveAccessibleName('Kildestatus: utdatert');
+    await expect(indikator).toHaveAccessibleName('Kildesjekken: utdatert');
     await indikator.click();
     await expect(page.getByTestId('samlet-kildestatus')).toHaveAttribute('data-status', 'utdatert');
     await expect(page.getByText('Det er mer enn 14 dager siden kildene ble sjekket.', { exact: false })).toBeVisible();
@@ -48,7 +48,7 @@ test.describe('kildestatus', () => {
     await medStatus(page, data);
     await page.goto('./#/innstillinger');
     await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'ok');
-    await expect(page.locator('.indikator')).toHaveAccessibleName('Kildestatus: alle kildene virker');
+    await expect(page.locator('.indikator')).toHaveAccessibleName('Kildesjekken: alle kildene virker');
     await page.goto('./#/om/kilder');
     await expect(page.locator('[data-kilde="ks-sfs2213"] .merke')).toHaveAttribute('data-visning', 'endretNylig');
     await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('endret ');
