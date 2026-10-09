@@ -1,0 +1,479 @@
+{
+ "id": "straffeloven",
+ "kilde": "straffeloven",
+ "type": "lov",
+ "tittel": "Lov om straff (straffeloven)",
+ "korttittel": "Straffeloven",
+ "malform": "nb",
+ "refid": "lov/2005-05-20-28",
+ "sistEndret": "2026-07-01",
+ "iKraft": "2015-10-01",
+ "hentet": "2026-10-09",
+ "gyldighet": {
+  "niva": "nasjonal"
+ },
+ "utvalg": [
+  "20"
+ ],
+ "seksjoner": [
+  {
+   "id": "delDe",
+   "type": "del",
+   "nr": null,
+   "overskrift": "Annen del. De straffbare handlingene",
+   "merknader": [],
+   "seksjoner": [
+    {
+     "id": "kap20",
+     "type": "kapittel",
+     "nr": "20",
+     "overskrift": "Kapittel 20 Vern av den offentlige ro, orden og sikkerhet",
+     "merknader": [],
+     "seksjoner": [],
+     "paragrafer": [
+      {
+       "nr": "196",
+       "visNr": "§ 196",
+       "tittel": "Plikt til å avverge et straffbart forhold",
+       "ledd": [
+        {
+         "tekst": [
+          "Med bot eller fengsel inntil 1 år straffes den som unnlater gjennom anmeldelse eller på annen måte å søke å avverge et lovbrudd eller følgene av det, på et tidspunkt da dette fortsatt er mulig, og det fremstår som sikkert eller mest sannsynlig at lovbruddet er eller vil bli begått. Avvergingsplikten gjelder uten hensyn til taushetsplikt og gjelder lovbrudd som nevnt i"
+         ],
+         "liste": [
+          {
+           "merke": "a.",
+           "ledd": [
+            {
+             "tekst": [
+              {
+               "t": "§ 111",
+               "l": "lov/2005-05-20-28/§111"
+              },
+              " (krenkelse av Norges selvstendighet og fred), ",
+              {
+               "t": "§ 113",
+               "l": "lov/2005-05-20-28/§113"
+              },
+              " (krenkelse av Norges statsforfatning), ",
+              {
+               "t": "§ 115",
+               "l": "lov/2005-05-20-28/§115"
+              },
+              " (angrep på de høyeste statsorganenes virksomhet), ",
+              {
+               "t": "§ 117",
+               "l": "lov/2005-05-20-28/§117"
+              },
+              " (inngrep overfor viktige samfunnsinstitusjoner), ",
+              {
+               "t": "§ 119",
+               "l": "lov/2005-05-20-28/§119"
+              },
+              " (landssvik), ",
+              {
+               "t": "§ 121",
+               "l": "lov/2005-05-20-28/§121"
+              },
+              " (etterretningsvirksomhet mot statshemmeligheter), ",
+              {
+               "t": "§ 123",
+               "l": "lov/2005-05-20-28/§123"
+              },
+              " (avsløring av statshemmeligheter), ",
+              {
+               "t": "§ 128",
+               "l": "lov/2005-05-20-28/§128"
+              },
+              " (ulovlig militær virksomhet), ",
+              {
+               "t": "§ 129",
+               "l": "lov/2005-05-20-28/§129"
+              },
+              " (straff for deltakelse mv. i voldelig sammenslutning med politiske mål), ",
+              {
+               "t": "§ 131",
+               "l": "lov/2005-05-20-28/§131"
+              },
+              " (terrorhandlinger), ",
+              {
+               "t": "§ 133",
+               "l": "lov/2005-05-20-28/§133"
+              },
+              " (terrorforbund), ",
+              {
+               "t": "§ 138",
+               "l": "lov/2005-05-20-28/§138"
+              },
+              " (terrorbombing), ",
+              {
+               "t": "§ 139",
+               "l": "lov/2005-05-20-28/§139"
+              },
+              " (kapring av luftfartøy og skip mv.), ",
+              {
+               "t": "§ 140",
+               "l": "lov/2005-05-20-28/§140"
+              },
+              " (forstyrrelse av den sikre drift av luftfartøy og skip mv.), ",
+              {
+               "t": "§ 141",
+               "l": "lov/2005-05-20-28/§141"
+              },
+              " (bruk og utslipp av farlig stoff i tilknytning til luftfartøy og skip mv.), ",
+              {
+               "t": "§ 142",
+               "l": "lov/2005-05-20-28/§142"
+              },
+              " (ulovlig befatning med farlig materiale mv.), ",
+              {
+               "t": "§ 143",
+               "l": "lov/2005-05-20-28/§143"
+              },
+              " (gisseltaking i terrorøyemed), ",
+              {
+               "t": "§ 144",
+               "l": "lov/2005-05-20-28/§144"
+              },
+              " (angrep på en internasjonalt beskyttet person), ",
+              {
+               "t": "§ 192",
+               "l": "lov/2005-05-20-28/§192"
+              },
+              " (anslag mot infrastrukturen), ",
+              {
+               "t": "§ 193",
+               "l": "lov/2005-05-20-28/§193"
+              },
+              " (forbund om anslag mot infrastrukturen), ",
+              {
+               "t": "§ 194",
+               "l": "lov/2005-05-20-28/§194"
+              },
+              " (forstyrrelse av den sikre drift av jernbane og buss), ",
+              {
+               "t": "§ 223",
+               "l": "lov/2005-05-20-28/§223"
+              },
+              " (grov uriktig anklage), ",
+              {
+               "t": "§ 238",
+               "l": "lov/2005-05-20-28/§238"
+              },
+              " (allmennfarlig smittespredning), ",
+              {
+               "t": "§ 239",
+               "l": "lov/2005-05-20-28/§239"
+              },
+              " (allmennfarlig forgiftning), ",
+              {
+               "t": "§ 240",
+               "l": "lov/2005-05-20-28/§240"
+              },
+              " (alvorlig miljøkriminalitet), ",
+              {
+               "t": "§ 253",
+               "l": "lov/2005-05-20-28/§253"
+              },
+              " (tvangsekteskap), ",
+              {
+               "t": "§ 255",
+               "l": "lov/2005-05-20-28/§255"
+              },
+              " (grov frihetsberøvelse), ",
+              {
+               "t": "§ 256",
+               "l": "lov/2005-05-20-28/§256"
+              },
+              " (forbund om grov frihetsberøvelse), ",
+              {
+               "t": "§ 258",
+               "l": "lov/2005-05-20-28/§258"
+              },
+              " (grov menneskehandel), ",
+              {
+               "t": "§ 259",
+               "l": "lov/2005-05-20-28/§259"
+              },
+              " (slaveri), ",
+              {
+               "t": "§ 262 annet ledd",
+               "l": "lov/2005-05-20-28/§262/ledd/2"
+              },
+              " (ekteskap med noen under 16 år), ",
+              {
+               "t": "§ 274",
+               "l": "lov/2005-05-20-28/§274"
+              },
+              " (grov kroppsskade), ",
+              {
+               "t": "§ 275",
+               "l": "lov/2005-05-20-28/§275"
+              },
+              " (drap), ",
+              {
+               "t": "§ 279",
+               "l": "lov/2005-05-20-28/§279"
+              },
+              " (forbund om drap eller å volde betydelig skade på kropp eller helse), ",
+              {
+               "t": "§ 282",
+               "l": "lov/2005-05-20-28/§282"
+              },
+              " (mishandling i nære relasjoner), ",
+              {
+               "t": "§ 283",
+               "l": "lov/2005-05-20-28/§283"
+              },
+              " (grov mishandling i nære relasjoner), ",
+              {
+               "t": "§ 284",
+               "l": "lov/2005-05-20-28/§284"
+              },
+              " (kjønnslemlestelse), ",
+              {
+               "t": "§ 288",
+               "l": "lov/2005-05-20-28/§288"
+              },
+              " (hensettelse i hjelpeløs tilstand mv.), ",
+              {
+               "t": "§ 291",
+               "l": "lov/2005-05-20-28/§291"
+              },
+              " (voldtekt), ",
+              {
+               "t": "§ 295",
+               "l": "lov/2005-05-20-28/§295"
+              },
+              " (misbruk av overmaktsforhold og lignende), ",
+              {
+               "t": "§ 299",
+               "l": "lov/2005-05-20-28/§299"
+              },
+              " (voldtekt av barn under 14 år), ",
+              {
+               "t": "§ 303",
+               "l": "lov/2005-05-20-28/§303"
+              },
+              " (grov seksuell omgang mv. med barn mellom 14 og 16 år), ",
+              {
+               "t": "§ 312",
+               "l": "lov/2005-05-20-28/§312"
+              },
+              " (incest), ",
+              {
+               "t": "§ 314",
+               "l": "lov/2005-05-20-28/§314"
+              },
+              " (seksuell omgang mellom andre nærstående), ",
+              {
+               "t": "§ 327",
+               "l": "lov/2005-05-20-28/§327"
+              },
+              " (ran), ",
+              {
+               "t": "§ 329",
+               "l": "lov/2005-05-20-28/§329"
+              },
+              " (forbund om ran), ",
+              {
+               "t": "§ 355",
+               "l": "lov/2005-05-20-28/§355"
+              },
+              " (fremkalling av fare for allmennheten) og ",
+              {
+               "t": "§ 357",
+               "l": "lov/2005-05-20-28/§357"
+              },
+              " (forbund om fremkalling av fare for allmennheten),"
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "b.",
+           "ledd": [
+            {
+             "tekst": [
+              {
+               "t": "militær straffelov §§ 50",
+               "l": "lov/1902-05-22-13/§50"
+              },
+              ", ",
+              {
+               "t": "52",
+               "l": "lov/1902-05-22-13/§52"
+              },
+              " eller ",
+              {
+               "t": "96",
+               "l": "lov/1902-05-22-13/§96"
+              },
+              ", eller"
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "c.",
+           "ledd": [
+            {
+             "tekst": [
+              {
+               "t": "sikkerhetsloven § 7-5",
+               "l": "lov/2018-06-01-24/§7-5"
+              },
+              ", jf. ",
+              {
+               "t": "§ 11-4",
+               "l": "lov/2018-06-01-24/§11-4"
+              },
+              " fjerde ledd."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Ved overtredelse av §",
+          {
+           "t": "§ 312",
+           "l": "lov/2005-05-20-28/§312"
+          },
+          " eller ",
+          {
+           "t": "314",
+           "l": "lov/2005-05-20-28/§314"
+          },
+          " gjelder avvergingsplikten bare når den fornærmede er under 16 år. Ved overtredelse av §",
+          {
+           "t": "§ 299",
+           "l": "lov/2005-05-20-28/§299"
+          },
+          " eller ",
+          {
+           "t": "303",
+           "l": "lov/2005-05-20-28/§303"
+          },
+          " gjelder avvergingsplikten ikke dersom vilkårene i ",
+          {
+           "t": "§ 308",
+           "l": "lov/2005-05-20-28/§308"
+          },
+          " er oppfylt."
+         ]
+        },
+        {
+         "tekst": [
+          "Brudd på avvergingsplikten straffes ikke når"
+         ],
+         "liste": [
+          {
+           "merke": "a.",
+           "ledd": [
+            {
+             "tekst": [
+              "handlingen det er tale om å avverge ikke har kommet så langt som til straffbart forsøk, jf. ",
+              {
+               "t": "§ 16",
+               "l": "lov/2005-05-20-28/§16"
+              },
+              ", eller"
+             ]
+            }
+           ]
+          },
+          {
+           "merke": "b.",
+           "ledd": [
+            {
+             "tekst": [
+              "plikten ikke kunne oppfylles uten å utsette ham selv, hans nærmeste eller noen uskyldig for siktelse eller tiltale eller fare for liv, helse eller velferd."
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "tekst": [
+          "Tredje ledd bokstav b gjelder ikke dersom fornærmede er mindreårig og den som unnlater å avverge er barnets forelder, steforelder, fosterforelder eller en annen som har daglig omsorg for barnet."
+         ]
+        }
+       ],
+       "endringer": [
+        [
+         "Tilføyd ved lov ",
+         {
+          "t": "7 mars 2008 nr. 4",
+          "l": "lov/2008-03-07-4"
+         },
+         ", endret ved lover ",
+         {
+          "t": "19 juni 2009 nr. 74",
+          "l": "lov/2009-06-19-74"
+         },
+         ", ",
+         {
+          "t": "19 juni 2015 nr. 65",
+          "l": "lov/2015-06-19-65"
+         },
+         ", ",
+         {
+          "t": "21 juni 2017 nr. 90",
+          "l": "lov/2017-06-21-90"
+         },
+         " (ikr. 1 juli 2017 iflg. ",
+         {
+          "t": "res. 21 juni 2017 nr. 821",
+          "l": "forskrift/2017-06-21-821"
+         },
+         "), ",
+         {
+          "t": "21 juni 2019 nr. 52",
+          "l": "lov/2019-06-21-52"
+         },
+         " (ikr. 1 jan 2020 iflg. ",
+         {
+          "t": "res. 22 nov 2019 nr. 1548",
+          "l": "forskrift/2019-11-22-1548"
+         },
+         "), ",
+         {
+          "t": "4 des 2020 nr. 135",
+          "l": "lov/2020-12-04-135"
+         },
+         " (ikr. 1 jan 2021 iflg. res. ",
+         {
+          "t": "4 des 2020 nr. 2592",
+          "l": "forskrift/2020-12-04-2592"
+         },
+         "), ",
+         {
+          "t": "5 mars 2021 nr. 6",
+          "l": "lov/2021-03-05-6"
+         },
+         ", ",
+         {
+          "t": "20 juni 2025 nr. 86",
+          "l": "lov/2025-06-20-86"
+         },
+         " (i kraft 1 juli 2025 iflg. ",
+         {
+          "t": "res. 20 juni 2025 nr. 1123",
+          "l": "forskrift/2025-06-20-1123"
+         },
+         ")."
+        ]
+       ],
+       "fotnoter": []
+      }
+     ]
+    }
+   ],
+   "paragrafer": []
+  }
+ ]
+}

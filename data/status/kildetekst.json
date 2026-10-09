@@ -15215,6 +15215,19 @@
         "bf5e8b46c1ec",
         "747a2d737557"
       ]
+    },
+    "straffeloven": {
+      "fingeravtrykk": "sha256:0b8d3638710a64a3e30330873b15eac227f2740b6de1da52a86017dd2b0853b6",
+      "lagret": "2026-10-09T13:39:03.879Z",
+      "biter": [
+        "b75d5099fe4c",
+        "aa1b8c84c0ae",
+        "be952e954c2e",
+        "9acd222f32dc",
+        "6e6eb0e1ff45",
+        "9dc8feb958ec",
+        "b13c3240d98e"
+      ]
     }
   }
 }

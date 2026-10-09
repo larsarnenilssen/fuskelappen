@@ -1158,6 +1158,28 @@
    ]
   },
   {
+   "id": "straffeloven",
+   "kilde": "straffeloven",
+   "type": "lov",
+   "tittel": "Lov om straff (straffeloven)",
+   "korttittel": "Straffeloven",
+   "malform": "nb",
+   "refid": "lov/2005-05-20-28",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": [
+    "20"
+   ],
+   "sistEndret": "2026-07-01",
+   "iKraft": "2015-10-01",
+   "antallKapitler": 1,
+   "antallParagrafer": 1,
+   "paragrafer": [
+    "196"
+   ]
+  },
+  {
    "id": "oslo-inntak",
    "kilde": "lovdata-lokale",
    "type": "forskrift",

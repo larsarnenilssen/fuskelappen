@@ -29,8 +29,6 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 ## Må ses på
 
-- **Grep – fag, læreplaner, vurderingsordninger og årstimetall:** ⚠️ endret siden 09.10.2026, ikke gått gjennom
-- **Statistikkbanken for videregående opplæring, Udir:** ⚠️ endret siden 09.10.2026, ikke gått gjennom
 - **Administrere eksamen:** ⚠️ endret siden 09.10.2026, ikke gått gjennom
 - **Eksamensdatoer fra udir.no og fylkeskommunene:** ⚠️ endret siden 06.10.2026, ikke gått gjennom
 - **Nyheter fra Kunnskapsdepartementet (RSS):** ⚠️ sjekken feilet (09.10.2026): Fant ikke data/nyheter/nyheter.json.
@@ -79,14 +77,28 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 ## Nettsteder som ikke kan sjekkes automatisk
 
-Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under. De stenger trolig for automatiske forespørsler, så lenkene dit blir ikke sjekket. Åpne noen av dem av og til. Virker en lenke ikke, si fra til Claude.
+Lenkesjekken 09.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under. De stenger trolig for automatiske forespørsler, så lenkene dit blir ikke sjekket. Åpne noen av dem av og til. Virker en lenke ikke, si fra til Claude.
 
 - **inschool.zendesk.com** (3 lenker)
   - https://inschool.zendesk.com/hc/no/articles/19452863757970 (står i `content/kilder.yaml`)
   - https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet (står i `content/kilder.yaml`)
   - https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer (står i `content/kilder.yaml`)
+- **malemestreneioslo.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **miok.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **nifu.no** (2 lenker)
+  - https://www.nifu.no/ (står i `content/kilder.yaml`)
+  - https://www.nifu.no/category/nyhet/feed/ (står i `content/nyheter/kilder.yaml`)
+- **okio.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
+- **skolelederforbundet.no** (2 lenker)
+  - https://www.skolelederforbundet.no/ (står i `content/kilder.yaml`)
+  - https://www.skolelederforbundet.no/feed/ (står i `content/nyheter/kilder.yaml`)
 - **skolenes.no** (én lenke)
   - https://www.skolenes.no/feed/ (står i `content/nyheter/kilder.yaml`)
+- **telemark.otek.no** (én lenke)
+  - Én lenke fra dataene, som sjekkes med stikkprøver.
 - **vilbli.no** (8 lenker)
   - https://www.vilbli.no/ (står i `content/inntak/frister.yaml`, `content/inntak/rett-inntak-soknad.yaml`, `content/kilder.yaml`)
   - https://www.vilbli.no/nb/nb/no/aktivitorfaget/program/v.hs/v.hsakt3----/p5 (står i `src/modules/fag/tilbud/vilbli.ts`)
@@ -752,7 +764,7 @@ Lenkesjekken 08.10.2026 fikk ikke svar fra noen av lenkene til nettstedene under
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
-`udir-grep` · Kildesjekk: ⚠️ endret siden 09.10.2026, ikke gått gjennom · [Åpne kilden](https://www.udir.no/om-udir/data/kl06-grep/)
+`udir-grep` · Kildesjekk: i orden (09.10.2026) · [Åpne kilden](https://www.udir.no/om-udir/data/kl06-grep/)
 
 **Regelverdier**
 
