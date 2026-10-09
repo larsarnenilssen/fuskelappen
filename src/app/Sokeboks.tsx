@@ -3,7 +3,7 @@ import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
 import { filtrerTreff, tellGrupper, type Sokegruppe } from '../core/sok/grupper.ts';
 import type { Sokeresultat } from '../core/sok/sok.ts';
-import { harAndreFylker, synligeTreff, treffIFylket } from '../core/sok/synlige.ts';
+import { harAndreFylker, rangerTreff, synligeTreff, treffIFylket } from '../core/sok/synlige.ts';
 import { fylker } from './Stedmerknad.tsx';
 import { hentSok } from './sokeklient.ts';
 import { useTekst, useTilstand } from './tilstand.ts';
@@ -54,10 +54,11 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
   }, []);
 
   useEffect(() => {
-    // Fylkesinnhold (f.eks. begreper som bare gjelder Vestland) vises bare når fylket er valgt.
-    if (indeks === 'klar' && sokRef.current) settTreff(synligeTreff(sokRef.current(sporring), innstillinger.fylke));
+    // Fylkesinnhold (f.eks. begreper som bare gjelder Vestland) vises bare når fylket er valgt. Treff om grunnskolen, og
+    // om privatskoler uten «Privatskole» valgt, står lenger ned (avgjørelse 100).
+    if (indeks === 'klar' && sokRef.current) settTreff(rangerTreff(synligeTreff(sokRef.current(sporring), innstillinger.fylke), innstillinger.privatskole === true));
     settAntall(PER_SIDE);
-  }, [sporring, indeks, innstillinger.fylke]);
+  }, [sporring, indeks, innstillinger.fylke, innstillinger.privatskole]);
 
   const fylke = innstillinger.fylke;
   const fylkesnavn = fylker.find((f) => f.nummer === fylke)?.navn ?? null;

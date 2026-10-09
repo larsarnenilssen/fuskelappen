@@ -8,6 +8,22 @@ import type { Favorittbar, Modulmanifest } from '../typer.ts';
 import { avtaler, lastBestemmelser } from './avtaler.ts';
 import { dokumentnavn, dokumentRute, lastDokument, lastOversikt, paragraffavoritt, paragraffavorittnavn, paragrafRute } from './data.ts';
 import { alleParagrafer } from './typer.ts';
+import { PRIVATSKOLEDOKUMENTER } from '../../core/privatskole.ts';
+import type { Sokeomrade } from '../../core/sok/sok.ts';
+
+/**
+ * Paragrafer om grunnskolen: tittelen nevner grunnskolen, men ikke videregående (overgangen fra grunnskolen til
+ * videregående gjelder videregående også). Bare for rangeringen i søket (avgjørelse 100).
+ */
+export function omGrunnskolen(tittel: string): boolean {
+  return /grunnsk[ou]l/i.test(tittel) && !/vidaregåande|videregående/i.test(tittel);
+}
+
+/** Det et dokument eller en paragraf gjelder i søket: privatskoler eller grunnskolen (avgjørelse 100). */
+function omrade(dokument: string, tittel?: string): { omrade?: Sokeomrade[] } {
+  const ut: Sokeomrade[] = [...(PRIVATSKOLEDOKUMENTER.has(dokument) ? (['privatskole'] as const) : []), ...(tittel && omGrunnskolen(tittel) ? (['grunnskole'] as const) : [])];
+  return ut.length > 0 ? { omrade: ut } : {};
+}
 
 /** Kildene følger utvalget i content/lovverk.yaml, så et nytt dokument ikke krever kodeendring. */
 const utvalg = utvalgFil as { dokumenter: { kilde: string }[]; avtaler?: { kilde: string }[] };
@@ -85,6 +101,7 @@ export const manifest: Modulmanifest = {
         stikkord: [d.type === 'lov' ? 'lov' : 'forskrift'],
         rute: dokumentRute(d.id),
         modul: 'lov',
+        ...omrade(d.id),
       },
       ...alleParagrafer(d.seksjoner).map(({ paragraf: p }) => {
         const tittel = paragraffavorittnavn(d, p);
@@ -95,6 +112,7 @@ export const manifest: Modulmanifest = {
           stikkord: [p.nr, p.visNr, `§${p.nr}`, d.korttittel],
           rute: paragrafRute(d.id, p.nr),
           modul: 'lov',
+          ...omrade(d.id, tittel),
         };
       }),
     ]).concat(lokale, await avtaleoppforinger());

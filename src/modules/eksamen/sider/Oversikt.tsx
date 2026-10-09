@@ -8,6 +8,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { Oversiktsdel } from '../../../components/Oversiktsdel.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { nesteFrist, tidspunkt } from '../../../core/tidslinje.ts';
 import { lastEksamensdatoer } from '../../../data/eksamen.ts';
@@ -65,16 +66,11 @@ export default function Oversikt() {
           }
           side={
             <>
-              <section class="lop-del" aria-labelledby="ek-del-klage">
-                <h2 class="liten-overskrift" id="ek-del-klage">
-                  {t('eksamen.delKlage')}
-                </h2>
+              {/* Delene med én inngang står uten overskrift, som én liste (avgjørelse 100). */}
+              <Oversiktsdel tittel={t('eksamen.delKlage')} antall={veivisere.length}>
                 <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
-              </section>
-              <section class="lop-del" aria-labelledby="ek-del-datoer">
-                <h2 class="liten-overskrift" id="ek-del-datoer">
-                  {t('eksamen.delDatoer')}
-                </h2>
+              </Oversiktsdel>
+              <Oversiktsdel tittel={t('eksamen.delDatoer')} antall={1}>
                 {/* Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne kalenderen. */}
                 <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
                   <span class="frist-inngang-tittel">
@@ -92,7 +88,7 @@ export default function Oversikt() {
                   )}
                   <Ikon navn="hoyre" class="frist-inngang-pil" />
                 </a>
-              </section>
+              </Oversiktsdel>
             </>
           }
         />

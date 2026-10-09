@@ -2,14 +2,14 @@
 // høyre kolonne, ikke alene nederst på siden rett på bakgrunnen. Raden er den samme som nederst i kortene (Kortfot),
 // og den huskes som åpen for siden. På mobil står boksen nederst på siden.
 import type { KildeRef } from '../core/innhold/skjema.ts';
-import { Kortfot } from './Kortfot.tsx';
+import { Kortfot, type Kildeboklenke } from './Kortfot.tsx';
 import { unikeKilder } from './kilderader.ts';
 
-export function Kildeboks({ kilder, nokkel }: { kilder: readonly KildeRef[]; nokkel: string }) {
-  if (kilder.length === 0) return null;
+export function Kildeboks({ kilder, nokkel, lenker = [] }: { kilder: readonly KildeRef[]; nokkel: string; lenker?: readonly Kildeboklenke[] }) {
+  if (kilder.length === 0 && lenker.length === 0) return null;
   return (
     <div class="kildeboks">
-      <Kortfot kilder={unikeKilder(kilder)} nokkel={nokkel} />
+      <Kortfot kilder={unikeKilder(kilder)} nokkel={nokkel} lenker={lenker} />
     </div>
   );
 }
