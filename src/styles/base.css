@@ -1739,34 +1739,93 @@ p.fagkort-tittel {
   margin: var(--rom-2) 0 var(--rom-3);
 }
 
-.figur-bakgrunn {
-  fill: var(--farge-linje);
+/* ---------- Stolpene i kalkulatorene (forslag 09.10.2026) ----------
+   HTML med fast høyde, så stolpen og tekstene er like store på mobil og skrivebord. Delene står med 2 px mellomrom i
+   flatefargen og avrundede hjørner. Tekst står i tekstfarge, aldri i seriefargen (docs/DESIGN.md, Tall og figurer). */
+.stolpe {
+  --stolpe-hoyde: 0.75rem;
+  margin: var(--rom-2) 0 0;
 }
 
-.figur-grense {
-  stroke: var(--farge-tekst);
-  stroke-width: 2;
+.stolpe-bred {
+  --stolpe-hoyde: 2rem;
 }
 
-.figur-over {
-  fill: var(--diagram-over);
+.stolpe-spor {
+  position: relative;
+  height: var(--stolpe-hoyde);
 }
 
-/* Beskjeftigelse ut over en stilling under 100 %, opp til hel stilling (variabel lønn). */
-.figur-variabel {
-  fill: var(--diagram-variabel);
+.stolpe-bakgrunn,
+.stolpe-del {
+  position: absolute;
+  inset-block: 0;
+  border-radius: 3px;
+}
+
+.stolpe-bakgrunn {
+  left: 0;
+  background: var(--farge-linje);
+}
+
+/* Streken ved stillingen eller grensen går litt over og under stolpen. */
+.stolpe-merke {
+  position: absolute;
+  inset-block: calc(-1 * var(--rom-1));
+  width: 2px;
+  margin-left: -1px;
+  border-radius: 1px;
+  background: var(--farge-tekst);
+}
+
+.stolpe-tekst {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+  line-height: 1.2;
+}
+
+.stolpe-merketekst {
+  display: block;
+  width: max-content;
+  margin: var(--rom-1) 0 0 var(--merke);
+  line-height: 1.2;
+}
+
+.stolpe-merketekst-hoyre {
+  transform: translateX(-100%);
+}
+
+/* Klammen under planfestet tid i årsverket, med teksten under. Tiden læreren disponerer selv har teksten uten klamme. */
+.stolpe-klammer {
+  display: flex;
+  margin-top: var(--rom-1);
+}
+
+.stolpe-klamme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.stolpe-klamme::before {
+  content: '';
+  align-self: stretch;
+  height: 0.375rem;
+  margin-bottom: var(--rom-1);
+  border: var(--strek) solid var(--farge-tekst-dempet);
+  border-top: 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.stolpe-klamme-uten::before {
+  border-color: transparent;
 }
 
 .figur-tekst {
   fill: var(--farge-tekst-dempet);
   font-size: 10px;
-  font-family: var(--font-tekst);
-}
-
-.fordeling-etikett {
-  fill: var(--diagram-etikett);
-  font-size: 14px;
-  font-weight: 700;
   font-family: var(--font-tekst);
 }
 
@@ -1788,10 +1847,6 @@ p.fagkort-tittel {
 }
 
 /* ---------- Fordelingsdiagram ---------- */
-
-.fordeling .figur-tekst {
-  font-size: 12px;
-}
 
 /* Diagram og tabell står i et eget kort, med luft mellom tittel, stolpe, fargeforklaring, tabell og merknad. */
 .fordeling-visning {
@@ -1881,8 +1936,8 @@ p.fagkort-tittel {
   font-size: var(--str-xl);
 }
 
-.fordeling-visning:fullscreen .diagram {
-  max-height: 36vh;
+.fordeling-visning:fullscreen .stolpe-bred {
+  --stolpe-hoyde: 4rem;
 }
 
 .fordeling-visning:fullscreen .fordeling-forklaring-rad,
@@ -1896,44 +1951,57 @@ p.fagkort-tittel {
 }
 
 .fordeling-del-undervisning {
-  fill: var(--diagram-undervisning);
   background: var(--diagram-undervisning);
 }
 
 .fordeling-del-motetid {
-  fill: var(--diagram-motetid);
   background: var(--diagram-motetid);
 }
 
 .fordeling-del-annen_planfestet {
-  fill: var(--diagram-annen);
   background: var(--diagram-annen);
 }
 
 .fordeling-del-planleggingsdager {
-  fill: var(--diagram-planlegging);
   background: var(--diagram-planlegging);
 }
 
 .fordeling-del-funksjonstid {
-  fill: var(--diagram-funksjon);
   background: var(--diagram-funksjon);
 }
 
 .fordeling-del-selvdisponert {
-  fill: var(--diagram-selv);
   background: var(--diagram-selv);
 }
 
-.fordeling-skille {
-  stroke: var(--farge-flate);
-  stroke-width: 1.5;
+/* Det som går ut over stillingen i stolpen for beskjeftigelse. */
+.fordeling-del-variabel {
+  background: var(--diagram-variabel);
 }
 
-.fordeling-klamme {
-  fill: none;
-  stroke: var(--farge-tekst-dempet);
-  stroke-width: 1;
+.fordeling-del-over {
+  background: var(--diagram-over);
+}
+
+/* Delene av et beløp (lønn, tillegg, variabel lønn, overtid og feriepenger) i seriefargene, i fast rekkefølge. */
+.fordeling-del-serie-1 {
+  background: var(--serie-1);
+}
+
+.fordeling-del-serie-2 {
+  background: var(--serie-2);
+}
+
+.fordeling-del-serie-3 {
+  background: var(--serie-3);
+}
+
+.fordeling-del-serie-4 {
+  background: var(--serie-4);
+}
+
+.fordeling-del-serie-5 {
+  background: var(--serie-5);
 }
 
 .fordeling-forklaring {
@@ -3660,21 +3728,10 @@ p.fagkort-tittel {
   padding-block: var(--rom-2);
 }
 
-/* Fagene får fargen de har i stolpen for beskjeftigelse, etter tur (prikken i Arbeidsplan). */
-.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 1) {
+/* Fagene har fargen til undervisning, som i stolpen for beskjeftigelse og i årsverket (prikken i Arbeidsplan, forslag
+   09.10.2026). */
+.skjemadel .fagkortliste > .fagkort {
   --rad: var(--diagram-undervisning);
-}
-
-.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 2) {
-  --rad: var(--diagram-annen);
-}
-
-.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 3) {
-  --rad: var(--diagram-motetid);
-}
-
-.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 4) {
-  --rad: var(--diagram-selv);
 }
 
 .skjemadel .fagkortliste {
@@ -6732,11 +6789,11 @@ button.frist-stripe-celle:hover {
 
 .tosidig-venstre {
   border-right: var(--strek) solid var(--farge-kant);
-  color: var(--vurdering-halvaar);
+  color: var(--vurdering-tekst-halvaar);
 }
 
 .tosidig-hoyre {
-  color: var(--vurdering-standpunkt);
+  color: var(--vurdering-tekst-standpunkt);
 }
 
 .tosidig .tosidig-etikett {
@@ -6830,16 +6887,14 @@ button.frist-stripe-celle:hover {
   text-align: left;
 }
 
-.skolear-halvaar {
-  color: var(--vurdering-halvaar);
-}
-
-.skolear-eksamen {
-  color: var(--vurdering-eksamen);
+/* Etikettene står i tekstfarge. Fargen står i feltet og i forklaringen under (forslag 09.10.2026). */
+.skolear-halvaar,
+.skolear-eksamen,
+.skolear-standpunkt {
+  color: var(--farge-tekst);
 }
 
 .skolear-standpunkt {
-  color: var(--vurdering-standpunkt);
   text-align: right;
 }
 
@@ -6847,13 +6902,13 @@ button.frist-stripe-celle:hover {
    stolpen, så de skiller seg ut. */
 .skolear-spor {
   position: relative;
-  height: 1.75rem;
+  height: 1.25rem;
 }
 
 .skolear-spor::before {
   content: '';
   position: absolute;
-  inset: 0.5rem 0;
+  inset: calc((1.25rem - 0.375rem) / 2) 0;
   border-radius: 999px;
   background: var(--vurdering-underveis);
 }
@@ -6882,7 +6937,7 @@ button.frist-stripe-celle:hover {
   grid-template-columns: repeat(11, 1fr);
   margin-top: var(--rom-1);
   color: var(--farge-tekst-dempet);
-  font-size: 0.625rem;
+  font-size: var(--str-xs);
   text-align: center;
 }
 
