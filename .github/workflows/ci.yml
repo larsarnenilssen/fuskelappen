@@ -26,11 +26,11 @@ jobs:
     outputs:
       nivaa: ${{ steps.nivaa.outputs.nivaa }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         if: github.event_name == 'pull_request'
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         if: github.event_name == 'pull_request'
         with:
           node-version-file: .nvmrc
@@ -54,8 +54,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -76,14 +76,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
       - run: npm run build:e2e
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: dist-e2e
           path: dist-e2e/
@@ -116,13 +116,13 @@ jobs:
           - { navn: 'Chromium skrivebord', del: chromium-skrivebord, valg: '--project=chromium-skrivebord' }
           - { navn: 'WebKit skrivebord', del: webkit-skrivebord, valg: '--project=webkit-skrivebord' }
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v7
         with:
           name: dist-e2e
           path: dist-e2e/
@@ -130,7 +130,7 @@ jobs:
         run: npm run test:e2e -- ${{ matrix.valg }}
         env:
           E2E_FERDIG_BYGD: '1'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: failure()
         with:
           name: playwright-report-${{ matrix.del }}
