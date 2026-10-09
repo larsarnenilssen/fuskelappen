@@ -2,6 +2,17 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 1.2.0
+    dato: 2026-10-09
+    nytt:
+      - nb: "Aktuelt på forsiden: kalenderen, nyhetene, tallene og dagens jukselapp samlet, med eget filter. Lukk det med pilen eller skjul det i menyen."
+        nn: "Aktuelt på framsida: kalenderen, nyheitene, tala og dagens jukselapp samla, med eige filter. Lukk det med pila eller skjul det i menyen."
+      - nb: Større tekst, kortere velkomst og bedre treff i søket, for eksempel på «leseplikt».
+        nn: Større tekst, kortare velkomst og betre treff i søket, til dømes på «leseplikt».
+      - nb: "Nytt innhold: kompetansekrav ved ansettelse, oppfølging av fravær, meldeplikter og taushetsplikt, og gratisprinsippet."
+        nn: "Nytt innhald: kompetansekrav ved tilsetjing, oppfølging av fråvær, meldeplikter og teieplikt, og gratisprinsippet."
+      - nb: Lovteksten holdes oppdatert uten ny versjon, og favorittene dine tåler oppdateringer bedre.
+        nn: Lovteksten blir halden oppdatert utan ny versjon, og favorittane dine toler oppdateringar betre.
   - versjon: 1.1.0
     dato: 2026-10-09
     nytt:
