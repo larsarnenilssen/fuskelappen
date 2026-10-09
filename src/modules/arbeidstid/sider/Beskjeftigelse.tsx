@@ -5,13 +5,13 @@ import { beregnBeskjeftigelse, type Gruppe } from '../beregning/index.ts';
 import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Skjemadel } from '../komponenter/Skjemadel.tsx';
-import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
+import { Grupper, gruppenavn, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { overforSkjema, useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Beskjeftigelse() {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
@@ -26,6 +26,10 @@ export default function Beskjeftigelse() {
   let j = 0;
   const delresultater = inndata.map((g) => (g === null ? null : (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null)));
 
+  // Kortnavnene på fagene som er med i beregningen, i stolpen og utregningen (eier 09.10.2026).
+  const alleNavn = gruppenavn(grupper, indeks, malform, t);
+  const navnIBeregningen = inndata.flatMap((g, i) => (g === null ? [] : [alleNavn[i] ?? '']));
+
   const tittel = utfylte.length > 1 ? t('arbeidstid.resultat.sumBeskjeftigelse') : t('arbeidstid.resultat.beskjeftigelse');
 
   return (
@@ -37,8 +41,8 @@ export default function Beskjeftigelse() {
           {resultat ? (
             <>
               <Advarsler advarsler={resultat.advarsler} />
-              <Utregningskort tittel={tittel} resultat={resultat.sum} trinn={resultat.trinn}>
-                <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
+              <Utregningskort tittel={tittel} resultat={resultat.sum} trinn={resultat.trinn} gruppenavn={navnIBeregningen}>
+                <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: navnIBeregningen[i] ?? '', prosent: g.beskjeftigelse.verdi }))} />
               </Utregningskort>
               <a class="lenke-pil" href="#/arbeidstid/arbeidsplan" onClick={() => overforSkjema('arbeidsplan', { grupper })}>
                 {t('arbeidstid.felles.fortsettArbeidsplan')}

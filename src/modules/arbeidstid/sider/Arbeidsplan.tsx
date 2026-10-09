@@ -22,7 +22,7 @@ import { Lonnsskjema } from '../komponenter/Lonnsskjema.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Skjemadel } from '../komponenter/Skjemadel.tsx';
-import { Bryter, type Fagindeks, type Gruppetilstand, Grupper, radTekst, reserverIder, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
+import { Bryter, type Fagindeks, type Gruppetilstand, Grupper, gruppenavn, radTekst, reserverIder, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { DeltMerknad, DELT_PARAMETER, type Sammenligning, Sammenligningsvisning, useDeltVariant, Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
@@ -158,6 +158,9 @@ export default function Arbeidsplan({ sporring }: SideProps) {
   const tilleggene = b.tilleggene.map(({ i, kr }) => ({ navn: s.funksjoner[i]?.navn.trim() || t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 }), kr }));
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
+  // Kortnavnene på fagene i stolpen og utregningen (eier 09.10.2026), for fagene som er med i beregningen.
+  const alleNavn = gruppenavn(s.grupper, indeks, malform, t);
+  const navnIBeregningen = fylte.map((x) => alleNavn[s.grupper.indexOf(x.g)] ?? '');
   const fagIGruppe = fylte.map((x, i) => fagnavn(x.g, indeks, `${t('arbeidstid.felles.manuellEtikett')} ${formaterTall(resultat?.grupper[i]?.arsramme.verdi ?? 0)}`, malform));
   // Samme fag lagt til i flere grupper gir samme omregning, så hvert fag vises én gang i valget og listen.
   const hvertFag = resultat ? unikeFag(differanseIHvertFag(resultat).map((d, i) => ({ ...d, fag: fagIGruppe[i] ?? '' }))) : [];
@@ -165,7 +168,7 @@ export default function Arbeidsplan({ sporring }: SideProps) {
 
   const deler: Stolpedel[] = resultat
     ? [
-        ...resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: s.grupper.indexOf((fylte[i] as { g: Gruppetilstand }).g) + 1 }), prosent: vis(g.beskjeftigelse.verdi) })),
+        ...resultat.grupper.map((g, i) => ({ navn: navnIBeregningen[i] ?? '', prosent: vis(g.beskjeftigelse.verdi) })),
         ...s.funksjoner
           .map((f, i) => ({ navn: f.navn || t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 }), prosent: vis(prosenter[i] ?? 0), type: 'funksjon' as const }))
           .filter((d) => d.prosent > 0),
@@ -219,6 +222,7 @@ export default function Arbeidsplan({ sporring }: SideProps) {
                 resultat={{ ...resultat.beskjeftigelse, verdi: vis(resultat.beskjeftigelse.verdi) }}
                 trinn={resultat.trinn}
                 sammendrag={false}
+                gruppenavn={navnIBeregningen}
               >
                 {iPeriode && (
                   <Bryter

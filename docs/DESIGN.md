@@ -79,6 +79,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 ## Delene som kan lukkes
 
 - **En del av en side** som kan lukkes, er en `Seksjon`: tynn strek over, tittelen til venstre og en liten pil til høyre. Lukket viser den innholdet på én dempet linje.
+- **Fag- og funksjonskortene i kalkulatorene** har ingen egen tittel. Feltet for faget eller navnet på funksjonen står øverst, med prikken i fargen fra stolpen foran og pilen og krysset til høyre. Lukket står kortnavnet der, f.eks. «Matematikk R1 · 26,67 %». Stolpen og utregningen bruker de samme kortnavnene (eier 09.10.2026).
 - **Kort med overskrift** (skjemadelene i kalkulatorene, resultatkortet, rubrikkene i Opplæringstilbud, Læreplanverket og Lov og forskrift, delene i Innstillinger og brukserklæringen i Om appen) har overskriften på en myk flate i temafargen, med innholdet på hvitt under (eier 08.10.2026).
 - **Har delene egne underoverskrifter** (f.eks. fagarket, med ferdighetene, kompetansemålene og vurderingen), er hver del et hvitt kort med overskriften på en myk flate i temafargen, så nivåene skilles (eier 08.10.2026). Underdelene er rader med en tynn strek mellom, og forklaringene inni står med luft over og under.
 - **Et kort som kan åpnes** (`Innholdskort`, `Lukketkort`) viser tittelen og første setning, med pilen til høyre. Det har regelverket og kildene som lukkede rader nederst (`Kortfot`).
