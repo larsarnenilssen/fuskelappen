@@ -4,6 +4,7 @@ import { ToKolonner } from '../../../components/ToKolonner.tsx';
 import { oversiktsid } from '../../favoritter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { veiviseroverskrift, Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
+import { Oversiktsdel } from '../../../components/Oversiktsdel.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, veiviserRute, type Veiviserinnhold } from '../innhold.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -67,15 +68,14 @@ export default function Oversikt() {
       <ToKolonner
         hoved={<Figur />}
         side={
-          <section class="lop-del">
-            <h2 class="liten-overskrift">{t(veiviseroverskrift(veivisere.length))}</h2>
+          <Oversiktsdel tittel={t(veiviseroverskrift(veivisere.length))} antall={veivisere.length}>
             {/* Like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren (eier 03.10.2026). */}
             {innhold === null ? (
               <p class="dempet">{t('app.lasterInn')}</p>
             ) : (
               <Veiviserinnganger veivisere={veivisere} rute={veiviserRute} />
             )}
-          </section>
+          </Oversiktsdel>
         }
       />
     </div>

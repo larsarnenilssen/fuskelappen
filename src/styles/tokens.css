@@ -95,12 +95,13 @@
   /* Typografi */
   --font-tekst: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-tall: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-  --str-xs: 0.75rem;
+  /* Brødteksten er 16 px, og datoer, merker og dempede linjer minst 13 px (avgjørelse 100). */
+  --str-xs: 0.8125rem;
   --str-s: 0.875rem;
-  --str-m: 0.9375rem;
-  --str-l: 1.0625rem;
-  --str-xl: 1.25rem;
-  --str-xxl: 1.5rem;
+  --str-m: 1rem;
+  --str-l: 1.125rem;
+  --str-xl: 1.3125rem;
+  --str-xxl: 1.625rem;
   --linjehoyde: 1.5;
 
   /* Avstand */

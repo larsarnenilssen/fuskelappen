@@ -483,6 +483,20 @@ export const synonymSkjema = z
         })
         .strict(),
     ),
+    /**
+     * Hverdagsord brukerne søker med, som ikke står i teksten («leseplikt»). Et søk på ordet finner også det appen kaller
+     * det («undervisningstid», «årsramme»). Bare søkehjelp, ikke en påstand om at ordene betyr det samme (avgjørelse 100).
+     */
+    hverdagsord: z
+      .array(
+        z
+          .object({
+            ord: z.array(z.string().min(2)).min(1),
+            gir: z.array(z.string().min(2)).min(1),
+          })
+          .strict(),
+      )
+      .optional(),
   })
   .strict();
 

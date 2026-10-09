@@ -224,7 +224,8 @@ select {
   font-size: var(--str-l);
   text-decoration: none;
   letter-spacing: 0.01em;
-  padding: var(--rom-2);
+  /* Lite luft på sidene, så hele navnet får plass på 320 px også med den større teksten (avgjørelse 100). */
+  padding: var(--rom-2) var(--rom-1);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -511,6 +512,15 @@ main {
 /* Landingssiden for Opplæringsløp: to likestilte deler, utdanningsprogram og løp, og skoler og opplæringskontorer. */
 .lop-del {
   margin-top: var(--rom-5);
+}
+
+/* En del med bare én inngang står uten overskrift, og flere slike etter hverandre står som én liste (avgjørelse 100). */
+.lop-del-enkel + .lop-del-enkel {
+  margin-top: var(--rom-3);
+}
+
+.lop-del-enkel > .veiviser-innganger:last-child {
+  margin-bottom: 0;
 }
 
 /* Delene på oversiktene i modulene har en strek over og en fet overskrift i tekstfarge (fase 8b, docs/DESIGN.md). */
@@ -1821,12 +1831,6 @@ p.fagkort-tittel {
 
 .stolpe-klamme-uten::before {
   border-color: transparent;
-}
-
-.figur-tekst {
-  fill: var(--farge-tekst-dempet);
-  font-size: 10px;
-  font-family: var(--font-tekst);
 }
 
 .fordeling-tabell tr.sumrad th,
@@ -4586,6 +4590,34 @@ p.fagkort-tittel {
   margin: 0;
 }
 
+/* Gruppene i Regelverk står åpne: overskriften er ingen knapp, men har samme flate og luft (avgjørelse 100). */
+.lv-gruppe-tittel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--rom-3);
+  padding: var(--rom-2) var(--rom-4);
+}
+
+/* Dokumentene er rader i kortet, ikke en boks inni boksen (docs/DESIGN.md). */
+.lv-gruppe > .rubrikk-innhold {
+  padding: 0;
+}
+
+.lv-gruppe > .rubrikk-innhold > .liste {
+  border: 0;
+  border-radius: 0;
+}
+
+.lv-gruppe > .rubrikk-innhold > p {
+  margin: 0;
+  padding: var(--rom-3) var(--rom-4);
+}
+
+.lv-gruppe > .rubrikk-innhold > .liste + p {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
 /*
  * Fagene i et tilbud: én rad per fag med samme høyde og avstand til skillelinjene. Navnet står til venstre (lenke
  * eller knapp), timene til høyre. Valg og koder står dempet etter navnet (eier 02.10.2026, avgjørelse 036).
@@ -7199,10 +7231,11 @@ button.frist-stripe-celle:hover {
   cursor: pointer;
 }
 
+/* Det valgte filteret er gult, som de andre valgknappene (docs/DESIGN.md, avgjørelse 100). */
 .sokefilter-valg[aria-pressed='true'] {
-  border-color: var(--farge-merke);
-  background: var(--farge-merke);
-  color: var(--farge-merke-tekst);
+  border-color: var(--farge-aksent);
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
 }
 
 /* Knappen med det valgte fylket står først, litt for seg (eier 05.10.2026). */
@@ -7953,9 +7986,8 @@ a.knapp {
   margin-top: var(--rom-5);
 }
 
-.kal-kontroll {
-  margin: 0;
-  padding-left: var(--rom-4);
+.kal-kilde + .kildeboks {
+  margin-top: var(--rom-3);
 }
 
 .tilpass-neste {
@@ -8427,7 +8459,9 @@ a.knapp {
    Fra 64rem (samme som TO_KOLONNER i ToKolonner.tsx) er siden opptil 72rem bred, med hoveddelen til venstre (3/5)
    og sidedelen til høyre (2/5). Én kolonne under 64rem, hoveddelen først. */
 @media (min-width: 64rem) {
-  main:has(.side-bred) {
+  /* Toppfeltet står i linje med siden, så tilbakeknappen står over innholdet (avgjørelse 100). */
+  main:has(.side-bred),
+  .skall:has(main .side-bred) .topplinje-innhold {
     max-width: 72rem;
   }
 
