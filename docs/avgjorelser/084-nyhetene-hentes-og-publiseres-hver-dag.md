@@ -17,3 +17,12 @@
 **Konsekvens:** Publiseringen går hver dag i stedet for hver uke. Det er om lag fem minutter i Actions per dag. Nyhetene er aldri mer enn et døgn gamle, og ingenting annet i appen endres uten PR. En kilde som endrer formatet, gir status `tom` i stedet for en tom liste.
 
 **Tillegg 08.10.2026:** Den første planlagte kjøringen ble hoppet over av GitHub, så nyhetene var fra dagen før. Arbeidsflyten kjører nå også kl. 08.17 og 13.17 norsk sommertid (06.17 og 11.17 UTC). Bare nye saker committes og publiseres, og saken om nyhetskilder får bare en kommentar når noe nytt er galt, så flere kjøringer gir ikke flere varsler.
+
+**Tillegg 09.10.2026:**
+- **Det som skjedde:** GitHub starter planlagte kjøringer i dette repoet 6,5–7 timer for sent.
+  - 08.10 kom kjøringen fra 05.47 først 12.57, og den fra 13.17 kom 19.53.
+  - 09.10 hadde ingen av morgenkjøringene kommet kl. 11.
+  - Kildesjekken på mandag kom også 7 timer for sent.
+  - Den første natten ble ikke hoppet over, som tillegget 08.10 sier. Kjøringen kom sju timer for sent.
+- **Endringen:** Hentingen kjører nå hver time (`47 * * * *`). Med samme forsinkelse kommer det da en kjøring omtrent hver time, også om morgenen.
+- **Ingen garanti:** GitHub lover ikke når planlagte kjøringer kommer, eller at de kommer. Skal nyhetene være der på et bestemt tidspunkt, må kjøringen startes utenfra (eier vurderer en ekstern tjeneste).
