@@ -29,10 +29,11 @@ describe('kode', () => {
   });
 
   it('ingen any uten begrunnet kommentar', () => {
+    // Filen leses én gang. Før ble den lest på nytt for hver linje, og testen fikk tidsavbrudd (avgjørelse 097).
     const brudd = filer(join(rot, 'src'), ['.ts', '.tsx']).flatMap((f) =>
       readFileSync(f, 'utf8')
         .split('\n')
-        .map((linje, i) => ({ linje, i, forrige: readFileSync(f, 'utf8').split('\n')[i - 1] ?? '' }))
+        .map((linje, i, linjer) => ({ linje, i, forrige: linjer[i - 1] ?? '' }))
         .filter(({ linje, forrige }) => /:\s*any\b|as any\b|<any>/.test(linje) && !/\/\/.*any/.test(forrige + linje))
         .map(({ i }) => `${relative(rot, f)}:${i + 1}`),
     );
