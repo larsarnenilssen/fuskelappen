@@ -2,13 +2,15 @@
 // Avgjørelse 056: favorittene og kategoriene er grupper som kan lukkes og sorteres («Tilpass forsiden»), favorittene
 // sorteres der de står, og forsiden kan vise bare favorittene, fordelt under kategoriene sine. Valgene lagres på enheten.
 // Avgjørelse 102: Aktuelt (kalenderen, nyhetene, tallene og dagens jukselapp) står øverst, i sidekolonnen på skrivebord.
+// Avgjørelse 108: i spalter rykker lukkede grupper opp i luften ved siden av en åpen gruppe.
 import type { ComponentChildren } from 'preact';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useLayoutEffect, useRef, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Bryter } from '../../components/Bryter.tsx';
 import { Ikon } from '../../components/Ikon.tsx';
 import { Sorterbar } from '../../components/Sorterbar.tsx';
 import { visTekst } from '../../core/i18n/tekst.ts';
+import { plasserGrupper } from '../../core/forside/oppsett.ts';
 import { flytt, flyttInnenfor, modulForFavoritt, ordneGrupper } from '../../core/forside/ordning.ts';
 import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
@@ -17,10 +19,20 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from '../Forsidegruppe.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
-import { Aktuelt, PANEL, useAktuelt, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
+import { Aktuelt, PANEL, useAktuelt, type Visning, VISNINGER, Visningsgruppe } from '../Forsidepanel.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
 import { apneVelkomst } from '../velkomst/apne.ts';
-import { nullstillForside, settAktueltVist, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt } from '../tilstand.ts';
+import {
+  nullstillForside,
+  settAktueltVist,
+  settBareFavoritter,
+  settFavorittrekkefolge,
+  settGrupperekkefolge,
+  settJukselapp,
+  useTekst,
+  useTilstand,
+  vekslFavoritt,
+} from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
 
@@ -94,6 +106,74 @@ function Sidekolonne({ children }: { children: ComponentChildren }) {
   );
 }
 
+/** Så mye en lukket gruppe kan gå forbi slutten av raden og likevel rykke opp, i piksler. */
+const SLINGRING = 8;
+
+/**
+ * Gruppene i spalter (avgjørelse 108). Gruppene står i rader, så overskriftene står på linje, og lukkede grupper
+ * rykker opp i luften ved siden av en åpen gruppe (`plasserGrupper`). Hver rad i rutenettet er 1 px, og hver gruppe
+ * spenner over så mange rader som den er høy. Rekkefølgen i DOM-en er rekkefølgen fra «Tilpass», så skjermlesere og
+ * tastatur følger den. Med én spalte (mobil) står gruppene under hverandre som før.
+ */
+function Grupperutenett({ children }: { children: ComponentChildren }) {
+  const rutenett = useRef<HTMLDivElement>(null);
+  const ordne = useRef<() => void>(() => undefined);
+  useEffect(() => {
+    const el = rutenett.current;
+    if (!el) return;
+    let ramme = 0;
+    const grupper = () => [...el.children].filter((b): b is HTMLElement => b instanceof HTMLElement);
+    const plasser = () => {
+      ramme = 0;
+      const stil = getComputedStyle(el);
+      const spalter = stil.display === 'grid' ? stil.gridTemplateColumns.split(' ').filter(Boolean).length : 1;
+      const barn = grupper();
+      if (spalter < 2) {
+        el.classList.remove('spalteoppsett');
+        for (const b of barn) b.style.removeProperty('grid-area');
+        return;
+      }
+      const bokser = barn.map((b) => ({ hoyde: Math.max(1, Math.ceil(b.getBoundingClientRect().height)), lukket: b.classList.contains('lukket') }));
+      el.classList.add('spalteoppsett');
+      plasserGrupper(bokser, spalter, SLINGRING).forEach((p, i) => {
+        const b = barn[i];
+        const boks = bokser[i];
+        if (b && boks) b.style.gridArea = `${p.topp + 1} / ${p.spalte + 1} / span ${boks.hoyde} / span 1`;
+      });
+    };
+    const planlegg = () => {
+      if (!ramme) ramme = requestAnimationFrame(plasser);
+    };
+    ordne.current = planlegg;
+    // Gruppene blir høyere og lavere når de åpnes og lukkes og når innholdet lastes, og bredden endres med vinduet.
+    const storrelse = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(planlegg);
+    const folg = () => {
+      storrelse?.disconnect();
+      storrelse?.observe(el);
+      for (const b of grupper()) storrelse?.observe(b);
+    };
+    folg();
+    const barn = new MutationObserver(() => {
+      folg();
+      planlegg();
+    });
+    barn.observe(el, { childList: true });
+    plasser();
+    return () => {
+      cancelAnimationFrame(ramme);
+      storrelse?.disconnect();
+      barn.disconnect();
+    };
+  }, []);
+  // En gruppe som lukkes eller åpnes, kan bytte plass før høyden endres.
+  useLayoutEffect(() => ordne.current());
+  return (
+    <div class="forsidegrupper" ref={rutenett}>
+      {children}
+    </div>
+  );
+}
+
 /** Blyanten for å sortere favorittene i en gruppe, og haken for å avslutte. */
 function Endreknapp({ endre, onEndre, gruppe }: { endre: boolean; onEndre: () => void; gruppe: string }) {
   const { t } = useTekst();
@@ -155,14 +235,20 @@ function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: 
 }
 
 /**
- * «Tilpass»: rekkefølgen på gruppene, og om Aktuelt står på forsiden (avgjørelse 102). Hva som står i Aktuelt, velges i
- * menyen i Aktuelt selv. Når sidekolonnen brukes (skrivebord), står Aktuelt og favorittene i en egen del, og hopper ut
+ * «Tilpass»: rekkefølgen på gruppene, om Aktuelt står på forsiden (avgjørelse 102), og dagens jukselapp, så den også kan
+ * slås på når forsiden viser bare favoritter (eier 10.10.2026). Hva ellers som står i Aktuelt, velges i menyen i Aktuelt. Når sidekolonnen brukes (skrivebord), står Aktuelt og favorittene i en egen del, og hopper ut
  * av rekkefølgen for de andre gruppene. Plassen deres i den felles rekkefølgen beholdes, så de står der brukeren satte
  * dem når vinduet blir smalt (eier 05.10.2026).
  */
-function Tilpasning({ grupper, navn, sidekolonne }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean }) {
+function Tilpasning({ grupper, navn, sidekolonne, bare }: { grupper: string[]; navn: (id: string) => string; sidekolonne: boolean; bare: boolean }) {
   const { t } = useTekst();
+  const { forside } = useTilstand();
   const { skjult } = useAktuelt();
+  // Slås jukselappen på mens Aktuelt er skjult, kommer Aktuelt tilbake, så jukselappen synes også med alt innhold.
+  const vekslJukselapp = () => {
+    if (!forside.jukselapp && skjult && !bare) settAktueltVist(true);
+    settJukselapp(!forside.jukselapp);
+  };
   const iKolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sorterbar = (utvalg: string[], etikett: string) => (
     <Sorterbar
@@ -181,6 +267,13 @@ function Tilpasning({ grupper, navn, sidekolonne }: { grupper: string[]; navn: (
       <div class="vippe">
         <input id="tilpass-aktuelt" type="checkbox" role="switch" checked={!skjult} aria-describedby="tilpass-aktuelt-hjelp" onChange={() => settAktueltVist(skjult)} />
         <label for="tilpass-aktuelt">{t('forside.aktuelt.vis')}</label>
+      </div>
+      <p class="dempet liten" id="tilpass-jukselapp-hjelp">
+        {t('forside.aktuelt.jukselappHjelp')}
+      </p>
+      <div class="vippe">
+        <input id="tilpass-jukselapp" type="checkbox" role="switch" checked={!!forside.jukselapp} aria-describedby="tilpass-jukselapp-hjelp" onChange={vekslJukselapp} />
+        <label for="tilpass-jukselapp">{t('forside.aktuelt.jukselapp')}</label>
       </div>
     </fieldset>
   );
@@ -254,9 +347,9 @@ export default function Forside() {
     antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
 
   // Med «Bare favoritter» står visningene som er favoritter, hver for seg, i stedet for kortene sine. Jukselappen har
-  // ingen side å være favoritt, og står likevel når den er slått på.
+  // ingen side å være favoritt, og står likevel når den er slått på, også når Aktuelt er skjult (eier 10.10.2026).
   const favorittFor = (v: string) => VISNINGER.find((x) => x.id === v)?.favoritt ?? null;
-  const somFavoritt = paa.filter((v) => v === 'jukselapp' || favoritter.includes(favorittFor(v) ?? ''));
+  const somFavoritt: Visning[] = [...paa.filter((v) => v !== 'jukselapp' && favoritter.includes(favorittFor(v) ?? '')), ...(forside.jukselapp ? (['jukselapp'] as const) : [])];
   const visesSomVisning = (f: string) => somFavoritt.some((v) => favorittFor(v) === f);
   const iSidekolonnen = (id: string) => id === PANEL || id === FAVORITTER;
   const sidegrupper = grupper.filter(iSidekolonnen);
@@ -334,7 +427,7 @@ export default function Forside() {
           <Stedmerknad />
 
           {tilpass ? (
-            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} />
+            <Tilpasning grupper={grupper} navn={navn} sidekolonne={medKolonne} bare={bare} />
           ) : (
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
@@ -343,17 +436,18 @@ export default function Forside() {
                 // Skrivebord uten noe i sidekolonnen (Aktuelt skjult og ingen favoritter): gruppene får hele bredden, i
                 // så mange spalter som får plass (avgjørelse 102).
                 <div class="forside-oppsett forside-full">
-                  <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+                  <Grupperutenett>{grupper.map(gruppe)}</Grupperutenett>
                 </div>
               ) : !medKolonne ? (
-                // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026).
-                <div class="forsidegrupper">{grupper.map(gruppe)}</div>
+                // To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026), og
+                // lukkede grupper rykker opp (avgjørelse 108).
+                <Grupperutenett>{grupper.map(gruppe)}</Grupperutenett>
               ) : (
                 // Skrivebord (eier 05.10.2026): Aktuelt og favorittene står i en egen kolonne til høyre, i rekkefølgen
                 // fra «Tilpass». Kolonnene er like brede: gruppene i én kolonne ved siden av, og i to når det er plass
                 // til tre.
                 <div class="forside-oppsett">
-                  <div class="forsidegrupper">{hovedgrupper.map(gruppe)}</div>
+                  <Grupperutenett>{hovedgrupper.map(gruppe)}</Grupperutenett>
                   <Sidekolonne>{sidegrupper.map(gruppe)}</Sidekolonne>
                 </div>
               )}

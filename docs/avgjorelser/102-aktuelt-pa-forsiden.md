@@ -13,3 +13,5 @@
 - **«Bare favoritter»** og favorittforsiden er som før.
 
 **Konsekvens:** Aktuelt tilpasses på ett sted, i rammen selv. Fanene står nå under overskriften, ikke i den, og gruppen (`Gruppe`) har fått `klasse`, `verktoyAlltid` og `foran` for menyen. Forslagsgrenen og `?forslag=` er ikke tatt inn. En ny visning krever en oppføring i `VISNINGER`, en komponent i `Forsidepanel.tsx` og en tekst i `forside.panel` og `forside.tilpass.visning`.
+
+**Endret 10.10.2026:** «Tilpass» har også en bryter for dagens jukselapp, så den kan slås på fra favorittforsiden. Med bare favoritter står jukselappen når den er slått på, også når Aktuelt er skjult (eier 10.10.2026, avgjørelse 108).

@@ -43,6 +43,8 @@ export const nn: Tekster = {
       skjulHjelp: 'Du får det tilbake under «Tilpass».',
       vis: 'Vis Aktuelt på framsida',
       visHjelp: 'Kalenderen, nyheitene, tala og dagens jukselapp. Kva som står der, vel du i menyen i Aktuelt.',
+      jukselapp: 'Dagens jukselapp på framsida',
+      jukselappHjelp: 'Eit nytt faktum frå appen kvar dag. Han står i Aktuelt, og for seg når framsida viser berre favorittar.',
     },
     panel: {
       legend: 'Visingane i Aktuelt',

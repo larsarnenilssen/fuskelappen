@@ -76,9 +76,9 @@ test.describe('Aktuelt på forsiden', () => {
     await venterPaaSide(page);
     await expect(aktuelt(page)).toHaveCount(0);
 
-    // «Tilpass» har rekkefølgen og bryteren for Aktuelt, men ikke valgene i menyen.
+    // «Tilpass» har rekkefølgen og bryterne for Aktuelt og dagens jukselapp, men ikke de andre valgene i menyen.
     await page.getByRole('button', { name: 'Tilpass', exact: true }).click();
-    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toHaveCount(0);
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toBeChecked();
     await expect(page.getByRole('checkbox', { name: 'Neste datoer fra kalenderen' })).toHaveCount(0);
     await page.getByRole('switch', { name: 'Vis Aktuelt på forsiden' }).check();
     await page.getByRole('button', { name: 'Ferdig' }).click();

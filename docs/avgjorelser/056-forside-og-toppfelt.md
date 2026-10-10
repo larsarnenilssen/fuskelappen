@@ -15,3 +15,5 @@
 **Konsekvens:** Én flate å ordne appen på, mer plass på mobil og ingen fast meny nederst. Startpakken øker til om lag 95,6 kB, fordi forsiden lastes med en gang. Nye moduler får grupper, favoritter og ikoner uten endringer i forsiden.
 
 **Endret 09.10.2026:** Kalenderen, nyhetene, tallene og dagens jukselapp står samlet i gruppen «Aktuelt», som tilpasses i menyen sin. «Tilpass» har rekkefølgen, bryteren «Vis Aktuelt på forsiden» og «Standard rekkefølge» (avgjørelse 102).
+
+**Endret 10.10.2026:** I spalter rykker lukkede grupper opp i luften ved siden av en åpen gruppe, og alle favorittene på forsiden er like høye (eier 10.10.2026, avgjørelse 108).

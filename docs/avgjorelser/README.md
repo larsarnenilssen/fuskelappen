@@ -10,7 +10,7 @@ Status:
 - **endret:** notatet har minst én linje «**Endret …**» nederst, eller en del som sier «(Erstattet i avgjørelse NNN …)». Avgjørelsene disse linjene viser til, står etter «av». Det som står nederst, gjelder foran det over.
 - **erstattet:** notatet gjelder ikke lenger. Se avgjørelsen som erstattet det.
 
-107 avgjørelser: 73 gjeldende, 33 endret og 1 erstattet.
+108 avgjørelser: 73 gjeldende, 34 endret og 1 erstattet.
 
 | Nr. | Avgjørelse | Status |
 |---|---|---|
@@ -69,7 +69,7 @@ Status:
 | 053 | [Skoler og tilbud, yrker, opplæringskontorer og NDLA](053-skoler-yrker-opplaeringskontor-ndla.md) | gjeldende |
 | 054 | [Vurdering: underveis og slutt, grunnlag for vurdering og orden og oppførsel](054-vurdering.md) | gjeldende |
 | 055 | [Ende-til-ende: berørte tester lokalt, hele suiten fordelt i CI](055-e2e-berorte-og-fordelt.md) | gjeldende |
-| 056 | [Forsiden som kan tilpasses, og toppfeltet i stedet for bunnmenyen](056-forside-og-toppfelt.md) | endret av 102 |
+| 056 | [Forsiden som kan tilpasses, og toppfeltet i stedet for bunnmenyen](056-forside-og-toppfelt.md) | endret av 102, 108 |
 | 057 | [Fraværsgrensen, og VIGO som kontroll av fagene i Grep](057-fravaersgrensen-og-vigo-vurdering.md) | gjeldende |
 | 058 | [Jukselappen, favoritter på alle sider og filtre i søket](058-jukselappen-favoritter-og-sokefilter.md) | gjeldende |
 | 059 | [Eksamen og klage, og eksamensdatoene fra Udir og fylkene](059-eksamen-klage-og-eksamensdatoer.md) | gjeldende |
@@ -115,9 +115,10 @@ Status:
 | 099 | [Dependabot, Node 24 og overvåking av jukselappen.no](099-dependabot-node-og-overvaking.md) | endret |
 | 100 | [Større tekst, hovedinnholdet åpent og bedre treff i søket](100-lesbarhet-apent-innhold-og-sok.md) | endret |
 | 101 | [Velkomsten i fire trinn](101-velkomst-i-fire-trinn.md) | endret |
-| 102 | [Aktuelt på forsiden](102-aktuelt-pa-forsiden.md) | gjeldende |
+| 102 | [Aktuelt på forsiden](102-aktuelt-pa-forsiden.md) | endret av 108 |
 | 103 | [«Skule» på nynorsk i innholdet](103-nynorsk-skule.md) | endret |
 | 104 | [Sikkerhetskopien kan gjenopprettes](104-gjenopprett-sikkerhetskopi.md) | gjeldende |
 | 105 | [Fra faser til drift: DRIFT.md, arkivet, skills og oversikten over avgjørelsene](105-drift.md) | endret |
 | 106 | [Plan for kontrollen: ukens kontroll og fylkeslenkene](106-plan-for-kontrollen.md) | endret |
 | 107 | [Kildestatus: «virker» og «endret» for seg, og kontrolloversikten etter godkjenning](107-kildestatus-virker-og-endret.md) | gjeldende |
+| 108 | [Forsiden: lukkede grupper rykker opp, like høye favoritter og dagens jukselapp i «Tilpass»](108-forsiden-lukkede-grupper-og-favoritter.md) | gjeldende |

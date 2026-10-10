@@ -1,7 +1,7 @@
 // Favorittene og forsiden (avgjørelse 056): favorittene står øverst på forsiden og sorteres der de står, gruppene kan
 // lukkes og sorteres, og forsiden kan vise bare favorittene under kategoriene sine.
 import { expect, test } from '@playwright/test';
-import { ruter, settLagret, venterPaaSide } from './hjelp.ts';
+import { erMobil, ruter, settLagret, venterPaaSide } from './hjelp.ts';
 
 const TO = ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'];
 
@@ -60,6 +60,43 @@ test.describe('favoritter og forsiden', () => {
     await expect(page.locator('.favorittmerke')).toHaveCount(0);
     // Uten kalenderen som favoritt står ikke «Neste datoer» i favorittvisningen.
     await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(0);
+  });
+
+  test('skrivebord: lukkede grupper rykker opp ved siden av en åpen, og en ny rad har overskriftene på linje (avgjørelse 108)', async ({ page }, info) => {
+    test.skip(erMobil(info), 'Spaltene er bare på skrivebord.');
+    await settLagret(page, { forside: { rekkefolge: [], lukket: ['fag', 'elev'], bareFavoritter: false } });
+    await page.goto('./');
+    await venterPaaSide(page);
+    const boks = async (id: string) => {
+      const b = await page.locator(`.forsidegrupper > [data-gruppe="${id}"]`).boundingBox();
+      if (!b) throw new Error(`Fant ikke ${id}`);
+      return b;
+    };
+    // Inntak (åpen) står ved siden av Læreplanverket (lukket), og Elever og opplæring (lukket) rykker opp under.
+    await expect(page.locator('.forsidegrupper.spalteoppsett')).toHaveCount(1);
+    const [inntak, fag, elev, skolemiljo, arbeidstid] = await Promise.all(['inntak', 'fag', 'elev', 'skolemiljo', 'arbeidstid'].map(boks));
+    expect(Math.round(fag.y)).toBe(Math.round(inntak.y));
+    expect(Math.round(elev.x)).toBe(Math.round(fag.x));
+    expect(Math.round(elev.y)).toBe(Math.round(fag.y + fag.height));
+    // Neste rad begynner under den høyeste i raden, med overskriftene på linje.
+    expect(Math.round(skolemiljo.y)).toBe(Math.round(arbeidstid.y));
+    expect(skolemiljo.y).toBeGreaterThanOrEqual(inntak.y + inntak.height - 1);
+  });
+
+  test('alle favorittene er like høye, også kalkulatorene og oppslagene, med alt innhold og med bare favoritter (eier 10.10.2026)', async ({ page }) => {
+    const favoritter = ['arbeidstid:arbeidsplan', 'arbeidstid:beskjeftigelse', 'vurdering:fravaer', 'begreper:arsramme', ...TO];
+    await settLagret(page, { favoritter });
+    await page.goto('./');
+    await venterPaaSide(page);
+    const hoyder = async () => {
+      const rader = page.locator('.favorittliste > li > .listelenke');
+      await expect(rader).toHaveCount(favoritter.length);
+      return new Set(await rader.evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().height))));
+    };
+    expect([...(await hoyder())]).toHaveLength(1);
+    await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
+    await expect(page.locator('[data-gruppe="arbeidstid"]').getByRole('link', { name: 'Arbeidsplan' })).toBeVisible();
+    expect([...(await hoyder())]).toHaveLength(1);
   });
 
   test('«Tilpass» flytter gruppene, og standard rekkefølge setter dem tilbake', async ({ page }) => {

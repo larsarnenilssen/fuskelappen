@@ -44,6 +44,8 @@ export const nb = {
       skjulHjelp: 'Du får det tilbake under «Tilpass».',
       vis: 'Vis Aktuelt på forsiden',
       visHjelp: 'Kalenderen, nyhetene, tallene og dagens jukselapp. Hva som står der, velger du i menyen i Aktuelt.',
+      jukselapp: 'Dagens jukselapp på forsiden',
+      jukselappHjelp: 'Et nytt faktum fra appen hver dag. Den står i Aktuelt, og for seg når forsiden viser bare favoritter.',
     },
     panel: {
       legend: 'Visningene i Aktuelt',
