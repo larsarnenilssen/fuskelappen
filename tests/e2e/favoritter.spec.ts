@@ -74,7 +74,11 @@ test.describe('favoritter og forsiden', () => {
     };
     // Inntak (åpen) står ved siden av Læreplanverket (lukket), og Elever og opplæring (lukket) rykker opp under.
     await expect(page.locator('.forsidegrupper.spalteoppsett')).toHaveCount(1);
-    const [inntak, fag, elev, skolemiljo, arbeidstid] = await Promise.all(['inntak', 'fag', 'elev', 'skolemiljo', 'arbeidstid'].map(boks));
+    const inntak = await boks('inntak');
+    const fag = await boks('fag');
+    const elev = await boks('elev');
+    const skolemiljo = await boks('skolemiljo');
+    const arbeidstid = await boks('arbeidstid');
     expect(Math.round(fag.y)).toBe(Math.round(inntak.y));
     expect(Math.round(elev.x)).toBe(Math.round(fag.x));
     expect(Math.round(elev.y)).toBe(Math.round(fag.y + fag.height));
