@@ -1255,7 +1255,8 @@ kilder:
     uttrekk:
       selektor: main
     godkjent: 2026-10-08
-    godkjent_fingeravtrykk: null
+    # Godkjent av eier 2026-10-10 (sak #92).
+    godkjent_fingeravtrykk: sha256:fead848f6c009b852de884b8efcd374aeaac8fa86da48d1a88171fe03c452226
     faser: [6]
     merknad: >-
       Udirs side for skolene om eksamen: påmelding og frister, trekk, sensur og klage. Datoene herfra går foran
@@ -1308,7 +1309,8 @@ kilder:
     sjekkmetode: eksamen
     aktiv: true
     godkjent: 2026-10-08
-    godkjent_fingeravtrykk: null
+    # Godkjent av eier 2026-10-10 (sak #92).
+    godkjent_fingeravtrykk: sha256:525648f8ff67719c63af4d8aacdc6de4d5b899a439fde277c1f1c9bd6768b8f0
     faser: [6]
     merknad: >-
       Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet hver uke av
