@@ -227,18 +227,29 @@
     nb: |-
       Elever og privatister har rett til særskilt tilrettelegging når de trenger det for å vise kompetansen sin, f.eks. ved allergi eller funksjonsnedsettelse. Tilretteleggingen skal ikke veie opp for manglende kompetanse eller norskferdigheter, og skal ikke gi fordeler. Eksempler er lengre tid, opplesing, forstørret skrift, skrivehjelp og ekstra lys. Eksamensformen endres bare når ingen mindre tiltak er nok, og ikke når læreplanen krever ferdighetene.
 
-      Eleven søker fylkeskommunen. Det trengs ikke vedtak om individuelt tilrettelagt opplæring. Fylkeskommunen kan sette en veiledende frist, men kan ikke avslå bare fordi søknaden kom sent. Vedtaket er et enkeltvedtak som kan påklages. Tilrettelegging i opplæringen står i veiviseren [Tilpasset opplæring og individuell tilrettelegging](#/tilrettelegging/tilpasset-og-individuell).
+      Eleven søker fylkeskommunen. Det trengs ikke vedtak om individuelt tilrettelagt opplæring. Fylkeskommunen kan sette en veiledende frist, men kan ikke avslå bare fordi søknaden kom sent. Vedtaket er et enkeltvedtak som kan påklages.
+
+      Eksamen i noen fag tas i sikker nettleser. En kandidat som trenger programmer for lese- og skrivestøtte, f.eks. IntoWords eller Lingdys, må søke om særskilt tilrettelegging for å slippe sikker nettleser. Unntaket registreres ved påmeldingen i PAS-eksamen.
+
+      Tilrettelegging i opplæringen står i veiviseren [Tilpasset opplæring og individuell tilrettelegging](#/tilrettelegging/tilpasset-og-individuell).
     nn: |-
       Elevar og privatistar har rett til særskild tilrettelegging når dei treng det for å vise kompetansen sin, til dømes ved allergi eller funksjonsnedsetjing. Tilrettelegginga skal ikkje vege opp for manglande kompetanse eller norskferdigheiter, og skal ikkje gi fordelar. Døme er lengre tid, opplesing, forstørra skrift, skrivehjelp og ekstra lys. Eksamensforma blir berre endra når ingen mindre tiltak er nok, og ikkje når læreplanen krev ferdigheitene.
 
-      Eleven søkjer fylkeskommunen. Det trengst ikkje vedtak om individuelt tilrettelagd opplæring. Fylkeskommunen kan setje ein rettleiande frist, men kan ikkje avslå berre fordi søknaden kom seint. Vedtaket er eit enkeltvedtak som kan klagast på. Tilrettelegging i opplæringa står i vegvisaren [Tilpassa opplæring og individuell tilrettelegging](#/tilrettelegging/tilpasset-og-individuell).
+      Eleven søkjer fylkeskommunen. Det trengst ikkje vedtak om individuelt tilrettelagd opplæring. Fylkeskommunen kan setje ein rettleiande frist, men kan ikkje avslå berre fordi søknaden kom seint. Vedtaket er eit enkeltvedtak som kan klagast på.
+
+      Eksamen i nokre fag blir teken i sikker nettlesar. Ein kandidat som treng program for lese- og skrivestøtte, til dømes IntoWords eller Lingdys, må søkje om særskild tilrettelegging for å sleppe sikker nettlesar. Unntaket blir registrert ved påmeldinga i PAS-eksamen.
+
+      Tilrettelegging i opplæringa står i vegvisaren [Tilpassa opplæring og individuell tilrettelegging](#/tilrettelegging/tilpasset-og-individuell).
   paragrafer: [opplaeringsforskrifta/9-34]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-34", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-34" }
     - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-34", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/" }
     - { id: udir-sarskilt-tilrettelegging-eksamen, punkt: "Generelt om særskilt tilrettelegging av eksamen" }
+    - { id: udir-administrere-eksamen, punkt: "Særskilt tilrettelegging, Sikker nettleser" }
   kontrollert: null
   kontrollsporsmal:
+    - "Gjelder det at kandidater med lese- og skrivestøtte må søke om tilrettelegging for å slippe sikker nettleser, både elever og privatister i videregående (Udir, «Sikker nettleser»)?"
+    - "Er det riktig å skrive at unntaket registreres ved påmeldingen i PAS-eksamen, også for privatister, der det er eksamenskontoret og ikke skolen som melder på?"
     - "Er det riktig å si at fylkeskommunen ikke kan avslå bare fordi søknaden kom etter den veiledende fristen (merknaden til § 9-34)?"
     - "Er rektor ofte delegert myndighet til å avgjøre søknadene? Bør det stå (forslaget nevnte «eller rektor ved delegering»)?"
 

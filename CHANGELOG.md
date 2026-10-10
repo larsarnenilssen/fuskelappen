@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Særskilt tilrettelegging av eksamen:** Kortet på eksamenssiden og begrepet sier nå at kandidater som trenger programmer for lese- og skrivestøtte (f.eks. IntoWords eller Lingdys), må søke om tilrettelegging for å slippe sikker nettleser.
+
 ## [1.2.1] – 2026-10-09
 
 ### Lagt til
