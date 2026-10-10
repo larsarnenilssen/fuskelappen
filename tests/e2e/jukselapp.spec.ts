@@ -9,14 +9,15 @@ const VESTLAND = '46';
 const apen = (forside: Record<string, unknown> = {}) => ({ rekkefolge: [], lukket: [], apnet: ['panel'], bareFavoritter: false, ...forside });
 
 test.describe('dagens jukselapp', () => {
-  test('er av fra start, og slås på i menyen i Aktuelt, ikke under «Tilpass» eller Innstillinger', async ({ page }) => {
+  test('er av fra start, og slås på i menyen i Aktuelt eller under «Tilpass», ikke i Innstillinger', async ({ page }) => {
     await settLagret(page, { fylke: VESTLAND, forside: apen() });
     await page.goto('./');
     const panel = page.locator('[data-gruppe="panel"]').first();
     await expect(panel.getByRole('button', { name: 'Kalender', exact: true })).toBeVisible();
     await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveCount(0);
+    // «Tilpass» har bryteren, så den også kan slås på med bare favoritter (eier 10.10.2026).
     await page.getByRole('button', { name: 'Tilpass' }).click();
-    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).toHaveCount(0);
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).not.toBeChecked();
     await page.getByRole('button', { name: 'Ferdig' }).click();
     await panel.getByRole('button', { name: 'Velg hva som står i Aktuelt' }).click();
     await panel.getByRole('checkbox', { name: 'Dagens jukselapp' }).check();
@@ -40,6 +41,45 @@ test.describe('dagens jukselapp', () => {
     await panel.getByRole('checkbox', { name: 'Dagens jukselapp' }).uncheck();
     await expect(page.locator('.jl-panel')).toHaveCount(0);
     await expect(panel.getByRole('button', { name: 'Jukselapp', exact: true })).toHaveCount(0);
+  });
+
+  test('med bare favoritter slås den på under «Tilpass», og står også når Aktuelt er skjult (eier 10.10.2026)', async ({ page }) => {
+    await settLagret(page, { favoritter: ['vurdering:fravaer'], forside: apen({ bareFavoritter: true, skjult: ['aktuelt'] }) });
+    await page.goto('./');
+    await expect(page.locator('[data-gruppe="elev"]')).toBeVisible();
+    await expect(page.locator('[data-gruppe="jukselapp"]')).toHaveCount(0);
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    await page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' }).check();
+    await page.getByRole('button', { name: 'Ferdig' }).click();
+    const gruppe = page.locator('[data-gruppe="jukselapp"]');
+    await expect(gruppe).toHaveCount(1);
+    // Lukket fra start på mobil (avgjørelse 066).
+    const knapp = gruppe.locator('.gruppeknapp').first();
+    if ((await knapp.getAttribute('aria-expanded')) === 'false') await knapp.click();
+    await expect(gruppe.locator('.jl-tekst')).not.toBeEmpty();
+    // Med alt innhold står Aktuelt fortsatt skjult, slik brukeren valgte.
+    await page.getByRole('radio', { name: /^Alt/ }).check();
+    await expect(page.locator('[data-gruppe="panel"]')).toHaveCount(0);
+  });
+
+  test('med bare favoritter fjernes den med krysset i overskriften, etter kortet som spør (eier 10.10.2026)', async ({ page }) => {
+    await settLagret(page, { favoritter: ['vurdering:fravaer'], forside: apen({ bareFavoritter: true, jukselapp: true }) });
+    await page.goto('./');
+    const gruppe = page.locator('[data-gruppe="jukselapp"]');
+    await expect(gruppe).toHaveCount(1);
+    const kryss = gruppe.getByRole('button', { name: 'Fjern dagens jukselapp fra forsiden' });
+    await kryss.click();
+    await expect(kryss).toHaveAttribute('aria-expanded', 'true');
+    // Krysset alene fjerner ikke jukselappen, og det kan lukke kortet igjen.
+    await expect(gruppe).toHaveCount(1);
+    await kryss.click();
+    await expect(gruppe.getByRole('button', { name: 'Fjern dagens jukselapp', exact: true })).toHaveCount(0);
+    await kryss.click();
+    await expect(gruppe.getByText('Du får den tilbake under «Tilpass».')).toBeVisible();
+    await gruppe.getByRole('button', { name: 'Fjern dagens jukselapp', exact: true }).click();
+    await expect(gruppe).toHaveCount(0);
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).not.toBeChecked();
   });
 
   test('knappen gir en ny jukselapp, og lenken går til stedet i appen', async ({ page }) => {

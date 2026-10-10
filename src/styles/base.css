@@ -3956,14 +3956,23 @@ p.fagkort-tittel {
 
 .forside {
   --oppslag-hoyde: 4.25rem;
+  /* Favorittene har bare tittel. Høyden har plass til en tittel på to linjer, så alle står like høye (eier 10.10.2026). */
+  --favoritt-hoyde: 4.5rem;
 }
 
-.forside .kategori[data-kategori] .liste > li > .listelenke {
+/* Høydene for modulene gjelder boksene i kategoriene, ikke favorittene under kategoriene med «Bare favoritter». */
+.forside .kategori[data-kategori] .liste:not(.favorittliste) > li > .listelenke {
   min-height: var(--modul-hoyde);
 }
 
-.forside .kategori[data-kategori='arbeidstid'] .liste:not(.flere-liste) > li > a.listelenke {
+.forside .kategori[data-kategori='arbeidstid'] .liste:not(.flere-liste, .favorittliste) > li > a.listelenke {
   min-height: calc(var(--modul-hoyde) * 4 / 3);
+}
+
+/* Alle favorittene på forsiden er like høye, med alt innhold og med bare favoritter, i alle kategoriene (eier
+   10.10.2026). En lengre tittel får vokse, så den ikke klippes. */
+.forside .favorittliste > li > .listelenke {
+  min-height: var(--favoritt-hoyde);
 }
 
 /* Boksene i den sammenleggbare boksen («Flere kalkulatorer») er like høye som boksene under «Oppslag», med teksten på
@@ -4301,9 +4310,21 @@ p.fagkort-tittel {
   }
 }
 
+/* Gruppene i spalter plasseres av forsiden (avgjørelse 108): radene i rutenettet er 1 px høye, og hver gruppe spenner
+   over så mange rader som den er høy. Luften står under hver gruppe. */
+.forsidegrupper.spalteoppsett {
+  grid-auto-rows: 1px;
+  row-gap: 0;
+}
+
 /* Blyanten for favorittene står i overskriften, ved siden av pilen, oppå knappen som lukker gruppen. */
 .forsidegruppe h2.med-verktoy {
   position: relative;
+}
+
+/* Plass til knappen, så teksten i en lukket gruppe (f.eks. dagens jukselapp) ikke går under den. */
+.forsidegruppe h2.med-verktoy .gruppeknapp-tekst {
+  margin-right: var(--trykkflate);
 }
 
 /* Til venstre for pilen, som er helt til høyre i knappen. */
