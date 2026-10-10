@@ -2,6 +2,17 @@
 # versjons-PR-en ut fra CHANGELOG.md: 1–4 korte punkter på bokmål og nynorsk, med egne ord og det brukeren merker.
 # En test krever punkter for versjonen i package.json, så de ikke kan glemmes. Nyeste versjon øverst.
 versjoner:
+  - versjon: 1.2.2
+    dato: 2026-10-10
+    nytt:
+      - nb: Lukkede grupper på forsiden rykker opp, så det blir mindre luft. Overskriftene står fortsatt på linje i hver ny rad.
+        nn: Lukka grupper på framsida rykkjer opp, så det blir mindre luft. Overskriftene står framleis på linje i kvar ny rad.
+      - nb: "Favorittforsiden: like høye favoritter, dagens jukselapp under «Tilpass» og et kryss som fjerner kalenderen, nyhetene, tallene og jukselappen."
+        nn: "Favorittframsida: like høge favorittar, dagens jukselapp under «Tilpass» og eit kryss som fjernar kalenderen, nyheitene, tala og jukselappen."
+      - nb: Kildelisten viser om en kilde virker, og for seg om den er endret de siste 30 dagene.
+        nn: Kjeldelista viser om ei kjelde verkar, og for seg om ho er endra dei siste 30 dagane.
+      - nb: Særskilt tilrettelegging av eksamen sier nå at lese- og skrivestøtte krever en søknad for å slippe sikker nettleser.
+        nn: Særskild tilrettelegging av eksamen seier no at lese- og skrivestøtte krev ein søknad for å sleppe sikker nettlesar.
   - versjon: 1.2.1
     dato: 2026-10-09
     nytt:

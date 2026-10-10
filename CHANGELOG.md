@@ -4,13 +4,14 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [1.2.2] – 2026-10-10
+
 ### Endret
 
 - **Forsiden med lukkede grupper:** Lukkede grupper rykker opp ved siden av en åpen gruppe, så det ikke blir stor luft ned til neste gruppe. Overskriftene står fortsatt på linje når en ny rad begynner.
 - **Favorittene er like høye:** Alle favorittene på forsiden har samme høyde, også kalkulatorene og begrepene, med alt innhold og med bare favoritter.
 - **Dagens jukselapp på favorittforsiden:** «Tilpass» har en bryter for dagens jukselapp, så den kan slås av og på også når forsiden viser bare favoritter. Den står der selv om Aktuelt er skjult, og kan fjernes med krysset i overskriften.
 - **Kalenderen, nyhetene og tallene på favorittforsiden** har også et kryss i overskriften som fjerner dem fra favorittene. Kalenderen heter «Kalender» på begge forsidene.
-
 - **Kildelisten viser om en kilde virker, og for seg om den er endret:** En kilde som er endret de siste 30 dagene, står nå som både «virker» og «endret» med datoen, så det er tydelig at den fortsatt virker. Tellingen øverst viser hvor mange kilder som virker, som ikke svarer og som er endret.
 - **Særskilt tilrettelegging av eksamen:** Kortet på eksamenssiden og begrepet sier nå at kandidater som trenger programmer for lese- og skrivestøtte (f.eks. IntoWords eller Lingdys), må søke om tilrettelegging for å slippe sikker nettleser.
 
