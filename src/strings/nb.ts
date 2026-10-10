@@ -53,7 +53,6 @@ export const nb = {
       nyheter: 'Nyheter',
       itall: 'I tall',
       jukselapp: 'Jukselapp',
-      nyheterTittel: 'Siste nytt',
       // Krysset i overskriften når visningen står som favoritt med bare favoritter (eier 10.10.2026, avgjørelse 108).
       fjernMeny: 'Fjern {navn} fra favorittene',
       fjern: 'Fjern fra favorittene',

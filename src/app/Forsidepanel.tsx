@@ -9,7 +9,7 @@
 //   datoen, nyheten, tallet eller faktumet.
 // - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (eier 07.10.2026). Gruppene har da et
 //   kryss i overskriften som fjerner favoritten eller dagens jukselapp, etter et lite kort som spør (eier 10.10.2026,
-//   avgjørelse 108). Kalenderen heter «Kalender» både i fanen og som egen gruppe (eier 10.10.2026).
+//   avgjørelse 108). Kalenderen og nyhetene heter det samme i fanen og som egen gruppe: «Kalender» og «Nyheter» (eier 10.10.2026).
 // - Visningene har hvert sitt oppsett: datoene som en liste, tallene som fliser og en figur.
 // - Nyhetene (fase 7b) og tallene lastes når visningen vises, så de ikke er med i startpakken.
 import type { ComponentChildren, JSX } from 'preact';
@@ -319,11 +319,11 @@ function Nyheter({ ramme }: { ramme: Ramme }) {
   }, []);
   if (!lastet || lastet === 'feil') {
     const melding = lastet === 'feil' ? t('nyheter.feil') : t('app.lasterInn');
-    return ramme({ tittel: t('forside.panel.nyheterTittel'), sammendrag: melding, children: <p class="dempet">{melding}</p> });
+    return ramme({ tittel: t('forside.panel.nyheter'), sammendrag: melding, children: <p class="dempet">{melding}</p> });
   }
   const { ForsideNyheter, forsideSammendrag } = lastet.m;
   return ramme({
-    tittel: t('forside.panel.nyheterTittel'),
+    tittel: t('forside.panel.nyheter'),
     sammendrag: forsideSammendrag(t, malform, lastet.d, innstillinger.fylke),
     children: <ForsideNyheter d={lastet.d} fylke={innstillinger.fylke} rute={NYHETER_RUTE} />,
   });
