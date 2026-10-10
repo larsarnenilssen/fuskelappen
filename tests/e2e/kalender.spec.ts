@@ -1,5 +1,5 @@
 // Kalenderen (fase 6, pakke 5, avgjørelse 066): fristene fra alle modulene, filteret i adressen, de gamle adressene
-// som sender videre, og gruppen «Neste datoer» på forsiden. Datoene avhenger av dagen testen kjøres, så testene sjekker
+// som sender videre, og de neste datoene i Aktuelt på forsiden. Datoene avhenger av dagen testen kjøres, så testene sjekker
 // oppsettet og ikke bestemte datoer.
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
@@ -91,7 +91,7 @@ test.describe('passerte datoer', () => {
   }
 });
 
-test.describe('«Neste datoer» på forsiden', () => {
+test.describe('De neste datoene på forsiden', () => {
   test('@mobil kalenderen er første visning i Aktuelt, lukket med neste dato, og kan tas ut i menyen', async ({ page }, info) => {
     test.skip(!info.project.name.includes('mobil'), 'Aktuelt er lukket fra start bare på mobil.');
     await page.goto('./');

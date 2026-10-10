@@ -58,7 +58,7 @@ test.describe('favoritter og forsiden', () => {
     await expect(page.locator('[data-gruppe="skolemiljo"]').getByRole('link', { name: 'Testfunksjon' })).toBeVisible();
     await expect(page.locator('[data-gruppe="felles"]').getByRole('link', { name: 'Skolemiljø (testbegrep)' })).toBeVisible();
     await expect(page.locator('.favorittmerke')).toHaveCount(0);
-    // Uten kalenderen som favoritt står ikke «Neste datoer» i favorittvisningen.
+    // Uten kalenderen som favoritt står ikke kalenderen i favorittvisningen.
     await expect(page.locator('[data-gruppe="neste"]')).toHaveCount(0);
   });
 
@@ -150,12 +150,32 @@ test.describe('favoritter og forsiden', () => {
     await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'panel');
   });
 
-  test('«Bare favoritter»: kalenderen som favoritt står øverst som «Neste datoer», ikke som kort (eier 05.10.2026)', async ({ page }) => {
+  test('«Bare favoritter»: kalenderen som favoritt står øverst som gruppen «Kalender», ikke som kort (eier 05.10.2026)', async ({ page }) => {
     await settLagret(page, { favoritter: ['kalender:oversikt', ...TO] });
     await page.goto('./');
     await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
-    await expect(page.locator('.forsidegruppe').first()).toHaveAttribute('data-gruppe', 'neste');
+    const kalender = page.locator('.forsidegruppe').first();
+    await expect(kalender).toHaveAttribute('data-gruppe', 'neste');
+    // Samme navn som fanen i Aktuelt (eier 10.10.2026).
+    await expect(kalender.locator('.gruppe-tittel')).toHaveText('Kalender');
     await expect(page.locator('.forsidegruppe:not([data-gruppe="neste"])').getByRole('link', { name: 'Kalender', exact: true })).toHaveCount(0);
+  });
+
+  test('«Bare favoritter»: krysset på kalenderen, nyhetene og tallene fjerner favoritten, etter kortet som spør (eier 10.10.2026)', async ({ page }) => {
+    await settLagret(page, { favoritter: ['kalender:oversikt', 'nyheter:oversikt', 'statistikk:oversikt', ...TO], forside: { rekkefolge: [], lukket: [], bareFavoritter: true } });
+    await page.goto('./');
+    await expect(page.locator('[data-gruppe="nyheter"]')).toHaveCount(1);
+    await expect(page.locator('[data-gruppe="itall"]')).toHaveCount(1);
+    const kalender = page.locator('[data-gruppe="neste"]');
+    await kalender.getByRole('button', { name: 'Fjern Kalender fra favorittene' }).click();
+    await expect(kalender.getByText('Du får den tilbake med stjernen øverst på siden.')).toBeVisible();
+    await kalender.getByRole('button', { name: 'Fjern fra favorittene', exact: true }).click();
+    await expect(kalender).toHaveCount(0);
+    // De andre står, og kalenderen er ikke lenger favoritt med alt innhold heller.
+    await expect(page.locator('[data-gruppe="nyheter"]')).toHaveCount(1);
+    await page.getByRole('radio', { name: /^Alt/ }).check();
+    await expect(page.locator('[data-gruppe="favoritter"]').getByRole('link', { name: 'Kalender', exact: true })).toHaveCount(0);
+    await expect(page.locator('[data-gruppe="favoritter"]').getByRole('link', { name: 'Videregående i tall' })).toHaveCount(1);
   });
 
   test('søkeknappen kommer i toppfeltet når søket er rullet bort, og fører tilbake til søkefeltet', async ({ page }) => {
