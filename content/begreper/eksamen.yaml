@@ -109,15 +109,17 @@
   tittel: { nb: "Særskilt tilrettelegging av eksamen", nn: "Særskild tilrettelegging av eksamen" }
   lenkeord: { nb: ["særskilt tilrettelegging av eksamen", "særskilt tilrettelagt eksamen"], nn: ["særskild tilrettelegging av eksamen", "særskilt tilrettelagd eksamen"] }
   tekst:
-    nb: "Elever og privatister har rett til særskilt tilrettelegging av eksamen når de trenger det for å vise kompetansen sin, f.eks. lengre tid eller opplesing. Tilretteleggingen skal ikke veie opp for manglende kompetanse eller norskferdigheter. Eleven søker fylkeskommunen, og vedtaket kan påklages. Det er noe annet enn individuelt tilrettelagt opplæring."
-    nn: "Elevar og privatistar har rett til særskild tilrettelegging av eksamen når dei treng det for å vise kompetansen sin, til dømes lengre tid eller opplesing. Tilrettelegginga skal ikkje vege opp for manglande kompetanse eller norskferdigheiter. Eleven søkjer fylkeskommunen, og vedtaket kan klagast på. Det er noko anna enn individuelt tilrettelagd opplæring."
+    nb: "Elever og privatister har rett til særskilt tilrettelegging av eksamen når de trenger det for å vise kompetansen sin, f.eks. lengre tid eller opplesing. Tilretteleggingen skal ikke veie opp for manglende kompetanse eller norskferdigheter. Eleven søker fylkeskommunen, og vedtaket kan påklages. Den som trenger programmer for lese- og skrivestøtte, f.eks. IntoWords, må søke om tilrettelegging for å slippe sikker nettleser. Det er noe annet enn individuelt tilrettelagt opplæring."
+    nn: "Elevar og privatistar har rett til særskild tilrettelegging av eksamen når dei treng det for å vise kompetansen sin, til dømes lengre tid eller opplesing. Tilrettelegginga skal ikkje vege opp for manglande kompetanse eller norskferdigheiter. Eleven søkjer fylkeskommunen, og vedtaket kan klagast på. Den som treng program for lese- og skrivestøtte, til dømes IntoWords, må søkje om tilrettelegging for å sleppe sikker nettlesar. Det er noko anna enn individuelt tilrettelagd opplæring."
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-34", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-34" }
     - { id: udir-sarskilt-tilrettelegging-eksamen, punkt: "Generelt om særskilt tilrettelegging av eksamen" }
+    - { id: udir-administrere-eksamen, punkt: "Særskilt tilrettelegging, Sikker nettleser" }
   kontrollert: null
   kontrollsporsmal:
+    - "Er setningen om lese- og skrivestøtte og sikker nettleser riktig og nyttig i begrepet, eller hører den bare hjemme på eksamenssiden?"
     - "Er det greit å skrive at det er «noe annet enn individuelt tilrettelagt opplæring», så de to ikke blandes?"
-  stikkord: [tilrettelegging, eksamen, lengre tid, opplesing]
+  stikkord: [tilrettelegging, eksamen, lengre tid, opplesing, sikker nettleser, lese- og skrivestøtte]
   relatert: [individuelt-tilrettelagt-opplaering]
 
 - id: fag-og-svenneprove
