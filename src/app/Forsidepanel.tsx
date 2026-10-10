@@ -7,8 +7,9 @@
 //   visninger som er med, slår dagens jukselapp av og på, og skjuler Aktuelt. «Tilpass» henter det tilbake.
 // - Åpent fra start på skrivebord, lukket på mobil (avgjørelse 066). Lukket viser overskriften visningen og den neste
 //   datoen, nyheten, tallet eller faktumet.
-// - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (eier 07.10.2026). Dagens jukselapp
-//   har da et kryss i overskriften som fjerner den, etter et lite kort som spør (eier 10.10.2026, avgjørelse 108).
+// - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (eier 07.10.2026). Gruppene har da et
+//   kryss i overskriften som fjerner favoritten eller dagens jukselapp, etter et lite kort som spør (eier 10.10.2026,
+//   avgjørelse 108). Kalenderen heter «Kalender» både i fanen og som egen gruppe (eier 10.10.2026).
 // - Visningene har hvert sitt oppsett: datoene som en liste, tallene som fliser og en figur.
 // - Nyhetene (fase 7b) og tallene lastes når visningen vises, så de ikke er med i startpakken.
 import type { ComponentChildren, JSX } from 'preact';
@@ -30,7 +31,7 @@ import { Gruppe, SIDEKOLONNE_FRA, useMinstBredde } from './Forsidegruppe.tsx';
 import { useTilpassetListe } from './tilpassListe.ts';
 import { useDagensJukselapp } from './Jukselapp.tsx';
 import { fylkesnavn } from './Stedmerknad.tsx';
-import { AKTUELT_SKJULT, settForsidevisning, settJukselapp, useTekst, useTilstand, vekslGruppe, vekslSkjultGruppe } from './tilstand.ts';
+import { AKTUELT_SKJULT, settForsidevisning, settJukselapp, useTekst, useTilstand, vekslFavoritt, vekslGruppe, vekslSkjultGruppe } from './tilstand.ts';
 
 /** Gruppen med Aktuelt i rekkefølgen på forsiden. Id-en er den samme som panelet hadde før avgjørelse 102. */
 export const PANEL = 'panel';
@@ -82,22 +83,28 @@ function useLukket(id: string): boolean {
 }
 
 /**
- * Krysset i overskriften på dagens jukselapp med «Bare favoritter», og kortet under som fjerner den (avgjørelse 108).
- * Krysset fjerner ikke med en gang, fordi det står tett ved pilen som lukker gruppen. Kortet og knappen ser ut som
- * menyen i Aktuelt.
+ * Krysset i overskriften på en visning med «Bare favoritter», og kortet under som fjerner den (avgjørelse 108):
+ * dagens jukselapp slås av, og kalenderen, nyhetene og tallene fjernes fra favorittene. Krysset fjerner ikke med en
+ * gang, fordi det står tett ved pilen som lukker gruppen. Kortet og knappen ser ut som menyen i Aktuelt.
  */
-function useFjernJukselapp(): { knapp: JSX.Element; kort: JSX.Element | false } {
+function useFjern(v: Visning, tittel: string): { knapp: JSX.Element; kort: JSX.Element | false } {
   const { t } = useTekst();
   const [apen, settApen] = useState(false);
   const id = `${useId()}-fjern`;
+  const favoritt = VISNINGER.find((x) => x.id === v)?.favoritt ?? null;
+  const tekst =
+    v === 'jukselapp' || !favoritt
+      ? { meny: t('forside.jukselapp.fjernMeny'), fjern: t('forside.jukselapp.fjern'), hjelp: t('forside.jukselapp.fjernHjelp') }
+      : { meny: t('forside.panel.fjernMeny', { navn: tittel }), fjern: t('forside.panel.fjern'), hjelp: t('forside.panel.fjernHjelp') };
+  const fjern = () => (favoritt ? vekslFavoritt(favoritt) : settJukselapp(false));
   const knapp = (
     <button
       type="button"
       class="ikonknapp gruppe-endre aktuelt-menyknapp"
       aria-expanded={apen}
       aria-controls={apen ? id : undefined}
-      aria-label={t('forside.jukselapp.fjernMeny')}
-      title={t('forside.jukselapp.fjernMeny')}
+      aria-label={tekst.meny}
+      title={tekst.meny}
       onClick={() => settApen(!apen)}
     >
       <Ikon navn="lukk" class="ikon-liten" />
@@ -105,35 +112,30 @@ function useFjernJukselapp(): { knapp: JSX.Element; kort: JSX.Element | false } 
   );
   const kort = apen && (
     <div id={id} class="aktuelt-meny">
-      <button type="button" class="lenkeknapp aktuelt-skjul" onClick={() => settJukselapp(false)}>
+      <button type="button" class="lenkeknapp aktuelt-skjul" onClick={fjern}>
         <Ikon navn="lukk" class="ikon-liten" />
-        {t('forside.jukselapp.fjern')}
+        {tekst.fjern}
       </button>
-      <p class="dempet liten">{t('forside.jukselapp.fjernHjelp')}</p>
+      <p class="dempet liten">{tekst.hjelp}</p>
     </div>
   );
   return { knapp, kort };
 }
 
-/** Én visning som egen gruppe: med «Bare favoritter». */
-export function Visningsgruppe({ id }: { id: Visning }) {
+/** Rammen for én visning som egen gruppe, med krysset i overskriften. */
+function Visningsramme({ id, tittel, sammendrag, children }: { id: Visning; tittel: string; sammendrag: string; children: ComponentChildren }) {
   const lukket = useLukket(id);
-  const fjern = useFjernJukselapp();
-  const jukselapp = id === 'jukselapp';
-  const ramme: Ramme = ({ tittel, sammendrag, children }) => (
-    <Gruppe
-      id={id}
-      tittel={tittel}
-      sammendrag={sammendrag}
-      lukket={lukket}
-      verktoy={jukselapp ? fjern.knapp : undefined}
-      verktoyAlltid={jukselapp}
-      foran={jukselapp && fjern.kort}
-      onVeksle={() => vekslGruppe(id, lukket)}
-    >
+  const fjern = useFjern(id, tittel);
+  return (
+    <Gruppe id={id} tittel={tittel} sammendrag={sammendrag} lukket={lukket} verktoy={fjern.knapp} verktoyAlltid foran={fjern.kort} onVeksle={() => vekslGruppe(id, lukket)}>
       {children}
     </Gruppe>
   );
+}
+
+/** Én visning som egen gruppe: med «Bare favoritter». */
+export function Visningsgruppe({ id }: { id: Visning }) {
+  const ramme: Ramme = (p) => <Visningsramme id={id} {...p} />;
   return <Innhold id={id} ramme={ramme} />;
 }
 
@@ -259,7 +261,7 @@ function NesteDatoer({ ramme }: { ramme: Ramme }) {
   const forste = poster?.[0];
   const sammendrag = forste?.fra ? t('kalender.nesteSammendrag', { dato: datoKort(forste.fra, forste.til, malform), tittel: forste.oppforing.tittel[malform] }) : poster ? t('kalender.ingenNeste') : t('app.lasterInn');
   return ramme({
-    tittel: t('kalender.neste'),
+    tittel: t('forside.panel.neste'),
     sammendrag,
     children: (
       <div ref={boks} class="panel-boks kal-panel">

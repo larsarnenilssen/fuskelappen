@@ -35,7 +35,6 @@ export const kalenderNn = {
   eksamensplan: 'Eksamensplanen hos Udir',
   endringerRegjeringen: 'Endringar i lover og reglar (regjeringen.no)',
   nyttUdir: 'Nytt til barnehage- og skulestart (Udir)',
-  neste: 'Neste datoar',
   nesteSammendrag: '{dato}: {tittel}',
   heleKalenderen: 'Heile kalenderen',
   ingenNeste: 'Ingen datoar dei neste tolv månadene.',
