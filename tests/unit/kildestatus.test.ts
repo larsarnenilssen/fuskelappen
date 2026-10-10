@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { app } from '../../src/config/app.ts';
 import {
   ENDRET_NYLIG_DAGER,
+  erEndretNylig,
   erUtdatert,
   kildevisning,
   tellKilder,
@@ -47,19 +48,24 @@ describe('kildestatus', () => {
     expect(samletStatus(fil('2026-09-28T03:00:00Z', 'endret', 'feilet'), naa)).toBe('feilet');
   });
 
-  it('viser om kilden virker, er endret de siste 30 dagene eller ikke svarer, ikke om eier har godkjent den', () => {
+  it('viser om kilden virker eller ikke svarer, og for seg om den er endret de siste 30 dagene (avgjørelse 107)', () => {
     expect(ENDRET_NYLIG_DAGER).toBe(30);
-    expect(kildevisning(post('ok'), naa)).toBe('virker');
+    expect(kildevisning(post('ok'))).toBe('virker');
     // «endret» betyr at eier ikke har gått gjennom endringen. Det vises ikke; datoen for endringen gjør.
-    expect(kildevisning(post('endret'), naa)).toBe('virker');
-    expect(kildevisning({ ...post('endret'), endret_siden: '2026-09-01T04:00:00Z' }, naa)).toBe('endretNylig');
+    expect(kildevisning(post('endret'))).toBe('virker');
+    expect(erEndretNylig(post('endret'), naa)).toBe(false);
+    // En kilde som er endret nylig, virker også.
+    const endret = { ...post('endret'), endret_siden: '2026-09-01T04:00:00Z' };
+    expect(kildevisning(endret)).toBe('virker');
+    expect(erEndretNylig(endret, naa)).toBe(true);
     // 30 dager før 29.09 kl. 12 er 30.08 kl. 12.
-    expect(kildevisning({ ...post('ok'), endret_siden: '2026-08-30T12:00:00Z' }, naa)).toBe('endretNylig');
-    expect(kildevisning({ ...post('ok'), endret_siden: '2026-08-30T11:59:59Z' }, naa)).toBe('virker');
-    expect(kildevisning(post('feilet'), naa)).toBe('svarerIkke');
+    expect(erEndretNylig({ ...post('ok'), endret_siden: '2026-08-30T12:00:00Z' }, naa)).toBe(true);
+    expect(erEndretNylig({ ...post('ok'), endret_siden: '2026-08-30T11:59:59Z' }, naa)).toBe(false);
+    expect(kildevisning(post('feilet'))).toBe('svarerIkke');
+    expect(erEndretNylig({ ...post('feilet'), endret_siden: '2026-09-20T04:00:00Z' }, naa)).toBe(true);
     const f = fil('2026-09-28T03:00:00Z', 'ok', 'endret', 'feilet');
     f.kilder.k0 = { ...post('ok'), endret_siden: '2026-09-20T04:00:00Z' };
-    expect(tellKilder(f, naa)).toEqual({ virker: 1, endretNylig: 1, svarerIkke: 1 });
+    expect(tellKilder(f, naa)).toEqual({ virker: 2, svarerIkke: 1, endretNylig: 1 });
   });
 
   it('avviser ugyldig statusfil', () => {
