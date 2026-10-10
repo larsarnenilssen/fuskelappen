@@ -6,6 +6,7 @@ import { describe, expect, it } from 'vitest';
 import {
   avkryssede,
   kommandoIder,
+  markerGjennomgatt,
   settBekreftet,
   settFingeravtrykk,
   settGodkjentBruk,
@@ -87,5 +88,18 @@ describe('godkjenning fra en kontrollsak', () => {
     expect(data.kilder.find((k) => k.id === kilde)?.godkjent).toBe('2026-10-10');
     expect(ny.split('\n').length).toBe(fil.split('\n').length);
     expect(settGodkjentBruk(fil, 'finnes-ikke', '2026-10-09')).toBeNull();
+  });
+
+  it('en kilde eier har gått gjennom, får status «ok», men beholder datoen for endringen (avgjørelse 107)', () => {
+    const post = { status: 'endret' as const, sjekket: '2026-10-09T18:00:00Z', fingeravtrykk: 'sha256:ny', endret_siden: '2026-10-09T13:00:00Z', melding: 'Innholdet er endret siden det sist ble gått gjennom.' };
+    const fil = { skjema: 1 as const, kjort: '2026-10-09T18:00:00Z', kilder: { a: post, b: { ...post, status: 'ok' as const, melding: null } } };
+    const ny = markerGjennomgatt(fil, 'a', 'sha256:ny');
+    expect(ny?.kilder.a).toEqual({ ...post, status: 'ok', melding: null });
+    expect(ny?.kilder.b).toBe(fil.kilder.b);
+    expect(fil.kilder.a.status).toBe('endret');
+    // Har kilden endret seg igjen etter det eier gikk gjennom, står den som endret.
+    expect(markerGjennomgatt(fil, 'a', 'sha256:gammel')).toBeNull();
+    expect(markerGjennomgatt(fil, 'b', 'sha256:ny')).toBeNull();
+    expect(markerGjennomgatt(fil, 'finnes-ikke', 'sha256:ny')).toBeNull();
   });
 });

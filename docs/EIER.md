@@ -186,7 +186,7 @@ Skriv til Claude hva som er riktig, og hva som må endres.
 
 ## 10. Kontrolloversikten og den automatiske verdisjekken
 
-**Kontrolloversikten** ligger i `docs/KONTROLL.md` på GitHub. Den lages på nytt hver mandag når kildesjekken kjører. For hver kilde viser den:
+**Kontrolloversikten** ligger i `docs/KONTROLL.md` på GitHub. Den lages på nytt hver mandag når kildesjekken kjører, og hver gang du godkjenner noe med `/godkjent` (avgjørelse 107). For hver kilde viser den:
 
 - hvilke tall i appen som bygger på kilden, og hvilke begreper og forklaringer som viser til den
 - om du har kontrollert dem, og om kontrollen er gammel eller kilden er endret siden
@@ -241,7 +241,7 @@ Du kan godkjenne direkte i kontrollsaken eller kontrollrunden. Det går fint på
 
 Etter et par minutter legger en jobb inn datoen for det du har krysset av, og svarer i saken med hva som er godkjent:
 
-- **Nytt fingeravtrykk for en kilde:** kilden er godkjent, og varselet forsvinner ved neste kildesjekk.
+- **Nytt fingeravtrykk for en kilde:** kilden er godkjent og forsvinner fra «Må ses på» i kontrolloversikten med en gang. Kontrollsaken oppdateres ved neste kildesjekk. I appen står kilden som «virker», og «endret» med datoen i 30 dager etter endringen (avgjørelse 107).
 - **Praksis:** praksisen er bekreftet og kommer ikke opp i kontrollrundene de neste 12 månedene.
 - **Begreper, forklaringer og tall:** de er kontrollert, og appen viser «Kontrollert» med datoen fra neste versjon.
 

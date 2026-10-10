@@ -12,3 +12,5 @@
 **Konsekvens:** Brukerne ser nøytral informasjon om kildene. Eier ser i kontrollsaken både nye kilder som venter på godkjenning, og endringer i godkjente kilder. Første kildesjekk etter endringen lagrer grunnlaget for kildene uten godkjent fingeravtrykk, uten å melde dem som endret.
 
 **Endret 09.10.2026:** De elleve Vestland-kildene (`vlfk-*`) er tatt ut av kilderegisteret, og punktet for vestlandfylke.no i kontrollrundene er fjernet. Vestland behandles som de andre fylkene, med lenkene i `content/fylker/lenker.yaml` (eier 09.10.2026).
+
+**Endret 10.10.2026:** Kildelisten viser om kilden virker, og for seg om den er endret de siste 30 dagene, så en kilde kan stå som både «virker» og «endret» (eier 10.10.2026, avgjørelse 107).

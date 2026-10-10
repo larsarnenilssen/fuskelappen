@@ -41,7 +41,7 @@ test.describe('kildestatus', () => {
     await expect(page.getByText('Det er mer enn 14 dager siden kildene ble sjekket.', { exact: false })).toBeVisible();
   });
 
-  test('en kilde som er endret, er ikke et varsel, og godkjenning vises ikke (avgjørelse 089)', async ({ page }) => {
+  test('en kilde som er endret, er ikke et varsel, og godkjenning vises ikke (avgjørelse 089 og 107)', async ({ page }) => {
     const data = status(dagerSiden(1), 'endret', 'ok');
     const forste = data.kilder['ks-sfs2213'];
     if (forste) forste.endret_siden = dagerSiden(3).toISOString();
@@ -50,9 +50,13 @@ test.describe('kildestatus', () => {
     await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'ok');
     await expect(page.locator('.indikator')).toHaveAccessibleName('Kildesjekken: alle kildene virker');
     await page.goto('./#/om/kilder');
-    await expect(page.locator('[data-kilde="ks-sfs2213"] .merke')).toHaveAttribute('data-visning', 'endretNylig');
-    await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('endret ');
-    await expect(page.getByTestId('kildetelling')).toContainText('Virker: 1. Endret de siste 30 dagene: 1. Svarer ikke: 0.');
+    // Kilden virker og er endret: to merker ved siden av hverandre (eier 10.10.2026).
+    const kilde = page.locator('[data-kilde="ks-sfs2213"]');
+    await expect(kilde.locator('[data-visning]')).toHaveAttribute('data-visning', 'virker');
+    await expect(kilde.locator('[data-visning]')).toHaveText('virker');
+    await expect(kilde.locator('[data-endret]')).toContainText('endret ');
+    await expect(page.locator('[data-endret]')).toHaveCount(1);
+    await expect(page.getByTestId('kildetelling')).toContainText('Virker: 2. Svarer ikke: 0. Endret de siste 30 dagene: 1.');
     await expect(page.locator('main')).not.toContainText(/godkjent/i);
   });
 

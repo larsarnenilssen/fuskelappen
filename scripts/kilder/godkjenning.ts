@@ -1,6 +1,7 @@
 // Godkjenning med avkrysning (avgjørelse 021): eier krysser av punkter i en kontrollsak eller kontrollrunde og
 // skriver /godkjent i en kommentar. Da settes datoen for det som er godkjent. Ren logikk; godkjenn.ts leser
 // saken, endrer filene og lagrer. Testes i tests/unit/godkjenning.test.ts.
+import type { Kildestatusfil } from '../../src/core/kildestatus/kildestatus.ts';
 
 export type Godkjenning =
   | { type: 'kilde'; id: string; fingeravtrykk: string }
@@ -115,6 +116,18 @@ export function settFingeravtrykk(yaml: string, id: string, fingeravtrykk: strin
   if (/^ {4}# Godkjent av eier/.test(linjer[i - 1] ?? '')) linjer[i - 1] = kommentar;
   else linjer.splice(i, 0, kommentar);
   return linjer.join('\n');
+}
+
+/**
+ * Kildestatusen etter at eier har gått gjennom endringen i en kilde (avgjørelse 107): «endret» blir «ok» når
+ * fingeravtrykket eier godkjente, er det kildesjekken så sist. Det er det samme kildesjekken kommer fram til neste
+ * gang, så kontrolloversikten slutter å vise kilden med en gang. `endret_siden` står, så appen viser fortsatt
+ * «endret {dato}» i 30 dager. Gir null når det ikke er noe å endre.
+ */
+export function markerGjennomgatt(fil: Kildestatusfil, id: string, fingeravtrykk: string): Kildestatusfil | null {
+  const post = fil.kilder[id];
+  if (post?.status !== 'endret' || post.fingeravtrykk !== fingeravtrykk) return null;
+  return { ...fil, kilder: { ...fil.kilder, [id]: { ...post, status: 'ok', melding: null } } };
 }
 
 /** Datoen eier godkjente at kilden kan brukes i appen (avgjørelse 089): «godkjent: null» blir datoen. */

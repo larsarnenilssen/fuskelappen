@@ -1,6 +1,7 @@
 // Godkjenning fra en kontrollsak (avgjørelse 021). Kjøres av .github/workflows/godkjenning.yml når eier skriver
 // /godkjent i en kommentar på en sak med etiketten «kontroll» eller «kontrollrunde». Leser punktene eier har
 // krysset av og id-ene etter /godkjent, setter datoen og lagrer på main når testene består. Ellers lages en PR.
+// Kontrolloversikten (docs/KONTROLL.md) lages på nytt, så den ikke viser det som nettopp er godkjent (avgjørelse 107).
 // Miljø: SAK, SAKSTEKST, KOMMENTAR, GITHUB_TOKEN og GITHUB_REPOSITORY. Uten GITHUB_TOKEN endres filene lokalt,
 // men ingenting lagres eller sendes (for å prøve lokalt).
 import { execFileSync } from 'node:child_process';
@@ -15,6 +16,7 @@ import {
   avkryssede,
   beskriv,
   kommandoIder,
+  markerGjennomgatt,
   settBekreftet,
   settFingeravtrykk,
   settGodkjentBruk,
@@ -57,7 +59,8 @@ const innholdsfiler = yamlFiler(join(rot, 'content'))
 const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
 const praksisfil = join(rot, 'content/kontroll/praksis.yaml');
 const praksisIder = new Set((lesFil(rot, praksisfil) as Praksisfil).praksis.map((p) => p.id));
-const kildestatus = lesKildestatus(existsSync(join(rot, 'data/status/kildestatus.json')) ? JSON.parse(readFileSync(join(rot, 'data/status/kildestatus.json'), 'utf8')) : null);
+const kildestatusfil = join(rot, 'data/status/kildestatus.json');
+let kildestatus = lesKildestatus(existsSync(kildestatusfil) ? JSON.parse(readFileSync(kildestatusfil, 'utf8')) : null);
 
 /** Gjør en id eier har skrevet, om til en godkjenning: innhold, regelverdi, praksis eller kilde. */
 function tolk(id: string): Godkjenning | null {
@@ -88,7 +91,15 @@ const utfort: string[] = [];
 const ikkeFunnet: string[] = [...ukjente];
 /** Setter datoen for én godkjenning. Gir false hvis elementet ikke finnes i filene. */
 function godkjenn(g: Godkjenning): boolean {
-  if (g.type === 'kilde') return endre(join(rot, 'content/kilder.yaml'), (t) => settFingeravtrykk(t, g.id, g.fingeravtrykk, idag, sak));
+  if (g.type === 'kilde') {
+    if (!endre(join(rot, 'content/kilder.yaml'), (t) => settFingeravtrykk(t, g.id, g.fingeravtrykk, idag, sak))) return false;
+    const ny = kildestatus && markerGjennomgatt(kildestatus, g.id, g.fingeravtrykk);
+    if (ny) {
+      kildestatus = ny;
+      writeFileSync(kildestatusfil, `${JSON.stringify(ny, null, 2)}\n`);
+    }
+    return true;
+  }
   if (g.type === 'bruk') return endre(join(rot, 'content/kilder.yaml'), (t) => settGodkjentBruk(t, g.id, idag));
   if (g.type === 'praksis') return endre(praksisfil, (t) => settBekreftet(t, g.id, idag));
   if (g.type === 'fylkeslenke') {
@@ -131,6 +142,8 @@ if (git('status', '--porcelain', '--', 'content', 'rules') === '') {
   await github('POST', `/issues/${sak}/comments`, { body: `Dette var allerede godkjent med dagens dato:\n\n${utfort.map((u) => `- ${u}`).join('\n')}${ukjentTekst}` });
   process.exit(0);
 }
+execFileSync('npm', ['run', 'kontroll:rapport'], { cwd: rot, stdio: 'inherit' });
+git('add', 'data/status/kildestatus.json', 'docs/KONTROLL.md');
 git('commit', '-m', melding);
 let hvor: string;
 if (testerOk) {

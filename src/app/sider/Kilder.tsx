@@ -6,6 +6,7 @@ import kilderegister from '../../../content/kilder.yaml';
 import type { Kilderegister } from '../../core/innhold/skjema.ts';
 import {
   ENDRET_NYLIG_DAGER,
+  erEndretNylig,
   erUtdatert,
   kildevisning,
   nesteKildesjekk,
@@ -46,7 +47,7 @@ export default function Kilder() {
             <p data-testid="kildetelling">
               {(() => {
                 const n = tellKilder(fil, naa);
-                return t('kildestatus.telling', { virker: n.virker, endret: n.endretNylig, svarerIkke: n.svarerIkke, dager: ENDRET_NYLIG_DAGER });
+                return t('kildestatus.telling', { virker: n.virker, svarerIkke: n.svarerIkke, endret: n.endretNylig, dager: ENDRET_NYLIG_DAGER });
               })()}
             </p>
           )}
@@ -69,15 +70,12 @@ export default function Kilder() {
       )}
       <ul class="liste kilder">
         {register.kilder.map((k) => {
-          // Brukerne ser om kilden virker, er endret nylig eller ikke svarer, ikke om eier har godkjent den
-          // (avgjørelse 089). Merkefargene er de samme som før: ok, endret og feilet.
+          // Brukerne ser om kilden virker eller ikke svarer, og for seg om den er endret de siste 30 dagene, ikke om
+          // eier har godkjent den (avgjørelse 089 og 107). Merkefargene er de samme som før: ok, endret og feilet.
           const post = fil?.kilder[k.id];
-          const visning = post ? kildevisning(post, naa) : null;
-          const klasse = visning === 'svarerIkke' ? 'feilet' : visning === 'endretNylig' ? 'endret' : visning === 'virker' ? 'ok' : 'ikkeSjekket';
-          const tekst =
-            visning === 'endretNylig' && post?.endret_siden
-              ? t('kildestatus.kilde.endretNylig', { dato: formaterDato(post.endret_siden.slice(0, 10), malform) })
-              : t(`kildestatus.kilde.${visning ?? 'forHand'}`);
+          const visning = post ? kildevisning(post) : null;
+          const klasse = visning === 'svarerIkke' ? 'feilet' : visning === 'virker' ? 'ok' : 'ikkeSjekket';
+          const endret = post?.endret_siden && erEndretNylig(post, naa) ? post.endret_siden : null;
           return (
             <li key={k.id} class="kilde" data-kilde={k.id}>
               <div class="kilde-innhold">
@@ -85,10 +83,15 @@ export default function Kilder() {
                 <p class="dempet liten">
                   {t('kildestatus.utgiver', { utgiver: k.utgiver })} · {t('kildestatus.lisens', { lisens: k.lisens })}
                 </p>
-                <p class="liten">
+                <p class="liten merker merker-inline">
                   <span class={`merke merke-kilde-${klasse}`} data-visning={visning ?? 'forHand'}>
-                    {tekst}
+                    {t(`kildestatus.kilde.${visning ?? 'forHand'}`)}
                   </span>
+                  {endret && (
+                    <span class="merke merke-kilde-endret" data-endret={endret.slice(0, 10)}>
+                      {t('kildestatus.kilde.endretNylig', { dato: formaterDato(endret.slice(0, 10), malform) })}
+                    </span>
+                  )}
                 </p>
               </div>
             </li>

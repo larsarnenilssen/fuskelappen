@@ -10,7 +10,7 @@ Status:
 - **endret:** notatet har minst én linje «**Endret …**» nederst, eller en del som sier «(Erstattet i avgjørelse NNN …)». Avgjørelsene disse linjene viser til, står etter «av». Det som står nederst, gjelder foran det over.
 - **erstattet:** notatet gjelder ikke lenger. Se avgjørelsen som erstattet det.
 
-106 avgjørelser: 72 gjeldende, 33 endret og 1 erstattet.
+107 avgjørelser: 73 gjeldende, 33 endret og 1 erstattet.
 
 | Nr. | Avgjørelse | Status |
 |---|---|---|
@@ -102,7 +102,7 @@ Status:
 | 086 | [Dagens jukselapp](086-dagens-jukselapp.md) | endret av 102 |
 | 087 | [Elevundersøkelsen som egen modul, og Skolemiljø får nytt navn](087-elevundersokelsen-som-egen-modul.md) | gjeldende |
 | 088 | [Melding om ny versjon, med det som er nytt](088-melding-om-ny-versjon.md) | gjeldende |
-| 089 | [Kildestatus for brukerne, godkjenning av kildene for eier](089-kildestatus-og-godkjenning-av-kilder.md) | endret |
+| 089 | [Kildestatus for brukerne, godkjenning av kildene for eier](089-kildestatus-og-godkjenning-av-kilder.md) | endret av 107 |
 | 090 | [Tall fra SSB i Videregående i tall](090-tall-fra-ssb.md) | gjeldende |
 | 091 | [Tallboksene fra Videregående i tall på andre sider](091-tallboksene.md) | gjeldende |
 | 092 | [Merker og ikoner midt i teksthøyden](092-merker-midt-i-teksthoyden.md) | gjeldende |
@@ -120,3 +120,4 @@ Status:
 | 104 | [Sikkerhetskopien kan gjenopprettes](104-gjenopprett-sikkerhetskopi.md) | gjeldende |
 | 105 | [Fra faser til drift: DRIFT.md, arkivet, skills og oversikten over avgjørelsene](105-drift.md) | endret |
 | 106 | [Plan for kontrollen: ukens kontroll og fylkeslenkene](106-plan-for-kontrollen.md) | endret |
+| 107 | [Kildestatus: «virker» og «endret» for seg, og kontrolloversikten etter godkjenning](107-kildestatus-virker-og-endret.md) | gjeldende |

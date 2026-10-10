@@ -6,6 +6,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Kildelisten viser om en kilde virker, og for seg om den er endret:** En kilde som er endret de siste 30 dagene, står nå som både «virker» og «endret» med datoen, så det er tydelig at den fortsatt virker. Tellingen øverst viser hvor mange kilder som virker, som ikke svarer og som er endret.
 - **Særskilt tilrettelegging av eksamen:** Kortet på eksamenssiden og begrepet sier nå at kandidater som trenger programmer for lese- og skrivestøtte (f.eks. IntoWords eller Lingdys), må søke om tilrettelegging for å slippe sikker nettleser.
 
 ## [1.2.1] – 2026-10-09

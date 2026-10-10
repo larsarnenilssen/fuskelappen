@@ -34,8 +34,11 @@ export type Kildestatusfil = z.infer<typeof kildestatusFil>;
  * gjennom kildene, vises ikke i appen.
  */
 export type SamletStatus = 'ok' | 'feilet' | 'utdatert' | 'ukjent';
-/** Statusen for én kilde i appen: virker, endret de siste 30 dagene, eller svarer ikke. */
-export type Kildevisning = 'virker' | 'endretNylig' | 'svarerIkke';
+/**
+ * Om én kilde virker i appen: virker eller svarer ikke. Om den er endret de siste 30 dagene, er en egen opplysning
+ * ved siden av (`erEndretNylig`), så en kilde kan både virke og være endret (eier 10.10.2026, avgjørelse 107).
+ */
+export type Kildevisning = 'virker' | 'svarerIkke';
 export type Visningsstatus = SamletStatus | 'skjult';
 
 export function lesKildestatus(data: unknown): Kildestatusfil | null {
@@ -55,16 +58,18 @@ export function erEndretNylig(post: KildestatusPost, naa: Date): boolean {
   return !Number.isNaN(tid) && naa.getTime() - tid <= ENDRET_NYLIG_DAGER * 24 * 60 * 60 * 1000;
 }
 
-/** Statusen for én kilde i appen. «feilet» betyr at kilden har feilet to sjekker på rad (avgjørelse 089). */
-export function kildevisning(post: KildestatusPost, naa: Date): Kildevisning {
-  if (post.status === 'feilet') return 'svarerIkke';
-  return erEndretNylig(post, naa) ? 'endretNylig' : 'virker';
+/** Om kilden virker. «feilet» betyr at kilden har feilet to sjekker på rad (avgjørelse 089). */
+export function kildevisning(post: KildestatusPost): Kildevisning {
+  return post.status === 'feilet' ? 'svarerIkke' : 'virker';
 }
 
-/** Antall kilder som virker, er endret nylig og ikke svarer. */
-export function tellKilder(fil: Kildestatusfil, naa: Date): Record<Kildevisning, number> {
-  const antall: Record<Kildevisning, number> = { virker: 0, endretNylig: 0, svarerIkke: 0 };
-  for (const post of Object.values(fil.kilder)) antall[kildevisning(post, naa)] += 1;
+/** Antall kilder som virker og ikke svarer, og for seg antall som er endret nylig (avgjørelse 107). */
+export function tellKilder(fil: Kildestatusfil, naa: Date): Record<Kildevisning | 'endretNylig', number> {
+  const antall = { virker: 0, svarerIkke: 0, endretNylig: 0 };
+  for (const post of Object.values(fil.kilder)) {
+    antall[kildevisning(post)] += 1;
+    if (erEndretNylig(post, naa)) antall.endretNylig += 1;
+  }
   return antall;
 }
 

@@ -330,7 +330,7 @@ export const nb = {
     // Raden i Innstillinger (eier 09.10.2026). Navnet til skjermlesere er «Kildesjekken: …».
     sjekken: 'Kildesjekken',
     sjekkenNavn: 'Kildesjekken: {status}',
-    telling: 'Virker: {virker}. Endret de siste {dager} dagene: {endret}. Svarer ikke: {svarerIkke}.',
+    telling: 'Virker: {virker}. Svarer ikke: {svarerIkke}. Endret de siste {dager} dagene: {endret}.',
     kilde: { virker: 'virker', endretNylig: 'endret {dato}', svarerIkke: 'svarer ikke', forHand: 'sjekkes for hånd' },
     status: {
       ok: 'alle kildene virker',
@@ -341,7 +341,7 @@ export const nb = {
       skjult: 'varsel skjult',
     },
     forklaring:
-      'En automatisk jobb sjekker hver uke at kildene svarer, og om innholdet i dem er endret. Endrer en kilde seg, blir appens eier varslet og går gjennom innholdet. Innholdet i appen endres aldri automatisk. En kilde står som endret i 30 dager, og svarer den ikke to sjekker på rad, står det her.',
+      'En automatisk jobb sjekker hver uke at kildene svarer, og om innholdet i dem er endret. Hver kilde står som «virker», eller som «svarer ikke» når den ikke har svart to sjekker på rad. Er innholdet i kilden endret de siste 30 dagene, står datoen for endringen i tillegg. Endrer en kilde seg, blir appens eier varslet og går gjennom innholdet. Innholdet i appen endres aldri automatisk.',
     sistKjort: 'Sist sjekket {dato}.',
     nesteSjekk: 'Neste planlagte sjekk: {dato}.',
     skjulVarsel: 'Skjul varselet til neste sjekk',

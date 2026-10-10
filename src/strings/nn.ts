@@ -328,7 +328,7 @@ export const nn: Tekster = {
     indikator: 'Kjeldestatus: {status}',
     sjekken: 'Kjeldesjekken',
     sjekkenNavn: 'Kjeldesjekken: {status}',
-    telling: 'Verkar: {virker}. Endra dei siste {dager} dagane: {endret}. Svarar ikkje: {svarerIkke}.',
+    telling: 'Verkar: {virker}. Svarar ikkje: {svarerIkke}. Endra dei siste {dager} dagane: {endret}.',
     kilde: { virker: 'verkar', endretNylig: 'endra {dato}', svarerIkke: 'svarar ikkje', forHand: 'blir sjekka for hand' },
     status: {
       ok: 'alle kjeldene verkar',
@@ -339,7 +339,7 @@ export const nn: Tekster = {
       skjult: 'varsel skjult',
     },
     forklaring:
-      'Ein automatisk jobb sjekkar kvar veke at kjeldene svarar, og om innhaldet i dei er endra. Endrar ei kjelde seg, blir eigaren av appen varsla og går gjennom innhaldet. Innhaldet i appen blir aldri endra automatisk. Ei kjelde står som endra i 30 dagar, og svarar ho ikkje to sjekkar på rad, står det her.',
+      'Ein automatisk jobb sjekkar kvar veke at kjeldene svarar, og om innhaldet i dei er endra. Kvar kjelde står som «verkar», eller som «svarar ikkje» når ho ikkje har svart to sjekkar på rad. Er innhaldet i kjelda endra dei siste 30 dagane, står datoen for endringa i tillegg. Endrar ei kjelde seg, blir eigaren av appen varsla og går gjennom innhaldet. Innhaldet i appen blir aldri endra automatisk.',
     sistKjort: 'Sist sjekka {dato}.',
     nesteSjekk: 'Neste planlagde sjekk: {dato}.',
     skjulVarsel: 'Skjul varselet til neste sjekk',
