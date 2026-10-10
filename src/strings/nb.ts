@@ -100,6 +100,10 @@ export const nb = {
       lesMer: 'Les mer',
       lesMerOm: 'Les mer: {tittel}',
       tom: 'Ingen jukselapp i dag.',
+      // Krysset i overskriften med bare favoritter (eier 10.10.2026, avgjørelse 108).
+      fjernMeny: 'Fjern dagens jukselapp fra forsiden',
+      fjern: 'Fjern dagens jukselapp',
+      fjernHjelp: 'Du får den tilbake under «Tilpass».',
       innstilling: 'Dagens jukselapp på forsiden',
       innstillingHjelp: 'Ett faktum fra appen hver dag, med lenke og kilde. Den står i Aktuelt øverst på forsiden, ved siden av kalenderen, nyhetene og tallene.',
     },

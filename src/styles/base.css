@@ -4322,6 +4322,11 @@ p.fagkort-tittel {
   position: relative;
 }
 
+/* Plass til knappen, så teksten i en lukket gruppe (f.eks. dagens jukselapp) ikke går under den. */
+.forsidegruppe h2.med-verktoy .gruppeknapp-tekst {
+  margin-right: var(--trykkflate);
+}
+
 /* Til venstre for pilen, som er helt til høyre i knappen. */
 .gruppe-endre {
   position: absolute;

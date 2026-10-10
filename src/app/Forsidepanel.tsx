@@ -7,7 +7,8 @@
 //   visninger som er med, slår dagens jukselapp av og på, og skjuler Aktuelt. «Tilpass» henter det tilbake.
 // - Åpent fra start på skrivebord, lukket på mobil (avgjørelse 066). Lukket viser overskriften visningen og den neste
 //   datoen, nyheten, tallet eller faktumet.
-// - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (eier 07.10.2026).
+// - Med «Bare favoritter» står hver visning som er favoritt, som sin egen gruppe (eier 07.10.2026). Dagens jukselapp
+//   har da et kryss i overskriften som fjerner den, etter et lite kort som spør (eier 10.10.2026, avgjørelse 108).
 // - Visningene har hvert sitt oppsett: datoene som en liste, tallene som fliser og en figur.
 // - Nyhetene (fase 7b) og tallene lastes når visningen vises, så de ikke er med i startpakken.
 import type { ComponentChildren, JSX } from 'preact';
@@ -80,11 +81,56 @@ function useLukket(id: string): boolean {
   return forside.lukket.includes(id) || ((!stor || kolonneAv) && !apnet);
 }
 
+/**
+ * Krysset i overskriften på dagens jukselapp med «Bare favoritter», og kortet under som fjerner den (avgjørelse 108).
+ * Krysset fjerner ikke med en gang, fordi det står tett ved pilen som lukker gruppen. Kortet og knappen ser ut som
+ * menyen i Aktuelt.
+ */
+function useFjernJukselapp(): { knapp: JSX.Element; kort: JSX.Element | false } {
+  const { t } = useTekst();
+  const [apen, settApen] = useState(false);
+  const id = `${useId()}-fjern`;
+  const knapp = (
+    <button
+      type="button"
+      class="ikonknapp gruppe-endre aktuelt-menyknapp"
+      aria-expanded={apen}
+      aria-controls={apen ? id : undefined}
+      aria-label={t('forside.jukselapp.fjernMeny')}
+      title={t('forside.jukselapp.fjernMeny')}
+      onClick={() => settApen(!apen)}
+    >
+      <Ikon navn="lukk" class="ikon-liten" />
+    </button>
+  );
+  const kort = apen && (
+    <div id={id} class="aktuelt-meny">
+      <button type="button" class="lenkeknapp aktuelt-skjul" onClick={() => settJukselapp(false)}>
+        <Ikon navn="lukk" class="ikon-liten" />
+        {t('forside.jukselapp.fjern')}
+      </button>
+      <p class="dempet liten">{t('forside.jukselapp.fjernHjelp')}</p>
+    </div>
+  );
+  return { knapp, kort };
+}
+
 /** Én visning som egen gruppe: med «Bare favoritter». */
 export function Visningsgruppe({ id }: { id: Visning }) {
   const lukket = useLukket(id);
+  const fjern = useFjernJukselapp();
+  const jukselapp = id === 'jukselapp';
   const ramme: Ramme = ({ tittel, sammendrag, children }) => (
-    <Gruppe id={id} tittel={tittel} sammendrag={sammendrag} lukket={lukket} onVeksle={() => vekslGruppe(id, lukket)}>
+    <Gruppe
+      id={id}
+      tittel={tittel}
+      sammendrag={sammendrag}
+      lukket={lukket}
+      verktoy={jukselapp ? fjern.knapp : undefined}
+      verktoyAlltid={jukselapp}
+      foran={jukselapp && fjern.kort}
+      onVeksle={() => vekslGruppe(id, lukket)}
+    >
       {children}
     </Gruppe>
   );

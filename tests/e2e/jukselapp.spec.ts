@@ -62,6 +62,26 @@ test.describe('dagens jukselapp', () => {
     await expect(page.locator('[data-gruppe="panel"]')).toHaveCount(0);
   });
 
+  test('med bare favoritter fjernes den med krysset i overskriften, etter kortet som spør (eier 10.10.2026)', async ({ page }) => {
+    await settLagret(page, { favoritter: ['vurdering:fravaer'], forside: apen({ bareFavoritter: true, jukselapp: true }) });
+    await page.goto('./');
+    const gruppe = page.locator('[data-gruppe="jukselapp"]');
+    await expect(gruppe).toHaveCount(1);
+    const kryss = gruppe.getByRole('button', { name: 'Fjern dagens jukselapp fra forsiden' });
+    await kryss.click();
+    await expect(kryss).toHaveAttribute('aria-expanded', 'true');
+    // Krysset alene fjerner ikke jukselappen, og det kan lukke kortet igjen.
+    await expect(gruppe).toHaveCount(1);
+    await kryss.click();
+    await expect(gruppe.getByRole('button', { name: 'Fjern dagens jukselapp', exact: true })).toHaveCount(0);
+    await kryss.click();
+    await expect(gruppe.getByText('Du får den tilbake under «Tilpass».')).toBeVisible();
+    await gruppe.getByRole('button', { name: 'Fjern dagens jukselapp', exact: true }).click();
+    await expect(gruppe).toHaveCount(0);
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    await expect(page.getByRole('switch', { name: 'Dagens jukselapp på forsiden' })).not.toBeChecked();
+  });
+
   test('knappen gir en ny jukselapp, og lenken går til stedet i appen', async ({ page }) => {
     await settLagret(page, { forside: apen({ jukselapp: true, visning: 'jukselapp' }) });
     await page.goto('./');
