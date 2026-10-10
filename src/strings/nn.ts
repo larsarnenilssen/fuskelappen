@@ -52,7 +52,6 @@ export const nn: Tekster = {
       nyheter: 'Nyheiter',
       itall: 'I tal',
       jukselapp: 'Jukselapp',
-      nyheterTittel: 'Siste nytt',
       fjernMeny: 'Fjern {navn} frå favorittane',
       fjern: 'Fjern frå favorittane',
       fjernHjelp: 'Du får han tilbake med stjerna øvst på sida.',

@@ -119,7 +119,7 @@ Et kort samler én ting: et skjema, en oppføring eller en forklaring.
 - **Aktuelt** (kalenderen, nyhetene, Videregående i tall og dagens jukselapp) er én gruppe på den myke flaten i temafargen: merkelappen «Aktuelt» som overskrift, filterknappen og pilen til høyre, og fanene mellom visningene under. Filterknappen åpner menyen, et hvitt kort under overskriften, som velger visningene, slår dagens jukselapp av og på og skjuler Aktuelt. «Tilpass» henter det tilbake. Visningen brukeren valgte sist, står (eier 09.10.2026, avgjørelse 102).
 - **Skrivebord** (fra 44rem): Aktuelt øverst i sidekolonnen, åpent fra start, og favorittene under. Kolonnen står fast og ruller selv (avgjørelse 068). Er Aktuelt skjult og det ikke er favoritter, får gruppene hele bredden.
 - **Mobil:** Aktuelt i en egen ramme øverst, lukket fra start med én linje: visningen og den neste datoen, nyheten, tallet eller faktumet.
-- **«Bare favoritter»:** Visningene som er favoritter, står som egne grupper, og favorittene under kategoriene sine. Dagens jukselapp står som egen gruppe når den er slått på, også i «Tilpass». Jukselappen, kalenderen, nyhetene og tallene har et kryss i overskriften som åpner et kort som fjerner dem. Kalenderen heter «Kalender» på begge forsidene (avgjørelse 108).
+- **«Bare favoritter»:** Visningene som er favoritter, står som egne grupper, og favorittene under kategoriene sine. Dagens jukselapp står som egen gruppe når den er slått på, også i «Tilpass». Jukselappen, kalenderen, nyhetene og tallene har et kryss i overskriften som åpner et kort som fjerner dem. Kalenderen og nyhetene heter «Kalender» og «Nyheter» på begge forsidene (avgjørelse 108).
 
 *Eksempler:* forsiden.
 

@@ -165,6 +165,8 @@ test.describe('favoritter og forsiden', () => {
     await settLagret(page, { favoritter: ['kalender:oversikt', 'nyheter:oversikt', 'statistikk:oversikt', ...TO], forside: { rekkefolge: [], lukket: [], bareFavoritter: true } });
     await page.goto('./');
     await expect(page.locator('[data-gruppe="nyheter"]')).toHaveCount(1);
+    // Samme navn som fanen i Aktuelt (eier 10.10.2026).
+    await expect(page.locator('[data-gruppe="nyheter"] .gruppe-tittel')).toHaveText('Nyheter');
     await expect(page.locator('[data-gruppe="itall"]')).toHaveCount(1);
     const kalender = page.locator('[data-gruppe="neste"]');
     await kalender.getByRole('button', { name: 'Fjern Kalender fra favorittene' }).click();

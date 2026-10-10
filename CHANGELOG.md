@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Nyhetene heter «Nyheter» på begge forsidene:** Som egen gruppe på favorittforsiden het de «Siste nytt», mens fanen i Aktuelt heter «Nyheter».
+
 ## [1.2.2] – 2026-10-10
 
 ### Endret
